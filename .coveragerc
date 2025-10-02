@@ -1,0 +1,11 @@
+# .coveragerc
+
+[run]
+branch = True
+source = pharmacophoremt
+
+[report]
+show_missing = True
+omit =
+    pharmacophoremt/_private/**
+
