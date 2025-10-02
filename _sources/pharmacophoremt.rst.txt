@@ -1,0 +1,10 @@
+pharmacophoremt package
+=======================
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt
+   :members:
+   :show-inheritance:
+   :undoc-members:
