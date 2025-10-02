@@ -15,5 +15,8 @@ def __print_version__():
 #__github_issues_web__ = __github_web__ + '/issues'
 
 from . import config
-
 from ._pyunitwizard import puw as pyunitwizard
+from . import element
+from .pharmacophore import Pharmacophore
+from . import io
+from . import viewer

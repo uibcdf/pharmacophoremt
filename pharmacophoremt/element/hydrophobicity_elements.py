@@ -1,30 +1,30 @@
-from .feature import IncludedVolume
+from .feature import Hydrophobicity
 from .shape import Point, Sphere, GaussianKernel, Shapelet
 
-class IncludedVolumePoint(IncludedVolume, Point):
+class HydrophobicPoint(Hydrophobicity, Point):
 
     def __init__(self, position):
 
-        IncludedVolume.__init__(self)
+        Hydrophobicity.__init__(self)
         Point.__init__(self, position)
 
-class IncludedVolumeSphere(IncludedVolume, Sphere):
+class HydrophobicSphere(Hydrophobicity, Sphere):
 
     def __init__(self, center, radius):
 
-        IncludedVolume.__init__(self)
+        Hydrophobicity.__init__(self)
         Sphere.__init__(self, center, radius)
 
-class IncludedVolumeGaussianKernel(IncludedVolume, GaussianKernel):
+class HydrophobicGaussianKernel(Hydrophobicity, GaussianKernel):
 
     def __init__(self, center, sigma):
 
-        IncludedVolume.__init__(self)
+        Hydrophobicity.__init__(self)
         GaussianKernel.__init__(self, center, sigma)
 
-class IncludedVolumeShapelet(IncludedVolume, Shapelet):
+class HydrophobicShapelet(Hydrophobicity, Shapelet):
 
     def __init__(self):
 
-        IncludedVolume.__init__(self)
+        Hydrophobicity.__init__(self)
         Shapelet.__init__(self)

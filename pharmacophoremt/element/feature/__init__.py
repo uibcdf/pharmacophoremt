@@ -6,4 +6,3 @@ from .included_volume import IncludedVolume
 from .excluded_volume import ExcludedVolume
 from .hydrophobicity import Hydrophobicity
 from .aromatic_ring import AromaticRing
-from .color_palettes as color_palettes

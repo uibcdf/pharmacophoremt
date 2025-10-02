@@ -1,5 +1,6 @@
-from openpharmacophore import _puw, Pharmacophore
-from openpharmacophore import pharmacophoric_elements as elements
+from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt import Pharmacophore
+from pharmacophoremt import element as elements
 import molsysmt as msm
 import json
 import pyunitwizard as puw
@@ -17,8 +18,8 @@ def from_pharmer(pharmacophore):
             raise NotImplementedError
 
     def get_pharmer_element_properties(element, direction=False):
-        center = _puw.quantity([element['x'], element['y'], element['z']], 'angstroms')
-        radius = _puw.quantity(element['radius'], 'angstroms')
+        center = puw.quantity([element['x'], element['y'], element['z']], 'angstroms')
+        radius = puw.quantity(element['radius'], 'angstroms')
         if direction:
             direction = [element['svector']['x'], element['svector']['y'], element['svector']['z']]
             return center, radius, direction
@@ -82,7 +83,7 @@ def from_pharmer(pharmacophore):
 
 def to_pharmer(pharmacophore, file_name):
 
-    pharmer_element_name = { # dictionary to map openpharmacophore feature names to pharmer feature names
+    pharmer_element_name = { # dictionary to map pharmacophoremt feature names to pharmer feature names
         "aromatic ring": "Aromatic",
         "hydrophobicity": "Hydrophobic",
         "hb acceptor": "HydrogenAcceptor",
