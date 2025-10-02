@@ -17,7 +17,13 @@
   max-width: 78%;  /* default is 60em */
 }
 
-
+/* Limita el tamaño del logo en la barra superior */
+.bd-header .navbar-brand img {
+  max-height: 36px;   /* o 32/40… */
+  height: auto;
+  width: auto;
+  object-fit: contain;
+}
 
 /* To change the left bar of executable cells in markdown and executable cells in jupyter notebooks */
 /* See https://github.com/executablebooks/meta/discussions/667 */
