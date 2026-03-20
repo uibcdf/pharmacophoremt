@@ -1,30 +1,26 @@
-from .feature import HBAcceptor
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, SphereAndVector, GaussianKernel
 
-class HBAcceptorPoint(HBAcceptor, Point):
+class HBAcceptorPoint(InteractionSite):
 
     def __init__(self, position):
 
-        HBAcceptor.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "hb acceptor")
 
-class HBAcceptorSphere(HBAcceptor, Sphere):
+class HBAcceptorSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        HBAcceptor.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "hb acceptor")
 
-class HBAcceptorSphereAndVector(HBAcceptor, SphereAndVector):
+class HBAcceptorSphereAndVector(InteractionSite):
 
     def __init__(self, center, radius, direction):
 
-        HBAcceptor.__init__(self)
-        SphereAndVector.__init__(self, center, radius, direction)
+        super().__init__(SphereAndVector(center, radius, direction), "hb acceptor")
 
-class HBAcceptorGaussianKernel(HBAcceptor, GaussianKernel):
+class HBAcceptorGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        HBAcceptor.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
+        super().__init__(GaussianKernel(center, sigma), "hb acceptor")

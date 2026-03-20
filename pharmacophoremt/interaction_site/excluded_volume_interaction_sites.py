@@ -1,31 +1,26 @@
-from .feature import ExcludedVolume
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, GaussianKernel, Shapelet
 
-class ExcludedVolumePoint(ExcludedVolume, Point):
+class ExcludedVolumePoint(InteractionSite):
 
     def __init__(self, position):
 
-        ExcludedVolume.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "excluded volume")
 
-class ExcludedVolumeSphere(ExcludedVolume, Sphere):
+class ExcludedVolumeSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        ExcludedVolume.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "excluded volume")
 
-class ExcludedVolumeGaussianKernel(ExcludedVolume, GaussianKernel):
+class ExcludedVolumeGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        ExcludedVolume.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
+        super().__init__(GaussianKernel(center, sigma), "excluded volume")
 
-class ExcludedVolumeShapelet(ExcludedVolume, Shapelet):
+class ExcludedVolumeShapelet(InteractionSite):
 
     def __init__(self):
 
-        ExcludedVolume.__init__(self)
-        Shapelet.__init__(self)
-
+        super().__init__(Shapelet(), "excluded volume")

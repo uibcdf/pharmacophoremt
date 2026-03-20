@@ -6,6 +6,8 @@ interaction_sites with the 'point' shape.
 """
 
 import numpy as np
+from argdigest import arg_digest
+from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.colors import convert as convert_color_code
 from pharmacophoremt.viewer.color_palettes import get_color_from_palette_for_feature
@@ -29,10 +31,12 @@ class Point():
 
     """
 
-    def __init__(self, position):
+    @signal(tags=["core", "shape", "point", "init"])
+    @arg_digest(type_check=True)
+    def __init__(self, position, skip_digestion=False):
 
         self.shape_name = 'point'
-        self.position = puw.standardize(position)
+        self.position = position
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the point representation to an NGLview view

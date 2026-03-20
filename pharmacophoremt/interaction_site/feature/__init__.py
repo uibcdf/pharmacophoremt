@@ -6,3 +6,6 @@ from .included_volume import IncludedVolume
 from .excluded_volume import ExcludedVolume
 from .hydrophobicity import Hydrophobicity
 from .aromatic_ring import AromaticRing
+from .halogen_bond import HalogenBond
+from .metal_coordination import MetalCoordination
+from .cation_pi import CationPi

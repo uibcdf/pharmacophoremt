@@ -1,3 +1,5 @@
+from argdigest import arg_digest
+from smonitor import signal
 import molsysmt as msm
 
 class Pharmacophore():
@@ -33,7 +35,9 @@ class Pharmacophore():
     """
 
 
-    def __init__(self, pharmacophore=None, form=None):
+    @signal(tags=["core", "pharmacophore", "init"])
+    @arg_digest(type_check=True)
+    def __init__(self, pharmacophore=None, form=None, skip_digestion=False):
 
         self.interaction_sites = []
         self.n_interaction_sites = 0
@@ -49,7 +53,9 @@ class Pharmacophore():
             else:
                 raise NotImplementedError
 
-    def add_to_NGLView(self, view, color_palette='pharmacophoremt'):
+    @signal(tags=["core", "pharmacophore", "view"])
+    @arg_digest(type_check=True)
+    def add_to_NGLView(self, view, color_palette='pharmacophoremt', skip_digestion=False):
 
         """Adding the pharmacophore representation to a view (NGLWidget) from NGLView.
 
@@ -87,7 +93,9 @@ class Pharmacophore():
 
         pass
 
-    def show(self, color_palette='pharmacophoremt'):
+    @signal(tags=["core", "pharmacophore", "view"])
+    @arg_digest(type_check=True)
+    def show(self, color_palette='pharmacophoremt', skip_digestion=False):
 
         """Showing the pharmacophore model together with the molecular system from with it was
         extracted as a new view (NGLWidget) from NGLView.
@@ -121,7 +129,9 @@ class Pharmacophore():
 
         return view
 
-    def add_interaction_site(self, interaction_site):
+    @signal(tags=["core", "pharmacophore", "edit"])
+    @arg_digest(type_check=True)
+    def add_interaction_site(self, interaction_site, skip_digestion=False):
 
         """Adding a new interaction site to the pharmacophore.
 
@@ -261,7 +271,11 @@ class Pharmacophore():
         """
 
         from pharmacophoremt.io import from_ligandscout as _from_ligandscout
-        self = _from_ligandscout(pharmacophore)
+        tmp_pharmacophore = _from_ligandscout(pharmacophore)
+        self.__reset()
+        self.interaction_sites = tmp_pharmacophore.interaction_sites
+        self.n_interaction_sites = tmp_pharmacophore.n_interaction_sites
+        self.molecular_system = tmp_pharmacophore.molecular_system
 
         pass
 

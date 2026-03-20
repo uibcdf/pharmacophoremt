@@ -1,30 +1,26 @@
-from .feature import Hydrophobicity
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, GaussianKernel, Shapelet
 
-class HydrophobicPoint(Hydrophobicity, Point):
+class HydrophobicPoint(InteractionSite):
 
     def __init__(self, position):
 
-        Hydrophobicity.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "hydrophobicity")
 
-class HydrophobicSphere(Hydrophobicity, Sphere):
+class HydrophobicSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        Hydrophobicity.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "hydrophobicity")
 
-class HydrophobicGaussianKernel(Hydrophobicity, GaussianKernel):
+class HydrophobicGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        Hydrophobicity.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
+        super().__init__(GaussianKernel(center, sigma), "hydrophobicity")
 
-class HydrophobicShapelet(Hydrophobicity, Shapelet):
+class HydrophobicShapelet(InteractionSite):
 
     def __init__(self):
 
-        Hydrophobicity.__init__(self)
-        Shapelet.__init__(self)
+        super().__init__(Shapelet(), "hydrophobicity")

@@ -26,6 +26,11 @@ from .aromatic_ring_interaction_sites import AromaticRingPoint
 from .aromatic_ring_interaction_sites import AromaticRingSphere
 from .aromatic_ring_interaction_sites import AromaticRingSphereAndVector
 from .aromatic_ring_interaction_sites import AromaticRingShapelet
+from .halogen_bond_interaction_sites import HalogenBondSphere
+from .halogen_bond_interaction_sites import HalogenBondSphereAndVector
+from .metal_binding_interaction_sites import MetalBindingSphere
+from .cation_pi_interaction_sites import CationPiSphere
+from .cation_pi_interaction_sites import CationPiDisk
 
 __all__ = [
     "feature",
@@ -56,5 +61,10 @@ __all__ = [
     "AromaticRingSphere",
     "AromaticRingSphereAndVector",
     "AromaticRingShapelet",
+    "HalogenBondSphere",
+    "HalogenBondSphereAndVector",
+    "MetalBindingSphere",
+    "CationPiSphere",
+    "CationPiDisk",
 ]
 

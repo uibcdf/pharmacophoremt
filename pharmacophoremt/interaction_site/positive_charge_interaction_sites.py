@@ -9,26 +9,23 @@ This classes need to be reviewed. Some of them may be removed in the future if t
 
 """
 
-from .feature import PositiveCharge
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, GaussianKernel
 
-class PositiveChargePoint(PositiveCharge, Point):
+class PositiveChargePoint(InteractionSite):
 
     def __init__(self, position):
 
-        PositiveCharge.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "positive charge")
 
-class PositiveChargeSphere(PositiveCharge, Sphere):
+class PositiveChargeSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        PositiveCharge.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "positive charge")
 
-class PositiveChargeGaussianKernel(PositiveCharge, GaussianKernel):
+class PositiveChargeGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        PositiveCharge.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
+        super().__init__(GaussianKernel(center, sigma), "positive charge")

@@ -6,6 +6,8 @@ interaction_sites with the 'sphere and vector' shape.
 """
 
 import numpy as np
+from argdigest import arg_digest
+from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.colors import convert as convert_color_code
 from pharmacophoremt.viewer.color_palettes import get_color_from_palette_for_feature
@@ -37,12 +39,14 @@ class SphereAndVector():
 
     """
 
-    def __init__(self, center, radius, direction):
+    @signal(tags=["core", "shape", "sphere_and_vector", "init"])
+    @arg_digest(type_check=True)
+    def __init__(self, center, radius, direction, skip_digestion=False):
 
         self.shape_name = 'sphere and vector'
 
-        self.center = puw.standardize(center)
-        self.radius = puw.standardize(radius)
+        self.center = center
+        self.radius = radius
         self.direction = direction/np.linalg.norm(direction)
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):

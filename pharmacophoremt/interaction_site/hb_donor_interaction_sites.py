@@ -1,31 +1,26 @@
-from .feature import HBDonor
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, SphereAndVector, GaussianKernel
 
-class HBDonorPoint(HBDonor, Point):
+class HBDonorPoint(InteractionSite):
 
     def __init__(self, position):
 
-        HBDonor.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "hb donor")
 
-class HBDonorSphere(HBDonor, Sphere):
+class HBDonorSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        HBDonor.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "hb donor")
 
-class HBDonorSphereAndVector(HBDonor, SphereAndVector):
+class HBDonorSphereAndVector(InteractionSite):
 
     def __init__(self, center, radius, direction):
 
-        HBDonor.__init__(self)
-        SphereAndVector.__init__(self, center, radius, direction)
+        super().__init__(SphereAndVector(center, radius, direction), "hb donor")
 
-class HBDonorGaussianKernel(HBDonor, GaussianKernel):
+class HBDonorGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        HBDonor.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
-
+        super().__init__(GaussianKernel(center, sigma), "hb donor")

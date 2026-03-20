@@ -1,30 +1,26 @@
-from .feature import IncludedVolume
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, GaussianKernel, Shapelet
 
-class IncludedVolumePoint(IncludedVolume, Point):
+class IncludedVolumePoint(InteractionSite):
 
     def __init__(self, position):
 
-        IncludedVolume.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "included volume")
 
-class IncludedVolumeSphere(IncludedVolume, Sphere):
+class IncludedVolumeSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        IncludedVolume.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "included volume")
 
-class IncludedVolumeGaussianKernel(IncludedVolume, GaussianKernel):
+class IncludedVolumeGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        IncludedVolume.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
+        super().__init__(GaussianKernel(center, sigma), "included volume")
 
-class IncludedVolumeShapelet(IncludedVolume, Shapelet):
+class IncludedVolumeShapelet(InteractionSite):
 
     def __init__(self):
 
-        IncludedVolume.__init__(self)
-        Shapelet.__init__(self)
+        super().__init__(Shapelet(), "included volume")

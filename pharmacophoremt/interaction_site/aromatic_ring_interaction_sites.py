@@ -1,30 +1,26 @@
-from .feature import AromaticRing
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, SphereAndVector, Shapelet
 
-class AromaticRingPoint(AromaticRing, Point):
+class AromaticRingPoint(InteractionSite):
 
     def __init__(self, position):
 
-        AromaticRing.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "aromatic ring")
 
-class AromaticRingSphere(AromaticRing, Sphere):
+class AromaticRingSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        AromaticRing.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "aromatic ring")
 
-class AromaticRingSphereAndVector(AromaticRing, SphereAndVector):
+class AromaticRingSphereAndVector(InteractionSite):
 
     def __init__(self, center, radius, direction):
 
-        AromaticRing.__init__(self)
-        SphereAndVector.__init__(self, center, radius, direction)
+        super().__init__(SphereAndVector(center, radius, direction), "aromatic ring")
 
-class AromaticRingShapelet(AromaticRing, Shapelet):
+class AromaticRingShapelet(InteractionSite):
 
     def __init__(self):
 
-        AromaticRing.__init__(self)
-        Shapelet.__init__(self)
+        super().__init__(Shapelet(), "aromatic ring")

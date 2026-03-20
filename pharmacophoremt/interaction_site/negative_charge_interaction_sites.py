@@ -1,24 +1,20 @@
-from .feature import NegativeCharge
+from .interaction_site import InteractionSite
 from .shape import Point, Sphere, GaussianKernel
 
-class NegativeChargePoint(NegativeCharge, Point):
+class NegativeChargePoint(InteractionSite):
 
     def __init__(self, position):
 
-        NegativeCharge.__init__(self)
-        Point.__init__(self, position)
+        super().__init__(Point(position), "negative charge")
 
-class NegativeChargeSphere(NegativeCharge, Sphere):
+class NegativeChargeSphere(InteractionSite):
 
     def __init__(self, center, radius):
 
-        NegativeCharge.__init__(self)
-        Sphere.__init__(self, center, radius)
+        super().__init__(Sphere(center, radius), "negative charge")
 
-class NegativeChargeGaussianKernel(NegativeCharge, GaussianKernel):
+class NegativeChargeGaussianKernel(InteractionSite):
 
     def __init__(self, center, sigma):
 
-        NegativeCharge.__init__(self)
-        GaussianKernel.__init__(self, center, sigma)
-
+        super().__init__(GaussianKernel(center, sigma), "negative charge")

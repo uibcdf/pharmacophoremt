@@ -6,6 +6,8 @@ interaction_sites with the 'gaussian kernel' shape.
 """
 
 import numpy as np
+from argdigest import arg_digest
+from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.colors import convert as convert_color_code
 from pharmacophoremt.viewer.color_palettes import get_color_from_palette_for_feature
@@ -33,12 +35,14 @@ class GaussianKernel():
 
     """
 
-    def __init__(self, center, sigma):
+    @signal(tags=["core", "shape", "gaussian_kernel", "init"])
+    @arg_digest(type_check=True)
+    def __init__(self, center, sigma, skip_digestion=False):
 
         self.shape_name = 'gaussian kernel'
 
-        self.center = _puw.standardize(center)
-        self.sigma = _puw.standardize(sigma)
+        self.center = center
+        self.sigma = sigma
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the Gaussian kernel representation to an NGLview view
@@ -72,8 +76,8 @@ class GaussianKernel():
 
         color = convert_color_code(color, to_form='rgb')
 
-        center = _puw.get_value(self.center, to_unit='angstroms').tolist()
-        sigma = _puw.get_value(self.sigma, to_unit='angstroms')
+        center = puw.get_value(self.center, to_unit='angstroms').tolist()
+        sigma = puw.get_value(self.sigma, to_unit='angstroms')
 
         #A Gaussian kernel may be represented as three concentric transparent spheres with radius 0.5 sigma, 1 sigma and 2 sigma
 
