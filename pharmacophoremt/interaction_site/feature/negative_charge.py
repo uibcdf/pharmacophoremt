@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the feature: negative charge.
+"""Parent class for pharmacophoric interaction_sites with the feature: negative charge.
 
 This module contains a parent class to be inherited with attributes and methods for pharamacophoric
-elements with the 'negative charge' feature.
+interaction_sites with the 'negative charge' feature.
 
 """
 
@@ -9,7 +9,7 @@ class NegativeCharge():
 
     """ Parent class of pharmacophoric feature.
 
-    Common attributes and methods to be inherited by the pharmacophoric elements with the 'negative
+    Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'negative
     charge' feature.
 
     Attributes

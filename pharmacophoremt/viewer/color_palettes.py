@@ -46,7 +46,7 @@ def get_color_from_palette_for_feature(feature_name, color_palette='pharmacophor
         }
 
     Some colorpalettes are defined already in the module
-    `pharmacophoremt.pharmacophoric_elements.features.color_palettes`.
+    `pharmacophoremt.pharmacophoric_interaction_sites.features.color_palettes`.
 
     Parameters
     ----------
@@ -54,7 +54,7 @@ def get_color_from_palette_for_feature(feature_name, color_palette='pharmacophor
         Feature name: 'positive charge', 'negative charge', 'hb acceptor', 'hb donor',
         'included volume', 'excluded volume', 'hydrophobicity' or 'aromatic ring'.
     color_palette: :obj: `str`, dict
-        Dictionary or color palette name predefined already in the module `pharmacophoremt.pharmacophoric_elements.features.color_palettes`. (Default: 'pharmacophoremt')
+        Dictionary or color palette name predefined already in the module `pharmacophoremt.pharmacophoric_interaction_sites.features.color_palettes`. (Default: 'pharmacophoremt')
 
     Examples
     -------
@@ -69,11 +69,11 @@ def get_color_from_palette_for_feature(feature_name, color_palette='pharmacophor
     ... 'hydrophobicity': '#9EADC8',
     ... 'aromatic ring': '#D6D84F',
     ... }
-    >>> oph.pharmacophoric_elements.features.color_palettes.get_color_from_palette_for_feature('hb donor', my_color_palette)
+    >>> oph.pharmacophoric_interaction_sites.features.color_palettes.get_color_from_palette_for_feature('hb donor', my_color_palette)
     '#5B618A'
 
     >>> import pharmacophoremt as oph
-    >>> oph.pharmacophoric_elements.features.color_palettes.get_color_from_palette_for_feature('positive charge', 'pharmacophoremt')
+    >>> oph.pharmacophoric_interaction_sites.features.color_palettes.get_color_from_palette_for_feature('positive charge', 'pharmacophoremt')
     '#E1B07E'
 
     Returns

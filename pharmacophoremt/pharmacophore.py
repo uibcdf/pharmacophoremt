@@ -18,11 +18,11 @@ class Pharmacophore():
     Attributes
     ----------
 
-    elements : :obj:`list` of :obj:`pharmacophoremt.pharmacoforic_elements`
-        List of pharmacophoric elements
+    interaction_sites : :obj:`list` of :obj:`pharmacophoremt.interaction_sites`
+        List of interaction sites
 
-    n_elements : int
-        Number of pharmacophoric elements
+    n_interaction_sites : int
+        Number of interaction sites
 
     extractor : :obj:`pharmacophoremt.extractors`
         Extractor object used to elucidate the pharmacophore
@@ -35,8 +35,8 @@ class Pharmacophore():
 
     def __init__(self, pharmacophore=None, form=None):
 
-        self.elements = []
-        self.n_elements = 0
+        self.interaction_sites = []
+        self.n_interaction_sites = 0
         self.extractor = None
         self.molecular_system = None
 
@@ -53,7 +53,7 @@ class Pharmacophore():
 
         """Adding the pharmacophore representation to a view (NGLWidget) from NGLView.
 
-        Each pharmacophoric element is added to the NGLWidget as a new component.
+        Each interaction site is added to the NGLWidget as a new component.
 
         Parameters
         ----------
@@ -82,8 +82,8 @@ class Pharmacophore():
 
         """
 
-        for element in self.elements:
-            element.add_to_NGLView(view, color_palette=color_palette)
+        for interaction_site in self.interaction_sites:
+            interaction_site.add_to_NGLView(view, color_palette=color_palette)
 
         pass
 
@@ -121,36 +121,36 @@ class Pharmacophore():
 
         return view
 
-    def add_element(self, pharmacophoric_element):
+    def add_interaction_site(self, interaction_site):
 
-        """Adding a new element to the pharmacophore.
+        """Adding a new interaction site to the pharmacophore.
 
         Parameters
         ----------
-        pharmacophoric_element: :obj: `pharmacophoremt.pharmacophoric_elements`
-            Native object for pharmacophoric elements of any class defined in the module
-            `pharmacophoremt.pharmacophoric_elements`
+        interaction_site: :obj: `pharmacophoremt.interaction_sites`
+            Native object for interaction sites of any class defined in the module
+            `pharmacophoremt.interaction_sites`
 
         Returns
         -------
 
-            The pharmacophoric element given as input argument is added to the pharmacophore
-            as a new entry of the list `elements`.
+            The interaction site given as input argument is added to the pharmacophore
+            as a new entry of the list `interaction_sites`.
 
         Example
         -------
 
         >>> import pharmacophoremt as oph
         >>> pharmacophore = oph.Pharmacophore()
-        >>> element = oph.pharmacophoric_elements.PositiveChargeSphere('[0,0,0] nm', '1.0 nm')
-        >>> pharmacophore.add_element(element)
-        >>> pharmacophore.elements
-        [pharmacophoremt.pharmacophoric_elements.aromatic_ring.AromaticRingSphere at 0x7fa33284a1d0>]
+        >>> interaction_site = oph.interaction_sites.PositiveChargeSphere('[0,0,0] nm', '1.0 nm')
+        >>> pharmacophore.add_interaction_site(interaction_site)
+        >>> pharmacophore.interaction_sites
+        [pharmacophoremt.interaction_sites.aromatic_ring.AromaticRingSphere at 0x7fa33284a1d0>]
 
         """
 
-        self.elements.append(pharmacophoric_element)
-        self.n_elements +=1
+        self.interaction_sites.append(interaction_site)
+        self.n_interaction_sites +=1
 
         pass
 
@@ -172,8 +172,8 @@ class Pharmacophore():
 
         """
 
-        self.elements=[]
-        self.n_elements=0
+        self.interaction_sites=[]
+        self.n_interaction_sites=0
         self.extractor=None
         self.molecular_system=None
 
@@ -204,8 +204,8 @@ class Pharmacophore():
         from pharmacophoremt.io import from_pharmer as _from_pharmer
         tmp_pharmacophore = _from_pharmer(pharmacophore)
         self.__reset()
-        self.elements = tmp_pharmacophore.elements
-        self.n_elements = tmp_pharmacophore.n_elements
+        self.interaction_sites = tmp_pharmacophore.interaction_sites
+        self.n_interaction_sites = tmp_pharmacophore.n_interaction_sites
         self.molecular_system = tmp_pharmacophore.molecular_system
 
         pass

@@ -30,16 +30,16 @@ These demonstration objects and files should be replaced. The current ones are t
 
 
 import pkg_resources
-from pharmacophoremt import pharmacophoric_elements as elements
+from pharmacophoremt import pharmacophoric_interaction_sites as interaction_sites
 from pharmacophoremt import Pharmacophore
 
 pharmacophore_pharmer_file = pkg_resources.resource_filename('pharmacophoremt', 'data/pharmer.json')
 
 pharmacophore = Pharmacophore()
-#pharmacophore.add_element(elements.PositiveChargeSphere('[0,0,0] angstroms', '1.0 angstroms'))
-#pharmacophore.add_element(elements.NegativeChargeSphere('[-1,2,0] angstroms', '1.0 angstroms'))
-#pharmacophore.add_element(elements.HBAcceptorSphereAndVector('[-1,-1,0] angstroms', '1.0 angstroms',[-1,-1,-2]))
-#pharmacophore.add_element(elements.HydrophobicGaussianKernel('[1,1,3] angstroms', '1.0 angstroms'))
-#pharmacophore.add_element(elements.AromaticRingSphere('[-2,-3,0] angstroms', '1.5 angstroms'))
+#pharmacophore.add_interaction_site(interaction_sites.PositiveChargeSphere('[0,0,0] angstroms', '1.0 angstroms'))
+#pharmacophore.add_interaction_site(interaction_sites.NegativeChargeSphere('[-1,2,0] angstroms', '1.0 angstroms'))
+#pharmacophore.add_interaction_site(interaction_sites.HBAcceptorSphereAndVector('[-1,-1,0] angstroms', '1.0 angstroms',[-1,-1,-2]))
+#pharmacophore.add_interaction_site(interaction_sites.HydrophobicGaussianKernel('[1,1,3] angstroms', '1.0 angstroms'))
+#pharmacophore.add_interaction_site(interaction_sites.AromaticRingSphere('[-2,-3,0] angstroms', '1.5 angstroms'))
 
-del(pkg_resources, elements, Pharmacophore)
+del(pkg_resources, interaction_sites, Pharmacophore)

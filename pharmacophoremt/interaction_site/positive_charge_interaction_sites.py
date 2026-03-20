@@ -1,6 +1,6 @@
-"""Pharmacophoric elements for the feature: positive charge.
+"""Pharmacophoric interaction_sites for the feature: positive charge.
 
-This module contains all available classes to create pharmacophoric elements for the feature
+This module contains all available classes to create pharmacophoric interaction_sites for the feature
 'positive charge' with different shapes.
 
 Notes

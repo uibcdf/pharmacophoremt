@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the shape: sphere and vector.
+"""Parent class for pharmacophoric interaction_sites with the shape: sphere and vector.
 
 This module contains a parent class to be inherited with attributes and methods for pharamacophoric
-elements with the 'sphere and vector' shape.
+interaction_sites with the 'sphere and vector' shape.
 
 """
 
@@ -15,7 +15,7 @@ class SphereAndVector():
     """ Parent class of pharmacophoric shape sphere and vector.
 
     Common attributes and methods will be included here to be inherited by the specific pharmacophoric
-    elements with shape sphere and vector.
+    interaction_sites with shape sphere and vector.
 
     Parameters
     ----------

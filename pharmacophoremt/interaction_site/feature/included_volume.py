@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the feature: included volume.
+"""Parent class for pharmacophoric interaction_sites with the feature: included volume.
 
 This module contains a parent class to be inherited with attributes and methods for pharmacophoric
-elements with the 'included volume' feature.
+interaction_sites with the 'included volume' feature.
 
 """
 
@@ -9,7 +9,7 @@ class IncludedVolume():
 
     """ Parent class of pharmacophoric feature.
 
-    Common attributes and methods to be inherited by the pharmacophoric elements with the 'included
+    Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'included
     volume' feature.
 
     Attributes

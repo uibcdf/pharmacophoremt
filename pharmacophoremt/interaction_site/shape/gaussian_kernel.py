@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the shape: Gaussian kernel.
+"""Parent class for pharmacophoric interaction_sites with the shape: Gaussian kernel.
 
 This module contains a parent class to be inherited with attributes and methods for pharamacophoric
-elements with the 'gaussian kernel' shape.
+interaction_sites with the 'gaussian kernel' shape.
 
 """
 
@@ -15,7 +15,7 @@ class GaussianKernel():
     """ Parent class for the pharmacophoric shape Gaussian kernel.
 
     Common attributes and methods will be included here to be inherited by the specific pharmacophoric
-    elements with shape Gaussian kernel.
+    interaction_sites with shape Gaussian kernel.
 
     Parameters
     ----------

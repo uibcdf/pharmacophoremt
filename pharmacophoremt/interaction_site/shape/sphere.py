@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the shape: sphere.
+"""Parent class for pharmacophoric interaction_sites with the shape: sphere.
 
 This module contains a parent class to be inherited with attributes and methods for pharamacophoric
-elements with the 'sphere' shape.
+interaction_sites with the 'sphere' shape.
 
 """
 
@@ -15,7 +15,7 @@ class Sphere():
     """ Parent class for the pharmacophoric shape sphere.
 
     Common attributes and methods will be included here to be inherited by specific pharmacophoric
-    elements with shape sphere.
+    interaction_sites with shape sphere.
 
     Parameters
     ----------

@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the feature: aromatic ring.
+"""Parent class for pharmacophoric interaction_sites with the feature: aromatic ring.
 
 This module contains a parent class to be inherited with attributes and methods for pharamacophoric
-elements with the 'aromatic ring' feature.
+interaction_sites with the 'aromatic ring' feature.
 
 """
 
@@ -9,7 +9,7 @@ class AromaticRing():
 
     """ Parent class of pharmacophoric feature.
 
-    Common attributes and methods to be inherited by the pharmacophoric elements with the 'aromatic
+    Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'aromatic
     ring' feature.
 
     Attributes

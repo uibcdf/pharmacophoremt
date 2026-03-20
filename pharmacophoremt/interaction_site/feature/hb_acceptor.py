@@ -1,7 +1,7 @@
-"""Parent class for pharmacophoric elements with the feature: hb acceptor.
+"""Parent class for pharmacophoric interaction_sites with the feature: hb acceptor.
 
 This module contains a parent class to be inherited with attributes and methods for pharamacophoric
-elements with the 'hb acceptor' feature.
+interaction_sites with the 'hb acceptor' feature.
 
 """
 
@@ -9,7 +9,7 @@ class HBAcceptor():
 
     """ Parent class of pharmacophoric feature.
 
-    Common attributes and methods to be inherited by the pharmacophoric elements with the 'hb
+    Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'hb
     acceptor' feature.
 
     Attributes

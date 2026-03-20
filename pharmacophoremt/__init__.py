@@ -16,7 +16,7 @@ def __print_version__():
 
 from . import config
 from ._pyunitwizard import puw as pyunitwizard
-from . import element
+from . import interaction_site
 from .pharmacophore import Pharmacophore
 from . import io
 from . import viewer
