@@ -18,8 +18,10 @@ PharmacophoreMT is a citizen of the MolSysSuite ecosystem and must adhere to the
 - **molsysviewer**: The visual hub. PharmacophoreMT communicates with Mol* via the dedicated `molsysviewer-pharmacophoremt` addon for high-performance vectorized rendering.
 
 ## 2. InteractionSite Composition Pattern
-A pharmacophore point is the union of a `Feature` (Chemical property) and a `Shape` (Geometric representation). 
-- **Atomic Design**: This separation allows adding new shapes (e.g., Density Isosurfaces) or features (e.g., Covalent Warheads) without modifying the core interaction site logic.
+An `InteractionSite` is the atomic unit of a pharmacophore, defined as the union of a `Shape` (Geometry) and one or more `Features` (Chemical properties).
+- **Atomic Design**: This separation allows adding new shapes (e.g., Density Isosurfaces) or features (e.g., Covalent Warheads) without modifying the core logic.
+- **Mixed Features**: A single site can represent multiple chemical identities (e.g., a "Donor+Acceptor" site for a hydroxyl group), avoiding geometric redundancy.
+
 
 ## 3. MolSysMT Form Contract
 The `Pharmacophore` class will be registered as a native MolSysMT form. This enables interoperability:
