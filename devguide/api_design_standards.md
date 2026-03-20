@@ -9,7 +9,7 @@ All public-facing API functions MUST be decorated with `@arg_digest`.
 
 ## 2. Diagnostics and Errors (`smonitor`)
 Use the `smonitor` catalog for all user-facing warnings and errors.
-- **Namespace**: `PHMT` (e.g., `PHMT-E101` for an invalid element type).
+- **Namespace**: `PHMT` (e.g., `PHMT-E101` for an invalid interaction site type).
 - **Levels**: Use `ERROR` for blockers and `WARNING` for non-critical inconsistencies (e.g., units not provided).
 
 ## 3. Naming Conventions

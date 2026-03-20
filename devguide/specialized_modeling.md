@@ -14,4 +14,4 @@ Extension of core concepts for non-standard molecular systems.
 - **Replacement Logic**: Identifying which water molecules should be displaced vs. mimicked by the ligand.
 
 ## 4. Quantum-Enhanced Features (QEP)
-- **Electronic Enrichement**: Integrating Molecular Electrostatic Potential (ESP) or electron density into element descriptors for high-accuracy IA scoring.
+- **Electronic Enrichement**: Integrating Molecular Electrostatic Potential (ESP) or electron density into interaction site descriptors for high-accuracy IA scoring.

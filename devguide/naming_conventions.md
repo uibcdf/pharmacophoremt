@@ -17,14 +17,14 @@ All imports within the library must be relative or use the new package name:
 ```python
 # CORRECT
 from pharmacophoremt import pyunitwizard as puw
-from . import element
+from . import interaction site
 
 # INCORRECT
 import openpharmacophore as oph
 ```
 
 ### 2. Classes and Methods
-- Element classes must follow the pattern: `[Feature][Shape]`.
+- InteractionSite classes must follow the pattern: `[Feature][Shape]`.
   - Example: `HBDonorSphere`, `AromaticRingGaussianKernel`.
 - Conversion methods in the main `Pharmacophore` class must follow the pattern `to_[format]` and `from_[format]`.
 
@@ -32,4 +32,5 @@ import openpharmacophore as oph
 
 - **Feature**: A chemical or pharmacophoric property (e.g., H-Bond Donor, Hydrophobicity).
 - **Shape**: A geometric representation (e.g., Sphere, Point, Vector).
-- **Element**: The union of a Feature and a Shape.
+- **InteractionSite**: The core unit of a pharmacophore. It is the composition of a **Feature** and a **Shape**. (Replaces the obsolete "Point" and the colliding "Element").
+

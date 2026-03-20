@@ -34,4 +34,4 @@ Beyond standard small molecules:
 - **Multi-Objective Optimization**: Anti-Target (Negative) pharmacophores for toxicity filtering.
 
 ### 4. Quantum & Electronic Enrichment
-- **Quantum-Enhanced Pharmacophores (QEP)**: Integrating Molecular Electrostatic Potential (ESP) or electron density into elements.
+- **Quantum-Enhanced Pharmacophores (QEP)**: Integrating Molecular Electrostatic Potential (ESP) or electron density into interaction sites.
