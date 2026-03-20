@@ -4,7 +4,7 @@ class Pharmacophore():
 
     """ Native object for pharmacophores.
 
-    Openpharmacophore native class to store pharmacophoric models.
+    pharmacophoremt native class to store pharmacophoric models.
 
     Parameters
     ----------
@@ -18,13 +18,13 @@ class Pharmacophore():
     Attributes
     ----------
 
-    elements : :obj:`list` of :obj:`openpharmacophore.pharmacoforic_elements`
+    elements : :obj:`list` of :obj:`pharmacophoremt.pharmacoforic_elements`
         List of pharmacophoric elements
 
     n_elements : int
         Number of pharmacophoric elements
 
-    extractor : :obj:`openpharmacophore.extractors`
+    extractor : :obj:`pharmacophoremt.extractors`
         Extractor object used to elucidate the pharmacophore
 
     molecular_system : :obj:`molsysmt.MolSys`
@@ -49,7 +49,7 @@ class Pharmacophore():
             else:
                 raise NotImplementedError
 
-    def add_to_NGLView(self, view, color_palette='openpharmacophore'):
+    def add_to_NGLView(self, view, color_palette='pharmacophoremt'):
 
         """Adding the pharmacophore representation to a view (NGLWidget) from NGLView.
 
@@ -61,7 +61,7 @@ class Pharmacophore():
             View as NGLView widget where the representation of the pharmacophore is going to be
             added.
         color_palette: :obj: `str`, dict
-            Color palette name or dictionary. (Default: 'openpharmacophore')
+            Color palette name or dictionary. (Default: 'pharmacophoremt')
 
         Note
         ----
@@ -71,7 +71,7 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> import nglview as nv
         >>> pharmacophore_pharmer_file = oph.demo.pharmacophore_pharmer_file
         >>> pharmacophore = oph.Pharmacophore(pharmacophore_pharmer_file, form='pharmer')
@@ -87,7 +87,7 @@ class Pharmacophore():
 
         pass
 
-    def show(self, color_palette='openpharmacophore'):
+    def show(self, color_palette='pharmacophoremt'):
 
         """Showing the pharmacophore model together with the molecular system from with it was
         extracted as a new view (NGLWidget) from NGLView.
@@ -95,7 +95,7 @@ class Pharmacophore():
         Parameters
         ----------
         color_palette: :obj: `str`, dict
-            Color palette name or dictionary. (Default: 'openpharmacophore')
+            Color palette name or dictionary. (Default: 'pharmacophoremt')
 
         Returns
         -------
@@ -106,7 +106,7 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> import nglview as nv
         >>> pharmacophore_pharmer_file = oph.demo.pharmacophore_pharmer_file
         >>> pharmacophore = oph.Pharmacophore(pharmacophore_pharmer_file, form='pharmer')
@@ -127,9 +127,9 @@ class Pharmacophore():
 
         Parameters
         ----------
-        pharmacophoric_element: :obj: `openpharmacohore.pharmacophoric_elements`
+        pharmacophoric_element: :obj: `pharmacophoremt.pharmacophoric_elements`
             Native object for pharmacophoric elements of any class defined in the module
-            `openpharmacophore.pharmacophoric_elements`
+            `pharmacophoremt.pharmacophoric_elements`
 
         Returns
         -------
@@ -140,12 +140,12 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> pharmacophore = oph.Pharmacophore()
         >>> element = oph.pharmacophoric_elements.PositiveChargeSphere('[0,0,0] nm', '1.0 nm')
         >>> pharmacophore.add_element(element)
         >>> pharmacophore.elements
-        [openpharmacophore.pharmacophoric_elements.aromatic_ring.AromaticRingSphere at 0x7fa33284a1d0>]
+        [pharmacophoremt.pharmacophoric_elements.aromatic_ring.AromaticRingSphere at 0x7fa33284a1d0>]
 
         """
 
@@ -166,7 +166,7 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> pharmacophore = oph.Pharmacophore()
         >>> pharmacophore._from_reset()
 
@@ -194,14 +194,14 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> pharmacophore_pharmer_file = oph.demo.pharmacophore_pharmer_file
         >>> pharmacophore = oph.Pharmacophore()
         >>> pharmacophore._from_pharmer(pharmacophore_pharmer_file)
 
         """
 
-        from openpharmacophore.io import from_pharmer as _from_pharmer
+        from pharmacophoremt.io import from_pharmer as _from_pharmer
         tmp_pharmacophore = _from_pharmer(pharmacophore)
         self.__reset()
         self.elements = tmp_pharmacophore.elements
@@ -227,13 +227,13 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> pharmacophore = oph.demo.pharmacophore
         >>> pharmacophore.to_pharmer('pharmer_pharmacophore.json')
 
         """
 
-        from openpharmacophore.io import to_pharmer as _to_pharmer
+        from pharmacophoremt.io import to_pharmer as _to_pharmer
         return _to_pharmer(self, file_name=file_name)
 
     def __from_ligandscout(self, pharmacophore):
@@ -253,14 +253,14 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> pharmacophore_ligandscout_file = oph.demo.pharmacophore_ligandscout_file
         >>> pharmacophore = oph.Pharmacophore()
         >>> pharmacophore._from_pharmer(pharmacophore_ligandscout_file)
 
         """
 
-        from openpharmacophore.io import from_ligandscout as _from_ligandscout
+        from pharmacophoremt.io import from_ligandscout as _from_ligandscout
         self = _from_ligandscout(pharmacophore)
 
         pass
@@ -282,12 +282,11 @@ class Pharmacophore():
         Example
         -------
 
-        >>> import openpharmacophore as oph
+        >>> import pharmacophoremt as oph
         >>> pharmacophore = oph.demo.pharmacophore
         >>> pharmacophore.to_ligandscout('ligandscout_pharmacophore.xxx')
 
         """
 
-        from openpharmacophore.io import to_ligandscout as _to_ligandscout
+        from pharmacophoremt.io import to_ligandscout as _to_ligandscout
         return _to_ligandscout(self, file_name=file_name)
-

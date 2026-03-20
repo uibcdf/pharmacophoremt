@@ -37,8 +37,8 @@ class Sphere():
 
         self.shape_name = 'sphere'
 
-        self.center = _puw.standardize(center)
-        self.radius = _puw.standardize(radius)
+        self.center = puw.standardize(center)
+        self.radius = puw.standardize(radius)
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the sphere representation to an NGLview view
@@ -72,8 +72,8 @@ class Sphere():
 
         color = convert_color_code(color, to_form='rgb')
 
-        center = _puw.get_value(self.center, to_unit='angstroms').tolist()
-        radius = _puw.get_value(self.radius, to_unit='angstroms')
+        center = puw.get_value(self.center, to_unit='angstroms').tolist()
+        radius = puw.get_value(self.radius, to_unit='angstroms')
 
         try:
             n_components = len(view._ngl_component_ids)

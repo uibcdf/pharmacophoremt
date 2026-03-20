@@ -6,17 +6,17 @@ method to extract color codes from these palettes or from a user defined one as 
 
 Attributes
 ----------
-openpharmacophore: dict
+pharmacophoremt: dict
     Native color palette.
 
 Todo
 ----
-Some color palettes can be included here. The native 'openpharmacophore' palette should be
+Some color palettes can be included here. The native 'pharmacophoremt' palette should be
 redefined: colors are temporary.
 
 """
 
-openpharmacophore={
+pharmacophoremt={
     'positive charge': '#E1B07E',
     'negative charge': '#A5F8D3',
     'hb acceptor': '#F13030',
@@ -27,7 +27,7 @@ openpharmacophore={
     'aromatic ring': '#D6D84F',
 }
 
-def get_color_from_palette_for_feature(feature_name, color_palette='openpharmacophore'):
+def get_color_from_palette_for_feature(feature_name, color_palette='pharmacophoremt'):
 
     """Getting the color code of a pharmacophoric feature from a color palette.
 
@@ -46,7 +46,7 @@ def get_color_from_palette_for_feature(feature_name, color_palette='openpharmaco
         }
 
     Some colorpalettes are defined already in the module
-    `openpharmacophore.pharmacophoric_elements.features.color_palettes`.
+    `pharmacophoremt.pharmacophoric_elements.features.color_palettes`.
 
     Parameters
     ----------
@@ -54,11 +54,11 @@ def get_color_from_palette_for_feature(feature_name, color_palette='openpharmaco
         Feature name: 'positive charge', 'negative charge', 'hb acceptor', 'hb donor',
         'included volume', 'excluded volume', 'hydrophobicity' or 'aromatic ring'.
     color_palette: :obj: `str`, dict
-        Dictionary or color palette name predefined already in the module `openpharmacophore.pharmacophoric_elements.features.color_palettes`. (Default: 'openpharmacophore')
+        Dictionary or color palette name predefined already in the module `pharmacophoremt.pharmacophoric_elements.features.color_palettes`. (Default: 'pharmacophoremt')
 
     Examples
     -------
-    >>> import openpharmacophore as oph
+    >>> import pharmacophoremt as oph
     >>> my_color_palette={
     ... 'positive charge': '#E1B07E',
     ... 'negative_charge': '#A5F8D3',
@@ -72,8 +72,8 @@ def get_color_from_palette_for_feature(feature_name, color_palette='openpharmaco
     >>> oph.pharmacophoric_elements.features.color_palettes.get_color_from_palette_for_feature('hb donor', my_color_palette)
     '#5B618A'
 
-    >>> import openpharmacophore as oph
-    >>> oph.pharmacophoric_elements.features.color_palettes.get_color_from_palette_for_feature('positive charge', 'openpharmacophore')
+    >>> import pharmacophoremt as oph
+    >>> oph.pharmacophoric_elements.features.color_palettes.get_color_from_palette_for_feature('positive charge', 'pharmacophoremt')
     '#E1B07E'
 
     Returns

@@ -2,11 +2,11 @@
 """Module with demonstration objects and files.
 
 This module contains useful objects and files to help document and demonstrate the use of
-OpenPharmacophore.
+pharmacophoremt.
 
 Attributes
 ----------
-pharmacophore: :obj:`openpharmacophore.Pharmacophore`
+pharmacophore: :obj:`pharmacophoremt.Pharmacophore`
     Demonstration native pharmacophore object.
 
 pharmacophore_pharmer_file : str
@@ -15,7 +15,7 @@ pharmacophore_pharmer_file : str
 
 Examples
 -------
->>> import openpharmacophore as oph
+>>> import pharmacophoremt as oph
 >>> pharmacophore = oph.demo.pharmacophore
 
 
@@ -30,10 +30,10 @@ These demonstration objects and files should be replaced. The current ones are t
 
 
 import pkg_resources
-from openpharmacophore import pharmacophoric_elements as elements
-from openpharmacophore import Pharmacophore
+from pharmacophoremt import pharmacophoric_elements as elements
+from pharmacophoremt import Pharmacophore
 
-pharmacophore_pharmer_file = pkg_resources.resource_filename('openpharmacophore', 'data/pharmer.json')
+pharmacophore_pharmer_file = pkg_resources.resource_filename('pharmacophoremt', 'data/pharmer.json')
 
 pharmacophore = Pharmacophore()
 #pharmacophore.add_element(elements.PositiveChargeSphere('[0,0,0] angstroms', '1.0 angstroms'))
