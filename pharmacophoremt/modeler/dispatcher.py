@@ -45,8 +45,14 @@ def model(molecular_system, method='complex-based', ligand_selection=None,
     
     elif method == 'ligand-based':
         from pharmacophoremt.modeler.ligand_based import LigandBasedModeler
-        modeler = LigandBasedModeler(system, **kwargs)
+        modeler = LigandBasedModeler(molecular_system, **kwargs)
         return modeler.build()
+
+    elif method == 'structure-based':
+        from pharmacophoremt.modeler.structure_based import StructureBasedModeler
+        modeler = StructureBasedModeler(molecular_system, **kwargs)
+        return modeler.build()
+
     
     else:
         raise NotImplementedError(f"Method '{method}' is not yet implemented.")

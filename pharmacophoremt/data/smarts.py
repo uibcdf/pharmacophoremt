@@ -38,7 +38,10 @@ LIGAND_SMARTS = {
         '[#16!H0]',
         '[#7!H0&!$(N-[SX4](=O)(=O)[CX4](F)(F)F)]',
         '[#8!H0&!$([OH][C,S,P]=O)]',
-    ]
+    ],
+    "halogen": [
+        '[#6][F,Cl,Br,I]',
+    ],
 }
 
 PROTEIN_SMARTS = LIGAND_SMARTS.copy() # Can be specialized if needed

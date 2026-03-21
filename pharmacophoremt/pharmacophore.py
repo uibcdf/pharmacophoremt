@@ -120,7 +120,8 @@ class Pharmacophore():
     @signal(tags=["core", "pharmacophore", "query"])
     @arg_digest(type_check=True)
     def get(self, selection='all', feature_name=None, shape_name=None, 
-            get_center=False, get_radius=False, get_features=False, skip_digestion=False):
+            get_center=False, get_radius=False, get_direction=False, 
+            get_features=False, skip_digestion=False):
         """Flexible query method to extract information from interaction sites."""
         indices = range(self.n_interaction_sites) if selection == 'all' else selection
         subset = [self.interaction_sites[i] for i in indices]
@@ -137,12 +138,43 @@ class Pharmacophore():
         if get_radius:
             radii = [puw.get_value(s.radius, to_unit='nm') for s in subset]
             output.append(puw.quantity(np.array(radii), 'nm'))
+        if get_direction:
+            # Only some shapes have direction
+            dirs = [puw.get_value(getattr(s.shape, 'direction', [0.0, 0.0, 0.0])) for s in subset]
+            output.append(np.array(dirs))
         if get_features:
             output.append([s.features for s in subset])
 
         if len(output) == 0: return subset
         if len(output) == 1: return output[0]
         return tuple(output)
+
+    @signal(tags=["core", "pharmacophore", "view"])
+    @arg_digest(type_check=True)
+    def add_to_molsysviewer(self, view, tag=None, skip_digestion=False):
+        """Add the pharmacophore to a MolSysViewer instance using high-performance vectorization."""
+        if self.n_interaction_sites == 0:
+            return
+
+        # 1. Extract data in bulk
+        centers, radii, directions, features = self.get(
+            get_center=True, get_radius=True, get_direction=True, get_features=True, 
+            skip_digestion=True
+        )
+        
+        # 2. Map features to MolSysViewer kinds (taking the primary feature)
+        kinds = [f[0] for f in features]
+        
+        # 3. Send to Mol* engine via vectorized call
+        # Using the new official RFC-001 API
+        view.shapes.add_interaction_sites(
+            centers=puw.get_value(centers, to_unit='angstroms'), 
+            kinds=kinds,
+            radii=puw.get_value(radii, to_unit='angstroms'),
+            directions=directions,
+            tag=tag,
+            name=self.name
+        )
 
     @signal(tags=["core", "pharmacophore", "query"])
     def get_distance_matrix(self):

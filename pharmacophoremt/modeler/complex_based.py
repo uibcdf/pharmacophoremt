@@ -149,6 +149,8 @@ class ComplexBasedModeler(Modeler):
             min_h_ang = puw.get_value(self.params['hb_ang_min'], to_unit='degree')
             max_hyd_dist = puw.get_value(self.params['hyd_dist_max'], to_unit='nm')
             max_charge_dist = puw.get_value(self.params['charge_dist_max'], to_unit='nm')
+            max_halogen_dist = puw.get_value(self.params['halogen_dist_max'], to_unit='nm')
+            max_metal_dist = puw.get_value(self.params['metal_dist_max'], to_unit='nm')
 
             for l_indices in lig_feats['hydrophobicity']:
                 l_center = self._get_centroid(ligand_mol, l_indices)
@@ -191,6 +193,33 @@ class ComplexBasedModeler(Modeler):
                         if self._dist(l_center, r_center) <= max_charge_dist:
                             ph.add_interaction_site(site_class(l_center, '0.15 nm', skip_digestion=True))
                             break
+
+            for l_indices in lig_feats['halogen']:
+                # l_indices: (C_idx, X_idx)
+                c_center = self._get_centroid(ligand_mol, [l_indices[0]])
+                x_center = self._get_centroid(ligand_mol, [l_indices[1]])
+                for r_indices in rec_feats['hb acceptor']:
+                    r_center = self._get_centroid(receptor_bs_mol, r_indices)
+                    if self._dist(x_center, r_center) <= max_halogen_dist:
+                        if self._angle(c_center, x_center, r_center) >= 150:
+                            dir_vec = puw.get_value(r_center - x_center)
+                            ph.add_interaction_site(interaction_sites.HalogenBondSphereAndVector(x_center, '0.1 nm', dir_vec, skip_digestion=True))
+                            break
+
+            metal_elements = ['MG', 'ZN', 'CA', 'FE', 'MN', 'CU', 'NI', 'CO']
+            rec_elements = msm.get(self.system, selection=rec_indices, element=True)
+            metals_indices = [rec_indices[i] for i, e in enumerate(rec_elements) if e.upper() in metal_elements]
+            
+            if len(metals_indices) > 0:
+                metals_coords = msm.get(self.system, selection=metals_indices, structure_indices=idx, coordinates=True)
+                metals_coords = puw.get_value(metals_coords, to_unit='nm')[0]
+                for m_coord in metals_coords:
+                    m_center = puw.quantity(m_coord, 'nm')
+                    for l_indices in lig_feats['hb acceptor']:
+                        l_center = self._get_centroid(ligand_mol, l_indices)
+                        if self._dist(m_center, l_center) <= max_metal_dist:
+                             ph.add_interaction_site(interaction_sites.MetalBindingSphere(l_center, '0.15 nm', skip_digestion=True))
+                             break
 
             self._merge_interaction_sites(ph, feature_name='hydrophobicity', threshold='0.2 nm')
             phs.append(ph)

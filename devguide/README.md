@@ -19,9 +19,11 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 ## Modeling Domains
 
 9. [Modeling Strategies](modeling_strategies.md): Ligand, Receptor, and Complex-based approaches.
-10. [Dynamics and MSM](dynamics_and_msm.md): Dynophores, kinetics, and Markov State Models.
-11. [Specialized Modeling](specialized_modeling.md): Peptides, Covalent inhibitors, and Water networks.
-12. [AI & Data Science](ai_and_data_science.md): Graph exports, Diffusion blueprints, and 3DPFs.
+5. [Dynamics and MSM](dynamics_and_msm.md): Dynophores, kinetics, and Markov State Models.
+6. [Specialized Modeling](specialized_modeling.md): Peptides, Covalent inhibitors, and Water networks.
+7. [AI & Data Science](ai_and_data_science.md): Graph exports, Diffusion blueprints, and 3DPFs.
+8. [Visualization Strategies](visualization_strategies.md): Programmatic and Add-on integration with MolSysViewer.
+
 
 ---
 **Philosophy**: Interoperability, Physical Rigor, Atomized Design, and AI-Ready.

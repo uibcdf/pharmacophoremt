@@ -2,11 +2,12 @@
 
 The development of PharmacophoreMT is divided into four main generations, moving from a basic toolkit to a state-of-the-art design "Tank".
 
-## Gen 1: Foundation (Current)
+## Gen 1: Foundation (Completed)
 - [x] Refactor from `openpharmacophore` to `pharmacophoremt`.
 - [x] Integration with `molsysmt`, `pyunitwizard`, and `argdigest`.
-- [ ] Complete Pharmer and LigandScout I/O.
-- [ ] Basic `molsysviewer` integration (Static spheres).
+- [x] Complete Pharmer and LigandScout I/O.
+- [x] Official `molsysviewer` integration (Interaction Sites).
+- [x] High-Resolution modeling triad (Complex, Ligand, Structure).
 
 ## Gen 2: Dynamic Modeling (Dynophores)
 - [ ] Native MSM engine implementation.
