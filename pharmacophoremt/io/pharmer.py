@@ -1,21 +1,22 @@
 from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt import Pharmacophore
 from pharmacophoremt import interaction_site as interaction_sites
 import molsysmt as msm
 import json
-import pyunitwizard as puw
-
 
 def from_pharmer(pharmacophore):
 
+    from pharmacophoremt.pharmacophore import Pharmacophore
     tmp_pharmacophore = Pharmacophore()
 
-    if type(pharmacophore)==str:
+    if isinstance(pharmacophore, str):
         if pharmacophore.endswith('.json'):
+            print(f"Reading file: {pharmacophore}")
             with open(pharmacophore, "r") as fff:
                 pharmacophore = json.load(fff)
         else:
             raise NotImplementedError
+
+    print(f"Number of points in JSON: {len(pharmacophore['points'])}")
 
     def get_pharmer_interaction_site_properties(interaction_site, direction=False):
         center = puw.quantity([interaction_site['x'], interaction_site['y'], interaction_site['z']], 'angstroms')
@@ -74,9 +75,6 @@ def from_pharmer(pharmacophore):
 
     if "ligand" in pharmacophore:
         ligand = msm.convert(pharmacophore["ligand"], to_form="molsysmt.MolSys")
-        #receptor = msm.convert(pharmacophore["receptor"], to_form="molsysmt.MolSys")
-        #tmp_pharmacophore.molecular_system = msm.merge([ligand, receptor])
-
         tmp_pharmacophore.molecular_system = ligand
 
     return tmp_pharmacophore
@@ -121,11 +119,10 @@ def to_pharmer(pharmacophore, file_name):
 
         points.append(point_dict)
 
-    pharmacophore = {}
-    pharmacophore["points"] = points
+    pharmer_dict = {}
+    pharmer_dict["points"] = points
 
     # TODO: add ligand and/or receptor
     
     with open(file_name, "w") as outfile:
-        json.dump(pharmacophore, outfile)
-
+        json.dump(pharmer_dict, outfile)

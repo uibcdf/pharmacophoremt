@@ -1,98 +1,31 @@
-"""Module with objects and methods to choose and define the color code to represent pharmacophoric
-features when a pharmacophore is shown.
+from pharmacophoremt._private.colors import convert as convert_color_code
 
-This module contains predefined color palettes to represent pharmacophoric features, as well as a
-method to extract color codes from these palettes or from a user defined one as a dictionary.
+# Predefined color palettes
+# Rescued from OpenPharmacophore legacy
 
-Attributes
-----------
-pharmacophoremt: dict
-    Native color palette.
-
-Todo
-----
-Some color palettes can be included here. The native 'pharmacophoremt' palette should be
-redefined: colors are temporary.
-
-"""
-
-pharmacophoremt={
-    'positive charge': '#E1B07E',
-    'negative charge': '#A5F8D3',
-    'hb acceptor': '#F13030',
-    'hb donor': '#5B618A',
-    'included volume': '#109648',
-    'excluded volume': '#14110F',
-    'hydrophobicity': '#9EADC8',
-    'aromatic ring': '#D6D84F',
+pharmacophoremt = {
+    'positive charge': '#3498DB',  # Blue
+    'negative charge': '#884EA0',  # Purple
+    'hb acceptor': '#B03A2E',     # Red
+    'hb donor': '#17A589',        # Green
+    'included volume': '#707B7C', # Gray
+    'excluded volume': '#283747', # Black
+    'hydrophobicity': '#F5B041',  # Orange
+    'aromatic ring': '#F1C40F',   # Yellow
+    'halogen bond': '#1ABC9C',    # Turquoise
+    'metal coordination': '#E67E22', # Pumpkin
+    'cation-pi': '#E91E63',       # Pink
 }
 
 def get_color_from_palette_for_feature(feature_name, color_palette='pharmacophoremt'):
-
-    """Getting the color code of a pharmacophoric feature from a color palette.
-
-    A color palette is a Python dictionary where keys are the farmacophoric feature names and
-    the corresponding values are hexadecimal or normalized RGB color codes. For example:
-
-        my_color_palette={
-            'positive charge': '#E1B07E',
-            'negative charge': '#A5F8D3',
-            'hb acceptor': '#F13030',
-            'hb donor': '#5B618A',
-            'included volume': '#109648',
-            'excluded volume': '#14110F',
-            'hydrophobicity': '#9EADC8',
-            'aromatic ring': '#D6D84F',
-        }
-
-    Some colorpalettes are defined already in the module
-    `pharmacophoremt.pharmacophoric_interaction_sites.features.color_palettes`.
-
-    Parameters
-    ----------
-    feature_name: str
-        Feature name: 'positive charge', 'negative charge', 'hb acceptor', 'hb donor',
-        'included volume', 'excluded volume', 'hydrophobicity' or 'aromatic ring'.
-    color_palette: :obj: `str`, dict
-        Dictionary or color palette name predefined already in the module `pharmacophoremt.pharmacophoric_interaction_sites.features.color_palettes`. (Default: 'pharmacophoremt')
-
-    Examples
-    -------
-    >>> import pharmacophoremt as oph
-    >>> my_color_palette={
-    ... 'positive charge': '#E1B07E',
-    ... 'negative_charge': '#A5F8D3',
-    ... 'hb acceptor': '#F13030',
-    ... 'hb donor': '#5B618A',
-    ... 'included volume': '#109648',
-    ... 'excluded volume': '#14110F',
-    ... 'hydrophobicity': '#9EADC8',
-    ... 'aromatic ring': '#D6D84F',
-    ... }
-    >>> oph.pharmacophoric_interaction_sites.features.color_palettes.get_color_from_palette_for_feature('hb donor', my_color_palette)
-    '#5B618A'
-
-    >>> import pharmacophoremt as oph
-    >>> oph.pharmacophoric_interaction_sites.features.color_palettes.get_color_from_palette_for_feature('positive charge', 'pharmacophoremt')
-    '#E1B07E'
-
-    Returns
-    -------
-    :obj: str, :obj:`list` of :obj:`float`
-        Color code for input feature in color palette.
-
-    """
-
-    if type(color_palette)==str:
+    if isinstance(color_palette, str):
         try:
-            color_palette = globals()[color_palette]
+            palette = globals()[color_palette]
         except:
-            raise InputArgumentError('color_palette')
+            # Fallback to default
+            palette = pharmacophoremt
+    else:
+        palette = color_palette
 
-    try:
-        color = color_palette[feature_name]
-    except:
-        raise InputArgumentError('feature_name')
-
+    color = palette.get(feature_name, '#7F8C8D') # Gray fallback
     return color
-

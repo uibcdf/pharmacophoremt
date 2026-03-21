@@ -1,0 +1,41 @@
+{
+    "software": "pharmacophoremt",
+    "version": "0.1.0",
+    "name": "Comprehensive Test",
+    "description": "Test for SDF and Native",
+    "interaction_sites": [
+        {
+            "features": [
+                "hb donor"
+            ],
+            "shape": {
+                "type": "sphere",
+                "center": [
+                    1,
+                    2,
+                    3
+                ],
+                "radius": 0.2
+            }
+        },
+        {
+            "features": [
+                "aromatic ring"
+            ],
+            "shape": {
+                "type": "sphere and vector",
+                "center": [
+                    5,
+                    5,
+                    5
+                ],
+                "radius": 0.3,
+                "direction": [
+                    0.0,
+                    0.0,
+                    1.0
+                ]
+            }
+        }
+    ]
+}

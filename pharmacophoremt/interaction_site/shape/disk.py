@@ -45,9 +45,31 @@ class Disk():
 
         self.shape_name = 'disk'
 
-        self.center = center
-        self.normal = normal / np.linalg.norm(normal)
-        self.radius = radius
+        if not puw.is_quantity(center):
+            center = puw.quantity(center, 'nm')
+        std = puw.standardize(center)
+        if puw.is_quantity(std):
+            self.center = std
+        else:
+            self.center = puw.convert(center, to_unit=std, to_type='quantity')
+
+        if not puw.is_quantity(radius):
+            radius = puw.quantity(radius, 'nm')
+        std = puw.standardize(radius)
+        if puw.is_quantity(std):
+            self.radius = std
+        else:
+            self.radius = puw.convert(radius, to_unit=std, to_type='quantity')
+
+        if not puw.is_quantity(normal):
+            normal = puw.quantity(normal, 'dimensionless')
+        std = puw.standardize(normal)
+        if puw.is_quantity(std):
+            self.normal = std
+        else:
+            self.normal = puw.convert(normal, to_unit=std, to_type='quantity')
+
+        self.normal = self.normal / np.linalg.norm(self.normal)
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the disk representation to an NGLview view
@@ -83,7 +105,7 @@ class Disk():
 
         center = puw.get_value(self.center, to_unit='angstroms').tolist()
         radius = puw.get_value(self.radius, to_unit='angstroms')
-        normal = self.normal.tolist()
+        normal = puw.get_value(self.normal).tolist()
 
         try:
             n_components = len(view._ngl_component_ids)

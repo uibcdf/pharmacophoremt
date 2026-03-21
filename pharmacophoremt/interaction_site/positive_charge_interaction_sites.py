@@ -14,18 +14,18 @@ from .shape import Point, Sphere, GaussianKernel
 
 class PositiveChargePoint(InteractionSite):
 
-    def __init__(self, position):
+    def __init__(self, position, skip_digestion=False):
 
-        super().__init__(Point(position), "positive charge")
+        super().__init__(Point(position), "positive charge", skip_digestion=skip_digestion)
 
 class PositiveChargeSphere(InteractionSite):
 
-    def __init__(self, center, radius):
+    def __init__(self, center, radius, skip_digestion=False):
 
-        super().__init__(Sphere(center, radius), "positive charge")
+        super().__init__(Sphere(center, radius), "positive charge", skip_digestion=skip_digestion)
 
 class PositiveChargeGaussianKernel(InteractionSite):
 
-    def __init__(self, center, sigma):
+    def __init__(self, center, sigma, skip_digestion=False):
 
-        super().__init__(GaussianKernel(center, sigma), "positive charge")
+        super().__init__(GaussianKernel(center, sigma), "positive charge", skip_digestion=skip_digestion)

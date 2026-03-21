@@ -25,7 +25,7 @@ dependencies = [
     "scipy",
     "nglview",
     "molsysmt",
-    "pyunitwizard",
+    "pyunitwizard", "networkx",
 ]
 
 # Update the urls once the hosting is set up.

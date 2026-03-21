@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pharmacophore name="PharmacophoreMT Export"><feature type="HBD" id="0"><position x="1.000" y="2.000" z="3.000" tolerance="1.500" /><direction x="0.000" y="0.000" z="1.000" /></feature><feature type="H" id="1"><position x="5.000" y="5.000" z="5.000" tolerance="2.000" /></feature><feature type="AR" id="2"><position x="10.000" y="0.000" z="0.000" tolerance="1.200" /><direction x="1.000" y="0.000" z="0.000" /></feature></pharmacophore>

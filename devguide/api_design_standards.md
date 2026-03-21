@@ -15,6 +15,7 @@ Use the `smonitor` catalog for all user-facing warnings and errors.
 ## 3. Naming Conventions
 - **Internal Variables**: Use snake_case.
 - **Classes**: Use PascalCase (e.g., `HBDonorSphere`).
+- **I/O Functions**: Use the pattern `load_[software]` for reading and `to_[software]` for writing (e.g., `load_ligandscout`, `to_pharmer`).
 - **Private Methods**: Prefix with `_` or `__` as per the Python standard.
 
 ## 4. Docstrings

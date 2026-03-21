@@ -1,2 +1,2 @@
-def digest_pharmacophore(pharmacophore, ctx=None):
-    return pharmacophore
+def digest_pharmacophore(obj):
+    return obj

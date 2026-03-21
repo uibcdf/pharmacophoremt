@@ -20,5 +20,6 @@ from . import config
 from ._pyunitwizard import puw as pyunitwizard
 from . import interaction_site
 from .pharmacophore import Pharmacophore
+from .modeler.dispatcher import model
 from . import io
 from . import viewer

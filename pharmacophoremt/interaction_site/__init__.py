@@ -1,5 +1,6 @@
 from . import feature
 from . import shape
+from .interaction_site import InteractionSite
 from .positive_charge_interaction_sites import PositiveChargePoint
 from .positive_charge_interaction_sites import PositiveChargeSphere
 from .positive_charge_interaction_sites import PositiveChargeGaussianKernel

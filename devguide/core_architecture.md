@@ -31,5 +31,6 @@ The `Pharmacophore` class will be registered as a native MolSysMT form. This ena
 ## 4. MolSysViewer Addon: molsysviewer-pharmacophoremt
 Visualization is handled by a dedicated addon for `molsysviewer`.
 - **Vectorized Rendering**: Uses Mol* primitives for high-performance rendering of large ensembles.
+- **Interactive Labeling**: Rescued and refined from legacy work. Each site should be linkable to its origin (residue name, atom indices) via Mol* tooltips and click events.
 - **Protocol**: Communication happens via JSON messages over `anywidget`.
 - **Mapping**: standard colors and kinds (donor, acceptor, aromatic, etc.) are synchronized with `pharmacophoremt` feature names.

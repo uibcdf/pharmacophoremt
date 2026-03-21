@@ -41,8 +41,21 @@ class Sphere():
 
         self.shape_name = 'sphere'
 
-        self.center = center
-        self.radius = radius
+        if not puw.is_quantity(center):
+            center = puw.quantity(center, 'nm')
+        std = puw.standardize(center)
+        if puw.is_quantity(std):
+            self.center = std
+        else:
+            self.center = puw.convert(center, to_unit=std, to_type='quantity')
+
+        if not puw.is_quantity(radius):
+            radius = puw.quantity(radius, 'nm')
+        std = puw.standardize(radius)
+        if puw.is_quantity(std):
+            self.radius = std
+        else:
+            self.radius = puw.convert(radius, to_unit=std, to_type='quantity')
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the sphere representation to an NGLview view

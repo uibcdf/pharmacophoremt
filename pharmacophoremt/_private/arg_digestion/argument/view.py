@@ -1,2 +1,2 @@
-def digest_view(view, ctx=None):
-    return view
+def digest_view(obj):
+    return obj

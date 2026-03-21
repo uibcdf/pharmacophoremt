@@ -36,7 +36,14 @@ class Point():
     def __init__(self, position, skip_digestion=False):
 
         self.shape_name = 'point'
-        self.position = position
+
+        if not puw.is_quantity(position):
+            position = puw.quantity(position, 'nm')
+        std = puw.standardize(position)
+        if puw.is_quantity(std):
+            self.position = std
+        else:
+            self.position = puw.convert(position, to_unit=std, to_type='quantity')
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the point representation to an NGLview view

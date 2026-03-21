@@ -41,8 +41,21 @@ class GaussianKernel():
 
         self.shape_name = 'gaussian kernel'
 
-        self.center = center
-        self.sigma = sigma
+        if not puw.is_quantity(center):
+            center = puw.quantity(center, 'nm')
+        std = puw.standardize(center)
+        if puw.is_quantity(std):
+            self.center = std
+        else:
+            self.center = puw.convert(center, to_unit=std, to_type='quantity')
+
+        if not puw.is_quantity(sigma):
+            sigma = puw.quantity(sigma, 'nm')
+        std = puw.standardize(sigma)
+        if puw.is_quantity(std):
+            self.sigma = std
+        else:
+            self.sigma = puw.convert(sigma, to_unit=std, to_type='quantity')
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the Gaussian kernel representation to an NGLview view

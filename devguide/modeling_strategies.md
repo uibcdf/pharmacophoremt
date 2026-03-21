@@ -1,41 +1,63 @@
-# Modeling Strategies
+# Modeling Strategies and the Modeler Engine
 
-This document details the fundamental approaches for pharmacophore generation and the classical 3D canon supported by PharmacophoreMT.
+This document defines the architecture for pharmacophore generation in PharmacophoreMT through the **Modeler** engine.
 
-## 1. Core Methodologies
+## 1. The Modeler Philosophy
 
-### Ligand-Based Modeling
-- **Alignment-driven**: Generation from sets of active molecules.
-- **Negative Modeling**: Using inactive molecules to define **Excluded Volumes** where ligand atoms should not be present.
-- **Pseudo-receptors**: Building hypothetical binding pockets (van der Waals envelopes) based on ligand overlays when the receptor structure is unknown.
+PharmacophoreMT separates the **data storage** (`Pharmacophore` class) from the **modeling logic** (`Modeler` classes). This modularity allows for complex algorithms to evolve without bloating the core data structures.
 
-### Structure-Based (Receptor) Modeling
-- **Pocket Analysis**: Using `topomt` to identify cavities and potential interaction sites.
-- **Water Network Analysis**: Deriving features from high-energy hydration sites.
-- **Volume Constraints**: Defining the receptor's boundary to ensure ligands do not clash with the protein.
+### The Modeler Interface
+All modeling engines follow a common workflow:
+1. **Initialize**: Provide the molecular system and target entities.
+2. **Configure**: Set distance cutoffs, feature types to include, etc.
+3. **Build**: Execute the algorithm and return a `Pharmacophore` object.
 
-### Complex-Based Modeling
-- **Direct Interactions**: Identifying H-bonds, hydrophobic contacts, and pi-stacking from protein-ligand complexes.
-- **Ensemble Consensus**: Merging interaction patterns from multiple static structures (X-ray, NMR) to find conserved (intersection) or alternative (union) binding modes.
+## 2. Modeler Specializations
 
-## 2. The 3D Modeling Canon
+### LigandBasedModeler
+- **Inputs**: Multiple molecules or conformations.
+- **Goal**: Find the **Consensus Pharmacophore** (the common denominator of binding).
+- **Features**: Alignment-driven, support for negative modeling (inactives), and weighting based on experimental affinity.
 
-PharmacophoreMT implements the following classical high-level concepts:
+### ComplexBasedModeler
+- **Inputs**: A protein-ligand complex.
+- **Goal**: Extract interactions directly from the 3D contact geometry.
+- **Features**: Distance and angle rules for H-bonds, salt bridges, and pi-stacking.
 
-- **InteractionSite Essentiality**: Support for **Boolean Logic** (Essential vs. Optional sites) and **Weighting** (prioritizing specific interactions).
-- **Geometric Constraints**: Explicitly defining required distances, angles, and dihedrals between specific `InteractionSites`.
-- **Shape-Based Matching**: Using the molecular "envelope" or volume as a global shape constraint, complementing the discrete interaction sites.
-- **Fragment-Based Anchors**: Minimalist, high-precision models (2-3 sites) designed for fragment-based drug discovery (FBDD) and scaffold hopping.
+### StructureBasedModeler
+- **Inputs**: A receptor structure (usually without a ligand).
+- **Goal**: Identify potential interaction sites from the pocket topography.
+- **Features**: Powered by `topomt` for cavity detection and water network analysis.
 
-## 3. Advanced High-Resolution Features
+### DynamicModeler
+- **Inputs**: Molecular dynamics trajectories (multiple frames).
+- **Goal**: Discover **Metastable Pharmacophoric States** (Dynophores).
+- **Features**: Integrated with the **MSM Engine** to identify kinetic arquetypes.
 
-To meet industrial standards (MOE, LigandScout, Phase), PharmacophoreMT supports:
+## 3. The High-Level API (phmt.model)
 
-- **Projected Sites**: Modeling the ideal coordinates of the **receptor's partner atom** (e.g., projecting an acceptor sphere from a ligand donor).
-- **Non-Classical Interactions**: Specific support for **Halogen Bonding** (highly directional sigma-holes) and **Metal Coordination** (tetrahedral/octahedral geometries).
-- **Advanced Pi-Interactions**: Beyond simple stacking, including **Cation-Pi** and **Edge-to-Face** (T-shaped) aromatic orientations.
-- **Feature Groups**: Logic-based matching where a set of sites is defined, but only a subset (e.g., "any 3 of 5") is required for a hit.
-- **Mixed Features (Dual Sites)**: Handling single atoms or groups that satisfy multiple features simultaneously (e.g., a hydroxyl group acting as both donor and acceptor).
+For zero-friction usage, a convenience function delegates to the appropriate Modeler:
 
-## 4. Hybrid Strategies
-PharmacophoreMT allows for merging these approaches (e.g., validating a ligand-based model against a receptor-derived pocket) to create highly robust and biologically relevant models.
+```python
+import pharmacophoremt as phmt
+
+# Automatic detection of method based on input
+ph = phmt.model(molecular_system, method='complex-based')
+```
+
+## 4. Automatic Entity Recognition
+
+Modelers are designed to be "smart" by identifying the roles of molecules within a system automatically (rescuing logic from legacy `ligand.py` and `protein.py`):
+- **Ligand Recognition**: Identifying small molecules based on atom count and residue naming.
+- **Receptor Recognition**: Identifying protein/nucleic chains.
+- **Cofactor/Ion Handling**: Deciding whether to include them as part of the receptor or ignore them.
+
+## 5. Implementation Status
+
+| Component | Status | Source/Legacy Reference |
+| :--- | :--- | :--- |
+| **Modeler Base** | Planned | New Suite Pattern |
+| **LigandBased** | Rescuing | `pharmacophore/ligand_based/` |
+| **ComplexBased**| Rescuing | `pharmacophore/ligand_receptor/` |
+| **StructureBased**| Planned | Integration with `topomt` |
+| **Dynamic** | Planned | New MSM native engine |

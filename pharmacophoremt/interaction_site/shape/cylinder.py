@@ -45,9 +45,29 @@ class Cylinder():
 
         self.shape_name = 'cylinder'
 
-        self.start = start
-        self.end = end
-        self.radius = radius
+        if not puw.is_quantity(start):
+            start = puw.quantity(start, 'nm')
+        std = puw.standardize(start)
+        if puw.is_quantity(std):
+            self.start = std
+        else:
+            self.start = puw.convert(start, to_unit=std, to_type='quantity')
+
+        if not puw.is_quantity(end):
+            end = puw.quantity(end, 'nm')
+        std = puw.standardize(end)
+        if puw.is_quantity(std):
+            self.end = std
+        else:
+            self.end = puw.convert(end, to_unit=std, to_type='quantity')
+
+        if not puw.is_quantity(radius):
+            radius = puw.quantity(radius, 'nm')
+        std = puw.standardize(radius)
+        if puw.is_quantity(std):
+            self.radius = std
+        else:
+            self.radius = puw.convert(radius, to_unit=std, to_type='quantity')
 
     def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
         """Adding the cylinder representation to an NGLview view

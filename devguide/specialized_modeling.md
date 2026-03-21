@@ -4,6 +4,7 @@ Extension of core concepts for non-standard molecular systems.
 
 ## 1. Peptide and Macrocycle Modeling
 - **Hierarchical Features**: Differentiating between backbone motifs (H-bonds in helices/turns) and side-chain hotspots.
+- **Peptide Consensus**: Exploring the generation of a common pharmacophore from a set of active peptides to identify shared interaction motifs (Peptide-to-Small Molecule blueprints).
 - **Constraints**: Incorporating ring topology and amide bond planarity into the model.
 
 ## 2. Covalent Pharmacophores (Warheads)
