@@ -8,6 +8,7 @@ from pharmacophoremt import interaction_site as interaction_sites
 from pharmacophoremt.data.smarts import LIGAND_SMARTS
 from pharmacophoremt.utils.alignment import align_pharmacophores
 from pharmacophoremt.modeler.scoring import ScoringFunction
+from pharmacophoremt.utils.conformers import ConformerGenerator
 import molsysmt as msm
 import networkx as nx
 from rdkit import Chem
@@ -21,12 +22,17 @@ class LigandBasedModeler(Modeler):
 
     @signal(tags=["modeler", "ligand", "init"])
     @arg_digest(type_check=True)
-    def __init__(self, molecular_systems, n_points=3, min_actives=None, skip_digestion=False):
+    def __init__(self, molecular_systems, n_points=3, min_actives=None,
+                 n_conformers=50, conformer_rmsd_threshold=0.5, skip_digestion=False):
         self.systems = molecular_systems
         self.n_points = n_points
         self.min_actives = min_actives if min_actives is not None else len(molecular_systems)
         self.bin_size = puw.quantity(0.15, 'nm') # 1.5 Angstrom binning
         self.scorer = ScoringFunction()
+        self._conformer_generator = ConformerGenerator(
+            n_conformers=n_conformers,
+            rmsd_threshold=conformer_rmsd_threshold,
+        )
 
     def _detect_features(self, mol, conf_id=0):
         """Detect chemical features and return their centroids."""
@@ -96,8 +102,12 @@ class LigandBasedModeler(Modeler):
                 mol = sys
             else:
                 mol = msm.convert(sys, to_form='rdkit.Mol')
+
+            if mol.GetNumConformers() == 0:
+                mol = self._conformer_generator.generate(mol)
+
             n_conformers = mol.GetNumConformers()
-            
+
             for conf_idx in range(n_conformers):
                 feats = self._detect_features(mol, conf_id=conf_idx)
                 

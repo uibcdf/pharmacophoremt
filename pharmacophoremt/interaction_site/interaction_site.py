@@ -29,7 +29,7 @@ class InteractionSite:
 
     @signal(tags=["core", "interaction_site", "init"])
     @arg_digest(type_check=True)
-    def __init__(self, shape, features, skip_digestion=False):
+    def __init__(self, shape, features, essential=True, weight=1.0, metadata=None, skip_digestion=False):
 
         self.shape = shape
 
@@ -39,6 +39,9 @@ class InteractionSite:
             self.features = list(features)
 
         self.n_features = len(self.features)
+        self.essential = essential
+        self.weight = weight
+        self.metadata = metadata if metadata is not None else {}
 
     @property
     def center(self):
@@ -101,4 +104,5 @@ class InteractionSite:
                                   opacity=opacity)
 
     def __repr__(self):
-        return f"<InteractionSite with shape {self.shape_name} and features {self.features}>"
+        essential_str = "" if self.essential else ", optional"
+        return f"<InteractionSite {self.features} | {self.shape_name}{essential_str}>"

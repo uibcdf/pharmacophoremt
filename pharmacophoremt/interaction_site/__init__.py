@@ -32,6 +32,10 @@ from .halogen_bond_interaction_sites import HalogenBondSphereAndVector
 from .metal_binding_interaction_sites import MetalBindingSphere
 from .cation_pi_interaction_sites import CationPiSphere
 from .cation_pi_interaction_sites import CationPiDisk
+from .excluded_volume_interaction_sites import ExcludedVolumePoint
+from .excluded_volume_interaction_sites import ExcludedVolumeSphere
+from .excluded_volume_interaction_sites import ExcludedVolumeGaussianKernel
+from .excluded_volume_interaction_sites import ExcludedVolumeShapelet
 
 __all__ = [
     "feature",
@@ -67,5 +71,9 @@ __all__ = [
     "MetalBindingSphere",
     "CationPiSphere",
     "CationPiDisk",
+    "ExcludedVolumePoint",
+    "ExcludedVolumeSphere",
+    "ExcludedVolumeGaussianKernel",
+    "ExcludedVolumeShapelet",
 ]
 

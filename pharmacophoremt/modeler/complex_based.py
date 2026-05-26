@@ -23,8 +23,10 @@ class ComplexBasedModeler(Modeler):
         'hyd_dist_max': puw.quantity(0.50, 'nm'),
         'charge_dist_max': puw.quantity(0.56, 'nm'),
         'pi_stack_dist_max': puw.quantity(0.75, 'nm'),
-        'pi_stack_ang_dev': 30.0, # degrees
+        'pi_stack_ang_dev': 30.0,  # degrees — max deviation from parallel for face-to-face
         'pi_stack_offset_max': puw.quantity(0.20, 'nm'),
+        'pi_tshape_ang_min': 60.0,  # degrees — min angle for T-shaped stacking
+        'cation_pi_dist_max': puw.quantity(0.60, 'nm'),
         'halogen_dist_max': puw.quantity(0.40, 'nm'),
         'metal_dist_max': puw.quantity(0.28, 'nm'),
     }
@@ -80,6 +82,19 @@ class ComplexBasedModeler(Modeler):
                 pos = conf.GetAtomPosition(neighbor.GetIdx())
                 return puw.quantity([pos.x, pos.y, pos.z], 'angstroms')
         return None
+
+    def _ring_normal_and_centroid(self, mol, match_indices):
+        """Return (centroid_quantity, normal_unit_vector) for a ring match."""
+        coords_q = self._get_coords(mol, match_indices)
+        centroid_q = self._get_centroid(mol, match_indices)
+        coords = puw.get_value(coords_q, to_unit='nm')
+        centroid = puw.get_value(centroid_q, to_unit='nm')
+        v1 = coords[0] - centroid
+        v2 = coords[1] - centroid
+        normal = np.cross(v1, v2)
+        norm = np.linalg.norm(normal)
+        normal = normal / norm if norm > 1e-6 else np.array([0.0, 0.0, 1.0])
+        return centroid_q, normal
 
     def _dist(self, q1, q2):
         v1 = puw.get_value(q1, to_unit='nm')
@@ -221,30 +236,111 @@ class ComplexBasedModeler(Modeler):
                              ph.add_interaction_site(interaction_sites.MetalBindingSphere(l_center, '0.15 nm', skip_digestion=True))
                              break
 
-            self._merge_interaction_sites(ph, feature_name='hydrophobicity', threshold='0.2 nm')
+            # Pi-stacking (face-to-face and T-shaped)
+            max_pi_dist = puw.get_value(self.params['pi_stack_dist_max'], to_unit='nm')
+            max_pi_offset = puw.get_value(self.params['pi_stack_offset_max'], to_unit='nm')
+            max_pi_ang_dev = self.params['pi_stack_ang_dev']
+            min_tshape_ang = self.params['pi_tshape_ang_min']
+
+            for l_indices in lig_feats['aromatic ring']:
+                l_centroid, l_normal = self._ring_normal_and_centroid(ligand_mol, l_indices)
+                for r_indices in rec_feats['aromatic ring']:
+                    r_centroid, r_normal = self._ring_normal_and_centroid(receptor_bs_mol, r_indices)
+                    dist = self._dist(l_centroid, r_centroid)
+                    if dist > max_pi_dist:
+                        continue
+                    ang = angle_between_normals(l_normal, r_normal)
+
+                    if ang <= max_pi_ang_dev:
+                        # Face-to-face: check lateral offset
+                        l_c = puw.get_value(l_centroid, to_unit='nm')
+                        r_c = puw.get_value(r_centroid, to_unit='nm')
+                        offset = np.linalg.norm((r_c - l_c) - np.dot(r_c - l_c, l_normal) * l_normal)
+                        if offset <= max_pi_offset:
+                            ph.add_interaction_site(interaction_sites.AromaticRingSphereAndVector(
+                                l_centroid, puw.quantity(0.15, 'nm'), l_normal, skip_digestion=True))
+                            break
+                    elif ang >= min_tshape_ang:
+                        # T-shaped: no offset requirement, just distance
+                        ph.add_interaction_site(interaction_sites.AromaticRingSphereAndVector(
+                            l_centroid, puw.quantity(0.15, 'nm'), l_normal, skip_digestion=True))
+                        break
+
+            # Cation-pi interactions
+            max_catpi_dist = puw.get_value(self.params['cation_pi_dist_max'], to_unit='nm')
+
+            # Ligand cation — receptor aromatic ring
+            for l_indices in lig_feats['positive charge']:
+                l_center = self._get_centroid(ligand_mol, l_indices)
+                for r_indices in rec_feats['aromatic ring']:
+                    r_centroid, r_normal = self._ring_normal_and_centroid(receptor_bs_mol, r_indices)
+                    if self._dist(l_center, r_centroid) <= max_catpi_dist:
+                        ph.add_interaction_site(interaction_sites.CationPiSphere(
+                            l_center, puw.quantity(0.15, 'nm'), skip_digestion=True))
+                        break
+
+            # Receptor cation — ligand aromatic ring
+            for l_indices in lig_feats['aromatic ring']:
+                l_centroid, l_normal = self._ring_normal_and_centroid(ligand_mol, l_indices)
+                for r_indices in rec_feats['positive charge']:
+                    r_center = self._get_centroid(receptor_bs_mol, r_indices)
+                    if self._dist(l_centroid, r_center) <= max_catpi_dist:
+                        ph.add_interaction_site(interaction_sites.CationPiSphere(
+                            l_centroid, puw.quantity(0.15, 'nm'), skip_digestion=True))
+                        break
+
+            for feat in ['hydrophobicity', 'aromatic ring', 'hb donor', 'hb acceptor',
+                         'positive charge', 'negative charge', 'cation-pi']:
+                self._merge_interaction_sites(ph, feature_name=feat, threshold='0.2 nm')
             phs.append(ph)
 
         return phs if return_list else phs[0]
 
     def _merge_interaction_sites(self, ph, feature_name, threshold):
         sites = ph.get(feature_name=feature_name, skip_digestion=True)
-        if len(sites) < 2: return
-        threshold_val = puw.get_value(puw.convert(threshold, to_unit='nm'))
+        if len(sites) < 2:
+            return
+
+        if isinstance(threshold, str):
+            val, unit = threshold.split()
+            threshold_nm = puw.get_value(puw.quantity(float(val), unit), to_unit='nm')
+        else:
+            threshold_nm = puw.get_value(threshold, to_unit='nm')
+
+        # Only merge sites that have a center (skip Point-like edge cases)
+        valid = [s for s in sites if s.center is not None]
+        if len(valid) < 2:
+            return
+
         graph = nx.Graph()
-        for i in range(len(sites)):
+        for i in range(len(valid)):
             graph.add_node(i)
-            for j in range(i + 1, len(sites)):
-                dist = self._dist(sites[i].center, sites[j].center)
-                if dist <= threshold_val:
+            for j in range(i + 1, len(valid)):
+                if self._dist(valid[i].center, valid[j].center) <= threshold_nm:
                     graph.add_edge(i, j)
+
         cliques = list(nx.find_cliques(graph))
-        if len(cliques) == len(sites): return
+        if len(cliques) == len(valid):
+            return  # nothing to merge
+
         other_sites = [s for s in ph.interaction_sites if feature_name not in s.features]
         ph.interaction_sites = other_sites
         ph.n_interaction_sites = len(other_sites)
+
         for clique in cliques:
-            centers = [puw.get_value(puw.convert(sites[i].center, to_unit='nm')) for i in clique]
-            avg_center = np.mean(centers, axis=0)
-            avg_center_q = puw.quantity(avg_center, 'nm')
-            site_class = sites[clique[0]].__class__
-            ph.add_interaction_site(site_class(avg_center_q, radius=sites[clique[0]].radius, skip_digestion=True))
+            seed = valid[clique[0]]
+            centers = [puw.get_value(valid[i].center, to_unit='nm') for i in clique]
+            avg_center_q = puw.quantity(np.mean(centers, axis=0), 'nm')
+            radius = seed.radius
+
+            if seed.shape_name == 'sphere and vector':
+                dirs = [getattr(valid[i].shape, 'direction', np.array([0., 0., 1.]))
+                        for i in clique]
+                avg_dir = np.mean(dirs, axis=0)
+                norm = np.linalg.norm(avg_dir)
+                avg_dir = avg_dir / norm if norm > 1e-6 else np.array([0., 0., 1.])
+                ph.add_interaction_site(
+                    seed.__class__(avg_center_q, radius, avg_dir, skip_digestion=True))
+            else:
+                ph.add_interaction_site(
+                    seed.__class__(avg_center_q, radius, skip_digestion=True))

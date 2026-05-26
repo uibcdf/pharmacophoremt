@@ -23,3 +23,4 @@ from .pharmacophore import Pharmacophore
 from .modeler.dispatcher import model
 from . import io
 from . import viewer
+from . import validation

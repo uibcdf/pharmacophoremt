@@ -202,6 +202,129 @@ class Pharmacophore():
             })
         return pd.DataFrame(data)
 
+    # ------------------------------------------------------------------
+    # Refinement API
+    # ------------------------------------------------------------------
+
+    @signal(tags=["core", "pharmacophore", "edit"])
+    @arg_digest(type_check=True)
+    def set_radius(self, index, radius, skip_digestion=False):
+        """Set the radius of one interaction site.
+
+        Parameters
+        ----------
+        index : int
+            Index of the site to modify.
+        radius : quantity
+            New radius as a puw quantity (e.g. ``puw.quantity(0.2, 'nm')``).
+        """
+        from pharmacophoremt.interaction_site.shape import Sphere, SphereAndVector, GaussianKernel, Disk, Cylinder
+        site = self.interaction_sites[index]
+        shape = site.shape
+        sname = shape.shape_name
+
+        if sname == 'sphere':
+            site.shape = Sphere(shape.center, radius, skip_digestion=True)
+        elif sname == 'sphere and vector':
+            site.shape = SphereAndVector(shape.center, radius, shape.direction, skip_digestion=True)
+        elif sname == 'gaussian kernel':
+            site.shape = GaussianKernel(shape.center, radius, skip_digestion=True)
+        elif sname == 'disk':
+            site.shape = Disk(shape.center, shape.normal, radius, skip_digestion=True)
+        elif sname == 'cylinder':
+            site.shape = Cylinder(shape.start, shape.end, radius, skip_digestion=True)
+        else:
+            raise NotImplementedError(f"set_radius not supported for shape '{sname}'")
+
+    @signal(tags=["core", "pharmacophore", "edit"])
+    @arg_digest(type_check=True)
+    def set_essential(self, index, essential, skip_digestion=False):
+        """Toggle the essential flag of one or all interaction sites.
+
+        Parameters
+        ----------
+        index : int or 'all'
+            Index of the site, or ``'all'`` to set all sites at once.
+        essential : bool
+            New essential value.
+        """
+        if index == 'all':
+            for site in self.interaction_sites:
+                site.essential = bool(essential)
+        else:
+            self.interaction_sites[int(index)].essential = bool(essential)
+
+    def merge(self, other):
+        """Return a new Pharmacophore combining sites from self and other.
+
+        The merged pharmacophore takes the name and metadata of self. No
+        deduplication is applied; call the modeler's merge helper if needed.
+
+        Parameters
+        ----------
+        other : Pharmacophore
+
+        Returns
+        -------
+        Pharmacophore
+        """
+        from pharmacophoremt.pharmacophore import Pharmacophore
+        merged = Pharmacophore(name=self.name, description=self.description,
+                               molecular_system=self.molecular_system)
+        for site in self.interaction_sites + other.interaction_sites:
+            merged.add_interaction_site(site, skip_digestion=True)
+        return merged
+
+    def similarity(self, other, tolerance_nm=0.15):
+        """Compute Dice similarity between two pharmacophores.
+
+        For each site in self, the best-matching site in other (same feature,
+        minimum distance) is found. A pair is counted as matched when the
+        centroid distance ≤ ``tolerance_nm``. The result is the Dice coefficient:
+
+            similarity = 2 * |matched_pairs| / (N_self + N_other)
+
+        Parameters
+        ----------
+        other : Pharmacophore
+        tolerance_nm : float
+            Maximum centroid distance for a site-match (default 0.15 nm = 1.5 Å).
+
+        Returns
+        -------
+        float
+            Dice similarity in [0, 1].
+        """
+        matched = 0
+        used_other = set()
+
+        for site in self.interaction_sites:
+            if site.center is None:
+                continue
+            c_self = puw.get_value(site.center, to_unit='nm')
+            best_dist = float('inf')
+            best_j = None
+            for j, o_site in enumerate(other.interaction_sites):
+                if j in used_other:
+                    continue
+                if o_site.center is None:
+                    continue
+                if not set(site.features) & set(o_site.features):
+                    continue
+                dist = float(np.linalg.norm(c_self - puw.get_value(o_site.center, to_unit='nm')))
+                if dist < best_dist:
+                    best_dist = dist
+                    best_j = j
+            if best_j is not None and best_dist <= tolerance_nm:
+                matched += 1
+                used_other.add(best_j)
+
+        n_self = self.n_interaction_sites
+        n_other = other.n_interaction_sites
+        if n_self + n_other == 0:
+            return 0.0
+        return 2.0 * matched / (n_self + n_other)
+
     def __repr__(self):
         name = getattr(self, 'name', 'unnamed')
         n_sites = getattr(self, 'n_interaction_sites', 0)
@@ -226,6 +349,11 @@ class Pharmacophore():
     @signal(tags=["core", "pharmacophore", "view"])
     @arg_digest(type_check=True)
     def show(self, color_palette='pharmacophoremt', skip_digestion=False):
-        view = msm.view(self.molecular_system, standardize=False)
-        self.add_to_NGLView(view, color_palette=color_palette)
+        if self.molecular_system is not None:
+            view = msm.view(self.molecular_system, standardize=False)
+            self.add_to_NGLView(view, color_palette=color_palette)
+        else:
+            from molsysviewer import MolSysView
+            view = MolSysView()
+            self.add_to_molsysviewer(view, skip_digestion=True)
         return view

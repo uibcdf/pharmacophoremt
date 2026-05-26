@@ -44,7 +44,58 @@ LIGAND_SMARTS = {
     ],
 }
 
-PROTEIN_SMARTS = LIGAND_SMARTS.copy() # Can be specialized if needed
+PROTEIN_SMARTS = {
+    # Backbone amide N-H (HBD) and carbonyl C=O (HBA)
+    # Sidechain HBD: Ser/Thr/Tyr -OH, Lys -NH2/NH3+, Arg guanidinium, His imidazole N-H, Trp indole N-H, Cys -SH
+    # Sidechain HBA: Ser/Thr/Tyr -OH, Asn/Gln amide O, Asp/Glu carboxylate, His imidazole N, Met thioether S
+    "hb donor": [
+        '[NH1;$(N-C(=O)-C)]',                          # backbone amide N-H
+        '[OH1;$(O-[CH1]-C(=O))]',                      # Ser/Thr -OH (alpha to carbonyl)
+        '[OH1;$(O-c1ccc([CH2])cc1)]',                  # Tyr -OH (phenol)
+        '[OH1;$(O-[CX4]-[CX4])]',                      # Ser/Thr generic -OH
+        '[NH2;$(N-[CX4]-[CX4]-[CX4]-[CX4]-[NX3,NX4])]',  # Lys epsilon-NH2
+        '[NH1,NH2;$(N=[CX3](N)-N)]',                   # Arg guanidinium NH
+        '[NH1;$(n1ccnc1),$(n1cncc1)]',                 # His imidazole N-H
+        '[NH1;$(N1c2ccccc2CC1)]',                      # Trp indole N-H
+        '[SH1;$(S-[CX4])]',                            # Cys -SH
+    ],
+    "hb acceptor": [
+        '[O;$(O=C-N)]',                                 # backbone carbonyl C=O
+        '[OH1;$(O-[CH1]-C(=O))]',                      # Ser/Thr -OH (also donor)
+        '[OH1;$(O-c1ccc([CH2])cc1)]',                  # Tyr -OH (also donor)
+        '[OH1;$(O-[CX4]-[CX4])]',                      # Ser/Thr generic -OH
+        '[O;$(O=C-[CH2]-[CX3](=O))]',                  # Asn/Gln amide carbonyl O
+        '[O;$(O=C([CH2])N)]',                           # Asn/Gln amide O generic
+        '[O;$([OH0,OH1]-C(=O))]',                       # Asp/Glu carboxylate O
+        '[n;$(n1ccnc1),$(n1cncc1)]',                    # His imidazole aromatic N
+        '[S;$(S(-[CX4])-[CX4])]',                      # Met thioether S
+    ],
+    "aromatic ring": [
+        'a1aaaa1',                                      # 5-membered aromatic (His, Trp)
+        'a1aaaaa1',                                     # 6-membered aromatic (Phe, Tyr, Trp)
+    ],
+    "hydrophobicity": [
+        '[CH3X4;$(C-[CX4]-[CX4]-C(=O))]',             # Ala methyl
+        '[CH3X4,CH2X3,CH1X2;$(C-[CX4]-C(=O)-N)]',     # aliphatic sidechain carbons
+        '[CX4H3;$(C(C)(C)[CX4])]',                     # Val/Leu/Ile isopropyl/isobutyl methyls
+        '[CH2X4;$(C-[CH2X4]-[CX4])]',                  # aliphatic chain CH2
+        '[CH1X4;$(C([CX4])([CX4])[CX4])]',             # branched aliphatic CH
+        '[SX2;$(S(-[CX4])-[CX4])]',                    # Met thioether S (also hydrophobic)
+        '[c;$(c1ccccc1)]',                              # Phe/Tyr/Trp aromatic carbons
+    ],
+    "positive charge": [
+        '[NX4+;$(N-[CX4]-[CX4]-[CX4]-[CX4]-C(=O))]',  # Lys protonated NH3+
+        '[NH2,NH1;$(N=[CX3](N)-N)]',                   # Arg guanidinium
+        '[NH1;$(n1ccnc1)]',                             # His protonated imidazole
+        '[$([+,+2,+3])&!$(*[-,-2,-3])]',               # any formal positive charge
+    ],
+    "negative charge": [
+        '[OH0,OH1;$(O-C(=O)-[CX4])]',                  # Asp/Glu carboxylate
+        '[$([CX3](=O)[O-,OH])](=O)[O-,OH]',            # deprotonated carboxylate
+        '[$([−,−2,−3])&!$(*[+,+2,+3])]',               # any formal negative charge
+    ],
+    "halogen": [],  # proteins do not contain halogens naturally
+}
 
 FEAT_TO_CHAR = {
     "hb acceptor": "A",

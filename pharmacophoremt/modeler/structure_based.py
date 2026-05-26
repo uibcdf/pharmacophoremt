@@ -30,8 +30,9 @@ class StructureBasedModeler(Modeler):
 
     @signal(tags=["modeler", "structure", "init"])
     @arg_digest(type_check=True)
-    def __init__(self, molecular_system, selection='molecule_type == "protein"', 
-                 pocket_selection=None, skip_digestion=False):
+    def __init__(self, molecular_system, selection='molecule_type == "protein"',
+                 pocket_selection=None, pocket_center=None, pocket_radius=None,
+                 skip_digestion=False):
         
         if isinstance(molecular_system, str):
             self.system = msm.convert(molecular_system, to_form='molsysmt.MolSys')
@@ -42,7 +43,9 @@ class StructureBasedModeler(Modeler):
             self.system = self.system[0]
 
         self.selection = selection
-        self.pocket_selection = pocket_selection # Indices of atoms forming the pocket
+        self.pocket_selection = pocket_selection
+        self.pocket_center = pocket_center   # puw quantity (3,) or None
+        self.pocket_radius = pocket_radius   # puw quantity scalar or None
         self.params = self.PROJECTION_RULES.copy()
 
     def _detect_features(self, mol):
@@ -106,18 +109,41 @@ class StructureBasedModeler(Modeler):
         return center, vector
 
     @signal(tags=["modeler", "structure", "build"])
-    def build(self):
-        """Build the pharmacophore by projecting sites from the receptor."""
+    def build(self, structure_indices=0, add_excluded_volumes=True):
+        """Build the pharmacophore by projecting sites from the receptor.
+
+        Parameters
+        ----------
+        structure_indices : int, optional
+            Which structure (frame) to use from the molecular system (default 0).
+        add_excluded_volumes : bool, optional
+            If True, add ExcludedVolume spheres for all non-hydrogen pocket atoms
+            to block inaccessible space (default True).
+        """
         ph = Pharmacophore(name="Structure-based Model", molecular_system=self.system)
-        
+
         # 1. Isolate the pocket/receptor
         if self.pocket_selection:
             indices = msm.select(self.system, selection=self.pocket_selection)
+        elif self.pocket_center is not None and self.pocket_radius is not None:
+            # Primary route: spherical pocket around a geometric centre
+            center_nm = puw.get_value(self.pocket_center, to_unit='nm')
+            radius_nm = float(puw.get_value(self.pocket_radius, to_unit='nm'))
+            protein_indices = [int(i) for i in msm.select(self.system, selection=self.selection)]
+            coords_q = msm.get(self.system, element='atom', selection=protein_indices,
+                               structure_indices=structure_indices, coordinates=True)
+            coords_nm = puw.get_value(coords_q, to_unit='nm')[0]  # (N,3)
+            dists = np.linalg.norm(coords_nm - center_nm, axis=1)
+            mask = dists <= radius_nm
+            indices = [protein_indices[i] for i, m in enumerate(mask) if m]
         else:
             indices = msm.select(self.system, selection=self.selection)
-            
+
         indices = [int(i) for i in indices]
-        receptor_mol = msm.convert(self.system, selection=indices, to_form='rdkit.Mol')
+        receptor_mol = msm.convert(
+            self.system, selection=indices,
+            structure_indices=structure_indices, to_form='rdkit.Mol'
+        )
         receptor_mol.UpdatePropertyCache()
         Chem.FastFindRings(receptor_mol)
 
@@ -156,6 +182,20 @@ class StructureBasedModeler(Modeler):
                 else:
                     continue
                     
+                ph.add_interaction_site(site)
+
+        # 4. Excluded volumes — one per heavy atom of the pocket
+        if add_excluded_volumes:
+            conf = receptor_mol.GetConformer()
+            ev_radius = puw.quantity(0.10, 'nm')  # 1 Å — tight steric exclusion
+            for atom in receptor_mol.GetAtoms():
+                if atom.GetSymbol() == 'H':
+                    continue
+                pos = conf.GetAtomPosition(atom.GetIdx())
+                center = puw.quantity([pos.x, pos.y, pos.z], 'angstroms')
+                site = interaction_sites.ExcludedVolumeSphere(
+                    center, ev_radius, skip_digestion=True
+                )
                 ph.add_interaction_site(site)
 
         return ph
