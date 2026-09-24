@@ -7,6 +7,12 @@ dependencies:
 - numpy
 - pyunitwizard
 - scipy
+- networkx
+- rdkit
+- aiohttp
+- anywidget
+- traitlets
+- packaging
 - nglview
 - molsysmt
 - pytest
