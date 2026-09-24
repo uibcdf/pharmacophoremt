@@ -1,12 +1,14 @@
-import numpy as np
 from collections import defaultdict
+
+import molsysmt as msm
+import numpy as np
 from argdigest import arg_digest
+from rdkit import Chem
 from smonitor import signal
+
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt.data.smarts import LIGAND_SMARTS
 from pharmacophoremt.utils.conformers import ConformerGenerator
-import molsysmt as msm
-from rdkit import Chem
 
 
 class VirtualScreening:
@@ -38,8 +40,14 @@ class VirtualScreening:
         (SphereAndVector). Default 30°.
     """
 
-    def __init__(self, pharmacophore, min_match_ratio=1.0, n_conformers=50,
-                 point_tolerance=0.10, direction_tolerance=30.0):
+    def __init__(
+        self,
+        pharmacophore,
+        min_match_ratio=1.0,
+        n_conformers=50,
+        point_tolerance=0.10,
+        direction_tolerance=30.0,
+    ):
         self.pharmacophore = pharmacophore
         self.min_match_ratio = float(min_match_ratio)
         self.point_tolerance = float(point_tolerance)
@@ -48,16 +56,16 @@ class VirtualScreening:
         self.matches = []
 
         # Pre-compute excluded volume data for speed
-        self._ev_centers = []   # list of ndarray (3,) in nm
-        self._ev_radii = []     # list of float in nm
+        self._ev_centers = []  # list of ndarray (3,) in nm
+        self._ev_radii = []  # list of float in nm
         self._non_ev_sites = []
         for site in pharmacophore.interaction_sites:
-            if 'excluded volume' in site.features:
+            if "excluded volume" in site.features:
                 c = site.center
                 r = site.radius
                 if c is not None and r is not None:
-                    self._ev_centers.append(puw.get_value(c, to_unit='nm'))
-                    self._ev_radii.append(float(puw.get_value(r, to_unit='nm')))
+                    self._ev_centers.append(puw.get_value(c, to_unit="nm"))
+                    self._ev_radii.append(float(puw.get_value(r, to_unit="nm")))
             else:
                 self._non_ev_sites.append(site)
 
@@ -90,16 +98,19 @@ class VirtualScreening:
         """Return (center_nm, radius_nm) for a site, or (None, None)."""
         center_q = site.center
         if center_q is not None:
-            center_nm = puw.get_value(center_q, to_unit='nm')
+            center_nm = puw.get_value(center_q, to_unit="nm")
         else:
-            position_q = getattr(site.shape, 'position', None)
+            position_q = getattr(site.shape, "position", None)
             if position_q is None:
                 return None, None
-            center_nm = puw.get_value(position_q, to_unit='nm')
+            center_nm = puw.get_value(position_q, to_unit="nm")
 
         radius_q = site.radius
-        radius_nm = (float(puw.get_value(radius_q, to_unit='nm'))
-                     if radius_q is not None else self.point_tolerance)
+        radius_nm = (
+            float(puw.get_value(radius_q, to_unit="nm"))
+            if radius_q is not None
+            else self.point_tolerance
+        )
         return center_nm, radius_nm
 
     def _direction_ok(self, site, feat_center_nm, center_nm):
@@ -109,9 +120,9 @@ class VirtualScreening:
         the direction indicated by site.shape.direction relative to the site
         center. Returns True for non-directional sites unconditionally.
         """
-        if site.shape_name != 'sphere and vector':
+        if site.shape_name != "sphere and vector":
             return True
-        direction = getattr(site.shape, 'direction', None)
+        direction = getattr(site.shape, "direction", None)
         if direction is None:
             return True
         direction = np.asarray(direction, dtype=float)
@@ -176,7 +187,9 @@ class VirtualScreening:
             for feat_name in site.features:
                 for feat_center in features.get(feat_name, []):
                     dist = np.linalg.norm(feat_center - center_nm)
-                    if dist <= radius_nm and self._direction_ok(site, feat_center, center_nm):
+                    if dist <= radius_nm and self._direction_ok(
+                        site, feat_center, center_nm
+                    ):
                         matched = True
                         break
                 if matched:
@@ -222,7 +235,7 @@ class VirtualScreening:
                 if isinstance(mol_system, Chem.Mol):
                     rd_mol = mol_system
                 else:
-                    rd_mol = msm.convert(mol_system, to_form='rdkit.Mol')
+                    rd_mol = msm.convert(mol_system, to_form="rdkit.Mol")
             except Exception:
                 continue
 
@@ -244,14 +257,16 @@ class VirtualScreening:
                     best_conf = conf_id
 
             if best_fit is not None:
-                self.matches.append({
-                    'mol': mol_system,
-                    'fit_value': best_fit,
-                    'conf_id': best_conf,
-                    'rd_mol': rd_mol,
-                })
+                self.matches.append(
+                    {
+                        "mol": mol_system,
+                        "fit_value": best_fit,
+                        "conf_id": best_conf,
+                        "rd_mol": rd_mol,
+                    }
+                )
 
-        self.matches.sort(key=lambda x: x['fit_value'], reverse=True)
+        self.matches.sort(key=lambda x: x["fit_value"], reverse=True)
         return self.matches
 
     def to_dataframe(self):
@@ -260,17 +275,21 @@ class VirtualScreening:
         Columns: rank, fit_value, conf_id, smiles.
         """
         import pandas as pd
+
         rows = []
         for rank, entry in enumerate(self.matches, start=1):
-            rd_mol = entry.get('rd_mol')
-            smiles = (Chem.MolToSmiles(Chem.RemoveHs(rd_mol))
-                      if rd_mol is not None else '')
-            rows.append({
-                'rank': rank,
-                'fit_value': entry['fit_value'],
-                'conf_id': entry['conf_id'],
-                'smiles': smiles,
-            })
+            rd_mol = entry.get("rd_mol")
+            smiles = (
+                Chem.MolToSmiles(Chem.RemoveHs(rd_mol)) if rd_mol is not None else ""
+            )
+            rows.append(
+                {
+                    "rank": rank,
+                    "fit_value": entry["fit_value"],
+                    "conf_id": entry["conf_id"],
+                    "smiles": smiles,
+                }
+            )
         return pd.DataFrame(rows)
 
     def to_csv(self, file_name):
@@ -294,14 +313,15 @@ class VirtualScreening:
             Output path.
         """
         from rdkit.Chem import SDWriter
+
         writer = SDWriter(file_name)
         for entry in self.matches:
-            rd_mol = entry.get('rd_mol')
+            rd_mol = entry.get("rd_mol")
             if rd_mol is None:
                 continue
-            conf_id = entry['conf_id']
+            conf_id = entry["conf_id"]
             mol_out = Chem.RWMol(rd_mol)
             mol_out = Chem.RemoveHs(mol_out)
-            mol_out.SetDoubleProp('FitValue', entry['fit_value'])
+            mol_out.SetDoubleProp("FitValue", entry["fit_value"])
             writer.write(mol_out, confId=conf_id)
         writer.close()

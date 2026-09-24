@@ -32,8 +32,12 @@ def on_context_action(view, action_id: str, payload: dict) -> None:
     if action_id == "show-pharmacophore":
         if runtime.pharmacophore is not None:
             from .render import render_pharmacophore_elements
+
             render_pharmacophore_elements(
-                view, runtime.pharmacophore, tag_prefix=runtime.tag_prefix, skip_digestion=True
+                view,
+                runtime.pharmacophore,
+                tag_prefix=runtime.tag_prefix,
+                skip_digestion=True,
             )
     record_event(view, "context_action", action_id=action_id)
 

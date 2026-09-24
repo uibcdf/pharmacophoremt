@@ -5,9 +5,9 @@ interaction_sites with the 'included volume' feature.
 
 """
 
-class IncludedVolume():
 
-    """ Parent class of pharmacophoric feature.
+class IncludedVolume:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'included
     volume' feature.
@@ -21,4 +21,4 @@ class IncludedVolume():
 
     def __init__(self):
 
-        self.feature_name = 'included volume'
+        self.feature_name = "included volume"

@@ -1,8 +1,8 @@
-import pytest
-import os
 import numpy as np
+
 import pharmacophoremt as phmt
 from pharmacophoremt import pyunitwizard as puw
+
 
 def test_ligandscout_roundtrip(tmp_path):
     # 1. Create a dummy .pml file
@@ -23,17 +23,17 @@ def test_ligandscout_roundtrip(tmp_path):
     # 2. Import
     ph = phmt.io.from_ligandscout(str(pml_file))
     assert ph.n_interaction_sites == 2
-    
+
     # Check HBD
     site0 = ph.interaction_sites[0]
-    assert 'hb donor' in site0.features
-    center = puw.get_value(site0.center, to_unit='nm')
+    assert "hb donor" in site0.features
+    center = puw.get_value(site0.center, to_unit="nm")
     assert np.allclose(center, [0.1, 0.2, 0.3])
 
     # 3. Export and Re-import
     out_file = tmp_path / "output.pml"
     phmt.io.to_ligandscout(ph, str(out_file))
-    
+
     ph2 = phmt.io.from_ligandscout(str(out_file))
     assert ph2.n_interaction_sites == 2
     assert ph2.interaction_sites[0].features == ph.interaction_sites[0].features

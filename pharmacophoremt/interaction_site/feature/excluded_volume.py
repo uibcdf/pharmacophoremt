@@ -5,9 +5,9 @@ interaction_sites with the 'excluded volume' feature.
 
 """
 
-class ExcludedVolume():
 
-    """ Parent class of pharmacophoric feature.
+class ExcludedVolume:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'excluded
     volume' feature.
@@ -21,4 +21,4 @@ class ExcludedVolume():
 
     def __init__(self):
 
-        self.feature_name = 'excluded volume'
+        self.feature_name = "excluded volume"

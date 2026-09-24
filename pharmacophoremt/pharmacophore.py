@@ -1,15 +1,16 @@
-from argdigest import arg_digest
-from smonitor import signal
 import molsysmt as msm
 import numpy as np
+from argdigest import arg_digest
+from smonitor import signal
+
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor import InvalidInteractionSiteError
 
-class Pharmacophore():
 
-    """ Native object for pharmacophores.
+class Pharmacophore:
+    """Native object for pharmacophores.
 
-    A pharmacophore is a set of interaction sites defining the necessary 3D 
+    A pharmacophore is a set of interaction sites defining the necessary 3D
     interaction requirements for a molecular system.
 
     Parameters
@@ -53,9 +54,18 @@ class Pharmacophore():
 
     @signal(tags=["core", "pharmacophore", "init"])
     @arg_digest(type_check=True)
-    def __init__(self, pharmacophore=None, form=None, name=None, description=None, 
-                 molecular_system=None, score=None, ref_mol=None, ref_struct=None, 
-                 skip_digestion=False):
+    def __init__(
+        self,
+        pharmacophore=None,
+        form=None,
+        name=None,
+        description=None,
+        molecular_system=None,
+        score=None,
+        ref_mol=None,
+        ref_struct=None,
+        skip_digestion=False,
+    ):
 
         self.name = name
         self.description = description
@@ -68,20 +78,27 @@ class Pharmacophore():
         self.metadata = {}
 
         if pharmacophore is not None:
-            if form == 'pharmer':
+            if form == "pharmer":
                 self.__from_pharmer(pharmacophore)
-            elif form == 'ligandscout':
+            elif form == "ligandscout":
                 self.__from_ligandscout(pharmacophore)
-            elif form == 'rdkit':
+            elif form == "rdkit":
                 from pharmacophoremt.io import load_rdkit
+
                 tmp = load_rdkit(pharmacophore)
                 self._copy_from(tmp)
-            elif form in ['json', 'yaml']:
+            elif form in ["json", "yaml"]:
                 from pharmacophoremt.io import load_json, load_yaml
-                tmp = load_json(pharmacophore) if form == 'json' else load_yaml(pharmacophore)
+
+                tmp = (
+                    load_json(pharmacophore)
+                    if form == "json"
+                    else load_yaml(pharmacophore)
+                )
                 self._copy_from(tmp)
-            elif form == 'sdf':
+            elif form == "sdf":
                 from pharmacophoremt.io import load_sdf
+
                 tmp = load_sdf(pharmacophore)
                 self._copy_from(tmp)
             else:
@@ -104,9 +121,12 @@ class Pharmacophore():
     def add_interaction_site(self, interaction_site, skip_digestion=False):
         """Add a new interaction site to the pharmacophore."""
         from pharmacophoremt.interaction_site.interaction_site import InteractionSite
+
         if not isinstance(interaction_site, InteractionSite):
-            raise InvalidInteractionSiteError(reason="Object is not an InteractionSite instance")
-        
+            raise InvalidInteractionSiteError(
+                reason="Object is not an InteractionSite instance"
+            )
+
         self.interaction_sites.append(interaction_site)
         self.n_interaction_sites += 1
 
@@ -119,11 +139,19 @@ class Pharmacophore():
 
     @signal(tags=["core", "pharmacophore", "query"])
     @arg_digest(type_check=True)
-    def get(self, selection='all', feature_name=None, shape_name=None, 
-            get_center=False, get_radius=False, get_direction=False, 
-            get_features=False, skip_digestion=False):
+    def get(
+        self,
+        selection="all",
+        feature_name=None,
+        shape_name=None,
+        get_center=False,
+        get_radius=False,
+        get_direction=False,
+        get_features=False,
+        skip_digestion=False,
+    ):
         """Flexible query method to extract information from interaction sites."""
-        indices = range(self.n_interaction_sites) if selection == 'all' else selection
+        indices = range(self.n_interaction_sites) if selection == "all" else selection
         subset = [self.interaction_sites[i] for i in indices]
 
         if feature_name is not None:
@@ -133,20 +161,25 @@ class Pharmacophore():
 
         output = []
         if get_center:
-            centers = [puw.get_value(s.center, to_unit='nm') for s in subset]
-            output.append(puw.quantity(np.array(centers), 'nm'))
+            centers = [puw.get_value(s.center, to_unit="nm") for s in subset]
+            output.append(puw.quantity(np.array(centers), "nm"))
         if get_radius:
-            radii = [puw.get_value(s.radius, to_unit='nm') for s in subset]
-            output.append(puw.quantity(np.array(radii), 'nm'))
+            radii = [puw.get_value(s.radius, to_unit="nm") for s in subset]
+            output.append(puw.quantity(np.array(radii), "nm"))
         if get_direction:
             # Only some shapes have direction
-            dirs = [puw.get_value(getattr(s.shape, 'direction', [0.0, 0.0, 0.0])) for s in subset]
+            dirs = [
+                puw.get_value(getattr(s.shape, "direction", [0.0, 0.0, 0.0]))
+                for s in subset
+            ]
             output.append(np.array(dirs))
         if get_features:
             output.append([s.features for s in subset])
 
-        if len(output) == 0: return subset
-        if len(output) == 1: return output[0]
+        if len(output) == 0:
+            return subset
+        if len(output) == 1:
+            return output[0]
         return tuple(output)
 
     @signal(tags=["core", "pharmacophore", "view"])
@@ -158,48 +191,56 @@ class Pharmacophore():
 
         # 1. Extract data in bulk
         centers, radii, directions, features = self.get(
-            get_center=True, get_radius=True, get_direction=True, get_features=True, 
-            skip_digestion=True
+            get_center=True,
+            get_radius=True,
+            get_direction=True,
+            get_features=True,
+            skip_digestion=True,
         )
-        
+
         # 2. Map features to MolSysViewer kinds (taking the primary feature)
         kinds = [f[0] for f in features]
-        
+
         # 3. Send to Mol* engine via vectorized call
         # Using the new official RFC-001 API
         view.shapes.add_interaction_sites(
-            centers=puw.get_value(centers, to_unit='angstroms'), 
+            centers=puw.get_value(centers, to_unit="angstroms"),
             kinds=kinds,
-            radii=puw.get_value(radii, to_unit='angstroms'),
+            radii=puw.get_value(radii, to_unit="angstroms"),
             directions=directions,
             tag=tag,
-            name=self.name
+            name=self.name,
         )
 
     @signal(tags=["core", "pharmacophore", "query"])
     def get_distance_matrix(self):
         """Calculate the N x N distance matrix between interaction site centers."""
         if self.n_interaction_sites < 2:
-            return puw.quantity(np.zeros((self.n_interaction_sites, self.n_interaction_sites)), 'nm')
+            return puw.quantity(
+                np.zeros((self.n_interaction_sites, self.n_interaction_sites)), "nm"
+            )
         centers = self.get(get_center=True, skip_digestion=True)
         coords = puw.get_value(centers)
         diff = coords[:, np.newaxis, :] - coords[np.newaxis, :, :]
         dist = np.sqrt(np.sum(diff**2, axis=-1))
-        return puw.quantity(dist, 'nm')
+        return puw.quantity(dist, "nm")
 
     @signal(tags=["core", "pharmacophore", "inspect"])
     def to_dataframe(self):
         """Convert the set of interaction sites to a Pandas DataFrame."""
         import pandas as pd
+
         data = []
         for i, site in enumerate(self.interaction_sites):
-            data.append({
-                'index': i,
-                'features': site.features,
-                'shape': site.shape_name,
-                'center': site.center,
-                'radius': site.radius,
-            })
+            data.append(
+                {
+                    "index": i,
+                    "features": site.features,
+                    "shape": site.shape_name,
+                    "center": site.center,
+                    "radius": site.radius,
+                }
+            )
         return pd.DataFrame(data)
 
     # ------------------------------------------------------------------
@@ -218,20 +259,29 @@ class Pharmacophore():
         radius : quantity
             New radius as a puw quantity (e.g. ``puw.quantity(0.2, 'nm')``).
         """
-        from pharmacophoremt.interaction_site.shape import Sphere, SphereAndVector, GaussianKernel, Disk, Cylinder
+        from pharmacophoremt.interaction_site.shape import (
+            Cylinder,
+            Disk,
+            GaussianKernel,
+            Sphere,
+            SphereAndVector,
+        )
+
         site = self.interaction_sites[index]
         shape = site.shape
         sname = shape.shape_name
 
-        if sname == 'sphere':
+        if sname == "sphere":
             site.shape = Sphere(shape.center, radius, skip_digestion=True)
-        elif sname == 'sphere and vector':
-            site.shape = SphereAndVector(shape.center, radius, shape.direction, skip_digestion=True)
-        elif sname == 'gaussian kernel':
+        elif sname == "sphere and vector":
+            site.shape = SphereAndVector(
+                shape.center, radius, shape.direction, skip_digestion=True
+            )
+        elif sname == "gaussian kernel":
             site.shape = GaussianKernel(shape.center, radius, skip_digestion=True)
-        elif sname == 'disk':
+        elif sname == "disk":
             site.shape = Disk(shape.center, shape.normal, radius, skip_digestion=True)
-        elif sname == 'cylinder':
+        elif sname == "cylinder":
             site.shape = Cylinder(shape.start, shape.end, radius, skip_digestion=True)
         else:
             raise NotImplementedError(f"set_radius not supported for shape '{sname}'")
@@ -248,7 +298,7 @@ class Pharmacophore():
         essential : bool
             New essential value.
         """
-        if index == 'all':
+        if index == "all":
             for site in self.interaction_sites:
                 site.essential = bool(essential)
         else:
@@ -269,8 +319,12 @@ class Pharmacophore():
         Pharmacophore
         """
         from pharmacophoremt.pharmacophore import Pharmacophore
-        merged = Pharmacophore(name=self.name, description=self.description,
-                               molecular_system=self.molecular_system)
+
+        merged = Pharmacophore(
+            name=self.name,
+            description=self.description,
+            molecular_system=self.molecular_system,
+        )
         for site in self.interaction_sites + other.interaction_sites:
             merged.add_interaction_site(site, skip_digestion=True)
         return merged
@@ -301,8 +355,8 @@ class Pharmacophore():
         for site in self.interaction_sites:
             if site.center is None:
                 continue
-            c_self = puw.get_value(site.center, to_unit='nm')
-            best_dist = float('inf')
+            c_self = puw.get_value(site.center, to_unit="nm")
+            best_dist = float("inf")
             best_j = None
             for j, o_site in enumerate(other.interaction_sites):
                 if j in used_other:
@@ -311,7 +365,9 @@ class Pharmacophore():
                     continue
                 if not set(site.features) & set(o_site.features):
                     continue
-                dist = float(np.linalg.norm(c_self - puw.get_value(o_site.center, to_unit='nm')))
+                dist = float(
+                    np.linalg.norm(c_self - puw.get_value(o_site.center, to_unit="nm"))
+                )
                 if dist < best_dist:
                     best_dist = dist
                     best_j = j
@@ -326,34 +382,39 @@ class Pharmacophore():
         return 2.0 * matched / (n_self + n_other)
 
     def __repr__(self):
-        name = getattr(self, 'name', 'unnamed')
-        n_sites = getattr(self, 'n_interaction_sites', 0)
+        name = getattr(self, "name", "unnamed")
+        n_sites = getattr(self, "n_interaction_sites", 0)
         return f"<Pharmacophore '{name}' with {n_sites} interaction sites>"
 
     def __from_pharmer(self, pharmacophore):
         from pharmacophoremt.io import from_pharmer as _from_pharmer
+
         tmp = _from_pharmer(pharmacophore)
         self._copy_from(tmp)
 
     def __from_ligandscout(self, pharmacophore):
         from pharmacophoremt.io import from_ligandscout as _from_ligandscout
+
         tmp = _from_ligandscout(pharmacophore)
         self._copy_from(tmp)
-        
+
     @signal(tags=["core", "pharmacophore", "view"])
     @arg_digest(type_check=True)
-    def add_to_NGLView(self, view, color_palette='pharmacophoremt', skip_digestion=False):
+    def add_to_NGLView(
+        self, view, color_palette="pharmacophoremt", skip_digestion=False
+    ):
         for interaction_site in self.interaction_sites:
             interaction_site.add_to_NGLView(view, color_palette=color_palette)
 
     @signal(tags=["core", "pharmacophore", "view"])
     @arg_digest(type_check=True)
-    def show(self, color_palette='pharmacophoremt', skip_digestion=False):
+    def show(self, color_palette="pharmacophoremt", skip_digestion=False):
         if self.molecular_system is not None:
             view = msm.view(self.molecular_system, standardize=False)
             self.add_to_NGLView(view, color_palette=color_palette)
         else:
             from molsysviewer import MolSysView
+
             view = MolSysView()
             self.add_to_molsysviewer(view, skip_digestion=True)
         return view

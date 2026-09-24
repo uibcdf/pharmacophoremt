@@ -5,9 +5,9 @@ interaction_sites with the 'cation-pi' feature.
 
 """
 
-class CationPi():
 
-    """ Parent class of pharmacophoric feature.
+class CationPi:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'cation-pi'
     feature.
@@ -21,4 +21,4 @@ class CationPi():
 
     def __init__(self):
 
-        self.feature_name = 'cation-pi'
+        self.feature_name = "cation-pi"

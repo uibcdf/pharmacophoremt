@@ -72,7 +72,7 @@ def roc_auc(labels, scores):
     n_actives = int(np.sum(labels))
     n_decoys = len(labels) - n_actives
     if n_actives == 0 or n_decoys == 0:
-        return float('nan')
+        return float("nan")
 
     order = np.argsort(scores)[::-1]
     sorted_labels = labels[order]
@@ -87,7 +87,7 @@ def roc_auc(labels, scores):
             tp += 1
         else:
             fp += 1
-            auc += (tp - prev_tp)
+            auc += tp - prev_tp
             prev_tp = tp
     # Remaining actives after last decoy
     auc += (tp - prev_tp) * (n_decoys - fp)
@@ -125,7 +125,7 @@ def bedroc(labels, scores, alpha=20.0):
     n = len(labels)
     n_actives = int(np.sum(labels))
     if n_actives == 0 or n_actives == n:
-        return float('nan')
+        return float("nan")
 
     ra = n_actives / n  # fraction of actives
 
@@ -139,9 +139,6 @@ def bedroc(labels, scores, alpha=20.0):
     ri_sum = float(np.sum(np.exp(-alpha * ranks / n)))
 
     # Normalisation constants (Eq. 14 & 15 in Truchon & Bayly)
-    ra_over_n = ra
-    exp_term = np.exp(-alpha * ra_over_n)
-    sinh_half = np.sinh(alpha / 2.0)
 
     # Random BEDROC (rB)
     random_sum = ra * (1.0 - np.exp(-alpha)) / (np.exp(alpha / n) - 1.0)
@@ -150,12 +147,12 @@ def bedroc(labels, scores, alpha=20.0):
     max_sum = (1.0 - np.exp(-alpha * ra)) / (1.0 - np.exp(-alpha / n))
 
     # Min BEDROC (nB) — all actives at the bottom
-    min_sum = (1.0 - np.exp(alpha * ra)) / (1.0 - np.exp(alpha / n))
 
     bedroc_score = (
-        (ri_sum / random_sum - 1.0) /
-        (max_sum / random_sum - 1.0)
-    ) if (max_sum / random_sum - 1.0) != 0.0 else 0.0
+        ((ri_sum / random_sum - 1.0) / (max_sum / random_sum - 1.0))
+        if (max_sum / random_sum - 1.0) != 0.0
+        else 0.0
+    )
 
     # Clamp to [0, 1] for numerical safety
     return float(np.clip(bedroc_score, 0.0, 1.0))

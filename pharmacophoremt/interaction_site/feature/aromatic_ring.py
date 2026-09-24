@@ -5,9 +5,9 @@ interaction_sites with the 'aromatic ring' feature.
 
 """
 
-class AromaticRing():
 
-    """ Parent class of pharmacophoric feature.
+class AromaticRing:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'aromatic
     ring' feature.
@@ -21,4 +21,4 @@ class AromaticRing():
 
     def __init__(self):
 
-        self.feature_name = 'aromatic ring'
+        self.feature_name = "aromatic ring"

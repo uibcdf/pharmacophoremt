@@ -5,9 +5,9 @@ interaction_sites with the 'halogen bond' feature.
 
 """
 
-class HalogenBond():
 
-    """ Parent class of pharmacophoric feature.
+class HalogenBond:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'halogen
     bond' feature.
@@ -21,4 +21,4 @@ class HalogenBond():
 
     def __init__(self):
 
-        self.feature_name = 'halogen bond'
+        self.feature_name = "halogen bond"

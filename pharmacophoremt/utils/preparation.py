@@ -6,19 +6,19 @@ pharmacophore modeling or virtual screening run (Phase 0 of the classical
 workflow).
 """
 
-import numpy as np
-from smonitor import signal
 from rdkit import Chem
-from rdkit.Chem import Descriptors, rdMolDescriptors, SaltRemover, MolStandardize
-
+from rdkit.Chem import Descriptors, MolStandardize, SaltRemover, rdMolDescriptors
+from smonitor import signal
 
 # ---------------------------------------------------------------------------
 # Single-molecule standardization
 # ---------------------------------------------------------------------------
 
+
 @signal(tags=["utils", "preparation", "standardize"])
-def standardize_mol(mol, remove_salts=True, neutralize=True,
-                    remove_stereo_from_unknowns=False):
+def standardize_mol(
+    mol, remove_salts=True, neutralize=True, remove_stereo_from_unknowns=False
+):
     """Standardize a single RDKit molecule for pharmacophore work.
 
     Steps applied in order:
@@ -75,25 +75,33 @@ def standardize_mol(mol, remove_salts=True, neutralize=True,
 # Database filtering
 # ---------------------------------------------------------------------------
 
+
 def _compute_properties(mol):
     """Return a dict of molecular properties used for filtering."""
     return {
-        'mw': Descriptors.ExactMolWt(mol),
-        'logp': Descriptors.MolLogP(mol),
-        'hbd': rdMolDescriptors.CalcNumHBD(mol),
-        'hba': rdMolDescriptors.CalcNumHBA(mol),
-        'rotbonds': rdMolDescriptors.CalcNumRotatableBonds(mol),
-        'tpsa': rdMolDescriptors.CalcTPSA(mol),
-        'rings': rdMolDescriptors.CalcNumRings(mol),
+        "mw": Descriptors.ExactMolWt(mol),
+        "logp": Descriptors.MolLogP(mol),
+        "hbd": rdMolDescriptors.CalcNumHBD(mol),
+        "hba": rdMolDescriptors.CalcNumHBA(mol),
+        "rotbonds": rdMolDescriptors.CalcNumRotatableBonds(mol),
+        "tpsa": rdMolDescriptors.CalcTPSA(mol),
+        "rings": rdMolDescriptors.CalcNumRings(mol),
     }
 
 
 @signal(tags=["utils", "preparation", "filter"])
-def filter_database(molecules, min_mw=200.0, max_mw=600.0,
-                    min_logp=-2.0, max_logp=5.0,
-                    max_hbd=5, max_hba=10,
-                    max_rotbonds=10, max_tpsa=140.0,
-                    standardize=True):
+def filter_database(
+    molecules,
+    min_mw=200.0,
+    max_mw=600.0,
+    min_logp=-2.0,
+    max_logp=5.0,
+    max_hbd=5,
+    max_hba=10,
+    max_rotbonds=10,
+    max_tpsa=140.0,
+    standardize=True,
+):
     """Filter a molecular library by drug-likeness criteria.
 
     Applies Lipinski/Veber-style property filters. Molecules that fail
@@ -137,17 +145,17 @@ def filter_database(molecules, min_mw=200.0, max_mw=600.0,
         except Exception:
             continue
 
-        if not (min_mw <= props['mw'] <= max_mw):
+        if not (min_mw <= props["mw"] <= max_mw):
             continue
-        if not (min_logp <= props['logp'] <= max_logp):
+        if not (min_logp <= props["logp"] <= max_logp):
             continue
-        if props['hbd'] > max_hbd:
+        if props["hbd"] > max_hbd:
             continue
-        if props['hba'] > max_hba:
+        if props["hba"] > max_hba:
             continue
-        if props['rotbonds'] > max_rotbonds:
+        if props["rotbonds"] > max_rotbonds:
             continue
-        if props['tpsa'] > max_tpsa:
+        if props["tpsa"] > max_tpsa:
             continue
 
         passed.append(mol)

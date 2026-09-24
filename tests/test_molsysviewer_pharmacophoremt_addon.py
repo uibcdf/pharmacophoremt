@@ -6,26 +6,27 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import molsysviewer
-import pytest
-
-from pharmacophoremt import Pharmacophore
-from pharmacophoremt.interaction_site import HBAcceptorSphere, HydrophobicSphere
 
 from molsysviewer_pharmacophoremt import (
     get_addon,
     lifecycle,
-    on_enable,
-    on_disable,
     on_context_action,
+    on_disable,
+    on_enable,
     pharmacophore_payload,
     render_pharmacophore_elements,
 )
-from molsysviewer_pharmacophoremt.runtime import PharmacophMTAddonRuntime, ensure_runtime
-
+from molsysviewer_pharmacophoremt.runtime import (
+    PharmacophMTAddonRuntime,
+    ensure_runtime,
+)
+from pharmacophoremt import Pharmacophore
+from pharmacophoremt.interaction_site import HBAcceptorSphere, HydrophobicSphere
 
 # ---------------------------------------------------------------------------
 # Helpers
 # ---------------------------------------------------------------------------
+
 
 def _make_pharmacophore():
     pharma = Pharmacophore()
@@ -43,6 +44,7 @@ class DummyView:
     def __init__(self):
         self.messages = []
         from molsysviewer.shapes import ShapesManager
+
         self.shapes = ShapesManager(self)
 
     def _send(self, message):
@@ -55,6 +57,7 @@ class DummyView:
 # ---------------------------------------------------------------------------
 # Addon spec contract
 # ---------------------------------------------------------------------------
+
 
 def test_addon_spec_matches_molsysviewer_contract():
     addon = get_addon()
@@ -86,6 +89,7 @@ def test_addon_registers_with_molsysviewer_host_registry():
 # ---------------------------------------------------------------------------
 # Lifecycle / runtime
 # ---------------------------------------------------------------------------
+
 
 def test_lifecycle_records_runtime_on_view():
     view = molsysviewer.MolSysView()
@@ -125,6 +129,7 @@ def test_ensure_runtime_creates_and_reuses_instance():
 # Payloads
 # ---------------------------------------------------------------------------
 
+
 def test_pharmacophore_payload_normalizes_interaction_sites():
     pharma = _make_pharmacophore()
     payload = pharmacophore_payload(pharma)
@@ -140,6 +145,7 @@ def test_pharmacophore_payload_normalizes_interaction_sites():
 # ---------------------------------------------------------------------------
 # Render
 # ---------------------------------------------------------------------------
+
 
 def test_render_pharmacophore_elements_adds_spheres():
     pharma = _make_pharmacophore()
@@ -157,9 +163,7 @@ def test_render_pharmacophore_elements_skips_sites_without_center():
     from pharmacophoremt.interaction_site import IncludedVolumePoint
 
     pharma = Pharmacophore()
-    pharma.interaction_sites.append(
-        IncludedVolumePoint(position=[0.0, 0.0, 0.0])
-    )
+    pharma.interaction_sites.append(IncludedVolumePoint(position=[0.0, 0.0, 0.0]))
     pharma.n_interaction_sites = 1
 
     view = DummyView()
@@ -171,6 +175,7 @@ def test_render_pharmacophore_elements_skips_sites_without_center():
 # ---------------------------------------------------------------------------
 # Panel widget — pharmacophore panel
 # ---------------------------------------------------------------------------
+
 
 def test_pharmacophore_panel_widget_class_is_resolvable():
     molsysviewer.addons.clear()
@@ -261,4 +266,5 @@ def test_pharmacophore_panel_render_action_renders_elements():
     assert states[-1]["state"]["status"] == "done"
 
     from molsysviewer_pharmacophoremt.runtime import ensure_runtime as rt
+
     assert any(e["event"] == "panel_render_pharmacophore" for e in rt(view).event_log)

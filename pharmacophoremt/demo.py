@@ -1,4 +1,3 @@
-
 """Module with demonstration objects and files.
 
 This module contains useful objects and files to help document and demonstrate the use of
@@ -28,18 +27,20 @@ These demonstration objects and files should be replaced. The current ones are t
 
 """
 
-
 import pkg_resources
-from pharmacophoremt import pharmacophoric_interaction_sites as interaction_sites
-from pharmacophoremt import Pharmacophore
 
-pharmacophore_pharmer_file = pkg_resources.resource_filename('pharmacophoremt', 'data/pharmer.json')
+from pharmacophoremt import Pharmacophore
+from pharmacophoremt import pharmacophoric_interaction_sites as interaction_sites
+
+pharmacophore_pharmer_file = pkg_resources.resource_filename(
+    "pharmacophoremt", "data/pharmer.json"
+)
 
 pharmacophore = Pharmacophore()
-#pharmacophore.add_interaction_site(interaction_sites.PositiveChargeSphere('[0,0,0] angstroms', '1.0 angstroms'))
-#pharmacophore.add_interaction_site(interaction_sites.NegativeChargeSphere('[-1,2,0] angstroms', '1.0 angstroms'))
-#pharmacophore.add_interaction_site(interaction_sites.HBAcceptorSphereAndVector('[-1,-1,0] angstroms', '1.0 angstroms',[-1,-1,-2]))
-#pharmacophore.add_interaction_site(interaction_sites.HydrophobicGaussianKernel('[1,1,3] angstroms', '1.0 angstroms'))
-#pharmacophore.add_interaction_site(interaction_sites.AromaticRingSphere('[-2,-3,0] angstroms', '1.5 angstroms'))
+# pharmacophore.add_interaction_site(interaction_sites.PositiveChargeSphere('[0,0,0] angstroms', '1.0 angstroms'))
+# pharmacophore.add_interaction_site(interaction_sites.NegativeChargeSphere('[-1,2,0] angstroms', '1.0 angstroms'))
+# pharmacophore.add_interaction_site(interaction_sites.HBAcceptorSphereAndVector('[-1,-1,0] angstroms', '1.0 angstroms',[-1,-1,-2]))
+# pharmacophore.add_interaction_site(interaction_sites.HydrophobicGaussianKernel('[1,1,3] angstroms', '1.0 angstroms'))
+# pharmacophore.add_interaction_site(interaction_sites.AromaticRingSphere('[-2,-3,0] angstroms', '1.5 angstroms'))
 
-del(pkg_resources, interaction_sites, Pharmacophore)
+del (pkg_resources, interaction_sites, Pharmacophore)

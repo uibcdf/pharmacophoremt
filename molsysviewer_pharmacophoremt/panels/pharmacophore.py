@@ -8,7 +8,6 @@ from molsysviewer import AddonPanelWidget
 
 from ..runtime import ensure_runtime, record_event
 
-
 _ESM = """
 export function render({ model, el }) {
   let state = {
@@ -167,18 +166,32 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
 
         if action_id == "render_pharmacophore":
             if runtime.pharmacophore is None:
-                self.push_state({**self._build_state(runtime), "status": "error", "error": "No pharmacophore attached."})
+                self.push_state(
+                    {
+                        **self._build_state(runtime),
+                        "status": "error",
+                        "error": "No pharmacophore attached.",
+                    }
+                )
                 return
             self.push_state({**self._build_state(runtime), "status": "rendering"})
             try:
                 from ..render import render_pharmacophore_elements
+
                 result = render_pharmacophore_elements(
-                    view, runtime.pharmacophore, tag_prefix=runtime.tag_prefix, skip_digestion=True
+                    view,
+                    runtime.pharmacophore,
+                    tag_prefix=runtime.tag_prefix,
+                    skip_digestion=True,
                 )
-                record_event(view, "panel_render_pharmacophore", n_rendered=result["n_rendered"])
+                record_event(
+                    view, "panel_render_pharmacophore", n_rendered=result["n_rendered"]
+                )
                 self.push_state({**self._build_state(runtime), "status": "done"})
             except Exception as exc:
-                self.push_state({**self._build_state(runtime), "status": "error", "error": str(exc)})
+                self.push_state(
+                    {**self._build_state(runtime), "status": "error", "error": str(exc)}
+                )
 
         elif action_id == "clear_pharmacophore":
             try:
@@ -193,6 +206,7 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
         if runtime.pharmacophore is not None:
             try:
                 from ..payloads import pharmacophore_payload
+
                 payload = pharmacophore_payload(runtime.pharmacophore)
                 return {
                     "n_sites": payload["n_sites"],

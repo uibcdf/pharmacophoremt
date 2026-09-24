@@ -2,7 +2,6 @@
 Leave-One-Out (LOO) cross-validation for ligand-based pharmacophore models.
 """
 
-import numpy as np
 from argdigest import arg_digest
 from smonitor import signal
 
@@ -76,8 +75,14 @@ class LeaveOneOutValidator:
 
             # Take the top-ranked hypothesis
             if not hypotheses:
-                rounds.append({'held_out_idx': i, 'hit': False, 'fit_value': None,
-                                'pharmacophore': None})
+                rounds.append(
+                    {
+                        "held_out_idx": i,
+                        "hit": False,
+                        "fit_value": None,
+                        "pharmacophore": None,
+                    }
+                )
                 continue
 
             best_ph = hypotheses[0] if isinstance(hypotheses, list) else hypotheses
@@ -87,21 +92,23 @@ class LeaveOneOutValidator:
             hits = screener.run([test_mol])
 
             hit = len(hits) > 0
-            fit = hits[0]['fit_value'] if hit else None
+            fit = hits[0]["fit_value"] if hit else None
 
             if hit:
                 n_retrieved += 1
 
-            rounds.append({
-                'held_out_idx': i,
-                'hit': hit,
-                'fit_value': fit,
-                'pharmacophore': best_ph,
-            })
+            rounds.append(
+                {
+                    "held_out_idx": i,
+                    "hit": hit,
+                    "fit_value": fit,
+                    "pharmacophore": best_ph,
+                }
+            )
 
         return {
-            'loo_recall': n_retrieved / n,
-            'n_molecules': n,
-            'n_retrieved': n_retrieved,
-            'rounds': rounds,
+            "loo_recall": n_retrieved / n,
+            "n_molecules": n,
+            "n_retrieved": n_retrieved,
+            "rounds": rounds,
         }

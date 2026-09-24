@@ -1,9 +1,10 @@
 import pickle
-import os
+from pathlib import Path
+
 import requests
 from rdkit import Chem
 from rdkit.Chem import AllChem
-from pathlib import Path
+
 
 def fix_bond_orders(mol, pdb_id):
     """
@@ -11,22 +12,23 @@ def fix_bond_orders(mol, pdb_id):
     """
     # 1. Standardize pdb_id (Rescued rule: 'A' -> 'ADE')
     clean_id = pdb_id.split(":")[0].upper()
-    if clean_id == 'A':
-        clean_id = 'ADE'
+    if clean_id == "A":
+        clean_id = "ADE"
 
     # 2. Try local mapper
-    data_path = Path(__file__).parents[2] / 'data' / 'pdb_to_smi.pickle'
+    data_path = Path(__file__).parents[2] / "data" / "pdb_to_smi.pickle"
     smiles = None
     if data_path.exists():
-        with open(data_path, 'rb') as f:
+        with open(data_path, "rb") as f:
             mapper = pickle.load(f)
         smiles = mapper.get(clean_id)
-    
+
     # 3. Fallback to online RCSB PDB API
     if not smiles:
         from .chemistry import get_smiles_from_pdb_id
+
         smiles = get_smiles_from_pdb_id(clean_id)
-        
+
     if smiles:
         template = Chem.MolFromSmiles(smiles)
         if template:
@@ -37,9 +39,10 @@ def fix_bond_orders(mol, pdb_id):
                 return mol
             try:
                 return AllChem.AssignBondOrdersFromTemplate(template, mol)
-            except:
+            except Exception:
                 return mol
     return mol
+
 
 def get_smiles_from_pdb_id(pdb_id):
     """Fetch canonical SMILES from RCSB PDB."""
@@ -49,9 +52,12 @@ def get_smiles_from_pdb_id(pdb_id):
         response = requests.get(url, timeout=5)
         if response.status_code == 200:
             data = response.json()
-            for desc in data.get('rcsb_chem_comp_descriptor', []):
-                if desc.get('type') == 'SMILES_CANONICAL' and desc.get('program') == 'CACTVS':
-                    return desc.get('descriptor')
-    except:
+            for desc in data.get("rcsb_chem_comp_descriptor", []):
+                if (
+                    desc.get("type") == "SMILES_CANONICAL"
+                    and desc.get("program") == "CACTVS"
+                ):
+                    return desc.get("descriptor")
+    except Exception:
         pass
     return None

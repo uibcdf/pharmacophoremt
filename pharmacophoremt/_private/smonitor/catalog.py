@@ -1,6 +1,8 @@
 from __future__ import annotations
+
 from pathlib import Path
-from .meta import DOC_URL, ISSUES_URL, API_URL
+
+from .meta import API_URL, DOC_URL, ISSUES_URL
 
 PACKAGE_ROOT = Path(__file__).resolve().parents[3]
 
@@ -40,13 +42,15 @@ CATALOG = {
         "LibraryNotFoundError": {
             "code": "PHMT-E001",
             "message": "Optional library '{library}' is required for this operation. Please install it via 'pip install {pypi}' or 'conda install {conda}'.",
-        }
-    }
+        },
+    },
 }
 
 CODES = {
     "UnitConsistencyWarning": CATALOG["warnings"]["UnitConsistencyWarning"]["code"],
-    "InvalidInteractionSiteError": CATALOG["errors"]["InvalidInteractionSiteError"]["code"],
+    "InvalidInteractionSiteError": CATALOG["errors"]["InvalidInteractionSiteError"][
+        "code"
+    ],
     "LibraryNotFoundError": CATALOG["errors"]["LibraryNotFoundError"]["code"],
 }
 

@@ -1,11 +1,11 @@
-from .positive_charge import PositiveCharge
-from .negative_charge import NegativeCharge
-from .hb_acceptor import HBAcceptor
-from .hb_donor import HBDonor
-from .included_volume import IncludedVolume
-from .excluded_volume import ExcludedVolume
-from .hydrophobicity import Hydrophobicity
-from .aromatic_ring import AromaticRing
-from .halogen_bond import HalogenBond
-from .metal_coordination import MetalCoordination
-from .cation_pi import CationPi
+from .aromatic_ring import AromaticRing as AromaticRing
+from .cation_pi import CationPi as CationPi
+from .excluded_volume import ExcludedVolume as ExcludedVolume
+from .halogen_bond import HalogenBond as HalogenBond
+from .hb_acceptor import HBAcceptor as HBAcceptor
+from .hb_donor import HBDonor as HBDonor
+from .hydrophobicity import Hydrophobicity as Hydrophobicity
+from .included_volume import IncludedVolume as IncludedVolume
+from .metal_coordination import MetalCoordination as MetalCoordination
+from .negative_charge import NegativeCharge as NegativeCharge
+from .positive_charge import PositiveCharge as PositiveCharge

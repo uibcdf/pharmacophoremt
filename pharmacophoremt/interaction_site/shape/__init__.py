@@ -1,7 +1,7 @@
-from .point import Point
-from .sphere import Sphere
-from .sphere_and_vector import SphereAndVector
-from .gaussian_kernel import GaussianKernel
-from .shapelet import Shapelet
-from .disk import Disk
-from .cylinder import Cylinder
+from .cylinder import Cylinder as Cylinder
+from .disk import Disk as Disk
+from .gaussian_kernel import GaussianKernel as GaussianKernel
+from .point import Point as Point
+from .shapelet import Shapelet as Shapelet
+from .sphere import Sphere as Sphere
+from .sphere_and_vector import SphereAndVector as SphereAndVector

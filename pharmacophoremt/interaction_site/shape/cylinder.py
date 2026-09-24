@@ -7,14 +7,14 @@ interaction_sites with the 'cylinder' shape.
 
 from argdigest import arg_digest
 from smonitor import signal
-import numpy as np
+
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.colors import convert as convert_color_code
 from pharmacophoremt.viewer.color_palettes import get_color_from_palette_for_feature
 
-class Cylinder():
 
-    """ Parent class for the pharmacophoric shape cylinder.
+class Cylinder:
+    """Parent class for the pharmacophoric shape cylinder.
 
     Common attributes and methods will be included here to be inherited by specific pharmacophoric
     interaction_sites with shape cylinder.
@@ -43,33 +43,40 @@ class Cylinder():
     @arg_digest(type_check=True)
     def __init__(self, start, end, radius, skip_digestion=False):
 
-        self.shape_name = 'cylinder'
+        self.shape_name = "cylinder"
 
         if not puw.is_quantity(start):
-            start = puw.quantity(start, 'nm')
+            start = puw.quantity(start, "nm")
         std = puw.standardize(start)
         if puw.is_quantity(std):
             self.start = std
         else:
-            self.start = puw.convert(start, to_unit=std, to_type='quantity')
+            self.start = puw.convert(start, to_unit=std, to_type="quantity")
 
         if not puw.is_quantity(end):
-            end = puw.quantity(end, 'nm')
+            end = puw.quantity(end, "nm")
         std = puw.standardize(end)
         if puw.is_quantity(std):
             self.end = std
         else:
-            self.end = puw.convert(end, to_unit=std, to_type='quantity')
+            self.end = puw.convert(end, to_unit=std, to_type="quantity")
 
         if not puw.is_quantity(radius):
-            radius = puw.quantity(radius, 'nm')
+            radius = puw.quantity(radius, "nm")
         std = puw.standardize(radius)
         if puw.is_quantity(std):
             self.radius = std
         else:
-            self.radius = puw.convert(radius, to_unit=std, to_type='quantity')
+            self.radius = puw.convert(radius, to_unit=std, to_type="quantity")
 
-    def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
+    def add_to_NGLView(
+        self,
+        view,
+        feature_name=None,
+        color_palette="pharmacophoremt",
+        color=None,
+        opacity=0.5,
+    ):
         """Adding the cylinder representation to an NGLview view
 
         Parameters
@@ -90,7 +97,7 @@ class Cylinder():
         if feature_name is None:
             try:
                 feature_name = self.feature_name
-            except:
+            except Exception:
                 pass
 
         if color is None:
@@ -99,18 +106,20 @@ class Cylinder():
             else:
                 raise ValueError
 
-        color = convert_color_code(color, to_form='rgb')
+        color = convert_color_code(color, to_form="rgb")
 
-        start = puw.get_value(self.start, to_unit='angstroms').tolist()
-        end = puw.get_value(self.end, to_unit='angstroms').tolist()
-        radius = puw.get_value(self.radius, to_unit='angstroms')
+        start = puw.get_value(self.start, to_unit="angstroms").tolist()
+        end = puw.get_value(self.end, to_unit="angstroms").tolist()
+        radius = puw.get_value(self.radius, to_unit="angstroms")
 
         try:
             n_components = len(view._ngl_component_ids)
-        except:
+        except Exception:
             n_components = 0
 
         view.shape.add_cylinder(start, end, color, radius, feature_name)
-        view.update_representation(component=n_components, repr_index=0, opacity=opacity)
+        view.update_representation(
+            component=n_components, repr_index=0, opacity=opacity
+        )
 
         pass

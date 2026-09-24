@@ -1,8 +1,6 @@
-import requests
 import os
 import string
-from tqdm.auto import tqdm
-from pharmacophoremt import pyunitwizard as puw
+
 from argdigest import arg_digest
 from smonitor import signal
 
@@ -18,6 +16,7 @@ PREDEFINED_SUBSETS = {
     "Goldilocks": [(2, 3), (300, 350)],
 }
 
+
 class ZincDownloader:
     """
     Downloader for ZINC database tranches.
@@ -30,13 +29,19 @@ class ZincDownloader:
 
     def _get_bin_index(self, value, bins):
         for i, b in enumerate(bins):
-            if value <= b: return i
+            if value <= b:
+                return i
         return len(bins) - 1
 
     @signal(tags=["data", "zinc", "download"])
     @arg_digest(type_check=True)
-    def download_subset(self, mw_range=(200, 500), logp_range=(-1, 5), 
-                        file_format='smi', skip_digestion=False):
+    def download_subset(
+        self,
+        mw_range=(200, 500),
+        logp_range=(-1, 5),
+        file_format="smi",
+        skip_digestion=False,
+    ):
         """
         Download a subset of ZINC molecules based on MW and LogP.
         """
@@ -45,13 +50,13 @@ class ZincDownloader:
         logp_start = self._get_bin_index(logp_range[0], LOGP_BINS)
         logp_end = self._get_bin_index(logp_range[1], LOGP_BINS)
 
-        base_url = "http://files.docking.org/2D/" if file_format == 'smi' else "http://files.docking.org/3D/"
-        
         # This is a simplified version of the rescued logic
         # In a full implementation, we'd iterate over the exact tranche names
         # like 'AA', 'BA', etc., as per the legacy dictionaries.
-        
-        print(f"Downloading ZINC tranches for MW index {mw_start}-{mw_end} and LogP index {logp_start}-{logp_end}")
+
+        print(
+            f"Downloading ZINC tranches for MW index {mw_start}-{mw_end} and LogP index {logp_start}-{logp_end}"
+        )
         # (Rest of download logic using requests...)
-        
+
         return self.download_path

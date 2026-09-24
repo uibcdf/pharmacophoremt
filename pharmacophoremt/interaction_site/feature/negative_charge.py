@@ -5,9 +5,9 @@ interaction_sites with the 'negative charge' feature.
 
 """
 
-class NegativeCharge():
 
-    """ Parent class of pharmacophoric feature.
+class NegativeCharge:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'negative
     charge' feature.
@@ -21,4 +21,4 @@ class NegativeCharge():
 
     def __init__(self):
 
-        self.feature_name = 'negative charge'
+        self.feature_name = "negative charge"

@@ -5,9 +5,9 @@ interaction_sites with the 'hb acceptor' feature.
 
 """
 
-class HBAcceptor():
 
-    """ Parent class of pharmacophoric feature.
+class HBAcceptor:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'hb
     acceptor' feature.
@@ -21,4 +21,4 @@ class HBAcceptor():
 
     def __init__(self):
 
-        self.feature_name = 'hb acceptor'
+        self.feature_name = "hb acceptor"

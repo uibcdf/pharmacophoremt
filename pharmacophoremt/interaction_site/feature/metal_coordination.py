@@ -5,9 +5,9 @@ interaction_sites with the 'metal coordination' feature.
 
 """
 
-class MetalCoordination():
 
-    """ Parent class of pharmacophoric feature.
+class MetalCoordination:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the 'metal
     coordination' feature.
@@ -21,4 +21,4 @@ class MetalCoordination():
 
     def __init__(self):
 
-        self.feature_name = 'metal coordination'
+        self.feature_name = "metal coordination"

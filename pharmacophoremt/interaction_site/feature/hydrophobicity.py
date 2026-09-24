@@ -5,9 +5,9 @@ interaction_sites with the 'positive charge' feature.
 
 """
 
-class Hydrophobicity():
 
-    """ Parent class of pharmacophoric feature.
+class Hydrophobicity:
+    """Parent class of pharmacophoric feature.
 
     Common attributes and methods to be inherited by the pharmacophoric interaction_sites with the
     'hydrophobicity' feature.
@@ -21,4 +21,4 @@ class Hydrophobicity():
 
     def __init__(self):
 
-        self.feature_name = 'hydrophobicity'
+        self.feature_name = "hydrophobicity"

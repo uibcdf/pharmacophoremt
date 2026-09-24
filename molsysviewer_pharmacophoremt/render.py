@@ -12,17 +12,17 @@ DEFAULT_SITE_ALPHA = 0.45
 DEFAULT_SITE_RADIUS_NM = 0.15
 
 _FEATURE_COLORS: dict[str, int] = {
-    "positive charge":    0x3498DB,
-    "negative charge":    0x884EA0,
-    "hb acceptor":        0xB03A2E,
-    "hb donor":           0x17A589,
-    "included volume":    0x707B7C,
-    "excluded volume":    0x283747,
-    "hydrophobicity":     0xF5B041,
-    "aromatic ring":      0xF1C40F,
-    "halogen bond":       0x1ABC9C,
+    "positive charge": 0x3498DB,
+    "negative charge": 0x884EA0,
+    "hb acceptor": 0xB03A2E,
+    "hb donor": 0x17A589,
+    "included volume": 0x707B7C,
+    "excluded volume": 0x283747,
+    "hydrophobicity": 0xF5B041,
+    "aromatic ring": 0xF1C40F,
+    "halogen bond": 0x1ABC9C,
     "metal coordination": 0xE67E22,
-    "cation-pi":          0xE91E63,
+    "cation-pi": 0xE91E63,
 }
 _DEFAULT_COLOR = 0xAAAAAA
 
@@ -66,7 +66,9 @@ def render_pharmacophore_elements(
             tag=tag,
             skip_digestion=True,
         )
-        rendered.append({"index": idx, "features": features, "tag": tag, "layer": layer})
+        rendered.append(
+            {"index": idx, "features": features, "tag": tag, "layer": layer}
+        )
 
     return {
         "n_rendered": len(rendered),

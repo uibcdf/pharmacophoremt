@@ -18,7 +18,7 @@ classifiers = [
     "License :: OSI Approved :: MIT License",
     "Programming Language :: Python :: 3",
 ]
-requires-python = ">=3.10.0,<3.14.0"
+requires-python = ">=3.11,<3.14"
 # Declare any run-time dependencies that should be installed with the package.
 dependencies = [
     "numpy",
@@ -97,7 +97,12 @@ file = "pharmacophoremt/_version.py"
 #directory = "data"
 
 [tool.ruff]
+target-version = "py311"
 extend-exclude = [
+    "devguide",
+    "docs",
+    "sandbox",
+    "*.ipynb",  # archived ligand-set examples, not executable package code
     "ACKREDIT_GUIDE.md",
     "ARGDIGEST_GUIDE.md",
     "DEPDIGEST_GUIDE.md",
@@ -106,3 +111,9 @@ extend-exclude = [
     "PYUNITWIZARD_GUIDE.md",
     "SMONITOR_GUIDE.md",
 ]
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

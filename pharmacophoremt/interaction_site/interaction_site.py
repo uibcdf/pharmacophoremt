@@ -1,10 +1,9 @@
 from argdigest import arg_digest
 from smonitor import signal
-from pharmacophoremt import pyunitwizard as puw
+
 
 class InteractionSite:
-
-    """ Base class for pharmacophoric interaction sites.
+    """Base class for pharmacophoric interaction sites.
 
     An interaction site is defined by its geometry (shape) and its chemical
     properties (features).
@@ -29,7 +28,15 @@ class InteractionSite:
 
     @signal(tags=["core", "interaction_site", "init"])
     @arg_digest(type_check=True)
-    def __init__(self, shape, features, essential=True, weight=1.0, metadata=None, skip_digestion=False):
+    def __init__(
+        self,
+        shape,
+        features,
+        essential=True,
+        weight=1.0,
+        metadata=None,
+        skip_digestion=False,
+    ):
 
         self.shape = shape
 
@@ -45,19 +52,19 @@ class InteractionSite:
 
     @property
     def center(self):
-        return getattr(self.shape, 'center', None)
+        return getattr(self.shape, "center", None)
 
     @property
     def radius(self):
-        return getattr(self.shape, 'radius', None)
+        return getattr(self.shape, "radius", None)
 
     @property
     def direction(self):
-        return getattr(self.shape, 'direction', None)
+        return getattr(self.shape, "direction", None)
 
     @property
     def sigma(self):
-        return getattr(self.shape, 'sigma', None)
+        return getattr(self.shape, "sigma", None)
 
     @property
     def shape_name(self):
@@ -82,7 +89,14 @@ class InteractionSite:
 
     @signal(tags=["core", "interaction_site", "view"])
     @arg_digest(type_check=True)
-    def add_to_NGLView(self, view, color_palette='pharmacophoremt', color=None, opacity=0.5, skip_digestion=False):
+    def add_to_NGLView(
+        self,
+        view,
+        color_palette="pharmacophoremt",
+        color=None,
+        opacity=0.5,
+        skip_digestion=False,
+    ):
         """Adding the interaction site representation to an NGLview view.
 
         If multiple features are present, the first one is used for coloring
@@ -99,9 +113,13 @@ class InteractionSite:
         opacity : float, default: 0.5
             Opacity of the representation.
         """
-        self.shape.add_to_NGLView(view, feature_name=self.feature_name, 
-                                  color_palette=color_palette, color=color, 
-                                  opacity=opacity)
+        self.shape.add_to_NGLView(
+            view,
+            feature_name=self.feature_name,
+            color_palette=color_palette,
+            color=color,
+            opacity=opacity,
+        )
 
     def __repr__(self):
         essential_str = "" if self.essential else ", optional"

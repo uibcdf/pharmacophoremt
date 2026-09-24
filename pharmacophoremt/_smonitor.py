@@ -29,5 +29,3 @@ PROFILES = {
         "show_traceback": True,
     },
 }
-
-from pharmacophoremt._private.smonitor.catalog import CODES, SIGNALS

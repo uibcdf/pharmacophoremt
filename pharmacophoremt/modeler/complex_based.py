@@ -1,16 +1,21 @@
-import numpy as np
-from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.modeler.modeler import Modeler
-from pharmacophoremt.pharmacophore import Pharmacophore
-from pharmacophoremt import interaction_site as interaction_sites
-from pharmacophoremt.data.smarts import LIGAND_SMARTS, PROTEIN_SMARTS, SOLVENT_AND_IONS
-from pharmacophoremt.utils.maths import ring_normal, angle_between_normals, point_projection
-from pharmacophoremt.utils.chemistry import fix_bond_orders
 import molsysmt as msm
 import networkx as nx
-from rdkit import Chem
+import numpy as np
 from argdigest import arg_digest
+from rdkit import Chem
+from rdkit.Chem import rdDetermineBonds
 from smonitor import signal
+
+from pharmacophoremt import interaction_site as interaction_sites
+from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt.data.smarts import LIGAND_SMARTS, PROTEIN_SMARTS, SOLVENT_AND_IONS
+from pharmacophoremt.modeler.modeler import Modeler
+from pharmacophoremt.pharmacophore import Pharmacophore
+from pharmacophoremt.utils.chemistry import fix_bond_orders
+from pharmacophoremt.utils.maths import (
+    angle_between_normals,
+)
+
 
 class ComplexBasedModeler(Modeler):
     """
@@ -18,29 +23,34 @@ class ComplexBasedModeler(Modeler):
     """
 
     RULES = {
-        'hb_dist_max': puw.quantity(0.35, 'nm'),
-        'hb_ang_min': puw.quantity(120, 'degree'),
-        'hyd_dist_max': puw.quantity(0.50, 'nm'),
-        'charge_dist_max': puw.quantity(0.56, 'nm'),
-        'pi_stack_dist_max': puw.quantity(0.75, 'nm'),
-        'pi_stack_ang_dev': 30.0,  # degrees — max deviation from parallel for face-to-face
-        'pi_stack_offset_max': puw.quantity(0.20, 'nm'),
-        'pi_tshape_ang_min': 60.0,  # degrees — min angle for T-shaped stacking
-        'cation_pi_dist_max': puw.quantity(0.60, 'nm'),
-        'halogen_dist_max': puw.quantity(0.40, 'nm'),
-        'metal_dist_max': puw.quantity(0.28, 'nm'),
+        "hb_dist_max": puw.quantity(0.35, "nm"),
+        "hb_ang_min": puw.quantity(120, "degree"),
+        "hyd_dist_max": puw.quantity(0.50, "nm"),
+        "charge_dist_max": puw.quantity(0.56, "nm"),
+        "pi_stack_dist_max": puw.quantity(0.75, "nm"),
+        "pi_stack_ang_dev": 30.0,  # degrees — max deviation from parallel for face-to-face
+        "pi_stack_offset_max": puw.quantity(0.20, "nm"),
+        "pi_tshape_ang_min": 60.0,  # degrees — min angle for T-shaped stacking
+        "cation_pi_dist_max": puw.quantity(0.60, "nm"),
+        "halogen_dist_max": puw.quantity(0.40, "nm"),
+        "metal_dist_max": puw.quantity(0.28, "nm"),
     }
 
     @signal(tags=["modeler", "complex", "init"])
     @arg_digest(type_check=True)
-    def __init__(self, molecular_system, ligand_selection='molecule_type == "small molecule"', 
-                 receptor_selection='molecule_type == "protein"', skip_digestion=False):
-        
+    def __init__(
+        self,
+        molecular_system,
+        ligand_selection='molecule_type == "small molecule"',
+        receptor_selection='molecule_type == "protein"',
+        skip_digestion=False,
+    ):
+
         if isinstance(molecular_system, str):
-            self.system = msm.convert(molecular_system, to_form='molsysmt.MolSys')
+            self.system = msm.convert(molecular_system, to_form="molsysmt.MolSys")
         else:
             self.system = molecular_system
-            
+
         # Aggressive Unpack
         while isinstance(self.system, (list, tuple)) and len(self.system) == 1:
             self.system = self.system[0]
@@ -54,7 +64,8 @@ class ComplexBasedModeler(Modeler):
         for feat_name, patterns in smarts_dict.items():
             for pattern in patterns:
                 p = Chem.MolFromSmarts(pattern)
-                if p is None: continue
+                if p is None:
+                    continue
                 matches = mol.GetSubstructMatches(p)
                 for m in matches:
                     if m not in found[feat_name]:
@@ -67,28 +78,28 @@ class ComplexBasedModeler(Modeler):
         for idx in indices:
             pos = conf.GetAtomPosition(idx)
             pts.append([pos.x, pos.y, pos.z])
-        return puw.quantity(np.array(pts), 'angstroms')
+        return puw.quantity(np.array(pts), "angstroms")
 
     def _get_centroid(self, mol, indices):
         coords = self._get_coords(mol, indices)
         center = np.mean(puw.get_value(coords), axis=0)
-        return puw.quantity(center, 'angstroms')
+        return puw.quantity(center, "angstroms")
 
     def _get_h_atom_pos(self, mol, donor_idx):
         conf = mol.GetConformer()
         donor_atom = mol.GetAtomWithIdx(donor_idx)
         for neighbor in donor_atom.GetNeighbors():
-            if neighbor.GetSymbol() == 'H':
+            if neighbor.GetSymbol() == "H":
                 pos = conf.GetAtomPosition(neighbor.GetIdx())
-                return puw.quantity([pos.x, pos.y, pos.z], 'angstroms')
+                return puw.quantity([pos.x, pos.y, pos.z], "angstroms")
         return None
 
     def _ring_normal_and_centroid(self, mol, match_indices):
         """Return (centroid_quantity, normal_unit_vector) for a ring match."""
         coords_q = self._get_coords(mol, match_indices)
         centroid_q = self._get_centroid(mol, match_indices)
-        coords = puw.get_value(coords_q, to_unit='nm')
-        centroid = puw.get_value(centroid_q, to_unit='nm')
+        coords = puw.get_value(coords_q, to_unit="nm")
+        centroid = puw.get_value(centroid_q, to_unit="nm")
         v1 = coords[0] - centroid
         v2 = coords[1] - centroid
         normal = np.cross(v1, v2)
@@ -97,14 +108,14 @@ class ComplexBasedModeler(Modeler):
         return centroid_q, normal
 
     def _dist(self, q1, q2):
-        v1 = puw.get_value(q1, to_unit='nm')
-        v2 = puw.get_value(q2, to_unit='nm')
+        v1 = puw.get_value(q1, to_unit="nm")
+        v2 = puw.get_value(q2, to_unit="nm")
         return np.linalg.norm(v1 - v2)
 
     def _angle(self, q1, q2, q3):
-        v1 = puw.get_value(q1, to_unit='nm')
-        v2 = puw.get_value(q2, to_unit='nm')
-        v3 = puw.get_value(q3, to_unit='nm')
+        v1 = puw.get_value(q1, to_unit="nm")
+        v2 = puw.get_value(q2, to_unit="nm")
+        v3 = puw.get_value(q3, to_unit="nm")
         ba = v1 - v2
         bc = v3 - v2
         cosine_angle = np.dot(ba, bc) / (np.linalg.norm(ba) * np.linalg.norm(bc))
@@ -113,12 +124,12 @@ class ComplexBasedModeler(Modeler):
 
     @signal(tags=["modeler", "complex", "build"])
     def build(self, structure_indices=None):
-        
+
         # Detect hydrogens using correct attribute 'atom_type'
-        atom_types = msm.get(self.system, element='atom', atom_type=True)
-        if 'H' not in atom_types:
+        atom_types = msm.get(self.system, element="atom", atom_type=True)
+        if "H" not in atom_types:
             self.system = msm.build.add_missing_hydrogens(self.system)
-            
+
         if structure_indices is None:
             indices = [0]
             return_list = False
@@ -131,121 +142,224 @@ class ComplexBasedModeler(Modeler):
 
         phs = []
         for idx in indices:
-            ph = Pharmacophore(name="Complex-based Model", molecular_system=self.system, ref_struct=idx)
+            ph = Pharmacophore(
+                name="Complex-based Model", molecular_system=self.system, ref_struct=idx
+            )
 
-            lig_indices = [int(i) for i in msm.select(self.system, selection=self.ligand_selection)]
-            ligand_mol = msm.convert(self.system, selection=lig_indices, structure_indices=idx, to_form='rdkit.Mol')
+            lig_indices = [
+                int(i) for i in msm.select(self.system, selection=self.ligand_selection)
+            ]
+            ligand_mol = msm.convert(
+                self.system,
+                selection=lig_indices,
+                structure_indices=idx,
+                to_form="rdkit.Mol",
+            )
             ligand_mol.UpdatePropertyCache()
             Chem.FastFindRings(ligand_mol)
-            
-            group_names = msm.get(self.system, element='atom', selection=lig_indices, group_name=True)
+
+            group_names = msm.get(
+                self.system, element="atom", selection=lig_indices, group_name=True
+            )
             if len(group_names) > 0:
                 ligand_mol = fix_bond_orders(ligand_mol, group_names[0])
                 ligand_mol.UpdatePropertyCache()
                 Chem.FastFindRings(ligand_mol)
 
-            rec_indices = [int(i) for i in msm.select(self.system, selection=self.receptor_selection)]
-            bs_selection = f'(index in {rec_indices}) within 0.8 nm of (index in {lig_indices})'
-            bs_indices = [int(i) for i in msm.select(self.system, selection=bs_selection)]
-            
-            bs_group_names = msm.get(self.system, element='atom', selection=bs_indices, group_name=True)
+            # PDB connectivity alone does not encode the ligand's aromatic or
+            # multiple bonds. Recover orders only when no template supplied them.
+            if all(
+                bond.GetBondType() in {Chem.BondType.SINGLE, Chem.BondType.UNSPECIFIED}
+                for bond in ligand_mol.GetBonds()
+            ):
+                ordered_ligand = Chem.Mol(ligand_mol)
+                ligand_charge = sum(
+                    atom.GetFormalCharge() for atom in ordered_ligand.GetAtoms()
+                )
+                try:
+                    rdDetermineBonds.DetermineBondOrders(
+                        ordered_ligand, charge=ligand_charge
+                    )
+                except ValueError as error:
+                    raise ValueError(
+                        "Cannot recover ligand bond orders from the selected structure"
+                    ) from error
+                ligand_mol = ordered_ligand
+
+            rec_indices = [
+                int(i)
+                for i in msm.select(self.system, selection=self.receptor_selection)
+            ]
+            bs_selection = (
+                f"(index in {rec_indices}) within 0.8 nm of (index in {lig_indices})"
+            )
+            bs_indices = [
+                int(i) for i in msm.select(self.system, selection=bs_selection)
+            ]
+
+            bs_group_names = msm.get(
+                self.system, element="atom", selection=bs_indices, group_name=True
+            )
             mask = [g not in SOLVENT_AND_IONS for g in bs_group_names]
             bs_indices = [bs_indices[i] for i, m in enumerate(mask) if m]
 
-            receptor_bs_mol = msm.convert(self.system, selection=bs_indices, structure_indices=idx, to_form='rdkit.Mol')
-            receptor_bs_mol.UpdatePropertyCache()
-            Chem.FastFindRings(receptor_bs_mol)
+            receptor_bs_pdb = msm.convert(
+                self.system,
+                selection=bs_indices,
+                structure_indices=idx,
+                to_form="string:pdb_text",
+            )
+            receptor_bs_mol = Chem.MolFromPDBBlock(receptor_bs_pdb, removeHs=False)
+            if receptor_bs_mol is None:
+                raise ValueError(
+                    "Cannot recover receptor chemistry from the selected pocket"
+                )
 
             lig_feats = self._detect_features(ligand_mol, LIGAND_SMARTS)
             rec_feats = self._detect_features(receptor_bs_mol, PROTEIN_SMARTS)
 
             # --- Rules ---
-            max_h_dist = puw.get_value(self.params['hb_dist_max'], to_unit='nm')
-            min_h_ang = puw.get_value(self.params['hb_ang_min'], to_unit='degree')
-            max_hyd_dist = puw.get_value(self.params['hyd_dist_max'], to_unit='nm')
-            max_charge_dist = puw.get_value(self.params['charge_dist_max'], to_unit='nm')
-            max_halogen_dist = puw.get_value(self.params['halogen_dist_max'], to_unit='nm')
-            max_metal_dist = puw.get_value(self.params['metal_dist_max'], to_unit='nm')
+            max_h_dist = puw.get_value(self.params["hb_dist_max"], to_unit="nm")
+            min_h_ang = puw.get_value(self.params["hb_ang_min"], to_unit="degree")
+            max_hyd_dist = puw.get_value(self.params["hyd_dist_max"], to_unit="nm")
+            max_charge_dist = puw.get_value(
+                self.params["charge_dist_max"], to_unit="nm"
+            )
+            max_halogen_dist = puw.get_value(
+                self.params["halogen_dist_max"], to_unit="nm"
+            )
+            max_metal_dist = puw.get_value(self.params["metal_dist_max"], to_unit="nm")
 
-            for l_indices in lig_feats['hydrophobicity']:
+            for l_indices in lig_feats["hydrophobicity"]:
                 l_center = self._get_centroid(ligand_mol, l_indices)
-                for r_indices in rec_feats['hydrophobicity']:
+                for r_indices in rec_feats["hydrophobicity"]:
                     r_center = self._get_centroid(receptor_bs_mol, r_indices)
                     if self._dist(l_center, r_center) <= max_hyd_dist:
-                        ph.add_interaction_site(interaction_sites.HydrophobicSphere(l_center, '0.15 nm', skip_digestion=True))
+                        ph.add_interaction_site(
+                            interaction_sites.HydrophobicSphere(
+                                l_center, "0.15 nm", skip_digestion=True
+                            )
+                        )
                         break
 
-            for l_indices in lig_feats['hb donor']:
+            for l_indices in lig_feats["hb donor"]:
                 l_center = self._get_centroid(ligand_mol, l_indices)
                 l_h_pos = self._get_h_atom_pos(ligand_mol, l_indices[0])
-                if l_h_pos is None: continue
-                for r_indices in rec_feats['hb acceptor']:
+                if l_h_pos is None:
+                    continue
+                for r_indices in rec_feats["hb acceptor"]:
                     r_center = self._get_centroid(receptor_bs_mol, r_indices)
                     if self._dist(l_center, r_center) <= max_h_dist:
                         if self._angle(l_center, l_h_pos, r_center) >= min_h_ang:
                             dir_vec = puw.get_value(r_center - l_h_pos)
-                            ph.add_interaction_site(interaction_sites.HBDonorSphereAndVector(l_center, '0.1 nm', dir_vec, skip_digestion=True))
+                            ph.add_interaction_site(
+                                interaction_sites.HBDonorSphereAndVector(
+                                    l_center, "0.1 nm", dir_vec, skip_digestion=True
+                                )
+                            )
                             break
 
-            for l_indices in lig_feats['hb acceptor']:
+            for l_indices in lig_feats["hb acceptor"]:
                 l_center = self._get_centroid(ligand_mol, l_indices)
-                for r_indices in rec_feats['hb donor']:
+                for r_indices in rec_feats["hb donor"]:
                     r_center = self._get_centroid(receptor_bs_mol, r_indices)
                     r_h_pos = self._get_h_atom_pos(receptor_bs_mol, r_indices[0])
-                    if r_h_pos is None: continue
+                    if r_h_pos is None:
+                        continue
                     if self._dist(l_center, r_center) <= max_h_dist:
                         if self._angle(r_center, r_h_pos, l_center) >= min_h_ang:
                             dir_vec = puw.get_value(r_h_pos - l_center)
-                            ph.add_interaction_site(interaction_sites.HBAcceptorSphereAndVector(l_center, '0.1 nm', dir_vec, skip_digestion=True))
+                            ph.add_interaction_site(
+                                interaction_sites.HBAcceptorSphereAndVector(
+                                    l_center, "0.1 nm", dir_vec, skip_digestion=True
+                                )
+                            )
                             break
 
-            for l_feat, r_feat, site_class in [('positive charge', 'negative charge', interaction_sites.PositiveChargeSphere),
-                                              ('negative charge', 'positive charge', interaction_sites.NegativeChargeSphere)]:
+            for l_feat, r_feat, site_class in [
+                (
+                    "positive charge",
+                    "negative charge",
+                    interaction_sites.PositiveChargeSphere,
+                ),
+                (
+                    "negative charge",
+                    "positive charge",
+                    interaction_sites.NegativeChargeSphere,
+                ),
+            ]:
                 for l_indices in lig_feats[l_feat]:
                     l_center = self._get_centroid(ligand_mol, l_indices)
                     for r_indices in rec_feats[r_feat]:
                         r_center = self._get_centroid(receptor_bs_mol, r_indices)
                         if self._dist(l_center, r_center) <= max_charge_dist:
-                            ph.add_interaction_site(site_class(l_center, '0.15 nm', skip_digestion=True))
+                            ph.add_interaction_site(
+                                site_class(l_center, "0.15 nm", skip_digestion=True)
+                            )
                             break
 
-            for l_indices in lig_feats['halogen']:
+            for l_indices in lig_feats["halogen"]:
                 # l_indices: (C_idx, X_idx)
                 c_center = self._get_centroid(ligand_mol, [l_indices[0]])
                 x_center = self._get_centroid(ligand_mol, [l_indices[1]])
-                for r_indices in rec_feats['hb acceptor']:
+                for r_indices in rec_feats["hb acceptor"]:
                     r_center = self._get_centroid(receptor_bs_mol, r_indices)
                     if self._dist(x_center, r_center) <= max_halogen_dist:
                         if self._angle(c_center, x_center, r_center) >= 150:
                             dir_vec = puw.get_value(r_center - x_center)
-                            ph.add_interaction_site(interaction_sites.HalogenBondSphereAndVector(x_center, '0.1 nm', dir_vec, skip_digestion=True))
+                            ph.add_interaction_site(
+                                interaction_sites.HalogenBondSphereAndVector(
+                                    x_center, "0.1 nm", dir_vec, skip_digestion=True
+                                )
+                            )
                             break
 
-            metal_elements = ['MG', 'ZN', 'CA', 'FE', 'MN', 'CU', 'NI', 'CO']
-            rec_elements = msm.get(self.system, selection=rec_indices, element=True)
-            metals_indices = [rec_indices[i] for i, e in enumerate(rec_elements) if e.upper() in metal_elements]
-            
+            metal_elements = ["MG", "ZN", "CA", "FE", "MN", "CU", "NI", "CO"]
+            rec_elements = msm.get(
+                self.system, element="atom", selection=rec_indices, atom_type=True
+            )
+            metals_indices = [
+                rec_indices[i]
+                for i, e in enumerate(rec_elements)
+                if e.upper() in metal_elements
+            ]
+
             if len(metals_indices) > 0:
-                metals_coords = msm.get(self.system, selection=metals_indices, structure_indices=idx, coordinates=True)
-                metals_coords = puw.get_value(metals_coords, to_unit='nm')[0]
+                metals_coords = msm.get(
+                    self.system,
+                    selection=metals_indices,
+                    structure_indices=idx,
+                    coordinates=True,
+                )
+                metals_coords = puw.get_value(metals_coords, to_unit="nm")[0]
                 for m_coord in metals_coords:
-                    m_center = puw.quantity(m_coord, 'nm')
-                    for l_indices in lig_feats['hb acceptor']:
+                    m_center = puw.quantity(m_coord, "nm")
+                    for l_indices in lig_feats["hb acceptor"]:
                         l_center = self._get_centroid(ligand_mol, l_indices)
                         if self._dist(m_center, l_center) <= max_metal_dist:
-                             ph.add_interaction_site(interaction_sites.MetalBindingSphere(l_center, '0.15 nm', skip_digestion=True))
-                             break
+                            ph.add_interaction_site(
+                                interaction_sites.MetalBindingSphere(
+                                    l_center, "0.15 nm", skip_digestion=True
+                                )
+                            )
+                            break
 
             # Pi-stacking (face-to-face and T-shaped)
-            max_pi_dist = puw.get_value(self.params['pi_stack_dist_max'], to_unit='nm')
-            max_pi_offset = puw.get_value(self.params['pi_stack_offset_max'], to_unit='nm')
-            max_pi_ang_dev = self.params['pi_stack_ang_dev']
-            min_tshape_ang = self.params['pi_tshape_ang_min']
+            max_pi_dist = puw.get_value(self.params["pi_stack_dist_max"], to_unit="nm")
+            max_pi_offset = puw.get_value(
+                self.params["pi_stack_offset_max"], to_unit="nm"
+            )
+            max_pi_ang_dev = self.params["pi_stack_ang_dev"]
+            min_tshape_ang = self.params["pi_tshape_ang_min"]
 
-            for l_indices in lig_feats['aromatic ring']:
-                l_centroid, l_normal = self._ring_normal_and_centroid(ligand_mol, l_indices)
-                for r_indices in rec_feats['aromatic ring']:
-                    r_centroid, r_normal = self._ring_normal_and_centroid(receptor_bs_mol, r_indices)
+            for l_indices in lig_feats["aromatic ring"]:
+                l_centroid, l_normal = self._ring_normal_and_centroid(
+                    ligand_mol, l_indices
+                )
+                for r_indices in rec_feats["aromatic ring"]:
+                    r_centroid, r_normal = self._ring_normal_and_centroid(
+                        receptor_bs_mol, r_indices
+                    )
                     dist = self._dist(l_centroid, r_centroid)
                     if dist > max_pi_dist:
                         continue
@@ -253,45 +367,80 @@ class ComplexBasedModeler(Modeler):
 
                     if ang <= max_pi_ang_dev:
                         # Face-to-face: check lateral offset
-                        l_c = puw.get_value(l_centroid, to_unit='nm')
-                        r_c = puw.get_value(r_centroid, to_unit='nm')
-                        offset = np.linalg.norm((r_c - l_c) - np.dot(r_c - l_c, l_normal) * l_normal)
+                        l_c = puw.get_value(l_centroid, to_unit="nm")
+                        r_c = puw.get_value(r_centroid, to_unit="nm")
+                        offset = np.linalg.norm(
+                            (r_c - l_c) - np.dot(r_c - l_c, l_normal) * l_normal
+                        )
                         if offset <= max_pi_offset:
-                            ph.add_interaction_site(interaction_sites.AromaticRingSphereAndVector(
-                                l_centroid, puw.quantity(0.15, 'nm'), l_normal, skip_digestion=True))
+                            ph.add_interaction_site(
+                                interaction_sites.AromaticRingSphereAndVector(
+                                    l_centroid,
+                                    puw.quantity(0.15, "nm"),
+                                    l_normal,
+                                    skip_digestion=True,
+                                )
+                            )
                             break
                     elif ang >= min_tshape_ang:
                         # T-shaped: no offset requirement, just distance
-                        ph.add_interaction_site(interaction_sites.AromaticRingSphereAndVector(
-                            l_centroid, puw.quantity(0.15, 'nm'), l_normal, skip_digestion=True))
+                        ph.add_interaction_site(
+                            interaction_sites.AromaticRingSphereAndVector(
+                                l_centroid,
+                                puw.quantity(0.15, "nm"),
+                                l_normal,
+                                skip_digestion=True,
+                            )
+                        )
                         break
 
             # Cation-pi interactions
-            max_catpi_dist = puw.get_value(self.params['cation_pi_dist_max'], to_unit='nm')
+            max_catpi_dist = puw.get_value(
+                self.params["cation_pi_dist_max"], to_unit="nm"
+            )
 
             # Ligand cation — receptor aromatic ring
-            for l_indices in lig_feats['positive charge']:
+            for l_indices in lig_feats["positive charge"]:
                 l_center = self._get_centroid(ligand_mol, l_indices)
-                for r_indices in rec_feats['aromatic ring']:
-                    r_centroid, r_normal = self._ring_normal_and_centroid(receptor_bs_mol, r_indices)
+                for r_indices in rec_feats["aromatic ring"]:
+                    r_centroid, r_normal = self._ring_normal_and_centroid(
+                        receptor_bs_mol, r_indices
+                    )
                     if self._dist(l_center, r_centroid) <= max_catpi_dist:
-                        ph.add_interaction_site(interaction_sites.CationPiSphere(
-                            l_center, puw.quantity(0.15, 'nm'), skip_digestion=True))
+                        ph.add_interaction_site(
+                            interaction_sites.CationPiSphere(
+                                l_center, puw.quantity(0.15, "nm"), skip_digestion=True
+                            )
+                        )
                         break
 
             # Receptor cation — ligand aromatic ring
-            for l_indices in lig_feats['aromatic ring']:
-                l_centroid, l_normal = self._ring_normal_and_centroid(ligand_mol, l_indices)
-                for r_indices in rec_feats['positive charge']:
+            for l_indices in lig_feats["aromatic ring"]:
+                l_centroid, l_normal = self._ring_normal_and_centroid(
+                    ligand_mol, l_indices
+                )
+                for r_indices in rec_feats["positive charge"]:
                     r_center = self._get_centroid(receptor_bs_mol, r_indices)
                     if self._dist(l_centroid, r_center) <= max_catpi_dist:
-                        ph.add_interaction_site(interaction_sites.CationPiSphere(
-                            l_centroid, puw.quantity(0.15, 'nm'), skip_digestion=True))
+                        ph.add_interaction_site(
+                            interaction_sites.CationPiSphere(
+                                l_centroid,
+                                puw.quantity(0.15, "nm"),
+                                skip_digestion=True,
+                            )
+                        )
                         break
 
-            for feat in ['hydrophobicity', 'aromatic ring', 'hb donor', 'hb acceptor',
-                         'positive charge', 'negative charge', 'cation-pi']:
-                self._merge_interaction_sites(ph, feature_name=feat, threshold='0.2 nm')
+            for feat in [
+                "hydrophobicity",
+                "aromatic ring",
+                "hb donor",
+                "hb acceptor",
+                "positive charge",
+                "negative charge",
+                "cation-pi",
+            ]:
+                self._merge_interaction_sites(ph, feature_name=feat, threshold="0.2 nm")
             phs.append(ph)
 
         return phs if return_list else phs[0]
@@ -303,9 +452,9 @@ class ComplexBasedModeler(Modeler):
 
         if isinstance(threshold, str):
             val, unit = threshold.split()
-            threshold_nm = puw.get_value(puw.quantity(float(val), unit), to_unit='nm')
+            threshold_nm = puw.get_value(puw.quantity(float(val), unit), to_unit="nm")
         else:
-            threshold_nm = puw.get_value(threshold, to_unit='nm')
+            threshold_nm = puw.get_value(threshold, to_unit="nm")
 
         # Only merge sites that have a center (skip Point-like edge cases)
         valid = [s for s in sites if s.center is not None]
@@ -323,24 +472,30 @@ class ComplexBasedModeler(Modeler):
         if len(cliques) == len(valid):
             return  # nothing to merge
 
-        other_sites = [s for s in ph.interaction_sites if feature_name not in s.features]
+        other_sites = [
+            s for s in ph.interaction_sites if feature_name not in s.features
+        ]
         ph.interaction_sites = other_sites
         ph.n_interaction_sites = len(other_sites)
 
         for clique in cliques:
             seed = valid[clique[0]]
-            centers = [puw.get_value(valid[i].center, to_unit='nm') for i in clique]
-            avg_center_q = puw.quantity(np.mean(centers, axis=0), 'nm')
+            centers = [puw.get_value(valid[i].center, to_unit="nm") for i in clique]
+            avg_center_q = puw.quantity(np.mean(centers, axis=0), "nm")
             radius = seed.radius
 
-            if seed.shape_name == 'sphere and vector':
-                dirs = [getattr(valid[i].shape, 'direction', np.array([0., 0., 1.]))
-                        for i in clique]
+            if seed.shape_name == "sphere and vector":
+                dirs = [
+                    getattr(valid[i].shape, "direction", np.array([0.0, 0.0, 1.0]))
+                    for i in clique
+                ]
                 avg_dir = np.mean(dirs, axis=0)
                 norm = np.linalg.norm(avg_dir)
-                avg_dir = avg_dir / norm if norm > 1e-6 else np.array([0., 0., 1.])
+                avg_dir = avg_dir / norm if norm > 1e-6 else np.array([0.0, 0.0, 1.0])
                 ph.add_interaction_site(
-                    seed.__class__(avg_center_q, radius, avg_dir, skip_digestion=True))
+                    seed.__class__(avg_center_q, radius, avg_dir, skip_digestion=True)
+                )
             else:
                 ph.add_interaction_site(
-                    seed.__class__(avg_center_q, radius, skip_digestion=True))
+                    seed.__class__(avg_center_q, radius, skip_digestion=True)
+                )

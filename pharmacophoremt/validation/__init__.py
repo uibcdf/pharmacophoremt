@@ -1,6 +1,6 @@
-from .metrics import enrichment_factor, roc_auc, bedroc
-from .retrospective import RetrospectiveValidator
 from .loo import LeaveOneOutValidator
+from .metrics import bedroc, enrichment_factor, roc_auc
+from .retrospective import RetrospectiveValidator
 
 __all__ = [
     "enrichment_factor",

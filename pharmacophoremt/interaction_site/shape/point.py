@@ -5,15 +5,15 @@ interaction_sites with the 'point' shape.
 
 """
 
-import numpy as np
 from argdigest import arg_digest
 from smonitor import signal
+
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.colors import convert as convert_color_code
 from pharmacophoremt.viewer.color_palettes import get_color_from_palette_for_feature
 
-class Point():
 
+class Point:
     """Parent class for the pharmacophoric shape point.
 
     Common attributes and methods will be included here to be inherited by specific pharmacophoric
@@ -35,17 +35,24 @@ class Point():
     @arg_digest(type_check=True)
     def __init__(self, position, skip_digestion=False):
 
-        self.shape_name = 'point'
+        self.shape_name = "point"
 
         if not puw.is_quantity(position):
-            position = puw.quantity(position, 'nm')
+            position = puw.quantity(position, "nm")
         std = puw.standardize(position)
         if puw.is_quantity(std):
             self.position = std
         else:
-            self.position = puw.convert(position, to_unit=std, to_type='quantity')
+            self.position = puw.convert(position, to_unit=std, to_type="quantity")
 
-    def add_to_NGLView(self, view, feature_name=None, color_palette='pharmacophoremt', color=None, opacity=0.5):
+    def add_to_NGLView(
+        self,
+        view,
+        feature_name=None,
+        color_palette="pharmacophoremt",
+        color=None,
+        opacity=0.5,
+    ):
         """Adding the point representation to an NGLview view
 
         Parameters
@@ -66,7 +73,7 @@ class Point():
         if feature_name is None:
             try:
                 feature_name = self.feature_name
-            except:
+            except Exception:
                 pass
 
         if color is None:
@@ -75,18 +82,19 @@ class Point():
             else:
                 raise ValueError
 
-        color = convert_color_code(color, to_form='rgb')
+        color = convert_color_code(color, to_form="rgb")
 
         radius = 0.05
-        center = puw.get_value(self.position, to_unit='angstroms').tolist()
+        center = puw.get_value(self.position, to_unit="angstroms").tolist()
 
         try:
             n_components = len(view._ngl_components_ids)
-        except:
+        except Exception:
             n_components = 0
 
         view.shape.add_sphere(center, color, radius, feature_name)
-        view.update_representation(component=n_components, repr_index=0, opacity=opacity)
+        view.update_representation(
+            component=n_components, repr_index=0, opacity=opacity
+        )
 
         pass
-
