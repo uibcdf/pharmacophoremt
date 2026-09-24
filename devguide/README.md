@@ -33,3 +33,9 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 **Current priority:** Gen 1b — Classical Consolidation. See [checkpoint.md](checkpoint.md) and [classical_workflow.md](classical_workflow.md).
 
 **Philosophy:** Interoperability, Physical Rigor, Atomized Design, AI-Ready.
+
+## Issue records
+
+Open defects are listed in [pending_bugs](pending_bugs/README.md); resolved
+reports remain in the permanent [archive](archive/README.md). The lifecycle
+follows the [MolSysSuite reporting protocol](https://github.com/uibcdf/molsyssuite/blob/policy-v1.4.10/devguide/reporting_protocol.md).

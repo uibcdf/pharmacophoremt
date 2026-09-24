@@ -1,9 +1,9 @@
 ---
 summary: Recover chemical features from PDB complex during pharmacophore extraction.
 issue: uibcdf/pharmacophoremt#5
-status: active
+status: resolved
 opened: 2026-09-24
-closed:
+closed: 2026-09-24
 severity: high
 verification: reproduced
 area: [complex-modeling, chemical-features]
@@ -72,3 +72,13 @@ and the MolSysSuite policy workflow pass on the published commit.
 A ligand with incomplete atoms or unusual formal charge may need an
 authoritative bond-order template. Inference errors should surface
 instead of silently generating a chemically incomplete model.
+
+## Resolution
+
+Commit `8caeab2` restores ligand bond orders and receptor chemistry before
+feature matching and repairs the charge SMARTS. The registered ERalpha test
+checks nonempty output plus aromatic and hydrophobic sites, which directly
+exercise the failure mechanism. Local pytest-receptor completed 23 passing
+tests. Published CI run `35988945532` passed all six Python/OS jobs and policy
+run `35988946765` passed. The archived guard remains locally runnable as
+`python -m pytest --receptor=llm tests/test_validation_eralpha.py::test_eralpha_pharmacophore_extraction`.
