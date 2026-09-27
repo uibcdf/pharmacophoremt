@@ -1,12 +1,12 @@
 ---
 summary: Adopt the MolSysSuite issue-backed reporting lifecycle locally.
 issue: uibcdf/pharmacophoremt#8
-status: active
+status: resolved
 opened: 2026-09-27
-closed:
+closed: 2026-09-27
 verification: inspected
 area: [governance, reporting]
-guard:
+guard: tests/test_reporting_protocol.py::TestReportingProtocol::test_existing_reports_have_valid_metadata_and_generated_indexes
 normative:
 blocked_by: []
 supersedes: []
@@ -53,3 +53,14 @@ false closure and unresolvable pytest selectors. Generated indexes are current.
 The governance job passes on the published commit independently of the
 scientific matrix. The local issue is closed with the durable guard and
 archived report path.
+
+## Resolution
+
+Commit `59aaef1` added the local protocol, template, offline validator,
+generated indexes and independent governance job. The guard checks the
+existing issue-backed records and current generated indexes; the additional
+negative tests reject false closure and missing or invalid guard targets.
+Local reporting tests and Ruff checks passed. Hosted CI run `36357320876`
+passed its independent Reporting governance job, and MolSysSuite policy run
+`36357321213` passed. Scientific matrix jobs in the same CI run are separate
+and are not required to establish this reporting outcome.
