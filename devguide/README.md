@@ -38,5 +38,6 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 Open defects are listed in [pending_bugs](pending_bugs/README.md), and open
 proposals in [pending_proposals](pending_proposals/README.md); resolved reports
-remain in the permanent [archive](archive/README.md). The lifecycle
-follows the [MolSysSuite reporting protocol](https://github.com/uibcdf/molsyssuite/blob/policy-v1.4.10/devguide/reporting_protocol.md).
+remain in the permanent [archive](archive/README.md). Follow the
+[local reporting protocol](reporting_protocol.md), which implements the
+[MolSysSuite reporting protocol](https://github.com/uibcdf/molsyssuite/blob/main/devguide/reporting_protocol.md).
