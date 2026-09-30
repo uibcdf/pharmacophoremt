@@ -23,6 +23,7 @@ class TestReportingProtocol(unittest.TestCase):
                 "uibcdf/pharmacophoremt#5",
                 "uibcdf/pharmacophoremt#6",
                 "uibcdf/pharmacophoremt#8",
+                "uibcdf/pharmacophoremt#9",
             },
         )
         result = subprocess.run(
