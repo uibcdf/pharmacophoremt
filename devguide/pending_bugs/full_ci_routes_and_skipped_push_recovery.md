@@ -1,7 +1,7 @@
 ---
 summary: Complete contributor full-CI routes and skipped-push recovery.
 issue: uibcdf/pharmacophoremt#9
-status: active
+status: partial
 opened: 2026-09-30
 closed:
 severity: medium
@@ -101,3 +101,27 @@ Ruff lint/format, report-index validation and central component conformance
 passed. The full scientific test selection and all dependency/source pins
 are unchanged. The PR/recovery route guard failed before the fix and passed
 after it. Hosted execution and protection are recorded below after publication.
+
+## Hosted governance and first backlog evidence
+
+Source efc27e3 was published through the authorized internal skip-CI route.
+GitHub reported bypass of the explicit PR rule and all eight required checks.
+Protection API confirms strict checks, zero mandatory PR approvals, admin
+exemption, and no force pushes/deletions.
+
+Probe [36764937398](https://github.com/uibcdf/pharmacophoremt/actions/runs/36764937398)
+passed both independent Reporting governance and the detector; native steps
+confirm reporting/index checks and all CI guards actually succeeded. It
+recognized the executed weekly 98ecb45 full matrix and found exactly two
+pending skipped commits: d0215fa (guide distribution) and efc27e3 (this
+implementation). Heavy jobs were intentionally omitted. Probe success did
+not erase these skips. Suite policy (including Ruff)
+[36764942903](https://github.com/uibcdf/pharmacophoremt/actions/runs/36764942903)
+passed at the same source.
+
+The issue and review remain partial. Actual daily execution, hosted external
+PR execution and installed-artifact/publication-platform claims remain
+unreviewed. A complete manual lane and post-run debt probe will be dispatched
+on the published record revision; their actual evidence belongs in the owning
+issue and the central adoption record. Scientific outcomes are preserved and
+no successful complete result is assumed.
