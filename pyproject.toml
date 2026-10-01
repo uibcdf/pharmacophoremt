@@ -69,10 +69,7 @@ where = ["."]
 
 # Ref https://setuptools.pypa.io/en/latest/userguide/datafiles.html#package-data
 [tool.setuptools.package-data]
-opocket = [
-    "py.typed"
-]
-#"opocket.data" = ["**"]
+"pharmacophoremt.data" = ["**"]
 
 [tool.versioningit]
 default-version = "1+unknown"
