@@ -20,6 +20,7 @@ class TestReportingProtocol(unittest.TestCase):
         self.assertEqual(
             {report.fields["issue"] for report in reports},
             {
+                "uibcdf/pharmacophoremt#23",
                 "uibcdf/pharmacophoremt#10",
                 "uibcdf/pharmacophoremt#5",
                 "uibcdf/pharmacophoremt#6",
