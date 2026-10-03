@@ -1,7 +1,7 @@
 ---
 summary: Adopt the mandatory four-minor contract and qualify normal installed delivery
 issue: uibcdf/pharmacophoremt#23
-status: active
+status: partial
 opened: 2026-10-03
 closed:
 verification: inspected
@@ -34,7 +34,6 @@ The new 3.14 lane uses the existing controlled-source mechanism, with MolSysMT
 the suite transition records their qualified source pair). Older minors keep
 their prior source revisions. Where needed, the 3.14 environment keeps the
 3.13 scientific dependency surface and uses published Pytest Receptor 1.1.0.
-ElastNetMT's LinDelINT provider migration is owned by uibcdf/lindelint#14.
 These source routes remain test evidence, not publicly delivered closure;
 replace them after reviewed compatible public packages are independently
 installed. Do not bypass Requires-Python.
@@ -83,3 +82,16 @@ retaining test-results publication only from Linux/Python 3.13 after failed test
 as well as successful tests, unless the run is cancelled. Python 3.14 cells
 run the suite without publishing additional test-results uploads. The separate
 coverage report publisher was already correctly scoped to Linux/Python 3.13.
+
+### Qualification checkpoint — 2026-10-03
+
+Source `9c67ee26ef62bd2375f61f87d772e312a6b595cb`: [CI run 37105628282](https://github.com/uibcdf/pharmacophoremt/actions/runs/37105628282).
+Reporting governance and all eight full scientific jobs pass, including
+ordinary installation, off-checkout import and actual interpreter/architecture
+checks. Public noarch candidate/channel qualification remains component-owned.
+
+Main now retains strict PR protection with 10 checks, adding Linux and
+macOS ARM Python 3.14 to the prior checks. Existing administrator bypass for
+internal direct pushes is preserved. Source feasibility is recorded centrally
+as `authorized`, not public `admitted` support; the badge remains unchanged.
+A documentary skipped push must remain visible to nightly recovery.
