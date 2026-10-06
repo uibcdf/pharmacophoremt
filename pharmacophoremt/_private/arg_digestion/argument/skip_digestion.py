@@ -1,2 +1,1 @@
-def digest_skip_digestion(obj):
-    return obj
+from ._contracts import digest_skip_digestion as digest_skip_digestion

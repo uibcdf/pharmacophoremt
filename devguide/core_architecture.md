@@ -2,6 +2,11 @@
 
 This document defines the foundational design patterns, data structures, and ecosystem integration standards for PharmacophoreMT.
 
+The [growth contracts](extensible_modeling_contracts.md) refine these patterns:
+Feature + Shape is the site layer, while scientific relations, methods, compute
+backends and execution plans must be able to evolve independently. The immediate
+priority is completing traditional workflows with the public MolSysMT boundary.
+
 ## 1. MolSysSuite Integration
 PharmacophoreMT is a citizen of the MolSysSuite ecosystem and must adhere to the following standards:
 
@@ -10,6 +15,12 @@ PharmacophoreMT is a citizen of the MolSysSuite ecosystem and must adhere to the
 - **smonitor**: Centralized diagnostics. All errors/warnings must be cataloged with `PHMT` codes for traceability.
 - **depdigest**: Managing soft dependencies. Features requiring heavy external libraries (e.g., specific XML parsers for LigandScout) must be lazy-loaded.
 - **pyunitwizard**: The "unit customs". No raw floats are allowed for physical magnitudes; everything must be a `Quantity`.
+- **ackredit**: Explicit optional scientific attribution. Native operations use
+  public result capture in the application's session and retain portable records,
+  roles and original software versions. Bibliography rendering belongs to
+  Ackredit; reading saved metadata does not credit a computation. See the
+  [attribution cookbook](../docs/content/cookbook/attribution.md) for activation,
+  absence/failure semantics and development-provider limits.
 
 ### Molecular Data & Analysis
 - **molsysmt**: The unique source of truth for molecular data. PharmacophoreMT will not implement its own topology or coordinate handling; it will use `molsysmt` to query and manipulate systems.

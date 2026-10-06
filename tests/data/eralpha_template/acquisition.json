@@ -1,0 +1,13 @@
+{
+  "schema": "pharmacophoremt.eralpha_template_acquisition@1",
+  "provider_repository": "https://github.com/uibcdf/molsysmt",
+  "provider_head": "98ea9434875a710c148b5ee8bd433ed979cd3787",
+  "delivery": "local working-tree artifact; not immutable published delivery",
+  "origin_directory": "tests/physchem/data/chemical_templates",
+  "curation_script": "devtools/scripts/curate_est_template_fixture.py",
+  "curation_script_sha256": "1ba6ea32a098f332cfff67d548ea1852392aad745102e2461a58448b76844075",
+  "files": {
+    "est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4"
+  }
+}

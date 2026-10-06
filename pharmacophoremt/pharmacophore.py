@@ -6,6 +6,11 @@ from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor import InvalidInteractionSiteError
 
+_CURATION_DIGEST = dict(
+    digestion_source="pharmacophoremt._private.arg_digestion.curation",
+    digestion_style="registry",
+)
+
 
 class Pharmacophore:
     """Native object for pharmacophores.
@@ -111,6 +116,12 @@ class Pharmacophore:
         self.molecular_system = other.molecular_system
         self.name = other.name if other.name else self.name
         self.description = other.description if other.description else self.description
+        from copy import deepcopy
+
+        self.metadata = deepcopy(other.metadata)
+        self.score = other.score
+        self.ref_mol = other.ref_mol
+        self.ref_struct = other.ref_struct
 
     def __reset(self):
         self.interaction_sites = []
@@ -220,7 +231,7 @@ class Pharmacophore:
                 np.zeros((self.n_interaction_sites, self.n_interaction_sites)), "nm"
             )
         centers = self.get(get_center=True, skip_digestion=True)
-        coords = puw.get_value(centers)
+        coords = puw.get_value(centers, to_unit="nm")
         diff = coords[:, np.newaxis, :] - coords[np.newaxis, :, :]
         dist = np.sqrt(np.sum(diff**2, axis=-1))
         return puw.quantity(dist, "nm")
@@ -247,62 +258,88 @@ class Pharmacophore:
     # Refinement API
     # ------------------------------------------------------------------
 
+    @signal(tags=["core", "pharmacophore", "copy"])
+    @arg_digest(type_check=True, **_CURATION_DIGEST)
+    def copy(self, name=None, skip_digestion=False):
+        """Return independent sites/metadata, retaining the molecular reference.
+
+        Parameters
+        ----------
+        name : str, optional
+            Alternative name; None preserves the original.
+
+        Returns
+        -------
+        Pharmacophore
+            Public copy_pharmacophore() result; no molecular data is copied.
+        """
+        from pharmacophoremt.modeler.curation import copy_pharmacophore
+
+        return copy_pharmacophore(self, name=name)
+
     @signal(tags=["core", "pharmacophore", "edit"])
-    @arg_digest(type_check=True)
+    @arg_digest(type_check=True, **_CURATION_DIGEST)
     def set_radius(self, index, radius, skip_digestion=False):
         """Set the radius of one interaction site.
 
         Parameters
         ----------
-        index : int
-            Index of the site to modify.
+        index : int, sequence of int or 'all'
+            Local sites to modify. Every target must have an actual radius.
         radius : quantity
             New radius as a puw quantity (e.g. ``puw.quantity(0.2, 'nm')``).
         """
-        from pharmacophoremt.interaction_site.shape import (
-            Cylinder,
-            Disk,
-            GaussianKernel,
-            Sphere,
-            SphereAndVector,
-        )
+        from pharmacophoremt.modeler.curation import edit_pharmacophore
 
-        site = self.interaction_sites[index]
-        shape = site.shape
-        sname = shape.shape_name
-
-        if sname == "sphere":
-            site.shape = Sphere(shape.center, radius, skip_digestion=True)
-        elif sname == "sphere and vector":
-            site.shape = SphereAndVector(
-                shape.center, radius, shape.direction, skip_digestion=True
-            )
-        elif sname == "gaussian kernel":
-            site.shape = GaussianKernel(shape.center, radius, skip_digestion=True)
-        elif sname == "disk":
-            site.shape = Disk(shape.center, shape.normal, radius, skip_digestion=True)
-        elif sname == "cylinder":
-            site.shape = Cylinder(shape.start, shape.end, radius, skip_digestion=True)
-        else:
-            raise NotImplementedError(f"set_radius not supported for shape '{sname}'")
+        edit_pharmacophore(self, site_indices=index, radius=radius, in_place=True)
 
     @signal(tags=["core", "pharmacophore", "edit"])
-    @arg_digest(type_check=True)
+    @arg_digest(type_check=True, **_CURATION_DIGEST)
     def set_essential(self, index, essential, skip_digestion=False):
         """Toggle the essential flag of one or all interaction sites.
 
         Parameters
         ----------
-        index : int or 'all'
+        index : int, sequence of int or 'all'
             Index of the site, or ``'all'`` to set all sites at once.
         essential : bool
             New essential value.
         """
-        if index == "all":
-            for site in self.interaction_sites:
-                site.essential = bool(essential)
-        else:
-            self.interaction_sites[int(index)].essential = bool(essential)
+        from pharmacophoremt.modeler.curation import edit_pharmacophore
+
+        edit_pharmacophore(self, site_indices=index, essential=essential, in_place=True)
+
+    @signal(tags=["core", "pharmacophore", "edit"])
+    @arg_digest(type_check=True, **_CURATION_DIGEST)
+    def set_weight(self, index, weight, skip_digestion=False):
+        """Set finite nonnegative weights through public edit_pharmacophore().
+
+        Parameters
+        ----------
+        index : int, sequence of int or 'all'
+            Local target sites. Zero weight retains essential/exclusion semantics.
+        weight : float
+            Explicit independent weight, not automatically inferred from activity.
+        """
+        from pharmacophoremt.modeler.curation import edit_pharmacophore
+
+        edit_pharmacophore(self, site_indices=index, weight=weight, in_place=True)
+
+    @signal(tags=["core", "pharmacophore", "edit"])
+    @arg_digest(type_check=True, **_CURATION_DIGEST)
+    def set_sigma(self, index, sigma, skip_digestion=False):
+        """Edit Gaussian widths separately from radii, preserving source history.
+
+        Parameters
+        ----------
+        index : int, sequence of int or 'all'
+            Local GaussianKernel sites; incompatible targets raise before mutation.
+        sigma : positive length quantity
+            Explicit Gaussian width.
+        """
+        from pharmacophoremt.modeler.curation import edit_pharmacophore
+
+        edit_pharmacophore(self, site_indices=index, sigma=sigma, in_place=True)
 
     def merge(self, other):
         """Return a new Pharmacophore combining sites from self and other.
@@ -413,8 +450,8 @@ class Pharmacophore:
             view = msm.view(self.molecular_system, standardize=False)
             self.add_to_NGLView(view, color_palette=color_palette)
         else:
-            from molsysviewer import MolSysView
+            from pharmacophoremt._private.viewer import new_view
 
-            view = MolSysView()
+            view = new_view()
             self.add_to_molsysviewer(view, skip_digestion=True)
         return view

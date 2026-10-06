@@ -1,2 +1,1 @@
-def digest_end(obj):
-    return obj
+from ._contracts import digest_end as digest_end

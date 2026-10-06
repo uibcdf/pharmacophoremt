@@ -1,0 +1,12 @@
+receptor: 20% 109/542 91s
+receptor: 40% 217/542 292s
+receptor: 60% 326/542 401s
+receptor: 80% 434/542 559s
+receptor: 100% 542/542 730s
+PASS exit=0 | 542 passed | 730.39s | 8 warnings
+
+warnings: 8 in 3 groups
+  StructuralAttributeDropWarning x6 | /tmp/phmt-ccd-provider-snapshot/molsysmt/build/add_terminal_atoms.py:100 | Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject t...
+  AckreditTrackingWarning x1 | pharmacophoremt/_ackredit.py:62 | Optional attribution failed at start attribution: provider failed. The scientific result is preserved.
+  UnitStrippedWarning x1 | pharmacophoremt/screening/virtual_screening.py:129 | The unit of the quantity is stripped when downcasting to ndarray.
+

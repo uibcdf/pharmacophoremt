@@ -1,0 +1,16 @@
+{
+  "schema": "pharmacophoremt.ccd_interaction_cases@1",
+  "scope": "complete CCD chemical identities in designed placements, not biological complexes",
+  "query_radius": ".02 nm",
+  "exclusion_radius": ".05 nm",
+  "cases": [
+    {"case_id": "EST", "placement": "ring_offset", "n_sites": 10, "n_duplicate_rings": 1,
+     "n_steric_clashes": 0, "observations": {"hydrophobic": 27, "hbonds": 0, "ionic": 0, "pi_prolif": 1, "cation_pi": 0, "pi_molstar": 1}},
+    {"case_id": "EST", "placement": "donor_contact", "n_sites": 11, "n_duplicate_rings": 1,
+     "n_steric_clashes": 0, "observations": {"hydrophobic": 44, "hbonds": 1, "ionic": 0, "pi_prolif": 1, "cation_pi": 0, "pi_molstar": 1}},
+    {"case_id": "DES", "placement": "ring_offset", "n_sites": 16, "n_duplicate_rings": 2,
+     "n_steric_clashes": 1, "observations": {"hydrophobic": 57, "hbonds": 0, "ionic": 0, "pi_prolif": 2, "cation_pi": 0, "pi_molstar": 2}},
+    {"case_id": "DES", "placement": "donor_contact", "n_sites": 18, "n_duplicate_rings": 2,
+     "n_steric_clashes": 0, "observations": {"hydrophobic": 87, "hbonds": 2, "ionic": 0, "pi_prolif": 2, "cation_pi": 0, "pi_molstar": 2}}
+  ]
+}

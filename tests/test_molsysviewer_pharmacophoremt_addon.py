@@ -31,10 +31,10 @@ from pharmacophoremt.interaction_site import HBAcceptorSphere, HydrophobicSphere
 def _make_pharmacophore():
     pharma = Pharmacophore()
     pharma.interaction_sites.append(
-        HBAcceptorSphere(center=[0.1, 0.2, 0.3], radius=0.5)
+        HBAcceptorSphere(center="[0.1, 0.2, 0.3] nm", radius="0.5 nm")
     )
     pharma.interaction_sites.append(
-        HydrophobicSphere(center=[1.0, 1.1, 1.2], radius=0.4)
+        HydrophobicSphere(center="[1.0, 1.1, 1.2] nm", radius="0.4 nm")
     )
     pharma.n_interaction_sites = 2
     return pharma
@@ -163,7 +163,7 @@ def test_render_pharmacophore_elements_skips_sites_without_center():
     from pharmacophoremt.interaction_site import IncludedVolumePoint
 
     pharma = Pharmacophore()
-    pharma.interaction_sites.append(IncludedVolumePoint(position=[0.0, 0.0, 0.0]))
+    pharma.interaction_sites.append(IncludedVolumePoint(position="[0.0, 0.0, 0.0] nm"))
     pharma.n_interaction_sites = 1
 
     view = DummyView()

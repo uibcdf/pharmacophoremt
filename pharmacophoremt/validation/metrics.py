@@ -1,158 +1,127 @@
-"""
-Statistical metrics for pharmacophore validation.
-
-All functions expect:
-  labels  : array-like of int/bool (1 = active, 0 = decoy), ordered by
-             descending score (first element = top-ranked molecule).
-  scores  : array-like of float, same length as labels.
-
-References
-----------
-Truchon, J.-F.; Bayly, C. I. J. Chem. Inf. Model. 2007, 47, 488-508.
-    (BEDROC derivation)
-"""
+"""Ranking metrics with unbiased ties. Higher dimensionless scores rank first."""
 
 import numpy as np
+from argdigest import arg_digest
+from smonitor import signal
+
+from pharmacophoremt._ackredit import attributed, credit_criterion
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
 
-def enrichment_factor(labels, scores, fraction=0.01):
-    """Enrichment Factor (EF) at a given database fraction.
+def _ranking(labels, scores):
+    try:
+        labels, scores = np.asarray(labels), np.asarray(scores, dtype=float)
+    except (TypeError, ValueError) as error:
+        raise ArgumentError(
+            argument="labels/scores", reason="expected numerical arrays"
+        ) from error
+    if (
+        labels.ndim != 1
+        or scores.ndim != 1
+        or len(labels) != len(scores)
+        or not len(labels)
+    ):
+        raise ArgumentError(
+            argument="labels/scores", reason="expected nonempty, equally sized vectors"
+        )
+    if not np.all(np.isin(labels, [0, 1])) or not np.all(np.isfinite(scores)):
+        raise ArgumentError(
+            argument="labels/scores", reason="labels must be 0 or 1 and scores finite"
+        )
+    return labels.astype(int), scores
 
-    EF = (hits in top-fraction / compounds in top-fraction) /
-         (total actives / total compounds)
 
-    Parameters
-    ----------
-    labels : array-like of int
-        Activity labels (1 = active, 0 = decoy), in *any* order.
-    scores : array-like of float
-        Screening scores, same order as labels. Higher = better ranked.
-    fraction : float
-        Database fraction to evaluate (e.g. 0.01 for EF@1%).
+def _positive(value, argument, maximum=None):
+    if isinstance(value, (bool, np.bool_)):
+        raise ArgumentError(argument=argument, reason="expected a positive real number")
+    try:
+        value = float(value)
+    except (TypeError, ValueError) as error:
+        raise ArgumentError(
+            argument=argument, reason="expected a positive real number"
+        ) from error
+    if (
+        not np.isfinite(value)
+        or value <= 0
+        or (maximum is not None and value > maximum)
+    ):
+        raise ArgumentError(
+            argument=argument,
+            reason=f"expected a finite value in (0, {maximum or 'infinity'}]",
+        )
+    return value
 
-    Returns
-    -------
-    float
-        Enrichment factor. Returns 0.0 if there are no actives.
+
+@signal(tags=["validation", "metric", "ef"])
+@arg_digest()
+@attributed("numpy")
+def enrichment_factor(labels, scores, fraction=0.01, *, skip_digestion=False):
+    """Return EF in ceil(fraction * N) entries; boundary ties share credit.
+
+    Empty inputs are invalid. A dataset with no actives returns zero.
     """
-    labels = np.asarray(labels, dtype=int)
-    scores = np.asarray(scores, dtype=float)
-
-    n_total = len(labels)
-    n_actives = int(np.sum(labels))
-    if n_actives == 0:
+    labels, scores = _ranking(labels, scores)
+    fraction = _positive(fraction, "fraction", maximum=1)
+    active = int(labels.sum())
+    if not active:
         return 0.0
-
-    n_top = max(1, int(np.ceil(fraction * n_total)))
-    order = np.argsort(scores)[::-1]
-    hits_in_top = int(np.sum(labels[order[:n_top]]))
-
-    random_rate = n_actives / n_total
-    return (hits_in_top / n_top) / random_rate
+    top = max(1, int(np.ceil(fraction * len(labels))))
+    boundary = np.sort(scores)[-top]
+    above, tied = scores > boundary, scores == boundary
+    hits = labels[above].sum() + (top - above.sum()) * labels[tied].mean()
+    return float((hits / top) / (active / len(labels)))
 
 
-def roc_auc(labels, scores):
-    """Area Under the ROC Curve (AUC).
-
-    Parameters
-    ----------
-    labels : array-like of int
-        Activity labels (1 = active, 0 = decoy).
-    scores : array-like of float
-        Screening scores, higher = better ranked.
-
-    Returns
-    -------
-    float
-        AUC in [0, 1]. 0.5 = random, 1.0 = perfect.
-    """
-    labels = np.asarray(labels, dtype=int)
-    scores = np.asarray(scores, dtype=float)
-
-    n_actives = int(np.sum(labels))
-    n_decoys = len(labels) - n_actives
-    if n_actives == 0 or n_decoys == 0:
+@signal(tags=["validation", "metric", "auc"])
+@arg_digest()
+@attributed("numpy")
+def roc_auc(labels, scores, *, skip_digestion=False):
+    """Return P(active > decoy) + half P(tie), or NaN for a single class."""
+    labels, scores = _ranking(labels, scores)
+    positives = int(labels.sum())
+    negatives = len(labels) - positives
+    if not positives or not negatives:
         return float("nan")
-
-    order = np.argsort(scores)[::-1]
-    sorted_labels = labels[order]
-
-    # Trapezoidal AUC via counting
-    tp = 0
-    fp = 0
-    auc = 0.0
-    prev_tp = 0
-    for label in sorted_labels:
-        if label == 1:
-            tp += 1
-        else:
-            fp += 1
-            auc += tp - prev_tp
-            prev_tp = tp
-    # Remaining actives after last decoy
-    auc += (tp - prev_tp) * (n_decoys - fp)
-    return auc / (n_actives * n_decoys)
+    order = np.argsort(scores, kind="stable")
+    ranked_scores, ranked_labels = scores[order], labels[order]
+    starts = np.r_[0, np.flatnonzero(np.diff(ranked_scores)) + 1]
+    ends = np.r_[starts[1:], len(labels)]
+    below, wins = 0, 0.0
+    for start, end in zip(starts, ends):
+        active = int(ranked_labels[start:end].sum())
+        decoy = int(end - start - active)
+        wins += active * (below + 0.5 * decoy)
+        below += decoy
+    return float(wins / (positives * negatives))
 
 
-def bedroc(labels, scores, alpha=20.0):
-    """Boltzmann-Enhanced Discrimination of ROC (BEDROC).
+@signal(tags=["validation", "metric", "bedroc"])
+@arg_digest()
+@attributed("numpy")
+def bedroc(labels, scores, alpha=20.0, *, skip_digestion=False):
+    """Return BEDROC between the worst (0) and best (1) possible rankings.
 
-    A metric that gives more weight to early enrichment. alpha controls the
-    emphasis: higher alpha = stronger emphasis on the very top of the ranked
-    list. Standard value for VS benchmarks: alpha = 20.0.
-
-    Parameters
-    ----------
-    labels : array-like of int
-        Activity labels (1 = active, 0 = decoy).
-    scores : array-like of float
-        Screening scores, higher = better ranked.
-    alpha : float
-        Exponential decay parameter (default 20.0).
-
-    Returns
-    -------
-    float
-        BEDROC score in (0, 1]. 1.0 = perfect, ~0.5 = random enrichment.
-
-    References
-    ----------
-    Truchon & Bayly, J. Chem. Inf. Model. 2007, 47, 488-508, Eq. 15.
+    Truchon and Bayly (2007), DOI 10.1021/ci600426e. With fixed class counts,
+    normalized exponential rank sums equal the normalized RIE expression.
+    Ties average positional weights. A single-class dataset returns NaN.
     """
-    labels = np.asarray(labels, dtype=int)
-    scores = np.asarray(scores, dtype=float)
-
-    n = len(labels)
-    n_actives = int(np.sum(labels))
-    if n_actives == 0 or n_actives == n:
+    labels, scores = _ranking(labels, scores)
+    alpha = _positive(alpha, "alpha")
+    n, active = len(labels), int(labels.sum())
+    if not active or active == n:
         return float("nan")
-
-    ra = n_actives / n  # fraction of actives
-
-    order = np.argsort(scores)[::-1]
-    sorted_labels = labels[order]
-
-    # Ranks are 1-indexed
-    ranks = np.where(sorted_labels == 1)[0] + 1  # ranks of actives
-
-    # BEDROC numerator: Boltzmann-weighted sum of active ranks
-    ri_sum = float(np.sum(np.exp(-alpha * ranks / n)))
-
-    # Normalisation constants (Eq. 14 & 15 in Truchon & Bayly)
-
-    # Random BEDROC (rB)
-    random_sum = ra * (1.0 - np.exp(-alpha)) / (np.exp(alpha / n) - 1.0)
-
-    # Max BEDROC (mB) — all actives at the top
-    max_sum = (1.0 - np.exp(-alpha * ra)) / (1.0 - np.exp(-alpha / n))
-
-    # Min BEDROC (nB) — all actives at the bottom
-
-    bedroc_score = (
-        ((ri_sum / random_sum - 1.0) / (max_sum / random_sum - 1.0))
-        if (max_sum / random_sum - 1.0) != 0.0
-        else 0.0
+    order = np.argsort(-scores, kind="stable")
+    ranked_scores, ranked_labels = scores[order], labels[order]
+    # The common rank-one exponent and additive offset cancel. expm1
+    # preserves small-alpha differences without underflowing the first rank.
+    weights = np.expm1(-alpha * (np.arange(n, dtype=float) / n))
+    starts = np.r_[0, np.flatnonzero(np.diff(ranked_scores)) + 1]
+    ends = np.r_[starts[1:], n]
+    observed = sum(
+        float(ranked_labels[a:b].sum()) * weights[a:b].mean()
+        for a, b in zip(starts, ends)
     )
-
-    # Clamp to [0, 1] for numerical safety
-    return float(np.clip(bedroc_score, 0.0, 1.0))
+    best, worst = float(weights[:active].sum()), float(weights[-active:].sum())
+    result = float(np.clip((observed - worst) / (best - worst), 0, 1))
+    credit_criterion("bedroc", "pharmacophoremt.validation.metrics.bedroc")
+    return result

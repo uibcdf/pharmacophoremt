@@ -1,45 +1,57 @@
-"""
-Retrospective validation of pharmacophore models using labeled datasets.
-"""
+"""Retrospective ranking with stable input accounting and explicit failures."""
 
 import numpy as np
 from argdigest import arg_digest
 from smonitor import signal
 
+from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.smonitor.exceptions import (
+    ArgumentError,
+    PoseEvaluationError,
+)
 from pharmacophoremt.screening.virtual_screening import VirtualScreening
 from pharmacophoremt.validation.metrics import bedroc, enrichment_factor, roc_auc
 
 
 class RetrospectiveValidator:
-    """Validate a pharmacophore model on a labeled dataset.
-
-    The dataset is a list of (molecule, label) pairs where label is 1 (active)
-    or 0 (decoy). VirtualScreening is run and the resulting Fit Values are used
-    to compute enrichment metrics.
+    """Rank labeled inputs without treating calculation failures as negatives.
 
     Parameters
     ----------
     pharmacophore : Pharmacophore
-        The pharmacophore to validate.
-    min_match_ratio : float, optional
-        Passed to VirtualScreening (default 1.0).
-
-    Examples
-    --------
-    >>> val = RetrospectiveValidator(pharmacophore)
-    >>> report = val.run(actives, decoys)
-    >>> print(report['EF@1%'], report['BEDROC'])
+        Query model.
+    min_match_ratio : float, default=1.0
+        Essential-weight hit threshold for the legacy screening route.
+    evaluator : PoseEvaluator, RigidPoseSearch or ConformerScreening, optional
+        Evaluate placed poses or search prepared rigid ligands/conformers.
+        The tool's hit criteria apply.
+        When absent, retain the existing VirtualScreening route, whose molecular
+        preparation and feature matching still await MolSysMT migration.
     """
 
-    def __init__(self, pharmacophore, min_match_ratio=1.0):
+    @signal(tags=["validation", "retrospective", "init"])
+    @arg_digest()
+    def __init__(self, pharmacophore, min_match_ratio=1.0, *, evaluator=None):
+        try:
+            self.min_match_ratio = float(min_match_ratio)
+        except (TypeError, ValueError) as error:
+            raise ArgumentError(
+                argument="min_match_ratio", reason="expected a fraction in [0, 1]"
+            ) from error
+        if (
+            isinstance(min_match_ratio, (bool, np.bool_))
+            or not np.isfinite(self.min_match_ratio)
+            or not 0 <= self.min_match_ratio <= 1
+        ):
+            raise ArgumentError(
+                argument="min_match_ratio", reason="expected a fraction in [0, 1]"
+            )
         self.pharmacophore = pharmacophore
-        self.min_match_ratio = min_match_ratio
-        self._screener = VirtualScreening(
-            pharmacophore, min_match_ratio=min_match_ratio
-        )
+        self.evaluator = evaluator
 
     @signal(tags=["validation", "retrospective", "run"])
-    @arg_digest(type_check=True)
+    @arg_digest()
+    @attributed("numpy")
     def run(
         self,
         actives,
@@ -47,70 +59,81 @@ class RetrospectiveValidator:
         ef_fractions=(0.01, 0.05, 0.10),
         bedroc_alpha=20.0,
         skip_digestion=False,
+        *,
+        on_error="raise",
+        **evaluation_options,
     ):
-        """Run retrospective screening and compute validation metrics.
+        """Return ranking metrics and per-input evaluation records.
 
-        Parameters
-        ----------
-        actives : list
-            Active molecules (any format accepted by molsysmt).
-        decoys : list
-            Decoy molecules.
-        ef_fractions : tuple of float, optional
-            Database fractions for EF computation (default (0.01, 0.05, 0.10)).
-        bedroc_alpha : float, optional
-            Alpha parameter for BEDROC (default 20.0).
-
-        Returns
-        -------
-        dict
-            Keys: 'AUC', 'BEDROC', 'EF@1%', 'EF@5%', 'EF@10%' (and any other
-            fractions requested), plus 'n_actives', 'n_decoys',
-            'n_actives_found', 'scores', 'labels'.
+        Inputs are materialized once, so generators and repeated objects retain
+        independent indices. ``on_error='raise'`` is the default. Explicit
+        ``on_error='record'`` excludes failures from metrics and reports the
+        evaluated indices, original class counts and failure counts. A batch
+        with no evaluable inputs raises. Single-class AUC/BEDROC remain NaN.
+        Additional options apply only to the native evaluator/search tool.
         """
-        all_mols = list(actives) + list(decoys)
-        true_labels = [1] * len(actives) + [0] * len(decoys)
-
-        # Screen all molecules with min_match_ratio=0 to get Fit Values for all,
-        # including those that don't pass the threshold (they get 0.0)
-        loose_screener = VirtualScreening(self.pharmacophore, min_match_ratio=0.0)
-        raw_matches = loose_screener.run(all_mols)
-
-        # Build a score lookup: mol index → fit_value
-        # VirtualScreening returns original mol objects; we use index tracking
-        mol_to_score = {}
-        for entry in raw_matches:
-            mol_obj = entry["mol"]
-            for i, mol in enumerate(all_mols):
-                if mol is mol_obj and i not in mol_to_score:
-                    mol_to_score[i] = entry["fit_value"]
-                    break
-
-        scores = np.array([mol_to_score.get(i, 0.0) for i in range(len(all_mols))])
-        labels = np.array(true_labels, dtype=int)
-
-        n_actives_found = int(
-            np.sum(
-                scores[: len(actives)]
-                >= (1.0 / len(self.pharmacophore.interaction_sites))
-                if len(self.pharmacophore.interaction_sites) > 0
-                else scores[: len(actives)] > 0
+        if on_error not in {"raise", "record"}:
+            raise ArgumentError(
+                argument="on_error", reason="expected 'raise' or 'record'"
             )
+        actives, decoys = list(actives), list(decoys)
+        systems = actives + decoys
+        true_labels = np.array([1] * len(actives) + [0] * len(decoys), dtype=int)
+        if self.evaluator is not None:
+            evaluations = self.evaluator.run(
+                systems, on_error=on_error, **evaluation_options
+            )
+        else:
+            if evaluation_options:
+                raise ArgumentError(
+                    argument="evaluation_options",
+                    reason="options require a native pose evaluator/search",
+                )
+            screener = VirtualScreening(self.pharmacophore, min_match_ratio=0.0)
+            screener.run(systems)
+            evaluations = screener.evaluations
+        failures = [entry for entry in evaluations if entry["status"] == "failed"]
+        if failures and on_error == "raise":
+            failed = failures[0]
+            raise PoseEvaluationError(
+                pose_id=failed["input_index"],
+                stage=failed["error"].get("stage", "screening"),
+                reason=failed["error"]["message"],
+            )
+        valid = [entry for entry in evaluations if entry["status"] != "failed"]
+        if not valid:
+            raise ArgumentError(
+                argument="dataset", reason="no successfully evaluated inputs"
+            )
+        indices = np.array([entry["input_index"] for entry in valid], dtype=int)
+        scores = np.array([entry["fit_value"] for entry in valid], dtype=float)
+        labels = true_labels[indices]
+        if self.evaluator is not None:
+            hits = [entry["status"] == "matched" for entry in valid]
+        else:
+            hits = [
+                entry["status"] == "matched"
+                and entry["fit_value"] > 0
+                and entry["essential_match_ratio"] >= self.min_match_ratio
+                for entry in valid
+            ]
+        report = dict(
+            n_actives=len(actives),
+            n_decoys=len(decoys),
+            n_evaluated=len(valid),
+            n_failed=len(failures),
+            n_actives_evaluated=int(labels.sum()),
+            n_decoys_evaluated=int((labels == 0).sum()),
+            n_actives_found=int(np.sum(labels.astype(bool) & hits)),
+            AUC=roc_auc(labels, scores),
+            BEDROC=bedroc(labels, scores, alpha=bedroc_alpha),
+            scores=scores,
+            labels=labels,
+            evaluated_indices=indices,
+            failures=failures,
+            evaluations=evaluations,
         )
-
-        report = {
-            "n_actives": len(actives),
-            "n_decoys": len(decoys),
-            "n_actives_found": n_actives_found,
-            "AUC": roc_auc(labels, scores),
-            "BEDROC": bedroc(labels, scores, alpha=bedroc_alpha),
-            "scores": scores,
-            "labels": labels,
-        }
-
-        for frac in ef_fractions:
-            pct = int(round(frac * 100))
-            key = f"EF@{pct}%"
-            report[key] = enrichment_factor(labels, scores, fraction=frac)
-
+        for fraction in ef_fractions:
+            key = f"EF@{100 * fraction:g}%"
+            report[key] = enrichment_factor(labels, scores, fraction=fraction)
         return report

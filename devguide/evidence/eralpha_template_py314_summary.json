@@ -1,0 +1,168 @@
+{
+  "schema": "pharmacophoremt.eralpha_template_validation@1",
+  "executed_utc": "2026-10-03T15:21:13.077155+00:00",
+  "python": "3.14.7",
+  "environment": {
+    "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.1",
+      "rdkit": "2025.9.5",
+      "argdigest": "0.13.0+16.g68a506e",
+      "depdigest": "0.12.0+13.g104661a",
+      "smonitor": "0.18.0+1.gb308ee0"
+    },
+    "molecular_extensions": [
+      {
+        "module": "molsysmt._rust",
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+      }
+    ]
+  },
+  "producers": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+92.g228355a.dirty",
+      "python_source_sha256": "808710dfc742fde560a3b90fd4668af5f6eef6c3ddbd122c12a33a82df3ac917",
+      "python_file_count": 126
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+24.g42b487869",
+      "python_source_sha256": "811b7d4557ac77a3615095a864d664ab622f5cadcc8eb24534759167f4b166c2",
+      "python_file_count": 2810
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.27.0",
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+      "python_file_count": 77
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "version": "0.8.0+52.g15b1958.dirty",
+      "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+      "python_file_count": 62
+    }
+  },
+  "producers_unchanged": true,
+  "inputs": {
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+    "devtools/prepare_eralpha_ligand.py": "67964fbd2708577c07dfb98a9c9304df955565bc5d073b1467c4ab7d23eac3e3",
+    "devtools/validate_eralpha_template.py": "26512a0911be8420ed01c3f47f920d3b33cb5c4de4efb0f97efdac636dfcba89",
+    "devtools/prepared_ccd_ligands.py": "cfaa3a5e52b8842ac49d5cd9022d97a417be752be5edc9f5b3bf03ad2a10417c",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038",
+    "devtools/benchmark_rigid_consensus.py": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08"
+  },
+  "inputs_unchanged": true,
+  "valid": true,
+  "measurement": "scientific controls only; no timing or memory measurements",
+  "evidence": {
+    "file": "eralpha_template_py314.json.gz",
+    "uncompressed_sha256": "da21115b170d05fbac23f5956c0b47f8829bfcd54b341c3e0708d02b052c1cbd",
+    "compressed_sha256": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "uncompressed_bytes": 2867344,
+    "compressed_bytes": 155778
+  },
+  "runs": [
+    {
+      "tracking": false,
+      "valid": true,
+      "scientific_sha256": "4d0e11ac8fdc0d1235faf85c2e45a48635823fdba232bdc0540c9a8f9d5814af",
+      "counts": {
+        "n_atoms": 20,
+        "n_bonds": 23,
+        "n_structures": 1
+      },
+      "feature_counts": {
+        "hydrophobicity": 9,
+        "hb acceptor": 2,
+        "aromatic ring": 1
+      },
+      "assessment_status": "compatible",
+      "application_status": "applied",
+      "controls": {
+        "positive": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "displaced_negative": {
+          "status": "not_matched",
+          "fit_value": 0.0
+        },
+        "reversed_normal": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "orthogonal_normal_negative": {
+          "status": "not_matched",
+          "fit_value": 0.6666666666666666
+        },
+        "roundtrip": {
+          "status": "matched",
+          "fit_value": 1.0
+        }
+      },
+      "persistence": {
+        "chemical_values_preserved": true,
+        "coordinates_preserved": true,
+        "query_metadata_preserved": true
+      },
+      "bibliographic_items": 3,
+      "contextual_uses": 7
+    },
+    {
+      "tracking": true,
+      "valid": true,
+      "scientific_sha256": "4d0e11ac8fdc0d1235faf85c2e45a48635823fdba232bdc0540c9a8f9d5814af",
+      "counts": {
+        "n_atoms": 20,
+        "n_bonds": 23,
+        "n_structures": 1
+      },
+      "feature_counts": {
+        "hydrophobicity": 9,
+        "hb acceptor": 2,
+        "aromatic ring": 1
+      },
+      "assessment_status": "compatible",
+      "application_status": "applied",
+      "controls": {
+        "positive": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "displaced_negative": {
+          "status": "not_matched",
+          "fit_value": 0.0
+        },
+        "reversed_normal": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "orthogonal_normal_negative": {
+          "status": "not_matched",
+          "fit_value": 0.6666666666666666
+        },
+        "roundtrip": {
+          "status": "matched",
+          "fit_value": 1.0
+        }
+      },
+      "persistence": {
+        "chemical_values_preserved": true,
+        "coordinates_preserved": true,
+        "query_metadata_preserved": true
+      },
+      "bibliographic_items": 14,
+      "contextual_uses": 29
+    }
+  ]
+}

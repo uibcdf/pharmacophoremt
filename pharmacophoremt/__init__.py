@@ -34,6 +34,8 @@ from .modeler.dispatcher import model as model
 from . import io as io
 from . import viewer as viewer
 from . import validation as validation
+from .attribution import attribution as attribution
+from .attribution import attribution_report as attribution_report
 
 __all__ = [
     "config",
@@ -46,4 +48,6 @@ __all__ = [
     "Pharmacophore",
     "__version__",
     "__print_version__",
+    "attribution",
+    "attribution_report",
 ]

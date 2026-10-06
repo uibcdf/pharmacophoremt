@@ -1,0 +1,399 @@
+{
+  "schema": "pharmacophoremt.analytical_refinement_cases@1",
+  "unit": "nm",
+  "scope": "Analytical donor fragments with explicit isotope hydrogens; no biological or optimized-conformation claim.",
+  "cases": [
+    {
+      "reference_centers": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.2,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.2,
+          0.0
+        ],
+        [
+          3.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "source_centers": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.14142135623730953,
+          0.1414213562373095,
+          0.0
+        ],
+        [
+          -0.1414213562373095,
+          0.14142135623730953,
+          0.0
+        ],
+        [
+          3.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "reference_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "case_id": "orientation_recovery",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".3 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 4
+      },
+      "expected": {
+        "final": {
+          "n_placements": 1,
+          "max_matches": 4,
+          "n_fits": 2
+        },
+        "each_step": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 1
+        }
+      }
+    },
+    {
+      "reference_centers": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.01,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.01,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "source_centers": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.01,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.01,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          -1.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "reference_directions": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_directions": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ]
+      ],
+      "case_id": "orientation_blocking",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".05 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 5
+      },
+      "expected": {
+        "final": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 3
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 5,
+          "n_fits": 5
+        }
+      }
+    },
+    {
+      "reference_centers": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.0,
+          0.0
+        ]
+      ],
+      "source_centers": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          2.0,
+          2.7,
+          0.0
+        ]
+      ],
+      "reference_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "source_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "case_id": "orientation_checkpoint",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".5 nm",
+        "direction_tolerance": "3 degrees",
+        "min_matches": 3
+      },
+      "expected": {
+        "final": {
+          "n_placements": 1,
+          "max_matches": 3,
+          "n_fits": 2
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 3,
+          "n_fits": 2
+        }
+      }
+    }
+  ]
+}

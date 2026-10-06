@@ -21,6 +21,8 @@ requirements:
     - molsysmt
     - pyunitwizard
     - argdigest
+    - smonitor
+    - depdigest
     - rdkit
     - networkx
 test:

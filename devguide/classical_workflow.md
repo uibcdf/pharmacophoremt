@@ -1,6 +1,21 @@
-# Classical Pharmacophore Workflow: Complete Specification
+# Classical Pharmacophore Workflow: Historical Scope and Backlog
 
-This document is the **definitive specification** for what PharmacophoreMT must implement to be robust and complete for classical pharmacophore-based drug design. It defines the requirements for each phase of the workflow and serves as the implementation guide for **Gen 1b: Classical Consolidation**.
+**2026-10-02 revision:** This catalog retains earlier scientific requirements
+and proposed implementations. The current [roadmap](roadmap.md) and
+[growth contracts](extensible_modeling_contracts.md) supersede its ownership,
+ordering and automatic-preparation directions. All molecular preparation,
+recognition, geometry and manipulation belong in MolSysMT. Desalting, pH,
+tautomer and state policies must be explicit scientific choices. Inactive-only
+features are not evidence of steric excluded volumes. A proposed local RDKit
+utility below is historical context, not authorization to implement it here.
+Current prepared-conformer ranking retains the first requested frame on exact
+coverage ties; the historical RMSD tie-breaker below is not its implemented policy.
+
+The delivered native slices and their actual scope are documented in
+[placed_pose_workflow.md](placed_pose_workflow.md) and
+[reference_ligand_workflow.md](reference_ligand_workflow.md),
+[rigid_search_workflow.md](rigid_search_workflow.md) and
+[conformer_screening_workflow.md](conformer_screening_workflow.md).
 
 ---
 

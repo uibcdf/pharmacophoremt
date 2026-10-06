@@ -1,0 +1,884 @@
+{
+  "schema": "pharmacophoremt.ionic_validation_summary@1",
+  "created_utc": "2026-10-03T22:17:36.421055+00:00",
+  "scope": "prepared_analytical_geometries_not_biological_validation",
+  "full_evidence": {
+    "path": "ionic_interactions_py314.json.gz",
+    "compressed_sha256": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "uncompressed_sha256": "e5d39bfd99cbb34cf52accd25ed22211e28d7491abde52958775e5262a913118",
+    "compressed_bytes": 127454,
+    "uncompressed_bytes": 2097443
+  },
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "pharmacophoremt": "0.3.0+92.g228355a.dirty",
+    "molsysmt": "0.22.4+24.g42b487869",
+    "numpy": "2.4.6",
+    "ackredit": "0.8.0+68.g93b5989.dirty"
+  },
+  "producer_sources": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+92.g228355a.dirty",
+      "python_source_sha256": "99177a84ab6b1497a4dfe07ca81eac65378ac4e794a56a1192e3bbcd6c5ce682",
+      "python_file_count": 127
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+24.g42b487869",
+      "python_source_sha256": "03a77ce8f0b9f797272b93c1ab0cff5078a774f30080e44acc64ff718a51cee5",
+      "python_file_count": 2820
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.27.0",
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+      "python_file_count": 77
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "version": "0.8.0+68.g93b5989.dirty",
+      "python_source_sha256": "7ad13a16857a625a7c69714b3e4561244549e36321808bb4306ef0308f255b66",
+      "python_file_count": 62
+    }
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+    }
+  ],
+  "source_files": {
+    "ionic_detector": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/interactions/ionic/get_ionic_interactions.py",
+      "sha256": "169f151f7e99f6d4a248080fe13482f6de381ef42d0e77898a8e954327df3a73"
+    },
+    "ionic_modeler": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/interaction_based.py",
+      "sha256": "1364c424208c67ded6089d2408111d9705f9e626ca475c8afb59621678513d4c"
+    },
+    "shared_features": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/features.py",
+      "sha256": "24183734c8aa726a61cd0804297850f6dcdfa4426829b375c65ad3c244fc29c5"
+    },
+    "validation_driver": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/devtools/validate_ionic_interactions.py",
+      "sha256": "4a15cff2f6472feba4525df74ebd4002e2a0d6b84178fd17ec5205a3dde84fb8"
+    }
+  },
+  "producer_sources_unchanged": true,
+  "tracking_independent_science": true,
+  "performance_measured": false,
+  "runs": [
+    {
+      "host_attribution_enabled": false,
+      "valid": true,
+      "attribution_items": 1,
+      "attribution_uses": 1,
+      "cases": [
+        {
+          "label": "atomic",
+          "input": {
+            "smiles": "[Na+].[Cl-]",
+            "coordinates_nm": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0.3,
+                0,
+                0
+              ]
+            ]
+          },
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1
+              ],
+              "n_sites": 1,
+              "features": [
+                "negative charge"
+              ],
+              "participant_atoms": [
+                [
+                  1
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.3,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "label": "carboxylate",
+          "input": {
+            "smiles": "CC(=O)[O-].[Na+].[Na+]",
+            "coordinates_nm": [
+              [
+                0,
+                -0.15,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -0.1,
+                0.1,
+                0
+              ],
+              [
+                0.1,
+                0.1,
+                0
+              ],
+              [
+                0.1,
+                0.4,
+                0
+              ],
+              [
+                -0.1,
+                0.4,
+                0
+              ]
+            ]
+          },
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "n_sites": 1,
+              "features": [
+                "negative charge"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  2,
+                  3
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.1,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                2
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5
+              ],
+              "n_sites": 2,
+              "features": [
+                "positive charge",
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  4
+                ],
+                [
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4
+                ],
+                [
+                  5
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.1,
+                  0.4,
+                  0.0
+                ],
+                [
+                  -0.1,
+                  0.4,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1,
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "label": "guanidinium",
+          "input": {
+            "smiles": "NC(=[NH2+])N.[Cl-]",
+            "coordinates_nm": [
+              [
+                -0.1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0.1,
+                0,
+                0
+              ],
+              [
+                0,
+                0.15,
+                0
+              ],
+              [
+                0,
+                0.4,
+                0
+              ]
+            ]
+          },
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.049999999999999996,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4
+              ],
+              "n_sites": 1,
+              "features": [
+                "negative charge"
+              ],
+              "participant_atoms": [
+                [
+                  4
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.4,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "host_attribution_enabled": true,
+      "valid": true,
+      "attribution_items": 9,
+      "attribution_uses": 18,
+      "cases": [
+        {
+          "label": "atomic",
+          "input": {
+            "smiles": "[Na+].[Cl-]",
+            "coordinates_nm": [
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0.3,
+                0,
+                0
+              ]
+            ]
+          },
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1
+              ],
+              "n_sites": 1,
+              "features": [
+                "negative charge"
+              ],
+              "participant_atoms": [
+                [
+                  1
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.3,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "label": "carboxylate",
+          "input": {
+            "smiles": "CC(=O)[O-].[Na+].[Na+]",
+            "coordinates_nm": [
+              [
+                0,
+                -0.15,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                -0.1,
+                0.1,
+                0
+              ],
+              [
+                0.1,
+                0.1,
+                0
+              ],
+              [
+                0.1,
+                0.4,
+                0
+              ],
+              [
+                -0.1,
+                0.4,
+                0
+              ]
+            ]
+          },
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "n_sites": 1,
+              "features": [
+                "negative charge"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  2,
+                  3
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.1,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                2
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5
+              ],
+              "n_sites": 2,
+              "features": [
+                "positive charge",
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  4
+                ],
+                [
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4
+                ],
+                [
+                  5
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.1,
+                  0.4,
+                  0.0
+                ],
+                [
+                  -0.1,
+                  0.4,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1,
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "label": "guanidinium",
+          "input": {
+            "smiles": "NC(=[NH2+])N.[Cl-]",
+            "coordinates_nm": [
+              [
+                -0.1,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0
+              ],
+              [
+                0.1,
+                0,
+                0
+              ],
+              [
+                0,
+                0.15,
+                0
+              ],
+              [
+                0,
+                0.4,
+                0
+              ]
+            ]
+          },
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.049999999999999996,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4
+              ],
+              "n_sites": 1,
+              "features": [
+                "negative charge"
+              ],
+              "participant_atoms": [
+                [
+                  4
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4
+                ]
+              ],
+              "centers_nm": [
+                [
+                  0.0,
+                  0.4,
+                  0.0
+                ]
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "roundtrip_metadata_preserved": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

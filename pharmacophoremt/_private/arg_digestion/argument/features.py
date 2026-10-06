@@ -1,2 +1,1 @@
-def digest_features(obj):
-    return obj
+from ._contracts import digest_features as digest_features

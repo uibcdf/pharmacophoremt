@@ -1,0 +1,1282 @@
+{
+  "schema": "pharmacophoremt.interaction_composition_validation_summary@1",
+  "created_utc": "2026-10-04T06:43:50.363410+00:00",
+  "scope": "disconnected_prepared_analytical_selection_not_binding_complex_or_timing_benchmark",
+  "full_evidence": {
+    "path": "interaction_composition_py314.json.gz",
+    "compressed_sha256": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "uncompressed_sha256": "1fd82b74fee093137ff3998e2f636043b4a3c695009ea25c3d33d49f8aac026b",
+    "compressed_bytes": 288388,
+    "uncompressed_bytes": 4681077
+  },
+  "environment": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+92.g228355a.dirty",
+      "python_source_sha256": "d0fe2ae129cda5597c7144fa2748d524443183e316a47ff4fd29f9d1d31a9a9f",
+      "python_file_count": 134
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+24.g42b487869",
+      "python_source_sha256": "da92cba8dcb317cd5899fefda97ca1e409adf41722ef7fc1e20b85e436c4610a",
+      "python_file_count": 2820
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.27.0",
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+      "python_file_count": 77
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "version": "0.9.0+8.ga8219b8.dirty",
+      "python_source_sha256": "ba240c30a25db223e3748abed7bb0758e1b990354d6062beb62dcbf7183a1606",
+      "python_file_count": 62
+    }
+  },
+  "source_files": {
+    "devtools/validate_interaction_composition.py": "a351faf55a57c9e933e5faf4c1da03e3b4571af2a7bd275d4c7333ed0242ae8c",
+    "devtools/interaction_collection_cases.py": "eccd93e17ae29aed0d615348438b97afc028a6ad5eac5d69fbee54a50c3fa1c5",
+    "devtools/aromatic_interaction_cases.py": "2d1f6301b89abd123777e514fd9eb1928676dbb19143711737e830ab1eb3c705",
+    "devtools/validate_aromatic_interactions.py": "bc9b9d968c0f85f0ffcd727f00dc9d064c2d7086958e6db0311fccaea906692d",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038"
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+    }
+  ],
+  "producer_sources_unchanged": true,
+  "tracking_independent_science": true,
+  "performance_measured": false,
+  "runs": [
+    {
+      "host_tracking": false,
+      "valid": true,
+      "attribution_items": 5,
+      "attribution_uses": 21,
+      "analyses": [
+        {
+          "label": "hydrophobic",
+          "n_observations": 18,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "hbonds",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "ionic",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "pi_prolif",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "cation_pi",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "pi_molstar",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "ionic_empty",
+          "n_observations": 0,
+          "evaluated_structure_indices": [
+            0
+          ]
+        }
+      ],
+      "source_before": {
+        "coordinates_sha256": "ee178fa2457c61d7a9525ac51894dfcc4cca597b1221d3151fcf9ef19836a276",
+        "coordinates_shape": [
+          1,
+          20,
+          3
+        ],
+        "chemical_state_sha256": "00fa5909ecaea44d9c3a3d55e56c17b4462903a9599d465caf9e6a43685b3373",
+        "atom_identity_sha256": "138ff88831b281cc1e62be8f478532b8d797315913996168205fed431d2c6e13"
+      },
+      "source_after": {
+        "coordinates_sha256": "ee178fa2457c61d7a9525ac51894dfcc4cca597b1221d3151fcf9ef19836a276",
+        "coordinates_shape": [
+          1,
+          20,
+          3
+        ],
+        "chemical_state_sha256": "00fa5909ecaea44d9c3a3d55e56c17b4462903a9599d465caf9e6a43685b3373",
+        "atom_identity_sha256": "138ff88831b281cc1e62be8f478532b8d797315913996168205fed431d2c6e13"
+      },
+      "metadata_preserved": true,
+      "n_sites": 9,
+      "weight_sum": 9.0,
+      "site_map": [
+        {
+          "component": "hydrophobic",
+          "component_site_index": 0,
+          "site_index": 0,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 1,
+          "site_index": 1,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 2,
+          "site_index": 2,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 3,
+          "site_index": 3,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 4,
+          "site_index": 4,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 5,
+          "site_index": 5,
+          "action": "added"
+        },
+        {
+          "component": "hbonds",
+          "component_site_index": 0,
+          "site_index": 6,
+          "action": "added"
+        },
+        {
+          "component": "ionic",
+          "component_site_index": 0,
+          "site_index": 7,
+          "action": "added"
+        },
+        {
+          "component": "pi_prolif",
+          "component_site_index": 0,
+          "site_index": 8,
+          "action": "added"
+        },
+        {
+          "component": "cation_pi",
+          "component_site_index": 0,
+          "site_index": 7,
+          "action": "reused"
+        },
+        {
+          "component": "pi_molstar",
+          "component_site_index": 0,
+          "site_index": 8,
+          "action": "reused"
+        }
+      ],
+      "sites": [
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            0
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.14,
+              0.0,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:df8b3afac38371731e7ec853d86e7782"
+            ],
+            "digest": "blake2b-128:28840c7c72562fa3fcfd9610df26d6c3"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            1
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.07000000000000002,
+              0.12124355652982141,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:9c87ad2176a092441665e53f3b0d6d72"
+            ],
+            "digest": "blake2b-128:721f51ee49861b075846511522cc457d"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            2
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              -0.06999999999999998,
+              0.12124355652982143,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:e804ecb978db1a07c5b17ab52e9c0db8"
+            ],
+            "digest": "blake2b-128:16f63e7107be8914e02fc0948179769b"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            3
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              -0.14,
+              1.7145055188062947e-17,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:47b9dd978907962c2754134c61575fb0"
+            ],
+            "digest": "blake2b-128:1ee690522c061d4e3b22bc19ce1e46d2"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            4
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              -0.07000000000000006,
+              -0.12124355652982138,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:6c38ba0b163325e07b1f1b9ab0987afe"
+            ],
+            "digest": "blake2b-128:2b0434ea943d8ca85754afa22e2be69b"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            5
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.07000000000000002,
+              -0.12124355652982141,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:d4d85555b404be7c67b88a07dde25d44"
+            ],
+            "digest": "blake2b-128:85bcdfc33504ef2e37a2b8749f2ed515"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hb donor",
+          "shape": "sphere and vector",
+          "weight": 1.0,
+          "atom_indices": [
+            8,
+            7
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:d0e9bee74872973f9d5d3232eba2bbef"
+            ],
+            "digest": "blake2b-128:143d82efd09691443473ccfa1680a505"
+          },
+          "n_observations": 1,
+          "components": [
+            "hbonds"
+          ]
+        },
+        {
+          "feature": "positive charge",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            6
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.0,
+              0.0,
+              0.7
+            ],
+            "block_digests": [
+              "blake2b-128:67770ec39e3ee52a62161ac9b4a37772"
+            ],
+            "digest": "blake2b-128:4717b9574dee774fef7e8cdb87c6b0f8"
+          },
+          "n_observations": 2,
+          "components": [
+            "ionic",
+            "cation_pi"
+          ]
+        },
+        {
+          "feature": "aromatic ring",
+          "shape": "disk",
+          "weight": 1.0,
+          "atom_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.0,
+              9.25185853854297e-18,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+            ],
+            "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+          },
+          "n_observations": 2,
+          "components": [
+            "pi_prolif",
+            "pi_molstar"
+          ]
+        }
+      ],
+      "evaluations": {
+        "reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "displaced": {
+          "status": "not_matched",
+          "fit_value": 0.0,
+          "missing_essential_sites": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "excluded_volume_clashes": []
+        },
+        "donor_reversed": {
+          "status": "not_matched",
+          "fit_value": 0.8888888888888888,
+          "missing_essential_sites": [
+            6
+          ],
+          "excluded_volume_clashes": []
+        },
+        "roundtrip": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "modular": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "kept": {
+          "status": "not_matched",
+          "fit_value": 0.8181818181818182,
+          "missing_essential_sites": [
+            9,
+            10
+          ],
+          "excluded_volume_clashes": []
+        },
+        "broad_reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "collision_positive": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "collision_excluded": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": [
+            {
+              "site_index": 9,
+              "atom_index": 6
+            }
+          ]
+        }
+      }
+    },
+    {
+      "host_tracking": true,
+      "valid": true,
+      "attribution_items": 13,
+      "attribution_uses": 50,
+      "analyses": [
+        {
+          "label": "hydrophobic",
+          "n_observations": 18,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "hbonds",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "ionic",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "pi_prolif",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "cation_pi",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "pi_molstar",
+          "n_observations": 1,
+          "evaluated_structure_indices": [
+            0
+          ]
+        },
+        {
+          "label": "ionic_empty",
+          "n_observations": 0,
+          "evaluated_structure_indices": [
+            0
+          ]
+        }
+      ],
+      "source_before": {
+        "coordinates_sha256": "ee178fa2457c61d7a9525ac51894dfcc4cca597b1221d3151fcf9ef19836a276",
+        "coordinates_shape": [
+          1,
+          20,
+          3
+        ],
+        "chemical_state_sha256": "00fa5909ecaea44d9c3a3d55e56c17b4462903a9599d465caf9e6a43685b3373",
+        "atom_identity_sha256": "138ff88831b281cc1e62be8f478532b8d797315913996168205fed431d2c6e13"
+      },
+      "source_after": {
+        "coordinates_sha256": "ee178fa2457c61d7a9525ac51894dfcc4cca597b1221d3151fcf9ef19836a276",
+        "coordinates_shape": [
+          1,
+          20,
+          3
+        ],
+        "chemical_state_sha256": "00fa5909ecaea44d9c3a3d55e56c17b4462903a9599d465caf9e6a43685b3373",
+        "atom_identity_sha256": "138ff88831b281cc1e62be8f478532b8d797315913996168205fed431d2c6e13"
+      },
+      "metadata_preserved": true,
+      "n_sites": 9,
+      "weight_sum": 9.0,
+      "site_map": [
+        {
+          "component": "hydrophobic",
+          "component_site_index": 0,
+          "site_index": 0,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 1,
+          "site_index": 1,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 2,
+          "site_index": 2,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 3,
+          "site_index": 3,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 4,
+          "site_index": 4,
+          "action": "added"
+        },
+        {
+          "component": "hydrophobic",
+          "component_site_index": 5,
+          "site_index": 5,
+          "action": "added"
+        },
+        {
+          "component": "hbonds",
+          "component_site_index": 0,
+          "site_index": 6,
+          "action": "added"
+        },
+        {
+          "component": "ionic",
+          "component_site_index": 0,
+          "site_index": 7,
+          "action": "added"
+        },
+        {
+          "component": "pi_prolif",
+          "component_site_index": 0,
+          "site_index": 8,
+          "action": "added"
+        },
+        {
+          "component": "cation_pi",
+          "component_site_index": 0,
+          "site_index": 7,
+          "action": "reused"
+        },
+        {
+          "component": "pi_molstar",
+          "component_site_index": 0,
+          "site_index": 8,
+          "action": "reused"
+        }
+      ],
+      "sites": [
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            0
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.14,
+              0.0,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:df8b3afac38371731e7ec853d86e7782"
+            ],
+            "digest": "blake2b-128:28840c7c72562fa3fcfd9610df26d6c3"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            1
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.07000000000000002,
+              0.12124355652982141,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:9c87ad2176a092441665e53f3b0d6d72"
+            ],
+            "digest": "blake2b-128:721f51ee49861b075846511522cc457d"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            2
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              -0.06999999999999998,
+              0.12124355652982143,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:e804ecb978db1a07c5b17ab52e9c0db8"
+            ],
+            "digest": "blake2b-128:16f63e7107be8914e02fc0948179769b"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            3
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              -0.14,
+              1.7145055188062947e-17,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:47b9dd978907962c2754134c61575fb0"
+            ],
+            "digest": "blake2b-128:1ee690522c061d4e3b22bc19ce1e46d2"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            4
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              -0.07000000000000006,
+              -0.12124355652982138,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:6c38ba0b163325e07b1f1b9ab0987afe"
+            ],
+            "digest": "blake2b-128:2b0434ea943d8ca85754afa22e2be69b"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hydrophobicity",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            5
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.07000000000000002,
+              -0.12124355652982141,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:d4d85555b404be7c67b88a07dde25d44"
+            ],
+            "digest": "blake2b-128:85bcdfc33504ef2e37a2b8749f2ed515"
+          },
+          "n_observations": 3,
+          "components": [
+            "hydrophobic"
+          ]
+        },
+        {
+          "feature": "hb donor",
+          "shape": "sphere and vector",
+          "weight": 1.0,
+          "atom_indices": [
+            8,
+            7
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              1.0,
+              0.0,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:d0e9bee74872973f9d5d3232eba2bbef"
+            ],
+            "digest": "blake2b-128:143d82efd09691443473ccfa1680a505"
+          },
+          "n_observations": 1,
+          "components": [
+            "hbonds"
+          ]
+        },
+        {
+          "feature": "positive charge",
+          "shape": "sphere",
+          "weight": 1.0,
+          "atom_indices": [
+            6
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.0,
+              0.0,
+              0.7
+            ],
+            "block_digests": [
+              "blake2b-128:67770ec39e3ee52a62161ac9b4a37772"
+            ],
+            "digest": "blake2b-128:4717b9574dee774fef7e8cdb87c6b0f8"
+          },
+          "n_observations": 2,
+          "components": [
+            "ionic",
+            "cation_pi"
+          ]
+        },
+        {
+          "feature": "aromatic ring",
+          "shape": "disk",
+          "weight": 1.0,
+          "atom_indices": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "center": {
+            "manifest": {
+              "format": "qrec/0.3",
+              "field": null,
+              "unit": "nanometer",
+              "si": {
+                "factor": 1e-09,
+                "offset": 0.0,
+                "exponents": {
+                  "m": 1
+                }
+              },
+              "dtype": "float64",
+              "shape": [
+                3
+              ],
+              "blocks": [
+                3
+              ]
+            },
+            "values": [
+              0.0,
+              9.25185853854297e-18,
+              0.0
+            ],
+            "block_digests": [
+              "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+            ],
+            "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+          },
+          "n_observations": 2,
+          "components": [
+            "pi_prolif",
+            "pi_molstar"
+          ]
+        }
+      ],
+      "evaluations": {
+        "reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "displaced": {
+          "status": "not_matched",
+          "fit_value": 0.0,
+          "missing_essential_sites": [
+            0,
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "excluded_volume_clashes": []
+        },
+        "donor_reversed": {
+          "status": "not_matched",
+          "fit_value": 0.8888888888888888,
+          "missing_essential_sites": [
+            6
+          ],
+          "excluded_volume_clashes": []
+        },
+        "roundtrip": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "modular": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "kept": {
+          "status": "not_matched",
+          "fit_value": 0.8181818181818182,
+          "missing_essential_sites": [
+            9,
+            10
+          ],
+          "excluded_volume_clashes": []
+        },
+        "broad_reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "collision_positive": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": []
+        },
+        "collision_excluded": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "missing_essential_sites": [],
+          "excluded_volume_clashes": [
+            {
+              "site_index": 9,
+              "atom_index": 6
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

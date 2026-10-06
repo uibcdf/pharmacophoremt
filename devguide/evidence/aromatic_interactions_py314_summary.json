@@ -1,0 +1,5076 @@
+{
+  "schema": "pharmacophoremt.aromatic_validation_summary@1",
+  "created_utc": "2026-10-03T22:55:57.868244+00:00",
+  "scope": "prepared_analytical_profiles_not_biological_or_timing_benchmark",
+  "full_evidence": {
+    "path": "aromatic_interactions_py314.json.gz",
+    "compressed_sha256": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "uncompressed_sha256": "2e4c4742e18660bc82fbbfef9ac01a7f3b733cbb7b66134d6a64167e4cae6a4b",
+    "compressed_bytes": 806295,
+    "uncompressed_bytes": 12159012
+  },
+  "environment": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+92.g228355a.dirty",
+      "python_source_sha256": "1cf684788c6e86301b9761e4ef9623d397d612c79b0d929cf1a6509a94a6ae23",
+      "python_file_count": 129
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+24.g42b487869",
+      "python_source_sha256": "c8db88ac9faf613ff4865298294435a959d8dd9c71b07df2d83007ba0c05b367",
+      "python_file_count": 2820
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.27.0",
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+      "python_file_count": 77
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "version": "0.9.0+7.g3c6e77c.dirty",
+      "python_source_sha256": "ba72f6bf360a3e98860cc28401f970cb3132411cb798e3c80c29f9c300b6d6f0",
+      "python_file_count": 62
+    }
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+    }
+  ],
+  "source_files": {
+    "devtools/validate_aromatic_interactions.py": "bc9b9d968c0f85f0ffcd727f00dc9d064c2d7086958e6db0311fccaea906692d",
+    "devtools/aromatic_interaction_cases.py": "2d1f6301b89abd123777e514fd9eb1928676dbb19143711737e830ab1eb3c705",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038"
+  },
+  "producer_sources_unchanged": true,
+  "tracking_independent_science": true,
+  "performance_measured": false,
+  "runs": [
+    {
+      "host_tracking": false,
+      "valid": true,
+      "attribution_items": 6,
+      "attribution_uses": 11,
+      "records": [
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "aromatic_cycles",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "aromatic_cycles",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "atomic_cation",
+          "family": "cation_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "atomic_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "atomic_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_angle",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "compound_cation",
+          "family": "cation_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.01,
+                    0.3499999999999999
+                  ],
+                  "block_digests": [
+                    "blake2b-128:6ddbd421f72188b6e1056aa235303abb"
+                  ],
+                  "digest": "blake2b-128:a4af75c7de9f59e0f00f96233eb017e9"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "compound_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.01,
+                    0.3499999999999999
+                  ],
+                  "block_digests": [
+                    "blake2b-128:6ddbd421f72188b6e1056aa235303abb"
+                  ],
+                  "digest": "blake2b-128:a4af75c7de9f59e0f00f96233eb017e9"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "compound_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_angle",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "cation_mapping": "containing_center",
+              "strict_outcome": {
+                "status": "failed",
+                "fit_value": null,
+                "error_code": "PHMT-E102",
+                "reason": "Invalid 'interactions': observed aromatic/cation participant does not map uniquely to a shared feature; choose an explicit compatible mapping.",
+                "cation_mapping": "exact"
+              },
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.01,
+                    0.3499999999999999
+                  ],
+                  "block_digests": [
+                    "blake2b-128:6ddbd421f72188b6e1056aa235303abb"
+                  ],
+                  "digest": "blake2b-128:a4af75c7de9f59e0f00f96233eb017e9"
+                }
+              ],
+              "n_observations": [
+                3
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                3
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "host_tracking": true,
+      "valid": true,
+      "attribution_items": 14,
+      "attribution_uses": 30,
+      "records": [
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "aromatic_cycles",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "parallel",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:77346a447fa5180eeaa74e02c048c21a"
+                  ],
+                  "digest": "blake2b-128:ceb68e04d7a03eab869af1969183df67"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "centroid_angle_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "aromatic_cycles",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "edge",
+          "family": "pi_pi",
+          "method": "plane_angle_intersection",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3,
+                4,
+                5
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                6,
+                7,
+                8,
+                9,
+                10,
+                11
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "atomic_cation",
+          "family": "cation_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "atomic_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "atomic_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_angle",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.0,
+                    0.35
+                  ],
+                  "block_digests": [
+                    "blake2b-128:e797b765c9eaf02162e2bfd7ac2ccdf0"
+                  ],
+                  "digest": "blake2b-128:dec7ade344c488aaa8af582f0704838b"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                1,
+                2,
+                3,
+                4,
+                5,
+                6
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "compound_cation",
+          "family": "cation_pi",
+          "method": "centroid_angle_offset",
+          "profile": "least_squares",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.01,
+                    0.3499999999999999
+                  ],
+                  "block_digests": [
+                    "blake2b-128:6ddbd421f72188b6e1056aa235303abb"
+                  ],
+                  "digest": "blake2b-128:a4af75c7de9f59e0f00f96233eb017e9"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "compound_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_offset",
+          "profile": "three_atom_plane",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.01,
+                    0.3499999999999999
+                  ],
+                  "block_digests": [
+                    "blake2b-128:6ddbd421f72188b6e1056aa235303abb"
+                  ],
+                  "digest": "blake2b-128:a4af75c7de9f59e0f00f96233eb017e9"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                1
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        },
+        {
+          "case": "compound_cation",
+          "family": "cation_pi",
+          "method": "centroid_distance_angle",
+          "profile": "smarts_5_6",
+          "source_preserved": true,
+          "outcomes": [
+            {
+              "role": "first",
+              "selection": [
+                0,
+                1,
+                2,
+                3
+              ],
+              "cation_mapping": "containing_center",
+              "strict_outcome": {
+                "status": "failed",
+                "fit_value": null,
+                "error_code": "PHMT-E102",
+                "reason": "Invalid 'interactions': observed aromatic/cation participant does not map uniquely to a shared feature; choose an explicit compatible mapping.",
+                "cation_mapping": "exact"
+              },
+              "n_sites": 1,
+              "features": [
+                "positive charge"
+              ],
+              "participant_atoms": [
+                [
+                  0,
+                  1,
+                  2,
+                  3
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  0,
+                  2,
+                  3
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    0.01,
+                    0.3499999999999999
+                  ],
+                  "block_digests": [
+                    "blake2b-128:6ddbd421f72188b6e1056aa235303abb"
+                  ],
+                  "digest": "blake2b-128:a4af75c7de9f59e0f00f96233eb017e9"
+                }
+              ],
+              "n_observations": [
+                3
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            },
+            {
+              "role": "second",
+              "selection": [
+                4,
+                5,
+                6,
+                7,
+                8,
+                9
+              ],
+              "cation_mapping": "exact",
+              "strict_outcome": null,
+              "n_sites": 1,
+              "features": [
+                "aromatic ring"
+              ],
+              "participant_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "geometry_atoms": [
+                [
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9
+                ]
+              ],
+              "centers": [
+                {
+                  "manifest": {
+                    "format": "qrec/0.3",
+                    "field": null,
+                    "unit": "nanometer",
+                    "si": {
+                      "factor": 1e-09,
+                      "offset": 0.0,
+                      "exponents": {
+                        "m": 1
+                      }
+                    },
+                    "dtype": "float64",
+                    "shape": [
+                      3
+                    ],
+                    "blocks": [
+                      3
+                    ]
+                  },
+                  "values": [
+                    0.0,
+                    9.25185853854297e-18,
+                    0.0
+                  ],
+                  "block_digests": [
+                    "blake2b-128:cbd7e069cccec30ffa15a6cb24361161"
+                  ],
+                  "digest": "blake2b-128:aae08a050de5d58f61fa2d778a1560cb"
+                }
+              ],
+              "n_observations": [
+                3
+              ],
+              "controls": {
+                "reference": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                },
+                "displaced": {
+                  "status": "not_matched",
+                  "fit_value": 0.0
+                },
+                "roundtrip": {
+                  "status": "matched",
+                  "fit_value": 1.0
+                }
+              },
+              "metadata_preserved": true
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

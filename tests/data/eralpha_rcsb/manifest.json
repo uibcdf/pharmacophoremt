@@ -1,0 +1,126 @@
+{
+  "schema": "pharmacophoremt.eralpha_source_fixture@1",
+  "acquired_date_utc": "2026-10-03",
+  "entry": {
+    "id": "1QKU",
+    "structure_doi": "10.2210/pdb1QKU/pdb",
+    "observed_revision": {
+      "ordinal": "5",
+      "data_content_type": "Structure model",
+      "major_revision": "1",
+      "minor_revision": "4",
+      "revision_date": "2024-05-08"
+    }
+  },
+  "chemical_component": {
+    "id": "EST",
+    "modified_date": "2011-06-04",
+    "formal_charge": "0",
+    "n_atoms": 44,
+    "n_bonds": 47
+  },
+  "files": {
+    "1qku.cif": {
+      "url": "https://files.rcsb.org/download/1QKU.cif",
+      "role": "deposited_asymmetric_unit_coordinates",
+      "sha256": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+      "n_bytes": 704120
+    },
+    "EST.cif": {
+      "url": "https://files.rcsb.org/ligands/download/EST.cif",
+      "role": "ccd_chemical_definition_with_model_and_ideal_coordinates_not_complex_hydrogens",
+      "sha256": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+      "n_bytes": 9280
+    },
+    "1qku_EST_D.sdf": {
+      "url": "https://models.rcsb.org/v1/1qku/ligand?label_asym_id=D&encoding=sdf",
+      "role": "modelserver_derived_instance_export_unversioned_ctab_not_accepted_by_native_reader",
+      "sha256": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+      "n_bytes": 2606
+    }
+  },
+  "expected_counts": {
+    "n_atoms": 6596,
+    "n_groups": 1343,
+    "n_structures": 1
+  },
+  "ligand": {
+    "selection": "group_name == \"EST\" and chain_id == \"D\"",
+    "label_asym_id": "D",
+    "author_asym_id": "A",
+    "residue_id": "600",
+    "structure_index": 0,
+    "source_atom_indices": [
+      5940,
+      5941,
+      5942,
+      5943,
+      5944,
+      5945,
+      5946,
+      5947,
+      5948,
+      5949,
+      5950,
+      5951,
+      5952,
+      5953,
+      5954,
+      5955,
+      5956,
+      5957,
+      5958,
+      5959
+    ],
+    "atom_names": [
+      "C1",
+      "C2",
+      "C3",
+      "O3",
+      "C4",
+      "C5",
+      "C6",
+      "C7",
+      "C8",
+      "C9",
+      "C10",
+      "C11",
+      "C12",
+      "C13",
+      "C14",
+      "C15",
+      "C16",
+      "C17",
+      "O17",
+      "C18"
+    ],
+    "n_atoms": 20,
+    "n_bonds_in_loaded_graph": 23,
+    "n_hydrogens_in_coordinates": 0
+  },
+  "preparation_status": "unprepared_explicit_chemical_template_and_hydrogen_coordinates_pending",
+  "correspondence_status": "heavy_atom_names_agree_chemical_mapping_not_validated",
+  "consumer_issue": "uibcdf/pharmacophoremt#22",
+  "provider_issue": "uibcdf/molsysmt#298",
+  "references": [
+    {
+      "doi": "10.2210/pdb1QKU/pdb",
+      "role": "source_structure"
+    },
+    {
+      "url": "https://www.rcsb.org/ligand/EST",
+      "role": "source_chemical_component"
+    },
+    {
+      "doi": "10.1074/jbc.M009870200",
+      "role": "associated_structure_publication_not_validation_of_this_workflow"
+    }
+  ],
+  "limits": [
+    "Asymmetric unit, no biological assembly or periodic imaging applied.",
+    "No missing atom or hydrogen generation, protonation or coordinate optimization.",
+    "CCD model/ideal coordinates are not substituted for observed ligand coordinates.",
+    "Observed coordinates and data provenance do not establish chemical preparation or pharmacophore validation.",
+    "The old OpenMM snapshot remains an independent historical regression with unverified derivation."
+  ]
+}

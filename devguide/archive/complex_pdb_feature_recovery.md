@@ -82,3 +82,15 @@ exercise the failure mechanism. Local pytest-receptor completed 23 passing
 tests. Published CI run `35988945532` passed all six Python/OS jobs and policy
 run `35988946765` passed. The archived guard remains locally runnable as
 `python -m pytest --receptor=llm tests/test_validation_eralpha.py::test_eralpha_pharmacophore_extraction`.
+
+## Dated qualification — 2026-10-02
+
+The original resolution and guard above describe the legacy chemistry-recovery
+path. They do not establish the current native MolSysMT recognition boundary or
+verified biological provenance. The checksum-qualified snapshot audit in
+[#22](https://github.com/uibcdf/pharmacophoremt/issues/22) finds partial connectivity
+and missing chemical declarations; public PDB-text/RDKit conversion also leaves
+unsupported order-zero bonds. Native recognition rejects both routes. The
+original guard is retained as a historical feature-presence regression, alongside
+`test_eralpha_native_input_audit`. Explicit template preparation is requested in
+[MolSysMT #298](https://github.com/uibcdf/molsysmt/issues/298).

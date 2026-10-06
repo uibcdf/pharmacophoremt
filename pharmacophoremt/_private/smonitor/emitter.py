@@ -6,4 +6,3 @@ bundle = DiagnosticBundle(CATALOG, META, PACKAGE_ROOT)
 warn = bundle.warn
 warn_once = bundle.warn_once
 resolve = bundle.resolve
-emit = bundle.emit

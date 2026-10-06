@@ -1,0 +1,5 @@
+receptor: 61% 33/54 36s
+receptor: 81% 44/54 41s
+receptor: 100% 54/54 43s
+PASS exit=0 | 54 passed | 42.68s
+

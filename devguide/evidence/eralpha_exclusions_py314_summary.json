@@ -1,0 +1,416 @@
+{
+  "schema": "pharmacophoremt.eralpha_exclusion_validation@1",
+  "created_utc": "2026-10-03T21:21:31.581413+00:00",
+  "python": "3.14.7",
+  "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "environment": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+92.g228355a.dirty",
+      "python_source_sha256": "80ec8136da63a812ec7d7cc4e667a7244b66c27ed6fcb6ea16e4d6b3162196e3",
+      "python_file_count": 127
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+24.g42b487869",
+      "python_source_sha256": "8973e41f83d4887d3d85de4023a562a840ad038f15ce597fee8d32e9888e5209",
+      "python_file_count": 2816
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.27.0",
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+      "python_file_count": 77
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "version": "0.8.0+52.g15b1958.dirty",
+      "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+      "python_file_count": 62
+    }
+  },
+  "inputs": {
+    "devtools/validate_eralpha_exclusions.py": "b88458be407039d7850768a54a9271480cfa7dd440de266ca9508a1bd1b2ee74",
+    "devtools/audit_eralpha_receptor.py": "0854719403f34d5eb4e6563f302c27bd928e75fc9ded7cead70da401e730c177",
+    "devtools/prepare_eralpha_ligand.py": "28ff1f7833a555efa7456f8b97e87cda6fdacd2831ae061815b8ff38eb582a83",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_eralpha_template.py": "a71d50a5c16e6c9f983a27f49bd0d3cdafab13dca91adab15dfe8309705e8e55",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038",
+    "devtools/benchmark_rigid_consensus.py": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08",
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c"
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "rdkit": "2025.9.5",
+    "argdigest": "0.13.0+16.g68a506e",
+    "depdigest": "0.12.0+13.g104661a",
+    "smonitor": "0.18.0+1.gb308ee0"
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+    }
+  ],
+  "producers_unchanged": true,
+  "inputs_unchanged": true,
+  "tracking_independent_science": true,
+  "timing": "not_measured",
+  "memory": "not_measured",
+  "valid": true,
+  "full_evidence": {
+    "path": "eralpha_exclusions_py314.json.gz",
+    "compressed_bytes": 563994,
+    "uncompressed_bytes": 11837557,
+    "compressed_sha256": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "uncompressed_sha256": "b927e5ef0f4c667602fc9cb941a76cfdc86fc786a81757313db2e981873b5902"
+  },
+  "runs": [
+    {
+      "host_tracking": false,
+      "valid": true,
+      "receptor_groups": 19,
+      "excluded_sites": 153,
+      "query_site_offset": 5,
+      "collision_targets": {
+        "receptor_source_atom_index": 394,
+        "ligand_atom_index": 3,
+        "translation": {
+          "manifest": {
+            "format": "qrec/0.3",
+            "field": null,
+            "unit": "nanometer",
+            "si": {
+              "factor": 1e-09,
+              "offset": 0.0,
+              "exponents": {
+                "m": 1
+              }
+            },
+            "dtype": "float64",
+            "shape": [
+              1,
+              1,
+              3
+            ],
+            "blocks": [
+              3
+            ]
+          },
+          "values": [
+            [
+              [
+                0.001200000000000756,
+                0.17149999999999999,
+                0.19450000000000012
+              ]
+            ]
+          ],
+          "block_digests": [
+            "blake2b-128:5e3246204a853ae352792b438c9dd021"
+          ],
+          "digest": "blake2b-128:e4ace51d618348058f0f1febef1673ae"
+        }
+      },
+      "outcomes": {
+        "unexcluded_reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "unexcluded_collision": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "collision": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "clashes": [
+            {
+              "site_index": 49,
+              "atom_index": 3
+            }
+          ],
+          "assignments": 5
+        },
+        "wide_radius_reference": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "clashes": [
+            {
+              "site_index": 47,
+              "atom_index": 3
+            },
+            {
+              "site_index": 48,
+              "atom_index": 3
+            },
+            {
+              "site_index": 49,
+              "atom_index": 3
+            },
+            {
+              "site_index": 61,
+              "atom_index": 4
+            },
+            {
+              "site_index": 65,
+              "atom_index": 3
+            },
+            {
+              "site_index": 92,
+              "atom_index": 3
+            },
+            {
+              "site_index": 138,
+              "atom_index": 18
+            },
+            {
+              "site_index": 140,
+              "atom_index": 18
+            },
+            {
+              "site_index": 142,
+              "atom_index": 18
+            },
+            {
+              "site_index": 143,
+              "atom_index": 18
+            },
+            {
+              "site_index": 146,
+              "atom_index": 18
+            },
+            {
+              "site_index": 148,
+              "atom_index": 18
+            }
+          ],
+          "assignments": 5
+        },
+        "reloaded_reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "reloaded_collision": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "clashes": [
+            {
+              "site_index": 49,
+              "atom_index": 3
+            }
+          ],
+          "assignments": 5
+        }
+      },
+      "source_unchanged": true,
+      "ligand_unchanged": true,
+      "heavy_pose_preserved": true,
+      "query_metadata_preserved": true,
+      "citation_items": 4,
+      "citation_uses": 13,
+      "policy": {
+        "reference_frame": "unchanged deposited 1QKU heavy pose",
+        "positive_radius": "0.4 nm analytical collision control",
+        "excluded_radius": "0.1 nm caller choice",
+        "sensitivity_radius": "0.35 nm caller choice",
+        "receptor_chemistry": "not_prepared",
+        "interaction_detection": "not_performed",
+        "biological_validation": "not_performed",
+        "physical_radius_model": "not_used",
+        "pbc": false,
+        "waters": "excluded",
+        "bioassembly": "not_constructed"
+      }
+    },
+    {
+      "host_tracking": true,
+      "valid": true,
+      "receptor_groups": 19,
+      "excluded_sites": 153,
+      "query_site_offset": 5,
+      "collision_targets": {
+        "receptor_source_atom_index": 394,
+        "ligand_atom_index": 3,
+        "translation": {
+          "manifest": {
+            "format": "qrec/0.3",
+            "field": null,
+            "unit": "nanometer",
+            "si": {
+              "factor": 1e-09,
+              "offset": 0.0,
+              "exponents": {
+                "m": 1
+              }
+            },
+            "dtype": "float64",
+            "shape": [
+              1,
+              1,
+              3
+            ],
+            "blocks": [
+              3
+            ]
+          },
+          "values": [
+            [
+              [
+                0.001200000000000756,
+                0.17149999999999999,
+                0.19450000000000012
+              ]
+            ]
+          ],
+          "block_digests": [
+            "blake2b-128:5e3246204a853ae352792b438c9dd021"
+          ],
+          "digest": "blake2b-128:e4ace51d618348058f0f1febef1673ae"
+        }
+      },
+      "outcomes": {
+        "unexcluded_reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "unexcluded_collision": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "collision": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "clashes": [
+            {
+              "site_index": 49,
+              "atom_index": 3
+            }
+          ],
+          "assignments": 5
+        },
+        "wide_radius_reference": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "clashes": [
+            {
+              "site_index": 47,
+              "atom_index": 3
+            },
+            {
+              "site_index": 48,
+              "atom_index": 3
+            },
+            {
+              "site_index": 49,
+              "atom_index": 3
+            },
+            {
+              "site_index": 61,
+              "atom_index": 4
+            },
+            {
+              "site_index": 65,
+              "atom_index": 3
+            },
+            {
+              "site_index": 92,
+              "atom_index": 3
+            },
+            {
+              "site_index": 138,
+              "atom_index": 18
+            },
+            {
+              "site_index": 140,
+              "atom_index": 18
+            },
+            {
+              "site_index": 142,
+              "atom_index": 18
+            },
+            {
+              "site_index": 143,
+              "atom_index": 18
+            },
+            {
+              "site_index": 146,
+              "atom_index": 18
+            },
+            {
+              "site_index": 148,
+              "atom_index": 18
+            }
+          ],
+          "assignments": 5
+        },
+        "reloaded_reference": {
+          "status": "matched",
+          "fit_value": 1.0,
+          "clashes": [],
+          "assignments": 5
+        },
+        "reloaded_collision": {
+          "status": "not_matched",
+          "fit_value": 1.0,
+          "clashes": [
+            {
+              "site_index": 49,
+              "atom_index": 3
+            }
+          ],
+          "assignments": 5
+        }
+      },
+      "source_unchanged": true,
+      "ligand_unchanged": true,
+      "heavy_pose_preserved": true,
+      "query_metadata_preserved": true,
+      "citation_items": 15,
+      "citation_uses": 39,
+      "policy": {
+        "reference_frame": "unchanged deposited 1QKU heavy pose",
+        "positive_radius": "0.4 nm analytical collision control",
+        "excluded_radius": "0.1 nm caller choice",
+        "sensitivity_radius": "0.35 nm caller choice",
+        "receptor_chemistry": "not_prepared",
+        "interaction_detection": "not_performed",
+        "biological_validation": "not_performed",
+        "physical_radius_model": "not_used",
+        "pbc": false,
+        "waters": "excluded",
+        "bioassembly": "not_constructed"
+      }
+    }
+  ]
+}

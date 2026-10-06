@@ -1,0 +1,7 @@
+# Preserve checksum-qualified scientific inputs and original evidence bytes.
+tests/data/** -text
+devguide/evidence/** -text
+
+# Source CIF formatting and original logs deliberately retain whitespace.
+tests/data/eralpha_rcsb/*.cif whitespace=-trailing-space,-blank-at-eof
+devguide/evidence/*.log whitespace=-trailing-space,-blank-at-eof

@@ -1,0 +1,222 @@
+{
+  "schema": "pharmacophoremt.eralpha_hydrogen_validation@1",
+  "recorded_utc": "2026-10-03T19:56:33.522706+00:00",
+  "python": "3.14.7",
+  "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+  "producers": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+92.g228355a.dirty",
+      "python_source_sha256": "6f84fbb779433a3b8748800b1c0668c4dd477ee97fbd1247df910d265fa03b69",
+      "python_file_count": 126
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+24.g42b487869",
+      "python_source_sha256": "a6a2976730ed6460908a3ddb9f7739175066c3bdec6c01e1596a6f326ca9ca92",
+      "python_file_count": 2815
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.27.0",
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+      "python_file_count": 77
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "version": "0.8.0+52.g15b1958.dirty",
+      "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+      "python_file_count": 62
+    }
+  },
+  "inputs": {
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+    "tests/data/prepared_ccd/manifest.json": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+    "devtools/prepare_eralpha_ligand.py": "67964fbd2708577c07dfb98a9c9304df955565bc5d073b1467c4ab7d23eac3e3",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/validate_eralpha_template.py": "a71d50a5c16e6c9f983a27f49bd0d3cdafab13dca91adab15dfe8309705e8e55",
+    "devtools/validate_eralpha_hydrogens.py": "872f0eb7b41df74154ac023883cd2d404df090e78b4a439da0fcf8fd61567cec",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038",
+    "devtools/benchmark_rigid_consensus.py": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08"
+  },
+  "producers_and_inputs_unchanged": true,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "rdkit": "2025.9.5",
+    "argdigest": "0.13.0+16.g68a506e",
+    "depdigest": "0.12.0+13.g104661a",
+    "smonitor": "0.18.0+1.gb308ee0"
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+    }
+  ],
+  "valid": true,
+  "scope": "generated local H on an observed heavy pose; no receptor/energy/biological acceptance or performance measurements",
+  "full_evidence": {
+    "path": "eralpha_hydrogens_py314.json.gz",
+    "uncompressed_sha256": "8c3c176c85f5f578ba6f7ccd850cf67c1ee3256417e898663e741c680c3e97e8",
+    "compressed_sha256": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "uncompressed_bytes": 7215117,
+    "compressed_bytes": 382412
+  },
+  "runs": [
+    {
+      "tracking": false,
+      "valid": true,
+      "scientific_sha256": "905659f390548a84079896ce1f48deb4783ce0da6554ee2f706da216ea416798",
+      "counts": {
+        "n_atoms": 44,
+        "n_bonds": 47,
+        "n_structures": 1
+      },
+      "feature_counts": {
+        "hydrophobicity": 9,
+        "hb donor": 2,
+        "hb acceptor": 2,
+        "aromatic ring": 1
+      },
+      "n_added_hydrogens": 24,
+      "dropped_attributes": [
+        "b_factor"
+      ],
+      "heavy_coordinates_preserved": true,
+      "input_unchanged": true,
+      "placed": {
+        "positive": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "displaced_negative": {
+          "status": "not_matched",
+          "fit_value": 0.0
+        },
+        "reversed_normal": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "orthogonal_normal_negative": {
+          "status": "not_matched",
+          "fit_value": 0.8
+        },
+        "roundtrip": {
+          "status": "matched",
+          "fit_value": 1.0
+        }
+      },
+      "donor_controls": {
+        "heavy_only": {
+          "status": "not_matched",
+          "fit_value": 0.6
+        },
+        "reversed_donor_direction": {
+          "status": "not_matched",
+          "fit_value": 0.8
+        }
+      },
+      "persistence": {
+        "chemical_values_preserved": true,
+        "coordinates_preserved": true,
+        "query_metadata_preserved": true
+      },
+      "recovery": {
+        "final": {
+          "n_placements": 1,
+          "n_fits": 3,
+          "max_matches": 5
+        },
+        "each_step": {
+          "n_placements": 1,
+          "n_fits": 3,
+          "max_matches": 5
+        }
+      },
+      "bibliographic_items": 4,
+      "contextual_uses": 13
+    },
+    {
+      "tracking": true,
+      "valid": true,
+      "scientific_sha256": "905659f390548a84079896ce1f48deb4783ce0da6554ee2f706da216ea416798",
+      "counts": {
+        "n_atoms": 44,
+        "n_bonds": 47,
+        "n_structures": 1
+      },
+      "feature_counts": {
+        "hydrophobicity": 9,
+        "hb donor": 2,
+        "hb acceptor": 2,
+        "aromatic ring": 1
+      },
+      "n_added_hydrogens": 24,
+      "dropped_attributes": [
+        "b_factor"
+      ],
+      "heavy_coordinates_preserved": true,
+      "input_unchanged": true,
+      "placed": {
+        "positive": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "displaced_negative": {
+          "status": "not_matched",
+          "fit_value": 0.0
+        },
+        "reversed_normal": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "orthogonal_normal_negative": {
+          "status": "not_matched",
+          "fit_value": 0.8
+        },
+        "roundtrip": {
+          "status": "matched",
+          "fit_value": 1.0
+        }
+      },
+      "donor_controls": {
+        "heavy_only": {
+          "status": "not_matched",
+          "fit_value": 0.6
+        },
+        "reversed_donor_direction": {
+          "status": "not_matched",
+          "fit_value": 0.8
+        }
+      },
+      "persistence": {
+        "chemical_values_preserved": true,
+        "coordinates_preserved": true,
+        "query_metadata_preserved": true
+      },
+      "recovery": {
+        "final": {
+          "n_placements": 1,
+          "n_fits": 3,
+          "max_matches": 5
+        },
+        "each_step": {
+          "n_placements": 1,
+          "n_fits": 3,
+          "max_matches": 5
+        }
+      },
+      "bibliographic_items": 17,
+      "contextual_uses": 79
+    }
+  ]
+}

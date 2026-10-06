@@ -1,0 +1,1366 @@
+{
+  "recorded_at_utc": "2026-10-03T11:20:35.631757+00:00",
+  "fixture_file": "/home/diego/repos@uibcdf/pharmacophoremt/tests/data/ranked_seed_cases.json",
+  "fixture_file_sha256": "76c030fc10b0399eba2426593ad137d1e03dc3199b95fe30c8a0e9a6d5e31110",
+  "driver_sha256": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08",
+  "case_builder_sha256": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+  "source_head": "228355a70a691c7594244189a3bed4acc437c8c2",
+  "source_working_state": "M .github/workflows/CI.yaml\n M .github/workflows/molsyssuite-policy.yml\n M ACKREDIT_GUIDE.md\n M AGENTS.md\n M MOLSYSSUITE_GUIDE.md\n M README.md\n M devguide/archive/complex_pdb_feature_recovery.md\n M devguide/checkpoint.md\n M devguide/classical_workflow.md\n M devguide/core_architecture.md\n M devguide/modeling_strategies.md\n M devguide/pending_bugs/README.md\n M devguide/pending_proposals/README.md\n M devguide/pending_proposals/review_python_ecosystem_policy_adoption.md\n M devguide/roadmap.md\n M devtools/ci_backlog.py\n M devtools/conda-build/meta.yaml\n M devtools/conda-build/release_plan.example.toml\n M devtools/conda-build/resources.toml\n M devtools/conda-envs/test_env_py313.yaml\n M devtools/requirements.yaml\n M devtools/requirements/controlled_suite_dependencies.txt\n M docs/content/user/index.md\n M docs/index.ipynb\n M pharmacophoremt/__init__.py\n M pharmacophoremt/_depdigest.py\n M pharmacophoremt/_private/arg_digestion/argument/center.py\n M pharmacophoremt/_private/arg_digestion/argument/direction.py\n M pharmacophoremt/_private/arg_digestion/argument/end.py\n M pharmacophoremt/_private/arg_digestion/argument/features.py\n M pharmacophoremt/_private/arg_digestion/argument/normal.py\n M pharmacophoremt/_private/arg_digestion/argument/position.py\n M pharmacophoremt/_private/arg_digestion/argument/radius.py\n M pharmacophoremt/_private/arg_digestion/argument/sigma.py\n M pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py\n M pharmacophoremt/_private/arg_digestion/argument/start.py\n M pharmacophoremt/_private/smonitor/catalog.py\n M pharmacophoremt/_private/smonitor/emitter.py\n M pharmacophoremt/_private/smonitor/exceptions.py\n M pharmacophoremt/_smonitor.py\n M pharmacophoremt/data/README.md\n M pharmacophoremt/interaction_site/interaction_site.py\n M pharmacophoremt/interaction_site/shape/disk.py\n M pharmacophoremt/interaction_site/shape/sphere_and_vector.py\n M pharmacophoremt/io/phmt/__init__.py\n M pharmacophoremt/modeler/__init__.py\n M pharmacophoremt/modeler/dispatcher.py\n M pharmacophoremt/pharmacophore.py\n M pharmacophoremt/screening/__init__.py\n M pharmacophoremt/screening/virtual_screening.py\n M pharmacophoremt/validation/__init__.py\n M pharmacophoremt/validation/metrics.py\n M pharmacophoremt/validation/retrospective.py\n M pyproject.toml\n M tests/test_ci_backlog.py\n M tests/test_ci_routes.py\n M tests/test_molsysviewer_pharmacophoremt_addon.py\n M tests/test_reporting_protocol.py\n M tests/test_validation_eralpha.py\n?? devguide/aligned_clique_consensus_workflow.md\n?? devguide/aligned_consensus_workflow.md\n?? devguide/clique_consensus_review.md\n?? devguide/conformer_screening_workflow.md\n?? devguide/eralpha_validation.md\n?? devguide/evidence/\n?? devguide/extensible_modeling_contracts.md\n?? devguide/pending_bugs/catalog_diagnostic_rendering.md\n?? devguide/pending_bugs/legacy_clique_consensus.md\n?? devguide/pending_bugs/provenance_strings_interpreted_as_quantities.md\n?? devguide/pending_bugs/ranking_and_retrospective_accounting.md\n?? devguide/pending_bugs/zero_angle_roundoff.md\n?? devguide/pending_proposals/adopt_required_python_314.md\n?? devguide/pending_proposals/g3ps_ranked_seed_tools.md\n?? devguide/pending_proposals/modular_rigid_strategy_comparison.md\n?? devguide/pending_proposals/molsysmt_placed_pose_workflow.md\n?? devguide/pending_proposals/native_ackredit_attribution.md\n?? devguide/pending_proposals/native_aligned_clique_consensus.md\n?? devguide/pending_proposals/native_aligned_consensus.md\n?? devguide/pending_proposals/native_conformer_screening.md\n?? devguide/pending_proposals/native_eralpha_validation.md\n?? devguide/pending_proposals/native_reference_ligand_workflow.md\n?? devguide/pending_proposals/native_rigid_consensus.md\n?? devguide/pending_proposals/native_rigid_pose_search.md\n?? devguide/pending_proposals/validation_benchmark_publication.md\n?? devguide/pharmacophore_search_strategies.md\n?? devguide/placed_pose_workflow.md\n?? devguide/ranked_seed_workflow.md\n?? devguide/reference_ligand_workflow.md\n?? devguide/rigid_consensus_workflow.md\n?? devguide/rigid_search_workflow.md\n?? devguide/rigid_strategy_comparison.md\n?? devtools/audit_eralpha.py\n?? devtools/audit_eralpha_sources.py\n?? devtools/audit_legacy_cliques.py\n?? devtools/benchmark_rigid_consensus.py\n?? devtools/conda-envs/test_env_py314.yaml\n?? devtools/requirements/controlled_suite_dependencies_py314.txt\n?? devtools/rigid_consensus_cases.py\n?? docs/content/cookbook/\n?? pharmacophoremt/_ackredit.py\n?? pharmacophoremt/_private/arg_digestion/argument/_contracts.py\n?? pharmacophoremt/_private/molsysmt.py\n?? pharmacophoremt/_private/pose_batch.py\n?? pharmacophoremt/_private/references.py\n?? pharmacophoremt/_private/smonitor/warnings.py\n?? pharmacophoremt/_private/viewer.py\n?? pharmacophoremt/attribution.py\n?? pharmacophoremt/modeler/aligned_cliques.py\n?? pharmacophoremt/modeler/aligned_consensus.py\n?? pharmacophoremt/modeler/features.py\n?? pharmacophoremt/modeler/interaction_based.py\n?? pharmacophoremt/modeler/reference_ligand.py\n?? pharmacophoremt/modeler/rigid_consensus.py\n?? pharmacophoremt/screening/alignment.py\n?? pharmacophoremt/screening/conformer_screening.py\n?? pharmacophoremt/screening/correspondence.py\n?? pharmacophoremt/screening/feature_neighborhoods.py\n?? pharmacophoremt/screening/pose_evaluation.py\n?? pharmacophoremt/screening/rigid_correspondence.py\n?? pharmacophoremt/screening/rigid_placements.py\n?? pharmacophoremt/screening/rigid_search.py\n?? pharmacophoremt/validation/rigid_consensus.py\n?? tests/data/eralpha_audit.json\n?? tests/data/eralpha_rcsb/\n?? tests/data/ranked_seed_cases.json\n?? tests/data/rigid_consensus_cases.json\n?? tests/test_aligned_cliques.py\n?? tests/test_aligned_consensus.py\n?? tests/test_attribution.py\n?? tests/test_conformer_screening.py\n?? tests/test_contracts.py\n?? tests/test_modular_rigid_tools.py\n?? tests/test_pose_evaluation.py\n?? tests/test_ranked_seeds.py\n?? tests/test_reference_ligand.py\n?? tests/test_retrospective.py\n?? tests/test_rigid_consensus.py\n?? tests/test_rigid_search.py\n?? tests/test_rigid_strategy_comparison.py\n?? tests/test_validation_metrics.py",
+  "repetitions": 3,
+  "warmups": 1,
+  "worker_timeout_seconds": 120,
+  "strategies": [
+    "triplet_seeds",
+    "ranked_triplet_seeds"
+  ],
+  "fixture_scope": "analytical fragment controls; not biological validation or a universal strategy ranking",
+  "schema": "pharmacophoremt.rigid_strategy_comparison_summary@1",
+  "full_evidence": {
+    "path": "ranked_seeds_py314.json.gz",
+    "compression": "gzip",
+    "compressed_sha256": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "uncompressed_sha256": "904d6ae6464e4bb4bf2c0088330b083099f4174849e88f351060462c8aab5d46"
+  },
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 20,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "RAYON_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "molsysmt_policy": {
+      "parallel": false,
+      "num_threads": 1
+    },
+    "packages": {
+      "pharmacophoremt": {
+        "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+92.g228355a.dirty",
+        "python_source_sha256": "1265a7a7806733e40fda7a8e59d95e972b30182beb0ea75beae1f563f2710674",
+        "python_file_count": 124
+      },
+      "molsysmt": {
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+24.g42b487869",
+        "python_source_sha256": "4ead1ecefadc545a4b1df5bf5a159f9f887cb9a4da33ad87c02412a5a29cf816",
+        "python_file_count": 2801
+      },
+      "pyunitwizard": {
+        "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.27.0",
+        "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+        "python_file_count": 77
+      },
+      "ackredit": {
+        "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+        "version": "0.8.0+52.g15b1958.dirty",
+        "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+        "python_file_count": 62
+      }
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.1",
+      "networkx": "3.7"
+    },
+    "molecular_extensions": [
+      {
+        "module": "molsysmt._rust",
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+      }
+    ]
+  },
+  "provider_source_and_extension_hashes_identical_across_workers": true,
+  "records": [
+    {
+      "case_id": "rigid_typed_5",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "97bf609e8a3012381bcbac5ae05f6ffe9b8607141b4c28d2495bde2dd18d12f6",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 5,
+              "n_proposals": 11,
+              "proposal_counts": {
+                "n_trials": 17,
+                "n_pruned": 6
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 11,
+              "n_accepted_placements": 7,
+              "n_rejected_placements": 4,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 11,
+          "n_layouts": 7,
+          "n_models": 7,
+          "max_joint_sites": 5
+        }
+      },
+      "scientific_output_sha256": "2ee25029b53ffef28e3c76e7452d00ab4b2ab5b9744d559f25ccf247049aee7a",
+      "timing": {
+        "samples_seconds": [
+          6.502805222757161,
+          6.411808226257563,
+          6.412477288395166
+        ],
+        "median_seconds": 6.412477288395166,
+        "min_seconds": 6.411808226257563,
+        "max_seconds": 6.502805222757161,
+        "warmup_call_seconds": [
+          6.709127608686686
+        ],
+        "imports_and_fixture_seconds": 4.724321375600994,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 553562112,
+        "process_lifetime_peak_rss_bytes_after_measurements": 554217472,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "rigid_typed_5",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "97bf609e8a3012381bcbac5ae05f6ffe9b8607141b4c28d2495bde2dd18d12f6",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 5,
+        "n_models": 1
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 5,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_trials": 17,
+                "n_pruned": 6,
+                "n_ranked_seeds": 1,
+                "n_omitted_seeds": 10
+              },
+              "proposal_selection_exhaustive": false,
+              "n_fits": 1,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "max_joint_sites": 5
+        }
+      },
+      "scientific_output_sha256": "aff7d308decc6db2efa7705450ad66d1ec4289280ae64fbe336af2972cc5ea88",
+      "timing": {
+        "samples_seconds": [
+          1.3299938645213842,
+          1.3183828825131059,
+          1.319617566652596
+        ],
+        "median_seconds": 1.319617566652596,
+        "min_seconds": 1.3183828825131059,
+        "max_seconds": 1.3299938645213842,
+        "warmup_call_seconds": [
+          1.398397445678711
+        ],
+        "imports_and_fixture_seconds": 4.625189087353647,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549249024,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549576704,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "reflection_typed_5",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "6c5bedb8c2b623ec0a31ac3dd9b84bbd1ae5424bb6f47ab2aeab46b32ede1cf9",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 5,
+              "n_proposals": 11,
+              "proposal_counts": {
+                "n_trials": 17,
+                "n_pruned": 6
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 11,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 11,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 11,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "scientific_output_sha256": "2ccb25b22d72d7678d6f7e0de1e57e773884729ebb743220fb4c2ef7373b1608",
+      "timing": {
+        "samples_seconds": [
+          3.6886438131332397,
+          3.6617410266771913,
+          3.5944006964564323
+        ],
+        "median_seconds": 3.6617410266771913,
+        "min_seconds": 3.5944006964564323,
+        "max_seconds": 3.6886438131332397,
+        "warmup_call_seconds": [
+          3.855544961988926
+        ],
+        "imports_and_fixture_seconds": 4.63302462734282,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549122048,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549449728,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "reflection_typed_5",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "6c5bedb8c2b623ec0a31ac3dd9b84bbd1ae5424bb6f47ab2aeab46b32ede1cf9",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 5,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_trials": 17,
+                "n_pruned": 6,
+                "n_ranked_seeds": 1,
+                "n_omitted_seeds": 10
+              },
+              "proposal_selection_exhaustive": false,
+              "n_fits": 1,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 1,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "scientific_output_sha256": "961dd03b2a756478fc17d3f78defa7fe9eaa35c2eada91a8ff18e4f232f0ed42",
+      "timing": {
+        "samples_seconds": [
+          0.8696153648197651,
+          0.8730740193277597,
+          0.8703491725027561
+        ],
+        "median_seconds": 0.8703491725027561,
+        "min_seconds": 0.8696153648197651,
+        "max_seconds": 0.8730740193277597,
+        "warmup_call_seconds": [
+          1.030206217430532
+        ],
+        "imports_and_fixture_seconds": 4.451572441495955,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 548933632,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549097472,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "symmetric_3",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "3180fc6d72da2e8decdaf18e963fa40b6cf683d7f2075b7bbf6edf57e78ab083",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 6
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 3,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 3,
+              "n_proposals": 6,
+              "proposal_counts": {
+                "n_trials": 27,
+                "n_pruned": 21
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 6,
+              "n_accepted_placements": 6,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "max_joint_sites": 3
+        }
+      },
+      "scientific_output_sha256": "c540e40c734b1724390238cb5f22ec3c2cb67e7312f424c5c6fc31a4e88c0957",
+      "timing": {
+        "samples_seconds": [
+          2.5222353637218475,
+          2.6239501778036356,
+          2.55456945579499
+        ],
+        "median_seconds": 2.55456945579499,
+        "min_seconds": 2.5222353637218475,
+        "max_seconds": 2.6239501778036356,
+        "warmup_call_seconds": [
+          2.5379117177799344
+        ],
+        "imports_and_fixture_seconds": 4.458919723518193,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549597184,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550416384,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "symmetric_3",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "3180fc6d72da2e8decdaf18e963fa40b6cf683d7f2075b7bbf6edf57e78ab083",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 1
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 3,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 3,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_trials": 27,
+                "n_pruned": 21,
+                "n_ranked_seeds": 1,
+                "n_omitted_seeds": 5
+              },
+              "proposal_selection_exhaustive": false,
+              "n_fits": 1,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "max_joint_sites": 3
+        }
+      },
+      "scientific_output_sha256": "32dc6ee47669494a0f916a38cfc77cb0a145f93bd37bbb5615922e2b998025bb",
+      "timing": {
+        "samples_seconds": [
+          0.622409182600677,
+          0.6258385144174099,
+          0.6399802332744002
+        ],
+        "median_seconds": 0.6258385144174099,
+        "min_seconds": 0.622409182600677,
+        "max_seconds": 0.6399802332744002,
+        "warmup_call_seconds": [
+          0.6450526174157858
+        ],
+        "imports_and_fixture_seconds": 4.4428997011855245,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 547553280,
+        "process_lifetime_peak_rss_bytes_after_measurements": 547717120,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "warped_square",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "02c006635c033c0cb776dd067bdebc2e78f159c00a12dc7c196213e82ec3b930",
+      "parameters": {
+        "features": [
+          "positive charge",
+          "hb acceptor"
+        ],
+        "distance_tolerance": "0.10 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 16
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 4,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 4,
+              "n_proposals": 16,
+              "proposal_counts": {
+                "n_trials": 32,
+                "n_pruned": 16
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 16,
+              "n_accepted_placements": 16,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 0.75
+            }
+          ],
+          "n_fits": 16,
+          "n_layouts": 16,
+          "n_models": 16,
+          "max_joint_sites": 3
+        }
+      },
+      "scientific_output_sha256": "6bf6a6b383bbd4c698a2947ef9784148c97605ce0dd905696225e7701e8da86e",
+      "timing": {
+        "samples_seconds": [
+          8.658340698108077,
+          9.134248078800738,
+          9.009821624495089
+        ],
+        "median_seconds": 9.009821624495089,
+        "min_seconds": 8.658340698108077,
+        "max_seconds": 9.134248078800738,
+        "warmup_call_seconds": [
+          8.40833776537329
+        ],
+        "imports_and_fixture_seconds": 4.48245975933969,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 556404736,
+        "process_lifetime_peak_rss_bytes_after_measurements": 557387776,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "warped_square",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "02c006635c033c0cb776dd067bdebc2e78f159c00a12dc7c196213e82ec3b930",
+      "parameters": {
+        "features": [
+          "positive charge",
+          "hb acceptor"
+        ],
+        "distance_tolerance": "0.10 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 1
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 4,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 4,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_trials": 32,
+                "n_pruned": 16,
+                "n_ranked_seeds": 1,
+                "n_omitted_seeds": 15
+              },
+              "proposal_selection_exhaustive": false,
+              "n_fits": 1,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 0.75
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "max_joint_sites": 3
+        }
+      },
+      "scientific_output_sha256": "6e95fcdf8c29c25991ffc9cf0a4cd872a9a5d5f73e5d642fbf0136674f4b0725",
+      "timing": {
+        "samples_seconds": [
+          0.9128508772701025,
+          0.9101369855925441,
+          0.9129973277449608
+        ],
+        "median_seconds": 0.9128508772701025,
+        "min_seconds": 0.9101369855925441,
+        "max_seconds": 0.9129973277449608,
+        "warmup_call_seconds": [
+          1.0680807083845139
+        ],
+        "imports_and_fixture_seconds": 4.5850248066708446,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 548749312,
+        "process_lifetime_peak_rss_bytes_after_measurements": 548913152,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "empty_source",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "004ad2ed2bea3e567eb358b0a20655a15e0abc78965ce8ccda3377a455af3611",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 0,
+              "n_proposals": 0,
+              "proposal_counts": {
+                "n_trials": 0,
+                "n_pruned": 0
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 0,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 0,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "scientific_output_sha256": "c4da34901423261d13e6b89fe4fb9779a533fccd95ead0d0f99fd1d9604f4bbe",
+      "timing": {
+        "samples_seconds": [
+          0.5473512867465615,
+          0.5378977907821536,
+          0.5736266421154141
+        ],
+        "median_seconds": 0.5473512867465615,
+        "min_seconds": 0.5378977907821536,
+        "max_seconds": 0.5736266421154141,
+        "warmup_call_seconds": [
+          0.6229608952999115
+        ],
+        "imports_and_fixture_seconds": 4.521699722856283,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 474005504,
+        "process_lifetime_peak_rss_bytes_after_measurements": 474005504,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "empty_source",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "004ad2ed2bea3e567eb358b0a20655a15e0abc78965ce8ccda3377a455af3611",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 0,
+              "n_proposals": 0,
+              "proposal_counts": {
+                "n_trials": 0,
+                "n_pruned": 0,
+                "n_ranked_seeds": 0,
+                "n_omitted_seeds": 0
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 0,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 0,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "scientific_output_sha256": "5977f9e4b708963ea0ee935abab36d038591398a9edf3f68f3dbda983919a221",
+      "timing": {
+        "samples_seconds": [
+          0.559900427237153,
+          0.5390404844656587,
+          0.5394019288942218
+        ],
+        "median_seconds": 0.5394019288942218,
+        "min_seconds": 0.5390404844656587,
+        "max_seconds": 0.559900427237153,
+        "warmup_call_seconds": [
+          0.6424406748265028
+        ],
+        "imports_and_fixture_seconds": 4.687485367059708,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 474017792,
+        "process_lifetime_peak_rss_bytes_after_measurements": 474017792,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "fit_budget_failure",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "c4391773eebb0b1fd1f35cb53eb02e3d6c9116a34b00e6d69d77a8b3fe0a3e14",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "max_fits": 1
+      },
+      "expected": {
+        "status": "failed",
+        "error_code": "PHMT-E107"
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "failed",
+        "error_type": "CliqueLimitError",
+        "error_code": "PHMT-E107",
+        "error_message": "Clique consensus requires 6 scheduled fits at stage 'rigid_alignment', exceeding its limit of 1; hypothesis discovery remains unresolved.",
+        "error_context": {
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "api_url": "",
+          "stage": "rigid_alignment",
+          "resource": "scheduled fits",
+          "observed": 6,
+          "limit": 1,
+          "complete": false
+        }
+      },
+      "scientific_output_sha256": "244b10542d9d82ca6368b266a4319b928ad4b904e7be9603271c4c34310b2a67",
+      "timing": {
+        "samples_seconds": [
+          0.09277896024286747,
+          0.10089085530489683,
+          0.09231797233223915
+        ],
+        "median_seconds": 0.09277896024286747,
+        "min_seconds": 0.09231797233223915,
+        "max_seconds": 0.10089085530489683,
+        "warmup_call_seconds": [
+          0.114521199837327
+        ],
+        "imports_and_fixture_seconds": 4.48134795576334,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 546881536,
+        "process_lifetime_peak_rss_bytes_after_measurements": 546881536,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": null
+    },
+    {
+      "case_id": "fit_budget_failure",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "c4391773eebb0b1fd1f35cb53eb02e3d6c9116a34b00e6d69d77a8b3fe0a3e14",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "max_fits": 1,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 1
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 3,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 3,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_trials": 27,
+                "n_pruned": 21,
+                "n_ranked_seeds": 1,
+                "n_omitted_seeds": 5
+              },
+              "proposal_selection_exhaustive": false,
+              "n_fits": 1,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "max_joint_sites": 3
+        }
+      },
+      "scientific_output_sha256": "479ed49aa34b0bcb0283961937cb727b4d837139ab3bd20f904e76cd3531b46d",
+      "timing": {
+        "samples_seconds": [
+          0.6268713688477874,
+          0.6235124971717596,
+          0.6231591589748859
+        ],
+        "median_seconds": 0.6235124971717596,
+        "min_seconds": 0.6231591589748859,
+        "max_seconds": 0.6268713688477874,
+        "warmup_call_seconds": [
+          0.6448954390361905
+        ],
+        "imports_and_fixture_seconds": 4.552613262087107,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 547463168,
+        "process_lifetime_peak_rss_bytes_after_measurements": 547627008,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "ranked_reflection_false_negative",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "28167484095d30b0cf1a6568d02b280dca9ab7dccac55ec2e56bce57fcc40cd7",
+      "parameters": {
+        "features": [
+          "positive charge",
+          "negative charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 4,
+        "min_sites": 4
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 4,
+        "n_models": 8
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 4,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 4,
+              "n_proposals": 16,
+              "proposal_counts": {
+                "n_trials": 32,
+                "n_pruned": 16
+              },
+              "proposal_selection_exhaustive": true,
+              "n_fits": 16,
+              "n_accepted_placements": 8,
+              "n_rejected_placements": 8,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 16,
+          "n_layouts": 8,
+          "n_models": 8,
+          "max_joint_sites": 4
+        }
+      },
+      "scientific_output_sha256": "cb8b690fe6216d1b1f14e876fb087ff7f9defdd2c03003c8ef7417308e36e1be",
+      "timing": {
+        "samples_seconds": [
+          5.22182344738394,
+          5.314592717215419,
+          5.148554059676826
+        ],
+        "median_seconds": 5.22182344738394,
+        "min_seconds": 5.148554059676826,
+        "max_seconds": 5.314592717215419,
+        "warmup_call_seconds": [
+          5.352173425257206
+        ],
+        "imports_and_fixture_seconds": 4.4077712167054415,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 551702528,
+        "process_lifetime_peak_rss_bytes_after_measurements": 552685568,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "ranked_reflection_false_negative",
+      "strategy": "ranked_triplet_seeds",
+      "fixture_sha256": "28167484095d30b0cf1a6568d02b280dca9ab7dccac55ec2e56bce57fcc40cd7",
+      "parameters": {
+        "features": [
+          "positive charge",
+          "negative charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 4,
+        "min_sites": 4,
+        "n_seeds": 1
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0,
+        "n_models": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 4,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "proposal_selection_exhaustive": null,
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 4,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_trials": 32,
+                "n_pruned": 16,
+                "n_ranked_seeds": 1,
+                "n_omitted_seeds": 15
+              },
+              "proposal_selection_exhaustive": false,
+              "n_fits": 1,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 1,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "scientific_output_sha256": "bc85e0d958d3e15dceba711d870b58aaa1ec5a869571c733067e715257eba324",
+      "timing": {
+        "samples_seconds": [
+          0.42793734185397625,
+          0.43133285921067,
+          0.4305050587281585
+        ],
+        "median_seconds": 0.4305050587281585,
+        "min_seconds": 0.42793734185397625,
+        "max_seconds": 0.43133285921067,
+        "warmup_call_seconds": [
+          0.5494065266102552
+        ],
+        "imports_and_fixture_seconds": 4.362464481033385,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 546979840,
+        "process_lifetime_peak_rss_bytes_after_measurements": 547143680,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "attribution_status": "captured"
+    }
+  ]
+}

@@ -54,6 +54,7 @@ class VirtualScreening:
         self.direction_tolerance = float(direction_tolerance)
         self._conformer_generator = ConformerGenerator(n_conformers=n_conformers)
         self.matches = []
+        self.evaluations = []
 
         # Pre-compute excluded volume data for speed
         self._ev_centers = []  # list of ndarray (3,) in nm
@@ -157,7 +158,7 @@ class VirtualScreening:
                     return True
         return False
 
-    def _match_conformer(self, mol, conf_id):
+    def _match_conformer(self, mol, conf_id, return_details=False):
         """Evaluate one conformer against the pharmacophore.
 
         Returns the Fit Value (float) if the molecule passes all criteria,
@@ -205,7 +206,15 @@ class VirtualScreening:
             if (essential_matched / essential_weight) < self.min_match_ratio:
                 return None
 
-        return matched_weight / total_weight
+        fit_value = matched_weight / total_weight
+        if return_details:
+            return {
+                "fit_value": fit_value,
+                "essential_match_ratio": essential_matched / essential_weight
+                if essential_weight > 0
+                else 1.0,
+            }
+        return fit_value
 
     # ------------------------------------------------------------------
     # Public API
@@ -229,37 +238,69 @@ class VirtualScreening:
             ``'mol'``, ``'fit_value'``, ``'conf_id'``, ``'rd_mol'``.
         """
         self.matches = []
+        self.evaluations = []
 
-        for mol_system in molecular_database:
+        for input_index, mol_system in enumerate(molecular_database):
+            stage = "conversion"
             try:
                 if isinstance(mol_system, Chem.Mol):
                     rd_mol = mol_system
                 else:
                     rd_mol = msm.convert(mol_system, to_form="rdkit.Mol")
-            except Exception:
+                if rd_mol is None:
+                    raise ValueError("MolSysMT returned no molecule")
+                stage = "conformers"
+                if rd_mol.GetNumConformers() == 0:
+                    rd_mol = self._conformer_generator.generate(rd_mol)
+                if rd_mol.GetNumConformers() == 0:
+                    raise ValueError("No conformer available after preparation")
+                stage = "matching"
+                best_fit, best_conf = None, 0
+                maximum_essential_ratio = 0.0
+                for conf_id in range(rd_mol.GetNumConformers()):
+                    details = self._match_conformer(
+                        rd_mol, conf_id, return_details=True
+                    )
+                    if details is not None:
+                        maximum_essential_ratio = max(
+                            maximum_essential_ratio, details["essential_match_ratio"]
+                        )
+                    if details is not None and (
+                        best_fit is None or details["fit_value"] > best_fit
+                    ):
+                        best_fit, best_conf = (
+                            details["fit_value"],
+                            conf_id,
+                        )
+            except Exception as error:
+                self.evaluations.append(
+                    {
+                        "input_index": input_index,
+                        "status": "failed",
+                        "fit_value": None,
+                        "error": {
+                            "stage": stage,
+                            "cause": type(error).__name__,
+                            "message": str(error),
+                        },
+                    }
+                )
                 continue
 
-            if rd_mol is None:
-                continue
-
-            if rd_mol.GetNumConformers() == 0:
-                rd_mol = self._conformer_generator.generate(rd_mol)
-
-            if rd_mol.GetNumConformers() == 0:
-                continue
-
-            best_fit = None
-            best_conf = 0
-            for conf_id in range(rd_mol.GetNumConformers()):
-                fit = self._match_conformer(rd_mol, conf_id)
-                if fit is not None and (best_fit is None or fit > best_fit):
-                    best_fit = fit
-                    best_conf = conf_id
+            self.evaluations.append(
+                {
+                    "input_index": input_index,
+                    "status": "matched" if best_fit is not None else "not_matched",
+                    "fit_value": best_fit if best_fit is not None else 0.0,
+                    "essential_match_ratio": maximum_essential_ratio,
+                }
+            )
 
             if best_fit is not None:
                 self.matches.append(
                     {
                         "mol": mol_system,
+                        "input_index": input_index,
                         "fit_value": best_fit,
                         "conf_id": best_conf,
                         "rd_mol": rd_mol,

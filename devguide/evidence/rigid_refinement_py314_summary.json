@@ -1,0 +1,396 @@
+{
+  "recorded_at_utc": "2026-10-03T13:16:43.900584+00:00",
+  "scope": "analytical scientific counts and actual attribution; no runtime/memory benchmark or biological claim",
+  "calls": "one uncredited and one attributed call per case/policy; identical scientific outputs required",
+  "fixture_file": "/home/diego/repos@uibcdf/pharmacophoremt/tests/data/rigid_refinement_cases.json",
+  "fixture_sha256": "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7",
+  "driver_sha256": "1982689bac9ae5d08b83fea79996d12ed535e718f4d7fe43f64432506d3dd6ae",
+  "builder_sha256": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17",
+  "source_head": "228355a70a691c7594244189a3bed4acc437c8c2",
+  "source_working_state": "M .github/workflows/CI.yaml\n M .github/workflows/molsyssuite-policy.yml\n M ACKREDIT_GUIDE.md\n M AGENTS.md\n M MOLSYSSUITE_GUIDE.md\n M README.md\n M devguide/archive/complex_pdb_feature_recovery.md\n M devguide/checkpoint.md\n M devguide/classical_workflow.md\n M devguide/core_architecture.md\n M devguide/modeling_strategies.md\n M devguide/pending_bugs/README.md\n M devguide/pending_proposals/README.md\n M devguide/pending_proposals/review_python_ecosystem_policy_adoption.md\n M devguide/roadmap.md\n M devtools/ci_backlog.py\n M devtools/conda-build/meta.yaml\n M devtools/conda-build/release_plan.example.toml\n M devtools/conda-build/resources.toml\n M devtools/conda-envs/test_env_py313.yaml\n M devtools/requirements.yaml\n M devtools/requirements/controlled_suite_dependencies.txt\n M docs/content/user/index.md\n M docs/index.ipynb\n M pharmacophoremt/__init__.py\n M pharmacophoremt/_depdigest.py\n M pharmacophoremt/_private/arg_digestion/argument/center.py\n M pharmacophoremt/_private/arg_digestion/argument/direction.py\n M pharmacophoremt/_private/arg_digestion/argument/end.py\n M pharmacophoremt/_private/arg_digestion/argument/features.py\n M pharmacophoremt/_private/arg_digestion/argument/normal.py\n M pharmacophoremt/_private/arg_digestion/argument/position.py\n M pharmacophoremt/_private/arg_digestion/argument/radius.py\n M pharmacophoremt/_private/arg_digestion/argument/sigma.py\n M pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py\n M pharmacophoremt/_private/arg_digestion/argument/start.py\n M pharmacophoremt/_private/smonitor/catalog.py\n M pharmacophoremt/_private/smonitor/emitter.py\n M pharmacophoremt/_private/smonitor/exceptions.py\n M pharmacophoremt/_smonitor.py\n M pharmacophoremt/data/README.md\n M pharmacophoremt/interaction_site/interaction_site.py\n M pharmacophoremt/interaction_site/shape/disk.py\n M pharmacophoremt/interaction_site/shape/sphere_and_vector.py\n M pharmacophoremt/io/phmt/__init__.py\n M pharmacophoremt/modeler/__init__.py\n M pharmacophoremt/modeler/dispatcher.py\n M pharmacophoremt/pharmacophore.py\n M pharmacophoremt/screening/__init__.py\n M pharmacophoremt/screening/virtual_screening.py\n M pharmacophoremt/validation/__init__.py\n M pharmacophoremt/validation/metrics.py\n M pharmacophoremt/validation/retrospective.py\n M pyproject.toml\n M tests/test_ci_backlog.py\n M tests/test_ci_routes.py\n M tests/test_molsysviewer_pharmacophoremt_addon.py\n M tests/test_reporting_protocol.py\n M tests/test_validation_eralpha.py\n?? devguide/aligned_clique_consensus_workflow.md\n?? devguide/aligned_consensus_workflow.md\n?? devguide/clique_consensus_review.md\n?? devguide/conformer_screening_workflow.md\n?? devguide/eralpha_validation.md\n?? devguide/evidence/\n?? devguide/extensible_modeling_contracts.md\n?? devguide/pending_bugs/catalog_diagnostic_rendering.md\n?? devguide/pending_bugs/legacy_clique_consensus.md\n?? devguide/pending_bugs/provenance_strings_interpreted_as_quantities.md\n?? devguide/pending_bugs/ranking_and_retrospective_accounting.md\n?? devguide/pending_bugs/zero_angle_roundoff.md\n?? devguide/pending_proposals/adopt_required_python_314.md\n?? devguide/pending_proposals/g3ps_ranked_seed_tools.md\n?? devguide/pending_proposals/modular_rigid_strategy_comparison.md\n?? devguide/pending_proposals/molsysmt_placed_pose_workflow.md\n?? devguide/pending_proposals/native_ackredit_attribution.md\n?? devguide/pending_proposals/native_aligned_clique_consensus.md\n?? devguide/pending_proposals/native_aligned_consensus.md\n?? devguide/pending_proposals/native_conformer_screening.md\n?? devguide/pending_proposals/native_eralpha_validation.md\n?? devguide/pending_proposals/native_reference_ligand_workflow.md\n?? devguide/pending_proposals/native_rigid_consensus.md\n?? devguide/pending_proposals/native_rigid_pose_search.md\n?? devguide/pending_proposals/public_rigid_refinement.md\n?? devguide/pending_proposals/validation_benchmark_publication.md\n?? devguide/pharmacophore_search_strategies.md\n?? devguide/placed_pose_workflow.md\n?? devguide/ranked_seed_workflow.md\n?? devguide/reference_ligand_workflow.md\n?? devguide/rigid_consensus_workflow.md\n?? devguide/rigid_refinement_workflow.md\n?? devguide/rigid_search_workflow.md\n?? devguide/rigid_strategy_comparison.md\n?? devtools/audit_eralpha.py\n?? devtools/audit_eralpha_sources.py\n?? devtools/audit_legacy_cliques.py\n?? devtools/benchmark_rigid_consensus.py\n?? devtools/compare_rigid_refinement.py\n?? devtools/conda-envs/test_env_py314.yaml\n?? devtools/requirements/controlled_suite_dependencies_py314.txt\n?? devtools/rigid_consensus_cases.py\n?? devtools/rigid_refinement_cases.py\n?? docs/content/cookbook/\n?? pharmacophoremt/_ackredit.py\n?? pharmacophoremt/_private/arg_digestion/argument/_contracts.py\n?? pharmacophoremt/_private/molsysmt.py\n?? pharmacophoremt/_private/pose_batch.py\n?? pharmacophoremt/_private/references.py\n?? pharmacophoremt/_private/smonitor/warnings.py\n?? pharmacophoremt/_private/viewer.py\n?? pharmacophoremt/attribution.py\n?? pharmacophoremt/modeler/aligned_cliques.py\n?? pharmacophoremt/modeler/aligned_consensus.py\n?? pharmacophoremt/modeler/features.py\n?? pharmacophoremt/modeler/interaction_based.py\n?? pharmacophoremt/modeler/reference_ligand.py\n?? pharmacophoremt/modeler/rigid_consensus.py\n?? pharmacophoremt/screening/alignment.py\n?? pharmacophoremt/screening/conformer_screening.py\n?? pharmacophoremt/screening/correspondence.py\n?? pharmacophoremt/screening/feature_geometry.py\n?? pharmacophoremt/screening/feature_neighborhoods.py\n?? pharmacophoremt/screening/pose_evaluation.py\n?? pharmacophoremt/screening/rigid_correspondence.py\n?? pharmacophoremt/screening/rigid_placements.py\n?? pharmacophoremt/screening/rigid_refinement.py\n?? pharmacophoremt/screening/rigid_search.py\n?? pharmacophoremt/validation/rigid_consensus.py\n?? tests/data/eralpha_audit.json\n?? tests/data/eralpha_rcsb/\n?? tests/data/ranked_seed_cases.json\n?? tests/data/rigid_consensus_cases.json\n?? tests/data/rigid_refinement_cases.json\n?? tests/test_aligned_cliques.py\n?? tests/test_aligned_consensus.py\n?? tests/test_attribution.py\n?? tests/test_conformer_screening.py\n?? tests/test_contracts.py\n?? tests/test_modular_rigid_tools.py\n?? tests/test_pose_evaluation.py\n?? tests/test_ranked_seeds.py\n?? tests/test_reference_ligand.py\n?? tests/test_retrospective.py\n?? tests/test_rigid_consensus.py\n?? tests/test_rigid_refinement.py\n?? tests/test_rigid_search.py\n?? tests/test_rigid_strategy_comparison.py\n?? tests/test_validation_metrics.py",
+  "source_hashes_unchanged_during_execution": true,
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "packages": {
+      "pharmacophoremt": {
+        "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+92.g228355a.dirty",
+        "python_source_sha256": "808710dfc742fde560a3b90fd4668af5f6eef6c3ddbd122c12a33a82df3ac917",
+        "python_file_count": 126
+      },
+      "molsysmt": {
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+24.g42b487869",
+        "python_source_sha256": "9fcb8494634191977505994fc07730347ac92614ff8865ad6548b96610d6aad0",
+        "python_file_count": 2808
+      },
+      "pyunitwizard": {
+        "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.27.0",
+        "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+        "python_file_count": 77
+      },
+      "ackredit": {
+        "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+        "version": "0.8.0+52.g15b1958.dirty",
+        "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+        "python_file_count": 62
+      }
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.1"
+    },
+    "molecular_extensions": [
+      {
+        "module": "molsysmt._rust",
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+      }
+    ],
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "RAYON_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "molsysmt_policy": {
+      "parallel": false,
+      "num_threads": 1
+    }
+  },
+  "schema": "pharmacophoremt.analytical_refinement_comparison_summary@1",
+  "full_evidence": {
+    "path": "rigid_refinement_py314.json.gz",
+    "compression": "gzip",
+    "compressed_sha256": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c",
+    "uncompressed_sha256": "bc27bbdaa4a080c6d134ff937bbbf8f433df115bbc629b9ea4484198fc01965a"
+  },
+  "records": [
+    {
+      "case_id": "orientation_recovery",
+      "orientation_policy": "final",
+      "fixture_sha256": "bf4b5ac726a5fb918d841d4ae4330827b4558ea4e8cf5c41592ba4d850a6f28a",
+      "parameters": {
+        "distance_tolerance": ".3 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 4
+      },
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 4,
+        "n_fits": 2
+      },
+      "counts": {
+        "n_fits": 2,
+        "n_placements": 1,
+        "max_matches": 4
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "c027e86c35b4ce166eb9c5b4de23ef00ce344ec3329efc3c0d555fd02434bbe8",
+      "attribution_status": "captured",
+      "seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_recovery",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "bf4b5ac726a5fb918d841d4ae4330827b4558ea4e8cf5c41592ba4d850a6f28a",
+      "parameters": {
+        "distance_tolerance": ".3 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 4
+      },
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 1
+      },
+      "counts": {
+        "n_fits": 1,
+        "n_placements": 0,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "a492f8c49ec3dfac5b5da907db108f75d611c0124835da5011a9be445b19be9c",
+      "attribution_status": "captured",
+      "seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 1,
+          "n_accepted_steps": 0,
+          "n_rejected_steps": 1,
+          "termination": "initial_seed_failed_growth_constraints",
+          "final_accepted_step_index": null,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_blocking",
+      "orientation_policy": "final",
+      "fixture_sha256": "b94bbef973e2b24a693ac40594b3b3ec77d1e450d62438b84bf2f602b2b2fcdc",
+      "parameters": {
+        "distance_tolerance": ".05 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 5
+      },
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 3
+      },
+      "counts": {
+        "n_fits": 3,
+        "n_placements": 0,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "178efad5df2b6f44bc7467de3f9d41b10791fd7b852ae5a97b7b94d624b98629",
+      "attribution_status": "captured",
+      "seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 3,
+          "n_accepted_steps": 3,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 2,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_blocking",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "b94bbef973e2b24a693ac40594b3b3ec77d1e450d62438b84bf2f602b2b2fcdc",
+      "parameters": {
+        "distance_tolerance": ".05 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 5
+      },
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 5,
+        "n_fits": 5
+      },
+      "counts": {
+        "n_fits": 5,
+        "n_placements": 1,
+        "max_matches": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "567dc85104b03929b06feab2a29e41ab4b9cab031a2cecb65e9c085680bb7190",
+      "attribution_status": "captured",
+      "seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 5,
+          "n_accepted_steps": 3,
+          "n_rejected_steps": 2,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 4,
+          "selected_step_index": 4,
+          "permanently_rejected_pairs": [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_checkpoint",
+      "orientation_policy": "final",
+      "fixture_sha256": "f6d05c106a7d04ed3ebc72af68849536b54c818096c05a3fc535e89956c23ccb",
+      "parameters": {
+        "distance_tolerance": ".5 nm",
+        "direction_tolerance": "3 degrees",
+        "min_matches": 3
+      },
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 3,
+        "n_fits": 2
+      },
+      "counts": {
+        "n_fits": 2,
+        "n_placements": 1,
+        "max_matches": 3
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "081d4c722c89e945045d678309f748535a558028c73ecf7aae0ea8dcccbef43e",
+      "attribution_status": "captured",
+      "seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 0,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_checkpoint",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "f6d05c106a7d04ed3ebc72af68849536b54c818096c05a3fc535e89956c23ccb",
+      "parameters": {
+        "distance_tolerance": ".5 nm",
+        "direction_tolerance": "3 degrees",
+        "min_matches": 3
+      },
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 3,
+        "n_fits": 2
+      },
+      "counts": {
+        "n_fits": 2,
+        "n_placements": 1,
+        "max_matches": 3
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "2da30a3a1bc45cbb009940aea503176c6ad90dbc945afa620e4d218bba9bc944",
+      "attribution_status": "captured",
+      "seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 1,
+          "n_rejected_steps": 1,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 0,
+          "selected_step_index": 0,
+          "permanently_rejected_pairs": [
+            [
+              3,
+              3
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    }
+  ]
+}

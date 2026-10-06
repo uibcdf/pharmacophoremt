@@ -1,0 +1,673 @@
+{
+  "schema": "pharmacophoremt.refinement_workloads@1",
+  "scope": "Analytical prepared fragments; seed/tolerance/size controls, not biological or conformational validation.",
+  "workloads": [
+    {
+      "case_id": "orientation_recovery",
+      "base_case": "orientation_recovery",
+      "rationale": "Original frozen policy counterexample."
+    },
+    {
+      "case_id": "orientation_blocking",
+      "base_case": "orientation_blocking",
+      "rationale": "Original frozen policy counterexample."
+    },
+    {
+      "case_id": "orientation_checkpoint",
+      "base_case": "orientation_checkpoint",
+      "rationale": "Original frozen policy counterexample."
+    },
+    {
+      "case_id": "recovery_angle_60",
+      "base_case": "orientation_recovery",
+      "parameters": {
+        "direction_tolerance": "60 degrees"
+      },
+      "rationale": "Initial 45 degree donor error is admitted by the relaxed angular tolerance.",
+      "expected": {
+        "final": {
+          "n_placements": 1,
+          "max_matches": 4,
+          "n_fits": 2
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 4,
+          "n_fits": 2
+        }
+      }
+    },
+    {
+      "case_id": "recovery_distance_005",
+      "base_case": "orientation_recovery",
+      "parameters": {
+        "distance_tolerance": ".05 nm"
+      },
+      "rationale": "A tight spatial tolerance prevents the far fourth donor from recovering the required four-site match.",
+      "expected": {
+        "final": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 2
+        },
+        "each_step": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 1
+        }
+      }
+    },
+    {
+      "case_id": "recovery_two_seeds",
+      "base_case": "orientation_recovery",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "rationale": "An alternative seed spanning the far donor can recover the alignment rejected by the original each_step seed.",
+      "expected": {
+        "final": {
+          "n_placements": 2,
+          "max_matches": 4,
+          "n_fits": 4
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 4,
+          "n_fits": 3
+        }
+      }
+    },
+    {
+      "case_id": "checkpoint_full_seed",
+      "base_case": "orientation_checkpoint",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "rationale": "Starting from all four anchors skips the earlier valid checkpoint; no minimum three-site angular match survives.",
+      "expected": {
+        "final": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 1
+        },
+        "each_step": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 1
+        }
+      }
+    },
+    {
+      "case_id": "rigid_mixed_5",
+      "molecular_case_id": "rigid_typed_5",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".02 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 5
+      },
+      "rationale": "Mixed donor, acceptor, hydrophobic and charged inventory; proper rigid motion preserves all five sites.",
+      "expected": {
+        "final": {
+          "n_placements": 1,
+          "max_matches": 5,
+          "n_fits": 3
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 5,
+          "n_fits": 3
+        }
+      }
+    },
+    {
+      "case_id": "reflection_mixed_5",
+      "molecular_case_id": "reflection_typed_5",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".02 nm",
+        "direction_tolerance": "30 degrees",
+        "min_matches": 5
+      },
+      "rationale": "Mixed donor, acceptor, hydrophobic and charged inventory; reflection of noncoplanar sites cannot be fitted by a proper rigid motion.",
+      "expected": {
+        "final": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 3
+        },
+        "each_step": {
+          "n_placements": 0,
+          "max_matches": 0,
+          "n_fits": 3
+        }
+      }
+    },
+    {
+      "case_id": "rigid_donors_6",
+      "reference_centers": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0.6
+        ],
+        [
+          0.7,
+          0.3,
+          0.2
+        ],
+        [
+          0.2,
+          0.8,
+          0.4
+        ]
+      ],
+      "source_centers": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0.6
+        ],
+        [
+          0.7,
+          0.3,
+          0.2
+        ],
+        [
+          0.2,
+          0.8,
+          0.4
+        ]
+      ],
+      "reference_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "source_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      "source_motion": "rotate_translate",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".02 nm",
+        "direction_tolerance": "10 degrees",
+        "min_matches": 6
+      },
+      "rationale": "Proper rigid motion of an asymmetric three-dimensional donor arrangement with varied directions.",
+      "expected": {
+        "final": {
+          "n_placements": 1,
+          "max_matches": 6,
+          "n_fits": 4
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 6,
+          "n_fits": 4
+        }
+      }
+    },
+    {
+      "case_id": "rigid_donors_12",
+      "reference_centers": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0.6
+        ],
+        [
+          0.7,
+          0.3,
+          0.2
+        ],
+        [
+          0.2,
+          0.8,
+          0.4
+        ],
+        [
+          0.9,
+          0.7,
+          0.6
+        ],
+        [
+          0.3,
+          0.4,
+          1.1
+        ],
+        [
+          1.2,
+          0.2,
+          0.9
+        ],
+        [
+          0.5,
+          1.2,
+          0.8
+        ],
+        [
+          1.1,
+          1.1,
+          0.3
+        ],
+        [
+          0.8,
+          0.9,
+          1.4
+        ]
+      ],
+      "source_centers": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          0.6
+        ],
+        [
+          0.7,
+          0.3,
+          0.2
+        ],
+        [
+          0.2,
+          0.8,
+          0.4
+        ],
+        [
+          0.9,
+          0.7,
+          0.6
+        ],
+        [
+          0.3,
+          0.4,
+          1.1
+        ],
+        [
+          1.2,
+          0.2,
+          0.9
+        ],
+        [
+          0.5,
+          1.2,
+          0.8
+        ],
+        [
+          1.1,
+          1.1,
+          0.3
+        ],
+        [
+          0.8,
+          0.9,
+          1.4
+        ]
+      ],
+      "reference_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "source_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          0
+        ],
+        [
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "source_motion": "rotate_translate",
+      "correspondences": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "parameters": {
+        "distance_tolerance": ".02 nm",
+        "direction_tolerance": "10 degrees",
+        "min_matches": 12
+      },
+      "rationale": "Proper rigid motion of an asymmetric three-dimensional donor arrangement with varied directions.",
+      "expected": {
+        "final": {
+          "n_placements": 1,
+          "max_matches": 12,
+          "n_fits": 10
+        },
+        "each_step": {
+          "n_placements": 1,
+          "max_matches": 12,
+          "n_fits": 10
+        }
+      }
+    }
+  ]
+}

@@ -64,13 +64,8 @@ class Disk:
 
         if not puw.is_quantity(normal):
             normal = puw.quantity(normal, "dimensionless")
-        std = puw.standardize(normal)
-        if puw.is_quantity(std):
-            self.normal = std
-        else:
-            self.normal = puw.convert(normal, to_unit=std, to_type="quantity")
-
-        self.normal = self.normal / np.linalg.norm(self.normal)
+        values = np.asarray(puw.get_value(normal, to_unit="dimensionless"), dtype=float)
+        self.normal = puw.quantity(values / np.linalg.norm(values), "dimensionless")
 
     def add_to_NGLView(
         self,

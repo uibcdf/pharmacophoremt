@@ -1,0 +1,97 @@
+{
+  "schema": "pharmacophoremt.curation_verification_summary@1",
+  "issue": "uibcdf/pharmacophoremt#38",
+  "scope": "analytical cached-model curation; no biological or performance claim",
+  "full_evidence": {
+    "path": "curation_py314_cookbook_audit.json.gz",
+    "compressed_sha256": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "uncompressed_sha256": "fb604890784bbd37581f43c30bf27968d7e5a80fd6de81e1cfab2cfaadcad18a",
+    "compressed_bytes": 151061,
+    "uncompressed_bytes": 3142311
+  },
+  "recipe": "docs/content/cookbook/pharmacophore_curation.md",
+  "recipe_sha256": "e3846c16c1ecf38fb8cde536cc9d0f0f0527603d1ad1e5d915530cba509d8b72",
+  "executed_blocks": 3,
+  "producer_sources_unchanged": true,
+  "before": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 136,
+      "python_source_sha256": "d721018bd16f7b3ebe32200f07584d797496dc8b65438ee2271ff39748af506c"
+    },
+    "molsysmt": {
+      "path": "/tmp/phmt-ccd-provider-snapshot/molsysmt",
+      "python_file_count": 2821,
+      "python_source_sha256": "1e5254ebc5d35a93f25d1039a4f5b30adbd5c7a5c2882875dbab708cec107b4f"
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 77,
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c"
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 62,
+      "python_source_sha256": "2edfd47edf88bebff9296f6249797b56c91c84051cc0793edfd5949eada794cc"
+    }
+  },
+  "after": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 136,
+      "python_source_sha256": "d721018bd16f7b3ebe32200f07584d797496dc8b65438ee2271ff39748af506c"
+    },
+    "molsysmt": {
+      "path": "/tmp/phmt-ccd-provider-snapshot/molsysmt",
+      "python_file_count": 2821,
+      "python_source_sha256": "1e5254ebc5d35a93f25d1039a4f5b30adbd5c7a5c2882875dbab708cec107b4f"
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 77,
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c"
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 62,
+      "python_source_sha256": "2edfd47edf88bebff9296f6249797b56c91c84051cc0793edfd5949eada794cc"
+    }
+  },
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+  "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "pure_cached_uses": [],
+  "edited_model_site_count": 9,
+  "original_model_site_count": 9,
+  "evaluation_status_and_fit": {
+    "narrow": {
+      "status": "not_matched",
+      "fit_value": 0.0
+    },
+    "wide": {
+      "status": "matched",
+      "fit_value": 1.0
+    },
+    "required": {
+      "status": "not_matched",
+      "fit_value": 0.9
+    },
+    "optional_result": {
+      "status": "matched",
+      "fit_value": 0.9
+    },
+    "weighted_result": {
+      "status": "matched",
+      "fit_value": 0.75
+    },
+    "zero_result": {
+      "status": "not_matched",
+      "fit_value": 1.0
+    },
+    "veto": {
+      "status": "not_matched",
+      "fit_value": 1.0
+    }
+  },
+  "actual_edit_items": 2,
+  "actual_edit_uses": 2
+}

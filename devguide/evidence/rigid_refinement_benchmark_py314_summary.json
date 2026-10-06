@@ -1,0 +1,1649 @@
+{
+  "schema": "pharmacophoremt.refinement_benchmark_summary@1",
+  "recorded_at_utc": "2026-10-03T13:54:38.456878+00:00",
+  "source_head": "228355a70a691c7594244189a3bed4acc437c8c2",
+  "source_working_state": "M .github/workflows/CI.yaml\n M .github/workflows/molsyssuite-policy.yml\n M ACKREDIT_GUIDE.md\n M AGENTS.md\n M MOLSYSSUITE_GUIDE.md\n M README.md\n M devguide/archive/complex_pdb_feature_recovery.md\n M devguide/checkpoint.md\n M devguide/classical_workflow.md\n M devguide/core_architecture.md\n M devguide/modeling_strategies.md\n M devguide/pending_bugs/README.md\n M devguide/pending_proposals/README.md\n M devguide/pending_proposals/review_python_ecosystem_policy_adoption.md\n M devguide/roadmap.md\n M devtools/ci_backlog.py\n M devtools/conda-build/meta.yaml\n M devtools/conda-build/release_plan.example.toml\n M devtools/conda-build/resources.toml\n M devtools/conda-envs/test_env_py313.yaml\n M devtools/requirements.yaml\n M devtools/requirements/controlled_suite_dependencies.txt\n M docs/content/user/index.md\n M docs/index.ipynb\n M pharmacophoremt/__init__.py\n M pharmacophoremt/_depdigest.py\n M pharmacophoremt/_private/arg_digestion/argument/center.py\n M pharmacophoremt/_private/arg_digestion/argument/direction.py\n M pharmacophoremt/_private/arg_digestion/argument/end.py\n M pharmacophoremt/_private/arg_digestion/argument/features.py\n M pharmacophoremt/_private/arg_digestion/argument/normal.py\n M pharmacophoremt/_private/arg_digestion/argument/position.py\n M pharmacophoremt/_private/arg_digestion/argument/radius.py\n M pharmacophoremt/_private/arg_digestion/argument/sigma.py\n M pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py\n M pharmacophoremt/_private/arg_digestion/argument/start.py\n M pharmacophoremt/_private/smonitor/catalog.py\n M pharmacophoremt/_private/smonitor/emitter.py\n M pharmacophoremt/_private/smonitor/exceptions.py\n M pharmacophoremt/_smonitor.py\n M pharmacophoremt/data/README.md\n M pharmacophoremt/interaction_site/interaction_site.py\n M pharmacophoremt/interaction_site/shape/disk.py\n M pharmacophoremt/interaction_site/shape/sphere_and_vector.py\n M pharmacophoremt/io/phmt/__init__.py\n M pharmacophoremt/modeler/__init__.py\n M pharmacophoremt/modeler/dispatcher.py\n M pharmacophoremt/pharmacophore.py\n M pharmacophoremt/screening/__init__.py\n M pharmacophoremt/screening/virtual_screening.py\n M pharmacophoremt/validation/__init__.py\n M pharmacophoremt/validation/metrics.py\n M pharmacophoremt/validation/retrospective.py\n M pyproject.toml\n M tests/test_ci_backlog.py\n M tests/test_ci_routes.py\n M tests/test_molsysviewer_pharmacophoremt_addon.py\n M tests/test_reporting_protocol.py\n M tests/test_validation_eralpha.py\n?? devguide/aligned_clique_consensus_workflow.md\n?? devguide/aligned_consensus_workflow.md\n?? devguide/clique_consensus_review.md\n?? devguide/conformer_screening_workflow.md\n?? devguide/eralpha_validation.md\n?? devguide/evidence/\n?? devguide/extensible_modeling_contracts.md\n?? devguide/pending_bugs/catalog_diagnostic_rendering.md\n?? devguide/pending_bugs/legacy_clique_consensus.md\n?? devguide/pending_bugs/provenance_strings_interpreted_as_quantities.md\n?? devguide/pending_bugs/ranking_and_retrospective_accounting.md\n?? devguide/pending_bugs/zero_angle_roundoff.md\n?? devguide/pending_proposals/adopt_required_python_314.md\n?? devguide/pending_proposals/g3ps_ranked_seed_tools.md\n?? devguide/pending_proposals/modular_rigid_strategy_comparison.md\n?? devguide/pending_proposals/molsysmt_placed_pose_workflow.md\n?? devguide/pending_proposals/native_ackredit_attribution.md\n?? devguide/pending_proposals/native_aligned_clique_consensus.md\n?? devguide/pending_proposals/native_aligned_consensus.md\n?? devguide/pending_proposals/native_conformer_screening.md\n?? devguide/pending_proposals/native_eralpha_validation.md\n?? devguide/pending_proposals/native_reference_ligand_workflow.md\n?? devguide/pending_proposals/native_rigid_consensus.md\n?? devguide/pending_proposals/native_rigid_pose_search.md\n?? devguide/pending_proposals/public_rigid_refinement.md\n?? devguide/pending_proposals/validation_benchmark_publication.md\n?? devguide/pharmacophore_search_strategies.md\n?? devguide/placed_pose_workflow.md\n?? devguide/ranked_seed_workflow.md\n?? devguide/reference_ligand_workflow.md\n?? devguide/rigid_consensus_workflow.md\n?? devguide/rigid_refinement_workflow.md\n?? devguide/rigid_search_workflow.md\n?? devguide/rigid_strategy_comparison.md\n?? devtools/audit_eralpha.py\n?? devtools/audit_eralpha_sources.py\n?? devtools/audit_legacy_cliques.py\n?? devtools/benchmark_rigid_consensus.py\n?? devtools/benchmark_rigid_refinement.py\n?? devtools/compare_rigid_refinement.py\n?? devtools/conda-envs/test_env_py314.yaml\n?? devtools/requirements/controlled_suite_dependencies_py314.txt\n?? devtools/rigid_consensus_cases.py\n?? devtools/rigid_refinement_cases.py\n?? devtools/rigid_refinement_workloads.py\n?? docs/content/cookbook/\n?? pharmacophoremt/_ackredit.py\n?? pharmacophoremt/_private/arg_digestion/argument/_contracts.py\n?? pharmacophoremt/_private/molsysmt.py\n?? pharmacophoremt/_private/pose_batch.py\n?? pharmacophoremt/_private/references.py\n?? pharmacophoremt/_private/smonitor/warnings.py\n?? pharmacophoremt/_private/viewer.py\n?? pharmacophoremt/attribution.py\n?? pharmacophoremt/modeler/aligned_cliques.py\n?? pharmacophoremt/modeler/aligned_consensus.py\n?? pharmacophoremt/modeler/features.py\n?? pharmacophoremt/modeler/interaction_based.py\n?? pharmacophoremt/modeler/reference_ligand.py\n?? pharmacophoremt/modeler/rigid_consensus.py\n?? pharmacophoremt/screening/alignment.py\n?? pharmacophoremt/screening/conformer_screening.py\n?? pharmacophoremt/screening/correspondence.py\n?? pharmacophoremt/screening/feature_geometry.py\n?? pharmacophoremt/screening/feature_neighborhoods.py\n?? pharmacophoremt/screening/pose_evaluation.py\n?? pharmacophoremt/screening/rigid_correspondence.py\n?? pharmacophoremt/screening/rigid_placements.py\n?? pharmacophoremt/screening/rigid_refinement.py\n?? pharmacophoremt/screening/rigid_search.py\n?? pharmacophoremt/validation/rigid_consensus.py\n?? tests/data/eralpha_audit.json\n?? tests/data/eralpha_rcsb/\n?? tests/data/ranked_seed_cases.json\n?? tests/data/rigid_consensus_cases.json\n?? tests/data/rigid_refinement_cases.json\n?? tests/data/rigid_refinement_workloads.json\n?? tests/test_aligned_cliques.py\n?? tests/test_aligned_consensus.py\n?? tests/test_attribution.py\n?? tests/test_conformer_screening.py\n?? tests/test_contracts.py\n?? tests/test_modular_rigid_tools.py\n?? tests/test_pose_evaluation.py\n?? tests/test_ranked_seeds.py\n?? tests/test_reference_ligand.py\n?? tests/test_retrospective.py\n?? tests/test_rigid_consensus.py\n?? tests/test_rigid_refinement.py\n?? tests/test_rigid_refinement_workloads.py\n?? tests/test_rigid_search.py\n?? tests/test_rigid_strategy_comparison.py\n?? tests/test_validation_metrics.py",
+  "input_sha256": {
+    "tests/data/rigid_refinement_workloads.json": "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48",
+    "tests/data/rigid_refinement_cases.json": "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7",
+    "tests/data/rigid_consensus_cases.json": "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0",
+    "devtools/benchmark_rigid_refinement.py": "4d82f5791ba72f71f0c0a59aba09592e69876447a7a12d80198fc5a8d6659af0",
+    "devtools/rigid_refinement_workloads.py": "34a344d60b9e6d360b519029e98bb2493b3c0bb76b783abdb157c3dfeb7bed72",
+    "devtools/rigid_refinement_cases.py": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17",
+    "devtools/rigid_consensus_cases.py": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+    "devtools/benchmark_rigid_consensus.py": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08"
+  },
+  "input_hashes_unchanged": true,
+  "worker_sources_identical": true,
+  "repetitions": 3,
+  "warmups": 1,
+  "worker_timeout_seconds": 180,
+  "scope": "analytical prepared fragments; no biological validation, conformational energies or universal ranking",
+  "full_evidence": {
+    "path": "rigid_refinement_benchmark_py314.json.gz",
+    "uncompressed_sha256": "612a68e20bc353f0ab23496af85fed7651d93bb485b683f2071d0ce9ba4e900b",
+    "compressed_sha256": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1",
+    "uncompressed_bytes": 6104376,
+    "compressed_bytes": 393630
+  },
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_count": 20,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "RAYON_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "molsysmt_policy": {
+      "parallel": false,
+      "num_threads": 1
+    },
+    "packages": {
+      "pharmacophoremt": {
+        "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+92.g228355a.dirty",
+        "python_source_sha256": "808710dfc742fde560a3b90fd4668af5f6eef6c3ddbd122c12a33a82df3ac917",
+        "python_file_count": 126
+      },
+      "molsysmt": {
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+24.g42b487869",
+        "python_source_sha256": "ccfc5a14820b13f8155ebf0f73df8ac9b139c287d552087191a9612c6c647afd",
+        "python_file_count": 2808
+      },
+      "pyunitwizard": {
+        "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.27.0",
+        "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+        "python_file_count": 77
+      },
+      "ackredit": {
+        "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+        "version": "0.8.0+52.g15b1958.dirty",
+        "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+        "python_file_count": 62
+      }
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.1"
+    },
+    "molecular_extensions": [
+      {
+        "module": "molsysmt._rust",
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+      }
+    ]
+  },
+  "records": [
+    {
+      "case_id": "orientation_recovery",
+      "orientation_policy": "final",
+      "fixture_sha256": "df7b471cadc4377d62590178a31c1978cca02d291f2a276385d123e49a472208",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 4,
+        "n_fits": 2
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 2,
+        "max_matches": 4
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "c027e86c35b4ce166eb9c5b4de23ef00ce344ec3329efc3c0d555fd02434bbe8",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.6143445884808898,
+          0.6140976119786501,
+          0.6153154596686363
+        ],
+        "median_seconds": 0.6143445884808898,
+        "min_seconds": 0.6140976119786501,
+        "max_seconds": 0.6153154596686363,
+        "warmup_call_seconds": [
+          0.7250073524191976
+        ],
+        "fixture_and_inventory_seconds": 3.6664196457713842,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549457920,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549621760,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_recovery",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "df7b471cadc4377d62590178a31c1978cca02d291f2a276385d123e49a472208",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 1
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 1,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "a492f8c49ec3dfac5b5da907db108f75d611c0124835da5011a9be445b19be9c",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.33597848284989595,
+          0.3263334147632122,
+          0.3297157157212496
+        ],
+        "median_seconds": 0.3297157157212496,
+        "min_seconds": 0.3263334147632122,
+        "max_seconds": 0.33597848284989595,
+        "warmup_call_seconds": [
+          0.4892460871487856
+        ],
+        "fixture_and_inventory_seconds": 3.691238827072084,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 548470784,
+        "process_lifetime_peak_rss_bytes_after_measurements": 548470784,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 1,
+          "n_accepted_steps": 0,
+          "n_rejected_steps": 1,
+          "termination": "initial_seed_failed_growth_constraints",
+          "final_accepted_step_index": null,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_blocking",
+      "orientation_policy": "final",
+      "fixture_sha256": "f365d5715436e2497f715d9a278103eaee771a0de56be7cfd53e39d3d6d93ff3",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 3
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 3,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "178efad5df2b6f44bc7467de3f9d41b10791fd7b852ae5a97b7b94d624b98629",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.9174524871632457,
+          0.9304641801863909,
+          0.884610777720809
+        ],
+        "median_seconds": 0.9174524871632457,
+        "min_seconds": 0.884610777720809,
+        "max_seconds": 0.9304641801863909,
+        "warmup_call_seconds": [
+          0.9967305967584252
+        ],
+        "fixture_and_inventory_seconds": 3.743579274043441,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549044224,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549208064,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 3,
+          "n_accepted_steps": 3,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 2,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_blocking",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "f365d5715436e2497f715d9a278103eaee771a0de56be7cfd53e39d3d6d93ff3",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 5,
+        "n_fits": 5
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 5,
+        "max_matches": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "567dc85104b03929b06feab2a29e41ab4b9cab031a2cecb65e9c085680bb7190",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.4680492281913757,
+          1.448808340355754,
+          1.444818189367652
+        ],
+        "median_seconds": 1.448808340355754,
+        "min_seconds": 1.444818189367652,
+        "max_seconds": 1.4680492281913757,
+        "warmup_call_seconds": [
+          1.5673832595348358
+        ],
+        "fixture_and_inventory_seconds": 3.6989699518308043,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 550244352,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550244352,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 5,
+          "n_accepted_steps": 3,
+          "n_rejected_steps": 2,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 4,
+          "selected_step_index": 4,
+          "permanently_rejected_pairs": [
+            [
+              3,
+              3
+            ],
+            [
+              4,
+              4
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_checkpoint",
+      "orientation_policy": "final",
+      "fixture_sha256": "8728a01c5cce837d8dae3ff74378e5c0bc7b50a6789e6ed655875c75e09cb68a",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 3,
+        "n_fits": 2
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 2,
+        "max_matches": 3
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "081d4c722c89e945045d678309f748535a558028c73ecf7aae0ea8dcccbef43e",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.5976226981729269,
+          0.5965597946196795,
+          0.6016553211957216
+        ],
+        "median_seconds": 0.5976226981729269,
+        "min_seconds": 0.5965597946196795,
+        "max_seconds": 0.6016553211957216,
+        "warmup_call_seconds": [
+          0.7013931190595031
+        ],
+        "fixture_and_inventory_seconds": 3.6635872730985284,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549228544,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549392384,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 0,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "orientation_checkpoint",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "8728a01c5cce837d8dae3ff74378e5c0bc7b50a6789e6ed655875c75e09cb68a",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 3,
+        "n_fits": 2
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 2,
+        "max_matches": 3
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "2da30a3a1bc45cbb009940aea503176c6ad90dbc945afa620e4d218bba9bc944",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.5996166206896305,
+          0.6047136224806309,
+          0.6007199725136161
+        ],
+        "median_seconds": 0.6007199725136161,
+        "min_seconds": 0.5996166206896305,
+        "max_seconds": 0.6047136224806309,
+        "warmup_call_seconds": [
+          0.7106999037787318
+        ],
+        "fixture_and_inventory_seconds": 3.7121352897956967,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549257216,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549421056,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 1,
+          "n_rejected_steps": 1,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 0,
+          "selected_step_index": 0,
+          "permanently_rejected_pairs": [
+            [
+              3,
+              3
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "recovery_angle_60",
+      "orientation_policy": "final",
+      "fixture_sha256": "1c22559cd4e65e2e4532bb59eafba29cdc7fca8ae9cfd0054b06b3d87f072ee1",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 4,
+        "n_fits": 2
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 2,
+        "max_matches": 4
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "4ed270efce00ed343bf193021b7e81036511b69ce5b5b23f169dc3e98ad335d8",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.6166852107271552,
+          0.6118770809844136,
+          0.6152435475960374
+        ],
+        "median_seconds": 0.6152435475960374,
+        "min_seconds": 0.6118770809844136,
+        "max_seconds": 0.6166852107271552,
+        "warmup_call_seconds": [
+          0.7235714700073004
+        ],
+        "fixture_and_inventory_seconds": 3.5848984410986304,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549437440,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549437440,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "recovery_angle_60",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "1c22559cd4e65e2e4532bb59eafba29cdc7fca8ae9cfd0054b06b3d87f072ee1",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 4,
+        "n_fits": 2
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 2,
+        "max_matches": 4
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "4c27e94f327cb38e03b33928fdfe06dbfd0006b545a2dd9e80ca5f764066568b",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.609959090128541,
+          0.6088257757946849,
+          0.6083605131134391
+        ],
+        "median_seconds": 0.6088257757946849,
+        "min_seconds": 0.6083605131134391,
+        "max_seconds": 0.609959090128541,
+        "warmup_call_seconds": [
+          0.7220637910068035
+        ],
+        "fixture_and_inventory_seconds": 3.654415173456073,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549277696,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549277696,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "recovery_distance_005",
+      "orientation_policy": "final",
+      "fixture_sha256": "6d3cf0377f659af33cc7e641db762864e7367c9fade38a084a30874df6b51e35",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 2
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 2,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "ec2055574074ed4a60972efda6d0d3fa9cc0feaa09357de36975f671a1902e55",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.5421113222837448,
+          0.5408086599782109,
+          0.5506914434954524
+        ],
+        "median_seconds": 0.5421113222837448,
+        "min_seconds": 0.5408086599782109,
+        "max_seconds": 0.5506914434954524,
+        "warmup_call_seconds": [
+          0.6498674489557743
+        ],
+        "fixture_and_inventory_seconds": 3.623614908196032,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549441536,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549605376,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 1,
+          "n_rejected_steps": 1,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 0,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [
+            [
+              3,
+              3
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "recovery_distance_005",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "6d3cf0377f659af33cc7e641db762864e7367c9fade38a084a30874df6b51e35",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 1
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 1,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "508d87218f6dbceb9aa8ab749814261149b2ec48553e55bf91c5f0eb660c408e",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.3187915738672018,
+          0.3202430084347725,
+          0.31869668513536453
+        ],
+        "median_seconds": 0.3187915738672018,
+        "min_seconds": 0.31869668513536453,
+        "max_seconds": 0.3202430084347725,
+        "warmup_call_seconds": [
+          0.42798351868987083
+        ],
+        "fixture_and_inventory_seconds": 3.606152764521539,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 548757504,
+        "process_lifetime_peak_rss_bytes_after_measurements": 548757504,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 1,
+          "n_accepted_steps": 0,
+          "n_rejected_steps": 1,
+          "termination": "initial_seed_failed_growth_constraints",
+          "final_accepted_step_index": null,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "recovery_two_seeds",
+      "orientation_policy": "final",
+      "fixture_sha256": "1683352ea76ad27218f83bcdf02b53a28b7fc16bba6e0f70ec5349dd1d4d7449",
+      "expected": {
+        "n_placements": 2,
+        "max_matches": 4,
+        "n_fits": 4
+      },
+      "outcome": {
+        "n_placements": 2,
+        "n_fits": 4,
+        "max_matches": 4
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "3880afb12cc1d6c62ba88ab1bde6a6552a4ea49d446ca27a174630224beead4b",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.1393187725916505,
+          1.141258867457509,
+          1.1384698506444693
+        ],
+        "median_seconds": 1.1393187725916505,
+        "min_seconds": 1.1384698506444693,
+        "max_seconds": 1.141258867457509,
+        "warmup_call_seconds": [
+          1.243986951187253
+        ],
+        "fixture_and_inventory_seconds": 3.5664431415498257,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 550109184,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550273024,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        },
+        {
+          "proposal_index": 1,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "recovery_two_seeds",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "1683352ea76ad27218f83bcdf02b53a28b7fc16bba6e0f70ec5349dd1d4d7449",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 4,
+        "n_fits": 3
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 3,
+        "max_matches": 4
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "e7fc2b52aa5d26d36ec7ed66b42e37f83f6d23ce4ae51d7c2d5d99e937ee3f38",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.903376555070281,
+          0.9079015078023076,
+          0.9189880285412073
+        ],
+        "median_seconds": 0.9079015078023076,
+        "min_seconds": 0.903376555070281,
+        "max_seconds": 0.9189880285412073,
+        "warmup_call_seconds": [
+          1.0263674771413207
+        ],
+        "fixture_and_inventory_seconds": 3.7564103500917554,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549453824,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549453824,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 1,
+          "n_accepted_steps": 0,
+          "n_rejected_steps": 1,
+          "termination": "initial_seed_failed_growth_constraints",
+          "final_accepted_step_index": null,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        },
+        {
+          "proposal_index": 1,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 2,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "checkpoint_full_seed",
+      "orientation_policy": "final",
+      "fixture_sha256": "e032f870c49f30f6146869d8897cb0964b1cd3c41a8deae418592c6f3621fec7",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 1
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 1,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "df82abc330eeac65d2cb802c59258b922b53fc9109fa0c5c04f9115059e5085d",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.3469836190342903,
+          0.35005326475948095,
+          0.4043016657233238
+        ],
+        "median_seconds": 0.35005326475948095,
+        "min_seconds": 0.3469836190342903,
+        "max_seconds": 0.4043016657233238,
+        "warmup_call_seconds": [
+          0.4643599772825837
+        ],
+        "fixture_and_inventory_seconds": 3.781895026564598,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549183488,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549183488,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 1,
+          "n_accepted_steps": 1,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 0,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "checkpoint_full_seed",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "e032f870c49f30f6146869d8897cb0964b1cd3c41a8deae418592c6f3621fec7",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 1
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 1,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "e7f515a1fef3c77d0507cadb332f14ac15698b373fdf6842d7df03c796685309",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          0.3544153720140457,
+          0.3504539867863059,
+          0.3508062828332186
+        ],
+        "median_seconds": 0.3508062828332186,
+        "min_seconds": 0.3504539867863059,
+        "max_seconds": 0.3544153720140457,
+        "warmup_call_seconds": [
+          0.4628837229683995
+        ],
+        "fixture_and_inventory_seconds": 3.8139465944841504,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549208064,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549208064,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 1,
+          "n_accepted_steps": 0,
+          "n_rejected_steps": 1,
+          "termination": "initial_seed_failed_growth_constraints",
+          "final_accepted_step_index": null,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "rigid_mixed_5",
+      "orientation_policy": "final",
+      "fixture_sha256": "6cac15b4bb45ea0d5dc4541c479d5df6aaf403eee7a4cea226919b80ef6a5018",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 5,
+        "n_fits": 3
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 3,
+        "max_matches": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "c4dca81095727c9d44522c50749bf5cb722029098aebd64b80b389f588c4751b",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.2512144166976213,
+          1.1829915633425117,
+          1.1806498123332858
+        ],
+        "median_seconds": 1.1829915633425117,
+        "min_seconds": 1.1806498123332858,
+        "max_seconds": 1.2512144166976213,
+        "warmup_call_seconds": [
+          1.2462914157658815
+        ],
+        "fixture_and_inventory_seconds": 3.9544777730479836,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549830656,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549994496,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 3,
+          "n_accepted_steps": 3,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 2,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "rigid_mixed_5",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "6cac15b4bb45ea0d5dc4541c479d5df6aaf403eee7a4cea226919b80ef6a5018",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 5,
+        "n_fits": 3
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 3,
+        "max_matches": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "8e25c600feea9e8cbb0a29bf86643b35619a85114a2f4b0a448c44686544d811",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.229128167964518,
+          1.262929692864418,
+          1.2694227620959282
+        ],
+        "median_seconds": 1.262929692864418,
+        "min_seconds": 1.229128167964518,
+        "max_seconds": 1.2694227620959282,
+        "warmup_call_seconds": [
+          1.1946087898686528
+        ],
+        "fixture_and_inventory_seconds": 3.898173002526164,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549982208,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550146048,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 3,
+          "n_accepted_steps": 3,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 2,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "reflection_mixed_5",
+      "orientation_policy": "final",
+      "fixture_sha256": "f5a2f0e37c6691d564a7234e892701e32bdf323629fdf1649cc401f4bf5b1e56",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 3
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 3,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "2d309b3fca21836883491269a5b91129f94a11118ea38fed690f98dd2e7a53e4",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.1010724641382694,
+          1.0889527760446072,
+          1.0909973252564669
+        ],
+        "median_seconds": 1.0909973252564669,
+        "min_seconds": 1.0889527760446072,
+        "max_seconds": 1.1010724641382694,
+        "warmup_call_seconds": [
+          1.1812579277902842
+        ],
+        "fixture_and_inventory_seconds": 3.7436089431867003,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 550076416,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550240256,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 3,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 1,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [
+            [
+              4,
+              4
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "reflection_mixed_5",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "f5a2f0e37c6691d564a7234e892701e32bdf323629fdf1649cc401f4bf5b1e56",
+      "expected": {
+        "n_placements": 0,
+        "max_matches": 0,
+        "n_fits": 3
+      },
+      "outcome": {
+        "n_placements": 0,
+        "n_fits": 3,
+        "max_matches": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "b448cd326c4a5dd304544958f62536b42b02da936f08ab8e22bdc90df5ba1b6f",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.111969193443656,
+          1.1258039800450206,
+          1.1086458023637533
+        ],
+        "median_seconds": 1.111969193443656,
+        "min_seconds": 1.1086458023637533,
+        "max_seconds": 1.1258039800450206,
+        "warmup_call_seconds": [
+          1.213988235220313
+        ],
+        "fixture_and_inventory_seconds": 3.744337508454919,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549724160,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549888000,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "n_fits": 3,
+          "n_accepted_steps": 2,
+          "n_rejected_steps": 1,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 1,
+          "selected_step_index": null,
+          "permanently_rejected_pairs": [
+            [
+              4,
+              4
+            ]
+          ],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "rigid_donors_6",
+      "orientation_policy": "final",
+      "fixture_sha256": "40d9513ce48136ea2aa667e781d705068e37dd7680ad9d67a3c0a18ade30785c",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 6,
+        "n_fits": 4
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 4,
+        "max_matches": 6
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "6cbfeb7204c23f780aeac4d3d6c46c162a33cc52a8c111760c67fe335e8f10d8",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.2832329822704196,
+          1.2816046420484781,
+          1.278384285978973
+        ],
+        "median_seconds": 1.2816046420484781,
+        "min_seconds": 1.278384285978973,
+        "max_seconds": 1.2832329822704196,
+        "warmup_call_seconds": [
+          1.2897149501368403
+        ],
+        "fixture_and_inventory_seconds": 3.777414022013545,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 550088704,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550088704,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 4,
+          "n_accepted_steps": 4,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 3,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "rigid_donors_6",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "40d9513ce48136ea2aa667e781d705068e37dd7680ad9d67a3c0a18ade30785c",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 6,
+        "n_fits": 4
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 4,
+        "max_matches": 6
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "c8d897626860aa7a1107fc0c0ea328e173dcd845e27677aed41515c16aceb141",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          1.2699004095047712,
+          1.2616471853107214,
+          1.2679375456646085
+        ],
+        "median_seconds": 1.2679375456646085,
+        "min_seconds": 1.2616471853107214,
+        "max_seconds": 1.2699004095047712,
+        "warmup_call_seconds": [
+          1.2794908722862601
+        ],
+        "fixture_and_inventory_seconds": 3.7653435869142413,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 550125568,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550289408,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 4,
+          "n_accepted_steps": 4,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 3,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "rigid_donors_12",
+      "orientation_policy": "final",
+      "fixture_sha256": "8030c21baee485582c75c562016fac5197a94513c46dc5069a9f78c88d772403",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 12,
+        "n_fits": 10
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 10,
+        "max_matches": 12
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "b73c3f08e9375664767ba0c4060fd62a303862b469b7103e5c4b4338f1275a29",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          4.156511875800788,
+          4.179216584190726,
+          4.145755532197654
+        ],
+        "median_seconds": 4.156511875800788,
+        "min_seconds": 4.145755532197654,
+        "max_seconds": 4.179216584190726,
+        "warmup_call_seconds": [
+          4.206423123367131
+        ],
+        "fixture_and_inventory_seconds": 3.906622930429876,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 552243200,
+        "process_lifetime_peak_rss_bytes_after_measurements": 552407040,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 10,
+          "n_accepted_steps": 10,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 9,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    },
+    {
+      "case_id": "rigid_donors_12",
+      "orientation_policy": "each_step",
+      "fixture_sha256": "8030c21baee485582c75c562016fac5197a94513c46dc5069a9f78c88d772403",
+      "expected": {
+        "n_placements": 1,
+        "max_matches": 12,
+        "n_fits": 10
+      },
+      "outcome": {
+        "n_placements": 1,
+        "n_fits": 10,
+        "max_matches": 12
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "d6118e8ddfbac81a12fff62963266a876a0f3d6138fc4e7830ceeae8da529eec",
+      "source_hashes_unchanged": true,
+      "timing": {
+        "samples_seconds": [
+          4.369481821544468,
+          4.776898704469204,
+          4.8472949732095
+        ],
+        "median_seconds": 4.776898704469204,
+        "min_seconds": 4.369481821544468,
+        "max_seconds": 4.8472949732095,
+        "warmup_call_seconds": [
+          4.237312329001725
+        ],
+        "fixture_and_inventory_seconds": 3.72311569750309,
+        "scope": "refine_rigid_feature_correspondences only; prepared inventory inputs; setup, warmup, GC, hashing, serialization and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 552509440,
+        "process_lifetime_peak_rss_bytes_after_measurements": 552673280,
+        "scope": "whole worker lifetime high-water RSS including imports/preparation/warmups; not incremental allocations; citation call excluded"
+      },
+      "attribution_status": "captured",
+      "refinement_seeds": [
+        {
+          "proposal_index": 0,
+          "initial_correspondence": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "n_fits": 10,
+          "n_accepted_steps": 10,
+          "n_rejected_steps": 0,
+          "termination": "no_remaining_pairs",
+          "final_accepted_step_index": 9,
+          "selected_step_index": 1,
+          "permanently_rejected_pairs": [],
+          "complete": true
+        }
+      ]
+    }
+  ]
+}

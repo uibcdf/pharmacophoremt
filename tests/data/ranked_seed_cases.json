@@ -1,0 +1,587 @@
+{
+  "schema": "pharmacophoremt.analytical_rigid_cases@1",
+  "unit": "nm",
+  "preparation": "Declared fragment chemistry and analytical coordinates; no biological or conformer-energy validation.",
+  "cases": [
+    {
+      "case_id": "rigid_typed_5",
+      "smiles": "CCC.[2H]O.C=O.[NH4+]",
+      "reference_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.15,
+          0,
+          0
+        ],
+        [
+          0.3,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0.3,
+          0.6,
+          0
+        ],
+        [
+          0.3,
+          0.5,
+          0
+        ],
+        [
+          0.05,
+          0.2,
+          0.7
+        ]
+      ],
+      "source_motion": "rotate_translate",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "completed",
+          "max_joint_sites": 5
+        },
+        "triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 5
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 5,
+          "n_models": 1
+        }
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      }
+    },
+    {
+      "case_id": "reflection_typed_5",
+      "smiles": "CCC.[2H]O.C=O.[NH4+]",
+      "reference_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.15,
+          0,
+          0
+        ],
+        [
+          0.3,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0.3,
+          0.6,
+          0
+        ],
+        [
+          0.3,
+          0.5,
+          0
+        ],
+        [
+          0.05,
+          0.2,
+          0.7
+        ]
+      ],
+      "source_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.15,
+          0,
+          0
+        ],
+        [
+          0.3,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0.3,
+          0.6,
+          0
+        ],
+        [
+          0.3,
+          0.5,
+          0
+        ],
+        [
+          0.05,
+          0.2,
+          -0.7
+        ]
+      ],
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "completed_empty",
+          "max_joint_sites": 0
+        },
+        "triplet_seeds": {
+          "status": "completed_empty",
+          "max_joint_sites": 0
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed_empty",
+          "max_joint_sites": 0
+        }
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      }
+    },
+    {
+      "case_id": "symmetric_3",
+      "smiles": "[Na+].[K+].[Li+]",
+      "reference_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0.2,
+          0.34641016151377546,
+          0
+        ]
+      ],
+      "source_motion": "rotate_translate",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "completed",
+          "max_joint_sites": 3,
+          "n_models": 6
+        },
+        "triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 3,
+          "n_models": 6
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 3,
+          "n_models": 1
+        }
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      }
+    },
+    {
+      "case_id": "warped_square",
+      "smiles": "[Na+].COC.[K+].COC",
+      "reference_coordinates": [
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          -0.1,
+          -1,
+          1
+        ],
+        [
+          0,
+          -1,
+          1
+        ],
+        [
+          0.1,
+          -1,
+          1
+        ],
+        [
+          0,
+          -1,
+          -1
+        ],
+        [
+          -0.1,
+          1,
+          -1
+        ],
+        [
+          0,
+          1,
+          -1
+        ],
+        [
+          0.1,
+          1,
+          -1
+        ]
+      ],
+      "source_coordinates": [
+        [
+          0.11,
+          1,
+          1
+        ],
+        [
+          -0.21,
+          -1,
+          1
+        ],
+        [
+          -0.11,
+          -1,
+          1
+        ],
+        [
+          -0.01,
+          -1,
+          1
+        ],
+        [
+          0.11,
+          -1,
+          -1
+        ],
+        [
+          -0.21,
+          1,
+          -1
+        ],
+        [
+          -0.11,
+          1,
+          -1
+        ],
+        [
+          -0.01,
+          1,
+          -1
+        ]
+      ],
+      "parameters": {
+        "features": [
+          "positive charge",
+          "hb acceptor"
+        ],
+        "distance_tolerance": "0.10 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "completed_empty",
+          "max_joint_sites": 0,
+          "n_models": 0
+        },
+        "triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 3,
+          "n_models": 16
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 3,
+          "n_models": 1
+        }
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      }
+    },
+    {
+      "case_id": "empty_source",
+      "smiles": "CCC.[2H]O.C=O.[NH4+]",
+      "reference_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.15,
+          0,
+          0
+        ],
+        [
+          0.3,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0.5,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ],
+        [
+          0.3,
+          0.6,
+          0
+        ],
+        [
+          0.3,
+          0.5,
+          0
+        ],
+        [
+          0.05,
+          0.2,
+          0.7
+        ]
+      ],
+      "source_smiles": "[Ne]",
+      "source_coordinates": [
+        [
+          2,
+          1,
+          3
+        ]
+      ],
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "completed_empty",
+          "max_joint_sites": 0
+        },
+        "triplet_seeds": {
+          "status": "completed_empty",
+          "max_joint_sites": 0
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed_empty",
+          "max_joint_sites": 0
+        }
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      }
+    },
+    {
+      "case_id": "fit_budget_failure",
+      "smiles": "[Na+].[K+].[Li+]",
+      "reference_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0.2,
+          0.34641016151377546,
+          0
+        ]
+      ],
+      "source_motion": "rotate_translate",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "max_fits": 1
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "failed",
+          "error_code": "PHMT-E107"
+        },
+        "triplet_seeds": {
+          "status": "failed",
+          "error_code": "PHMT-E107"
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 3,
+          "n_models": 1
+        }
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      }
+    },
+    {
+      "case_id": "ranked_reflection_false_negative",
+      "smiles": "[Na+].[K+].[Cl-].[Br-]",
+      "reference_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0.2,
+          0.34641016151377546,
+          0
+        ],
+        [
+          0.2,
+          0.11547005383792515,
+          0.32659863237109044
+        ]
+      ],
+      "source_coordinates": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0,
+          0
+        ],
+        [
+          0.2,
+          0.34641016151377546,
+          0
+        ],
+        [
+          0.2,
+          0.11547005383792515,
+          -0.32659863237109044
+        ]
+      ],
+      "parameters": {
+        "features": [
+          "positive charge",
+          "negative charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 4,
+        "min_sites": 4
+      },
+      "strategy_parameters": {
+        "ranked_triplet_seeds": {
+          "n_seeds": 1
+        }
+      },
+      "expected": {
+        "association_cliques": {
+          "status": "completed",
+          "max_joint_sites": 4
+        },
+        "triplet_seeds": {
+          "status": "completed",
+          "max_joint_sites": 4,
+          "n_models": 8
+        },
+        "ranked_triplet_seeds": {
+          "status": "completed_empty",
+          "max_joint_sites": 0,
+          "n_models": 0
+        }
+      }
+    }
+  ]
+}

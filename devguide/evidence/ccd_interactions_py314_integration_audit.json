@@ -1,0 +1,67 @@
+{
+  "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+  "before": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 134,
+      "python_source_sha256": "d0fe2ae129cda5597c7144fa2748d524443183e316a47ff4fd29f9d1d31a9a9f"
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "python_file_count": 2820,
+      "python_source_sha256": "722c17be6e51624588141fd94ca0ff7977c42df0b9a57a8902cbed8cd323f3f2"
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 77,
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c"
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 62,
+      "python_source_sha256": "0dbffc09191c44c08ef9d04bde9bc284114e4b5b11f656c81364cdff769802d2"
+    }
+  },
+  "after": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 134,
+      "python_source_sha256": "d0fe2ae129cda5597c7144fa2748d524443183e316a47ff4fd29f9d1d31a9a9f"
+    },
+    "molsysmt": {
+      "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+      "python_file_count": 2821,
+      "python_source_sha256": "83d64abce3f4fe09d816627a9d1df860fb0b606db8c7021602b44b178ed6954d"
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 77,
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c"
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 62,
+      "python_source_sha256": "0dbffc09191c44c08ef9d04bde9bc284114e4b5b11f656c81364cdff769802d2"
+    }
+  },
+  "producer_sources_unchanged": false,
+  "pytest_exit_code": 0,
+  "schema": "pharmacophoremt.local_source_integration_audit@1",
+  "scope": "full_local_suite_with_concurrently_changing_live_molsysmt_not_fixed_provider_qualification",
+  "n_passed": 506,
+  "elapsed_seconds": 634.91,
+  "n_warnings": 8,
+  "source_stability_gate": "failed",
+  "reason": "live_molsysmt_python_sources_changed_during_tests",
+  "test_log": {
+    "path": "ccd_interactions_py314_integration.log",
+    "sha256": "4af5ebf33aab11bbc6926042e777a5453e52d3d07f9e0a37237b970a2a2f8895",
+    "bytes": 730
+  },
+  "focused_snapshot_controls": {
+    "n_passed": 30,
+    "elapsed_seconds": 137.39,
+    "molsysmt_python_source_sha256": "1e5254ebc5d35a93f25d1039a4f5b30adbd5c7a5c2882875dbab708cec107b4f"
+  }
+}

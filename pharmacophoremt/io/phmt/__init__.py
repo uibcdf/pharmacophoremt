@@ -19,6 +19,8 @@ def _to_dict(pharmacophore):
         "score": pharmacophore.score,
         "ref_mol": pharmacophore.ref_mol,
         "ref_struct": pharmacophore.ref_struct,
+        "metadata": pharmacophore.metadata,
+        "units": {"length": "nm", "direction": "dimensionless"},
         "interaction_sites": [],
     }
 
@@ -80,7 +82,9 @@ def _to_dict(pharmacophore):
         }
         data["interaction_sites"].append(site_dict)
 
-    return data
+    from pharmacophoremt._private.molsysmt import detached
+
+    return detached(data)
 
 
 def _from_dict(data):
@@ -99,6 +103,13 @@ def _from_dict(data):
         raise ValueError(
             "Not a valid PharmacophoreMT file (missing 'software: pharmacophoremt')"
         )
+    if data.get("units", {"length": "nm", "direction": "dimensionless"}) != {
+        "length": "nm",
+        "direction": "dimensionless",
+    }:
+        raise ValueError(
+            "Native pharmacophore files use nm lengths and dimensionless directions"
+        )
 
     ph = Pharmacophore(
         name=data.get("name"),
@@ -107,6 +118,10 @@ def _from_dict(data):
         ref_mol=data.get("ref_mol"),
         ref_struct=data.get("ref_struct"),
     )
+
+    from copy import deepcopy
+
+    ph.metadata = deepcopy(data.get("metadata", {}))
 
     for s_data in data.get("interaction_sites", []):
         features = s_data["features"]
@@ -215,7 +230,7 @@ def to_yaml(pharmacophore, file_name):
     """
     data = _to_dict(pharmacophore)
     with open(file_name, "w") as f:
-        yaml.dump(data, f, sort_keys=False, allow_unicode=True)
+        yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True)
 
 
 def load_yaml(file_name):

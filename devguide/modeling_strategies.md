@@ -1,5 +1,13 @@
 # Modeling Strategies and the Modeler Engine
 
+**2026-10-02 revision:** The current [growth contracts](extensible_modeling_contracts.md)
+and [roadmap](roadmap.md) supersede the older implementation proposals below.
+Molecular preparation/recognition/geometry belongs in MolSysMT. Prepared inputs
+and chemical-state choices must be explicit; no unconditional pH/tautomer or
+salt transformation is required. Inactive-only features do not establish steric
+excluded volumes. See the native workflow documents for measured current scope.
+
+
 This document defines the architecture for pharmacophore generation in PharmacophoreMT through the **Modeler** engine. It covers all three classical strategies and the planned dynamic approach.
 
 ---
@@ -16,13 +24,16 @@ All modeling engines follow a common workflow:
 3. **Configure**: Set distance cutoffs, feature types to include, etc.
 4. **Build**: Execute the algorithm and return a `Pharmacophore` object.
 
-**Rule:** The `build()` method must always call molecular preparation internally (or assert it has been done) so that the user does not need to manually run preparation steps.
+**Current rule:** Validate the declared input prerequisites. If a workflow
+requests preparation, call a public MolSysMT provider with explicit scientific
+policies and retain its provenance. Otherwise consume the prepared source
+without hidden chemical transformations.
 
 ---
 
 ## 2. Molecular Preparation (Prerequisite for All Modelers)
 
-Before any feature detection, inputs must be standardized. This is handled by the `pharmacophoremt.utils.preparation` module.
+Molecular standardization and preparation are MolSysMT responsibilities. The historical local preparation proposals below require provider migration before adoption.
 
 ### 2.1 Ligand Preparation
 - **Protonation state at pH 7.4**: Use pKa-based assignment (integration with `rdkit.Chem.MolStandardize` or Dimorphite-DL).
@@ -68,6 +79,13 @@ Protein features are detected using `PROTEIN_SMARTS`, which must be a **separate
 After all interaction sites are added, nearby sites of the **same feature type** must be merged using the existing `_merge_interaction_sites()` clique algorithm. Currently this is called only for hydrophobicity. It must be called for all feature types with type-appropriate thresholds.
 
 ### 3.2 LigandBasedModeler
+
+**Current audit:** This legacy scaffold is not validated native consensus.
+The [distance/clique review](clique_consensus_review.md) records executable
+counterexamples and compares RDP, DISCO, frequent labeled cliques and weighted
+search. Issue #18 owns correction/replacement. The first native consensus should
+consume prepared aligned ligands, then validate graph discovery against that
+reference. The historical recipe below is not an accepted implementation contract.
 
 **Inputs:** Multiple active molecules (with 3D conformers, generated internally if absent).
 **Goal:** Find the consensus pharmacophore — the common 3D feature pattern shared by all (or most) actives.
@@ -180,7 +198,7 @@ ph_combined = ph_complex.merge(ph_ligand)        # union of sites
 | :--- | :--- | :--- |
 | `ComplexBasedModeler` (core HB, hydrophobic, charge, halogen, metal) | Done | |
 | `ComplexBasedModeler` (pi-stacking, cation-pi, excluded volumes, global merging) | **Gen 1b** | |
-| `LigandBasedModeler` (distance-based consensus, scoring) | Done | |
+| `LigandBasedModeler` (distance-based consensus, scoring) | Legacy scaffold; defects measured | See #18 and the distance/clique review |
 | `LigandBasedModeler` (conformer integration, directional features, negative modeling, weighting) | **Gen 1b** | |
 | `StructureBasedModeler` (feature projection, charge complementarity) | Done | |
 | `StructureBasedModeler` (pocket fallback, excluded volumes) | **Gen 1b** | |

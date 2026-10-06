@@ -1,0 +1,1112 @@
+{
+  "schema": "pharmacophoremt.analytical_rigid_comparison_summary@1",
+  "recorded_at_utc": "2026-10-03T10:41:10.168464+00:00",
+  "fixture_file": "/home/diego/repos@uibcdf/pharmacophoremt/tests/data/rigid_consensus_cases.json",
+  "fixture_file_sha256": "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0",
+  "driver_sha256": "52e4121d07978e3caa3624c6decaa2362ab534a44724f11c341b1402cdf5e811",
+  "case_builder_sha256": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+  "source_head": "228355a70a691c7594244189a3bed4acc437c8c2",
+  "repetitions": 3,
+  "warmups": 1,
+  "worker_timeout_seconds": 120,
+  "fixture_scope": "analytical fragment controls; not biological validation or a universal strategy ranking",
+  "full_evidence": {
+    "path": "rigid_consensus_py314.json.gz",
+    "compression": "gzip",
+    "compressed_sha256": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "uncompressed_sha256": "3402ac2afba052434d9956f0e53404571f8d680e74d180716955e9b6c5a98a32"
+  },
+  "source_working_state": "M .github/workflows/CI.yaml\n M .github/workflows/molsyssuite-policy.yml\n M ACKREDIT_GUIDE.md\n M AGENTS.md\n M MOLSYSSUITE_GUIDE.md\n M README.md\n M devguide/archive/complex_pdb_feature_recovery.md\n M devguide/checkpoint.md\n M devguide/classical_workflow.md\n M devguide/core_architecture.md\n M devguide/modeling_strategies.md\n M devguide/pending_bugs/README.md\n M devguide/pending_proposals/README.md\n M devguide/pending_proposals/review_python_ecosystem_policy_adoption.md\n M devguide/roadmap.md\n M devtools/ci_backlog.py\n M devtools/conda-build/meta.yaml\n M devtools/conda-build/release_plan.example.toml\n M devtools/conda-build/resources.toml\n M devtools/conda-envs/test_env_py313.yaml\n M devtools/requirements.yaml\n M devtools/requirements/controlled_suite_dependencies.txt\n M docs/content/user/index.md\n M docs/index.ipynb\n M pharmacophoremt/__init__.py\n M pharmacophoremt/_depdigest.py\n M pharmacophoremt/_private/arg_digestion/argument/center.py\n M pharmacophoremt/_private/arg_digestion/argument/direction.py\n M pharmacophoremt/_private/arg_digestion/argument/end.py\n M pharmacophoremt/_private/arg_digestion/argument/features.py\n M pharmacophoremt/_private/arg_digestion/argument/normal.py\n M pharmacophoremt/_private/arg_digestion/argument/position.py\n M pharmacophoremt/_private/arg_digestion/argument/radius.py\n M pharmacophoremt/_private/arg_digestion/argument/sigma.py\n M pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py\n M pharmacophoremt/_private/arg_digestion/argument/start.py\n M pharmacophoremt/_private/smonitor/catalog.py\n M pharmacophoremt/_private/smonitor/emitter.py\n M pharmacophoremt/_private/smonitor/exceptions.py\n M pharmacophoremt/_smonitor.py\n M pharmacophoremt/data/README.md\n M pharmacophoremt/interaction_site/interaction_site.py\n M pharmacophoremt/interaction_site/shape/disk.py\n M pharmacophoremt/interaction_site/shape/sphere_and_vector.py\n M pharmacophoremt/io/phmt/__init__.py\n M pharmacophoremt/modeler/__init__.py\n M pharmacophoremt/modeler/dispatcher.py\n M pharmacophoremt/pharmacophore.py\n M pharmacophoremt/screening/__init__.py\n M pharmacophoremt/screening/virtual_screening.py\n M pharmacophoremt/validation/__init__.py\n M pharmacophoremt/validation/metrics.py\n M pharmacophoremt/validation/retrospective.py\n M pyproject.toml\n M tests/test_ci_backlog.py\n M tests/test_ci_routes.py\n M tests/test_molsysviewer_pharmacophoremt_addon.py\n M tests/test_reporting_protocol.py\n M tests/test_validation_eralpha.py\n?? devguide/aligned_clique_consensus_workflow.md\n?? devguide/aligned_consensus_workflow.md\n?? devguide/clique_consensus_review.md\n?? devguide/conformer_screening_workflow.md\n?? devguide/eralpha_validation.md\n?? devguide/extensible_modeling_contracts.md\n?? devguide/pending_bugs/catalog_diagnostic_rendering.md\n?? devguide/pending_bugs/legacy_clique_consensus.md\n?? devguide/pending_bugs/provenance_strings_interpreted_as_quantities.md\n?? devguide/pending_bugs/ranking_and_retrospective_accounting.md\n?? devguide/pending_bugs/zero_angle_roundoff.md\n?? devguide/pending_proposals/adopt_required_python_314.md\n?? devguide/pending_proposals/modular_rigid_strategy_comparison.md\n?? devguide/pending_proposals/molsysmt_placed_pose_workflow.md\n?? devguide/pending_proposals/native_ackredit_attribution.md\n?? devguide/pending_proposals/native_aligned_clique_consensus.md\n?? devguide/pending_proposals/native_aligned_consensus.md\n?? devguide/pending_proposals/native_conformer_screening.md\n?? devguide/pending_proposals/native_eralpha_validation.md\n?? devguide/pending_proposals/native_reference_ligand_workflow.md\n?? devguide/pending_proposals/native_rigid_consensus.md\n?? devguide/pending_proposals/native_rigid_pose_search.md\n?? devguide/pending_proposals/validation_benchmark_publication.md\n?? devguide/pharmacophore_search_strategies.md\n?? devguide/placed_pose_workflow.md\n?? devguide/reference_ligand_workflow.md\n?? devguide/rigid_consensus_workflow.md\n?? devguide/rigid_search_workflow.md\n?? devguide/rigid_strategy_comparison.md\n?? devtools/audit_eralpha.py\n?? devtools/audit_eralpha_sources.py\n?? devtools/audit_legacy_cliques.py\n?? devtools/benchmark_rigid_consensus.py\n?? devtools/conda-envs/test_env_py314.yaml\n?? devtools/requirements/controlled_suite_dependencies_py314.txt\n?? devtools/rigid_consensus_cases.py\n?? docs/content/cookbook/\n?? pharmacophoremt/_ackredit.py\n?? pharmacophoremt/_private/arg_digestion/argument/_contracts.py\n?? pharmacophoremt/_private/molsysmt.py\n?? pharmacophoremt/_private/pose_batch.py\n?? pharmacophoremt/_private/references.py\n?? pharmacophoremt/_private/smonitor/warnings.py\n?? pharmacophoremt/_private/viewer.py\n?? pharmacophoremt/attribution.py\n?? pharmacophoremt/modeler/aligned_cliques.py\n?? pharmacophoremt/modeler/aligned_consensus.py\n?? pharmacophoremt/modeler/features.py\n?? pharmacophoremt/modeler/interaction_based.py\n?? pharmacophoremt/modeler/reference_ligand.py\n?? pharmacophoremt/modeler/rigid_consensus.py\n?? pharmacophoremt/screening/alignment.py\n?? pharmacophoremt/screening/conformer_screening.py\n?? pharmacophoremt/screening/correspondence.py\n?? pharmacophoremt/screening/pose_evaluation.py\n?? pharmacophoremt/screening/rigid_correspondence.py\n?? pharmacophoremt/screening/rigid_placements.py\n?? pharmacophoremt/screening/rigid_search.py\n?? pharmacophoremt/validation/rigid_consensus.py\n?? tests/data/eralpha_audit.json\n?? tests/data/eralpha_rcsb/\n?? tests/data/rigid_consensus_cases.json\n?? tests/test_aligned_cliques.py\n?? tests/test_aligned_consensus.py\n?? tests/test_attribution.py\n?? tests/test_conformer_screening.py\n?? tests/test_contracts.py\n?? tests/test_modular_rigid_tools.py\n?? tests/test_pose_evaluation.py\n?? tests/test_reference_ligand.py\n?? tests/test_retrospective.py\n?? tests/test_rigid_consensus.py\n?? tests/test_rigid_search.py\n?? tests/test_rigid_strategy_comparison.py\n?? tests/test_validation_metrics.py",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-28-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "processor": "x86_64",
+    "cpu_count": 20,
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "RAYON_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "molsysmt_policy": {
+      "parallel": false,
+      "num_threads": 1
+    },
+    "packages": {
+      "pharmacophoremt": {
+        "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+92.g228355a.dirty",
+        "python_source_sha256": "7d2c85fdb98e23768bece7e3f0d71e4ad7ca857cd56919729ea9b8f70a395a43",
+        "python_file_count": 123
+      },
+      "molsysmt": {
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+24.g42b487869",
+        "python_source_sha256": "bd9e478d5f5ea174ecc3c94b5f3fbcb1cac0434718bc9f03098181f7f2acc701",
+        "python_file_count": 2799
+      },
+      "pyunitwizard": {
+        "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.27.0",
+        "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c",
+        "python_file_count": 77
+      },
+      "ackredit": {
+        "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+        "version": "0.8.0+52.g15b1958.dirty",
+        "python_source_sha256": "14f688a4445f5c4ae61ba6893d33f91f34505213364b7cc317d42e44582b6cae",
+        "python_file_count": 62
+      }
+    },
+    "versions": {
+      "numpy": "2.4.6",
+      "scipy": "1.18.1",
+      "networkx": "3.7"
+    },
+    "molecular_extensions": [
+      {
+        "module": "molsysmt._rust",
+        "path": "/home/diego/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "76f5dd6c8ee8c97428d6727bd80df5468fcf3e8f68838d9798c7e3ccd150a79c"
+      }
+    ]
+  },
+  "provider_source_and_extension_hashes_identical_across_workers": true,
+  "records": [
+    {
+      "case_id": "rigid_typed_5",
+      "strategy": "association_cliques",
+      "fixture_sha256": "f31627edfd41fc4a278c3e2e82e0feb107f701000e8d1d2abb2edf7af28bf992",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "73e10e6546f322a443b7d3f54d334c864810eccf5612176b21d7e4b05ea01310",
+      "timing": {
+        "samples_seconds": [
+          1.3937386889010668,
+          1.326402522623539,
+          1.2935820817947388
+        ],
+        "median_seconds": 1.326402522623539,
+        "min_seconds": 1.2935820817947388,
+        "max_seconds": 1.3937386889010668,
+        "warmup_call_seconds": [
+          1.397726827301085
+        ],
+        "imports_and_fixture_seconds": 5.604101735167205,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549724160,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549888000,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 5,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_pruned": 1,
+                "n_graph_nodes": 7,
+                "n_graph_edges": 15,
+                "n_maximal_cliques": 2
+              },
+              "n_fits": 1,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "max_joint_sites": 5
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "rigid_typed_5",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "f31627edfd41fc4a278c3e2e82e0feb107f701000e8d1d2abb2edf7af28bf992",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 5
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "dc20f8f8dcc665ee964d027be03f643623791a005b0865dac41d29f6b0786e9e",
+      "timing": {
+        "samples_seconds": [
+          7.972567335702479,
+          8.131721824407578,
+          7.913821020163596
+        ],
+        "median_seconds": 7.972567335702479,
+        "min_seconds": 7.913821020163596,
+        "max_seconds": 8.131721824407578,
+        "warmup_call_seconds": [
+          7.467973119579256
+        ],
+        "imports_and_fixture_seconds": 5.261454313062131,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 553435136,
+        "process_lifetime_peak_rss_bytes_after_measurements": 554090496,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 5,
+              "n_proposals": 11,
+              "proposal_counts": {
+                "n_trials": 17,
+                "n_pruned": 6
+              },
+              "n_fits": 11,
+              "n_accepted_placements": 7,
+              "n_rejected_placements": 4,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 11,
+          "n_layouts": 7,
+          "n_models": 7,
+          "max_joint_sites": 5
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "reflection_typed_5",
+      "strategy": "association_cliques",
+      "fixture_sha256": "e99b3f34f4b4ec383a8bb0306c39baed5165104b2ec4e473c819bfe23714e5d6",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "496f363037a2373353eaba52bcff346cf376b19e4c497673bff3a86c6976f057",
+      "timing": {
+        "samples_seconds": [
+          0.9045133180916309,
+          0.8895370746031404,
+          0.8741775490343571
+        ],
+        "median_seconds": 0.8895370746031404,
+        "min_seconds": 0.8741775490343571,
+        "max_seconds": 0.9045133180916309,
+        "warmup_call_seconds": [
+          1.0964691722765565
+        ],
+        "imports_and_fixture_seconds": 5.320923511870205,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 548651008,
+        "process_lifetime_peak_rss_bytes_after_measurements": 548978688,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 5,
+              "n_proposals": 1,
+              "proposal_counts": {
+                "n_pruned": 1,
+                "n_graph_nodes": 7,
+                "n_graph_edges": 15,
+                "n_maximal_cliques": 2
+              },
+              "n_fits": 1,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 1,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 0,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "reflection_typed_5",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "e99b3f34f4b4ec383a8bb0306c39baed5165104b2ec4e473c819bfe23714e5d6",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "38aa921f57285661b916bdab0da744f31fe128b904df81ebd80af67c37e93efb",
+      "timing": {
+        "samples_seconds": [
+          4.1260290229693055,
+          4.068559356033802,
+          4.097182773053646
+        ],
+        "median_seconds": 4.097182773053646,
+        "min_seconds": 4.068559356033802,
+        "max_seconds": 4.1260290229693055,
+        "warmup_call_seconds": [
+          4.29215395450592
+        ],
+        "imports_and_fixture_seconds": 5.507212004624307,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549269504,
+        "process_lifetime_peak_rss_bytes_after_measurements": 549433344,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 5,
+              "n_proposals": 11,
+              "proposal_counts": {
+                "n_trials": 17,
+                "n_pruned": 6
+              },
+              "n_fits": 11,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 11,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 11,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "symmetric_3",
+      "strategy": "association_cliques",
+      "fixture_sha256": "2f8ae33eeb477820294c1cff409d38552885ef5f703d4e94daa3dff9fd6fd4d8",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 6
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "b3dc17d4fcc75ba12052f16c291e719b7f2343644f46be14cba03c9ccdd920c2",
+      "timing": {
+        "samples_seconds": [
+          2.66651801019907,
+          2.777469754219055,
+          2.883742444217205
+        ],
+        "median_seconds": 2.777469754219055,
+        "min_seconds": 2.66651801019907,
+        "max_seconds": 2.883742444217205,
+        "warmup_call_seconds": [
+          2.6818050062283874
+        ],
+        "imports_and_fixture_seconds": 4.686887531541288,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549511168,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550330368,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 3,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 3,
+              "n_proposals": 6,
+              "proposal_counts": {
+                "n_pruned": 0,
+                "n_graph_nodes": 9,
+                "n_graph_edges": 18,
+                "n_maximal_cliques": 6
+              },
+              "n_fits": 6,
+              "n_accepted_placements": 6,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "max_joint_sites": 3
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "symmetric_3",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "2f8ae33eeb477820294c1cff409d38552885ef5f703d4e94daa3dff9fd6fd4d8",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 6
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "abff13b159eed7e8c02101fd9e5f582fcdb64d914f029ff8c756cd916d46c7c0",
+      "timing": {
+        "samples_seconds": [
+          2.5937580978497863,
+          2.5750712985172868,
+          2.607024515978992
+        ],
+        "median_seconds": 2.5937580978497863,
+        "min_seconds": 2.5750712985172868,
+        "max_seconds": 2.607024515978992,
+        "warmup_call_seconds": [
+          2.707983090542257
+        ],
+        "imports_and_fixture_seconds": 4.802951784804463,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 549842944,
+        "process_lifetime_peak_rss_bytes_after_measurements": 550498304,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 3,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 3,
+              "n_proposals": 6,
+              "proposal_counts": {
+                "n_trials": 27,
+                "n_pruned": 21
+              },
+              "n_fits": 6,
+              "n_accepted_placements": 6,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 1.0
+            }
+          ],
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "max_joint_sites": 3
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "warped_square",
+      "strategy": "association_cliques",
+      "fixture_sha256": "affb13f5595cfbe27fd7945191ab67a71f0c911e9511f1ebc44f49eddc7af16f",
+      "parameters": {
+        "features": [
+          "positive charge",
+          "hb acceptor"
+        ],
+        "distance_tolerance": "0.10 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0,
+        "n_models": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "d6b4d7b9bafd11e52c5593a219afa5fa48d2ddf02de65be0290c87fcec5a8fed",
+      "timing": {
+        "samples_seconds": [
+          1.3133727749809623,
+          1.2436437895521522,
+          1.2369258450344205
+        ],
+        "median_seconds": 1.2436437895521522,
+        "min_seconds": 1.2369258450344205,
+        "max_seconds": 1.3133727749809623,
+        "warmup_call_seconds": [
+          1.4285714300349355
+        ],
+        "imports_and_fixture_seconds": 4.6299238028004766,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 548110336,
+        "process_lifetime_peak_rss_bytes_after_measurements": 548274176,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 4,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 4,
+              "n_proposals": 4,
+              "proposal_counts": {
+                "n_pruned": 0,
+                "n_graph_nodes": 8,
+                "n_graph_edges": 20,
+                "n_maximal_cliques": 4
+              },
+              "n_fits": 4,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 4,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 0,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 4,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "warped_square",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "affb13f5595cfbe27fd7945191ab67a71f0c911e9511f1ebc44f49eddc7af16f",
+      "parameters": {
+        "features": [
+          "positive charge",
+          "hb acceptor"
+        ],
+        "distance_tolerance": "0.10 nm",
+        "min_matches": 3,
+        "min_sites": 3
+      },
+      "expected": {
+        "status": "completed",
+        "max_joint_sites": 3,
+        "n_models": 16
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "4d994b1e8f660ef01620247772a20928069f5417ac86ca4929e5f9199ba86c57",
+      "timing": {
+        "samples_seconds": [
+          8.551500542089343,
+          8.52705441787839,
+          8.678428638726473
+        ],
+        "median_seconds": 8.551500542089343,
+        "min_seconds": 8.52705441787839,
+        "max_seconds": 8.678428638726473,
+        "warmup_call_seconds": [
+          8.857817580923438
+        ],
+        "imports_and_fixture_seconds": 4.604963070712984,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 555982848,
+        "process_lifetime_peak_rss_bytes_after_measurements": 557129728,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 4,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 4,
+              "max_observed_matches": 4,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "placed",
+              "n_features": 4,
+              "n_proposals": 16,
+              "proposal_counts": {
+                "n_trials": 32,
+                "n_pruned": 16
+              },
+              "n_fits": 16,
+              "n_accepted_placements": 16,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 3,
+              "max_observed_matches": 3,
+              "max_accepted_reference_fraction": 0.75
+            }
+          ],
+          "n_fits": 16,
+          "n_layouts": 16,
+          "n_models": 16,
+          "max_joint_sites": 3
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "empty_source",
+      "strategy": "association_cliques",
+      "fixture_sha256": "0dd5b7ae7ae7da32944d22e4240d12013fab1e047521e271bb175d38d9556a32",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "4accf9cfbfd3e4c894a49927bf8ad15f0a5a1f5780532fbdfd92ffa2f242f6d9",
+      "timing": {
+        "samples_seconds": [
+          0.42633455339819193,
+          0.4247788283973932,
+          0.42279213666915894
+        ],
+        "median_seconds": 0.4247788283973932,
+        "min_seconds": 0.42279213666915894,
+        "max_seconds": 0.42633455339819193,
+        "warmup_call_seconds": [
+          0.4988020034506917
+        ],
+        "imports_and_fixture_seconds": 4.460680950433016,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 473874432,
+        "process_lifetime_peak_rss_bytes_after_measurements": 473874432,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 0,
+              "n_proposals": 0,
+              "proposal_counts": {
+                "n_pruned": 0,
+                "n_graph_nodes": 0,
+                "n_graph_edges": 0,
+                "n_maximal_cliques": 0
+              },
+              "n_fits": 0,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 0,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "empty_source",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "0dd5b7ae7ae7da32944d22e4240d12013fab1e047521e271bb175d38d9556a32",
+      "parameters": {
+        "features": [
+          "hydrophobicity",
+          "hb donor",
+          "hb acceptor",
+          "positive charge"
+        ],
+        "distance_tolerance": "0.02 nm",
+        "min_matches": 5,
+        "min_sites": 5
+      },
+      "expected": {
+        "status": "completed_empty",
+        "max_joint_sites": 0
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "a7412c21b519765618cafd47bd469b35c9dd811468496de41e9f5321729924ed",
+      "timing": {
+        "samples_seconds": [
+          0.5278662294149399,
+          0.5714161321520805,
+          0.5283444272354245
+        ],
+        "median_seconds": 0.5283444272354245,
+        "min_seconds": 0.5278662294149399,
+        "max_seconds": 0.5714161321520805,
+        "warmup_call_seconds": [
+          0.6120157986879349
+        ],
+        "imports_and_fixture_seconds": 4.532609730958939,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 474116096,
+        "process_lifetime_peak_rss_bytes_after_measurements": 474116096,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "completed_empty",
+        "summary": {
+          "method": "pivot_rigid_clique_consensus@1",
+          "complete": true,
+          "n_ligands": 2,
+          "ligand_ids": [
+            "reference",
+            "source"
+          ],
+          "sources": [
+            {
+              "ligand_id": "reference",
+              "status": "pivot",
+              "n_features": 5,
+              "n_proposals": 0,
+              "proposal_counts": {},
+              "n_fits": 0,
+              "n_accepted_placements": 1,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 5,
+              "max_observed_matches": 5,
+              "max_accepted_reference_fraction": 1.0
+            },
+            {
+              "ligand_id": "source",
+              "status": "unplaced",
+              "n_features": 0,
+              "n_proposals": 0,
+              "proposal_counts": {
+                "n_trials": 0,
+                "n_pruned": 0
+              },
+              "n_fits": 0,
+              "n_accepted_placements": 0,
+              "n_rejected_placements": 0,
+              "max_accepted_matches": 0,
+              "max_observed_matches": 0,
+              "max_accepted_reference_fraction": 0.0
+            }
+          ],
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "max_joint_sites": 0
+        }
+      },
+      "attribution_status": "captured"
+    },
+    {
+      "case_id": "fit_budget_failure",
+      "strategy": "association_cliques",
+      "fixture_sha256": "4caf5d882a6fb14412057120acc14795101875e362b8e80da7012ddc401ba410",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "max_fits": 1
+      },
+      "expected": {
+        "status": "failed",
+        "error_code": "PHMT-E107"
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "244b10542d9d82ca6368b266a4319b928ad4b904e7be9603271c4c34310b2a67",
+      "timing": {
+        "samples_seconds": [
+          0.032174876891076565,
+          0.033909738063812256,
+          0.030994138680398464
+        ],
+        "median_seconds": 0.032174876891076565,
+        "min_seconds": 0.030994138680398464,
+        "max_seconds": 0.033909738063812256,
+        "warmup_call_seconds": [
+          0.049872905015945435
+        ],
+        "imports_and_fixture_seconds": 4.610264018177986,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 546652160,
+        "process_lifetime_peak_rss_bytes_after_measurements": 546816000,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "failed",
+        "error_type": "CliqueLimitError",
+        "error_code": "PHMT-E107",
+        "error_message": "Clique consensus requires 6 scheduled fits at stage 'rigid_alignment', exceeding its limit of 1; hypothesis discovery remains unresolved.",
+        "error_context": {
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "api_url": "",
+          "stage": "rigid_alignment",
+          "resource": "scheduled fits",
+          "observed": 6,
+          "limit": 1,
+          "complete": false
+        }
+      },
+      "attribution_status": null
+    },
+    {
+      "case_id": "fit_budget_failure",
+      "strategy": "triplet_seeds",
+      "fixture_sha256": "4caf5d882a6fb14412057120acc14795101875e362b8e80da7012ddc401ba410",
+      "parameters": {
+        "features": [
+          "positive charge"
+        ],
+        "distance_tolerance": "0.01 nm",
+        "min_matches": 3,
+        "min_sites": 3,
+        "max_fits": 1
+      },
+      "expected": {
+        "status": "failed",
+        "error_code": "PHMT-E107"
+      },
+      "expectation_passed": true,
+      "scientific_outputs_stable": true,
+      "scientific_output_sha256": "244b10542d9d82ca6368b266a4319b928ad4b904e7be9603271c4c34310b2a67",
+      "timing": {
+        "samples_seconds": [
+          0.0956356767565012,
+          0.11161475442349911,
+          0.12487522978335619
+        ],
+        "median_seconds": 0.11161475442349911,
+        "min_seconds": 0.0956356767565012,
+        "max_seconds": 0.12487522978335619,
+        "warmup_call_seconds": [
+          0.11696527060121298
+        ],
+        "imports_and_fixture_seconds": 4.566020557656884,
+        "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded"
+      },
+      "memory": {
+        "process_lifetime_peak_rss_bytes_before_measurements": 546652160,
+        "process_lifetime_peak_rss_bytes_after_measurements": 546652160,
+        "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+      },
+      "outcome": {
+        "status": "failed",
+        "error_type": "CliqueLimitError",
+        "error_code": "PHMT-E107",
+        "error_message": "Clique consensus requires 6 scheduled fits at stage 'rigid_alignment', exceeding its limit of 1; hypothesis discovery remains unresolved.",
+        "error_context": {
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "api_url": "",
+          "stage": "rigid_alignment",
+          "resource": "scheduled fits",
+          "observed": 6,
+          "limit": 1,
+          "complete": false
+        }
+      },
+      "attribution_status": null
+    }
+  ]
+}

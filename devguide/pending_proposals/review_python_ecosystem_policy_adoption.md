@@ -81,6 +81,27 @@ catalog defect; `CODES` still has the shape recorded in
 
 ## Resolution
 
+### 2026-10-02 local implementation review
+
+The local working tree now declares SMonitor and DepDigest directly, repairs
+the catalog under `uibcdf/pharmacophoremt#2`, and guards optional viewer
+construction with DepDigest. `tests/test_contracts.py` covers real catalog
+rendering, missing MolSysViewer, exception reconstruction, invalid physical
+inputs and preservation of a non-default unit policy. The native placed-pose
+route uses explicit quantities and retains provider attribution. Its experimental
+dependency pins and verification limits are documented in
+`../placed_pose_workflow.md`.
+
+Native application-level Ackredit participation is now implemented under #19,
+using public capture, application-owned sessions and detached result references.
+The real-provider guard is `tests/test_attribution.py`; its controlled Ackredit
+revision and distribution limits are recorded in the owning report and cookbook.
+
+The support-library review remains partial: legacy molecular paths and clean
+published dependency closure are not established by these local guards. The CI source pins changed to support
+the new tests; prior hosted results above do not validate this working tree.
+No suite inventory adoption update is claimed.
+
 Open for support-library work. The developer-tool review is adopted on the
 evidence above; reassess it if maintained CI routes or published tool pins
 change. Link the eventual support-library guards and final suite inventory

@@ -1,4 +1,4 @@
-# Python 3.13 dependencies follow MolSysMT test_env.yaml at uibcdf/molsysmt@3bcfaf4.
+# Python 3.13 dependencies support the pinned MolSysMT review snapshot in CI.
 # MolSysMT and suite-only Python packages are installed from pinned sources in CI.
 channels:
 - uibcdf

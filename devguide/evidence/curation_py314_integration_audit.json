@@ -1,0 +1,60 @@
+{
+  "schema": "pharmacophoremt.curation_integration_audit@1",
+  "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+  "molsysmt_snapshot_manifest_sha256": "801407d90adacec05b59ffd6e801dc82acb09b5476689f04298e2e7b5b929258",
+  "before": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 136,
+      "python_source_sha256": "d721018bd16f7b3ebe32200f07584d797496dc8b65438ee2271ff39748af506c"
+    },
+    "molsysmt": {
+      "path": "/tmp/phmt-ccd-provider-snapshot/molsysmt",
+      "python_file_count": 2821,
+      "python_source_sha256": "1e5254ebc5d35a93f25d1039a4f5b30adbd5c7a5c2882875dbab708cec107b4f"
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 77,
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c"
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 62,
+      "python_source_sha256": "2edfd47edf88bebff9296f6249797b56c91c84051cc0793edfd5949eada794cc"
+    }
+  },
+  "after": {
+    "pharmacophoremt": {
+      "path": "/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 136,
+      "python_source_sha256": "d721018bd16f7b3ebe32200f07584d797496dc8b65438ee2271ff39748af506c"
+    },
+    "molsysmt": {
+      "path": "/tmp/phmt-ccd-provider-snapshot/molsysmt",
+      "python_file_count": 2821,
+      "python_source_sha256": "1e5254ebc5d35a93f25d1039a4f5b30adbd5c7a5c2882875dbab708cec107b4f"
+    },
+    "pyunitwizard": {
+      "path": "/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 77,
+      "python_source_sha256": "99725e39d1653fb38bbbc50066604518bd8ce9db2e56ff2de7107c9c2b52ea8c"
+    },
+    "ackredit": {
+      "path": "/home/diego/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 62,
+      "python_source_sha256": "8209da967e583501d23919bc76863dcbc2646d14f4f7fc690a08cf24f61c68bc"
+    }
+  },
+  "producer_sources_unchanged": false,
+  "pytest_exit_code": 0,
+  "executed_runner_source": "import hashlib\nimport json\nfrom pathlib import Path\nimport subprocess\nimport sys\n\nproducers = {\n    'pharmacophoremt': Path('/home/diego/repos@uibcdf/pharmacophoremt/pharmacophoremt'),\n    'molsysmt': Path('/tmp/phmt-ccd-provider-snapshot/molsysmt'),\n    'pyunitwizard': Path('/home/diego/repos@uibcdf/pyunitwizard/pyunitwizard'),\n    'ackredit': Path('/home/diego/repos@uibcdf/ackredit/ackredit'),\n}\n\ndef snapshot():\n    result = {}\n    for name, root in producers.items():\n        files = [(str(path.relative_to(root)), hashlib.sha256(path.read_bytes()).hexdigest())\n                 for path in sorted(root.rglob('*.py'))]\n        result[name] = {'path': str(root), 'python_file_count': len(files),\n                       'python_source_sha256': hashlib.sha256(json.dumps(files, sort_keys=True, default=str).encode()).hexdigest()}\n    return result\n\nimport molsysmt\nassert Path(molsysmt.__file__).resolve().parent == producers['molsysmt']\nbefore = snapshot()\nmanifest = json.loads(Path('/tmp/phmt-ccd-provider-snapshot/snapshot.json').read_text())\nassert before['molsysmt']['python_source_sha256'] == manifest['python_source_sha256']\nwith Path('/tmp/phmt-curation-full.log').open('w') as log:\n    completed = subprocess.run([sys.executable, '-m', 'pytest', '--receptor=llm',\n                               '-p', 'no:cacheprovider', '-p', 'no:rerunfailures', 'tests'], stdout=log, stderr=subprocess.STDOUT)\nafter = snapshot()\nreport = {'schema': 'pharmacophoremt.curation_integration_audit@1',\n          'executable': sys.executable, 'python': sys.version,\n          'molsysmt_snapshot_manifest_sha256': hashlib.sha256(Path('/tmp/phmt-ccd-provider-snapshot/snapshot.json').read_bytes()).hexdigest(),\n          'before': before, 'after': after, 'producer_sources_unchanged': before == after,\n          'pytest_exit_code': completed.returncode}\nPath('/tmp/phmt-curation-test-sources.json').write_text(json.dumps(report, indent=2) + '\\n')\nprint('PASS' if before == after and completed.returncode == 0 else 'FAIL')\nraise SystemExit(0 if before == after and completed.returncode == 0 else 1)\n",
+  "executed_runner_sha256": "8682bfcca1f17416508bf4b5e10b807972d00df88bc6614d8111844d04f36cf0",
+  "provider_override": "PYTHONPATH=/tmp/phmt-ccd-provider-snapshot",
+  "verification_files_at_retention": {
+    "tests/test_curation.py": "eb0923a1ad55a0ee4c4b43a89016a08f6848896f8162b6ac940025f89ab537ba",
+    "devtools/interaction_collection_cases.py": "eccd93e17ae29aed0d615348438b97afc028a6ad5eac5d69fbee54a50c3fa1c5",
+    "docs/content/cookbook/pharmacophore_curation.md": "e3846c16c1ecf38fb8cde536cc9d0f0f0527603d1ad1e5d915530cba509d8b72"
+  }
+}

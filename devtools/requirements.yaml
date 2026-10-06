@@ -16,6 +16,11 @@ production:
     - scipy
     - nglview
     - molsysmt
+    - argdigest
+    - smonitor
+    - depdigest
+    - rdkit
+    - networkx
 
 test:
   channels: &test_channels
@@ -58,4 +63,3 @@ conda-build:
   dependencies:
     - anaconda-client
     - conda-build
-

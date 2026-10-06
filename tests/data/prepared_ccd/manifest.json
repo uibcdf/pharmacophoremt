@@ -1,0 +1,155 @@
+{
+  "schema": "pharmacophoremt.prepared_ccd_ligands@1",
+  "recorded_at_utc": "2026-10-03T14:15:45.165282+00:00",
+  "download_documentation": "https://www.rcsb.org/docs/programmatic-access/file-download-services",
+  "reference_doi": "10.1093/bioinformatics/btu789",
+  "preparation": {
+    "native_read": "molsysmt.convert(file:sdf, stereo_engine=rdkit, discard_properties=True)",
+    "aromatic_assignment": "molsysmt.convert(native, rdkit.Mol), then molsysmt.convert(rdkit.Mol, molsysmt.MolSys)",
+    "hydrogens": "Source SDF explicit atoms/coordinates are retained; no addition/removal or generation.",
+    "property_policy": "SD properties excluded explicitly from native domains; original source files retained.",
+    "stereochemistry": "Provider interpretation of source CTAB flags; not independent stereochemical qualification."
+  },
+  "search_features": [
+    "hb donor",
+    "hb acceptor",
+    "aromatic ring"
+  ],
+  "cases": [
+    {
+      "case_id": "EST",
+      "component_name": "Estradiol",
+      "file": "EST_ideal.sdf",
+      "source_url": "https://files.rcsb.org/ligands/download/EST_ideal.sdf",
+      "component_url": "https://www.rcsb.org/ligand/EST",
+      "sha256": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+      "byte_count": 3127,
+      "coordinate_kind": "CCD ideal; not observed protein-bound coordinates",
+      "expected": {
+        "n_atoms": 44,
+        "n_hydrogens": 24,
+        "n_bonds": 47,
+        "all_feature_counts": {
+          "hydrophobicity": 9,
+          "hb donor": 2,
+          "hb acceptor": 2,
+          "aromatic ring": 1
+        },
+        "search_feature_count": 5
+      }
+    },
+    {
+      "case_id": "DES",
+      "component_name": "Diethylstilbestrol",
+      "file": "DES_ideal.sdf",
+      "source_url": "https://files.rcsb.org/ligands/download/DES_ideal.sdf",
+      "component_url": "https://www.rcsb.org/ligand/DES",
+      "sha256": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+      "byte_count": 2817,
+      "coordinate_kind": "CCD ideal; not observed protein-bound coordinates",
+      "expected": {
+        "n_atoms": 40,
+        "n_hydrogens": 20,
+        "n_bonds": 41,
+        "all_feature_counts": {
+          "hydrophobicity": 14,
+          "hb donor": 2,
+          "hb acceptor": 2,
+          "aromatic ring": 2
+        },
+        "search_feature_count": 6
+      }
+    }
+  ],
+  "cross_workloads": [
+    {
+      "case_id": "donor_acceptor_aromatic_30",
+      "parameters": {
+        "correspondence_strategy": "ranked_triplet_seeds",
+        "n_seeds": 4,
+        "refinement_strategy": "greedy",
+        "min_matches": 3,
+        "min_sites": 3,
+        "distance_tolerance": ".20 nm",
+        "max_fits": 100,
+        "features": [
+          "hb donor",
+          "hb acceptor",
+          "aromatic ring"
+        ],
+        "direction_tolerance": "30 degrees"
+      },
+      "expected": {
+        "final": {
+          "n_models": 0,
+          "n_fits": 12,
+          "max_joint_sites": 0
+        },
+        "each_step": {
+          "n_models": 0,
+          "n_fits": 4,
+          "max_joint_sites": 0
+        }
+      }
+    },
+    {
+      "case_id": "acceptor_aromatic_30",
+      "parameters": {
+        "correspondence_strategy": "ranked_triplet_seeds",
+        "n_seeds": 4,
+        "refinement_strategy": "greedy",
+        "min_matches": 3,
+        "min_sites": 3,
+        "distance_tolerance": ".20 nm",
+        "max_fits": 100,
+        "features": [
+          "hb acceptor",
+          "aromatic ring"
+        ],
+        "direction_tolerance": "30 degrees"
+      },
+      "expected": {
+        "final": {
+          "n_models": 1,
+          "n_fits": 2,
+          "max_joint_sites": 3
+        },
+        "each_step": {
+          "n_models": 1,
+          "n_fits": 2,
+          "max_joint_sites": 3
+        }
+      }
+    },
+    {
+      "case_id": "donor_acceptor_aromatic_90",
+      "parameters": {
+        "correspondence_strategy": "ranked_triplet_seeds",
+        "n_seeds": 4,
+        "refinement_strategy": "greedy",
+        "min_matches": 3,
+        "min_sites": 3,
+        "distance_tolerance": ".20 nm",
+        "max_fits": 100,
+        "features": [
+          "hb donor",
+          "hb acceptor",
+          "aromatic ring"
+        ],
+        "direction_tolerance": "90 degrees"
+      },
+      "expected": {
+        "final": {
+          "n_models": 4,
+          "n_fits": 12,
+          "max_joint_sites": 4
+        },
+        "each_step": {
+          "n_models": 2,
+          "n_fits": 8,
+          "max_joint_sites": 4
+        }
+      }
+    }
+  ]
+}
