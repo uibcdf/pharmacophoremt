@@ -274,7 +274,9 @@ class PoseEvaluator:
                 distances[row, column] = distance
         rows, columns = linear_sum_assignment(benefit, maximize=True)
         credit_software("scipy", "pharmacophoremt.screening.PoseEvaluator.assignment")
-        credit_criterion("assignment", "pharmacophoremt.screening.PoseEvaluator.assignment")
+        credit_criterion(
+            "assignment", "pharmacophoremt.screening.PoseEvaluator.assignment"
+        )
         assignments, matched, weight = [], set(), 0.0
         for row, column in zip(rows, columns):
             if (row, column) not in distances:

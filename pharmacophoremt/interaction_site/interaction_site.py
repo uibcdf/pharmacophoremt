@@ -124,5 +124,7 @@ class InteractionSite:
     def __repr__(self):
         essential_str = "" if getattr(self, "essential", True) else ", optional"
         features = getattr(self, "features", [])
-        shape_name = getattr(getattr(self, "shape", None), "shape_name", "uninitialized")
+        shape_name = getattr(
+            getattr(self, "shape", None), "shape_name", "uninitialized"
+        )
         return f"<InteractionSite {features} | {shape_name}{essential_str}>"

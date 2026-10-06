@@ -313,7 +313,9 @@ def test_real_ackredit_captures_solver_branches_and_native_model_roundtrip(tmp_p
     loaded = load_json(filename)
     assert loaded.metadata["attribution"] == payload
     assert loaded.metadata["placements"] == model.metadata["placements"]
-    bibliography = phmt.attribution_report(loaded.metadata["attribution"], format="bibtex")
+    bibliography = phmt.attribution_report(
+        loaded.metadata["attribution"], format="bibtex"
+    )
     assert "10.1145/362342.362367" in bibliography
     assert "10.1107/S0567739476001873" in bibliography
 

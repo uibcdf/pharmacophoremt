@@ -65,7 +65,9 @@ class SphereAndVector:
         if not puw.is_quantity(direction):
             direction = puw.quantity(direction, "dimensionless")
         # A vector is dimensionless, independently of the session's angle unit.
-        values = np.asarray(puw.get_value(direction, to_unit="dimensionless"), dtype=float)
+        values = np.asarray(
+            puw.get_value(direction, to_unit="dimensionless"), dtype=float
+        )
         self.direction = puw.quantity(values / np.linalg.norm(values), "dimensionless")
 
     def add_to_NGLView(

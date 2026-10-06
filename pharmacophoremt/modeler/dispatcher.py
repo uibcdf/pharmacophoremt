@@ -55,7 +55,11 @@ def model(
             from_interaction_collection,
         )
 
-        if ligand_selection is None or "interaction_collection" not in kwargs or receptor_selection is not None:
+        if (
+            ligand_selection is None
+            or "interaction_collection" not in kwargs
+            or receptor_selection is not None
+        ):
             raise ArgumentError(
                 argument="interaction-collection",
                 reason="provide interaction_collection and ligand_selection; observations define the receptor",
