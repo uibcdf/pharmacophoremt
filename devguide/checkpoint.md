@@ -514,6 +514,38 @@ separately from the stable cookbook result. All fourteen original archives verif
 the editable installation is confirmed without a PYTHONPATH override. Review,
 public distribution and biological acceptance remain separate.
 
+## Publication integration checkpoint (2026-10-06)
+
+The accumulated native modeling/screening/attribution/curation work, ERalpha
+pilot, cookbook, frozen inputs and fourteen original evidence archives are
+integrated with the sixteen intervening upstream governance commits. The current
+canonical guides, suite-policy caller and Python 3.11–3.14 contract are preserved.
+Git attributes retain checksum-qualified input/evidence bytes, including original
+logs; all fourteen archives and original input/evidence bytes verify unchanged.
+
+Owner adoption of #39 separates invariant chemistry from appended operation
+history and strengthens the original-source guard. Current MolSysMT #346 query
+vocabulary is consumed through public between_selections; detector selection
+semantics and saved scientific metadata are unchanged. CI source pins identify
+the current providers selected for native integration without bypassing metadata.
+
+The three ERalpha pilot modules pass 27 controls in the initial selection, which
+also exposes ten curation setup errors from the retired query name. After its
+migration, all 164 affected interaction/composition/CCD/curation controls pass
+in 231.78 s. The strengthened repeat-H guard and six CI controls pass seven
+tests in 7.26 s. Ruff, reporting/index and whitespace checks pass. Execution uses
+normal editable installation in molsyssuite@uibcdf_3.14 without PYTHONPATH overrides.
+The original logs and provider/file identities are retained in
+`evidence/publication_20261006.json`. Historical full-suite results remain dated;
+today's selected checks do not certify the new full hosted matrix.
+
+Whole-workspace pip check reports unrelated installed auxiliary-package conflicts,
+handed to the owning shared workspace in MolSysSuite #52. Its
+[receipt](https://github.com/uibcdf/molsyssuite/issues/52#issuecomment-6026983063)
+does not identify a PharmacophoreMT dependency failure or qualify the canonical
+environment recipe. Hosted exact-head evidence remains tracked by #9/#23;
+public package delivery and biological acceptance remain separate.
+
 ## Working references
 
 Read the repository tooling guides and [API standards](api_design_standards.md).

@@ -114,3 +114,16 @@ its existing measured 3.13 lane. A configured development environment is
 not fresh installed-artifact or public-channel qualification. Scientific
 failures and remaining distribution gates remain owned by their existing issues.
 
+
+## Native consumer source checkpoint — 2026-10-06
+
+The native pilot and common interaction adapter now require current provider
+contracts, including MolSysMT between_selections. Both controlled-source lists
+and the older-minor MolSysMT install step identify the provider revisions selected
+for current integration. Required Python 3.11–3.14 metadata/matrices and full
+collection are unchanged; public dependency closure remains separate under #10.
+Local normal-editable Python 3.14 execution passes 27 ERalpha controls, 164
+affected interaction/composition/CCD/curation controls and the strengthened
+repeat-H plus six administrative controls. These overlapping selected runs are
+recorded in devguide/evidence/publication_20261006.json; they do not certify
+the new four-minor hosted matrix. Earlier qualified-source claims remain historical.

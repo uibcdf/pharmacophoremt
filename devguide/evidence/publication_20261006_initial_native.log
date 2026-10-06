@@ -1,0 +1,21 @@
+receptor: 20% 14/69 39s
+receptor: 40% 28/69 79s
+receptor: 60% 42/69 79s
+receptor: 81% 56/69 80s
+receptor: 100% 69/69 82s
+FAIL exit=1 | 10 errors, 59 passed | 82.18s | 4 warnings | 1 root cause
+
+[1] AttributeError | 10 tests | setup
+    pharmacophoremt/modeler/interaction_based.py:213
+    AttributeError: 'Interactions' object has no attribute 'between'
+    frames: tests/test_curation.py:44 -> ../smonitor/smonitor/core/decorator.py:326 -> ../smonitor/smonitor/core/decorator.py:326 -> ../argdigest/argdigest/core/decorator.py:647 -> ... -> ../argdigest/argdigest/core/decorator.py:640 -> ../argdigest/argdigest/core/decorator.py:171 -> pharmacophoremt/_ackredit.py:165 -> pharmacophoremt/modeler/interaction_based.py:213
+    tests:
+      tests/test_curation.py::test_copy_detaches_every_native_site_quantity_and_nested_evidence_without_copying_a_molecule
+      tests/test_curation.py::test_curation_uses_no_molecular_operations_or_original_pointer
+      tests/test_curation.py::test_declared_radius_change_accepts_known_displacement_without_moving_the_model
+      +7 more
+    rerun: pytest tests/test_curation.py -q
+
+warnings: 4 in 1 groups
+  StructuralAttributeDropWarning x4 | ../molsysmt/molsysmt/build/add_terminal_atoms.py:106 | Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject t...
+

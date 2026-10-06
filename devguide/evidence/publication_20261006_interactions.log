@@ -1,0 +1,7 @@
+receptor: 20% 33/164 21s
+receptor: 40% 66/164 37s
+receptor: 60% 99/164 70s
+receptor: 80% 132/164 192s
+receptor: 100% 164/164 232s
+PASS exit=0 | 164 passed | 231.78s
+

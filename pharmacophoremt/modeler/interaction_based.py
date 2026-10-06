@@ -210,7 +210,7 @@ def from_interactions(
             argument="structure_index", reason="this frame was not evaluated"
         )
     receptor_indices = np.setdiff1d(np.arange(len(coordinates)), ligand_indices)
-    selected = interactions.between(
+    selected = interactions.between_selections(
         ligand_indices, receptor_indices, structure_indices=[structure_index]
     )
     records = selected.to_dict()

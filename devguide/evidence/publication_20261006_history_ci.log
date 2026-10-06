@@ -1,0 +1,5 @@
+PASS exit=0 | 7 passed | 7.26s | 1 warnings
+
+warnings: 1 in 1 groups
+  StructuralAttributeDropWarning x1 | ../molsysmt/molsysmt/build/add_terminal_atoms.py:106 | Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject t...
+

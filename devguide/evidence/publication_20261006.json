@@ -1,0 +1,70 @@
+{
+  "schema": "pharmacophoremt.source_publication_verification@1",
+  "date": "2026-10-06",
+  "scope": "targeted editable Linux Python 3.14 source checks, not a full matrix or public package qualification",
+  "prepublication_base": "fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f",
+  "python": "3.14.7",
+  "executable": "/home/diego/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "provider_git_heads_at_retention": {
+    "molsysmt": {
+      "git_head": "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+    },
+    "argdigest": {
+      "git_head": "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+    },
+    "pyunitwizard": {
+      "git_head": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65"
+    },
+    "smonitor": {
+      "git_head": "f604b940ab281df4554869fdd24f796ea6d42c27"
+    },
+    "depdigest": {
+      "git_head": "ba670098a5b773e7f1570adc47b890d063bd5627"
+    },
+    "molsysviewer": {
+      "git_head": "e0ae8a05099fce944b45355387f44d23d9458b13"
+    },
+    "ackredit": {
+      "git_head": "71f7f1984de1a3925c32d29074784bb553e89bfc"
+    }
+  },
+  "verification_files_at_retention": {
+    "pharmacophoremt/modeler/interaction_based.py": "3c0d89fe8c545d554a480056bc70eb7232da282d4e0d83c7d8c04122b3826e34",
+    "tests/test_eralpha_hydrogens.py": "ad581f6d8e43a8e0473f51506894540379f9b46b46f880060dd0220952614fe5",
+    "devtools/requirements/controlled_suite_dependencies.txt": "5a4c359b68f23b1abef62952b051a5737997aa7ffcf0157aeae56b6a36fce9f1",
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": "5a4c359b68f23b1abef62952b051a5737997aa7ffcf0157aeae56b6a36fce9f1",
+    ".github/workflows/CI.yaml": "7a4e3f63ea1dcdce267bee16a1507693b209ce1f4f02f28c390970d0bf8d0957"
+  },
+  "logs": {
+    "initial_native": {
+      "path": "devguide/evidence/publication_20261006_initial_native.log",
+      "sha256": "fcf6a631ccc06e6b37fc10a7455655dcc04db0269bfc99c22fc5902d1582de51"
+    },
+    "interactions": {
+      "path": "devguide/evidence/publication_20261006_interactions.log",
+      "sha256": "e395bcd5098c1c5d06e0f6ff3baf564bfa23e7914c7b59b85e0a2401a8e0c22f"
+    },
+    "history_ci": {
+      "path": "devguide/evidence/publication_20261006_history_ci.log",
+      "sha256": "63983170a20f173706fb0e376457a0ed903d27fdc9b340ffeb28db4860acc2f0"
+    }
+  },
+  "initial_selection": {
+    "passed": 59,
+    "errors": 10,
+    "seconds": 82.18,
+    "root_cause": "retired Interactions.between; 27 ERalpha controls passed"
+  },
+  "after_migration": {
+    "passed": 164,
+    "seconds": 231.78
+  },
+  "strengthened_history_and_ci_routes": {
+    "passed": 7,
+    "seconds": 7.26
+  },
+  "original_evidence_archives_verified": 14,
+  "whole_workspace_pip_check": "failed: external package requirements; handed to uibcdf/molsyssuite#52",
+  "workspace_issue_comment": "https://github.com/uibcdf/molsyssuite/issues/52#issuecomment-6026983063",
+  "hosted_exact_head_verification": "pending push; tracked under uibcdf/pharmacophoremt#9/#23"
+}

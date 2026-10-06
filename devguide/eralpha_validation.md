@@ -399,3 +399,24 @@ MolSysMT #298; this independent geometric step does not bypass its chemistry gat
 The [observed-case result](https://github.com/uibcdf/pharmacophoremt/issues/22#issuecomment-5973670489)
 links the [independent tool delivery](https://github.com/uibcdf/pharmacophoremt/issues/32#issuecomment-5973661182)
 and its scientific/attribution/persistence controls.
+
+## Owner publication and repeat-H history — 2026-10-06
+
+The #39 provider handoff is adopted in the owner regression. Repeated fixed-state
+H placement must preserve the complete original source payload/history and
+coordinates, return an independent copy with identical chemical assignments, and
+append exactly the unchanged terminal-attachment and hydrogen-addition reports.
+History is tested separately from assignments; none of the original preservation
+or zero-added-H assertions are removed. The strengthened guard and six CI
+route/backlog controls pass seven tests in 7.26 s on Python 3.14.7.
+
+The initial publication selection passes all 27 ERalpha pilot controls but reports
+ten curation setup errors from the separate retired Interactions.between call.
+The shared native adapter now consumes public between_selections, following
+MolSysMT #346, with the same selected atoms/frame and original scientific
+evaluation metadata. Its affected ionic/aromatic/composition/CCD/curation consumers
+pass 164 tests in 231.78 s. Controlled CI source pins identify the tested current
+provider revisions while preserving all required Python minors and full collection.
+Historical evidence is unchanged; today's selected tests do not replace a full
+matrix or biological acceptance. The publication receipt and original logs are
+retained in `devguide/evidence/publication_20261006.json`.

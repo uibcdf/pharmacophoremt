@@ -794,3 +794,16 @@ The 4,928-byte integration audit has SHA-256
 the 750-byte original integration log has SHA-256
 `6659903d63f254365b200551e47a6bc44ab17661bc7b87a8b529117b0b194ba5`.
 Ruff, generated indexes, three offline reporting tests and whitespace checks pass.
+
+## Source publication checkpoint (2026-10-06)
+
+`publication_20261006.json` records current provider Git heads, selected file
+hashes, source-test scope and three original targeted logs. The initial selection
+passes 59 tests (including all 27 ERalpha controls) with ten curation setup errors
+from the retired between query. After migrating to between_selections, the
+affected interaction/composition/CCD/curation selection passes 164 tests in
+231.78 s. The strengthened repeat-H guard and CI routes pass seven tests in
+7.26 s. These selections overlap and are not a new full-suite or matrix claim.
+The current logs supplement the fourteen unchanged original compressed archives.
+Whole-workspace pip-check conflicts are separately handed to MolSysSuite #52.
+Hosted exact-head evidence remains pending publication under #9/#23.

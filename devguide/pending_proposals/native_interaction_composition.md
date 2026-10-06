@@ -64,6 +64,16 @@ preparation, automatic alignment, consensus, release or biological acceptance.
 
 ## Acceptance criteria
 
+**Consumer migration, 2026-10-06:** Current MolSysMT #346 deliberately removes
+the early `between` spelling. The native interaction adapter now calls public
+`between_selections` with unchanged ligand/complement/frame selections and retains
+scientific detector parameters and evidence. Before migration the publication
+selection reports ten curation setup errors and 59 passes; afterward all 164
+ionic/aromatic/composition/CCD/curation controls pass in 231.78 s on Python 3.14.7.
+Current controlled CI source pins are recorded separately from public distribution
+and four-minor acceptance. Original local evidence remains historical and unchanged;
+the publication receipt is `devguide/evidence/publication_20261006.json`.
+
 Public-tool composition, both duplicate policies, source/constraint compatibility,
 evaluated-empty and failed cases, source preservation, persistence, independent
 geometry/veto controls and real optional attribution pass. Document the standalone
