@@ -151,3 +151,30 @@ Shared helper replacement is owned by uibcdf/molsyssuite#108. Interim use stays
 with reviewed metadata/environment files plus the existing shared preflight;
 legacy helper output cannot approve a candidate. Remove this interim limitation
 after the common operation is qualified, adopted and exercised in this owner.
+
+## Shared environment helpers adopted — 2026-10-07
+
+The thin owner broadcaster and create/update entry points now call the shared
+optional environment operator at immutable MolSysSuite commit
+`8f00e6d9de943b6e4710ea62936e2ebea00fad24`, qualified by 406 central tests and
+hosted governance run 37588128776. Eight owner helper guards exercise the actual
+operator and loader. Only five ordinary environment outputs are generated from
+metadata/tools; the three scientific test environments, historical importable
+fixture, recipe, example plan and both fixed Git inputs stay byte-identical.
+Production/docs retain the public Python interval; development stays wholly
+3.14. Setup/build acquire the same bounded metadata Python selection without
+asserting consumer-runtime closure.
+
+The old startup bypass is replaced by explicit shared creation at 3.14; activation,
+editable installation and optional kernel registration are separate user actions.
+Unsupported old flags fail rather than choosing unreviewed Python or falling back
+from failed creation to updating another target. SDK/context check tools remain
+outside scientific imports. Publication wrappers keep their separate qualified
+2d32048 pin; source/helper preflight uses the additive 8f00e6d commit. CI changes
+only SDK refs and independent administrative guards; scientific commands, eight
+source cells, schedules, recovery and original Git pins remain intact.
+
+This fulfils the local helper source-adoption need in uibcdf/molsyssuite#108; it
+does not execute a real environment manager or clear source-free/public-installed
+evidence, scientific CI debt or the real candidate/release prerequisites in #10.
+The overall adoption remains partial.

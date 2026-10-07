@@ -61,3 +61,13 @@ checks. Shared reusable replacement is tracked in uibcdf/molsyssuite#108;
 keep reviewed metadata/environments plus existing shared preflight until its
 qualified owner adoption replaces these legacy paths. Real plan/access/artifact, public receiving evidence
 and Python admission remain outstanding; configuration alone proves none of them.
+
+## Environment helper adoption — 2026-10-07
+
+Ordinary environment generation and checked create/update now call the additive
+qualified SDK `8f00e6d9de943b6e4710ea62936e2ebea00fad24`, as does source/context
+preflight. Existing publication wrappers retain their separately accepted
+`2d32048457c6d37093ae509f5626d00a5cda121b` pin. See
+[environment operations](../conda-envs/README.md); generation cannot rewrite this
+recipe/plan or the scientific files. This source adoption does not prove an
+actual manager operation, full science matrix or public installed artifact.

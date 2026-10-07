@@ -8,10 +8,10 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SDK_SHA = "2d32048457c6d37093ae509f5626d00a5cda121b"
+SDK_SHA = "8f00e6d9de943b6e4710ea62936e2ebea00fad24"
 
 
-def load_sdk():
+def load_sdk(module_name="dependency_routes"):
     """Check immutable SDK identity and the actual administrative import origin."""
     sdk = Path(
         os.environ.get("PHARMACOPHOREMT_SUITE_ROOT", ROOT / ".molsyssuite")
@@ -25,11 +25,13 @@ def load_sdk():
     if head != SDK_SHA or dirty:
         raise ValueError("Use the accepted clean immutable dependency SDK")
     sys.path[:0] = [str(sdk), str(ROOT / ".molsyssuite-tools")]
-    from devtools.scripts import dependency_routes
+    import importlib
 
-    if not Path(dependency_routes.__file__).resolve().is_relative_to(sdk):
+    module = importlib.import_module("devtools.scripts." + module_name)
+
+    if not Path(module.__file__).resolve().is_relative_to(sdk):
         raise ValueError("Another editable SDK namespace was selected")
-    return dependency_routes
+    return module
 
 
 def main() -> int:

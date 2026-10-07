@@ -31,7 +31,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: uibcdf/molsyssuite
-        ref: 2d32048457c6d37093ae509f5626d00a5cda121b
+        ref: 8f00e6d9de943b6e4710ea62936e2ebea00fad24
         path: .molsyssuite
         persist-credentials: false
     - uses: actions/setup-python@v5
@@ -49,7 +49,10 @@ jobs:
     - name: Review declared dependency routes
       run: python devtools/check_dependency_routes.py --declared-only
     - name: Test distribution and dependency contracts
-      run: python -m unittest discover -s devtools/tests -p test_distribution_contract.py
+      run: python -m unittest discover -s devtools/tests -p "test_*.py"
+
+    - name: Check generated ordinary environments
+      run: python devtools/broadcast_requirements.py --check
 
   nightly-decision:
     name: Check skipped-commit backlog
@@ -141,7 +144,7 @@ jobs:
       uses: actions/checkout@v4
       with:
         repository: uibcdf/molsyssuite
-        ref: 2d32048457c6d37093ae509f5626d00a5cda121b
+        ref: 8f00e6d9de943b6e4710ea62936e2ebea00fad24
         path: .molsyssuite
         persist-credentials: false
 

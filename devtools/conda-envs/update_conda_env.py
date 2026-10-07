@@ -1,31 +1,13 @@
-import argparse
-import os
-import shutil
-import subprocess as sp
+"""Delegate explicit update requests to the qualified shared operator."""
 
-# Args
-parser = argparse.ArgumentParser(
-    description="Updates the activated conda environment with the packages in a yaml file"
-)
-parser.add_argument("conda_file", help="The file for the created Python environment")
+from __future__ import annotations
 
-args = parser.parse_args()
+import sys
+from pathlib import Path
 
-# Figure out conda path
-if "CONDA_EXE" in os.environ:
-    conda_path = os.environ["CONDA_EXE"]
-else:
-    conda_path = shutil.which("conda")
-if conda_path is None:
-    raise RuntimeError(
-        "Could not find a conda binary in CONDA_EXE variable or in executable search path"
-    )
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+from conda_environment import main  # noqa: E402 — local owner tool path
 
-print("CONDA FILE NAME {}".format(args.conda_file))
-print("CONDA PATH      {}".format(conda_path))
-
-# Write to a temp directory which will always be cleaned up
-
-sp.call(
-    "{} env update --file {} --prune".format(conda_path, args.conda_file), shell=True
-)
+if __name__ == "__main__":
+    sys.argv[1:1] = ["update"]
+    raise SystemExit(main())
