@@ -1,0 +1,36 @@
+{
+  "schema": "pharmacophoremt.eralpha_interaction_diagnostic_case@1",
+  "consumer_issue": "uibcdf/pharmacophoremt#22",
+  "hydrogen_refinement_issue": "uibcdf/molsysmt#323",
+  "rejected_geometry_issue": "uibcdf/molsysmt#350",
+  "hbond_candidate_radius": "0.40 nm",
+  "hbond_sensitivity": [
+    {"name": "declared", "distance_threshold": "0.35 nm", "angle_threshold": "130 degrees", "expected_count": 0},
+    {"name": "distance_only_control", "distance_threshold": "0.35 nm", "angle_threshold": "0 degrees", "expected_count": 6},
+    {"name": "loose_angle_control", "distance_threshold": "0.35 nm", "angle_threshold": "90 degrees", "expected_count": 2},
+    {"name": "120_degree_control", "distance_threshold": "0.35 nm", "angle_threshold": "120 degrees", "expected_count": 0},
+    {"name": "extended_distance_control", "distance_threshold": "0.36 nm", "angle_threshold": "130 degrees", "expected_count": 1}
+  ],
+  "pi_sensitivity": [
+    {"name": "declared", "method": "plane_angle_intersection", "profile": "smarts_5_6", "expected_count": 0},
+    {"name": "aromatic_cycle_control", "method": "plane_angle_intersection", "profile": "aromatic_cycles", "expected_count": 0},
+    {"name": "least_squares_control", "method": "centroid_angle_offset", "profile": "least_squares", "distance_threshold": "0.65 nm", "angle_threshold": "30 degrees", "offset_threshold": "0.20 nm", "planarity_threshold": "0.02 nm", "expected_count": 1}
+  ],
+  "expected_smarts_ring_count": 29,
+  "expected_near_hbond_triplets": [[721,2698,4006],[721,2699,4006],[1758,3777,4021],[4006,4025,378],[4006,4025,379],[4006,4025,657],[4021,4043,1730],[4021,4043,1754]],
+  "reference_ring_order": {
+    "PHE404": [796,797,799,801,800,798],
+    "EST": [4003,4004,4005,4007,4008,4013]
+  },
+  "expected_source_ring_memberships": {
+    "PHE404": [811,812,813,814,815,816],
+    "EST": [5940,5941,5942,5944,5945,5950]
+  },
+  "limits": [
+    "Fixed diagnostic comparisons; no cutoff selection or optimization of a hypothesis.",
+    "Hydrogen coordinates and chemical states are unchanged; no environmental refinement.",
+    "Least-squares diagnostic planes differ from reference centroid-edge planes.",
+    "Exact rejected-reference intersection geometry is checked by an independent fixed-case test, pending provider public diagnostics.",
+    "A different profile accepting a pair is not a biological validation or a preferred criterion."
+  ]
+}

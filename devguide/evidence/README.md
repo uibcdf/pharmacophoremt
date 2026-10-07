@@ -836,3 +836,45 @@ rendering pass with Python 3.14.7. The normal editable development environment h
 the separately tracked pip-check conflicts under MolSysSuite #52. These artifacts
 qualify the bounded analytical source workflow, not clean public installation,
 complete receptor chemistry, environmental/biological acceptance or performance.
+
+## Prepared ERα empty-family diagnosis — 2026-10-07
+
+The [diagnostic contract](../eralpha_interaction_diagnostics.md) and
+`tests/test_eralpha_interaction_diagnostics.py` distinguish recognized near
+candidates from original geometric rejection. Six D–A-close H-bond triples
+fail the angular gate. Independently checked PHE404/EST reference geometry
+passes edge distance/angles but fails the 0.15 nm intersection criterion
+(0.264394 nm). Fixed alternative cutoffs/profiles are separately labeled;
+original cached observations and the 11-site query are not changed.
+
+`eralpha_interaction_diagnostics_py314_summary.json` retains producer/input/native
+extension hashes, six-guard verification, candidate maps, all fixed comparison
+counts, application-capture counts and the archive-time Git-head snapshot.
+`eralpha_interaction_diagnostics_py314.json.gz` decompresses to the original
+24,197,411-byte driver JSON. Its compressed SHA-256 is
+`66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2`;
+the original JSON SHA-256 is
+`b5c5f7120fd442a493be92e58a1f7f55dd5913db00035a47add3123b42a17579`.
+Gzip timestamp is zero. Both independent preparations and host attribution
+settings pass with common scientific hash
+`74bfb5d171409bb1eb2ec3b500664ad68a604bd0418b8387861810c63310bb33`.
+Provider credits remain observable even with host attribution off; captures
+contain 7 items/27 uses and 15 items/35 uses respectively.
+
+Six focused guards pass in 106.07 s on editable Python 3.14.7, with two expected
+B-factor-drop warnings. The guards include independent distance/angle/intersection
+oracles and pm/fs/coulomb/radians quantity controls. The added cookbook Python
+block executes on the recovered original native interface. Strict isolated
+rendering, Ruff, report-index validation and three reporting tests pass. All
+sixteen previously tracked compressed archives retain their exact Git identities.
+Full hosted-matrix,
+installed-distribution, environment-refinement, biological and performance
+acceptance are separate. No earlier archive is replaced. Reproduce with:
+
+```bash
+python -m devtools.diagnose_eralpha_interface --output /tmp/eralpha-diagnosis.json
+```
+
+Exact rejected reference-pair geometry is independently checked in the fixed-case
+guard, pending public MolSysMT diagnostics under #350. Environmental H refinement
+is separately requested in provider #323; this driver implements neither tool.

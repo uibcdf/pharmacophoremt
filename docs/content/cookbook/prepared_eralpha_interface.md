@@ -96,3 +96,45 @@ with checksums. Its application-owned Ackredit capture credits reached operation
 and actually used data. The source template's original curation remains historical
 provenance. Full-receptor acceptance, environmental refinement, peptide
 stereochemical acceptance, biological enrichment and timing remain unmeasured.
+
+## Diagnose evaluated-empty interaction families
+
+The diagnostic continuation uses public MolSysMT recognition and geometry tools
+on the same declared input. Its candidate inventory distinguishes recognized
+sites from interactions accepted by a particular geometric criterion.
+
+```python
+from devtools.diagnose_eralpha_interface import diagnose, valid as valid_diagnosis
+
+diagnosis = diagnose(case)
+assert valid_diagnosis(diagnosis)
+assert len(diagnosis['hbond_candidates']) == 8
+assert diagnosis['n_smarts_rings'] == 29
+assert diagnosis['original_input_and_cached_analyses_unchanged']
+```
+
+Six recognized donor/H/acceptor triples pass the original 0.35 nm distance
+cutoff, but all fail its 130-degree D–H–A minimum with these generated local H.
+This identifies a geometry limitation of the prepared input. Environmental
+refinement is tracked in [MolSysMT #323](https://github.com/uibcdf/molsysmt/issues/323).
+
+PHE404 and EST aromatic rings are recognized and their centroids are 0.499967 nm
+apart. An independent fixed-case test shows that the reference intersection
+criterion rejects them: 0.264394 nm exceeds the 0.15 nm limit. A separately
+declared least-squares distance/angle/offset profile accepts one contact; it
+does not replace the original analysis or establish biological acceptance.
+Rejected-reference measurements are not exposed by the public detector, so
+general diagnostics are requested in [MolSysMT #350](https://github.com/uibcdf/molsysmt/issues/350).
+
+The fixed comparison declaration lives in `tests/data/eralpha_interface/diagnostics.json`.
+Run both host attribution settings with:
+
+```bash
+python -m devtools.diagnose_eralpha_interface --output /tmp/eralpha-diagnosis.json
+```
+
+The [maintained diagnosis](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/eralpha_interaction_diagnostics.md)
+records participant identities, individual rejections, all fixed criteria,
+independent controls and the distinction between least-squares diagnostic planes
+and the original reference planes. The original source and cached analyses stay
+unchanged; this workflow performs no geometry refinement or cutoff optimization.

@@ -1,0 +1,1109 @@
+{
+  "schema": "pharmacophoremt.eralpha_interaction_diagnostic_validation@1",
+  "recorded_utc": "2026-10-07T06:55:43.004675+00:00",
+  "python": "3.14.7",
+  "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "producers": {
+    "pharmacophoremt": {
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+108.g864dcf5",
+      "python_source_sha256": "bf10dd0b5bbbefe7038d3cf7b890720d4c32ed2d8554f09602e8318c34d472e2",
+      "python_file_count": 136
+    },
+    "molsysmt": {
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+215.g5bd893c85",
+      "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+      "python_file_count": 2851
+    },
+    "pyunitwizard": {
+      "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.28.1+3.g2ab37a5",
+      "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+      "python_file_count": 84
+    },
+    "ackredit": {
+      "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+      "version": "0.11.0+32.g7c9c152.dirty",
+      "python_source_sha256": "e4a0bc399c6225461693f1ad4fe15a7be6cdb2ac0c9249765f61502c5a054d87",
+      "python_file_count": 69
+    }
+  },
+  "inputs": {
+    "tests/data/eralpha_interface/diagnostics.json": "fa9f95859f4a3b85ab77fd7d6ab65b8c214a4536dd2e81d7f152d6b231eee04f",
+    "tests/data/eralpha_interface/manifest.json": "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8",
+    "devtools/diagnose_eralpha_interface.py": "9ec91c96fc95a477ea3febc26946ec362f57a5e42f06a163b13083d1f1b6d3f3",
+    "devtools/prepare_eralpha_interface.py": "284b2a47e2e8e062eddc7bbfdabe1e4de351934300bd2e8671e8fcadf8022622",
+    "devtools/prepare_eralpha_ligand.py": "28ff1f7833a555efa7456f8b97e87cda6fdacd2831ae061815b8ff38eb582a83",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/audit_eralpha_receptor.py": "0854719403f34d5eb4e6563f302c27bd928e75fc9ded7cead70da401e730c177",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_eralpha_template.py": "a71d50a5c16e6c9f983a27f49bd0d3cdafab13dca91adab15dfe8309705e8e55",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038",
+    "devtools/benchmark_rigid_consensus.py": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08",
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c"
+  },
+  "producers_and_inputs_unchanged": true,
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "rdkit": "2026.3.1",
+    "argdigest": "0.15.0+1.g5c6711e",
+    "depdigest": "0.13.0+3.g0568f9a",
+    "smonitor": "0.19.0"
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+    }
+  ],
+  "valid": true,
+  "scope": "fixed diagnostic comparisons; no refinement, profile optimization or biological acceptance",
+  "full_evidence": {
+    "path": "eralpha_interaction_diagnostics_py314.json.gz",
+    "compressed_sha256": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "compressed_bytes": 1030227,
+    "uncompressed_sha256": "b5c5f7120fd442a493be92e58a1f7f55dd5913db00035a47add3123b42a17579",
+    "uncompressed_bytes": 24197411
+  },
+  "independent_guard": {
+    "path": "tests/test_eralpha_interaction_diagnostics.py",
+    "sha256": "bf742fe95026adbdbf0c5d1478a4904b2493d66bd6e89fb1afdd955d79780ad2",
+    "result": "6 passed in 106.07 s; 2 expected B-factor-drop warnings",
+    "python": "3.14.7",
+    "reference_intersection_distance": {
+      "value": 0.2643939338459814,
+      "unit": "nm"
+    }
+  },
+  "runs": [
+    {
+      "tracking": false,
+      "valid": true,
+      "scientific_sha256": "74bfb5d171409bb1eb2ec3b500664ad68a604bd0418b8387861810c63310bb33",
+      "hbond_candidates": [
+        {
+          "donor": {
+            "prepared_index": 721,
+            "source_index": 736,
+            "atom_name": "NH2",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "hydrogen": {
+            "prepared_index": 2698,
+            "source_index": -1,
+            "atom_name": "H2699",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "acceptor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.31899205319255153,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 117.62688904294687,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 721,
+            "source_index": 736,
+            "atom_name": "NH2",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "hydrogen": {
+            "prepared_index": 2699,
+            "source_index": -1,
+            "atom_name": "H2700",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "acceptor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.31899205319255153,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 83.50688755231846,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 1758,
+            "source_index": 1773,
+            "atom_name": "N",
+            "group_name": "LEU",
+            "group_id": "525",
+            "chain_id": "A"
+          },
+          "hydrogen": {
+            "prepared_index": 3777,
+            "source_index": -1,
+            "atom_name": "H3778",
+            "group_name": "LEU",
+            "group_id": "525",
+            "chain_id": "A"
+          },
+          "acceptor": {
+            "prepared_index": 4021,
+            "source_index": 5958,
+            "atom_name": "O17",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.3297680851750218,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 87.05767783491441,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4025,
+            "source_index": -1,
+            "atom_name": "H23",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 378,
+            "source_index": 393,
+            "atom_name": "OE1",
+            "group_name": "GLU",
+            "group_id": "353",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.318807151739104,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 94.27494652194186,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4025,
+            "source_index": -1,
+            "atom_name": "H23",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 379,
+            "source_index": 394,
+            "atom_name": "OE2",
+            "group_name": "GLU",
+            "group_id": "353",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.259314365201776,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 51.55929633111298,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4025,
+            "source_index": -1,
+            "atom_name": "H23",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 657,
+            "source_index": 672,
+            "atom_name": "O",
+            "group_name": "LEU",
+            "group_id": "387",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.35143584051715576,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 137.00352216233406,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": false,
+          "passes_declared_angle": true,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4021,
+            "source_index": 5958,
+            "atom_name": "O17",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4043,
+            "source_index": -1,
+            "atom_name": "H41",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 1730,
+            "source_index": 1745,
+            "atom_name": "O",
+            "group_name": "GLY",
+            "group_id": "521",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.380075163618987,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 81.52527315979118,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": false,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4021,
+            "source_index": 5958,
+            "atom_name": "O17",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4043,
+            "source_index": -1,
+            "atom_name": "H41",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 1754,
+            "source_index": 1769,
+            "atom_name": "ND1",
+            "group_name": "HIS",
+            "group_id": "524",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.27561857702266734,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 30.379399929981165,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        }
+      ],
+      "hbond_comparisons": [
+        {
+          "name": "declared",
+          "declaration": {
+            "name": "declared",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "130 degrees",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "distance_only_control",
+          "declaration": {
+            "name": "distance_only_control",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "0 degrees",
+            "expected_count": 6
+          },
+          "n_interactions": 6
+        },
+        {
+          "name": "loose_angle_control",
+          "declaration": {
+            "name": "loose_angle_control",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "90 degrees",
+            "expected_count": 2
+          },
+          "n_interactions": 2
+        },
+        {
+          "name": "120_degree_control",
+          "declaration": {
+            "name": "120_degree_control",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "120 degrees",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "extended_distance_control",
+          "declaration": {
+            "name": "extended_distance_control",
+            "distance_threshold": "0.36 nm",
+            "angle_threshold": "130 degrees",
+            "expected_count": 1
+          },
+          "n_interactions": 1
+        }
+      ],
+      "pi_comparisons": [
+        {
+          "name": "declared",
+          "declaration": {
+            "name": "declared",
+            "method": "plane_angle_intersection",
+            "profile": "smarts_5_6",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "aromatic_cycle_control",
+          "declaration": {
+            "name": "aromatic_cycle_control",
+            "method": "plane_angle_intersection",
+            "profile": "aromatic_cycles",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "least_squares_control",
+          "declaration": {
+            "name": "least_squares_control",
+            "method": "centroid_angle_offset",
+            "profile": "least_squares",
+            "distance_threshold": "0.65 nm",
+            "angle_threshold": "30 degrees",
+            "offset_threshold": "0.20 nm",
+            "planarity_threshold": "0.02 nm",
+            "expected_count": 1
+          },
+          "n_interactions": 1
+        }
+      ],
+      "n_smarts_rings": 29,
+      "nearest_ring_pair": {
+        "receptor_members": [
+          {
+            "prepared_index": 796,
+            "source_index": 811,
+            "atom_name": "CG",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 797,
+            "source_index": 812,
+            "atom_name": "CD1",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 799,
+            "source_index": 814,
+            "atom_name": "CE1",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 801,
+            "source_index": 816,
+            "atom_name": "CZ",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 800,
+            "source_index": 815,
+            "atom_name": "CE2",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 798,
+            "source_index": 813,
+            "atom_name": "CD2",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          }
+        ],
+        "ligand_members": [
+          {
+            "prepared_index": 4003,
+            "source_index": 5940,
+            "atom_name": "C1",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4004,
+            "source_index": 5941,
+            "atom_name": "C2",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4005,
+            "source_index": 5942,
+            "atom_name": "C3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4007,
+            "source_index": 5944,
+            "atom_name": "C4",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4008,
+            "source_index": 5945,
+            "atom_name": "C5",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4013,
+            "source_index": 5950,
+            "atom_name": "C10",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          }
+        ],
+        "centroid_distance": {
+          "value": 0.4999674389397774,
+          "unit": "nm"
+        }
+      },
+      "next_ring_distance": {
+        "value": 0.9355173176733109,
+        "unit": "nm"
+      },
+      "original_input_and_cached_analyses_unchanged": true,
+      "attribution_summary": {
+        "n_items": 7,
+        "n_uses": 27
+      }
+    },
+    {
+      "tracking": true,
+      "valid": true,
+      "scientific_sha256": "74bfb5d171409bb1eb2ec3b500664ad68a604bd0418b8387861810c63310bb33",
+      "hbond_candidates": [
+        {
+          "donor": {
+            "prepared_index": 721,
+            "source_index": 736,
+            "atom_name": "NH2",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "hydrogen": {
+            "prepared_index": 2698,
+            "source_index": -1,
+            "atom_name": "H2699",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "acceptor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.31899205319255153,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 117.62688904294687,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 721,
+            "source_index": 736,
+            "atom_name": "NH2",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "hydrogen": {
+            "prepared_index": 2699,
+            "source_index": -1,
+            "atom_name": "H2700",
+            "group_name": "ARG",
+            "group_id": "394",
+            "chain_id": "A"
+          },
+          "acceptor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.31899205319255153,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 83.50688755231846,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 1758,
+            "source_index": 1773,
+            "atom_name": "N",
+            "group_name": "LEU",
+            "group_id": "525",
+            "chain_id": "A"
+          },
+          "hydrogen": {
+            "prepared_index": 3777,
+            "source_index": -1,
+            "atom_name": "H3778",
+            "group_name": "LEU",
+            "group_id": "525",
+            "chain_id": "A"
+          },
+          "acceptor": {
+            "prepared_index": 4021,
+            "source_index": 5958,
+            "atom_name": "O17",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.3297680851750218,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 87.05767783491441,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4025,
+            "source_index": -1,
+            "atom_name": "H23",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 378,
+            "source_index": 393,
+            "atom_name": "OE1",
+            "group_name": "GLU",
+            "group_id": "353",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.318807151739104,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 94.27494652194186,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4025,
+            "source_index": -1,
+            "atom_name": "H23",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 379,
+            "source_index": 394,
+            "atom_name": "OE2",
+            "group_name": "GLU",
+            "group_id": "353",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.259314365201776,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 51.55929633111298,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4006,
+            "source_index": 5943,
+            "atom_name": "O3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4025,
+            "source_index": -1,
+            "atom_name": "H23",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 657,
+            "source_index": 672,
+            "atom_name": "O",
+            "group_name": "LEU",
+            "group_id": "387",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.35143584051715576,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 137.00352216233406,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": false,
+          "passes_declared_angle": true,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4021,
+            "source_index": 5958,
+            "atom_name": "O17",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4043,
+            "source_index": -1,
+            "atom_name": "H41",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 1730,
+            "source_index": 1745,
+            "atom_name": "O",
+            "group_name": "GLY",
+            "group_id": "521",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.380075163618987,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 81.52527315979118,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": false,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        },
+        {
+          "donor": {
+            "prepared_index": 4021,
+            "source_index": 5958,
+            "atom_name": "O17",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "hydrogen": {
+            "prepared_index": 4043,
+            "source_index": -1,
+            "atom_name": "H41",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          "acceptor": {
+            "prepared_index": 1754,
+            "source_index": 1769,
+            "atom_name": "ND1",
+            "group_name": "HIS",
+            "group_id": "524",
+            "chain_id": "A"
+          },
+          "donor_acceptor_distance": {
+            "value": 0.27561857702266734,
+            "unit": "nm"
+          },
+          "donor_hydrogen_acceptor_angle": {
+            "value": 30.379399929981165,
+            "unit": "degrees"
+          },
+          "passes_declared_distance": true,
+          "passes_declared_angle": false,
+          "kind": "recognized_geometric_candidate_not_observation"
+        }
+      ],
+      "hbond_comparisons": [
+        {
+          "name": "declared",
+          "declaration": {
+            "name": "declared",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "130 degrees",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "distance_only_control",
+          "declaration": {
+            "name": "distance_only_control",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "0 degrees",
+            "expected_count": 6
+          },
+          "n_interactions": 6
+        },
+        {
+          "name": "loose_angle_control",
+          "declaration": {
+            "name": "loose_angle_control",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "90 degrees",
+            "expected_count": 2
+          },
+          "n_interactions": 2
+        },
+        {
+          "name": "120_degree_control",
+          "declaration": {
+            "name": "120_degree_control",
+            "distance_threshold": "0.35 nm",
+            "angle_threshold": "120 degrees",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "extended_distance_control",
+          "declaration": {
+            "name": "extended_distance_control",
+            "distance_threshold": "0.36 nm",
+            "angle_threshold": "130 degrees",
+            "expected_count": 1
+          },
+          "n_interactions": 1
+        }
+      ],
+      "pi_comparisons": [
+        {
+          "name": "declared",
+          "declaration": {
+            "name": "declared",
+            "method": "plane_angle_intersection",
+            "profile": "smarts_5_6",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "aromatic_cycle_control",
+          "declaration": {
+            "name": "aromatic_cycle_control",
+            "method": "plane_angle_intersection",
+            "profile": "aromatic_cycles",
+            "expected_count": 0
+          },
+          "n_interactions": 0
+        },
+        {
+          "name": "least_squares_control",
+          "declaration": {
+            "name": "least_squares_control",
+            "method": "centroid_angle_offset",
+            "profile": "least_squares",
+            "distance_threshold": "0.65 nm",
+            "angle_threshold": "30 degrees",
+            "offset_threshold": "0.20 nm",
+            "planarity_threshold": "0.02 nm",
+            "expected_count": 1
+          },
+          "n_interactions": 1
+        }
+      ],
+      "n_smarts_rings": 29,
+      "nearest_ring_pair": {
+        "receptor_members": [
+          {
+            "prepared_index": 796,
+            "source_index": 811,
+            "atom_name": "CG",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 797,
+            "source_index": 812,
+            "atom_name": "CD1",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 799,
+            "source_index": 814,
+            "atom_name": "CE1",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 801,
+            "source_index": 816,
+            "atom_name": "CZ",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 800,
+            "source_index": 815,
+            "atom_name": "CE2",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          },
+          {
+            "prepared_index": 798,
+            "source_index": 813,
+            "atom_name": "CD2",
+            "group_name": "PHE",
+            "group_id": "404",
+            "chain_id": "A"
+          }
+        ],
+        "ligand_members": [
+          {
+            "prepared_index": 4003,
+            "source_index": 5940,
+            "atom_name": "C1",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4004,
+            "source_index": 5941,
+            "atom_name": "C2",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4005,
+            "source_index": 5942,
+            "atom_name": "C3",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4007,
+            "source_index": 5944,
+            "atom_name": "C4",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4008,
+            "source_index": 5945,
+            "atom_name": "C5",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          },
+          {
+            "prepared_index": 4013,
+            "source_index": 5950,
+            "atom_name": "C10",
+            "group_name": "EST",
+            "group_id": "600",
+            "chain_id": "D"
+          }
+        ],
+        "centroid_distance": {
+          "value": 0.4999674389397774,
+          "unit": "nm"
+        }
+      },
+      "next_ring_distance": {
+        "value": 0.9355173176733109,
+        "unit": "nm"
+      },
+      "original_input_and_cached_analyses_unchanged": true,
+      "attribution_summary": {
+        "n_items": 15,
+        "n_uses": 35
+      }
+    }
+  ],
+  "source_heads_at_archive": {
+    "pharmacophoremt": "e1cbe7b48e8804a528bee0b3f176ce329e99c3a2",
+    "molsysmt": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+    "pyunitwizard": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+    "ackredit": "6f4dbf39996a7185b8aaff7c52b9daeb167a100a"
+  }
+}

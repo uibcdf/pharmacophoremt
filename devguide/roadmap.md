@@ -1,5 +1,15 @@
 # Strategic Roadmap
 
+**2026-10-07 ERα checkpoint:** The maintained declared 304–550 fragment/EST
+chain and its independent placed/exclusion/persistence controls are delivered.
+[Empty-family diagnosis](eralpha_interaction_diagnostics.md) now distinguishes
+recognized participants from geometric rejection: local generated H fail the
+declared H-bond angular gate; PHE404/EST fail the reference pi-pi intersection
+gate. Environmental H refinement remains MolSysMT #323, and public rejected-pair
+geometry diagnostics are requested in #350. These controls do not establish
+complete receptor preparation or activity-based validation; Gen 1b remains the
+current acceptance focus.
+
 **2026-10-02 review checkpoint:** Traditional workflows are the immediate
 acceptance gate. The native [observed-complex slice](placed_pose_workflow.md) and
 [reference-ligand slice](reference_ligand_workflow.md) are implemented locally
@@ -58,7 +68,8 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 - [x] Traceable prepared real chemical components (CCD ideal EST/DES) with public MolSysMT preparation, refinement/consensus/frame-screening controls, retained hypotheses and actual resource/method citation capture (#30). This does not establish experimental conformer or biological performance.
 - [x] Observed 1QKU EST heavy-atom template integration through public MolSysMT assessment/application, with selected acceptor/aromatic placed controls, persistence and actual input citations (#22). Receptor/biological acceptance remains pending.
 - [x] Explicit fixed-state H placement through the resolved MolSysMT #300 tool, with donor-inclusive observed-pose evaluation, persistence and both rigid recovery policies (#22). Local generated H geometry does not establish environment refinement or biological acceptance.
-- [x] Observed receptor residue/readiness audit through public MolSysMT #217/#218 diagnostics, with declared spatial scopes, preserved detector failures and actual-data-only credit (#22). Receptor chemical preparation remains under MolSysMT #298.
+- [x] Observed receptor residue/readiness audit through public MolSysMT #217/#218 diagnostics, with declared spatial scopes, preserved detector failures and actual-data-only credit (#22). The declared fragment adopts delivered MolSysMT #298 template preparation; complete-receptor acceptance remains open.
+- [x] Maintained declared receptor-fragment/EST composition, independent placed/orientation/exclusion/persistence controls and fixed empty-family diagnosis (#22). Recognition and geometric rejection are distinguished without changing the original observations; environmental H refinement remains provider #323.
 - [ ] Compare G3PS, safe RDP/frequent-clique conformer discovery and triangle indexing on controlled workloads; see [the primary-source survey](pharmacophore_search_strategies.md).
 - [x] Review recursive partitioning/clique literature and execute bounded legacy counterexamples (#18); see [the consensus review](clique_consensus_review.md).
 - [x] Extend native complex construction to aromatic/charge interaction families with independent controls.

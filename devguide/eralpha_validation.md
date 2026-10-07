@@ -446,3 +446,23 @@ identifies original JSON and native-H5MSM archives, checksums, producer/extensio
 hashes and the limits of acceptance. Full-receptor preparation, peptide stereo,
 environmental refinement, biological enrichment, public delivery and performance
 remain separate gates under the owning issues.
+
+## Diagnosing evaluated-empty families — 2026-10-07
+
+The [interaction diagnosis](eralpha_interaction_diagnostics.md) now separates
+public chemical recognition, measured near-candidate geometry and fixed,
+separately labeled detector comparisons on the same prepared input. It preserves
+the original cached analyses and hypothesis.
+
+Six recognized donor/H/acceptor triples satisfy the 0.35 nm distance limit;
+all fail the 130-degree D–H–A limit with local generated H. PHE404 and EST rings
+are recognized and 0.499967 nm apart. An independent frozen-participant oracle
+checks the reference edge-to-face planes and intersection: its 0.264394 nm
+distance fails the declared 0.15 nm limit. A different, explicit least-squares
+profile accepts one ring pair; it does not replace the original observation.
+
+Molecular H refinement stays under [MolSysMT #323](https://github.com/uibcdf/molsysmt/issues/323).
+The missing public rejected-candidate geometry surface is reported in
+[MolSysMT #350](https://github.com/uibcdf/molsysmt/issues/350), with measured
+consumer evidence. No provider implementation, geometry relaxation, alternative
+chemical state, cutoff optimization or biological acceptance is inferred.

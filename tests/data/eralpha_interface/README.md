@@ -33,3 +33,10 @@ native history. JSON pharmacophore persistence is a separate consumer boundary.
 This is local controlled-source integration evidence under PharmacophoreMT #22.
 It makes no claim about affinity, biological enrichment, public package delivery,
 performance, complete receptor preparation or refinement.
+
+`diagnostics.json` separately declares candidate inspection and fixed criterion
+comparisons for `devtools.diagnose_eralpha_interface`. It does not change the
+original preparation, query or cached observations. The corresponding guard
+`tests/test_eralpha_interaction_diagnostics.py` independently checks the recognized
+nearby donor/H/acceptor triples and the frozen PHE404/EST reference intersection
+rejection. No molecular geometry/refinement engine is implemented in this client.

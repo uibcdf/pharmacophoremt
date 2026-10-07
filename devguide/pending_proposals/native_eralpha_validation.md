@@ -271,3 +271,44 @@ refinement, biological enrichment, public installation and performance acceptanc
 remain open. Existing shared-environment pip-check conflicts remain independently
 owned by MolSysSuite #52; local source evidence does not certify a clean install.
 No new provider defect/capability proposal or shared-policy change is inferred.
+
+## Empty-family diagnostic continuation — 2026-10-07
+
+The maintained [diagnosis](../eralpha_interaction_diagnostics.md), driver
+`devtools/diagnose_eralpha_interface.py`, separate case declaration and guard
+`tests/test_eralpha_interaction_diagnostics.py` inspect the current bounded
+interface without replacing its cached observations or curated model.
+
+Public SMARTS recognition retains both EST hydroxyl roles and nearby receptor
+sites. Eight donor/H/acceptor triples lie within the fixed 0.40 nm diagnostic
+radius; six satisfy the original 0.35 nm D–A limit, and all six fail its
+130-degree D–H–A limit. Fixed distance/angle comparisons yield counts
+0, 6, 2, 0 and 1; widening distance alone admits EST O3/LEU387 O rather than
+repairing the nearby GLU353/HIS524 geometry. No H or chemical state is changed.
+
+The 29 recognized SMARTS rings include PHE404 and EST. Only PHE404 is within
+the reference 0.65 nm centroid range (0.499967 nm). The independent fixed-case
+reference-plane oracle checks passing edge distance/angular gates but a
+0.264394 nm intersection distance, exceeding the 0.15 nm cutoff. The alternate
+aromatic-cycle reference profile remains empty; an explicitly declared
+least-squares distance/angle/offset profile yields one observation. These
+different methods are sensitivity controls, not improved biological results.
+
+Environmental H refinement remains owned by uibcdf/molsysmt#323. The missing
+public surface for rejected reference-pair measurements is now requested in
+uibcdf/molsysmt#350 with linked consumer evidence. The production diagnostic
+composes public provider tools; reference intersection arithmetic stays solely
+in an independent frozen-case test oracle. Original evidence remains unchanged.
+Biological discrimination, complete receptor acceptance, public installed
+qualification and performance remain open.
+
+Six focused diagnostic guards pass in 106.07 s on local editable Python 3.14.7,
+including independent coordinate/angle/intersection oracles and nondefault-unit
+records. Both independently prepared host-attribution settings pass with common
+scientific SHA-256
+`74bfb5d171409bb1eb2ec3b500664ad68a604bd0418b8387861810c63310bb33`.
+The original full driver output and compact summary are retained as
+`devguide/evidence/eralpha_interaction_diagnostics_py314*`. Strict isolated
+cookbook rendering, Ruff, generated report-index checks and three offline
+reporting tests pass. No full scientific-suite or required-hosted-matrix result
+is inferred from this focused selection.
