@@ -72,6 +72,28 @@ describe the evaluated subset, so inspect failures and class counts alongside
 the scores. A batch with no successfully evaluated inputs raises. AUC and BEDROC
 are NaN when only one class remains in the evaluated subset.
 
+## Verified ranking conventions
+
+For a balanced four-input set with distinct descending scores, a perfect
+ranking gives AUC and BEDROC 1; its reversal gives 0. Alternating active/decoy
+labels give AUC 0.75. Untied analytical rankings are checked against
+[RDKit's public scoring functions](https://www.rdkit.org/docs/source/rdkit.ML.Scoring.Scoring.html).
+Reference lists are supplied in descending score order.
+
+EF uses `ceil(fraction * n_evaluated)` entries. A tie at the cutoff receives
+fractional active credit; BEDROC averages exponential positional weights within
+each tie group. These conventions preserve results under input permutation.
+The original dataset counts remain in the report, while class prevalence and
+metrics use the successfully evaluated subset. Failures in either class can
+change that subset, so retain the failures alongside the reported metrics.
+
+Accepted-hit counts use the native evaluator's `status`. A pose with complete
+positive coverage and an exclusion clash can have score 1 and still contribute
+zero accepted hits. The legacy route applies its configured essential-match
+threshold across available conformers; its chemical preparation remains a
+separate review boundary. An empty or entirely failed dataset raises rather
+than returning manufactured zero metrics.
+
 ## Use prepared-conformer screening
 
 Pass `evaluator=ConformerScreening(query)` for the

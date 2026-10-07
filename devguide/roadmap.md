@@ -49,7 +49,7 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 - [x] Observed-complex construction for native hydrophobic/H-bond interactions (#13).
 - [x] Reusable chemical extraction and reference-ligand queries with six classical families (#14).
 - [x] Shared pose evaluation, directional/plane controls, one-to-one assignments and exclusion veto.
-- [x] Retrospective ROC/AUC, BEDROC and EF with correct ties and explicit failure accounting (#12).
+- [x] Retrospective ROC/AUC, BEDROC and EF with correct ties and explicit failure accounting (#12; reviewed closure 2026-10-07, independent ranking and native/legacy accounting guards).
 - [x] Source/state/method provenance and native persistence for these delivered slices.
 - [ ] Scientific/API review and biological-pilot validation of these slices.
 - [ ] General extension registration, stable site identity and complete portable codecs.

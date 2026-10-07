@@ -1,9 +1,12 @@
 """Analytical rankings and independent reference calculations."""
 
+from itertools import combinations, permutations
+
 import numpy as np
 import pytest
 from rdkit.ML.Scoring import Scoring
 
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.validation.metrics import bedroc, enrichment_factor, roc_auc
 
 
@@ -67,3 +70,69 @@ def test_single_class_and_fraction_contracts():
     for fraction in (0, 1.1, np.nan):
         with pytest.raises(ValueError):
             enrichment_factor([1, 0], [1, 0], fraction)
+
+
+@pytest.mark.parametrize("n_actives", [1, 2, 4])
+def test_all_small_unbalanced_rankings_agree_with_rdkit(n_actives):
+    """Exercise every active-position combination, including rare actives."""
+    scores = np.arange(5, 0, -1)
+    for positions in combinations(range(5), n_actives):
+        labels = np.zeros(5, dtype=int)
+        labels[list(positions)] = 1
+        reference = list(zip(scores.tolist(), labels.tolist(), strict=True))
+        assert roc_auc(labels, scores) == pytest.approx(Scoring.CalcAUC(reference, 1))
+        for alpha in (1, 20, 80):
+            assert bedroc(labels, scores, alpha) == pytest.approx(
+                Scoring.CalcBEDROC(reference, 1, alpha), abs=1e-12
+            )
+        expected = Scoring.CalcEnrichment(reference, 1, [0.2, 0.4, 0.8])
+        for fraction, value in zip((0.2, 0.4, 0.8), expected, strict=True):
+            assert enrichment_factor(labels, scores, fraction) == pytest.approx(value)
+
+
+def test_three_way_boundary_tie_matches_all_reference_tie_resolutions():
+    labels, scores = np.array([1, 0, 1, 0, 0]), np.array([3, 2, 2, 2, 1])
+    reference_rankings = [[1, 1, 0, 0, 0], [1, 0, 1, 0, 0], [1, 0, 0, 1, 0]]
+    expected_bedroc = np.mean(
+        [
+            Scoring.CalcBEDROC(list(zip(scores.tolist(), order, strict=True)), 1, 20)
+            for order in reference_rankings
+        ]
+    )
+    # Average reference ranks over all placements of the tied active. Input
+    # permutation must never select one favorable tie resolution.
+    for order in permutations(range(5)):
+        order = list(order)
+        assert roc_auc(labels[order], scores[order]) == pytest.approx(5 / 6)
+        assert bedroc(labels[order], scores[order]) == pytest.approx(expected_bedroc)
+        assert enrichment_factor(labels[order], scores[order], 0.4) == pytest.approx(
+            5 / 3
+        )
+
+
+@pytest.mark.parametrize("value", [0, -1, np.nan, np.inf, True, "invalid"])
+def test_invalid_metric_parameters_retain_argument_diagnostics(value):
+    for metric, parameter in ((bedroc, "alpha"), (enrichment_factor, "fraction")):
+        with pytest.raises(ArgumentError) as error:
+            metric([1, 0], [1, 0], **{parameter: value})
+        assert error.value.extra["argument"] == parameter
+        assert error.value.extra["reason"]
+
+
+@pytest.mark.parametrize("metric", [roc_auc, bedroc, enrichment_factor])
+@pytest.mark.parametrize(
+    "labels,scores",
+    [
+        ([[1, 0]], [1, 0]),
+        ([1, 0], [[1, 0]]),
+        ([1, np.nan], [1, 0]),
+        ([1, 0], [np.inf, 0]),
+    ],
+)
+def test_invalid_ranking_shapes_and_nonfinite_values_have_diagnostics(
+    metric, labels, scores
+):
+    with pytest.raises(ArgumentError) as error:
+        metric(labels, scores)
+    assert error.value.extra["argument"] in {"labels", "scores", "labels/scores"}
+    assert error.value.extra["reason"]

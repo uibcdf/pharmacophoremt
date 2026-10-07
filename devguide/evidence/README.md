@@ -878,3 +878,25 @@ python -m devtools.diagnose_eralpha_interface --output /tmp/eralpha-diagnosis.js
 Exact rejected reference-pair geometry is independently checked in the fixed-case
 guard, pending public MolSysMT diagnostics under #350. Environmental H refinement
 is separately requested in provider #323; this driver implements neither tool.
+
+## Ranking and retrospective review — 2026-10-07
+
+`ranking_retrospective_review_py314.json` records the reviewed closure of
+[PharmacophoreMT #12](https://github.com/uibcdf/pharmacophoremt/issues/12), with
+source/guard/reference implementation checksums, actual original counterexample
+results and verification scope. The original implementation was already published;
+the closure strengthens its guards and archives the reviewed report.
+
+The metric, retrospective and placed-pose selection passes 62 tests in 13.65 s
+without warnings on normal editable Python 3.14.7. Independent RDKit references
+cover AUC, BEDROC and EF for all small unbalanced rankings; analytical three-way
+ties cover unbiased permutation-invariant treatment. Real native/legacy routes
+protect failed-input exclusion, repeated positions, evaluated denominators and
+accepted-hit status distinct from positive coverage. Empty/all-failed datasets
+raise. The cookbook block executes; strict isolated rendering, Ruff and offline
+reporting/index guards pass.
+
+This is bounded source review, not a complete hosted matrix, clean public
+installation or biological enrichment result. No molecular provider code is
+changed; ERα environmental H refinement remains MolSysMT #323. Previously
+retained evidence is preserved.

@@ -1,0 +1,141 @@
+{
+  "schema": "pharmacophoremt.ranking_retrospective_review@1",
+  "issue": "uibcdf/pharmacophoremt#12",
+  "recorded_utc": "2026-10-07T07:30:08.015924+00:00",
+  "implementation_commit": "fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f",
+  "reviewed_source_head": "a74a8ea83af343b12306aa964a07212822c41507",
+  "guard_overlay": [
+    "tests/test_validation_metrics.py",
+    "tests/test_retrospective.py"
+  ],
+  "python": "3.14.7",
+  "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "versions": {
+    "pharmacophoremt": "0.3.0+108.g864dcf5",
+    "molsysmt": "0.22.4+215.g5bd893c85",
+    "numpy": "2.4.6",
+    "rdkit": "2026.3.1",
+    "argdigest": "0.15.0+1.g5c6711e",
+    "smonitor": "0.19.0"
+  },
+  "file_sha256": {
+    "pharmacophoremt/validation/metrics.py": "272cd4b0df06a2549c125faaeac8ed35f22e46764d4007806726fdb5a2bacd23",
+    "pharmacophoremt/validation/retrospective.py": "dc869ded379c88cf7b4b1a33e49e13adb3834cf3f39cce470739b2bfaaf20c14",
+    "pharmacophoremt/_private/pose_batch.py": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": "c14e7356a446ef852563ac7f1a2075496c85857f5254d93b8cf11bbe3163961d",
+    "pharmacophoremt/screening/virtual_screening.py": "9297c1edf08df20c8b459232a7b58f7825a6811591791ba2de055a8893a91d64",
+    "tests/test_validation_metrics.py": "d7f9472a6a99729bedde9769abf1332eecdc230b213dca5e7969824e5322b3e9",
+    "tests/test_retrospective.py": "3c572a3b701d44268797142ffaf7dfa8c7155fcd5374f54b268993a54fd2e3e9",
+    "tests/test_pose_evaluation.py": "dc175b32f6dbbdda8564af7b471454d51400d79c823679846c15bbba093e9907"
+  },
+  "reference": {
+    "module": "rdkit.ML.Scoring.Scoring",
+    "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/ML/Scoring/Scoring.py",
+    "sha256": "462ce575ad9754c7e74207bb47f0d819b763bfcf0f55cdb58929bbd6b7a94e0a",
+    "documentation": "https://www.rdkit.org/docs/source/rdkit.ML.Scoring.Scoring.html"
+  },
+  "original_counterexamples": [
+    {
+      "name": "perfect",
+      "labels": [
+        1,
+        1,
+        0,
+        0
+      ],
+      "scores": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "measured": {
+        "AUC": 1.0,
+        "BEDROC": 1.0,
+        "EF_at_half": 2.0
+      },
+      "rdkit_reference": {
+        "AUC": 1.0,
+        "BEDROC": 1.0,
+        "EF_at_half": 2.0
+      }
+    },
+    {
+      "name": "alternating",
+      "labels": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "scores": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "measured": {
+        "AUC": 0.75,
+        "BEDROC": 0.9933519433292097,
+        "EF_at_half": 1.0
+      },
+      "rdkit_reference": {
+        "AUC": 0.75,
+        "BEDROC": 0.99335194332921,
+        "EF_at_half": 1.0
+      }
+    },
+    {
+      "name": "reversed",
+      "labels": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "scores": [
+        4,
+        3,
+        2,
+        1
+      ],
+      "measured": {
+        "AUC": 0.0,
+        "BEDROC": 0.0,
+        "EF_at_half": 0.0
+      },
+      "rdkit_reference": {
+        "AUC": 0.0,
+        "BEDROC": 0.0,
+        "EF_at_half": 0.0
+      }
+    }
+  ],
+  "verification": {
+    "command": "python -m pytest --receptor=llm tests/test_validation_metrics.py tests/test_retrospective.py tests/test_pose_evaluation.py",
+    "n_passed": 62,
+    "seconds": 13.65,
+    "n_warnings": 0,
+    "cookbook_python_block": "executed successfully; docs/content/cookbook/retrospective_validation.md"
+  },
+  "acceptance": {
+    "original_ranking_defects": true,
+    "unbalanced_reference_rankings": true,
+    "unbiased_ties": true,
+    "invalid_input_diagnostics": true,
+    "repeated_and_generator_input_indices": true,
+    "both_class_failures_excluded": true,
+    "evaluated_metric_denominators": true,
+    "coverage_distinct_from_accepted_hits": true,
+    "native_and_legacy_accounting": true,
+    "empty_and_all_failed_batches_raise": true,
+    "public_signatures_preserved": true
+  },
+  "limits": [
+    "Focused normal-editable source review; no full required hosted matrix or public installed qualification.",
+    "Native/legacy accounting on declared analytical inputs; no general legacy chemistry or conformer-preparation acceptance.",
+    "Ranked coverage is not affinity, prospective discrimination or biological enrichment.",
+    "No MolSysMT changes; environmental H refinement remains provider #323 and consumer #22."
+  ]
+}
