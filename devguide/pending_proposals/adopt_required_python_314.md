@@ -127,3 +127,32 @@ affected interaction/composition/CCD/curation controls and the strengthened
 repeat-H plus six administrative controls. These overlapping selected runs are
 recorded in devguide/evidence/publication_20261006.json; they do not certify
 the new four-minor hosted matrix. Earlier qualified-source claims remain historical.
+
+## Native matrix environment recovery — 2026-10-06
+
+[CI 37544983404](https://github.com/uibcdf/pharmacophoremt/actions/runs/37544983404)
+at `a477d971c1dc09672ec83f97e2cc0f62869765e1` passes reporting governance and
+the four Linux/macOS Python 3.13/3.14 scientific cells. All four 3.11/3.12
+cells fail in `test_eralpha_native_input_audit`: the older shared environment
+omits OpenMM, so legacy PDB import retains declared edges without inferred
+bonds. Linux 3.11 and macOS 3.12 logs each record 541 passed, one failed and
+the missing-OpenMM diagnostic. The older environment also lacks Beartype;
+runtime type checks are disabled there. No provider defect is inferred.
+
+The 3.11/3.12 environment now declares the same scientific dependency surface
+and channels as the successful 3.13 environment, including OpenMM and Beartype.
+Suite libraries are installed through the existing exact source pins rather
+than an earlier Conda MolSysMT generation. Interpreter selection, reporting
+tool versions, full test collection, assertions and provider pins are retained.
+
+The durable guard is
+`tests/test_ci_routes.py::test_supported_matrix_has_native_scientific_dependencies`.
+It reads the workflow's actual environments, requires OpenMM/Beartype and
+checks scientific dependency/channel parity, permitting interpreter and
+Pytest Receptor differences. It failed before the environment correction and
+passes afterward. Local normal-editable Python 3.14 execution passes seven
+CI route/recovery controls and the original failing scientific audit.
+Ruff lint/format checks pass for the changed guard.
+
+A fresh eight-cell hosted result remains required for this correction; these
+local results do not certify older interpreters, macOS or public installation.

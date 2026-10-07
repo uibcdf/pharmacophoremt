@@ -55,3 +55,33 @@ def test_contributor_routes_and_complete_supported_matrix():
         'platform.machine() == "arm64"'
         in steps["Verify interpreter and macOS architecture"]["run"]
     )
+
+
+def test_supported_matrix_has_native_scientific_dependencies():
+    """Every native-test lane needs OpenMM bonds and active type validation (#23)."""
+    workflow = yaml.load(
+        (ROOT / ".github/workflows/CI.yaml").read_text(), Loader=yaml.BaseLoader
+    )
+    environment_files = {
+        cell["environment-file"]
+        for cell in workflow["jobs"]["test"]["strategy"]["matrix"]["cfg"]
+    }
+    reference = yaml.safe_load(
+        (ROOT / "devtools/conda-envs/test_env_py313.yaml").read_text()
+    )
+
+    def scientific_dependencies(environment):
+        # Interpreter selectors and reporting-tool generations differ by minor.
+        return {
+            dependency
+            for dependency in environment["dependencies"]
+            if dependency.split()[0] != "python"
+            and not dependency.startswith("pytest-receptor=")
+        }
+
+    for filename in sorted(environment_files):
+        environment = yaml.safe_load((ROOT / filename).read_text())
+        dependencies = scientific_dependencies(environment)
+        assert {"openmm", "beartype"} <= dependencies, filename
+        assert dependencies == scientific_dependencies(reference), filename
+        assert environment["channels"] == reference["channels"], filename
