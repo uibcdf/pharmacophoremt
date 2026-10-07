@@ -27,6 +27,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
+    - name: Check out the reviewed dependency SDK
+      uses: actions/checkout@v4
+      with:
+        repository: uibcdf/molsyssuite
+        ref: 2d32048457c6d37093ae509f5626d00a5cda121b
+        path: .molsyssuite
+        persist-credentials: false
     - uses: actions/setup-python@v5
       with:
         python-version: "3.14"
@@ -35,9 +42,14 @@ jobs:
         python devtools/devguide_index.py --check
         python -m unittest discover -s tests -p test_reporting_protocol.py
     - name: Install CI-governance test tools
-      run: python -m pip install "pytest>=8" "pytest-receptor==1.2.0" "PyYAML>=6"
+      run: python -m pip install "pytest>=8" "pytest-receptor==1.2.0" "PyYAML>=6" "Jinja2>=3,<4" "packaging>=24" "setuptools>=61"
     - name: Test CI recovery and contributor routes
       run: python -m pytest --receptor=ci tests/test_ci_backlog.py tests/test_ci_routes.py
+
+    - name: Review declared dependency routes
+      run: python devtools/check_dependency_routes.py --declared-only
+    - name: Test distribution and dependency contracts
+      run: python -m unittest discover -s devtools/tests -p test_distribution_contract.py
 
   nightly-decision:
     name: Check skipped-commit backlog
@@ -124,6 +136,22 @@ jobs:
       shell: bash -l {0}
       run: |
         python -m pip install --force-reinstall --no-deps "git+https://github.com/uibcdf/molsysmt@8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+
+    - name: Check out the reviewed dependency SDK
+      uses: actions/checkout@v4
+      with:
+        repository: uibcdf/molsyssuite
+        ref: 2d32048457c6d37093ae509f5626d00a5cda121b
+        path: .molsyssuite
+        persist-credentials: false
+
+    - name: Install isolated dependency-check tools
+      shell: bash -l {0}
+      run: python -m pip install --target .molsyssuite-tools "PyYAML>=6" "Jinja2>=3,<4" "packaging>=24"
+
+    - name: Check dependency routes and installed Git context
+      shell: bash -l {0}
+      run: python devtools/check_dependency_routes.py --context ci-${{ matrix.cfg.python-version }}
 
     - name: Info conda
       shell: bash -l {0}

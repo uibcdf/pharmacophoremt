@@ -117,3 +117,7 @@ record.txt
 
 # In this library
 pharmacophoremt/_version.py
+
+# Isolated administrative SDK and its checker-only libraries
+.molsyssuite/
+.molsyssuite-tools/

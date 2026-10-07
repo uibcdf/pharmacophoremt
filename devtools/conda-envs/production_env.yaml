@@ -2,10 +2,15 @@ channels:
 - uibcdf
 - conda-forge
 dependencies:
-- python
+- python >=3.11,<3.15
 - setuptools
 - numpy
 - pyunitwizard
 - scipy
 - nglview
 - molsysmt
+- argdigest
+- smonitor
+- depdigest
+- rdkit
+- networkx

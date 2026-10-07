@@ -6,9 +6,9 @@ opened: 2026-10-01
 closed:
 verification: measured
 area: [governance, distribution, compatibility]
-guard:
+guard: devtools/tests/test_distribution_contract.py
 normative: MOLSYSSUITE_GUIDE.md
-blocked_by: []
+blocked_by: [uibcdf/molsyssuite#108]
 supersedes: []
 ---
 
@@ -63,7 +63,7 @@ repairs and complete scientific execution belong to this component's team.
 - Review each claimed public installation route without inferring it from config.
 - Before a candidate, commit a reviewed actual release plan and immutable build.
 - Execute the component-owned installed gate for the actual candidate before
-  promotion. The delivered six-cell descriptor retains the complete local suite
+  promotion. The current eight-cell descriptor retains the complete local suite
   and resource/launcher checks; missing, skipped or failed evidence fails closed.
 - Confirm publication access only through an authorized maintainer.
 - Register actual candidate/build/installed/public evidence only after execution.
@@ -102,3 +102,52 @@ requires ordinary public dependency provenance and runs the whole local test
 selection outside source, with import checks inside the pytest interpreter.
 It neither uploads nor adds a scientific suite to internal pushes. The real
 release plan and actual scientific/installed evidence remain future prerequisites.
+
+## Current resource/source-control checkpoint, 2026-10-07
+
+Review begins at `e1cbe7b48e8804a528bee0b3f176ce329e99c3a2` in an isolated
+clone; active scientific changes in the primary clone are preserved. Current
+metadata already declares SMonitor and DepDigest, exposing two missing central
+runtime graph edges. The former inventory covered 47 paths; the current guard
+requires all 177 tracked package files plus the generated version target (178).
+This includes private diagnostics, new modeling/screening modules and runtime
+data. Package discovery is restricted to this package namespace so the isolated
+SDK/test tools cannot enter its distribution. No actual artifact was built.
+
+All publication/preflight calls now use the previously qualified shared SDK
+`2d32048457c6d37093ae509f5626d00a5cda121b`. The installed descriptor requires
+all four provenance/science steps across eight Linux/macOS arm64 cells on
+3.11–3.14; optional qualification SHA stays distinct from producer/file/digest.
+The example plan requires eleven executed source/admin jobs; 0.0.0 remains an
+illustration, with no real release plan or publication decision.
+
+The general @3 inventory covers seventeen routes, fourteen fixed source records,
+two unchanged input manifests and seven contexts. The seven selected providers
+retain their original exact revisions; Ackredit and MolSysViewer are integration
+sources, not new required runtime dependencies. Every source cell invokes actual
+context verification before the retained science command; checker libraries are
+isolated. Production/development/docs now declare the missing direct requirements,
+and ordinary test environments bound Python without dropping scientific/native
+bootstrap conditions. Routine development stays 3.14.
+
+Fifteen independent administrative tests exercise the actual shared operations:
+complete/missing private-module/data archives, embedded version drift, recipe
+dependency omission, package namespace leakage, source/context/role/manifest/inline
+workflow drift, false editable origins, exact-candidate required steps and separate
+qualification identity. All pass locally alongside lint/format, actionlint and
+declaration checks. These tests are outside the scientific collection; neither
+scientific source pins nor test commands, matrix, triggers or recovery are changed.
+
+Conda/PyPI package APIs return 404 at this review; the release inventory is checked
+separately. The installation guide no longer advertises `pocketmt` and distinguishes
+managed source installation from future public qualification. A configured noarch
+route or matrix is not installed/public proof. Source-free actual context checks,
+legacy broadcaster/environment-helper replacement, full successful candidate
+science, real plan/access/original artifact/installed/public evidence remain
+outstanding. Scientific repairs and public release choices stay component-owned.
+Workspace closure findings remain separately tracked in uibcdf/molsyssuite#82.
+
+Shared helper replacement is owned by uibcdf/molsyssuite#108. Interim use stays
+with reviewed metadata/environment files plus the existing shared preflight;
+legacy helper output cannot approve a candidate. Remove this interim limitation
+after the common operation is qualified, adopted and exercised in this owner.

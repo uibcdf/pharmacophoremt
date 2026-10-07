@@ -24,3 +24,8 @@ dependencies:
 - sphinx-tabs
 - myst-nb
 - mamba
+- argdigest
+- smonitor
+- depdigest
+- rdkit
+- networkx

@@ -1,0 +1,316 @@
+schema = "molsyssuite.dependency-routes@3"
+reason = "Preserve current scientific Git inputs; qualify existing no-deps contexts under PharmacophoreMT #10 / MolSysSuite #45"
+
+[[source_routes]]
+id = "smonitor-base"
+name = "smonitor"
+role = "required-runtime"
+url = "https://github.com/uibcdf/smonitor"
+commit = "f604b940ab281df4554869fdd24f796ea6d42c27"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "depdigest-base"
+name = "depdigest"
+role = "required-runtime"
+url = "https://github.com/uibcdf/depdigest"
+commit = "ba670098a5b773e7f1570adc47b890d063bd5627"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "pyunitwizard-base"
+name = "pyunitwizard"
+role = "required-runtime"
+url = "https://github.com/uibcdf/pyunitwizard"
+commit = "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "argdigest-base"
+name = "argdigest"
+role = "required-runtime"
+url = "https://github.com/uibcdf/argdigest"
+commit = "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "molsysviewer-base"
+name = "molsysviewer"
+role = "integration"
+url = "https://github.com/uibcdf/molsysviewer"
+commit = "e0ae8a05099fce944b45355387f44d23d9458b13"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "ackredit-base"
+name = "ackredit"
+role = "integration"
+url = "https://github.com/uibcdf/ackredit"
+commit = "71f7f1984de1a3925c32d29074784bb553e89bfc"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "molsysmt-base"
+name = "molsysmt"
+role = "required-runtime"
+url = "https://github.com/uibcdf/molsysmt"
+commit = "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "smonitor-3.14"
+name = "smonitor"
+role = "required-runtime"
+url = "https://github.com/uibcdf/smonitor"
+commit = "f604b940ab281df4554869fdd24f796ea6d42c27"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "depdigest-3.14"
+name = "depdigest"
+role = "required-runtime"
+url = "https://github.com/uibcdf/depdigest"
+commit = "ba670098a5b773e7f1570adc47b890d063bd5627"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "pyunitwizard-3.14"
+name = "pyunitwizard"
+role = "required-runtime"
+url = "https://github.com/uibcdf/pyunitwizard"
+commit = "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "argdigest-3.14"
+name = "argdigest"
+role = "required-runtime"
+url = "https://github.com/uibcdf/argdigest"
+commit = "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "molsysviewer-3.14"
+name = "molsysviewer"
+role = "integration"
+url = "https://github.com/uibcdf/molsysviewer"
+commit = "e0ae8a05099fce944b45355387f44d23d9458b13"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "ackredit-3.14"
+name = "ackredit"
+role = "integration"
+url = "https://github.com/uibcdf/ackredit"
+commit = "71f7f1984de1a3925c32d29074784bb553e89bfc"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_routes]]
+id = "molsysmt-3.14"
+name = "molsysmt"
+role = "required-runtime"
+url = "https://github.com/uibcdf/molsysmt"
+commit = "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+install = "pip-no-deps-git"
+input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+reason = "Retain existing exact source input; no pin or scientific command change"
+
+[[source_inputs]]
+path = "devtools/requirements/controlled_suite_dependencies.txt"
+sha256 = "5a4c359b68f23b1abef62952b051a5737997aa7ffcf0157aeae56b6a36fce9f1"
+reason = "Existing pip --no-deps manifest preserved; inline repeat of the same MolSysMT pin is bound by workflow hash"
+
+[[source_inputs]]
+path = "devtools/requirements/controlled_suite_dependencies_py314.txt"
+sha256 = "5a4c359b68f23b1abef62952b051a5737997aa7ffcf0157aeae56b6a36fce9f1"
+reason = "Existing pip --no-deps manifest preserved; inline repeat of the same MolSysMT pin is bound by workflow hash"
+
+[[contexts]]
+name = "ci-3.11"
+environment = "devtools/conda-envs/test_env.yaml"
+python_minor = "3.11"
+sources = ["smonitor-base", "depdigest-base", "pyunitwizard-base", "argdigest-base", "molsysviewer-base", "ackredit-base", "molsysmt-base"]
+overlays = []
+reason = "Existing science selection; all seven final fixed-source providers checked before tests"
+
+[[contexts]]
+name = "ci-3.12"
+environment = "devtools/conda-envs/test_env.yaml"
+python_minor = "3.12"
+sources = ["smonitor-base", "depdigest-base", "pyunitwizard-base", "argdigest-base", "molsysviewer-base", "ackredit-base", "molsysmt-base"]
+overlays = []
+reason = "Existing science selection; all seven final fixed-source providers checked before tests"
+
+[[contexts]]
+name = "ci-3.13"
+environment = "devtools/conda-envs/test_env_py313.yaml"
+python_minor = "3.13"
+sources = ["smonitor-base", "depdigest-base", "pyunitwizard-base", "argdigest-base", "molsysviewer-base", "ackredit-base", "molsysmt-base"]
+overlays = []
+reason = "Existing science selection; all seven final fixed-source providers checked before tests"
+
+[[contexts]]
+name = "ci-3.14"
+environment = "devtools/conda-envs/test_env_py314.yaml"
+python_minor = "3.14"
+sources = ["smonitor-3.14", "depdigest-3.14", "pyunitwizard-3.14", "argdigest-3.14", "molsysviewer-3.14", "ackredit-3.14", "molsysmt-3.14"]
+overlays = []
+reason = "Existing science selection; all seven final fixed-source providers checked before tests"
+
+[[contexts]]
+name = "production-3.14"
+environment = "devtools/conda-envs/production_env.yaml"
+python_minor = "3.14"
+sources = []
+reason = "Source-free public dependency declaration; actual installed invocation still requires separate evidence"
+
+[[contexts]]
+name = "development-3.14"
+environment = "devtools/conda-envs/development_env.yaml"
+python_minor = "3.14"
+sources = []
+reason = "Source-free public dependency declaration; actual installed invocation still requires separate evidence"
+
+[[contexts]]
+name = "docs-3.12"
+environment = "devtools/conda-envs/docs_env.yaml"
+python_minor = "3.12"
+sources = []
+reason = "Source-free public dependency declaration; actual installed invocation still requires separate evidence"
+
+[[recipes]]
+path = "devtools/conda-build/meta.yaml"
+kind = "shared-noarch"
+plan = "devtools/conda-build/release_plan.example.toml"
+resources = "devtools/conda-build/resources.toml"
+reason = "Administrative recipe/resource check only; example never authorizes publication"
+
+[[environments]]
+path = "devtools/conda-envs/build_env.yaml"
+kind = "build-only"
+reason = "Build bootstrap; consumer runtime supplied by the separate reviewed recipe"
+
+[[environments]]
+path = "devtools/conda-envs/development_env.yaml"
+kind = "runtime"
+purpose = "development"
+channel_priority = "strict"
+narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
+reason = "Current consuming declaration under PharmacophoreMT #10"
+
+[[environments]]
+path = "devtools/conda-envs/docs_env.yaml"
+kind = "runtime"
+purpose = "documentation"
+channel_priority = "strict"
+narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
+reason = "Current consuming declaration under PharmacophoreMT #10"
+
+[[environments]]
+path = "devtools/conda-envs/importable_env.yaml"
+kind = "resolved-package"
+reason = "Historical MolSysMT counterpart installation fixture; no workflow uses this as PharmacophoreMT runtime or public delivery evidence"
+
+[[environments]]
+path = "devtools/conda-envs/production_env.yaml"
+kind = "runtime"
+purpose = "production"
+channel_priority = "strict"
+narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
+reason = "Current consuming declaration under PharmacophoreMT #10"
+
+[[environments]]
+path = "devtools/conda-envs/setup_env.yaml"
+kind = "build-only"
+reason = "Build bootstrap; consumer runtime supplied by the separate reviewed recipe"
+
+[[environments]]
+path = "devtools/conda-envs/test_env.yaml"
+kind = "runtime"
+purpose = "test"
+channel_priority = "strict"
+narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
+reason = "Current consuming declaration under PharmacophoreMT #10"
+additional_channels = ["ambermd"]
+channel_reason = "Preserve actual AmberTools bootstrap; no required scientific dependency removed"
+
+[[environments]]
+path = "devtools/conda-envs/test_env_py313.yaml"
+kind = "runtime"
+purpose = "test"
+channel_priority = "strict"
+narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
+reason = "Current consuming declaration under PharmacophoreMT #10"
+additional_channels = ["ambermd"]
+channel_reason = "Preserve actual AmberTools bootstrap; no required scientific dependency removed"
+
+[[environments]]
+path = "devtools/conda-envs/test_env_py314.yaml"
+kind = "runtime"
+purpose = "test"
+channel_priority = "strict"
+narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
+reason = "Current consuming declaration under PharmacophoreMT #10"
+additional_channels = ["ambermd"]
+channel_reason = "Preserve actual AmberTools bootstrap; no required scientific dependency removed"
+
+[[workflows]]
+path = ".github/workflows/CI.yaml"
+sha256 = "c2b15a23a63a8969fa1edf05c64de488ead36d357ae7a1205fc5e630ee411666"
+reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+
+[[workflows]]
+path = ".github/workflows/build_and_upload_conda_packages.yaml"
+sha256 = "a7ae60a309898f9da75e01255fc69356d5a9ebf9e9091c9af4ef8ef5c804bd61"
+reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+
+[[workflows]]
+path = ".github/workflows/conda_publication_governance.yaml"
+sha256 = "eb54f756f9aa208adbc210b3839bf23be640457ff975f84415d12eb6c6b9cf4d"
+reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+
+[[workflows]]
+path = ".github/workflows/molsyssuite-policy.yml"
+sha256 = "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+
+[[workflows]]
+path = ".github/workflows/promote_conda_package.yaml"
+sha256 = "142533c037019d1aa90a93cef9590dec1c13453ada5802880a345dc2672cf665"
+reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+
+[[workflows]]
+path = ".github/workflows/sphinx_docs_to_gh_pages.yaml"
+sha256 = "b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9"
+reason = "Existing Python 3.12 documentation source-free route; effective strict channels remain separately reviewed"
+
+[[workflows]]
+path = ".github/workflows/test_installed_conda_package.yaml"
+sha256 = "83bcd0126b7150334e31cc2407a39b4e9963834f7a027a341be268db7f2dcf28"
+reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"

@@ -2,7 +2,7 @@ channels:
 - uibcdf
 - conda-forge
 dependencies:
-- python
+- python >=3.11,<3.15
 - setuptools
 - numpy
 - pyunitwizard
@@ -19,3 +19,8 @@ dependencies:
 - sphinx-favicon
 - sphinx-tabs
 - myst-nb
+- argdigest
+- smonitor
+- depdigest
+- rdkit
+- networkx

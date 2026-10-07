@@ -9,7 +9,8 @@
 Coverage: PharmacophoreMT Python tests, uploaded from Linux/Python 3.13 on eligible full CI runs; weekly and conditional nightly recovery retain the existing cadence. The badge reflects the last uploaded report, which may lag later direct or skip-CI commits; it does not certify a full matrix or scientific correctness.
 
 The development source supports Python **3.11–3.14** (`>=3.11,<3.15`). Full CI
-and installed-candidate qualification cover all four versions. Public package
+and installed-candidate qualification are configured for all four versions;
+passing evidence is recorded separately for the exact source or artifact. Public package
 qualification is tracked in [#23](https://github.com/uibcdf/pharmacophoremt/issues/23);
 the release badge above retains the previously qualified range.
 
