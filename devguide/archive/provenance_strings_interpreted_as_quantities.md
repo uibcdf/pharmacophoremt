@@ -1,14 +1,14 @@
 ---
 summary: Provenance serialization interprets literal identifiers as physical quantities.
 issue: uibcdf/pharmacophoremt#25
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-10-07
 severity: high
 verification: reproduced
 area: [persistence, provenance]
 guard: tests/test_contracts.py::test_detached_provenance_preserves_literal_strings_and_quantity_objects
-normative:
+normative: devguide/native_provenance_persistence.md
 blocked_by: []
 supersedes: []
 ---
@@ -108,3 +108,38 @@ Literal strings, including unit-looking text and NumPy string scalars, remain
 strings. Real quantity objects remain portable with their physical values/units;
 containers detach from inputs. Native consensus outputs and saved models preserve
 original ligand IDs. Execute the regression guards and affected cookbook.
+
+## 2026-10-07 reviewed closure
+
+The original dated observations above are preserved. The implementation was
+published in `fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f`; this review uses source
+base `8ddfa537f81ede93a010b6da2087d5f08fae4253` and accepts that consumer-owned
+correction without changing runtime code or provider parsing.
+
+The owning helper preserves strings before quantity detection and normalizes
+NumPy text to builtin `str`. The complete native dictionary boundary detaches
+root fields, site metadata and nested evidence; YAML uses the safe writer/reader.
+Actual quantities retain PyUnitWizard records with explicit physical units.
+The existing guard now checks exact builtin text type as well as original values
+and detached mutable data. The additional JSON/YAML consensus guard compares
+saved source/support IDs against original `a`/`b`, preserves literal unit-looking
+root/site text, independently decodes 0.12/0.04 nm metadata quantities and verifies
+the analytical 0.17 nm center/0.06 nm radius. Writing under pm/fs/degrees and
+reading under angstrom/ps/radians cannot reinterpret those values through a
+session default. Serialization leaves the producer's NumPy text/array objects
+unchanged; mutating the input array after writing does not change the saved data.
+
+The focused contract/curation/reference/clique selection passes 85 tests in
+79.75 s on normal editable Python 3.14.7. All six Python blocks of the aligned
+clique and curation recipes execute; strict isolated rendering passes without
+warning suppression. Seven recorded Python producer source trees/identities
+remain unchanged across tests and recipe execution. Original compressed
+evidence remains byte-identical; the historical source-change caveat above is
+not overwritten or recast as qualification of this head.
+
+The maintained rule is `devguide/native_provenance_persistence.md`; the dated
+review receipt is `devguide/evidence/literal_provenance_review_py314.json`.
+These are declared native persistence controls, not a general arbitrary-object
+codec, repair of historical records, biological validation or installed/public
+release qualification. Undefined observation quantities (#35), broader schema
+work and MolSysMT environmental-H refinement (#323/local #22) stay separate.

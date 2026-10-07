@@ -171,6 +171,15 @@ remain in source history. No publication is assigned to these caller choices.
 Tracking failure/absence preserves completed scientific edits under the existing
 [attribution contract](attribution.md).
 
+Names, identifiers and notes remain literal text, including NumPy text such as
+`'2 m'` or `'1 ps'`; they are not inferred to be quantities. Actual metadata
+quantities retain their own portable value/unit records. Decode a declared
+quantity field through `puw.QuantityRecord.from_dict(record).to_quantity()`
+and extract with an explicit target unit. Native model geometry uses declared
+nm lengths and dimensionless directions across application unit policies.
+See the maintained
+[persistence contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/native_provenance_persistence.md).
+
 Compose native observed evidence with bounded `same_participant` reuse before
 curation. A curated metadata root has a different contract; use generic `keep`
 composition for explicit curated hypotheses. The complete source snapshot

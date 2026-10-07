@@ -1,0 +1,294 @@
+{
+  "schema": "pharmacophoremt.literal_provenance_review@1",
+  "issue": "uibcdf/pharmacophoremt#25",
+  "recorded_utc": "2026-10-07T19:43:50.076129+00:00",
+  "source_base": "8ddfa537f81ede93a010b6da2087d5f08fae4253",
+  "implementation_commit": "fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f",
+  "runtime_code_changed": false,
+  "environment": {
+    "python": "3.14.7",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "packages": {
+      "pharmacophoremt": {
+        "version": "0.3.0+108.g864dcf5",
+        "import_origin": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "python_source_sha256": "c2d82a4ca66edda01826c36a4ba1131e43650711d328df7526ed4bc36b9fd20c",
+        "python_files": 136,
+        "source_head": "8ddfa537f81ede93a010b6da2087d5f08fae4253"
+      },
+      "molsysmt": {
+        "version": "0.22.4+215.g5bd893c85",
+        "import_origin": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+        "python_source_sha256": "cdabe5c338e45c5a29b898c3eb7b90b5deb616351bf11c4a0f54eff87846f723",
+        "python_files": 2851,
+        "source_head": "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+      },
+      "pyunitwizard": {
+        "version": "0.28.1+3.g2ab37a5",
+        "import_origin": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+        "python_source_sha256": "281c5acf5d0c54362944c06d7bb4a06fe82d7de6a85572807578bcc5b38b0362",
+        "python_files": 84,
+        "source_head": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65"
+      },
+      "ackredit": {
+        "version": "0.12.0+1.g887b81c.dirty",
+        "import_origin": "/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+        "python_source_sha256": "a6b6935b287cc1d0e77a1fce3331d79c6b0825688a1fe6c8befe192fc5968c98",
+        "python_files": 69,
+        "source_head": "1342f0f2a659f3a7157bd65bfa5719a9604e973f"
+      },
+      "argdigest": {
+        "version": "0.15.0+1.g5c6711e",
+        "import_origin": "/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+        "python_source_sha256": "2db4a49ae17b8f58619a4b4da52b44d4a4c0ac7514c3716cb5bb82fa3bcae907",
+        "python_files": 38,
+        "source_head": "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+      },
+      "smonitor": {
+        "version": "0.19.0",
+        "import_origin": "/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+        "python_source_sha256": "5cf405a1a4c2b5a67874327b2166dc72dd54d73ad542b5f1cbe13fa3c6d78578",
+        "python_files": 40,
+        "source_head": "f604b940ab281df4554869fdd24f796ea6d42c27"
+      },
+      "depdigest": {
+        "version": "0.13.0+3.g0568f9a",
+        "import_origin": "/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+        "python_source_sha256": "6167334c0a1c41732dd57bbf6e6876e2e2080693a1fd10769c174453ab496da0",
+        "python_files": 16,
+        "source_head": "0568f9aba397ed5495adb350ba0f90899d6bdb8b"
+      }
+    },
+    "numpy": "2.4.6",
+    "rdkit": "2026.03.1"
+  },
+  "producer_sources_after": {
+    "pharmacophoremt": {
+      "version": "0.3.0+108.g864dcf5",
+      "import_origin": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "python_source_sha256": "c2d82a4ca66edda01826c36a4ba1131e43650711d328df7526ed4bc36b9fd20c",
+      "python_files": 136,
+      "source_head": "8ddfa537f81ede93a010b6da2087d5f08fae4253"
+    },
+    "molsysmt": {
+      "version": "0.22.4+215.g5bd893c85",
+      "import_origin": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "python_source_sha256": "cdabe5c338e45c5a29b898c3eb7b90b5deb616351bf11c4a0f54eff87846f723",
+      "python_files": 2851,
+      "source_head": "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+    },
+    "pyunitwizard": {
+      "version": "0.28.1+3.g2ab37a5",
+      "import_origin": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "python_source_sha256": "281c5acf5d0c54362944c06d7bb4a06fe82d7de6a85572807578bcc5b38b0362",
+      "python_files": 84,
+      "source_head": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65"
+    },
+    "ackredit": {
+      "version": "0.12.0+1.g887b81c.dirty",
+      "import_origin": "/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+      "python_source_sha256": "a6b6935b287cc1d0e77a1fce3331d79c6b0825688a1fe6c8befe192fc5968c98",
+      "python_files": 69,
+      "source_head": "1342f0f2a659f3a7157bd65bfa5719a9604e973f"
+    },
+    "argdigest": {
+      "version": "0.15.0+1.g5c6711e",
+      "import_origin": "/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "python_source_sha256": "2db4a49ae17b8f58619a4b4da52b44d4a4c0ac7514c3716cb5bb82fa3bcae907",
+      "python_files": 38,
+      "source_head": "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+    },
+    "smonitor": {
+      "version": "0.19.0",
+      "import_origin": "/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "python_source_sha256": "5cf405a1a4c2b5a67874327b2166dc72dd54d73ad542b5f1cbe13fa3c6d78578",
+      "python_files": 40,
+      "source_head": "f604b940ab281df4554869fdd24f796ea6d42c27"
+    },
+    "depdigest": {
+      "version": "0.13.0+3.g0568f9a",
+      "import_origin": "/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+      "python_source_sha256": "6167334c0a1c41732dd57bbf6e6876e2e2080693a1fd10769c174453ab496da0",
+      "python_files": 16,
+      "source_head": "0568f9aba397ed5495adb350ba0f90899d6bdb8b"
+    }
+  },
+  "python_producer_sources_unchanged": true,
+  "reviewed_source_sha256": {
+    "tests/test_contracts.py": "2bdfb0ee0bc8c525ecd3469fbc3c2fd3c43b8d8391228c60a90197d241223fd4",
+    "tests/test_curation.py": "eb0923a1ad55a0ee4c4b43a89016a08f6848896f8162b6ac940025f89ab537ba",
+    "tests/test_reference_ligand.py": "84ce19dc32d1d38d1800941554abbdbc540a2c3cdc7a0fe3beff89dc50f5ad8f",
+    "tests/test_aligned_cliques.py": "1ca351a3eb5daceae3890b1abfe5c22b35430496c87f6f6ad1906a182c122cb2",
+    "pharmacophoremt/_private/molsysmt.py": "ec578fe50ab54d3fdb7bbae8c04eb2fa607a9e19d06e15eea9e8eb1e38e85654",
+    "pharmacophoremt/io/phmt/__init__.py": "3843a3268918657f666ba8373d12cc1fa204b5b9549d5dde0ed960cc1c678b55",
+    "devguide/native_provenance_persistence.md": "c295a06ac2c03666d5189fdc829080866b9c4efffefa0ca5f9f0c2c67227c8d8",
+    "devguide/archive/provenance_strings_interpreted_as_quantities.md": "d817c838eb82b2e2ae2ff6e96165c3103f7212eeaafca724afc91b06d50edb7f",
+    "docs/content/cookbook/pharmacophore_curation.md": "868a0dd078b4a6a28cb3b66711cbb3993a728d2f13d85f93682f34efe3ca35cd",
+    "docs/content/cookbook/aligned_cliques.md": "3006ed9accc7f34655e64bb282929f9472b3c9d3181840da6d97f89bd79eccc6"
+  },
+  "original_report_body_preserved": true,
+  "original_gzip_sha256": {
+    "devguide/evidence/aromatic_interactions_py314.json.gz": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "devguide/evidence/ccd_interactions_py314.json.gz": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def",
+    "devguide/evidence/curation_py314_cookbook_audit.json.gz": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "devguide/evidence/eralpha_exclusions_py314.json.gz": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "devguide/evidence/eralpha_hydrogens_py314.json.gz": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "devguide/evidence/eralpha_interface_py314.json.gz": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "devguide/evidence/eralpha_receptor_py314.json.gz": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce",
+    "devguide/evidence/eralpha_template_py314.json.gz": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "devguide/evidence/interaction_composition_py314.json.gz": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "devguide/evidence/ionic_interactions_py314.json.gz": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "devguide/evidence/prepared_ccd_py314.json.gz": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+    "devguide/evidence/ranked_seeds_py314.json.gz": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "devguide/evidence/rigid_consensus_py314.json.gz": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "devguide/evidence/rigid_refinement_benchmark_py314.json.gz": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1",
+    "devguide/evidence/rigid_refinement_py314.json.gz": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c"
+  },
+  "persisted_control_observations": [
+    {
+      "format": "json",
+      "saved_sha256": "40e2ff1e459160f69b80bd9c635e91e5579d81454e735d40f979bee3dda3b69f",
+      "name": "1 nm",
+      "description": "2 m",
+      "source_ids": [
+        "a",
+        "b"
+      ],
+      "supporter_ids": [
+        "a",
+        "b"
+      ],
+      "literals": [
+        "a",
+        "b",
+        "nm",
+        "s",
+        "1 nm",
+        "2 m",
+        "1 ps",
+        "yes",
+        "null"
+      ],
+      "normalized_builtin_text": true,
+      "detached_array": [
+        1,
+        2
+      ],
+      "metadata_distance_nm": 0.12,
+      "site_metadata_distance_nm": 0.04,
+      "site_text": "1 ps",
+      "center_nm": [
+        0.16999999999999996,
+        0.0,
+        0.0
+      ],
+      "radius_nm": 0.06,
+      "python_object_tags": false
+    },
+    {
+      "format": "yaml",
+      "saved_sha256": "929ed939c974c4146963f4b4fc8a6a0435a0c968487d0637297690c917618edd",
+      "name": "1 nm",
+      "description": "2 m",
+      "source_ids": [
+        "a",
+        "b"
+      ],
+      "supporter_ids": [
+        "a",
+        "b"
+      ],
+      "literals": [
+        "a",
+        "b",
+        "nm",
+        "s",
+        "1 nm",
+        "2 m",
+        "1 ps",
+        "yes",
+        "null"
+      ],
+      "normalized_builtin_text": true,
+      "detached_array": [
+        1,
+        2
+      ],
+      "metadata_distance_nm": 0.12,
+      "site_metadata_distance_nm": 0.04,
+      "site_text": "1 ps",
+      "center_nm": [
+        0.16999999999999996,
+        0.0,
+        0.0
+      ],
+      "radius_nm": 0.06,
+      "python_object_tags": false
+    }
+  ],
+  "cookbook": [
+    {
+      "recipe": "docs/content/cookbook/aligned_cliques.md",
+      "executed_blocks": 3,
+      "joint_ligand_ids": [
+        "a",
+        "b"
+      ],
+      "support_fraction": 0.6666666666666666,
+      "alternatives": 2,
+      "sites": 1
+    },
+    {
+      "recipe": "docs/content/cookbook/pharmacophore_curation.md",
+      "executed_blocks": 3,
+      "original_sites": 9,
+      "narrow": "not_matched",
+      "wide": "matched",
+      "wide_fit": 1.0,
+      "source_bibliography_preserved": true,
+      "cached_uses": []
+    }
+  ],
+  "verification": [
+    {
+      "command": "python -m pytest --receptor=llm tests/test_contracts.py tests/test_curation.py tests/test_reference_ligand.py tests/test_aligned_cliques.py",
+      "passed": 85,
+      "seconds": 79.75
+    },
+    {
+      "command": "python -m sphinx -W --keep-going -b html ISOLATED_SOURCE HTML",
+      "result": "passed",
+      "scope": "Both original affected recipes with linked-attribution stub; no warning suppression or full-site claim"
+    },
+    {
+      "command": "python devtools/devguide_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_reporting_protocol.py",
+      "passed": 3,
+      "seconds": 0.454
+    },
+    {
+      "command": "ruff check .",
+      "result": "passed"
+    },
+    {
+      "command": "ruff format --check .",
+      "result": "passed",
+      "files": 238
+    }
+  ],
+  "limits": [
+    "Focused normal-editable Linux/Python 3.14 source persistence controls, not public artifact qualification.",
+    "Existing runtime correction accepted; no provider or runtime code changed.",
+    "Actual saved output scalar projections and hashes retained; rerun owning tests for fresh model files.",
+    "Producer stability audit covers recorded Python sources; native dependencies are recorded by runtime version, not complete binary environment reconstruction.",
+    "Original historical source-change caveat and archived results remain unchanged.",
+    "No arbitrary-object codec, recovery of corrupted historical records or biological/affinity claim.",
+    "Undefined observation quantities remain separate #35; environmental H refinement remains MolSysMT #323 / local #22."
+  ]
+}

@@ -62,14 +62,95 @@ def test_detached_provenance_preserves_literal_strings_and_quantity_objects():
     )
     saved = detached(original)
     assert saved["ligand_ids"] == identities
+    assert type(saved["nested"]["label"]) is str
     assert saved["nested"]["label"] == "a"
-    assert all(isinstance(identity, str) for identity in saved["ligand_ids"])
+    assert all(type(identity) is str for identity in saved["ligand_ids"])
     restored = puw.QuantityRecord.from_dict(saved["distance"]).to_quantity()
     assert float(puw.get_value(restored, to_unit="nm")) == pytest.approx(0.12)
     original["ligand_ids"].append("mutated")
     original["nested"]["values"][0] = 99
     assert saved["ligand_ids"] == identities
     assert saved["nested"]["values"] == [1, 2]
+
+
+@pytest.mark.parametrize("format", ["json", "yaml"])
+def test_native_saved_consensus_preserves_original_text_and_physical_units(
+    tmp_path, format
+):
+    import molsysmt as msm
+
+    from pharmacophoremt import pyunitwizard as puw
+    from pharmacophoremt.io import load_json, load_yaml, to_json, to_yaml
+    from pharmacophoremt.modeler import from_aligned_ligand_cliques
+    from tests.test_pose_evaluation import system
+
+    first = system("CCC", [[0, 0, 0], [0.15, 0, 0], [0.30, 0, 0]])
+    second = msm.structure.translate(first, translation="[.04,0,0] nm", in_place=False)
+    with puw.context(standard_units=["pm", "fs", "degrees"]):
+        result = from_aligned_ligand_cliques(
+            [
+                dict(ligand_id="a", molecular_system=first),
+                dict(ligand_id="b", molecular_system=second),
+            ],
+            features=["hydrophobicity"],
+            distance_tolerance=".10 nm",
+            radius=".06 nm",
+        )
+        assert len(result["models"]) == 1
+        model = result["models"][0]
+        model.name = np.str_("1 nm")
+        model.description = np.str_("2 m")
+        literals = ["a", "b", "nm", "s", "1 nm", "2 m", "1 ps", "yes", "null"]
+        values = np.array([1, 2])
+        model.metadata["review"] = dict(
+            literals=tuple(np.str_(text) for text in literals),
+            distance=puw.quantity(0.12, "nm"),
+            values=values,
+        )
+        model.interaction_sites[0].metadata["review"] = dict(
+            text=np.str_("1 ps"), distance=puw.quantity(0.04, "nm")
+        )
+        writer, reader = {"json": (to_json, load_json), "yaml": (to_yaml, load_yaml)}[
+            format
+        ]
+        path = tmp_path / ("original-identities." + format)
+        writer(model, path)
+        assert "!!python" not in path.read_text()
+        assert type(model.metadata["review"]["literals"][0]) is np.str_
+        assert model.metadata["review"]["values"] is values
+        values[0] = 99  # The saved result must already be detached from this input.
+
+    with puw.context(standard_units=["angstrom", "ps", "radians"]):
+        restored = reader(path)
+        assert type(restored.name) is str and restored.name == "1 nm"
+        assert type(restored.description) is str and restored.description == "2 m"
+        assert restored.metadata["hypothesis"]["joint_ligand_ids"] == ["a", "b"]
+        assert [item["ligand_id"] for item in restored.metadata["sources"]] == [
+            "a",
+            "b",
+        ]
+        for member in restored.interaction_sites[0].metadata["members"]:
+            assert type(member["ligand_id"]) is str and member["ligand_id"] in {
+                "a",
+                "b",
+            }
+        review = restored.metadata["review"]
+        assert review["literals"] == literals
+        assert all(type(text) is str for text in review["literals"])
+        assert review["values"] == [1, 2]
+        distance = puw.QuantityRecord.from_dict(review["distance"]).to_quantity()
+        assert float(puw.get_value(distance, to_unit="nm")) == pytest.approx(0.12)
+        site = restored.interaction_sites[0]
+        assert type(site.metadata["review"]["text"]) is str
+        assert site.metadata["review"]["text"] == "1 ps"
+        distance = puw.QuantityRecord.from_dict(
+            site.metadata["review"]["distance"]
+        ).to_quantity()
+        assert float(puw.get_value(distance, to_unit="nm")) == pytest.approx(0.04)
+        np.testing.assert_allclose(
+            puw.get_value(site.center, to_unit="nm"), [0.17, 0, 0], atol=1e-14
+        )
+        assert float(puw.get_value(site.radius, to_unit="nm")) == pytest.approx(0.06)
 
 
 def test_catalog_codes_and_exception_reconstruction():
