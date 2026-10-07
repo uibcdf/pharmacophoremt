@@ -234,6 +234,57 @@ def digest_method(obj):
     return obj
 
 
+def digest_consensus_method(obj):
+    if not isinstance(obj, str) or obj not in {"aligned_cliques", "rigid"}:
+        raise ArgumentError(
+            argument="consensus_method",
+            reason="legacy consensus is retired; explicitly choose aligned_cliques or rigid on prepared ligands",
+        )
+    return obj
+
+
+def digest_molecular_systems(obj):
+    if isinstance(obj, (str, bytes, dict)):
+        raise ArgumentError(
+            argument="molecular_systems",
+            reason="provide an iterable of prepared ligands",
+        )
+    try:
+        iter(obj)
+    except TypeError as error:
+        raise ArgumentError(
+            argument="molecular_systems",
+            reason="provide an iterable of prepared ligands",
+        ) from error
+    return obj
+
+
+def digest_n_points(obj):
+    return _positive_integer(obj, "n_points")
+
+
+def digest_min_actives(obj):
+    return None if obj is None else _positive_integer(obj, "min_actives")
+
+
+def digest_n_conformers(obj):
+    return _positive_integer(obj, "n_conformers")
+
+
+def digest_conformer_rmsd_threshold(obj):
+    if (
+        isinstance(obj, (bool, np.bool_))
+        or not isinstance(obj, (int, float, np.integer, np.floating))
+        or not np.isfinite(obj)
+        or obj <= 0
+    ):
+        raise ArgumentError(
+            argument="conformer_rmsd_threshold",
+            reason="expected a positive finite scalar",
+        )
+    return float(obj)
+
+
 def digest_ligand_selection(obj):
     if obj is None or isinstance(obj, str):
         return obj  # The selection expression is resolved by MolSysMT.

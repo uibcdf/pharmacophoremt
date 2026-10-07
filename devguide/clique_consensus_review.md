@@ -1,5 +1,16 @@
 # Distance partitioning and clique consensus: review and proposed contracts
 
+**2026-10-07 completion of #18:** The public legacy builder is retired.
+`LigandBasedModeler` requires an explicit prepared native `rigid` or
+`aligned_cliques` method; see [the migration contract](ligand_based_workflow.md).
+Its class/list syntax is preserved, while site minima, joint support, hypothesis
+order and full reports follow those native contracts. The original review below
+remains historical evidence. Its executable audit now uses two frozen historical
+helpers in `devtools/legacy_clique_helpers.py`, copied from the recorded original
+source revision/hash without a molecular or public build API. The native methods'
+independent oracles and transition guards replace the defective route; no repaired
+RDP, legacy equivalence or biological acceptance is claimed.
+
 Reviewed 2026-10-02. The legacy audit belongs to
 [issue #18](https://github.com/uibcdf/pharmacophoremt/issues/18).
 This is a review and implementation strategy, not a validated new consensus

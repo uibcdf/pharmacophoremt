@@ -80,12 +80,17 @@ After all interaction sites are added, nearby sites of the **same feature type**
 
 ### 3.2 LigandBasedModeler
 
-**Current audit:** This legacy scaffold is not validated native consensus.
-The [distance/clique review](clique_consensus_review.md) records executable
-counterexamples and compares RDP, DISCO, frequent labeled cliques and weighted
-search. Issue #18 owns correction/replacement. The first native consensus should
-consume prepared aligned ligands, then validate graph discovery against that
-reference. The historical recipe below is not an accepted implementation contract.
+**2026-10-07 transition (#18):** The class now requires explicit
+`consensus_method='rigid'` or `'aligned_cliques'` and consumes prepared ligands
+through existing public native tools. `n_points` is a minimum site count;
+`min_actives` is joint distinct-ligand support. `build()` returns the native
+model list and retains `result`/`report`; there is no legacy RMSD ranking or
+hidden conformer generation. See [the migration contract](ligand_based_workflow.md)
+and [executable recipe](../docs/content/cookbook/ligand_based_modeler.md).
+The [distance/clique review](clique_consensus_review.md) and unchanged helper
+audit retain the reasons for retiring the former builder. The historical
+recipe and proposed completeness requirements below describe that older design,
+not the current native contract.
 
 **Inputs:** Multiple active molecules (with 3D conformers, generated internally if absent).
 **Goal:** Find the consensus pharmacophore — the common 3D feature pattern shared by all (or most) actives.
@@ -147,8 +152,9 @@ import pharmacophoremt as phmt
 # Complex-based: automatic ligand and receptor detection
 ph = phmt.model(molecular_system, method='complex-based')
 
-# Ligand-based: list of actives (SMILES, RDKit Mol, or molsysmt systems)
-hypotheses = phmt.model(active_mols, method='ligand-based', n_points=4)
+# Ligand-based: explicitly prepared ligand records; choose the native method
+hypotheses = phmt.model(prepared_ligands, method='ligand-based',
+                       consensus_method='rigid', n_points=4)
 
 # Structure-based: receptor only, with a pocket center as fallback
 ph = phmt.model(receptor, method='structure-based',
@@ -198,8 +204,8 @@ ph_combined = ph_complex.merge(ph_ligand)        # union of sites
 | :--- | :--- | :--- |
 | `ComplexBasedModeler` (core HB, hydrophobic, charge, halogen, metal) | Done | |
 | `ComplexBasedModeler` (pi-stacking, cation-pi, excluded volumes, global merging) | **Gen 1b** | |
-| `LigandBasedModeler` (distance-based consensus, scoring) | Legacy scaffold; defects measured | See #18 and the distance/clique review |
-| `LigandBasedModeler` (conformer integration, directional features, negative modeling, weighting) | **Gen 1b** | |
+| `LigandBasedModeler` (explicit native rigid/aligned consensus) | Native facade; legacy builder retired | See #18 and the migration contract; no affinity ranking |
+| Conformer preparation, negative modeling and activity weighting | **Gen 1b** | Directional features are covered by the selected native contracts; preparation belongs to MolSysMT |
 | `StructureBasedModeler` (feature projection, charge complementarity) | Done | |
 | `StructureBasedModeler` (pocket fallback, excluded volumes) | **Gen 1b** | |
 | `DynamicModeler` | Gen 2 | |

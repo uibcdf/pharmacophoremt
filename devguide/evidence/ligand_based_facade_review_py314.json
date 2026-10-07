@@ -1,0 +1,930 @@
+{
+  "schema": "pharmacophoremt.ligand_based_facade_review@1",
+  "issue": "uibcdf/pharmacophoremt#18",
+  "recorded_utc": "2026-10-07T09:34:35.573496+00:00",
+  "source_base": "d50ebb4dd3f39a9bd7bb1cfb9b5cdf05e256d815",
+  "python": "3.14.7",
+  "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "pharmacophoremt_version": "0.3.0+108.g864dcf5",
+  "providers": {
+    "molsysmt": {
+      "version": "0.22.4+215.g5bd893c85",
+      "import_origin": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "source_head": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+      "dirty_overlay": []
+    },
+    "pyunitwizard": {
+      "version": "0.28.1+3.g2ab37a5",
+      "import_origin": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "source_head": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+      "dirty_overlay": []
+    },
+    "numpy": {
+      "version": "2.4.6",
+      "import_origin": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/__init__.py"
+    },
+    "rdkit": {
+      "version": "2026.03.1",
+      "import_origin": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/__init__.py"
+    },
+    "argdigest": {
+      "version": "0.15.0+1.g5c6711e",
+      "import_origin": "/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "source_head": "5c6711ebfe23b9516ef0e8f830abee70589ec406",
+      "dirty_overlay": []
+    },
+    "smonitor": {
+      "version": "0.19.0",
+      "import_origin": "/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "source_head": "f604b940ab281df4554869fdd24f796ea6d42c27",
+      "dirty_overlay": []
+    },
+    "ackredit": {
+      "version": "0.12.0+0.g6f4dbf3.dirty",
+      "import_origin": "/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+      "source_head": "887b81c525ff9b285150b2d801c557321b4d48fa",
+      "dirty_overlay": []
+    }
+  },
+  "reviewed_source_sha256": {
+    "pharmacophoremt/modeler/ligand_based.py": "f11ca9b86019399dbe9bc5e056a9ceb292da944f6013723870b154833f30fc91",
+    "pharmacophoremt/modeler/dispatcher.py": "c66eec85c7c5aa3419d0cdb49c7582e69950e6731ca72ca554771d954b198ab7",
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": "8e1d147b37bdc770df8523ee2ca26756140792fce8ee71d0c4b9efc4dd0701e1",
+    "pharmacophoremt/validation/loo.py": "08a4917a82116ff0381bc09027b137a43eceebbbea89a7b00d4aed4090b0e77f",
+    "devtools/audit_legacy_cliques.py": "ba1502c04a4686bf9d64e2ee74916c836a25e2fae3811dec677fc761b9099050",
+    "devtools/legacy_clique_helpers.py": "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14",
+    "tests/test_ligand_based_facade.py": "a880b79ec390c0013438b8308b2a93dc0ab29a6f6bd38af15c57817662e3f81a",
+    "devguide/ligand_based_workflow.md": "0215299d555d5ad01aa16547cc9a39db88246fb209df5cea541437218261234c",
+    "docs/content/cookbook/ligand_based_modeler.md": "ab41254947971409456ab7536cc4b7421b7e74899d2a2341661c1acea63711a0",
+    "docs/content/cookbook/index.md": "fa92845ccebd202eddc5a6d75e78ca3a9657de4351cc1e5afa07888e51f404bf",
+    "devguide/clique_consensus_review.md": "d6e3a23c9110bb9ed0436c9ef278803fafbc72341e1ec3475fe5a195381e432b",
+    "devguide/modeling_strategies.md": "694c50544ccfd1076a8e30673a0d248059a55ba7f79f2cb9cfe4071d08f371f5",
+    "devguide/testing_and_validation.md": "63e34f820de6fa469675e192f9dcfa6e63579c9c926ea1de4b62b96780d0bba0",
+    "devguide/roadmap.md": "c6d789c663a4df7d78f867b6fc13a7f9e05e5bf85db641f9fd3583427e8fedf4",
+    "devguide/archive/legacy_clique_consensus.md": "dd51d65e64e5f1f157d9ca1efaaf6b08217d1b8f05616258a1620abf4b991c7f",
+    "pharmacophoremt/modeler/aligned_cliques.py": "a2e9af4672c168a0469705f5cfecc0772a7a5c8b6aa23807f1b9e8e28fa16cbd",
+    "pharmacophoremt/modeler/rigid_consensus.py": "fd72cdc2aae7dbbbc71b90fcbfa9c3b1752afc190386b049bdb997150bafade2",
+    "pharmacophoremt/modeler/features.py": "24183734c8aa726a61cd0804297850f6dcdfa4426829b375c65ad3c244fc29c5",
+    "tests/test_aligned_consensus.py": "a5f291a68a7519d1b792a73732a33871c764a3b235f59f24c7b9f2783b07ca8e",
+    "tests/test_aligned_cliques.py": "1ca351a3eb5daceae3890b1abfe5c22b35430496c87f6f6ad1906a182c122cb2",
+    "tests/test_rigid_consensus.py": "2003b2a2b0eb54d60cde005c74721b0fd17d78384d3af28e10115f851e7ad9a2",
+    "tests/test_contracts.py": "bc906c38453249265d8e8b6cce50535abbb3a46cc7113b32271a97f2441d2028",
+    "tests/test_retrospective.py": "3c572a3b701d44268797142ffaf7dfa8c7155fcd5374f54b268993a54fd2e3e9"
+  },
+  "original_legacy_source": {
+    "path": "pharmacophoremt/modeler/ligand_based.py",
+    "head": "d50ebb4dd3f39a9bd7bb1cfb9b5cdf05e256d815",
+    "sha256": "a6bcd3d135947889f888e222fbf0cb45e616e32cefee2857f65826e0ebb5a3e2",
+    "frozen_methods": [
+      "_get_distance_vector",
+      "_recursive_partitioning"
+    ],
+    "ast_equal": true
+  },
+  "original_audit_observed": {
+    "compatible_pair_rmsd": 0.1,
+    "compatible_pair_surviving_boxes": 0,
+    "duplicated_entries": 4,
+    "unique_candidate_identities": 2,
+    "unsupported_maximal_cliques": 1,
+    "reordered_identical_pattern_vector_equal": false,
+    "reflection_vector_equal": true
+  },
+  "original_report_body_preserved": true,
+  "verification": [
+    {
+      "command": "python -m pytest --receptor=llm tests/test_ligand_based_facade.py tests/test_aligned_consensus.py tests/test_aligned_cliques.py tests/test_rigid_consensus.py tests/test_contracts.py tests/test_retrospective.py",
+      "passed": 117,
+      "seconds": 72.89
+    },
+    {
+      "command": "python devtools/devguide_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_reporting_protocol.py",
+      "passed": 3,
+      "seconds": 0.377
+    },
+    {
+      "command": "ruff check .",
+      "result": "passed"
+    },
+    {
+      "command": "ruff format --check .",
+      "files": 238,
+      "result": "passed"
+    },
+    {
+      "command": "python -m sphinx -W --keep-going -b html ISOLATED_SOURCE HTML",
+      "result": "passed",
+      "scope": "Original new recipe with linked-existing-recipe stubs; no warning suppression or full-site claim"
+    },
+    {
+      "command": "python -m unittest discover -s devtools/tests -p 'test_*.py'",
+      "passed": 23,
+      "seconds": 2.153,
+      "sdk_source_head": "8f00e6d9de943b6e4710ea62936e2ebea00fad24"
+    },
+    {
+      "command": "python devtools/check_dependency_routes.py --declared-only",
+      "result": "passed",
+      "contexts": 7
+    },
+    {
+      "command": "python devtools/broadcast_requirements.py --check",
+      "result": "passed",
+      "changed": []
+    }
+  ],
+  "cookbook": {
+    "path": "docs/content/cookbook/ligand_based_modeler.md",
+    "executed_python_blocks": 2,
+    "method": "pivot_rigid_clique_consensus@1",
+    "sites": 3,
+    "summary": {
+      "method": "pivot_rigid_clique_consensus@1",
+      "complete": true,
+      "criteria": {
+        "reference_index": 0,
+        "reference_ligand_id": "EST",
+        "correspondence_strategy": "ranked_triplet_seeds",
+        "n_seeds": 4,
+        "refinement_strategy": "greedy",
+        "orientation_policy": "each_step",
+        "features": [
+          "hb acceptor",
+          "aromatic ring"
+        ],
+        "min_matches": 3,
+        "min_support": 2,
+        "min_sites": 3,
+        "distance_tolerance": {
+          "manifest": {
+            "format": "qrec/0.3",
+            "field": null,
+            "unit": "nanometer",
+            "si": {
+              "factor": 1e-09,
+              "offset": 0.0,
+              "exponents": {
+                "m": 1
+              }
+            },
+            "dtype": "float64",
+            "shape": [],
+            "blocks": [
+              1
+            ]
+          },
+          "values": 0.2,
+          "block_digests": [
+            "blake2b-128:a7bf553309579ba8f336729db35b59dc"
+          ],
+          "digest": "blake2b-128:9e2c8c73087c9a8c3c21e82a6ef9beb5"
+        },
+        "direction_tolerance": {
+          "manifest": {
+            "format": "qrec/0.3",
+            "field": null,
+            "unit": "radian",
+            "si": {
+              "factor": 1.0,
+              "offset": 0.0,
+              "exponents": {}
+            },
+            "dtype": "float64",
+            "shape": [],
+            "blocks": [
+              1
+            ]
+          },
+          "values": 0.5235987755982988,
+          "block_digests": [
+            "blake2b-128:2345f2a89775d02411e6c6a99821d9c2"
+          ],
+          "digest": "blake2b-128:e338de9a4272e11629436c478b3fc8fa"
+        },
+        "max_graph_nodes": 64,
+        "max_cliques": 1000,
+        "max_trials": 10000,
+        "max_fits": 100,
+        "max_layouts": 1000,
+        "max_combinations": 10000,
+        "max_matrix_entries": 1000000,
+        "emitted_radius": {
+          "manifest": {
+            "format": "qrec/0.3",
+            "field": null,
+            "unit": "nanometer",
+            "si": {
+              "factor": 1e-09,
+              "offset": 0.0,
+              "exponents": {
+                "m": 1
+              }
+            },
+            "dtype": "float64",
+            "shape": [],
+            "blocks": [
+              1
+            ]
+          },
+          "values": 0.15,
+          "block_digests": [
+            "blake2b-128:62f3b07460763e6c74cf5a5fa30da4f1"
+          ],
+          "digest": "blake2b-128:e4a2faec2cd13cd39b8d07adff0c5636"
+        },
+        "completion_scope": "declared_pivot_proposals_and_maximal_aligned_hypotheses",
+        "duplicate_policy": "retain_every_accepted_proposal_placement"
+      },
+      "n_ligands": 2,
+      "ligand_ids": [
+        "EST",
+        "DES"
+      ],
+      "sources": [
+        {
+          "ligand_id": "EST"
+        },
+        {
+          "ligand_id": "DES"
+        }
+      ],
+      "n_fits": 2,
+      "n_layouts": 1,
+      "n_models": 1,
+      "max_joint_sites": 3,
+      "hypotheses": [
+        {
+          "layout_id": "layout_00000",
+          "hypothesis_id": "hypothesis_00000",
+          "n_sites": 3,
+          "joint_ligand_ids": [
+            "DES",
+            "EST"
+          ],
+          "joint_support_count": 2,
+          "joint_support_fraction": 1.0,
+          "sites": [
+            {
+              "kind": "hb acceptor",
+              "center": {
+                "manifest": {
+                  "format": "qrec/0.3",
+                  "field": null,
+                  "unit": "nanometer",
+                  "si": {
+                    "factor": 1e-09,
+                    "offset": 0.0,
+                    "exponents": {
+                      "m": 1
+                    }
+                  },
+                  "dtype": "float64",
+                  "shape": [
+                    3
+                  ],
+                  "blocks": [
+                    3
+                  ]
+                },
+                "values": [
+                  0.01997709040963653,
+                  0.04348222974143358,
+                  -0.599516746403133
+                ],
+                "block_digests": [
+                  "blake2b-128:a846d623b2963f7990dc01f5702d32fd"
+                ],
+                "digest": "blake2b-128:1f097b9f9a36c262b13c06a5521fd36e"
+              },
+              "direction": null,
+              "normal": null,
+              "members": [
+                {
+                  "ligand_id": "DES",
+                  "inventory_index": 1,
+                  "feature_index": 0,
+                  "atom_indices": [
+                    7
+                  ],
+                  "structure_index": 0,
+                  "chemical_state": "reference",
+                  "geometry": {
+                    "center": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "nanometer",
+                        "si": {
+                          "factor": 1e-09,
+                          "offset": 0.0,
+                          "exponents": {
+                            "m": 1
+                          }
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.01505418081927306,
+                        0.03516445948286715,
+                        -0.621833492806266
+                      ],
+                      "block_digests": [
+                        "blake2b-128:2b1047a46833b8b5c8e9aae1ad772836"
+                      ],
+                      "digest": "blake2b-128:ff8193ddf273b6ce4d8ea0702feeeb34"
+                    },
+                    "direction": null,
+                    "normal": null,
+                    "geometry_atom_indices": [
+                      7
+                    ],
+                    "charge": null
+                  }
+                },
+                {
+                  "ligand_id": "EST",
+                  "inventory_index": 0,
+                  "feature_index": 0,
+                  "atom_indices": [
+                    3
+                  ],
+                  "structure_index": 0,
+                  "chemical_state": "reference",
+                  "geometry": {
+                    "center": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "nanometer",
+                        "si": {
+                          "factor": 1e-09,
+                          "offset": 0.0,
+                          "exponents": {
+                            "m": 1
+                          }
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.0249,
+                        0.0518,
+                        -0.5771999999999999
+                      ],
+                      "block_digests": [
+                        "blake2b-128:ac512bf9a46f93f1ef3108e74d94a525"
+                      ],
+                      "digest": "blake2b-128:da5522b633b6a091653a8983e6375b2e"
+                    },
+                    "direction": null,
+                    "normal": null,
+                    "geometry_atom_indices": [
+                      3
+                    ],
+                    "charge": null
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "hb acceptor",
+              "center": {
+                "manifest": {
+                  "format": "qrec/0.3",
+                  "field": null,
+                  "unit": "nanometer",
+                  "si": {
+                    "factor": 1e-09,
+                    "offset": 0.0,
+                    "exponents": {
+                      "m": 1
+                    }
+                  },
+                  "dtype": "float64",
+                  "shape": [
+                    3
+                  ],
+                  "blocks": [
+                    3
+                  ]
+                },
+                "values": [
+                  0.12557569943532784,
+                  0.06024747126477388,
+                  0.5221024622305448
+                ],
+                "block_digests": [
+                  "blake2b-128:694691bc47f5c142fb5580a0e4a47d9a"
+                ],
+                "digest": "blake2b-128:b602c452d423ced68ae320af0d62ab04"
+              },
+              "direction": null,
+              "normal": null,
+              "members": [
+                {
+                  "ligand_id": "DES",
+                  "inventory_index": 1,
+                  "feature_index": 1,
+                  "atom_indices": [
+                    15
+                  ],
+                  "structure_index": 0,
+                  "chemical_state": "reference",
+                  "geometry": {
+                    "center": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "nanometer",
+                        "si": {
+                          "factor": 1e-09,
+                          "offset": 0.0,
+                          "exponents": {
+                            "m": 1
+                          }
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.12905139887065567,
+                        0.05939494252954777,
+                        0.5646049244610897
+                      ],
+                      "block_digests": [
+                        "blake2b-128:b7d6d0d554b40773646c49e22600cc46"
+                      ],
+                      "digest": "blake2b-128:99861eca7d9826c10ff7c7a88d6f0c99"
+                    },
+                    "direction": null,
+                    "normal": null,
+                    "geometry_atom_indices": [
+                      15
+                    ],
+                    "charge": null
+                  }
+                },
+                {
+                  "ligand_id": "EST",
+                  "inventory_index": 0,
+                  "feature_index": 1,
+                  "atom_indices": [
+                    18
+                  ],
+                  "structure_index": 0,
+                  "chemical_state": "reference",
+                  "geometry": {
+                    "center": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "nanometer",
+                        "si": {
+                          "factor": 1e-09,
+                          "offset": 0.0,
+                          "exponents": {
+                            "m": 1
+                          }
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.1221,
+                        0.061099999999999995,
+                        0.4795999999999999
+                      ],
+                      "block_digests": [
+                        "blake2b-128:a5f6f988699550e4615ead80bfa4fb1b"
+                      ],
+                      "digest": "blake2b-128:7477a25a92614818e5d5eeea180dc180"
+                    },
+                    "direction": null,
+                    "normal": null,
+                    "geometry_atom_indices": [
+                      18
+                    ],
+                    "charge": null
+                  }
+                }
+              ]
+            },
+            {
+              "kind": "aromatic ring",
+              "center": {
+                "manifest": {
+                  "format": "qrec/0.3",
+                  "field": null,
+                  "unit": "nanometer",
+                  "si": {
+                    "factor": 1e-09,
+                    "offset": 0.0,
+                    "exponents": {
+                      "m": 1
+                    }
+                  },
+                  "dtype": "float64",
+                  "shape": [
+                    3
+                  ],
+                  "blocks": [
+                    3
+                  ]
+                },
+                "values": [
+                  0.02979721015503564,
+                  0.003236965660459214,
+                  -0.3289523824940785
+                ],
+                "block_digests": [
+                  "blake2b-128:a7465a7332b38a897ac5cbe0042cca9b"
+                ],
+                "digest": "blake2b-128:cc125382e5c559ccd82c54d7a1208520"
+              },
+              "direction": null,
+              "normal": {
+                "manifest": {
+                  "format": "qrec/0.3",
+                  "field": null,
+                  "unit": "dimensionless",
+                  "si": {
+                    "factor": 1.0,
+                    "offset": 0.0,
+                    "exponents": {}
+                  },
+                  "dtype": "float64",
+                  "shape": [
+                    3
+                  ],
+                  "blocks": [
+                    3
+                  ]
+                },
+                "values": [
+                  0.4035343149803688,
+                  0.9134398022218183,
+                  0.0527994730114817
+                ],
+                "block_digests": [
+                  "blake2b-128:bc46fd705ca4a1866c02222e2a9b202a"
+                ],
+                "digest": "blake2b-128:4065e7af697f826988a97d2cde0e6f58"
+              },
+              "members": [
+                {
+                  "ligand_id": "DES",
+                  "inventory_index": 1,
+                  "feature_index": 2,
+                  "atom_indices": [
+                    3,
+                    4,
+                    5,
+                    6,
+                    8,
+                    9
+                  ],
+                  "structure_index": 0,
+                  "chemical_state": "reference",
+                  "geometry": {
+                    "center": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "nanometer",
+                        "si": {
+                          "factor": 1e-09,
+                          "offset": 0.0,
+                          "exponents": {
+                            "m": 1
+                          }
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.031244420310071283,
+                        0.01240726465425176,
+                        -0.34913809832149034
+                      ],
+                      "block_digests": [
+                        "blake2b-128:dbedef03c3b9d0fb74cda9f81e702baf"
+                      ],
+                      "digest": "blake2b-128:4ffc30bf4818e21fba946de89e4e9d5b"
+                    },
+                    "direction": null,
+                    "normal": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "dimensionless",
+                        "si": {
+                          "factor": 1.0,
+                          "offset": 0.0,
+                          "exponents": {}
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.40353431498036874,
+                        0.9134398022218182,
+                        0.05279947301148169
+                      ],
+                      "block_digests": [
+                        "blake2b-128:1fef7407aa96b617c181f3498bf0aae3"
+                      ],
+                      "digest": "blake2b-128:388dd20349d4e8ef4dd75349aafd6206"
+                    },
+                    "geometry_atom_indices": [
+                      3,
+                      4,
+                      5,
+                      6,
+                      8,
+                      9
+                    ],
+                    "charge": null
+                  }
+                },
+                {
+                  "ligand_id": "EST",
+                  "inventory_index": 0,
+                  "feature_index": 2,
+                  "atom_indices": [
+                    0,
+                    1,
+                    2,
+                    4,
+                    5,
+                    10
+                  ],
+                  "structure_index": 0,
+                  "chemical_state": "reference",
+                  "geometry": {
+                    "center": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "nanometer",
+                        "si": {
+                          "factor": 1e-09,
+                          "offset": 0.0,
+                          "exponents": {
+                            "m": 1
+                          }
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.02835,
+                        -0.005933333333333332,
+                        -0.30876666666666663
+                      ],
+                      "block_digests": [
+                        "blake2b-128:9fe08f08f562200e1697205778a865bb"
+                      ],
+                      "digest": "blake2b-128:e090f48d4721f771f3e4a4f7f0b78052"
+                    },
+                    "direction": null,
+                    "normal": {
+                      "manifest": {
+                        "format": "qrec/0.3",
+                        "field": null,
+                        "unit": "dimensionless",
+                        "si": {
+                          "factor": 1.0,
+                          "offset": 0.0,
+                          "exponents": {}
+                        },
+                        "dtype": "float64",
+                        "shape": [
+                          3
+                        ],
+                        "blocks": [
+                          3
+                        ]
+                      },
+                      "values": [
+                        0.21007862011484948,
+                        0.9558584755356689,
+                        0.20543015386565933
+                      ],
+                      "block_digests": [
+                        "blake2b-128:42b948c7547b52d7875812354976e303"
+                      ],
+                      "digest": "blake2b-128:565d9c2e7391d6fa24f2dbd78bf2caba"
+                    },
+                    "geometry_atom_indices": [
+                      0,
+                      1,
+                      2,
+                      4,
+                      5,
+                      10
+                    ],
+                    "charge": null
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "joint_ligand_ids": [
+      "DES",
+      "EST"
+    ],
+    "score": null,
+    "complete": true,
+    "source_audits": {
+      "EST": {
+        "source": {
+          "case_id": "EST",
+          "component_name": "Estradiol",
+          "file": "EST_ideal.sdf",
+          "source_url": "https://files.rcsb.org/ligands/download/EST_ideal.sdf",
+          "component_url": "https://www.rcsb.org/ligand/EST",
+          "sha256": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+          "byte_count": 3127,
+          "coordinate_kind": "CCD ideal; not observed protein-bound coordinates",
+          "expected": {
+            "n_atoms": 44,
+            "n_hydrogens": 24,
+            "n_bonds": 47,
+            "all_feature_counts": {
+              "hydrophobicity": 9,
+              "hb donor": 2,
+              "hb acceptor": 2,
+              "aromatic ring": 1
+            },
+            "search_feature_count": 5
+          }
+        },
+        "preparation": {
+          "native_read": "molsysmt.convert(file:sdf, stereo_engine=rdkit, discard_properties=True)",
+          "aromatic_assignment": "molsysmt.convert(native, rdkit.Mol), then molsysmt.convert(rdkit.Mol, molsysmt.MolSys)",
+          "hydrogens": "Source SDF explicit atoms/coordinates are retained; no addition/removal or generation.",
+          "property_policy": "SD properties excluded explicitly from native domains; original source files retained.",
+          "stereochemistry": "Provider interpretation of source CTAB flags; not independent stereochemical qualification."
+        },
+        "raw_recognition": {
+          "status": "blocked",
+          "code": "MSM-ERR-STRUCT-003",
+          "message": "Structural inconsistency detected: Every atom requires explicit is_aromatic metadata.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+        },
+        "prepared_counts": {
+          "n_atoms": 44,
+          "n_bonds": 47,
+          "n_structures": 1
+        },
+        "element_counts": {
+          "C": 18,
+          "O": 2,
+          "H": 24
+        },
+        "feature_counts": {
+          "hydrophobicity": 9,
+          "hb donor": 2,
+          "hb acceptor": 2,
+          "aromatic ring": 1
+        },
+        "coordinate_rmsd_nm": 2.557046007899672e-17,
+        "source_coordinates_unchanged": true,
+        "source_state_unchanged": true,
+        "source_bytes_unchanged": true,
+        "complete": true,
+        "source_atom_ids_preserved": true
+      },
+      "DES": {
+        "source": {
+          "case_id": "DES",
+          "component_name": "Diethylstilbestrol",
+          "file": "DES_ideal.sdf",
+          "source_url": "https://files.rcsb.org/ligands/download/DES_ideal.sdf",
+          "component_url": "https://www.rcsb.org/ligand/DES",
+          "sha256": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+          "byte_count": 2817,
+          "coordinate_kind": "CCD ideal; not observed protein-bound coordinates",
+          "expected": {
+            "n_atoms": 40,
+            "n_hydrogens": 20,
+            "n_bonds": 41,
+            "all_feature_counts": {
+              "hydrophobicity": 14,
+              "hb donor": 2,
+              "hb acceptor": 2,
+              "aromatic ring": 2
+            },
+            "search_feature_count": 6
+          }
+        },
+        "preparation": {
+          "native_read": "molsysmt.convert(file:sdf, stereo_engine=rdkit, discard_properties=True)",
+          "aromatic_assignment": "molsysmt.convert(native, rdkit.Mol), then molsysmt.convert(rdkit.Mol, molsysmt.MolSys)",
+          "hydrogens": "Source SDF explicit atoms/coordinates are retained; no addition/removal or generation.",
+          "property_policy": "SD properties excluded explicitly from native domains; original source files retained.",
+          "stereochemistry": "Provider interpretation of source CTAB flags; not independent stereochemical qualification."
+        },
+        "raw_recognition": {
+          "status": "blocked",
+          "code": "MSM-ERR-STRUCT-003",
+          "message": "Structural inconsistency detected: Every atom requires explicit is_aromatic metadata.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+        },
+        "prepared_counts": {
+          "n_atoms": 40,
+          "n_bonds": 41,
+          "n_structures": 1
+        },
+        "element_counts": {
+          "C": 18,
+          "O": 2,
+          "H": 20
+        },
+        "feature_counts": {
+          "hydrophobicity": 14,
+          "hb donor": 2,
+          "hb acceptor": 2,
+          "aromatic ring": 2
+        },
+        "coordinate_rmsd_nm": 2.5331659285547802e-17,
+        "source_coordinates_unchanged": true,
+        "source_state_unchanged": true,
+        "source_bytes_unchanged": true,
+        "complete": true,
+        "source_atom_ids_preserved": true
+      }
+    },
+    "projection_scope": "Review projection of executed recipe observations, not a new complete molecular benchmark archive; original CCD source/preparation evidence remains separately retained.",
+    "fixture_manifest_sha256": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310"
+  },
+  "original_gzip_sha256": {
+    "devguide/evidence/aromatic_interactions_py314.json.gz": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "devguide/evidence/ccd_interactions_py314.json.gz": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def",
+    "devguide/evidence/curation_py314_cookbook_audit.json.gz": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "devguide/evidence/eralpha_exclusions_py314.json.gz": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "devguide/evidence/eralpha_hydrogens_py314.json.gz": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "devguide/evidence/eralpha_interface_py314.json.gz": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "devguide/evidence/eralpha_receptor_py314.json.gz": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce",
+    "devguide/evidence/eralpha_template_py314.json.gz": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "devguide/evidence/interaction_composition_py314.json.gz": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "devguide/evidence/ionic_interactions_py314.json.gz": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "devguide/evidence/prepared_ccd_py314.json.gz": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+    "devguide/evidence/ranked_seeds_py314.json.gz": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "devguide/evidence/rigid_consensus_py314.json.gz": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "devguide/evidence/rigid_refinement_benchmark_py314.json.gz": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1",
+    "devguide/evidence/rigid_refinement_py314.json.gz": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c"
+  },
+  "limits": [
+    "Explicit native transition, not numerical equivalence with retired RDP or unbounded conformer discovery.",
+    "Focused normal-editable Linux/Python 3.14 source controls, not full hosted matrix or installed/public artifact qualification.",
+    "Declared ideal EST/DES CCD workflow control, not experimental pose, energy, affinity or biological validation.",
+    "Dataset chemical duplicates across declared ligand IDs remain caller responsibility.",
+    "Legacy VirtualScreening/LOO and other legacy molecular operations remain separate migration work.",
+    "No MolSysMT code changes; environmental H refinement remains provider #323 and consumer #22."
+  ]
+}

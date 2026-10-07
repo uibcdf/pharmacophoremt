@@ -1,25 +1,83 @@
-import itertools
-from collections import defaultdict
+"""Compatibility facade for explicitly selected native ligand consensus."""
 
-import molsysmt as msm
-import networkx as nx
-import numpy as np
+from inspect import signature
+
 from argdigest import arg_digest
-from rdkit import Chem
 from smonitor import signal
 
-from pharmacophoremt import interaction_site as interaction_sites
-from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.data.smarts import LIGAND_SMARTS
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_conformer_rmsd_threshold,
+    digest_consensus_method,
+    digest_ligands,
+    digest_min_actives,
+    digest_molecular_systems,
+    digest_n_conformers,
+    digest_n_points,
+)
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.modeler import Modeler
-from pharmacophoremt.modeler.scoring import ScoringFunction
-from pharmacophoremt.pharmacophore import Pharmacophore
-from pharmacophoremt.utils.conformers import ConformerGenerator
+
+
+def _native_tool(method):
+    from pharmacophoremt.modeler.aligned_cliques import from_aligned_ligand_cliques
+    from pharmacophoremt.modeler.rigid_consensus import from_rigid_ligands
+
+    return {
+        "aligned_cliques": from_aligned_ligand_cliques,
+        "rigid": from_rigid_ligands,
+    }[digest_consensus_method(method)]
+
+
+def _ligand_records(systems):
+    if all(isinstance(item, dict) for item in systems):
+        return digest_ligands([dict(item) for item in systems])
+    if any(isinstance(item, dict) for item in systems):
+        raise ArgumentError(
+            argument="molecular_systems",
+            reason="use either prepared systems or explicit ligand records throughout",
+        )
+    if len({id(item) for item in systems}) != len(systems):
+        raise ArgumentError(
+            argument="molecular_systems",
+            reason="repeated raw objects do not establish distinct ligands; provide declared unique ligand records",
+        )
+    return digest_ligands(
+        [
+            dict(ligand_id=f"ligand-{index}", molecular_system=item)
+            for index, item in enumerate(systems)
+        ]
+    )
 
 
 class LigandBasedModeler(Modeler):
-    """
-    Modeler to find common pharmacophores (consensus) from a set of ligands.
+    """Build native consensus from prepared ligands with an explicit method.
+
+    consensus_method='aligned_cliques' consumes a caller-declared common frame;
+    'rigid' fits prepared frames through existing public MolSysMT operations.
+    There is no implicit or legacy consensus method.
+
+    The historical constructor names and list return remain. n_points now means
+    minimum native consensus sites, not exact-size legacy subsets; min_actives
+    means joint distinct-ligand support, defaulting to all inputs. Native keyword
+    options are forwarded to the selected public tool, except min_sites/min_support,
+    which use those historical constructor names.
+
+    Inputs may be an iterable of prepared systems (positional ligand IDs, frame
+    zero/reference state) or explicit unique ligand_id/molecular_system records
+    with optional selection, structure_index and chemical_state. One frame per
+    ligand is consumed; frames of one ligand are not independent supporters.
+    Raw repeated objects are refused. Chemical identity across different objects
+    or declared IDs remains the caller's responsibility.
+
+    Historical n_conformers=50/conformer_rmsd_threshold=0.5 defaults are accepted
+    for call compatibility but perform no preparation. Other values are refused;
+    conformer generation must be a separate provider-supported operation.
+
+    build() returns the native model list in hypothesis order, including [] for
+    evaluated-empty consensus. No dummy model or legacy RMSD score is created.
+    result/report retain the complete native result/report after successful
+    building; both are cleared before a new attempt, including failed attempts.
+    Native failure, search-limit, source and attribution contracts are preserved.
     """
 
     @signal(tags=["modeler", "ligand", "init"])
@@ -32,194 +90,59 @@ class LigandBasedModeler(Modeler):
         n_conformers=50,
         conformer_rmsd_threshold=0.5,
         skip_digestion=False,
+        *,
+        consensus_method=None,
+        **kwargs,
     ):
-        self.systems = molecular_systems
-        self.n_points = n_points
-        self.min_actives = (
-            min_actives if min_actives is not None else len(molecular_systems)
-        )
-        self.bin_size = puw.quantity(0.15, "nm")  # 1.5 Angstrom binning
-        self.scorer = ScoringFunction()
-        self._conformer_generator = ConformerGenerator(
-            n_conformers=n_conformers,
-            rmsd_threshold=conformer_rmsd_threshold,
-        )
-
-    def _detect_features(self, mol, conf_id=0):
-        """Detect chemical features and return their centroids."""
-        found = defaultdict(list)
-        conf = mol.GetConformer(conf_id)
-        for feat_name, patterns in LIGAND_SMARTS.items():
-            for pattern in patterns:
-                p = Chem.MolFromSmarts(pattern)
-                if p is None:
-                    continue
-                matches = mol.GetSubstructMatches(p)
-                for m in matches:
-                    pts = [conf.GetAtomPosition(idx) for idx in m]
-                    center = np.mean([[p.x, p.y, p.z] for p in pts], axis=0)
-                    found[feat_name].append(puw.quantity(center, "angstroms"))
-        return found
-
-    def _get_distance_vector(self, coords):
-        """Compute the N*(N-1)/2 distance vector between coordinates."""
-        n = coords.shape[0]
-        if n < 2:
-            return np.array([])
-        diff = coords[:, np.newaxis, :] - coords[np.newaxis, :, :]
-        dist_matrix = np.sqrt(np.sum(diff**2, axis=-1))
-        iu = np.triu_indices(n, k=1)
-        return dist_matrix[iu]
-
-    def _recursive_partitioning(self, sublists, dim, n_dims, min_actives):
-        """
-        Recursive partitioning algorithm rescued and optimized.
-        Groups candidates by similarity in their inter-site distances.
-        """
-        if dim >= n_dims:
-            return [sublists]
-
-        bins = defaultdict(list)
-        bin_size_val = puw.get_value(self.bin_size, to_unit="nm")
-        tolerance = 0.1 * bin_size_val
-
-        for item in sublists:
-            dist = item["distances"][dim]
-            low_bin = np.floor(dist / bin_size_val) * bin_size_val
-            bins[low_bin].append(item)
-
-            remainder = dist % bin_size_val
-            if remainder < tolerance:
-                bins[low_bin - bin_size_val].append(item)
-            elif remainder > (bin_size_val - tolerance):
-                bins[low_bin + bin_size_val].append(item)
-
-        results = []
-        for b_coord in bins:
-            box = bins[b_coord]
-            # Check if this box contains enough unique ligands
-            unique_ligands = {it["lig_idx"] for it in box}
-            if len(unique_ligands) >= min_actives:
-                results.extend(
-                    self._recursive_partitioning(box, dim + 1, n_dims, min_actives)
+        self.consensus_method = digest_consensus_method(consensus_method)
+        self.systems = list(digest_molecular_systems(molecular_systems))
+        self.ligands = _ligand_records(self.systems)
+        self.n_points = digest_n_points(n_points)
+        support = digest_min_actives(min_actives)
+        self.min_actives = len(self.ligands) if support is None else support
+        for argument, value, default in (
+            ("n_conformers", digest_n_conformers(n_conformers), 50),
+            (
+                "conformer_rmsd_threshold",
+                digest_conformer_rmsd_threshold(conformer_rmsd_threshold),
+                0.5,
+            ),
+        ):
+            if value != default:
+                raise ArgumentError(
+                    argument=argument,
+                    reason="only the historical default is accepted inertly; prepare conformers explicitly through the provider before consensus",
                 )
-
-        return results
+        if self.min_actives > len(self.ligands):
+            raise ArgumentError(
+                argument="min_actives",
+                reason="require attainable distinct-ligand support",
+            )
+        tool = _native_tool(self.consensus_method)
+        supported = set(signature(tool).parameters) - {
+            "ligands",
+            "min_support",
+            "min_sites",
+            "skip_digestion",
+        }
+        if not kwargs.keys() <= supported:
+            raise ArgumentError(
+                argument="native_options",
+                reason=f"unsupported options for {self.consensus_method}: {sorted(kwargs.keys() - supported)}; use n_points/min_actives for site/support minima",
+            )
+        self.native_options = dict(kwargs)
+        self.result = self.report = None
 
     @signal(tags=["modeler", "ligand", "build"])
     def build(self):
-        """Execute the consensus algorithm using Recursive Partitioning."""
-
-        # 1. Feature Extraction & Candidate Generation
-        candidates = []
-        for lig_idx, sys in enumerate(self.systems):
-            if msm.get_form(sys) == "rdkit.Mol":
-                mol = sys
-            else:
-                mol = msm.convert(sys, to_form="rdkit.Mol")
-
-            if mol.GetNumConformers() == 0:
-                mol = self._conformer_generator.generate(mol)
-
-            n_conformers = mol.GetNumConformers()
-
-            for conf_idx in range(n_conformers):
-                feats = self._detect_features(mol, conf_id=conf_idx)
-
-                # Flatten features into a list of (type, coords)
-                flat_feats = []
-                for ftype, centers in feats.items():
-                    for c in centers:
-                        flat_feats.append(
-                            {"type": ftype, "coords": puw.get_value(c, to_unit="nm")}
-                        )
-
-                # Combinations of N points
-                for combo in itertools.combinations(flat_feats, self.n_points):
-                    coords = np.array([c["coords"] for c in combo])
-                    dists = self._get_distance_vector(coords)
-                    candidates.append(
-                        {
-                            "lig_idx": lig_idx,
-                            "conf_idx": conf_idx,
-                            "types": [c["type"] for c in combo],
-                            "coords": coords,
-                            "distances": dists,
-                        }
-                    )
-
-        # 2. Group by type-variant and Run Partitioning
-        hypotheses = []
-        by_variant = defaultdict(list)
-        for cand in candidates:
-            variant = tuple(sorted(cand["types"]))
-            by_variant[variant].append(cand)
-
-        for variant, v_candidates in by_variant.items():
-            if len({c["lig_idx"] for c in v_candidates}) < self.min_actives:
-                continue
-
-            n_dims = len(v_candidates[0]["distances"])
-            surviving_boxes = self._recursive_partitioning(
-                v_candidates, 0, n_dims, self.min_actives
-            )
-
-            # 3. Consolidate results from all boxes
-            final_box_candidates = []
-            for box in surviving_boxes:
-                final_box_candidates.extend(box)
-
-            if not final_box_candidates:
-                continue
-
-            # Build a graph of similarity between all surviving candidates
-            consensus_graph = nx.Graph()
-            for i in range(len(final_box_candidates)):
-                consensus_graph.add_node(i)
-                for j in range(i + 1, len(final_box_candidates)):
-                    # Distance between distance-vectors (RMSD proxy)
-                    d_rmsd = np.sqrt(
-                        np.mean(
-                            (
-                                final_box_candidates[i]["distances"]
-                                - final_box_candidates[j]["distances"]
-                            )
-                            ** 2
-                        )
-                    )
-                    if d_rmsd <= puw.get_value(self.bin_size, to_unit="nm"):
-                        consensus_graph.add_edge(i, j)
-
-            cliques = list(nx.find_cliques(consensus_graph))
-
-            for clique in cliques:
-                # Top representative of this clique
-                seed = final_box_candidates[clique[0]]
-
-                # Calculate score for the clique
-                all_dists = np.array(
-                    [final_box_candidates[i]["distances"] for i in clique]
-                )
-                mean_dists = np.mean(all_dists, axis=0)
-                rmsd = np.sqrt(np.mean((all_dists - mean_dists) ** 2))
-                score = self.scorer(rmsd)
-
-                ph = Pharmacophore(
-                    name=f"Consensus {variant}",
-                    score=float(score),
-                    ref_mol=seed["lig_idx"],
-                    ref_struct=seed["conf_idx"],
-                )
-                for i in range(self.n_points):
-                    ftype = seed["types"][i]
-                    from pharmacophoremt.interaction_site.shape import Sphere
-
-                    site = interaction_sites.InteractionSite(
-                        Sphere(puw.quantity(seed["coords"][i], "nm"), "0.15 nm"), ftype
-                    )
-                    ph.add_interaction_site(site)
-                hypotheses.append(ph)
-
-        # 4. Final Ranking
-        hypotheses.sort(key=lambda x: x.score if x.score else 0, reverse=True)
-        return hypotheses if hypotheses else [Pharmacophore(name="No Consensus Found")]
+        """Delegate once to the declared native tool and return its model list."""
+        self.result = self.report = None
+        result = _native_tool(self.consensus_method)(
+            self.ligands,
+            min_sites=self.n_points,
+            min_support=self.min_actives,
+            **self.native_options,
+        )
+        self.result = result
+        self.report = result["report"]
+        return result["models"]

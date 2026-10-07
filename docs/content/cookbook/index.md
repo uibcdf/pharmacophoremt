@@ -24,6 +24,7 @@ prepared_conformers
 aligned_consensus
 aligned_cliques
 rigid_consensus
+ligand_based_modeler
 modular_rigid_tools
 ranked_seeds
 rigid_refinement
@@ -53,6 +54,7 @@ eralpha_input_audit
 | Build consensus in a common prepared coordinate frame | [Aligned ligands](aligned_consensus.md): `from_aligned_ligands()`, `get_aligned_feature_matches()`, `get_consensus_sites()` |
 | Discover consensus without a reference anchor and inspect alternative models | [Aligned cliques](aligned_cliques.md): `get_aligned_feature_cliques()`, `get_aligned_consensus_hypotheses()`, `from_aligned_ligand_cliques()` |
 | Build alternative consensus models from prepared rigid unaligned ligands | [Rigid unaligned consensus](rigid_consensus.md): `get_rigid_feature_correspondences()`, `from_rigid_ligands()` |
+| Use the historical class with an explicit native method | [Ligand-based modeler](ligand_based_modeler.md): `LigandBasedModeler`, `phmt.model(method='ligand-based')`, prepared inputs and full native reports |
 | Compose rigid steps and compare evidence | [Modular rigid tools](modular_rigid_tools.md): `from_feature_inventory()`, `get_rigid_feature_placements()`, `summarize_rigid_consensus()` |
 | Prioritize guesses using typed feature neighborhoods | [Ranked rigid seeds](ranked_seeds.md): `get_feature_pair_dissimilarities()`, `rank_rigid_feature_correspondences()` |
 | Grow supplied rigid mappings and compare angular policies | [Rigid refinement](rigid_refinement.md): `evaluate_feature_correspondence()`, `refine_rigid_feature_correspondences()` |

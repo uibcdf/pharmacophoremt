@@ -72,6 +72,7 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 - [x] Maintained declared receptor-fragment/EST composition, independent placed/orientation/exclusion/persistence controls and fixed empty-family diagnosis (#22). Recognition and geometric rejection are distinguished without changing the original observations; environmental H refinement remains provider #323.
 - [ ] Compare G3PS, safe RDP/frequent-clique conformer discovery and triangle indexing on controlled workloads; see [the primary-source survey](pharmacophore_search_strategies.md).
 - [x] Review recursive partitioning/clique literature and execute bounded legacy counterexamples (#18); see [the consensus review](clique_consensus_review.md).
+- [x] Retire the defective legacy ligand consensus builder; preserve its audit and expose explicit rigid/aligned native choices through the class and dispatcher (#18); see [the migration contract](ligand_based_workflow.md).
 - [x] Extend native complex construction to aromatic/charge interaction families with independent controls.
   The first ionic extension now calls shared public charge-feature tools and
   retains compound membership/geometry, contact evidence and actual attribution

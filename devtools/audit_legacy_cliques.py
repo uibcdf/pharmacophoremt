@@ -10,11 +10,11 @@ import json
 import networkx as nx
 import numpy as np
 
-from pharmacophoremt.modeler.ligand_based import LigandBasedModeler
+from devtools.legacy_clique_helpers import LegacyCliqueAuditHelpers
 
 
 def audit():
-    modeler = LigandBasedModeler([], min_actives=2)
+    modeler = LegacyCliqueAuditHelpers()
 
     def candidate(identity, ligand, distance):
         return dict(identity=identity, lig_idx=ligand, distances=np.array([distance]))

@@ -12,7 +12,7 @@ Every public-facing component must have at least one integration test that exerc
 
 | Component | Required Test |
 | :--- | :--- |
-| `LigandBasedModeler` | Build a consensus from ≥3 actives with pre-generated conformers; assert ≥1 hypothesis returned with score > 0 |
+| `LigandBasedModeler` | Require explicit native method and prepared inputs; check joint distinct-ligand support, minimum sites, source/frame/unit evidence and evaluated-empty versus failed calculations; no legacy score |
 | `StructureBasedModeler` | Build from a receptor with explicit `pocket_selection`; assert interaction sites of the expected types |
 | `ComplexBasedModeler` | Build from a protein-ligand complex including aromatic and HB interactions; assert aromatic site presence |
 | `VirtualScreening` | Screen a small library (5 actives + 5 decoys) against a known pharmacophore; assert actives rank above decoys |

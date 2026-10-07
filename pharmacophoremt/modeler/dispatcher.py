@@ -68,6 +68,17 @@ def model(
             molecular_system, ligand_selection=ligand_selection, **kwargs
         )
 
+    if method == "ligand-based":
+        from pharmacophoremt._private.smonitor.exceptions import ArgumentError
+        from pharmacophoremt.modeler.ligand_based import LigandBasedModeler
+
+        if ligand_selection is not None or receptor_selection is not None:
+            raise ArgumentError(
+                argument="ligand-based",
+                reason="declare selections in each prepared ligand record",
+            )
+        return LigandBasedModeler(molecular_system, **kwargs).build()
+
     # Ensure system is a MolSysMT object
     if isinstance(molecular_system, str):
         system = msm.convert(molecular_system, to_form="molsysmt.MolSys")
@@ -104,12 +115,6 @@ def model(
             receptor_selection=receptor_selection,
             **kwargs,
         )
-        return modeler.build()
-
-    elif method == "ligand-based":
-        from pharmacophoremt.modeler.ligand_based import LigandBasedModeler
-
-        modeler = LigandBasedModeler(molecular_system, **kwargs)
         return modeler.build()
 
     elif method == "structure-based":

@@ -5,10 +5,9 @@ Queued defects have an owning GitHub issue. See the
 
 <!-- generated: devguide_index -->
 
-### Active (7)
+### Active (6)
 
 - [`catalog_diagnostic_rendering.md`](catalog_diagnostic_rendering.md) — [#2](https://github.com/uibcdf/pharmacophoremt/issues/2) — Restore authored SMonitor catalog messages for PharmacophoreMT diagnostics. *(active, measured)*
-- [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(active, measured)*
 - [`nonfinite_observation_provenance.md`](nonfinite_observation_provenance.md) — [#35](https://github.com/uibcdf/pharmacophoremt/issues/35) — Undefined aromatic measurements fail consumer quantity provenance serialization. *(active, measured)*
 - [`provenance_strings_interpreted_as_quantities.md`](provenance_strings_interpreted_as_quantities.md) — [#25](https://github.com/uibcdf/pharmacophoremt/issues/25) — Provenance serialization interprets literal identifiers as physical quantities. *(active, reproduced)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(active, measured)*

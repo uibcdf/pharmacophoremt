@@ -14,6 +14,12 @@ class LeaveOneOutValidator:
     fraction of actives successfully retrieved (LOO recall) measures the model's
     self-consistency.
 
+    LigandBasedModeler requires prepared inputs and an explicit consensus_method.
+    This validator still uses legacy VirtualScreening and selects the first
+    native hypothesis; it does not rank hypotheses by affinity or qualify the
+    legacy preparation/screening route. At least three inputs are needed when
+    the chosen modeler requires two training ligands.
+
     Parameters
     ----------
     modeler_class : type
@@ -27,7 +33,8 @@ class LeaveOneOutValidator:
     Examples
     --------
     >>> from pharmacophoremt.modeler.ligand_based import LigandBasedModeler
-    >>> loo = LeaveOneOutValidator(LigandBasedModeler, {'n_points': 4})
+    >>> loo = LeaveOneOutValidator(
+    ...     LigandBasedModeler, {'n_points': 4, 'consensus_method': 'rigid'})
     >>> report = loo.run(active_molecules)
     >>> print(f"LOO recall: {report['loo_recall']:.2f}")
     """
@@ -73,7 +80,7 @@ class LeaveOneOutValidator:
             modeler = self.modeler_class(train, **self.modeler_kwargs)
             hypotheses = modeler.build()
 
-            # Take the top-ranked hypothesis
+            # Select the first returned hypothesis (native order is not affinity).
             if not hypotheses:
                 rounds.append(
                     {
