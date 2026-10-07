@@ -17,3 +17,15 @@ contributions require owner review through a PR; authorized internal direct push
 retain the common checkpoint rules. Scientific repairs and release decisions stay
 local. Independent governance runs the reporting, route and distribution/helper
 guards without importing the scientific package.
+
+## Scientific evidence archives
+
+`evidence_archive.read_archived_evidence()` reads the existing local gzip/JSON
+archive envelope with compressed/uncompressed SHA-256 and optional byte-count
+checks. It preserves original failed, partial and unknown fields, requires a
+sibling archive and imports no scientific providers. Scientific schema and
+acceptance remain with each producer/caller. Use
+`python -m devtools.evidence_archive SUMMARY.json` for archive integrity only.
+The [collection contract](../devguide/validation_collection.md) and
+[case template](../devguide/templates/evidence_case.md) define contribution,
+ownership, execution and historical-result rules.

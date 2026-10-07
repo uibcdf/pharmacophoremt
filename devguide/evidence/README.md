@@ -1,4 +1,19 @@
-# Local rigid-consensus comparison evidence
+# Local scientific evidence
+
+The [collection policy](../validation_collection.md) selected the existing
+library documentation as the first publication view under #20 on 2026-10-07.
+The [Validation and benchmarks section](../../docs/content/validation/index.md)
+links original records here; the dated observations below retain their original
+publication-status statements. No original evidence is moved or rewritten.
+The prepared CCD EST/DES case is the first documented collection demonstrator.
+
+`validation_collection_review_py314.json` records the 2026-10-07 publication
+review: 16 archive/CI controls, 23 integrated distribution/environment controls,
+executed demonstration blocks, detached citation reading and original gzip
+identities. The case pages rendered in strict isolated Sphinx. This is collection
+and historical-result inspection evidence; its scientific driver was not rerun.
+
+## Local rigid-consensus comparison evidence
 
 Owned by [PharmacophoreMT #27](https://github.com/uibcdf/pharmacophoremt/issues/27).
 The [measurement contract](../rigid_strategy_comparison.md) defines the six

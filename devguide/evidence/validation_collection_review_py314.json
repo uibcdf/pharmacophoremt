@@ -1,0 +1,118 @@
+{
+  "schema": "pharmacophoremt.validation_collection_review@1",
+  "issue": "uibcdf/pharmacophoremt#20",
+  "recorded_utc": "2026-10-07T07:59:00.735904+00:00",
+  "source_base": "448e47e3adfaff40be4bb947684360c1340622d7",
+  "scope": "Publication/layout and archived-result reading; no scientific driver reexecution, biological or timing result.",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "ackredit": "0.10.1",
+    "sphinx": "9.1.0",
+    "myst_parser": "5.1.0"
+  },
+  "reviewed_overlay_sha256": {
+    "devtools/evidence_archive.py": "45824870caafa9ef11b330eda3b256ec77c8bc05aaf52207596dbf2cf5aad8d4",
+    "tests/test_evidence_archive.py": "5b1a78fa66c8b0c0585ac41e5d664d3047e17f6b1c19fd74a6f5a8b3de0c6959",
+    "devguide/validation_collection.md": "fe1682730c6e58f8d6bf8e40afdfdc985bf101e7bc8e15d362ecf65b689a2ab1",
+    "devguide/templates/evidence_case.md": "f6a9b521a4d2552486f3f89aab476b2fe2741a3fa9977a85d2405ff573471b9a",
+    "docs/content/validation/index.md": "33b9e2347d55fa38294ba39282b1b9133a9c4ab358a8f5ade14360725947f846",
+    "docs/content/validation/prepared_ccd.md": "881cacc322d1c3211bddd790d24e4fba84bfe609a134a9949e179a4bfde14179",
+    ".github/workflows/CI.yaml": "d7f1ec7d8a086de4e100525857463febc65a8a490802922317416264cc028724",
+    "devtools/dependency_routes.toml": "cb11964a84bcc11ef80a90fd7d9226fa55e4ef72730e6c3e4e2f84f613df9fc3"
+  },
+  "demonstrator": {
+    "case_id": "prepared-ccd-est-des",
+    "summary": "devguide/evidence/prepared_ccd_py314_summary.json",
+    "full_evidence": {
+      "path": "prepared_ccd_py314.json.gz",
+      "uncompressed_sha256": "fa50f2f1591083b299f89343ac79c7de76be5f7341833428bf13b7eb036dbb52",
+      "compressed_sha256": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+      "uncompressed_bytes": 6308334,
+      "compressed_bytes": 473393
+    },
+    "original_recorded_at_utc": "2026-10-03T14:47:09.183625+00:00",
+    "original_producer_head": "228355a70a691c7594244189a3bed4acc437c8c2",
+    "original_dirty_overlay_retained": true,
+    "n_original_controls": 12,
+    "original_expectations_passed": true,
+    "original_tracking_projections_stable": true,
+    "n_reference_items": 21,
+    "n_reference_uses": 99,
+    "python_example_blocks_executed": 2,
+    "detached_bibliography_rendered": true,
+    "reading_preserves_enclosing_attribution_session": true,
+    "scientific_driver_reexecuted": false
+  },
+  "verification": [
+    {
+      "command": "python -m pytest --receptor=llm tests/test_evidence_archive.py tests/test_ci_routes.py tests/test_ci_backlog.py",
+      "passed": 16,
+      "seconds": 0.54
+    },
+    {
+      "command": "python -m unittest discover -s devtools/tests -p 'test_*.py'",
+      "passed": 23,
+      "seconds": 2.277,
+      "sdk_commit": "8f00e6d9de943b6e4710ea62936e2ebea00fad24"
+    },
+    {
+      "command": "python devtools/check_dependency_routes.py --declared-only",
+      "qualification": "declared-only",
+      "n_contexts": 7
+    },
+    {
+      "command": "python devtools/broadcast_requirements.py --check",
+      "changed": []
+    },
+    {
+      "command": "python -m sphinx -W --keep-going -b html ISOLATED_SOURCE HTML",
+      "result": "passed",
+      "scope": "Both original new pages with linked-existing-document stubs; no warning suppression or full-site claim"
+    },
+    {
+      "command": "python devtools/devguide_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_reporting_protocol.py",
+      "passed": 3,
+      "seconds": 0.431
+    },
+    {
+      "command": "ruff check .",
+      "result": "passed"
+    },
+    {
+      "command": "ruff format --check .",
+      "result": "236 files already formatted"
+    }
+  ],
+  "original_gzip_sha256": {
+    "devguide/evidence/ranked_seeds_py314.json.gz": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "devguide/evidence/eralpha_exclusions_py314.json.gz": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "devguide/evidence/rigid_refinement_py314.json.gz": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c",
+    "devguide/evidence/eralpha_interface_py314.json.gz": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "devguide/evidence/ionic_interactions_py314.json.gz": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "devguide/evidence/eralpha_receptor_py314.json.gz": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce",
+    "devguide/evidence/rigid_consensus_py314.json.gz": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "devguide/evidence/ccd_interactions_py314.json.gz": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def",
+    "devguide/evidence/aromatic_interactions_py314.json.gz": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "devguide/evidence/eralpha_template_py314.json.gz": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "devguide/evidence/prepared_ccd_py314.json.gz": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+    "devguide/evidence/interaction_composition_py314.json.gz": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "devguide/evidence/eralpha_hydrogens_py314.json.gz": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "devguide/evidence/curation_py314_cookbook_audit.json.gz": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "devguide/evidence/rigid_refinement_benchmark_py314.json.gz": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1"
+  },
+  "limits": [
+    "Archive integrity and stored assertions do not qualify current scientific implementation.",
+    "Original producer dirty overlay is retained; exact reconstruction from its Git head alone is not claimed.",
+    "CCD ideal preparations are not activity, experimental pose, conformer energy or biological enrichment evidence.",
+    "No complete website, required hosted matrix or installed/public release qualification.",
+    "No changes to MolSysMT code; environmental-H refinement remains provider-owned."
+  ]
+}

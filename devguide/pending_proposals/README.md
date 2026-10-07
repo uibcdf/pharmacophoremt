@@ -34,8 +34,4 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`adopt_required_python_314.md`](adopt_required_python_314.md) — [#23](https://github.com/uibcdf/pharmacophoremt/issues/23) — Adopt the mandatory four-minor contract and qualify normal installed delivery *(partial, inspected)*
 - [`noarch_distribution_adoption.md`](noarch_distribution_adoption.md) — [#10](https://github.com/uibcdf/pharmacophoremt/issues/10) — Adopt the distribution policy and a guarded single-file noarch publication route. *(partial, measured)*
 
-### Open (1)
-
-- [`validation_benchmark_publication.md`](validation_benchmark_publication.md) — [#20](https://github.com/uibcdf/pharmacophoremt/issues/20) — Decide how to collect and publish scientific validation and benchmark evidence. *(open, asserted)*
-
 <!-- /generated -->

@@ -93,7 +93,7 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 - [ ] Review the attribution contract and verify optional-integration distribution support (#6, #19).
 - [ ] Confirm production dependency/distribution closure (#10) and required hosted CI evidence (#9).
 - [ ] Verify independent routes for all three traditional modeling approaches before claiming consolidation.
-- [ ] Decide how to collect, reproduce and publish validation/benchmark cases, examples and notebooks (#20).
+- [x] Collect validation/benchmark cases through the existing documentation and original evidence archives (#20; publication/layout decision, contribution template, ownership/execution policy and frozen CCD demonstrator).
 
 ### 4. Measured acceleration and future contracts
 - [ ] Profile representative matching/search workloads after establishing reference equivalence guards.

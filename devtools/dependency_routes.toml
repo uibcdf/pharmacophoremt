@@ -282,7 +282,7 @@ channel_reason = "Preserve actual AmberTools bootstrap; no required scientific d
 
 [[workflows]]
 path = ".github/workflows/CI.yaml"
-sha256 = "996d161feebec3d2f8650c109b67b84d4beb9d1913a46d534e5bea8488e068c5"
+sha256 = "d7f1ec7d8a086de4e100525857463febc65a8a490802922317416264cc028724"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
 
 [[workflows]]

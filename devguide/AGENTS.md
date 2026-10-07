@@ -12,3 +12,10 @@ question. Follow the local reporting protocol for actual queue/archive layouts,
 index regeneration, offline gates and synchronization with owning GitHub issues.
 Archive and index resolved records in the same change; append dated corrections
 to archived claims instead of rewriting history.
+
+## Scientific evidence collection
+
+Follow [validation_collection.md](validation_collection.md) and
+[templates/evidence_case.md](templates/evidence_case.md) for new case pages and
+evidence publication. Link original inputs, executable code and measured outputs;
+preserve old run identities when adding results or correcting claims.
