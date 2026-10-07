@@ -807,3 +807,32 @@ affected interaction/composition/CCD/curation selection passes 164 tests in
 The current logs supplement the fourteen unchanged original compressed archives.
 Whole-workspace pip-check conflicts are separately handed to MolSysSuite #52.
 Hosted exact-head evidence remains pending publication under #9/#23.
+
+## Declared prepared ERα interface — 2026-10-07
+
+Owned by [PharmacophoreMT #22](https://github.com/uibcdf/pharmacophoremt/issues/22).
+The [maintained recipe](../../docs/content/cookbook/prepared_eralpha_interface.md)
+and `tests/test_eralpha_interface.py` control a declared 304–550 receptor fragment
+plus EST, three cached native analyses, an 11-site composed/curated hypothesis,
+independent orientation/displacement/exclusion controls and saved readers.
+
+- `eralpha_interface_py314_summary.json` records the two full runs, their common
+  scientific hash, producer/native-extension/input hashes and archive identities.
+- `eralpha_interface_py314.json.gz` decompresses to the original complete driver
+  JSON, including observed/source maps, detector parameters, query lineage,
+  evaluated-empty families, outcomes and separately captured references/uses.
+- `eralpha_interface_prepared_py314.h5msm.gz` decompresses to the original tracked
+  native artifact. Its full preparation history retains original operation domains,
+  typed arrays and unknown numerical entries. It is compressed archival evidence;
+  decompress to `.h5msm` before using the public MolSysMT reader.
+
+Gzip timestamps are fixed at zero. Verify compressed and decompressed SHA-256
+against the summary for both `full_evidence` and `native_evidence`. JSON reports
+summarize aromatic normalization; its original integer/fractional orders are
+preserved in the native history, with unknowns remaining unknown.
+
+Seven focused tests, both executed cookbook blocks and isolated strict Sphinx
+rendering pass with Python 3.14.7. The normal editable development environment has
+the separately tracked pip-check conflicts under MolSysSuite #52. These artifacts
+qualify the bounded analytical source workflow, not clean public installation,
+complete receptor chemistry, environmental/biological acceptance or performance.

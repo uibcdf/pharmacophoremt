@@ -156,3 +156,14 @@ Ruff lint/format checks pass for the changed guard.
 
 A fresh eight-cell hosted result remains required for this correction; these
 local results do not certify older interpreters, macOS or public installation.
+
+### Executed Linux recovery checkpoint — 2026-10-07
+
+Source `7326f47aa7406268905e11d857b0f4ae0940c2af` was incorporated with the
+maintainer-authorized direct push to main. In
+[main CI 37578776978](https://github.com/uibcdf/pharmacophoremt/actions/runs/37578776978),
+reporting governance and all four complete Linux/Python 3.11–3.14 scientific
+jobs now succeed. macOS jobs remain queued at this observation. The overall
+run is still pending; this records executed Linux recovery rather than an
+eight-cell or public-installation qualification. Subsequent pilot source changes
+retain their own unskipped direct-push checkpoint.

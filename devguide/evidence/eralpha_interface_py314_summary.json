@@ -1,0 +1,291 @@
+{
+  "schema": "pharmacophoremt.eralpha_interface_validation@1",
+  "recorded_utc": "2026-10-07T06:24:30.466009+00:00",
+  "python": "3.14.7",
+  "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+  "producers": {
+    "pharmacophoremt": {
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+108.g864dcf5",
+      "python_source_sha256": "bf10dd0b5bbbefe7038d3cf7b890720d4c32ed2d8554f09602e8318c34d472e2",
+      "python_file_count": 136
+    },
+    "molsysmt": {
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+215.g5bd893c85",
+      "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+      "python_file_count": 2851
+    },
+    "pyunitwizard": {
+      "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.28.1+3.g2ab37a5",
+      "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+      "python_file_count": 84
+    },
+    "ackredit": {
+      "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+      "version": "0.11.0+29.g71bed3e.dirty",
+      "python_source_sha256": "05669415fe804a7756961d1d770c61393bd49e09174a68aaf9ceaf6d0ed31857",
+      "python_file_count": 69
+    }
+  },
+  "versions": {
+    "numpy": "2.4.6",
+    "scipy": "1.18.1",
+    "rdkit": "2026.3.1",
+    "argdigest": "0.15.0+1.g5c6711e",
+    "depdigest": "0.13.0+3.g0568f9a",
+    "smonitor": "0.19.0"
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+    }
+  ],
+  "inputs": {
+    "tests/data/eralpha_interface/manifest.json": "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8",
+    "devtools/prepare_eralpha_interface.py": "284b2a47e2e8e062eddc7bbfdabe1e4de351934300bd2e8671e8fcadf8022622",
+    "devtools/validate_eralpha_interface.py": "6a56163533a25992b393c6cdba5cf1addafafd31fee5e1405ffe01b3e7fe1192",
+    "devtools/prepare_eralpha_ligand.py": "28ff1f7833a555efa7456f8b97e87cda6fdacd2831ae061815b8ff38eb582a83",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/audit_eralpha_receptor.py": "0854719403f34d5eb4e6563f302c27bd928e75fc9ded7cead70da401e730c177",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_eralpha_template.py": "a71d50a5c16e6c9f983a27f49bd0d3cdafab13dca91adab15dfe8309705e8e55",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038",
+    "devtools/benchmark_rigid_consensus.py": "193cd462fa9f9662f36512362974bdf05bcba060e8283fbbc79679d4f67c9b08",
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c"
+  },
+  "producers_and_inputs_unchanged": true,
+  "tracking_independent_science": true,
+  "valid": true,
+  "scope": "declared closed fragment and analytical controls; no full-receptor, environmental or biological acceptance",
+  "full_evidence": {
+    "path": "eralpha_interface_py314.json.gz",
+    "compressed_bytes": 4375840,
+    "uncompressed_bytes": 71313706,
+    "compressed_sha256": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "uncompressed_sha256": "77eee448b02f1a6f95fb78abaf5e077753c2aad783654b6c07bd7e3132aa67f1"
+  },
+  "native_evidence": {
+    "path": "eralpha_interface_prepared_py314.h5msm.gz",
+    "compressed_bytes": 585225,
+    "uncompressed_bytes": 3508888,
+    "compressed_sha256": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "uncompressed_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a"
+  },
+  "local_environment": "normal editable molsyssuite@uibcdf_3.14; pip-check conflicts tracked separately under MolSysSuite #52; not clean installed qualification",
+  "runs": [
+    {
+      "tracking": false,
+      "valid": true,
+      "scientific_sha256": "005172703f05546b658ad54327dd71da4063ea077c6c7e611e3f61085149435f",
+      "counts": {
+        "n_atoms": 4047,
+        "n_bonds": 4088,
+        "n_structures": 1
+      },
+      "observations": {
+        "method": "named_native_interaction_collection@1",
+        "chemical_state_index": 0,
+        "cation_mapping": "exact",
+        "analyses": [
+          {
+            "label": "hydrophobic",
+            "n_observations": 12,
+            "evaluated_structure_indices": [
+              0
+            ]
+          },
+          {
+            "label": "hbonds",
+            "n_observations": 0,
+            "evaluated_structure_indices": [
+              0
+            ]
+          },
+          {
+            "label": "pi_pi",
+            "n_observations": 0,
+            "evaluated_structure_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      "site_counts": {
+        "observed": 6,
+        "reference": 5,
+        "combined": 11,
+        "curated": 11
+      },
+      "outcomes": {
+        "reference": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "displaced_negative": {
+          "status": "not_matched",
+          "fit_value": 0.0
+        },
+        "reversed_donor_direction": {
+          "status": "not_matched",
+          "fit_value": 0.875
+        },
+        "reversed_normal": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "orthogonal_normal_negative": {
+          "status": "not_matched",
+          "fit_value": 0.875
+        },
+        "nondefault_units": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "reloaded": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "reloaded_observed_only": {
+          "status": "matched",
+          "fit_value": 1.0
+        }
+      },
+      "exclusions": {
+        "n_sites": 153,
+        "outcomes": {
+          "reference": {
+            "status": "matched",
+            "fit_value": 1.0
+          },
+          "unexcluded_collision": {
+            "status": "matched",
+            "fit_value": 1.0
+          },
+          "collision": {
+            "status": "not_matched",
+            "fit_value": 1.0
+          }
+        }
+      },
+      "persistence": {
+        "query_metadata_preserved": true,
+        "preparation_history_preserved": true,
+        "cached_analyses_preserved": true,
+        "chemical_values_and_coordinates_preserved": true
+      },
+      "citation_items": 5
+    },
+    {
+      "tracking": true,
+      "valid": true,
+      "scientific_sha256": "005172703f05546b658ad54327dd71da4063ea077c6c7e611e3f61085149435f",
+      "counts": {
+        "n_atoms": 4047,
+        "n_bonds": 4088,
+        "n_structures": 1
+      },
+      "observations": {
+        "method": "named_native_interaction_collection@1",
+        "chemical_state_index": 0,
+        "cation_mapping": "exact",
+        "analyses": [
+          {
+            "label": "hydrophobic",
+            "n_observations": 12,
+            "evaluated_structure_indices": [
+              0
+            ]
+          },
+          {
+            "label": "hbonds",
+            "n_observations": 0,
+            "evaluated_structure_indices": [
+              0
+            ]
+          },
+          {
+            "label": "pi_pi",
+            "n_observations": 0,
+            "evaluated_structure_indices": [
+              0
+            ]
+          }
+        ]
+      },
+      "site_counts": {
+        "observed": 6,
+        "reference": 5,
+        "combined": 11,
+        "curated": 11
+      },
+      "outcomes": {
+        "reference": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "displaced_negative": {
+          "status": "not_matched",
+          "fit_value": 0.0
+        },
+        "reversed_donor_direction": {
+          "status": "not_matched",
+          "fit_value": 0.875
+        },
+        "reversed_normal": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "orthogonal_normal_negative": {
+          "status": "not_matched",
+          "fit_value": 0.875
+        },
+        "nondefault_units": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "reloaded": {
+          "status": "matched",
+          "fit_value": 1.0
+        },
+        "reloaded_observed_only": {
+          "status": "matched",
+          "fit_value": 1.0
+        }
+      },
+      "exclusions": {
+        "n_sites": 153,
+        "outcomes": {
+          "reference": {
+            "status": "matched",
+            "fit_value": 1.0
+          },
+          "unexcluded_collision": {
+            "status": "matched",
+            "fit_value": 1.0
+          },
+          "collision": {
+            "status": "not_matched",
+            "fit_value": 1.0
+          }
+        }
+      },
+      "persistence": {
+        "query_metadata_preserved": true,
+        "preparation_history_preserved": true,
+        "cached_analyses_preserved": true,
+        "chemical_values_and_coordinates_preserved": true
+      },
+      "citation_items": 16
+    }
+  ]
+}

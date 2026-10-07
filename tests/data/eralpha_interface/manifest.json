@@ -1,0 +1,42 @@
+{
+  "schema": "pharmacophoremt.eralpha_interface_case@1",
+  "consumer_issue": "uibcdf/pharmacophoremt#22",
+  "provider_source": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+  "source_sha256": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+  "receptor_selection": "molecule_type == \"protein\" and chain_id == \"A\" and group_id not in [\"301\", \"302\", \"303\"]",
+  "receptor_group_id_range": [304, 550],
+  "excluded_source_group_ids": ["301", "302", "303"],
+  "residue_states": {"HIS": "HIE"},
+  "n_terminal_state": "ammonium",
+  "c_terminal_state": "carboxylate",
+  "template_to_observed_atom_names": {"ARG": {"NH1": "NH2", "NH2": "NH1"}},
+  "peptide_graph_sha256": "c0fc4eac0e020826079f2d8fec71e6ad963f0df9fcda6d574fcb3b0c0c2eca49",
+  "expected_counts": {"n_atoms": 4047, "n_bonds": 4088, "n_structures": 1},
+  "receptor_heavy_atoms": 1975,
+  "ligand_heavy_atoms": 20,
+  "generated_hydrogens": 2052,
+  "expected_observations": {"hydrophobic": 12, "hbonds": 0, "pi_pi": 0},
+  "expected_hydrophobic_source_pairs": [[673, 5944], [673, 5945], [701, 5944], [813, 5940], [813, 5941], [813, 5950], [815, 5940], [815, 5941], [815, 5944], [815, 5945], [815, 5949], [815, 5950]],
+  "detectors": {
+    "hydrophobic": {},
+    "hbonds": {"method": "donor_acceptor_distance_angle", "profile": "smarts_donor_acceptor"},
+    "pi_pi": {"method": "plane_angle_intersection", "profile": "smarts_5_6"}
+  },
+  "hypothesis": {
+    "observed_radius": "0.15 nm",
+    "reference_radius": "0.02 nm",
+    "reference_features": ["hb donor", "hb acceptor", "aromatic ring"],
+    "hydrophobic_weight": 0.5,
+    "direction_tolerance": "10 degrees",
+    "exclusion_radius": "0.1 nm",
+    "collision_control_radius": "0.4 nm"
+  },
+  "limits": [
+    "Declared closed fragment 304-550; not full-receptor acceptance.",
+    "HIE histidines and charged terminal states are caller choices, not pH inference.",
+    "ARG terminal N name permutation is specific to this inspected source/template pair.",
+    "Observed heavy coordinates are preserved; hydrogen coordinates are generated local geometry.",
+    "No environment refinement, biological assembly, waters, affinity or enrichment validation.",
+    "Weights and exclusion radii are explicit analytical choices, not fitted physical parameters."
+  ]
+}

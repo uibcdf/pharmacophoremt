@@ -218,3 +218,56 @@ reporting/index/whitespace checks pass; editable 3.14 installation is confirmed.
 The [consumer continuation](https://github.com/uibcdf/pharmacophoremt/issues/22#issuecomment-5973670489)
 links the reusable tool, case guards and retained evidence. Receptor preparation,
 successful interaction observations and biological acceptance remain open.
+
+## Declared prepared interface acceptance — 2026-10-07
+
+The current MolSysMT source contract supports a declared closed fragment of
+label-chain A residues 304–550 plus observed EST. The new local recipe
+`devtools/prepare_eralpha_interface.py` consumes public peptide-template,
+aromatic-normalization, chemical-template application, fixed-state H placement,
+merge and detector tools. It reuses the checksum-qualified local deposition and
+EST preparation rather than importing provider developer scripts or temporary
+artifacts. The case manifest fixes HIE histidines, charged fragment termini,
+the inspected ARG NH1/NH2 map and reviewed peptide graph. No chemistry algorithm
+is implemented in this consumer.
+
+The prepared graph has 4,047 atoms, 4,088 bonds and one frame, retaining 1,995
+observed heavy atoms and adding 2,052 local H. Original heavy identities and
+coordinates and the unprepared source remain unchanged. Three cached analyses
+retain 12 hydrophobic observations and evaluated-empty H-bond/pi-pi families.
+Their parameters, source maps and evaluated frame remain explicit. Twelve frozen
+deposited atom pairs and independent coordinate-distance assertions guard the
+participant/geometry contract separately from model self-placement.
+
+`devtools/validate_eralpha_interface.py` composes six observed participant sites
+with five separately labeled ligand-reference donor/acceptor/aromatic sites.
+The curation tool assigns declared hydrophobic weight 0.5 while every positive
+site remains essential. Self-placement has fit 1; a 2 nm displacement has fit 0.
+Reversed donor direction and an orthogonal ring normal each miss one essential
+site at fit 7/8; normal-sign reversal still matches. The observed 19-residue shell
+supplies 153 exclusions. An independent broad-radius collision control preserves
+fit 1 while the receptor-exclusion veto changes status to not_matched.
+
+Native H5MSM recovery preserves chemical values, original preparation history,
+typed unknown orders and cached analysis maps/coverage. Curated JSON recovery
+preserves metadata and detached bibliography; a fresh-process reader earns no
+new calculation credit. Evaluation and rebuilding also pass under pm/fs with
+explicit angle/charge standards. The CLI performs both full preparation/control
+runs with host attribution disabled/enabled and obtains identical scientific
+SHA-256 `005172703f05546b658ad54327dd71da4063ea077c6c7e611e3f61085149435f`.
+
+Seven focused guards in `tests/test_eralpha_interface.py` pass on local normal
+editable Python 3.14.7 (441.60 s), with two expected B-factor-drop diagnostics.
+Both cookbook blocks execute, isolated strict Sphinx rendering and Ruff pass.
+Full JSON evidence, its summary and the original native artifact are retained
+under `devguide/evidence/eralpha_interface_*`. The JSON intentionally summarizes
+aromatic normalization; original numerical unknowns remain in the retained native
+history. Earlier evidence and historical claims are preserved.
+
+This accepts the bounded prepared-interface analytical chain, not the complete
+receptor. Residues 301–303 remain excluded; histidine/terminal choices, unspecified
+peptide stereo and locally generated H remain declared limitations. Environmental
+refinement, biological enrichment, public installation and performance acceptance
+remain open. Existing shared-environment pip-check conflicts remain independently
+owned by MolSysSuite #52; local source evidence does not certify a clean install.
+No new provider defect/capability proposal or shared-policy change is inferred.

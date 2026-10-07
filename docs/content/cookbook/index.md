@@ -60,6 +60,7 @@ eralpha_input_audit
 | Apply declared chemistry to a deposited ligand while preserving its pose | [Observed EST template](observed_est_template.md): public MolSysMT assessment/application, native reference query and fixed-frame controls |
 | Include generated donor-H geometry in an observed ligand workflow | [Observed EST hydrogens](observed_est_hydrogens.md): explicit fixed-state MolSysMT placement, directional evaluation, persistence and modular rigid recovery |
 | Inspect receptor coverage before constructing a complex-based hypothesis | [Observed receptor coverage](observed_receptor_coverage.md): public MolSysMT audits, spatial scopes and preserved calculation failures |
+| Compose a declared prepared receptor/EST interface with independent controls | [Prepared ERα interface](prepared_eralpha_interface.md): public preparation, observed/reference composition, explicit curation, exclusions and saved readers |
 | Build exclusion spheres as an independent modeling step | [Excluded volumes](excluded_volumes.md): `get_excluded_volume_sites()` from cached heavy-atom geometry, composed with positive query sites |
 | Rank labeled molecules and inspect calculation failures | [Retrospective validation](retrospective_validation.md): `RetrospectiveValidator` |
 | Keep software/method references and render a final bibliography | [Scientific attribution](attribution.md): `attribution()`, `attribution_report()` and Ackredit |

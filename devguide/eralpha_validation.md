@@ -420,3 +420,29 @@ provider revisions while preserving all required Python minors and full collecti
 Historical evidence is unchanged; today's selected tests do not replace a full
 matrix or biological acceptance. The publication receipt and original logs are
 retained in `devguide/evidence/publication_20261006.json`.
+
+## Declared prepared interface — 2026-10-07
+
+The [prepared-interface cookbook](../docs/content/cookbook/prepared_eralpha_interface.md)
+now carries the complete bounded fragment/EST chain: public MolSysMT preparation,
+three named interaction analyses, observed/reference hypothesis composition,
+explicit curation, placed evaluation, receptor exclusions and saved readers.
+The declaration is in `tests/data/eralpha_interface/manifest.json`; the maintaining
+guards are `tests/test_eralpha_interface.py`. This supplements the earlier ligand,
+raw-receptor and exclusion-geometry records without rewriting their original claims.
+
+The 304–550 fragment plus EST has 4,047 atoms/4,088 bonds. Its 12 hydrophobic
+contacts produce six sites; evaluated-empty H-bond/pi-pi families remain in the
+source evidence. Five ligand-reference sites are a separate hypothesis component.
+The 11-site curated model fits its deposited placement at 1, misses a 2 nm
+displacement at 0, and rejects independent donor/normal negatives at 7/8.
+An exclusion collision changes status while retaining fit 1. Native history and
+analysis maps, JSON metadata/bibliography and nondefault-unit controls survive
+recovery. The two full attribution settings give identical scientific hashes.
+
+Seven new guards pass on local editable Python 3.14.7; both cookbook blocks and
+isolated strict documentation rendering pass. The [summary](evidence/eralpha_interface_py314_summary.json)
+identifies original JSON and native-H5MSM archives, checksums, producer/extension
+hashes and the limits of acceptance. Full-receptor preparation, peptide stereo,
+environmental refinement, biological enrichment, public delivery and performance
+remain separate gates under the owning issues.
