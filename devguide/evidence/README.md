@@ -949,3 +949,39 @@ validation and performance remain separate. Read the original bytes with:
 ```bash
 python -m devtools.evidence_archive devguide/evidence/nonfinite_provenance_review_py314_summary.json
 ```
+
+
+## Repeated fixed-state H review — 2026-10-09
+
+The bounded consumer regression in
+[PharmacophoreMT #39](https://github.com/uibcdf/pharmacophoremt/issues/39) is
+reviewed and resolved. The [maintained contract](../eralpha_validation.md) and
+[resolved report](../archive/repeated_hydrogen_history_is_not_chemical_mutation.md)
+distinguish preserved chemical assignments from appended operation history.
+The reinforced guard snapshots original coordinates before calling and checks
+the original explicitly under both nm/ps and pm/fs.
+
+`repeat_hydrogen_review_py314_summary.json` links the distinct actual audit output
+`repeat_hydrogen_review_py314.json.gz`: 153,368 compressed bytes and 6,640,278
+uncompressed bytes, with a zero gzip timestamp. Compressed SHA-256 is
+`9b28c8b8e82ed74c1f80e52c12da172df4208ee4cafdd09408411821c30618c7`;
+uncompressed SHA-256 is
+`dbb7e149b85a2cb3801680260a342369af8ed03487b2d392bde15cbef76957f1`.
+The original execution source/checksum, chemical payloads, coordinate snapshots,
+histories, reports and actual application captures are retained. In both unit
+policies the result retains 44 atoms, adds zero H, returns an independent object
+and expands history from three to five records; the original is unchanged.
+The capture for each repeated call contains three items and three uses.
+
+The selected hydrogen/template/input-audit run passes 23 tests in 151.89 s;
+the exclusion consumer passes four tests in 50.91 s on editable Python 3.14.7.
+The six warnings are expected B-factor drops. All five original recipe blocks
+execute and strict isolated rendering passes. Seven Python producer snapshots
+and recorded inputs remain unchanged during the audit, and all eighteen earlier
+gzip archives retain their exact Git bytes. This review changes no runtime or
+provider code and makes no environmental, biological, energy, performance,
+multi-state or public-package qualification claim. Verify original bytes with:
+
+```bash
+python -m devtools.evidence_archive devguide/evidence/repeat_hydrogen_review_py314_summary.json
+```

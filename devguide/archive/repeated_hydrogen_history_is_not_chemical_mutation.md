@@ -1,9 +1,9 @@
 ---
 summary: Separate repeat-H chemical invariance from appended operation history.
 issue: uibcdf/pharmacophoremt#39
-status: active
+status: resolved
 opened: 2026-10-05
-closed:
+closed: 2026-10-09
 severity: medium
 verification: measured
 area: [validation, integration, provenance]
@@ -68,3 +68,46 @@ Independent returned object; original complete payload/history unchanged; equal
 chemical assignments and coordinates; zero new H; preserved history prefix and
 two unchanged appended operations. Execute the owning guard and relevant pilot
 modules, publish the owner change and synchronize #39 with the exact commit.
+
+
+## Resolution — 2026-10-09
+
+The owner correction incorporated in
+`eb50131ddbd40450c6e5eae95af7940ef80cf1f1` is reviewed and accepted. This closure
+strengthens consumer guards, maintained guidance and evidence; runtime and
+provider implementations are unchanged. The original text above retains its
+historical publication and qualification claims.
+
+The guard now runs under nm/ps and pm/fs and copies the original coordinates
+before calling. It checks original payload, explicit original history and
+original coordinates after the call, then compares the distinct returned object's
+assignments and coordinates with the unchanged original/snapshot. This prevents
+an equal post-call mutation of both objects from passing a preservation test.
+It still requires zero new H, an empty `(0, 2)` parent map, the complete original
+history prefix and exactly the unchanged terminal-attachment and hydrogen-addition
+records. Actual fresh reference-EST calls preserve all 44 atoms and assignments;
+returned history grows from three to five records while the original keeps three.
+
+On normal editable Python 3.14.7, the selected hydrogen/template/input-audit run
+passes 23 tests in 151.89 s; the exclusion consumer passes four tests in 50.91 s.
+The six expected warnings describe B-factor drops under explicit intersection
+policy. All five original hydrogen cookbook blocks execute and strict isolated
+rendering passes. The audit is based on
+`2132fa0ba6013b9adaf4615e1d055a1899f86cd6` plus the recorded test overlay.
+
+`devguide/evidence/repeat_hydrogen_review_py314.json.gz` retains the actual
+before/output/original-after payloads, coordinate snapshots, histories, repeated
+provider reports and application captures for both unit policies. The execution
+source is retained inside that archive with its own checksum. The linked
+`devguide/evidence/repeat_hydrogen_review_py314_summary.json` records full-output
+hashes, producer/input/native extension identities, focused commands and limits.
+Seven producer Python source snapshots and recorded inputs remain unchanged
+during the audit; all eighteen earlier gzip archives retain their original bytes.
+The maintained contract is `devguide/eralpha_validation.md`. Report-index checks,
+three offline reporting controls, Ruff, archive integrity and whitespace checks
+pass before publication.
+
+This resolves the reference-EST repeat-H consumer regression only. Environmental
+hydrogen refinement remains MolSysMT #323; #22 pilot, energy, biological and
+hosted/public artifact acceptance are separate. No hydrogen algorithm, chemical
+state selection or provider history suppression is introduced.

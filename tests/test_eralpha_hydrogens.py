@@ -108,41 +108,53 @@ def test_five_essential_sites_direction_negatives_and_persistence(prepared, tmp_
     assert donors["reversed_donor_direction"]["fit_value"] == pytest.approx(0.8)
 
 
-def test_second_hydrogen_addition_is_an_unchanged_independent_copy(prepared):
-    source = prepared["molecular_system"]
-    original_payload = state_payload(source)
-    before_history = portable(source.chemical_states.get_preparation_history())
-    repeated = msm.build.add_missing_hydrogens(
-        source, mode="fixed_chemical_state", pH=None, engine="RDKit", return_report=True
-    )
-    assert repeated["molecular_system"] is not source
-    assert repeated["report"]["status"] == "unchanged"
-    assert repeated["report"]["n_added_hydrogens"] == 0
-    assert repeated["report"]["parent_hydrogen_pairs"].shape == (0, 2)
-    actual, expected = (
-        state_payload(repeated["molecular_system"]),
-        state_payload(source),
-    )
-    for state in actual["states"] + expected["states"]:
-        state.pop("preparation_history", None)
-    assert actual == expected
-    assert state_payload(source) == original_payload
-    after_history = repeated[
-        "molecular_system"
-    ].chemical_states.get_preparation_history()
-    assert portable(after_history[: len(before_history)]) == portable(before_history)
-    appended = after_history[len(before_history) :]
-    assert [record["report"]["schema"] for record in appended] == [
-        "molsysmt.terminal_attachment@1",
-        "molsysmt.hydrogen_addition@1",
-    ]
-    assert all(record["report"]["status"] == "unchanged" for record in appended)
-    np.testing.assert_array_equal(
-        puw.get_value(msm.get(source, coordinates=True), to_unit="nm"),
-        puw.get_value(
-            msm.get(repeated["molecular_system"], coordinates=True), to_unit="nm"
-        ),
-    )
+@pytest.mark.parametrize("standard_units", [("nm", "ps"), ("pm", "fs")])
+def test_second_hydrogen_addition_is_an_unchanged_independent_copy(
+    prepared, standard_units
+):
+    with puw.context(standard_units=list(standard_units)):
+        source = prepared["molecular_system"]
+        original_payload = state_payload(source)
+        before_history = portable(source.chemical_states.get_preparation_history())
+        before_coordinates = puw.get_value(
+            msm.get(source, coordinates=True), to_unit="nm"
+        ).copy()
+        repeated = msm.build.add_missing_hydrogens(
+            source,
+            mode="fixed_chemical_state",
+            pH=None,
+            engine="RDKit",
+            return_report=True,
+        )
+        output = repeated["molecular_system"]
+        assert output is not source
+        assert repeated["report"]["status"] == "unchanged"
+        assert repeated["report"]["n_added_hydrogens"] == 0
+        assert repeated["report"]["parent_hydrogen_pairs"].shape == (0, 2)
+        assert state_payload(source) == original_payload
+        assert (
+            portable(source.chemical_states.get_preparation_history()) == before_history
+        )
+        actual, expected = state_payload(output), state_payload(source)
+        for state in actual["states"] + expected["states"]:
+            state.pop("preparation_history", None)
+        assert actual == expected
+        after_history = output.chemical_states.get_preparation_history()
+        assert portable(after_history[: len(before_history)]) == before_history
+        appended = after_history[len(before_history) :]
+        assert [record["report"]["schema"] for record in appended] == [
+            "molsysmt.terminal_attachment@1",
+            "molsysmt.hydrogen_addition@1",
+        ]
+        assert all(record["report"]["status"] == "unchanged" for record in appended)
+        np.testing.assert_array_equal(
+            puw.get_value(msm.get(source, coordinates=True), to_unit="nm"),
+            before_coordinates,
+        )
+        np.testing.assert_array_equal(
+            puw.get_value(msm.get(output, coordinates=True), to_unit="nm"),
+            before_coordinates,
+        )
 
 
 def test_strict_annotation_policy_rejects_without_changing_heavy_source(prepared):

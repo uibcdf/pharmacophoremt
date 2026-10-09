@@ -421,6 +421,45 @@ Historical evidence is unchanged; today's selected tests do not replace a full
 matrix or biological acceptance. The publication receipt and original logs are
 retained in `devguide/evidence/publication_20261006.json`.
 
+### Repeat-H owner review — 2026-10-09
+
+[#39](https://github.com/uibcdf/pharmacophoremt/issues/39) is reviewed and
+resolved. The owner guard incorporated in
+`eb50131ddbd40450c6e5eae95af7940ef80cf1f1` correctly separates assignments from
+operation history. The review additionally snapshots a copy of the original
+coordinates before the call and checks both the original and returned copy
+against that snapshot. Comparing only the two objects after the operation would
+miss an equal mutation of both. The complete original chemical payload and
+explicit original history must also remain unchanged.
+
+The guard now runs under both nm/ps and pm/fs. Each repeated fixed-state call
+returns a distinct object with equal assignments and coordinates, zero added H
+and an empty `(0, 2)` parent map. Its history preserves all three original
+records and appends exactly an unchanged `molsysmt.terminal_attachment@1` record
+and an unchanged `molsysmt.hydrogen_addition@1` record. Coordinates are compared
+through the same unit conversion as the pre-call snapshot. This is a contract
+for the prepared reference EST fixture, not a multi-state or environmental
+hydrogen-placement qualification.
+
+The selected hydrogen, template and input-audit controls pass **23 tests in
+151.89 s**; the exclusion consumer passes **4 tests in 50.91 s** on normal
+editable Python 3.14.7. Their six warnings are expected B-factor drops under the
+explicit intersection policy. All five original hydrogen cookbook blocks execute
+and strict isolated rendering passes. The two actual repeat-operation outputs,
+full original/output chemical payloads, histories, coordinate snapshots and
+application captures are retained in a distinct dated archive. Seven producer
+Python source snapshots and recorded inputs remain unchanged during that audit;
+all eighteen earlier gzip archives retain their exact Git bytes.
+
+The [review receipt](evidence/repeat_hydrogen_review_py314_summary.json) records
+the full-output hashes, producer/input identities, execution source and loaded
+molecular extension identity. The
+[resolved report](archive/repeated_hydrogen_history_is_not_chemical_mutation.md)
+preserves the original publication evidence. This closes the bounded consumer
+regression review; MolSysMT #323 environmental refinement, #22 biological pilot
+acceptance and hosted/public artifact qualification remain separate. No runtime
+or provider implementation changes are made in this review.
+
 ## Declared prepared interface — 2026-10-07
 
 The [prepared-interface cookbook](../docs/content/cookbook/prepared_eralpha_interface.md)

@@ -1,0 +1,378 @@
+{
+  "schema": "pharmacophoremt.repeat_hydrogen_review_summary@1",
+  "issue": "uibcdf/pharmacophoremt#39",
+  "recorded_utc": "2026-10-09T18:56:18.356373+00:00",
+  "source_base": "2132fa0ba6013b9adaf4615e1d055a1899f86cd6",
+  "implementation_commit": "eb50131ddbd40450c6e5eae95af7940ef80cf1f1",
+  "runtime_code_changed": false,
+  "environment": {
+    "python": "3.14.7",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "producers_before": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "00d954d9300ac38836577d82f5b80ac71b56b41b825ee4dac9a1005711df5f9c",
+        "python_file_count": 136
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.12.0+1.g887b81c.dirty",
+        "python_source_sha256": "71bd0e49f069ff34c419c1fb0f7ef386aba48829ae74af967d479435df6c363d",
+        "python_file_count": 69
+      },
+      "argdigest": {
+        "path": "/home/liliana/repos@uibcdf/argdigest/argdigest",
+        "version": "0.15.0+1.g5c6711e",
+        "python_source_sha256": "8449462b963157af5c3b1a2fb2e6813a31dab55bfa57551078cc919e020b182f",
+        "python_file_count": 38
+      },
+      "smonitor": {
+        "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+        "version": "0.19.0",
+        "python_source_sha256": "09bc616bf7266fbfeddc23e2b7973938da66b55bc05f9532d1d11cad4e63a58e",
+        "python_file_count": 40
+      },
+      "depdigest": {
+        "path": "/home/liliana/repos@uibcdf/depdigest/depdigest",
+        "version": "0.13.0+3.g0568f9a",
+        "python_source_sha256": "de7d35f468b3173af209c8ab0f6a8cd5b6b6d97dd6d7bb00b1bd983fa522e7d9",
+        "python_file_count": 16
+      }
+    },
+    "source_heads": {
+      "pharmacophoremt": "2132fa0ba6013b9adaf4615e1d055a1899f86cd6",
+      "molsysmt": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+      "pyunitwizard": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+      "ackredit": "1342f0f2a659f3a7157bd65bfa5719a9604e973f",
+      "argdigest": "5c6711ebfe23b9516ef0e8f830abee70589ec406",
+      "smonitor": "f604b940ab281df4554869fdd24f796ea6d42c27",
+      "depdigest": "0568f9aba397ed5495adb350ba0f90899d6bdb8b"
+    }
+  },
+  "producers_after": {
+    "pharmacophoremt": {
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+108.g864dcf5",
+      "python_source_sha256": "00d954d9300ac38836577d82f5b80ac71b56b41b825ee4dac9a1005711df5f9c",
+      "python_file_count": 136
+    },
+    "molsysmt": {
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+215.g5bd893c85",
+      "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+      "python_file_count": 2851
+    },
+    "pyunitwizard": {
+      "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.28.1+3.g2ab37a5",
+      "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+      "python_file_count": 84
+    },
+    "ackredit": {
+      "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+      "version": "0.12.0+1.g887b81c.dirty",
+      "python_source_sha256": "71bd0e49f069ff34c419c1fb0f7ef386aba48829ae74af967d479435df6c363d",
+      "python_file_count": 69
+    },
+    "argdigest": {
+      "path": "/home/liliana/repos@uibcdf/argdigest/argdigest",
+      "version": "0.15.0+1.g5c6711e",
+      "python_source_sha256": "8449462b963157af5c3b1a2fb2e6813a31dab55bfa57551078cc919e020b182f",
+      "python_file_count": 38
+    },
+    "smonitor": {
+      "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+      "version": "0.19.0",
+      "python_source_sha256": "09bc616bf7266fbfeddc23e2b7973938da66b55bc05f9532d1d11cad4e63a58e",
+      "python_file_count": 40
+    },
+    "depdigest": {
+      "path": "/home/liliana/repos@uibcdf/depdigest/depdigest",
+      "version": "0.13.0+3.g0568f9a",
+      "python_source_sha256": "de7d35f468b3173af209c8ab0f6a8cd5b6b6d97dd6d7bb00b1bd983fa522e7d9",
+      "python_file_count": 16
+    }
+  },
+  "python_producer_sources_unchanged": true,
+  "producer_git_worktree_at_receipt": {
+    "pharmacophoremt": {
+      "tracked_changes": true
+    },
+    "molsysmt": {
+      "tracked_changes": false
+    },
+    "pyunitwizard": {
+      "tracked_changes": false
+    },
+    "ackredit": {
+      "tracked_changes": false
+    },
+    "argdigest": {
+      "tracked_changes": false
+    },
+    "smonitor": {
+      "tracked_changes": false
+    },
+    "depdigest": {
+      "tracked_changes": false
+    }
+  },
+  "input_sha256": {
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/1qku_EST_D.sdf": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/README.md": "5e3c7e0f1b5bc39e527388c87ed5110f79b45342d1053f31a1d724c1efd1a187",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/README.md": "4df796bf4c244b915149d359f6ba86c283ef82987366d180a323632aae18b251",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/prepared_ccd/manifest.json": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+    "tests/test_eralpha_hydrogens.py": "895aeb02b57c27821a5442c21b2691532e5227c8d80985e07a5c5c91bc909828",
+    "devtools/prepare_eralpha_ligand.py": "28ff1f7833a555efa7456f8b97e87cda6fdacd2831ae061815b8ff38eb582a83",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_eralpha_template.py": "a71d50a5c16e6c9f983a27f49bd0d3cdafab13dca91adab15dfe8309705e8e55",
+    "devtools/validate_eralpha_hydrogens.py": "872f0eb7b41df74154ac023883cd2d404df090e78b4a439da0fcf8fd61567cec",
+    "docs/content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc"
+  },
+  "inputs_unchanged": true,
+  "reviewed_source_sha256": {
+    "tests/test_eralpha_hydrogens.py": "895aeb02b57c27821a5442c21b2691532e5227c8d80985e07a5c5c91bc909828",
+    "tests/test_eralpha_template.py": "93c2ef15d31eded2bce603f01138e9430a4972f2edda2a64ea28b52cd0089d32",
+    "tests/test_validation_eralpha.py": "c43f107bb3917993c09101ae347bde9bd5880c01fd3230811724759be863d75d",
+    "tests/test_eralpha_exclusions.py": "6cf4cae186e1801b263214f8a5f5e0b013d80cb1f64263bab3ced0f286939a7f",
+    "devguide/eralpha_validation.md": "323e79d442a925539cd8733affeee305714a69aabf82b2e4b1ecb55308ae8ef2",
+    "devguide/archive/repeated_hydrogen_history_is_not_chemical_mutation.md": "0c186a5082d296bfa29ea060cfb204eef35504ac97b5bb07a2ba83cbdaffdffd",
+    "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "tests/data/eralpha_rcsb/1qku_EST_D.sdf": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+    "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "tests/data/eralpha_rcsb/README.md": "5e3c7e0f1b5bc39e527388c87ed5110f79b45342d1053f31a1d724c1efd1a187",
+    "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+    "tests/data/eralpha_template/README.md": "4df796bf4c244b915149d359f6ba86c283ef82987366d180a323632aae18b251",
+    "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+    "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+    "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+    "tests/data/prepared_ccd/manifest.json": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+    "devtools/prepare_eralpha_ligand.py": "28ff1f7833a555efa7456f8b97e87cda6fdacd2831ae061815b8ff38eb582a83",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_eralpha_template.py": "a71d50a5c16e6c9f983a27f49bd0d3cdafab13dca91adab15dfe8309705e8e55",
+    "devtools/validate_eralpha_hydrogens.py": "872f0eb7b41df74154ac023883cd2d404df090e78b4a439da0fcf8fd61567cec",
+    "docs/content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc"
+  },
+  "test_overlay": "diff --git a/tests/test_eralpha_hydrogens.py b/tests/test_eralpha_hydrogens.py\nindex 32c08ff..c1ffdba 100644\n--- a/tests/test_eralpha_hydrogens.py\n+++ b/tests/test_eralpha_hydrogens.py\n@@ -108,41 +108,53 @@ def test_five_essential_sites_direction_negatives_and_persistence(prepared, tmp_\n     assert donors[\"reversed_donor_direction\"][\"fit_value\"] == pytest.approx(0.8)\n \n \n-def test_second_hydrogen_addition_is_an_unchanged_independent_copy(prepared):\n-    source = prepared[\"molecular_system\"]\n-    original_payload = state_payload(source)\n-    before_history = portable(source.chemical_states.get_preparation_history())\n-    repeated = msm.build.add_missing_hydrogens(\n-        source, mode=\"fixed_chemical_state\", pH=None, engine=\"RDKit\", return_report=True\n-    )\n-    assert repeated[\"molecular_system\"] is not source\n-    assert repeated[\"report\"][\"status\"] == \"unchanged\"\n-    assert repeated[\"report\"][\"n_added_hydrogens\"] == 0\n-    assert repeated[\"report\"][\"parent_hydrogen_pairs\"].shape == (0, 2)\n-    actual, expected = (\n-        state_payload(repeated[\"molecular_system\"]),\n-        state_payload(source),\n-    )\n-    for state in actual[\"states\"] + expected[\"states\"]:\n-        state.pop(\"preparation_history\", None)\n-    assert actual == expected\n-    assert state_payload(source) == original_payload\n-    after_history = repeated[\n-        \"molecular_system\"\n-    ].chemical_states.get_preparation_history()\n-    assert portable(after_history[: len(before_history)]) == portable(before_history)\n-    appended = after_history[len(before_history) :]\n-    assert [record[\"report\"][\"schema\"] for record in appended] == [\n-        \"molsysmt.terminal_attachment@1\",\n-        \"molsysmt.hydrogen_addition@1\",\n-    ]\n-    assert all(record[\"report\"][\"status\"] == \"unchanged\" for record in appended)\n-    np.testing.assert_array_equal(\n-        puw.get_value(msm.get(source, coordinates=True), to_unit=\"nm\"),\n-        puw.get_value(\n-            msm.get(repeated[\"molecular_system\"], coordinates=True), to_unit=\"nm\"\n-        ),\n-    )\n+@pytest.mark.parametrize(\"standard_units\", [(\"nm\", \"ps\"), (\"pm\", \"fs\")])\n+def test_second_hydrogen_addition_is_an_unchanged_independent_copy(\n+    prepared, standard_units\n+):\n+    with puw.context(standard_units=list(standard_units)):\n+        source = prepared[\"molecular_system\"]\n+        original_payload = state_payload(source)\n+        before_history = portable(source.chemical_states.get_preparation_history())\n+        before_coordinates = puw.get_value(\n+            msm.get(source, coordinates=True), to_unit=\"nm\"\n+        ).copy()\n+        repeated = msm.build.add_missing_hydrogens(\n+            source,\n+            mode=\"fixed_chemical_state\",\n+            pH=None,\n+            engine=\"RDKit\",\n+            return_report=True,\n+        )\n+        output = repeated[\"molecular_system\"]\n+        assert output is not source\n+        assert repeated[\"report\"][\"status\"] == \"unchanged\"\n+        assert repeated[\"report\"][\"n_added_hydrogens\"] == 0\n+        assert repeated[\"report\"][\"parent_hydrogen_pairs\"].shape == (0, 2)\n+        assert state_payload(source) == original_payload\n+        assert (\n+            portable(source.chemical_states.get_preparation_history()) == before_history\n+        )\n+        actual, expected = state_payload(output), state_payload(source)\n+        for state in actual[\"states\"] + expected[\"states\"]:\n+            state.pop(\"preparation_history\", None)\n+        assert actual == expected\n+        after_history = output.chemical_states.get_preparation_history()\n+        assert portable(after_history[: len(before_history)]) == before_history\n+        appended = after_history[len(before_history) :]\n+        assert [record[\"report\"][\"schema\"] for record in appended] == [\n+            \"molsysmt.terminal_attachment@1\",\n+            \"molsysmt.hydrogen_addition@1\",\n+        ]\n+        assert all(record[\"report\"][\"status\"] == \"unchanged\" for record in appended)\n+        np.testing.assert_array_equal(\n+            puw.get_value(msm.get(source, coordinates=True), to_unit=\"nm\"),\n+            before_coordinates,\n+        )\n+        np.testing.assert_array_equal(\n+            puw.get_value(msm.get(output, coordinates=True), to_unit=\"nm\"),\n+            before_coordinates,\n+        )\n \n \n def test_strict_annotation_policy_rejects_without_changing_heavy_source(prepared):\n",
+  "guard": "tests/test_eralpha_hydrogens.py::test_second_hydrogen_addition_is_an_unchanged_independent_copy",
+  "original_report_body_preserved": true,
+  "original_gzip_sha256": {
+    "devguide/evidence/aromatic_interactions_py314.json.gz": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "devguide/evidence/ccd_interactions_py314.json.gz": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def",
+    "devguide/evidence/curation_py314_cookbook_audit.json.gz": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "devguide/evidence/eralpha_exclusions_py314.json.gz": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "devguide/evidence/eralpha_hydrogens_py314.json.gz": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "devguide/evidence/eralpha_interface_py314.json.gz": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "devguide/evidence/eralpha_receptor_py314.json.gz": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce",
+    "devguide/evidence/eralpha_template_py314.json.gz": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "devguide/evidence/interaction_composition_py314.json.gz": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "devguide/evidence/ionic_interactions_py314.json.gz": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "devguide/evidence/nonfinite_provenance_review_py314.json.gz": "18aa0032790013b62e098e4dcedd08833181a538a80cc1d53c9a9d70a005267e",
+    "devguide/evidence/prepared_ccd_py314.json.gz": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+    "devguide/evidence/ranked_seeds_py314.json.gz": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "devguide/evidence/rigid_consensus_py314.json.gz": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "devguide/evidence/rigid_refinement_benchmark_py314.json.gz": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1",
+    "devguide/evidence/rigid_refinement_py314.json.gz": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c"
+  },
+  "full_evidence": {
+    "path": "repeat_hydrogen_review_py314.json.gz",
+    "compressed_sha256": "9b28c8b8e82ed74c1f80e52c12da172df4208ee4cafdd09408411821c30618c7",
+    "uncompressed_sha256": "dbb7e149b85a2cb3801680260a342369af8ed03487b2d392bde15cbef76957f1",
+    "compressed_bytes": 153368,
+    "uncompressed_bytes": 6640278
+  },
+  "review_execution_sha256": "f6fa098e858d8fb88d3197edd475a8e8d87cc01bf978e5bf09d33310ad06871e",
+  "execution_source_location": "Full archive review_execution_source; one-off consumer evidence collection using existing public providers and fixture tools.",
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+    }
+  ],
+  "runs": [
+    {
+      "standard_units": [
+        "nm",
+        "ps"
+      ],
+      "checks": {
+        "independent_object": true,
+        "original_full_payload_unchanged": true,
+        "original_history_unchanged": true,
+        "original_coordinates_unchanged": true,
+        "output_coordinates_equal_snapshot": true,
+        "assignments_equal": true,
+        "history_prefix_preserved": true,
+        "exactly_two_expected_operations": true,
+        "appended_operations_unchanged": true,
+        "zero_added_hydrogens": true,
+        "empty_parent_map": true,
+        "unchanged_report": true
+      },
+      "prepared_atoms": 44,
+      "added_hydrogens": 0,
+      "parent_map": [],
+      "parent_map_shape": [
+        0,
+        2
+      ],
+      "history_before": 3,
+      "history_after": 5,
+      "appended_operations": [
+        {
+          "schema": "molsysmt.terminal_attachment@1",
+          "status": "unchanged"
+        },
+        {
+          "schema": "molsysmt.hydrogen_addition@1",
+          "status": "unchanged"
+        }
+      ],
+      "capture_items": 3,
+      "capture_uses": 3
+    },
+    {
+      "standard_units": [
+        "pm",
+        "fs"
+      ],
+      "checks": {
+        "independent_object": true,
+        "original_full_payload_unchanged": true,
+        "original_history_unchanged": true,
+        "original_coordinates_unchanged": true,
+        "output_coordinates_equal_snapshot": true,
+        "assignments_equal": true,
+        "history_prefix_preserved": true,
+        "exactly_two_expected_operations": true,
+        "appended_operations_unchanged": true,
+        "zero_added_hydrogens": true,
+        "empty_parent_map": true,
+        "unchanged_report": true
+      },
+      "prepared_atoms": 44,
+      "added_hydrogens": 0,
+      "parent_map": [],
+      "parent_map_shape": [
+        0,
+        2
+      ],
+      "history_before": 3,
+      "history_after": 5,
+      "appended_operations": [
+        {
+          "schema": "molsysmt.terminal_attachment@1",
+          "status": "unchanged"
+        },
+        {
+          "schema": "molsysmt.hydrogen_addition@1",
+          "status": "unchanged"
+        }
+      ],
+      "capture_items": 3,
+      "capture_uses": 3
+    }
+  ],
+  "cookbook": {
+    "recipe": "docs/content/cookbook/observed_est_hydrogens.md",
+    "executed_blocks": 5,
+    "prepared_atoms": 44,
+    "added_hydrogens": 24,
+    "query_sites": 5,
+    "positive_fit": 1.0,
+    "heavy_only_fit": 0.6,
+    "wrong_direction_fit": 0.8,
+    "wrong_position_fit": 0.0
+  },
+  "verification": [
+    {
+      "command": "python -m pytest --receptor=llm tests/test_eralpha_hydrogens.py tests/test_eralpha_template.py tests/test_validation_eralpha.py",
+      "passed": 23,
+      "seconds": 151.89,
+      "warnings": 4
+    },
+    {
+      "command": "python -m pytest --receptor=llm tests/test_eralpha_exclusions.py",
+      "passed": 4,
+      "seconds": 50.91,
+      "warnings": 2
+    },
+    {
+      "command": "python -m sphinx -W --keep-going -b html ISOLATED_SOURCE HTML",
+      "result": "passed",
+      "python": "3.13",
+      "scope": "Original observed EST hydrogen recipe with linked-page placeholders; no warning suppression or full-site claim"
+    },
+    {
+      "command": "python devtools/devguide_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_reporting_protocol.py",
+      "passed": 3,
+      "seconds": 0.514
+    },
+    {
+      "command": "python -m devtools.evidence_archive devguide/evidence/repeat_hydrogen_review_py314_summary.json",
+      "result": "passed",
+      "scope": "Compressed/uncompressed byte identity; scientific acceptance remains producer-owned"
+    },
+    {
+      "command": "ruff check .",
+      "result": "passed"
+    },
+    {
+      "command": "ruff format --check .",
+      "result": "passed",
+      "files": 238
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "previous_commit_ci": {
+    "head_sha": "2132fa0ba6013b9adaf4615e1d055a1899f86cd6",
+    "run_id": 37925604851,
+    "status": "completed",
+    "conclusion": "success",
+    "required_matrix_cells": 8,
+    "scope": "Previous published #35 commit only; this new test overlay was not included."
+  },
+  "limits": [
+    "Fixed reference EST fixture repeat-H chemistry/history controls on normal-editable Linux/Python 3.14.7, not a multi-state or environmental refinement qualification.",
+    "The existing consumer guard is accepted and strengthened; runtime/provider implementations remain unchanged.",
+    "Before/output/original-after payloads, explicit coordinate snapshots, histories, native reports and actual captures are retained in the full archive.",
+    "Execution source is retained as inert text for inspection/reconstruction; archive reading executes no stored source or commands.",
+    "Producer heads alone do not reconstruct overlays; exact Python content hashes, loaded molecular extension identity and the consumer test diff are recorded.",
+    "The broader historical workflow driver was not rerun; this fresh audit targets repeat-H behavior and executes the original five cookbook blocks.",
+    "Previous CI success is restricted to its exact commit; new-head hosted and public artifact qualification remain separate.",
+    "All eighteen earlier gzip archives and the original #39 report body preserve their historical identities.",
+    "No energy, biological, performance or environmental hydrogen orientation claim; MolSysMT #323 and local #22 remain separate."
+  ]
+}
