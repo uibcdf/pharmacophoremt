@@ -1,9 +1,9 @@
 ---
 summary: Undefined aromatic measurements fail consumer quantity provenance serialization.
 issue: uibcdf/pharmacophoremt#35
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-10-09
 severity: medium
 verification: measured
 area: [provenance, quantities]
@@ -64,3 +64,42 @@ this fix; detached native driver measurements have explicit quantity-column unit
 Actual native observations construct/persist, sealed readback preserves values
 and units, finite metadata retains its prior representation, and scientific
 geometry still rejects nonfinite inputs. Keep active pending review.
+
+
+## Resolution — 2026-10-09
+
+The existing consumer correction is reviewed and accepted. It was already
+published in `fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f`; this closure changes
+regression guards, maintained guidance and evidence, with no runtime or provider
+code change. The original report above retains its historical measurements.
+
+The fresh selected integration run passes **73 tests in 35.25 s** on normal
+editable Python 3.14.7, based on `cdf79fdd725d2ec383103e4940073abface26e4b` plus
+the recorded test overlay. Four real parallel native profiles now persist through
+both JSON and YAML with pm/fs/degrees writing and angstrom/ps/radians reading.
+The assertions inspect the saved model's actual measurement, independently
+confirm its 0.02 nm radius, preserve original atom/frame maps and compare source
+immutability through the same unit conversion. Sealed readback additionally
+preserves NaN, positive/negative infinity, negative zero and original units;
+finite 1/2 angstrom values independently decode as 0.1/0.2 nm with unchanged
+JSON representation. Nonfinite molecular coordinates still raise.
+
+The existing aromatic driver passes tracking off/on, 14 case/profile combinations
+and both ligand roles per setting. Positive and saved-model fits remain one;
+displaced negatives remain zero and the expected strict compound-cation mapping
+failure remains distinct. All three cookbook blocks execute and strict isolated
+rendering passes. Seven producer Python source snapshots remain unchanged during
+execution; the loaded molecular extension identity is retained. All seventeen
+earlier compressed archives preserve their exact Git bytes.
+
+The distinct full output is
+`devguide/evidence/nonfinite_provenance_review_py314.json.gz`; its checksums,
+producer identities, focused command, cookbook observations and limits are in
+`devguide/evidence/nonfinite_provenance_review_py314_summary.json`. The maintained
+contract is `devguide/aromatic_interaction_workflow.md`. Reporting/index guards,
+Ruff and whitespace checks pass before publication.
+
+This resolves consumer quantity provenance only. #34's broader workflow review,
+MolSysMT #323 environmental hydrogen refinement, hosted matrix and public artifact
+qualification remain separate. No new codec, changed detection threshold,
+nonfinite site geometry or biological/performance acceptance is introduced.

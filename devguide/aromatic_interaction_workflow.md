@@ -79,6 +79,36 @@ radii and normals must still be finite. The driver labels its detached native
 quantity-column evidence explicitly; it is not an `Interactions.from_dict()`
 input dictionary.
 
+### Persistence review — 2026-10-09
+
+The bounded consumer correction in #35 is reviewed and accepted. The existing
+runtime implementation was published in `fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f`;
+this review strengthens persistence guards without changing detection or provider
+code. Four real parallel native profiles now exercise both public JSON and YAML
+writers under pm/fs/degrees and readers under angstrom/ps/radians. They decode
+the measurement from the saved model, preserve the undefined distance where
+present, independently check the 0.02 nm radius and retain original source maps.
+Source immutability is compared under the same conversion context, so ordinary
+unit-conversion rounding cannot masquerade as molecular mutation.
+
+The sealed-record guard preserves NaN, both infinity signs and negative zero,
+retains the finite JSON representation and independently checks 1/2 angstrom as
+0.1/0.2 nm. Nonfinite source coordinates still raise. The selected aromatic,
+contract and pose-evaluation tests pass **73 tests in 35.25 s** on editable
+Python 3.14.7. The existing driver passes both tracking settings with 14
+case/profile combinations and both ligand roles per setting; its original full
+output is retained as a distinct dated archive. All three cookbook blocks and
+strict isolated rendering pass. Seven Python producer source snapshots remain
+unchanged during execution, and all seventeen earlier gzip archives keep their
+original bytes.
+
+The [review receipt](evidence/nonfinite_provenance_review_py314_summary.json)
+records source identities, loaded molecular extension hashes, archive checksums
+and scope. The [resolved report](archive/nonfinite_observation_provenance.md)
+preserves the earlier execution claims. This accepts the quantity-persistence
+correction only; #34 workflow review and hosted/public-package qualification
+remain separate.
+
 ## Scientific attribution
 
 Detect inside an application-owned Ackredit session/capture to retain actual

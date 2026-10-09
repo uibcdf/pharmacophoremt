@@ -915,3 +915,37 @@ This is bounded source review, not a complete hosted matrix, clean public
 installation or biological enrichment result. No molecular provider code is
 changed; ERα environmental H refinement remains MolSysMT #323. Previously
 retained evidence is preserved.
+
+
+## Undefined observation quantity review — 2026-10-09
+
+The bounded persistence correction in
+[PharmacophoreMT #35](https://github.com/uibcdf/pharmacophoremt/issues/35) is
+reviewed and resolved. The implementation was already published; this closure
+strengthens actual saved-model guards and changes no runtime or provider code.
+Four parallel native profiles persist through JSON and YAML under changed units;
+sealed measures retain NaN, signed infinity and negative zero while finite
+metadata retains its existing JSON representation. Molecular geometry remains
+finite. The [maintained contract](../aromatic_interaction_workflow.md) and
+[resolved report](../archive/nonfinite_observation_provenance.md) own these claims.
+
+`nonfinite_provenance_review_py314_summary.json` links the original full driver
+output `nonfinite_provenance_review_py314.json.gz`: 808,040 compressed bytes,
+12,179,408 uncompressed bytes, fixed zero gzip timestamp. Compressed SHA-256 is
+`18aa0032790013b62e098e4dcedd08833181a538a80cc1d53c9a9d70a005267e`;
+uncompressed SHA-256 is
+`c814413a2d9be90d7acf56773b3d0daafcae4ee29ab935129fe0263151fbda3c`.
+The receipt records producer source hashes, Git heads, loaded molecular extension
+identity, focused-test overlay and seven unchanged Python-source snapshots.
+All seventeen earlier gzip archives retain their exact original bytes.
+
+The fresh focused run passes 73 tests in 35.25 s on editable Python 3.14.7.
+The existing driver passes both tracking settings, fourteen combinations and
+both ligand roles per setting with unchanged scientific results; all three
+cookbook blocks execute and strict isolated rendering passes. Full workflow
+review, hosted/public installation, environmental H refinement, biological
+validation and performance remain separate. Read the original bytes with:
+
+```bash
+python -m devtools.evidence_archive devguide/evidence/nonfinite_provenance_review_py314_summary.json
+```

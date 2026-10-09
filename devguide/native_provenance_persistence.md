@@ -77,3 +77,13 @@ archives retain their producer identities and historical results. This review
 qualifies the declared source persistence controls, not activity/biological
 performance, a public release, a general arbitrary-object codec or historical
 record recovery. No MolSysMT or PyUnitWizard implementation is modified.
+
+### Undefined-quantity review — 2026-10-09
+
+The separate correction in #35 is now reviewed and resolved. Actual saved native
+aromatic JSON/YAML measurements preserve undefined quantities under changed
+application units; finite metadata keeps its existing record representation.
+The [aromatic persistence contract](aromatic_interaction_workflow.md#persistence-review--2026-10-09)
+and [dated receipt](evidence/nonfinite_provenance_review_py314_summary.json)
+record this additional evidence. Molecular and site geometry still require
+finite values. The original #25 review and its evidence remain unchanged.

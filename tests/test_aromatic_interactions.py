@@ -23,7 +23,7 @@ from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt._private.smonitor.warnings import AckreditTrackingWarning
-from pharmacophoremt.io import load_json, to_json
+from pharmacophoremt.io import load_json, load_yaml, to_json, to_yaml
 from pharmacophoremt.modeler import from_interactions
 from pharmacophoremt.screening import PoseEvaluator
 from tests.test_attribution import run_reader
@@ -274,8 +274,11 @@ def test_stale_cation_reference_charge_is_rejected():
 
 
 @pytest.mark.parametrize("method,profile", PI_PROFILES)
+@pytest.mark.parametrize(
+    "format,writer,reader", [("json", to_json, load_json), ("yaml", to_yaml, load_yaml)]
+)
 def test_units_persistence_source_maps_and_undefined_measurements(
-    method, profile, tmp_path
+    method, profile, tmp_path, format, writer, reader
 ):
     with puw.context(standard_units=["pm", "fs", "degrees"]):
         source, ligand, partner = build_case(unit="angstrom", transform=True)
@@ -290,23 +293,33 @@ def test_units_persistence_source_maps_and_undefined_measurements(
         site = query.interaction_sites[0]
         assert site.metadata["source_atom_indices"] == list(range(40, 46))
         assert query.metadata["source_structure_indices"] == [7]
-        path = tmp_path / "aromatic.json"
-        to_json(query, path)
-        restored = load_json(path)
+        path = tmp_path / ("aromatic." + format)
+        writer(query, path)
+    with puw.context(standard_units=["angstrom", "ps", "radians"]):
+        restored = reader(path)
         assert restored.metadata == query.metadata
         assert restored.interaction_sites[0].metadata == site.metadata
         assert (
             PoseEvaluator(restored).evaluate(source, selection=ligand)["status"]
             == "matched"
         )
-        np.testing.assert_array_equal(
-            puw.get_value(msm.get(source, coordinates=True), to_unit="nm"), before
-        )
-        measures = site.metadata["observations"][0]["measurements"]
+        measures = restored.interaction_sites[0].metadata["observations"][0][
+            "measurements"
+        ]
         if "intersection_distance" in measures:
             record = puw.QuantityRecord.from_dict(measures["intersection_distance"])
             assert np.isnan(puw.get_value(record.to_quantity(unit="nm"), to_unit="nm"))
-        json.loads(path.read_text())
+        # Both formats must carry standard finite JSON-compatible sealed records.
+        json.dumps(measures, allow_nan=False)
+        assert "!!python" not in path.read_text()
+        assert float(
+            puw.get_value(restored.interaction_sites[0].radius, to_unit="nm")
+        ) == pytest.approx(0.02)
+    # Compare source coordinates through the same unit conversion as the snapshot.
+    with puw.context(standard_units=["pm", "fs", "degrees"]):
+        np.testing.assert_array_equal(
+            puw.get_value(msm.get(source, coordinates=True), to_unit="nm"), before
+        )
 
 
 def test_sealed_nonfinite_provenance_preserves_values_and_finite_compatibility():
@@ -319,7 +332,12 @@ def test_sealed_nonfinite_provenance_preserves_values_and_finite_compatibility()
         np.testing.assert_array_equal(result, [np.nan, np.inf, -np.inf, -0.0])
         assert np.signbit(result[-1])
         finite = puw.quantity([1.0, 2.0], "angstrom")
-        assert detached(finite) == puw.QuantityRecord.from_quantity(finite).to_dict()
+        finite_payload = detached(finite)
+        assert finite_payload == puw.QuantityRecord.from_quantity(finite).to_dict()
+        finite_restored = puw.QuantityRecord.from_dict(finite_payload).to_quantity()
+        np.testing.assert_allclose(
+            puw.get_value(finite_restored, to_unit="nm"), [0.1, 0.2]
+        )
     with pytest.raises(ArgumentError, match="finite coordinate"):
         source = system("c1ccccc1", np.full((6, 3), np.nan))
         phmt.modeler.get_features(source, features=["aromatic ring"])

@@ -1,0 +1,668 @@
+{
+  "schema": "pharmacophoremt.nonfinite_provenance_review@1",
+  "issue": "uibcdf/pharmacophoremt#35",
+  "recorded_utc": "2026-10-09T11:40:27.892922+00:00",
+  "source_base": "cdf79fdd725d2ec383103e4940073abface26e4b",
+  "implementation_commit": "fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f",
+  "runtime_code_changed": false,
+  "environment": {
+    "python": "3.14.7",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-34-generic-x86_64-with-glibc2.39",
+    "source_heads": {
+      "pharmacophoremt": "cdf79fdd725d2ec383103e4940073abface26e4b",
+      "molsysmt": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+      "pyunitwizard": "2ab37a525ce99728ad8aee846b4a4f7acc4f1b65",
+      "ackredit": "1342f0f2a659f3a7157bd65bfa5719a9604e973f",
+      "argdigest": "5c6711ebfe23b9516ef0e8f830abee70589ec406",
+      "smonitor": "f604b940ab281df4554869fdd24f796ea6d42c27",
+      "depdigest": "0568f9aba397ed5495adb350ba0f90899d6bdb8b"
+    },
+    "producers_before": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "00d954d9300ac38836577d82f5b80ac71b56b41b825ee4dac9a1005711df5f9c",
+        "python_file_count": 136
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.12.0+1.g887b81c.dirty",
+        "python_source_sha256": "71bd0e49f069ff34c419c1fb0f7ef386aba48829ae74af967d479435df6c363d",
+        "python_file_count": 69
+      },
+      "argdigest": {
+        "path": "/home/liliana/repos@uibcdf/argdigest/argdigest",
+        "version": "0.15.0+1.g5c6711e",
+        "python_source_sha256": "8449462b963157af5c3b1a2fb2e6813a31dab55bfa57551078cc919e020b182f",
+        "python_file_count": 38
+      },
+      "smonitor": {
+        "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+        "version": "0.19.0",
+        "python_source_sha256": "09bc616bf7266fbfeddc23e2b7973938da66b55bc05f9532d1d11cad4e63a58e",
+        "python_file_count": 40
+      },
+      "depdigest": {
+        "path": "/home/liliana/repos@uibcdf/depdigest/depdigest",
+        "version": "0.13.0+3.g0568f9a",
+        "python_source_sha256": "de7d35f468b3173af209c8ab0f6a8cd5b6b6d97dd6d7bb00b1bd983fa522e7d9",
+        "python_file_count": 16
+      }
+    }
+  },
+  "producer_sources_after": {
+    "pharmacophoremt": {
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.3.0+108.g864dcf5",
+      "python_source_sha256": "00d954d9300ac38836577d82f5b80ac71b56b41b825ee4dac9a1005711df5f9c",
+      "python_file_count": 136
+    },
+    "molsysmt": {
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.22.4+215.g5bd893c85",
+      "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+      "python_file_count": 2851
+    },
+    "pyunitwizard": {
+      "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "version": "0.28.1+3.g2ab37a5",
+      "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+      "python_file_count": 84
+    },
+    "ackredit": {
+      "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+      "version": "0.12.0+1.g887b81c.dirty",
+      "python_source_sha256": "71bd0e49f069ff34c419c1fb0f7ef386aba48829ae74af967d479435df6c363d",
+      "python_file_count": 69
+    },
+    "argdigest": {
+      "path": "/home/liliana/repos@uibcdf/argdigest/argdigest",
+      "version": "0.15.0+1.g5c6711e",
+      "python_source_sha256": "8449462b963157af5c3b1a2fb2e6813a31dab55bfa57551078cc919e020b182f",
+      "python_file_count": 38
+    },
+    "smonitor": {
+      "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+      "version": "0.19.0",
+      "python_source_sha256": "09bc616bf7266fbfeddc23e2b7973938da66b55bc05f9532d1d11cad4e63a58e",
+      "python_file_count": 40
+    },
+    "depdigest": {
+      "path": "/home/liliana/repos@uibcdf/depdigest/depdigest",
+      "version": "0.13.0+3.g0568f9a",
+      "python_source_sha256": "de7d35f468b3173af209c8ab0f6a8cd5b6b6d97dd6d7bb00b1bd983fa522e7d9",
+      "python_file_count": 16
+    }
+  },
+  "python_producer_sources_unchanged": true,
+  "producer_git_worktree_at_receipt": {
+    "pharmacophoremt": {
+      "tracked_changes": true
+    },
+    "molsysmt": {
+      "tracked_changes": false
+    },
+    "pyunitwizard": {
+      "tracked_changes": false
+    },
+    "ackredit": {
+      "tracked_changes": false
+    },
+    "argdigest": {
+      "tracked_changes": false
+    },
+    "smonitor": {
+      "tracked_changes": false
+    },
+    "depdigest": {
+      "tracked_changes": false
+    }
+  },
+  "reviewed_source_sha256": {
+    "tests/test_aromatic_interactions.py": "796365cb1f5c1f21794e4bcd4060d4a17fa4bc5422e86575f891e3a04e11523f",
+    "tests/test_contracts.py": "2bdfb0ee0bc8c525ecd3469fbc3c2fd3c43b8d8391228c60a90197d241223fd4",
+    "tests/test_pose_evaluation.py": "dc175b32f6dbbdda8564af7b471454d51400d79c823679846c15bbba093e9907",
+    "pharmacophoremt/_private/molsysmt.py": "ec578fe50ab54d3fdb7bbae8c04eb2fa607a9e19d06e15eea9e8eb1e38e85654",
+    "pharmacophoremt/io/phmt/__init__.py": "3843a3268918657f666ba8373d12cc1fa204b5b9549d5dde0ed960cc1c678b55",
+    "docs/content/cookbook/aromatic_interactions.md": "997782885e6ec43488240f62759af0455254bf8420a2373c997b0afd4dd20caf",
+    "devguide/aromatic_interaction_workflow.md": "eec1b0ed7e17ee8b3c3107c6079617eedf90a64a44476222f3744d5ec4e39efc",
+    "devguide/native_provenance_persistence.md": "90a9388767bd1b9570ce8331021c4315c324d9bd42ea2a6101f557418b6d08b6",
+    "devguide/archive/nonfinite_observation_provenance.md": "cad92b41fdf50cad273fc52801fd555397ab88fd6da44895fe0a802e32a5b0ae",
+    "devtools/validate_aromatic_interactions.py": "bc9b9d968c0f85f0ffcd727f00dc9d064c2d7086958e6db0311fccaea906692d",
+    "devtools/aromatic_interaction_cases.py": "2d1f6301b89abd123777e514fd9eb1928676dbb19143711737e830ab1eb3c705",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "devtools/validate_prepared_ccd_ligands.py": "f5e182964f9f428ad6cc14260b24e6b39d1affe12a1c7ddca9d80b00a8156038"
+  },
+  "original_report_body_preserved": true,
+  "original_gzip_sha256": {
+    "devguide/evidence/aromatic_interactions_py314.json.gz": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "devguide/evidence/ccd_interactions_py314.json.gz": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def",
+    "devguide/evidence/curation_py314_cookbook_audit.json.gz": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "devguide/evidence/eralpha_exclusions_py314.json.gz": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "devguide/evidence/eralpha_hydrogens_py314.json.gz": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "devguide/evidence/eralpha_interface_py314.json.gz": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "devguide/evidence/eralpha_receptor_py314.json.gz": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce",
+    "devguide/evidence/eralpha_template_py314.json.gz": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "devguide/evidence/interaction_composition_py314.json.gz": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "devguide/evidence/ionic_interactions_py314.json.gz": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "devguide/evidence/prepared_ccd_py314.json.gz": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+    "devguide/evidence/ranked_seeds_py314.json.gz": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "devguide/evidence/rigid_consensus_py314.json.gz": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "devguide/evidence/rigid_refinement_benchmark_py314.json.gz": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1",
+    "devguide/evidence/rigid_refinement_py314.json.gz": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c"
+  },
+  "full_evidence": {
+    "path": "nonfinite_provenance_review_py314.json.gz",
+    "compressed_sha256": "18aa0032790013b62e098e4dcedd08833181a538a80cc1d53c9a9d70a005267e",
+    "uncompressed_sha256": "c814413a2d9be90d7acf56773b3d0daafcae4ee29ab935129fe0263151fbda3c",
+    "compressed_bytes": 808040,
+    "uncompressed_bytes": 12179408
+  },
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+    }
+  ],
+  "driver": {
+    "command": "python -m devtools.validate_aromatic_interactions --output aromatic.json",
+    "runs": 2,
+    "profiles_per_run": 14,
+    "roles_per_profile": 2,
+    "tracking_independent_science": true,
+    "producer_sources_unchanged": true,
+    "performance_measured": false,
+    "runs_projection": [
+      {
+        "host_tracking": false,
+        "valid": true,
+        "queries": 28,
+        "evaluations": 84,
+        "expected_strict_mapping_failures": 1,
+        "capture_items": 6,
+        "capture_uses": 11,
+        "undefined_parallel_controls": [
+          {
+            "method": "centroid_angle_offset",
+            "profile": "three_atom_plane",
+            "role": "first",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "centroid_angle_offset",
+            "profile": "three_atom_plane",
+            "role": "second",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "aromatic_cycles",
+            "role": "first",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "aromatic_cycles",
+            "role": "second",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "smarts_5_6",
+            "role": "first",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "smarts_5_6",
+            "role": "second",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          }
+        ]
+      },
+      {
+        "host_tracking": true,
+        "valid": true,
+        "queries": 28,
+        "evaluations": 84,
+        "expected_strict_mapping_failures": 1,
+        "capture_items": 14,
+        "capture_uses": 30,
+        "undefined_parallel_controls": [
+          {
+            "method": "centroid_angle_offset",
+            "profile": "three_atom_plane",
+            "role": "first",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "centroid_angle_offset",
+            "profile": "three_atom_plane",
+            "role": "second",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "aromatic_cycles",
+            "role": "first",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "aromatic_cycles",
+            "role": "second",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "smarts_5_6",
+            "role": "first",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          },
+          {
+            "method": "plane_angle_intersection",
+            "profile": "smarts_5_6",
+            "role": "second",
+            "decoded_unit": "nm",
+            "undefined_distance_preserved": true,
+            "sealed_record": {
+              "manifest": {
+                "format": "qrec/0.3",
+                "field": null,
+                "unit": "nanometer",
+                "si": {
+                  "factor": 1e-09,
+                  "offset": 0.0,
+                  "exponents": {
+                    "m": 1
+                  }
+                },
+                "dtype": "float64",
+                "shape": [],
+                "blocks": [
+                  1
+                ]
+              },
+              "values": {
+                "base64": "AAAAAAAA+H8="
+              },
+              "block_digests": [
+                "blake2b-128:46f6c1c56e82434ddedd3a0639dc5068"
+              ],
+              "digest": "blake2b-128:5c2e067ac8727db4d9c665fdc36c078c"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "cookbook": {
+    "recipe": "docs/content/cookbook/aromatic_interactions.md",
+    "executed_blocks": 3,
+    "original_sites": 1,
+    "undefined_saved_intersection_distance": true,
+    "stored_attribution_preserved": true
+  },
+  "verification": [
+    {
+      "command": "python -m pytest --receptor=llm tests/test_aromatic_interactions.py tests/test_contracts.py tests/test_pose_evaluation.py",
+      "passed": 73,
+      "seconds": 35.25
+    },
+    {
+      "command": "python -m sphinx -W --keep-going -b html ISOLATED_SOURCE HTML",
+      "result": "passed",
+      "python": "3.13",
+      "scope": "Original aromatic recipe with linked-page placeholders; no warning suppression or full-site claim"
+    },
+    {
+      "command": "python devtools/devguide_index.py --check",
+      "result": "passed"
+    },
+    {
+      "command": "python -m unittest discover -s tests -p test_reporting_protocol.py",
+      "passed": 3,
+      "seconds": 0.434
+    },
+    {
+      "command": "python -m devtools.evidence_archive devguide/evidence/nonfinite_provenance_review_py314_summary.json",
+      "result": "passed",
+      "scope": "Original compressed/uncompressed byte identities; scientific interpretation remains producer-owned"
+    },
+    {
+      "command": "ruff check .",
+      "result": "passed"
+    },
+    {
+      "command": "ruff format --check .",
+      "result": "passed",
+      "files": 238
+    },
+    {
+      "command": "git diff --check",
+      "result": "passed"
+    }
+  ],
+  "limits": [
+    "Focused normal-editable Linux/Python 3.14 consumer-persistence review, not public artifact or complete hosted-matrix qualification.",
+    "No runtime or provider code changes; source heads alone do not reconstruct producer overlays. Full Python content hashes and loaded molecular extension identity are retained.",
+    "Driver original JSON uses host quantity-column observation evidence, not an Interactions.from_dict input dictionary.",
+    "Saved JSON/YAML guards decode original measurements and physical units; the recipe and archived driver additionally retain actual JSON workflow observations.",
+    "Prepared analytical controls, not biological, activity, energy or performance validation.",
+    "All seventeen historical gzip archives retain their exact original bytes and claims.",
+    "Broader aromatic workflow review remains #34; environmental H refinement remains provider MolSysMT #323 / local #22."
+  ]
+}
