@@ -8,7 +8,7 @@ verification: measured
 area: [governance, distribution, compatibility]
 guard: devtools/tests/test_distribution_contract.py
 normative: MOLSYSSUITE_GUIDE.md
-blocked_by: [uibcdf/molsyssuite#108]
+blocked_by: []
 supersedes: []
 ---
 
@@ -178,3 +178,40 @@ This fulfils the local helper source-adoption need in uibcdf/molsyssuite#108; it
 does not execute a real environment manager or clear source-free/public-installed
 evidence, scientific CI debt or the real candidate/release prerequisites in #10.
 The overall adoption remains partial.
+
+## Source execution and dependency checkpoint — 2026-10-09
+
+Shared environment capability `uibcdf/molsyssuite#108` is already delivered and
+adopted above. Remove it from the active `blocked_by` field; retain its dated
+provenance. It is not a remaining provider limitation.
+
+Current source `95487103a4ad5e97971c93ae97bc85484872705c` now has a completed
+source matrix: [CI 37977232408](https://github.com/uibcdf/pharmacophoremt/actions/runs/37977232408)
+independently verifies Reporting governance and all eight Linux/macOS arm64
+Python 3.11–3.14 cells, including actual installed Git-context/dependency
+preflight, installation, import, architecture assertion and full source tests.
+The Linux/macOS 3.14 representatives each report 626 passed. The daily/probe-only
+detector is inapplicable/skipped on this normal push and is not counted as an
+executed gate. Exact-source
+[policy 37977233095](https://github.com/uibcdf/pharmacophoremt/actions/runs/37977233095)
+and [Conda controls 37977233061](https://github.com/uibcdf/pharmacophoremt/actions/runs/37977233061)
+also independently verify their required executed steps. All eleven required
+source/administrative jobs have evidence for this source.
+
+Since helper adoption `448e47e`, the full workflow changes only by adding the
+independent evidence-archive reporting tests; its registered hash is reviewed
+and updated accordingly. The seventeen routes, fourteen fixed source records,
+seven contexts, publication pins, recipe, resource descriptor, example plan
+and distribution negative guards retain their contracts. Intervening scientific
+implementation/test changes belong to the component team and are qualified only
+by their original executed source runs, without a new scientific dispatch here.
+
+The review remains **partial** with unknown publication access. CI-context
+success is not actual source-free production/development/docs qualification or
+an installed/public package. Those environment checks, a developer-selected real
+plan/candidate, exact original staged archive/eight installed cells, same-byte
+public promotion/clean receiving and Python admission remain in #10/#23.
+The example 0.0.0 is not a release decision. No package operation, SDK migration,
+support badge, scientific implementation or workflow change is made in this
+record-only review. Central receiving receipt:
+`uibcdf/molsyssuite:devguide/rollouts/pharmacophoremt_ci_receiving_39_45_20261009.json`.
