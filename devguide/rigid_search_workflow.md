@@ -160,3 +160,31 @@ source `2ffe1885675f47c76af03c08e51bc889a5e99a05` on PYTHONPATH, with
 `python -m pytest --receptor=llm -p no:cacheprovider -p no:rerunfailures tests`.
 The existing scientific environment supplied other dependencies. Ruff, generated
 report indexes, three offline reporting tests and `git diff --check` also passed.
+
+## Shared seed eligibility review — 2026-10-10
+
+Distinct feature records do not necessarily have distinct spatial centers: a
+donor and acceptor can refer to the same atom. Automatic proposal tools require
+non-collinear represented centers on both axes. Their shared private criterion
+subtracts an existing center before the relative NumPy rank check; mean-centering
+can introduce roundoff that wrongly admits exactly co-located anchors at a
+translated origin. This does not introduce a physical near-collinearity cutoff
+or guarantee numerical conditioning below float64 representable resolution.
+
+The guard `tests/test_correspondence_geometry.py` covers all four public proposal
+routes, three origins, query order permutations, valid identity proposals and
+complete empty degenerate candidates whose pair-distance tolerances independently
+pass. Its 60 cases and the complete 680-test scientific suite pass on Python
+3.14.7. The immutable result/producer identities and prepared EST recovery under
+both refinement policies are retained in
+`evidence/seed_eligibility_review_py314_summary.json` and its checksum-qualified
+full archive. The reviewed resolution is uibcdf/pharmacophoremt#31.
+
+This criterion belongs to pharmacophoric seed selection; molecular fit validation
+and transformations remain MolSysMT responsibilities. The ownership audit in
+uibcdf/pharmacophoremt#41 separately reproduces the same roundoff mechanism in
+MolSysMT's public fit validator, reported as uibcdf/molsysmt#367. A caller can
+supply a mapping directly to `align_to_pharmacophore()` without automatic seed
+selection. The #31 guard therefore does not qualify arbitrary explicit mappings
+or repair the provider contract. Keep that dependency explicit rather than add a
+consumer molecular validator or import a private provider helper.

@@ -1,14 +1,14 @@
 ---
 summary: Centroid roundoff admitted co-located feature centers as non-collinear rigid anchors.
 issue: uibcdf/pharmacophoremt#31
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-10-10
 severity: medium
 verification: measured
 area: [screening, geometry]
 guard: tests/test_correspondence_geometry.py
-normative:
+normative: devguide/rigid_search_workflow.md
 blocked_by: []
 supersedes: []
 ---
@@ -68,3 +68,42 @@ reproduction log. The final full trace is frozen in
 `8c3c176c85f5f578ba6f7ccd850cf67c1ee3256417e898663e741c680c3e97e8`).
 The [owning issue result](https://github.com/uibcdf/pharmacophoremt/issues/31#issuecomment-5973140527)
 records the before/after public controls and remaining review state.
+
+
+## Reviewed resolution — 2026-10-10
+
+The implementation already published in `fdb57dcbe8e4d9d8364d1dcf5199a7945bfd9a2f`
+was reviewed without changing runtime code. The public guard now has 60 cases:
+three origins, four proposal routes (query, association cliques, triplet seeds and
+ranked triplet seeds), reference order permutations, valid non-collinear identities
+and degenerate candidate controls. Independent `math.dist` inequalities establish
+that the loose candidate tolerances admit all pair-distance conditions; complete
+empty proposals therefore protect the actual eligibility mechanism.
+
+The focused guard passes 60 cases in 5.22 s. The complete scientific selection
+`python -m pytest --receptor=llm` passes 680 tests in 1304.02 s on Python 3.14.7,
+with 12 warnings: ten expected B-factor drops, one deliberate optional-attribution
+failure control, and one unit-stripping warning in legacy screening. The separate
+recorded audit executes 12 origin/route cases containing rejected references,
+complete empty candidates and valid identities. Prepared observed EST self-motion
+recovery gives the nondegenerate seed `[[0,0],[1,1],[4,4]]` under both final and
+each_step policies, one placement / three fits / five matched features, unchanged
+source coordinates and valid returned pairs.
+
+The full detached result and inert execution source are retained in
+`devguide/evidence/seed_eligibility_review_py314.json.gz`; the sibling
+`seed_eligibility_review_py314_summary.json` records both archive SHA-256 digests,
+producer/input identities and scope limitations. All seven Python producer
+fingerprints and input hashes remain unchanged during the suite/audit. All 19
+earlier gzip archives, including the prepared molecular artifact, retain their
+exact committed bytes. This review does not qualify fresh hosted/installed
+artifacts, numerical conditioning or biological performance.
+
+The concurrent ownership audit in uibcdf/pharmacophoremt#41 found and independently
+reproduced the corresponding mean-centering defect in MolSysMT's public
+`least_rmsd_fit()` validation. It is reported as uibcdf/molsysmt#367 with nine
+provider calls; no provider code or local molecular validator was added. #31 is
+resolved for automatic pharmacophoric seed eligibility. Arbitrary caller-supplied
+fit mappings still depend on the provider repair, and must not be described as
+qualified by this closure. The maintained rigid-search contract records this
+distinction and the guard.
