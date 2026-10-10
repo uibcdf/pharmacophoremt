@@ -1,5 +1,14 @@
 # Strategic Roadmap
 
+**2026-10-10 screening transition (#45):** `VirtualScreening` now requires an
+explicit placed/rigid/prepared-conformer method and delegates to native tools;
+see [the contract](virtual_screening_workflow.md). Legacy preparation/matching,
+implicit validator fallbacks and local molecular SDF export are retired.
+CSV contains scalar hit evidence. #41 remains partial for unused generic
+utilities/library ingestion and donor geometry delegation (MolSysMT #375).
+Next local work is that bounded utility/caller inventory and retirement; provider
+#219/#215/#223/#323 remain independent capabilities, not local implementation tasks.
+
 **2026-10-10 structure transition (#44):** Structure-based construction now
 consumes cached receptor inventories and explicit pharmacophoric projections;
 see [the contract](structure_based_workflow.md). The old local recognition,

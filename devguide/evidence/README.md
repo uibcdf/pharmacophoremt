@@ -985,3 +985,18 @@ multi-state or public-package qualification claim. Verify original bytes with:
 ```bash
 python -m devtools.evidence_archive devguide/evidence/repeat_hydrogen_review_py314_summary.json
 ```
+
+## Explicit prepared-native screening facade — 2026-10-10
+
+The [#45 review summary](native_virtual_screening_review_py314_summary.json)
+links original compressed output, JUnit, driver, source/fixture hashes, provider
+heads/versions, dirty overlays and installed binary inventory. It records 185
+focused analytical/regression tests, executed prepared-conformer/facade and
+retrospective recipes, strict scoped rendering of those two recipes/navigation
+and independent administrative controls. One warning is a deliberately failed
+optional Ackredit provider. All 23 previous gzip archives remain byte-identical.
+Original incomplete diagnostics are retained and excluded from acceptance.
+This qualifies the explicit prepared-native consumer and cache/accounting/export
+contracts, not full-suite/hosted matrices, released artifacts, legacy numerical
+equivalence, biological screening, provider-main capability or performance.
+Molecular conformer generation/library export remain provider-owned needs.

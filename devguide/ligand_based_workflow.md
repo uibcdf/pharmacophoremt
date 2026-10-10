@@ -84,10 +84,10 @@ The delegated native calculation contributes to the application's optional
 Ackredit session and retains original detached bibliography/producer metadata
 in the result and each model. Native JSON readers preserve this evidence.
 
-The existing `LeaveOneOutValidator` can receive the explicit constructor choice,
-but still uses legacy `VirtualScreening` and the first returned hypothesis.
-This transition does not qualify that screening/preparation route or supply
-affinity-based hypothesis selection. Activity-based validation remains separate.
+`LeaveOneOutValidator` receives the explicit modeler choice and now requires
+an `evaluator_factory` for a prepared-native screening tool (#45). It retains
+the first returned hypothesis; see [the screening transition](virtual_screening_workflow.md).
+Affinity-based hypothesis selection and activity-based validation remain separate.
 
 ## Guard and evidence
 
@@ -96,8 +96,8 @@ dispatch, support/minimum mapping, duplicate declarations, inert historical
 options, original sources, evaluated-empty results, proper-fit reflection
 rejection, propagated provider/limit failures, non-default units, frame/atom
 selection and native model/bibliography persistence. It also asserts the
-unchanged historical audit outcomes and leaves legacy screening's conformer
-count parameter usable.
+unchanged historical audit outcomes. The #45 follow-up now refuses non-default
+conformer-generation options in screening as well as modeling.
 
 Existing independent native oracles in `tests/test_aligned_consensus.py`,
 `tests/test_aligned_cliques.py` and `tests/test_rigid_consensus.py` protect

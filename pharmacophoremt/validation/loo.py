@@ -5,19 +5,24 @@ Leave-One-Out (LOO) cross-validation for ligand-based pharmacophore models.
 from argdigest import arg_digest
 from smonitor import signal
 
+from pharmacophoremt._private.arg_digestion.argument._contracts import digest_evaluator
+from pharmacophoremt._private.smonitor.exceptions import (
+    ArgumentError,
+    PoseEvaluationError,
+)
+
 
 class LeaveOneOutValidator:
     """Leave-One-Out cross-validation for LigandBasedModeler.
 
     For each active ligand i, the pharmacophore is built from all other actives
-    and the held-out ligand is tested against it with VirtualScreening. The
+    and an explicit evaluator factory constructs its prepared-native screener. The
     fraction of actives successfully retrieved (LOO recall) measures the model's
     self-consistency.
 
     LigandBasedModeler requires prepared inputs and an explicit consensus_method.
-    This validator still uses legacy VirtualScreening and selects the first
-    native hypothesis; it does not rank hypotheses by affinity or qualify the
-    legacy preparation/screening route. At least three inputs are needed when
+    This validator selects the first native hypothesis; it does not rank
+    hypotheses by affinity. At least three inputs are needed when
     the chosen modeler requires two training ligands.
 
     Parameters
@@ -28,31 +33,53 @@ class LeaveOneOutValidator:
     modeler_kwargs : dict, optional
         Extra keyword arguments forwarded to the modeler constructor.
     min_match_ratio : float, optional
-        Minimum match ratio for a hit (default 1.0).
+        Inert historical default 1.0; other values are refused.
+    evaluator_factory : callable
+        Required factory called with each selected query. Return a native
+        evaluator/search whose run() returns all per-input records, not a hit list.
 
     Examples
     --------
     >>> from pharmacophoremt.modeler.ligand_based import LigandBasedModeler
+    >>> from pharmacophoremt.screening import RigidPoseSearch
     >>> loo = LeaveOneOutValidator(
-    ...     LigandBasedModeler, {'n_points': 4, 'consensus_method': 'rigid'})
+    ...     LigandBasedModeler, {'n_points': 4, 'consensus_method': 'rigid'},
+    ...     evaluator_factory=RigidPoseSearch)
     >>> report = loo.run(active_molecules)
     >>> print(f"LOO recall: {report['loo_recall']:.2f}")
     """
 
-    def __init__(self, modeler_class, modeler_kwargs=None, min_match_ratio=1.0):
+    def __init__(
+        self,
+        modeler_class,
+        modeler_kwargs=None,
+        min_match_ratio=1.0,
+        *,
+        evaluator_factory=None,
+    ):
+        if type(min_match_ratio) not in (int, float) or min_match_ratio != 1:
+            raise ArgumentError(
+                argument="min_match_ratio",
+                reason="only the inert default is supported; the native evaluator owns hit criteria",
+            )
+        if not callable(evaluator_factory):
+            raise ArgumentError(
+                argument="evaluator_factory",
+                reason="supply an explicit factory for a prepared-native evaluator/search",
+            )
         self.modeler_class = modeler_class
         self.modeler_kwargs = modeler_kwargs or {}
-        self.min_match_ratio = min_match_ratio
+        self.evaluator_factory = evaluator_factory
 
     @signal(tags=["validation", "loo", "run"])
     @arg_digest(type_check=True)
-    def run(self, molecules, skip_digestion=False):
+    def run(self, molecules, skip_digestion=False, **evaluation_options):
         """Run LOO cross-validation.
 
         Parameters
         ----------
         molecules : list
-            Active molecules (any format accepted by molsysmt / the modeler).
+            Prepared active molecules supported by the chosen modeler/evaluator.
 
         Returns
         -------
@@ -63,8 +90,6 @@ class LeaveOneOutValidator:
             'rounds' : list of per-round results (pharmacophore, hit bool,
                        fit_value or None).
         """
-        from pharmacophoremt.screening.virtual_screening import VirtualScreening
-
         n = len(molecules)
         if n < 2:
             raise ValueError("LOO requires at least 2 molecules.")
@@ -95,11 +120,21 @@ class LeaveOneOutValidator:
             best_ph = hypotheses[0] if isinstance(hypotheses, list) else hypotheses
 
             # Screen the held-out molecule
-            screener = VirtualScreening(best_ph, min_match_ratio=self.min_match_ratio)
-            hits = screener.run([test_mol])
-
-            hit = len(hits) > 0
-            fit = hits[0]["fit_value"] if hit else None
+            screener = digest_evaluator(self.evaluator_factory(best_ph))
+            if screener is None:
+                raise ArgumentError(
+                    argument="evaluator_factory", reason="factory result requires run()"
+                )
+            evaluation = screener.run([test_mol], **evaluation_options)[0]
+            # Native run() includes negatives; length is never a hit criterion.
+            hit = evaluation["status"] == "matched"
+            fit = evaluation["fit_value"]
+            if evaluation["status"] == "failed":
+                raise PoseEvaluationError(
+                    pose_id=i,
+                    stage=evaluation["error"].get("stage", "screening"),
+                    reason=evaluation["error"]["message"],
+                )
 
             if hit:
                 n_retrieved += 1
@@ -110,6 +145,7 @@ class LeaveOneOutValidator:
                     "hit": hit,
                     "fit_value": fit,
                     "pharmacophore": best_ph,
+                    "evaluation": evaluation,
                 }
             )
 

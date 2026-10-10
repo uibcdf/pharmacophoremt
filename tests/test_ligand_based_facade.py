@@ -251,12 +251,12 @@ def test_failed_rebuild_does_not_leave_a_success_report_or_swallow_provider_fail
     assert modeler.result is modeler.report is None
 
 
-def test_native_conformer_options_validation_does_not_restrict_legacy_screening():
+def test_screening_also_refuses_local_conformer_generation():
     from pharmacophoremt import Pharmacophore
     from pharmacophoremt.screening.virtual_screening import VirtualScreening
 
-    screener = VirtualScreening(Pharmacophore(), n_conformers=7)
-    assert screener._conformer_generator.n_conformers == 7
+    with pytest.raises(ArgumentError, match="MolSysMT"):
+        VirtualScreening(Pharmacophore(), screening_method="placed", n_conformers=7)
 
 
 def test_aligned_method_does_not_fit_unaligned_sources(monkeypatch):

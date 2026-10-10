@@ -101,3 +101,9 @@ history remains inspectable and excluded from acceptance. Twelve warnings retain
 their declared origins, including the still-reachable legacy screening unit strip.
 This local run does not qualify other interpreter/platform matrix cells or the
 remaining #41 routes; their actual state belongs on the owning issues.
+
+**2026-10-10 follow-up (#45):** Structure and screening have since transitioned
+to explicit prepared-native contracts. The warning/caller state in the executed
+#42 record above remains historical; #45 removes the legacy screening unit-strip
+path and requires explicit validation tools. Remaining #41 scope is unused
+generic utilities/library ingestion and donor geometry delegation (#375).

@@ -1,5 +1,12 @@
 # Classical Pharmacophore Workflow: Historical Scope and Backlog
 
+**2026-10-10 screening transition:** #45 retires implicit local conformer
+generation, the legacy match engine and molecular SDF export. `VirtualScreening`
+requires explicit native method choice; both validation callers require an
+explicit evaluator/factory. See [the current contract](virtual_screening_workflow.md).
+Old preparation, partial-essential coverage and local molecular export proposals
+below are historical. Remaining unused utility/library ingestion work stays #41.
+
 **2026-10-10 structure transition:** #44 replaces the legacy structure route
 with cached native receptor features and explicit hypothesis projections; see
 [the current structure contract](structure_based_workflow.md). Old local SMARTS,

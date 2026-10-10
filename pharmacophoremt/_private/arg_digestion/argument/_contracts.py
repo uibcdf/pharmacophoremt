@@ -54,6 +54,15 @@ def digest_excluded_volume_inventory(obj):
     return digest_feature_inventory(obj)
 
 
+def digest_screening_method(obj):
+    if not isinstance(obj, str) or obj not in {"placed", "rigid", "conformers"}:
+        raise ArgumentError(
+            argument="screening_method",
+            reason="explicitly choose 'placed', 'rigid' or 'conformers' for prepared inputs",
+        )
+    return obj
+
+
 def digest_projection_specs(obj):
     if not isinstance(obj, (list, tuple)) or any(
         not isinstance(row, dict) for row in obj
@@ -276,6 +285,10 @@ def digest_molecular_systems(obj):
             reason="provide an iterable of prepared ligands",
         ) from error
     return obj
+
+
+def digest_molecules(obj):
+    return digest_molecular_systems(obj)
 
 
 def digest_n_points(obj):

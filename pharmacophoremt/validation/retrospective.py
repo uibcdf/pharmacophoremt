@@ -5,11 +5,11 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import digest_evaluator
 from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
     PoseEvaluationError,
 )
-from pharmacophoremt.screening.virtual_screening import VirtualScreening
 from pharmacophoremt.validation.metrics import bedroc, enrichment_factor, roc_auc
 
 
@@ -21,12 +21,12 @@ class RetrospectiveValidator:
     pharmacophore : Pharmacophore
         Query model.
     min_match_ratio : float, default=1.0
-        Essential-weight hit threshold for the legacy screening route.
-    evaluator : PoseEvaluator, RigidPoseSearch or ConformerScreening, optional
+        Inert historical default. Other values are refused; the evaluator owns
+        essential-site and weighted-coverage hit criteria.
+    evaluator : PoseEvaluator, RigidPoseSearch or ConformerScreening
         Evaluate placed poses or search prepared rigid ligands/conformers.
         The tool's hit criteria apply.
-        When absent, retain the existing VirtualScreening route, whose molecular
-        preparation and feature matching still await MolSysMT migration.
+        Required explicit tool. No molecular preparation or legacy fallback.
     """
 
     @signal(tags=["validation", "retrospective", "init"])
@@ -45,6 +45,17 @@ class RetrospectiveValidator:
         ):
             raise ArgumentError(
                 argument="min_match_ratio", reason="expected a fraction in [0, 1]"
+            )
+        if self.min_match_ratio != 1:
+            raise ArgumentError(
+                argument="min_match_ratio",
+                reason="only the inert default is supported; choose the native evaluator's hit criteria",
+            )
+        evaluator = digest_evaluator(evaluator)
+        if evaluator is None:
+            raise ArgumentError(
+                argument="evaluator",
+                reason="supply an explicit prepared-native evaluator/search with run()",
             )
         self.pharmacophore = pharmacophore
         self.evaluator = evaluator
@@ -79,19 +90,9 @@ class RetrospectiveValidator:
         actives, decoys = list(actives), list(decoys)
         systems = actives + decoys
         true_labels = np.array([1] * len(actives) + [0] * len(decoys), dtype=int)
-        if self.evaluator is not None:
-            evaluations = self.evaluator.run(
-                systems, on_error=on_error, **evaluation_options
-            )
-        else:
-            if evaluation_options:
-                raise ArgumentError(
-                    argument="evaluation_options",
-                    reason="options require a native pose evaluator/search",
-                )
-            screener = VirtualScreening(self.pharmacophore, min_match_ratio=0.0)
-            screener.run(systems)
-            evaluations = screener.evaluations
+        evaluations = self.evaluator.run(
+            systems, on_error=on_error, **evaluation_options
+        )
         failures = [entry for entry in evaluations if entry["status"] == "failed"]
         if failures and on_error == "raise":
             failed = failures[0]
@@ -108,15 +109,7 @@ class RetrospectiveValidator:
         indices = np.array([entry["input_index"] for entry in valid], dtype=int)
         scores = np.array([entry["fit_value"] for entry in valid], dtype=float)
         labels = true_labels[indices]
-        if self.evaluator is not None:
-            hits = [entry["status"] == "matched" for entry in valid]
-        else:
-            hits = [
-                entry["status"] == "matched"
-                and entry["fit_value"] > 0
-                and entry["essential_match_ratio"] >= self.min_match_ratio
-                for entry in valid
-            ]
+        hits = [entry["status"] == "matched" for entry in valid]
         report = dict(
             n_actives=len(actives),
             n_decoys=len(decoys),

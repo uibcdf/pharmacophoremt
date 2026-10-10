@@ -160,11 +160,12 @@ The existing scientific environment supplied the remaining dependencies.
 Ruff, the report index check, `git diff --check` and the three offline reporting
 tests also passed. No commit, wheel build or hosted CI result is claimed.
 
-The existing complex/ligand/structure modelers and VirtualScreening preparation
-still include direct RDKit molecular operations. They remain migration work;
-their availability is not proof of scientific correctness. The default
-retrospective route retains this legacy engine with corrected indexing and
-failure accounting. New molecular operations belong in MolSysMT.
+**2026-10-10 qualification:** #18/#42/#44/#45 have since transitioned the
+ligand/complex/structure modelers and screening facade to explicit prepared-native
+tools. Retrospective validation requires an evaluator and has no legacy fallback;
+see [the screening contract](virtual_screening_workflow.md). Unused molecular
+utilities and native donor geometry remain #41 work. The dated measurements
+above retain their original scope. New molecular operations belong in MolSysMT.
 
 The [bounded rigid-search route](rigid_search_workflow.md) now supplies native
 correspondence/alignment for prepared ligands (`#15`). Conformer generation, additional interaction families,

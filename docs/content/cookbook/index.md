@@ -52,7 +52,7 @@ eralpha_input_audit
 | Exercise joint hypotheses on complete traceable molecular graphs | [CCD interactions](ccd_interactions.md): explicit public MolSysMT placements, both participant roles, retained empty families and independent steric veto |
 | Create and evaluate independent hypothesis variants | [Pharmacophore curation](pharmacophore_curation.md): exact cached site selection, copying, extraction and declared radius/sigma/weight/essential edits with original evidence |
 | Evaluate an existing placement | [Reference ligand](reference_ligand.md): `PoseEvaluator` |
-| Search a prepared rigid ligand or its prepared conformations | [Prepared conformers](prepared_conformers.md): `RigidPoseSearch`, `ConformerScreening` |
+| Search prepared frames or request an explicitly chosen native hit list | [Prepared conformers](prepared_conformers.md): `RigidPoseSearch`, `ConformerScreening`, `VirtualScreening` |
 | Build consensus in a common prepared coordinate frame | [Aligned ligands](aligned_consensus.md): `from_aligned_ligands()`, `get_aligned_feature_matches()`, `get_consensus_sites()` |
 | Discover consensus without a reference anchor and inspect alternative models | [Aligned cliques](aligned_cliques.md): `get_aligned_feature_cliques()`, `get_aligned_consensus_hypotheses()`, `from_aligned_ligand_cliques()` |
 | Build alternative consensus models from prepared rigid unaligned ligands | [Rigid unaligned consensus](rigid_consensus.md): `get_rigid_feature_correspondences()`, `from_rigid_ligands()` |

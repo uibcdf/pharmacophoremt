@@ -1,368 +1,139 @@
-from collections import defaultdict
+"""Hit-list facade over explicitly selected prepared-native screening tools."""
 
-import molsysmt as msm
-import numpy as np
+from copy import deepcopy
+
 from argdigest import arg_digest
-from rdkit import Chem
 from smonitor import signal
 
-from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.data.smarts import LIGAND_SMARTS
-from pharmacophoremt.utils.conformers import ConformerGenerator
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_screening_method,
+)
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
+from pharmacophoremt.screening.conformer_screening import ConformerScreening
+from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
+from pharmacophoremt.screening.rigid_search import RigidPoseSearch
 
 
 class VirtualScreening:
-    """Engine to screen molecular libraries against a pharmacophore model.
+    """Screen prepared inputs with an explicitly chosen native method.
 
-    Matching uses the native LIGAND_SMARTS feature definitions for consistency
-    with the modeling pipeline. A Fit Value (0–1) is assigned to each hit:
+    ``screening_method='placed'`` evaluates a declared existing pose; ``'rigid'``
+    searches one prepared frame; ``'conformers'`` searches requested prepared
+    frames. Native essential-site, one-to-one assignment, angular and search
+    budget contracts apply. Coverage is not affinity. Molecular preparation,
+    local SMARTS recognition and the historical fit engine are retired.
 
-        FitValue = Σ(weight_i for matched sites) / Σ(weight_i for all sites)
+    Historical min_match_ratio=1.0 and n_conformers=50 defaults are inert;
+    other values are refused. All essential sites must match. Set a native
+    min_fit_value threshold to bound total weighted coverage. Lengths and angles
+    require explicit units. Method-specific keyword options reach the selected
+    public tool; evaluate/run options are supplied to run().
 
-    Directional sites (SphereAndVector) additionally check that the ligand
-    feature vector falls within ``direction_tolerance`` degrees of the site
-    direction. ExcludedVolume sites veto any conformer whose heavy atoms
-    clash with the defined exclusion spheres.
-
-    Parameters
-    ----------
-    pharmacophore : Pharmacophore
-        The query pharmacophore.
-    min_match_ratio : float, optional
-        Minimum fraction of essential-site weight that must be matched for a
-        molecule to be considered a hit (default 1.0 = all essential sites).
-    n_conformers : int, optional
-        Maximum conformers to generate when a molecule has none (default 50).
-    point_tolerance : float, optional
-        Matching tolerance in nm for Point-shaped sites (default 0.10 nm).
-    direction_tolerance : float, optional
-        Maximum angular deviation in degrees for directional sites
-        (SphereAndVector). Default 30°.
+    run() returns ranked native hit records with their original ``mol`` reference
+    and a source-frame ``conf_id`` alias; ``evaluations`` retains every native
+    result including negatives and explicitly recorded failures. No ``rd_mol``
+    is synthesized. Both caches clear before each entered run and publish only
+    after a successful batch. Ties retain input order. DataFrame/CSV export scalar
+    evidence; molecular SDF export requires a separate provider workflow.
     """
 
+    @signal(tags=["screening", "init"])
+    @arg_digest()
     def __init__(
         self,
         pharmacophore,
         min_match_ratio=1.0,
         n_conformers=50,
-        point_tolerance=0.10,
-        direction_tolerance=30.0,
+        point_tolerance="0.10 nm",
+        direction_tolerance="30 degrees",
+        *,
+        screening_method=None,
+        **native_options,
     ):
-        self.pharmacophore = pharmacophore
-        self.min_match_ratio = float(min_match_ratio)
-        self.point_tolerance = float(point_tolerance)
-        self.direction_tolerance = float(direction_tolerance)
-        self._conformer_generator = ConformerGenerator(n_conformers=n_conformers)
+        tools = {
+            "placed": PoseEvaluator,
+            "rigid": RigidPoseSearch,
+            "conformers": ConformerScreening,
+        }
+        screening_method = digest_screening_method(screening_method)
+        for argument, value, default in (
+            ("min_match_ratio", min_match_ratio, 1.0),
+            ("n_conformers", n_conformers, 50),
+        ):
+            if type(value) not in (int, float) or value != default:
+                raise ArgumentError(
+                    argument=argument,
+                    reason="only the inert historical default is supported; choose native hit criteria and prepare conformers separately through MolSysMT (#219)",
+                )
+        self.screening_method = screening_method
+        self.evaluator = tools[screening_method](
+            pharmacophore,
+            point_tolerance=point_tolerance,
+            direction_tolerance=direction_tolerance,
+            **native_options,
+        )
         self.matches = []
         self.evaluations = []
-
-        # Pre-compute excluded volume data for speed
-        self._ev_centers = []  # list of ndarray (3,) in nm
-        self._ev_radii = []  # list of float in nm
-        self._non_ev_sites = []
-        for site in pharmacophore.interaction_sites:
-            if "excluded volume" in site.features:
-                c = site.center
-                r = site.radius
-                if c is not None and r is not None:
-                    self._ev_centers.append(puw.get_value(c, to_unit="nm"))
-                    self._ev_radii.append(float(puw.get_value(r, to_unit="nm")))
-            else:
-                self._non_ev_sites.append(site)
-
-    # ------------------------------------------------------------------
-    # Internal helpers
-    # ------------------------------------------------------------------
-
-    def _detect_features(self, mol, conf_id):
-        """Detect LIGAND_SMARTS features in one conformer.
-
-        Returns
-        -------
-        dict[str, list[ndarray]]
-            Feature name → list of centroids in nm.
-        """
-        found = defaultdict(list)
-        conf = mol.GetConformer(conf_id)
-        for feat_name, patterns in LIGAND_SMARTS.items():
-            for pattern in patterns:
-                p = Chem.MolFromSmarts(pattern)
-                if p is None:
-                    continue
-                for match in mol.GetSubstructMatches(p):
-                    pts = [conf.GetAtomPosition(idx) for idx in match]
-                    center_ang = np.mean([[pt.x, pt.y, pt.z] for pt in pts], axis=0)
-                    found[feat_name].append(center_ang / 10.0)  # Å → nm
-        return found
-
-    def _site_center_and_radius(self, site):
-        """Return (center_nm, radius_nm) for a site, or (None, None)."""
-        center_q = site.center
-        if center_q is not None:
-            center_nm = puw.get_value(center_q, to_unit="nm")
-        else:
-            position_q = getattr(site.shape, "position", None)
-            if position_q is None:
-                return None, None
-            center_nm = puw.get_value(position_q, to_unit="nm")
-
-        radius_q = site.radius
-        radius_nm = (
-            float(puw.get_value(radius_q, to_unit="nm"))
-            if radius_q is not None
-            else self.point_tolerance
-        )
-        return center_nm, radius_nm
-
-    def _direction_ok(self, site, feat_center_nm, center_nm):
-        """Check angular tolerance for SphereAndVector sites.
-
-        For directional sites the ligand feature centroid must lie roughly in
-        the direction indicated by site.shape.direction relative to the site
-        center. Returns True for non-directional sites unconditionally.
-        """
-        if site.shape_name != "sphere and vector":
-            return True
-        direction = getattr(site.shape, "direction", None)
-        if direction is None:
-            return True
-        direction = np.asarray(direction, dtype=float)
-        norm = np.linalg.norm(direction)
-        if norm < 1e-6:
-            return True
-        direction = direction / norm
-
-        # Vector from site center toward ligand feature
-        ligand_vec = feat_center_nm - center_nm
-        ligand_norm = np.linalg.norm(ligand_vec)
-        if ligand_norm < 1e-6:
-            return True  # coincident — accept
-        ligand_vec = ligand_vec / ligand_norm
-
-        cos_angle = np.clip(np.dot(direction, ligand_vec), -1.0, 1.0)
-        angle_deg = np.degrees(np.arccos(cos_angle))
-        return angle_deg <= self.direction_tolerance
-
-    def _has_ev_clash(self, mol, conf_id):
-        """Return True if any heavy atom clashes with an ExcludedVolumeSphere."""
-        if not self._ev_centers:
-            return False
-        conf = mol.GetConformer(conf_id)
-        for atom in mol.GetAtoms():
-            if atom.GetAtomicNum() == 1:
-                continue  # skip H
-            pos = conf.GetAtomPosition(atom.GetIdx())
-            atom_nm = np.array([pos.x, pos.y, pos.z]) / 10.0
-            for ev_center, ev_radius in zip(self._ev_centers, self._ev_radii):
-                if np.linalg.norm(atom_nm - ev_center) < ev_radius:
-                    return True
-        return False
-
-    def _match_conformer(self, mol, conf_id, return_details=False):
-        """Evaluate one conformer against the pharmacophore.
-
-        Returns the Fit Value (float) if the molecule passes all criteria,
-        otherwise None.
-        """
-        # Fast-reject: excluded volume clash
-        if self._has_ev_clash(mol, conf_id):
-            return None
-
-        features = self._detect_features(mol, conf_id)
-
-        total_weight = sum(s.weight for s in self._non_ev_sites)
-        if total_weight == 0.0:
-            return None
-
-        essential_weight = sum(s.weight for s in self._non_ev_sites if s.essential)
-
-        matched_weight = 0.0
-        essential_matched = 0.0
-
-        for site in self._non_ev_sites:
-            center_nm, radius_nm = self._site_center_and_radius(site)
-            if center_nm is None:
-                continue
-
-            matched = False
-            for feat_name in site.features:
-                for feat_center in features.get(feat_name, []):
-                    dist = np.linalg.norm(feat_center - center_nm)
-                    if dist <= radius_nm and self._direction_ok(
-                        site, feat_center, center_nm
-                    ):
-                        matched = True
-                        break
-                if matched:
-                    break
-
-            if matched:
-                matched_weight += site.weight
-                if site.essential:
-                    essential_matched += site.weight
-
-        # Reject if too few essential sites are matched
-        if essential_weight > 0.0:
-            if (essential_matched / essential_weight) < self.min_match_ratio:
-                return None
-
-        fit_value = matched_weight / total_weight
-        if return_details:
-            return {
-                "fit_value": fit_value,
-                "essential_match_ratio": essential_matched / essential_weight
-                if essential_weight > 0
-                else 1.0,
-            }
-        return fit_value
-
-    # ------------------------------------------------------------------
-    # Public API
-    # ------------------------------------------------------------------
 
     @signal(tags=["screening", "run"])
-    @arg_digest(type_check=True)
-    def run(self, molecular_database, skip_digestion=False):
-        """Screen a library of molecules against the pharmacophore.
+    def run(
+        self,
+        molecular_database,
+        skip_digestion=False,
+        *,
+        on_error="raise",
+        **evaluation_options,
+    ):
+        """Return hits while preserving native per-input and per-frame evidence.
 
-        Parameters
-        ----------
-        molecular_database : iterable
-            Molecular systems accepted by molsysmt (SMILES strings, RDKit Mol
-            objects, molsysmt.MolSys, file paths, etc.).
-
-        Returns
-        -------
-        list of dict
-            Sorted by Fit Value (descending). Each entry contains:
-            ``'mol'``, ``'fit_value'``, ``'conf_id'``, ``'rd_mol'``.
+        Inputs are materialized once. Failures raise by default; on_error='record'
+        keeps fit_value=None without turning a failed calculation into a negative.
+        Source atom/frame/state options follow the explicitly selected native tool.
         """
         self.matches = []
         self.evaluations = []
-
-        for input_index, mol_system in enumerate(molecular_database):
-            stage = "conversion"
-            try:
-                if isinstance(mol_system, Chem.Mol):
-                    rd_mol = mol_system
-                else:
-                    rd_mol = msm.convert(mol_system, to_form="rdkit.Mol")
-                if rd_mol is None:
-                    raise ValueError("MolSysMT returned no molecule")
-                stage = "conformers"
-                if rd_mol.GetNumConformers() == 0:
-                    rd_mol = self._conformer_generator.generate(rd_mol)
-                if rd_mol.GetNumConformers() == 0:
-                    raise ValueError("No conformer available after preparation")
-                stage = "matching"
-                best_fit, best_conf = None, 0
-                maximum_essential_ratio = 0.0
-                for conf_id in range(rd_mol.GetNumConformers()):
-                    details = self._match_conformer(
-                        rd_mol, conf_id, return_details=True
+        # Native tools digest evaluation options after the facade has cleared
+        # its caches, including invalid-option attempts.
+        systems = list(molecular_database)
+        evaluations = self.evaluator.run(
+            systems, on_error=on_error, **evaluation_options
+        )
+        matches = []
+        for entry in evaluations:
+            if entry["status"] == "matched":
+                frame = entry.get("best_conformer_index", entry.get("structure_index"))
+                matches.append(
+                    dict(
+                        deepcopy(entry),
+                        mol=systems[entry["input_index"]],
+                        conf_id=frame,
                     )
-                    if details is not None:
-                        maximum_essential_ratio = max(
-                            maximum_essential_ratio, details["essential_match_ratio"]
-                        )
-                    if details is not None and (
-                        best_fit is None or details["fit_value"] > best_fit
-                    ):
-                        best_fit, best_conf = (
-                            details["fit_value"],
-                            conf_id,
-                        )
-            except Exception as error:
-                self.evaluations.append(
-                    {
-                        "input_index": input_index,
-                        "status": "failed",
-                        "fit_value": None,
-                        "error": {
-                            "stage": stage,
-                            "cause": type(error).__name__,
-                            "message": str(error),
-                        },
-                    }
                 )
-                continue
-
-            self.evaluations.append(
-                {
-                    "input_index": input_index,
-                    "status": "matched" if best_fit is not None else "not_matched",
-                    "fit_value": best_fit if best_fit is not None else 0.0,
-                    "essential_match_ratio": maximum_essential_ratio,
-                }
-            )
-
-            if best_fit is not None:
-                self.matches.append(
-                    {
-                        "mol": mol_system,
-                        "input_index": input_index,
-                        "fit_value": best_fit,
-                        "conf_id": best_conf,
-                        "rd_mol": rd_mol,
-                    }
-                )
-
-        self.matches.sort(key=lambda x: x["fit_value"], reverse=True)
+        matches.sort(key=lambda entry: entry["fit_value"], reverse=True)
+        self.evaluations = evaluations
+        self.matches = matches
         return self.matches
 
     def to_dataframe(self):
-        """Return screening results as a pandas DataFrame.
-
-        Columns: rank, fit_value, conf_id, smiles.
-        """
+        """Format ranked hit evidence without molecular conversion or H removal."""
         import pandas as pd
 
-        rows = []
-        for rank, entry in enumerate(self.matches, start=1):
-            rd_mol = entry.get("rd_mol")
-            smiles = (
-                Chem.MolToSmiles(Chem.RemoveHs(rd_mol)) if rd_mol is not None else ""
-            )
-            rows.append(
-                {
-                    "rank": rank,
-                    "fit_value": entry["fit_value"],
-                    "conf_id": entry["conf_id"],
-                    "smiles": smiles,
-                }
-            )
-        return pd.DataFrame(rows)
+        columns = ["rank", "input_index", "fit_value", "conf_id", "status"]
+        return pd.DataFrame(
+            [
+                dict(rank=rank, **{key: entry[key] for key in columns[1:]})
+                for rank, entry in enumerate(self.matches, start=1)
+            ],
+            columns=columns,
+        )
 
     def to_csv(self, file_name):
-        """Write screening results to a CSV file.
-
-        Parameters
-        ----------
-        file_name : str
-            Output path.
-        """
+        """Write the same scalar evidence as to_dataframe()."""
         self.to_dataframe().to_csv(file_name, index=False)
 
     def to_sdf(self, file_name):
-        """Write the best-matching conformer of each hit to an SDF file.
-
-        The ``FitValue`` property is embedded in each record.
-
-        Parameters
-        ----------
-        file_name : str
-            Output path.
-        """
-        from rdkit.Chem import SDWriter
-
-        writer = SDWriter(file_name)
-        for entry in self.matches:
-            rd_mol = entry.get("rd_mol")
-            if rd_mol is None:
-                continue
-            conf_id = entry["conf_id"]
-            mol_out = Chem.RWMol(rd_mol)
-            mol_out = Chem.RemoveHs(mol_out)
-            mol_out.SetDoubleProp("FitValue", entry["fit_value"])
-            writer.write(mol_out, confId=conf_id)
-        writer.close()
+        """Refuse the retired implicit H-removing molecular export path."""
+        raise ArgumentError(
+            argument="file_name",
+            reason="molecular SDF export belongs to MolSysMT; collection/property and atom correspondence requirements remain https://github.com/uibcdf/molsysmt/issues/215 and #223; use scalar CSV evidence meanwhile",
+        )

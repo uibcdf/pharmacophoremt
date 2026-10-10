@@ -61,6 +61,43 @@ Hits rank before negatives, then weighted coverage ranks within each status.
 Exact ties retain the first requested frame: both frames achieve unit coverage
 above, so `[1, 0]` chooses frame 1. RMSD does not break coverage ties.
 
+## Request a ranked hit list explicitly
+
+`VirtualScreening` wraps these same prepared-native tools. Choose the method
+explicitly: `placed`, `rigid` or `conformers`. There is no hidden preparation.
+The prepared inputs and query from the preceding block can be reused:
+
+```python
+from pharmacophoremt.screening import VirtualScreening
+
+library = [prepared, prepared]
+facade = VirtualScreening(query, screening_method='conformers', max_trials=10000)
+hits = facade.run(library, structure_indices=[1, 0], chemical_state='structure')
+assert [hit['input_index'] for hit in hits] == [0, 1]
+assert [hit['conf_id'] for hit in hits] == [1, 1]
+assert all(hit['fit_value'] == 1 for hit in hits)
+assert hits[0]['mol'] is prepared
+assert len(facade.evaluations) == 2
+assert list(facade.to_dataframe().columns) == [
+    'rank', 'input_index', 'fit_value', 'conf_id', 'status',
+]
+json.dumps(facade.evaluations, allow_nan=False)
+```
+
+Native assignment uses each participant at most once and requires every
+essential site. Historical `min_match_ratio=1.0` and `n_conformers=50` defaults
+are inert; other values are refused. Use native `min_fit_value` for weighted
+coverage thresholds. Point/angle tolerances have explicit units. Exact hit ties
+retain input order. Coverage is not affinity or equivalence to the retired fit
+engine.
+
+Failures raise by default; `on_error='record'` retains unscored failures in
+`evaluations`. A resolved maximal conformer hit may also contain failed frames;
+inspect its complete native evidence. CSV/DataFrame exports scalar hit records
+without molecular conversion. `to_sdf()` is retired pending MolSysMT's molecular
+collection/property contract (#215/#223), and conformer generation belongs to
+MolSysMT #219. See [the full transition contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/virtual_screening_workflow.md).
+
 ## Inspect the best pose and every frame
 
 The best pose fields appear at the top level. `assignments` records matched

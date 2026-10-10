@@ -56,40 +56,16 @@ def test_failure_requires_explicit_exclusion_and_does_not_become_a_decoy():
     assert report["failures"][0]["input_index"] == 1
 
 
-def test_legacy_accounting_uses_indices_and_configured_essential_threshold(monkeypatch):
-    from pharmacophoremt.screening.virtual_screening import VirtualScreening
-
+def test_explicit_evaluator_is_required_and_retired_threshold_is_refused():
     source = system()
     model, _ = model_from_source(source)
 
-    def evaluate_fixture(self, database):
-        # Bounded adapter fixture: ranking chemistry is tested in the real route.
-        assert len(database) == 3
-        self.evaluations = [
-            dict(
-                input_index=0,
-                status="matched",
-                fit_value=0.8,
-                essential_match_ratio=0.5,
-            ),
-            dict(
-                input_index=1, status="matched", fit_value=0.9, essential_match_ratio=1
-            ),
-            dict(
-                input_index=2,
-                status="not_matched",
-                fit_value=0,
-                essential_match_ratio=0,
-            ),
-        ]
-        return []
-
-    monkeypatch.setattr(VirtualScreening, "run", evaluate_fixture)
-    report = RetrospectiveValidator(model, min_match_ratio=0.75).run(
-        [source, source], [source]
-    )
-    assert report["scores"].tolist() == [0.8, 0.9, 0]
-    assert report["n_actives_found"] == 1
+    with pytest.raises(ArgumentError, match="explicit"):
+        RetrospectiveValidator(model)
+    with pytest.raises(ArgumentError, match="inert"):
+        RetrospectiveValidator(
+            model, min_match_ratio=0.75, evaluator=PoseEvaluator(model)
+        )
 
 
 def test_failures_in_both_classes_preserve_positions_and_evaluated_denominators():
@@ -149,15 +125,18 @@ def test_full_positive_coverage_with_steric_veto_is_not_an_accepted_active():
     )
 
 
-def test_legacy_conversion_failure_is_excluded_without_losing_repeated_inputs():
+def test_native_source_failure_is_excluded_without_losing_repeated_inputs():
     """Exercise actual conversion/accounting on a prepared analytical fixture."""
     source = system()
     model, _ = model_from_source(source)
-    validator = RetrospectiveValidator(model)
+    validator = RetrospectiveValidator(model, evaluator=PoseEvaluator(model))
     with pytest.raises(PoseEvaluationError):
-        validator.run([source], ["invalid legacy system"])
+        validator.run([source], ["invalid native system"], selection=[0, 1, 2])
     report = validator.run(
-        iter([source, source]), iter(["invalid legacy system"]), on_error="record"
+        iter([source, source]),
+        iter(["invalid native system"]),
+        on_error="record",
+        selection=[0, 1, 2],
     )
     assert report["scores"].tolist() == [1, 1]
     assert report["evaluated_indices"].tolist() == [0, 1]
@@ -172,7 +151,7 @@ def test_legacy_conversion_failure_is_excluded_without_losing_repeated_inputs():
     assert np.isnan(report["AUC"]) and np.isnan(report["BEDROC"])
     assert report["failures"][0]["input_index"] == 2
     assert report["failures"][0]["fit_value"] is None
-    assert report["failures"][0]["error"]["stage"] == "conversion"
+    assert report["failures"][0]["error"]["stage"] == "source"
 
 
 @pytest.mark.parametrize(

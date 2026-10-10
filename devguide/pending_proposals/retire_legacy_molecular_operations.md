@@ -14,6 +14,22 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Progress — 2026-10-10, screening transition (#45)
+
+`VirtualScreening` now delegates an explicitly chosen placed/rigid/conformer
+method to the existing native tools. Local conformer generation and SMARTS
+matching are retired. Both validation callers require a native evaluator or
+factory. Scalar hit exports have no molecular conversion/H removal; molecular
+SDF export is explicitly refused pending provider #215/#223. Prepared coordinates
+remain required while MolSysMT #219 is pending. See
+[the contract](../virtual_screening_workflow.md) and
+[#45 report](../archive/native_virtual_screening_transition.md).
+
+The initial call inventory below retains its original dated findings. Remaining
+#41 work is unused generic utilities and library ingestion retirement, plus
+native donor-vector delegation to MolSysMT #375. The named molecular provider
+gaps are not authorization for consumer implementations. #41 remains partial.
+
 ## Progress — 2026-10-10, structure transition (#44)
 
 `StructureBasedModeler` and its dispatcher now delegate cached chemical records

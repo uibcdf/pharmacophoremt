@@ -27,6 +27,12 @@ track the request, shape a PR, and keep PharmacophoreMT aligned with the central
 
 ---
 
+**2026-10-10 consumer qualification (#45):** The screening facade now requires
+prepared inputs and explicit native method choice. Its local conformer-generation
+call and molecular SDF export are retired; the unused utility remains #41 review
+work. Fixed-state conformer generation still belongs to the existing provider
+#219. This historical API sketch is not a second local implementation mandate.
+
 ## Proposal 1 — `msm.build.generate_conformers()`
 
 **Origin:** `pharmacophoremt/utils/conformers.py` — `ConformerGenerator` class.

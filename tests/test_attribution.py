@@ -254,9 +254,9 @@ def test_composed_ensemble_and_retrospective_results_keep_bounded_credit(prepare
             multiple = phmt.screening.ConformerScreening(query).evaluate(
                 ensemble(COORDINATES, COORDINATES)
             )
-            report = RetrospectiveValidator(query).run(
-                [source], [system("[Na+]", [[0, 0, 0]])]
-            )
+            report = RetrospectiveValidator(
+                query, evaluator=phmt.screening.PoseEvaluator(query)
+            ).run([source], [system("[Na+]", [[0, 0, 0]])])
     assert (
         single["attribution"]["host_references"]
         == multiple["attribution"]["host_references"]

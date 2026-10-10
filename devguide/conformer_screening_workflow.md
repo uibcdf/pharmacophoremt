@@ -1,5 +1,10 @@
 # Screening prepared conformations
 
+The #45 [screening facade transition](virtual_screening_workflow.md) now reuses
+this tool through `VirtualScreening(screening_method='conformers')`. It adds a
+ranked hit-list surface without changing this tool's ensemble/search contract.
+Retrospective evaluation requires an explicit evaluator; legacy preparation is retired.
+
 `screening.ConformerScreening`, tracked in `uibcdf/pharmacophoremt#17`, searches
 prepared frames through the existing [rigid-search tools](rigid_search_workflow.md).
 MolSysMT supplies frame indices, declared chemical states, coordinate access and

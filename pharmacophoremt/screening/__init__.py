@@ -21,3 +21,4 @@ from .rigid_refinement import (
     refine_rigid_feature_correspondences as refine_rigid_feature_correspondences,
 )
 from .rigid_search import RigidPoseSearch as RigidPoseSearch
+from .virtual_screening import VirtualScreening as VirtualScreening

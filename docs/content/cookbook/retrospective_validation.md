@@ -89,9 +89,8 @@ change that subset, so retain the failures alongside the reported metrics.
 
 Accepted-hit counts use the native evaluator's `status`. A pose with complete
 positive coverage and an exclusion clash can have score 1 and still contribute
-zero accepted hits. The legacy route applies its configured essential-match
-threshold across available conformers; its chemical preparation remains a
-separate review boundary. An empty or entirely failed dataset raises rather
+zero accepted hits. An explicit evaluator is required; the legacy fallback and
+partial-essential threshold are retired. An empty or entirely failed dataset raises rather
 than returning manufactured zero metrics.
 
 ## Use prepared-conformer screening
