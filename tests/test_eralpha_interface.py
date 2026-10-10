@@ -16,6 +16,7 @@ from devtools.validate_eralpha_interface import build_hypothesis, controls, vali
 from devtools.validate_prepared_ccd_ligands import scientific_projection
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt.io import load_json
+from pharmacophoremt.modeler import ComplexBasedModeler
 
 
 @pytest.fixture(scope="module")
@@ -101,6 +102,45 @@ def test_evaluated_empty_families_are_retained_as_observations(interface):
         payload["measurements"]["distance"], distances, atol=1e-12, rtol=0
     )
     assert np.all(distances <= 0.45)
+
+
+def test_complex_facade_consumes_the_prepared_fragment_without_changing_evidence(
+    interface,
+):
+    def snapshot(value):
+        # Preserve unknown NaNs in the native preparation history as well.
+        return json.dumps(value, sort_keys=True, default=lambda array: array.tolist())
+
+    case, run, _ = interface
+    source = case["molecular_system"]
+    before = puw.get_value(msm.get(source, coordinates=True), to_unit="nm").copy()
+    history = snapshot(source.chemical_states.get_preparation_history())
+    native = {
+        label: snapshot(msm.convert(value, to_form="molsysmt.InteractionsDict").data)
+        for label, value in case["analyses"].items()
+    }
+    modeler = ComplexBasedModeler(
+        source, ligand_selection=case["ligand"], interaction_collection=case["analyses"]
+    )
+    model = modeler.build()
+    assert modeler.result is model and model.n_interaction_sites == 6
+    assert {site.feature_name for site in model.interaction_sites} == {"hydrophobicity"}
+    assert {row["label"]: row["n_sites"] for row in model.metadata["components"]} == {
+        "hydrophobic": 6,
+        "hbonds": 0,
+        "pi_pi": 0,
+    }
+    context = model.metadata["components"][0]["metadata"]
+    assert context["source_id"] == "rcsb:1QKU:deposited-atom-order"
+    assert context["source_atom_indices"] == run["preparation"]["atom_source_indices"]
+    np.testing.assert_array_equal(
+        puw.get_value(msm.get(source, coordinates=True), to_unit="nm"), before
+    )
+    assert snapshot(source.chemical_states.get_preparation_history()) == history
+    assert {
+        label: snapshot(msm.convert(value, to_form="molsysmt.InteractionsDict").data)
+        for label, value in case["analyses"].items()
+    } == native
 
 
 def test_reference_sites_and_declared_weights_are_distinct_from_contacts(interface):

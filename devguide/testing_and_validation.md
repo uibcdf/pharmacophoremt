@@ -14,7 +14,7 @@ Every public-facing component must have at least one integration test that exerc
 | :--- | :--- |
 | `LigandBasedModeler` | Require explicit native method and prepared inputs; check joint distinct-ligand support, minimum sites, source/frame/unit evidence and evaluated-empty versus failed calculations; no legacy score |
 | `StructureBasedModeler` | Build from a receptor with explicit `pocket_selection`; assert interaction sites of the expected types |
-| `ComplexBasedModeler` | Build from a protein-ligand complex including aromatic and HB interactions; assert aromatic site presence |
+| `ComplexBasedModeler` | Consume explicit native observations on the same prepared source; guard nine analytical sites, evaluated-empty families, failed coverage and prepared ERα continuation (`test_complex_based_facade.py`, `test_eralpha_interface.py`) |
 | `VirtualScreening` | Screen a small library (5 actives + 5 decoys) against a known pharmacophore; assert actives rank above decoys |
 | Full pipeline | model → screen → validate (EF, LOO) on a benchmark dataset |
 | IO round-trips | Read every format, write back, read again; assert numerical equivalence within tolerance |

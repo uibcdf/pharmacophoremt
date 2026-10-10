@@ -51,6 +51,7 @@ class TestReportingProtocol(unittest.TestCase):
                 "uibcdf/pharmacophoremt#38",
                 "uibcdf/pharmacophoremt#39",
                 "uibcdf/pharmacophoremt#41",
+                "uibcdf/pharmacophoremt#42",
                 "uibcdf/pharmacophoremt#5",
                 "uibcdf/pharmacophoremt#6",
                 "uibcdf/pharmacophoremt#8",
@@ -91,7 +92,7 @@ class TestReportingProtocol(unittest.TestCase):
     def test_guard_selectors_are_addressable(self):
         self.assertEqual(
             devguide_reports.validate_guard(
-                "tests/test_validation_eralpha.py::test_eralpha_pharmacophore_extraction"
+                "tests/test_validation_eralpha.py::test_eralpha_pharmacophore_extraction_requires_native_observations"
             ),
             [],
         )

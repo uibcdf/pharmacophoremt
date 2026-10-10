@@ -7,8 +7,8 @@ closed: 2026-09-24
 severity: high
 verification: reproduced
 area: [complex-modeling, chemical-features]
-guard: tests/test_validation_eralpha.py::test_eralpha_pharmacophore_extraction
-normative:
+guard: tests/test_validation_eralpha.py::test_eralpha_pharmacophore_extraction_requires_native_observations
+normative: devguide/complex_based_workflow.md
 blocked_by: []
 supersedes: []
 ---
@@ -94,3 +94,18 @@ unsupported order-zero bonds. Native recognition rejects both routes. The
 original guard is retained as a historical feature-presence regression, alongside
 `test_eralpha_native_input_audit`. Explicit template preparation is requested in
 [MolSysMT #298](https://github.com/uibcdf/molsysmt/issues/298).
+
+## Dated retirement — 2026-10-10
+
+The chemistry-inference engine and its feature-presence regression were retired
+under [#42](https://github.com/uibcdf/pharmacophoremt/issues/42). Their original
+source and assertions remain inspectable at immutable commit
+`1198af1c410621deb1477a4fc8b8f5ea3c46b376`; the resolution above is historical
+evidence, not qualification of the new scientific method. No engine was copied
+to a developer fallback. The frontmatter now names the active retirement guard
+and the explicit native workflow contract. That guard refuses the old incomplete
+ERα calls before conversion, selection or chemistry inference. The prepared
+304–550 fragment has a separate native continuation test in
+`tests/test_eralpha_interface.py`, with six hydrophobic sites and evaluated-empty
+H-bond/pi-pi families. Native definitions are not equivalent to the old heuristic
+counts, and this transition does not resolve MolSysMT #323/#350.

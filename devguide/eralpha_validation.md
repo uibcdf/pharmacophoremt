@@ -1,5 +1,14 @@
 # ERalpha input audit and native validation gate
 
+**2026-10-10 retirement:** #42 removes the legacy complex chemistry engine.
+Its #5 feature-presence guard and runtime remain historical source at
+`1198af1c410621deb1477a4fc8b8f5ea3c46b376`; the active guard now refuses incomplete
+legacy calls before molecular operations. The separate prepared 304–550/EST
+fragment continues through `ComplexBasedModeler` with six hydrophobic sites and
+evaluated-empty H-bond/pi-pi families, preserving native histories/maps/coordinates.
+See [the transition contract](complex_based_workflow.md). The original source
+audit and hydrogen/environment/biological limitations below remain in force.
+
 The owning issue is [#22](https://github.com/uibcdf/pharmacophoremt/issues/22).
 The first slices audit the existing regression input and separately acquired
 observed coordinates. Public MolSysMT template application now supports the

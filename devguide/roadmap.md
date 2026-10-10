@@ -1,5 +1,13 @@
 # Strategic Roadmap
 
+**2026-10-10 complex transition (#42):** `ComplexBasedModeler` and the default
+`model()` now require prepared native observations and an explicit ligand
+selection. The old preparation/detection engine is retired; see the
+[migration contract](complex_based_workflow.md). This supersedes the default-route
+finding in the earlier audit checkpoint below. #41 remains partial; next local
+work is structure-based provider consumption and legacy screening retirement.
+Provider #323/#350/#367 remain independent limitations.
+
 **2026-10-10 ownership review:** The
 [molecular ownership audit](pending_proposals/retire_legacy_molecular_operations.md)
 tracks remaining reachable legacy preparation/recognition/I/O under #41. Native

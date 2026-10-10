@@ -1,5 +1,11 @@
 # Modeling Strategies and the Modeler Engine
 
+**2026-10-10 transition (#42):** The complex class and default `model()` now
+consume an explicit ligand selection and named prepared native observations;
+see [the current contract](complex_based_workflow.md). The old default-route
+finding below is historical. No molecular inference, preparation or detection
+is performed in the complex modeler. #41 remains partial for other legacy routes.
+
 **2026-10-10 ownership audit:** #41 records the
 [reachable legacy callers](pending_proposals/retire_legacy_molecular_operations.md),
 including the surviving `model()` complex-based default. Use the documented
@@ -60,6 +66,19 @@ Protein features are detected using `PROTEIN_SMARTS`, which must be a **separate
 ## 3. Modeler Specializations
 
 ### 3.1 ComplexBasedModeler
+
+**Current native facade (#42):** Supply the same unchanged prepared source,
+`ligand_selection` and `interaction_collection`; the class delegates to public
+`from_interaction_collection()`. A single requested frame returns one model,
+multiple frames an ordered list. Native hydrophobic/H-bond/ionic/pi-pi/cation-pi
+profiles, evaluated-empty families and errors retain their declared semantics.
+`radius` controls query tolerance; detection cutoffs belong to prior MolSysMT
+calls. Receptor-selection arguments, legacy thresholds and implicit recovery
+are refused. See the maintained contract above and the executable cookbook.
+
+**Retired design below:** The old cutoffs, status tables and spatial-merging
+proposal describe the removed heuristic engine. They are not current defaults,
+native compatibility promises or instructions to implement molecular routines.
 
 **Inputs:** A protein-ligand complex (single structure or ensemble of structures/frames).
 **Goal:** Extract pharmacophoric interaction sites directly from the 3D contact geometry.
@@ -156,8 +175,9 @@ For zero-friction usage, a convenience function delegates to the appropriate Mod
 ```python
 import pharmacophoremt as phmt
 
-# Complex-based: automatic ligand and receptor detection
-ph = phmt.model(molecular_system, method='complex-based')
+# Complex-based: same prepared source and explicit cached native observations
+ph = phmt.model(molecular_system, method='complex-based',
+                ligand_selection=ligand, interaction_collection=analyses)
 
 # Ligand-based: explicitly prepared ligand records; choose the native method
 hypotheses = phmt.model(prepared_ligands, method='ligand-based',
@@ -209,8 +229,8 @@ ph_combined = ph_complex.merge(ph_ligand)        # union of sites
 
 | Component | Status | Notes |
 | :--- | :--- | :--- |
-| `ComplexBasedModeler` (core HB, hydrophobic, charge, halogen, metal) | Done | |
-| `ComplexBasedModeler` (pi-stacking, cation-pi, excluded volumes, global merging) | **Gen 1b** | |
+| `ComplexBasedModeler` (explicit native observation collection) | Native facade; legacy engine retired | #42; hydrophobic/H-bond/ionic/pi-pi/cation-pi follow supported provider definitions |
+| Complex halogen/metal observations, exclusions and cross-complex consensus | Separate current contracts/backlog | No legacy threshold or global spatial-merging compatibility; exclusions are a public independent query step |
 | `LigandBasedModeler` (explicit native rigid/aligned consensus) | Native facade; legacy builder retired | See #18 and the migration contract; no affinity ranking |
 | Conformer preparation, negative modeling and activity weighting | **Gen 1b** | Directional features are covered by the selected native contracts; preparation belongs to MolSysMT |
 | `StructureBasedModeler` (feature projection, charge complementarity) | Done | |

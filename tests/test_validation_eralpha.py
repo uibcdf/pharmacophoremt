@@ -1,5 +1,4 @@
 import json
-import os
 from pathlib import Path
 
 import molsysmt as msm
@@ -8,41 +7,29 @@ import pytest
 import pharmacophoremt as phmt
 from devtools.audit_eralpha import audit
 from devtools.audit_eralpha_sources import audit as audit_sources
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
 
-def test_eralpha_pharmacophore_extraction():
-    """Legacy regression guard for #5; this does not exercise native chemistry."""
-    # 1. Path to migrated data
-    current_dir = os.path.dirname(__file__)
-    pdb_file = os.path.join(current_dir, "data/eralpha_complex.pdb")
+def test_eralpha_pharmacophore_extraction_requires_native_observations(monkeypatch):
+    """Retirement guard: #5's chemistry recovery is historical, not a fallback."""
+    pdb_file = Path(__file__).parent / "data/eralpha_complex.pdb"
+    assert pdb_file.is_file()
 
-    if not os.path.exists(pdb_file):
-        pytest.skip("ERalpha benchmark PDB not found.")
+    def forbidden(*args, **kwargs):
+        pytest.fail("The legacy snapshot must not trigger molecular inference")
 
-    # Load system explicitly to avoid auto-detection issues in test
-    system = msm.convert(pdb_file, to_form="molsysmt.MolSys")
-
-    # 2. Extract using high-level dispatcher (phmt.model)
-    # The ligand in this specific PDB file has an empty resname and index 8076
-    ph = phmt.model(
-        system,
-        method="complex-based",
-        ligand_selection="group_index == 8076",
-        receptor_selection='molecule_type == "protein"',
-    )
-
-    # 3. Historical feature-presence regression, not biological validation.
-    print(f"\nERalpha Pharmacophore: {ph}")
-    assert ph.n_interaction_sites > 0
-
-    features = ph.get(get_features=True)
-    # flattened features list
-    flat_features = []
-    for site_feats in features:
-        flat_features.extend(site_feats)
-
-    assert "aromatic ring" in flat_features
-    assert "hydrophobicity" in flat_features
+    for name in ("convert", "select", "get"):
+        monkeypatch.setattr(msm, name, forbidden)
+    for selections in (
+        {},
+        {"ligand_selection": "group_index == 8076"},
+        {
+            "ligand_selection": "group_index == 8076",
+            "receptor_selection": 'molecule_type == "protein"',
+        },
+    ):
+        with pytest.raises(ArgumentError):
+            phmt.model(str(pdb_file), method="complex-based", **selections)
 
 
 def test_eralpha_native_input_audit():

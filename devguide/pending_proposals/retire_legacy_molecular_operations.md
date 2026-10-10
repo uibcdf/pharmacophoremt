@@ -14,6 +14,19 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Progress — 2026-10-10, complex transition (#42)
+
+The complex modeler and default dispatcher now consume named native MolSysMT
+observations on the same unchanged prepared source with an explicit ligand
+selection, delegating to `from_interaction_collection()`. Local inference,
+preparation, SMARTS detection, detector geometry and spatial merging have been
+removed from that route. The [migration contract](../complex_based_workflow.md)
+and [#42 record](../archive/native_complex_modeler_transition.md) define this breaking
+scientific transition. The original audit below remains dated source evidence;
+its complex caller finding is now retired. #41 remains **partial/open** for the
+other inventoried routes, including structure-based and legacy screening. The
+bounded review date and provider gaps remain in force for those retained callers.
+
 ## What
 
 The native prepared-input workflows use public MolSysMT chemistry, recognition,

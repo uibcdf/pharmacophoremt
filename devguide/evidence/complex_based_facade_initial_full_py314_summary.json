@@ -1,0 +1,60 @@
+{
+  "schema": "pharmacophoremt.complex_based_facade_review_summary@1",
+  "issue": "uibcdf/pharmacophoremt#42",
+  "recorded_utc": "2026-10-10T07:02:46.763455+00:00",
+  "source_base": "1198af1c410621deb1477a4fc8b8f5ea3c46b376",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "sources_and_inputs_unchanged": false,
+  "full_suite": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "pytest",
+      "--receptor=llm",
+      "--junitxml=/tmp/phmt-complex-suite.xml"
+    ],
+    "exit_code": 1,
+    "wall_seconds": 1326.9174094099944,
+    "stdout": "receptor: 20% 143/712 198s\nreceptor: 40% 285/712 261s\nreceptor: 60% 428/712 1005s\n"
+  },
+  "recipe": {
+    "blocks_executed": 3,
+    "source_sha256": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+    "site_counts": {
+      "query": 9,
+      "named": 9,
+      "default": 9,
+      "empty": 0
+    },
+    "feature_names": [
+      "aromatic ring",
+      "hb donor",
+      "hydrophobicity",
+      "positive charge"
+    ],
+    "source_unchanged": true
+  },
+  "qualification_limits": [
+    "Normal editable Python 3.14 local evidence; not the other CI platforms/interpreters.",
+    "Native prepared observations are not scientifically equivalent to the retired heuristic engine.",
+    "ERalpha fragment is not full-receptor preparation or an affinity validation.",
+    "No provider changes; MolSysMT #323/#350/#367 remain separate.",
+    "Source identities describe this parent process; native binary inventory is not subprocess import tracing.",
+    "Run duration is an incidental test duration, not a performance benchmark."
+  ],
+  "full_evidence": {
+    "archive": "complex_based_facade_review_py314.json.gz",
+    "compressed_sha256": "f297559ebe5cf4a223a8f75985abab81da7e6540bbefd4d8cce9d24a4c0f2ad2",
+    "uncompressed_sha256": "a6cbd8daecb47cea53649e784270a896a170a431db2b2dd9a0bdb0e6b1038a43",
+    "compressed_bytes": 64562,
+    "uncompressed_bytes": 505632,
+    "path": "complex_based_facade_initial_full_py314.json.gz"
+  },
+  "qualification": "Initial failed run with a changed test source; excluded from final acceptance.",
+  "original_stdout_after_run": "receptor: 20% 143/712 201s\nreceptor: 40% 285/712 262s\nreceptor: 60% 428/712 971s\nreceptor: 80% 570/712 1139s\nreceptor: 100% 712/712 1324s\nFAIL exit=1 | 1 failed, 711 passed | 1323.77s | 12 warnings | 1 root cause\n\n[1] ArgumentError | 1 test | call\n    pharmacophoremt/modeler/interaction_based.py:205\n    pharmacophoremt._private.smonitor.exceptions.ArgumentError: Invalid 'interactions': source atom/structure axes differ.\n    frames: tests/test_eralpha_interface.py:125 -> ../smonitor/smonitor/core/decorator.py:326 -> pharmacophoremt/modeler/complex_based.py:106 -> ../smonitor/smonitor/core/decorator.py:326 -> ... -> ../argdigest/argdigest/core/decorator.py:640 -> ../argdigest/argdigest/core/decorator.py:171 -> pharmacophoremt/_ackredit.py:157 -> pharmacophoremt/modeler/interaction_based.py:205\n    rerun: pytest tests/test_eralpha_interface.py::test_complex_facade_consumes_the_prepared_fragment_without_changing_evidence -q\n\nwarnings: 12 in 3 groups\n  StructuralAttributeDropWarning x10 | ../molsysmt/molsysmt/build/add_terminal_atoms.py:106 | Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject t...\n  AckreditTrackingWarning x1 | pharmacophoremt/_ackredit.py:62 | Optional attribution failed at start attribution: provider failed. The scientific result is preserved.\n  UnitStrippedWarning x1 | pharmacophoremt/screening/virtual_screening.py:129 | The unit of the quantity is stripped when downcasting to ndarray.\n\n",
+  "capture_note": "The initial process completed after the interruption request. Its raw record stdout read the reused pathname of the corrected run and is not attributed to this initial execution; the original renamed log is retained here. The raw JUnit identifies the initial failed execution. Its producer/test source changed during execution; it is excluded from acceptance."
+}

@@ -1,5 +1,11 @@
 # Classical Pharmacophore Workflow: Historical Scope and Backlog
 
+**2026-10-10 complex transition:** #42 replaces the legacy complex/default route
+with explicit native observations and a prepared source. See
+[the current complex contract](complex_based_workflow.md); the retired heuristic
+instructions below are not scientific compatibility promises. #41 remains
+partial for structure-based and legacy screening callers.
+
 **2026-10-10 ownership audit:** See #41 and the
 [actual caller inventory](pending_proposals/retire_legacy_molecular_operations.md).
 The preparation utilities and conformer-integration targets listed below remain

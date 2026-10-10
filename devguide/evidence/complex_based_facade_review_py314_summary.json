@@ -1,0 +1,209 @@
+{
+  "schema": "pharmacophoremt.complex_based_facade_review_summary@1",
+  "issue": "uibcdf/pharmacophoremt#42",
+  "recorded_utc": "2026-10-10T07:07:40.178685+00:00",
+  "source_base": "1198af1c410621deb1477a4fc8b8f5ea3c46b376",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "sources_and_inputs_unchanged": false,
+  "full_suite": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "pytest",
+      "--receptor=llm",
+      "--junitxml=/tmp/phmt-complex-suite.xml"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 1339.7317291579966,
+    "stdout": "receptor: 20% 143/712 198s\nreceptor: 40% 285/712 261s\nreceptor: 60% 428/712 1005s\nreceptor: 80% 570/712 1163s\nreceptor: 100% 712/712 1337s\nPASS exit=0 | 712 passed | 1336.82s | 12 warnings\n\nwarnings: 12 in 3 groups\n  StructuralAttributeDropWarning x10 | ../molsysmt/molsysmt/build/add_terminal_atoms.py:106 | Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject t...\n  AckreditTrackingWarning x1 | pharmacophoremt/_ackredit.py:62 | Optional attribution failed at start attribution: provider failed. The scientific result is preserved.\n  UnitStrippedWarning x1 | pharmacophoremt/screening/virtual_screening.py:129 | The unit of the quantity is stripped when downcasting to ndarray.\n\n",
+    "passed": 712,
+    "warnings": 12,
+    "pytest_seconds": 1336.82
+  },
+  "recipe": {
+    "blocks_executed": 3,
+    "source_sha256": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+    "site_counts": {
+      "query": 9,
+      "named": 9,
+      "default": 9,
+      "empty": 0
+    },
+    "feature_names": [
+      "aromatic ring",
+      "hb donor",
+      "hydrophobicity",
+      "positive charge"
+    ],
+    "source_unchanged": true
+  },
+  "qualification_limits": [
+    "Normal editable Python 3.14 local evidence; not the other CI platforms/interpreters.",
+    "Native prepared observations are not scientifically equivalent to the retired heuristic engine.",
+    "ERalpha fragment is not full-receptor preparation or an affinity validation.",
+    "No provider changes; MolSysMT #323/#350/#367 remain separate.",
+    "Source identities describe this parent process; native binary inventory is not subprocess import tracing.",
+    "Run duration is an incidental test duration, not a performance benchmark."
+  ],
+  "full_evidence": {
+    "archive": "complex_based_facade_review_py314.json.gz",
+    "compressed_sha256": "a2be8f0f07598a6c552b914005e33b99d5ffaec49b12a2f06c33bc5041a471c1",
+    "uncompressed_sha256": "e7acef85d681ff5b749ed114618eae437b78f5c1e880e2ddf012579acf5925e1",
+    "compressed_bytes": 61992,
+    "uncompressed_bytes": 496982,
+    "path": "complex_based_facade_review_py314.json.gz"
+  },
+  "scientific_source_verification": {
+    "all_recorded_python_sources_and_native_binaries_unchanged": true,
+    "all_recorded_test_driver_and_input_hashes_match_current_source": true,
+    "checked_input_files": 289,
+    "changed_input_files": [],
+    "raw_combined_status_flag": false,
+    "raw_status_flag_explanation": "The original conservative combined flag also compares repository-wide dirty-overlay strings. Those strings gained only separately retained initial failed evidence files during this corrected execution; no scientific producer source, native binary, test/driver or declared input changed.",
+    "dirty_overlay_additions": [
+      "?? ../devguide/evidence/complex_based_facade_initial_full_py314.json.gz",
+      "?? ../devguide/evidence/complex_based_facade_initial_full_py314_summary.json"
+    ]
+  },
+  "additional_checks": {
+    "issue": "uibcdf/pharmacophoremt#42",
+    "ruff_check": {
+      "command": "python -m ruff check .",
+      "result": "passed"
+    },
+    "ruff_format": {
+      "command": "python -m ruff format --check .",
+      "result": "passed",
+      "files": 239
+    },
+    "documentation": {
+      "command": "python -m sphinx -E -W --keep-going -b html /tmp/phmt-complex-docs-source /tmp/phmt-complex-docs-html",
+      "result": "passed",
+      "scope": "Exact new recipe and original modified navigation with existing linked recipe/notebook stubs; no warning suppression and no full-site rendering claim.",
+      "stdout": "Running Sphinx v9.1.0\nloading translations [en]... done\nmyst v5.1.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions={'colon_fence'}, disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, strikethrough_single_tilde=False, colon_fence_exact_match=False, suppress_warnings=[], highlight_code_blocks=True)\nmyst-nb v1.4.0: NbParserConfig(custom_formats={}, metadata_key='mystnb', cell_metadata_key='mystnb', kernel_rgx_aliases={}, eval_name_regex='^[a-zA-Z_][a-zA-Z0-9_]*$', execution_mode='off', execution_cache_path='', execution_excludepatterns=(), execution_timeout=30, execution_in_temp=False, execution_allow_errors=False, execution_raise_on_error=False, execution_show_tb=False, merge_streams=False, render_plugin='default', remove_code_source=False, remove_code_outputs=False, scroll_outputs=False, code_prompt_show='Show code cell {type}', code_prompt_hide='Hide code cell {type}', number_source_lines=False, output_stderr='show', render_text_lexer='myst-ansi', render_error_lexer='ipythontb', render_image_options={}, render_figure_options={}, render_markdown_format='commonmark', output_folder='build', append_css=True, metadata_to_fm=False)\nUsing jupyter-cache at: /tmp/.jupyter_cache\nbuilding [mo]: targets for 0 po files that are out of date\nwriting output... \nbuilding [html]: targets for 26 source files that are out of date\nupdating environment: [new config] 26 added, 0 changed, 0 removed\nreading sources... [  4%] aligned_cliques\nreading sources... [  8%] aligned_consensus\nreading sources... [ 12%] aromatic_interactions\nreading sources... [ 15%] attribution\nreading sources... [ 19%] ccd_interactions\nreading sources... [ 23%] complex_based_modeler\nreading sources... [ 27%] eralpha_input_audit\nreading sources... [ 31%] excluded_volumes\nreading sources... [ 35%] index\nreading sources... [ 38%] interaction_composition\nreading sources... [ 42%] ionic_interactions\nreading sources... [ 46%] ligand_based_modeler\nreading sources... [ 50%] modular_rigid_tools\nreading sources... [ 54%] observed_est_hydrogens\nreading sources... [ 58%] observed_est_template\nreading sources... [ 62%] observed_interactions\nreading sources... [ 65%] observed_receptor_coverage\nreading sources... [ 69%] pharmacophore_curation\nreading sources... [ 73%] prepared_ccd_ligands\nreading sources... [ 77%] prepared_conformers\nreading sources... [ 81%] prepared_eralpha_interface\nreading sources... [ 85%] ranked_seeds\nreading sources... [ 88%] reference_ligand\nreading sources... [ 92%] retrospective_validation\nreading sources... [ 96%] rigid_consensus\nreading sources... [100%] rigid_refinement\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\ncopying assets... \ncopying static files... \nWriting evaluated template result to /tmp/phmt-complex-docs-html/_static/language_data.js\nWriting evaluated template result to /tmp/phmt-complex-docs-html/_static/basic.css\nWriting evaluated template result to /tmp/phmt-complex-docs-html/_static/documentation_options.js\nWriting evaluated template result to /tmp/phmt-complex-docs-html/_static/alabaster.css\ncopying static files: done\ncopying extra files... \ncopying extra files: done\ncopying assets: done\nwriting output... [  4%] aligned_cliques\nwriting output... [  8%] aligned_consensus\nwriting output... [ 12%] aromatic_interactions\nwriting output... [ 15%] attribution\nwriting output... [ 19%] ccd_interactions\nwriting output... [ 23%] complex_based_modeler\nwriting output... [ 27%] eralpha_input_audit\nwriting output... [ 31%] excluded_volumes\nwriting output... [ 35%] index\nwriting output... [ 38%] interaction_composition\nwriting output... [ 42%] ionic_interactions\nwriting output... [ 46%] ligand_based_modeler\nwriting output... [ 50%] modular_rigid_tools\nwriting output... [ 54%] observed_est_hydrogens\nwriting output... [ 58%] observed_est_template\nwriting output... [ 62%] observed_interactions\nwriting output... [ 65%] observed_receptor_coverage\nwriting output... [ 69%] pharmacophore_curation\nwriting output... [ 73%] prepared_ccd_ligands\nwriting output... [ 77%] prepared_conformers\nwriting output... [ 81%] prepared_eralpha_interface\nwriting output... [ 85%] ranked_seeds\nwriting output... [ 88%] reference_ligand\nwriting output... [ 92%] retrospective_validation\nwriting output... [ 96%] rigid_consensus\nwriting output... [100%] rigid_refinement\n\ngenerating indices... genindex done\nwriting additional pages... search done\ndumping search index in English (code: en)... done\ndumping object inventory... done\nbuild succeeded.\n\nThe HTML pages are in ../../../../tmp/phmt-complex-docs-html.\n"
+    },
+    "development_diagnostic": {
+      "result": "100 focused tests passed; one newly added ERalpha test failed on the wrong fixture reference.",
+      "corrected_test_source": "Use case['molecular_system'] (prepared system used by observations), not case['source'] (deposited source). The native adapter correctly rejected differing source axes; no validation was relaxed.",
+      "initial_stdout": "....................................F................................... [ 71%]\n.............................                                            [100%]\n=================================== FAILURES ===================================\n_ test_complex_facade_consumes_the_prepared_fragment_without_changing_evidence _\ntests/test_eralpha_interface.py:122: in test_complex_facade_consumes_the_prepared_fragment_without_changing_evidence\n    modeler = ComplexBasedModeler(\n            ^^^^^^^^^^^^^^^\n../smonitor/smonitor/core/decorator.py:326: in invoke\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\npharmacophoremt/modeler/complex_based.py:106: in build\n    from_interaction_collection(\n../smonitor/smonitor/core/decorator.py:326: in invoke\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n../smonitor/smonitor/core/decorator.py:326: in invoke\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n../argdigest/argdigest/core/decorator.py:647: in wrapper\n    return _run_digestion()\n           ^^^^^^^^^^^^^^^^\n../argdigest/argdigest/core/decorator.py:640: in _run_digestion\n    return _invoke(plan, fn_to_wrap, bound)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../argdigest/argdigest/core/decorator.py:171: in _invoke\n    return fn_to_wrap(**bound)\n           ^^^^^^^^^^^^^^^^^^^\npharmacophoremt/_ackredit.py:157: in observed\n    return function(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\npharmacophoremt/modeler/interaction_collection.py:116: in from_interaction_collection\n    label: from_interactions(\n../smonitor/smonitor/core/decorator.py:326: in invoke\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n../smonitor/smonitor/core/decorator.py:326: in invoke\n    return fn(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^\n../argdigest/argdigest/core/decorator.py:647: in wrapper\n    return _run_digestion()\n           ^^^^^^^^^^^^^^^^\n../argdigest/argdigest/core/decorator.py:640: in _run_digestion\n    return _invoke(plan, fn_to_wrap, bound)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n../argdigest/argdigest/core/decorator.py:171: in _invoke\n    return fn_to_wrap(**bound)\n           ^^^^^^^^^^^^^^^^^^^\npharmacophoremt/_ackredit.py:157: in observed\n    return function(*args, **kwargs)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^\npharmacophoremt/modeler/interaction_based.py:205: in from_interactions\n    raise ArgumentError(\nE   pharmacophoremt._private.smonitor.exceptions.ArgumentError: Invalid 'interactions': source atom/structure axes differ.\n=============================== warnings summary ===============================\ntests/test_eralpha_interface.py::test_closed_fragment_states_and_source_maps_are_explicit\ntests/test_eralpha_interface.py::test_closed_fragment_states_and_source_maps_are_explicit\n  /home/liliana/repos@uibcdf/molsysmt/molsysmt/build/add_terminal_atoms.py:106: StructuralAttributeDropWarning: Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject the operation instead. Docs: https://www.uibcdf.org/MolSysMT\n    return attach(\n\n-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html\n=========================== short test summary info ============================\nFAILED tests/test_eralpha_interface.py::test_complex_facade_consumes_the_prepared_fragment_without_changing_evidence\n1 failed, 100 passed, 2 warnings in 494.37s (0:08:14)\n",
+      "initial_partial_full_run": {
+        "status": "interruption_requested_but_execution_completed_failed",
+        "interruption_tool_exit_code": 130,
+        "pytest_exit_code": 1,
+        "passed": 711,
+        "failed": 1,
+        "stdout": "receptor: 20% 143/712 201s\nreceptor: 40% 285/712 262s\nreceptor: 60% 428/712 971s\nreceptor: 80% 570/712 1139s\nreceptor: 100% 712/712 1324s\nFAIL exit=1 | 1 failed, 711 passed | 1323.77s | 12 warnings | 1 root cause\n\n[1] ArgumentError | 1 test | call\n    pharmacophoremt/modeler/interaction_based.py:205\n    pharmacophoremt._private.smonitor.exceptions.ArgumentError: Invalid 'interactions': source atom/structure axes differ.\n    frames: tests/test_eralpha_interface.py:125 -> ../smonitor/smonitor/core/decorator.py:326 -> pharmacophoremt/modeler/complex_based.py:106 -> ../smonitor/smonitor/core/decorator.py:326 -> ... -> ../argdigest/argdigest/core/decorator.py:640 -> ../argdigest/argdigest/core/decorator.py:171 -> pharmacophoremt/_ackredit.py:157 -> pharmacophoremt/modeler/interaction_based.py:205\n    rerun: pytest tests/test_eralpha_interface.py::test_complex_facade_consumes_the_prepared_fragment_without_changing_evidence -q\n\nwarnings: 12 in 3 groups\n  StructuralAttributeDropWarning x10 | ../molsysmt/molsysmt/build/add_terminal_atoms.py:106 | Structural attributes were discarded during concatenation: b_factor. Use attribute_policy='strict' to reject t...\n  AckreditTrackingWarning x1 | pharmacophoremt/_ackredit.py:62 | Optional attribution failed at start attribution: provider failed. The scientific result is preserved.\n  UnitStrippedWarning x1 | pharmacophoremt/screening/virtual_screening.py:129 | The unit of the quantity is stripped when downcasting to ndarray.\n\n",
+        "retained_record": "complex_based_facade_initial_full_py314_summary.json",
+        "scope": "Wrong fixture reference; the changed test source excludes this execution from final acceptance. Retained separately; original raw gzip is unchanged."
+      },
+      "counted_as_current_full_qualification": false
+    },
+    "historical_evidence": {
+      "all_original_gzip_archives": 20,
+      "all_unchanged": true,
+      "original_issue_5_body_preserved": true,
+      "original_archives_sha256": [
+        {
+          "path": "devguide/evidence/aromatic_interactions_py314.json.gz",
+          "compressed_sha256": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0"
+        },
+        {
+          "path": "devguide/evidence/ccd_interactions_py314.json.gz",
+          "compressed_sha256": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def"
+        },
+        {
+          "path": "devguide/evidence/curation_py314_cookbook_audit.json.gz",
+          "compressed_sha256": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a"
+        },
+        {
+          "path": "devguide/evidence/eralpha_exclusions_py314.json.gz",
+          "compressed_sha256": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc"
+        },
+        {
+          "path": "devguide/evidence/eralpha_hydrogens_py314.json.gz",
+          "compressed_sha256": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a"
+        },
+        {
+          "path": "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz",
+          "compressed_sha256": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2"
+        },
+        {
+          "path": "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz",
+          "compressed_sha256": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c"
+        },
+        {
+          "path": "devguide/evidence/eralpha_interface_py314.json.gz",
+          "compressed_sha256": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9"
+        },
+        {
+          "path": "devguide/evidence/eralpha_receptor_py314.json.gz",
+          "compressed_sha256": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce"
+        },
+        {
+          "path": "devguide/evidence/eralpha_template_py314.json.gz",
+          "compressed_sha256": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813"
+        },
+        {
+          "path": "devguide/evidence/interaction_composition_py314.json.gz",
+          "compressed_sha256": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a"
+        },
+        {
+          "path": "devguide/evidence/ionic_interactions_py314.json.gz",
+          "compressed_sha256": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802"
+        },
+        {
+          "path": "devguide/evidence/nonfinite_provenance_review_py314.json.gz",
+          "compressed_sha256": "18aa0032790013b62e098e4dcedd08833181a538a80cc1d53c9a9d70a005267e"
+        },
+        {
+          "path": "devguide/evidence/prepared_ccd_py314.json.gz",
+          "compressed_sha256": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2"
+        },
+        {
+          "path": "devguide/evidence/ranked_seeds_py314.json.gz",
+          "compressed_sha256": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6"
+        },
+        {
+          "path": "devguide/evidence/repeat_hydrogen_review_py314.json.gz",
+          "compressed_sha256": "9b28c8b8e82ed74c1f80e52c12da172df4208ee4cafdd09408411821c30618c7"
+        },
+        {
+          "path": "devguide/evidence/rigid_consensus_py314.json.gz",
+          "compressed_sha256": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b"
+        },
+        {
+          "path": "devguide/evidence/rigid_refinement_benchmark_py314.json.gz",
+          "compressed_sha256": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1"
+        },
+        {
+          "path": "devguide/evidence/rigid_refinement_py314.json.gz",
+          "compressed_sha256": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c"
+        },
+        {
+          "path": "devguide/evidence/seed_eligibility_review_py314.json.gz",
+          "compressed_sha256": "086d0412ae93d8156d61f7e69b6acd7af5055eec84dbd04f63ec63a8ba9cdca3"
+        }
+      ]
+    },
+    "closure_reporting": {
+      "index_generation": "passed",
+      "index_check": "passed",
+      "unittest_reporting_protocol": {
+        "passed": 3,
+        "seconds": 0.376
+      },
+      "scope": "Final archive state after moving #42 and regenerating both indexes."
+    },
+    "archive_integrity": {
+      "final_review": "passed",
+      "initial_failed_review": "passed",
+      "historical_unchanged_count": 20
+    }
+  },
+  "prior_failed_run": "complex_based_facade_initial_full_py314_summary.json",
+  "qualification": "Corrected final source: full local suite and recipe accepted; other interpreters/platforms await exact-head CI. Raw failure history and conservative provenance flag are retained and explained."
+}
