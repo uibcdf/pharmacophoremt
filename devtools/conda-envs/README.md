@@ -59,3 +59,36 @@ backends or scientific tests. Routine workspace development remains
 Contract: [shared environment-tool guide](https://github.com/uibcdf/molsyssuite/blob/8f00e6d9de943b6e4710ea62936e2ebea00fad24/devguide/conda_environment_tools.md).
 Tracking: uibcdf/pharmacophoremt#10 and uibcdf/molsyssuite#108; actual scientific
 and public receiving qualification remain owner work.
+
+## Ordinary environment review — 2026-10-10
+
+Three new isolated Linux x86_64 environments were created with the reviewed
+operator: production/development on Python 3.14.8 and docs on Python 3.12.15.
+They use public Conda dependencies and an editable, exact PharmacophoreMT source
+copy, with no sibling source overlays or Python admission bypass. Each passes
+`pip check`, its registered installed-context preflight and a native placed-pose
+positive/displacement-negative check. These are selected compatibility checks,
+not a full platform matrix or a public PharmacophoreMT artifact.
+
+The manager inherited an additional local `ambermd` channel. All installed files
+are nevertheless from `uibcdf`/`conda-forge`; a separate strict, exclusive-channel
+dry solve reproduces every original name/version/build. Strict priority alone
+does not exclude inherited channels. Keep that distinction in future receipts.
+Shared effective-channel reporting is proposed in `uibcdf/molsyssuite#116`.
+
+The ordinary development document does not include optional Ackredit. Tests that
+require it were qualified separately after adding public Ackredit 0.12.0 to the
+temporary development environment, with all prior Conda records unchanged.
+ArgDigest's optional Beartype extra is absent in the original environments;
+its diagnostics explicitly report disabled runtime type checks.
+
+The full documentation build uses the installed ordinary environment, without
+notebook execution. The same warning-free gate can be run in the development
+environment, which supplies both Pytest and the documentation tools:
+
+```bash
+python -m pytest devtools/tests/test_documentation_build.py
+```
+
+Original attempts, failures, corrected verification and dependency inventories:
+`devguide/evidence/ordinary_environment_review_20261010_summary.json`.

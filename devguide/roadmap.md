@@ -42,6 +42,15 @@ empty/failed facade semantics; see [the contract](prepared_receptor_workflow.md)
 It consumes the archived prepared artifact without hydrogen regeneration or
 contact redetection. Synthetic geometric controls do not qualify binding poses.
 
+The ordinary environment review (#10/#23) now executes public-dependency
+production/development Python 3.14 and docs Python 3.12 checks on Linux x86_64,
+with exact editable PHMT source and 119 passing selected controls across separate
+invocations. The whole-site documentation repair (#53) passes strict builds on
+both reviewed interpreters. See
+[the original receipt](evidence/ordinary_environment_review_20261010_summary.json).
+This does not qualify a public PHMT artifact or the full installed matrix;
+effective-channel reporting is proposed in MolSysSuite #116.
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public

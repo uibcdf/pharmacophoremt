@@ -38,6 +38,7 @@ prepared_ccd_ligands
 observed_est_template
 observed_est_hydrogens
 observed_receptor_coverage
+prepared_eralpha_interface
 excluded_volumes
 retrospective_validation
 attribution

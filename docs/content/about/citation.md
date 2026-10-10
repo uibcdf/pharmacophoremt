@@ -1,25 +1,17 @@
 # Citation
 
-Citing the [Zenodo DOI of PocketMT](https://doi.org/10.5281/zenodo.8092688) in
-addition to the scientific paper is a way to ensure that others can reproduce
-your results, as they will know exactly which version of the software you used.
+Identify PharmacophoreMT with its [source repository](https://github.com/uibcdf/pharmacophoremt)
+and the exact commit or installed version used in your calculation. Retain the
+input data, chosen method, parameters and original result provenance needed to
+reproduce that calculation.
 
-<br/>
+PocketMT is a different project; its DOI and release must not be used as a
+PharmacophoreMT software citation. A PharmacophoreMT release DOI or paper will
+be listed here after its own public record has been verified.
 
-````{tabs}
-
-```{tab} Paper
-
-Coming soon...
-
-```
-```{tab} Software
-
-Diego Prada-Gracia & Liliana M. Moreno-Vargas. (2023). uibcdf/PocketMT: 0.8.1 (0.8.1). Zenodo. https://doi.org/10.5281/zenodo.8092688
-
-[BibTeX](../../_bibtex/software.bib)
-
-```
-
-````
+For references to the methods, datasets and software actually reached by a
+calculation, use the optional [scientific attribution workflow](../cookbook/attribution.md).
+It preserves the original bibliography and producer versions with the result;
+reading a saved result does not credit another calculation. Attribution does
+not establish that a public release or archival record exists.
 

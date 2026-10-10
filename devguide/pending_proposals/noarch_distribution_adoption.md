@@ -215,3 +215,48 @@ The example 0.0.0 is not a release decision. No package operation, SDK migration
 support badge, scientific implementation or workflow change is made in this
 record-only review. Central receiving receipt:
 `uibcdf/molsyssuite:devguide/rollouts/pharmacophoremt_ci_receiving_39_45_20261009.json`.
+
+## Executed ordinary environments — 2026-10-10
+
+At source `2a800f51d3035bd29c5a02570c510fa02631c8af`, the accepted SDK
+`8f00e6d9de943b6e4710ea62936e2ebea00fad24` creates three new isolated
+Linux x86_64 environments using public dependencies: production/development
+Python 3.14.8 and docs Python 3.12.15. PharmacophoreMT itself is installed normally
+with `pip install --no-deps --editable` from an isolated exact-source copy;
+this is not a public PHMT artifact. All three pass `pip check`, their actual
+registered installed-context preflight and native positive/displacement-negative
+placed evaluation, with provider imports confined to their respective prefixes.
+Public MolSysMT 0.23.0, PyUnitWizard 0.28.1, ArgDigest 0.15.0,
+SMonitor 0.19.0 and DepDigest 0.13.0 are actually reached.
+
+Initial manager execution inherits the local `ambermd` channel. No installed
+archive comes from it; an exclusive `uibcdf`/`conda-forge`, strict-priority dry
+solve independently reproduces every original name/version/build for all three
+environments. Keep that limitation and the later sandbox-limited diagnostic
+attempt in the original evidence rather than claiming an exclusive initial solve.
+Effective-channel reporting and an optional exclusive route are proposed in
+`uibcdf/molsyssuite#116`; the consumer does not duplicate the shared operator.
+
+The original development environment executes 73 core checks, with one tooling
+import failure caused by running its legacy audit outside the test source tree.
+The corrected source-root invocation passes that one check. An earlier larger
+selection stops at collection because its explicit Ackredit integration is absent.
+Adding only public Ackredit 0.12.0, without changing any prior Conda record, then
+passes the 45 prepared/facade/attribution continuation checks. These separate runs
+give 119 passing selected scientific controls; no complete passing single-suite
+invocation is claimed. ArgDigest's absent optional Beartype extra leaves runtime
+type checks disabled with explicit provider diagnostics.
+
+The ordinary docs environment builds the whole site but initially fails the strict
+gate with nine Sphinx warnings. Local #53 repairs navigation, headings and broken
+links, plus the unrelated PocketMT citation and stale landing-page public badges.
+The corrected whole site passes with Python 3.12.15/Sphinx 9.1.0. Its durable strict
+build guard fails before correction and passes afterward with the ordinary
+development Python 3.14.8/Sphinx 9.1.0 environment.
+
+Receipt: `devguide/evidence/ordinary_environment_review_20261010_summary.json`.
+Scope remains partial: current eight-cell hosted completion, complete installed
+candidate science, real reviewed release plan/access, original PHMT archive,
+same-byte public receiving and admission are still separate #9/#10/#23 gates.
+No release, provider implementation, runtime molecular code, recipe, workflow,
+SDK pin or required support range is changed by this review.

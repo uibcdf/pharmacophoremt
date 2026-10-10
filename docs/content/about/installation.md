@@ -38,4 +38,4 @@ complete successful exact-candidate evidence, authorized staging access, one
 original archive, eight installed Linux/macOS arm64 × Python 3.11–3.14 cells,
 same-byte public promotion and a clean public receiving check. The example plan
 never selects a release; a noarch declaration does not prove installed platform
-compatibility. See [the publication controls](../../../devtools/conda-build/README.md).
+compatibility. See [the publication controls](https://github.com/uibcdf/pharmacophoremt/blob/2a800f51d3035bd29c5a02570c510fa02631c8af/devtools/conda-build/README.md).

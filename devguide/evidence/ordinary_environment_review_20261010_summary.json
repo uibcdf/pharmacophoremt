@@ -1,0 +1,90 @@
+{
+  "schema": "pharmacophoremt.ordinary_environment_review_summary@1",
+  "recorded_at_utc": "2026-10-10T12:54:14.372913+00:00",
+  "source_head": "2a800f51d3035bd29c5a02570c510fa02631c8af",
+  "scope": "Linux ordinary published dependencies with exact editable PHMT source; no public PHMT artifact or full platform/science qualification",
+  "owning_issues": [
+    "uibcdf/pharmacophoremt#10",
+    "uibcdf/pharmacophoremt#23",
+    "uibcdf/pharmacophoremt#53"
+  ],
+  "full_evidence": {
+    "path": "ordinary_environment_review_20261010.json.gz",
+    "compressed_sha256": "d25065bf5ba15d484c623715cfa46616baba80070ac4eea11a81693316d9a3b5",
+    "uncompressed_sha256": "abe537201da1b0206b3dbaebc2a500bf32e582d996aea75bcd658b1c3020b091",
+    "compressed_bytes": 314995,
+    "uncompressed_bytes": 2004492
+  },
+  "ordinary_environments": [
+    {
+      "case": "production",
+      "python": "3.14.8",
+      "creation": true,
+      "pip_check": true,
+      "installed_context": true,
+      "native_positive_and_negative": true,
+      "exclusive_channels_same_coordinates": true
+    },
+    {
+      "case": "development",
+      "python": "3.14.8",
+      "creation": true,
+      "pip_check": true,
+      "installed_context": true,
+      "native_positive_and_negative": true,
+      "exclusive_channels_same_coordinates": true
+    },
+    {
+      "case": "docs",
+      "python": "3.12.15",
+      "creation": true,
+      "pip_check": true,
+      "installed_context": true,
+      "native_positive_and_negative": true,
+      "exclusive_channels_same_coordinates": true
+    }
+  ],
+  "scientific_tests": {
+    "core_original": {
+      "passed": 73,
+      "failed": 1,
+      "deselected": 1
+    },
+    "core_corrected_tooling_audit": {
+      "passed": 1
+    },
+    "optional_ackredit_012_continuation": {
+      "passed": 45
+    },
+    "total_selected_passed": 119,
+    "scope": "Separate scoped invocations; no complete full-suite invocation"
+  },
+  "documentation": {
+    "sphinx": "9.1.0",
+    "original_strict_build": "failed: nine warnings",
+    "original_guard": "failed",
+    "corrected_full_py312": "passed",
+    "corrected_guard_py314": "passed"
+  },
+  "governance": {
+    "administrative_tests": 23,
+    "reporting_tests": 3,
+    "existing_archive_tests": 14,
+    "ruff_check": "passed",
+    "ruff_format": "passed: 246 files"
+  },
+  "unchanged": {
+    "runtime_python_files": 130,
+    "prior_json_gzip_archives": 32,
+    "prepared_native_input_archives": 1,
+    "notebook_code_outputs_metadata": true
+  },
+  "remaining": [
+    "Complete current eight-cell hosted source evidence",
+    "Real PHMT release plan/candidate/access",
+    "Exact original PHMT archive installed science/platform gates",
+    "Same-byte public delivery and clean receiving",
+    "Python public admission"
+  ],
+  "cleanup": "Task-owned /tmp review retained through verification/push; remove after retaining required receipts. Shared environment/cache and siblings are preserved."
+}

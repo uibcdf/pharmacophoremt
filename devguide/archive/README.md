@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (21)
+### Resolved (22)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -16,6 +16,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_structure_modeler_transition.md`](native_structure_modeler_transition.md) — [#44](https://github.com/uibcdf/pharmacophoremt/issues/44) — Replace the structure modeler's molecular heuristics with explicit cached receptor projections. *(resolved, measured)*
 - [`native_virtual_screening_transition.md`](native_virtual_screening_transition.md) — [#45](https://github.com/uibcdf/pharmacophoremt/issues/45) — Replace implicit legacy screening and validation preparation with explicit prepared-native tools. *(resolved, measured)*
 - [`nonfinite_observation_provenance.md`](nonfinite_observation_provenance.md) — [#35](https://github.com/uibcdf/pharmacophoremt/issues/35) — Undefined aromatic measurements fail consumer quantity provenance serialization. *(resolved, measured)*
+- [`ordinary_documentation_build.md`](ordinary_documentation_build.md) — [#53](https://github.com/uibcdf/pharmacophoremt/issues/53) — Repair the strict whole-site build and unrelated software identity claims. *(resolved, measured)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
 - [`prepared_distinct_consensus.md`](prepared_distinct_consensus.md) — [#51](https://github.com/uibcdf/pharmacophoremt/issues/51) — Qualify distinct prepared EST/DES consensus support, empty outcomes and persisted source maps. *(resolved, measured)*
 - [`prepared_end_to_end_workflow.md`](prepared_end_to_end_workflow.md) — [#49](https://github.com/uibcdf/pharmacophoremt/issues/49) — Qualify construction, curation, persistence and placed screening on a public prepared CCD control. *(resolved, measured)*
