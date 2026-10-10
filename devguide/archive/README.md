@@ -5,9 +5,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (14)
+### Resolved (15)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
+- [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*

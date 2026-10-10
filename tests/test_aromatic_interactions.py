@@ -481,6 +481,7 @@ class NoAck(importlib.abc.MetaPathFinder):
             raise ModuleNotFoundError('controlled absence', name=fullname)
 sys.meta_path.insert(0, NoAck())
 import pharmacophoremt as phmt
+from pharmacophoremt.screening import PoseEvaluator
 assert 'ackredit' not in sys.modules
 from devtools.aromatic_interaction_cases import build_case, observe
 source, ligand, partner = build_case()
@@ -488,6 +489,6 @@ observed = observe(source, ligand, partner, 'plane_angle_intersection', 'smarts_
 with phmt.attribution():
     query = phmt.modeler.from_interactions(source, observed, ligand)
 assert query.metadata['attribution']['status'] == 'unavailable'
-assert phmt.screening.PoseEvaluator(query).evaluate(source, selection=ligand)['status'] == 'matched'
+assert PoseEvaluator(query).evaluate(source, selection=ligand)['status'] == 'matched'
 assert 'ackredit' not in sys.modules
 """)

@@ -1,0 +1,66 @@
+{
+  "schema": "pharmacophoremt.aromatic_attribution_import_completion@1",
+  "issue": "uibcdf/pharmacophoremt#48",
+  "review_stdout": "PASS exit=0 | 60 passed | 47.78s | 1 warnings\n\nwarnings: 1 in 1 groups\n  AckreditTrackingWarning x1 | pharmacophoremt/_ackredit.py:62 | Optional attribution failed at start attribution: provider failed. The scientific result is preserved.\n\n\nreceptor: 60% 36/60 20s\nreceptor: 80% 48/60 34s\nreceptor: 100% 60/60 48s\n\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/devguide_index.py', '--check']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_reporting_protocol.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_evidence_archive.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'ruff', 'check', 'pharmacophoremt', 'tests', 'devtools']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'ruff', 'format', '--check', 'pharmacophoremt', 'tests', 'devtools']\nAdministrative exit=0 ['git', 'diff', '--check']\n{\"accepted\": true, \"tests\": 60, \"failed\": 0, \"resource_removed\": true}\n",
+  "post_archive_checks": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "devtools.evidence_archive",
+        "devguide/evidence/aromatic_attribution_import_review_py314_summary.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.aromatic_attribution_import_review@1\", \"report_schema\": \"pharmacophoremt.aromatic_attribution_import_review@1\", \"recorded_at_utc\": \"2026-10-10T09:28:48.908922+00:00\", \"archive_bytes_verified\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "Generated report indexes are current.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.509s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.331s\n\nOK\n"
+    }
+  ],
+  "owned_file_sha256": {
+    "/tmp/phmt-aromatic-hosted.txt": "a94c59a913335879f9940ee1a534c2c2337fbf15d9920abbc57d2d5506f3dcc8",
+    "/tmp/phmt-aromatic-before.json": "d975fc3ece490926fa1b6239900fc55a6c48516638a36d8528ca001eaf923151",
+    "/tmp/phmt-aromatic-import-review.py": "7fc8993642270ea20c496e3d3267e3676ae9ce13828b388348eabcd6361fc43d",
+    "/tmp/phmt-aromatic-import-review.txt": "48d5ec99e7eff6e76d59cb50ac163802ffb8614fa18206cf1b751c82266a934d"
+  },
+  "cleanup": "Four named owned files only. Original hosted excerpt, pre-fix test/source and review driver/output retained in archive/receipt. Initial and corrected pytest contexts removed by TemporaryDirectory. Shared cache/other tasks untouched.",
+  "owned_files_removed": true
+}

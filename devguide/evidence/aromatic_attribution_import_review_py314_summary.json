@@ -1,0 +1,49 @@
+{
+  "schema": "pharmacophoremt.aromatic_attribution_import_review@1",
+  "issue": "uibcdf/pharmacophoremt#48",
+  "recorded_at_utc": "2026-10-10T09:28:48.908922+00:00",
+  "source_base": "f0db054a244aa44208236bd9f021ead45d9159f8",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "qualification_scope": "Corrected isolated absent-Ackredit guard plus neighboring aromatic/attribution tests and reporting/Ruff checks; not full suite or hosted matrix. Runtime PHMT source and native binaries are unchanged by the test-only fix.",
+  "producer_sources_unchanged": true,
+  "native_binaries_unchanged": true,
+  "inputs_unchanged": true,
+  "prior_archives_unchanged": true,
+  "prior_archive_count": 26,
+  "resource_lifecycle": {
+    "owner": "PHMT #48 import review",
+    "context": "/tmp/phmt-aromatic-import-c9dwfxn_",
+    "scope": "Task-only TemporaryDirectory pytest/JUnit cleanup, not whole #43 resource review",
+    "context_removed": true
+  },
+  "accepted": true,
+  "focused_tests": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "pytest",
+      "--receptor=llm",
+      "tests/test_aromatic_interactions.py",
+      "tests/test_attribution.py",
+      "--basetemp=/tmp/phmt-aromatic-import-c9dwfxn_/pytest",
+      "--junitxml=/tmp/phmt-aromatic-import-c9dwfxn_/focused.xml"
+    ],
+    "exit_code": 0,
+    "seconds": 50.73505460400338,
+    "tests": 60,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "full_evidence": {
+    "path": "aromatic_attribution_import_review_py314.json.gz",
+    "compressed_sha256": "56174f01b551f3ee964780f75300c20903d4e149db1e3c6379795be53ae8efca",
+    "uncompressed_sha256": "5623b2650becdeedd1289aefef2c821aa1e29d065690089fe49c6cd718760e15",
+    "compressed_bytes": 43260,
+    "uncompressed_bytes": 175302
+  }
+}
