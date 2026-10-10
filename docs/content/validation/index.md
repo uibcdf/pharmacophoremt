@@ -10,7 +10,7 @@ They do not rerun scientific calculations.
 
 | Class | Existing evidence | Current boundary |
 | --- | --- | --- |
-| Analytical controls | [Ranking and retrospective accounting](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/archive/ranking_and_retrospective_accounting.md), independent RDKit/oracle comparisons | Known rankings and declared fixtures, not activity prediction |
+| Analytical controls | [Prepared end-to-end workflow](prepared_workflow.md); [ranking and retrospective accounting](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/archive/ranking_and_retrospective_accounting.md), independent RDKit/oracle comparisons | Known geometry/rankings and declared fixtures, not activity prediction |
 | Scientific preparation/workflow controls | [Prepared CCD EST/DES case](prepared_ccd.md) | Ideal molecular geometries, not experimental binding poses |
 | Retrospective screening | [Validation recipe](../cookbook/retrospective_validation.md) | Correct evaluated-subset accounting; no activity dataset qualified here |
 | Vertical pilot | [Declared ERα interface](../cookbook/prepared_eralpha_interface.md) and [diagnostic evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/eralpha_interaction_diagnostics.md) | Environmental hydrogen refinement and biological acceptance remain open |
@@ -24,6 +24,7 @@ Historical timings from different environments do not isolate an improvement.
 :maxdepth: 1
 
 prepared_ccd
+prepared_workflow
 ```
 
 ## Contribute a case

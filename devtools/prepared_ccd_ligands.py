@@ -32,7 +32,7 @@ def state_payload(system):
     return json.loads(json.dumps(payload, default=lambda array: array.tolist()))
 
 
-def prepare_case(case_id):
+def prepare_case(case_id, *, features=None):
     """Load one fixed fixture and retain the actual preparation observations."""
     import molsysmt as msm
     import numpy as np
@@ -41,6 +41,7 @@ def prepare_case(case_id):
     from pharmacophoremt.modeler import get_features
 
     case = next(case for case in load_cases() if case["case_id"] == case_id)
+    feature_options = {} if features is None else {"features": features}
     path = DIRECTORY / case["file"]
     raw = path.read_bytes()
     if (
@@ -61,7 +62,7 @@ def prepare_case(case_id):
         msm.get(source, coordinates=True), to_unit="nm"
     ).copy()
     try:
-        get_features(source)
+        get_features(source, **feature_options)
     except msm.StructuralInconsistencyError as error:
         raw_recognition = dict(status="blocked", code=error.code, message=str(error))
     else:
@@ -69,7 +70,7 @@ def prepare_case(case_id):
     prepared = msm.convert(
         msm.convert(source, to_form="rdkit.Mol"), to_form="molsysmt.MolSys"
     )
-    inventory = get_features(prepared)
+    inventory = get_features(prepared, **feature_options)
     rmsd = msm.structure.get_rmsd(
         prepared,
         selection="all",
@@ -121,6 +122,8 @@ def prepare_case(case_id):
         source_bytes_unchanged=raw == path.read_bytes(),
         complete=True,
     )
+    if features is not None:
+        report["selected_features"] = list(features)
     return dict(molecular_system=prepared, inventory=inventory, report=report)
 
 

@@ -150,6 +150,46 @@ class TestEvidenceArchive(unittest.TestCase):
                 hashlib.sha256(path.read_bytes()).hexdigest(), case["sha256"]
             )
 
+    def test_prepared_workflow_preserves_failed_inputs_and_execution_identity(self):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/prepared_workflow_py314_summary.json"
+        )
+        self.assertEqual(report["schema"], "pharmacophoremt.prepared_workflow@1")
+        self.assertEqual(summary["environment"], report["environment"])
+        self.assertTrue(report["scientific_outputs_stable"])
+        self.assertTrue(report["source_hashes_unchanged"])
+        self.assertTrue(report["input_hashes_unchanged"])
+        for name, content in report["executed_source_overlay"].items():
+            self.assertEqual(
+                hashlib.sha256(content.encode()).hexdigest(),
+                report["input_sha256"][name],
+            )
+        for run in report["records"]:
+            self.assertTrue(run["expectations_passed"])
+            self.assertEqual(len(run["result"]["results"]), 9)
+            self.assertEqual(run["result"]["fresh_reader"]["attribution"]["uses"], [])
+            for record in run["result"]["results"].values():
+                evaluations = record["screening"]["evaluations"]
+                self.assertEqual(len(evaluations), 5)
+                self.assertEqual(evaluations[2]["status"], "not_matched")
+                self.assertEqual(evaluations[2]["fit_value"], 0)
+                self.assertEqual(evaluations[3]["status"], "failed")
+                self.assertIsNone(evaluations[3]["fit_value"])
+        tracked = report["records"][1]
+        datasets = [
+            item
+            for item in tracked["attribution"]["items"]
+            if item["type"] == "dataset"
+        ]
+        self.assertEqual(len(datasets), 1)
+        self.assertIn("ccd:EST:", datasets[0]["id"])
+        self.assertTrue(
+            any(
+                use["item_id"] == datasets[0]["id"] and use["roles"] == ["input_data"]
+                for use in tracked["attribution"]["uses"]
+            )
+        )
+
     def test_cli_reads_real_archive_without_site_packages(self):
         result = subprocess.run(
             [sys.executable, "-S", "-m", "devtools.evidence_archive", str(CCD_SUMMARY)],

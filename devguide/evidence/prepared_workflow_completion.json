@@ -1,0 +1,206 @@
+{
+  "schema": "pharmacophoremt.prepared_workflow_completion@1",
+  "recorded_at_utc": "2026-10-10T10:44:47.475711+00:00",
+  "owning_issue": "uibcdf/pharmacophoremt#49",
+  "original_summary": "prepared_workflow_py314_summary.json",
+  "source_head": "74bf6c628930613b61b4f62645c17f1bb6b985d2",
+  "runtime_source_unchanged": true,
+  "producer_python_hashes_still_match": true,
+  "recorded_native_extension_hashes_still_match": true,
+  "executed_driver_guard_inputs_still_match": true,
+  "original_archive_count_unchanged": 28,
+  "later_verification": {
+    "projection": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "pytest",
+        "-q",
+        "tests/test_prepared_ccd_ligands.py::test_modular_workflow_scientific_fields_are_stable_with_tracking",
+        "--basetemp",
+        "/tmp/phmt-49-review-68c3g14h/pytest-projection",
+        "--junitxml",
+        "/tmp/phmt-49-review-68c3g14h/projection.xml"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 14.098207950002688,
+      "stdout": ".                                                                        [100%]\n1 passed in 11.57s\n",
+      "stderr": ""
+    },
+    "sphinx2": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.13/bin/python",
+        "-m",
+        "sphinx",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-b",
+        "html",
+        "/tmp/phmt-49-review-68c3g14h/sphinx-source",
+        "/tmp/phmt-49-review-68c3g14h/sphinx-html"
+      ],
+      "exit_code": 0,
+      "stdout": "Running Sphinx v9.1.0\nloading translations [en]... done\nmyst v5.1.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions=set(), disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, strikethrough_single_tilde=False, colon_fence_exact_match=False, suppress_warnings=[], highlight_code_blocks=True)\nmyst-nb v1.4.0: NbParserConfig(custom_formats={}, metadata_key='mystnb', cell_metadata_key='mystnb', kernel_rgx_aliases={}, eval_name_regex='^[a-zA-Z_][a-zA-Z0-9_]*$', execution_mode='off', execution_cache_path='', execution_excludepatterns=(), execution_timeout=30, execution_in_temp=False, execution_allow_errors=False, execution_raise_on_error=False, execution_show_tb=False, merge_streams=False, render_plugin='default', remove_code_source=False, remove_code_outputs=False, scroll_outputs=False, code_prompt_show='Show code cell {type}', code_prompt_hide='Hide code cell {type}', number_source_lines=False, output_stderr='show', render_text_lexer='myst-ansi', render_error_lexer='ipythontb', render_image_options={}, render_figure_options={}, render_markdown_format='commonmark', output_folder='build', append_css=True, metadata_to_fm=False)\nUsing jupyter-cache at: /tmp/phmt-49-review-68c3g14h/.jupyter_cache\nbuilding [mo]: targets for 0 po files that are out of date\nwriting output... \nbuilding [html]: targets for 4 source files that are out of date\nupdating environment: [new config] 4 added, 0 changed, 0 removed\nreading sources... [ 25%] cookbook/prepared_workflow\nreading sources... [ 50%] index\nreading sources... [ 75%] validation/prepared_ccd\nreading sources... [100%] validation/prepared_workflow\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\ncopying assets... \ncopying static files... \nWriting evaluated template result to /tmp/phmt-49-review-68c3g14h/sphinx-html/_static/language_data.js\nWriting evaluated template result to /tmp/phmt-49-review-68c3g14h/sphinx-html/_static/basic.css\nWriting evaluated template result to /tmp/phmt-49-review-68c3g14h/sphinx-html/_static/documentation_options.js\ncopying static files: done\ncopying extra files... \ncopying extra files: done\ncopying assets: done\nwriting output... [ 25%] cookbook/prepared_workflow\nwriting output... [ 50%] index\nwriting output... [ 75%] validation/prepared_ccd\nwriting output... [100%] validation/prepared_workflow\n\ngenerating indices... genindex done\nwriting additional pages... search done\ndumping search index in English (code: en)... done\ndumping object inventory... done\nbuild succeeded.\n\nThe HTML pages are in ../../../../tmp/phmt-49-review-68c3g14h/sphinx-html.\n",
+      "stderr": "",
+      "scope": "Two new pages, linked existing CCD case; two unrelated existing relative links resolved to canonical public URLs in temporary rendering copy only. Not full-site rendering."
+    },
+    "final-gates": [
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "Generated report indexes are current.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "F..\n======================================================================\nFAIL: test_existing_reports_have_valid_metadata_and_generated_indexes (test_reporting_protocol.TestReportingProtocol.test_existing_reports_have_valid_metadata_and_generated_indexes)\n----------------------------------------------------------------------\nTraceback (most recent call last):\n  File \"/home/liliana/repos@uibcdf/pharmacophoremt/tests/test_reporting_protocol.py\", line 20, in test_existing_reports_have_valid_metadata_and_generated_indexes\n    self.assertEqual(\n    ~~~~~~~~~~~~~~~~^\n        {report.fields[\"issue\"] for report in reports},\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    ...<42 lines>...\n        },\n        ^^\n    )\n    ^\nAssertionError: Items in the first set but not the second:\n'uibcdf/pharmacophoremt#49'\n\n----------------------------------------------------------------------\nRan 3 tests in 0.255s\n\nFAILED (failures=1)\n"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..........\n----------------------------------------------------------------------\nRan 10 tests in 0.671s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_ci_routes.py"
+        ],
+        "exit_code": 5,
+        "stdout": "",
+        "stderr": "\n----------------------------------------------------------------------\nRan 0 tests in 0.000s\n\nNO TESTS RAN\n"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "devtools/tests"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 2.137s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "239 files already formatted\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "corrected-final-gates": [
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.512s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-m",
+          "pytest",
+          "-q",
+          "tests/test_ci_routes.py",
+          "--basetemp",
+          "/tmp/phmt-49-review-68c3g14h/pytest-ci"
+        ],
+        "exit_code": 0,
+        "stdout": "..                                                                       [100%]\n2 passed in 0.07s\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.13/bin/python",
+          "-m",
+          "sphinx",
+          "-W",
+          "--keep-going",
+          "-E",
+          "-b",
+          "html",
+          "/tmp/phmt-49-review-68c3g14h/sphinx-source",
+          "/tmp/phmt-49-review-68c3g14h/sphinx-html"
+        ],
+        "exit_code": 0,
+        "stdout": "Running Sphinx v9.1.0\nloading translations [en]... done\nmyst v5.1.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions=set(), disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, strikethrough_single_tilde=False, colon_fence_exact_match=False, suppress_warnings=[], highlight_code_blocks=True)\nmyst-nb v1.4.0: NbParserConfig(custom_formats={}, metadata_key='mystnb', cell_metadata_key='mystnb', kernel_rgx_aliases={}, eval_name_regex='^[a-zA-Z_][a-zA-Z0-9_]*$', execution_mode='off', execution_cache_path='', execution_excludepatterns=(), execution_timeout=30, execution_in_temp=False, execution_allow_errors=False, execution_raise_on_error=False, execution_show_tb=False, merge_streams=False, render_plugin='default', remove_code_source=False, remove_code_outputs=False, scroll_outputs=False, code_prompt_show='Show code cell {type}', code_prompt_hide='Hide code cell {type}', number_source_lines=False, output_stderr='show', render_text_lexer='myst-ansi', render_error_lexer='ipythontb', render_image_options={}, render_figure_options={}, render_markdown_format='commonmark', output_folder='build', append_css=True, metadata_to_fm=False)\nUsing jupyter-cache at: /tmp/phmt-49-review-68c3g14h/.jupyter_cache\nbuilding [mo]: targets for 0 po files that are out of date\nwriting output... \nbuilding [html]: targets for 4 source files that are out of date\nupdating environment: [new config] 4 added, 0 changed, 0 removed\nreading sources... [ 25%] cookbook/prepared_workflow\nreading sources... [ 50%] index\nreading sources... [ 75%] validation/prepared_ccd\nreading sources... [100%] validation/prepared_workflow\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\ncopying assets... \ncopying static files... \nWriting evaluated template result to /tmp/phmt-49-review-68c3g14h/sphinx-html/_static/language_data.js\nWriting evaluated template result to /tmp/phmt-49-review-68c3g14h/sphinx-html/_static/basic.css\nWriting evaluated template result to /tmp/phmt-49-review-68c3g14h/sphinx-html/_static/documentation_options.js\ncopying static files: done\ncopying extra files... \ncopying extra files: done\ncopying assets: done\nwriting output... [ 25%] cookbook/prepared_workflow\nwriting output... [ 50%] index\nwriting output... [ 75%] validation/prepared_ccd\nwriting output... [100%] validation/prepared_workflow\n\ngenerating indices... genindex done\nwriting additional pages... search done\ndumping search index in English (code: en)... done\ndumping object inventory... done\nbuild succeeded.\n\nThe HTML pages are in ../../../../tmp/phmt-49-review-68c3g14h/sphinx-html.\n",
+        "stderr": "",
+        "scope": "Final two new pages plus existing CCD case; unrelated relative links in existing case resolved to canonical URLs in temporary copy. Not a full-site build."
+      }
+    ]
+  },
+  "administrative_corrections": "Added #49 to the explicit report inventory. The initial unittest invocation did not execute pytest CI-route functions; the corrected pytest command executes both controls. Initial isolated-render missing links refer to unrelated old-page targets and are resolved to canonical public URLs in the temporary copy only.",
+  "scope": "Bounded source-checkout analytical workflow; hosted matrix, installed artifacts, public delivery and biological qualification remain independent.",
+  "temporary_resources": {
+    "owner": "PharmacophoreMT #49 review",
+    "path": "/tmp/phmt-49-review-68c3g14h",
+    "cleanup": "Remove only this owned review directory after preserving necessary receipts. Shared caches/environments/sibling repositories are not task-owned."
+  }
+}

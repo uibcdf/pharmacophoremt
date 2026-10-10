@@ -28,7 +28,7 @@ from devtools.prepared_ccd_ligands import (
 )
 
 
-def scientific_projection(value):
+def scientific_projection(value, *, attribution_keys=("attribution",)):
     """Exclude only citation payloads from a portable scientific comparison.
 
     Independently called public steps can attach attribution to input inventories;
@@ -36,12 +36,15 @@ def scientific_projection(value):
     """
     if isinstance(value, dict):
         return {
-            key: scientific_projection(item)
+            key: scientific_projection(item, attribution_keys=attribution_keys)
             for key, item in value.items()
-            if key != "attribution"
+            if key not in attribution_keys
         }
     if isinstance(value, list):
-        return [scientific_projection(item) for item in value]
+        return [
+            scientific_projection(item, attribution_keys=attribution_keys)
+            for item in value
+        ]
     return value
 
 

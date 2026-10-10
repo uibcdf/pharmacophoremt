@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (17)
+### Resolved (18)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -17,6 +17,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_virtual_screening_transition.md`](native_virtual_screening_transition.md) — [#45](https://github.com/uibcdf/pharmacophoremt/issues/45) — Replace implicit legacy screening and validation preparation with explicit prepared-native tools. *(resolved, measured)*
 - [`nonfinite_observation_provenance.md`](nonfinite_observation_provenance.md) — [#35](https://github.com/uibcdf/pharmacophoremt/issues/35) — Undefined aromatic measurements fail consumer quantity provenance serialization. *(resolved, measured)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
+- [`prepared_end_to_end_workflow.md`](prepared_end_to_end_workflow.md) — [#49](https://github.com/uibcdf/pharmacophoremt/issues/49) — Qualify construction, curation, persistence and placed screening on a public prepared CCD control. *(resolved, measured)*
 - [`provenance_strings_interpreted_as_quantities.md`](provenance_strings_interpreted_as_quantities.md) — [#25](https://github.com/uibcdf/pharmacophoremt/issues/25) — Provenance serialization interprets literal identifiers as physical quantities. *(resolved, reproduced)*
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*

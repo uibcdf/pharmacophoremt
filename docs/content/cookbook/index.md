@@ -22,6 +22,7 @@ complex_based_modeler
 structure_based_modeler
 ccd_interactions
 pharmacophore_curation
+prepared_workflow
 prepared_conformers
 aligned_consensus
 aligned_cliques

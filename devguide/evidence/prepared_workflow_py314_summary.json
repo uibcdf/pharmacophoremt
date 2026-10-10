@@ -1,0 +1,109 @@
+{
+  "schema": "pharmacophoremt.prepared_workflow_summary@1",
+  "recorded_at_utc": "2026-10-10T10:39:00.483722+00:00",
+  "source_head": "74bf6c628930613b61b4f62645c17f1bb6b985d2",
+  "source_working_state": "M devtools/prepared_ccd_ligands.py\n M devtools/validate_prepared_ccd_ligands.py\n M docs/content/cookbook/index.md\n M docs/content/validation/index.md\n?? devguide/pending_proposals/prepared_end_to_end_workflow.md\n?? devguide/prepared_end_to_end_workflow.md\n?? devtools/prepared_workflow.py\n?? docs/content/cookbook/prepared_workflow.md\n?? docs/content/validation/prepared_workflow.md\n?? tests/test_prepared_workflow.py",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "packages_before": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "5cc097a0709e798d1baa327836ca42bf7b2757d4cdcc8dfe60cff1338d560880",
+        "python_file_count": 130
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.12.0+2.g1342f0f",
+        "python_source_sha256": "8935cdb1496f7ce5f27c7afab844cb6714835576dc2dc1da8e83cc580856c606",
+        "python_file_count": 69
+      }
+    },
+    "packages_after": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "5cc097a0709e798d1baa327836ca42bf7b2757d4cdcc8dfe60cff1338d560880",
+        "python_file_count": 130
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.12.0+2.g1342f0f",
+        "python_source_sha256": "8935cdb1496f7ce5f27c7afab844cb6714835576dc2dc1da8e83cc580856c606",
+        "python_file_count": 69
+      }
+    },
+    "molecular_extensions": {
+      "molsysmt._rust": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+      }
+    }
+  },
+  "scope": "public CCD ideal prepared workflow controls; no biological/activity/performance claim",
+  "full_evidence": {
+    "path": "prepared_workflow_py314.json.gz",
+    "compressed_sha256": "bfda487d2d1f412dc98e41248871a488aadfa885089c197e2500b78ea865b175",
+    "uncompressed_sha256": "7d3bc7ede4aff9ccb5f66441a0413dfd0064430087eb465e3ef6e64b621a4b37",
+    "compressed_bytes": 1533970,
+    "uncompressed_bytes": 26761051
+  },
+  "expectations_passed": true,
+  "scientific_outputs_stable": true,
+  "source_hashes_unchanged": true,
+  "input_hashes_unchanged": true,
+  "original_archive_count": 28,
+  "focused_tests": {
+    "passed": 15,
+    "pytest_seconds": 26.2
+  },
+  "oracle": {
+    "hydrophobic_count": 9,
+    "aromatic_count": 1,
+    "near_min_hydrophobic_distance_nm": 0.04999999999999999,
+    "near_aromatic_distance_nm": 0.05,
+    "far_min_hydrophobic_distance_nm": 1.3692956218435812,
+    "far_aromatic_distance_nm": 2.0,
+    "partial_coverage": 0.25,
+    "narrow_radius_nm": 0.02,
+    "wide_aromatic_radius_nm": 0.1
+  },
+  "attribution_counts": [
+    {
+      "host_tracking": false,
+      "items": 4,
+      "uses": 6
+    },
+    {
+      "host_tracking": true,
+      "items": 14,
+      "uses": 24
+    }
+  ]
+}

@@ -20,6 +20,15 @@ guards without importing the scientific package.
 
 ## Scientific evidence archives
 
+Prepared end-to-end qualification: `python -m devtools.prepared_workflow --output FILE`
+composes the existing CCD fixture client, cached-model tools, three native codecs
+and placed screening with independent negative/failure controls. Its
+[contract](../devguide/prepared_end_to_end_workflow.md),
+[recipe](../docs/content/cookbook/prepared_workflow.md) and
+[case](../docs/content/validation/prepared_workflow.md) declare the scope.
+This opt-in driver requires the development checkout and Ackredit for its
+explicit application-session review. It is not biological or performance evidence.
+
 `evidence_archive.read_archived_evidence()` reads the existing local gzip/JSON
 archive envelope with compressed/uncompressed SHA-256 and optional byte-count
 checks. It preserves original failed, partial and unknown fields, requires a
