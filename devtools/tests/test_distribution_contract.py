@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import ast
 import hashlib
 import io
 import json
@@ -14,6 +15,7 @@ import unittest
 from pathlib import Path
 
 import yaml
+from packaging.requirements import Requirement
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / "devtools"))
@@ -27,10 +29,15 @@ class TestDistributionContract(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
         cls.routes = load_sdk()
-        from devtools.scripts import noarch_conda, verify_installed_matrix
+        from devtools.scripts import (
+            installed_noarch,
+            noarch_conda,
+            verify_installed_matrix,
+        )
 
         cls.noarch = noarch_conda
         cls.matrix = verify_installed_matrix
+        cls.installed = installed_noarch
 
     def setUp(self):
         temporary = tempfile.TemporaryDirectory(prefix="pharmacophoremt-controls-")
@@ -153,6 +160,61 @@ class TestDistributionContract(unittest.TestCase):
             )
         )
         self.assertIn("pharmacophoremt.screening", packages)
+
+    def test_installed_test_inputs_cover_imported_optional_integrations(self):
+        imported = set()
+        for path in (ROOT / "tests").glob("test_*.py"):
+            for node in ast.walk(ast.parse(path.read_text())):
+                if isinstance(node, ast.Import):
+                    imported.update(alias.name.split(".")[0] for alias in node.names)
+                elif isinstance(node, ast.ImportFrom) and node.module:
+                    imported.add(node.module.split(".")[0])
+        integrations = {
+            source["name"]
+            for source in self.routes.audit(self.root)["source_routes"]
+            if source["role"] == "integration"
+        }
+        dependencies = {
+            Requirement(spec).name
+            for spec in self.installed.test_dependencies(self.plan, self.inventory)
+        }
+        self.assertTrue(integrations & imported)
+        self.assertTrue((integrations & imported) <= dependencies)
+
+    def test_installed_test_inputs_keep_explicit_native_bootstrap_tools(self):
+        # These optional native dependencies are explicitly bootstrapped in source CI.
+        workflow = yaml.safe_load((ROOT / ".github/workflows/CI.yaml").read_text())
+        cells = workflow["jobs"]["test"]["strategy"]["matrix"]["cfg"]
+        dependencies = {
+            Requirement(spec).name
+            for spec in self.installed.test_dependencies(self.plan, self.inventory)
+        }
+        for name in ("beartype", "openmm"):
+            with self.subTest(name=name):
+                for cell in cells:
+                    environment = yaml.safe_load(
+                        (ROOT / cell["environment-file"]).read_text()
+                    )
+                    self.assertIn(name, environment["dependencies"])
+                self.assertIn(name, dependencies)
+
+    def test_installed_test_versions_match_the_public_qualification_receipt(self):
+        receipt = json.loads(
+            (
+                ROOT
+                / "devguide/evidence/public_test_dependencies_20261010_summary.json"
+            ).read_text()
+        )
+        declared = self.inventory["installed_tests"]["conda_dependencies"]
+        self.assertEqual(declared, receipt["declared_conda_dependencies"])
+        for spec in declared:
+            requirement = Requirement(spec)
+            observed = receipt["provider_identity"][requirement.name]["version"]
+            self.assertEqual(str(requirement.specifier), "==" + observed)
+        self.assertGreater(receipt["full_source_tests"]["tests"], 0)
+        self.assertEqual(receipt["full_source_tests"]["failures"], 0)
+        self.assertEqual(receipt["full_source_tests"]["errors"], 0)
+        self.assertEqual(receipt["full_source_tests"]["skipped"], 0)
 
     def test_all_routes_source_roles_and_contexts_use_the_shared_preflight(self):
         result = self.routes.audit(self.root)

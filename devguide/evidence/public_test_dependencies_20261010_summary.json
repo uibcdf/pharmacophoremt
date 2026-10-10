@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-10",
+  "owner": "uibcdf/pharmacophoremt#55",
+  "source_sha": "3424f3ead0ef85ba9245a5edff4c58bb39d5fcfd",
+  "sdk_sha": "8f00e6d9de943b6e4710ea62936e2ebea00fad24",
+  "focused_tests": {
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "tests": 28,
+    "junit_reported_tests": 28
+  },
+  "full_source_tests": {
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "tests": 899,
+    "junit_reported_tests": 916
+  },
+  "provider_identity": {
+    "molsysmt": {
+      "version": "0.23.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/molsysmt/__init__.py",
+      "file": "molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+      "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+      "url": "https://conda.anaconda.org/uibcdf/linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda"
+    },
+    "molsysviewer": {
+      "version": "0.24.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/molsysviewer/__init__.py",
+      "file": "molsysviewer-0.24.0-py_1.tar.bz2",
+      "sha256": "e31dfb114ab2e49f22b372992d0201455b91849f2631d0165b802069e13abeaa",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/molsysviewer-0.24.0-py_1.tar.bz2"
+    },
+    "ackredit": {
+      "version": "0.12.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/ackredit/__init__.py",
+      "file": "ackredit-0.12.0-py_0.tar.bz2",
+      "sha256": "160b452c2b9de3b44bc6c6e2f4bd8c47e44b1d2779b620f63048231708a1d4aa",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/ackredit-0.12.0-py_0.tar.bz2"
+    },
+    "pyunitwizard": {
+      "version": "0.28.1",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/pyunitwizard/__init__.py",
+      "file": "pyunitwizard-0.28.1-py_0.tar.bz2",
+      "sha256": "d4654faf93ed4181bf331f7d382379e78f02784f71f678ad19d0ac43d8062cc6",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/pyunitwizard-0.28.1-py_0.tar.bz2"
+    },
+    "argdigest": {
+      "version": "0.15.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/argdigest/__init__.py",
+      "file": "argdigest-0.15.0-py_0.tar.bz2",
+      "sha256": "b0f22038a8ad1c888dca10adedaca0fa14d2383a685a97c0602b7ca05f29d6a1",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/argdigest-0.15.0-py_0.tar.bz2"
+    },
+    "smonitor": {
+      "version": "0.19.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/smonitor/__init__.py",
+      "file": "smonitor-0.19.0-py_1.tar.bz2",
+      "sha256": "4b876b4993b1e2caeed40851402a931f3b245ed7c1916d9483d81bc90274e31c",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/smonitor-0.19.0-py_1.tar.bz2"
+    },
+    "depdigest": {
+      "version": "0.13.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/depdigest/__init__.py",
+      "file": "depdigest-0.13.0-py_0.tar.bz2",
+      "sha256": "e011d725c8a831ae46cd6b8d114185d04248e32b4d6701c70f988d19cc69f67b",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/depdigest-0.13.0-py_0.tar.bz2"
+    },
+    "beartype": {
+      "version": "0.22.9",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/beartype/__init__.py",
+      "file": "beartype-0.22.9-pyhd8ed1ab_0.conda",
+      "sha256": "29f6670a04b299d6dc871f6bcc881282cd276d46fb970771c858d0cade5e3924",
+      "url": "https://conda.anaconda.org/conda-forge/noarch/beartype-0.22.9-pyhd8ed1ab_0.conda"
+    },
+    "openmm": {
+      "version": "8.6.1",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/openmm/__init__.py",
+      "file": "openmm-8.6.1-py314hda29caf_0.conda",
+      "sha256": "c4f07047a8383c63f9f6e981988dcbf54ed1ff229c2836b3477208f64b169f9f",
+      "url": "https://conda.anaconda.org/conda-forge/linux-64/openmm-8.6.1-py314hda29caf_0.conda"
+    },
+    "pytest": {
+      "version": "9.1.1",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/pytest/__init__.py",
+      "file": "pytest-9.1.1-pyhc364b38_2.conda",
+      "sha256": "430051d80765207a7d782b2b188230ba1489d35c6e75fd9903f76cb9fda4af16",
+      "url": "https://conda.anaconda.org/conda-forge/noarch/pytest-9.1.1-pyhc364b38_2.conda"
+    },
+    "pytest_receptor": {
+      "version": "1.2.0",
+      "origin": "/tmp/phmt-test-dependencies-cvjr3qvr/envs/phmt-test-deps-review/lib/python3.14/site-packages/pytest_receptor/__init__.py",
+      "file": "pytest-receptor-1.2.0-py_0.tar.bz2",
+      "sha256": "fc9613fb825aed00fcec12312fd90dc8e7807fe1bfedaeda4f2b0bbbcf9b2006",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/pytest-receptor-1.2.0-py_0.tar.bz2"
+    }
+  },
+  "schema": "pharmacophoremt.public-test-dependencies-summary@1",
+  "full_evidence": {
+    "path": "public_test_dependencies_20261010.json.gz",
+    "compressed_sha256": "1e433176eac96a7ed893562f498af9fd19356331f36d1f635b50e44056e33f81",
+    "uncompressed_sha256": "f9f197b537f24210c75bc4d21193ef9445f0d6dc11936f834e852f7e2565a737",
+    "compressed_bytes": 11200035,
+    "uncompressed_bytes": 91117791
+  },
+  "declared_conda_dependencies": [
+    "molsysviewer==0.24.0",
+    "ackredit==0.12.0",
+    "beartype==0.22.9",
+    "openmm==8.6.1"
+  ],
+  "dry_solve_cells": 8,
+  "executed_scientific_cells": [
+    "linux-64 / Python 3.14.8"
+  ],
+  "macos_dry_solve_assumption": {
+    "CONDA_OVERRIDE_OSX": "15.0"
+  },
+  "omitted_dependency_controls": 4,
+  "scope": "Public dependency/source test compatibility; no installed PHMT artifact, native macOS science or browser rendering.",
+  "outstanding": [
+    "MolSysSuite #117 helper isolation",
+    "addon payload delivery",
+    "real release plan/access/artifact",
+    "complete installed science and public receiving"
+  ]
+}

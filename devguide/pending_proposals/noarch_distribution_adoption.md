@@ -308,3 +308,28 @@ the eight source-science cells and installed Git-context preflight. The receipt
 preserves both the earlier pending snapshot and this terminal observation.
 Normal-push backlog detection is skipped/inapplicable; this is source qualification,
 not an installed scientific artifact or public receiving matrix.
+
+## Public scientific test inputs — 2026-10-10
+
+Local #55 adds four explicitly qualified public test inputs through the existing
+shared descriptor operation: MolSysViewer 0.24.0, Ackredit 0.12.0, Beartype 0.22.9
+and OpenMM 8.6.1. Exact observed versions do not establish compatibility minima.
+The source suite uses a pristine detached PHMT `3424f3e` checkout, normally
+installed editable, with public noneditable providers on Linux/Python 3.14.8.
+Eight dependency dry solves succeed for Python 3.11–3.14 on Linux and declared
+macOS 15 arm64; these simulations do not qualify native macOS science.
+
+The [dependency receipt](../evidence/public_test_dependencies_20261010_summary.json)
+retains original test results, provider origins, registry identities, archive
+hashes, Conda records/history, exact source hashes and local driver sources.
+Administrative controls fail when any of the four inputs is omitted. Initial
+macOS cross-solves lacked the `__osx` virtual requirement and are retained as
+failed simulation attempts beside corrected, separately named solves.
+
+All 899 complete source tests pass without failures or omissions, plus 28
+separately selected integration controls. #55 closes only the missing component
+test-input declaration. Scientific helper isolation via MolSysSuite #117, addon
+payload delivery, actual release plan/access/original archive, full installed
+science and same-byte public receiving remain separate #10/#23 requirements.
+Runtime molecular operations, required support range, source CI and provider pins
+retain their contracts. The frozen publication wrapper is not dispatched here.

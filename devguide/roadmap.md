@@ -52,10 +52,20 @@ This does not qualify a public PHMT artifact or the full installed matrix;
 effective-channel reporting is proposed in MolSysSuite #116.
 
 The installed candidate review (#10) corrects the frozen workflow's evidence-step
-contract under #54. Before an actual artifact, qualify test dependencies, resolve
-scientific helper namespaces via MolSysSuite #117, and review addon delivery plus
-the existing #110 all-root guard. See
+contract under #54. Before an actual artifact, resolve scientific helper
+namespaces via MolSysSuite #117 and review addon delivery plus the existing
+#110 all-root guard. Public test inputs are reviewed below under #55. See
 [the readiness receipt](evidence/installed_candidate_readiness_20261010_summary.json).
+
+The public test-input qualification (#55) now declares MolSysViewer 0.24.0,
+Ackredit 0.12.0, Beartype 0.22.9 and OpenMM 8.6.1 through the shared installed-test
+descriptor. All 899 source tests pass with public providers on Linux/Python 3.14.8;
+eight dependency dry solves cover the supported minors and Linux/macOS arm64
+(the latter assumes macOS 15). See [the original receipt](evidence/public_test_dependencies_20261010_summary.json).
+These are observed versions, not compatibility minima or complete installed
+qualification. Next viewer work can review intended addon payload/distribution
+and the existing public viewer contract. MolSysSuite #117 still blocks the
+complete isolated installed science gate; browser rendering is untested.
 
 The next steps are:
 

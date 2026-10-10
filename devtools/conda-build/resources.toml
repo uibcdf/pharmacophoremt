@@ -187,3 +187,10 @@ required_steps = ["Install exact artifact", "Validate installed files", "Run ins
 # Complete local suite selection; source scientific CI remains unchanged.
 paths = ["tests"]
 pytest_args = ["--receptor=ci", "-v"]
+# Public source-test qualification: #55. Exact observed versions, not minima.
+conda_dependencies = [
+  "molsysviewer==0.24.0",
+  "ackredit==0.12.0",
+  "beartype==0.22.9",
+  "openmm==8.6.1",
+]

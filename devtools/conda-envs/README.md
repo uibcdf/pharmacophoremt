@@ -92,3 +92,17 @@ python -m pytest devtools/tests/test_documentation_build.py
 
 Original attempts, failures, corrected verification and dependency inventories:
 `devguide/evidence/ordinary_environment_review_20261010_summary.json`.
+
+## Separate complete-test inputs — 2026-10-10
+
+The #55 review uses a new production-based public environment plus the shared
+installed-test tool installer, exact PHMT editable source and public MolSysViewer
+0.24.0/Ackredit 0.12.0/Beartype 0.22.9/OpenMM 8.6.1. The bounded input declaration
+belongs to `devtools/conda-build/resources.toml`; it does not add optional test
+integrations to ordinary runtime requirements. An editable-install build backend
+is installed separately, without bypassing `Requires-Python`.
+
+[Original records and results](../../devguide/evidence/public_test_dependencies_20261010_summary.json)
+separate source science on Linux/Python 3.14 from eight simulated dependency
+solves. They do not qualify every ordinary environment for the complete suite,
+an installed PHMT artifact, native macOS execution or browser rendering.

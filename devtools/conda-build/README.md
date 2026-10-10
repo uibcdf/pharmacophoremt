@@ -86,10 +86,10 @@ preserves all four phases and eight installed cells.
 
 Before building/selecting a candidate under #10:
 
-- Declare and qualify public scientific test dependencies through the existing
-  `installed_tests.conda_dependencies` provider contract. The complete selection
-  imports Ackredit and MolSysViewer; runtime requirements alone do not describe
-  this test environment. Native optional tools also need owner review.
+- Public scientific test inputs are declared and qualified under #55 through
+  the existing `installed_tests.conda_dependencies` provider contract; see the
+  dated dependency review below. This source qualification does not establish
+  an installed artifact's complete science matrix.
 - Resolve direct scientific `devtools.*` helper imports through the reusable
   support proposal [MolSysSuite #117](https://github.com/uibcdf/molsyssuite/issues/117).
   Actual isolated runner controls fail with both the frozen provider and the
@@ -105,3 +105,27 @@ Before building/selecting a candidate under #10:
 The [readiness receipt](../../devguide/evidence/installed_candidate_readiness_20261010_summary.json)
 retains controlled reproductions and source identities. These administrative
 fixtures are distinct from a real candidate's installed scientific matrix.
+
+## Public scientific test inputs — 2026-10-10
+
+Local #55 supplies `installed_tests.conda_dependencies` through the existing shared
+resolver: MolSysViewer 0.24.0, Ackredit 0.12.0, Beartype 0.22.9 and OpenMM 8.6.1.
+These are exact observed public versions, not inferred compatibility minima.
+The component's ten runtime requirements and scientific source CI remain unchanged.
+The guards compare imported integration providers and the source matrix's explicit
+native bootstrap tools with the actual shared resolved test inputs.
+
+The qualification uses a separate public Conda environment on Linux x86_64 with
+Python 3.14.8 and exact editable PHMT source `3424f3e`. Public provider origins and
+Ackredit/MolSysViewer archive hashes are checked. The eight dependency dry solves
+cover Python 3.11–3.14 on Linux and macOS arm64; macOS simulations explicitly
+assume macOS 15. They are not executed macOS science. The baseline manager still
+inherits `ambermd` (MolSysSuite #116), although installed package URLs are only
+`uibcdf`/`conda-forge`; test-tool operations and dry solves use exclusive channels.
+
+See [the original dependency receipt](../../devguide/evidence/public_test_dependencies_20261010_summary.json)
+for the 899 passing complete source tests, the separate 28 integration controls
+and complete original records. Helper isolation
+under MolSysSuite #117, addon distribution, the real candidate and the complete
+installed/public receiving matrix remain independent prerequisites. No browser
+rendering or installed addon support is established by a source addon test.
