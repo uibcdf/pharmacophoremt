@@ -14,6 +14,28 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Progress — 2026-10-10, structure transition (#44)
+
+`StructureBasedModeler` and its dispatcher now delegate cached chemical records
+and explicit hypothesis decisions to reusable `from_receptor_projections()`.
+Local spherical selection, RDKit SMARTS, centroids/ring geometry and first-neighbor
+or arbitrary +z direction inference are removed from that route. Optional cached
+exclusions delegate to `get_excluded_volume_sites()`, with explicit radius and
+common declared selection/frame/state. See [the contract](../structure_based_workflow.md)
+and [#44 report](../archive/native_structure_modeler_transition.md).
+
+This is explicit query construction, not automatic chemically informed pocket
+modeling or biological equivalence. Inventory origin/common coordinates remain
+caller declarations. The review also found donor–H vector subtraction and
+normalization inside native `get_features()`: recognition/centers/planes are
+provider-mediated, but this geometry operation is not yet migrated. Public
+donor-pair/local acceptor directions are requested in **uibcdf/molsysmt#375**.
+Do not add another local kernel. Existing donor-vector retention remains bounded
+by this record's 2026-10-17 review date, with PHMT maintainers responsible and
+removal when a qualified public provider contract is consumed. This qualifies
+the earlier audit's broad native-geometry claim rather than rewriting its evidence.
+#41 stays partial/open for this gap and remaining screening, I/O and utilities.
+
 ## Progress — 2026-10-10, complex transition (#42)
 
 The complex modeler and default dispatcher now consume named native MolSysMT

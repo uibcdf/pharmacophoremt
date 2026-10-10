@@ -1,5 +1,12 @@
 # Modeling Strategies and the Modeler Engine
 
+**2026-10-10 structure transition (#44):** The structure class/dispatcher now
+consume native cached inventories and explicit query projections, with optional
+cached heavy-atom exclusions; see [the contract](structure_based_workflow.md).
+No local receptor recognition, pocket selection or inferred molecular direction
+remains in this route. MolSysMT #375 tracks the missing reusable direction tools
+and outstanding donor-vector arithmetic in shared `get_features()`.
+
 **2026-10-10 transition (#42):** The complex class and default `model()` now
 consume an explicit ligand selection and named prepared native observations;
 see [the current contract](complex_based_workflow.md). The old default-route
@@ -139,25 +146,31 @@ not the current native contract.
 
 ### 3.3 StructureBasedModeler
 
-**Inputs:** A receptor structure (without a co-crystallized ligand).
-**Goal:** Project ideal interaction sites from the receptor atoms into the binding cavity.
+**Inputs:** A prepared receptor reference, cached native chemical inventory and
+explicit pharmacophoric projection specifications.
+**Goal:** Build declared complementary ligand hypotheses in the receptor frame.
 **Output:** A single `Pharmacophore`.
 
 #### Algorithm: Feature Projection
-1. Isolate the binding site (via `pocket_selection`, `topomt`, or fallback sphere definition).
-2. Detect receptor features using `PROTEIN_SMARTS`.
-3. For each feature, project an ideal complementary site into the cavity:
-   - Protein HB Donor → project an HB Acceptor site at 0.28 nm along the donor-H bond vector.
-   - Protein HB Acceptor → project an HB Donor site at 0.28 nm along the lone-pair direction.
-   - Protein Aromatic Ring → project an Aromatic site at 0.45 nm along the ring normal.
-   - Protein hydrophobic atoms → project a Hydrophobic site at 0.35 nm.
-   - Protein positive charge → project a Negative Charge site at 0.40 nm.
-   - Protein negative charge → project a Positive Charge site at 0.40 nm.
-4. Add `ExcludedVolumeSphere` sites at receptor surface atoms facing the cavity.
+1. Select/prepare the receptor through MolSysMT; actual pocket detection belongs
+   to TopoMT. No pocket API or fallback is inferred in the facade.
+2. Obtain/cache native `get_features()` chemical records and provider geometry.
+3. Use `from_receptor_projections()` with explicit feature index, query projection
+   direction, positive physical distance and hypothesis label. Donors/acceptors
+   and charges are complemented; aromatic/hydrophobic kinds are preserved.
+   Ligand donor direction and aromatic normal are separate target decisions;
+   ligand acceptor targets remain spherical.
+4. Optionally compose `get_excluded_volume_sites()` from a native heavy-atom
+   inventory and explicit radius with a common declared frame/state and atom set.
+   No surface sampling or physical-radius assignment occurs.
 
 #### Completeness Requirements (Gen 1b)
-- **Pocket definition**: if `pocket_selection` is `None` and `topomt` is unavailable, accept `pocket_center` + `pocket_radius` as a fallback sphere definition.
-- **Excluded volumes**: after projecting interaction sites, sample non-interacting receptor surface atoms and add `ExcludedVolumeSphere` sites.
+- Automatic chemically informed pocket hypotheses remain future work. Missing
+  donor-pair/local acceptor geometry belongs to MolSysMT #375. Environmental
+  refinement is separately #323; no direction/lone-pair engine is copied here.
+- Alternative projection faces/directions require independent hypotheses. The
+  fixed distances, first-neighbor/+z and SMARTS heuristics are retired without
+  an equivalence or biological-validation claim.
 
 ### 3.4 DynamicModeler (Gen 2)
 
@@ -183,9 +196,9 @@ ph = phmt.model(molecular_system, method='complex-based',
 hypotheses = phmt.model(prepared_ligands, method='ligand-based',
                        consensus_method='rigid', n_points=4)
 
-# Structure-based: receptor only, with a pocket center as fallback
+# Structure-based: prepared native evidence and explicit hypothesis decisions
 ph = phmt.model(receptor, method='structure-based',
-                pocket_center=[12.3, 4.5, -2.1], pocket_radius='1.2 nm')
+                feature_inventory=inventory, projection_specs=specifications)
 ```
 
 ---
@@ -233,8 +246,8 @@ ph_combined = ph_complex.merge(ph_ligand)        # union of sites
 | Complex halogen/metal observations, exclusions and cross-complex consensus | Separate current contracts/backlog | No legacy threshold or global spatial-merging compatibility; exclusions are a public independent query step |
 | `LigandBasedModeler` (explicit native rigid/aligned consensus) | Native facade; legacy builder retired | See #18 and the migration contract; no affinity ranking |
 | Conformer preparation, negative modeling and activity weighting | **Gen 1b** | Directional features are covered by the selected native contracts; preparation belongs to MolSysMT |
-| `StructureBasedModeler` (feature projection, charge complementarity) | Done | |
-| `StructureBasedModeler` (pocket fallback, excluded volumes) | **Gen 1b** | |
+| `StructureBasedModeler` (explicit cached feature projection/complementarity) | Native facade; legacy engine retired | #44; caller-declared projection and target orientation |
+| Automatic structure-based pocket hypotheses | **Gen 1b** | Provider geometry #375 and TopoMT pocket contract required; cached exclusions are separately delivered |
 | `DynamicModeler` | Gen 2 | |
 | Model refinement API (`essential` flag, `set_radius`, `merge`, `similarity`) | **Gen 1b** | |
 | Molecular preparation utilities (`prepare_ligand`, `enumerate_tautomers`) | **Gen 1b** | |

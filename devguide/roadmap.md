@@ -1,5 +1,13 @@
 # Strategic Roadmap
 
+**2026-10-10 structure transition (#44):** Structure-based construction now
+consumes cached receptor inventories and explicit pharmacophoric projections;
+see [the contract](structure_based_workflow.md). The old local recognition,
+selection and neighbor/+z inference are retired. Automatic pocket hypotheses
+remain future work. Donor-pair/local acceptor geometry is requested in MolSysMT
+#375, including the outstanding donor-vector migration in `get_features()`.
+#41 remains partial; next local work is legacy screening/preparation retirement.
+
 **2026-10-10 complex transition (#42):** `ComplexBasedModeler` and the default
 `model()` now require prepared native observations and an explicit ligand
 selection. The old preparation/detection engine is retired; see the
@@ -103,6 +111,9 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
   cation mapping (#34; [contract](aromatic_interaction_workflow.md)). Prepared
   analytical controls do not establish biological complex validation.
 - [ ] Native structure-based hypotheses using TopOMT pockets and MolSysMT molecular geometry.
+  The explicit cached hypothesis constructor and historical facade transition
+  are delivered under #44. Automatic provider-informed directions/pockets and
+  biological qualification remain separate from this controlled projection tool.
 - [x] Public common-frame hypothesis composition and named native interaction-collection conversion (#36), with labeled evidence, explicit keep/participant-reuse policies, independent controls and preserved empty/failure semantics. Disconnected prepared controls do not establish biological complex acceptance.
 - [x] Joint native interaction controls with complete frozen CCD EST/DES molecules (#37), two caller-declared rigid placements and both participant roles. Existing public tools retain neutral empty families, duplicate-profile evidence, directional controls and an independent DES steric veto; designed CCD pairs do not establish biological complex acceptance.
 - [x] Independent cached-model selection, copying, extraction and explicit constraint editing (#38), with class delegation, source-model history, score invalidation, distinct radius/sigma semantics and independent essential/weight/exclusion controls. Scientific/API review and activity-based comparison remain open.

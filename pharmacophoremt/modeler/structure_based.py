@@ -1,240 +1,132 @@
-import molsysmt as msm
-import numpy as np
+"""Compatibility facade for explicit cached receptor hypotheses."""
+
+from numbers import Integral
+
 from argdigest import arg_digest
-from rdkit import Chem
 from smonitor import signal
 
-from pharmacophoremt import interaction_site as interaction_sites
-from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.data.smarts import PROTEIN_SMARTS
+from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_feature_inventory,
+    digest_projection_specs,
+    digest_structure_index,
+    digest_structure_indices,
+)
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
+from pharmacophoremt.modeler.excluded_volumes import get_excluded_volume_sites
 from pharmacophoremt.modeler.modeler import Modeler
-from pharmacophoremt.pharmacophore import Pharmacophore
-from pharmacophoremt.utils.maths import ring_normal
+from pharmacophoremt.modeler.receptor_projections import from_receptor_projections
 
 
 class StructureBasedModeler(Modeler):
-    """
-    Modeler to extract interaction sites from a receptor structure (pocket).
+    """Compose explicit projections and optional cached heavy-atom exclusions.
 
-    This engine projects ideal interaction points from the receptor atoms
-    into the binding cavity.
-    """
+    The unchanged prepared molecular_system is retained as a reference; no
+    molecular operation occurs in this facade. Feature inventories and projection
+    decisions are explicit. Select/prepare the receptor through MolSysMT first;
+    actual pocket identification belongs to TopoMT. Old SMARTS, spherical pocket
+    selection, first-neighbor/+z inference and fixed projection rules are retired.
 
-    # Ideal projection distances (Rescued/Standardized)
-    PROJECTION_RULES = {
-        "hb donor": puw.quantity(
-            0.28, "nm"
-        ),  # Project an Acceptor site from a Protein Donor
-        "hb acceptor": puw.quantity(
-            0.28, "nm"
-        ),  # Project a Donor site from a Protein Acceptor
-        "aromatic ring": puw.quantity(0.45, "nm"),
-        "positive charge": puw.quantity(0.40, "nm"),
-        "negative charge": puw.quantity(0.40, "nm"),
-        "hydrophobicity": puw.quantity(0.35, "nm"),
-    }
+    Optional excluded_volume_inventory must declare the same atom selection,
+    structure_index and chemical_state as feature_inventory, and requires an
+    explicit excluded_volume_radius. Source identity and coordinate consistency
+    remain caller responsibilities; comparing declarations does not authenticate
+    cached inventories against molecular_system. Exclusions are constructed by
+    get_excluded_volume_sites(), without atom access or physical-radius assignment.
+
+    build() returns one Pharmacophore at the inventory's declared frame. A single
+    explicit requested frame must match it. Multiple frames require separately
+    obtained inventories/modelers. result is cleared before every build attempt.
+    The new explicit hypothesis method is not equivalent to legacy heuristics.
+    """
 
     @signal(tags=["modeler", "structure", "init"])
     @arg_digest(type_check=True)
     def __init__(
         self,
         molecular_system,
-        selection='molecule_type == "protein"',
-        pocket_selection=None,
-        pocket_center=None,
-        pocket_radius=None,
         skip_digestion=False,
+        *,
+        feature_inventory=None,
+        projection_specs=None,
+        excluded_volume_inventory=None,
+        excluded_volume_radius=None,
+        radius="0.15 nm",
+        name=None,
     ):
-
-        if isinstance(molecular_system, str):
-            self.system = msm.convert(molecular_system, to_form="molsysmt.MolSys")
-        else:
-            self.system = molecular_system
-
-        while isinstance(self.system, (list, tuple)) and len(self.system) == 1:
-            self.system = self.system[0]
-
-        self.selection = selection
-        self.pocket_selection = pocket_selection
-        self.pocket_center = pocket_center  # puw quantity (3,) or None
-        self.pocket_radius = pocket_radius  # puw quantity scalar or None
-        self.params = self.PROJECTION_RULES.copy()
-
-    def _detect_features(self, mol):
-        """Detect chemical features in the receptor fragment."""
-        found = {feat: [] for feat in PROTEIN_SMARTS}
-        for feat_name, patterns in PROTEIN_SMARTS.items():
-            for pattern in patterns:
-                p = Chem.MolFromSmarts(pattern)
-                if p is None:
-                    continue
-                matches = mol.GetSubstructMatches(p)
-                for m in matches:
-                    if m not in found[feat_name]:
-                        found[feat_name].append(m)
-        return found
-
-    def _get_centroid(self, mol, indices):
-        conf = mol.GetConformer()
-        pts = []
-        for idx in indices:
-            pos = conf.GetAtomPosition(idx)
-            pts.append([pos.x, pos.y, pos.z])
-        center = np.mean(np.array(pts), axis=0)
-        return puw.quantity(center, "angstroms")
-
-    def _get_projection_vector(self, mol, indices, feature_type):
-        """
-        Calculate the ideal projection vector for a feature.
-        (Simplified for Gen 1: projects along atom-neighbor bonds).
-        """
-        conf = mol.GetConformer()
-
-        if feature_type == "aromatic ring":
-            center = self._get_centroid(mol, indices)
-            pts = []
-            for idx in indices:
-                pos = conf.GetAtomPosition(idx)
-                pts.append([pos.x, pos.y, pos.z])
-            coords = puw.quantity(np.array(pts), "angstroms")
-            vector = ring_normal(np.arange(len(indices)), coords, center)
-            return center, vector
-
-        atom_idx = indices[0]
-        atom = mol.GetAtomWithIdx(atom_idx)
-        pos = conf.GetAtomPosition(atom_idx)
-        center = puw.quantity([pos.x, pos.y, pos.z], "angstroms")
-
-        # Projection logic: move away from neighbors
-        neighbors = atom.GetNeighbors()
-        if not neighbors:
-            return center, np.array([0, 0, 1])
-
-        n_pos = conf.GetAtomPosition(neighbors[0].GetIdx())
-        n_center = puw.quantity([n_pos.x, n_pos.y, n_pos.z], "angstroms")
-
-        # Vector neighbor -> atom (points INTO the pocket)
-        vector = puw.get_value(center - n_center)
-        norm = np.linalg.norm(vector)
-        if norm > 0:
-            vector /= norm
-
-        return center, vector
+        if feature_inventory is None:
+            raise ArgumentError(
+                argument="feature_inventory",
+                reason="provide a cached native receptor inventory",
+            )
+        digest_feature_inventory(feature_inventory)
+        digest_projection_specs(projection_specs)
+        self.system = molecular_system
+        self.feature_inventory = feature_inventory
+        self.projection_specs = projection_specs
+        self.excluded_volume_inventory = excluded_volume_inventory
+        self.excluded_volume_radius = excluded_volume_radius
+        self.native_options = dict(radius=radius, name=name)
+        self.result = None
 
     @signal(tags=["modeler", "structure", "build"])
-    def build(self, structure_indices=0, add_excluded_volumes=True):
-        """Build the pharmacophore by projecting sites from the receptor.
-
-        Parameters
-        ----------
-        structure_indices : int, optional
-            Which structure (frame) to use from the molecular system (default 0).
-        add_excluded_volumes : bool, optional
-            If True, add ExcludedVolume spheres for all non-hydrogen pocket atoms
-            to block inaccessible space (default True).
-        """
-        ph = Pharmacophore(name="Structure-based Model", molecular_system=self.system)
-
-        # 1. Isolate the pocket/receptor
-        if self.pocket_selection:
-            indices = msm.select(self.system, selection=self.pocket_selection)
-        elif self.pocket_center is not None and self.pocket_radius is not None:
-            # Primary route: spherical pocket around a geometric centre
-            center_nm = puw.get_value(self.pocket_center, to_unit="nm")
-            radius_nm = float(puw.get_value(self.pocket_radius, to_unit="nm"))
-            protein_indices = [
-                int(i) for i in msm.select(self.system, selection=self.selection)
-            ]
-            coords_q = msm.get(
-                self.system,
-                element="atom",
-                selection=protein_indices,
-                structure_indices=structure_indices,
-                coordinates=True,
+    @attributed()
+    def build(self, structure_indices=None):
+        """Build one hypothesis from the declared cached frame, without inference."""
+        self.result = None
+        if self.feature_inventory is None:
+            raise ArgumentError(
+                argument="feature_inventory",
+                reason="provide a cached native receptor inventory",
             )
-            coords_nm = puw.get_value(coords_q, to_unit="nm")[0]  # (N,3)
-            dists = np.linalg.norm(coords_nm - center_nm, axis=1)
-            mask = dists <= radius_nm
-            indices = [protein_indices[i] for i, m in enumerate(mask) if m]
+        digest_feature_inventory(self.feature_inventory)
+        frame = digest_structure_index(self.feature_inventory["structure_index"])
+        if structure_indices is None:
+            indices = [frame]
+        elif isinstance(structure_indices, Integral):
+            indices = [digest_structure_index(structure_indices)]
         else:
-            indices = msm.select(self.system, selection=self.selection)
-
-        indices = [int(i) for i in indices]
-        receptor_mol = msm.convert(
-            self.system,
-            selection=indices,
-            structure_indices=structure_indices,
-            to_form="rdkit.Mol",
+            indices = digest_structure_indices(structure_indices)
+        if isinstance(indices, str) or len(indices) != 1 or indices[0] != frame:
+            raise ArgumentError(
+                argument="structure_indices",
+                reason="request the single cached inventory frame",
+            )
+        exclusions = self.excluded_volume_inventory
+        if (exclusions is None) != (self.excluded_volume_radius is None):
+            raise ArgumentError(
+                argument="excluded_volume_inventory",
+                reason="provide both cached heavy-atom inventory and explicit exclusion radius, or neither",
+            )
+        if exclusions is not None:
+            digest_feature_inventory(exclusions)
+            if (
+                exclusions["structure_index"] != frame
+                or exclusions["chemical_state"]
+                != self.feature_inventory["chemical_state"]
+                or set(exclusions["selected_atom_indices"])
+                != set(self.feature_inventory["selected_atom_indices"])
+            ):
+                raise ArgumentError(
+                    argument="excluded_volume_inventory",
+                    reason="inventories must declare the same atom selection, frame and chemical state",
+                )
+        model = from_receptor_projections(
+            self.feature_inventory,
+            projection_specs=self.projection_specs,
+            **self.native_options,
         )
-        receptor_mol.UpdatePropertyCache()
-        Chem.FastFindRings(receptor_mol)
-
-        # 2. Detect protein features
-        features = self._detect_features(receptor_mol)
-
-        # 3. Project InteractionSites
-        for feature_name, matches in features.items():
-            if feature_name not in self.params:
-                continue
-
-            dist = self.params[feature_name]
-
-            for indices in matches:
-                center, vector = self._get_projection_vector(
-                    receptor_mol, indices, feature_name
-                )
-                projected_center = center + vector * dist
-
-                if feature_name == "hb donor":
-                    site = interaction_sites.HBAcceptorSphereAndVector(
-                        center=projected_center,
-                        radius="0.1 nm",
-                        direction=-vector,
-                        skip_digestion=True,
-                    )
-                elif feature_name == "hb acceptor":
-                    site = interaction_sites.HBDonorSphereAndVector(
-                        center=projected_center,
-                        radius="0.1 nm",
-                        direction=-vector,
-                        skip_digestion=True,
-                    )
-                elif feature_name == "aromatic ring":
-                    site = interaction_sites.AromaticRingSphereAndVector(
-                        center=projected_center,
-                        radius="0.15 nm",
-                        direction=-vector,
-                        skip_digestion=True,
-                    )
-                elif feature_name == "hydrophobicity":
-                    site = interaction_sites.HydrophobicSphere(
-                        center=projected_center, radius="0.15 nm", skip_digestion=True
-                    )
-                elif feature_name == "positive charge":
-                    site = interaction_sites.NegativeChargeSphere(
-                        center=projected_center, radius="0.15 nm", skip_digestion=True
-                    )
-                elif feature_name == "negative charge":
-                    site = interaction_sites.PositiveChargeSphere(
-                        center=projected_center, radius="0.15 nm", skip_digestion=True
-                    )
-                else:
-                    continue
-
-                ph.add_interaction_site(site)
-
-        # 4. Excluded volumes — one per heavy atom of the pocket
-        if add_excluded_volumes:
-            conf = receptor_mol.GetConformer()
-            ev_radius = puw.quantity(0.10, "nm")  # 1 Å — tight steric exclusion
-            for atom in receptor_mol.GetAtoms():
-                if atom.GetSymbol() == "H":
-                    continue
-                pos = conf.GetAtomPosition(atom.GetIdx())
-                center = puw.quantity([pos.x, pos.y, pos.z], "angstroms")
-                site = interaction_sites.ExcludedVolumeSphere(
-                    center, ev_radius, skip_digestion=True
-                )
-                ph.add_interaction_site(site)
-
-        return ph
+        model.molecular_system = self.system
+        if exclusions is not None:
+            excluded = get_excluded_volume_sites(
+                exclusions, radius=self.excluded_volume_radius
+            )
+            start = model.n_interaction_sites
+            for site in excluded["interaction_sites"]:
+                model.add_interaction_site(site)
+            model.metadata["excluded_volumes"] = excluded["report"]
+            model.metadata["excluded_volumes"]["global_site_indices"] = list(
+                range(start, model.n_interaction_sites)
+            )
+        self.result = model
+        return model

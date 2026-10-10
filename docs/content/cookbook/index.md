@@ -19,6 +19,7 @@ ionic_interactions
 aromatic_interactions
 interaction_composition
 complex_based_modeler
+structure_based_modeler
 ccd_interactions
 pharmacophore_curation
 prepared_conformers
@@ -57,6 +58,7 @@ eralpha_input_audit
 | Build alternative consensus models from prepared rigid unaligned ligands | [Rigid unaligned consensus](rigid_consensus.md): `get_rigid_feature_correspondences()`, `from_rigid_ligands()` |
 | Use the historical class with an explicit native method | [Ligand-based modeler](ligand_based_modeler.md): `LigandBasedModeler`, `phmt.model(method='ligand-based')`, prepared inputs and full native reports |
 | Build through the complex class or default dispatcher | [Complex-based modeler](complex_based_modeler.md): explicit prepared source, ligand selection and named cached native observations |
+| Project declared complementary receptor hypotheses | [Structure-based modeler](structure_based_modeler.md): `from_receptor_projections()`, cached native features, explicit projection/orientation choices and optional cached exclusions |
 | Compose rigid steps and compare evidence | [Modular rigid tools](modular_rigid_tools.md): `from_feature_inventory()`, `get_rigid_feature_placements()`, `summarize_rigid_consensus()` |
 | Prioritize guesses using typed feature neighborhoods | [Ranked rigid seeds](ranked_seeds.md): `get_feature_pair_dissimilarities()`, `rank_rigid_feature_correspondences()` |
 | Grow supplied rigid mappings and compare angular policies | [Rigid refinement](rigid_refinement.md): `evaluate_feature_correspondence()`, `refine_rigid_feature_correspondences()` |

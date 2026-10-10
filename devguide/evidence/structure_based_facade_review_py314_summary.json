@@ -1,0 +1,85 @@
+{
+  "schema": "pharmacophoremt.structure_based_facade_review_summary@1",
+  "issue": "uibcdf/pharmacophoremt#44",
+  "recorded_at_utc": "2026-10-10T07:45:11.698969+00:00",
+  "source_base": "3ed12cd9405c8bbb577afefca58c372b5e0785f1",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "qualification_scope": "focused regression and analytical cached-projection controls; not full suite, biological validation, provider-main qualification or performance benchmark",
+  "producer_sources_unchanged": true,
+  "inputs_unchanged": true,
+  "focused_tests": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "pytest",
+      "--receptor=llm",
+      "--junitxml=/tmp/phmt-receptor-review-uoe538mw/focused.xml",
+      "tests/test_receptor_projections.py",
+      "tests/test_contracts.py",
+      "tests/test_interaction_site.py",
+      "tests/test_pharmacophore.py",
+      "tests/test_reference_ligand.py",
+      "tests/test_pose_evaluation.py",
+      "tests/test_excluded_volume_sites.py",
+      "tests/test_complex_based_facade.py",
+      "tests/test_ligand_based_facade.py",
+      "tests/test_interaction_composition.py",
+      "tests/test_attribution.py",
+      "tests/test_io_pharmer.py",
+      "tests/test_io_ligandscout.py",
+      "tests/test_io_rdkit.py",
+      "tests/test_molsysviewer_pharmacophoremt_addon.py"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 116.14785289699648,
+    "tests": 247,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "recipe": {
+    "blocks_executed": 3,
+    "counts": {
+      "query": 1,
+      "combined": 4,
+      "named": 1,
+      "empty": 0
+    }
+  },
+  "documentation": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "sphinx",
+      "-W",
+      "--keep-going",
+      "-b",
+      "html",
+      "/tmp/phmt-receptor-review-uoe538mw/docs-source",
+      "/tmp/phmt-receptor-review-uoe538mw/html"
+    ],
+    "exit_code": 1,
+    "scope": "new recipe plus original cookbook navigation, other pages are explicit stubs; not full-site qualification"
+  },
+  "full_evidence": {
+    "path": "structure_based_facade_review_py314.json.gz",
+    "compressed_sha256": "c6e895c3a84f43edefe84a4b38274edc66e9cb167237d28751fba0a8a4b5b4eb",
+    "uncompressed_sha256": "348c98a1385ceeba7b186a25c17042a43cbc5bb4ce3646f514818ca20d565f1b",
+    "compressed_bytes": 38055,
+    "uncompressed_bytes": 167874
+  },
+  "documentation_followup": {
+    "path": "structure_based_facade_docs_py314.json",
+    "sha256": "adf45e735537167502aff87a12f4272c15c2819439e3fd93a6701d623bc1ae5f",
+    "exit_code": 0,
+    "scope": "strict isolated new recipe and original cookbook navigation; other linked pages/notebook are explicit stubs; not a full-site build",
+    "all_scientific_producers_and_recorded_inputs_unchanged": true,
+    "checked_inputs": 75
+  },
+  "original_documentation_outcome_preserved": true,
+  "accepted_scientific_and_documentation_checks": true
+}

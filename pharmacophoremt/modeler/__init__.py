@@ -30,6 +30,7 @@ from .interaction_collection import (
 )
 from .ligand_based import LigandBasedModeler as LigandBasedModeler
 from .modeler import Modeler as Modeler
+from .receptor_projections import from_receptor_projections as from_receptor_projections
 from .reference_ligand import from_feature_inventory as from_feature_inventory
 from .reference_ligand import from_ligand as from_ligand
 from .rigid_consensus import from_rigid_ligands as from_rigid_ligands

@@ -10,6 +10,13 @@ through issues; no sibling implementation is authorized here. Returning an
 unchanged molecule after preparation failure, implicit chemistry inference and
 bare dimensionful tolerances in the old sketches are not accepted current rules.
 
+**2026-10-10 direction review:** Actual missing donor-pair/local acceptor geometry
+is now requested in [MolSysMT #375](https://github.com/uibcdf/molsysmt/issues/375),
+with linked current consumer evidence under PHMT #41/#44. Public geometry/model
+design remains provider-owned; no API sketch below is treated as delivered.
+The structure facade consumes explicit cached query projections instead of
+implementing or inferring molecular directions.
+
 During the PharmacophoreMT reimplementation effort we are expanding the use of
 `molsysmt` adapters and digesters.
 

@@ -1,5 +1,12 @@
 # Classical Pharmacophore Workflow: Historical Scope and Backlog
 
+**2026-10-10 structure transition:** #44 replaces the legacy structure route
+with cached native receptor features and explicit hypothesis projections; see
+[the current structure contract](structure_based_workflow.md). Old local SMARTS,
+neighbor/lone-pair inference, fixed distances and pocket fallbacks below are
+historical proposals, not active implementation instructions. MolSysMT #375 owns
+missing donor/local acceptor geometry; #41 remains partial.
+
 **2026-10-10 complex transition:** #42 replaces the legacy complex/default route
 with explicit native observations and a prepared source. See
 [the current complex contract](complex_based_workflow.md); the retired heuristic

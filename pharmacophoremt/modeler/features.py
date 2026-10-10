@@ -68,6 +68,9 @@ def get_features(
     geometry members. No protonation, hydrogen addition, repair, periodic imaging,
     or conformer generation occurs. Missing/ambiguous chemistry raises in MolSysMT.
     Ring membership is not a claim of equivalence to RDKit SSSR.
+    Donor-pair vector arithmetic is the remaining molecular-geometry migration
+    tracked in MolSysMT #375 / PharmacophoreMT #41; no local acceptor direction
+    model is supplied. Receptor hypothesis projections must be explicit.
 
     Examples
     --------

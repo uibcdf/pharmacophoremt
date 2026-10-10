@@ -19,7 +19,8 @@ def model(
     unchanged prepared source. It performs no implicit molecular preparation,
     ligand recognition or interaction detection. Optional structure_indices is
     passed to the modeler's build method. Other native methods keep their own
-    prepared-input contracts; structure-based retains its separate legacy scope.
+    prepared-input contracts. Structure-based consumes cached receptor inventories
+    and explicit hypothesis projections; it performs no molecular inference.
     """
 
     if method == "reference-ligand":
@@ -97,10 +98,17 @@ def model(
         return modeler.build(structure_indices=structure_indices)
 
     elif method == "structure-based":
+        from pharmacophoremt._private.smonitor.exceptions import ArgumentError
         from pharmacophoremt.modeler.structure_based import StructureBasedModeler
 
+        if ligand_selection is not None or receptor_selection is not None:
+            raise ArgumentError(
+                argument="structure-based",
+                reason="declare the receptor selection in cached native inventories",
+            )
+        structure_indices = kwargs.pop("structure_indices", None)
         modeler = StructureBasedModeler(molecular_system, **kwargs)
-        return modeler.build()
+        return modeler.build(structure_indices=structure_indices)
 
     else:
         raise NotImplementedError(f"Method '{method}' is not yet implemented.")

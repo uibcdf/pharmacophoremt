@@ -46,6 +46,25 @@ def digest_radius(obj):
     return _length(obj, "radius")
 
 
+def digest_excluded_volume_radius(obj):
+    return None if obj is None else digest_radius(obj)
+
+
+def digest_excluded_volume_inventory(obj):
+    return digest_feature_inventory(obj)
+
+
+def digest_projection_specs(obj):
+    if not isinstance(obj, (list, tuple)) or any(
+        not isinstance(row, dict) for row in obj
+    ):
+        raise ArgumentError(
+            argument="projection_specs",
+            reason="provide an explicit list of projection mappings",
+        )
+    return obj
+
+
 def digest_sigma(obj):
     return _length(obj, "sigma")
 
