@@ -1,0 +1,66 @@
+{
+  "schema": "pharmacophoremt.pharmacophore_sdf_completion@1",
+  "issue": "uibcdf/pharmacophoremt#47",
+  "review_stdout": "receptor: 40% 61/151 22s\nreceptor: 60% 91/151 39s\nreceptor: 80% 121/151 113s\nreceptor: 100% 151/151 130s\nPASS exit=0 | 151 passed | 129.74s | 1 warnings\n\nwarnings: 1 in 1 groups\n  AckreditTrackingWarning x1 | pharmacophoremt/_ackredit.py:62 | Optional attribution failed at start attribution: provider failed. The scientific result is preserved.\n\n\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/devguide_index.py', '--check']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_reporting_protocol.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_evidence_archive.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'devtools/tests', '-p', 'test_*.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/check_dependency_routes.py', '--declared-only']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/broadcast_requirements.py', '--check']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'pytest', '--receptor=llm', 'tests/test_ci_backlog.py', 'tests/test_ci_routes.py', '--basetemp=/tmp/phmt-sdf-review-xd035x1m/admin-pytest']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'ruff', 'check', 'pharmacophoremt', 'tests', 'devtools']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'ruff', 'format', '--check', 'pharmacophoremt', 'tests', 'devtools']\nAdministrative exit=0 ['git', 'diff', '--check']\n{\"accepted\": true, \"tests\": 151, \"failed\": 0, \"resource_removed\": true}\n",
+  "post_archive_checks": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "devtools.evidence_archive",
+        "devguide/evidence/pharmacophore_sdf_review_py314_summary.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.pharmacophore_sdf_review@1\", \"report_schema\": \"pharmacophoremt.pharmacophore_sdf_review@1\", \"recorded_at_utc\": \"2026-10-10T09:22:36.344976+00:00\", \"archive_bytes_verified\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "Generated report indexes are current.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.471s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.320s\n\nOK\n"
+    }
+  ],
+  "owned_file_sha256": {
+    "/tmp/phmt-sdf-initial.py": "2a8b1f0839435a4f93f599d17cebd7c7433092a540fbfe1e59064552edb261dc",
+    "/tmp/phmt-sdf-initial.json": "8c0f98facd60d2c422be01b047d5213529cfe2c41cb80e12b91e623bafdbcf91",
+    "/tmp/phmt-sdf-review.py": "f1872e71b32c80afb912527b1077b3a894bd05521bb93ccc2c792a4f3e233c74",
+    "/tmp/phmt-sdf-review.txt": "8746d928bd3dd2dda5ababf3f1c06605eae0ed1e4325aaa08c3e2a61f96bd1d9"
+  },
+  "cleanup": "Only the four named owned files below; original driver/output retained in review archive/this receipt. SDK/pytest context already removed by TemporaryDirectory. Shared cache and other tasks untouched.",
+  "owned_files_removed": true
+}

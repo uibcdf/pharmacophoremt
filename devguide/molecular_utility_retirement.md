@@ -49,6 +49,11 @@ molecular library ingestion/export. Existing model codec controls remain applica
 annotated SDF semantic loss is independently reproduced and tracked in #47, with
 no full-shape/constraint-fidelity claim from this retirement.
 
+Dated follow-up (2026-10-10): #47 defines and guards the separate versioned
+[persistence contract](pharmacophore_sdf_persistence.md). The original unversioned
+SDF defect and #46 measurement remain historical evidence; only the new versioned
+carrier preserves its explicitly supported scientific fields.
+
 Native prepared modeling/screening remain the routes documented in
 [the modeler contracts](ligand_based_workflow.md),
 [complex construction](complex_based_workflow.md),

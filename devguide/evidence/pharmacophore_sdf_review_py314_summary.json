@@ -1,0 +1,173 @@
+{
+  "schema": "pharmacophoremt.pharmacophore_sdf_review@1",
+  "issue": "uibcdf/pharmacophoremt#47",
+  "recorded_at_utc": "2026-10-10T09:22:36.344976+00:00",
+  "source_base": "def2248251a3e544b90ec1ce5d291482c99914a0",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "qualification_scope": "Focused analytical SDF/native codecs/placed-query/import/screening regressions and administrative checks; not full suite, hosted matrix, installed artifact, third-party interoperability, biological validation or performance",
+  "producer_sources_unchanged": true,
+  "native_binaries_unchanged": true,
+  "inputs_unchanged": true,
+  "prior_archives_unchanged": true,
+  "prior_archive_count": 25,
+  "resource_lifecycle": {
+    "owner": "PHMT #47 review driver",
+    "context": "/tmp/phmt-sdf-review-xd035x1m",
+    "retained": "Original driver, focused/admin output, JUnit, sources and generated SDF/JSON controls archived; owned SDK and pytest directories removed by TemporaryDirectory; no broad cache cleanup",
+    "scope": "This task context only; not full #43 review",
+    "context_removed": true
+  },
+  "accepted": true,
+  "focused_tests": {
+    "selections": [
+      "test_io_sdf.py",
+      "test_contracts.py",
+      "test_pose_evaluation.py",
+      "test_interaction_site.py",
+      "test_curation.py",
+      "test_io_rdkit.py",
+      "test_io_pharmer.py",
+      "test_io_ligandscout.py",
+      "test_attribution.py",
+      "test_molecular_ownership.py",
+      "test_virtual_screening.py"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 132.98197329699906,
+    "tests": 151,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "administrative": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.2190535500049009
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.7665858489999664
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6901789070034283
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.7676172199935536
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.33374140000523767
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/broadcast_requirements.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.38368453200382646
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "pytest",
+        "--receptor=llm",
+        "tests/test_ci_backlog.py",
+        "tests/test_ci_routes.py",
+        "--basetemp=/tmp/phmt-sdf-review-xd035x1m/admin-pytest"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.8507533660012996
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "pharmacophoremt",
+        "tests",
+        "devtools"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.0603963030007435
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "pharmacophoremt",
+        "tests",
+        "devtools"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.06220466300146654
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.00665441200544592
+    }
+  ],
+  "full_evidence": {
+    "path": "pharmacophore_sdf_review_py314.json.gz",
+    "compressed_sha256": "5c7eb9d4689222e82c4105b552111c053c18746b983b32a437e3b81bf41c2d5f",
+    "uncompressed_sha256": "20d7604908bd1c34d9dfca0e48f6cb9dd96056dacd669210823ab54c871d4316",
+    "compressed_bytes": 93369,
+    "uncompressed_bytes": 1243375
+  }
+}
