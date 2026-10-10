@@ -53,3 +53,12 @@ uses `molsyssuite@uibcdf_3.14`, with PharmacophoreMT installed through
 `python -m pip install --no-deps --editable .`. Track qualification and public
 delivery in `uibcdf/pharmacophoremt#23`; normal installation evidence must not
 bypass `Requires-Python`.
+
+## Human-facing issue feedback
+
+Surface actionable suspected defects, inconsistencies, missing analyses and
+improvements, including uncertain or nonblocking findings. When working with a
+human, offer an owning issue at a natural pause; retain existing reporting
+authorization and respect declined/deferred disclosure. Follow
+[the accepted feedback route](MOLSYSSUITE_GUIDE.md#human-facing-issue-feedback)
+for ownership, uncertainty, privacy and exceptions.
