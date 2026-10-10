@@ -24,13 +24,19 @@ readers; see [the contract](prepared_end_to_end_workflow.md). This advances the
 bounded analytical acceptance gate while MolSysMT #375 remains post-1.0 work.
 It does not establish biological discrimination or close every classical route.
 
+The rigid/frame continuation (#50) adds explicit non-collinear essential anchors,
+saved-query proper-motion recovery, complete selected-participant negatives and
+budget-failure/ensemble-resolution controls; see [the contract](prepared_search_workflow.md).
+It reuses existing tools and keeps 29 prior evidence archives unchanged. These
+prepared placements do not supply generated conformers or activity validation.
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public
    delivery gates under #9/#10/#23. A passing focused run or one matrix cell
    cannot stand for all Python versions/platforms or a public artifact.
 2. Extend the bounded prepared native workflow review to independently declared
-   search/consensus or activity-based validation cases. Reuse existing
+   consensus or activity-based validation cases. Reuse existing
    method/recipe/evidence tools; define independent positive/negative controls
    and preserve original inputs, states, mappings and failures. The collection
    and the ERα continuation remain tracked in #20/#22. Prepared/analytical

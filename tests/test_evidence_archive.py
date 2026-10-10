@@ -190,6 +190,43 @@ class TestEvidenceArchive(unittest.TestCase):
             )
         )
 
+    def test_prepared_search_keeps_budget_failure_and_incomplete_resolved_ensemble(
+        self,
+    ):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/prepared_search_workflow_py314_summary.json"
+        )
+        self.assertEqual(report["schema"], "pharmacophoremt.prepared_search_workflow@1")
+        self.assertEqual(summary["environment"], report["environment"])
+        self.assertTrue(report["scientific_outputs_stable"])
+        self.assertTrue(report["source_hashes_unchanged"])
+        self.assertTrue(report["input_hashes_unchanged"])
+        for name, content in report["executed_source_overlay"].items():
+            self.assertEqual(
+                hashlib.sha256(content.encode()).hexdigest(),
+                report["input_sha256"][name],
+            )
+        self.assertEqual(len(report["original_archives_unchanged"]), 29)
+        for run in report["records"]:
+            self.assertTrue(run["expectations_passed"])
+            self.assertEqual(len(run["result"]["results"]), 3)
+            self.assertEqual(run["result"]["fresh_reader"]["attribution"]["uses"], [])
+            for result in run["result"]["results"].values():
+                controls = result["controls"]
+                self.assertEqual(controls["budget_failure"]["status"], "failed")
+                self.assertIsNone(controls["budget_failure"]["fit_value"])
+                self.assertEqual(controls["selected_negative"]["status"], "not_matched")
+                self.assertTrue(
+                    controls["selected_negative"]["search"]["enumeration_complete"]
+                )
+                for order in ([1, 0], [0, 1]):
+                    partial = controls["ensembles"][f"1:{order}"]
+                    self.assertFalse(partial["ensemble"]["complete"])
+                    self.assertTrue(partial["ensemble"]["score_resolved"])
+                    self.assertEqual(partial["ensemble"]["n_failed"], 1)
+                    self.assertEqual(partial["best_conformer_index"], 0)
+                    self.assertEqual(partial["fit_value"], 1)
+
     def test_cli_reads_real_archive_without_site_packages(self):
         result = subprocess.run(
             [sys.executable, "-S", "-m", "devtools.evidence_archive", str(CCD_SUMMARY)],

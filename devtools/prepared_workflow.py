@@ -191,14 +191,14 @@ def numerical_oracle(prepared):
     )
 
 
-def read_models(directory):
+def read_models(directory, *, model_names=("narrow", "wide", "veto")):
     """Fresh-process public readers: no detection, evaluation or new credits."""
     import ackredit
 
     records = {}
     with TemporaryDirectory(prefix="phmt-49-reader-") as temporary:
         for suffix, _, read in codecs():
-            for name in ("narrow", "wide", "veto"):
+            for name in model_names:
                 records[name + "." + suffix] = native_record(
                     read(directory / (name + "." + suffix)), Path(temporary), name
                 )
@@ -357,10 +357,18 @@ def main(argv=None):
     target = parser.add_mutually_exclusive_group(required=True)
     target.add_argument("--output", type=Path)
     target.add_argument("--read", type=Path)
+    parser.add_argument("--case", choices=("placed", "search"), default="placed")
     args = parser.parse_args(argv)
     if args.read:
-        print(json.dumps(read_models(args.read), allow_nan=False))
+        names = ("rigid",) if args.case == "search" else ("narrow", "wide", "veto")
+        print(json.dumps(read_models(args.read, model_names=names), allow_nan=False))
         return 0
+    review_case, check_case = run_case, expectations_passed
+    if args.case == "search":
+        from devtools.prepared_search_workflow import (
+            expectations_passed as check_case,
+        )
+        from devtools.prepared_search_workflow import run_case as review_case
     for key in THREAD_VARS:
         os.environ[key] = "1"
     import ackredit
@@ -383,6 +391,13 @@ def main(argv=None):
         ROOT / "devtools/benchmark_rigid_consensus.py",
         ROOT / "devtools/validate_prepared_ccd_ligands.py",
     ]
+    if args.case == "search":
+        paths.extend(
+            [
+                ROOT / "devtools/prepared_search_workflow.py",
+                ROOT / "tests/test_prepared_search_workflow.py",
+            ]
+        )
 
     def identities():
         return {
@@ -398,7 +413,7 @@ def main(argv=None):
                 ackredit.session("prepared end-to-end control"),
                 phmt.attribution(enabled),
             ):
-                result = run_case(Path(directory), fresh_reader=True)
+                result = review_case(Path(directory), fresh_reader=True)
                 if enabled:
                     credit_source("EST")
                 attribution = ackredit.get_attribution().to_dict()
@@ -407,7 +422,7 @@ def main(argv=None):
                     tracking_enabled=enabled,
                     result=result,
                     attribution=attribution,
-                    expectations_passed=expectations_passed(result),
+                    expectations_passed=check_case(result),
                 )
             )
     after = {name: _source_record(module) for name, module in packages.items()}
@@ -438,7 +453,11 @@ def main(argv=None):
         return subprocess.check_output(["git", *arguments], cwd=ROOT, text=True).strip()
 
     report = dict(
-        schema="pharmacophoremt.prepared_workflow@1",
+        schema=(
+            "pharmacophoremt.prepared_search_workflow@1"
+            if args.case == "search"
+            else "pharmacophoremt.prepared_workflow@1"
+        ),
         recorded_at_utc=datetime.now(timezone.utc).isoformat(),
         scope="public CCD ideal prepared workflow controls; no biological/activity/performance claim",
         source_head=git("rev-parse", "HEAD"),

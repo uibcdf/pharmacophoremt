@@ -28,6 +28,10 @@ and placed screening with independent negative/failure controls. Its
 [case](../docs/content/validation/prepared_workflow.md) declare the scope.
 This opt-in driver requires the development checkout and Ackredit for its
 explicit application-session review. It is not biological or performance evidence.
+Its explicit `--case search` continuation exercises saved rigid queries and
+prepared-frame budget/score accounting; see the
+[search contract](../devguide/prepared_search_workflow.md). The default placed
+case retains its original contract and evidence identity.
 
 `evidence_archive.read_archived_evidence()` reads the existing local gzip/JSON
 archive envelope with compressed/uncompressed SHA-256 and optional byte-count
