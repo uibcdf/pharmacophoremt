@@ -36,6 +36,12 @@ failed facade rebuilds; see [the contract](prepared_consensus_workflow.md).
 Molecular operations remain MolSysMT-owned; ideal-coordinate consensus does not
 establish biological discrimination.
 
+The cached-receptor continuation (#52) reviews separate PHE404 projection
+alternatives, explicit exclusion vetoes, retained native ERα observations and
+empty/failed facade semantics; see [the contract](prepared_receptor_workflow.md).
+It consumes the archived prepared artifact without hydrogen regeneration or
+contact redetection. Synthetic geometric controls do not qualify binding poses.
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public

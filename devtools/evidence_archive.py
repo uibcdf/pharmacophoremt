@@ -27,19 +27,15 @@ def _check_bytes(payload, identity, prefix):
         raise ValueError(f"{prefix.capitalize()} byte count mismatch")
 
 
-def read_archived_evidence(summary_path, *, identity_key="full_evidence"):
-    """Return ``(summary, original_report)`` after checking both byte identities.
+def read_archived_bytes(summary_path, *, identity_key="full_evidence"):
+    """Return ``(summary, raw_bytes)`` after validating the archive envelope.
 
-    ``summary_path`` names a local JSON object with an ``identity_key`` object.
-    That object requires ``path`` (historical ``file`` is also supported),
-    ``compressed_sha256`` and ``uncompressed_sha256``. Optional byte counts
-    are checked when present. The gzip archive must be a sibling of the summary;
-    absolute paths, directory traversal and escaping symlinks are refused.
-
-    No scientific imports, source downloads, code execution, file mutation or
-    citation registration occur. Scientific schema interpretation stays with
-    callers. Malformed identities/JSON raise ValueError; unreadable files or gzip
-    data raise OSError. A verified archive can contain failed calculations.
+    Accept one sibling gzip named by the selected summary identity, requiring
+    compressed/uncompressed SHA-256 and checking optional byte counts. Historical
+    ``file`` names remain supported. Refuse absolute/traversal/escaping-symlink
+    paths. No payload decoding, scientific imports, file writes or usage recording
+    occur. Consumers own payload interpretation (including native molecular I/O).
+    Invalid identity raises ValueError; unreadable/gzip bytes raise OSError.
     """
     summary_path = Path(summary_path).resolve()
     summary = json.loads(summary_path.read_text(encoding="utf-8"))
@@ -64,6 +60,17 @@ def read_archived_evidence(summary_path, *, identity_key="full_evidence"):
     _check_bytes(compressed, identity, "compressed")
     raw = gzip.decompress(compressed)
     _check_bytes(raw, identity, "uncompressed")
+    return summary, raw
+
+
+def read_archived_evidence(summary_path, *, identity_key="full_evidence"):
+    """Return ``(summary, original_report)`` from a verified gzip/JSON envelope.
+
+    Reuse read_archived_bytes for path/identity validation, then require a JSON
+    object. Preserve failed, partial and unknown fields. No scientific acceptance
+    or citation registration is implied; invalid report JSON raises ValueError.
+    """
+    summary, raw = read_archived_bytes(summary_path, identity_key=identity_key)
     report = json.loads(raw)
     if not isinstance(report, dict):
         raise ValueError("Archived report must be a JSON object")

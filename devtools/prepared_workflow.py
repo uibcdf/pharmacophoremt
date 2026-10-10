@@ -358,13 +358,17 @@ def main(argv=None):
     target.add_argument("--output", type=Path)
     target.add_argument("--read", type=Path)
     parser.add_argument(
-        "--case", choices=("placed", "search", "consensus"), default="placed"
+        "--case",
+        choices=("placed", "search", "consensus", "receptor"),
+        default="placed",
     )
     args = parser.parse_args(argv)
     if args.read:
-        names = {"search": ("rigid",), "consensus": ("consensus",)}.get(
-            args.case, ("narrow", "wide", "veto")
-        )
+        names = {
+            "search": ("rigid",),
+            "consensus": ("consensus",),
+            "receptor": ("projected", "opposite", "collision", "observed"),
+        }.get(args.case, ("narrow", "wide", "veto"))
         print(json.dumps(read_models(args.read, model_names=names), allow_nan=False))
         return 0
     review_case, check_case = run_case, expectations_passed
@@ -378,6 +382,11 @@ def main(argv=None):
             expectations_passed as check_case,
         )
         from devtools.prepared_consensus_workflow import run_case as review_case
+    if args.case == "receptor":
+        from devtools.prepared_receptor_workflow import (
+            expectations_passed as check_case,
+        )
+        from devtools.prepared_receptor_workflow import run_case as review_case
     for key in THREAD_VARS:
         os.environ[key] = "1"
     import ackredit
@@ -417,6 +426,21 @@ def main(argv=None):
             ]
         )
 
+    if args.case == "receptor":
+        from devtools.prepared_receptor_workflow import ARTIFACT, MANIFEST, SUMMARY
+
+        paths.extend(
+            [
+                ARTIFACT,
+                MANIFEST,
+                SUMMARY,
+                ROOT / "devtools/prepared_receptor_workflow.py",
+                ROOT / "devtools/evidence_archive.py",
+                ROOT / "devtools/validate_eralpha_template.py",
+                ROOT / "tests/test_prepared_receptor_workflow.py",
+            ]
+        )
+
     def identities():
         return {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
@@ -432,7 +456,11 @@ def main(argv=None):
                 phmt.attribution(enabled),
             ):
                 result = review_case(Path(directory), fresh_reader=True)
-                if enabled:
+                if enabled and args.case == "receptor":
+                    from devtools.prepared_receptor_workflow import credit_input
+
+                    credit_input()
+                elif enabled:
                     credit_source("EST")
                     if args.case == "consensus":
                         credit_source("DES")
@@ -477,9 +505,14 @@ def main(argv=None):
             "placed": "pharmacophoremt.prepared_workflow@1",
             "search": "pharmacophoremt.prepared_search_workflow@1",
             "consensus": "pharmacophoremt.prepared_consensus_workflow@1",
+            "receptor": "pharmacophoremt.prepared_receptor_workflow@1",
         }[args.case],
         recorded_at_utc=datetime.now(timezone.utc).isoformat(),
-        scope="public CCD ideal prepared workflow controls; no biological/activity/performance claim",
+        scope=(
+            "cached prepared ERalpha fragment and synthetic controls; no biological/activity/performance claim"
+            if args.case == "receptor"
+            else "public CCD ideal prepared workflow controls; no biological/activity/performance claim"
+        ),
         source_head=git("rev-parse", "HEAD"),
         source_working_state=git("status", "--porcelain"),
         environment=dict(

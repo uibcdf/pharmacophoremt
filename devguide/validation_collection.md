@@ -129,7 +129,11 @@ records a fresh environment/output.
 identity_key='full_evidence')` verifies compressed/uncompressed SHA-256,
 optional byte counts and a sibling archive path, then returns the summary and
 original JSON object. Historical `file` spelling and an explicit different
-identity key are supported. It preserves unknown, failed and partial fields;
+identity key are supported.
+`read_archived_bytes(summary_path, identity_key=...)` exposes verified raw bytes
+for non-JSON artifacts without decoding them; native molecular formats are read
+by MolSysMT after the consumer selects its input. Both readers share path/hash/
+byte-count validation. The JSON reader preserves unknown, failed and partial fields;
 callers own scientific schema interpretation and acceptance. It uses no
 scientific imports, executes no stored commands and mutates no files.
 

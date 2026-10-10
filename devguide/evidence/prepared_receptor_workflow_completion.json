@@ -1,0 +1,151 @@
+{
+  "schema": "pharmacophoremt.prepared_receptor_workflow_completion@1",
+  "recorded_at_utc": "2026-10-10T12:26:23.126787+00:00",
+  "owning_issue": "uibcdf/pharmacophoremt#52",
+  "original_summary": "prepared_receptor_workflow_py314_summary.json",
+  "source_head": "a64e369eae1bbd331b7cfd2f17371ce38b73d284",
+  "runtime_source_unchanged": true,
+  "producer_python_hashes_still_match": true,
+  "recorded_native_extension_hashes_still_match": true,
+  "executed_driver_guard_inputs_still_match": true,
+  "original_archive_count_unchanged": 31,
+  "prepared_native_input_unchanged": true,
+  "later_verification": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "Generated report indexes are current.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.464s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "..............\n----------------------------------------------------------------------\nRan 14 tests in 2.285s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "stdout": "245 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-52-review-umxjtx06/render.py"
+      ],
+      "exit_code": 0,
+      "stdout": "sphinx 0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-S",
+        "-m",
+        "devtools.evidence_archive",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/devguide/evidence/prepared_receptor_workflow_py314_summary.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.prepared_receptor_workflow_summary@1\", \"report_schema\": \"pharmacophoremt.prepared_receptor_workflow@1\", \"recorded_at_utc\": \"2026-10-10T12:21:33.727469+00:00\", \"archive_bytes_verified\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt-52-review-umxjtx06/render.py"
+      ],
+      "exit_code": 0,
+      "stdout": "sphinx 0\n",
+      "stderr": "",
+      "reason": "Final wording clarifies twelve saved models read in fresh processes and measured reconstruction."
+    }
+  ],
+  "final_rendering": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.13/bin/python",
+      "-m",
+      "sphinx",
+      "-E",
+      "-W",
+      "--keep-going",
+      "-b",
+      "html",
+      "/tmp/phmt-52-review-umxjtx06/docs",
+      "/tmp/phmt-52-review-umxjtx06/html"
+    ],
+    "exit_code": 0,
+    "links_resolved_only_in_temporary_copies": [
+      {
+        "page": "cookbook",
+        "old": "prepared_eralpha_interface.md",
+        "url": "https://github.com/uibcdf/pharmacophoremt/blob/main/docs/content/cookbook/prepared_eralpha_interface.md"
+      },
+      {
+        "page": "validation",
+        "old": "../cookbook/prepared_eralpha_interface.md",
+        "url": "https://github.com/uibcdf/pharmacophoremt/blob/main/docs/content/cookbook/prepared_eralpha_interface.md"
+      }
+    ],
+    "scope": "Strict isolated two-new-page rendering, not whole-site or scientific qualification on Python 3.13"
+  },
+  "scope": "Seven corrected new scientific controls plus 133 applicable passed unchanged controls from initial selection; 3 reporting/14 archive guards and final isolated rendering. Initial seven setup errors retained. Not a complete passing 140-test invocation, full hosted matrix or public artifact qualification.",
+  "temporary_resources": {
+    "owned_root": "/tmp/phmt-52-review-umxjtx06",
+    "retained_evidence": "Needed source, results and initial/final checks retained in original gzip and completion receipt",
+    "cleanup_plan": "Remove only owned root after successful direct commit/push; record actual deletion in issue. Preserve shared cache/environments/siblings."
+  }
+}

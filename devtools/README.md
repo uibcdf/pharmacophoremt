@@ -35,12 +35,18 @@ case retains its original contract and evidence identity.
 The `--case consensus` continuation checks distinct prepared EST/DES supporters,
 original occurrence maps and empty-versus-failed facade rebuilding; see the
 [consensus contract](../devguide/prepared_consensus_workflow.md).
+The `--case receptor` continuation consumes the archived prepared ERα native
+artifact and cached observations, reviewing explicit ring projections, exclusion
+vetoes and observed-contact reconstruction; see the
+[receptor contract](../devguide/prepared_receptor_workflow.md).
 
 `evidence_archive.read_archived_evidence()` reads the existing local gzip/JSON
 archive envelope with compressed/uncompressed SHA-256 and optional byte-count
 checks. It preserves original failed, partial and unknown fields, requires a
 sibling archive and imports no scientific providers. Scientific schema and
-acceptance remain with each producer/caller. Use
+acceptance remain with each producer/caller. `read_archived_bytes()` exposes the
+same integrity checks for binary evidence without decoding; native molecular
+formats remain provider-owned. Use
 `python -m devtools.evidence_archive SUMMARY.json` for archive integrity only.
 The [collection contract](../devguide/validation_collection.md) and
 [case template](../devguide/templates/evidence_case.md) define contribution,

@@ -1,0 +1,233 @@
+{
+  "recorded_at_utc": "2026-10-10T12:21:33.727469+00:00",
+  "source_head": "a64e369eae1bbd331b7cfd2f17371ce38b73d284",
+  "source_working_state": "M devguide/roadmap.md\n M devguide/validation_collection.md\n M devtools/README.md\n M devtools/evidence_archive.py\n M devtools/prepared_workflow.py\n M docs/content/cookbook/index.md\n M docs/content/validation/index.md\n M tests/test_evidence_archive.py\n M tests/test_reporting_protocol.py\n?? devguide/pending_proposals/prepared_receptor_continuation.md\n?? devguide/prepared_receptor_workflow.md\n?? devtools/prepared_receptor_workflow.py\n?? docs/content/cookbook/prepared_receptor_workflow.md\n?? docs/content/validation/prepared_receptor_workflow.md\n?? tests/test_prepared_receptor_workflow.py",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39",
+    "packages_before": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "5cc097a0709e798d1baa327836ca42bf7b2757d4cdcc8dfe60cff1338d560880",
+        "python_file_count": 130
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.12.0+2.g1342f0f",
+        "python_source_sha256": "8935cdb1496f7ce5f27c7afab844cb6714835576dc2dc1da8e83cc580856c606",
+        "python_file_count": 69
+      }
+    },
+    "packages_after": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "5cc097a0709e798d1baa327836ca42bf7b2757d4cdcc8dfe60cff1338d560880",
+        "python_file_count": 130
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.12.0+2.g1342f0f",
+        "python_source_sha256": "8935cdb1496f7ce5f27c7afab844cb6714835576dc2dc1da8e83cc580856c606",
+        "python_file_count": 69
+      }
+    },
+    "molecular_extensions": {
+      "molsysmt._rust": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+      }
+    }
+  },
+  "scope": "cached prepared ERalpha fragment and synthetic controls; no biological/activity/performance claim",
+  "scientific_outputs_stable": true,
+  "input_hashes_unchanged": true,
+  "source_hashes_unchanged": true,
+  "schema": "pharmacophoremt.prepared_receptor_workflow_summary@1",
+  "full_evidence": {
+    "path": "prepared_receptor_workflow_py314.json.gz",
+    "compressed_sha256": "0d080c18308a0e64f0236b39484432f26fb3112ebea17d444dd78294b235d8b2",
+    "uncompressed_sha256": "b766c49f08a3ca153c00facf2b7a47faccfbc4b568723a6b68f3da66d51b8b88",
+    "compressed_bytes": 6983357,
+    "uncompressed_bytes": 110942977
+  },
+  "expectations_passed": true,
+  "focused_tests": {
+    "corrected_new_controls_passed": 7,
+    "corrected_new_pytest_seconds": 122.44,
+    "unchanged_controls_passed_in_initial_selection": 133,
+    "initial_setup_errors": 7,
+    "initial_pytest_seconds": 115.5,
+    "initial_total_selection_passed": false
+  },
+  "original_archive_count": 31,
+  "input_identity": {
+    "native_evidence": {
+      "path": "eralpha_interface_prepared_py314.h5msm.gz",
+      "compressed_bytes": 585225,
+      "uncompressed_bytes": 3508888,
+      "compressed_sha256": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+      "uncompressed_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a"
+    },
+    "historical_producers": {
+      "pharmacophoremt": {
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "version": "0.3.0+108.g864dcf5",
+        "python_source_sha256": "bf10dd0b5bbbefe7038d3cf7b890720d4c32ed2d8554f09602e8318c34d472e2",
+        "python_file_count": 136
+      },
+      "molsysmt": {
+        "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "version": "0.22.4+215.g5bd893c85",
+        "python_source_sha256": "d8de587cc8631a080187179567d4302c68105ac2aa633ffe60e3583eb090980c",
+        "python_file_count": 2851
+      },
+      "pyunitwizard": {
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "version": "0.28.1+3.g2ab37a5",
+        "python_source_sha256": "899e081c7c000891bd3e314ad4f90f2bd53c318e1c816b9bb0bfc2f3ec1f2a33",
+        "python_file_count": 84
+      },
+      "ackredit": {
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "version": "0.11.0+29.g71bed3e.dirty",
+        "python_source_sha256": "05669415fe804a7756961d1d770c61393bd49e09174a68aaf9ceaf6d0ed31857",
+        "python_file_count": 69
+      }
+    },
+    "historical_recorded_utc": "2026-10-07T06:24:30.466009+00:00",
+    "original_summary": "devguide/evidence/eralpha_interface_py314_summary.json",
+    "preparation": "Historical declared fragment; loaded unchanged, not regenerated"
+  },
+  "oracle": {
+    "ring_atom_indices": [
+      796,
+      797,
+      798,
+      799,
+      800,
+      801
+    ],
+    "heavy_atom_indices": [
+      791,
+      792,
+      793,
+      794,
+      795,
+      796,
+      797,
+      798,
+      799,
+      800,
+      801
+    ],
+    "frozen_ring_center_nm": [
+      10.3282,
+      1.9207666666666665,
+      2.0210166666666667
+    ],
+    "declared_translation_nm": [
+      0,
+      0,
+      0.35
+    ],
+    "observed_displacement_nm": [
+      2,
+      0,
+      0
+    ],
+    "projected_separation_nm": 0.7,
+    "narrow_exclusion_radius_nm": 0.01,
+    "veto_radius_nm": 0.4,
+    "expected_hydrophobic_source_pairs": [
+      [
+        673,
+        5944
+      ],
+      [
+        673,
+        5945
+      ],
+      [
+        701,
+        5944
+      ],
+      [
+        813,
+        5940
+      ],
+      [
+        813,
+        5941
+      ],
+      [
+        813,
+        5950
+      ],
+      [
+        815,
+        5940
+      ],
+      [
+        815,
+        5941
+      ],
+      [
+        815,
+        5944
+      ],
+      [
+        815,
+        5945
+      ],
+      [
+        815,
+        5949
+      ],
+      [
+        815,
+        5950
+      ]
+    ],
+    "coordinate_tolerance_nm": 1e-12,
+    "candidate_policy": "Translated PHE404 is a methodological molecular candidate, not a different ligand/conformer or biological binding prediction"
+  },
+  "attribution_counts": [
+    {
+      "host_tracking": false,
+      "items": 3,
+      "uses": 3
+    },
+    {
+      "host_tracking": true,
+      "items": 12,
+      "uses": 36
+    }
+  ]
+}

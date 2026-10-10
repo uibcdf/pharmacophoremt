@@ -25,6 +25,7 @@ pharmacophore_curation
 prepared_workflow
 prepared_search_workflow
 prepared_consensus_workflow
+prepared_receptor_workflow
 prepared_conformers
 aligned_consensus
 aligned_cliques

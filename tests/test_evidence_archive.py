@@ -11,7 +11,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from devtools.evidence_archive import read_archived_evidence
+from devtools.evidence_archive import read_archived_bytes, read_archived_evidence
 
 ROOT = Path(__file__).resolve().parents[1]
 CCD_SUMMARY = ROOT / "devguide/evidence/prepared_ccd_py314_summary.json"
@@ -46,6 +46,34 @@ class TestEvidenceArchive(unittest.TestCase):
 
     def write_summary(self):
         self.summary_path.write_text(json.dumps(self.summary))
+
+    def test_binary_payload_is_verified_without_decoding_or_mutating_files(self):
+        raw = b"\x89HDF\r\n\x1a\n\x00\xffnative fixture bytes"
+        packed = gzip.compress(raw, mtime=0)
+        self.archive.write_bytes(packed)
+        self.summary["native_evidence"] = dict(
+            path=self.archive.name,
+            compressed_sha256=hashlib.sha256(packed).hexdigest(),
+            uncompressed_sha256=hashlib.sha256(raw).hexdigest(),
+            compressed_bytes=len(packed),
+            uncompressed_bytes=len(raw),
+        )
+        self.write_summary()
+        before = self.archive.read_bytes(), self.summary_path.read_bytes()
+        summary, payload = read_archived_bytes(
+            self.summary_path, identity_key="native_evidence"
+        )
+        self.assertEqual(summary, self.summary)
+        self.assertEqual(payload, raw)
+        self.assertEqual(
+            before, (self.archive.read_bytes(), self.summary_path.read_bytes())
+        )
+        with self.assertRaises(ValueError):
+            read_archived_evidence(self.summary_path, identity_key="native_evidence")
+        self.summary["native_evidence"]["uncompressed_bytes"] += 1
+        self.write_summary()
+        with self.assertRaisesRegex(ValueError, "byte count mismatch"):
+            read_archived_bytes(self.summary_path, identity_key="native_evidence")
 
     def test_failed_and_unknown_fields_remain_original_and_files_are_unchanged(self):
         before = self.summary_path.read_bytes(), self.archive.read_bytes()
@@ -290,6 +318,79 @@ class TestEvidenceArchive(unittest.TestCase):
                     for use in tracked["uses"]
                 )
             )
+
+    def test_cached_receptor_archive_keeps_original_input_empty_veto_and_failures(self):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/prepared_receptor_workflow_py314_summary.json"
+        )
+        self.assertEqual(
+            report["schema"], "pharmacophoremt.prepared_receptor_workflow@1"
+        )
+        self.assertEqual(summary["environment"], report["environment"])
+        for name in (
+            "scientific_outputs_stable",
+            "source_hashes_unchanged",
+            "input_hashes_unchanged",
+        ):
+            self.assertTrue(report[name])
+        for name, content in report["executed_source_overlay"].items():
+            self.assertEqual(
+                hashlib.sha256(content.encode()).hexdigest(),
+                report["input_sha256"][name],
+            )
+        self.assertEqual(len(report["original_archives_unchanged"]), 31)
+        self.assertFalse(summary["focused_tests"]["initial_total_selection_passed"])
+        self.assertIn("133 passed", report["verification"]["guards.log"])
+        self.assertIn("7 passed", report["verification"]["final-guards.log"])
+        for run in report["records"]:
+            self.assertTrue(run["expectations_passed"])
+            result = run["result"]
+            self.assertEqual(result["inputs_before"], result["inputs_after"])
+            self.assertEqual(result["empty"]["interaction_sites"], [])
+            self.assertEqual(len(result["results"]), 12)
+            self.assertEqual(len(result["fresh_reader"]["models"]), 12)
+            self.assertEqual(result["fresh_reader"]["attribution"]["uses"], [])
+            self.assertEqual(
+                result["failed_rebuilds"]["complex"]["code"], "MSM-ERR-ARG-001"
+            )
+            for failed in result["failed_rebuilds"].values():
+                self.assertTrue(failed["result_is_none"])
+            for codec in ("json", "yaml", "sdf"):
+                positive = result["results"]["projected." + codec]["outcomes"][
+                    "translated"
+                ]
+                veto = result["results"]["collision." + codec]["outcomes"]["translated"]
+                self.assertEqual(
+                    (positive["status"], positive["fit_value"]), ("matched", 1)
+                )
+                self.assertEqual(
+                    (veto["status"], veto["fit_value"]), ("not_matched", 1)
+                )
+                native = result["results"]["projected." + codec]["native"]
+                self.assertEqual(
+                    native["interaction_sites"][0]["metadata"]["atom_indices"],
+                    [796, 797, 798, 799, 800, 801],
+                )
+                observed = result["results"]["observed." + codec]["native"]
+                self.assertEqual(
+                    {
+                        x["label"]: x["n_observations"]
+                        for x in observed["metadata"]["interaction_collection"][
+                            "analyses"
+                        ]
+                    },
+                    {"hydrophobic": 12, "hbonds": 0, "pi_pi": 0},
+                )
+        attribution = report["records"][1]["attribution"]
+        datasets = [item for item in attribution["items"] if item["type"] == "dataset"]
+        self.assertEqual(len(datasets), 1)
+        self.assertIn("prepared-eralpha:a42ef986", datasets[0]["id"])
+        self.assertTrue(
+            any(
+                use["item_id"] == datasets[0]["id"] and use["roles"] == ["input_data"]
+                for use in attribution["uses"]
+            )
+        )
 
     def test_cli_reads_real_archive_without_site_packages(self):
         result = subprocess.run(
