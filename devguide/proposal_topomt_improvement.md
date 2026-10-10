@@ -10,6 +10,11 @@ track the request, shape a PR, and keep PharmacophoreMT aligned with the central
 
 ## Proposal 1 — Shared molecular plane geometry utilities
 
+**2026-10-10 ownership qualification (#46):** The source utility described below
+is retired. General molecular planes/angles belong in MolSysMT, whose native
+public tools are already consumed by PHMT. The historical open ownership choice
+below is superseded; no speculative TopoMT gap or new shared kernel is proposed.
+
 **Origin:** `pharmacophoremt/utils/maths.py` — `ring_normal()`,
 `point_projection()`, `angle_between_normals()`.
 

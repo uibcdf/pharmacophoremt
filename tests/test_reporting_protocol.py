@@ -54,6 +54,8 @@ class TestReportingProtocol(unittest.TestCase):
                 "uibcdf/pharmacophoremt#42",
                 "uibcdf/pharmacophoremt#44",
                 "uibcdf/pharmacophoremt#45",
+                "uibcdf/pharmacophoremt#46",
+                "uibcdf/pharmacophoremt#47",
                 "uibcdf/pharmacophoremt#5",
                 "uibcdf/pharmacophoremt#6",
                 "uibcdf/pharmacophoremt#8",

@@ -1000,3 +1000,18 @@ This qualifies the explicit prepared-native consumer and cache/accounting/export
 contracts, not full-suite/hosted matrices, released artifacts, legacy numerical
 equivalence, biological screening, provider-main capability or performance.
 Molecular conformer generation/library export remain provider-owned needs.
+
+## Molecular utility retirement — 2026-10-10
+
+The [#46 review summary](molecular_utility_retirement_review_py314_summary.json)
+links 249 focused native/import/codec regression tests, five executed native
+recipe block sets, administrative/distribution controls and original retired
+source/fixture/provider/binary identities. All 66 retained data/notebook files
+and 24 prior gzip archives remain byte-identical. The
+[completion receipt](molecular_utility_retirement_completion.json) retains full
+wrapper output, including two unchanged-source ligand SDF 2D/3D warnings, and
+post-archive reporting/cleanup. The independent directional SDF probe reproduces
+open #47, not a passing SDF-fidelity test; its producer provenance was recorded
+after execution. This is focused source/retirement evidence, not full-suite,
+complete hosted/installed/public matrices, biology, performance or whole-component
+resource review. Donor geometry delegation remains MolSysMT #375.

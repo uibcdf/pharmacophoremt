@@ -14,6 +14,23 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Progress — 2026-10-10, utility and reader retirement (#46)
+
+The five orphaned `utils` modules, their empty initializer and the name-grouped
+SDF reader are removed. The sole utility test consumer now prevents loading a
+retired backend. The actual reader consumer is the unchanged historical
+`openpharmacophore` thrombin notebook; its retirement incompatibility is explicit,
+not an unused-everywhere claim or a current library replacement. Data/notebooks
+and prior evidence are retained; distribution removes exactly seven paths.
+See [the retirement contract](../molecular_utility_retirement.md) and
+[#46 report](../archive/retire_orphaned_molecular_utilities.md).
+
+#41 remains **partial** for donor-H displacement/normalization in native feature
+extraction, owned by MolSysMT #375 under the existing 2026-10-17 review conditions.
+No standardization/descriptor/collection kernel is added here. Existing #219,
+#366, #215 follow-up/#223, #323/#350/#367 capabilities and limits remain in their
+owning provider issues. Historical audit/caller entries below retain their dates.
+
 ## Progress — 2026-10-10, screening transition (#45)
 
 `VirtualScreening` now delegates an explicitly chosen placed/rigid/conformer

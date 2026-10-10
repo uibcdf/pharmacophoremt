@@ -87,6 +87,7 @@ protect the delegated chemistry/search. Original outputs are linked in the
 owning report. Focused Linux/Python 3.14 source checks are separate from full
 hosted matrices, installed artifacts, biological validation and benchmarks.
 
-Unused molecular utilities and native donor geometry delegation to MolSysMT
-#375 remain #41 work. The environmental-H blocker #323 is independent of this
-screening facade transition.
+**#46 follow-up:** The unused molecular utilities and name-grouped library reader
+are now retired; see [the contract](molecular_utility_retirement.md). Native donor
+geometry delegation to MolSysMT #375 remains #41 work. The environmental-H blocker
+#323 is independent of this screening facade transition.

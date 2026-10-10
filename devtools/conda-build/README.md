@@ -18,7 +18,7 @@ executed jobs: eight full supported source cells with installed-context prefligh
 independent governance, policy/lint/format and Conda governance. A passing recovery
 probe with omitted science cannot authorize publication.
 
-The inventory includes 178 committed package files plus the generated version
+The inventory includes 171 committed package files plus the generated version
 module, covering private diagnostics, current modules and committed runtime data.
 Register new package modules/resources in `resources.toml`'s `required_paths`.
 The existing complete-tree guard in `devtools/tests/test_distribution_contract.py`

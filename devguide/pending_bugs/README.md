@@ -14,4 +14,8 @@ Queued defects have an owning GitHub issue. See the
 
 - [`full_ci_routes_and_skipped_push_recovery.md`](full_ci_routes_and_skipped_push_recovery.md) — [#9](https://github.com/uibcdf/pharmacophoremt/issues/9) — Complete contributor full-CI routes and skipped-push recovery. *(partial, measured)*
 
+### Open (1)
+
+- [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(open, measured)*
+
 <!-- /generated -->

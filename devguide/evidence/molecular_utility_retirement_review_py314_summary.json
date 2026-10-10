@@ -1,0 +1,218 @@
+{
+  "schema": "pharmacophoremt.molecular_utility_retirement_review@1",
+  "issue": "uibcdf/pharmacophoremt#46",
+  "recorded_at_utc": "2026-10-10T08:52:15.677970+00:00",
+  "source_base": "0f5819d79877288c7436ba2daf4cb6d222cd9cbe",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "qualification_scope": "Focused molecular-ownership/import/native consumer/codec regressions, five executable native recipe sets and administrative distribution checks; not full suite, hosted matrix, installed artifact, SDF semantic fidelity, biological validation, provider-main qualification or performance",
+  "producer_sources_unchanged": true,
+  "native_binaries_unchanged": true,
+  "inputs_unchanged": true,
+  "prior_archives_unchanged": true,
+  "prior_archive_count": 24,
+  "resource_lifecycle": {
+    "owner": "PHMT #46 review driver",
+    "context": "/tmp/phmt-retirement-review-qvft7slg",
+    "context_removed": true,
+    "retained": "original driver, focused/admin output, JUnit, retired module sources/baseline, file identities and independent SDF probe are archived; owned context includes SDK clone and pytest base directories; owned named review/probe files removed after publication",
+    "scope": "This task context only; not full #43 review"
+  },
+  "retained_data_unchanged": true,
+  "retained_data_count": 66,
+  "retired_files_absent": true,
+  "unchanged_sdf_codec": true,
+  "focused_tests": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "pytest",
+      "--receptor=llm",
+      "--junitxml=/tmp/phmt-retirement-review-qvft7slg/focused.xml",
+      "--basetemp=/tmp/phmt-retirement-review-qvft7slg/pytest",
+      "tests/test_molecular_ownership.py",
+      "tests/test_virtual_screening.py",
+      "tests/test_ligand_based_facade.py",
+      "tests/test_complex_based_facade.py",
+      "tests/test_receptor_projections.py",
+      "tests/test_pose_evaluation.py",
+      "tests/test_reference_ligand.py",
+      "tests/test_conformer_screening.py",
+      "tests/test_rigid_search.py",
+      "tests/test_retrospective.py",
+      "tests/test_io_rdkit.py",
+      "tests/test_io_pharmer.py",
+      "tests/test_io_ligandscout.py",
+      "tests/test_contracts.py",
+      "tests/test_attribution.py"
+    ],
+    "exit_code": 0,
+    "wall_seconds": 129.4325127100019,
+    "tests": 249,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "recipes": {
+    "prepared_conformers": {
+      "blocks_executed": 4,
+      "hit_indices": [
+        0,
+        1
+      ],
+      "frame_indices": [
+        1,
+        1
+      ]
+    },
+    "retrospective_validation": {
+      "blocks_executed": 1,
+      "n_evaluated": 2,
+      "n_failed": 1,
+      "scores": [
+        1.0,
+        0.0
+      ],
+      "indices": [
+        0,
+        1
+      ],
+      "AUC": 1.0,
+      "BEDROC": 1.0
+    },
+    "ligand_based_modeler": {
+      "blocks_executed": 2
+    },
+    "complex_based_modeler": {
+      "blocks_executed": 3
+    },
+    "structure_based_modeler": {
+      "blocks_executed": 3
+    }
+  },
+  "documentation": {
+    "exit_code": 0,
+    "scope": "No new published recipe or Sphinx navigation content; five existing recipe block sets are executed. Maintained devguide/data prose checked through reporting and review; no site-rendering qualification claimed."
+  },
+  "administrative": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.2101181149992044
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.5311077590013156
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.40446524399885675
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 2.238871747998928
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.26899117499851855
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/broadcast_requirements.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.2532450259968755
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "pytest",
+        "--receptor=llm",
+        "tests/test_ci_backlog.py",
+        "tests/test_ci_routes.py",
+        "--basetemp=/tmp/phmt-retirement-review-qvft7slg/admin-pytest"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.6050793719987269
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "pharmacophoremt",
+        "tests",
+        "devtools"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.06545593999908306
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "pharmacophoremt",
+        "tests",
+        "devtools"
+      ],
+      "exit_code": 0,
+      "wall_seconds": 0.056055579996609595
+    }
+  ],
+  "full_evidence": {
+    "path": "molecular_utility_retirement_review_py314.json.gz",
+    "compressed_sha256": "48a8464758ce901b7813b24906cfea3945abbbd349184b155f15d43ddc87bf79",
+    "uncompressed_sha256": "f5e45ee6e773e503b6c4771254cd688727af58bad7c1947ded8375cf5ca79e53",
+    "compressed_bytes": 78697,
+    "uncompressed_bytes": 454605
+  }
+}

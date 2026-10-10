@@ -3,6 +3,8 @@
 import ast
 import inspect
 import json
+import sys
+from importlib.abc import MetaPathFinder
 
 import molsysmt as msm
 import numpy as np
@@ -204,12 +206,14 @@ def test_recorded_failures_are_unscored_and_not_hits():
 
 
 def test_no_coordinates_never_trigger_local_preparation(monkeypatch):
-    from pharmacophoremt.utils.conformers import ConformerGenerator
+    class RetiredBackendFinder(MetaPathFinder):
+        def find_spec(self, fullname, path=None, target=None):
+            if fullname.startswith("pharmacophoremt.utils"):
+                pytest.fail(
+                    "Screening attempted to load a retired local molecular backend"
+                )
 
-    def forbidden(*args, **kwargs):
-        pytest.fail("Retired local conformer preparation was invoked")
-
-    monkeypatch.setattr(ConformerGenerator, "generate", forbidden)
+    monkeypatch.setattr(sys, "meta_path", [RetiredBackendFinder(), *sys.meta_path])
     source, query = reference()
     unprepared = msm.convert(
         msm.convert("smiles:CCC", to_form="rdkit.Mol"), to_form="molsysmt.MolSys"

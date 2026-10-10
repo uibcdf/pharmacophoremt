@@ -6,7 +6,7 @@ This directory contains the core knowledge bases and validation datasets for the
 
 - **`smarts.py`**: Patterns used by legacy modelers. Native classical recognition is supplied by MolSysMT under the declared `classical_atomic_formal@1` definition.
 - **`zinc.py`**: Mapping definitions for ZINC database tranches (MW and LogP bins).
-- **`pdb_to_smi.pickle`**: A dictionary mapping PDB ligand IDs to canonical SMILES, used by `utils.chemistry.fix_bond_orders` to correct chemical identities from PDB files.
+- **`pdb_to_smi.pickle`**: Retained historical mapping of PDB ligand IDs to canonical SMILES. The old `utils.chemistry` consumer is retired (#46); current molecular assessment/template application belongs to MolSysMT.
 
 ## 2. Validation Metadata
 
@@ -22,9 +22,17 @@ Standard protein-ligand systems for `ComplexBasedModeler` testing:
 - **`1m7w`, `4mww`, `1xdn`, `2reg`**: Diverse complexes covering various interaction types (Halogens, Metals, etc.).
 
 ### Ligand Sets (`ligand_sets/`)
-Aligned and diverse molecule sets for `LigandBasedModeler` (Consensus) and `VirtualScreening` testing:
+Historical ligand-set material; current native modeling/screening requires
+explicitly prepared inputs and qualified source identity:
 - **`hiv/`, `dhfr/`, `thrombin/`**: Classic drug-discovery benchmarks.
 - **`Components-smiles-stereo-oe.smi`**: A large database of SMILES for high-throughput screening benchmarks.
+
+The three `hiv.ipynb`, `dhfr.ipynb` and `thrombin.ipynb` notebooks are unchanged
+archives using `openpharmacophore`, not current executable PharmacophoreMT
+workflows. The name-grouped `read_sdf.py` helper invoked by `thrombin.ipynb` is
+explicitly retired (#46). It has no current collection replacement: molecular
+library ingestion, properties and atom correspondence belong in MolSysMT. See
+[the retirement contract](../../devguide/molecular_utility_retirement.md).
 
 ### Dynamics and Ensembles (`dynamics/`)
 Data for `DynamicModeler` and MSM testing:

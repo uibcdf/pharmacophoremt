@@ -1,5 +1,10 @@
 # Modeling Strategies and the Modeler Engine
 
+**2026-10-10 utility retirement (#46):** Legacy molecular helper implementations
+are removed after the explicit native consumer transitions. See
+[the retirement contract](molecular_utility_retirement.md). Earlier requests below
+to call them are historical. Native donor geometry remains provider #375.
+
 **2026-10-10 structure transition (#44):** The structure class/dispatcher now
 consume native cached inventories and explicit query projections, with optional
 cached heavy-atom exclusions; see [the contract](structure_based_workflow.md).

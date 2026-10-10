@@ -1,5 +1,12 @@
 # Strategic Roadmap
 
+**2026-10-10 utility retirement (#46):** The orphaned molecular utility package
+and name-grouped SDF reader are removed, with matching distribution inventory
+updates. Retained `openpharmacophore` notebooks are explicitly historical;
+their original data/output bytes stay unchanged. See [the retirement contract](molecular_utility_retirement.md).
+#41 remains partial for donor-H geometry delegation to MolSysMT #375; provider
+preparation/collection/environment-refinement requirements stay in their owners.
+
 **2026-10-10 screening transition (#45):** `VirtualScreening` now requires an
 explicit placed/rigid/prepared-conformer method and delegates to native tools;
 see [the contract](virtual_screening_workflow.md). Legacy preparation/matching,

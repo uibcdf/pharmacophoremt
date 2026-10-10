@@ -1,5 +1,11 @@
 # Classical Pharmacophore Workflow: Historical Scope and Backlog
 
+**2026-10-10 utility retirement (#46):** The historical local preparation,
+conformer, chemistry, alignment/math helpers and name-grouped SDF reader are
+removed after native consumer transitions. Their implementation targets below
+are historical, not active tasks. See [the retirement contract](molecular_utility_retirement.md).
+No provider gaps are filled by local kernels; donor geometry remains MolSysMT #375.
+
 **2026-10-10 screening transition:** #45 retires implicit local conformer
 generation, the legacy match engine and molecular SDF export. `VirtualScreening`
 requires explicit native method choice; both validation callers require an
