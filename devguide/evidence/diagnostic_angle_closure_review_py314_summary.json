@@ -1,0 +1,213 @@
+{
+  "schema": "pharmacophoremt.diagnostic_angle_closure_review@1",
+  "issues": [
+    "uibcdf/pharmacophoremt#2",
+    "uibcdf/pharmacophoremt#16"
+  ],
+  "recorded_at_utc": "2026-10-10T10:12:10.090559+00:00",
+  "source_base": "07b23da7d9da5d987e7e7fa6ca387a968f40a179",
+  "environment": {
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.39"
+  },
+  "qualification_scope": "Existing diagnostic/zero-angle fixes reviewed through real provider tooling and focused scientific/contract controls, plus new small angular tilt guard; no runtime repair, full current-head suite/matrix, artifact release or biology claim",
+  "diagnostic_template_inventory": {
+    "code_count": 10,
+    "codes": [
+      "PHMT-E001",
+      "PHMT-E101",
+      "PHMT-E102",
+      "PHMT-E103",
+      "PHMT-E104",
+      "PHMT-E105",
+      "PHMT-E106",
+      "PHMT-E107",
+      "PHMT-W101",
+      "PHMT-W102"
+    ],
+    "profiles": [
+      "user",
+      "dev",
+      "qa",
+      "agent",
+      "debug"
+    ]
+  },
+  "producer_sources_unchanged": true,
+  "native_binaries_unchanged": true,
+  "inputs_unchanged": true,
+  "prior_archives_unchanged": true,
+  "prior_archive_count": 27,
+  "runtime_unchanged_from_source_base": true,
+  "resource_lifecycle": {
+    "owner": "PHMT #2/#16 closure review",
+    "context": "/tmp/phmt-diagnostic-angle-1zacdpia",
+    "scope": "Owned pytest/SDK/JUnit context only; not full #43 resource audit",
+    "retained": "Original commands/full stdout/JUnit, driver, provider verifier, source overlay and producer/input identities archived; no broad cache or sibling cleanup",
+    "context_removed": true
+  },
+  "accepted": true,
+  "focused_tests": {
+    "selections": [
+      "tests/test_contracts.py",
+      "tests/test_pose_evaluation.py",
+      "tests/test_rigid_search.py"
+    ],
+    "exit_code": 0,
+    "seconds": 47.261158437999256,
+    "tests": 42,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "provider_integration": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "/home/liliana/repos@uibcdf/smonitor/devtools/verify_integration.py",
+      "/home/liliana/repos@uibcdf/pharmacophoremt"
+    ],
+    "exit_code": 0,
+    "stdout": "  pharmacophoremt  1 config     ok\n  pharmacophoremt  2 templates  ok\n  pharmacophoremt  3 renders    ok\n  pharmacophoremt  5 reserved   ok\n\n1 checked, 0 with at least one failure\n",
+    "seconds": 1.7327225070039276
+  },
+  "provider_config": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "smonitor.cli",
+      "--validate-config",
+      "--config-path",
+      "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt"
+    ],
+    "exit_code": 0,
+    "seconds": 1.4080036349987495
+  },
+  "administrative": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.20632820700120647
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.566901129001053
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.41668311200191965
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_*.py"
+      ],
+      "exit_code": 0,
+      "seconds": 2.316798329993617
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2859595799964154
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/broadcast_requirements.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.2473875499999849
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "pytest",
+        "--receptor=llm",
+        "tests/test_ci_backlog.py",
+        "tests/test_ci_routes.py",
+        "--basetemp=/tmp/phmt-diagnostic-angle-1zacdpia/admin-pytest"
+      ],
+      "exit_code": 0,
+      "seconds": 0.6381747530031134
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "pharmacophoremt",
+        "tests",
+        "devtools"
+      ],
+      "exit_code": 0,
+      "seconds": 0.06481717600399861
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "pharmacophoremt",
+        "tests",
+        "devtools"
+      ],
+      "exit_code": 0,
+      "seconds": 0.0649851630005287
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.007831791001081001
+    }
+  ],
+  "full_evidence": {
+    "path": "diagnostic_angle_closure_review_py314.json.gz",
+    "compressed_sha256": "2323a511e5b346edb74d6d219ddfe6ae8313f2eed90c456df988249900116d83",
+    "uncompressed_sha256": "d2d40f0677e1174db45adb2725054b0e533bd3ee5fb44db5b42ac56a5f0f3d0e",
+    "compressed_bytes": 60637,
+    "uncompressed_bytes": 249845
+  }
+}

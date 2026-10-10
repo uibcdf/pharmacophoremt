@@ -217,3 +217,51 @@ def test_directed_pose_is_invariant_under_degree_unit_policy():
             )
         )
         assert PoseEvaluator(model).evaluate(source)["status"] == "matched"
+
+
+@pytest.mark.parametrize("feature", ["hb donor", "aromatic ring"])
+@pytest.mark.parametrize(
+    "standard_units", [["nm", "ps", "radians"], ["angstrom", "fs", "degrees"]]
+)
+def test_zero_angle_roundoff_does_not_hide_a_resolvable_tilt(feature, standard_units):
+    from pharmacophoremt.interaction_site.shape import Disk
+
+    if feature == "hb donor":
+        source = system("[2H]O", [[0.1, 0, 0], [0, 0, 0]])
+    else:
+        angles = np.arange(6) * np.pi / 3
+        # Declared planar analytical fixture, not inferred molecular geometry.
+        coordinates = np.column_stack(
+            (0.14 * np.cos(angles), 0.14 * np.sin(angles), np.zeros(6))
+        )
+        source = system("c1ccccc1", coordinates)
+    before = puw.get_value(msm.get(source, coordinates=True), to_unit="nm").copy()
+    tilt = np.deg2rad(0.0001)
+    with puw.context(standard_units=standard_units):
+        for angle, tolerance, expected in (
+            (0.0, "0 degrees", "matched"),
+            (tilt, "0 degrees", "not_matched"),
+            (tilt, "0.0002 degrees", "matched"),
+            (np.pi, "0 degrees", "not_matched" if feature == "hb donor" else "matched"),
+        ):
+            shape = (
+                SphereAndVector(
+                    "[0,0,0] nm", ".02 nm", [np.cos(angle), np.sin(angle), 0]
+                )
+                if feature == "hb donor"
+                else Disk("[0,0,0] nm", [np.sin(angle), 0, np.cos(angle)], ".02 nm")
+            )
+            query = Pharmacophore()
+            query.add_interaction_site(InteractionSite(shape, feature))
+            result = PoseEvaluator(query, direction_tolerance=tolerance).evaluate(
+                source
+            )
+            assert result["status"] == expected
+            assert result["fit_value"] == (1 if expected == "matched" else 0)
+            assert result["missing_essential_sites"] == (
+                [] if expected == "matched" else [0]
+            )
+            assert result["criteria"]["angle_comparison_cosine_slack"] < 1e-14
+    np.testing.assert_array_equal(
+        puw.get_value(msm.get(source, coordinates=True), to_unit="nm"), before
+    )

@@ -1,5 +1,49 @@
 # Strategic Roadmap
 
+## Current priorities — 2026-10-10
+
+The native class/default routes now require prepared input and explicit scientific
+choices: ligand consensus (#18), observed-complex construction (#42), cached
+receptor projections (#44), and placed/rigid/prepared-conformer screening (#45).
+Orphaned general molecular utilities and the historical library reader are
+retired (#46). Versioned pharmacophore SDF persistence preserves its declared
+six-shape/native-payload contract (#47); the attribution subprocess import guard
+is repaired (#48). General molecular preparation, geometry and molecular library
+I/O remain MolSysMT responsibilities.
+
+The authored-diagnostic rendering and zero-angle comparison corrections are
+reviewed under #2/#16 with fresh controls and archived reports. Their original
+archive checkpoints retain their dated evidence. These narrow closures do not
+close every implemented workflow's scientific/API review.
+
+The next steps are:
+
+1. Complete inspection of the applicable hosted matrix and installed/public
+   delivery gates under #9/#10/#23. A passing focused run or one matrix cell
+   cannot stand for all Python versions/platforms or a public artifact.
+2. Review an end-to-end prepared native workflow through model construction,
+   explicit cached-model curation, persistence and screening. Reuse existing
+   method/recipe/evidence tools; define independent positive/negative controls
+   and preserve original inputs, states, mappings and failures. The collection
+   and the ERα continuation remain tracked in #20/#22. Prepared/analytical
+   controls do not by themselves establish biological or activity-based success.
+3. Finish the remaining consumer migration in #41 when MolSysMT #375 supplies
+   a qualified public geometry contract. Its only retained molecular arithmetic
+   is the bounded donor-H displacement/normalization in `get_features()`; do not
+   recreate missing provider geometry in PHMT. Independent preparation (#219),
+   molecular collection/property correspondence (#215 follow-up / #223) and
+   environmental H refinement (#323) stay with their provider owners.
+
+Automatic pocket/direction hypotheses, viewer/docking integration, biological
+pilots and strategy/performance comparisons remain separate acceptance work.
+Advanced dynamic or accelerated methods follow the classical acceptance gate.
+
+## Historical checkpoints
+
+The dated checkpoints below record the state and then-next step at each
+measurement. Current priorities above supersede completed next-step instructions;
+original provider limitations and measurements keep their original scope.
+
 **2026-10-10 utility retirement (#46):** The orphaned molecular utility package
 and name-grouped SDF reader are removed, with matching distribution inventory
 updates. Retained `openpharmacophore` notebooks are explicitly historical;
@@ -138,10 +182,11 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 - [ ] Execute the chosen public vertical pilots with declared preparation, independent controls and no leakage.
 
 ### 3. Product and ecosystem closure
-- [ ] Migrate remaining direct molecular operations in legacy modelers/screening/utils to MolSysMT.
-  The caller inventory, available provider tools, open provider requirements and
-  bounded retirement review are tracked in #41; native slices alone do not
-  qualify the surviving legacy default.
+- [ ] Complete molecular geometry delegation to MolSysMT (#41 / #375).
+  Prepared class/default transitions and obsolete utility/reader retirement are
+  delivered under #18/#42/#44/#45/#46. The remaining bounded donor-H arithmetic
+  in `get_features()` awaits the provider contract; broad molecular ownership
+  and provider scientific acceptance are not inferred from those retirements.
 - [x] Implement own deferred native Ackredit capture and portable bibliography (#19); see [the cookbook](../docs/content/cookbook/attribution.md).
 - [ ] Review the attribution contract and verify optional-integration distribution support (#6, #19).
 - [ ] Confirm production dependency/distribution closure (#10) and required hosted CI evidence (#9).

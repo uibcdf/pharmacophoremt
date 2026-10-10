@@ -5,11 +5,6 @@ Queued defects have an owning GitHub issue. See the
 
 <!-- generated: devguide_index -->
 
-### Active (2)
-
-- [`catalog_diagnostic_rendering.md`](catalog_diagnostic_rendering.md) — [#2](https://github.com/uibcdf/pharmacophoremt/issues/2) — Restore authored SMonitor catalog messages for PharmacophoreMT diagnostics. *(active, measured)*
-- [`zero_angle_roundoff.md`](zero_angle_roundoff.md) — [#16](https://github.com/uibcdf/pharmacophoremt/issues/16) — Zero-angle direction checks rejected their own source because normalization roundoff became a real angle. *(active, measured)*
-
 ### Partial (1)
 
 - [`full_ci_routes_and_skipped_push_recovery.md`](full_ci_routes_and_skipped_push_recovery.md) — [#9](https://github.com/uibcdf/pharmacophoremt/issues/9) — Complete contributor full-CI routes and skipped-push recovery. *(partial, measured)*

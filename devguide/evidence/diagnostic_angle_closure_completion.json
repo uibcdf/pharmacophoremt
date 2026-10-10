@@ -1,0 +1,72 @@
+{
+  "schema": "pharmacophoremt.diagnostic_angle_closure_completion@1",
+  "issues": [
+    "uibcdf/pharmacophoremt#2",
+    "uibcdf/pharmacophoremt#16"
+  ],
+  "source_base": "07b23da7d9da5d987e7e7fa6ca387a968f40a179",
+  "review_stdout": "receptor: 100% 42/42 45s\nPASS exit=0 | 42 passed | 44.53s\n\n\n  pharmacophoremt  1 config     ok\n  pharmacophoremt  2 templates  ok\n  pharmacophoremt  3 renders    ok\n  pharmacophoremt  5 reserved   ok\n\n1 checked, 0 with at least one failure\n\nInstalled SMonitor config exit=0\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/devguide_index.py', '--check']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_reporting_protocol.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'tests', '-p', 'test_evidence_archive.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'unittest', 'discover', '-s', 'devtools/tests', '-p', 'test_*.py']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/check_dependency_routes.py', '--declared-only']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', 'devtools/broadcast_requirements.py', '--check']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'pytest', '--receptor=llm', 'tests/test_ci_backlog.py', 'tests/test_ci_routes.py', '--basetemp=/tmp/phmt-diagnostic-angle-1zacdpia/admin-pytest']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'ruff', 'check', 'pharmacophoremt', 'tests', 'devtools']\nAdministrative exit=0 ['/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python', '-m', 'ruff', 'format', '--check', 'pharmacophoremt', 'tests', 'devtools']\nAdministrative exit=0 ['git', 'diff', '--check']\n{\"accepted\": true, \"tests\": 42, \"failed\": 0, \"resource_removed\": true}\n",
+  "post_archive_checks": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "devtools.evidence_archive",
+        "devguide/evidence/diagnostic_angle_closure_review_py314_summary.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.diagnostic_angle_closure_review@1\", \"report_schema\": \"pharmacophoremt.diagnostic_angle_closure_review@1\", \"recorded_at_utc\": \"2026-10-10T10:12:10.090559+00:00\", \"archive_bytes_verified\": true}\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "Generated report indexes are current.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.538s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ".........\n----------------------------------------------------------------------\nRan 9 tests in 0.645s\n\nOK\n"
+    }
+  ],
+  "frozen_package_files_unchanged": true,
+  "frozen_package_file_count": 172,
+  "runtime_source_base_comparison_scope": "Review source-base check compares committed Python runtime files, excluding generated _version.py. This receipt separately checks every frozen current package file including generated version and retained data.",
+  "owned_file_sha256": {
+    "/tmp/phmt-diagnostic-angle-issues.json": "1121add083f55c6c739f291dc3a7775ba01f29d6d5569520ada735c50cf8c2c0",
+    "/tmp/phmt-diagnostic-angle-review.py": "56bcca1c784bb338aaec6bb15506beffd879020c2abbc81484f660a0d4058ecd",
+    "/tmp/phmt-diagnostic-angle-review.txt": "ac014d4c2aca18cbe1e6a82cdd7f02a6c99f7608572e5b5c0c58657e2c38bb07"
+  },
+  "cleanup": "Only these three owned named files; original issue snapshots/driver/stdout retained in archive/receipt. Owned pytest/SDK context already removed. Shared cache and sibling clones untouched.",
+  "owned_files_removed": true
+}
