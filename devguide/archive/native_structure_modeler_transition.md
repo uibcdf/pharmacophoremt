@@ -127,3 +127,29 @@ legacy screening/preparation/I/O. Automatic provider-informed pocket modeling
 and biological qualification remain future work. Hosted exact-head matrix
 qualification is tracked separately; local tests do not qualify every supported
 interpreter/platform or the published provider artifact.
+
+## Distribution follow-up — 2026-10-10
+
+The first published head `dbc82e4` failed the hosted `Reporting governance` job
+in run **38035866985**, job **114166037234**: the existing complete-tree
+distribution guard found that the new `modeler/receptor_projections.py` was
+missing from `devtools/conda-build/resources.toml`. Report/index and archive
+steps passed. The issue was reopened while this omission was corrected; the
+original scientific results and archived claims above are preserved.
+
+The required path is now registered. A clean isolated checkout of accepted SDK
+`8f00e6d9de943b6e4710ea62936e2ebea00fad24` passes all **23 administrative
+distribution/dependency/environment tests**, declared dependency-route preflight,
+ordinary-environment check (no drift), and **7 CI/contributor-route controls**.
+The distribution README now states the actual 178 committed package files plus
+generated version module and distinguishes the existing publication SDK pin
+from the dependency/environment SDK pin. No package scientific source or test
+changed, no sibling checkout changed, and no release/build/installed artifact
+qualification is claimed by these synthetic administrative controls.
+
+The [follow-up record](../evidence/structure_based_distribution_followup_py314.json)
+retains the original bounded hosted failure, local commands/output, exact SDK
+identity and temporary-resource cleanup. The existing complete-tree distribution
+test guards registration; the original 247 scientific controls still describe
+the unchanged package code. Hosted qualification of the follow-up head is
+reported separately on #44.

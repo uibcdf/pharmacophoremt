@@ -149,6 +149,7 @@ required_paths = [
   "site-packages/pharmacophoremt/modeler/interaction_collection.py",
   "site-packages/pharmacophoremt/modeler/ligand_based.py",
   "site-packages/pharmacophoremt/modeler/modeler.py",
+  "site-packages/pharmacophoremt/modeler/receptor_projections.py",
   "site-packages/pharmacophoremt/modeler/reference_ligand.py",
   "site-packages/pharmacophoremt/modeler/rigid_consensus.py",
   "site-packages/pharmacophoremt/modeler/scoring.py",

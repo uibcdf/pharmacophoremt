@@ -4,8 +4,9 @@ Owning review: uibcdf/pharmacophoremt#10; coordination: uibcdf/molsyssuite#45.
 This is a prepared noarch publication route with partial adoption and unconfirmed
 publication access. It does not select a release.
 
-All four publication wrappers and the dependency preflight pin qualified SDK
-`2d32048457c6d37093ae509f5626d00a5cda121b`. The existing
+The four publication wrappers pin qualified SDK
+`2d32048457c6d37093ae509f5626d00a5cda121b`; dependency/environment preflight
+separately pins `8f00e6d9de943b6e4710ea62936e2ebea00fad24`. The existing
 `ANACONDA_UIBCDF_TOKEN` mapping is retained; its availability/validity remains
 unconfirmed. Follow the [shared noarch workflow guide](https://github.com/uibcdf/molsyssuite/blob/main/devguide/noarch_conda_workflow.md).
 
@@ -17,8 +18,12 @@ executed jobs: eight full supported source cells with installed-context prefligh
 independent governance, policy/lint/format and Conda governance. A passing recovery
 probe with omitted science cannot authorize publication.
 
-The inventory includes 177 committed package files plus the generated version
+The inventory includes 178 committed package files plus the generated version
 module, covering private diagnostics, current modules and committed runtime data.
+Register new package modules/resources in `resources.toml`'s `required_paths`.
+The existing complete-tree guard in `devtools/tests/test_distribution_contract.py`
+checks this inventory; run the administrative tests with the accepted immutable
+SDK before publishing a new module.
 Package discovery includes only `pharmacophoremt*`, excluding checked-out tooling
 and test namespaces. Recipe/metadata parity and synthetic archive guards inspect
 missing resources and stale version identity; they do not prove built/installed
