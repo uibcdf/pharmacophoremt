@@ -1,5 +1,12 @@
 # Modeling Strategies and the Modeler Engine
 
+**2026-10-10 ownership audit:** #41 records the
+[reachable legacy callers](pending_proposals/retire_legacy_molecular_operations.md),
+including the surviving `model()` complex-based default. Use the documented
+prepared-input native methods explicitly while their legacy transition is
+reviewed. Older requests below to call the local `ConformerGenerator` are
+superseded by MolSysMT #219; do not add local molecular preparation to a modeler.
+
 **2026-10-02 revision:** The current [growth contracts](extensible_modeling_contracts.md)
 and [roadmap](roadmap.md) supersede the older implementation proposals below.
 Molecular preparation/recognition/geometry belongs in MolSysMT. Prepared inputs

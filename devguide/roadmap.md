@@ -1,5 +1,19 @@
 # Strategic Roadmap
 
+**2026-10-10 ownership review:** The
+[molecular ownership audit](pending_proposals/retire_legacy_molecular_operations.md)
+tracks remaining reachable legacy preparation/recognition/I/O under #41. Native
+workflows delegate molecular operations to MolSysMT, but `model()` still defaults
+to the legacy complex builder. Next local work is its explicit prepared-input
+transition, followed by structure-based provider consumption and legacy screening
+retirement. Do not extend local molecular utilities. Conformer generation remains
+provider #219; optional standardization is proposed in #366, and a reproduced
+public-fit degeneracy defect is #367. The #31 automatic seed guard is reviewed
+with 60 focused cases and 680 full-suite tests; it does not repair arbitrary
+provider fits. Existing #323/#350 limitations remain explicit. Docking-specific
+contracts belong to DockingMT; no new docking-owned gap was identified in this
+source audit.
+
 **2026-10-07 ERα checkpoint:** The maintained declared 304–550 fragment/EST
 chain and its independent placed/exclusion/persistence controls are delivered.
 [Empty-family diagnosis](eralpha_interaction_diagnostics.md) now distinguishes
@@ -90,6 +104,9 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 
 ### 3. Product and ecosystem closure
 - [ ] Migrate remaining direct molecular operations in legacy modelers/screening/utils to MolSysMT.
+  The caller inventory, available provider tools, open provider requirements and
+  bounded retirement review are tracked in #41; native slices alone do not
+  qualify the surviving legacy default.
 - [x] Implement own deferred native Ackredit capture and portable bibliography (#19); see [the cookbook](../docs/content/cookbook/attribution.md).
 - [ ] Review the attribution contract and verify optional-integration distribution support (#6, #19).
 - [ ] Confirm production dependency/distribution closure (#10) and required hosted CI evidence (#9).

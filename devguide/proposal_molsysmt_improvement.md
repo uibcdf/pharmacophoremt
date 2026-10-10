@@ -1,3 +1,15 @@
+**Historical proposals; reviewed 2026-10-10:** The API sketches below are not
+delivered contracts. Current provider requests and consumer retirement are
+tracked in uibcdf/pharmacophoremt#41 and its
+[ownership audit](pending_proposals/retire_legacy_molecular_operations.md).
+Fixed-state conformer generation already has uibcdf/molsysmt#219; explicit
+template application is delivered under #298, and molecular ring-plane geometry
+is available through public `structure.get_least_squares_plane`. Reuse those
+owners rather than invent the older API shapes. Provider proposals are made
+through issues; no sibling implementation is authorized here. Returning an
+unchanged molecule after preparation failure, implicit chemistry inference and
+bare dimensionful tolerances in the old sketches are not accepted current rules.
+
 During the PharmacophoreMT reimplementation effort we are expanding the use of
 `molsysmt` adapters and digesters.
 

@@ -1,0 +1,172 @@
+{
+  "schema": "pharmacophoremt.molecular_ownership_audit@1",
+  "issue": "uibcdf/pharmacophoremt#41",
+  "recorded_at_utc": "2026-10-10T06:15:08.369488+00:00",
+  "consumer_source_base": "a504a01a06876f66093ff88887dd6049d26fbffa",
+  "runtime_code_changed": false,
+  "scope": "Inspected declared paths; nine executed provider fits retained separately. Not whole-package scientific equivalence or upstream execution.",
+  "source_files_sha256": {
+    "AGENTS.md": "0d5cc89a75c76841e604e92c1ebd5bb336bf468596e7022652a57b607e5e2b53",
+    "MOLSYSSUITE_GUIDE.md": "cfba856d160ac791775ef5828f79bde025e4fc5b193a0d31eab8875267b98081",
+    "devguide/extensible_modeling_contracts.md": "45d374c0e3638787371d2999a4b4893f757c70bc0c17fe0dddf01bef293190dd",
+    "pharmacophoremt/modeler/__init__.py": "3bec6005590761668d4fc15fbade2eee82dcdc028d0d8de9dda42aa5e6189907",
+    "pharmacophoremt/modeler/dispatcher.py": "c66eec85c7c5aa3419d0cdb49c7582e69950e6731ca72ca554771d954b198ab7",
+    "pharmacophoremt/modeler/features.py": "24183734c8aa726a61cd0804297850f6dcdfa4426829b375c65ad3c244fc29c5",
+    "pharmacophoremt/modeler/interaction_based.py": "3c0d89fe8c545d554a480056bc70eb7232da282d4e0d83c7d8c04122b3826e34",
+    "pharmacophoremt/modeler/interaction_collection.py": "380181cdf343695131bcc598589a180a2b65b5a9316b05d9193511cf4aec6780",
+    "pharmacophoremt/modeler/complex_based.py": "6ffd2b97d719b1a631b7963f3e8d3e10f104e71ad9376705eb89b931e41983b1",
+    "pharmacophoremt/modeler/structure_based.py": "d026e751af8ad622ac4ddc8a5f9dcb841120e10e25488cfab9bf041aa2a76655",
+    "pharmacophoremt/modeler/ligand_based.py": "f11ca9b86019399dbe9bc5e056a9ceb292da944f6013723870b154833f30fc91",
+    "pharmacophoremt/screening/__init__.py": "17656add1e0f9e9780ab3748fdc71ca55336c58888c0bb658dd8fad11e921b9d",
+    "pharmacophoremt/screening/alignment.py": "f77c13329caa35d7237e1eb6b4db996743809b3d7c532db0e6151237ddebf744",
+    "pharmacophoremt/screening/correspondence.py": "a24f238762f06022d1c5c58eb094fcad4760081472fbd3e34070aaf58ebd7c42",
+    "pharmacophoremt/screening/rigid_correspondence.py": "3b47e7c57e19ccc57679bbab85dcb4213f58bbc2198eab3a4bf5927dd4666844",
+    "pharmacophoremt/screening/rigid_refinement.py": "04be35e636a593f2006365e3b9fc0ffceccba520a60c507ff351b16f430a384c",
+    "pharmacophoremt/screening/rigid_placements.py": "b11400d6ccab3269c91e5ffbdc6d012c23c1d1c977fcb50e18add2e031e3392a",
+    "pharmacophoremt/screening/virtual_screening.py": "9297c1edf08df20c8b459232a7b58f7825a6811591791ba2de055a8893a91d64",
+    "pharmacophoremt/screening/conformer_screening.py": "f9737a1090a0aa1ea03ec95a59767525de713515cc67ce6ae3ab943de3f11998",
+    "pharmacophoremt/io/rdkit.py": "4613fdf393297036d411559b1c85a9a9b980d55b34ea067f3cd6c1031dbf503f",
+    "pharmacophoremt/io/sdf.py": "c2d05c51557c96d28af5659be82cedfa939923d1c510cc03381f35df8c951c80",
+    "pharmacophoremt/data/ligand_sets/read_sdf.py": "e8696985770287ad0b4b097a5bcee5f0f45f953a9b876f00e3c2ed599a7ca80e",
+    "pharmacophoremt/utils/preparation.py": "50fc1d4159218b969ca687b0d2e2f8c62aa25f76c4235471be1c3aa7886711a6",
+    "pharmacophoremt/utils/chemistry.py": "e0b3fed44f1d8c1a4772e58e28eb11999180861cfa0deae39d0afb15670445f9",
+    "pharmacophoremt/utils/conformers.py": "835eea1d24a4b18bd0cb8e26728cf03a08f99e6918e7dd5f2304ab8be79a09a7",
+    "pharmacophoremt/utils/alignment.py": "c07133c98ccf4d3b52e388f0e57de45310275e8d5a256907797855cf401201d0",
+    "pharmacophoremt/utils/maths.py": "92daa2f3a9f084602e0aff9341fe5db3c5557f746e518a64678424285ec8a7da",
+    "devtools/prepare_eralpha_ligand.py": "28ff1f7833a555efa7456f8b97e87cda6fdacd2831ae061815b8ff38eb582a83",
+    "devtools/prepare_eralpha_hydrogens.py": "f17b5716496695216db330a54217963932fb39ad525fe2afec0abd7c5b8791ff",
+    "devtools/prepare_eralpha_interface.py": "284b2a47e2e8e062eddc7bbfdabe1e4de351934300bd2e8671e8fcadf8022622",
+    "devtools/prepared_ccd_ligands.py": "02ff0a63e87908091f553347a0efcaca7d06bf89e11400e75ae258aac7331886",
+    "../molsyssuite/devguide/modular_reusable_tools.md": "317448a23176fda3ecb3fe8ee45c32099ccabe0afcb4e05fc2d1d7dcbcf74539",
+    "../molsyssuite/devguide/cross_component_feedback.md": "3320daf9dcf04dcc73e035aed4708d3b72fc4a5fbf4febcdc424029de64591ce",
+    "../moli/moli.toml": "742f9990709ed83dab414120cffacc9da96df4fed134f1aa57eead248a0358da",
+    "../moli/MOLI_GUIDE.md": "2aeb55766a2a24a47392fd250f4378909f667ce2ed0b7d2a8c913fbe5a76fe9a",
+    "../moli/architecture_1.0/MOLSYSSUITE.md": "f225fbbe427c04a63c09bc481e003ebd21178da148f0a838d9ef33101ac48f87",
+    "../molsysmt/AGENTS.md": "a059fe22d665a832ae28178c2a9df5b1a16e236f353d96486fd108c07ff503a3",
+    "../molsysmt/molsysmt/structure/__init__.py": "6854bae94672a25771a5d9173837a8aca973df37f701d64899646cefb2394c3c",
+    "../molsysmt/molsysmt/structure/least_rmsd_fit.py": "26d744a55b79024ab7783e14345ba74bc2668ff2acf7431e9e00d3f59a6f9b01",
+    "../molsysmt/molsysmt/physchem/apply_chemical_template.py": "07c8490725edf8eb39ddefeb18c9010bcad4555436cc624acd2151745a189ade",
+    "../molsysmt/molsysmt/form/file_sdf/to_molsysmt_MolSys.py": "d75cccb5a19fdb6a14165a0f1bdd4dba99fc2965eff7998aa2e3d28f72000861",
+    "../dockingmt/devguide/MOLSYSSUITE_CONTRACT.md": "b761f63fd3419c43e1e6f574b552baac550fb2c960ee79ad8565fc75f940de8e",
+    "../dockingmt/devguide/SCIENTIFIC_SCOPE.md": "cb932288b5dd6dd97118884188e316a284508415e7f5bf4c44156ce39df2c278"
+  },
+  "sibling_checkouts": {
+    "molsyssuite": {
+      "head": "0c9e2da4efaa18690d9d0b51461e1a1a0d95269b",
+      "worktree_status": []
+    },
+    "moli": {
+      "head": "6ebbf4b064f12f6d53204ef41b4cbad22ebf6395",
+      "worktree_status": []
+    },
+    "molsysmt": {
+      "head": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+      "worktree_status": []
+    },
+    "dockingmt": {
+      "head": "b793075e8a06bea6d8704eb0db24239b16671e57",
+      "worktree_status": [
+        " M dockingmt/preparation/ligand.py",
+        " M dockingmt/preparation/receptor.py",
+        " M molsysviewer_dockingmt/adapters/complex.py",
+        "?? devguide/validation/data/5x72_displacement/",
+        "?? devtools/qualify_5x72_displacement.py",
+        "?? tests/test_molecular_delegation.py"
+      ]
+    }
+  },
+  "provider_upstream": "d47b528dabc0a68bf0ce90660b6c3a71701e674c",
+  "provider_fit_source_identical_upstream": true,
+  "old_archives_preserved": [
+    {
+      "path": "devguide/evidence/aromatic_interactions_py314.json.gz",
+      "compressed_sha256": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0"
+    },
+    {
+      "path": "devguide/evidence/ccd_interactions_py314.json.gz",
+      "compressed_sha256": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def"
+    },
+    {
+      "path": "devguide/evidence/curation_py314_cookbook_audit.json.gz",
+      "compressed_sha256": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a"
+    },
+    {
+      "path": "devguide/evidence/eralpha_exclusions_py314.json.gz",
+      "compressed_sha256": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc"
+    },
+    {
+      "path": "devguide/evidence/eralpha_hydrogens_py314.json.gz",
+      "compressed_sha256": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a"
+    },
+    {
+      "path": "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz",
+      "compressed_sha256": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2"
+    },
+    {
+      "path": "devguide/evidence/eralpha_interface_py314.json.gz",
+      "compressed_sha256": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9"
+    },
+    {
+      "path": "devguide/evidence/eralpha_receptor_py314.json.gz",
+      "compressed_sha256": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce"
+    },
+    {
+      "path": "devguide/evidence/eralpha_template_py314.json.gz",
+      "compressed_sha256": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813"
+    },
+    {
+      "path": "devguide/evidence/interaction_composition_py314.json.gz",
+      "compressed_sha256": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a"
+    },
+    {
+      "path": "devguide/evidence/ionic_interactions_py314.json.gz",
+      "compressed_sha256": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802"
+    },
+    {
+      "path": "devguide/evidence/nonfinite_provenance_review_py314.json.gz",
+      "compressed_sha256": "18aa0032790013b62e098e4dcedd08833181a538a80cc1d53c9a9d70a005267e"
+    },
+    {
+      "path": "devguide/evidence/prepared_ccd_py314.json.gz",
+      "compressed_sha256": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2"
+    },
+    {
+      "path": "devguide/evidence/ranked_seeds_py314.json.gz",
+      "compressed_sha256": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6"
+    },
+    {
+      "path": "devguide/evidence/repeat_hydrogen_review_py314.json.gz",
+      "compressed_sha256": "9b28c8b8e82ed74c1f80e52c12da172df4208ee4cafdd09408411821c30618c7"
+    },
+    {
+      "path": "devguide/evidence/rigid_consensus_py314.json.gz",
+      "compressed_sha256": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b"
+    },
+    {
+      "path": "devguide/evidence/rigid_refinement_benchmark_py314.json.gz",
+      "compressed_sha256": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1"
+    },
+    {
+      "path": "devguide/evidence/rigid_refinement_py314.json.gz",
+      "compressed_sha256": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c"
+    },
+    {
+      "path": "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz",
+      "compressed_sha256": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c"
+    }
+  ],
+  "provider_fit_evidence": {
+    "path": "molecular_ownership_provider_fit_py314.json",
+    "sha256": "c08c7040f1e6d7809c3c47d1a8f74db51b81a72ca7f513c068467bab9558519f"
+  },
+  "provider_issues": [
+    "uibcdf/molsysmt#219",
+    "uibcdf/molsysmt#215",
+    "uibcdf/molsysmt#223",
+    "uibcdf/molsysmt#298",
+    "uibcdf/molsysmt#323",
+    "uibcdf/molsysmt#350",
+    "uibcdf/molsysmt#366",
+    "uibcdf/molsysmt#367"
+  ]
+}

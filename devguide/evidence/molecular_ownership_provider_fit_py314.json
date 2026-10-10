@@ -1,0 +1,618 @@
+{
+  "schema": "pharmacophoremt.provider_fit_ownership_audit@1",
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+  "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "provider_version": "0.22.4+215.g5bd893c85",
+  "provider_head": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+  "provider_upstream": "d47b528dabc0a68bf0ce90660b6c3a71701e674c",
+  "fit_source_sha256": "26d744a55b79024ab7783e14345ba74bc2668ff2acf7431e9e00d3f59a6f9b01",
+  "fit_source_unchanged": true,
+  "molecular_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "c535c7d2f0e2a92b6ebf8298a60b19e4b5555467b4aa087e9563c6760619827e"
+    }
+  ],
+  "records": [
+    {
+      "case": "degenerate_source",
+      "origin_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_nm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.6796666666666666,
+          0.4689333333333333,
+          0.17735
+        ]
+      ],
+      "target_nm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "source_distinct_centers": 2,
+      "target_distinct_centers": 3,
+      "source_anchored_rank": 1,
+      "target_anchored_rank": 2,
+      "source_mean_centered_rank": 1,
+      "target_mean_centered_rank": 2,
+      "outcome": "rejected",
+      "error_type": "StructuralInconsistencyError",
+      "error": "Structural inconsistency detected: selection_fit must contain at least three non-collinear points to define a unique three-dimensional rotation. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT",
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "degenerate_target",
+      "origin_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_nm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_nm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          -0.6796666666666666,
+          0.4689333333333333,
+          0.17735
+        ]
+      ],
+      "source_distinct_centers": 3,
+      "target_distinct_centers": 2,
+      "source_anchored_rank": 2,
+      "target_anchored_rank": 1,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 1,
+      "outcome": "rejected",
+      "error_type": "StructuralInconsistencyError",
+      "error": "Structural inconsistency detected: reference_selection_fit must contain at least three non-collinear points to define a unique three-dimensional rotation. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT",
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "valid_self",
+      "origin_nm": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "source_nm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "target_nm": [
+        [
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "source_distinct_centers": 3,
+      "target_distinct_centers": 3,
+      "source_anchored_rank": 2,
+      "target_anchored_rank": 2,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "degenerate_source",
+      "origin_nm": [
+        10.961,
+        1.2027,
+        2.2746
+      ],
+      "source_nm": [
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.281333333333334,
+          1.6716333333333333,
+          2.45195
+        ]
+      ],
+      "target_nm": [
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          11.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.961,
+          2.2027,
+          2.2746
+        ]
+      ],
+      "source_distinct_centers": 2,
+      "target_distinct_centers": 3,
+      "source_anchored_rank": 1,
+      "target_anchored_rank": 2,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            11.42023437660753,
+            1.2842312467849413,
+            2.2746
+          ],
+          [
+            11.42023437660753,
+            1.2842312467849413,
+            2.2746
+          ],
+          [
+            11.042531246784943,
+            2.0396375064301138,
+            2.2746
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "degenerate_target",
+      "origin_nm": [
+        10.961,
+        1.2027,
+        2.2746
+      ],
+      "source_nm": [
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          11.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.961,
+          2.2027,
+          2.2746
+        ]
+      ],
+      "target_nm": [
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.281333333333334,
+          1.6716333333333333,
+          2.45195
+        ]
+      ],
+      "source_distinct_centers": 3,
+      "target_distinct_centers": 2,
+      "source_anchored_rank": 2,
+      "target_anchored_rank": 1,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            11.112217875060459,
+            1.640886789043601,
+            2.3262628399361773
+          ],
+          [
+            10.95649542000153,
+            0.6632889522544825,
+            2.1846542720610107
+          ],
+          [
+            10.134620038271342,
+            1.7728575920352518,
+            2.490232888002812
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "valid_self",
+      "origin_nm": [
+        10.961,
+        1.2027,
+        2.2746
+      ],
+      "source_nm": [
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          11.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.961,
+          2.2027,
+          2.2746
+        ]
+      ],
+      "target_nm": [
+        [
+          10.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          11.961,
+          1.2027,
+          2.2746
+        ],
+        [
+          10.961,
+          2.2027,
+          2.2746
+        ]
+      ],
+      "source_distinct_centers": 3,
+      "target_distinct_centers": 3,
+      "source_anchored_rank": 2,
+      "target_anchored_rank": 2,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            10.961,
+            1.2027,
+            2.2746
+          ],
+          [
+            11.961,
+            1.2027,
+            2.2746
+          ],
+          [
+            10.961,
+            2.2027,
+            2.2746
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "degenerate_source",
+      "origin_nm": [
+        -100.0,
+        200.0,
+        -300.0
+      ],
+      "source_nm": [
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.67966666666666,
+          200.46893333333333,
+          -299.82265
+        ]
+      ],
+      "target_nm": [
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -99.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.0,
+          201.0,
+          -300.0
+        ]
+      ],
+      "source_distinct_centers": 2,
+      "target_distinct_centers": 3,
+      "source_anchored_rank": 1,
+      "target_anchored_rank": 2,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            -99.54076562339249,
+            200.08153124678498,
+            -300.00000000000006
+          ],
+          [
+            -99.54076562339249,
+            200.08153124678498,
+            -300.00000000000006
+          ],
+          [
+            -99.91846875321507,
+            200.83693750643013,
+            -300.00000000000006
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "degenerate_target",
+      "origin_nm": [
+        -100.0,
+        200.0,
+        -300.0
+      ],
+      "source_nm": [
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -99.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.0,
+          201.0,
+          -300.0
+        ]
+      ],
+      "target_nm": [
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.67966666666666,
+          200.46893333333333,
+          -299.82265
+        ]
+      ],
+      "source_distinct_centers": 3,
+      "target_distinct_centers": 2,
+      "source_anchored_rank": 2,
+      "target_anchored_rank": 1,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            -99.84878212493953,
+            200.43818678904358,
+            -299.9483371600639
+          ],
+          [
+            -100.00450457999845,
+            199.46058895225448,
+            -300.08994572793904
+          ],
+          [
+            -100.82637996172865,
+            200.57015759203523,
+            -299.78436711199726
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    },
+    {
+      "case": "valid_self",
+      "origin_nm": [
+        -100.0,
+        200.0,
+        -300.0
+      ],
+      "source_nm": [
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -99.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.0,
+          201.0,
+          -300.0
+        ]
+      ],
+      "target_nm": [
+        [
+          -100.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -99.0,
+          200.0,
+          -300.0
+        ],
+        [
+          -100.0,
+          201.0,
+          -300.0
+        ]
+      ],
+      "source_distinct_centers": 3,
+      "target_distinct_centers": 3,
+      "source_anchored_rank": 2,
+      "target_anchored_rank": 2,
+      "source_mean_centered_rank": 2,
+      "target_mean_centered_rank": 2,
+      "outcome": "accepted",
+      "fitted_coordinates_nm": [
+        [
+          [
+            -100.0,
+            200.0,
+            -300.0
+          ],
+          [
+            -99.0,
+            200.0,
+            -300.0
+          ],
+          [
+            -100.0,
+            201.0,
+            -300.0
+          ]
+        ]
+      ],
+      "source_unchanged": true,
+      "target_unchanged": true
+    }
+  ],
+  "execution_source": "\"\"\"Read-only provider boundary reproduction for PharmacophoreMT ownership audit.\"\"\"\n\nimport hashlib\nimport json\nimport subprocess\nimport sys\nfrom pathlib import Path\n\nimport molsysmt as msm\nimport numpy as np\nfrom molsysmt.native import Structures\n\nfrom pharmacophoremt import pyunitwizard as puw\n\norigins = [[0.0, 0.0, 0.0], [10.961, 1.2027, 2.2746], [-100.0, 200.0, -300.0]]\nprovider = Path(msm.__file__).resolve().parent.parent\nfit_path = provider / 'molsysmt/structure/least_rmsd_fit.py'\nfit_hash = hashlib.sha256(fit_path.read_bytes()).hexdigest()\nrecords = []\nfor raw_origin in origins:\n    origin = np.asarray(raw_origin)\n    degenerate = np.array([origin, origin, origin + [-0.6796666666666666, 0.4689333333333333, 0.17735]])\n    valid = np.array([origin, origin + [1.0, 0.0, 0.0], origin + [0.0, 1.0, 0.0]])\n    for name, first, second in [('degenerate_source', degenerate, valid), ('degenerate_target', valid, degenerate), ('valid_self', valid, valid)]:\n        source = Structures(coordinates=puw.quantity([first], 'nm'))\n        target = Structures(coordinates=puw.quantity([second], 'nm'))\n        source_snapshot = puw.get_value(msm.get(source, coordinates=True), to_unit='nm').copy()\n        target_snapshot = puw.get_value(msm.get(target, coordinates=True), to_unit='nm').copy()\n        record = dict(case=name, origin_nm=raw_origin, source_nm=first.tolist(), target_nm=second.tolist(),\n                      source_distinct_centers=len(np.unique(first, axis=0)), target_distinct_centers=len(np.unique(second, axis=0)),\n                      source_anchored_rank=int(np.linalg.matrix_rank(first - first[0])), target_anchored_rank=int(np.linalg.matrix_rank(second - second[0])),\n                      source_mean_centered_rank=int(np.linalg.matrix_rank(first - first.mean(axis=0))), target_mean_centered_rank=int(np.linalg.matrix_rank(second - second.mean(axis=0))))\n        try:\n            fitted = msm.structure.least_rmsd_fit(source, selection=[0, 1, 2], selection_fit=[0, 1, 2],\n                                                reference_molecular_system=target, reference_selection_fit=[0, 1, 2],\n                                                in_place=False, precision='double', use_gpu=False)\n        except Exception as error:\n            record.update(outcome='rejected', error_type=type(error).__name__, error=str(error))\n        else:\n            record.update(outcome='accepted', fitted_coordinates_nm=puw.get_value(msm.get(fitted, coordinates=True), to_unit='nm').tolist())\n        record['source_unchanged'] = np.array_equal(source_snapshot, puw.get_value(msm.get(source, coordinates=True), to_unit='nm'))\n        record['target_unchanged'] = np.array_equal(target_snapshot, puw.get_value(msm.get(target, coordinates=True), to_unit='nm'))\n        assert record['source_unchanged'] and record['target_unchanged']\n        records.append(record)\nassert all(r['outcome'] == 'accepted' for r in records if r['case'] == 'valid_self')\nassert any(r['outcome'] == 'accepted' for r in records if r['case'] != 'valid_self')\nassert fit_hash == hashlib.sha256(fit_path.read_bytes()).hexdigest()\nexecution = Path(__file__).read_text()\nreport = dict(schema='pharmacophoremt.provider_fit_ownership_audit@1', python=sys.version, executable=sys.executable,\n              provider_version=msm.__version__, provider_head=subprocess.check_output(['git', '-C', str(provider), 'rev-parse', 'HEAD'], text=True).strip(),\n              provider_upstream=subprocess.check_output(['git', '-C', str(provider), 'rev-parse', 'origin/main'], text=True).strip(),\n              fit_source_sha256=fit_hash, fit_source_unchanged=True,\n              molecular_extensions=[dict(module=name, path=module.__file__, sha256=hashlib.sha256(Path(module.__file__).read_bytes()).hexdigest())\n                  for name, module in sorted(sys.modules.items()) if name.startswith('molsysmt.') and getattr(module, '__file__', None) and Path(module.__file__).suffix in {'.so', '.pyd', '.dylib'}],\n              records=records, execution_source=execution, execution_sha256=hashlib.sha256(execution.encode()).hexdigest(),\n              limits='Executed local provider only; upstream fit source inspected as identical. No upstream execution, performance or near-collinearity threshold qualification.')\nPath('/tmp/phmt-provider-fit-audit.json').write_text(json.dumps(report, indent=2, allow_nan=False) + '\\n')\nprint(json.dumps([dict(case=r['case'], origin=r['origin_nm'], outcome=r['outcome']) for r in records]))\n",
+  "execution_sha256": "2c42e00eb7f5f5b57adda6a260f3cbabf77ea0401c8c3047c698e4a38fc5b796",
+  "limits": "Executed local provider only; upstream fit source inspected as identical. No upstream execution, performance or near-collinearity threshold qualification."
+}

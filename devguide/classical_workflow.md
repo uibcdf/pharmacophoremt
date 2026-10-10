@@ -1,5 +1,13 @@
 # Classical Pharmacophore Workflow: Historical Scope and Backlog
 
+**2026-10-10 ownership audit:** See #41 and the
+[actual caller inventory](pending_proposals/retire_legacy_molecular_operations.md).
+The preparation utilities and conformer-integration targets listed below remain
+historical proposals. Current native inputs are prepared through MolSysMT; its
+open #219/#366 requirements must be resolved there or the consumer convenience
+route explicitly retired. These instructions do not authorize local molecular
+preparation work.
+
 **2026-10-02 revision:** This catalog retains earlier scientific requirements
 and proposed implementations. The current [roadmap](roadmap.md) and
 [growth contracts](extensible_modeling_contracts.md) supersede its ownership,
