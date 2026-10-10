@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import io
 import json
 import shutil
@@ -243,15 +244,64 @@ class TestDistributionContract(unittest.TestCase):
             descriptor["python_versions"], ["3.11", "3.12", "3.13", "3.14"]
         )
         self.assertEqual(descriptor["platforms"], ["linux-64", "osx-arm64"])
+        # The accepted preflight SDK contains the unchanged workflow used by the
+        # frozen publication caller. Bind those bytes without fetching history
+        # from the shallow SDK checkout used in administrative CI.
+        wrapper = yaml.safe_load((ROOT / descriptor["workflow"]).read_text())
+        self.assertEqual(
+            wrapper["jobs"]["installed"]["uses"],
+            "uibcdf/molsyssuite/.github/workflows/test-installed-noarch-conda.yaml"
+            "@2d32048457c6d37093ae509f5626d00a5cda121b",
+        )
+        sdk = Path(self.noarch.__file__).resolve().parents[2]
+        workflow_bytes = (
+            sdk / ".github/workflows/test-installed-noarch-conda.yaml"
+        ).read_bytes()
+        self.assertEqual(
+            hashlib.sha256(workflow_bytes).hexdigest(),
+            "7f08432e10a437d96c1c16bc40ae911dcaab9c817457c1e0a3bcb148768a2bb2",
+        )
+        workflow = yaml.safe_load(workflow_bytes)
+        # Synthetic administrative evidence uses actual provider step names;
+        # it is not an executed installed qualification or scientific archive.
+        run = {"id": 1, "run_attempt": 1, "head_sha": "0" * 40}
+        job = {
+            "run_id": run["id"],
+            "run_attempt": run["run_attempt"],
+            "head_sha": run["head_sha"],
+            "status": "completed",
+            "conclusion": "success",
+            "steps": [
+                {"name": step["name"], "status": "completed", "conclusion": "success"}
+                for step in workflow["jobs"]["test"]["steps"]
+                if "name" in step
+            ],
+        }
+        self.matrix.verify_job(job, run, descriptor["required_steps"])
         self.assertEqual(
             descriptor["required_steps"],
             [
                 "Install exact artifact",
                 "Validate installed files",
                 "Run installed tests",
-                "Recheck dependency provenance after installed tests",
+                "Recheck installed provenance after scientific tests",
             ],
         )
+        for required in descriptor["required_steps"]:
+            for conclusion in ("skipped", "failure"):
+                steps = [
+                    {**step, "conclusion": conclusion}
+                    if step["name"] == required
+                    else step
+                    for step in job["steps"]
+                ]
+                with (
+                    self.subTest(required=required, conclusion=conclusion),
+                    self.assertRaises(self.matrix.MatrixError),
+                ):
+                    self.matrix.verify_job(
+                        {**job, "steps": steps}, run, descriptor["required_steps"]
+                    )
 
     def test_candidate_requires_eleven_executed_jobs_and_installed_preflight_before_science(
         self,

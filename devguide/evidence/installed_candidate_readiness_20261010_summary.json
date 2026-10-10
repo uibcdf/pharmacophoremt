@@ -1,0 +1,125 @@
+{
+  "schema": "pharmacophoremt.installed-candidate-readiness-summary@1",
+  "owner": "uibcdf/pharmacophoremt#10",
+  "date": "2026-10-10",
+  "source_sha": "5aefc25e656114513a3955bffbe13bc564805523",
+  "full_evidence": {
+    "path": "installed_candidate_readiness_20261010.json.gz",
+    "compressed_sha256": "e89203acdfad1b22a4b2da2569f9972b73cdc44424228edce6a8b391d9940a61",
+    "uncompressed_sha256": "6c8411342e31b18b0c0749f504d2db861bba2b71d30cc6e1dbdb8e67a76c2e8a",
+    "compressed_bytes": 12051,
+    "uncompressed_bytes": 107397
+  },
+  "descriptor_contract": {
+    "original": "rejected",
+    "corrected": "accepted",
+    "mandatory_phase_negative_controls": 8,
+    "installed_cells": 8
+  },
+  "helper_controls": [
+    {
+      "context": "shared-editable",
+      "provider_sha": "2d32048457c6d37093ae509f5626d00a5cda121b",
+      "target": "tests/test_control.py",
+      "exit_code": 0
+    },
+    {
+      "context": "shared-editable",
+      "provider_sha": "2d32048457c6d37093ae509f5626d00a5cda121b",
+      "target": "tests/test_helper.py",
+      "exit_code": 0
+    },
+    {
+      "context": "shared-editable",
+      "provider_sha": "948d0267de8fa43c542ab7eba28b9f8b7fbf095e",
+      "target": "tests/test_control.py",
+      "exit_code": 0
+    },
+    {
+      "context": "shared-editable",
+      "provider_sha": "948d0267de8fa43c542ab7eba28b9f8b7fbf095e",
+      "target": "tests/test_helper.py",
+      "exit_code": 0
+    },
+    {
+      "context": "isolated-tools",
+      "provider_sha": "2d32048457c6d37093ae509f5626d00a5cda121b",
+      "target": "tests/test_control.py",
+      "exit_code": 0
+    },
+    {
+      "context": "isolated-tools",
+      "provider_sha": "2d32048457c6d37093ae509f5626d00a5cda121b",
+      "target": "tests/test_helper.py",
+      "exit_code": 2
+    },
+    {
+      "context": "isolated-tools",
+      "provider_sha": "948d0267de8fa43c542ab7eba28b9f8b7fbf095e",
+      "target": "tests/test_control.py",
+      "exit_code": 0
+    },
+    {
+      "context": "isolated-tools",
+      "provider_sha": "948d0267de8fa43c542ab7eba28b9f8b7fbf095e",
+      "target": "tests/test_helper.py",
+      "exit_code": 2
+    }
+  ],
+  "direct_helper_consumer_test_files": 23,
+  "unshipped_addon_python_files": 7,
+  "provider_support_issue": "uibcdf/molsyssuite#117",
+  "scope": "Administrative readiness and synthetic controls, not an actual PharmacophoreMT artifact, complete installed scientific matrix or public delivery.",
+  "publication": {
+    "actual_release_plan_selected": false,
+    "artifact_built": false,
+    "installed_science_dispatched": false,
+    "package_published": false
+  },
+  "source_ci_terminal": {
+    "head_sha": "5aefc25e656114513a3955bffbe13bc564805523",
+    "verified_required_jobs": 11,
+    "runs": [
+      {
+        "id": 38053715223,
+        "head_sha": "5aefc25e656114513a3955bffbe13bc564805523",
+        "path": ".github/workflows/CI.yaml",
+        "run_attempt": 1,
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/38053715223",
+        "event": "push"
+      },
+      {
+        "id": 38053715531,
+        "head_sha": "5aefc25e656114513a3955bffbe13bc564805523",
+        "path": ".github/workflows/molsyssuite-policy.yml",
+        "run_attempt": 1,
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/38053715531",
+        "event": "push"
+      },
+      {
+        "id": 38053715507,
+        "head_sha": "5aefc25e656114513a3955bffbe13bc564805523",
+        "path": ".github/workflows/conda_publication_governance.yaml",
+        "run_attempt": 1,
+        "status": "completed",
+        "conclusion": "success",
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/38053715507",
+        "event": "push"
+      }
+    ],
+    "source_scientific_cells": 8
+  },
+  "local_checks": {
+    "python": "3.14.7",
+    "administrative_tests": 23,
+    "reporting_tests": 3,
+    "archive_tests": 14,
+    "ruff_files": 246,
+    "dependency_preflight": "declared-only passed",
+    "runtime_code_committed_changes": false
+  }
+}

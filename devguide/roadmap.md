@@ -51,6 +51,12 @@ both reviewed interpreters. See
 This does not qualify a public PHMT artifact or the full installed matrix;
 effective-channel reporting is proposed in MolSysSuite #116.
 
+The installed candidate review (#10) corrects the frozen workflow's evidence-step
+contract under #54. Before an actual artifact, qualify test dependencies, resolve
+scientific helper namespaces via MolSysSuite #117, and review addon delivery plus
+the existing #110 all-root guard. See
+[the readiness receipt](evidence/installed_candidate_readiness_20261010_summary.json).
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public

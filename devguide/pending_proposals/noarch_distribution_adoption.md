@@ -260,3 +260,51 @@ candidate science, real reviewed release plan/access, original PHMT archive,
 same-byte public receiving and admission are still separate #9/#10/#23 gates.
 No release, provider implementation, runtime molecular code, recipe, workflow,
 SDK pin or required support range is changed by this review.
+
+## Installed candidate readiness — 2026-10-10
+
+Local #54 corrects the installed descriptor's final required step to the exact
+frozen workflow name, `Recheck installed provenance after scientific tests`.
+The new real-workflow/shared-verifier guard fails on the original declaration
+and passes after correction, retaining four phases and eight cells. Neither
+publication pin nor source/file identity is migrated.
+
+The complete declared `tests` selection also needs these independent prerequisites:
+
+- Scientific test dependencies are not declared in `installed_tests` beyond the
+  default generic tools. Ackredit/MolSysViewer are explicit test imports; public
+  compatibility and native optional tools need component-owned qualification
+  through the existing shared `conda_dependencies` operation.
+- Twenty-three test files directly import component `devtools.*` helpers. Actual
+  public runner controls with frozen provider `2d32048457c6d37093ae509f5626d00a5cda121b`
+  and accepted all-root provider `948d0267de8fa43c542ab7eba28b9f8b7fbf095e` pass the
+  installed `packaging` control but fail helper collection in an isolated tooling
+  venv. Shared reusable support is proposed in uibcdf/molsyssuite#117; an implicit
+  source-root insertion is not a valid installed qualification.
+- The existing seven-file `molsysviewer_pharmacophoremt` addon is excluded by
+  package discovery and resource inventory. Its source test explicitly inserts
+  the checkout into `sys.path`. Review intended addon delivery and the existing
+  all-root protection from MolSysSuite #110 before qualifying a real artifact.
+  Provider delivery alone does not authorize changing our accepted caller pin.
+
+The shared editable workspace initially hides the helper failure: stale local
+PharmacophoreMT metadata exposes source `devtools`. A normal no-dependency editable
+refresh restores discovery to `pharmacophoremt` only; the retained before/after
+metadata and isolated controls explain the observation. This repairs local
+development setup, not provider source or published bytes.
+
+Receipt: [installed candidate readiness](../evidence/installed_candidate_readiness_20261010_summary.json).
+The runner fixture uses a standard venv containing copied test/provider tool
+modules, with plugin autoload disabled for this administrative experiment only.
+It is not a scientific artifact, public dependency solve or installed PHMT
+matrix. #10 remains partial for these prerequisites, reviewed real plan/access,
+original artifact, complete installed science and same-byte public receiving.
+
+The previous source head `5aefc25e656114513a3955bffbe13bc564805523` now has complete
+native success: CI `38053715223`, policy `38053715531`, Conda governance
+`38053715507`, all attempt 1. The actual shared verifier accepts all eleven
+required jobs and their phases against fresh native run/job facts, including
+the eight source-science cells and installed Git-context preflight. The receipt
+preserves both the earlier pending snapshot and this terminal observation.
+Normal-push backlog detection is skipped/inapplicable; this is source qualification,
+not an installed scientific artifact or public receiving matrix.

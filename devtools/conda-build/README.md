@@ -57,15 +57,15 @@ revision and is retained. Special scientific environments, backend bounds, test
 commands, matrix, triggers and recovery remain intact. Checker libraries are
 isolated under `.molsyssuite-tools`, visible only to the preflight process.
 
-Production/development/docs declarations now include all ten direct requirements;
-their source-free actual installed invocations remain pending. The legacy
-broadcaster and Conda helpers are unqualified inputs under #10: do not use them to
-approve or regenerate a candidate. They can widen Python or overwrite recipe
-controls; every proposed result must pass the separate recipe/dependency/source
-checks. Shared reusable replacement is tracked in uibcdf/molsyssuite#108;
-keep reviewed metadata/environments plus existing shared preflight until its
-qualified owner adoption replaces these legacy paths. Real plan/access/artifact, public receiving evidence
-and Python admission remain outstanding; configuration alone proves none of them.
+Production/development/docs declarations include all ten direct requirements.
+All three ordinary environments were created and checked with public runtime
+providers on 2026-10-10: production/development on Python 3.14.8 and docs on
+3.12.15. See the [executed environment receipt](../../devguide/evidence/ordinary_environment_review_20261010_summary.json)
+and [environment operations](../conda-envs/README.md). The shared replacement
+under uibcdf/molsyssuite#108 is adopted; generation cannot rewrite the publication
+recipe or plan. These observations concern an editable PharmacophoreMT source,
+not a built/installed public PharmacophoreMT artifact. Real plan/access/artifact,
+complete installed science and public receiving evidence remain outstanding.
 
 ## Environment helper adoption — 2026-10-07
 
@@ -76,3 +76,32 @@ preflight. Existing publication wrappers retain their separately accepted
 [environment operations](../conda-envs/README.md); generation cannot rewrite this
 recipe/plan or the scientific files. This source adoption does not prove an
 actual manager operation, full science matrix or public installed artifact.
+
+## Installed candidate readiness — 2026-10-10
+
+Local #54 aligns the required final step with the actual frozen workflow:
+`Recheck installed provenance after scientific tests`. The administrative guard
+uses the provider's workflow bytes and actual shared verifier; this repair
+preserves all four phases and eight installed cells.
+
+Before building/selecting a candidate under #10:
+
+- Declare and qualify public scientific test dependencies through the existing
+  `installed_tests.conda_dependencies` provider contract. The complete selection
+  imports Ackredit and MolSysViewer; runtime requirements alone do not describe
+  this test environment. Native optional tools also need owner review.
+- Resolve direct scientific `devtools.*` helper imports through the reusable
+  support proposal [MolSysSuite #117](https://github.com/uibcdf/molsyssuite/issues/117).
+  Actual isolated runner controls fail with both the frozen provider and the
+  accepted all-root provider. Adding the checkout to scientific imports would
+  invalidate the installed boundary.
+- Review distribution of the existing `molsysviewer_pharmacophoremt` addon.
+  Discovery and inventory currently include only the main package, while the
+  addon test inserts the checkout into `sys.path`. It cannot establish installed
+  addon behavior. Include intended payload roots and review adoption of the
+  [qualified all-root guard](https://github.com/uibcdf/molsyssuite/issues/110#issuecomment-6035399970)
+  before actual installed qualification; current publication pins remain fixed.
+
+The [readiness receipt](../../devguide/evidence/installed_candidate_readiness_20261010_summary.json)
+retains controlled reproductions and source identities. These administrative
+fixtures are distinct from a real candidate's installed scientific matrix.
