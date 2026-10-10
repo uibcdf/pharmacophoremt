@@ -26,6 +26,7 @@ Historical timings from different environments do not isolate an improvement.
 prepared_ccd
 prepared_workflow
 prepared_search_workflow
+prepared_consensus_workflow
 ```
 
 ## Contribute a case

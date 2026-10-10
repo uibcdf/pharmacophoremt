@@ -30,13 +30,19 @@ budget-failure/ensemble-resolution controls; see [the contract](prepared_search_
 It reuses existing tools and keeps 29 prior evidence archives unchanged. These
 prepared placements do not supply generated conformers or activity validation.
 
+The distinct-ligand continuation (#51) reviews EST/DES joint support, original
+occurrence/atom/frame maps, completed impossible-site-count empty hypotheses and
+failed facade rebuilds; see [the contract](prepared_consensus_workflow.md).
+Molecular operations remain MolSysMT-owned; ideal-coordinate consensus does not
+establish biological discrimination.
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public
    delivery gates under #9/#10/#23. A passing focused run or one matrix cell
    cannot stand for all Python versions/platforms or a public artifact.
 2. Extend the bounded prepared native workflow review to independently declared
-   consensus or activity-based validation cases. Reuse existing
+   activity-based validation or remaining classical-route cases. Reuse existing
    method/recipe/evidence tools; define independent positive/negative controls
    and preserve original inputs, states, mappings and failures. The collection
    and the ERα continuation remain tracked in #20/#22. Prepared/analytical

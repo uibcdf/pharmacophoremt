@@ -32,6 +32,9 @@ Its explicit `--case search` continuation exercises saved rigid queries and
 prepared-frame budget/score accounting; see the
 [search contract](../devguide/prepared_search_workflow.md). The default placed
 case retains its original contract and evidence identity.
+The `--case consensus` continuation checks distinct prepared EST/DES supporters,
+original occurrence maps and empty-versus-failed facade rebuilding; see the
+[consensus contract](../devguide/prepared_consensus_workflow.md).
 
 `evidence_archive.read_archived_evidence()` reads the existing local gzip/JSON
 archive envelope with compressed/uncompressed SHA-256 and optional byte-count

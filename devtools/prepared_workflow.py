@@ -357,10 +357,14 @@ def main(argv=None):
     target = parser.add_mutually_exclusive_group(required=True)
     target.add_argument("--output", type=Path)
     target.add_argument("--read", type=Path)
-    parser.add_argument("--case", choices=("placed", "search"), default="placed")
+    parser.add_argument(
+        "--case", choices=("placed", "search", "consensus"), default="placed"
+    )
     args = parser.parse_args(argv)
     if args.read:
-        names = ("rigid",) if args.case == "search" else ("narrow", "wide", "veto")
+        names = {"search": ("rigid",), "consensus": ("consensus",)}.get(
+            args.case, ("narrow", "wide", "veto")
+        )
         print(json.dumps(read_models(args.read, model_names=names), allow_nan=False))
         return 0
     review_case, check_case = run_case, expectations_passed
@@ -369,6 +373,11 @@ def main(argv=None):
             expectations_passed as check_case,
         )
         from devtools.prepared_search_workflow import run_case as review_case
+    if args.case == "consensus":
+        from devtools.prepared_consensus_workflow import (
+            expectations_passed as check_case,
+        )
+        from devtools.prepared_consensus_workflow import run_case as review_case
     for key in THREAD_VARS:
         os.environ[key] = "1"
     import ackredit
@@ -399,6 +408,15 @@ def main(argv=None):
             ]
         )
 
+    if args.case == "consensus":
+        paths.extend(
+            [
+                ROOT / "devtools/prepared_consensus_workflow.py",
+                ROOT / "tests/test_prepared_consensus_workflow.py",
+                DIRECTORY / "DES_ideal.sdf",
+            ]
+        )
+
     def identities():
         return {
             str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
@@ -416,6 +434,8 @@ def main(argv=None):
                 result = review_case(Path(directory), fresh_reader=True)
                 if enabled:
                     credit_source("EST")
+                    if args.case == "consensus":
+                        credit_source("DES")
                 attribution = ackredit.get_attribution().to_dict()
             records.append(
                 dict(
@@ -453,11 +473,11 @@ def main(argv=None):
         return subprocess.check_output(["git", *arguments], cwd=ROOT, text=True).strip()
 
     report = dict(
-        schema=(
-            "pharmacophoremt.prepared_search_workflow@1"
-            if args.case == "search"
-            else "pharmacophoremt.prepared_workflow@1"
-        ),
+        schema={
+            "placed": "pharmacophoremt.prepared_workflow@1",
+            "search": "pharmacophoremt.prepared_search_workflow@1",
+            "consensus": "pharmacophoremt.prepared_consensus_workflow@1",
+        }[args.case],
         recorded_at_utc=datetime.now(timezone.utc).isoformat(),
         scope="public CCD ideal prepared workflow controls; no biological/activity/performance claim",
         source_head=git("rev-parse", "HEAD"),

@@ -227,6 +227,70 @@ class TestEvidenceArchive(unittest.TestCase):
                     self.assertEqual(partial["best_conformer_index"], 0)
                     self.assertEqual(partial["fit_value"], 1)
 
+    def test_prepared_distinct_consensus_keeps_support_maps_empty_and_failed_rebuild(
+        self,
+    ):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/prepared_consensus_workflow_py314_summary.json"
+        )
+        self.assertEqual(
+            report["schema"], "pharmacophoremt.prepared_consensus_workflow@1"
+        )
+        self.assertEqual(summary["environment"], report["environment"])
+        self.assertTrue(report["scientific_outputs_stable"])
+        self.assertTrue(report["source_hashes_unchanged"])
+        self.assertTrue(report["input_hashes_unchanged"])
+        for name, content in report["executed_source_overlay"].items():
+            self.assertEqual(
+                hashlib.sha256(content.encode()).hexdigest(),
+                report["input_sha256"][name],
+            )
+        self.assertEqual(len(report["original_archives_unchanged"]), 30)
+        for run in report["records"]:
+            self.assertTrue(run["expectations_passed"])
+            result = run["result"]
+            self.assertEqual(result["empty"]["models"], [])
+            self.assertTrue(result["empty"]["complete"])
+            self.assertEqual(result["budget_failure"]["code"], "PHMT-E107")
+            self.assertIsNone(result["budget_failure"]["result"])
+            self.assertIsNone(result["budget_failure"]["report"])
+            self.assertEqual(result["fresh_reader"]["attribution"]["uses"], [])
+            for model in [
+                result["model"],
+                *result["results"].values(),
+                *result["fresh_reader"]["models"].values(),
+            ]:
+                metadata = model["metadata"]
+                self.assertEqual(
+                    metadata["hypothesis"]["joint_ligand_ids"], ["DES", "EST"]
+                )
+                self.assertEqual(metadata["consensus"]["n_ligands"], 2)
+                for key in ("EST", "DES"):
+                    members = [
+                        m
+                        for site in metadata["consensus"]["sites"]
+                        for m in site["members"]
+                        if m["ligand_id"] == key
+                    ]
+                    self.assertEqual([m["feature_index"] for m in members], [0, 1, 2])
+                    for member in members:
+                        self.assertEqual(
+                            member["atom_indices"],
+                            result["oracle"]["original_atom_domains"][key][
+                                member["feature_index"]
+                            ],
+                        )
+        tracked = report["records"][1]["attribution"]
+        datasets = [item for item in tracked["items"] if item["type"] == "dataset"]
+        self.assertEqual(len(datasets), 2)
+        for dataset in datasets:
+            self.assertTrue(
+                any(
+                    use["item_id"] == dataset["id"] and use["roles"] == ["input_data"]
+                    for use in tracked["uses"]
+                )
+            )
+
     def test_cli_reads_real_archive_without_site_packages(self):
         result = subprocess.run(
             [sys.executable, "-S", "-m", "devtools.evidence_archive", str(CCD_SUMMARY)],
