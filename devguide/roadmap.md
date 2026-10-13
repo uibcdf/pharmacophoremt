@@ -90,6 +90,16 @@ in local #57. Browser interaction/rendering is the next viewer gate. This bounde
 wheel proof does not close the full installed/public matrix or MolSysSuite #117;
 publication workflows still need reviewed all-root helper adoption.
 
+The live viewer continuation (#58) passes nine real Jupyter/Chrome controls with
+the native molecular demo: panel state, Render/Clear, repeat/remount, visible
+spheres, unsupported input and recoverable failure/disable cleanup. The same
+cached model without a molecular system reveals a hidden addon workspace behind
+the welcome state; MolSysViewer #240 owns that blocker. See
+[the original live receipt](evidence/live_viewer_addon_20261013_summary.json).
+#58 remains partial; no dummy molecule or local generic host workaround is added.
+Local #59 tracks independent nonblocking panel presentation/lifecycle work.
+Public browser, session persistence and hardware/Qt remain separate gates.
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public

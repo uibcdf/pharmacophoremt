@@ -403,6 +403,39 @@ class TestEvidenceArchive(unittest.TestCase):
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertTrue(json.loads(result.stdout)["archive_bytes_verified"])
 
+    def test_live_viewer_receipt_preserves_passing_and_blocked_browser_scope(self):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/live_viewer_addon_20261013_summary.json"
+        )
+        self.assertEqual(summary["status"], "partial")
+        self.assertEqual(report["source"]["runtime_diff"], "")
+        passing = report["runs"]["molecular_scene"]
+        self.assertEqual(passing["status"], "passed")
+        self.assertEqual(len(passing["results"]), 9)
+        self.assertEqual(passing["errors"], [])
+        first = next(
+            item for item in passing["results"] if item["control"] == "first render"
+        )
+        spheres = {
+            item["options"]["tag"]: item["options"]
+            for item in first["records"]
+            if item["op"] == "add_sphere"
+        }
+        self.assertEqual(spheres["pharmt-site:1"]["center"], [12, 0, 0])
+        self.assertAlmostEqual(spheres["pharmt-site:1"]["radius"], 3.5, places=13)
+        retry = next(
+            item
+            for item in passing["results"]
+            if item["control"] == "clear retry succeeds"
+        )
+        self.assertEqual(retry["tags"], ["unrelated-control"])
+        self.assertEqual(retry["owned"], [])
+        self.assertEqual(report["runs"]["shape_only"]["status"], "failed")
+        self.assertEqual(report["runs"]["shape_only"]["results"], [])
+        self.assertFalse(report["scope"]["public_provider_browser_qualification"])
+        self.assertFalse(report["scope"]["session_save_restore"])
+        self.assertIn("uibcdf/molsysviewer#240", report["followups"])
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,53 @@
+{
+  "schema": "phmt.live-viewer-addon-summary@1",
+  "recorded_at_utc": "2026-10-13T16:13:01.024235+00:00",
+  "issue": "uibcdf/pharmacophoremt#58",
+  "status": "partial",
+  "source_head": "3f76c3512677f74b6eb24cdc8e3bcee455f8b45b",
+  "full_evidence": {
+    "path": "live_viewer_addon_20261013.json.gz",
+    "compressed_sha256": "5ff59f2a4ffd324be47c5b36f31b3cc88db91d73a7bfd8d6e4a03eb6fd959cc6",
+    "compressed_bytes": 2402109,
+    "uncompressed_sha256": "6a704227a3b51b08050c3cca3cc2f87a6daef03f5519f61a00abdb431d81e768",
+    "uncompressed_bytes": 3485912
+  },
+  "scope": {
+    "browser_contract": "partial development result",
+    "passed_molecular_controls": 9,
+    "completed_shape_only_controls": 0,
+    "shape_only_setup_executed": true,
+    "shared_webgl_skip_enabled": false,
+    "public_provider_browser_qualification": false,
+    "biological_validation": false,
+    "hardware_qt": false,
+    "session_save_restore": false,
+    "full_installed_matrix": false
+  },
+  "figures": {
+    "molecular_scene": {
+      "path": "live_viewer_addon_20261013_molecular_scene.png",
+      "sha256": "b489642362eec0bd4b474fd9d01d5671066f722a9644880aee3f30a51525757e",
+      "bytes": 37353,
+      "original_file": "rendered-canvas.png"
+    },
+    "panel": {
+      "path": "live_viewer_addon_20261013_panel.png",
+      "sha256": "8bd3bdb57b6f5171aa174793fcf91d83e15850de4fbd88047ac73352d0300250",
+      "bytes": 141278,
+      "original_file": "rendered-panel.png"
+    },
+    "shape_only_failure": {
+      "path": "live_viewer_addon_20261013_shape_only_failure.png",
+      "sha256": "5c4131b0c39f10752aaa9f5144c2c53cb5c040024184c9fa381b8bd860f294ca",
+      "bytes": 158251,
+      "original_file": "standalone-isolated-run/controls-failure.png"
+    }
+  },
+  "followups": [
+    "uibcdf/molsysviewer#240",
+    "uibcdf/molsysviewer#239",
+    "uibcdf/pharmacophoremt#59",
+    "uibcdf/molsyssuite#117"
+  ],
+  "privacy": "Authentication token redacted from retained text; connection.json, kernel connection files and task config/data/runtime state excluded. No PNG changes."
+}
