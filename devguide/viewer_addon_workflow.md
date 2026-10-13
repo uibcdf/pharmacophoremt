@@ -140,3 +140,12 @@ The nine controls do not execute save/restore, every platform or public provider
 Stop the owned Jupyter server/kernels and remove temporary data after archiving
 results. Human feedback can then assess the visible panel; it does not replace
 an unexecuted technical gate.
+
+The executed development provider was subsequently found to be 102 commits behind
+upstream. The [bounded upstream inspection](evidence/live_viewer_addon_20261013_upstream_check.json)
+records the same molecular-structure premise in current source
+`76c8cee1b2f00821820e05975609262844b27224`. It supports the owning issue while
+keeping source inspection separate from browser execution. Qualify an updated
+provider before generalizing the older run to current/public runtime or asking for
+human acceptance of the current interface. The original measured archive remains
+unchanged.

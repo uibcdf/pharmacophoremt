@@ -91,3 +91,16 @@ host/widget APIs with preserved independent expectations and failures. Retain
 original evidence and give changed producers fresh measurements. Close only after
 the shape-only provider contract is qualified; human visual/UX feedback remains a
 separate optional review of the resulting interface.
+
+## 2026-10-13 upstream scope correction
+
+The executed provider checkout was 102 commits behind the inspected upstream
+`76c8cee1b2f00821820e05975609262844b27224`. This was checked late in the review;
+the original receipt retains its actual older producer and is not relabeled as
+current/public evidence. A [separate read-only inspection](../evidence/live_viewer_addon_20261013_upstream_check.json)
+finds that current `updateWelcomeState()` still checks molecular structure data,
+`getStructureData()` reads the molecular hierarchy, and structure capture reveals
+the addon panel. The same generic precondition remains a supported suspected
+provider finding, but a fresh current/public browser execution is required before
+claiming that whole runtime has reproduced it. The standalone queue stays partial
+under #240; current-provider receiving is the next technical qualification step.
