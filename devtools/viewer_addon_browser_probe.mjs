@@ -12,9 +12,10 @@ const connection=JSON.parse(fs.readFileSync(base+'/connection.json','utf8'));
 const browser=await chromium.launch();
 const page=await browser.newPage({viewport:{width:1440,height:1050}});
 const errors=[];
+const pageErrorDetails=[];
 const consoleMessages=[];
 const results=[];
-page.on('pageerror',e=>errors.push(String(e)));
+page.on('pageerror',e=>{errors.push(String(e));pageErrorDetails.push({message:String(e),stack:e.stack});});
 page.on('console',m=>consoleMessages.push({type:m.type(),text:m.text().replace(/token=[A-Za-z0-9_-]+/g,'token=<redacted>')}));
 let sequence=0;
 async function cell(code, expression){
@@ -32,7 +33,14 @@ const stateExpr="{'tags': view.shapes.tags(), 'owned': list(runtime.rendered_tag
 async function toggle(){
  const close=page.getByTitle('Close (Esc)',{exact:true});
  if(await close.isVisible()) await close.click();
- else await page.getByTitle('Panel mode (N / W)',{exact:true}).click();
+ else {
+  // Current hosts auto-hide canvas controls and expose a keyboard-accessible hotspot.
+  const hotspot=page.getByRole('button',{name:'Show canvas controls',exact:true});
+  if(await hotspot.isVisible()) await hotspot.press('Enter');
+  const mode=page.getByTitle('Panel mode (N / W)',{exact:true});
+  await mode.waitFor({state:'visible'});
+  await mode.press('Enter');
+ }
 }
 async function remount(){
  await page.locator('[data-molsysviewer-addon-workspace-tab=core]').click();
@@ -130,10 +138,10 @@ try{
  assert.deepEqual(disabled.owned,[]);
  results.push({control:'disable clears own shapes',...disabled});
  assert.deepEqual(errors,[]);
- fs.writeFileSync(base+'/live-controls.json',JSON.stringify({status:'passed',browser:browser.version(),results,errors,consoleMessages},null,2));
+ fs.writeFileSync(base+'/live-controls.json',JSON.stringify({status:'passed',browser:browser.version(),results,errors,pageErrorDetails,consoleMessages},null,2));
  console.log(JSON.stringify({status:'passed',controls:results.length,browser:browser.version(),errors}));
 }catch(error){
  await page.screenshot({path:base+'/controls-failure.png',fullPage:true});
- fs.writeFileSync(base+'/live-controls.json',JSON.stringify({status:'failed',error:String(error),results,errors,consoleMessages,text:await page.locator('body').innerText()},null,2));
+ fs.writeFileSync(base+'/live-controls.json',JSON.stringify({status:'failed',error:String(error),results,errors,pageErrorDetails,consoleMessages,text:await page.locator('body').innerText()},null,2));
  throw error;
 }finally{await browser.close();}

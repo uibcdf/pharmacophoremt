@@ -4,11 +4,13 @@ from __future__ import annotations
 
 import gzip
 import hashlib
+import io
 import json
 import subprocess
 import sys
 import tempfile
 import unittest
+import zipfile
 from pathlib import Path
 
 from devtools.evidence_archive import read_archived_bytes, read_archived_evidence
@@ -435,6 +437,51 @@ class TestEvidenceArchive(unittest.TestCase):
         self.assertFalse(report["scope"]["public_provider_browser_qualification"])
         self.assertFalse(report["scope"]["session_save_restore"])
         self.assertIn("uibcdf/molsysviewer#240", report["followups"])
+
+
+    def test_current_viewer_receipt_keeps_producer_and_failed_scope_separate(self):
+        path = ROOT / "devguide/evidence/current_viewer_addon_20261013_summary.json"
+        summary, report = read_archived_evidence(path)
+        self.assertEqual(summary["status"], "partial")
+        self.assertEqual(
+            report["installed"]["viewer_source_head"],
+            "76c8cee1b2f00821820e05975609262844b27224",
+        )
+        self.assertEqual(
+            report["installed"]["viewer_source_status"], " M molsysviewer/viewer.js\n"
+        )
+        passing = report["runs"]["molecular_scene"]
+        self.assertEqual(passing["status"], "passed")
+        self.assertEqual(len(passing["results"]), 9)
+        self.assertEqual(passing["errors"], [])
+        shape_only = report["runs"]["shape_only"]
+        self.assertEqual(shape_only["status"], "failed")
+        self.assertEqual(shape_only["results"], [])
+        self.assertEqual(shape_only["errors"], [])
+        self.assertIn("view = mv.MolSysView()", shape_only["text"])
+        self.assertIn("JUPYTER QUICK START", shape_only["text"])
+        initial = report["attempts"]["jupyter_debugger_errors"]
+        self.assertEqual(initial["status"], "failed")
+        self.assertEqual(len(initial["results"]), 9)
+        self.assertEqual(initial["errors"], ["Error: No active debugger session"] * 16)
+        self.assertTrue(report["scope"]["debugger_extension_disabled_for_final_runs"])
+        self.assertFalse(report["scope"]["public_provider_browser_qualification"])
+        self.assertFalse(report["scope"]["full_installed_matrix"])
+        self.assertTrue(report["independent_wire_oracle"]["all_observed_values_match"])
+        for root in ("pharmacophoremt", "molsysviewer_pharmacophoremt", "molsysviewer"):
+            self.assertIn(
+                "/envs/current-viewer/lib/python3.14/site-packages/",
+                report["installed"]["origins"][root]["file"],
+            )
+        _, viewer = read_archived_bytes(path, identity_key="viewer_wheel")
+        with zipfile.ZipFile(io.BytesIO(viewer)) as wheel:
+            self.assertEqual(
+                hashlib.sha256(wheel.read("molsysviewer/viewer.js")).hexdigest(),
+                summary["bundle_sha256"],
+            )
+        _, phmt = read_archived_bytes(path, identity_key="phmt_wheel")
+        with zipfile.ZipFile(io.BytesIO(phmt)) as wheel:
+            self.assertIn("molsysviewer_pharmacophoremt/__init__.py", wheel.namelist())
 
 
 if __name__ == "__main__":

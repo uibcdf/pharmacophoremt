@@ -1,0 +1,86 @@
+{
+  "schema": "phmt.current-viewer-addon-summary@1",
+  "recorded_at_utc": "2026-10-13T16:56:55.980309+00:00",
+  "issue": "uibcdf/pharmacophoremt#58",
+  "status": "partial",
+  "source_head": "a3ce4900b47a6f910c9b4cb2711b391281ca1dd6",
+  "viewer_source_head": "76c8cee1b2f00821820e05975609262844b27224",
+  "versions": {
+    "pharmacophoremt": "0.3.0+151.ga3ce490",
+    "molsysviewer": "0.24.0+83.g76c8cee1.dirty",
+    "molsysmt": "0.23.0",
+    "pyunitwizard": "0.28.1",
+    "argdigest": "0.15.0",
+    "depdigest": "0.15.0",
+    "smonitor": "0.19.0",
+    "anywidget": "0.11.0",
+    "jupyterlab": "4.6.4",
+    "ipykernel": "7.4.0",
+    "numpy": "2.5.4"
+  },
+  "bundle_sha256": "2ce7d04d07cc1739e2648d374c9a98067d2cac86b19ef98e5879699a81d12b56",
+  "full_evidence": {
+    "path": "current_viewer_addon_20261013.json.gz",
+    "compressed_sha256": "6dc714d2a64f2a9b3be1cf48a77b087bbe47ba1f8ea729545126770dc70e5429",
+    "compressed_bytes": 11770511,
+    "uncompressed_sha256": "3c5a3ba78d2aaa752acafc6e1bbefb509dcb147dd458ee05d11a51bdf63dd1cc",
+    "uncompressed_bytes": 85603850
+  },
+  "scope": {
+    "browser_contract": "partial installed current-source viewer with public scientific dependencies",
+    "passed_molecular_controls": 9,
+    "completed_shape_only_controls": 0,
+    "shape_only_setup_executed": true,
+    "shared_webgl_skip_enabled": false,
+    "debugger_extension_disabled_for_final_runs": true,
+    "public_provider_browser_qualification": false,
+    "full_installed_matrix": false,
+    "biological_validation": false,
+    "hardware_qt": false,
+    "session_save_restore": false
+  },
+  "figures": {
+    "molecular_scene": {
+      "path": "current_viewer_addon_20261013_molecular_scene.png",
+      "sha256": "73f1341ab8e4922d0db87ce2cdb9efbb351a6ea025cd80e5a5573007829c64e7",
+      "bytes": 40067,
+      "original_file": "molecular-run/rendered-canvas.png"
+    },
+    "panel": {
+      "path": "current_viewer_addon_20261013_panel.png",
+      "sha256": "1f10cb099261bbb38b85b0972d2bbf3530224101b34d9cfc14520842acb47056",
+      "bytes": 137708,
+      "original_file": "molecular-run/rendered-panel.png"
+    },
+    "shape_only_failure": {
+      "path": "current_viewer_addon_20261013_shape_only_failure.png",
+      "sha256": "6376597f17d4854b44f14a75a9a6073293c864b944d81e9bfcf8c8061f0aa11c",
+      "bytes": 167492,
+      "original_file": "shape-only-run/controls-failure.png"
+    }
+  },
+  "followups": [
+    "uibcdf/molsysviewer#240",
+    "uibcdf/molsysviewer#239",
+    "uibcdf/molsysviewer#242",
+    "uibcdf/pharmacophoremt#59",
+    "uibcdf/molsyssuite#117"
+  ],
+  "privacy": "Tokens redacted in retained text; private connection.json, kernel files and task config/data/runtime state excluded. Original PNG/wheel bytes unchanged.",
+  "viewer_wheel": {
+    "path": "current_viewer_addon_20261013_viewer_wheel.whl.gz",
+    "compressed_sha256": "5887afe5dbc99dcd2118a20cee7a94849954cf91c61724d13653c4764e0b0e47",
+    "compressed_bytes": 1932268,
+    "uncompressed_sha256": "eb96e41c0574703f5e74ac4a44f91567e12db5a6567ec9b9d2e8ffcda8265052",
+    "uncompressed_bytes": 2015662,
+    "wheel_filename": "molsysviewer-0.24.0+83.g76c8cee1.dirty-py3-none-any.whl"
+  },
+  "phmt_wheel": {
+    "path": "current_viewer_addon_20261013_phmt_wheel.whl.gz",
+    "compressed_sha256": "171cfa2d13a26d74f0fe8350b1c7999a43aba91ebb2f4e22e2863575a0056316",
+    "compressed_bytes": 4409471,
+    "uncompressed_sha256": "d90647842feadd695e548a8b8e1aad7bc28bd8f8c8f8ca48bee651c09224dcd5",
+    "uncompressed_bytes": 4454270,
+    "wheel_filename": "pharmacophoremt-0.3.0+151.ga3ce490-py3-none-any.whl"
+  }
+}

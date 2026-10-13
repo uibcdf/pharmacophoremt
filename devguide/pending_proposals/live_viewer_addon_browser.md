@@ -104,3 +104,50 @@ the addon panel. The same generic precondition remains a supported suspected
 provider finding, but a fresh current/public browser execution is required before
 claiming that whole runtime has reproduced it. The standalone queue stays partial
 under #240; current-provider receiving is the next technical qualification step.
+
+## 2026-10-13 current-provider execution
+
+The [new receipt](../evidence/current_viewer_addon_20261013_summary.json) measures
+provider source `76c8cee1b2f00821820e05975609262844b27224` in a separate ordinary
+Conda environment on Linux x86_64/Python 3.14.8. Public MolSysMT 0.23.0,
+JupyterLab 4.6.4 and anywidget 0.11.0 supply the scientific/widget dependencies.
+Both PHMT roots and provider imports originate in the receiving prefix. Normal
+noneditable wheel installation honors Requires-Python; `pip check` passes.
+The receipt preserves the original wheels, lock, native version file, bundle
+hash, commands, effective environment records and original browser outputs.
+
+The provider's own `npm ci` and `npm run build:runtime` build its current
+frontend. Its only tracked source overlay is generated `viewer.js`; no provider
+implementation is changed. Native versioningit identifies that overlay as
+`0.24.0+83.g76c8cee1.dirty`, matching the version used by the final bundle build
+and installed wheel. This is installed current-source evidence, not public
+MolSysViewer 0.24.0 browser qualification or a full installed matrix.
+
+All nine molecular-scene controls pass, with no browser page errors in the final
+run. Independent expected angstrom centers, radii, colors and opacity match the
+native provider records. Real screenshots show both spherical sites and the
+unrelated sphere. Current canvas auto-hide requires the host's normal keyboard
+hotspot access; the maintained scenario now uses that public interaction.
+
+The verified shape-only fixture uses `mv.MolSysView()` and no molecular demo.
+Its setup executes without page errors, but the welcome card remains and the
+workspace button is hidden; the normal click fails before any addon control.
+This freshly reproduces #240 on the current runtime. #58 remains partial.
+The current runtime also reproduces the nonblocking #239 operation warning.
+
+The archive retains failed attempts separately. One completed all nine controls
+but failed the final page-error assertion with 16 JupyterLab
+`No active debugger session` exceptions, whose stacks point to
+`displayModules` in JupyterLab's frontend. Only its debugger extension was
+disabled in task-owned configuration for the final runs; debugger-enabled
+compatibility remains unqualified. Another temporary fixture replacement
+incorrectly iterated a source string and retained the molecular demo; it is
+explicitly excluded from shape-only evidence. The corrected fixture was checked
+before the final independent run. Initial missing-beartype diagnostics led to
+adding public beartype 0.22.9 before browser execution; no shared prefix changed.
+
+`npm audit --json` reports nine transitive dependency findings, including one
+critical finding. Reachability/exploitability was not assessed. Provider review
+belongs to [MolSysViewer #242](https://github.com/uibcdf/molsysviewer/issues/242);
+no local dependency fix or blanket scientific acceptance follows from the audit.
+Session persistence, hardware/Qt and public browser delivery remain unexecuted.

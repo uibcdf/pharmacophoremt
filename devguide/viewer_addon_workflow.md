@@ -101,7 +101,9 @@ host operation warning is tracked in [MolSysViewer #239](https://github.com/uibc
 ### Repeat the opt-in scenario
 
 Use the canonical development Python and a reviewed MolSysViewer checkout with
-its existing Node test tools installed. No provider source/build output is edited.
+its declared Node test tools installed. Keep provider implementation unchanged;
+when qualifying a rebuilt runtime, use its own build commands and retain the
+source/lock identity, generated overlay, version and artifact bytes.
 Copy `devtools/viewer_addon_browser_fixture.ipynb` to `addon.ipynb` under an owned
 temporary Jupyter notebook root. Start JupyterLab on loopback with that root,
 the canonical kernel and task-owned config/data/runtime directories. Keep its
@@ -149,3 +151,34 @@ keeping source inspection separate from browser execution. Qualify an updated
 provider before generalizing the older run to current/public runtime or asking for
 human acceptance of the current interface. The original measured archive remains
 unchanged.
+
+## 2026-10-13 installed current-provider continuation
+
+The [current-provider receipt](evidence/current_viewer_addon_20261013_summary.json)
+repeats the scenario with installed source `76c8cee1`, built through the
+provider's `npm ci` and `npm run build:runtime`. A separate Conda receiving
+prefix uses public MolSysMT 0.23.0 and Python 3.14.8; PHMT and the viewer are
+normal noneditable wheel installations. Both PHMT package roots and scientific
+providers load from that prefix, and `pip check` passes. The generated runtime
+overlay yields the native version `0.24.0+83.g76c8cee1.dirty`; the archive keeps
+both original wheel files and the exact generated bundle hash. This does not
+qualify a published MolSysViewer artifact or broaden the platform matrix.
+
+Nine molecular-scene controls pass without page errors in the final configuration.
+The molecular-free fixture still retains the welcome card and hides the addon
+workspace; #240 is now freshly reproduced on the current runtime. #58 remains
+partial. The #239 operation warning also persists.
+
+For this configuration, the receiving kernel is explicitly registered with its
+own interpreter. The maintained probe reveals auto-hidden controls through the
+provider's visible keyboard hotspot before activating panel mode. Preserve
+fixtures as whole notebook source strings or line arrays according to their
+actual representation; verify the shape-only construction before running.
+The receiving environment includes public beartype 0.22.9 after observed import
+diagnostics. Its task-owned Jupyter configuration disables only
+`@jupyterlab/debugger-extension`, following captured JupyterLab exceptions in
+the initial run; the failed debugger-enabled result is retained separately.
+Do not infer debugger-enabled compatibility from the final passing run.
+
+Current lock audit findings are reported in MolSysViewer #242. The review does
+not change provider dependency code or add a PHMT host/molecular workaround.
