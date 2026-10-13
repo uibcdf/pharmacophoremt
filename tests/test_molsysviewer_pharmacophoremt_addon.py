@@ -253,6 +253,7 @@ def test_pharmacophore_panel_on_mount_pushes_initial_state():
     assert len(sent) == 1
     state = sent[0]["state"]
     assert state["n_sites"] == 0
+    assert state["has_pharmacophore"] is False
     assert state["feature_counts"] == {}
     assert state["status"] == "idle"
 
@@ -274,6 +275,7 @@ def test_pharmacophore_panel_on_mount_with_pharmacophore_shows_counts():
 
     state = sent[0]["state"]
     assert state["n_sites"] == 2
+    assert state["has_pharmacophore"] is True
     assert "hb acceptor" in state["feature_counts"]
 
 
@@ -368,11 +370,14 @@ def test_repeated_render_and_clear_preserve_unrelated_shapes():
     assert not ensure_runtime(view).rendered_tags
 
 
-def test_failed_clear_is_reported_and_remains_retryable(monkeypatch):
+@pytest.mark.parametrize("empty_model", [False, True])
+def test_failed_clear_is_reported_and_remains_retryable(monkeypatch, empty_model):
     view = molsysviewer.MolSysView()
     runtime = ensure_runtime(view)
     runtime.pharmacophore = _make_pharmacophore()
     render_pharmacophore_elements(view, runtime.pharmacophore)
+    if empty_model:
+        runtime.pharmacophore = Pharmacophore()
     from molsysviewer_pharmacophoremt import PharmacophMTPharmacophorePanel
 
     widget = PharmacophMTPharmacophorePanel()
@@ -387,6 +392,8 @@ def test_failed_clear_is_reported_and_remains_retryable(monkeypatch):
     widget.handle_action(view, "clear_pharmacophore", {})
     assert sent[-1]["state"]["status"] == "error"
     assert "deletion failure" in sent[-1]["state"]["error"]
+    assert sent[-1]["state"]["has_pharmacophore"] is True
+    assert sent[-1]["state"]["payload_error"] is False
     assert len(runtime.rendered_tags) == 2
     assert not any(e["event"] == "panel_clear_pharmacophore" for e in runtime.event_log)
     monkeypatch.setattr(view.shapes, "clear", original)
@@ -412,10 +419,25 @@ def test_panel_refresh_reads_current_model_and_preserves_payload_errors():
     widget.send = lambda msg: sent.append(msg)
     widget.handle_action(view, "refresh_pharmacophore", {})
     assert sent[-1]["state"]["n_sites"] == 0
+    assert sent[-1]["state"]["has_pharmacophore"] is False
+    assert sent[-1]["state"]["payload_error"] is False
+    runtime.pharmacophore = Pharmacophore()
+    widget.handle_action(view, "refresh_pharmacophore", {})
+    assert sent[-1]["state"]["has_pharmacophore"] is True
+    assert sent[-1]["state"]["n_sites"] == 0
+    assert sent[-1]["state"]["status"] == "idle"
+    assert sent[-1]["state"]["payload_error"] is False
     runtime.pharmacophore = _make_pharmacophore()
     widget.handle_action(view, "refresh_pharmacophore", {})
     assert sent[-1]["state"]["n_sites"] == 2
+    assert sent[-1]["state"]["has_pharmacophore"] is True
     runtime.pharmacophore = object()
     widget.handle_action(view, "refresh_pharmacophore", {})
     assert sent[-1]["state"]["status"] == "error"
+    assert sent[-1]["state"]["has_pharmacophore"] is True
+    assert sent[-1]["state"]["error"]
+    assert sent[-1]["state"]["payload_error"] is True
+    widget.handle_action(view, "clear_pharmacophore", {})
+    assert sent[-1]["state"]["status"] == "error"
+    assert sent[-1]["state"]["payload_error"] is True
     assert sent[-1]["state"]["error"]

@@ -438,6 +438,79 @@ class TestEvidenceArchive(unittest.TestCase):
         self.assertFalse(report["scope"]["session_save_restore"])
         self.assertIn("uibcdf/molsysviewer#240", report["followups"])
 
+    def test_panel_feedback_receipt_preserves_input_and_action_error_distinction(self):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/viewer_panel_feedback_20261013_summary.json"
+        )
+        self.assertEqual(summary["status"], "passed")
+        browser = report["browser"]
+        self.assertEqual(browser["status"], "passed")
+        self.assertEqual(len(browser["results"]), 13)
+        self.assertEqual(browser["errors"], [])
+        controls = {item["control"]: item for item in browser["results"]}
+        self.assertEqual(
+            controls["empty cached model disables render"]["summary"],
+            "No interaction sites.",
+        )
+        self.assertEqual(
+            controls["absent model is distinguished from empty input"]["summary"],
+            "No pharmacophore loaded.",
+        )
+        self.assertEqual(
+            controls["unreadable model preserves error feedback"]["summary"],
+            "Unable to read pharmacophore.",
+        )
+        failed_clear = controls["clear failure preserves empty model feedback"]
+        self.assertEqual(failed_clear["summary"], "No interaction sites.")
+        self.assertIn("controlled provider clear failure", failed_clear["error"])
+        self.assertEqual(
+            controls["detached controls cannot dispatch actions"]["events"],
+            controls["repeated render replaces own shapes"]["events"],
+        )
+        self.assertEqual(
+            controls["clear retry succeeds"]["tags"], ["unrelated-control"]
+        )
+        self.assertFalse(
+            any(
+                "Deprecation Warning for molsysviewer_pharmacophoremt" in item["text"]
+                for item in browser["consoleMessages"]
+            )
+        )
+        self.assertEqual(summary["native_test_count"], 23)
+        self.assertFalse(summary["scope"]["public_provider_browser_qualification"])
+        self.assertFalse(summary["scope"]["current_installed_provider_requalification"])
+        self.assertEqual(
+            report["provenance"]["viewer_source_head"],
+            "c046fca173f501c6e259761ef8f3d6b1825f17e8",
+        )
+        self.assertEqual(
+            len(
+                report["earlier_runs"]["initial_twelve_controls"]["browser"]["results"]
+            ),
+            12,
+        )
+
+    def test_final_panel_feedback_receipt_retains_read_error_after_clear(self):
+        summary, report = read_archived_evidence(
+            ROOT / "devguide/evidence/viewer_panel_feedback_20261013_final_summary.json"
+        )
+        self.assertEqual(summary["scope"]["passed_browser_controls"], 14)
+        self.assertEqual(report["browser"]["status"], "passed")
+        self.assertEqual(report["browser"]["errors"], [])
+        controls = {item["control"]: item for item in report["browser"]["results"]}
+        after_clear = controls["successful clear preserves payload read error"]
+        self.assertEqual(after_clear["summary"], "Unable to read pharmacophore.")
+        self.assertTrue(after_clear["error"].startswith("Error: "))
+        self.assertFalse(summary["scope"]["current_installed_provider_requalification"])
+        self.assertEqual(
+            len(
+                report["earlier_runs"]["before_clear_read_error_fix"]["browser"][
+                    "results"
+                ]
+            ),
+            13,
+        )
+
     def test_current_viewer_receipt_keeps_producer_and_failed_scope_separate(self):
         path = ROOT / "devguide/evidence/current_viewer_addon_20261013_summary.json"
         summary, report = read_archived_evidence(path)

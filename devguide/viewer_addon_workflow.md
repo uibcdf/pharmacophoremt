@@ -33,6 +33,18 @@ The existing workspace exposes one summary panel and one context action. The
 panel reads the attached cached model, requests a refresh after its frontend
 listener is ready, and offers Render/Clear actions. Failed rendering, clearing or
 payload reading yields an error state; a failed clear does not record success.
+The summary distinguishes absent input ("No pharmacophore loaded."), a valid
+empty model ("No interaction sites.") and a failed payload read ("Unable to
+read pharmacophore."). The state carries `has_pharmacophore` and
+`payload_error` separately from the action status: an unsuccessful Clear on
+a valid empty model must retain its empty summary. A successful Clear retains
+any payload-read error instead of resetting its status to idle. Render stays disabled for
+absent, empty and unreadable input; Clear remains available to clean owned tags.
+The module uses the anywidget default object export and returns a cleanup
+callback that removes its exact custom-message and button listeners. The host
+owns widget transport and invokes that callback on panel teardown. These use
+the existing [AFM lifecycle](https://anywidget.dev/en/afm/) without requiring
+newer signal/composition APIs or raising dependency floors.
 Workbench sections, export helpers and shape adapters are undeclared until they
 have implementations. The bulk `Pharmacophore.show()` route has a separate
 contract and is not qualified by this addon review.
@@ -182,3 +194,23 @@ Do not infer debugger-enabled compatibility from the final passing run.
 
 Current lock audit findings are reported in MolSysViewer #242. The review does
 not change provider dependency code or add a PHMT host/molecular workaround.
+
+## 2026-10-13 panel feedback and teardown
+
+Local #59 is resolved by the summary and lifecycle contract above. The
+[fresh panel receipt](evidence/viewer_panel_feedback_20261013_final_summary.json)
+records 14 real Jupyter/Chrome controls and preserves the earlier 12-control
+run separately. It verifies empty/absent/unreadable messages, action-error versus
+payload-error feedback, disabled rendering, repeated mounts, error recovery,
+unrelated-tag preservation and detached buttons that cannot dispatch actions.
+The panel's named-render anywidget deprecation warning is absent in the final
+run; page errors are absent.
+
+This is development Python 3.14.7 with anywidget 0.11.0, JupyterLab 4.6.4 and the
+existing development viewer `c046fca1`, not the current installed-provider
+receipt above. The exact source overlay and input hashes identify the modified
+panel. The task-owned Jupyter configuration disables its debugger extension,
+as in the earlier current-provider run. Native addon controls pass 23 tests.
+No generic host or molecular operation is implemented or modified. This local
+panel qualification does not close #58/#240, execute session persistence or
+replace full installed/public delivery gates.

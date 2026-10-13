@@ -97,7 +97,9 @@ cached model without a molecular system reveals a hidden addon workspace behind
 the welcome state; MolSysViewer #240 owns that blocker. See
 [the original live receipt](evidence/live_viewer_addon_20261013_summary.json).
 #58 remains partial; no dummy molecule or local generic host workaround is added.
-Local #59 tracks independent nonblocking panel presentation/lifecycle work.
+Local #59 resolves empty/absent/error panel feedback and explicit frontend
+teardown; its [fresh receipt](evidence/viewer_panel_feedback_20261013_final_summary.json)
+keeps that development-panel qualification separate from the provider blocker.
 Public browser, session persistence and hardware/Qt remain separate gates.
 
 The next steps are:

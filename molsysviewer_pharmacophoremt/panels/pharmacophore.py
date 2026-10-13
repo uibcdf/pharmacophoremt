@@ -9,8 +9,10 @@ from molsysviewer.addons import AddonPanelWidget
 from ..runtime import ensure_runtime, record_event
 
 _ESM = """
-export function render({ model, el }) {
+function render({ model, el }) {
   let state = {
+    has_pharmacophore: false,
+    payload_error: false,
     n_sites: 0,
     feature_counts: {},
     tag_prefix: "pharmt-site",
@@ -47,10 +49,13 @@ export function render({ model, el }) {
   function applyState(s) {
     state = { ...state, ...s };
 
-    summaryEl.innerHTML =
-      state.n_sites > 0
-        ? buildSummaryHtml(state.feature_counts)
-        : '<span class="pharmt-empty">No pharmacophore loaded.</span>';
+    if (!state.has_pharmacophore) {
+      summaryEl.innerHTML = '<span class="pharmt-empty">No pharmacophore loaded.</span>';
+    } else if (state.payload_error) {
+      summaryEl.innerHTML = '<span class="pharmt-empty">Unable to read pharmacophore.</span>';
+    } else {
+      summaryEl.innerHTML = buildSummaryHtml(state.feature_counts);
+    }
 
     renderBtn.disabled = state.status === "rendering" || state.n_sites === 0;
     renderBtn.textContent = state.status === "rendering" ? "Rendering…" : "Render";
@@ -70,21 +75,30 @@ export function render({ model, el }) {
     }
   }
 
-  renderBtn.addEventListener("click", () => {
+  function onRender() {
     model.send({ type: "action", id: "render_pharmacophore", payload: {} });
-  });
+  }
 
-  clearBtn.addEventListener("click", () => {
+  function onClear() {
     model.send({ type: "action", id: "clear_pharmacophore", payload: {} });
-  });
+  }
 
-  model.on("msg:custom", (msg) => {
+  function onState(msg) {
     if (msg?.type === "state") applyState(msg.state);
-  });
+  }
+  renderBtn.addEventListener("click", onRender);
+  clearBtn.addEventListener("click", onClear);
+  model.on("msg:custom", onState);
 
   model.send({ type: "action", id: "refresh_pharmacophore", payload: {} });
   applyState(state);
+  return () => {
+    model.off("msg:custom", onState);
+    renderBtn.removeEventListener("click", onRender);
+    clearBtn.removeEventListener("click", onClear);
+  };
 }
+export default { render };
 """
 
 _CSS = """
@@ -207,7 +221,7 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
                 )
                 return
             record_event(view, "panel_clear_pharmacophore")
-            self.push_state({**self._build_state(runtime), "status": "idle"})
+            self.push_state(self._build_state(runtime))
 
     @staticmethod
     def _build_state(runtime: Any) -> dict:
@@ -217,6 +231,8 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
 
                 payload = pharmacophore_payload(runtime.pharmacophore)
                 return {
+                    "has_pharmacophore": True,
+                    "payload_error": False,
                     "n_sites": payload["n_sites"],
                     "feature_counts": payload["feature_counts"],
                     "tag_prefix": runtime.tag_prefix,
@@ -225,6 +241,8 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
                 }
             except Exception as exc:
                 return {
+                    "has_pharmacophore": True,
+                    "payload_error": True,
                     "n_sites": 0,
                     "feature_counts": {},
                     "tag_prefix": runtime.tag_prefix,
@@ -232,6 +250,8 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
                     "error": str(exc),
                 }
         return {
+            "has_pharmacophore": False,
+            "payload_error": False,
             "n_sites": 0,
             "feature_counts": {},
             "tag_prefix": runtime.tag_prefix,
