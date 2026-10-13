@@ -51,6 +51,7 @@ class TestDistributionContract(unittest.TestCase):
             "devtools/requirements",
             "devtools/dependency_routes.toml",
             "pharmacophoremt",
+            "molsysviewer_pharmacophoremt",
         ):
             source, target = ROOT / name, self.root / name
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -100,7 +101,8 @@ class TestDistributionContract(unittest.TestCase):
     def test_complete_current_core_data_and_private_resources_are_inventoried(self):
         expected = {
             "site-packages/" + str(path.relative_to(self.root))
-            for path in (self.root / "pharmacophoremt").rglob("*")
+            for namespace in ("pharmacophoremt", "molsysviewer_pharmacophoremt")
+            for path in (self.root / namespace).rglob("*")
             if path.is_file()
         }
         expected.add("site-packages/pharmacophoremt/_version.py")
@@ -126,6 +128,14 @@ class TestDistributionContract(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.validate(entries)
 
+    def test_missing_addon_payload_fails_archive_validation(self):
+        entries = self.payload()
+        del entries[
+            "site-packages/molsysviewer_pharmacophoremt/panels/pharmacophore.py"
+        ]
+        with self.assertRaises(ValueError):
+            self.validate(entries)
+
     def test_stale_embedded_version_is_rejected(self):
         entries = self.payload()
         entries[self.inventory["version_file"]] = b'__version__ = "0.0.1"\n'
@@ -142,7 +152,7 @@ class TestDistributionContract(unittest.TestCase):
         project = tomllib.loads((ROOT / "pyproject.toml").read_text())
         self.assertEqual(
             project["tool"]["setuptools"]["packages"]["find"]["include"],
-            ["pharmacophoremt*"],
+            ["pharmacophoremt*", "molsysviewer_pharmacophoremt*"],
         )
         from setuptools import find_namespace_packages
 
@@ -150,16 +160,25 @@ class TestDistributionContract(unittest.TestCase):
         (temporary / "devtools/scripts").mkdir(parents=True)
         (self.root / "tests/extra").mkdir(parents=True)
         packages = find_namespace_packages(
-            where=str(self.root), include=["pharmacophoremt*"]
+            where=str(self.root),
+            include=project["tool"]["setuptools"]["packages"]["find"]["include"],
         )
         self.assertTrue(packages)
         self.assertTrue(
             all(
-                name == "pharmacophoremt" or name.startswith("pharmacophoremt.")
+                name in {"pharmacophoremt", "molsysviewer_pharmacophoremt"}
+                or name.startswith(
+                    ("pharmacophoremt.", "molsysviewer_pharmacophoremt.")
+                )
                 for name in packages
             )
         )
         self.assertIn("pharmacophoremt.screening", packages)
+        self.assertIn("molsysviewer_pharmacophoremt.panels", packages)
+        self.assertEqual(
+            project["project"]["entry-points"]["molsysviewer.addons"],
+            {"pharmacophoremt": "molsysviewer_pharmacophoremt"},
+        )
 
     def test_installed_test_inputs_cover_imported_optional_integrations(self):
         imported = set()

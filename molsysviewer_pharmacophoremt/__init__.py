@@ -11,7 +11,7 @@ from .addon import (
 )
 from .panels import PharmacophMTPharmacophorePanel
 from .payloads import interaction_site_record, pharmacophore_payload
-from .render import render_pharmacophore_elements
+from .render import clear_pharmacophore_elements, render_pharmacophore_elements
 from .runtime import PharmacophMTAddonRuntime, ensure_runtime, record_event
 
 __all__ = [
@@ -29,4 +29,5 @@ __all__ = [
     "interaction_site_record",
     "pharmacophore_payload",
     "render_pharmacophore_elements",
+    "clear_pharmacophore_elements",
 ]

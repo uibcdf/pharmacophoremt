@@ -42,6 +42,7 @@ prepared_eralpha_interface
 excluded_volumes
 retrospective_validation
 attribution
+viewer_addon
 eralpha_input_audit
 ```
 
@@ -75,6 +76,7 @@ eralpha_input_audit
 | Build exclusion spheres as an independent modeling step | [Excluded volumes](excluded_volumes.md): `get_excluded_volume_sites()` from cached heavy-atom geometry, composed with positive query sites |
 | Rank labeled molecules and inspect calculation failures | [Retrospective validation](retrospective_validation.md): `RetrospectiveValidator` |
 | Keep software/method references and render a final bibliography | [Scientific attribution](attribution.md): `attribution()`, `attribution_report()` and Ackredit |
+| Inspect cached spherical pharmacophoric sites | [MolSysViewer addon](viewer_addon.md): installed discovery, explicit-unit rendering and exact owned-tag cleanup |
 | Audit the existing ERalpha snapshot before native modeling | [ERalpha input audit](eralpha_input_audit.ipynb): executed source-checkout notebook, with an explicit preparation gate |
 
 MolSysMT supplies molecular conversion, selection, coordinates, declared chemical

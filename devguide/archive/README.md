@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (24)
+### Resolved (25)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -14,6 +14,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
+- [`minimal_viewer_addon_delivery.md`](minimal_viewer_addon_delivery.md) — [#56](https://github.com/uibcdf/pharmacophoremt/issues/56) — Bundle the implemented MolSysViewer addon and qualify its minimal installed Python contract. *(resolved, measured)*
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*
 - [`native_structure_modeler_transition.md`](native_structure_modeler_transition.md) — [#44](https://github.com/uibcdf/pharmacophoremt/issues/44) — Replace the structure modeler's molecular heuristics with explicit cached receptor projections. *(resolved, measured)*
 - [`native_virtual_screening_transition.md`](native_virtual_screening_transition.md) — [#45](https://github.com/uibcdf/pharmacophoremt/issues/45) — Replace implicit legacy screening and validation preparation with explicit prepared-native tools. *(resolved, measured)*

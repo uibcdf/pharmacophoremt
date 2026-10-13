@@ -4,4 +4,5 @@ include CODE_OF_CONDUCT.md
 include versioneer.py
 
 graft pharmacophoremt
+graft molsysviewer_pharmacophoremt
 global-exclude *.py[cod] __pycache__ *.so

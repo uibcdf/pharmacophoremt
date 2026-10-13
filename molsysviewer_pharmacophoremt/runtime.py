@@ -12,6 +12,7 @@ class PharmacophMTAddonRuntime:
     workspace: str = "pharmacophoremt"
     pharmacophore: Any = None
     tag_prefix: str = "pharmt-site"
+    rendered_tags: list[str] = field(default_factory=list)
     last_context_action: dict[str, Any] | None = None
     event_log: list[dict[str, Any]] = field(default_factory=list)
 

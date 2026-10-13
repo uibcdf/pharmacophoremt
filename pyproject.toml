@@ -68,7 +68,10 @@ include-package-data = false
 [tool.setuptools.packages.find]
 namespaces = true
 where = ["."]
-include = ["pharmacophoremt*"]
+include = ["pharmacophoremt*", "molsysviewer_pharmacophoremt*"]
+
+[project.entry-points."molsysviewer.addons"]
+pharmacophoremt = "molsysviewer_pharmacophoremt"
 
 # Ref https://setuptools.pypa.io/en/latest/userguide/datafiles.html#package-data
 [tool.setuptools.package-data]

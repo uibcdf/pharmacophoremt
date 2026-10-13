@@ -1,0 +1,53 @@
+{
+  "schema": "phmt.minimal-viewer-addon-summary@1",
+  "recorded_at_utc": "2026-10-13T09:55:46.884843+00:00",
+  "issue": "uibcdf/pharmacophoremt#56",
+  "source_head": "ad2e4260355ba061c6f2b9e5d62a4698b97700d1",
+  "version": "0.3.0+147.gad2e426.dirty",
+  "full_evidence": {
+    "path": "minimal_viewer_addon_20261013.json.gz",
+    "compressed_sha256": "3563ced303ce9f92ed9f118e75fff5d74e97a0282ac5f6de1d3a1ca8f1d1fcea",
+    "compressed_bytes": 384718,
+    "uncompressed_sha256": "4e11089ece206fd6c0cf8ee61465fb39aaf9a3891f7e31a535cad3a1ac00da39",
+    "uncompressed_bytes": 2235494
+  },
+  "wheel_evidence": {
+    "path": "minimal_viewer_addon_20261013.whl.gz",
+    "compressed_sha256": "7d85eba1e7a0500d65d16ca656d13977c10554b2ac24a386d71881cdf1aebfe4",
+    "compressed_bytes": 4409592,
+    "uncompressed_sha256": "500ba48b8dce0a94a15df5f5d195e8926b6684fec2dc1ab10bbae6aa5b1c1a02",
+    "uncompressed_bytes": 4454352
+  },
+  "artifact_identities": [
+    {
+      "file": "pharmacophoremt-0.3.0+147.gad2e426.dirty-py3-none-any.whl",
+      "sha256": "500ba48b8dce0a94a15df5f5d195e8926b6684fec2dc1ab10bbae6aa5b1c1a02",
+      "bytes": 4454352
+    },
+    {
+      "file": "pharmacophoremt-0.3.0+147.gad2e426.dirty.tar.gz",
+      "sha256": "76f2e471c926091616dc6f84a8447bf360b04b4949a51d13bcadf0c3aefb63b2",
+      "bytes": 4434002
+    }
+  ],
+  "scope": {
+    "installed_addon_tests": 22,
+    "development_addon_tests": 22,
+    "core_contract_tests": 22,
+    "administrative_tests_including_strict_docs": 37,
+    "wheel_required_paths": 179,
+    "optional_viewer_absence": "controlled import blocking, not physical uninstall",
+    "all_root_guard": "delivered shared tool exercised independently; publication pins unchanged",
+    "browser": "not executed",
+    "full_installed_science_matrix": "not executed; MolSysSuite #117 open",
+    "public_release": "none"
+  },
+  "followups": [
+    "uibcdf/molsysviewer#233",
+    "uibcdf/pharmacophoremt#57",
+    "uibcdf/pharmacophoremt#10",
+    "uibcdf/pharmacophoremt#23",
+    "uibcdf/molsyssuite#117"
+  ],
+  "retention": "Original reviewed wheel bytes and full review JSON are retained. Sdists and other intermediate wheels retain digests/inventories/build logs, not original binary archives. Source overlay, runtime hashes and driver texts are retained; rebuilding is not claimed to reproduce zip/tar timestamps or identical bytes."
+}

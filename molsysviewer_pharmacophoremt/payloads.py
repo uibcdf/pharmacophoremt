@@ -23,6 +23,8 @@ def interaction_site_record(site: Any) -> dict[str, Any]:
 
     features = list(site.features) if site.features else []
     return {
+        "shape": site.shape_name,
+        "length_unit": "nm",
         "features": features,
         "center": center,
         "radius": radius,

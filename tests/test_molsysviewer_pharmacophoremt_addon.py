@@ -1,13 +1,15 @@
 """Tests for the molsysviewer_pharmacophoremt addon."""
 
+import importlib
+import importlib.metadata
+import subprocess
 import sys
-from pathlib import Path
-
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import molsysviewer
+import pytest
 
 from molsysviewer_pharmacophoremt import (
+    clear_pharmacophore_elements,
     get_addon,
     lifecycle,
     on_context_action,
@@ -20,7 +22,8 @@ from molsysviewer_pharmacophoremt.runtime import (
     PharmacophMTAddonRuntime,
     ensure_runtime,
 )
-from pharmacophoremt import Pharmacophore
+from pharmacophoremt import Pharmacophore, __version__
+from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.interaction_site import HBAcceptorSphere, HydrophobicSphere
 
 # ---------------------------------------------------------------------------
@@ -63,7 +66,8 @@ def test_addon_spec_matches_molsysviewer_contract():
     addon = get_addon()
 
     assert addon.name == "pharmacophoremt"
-    assert addon.package == "molsysviewer-pharmacophoremt"
+    assert addon.package == "pharmacophoremt"
+    assert addon.version == __version__
     assert addon.workspaces[0].id == "pharmacophoremt"
     assert addon.workspaces[0].entry_panel == "pharmacophore"
     assert [p.id for p in addon.panels] == ["pharmacophore"]
@@ -71,19 +75,62 @@ def test_addon_spec_matches_molsysviewer_contract():
         "molsysviewer_pharmacophoremt.panels.pharmacophore.PharmacophMTPharmacophorePanel"
     )
     assert addon.context_actions[0].id == "show-pharmacophore"
-    assert addon.workbench_sections[0].id == "pharmacophore-summary"
-    assert addon.shape_providers[0].id == "pharmacophore-spheres"
-    assert addon.export_helpers[0].id == "pharmacophore-export"
+    assert not addon.workbench_sections
+    assert not addon.shape_providers
+    assert not addon.export_helpers
+    assert addon.meta["supported_shapes"] == ["sphere"]
+    entry = addon.context_actions[0].entry
+    module, _, attribute = entry.rpartition(".")
+    assert callable(getattr(importlib.import_module(module), attribute))
 
 
 def test_addon_registers_with_molsysviewer_host_registry():
     molsysviewer.addons.clear()
-    molsysviewer.addons.register(get_addon(), lifecycle=lifecycle)
+    try:
+        molsysviewer.addons.register(get_addon(), lifecycle=lifecycle)
+        assert molsysviewer.addons.contains("pharmacophoremt") is True
+        assert molsysviewer.addons.lifecycle_for("pharmacophoremt") is lifecycle
+    finally:
+        molsysviewer.addons.clear()
 
-    assert molsysviewer.addons.contains("pharmacophoremt") is True
-    assert molsysviewer.addons.lifecycle_for("pharmacophoremt") is lifecycle
 
+def test_installed_entry_point_discovers_addon_and_lifecycle():
+    entries = list(
+        importlib.metadata.entry_points(
+            group="molsysviewer.addons", name="pharmacophoremt"
+        )
+    )
+    assert len(entries) == 1
+    assert entries[0].value == "molsysviewer_pharmacophoremt"
+    assert entries[0].load().get_addon() is get_addon()
     molsysviewer.addons.clear()
+    try:
+        discovered = molsysviewer.addons.discover(include_known_modules=False)
+        assert any(spec.name == "pharmacophoremt" for spec in discovered)
+        assert molsysviewer.addons.lifecycle_for("pharmacophoremt") is lifecycle
+    finally:
+        molsysviewer.addons.clear()
+
+
+@pytest.mark.parametrize("first", ["molsysviewer", "molsysviewer_pharmacophoremt"])
+def test_fresh_process_import_order_preserves_discovery(first):
+    result = subprocess.run(
+        [
+            sys.executable,
+            "-I",
+            "-c",
+            f"import {first}\n"
+            "import molsysviewer\n"
+            "assert molsysviewer.addons.contains('pharmacophoremt')\n"
+            "assert not molsysviewer.addons.discovery_failures()\n"
+            "assert molsysviewer.addons.lifecycle_for('pharmacophoremt') is not None\n",
+        ],
+        capture_output=True,
+        text=True,
+        check=False,
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+    assert "Failed to load add-on" not in result.stderr
 
 
 # ---------------------------------------------------------------------------
@@ -159,17 +206,18 @@ def test_render_pharmacophore_elements_adds_spheres():
     assert view.messages[1]["op"] == "add_sphere"
 
 
-def test_render_pharmacophore_elements_skips_sites_without_center():
+def test_render_pharmacophore_elements_rejects_unsupported_geometry_before_render():
     from pharmacophoremt.interaction_site import IncludedVolumePoint
 
     pharma = Pharmacophore()
+    pharma = _make_pharmacophore()
     pharma.interaction_sites.append(IncludedVolumePoint(position="[0.0, 0.0, 0.0] nm"))
-    pharma.n_interaction_sites = 1
+    pharma.n_interaction_sites += 1
 
     view = DummyView()
-    result = render_pharmacophore_elements(view, pharma)
-
-    assert result["n_rendered"] == 0
+    with pytest.raises(ArgumentError, match="sphere sites only"):
+        render_pharmacophore_elements(view, pharma)
+    assert not view.messages
 
 
 # ---------------------------------------------------------------------------
@@ -268,3 +316,106 @@ def test_pharmacophore_panel_render_action_renders_elements():
     from molsysviewer_pharmacophoremt.runtime import ensure_runtime as rt
 
     assert any(e["event"] == "panel_render_pharmacophore" for e in rt(view).event_log)
+
+
+def test_nondefault_units_preserve_sphere_geometry():
+    import numpy as np
+
+    from pharmacophoremt import pyunitwizard as puw
+
+    with puw.context(standard_units=["angstrom", "ps", "degrees"]):
+        pharma = Pharmacophore()
+        pharma.add_interaction_site(
+            HydrophobicSphere(center="[1,2,3] angstrom", radius="0.5 nm")
+        )
+        record = pharmacophore_payload(pharma)["sites"][0]
+        assert record["length_unit"] == "nm"
+        assert record["radius"] == pytest.approx(0.5, rel=1e-14, abs=1e-14)
+        np.testing.assert_allclose(record["center"], [0.1, 0.2, 0.3])
+        view = DummyView()
+        render_pharmacophore_elements(view, pharma)
+    message = view.messages[-1]["options"]
+    np.testing.assert_allclose(message["center"], [1, 2, 3])
+    assert message["radius"] == pytest.approx(5, rel=1e-14, abs=1e-14)
+
+
+def test_invalid_cached_zero_radius_is_rejected_without_replacing_the_scene():
+    from pharmacophoremt import pyunitwizard as puw
+
+    view = DummyView()
+    model = _make_pharmacophore()
+    render_pharmacophore_elements(view, model)
+    before = view.messages.copy()
+    tags = ensure_runtime(view).rendered_tags.copy()
+    model.interaction_sites[0].shape.radius = puw.quantity(0, "nm")
+    with pytest.raises(ArgumentError, match="positive length"):
+        render_pharmacophore_elements(view, model)
+    assert view.messages == before
+    assert ensure_runtime(view).rendered_tags == tags
+
+
+def test_repeated_render_and_clear_preserve_unrelated_shapes():
+    view = DummyView()
+    view.shapes.add_sphere(tag="unrelated")
+    first = render_pharmacophore_elements(view, _make_pharmacophore())
+    second = render_pharmacophore_elements(view, _make_pharmacophore())
+    assert first["n_rendered"] == second["n_rendered"] == 2
+    assert len(ensure_runtime(view).rendered_tags) == 2
+    assert clear_pharmacophore_elements(view) == 2
+    assert clear_pharmacophore_elements(view) == 0
+    clears = [m for m in view.messages if m.get("op") == "clear_shapes_by_tag"]
+    assert [m["tag"] for m in clears] == ["pharmt-site:0", "pharmt-site:1"] * 2
+    assert not ensure_runtime(view).rendered_tags
+
+
+def test_failed_clear_is_reported_and_remains_retryable(monkeypatch):
+    view = molsysviewer.MolSysView()
+    runtime = ensure_runtime(view)
+    runtime.pharmacophore = _make_pharmacophore()
+    render_pharmacophore_elements(view, runtime.pharmacophore)
+    from molsysviewer_pharmacophoremt import PharmacophMTPharmacophorePanel
+
+    widget = PharmacophMTPharmacophorePanel()
+    sent = []
+    widget.send = lambda msg: sent.append(msg)
+    original = view.shapes.clear
+
+    def fail(*args, **kwargs):
+        raise RuntimeError("controlled shape deletion failure")
+
+    monkeypatch.setattr(view.shapes, "clear", fail)
+    widget.handle_action(view, "clear_pharmacophore", {})
+    assert sent[-1]["state"]["status"] == "error"
+    assert "deletion failure" in sent[-1]["state"]["error"]
+    assert len(runtime.rendered_tags) == 2
+    assert not any(e["event"] == "panel_clear_pharmacophore" for e in runtime.event_log)
+    monkeypatch.setattr(view.shapes, "clear", original)
+    assert clear_pharmacophore_elements(view) == 2
+
+
+def test_disabling_addon_removes_its_rendered_tags():
+    view = DummyView()
+    on_enable(view)
+    render_pharmacophore_elements(view, _make_pharmacophore())
+    on_disable(view)
+    assert not ensure_runtime(view).enabled
+    assert not ensure_runtime(view).rendered_tags
+
+
+def test_panel_refresh_reads_current_model_and_preserves_payload_errors():
+    from molsysviewer_pharmacophoremt import PharmacophMTPharmacophorePanel
+
+    view = molsysviewer.MolSysView()
+    runtime = ensure_runtime(view)
+    widget = PharmacophMTPharmacophorePanel()
+    sent = []
+    widget.send = lambda msg: sent.append(msg)
+    widget.handle_action(view, "refresh_pharmacophore", {})
+    assert sent[-1]["state"]["n_sites"] == 0
+    runtime.pharmacophore = _make_pharmacophore()
+    widget.handle_action(view, "refresh_pharmacophore", {})
+    assert sent[-1]["state"]["n_sites"] == 2
+    runtime.pharmacophore = object()
+    widget.handle_action(view, "refresh_pharmacophore", {})
+    assert sent[-1]["state"]["status"] == "error"
+    assert sent[-1]["state"]["error"]

@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from typing import Any
 
-from molsysviewer import AddonPanelWidget
+from molsysviewer.addons import AddonPanelWidget
 
 from ..runtime import ensure_runtime, record_event
 
@@ -82,7 +82,7 @@ export function render({ model, el }) {
     if (msg?.type === "state") applyState(msg.state);
   });
 
-  model.send({ type: "query", id: "viewer.context" });
+  model.send({ type: "action", id: "refresh_pharmacophore", payload: {} });
   applyState(state);
 }
 """
@@ -164,7 +164,10 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
     def handle_action(self, view: Any, action_id: str, payload: dict) -> None:
         runtime = ensure_runtime(view)
 
-        if action_id == "render_pharmacophore":
+        if action_id == "refresh_pharmacophore":
+            self.push_state(self._build_state(runtime))
+
+        elif action_id == "render_pharmacophore":
             if runtime.pharmacophore is None:
                 self.push_state(
                     {
@@ -195,9 +198,14 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
 
         elif action_id == "clear_pharmacophore":
             try:
-                view.shapes.clear(tag_prefix=runtime.tag_prefix, skip_digestion=True)
-            except Exception:
-                pass
+                from ..render import clear_pharmacophore_elements
+
+                clear_pharmacophore_elements(view)
+            except Exception as exc:
+                self.push_state(
+                    {**self._build_state(runtime), "status": "error", "error": str(exc)}
+                )
+                return
             record_event(view, "panel_clear_pharmacophore")
             self.push_state({**self._build_state(runtime), "status": "idle"})
 
@@ -215,8 +223,14 @@ class PharmacophMTPharmacophorePanel(AddonPanelWidget):
                     "status": "idle",
                     "error": None,
                 }
-            except Exception:
-                pass
+            except Exception as exc:
+                return {
+                    "n_sites": 0,
+                    "feature_counts": {},
+                    "tag_prefix": runtime.tag_prefix,
+                    "status": "error",
+                    "error": str(exc),
+                }
         return {
             "n_sites": 0,
             "feature_counts": {},

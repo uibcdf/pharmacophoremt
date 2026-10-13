@@ -1,6 +1,13 @@
-reason = "Pure Python tracked payload; version module, package roots and every committed runtime data file are required. No installed platform support is inferred."
+reason = "Pure Python tracked payload; version module, core/add-on package roots and every committed runtime data file are required. No installed platform support is inferred."
 version_file = "site-packages/pharmacophoremt/_version.py"
 required_paths = [
+  "site-packages/molsysviewer_pharmacophoremt/__init__.py",
+  "site-packages/molsysviewer_pharmacophoremt/addon.py",
+  "site-packages/molsysviewer_pharmacophoremt/panels/__init__.py",
+  "site-packages/molsysviewer_pharmacophoremt/panels/pharmacophore.py",
+  "site-packages/molsysviewer_pharmacophoremt/payloads.py",
+  "site-packages/molsysviewer_pharmacophoremt/render.py",
+  "site-packages/molsysviewer_pharmacophoremt/runtime.py",
   "site-packages/pharmacophoremt/__init__.py",
   "site-packages/pharmacophoremt/_ackredit.py",
   "site-packages/pharmacophoremt/_argdigest.py",

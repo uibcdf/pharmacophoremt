@@ -333,3 +333,24 @@ payload delivery, actual release plan/access/original archive, full installed
 science and same-byte public receiving remain separate #10/#23 requirements.
 Runtime molecular operations, required support range, source CI and provider pins
 retain their contracts. The frozen publication wrapper is not dispatched here.
+
+## 2026-10-13 minimal addon delivery continuation
+
+Local #56 closes the bounded addon payload/Python-contract gap observed in the
+2026-10-10 readiness review. The scientific distribution now bundles both runtime
+roots, declares its real module entry point and inventories all seven addon Python
+files. Twenty-two controls pass from an exploratory noneditable wheel outside
+checkouts with public MolSysViewer 0.24.0/Linux/Python 3.14.8; unsupported geometry,
+unit conversion, errors and owned-tag cleanup have independent controls.
+See [the contract](../viewer_addon_workflow.md) and
+[the original receipt](../evidence/minimal_viewer_addon_20261013_summary.json).
+
+That isolated proof uses the actual delivered all-root helper from MolSysSuite
+`948d0267de8fa43c542ab7eba28b9f8b7fbf095e`, including a secondary-root source-shadow
+negative. Publication workflows retain their frozen pins; adopting a reviewed
+all-root helper is still required before the complete candidate/receiving gate.
+MolSysSuite #117 still owns scientific helper isolation. The exploratory wheel
+has a recorded development source-overlay version and is not a release selection,
+Conda candidate, same-byte public receiving result or complete matrix evidence.
+Browser validation is separate. Build metadata warnings are tracked in local #57;
+the nonblocking provider discovery cycle is tracked in MolSysViewer #233.

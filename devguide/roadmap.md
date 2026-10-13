@@ -77,6 +77,19 @@ from addon/browser delivery. Whole #6/#19 and installed/public qualification
 remain partial; the prior `e912093` source matrix's eleven required jobs are
 independently verified without claiming that they ran these new guards.
 
+The minimal viewer addon continuation (#56) bundles the integration and its module
+entry point in PharmacophoreMT. Twenty-two controls pass from a normal isolated
+wheel installation with public MolSysViewer 0.24.0 on Linux/Python 3.14.8 and in
+development. Sphere-only geometry, explicit units, honest panel failures and exact
+owned-tag clearing have independent controls. See
+[the contract](viewer_addon_workflow.md) and
+[the original receipt](evidence/minimal_viewer_addon_20261013_summary.json).
+The public provider's root-export discovery cycle is reported in MolSysViewer
+#233; PHMT uses the public module directly. Build metadata maintenance is tracked
+in local #57. Browser interaction/rendering is the next viewer gate. This bounded
+wheel proof does not close the full installed/public matrix or MolSysSuite #117;
+publication workflows still need reviewed all-root helper adoption.
+
 The next steps are:
 
 1. Complete inspection of the applicable hosted matrix and installed/public
