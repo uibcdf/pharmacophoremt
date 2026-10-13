@@ -438,7 +438,6 @@ class TestEvidenceArchive(unittest.TestCase):
         self.assertFalse(report["scope"]["session_save_restore"])
         self.assertIn("uibcdf/molsysviewer#240", report["followups"])
 
-
     def test_current_viewer_receipt_keeps_producer_and_failed_scope_separate(self):
         path = ROOT / "devguide/evidence/current_viewer_addon_20261013_summary.json"
         summary, report = read_archived_evidence(path)
