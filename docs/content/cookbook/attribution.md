@@ -2,9 +2,10 @@
 
 Use `pharmacophoremt.attribution()` to request bibliographic capture around the
 native calculations. Ackredit renders the bibliography and owns the application
-session. This recipe targets the development API and the controlled provider
-revisions, including Ackredit's public capture API; published installation and
-the complete supported Python matrix remain to be verified.
+session. This recipe uses Ackredit's public capture API. The consumer boundary is
+verified with public Ackredit 0.12.0 and MolSysMT 0.23.0 on Linux/Python 3.14;
+PharmacophoreMT package delivery and public-provider receiving across every
+supported Python minor remain separate qualification work.
 
 ## Executable calculation and reports
 
@@ -80,12 +81,15 @@ the scientific result and host declarations, and marks capture `failed`.
 The report helper requires a successfully captured payload and an available
 compatible provider; it does not present partial tracking as a complete report.
 
-The controlled MolSysMT revision has a known cross-provider limitation:
-an Ackredit failure can interrupt molecular recognition if the application
-promotes MolSysMT's attribution warning to an error. The provider fix is tracked
-in [MolSysMT #295](https://github.com/uibcdf/molsysmt/issues/295). PHMT's own
-warning boundary is protected and tested; ecosystem-wide failure isolation
-under this warning policy still requires that provider correction.
+The original controlled MolSysMT revision could interrupt recognition when an
+application promoted its attribution warning to an error.
+[MolSysMT #295](https://github.com/uibcdf/molsysmt/issues/295) is now resolved.
+Consumer controls with public MolSysMT 0.23.0 and Ackredit 0.12.0 globally fail
+registration, tracking and scopes under ordinary warnings and warnings-as-errors:
+recognition and the scientific result survive, the diagnostic remains observable,
+and the original scientific exception is preserved when calculation fails.
+These observed versions are not inferred compatibility minima, and this bounded
+review does not guarantee isolation from every possible provider failure.
 
 Tracked native entry points include `get_features`, `from_ligand`,
 `from_interactions`, pharmacophoric correspondences/alignment, `PoseEvaluator`,
@@ -93,7 +97,9 @@ Tracked native entry points include `get_features`, `from_ligand`,
 operations share an outer capture and bound host credit by operation/branch,
 rather than recording every candidate, atom or conformer. Scalar metrics retain
 their numerical API and contribute to the current workflow bibliography.
-The legacy modelers have not been migrated to this native capture contract.
+The current ligand, complex, structure and screening facades delegate to explicit
+native routes. General molecular preparation remains the molecular provider's
+responsibility; activation does not prepare or repair a molecular system.
 The [aligned-consensus tools](aligned_consensus.md) also participate: fixed-frame
 feature matching, explicit-group aggregation and `from_aligned_ligands` retain
 their reached branch references under the same capture contract.

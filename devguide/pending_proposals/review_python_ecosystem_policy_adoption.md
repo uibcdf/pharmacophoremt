@@ -6,7 +6,7 @@ opened: 2026-09-27
 closed:
 verification: measured
 area: [governance, tooling]
-guard:
+guard: tests/test_contracts.py
 normative:
 blocked_by: []
 supersedes: []
@@ -106,3 +106,45 @@ Open for support-library work. The developer-tool review is adopted on the
 evidence above; reassess it if maintained CI routes or published tool pins
 change. Link the eventual support-library guards and final suite inventory
 state when closing this issue.
+
+
+## Current bounded support-library review — 2026-10-13
+
+The 2026-09-27 findings and 2026-10-02 limitations above retain their original
+source scope. At current source `e912093`, metadata directly declares ArgDigest,
+PyUnitWizard, SMonitor and DepDigest. #2/#48 and the legacy facade/utility migrations
+have their own archived resolutions; they are not reopened by this review.
+
+The updated attribution and contract selection passes all 39 controls with public
+providers on Linux/Python 3.14.8 and separately with routine development Python
+3.14.7. Existing assertions observe authored SMonitor messages, host error codes
+and reconstruction, invalid arguments, detached/persisted quantity records and
+preserved non-default application units. The new viewer-absence control uses a
+fresh process and an import finder that makes MolSysViewer unavailable, rather
+than mocking DepDigest's availability answer. Import remains lazy and the actual
+DepDigest boundary raises PHMT-E001 with its installation hint before any viewer
+loads. This controlled absence test does not certify browser rendering or a
+physically uninstalled provider's dependency closure.
+
+Real Ackredit failure now crosses the molecular provider under both ordinary and
+strict warning policies, preserving scientific outcomes, original exceptions,
+application session and diagnostic evidence. See #19 and the
+[original receipt](../evidence/public_attribution_review_20261013_summary.json).
+The remaining molecular donor-H migration in #41 belongs to MolSysMT #375; no
+molecular operation is reproduced in this review.
+
+| Review | Executed evidence | Remaining limit |
+| --- | --- | --- |
+| ArgDigest | Invalid public input controls with real ArgDigest/Beartype | Not exhaustive argument/API coverage |
+| PyUnitWizard | Fresh-process non-default policy and native persistence | No new interchange schema or all-provider unit audit |
+| SMonitor | Authored catalog messages, reconstruction and actual cross-provider warning events | Provider diagnostic fallback internals stay with their owner |
+| DepDigest | Direct declaration, lazy viewer creation and fresh-process controlled absence | Public 0.14.0 compatibility is observed; declared-registry adoption is separate and unnecessary for these current callers |
+| Ackredit | Real capture, reused/portable records, absence and global tracking failures | PHMT public artifact and all-minor public receiving remain #19/#10/#23 |
+| Developer tools | Actual accepted shared verifier checks eleven `e912093` hosted jobs | New test guards need their own next-head CI; #9's current PR receiving remains independent |
+
+Support-library adoption remains **partial**, developer-tool adoption retains its
+existing reviewed state. The original claim that only source-provider tests exist
+is superseded by #55 and this bounded public receiving result; it is not replaced
+by a full installed/public delivery claim. Central MolSysSuite #56 receives the
+linked checkpoint; its registry is not edited in this component. No automatic
+new dependency floor, source pin, public extra or policy adoption is introduced.

@@ -217,6 +217,78 @@ def test_tracking_failure_does_not_replace_scientific_exception(monkeypatch, pre
     assert caught.value.code == "PHMT-E103"
 
 
+@pytest.mark.parametrize("operation", ["register_item", "track_item", "scope"])
+@pytest.mark.parametrize("warning_policy", ["always", "error"])
+def test_cross_provider_failure_preserves_science_and_diagnostic_evidence(
+    monkeypatch, prepared, operation, warning_policy
+):
+    import smonitor
+    from smonitor.handlers import MemoryHandler
+
+    source, query = prepared
+    evaluator = PoseEvaluator(query)
+    plain = evaluator.evaluate(source)
+
+    def fail(*args, **kwargs):
+        raise RuntimeError("controlled cross-provider attribution failure")
+
+    # Fail the real provider globally, including calls made by MolSysMT.
+    monkeypatch.setattr(ack, operation, fail)
+    manager = smonitor.get_manager()
+    handler = MemoryHandler()
+    manager.add_handler(handler)
+    try:
+        with ack.session("cross-provider failure") as application:
+            with warnings.catch_warnings():
+                warnings.simplefilter(warning_policy)
+                with phmt.attribution():
+                    result = evaluator.evaluate(source)
+            assert ack.current_session() is application
+    finally:
+        manager.remove_handler(handler)
+    payload = result.pop("attribution")
+    assert result == plain
+    assert result["status"] == "matched" and result["fit_value"] == 1
+    assert payload["status"] == "failed" and payload["references"] is None
+    assert payload["host_references"] and payload["errors"]
+    assert payload["scientific_outcome"] == "matched"
+    events = [
+        event for event in handler.events if event.get("code") == "MSM-WARN-ATTR-001"
+    ]
+    assert events, "MolSysMT must actually reach the failed attribution boundary"
+    assert all(
+        "cross-provider attribution failure" in event["extra"]["reason"]
+        for event in events
+    )
+
+
+def test_cross_provider_failure_preserves_the_original_scientific_error(
+    monkeypatch, prepared
+):
+    source, query = prepared
+    evaluator = PoseEvaluator(query)
+    invalid = object()
+    with pytest.raises(PoseEvaluationError) as original:
+        evaluator.evaluate(invalid)
+
+    def fail(*args, **kwargs):
+        raise RuntimeError("controlled cross-provider attribution failure")
+
+    monkeypatch.setattr(ack, "register_item", fail)
+    with ack.session("failed tracking and science"):
+        with warnings.catch_warnings():
+            warnings.simplefilter("error")
+            with phmt.attribution():
+                completed = evaluator.evaluate(source)
+                with pytest.raises(PoseEvaluationError) as caught:
+                    evaluator.evaluate(invalid)
+    assert completed["status"] == "matched"
+    assert completed["attribution"]["status"] == "failed"
+    assert caught.value.code == original.value.code == "PHMT-E103"
+    assert type(caught.value.__cause__) is type(original.value.__cause__)
+    assert str(caught.value.__cause__) == str(original.value.__cause__)
+
+
 def test_missing_provider_retains_offline_provenance():
     run_reader("""
 import sys,importlib.abc

@@ -207,6 +207,33 @@ def test_show_reports_missing_optional_viewer_before_import(monkeypatch):
     assert "pip install molsysviewer" in str(caught.value)
 
 
+def test_show_with_unavailable_viewer_in_a_fresh_process():
+    script = """
+import importlib.abc
+import sys
+class NoViewer(importlib.abc.MetaPathFinder):
+    def find_spec(self, fullname, path=None, target=None):
+        if fullname.split('.')[0] == 'molsysviewer':
+            raise ModuleNotFoundError('controlled unavailable viewer', name=fullname)
+sys.meta_path.insert(0, NoViewer())
+import pharmacophoremt as phmt
+from pharmacophoremt._private.smonitor.exceptions import LibraryNotFoundError
+assert 'molsysviewer' not in sys.modules
+try:
+    phmt.Pharmacophore().show()
+except LibraryNotFoundError as error:
+    assert error.code == 'PHMT-E001'
+    assert 'pip install molsysviewer' in str(error)
+else:
+    raise AssertionError('Requested unavailable viewer must raise its host diagnostic')
+assert 'molsysviewer' not in sys.modules
+"""
+    result = subprocess.run(
+        [sys.executable, "-c", script], capture_output=True, text=True, timeout=90
+    )
+    assert result.returncode == 0, result.stdout + result.stderr
+
+
 def test_nondefault_units_survive_package_import_and_distance_calculation():
     script = """
 import pyunitwizard as puw

@@ -1,0 +1,74 @@
+{
+  "schema": "pharmacophoremt.public-attribution-review-summary@1",
+  "date": "2026-10-13",
+  "owners": [
+    "uibcdf/pharmacophoremt#19",
+    "uibcdf/pharmacophoremt#6"
+  ],
+  "source_sha": "e9120934e9bd173ccfcfc44fa5c740147c4641f1",
+  "current_root_sha": "7b346dd6e3285270c76c372d699e2e7a9239e966",
+  "public_tests": {
+    "tests": 39,
+    "junit_reported_tests": 39,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "development_tests": {
+    "tests": 39,
+    "junit_reported_tests": 39,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "initial_development_tests": {
+    "tests": 39,
+    "junit_reported_tests": 39,
+    "failures": 1,
+    "errors": 0,
+    "skipped": 0
+  },
+  "strict_documentation": {
+    "tests": 1,
+    "junit_reported_tests": 1,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "public_provider_versions": {
+    "molsysmt": "0.23.0",
+    "ackredit": "0.12.0",
+    "pyunitwizard": "0.28.1",
+    "argdigest": "0.15.0",
+    "smonitor": "0.19.0",
+    "depdigest": "0.14.0",
+    "molsysviewer": "0.24.0",
+    "beartype": "0.22.9",
+    "openmm": "8.6.1",
+    "pytest": "9.1.1",
+    "pytest_receptor": "1.2.0"
+  },
+  "public_python": "3.14.8 | packaged by conda-forge | (main, Oct 12 2026, 17:35:27) [GCC 15.3.0]",
+  "sdk_sha": "8f00e6d9de943b6e4710ea62936e2ebea00fad24",
+  "baseline_package_identities_preserved": 309,
+  "new_cross_provider_cases": 7,
+  "new_viewer_absence_cases": 1,
+  "prior_source_verified_jobs": 11,
+  "prior_source_scientific_cells": 8,
+  "full_evidence": {
+    "path": "public_attribution_review_20261013.json.gz",
+    "compressed_sha256": "16a23bad9aedf89678f159498452dc61cac625202aabdea88f8f5bb0130263e1",
+    "uncompressed_sha256": "aa47a639dcf36fa78d23722c155328729b95fa3eeb94e73e7798e80e44020e2f",
+    "compressed_bytes": 181705,
+    "uncompressed_bytes": 970040
+  },
+  "scope": "Selected Linux/Python 3.14 public-provider consumer contracts and independent prior source CI; no new all-minor public or installed PHMT artifact qualification.",
+  "removed_active_blocker": "uibcdf/molsysmt#295",
+  "remaining": [
+    "#19 contract/release review",
+    "#6 whole support-library adoption",
+    "#10/#23 installed/public artifact",
+    "#9 accepted current PR receiving",
+    "MolSysSuite #117 scientific helper isolation"
+  ]
+}

@@ -1,6 +1,6 @@
 # Strategic Roadmap
 
-## Current priorities — 2026-10-10
+## Current priorities — 2026-10-13
 
 The native class/default routes now require prepared input and explicit scientific
 choices: ligand consensus (#18), observed-complex construction (#42), cached
@@ -66,6 +66,16 @@ These are observed versions, not compatibility minima or complete installed
 qualification. Next viewer work can review intended addon payload/distribution
 and the existing public viewer contract. MolSysSuite #117 still blocks the
 complete isolated installed science gate; browser rendering is untested.
+
+The attribution continuation (#19/#6) now verifies public MolSysMT 0.23.0 and
+Ackredit 0.12.0 failure isolation with 39 passing attribution/contract controls
+on Linux/Python 3.14.8, plus the same local development selection. MolSysMT #295
+is removed from active blockers; original failure evidence remains historical.
+See [the public review receipt](evidence/public_attribution_review_20261013_summary.json).
+Optional viewer absence and support-library boundaries are reviewed separately
+from addon/browser delivery. Whole #6/#19 and installed/public qualification
+remain partial; the prior `e912093` source matrix's eleven required jobs are
+independently verified without claiming that they ran these new guards.
 
 The next steps are:
 

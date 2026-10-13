@@ -8,7 +8,7 @@ verification: measured
 area: [attribution, integration]
 guard: tests/test_attribution.py
 normative: docs/content/cookbook/attribution.md
-blocked_by: [uibcdf/molsysmt#295]
+blocked_by: []
 supersedes: []
 ---
 
@@ -85,3 +85,46 @@ supported Python matrix before advertising distribution support. Instrument
 future methods only at their reached branches, preserving role/version context.
 Local integration is implemented; issue remains open for contract and release
 review.
+
+
+## Public cross-provider receiving review — 2026-10-13
+
+MolSysMT #295 is closed by provider correction `033c12b341abf6e986f9ae9ddd6c84bf167222c8`.
+Its historical reproduction above remains valid for the original source. New
+consumer controls verify public MolSysMT 0.23.0 with Ackredit 0.12.0 on Linux
+x86_64/Python 3.14.8. The consumer is a normal editable copy of source `e912093`
+with only the two retained test overlays; no sibling source is installed.
+
+All 39 attribution/public-contract controls pass. Six new cases globally fail
+real Ackredit `register_item`, `track_item` or `scope`, under ordinary warnings
+and warnings-as-errors. MolSysMT's catalog event proves the failed boundary is
+actually reached. The full scientific result equals its unattributed baseline,
+while PHMT capture is explicitly failed with offline host records and no complete
+bibliography. Application session identity is preserved. A seventh control keeps
+the original scientific error's code, cause type and text after an actual completed
+recognition with failed tracking. The same 39 controls pass in the qualified local
+development environment. The initial scientific-error guard compared two distinct
+invalid objects; its address-dependent message mismatch is retained and corrected
+by reusing the same input, without changing runtime/provider code.
+
+Public origins and downloaded archive SHA-256 values are verified; `pip check`
+and the accepted production-context preflight pass. DepDigest resolves to public
+0.14.0 in this fresh environment; this observes compatibility of the existing
+boundary, not adoption of `DeclaredRegistry`. The ordinary manager still inherits
+`ambermd`, although every installed package URL is `uibcdf`/`conda-forge`; subsequent
+test-tool/backend operations use exclusive channels. Shared #116 retains ownership.
+
+Receipt: [original public attribution review](../evidence/public_attribution_review_20261013_summary.json).
+It preserves original test output/JUnit, provider/source identities, exact test
+patches, environment history and complete manager output. The prior `e912093`
+source CI separately passes the actual shared verifier for eleven required jobs,
+including eight full Linux/macOS arm64 × Python 3.11–3.14 cells. Those hosted
+jobs predate these new controls and use the existing controlled source providers;
+they do not execute these new guards with public dependencies on every minor.
+
+Remove #295 from active `blocked_by`. The issue remains active for the public
+activation/payload/report contract and delivered-package qualification. No public
+PHMT artifact, all-minor public attribution receiving, new minimum provider floor,
+provider diagnostic import/construction/emission fault injection, addon delivery
+or biological validation is established by this consumer review. The provider's
+own diagnostic-construction/fallback regressions remain provider-owned.
