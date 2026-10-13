@@ -2,6 +2,27 @@
 
 This document defines the integration roadmap between **PharmacophoreMT** and **MolSysViewer**, ensuring a high-performance and interactive experience.
 
+## Current delivered contract — 2026-10-13
+
+The minimal addon is bundled in the `pharmacophoremt` distribution as
+`molsysviewer_pharmacophoremt`, with a `molsysviewer.addons` entry point.
+It reads an attached cached native model, summarizes its features and renders
+spherical sites through the public viewer shape API. Exact owned-tag clearing,
+explicit input/error feedback and frontend teardown are delivered under #56/#59.
+See the [maintained workflow and measured scope](viewer_addon_workflow.md).
+
+General molecular work remains in MolSysMT; host navigation, transport and
+general visualization remain in MolSysViewer. Shape-only navigation is still
+blocked by MolSysViewer #240 under local #58. Installed/public matrices,
+session persistence and hardware/Qt remain separate acceptance work.
+
+The plans and naming table below retain earlier design proposals. Vectorized
+bulk transfer, site editing, molecular recognition context actions and labels
+are not advertised addon capabilities. The current integration does not require
+the historical proposed API renaming as a prerequisite.
+
+## Earlier design proposals
+
 ## Strategy 1: Programmatic Native Bridge
 *Target: Power users and developers working in Jupyter Notebooks.*
 
@@ -33,4 +54,6 @@ To maintain consistency with the new **InteractionSite** terminology, we propose
 | `add_pharmacophore_features` | `add_interaction_sites` | "Feature" now refers only to the chemical identity. The visual glyph represents the whole "Site". |
 | `PHARM_COLORS` | `INTERACTION_COLORS` | Align with the new naming convention. |
 
-**Status**: These changes should be implemented in `molsysviewer` first to provide a clean API for `pharmacophoremt`.
+**Historical proposal status:** This table is not a current API inventory or
+a blocker to the delivered addon. Further general viewer capabilities belong
+in MolSysViewer proposals, with linked consumer evidence.

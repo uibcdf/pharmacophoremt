@@ -1,6 +1,33 @@
 # Development Checkpoint
 
-**Current status (2026-10-03):** Gen 1b classical consolidation. The immediate
+## Current pause checkpoint — 2026-10-13
+
+The implementation checkpoint is `eca174b`, published on the official
+`uibcdf/pharmacophoremt` main branch. Use the [current roadmap](roadmap.md)
+and the [pending issue indexes](pending_proposals/README.md) for resumption;
+the chronological observations below preserve their original dates and scopes.
+
+The minimal viewer addon (#56) and panel feedback/teardown (#59) are resolved.
+#59's [archived report](archive/viewer_panel_feedback.md) links the final
+14-control live-browser record and 23 native addon tests. #58 remains partial:
+its [current-provider receipt](evidence/current_viewer_addon_20261013_summary.json)
+reproduces the molecular-free workspace blocker owned by MolSysViewer #240.
+The later panel run uses the development provider and does not change that
+installed-provider record or qualify public browser delivery.
+
+At this checkpoint, policy and Conda governance runs for `eca174b` succeeded;
+[scientific CI 38438999594](https://github.com/uibcdf/pharmacophoremt/actions/runs/38438999594)
+was observed queued, so its complete matrix is not claimed to have passed.
+This is a dated observation, not a current run-status monitor.
+
+Remaining work is already owned: #57 packaging metadata, #10/#23 installed/public
+delivery with MolSysSuite #117 helper isolation, and #58 receiving after the
+MolSysViewer fix. Molecular preparation and remaining #41 geometry delegation
+stay with MolSysMT. No development task needs to remain running during the pause.
+
+## Historical implementation observations
+
+**Original status (2026-10-03):** Gen 1b classical consolidation. The immediate
 priority is executing traditional workflows, with the growth contracts needed
 for later scientific methods and measured acceleration.
 

@@ -63,9 +63,9 @@ descriptor. All 899 source tests pass with public providers on Linux/Python 3.14
 eight dependency dry solves cover the supported minors and Linux/macOS arm64
 (the latter assumes macOS 15). See [the original receipt](evidence/public_test_dependencies_20261010_summary.json).
 These are observed versions, not compatibility minima or complete installed
-qualification. Next viewer work can review intended addon payload/distribution
-and the existing public viewer contract. MolSysSuite #117 still blocks the
-complete isolated installed science gate; browser rendering is untested.
+qualification. Addon payload/distribution and browser work subsequently advanced
+under #56/#58/#59 below. MolSysSuite #117 still blocks the complete isolated
+installed science gate; this dependency review did not execute browser rendering.
 
 The attribution continuation (#19/#6) now verifies public MolSysMT 0.23.0 and
 Ackredit 0.12.0 failure isolation with 39 passing attribution/contract controls
@@ -86,7 +86,7 @@ owned-tag clearing have independent controls. See
 [the original receipt](evidence/minimal_viewer_addon_20261013_summary.json).
 The public provider's root-export discovery cycle is reported in MolSysViewer
 #233; PHMT uses the public module directly. Build metadata maintenance is tracked
-in local #57. Browser interaction/rendering is the next viewer gate. This bounded
+in local #57. Browser interaction/rendering advanced under #58 below. This bounded
 wheel proof does not close the full installed/public matrix or MolSysSuite #117;
 publication workflows still need reviewed all-root helper adoption.
 
@@ -96,24 +96,34 @@ spheres, unsupported input and recoverable failure/disable cleanup. The same
 cached model without a molecular system reveals a hidden addon workspace behind
 the welcome state; MolSysViewer #240 owns that blocker. See
 [the original live receipt](evidence/live_viewer_addon_20261013_summary.json).
+The [separate installed current-source receipt](evidence/current_viewer_addon_20261013_summary.json)
+repeats the nine molecular-scene controls and the shape-only blocker with viewer
+`76c8cee1`, public MolSysMT 0.23.0 and Python 3.14.8. It preserves the generated
+viewer overlay and original wheels; it is not published-viewer browser proof.
+The operation warning and lock audit findings belong to MolSysViewer #239/#242.
 #58 remains partial; no dummy molecule or local generic host workaround is added.
 Local #59 resolves empty/absent/error panel feedback and explicit frontend
 teardown; its [fresh receipt](evidence/viewer_panel_feedback_20261013_final_summary.json)
 keeps that development-panel qualification separate from the provider blocker.
+Its final 14 browser controls and 23 native addon tests cover input-state
+distinctions, payload/action errors and explicit teardown; #59 is closed.
 Public browser, session persistence and hardware/Qt remain separate gates.
 
 The next steps are:
 
-1. Complete inspection of the applicable hosted matrix and installed/public
+1. Finish the browser contract in #58 after MolSysViewer #240 is resolved, and
+   repeat the changed consumer/provider controls with fresh producer identities.
+   Local packaging metadata work remains in #57.
+2. Complete inspection of the applicable hosted matrix and installed/public
    delivery gates under #9/#10/#23. A passing focused run or one matrix cell
    cannot stand for all Python versions/platforms or a public artifact.
-2. Extend the bounded prepared native workflow review to independently declared
+3. Extend the bounded prepared native workflow review to independently declared
    activity-based validation or remaining classical-route cases. Reuse existing
    method/recipe/evidence tools; define independent positive/negative controls
    and preserve original inputs, states, mappings and failures. The collection
    and the ERα continuation remain tracked in #20/#22. Prepared/analytical
    controls do not by themselves establish biological or activity-based success.
-3. Finish the remaining consumer migration in #41 when MolSysMT #375 supplies
+4. Finish the remaining consumer migration in #41 when MolSysMT #375 supplies
    a qualified public geometry contract. Its only retained molecular arithmetic
    is the bounded donor-H displacement/normalization in `get_features()`; do not
    recreate missing provider geometry in PHMT. Independent preparation (#219),

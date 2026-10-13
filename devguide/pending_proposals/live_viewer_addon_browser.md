@@ -151,3 +151,19 @@ critical finding. Reachability/exploitability was not assessed. Provider review
 belongs to [MolSysViewer #242](https://github.com/uibcdf/molsysviewer/issues/242);
 no local dependency fix or blanket scientific acceptance follows from the audit.
 Session persistence, hardware/Qt and public browser delivery remain unexecuted.
+
+## 2026-10-13 pause checkpoint
+
+Local #59 is closed in `eca174b`; its
+[archived report](../archive/viewer_panel_feedback.md) and
+[final receipt](../evidence/viewer_panel_feedback_20261013_final_summary.json)
+retain 14 real browser controls and 23 native addon tests. These distinguish
+empty, absent and unreadable input, preserve payload errors after Clear and
+remove the exact frontend listeners on teardown. That run used the development
+viewer `c046fca1`; it does not relabel or extend the installed-provider run above.
+The original #58/#59 run identities remain separate.
+
+#58 stays partial for the shape-only workspace contract owned by MolSysViewer
+#240. The next provider-dependent action is fresh receiving after that contract
+changes. Public delivery/helper isolation (#10/#23, MolSysSuite #117), local
+packaging metadata (#57), session persistence and hardware/Qt remain separate.
