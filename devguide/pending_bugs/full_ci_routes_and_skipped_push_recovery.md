@@ -186,3 +186,27 @@ passes its reporting/backlog selection with science skipped. It is not a full
 green matrix. Earlier [38440541291](https://github.com/uibcdf/pharmacophoremt/actions/runs/38440541291)
 at `f0d96ae` separately retains eight successful source cells. New source and
 installed-artifact evidence must remain bound to their own revisions and runs.
+
+### Complete implementation source matrix — 2026-10-20
+
+The authorized internal direct push at
+`636373d3c5c24a1eff6d2bec5f3eceb6ce018ba4` completes
+[39478128959](https://github.com/uibcdf/pharmacophoremt/actions/runs/39478128959),
+attempt 1, with **all eight scientific cells successful** on Linux/macOS and
+Python 3.11–3.14. Every required provider-context preflight and full `Run tests`
+step succeeds. Reporting governance, independent policy run 39478129327 and
+Conda governance run 39478129573 also succeed: eleven required executed jobs on
+the same source. GH Run Receptor 1.0.0 returns PASS with GitHub success.
+
+The [native-source receipt](../evidence/source_ci_receiving_20261020_summary.json)
+verifies actual job/run/attempt/SHA and required-step identity. The daily/probe
+backlog detector is inapplicable/skipped for this push; optional coverage-upload
+steps are not scientific tests. The previous timeout retains its failed result.
+This is the maintainer's direct-push source checkpoint, not accepted external PR
+evidence or a Conda installed/public matrix. #9 retains its independent remaining
+scope alongside #10/#23; no PR is introduced for the internal maintainer route.
+
+The final evidence/documentation-only handoff uses `[skip ci]` after local
+reporting/index and archive-envelope checks. It retains ordinary CI debt and
+daily/weekly/manual recovery under #9; it does not certify its own later SHA or
+authorize a release. The complete source result remains bound to `636373d`.

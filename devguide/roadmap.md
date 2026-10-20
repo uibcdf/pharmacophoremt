@@ -12,17 +12,32 @@ MolSysSuite #117 is delivered at immutable provider
 unshipped support contract and all-runtime-root guard, retaining the addon payload
 already shipped under #56. The scientific fixture implementations move to
 `phmt_test_support`; general molecular operations remain MolSysMT-owned.
-Development command wrappers remain available. The helper declaration, source
-suite and real isolated installed wheel are reviewed separately from any Conda
-release candidate and its mandatory eight native cells.
+Development command wrappers remain available. The complete selection now passes
+**921 tests** from a real isolated development wheel on Linux/Python 3.14.8 with
+public providers. All 179 runtime payload paths match, and the shared runner
+verifies then retires its staged support resources/imports. See the
+[full receiving receipt](evidence/installed_support_adoption_20261020_summary.json);
+the original 915-pass/six-failure attempt remains in its separate preparation
+record. This is independent of any Conda candidate and its eight native cells.
+
+Source implementation `636373d` now passes all eight Linux/macOS × Python
+3.11–3.14 cells, including installed-provider preflight and full tests. Reporting,
+policy and Conda governance also pass: eleven required executed jobs across the
+three workflows. See the [exact-source receipt](evidence/source_ci_receiving_20261020_summary.json).
+The daily-only backlog detector is inapplicable to this push and is not counted
+as executed recovery. These source gates do not qualify a Conda artifact.
 
 The next steps are:
 
-1. Complete source and isolated installed-wheel receiving for this adoption,
-   retaining exact artifact/provider/support identities and failures.
-2. Select a real release version and committed plan under #10, establish staging
-   access, build one original Conda archive and execute all eight installed cells
-   with both provenance checks. The illustrative 0.0.0 plan is not a candidate.
+1. Select a real release version and committed plan under #10. The illustrative
+   0.0.0 plan is not a candidate.
+   The requested 0.1.0 already names a historical upstream tag; the maintainer's
+   collision-free version decision is pending. Repository-level token inspection
+   does not establish available staging credentials.
+2. Establish staging access, build one original Conda archive and execute all
+   eight installed cells with both provenance checks, retaining the new candidate's
+   exact source, dependencies, file and digest. Earlier source/wheel evidence
+   does not replace those candidate-bound gates.
 3. After that qualification, review the publication decision and public receiving
    evidence under #23; do not infer it from a source or wheel-only result.
 4. Resume the independent scientific validation segments #20/#22 with declared

@@ -1,0 +1,130 @@
+{
+  "schema": "pharmacophoremt.source-ci-receiving@1",
+  "date": "2026-10-20",
+  "owner": "uibcdf/pharmacophoremt#9",
+  "source_sha": "636373d3c5c24a1eff6d2bec5f3eceb6ce018ba4",
+  "source_run_id": 39478128959,
+  "source_run_attempt": 1,
+  "source_conclusion": "success",
+  "scientific_cells": 8,
+  "executed_required_jobs": 11,
+  "policy_run_id": 39478129327,
+  "publication_governance_run_id": 39478129573,
+  "required_jobs": [
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Reporting governance",
+      "conclusion": "success",
+      "required_steps": [
+        "Check reporting records and generated indexes",
+        "Test CI recovery and contributor routes",
+        "Review declared dependency routes",
+        "Test distribution and dependency contracts"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on macos-15, Python 3.11",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on macos-15, Python 3.12",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on macos-15, Python 3.13",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/CI.yaml",
+      "name": "Test on macos-15, Python 3.14",
+      "conclusion": "success",
+      "required_steps": [
+        "Check dependency routes and installed Git context",
+        "Run tests"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/molsyssuite-policy.yml",
+      "name": "policy / conformance",
+      "conclusion": "success",
+      "required_steps": [
+        "Check repository conformance",
+        "Check Python lint and imports",
+        "Check Python formatting"
+      ]
+    },
+    {
+      "workflow": ".github/workflows/conda_publication_governance.yaml",
+      "name": "publication / check",
+      "conclusion": "success",
+      "required_steps": [
+        "Check publication workflow controls",
+        "Check declared noarch recipe and resources without building"
+      ]
+    }
+  ],
+  "inapplicable_control": {
+    "name": "Check skipped-commit backlog",
+    "conclusion": "skipped",
+    "reason": "Push event; daily/probe-only decision is inapplicable."
+  },
+  "scope": "Complete Linux/macOS Python 3.11\u20133.14 source matrix, reporting/policy/publication governance on the implementation commit. No Conda artifact or installed/public eight-cell qualification. The example plan is read only to identify the existing required gates; it selects no candidate.",
+  "full_evidence": {
+    "path": "source_ci_receiving_20261020.json.gz",
+    "compressed_sha256": "3dfba8103151e2c1d1c66b9bffdfd00163cb73b9efd6a157655cb3ae72729946",
+    "uncompressed_sha256": "cb898669091f3523dd8e6a3c128ee95f9c37b2918130acc3154a842ed98855f3",
+    "compressed_bytes": 9579,
+    "uncompressed_bytes": 146305
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "schema": "pharmacophoremt.installed-support-adoption@1",
+  "date": "2026-10-20",
+  "owner": "uibcdf/pharmacophoremt#10",
+  "source_base": "cea4bbaad9cc5d31c58a9174f1e2a0a52e241fff",
+  "receiving_platform": {
+    "python": "3.14.8 | packaged by conda-forge | (main, Oct 12 2026, 17:35:27) [GCC 15.3.0]",
+    "executable": "/tmp/phmt-installed-qualification-1wwqno5j/public-env/bin/python",
+    "prefix": "/tmp/phmt-installed-qualification-1wwqno5j/public-env",
+    "platform": "linux",
+    "machine": "x86_64"
+  },
+  "source_state": "Recorded uncommitted helper/test/SDK overlay; development wheel only",
+  "sdk_sha": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+  "wheel": {
+    "wheel": "pharmacophoremt-0.3.0+158.gcea4bba.dirty-py3-none-any.whl",
+    "sha256": "7d7d915988b8ef95881ffa43a142dac39a13c15d63c3ec5e5387731bd30b5a56",
+    "required_payload_paths": 179
+  },
+  "installed_tests": {
+    "headline": "PASS exit=0 | 921 passed | 1535.47s | 85 warnings",
+    "exit_code": 0,
+    "reported_passed": 921,
+    "sdk_executed_call_reports": 938
+  },
+  "support": {
+    "state": "verified-support",
+    "checks": 7,
+    "resources_retired": true,
+    "imports_retired": true
+  },
+  "scope": "Actual Linux/Python 3.14 development wheel with public dependencies and real shared serial runner; no Conda candidate, eight-cell matrix, release or public PHMT delivery.",
+  "exploratory_shared_source": {
+    "exit_code": 1,
+    "passed": 651,
+    "failed": 124,
+    "errors": 146,
+    "provider_source": "48aba006fbe17336dfb5f564823711c2923f7e0b",
+    "limitation": "Current editable MolSysMT relocated the consumed hbond API. A concurrent build regenerated PHMT's development version during this exploratory invocation. This is failed diagnostic evidence, not unchanged-source or pinned-provider qualification."
+  },
+  "notes": [
+    "The later code checkpoint 636373d contains the adopted implementation. Its 179 current source runtime files also match the wheel bytes; repository documentation changed during the receiving run. SDK source binding remains explicitly unknown.",
+    "All 179 required installed runtime files match the real wheel bytes; support is absent from the wheel and unresolvable in a fresh receiving interpreter.",
+    "The immutable installed_support_preparation_20261020_summary.json separately retains the first 915-pass/6-failure complete run and the corrected six-case proof.",
+    "The exact support declaration/bytes and source overlay are retained in installed-source-overlay.json; the SDK receipt verifies staged code and retires owned resources/imports.",
+    "Initial public environment solve did not see Ackredit 0.12.0; fresh task-owned cache with public JSON repodata succeeded without changing versions. Index and exact archive were independently verified.",
+    "Conda declared-only environment creation was refused by the shared operator before mutation; qualified Mamba 2.9.0 then created the owned build environment.",
+    "Repository-level secret listing does not include ANACONDA_UIBCDF_TOKEN; inherited organization availability and credential validity remain unconfirmed.",
+    "Task-owned environments, caches and artifacts remain under /tmp/phmt-installed-qualification-1wwqno5j for candidate follow-up; no unrelated resources were removed."
+  ],
+  "full_evidence": {
+    "path": "installed_support_adoption_20261020.json.gz",
+    "compressed_sha256": "01e42e6d73e5333028f0a8ff169915aaa95cd97296cb5b241d54ad5584c1d6ba",
+    "uncompressed_sha256": "ceb95001297d09ade2020bc167f327b1ac0ec99cfd80dfe8b27cda592ee7d2de",
+    "compressed_bytes": 197413,
+    "uncompressed_bytes": 1062819
+  }
+}

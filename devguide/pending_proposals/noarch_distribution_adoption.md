@@ -391,3 +391,33 @@ no `ANACONDA_UIBCDF_TOKEN`; inherited availability and validity remain unknown.
 The qualified shared Mamba 2.9.0 operation has prepared an owned build environment
 with declared-only channels. No real plan, Conda candidate, staged upload, native
 installed matrix, release or public delivery is claimed.
+
+### Complete corrected wheel repeat — 2026-10-20
+
+The complete unchanged selection now passes **921 tests in 1535.47 s** on
+Linux/Python 3.14.8 from the original noneditable development wheel, with public
+MolSysMT 0.23.0, MolSysViewer 0.24.0 and Ackredit 0.12.0. All 51 declared support
+files pass seven shared checks; temporary resources and imports are retired.
+The SDK counts 938 executed call reports including unittest subtests, separately
+from the 921 reported passing test items. Existing warnings remain recorded.
+
+The [final receiving receipt](../evidence/installed_support_adoption_20261020_summary.json)
+retains exact wheel SHA-256, public Conda records/import resolution, the staged
+declaration and source overlay, native runner outputs and cleanup proof. The
+previous preparation archive is immutable. The later implementation checkpoint
+`636373d` has the same 179 runtime file bytes as the wheel; documentation changed
+during receiving, and the SDK source binding remains explicitly unknown. This
+is bounded development-wheel proof, not an exact-commit Conda candidate gate.
+
+#117 no longer blocks the consumer's helper mechanism. #10 remains partial for
+the real collision-free version/plan, confirmed staging access, one original
+Conda archive, its eight native installed cells and same-byte public receiving.
+The editable current-MolSysMT namespace migration remains separate under #41.
+
+The later source matrix at implementation `636373d` also completes all eight
+Linux/macOS × Python 3.11–3.14 scientific cells, required provider preflights,
+reporting, policy and Conda governance. The [native receipt](../evidence/source_ci_receiving_20261020_summary.json)
+checks eleven executed required jobs on that exact source. It establishes the
+consumer implementation checkpoint, not candidate authorization: the example
+plan is used only to identify existing gate names. Real version/plan/access,
+original Conda bytes and the installed/public receiving scope remain outstanding.

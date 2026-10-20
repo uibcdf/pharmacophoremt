@@ -60,6 +60,17 @@ License metadata #57 is resolved with setuptools >=77.0.3 and an explicit SPDX
 expression/license file; its isolated build evidence is
 [archived separately](../../devguide/archive/packaging_license_metadata.md).
 
+The real isolated development wheel now passes the complete **921-test** selection
+on Linux/Python 3.14.8 with public providers, using that exact shared runner.
+Seven support checks pass and both temporary resources and namespace imports are
+retired. The 179 required runtime paths match the wheel; support is not shipped.
+The [final receipt](../../devguide/evidence/installed_support_adoption_20261020_summary.json)
+retains exact artifact/provider/support identities. The separate immutable
+preparation record preserves the initial six child-import failures and corrected
+focused proof. These wheel observations do not qualify a Conda candidate, other
+native cells or public PHMT delivery. The real version/plan and staging access
+remain pending; upstream already has the requested historical 0.1.0 tag.
+
 ## Dependency routes
 
 ```bash

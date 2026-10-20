@@ -182,3 +182,18 @@ public PHMT delivery. The Python 3.11–3.14 metadata, recipes and scientific so
 selection remain unchanged; real candidate identity, staging access and the full
 installed platform scope are still required under #10/#23. Packaging license
 metadata #57 is resolved separately with exercised isolated backend builds.
+
+The subsequent complete corrected repeat passes **921 tests** from the same
+isolated development wheel on Linux/Python 3.14.8. The shared runner verifies all
+51 support inputs, checks runtime provenance and retires support resources and
+imports. See the [final receiving receipt](../evidence/installed_support_adoption_20261020_summary.json).
+The initial failed checkpoint remains historical. This advances the measured
+single-cell wheel scope; it does not substitute for a real Conda candidate, all
+eight installed cells or public receiving. #23 therefore remains partial.
+
+The separate implementation [source checkpoint](../evidence/source_ci_receiving_20261020_summary.json)
+at `636373d` passes all eight Linux/macOS × Python 3.11–3.14 cells, with actual
+provider preflight/full tests and three successful governance jobs. This is fresh
+complete source evidence; the single-cell development wheel and future Conda
+candidate retain their separate identities and scopes. No new public PHMT
+artifact or all-minor installed qualification is inferred.

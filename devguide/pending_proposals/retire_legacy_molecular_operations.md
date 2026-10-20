@@ -276,3 +276,9 @@ Keep the current scientific CI source pin and the reviewed public-provider route
 separate. Receive the new namespace/directions through a bounded #41 contract and
 test review, using provider-owned geometry; do not restore molecular algorithms
 locally or infer a successful migration from mere source availability.
+
+The separate complete isolated wheel run passes all **921 tests** with public
+MolSysMT 0.23.0; its [receiving receipt](../evidence/installed_support_adoption_20261020_summary.json)
+preserves the failed shared-source diagnostic alongside that distinct successful
+public-provider context. This does not qualify the newer sibling namespace or
+directional model. No molecular runtime code changed in this support adoption.
