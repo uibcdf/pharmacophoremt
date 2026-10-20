@@ -1,10 +1,12 @@
 # Reviewed Conda environment operations
 
 The thin owner tools call MolSysSuite's optional environment operator at immutable
-commit `8f00e6d9de943b6e4710ea62936e2ebea00fad24` (406 central tests and hosted
-qualification). Set `PHARMACOPHOREMT_SUITE_ROOT` to that clean SDK checkout or put
+commit `1c248b67d1daea256ed7c7f6172c6addb3f0b08f`. The 2026-10-20 adoption also
+receives installed-test support; the original environment review used
+`8f00e6d9de943b6e4710ea62936e2ebea00fad24` (406 central tests and hosted
+qualification). Set `PHARMACOPHOREMT_SUITE_ROOT` to the current clean SDK checkout or put
 it at `.molsyssuite`; the loader verifies the commit and administrative import
-origin. This is independent of the existing publication SDK pin `2d32048…`.
+origin. Current publication wrappers use the same reviewed provider identity.
 
 ## Generate or check ordinary documents
 
@@ -56,7 +58,7 @@ exit or administrative guard alone does not prove transitive closure, native
 backends or scientific tests. Routine workspace development remains
 `molsyssuite@uibcdf_3.14`; these optional owner environments do not replace it.
 
-Contract: [shared environment-tool guide](https://github.com/uibcdf/molsyssuite/blob/8f00e6d9de943b6e4710ea62936e2ebea00fad24/devguide/conda_environment_tools.md).
+Contract: [shared environment-tool guide](https://github.com/uibcdf/molsyssuite/blob/1c248b67d1daea256ed7c7f6172c6addb3f0b08f/devguide/conda_environment_tools.md).
 Tracking: uibcdf/pharmacophoremt#10 and uibcdf/molsyssuite#108; actual scientific
 and public receiving qualification remain owner work.
 

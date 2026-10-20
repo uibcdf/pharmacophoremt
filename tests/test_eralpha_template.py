@@ -9,17 +9,21 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.prepare_eralpha_ligand import (
+from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt.modeler import get_features
+from phmt_test_support.prepare_eralpha_ligand import (
     TEMPLATES,
     credit_inputs,
     load_manifest,
     prepare_case,
 )
-from devtools.prepared_ccd_ligands import state_payload
-from devtools.validate_eralpha_template import placed_controls, portable, valid_controls
-from devtools.validate_prepared_ccd_ligands import scientific_projection
-from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.modeler import get_features
+from phmt_test_support.prepared_ccd_ligands import state_payload
+from phmt_test_support.validate_eralpha_template import (
+    placed_controls,
+    portable,
+    valid_controls,
+)
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 
 @pytest.fixture(scope="module")
@@ -124,7 +128,7 @@ def test_bad_correspondence_fails_without_modifying_source(prepared, malformed):
 
 
 def test_artifact_checksum_gate_precedes_molecular_work(monkeypatch, tmp_path):
-    import devtools.prepare_eralpha_ligand as client
+    import phmt_test_support.prepare_eralpha_ligand as client
 
     for name in ("manifest.json", "acquisition.json", "est_template.h5msm"):
         (tmp_path / name).write_bytes((TEMPLATES / name).read_bytes())

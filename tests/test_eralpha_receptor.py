@@ -8,12 +8,12 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.audit_eralpha_receptor import audit
-from devtools.prepare_eralpha_ligand import SOURCES, credit_inputs
-from devtools.prepared_ccd_ligands import state_payload
-from devtools.validate_eralpha_template import portable
-from devtools.validate_prepared_ccd_ligands import scientific_projection
 from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.audit_eralpha_receptor import audit
+from phmt_test_support.prepare_eralpha_ligand import SOURCES, credit_inputs
+from phmt_test_support.prepared_ccd_ligands import state_payload
+from phmt_test_support.validate_eralpha_template import portable
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 
 @pytest.fixture(scope="module")

@@ -282,17 +282,17 @@ channel_reason = "Preserve actual AmberTools bootstrap; no required scientific d
 
 [[workflows]]
 path = ".github/workflows/CI.yaml"
-sha256 = "d7f1ec7d8a086de4e100525857463febc65a8a490802922317416264cc028724"
+sha256 = "21edca0dc05f7a237601d600f69f38f26301b0a88e2ee86a09fbecdc066672bc"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
 
 [[workflows]]
 path = ".github/workflows/build_and_upload_conda_packages.yaml"
-sha256 = "a7ae60a309898f9da75e01255fc69356d5a9ebf9e9091c9af4ef8ef5c804bd61"
+sha256 = "18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
 
 [[workflows]]
 path = ".github/workflows/conda_publication_governance.yaml"
-sha256 = "eb54f756f9aa208adbc210b3839bf23be640457ff975f84415d12eb6c6b9cf4d"
+sha256 = "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
 
 [[workflows]]
@@ -302,7 +302,7 @@ reason = "Reviewed source, policy or exact-candidate publication route; actual c
 
 [[workflows]]
 path = ".github/workflows/promote_conda_package.yaml"
-sha256 = "142533c037019d1aa90a93cef9590dec1c13453ada5802880a345dc2672cf665"
+sha256 = "2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
 
 [[workflows]]
@@ -312,5 +312,5 @@ reason = "Existing Python 3.12 documentation source-free route; effective strict
 
 [[workflows]]
 path = ".github/workflows/test_installed_conda_package.yaml"
-sha256 = "83bcd0126b7150334e31cc2407a39b4e9963834f7a027a341be268db7f2dcf28"
+sha256 = "d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"

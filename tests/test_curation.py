@@ -11,8 +11,6 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.interaction_collection_cases import build_case, observe
-from devtools.validate_aromatic_interactions import _fingerprint
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.interaction_site import InteractionSite
@@ -35,6 +33,8 @@ from pharmacophoremt.modeler import (
 )
 from pharmacophoremt.pharmacophore import Pharmacophore
 from pharmacophoremt.screening import PoseEvaluator
+from phmt_test_support.interaction_collection_cases import build_case, observe
+from phmt_test_support.validate_aromatic_interactions import _fingerprint
 
 
 @pytest.fixture(scope="module")

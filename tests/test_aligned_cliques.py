@@ -4,6 +4,7 @@ import itertools
 import json
 import math
 import warnings
+from pathlib import Path
 
 import ackredit as ack
 import molsysmt as msm
@@ -499,23 +500,7 @@ def test_optional_attribution_preserves_hypotheses_with_warnings_as_errors(
 
 
 def test_provider_absence_and_saved_model_are_independent_in_fresh_process():
-    run_reader("""
-import sys, importlib.abc
-class NoAckredit(importlib.abc.MetaPathFinder):
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.split('.')[0] == 'ackredit':
-            raise ModuleNotFoundError('absent provider', name='ackredit')
-sys.meta_path.insert(0, NoAckredit())
-import pharmacophoremt as phmt
-from tests.test_aligned_consensus import inventory
-assert 'ackredit' not in sys.modules
-with phmt.attribution():
-    result = phmt.modeler.get_aligned_consensus_hypotheses([inventory([[0,0,0]]), inventory([[0,0,0]])], ligand_ids=['a','b'])
-assert len(result['hypotheses']) == 1
-assert result['attribution']['status'] == 'unavailable'
-assert '10.1145/362342.362367' in str(result['attribution']['host_references'])
-assert 'ackredit' not in sys.modules
-""")
+    run_reader(Path(inventory.__code__.co_filename), "aligned")
 
 
 def test_empty_molecular_workflow_emits_no_usable_model():

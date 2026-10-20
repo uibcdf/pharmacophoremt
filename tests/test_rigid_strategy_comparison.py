@@ -3,8 +3,6 @@
 import numpy as np
 import pytest
 
-from devtools.benchmark_rigid_consensus import _matches_expectation
-from devtools.rigid_consensus_cases import build_case, load_cases
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import CliqueLimitError
 from pharmacophoremt.modeler import (
@@ -19,6 +17,8 @@ from pharmacophoremt.screening import (
     get_rigid_feature_placements,
 )
 from pharmacophoremt.validation import summarize_rigid_consensus
+from phmt_test_support.benchmark_rigid_consensus import _matches_expectation
+from phmt_test_support.rigid_consensus_cases import build_case, load_cases
 
 
 def test_minimum_rmsd_loses_tolerance_valid_coverage_to_triplet_placements():

@@ -3,6 +3,7 @@
 import json
 import warnings
 from copy import deepcopy
+from pathlib import Path
 
 import ackredit as ack
 import molsysmt as msm
@@ -10,14 +11,6 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.aromatic_interaction_cases import (
-    CATION_PROFILES,
-    PI_PROFILES,
-    REFERENCE_DOIS,
-    build_case,
-    observe,
-    ring_coordinates,
-)
 from pharmacophoremt import _ackredit
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.molsysmt import detached
@@ -26,6 +19,14 @@ from pharmacophoremt._private.smonitor.warnings import AckreditTrackingWarning
 from pharmacophoremt.io import load_json, load_yaml, to_json, to_yaml
 from pharmacophoremt.modeler import from_interactions
 from pharmacophoremt.screening import PoseEvaluator
+from phmt_test_support.aromatic_interaction_cases import (
+    CATION_PROFILES,
+    PI_PROFILES,
+    REFERENCE_DOIS,
+    build_case,
+    observe,
+    ring_coordinates,
+)
 from tests.test_attribution import run_reader
 from tests.test_ionic_interactions import replace_records
 from tests.test_pose_evaluation import system
@@ -473,22 +474,4 @@ with ack.session('reader'):
 
 
 def test_genuine_absence_does_not_prevent_aromatic_science():
-    run_reader("""
-import sys, importlib.abc
-class NoAck(importlib.abc.MetaPathFinder):
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.split('.')[0] == 'ackredit':
-            raise ModuleNotFoundError('controlled absence', name=fullname)
-sys.meta_path.insert(0, NoAck())
-import pharmacophoremt as phmt
-from pharmacophoremt.screening import PoseEvaluator
-assert 'ackredit' not in sys.modules
-from devtools.aromatic_interaction_cases import build_case, observe
-source, ligand, partner = build_case()
-observed = observe(source, ligand, partner, 'plane_angle_intersection', 'smarts_5_6')
-with phmt.attribution():
-    query = phmt.modeler.from_interactions(source, observed, ligand)
-assert query.metadata['attribution']['status'] == 'unavailable'
-assert PoseEvaluator(query).evaluate(source, selection=ligand)['status'] == 'matched'
-assert 'ackredit' not in sys.modules
-""")
+    run_reader(Path(build_case.__code__.co_filename), "aromatic")

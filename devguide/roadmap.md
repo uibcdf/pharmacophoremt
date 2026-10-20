@@ -1,6 +1,38 @@
 # Strategic Roadmap
 
-## Current priorities — 2026-10-13
+## Current priorities — 2026-10-20
+
+The maintainer has deferred new addon work. The current segment is distribution
+and installed qualification under #9/#10/#23. Packaging metadata #57 is resolved:
+both the minimum compatible setuptools 77.0.3 and current 84.2.0 build license-bearing
+sdists and wheels; see [the archived result](archive/packaging_license_metadata.md).
+
+MolSysSuite #117 is delivered at immutable provider
+`1c248b67d1daea256ed7c7f6172c6addb3f0b08f`. The component now adopts its explicit
+unshipped support contract and all-runtime-root guard, retaining the addon payload
+already shipped under #56. The scientific fixture implementations move to
+`phmt_test_support`; general molecular operations remain MolSysMT-owned.
+Development command wrappers remain available. The helper declaration, source
+suite and real isolated installed wheel are reviewed separately from any Conda
+release candidate and its mandatory eight native cells.
+
+The next steps are:
+
+1. Complete source and isolated installed-wheel receiving for this adoption,
+   retaining exact artifact/provider/support identities and failures.
+2. Select a real release version and committed plan under #10, establish staging
+   access, build one original Conda archive and execute all eight installed cells
+   with both provenance checks. The illustrative 0.0.0 plan is not a candidate.
+3. After that qualification, review the publication decision and public receiving
+   evidence under #23; do not infer it from a source or wheel-only result.
+4. Resume the independent scientific validation segments #20/#22 with declared
+   controls and existing evidence tools. MolSysMT #375 remains a provider-owned
+   follow-up under #41; environmental hydrogen refinement #323 stays upstream.
+
+The 2026-10-13 priorities below retain their original checkpoint. Their addon-first
+ordering and pending #117 status are superseded by this dated update.
+
+## Prior checkpoint — 2026-10-13
 
 The native class/default routes now require prepared input and explicit scientific
 choices: ligand consensus (#18), observed-complex construction (#42), cached

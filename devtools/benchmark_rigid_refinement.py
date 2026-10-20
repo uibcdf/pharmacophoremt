@@ -20,13 +20,13 @@ from datetime import datetime, timezone
 from pathlib import Path
 from time import perf_counter
 
-from devtools.benchmark_rigid_consensus import (
+from phmt_test_support.benchmark_rigid_consensus import (
     THREAD_VARS,
     _digest,
     _rss,
     _source_record,
 )
-from devtools.rigid_refinement_workloads import (
+from phmt_test_support.rigid_refinement_workloads import (
     INPUT_FILES,
     ROOT,
     build_workload,

@@ -10,7 +10,10 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.prepared_ccd_ligands import (
+from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt.modeler import from_rigid_ligands
+from pharmacophoremt.validation import summarize_rigid_consensus
+from phmt_test_support.prepared_ccd_ligands import (
     MANIFEST_PATH,
     credit_source,
     load_cases,
@@ -18,15 +21,12 @@ from devtools.prepared_ccd_ligands import (
     prepare_case,
     state_payload,
 )
-from devtools.validate_prepared_ccd_ligands import (
+from phmt_test_support.validate_prepared_ccd_ligands import (
     cross_consensus,
     prepared_screening,
     scientific_projection,
     self_recovery,
 )
-from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.modeler import from_rigid_ligands
-from pharmacophoremt.validation import summarize_rigid_consensus
 
 
 @pytest.fixture(scope="module", params=load_cases(), ids=lambda case: case["case_id"])
@@ -180,7 +180,7 @@ def test_declared_cross_ligand_hypotheses(ligand_pair, workload, policy):
 
 
 def test_source_identity_gate_rejects_changed_checksum(monkeypatch):
-    import devtools.prepared_ccd_ligands as module
+    import phmt_test_support.prepared_ccd_ligands as module
 
     cases = deepcopy(load_cases())
     cases[0]["sha256"] = "0" * 64

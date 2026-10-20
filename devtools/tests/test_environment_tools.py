@@ -185,7 +185,7 @@ class TestEnvironmentTools(unittest.TestCase):
             self.assertRaisesRegex(ValueError, "immutable"),
         ):
             load_sdk("conda_environment_tools")
-        self.assertEqual(SDK_SHA, "8f00e6d9de943b6e4710ea62936e2ebea00fad24")
+        self.assertEqual(SDK_SHA, "1c248b67d1daea256ed7c7f6172c6addb3f0b08f")
 
     def test_cli_check_runs_from_outside_owner_without_importing_science(self):
         result = subprocess.run(

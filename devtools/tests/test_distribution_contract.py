@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import ast
 import hashlib
+import importlib
 import io
 import json
 import shutil
@@ -13,6 +14,7 @@ import tempfile
 import tomllib
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 import yaml
 from packaging.requirements import Requirement
@@ -52,6 +54,8 @@ class TestDistributionContract(unittest.TestCase):
             "devtools/dependency_routes.toml",
             "pharmacophoremt",
             "molsysviewer_pharmacophoremt",
+            "phmt_test_support",
+            "tests/data",
         ):
             source, target = ROOT / name, self.root / name
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -60,6 +64,14 @@ class TestDistributionContract(unittest.TestCase):
                     source, target, ignore=shutil.ignore_patterns("__pycache__")
                 )
             else:
+                shutil.copy2(source, target)
+        declaration = tomllib.loads((ROOT / RESOURCES).read_text())[
+            "installed_tests"
+        ].get("support", {})
+        for record in declaration.get("files", []):
+            source, target = ROOT / record["source"], self.root / record["source"]
+            if not target.exists():
+                target.parent.mkdir(parents=True, exist_ok=True)
                 shutil.copy2(source, target)
         self.plan, self.inventory = self.noarch.inspect_recipe(
             self.root, PLAN, RESOURCES
@@ -189,6 +201,7 @@ class TestDistributionContract(unittest.TestCase):
         temporary = self.root / ".molsyssuite"
         (temporary / "devtools/scripts").mkdir(parents=True)
         (self.root / "tests/extra").mkdir(parents=True)
+        (self.root / "phmt_test_support/extra").mkdir(parents=True)
         packages = find_namespace_packages(
             where=str(self.root),
             include=project["tool"]["setuptools"]["packages"]["find"]["include"],
@@ -209,6 +222,38 @@ class TestDistributionContract(unittest.TestCase):
             project["project"]["entry-points"]["molsysviewer.addons"],
             {"pharmacophoremt": "molsysviewer_pharmacophoremt"},
         )
+
+    def test_installed_support_stages_actual_fixture_bytes_without_source_imports(self):
+        from devtools.scripts.installed_test_support import staged_support
+
+        declaration = self.inventory["installed_tests"]["support"]
+        isolated_path = [entry for entry in sys.path if Path(entry).resolve() != ROOT]
+        with patch.object(sys, "path", isolated_path):
+            original_path = list(sys.path)
+            with staged_support(
+                self.root,
+                declaration,
+                ("pharmacophoremt", "molsysviewer_pharmacophoremt"),
+            ) as stage:
+                module = importlib.import_module(
+                    "phmt_test_support.rigid_consensus_cases"
+                )
+                expected = json.loads(
+                    (ROOT / "tests/data/rigid_consensus_cases.json").read_text()
+                )["cases"]
+                self.assertEqual(module.load_cases(), expected)
+                self.assertTrue(Path(module.__file__).is_relative_to(stage.root))
+                self.assertEqual(sys.path, original_path)
+                stage.check()
+                temporary = stage.root
+        self.assertFalse(temporary.exists())
+        self.assertNotIn("phmt_test_support", sys.modules)
+
+    def test_unshipped_support_cannot_enter_runtime_payload(self):
+        entries = self.payload()
+        entries["site-packages/phmt_test_support/rigid_consensus_cases.py"] = b""
+        with self.assertRaisesRegex(ValueError, "unshipped test support"):
+            self.validate(entries)
 
     def test_installed_test_inputs_cover_imported_optional_integrations(self):
         imported = set()
@@ -355,14 +400,13 @@ class TestDistributionContract(unittest.TestCase):
             descriptor["python_versions"], ["3.11", "3.12", "3.13", "3.14"]
         )
         self.assertEqual(descriptor["platforms"], ["linux-64", "osx-arm64"])
-        # The accepted preflight SDK contains the unchanged workflow used by the
-        # frozen publication caller. Bind those bytes without fetching history
-        # from the shallow SDK checkout used in administrative CI.
+        # Bind the reviewed support-capable provider workflow bytes directly;
+        # administrative CI uses an immutable shallow SDK checkout.
         wrapper = yaml.safe_load((ROOT / descriptor["workflow"]).read_text())
         self.assertEqual(
             wrapper["jobs"]["installed"]["uses"],
             "uibcdf/molsyssuite/.github/workflows/test-installed-noarch-conda.yaml"
-            "@2d32048457c6d37093ae509f5626d00a5cda121b",
+            "@1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
         )
         sdk = Path(self.noarch.__file__).resolve().parents[2]
         workflow_bytes = (
@@ -370,7 +414,7 @@ class TestDistributionContract(unittest.TestCase):
         ).read_bytes()
         self.assertEqual(
             hashlib.sha256(workflow_bytes).hexdigest(),
-            "7f08432e10a437d96c1c16bc40ae911dcaab9c817457c1e0a3bcb148768a2bb2",
+            "1805e0952e234556f113ec56e8eb318d7a09b6fc2cdbfe122fa07cfc775dcc82",
         )
         workflow = yaml.safe_load(workflow_bytes)
         # Synthetic administrative evidence uses actual provider step names;

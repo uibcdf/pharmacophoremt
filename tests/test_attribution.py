@@ -4,6 +4,7 @@ import json
 import subprocess
 import sys
 import warnings
+from pathlib import Path
 
 import ackredit as ack
 import pytest
@@ -31,7 +32,12 @@ def prepared():
 
 def run_reader(code, *arguments):
     result = subprocess.run(
-        [sys.executable, "-c", code, *map(str, arguments)],
+        [
+            sys.executable,
+            "-P",
+            *([str(code)] if isinstance(code, Path) else ["-c", code]),
+            *map(str, arguments),
+        ],
         capture_output=True,
         text=True,
         timeout=90,
@@ -290,24 +296,7 @@ def test_cross_provider_failure_preserves_the_original_scientific_error(
 
 
 def test_missing_provider_retains_offline_provenance():
-    run_reader("""
-import sys,importlib.abc
-class NoAckredit(importlib.abc.MetaPathFinder):
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.split('.')[0] == 'ackredit':
-            raise ModuleNotFoundError('absent provider', name='ackredit')
-sys.meta_path.insert(0, NoAckredit())
-import pharmacophoremt as phmt
-from tests.test_rigid_search import reference
-source, query = reference()
-with phmt.attribution():
-    result = phmt.screening.PoseEvaluator(query).evaluate(source)
-assert result['status'] == 'matched'
-payload = result['attribution']
-assert payload['status'] == 'unavailable' and payload['references'] is None
-assert payload['host_references'] and not payload['errors']
-assert 'ackredit' not in sys.modules
-""")
+    run_reader(Path(system.__code__.co_filename), "attribution")
 
 
 def test_activation_and_saved_report_validation():

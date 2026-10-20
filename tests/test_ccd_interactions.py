@@ -9,9 +9,6 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.ccd_interaction_cases import build_case, observe_case
-from devtools.prepared_ccd_ligands import credit_source
-from devtools.validate_aromatic_interactions import _fingerprint
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt.io import load_json, to_json
 from pharmacophoremt.modeler import (
@@ -22,6 +19,9 @@ from pharmacophoremt.modeler import (
 )
 from pharmacophoremt.pharmacophore import Pharmacophore
 from pharmacophoremt.screening import PoseEvaluator
+from phmt_test_support.ccd_interaction_cases import build_case, observe_case
+from phmt_test_support.prepared_ccd_ligands import credit_source
+from phmt_test_support.validate_aromatic_interactions import _fingerprint
 
 MANIFEST = Path(__file__).parent / "data/ccd_interaction_cases.json"
 CASES = json.loads(MANIFEST.read_text())["cases"]

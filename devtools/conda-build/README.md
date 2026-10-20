@@ -4,9 +4,10 @@ Owning review: uibcdf/pharmacophoremt#10; coordination: uibcdf/molsyssuite#45.
 This is a prepared noarch publication route with partial adoption and unconfirmed
 publication access. It does not select a release.
 
-The four publication wrappers pin qualified SDK
-`2d32048457c6d37093ae509f5626d00a5cda121b`; dependency/environment preflight
-separately pins `8f00e6d9de943b6e4710ea62936e2ebea00fad24`. The existing
+The four publication wrappers and dependency/environment preflight pin the
+reviewed support-capable SDK `1c248b67d1daea256ed7c7f6172c6addb3f0b08f`.
+The previous separately accepted pins remain identified in dated records below.
+The existing
 `ANACONDA_UIBCDF_TOKEN` mapping is retained; its availability/validity remains
 unconfirmed. Follow the [shared noarch workflow guide](https://github.com/uibcdf/molsyssuite/blob/main/devguide/noarch_conda_workflow.md).
 
@@ -18,14 +19,15 @@ executed jobs: eight full supported source cells with installed-context prefligh
 independent governance, policy/lint/format and Conda governance. A passing recovery
 probe with omitted science cannot authorize publication.
 
-The inventory includes 171 committed package files plus the generated version
-module, covering private diagnostics, current modules and committed runtime data.
+The inventory includes 179 required payload paths, including the generated
+version module and seven addon paths, covering private diagnostics, current
+modules and committed runtime data.
 Register new package modules/resources in `resources.toml`'s `required_paths`.
 The existing complete-tree guard in `devtools/tests/test_distribution_contract.py`
 checks this inventory; run the administrative tests with the accepted immutable
 SDK before publishing a new module.
-Package discovery includes only `pharmacophoremt*`, excluding checked-out tooling
-and test namespaces. Recipe/metadata parity and synthetic archive guards inspect
+Package discovery includes `pharmacophoremt*` and `molsysviewer_pharmacophoremt*`,
+excluding checked-out tooling and `phmt_test_support`. Recipe/metadata parity and synthetic archive guards inspect
 missing resources and stale version identity; they do not prove built/installed
 scientific behavior or optional native backend compatibility.
 
@@ -35,8 +37,28 @@ installation, installed-file validation, complete local tests and the post-test
 provenance recheck. The manual installed wrapper never runs on ordinary pushes.
 Missing/skipped/failed evidence blocks promotion. An optional administrative
 `qualification_sha` is separate from the original `candidate_sha`, file and digest.
-Promote those same bytes without rebuilding or replacing the archive. No actual
-build, installed scientific dispatch, promotion or public delivery occurred here.
+Promote those same bytes without rebuilding or replacing the archive. No release
+plan, staged Conda candidate, installed Conda matrix or public PHMT delivery has
+been selected by the development wheel work.
+
+## Installed support adoption — 2026-10-20
+
+MolSysSuite #117 is delivered. Its explicit @1 support contract now owns staging,
+hash/origin validation and cleanup. The 28 scientific helper implementations live
+in the unshipped `phmt_test_support` namespace; compatibility development commands
+remain available. The declaration lists each helper and required fixture/cache
+file with an exact digest. Saved-model child readers use an explicit standalone
+public-I/O script with safe-path mode. See [support ownership](../../phmt_test_support/README.md).
+
+The accepted provider also checks all declared runtime roots, including the addon
+already distributed under #56. No new addon feature or browser qualification is
+part of this adoption. Source pins, scientific commands, eight supported cells
+and four mandatory installed phases remain unchanged. Local distribution guards
+exercise actual staging and reject support accidentally shipped as runtime.
+
+License metadata #57 is resolved with setuptools >=77.0.3 and an explicit SPDX
+expression/license file; its isolated build evidence is
+[archived separately](../../devguide/archive/packaging_license_metadata.md).
 
 ## Dependency routes
 

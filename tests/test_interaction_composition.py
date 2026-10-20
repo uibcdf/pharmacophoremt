@@ -3,6 +3,7 @@
 import json
 import warnings
 from copy import deepcopy
+from pathlib import Path
 
 import ackredit as ack
 import molsysmt as msm
@@ -10,7 +11,6 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.interaction_collection_cases import build_case, observe
 from pharmacophoremt import _ackredit
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
@@ -25,6 +25,7 @@ from pharmacophoremt.modeler import (
 )
 from pharmacophoremt.pharmacophore import Pharmacophore
 from pharmacophoremt.screening import PoseEvaluator
+from phmt_test_support.interaction_collection_cases import build_case, observe
 from tests.test_attribution import run_reader
 from tests.test_ionic_interactions import replace_records
 
@@ -405,28 +406,7 @@ def test_optional_tracking_failure_preserves_completed_composition(case, monkeyp
 
 
 def test_genuine_ackredit_absence_and_lazy_import_support_live_collection():
-    run_reader(
-        """
-import sys, importlib.abc
-class NoAck(importlib.abc.MetaPathFinder):
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.split('.')[0] == 'ackredit':
-            raise ModuleNotFoundError('controlled absence', name=fullname)
-sys.meta_path.insert(0, NoAck())
-from devtools.interaction_collection_cases import build_case, observe
-import pharmacophoremt as phmt
-from pharmacophoremt.modeler import from_interaction_collection
-from pharmacophoremt.screening import PoseEvaluator
-assert 'ackredit' not in sys.modules
-source, ligand, partner = build_case()
-analyses = observe(source, ligand, partner)
-with phmt.attribution():
-    result = from_interaction_collection(source, analyses, ligand)
-assert result.n_interaction_sites == 9
-assert PoseEvaluator(result).evaluate(source, selection=ligand)['status'] == 'matched'
-assert result.metadata['attribution']['status'] == 'unavailable'
-""",
-    )
+    run_reader(Path(build_case.__code__.co_filename), "collection")
 
 
 def test_high_level_dispatcher_consumes_the_same_collection(case):

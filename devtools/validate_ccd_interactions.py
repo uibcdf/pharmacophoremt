@@ -14,11 +14,6 @@ import numpy as np
 import pyunitwizard
 
 import pharmacophoremt as phmt
-from devtools.benchmark_rigid_consensus import _source_record
-from devtools.ccd_interaction_cases import build_case, observe_case
-from devtools.prepared_ccd_ligands import credit_source
-from devtools.validate_aromatic_interactions import _fingerprint, observation_report
-from devtools.validate_prepared_ccd_ligands import scientific_projection
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt.io import load_json, to_json
@@ -30,6 +25,14 @@ from pharmacophoremt.modeler import (
 )
 from pharmacophoremt.pharmacophore import Pharmacophore
 from pharmacophoremt.screening import PoseEvaluator
+from phmt_test_support.benchmark_rigid_consensus import _source_record
+from phmt_test_support.ccd_interaction_cases import build_case, observe_case
+from phmt_test_support.prepared_ccd_ligands import credit_source
+from phmt_test_support.validate_aromatic_interactions import (
+    _fingerprint,
+    observation_report,
+)
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "tests/data/ccd_interaction_cases.json"

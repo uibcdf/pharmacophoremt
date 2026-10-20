@@ -4,13 +4,13 @@ import molsysmt as msm
 import numpy as np
 import pytest
 
-from devtools.rigid_refinement_workloads import build_workload, load_workloads
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt.modeler import get_features
 from pharmacophoremt.screening import (
     evaluate_feature_correspondence,
     refine_rigid_feature_correspondences,
 )
+from phmt_test_support.rigid_refinement_workloads import build_workload, load_workloads
 
 
 @pytest.fixture(

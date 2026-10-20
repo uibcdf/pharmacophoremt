@@ -10,13 +10,17 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.prepare_eralpha_interface import prepare_interface
-from devtools.prepare_eralpha_ligand import credit_inputs
-from devtools.validate_eralpha_interface import build_hypothesis, controls, valid
-from devtools.validate_prepared_ccd_ligands import scientific_projection
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt.io import load_json
 from pharmacophoremt.modeler import ComplexBasedModeler
+from phmt_test_support.prepare_eralpha_interface import prepare_interface
+from phmt_test_support.prepare_eralpha_ligand import credit_inputs
+from phmt_test_support.validate_eralpha_interface import (
+    build_hypothesis,
+    controls,
+    valid,
+)
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 
 @pytest.fixture(scope="module")

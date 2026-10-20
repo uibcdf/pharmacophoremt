@@ -3,9 +3,13 @@
 import numpy as np
 import pytest
 
-from devtools.prepared_search_workflow import ESSENTIAL_SITES, RING_ATOMS, run_case
-from devtools.prepared_workflow import models_equivalent
 from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.prepared_search_workflow import (
+    ESSENTIAL_SITES,
+    RING_ATOMS,
+    run_case,
+)
+from phmt_test_support.prepared_workflow import models_equivalent
 
 
 @pytest.fixture(scope="module")

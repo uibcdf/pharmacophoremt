@@ -13,7 +13,10 @@ import unittest
 import zipfile
 from pathlib import Path
 
-from devtools.evidence_archive import read_archived_bytes, read_archived_evidence
+from phmt_test_support.evidence_archive import (
+    read_archived_bytes,
+    read_archived_evidence,
+)
 
 ROOT = Path(__file__).resolve().parents[1]
 CCD_SUMMARY = ROOT / "devguide/evidence/prepared_ccd_py314_summary.json"
@@ -396,7 +399,13 @@ class TestEvidenceArchive(unittest.TestCase):
 
     def test_cli_reads_real_archive_without_site_packages(self):
         result = subprocess.run(
-            [sys.executable, "-S", "-m", "devtools.evidence_archive", str(CCD_SUMMARY)],
+            [
+                sys.executable,
+                "-S",
+                "-P",
+                str(Path(sys.modules[read_archived_bytes.__module__].__file__)),
+                str(CCD_SUMMARY),
+            ],
             cwd=ROOT,
             capture_output=True,
             text=True,

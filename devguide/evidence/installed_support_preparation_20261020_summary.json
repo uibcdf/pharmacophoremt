@@ -1,0 +1,36 @@
+{
+  "schema": "pharmacophoremt.installed-support-preparation@1",
+  "date": "2026-10-20",
+  "owner": "uibcdf/pharmacophoremt#10",
+  "sdk_sha": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+  "wheel": "7d7d915988b8ef95881ffa43a142dac39a13c15d63c3ec5e5387731bd30b5a56",
+  "initial_full_installed": {
+    "exit_code": 1,
+    "passed": 915,
+    "failed": 6,
+    "seconds": 1570.6,
+    "reason": "Fresh child scripts imported source test/support namespaces which are not bound in a child interpreter."
+  },
+  "corrected_focused": {
+    "exit_code": 0,
+    "passed": 6,
+    "deselected": 915,
+    "seconds": 36.57
+  },
+  "administrative_controls": 30,
+  "scope": "Development wheel and uncommitted support/test overlay; initial complete failure and corrected six-case proof only. Final full repeat is pending. No Conda candidate, native eight-cell matrix, public release or delivery.",
+  "notes": [
+    "All 179 runtime payload paths match the original wheel; scientific runtime code is unchanged.",
+    "The helper declaration has 51 exact code/data records. Child case scripts reuse owned fixture implementations and public runtime APIs, with no support namespace loader.",
+    "Current editable MolSysMT relocated the consumed hbond API; exploratory shared-source failure is retained and belongs to #41.",
+    "Version 0.1.0 was requested, but upstream already has that tag at f0810257a8ed05897643d6303e264adb2697b727; a collision-free decision is pending.",
+    "Repository-level ANACONDA_UIBCDF_TOKEN is not listed; inherited availability and validity are unconfirmed."
+  ],
+  "full_evidence": {
+    "path": "installed_support_preparation_20261020.json.gz",
+    "compressed_sha256": "e1e8b84ef7348b5138433c7a2db2bbfa442739d467514618e8caa53d6a678f6b",
+    "uncompressed_sha256": "6365e054be0c23973dcbbee182a1f48d913689d7f2a1e997d9379ae0c0294528",
+    "compressed_bytes": 301193,
+    "uncompressed_bytes": 1545373
+  }
+}

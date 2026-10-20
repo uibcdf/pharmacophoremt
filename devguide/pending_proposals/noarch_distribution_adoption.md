@@ -354,3 +354,40 @@ has a recorded development source-overlay version and is not a release selection
 Conda candidate, same-byte public receiving result or complete matrix evidence.
 Browser validation is separate. Build metadata warnings are tracked in local #57;
 the nonblocking provider discovery cycle is tracked in MolSysViewer #233.
+
+## Installed-support receiving checkpoint — 2026-10-20
+
+Adopt immutable MolSysSuite `1c248b67d1daea256ed7c7f6172c6addb3f0b08f` for the
+publication wrappers and shared administrative namespace. The provider delivers
+#117 staging and the all-runtime-root guard. Source manifests, scientific source
+pins/commands, supported cells and four installed phases remain unchanged.
+
+The unshipped `phmt_test_support` namespace owns the former scientific helpers
+and shared analytical inputs. Its @1 declaration lists 51 exact helper/data files.
+Standalone saved-model and absence-case scripts use public APIs and safe-path
+mode; children import no source test/support namespace. Existing development
+entry points remain importable. The real development wheel excludes support and
+matches all 179 declared installed runtime payload paths.
+
+The first complete installed runner invocation records **915 passed, 6 failed**:
+six child scripts relied on source/test imports unavailable outside the checkout.
+After moving their shared fixtures to explicit standalone case files and making
+screening imports explicit, all **six corrected cases pass**, with 915 deselected.
+All 30 administrative controls, lint/format and 28 compatibility imports pass.
+The complete corrected repeat is still pending at this checkpoint.
+The [immutable preparation receipt](../evidence/installed_support_preparation_20261020_summary.json)
+preserves the initial failure, intermediate corrections, focused proof and source
+overlay; it must not be reported as a complete passing installed matrix.
+
+The current shared editable MolSysMT exposes the hbond API at a new namespace;
+the separate failed development invocation is retained under #41. No molecular
+runtime migration or fallback is introduced here. Source CI continues to select
+its existing immutable provider inputs.
+
+The maintainer requested version 0.1.0, but that upstream tag already names
+historical commit `f0810257a8ed05897643d6303e264adb2697b727`. A collision-free
+release-plan decision remains pending. Repository-level secret inspection lists
+no `ANACONDA_UIBCDF_TOKEN`; inherited availability and validity remain unknown.
+The qualified shared Mamba 2.9.0 operation has prepared an owned build environment
+with declared-only channels. No real plan, Conda candidate, staged upload, native
+installed matrix, release or public delivery is claimed.

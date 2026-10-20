@@ -7,11 +7,11 @@ import pytest
 from argdigest.core.errors import DigestNotDigestedWarning, UnknownArgumentError
 
 import pharmacophoremt as phmt
-from devtools.interaction_collection_cases import build_case, observe
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.io import load_json, to_json
 from pharmacophoremt.modeler import ComplexBasedModeler
+from phmt_test_support.interaction_collection_cases import build_case, observe
 from tests.test_ionic_interactions import replace_records
 
 

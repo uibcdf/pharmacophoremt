@@ -5,9 +5,9 @@ import molsysmt as msm
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.audit_eralpha import audit
-from devtools.audit_eralpha_sources import audit as audit_sources
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
+from phmt_test_support.audit_eralpha import audit
+from phmt_test_support.audit_eralpha_sources import audit as audit_sources
 
 
 def test_eralpha_pharmacophore_extraction_requires_native_observations(monkeypatch):

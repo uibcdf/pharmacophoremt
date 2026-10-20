@@ -10,8 +10,12 @@ import sys
 from datetime import datetime, timezone
 from pathlib import Path
 
-from devtools.benchmark_rigid_consensus import THREAD_VARS, _digest, _source_record
-from devtools.rigid_refinement_cases import (
+from phmt_test_support.benchmark_rigid_consensus import (
+    THREAD_VARS,
+    _digest,
+    _source_record,
+)
+from phmt_test_support.rigid_refinement_cases import (
     CASES_PATH,
     build_refinement_case,
     load_refinement_cases,

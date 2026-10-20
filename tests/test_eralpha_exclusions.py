@@ -6,9 +6,9 @@ import ackredit
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.validate_eralpha_exclusions import valid, workflow
-from devtools.validate_eralpha_template import portable
-from devtools.validate_prepared_ccd_ligands import scientific_projection
+from phmt_test_support.validate_eralpha_exclusions import valid, workflow
+from phmt_test_support.validate_eralpha_template import portable
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 
 @pytest.fixture(scope="module")
@@ -81,7 +81,7 @@ def test_observed_radius_choice_and_query_persistence_remain_explicit(observed):
 def test_actual_observed_credit_and_science_are_independent_of_host_tracking(
     tmp_path, observed
 ):
-    from devtools.prepare_eralpha_ligand import credit_inputs
+    from phmt_test_support.prepare_eralpha_ligand import credit_inputs
 
     with (
         ackredit.session("observed receptor geometry workflow"),

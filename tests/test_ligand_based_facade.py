@@ -97,7 +97,7 @@ def test_duplicate_ligand_ids_cannot_turn_conformers_into_independent_ligands():
 
 
 def test_legacy_audit_remains_reproducible_without_a_public_legacy_builder():
-    from devtools.audit_legacy_cliques import audit
+    from phmt_test_support.audit_legacy_cliques import audit
 
     observed = audit()
     assert observed == {

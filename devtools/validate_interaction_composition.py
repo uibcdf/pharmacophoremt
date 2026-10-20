@@ -13,10 +13,6 @@ import molsysmt as msm
 import pyunitwizard
 
 import pharmacophoremt as phmt
-from devtools.benchmark_rigid_consensus import _source_record
-from devtools.interaction_collection_cases import build_case, observe
-from devtools.validate_aromatic_interactions import _fingerprint, observation_report
-from devtools.validate_prepared_ccd_ligands import scientific_projection
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt.io import load_json, to_json
 from pharmacophoremt.modeler import (
@@ -28,6 +24,13 @@ from pharmacophoremt.modeler import (
 )
 from pharmacophoremt.pharmacophore import Pharmacophore
 from pharmacophoremt.screening import PoseEvaluator
+from phmt_test_support.benchmark_rigid_consensus import _source_record
+from phmt_test_support.interaction_collection_cases import build_case, observe
+from phmt_test_support.validate_aromatic_interactions import (
+    _fingerprint,
+    observation_report,
+)
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 
 def workflow(directory):

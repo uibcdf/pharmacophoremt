@@ -253,3 +253,26 @@ molecular toolbox, and public default/migration guidance matches executed contra
 Retain operation-specific guards for source/state/atom identity, units, failure
 semantics and scientific results. Open provider proposals or this completed audit
 alone do not satisfy molecular migration acceptance.
+
+## Source compatibility observation — 2026-10-20
+
+The clean sibling MolSysMT checkout at
+`48aba006fbe17336dfb5f564823711c2923f7e0b` exposes site recognition at
+`interactions.hbonds.get_hbond_sites` and source code for
+`interactions.hbonds.get_hbond_site_directions`. Its former
+`physchem.get_hbond_sites` route is absent. This is source inspection, not
+qualification of the new directional model or confirmation that #375 is delivered;
+the owning provider issue remains open with its prior post-1.0 disposition.
+
+An exploratory complete development-suite run therefore fails in the shared
+editable environment (124 failed, 146 errors, 651 passed); dominant failures
+report the missing former site-recognition capability. Saved-model/fresh-reader
+comparisons also observe different generated development-version strings because
+a build regenerated `_version.py` during the run. This invocation is not valid
+unchanged-source or pinned-provider matrix evidence. Its original output is
+retained with the installed-support adoption records under #10.
+
+Keep the current scientific CI source pin and the reviewed public-provider route
+separate. Receive the new namespace/directions through a bounded #41 contract and
+test review, using provider-owned geometry; do not restore molecular algorithms
+locally or infer a successful migration from mere source availability.

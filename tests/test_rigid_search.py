@@ -21,39 +21,14 @@ from pharmacophoremt.screening import (
     get_correspondences,
 )
 from pharmacophoremt.validation.retrospective import RetrospectiveValidator
-from tests.test_pose_evaluation import system
-
-COORDINATES = np.array(
-    [
-        [0, 0, 0],
-        [0.15, 0, 0],
-        [0.3, 0, 0],
-        [0.1, 0.5, 0],
-        [0, 0.5, 0],
-        [0.3, 0.6, 0],
-        [0.3, 0.5, 0],
-        [0.05, 0.2, 0.7],
-    ]
+from phmt_test_support.absence_inputs import (
+    COORDINATES,
+    FAMILIES,
+    SMILES,
+    moved,
+    reference,
 )
-SMILES = "CCC.[2H]O.C=O.[NH4+]"
-FAMILIES = ["hydrophobicity", "hb donor", "hb acceptor", "positive charge"]
-
-
-def reference():
-    source = system(SMILES, COORDINATES)
-    return source, from_ligand(source, features=FAMILIES, radius="0.02 nm")
-
-
-def moved(source):
-    rotated = msm.structure.rotate(
-        source,
-        rotation=np.array([[0.0, -1, 0], [1, 0, 0], [0, 0, 1]]),
-        rotation_center=puw.quantity([0, 0, 0], "nm"),
-        in_place=False,
-    )
-    return msm.structure.translate(
-        rotated, translation=puw.quantity([[[2.0, 1, 3]]], "nm"), in_place=False
-    )
+from tests.test_pose_evaluation import system
 
 
 def test_recovers_rigid_motion_and_retains_portable_alignment_and_donor_direction():

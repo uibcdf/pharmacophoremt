@@ -12,23 +12,7 @@ from pharmacophoremt.interaction_site import InteractionSite
 from pharmacophoremt.interaction_site.shape import Sphere, SphereAndVector
 from pharmacophoremt.modeler import from_interactions
 from pharmacophoremt.screening import PoseEvaluator
-
-
-def system(smiles="CCC.CCC", coordinates=None, unit="nm"):
-    source = msm.convert(
-        msm.convert("smiles:" + smiles, to_form="rdkit.Mol"), to_form="molsysmt.MolSys"
-    )
-    if coordinates is None:
-        coordinates = [
-            [0, 0, 0],
-            [0.15, 0, 0],
-            [0.30, 0, 0],
-            [0, 0.3, 0],
-            [0.15, 0.3, 0],
-            [0.30, 0.3, 0],
-        ]
-    source.structures.append(coordinates=puw.quantity([coordinates], unit))
-    return source
+from phmt_test_support.absence_inputs import system
 
 
 def model_from_source(source):

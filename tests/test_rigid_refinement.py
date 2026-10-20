@@ -10,8 +10,6 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.rigid_consensus_cases import build_case, load_cases
-from devtools.rigid_refinement_cases import build_refinement_case, load_refinement_cases
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError, CliqueLimitError
 from pharmacophoremt.modeler import from_rigid_ligands, get_features
@@ -20,6 +18,11 @@ from pharmacophoremt.screening import (
     refine_rigid_feature_correspondences,
 )
 from pharmacophoremt.validation import summarize_rigid_consensus
+from phmt_test_support.rigid_consensus_cases import build_case, load_cases
+from phmt_test_support.rigid_refinement_cases import (
+    build_refinement_case,
+    load_refinement_cases,
+)
 from tests.test_aligned_consensus import inventory
 
 

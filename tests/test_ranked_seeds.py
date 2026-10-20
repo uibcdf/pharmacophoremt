@@ -12,8 +12,6 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.benchmark_rigid_consensus import _matches_expectation
-from devtools.rigid_consensus_cases import build_case, load_cases
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError, CliqueLimitError
 from pharmacophoremt.modeler import from_rigid_ligands
 from pharmacophoremt.screening import (
@@ -22,6 +20,8 @@ from pharmacophoremt.screening import (
     rank_rigid_feature_correspondences,
 )
 from pharmacophoremt.validation import summarize_rigid_consensus
+from phmt_test_support.benchmark_rigid_consensus import _matches_expectation
+from phmt_test_support.rigid_consensus_cases import build_case, load_cases
 from tests.test_aligned_consensus import inventory
 
 CASES = Path(__file__).parent / "data/ranked_seed_cases.json"

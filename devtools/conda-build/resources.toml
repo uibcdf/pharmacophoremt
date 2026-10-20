@@ -201,3 +201,263 @@ conda_dependencies = [
   "beartype==0.22.9",
   "openmm==8.6.1",
 ]
+
+[installed_tests.support]
+schema = "molsyssuite.installed-test-support@1"
+namespace = "phmt_test_support"
+reason = "Unshipped scientific fixtures, cached molecular inputs and a standalone public-I/O reader; serial tests use provider-owned private staging, never a source runtime import."
+
+[[installed_tests.support.files]]
+source = "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz"
+target = "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz"
+sha256 = "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c"
+
+[[installed_tests.support.files]]
+source = "devguide/evidence/eralpha_interface_py314_summary.json"
+target = "devguide/evidence/eralpha_interface_py314_summary.json"
+sha256 = "c27849bb8169272097ab4c2785c153fd038d89a73f8e537b8bd7326d56f1fc6c"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/__init__.py"
+target = "phmt_test_support/__init__.py"
+sha256 = "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/absence_inputs.py"
+target = "phmt_test_support/absence_inputs.py"
+sha256 = "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/aromatic_interaction_cases.py"
+target = "phmt_test_support/aromatic_interaction_cases.py"
+sha256 = "d6cb981aebcc9855cb19e17c876dca33a3241f29d24d05a4a7db99476d4813d1"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/audit_eralpha.py"
+target = "phmt_test_support/audit_eralpha.py"
+sha256 = "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/audit_eralpha_receptor.py"
+target = "phmt_test_support/audit_eralpha_receptor.py"
+sha256 = "2bac1fadefcba1c69c42835b054e6b1fc6ccbf359d60601f14c69c6ff5b2547f"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/audit_eralpha_sources.py"
+target = "phmt_test_support/audit_eralpha_sources.py"
+sha256 = "414e62567b5e9e4c211497662cc96b3e268db0b2f37dc971fe2a5f73f5da30eb"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/audit_legacy_cliques.py"
+target = "phmt_test_support/audit_legacy_cliques.py"
+sha256 = "4b9940fcda450e035ffbcd416e80d56674b0b70d3f1875820f35c1245e86b047"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/benchmark_rigid_consensus.py"
+target = "phmt_test_support/benchmark_rigid_consensus.py"
+sha256 = "30e301fa07b984c30df2e8025a9a84f513347f8cf035dc7c4b4b7f475ebceebc"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/ccd_interaction_cases.py"
+target = "phmt_test_support/ccd_interaction_cases.py"
+sha256 = "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/diagnose_eralpha_interface.py"
+target = "phmt_test_support/diagnose_eralpha_interface.py"
+sha256 = "4c44d7d641d0ac537b40cb8ed736dee36963262478901e18181d2be7df08d4aa"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/evidence_archive.py"
+target = "phmt_test_support/evidence_archive.py"
+sha256 = "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/interaction_cases.py"
+target = "phmt_test_support/interaction_cases.py"
+sha256 = "b802a8d3b7cd8d0227d2d29367f2c2006ed25781027aa766ac291f3cf7cbb8d5"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/interaction_collection_cases.py"
+target = "phmt_test_support/interaction_collection_cases.py"
+sha256 = "c19a49dc4e026e33c6b1685766d089c8185346052374b7df8b8dea0ce95a02a4"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/legacy_clique_helpers.py"
+target = "phmt_test_support/legacy_clique_helpers.py"
+sha256 = "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepare_eralpha_hydrogens.py"
+target = "phmt_test_support/prepare_eralpha_hydrogens.py"
+sha256 = "103c2e6d26495eaf048b135ab5ef76df78d84d947fa56af73682cf8c7d04671b"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepare_eralpha_interface.py"
+target = "phmt_test_support/prepare_eralpha_interface.py"
+sha256 = "efe75a6f7b1b50c7e016a9394048186e64699a9d872373d07005c1efe1e7086a"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepare_eralpha_ligand.py"
+target = "phmt_test_support/prepare_eralpha_ligand.py"
+sha256 = "19c979a39fda4a3873dd5889bceefa8982e12070c8f260b593603808d5c087f8"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_ccd_ligands.py"
+target = "phmt_test_support/prepared_ccd_ligands.py"
+sha256 = "190c97862cdbc3c84d5673989ba51f630a86fa558b3cbb6bb99d7dfcf809abb2"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_consensus_workflow.py"
+target = "phmt_test_support/prepared_consensus_workflow.py"
+sha256 = "8c2abec2ecee1196556fb8c8b1045fce41eb6a0dbc51d496d3073425a963908b"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_receptor_workflow.py"
+target = "phmt_test_support/prepared_receptor_workflow.py"
+sha256 = "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_search_workflow.py"
+target = "phmt_test_support/prepared_search_workflow.py"
+sha256 = "d8016e05cb084b26c97d21cd1f57527ad1f07826364817ff11171358d54ccc23"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_workflow.py"
+target = "phmt_test_support/prepared_workflow.py"
+sha256 = "3956dce50125ce801246316debfe540317ef3a7902d5b7ae8d4bad71624a39d0"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/rigid_consensus_cases.py"
+target = "phmt_test_support/rigid_consensus_cases.py"
+sha256 = "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/rigid_refinement_cases.py"
+target = "phmt_test_support/rigid_refinement_cases.py"
+sha256 = "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/rigid_refinement_workloads.py"
+target = "phmt_test_support/rigid_refinement_workloads.py"
+sha256 = "292c1237100948d842dacf3268da2d9fe064d945bd43f94bd58d6d3394e2bcf8"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/saved_model_reader.py"
+target = "phmt_test_support/saved_model_reader.py"
+sha256 = "25baaf6b218d09e15108809b04739004e471e4e99fd3c5d53f6802775e2b9016"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/validate_aromatic_interactions.py"
+target = "phmt_test_support/validate_aromatic_interactions.py"
+sha256 = "ff20aa36de3938757d32a882ec3553cf7423ab57f7fc62fd812816763bbe426c"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/validate_eralpha_exclusions.py"
+target = "phmt_test_support/validate_eralpha_exclusions.py"
+sha256 = "4e199feecf9df45b76dcaa5ea416b2f1cff58c90e3780e50752bd4e7722930ea"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/validate_eralpha_hydrogens.py"
+target = "phmt_test_support/validate_eralpha_hydrogens.py"
+sha256 = "5c41b37c843e155f0297a9d5c8f9674a9ad394802c2f7643277fe94572db929f"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/validate_eralpha_interface.py"
+target = "phmt_test_support/validate_eralpha_interface.py"
+sha256 = "b7bca94583a82dd80e313ea4bc5ae3e2d59234fa1d5383a9007e16f4e964576d"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/validate_eralpha_template.py"
+target = "phmt_test_support/validate_eralpha_template.py"
+sha256 = "b086a17df01fd0af6c012c4896a9ec7a6e109e3b6d38548d4e692acf232f5ee0"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/validate_prepared_ccd_ligands.py"
+target = "phmt_test_support/validate_prepared_ccd_ligands.py"
+sha256 = "055c3ea310ab5f75d931bc390797a292c0510b2cecc69fe27a5de400cfbbdb75"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_audit.json"
+target = "tests/data/eralpha_audit.json"
+sha256 = "76e3fb58fdebcacb3d3458af17949b3482e360c8cba1ab6bff9d9843dfc07020"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_complex.pdb"
+target = "tests/data/eralpha_complex.pdb"
+sha256 = "90e3159bc03424d976742c96c8cc2d2b32c9e1abf140d4652b70518b06a775f1"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_interface/diagnostics.json"
+target = "tests/data/eralpha_interface/diagnostics.json"
+sha256 = "fa9f95859f4a3b85ab77fd7d6ab65b8c214a4536dd2e81d7f152d6b231eee04f"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_interface/manifest.json"
+target = "tests/data/eralpha_interface/manifest.json"
+sha256 = "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_rcsb/1qku.cif"
+target = "tests/data/eralpha_rcsb/1qku.cif"
+sha256 = "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_rcsb/1qku_EST_D.sdf"
+target = "tests/data/eralpha_rcsb/1qku_EST_D.sdf"
+sha256 = "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_rcsb/EST.cif"
+target = "tests/data/eralpha_rcsb/EST.cif"
+sha256 = "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_rcsb/manifest.json"
+target = "tests/data/eralpha_rcsb/manifest.json"
+sha256 = "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_template/acquisition.json"
+target = "tests/data/eralpha_template/acquisition.json"
+sha256 = "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_template/est_template.h5msm"
+target = "tests/data/eralpha_template/est_template.h5msm"
+sha256 = "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7"
+
+[[installed_tests.support.files]]
+source = "tests/data/eralpha_template/manifest.json"
+target = "tests/data/eralpha_template/manifest.json"
+sha256 = "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4"
+
+[[installed_tests.support.files]]
+source = "tests/data/prepared_ccd/DES_ideal.sdf"
+target = "tests/data/prepared_ccd/DES_ideal.sdf"
+sha256 = "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4"
+
+[[installed_tests.support.files]]
+source = "tests/data/prepared_ccd/EST_ideal.sdf"
+target = "tests/data/prepared_ccd/EST_ideal.sdf"
+sha256 = "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f"
+
+[[installed_tests.support.files]]
+source = "tests/data/prepared_ccd/manifest.json"
+target = "tests/data/prepared_ccd/manifest.json"
+sha256 = "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310"
+
+[[installed_tests.support.files]]
+source = "tests/data/rigid_consensus_cases.json"
+target = "tests/data/rigid_consensus_cases.json"
+sha256 = "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0"
+
+[[installed_tests.support.files]]
+source = "tests/data/rigid_refinement_cases.json"
+target = "tests/data/rigid_refinement_cases.json"
+sha256 = "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7"
+
+[[installed_tests.support.files]]
+source = "tests/data/rigid_refinement_workloads.json"
+target = "tests/data/rigid_refinement_workloads.json"
+sha256 = "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48"

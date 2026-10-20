@@ -6,8 +6,8 @@ import molsysmt as msm
 import numpy as np
 import pytest
 
-from devtools.prepared_ccd_ligands import prepare_case
-from devtools.prepared_workflow import FEATURES, models_equivalent, run_case
+from phmt_test_support.prepared_ccd_ligands import prepare_case
+from phmt_test_support.prepared_workflow import FEATURES, models_equivalent, run_case
 
 
 @pytest.fixture(scope="module")

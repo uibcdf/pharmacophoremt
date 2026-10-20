@@ -4,7 +4,7 @@ issue: uibcdf/pharmacophoremt#23
 status: partial
 opened: 2026-10-03
 closed:
-verification: inspected
+verification: measured
 area: [compatibility, packaging, ci, governance]
 guard:
 normative:
@@ -167,3 +167,18 @@ jobs now succeed. macOS jobs remain queued at this observation. The overall
 run is still pending; this records executed Linux recovery rather than an
 eight-cell or public-installation qualification. Subsequent pilot source changes
 retain their own unskipped direct-push checkpoint.
+
+### Installed-support preparation — 2026-10-20
+
+The #10 receiving work normally installs a real development wheel into an
+isolated Linux/Python 3.14 public-provider environment. All 179 required runtime
+files match the wheel; the support namespace is not shipped. The complete first
+run records 915 passed and six child-import failures, followed by six passing
+corrected focused cases. The full corrected repeat is pending at this checkpoint.
+See the [bounded preparation receipt](../evidence/installed_support_preparation_20261020_summary.json).
+
+This is measured partial installed evidence, not a green eight-cell matrix or
+public PHMT delivery. The Python 3.11–3.14 metadata, recipes and scientific source
+selection remain unchanged; real candidate identity, staging access and the full
+installed platform scope are still required under #10/#23. Packaging license
+metadata #57 is resolved separately with exercised isolated backend builds.

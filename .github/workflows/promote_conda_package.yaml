@@ -27,7 +27,7 @@ permissions:
   actions: read
 jobs:
   promote:
-    uses: uibcdf/molsyssuite/.github/workflows/promote-noarch-conda.yaml@2d32048457c6d37093ae509f5626d00a5cda121b
+    uses: uibcdf/molsyssuite/.github/workflows/promote-noarch-conda.yaml@1c248b67d1daea256ed7c7f6172c6addb3f0b08f
     with:
       candidate_sha: ${{ inputs.candidate_sha }}
       version: ${{ inputs.version }}

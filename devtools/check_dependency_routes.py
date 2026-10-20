@@ -8,7 +8,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-SDK_SHA = "8f00e6d9de943b6e4710ea62936e2ebea00fad24"
+SDK_SHA = "1c248b67d1daea256ed7c7f6172c6addb3f0b08f"
 
 
 def load_sdk(module_name="dependency_routes"):

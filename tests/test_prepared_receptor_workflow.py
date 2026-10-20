@@ -3,14 +3,14 @@
 import numpy as np
 import pytest
 
-from devtools.prepared_receptor_workflow import (
+from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.prepared_receptor_workflow import (
     PHE_ATOMS,
     RING_ATOMS,
     expectations_passed,
     run_case,
 )
-from devtools.prepared_workflow import models_equivalent
-from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.prepared_workflow import models_equivalent
 
 
 @pytest.fixture(scope="module")

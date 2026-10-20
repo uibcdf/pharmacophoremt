@@ -20,6 +20,12 @@ guards without importing the scientific package.
 
 ## Scientific evidence archives
 
+Scientific fixture implementations live in the unshipped
+[`phmt_test_support`](../phmt_test_support/README.md) package. The documented
+`devtools.*` commands remain compatibility entry points. Installed tests use
+MolSysSuite's declared private staging contract, independently of runtime package
+discovery; the support namespace must never enter the distributed payload.
+
 Prepared end-to-end qualification: `python -m devtools.prepared_workflow --output FILE`
 composes the existing CCD fixture client, cached-model tools, three native codecs
 and placed screening with independent negative/failure controls. Its

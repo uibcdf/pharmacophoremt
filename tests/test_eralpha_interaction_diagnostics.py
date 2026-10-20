@@ -6,9 +6,9 @@ import molsysmt as msm
 import numpy as np
 import pytest
 
-from devtools.diagnose_eralpha_interface import DIAGNOSTICS, diagnose, valid
-from devtools.prepare_eralpha_interface import prepare_interface
 from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.diagnose_eralpha_interface import DIAGNOSTICS, diagnose, valid
+from phmt_test_support.prepare_eralpha_interface import prepare_interface
 
 
 @pytest.fixture(scope="module")

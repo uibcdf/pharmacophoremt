@@ -3,6 +3,7 @@
 import json
 import warnings
 from copy import deepcopy
+from pathlib import Path
 
 import ackredit as ack
 import molsysmt as msm
@@ -413,25 +414,7 @@ def test_optional_provider_absence_and_failure_preserve_science(
 
 
 def test_genuine_absence_with_public_molecular_preparation():
-    run_reader("""
-import sys, importlib.abc
-class NoAckredit(importlib.abc.MetaPathFinder):
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.split('.')[0] == 'ackredit':
-            raise ModuleNotFoundError('controlled absence', name=fullname)
-sys.meta_path.insert(0, NoAckredit())
-import pharmacophoremt as phmt
-assert 'ackredit' not in sys.modules
-import molsysmt as msm
-from tests.test_pose_evaluation import system
-source = system('[Na+].[Cl-]', [[0,0,0],[.3,0,0]])
-observed = msm.interactions.ionic.get_ionic_interactions(source, '.31 nm', pbc=False)
-with phmt.attribution():
-    query = phmt.modeler.from_interactions(source, observed, [0])
-assert query.metadata['attribution']['status'] == 'unavailable'
-assert phmt.screening.PoseEvaluator(query).evaluate(source, selection=[0])['status'] == 'matched'
-assert 'ackredit' not in sys.modules
-""")
+    run_reader(Path(system.__code__.co_filename), "ionic")
 
 
 def test_fresh_reader_retains_original_bibliography_without_credit(

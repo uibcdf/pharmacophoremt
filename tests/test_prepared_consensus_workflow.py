@@ -3,10 +3,14 @@
 import numpy as np
 import pytest
 
-from devtools.prepared_consensus_workflow import ATOMS, expectations_passed, run_case
-from devtools.prepared_workflow import models_equivalent
-from devtools.validate_prepared_ccd_ligands import scientific_projection
 from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.prepared_consensus_workflow import (
+    ATOMS,
+    expectations_passed,
+    run_case,
+)
+from phmt_test_support.prepared_workflow import models_equivalent
+from phmt_test_support.validate_prepared_ccd_ligands import scientific_projection
 
 
 @pytest.fixture(scope="module")

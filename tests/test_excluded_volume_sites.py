@@ -2,6 +2,7 @@
 
 import json
 from copy import deepcopy
+from pathlib import Path
 
 import ackredit
 import molsysmt as msm
@@ -233,26 +234,7 @@ def test_optional_attribution_absence_and_failure_preserve_construction(monkeypa
 
 
 def test_fresh_process_import_is_lazy_and_genuine_provider_absence_is_supported():
-    run_reader("""
-import sys, importlib.abc
-class NoAckredit(importlib.abc.MetaPathFinder):
-    def find_spec(self, fullname, path=None, target=None):
-        if fullname.split('.')[0] == 'ackredit':
-            raise ModuleNotFoundError('absent provider', name='ackredit')
-sys.meta_path.insert(0, NoAckredit())
-import pharmacophoremt as phmt
-assert 'ackredit' not in sys.modules
-from tests.test_pose_evaluation import system
-inventory = phmt.modeler.get_features(system(), selection=[3,4,5], features=['included volume'])
-plain = phmt.modeler.get_excluded_volume_sites(inventory, radius='.1 nm')
-assert 'ackredit' not in sys.modules
-with phmt.attribution(True):
-    result = phmt.modeler.get_excluded_volume_sites(inventory, radius='.1 nm')
-assert result['report'] == plain['report']
-assert result['attribution']['status'] == 'unavailable'
-assert result['attribution']['host_references']
-assert 'ackredit' not in sys.modules
-""")
+    run_reader(Path(system.__code__.co_filename), "excluded_volume")
 
 
 def test_detached_reader_retains_original_versions_without_new_credits(tmp_path):

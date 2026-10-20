@@ -19,43 +19,10 @@ from pharmacophoremt.modeler import (
     get_aligned_feature_matches,
     get_consensus_sites,
 )
-from pharmacophoremt.modeler.features import DEFINITION
+from phmt_test_support.absence_inputs import inventory
 from tests.test_pose_evaluation import system
 from tests.test_reference_ligand import benzene
 from tests.test_rigid_search import COORDINATES, FAMILIES, reference
-
-
-def inventory(centers, kinds=None, directions=None, normals=None):
-    """Synthetic feature geometry for mathematical controls; no molecular claim."""
-    n = len(centers)
-    kinds = kinds or ["hb acceptor"] * n
-    directions = directions or [None] * n
-    normals = normals or [None] * n
-    return dict(
-        definition=DEFINITION,
-        structure_index=0,
-        chemical_state="reference",
-        selected_atom_indices=list(range(max(1, n))),
-        recognition={},
-        features=[
-            dict(
-                kind=kind,
-                center=puw.quantity(center, "nm"),
-                atom_indices=[i],
-                geometry_atom_indices=[i],
-                charge=None,
-                direction=None
-                if direction is None
-                else puw.quantity(direction, "dimensionless"),
-                normal=None
-                if normal is None
-                else puw.quantity(normal, "dimensionless"),
-            )
-            for i, (center, kind, direction, normal) in enumerate(
-                zip(centers, kinds, directions, normals)
-            )
-        ],
-    )
 
 
 def test_assignment_matches_bounded_exhaustive_oracle_with_repeated_types():

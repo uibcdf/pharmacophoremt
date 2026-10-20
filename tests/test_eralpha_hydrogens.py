@@ -8,13 +8,20 @@ import numpy as np
 import pytest
 
 import pharmacophoremt as phmt
-from devtools.prepare_eralpha_hydrogens import SELECTED_FEATURES, add_hydrogens
-from devtools.prepare_eralpha_ligand import credit_inputs, prepare_case
-from devtools.prepared_ccd_ligands import motion_frames, state_payload
-from devtools.validate_eralpha_hydrogens import donor_controls
-from devtools.validate_eralpha_template import placed_controls, portable, valid_controls
-from devtools.validate_prepared_ccd_ligands import scientific_projection, self_recovery
 from pharmacophoremt import pyunitwizard as puw
+from phmt_test_support.prepare_eralpha_hydrogens import SELECTED_FEATURES, add_hydrogens
+from phmt_test_support.prepare_eralpha_ligand import credit_inputs, prepare_case
+from phmt_test_support.prepared_ccd_ligands import motion_frames, state_payload
+from phmt_test_support.validate_eralpha_hydrogens import donor_controls
+from phmt_test_support.validate_eralpha_template import (
+    placed_controls,
+    portable,
+    valid_controls,
+)
+from phmt_test_support.validate_prepared_ccd_ligands import (
+    scientific_projection,
+    self_recovery,
+)
 
 
 @pytest.fixture(scope="module")

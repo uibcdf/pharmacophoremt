@@ -171,3 +171,18 @@ manual administrative gates. Its CI skip retains full-suite debt under this
 issue and unchanged daily/weekly/manual recovery; administrative checks do not
 clear that debt. Central receipt:
 `uibcdf/molsyssuite:devguide/rollouts/pharmacophoremt_ci_receiving_39_45_20261009.json`.
+
+## Weekly failure diagnosis — 2026-10-20
+
+Weekly [39283601619](https://github.com/uibcdf/pharmacophoremt/actions/runs/39283601619),
+attempt 1 at `a1ea9cc4025fefdbff5e30f3ecced2bcdfacd83d`, succeeds in seven
+scientific cells. macOS 15 / Python 3.13 fails before tests while cloning the
+unchanged pinned MolSysMT source: `curl 56` receive timeout, early EOF and an
+invalid index-pack result. The [native-log excerpt and identity](../evidence/ci_failure_20261019_review.json)
+retain the actual failure without changing scientific inputs or tests.
+
+Daily [39431023758](https://github.com/uibcdf/pharmacophoremt/actions/runs/39431023758)
+passes its reporting/backlog selection with science skipped. It is not a full
+green matrix. Earlier [38440541291](https://github.com/uibcdf/pharmacophoremt/actions/runs/38440541291)
+at `f0d96ae` separately retains eight successful source cells. New source and
+installed-artifact evidence must remain bound to their own revisions and runs.
