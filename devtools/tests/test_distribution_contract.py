@@ -98,6 +98,36 @@ class TestDistributionContract(unittest.TestCase):
                 archive.addfile(member, io.BytesIO(content))
         return self.noarch.inspect_artifact(archive_path, self.plan, self.inventory)
 
+    def test_spdx_license_has_a_compatible_build_backend_and_included_file(self):
+        project = tomllib.loads((ROOT / "pyproject.toml").read_text())
+        backend = next(
+            Requirement(item)
+            for item in project["build-system"]["requires"]
+            if Requirement(item).name == "setuptools"
+        )
+        self.assertIn("77.0.3", backend.specifier)
+        self.assertNotIn("76.1.0", backend.specifier)
+        self.assertEqual(project["project"]["license"], "MIT")
+        self.assertEqual(project["project"]["license-files"], ["LICENSE"])
+        self.assertFalse(
+            any(
+                item.startswith("License ::")
+                for item in project["project"]["classifiers"]
+            )
+        )
+        self.assertNotIn("versioneer.py", (ROOT / "MANIFEST.in").read_text())
+        recipe, _ = self.noarch.render_recipe(
+            ROOT,
+            "devtools/conda-build/meta.yaml",
+            {
+                "MOLSYSSUITE_CONDA_VERSION": self.plan["version"],
+                "MOLSYSSUITE_CONDA_BUILD_NUMBER": str(self.plan["build_number"]),
+            },
+        )
+        self.assertEqual(recipe["about"]["license"], "MIT")
+        self.assertEqual(recipe["about"]["license_file"], "LICENSE")
+        self.assertTrue((ROOT / "LICENSE").is_file())
+
     def test_complete_current_core_data_and_private_resources_are_inventoried(self):
         expected = {
             "site-packages/" + str(path.relative_to(self.root))

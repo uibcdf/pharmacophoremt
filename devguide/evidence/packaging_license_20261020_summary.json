@@ -1,0 +1,66 @@
+{
+  "schema": "pharmacophoremt.packaging_license_review@1",
+  "date": "2026-10-20",
+  "source_base": "28051a151d3db2c92be00d95b00b60f5e04c3a07",
+  "source_state": "Uncommitted #57 metadata/guard overlay on the recorded base; development artifacts only",
+  "python": "3.14.7",
+  "versioningit": "2.3.0",
+  "artifacts": [
+    {
+      "backend": "77.0.3",
+      "filename": "pharmacophoremt-0.3.0+157.g28051a1.dirty-py3-none-any.whl",
+      "sha256": "34fbe4dcbf7a187c0da025d2619666c5ecbeee3d605c6e4c5aa2d712a4df93b9",
+      "bytes": 4454479,
+      "license_expression": "MIT",
+      "license_file": [
+        "LICENSE"
+      ],
+      "requires_python": "<3.15,>=3.11",
+      "license_sha256": "679fc9cdca180caca3804d7b90333da0e34cdc89c04d8a91b2f6ddfe552bbbb0"
+    },
+    {
+      "backend": "77.0.3",
+      "filename": "pharmacophoremt-0.3.0+157.g28051a1.dirty.tar.gz",
+      "sha256": "b116f9eec8880009709d0bb48a9da6fad6dba7252e9943dcb4cbb190e814890c",
+      "bytes": 4436952,
+      "license_expression": "MIT",
+      "license_file": [
+        "LICENSE"
+      ],
+      "requires_python": "<3.15,>=3.11",
+      "license_sha256": "679fc9cdca180caca3804d7b90333da0e34cdc89c04d8a91b2f6ddfe552bbbb0"
+    },
+    {
+      "backend": "84.2.0",
+      "filename": "pharmacophoremt-0.3.0+157.g28051a1.dirty-py3-none-any.whl",
+      "sha256": "443992e496a0424a0caf2e7dd9e43cbdfae68ce19c366c7430dc35356336150b",
+      "bytes": 4454479,
+      "license_expression": "MIT",
+      "license_file": [
+        "LICENSE"
+      ],
+      "requires_python": "<3.15,>=3.11",
+      "license_sha256": "679fc9cdca180caca3804d7b90333da0e34cdc89c04d8a91b2f6ddfe552bbbb0"
+    },
+    {
+      "backend": "84.2.0",
+      "filename": "pharmacophoremt-0.3.0+157.g28051a1.dirty.tar.gz",
+      "sha256": "f2c4510546801e1d48fdbde7c355d839b3054e70d8b8d3dc9df4361fa38f866e",
+      "bytes": 4437886,
+      "license_expression": "MIT",
+      "license_file": [
+        "LICENSE"
+      ],
+      "requires_python": "<3.15,>=3.11",
+      "license_sha256": "679fc9cdca180caca3804d7b90333da0e34cdc89c04d8a91b2f6ddfe552bbbb0"
+    }
+  ],
+  "scope": "Isolated sdist and wheel from sdist builds plus exact MIT LICENSE bytes/metadata; no Conda, release, installed science or public delivery qualification.",
+  "full_evidence": {
+    "path": "packaging_license_20261020.json.gz",
+    "compressed_sha256": "aef2b88ec33703e1c3aff92beb27e95874a4834ddc28fa84598b0bc425f8314c",
+    "uncompressed_sha256": "0f84eaddd6d60ce5a5cdf12b4b325cbbf1eeb9e4866baf5d273e79f34b019c8a",
+    "compressed_bytes": 14718,
+    "uncompressed_bytes": 190510
+  }
+}
