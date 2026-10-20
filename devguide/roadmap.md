@@ -2,6 +2,11 @@
 
 ## Current priorities — 2026-10-20
 
+Work is paused at the maintainer's request. The [pause checkpoint](checkpoint.md)
+records implementation/evidence identities, retained resources and the ordered
+restart procedure. Version 0.4.0 is a proposal awaiting confirmation; no actual
+Conda candidate is selected.
+
 The maintainer has deferred new addon work. The current segment is distribution
 and installed qualification under #9/#10/#23. Packaging metadata #57 is resolved:
 both the minimum compatible setuptools 77.0.3 and current 84.2.0 build license-bearing

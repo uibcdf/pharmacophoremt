@@ -421,3 +421,15 @@ checks eleven executed required jobs on that exact source. It establishes the
 consumer implementation checkpoint, not candidate authorization: the example
 plan is used only to identify existing gate names. Real version/plan/access,
 original Conda bytes and the installed/public receiving scope remain outstanding.
+
+### Maintainer pause — 2026-10-20
+
+Work pauses before real candidate selection. The latest upstream version tag is
+0.3.0; 0.1.0 and 0.2.0 also exist, and the observed GitHub Release list is empty.
+The proposed 0.4.0 has not been approved. The maintainer's question about the
+latest tag does not select a new version. Resume through the
+[current checkpoint](../checkpoint.md): confirm the version, commit the actual
+plan, obtain exact-candidate gates, establish staging access, build one archive
+and qualify all eight installed cells before a publication decision. Existing
+development-wheel/source receipts retain their narrower identities. #10 remains
+partial; no candidate build, upload or promotion is started for this pause.

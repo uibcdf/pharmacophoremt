@@ -1,6 +1,105 @@
 # Development Checkpoint
 
-## Current pause checkpoint — 2026-10-13
+## Current pause checkpoint — 2026-10-20
+
+The maintainer requested a pause. Resume with this section and the
+[current roadmap](roadmap.md#current-priorities--2026-10-20), then consult the
+owning reports linked below. No build, test, upload or publication task needs to
+continue during the pause. New addon work remains deferred.
+
+### What we were doing
+
+The active segment is distribution and installed qualification under
+[#10](pending_proposals/noarch_distribution_adoption.md), with source CI in
+[#9](pending_bugs/full_ci_routes_and_skipped_push_recovery.md) and public/Python
+delivery in [#23](pending_proposals/adopt_required_python_314.md).
+The implementation is committed as `636373d3c5c24a1eff6d2bec5f3eceb6ce018ba4`;
+the subsequent evidence-only checkpoint is
+`63b9ef67e54102a83b688b5cbf2dea79e054a57d`. Both are on upstream main. This pause
+update changes documentation only; it does not acquire the implementation's
+exact-source CI identity. Its `[skip ci]` handoff retains ordinary CI debt and
+daily/weekly/manual recovery under #9; local index/reporting checks cover this
+documentation change.
+
+- Packaging metadata #57 is resolved and archived, with isolated sdist/wheel
+  builds using setuptools 77.0.3 and 84.2.0; see
+  [the result](archive/packaging_license_metadata.md).
+- MolSysSuite #117 is adopted at
+  `1c248b67d1daea256ed7c7f6172c6addb3f0b08f`. Scientific helpers are explicitly
+  staged from the unshipped `phmt_test_support` namespace. The real isolated
+  development wheel passes **921 tests** on Linux/Python 3.14.8 with public
+  providers, including MolSysMT 0.23.0. All 179 runtime paths match and staged
+  support resources/imports are retired; see
+  [the receiving receipt](evidence/installed_support_adoption_20261020_summary.json).
+  The separate preparation record preserves the original six failed cases.
+- Source CI at `636373d` passes **8/8** Linux/macOS arm64 × Python 3.11–3.14
+  scientific cells plus reporting, policy and Conda governance: eleven required
+  executed jobs. See [the exact-source receipt](evidence/source_ci_receiving_20261020_summary.json).
+  CI run 39478128959, policy 39478129327 and Conda governance 39478129573 belong
+  to that implementation, not to later documentation commits.
+
+### Decision still pending
+
+The maintainer initially selected **0.1.0**, but that upstream tag already points
+to historical commit `f0810257a8ed05897643d6303e264adb2697b727`. Remote inspection
+on 2026-10-20 confirms tags 0.1.0, 0.2.0 and **0.3.0** (the highest version;
+`efb18c28b23e8c017a9c420fa7cf91dc54997ace`), with no GitHub Releases listed.
+**0.4.0 is proposed, not approved.** Confirm the maintainer's collision-free
+version choice on resumption; preserve the historical tags.
+
+There is still no actual `devtools/conda-build/release_plan.toml`, original Conda
+candidate, staged upload, eight-cell installed Conda result or public promotion.
+The example's 0.0.0 is illustrative. Repository-level inspection found no
+`ANACONDA_UIBCDF_TOKEN`; inherited organization access and validity remain
+unknown. Source CI and the development wheel do not qualify a Conda candidate.
+
+### Resume in this order
+
+1. Check the worktree and upstream main for changes, read the current #10/#9/#23
+   issue updates and confirm the version choice. Read
+   [publication operations](../devtools/conda-build/README.md) and
+   [release titles](release_titles.md) before preparing the real plan.
+2. Commit a reviewed `release_plan.toml` with the selected version, actual build
+   number, staged route, responsible maintainer/date and required gates. Obtain
+   the required source gates for that exact new candidate SHA; do not reuse
+   `636373d` as if it contained the new plan.
+3. Establish staging access and build/upload one original archive using
+   `build_and_upload_conda_packages.yaml` with the reviewed `candidate_sha` and
+   `version`. Retain the original filename, SHA-256 and producer receipts.
+4. Run `test_installed_conda_package.yaml` for that exact SHA/file/digest across
+   all eight supported cells. Require installation, installed-file validation,
+   complete scientific tests and the post-test provenance recheck in every cell.
+5. Review the publication decision only after qualification. Promotion preserves
+   those exact bytes; public-label/index and clean receiving checks remain
+   separate #10/#23 evidence. Update owning reports/issues with actual results.
+
+The maintainer permits direct commits/push to main; no PR is required for this
+internal route. General molecular manipulation remains MolSysMT-owned and
+missing provider capabilities are proposed through provider issues.
+
+### Independent follow-ups and local resources
+
+[#41](pending_proposals/retire_legacy_molecular_operations.md) remains partial:
+the newer sibling MolSysMT source moved H-bond APIs to `interactions.hbonds` and
+exposes directions, but that namespace/directional contract is not yet qualified
+by PHMT. Its exploratory shared-editable run failed; use the report's provider
+identity and evidence when reviewing migration. Do not treat it as the passing
+public MolSysMT 0.23.0 context or restore local molecular algorithms. Provider
+#375 qualification and environmental H refinement #323 are separate follow-ups.
+After the distribution segment, #20/#22 retain independent scientific-validation
+work; addon #58 remains lower priority with its provider-owned viewer blocker.
+
+Owned temporary resources are intentionally retained at
+`/tmp/phmt-installed-qualification-1wwqno5j` (also recorded by
+`/tmp/phmt-installed-qualification-path`): `public-env`,
+`build-envs/phmt-candidate-build`, `sdk-installed`, `support-artifacts` and
+`final-receptor`. Their presence was checked at pause. The build environment was
+created with qualified Mamba 2.9.0/declared-only channels. Recheck these resources
+before reuse; `/tmp` can disappear. Durable receipts are committed under
+`devguide/evidence/`, so resumption does not depend on those directories.
+Review owned temporary-resource cleanup when the candidate segment closes.
+
+## Prior pause checkpoint — 2026-10-13
 
 The implementation checkpoint is `eca174b`, published on the official
 `uibcdf/pharmacophoremt` main branch. Use the [current roadmap](roadmap.md)
