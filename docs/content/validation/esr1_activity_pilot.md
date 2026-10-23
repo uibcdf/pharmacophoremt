@@ -127,6 +127,15 @@ or confidence intervals. Small deterministic sampling, unqualified series overla
 one conformer and extensive ties prevent a general predictive claim. Population
 uncertainty and runtime/memory comparisons are not measured.
 
+**Subsequent qualification, 2026-10-23:** a separate analytical source control in
+[#63](https://github.com/uibcdf/pharmacophoremt/issues/63) confirms that a completed
+negative's partial coverage can change under a rigid translation of the same
+molecule when no triplet placement is fitted (1/3 to zero in the control). This
+is not a rerun of the public-runtime assay case. The original metrics above are
+preserved as outputs of the declared method; they must not be interpreted as
+ranking with a demonstrated frame-independent partial-match score. That local
+scoring contract is the next MVP task before expanding discrimination claims.
+
 ## Original outputs and maintenance
 
 The [summary](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_activity_pilot_20261023_summary.json)

@@ -92,7 +92,14 @@
   },
   "input_retention": {
     "originals": "/tmp/phmt-ligand-pilot-20261023",
-    "redistribution": "No raw Bath archive or PubChem SDF redistribution; URLs/hashes and attributed selected labels committed. Strict restore requires exact source bytes and fails closed on upstream refresh; retained originals are needed if the upstream response changes."
+    "redistribution": "No raw Bath archive or PubChem SDF redistribution; URLs/hashes and attributed selected labels committed. Strict restore requires exact source bytes and fails closed on upstream refresh; retained originals are needed if the upstream response changes.",
+    "local_bundle": {
+      "path": "/tmp/phmt-ligand-pilot-20261023/original-inputs-20261023.tar.gz",
+      "sha256": "fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995",
+      "bytes": 12495338,
+      "files": 35,
+      "redistribution": false
+    }
   },
   "environment": {
     "origin": "ordinary fresh public Conda environment, 311 records retained in full result",
@@ -150,6 +157,18 @@
     "prior_control_attempts": [
       "Initial administrative discovery lacked explicit SDK location; retried with accepted SDK.",
       "First SDK control run exposed namespace import pollution from the new archive guard; fixed standalone-reader loading, preserving clean support staging."
-    ]
+    ],
+    "after_ranking_qualification": {
+      "reporting": "3 passed",
+      "administrative_controls": "33 passed",
+      "ruff": "whole repository passed",
+      "strict_documentation": "PASS exit=0 | 1 passed | 7.81s"
+    }
+  },
+  "subsequent_ranking_qualification": {
+    "issue": "uibcdf/pharmacophoremt#63",
+    "probe": "rigid_negative_frame_probe_20261023.json",
+    "sha256": "f40733c3e617955b1c8e1308c2988feed83b63ac0e87550c7c3830d06eb2aedb",
+    "scope": "Separate source probe confirms frame-dependent partial negative coverage; original frozen public-runtime assay scores remain unchanged and cannot be promoted to demonstrated frame-independent molecular ranking."
   }
 }

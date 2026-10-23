@@ -16,6 +16,12 @@ query; it is not predictive acceptance. Next resolve durable original-input
 retention and receive provider-owned conformer/stereo capabilities (#219/#215)
 before declaring a new comparison. Do not retune on the observed held-out set.
 
+**Next local scientific task: [#63](pending_proposals/rigid_negative_ranking_contract.md).**
+A separate analytical source probe confirms that completed negatives can retain
+frame-dependent partial coverage. Define and qualify the ranking contract before
+extending comparative activity claims. Molecular transforms already use MolSysMT;
+this PharmacophoreMT scoring task does not depend on upstream preparation work.
+
 The first documentation foundation is delivered: inherited project identity (#4)
 and landing/user/developer/showcase entry points (#61) are corrected, strictly
 built and natively published. The [checkpoint](checkpoint.md) and archived reports

@@ -27,6 +27,14 @@ pairwise AUC/tie-aware EF arithmetic. They do not rerun molecular science.
 
 ### Next steps
 
+**First local MVP priority is now [#63](pending_proposals/rigid_negative_ranking_contract.md).**
+A separate source control reproduces partial negative coverage 1/3 → 0 under
+MolSysMT translation of the same propane input. Both searches remain completed
+negatives. Define/qualify the molecular ranking contract before expanding activity
+claims; this is local PharmacophoreMT work, not blocked by MolSysMT. The
+[original probe](evidence/rigid_negative_frame_probe_20261023.json) is distinct
+from the frozen public-runtime assay experiment and does not overwrite it.
+
 1. Preserve the frozen query and original run. Do not tune it on the exposed
    held-out outcomes. The native reference has two acceptors and one aromatic
    site; no donor is emitted, and no donor-bearing query acceptance is inferred.
@@ -40,6 +48,14 @@ pairwise AUC/tie-aware EF arithmetic. They do not rerun molecular science.
 4. Declare a distinct next comparison using reviewed training/evaluation data,
    conformer policy and frozen parameters. These exposed outcomes are development
    evidence, not a fresh independent test set. No addon is needed for this step.
+
+Provider handoffs are delivered in [MolSysMT #219](https://github.com/uibcdf/molsysmt/issues/219#issuecomment-6373946367)
+and [#215](https://github.com/uibcdf/molsysmt/issues/215#issuecomment-6373947311).
+Original inputs are additionally bundled locally as
+`/tmp/phmt-ligand-pilot-20261023/original-inputs-20261023.tar.gz` (35 files,
+12,495,338 bytes; SHA-256
+`fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995`).
+This is local retention, not public redistribution or a long-term archive service.
 
 Local acceptance passes: three pilot guards, 18 existing archive-reader tests,
 three reporting tests, all 33 administrative controls with immutable SDK
@@ -55,6 +71,17 @@ outputs remain in the owned directory, with portable output archives committed.
 No shared environment/cache is touched by cleanup. Prior public 0.4.0 delivery
 and central follow-ups remain
 unchanged; no new release or MolSysSuite availability notice is required here.
+
+Native receiving at scientific/evidence source
+`598d3744dc5348b497747d68f3a22a4c5d14ae53`: policy **40018408199**, Conda
+governance **40018408302** and Documentation **40018949108** succeed. CI
+**40018407677** has successful reporting governance; its eight scientific cells
+are still in progress at this observation. The push-only daily backlog detector
+is inapplicable/skipped, not executed acceptance. Do not claim eight-cell or
+exact-final-head completion from this snapshot. The documentary qualification
+and #63 inventory change pass all 33 local administrative controls, reporting,
+Ruff and complete strict Sphinx (7.81 s); the final unskipped push receives its
+own native gates. Follow the owning runs/#9 for unfinished native evidence.
 
 ## Current documentation outcome — 2026-10-23
 

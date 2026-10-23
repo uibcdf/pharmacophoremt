@@ -1,0 +1,115 @@
+{
+  "schema": "pharmacophoremt.rigid_negative_frame_probe@1",
+  "date": "2026-10-23",
+  "issue": "uibcdf/pharmacophoremt#63",
+  "scope": "Separate analytical source control; not a replay or correction of the original public-runtime activity pilot. No product fix is implemented.",
+  "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+  "source_head": "598d3744dc5348b497747d68f3a22a4c5d14ae53",
+  "source_worktree": "",
+  "molecular_provider_head": "48aba006fbe17336dfb5f564823711c2923f7e0b",
+  "molecular_provider_worktree": "",
+  "versions": {
+    "pharmacophoremt": "0.3.0+158.gcea4bba.dirty",
+    "molsysmt": "0.23.0+93.g48aba006f",
+    "pyunitwizard": "0.28.1+15.g6c62ca6",
+    "rdkit": "2026.3.1"
+  },
+  "source_hashes": {
+    "pharmacophoremt/screening/rigid_search.py": "414920a4ff2b6087689aac5cf4e1c8a6e9c45a95e83c5a47fbbffa7e6af99415",
+    "pharmacophoremt/screening/pose_evaluation.py": "7e75e3a4ad8deb48484f22ee816fb28f837a657c38b461d7603d477330f271b7",
+    "pharmacophoremt/screening/correspondence.py": "a24f238762f06022d1c5c58eb094fcad4760081472fbd3e34070aaf58ebd7c42",
+    "pharmacophoremt/modeler/features.py": "671b9d950223ae28bb24225835345bf606c1a4e092ef92df8f623d34f6b5aafd",
+    "phmt_test_support/absence_inputs.py": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e"
+  },
+  "provider_native_extensions": {
+    "_rust.abi3.so": "68a8eca03f98c82960a765f829972808b6f61731733d6e4f2abc0029d97b10c4"
+  },
+  "input": {
+    "fixture": "phmt_test_support.absence_inputs.system",
+    "smiles": "CCC",
+    "coordinates_nm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.15,
+        0,
+        0
+      ],
+      [
+        0.3,
+        0,
+        0
+      ]
+    ],
+    "query_centers_nm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0.15,
+        0,
+        0
+      ],
+      [
+        0,
+        0.15,
+        0
+      ]
+    ],
+    "radius_nm": 0.02,
+    "query_family": "hydrophobicity",
+    "translation_nm": [
+      2,
+      1,
+      3
+    ],
+    "transform": "molsysmt.structure.translate(in_place=False)"
+  },
+  "recognized_features": [
+    {
+      "kind": "hydrophobicity",
+      "atom_indices": [
+        1
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "status": "not_matched",
+      "fit_value": 0.3333333333333333,
+      "search": {
+        "method": "rigid_triplet_fit@1",
+        "max_trials": 10000,
+        "n_trials": 1,
+        "n_pruned": 1,
+        "n_proposals": 0,
+        "n_fitted": 0,
+        "enumeration_complete": true,
+        "termination": "enumeration_complete",
+        "identity_pose_tested": true
+      }
+    },
+    {
+      "status": "not_matched",
+      "fit_value": 0.0,
+      "search": {
+        "method": "rigid_triplet_fit@1",
+        "max_trials": 10000,
+        "n_trials": 1,
+        "n_pruned": 1,
+        "n_proposals": 0,
+        "n_fitted": 0,
+        "enumeration_complete": true,
+        "termination": "enumeration_complete",
+        "identity_pose_tested": true
+      }
+    }
+  ],
+  "initial_control": "Ethane has no recognized hydrophobic feature under this method and scores zero before/after translation; propane supplies the one-feature counterexample.",
+  "interpretation": "Completed negative fit_value is checked-pose coverage, not a guaranteed frame-independent molecular partial-match score. Hit decision remains negative."
+}

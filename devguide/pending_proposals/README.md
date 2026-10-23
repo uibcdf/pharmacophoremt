@@ -37,4 +37,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`noarch_distribution_adoption.md`](noarch_distribution_adoption.md) — [#10](https://github.com/uibcdf/pharmacophoremt/issues/10) — Adopt the distribution policy and a guarded single-file noarch publication route. *(partial, measured)*
 - [`retire_legacy_molecular_operations.md`](retire_legacy_molecular_operations.md) — [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) — Retire general molecular operations from reachable legacy workflows. *(partial, measured)*
 
+### Open (1)
+
+- [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(open, reproduced)*
+
 <!-- /generated -->
