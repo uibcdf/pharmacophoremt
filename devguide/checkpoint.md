@@ -1,6 +1,79 @@
 # Development Checkpoint
 
-## Current resumption checkpoint — 2026-10-23
+## Current delivery checkpoint — 2026-10-23
+
+**0.4.0 is public**: [GitHub Release](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0)
+and [official Conda package](https://anaconda.org/uibcdf/pharmacophoremt).
+The tag points to original producer
+`60b21b7d183217d50c29ea3e6bc0d05fb5b797a2`. One original
+`pharmacophoremt-0.4.0-py_0.tar.bz2` was promoted from staging to main with SHA-256
+`e5ed3a7c20ec36b9938fee51a6a9e0dc1654d7709d0d26ad75e49babac5d59a4`.
+Historical tags are unchanged. The maintainer's requested availability notice is
+[MolSysSuite #131](https://github.com/uibcdf/molsyssuite/issues/131).
+
+The [source/staging receipt](evidence/conda_040_staging_20261023_summary.json)
+retains all eleven required executed source/control jobs, recipe tests, producer
+39996616723 and the independently downloaded original archive. The
+[delivery receipt](evidence/conda_040_delivery_20261023_summary.json) retains
+installed run 39997342556 (**8/8 cells, 921 passing items each**), all four required
+phases, eight support execution/cleanup receipts, promotion/public-verifier run
+40002784859 and fresh normal public receiving on Linux/Python **3.14.9**.
+Normal Python bounds are honored. SDK call reports include unittest subtests and
+are distinct from the reported 921 test items. Existing warnings are retained.
+
+Producer and installed workflow head
+`c0f6ac65aad6fa7e1018636e6b0756668aed5459` adds only contributor/guide notices;
+the source, workflows, tests and support remain those of the original producer.
+The native binding and common verifier explicitly retain both identities. The
+accepted SDK remains `1c248b67d1daea256ed7c7f6172c6addb3f0b08f`; no later SDK
+capability or newer MolSysMT development API is adopted by this release.
+
+### What remains and where to resume
+
+1. **MolSysSuite #131 / #45:** receive the delivery and triage the automatic
+   Release-event route. Run 40004204755 is **failure**: the shared publisher rejects
+   a staged plan at the metadata-freeze guard. Build and upload steps are skipped;
+   this is separate from successful staging, installed science and promotion.
+   #10 remains partial for that route disposition; do not rebuild/overwrite 0.4.0
+   or move its tag to make this extra event green.
+2. **MolSysSuite #131 / #51 and local #23:** review central public Python admission
+   and generated badge/inventory updates. Four-minor installed evidence is now
+   delivered; the existing centrally admitted badge is retained pending disposition.
+3. **Local #41 / MolSysMT #375:** qualify the newer H-bond namespace/directional
+   contract separately, using provider-owned geometry. The release's qualified
+   public molecular-provider context is MolSysMT 0.23.0. Its retained pandas
+   warnings belong to the historical public version; #431/#386 have source fixes
+   and this receipt does not establish a regression against them. Environmental
+   hydrogen refinement #323 remains independent upstream work.
+4. **#20/#22:** continue the independent scientific/biological validation with
+   declared inputs and controls. New addon work remains deferred; #58 and its
+   viewer-owned blocker are not closed by package publication.
+
+Read the current owning issues before starting another segment. Public release
+availability does not establish biological/activity discrimination, newer-provider
+compatibility, public PyPI delivery or live-browser/hardware acceptance.
+
+### Closeout evidence and resources
+
+The final public receiving succeeds after an owned disk-quota cleanup and two
+corrections to the one-off audit script (external-provider recursion and optional
+test-extra metadata). These failed attempts are retained separately; no runtime
+package code, required gate or warning filter was changed to obtain the result.
+
+Completed historical/current receiving and build environments/caches were retired
+under the task-owned temporary roots. Shared user environments/caches are untouched.
+Original archive, clean producer clone and receipts remain under
+`/tmp/phmt-conda-040-20261023`; the accepted SDK and historical wheel/receipts remain
+under `/tmp/phmt-installed-qualification-1wwqno5j`. The old `public-env`, build envs
+and caches listed in the dated pause below no longer exist. Durable compressed
+receipts are committed here, so resumption does not depend on `/tmp` surviving.
+
+This documentation/evidence closeout uses `[skip ci]` after its applicable local
+checks. Ordinary CI debt and nightly/weekly/manual recovery remain owned by #9;
+it does not acquire the exact-source qualification of `60b21b7`. Current native
+documentation/coordination receipts are linked from #10 and MolSysSuite #131.
+
+## Prior resumption checkpoint — 2026-10-23
 
 The maintainer resumed work and confirmed the proposed **0.4.0** candidate by
 instructing continuation after the explicit version question. The active segment
@@ -28,7 +101,7 @@ already-qualified immutable SDK for this candidate.
 ## Prior pause checkpoint — 2026-10-20
 
 The maintainer requested a pause. Resume with this section and the
-[current roadmap](roadmap.md#current-priorities--2026-10-20), then consult the
+[current roadmap](roadmap.md), then consult the
 owning reports linked below. No build, test, upload or publication task needs to
 continue during the pause. New addon work remains deferred.
 

@@ -1,0 +1,40 @@
+{
+  "schema": "pharmacophoremt.conda-staging@1",
+  "date": "2026-10-23",
+  "owner": "uibcdf/pharmacophoremt#10",
+  "candidate_sha": "60b21b7d183217d50c29ea3e6bc0d05fb5b797a2",
+  "workflow_sha": "c0f6ac65aad6fa7e1018636e6b0756668aed5459",
+  "workflow_difference": "Only AGENTS.md and synchronized MOLSYSSUITE_GUIDE.md differ from producer; workflows, runtime, tests and support are unchanged.",
+  "sdk_sha": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+  "version": "0.4.0",
+  "build_number": 0,
+  "filename": "pharmacophoremt-0.4.0-py_0.tar.bz2",
+  "sha256": "e5ed3a7c20ec36b9938fee51a6a9e0dc1654d7709d0d26ad75e49babac5d59a4",
+  "bytes": 3261487,
+  "required_payload_paths": 179,
+  "source_scientific_cells": 8,
+  "executed_source_control_jobs": 11,
+  "source_run_ids": [
+    39990974160,
+    39990974580,
+    39990974884
+  ],
+  "producer_run_id": 39996616723,
+  "producer_run_attempt": 1,
+  "observed_labels": [
+    "staging"
+  ],
+  "staging_access": "Verified by actual exact-file upload; no credential value read.",
+  "scope": "Successful source gates, recipe-tested single Conda archive, native staging receipt, independent registry/download digest and shared handoff. No installed-matrix or public-delivery claim.",
+  "notes": [
+    "The handoff is a read-only consistency check; its suggested installed dispatch matches the run already started. It did not repeat that mutation.",
+    "The historical requested 0.1.0 tag is unchanged; the maintainer confirmed 0.4.0 on resumption."
+  ],
+  "full_evidence": {
+    "path": "conda_040_staging_20261023.json.gz",
+    "compressed_sha256": "9ad4e155fb4d51bf06bfbd9e68c58940f2279e66598ad5bbe19135bfdeced412",
+    "uncompressed_sha256": "15009a2f8021155d262df070248cec1d72888c3e2dfb96adc411d5342c0fe4e6",
+    "compressed_bytes": 4933,
+    "uncompressed_bytes": 39214
+  }
+}

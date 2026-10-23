@@ -8,12 +8,22 @@
 
 Coverage: PharmacophoreMT Python tests, uploaded from Linux/Python 3.13 on eligible full CI runs; weekly and conditional nightly recovery retain the existing cadence. The badge reflects the last uploaded report, which may lag later direct or skip-CI commits; it does not certify a full matrix or scientific correctness.
 
-The development source supports Python **3.11–3.14** (`>=3.11,<3.15`). Full CI
-and installed-candidate qualification are configured for all four versions;
-passing evidence is recorded separately for the exact source or artifact. Public package
-qualification is tracked in [#23](https://github.com/uibcdf/pharmacophoremt/issues/23);
-the release badge above retains the previously qualified range.
+The development source supports Python **3.11–3.14** (`>=3.11,<3.15`). Release
+**[0.4.0](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0)** is public
+on the official Conda channel, with eight installed Linux/macOS arm64 × Python
+3.11–3.14 cells passing. Exact artifact evidence and central admission are tracked
+in [#23](https://github.com/uibcdf/pharmacophoremt/issues/23) and
+[MolSysSuite #131](https://github.com/uibcdf/molsyssuite/issues/131); the Python
+badge retains the centrally admitted range pending that disposition.
 
 A Pharmacophore MultiToolkit designed to simplify and streamline the detection,
 generation, analysis, comparison, and application of pharmacophore models in
 drug-design strategies.
+
+Install the qualified public molecular-provider context with:
+
+```bash
+conda create -n pharmacophoremt --strict-channel-priority -c uibcdf -c conda-forge pharmacophoremt=0.4.0 molsysmt=0.23.0
+```
+
+See [installation and qualification scope](docs/content/about/installation.md).

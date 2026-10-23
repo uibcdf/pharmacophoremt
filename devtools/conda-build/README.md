@@ -1,17 +1,38 @@
 # PharmacophoreMT Conda publication
 
 Owning review: uibcdf/pharmacophoremt#10; coordination: uibcdf/molsyssuite#45.
-This is a noarch publication route with partial qualification and unconfirmed
-publication access. The reviewed real `release_plan.toml` selects staged candidate
-**0.4.0, build 0**, confirmed by the maintainer on 2026-10-23. Public promotion
-remains a separate decision after exact-file installed qualification.
+The reviewed staged **0.4.0, build 0** is public. One original archive passed
+recipe/source gates, all eight installed cells and same-byte promotion, then
+independent public-index and normal clean-install receiving. Publication access
+is verified by those actual operations; no credential value was read. #10 remains
+partial for the shared automatic Release-event route disposition in
+[MolSysSuite #131](https://github.com/uibcdf/molsyssuite/issues/131).
 
 The four publication wrappers and dependency/environment preflight pin the
 reviewed support-capable SDK `1c248b67d1daea256ed7c7f6172c6addb3f0b08f`.
 The previous separately accepted pins remain identified in dated records below.
 The existing
-`ANACONDA_UIBCDF_TOKEN` mapping is retained; its availability/validity remains
-unconfirmed. Follow the [shared noarch workflow guide](https://github.com/uibcdf/molsyssuite/blob/main/devguide/noarch_conda_workflow.md).
+`ANACONDA_UIBCDF_TOKEN` mapping is retained and worked for staging/promotion.
+Follow the [shared noarch workflow guide](https://github.com/uibcdf/molsyssuite/blob/main/devguide/noarch_conda_workflow.md).
+
+## Delivered 0.4.0 — 2026-10-23
+
+Original source/tag target: `60b21b7d183217d50c29ea3e6bc0d05fb5b797a2`.
+Archive: `pharmacophoremt-0.4.0-py_0.tar.bz2`; SHA-256:
+`e5ed3a7c20ec36b9938fee51a6a9e0dc1654d7709d0d26ad75e49babac5d59a4`.
+Producer 39996616723 and installed run 39997342556 retain qualification head
+`c0f6ac65aad6fa7e1018636e6b0756668aed5459`, whose only difference is instruction/
+guide notices. All four required phases pass in all eight installed cells, each
+with 921 passing test items. Promotion/public verifier 40002784859 and fresh normal
+public receiving on Linux/Python 3.14.9 pass without replacing the archive.
+See the [source/staging receipt](../../devguide/evidence/conda_040_staging_20261023_summary.json)
+and [delivery receipt](../../devguide/evidence/conda_040_delivery_20261023_summary.json).
+
+The automatic Release-event run 40004204755 is failure: the shared publisher
+rejects a staged plan at its metadata-freeze guard. Build/upload steps are skipped.
+This extra event did not rebuild or replace the already verified public file.
+Review the shared route under #131/#45; do not repeat producer/promotion to make
+that event green. Dated preparation sections below retain their historical scope.
 
 ## Candidate and file identity
 

@@ -210,3 +210,21 @@ The final evidence/documentation-only handoff uses `[skip ci]` after local
 reporting/index and archive-envelope checks. It retains ordinary CI debt and
 daily/weekly/manual recovery under #9; it does not certify its own later SHA or
 authorize a release. The complete source result remains bound to `636373d`.
+
+### Exact 0.4.0 candidate and documentation closeout — 2026-10-23
+
+New original source `60b21b7d183217d50c29ea3e6bc0d05fb5b797a2` independently
+passes source run 39990974160 (all eight scientific cells and reporting), policy
+39990974580 and Conda governance 39990974884: eleven executed required jobs.
+The [0.4.0 staging receipt](../evidence/conda_040_staging_20261023_summary.json)
+retains native source proof. Eight installed artifact cells, public promotion/
+receiving and tag/Release identity are separate in the
+[delivery receipt](../evidence/conda_040_delivery_20261023_summary.json).
+
+The final documentation/evidence-only closeout uses `[skip ci]` with applicable
+local reporting/archive/index checks. Ordinary backlog recovery remains owned
+here; no later documentation SHA acquires the candidate's scientific result.
+The automatic Release-event publisher is a distinct failed workflow at a shared
+staged-route guard (#10 / MolSysSuite #131); its build/upload steps are skipped.
+Do not call it green, repeat publication, or conflate it with the successful source
+and installed scientific matrices. Required external-PR/recovery scope remains open.

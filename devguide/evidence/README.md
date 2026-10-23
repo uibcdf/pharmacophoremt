@@ -7,6 +7,19 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Conda 0.4.0 delivery — 2026-10-23
+
+The [source/staging summary](conda_040_staging_20261023_summary.json) and
+[installed/public summary](conda_040_delivery_20261023_summary.json) have separate
+checksum-qualified gzip envelopes. They retain original source and workflow
+identities, eleven source/control jobs, the one archive and digest, eight native
+installed cells and support cleanup, same-byte promotion, public index and normal
+receiving, tag/Release identity and MolSysSuite #131. Each cell passes 921 test
+items; SDK call reports include unittest subtests. Warnings, the unrelated
+Release-event staged-route failure, and corrected preparatory audit failures are
+explicitly preserved. These are distribution controls, not new biological or
+browser acceptance.
+
 `validation_collection_review_py314.json` records the 2026-10-07 publication
 review: 16 archive/CI controls, 23 integrated distribution/environment controls,
 executed demonstration blocks, detached citation reading and original gzip

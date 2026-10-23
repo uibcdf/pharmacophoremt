@@ -148,3 +148,20 @@ is superseded by #55 and this bounded public receiving result; it is not replace
 by a full installed/public delivery claim. Central MolSysSuite #56 receives the
 linked checkpoint; its registry is not edited in this component. No automatic
 new dependency floor, source pin, public extra or policy adoption is introduced.
+
+## Public 0.4.0 receiving observation — 2026-10-23
+
+The [delivery receipt](../evidence/conda_040_delivery_20261023_summary.json)
+qualifies the real Conda archive on eight installed cells with the declared test
+tools, plus a separate normal public Linux/Python 3.14.9 receiving smoke. That
+fresh environment contains ArgDigest 0.17.0, SMonitor 0.22.0, DepDigest 0.15.1 and
+PyUnitWizard 0.28.1; it does not add the scientific test extras. Cached model
+construction, native JSON recovery, units and payload origins pass.
+
+With optional Beartype absent, stderr emits both a required-library error message
+and the explicit type-check-disabled warning while the product controls succeed.
+Retain this nonblocking diagnostic observation for ArgDigest/DepDigest owner
+review under #6; it does not establish incorrect scientific output or justify a
+local suppression/implementation, new dependency floor or broad support-adoption
+closure. The two corrected one-off audit-script scope mistakes are documented
+as consumer instrumentation failures, not provider regressions. #6 remains partial.

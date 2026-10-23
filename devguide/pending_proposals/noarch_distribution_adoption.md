@@ -455,3 +455,38 @@ complete installed matrix. No archive or public delivery is claimed by this
 decision. MolSysSuite independently received the earlier source/helper milestone
 on 2026-10-21, without reinstalling the original wheel; see the
 [central receipt](https://github.com/uibcdf/molsyssuite/blob/338a4fceb81a11e3eec89635bb9d8ae0b054de65/devguide/rollouts/pharmacophoremt_support_receiving_45_20261021.json).
+
+### Public 0.4.0 delivery and remaining route disposition — 2026-10-23
+
+Original producer/tag target `60b21b7d183217d50c29ea3e6bc0d05fb5b797a2` now has
+all eleven required source/control jobs passing. Producer 39996616723 builds and
+recipe-tests one `pharmacophoremt-0.4.0-py_0.tar.bz2`, SHA-256
+`e5ed3a7c20ec36b9938fee51a6a9e0dc1654d7709d0d26ad75e49babac5d59a4`.
+Independent staging metadata/download and the shared noarch handoff match.
+Installed run 39997342556 passes all eight Linux/macOS arm64 × Python 3.11–3.14
+cells, **921 test items each**, with all four phases and eight support execution/
+cleanup receipts. Qualification head `c0f6ac6` adds instruction/guide notices only;
+the native binding and verifier keep it distinct from the producer.
+
+Promotion/public verifier 40002784859 passes and retains the original digest and
+staging label while adding main. Fresh ordinary public receiving on Linux/Python
+3.14.9 passes version/digest, Python bounds, cached-model construction, native JSON
+recovery, units and the shared PHMT/addon payload-origin check. The initial quota
+failure and two corrected one-off audit mistakes are retained separately. Runtime
+package code, required scientific gates and warning behavior are unchanged.
+The [source/staging archive](../evidence/conda_040_staging_20261023_summary.json) and
+[delivery archive](../evidence/conda_040_delivery_20261023_summary.json) preserve
+these identities and scope limits. The 3,500 warnings per installed cell remain
+recorded, predominantly the old public MolSysMT pandas warnings already owned by
+#431/#386; no regression against their source fixes is claimed.
+
+The [public Release](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0)
+has exact title/tag 0.4.0 and its target is independently verified. Tag-policy run
+40004034116 succeeds. The maintainer's central availability notice is
+[MolSysSuite #131](https://github.com/uibcdf/molsyssuite/issues/131).
+
+#10 remains partial for the shared Release-event route disposition: automatic
+run 40004204755 is failure at the staged-plan metadata-freeze guard, with build/
+upload skipped. This is separate from the successful staged producer, installed
+matrix, promotion and public receiving. #131/#45 owns triage; do not rebuild,
+overwrite the file or move the public tag. Central Python admission remains #23.

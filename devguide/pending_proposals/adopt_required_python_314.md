@@ -73,6 +73,31 @@ configuration does not authorize public upload or a delivered-support badge.
 The recovery regression is
 `tests/test_ci_backlog.py::test_a_previous_three_minor_matrix_cannot_clear_314_debt`.
 
+## Public four-minor delivery — 2026-10-23
+
+Release **0.4.0**, tag target `60b21b7d183217d50c29ea3e6bc0d05fb5b797a2`, is
+public on the official Conda channel. Source run 39990974160 and the two independent
+governance workflows pass eleven executed required jobs. Installed run 39997342556
+passes the original noarch file on all eight Linux/macOS arm64 × Python
+3.11–3.14 cells, each with 921 passing test items and all four mandatory phases.
+Promotion and independent public-label/index verification preserve the original
+digest. Fresh normal public receiving on Linux/Python **3.14.9** honors
+`>=3.11,<3.15` and passes the product/version/JSON/unit/origin controls.
+
+See [the delivery receipt](../evidence/conda_040_delivery_20261023_summary.json),
+the [Release](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0) and
+[MolSysSuite #131](https://github.com/uibcdf/molsyssuite/issues/131). The source,
+qualification workflow, exact file and public receiving retain separate identities.
+Failed preparatory quota/audit attempts and existing warnings are retained; there
+is no Python-bound bypass or biological/browser claim. Current source-provider
+H-bond receiving remains separate under #41.
+
+#23 remains partial for central public admission/badge/inventory disposition under
+#131/#51. The component retains its previously centrally admitted badge rather
+than manually inferring admission from publication. The extra automatic Release
+publisher's staged-route failure stays with #10/#131 and does not rewrite the
+successful installed/public results. Historical checkpoints below keep their dates.
+
 ### Test-results publisher condition inspected on 2026-10-03
 
 Expanding the matrix exposed an existing malformed mixed expression in the

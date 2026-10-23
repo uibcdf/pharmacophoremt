@@ -2,6 +2,21 @@
 
 ## Current priorities — 2026-10-23
 
+**0.4.0 is delivered** through the official Conda channel and GitHub Release.
+The [delivery checkpoint](checkpoint.md) links original source/staging, all eight
+installed cells (921 passing items each), same-byte public promotion and fresh
+normal Linux/Python 3.14.9 receiving. The requested release-specific notice is
+[MolSysSuite #131](https://github.com/uibcdf/molsyssuite/issues/131).
+
+Next, receive central public admission/badge disposition under #23/#131 and the
+shared automatic Release-event route under #10/#131. That extra event rejects
+the staged plan before build/upload; it does not invalidate the separately
+verified staged promotion. Preserve the original tag/file. Independent work can
+resume at #41's newer-provider receiving or #20/#22's scientific validation;
+general molecular work stays with MolSysMT and new addon work remains deferred.
+
+## Prior candidate decision — 2026-10-23
+
 The maintainer resumed the distribution segment and confirmed **0.4.0**. The real
 [`release_plan.toml`](../devtools/conda-build/release_plan.toml) selects build 0,
 one noarch archive and staging, retaining all eight installed cells and eleven

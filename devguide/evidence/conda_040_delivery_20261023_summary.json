@@ -1,0 +1,175 @@
+{
+  "schema": "pharmacophoremt.conda-delivery@1",
+  "date": "2026-10-23",
+  "owners": [
+    "uibcdf/pharmacophoremt#10",
+    "uibcdf/pharmacophoremt#23"
+  ],
+  "version": "0.4.0",
+  "build_number": 0,
+  "filename": "pharmacophoremt-0.4.0-py_0.tar.bz2",
+  "sha256": "e5ed3a7c20ec36b9938fee51a6a9e0dc1654d7709d0d26ad75e49babac5d59a4",
+  "candidate_sha": "60b21b7d183217d50c29ea3e6bc0d05fb5b797a2",
+  "qualification_sha": "c0f6ac65aad6fa7e1018636e6b0756668aed5459",
+  "sdk_sha": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+  "staging_summary": "conda_040_staging_20261023_summary.json",
+  "installed": {
+    "run_id": 39997342556,
+    "run_attempt": 1,
+    "state": "verified",
+    "cells": 8,
+    "test_items_passed_per_cell": 921,
+    "warning_count_per_cell": 3500,
+    "mandatory_phases": 4,
+    "support": [
+      {
+        "cell_artifact": "installed-test-support-linux-64-py3.11-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-linux-64-py3.12-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-linux-64-py3.13-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-linux-64-py3.14-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-osx-arm64-py3.11-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-osx-arm64-py3.12-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-osx-arm64-py3.13-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      },
+      {
+        "cell_artifact": "installed-test-support-osx-arm64-py3.14-39997342556-1",
+        "executed_call_reports": 938,
+        "state": "verified-support",
+        "resources_retired": true,
+        "imports_retired": true
+      }
+    ]
+  },
+  "promotion": {
+    "run_id": 40002784859,
+    "run_attempt": 1,
+    "state": "verified",
+    "source_label": "staging",
+    "target_label": "main",
+    "rebuilt": false
+  },
+  "public_verification": "Native common main-label/index receipt and fresh shared public-verified handoff; unchanged original digest.",
+  "public_receiving": {
+    "state": "passed",
+    "python": "3.14.9",
+    "requires_python": "<3.15,>=3.11",
+    "controls": [
+      "normal public channel record and digest",
+      "public runtime/version",
+      "cached site construction",
+      "native JSON recovery",
+      "explicit units",
+      "shared runtime-root origin checks"
+    ],
+    "versions": {
+      "pharmacophoremt": "0.4.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "nglview": "4.0.1",
+      "molsysmt": "0.23.0",
+      "pyunitwizard": "0.28.1",
+      "argdigest": "0.17.0",
+      "smonitor": "0.22.0",
+      "depdigest": "0.15.1",
+      "rdkit": "2026.9.1",
+      "networkx": "3.7"
+    },
+    "conda_records": 309,
+    "source_or_editable_install": false,
+    "staging_install": false,
+    "administrative_extras": [
+      "pyyaml>=6,<7",
+      "jinja2>=3,<4",
+      "packaging>=24"
+    ]
+  },
+  "release": {
+    "url": "https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0",
+    "name": "0.4.0",
+    "tag": "0.4.0",
+    "target": "60b21b7d183217d50c29ea3e6bc0d05fb5b797a2",
+    "published_at": "2026-10-23T18:33:00Z",
+    "tag_policy_run_id": 40004034116
+  },
+  "central_notice": "https://github.com/uibcdf/molsyssuite/issues/131",
+  "release_event": {
+    "run_id": 40004204755,
+    "conclusion": "failure",
+    "failed_step": "Freeze reviewed metadata in the ephemeral build checkout",
+    "reason": "Shared publisher rejects a staged plan on the automatic Release event, after independently successful staged promotion.",
+    "build_and_upload_steps": "skipped",
+    "owner": "uibcdf/molsyssuite#131 / #45"
+  },
+  "preparatory_receiving_failures": [
+    {
+      "case": "public-create-quota-failure",
+      "result": "failed downloading because local disk quota was exceeded",
+      "resolution": "Retired only completed owned historical environments/cache; identical normal public create then succeeded."
+    },
+    {
+      "case": "origin-expansion-failure",
+      "result": "Additional audit applied payload recursion to third-party dynamic pyunitwizard.main",
+      "resolution": "Restored the SDK-selected PHMT/addon payload-root scope; no required gate changed."
+    },
+    {
+      "case": "optional-extras-receipt-failure",
+      "result": "Audit receipt incorrectly required optional pytest extras as runtime metadata",
+      "resolution": "Evaluated extra markers for ordinary runtime requirements; no scientific test extras installed."
+    }
+  ],
+  "resource_closeout": "Completed historical and current receiving/build environments and caches retired; original archive, source, SDK and receipts retained. No shared environment/cache touched.",
+  "limits": [
+    "No biological/activity-based or new live-browser/hardware claim.",
+    "Provider pandas warnings from public MolSysMT 0.23.0 and controlled warnings remain; #431/#386 are existing upstream work, not new regressions.",
+    "Public receiving emits optional beartype absence diagnostics while the product smoke succeeds; no warning-free claim.",
+    "Central Python admission/badge disposition remains with MolSysSuite #131/#51 and local #23.",
+    "The Release-event failure is preserved separately from successful source, installed, promotion and receiving evidence."
+  ],
+  "full_evidence": {
+    "path": "conda_040_delivery_20261023.json.gz",
+    "compressed_sha256": "3c94819c1c0625d877b073aaf24d019b547b963025797aee85d6777a67ec78ae",
+    "uncompressed_sha256": "06cbe1491b5c3b406d548f2295e4160aceb2bfe77efa2cc9f8b8c4ff834f3793",
+    "compressed_bytes": 120655,
+    "uncompressed_bytes": 983231
+  }
+}

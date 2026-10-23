@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** Resumed 2026-10-23: staged Conda 0.4.0 plan, completed preparation, evidence and ordered qualification steps.
+3. [Checkpoint](checkpoint.md): **Start here!** Delivery as of 2026-10-23: public Conda/GitHub Release 0.4.0, exact-file evidence, central notice and remaining owner actions.
 
 ## Classical Workflow Specification
 
