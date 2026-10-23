@@ -1,5 +1,61 @@
 # Development Checkpoint
 
+## Current MVP checkpoint — 2026-10-23
+
+The maintainer resumed the scientific MVP and deferred deeper documentation and
+addon work. [#62](pending_proposals/esr1_activity_pilot.md) now has an executed,
+pre-score frozen ligand-reference ERα signaling-assay pilot. The protocol/driver
+producer is `ee064102f3701a280297e01ec0c549207f10bfd3`; the runtime is installed
+public PharmacophoreMT 0.4.0 / MolSysMT 0.23.0, Linux/Python 3.14.9, with all
+311 Conda records and native-extension identities in the full output. No runtime
+or molecular-provider code is changed.
+
+The [summary](evidence/esr1_activity_pilot_20261023_summary.json) qualifies the full
+result, saved query, preparation journal and log. Four contradictory-label CIDs
+were excluded before any scores. Of the 32 selected inputs, one is the reference;
+seven active and 24 inactive inputs are held out. Five lack PubChem 3D records;
+MolSysMT rejects one further stereo interpretation. **25 inputs are evaluated
+(6 active / 19 inactive), six remain unscored (1 / 5)**. AUC is 0.5614, EF at
+10% 1.69, one active hits and 23 scores tie at zero. The missing-score hypothetical
+AUC range is 0.4494–0.6280. This is weak exploratory evidence, not a predictive
+qualification; exact CID disjointness does not establish independent series.
+
+The [case](../docs/content/validation/esr1_activity_pilot.md) supplies executable
+commands, original labels and method/units/attribution boundaries. Three cheap
+offline guards check original identities, failures/denominators and independent
+pairwise AUC/tie-aware EF arithmetic. They do not rerun molecular science.
+
+### Next steps
+
+1. Preserve the frozen query and original run. Do not tune it on the exposed
+   held-out outcomes. The native reference has two acceptors and one aromatic
+   site; no donor is emitted, and no donor-bearing query acceptance is inferred.
+2. Resolve portable long-term retention of original input bytes under #62. The
+   owned `/tmp/phmt-ligand-pilot-20261023` retains source archives, primary assay
+   description/table and 27 SDFs; the committed manifest has URLs/hashes. Raw
+   input redistribution is not claimed. Strict restore refuses refreshed
+   responses; preserve originals if upstream bytes change.
+3. Follow consumer evidence in provider-owned MolSysMT #219 (missing conformers)
+   and #215/#299 (explicit stereo rejection); do not repair molecules here.
+4. Declare a distinct next comparison using reviewed training/evaluation data,
+   conformer policy and frozen parameters. These exposed outcomes are development
+   evidence, not a fresh independent test set. No addon is needed for this step.
+
+Local acceptance passes: three pilot guards, 18 existing archive-reader tests,
+three reporting tests, all 33 administrative controls with immutable SDK
+`1c248b67d1daea256ed7c7f6172c6addb3f0b08f`, whole-repository Ruff and complete
+strict Sphinx build (one test, 7.73 s). The first SDK control run caught the new
+guard importing the unshipped namespace before its staging test; loading the
+canonical standalone reader without namespace registration repairs isolation.
+No scientific rerun or data/score change is involved.
+
+The isolated environment has been **retired after successful execution**; all
+27 original SDF checksums were reverified before cleanup. Original inputs and
+outputs remain in the owned directory, with portable output archives committed.
+No shared environment/cache is touched by cleanup. Prior public 0.4.0 delivery
+and central follow-ups remain
+unchanged; no new release or MolSysSuite availability notice is required here.
+
 ## Current documentation outcome — 2026-10-23
 
 The first documentation foundation is complete. The inherited identity (#4) and

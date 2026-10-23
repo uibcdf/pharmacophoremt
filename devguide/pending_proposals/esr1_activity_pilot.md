@@ -1,12 +1,12 @@
 ---
 summary: Frozen ligand-reference ERα assay pilot with held-out experimental outcomes.
 issue: uibcdf/pharmacophoremt#62
-status: active
+status: partial
 opened: 2026-10-23
 closed:
-verification: inspected
+verification: measured
 area: [validation, mvp]
-guard: devtools/tests/test_esr1_activity_pilot.py::TestEsr1ActivityPilot::test_frozen_split_excludes_ambiguous_compounds_and_reference_leakage
+guard: devtools/tests/test_esr1_activity_pilot.py::TestEsr1ActivityPilot::test_original_accounting_and_metrics_have_independent_oracles
 normative: devguide/validation_collection.md
 blocked_by: []
 supersedes: []
@@ -68,9 +68,33 @@ Any later consensus or conformer continuation has a distinct declared run.
 
 ## Current evidence
 
-Acquisition and pre-score data qualification are implemented: 32 inputs are
-frozen; 27 have a PubChem 3D record and five return HTTP 404 (one held-out active,
-four inactives). Those inputs remain in the experiment without replacement.
-The offline split/ambiguity guard passes. Scientific execution and acceptance
-are pending; this report does not claim discrimination.
-Addon, release infrastructure and deeper documentation remain deferred.
+The pre-score protocol/driver is committed at
+`ee064102f3701a280297e01ec0c549207f10bfd3`; the installed public runtime is
+PharmacophoreMT 0.4.0 / MolSysMT 0.23.0, Python 3.14.9. No source runtime changes
+or new provider implementation is needed. The [summary](../evidence/esr1_activity_pilot_20261023_summary.json)
+qualifies original full output, preparation journal, saved query and log.
+
+Of 32 inputs, 27 have PubChem 3D records; one further input (CID 6842999) is
+rejected by MolSysMT's explicit stereo guard. Reference self-fit is 1; its query
+emits two acceptors and one aromatic site, with no donor. Held-out outcomes are
+25 evaluated (6 active / 19 inactive) and six unscored (1 active / 5 inactive).
+One active hits; 23 scores tie at zero. AUC is 0.5614035088, BEDROC(alpha=20)
+0.5994951770, EF at 10% 1.6908212560. All 25 declared triplet enumerations
+complete, with at most 256 raw trials; continuous pose/conformer completeness is
+not established. Failure-bound hypothetical AUC is 0.4494–0.6280, not a confidence
+interval. This is weak exploratory discrimination, not predictive acceptance.
+
+The [case](../../docs/content/validation/esr1_activity_pilot.md) explains exact
+denominators, failed-input placeholders versus original preparation causes,
+small deterministic sampling, unresolved chemical-series overlap, actual
+Ackredit payloads and the lack of population/performance claims. Three offline
+guards independently check split/provenance and pairwise AUC/tie-aware EF.
+
+Remaining acceptance is portable long-term original-input retention: raw SDF
+and source archives remain in the owned acquisition directory; public strict
+restore refuses changed bytes, so refreshed source responses may require those
+originals. No blanket PubChem redistribution license is inferred. Keep this
+issue partial for that disposition and the next separately declared comparison.
+New conformer capability belongs to MolSysMT #219; stereo interpretation belongs
+to #215/#299. No local workaround or silent state repair is added. Addon,
+release infrastructure and deeper documentation remain deferred.

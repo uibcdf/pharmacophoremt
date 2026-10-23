@@ -1,0 +1,155 @@
+{
+  "schema": "pharmacophoremt.esr1_activity_pilot_summary@1",
+  "date": "2026-10-23",
+  "issue": "uibcdf/pharmacophoremt#62",
+  "run_id": "esr1ago-reference-20261023-01",
+  "producer": "ee064102f3701a280297e01ec0c549207f10bfd3",
+  "driver": {
+    "file": "esr1_activity_pilot.py",
+    "sha256": "390c3be450104a8c4a1ed119c25f569877332823e03ccf1208c13842ff558fb1",
+    "byte_count": 20837
+  },
+  "manifest": {
+    "file": "manifest.json",
+    "sha256": "23aba072556e806f9b0d9ea5c06c322f1502855356d538e90a7c3a9e8e25e9ac",
+    "byte_count": 20590
+  },
+  "method": {
+    "features": [
+      "hb donor",
+      "hb acceptor",
+      "aromatic ring"
+    ],
+    "radius": "0.15 nm",
+    "max_trials": 10000,
+    "point_tolerance": "0.10 nm",
+    "direction_tolerance": "30 degrees",
+    "min_fit_value": 0.0,
+    "ef_fractions": [
+      0.1
+    ],
+    "bedroc_alpha": 20.0
+  },
+  "runtime_versions": {
+    "pharmacophoremt": "0.4.0",
+    "molsysmt": "0.23.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "rdkit": "2026.9.1",
+    "pandas": "3.1.0",
+    "pyunitwizard": "0.28.1",
+    "argdigest": "0.17.0",
+    "smonitor": "0.22.0",
+    "depdigest": "0.15.1",
+    "ackredit": "0.12.1"
+  },
+  "counts": {
+    "reference": 1,
+    "selected_held_out_actives": 7,
+    "selected_held_out_inactives": 24,
+    "evaluated_actives": 6,
+    "evaluated_inactives": 19,
+    "failed_actives": 1,
+    "failed_inactives": 5,
+    "active_hits": 1,
+    "inactive_hits": 0,
+    "zero_scores": 23
+  },
+  "metrics": {
+    "AUC": 0.5614035087719298,
+    "BEDROC": 0.5994951770071334,
+    "EF@10%": 1.6908212560386475
+  },
+  "failure_sensitivity_AUC": {
+    "pessimistic_hypothetical_scores": 0.4494047619047619,
+    "optimistic_hypothetical_scores": 0.6279761904761905,
+    "scope": "score-bound sensitivity over all 31 selected held-out inputs, not confidence intervals or imputed results"
+  },
+  "interpretation": "Weak exploratory single-reference/single-conformer assay discrimination; 23/25 evaluable scores are tied at zero. No predictive, binding-affinity, series-independent or full LIT-PCBA claim. No held-out optimization.",
+  "failures": {
+    "pubchem_3d_unavailable": [
+      "154256",
+      "9576185",
+      "9984487",
+      "21124389",
+      "92151"
+    ],
+    "molsysmt_unsupported_stereo": [
+      "6842999"
+    ],
+    "search_budget_failures": 0
+  },
+  "search": {
+    "evaluated_enumerations_complete": 25,
+    "largest_raw_trial_count": 256,
+    "max_trials": 10000,
+    "reference_self_fit": 1.0
+  },
+  "attribution": {
+    "portable_items": 42,
+    "portable_uses": 72,
+    "scope": "Actual enclosing Ackredit capture plus native per-result payloads; reviewed LIT-PCBA literature is cited separately."
+  },
+  "input_retention": {
+    "originals": "/tmp/phmt-ligand-pilot-20261023",
+    "redistribution": "No raw Bath archive or PubChem SDF redistribution; URLs/hashes and attributed selected labels committed. Strict restore requires exact source bytes and fails closed on upstream refresh; retained originals are needed if the upstream response changes."
+  },
+  "environment": {
+    "origin": "ordinary fresh public Conda environment, 311 records retained in full result",
+    "prefix": "/tmp/phmt-ligand-pilot-20261023/environment",
+    "scope": "local scientific pilot, not a new release qualification",
+    "state": "Owned isolated prefix retired after successful completed run; originals, archives, receipts and public recreation command retained. No shared environment/cache modified by cleanup."
+  },
+  "guards": [
+    "devtools/tests/test_esr1_activity_pilot.py"
+  ],
+  "limits": [
+    "One deterministic reference and a small selected evaluation cohort.",
+    "Only exact CID leakage is controlled; chemical-series overlap is unqualified.",
+    "One supplied PubChem computed conformer, not a verified bound pose or conformer-ensemble search.",
+    "The emitted query contains two acceptors and one aromatic site; no donor is emitted.",
+    "Six failures excluded from measured metrics; hypothetical sensitivity is separate.",
+    "Only declared triplet proposal enumeration is complete; no guarantee of exhaustive continuous pose/conformer search.",
+    "No inferential uncertainty interval or computational-performance comparison."
+  ],
+  "full_evidence": {
+    "path": "esr1_activity_pilot_20261023.json.gz",
+    "compressed_sha256": "0be4db53bf2816451d7770ac3949749a5bfbcbc14074156456a24854dea7cc48",
+    "compressed_bytes": 667782,
+    "uncompressed_sha256": "954550324a1f9fd805e2aa4e6eb919ab7a855e2628d4ff8f96019c04b997b145",
+    "uncompressed_bytes": 7758687
+  },
+  "saved_query_archive": {
+    "path": "esr1_activity_pilot_20261023_query.json.gz",
+    "compressed_sha256": "ddc326f938e80f6acdf74b8d4e8ca63e817c71f8489f11dd09cae1b1c5d1bc9a",
+    "compressed_bytes": 6672,
+    "uncompressed_sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+    "uncompressed_bytes": 86446
+  },
+  "preparation_archive": {
+    "path": "esr1_activity_pilot_20261023_preparation.json.gz",
+    "compressed_sha256": "208bd617eec47a114a97584c601ef335ef93bffd5a611f84f3ec8030ad8d34bb",
+    "compressed_bytes": 153462,
+    "uncompressed_sha256": "9b6301474ce1f4c4c16bec14c636ef195f4b632f6ff6cfdad18460a0fdb5ee32",
+    "uncompressed_bytes": 2697722
+  },
+  "run_log_archive": {
+    "path": "esr1_activity_pilot_20261023.log.gz",
+    "compressed_sha256": "270db7cad014152dc72a3637ad28aa602e32e8f18481e796006b9777b1e48d51",
+    "compressed_bytes": 3727,
+    "uncompressed_sha256": "65de253dcdfbc13e24e6488fb07c03c449cabb0de3eb79456b1e05db81bd897d",
+    "uncompressed_bytes": 37597
+  },
+  "local_validation": {
+    "ruff": "whole repository passed",
+    "frozen_and_archive_guards": "3 passed",
+    "reporting": "3 passed",
+    "existing_evidence_reader": "18 passed",
+    "strict_documentation": "PASS exit=0 | 1 passed | 7.73s",
+    "administrative_controls": "33 passed with immutable SDK 1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "prior_control_attempts": [
+      "Initial administrative discovery lacked explicit SDK location; retried with accepted SDK.",
+      "First SDK control run exposed namespace import pollution from the new archive guard; fixed standalone-reader loading, preserving clean support staging."
+    ]
+  }
+}

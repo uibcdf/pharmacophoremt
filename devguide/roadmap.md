@@ -10,6 +10,12 @@ Keep preparation/search failures distinct from inactivity, and do not tune the
 query against held-out outcomes. Receptor refinement and newer-provider receiving
 remain separate; this pilot does not depend on MolSysMT #323.
 
+The first #62 run is measured: 25 evaluable held-out compounds, six unscored,
+AUC 0.5614 and 23 zero-score ties. Preserve the original weak result and frozen
+query; it is not predictive acceptance. Next resolve durable original-input
+retention and receive provider-owned conformer/stereo capabilities (#219/#215)
+before declaring a new comparison. Do not retune on the observed held-out set.
+
 The first documentation foundation is delivered: inherited project identity (#4)
 and landing/user/developer/showcase entry points (#61) are corrected, strictly
 built and natively published. The [checkpoint](checkpoint.md) and archived reports

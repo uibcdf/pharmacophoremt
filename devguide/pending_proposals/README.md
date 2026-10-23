@@ -6,10 +6,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (21)
+### Active (20)
 
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(active, measured)*
-- [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(active, inspected)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
 - [`modular_rigid_strategy_comparison.md`](modular_rigid_strategy_comparison.md) — [#27](https://github.com/uibcdf/pharmacophoremt/issues/27) — Expose modular rigid placement steps and compare consensus strategies reproducibly. *(active, measured)*
 - [`molsysmt_placed_pose_workflow.md`](molsysmt_placed_pose_workflow.md) — [#13](https://github.com/uibcdf/pharmacophoremt/issues/13) — Deliver a bounded MolSysMT-backed interaction-to-pharmacophore and pose-evaluation workflow. *(active, measured)*
@@ -30,9 +29,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(active, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(active, measured)*
 
-### Partial (4)
+### Partial (5)
 
 - [`adopt_required_python_314.md`](adopt_required_python_314.md) — [#23](https://github.com/uibcdf/pharmacophoremt/issues/23) — Adopt the mandatory four-minor contract and qualify normal installed delivery *(partial, measured)*
+- [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(partial, measured)*
 - [`live_viewer_addon_browser.md`](live_viewer_addon_browser.md) — [#58](https://github.com/uibcdf/pharmacophoremt/issues/58) — Qualify the minimal addon through real Jupyter widget comms and browser rendering. *(partial, measured)*
 - [`noarch_distribution_adoption.md`](noarch_distribution_adoption.md) — [#10](https://github.com/uibcdf/pharmacophoremt/issues/10) — Adopt the distribution policy and a guarded single-file noarch publication route. *(partial, measured)*
 - [`retire_legacy_molecular_operations.md`](retire_legacy_molecular_operations.md) — [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) — Retire general molecular operations from reachable legacy workflows. *(partial, measured)*

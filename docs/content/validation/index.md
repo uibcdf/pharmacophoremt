@@ -12,7 +12,7 @@ They do not rerun scientific calculations.
 | --- | --- | --- |
 | Analytical controls | [Prepared end-to-end workflow](prepared_workflow.md); [ranking and retrospective accounting](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/archive/ranking_and_retrospective_accounting.md), independent RDKit/oracle comparisons | Known geometry/rankings and declared fixtures, not activity prediction |
 | Scientific preparation/workflow controls | [Prepared CCD EST/DES case](prepared_ccd.md); [cached ERα receptor controls](prepared_receptor_workflow.md) | Ideal geometries and synthetic prepared-fragment controls, not biological binding acceptance |
-| Retrospective screening | [Validation recipe](../cookbook/retrospective_validation.md) | Correct evaluated-subset accounting; no activity dataset qualified here |
+| Retrospective screening | [Frozen ERα signaling assay pilot](esr1_activity_pilot.md); [validation recipe](../cookbook/retrospective_validation.md) | Small single-conformer pilot, weak measured discrimination, six unscored inputs; no predictive or full-benchmark qualification |
 | Vertical pilot | [Declared ERα interface](../cookbook/prepared_eralpha_interface.md) and [diagnostic evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/eralpha_interaction_diagnostics.md) | Environmental hydrogen refinement and biological acceptance remain open |
 | Computational benchmarks | [Rigid strategy comparison](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rigid_strategy_comparison.md), [refinement comparisons](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rigid_refinement_workflow.md#expanded-validation-and-measurement-contract) | Scoped analytical workloads with original timing/memory records |
 
@@ -28,6 +28,7 @@ prepared_workflow
 prepared_search_workflow
 prepared_consensus_workflow
 prepared_receptor_workflow
+esr1_activity_pilot
 ```
 
 ## Contribute a case
