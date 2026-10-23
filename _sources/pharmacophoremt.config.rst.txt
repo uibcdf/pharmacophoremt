@@ -1,0 +1,21 @@
+pharmacophoremt.config package
+==============================
+
+Submodules
+----------
+
+pharmacophoremt.config.logging\_setup module
+--------------------------------------------
+
+.. automodule:: pharmacophoremt.config.logging_setup
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.config
+   :members:
+   :show-inheritance:
+   :undoc-members:

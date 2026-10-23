@@ -1,0 +1,118 @@
+pharmacophoremt.interaction\_site package
+=========================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pharmacophoremt.interaction_site.feature
+   pharmacophoremt.interaction_site.shape
+
+Submodules
+----------
+
+pharmacophoremt.interaction\_site.aromatic\_ring\_interaction\_sites module
+---------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.aromatic_ring_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.cation\_pi\_interaction\_sites module
+-----------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.cation_pi_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.excluded\_volume\_interaction\_sites module
+-----------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.excluded_volume_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.halogen\_bond\_interaction\_sites module
+--------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.halogen_bond_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.hb\_acceptor\_interaction\_sites module
+-------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.hb_acceptor_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.hb\_donor\_interaction\_sites module
+----------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.hb_donor_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.hydrophobicity\_interaction\_sites module
+---------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.hydrophobicity_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.included\_volume\_interaction\_sites module
+-----------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.included_volume_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.interaction\_site module
+----------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.interaction_site
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.metal\_binding\_interaction\_sites module
+---------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.metal_binding_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.negative\_charge\_interaction\_sites module
+-----------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.negative_charge_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.positive\_charge\_interaction\_sites module
+-----------------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.positive_charge_interaction_sites
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.interaction_site
+   :members:
+   :show-inheritance:
+   :undoc-members:

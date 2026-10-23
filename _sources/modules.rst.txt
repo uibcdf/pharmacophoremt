@@ -1,0 +1,9 @@
+pharmacophoremt
+===============
+
+.. toctree::
+   :maxdepth: 4
+
+   molsysviewer_pharmacophoremt
+   pharmacophoremt
+   phmt_test_support

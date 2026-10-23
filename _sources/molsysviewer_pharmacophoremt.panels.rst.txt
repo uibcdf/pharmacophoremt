@@ -1,0 +1,21 @@
+molsysviewer\_pharmacophoremt.panels package
+============================================
+
+Submodules
+----------
+
+molsysviewer\_pharmacophoremt.panels.pharmacophore module
+---------------------------------------------------------
+
+.. automodule:: molsysviewer_pharmacophoremt.panels.pharmacophore
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: molsysviewer_pharmacophoremt.panels
+   :members:
+   :show-inheritance:
+   :undoc-members:

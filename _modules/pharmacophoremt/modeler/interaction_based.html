@@ -1,0 +1,985 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>pharmacophoremt.modeler.interaction_based – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pharmacophoremt/modeler/interaction_based';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt.modeler.interaction_based</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pharmacophoremt.modeler.interaction_based</h1><div class="highlight"><pre>
+<span></span><span class="sd">"""Build pharmacophores from already evaluated MolSysMT interactions."""</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">molsysmt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">msm</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">argdigest</span><span class="w"> </span><span class="kn">import</span> <span class="n">arg_digest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">smonitor</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyunitwizard</span> <span class="k">as</span> <span class="n">puw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._ackredit</span><span class="w"> </span><span class="kn">import</span> <span class="n">attributed</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.arg_digestion.argument._contracts</span><span class="w"> </span><span class="kn">import</span> <span class="n">digest_radius</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.arg_digestion.argument.cation_mapping</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">digest_cation_mapping</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.molsysmt</span><span class="w"> </span><span class="kn">import</span> <span class="n">detached</span><span class="p">,</span> <span class="n">source_frame</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.smonitor.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">ArgumentError</span><span class="p">,</span>
+    <span class="n">ProviderCapabilityError</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._version</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.interaction_site</span><span class="w"> </span><span class="kn">import</span> <span class="n">InteractionSite</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.interaction_site.shape</span><span class="w"> </span><span class="kn">import</span> <span class="n">Sphere</span><span class="p">,</span> <span class="n">SphereAndVector</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.pharmacophore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pharmacophore</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">.</span><span class="w"> </span><span class="kn">import</span> <span class="n">_aromatic_interactions</span> <span class="k">as</span> <span class="n">aromatic</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_features</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.reference_ligand</span><span class="w"> </span><span class="kn">import</span> <span class="n">from_feature_inventory</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_ionic_state</span><span class="p">(</span><span class="n">parameters</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Validate the bounded provider definition before molecular selections."""</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"chemical_state_index"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"participant_definition"</span><span class="p">)</span> <span class="o">!=</span> <span class="s2">"formal_charge"</span>
+        <span class="ow">or</span> <span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"recognition_rule_version"</span><span class="p">)</span> <span class="o">!=</span> <span class="s2">"formal_charge_centers@1"</span>
+        <span class="ow">or</span> <span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"charge_source"</span><span class="p">)</span> <span class="o">!=</span> <span class="s2">"chemical_states.formal_charge"</span>
+        <span class="ow">or</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="p">(</span><span class="nb">bool</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">bool_</span><span class="p">))</span>
+        <span class="ow">or</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">state</span><span class="p">,</span> <span class="p">(</span><span class="nb">int</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">integer</span><span class="p">))</span>
+        <span class="ow">or</span> <span class="n">state</span> <span class="o">&lt;</span> <span class="mi">0</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic observations require the formal_charge_centers@1 state contract"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="nb">int</span><span class="p">(</span><span class="n">state</span><span class="p">)</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_ionic_features</span><span class="p">(</span><span class="n">molecular_system</span><span class="p">,</span> <span class="n">interactions</span><span class="p">,</span> <span class="n">ligand_indices</span><span class="p">,</span> <span class="n">structure_index</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Resolve the supported observation definition through the shared tool."""</span>
+    <span class="n">parameters</span> <span class="o">=</span> <span class="n">interactions</span><span class="o">.</span><span class="n">parameters</span>
+    <span class="n">state</span> <span class="o">=</span> <span class="n">_ionic_state</span><span class="p">(</span><span class="n">parameters</span><span class="p">)</span>
+    <span class="n">inventory</span> <span class="o">=</span> <span class="n">get_features</span><span class="p">(</span>
+        <span class="n">molecular_system</span><span class="p">,</span>
+        <span class="n">selection</span><span class="o">=</span><span class="n">ligand_indices</span><span class="p">,</span>
+        <span class="n">structure_index</span><span class="o">=</span><span class="n">structure_index</span><span class="p">,</span>
+        <span class="n">chemical_state</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">state</span><span class="p">),</span>
+        <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s2">"positive charge"</span><span class="p">,</span> <span class="s2">"negative charge"</span><span class="p">],</span>
+    <span class="p">)</span>
+    <span class="n">recognition</span> <span class="o">=</span> <span class="n">inventory</span><span class="p">[</span><span class="s2">"recognition"</span><span class="p">][</span><span class="s2">"formal_charge"</span><span class="p">]</span>
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="n">recognition</span><span class="p">[</span><span class="s2">"rule_version"</span><span class="p">]</span> <span class="o">!=</span> <span class="n">parameters</span><span class="p">[</span><span class="s2">"recognition_rule_version"</span><span class="p">]</span>
+        <span class="ow">or</span> <span class="n">recognition</span><span class="p">[</span><span class="s2">"chemical_state_index"</span><span class="p">]</span> <span class="o">!=</span> <span class="n">state</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"charge recognition and observation state differ"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">inventory</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_ionic_role</span><span class="p">(</span><span class="n">relation</span><span class="p">,</span> <span class="n">ligand</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Require exactly two whole, disjoint charge participants across the boundary."""</span>
+    <span class="n">participants</span> <span class="o">=</span> <span class="n">relation</span><span class="p">[</span><span class="s2">"participants"</span><span class="p">]</span>
+    <span class="n">roles</span> <span class="o">=</span> <span class="p">{</span><span class="n">part</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]:</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">part</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">])</span> <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">participants</span><span class="p">}</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">participants</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span> <span class="ow">or</span> <span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">)</span> <span class="o">!=</span> <span class="p">{</span><span class="s2">"positive"</span><span class="p">,</span> <span class="s2">"negative"</span><span class="p">}:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic contacts require positive and negative roles"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">members</span> <span class="o">=</span> <span class="p">{</span><span class="n">role</span><span class="p">:</span> <span class="nb">set</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span> <span class="k">for</span> <span class="n">role</span><span class="p">,</span> <span class="n">atoms</span> <span class="ow">in</span> <span class="n">roles</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="nb">any</span><span class="p">(</span><span class="ow">not</span> <span class="n">atoms</span> <span class="k">for</span> <span class="n">atoms</span> <span class="ow">in</span> <span class="n">members</span><span class="o">.</span><span class="n">values</span><span class="p">())</span>
+        <span class="ow">or</span> <span class="n">members</span><span class="p">[</span><span class="s2">"positive"</span><span class="p">]</span> <span class="o">&amp;</span> <span class="n">members</span><span class="p">[</span><span class="s2">"negative"</span><span class="p">]</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic participants must be nonempty and disjoint"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">atoms</span> <span class="o">&amp;</span> <span class="n">ligand</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">atoms</span> <span class="o">&lt;=</span> <span class="n">ligand</span> <span class="k">for</span> <span class="n">atoms</span> <span class="ow">in</span> <span class="n">members</span><span class="o">.</span><span class="n">values</span><span class="p">()):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"ligand_selection"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"a compound charge center crosses the selection boundary"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">ligand_roles</span> <span class="o">=</span> <span class="p">[</span><span class="n">role</span> <span class="k">for</span> <span class="n">role</span><span class="p">,</span> <span class="n">atoms</span> <span class="ow">in</span> <span class="n">members</span><span class="o">.</span><span class="n">items</span><span class="p">()</span> <span class="k">if</span> <span class="n">atoms</span> <span class="o">&lt;=</span> <span class="n">ligand</span><span class="p">]</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">ligand_roles</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic contact must cross the ligand boundary"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">role</span> <span class="o">=</span> <span class="n">ligand_roles</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="k">return</span> <span class="n">role</span><span class="p">,</span> <span class="n">roles</span><span class="p">[</span><span class="n">role</span><span class="p">]</span>
+
+
+<div class="viewcode-block" id="from_interactions">
+<a class="viewcode-back" href="../../../pharmacophoremt.modeler.html#pharmacophoremt.modeler.interaction_based.from_interactions">[docs]</a>
+<span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"modeling"</span><span class="p">,</span> <span class="s2">"interactions"</span><span class="p">])</span>
+<span class="nd">@arg_digest</span><span class="p">()</span>
+<span class="nd">@attributed</span><span class="p">(</span><span class="s2">"numpy"</span><span class="p">,</span> <span class="s2">"molsysmt"</span><span class="p">,</span> <span class="s2">"pyunitwizard"</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">from_interactions</span><span class="p">(</span>
+    <span class="n">molecular_system</span><span class="p">,</span>
+    <span class="n">interactions</span><span class="p">,</span>
+    <span class="n">ligand_selection</span><span class="p">,</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">structure_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">radius</span><span class="o">=</span><span class="s2">"0.15 nm"</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">cation_mapping</span><span class="o">=</span><span class="s2">"exact"</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Construct sites from native hydrophobic, H-bond, ionic and aromatic contacts.</span>
+
+<span class="sd">    The caller supplies the same, unchanged molecular system and index space</span>
+<span class="sd">    used to calculate ``interactions``. Axis checks cannot authenticate origin.</span>
+<span class="sd">    Only cross-boundary observations involving the selected ligand contribute.</span>
+<span class="sd">    A ligand donor becomes a directed sphere along its indexed donor-H bond;</span>
+<span class="sd">    an acceptor or hydrophobic atom becomes a sphere. An ionic ligand participant</span>
+<span class="sd">    becomes a positive/negative charge sphere at the unweighted centroid of its</span>
+<span class="sd">    provider-defined geometry members, using the shared ``get_features`` tool.</span>
+<span class="sd">    Repeated observations of the same participant contribute evidence to one site.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    molecular_system : molecular system</span>
+<span class="sd">        Source accepted by MolSysMT, with the evaluated coordinates intact.</span>
+<span class="sd">    interactions : molsysmt.Interactions</span>
+<span class="sd">        Native observations, including evaluated-frame coverage.</span>
+<span class="sd">    ligand_selection : selection</span>
+<span class="sd">        MolSysMT selection containing all participating ligand atoms.</span>
+<span class="sd">    structure_index : int, default=0</span>
+<span class="sd">        One evaluated frame in the result's local index space.</span>
+<span class="sd">    radius : length quantity, default='0.15 nm'</span>
+<span class="sd">        Pharmacophore matching radius; independent of interaction cutoffs.</span>
+<span class="sd">    name : str, optional</span>
+<span class="sd">        Model name.</span>
+<span class="sd">    cation_mapping : {'exact', 'containing_center'}, default='exact'</span>
+<span class="sd">        For cation-pi observations, require exact shared charge-center membership</span>
+<span class="sd">        or explicitly map a smaller observed cation into one containing positive</span>
+<span class="sd">        center. Original reference atoms and charge measurements remain evidence.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    Pharmacophore</span>
+<span class="sd">        A model retaining source indices, criteria, versions and attribution.</span>
+<span class="sd">        A covered frame with no qualifying observations yields an empty model.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    This bounded route does not reconstruct periodic images. Nonzero image</span>
+<span class="sd">    vectors and unsupported interaction kinds raise instead of losing evidence.</span>
+<span class="sd">    No protonation, hydrogen addition, coordinate generation or repair occurs.</span>
+<span class="sd">    Ionic observations require ``formal_charge_centers@1`` and their explicit</span>
+<span class="sd">    chemical-state index. Whole-center membership and charge are checked against</span>
+<span class="sd">    current recognition. The minimum-contact distance is retained as evidence;</span>
+<span class="sd">    it is not the sphere center, matching radius or an electrostatic energy.</span>
+<span class="sd">    Pi-pi and cation-pi ring participants become shared least-squares aromatic</span>
+<span class="sd">    disks, independently of the detector's recorded plane/profile. Rings must</span>
+<span class="sd">    match shared membership exactly. Supported upstream profiles and original</span>
+<span class="sd">    criteria remain distinct from this hypothesis geometry; neither plane-axis</span>
+<span class="sd">    sign nor an observed ring-normal direction determines a binding vector.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    Given a source complex and native MolSysMT observations in its index space:</span>
+
+<span class="sd">    &gt;&gt;&gt; query = from_interactions(source, observations, ligand_selection='molecule_type == "small molecule"')</span>
+<span class="sd">    """</span>
+    <span class="n">radius</span> <span class="o">=</span> <span class="n">digest_radius</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>
+    <span class="n">cation_mapping</span> <span class="o">=</span> <span class="n">digest_cation_mapping</span><span class="p">(</span><span class="n">cation_mapping</span><span class="p">)</span>
+    <span class="n">native_type</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">msm</span><span class="p">,</span> <span class="s2">"Interactions"</span><span class="p">,</span> <span class="kc">None</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">native_type</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ProviderCapabilityError</span><span class="p">(</span><span class="n">capability</span><span class="o">=</span><span class="s2">"Interactions"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">interactions</span><span class="p">,</span> <span class="n">native_type</span><span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">"expected native MolSysMT interactions"</span>
+        <span class="p">)</span>
+    <span class="n">states</span> <span class="o">=</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">if</span> <span class="s2">"ionic_contact"</span> <span class="ow">in</span> <span class="n">interactions</span><span class="o">.</span><span class="n">relation_types</span><span class="p">:</span>
+        <span class="n">states</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">_ionic_state</span><span class="p">(</span><span class="n">interactions</span><span class="o">.</span><span class="n">parameters</span><span class="p">))</span>
+    <span class="k">for</span> <span class="n">kind</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"pi_pi"</span><span class="p">,</span> <span class="s2">"cation_pi"</span><span class="p">):</span>
+        <span class="k">if</span> <span class="n">kind</span> <span class="ow">in</span> <span class="n">interactions</span><span class="o">.</span><span class="n">relation_types</span><span class="p">:</span>
+            <span class="n">states</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">aromatic</span><span class="o">.</span><span class="n">observation_state</span><span class="p">(</span><span class="n">interactions</span><span class="p">,</span> <span class="n">kind</span><span class="p">))</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">states</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"observations must resolve one chemical state"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">chemical_state</span> <span class="o">=</span> <span class="n">states</span><span class="o">.</span><span class="n">pop</span><span class="p">()</span> <span class="k">if</span> <span class="n">states</span> <span class="k">else</span> <span class="s2">"reference"</span>
+    <span class="n">coordinates</span><span class="p">,</span> <span class="n">ligand_indices</span> <span class="o">=</span> <span class="n">source_frame</span><span class="p">(</span>
+        <span class="n">molecular_system</span><span class="p">,</span>
+        <span class="n">ligand_selection</span><span class="p">,</span>
+        <span class="n">structure_index</span><span class="p">,</span>
+        <span class="n">chemical_state</span><span class="o">=</span><span class="n">chemical_state</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="n">n_structures</span> <span class="o">=</span> <span class="n">msm</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">molecular_system</span><span class="p">,</span> <span class="n">n_structures</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="n">interactions</span><span class="o">.</span><span class="n">n_atoms</span> <span class="o">!=</span> <span class="nb">len</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="n">interactions</span><span class="o">.</span><span class="n">n_structures</span> <span class="o">!=</span> <span class="n">n_structures</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">"source atom/structure axes differ"</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="n">structure_index</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">interactions</span><span class="o">.</span><span class="n">evaluated_structure_indices</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"structure_index"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">"this frame was not evaluated"</span>
+        <span class="p">)</span>
+    <span class="n">receptor_indices</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">setdiff1d</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">coordinates</span><span class="p">)),</span> <span class="n">ligand_indices</span><span class="p">)</span>
+    <span class="n">selected</span> <span class="o">=</span> <span class="n">interactions</span><span class="o">.</span><span class="n">between_selections</span><span class="p">(</span>
+        <span class="n">ligand_indices</span><span class="p">,</span> <span class="n">receptor_indices</span><span class="p">,</span> <span class="n">structure_indices</span><span class="o">=</span><span class="p">[</span><span class="n">structure_index</span><span class="p">]</span>
+    <span class="p">)</span>
+    <span class="n">records</span> <span class="o">=</span> <span class="n">selected</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+    <span class="k">if</span> <span class="n">records</span><span class="p">[</span><span class="s2">"image_vectors"</span><span class="p">]</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">records</span><span class="p">[</span><span class="s2">"image_vectors"</span><span class="p">]):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"nonzero periodic images need a provider-prepared frame"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Pharmacophore</span><span class="p">(</span>
+        <span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">molecular_system</span><span class="o">=</span><span class="n">molecular_system</span><span class="p">,</span> <span class="n">ref_struct</span><span class="o">=</span><span class="nb">int</span><span class="p">(</span><span class="n">structure_index</span><span class="p">)</span>
+    <span class="p">)</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+        <span class="p">{</span>
+            <span class="s2">"method"</span><span class="p">:</span> <span class="s2">"observed_interactions"</span><span class="p">,</span>
+            <span class="s2">"interaction_method"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">method</span><span class="p">,</span>
+            <span class="s2">"producer"</span><span class="p">:</span> <span class="p">{</span><span class="s2">"pharmacophoremt"</span><span class="p">:</span> <span class="n">__version__</span><span class="p">},</span>
+            <span class="s2">"source_id"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">source_id</span><span class="p">,</span>
+            <span class="s2">"source_atom_indices"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">atom_source_indices</span><span class="p">,</span>
+            <span class="s2">"source_structure_indices"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">structure_source_indices</span><span class="p">,</span>
+            <span class="s2">"evaluated_structure_indices"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">evaluated_structure_indices</span><span class="p">,</span>
+            <span class="s2">"structure_index"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">structure_index</span><span class="p">),</span>
+            <span class="s2">"ligand_atom_indices"</span><span class="p">:</span> <span class="n">ligand_indices</span><span class="p">,</span>
+            <span class="s2">"software"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">software</span><span class="p">,</span>
+            <span class="s2">"parameters"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">parameters</span><span class="p">,</span>
+            <span class="s2">"execution_records"</span><span class="p">:</span> <span class="n">records</span><span class="p">[</span><span class="s2">"execution_records"</span><span class="p">],</span>
+        <span class="p">}</span>
+    <span class="p">)</span>
+    <span class="n">sites</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">ligand</span> <span class="o">=</span> <span class="nb">set</span><span class="p">(</span><span class="n">ligand_indices</span><span class="o">.</span><span class="n">tolist</span><span class="p">())</span>
+    <span class="n">ionic_inventory</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">ionic_records</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="n">aromatic_inventory</span> <span class="o">=</span> <span class="kc">None</span>
+    <span class="k">for</span> <span class="n">row</span><span class="p">,</span> <span class="n">relation_index</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">records</span><span class="p">[</span><span class="s2">"relation_indices"</span><span class="p">]):</span>
+        <span class="n">relation</span> <span class="o">=</span> <span class="n">selected</span><span class="o">.</span><span class="n">relation</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">relation_index</span><span class="p">))</span>
+        <span class="n">roles</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="n">part</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]:</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">part</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">])</span>
+            <span class="k">for</span> <span class="n">part</span> <span class="ow">in</span> <span class="n">relation</span><span class="p">[</span><span class="s2">"participants"</span><span class="p">]</span>
+        <span class="p">}</span>
+        <span class="n">kind</span> <span class="o">=</span> <span class="n">relation</span><span class="p">[</span><span class="s2">"interaction_type"</span><span class="p">]</span>
+        <span class="n">charge_record</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">shared_record</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">participant_mapping</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">kind</span> <span class="ow">in</span> <span class="p">{</span><span class="s2">"pi_pi"</span><span class="p">,</span> <span class="s2">"cation_pi"</span><span class="p">}:</span>
+            <span class="k">if</span> <span class="n">aromatic_inventory</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">aromatic_inventory</span> <span class="o">=</span> <span class="n">aromatic</span><span class="o">.</span><span class="n">feature_inventory</span><span class="p">(</span>
+                    <span class="n">molecular_system</span><span class="p">,</span> <span class="n">selected</span><span class="p">,</span> <span class="n">ligand_indices</span><span class="p">,</span> <span class="n">structure_index</span>
+                <span class="p">)</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s2">"aromatic_feature_inventory"</span><span class="p">]</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+                    <span class="n">aromatic_inventory</span>
+                <span class="p">)</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s2">"aromatic_conversion_policy"</span><span class="p">]</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                    <span class="n">geometry</span><span class="o">=</span><span class="s2">"shared_classical_geometry@1"</span><span class="p">,</span>
+                    <span class="n">ring_membership</span><span class="o">=</span><span class="s2">"exact"</span><span class="p">,</span>
+                    <span class="n">cation_mapping</span><span class="o">=</span><span class="n">cation_mapping</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="n">shared_record</span><span class="p">,</span> <span class="n">participant_mapping</span> <span class="o">=</span> <span class="n">aromatic</span><span class="o">.</span><span class="n">mapped_feature</span><span class="p">(</span>
+                <span class="n">aromatic_inventory</span><span class="p">,</span>
+                <span class="n">relation</span><span class="p">,</span>
+                <span class="n">ligand</span><span class="p">,</span>
+                <span class="n">cation_mapping</span><span class="p">,</span>
+                <span class="n">profile</span><span class="o">=</span><span class="n">interactions</span><span class="o">.</span><span class="n">parameters</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"profile"</span><span class="p">),</span>
+            <span class="p">)</span>
+            <span class="n">atoms</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">shared_record</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">])</span>
+            <span class="n">feature</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">shared_record</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">],</span> <span class="kc">None</span>
+            <span class="k">if</span> <span class="n">participant_mapping</span><span class="p">[</span><span class="s2">"role"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"cation"</span><span class="p">:</span>
+                <span class="n">aromatic</span><span class="o">.</span><span class="n">validate_cation_charge</span><span class="p">(</span>
+                    <span class="n">records</span><span class="p">,</span>
+                    <span class="n">row</span><span class="p">,</span>
+                    <span class="n">shared_record</span><span class="p">,</span>
+                    <span class="n">participant_mapping</span><span class="p">,</span>
+                    <span class="n">molecular_system</span><span class="p">,</span>
+                    <span class="n">aromatic_inventory</span><span class="p">[</span><span class="s2">"chemical_state"</span><span class="p">],</span>
+                <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">kind</span> <span class="o">==</span> <span class="s2">"ionic_contact"</span><span class="p">:</span>
+            <span class="n">role</span><span class="p">,</span> <span class="n">atoms</span> <span class="o">=</span> <span class="n">_ionic_role</span><span class="p">(</span><span class="n">relation</span><span class="p">,</span> <span class="n">ligand</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">ionic_inventory</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">ionic_inventory</span> <span class="o">=</span> <span class="n">_ionic_features</span><span class="p">(</span>
+                    <span class="n">molecular_system</span><span class="p">,</span> <span class="n">interactions</span><span class="p">,</span> <span class="n">ligand_indices</span><span class="p">,</span> <span class="n">structure_index</span>
+                <span class="p">)</span>
+                <span class="n">ionic_records</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">],</span> <span class="nb">frozenset</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">])):</span> <span class="n">record</span>
+                    <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">ionic_inventory</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]</span>
+                <span class="p">}</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s2">"ionic_feature_inventory"</span><span class="p">]</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span><span class="n">ionic_inventory</span><span class="p">)</span>
+            <span class="n">feature</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">role</span> <span class="o">+</span> <span class="s2">" charge"</span><span class="p">,</span> <span class="kc">None</span>
+            <span class="n">charge_record</span> <span class="o">=</span> <span class="n">ionic_records</span><span class="o">.</span><span class="n">get</span><span class="p">((</span><span class="n">feature</span><span class="p">,</span> <span class="nb">frozenset</span><span class="p">(</span><span class="n">atoms</span><span class="p">)))</span>
+            <span class="k">if</span> <span class="n">charge_record</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic participant does not match current charge recognition"</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="n">atoms</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="n">charge_record</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">])</span>
+            <span class="n">charge_column</span> <span class="o">=</span> <span class="n">records</span><span class="p">[</span><span class="s2">"measurements"</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">role</span> <span class="o">+</span> <span class="s2">"_charge"</span><span class="p">)</span>
+            <span class="n">charge_unit</span> <span class="o">=</span> <span class="n">records</span><span class="p">[</span><span class="s2">"measure_units"</span><span class="p">]</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">role</span> <span class="o">+</span> <span class="s2">"_charge"</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">charge_column</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="n">charge_unit</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic observations require participant charge measurements"</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">try</span><span class="p">:</span>
+                <span class="n">observed_charge</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span>
+                    <span class="n">puw</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span>
+                        <span class="n">puw</span><span class="o">.</span><span class="n">quantity</span><span class="p">(</span><span class="n">charge_column</span><span class="p">[</span><span class="n">row</span><span class="p">],</span> <span class="n">charge_unit</span><span class="p">),</span> <span class="n">to_unit</span><span class="o">=</span><span class="s2">"e"</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic charge measurements require elementary charge units"</span><span class="p">,</span>
+                <span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">error</span>
+            <span class="k">if</span> <span class="n">observed_charge</span> <span class="o">!=</span> <span class="nb">float</span><span class="p">(</span>
+                <span class="n">puw</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">charge_record</span><span class="p">[</span><span class="s2">"charge"</span><span class="p">],</span> <span class="n">to_unit</span><span class="o">=</span><span class="s2">"e"</span><span class="p">)</span>
+            <span class="p">):</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"ionic charge measurement and recognition disagree"</span><span class="p">,</span>
+                <span class="p">)</span>
+        <span class="k">elif</span> <span class="n">kind</span> <span class="o">==</span> <span class="s2">"hydrophobic_contact"</span><span class="p">:</span>
+            <span class="n">atoms</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">atoms</span> <span class="k">for</span> <span class="n">atoms</span> <span class="ow">in</span> <span class="n">roles</span><span class="o">.</span><span class="n">values</span><span class="p">()</span> <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="n">ligand</span><span class="p">)</span>
+            <span class="n">feature</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="s2">"hydrophobicity"</span><span class="p">,</span> <span class="kc">None</span>
+        <span class="k">elif</span> <span class="n">kind</span> <span class="o">==</span> <span class="s2">"hbond"</span><span class="p">:</span>
+            <span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="n">role</span><span class="p">])</span> <span class="o">!=</span> <span class="mi">1</span> <span class="k">for</span> <span class="n">role</span> <span class="ow">in</span> <span class="p">(</span><span class="s2">"donor"</span><span class="p">,</span> <span class="s2">"hydrogen"</span><span class="p">,</span> <span class="s2">"acceptor"</span><span class="p">)):</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"expected singleton hydrogen-bond roles"</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">if</span> <span class="nb">bool</span><span class="p">(</span><span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="s2">"donor"</span><span class="p">])</span> <span class="o">&amp;</span> <span class="n">ligand</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">bool</span><span class="p">(</span>
+                <span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="s2">"hydrogen"</span><span class="p">])</span> <span class="o">&amp;</span> <span class="n">ligand</span>
+            <span class="p">):</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"ligand_selection"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"a donor-H participant crosses the selection boundary"</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">if</span> <span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="s2">"donor"</span><span class="p">])</span> <span class="o">&lt;=</span> <span class="n">ligand</span> <span class="ow">and</span> <span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="s2">"hydrogen"</span><span class="p">])</span> <span class="o">&lt;=</span> <span class="n">ligand</span><span class="p">:</span>
+                <span class="n">atoms</span> <span class="o">=</span> <span class="n">roles</span><span class="p">[</span><span class="s2">"donor"</span><span class="p">]</span> <span class="o">+</span> <span class="n">roles</span><span class="p">[</span><span class="s2">"hydrogen"</span><span class="p">]</span>
+                <span class="n">feature</span> <span class="o">=</span> <span class="s2">"hb donor"</span>
+                <span class="n">direction</span> <span class="o">=</span> <span class="n">coordinates</span><span class="p">[</span><span class="n">atoms</span><span class="p">[</span><span class="mi">1</span><span class="p">]]</span> <span class="o">-</span> <span class="n">coordinates</span><span class="p">[</span><span class="n">atoms</span><span class="p">[</span><span class="mi">0</span><span class="p">]]</span>
+            <span class="k">elif</span> <span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="s2">"acceptor"</span><span class="p">])</span> <span class="o">&lt;=</span> <span class="n">ligand</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">set</span><span class="p">(</span><span class="n">roles</span><span class="p">[</span><span class="s2">"donor"</span><span class="p">])</span> <span class="o">&amp;</span> <span class="n">ligand</span><span class="p">:</span>
+                <span class="n">atoms</span><span class="p">,</span> <span class="n">feature</span><span class="p">,</span> <span class="n">direction</span> <span class="o">=</span> <span class="n">roles</span><span class="p">[</span><span class="s2">"acceptor"</span><span class="p">],</span> <span class="s2">"hb acceptor"</span><span class="p">,</span> <span class="kc">None</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                    <span class="n">argument</span><span class="o">=</span><span class="s2">"ligand_selection"</span><span class="p">,</span>
+                    <span class="n">reason</span><span class="o">=</span><span class="s2">"a donor-H participant crosses the selection boundary"</span><span class="p">,</span>
+                <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="sa">f</span><span class="s2">"unsupported interaction kind '</span><span class="si">{</span><span class="n">kind</span><span class="si">}</span><span class="s2">'"</span>
+            <span class="p">)</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">kind</span> <span class="o">==</span> <span class="s2">"hydrophobic_contact"</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">1</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span>
+            <span class="n">feature</span> <span class="o">==</span> <span class="s2">"hb donor"</span> <span class="ow">and</span> <span class="nb">len</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">2</span>
+        <span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"interactions"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"expected atomic participants for this definition"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">key</span> <span class="o">=</span> <span class="p">(</span><span class="n">feature</span><span class="p">,</span> <span class="n">atoms</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">key</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">sites</span><span class="p">:</span>
+            <span class="n">site_metadata</span> <span class="o">=</span> <span class="p">{</span>
+                <span class="s2">"atom_indices"</span><span class="p">:</span> <span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">atom</span><span class="p">)</span> <span class="k">for</span> <span class="n">atom</span> <span class="ow">in</span> <span class="n">atoms</span><span class="p">],</span>
+                <span class="s2">"source_atom_indices"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">atom_source_indices</span><span class="p">[</span>
+                    <span class="nb">list</span><span class="p">(</span><span class="n">atoms</span><span class="p">)</span>
+                <span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+                <span class="s2">"structure_index"</span><span class="p">:</span> <span class="nb">int</span><span class="p">(</span><span class="n">structure_index</span><span class="p">),</span>
+                <span class="s2">"observations"</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="p">}</span>
+            <span class="k">if</span> <span class="n">shared_record</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">subset</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">aromatic_inventory</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="n">shared_record</span><span class="p">])</span>
+                <span class="n">site</span> <span class="o">=</span> <span class="n">from_feature_inventory</span><span class="p">(</span><span class="n">subset</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="n">radius</span><span class="p">)</span><span class="o">.</span><span class="n">interaction_sites</span><span class="p">[</span>
+                    <span class="mi">0</span>
+                <span class="p">]</span>
+                <span class="n">site</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">site_metadata</span><span class="p">)</span>
+                <span class="n">site</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+                    <span class="n">detached</span><span class="p">(</span>
+                        <span class="nb">dict</span><span class="p">(</span>
+                            <span class="n">source_geometry_atom_indices</span><span class="o">=</span><span class="n">interactions</span><span class="o">.</span><span class="n">atom_source_indices</span><span class="p">[</span>
+                                <span class="n">shared_record</span><span class="p">[</span><span class="s2">"geometry_atom_indices"</span><span class="p">]</span>
+                            <span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+                            <span class="n">chemical_state_index</span><span class="o">=</span><span class="n">aromatic_inventory</span><span class="p">[</span><span class="s2">"chemical_state"</span><span class="p">],</span>
+                            <span class="n">definition</span><span class="o">=</span><span class="n">aromatic_inventory</span><span class="p">[</span><span class="s2">"definition"</span><span class="p">],</span>
+                            <span class="n">conversion_geometry</span><span class="o">=</span><span class="s2">"shared_classical_geometry@1"</span><span class="p">,</span>
+                        <span class="p">)</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="n">center</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="n">charge_record</span><span class="p">[</span><span class="s2">"center"</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">charge_record</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                    <span class="k">else</span> <span class="n">puw</span><span class="o">.</span><span class="n">quantity</span><span class="p">(</span><span class="n">coordinates</span><span class="p">[</span><span class="n">atoms</span><span class="p">[</span><span class="mi">0</span><span class="p">]],</span> <span class="s2">"nm"</span><span class="p">)</span>
+                <span class="p">)</span>
+                <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span>
+                    <span class="n">Sphere</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">)</span>
+                    <span class="k">if</span> <span class="n">direction</span> <span class="ow">is</span> <span class="kc">None</span>
+                    <span class="k">else</span> <span class="n">SphereAndVector</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">radius</span><span class="p">,</span> <span class="n">direction</span><span class="p">)</span>
+                <span class="p">)</span>
+                <span class="n">site</span> <span class="o">=</span> <span class="n">InteractionSite</span><span class="p">(</span>
+                    <span class="n">shape</span><span class="p">,</span>
+                    <span class="n">feature</span><span class="p">,</span>
+                    <span class="n">metadata</span><span class="o">=</span><span class="n">site_metadata</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="k">if</span> <span class="n">charge_record</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">site</span><span class="o">.</span><span class="n">metadata</span><span class="o">.</span><span class="n">update</span><span class="p">(</span>
+                    <span class="n">detached</span><span class="p">(</span>
+                        <span class="p">{</span>
+                            <span class="s2">"geometry_atom_indices"</span><span class="p">:</span> <span class="n">charge_record</span><span class="p">[</span>
+                                <span class="s2">"geometry_atom_indices"</span>
+                            <span class="p">],</span>
+                            <span class="s2">"source_geometry_atom_indices"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">atom_source_indices</span><span class="p">[</span>
+                                <span class="n">charge_record</span><span class="p">[</span><span class="s2">"geometry_atom_indices"</span><span class="p">]</span>
+                            <span class="p">]</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+                            <span class="s2">"charge"</span><span class="p">:</span> <span class="n">charge_record</span><span class="p">[</span><span class="s2">"charge"</span><span class="p">],</span>
+                            <span class="s2">"chemical_state_index"</span><span class="p">:</span> <span class="n">ionic_inventory</span><span class="p">[</span><span class="s2">"chemical_state"</span><span class="p">],</span>
+                            <span class="s2">"definition"</span><span class="p">:</span> <span class="n">ionic_inventory</span><span class="p">[</span><span class="s2">"definition"</span><span class="p">],</span>
+                            <span class="s2">"recognition_rule_version"</span><span class="p">:</span> <span class="n">interactions</span><span class="o">.</span><span class="n">parameters</span><span class="p">[</span>
+                                <span class="s2">"recognition_rule_version"</span>
+                            <span class="p">],</span>
+                            <span class="s2">"geometry_method"</span><span class="p">:</span> <span class="s2">"molsysmt.structure.get_center"</span><span class="p">,</span>
+                            <span class="s2">"geometry_weighting"</span><span class="p">:</span> <span class="s2">"uniform"</span><span class="p">,</span>
+                        <span class="p">}</span>
+                    <span class="p">)</span>
+                <span class="p">)</span>
+            <span class="n">sites</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">site</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">add_interaction_site</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+        <span class="n">sites</span><span class="p">[</span><span class="n">key</span><span class="p">]</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s2">"observations"</span><span class="p">]</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">detached</span><span class="p">(</span>
+                <span class="p">{</span>
+                    <span class="s2">"occurrence_index"</span><span class="p">:</span> <span class="n">records</span><span class="p">[</span><span class="s2">"occurrence_indices"</span><span class="p">][</span><span class="n">row</span><span class="p">],</span>
+                    <span class="s2">"relation_index"</span><span class="p">:</span> <span class="n">relation_index</span><span class="p">,</span>
+                    <span class="s2">"relation"</span><span class="p">:</span> <span class="n">relation</span><span class="p">,</span>
+                    <span class="s2">"evidence"</span><span class="p">:</span> <span class="n">records</span><span class="p">[</span><span class="s2">"evidence"</span><span class="p">][</span><span class="n">row</span><span class="p">],</span>
+                    <span class="o">**</span><span class="p">(</span>
+                        <span class="p">{</span><span class="s2">"participant_mapping"</span><span class="p">:</span> <span class="n">participant_mapping</span><span class="p">}</span>
+                        <span class="k">if</span> <span class="n">participant_mapping</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                        <span class="k">else</span> <span class="p">{}</span>
+                    <span class="p">),</span>
+                    <span class="s2">"measurements"</span><span class="p">:</span> <span class="p">{</span>
+                        <span class="n">key</span><span class="p">:</span> <span class="n">puw</span><span class="o">.</span><span class="n">quantity</span><span class="p">(</span><span class="n">values</span><span class="p">[</span><span class="n">row</span><span class="p">],</span> <span class="n">records</span><span class="p">[</span><span class="s2">"measure_units"</span><span class="p">][</span><span class="n">key</span><span class="p">])</span>
+                        <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">values</span> <span class="ow">in</span> <span class="n">records</span><span class="p">[</span><span class="s2">"measurements"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="p">},</span>
+                <span class="p">}</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span></div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+pharmacophoremt.viewer package
+==============================
+
+Submodules
+----------
+
+pharmacophoremt.viewer.color\_palettes module
+---------------------------------------------
+
+.. automodule:: pharmacophoremt.viewer.color_palettes
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.viewer
+   :members:
+   :show-inheritance:
+   :undoc-members:

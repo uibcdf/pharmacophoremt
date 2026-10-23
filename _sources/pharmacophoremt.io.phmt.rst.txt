@@ -1,0 +1,10 @@
+pharmacophoremt.io.phmt package
+===============================
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.io.phmt
+   :members:
+   :show-inheritance:
+   :undoc-members:

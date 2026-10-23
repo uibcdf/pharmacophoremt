@@ -1,0 +1,53 @@
+molsysviewer\_pharmacophoremt package
+=====================================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   molsysviewer_pharmacophoremt.panels
+
+Submodules
+----------
+
+molsysviewer\_pharmacophoremt.addon module
+------------------------------------------
+
+.. automodule:: molsysviewer_pharmacophoremt.addon
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+molsysviewer\_pharmacophoremt.payloads module
+---------------------------------------------
+
+.. automodule:: molsysviewer_pharmacophoremt.payloads
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+molsysviewer\_pharmacophoremt.render module
+-------------------------------------------
+
+.. automodule:: molsysviewer_pharmacophoremt.render
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+molsysviewer\_pharmacophoremt.runtime module
+--------------------------------------------
+
+.. automodule:: molsysviewer_pharmacophoremt.runtime
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: molsysviewer_pharmacophoremt
+   :members:
+   :show-inheritance:
+   :undoc-members:

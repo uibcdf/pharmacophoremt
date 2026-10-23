@@ -1,0 +1,226 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "aac56305-f44e-4a9f-8f25-4f77b203ae65",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "```{eval-rst}\n",
+    ":html_theme.sidebar_secondary.remove:\n",
+    "```"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 1,
+   "id": "7a985e1c-7d72-480d-969a-398cdda4cae0",
+   "metadata": {
+    "editable": true,
+    "execution": {
+     "iopub.execute_input": "2025-10-02T01:46:32.410997Z",
+     "iopub.status.busy": "2025-10-02T01:46:32.409712Z",
+     "iopub.status.idle": "2025-10-02T01:46:32.422574Z",
+     "shell.execute_reply": "2025-10-02T01:46:32.420390Z"
+    },
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": [
+     "remove-input"
+    ]
+   },
+   "outputs": [],
+   "source": [
+    "# This cell is removed with the tag: \"remove-input\"\n",
+    "# As such, it will not be shown in documentation\n",
+    "\n",
+    "nglview_static_dir = '_static/nglview/'"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6c9de210-0ac6-4ee9-9dad-7cfe0b988806",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "# PharmacophoreMT\n",
+    "\n",
+    ":::{figure} _static/logo.svg\n",
+    ":width: 80%\n",
+    ":align: center\n",
+    "\n",
+    "A **Pharmacophore** **M**ulti**T**oolkit for building and applying pharmacophore models in drug design\n",
+    "\n",
+    "\n",
+    ":::\n",
+    "\n",
+    "<br/>\n",
+    "\n",
+    "\n",
+    "## Install it\n",
+    "\n",
+    "Release **0.4.0** is available from the official Conda channel. Follow the\n",
+    "[installation guide](content/about/installation.md) for the qualified molecular-provider\n",
+    "context and the separate development-source route.\n",
+    "\n",
+    "<br/>\n",
+    "\n",
+    "## Use it\n",
+    "\n",
+    "Start with the [user guide](content/user/index.md) to choose a native modeling\n",
+    "route from your prepared inputs. The [cookbook](content/cookbook/index.md) gives\n",
+    "task-specific recipes; the [showcase](content/showcase/index.md) connects them\n",
+    "into workflows you can inspect.\n",
+    "\n",
+    "Use [validation and benchmarks](content/validation/index.md) to understand the\n",
+    "measured controls and their limits. Geometric coverage is not predicted affinity.\n",
+    "For signatures and contributor guidance, see the [API](api/index.md) and\n",
+    "[developer guide](content/developer/index.md).\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": 2,
+   "id": "1941eaa6-db2f-42e3-99f6-d4254beab727",
+   "metadata": {
+    "execution": {
+     "iopub.execute_input": "2025-10-02T01:46:32.430268Z",
+     "iopub.status.busy": "2025-10-02T01:46:32.429755Z",
+     "iopub.status.idle": "2025-10-02T01:46:32.436664Z",
+     "shell.execute_reply": "2025-10-02T01:46:32.435686Z"
+    }
+   },
+   "outputs": [],
+   "source": [
+    "import pharmacophoremt as phm"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "73eaeea9-8117-4d12-a436-36736567322b",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "## Citation\n",
+    "\n",
+    "See the [citation guide](content/about/citation.md) for software identity and\n",
+    "references to the methods and data actually used."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "c391de1c-d805-4f9e-9ed7-be0dc3b51362",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "outputs": [],
+   "source": []
+  },
+  {
+   "cell_type": "markdown",
+   "id": "96727aaf-6fb1-4929-9dc5-d51fc8ff3cd0",
+   "metadata": {
+    "editable": true,
+    "slideshow": {
+     "slide_type": ""
+    },
+    "tags": []
+   },
+   "source": [
+    "```{eval-rst}\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/about/index.md\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/showcase/index.md\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/user/index.md\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/cookbook/index.md\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/validation/index.md\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/developer/index.md\n",
+    "   \n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   api/index.md\n",
+    "\n",
+    ".. toctree::\n",
+    "   :maxdepth: 2\n",
+    "   :hidden:\n",
+    "\n",
+    "   content/ai_assistants.md\n",
+    "\n",
+    "```"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.12.11"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}

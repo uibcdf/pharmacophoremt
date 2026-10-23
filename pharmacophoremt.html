@@ -1,0 +1,1727 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="_static/icon.svg" rel="icon" type="image/svg+xml">
+  
+    <title>pharmacophoremt package – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="_static/documentation_options.js?v=6c02275b"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pharmacophoremt';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.config.html">pharmacophoremt.config package</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="pharmacophoremt.interaction_site.html">pharmacophoremt.interaction_site package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html">pharmacophoremt.interaction_site.feature package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html">pharmacophoremt.interaction_site.shape package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="pharmacophoremt.io.html">pharmacophoremt.io package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.phmt.html">pharmacophoremt.io.phmt package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.modeler.html">pharmacophoremt.modeler package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.screening.html">pharmacophoremt.screening package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.validation.html">pharmacophoremt.validation package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.viewer.html">pharmacophoremt.viewer package</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt package</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="pharmacophoremt-package">
+<h1>pharmacophoremt package<a class="headerlink" href="#pharmacophoremt-package" title="Link to this heading">#</a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading">#</a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.config.html">pharmacophoremt.config package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.config.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.config.html#module-pharmacophoremt.config.logging_setup">pharmacophoremt.config.logging_setup module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.config.html#pharmacophoremt.config.logging_setup.setup_logging"><code class="docutils literal notranslate"><span class="pre">setup_logging()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.config.html#module-pharmacophoremt.config">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.config.html#pharmacophoremt.config.set_default_quantities_form"><code class="docutils literal notranslate"><span class="pre">set_default_quantities_form()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.config.html#pharmacophoremt.config.set_default_quantities_parser"><code class="docutils literal notranslate"><span class="pre">set_default_quantities_parser()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.config.html#pharmacophoremt.config.set_default_standard_units"><code class="docutils literal notranslate"><span class="pre">set_default_standard_units()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.interaction_site.html">pharmacophoremt.interaction_site package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html">pharmacophoremt.interaction_site.feature package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.aromatic_ring">pharmacophoremt.interaction_site.feature.aromatic_ring module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.cation_pi">pharmacophoremt.interaction_site.feature.cation_pi module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.excluded_volume">pharmacophoremt.interaction_site.feature.excluded_volume module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.halogen_bond">pharmacophoremt.interaction_site.feature.halogen_bond module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.hb_acceptor">pharmacophoremt.interaction_site.feature.hb_acceptor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.hb_donor">pharmacophoremt.interaction_site.feature.hb_donor module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.hydrophobicity">pharmacophoremt.interaction_site.feature.hydrophobicity module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.included_volume">pharmacophoremt.interaction_site.feature.included_volume module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.metal_coordination">pharmacophoremt.interaction_site.feature.metal_coordination module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.negative_charge">pharmacophoremt.interaction_site.feature.negative_charge module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature.positive_charge">pharmacophoremt.interaction_site.feature.positive_charge module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html#module-pharmacophoremt.interaction_site.feature">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html">pharmacophoremt.interaction_site.shape package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#submodules">Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.cylinder">pharmacophoremt.interaction_site.shape.cylinder module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.disk">pharmacophoremt.interaction_site.shape.disk module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.gaussian_kernel">pharmacophoremt.interaction_site.shape.gaussian_kernel module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.point">pharmacophoremt.interaction_site.shape.point module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.shapelet">pharmacophoremt.interaction_site.shape.shapelet module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.sphere">pharmacophoremt.interaction_site.shape.sphere module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape.sphere_and_vector">pharmacophoremt.interaction_site.shape.sphere_and_vector module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html#module-pharmacophoremt.interaction_site.shape">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.aromatic_ring_interaction_sites">pharmacophoremt.interaction_site.aromatic_ring_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.aromatic_ring_interaction_sites.AromaticRingPoint"><code class="docutils literal notranslate"><span class="pre">AromaticRingPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.aromatic_ring_interaction_sites.AromaticRingShapelet"><code class="docutils literal notranslate"><span class="pre">AromaticRingShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.aromatic_ring_interaction_sites.AromaticRingSphere"><code class="docutils literal notranslate"><span class="pre">AromaticRingSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.aromatic_ring_interaction_sites.AromaticRingSphereAndVector"><code class="docutils literal notranslate"><span class="pre">AromaticRingSphereAndVector</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.cation_pi_interaction_sites">pharmacophoremt.interaction_site.cation_pi_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.cation_pi_interaction_sites.CationPiDisk"><code class="docutils literal notranslate"><span class="pre">CationPiDisk</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.cation_pi_interaction_sites.CationPiSphere"><code class="docutils literal notranslate"><span class="pre">CationPiSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.excluded_volume_interaction_sites">pharmacophoremt.interaction_site.excluded_volume_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.excluded_volume_interaction_sites.ExcludedVolumeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.excluded_volume_interaction_sites.ExcludedVolumePoint"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.excluded_volume_interaction_sites.ExcludedVolumeShapelet"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumeShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.excluded_volume_interaction_sites.ExcludedVolumeSphere"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumeSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.halogen_bond_interaction_sites">pharmacophoremt.interaction_site.halogen_bond_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.halogen_bond_interaction_sites.HalogenBondSphere"><code class="docutils literal notranslate"><span class="pre">HalogenBondSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.halogen_bond_interaction_sites.HalogenBondSphereAndVector"><code class="docutils literal notranslate"><span class="pre">HalogenBondSphereAndVector</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.hb_acceptor_interaction_sites">pharmacophoremt.interaction_site.hb_acceptor_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_acceptor_interaction_sites.HBAcceptorGaussianKernel"><code class="docutils literal notranslate"><span class="pre">HBAcceptorGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_acceptor_interaction_sites.HBAcceptorPoint"><code class="docutils literal notranslate"><span class="pre">HBAcceptorPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_acceptor_interaction_sites.HBAcceptorSphere"><code class="docutils literal notranslate"><span class="pre">HBAcceptorSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_acceptor_interaction_sites.HBAcceptorSphereAndVector"><code class="docutils literal notranslate"><span class="pre">HBAcceptorSphereAndVector</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.hb_donor_interaction_sites">pharmacophoremt.interaction_site.hb_donor_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_donor_interaction_sites.HBDonorGaussianKernel"><code class="docutils literal notranslate"><span class="pre">HBDonorGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_donor_interaction_sites.HBDonorPoint"><code class="docutils literal notranslate"><span class="pre">HBDonorPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_donor_interaction_sites.HBDonorSphere"><code class="docutils literal notranslate"><span class="pre">HBDonorSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hb_donor_interaction_sites.HBDonorSphereAndVector"><code class="docutils literal notranslate"><span class="pre">HBDonorSphereAndVector</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.hydrophobicity_interaction_sites">pharmacophoremt.interaction_site.hydrophobicity_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hydrophobicity_interaction_sites.HydrophobicGaussianKernel"><code class="docutils literal notranslate"><span class="pre">HydrophobicGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hydrophobicity_interaction_sites.HydrophobicPoint"><code class="docutils literal notranslate"><span class="pre">HydrophobicPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hydrophobicity_interaction_sites.HydrophobicShapelet"><code class="docutils literal notranslate"><span class="pre">HydrophobicShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.hydrophobicity_interaction_sites.HydrophobicSphere"><code class="docutils literal notranslate"><span class="pre">HydrophobicSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.included_volume_interaction_sites">pharmacophoremt.interaction_site.included_volume_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.included_volume_interaction_sites.IncludedVolumeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">IncludedVolumeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.included_volume_interaction_sites.IncludedVolumePoint"><code class="docutils literal notranslate"><span class="pre">IncludedVolumePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.included_volume_interaction_sites.IncludedVolumeShapelet"><code class="docutils literal notranslate"><span class="pre">IncludedVolumeShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.included_volume_interaction_sites.IncludedVolumeSphere"><code class="docutils literal notranslate"><span class="pre">IncludedVolumeSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.interaction_site">pharmacophoremt.interaction_site.interaction_site module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite"><code class="docutils literal notranslate"><span class="pre">InteractionSite</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.shape"><code class="docutils literal notranslate"><span class="pre">InteractionSite.shape</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.features"><code class="docutils literal notranslate"><span class="pre">InteractionSite.features</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.n_features"><code class="docutils literal notranslate"><span class="pre">InteractionSite.n_features</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.add_feature"><code class="docutils literal notranslate"><span class="pre">InteractionSite.add_feature()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.add_to_NGLView"><code class="docutils literal notranslate"><span class="pre">InteractionSite.add_to_NGLView()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.center"><code class="docutils literal notranslate"><span class="pre">InteractionSite.center</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.direction"><code class="docutils literal notranslate"><span class="pre">InteractionSite.direction</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.feature_name"><code class="docutils literal notranslate"><span class="pre">InteractionSite.feature_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.radius"><code class="docutils literal notranslate"><span class="pre">InteractionSite.radius</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.shape_name"><code class="docutils literal notranslate"><span class="pre">InteractionSite.shape_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.interaction_site.InteractionSite.sigma"><code class="docutils literal notranslate"><span class="pre">InteractionSite.sigma</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.metal_binding_interaction_sites">pharmacophoremt.interaction_site.metal_binding_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.metal_binding_interaction_sites.MetalBindingSphere"><code class="docutils literal notranslate"><span class="pre">MetalBindingSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.negative_charge_interaction_sites">pharmacophoremt.interaction_site.negative_charge_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.negative_charge_interaction_sites.NegativeChargeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">NegativeChargeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.negative_charge_interaction_sites.NegativeChargePoint"><code class="docutils literal notranslate"><span class="pre">NegativeChargePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.negative_charge_interaction_sites.NegativeChargeSphere"><code class="docutils literal notranslate"><span class="pre">NegativeChargeSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site.positive_charge_interaction_sites">pharmacophoremt.interaction_site.positive_charge_interaction_sites module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.positive_charge_interaction_sites.PositiveChargeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">PositiveChargeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.positive_charge_interaction_sites.PositiveChargePoint"><code class="docutils literal notranslate"><span class="pre">PositiveChargePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.positive_charge_interaction_sites.PositiveChargeSphere"><code class="docutils literal notranslate"><span class="pre">PositiveChargeSphere</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.html#module-pharmacophoremt.interaction_site">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.AromaticRingPoint"><code class="docutils literal notranslate"><span class="pre">AromaticRingPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.AromaticRingShapelet"><code class="docutils literal notranslate"><span class="pre">AromaticRingShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.AromaticRingSphere"><code class="docutils literal notranslate"><span class="pre">AromaticRingSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.AromaticRingSphereAndVector"><code class="docutils literal notranslate"><span class="pre">AromaticRingSphereAndVector</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.CationPiDisk"><code class="docutils literal notranslate"><span class="pre">CationPiDisk</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.CationPiSphere"><code class="docutils literal notranslate"><span class="pre">CationPiSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.ExcludedVolumeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.ExcludedVolumePoint"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.ExcludedVolumeShapelet"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumeShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.ExcludedVolumeSphere"><code class="docutils literal notranslate"><span class="pre">ExcludedVolumeSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBAcceptorGaussianKernel"><code class="docutils literal notranslate"><span class="pre">HBAcceptorGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBAcceptorPoint"><code class="docutils literal notranslate"><span class="pre">HBAcceptorPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBAcceptorSphere"><code class="docutils literal notranslate"><span class="pre">HBAcceptorSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBAcceptorSphereAndVector"><code class="docutils literal notranslate"><span class="pre">HBAcceptorSphereAndVector</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBDonorGaussianKernel"><code class="docutils literal notranslate"><span class="pre">HBDonorGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBDonorPoint"><code class="docutils literal notranslate"><span class="pre">HBDonorPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBDonorSphere"><code class="docutils literal notranslate"><span class="pre">HBDonorSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HBDonorSphereAndVector"><code class="docutils literal notranslate"><span class="pre">HBDonorSphereAndVector</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HalogenBondSphere"><code class="docutils literal notranslate"><span class="pre">HalogenBondSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HalogenBondSphereAndVector"><code class="docutils literal notranslate"><span class="pre">HalogenBondSphereAndVector</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HydrophobicGaussianKernel"><code class="docutils literal notranslate"><span class="pre">HydrophobicGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HydrophobicPoint"><code class="docutils literal notranslate"><span class="pre">HydrophobicPoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HydrophobicShapelet"><code class="docutils literal notranslate"><span class="pre">HydrophobicShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.HydrophobicSphere"><code class="docutils literal notranslate"><span class="pre">HydrophobicSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.IncludedVolumeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">IncludedVolumeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.IncludedVolumePoint"><code class="docutils literal notranslate"><span class="pre">IncludedVolumePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.IncludedVolumeShapelet"><code class="docutils literal notranslate"><span class="pre">IncludedVolumeShapelet</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.IncludedVolumeSphere"><code class="docutils literal notranslate"><span class="pre">IncludedVolumeSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.MetalBindingSphere"><code class="docutils literal notranslate"><span class="pre">MetalBindingSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.NegativeChargeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">NegativeChargeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.NegativeChargePoint"><code class="docutils literal notranslate"><span class="pre">NegativeChargePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.NegativeChargeSphere"><code class="docutils literal notranslate"><span class="pre">NegativeChargeSphere</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.PositiveChargeGaussianKernel"><code class="docutils literal notranslate"><span class="pre">PositiveChargeGaussianKernel</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.PositiveChargePoint"><code class="docutils literal notranslate"><span class="pre">PositiveChargePoint</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.interaction_site.html#pharmacophoremt.interaction_site.PositiveChargeSphere"><code class="docutils literal notranslate"><span class="pre">PositiveChargeSphere</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.io.html">pharmacophoremt.io package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#subpackages">Subpackages</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.phmt.html">pharmacophoremt.io.phmt package</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.io.phmt.html#module-pharmacophoremt.io.phmt">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#module-pharmacophoremt.io.ligandscout">pharmacophoremt.io.ligandscout module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.ligandscout.from_ligandscout"><code class="docutils literal notranslate"><span class="pre">from_ligandscout()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.ligandscout.to_ligandscout"><code class="docutils literal notranslate"><span class="pre">to_ligandscout()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#module-pharmacophoremt.io.pharmer">pharmacophoremt.io.pharmer module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.pharmer.from_pharmer"><code class="docutils literal notranslate"><span class="pre">from_pharmer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.pharmer.to_pharmer"><code class="docutils literal notranslate"><span class="pre">to_pharmer()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#module-pharmacophoremt.io.rdkit">pharmacophoremt.io.rdkit module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.rdkit.load_rdkit"><code class="docutils literal notranslate"><span class="pre">load_rdkit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.rdkit.to_rdkit"><code class="docutils literal notranslate"><span class="pre">to_rdkit()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#module-pharmacophoremt.io.sdf">pharmacophoremt.io.sdf module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.sdf.load_sdf"><code class="docutils literal notranslate"><span class="pre">load_sdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.sdf.to_sdf"><code class="docutils literal notranslate"><span class="pre">to_sdf()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.html#module-pharmacophoremt.io">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.io.html#pharmacophoremt.io.load"><code class="docutils literal notranslate"><span class="pre">load()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.modeler.html">pharmacophoremt.modeler package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.aligned_cliques">pharmacophoremt.modeler.aligned_cliques module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.aligned_cliques.from_aligned_ligand_cliques"><code class="docutils literal notranslate"><span class="pre">from_aligned_ligand_cliques()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.aligned_cliques.get_aligned_consensus_hypotheses"><code class="docutils literal notranslate"><span class="pre">get_aligned_consensus_hypotheses()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.aligned_cliques.get_aligned_feature_cliques"><code class="docutils literal notranslate"><span class="pre">get_aligned_feature_cliques()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.aligned_consensus">pharmacophoremt.modeler.aligned_consensus module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.aligned_consensus.from_aligned_ligands"><code class="docutils literal notranslate"><span class="pre">from_aligned_ligands()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.aligned_consensus.get_aligned_feature_matches"><code class="docutils literal notranslate"><span class="pre">get_aligned_feature_matches()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.aligned_consensus.get_consensus_sites"><code class="docutils literal notranslate"><span class="pre">get_consensus_sites()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.complex_based">pharmacophoremt.modeler.complex_based module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.complex_based.ComplexBasedModeler"><code class="docutils literal notranslate"><span class="pre">ComplexBasedModeler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.complex_based.ComplexBasedModeler.build"><code class="docutils literal notranslate"><span class="pre">ComplexBasedModeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.composition">pharmacophoremt.modeler.composition module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.composition.compose_pharmacophores"><code class="docutils literal notranslate"><span class="pre">compose_pharmacophores()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.curation">pharmacophoremt.modeler.curation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.curation.copy_pharmacophore"><code class="docutils literal notranslate"><span class="pre">copy_pharmacophore()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.curation.edit_pharmacophore"><code class="docutils literal notranslate"><span class="pre">edit_pharmacophore()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.curation.extract_pharmacophore"><code class="docutils literal notranslate"><span class="pre">extract_pharmacophore()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.curation.get_interaction_site_indices"><code class="docutils literal notranslate"><span class="pre">get_interaction_site_indices()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.dispatcher">pharmacophoremt.modeler.dispatcher module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.dispatcher.model"><code class="docutils literal notranslate"><span class="pre">model()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.excluded_volumes">pharmacophoremt.modeler.excluded_volumes module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.excluded_volumes.get_excluded_volume_sites"><code class="docutils literal notranslate"><span class="pre">get_excluded_volume_sites()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.features">pharmacophoremt.modeler.features module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.features.get_features"><code class="docutils literal notranslate"><span class="pre">get_features()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.interaction_based">pharmacophoremt.modeler.interaction_based module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.interaction_based.from_interactions"><code class="docutils literal notranslate"><span class="pre">from_interactions()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.interaction_collection">pharmacophoremt.modeler.interaction_collection module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.interaction_collection.from_interaction_collection"><code class="docutils literal notranslate"><span class="pre">from_interaction_collection()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.ligand_based">pharmacophoremt.modeler.ligand_based module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.ligand_based.LigandBasedModeler"><code class="docutils literal notranslate"><span class="pre">LigandBasedModeler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.ligand_based.LigandBasedModeler.build"><code class="docutils literal notranslate"><span class="pre">LigandBasedModeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.modeler">pharmacophoremt.modeler.modeler module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.modeler.Modeler"><code class="docutils literal notranslate"><span class="pre">Modeler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.modeler.Modeler.build"><code class="docutils literal notranslate"><span class="pre">Modeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.receptor_projections">pharmacophoremt.modeler.receptor_projections module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.receptor_projections.from_receptor_projections"><code class="docutils literal notranslate"><span class="pre">from_receptor_projections()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.reference_ligand">pharmacophoremt.modeler.reference_ligand module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.reference_ligand.from_feature_inventory"><code class="docutils literal notranslate"><span class="pre">from_feature_inventory()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.reference_ligand.from_ligand"><code class="docutils literal notranslate"><span class="pre">from_ligand()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.rigid_consensus">pharmacophoremt.modeler.rigid_consensus module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.rigid_consensus.from_rigid_ligands"><code class="docutils literal notranslate"><span class="pre">from_rigid_ligands()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.scoring">pharmacophoremt.modeler.scoring module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.scoring.ScoringFunction"><code class="docutils literal notranslate"><span class="pre">ScoringFunction</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.scoring.ScoringFunction.point_score"><code class="docutils literal notranslate"><span class="pre">ScoringFunction.point_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler.structure_based">pharmacophoremt.modeler.structure_based module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.structure_based.StructureBasedModeler"><code class="docutils literal notranslate"><span class="pre">StructureBasedModeler</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.modeler.html#pharmacophoremt.modeler.structure_based.StructureBasedModeler.build"><code class="docutils literal notranslate"><span class="pre">StructureBasedModeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.modeler.html#module-pharmacophoremt.modeler">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.screening.html">pharmacophoremt.screening package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.alignment">pharmacophoremt.screening.alignment module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.alignment.align_to_pharmacophore"><code class="docutils literal notranslate"><span class="pre">align_to_pharmacophore()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.conformer_screening">pharmacophoremt.screening.conformer_screening module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.conformer_screening.ConformerScreening"><code class="docutils literal notranslate"><span class="pre">ConformerScreening</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.conformer_screening.ConformerScreening.evaluate"><code class="docutils literal notranslate"><span class="pre">ConformerScreening.evaluate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.conformer_screening.ConformerScreening.run"><code class="docutils literal notranslate"><span class="pre">ConformerScreening.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.correspondence">pharmacophoremt.screening.correspondence module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.correspondence.get_correspondences"><code class="docutils literal notranslate"><span class="pre">get_correspondences()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.feature_geometry">pharmacophoremt.screening.feature_geometry module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.feature_geometry.evaluate_feature_correspondence"><code class="docutils literal notranslate"><span class="pre">evaluate_feature_correspondence()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.feature_neighborhoods">pharmacophoremt.screening.feature_neighborhoods module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.feature_neighborhoods.get_feature_pair_dissimilarities"><code class="docutils literal notranslate"><span class="pre">get_feature_pair_dissimilarities()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.feature_neighborhoods.rank_rigid_feature_correspondences"><code class="docutils literal notranslate"><span class="pre">rank_rigid_feature_correspondences()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.pose_evaluation">pharmacophoremt.screening.pose_evaluation module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.pose_evaluation.PoseEvaluator"><code class="docutils literal notranslate"><span class="pre">PoseEvaluator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.pose_evaluation.PoseEvaluator.evaluate"><code class="docutils literal notranslate"><span class="pre">PoseEvaluator.evaluate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.pose_evaluation.PoseEvaluator.run"><code class="docutils literal notranslate"><span class="pre">PoseEvaluator.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.rigid_correspondence">pharmacophoremt.screening.rigid_correspondence module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences"><code class="docutils literal notranslate"><span class="pre">get_rigid_feature_correspondences()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.rigid_placements">pharmacophoremt.screening.rigid_placements module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_placements.get_rigid_feature_placements"><code class="docutils literal notranslate"><span class="pre">get_rigid_feature_placements()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.rigid_refinement">pharmacophoremt.screening.rigid_refinement module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_refinement.refine_rigid_feature_correspondences"><code class="docutils literal notranslate"><span class="pre">refine_rigid_feature_correspondences()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.rigid_search">pharmacophoremt.screening.rigid_search module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_search.RigidPoseSearch"><code class="docutils literal notranslate"><span class="pre">RigidPoseSearch</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_search.RigidPoseSearch.evaluate"><code class="docutils literal notranslate"><span class="pre">RigidPoseSearch.evaluate()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_search.RigidPoseSearch.run"><code class="docutils literal notranslate"><span class="pre">RigidPoseSearch.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening.virtual_screening">pharmacophoremt.screening.virtual_screening module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.virtual_screening.VirtualScreening"><code class="docutils literal notranslate"><span class="pre">VirtualScreening</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.virtual_screening.VirtualScreening.run"><code class="docutils literal notranslate"><span class="pre">VirtualScreening.run()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.virtual_screening.VirtualScreening.to_csv"><code class="docutils literal notranslate"><span class="pre">VirtualScreening.to_csv()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.virtual_screening.VirtualScreening.to_dataframe"><code class="docutils literal notranslate"><span class="pre">VirtualScreening.to_dataframe()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.screening.html#pharmacophoremt.screening.virtual_screening.VirtualScreening.to_sdf"><code class="docutils literal notranslate"><span class="pre">VirtualScreening.to_sdf()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.screening.html#module-pharmacophoremt.screening">Module contents</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.validation.html">pharmacophoremt.validation package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.validation.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.validation.html#module-pharmacophoremt.validation.loo">pharmacophoremt.validation.loo module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.loo.LeaveOneOutValidator"><code class="docutils literal notranslate"><span class="pre">LeaveOneOutValidator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.loo.LeaveOneOutValidator.run"><code class="docutils literal notranslate"><span class="pre">LeaveOneOutValidator.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.validation.html#module-pharmacophoremt.validation.metrics">pharmacophoremt.validation.metrics module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.metrics.bedroc"><code class="docutils literal notranslate"><span class="pre">bedroc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.metrics.enrichment_factor"><code class="docutils literal notranslate"><span class="pre">enrichment_factor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.metrics.roc_auc"><code class="docutils literal notranslate"><span class="pre">roc_auc()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.validation.html#module-pharmacophoremt.validation.retrospective">pharmacophoremt.validation.retrospective module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.retrospective.RetrospectiveValidator"><code class="docutils literal notranslate"><span class="pre">RetrospectiveValidator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.retrospective.RetrospectiveValidator.run"><code class="docutils literal notranslate"><span class="pre">RetrospectiveValidator.run()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.validation.html#module-pharmacophoremt.validation.rigid_consensus">pharmacophoremt.validation.rigid_consensus module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.rigid_consensus.summarize_rigid_consensus"><code class="docutils literal notranslate"><span class="pre">summarize_rigid_consensus()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.validation.html#module-pharmacophoremt.validation">Module contents</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.LeaveOneOutValidator"><code class="docutils literal notranslate"><span class="pre">LeaveOneOutValidator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.LeaveOneOutValidator.run"><code class="docutils literal notranslate"><span class="pre">LeaveOneOutValidator.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.RetrospectiveValidator"><code class="docutils literal notranslate"><span class="pre">RetrospectiveValidator</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.RetrospectiveValidator.run"><code class="docutils literal notranslate"><span class="pre">RetrospectiveValidator.run()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.bedroc"><code class="docutils literal notranslate"><span class="pre">bedroc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.enrichment_factor"><code class="docutils literal notranslate"><span class="pre">enrichment_factor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.roc_auc"><code class="docutils literal notranslate"><span class="pre">roc_auc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.validation.html#pharmacophoremt.validation.summarize_rigid_consensus"><code class="docutils literal notranslate"><span class="pre">summarize_rigid_consensus()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.viewer.html">pharmacophoremt.viewer package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.viewer.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.viewer.html#module-pharmacophoremt.viewer.color_palettes">pharmacophoremt.viewer.color_palettes module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="pharmacophoremt.viewer.html#pharmacophoremt.viewer.color_palettes.get_color_from_palette_for_feature"><code class="docutils literal notranslate"><span class="pre">get_color_from_palette_for_feature()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.viewer.html#module-pharmacophoremt.viewer">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
+</section>
+<section id="module-pharmacophoremt.attribution">
+<span id="pharmacophoremt-attribution-module"></span><h2>pharmacophoremt.attribution module<a class="headerlink" href="#module-pharmacophoremt.attribution" title="Link to this heading">#</a></h2>
+<p>Explicit optional attribution activation and provider-owned reporting.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.attribution.attribution">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.attribution.</span></span><span class="sig-name descname"><span class="pre">attribution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/attribution.html#attribution"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.attribution.attribution" title="Link to this definition">#</a></dt>
+<dd><p>Activate bounded attribution without replacing the application session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>bool</em><em>, </em><em>default=True</em>) – Enable tracking in this context; False temporarily suspends host tracking.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">attribution</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="n">result</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">prepared_ligand</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.attribution.attribution_report">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.attribution.</span></span><span class="sig-name descname"><span class="pre">attribution_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribution_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'markdown'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/attribution.html#attribution_report"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.attribution.attribution_report" title="Link to this definition">#</a></dt>
+<dd><p>Render a saved result or the current workflow using public Ackredit APIs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attribution_data</strong> (<em>dict</em><em>, </em><em>optional</em>) – The host attribution payload from result[‘attribution’] or model metadata.
+Omit to report the current application-owned Ackredit session.</p></li>
+<li><p><strong>format</strong> (<em>str</em><em>, </em><em>default='markdown'</em>) – An Ackredit report format, for example ‘bibtex’, ‘csl-json’ or ‘markdown’.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bibliography</span> <span class="o">=</span> <span class="n">attribution_report</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'attribution'</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">'bibtex'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="pharmacophoremt-demo-module">
+<h2>pharmacophoremt.demo module<a class="headerlink" href="#pharmacophoremt-demo-module" title="Link to this heading">#</a></h2>
+</section>
+<section id="module-pharmacophoremt.pharmacophore">
+<span id="pharmacophoremt-pharmacophore-module"></span><h2>pharmacophoremt.pharmacophore module<a class="headerlink" href="#module-pharmacophoremt.pharmacophore" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.pharmacophore.</span></span><span class="sig-name descname"><span class="pre">Pharmacophore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">form</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_mol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_struct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Native object for pharmacophores.</p>
+<p>A pharmacophore is a set of interaction sites defining the necessary 3D
+interaction requirements for a molecular system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophore</strong> – File or object with pharmacophoric model. (Default: None)</p></li>
+<li><p><strong>form</strong> (<em>str</em><em> (</em><em>optional</em><em>)</em>) – Form of input pharmacophore: ‘pharmer’, ‘ligandscout’, ‘rdkit’, ‘sdf’, ‘json’, ‘yaml’.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the pharmacophoric model.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – Short description of the model.</p></li>
+<li><p><strong>molecular_system</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">molsysmt.MolSys</span></code>, optional) – Molecular system linked to this pharmacophore.</p></li>
+<li><p><strong>score</strong> (<em>float</em><em>, </em><em>optional</em>) – Score of the pharmacophore model.</p></li>
+<li><p><strong>ref_mol</strong> (<em>int</em><em>, </em><em>optional</em>) – Index of the reference molecule.</p></li>
+<li><p><strong>ref_struct</strong> (<em>int</em><em>, </em><em>optional</em>) – Index of the reference structure/frame.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.name" title="Link to this definition">#</a></dt>
+<dd><p>Name of the pharmacophoric model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.description" title="Link to this definition">#</a></dt>
+<dd><p>Short description of the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.interaction_sites">
+<span class="sig-name descname"><span class="pre">interaction_sites</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.interaction_sites" title="Link to this definition">#</a></dt>
+<dd><p>List of interaction sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <code class="xref py py-obj docutils literal notranslate"><span class="pre">pharmacophoremt.interaction_site.InteractionSite</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.n_interaction_sites">
+<span class="sig-name descname"><span class="pre">n_interaction_sites</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.n_interaction_sites" title="Link to this definition">#</a></dt>
+<dd><p>Number of interaction sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.molecular_system">
+<span class="sig-name descname"><span class="pre">molecular_system</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.molecular_system" title="Link to this definition">#</a></dt>
+<dd><p>Molecular system linked to this pharmacophore.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">molsysmt.MolSys</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.score">
+<span class="sig-name descname"><span class="pre">score</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.score" title="Link to this definition">#</a></dt>
+<dd><p>Score of the pharmacophore model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.ref_mol">
+<span class="sig-name descname"><span class="pre">ref_mol</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.ref_mol" title="Link to this definition">#</a></dt>
+<dd><p>Index of the reference molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.ref_struct">
+<span class="sig-name descname"><span class="pre">ref_struct</span></span><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.ref_struct" title="Link to this definition">#</a></dt>
+<dd><p>Index of the reference structure/frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.add_interaction_site">
+<span class="sig-name descname"><span class="pre">add_interaction_site</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_site</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.add_interaction_site"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.add_interaction_site" title="Link to this definition">#</a></dt>
+<dd><p>Add a new interaction site to the pharmacophore.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.add_to_NGLView">
+<span class="sig-name descname"><span class="pre">add_to_NGLView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pharmacophoremt'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.add_to_NGLView"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.add_to_NGLView" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.add_to_molsysviewer">
+<span class="sig-name descname"><span class="pre">add_to_molsysviewer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.add_to_molsysviewer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.add_to_molsysviewer" title="Link to this definition">#</a></dt>
+<dd><p>Add the pharmacophore to a MolSysViewer instance using high-performance vectorization.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.copy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.copy" title="Link to this definition">#</a></dt>
+<dd><p>Return independent sites/metadata, retaining the molecular reference.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Alternative name; None preserves the original.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Public copy_pharmacophore() result; no molecular data is copied.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_center</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.get" title="Link to this definition">#</a></dt>
+<dd><p>Flexible query method to extract information from interaction sites.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.get_distance_matrix">
+<span class="sig-name descname"><span class="pre">get_distance_matrix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.get_distance_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.get_distance_matrix" title="Link to this definition">#</a></dt>
+<dd><p>Calculate the N x N distance matrix between interaction site centers.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.merge">
+<span class="sig-name descname"><span class="pre">merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.merge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.merge" title="Link to this definition">#</a></dt>
+<dd><p>Return a new Pharmacophore combining sites from self and other.</p>
+<p>The merged pharmacophore takes the name and metadata of self. No
+deduplication is applied; call the modeler’s merge helper if needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore"><em>Pharmacophore</em></a>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.remove_interaction_site">
+<span class="sig-name descname"><span class="pre">remove_interaction_site</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.remove_interaction_site"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.remove_interaction_site" title="Link to this definition">#</a></dt>
+<dd><p>Remove an interaction site by its index.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.set_essential">
+<span class="sig-name descname"><span class="pre">set_essential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">essential</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_essential"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_essential" title="Link to this definition">#</a></dt>
+<dd><p>Toggle the essential flag of one or all interaction sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Index of the site, or <code class="docutils literal notranslate"><span class="pre">'all'</span></code> to set all sites at once.</p></li>
+<li><p><strong>essential</strong> (<em>bool</em>) – New essential value.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.set_radius">
+<span class="sig-name descname"><span class="pre">set_radius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_radius"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_radius" title="Link to this definition">#</a></dt>
+<dd><p>Set the radius of one interaction site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Local sites to modify. Every target must have an actual radius.</p></li>
+<li><p><strong>radius</strong> (<em>quantity</em>) – New radius as a puw quantity (e.g. <code class="docutils literal notranslate"><span class="pre">puw.quantity(0.2,</span> <span class="pre">'nm')</span></code>).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.set_sigma">
+<span class="sig-name descname"><span class="pre">set_sigma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_sigma"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_sigma" title="Link to this definition">#</a></dt>
+<dd><p>Edit Gaussian widths separately from radii, preserving source history.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Local GaussianKernel sites; incompatible targets raise before mutation.</p></li>
+<li><p><strong>sigma</strong> (<em>positive length quantity</em>) – Explicit Gaussian width.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.set_weight">
+<span class="sig-name descname"><span class="pre">set_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_weight"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_weight" title="Link to this definition">#</a></dt>
+<dd><p>Set finite nonnegative weights through public edit_pharmacophore().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Local target sites. Zero weight retains essential/exclusion semantics.</p></li>
+<li><p><strong>weight</strong> (<em>float</em>) – Explicit independent weight, not automatically inferred from activity.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color_palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pharmacophoremt'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.show"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.show" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.similarity">
+<span class="sig-name descname"><span class="pre">similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_nm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.15</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.similarity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.similarity" title="Link to this definition">#</a></dt>
+<dd><p>Compute Dice similarity between two pharmacophores.</p>
+<p>For each site in self, the best-matching site in other (same feature,
+minimum distance) is found. A pair is counted as matched when the
+centroid distance ≤ <code class="docutils literal notranslate"><span class="pre">tolerance_nm</span></code>. The result is the Dice coefficient:</p>
+<blockquote>
+<div><p>similarity = 2 * <a href="#id1"><span class="problematic" id="id2">|matched_pairs|</span></a> / (N_self + N_other)</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>other</strong> (<a class="reference internal" href="#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore"><em>Pharmacophore</em></a>)</p></li>
+<li><p><strong>tolerance_nm</strong> (<em>float</em>) – Maximum centroid distance for a site-match (default 0.15 nm = 1.5 Å).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dice similarity in [0, 1].</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.pharmacophore.Pharmacophore.to_dataframe">
+<span class="sig-name descname"><span class="pre">to_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.to_dataframe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.pharmacophore.Pharmacophore.to_dataframe" title="Link to this definition">#</a></dt>
+<dd><p>Convert the set of interaction sites to a Pandas DataFrame.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pharmacophoremt" title="Link to this heading">#</a></h2>
+<p>PharmacophoreMT
+A state-of-the-art engine for molecular design.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.</span></span><span class="sig-name descname"><span class="pre">Pharmacophore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophore</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">form</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">description</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">score</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_mol</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ref_struct</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Native object for pharmacophores.</p>
+<p>A pharmacophore is a set of interaction sites defining the necessary 3D
+interaction requirements for a molecular system.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophore</strong> – File or object with pharmacophoric model. (Default: None)</p></li>
+<li><p><strong>form</strong> (<em>str</em><em> (</em><em>optional</em><em>)</em>) – Form of input pharmacophore: ‘pharmer’, ‘ligandscout’, ‘rdkit’, ‘sdf’, ‘json’, ‘yaml’.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Name of the pharmacophoric model.</p></li>
+<li><p><strong>description</strong> (<em>str</em><em>, </em><em>optional</em>) – Short description of the model.</p></li>
+<li><p><strong>molecular_system</strong> (<code class="xref py py-obj docutils literal notranslate"><span class="pre">molsysmt.MolSys</span></code>, optional) – Molecular system linked to this pharmacophore.</p></li>
+<li><p><strong>score</strong> (<em>float</em><em>, </em><em>optional</em>) – Score of the pharmacophore model.</p></li>
+<li><p><strong>ref_mol</strong> (<em>int</em><em>, </em><em>optional</em>) – Index of the reference molecule.</p></li>
+<li><p><strong>ref_struct</strong> (<em>int</em><em>, </em><em>optional</em>) – Index of the reference structure/frame.</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.name">
+<span class="sig-name descname"><span class="pre">name</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.name" title="Link to this definition">#</a></dt>
+<dd><p>Name of the pharmacophoric model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.description">
+<span class="sig-name descname"><span class="pre">description</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.description" title="Link to this definition">#</a></dt>
+<dd><p>Short description of the model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.interaction_sites">
+<span class="sig-name descname"><span class="pre">interaction_sites</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.interaction_sites" title="Link to this definition">#</a></dt>
+<dd><p>List of interaction sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of <code class="xref py py-obj docutils literal notranslate"><span class="pre">pharmacophoremt.interaction_site.InteractionSite</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.n_interaction_sites">
+<span class="sig-name descname"><span class="pre">n_interaction_sites</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.n_interaction_sites" title="Link to this definition">#</a></dt>
+<dd><p>Number of interaction sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.molecular_system">
+<span class="sig-name descname"><span class="pre">molecular_system</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.molecular_system" title="Link to this definition">#</a></dt>
+<dd><p>Molecular system linked to this pharmacophore.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><code class="xref py py-obj docutils literal notranslate"><span class="pre">molsysmt.MolSys</span></code></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.score">
+<span class="sig-name descname"><span class="pre">score</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.score" title="Link to this definition">#</a></dt>
+<dd><p>Score of the pharmacophore model.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.ref_mol">
+<span class="sig-name descname"><span class="pre">ref_mol</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.ref_mol" title="Link to this definition">#</a></dt>
+<dd><p>Index of the reference molecule.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.ref_struct">
+<span class="sig-name descname"><span class="pre">ref_struct</span></span><a class="headerlink" href="#pharmacophoremt.Pharmacophore.ref_struct" title="Link to this definition">#</a></dt>
+<dd><p>Index of the reference structure/frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.add_interaction_site">
+<span class="sig-name descname"><span class="pre">add_interaction_site</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interaction_site</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.add_interaction_site"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.add_interaction_site" title="Link to this definition">#</a></dt>
+<dd><p>Add a new interaction site to the pharmacophore.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.add_to_NGLView">
+<span class="sig-name descname"><span class="pre">add_to_NGLView</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pharmacophoremt'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.add_to_NGLView"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.add_to_NGLView" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.add_to_molsysviewer">
+<span class="sig-name descname"><span class="pre">add_to_molsysviewer</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">view</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tag</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.add_to_molsysviewer"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.add_to_molsysviewer" title="Link to this definition">#</a></dt>
+<dd><p>Add the pharmacophore to a MolSysViewer instance using high-performance vectorization.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.copy">
+<span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.copy"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.copy" title="Link to this definition">#</a></dt>
+<dd><p>Return independent sites/metadata, retaining the molecular reference.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Alternative name; None preserves the original.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Public copy_pharmacophore() result; no molecular data is copied.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="#pharmacophoremt.Pharmacophore" title="pharmacophoremt.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.get">
+<span class="sig-name descname"><span class="pre">get</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_center</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_direction</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">get_features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.get"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.get" title="Link to this definition">#</a></dt>
+<dd><p>Flexible query method to extract information from interaction sites.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.get_distance_matrix">
+<span class="sig-name descname"><span class="pre">get_distance_matrix</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.get_distance_matrix"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.get_distance_matrix" title="Link to this definition">#</a></dt>
+<dd><p>Calculate the N x N distance matrix between interaction site centers.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.merge">
+<span class="sig-name descname"><span class="pre">merge</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.merge"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.merge" title="Link to this definition">#</a></dt>
+<dd><p>Return a new Pharmacophore combining sites from self and other.</p>
+<p>The merged pharmacophore takes the name and metadata of self. No
+deduplication is applied; call the modeler’s merge helper if needed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>other</strong> (<a class="reference internal" href="#pharmacophoremt.Pharmacophore" title="pharmacophoremt.Pharmacophore"><em>Pharmacophore</em></a>)</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p><a class="reference internal" href="#pharmacophoremt.Pharmacophore" title="pharmacophoremt.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.remove_interaction_site">
+<span class="sig-name descname"><span class="pre">remove_interaction_site</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.remove_interaction_site"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.remove_interaction_site" title="Link to this definition">#</a></dt>
+<dd><p>Remove an interaction site by its index.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.set_essential">
+<span class="sig-name descname"><span class="pre">set_essential</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">essential</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_essential"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.set_essential" title="Link to this definition">#</a></dt>
+<dd><p>Toggle the essential flag of one or all interaction sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Index of the site, or <code class="docutils literal notranslate"><span class="pre">'all'</span></code> to set all sites at once.</p></li>
+<li><p><strong>essential</strong> (<em>bool</em>) – New essential value.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.set_radius">
+<span class="sig-name descname"><span class="pre">set_radius</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_radius"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.set_radius" title="Link to this definition">#</a></dt>
+<dd><p>Set the radius of one interaction site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Local sites to modify. Every target must have an actual radius.</p></li>
+<li><p><strong>radius</strong> (<em>quantity</em>) – New radius as a puw quantity (e.g. <code class="docutils literal notranslate"><span class="pre">puw.quantity(0.2,</span> <span class="pre">'nm')</span></code>).</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.set_sigma">
+<span class="sig-name descname"><span class="pre">set_sigma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_sigma"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.set_sigma" title="Link to this definition">#</a></dt>
+<dd><p>Edit Gaussian widths separately from radii, preserving source history.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Local GaussianKernel sites; incompatible targets raise before mutation.</p></li>
+<li><p><strong>sigma</strong> (<em>positive length quantity</em>) – Explicit Gaussian width.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.set_weight">
+<span class="sig-name descname"><span class="pre">set_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.set_weight"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.set_weight" title="Link to this definition">#</a></dt>
+<dd><p>Set finite nonnegative weights through public edit_pharmacophore().</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index</strong> (<em>int</em><em>, </em><em>sequence</em><em> of </em><em>int</em><em> or </em><em>'all'</em>) – Local target sites. Zero weight retains essential/exclusion semantics.</p></li>
+<li><p><strong>weight</strong> (<em>float</em>) – Explicit independent weight, not automatically inferred from activity.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.show">
+<span class="sig-name descname"><span class="pre">show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">color_palette</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'pharmacophoremt'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.show"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.show" title="Link to this definition">#</a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.similarity">
+<span class="sig-name descname"><span class="pre">similarity</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">other</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">tolerance_nm</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.15</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.similarity"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.similarity" title="Link to this definition">#</a></dt>
+<dd><p>Compute Dice similarity between two pharmacophores.</p>
+<p>For each site in self, the best-matching site in other (same feature,
+minimum distance) is found. A pair is counted as matched when the
+centroid distance ≤ <code class="docutils literal notranslate"><span class="pre">tolerance_nm</span></code>. The result is the Dice coefficient:</p>
+<blockquote>
+<div><p>similarity = 2 * <a href="#id3"><span class="problematic" id="id4">|matched_pairs|</span></a> / (N_self + N_other)</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>other</strong> (<a class="reference internal" href="#pharmacophoremt.Pharmacophore" title="pharmacophoremt.Pharmacophore"><em>Pharmacophore</em></a>)</p></li>
+<li><p><strong>tolerance_nm</strong> (<em>float</em>) – Maximum centroid distance for a site-match (default 0.15 nm = 1.5 Å).</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Dice similarity in [0, 1].</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>float</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.Pharmacophore.to_dataframe">
+<span class="sig-name descname"><span class="pre">to_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/pharmacophore.html#Pharmacophore.to_dataframe"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.Pharmacophore.to_dataframe" title="Link to this definition">#</a></dt>
+<dd><p>Convert the set of interaction sites to a Pandas DataFrame.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.attribution">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.</span></span><span class="sig-name descname"><span class="pre">attribution</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">enabled</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/attribution.html#attribution"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.attribution" title="Link to this definition">#</a></dt>
+<dd><p>Activate bounded attribution without replacing the application session.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>enabled</strong> (<em>bool</em><em>, </em><em>default=True</em>) – Enable tracking in this context; False temporarily suspends host tracking.</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">with</span> <span class="n">attribution</span><span class="p">():</span>
+<span class="gp">... </span>    <span class="n">result</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">prepared_ligand</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.attribution_report">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.</span></span><span class="sig-name descname"><span class="pre">attribution_report</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">attribution_data</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'markdown'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/attribution.html#attribution_report"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.attribution_report" title="Link to this definition">#</a></dt>
+<dd><p>Render a saved result or the current workflow using public Ackredit APIs.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>attribution_data</strong> (<em>dict</em><em>, </em><em>optional</em>) – The host attribution payload from result[‘attribution’] or model metadata.
+Omit to report the current application-owned Ackredit session.</p></li>
+<li><p><strong>format</strong> (<em>str</em><em>, </em><em>default='markdown'</em>) – An Ackredit report format, for example ‘bibtex’, ‘csl-json’ or ‘markdown’.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">bibliography</span> <span class="o">=</span> <span class="n">attribution_report</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'attribution'</span><span class="p">],</span> <span class="nb">format</span><span class="o">=</span><span class="s1">'bibtex'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.model">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.</span></span><span class="sig-name descname"><span class="pre">model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'complex-based'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receptor_selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/dispatcher.html#model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.model" title="Link to this definition">#</a></dt>
+<dd><p>Build a pharmacophore through an explicitly configured modeling route.</p>
+<p>The default complex-based route requires ligand_selection and a named
+interaction_collection of cached native MolSysMT observations on the same
+unchanged prepared source. It performs no implicit molecular preparation,
+ligand recognition or interaction detection. Optional structure_indices is
+passed to the modeler’s build method. Other native methods keep their own
+prepared-input contracts. Structure-based consumes cached receptor inventories
+and explicit hypothesis projections; it performs no molecular inference.</p>
+</dd></dl>
+
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#subpackages">Subpackages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.attribution">pharmacophoremt.attribution module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.attribution.attribution"><code class="docutils literal notranslate"><span class="pre">attribution()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.attribution.attribution_report"><code class="docutils literal notranslate"><span class="pre">attribution_report()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt-demo-module">pharmacophoremt.demo module</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.pharmacophore">pharmacophoremt.pharmacophore module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore"><code class="docutils literal notranslate"><span class="pre">Pharmacophore</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.name"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.name</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.description"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.description</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.interaction_sites"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.interaction_sites</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.n_interaction_sites"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.n_interaction_sites</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.molecular_system"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.molecular_system</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.score"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.score</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.ref_mol"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.ref_mol</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.ref_struct"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.ref_struct</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.add_interaction_site"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_interaction_site()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.add_to_NGLView"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_to_NGLView()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.add_to_molsysviewer"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_to_molsysviewer()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.copy"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.copy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.get"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.get()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.get_distance_matrix"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.get_distance_matrix()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.merge"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.merge()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.remove_interaction_site"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.remove_interaction_site()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_essential"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_essential()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_radius"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_radius()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_sigma"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_sigma()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.set_weight"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_weight()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.show"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.show()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.similarity"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.similarity()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.pharmacophore.Pharmacophore.to_dataframe"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.to_dataframe()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt">Module contents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore"><code class="docutils literal notranslate"><span class="pre">Pharmacophore</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.name"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.name</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.description"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.description</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.interaction_sites"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.interaction_sites</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.n_interaction_sites"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.n_interaction_sites</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.molecular_system"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.molecular_system</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.score"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.score</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.ref_mol"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.ref_mol</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.ref_struct"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.ref_struct</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.add_interaction_site"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_interaction_site()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.add_to_NGLView"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_to_NGLView()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.add_to_molsysviewer"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_to_molsysviewer()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.copy"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.copy()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.get"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.get()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.get_distance_matrix"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.get_distance_matrix()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.merge"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.merge()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.remove_interaction_site"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.remove_interaction_site()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.set_essential"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_essential()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.set_radius"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_radius()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.set_sigma"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_sigma()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.set_weight"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.set_weight()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.show"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.show()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.similarity"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.similarity()</span></code></a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.Pharmacophore.to_dataframe"><code class="docutils literal notranslate"><span class="pre">Pharmacophore.to_dataframe()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.attribution"><code class="docutils literal notranslate"><span class="pre">attribution()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.attribution_report"><code class="docutils literal notranslate"><span class="pre">attribution_report()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.model"><code class="docutils literal notranslate"><span class="pre">model()</span></code></a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

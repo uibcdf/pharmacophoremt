@@ -1,0 +1,269 @@
+phmt\_test\_support package
+===========================
+
+Submodules
+----------
+
+phmt\_test\_support.absence\_inputs module
+------------------------------------------
+
+.. automodule:: phmt_test_support.absence_inputs
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.aromatic\_interaction\_cases module
+-------------------------------------------------------
+
+.. automodule:: phmt_test_support.aromatic_interaction_cases
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.audit\_eralpha module
+-----------------------------------------
+
+.. automodule:: phmt_test_support.audit_eralpha
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.audit\_eralpha\_receptor module
+---------------------------------------------------
+
+.. automodule:: phmt_test_support.audit_eralpha_receptor
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.audit\_eralpha\_sources module
+--------------------------------------------------
+
+.. automodule:: phmt_test_support.audit_eralpha_sources
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.audit\_legacy\_cliques module
+-------------------------------------------------
+
+.. automodule:: phmt_test_support.audit_legacy_cliques
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.benchmark\_rigid\_consensus module
+------------------------------------------------------
+
+.. automodule:: phmt_test_support.benchmark_rigid_consensus
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.ccd\_interaction\_cases module
+--------------------------------------------------
+
+.. automodule:: phmt_test_support.ccd_interaction_cases
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.diagnose\_eralpha\_interface module
+-------------------------------------------------------
+
+.. automodule:: phmt_test_support.diagnose_eralpha_interface
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.esr1\_activity\_pilot module
+------------------------------------------------
+
+.. automodule:: phmt_test_support.esr1_activity_pilot
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.evidence\_archive module
+--------------------------------------------
+
+.. automodule:: phmt_test_support.evidence_archive
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.interaction\_cases module
+---------------------------------------------
+
+.. automodule:: phmt_test_support.interaction_cases
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.interaction\_collection\_cases module
+---------------------------------------------------------
+
+.. automodule:: phmt_test_support.interaction_collection_cases
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.legacy\_clique\_helpers module
+--------------------------------------------------
+
+.. automodule:: phmt_test_support.legacy_clique_helpers
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepare\_eralpha\_hydrogens module
+------------------------------------------------------
+
+.. automodule:: phmt_test_support.prepare_eralpha_hydrogens
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepare\_eralpha\_interface module
+------------------------------------------------------
+
+.. automodule:: phmt_test_support.prepare_eralpha_interface
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepare\_eralpha\_ligand module
+---------------------------------------------------
+
+.. automodule:: phmt_test_support.prepare_eralpha_ligand
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepared\_ccd\_ligands module
+-------------------------------------------------
+
+.. automodule:: phmt_test_support.prepared_ccd_ligands
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepared\_consensus\_workflow module
+--------------------------------------------------------
+
+.. automodule:: phmt_test_support.prepared_consensus_workflow
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepared\_receptor\_workflow module
+-------------------------------------------------------
+
+.. automodule:: phmt_test_support.prepared_receptor_workflow
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepared\_search\_workflow module
+-----------------------------------------------------
+
+.. automodule:: phmt_test_support.prepared_search_workflow
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.prepared\_workflow module
+---------------------------------------------
+
+.. automodule:: phmt_test_support.prepared_workflow
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.rigid\_consensus\_cases module
+--------------------------------------------------
+
+.. automodule:: phmt_test_support.rigid_consensus_cases
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.rigid\_refinement\_cases module
+---------------------------------------------------
+
+.. automodule:: phmt_test_support.rigid_refinement_cases
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.rigid\_refinement\_workloads module
+-------------------------------------------------------
+
+.. automodule:: phmt_test_support.rigid_refinement_workloads
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.saved\_model\_reader module
+-----------------------------------------------
+
+.. automodule:: phmt_test_support.saved_model_reader
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.validate\_aromatic\_interactions module
+-----------------------------------------------------------
+
+.. automodule:: phmt_test_support.validate_aromatic_interactions
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.validate\_eralpha\_exclusions module
+--------------------------------------------------------
+
+.. automodule:: phmt_test_support.validate_eralpha_exclusions
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.validate\_eralpha\_hydrogens module
+-------------------------------------------------------
+
+.. automodule:: phmt_test_support.validate_eralpha_hydrogens
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.validate\_eralpha\_interface module
+-------------------------------------------------------
+
+.. automodule:: phmt_test_support.validate_eralpha_interface
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.validate\_eralpha\_template module
+------------------------------------------------------
+
+.. automodule:: phmt_test_support.validate_eralpha_template
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+phmt\_test\_support.validate\_prepared\_ccd\_ligands module
+-----------------------------------------------------------
+
+.. automodule:: phmt_test_support.validate_prepared_ccd_ligands
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: phmt_test_support
+   :members:
+   :show-inheritance:
+   :undoc-members:
