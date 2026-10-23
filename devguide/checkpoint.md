@@ -1,6 +1,31 @@
 # Development Checkpoint
 
-## Current pause checkpoint — 2026-10-20
+## Current resumption checkpoint — 2026-10-23
+
+The maintainer resumed work and confirmed the proposed **0.4.0** candidate by
+instructing continuation after the explicit version question. The active segment
+remains #10/#9/#23; new addon work stays deferred. The reviewed real
+[`release_plan.toml`](../devtools/conda-build/release_plan.toml) selects version
+0.4.0, build 0, one noarch archive and the staged route. Its eight installed cells
+and eleven required source/control jobs preserve the existing contracts.
+`dependencies_public = false` conservatively retains unqualified candidate
+closure; the prior public-provider wheel result is not candidate qualification.
+
+Next, obtain exact-source native gates for the committed plan, establish staging
+access, build one original archive and execute the eight installed cells before
+reviewing public promotion. Candidate SHA, filename, digest and native run IDs
+will be recorded after execution; no public tag or GitHub Release is selected by
+this plan commit. Follow [publication operations](../devtools/conda-build/README.md)
+and the ordered steps in the dated pause record below.
+
+During the pause, MolSysSuite independently received the source/helper milestone;
+see [the central receipt](https://github.com/uibcdf/molsyssuite/blob/338a4fceb81a11e3eec89635bb9d8ae0b054de65/devguide/rollouts/pharmacophoremt_support_receiving_45_20261021.json).
+The source gates and support hashes were verified; central did not reinstall the
+original wheel or qualify a Conda candidate. Shared #92 advance notices are
+available for later deliberate review; they do not require replacing the
+already-qualified immutable SDK for this candidate.
+
+## Prior pause checkpoint — 2026-10-20
 
 The maintainer requested a pause. Resume with this section and the
 [current roadmap](roadmap.md#current-priorities--2026-10-20), then consult the

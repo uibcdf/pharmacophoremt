@@ -1,8 +1,10 @@
 # PharmacophoreMT Conda publication
 
 Owning review: uibcdf/pharmacophoremt#10; coordination: uibcdf/molsyssuite#45.
-This is a prepared noarch publication route with partial adoption and unconfirmed
-publication access. It does not select a release.
+This is a noarch publication route with partial qualification and unconfirmed
+publication access. The reviewed real `release_plan.toml` selects staged candidate
+**0.4.0, build 0**, confirmed by the maintainer on 2026-10-23. Public promotion
+remains a separate decision after exact-file installed qualification.
 
 The four publication wrappers and dependency/environment preflight pin the
 reviewed support-capable SDK `1c248b67d1daea256ed7c7f6172c6addb3f0b08f`.
@@ -13,7 +15,7 @@ unconfirmed. Follow the [shared noarch workflow guide](https://github.com/uibcdf
 
 ## Candidate and file identity
 
-Review and commit an actual `release_plan.toml` before selecting a candidate.
+The actual `release_plan.toml` records the reviewed 0.4.0 staged decision.
 `release_plan.example.toml` has illustrative version 0.0.0 only. It requires eleven
 executed jobs: eight full supported source cells with installed-context preflight,
 independent governance, policy/lint/format and Conda governance. A passing recovery
@@ -37,9 +39,9 @@ installation, installed-file validation, complete local tests and the post-test
 provenance recheck. The manual installed wrapper never runs on ordinary pushes.
 Missing/skipped/failed evidence blocks promotion. An optional administrative
 `qualification_sha` is separate from the original `candidate_sha`, file and digest.
-Promote those same bytes without rebuilding or replacing the archive. No release
-plan, staged Conda candidate, installed Conda matrix or public PHMT delivery has
-been selected by the development wheel work.
+Promote those same bytes without rebuilding or replacing the archive. No
+staged Conda archive, installed Conda matrix or public PHMT delivery is established
+by the development wheel work or the subsequent release-plan decision.
 
 ## Installed support adoption — 2026-10-20
 

@@ -488,6 +488,14 @@ class TestDistributionContract(unittest.TestCase):
             )
             <= admin
         )
+        candidate, inventory = self.noarch.inspect_recipe(
+            self.root, "devtools/conda-build/release_plan.toml", RESOURCES
+        )
+        self.assertNotEqual(candidate["version"], self.plan["version"])
+        self.assertEqual(candidate["gate_jobs"], self.plan["gate_jobs"])
+        self.assertTrue(candidate["requires_installed_gate"])
+        self.assertEqual(candidate["route"], "staged")
+        self.noarch.promotion_descriptor(self.root, candidate, inventory, "a" * 64)
 
     def test_qualification_commit_is_separate_from_original_producer_and_file_identity(
         self,
@@ -496,7 +504,6 @@ class TestDistributionContract(unittest.TestCase):
         self.assertIn("qualification_sha: ${{ inputs.qualification_sha }}", text)
         self.assertIn("candidate_sha: ${{ inputs.candidate_sha }}", text)
         self.assertIn("sha256: ${{ inputs.sha256 }}", text)
-        self.assertFalse((ROOT / "devtools/conda-build/release_plan.toml").exists())
         self.assertEqual(self.plan["version"], "0.0.0")
 
 

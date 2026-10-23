@@ -433,3 +433,25 @@ plan, obtain exact-candidate gates, establish staging access, build one archive
 and qualify all eight installed cells before a publication decision. Existing
 development-wheel/source receipts retain their narrower identities. #10 remains
 partial; no candidate build, upload or promotion is started for this pause.
+
+### Resumed staged candidate decision — 2026-10-23
+
+The maintainer instructed continuation after the explicit 0.4.0 confirmation
+question. The actual `devtools/conda-build/release_plan.toml` now records version
+0.4.0, build 0 and a staged first noarch delivery. The existing eight installed
+cells, four required installed phases, eleven executed source/control jobs,
+recipe, resource/support inventory and SDK pin remain unchanged. Public promotion
+is reviewed after installed qualification; no historical tag is moved.
+The administrative guard now accepts the real plan instead of asserting its
+absence, and verifies that its executed-job and installed-gate contracts retain
+the reviewed matrix. Synthetic artifact tests keep their illustrative 0.0.0
+fixture; they do not become evidence for the real archive.
+
+The plan conservatively retains `dependencies_public = false`: prior public
+provider/wheel observations do not qualify dependency closure for new Conda bytes.
+Obtain exact-source gates for the committed real plan, confirm staging access,
+build one original archive, retain its filename/digest/receipts and execute the
+complete installed matrix. No archive or public delivery is claimed by this
+decision. MolSysSuite independently received the earlier source/helper milestone
+on 2026-10-21, without reinstalling the original wheel; see the
+[central receipt](https://github.com/uibcdf/molsyssuite/blob/338a4fceb81a11e3eec89635bb9d8ae0b054de65/devguide/rollouts/pharmacophoremt_support_receiving_45_20261021.json).

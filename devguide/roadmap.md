@@ -1,6 +1,17 @@
 # Strategic Roadmap
 
-## Current priorities — 2026-10-20
+## Current priorities — 2026-10-23
+
+The maintainer resumed the distribution segment and confirmed **0.4.0**. The real
+[`release_plan.toml`](../devtools/conda-build/release_plan.toml) selects build 0,
+one noarch archive and staging, retaining all eight installed cells and eleven
+required native source/control jobs. Next acquire the committed candidate's
+exact-source gates, establish staging access, build the original archive and
+qualify it before reviewing publication. Existing source/wheel evidence and
+MolSysSuite's independent receiving of that milestone do not qualify new bytes.
+See the [current checkpoint](checkpoint.md). New addon work remains deferred.
+
+## Prior checkpoint — 2026-10-20
 
 Work is paused at the maintainer's request. The [pause checkpoint](checkpoint.md)
 records implementation/evidence identities, retained resources and the ordered
