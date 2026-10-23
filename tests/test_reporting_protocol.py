@@ -21,6 +21,7 @@ class TestReportingProtocol(unittest.TestCase):
             {report.fields["issue"] for report in reports},
             {
                 "uibcdf/pharmacophoremt#2",
+                "uibcdf/pharmacophoremt#4",
                 "uibcdf/pharmacophoremt#10",
                 "uibcdf/pharmacophoremt#12",
                 "uibcdf/pharmacophoremt#13",
@@ -68,6 +69,7 @@ class TestReportingProtocol(unittest.TestCase):
                 "uibcdf/pharmacophoremt#57",
                 "uibcdf/pharmacophoremt#58",
                 "uibcdf/pharmacophoremt#59",
+                "uibcdf/pharmacophoremt#61",
                 "uibcdf/pharmacophoremt#5",
                 "uibcdf/pharmacophoremt#6",
                 "uibcdf/pharmacophoremt#8",

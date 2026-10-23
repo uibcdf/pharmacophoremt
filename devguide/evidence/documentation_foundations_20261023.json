@@ -1,0 +1,81 @@
+{
+  "schema": "pharmacophoremt.documentation-foundations@1",
+  "date": "2026-10-23",
+  "issues": [
+    "uibcdf/pharmacophoremt#4",
+    "uibcdf/pharmacophoremt#61"
+  ],
+  "source_base": "78580b914637cc20467e198d3d0734bf79132c6e",
+  "state": "verified-local-overlay",
+  "strict_build_headline": "PASS exit=0 | 1 passed | 6.81s",
+  "rendered_pages": {
+    "index.html": {
+      "sha256": "f81c357a261dd265a16e8d139071863650a6a7884fd69c9ec4fc58f875f0f742",
+      "bytes": 19641,
+      "checked_text": [
+        "Release",
+        "0.4.0",
+        "user guide"
+      ],
+      "links": 44
+    },
+    "content/about/what.html": {
+      "sha256": "d18fc03d397b1657af74221c642d627a6d54e2a4efd451ce159e16d37d8f6860",
+      "bytes": 25301,
+      "checked_text": [
+        "What is PharmacophoreMT?",
+        "Molecular systems belong to MolSysMT"
+      ],
+      "links": 53
+    },
+    "content/user/index.html": {
+      "sha256": "a94dcdfb7ea6b28006ec33ea786739e12f0690126acc7c40e232821c4f782be3",
+      "bytes": 25801,
+      "checked_text": [
+        "Choose a modeling route",
+        "Evaluate, screen and retain evidence"
+      ],
+      "links": 56
+    },
+    "content/developer/index.html": {
+      "sha256": "5bf9641395bb85d8e103a2e7705406ab5392478fbf38d3711275fd1c43a176a5",
+      "bytes": 24468,
+      "checked_text": [
+        "Understand the component boundary",
+        "Work on documentation and evidence"
+      ],
+      "links": 49
+    },
+    "content/showcase/index.html": {
+      "sha256": "9cf93c57cdc42a919fe3d7fbebb70ec80c4803fd482732e8df505287432b1a35",
+      "bytes": 22194,
+      "checked_text": [
+        "Showcase",
+        "Consensus across distinct ligands"
+      ],
+      "links": 40
+    },
+    "README.html": {
+      "sha256": "b04a88ea5afbfb4093101bdfe6018dae26d4aea8ef9f369436e45d1de8a4c96b",
+      "bytes": 26177,
+      "checked_text": [
+        "PharmacophoreMT documentation contributors",
+        "Keep identity and claims component-owned"
+      ],
+      "links": 41
+    }
+  },
+  "notebook_execution_material_sha256": "47ae67a9b603537b5f049e604b0534842ce259dc620e1843d98f132b8299de76",
+  "notebook_execution_material_unchanged": true,
+  "protected_runtime_and_inputs_unchanged": true,
+  "notebooks_executed": false,
+  "scientific_calculations_executed": false,
+  "scope": "Source editorial/navigation review and strict complete build, not a public package, biological, newer-provider or live-browser qualification. Native publication recorded separately.",
+  "initial_build_finding": "New docs/README.md was initially absent from toctree; added to developer navigation rather than excluding it or suppressing warnings.",
+  "local_build_environment": {
+    "python": "3.14.7",
+    "sphinx": "9.1.0",
+    "pharmacophoremt_distribution_metadata": "0.3.0+158.gcea4bba.dirty",
+    "scope": "Existing development environment rendering only; native deployment uses a fresh checkout/install. This is not installed-package receiving."
+  }
+}

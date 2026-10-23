@@ -34,8 +34,8 @@ Python admission and generated badge/inventory disposition are tracked in
 [PharmacophoreMT #23](https://github.com/uibcdf/pharmacophoremt/issues/23).
 Broader biological/activity and live-browser/hardware validation remain separate.
 
-PyPI is not a qualified delivery route for this release. `pocketmt` is a different
-package and is not an installation route for PharmacophoreMT.
+The qualified public delivery route for this release is Conda. PyPI installation
+has not been qualified.
 
 ## Development source
 

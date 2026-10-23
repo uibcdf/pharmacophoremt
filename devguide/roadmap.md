@@ -2,6 +2,13 @@
 
 ## Current priorities — 2026-10-23
 
+The active local segment is the documentation foundation: resolve inherited
+project identity (#4) and make the landing/user/developer/showcase entry points
+useful (#61), reusing existing recipes and evidence with the common Sphinx/PyData
+pattern. Preserve notebook execution material and molecular ownership. Complete
+the strict build, rendered review and native publication before archiving the
+reports. This adds no runtime API, package version or viewer feature.
+
 **0.4.0 is delivered** through the official Conda channel and GitHub Release.
 The [delivery checkpoint](checkpoint.md) links original source/staging, all eight
 installed cells (921 passing items each), same-byte public promotion and fresh

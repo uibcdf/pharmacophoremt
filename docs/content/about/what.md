@@ -1,42 +1,50 @@
-# What is MolSysMT?
+# What is PharmacophoreMT?
 
-PocketMT -**Pocket** **M**ulti**T**oolkit - is a scientific
-open-source Python library designed to ...
+PharmacophoreMT is an open-source Python library for pharmacophore modeling and
+screening. You can build hypotheses from prepared molecular systems, compare
+pharmacophoric features and evaluate how well a prepared molecular pose satisfies
+a model.
 
-This library was developed to provide a user-friendly interface for
-computational molecular biology labs, such as the
-[UIBCDF](https://www.uibcdf.org/), to use in their research. With PocketMT, you
-can ...
+## From chemical features to testable hypotheses
 
-...
+A pharmacophoric site combines a chemical feature with a spatial shape. Depending
+on the selected workflow, you can retain orientation, source atom mappings,
+weights, essential-site requirements and exclusion constraints. Saved models keep
+their scientific definitions and original provenance.
 
-PocketMT is an open-source project shared under the [MIT license](https://github.com/uibcdf/pocketmt/blob/main/LICENSE). This means
-that you have the right to use, copy, modify, merge, publish, distribute,
-sublicense, and/or sell copies without any limitations.
+The native classical workflows cover:
 
-If you have suggestions, improvements, enhancement proposals, if you miss a
-functionality, or you have identified a bug or a malfunction, feel free to
-contribute to its development or interact with the authors and contributors by
-using the [PocketMT public GitHub repository](https://github.com/uibcdf/pocketmt).
+- Building a query from a prepared reference ligand.
+- Constructing sites from declared ligand–receptor interaction observations.
+- Composing explicit hypotheses from cached receptor features.
+- Building consensus models from prepared aligned or rigid unaligned ligands.
+- Evaluating placed poses and searching caller-supplied prepared conformers.
+- Ranking resolved results and inspecting empty outcomes and calculation failures.
 
-When using PocketMT, it is important to understand that the authors and
-contributors do not provide any legal warranty or assume any liability of any
-kind regarding its use and results.
+Use the [user guide](../user/index.md) to choose a route and the
+[cookbook](../cookbook/index.md) for its inputs, public tools and worked examples.
+Individual recipes define their supported geometry and method choices.
 
-We hope you find it useful!
+## Molecular systems belong to MolSysMT
 
-[Diego Prada-Gracia and Liliana M. Moreno Vargas](who.md).
+[MolSysMT](https://github.com/uibcdf/molsysmt) owns the molecular-system model,
+preparation, selection, chemical recognition, coordinate manipulation and
+transformations. PharmacophoreMT consumes prepared systems or cached observations
+and makes decisions about pharmacophoric hypotheses and their evaluation.
+Preparation, hydrogen geometry and conformer generation must be explicit
+provider-supported input steps. They are not implicit consequences of building
+a pharmacophore.
 
-<br/>
+A geometric fit value measures the selected model's coverage. It is not a binding
+affinity or an activity prediction. The [validation collection](../validation/index.md)
+separates analytical controls, prepared chemical cases, biological questions and
+computational comparisons.
 
-<br/>
+## Project and contribution
 
-:::{figure} ../../_static/logo.svg
-:width: 50%
-:align: center
-:::
-
-<br/>
-
-<br/>
-
+PharmacophoreMT is developed within [UIBCDF](https://www.uibcdf.org/) and shared
+under the [MIT license](https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE).
+Use the [project repository](https://github.com/uibcdf/pharmacophoremt) to report a
+problem or propose an improvement. See the [developer guide](../developer/index.md)
+for contributor entry points and the [citation guide](citation.md) for software,
+method and data references.

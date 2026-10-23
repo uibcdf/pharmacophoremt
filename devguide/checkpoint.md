@@ -1,6 +1,26 @@
 # Development Checkpoint
 
-## Current delivery checkpoint — 2026-10-23
+## Current documentation checkpoint — 2026-10-23
+
+The maintainer resumed documentation work using MolSysMT/MolSysViewer's existing
+Sphinx/MyST/PyData pattern as reference. #4 owns the inherited PocketMT identity;
+#61 owns reader entry points. About now describes PharmacophoreMT and its molecular
+ownership boundary; landing/user/developer/showcase pages lead into existing
+recipes, API and evidence. `docs/README.md` supplies the local contributor route.
+
+The complete strict Sphinx guard passes after including that new guide in the
+developer toctree. The landing notebook's code, outputs and metadata are preserved;
+no notebook or molecular calculation is executed for this narrative slice. Native
+publication and report archival are the next closeout steps. These are documentation
+controls, not a new release or an extension of the scientific/provider acceptance
+record. New addon work remains deferred.
+
+This documentation checkpoint uses a conditional `[skip ci]` after the local
+strict/rendering and reporting checks; native documentation publication and
+administrative checks follow on its committed head. Full scientific backlog
+remains #9's scope and is not cleared by those documentation controls.
+
+## Prior delivery checkpoint — 2026-10-23
 
 **0.4.0 is public**: [GitHub Release](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0)
 and [official Conda package](https://anaconda.org/uibcdf/pharmacophoremt).

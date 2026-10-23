@@ -7,8 +7,12 @@ real chemical components; the observed EST recipe retains a deposited ligand pos
 These fixtures are not biological benchmarks or
 qualified molecular conformer ensembles.
 
-The recipes target the development APIs. Use compatible MolSysMT and PyUnitWizard
-versions; these tools are not established as available in the stable distribution.
+The native tools are delivered in PharmacophoreMT 0.4.0; start with the
+[qualified installation context](../about/installation.md). Recipes that import
+`devtools` use source-checkout fixtures, which are not installed runtime modules.
+Use your own prepared inputs in an application, and retain each recipe's declared
+provider, preparation and evidence limits. An archived execution does not qualify
+every later provider version.
 
 ```{toctree}
 :maxdepth: 1
