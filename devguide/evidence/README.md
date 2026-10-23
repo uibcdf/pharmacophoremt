@@ -7,6 +7,16 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Documentation foundation — 2026-10-23
+
+The [local source/render receipt](documentation_foundations_20261023.json) and
+[native publication receipt](documentation_publication_20261023.json) record #4/#61:
+correct identity and reader routes, strict complete Sphinx build, six checked
+rendered/published pages and unchanged notebook code/outputs/metadata. The native
+source and immutable gh-pages identities remain explicit. These are editorial,
+navigation and deployment controls; no notebook, molecular calculation, new public
+package or browser/biological acceptance is established by them.
+
 ## Conda 0.4.0 delivery — 2026-10-23
 
 The [source/staging summary](conda_040_staging_20261023_summary.json) and

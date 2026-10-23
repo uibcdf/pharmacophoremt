@@ -2,12 +2,13 @@
 
 ## Current priorities — 2026-10-23
 
-The active local segment is the documentation foundation: resolve inherited
-project identity (#4) and make the landing/user/developer/showcase entry points
-useful (#61), reusing existing recipes and evidence with the common Sphinx/PyData
-pattern. Preserve notebook execution material and molecular ownership. Complete
-the strict build, rendered review and native publication before archiving the
-reports. This adds no runtime API, package version or viewer feature.
+The first documentation foundation is delivered: inherited project identity (#4)
+and landing/user/developer/showcase entry points (#61) are corrected, strictly
+built and natively published. The [checkpoint](checkpoint.md) and archived reports
+link source/rendering/publication evidence. Notebook execution material and
+molecular ownership are preserved; no runtime API, package or viewer feature is
+added. A next documentation slice can deepen the user guide with explicit input
+contracts and worked routes, reusing the existing cookbook and measured cases.
 
 **0.4.0 is delivered** through the official Conda channel and GitHub Release.
 The [delivery checkpoint](checkpoint.md) links original source/staging, all eight

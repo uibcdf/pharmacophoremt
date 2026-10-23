@@ -1,9 +1,9 @@
 ---
 summary: Build reader-oriented documentation entry points around delivered native workflows.
 issue: uibcdf/pharmacophoremt#61
-status: active
+status: resolved
 opened: 2026-10-23
-closed:
+closed: 2026-10-23
 verification: measured
 area: [documentation, navigation]
 guard: devtools/tests/test_documentation_build.py::test_full_documentation_build_without_warnings
@@ -59,3 +59,17 @@ No new molecular implementation, runtime API, release artifact or browser accept
 Usable landing/user/developer/showcase routes, honest 0.4.0/fixture guidance,
 resolving links, warning-free full build, unchanged notebook execution material,
 fresh publication and a maintained resumption checkpoint.
+
+## Completed publication — 2026-10-23
+
+The source checkpoint above preceded publication. Reviewed source
+`7aa33cd88806dcde05a01a9416df11d844cb9b62` now passes native Documentation
+40011094526, policy 40011098877, Conda governance 40011103894 and administrative
+CI probe 40011110286. The probe intentionally omits scientific execution.
+Immutable gh-pages commit `c869f6ed18a4dc8ee510efea4d5cf979e8cc0ef0` supplies
+six verified rendered entry pages with the corrected identity/routes; Pages API
+reports the site built from gh-pages. See the [local strict/render receipt](../evidence/documentation_foundations_20261023.json)
+and [native publication receipt](../evidence/documentation_publication_20261023.json).
+Notebook code, outputs and metadata remain unchanged; runtime code and molecular
+inputs are untouched. These checks establish the documentation slice and deployment,
+not new scientific, installed-package, visual/browser or badge acceptance.

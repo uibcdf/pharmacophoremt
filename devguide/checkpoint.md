@@ -1,6 +1,39 @@
 # Development Checkpoint
 
-## Current documentation checkpoint — 2026-10-23
+## Current documentation outcome — 2026-10-23
+
+The first documentation foundation is complete. The inherited identity (#4) and
+reader-entry work (#61) are resolved in the [identity archive](archive/documentation_project_identity.md)
+and [entry-point archive](archive/documentation_reader_entry_points.md).
+About, landing, user/developer/showcase portals and the cookbook introduction now
+describe PharmacophoreMT's delivered routes and point to the existing recipes,
+API and evidence. The theme/configuration and runtime code are unchanged.
+
+The [local receipt](evidence/documentation_foundations_20261023.json) records the
+complete strict Sphinx guard, six rendered page checks and preserved notebook
+execution material. The [native receipt](evidence/documentation_publication_20261023.json)
+binds source `7aa33cd88806dcde05a01a9416df11d844cb9b62` to successful Documentation
+40011094526, policy 40011098877, Conda governance 40011103894 and administrative
+probe 40011110286. Six pages were read from immutable gh-pages
+`c869f6ed18a4dc8ee510efea4d5cf979e8cc0ef0`; Pages reports the site built.
+The probe omits science, and this work executes no notebook or molecular workload.
+No new package, scientific/provider, visual/browser or documentation-badge
+acceptance is inferred. The closure commit changes only reports/indexes/evidence;
+the published documentation content remains that reviewed source.
+
+Next local documentation work can develop the user guide's concepts and worked
+routes beyond these portals, with new examples executed only in an explicitly
+qualified context. Reuse the existing cookbook/validation collection; keep
+molecular operations with MolSysMT. #41/provider receiving and #20/#22 scientific
+validation retain their independent scopes; new addon work remains deferred.
+Public 0.4.0 and its central delivery follow-ups remain in the prior checkpoint.
+
+Local HTML and review records remain in the owned
+`/tmp/phmt-docs-foundations-20261023` directory for optional human preview. Durable
+JSON receipts are committed here; there is no new environment, cache or server to
+keep running. Documentary skip/recovery remains tracked under #9.
+
+## Prior documentation preparation — 2026-10-23
 
 The maintainer resumed documentation work using MolSysMT/MolSysViewer's existing
 Sphinx/MyST/PyData pattern as reference. #4 owns the inherited PocketMT identity;

@@ -1,0 +1,363 @@
+{
+  "schema": "pharmacophoremt.documentation-publication@1",
+  "date": "2026-10-23",
+  "issues": [
+    "uibcdf/pharmacophoremt#4",
+    "uibcdf/pharmacophoremt#61"
+  ],
+  "source_sha": "7aa33cd88806dcde05a01a9416df11d844cb9b62",
+  "gh_pages_sha": "c869f6ed18a4dc8ee510efea4d5cf979e8cc0ef0",
+  "pages": {
+    "index.html": {
+      "sha256": "b6ab9abd0ec1de1585e1e4b39abd1e4cc98b8d56fcded2e61248c568cdf7b241",
+      "bytes": 19692,
+      "checked_text": [
+        "Release",
+        "0.4.0",
+        "user guide"
+      ]
+    },
+    "content/about/what.html": {
+      "sha256": "5b524e6d551c3fe0cefb1149cbc2e4b3b879b4af970ca817aca3776e8f086249",
+      "bytes": 25352,
+      "checked_text": [
+        "What is PharmacophoreMT?",
+        "Molecular systems belong to MolSysMT"
+      ]
+    },
+    "content/user/index.html": {
+      "sha256": "876ebcb5d26e40b5158b46e20687ba6d670cc5fee989268b7ee51198f8771cf4",
+      "bytes": 25852,
+      "checked_text": [
+        "Choose a modeling route",
+        "Evaluate, screen and retain evidence"
+      ]
+    },
+    "content/developer/index.html": {
+      "sha256": "1d0c87caa3bfd52a06f992e7b4a1c4344f37585f17dc32f1f472e9d907b79675",
+      "bytes": 24519,
+      "checked_text": [
+        "Understand the component boundary",
+        "Work on documentation and evidence"
+      ]
+    },
+    "content/showcase/index.html": {
+      "sha256": "647ed65f82880d9e973bd1c728e2aa011f0e483c8971626ece8d6a3206eb97af",
+      "bytes": 22245,
+      "checked_text": [
+        "Showcase",
+        "Consensus across distinct ligands"
+      ]
+    },
+    "README.html": {
+      "sha256": "7257773d0aa79bbad13b59f969421d98a866f36f9ba51c72f0a8498eab8c7f58",
+      "bytes": 26228,
+      "checked_text": [
+        "PharmacophoreMT documentation contributors",
+        "Keep identity and claims component-owned"
+      ]
+    }
+  },
+  "native_runs": {
+    "documentation": {
+      "run_id": 40011094526,
+      "run_attempt": 1,
+      "head_sha": "7aa33cd88806dcde05a01a9416df11d844cb9b62",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Sphinx docs to gh-pages",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Additional info about the build",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Setup conda env",
+              "conclusion": "success"
+            },
+            {
+              "name": "Info conda",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install package",
+              "conclusion": "success"
+            },
+            {
+              "name": "Test import module",
+              "conclusion": "success"
+            },
+            {
+              "name": "Running the Sphinx to gh-pages Action",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Setup conda env",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Set up Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    "policy": {
+      "run_id": 40011098877,
+      "run_attempt": 1,
+      "head_sha": "7aa33cd88806dcde05a01a9416df11d844cb9b62",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "policy / conformance",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check out member repository",
+              "conclusion": "success"
+            },
+            {
+              "name": "Set up policy Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check out MolSysSuite policy",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check repository conformance",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install the policy Ruff version",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check Python lint and imports",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check Python formatting",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Check out MolSysSuite policy",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Set up policy Python",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Check out member repository",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    "conda_governance": {
+      "run_id": 40011103894,
+      "run_attempt": 1,
+      "head_sha": "7aa33cd88806dcde05a01a9416df11d844cb9b62",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "publication / check",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run python -m pip install --disable-pip-version-check PyYAML==6.0.3 'Jinja2>=3,<4' 'packaging>=24'",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check publication workflow controls",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check declared noarch recipe and resources without building",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    "administrative_probe": {
+      "run_id": 40011110286,
+      "run_attempt": 1,
+      "head_sha": "7aa33cd88806dcde05a01a9416df11d844cb9b62",
+      "status": "completed",
+      "conclusion": "success",
+      "jobs": [
+        {
+          "name": "Check skipped-commit backlog",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Decide whether to run the full matrix",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "name": "Reporting governance",
+          "conclusion": "success",
+          "steps": [
+            {
+              "name": "Set up job",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check out the reviewed dependency SDK",
+              "conclusion": "success"
+            },
+            {
+              "name": "Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check reporting records and generated indexes",
+              "conclusion": "success"
+            },
+            {
+              "name": "Install CI-governance test tools",
+              "conclusion": "success"
+            },
+            {
+              "name": "Test CI recovery and contributor routes",
+              "conclusion": "success"
+            },
+            {
+              "name": "Review declared dependency routes",
+              "conclusion": "success"
+            },
+            {
+              "name": "Test distribution and dependency contracts",
+              "conclusion": "success"
+            },
+            {
+              "name": "Check generated ordinary environments",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/setup-python@v5",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Check out the reviewed dependency SDK",
+              "conclusion": "success"
+            },
+            {
+              "name": "Post Run actions/checkout@v4",
+              "conclusion": "success"
+            },
+            {
+              "name": "Complete job",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "name": "Test on ${{ matrix.cfg.os }}, Python ${{ matrix.cfg.python-version }}",
+          "conclusion": "skipped",
+          "steps": []
+        }
+      ]
+    }
+  },
+  "scope": "Native documentation publication, immutable gh-pages content/identity and administrative checks; science matrix intentionally omitted by probe. No HTTP-browser, molecular, new package or biological qualification.",
+  "pages_service": {
+    "html_url": "http://www.uibcdf.org/pharmacophoremt/",
+    "source": {
+      "branch": "gh-pages",
+      "path": "/"
+    },
+    "status": "built"
+  }
+}
