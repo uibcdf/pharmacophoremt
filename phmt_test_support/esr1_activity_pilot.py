@@ -211,6 +211,10 @@ def restore(directory, manifest):
 
 
 def portable(value):
+    import pyunitwizard as puw
+
+    if not isinstance(value, str) and puw.is_quantity(value):
+        return puw.QuantityRecord.from_quantity(value).to_dict(encoding="json")
     if isinstance(value, dict):
         return {str(k): portable(v) for k, v in value.items()}
     if isinstance(value, (list, tuple)):
@@ -383,6 +387,13 @@ def execute(directory, manifest_path, output):
                 f"prepared CID {entry['cid']}: {record['preparation']['status']}",
                 flush=True,
             )
+        journal_path = output.with_suffix(".preparation.json")
+        if journal_path.exists():
+            raise FileExistsError("preserve original preparation journal")
+        dump(
+            journal_path,
+            portable(dict(manifest=identity(manifest_path), records=records)),
+        )
         reference = next(r for r in records if r["role"] == "reference")
         if reference["preparation"]["status"] != "completed":
             raise ValueError(
@@ -454,6 +465,24 @@ def execute(directory, manifest_path, output):
         "depdigest",
         "ackredit",
     )
+    runtime_files = {
+        name: {
+            str(path.relative_to(Path(module.__file__).parent)): digest(
+                path.read_bytes()
+            )
+            for path in sorted(Path(module.__file__).parent.rglob("*"))
+            if path.is_file() and path.suffix in {".py", ".so", ".pyd"}
+        }
+        for name, module in (("pharmacophoremt", phmt), ("molsysmt", msm))
+    }
+    conda_records = [
+        {
+            key: record.get(key)
+            for key in ("name", "version", "build", "subdir", "sha256", "md5", "url")
+        }
+        for path in sorted((Path(sys.prefix) / "conda-meta").glob("*.json"))
+        for record in [json.loads(path.read_text())]
+    ]
     result = dict(
         schema="pharmacophoremt.esr1_activity_pilot_run@1",
         issue=62,
@@ -467,10 +496,13 @@ def execute(directory, manifest_path, output):
             driver=identity(Path(__file__)),
             versions={p: importlib.metadata.version(p) for p in packages},
             runtime_origins=dict(pharmacophoremt=phmt.__file__, molsysmt=msm.__file__),
+            runtime_files=runtime_files,
+            conda_records=conda_records,
         ),
         manifest=identity(manifest_path),
         method=METHOD,
         saved_query=identity(query_path),
+        preparation_journal=identity(journal_path),
         reference_self_evaluation=self_result,
         records=records,
         retrospective=report,

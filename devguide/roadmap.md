@@ -2,13 +2,20 @@
 
 ## Current priorities — 2026-10-23
 
+The maintainer has resumed the **MVP scientific workflow**, with addon and deeper
+documentation deferred. [#62](pending_proposals/esr1_activity_pilot.md) executes
+an independent ligand-reference ERα assay pilot: a pre-score frozen cohort,
+published 3D conformers, public MolSysMT preparation and native held-out screening.
+Keep preparation/search failures distinct from inactivity, and do not tune the
+query against held-out outcomes. Receptor refinement and newer-provider receiving
+remain separate; this pilot does not depend on MolSysMT #323.
+
 The first documentation foundation is delivered: inherited project identity (#4)
 and landing/user/developer/showcase entry points (#61) are corrected, strictly
 built and natively published. The [checkpoint](checkpoint.md) and archived reports
 link source/rendering/publication evidence. Notebook execution material and
 molecular ownership are preserved; no runtime API, package or viewer feature is
-added. A next documentation slice can deepen the user guide with explicit input
-contracts and worked routes, reusing the existing cookbook and measured cases.
+added. Deeper user-guide concepts and worked routes can follow measured MVP needs.
 
 **0.4.0 is delivered** through the official Conda channel and GitHub Release.
 The [delivery checkpoint](checkpoint.md) links original source/staging, all eight

@@ -4,9 +4,9 @@ issue: uibcdf/pharmacophoremt#62
 status: active
 opened: 2026-10-23
 closed:
-verification: asserted
+verification: inspected
 area: [validation, mvp]
-guard:
+guard: devtools/tests/test_esr1_activity_pilot.py::TestEsr1ActivityPilot::test_frozen_split_excludes_ambiguous_compounds_and_reference_leakage
 normative: devguide/validation_collection.md
 blocked_by: []
 supersedes: []
@@ -68,6 +68,9 @@ Any later consensus or conformer continuation has a distinct declared run.
 
 ## Current evidence
 
-Acquisition and pre-score data qualification are implemented. Scientific
-execution and acceptance are pending; this report does not claim discrimination.
+Acquisition and pre-score data qualification are implemented: 32 inputs are
+frozen; 27 have a PubChem 3D record and five return HTTP 404 (one held-out active,
+four inactives). Those inputs remain in the experiment without replacement.
+The offline split/ambiguity guard passes. Scientific execution and acceptance
+are pending; this report does not claim discrimination.
 Addon, release infrastructure and deeper documentation remain deferred.
