@@ -1,0 +1,160 @@
+{
+  "schema": "pharmacophoremt.esr1_consensus_readiness_training_summary@1",
+  "issue": 64,
+  "attempt": "bounded_training_readiness_02",
+  "measured_at": "2026-10-24T23:12:51.211433+00:00",
+  "producer": {
+    "git_head": "25a49f5322a06c1deeff95b396cf194fc5d8f9b6",
+    "dirty": "",
+    "stable": true,
+    "python": "3.14.9 | packaged by conda-forge | (main, Oct 22 2026, 10:21:21) [GCC 15.3.0]",
+    "versions": {
+      "pharmacophoremt": "0.4.0+17.g25a49f5",
+      "molsysmt": "0.23.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "rdkit": "2026.9.1",
+      "pandas": "3.1.0",
+      "pyunitwizard": "0.29.0",
+      "argdigest": "0.17.0",
+      "smonitor": "0.22.0",
+      "depdigest": "0.15.1",
+      "ackredit": "0.12.1"
+    },
+    "conda_record_count": 325
+  },
+  "declaration": {
+    "file": "readiness_declaration.json",
+    "sha256": "b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e",
+    "byte_count": 32303
+  },
+  "acquisition": {
+    "file": "acquisition.json",
+    "sha256": "907e2a68309e72fbbdb89dfa9e4250f85c2a4a0cfa35e1c437b9e19901b23373",
+    "byte_count": 7740
+  },
+  "original_inputs": "tests/data/esr1_consensus_comparison/readiness_training_20261024",
+  "outcome": {
+    "status": "ready",
+    "stage": "training_complete",
+    "evaluation_opened": false
+  },
+  "counts": {
+    "training_candidates": 12,
+    "retained_original_responses": 3,
+    "new_requests": 9,
+    "available_sdf": 8,
+    "acquisition_failed": 4,
+    "prepared": 8,
+    "molecular_preparation_failed": 0,
+    "selected_training": 3,
+    "evaluation_reserved": 64,
+    "evaluation_acquired": 0,
+    "evaluation_scored": 0
+  },
+  "selected_training_cids": [
+    "31477",
+    "6293",
+    "9818306"
+  ],
+  "consensus": {
+    "method": "pivot_rigid_clique_consensus@1",
+    "complete": true,
+    "fits": 146,
+    "layouts": 2,
+    "models": 3,
+    "selected_model_index": 0,
+    "selected_site_count": 3,
+    "joint_ligand_ids": [
+      "31477",
+      "9818306"
+    ],
+    "selection_order": [
+      0,
+      1,
+      2
+    ]
+  },
+  "training_scores": [
+    {
+      "cid": "31477",
+      "ranking_score": 1.0,
+      "status": "matched"
+    },
+    {
+      "cid": "6293",
+      "ranking_score": 0.0,
+      "status": "not_matched"
+    },
+    {
+      "cid": "9818306",
+      "ranking_score": 1.0,
+      "status": "matched"
+    }
+  ],
+  "full_evidence": {
+    "path": "esr1_consensus_readiness_training_20261024.json.gz",
+    "compressed_sha256": "3870cb9fe8b4d55757bd4627de9f79f290833e6238a5ee5813222b29497f2d53",
+    "compressed_bytes": 681030,
+    "uncompressed_sha256": "608b0f41f7ee181785cccbfcde65bf758e7dd056b0b179815d4991028144d8f6",
+    "uncompressed_bytes": 8115960
+  },
+  "saved_query_archive": {
+    "path": "esr1_consensus_readiness_training_20261024_query.json.gz",
+    "compressed_sha256": "d9e5cce14296a696474a9377e587d7cc988595a121afd6ce269fb6c41d0704f3",
+    "compressed_bytes": 30190,
+    "uncompressed_sha256": "f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d",
+    "uncompressed_bytes": 444164
+  },
+  "execution_log": {
+    "path": "esr1_consensus_readiness_training_20261024.log.gz",
+    "compressed_sha256": "1a4dc95817ca83ccdb40fd1b176b7dbe2c4198c67a0e419df17f3a2c58aa6f32",
+    "compressed_bytes": 192,
+    "uncompressed_sha256": "9301e44b306d6e95c6351916614cc365ba6327dc22a8565689791b263d45a377",
+    "uncompressed_bytes": 540
+  },
+  "acquisition_log": {
+    "path": "esr1_consensus_readiness_training_20261024_acquisition.log.gz",
+    "compressed_sha256": "0671c9c3e338be0cdff7e23a51204909cf3053d79aff8318eb469121319575e0",
+    "compressed_bytes": 149,
+    "uncompressed_sha256": "e90049ef87c9eecd31e06b40dee21c831cb9dafa926312d7cdcd1b86ab88ff14",
+    "uncompressed_bytes": 462
+  },
+  "environment_creation_evidence": {
+    "path": "esr1_consensus_readiness_training_20261024_environment.json.gz",
+    "compressed_sha256": "1ac1af7694f86ddc3db7ab69159666dfacc5893851eb502309481bcd31188487",
+    "compressed_bytes": 26247,
+    "uncompressed_sha256": "de5be7f4caf26ddb32d4198a7e91138594d7bfa6df3f1e2229773eda17820f49",
+    "uncompressed_bytes": 257392
+  },
+  "attribution": {
+    "items": 26,
+    "uses": 86,
+    "scope": "actual candidate preparation, native consensus fits/assignment/cliques and selected-query training checks; no held-out evaluation"
+  },
+  "scope": "fixed bounded training-only readiness attempt and frozen query; no discrimination metrics or independent biological validation",
+  "temporary_resources": {
+    "owner": "PharmacophoreMT #64 attempt 2",
+    "root": "/tmp/phmt64-readiness-20261024-4ceLcb",
+    "environment": "/tmp/phmt64-readiness-20261024-4ceLcb/environment",
+    "status": "retained for pending frozen-query paired evaluation",
+    "reason": "providers remain useful for the next authorized #64 phase; no uninstall hooks or shared cache cleanup run",
+    "environment_cleanup_attempted": false,
+    "shared_cache_cleanup": false
+  },
+  "qualification_evidence": {
+    "path": "esr1_consensus_readiness_training_20261024_qualification.json.gz",
+    "compressed_sha256": "8a9f909cb932d3dfa36004a68847263f269d2e63ba87370e7079ca96a38c1f90",
+    "compressed_bytes": 1621,
+    "uncompressed_sha256": "9cb60154cf97a6d16997d118913530ebe785fbfe1b0f40bf36b2e556584ff3b4",
+    "uncompressed_bytes": 3649
+  },
+  "closeout_verification": {
+    "administrative_and_documentation": "46 passed; 24 subtests passed, including strict Sphinx and frozen-query/selection guard",
+    "reporting": "3 passed",
+    "ruff": "whole repository passed",
+    "report_index": "current",
+    "scientific_scope": "51 selected controls and actual measured training run; no new full suite or biological evaluation",
+    "environment_retained_for_pending_evaluation": true
+  }
+}

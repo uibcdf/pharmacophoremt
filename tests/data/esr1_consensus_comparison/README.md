@@ -17,3 +17,11 @@ relicense source data under this repository's software license.
 No new 3D structures, training query or evaluation scores are present at this
 declaration stage. Molecular reading/preparation and identity/scaffold analysis
 belong to MolSysMT. Different CIDs do not prove chemical-series independence.
+
+Subsequent records preserve that original declaration: `training_20261024/`
+contains its stopped attempt's exact acquisition responses; the separate
+`readiness_declaration.json` and `readiness_training_20261024/` define/retain the
+bounded second training attempt. Its frozen query and full output are qualified
+by `devguide/evidence/esr1_consensus_readiness_training_20261024_summary.json`.
+There are still no evaluation structures/scores. Follow the maintained protocol
+for the unchanged 64-input paired evaluation and source/provider requirements.

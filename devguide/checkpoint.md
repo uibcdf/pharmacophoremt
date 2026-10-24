@@ -1,5 +1,80 @@
 # Development Checkpoint
 
+## Consensus query ready; evaluation unopened — 2026-10-24
+
+**#64 attempt 2 has a usable frozen training query.** Clean producer
+`25a49f5322a06c1deeff95b396cf194fc5d8f9b6` executes the separate 12-candidate
+readiness declaration, reusing all three original responses and making only
+nine new requests. Eight SDFs are available; all eight prepare and pass every
+MolSysMT preservation check. Four original 404 responses are retained.
+The fixed first-success rule selects **31477, 6293, 9818306**, pivot 31477.
+All candidate outcomes remain recorded; no score/feature-count filtering occurs.
+
+Native consensus completes 146 fits, two layouts and three hypotheses. The
+declared model ordering selects model 0, `layout_00000 / hypothesis_00000`:
+two acceptors and one aromatic site, jointly supported by 31477/9818306.
+All sites are essential with weight one and radius 0.15 nm. Training-only
+seed-hit readiness scores are 1, 0, 1. The zero-scoring active 6293 is unplaced
+to the pivot within this finite proposal family; it is not erased from source
+evidence or the three-input denominator. No alternate trio/pivot/model is tried.
+
+The outcome is `ready`, `training_complete`, **evaluation unopened**. No structure
+or score from the 64 reserved inputs is acquired/computed. Original attempt 1
+and all #62/#63 outputs remain intact. This is training readiness, not biological
+discrimination, affinity or predictive acceptance.
+
+Use the existing checksum reader to restore the two frozen query archives:
+
+- Baseline: `evidence/esr1_activity_pilot_20261023_summary.json`,
+  `saved_query_archive`, raw SHA-256
+  `c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3`.
+- Consensus: `evidence/esr1_consensus_readiness_training_20261024_summary.json`,
+  `saved_query_archive`, raw SHA-256
+  `f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d`.
+
+The [new summary](evidence/esr1_consensus_readiness_training_20261024_summary.json)
+qualifies original full output (raw SHA-256
+`608b0f41f7ee181785cccbfcde65bf758e7dd056b0b179815d4991028144d8f6`),
+query, logs, native environment creation and test receipt. All 12 original
+response identities and failures are portable under
+`tests/data/esr1_consensus_comparison/readiness_training_20261024/`, with notice.
+Actual Ackredit captures retain 26 items / 86 uses, with no evaluation credit.
+The [case](../docs/content/validation/esr1_consensus_comparison.md) explains both
+attempts and their distinct scientific limits.
+
+Actual Linux/Python 3.14.9 uses the same exact 325 public Conda records, MolSysMT
+0.23.0, PyUnitWizard 0.29.0 and editable PHMT `0.4.0+17.g25a49f5`. Source/native
+hashes and before/after producer audit are stable. All 51 selected scientific
+controls pass with 232 historical public MolSysMT warnings retained. No new
+full hosted/installed suite or public package is claimed.
+Closeout passes 46 administrative/documentation tests plus 24 subtests, including
+strict Sphinx and the frozen-query/selection guard; three reporting tests,
+whole-tree Ruff, generated-index and whitespace checks pass. The original
+attempt/declaration archive guards remain active. No new full scientific suite
+is inferred from these selections.
+
+**Next:** after committing these query/training records, implement/execute the
+unchanged paired evaluation on all 64 reserved inputs. Native PHMT loads the
+checksum-restored queries; public MolSysMT owns all molecular I/O/preparation
+and fits. Keep exact declared screening settings, retain every acquisition/
+preparation/search failure without replacement or inactivity imputation, and
+report per-arm plus common-evaluable counts/metrics and missing-score sensitivity.
+No tuning on evaluation outcomes. #64 remains partial for that comparison.
+
+The owned public-provider environment is retained for this pending phase at
+`/tmp/phmt64-readiness-20261024-4ceLcb/environment`, with raw logs/inputs beside it.
+It is intentionally still useful; no retirement hook or shared/global-cache
+cleanup is run. MolSysSuite #139 remains the owning cleanup diagnostic. Recheck
+actual source/runtime identity before the next calculation; do not confuse the
+base PHMT 0.4.0 Conda record with the editable source overlay.
+
+Previously pending `cca31420cecb64c21bfeeff735d02fa2e443e9ce` now has CI
+40134459469 reporting/all eight scientific jobs green, with actual dependency-
+context/install/import/test steps verified; policy 40134459652 and Conda
+governance 40134459644 succeed. This historical receiving does not qualify the
+new training/archive head; follow #9 for its separate native checks/Documentation.
+No addon, new release or broader documentation infrastructure is introduced.
+
 ## Second training attempt predeclared — 2026-10-24
 
 The [new declaration](../tests/data/esr1_consensus_comparison/readiness_declaration.json)

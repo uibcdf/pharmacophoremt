@@ -22,6 +22,123 @@ spec.loader.exec_module(driver)
 
 
 class TestEsr1ConsensusTraining(unittest.TestCase):
+    def test_archived_readiness_freezes_selected_query_and_keeps_evaluation_unopened(
+        self,
+    ):
+        spec = importlib.util.spec_from_file_location(
+            "readiness_evidence_reader", ROOT / "phmt_test_support/evidence_archive.py"
+        )
+        reader = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(reader)
+        path = (
+            ROOT
+            / "devguide/evidence/esr1_consensus_readiness_training_20261024_summary.json"
+        )
+        summary, run = reader.read_archived_evidence(path)
+        self.assertEqual(
+            run["producer"]["git_head"], "25a49f5322a06c1deeff95b396cf194fc5d8f9b6"
+        )
+        self.assertEqual(run["producer"]["dirty"], "")
+        self.assertTrue(run["producer_stable"])
+        self.assertEqual(len(run["producer"]["conda_records"]), 325)
+        self.assertEqual(
+            run["declaration"]["sha256"], driver.READINESS_DECLARATION_SHA256
+        )
+        self.assertEqual(
+            run["outcome"],
+            dict(status="ready", stage="training_complete", evaluation_opened=False),
+        )
+        records = run["records"]
+        self.assertEqual(len(records), 12)
+        eligible = [r for r in records if r["preparation"]["status"] == "completed"]
+        self.assertEqual(len(eligible), 8)
+        self.assertTrue(all(all(r["preparation"]["checks"].values()) for r in eligible))
+        self.assertEqual(
+            run["selected_training_cids"], [r["cid"] for r in eligible[:3]]
+        )
+        self.assertEqual(run["selected_training_cids"], ["31477", "6293", "9818306"])
+        self.assertEqual(
+            [r["cid"] for r in records if r["acquisition"]["status"] == "failed"],
+            ["24633", "17701", "6327657", "70400"],
+        )
+        self.assertTrue(
+            all(
+                r["acquisition"]["http_status"] == 404
+                for r in records
+                if r["acquisition"]["status"] == "failed"
+            )
+        )
+        report = run["consensus"]["report"]
+        self.assertTrue(run["consensus"]["complete"])
+        self.assertEqual((report["n_fits"], report["n_layouts"]), (146, 2))
+        hypotheses = run["consensus"]["summary"]["hypotheses"]
+        order = sorted(
+            range(len(hypotheses)),
+            key=lambda i: (
+                -hypotheses[i]["n_sites"],
+                -hypotheses[i]["joint_support_count"],
+                hypotheses[i]["layout_id"],
+                hypotheses[i]["hypothesis_id"],
+            ),
+        )
+        self.assertEqual(order, run["selected"]["training_only_ranking"])
+        self.assertEqual(run["selected"]["model_index"], order[0])
+        self.assertEqual(
+            (run["selected"]["n_models"], run["selected"]["n_sites"]), (3, 3)
+        )
+        self.assertEqual(
+            run["selected"]["metadata"]["hypothesis"]["joint_ligand_ids"],
+            ["31477", "9818306"],
+        )
+        self.assertEqual(
+            [(r["cid"], r["ranking_score"]) for r in run["training_readiness"]],
+            [("31477", 1), ("6293", 0), ("9818306", 1)],
+        )
+        _, query_bytes = reader.read_archived_bytes(
+            path, identity_key="saved_query_archive"
+        )
+        self.assertEqual(
+            hashlib.sha256(query_bytes).hexdigest(),
+            "f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d",
+        )
+        self.assertEqual(
+            run["selected"]["saved_query"]["sha256"],
+            hashlib.sha256(query_bytes).hexdigest(),
+        )
+        self.assertEqual(len(json.loads(query_bytes)["interaction_sites"]), 3)
+        inputs = ROOT / summary["original_inputs"]
+        acquired = json.loads((inputs / "acquisition.json").read_text())
+        self.assertEqual(
+            hashlib.sha256((inputs / "acquisition.json").read_bytes()).hexdigest(),
+            run["acquisition"]["sha256"],
+        )
+        self.assertEqual(
+            sum(
+                r.get("acquisition_origin") == "retained_original_response"
+                for r in acquired["records"]
+            ),
+            3,
+        )
+        self.assertFalse(acquired["evaluation_acquired"])
+        for record in acquired["records"]:
+            a = record["acquisition"]
+            identity = a if a["status"] == "completed" else a["response"]
+            self.assertEqual(
+                driver.pilot.identity(inputs / identity["file"]),
+                {k: identity[k] for k in ("file", "sha256", "byte_count")},
+            )
+        self.assertEqual(
+            (len(run["attribution"]["items"]), len(run["attribution"]["uses"])),
+            (26, 86),
+        )
+        for key in (
+            "execution_log",
+            "acquisition_log",
+            "environment_creation_evidence",
+            "qualification_evidence",
+        ):
+            reader.read_archived_bytes(path, identity_key=key)
+
     def test_readiness_acquisition_reuses_three_originals_and_never_requests_evaluation(
         self,
     ):

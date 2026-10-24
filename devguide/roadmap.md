@@ -43,10 +43,19 @@ original three response identities, including the 404; acquire only the other
 nine and prepare all candidates with MolSysMT. Select the first three successful
 preparations in fixed order without feature-count/geometry/score filtering.
 
-Next, execute only this new training stage and commit full original evidence
-and a valid selected query before opening evaluation. No alternate trio, pivot,
-model, expanded pool or budget increase follows failure. Preserve the original
-stopped attempt and do not tune on evaluation. Molecular identity/scaffold overlap capability is
+The second training stage is now **ready**: eight candidates prepare, the fixed
+first-success rule selects 31477/6293/9818306, and native consensus completes
+146 fits, two layouts and three hypotheses. The declared ordering selects a
+three-site query jointly supported by two ligands; training-only readiness
+scores are 1, 0, 1. Original inputs, all failures, full evidence and the exact
+query hash are retained in the
+[new summary](evidence/esr1_consensus_readiness_training_20261024_summary.json).
+
+Next, after committing the frozen query/training evidence, execute the unchanged
+paired evaluation on all 64 reserved inputs. Restore both queries by checksum,
+retain every failure and per-arm/common-subset denominator, and do not tune on
+evaluation. No evaluation structure or score exists yet. Preserve both distinct
+training attempts. Molecular identity/scaffold overlap capability is
 proposed in MolSysMT #447 rather than implemented here. The independent cleanup
 hook diagnostic belongs to MolSysSuite #139. Receive newer molecular providers
 separately under #41; conformer and stereo capabilities remain MolSysMT

@@ -6,7 +6,7 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, modeling, mvp]
-guard: devtools/tests/test_esr1_consensus_training.py::TestEsr1ConsensusTraining::test_archived_stop_preserves_sources_without_consensus_or_evaluation
+guard: devtools/tests/test_esr1_consensus_training.py::TestEsr1ConsensusTraining::test_archived_readiness_freezes_selected_query_and_keeps_evaluation_unopened
 normative: devguide/esr1_consensus_comparison.md
 blocked_by: []
 supersedes: []
@@ -158,3 +158,50 @@ exercise original-response reuse and exactly nine new requests, and ensure
 first-success selection cannot rank candidates by feature count. The original
 declaration/archive guards remain active. No new molecular routine or backend
 is added; existing public APIs and case orchestration are reused.
+
+## Second training attempt ready — 2026-10-24
+
+Clean producer `25a49f5322a06c1deeff95b396cf194fc5d8f9b6` executes the second
+declaration without changing its scientific parameters or touching evaluation.
+There are eight SDFs and four preserved 404 responses among the 12 candidates;
+all eight available systems prepare and pass the original preservation checks.
+The first three eligible CIDs are 31477, 6293 and 9818306, with pivot 31477.
+
+Native `from_rigid_ligands` completes 146 fits and two layouts, retaining three
+three-site hypotheses with joint support two. The declared identifier tie-break
+selects model 0, `layout_00000 / hypothesis_00000`, supported by 31477/9818306.
+It contains two acceptors and one aromatic site, radius 0.15 nm, essential with
+weight one. Training-only seed-hit scores are 1, 0, 1 in selected input order.
+CID 6293 is unplaced to this pivot within the finite proposal family and retains
+its original inventory/support denominator; its zero score is not inactivity.
+No other trio/pivot/model is tried after those scores.
+
+The outcome is `ready`, `training_complete`, `evaluation_opened=False`.
+The [new summary](../evidence/esr1_consensus_readiness_training_20261024_summary.json)
+qualifies original full output, selected query, logs, environment creation and
+qualification. Query raw SHA-256 is
+`f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d`;
+full output raw SHA-256 is
+`608b0f41f7ee181785cccbfcde65bf758e7dd056b0b179815d4991028144d8f6`.
+All original candidate responses and acquisition identities are portable in
+`tests/data/esr1_consensus_comparison/readiness_training_20261024/` with a scoped
+notice. Attempt 1 remains unchanged. Actual attribution retains 26 items /
+86 uses from executed preparation/consensus/training branches only.
+
+Linux/Python 3.14.9 uses the exact 325 public provider records, MolSysMT 0.23.0,
+PyUnitWizard 0.29.0 and editable PHMT `0.4.0+17.g25a49f5`; actual source/native
+hashes and producer audit remain stable. All 51 selected scientific controls
+pass, with 232 historical public MolSysMT warnings retained. This is not a new
+full hosted/installed matrix, public package or timing benchmark.
+
+**Remaining:** commit the frozen query/full training evidence, then execute the
+unchanged paired 64-input evaluation with all failures and per-arm/common-subset
+denominators. No discrimination metric or predictive qualification exists yet.
+The owned environment stays available for that pending scientific phase; no
+retirement hooks or global/shared-cache cleanup run here. MolSysSuite #139 stays
+separate. #64 remains partial for the held-out comparison.
+
+Closeout passes 46 administrative/documentation tests plus 24 subtests, including
+strict Sphinx and the new archive/query-selection guard, plus three reporting
+tests, whole-tree Ruff, generated-index and whitespace checks. The original
+stop/declaration guards remain active alongside the new measured record.

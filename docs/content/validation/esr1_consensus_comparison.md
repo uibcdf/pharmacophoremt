@@ -1,9 +1,9 @@
-# ERα training gate: a retained unavailable-input outcome
+# ERα training gates and a frozen consensus query
 
 Case `esr1-consensus-training-20261024-01`, owned by
 [#64](https://github.com/uibcdf/pharmacophoremt/issues/64), maintainers `LMMV`
 and `dprada`. Evidence class: scientific input/preparation readiness control.
-**The declared attempt stops before consensus:** one of its three fixed
+**The original declared attempt stops before consensus:** one of its three fixed
 training compounds has no record at the requested PubChem 3D endpoint.
 No comparison of activity discrimination was executed.
 
@@ -109,3 +109,77 @@ change requires a distinct measured run; preserve this outcome and its original
 HTTP response. A later attempt needs a separately declared training-readiness
 policy before acquiring new candidates; it cannot silently replace CID 24633
 or open this evaluation set under the stopped declaration.
+
+## Attempt 2: bounded readiness and a frozen query
+
+Case `esr1-consensus-training-20261024-02` is a distinct, predeclared attempt,
+not a replacement of the original stop. The
+[second declaration](https://github.com/uibcdf/pharmacophoremt/blob/main/tests/data/esr1_consensus_comparison/readiness_declaration.json)
+fixes 12 training candidates before new acquisition, preserving all original
+evaluation records, baseline query, preparation, consensus/scoring parameters
+and model choice. Its SHA-256 is
+`b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e`.
+All three original responses, including the known 404, are reused unchanged;
+only nine further fixed training URLs are requested. These known training
+observations are development data, not fresh validation.
+
+Eligibility requires completed acquisition and successful public MolSysMT
+preparation/preservation/feature extraction, without thresholds on feature count,
+geometry, support or score. All candidates are retained. The first three
+successful preparations, in fixed order, become the only consensus inputs;
+failure cannot trigger another trio, pivot, model or budget.
+
+| Training-stage accounting | Result |
+| --- | ---: |
+| Fixed candidates | 12 |
+| Original responses reused / new requests | 3 / 9 |
+| Available SDFs / preserved HTTP 404 responses | 8 / 4 |
+| Successful MolSysMT preparations / molecular preparation rejections | 8 / 0 |
+| Selected training ligands | 3 |
+| Native fits / placement layouts | 146 / 2 |
+| Consensus hypotheses | 3 |
+| Selected query sites / jointly supporting ligands | 3 / 2 |
+| Evaluation structures acquired / compounds scored | 0 / 0 |
+
+The selected trio is **31477, 6293, 9818306**, with pivot 31477. All eight
+available SDFs pass the same state/atom/stereo/coordinate preservation controls.
+Unavailable CIDs are 24633, 17701, 6327657 and 70400; none is replaced outside
+the pool or assigned a negative score. Native consensus completes its declared
+finite family and retains three alternatives. All have three sites and joint
+support two; the declared identifier tie-break chooses model 0,
+`layout_00000 / hypothesis_00000`, supported by 31477 and 9818306.
+
+The frozen query contains **two acceptors and one aromatic site**, all essential
+with weight one and radius 0.15 nm. Training-only seed-hit readiness scores are
+1 for 31477, 0 for 6293 and 1 for 9818306. The second training ligand has no
+accepted direct placement to the pivot within this finite proposal family;
+its source inventory is retained and it remains in the three-input support
+denominator. Its zero score is not assay inactivity: all three are training
+actives. There is no alternate model/trio selection based on those scores.
+
+The outcome is `ready`, `training_complete`, `evaluation_opened=False`.
+This qualifies a usable frozen training query, not biological discrimination.
+The [new summary](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_consensus_readiness_training_20261024_summary.json)
+qualifies full original output, query, logs, environment creation and test
+receipt, with all actual 26 Ackredit items / 86 uses. Clean producer
+`25a49f5322a06c1deeff95b396cf194fc5d8f9b6` remains stable through execution.
+Linux/Python 3.14.9 uses the same 325 public provider records, MolSysMT 0.23.0,
+PyUnitWizard 0.29.0 and actual editable PHMT `0.4.0+17.g25a49f5`.
+No new package/release or independent biological validation is implied.
+
+The saved query's raw SHA-256 is
+`f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d`;
+the full training output's is
+`608b0f41f7ee181785cccbfcde65bf758e7dd056b0b179815d4991028144d8f6`.
+The [original pool responses and notice](https://github.com/uibcdf/pharmacophoremt/tree/main/tests/data/esr1_consensus_comparison/readiness_training_20261024)
+retain every success and failure. The offline guard independently reconstructs
+candidate eligibility/model ordering, verifies original response/query identities
+and preserves zero evaluation counts without rerunning molecular science.
+
+Next is the separately recorded paired evaluation on the unchanged 64 reserved
+inputs, after this query/training receipt is committed. Use the checksum reader
+to restore both original baseline and new consensus query; native PHMT loads
+them. Retain all evaluation failures and per-arm/common-subset denominators.
+The owned environment remains available for that pending phase; no retirement
+hooks or shared-cache cleanup run in this closeout. This readiness stage has
+no ROC AUC, enrichment or predictive-performance result.
