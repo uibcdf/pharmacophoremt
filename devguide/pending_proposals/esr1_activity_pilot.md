@@ -98,3 +98,29 @@ issue partial for that disposition and the next separately declared comparison.
 New conformer capability belongs to MolSysMT #219; stereo interpretation belongs
 to #215/#299. No local workaround or silent state repair is added. Addon,
 release infrastructure and deeper documentation remain deferred.
+
+## Development replay — 2026-10-24
+
+The separately [predeclared replay](../../tests/data/esr1_activity_pilot/seeded_replay_declaration.json)
+now executes the explicit seed-only binary criterion under #63, using identical
+original query bytes and all original input identities/order. The
+[new summary](../evidence/esr1_seeded_hit_replay_20261024_summary.json) binds clean
+source `c80325c5c3851691bcc0a993d1e73eaf294654f6`, actual runtime origins and
+325 provisioned Conda records, with PHMT replaced by editable source. Public
+MolSysMT is 0.23.0 and PyUnitWizard 0.29.0; this is not a new public PHMT artifact.
+Stale pre-commit editable version metadata is retained explicitly, not used to
+identify executed source. All 949 source tests pass in that qualified context.
+
+The same 25 inputs evaluate and the same six remain unscored; the same sole
+active CID 24964624 hits. Scores are 1 for that fitted hit and 0 for all completed
+negatives (24 zero ties); raw partial coverage is not a molecular rank. Binary
+AUC is 0.5833333333, BEDROC(alpha=20) 0.6496274186 and EF at 10% 1.9675925926.
+Twenty-three valid negatives have no fitted pose/coverage, which is distinct
+from a calculation failure. The original result is not rewritten. Changing
+criterion and recording a separate runtime does not establish improved biological
+prediction; this cohort is exposed development data, not a fresh holdout.
+
+#63's bounded scoring contract is resolved. This case remains partial for
+portable long-term original-input retention and stronger independent scientific
+validation. Further query/criterion development must not reuse these outcomes as
+unseen validation. Molecular conformer/stereo capabilities remain provider-owned.

@@ -1,5 +1,11 @@
 # Search rigid poses and prepared conformations
 
+The explicit scoring API below is **development-source functionality after
+0.4.0**. Use a qualified source checkout and provider context; public Conda
+0.4.0 retains its previous API and does not accept `search_method='seeded_hit'`.
+Its original recipe remains available in the
+[0.4.0 source](https://github.com/uibcdf/pharmacophoremt/blob/0.4.0/docs/content/cookbook/prepared_conformers.md).
+
 Use `RigidPoseSearch` to align and evaluate one prepared frame. Use
 `ConformerScreening` to apply that search to requested prepared frames of each
 molecule and retain its best checked pose. Both compose chemical recognition,

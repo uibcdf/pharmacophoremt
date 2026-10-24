@@ -1,5 +1,9 @@
 # Explicit seed-only molecular ranking
 
+Availability: development source after public 0.4.0. No package/release is
+published by this work; 0.4.0 keeps its original API. The migration restrictions
+below describe the new source API.
+
 PharmacophoreMT #63 separates checked-pose coverage from a bounded molecular
 ranking criterion. Existing `PoseEvaluator` coverage remains a statement about a
 declared pose. The compatibility rigid search includes the supplied placement;
@@ -52,6 +56,8 @@ Triplet proposals use distances and chemical identities. Their fitted poses
 transform covariantly under proper rotations/translations of the prepared input;
 the arbitrary initial placement contributes no extra candidate. Invariance is
 subject to the provider's numerical precision and declared matching tolerances.
+It assumes unchanged selected atoms, prepared frame and chemical state. A
+coordinate-dependent selection that changes membership changes the input.
 Reflection, torsional changes, a changed chemical state, differently generated
 coordinates or boundary-roundoff sensitivity are not a proper-frame equivalence.
 

@@ -1,5 +1,30 @@
 # Strategic Roadmap
 
+## Current priorities — 2026-10-24
+
+The MVP scoring segment **#63 is locally qualified**: explicit seed-only binary
+molecular ranking is separate from checked-pose coverage, shared across native
+rigid/conformer/facade/retrospective tools. Legacy coverage ranking requires an
+explicit choice. All 949 source tests pass with public MolSysMT 0.23.0 on
+Linux/Python 3.14.9. See the [resolved report](archive/rigid_negative_ranking_contract.md),
+[contract](seeded_ranking_workflow.md) and [checkpoint](checkpoint.md).
+
+The predeclared #62 development replay preserves the frozen query and all inputs;
+25 evaluate, six remain unscored and the same sole active hits. Binary AUC 0.5833
+is not predictive improvement over the earlier checked-coverage criterion.
+Original outputs remain immutable and this exposed cohort is not a fresh holdout.
+
+Next, resolve durable original-input retention under #62 and declare further
+scientific evaluation using reviewed prepared training data and an unexposed
+evaluation set. Receive newer molecular providers separately under #41; conformer
+and stereo capabilities remain MolSysMT responsibilities. A graded molecular
+partial-match optimum is not implemented. No provider gap is patched here.
+
+This is development source after public 0.4.0, not a new release/package. Current
+public delivery and central follow-ups remain unchanged. New addon work and wider
+documentation/release-infrastructure expansion remain deferred. Final-head native
+receiving is tracked separately from the completed local source/scientific checks.
+
 ## Current priorities — 2026-10-23
 
 The maintainer has resumed the **MVP scientific workflow**, with addon and deeper
@@ -16,7 +41,7 @@ query; it is not predictive acceptance. Next resolve durable original-input
 retention and receive provider-owned conformer/stereo capabilities (#219/#215)
 before declaring a new comparison. Do not retune on the observed held-out set.
 
-**Next local scientific task: [#63](pending_proposals/rigid_negative_ranking_contract.md).**
+**Next local scientific task: [#63](archive/rigid_negative_ranking_contract.md).**
 A separate analytical source probe confirms that completed negatives can retain
 frame-dependent partial coverage. Define and qualify the ranking contract before
 extending comparative activity claims. Molecular transforms already use MolSysMT;

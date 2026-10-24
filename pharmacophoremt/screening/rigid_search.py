@@ -51,11 +51,13 @@ class RigidPoseSearch:
 
     Notes
     -----
-    The method is rigid_triplet_fit@1: proposed center fits are checked by
-    PoseEvaluator, including all essential sites and exclusions. It does not
-    guarantee exhaustive continuous tolerance solutions or generate conformers.
-    A budget-exhausted search raises unless a valid unit-fit hit establishes the
-    maximum possible coverage. A complete valid negative is reported explicitly.
+    The compatibility method is rigid_triplet_fit@1; seed-only binary ranking
+    uses rigid_triplet_seed_hit@1. Proposed center fits are checked by
+    PoseEvaluator, including all essential sites and exclusions. Neither method
+    guarantees exhaustive continuous tolerance solutions or generates conformers.
+    A budget-exhausted search raises unless a valid hit establishes the maximum
+    for the selected criterion (unit coverage or binary hit respectively).
+    A complete method negative is reported explicitly.
     Molecular inputs are never modified. Returned results are portable; the best
     alignment retains fitted coordinates and can be reproduced with the public
     alignment tool. Recognition and provider failures retain their cause.

@@ -6,7 +6,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (21)
+### Active (20)
 
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(active, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
@@ -28,7 +28,6 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`public_pharmacophore_curation.md`](public_pharmacophore_curation.md) — [#38](https://github.com/uibcdf/pharmacophoremt/issues/38) — Consolidate reusable cached-model selection, copying, extraction and constraint editing. *(active, measured)*
 - [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(active, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(active, measured)*
-- [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(active, reproduced)*
 
 ### Partial (5)
 

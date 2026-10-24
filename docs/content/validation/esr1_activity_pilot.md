@@ -138,6 +138,70 @@ scoring contract is the next MVP task before expanding discrimination claims.
 
 ## Original outputs and maintenance
 
+### Development-source replay — 2026-10-24
+
+The [separate replay summary](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_seeded_hit_replay_20261024_summary.json)
+records the new explicit seed-only binary criterion from #63. This is development
+source after public 0.4.0; no new public package is delivered. It uses the exact
+original query bytes, the unchanged 32 input identities and a
+[pre-score declaration](https://github.com/uibcdf/pharmacophoremt/blob/main/tests/data/esr1_activity_pilot/seeded_replay_declaration.json).
+The same 25 inputs evaluate, the same six remain unscored, and CID 24964624 is
+again the sole active hit. No compounds are replaced or selected from new scores.
+
+| Binary development replay | Measured value |
+| --- | ---: |
+| Evaluated active / inactive | 6 / 19 |
+| Unscored active / inactive | 1 / 5 |
+| Hit score / completed-negative score | 1 / 0 |
+| Scores tied at zero | 24 of 25 |
+| Valid negatives without a fitted pose | 23 |
+| ROC AUC | 0.5833333333 |
+| BEDROC, alpha 20 | 0.6496274186 |
+| Tie-aware EF at 10% | 1.9675925926 |
+
+Binary scores answer whether a fitted triplet seed satisfies the declared query;
+they do not grade partial coverage or optimize over continuous pose space. A
+valid no-fit negative has no pose `fit_value` but has binary score zero. A failed
+input remains unscored. Missing-score hypothetical AUC bounds are 0.4673–0.6429,
+not observations or confidence intervals. This is a different criterion on an
+already exposed cohort and a separately recorded runtime context, so the metric
+change is **not evidence of improved biological prediction**.
+
+Clean source producer `c80325c5c3851691bcc0a993d1e73eaf294654f6` uses public
+MolSysMT 0.23.0 and PyUnitWizard 0.29.0, Linux/Python 3.14.9. The full 949-test
+source suite passes, with original logs, all runtime/test source hashes, native
+identity and 325 provisioned Conda records retained. PHMT itself is an editable
+source overlay; pre-commit editable version metadata is explicitly distinguished
+from source identity and from the public 0.4.0 artifact. Input preparation counts,
+feature counts and preservation controls agree with the original run. Independent
+archive guards check query/cohort identity, denominators and pairwise AUC/tie-aware
+EF arithmetic. No timing or four-minor/public-artifact qualification is inferred.
+
+For the qualified source checkout/provider environment, use the retained original
+input directory and query:
+
+```bash
+# Linux x86_64 provider context; then overlay the recorded development source.
+mamba create -p /tmp/esr1-seeded-env \
+  --file devguide/evidence/seeded_ranking_environment_20261024_explicit.txt
+git worktree add --detach /tmp/esr1-seeded-source c80325c5c3851691bcc0a993d1e73eaf294654f6
+/tmp/esr1-seeded-env/bin/python -m pip install --no-deps --editable /tmp/esr1-seeded-source
+
+/tmp/esr1-seeded-env/bin/python /tmp/esr1-seeded-source/phmt_test_support/esr1_activity_pilot.py \
+  --data-dir /tmp/phmt-ligand-pilot-20261023 \
+  --replay-declaration /tmp/esr1-seeded-source/tests/data/esr1_activity_pilot/seeded_replay_declaration.json \
+  --reference-query /tmp/phmt-ligand-pilot-20261023/run-01.query.json \
+  --output /tmp/esr1-seeded-replay.json
+```
+
+The command deliberately requires original byte identities. It refuses query or
+input substitutions even when declaration hashes are changed. After temporary
+environment cleanup, recreate the qualified providers and install this source
+checkout with `python -m pip install --no-deps --editable .`; public PHMT 0.4.0
+does not provide the new scoring API. No raw input redistribution is implied.
+
+### Original 2026-10-23 record
+
 The [summary](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_activity_pilot_20261023_summary.json)
 qualifies the [full original result](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_activity_pilot_20261023.json.gz),
 saved query, preparation journal and execution log by compressed/raw SHA-256 and

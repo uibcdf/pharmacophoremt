@@ -1,0 +1,162 @@
+{
+  "schema": "pharmacophoremt.esr1_seeded_hit_replay_summary@1",
+  "date": "2026-10-24",
+  "issues": [
+    "uibcdf/pharmacophoremt#62",
+    "uibcdf/pharmacophoremt#63"
+  ],
+  "run_id": "esr1ago-seeded-hit-development-replay-20261024-01",
+  "producer": "c80325c5c3851691bcc0a993d1e73eaf294654f6",
+  "driver": {
+    "file": "esr1_activity_pilot.py",
+    "sha256": "0f82f6e35e62da1d2ea1a4c2cec6c95bfd04e34eea2702b4cae357ecebdcc57e",
+    "byte_count": 23485
+  },
+  "input_manifest": {
+    "file": "manifest.json",
+    "sha256": "23aba072556e806f9b0d9ea5c06c322f1502855356d538e90a7c3a9e8e25e9ac",
+    "byte_count": 20590
+  },
+  "declaration": {
+    "file": "seeded_replay_declaration.json",
+    "sha256": "10e12a8e6611386338e67940c386ad2f8a7ae420d7707f772ad485982f5e1e3a",
+    "byte_count": 1423
+  },
+  "method": {
+    "features": [
+      "hb donor",
+      "hb acceptor",
+      "aromatic ring"
+    ],
+    "radius": "0.15 nm",
+    "max_trials": 10000,
+    "point_tolerance": "0.10 nm",
+    "direction_tolerance": "30 degrees",
+    "min_fit_value": 0.0,
+    "ef_fractions": [
+      0.1
+    ],
+    "bedroc_alpha": 20.0,
+    "search_method": "seeded_hit",
+    "score_method": "seeded_hit@1"
+  },
+  "runtime_versions": {
+    "pharmacophoremt": "0.4.0+8.g29000c3.dirty",
+    "molsysmt": "0.23.0",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "rdkit": "2026.9.1",
+    "pandas": "3.1.0",
+    "pyunitwizard": "0.29.0",
+    "argdigest": "0.17.0",
+    "smonitor": "0.22.0",
+    "depdigest": "0.15.1",
+    "ackredit": "0.12.1"
+  },
+  "metadata_note": "Editable distribution metadata was generated before the clean producer commit; use producer Git identity, actual runtime origins and file hashes. This is not the public PHMT 0.4.0 implementation.",
+  "counts": {
+    "reference": 1,
+    "selected_held_out_actives": 7,
+    "selected_held_out_inactives": 24,
+    "evaluated_actives": 6,
+    "evaluated_inactives": 19,
+    "failed_actives": 1,
+    "failed_inactives": 5,
+    "active_hits": 1,
+    "inactive_hits": 0,
+    "zero_scores": 24,
+    "valid_no_fitted_pose": 23
+  },
+  "metrics": {
+    "AUC": 0.5833333333333334,
+    "BEDROC": 0.6496274186132055,
+    "EF@10%": 1.9675925925925928
+  },
+  "failure_sensitivity_AUC": {
+    "pessimistic_hypothetical_scores": 0.46726190476190477,
+    "optimistic_hypothetical_scores": 0.6428571428571429,
+    "scope": "Hypothetical missing-score bounds over the original 31 evaluation identities, not observations or confidence intervals."
+  },
+  "comparison": {
+    "original_summary": "esr1_activity_pilot_20261023_summary.json",
+    "original_raw_sha256": "954550324a1f9fd805e2aa4e6eb919ab7a855e2628d4ff8f96019c04b997b145",
+    "original_source": "ee064102f3701a280297e01ec0c549207f10bfd3",
+    "original_runtime": "public PHMT 0.4.0 / MolSysMT 0.23.0 / PyUnitWizard 0.28.1",
+    "query_bytes_identical": true,
+    "cohort_order_identical": true,
+    "same_observed_hit": "24964624",
+    "scope": "Different scoring criteria and separately recorded runtime contexts; no biological improvement, independent validation or optimized selection is inferred."
+  },
+  "interpretation": "Binary fitted-seed classification of the exposed cohort; complete negatives tie, failed inputs remain unscored. The original continuous-coverage result is preserved.",
+  "source_availability": "Development source after public 0.4.0; no new release/package is published.",
+  "input_retention": {
+    "originals": "/tmp/phmt-ligand-pilot-20261023",
+    "redistribution": "No raw Bath archive or PubChem SDF redistribution; URLs/hashes and attributed selected labels committed. Strict restore requires exact source bytes and fails closed on upstream refresh; retained originals are needed if the upstream response changes.",
+    "local_bundle": {
+      "path": "/tmp/phmt-ligand-pilot-20261023/original-inputs-20261023.tar.gz",
+      "sha256": "fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995",
+      "bytes": 12495338,
+      "files": 35,
+      "redistribution": false
+    }
+  },
+  "saved_query_archive": {
+    "path": "esr1_activity_pilot_20261023_query.json.gz",
+    "compressed_sha256": "ddc326f938e80f6acdf74b8d4e8ca63e817c71f8489f11dd09cae1b1c5d1bc9a",
+    "compressed_bytes": 6672,
+    "uncompressed_sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+    "uncompressed_bytes": 86446
+  },
+  "attribution": {
+    "portable_items": 42,
+    "portable_uses": 71
+  },
+  "environment_state": "Owned temporary environment retired after successful source/replay/cookbook qualification; original data and outputs, checksummed archives and exact provider file retained. Shared environments/caches are not cleanup targets.",
+  "full_evidence": {
+    "path": "esr1_seeded_hit_replay_20261024.json.gz",
+    "compressed_sha256": "90e8729cd6f93cca1349fd424b831e2d3e83a0d71c2bc630685edc575dfeb36f",
+    "compressed_bytes": 653737,
+    "uncompressed_sha256": "7109048c0690c08911fc144244c9d7af06e752e575ae03605fe2b85463f2e297",
+    "uncompressed_bytes": 7699127
+  },
+  "preparation_archive": {
+    "path": "esr1_seeded_hit_replay_20261024_preparation.json.gz",
+    "compressed_sha256": "1bf716aa16b82bdcc4816cac8fe8dac47a2db52f285560de8a60d8480ce168d9",
+    "compressed_bytes": 153762,
+    "uncompressed_sha256": "38f974b22469071b8ba7360e0a8bc180ce96438178505e0c1ffdce20d22cbebb",
+    "uncompressed_bytes": 2702142
+  },
+  "run_log_archive": {
+    "path": "esr1_seeded_hit_replay_20261024.log.gz",
+    "compressed_sha256": "704192b72cb1b35f9bbf6b06117f6c29a3f3365aed9fcbe1a6eaa67cea509ebc",
+    "compressed_bytes": 701,
+    "uncompressed_sha256": "dc290672b66df3c1dc4d21617880a52ac8398d0ba66bdb9bbfc8333945d68777",
+    "uncompressed_bytes": 1985
+  },
+  "qualification_evidence": {
+    "path": "seeded_ranking_qualification_20261024.json.gz",
+    "compressed_sha256": "00467f1f35ff71bf6269eb9047289f7e7af6ff9ac3f7509f4415d9bc5ef7e527",
+    "compressed_bytes": 12960,
+    "uncompressed_sha256": "22418a191a08ed413d1ac3554f4a5f1238c7ebd4338284df9e8afacf27219c57",
+    "uncompressed_bytes": 32067
+  },
+  "environment_explicit": {
+    "path": "seeded_ranking_environment_20261024_explicit.txt",
+    "sha256": "99b12022877871635b328e7b25a70294690d96bca94ce726ef5e1dc2198587bb",
+    "bytes": 48215,
+    "platform": "linux-64",
+    "packages": 325,
+    "hash_type": "sha256",
+    "native_parse": "Mamba dry-run accepted 325 packages; no transaction executed",
+    "scope": "Recreate provisioned public dependencies, then overlay the recorded PHMT source; not a new public package."
+  },
+  "closeout_checks": {
+    "reporting": "3 passed",
+    "archive_reader": "18 passed",
+    "administrative": "35 passed",
+    "pilot_archive_guards": "5 passed",
+    "strict_docs": "PASS exit=0 | 1 passed | 7.41s",
+    "ruff": "whole repository passed",
+    "runtime_changes_after_producer": "Only docstrings in rigid_search.py and conformer_screening.py; executable ASTs verified equal to c80325c. Other later changes are documentation, original evidence archives and offline archive guards."
+  }
+}

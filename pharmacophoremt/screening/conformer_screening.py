@@ -41,8 +41,9 @@ class ConformerScreening:
     -----
     MolSysMT supplies frame identities, coordinates and declared chemical states.
     No conformations, protonation states or torsions are generated. All selected
-    frames are attempted; hits rank before negatives, then by coverage. Equal
-    results retain the first requested frame. RigidPoseSearch's discrete-method
+    frames are attempted. Compatibility uses hit then coverage; seed-only mode
+    uses binary hit scores. Equal results retain the first requested frame.
+    RigidPoseSearch's discrete-method
     restrictions apply independently to each frame.
 
     Examples
@@ -108,11 +109,14 @@ class ConformerScreening:
         Returns
         -------
         dict
-            Best pose fields, conformers and ensemble accounting. Unresolved
-            coverage has status='failed', fit_value=None and best_observed for
-            inspection. A valid unit-fit hit proves maximal coverage even when
-            other frames failed; ensemble.complete still reports those failures.
-            pose_coordinates seals selected best-pose coordinates with units.
+            Selected pose fields, conformers and ensemble accounting. In seed-only
+            mode ranking_score is binary: any fitted hit proves its maximum even
+            at partial optional coverage; negatives with failed frames remain
+            unresolved. No-fit negatives have no pose_coordinates or fit_value.
+            Compatibility uses checked coverage and its unit-fit maximum rule.
+            Unresolved results have status='failed', fit_value=None and
+            best_observed for inspection; ensemble.complete retains failures.
+            Fitted pose_coordinates seal selected coordinates with explicit units.
 
         Examples
         --------

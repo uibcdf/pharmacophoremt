@@ -26,6 +26,84 @@ read_archived_evidence = _reader.read_archived_evidence
 
 
 class TestEsr1ActivityPilot(unittest.TestCase):
+    def test_seeded_replay_keeps_frozen_inputs_and_uses_binary_oracles(self):
+        path = ROOT / "devguide/evidence/esr1_seeded_hit_replay_20261024_summary.json"
+        summary, run = read_archived_evidence(path)
+        _, original = read_archived_evidence(SUMMARY)
+        declaration = (
+            ROOT / "tests/data/esr1_activity_pilot/seeded_replay_declaration.json"
+        )
+        self.assertEqual(
+            run["producer"]["git_head"], "c80325c5c3851691bcc0a993d1e73eaf294654f6"
+        )
+        self.assertEqual(run["producer"]["dirty"], "")
+        self.assertEqual(
+            run["saved_query"]["sha256"], original["saved_query"]["sha256"]
+        )
+        self.assertEqual(run["manifest"]["sha256"], original["manifest"]["sha256"])
+        self.assertEqual(
+            run["replay_declaration"]["sha256"],
+            hashlib.sha256(declaration.read_bytes()).hexdigest(),
+        )
+        self.assertEqual(
+            [r["cid"] for r in run["records"]], [r["cid"] for r in original["records"]]
+        )
+        for new, old in zip(run["records"], original["records"], strict=True):
+            self.assertEqual(new["preparation"]["status"], old["preparation"]["status"])
+            if new["preparation"]["status"] == "completed":
+                self.assertEqual(
+                    new["preparation"]["counts"], old["preparation"]["counts"]
+                )
+                self.assertEqual(
+                    new["preparation"]["feature_counts"],
+                    old["preparation"]["feature_counts"],
+                )
+                self.assertTrue(all(new["preparation"]["checks"].values()))
+        records = run["records"][1:]
+        valid = [r for r in records if r["evaluation"]["status"] != "failed"]
+        failed = [r for r in records if r["evaluation"]["status"] == "failed"]
+        self.assertEqual(Counter(r["label"] for r in valid), {1: 6, 0: 19})
+        self.assertEqual(Counter(r["label"] for r in failed), {1: 1, 0: 5})
+        self.assertTrue(all(r["evaluation"]["fit_value"] is None for r in failed))
+        scores = [r["evaluation"]["ranking_score"] for r in valid]
+        labels = [r["label"] for r in valid]
+        self.assertEqual(Counter(scores), {0: 24, 1: 1})
+        self.assertEqual(run["retrospective"]["scores"], scores)
+        self.assertEqual(run["retrospective"]["score_method"], "seeded_hit@1")
+        self.assertEqual(
+            sum(r["evaluation"]["pose_evaluated"] is False for r in valid), 23
+        )
+        self.assertTrue(
+            all(not r["evaluation"]["search"]["identity_pose_tested"] for r in valid)
+        )
+        self.assertEqual(
+            [
+                (r["cid"], r["label"])
+                for r in valid
+                if r["evaluation"]["status"] == "matched"
+            ],
+            [("24964624", 1)],
+        )
+        positives = [s for s, label in zip(scores, labels) if label]
+        negatives = [s for s, label in zip(scores, labels) if not label]
+        auc = sum((p > n) + 0.5 * (p == n) for p in positives for n in negatives) / (
+            len(positives) * len(negatives)
+        )
+        self.assertAlmostEqual(auc, run["retrospective"]["AUC"], places=14)
+        # Three top positions: one hit plus two fractional selections from the
+        # 24 zero-score inputs, of which five are active.
+        ef = ((1 + 2 * 5 / 24) / 3) / (6 / 25)
+        self.assertAlmostEqual(ef, run["retrospective"]["EF@10%"], places=14)
+        _, qualified = read_archived_evidence(
+            path, identity_key="qualification_evidence"
+        )
+        self.assertEqual(qualified["source_commit"], run["producer"]["git_head"])
+        self.assertEqual(qualified["checks"]["full_source"]["result"], "949 passed")
+        self.assertIn(
+            "pharmacophoremt/screening/scoring.py", qualified["source_content"]
+        )
+        self.assertIn("source", summary["source_availability"])
+
     def test_seeded_replay_requires_original_query_and_inputs_even_with_rehashed_declaration(
         self,
     ):

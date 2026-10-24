@@ -1,5 +1,83 @@
 # Development Checkpoint
 
+## Current MVP checkpoint — 2026-10-24
+
+**#63 is implemented and locally qualified.** Its
+[resolved report](archive/rigid_negative_ranking_contract.md) and
+[contract](seeded_ranking_workflow.md) separate raw checked-pose coverage from
+explicit `search_method='seeded_hit'` molecular ranking. The new criterion tests
+fitted triplet seeds only: hit one, completed negative zero, failed/unresolved
+input unscored. It excludes the arbitrary supplied placement. Negative ties
+do not use partial coverage. When no pose is fitted, no coverage or coordinates
+are invented. This is a bounded binary search criterion, not a graded partial
+optimum, exhaustive continuous-pose search, affinity or predictive qualification.
+
+The direct compatibility search defaults remain. Retrospective/facade consumers
+now require explicit `score_method='checked_pose_coverage'` to rank legacy
+rigid/conformer evidence; placed evaluation retains its declared-frame default.
+Public `get_screening_score` is reused across consumers. Exports distinguish
+criterion, molecular score and raw `fit_value`. All molecular operations stay in
+public MolSysMT; no provider implementation or dependency requirement is changed.
+
+Clean implementation/replay producer is
+`c80325c5c3851691bcc0a993d1e73eaf294654f6`. The complete source suite passes
+**949 tests** on Linux/Python 3.14.9 with public MolSysMT 0.23.0, PyUnitWizard
+0.29.0 and the declared test extras. All 223 recorded runtime/test/support Python
+hashes remain unchanged through the source commit and suite. Warnings are
+retained, including historical public MolSysMT deprecations and intentional
+attribution-failure controls. The new code is **development source after 0.4.0**;
+no new package/release is produced and public 0.4.0 keeps its original API.
+
+The [replay summary](evidence/esr1_seeded_hit_replay_20261024_summary.json) qualifies
+original full output, preparation journal/log, unchanged original query archive
+and source qualification receipt. Its declaration was fixed before new scores.
+All 32 input identities/order and query bytes are unchanged: 25 evaluate (6 active
+/ 19 inactive), six remain unscored (1 / 5), and the same active CID 24964624 hits.
+Binary AUC is 0.5833333333, BEDROC(alpha=20) 0.6496274186 and EF at 10%
+1.9675925926. Twenty-four scores tie at zero; 23 valid negatives have no fitted
+pose. The original continuous-coverage run is preserved. These are different
+criteria and recorded runtimes on exposed data, not a biological improvement or
+fresh independent holdout.
+
+Actual source origins/hashes distinguish the editable PHMT overlay from the base
+Conda package record. Editable version metadata was generated before the source
+commit; it is not executed-source identity. The 325-package
+[Linux explicit environment](evidence/seeded_ranking_environment_20261024_explicit.txt)
+retains public URLs and SHA-256, is parsed in a successful native Mamba dry run,
+and must be followed by installing the recorded source producer. Do not treat
+that base environment as a new PHMT public artifact.
+
+### Where to continue
+
+1. **#62:** resolve portable long-term original-input retention. Originals remain
+   in `/tmp/phmt-ligand-pilot-20261023`, including the hashed 35-file bundle in
+   the prior checkpoint. Raw input redistribution is not claimed; strict restore
+   refuses refreshed upstream bytes. Original and replay outputs are archived
+   independently here with checksum-qualified readers.
+2. Declare the next scientific comparison on reviewed prepared training inputs
+   and a genuinely unexposed evaluation set. Do not tune against #62's observed
+   outcomes or call the development replay independent validation. Binary hit
+   classification is now usable; graded partial ranking is not supplied by #63.
+3. **#41 / provider receiving:** qualify newer molecular contracts separately.
+   Existing conformer/stereo needs remain MolSysMT #219/#215/#299. Environmental
+   H refinement #323 and newer directional-contract #375 receiving do not block
+   this completed local scoring slice. Do not fill their molecular gaps here.
+4. New addon work and broader documentation/release infrastructure remain deferred.
+   The only documentation changes here explain the delivered source contract and
+   executed scientific cases. Public 0.4.0 / MolSysSuite #131 is unchanged.
+
+The previously pending source `29000c36a9375082e7f950ff78210dd7f7bdc27a` receiving
+is now verified: CI 40019851558 has all eight science cells and reporting green;
+policy 40019851935, Conda governance 40019852035 and Documentation 40019903965
+succeed. That does not qualify this new implementation/final head. The final
+unskipped push receives its own native gates; local receipts do not claim their
+completion. Follow the owning #63/#9 run receipts for unfinished hosted evidence.
+
+Temporary qualification prefix/output ownership and retirement are recorded in
+the replay summary. The shared development environment and caches are not cleanup
+targets. Recreate an environment from the explicit provider file and overlay the
+recorded source when replaying; keep original data and original output archives.
+
 ## Current MVP checkpoint — 2026-10-23
 
 The maintainer resumed the scientific MVP and deferred deeper documentation and
@@ -27,7 +105,7 @@ pairwise AUC/tie-aware EF arithmetic. They do not rerun molecular science.
 
 ### Next steps
 
-**First local MVP priority is now [#63](pending_proposals/rigid_negative_ranking_contract.md).**
+**First local MVP priority is now [#63](archive/rigid_negative_ranking_contract.md).**
 A separate source control reproduces partial negative coverage 1/3 → 0 under
 MolSysMT translation of the same propane input. Both searches remain completed
 negatives. Define/qualify the molecular ranking contract before expanding activity
