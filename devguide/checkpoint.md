@@ -1,5 +1,58 @@
 # Development Checkpoint
 
+## Training-only comparison declared — 2026-10-24
+
+The next scientific segment is [#64](pending_proposals/esr1_consensus_comparison.md).
+Its [protocol](esr1_consensus_comparison.md) and
+[frozen declaration](../tests/data/esr1_consensus_comparison/declaration.json)
+are fixed **before new structure acquisition or molecular scoring**. They
+compare the unchanged original #62 query against one native rigid consensus
+learned from three new actives. All molecular work remains MolSysMT-owned.
+
+The source is the original archived AID 743075 v2 concise response. Exclude all
+4,402 CIDs in the entire Bath table and all 370 assay CIDs with conflicting
+outcomes, including inconclusive. Use lowest-SID representatives and a distinct
+SHA-256 order. Of 338 eligible actives / 2,749 inactives, reserve three actives
+for training (31477, 24633, 6293); the next 16 actives and first 48 inactives are
+the 64 evaluation inputs. All 67 CIDs are distinct. Labels inform stratification;
+new molecular features/scores have not been examined. Same-assay CID separation
+does not establish chemical-series or independent-assay validation.
+
+The method, finite budgets, training-only model choice, readiness check,
+failure/no-replacement rules, baseline query hash and comparison denominators
+are frozen in the JSON. The standard-library declaration driver reproduces it
+from checksum-qualified original sources and refuses output overwrite. Two
+offline guards verify that mechanism, synthetic label conflicts, row-order
+independence and changed-source refusal. This is not a scientific run; no new
+conformer, query, evaluation score or public artifact is produced.
+The declaration SHA-256 is
+`a1a476e7e94fd3480ee3845fbc5cca138221c4052eb7165a254499fd526ff647`.
+All 40 administrative/documentation tests plus 24 subtests and three separate
+reporting tests pass; strict Sphinx, whole-tree Ruff and generated-index checks
+pass. No molecular suite or original scientific output is rerun for this slice.
+
+**Next action:** acquire only the three training SDFs, retain their original
+responses/failures and qualify preparation with public MolSysMT 0.23.0 in an
+owned environment. Execute the declared native consensus and save all original
+evidence. A valid selected query and training receipt must be committed before
+evaluation structures or scores are opened. If training prerequisites fail,
+retain the outcome and keep evaluation unopened; do not replace inputs or tune
+the declared method. The protocol links the existing exact provider environment
+and source-overlay route; no new environment has been created yet.
+
+Source/issue inspection identified a missing reusable molecular identity/scaffold
+overlap route; the proposal is
+[MolSysMT #447](https://github.com/uibcdf/molsysmt/issues/447). It does not block
+this explicitly CID-only comparison. Do not implement that molecular analysis in
+PHMT or promote the split into a chemical-series independence claim.
+
+Previous head `b4565a15d211b162acff6be88e7c68620a4386ba` receiving remains partial:
+CI 40129944533 has reporting and both Python 3.14 science cells green, with six
+remaining science cells running. Policy 40129944770 and Conda governance
+40129944824 succeed. Documentation was not yet listed. Local declaration checks
+do not establish this or the next head's full hosted matrix; follow #9 receipts.
+Addon, additional release and wider documentation work remain deferred.
+
 ## Portable pilot inputs — 2026-10-24
 
 **#62's bounded activity pilot is complete.** The exact original 35-file input

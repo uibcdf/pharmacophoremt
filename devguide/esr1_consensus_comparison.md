@@ -1,0 +1,108 @@
+# ERα comparison: training-only consensus and previously unscreened CIDs
+
+Owned by [#64](https://github.com/uibcdf/pharmacophoremt/issues/64), maintainers
+`LMMV` and `dprada`. This is a **pre-score protocol**, not measured validation.
+The [declaration](../tests/data/esr1_consensus_comparison/declaration.json) is the
+parameter and input-ID authority. The standalone
+[declaration driver](../phmt_test_support/esr1_consensus_declaration.py) reproduces
+it from unchanged archived source bytes without scientific imports or network.
+
+## Question and separation
+
+Compare the unchanged original #62 query against one native rigid consensus
+learned from three new active compounds. The primary descriptive comparison is
+the difference in ROC AUC on the common successfully evaluated subset. Preserve
+separate per-arm and paired denominators and all missing/failed outcomes.
+
+Use original PubChem AID 743075 v2 assay outcomes, not docking/imputed potency.
+Exclude all 4,402 unique CIDs in the complete Bath ESR1ago table, not just the
+32 original pilot inputs. Exclude every assay CID with multiple outcome values,
+including conflicts with Inconclusive. This removes 370 conflicting assay CIDs
+globally. Among the remaining CIDs outside Bath there are 338 Active and 2,749
+Inactive candidates. Select the lowest numeric SID for each consistent CID;
+source row order cannot determine its representative or split.
+
+Order each class by SHA-256 of `phmt-esr1-consensus-comparison-v1:<CID>`.
+Training uses the first three actives: 31477, 24633 and 6293, in that order.
+The next 16 actives and first 48 inactives are reserved for evaluation. There
+are 67 distinct selected CIDs, no replacement after any failure. Labels are
+used for stratified sampling; no new molecular features/scores or evaluation
+outcomes have informed the protocol. This is the same assay, not independent
+experimental replication; different CIDs do not establish chemical-series,
+state, stereo or near-analog independence.
+
+Molecular identity/scaffold annotation belongs in MolSysMT. The proposed reusable
+capability is [MolSysMT #447](https://github.com/uibcdf/molsysmt/issues/447), after
+source/issue inspection at sibling `48aba006fbe17336dfb5f564823711c2923f7e0b`.
+No local RDKit identity, scaffold, normalization or similarity routine is added.
+That proposal is not a blocker for the explicitly bounded CID-only study; it
+is needed before making stronger molecular-independence claims.
+
+## Training before evaluation
+
+1. Commit this declaration before acquiring any new structure. Acquire only
+   the three training PubChem computed 3D SDF responses first, retaining exact
+   bytes/hashes, dates, attribution and failures. Do not retry with another CID.
+2. Public MolSysMT reads/prepares the supplied state through the already used
+   SDF → MolSys → RDKit → MolSys conversion route, with explicit stereo handling
+   and input/state/atom/coordinate preservation controls. No local parser,
+   conformer generation, protonation or standardization. Retain failures.
+3. All three training inputs must prepare. Call native `from_rigid_ligands`
+   with `association_cliques`, pivot index 0, the three declared feature families,
+   `min_matches=3`, `min_support=2`, `min_sites=3`, no refinement and the exact
+   tolerances/budgets in the declaration. Resource exhaustion is failure, not
+   empty completed discovery. Keep every alternative and full report.
+4. Select exactly one model by descending site count, descending hypothesis
+   `joint_support_count`, then ascending `layout_id` and `hypothesis_id`.
+   Selection uses training evidence only. The selected query must yield a native
+   `seeded_hit` on at least one training input. If this readiness check fails,
+   do not try the next model or relax parameters.
+5. Commit full training results and the selected query's exact hash before
+   acquiring evaluation structures or computing their pharmacophore scores.
+   If training preparation, discovery or readiness fails, preserve the result
+   and keep evaluation unopened. A later protocol is a distinct declared run.
+
+## Evaluation and claims
+
+Both frozen queries use `RigidPoseSearch(search_method='seeded_hit')` and
+`seeded_hit@1`, 10,000 raw trials, point tolerance 0.10 nm, direction tolerance
+30 degrees and minimum fit 0. Valid completed negatives score zero; a missing
+pose is not fabricated; failed/unresolved inputs remain unscored. Do not optimize
+query, model, features, thresholds, preparation, method or budgets on evaluation.
+
+Report all 64 reserved inputs, per-arm and common-evaluable subsets, failures,
+AUC, tie-aware EF at 10%, BEDROC(alpha=20) and hypothetical missing-score AUC
+sensitivity. Metrics requiring both classes are undefined if a class is absent.
+These are descriptive results on one small, selected assay cohort, not confidence
+intervals, affinity, full-benchmark enrichment or predictive acceptance.
+
+The planned public-provider route reuses MolSysMT 0.23.0 and the existing
+[325-record environment](evidence/seeded_ranking_environment_20261024_explicit.txt),
+with the exact current PHMT source installed editable. Its base PHMT 0.4.0 record
+does not identify executed source. Record actual versions/origins, source and
+native-extension hashes, dirty overlays and actual Ackredit captures for new runs.
+No scientific environment is created or qualified by declaring this protocol.
+
+## Reproduce the declaration
+
+Restore original source responses with the existing case reader into a **new**
+directory, then generate a distinct declaration output:
+
+```bash
+python phmt_test_support/esr1_activity_pilot.py \
+  --data-dir /tmp/esr1-comparison-sources --restore-archive
+python phmt_test_support/esr1_consensus_declaration.py \
+  --source-dir /tmp/esr1-comparison-sources \
+  --output /tmp/esr1-comparison-declaration.json
+cmp tests/data/esr1_consensus_comparison/declaration.json /tmp/esr1-comparison-declaration.json
+```
+
+The driver verifies the original manifest and all three source-response hashes;
+it refuses to overwrite its output. The offline guard reconstructs the frozen
+split from the checksum-qualified archive, tests conflicting/inconclusive IDs,
+row-order independence, lowest-SID selection, changed sources and no-clobber CLI
+behavior. No molecular workload or new citation registration runs in these checks.
+
+Next executable stage is training acquisition/preparation and native consensus;
+there is no selected consensus query or evaluation result yet. Deeper docs,
+addon and release work remain deferred. Original #62/#63 outputs stay immutable.

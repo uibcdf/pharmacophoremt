@@ -20,10 +20,23 @@ notice preserve all original responses and support offline restoration of the
 35 inputs plus original query. No scientific result or source identity changes.
 See the [resolved report](archive/esr1_activity_pilot.md).
 
-Next, declare further scientific evaluation using reviewed prepared training data and an unexposed
-evaluation set. Receive newer molecular providers separately under #41; conformer
-and stereo capabilities remain MolSysMT responsibilities. A graded molecular
-partial-match optimum is not implemented. No provider gap is patched here.
+The next comparison is now predeclared under
+[#64](pending_proposals/esr1_consensus_comparison.md): frozen reference versus
+one training-only native rigid consensus, three new training actives and
+64 previously unscreened evaluation CIDs. The
+[protocol](esr1_consensus_comparison.md) freezes the full split, methods, budgets,
+model choice and stop rules before new structures/scores. It excludes the entire
+prior Bath CID population and conflicting assay CIDs. This remains a same-assay,
+CID-only split, with molecular/series independence unqualified.
+
+Next, acquire/prepare only the three training structures, execute the declared
+consensus and commit the selected valid query and original training evidence
+before opening evaluation. Failure preserves the outcome and leaves evaluation
+unopened; it cannot trigger replacement or method tuning. Molecular identity/
+scaffold overlap capability is proposed in MolSysMT #447 rather than implemented
+here. Receive newer molecular providers separately under #41; conformer and
+stereo capabilities remain MolSysMT responsibilities. A graded molecular
+partial-match optimum is not implemented.
 
 This is development source after public 0.4.0, not a new release/package. Current
 public delivery and central follow-ups remain unchanged. New addon work and wider
