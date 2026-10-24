@@ -103,6 +103,29 @@ split from the checksum-qualified archive, tests conflicting/inconclusive IDs,
 row-order independence, lowest-SID selection, changed sources and no-clobber CLI
 behavior. No molecular workload or new citation registration runs in these checks.
 
-Next executable stage is training acquisition/preparation and native consensus;
-there is no selected consensus query or evaluation result yet. Deeper docs,
-addon and release work remain deferred. Original #62/#63 outputs stay immutable.
+## Execute only training
+
+The opt-in `phmt_test_support/esr1_consensus_training.py` verifies the exact
+committed declaration and restricts acquisition to its three training entries.
+Use a new input directory. Preserve the acquisition receipt and every response,
+including HTTP errors; it never retries with another CID. Run the scientific
+stage by path against an owned environment with the declared public providers
+and exact editable PHMT source:
+
+```bash
+python phmt_test_support/esr1_consensus_training.py \
+  --data-dir /tmp/esr1-training-inputs --acquire
+/tmp/esr1-training-env/bin/python phmt_test_support/esr1_consensus_training.py \
+  --data-dir /tmp/esr1-training-inputs --output /tmp/esr1-training-run.json
+```
+
+The second command revalidates all input bytes, reuses the original pilot's
+MolSysMT preservation orchestration, retains preparation/consensus/readiness
+failures and verifies producer/runtime stability. `status='stopped'` is a
+retained scientific/readiness outcome, not a successful query. Only `ready`
+supports a later evaluation stage after committing the evidence. The native
+query, when available, is saved beside the run. Existing outputs are refused.
+This driver has no evaluation acquisition/scoring mode.
+
+Deeper docs, addon and release work remain deferred. Original #62/#63 outputs
+stay immutable; new measurements require separate run identities.

@@ -330,17 +330,104 @@ def portable(value):
     return value
 
 
+def _prepare_pilot_entry(entry, directory, *, features):
+    """Compose public MolSysMT I/O with this assay case's preservation checks.
+
+    Shared by the two opt-in ERalpha case drivers; not a runtime preparation API.
+    No local molecular parsing, inference, transformation or fitting is performed.
+    """
+    import molsysmt as msm
+    import numpy as np
+
+    from pharmacophoremt import pyunitwizard as puw
+    from pharmacophoremt.modeler import get_features
+
+    def state(system):
+        return portable(
+            msm.convert(
+                system.chemical_states, to_form="molsysmt.ChemicalStatesDict"
+            ).to_dict()
+        )
+
+    path = directory / entry["acquisition"]["file"]
+    raw = path.read_bytes()
+    if digest(raw) != entry["acquisition"]["sha256"]:
+        raise ValueError("3D input hash mismatch")
+    source = msm.convert(
+        str(path),
+        to_form="molsysmt.MolSys",
+        discard_properties=True,
+        stereo_engine="rdkit",
+    )
+    before = state(source)
+    coordinates = puw.get_value(msm.get(source, coordinates=True), to_unit="nm").copy()
+    prepared = msm.convert(
+        msm.convert(source, to_form="rdkit.Mol"), to_form="molsysmt.MolSys"
+    )
+    inventory = get_features(prepared, features=features)
+    rmsd = puw.get_value(
+        msm.structure.get_rmsd(
+            prepared,
+            reference_molecular_system=source,
+            use_gpu=False,
+            parallel=False,
+        ),
+        to_unit="nm",
+    )
+    after = state(prepared)
+    checks = dict(
+        source_bytes_unchanged=raw == path.read_bytes(),
+        source_state_unchanged=before == state(source),
+        source_coordinates_unchanged=bool(
+            np.array_equal(
+                coordinates,
+                puw.get_value(msm.get(source, coordinates=True), to_unit="nm"),
+            )
+        ),
+        atom_ids_preserved=list(msm.get(source, element="atom", atom_id=True))
+        == list(msm.get(prepared, element="atom", atom_id=True)),
+        elements_preserved=list(msm.get(source, element="atom", atom_type=True))
+        == list(msm.get(prepared, element="atom", atom_type=True)),
+        coordinates_preserved=bool(np.all(np.asarray(rmsd) < 1e-12)),
+    )
+    for key in ("formal_charge", "n_unpaired_electrons", "stereochemistry"):
+        checks[key + "_preserved"] = (
+            before["states"][0]["atom_attributes"]["columns"][key]["values"]
+            == after["states"][0]["atom_attributes"]["columns"][key]["values"]
+        )
+    if not all(checks.values()):
+        raise ValueError(f"molecular identity/immutability check failed: {checks}")
+    return (
+        prepared,
+        inventory,
+        dict(
+            status="completed",
+            checks=checks,
+            source_state=before,
+            prepared_state=after,
+            counts=msm.get(
+                prepared,
+                n_atoms=True,
+                n_bonds=True,
+                n_structures=True,
+                output_type="dictionary",
+            ),
+            feature_counts=dict(Counter(f["kind"] for f in inventory["features"])),
+            coordinate_rmsd_nm=float(np.asarray(rmsd).reshape(-1)[0]),
+            inventory=inventory,
+        ),
+    )
+
+
 def execute(
     directory, manifest_path, output, *, declaration_path=None, reference_query=None
 ):
     import ackredit
     import molsysmt as msm
-    import numpy as np
 
     import pharmacophoremt as phmt
-    from pharmacophoremt import pyunitwizard as puw
     from pharmacophoremt.io import load_json, to_json
-    from pharmacophoremt.modeler import from_feature_inventory, get_features
+    from pharmacophoremt.modeler import from_feature_inventory
     from pharmacophoremt.screening import RigidPoseSearch
     from pharmacophoremt.validation.retrospective import RetrospectiveValidator
 
@@ -360,84 +447,8 @@ def execute(
         raise ValueError("a replay query requires an explicit declaration")
     systems, records = {}, []
 
-    def state(system):
-        return portable(
-            msm.convert(
-                system.chemical_states, to_form="molsysmt.ChemicalStatesDict"
-            ).to_dict()
-        )
-
     def prepare(entry):
-        path = directory / entry["acquisition"]["file"]
-        raw = path.read_bytes()
-        if digest(raw) != entry["acquisition"]["sha256"]:
-            raise ValueError("3D input hash mismatch")
-        source = msm.convert(
-            str(path),
-            to_form="molsysmt.MolSys",
-            discard_properties=True,
-            stereo_engine="rdkit",
-        )
-        before = state(source)
-        coordinates = puw.get_value(
-            msm.get(source, coordinates=True), to_unit="nm"
-        ).copy()
-        prepared = msm.convert(
-            msm.convert(source, to_form="rdkit.Mol"), to_form="molsysmt.MolSys"
-        )
-        inventory = get_features(prepared, features=METHOD["features"])
-        rmsd = puw.get_value(
-            msm.structure.get_rmsd(
-                prepared,
-                reference_molecular_system=source,
-                use_gpu=False,
-                parallel=False,
-            ),
-            to_unit="nm",
-        )
-        after = state(prepared)
-        checks = dict(
-            source_bytes_unchanged=raw == path.read_bytes(),
-            source_state_unchanged=before == state(source),
-            source_coordinates_unchanged=bool(
-                np.array_equal(
-                    coordinates,
-                    puw.get_value(msm.get(source, coordinates=True), to_unit="nm"),
-                )
-            ),
-            atom_ids_preserved=list(msm.get(source, element="atom", atom_id=True))
-            == list(msm.get(prepared, element="atom", atom_id=True)),
-            elements_preserved=list(msm.get(source, element="atom", atom_type=True))
-            == list(msm.get(prepared, element="atom", atom_type=True)),
-            coordinates_preserved=bool(np.all(np.asarray(rmsd) < 1e-12)),
-        )
-        for key in ("formal_charge", "n_unpaired_electrons", "stereochemistry"):
-            checks[key + "_preserved"] = (
-                before["states"][0]["atom_attributes"]["columns"][key]["values"]
-                == after["states"][0]["atom_attributes"]["columns"][key]["values"]
-            )
-        if not all(checks.values()):
-            raise ValueError(f"molecular identity/immutability check failed: {checks}")
-        return (
-            prepared,
-            inventory,
-            dict(
-                status="completed",
-                checks=checks,
-                source_state=before,
-                prepared_state=after,
-                counts=msm.get(
-                    prepared,
-                    n_atoms=True,
-                    n_bonds=True,
-                    n_structures=True,
-                    output_type="dictionary",
-                ),
-                feature_counts=dict(Counter(f["kind"] for f in inventory["features"])),
-                coordinate_rmsd_nm=float(np.asarray(rmsd).reshape(-1)[0]),
-                inventory=inventory,
-            ),
-        )
+        return _prepare_pilot_entry(entry, directory, features=METHOD["features"])
 
     with (
         ackredit.session("ERalpha frozen activity pilot"),

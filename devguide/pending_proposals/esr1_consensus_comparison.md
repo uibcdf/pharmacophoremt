@@ -66,6 +66,15 @@ conformer/stereo/environmental-H work stays with its provider issues.
 
 ## Remaining acceptance and next action
 
+The executable training driver is `phmt_test_support/esr1_consensus_training.py`.
+It reuses the original case's HTTP/identity/serialization and existing MolSysMT
+preservation checks; the latter are moved without changing their operations
+(verified by AST comparison after explicit feature injection). Two additional
+offline guards restrict requests to the three training CIDs, preserve HTTP
+failures/refuse substitutions and protect the fixed training-only model order.
+It contains no evaluation acquisition/scoring mode. This establishes executable
+orchestration, not a scientific result before its opt-in run.
+
 Acquire and retain only the three training structures, qualify MolSysMT
 preparation and execute native consensus in an owned public-provider environment.
 Retain all failures and alternatives; commit the selected valid query and full
