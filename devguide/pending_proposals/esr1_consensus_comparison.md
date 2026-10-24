@@ -205,3 +205,21 @@ Closeout passes 46 administrative/documentation tests plus 24 subtests, includin
 strict Sphinx and the new archive/query-selection guard, plus three reporting
 tests, whole-tree Ruff, generated-index and whitespace checks. The original
 stop/declaration guards remain active alongside the new measured record.
+
+## Paired-evaluation execution route — 2026-10-24
+
+The standalone `phmt_test_support/esr1_consensus_evaluation.py` restores both
+committed queries and verifies the ready training receipt before any evaluation
+acquisition. It requests each of the 64 fixed inputs once. MolSysMT prepares
+them once for both arms; unavailable/preparation-failed inputs retain their
+original unscored cause in the full study ledger. Native search/retrospective
+reports operate on the prepared subset with explicit original-index mapping.
+No placeholder molecules, fake native failures, replacement or score imputation.
+
+Public metrics compute per-arm and common-subset results and binary missing-
+score sensitivity. Case integrity checks use public MolSysMT observations,
+without local chemistry or geometry algorithms. Product/provider source hashes
+must match qualified training; actual before/after producer and state audits
+are retained. Two offline guards test all 64 requests/query identities/failures
+and prepared-batch/original-index/class-order separation. This records an
+executable route before the opt-in measured evaluation, not an observed result.

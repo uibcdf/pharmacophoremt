@@ -191,3 +191,44 @@ python phmt_test_support/esr1_consensus_training.py \
   --declaration tests/data/esr1_consensus_comparison/readiness_declaration.json \
   --data-dir /tmp/esr1-readiness-inputs --output /tmp/esr1-readiness-run.json
 ```
+
+## Execute the frozen paired evaluation
+
+After the valid query/training archive is committed, use the opt-in
+`phmt_test_support/esr1_consensus_evaluation.py`. It restores both exact queries
+through the existing checksum reader and verifies the ready training receipt
+before acquiring any evaluation input. Use a new directory and retain every
+one-request response/error. No source refresh, replacement, training or model
+selection occurs in this stage.
+
+```bash
+python phmt_test_support/esr1_consensus_evaluation.py \
+  --data-dir /tmp/esr1-paired-inputs --acquire
+/tmp/esr1-training-env/bin/python phmt_test_support/esr1_consensus_evaluation.py \
+  --data-dir /tmp/esr1-paired-inputs --output /tmp/esr1-paired-run.json
+```
+
+Public MolSysMT prepares the supplied systems once using the declared route.
+Each query's native `RigidPoseSearch` and `RetrospectiveValidator` receive the
+same successfully prepared systems. The original 64-input ledger separately
+retains unavailable acquisitions and preparation failures as unscored, with
+their original causes; they are not converted into placeholder molecular inputs
+or fabricated native search failures. Native-report input indices/counts refer
+to the prepared subset; the driver keeps an explicit mapping to original cohort
+indices. Search failures stay in the native report and original ledger.
+
+The driver uses public native metrics for each arm and the common-evaluable
+subset, without rerunning search to calculate paired metrics. Report the
+consensus-minus-baseline AUC difference on that common subset. Binary missing-
+score sensitivity assigns only hypothetical 0/1 extremes by true label; it is
+not observation imputation or a confidence interval. Empty/single-class metric
+limitations remain explicit.
+
+Before evaluation, actual product/provider file hashes must match the qualified
+training runtime exactly. Read-only MolSysMT observations check that coordinates,
+chemical states, atom IDs and elements stay identical across both arms. These
+are case integrity checks, not chemical-equivalence/scaffold analysis. Original
+full results, a preparation journal, all native outcomes, input mapping and actual
+attribution are retained. Existing output/journal paths are refused. The retained
+editable version metadata identifies the unchanged training library; the new
+evaluation driver and its actual Git producer are recorded independently.
