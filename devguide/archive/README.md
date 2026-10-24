@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (30)
+### Resolved (31)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -13,6 +13,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`documentation_project_identity.md`](documentation_project_identity.md) — [#4](https://github.com/uibcdf/pharmacophoremt/issues/4) — Remove inherited project identity from public PharmacophoreMT documentation. *(resolved, measured)*
 - [`documentation_reader_entry_points.md`](documentation_reader_entry_points.md) — [#61](https://github.com/uibcdf/pharmacophoremt/issues/61) — Build reader-oriented documentation entry points around delivered native workflows. *(resolved, measured)*
+- [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*

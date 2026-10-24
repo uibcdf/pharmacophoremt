@@ -14,8 +14,13 @@ The predeclared #62 development replay preserves the frozen query and all inputs
 is not predictive improvement over the earlier checked-coverage criterion.
 Original outputs remain immutable and this exposed cohort is not a fresh holdout.
 
-Next, resolve durable original-input retention under #62 and declare further
-scientific evaluation using reviewed prepared training data and an unexposed
+Durable original-input retention now completes #62's bounded pilot: the
+[snapshot](evidence/esr1_activity_pilot_inputs_20261023_summary.json) and scoped
+notice preserve all original responses and support offline restoration of the
+35 inputs plus original query. No scientific result or source identity changes.
+See the [resolved report](archive/esr1_activity_pilot.md).
+
+Next, declare further scientific evaluation using reviewed prepared training data and an unexposed
 evaluation set. Receive newer molecular providers separately under #41; conformer
 and stereo capabilities remain MolSysMT responsibilities. A graded molecular
 partial-match optimum is not implemented. No provider gap is patched here.
@@ -28,7 +33,7 @@ receiving is tracked separately from the completed local source/scientific check
 ## Current priorities — 2026-10-23
 
 The maintainer has resumed the **MVP scientific workflow**, with addon and deeper
-documentation deferred. [#62](pending_proposals/esr1_activity_pilot.md) executes
+documentation deferred. [#62](archive/esr1_activity_pilot.md) executes
 an independent ligand-reference ERα assay pilot: a pre-score frozen cohort,
 published 3D conformers, public MolSysMT preparation and native held-out screening.
 Keep preparation/search failures distinct from inactivity, and do not tune the

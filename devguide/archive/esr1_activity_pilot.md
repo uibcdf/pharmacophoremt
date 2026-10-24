@@ -1,9 +1,9 @@
 ---
 summary: Frozen ligand-reference ERα assay pilot with held-out experimental outcomes.
 issue: uibcdf/pharmacophoremt#62
-status: partial
+status: resolved
 opened: 2026-10-23
-closed:
+closed: 2026-10-24
 verification: measured
 area: [validation, mvp]
 guard: devtools/tests/test_esr1_activity_pilot.py::TestEsr1ActivityPilot::test_original_accounting_and_metrics_have_independent_oracles
@@ -124,3 +124,41 @@ prediction; this cohort is exposed development data, not a fresh holdout.
 portable long-term original-input retention and stronger independent scientific
 validation. Further query/criterion development must not reuse these outcomes as
 unseen validation. Molecular conformer/stereo capabilities remain provider-owned.
+
+
+## Portable input retention and closeout — 2026-10-24
+
+The [input snapshot](../evidence/esr1_activity_pilot_inputs_20261023_summary.json)
+now preserves the exact original 35-file bundle (12,495,338 compressed bytes,
+SHA-256 `fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995`).
+The [notice](../evidence/esr1_activity_pilot_inputs_20261023_NOTICE.md) records
+Bath's CC BY-SA 4.0 terms, PubChem/NCBI computed-data and U.S. Tox21 provenance,
+and the NCBI contributor-rights limitation without inventing a blanket license.
+The original dated manifest's narrower publication decision is preserved.
+
+The existing unshipped case driver reuses `evidence_archive.read_archived_bytes`
+for checksum-qualified transport. `--restore-archive` restores all original
+responses and the separately archived query into a new directory, offline,
+without scientific imports or attribution registration. It verifies every file
+against the original producer's manifest, refuses member/path substitutions
+and existing directories, and retains all five HTTP failures. Molecular I/O
+continues to belong to MolSysMT; no new runtime API, provider workaround,
+optional engine, distribution dependency or shared workflow is introduced.
+
+Seven offline guards pass, including the restored Bath selection, independent
+primary-assay label agreement, original file/query hashes and rehashed malicious
+archive/manifest rejection before writes. The CLI restores 35 inputs plus one
+query. This is byte-retention verification, not a rerun of molecular science;
+the original and development-replay measurements and environments remain dated.
+The complete administrative/documentation selection passes 38 tests and 24
+subtests, including the strict Sphinx build; the separate archive and reporting
+processes pass 18 and three tests. The snapshot summary retains the executed
+CLI receipt and corrected invocation context. Whole-tree Ruff and report-index
+checks pass. No full molecular suite is rerun for this transport-only change.
+
+This completes the bounded #62 acceptance: frozen inputs/protocol, executed
+original outputs and replay, failure/metric accounting, maintained case and
+portable original inputs. No predictive acceptance is claimed. A genuinely
+unexposed evaluation set and any new training/consensus comparison are separate
+future work, rather than indefinite conditions on this completed pilot. The
+prior partial statements above describe their dates and are superseded here.

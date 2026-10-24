@@ -2,14 +2,19 @@
 
 from __future__ import annotations
 
+import csv
+import gzip
 import hashlib
 import importlib.util
+import io
 import json
 import math
+import tarfile
 import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 MANIFEST = ROOT / "tests/data/esr1_activity_pilot/manifest.json"
@@ -26,6 +31,137 @@ read_archived_evidence = _reader.read_archived_evidence
 
 
 class TestEsr1ActivityPilot(unittest.TestCase):
+    def test_original_inputs_restore_offline_with_source_labels_and_failures(self):
+        spec = importlib.util.spec_from_file_location(
+            "esr1_snapshot_driver", ROOT / "phmt_test_support/esr1_activity_pilot.py"
+        )
+        driver = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(driver)
+        manifest = json.loads(MANIFEST.read_text())
+        with tempfile.TemporaryDirectory() as tmp:
+            target = Path(tmp) / "originals"
+            with patch.object(
+                driver.urllib.request, "urlopen", side_effect=AssertionError("network")
+            ):
+                receipt = driver.restore_archived_inputs(target)
+            self.assertEqual(
+                receipt,
+                dict(original_input_files=35, saved_queries=1, network_used=False),
+            )
+            self.assertEqual(len(list(target.iterdir())), 36)
+            with tarfile.open(target / "ESR1ago.tar.gz") as archive:
+                with archive.extractfile("ESR1ago/ESR1ago_data_full.csv") as stream:
+                    rows = list(csv.DictReader(io.TextIOWrapper(stream)))
+            selected = driver.frozen_cohort(rows)
+            self.assertEqual(
+                [(r["cid"], r["sid"], r["label"], r["role"]) for r in selected],
+                [
+                    (r["cid"], r["sid"], r["label"], r["role"])
+                    for r in manifest["cohort"]
+                ],
+            )
+            with (target / "aid743075_concise.csv").open() as stream:
+                assay = {r["SID"]: r for r in csv.DictReader(stream)}
+            for entry in manifest["cohort"]:
+                self.assertEqual(assay[entry["sid"]]["CID"], entry["cid"])
+                self.assertEqual(
+                    assay[entry["sid"]]["Activity Outcome"], entry["assay_outcome"]
+                )
+                record = entry["acquisition"]
+                if record["status"] == "failed":
+                    self.assertFalse((target / f"CID{entry['cid']}.sdf").exists())
+                    record = record["response"]
+                payload = (target / record["file"]).read_bytes()
+                self.assertEqual(hashlib.sha256(payload).hexdigest(), record["sha256"])
+            _, query = read_archived_bytes(SUMMARY, identity_key="saved_query_archive")
+            self.assertEqual((target / "run-01.query.json").read_bytes(), query)
+            with self.assertRaises(FileExistsError):
+                driver.restore_archived_inputs(target)
+            # Scientific workflows may now read these exact bytes via MolSysMT;
+            # this transport test does not import molecular providers.
+
+    def test_snapshot_rejects_rehashed_member_or_manifest_substitution_before_writes(
+        self,
+    ):
+        spec = importlib.util.spec_from_file_location(
+            "esr1_snapshot_driver", ROOT / "phmt_test_support/esr1_activity_pilot.py"
+        )
+        driver = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(driver)
+        summary, original_tar = read_archived_bytes(driver.INPUT_SNAPSHOT)
+        with tarfile.open(fileobj=io.BytesIO(original_tar)) as archive:
+            members = [
+                (m.name, archive.extractfile(m).read()) for m in archive.getmembers()
+            ]
+        with tempfile.TemporaryDirectory() as tmp:
+            tmp = Path(tmp)
+            for change in ("bytes", "duplicate", "traversal", "symlink", "missing"):
+                with self.subTest(change=change):
+                    buffer = io.BytesIO()
+                    with tarfile.open(fileobj=buffer, mode="w") as archive:
+                        altered = members[:-1] if change == "missing" else members
+                        for index, (name, payload) in enumerate(altered):
+                            if index == 0 and change == "bytes":
+                                payload += b"changed"
+                            info = tarfile.TarInfo(
+                                "../escape"
+                                if index == 0 and change == "traversal"
+                                else name
+                            )
+                            info.size = len(payload)
+                            if index == 0 and change == "symlink":
+                                info.type, info.linkname, info.size = (
+                                    tarfile.SYMTYPE,
+                                    "../escape",
+                                    0,
+                                )
+                            archive.addfile(info, io.BytesIO(payload))
+                        if change == "duplicate":
+                            info = tarfile.TarInfo(members[0][0])
+                            archive.addfile(info, io.BytesIO())
+                    raw = buffer.getvalue()
+                    compressed = gzip.compress(raw, mtime=0)
+                    (tmp / "snapshot.tar.gz").write_bytes(compressed)
+                    changed = dict(
+                        summary,
+                        full_evidence=dict(
+                            path="snapshot.tar.gz",
+                            compressed_sha256=hashlib.sha256(compressed).hexdigest(),
+                            compressed_bytes=len(compressed),
+                            uncompressed_sha256=hashlib.sha256(raw).hexdigest(),
+                            uncompressed_bytes=len(raw),
+                        ),
+                    )
+                    path = tmp / "snapshot.json"
+                    path.write_text(json.dumps(changed))
+                    target = tmp / "inputs"
+                    with self.assertRaises(ValueError):
+                        driver.restore_archived_inputs(target, summary_path=path)
+                    self.assertFalse(target.exists())
+                    self.assertFalse((tmp / "escape").exists())
+            changed_manifest = tmp / "manifest.json"
+            changed_manifest.write_bytes(MANIFEST.read_bytes() + b"\n")
+            # Even a corresponding rehash cannot replace the archived producer's
+            # manifest identity. Original compressed bytes are used in this case.
+            changed = dict(
+                summary,
+                input_manifest_sha256=hashlib.sha256(
+                    changed_manifest.read_bytes()
+                ).hexdigest(),
+            )
+            changed["full_evidence"] = dict(
+                summary["full_evidence"], path="snapshot.tar.gz"
+            )
+            (tmp / "snapshot.tar.gz").write_bytes(
+                (
+                    driver.INPUT_SNAPSHOT.parent / summary["full_evidence"]["path"]
+                ).read_bytes()
+            )
+            path.write_text(json.dumps(changed))
+            with self.assertRaises(ValueError):
+                driver.restore_archived_inputs(tmp / "inputs", changed_manifest, path)
+            self.assertFalse((tmp / "inputs").exists())
+
     def test_seeded_replay_keeps_frozen_inputs_and_uses_binary_oracles(self):
         path = ROOT / "devguide/evidence/esr1_seeded_hit_replay_20261024_summary.json"
         summary, run = read_archived_evidence(path)

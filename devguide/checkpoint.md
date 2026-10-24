@@ -1,5 +1,48 @@
 # Development Checkpoint
 
+## Portable pilot inputs — 2026-10-24
+
+**#62's bounded activity pilot is complete.** The exact original 35-file input
+bundle is now portable in this repository, with its original SHA-256 and a
+[scoped rights/attribution notice](evidence/esr1_activity_pilot_inputs_20261023_NOTICE.md).
+The [snapshot summary](evidence/esr1_activity_pilot_inputs_20261023_summary.json)
+qualifies the 12,495,338-byte archive and the unchanged original query archive.
+Old manifests/results and their dated narrower publication statements are not
+rewritten. The [resolved report](archive/esr1_activity_pilot.md) records closeout.
+
+The current unshipped driver restores 35 inputs plus the original saved query
+without network or molecular dependencies:
+
+```bash
+python phmt_test_support/esr1_activity_pilot.py \
+  --data-dir /tmp/esr1-original-inputs --restore-archive
+```
+
+Use a new destination. The operation checks the compressed/raw archive and all
+original file identities, rejects substitutions and preserves all five failed
+HTTP responses. It reuses the existing evidence reader; molecular operations
+remain in MolSysMT. Seven offline case guards pass, including reconstruction of
+the original Bath split and primary-assay labels. This does not rerun or upgrade
+the dated scientific evidence. The [case](../docs/content/validation/esr1_activity_pilot.md)
+now shows how current offline restoration feeds each recorded scientific producer.
+Verification totals: 38 administrative/documentation tests plus 24 subtests,
+18 archive-reader tests and three reporting tests pass in their separate CI
+process contexts. Strict Sphinx, whole-tree Ruff and generated-index checks pass.
+
+**Next:** declare a new scientific comparison with prepared training inputs and
+an actually unexposed evaluation cohort. #62 is exposed development data; its
+binary replay is not new biological validation. Keep provider receiving under
+#41 and conformer/stereo/H needs in MolSysMT. The addon and further release or
+documentation infrastructure remain deferred; public 0.4.0 is unchanged.
+The detailed #63 source/environment checkpoint below remains applicable.
+
+Hosted receiving for source `481855e7e9de745793d8cd36296ff9be81e99094` is still
+partial at this inspection: CI 40127949298 has reporting and Linux/macOS Python
+3.14 green; the six Python 3.11–3.13 science cells are running. Documentation
+40128123736, Conda governance 40127949565 and suite policy 40127949623 succeed.
+Do not claim full-matrix qualification until native completion. This retention
+change will receive its own unskipped push and native checks.
+
 ## Current MVP checkpoint — 2026-10-24
 
 **#63 is implemented and locally qualified.** Its
@@ -81,7 +124,7 @@ recorded source when replaying; keep original data and original output archives.
 ## Current MVP checkpoint — 2026-10-23
 
 The maintainer resumed the scientific MVP and deferred deeper documentation and
-addon work. [#62](pending_proposals/esr1_activity_pilot.md) now has an executed,
+addon work. [#62](archive/esr1_activity_pilot.md) now has an executed,
 pre-score frozen ligand-reference ERα signaling-assay pilot. The protocol/driver
 producer is `ee064102f3701a280297e01ec0c549207f10bfd3`; the runtime is installed
 public PharmacophoreMT 0.4.0 / MolSysMT 0.23.0, Linux/Python 3.14.9, with all

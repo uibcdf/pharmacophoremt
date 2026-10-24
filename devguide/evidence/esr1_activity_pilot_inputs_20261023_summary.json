@@ -1,0 +1,53 @@
+{
+  "schema": "pharmacophoremt.esr1_original_inputs_snapshot@1",
+  "issue": 62,
+  "archived_at": "2026-10-24",
+  "acquired_at": "2026-10-23T20:05:14.759687+00:00",
+  "input_manifest_sha256": "23aba072556e806f9b0d9ea5c06c322f1502855356d538e90a7c3a9e8e25e9ac",
+  "full_evidence": {
+    "path": "esr1_activity_pilot_inputs_20261023.tar.gz",
+    "compressed_sha256": "fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995",
+    "compressed_bytes": 12495338,
+    "uncompressed_sha256": "40cbd8570c4ac8671935f5066710fa2126a33e01bc4bdb1d241ddfd2c088b474",
+    "uncompressed_bytes": 16506880
+  },
+  "saved_query_archive": {
+    "path": "esr1_activity_pilot_20261023_query.json.gz",
+    "compressed_sha256": "ddc326f938e80f6acdf74b8d4e8ca63e817c71f8489f11dd09cae1b1c5d1bc9a",
+    "compressed_bytes": 6672,
+    "uncompressed_sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+    "uncompressed_bytes": 86446
+  },
+  "original_input_files": 35,
+  "composition": {
+    "bath_archives": 1,
+    "primary_assay_csv": 1,
+    "primary_assay_description": 1,
+    "pubchem_computed_3d_sdf": 27,
+    "http_error_responses": 5
+  },
+  "rights_and_attribution": "esr1_activity_pilot_inputs_20261023_NOTICE.md",
+  "scope": "Byte-for-byte original acquisition responses, including failed 3D requests; no molecular transformation. The separately archived original query is restored alongside them. This new retention artifact does not rewrite original manifests/results or rerun science.",
+  "verification": {
+    "date": "2026-10-24",
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+    "command": "python -I phmt_test_support/esr1_activity_pilot.py --data-dir <new-owned-temporary-directory> --restore-archive",
+    "exit_code": 0,
+    "stdout": "{\"original_input_files\": 35, \"saved_queries\": 1, \"network_used\": false}",
+    "restored_files": 36,
+    "all_original_input_and_query_hashes_checked": true,
+    "temporary_destination_removed_on_exit": true,
+    "driver_sha256": "29a03e2a355e9dba6cda38be8809a17aa6a35a6cabe55a0dc8ca8215d12b63c7",
+    "reader_sha256": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb",
+    "checks": {
+      "devtools/tests": "38 passed; 24 subtests passed, including 7 case guards and strict Sphinx build",
+      "tests/test_evidence_archive.py": "18 passed",
+      "tests/test_reporting_protocol.py": "3 passed",
+      "ruff": "whole repository passed",
+      "report_index": "current"
+    },
+    "invocation_correction": "An initial combined pytest invocation collected test_evidence_archive.py before the administrative staging test, loading its intentionally isolated support namespace: 1 failed, 58 passed, 41 subtests passed. Repeating in separate processes as required by the existing CI layout passed; no product/test workaround was introduced.",
+    "scope": "Offline byte retention and administrative/docs checks only; no molecular calculation or new source/installed/public scientific qualification."
+  }
+}

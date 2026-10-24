@@ -52,14 +52,40 @@ of the biological chemical state. Five selected CIDs return PubChem HTTP 404;
 MolSysMT rejects CID 6842999's unsupported stereo interpretation. All remain
 recorded, unscored inputs.
 
-Raw SDF and source archives are retained in the owned acquisition directory,
-outside this repository. The [NCBI molecular-data policy](https://www.ncbi.nlm.nih.gov/home/about/policies/#data)
-places no additional NCBI restrictions while retaining possible submitter rights;
-this case does not assert that every PubChem field has a blanket public-domain
-license. Only URLs/hashes, attributed selected labels and measured outputs are
-published here. Strict reacquisition checks exact hashes and refuses changed
-upstream bytes; if responses refresh, replay requires the retained originals.
-Portable long-term input archival remains a follow-up in #62.
+At acquisition on 2026-10-23, raw responses were retained only in the owned
+directory, with URLs/hashes and attributed selected labels committed. The dated
+manifest preserves that original decision. **Portable retention was completed
+on 2026-10-24:** the exact 35-file original bundle is now retained in the
+[input archive](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_activity_pilot_inputs_20261023.tar.gz),
+qualified by its
+[summary](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_activity_pilot_inputs_20261023_summary.json)
+and scoped
+[rights/attribution notice](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_activity_pilot_inputs_20261023_NOTICE.md).
+It includes the unchanged CC BY-SA 4.0 Bath archive, original U.S. Tox21 assay
+responses, 27 computed PubChem SDFs and five HTTP error bodies. No input is
+repaired or replaced. The notice credits the sources and preserves the
+[NCBI policy's](https://www.ncbi.nlm.nih.gov/home/about/policies/) possible
+contributor rights; it does not assert a uniform public-domain/CC0 license.
+Original manifests, scientific outputs and query bytes remain unchanged.
+
+From a checkout containing this retention change, restore into a **new** directory
+without network access or scientific dependencies:
+
+```bash
+python phmt_test_support/esr1_activity_pilot.py \
+  --data-dir /tmp/phmt-esr1-originals --restore-archive
+```
+
+This verifies the compressed/raw archive, all 35 original file identities and
+the original saved query before writing. It restores `run-01.query.json`
+alongside the inputs, refuses existing directories and never extracts arbitrary
+tar paths. The original bundle SHA-256 is
+`fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995`
+(12,495,338 compressed bytes). Subsequent molecular reading remains MolSysMT's
+responsibility. `--restore` still requests the exact original bytes from remote
+sources and fails if refreshed responses differ; use the archive for durable
+offline replay. Archived scientific environments/producer versions remain
+necessary to reproduce the corresponding calculation.
 
 ## Method and executable record
 
@@ -78,12 +104,13 @@ mamba create -p /tmp/phmt-esr1-env -c uibcdf -c conda-forge \
   --strict-channel-priority python=3.14 pharmacophoremt=0.4.0 \
   molsysmt=0.23.0 ackredit beartype pip
 
-# Reacquire only exact frozen inputs; upstream changes fail closed.
+# Restore original responses offline into a new directory, using current support.
 python phmt_test_support/esr1_activity_pilot.py \
-  --data-dir /tmp/phmt-esr1-inputs --restore
+  --data-dir /tmp/phmt-esr1-inputs --restore-archive
 
-# Execute by file path so installed runtime packages take precedence.
-/tmp/phmt-esr1-env/bin/python phmt_test_support/esr1_activity_pilot.py \
+# Execute the recorded original driver against the installed public runtime.
+git worktree add --detach /tmp/esr1-original-source ee064102f3701a280297e01ec0c549207f10bfd3
+/tmp/phmt-esr1-env/bin/python /tmp/esr1-original-source/phmt_test_support/esr1_activity_pilot.py \
   --data-dir /tmp/phmt-esr1-inputs --output /tmp/phmt-esr1-run.json
 ```
 
@@ -134,7 +161,8 @@ molecule when no triplet placement is fitted (1/3 to zero in the control). This
 is not a rerun of the public-runtime assay case. The original metrics above are
 preserved as outputs of the declared method; they must not be interpreted as
 ranking with a demonstrated frame-independent partial-match score. That local
-scoring contract is the next MVP task before expanding discrimination claims.
+scoring contract was the next MVP task; its separately declared 2026-10-24
+resolution and replay follow below.
 
 ## Original outputs and maintenance
 
@@ -184,13 +212,15 @@ input directory and query:
 # Linux x86_64 provider context; then overlay the recorded development source.
 mamba create -p /tmp/esr1-seeded-env \
   --file devguide/evidence/seeded_ranking_environment_20261024_explicit.txt
+python phmt_test_support/esr1_activity_pilot.py \
+  --data-dir /tmp/esr1-seeded-inputs --restore-archive
 git worktree add --detach /tmp/esr1-seeded-source c80325c5c3851691bcc0a993d1e73eaf294654f6
 /tmp/esr1-seeded-env/bin/python -m pip install --no-deps --editable /tmp/esr1-seeded-source
 
 /tmp/esr1-seeded-env/bin/python /tmp/esr1-seeded-source/phmt_test_support/esr1_activity_pilot.py \
-  --data-dir /tmp/phmt-ligand-pilot-20261023 \
+  --data-dir /tmp/esr1-seeded-inputs \
   --replay-declaration /tmp/esr1-seeded-source/tests/data/esr1_activity_pilot/seeded_replay_declaration.json \
-  --reference-query /tmp/phmt-ligand-pilot-20261023/run-01.query.json \
+  --reference-query /tmp/esr1-seeded-inputs/run-01.query.json \
   --output /tmp/esr1-seeded-replay.json
 ```
 
@@ -198,7 +228,8 @@ The command deliberately requires original byte identities. It refuses query or
 input substitutions even when declaration hashes are changed. After temporary
 environment cleanup, recreate the qualified providers and install this source
 checkout with `python -m pip install --no-deps --editable .`; public PHMT 0.4.0
-does not provide the new scoring API. No raw input redistribution is implied.
+does not provide the new scoring API. The current checkout restores original
+inputs; the recorded producer executes the historical scientific replay.
 
 ### Original 2026-10-23 record
 
@@ -218,8 +249,9 @@ preparation preservation, all denominators and independent pairwise AUC/tie-awar
 EF arithmetic. Archive checks execute no molecular workload. Scientific changes
 require a new opt-in run identity; preserve these outputs and declared failures.
 
-Next: resolve portable original-input retention, receive provider-owned conformer
-and stereo capabilities, and declare the next training/evaluation comparison
+Input retention completes #62's bounded pilot acceptance; it does not strengthen
+the biological claim. Next, receive provider-owned conformer and stereo
+capabilities and declare the next training/evaluation comparison
 before measuring it. Retrospective reuse of these observed outcomes is development
 evidence, not a fresh independent validation set. Receptor refinement #323 and
 newer-provider #375 receiving remain separate; no viewer addon is required here.

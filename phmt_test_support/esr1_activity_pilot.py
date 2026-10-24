@@ -11,6 +11,7 @@ import argparse
 import csv
 import hashlib
 import importlib.metadata
+import importlib.util
 import io
 import json
 import math
@@ -27,6 +28,9 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST = ROOT / "tests/data/esr1_activity_pilot/manifest.json"
+INPUT_SNAPSHOT = (
+    ROOT / "devguide/evidence/esr1_activity_pilot_inputs_20261023_summary.json"
+)
 BATH_URL = "https://researchdata.bath.ac.uk/1496/6/ESR1ago.tar.gz"
 BATH_SHA256 = "cb4bf0bf156e62944a0d0c7aefa02d0b589d1cc4d80dcdc1858b31f654889900"
 ASSAY_URL = "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/743075/concise/CSV"
@@ -238,6 +242,76 @@ def restore(directory, manifest):
                     f"3D record changed for CID {entry['cid']}; do not substitute"
                 )
             time.sleep(0.25)
+
+
+def restore_archived_inputs(
+    directory, manifest_path=MANIFEST, summary_path=INPUT_SNAPSHOT
+):
+    """Restore this case's original 35 responses and query into a new directory.
+
+    Verify the existing archive envelope and every manifest file before writing.
+    No network, molecular parsing, scientific imports or attribution recording.
+    Refuse duplicate/extra/nonregular members, substitutions and existing targets.
+    """
+    spec = importlib.util.spec_from_file_location(
+        "esr1_input_archive_reader", Path(__file__).with_name("evidence_archive.py")
+    )
+    reader = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(reader)
+    summary, raw = reader.read_archived_bytes(summary_path)
+    original, query = reader.read_archived_bytes(
+        ROOT / "devguide/evidence/esr1_activity_pilot_20261023_summary.json",
+        identity_key="saved_query_archive",
+    )
+    if (
+        summary.get("schema") != "pharmacophoremt.esr1_original_inputs_snapshot@1"
+        or summary["input_manifest_sha256"] != original["manifest"]["sha256"]
+        or digest(manifest_path.read_bytes()) != original["manifest"]["sha256"]
+        or summary["saved_query_archive"] != original["saved_query_archive"]
+    ):
+        raise ValueError("snapshot requires the original input manifest")
+    manifest = json.loads(manifest_path.read_text())
+    records = [manifest[k] for k in ("source", "assay", "assay_description")]
+    records.extend(
+        entry["acquisition"]
+        if entry["acquisition"]["status"] == "completed"
+        else entry["acquisition"]["response"]
+        for entry in manifest["cohort"]
+    )
+    expected = {record["file"]: record for record in records}
+    if (
+        len(expected) != 35
+        or len(records) != 35
+        or any(Path(name).name != name or name in {".", ".."} for name in expected)
+    ):
+        raise ValueError("snapshot requires the original 35 flat input files")
+    payloads = {}
+    with tarfile.open(fileobj=io.BytesIO(raw), mode="r:") as archive:
+        members = archive.getmembers()
+        if (
+            len(members) != len(expected)
+            or {m.name for m in members} != set(expected)
+            or not all(m.isfile() for m in members)
+        ):
+            raise ValueError("snapshot members differ from the original inputs")
+        for member in members:
+            record = expected[member.name]
+            with archive.extractfile(member) as stream:
+                payload = stream.read()
+            if (
+                digest(payload) != record["sha256"]
+                or len(payload) != record["byte_count"]
+            ):
+                raise ValueError(f"snapshot input identity changed: {member.name}")
+            payloads[member.name] = payload
+    payloads["run-01.query.json"] = query
+    # mkdir refuses existing directories and symlinks. Never extract a tar path
+    # or replace files in a human's previous acquisition/run directory.
+    directory.mkdir(parents=True, exist_ok=False)
+    for name, payload in payloads.items():
+        with (directory / name).open("xb") as stream:
+            stream.write(payload)
+    return dict(original_input_files=35, saved_queries=1, network_used=False)
 
 
 def portable(value):
@@ -583,8 +657,10 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, required=True)
     parser.add_argument("--manifest", type=Path, default=MANIFEST)
-    parser.add_argument("--acquire", action="store_true")
-    parser.add_argument("--restore", action="store_true")
+    acquisition = parser.add_mutually_exclusive_group()
+    acquisition.add_argument("--acquire", action="store_true")
+    acquisition.add_argument("--restore", action="store_true")
+    acquisition.add_argument("--restore-archive", action="store_true")
     parser.add_argument("--output", type=Path)
     parser.add_argument("--replay-declaration", type=Path)
     parser.add_argument("--reference-query", type=Path)
@@ -593,6 +669,8 @@ def main():
         acquire(args.data_dir, args.manifest)
     if args.restore:
         restore(args.data_dir, json.loads(args.manifest.read_text()))
+    if args.restore_archive:
+        print(json.dumps(restore_archived_inputs(args.data_dir, args.manifest)))
     if args.output:
         execute(
             args.data_dir,
