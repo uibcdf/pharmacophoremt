@@ -1,5 +1,11 @@
 # Screening prepared conformations
 
+**#63:** [Seed-only binary ranking](seeded_ranking_workflow.md) is available with
+`search_method='seeded_hit'`. The checked-coverage rules below remain the direct
+compatibility default. Using them for retrospective/facade ranking requires
+explicit `score_method='checked_pose_coverage'`; they do not establish
+frame-independent molecular partial scores.
+
 The #45 [screening facade transition](virtual_screening_workflow.md) now reuses
 this tool through `VirtualScreening(screening_method='conformers')`. It adds a
 ranked hit-list surface without changing this tool's ensemble/search contract.
@@ -61,7 +67,8 @@ failures remain visible. Unit coverage on an excluded or otherwise inadmissible
 pose does not establish this exception. All successful requested frames with no
 hit produce a complete negative for this discrete method.
 
-`RetrospectiveValidator(..., evaluator=screen)` ranks one resolved result per
+`RetrospectiveValidator(..., evaluator=screen, score_method='checked_pose_coverage')`
+ranks one compatibility resolved result per
 molecule and reports unresolved molecule failures. Its full evaluations retain
 frame failures even for molecules with a proven maximum. Counts of failed
 molecules and failed conformers therefore need not coincide.

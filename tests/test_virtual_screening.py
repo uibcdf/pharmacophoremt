@@ -157,7 +157,9 @@ def test_rigid_method_recovers_transformed_prepared_frame_without_mutation():
     source, query = reference()
     displaced = moved(source)
     before = puw.get_value(msm.get(displaced, coordinates=True), to_unit="nm").copy()
-    screen = VirtualScreening(query, screening_method="rigid")
+    screen = VirtualScreening(
+        query, screening_method="rigid", score_method="checked_pose_coverage"
+    )
     hit = screen.run([displaced])[0]
     assert (
         hit["fit_value"] == 1
@@ -172,7 +174,12 @@ def test_rigid_method_recovers_transformed_prepared_frame_without_mutation():
 def test_prepared_conformer_order_and_partial_failure_evidence_are_retained():
     _, query = reference()
     source = ensemble(moved_coordinates(), COORDINATES)
-    screen = VirtualScreening(query, screening_method="conformers", max_trials=1)
+    screen = VirtualScreening(
+        query,
+        screening_method="conformers",
+        score_method="checked_pose_coverage",
+        max_trials=1,
+    )
     with pytest.raises(PoseEvaluationError):
         screen.run([source])
     hit = screen.run([source], on_error="record")[0]
@@ -186,9 +193,9 @@ def test_prepared_conformer_order_and_partial_failure_evidence_are_retained():
 def test_conformer_ties_follow_requested_source_frame_order():
     _, query = reference()
     source = ensemble(COORDINATES, COORDINATES)
-    hit = VirtualScreening(query, screening_method="conformers").run(
-        [source], structure_indices=[1, 0]
-    )[0]
+    hit = VirtualScreening(
+        query, screening_method="conformers", score_method="checked_pose_coverage"
+    ).run([source], structure_indices=[1, 0])[0]
     assert hit["conf_id"] == 1 and hit["ensemble"]["structure_indices"] == [1, 0]
 
 
@@ -218,7 +225,9 @@ def test_no_coordinates_never_trigger_local_preparation(monkeypatch):
     unprepared = msm.convert(
         msm.convert("smiles:CCC", to_form="rdkit.Mol"), to_form="molsysmt.MolSys"
     )
-    screen = VirtualScreening(query, screening_method="conformers")
+    screen = VirtualScreening(
+        query, screening_method="conformers", score_method="checked_pose_coverage"
+    )
     assert screen.run([unprepared], on_error="record") == []
     assert screen.evaluations[0]["status"] == "failed"
     assert screen.evaluations[0]["fit_value"] is None
@@ -255,6 +264,8 @@ def test_scalar_exports_need_no_molecular_conversion_and_sdf_is_explicitly_retir
     assert list(empty.columns) == [
         "rank",
         "input_index",
+        "ranking_score",
+        "score_method",
         "fit_value",
         "conf_id",
         "status",
@@ -268,7 +279,13 @@ def test_scalar_exports_need_no_molecular_conversion_and_sdf_is_explicitly_retir
     monkeypatch.setattr(msm, "convert", forbidden)
     frame = screen.to_dataframe()
     assert frame.iloc[0].to_dict() == dict(
-        rank=1, input_index=0, fit_value=1.0, conf_id=0, status="matched"
+        rank=1,
+        input_index=0,
+        ranking_score=1.0,
+        score_method="checked_pose_coverage@1",
+        fit_value=1.0,
+        conf_id=0,
+        status="matched",
     )
     path = tmp_path / "hits.csv"
     screen.to_csv(path)

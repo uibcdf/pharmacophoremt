@@ -6,6 +6,7 @@ import hashlib
 import importlib.util
 import json
 import math
+import tempfile
 import unittest
 from collections import Counter
 from pathlib import Path
@@ -25,6 +26,51 @@ read_archived_evidence = _reader.read_archived_evidence
 
 
 class TestEsr1ActivityPilot(unittest.TestCase):
+    def test_seeded_replay_requires_original_query_and_inputs_even_with_rehashed_declaration(
+        self,
+    ):
+        spec = importlib.util.spec_from_file_location(
+            "esr1_replay_driver", ROOT / "phmt_test_support/esr1_activity_pilot.py"
+        )
+        driver = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(driver)
+        declared = (
+            ROOT / "tests/data/esr1_activity_pilot/seeded_replay_declaration.json"
+        )
+        _, query_bytes = read_archived_bytes(
+            SUMMARY, identity_key="saved_query_archive"
+        )
+        with tempfile.TemporaryDirectory() as directory:
+            directory = Path(directory)
+            query_path = directory / "query.json"
+            query_path.write_bytes(query_bytes)
+            driver.validate_replay_declaration(MANIFEST, declared, query_path)
+            with self.assertRaises(ValueError):
+                driver.validate_replay_declaration(MANIFEST, declared, None)
+            changed = json.loads(declared.read_text())
+            query_path.write_bytes(query_bytes + b"\n")
+            changed["frozen_query_sha256"] = hashlib.sha256(
+                query_path.read_bytes()
+            ).hexdigest()
+            declaration_path = directory / "changed.json"
+            declaration_path.write_text(json.dumps(changed))
+            with self.assertRaises(ValueError):
+                driver.validate_replay_declaration(
+                    MANIFEST, declaration_path, query_path
+                )
+            query_path.write_bytes(query_bytes)
+            changed = json.loads(declared.read_text())
+            manifest_path = directory / "inputs.json"
+            manifest_path.write_bytes(MANIFEST.read_bytes() + b"\n")
+            changed["input_manifest_sha256"] = hashlib.sha256(
+                manifest_path.read_bytes()
+            ).hexdigest()
+            declaration_path.write_text(json.dumps(changed))
+            with self.assertRaises(ValueError):
+                driver.validate_replay_declaration(
+                    manifest_path, declaration_path, query_path
+                )
+
     def test_original_accounting_and_metrics_have_independent_oracles(self):
         summary, run = read_archived_evidence(SUMMARY)
         manifest = json.loads(MANIFEST.read_text())

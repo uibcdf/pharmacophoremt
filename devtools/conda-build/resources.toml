@@ -172,6 +172,7 @@ required_paths = [
   "site-packages/pharmacophoremt/screening/rigid_placements.py",
   "site-packages/pharmacophoremt/screening/rigid_refinement.py",
   "site-packages/pharmacophoremt/screening/rigid_search.py",
+  "site-packages/pharmacophoremt/screening/scoring.py",
   "site-packages/pharmacophoremt/screening/virtual_screening.py",
   "site-packages/pharmacophoremt/validation/__init__.py",
   "site-packages/pharmacophoremt/validation/loo.py",
@@ -320,7 +321,7 @@ sha256 = "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1"
 [[installed_tests.support.files]]
 source = "phmt_test_support/prepared_search_workflow.py"
 target = "phmt_test_support/prepared_search_workflow.py"
-sha256 = "d8016e05cb084b26c97d21cd1f57527ad1f07826364817ff11171358d54ccc23"
+sha256 = "5d987ce1caa26a76db51c3574278719d85a1cf8d5657873fcbf3d19bdf8ec533"
 
 [[installed_tests.support.files]]
 source = "phmt_test_support/prepared_workflow.py"

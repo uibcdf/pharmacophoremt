@@ -60,6 +60,36 @@ def dump(path, value):
     path.write_text(json.dumps(value, indent=2, allow_nan=False) + "\n")
 
 
+def validate_replay_declaration(manifest_path, declaration_path, reference_query):
+    """Check the declared replay against original archived byte identities."""
+    declaration = json.loads(declaration_path.read_text())
+    original = json.loads(
+        (
+            ROOT / "devguide/evidence/esr1_activity_pilot_20261023_summary.json"
+        ).read_text()
+    )
+    if (
+        declaration.get("schema")
+        != "pharmacophoremt.esr1_seeded_hit_replay_declaration@1"
+        or declaration.get("method")
+        != dict(METHOD, search_method="seeded_hit", score_method="seeded_hit@1")
+        or declaration.get("original_report_sha256")
+        != original["full_evidence"]["uncompressed_sha256"]
+        or declaration.get("input_manifest_sha256") != original["manifest"]["sha256"]
+        or digest(manifest_path.read_bytes())
+        != declaration.get("input_manifest_sha256")
+        or declaration.get("frozen_query_sha256")
+        != original["saved_query_archive"]["uncompressed_sha256"]
+        or reference_query is None
+        or digest(reference_query.read_bytes())
+        != declaration.get("frozen_query_sha256")
+    ):
+        raise ValueError(
+            "seeded replay requires its frozen declaration, original inputs and original query bytes"
+        )
+    return declaration
+
+
 def frozen_cohort(rows):
     """Case-specific ID sampling; no chemistry/series inference or score access."""
     groups = {"Active": {}, "Inactive": {}}
@@ -226,14 +256,16 @@ def portable(value):
     return value
 
 
-def execute(directory, manifest_path, output):
+def execute(
+    directory, manifest_path, output, *, declaration_path=None, reference_query=None
+):
     import ackredit
     import molsysmt as msm
     import numpy as np
 
     import pharmacophoremt as phmt
     from pharmacophoremt import pyunitwizard as puw
-    from pharmacophoremt.io import to_json
+    from pharmacophoremt.io import load_json, to_json
     from pharmacophoremt.modeler import from_feature_inventory, get_features
     from pharmacophoremt.screening import RigidPoseSearch
     from pharmacophoremt.validation.retrospective import RetrospectiveValidator
@@ -243,6 +275,15 @@ def execute(directory, manifest_path, output):
     manifest = json.loads(manifest_path.read_text())
     if manifest["method"] != METHOD:
         raise ValueError("this driver only implements the declared v1 method")
+    method = METHOD
+    declaration = None
+    if declaration_path is not None:
+        declaration = validate_replay_declaration(
+            manifest_path, declaration_path, reference_query
+        )
+        method = dict(METHOD, search_method="seeded_hit", score_method="seeded_hit@1")
+    elif reference_query is not None:
+        raise ValueError("a replay query requires an explicit declaration")
     systems, records = {}, []
 
     def state(system):
@@ -399,16 +440,22 @@ def execute(directory, manifest_path, output):
             raise ValueError(
                 "predeclared reference failed; no alternate reference permitted"
             )
-        query = from_feature_inventory(
-            reference["preparation"]["inventory"],
-            radius=METHOD["radius"],
-            name="Frozen ESR1ago CID " + reference["cid"],
-        )
+        if declaration is None:
+            query = from_feature_inventory(
+                reference["preparation"]["inventory"],
+                radius=METHOD["radius"],
+                name="Frozen ESR1ago CID " + reference["cid"],
+            )
+        else:
+            query = load_json(str(reference_query))
         query_path = output.with_suffix(".query.json")
         if query_path.exists():
             raise FileExistsError("preserve saved query")
         output.parent.mkdir(parents=True, exist_ok=True)
-        to_json(query, str(query_path))
+        if declaration is None:
+            to_json(query, str(query_path))
+        else:
+            query_path.write_bytes(reference_query.read_bytes())
         search = RigidPoseSearch(
             query,
             **{
@@ -420,6 +467,7 @@ def execute(directory, manifest_path, output):
                     "min_fit_value",
                 )
             },
+            **({"search_method": "seeded_hit"} if declaration is not None else {}),
         )
         self_result = search.evaluate(systems[reference["cid"]])
         held_out = [r for r in records if r["role"] == "held_out"]
@@ -484,7 +532,9 @@ def execute(directory, manifest_path, output):
         for record in [json.loads(path.read_text())]
     ]
     result = dict(
-        schema="pharmacophoremt.esr1_activity_pilot_run@1",
+        schema="pharmacophoremt.esr1_seeded_hit_replay_run@1"
+        if declaration is not None
+        else "pharmacophoremt.esr1_activity_pilot_run@1",
         issue=62,
         measured_at=datetime.now(timezone.utc).isoformat(),
         producer=dict(
@@ -500,14 +550,19 @@ def execute(directory, manifest_path, output):
             conda_records=conda_records,
         ),
         manifest=identity(manifest_path),
-        method=METHOD,
+        method=method,
+        replay_declaration=identity(declaration_path)
+        if declaration is not None
+        else None,
         saved_query=identity(query_path),
         preparation_journal=identity(journal_path),
         reference_self_evaluation=self_result,
         records=records,
         retrospective=report,
         data_attribution=credits,
-        scope="exploratory held-out assay outcomes; one supplied 3D conformer; CID-disjoint, series overlap unqualified; evaluated-subset metrics; no affinity or full-benchmark claim",
+        scope=declaration["claim"]
+        if declaration is not None
+        else "exploratory held-out assay outcomes; one supplied 3D conformer; CID-disjoint, series overlap unqualified; evaluated-subset metrics; no affinity or full-benchmark claim",
     )
     dump(output, portable(result))
     print(
@@ -516,7 +571,7 @@ def execute(directory, manifest_path, output):
                 {
                     k: v
                     for k, v in report.items()
-                    if k not in {"evaluations", "failures"}
+                    if k not in {"evaluations", "failures", "attribution"}
                 }
             )
         ),
@@ -531,13 +586,21 @@ def main():
     parser.add_argument("--acquire", action="store_true")
     parser.add_argument("--restore", action="store_true")
     parser.add_argument("--output", type=Path)
+    parser.add_argument("--replay-declaration", type=Path)
+    parser.add_argument("--reference-query", type=Path)
     args = parser.parse_args()
     if args.acquire:
         acquire(args.data_dir, args.manifest)
     if args.restore:
         restore(args.data_dir, json.loads(args.manifest.read_text()))
     if args.output:
-        execute(args.data_dir, args.manifest, args.output)
+        execute(
+            args.data_dir,
+            args.manifest,
+            args.output,
+            declaration_path=args.replay_declaration,
+            reference_query=args.reference_query,
+        )
 
 
 if __name__ == "__main__":

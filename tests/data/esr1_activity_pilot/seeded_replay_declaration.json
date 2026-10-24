@@ -1,0 +1,32 @@
+{
+  "schema": "pharmacophoremt.esr1_seeded_hit_replay_declaration@1",
+  "date": "2026-10-24",
+  "issues": [
+    "uibcdf/pharmacophoremt#62",
+    "uibcdf/pharmacophoremt#63"
+  ],
+  "input_manifest_sha256": "23aba072556e806f9b0d9ea5c06c322f1502855356d538e90a7c3a9e8e25e9ac",
+  "original_report_sha256": "954550324a1f9fd805e2aa4e6eb919ab7a855e2628d4ff8f96019c04b997b145",
+  "frozen_query_sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+  "method": {
+    "features": [
+      "hb donor",
+      "hb acceptor",
+      "aromatic ring"
+    ],
+    "radius": "0.15 nm",
+    "max_trials": 10000,
+    "point_tolerance": "0.10 nm",
+    "direction_tolerance": "30 degrees",
+    "min_fit_value": 0.0,
+    "ef_fractions": [
+      0.1
+    ],
+    "bedroc_alpha": 20.0,
+    "search_method": "seeded_hit",
+    "score_method": "seeded_hit@1"
+  },
+  "claim": "Development replay of previously exposed assay compounds with the frozen original query and inputs; not a new independent holdout, optimization or demonstrated predictive improvement.",
+  "selection": "Retain all original 32 input identities, preparation failures and original reference/held-out roles. No replacement or selection from new scores.",
+  "comparison": "Preserve the original 2026-10-23 public-runtime record; separately report binary scores, checked pose coverage, missing outcomes and tie-aware metrics. No continuous/affinity equivalence."
+}

@@ -2,15 +2,21 @@
 
 from copy import deepcopy
 
+import molsysmt as msm
 from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_search_method,
+)
+from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.pose_batch import run_evaluations
 from pharmacophoremt._private.smonitor.exceptions import (
     PoseEvaluationError,
     SearchLimitError,
 )
+from pharmacophoremt._version import __version__
 from pharmacophoremt.modeler.features import get_features
 from pharmacophoremt.pharmacophore import Pharmacophore
 from pharmacophoremt.screening.alignment import align_to_pharmacophore
@@ -19,6 +25,7 @@ from pharmacophoremt.screening.correspondence import (
     get_correspondences,
 )
 from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
+from pharmacophoremt.screening.scoring import get_screening_score
 
 
 class RigidPoseSearch:
@@ -36,6 +43,11 @@ class RigidPoseSearch:
         Donor-H and aromatic-axis tolerance used after alignment.
     min_fit_value : float, default=0.0
         Minimum weighted coverage for a hit.
+    search_method : {'placed_and_triplets', 'seeded_hit'}
+        The compatibility default also tests the supplied pose. Explicit
+        'seeded_hit' tests fitted triplet seeds only and returns a binary
+        ranking_score, independent of input placement. Partial fit_value remains
+        checked-pose evidence, never the molecular score.
 
     Notes
     -----
@@ -64,7 +76,10 @@ class RigidPoseSearch:
         point_tolerance="0.10 nm",
         direction_tolerance="30 degrees",
         min_fit_value=0.0,
+        search_method="placed_and_triplets",
     ):
+        self.search_method = digest_search_method(search_method)
+        self.score_method = "seeded_hit" if search_method == "seeded_hit" else None
         self.evaluator = PoseEvaluator(
             pharmacophore,
             point_tolerance=point_tolerance,
@@ -93,11 +108,13 @@ class RigidPoseSearch:
     ):
         """Return the best checked coverage, alignment and search evidence.
 
-        A valid unit-fit hit stops the search because coverage cannot exceed one.
-        Equal results retain the earliest seed deterministically. A matched pose
-        ranks ahead of any non-hit, then coverage ranks poses within that status.
-        Incomplete search and
-        provider failures raise PoseEvaluationError retaining the original cause.
+        The compatibility method includes the supplied placement and stops at
+        unit coverage. Explicit seeded_hit excludes that placement, stops at the
+        first fitted admissible hit and reports binary ranking_score. Complete
+        negatives with no fitted pose have pose_evaluated=False and fit_value=None;
+        no assignments or placed coordinates are invented. Other fitted coverage
+        remains pose evidence. Incomplete unproven searches and provider failures
+        raise PoseEvaluationError retaining their cause.
         """
         stage = "recognition"
         try:
@@ -117,12 +134,27 @@ class RigidPoseSearch:
                 point_tolerance=self.point_tolerance,
                 max_trials=self.max_trials,
             )
-            # Identity placement is also a candidate; zero fitted seeds should
-            # still retain provider recognition and a fully evaluated result.
+            seeded = self.search_method == "seeded_hit"
             stage = "matching"
-            best = self.evaluator.evaluate(molecular_system, pose_id=pose_id, **options)
+            # A seed-only search never ranks the arbitrary supplied placement.
+            # With no fitted pose, no pose coverage or assignments are invented.
+            best = (
+                None
+                if seeded
+                else self.evaluator.evaluate(
+                    molecular_system, pose_id=pose_id, **options
+                )
+            )
             best_alignment, n_fitted = None, 0
-            optimal = best["status"] == "matched" and best["fit_value"] == 1
+
+            def maximum(result):
+                return (
+                    result is not None
+                    and result["status"] == "matched"
+                    and (seeded or result["fit_value"] == 1)
+                )
+
+            optimal = maximum(best)
             for correspondence in proposals["correspondences"]:
                 if optimal:
                     break
@@ -141,12 +173,15 @@ class RigidPoseSearch:
                 )
                 # Preserve the existence of a valid hit even if an inadmissible
                 # pose covers more optional sites but violates an exclusion.
-                if (result["status"] == "matched", result["fit_value"]) > (
+                if best is None or (
+                    result["status"] == "matched",
+                    result["fit_value"],
+                ) > (
                     best["status"] == "matched",
                     best["fit_value"],
                 ):
                     best, best_alignment = result, aligned["alignment"]
-                optimal = best["status"] == "matched" and best["fit_value"] == 1
+                optimal = maximum(best)
             if not proposals["complete"] and not optimal:
                 stage = "search_budget"
                 raise SearchLimitError(
@@ -158,21 +193,42 @@ class RigidPoseSearch:
             raise PoseEvaluationError(
                 pose_id=pose_id, stage=stage, reason=str(error)
             ) from error
-        return dict(
+        if best is None:
+            best = dict(
+                status="not_matched",
+                fit_value=None,
+                pose_id=pose_id,
+                structure_index=inventory["structure_index"],
+                selected_atom_indices=inventory["selected_atom_indices"],
+                chemical_state=inventory["chemical_state"],
+                recognition=detached(inventory["recognition"]),
+                model_metadata=deepcopy(self.evaluator.model_metadata),
+                software={"pharmacophoremt": __version__, "molsysmt": msm.__version__},
+            )
+        result = dict(
             best,
+            pose_evaluated=not seeded or n_fitted > 0,
             alignment=best_alignment,
             search=dict(
-                method="rigid_triplet_fit@1",
+                method="rigid_triplet_seed_hit@1" if seeded else "rigid_triplet_fit@1",
                 max_trials=self.max_trials,
                 n_trials=proposals["n_trials"],
                 n_pruned=proposals["n_pruned"],
                 n_proposals=len(proposals["correspondences"]),
                 n_fitted=n_fitted,
                 enumeration_complete=proposals["complete"],
-                termination="optimal_fit_found" if optimal else "enumeration_complete",
-                identity_pose_tested=True,
+                termination=("hit_found" if seeded else "optimal_fit_found")
+                if optimal
+                else "enumeration_complete",
+                identity_pose_tested=not seeded,
             ),
         )
+        if seeded:
+            result["score_method"] = "seeded_hit@1"
+            result["ranking_score"] = get_screening_score(
+                result, score_method="seeded_hit"
+            )
+        return result
 
     @signal(tags=["screening", "rigid_search", "batch"])
     @arg_digest()

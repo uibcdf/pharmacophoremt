@@ -1,13 +1,13 @@
 ---
 summary: Define a frame-independent molecular ranking contract for completed rigid negatives.
 issue: uibcdf/pharmacophoremt#63
-status: open
+status: active
 opened: 2026-10-23
 closed:
 verification: reproduced
 area: [screening, validation, mvp]
-guard:
-normative:
+guard: tests/test_seeded_scoring.py::test_negative_score_is_invariant_and_pose_coverage_remains_distinct
+normative: devguide/seeded_ranking_workflow.md
 blocked_by: []
 supersedes: []
 ---
@@ -66,3 +66,35 @@ Add independent translated/rotated completed-negative controls, explicit budgets
 ties/failures and downstream retrospective/conformer tests. Reuse owning public
 tools and declare a new scientific run for changed scoring semantics. No runtime
 fix or new scoring contract is delivered by this report.
+
+## Source implementation under qualification — 2026-10-24
+
+The [seed-only contract](../seeded_ranking_workflow.md) is now implemented as an
+explicit `search_method='seeded_hit'` on rigid/conformer tools. It excludes the
+arbitrary supplied placement and uses a binary molecular criterion: fitted hit
+one, completed negative zero, failed/unresolved input unscored. Raw `fit_value`
+remains checked-pose evidence; no fitted pose means no invented coverage or
+coordinates. No graded partial optimum is claimed. A first hit proves maximum
+binary score, including optional coverage below one; an unproven exhausted
+search remains failed. Ensemble ties preserve requested frame order.
+
+Public `get_screening_score` is a reusable read-only scoring operation. The
+retrospective/facade consumers share it; they refuse implicit legacy
+rigid/conformer coverage ranking and allow deliberate compatibility through
+`score_method='checked_pose_coverage'`. Scalar exports name both criterion and
+score. Direct compatibility search defaults and all molecular operations remain
+unchanged; MolSysMT still owns fitting, reading, states and transformations.
+
+Fourteen initial source controls and 97 public-provider focused tests pass.
+The complete source suite (949 collected tests), additional criterion guards
+and replay are under qualification in `/tmp/phmt-seeded-ranking-20261024`.
+Public MolSysMT 0.23.0 is isolated from the newer shared development provider.
+Historical public-version Pandas warnings remain visible and are not repaired
+or suppressed in this component. No public package or new release is produced.
+
+The [replay declaration](../../tests/data/esr1_activity_pilot/seeded_replay_declaration.json)
+fixes the original #62 manifest, query and report byte identities before new
+scores. The driver reuses the existing public-provider preparation recipe and
+refuses changed inputs/query even with rehashed declaration fields. This is
+development replay of an exposed dataset, not a fresh independent holdout or
+an optimized biological comparison. The original frozen evidence is preserved.

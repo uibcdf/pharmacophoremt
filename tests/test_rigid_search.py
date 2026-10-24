@@ -96,9 +96,9 @@ def test_reflection_and_distorted_geometry_are_negatives_and_rank_below_rigid_po
     search = RigidPoseSearch(query)
     assert search.evaluate(reflected)["status"] == "not_matched"
     assert search.evaluate(distorted)["status"] == "not_matched"
-    report = RetrospectiveValidator(query, evaluator=search).run(
-        [moved(source)], [reflected, distorted]
-    )
+    report = RetrospectiveValidator(
+        query, evaluator=search, score_method="checked_pose_coverage"
+    ).run([moved(source)], [reflected, distorted])
     assert report["AUC"] == report["BEDROC"] == 1
     assert report["n_actives_found"] == 1
     assert report["scores"][0] == 1
@@ -121,9 +121,9 @@ def test_incomplete_enumeration_is_failure_without_a_proven_maximum_fit():
     assert not records[0]["search"]["enumeration_complete"]
     assert records[1]["status"] == "failed" and records[1]["fit_value"] is None
     assert records[1]["input_index"] == 1
-    report = RetrospectiveValidator(query, evaluator=search).run(
-        [source], [moved(source)], on_error="record"
-    )
+    report = RetrospectiveValidator(
+        query, evaluator=search, score_method="checked_pose_coverage"
+    ).run([source], [moved(source)], on_error="record")
     assert report["n_failed"] == 1 and report["n_decoys_evaluated"] == 0
     assert report["scores"].tolist() == [1]
 
@@ -237,21 +237,27 @@ def test_zero_weight_essential_sites_still_anchor_optional_coverage():
     assert len(result["assignments"]) == 5
 
 
-def test_zero_angle_tolerance_matches_its_source_and_preserves_rigid_invariance():
+@pytest.mark.parametrize("search_method", ["placed_and_triplets", "seeded_hit"])
+def test_zero_angle_tolerance_matches_its_source_and_preserves_rigid_invariance(
+    search_method,
+):
     coordinates = COORDINATES.copy()
     coordinates[3] = [0.07, 0.56, 0.04]
     source = system(SMILES, coordinates)
     query = from_ligand(source, features=FAMILIES, radius="0.02 nm")
     original = PoseEvaluator(query, direction_tolerance="0 degrees").evaluate(source)
-    transformed = RigidPoseSearch(query, direction_tolerance="0 degrees").evaluate(
-        moved(source)
-    )
+    transformed = RigidPoseSearch(
+        query, direction_tolerance="0 degrees", search_method=search_method
+    ).evaluate(moved(source))
     assert original["status"] == transformed["status"] == "matched"
     assert original["fit_value"] == transformed["fit_value"] == 1
     assert original["criteria"]["angle_comparison_cosine_slack"] < 1e-14
 
 
-def test_grouped_aromatic_and_charge_features_align_with_plane_orientation():
+@pytest.mark.parametrize("search_method", ["placed_and_triplets", "seeded_hit"])
+def test_grouped_aromatic_and_charge_features_align_with_plane_orientation(
+    search_method,
+):
     angles = np.arange(6) * np.pi / 3
     ring = np.column_stack((0.14 * np.cos(angles), 0.14 * np.sin(angles), np.zeros(6)))
     coordinates = np.vstack(
@@ -282,9 +288,9 @@ def test_grouped_aromatic_and_charge_features_align_with_plane_orientation():
             features=["aromatic ring", "negative charge", "positive charge"],
             radius="0.03 nm",
         )
-        result = RigidPoseSearch(query, direction_tolerance="5 degrees").evaluate(
-            displaced
-        )
+        result = RigidPoseSearch(
+            query, direction_tolerance="5 degrees", search_method=search_method
+        ).evaluate(displaced)
     assert result["status"] == "matched" and result["fit_value"] == 1
     aromatic = next(
         record

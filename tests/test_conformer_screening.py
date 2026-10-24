@@ -143,7 +143,9 @@ def test_partial_negative_has_no_definitive_score_and_is_excluded_from_metrics()
     assert result["best_observed"]["conformer_index"] == 0
     assert not result["ensemble"]["score_resolved"]
     negative = ensemble(distorted_coordinates())
-    report = RetrospectiveValidator(query, evaluator=screen).run(
+    report = RetrospectiveValidator(
+        query, evaluator=screen, score_method="checked_pose_coverage"
+    ).run(
         (entry for entry in [source, source]),
         (entry for entry in [partial, negative]),
         on_error="record",

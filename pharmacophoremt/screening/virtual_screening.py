@@ -12,6 +12,7 @@ from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.screening.conformer_screening import ConformerScreening
 from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
 from pharmacophoremt.screening.rigid_search import RigidPoseSearch
+from pharmacophoremt.screening.scoring import _resolve_score_method, get_screening_score
 
 
 class VirtualScreening:
@@ -28,6 +29,12 @@ class VirtualScreening:
     min_fit_value threshold to bound total weighted coverage. Lengths and angles
     require explicit units. Method-specific keyword options reach the selected
     public tool; evaluate/run options are supplied to run().
+
+    For molecular ranking choose search_method='seeded_hit' with rigid/conformers.
+    Their legacy checked-pose ranking instead requires explicit
+    score_method='checked_pose_coverage'. Placed evaluation defaults to that
+    declared frame's coverage. Hit records and scalar exports separate
+    ranking_score/score_method from fit_value; binary ties retain input order.
 
     run() returns ranked native hit records with their original ``mol`` reference
     and a source-frame ``conf_id`` alias; ``evaluations`` retains every native
@@ -48,6 +55,7 @@ class VirtualScreening:
         direction_tolerance="30 degrees",
         *,
         screening_method=None,
+        score_method=None,
         **native_options,
     ):
         tools = {
@@ -72,6 +80,7 @@ class VirtualScreening:
             direction_tolerance=direction_tolerance,
             **native_options,
         )
+        self.score_method = _resolve_score_method(self.evaluator, score_method)
         self.matches = []
         self.evaluations = []
 
@@ -107,9 +116,13 @@ class VirtualScreening:
                         deepcopy(entry),
                         mol=systems[entry["input_index"]],
                         conf_id=frame,
+                        ranking_score=get_screening_score(
+                            entry, score_method=self.score_method
+                        ),
+                        score_method=self.score_method + "@1",
                     )
                 )
-        matches.sort(key=lambda entry: entry["fit_value"], reverse=True)
+        matches.sort(key=lambda entry: entry["ranking_score"], reverse=True)
         self.evaluations = evaluations
         self.matches = matches
         return self.matches
@@ -118,7 +131,15 @@ class VirtualScreening:
         """Format ranked hit evidence without molecular conversion or H removal."""
         import pandas as pd
 
-        columns = ["rank", "input_index", "fit_value", "conf_id", "status"]
+        columns = [
+            "rank",
+            "input_index",
+            "ranking_score",
+            "score_method",
+            "fit_value",
+            "conf_id",
+            "status",
+        ]
         return pd.DataFrame(
             [
                 dict(rank=rank, **{key: entry[key] for key in columns[1:]})

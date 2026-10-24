@@ -72,6 +72,7 @@ def evaluate_query(query, source, frames, unprepared):
     facade = VirtualScreening(
         query,
         screening_method="rigid",
+        score_method="checked_pose_coverage",
         max_trials=10000,
         direction_tolerance="1 degree",
     )

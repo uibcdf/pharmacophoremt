@@ -1,5 +1,11 @@
 # Explicit prepared-native virtual screening
 
+**#63 ranking:** rigid/conformer hit lists require either the new explicit
+`search_method='seeded_hit'` [binary criterion](seeded_ranking_workflow.md), or
+explicit `score_method='checked_pose_coverage'` for compatibility. Placed
+evaluation keeps its declared-frame coverage default. New hit records/exports
+separate `ranking_score` and `score_method` from checked-pose `fit_value`.
+
 Transition owned by [#45](https://github.com/uibcdf/pharmacophoremt/issues/45),
 under the molecular ownership audit #41. `VirtualScreening` delegates to existing
 public PHMT tools. MolSysMT supplies molecular recognition, source selections,
@@ -37,7 +43,8 @@ provider-owned requirement [MolSysMT #219](https://github.com/uibcdf/molsysmt/is
 ## Records, failures and exports
 
 `run()` materializes the input collection once and returns hit records sorted by
-descending coverage with input-order ties. Each hit contains native evidence,
+the declared `ranking_score` with input-order ties: binary seeded hits tie;
+explicit checked-coverage compatibility uses the recorded pose coverage. Each hit contains native evidence,
 its original `mol` reference, `input_index` and `conf_id` (an alias of the native
 source frame or best prepared frame). No `rd_mol` is manufactured. `evaluations`
 keeps every native per-input record in input order; native conformer accounting,
@@ -53,7 +60,8 @@ before any entered run, including iterator, option and provider failures; they
 publish only after the complete batch returns. The native tools validate the
 forwarded evaluation options after that clearing step.
 
-DataFrame/CSV contains `rank`, `input_index`, `fit_value`, `conf_id`, `status`.
+DataFrame/CSV contains `rank`, `input_index`, `ranking_score`, `score_method`,
+`fit_value`, `conf_id`, `status`.
 Empty exports retain those columns. It does not infer names/SMILES, remove H,
 generate molecular coordinates or include every negative/failure; inspect
 `evaluations` for full accounting. `to_sdf()` now raises an actionable error

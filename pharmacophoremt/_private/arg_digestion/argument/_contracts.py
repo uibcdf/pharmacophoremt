@@ -468,6 +468,34 @@ def digest_evaluator(obj):
     return obj
 
 
+def digest_search_method(obj):
+    if not isinstance(obj, str) or obj not in {"placed_and_triplets", "seeded_hit"}:
+        raise ArgumentError(
+            argument="search_method",
+            reason="expected placed_and_triplets or seeded_hit",
+        )
+    return obj
+
+
+def digest_score_method(obj):
+    if obj is not None and (
+        not isinstance(obj, str) or obj not in {"checked_pose_coverage", "seeded_hit"}
+    ):
+        raise ArgumentError(
+            argument="score_method",
+            reason="expected checked_pose_coverage, seeded_hit or None",
+        )
+    return obj
+
+
+def digest_result(obj):
+    if not isinstance(obj, dict):
+        raise ArgumentError(
+            argument="result", reason="expected native screening evidence"
+        )
+    return obj
+
+
 def digest_enabled(obj):
     if not isinstance(obj, (bool, np.bool_)):
         raise ArgumentError(argument="enabled", reason="expected a boolean")

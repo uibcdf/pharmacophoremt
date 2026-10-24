@@ -5,11 +5,14 @@ Use `RigidPoseSearch` to align and evaluate one prepared frame. Use
 molecule and retain its best checked pose. Both compose chemical recognition,
 pharmacophoric correspondence proposals, MolSysMT fitting and pose evaluation.
 
-The current `rigid_triplet_fit@1` method requires at least three essential sites
+The explicit `seeded_hit` method used below requires at least three essential sites
 with non-collinear centers. It enumerates chemically compatible triplet fits
 within a finite budget; it does not exhaust continuous pose space. Prepared
 conformations and declared chemical states are inputs. Their generation and
-molecular preparation belong to MolSysMT-supported workflows.
+molecular preparation belong to MolSysMT-supported workflows. The compatibility
+`placed_and_triplets` method retains checked-pose coverage; explicitly request
+`score_method='checked_pose_coverage'` to rank that legacy evidence. See the
+[scoring contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/seeded_ranking_workflow.md).
 
 ## Executable example
 
@@ -39,12 +42,12 @@ prepared = msm.structure.translate(
     translation=puw.quantity([[[2, 1, 3]]], 'nm'), in_place=False,
 )
 
-rigid = RigidPoseSearch(query, max_trials=10000)
+rigid = RigidPoseSearch(query, search_method="seeded_hit", max_trials=10000)
 pose = rigid.evaluate(prepared, structure_index=1, chemical_state='structure')
 assert pose['status'] == 'matched' and pose['fit_value'] == 1
 assert pose['alignment'] is not None
 
-screen = ConformerScreening(query, max_trials=10000)
+screen = ConformerScreening(query, search_method="seeded_hit", max_trials=10000)
 result = screen.evaluate(
     prepared, structure_indices=[1, 0], chemical_state='structure', pose_id='ligand',
 )
@@ -57,9 +60,11 @@ assert [entry['conformer_index'] for entry in result['conformers']] == [1, 0]
 json.dumps(result, allow_nan=False)
 ```
 
-Hits rank before negatives, then weighted coverage ranks within each status.
+The explicit seed-only method assigns `ranking_score=1` to fitted hits and zero
+to completed negatives. Partial `fit_value` remains pose evidence. It does not
+break molecular ranking ties.
 Exact ties retain the first requested frame: both frames achieve unit coverage
-above, so `[1, 0]` chooses frame 1. RMSD does not break coverage ties.
+above, so `[1, 0]` chooses frame 1. RMSD does not break binary ties.
 
 ## Request a ranked hit list explicitly
 
@@ -71,7 +76,8 @@ The prepared inputs and query from the preceding block can be reused:
 from pharmacophoremt.screening import VirtualScreening
 
 library = [prepared, prepared]
-facade = VirtualScreening(query, screening_method='conformers', max_trials=10000)
+facade = VirtualScreening(query, screening_method='conformers',
+                          search_method='seeded_hit', max_trials=10000)
 hits = facade.run(library, structure_indices=[1, 0], chemical_state='structure')
 assert [hit['input_index'] for hit in hits] == [0, 1]
 assert [hit['conf_id'] for hit in hits] == [1, 1]
@@ -79,7 +85,7 @@ assert all(hit['fit_value'] == 1 for hit in hits)
 assert hits[0]['mol'] is prepared
 assert len(facade.evaluations) == 2
 assert list(facade.to_dataframe().columns) == [
-    'rank', 'input_index', 'fit_value', 'conf_id', 'status',
+    'rank', 'input_index', 'ranking_score', 'score_method', 'fit_value', 'conf_id', 'status',
 ]
 json.dumps(facade.evaluations, allow_nan=False)
 ```
@@ -102,7 +108,7 @@ MolSysMT #219. See [the full transition contract](https://github.com/uibcdf/phar
 
 The best pose fields appear at the top level. `assignments` records matched
 sites and atom participants; `alignment` records the fit correspondence, RMSD,
-provider and fitted coordinates. When the original placement wins,
+provider and fitted coordinates. In the compatibility method, when the original placement wins,
 `alignment=None`, and `pose_coordinates` still retains that pose.
 
 Coordinates are sealed PyUnitWizard QuantityRecords in the order given by
@@ -122,6 +128,18 @@ and failures in requested order. Each `conformer_index` is the source
 `structure_index`, not a new index after filtering. `ensemble` reports requested,
 evaluated and failed counts, completeness and whether the molecule score is
 resolved. Molecular source systems remain unchanged.
+
+For an explicit seed-only negative with no fitted seed, `pose_evaluated=False`,
+`fit_value=None` and `pose_coordinates=None`; it still has molecular score zero.
+A failed calculation remains unscored. Read saved native evidence without
+performing molecular work:
+
+```python
+from pharmacophoremt.screening import get_screening_score
+
+saved = json.loads(json.dumps(result))
+assert get_screening_score(saved, score_method='seeded_hit') == 1
+```
 
 ## Choose frames and chemical states
 
@@ -156,14 +174,15 @@ assert all(entry['status'] == 'matched' for entry in records)
 Default errors raise immediately. With `on_error='record'`, remaining frames are
 attempted and each failed frame retains its diagnostic code, cause and stage.
 `max_trials` is a triplet-product budget **per frame**, including pruned products.
-A truncated search fails unless a valid unit-fit hit proves maximal coverage.
+In seed-only binary mode, a truncated search fails unless a fitted admissible
+hit proves maximum binary score one; optional coverage need not be one.
 
 If any frame fails without that proven maximum, the molecule has
 `status='failed'`, `fit_value=None` and `best_conformer_index=None`. Its
 `best_observed` retains the best successful partial pose, or `None` if all frames
 failed. It must not be ranked as a definitive score or counted as a negative.
 
-A valid unit-fit hit resolves the score even if another frame fails. Those
+A valid fitted-seed hit resolves the binary score even if another frame fails. Those
 failures remain visible and `ensemble.complete=False`. Unit coverage on a pose
 rejected by exclusions or essential criteria does not prove this maximum.
 All requested frames succeeding without a hit give a complete negative for

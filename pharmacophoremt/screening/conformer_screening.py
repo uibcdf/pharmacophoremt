@@ -13,6 +13,7 @@ from pharmacophoremt._private.smonitor.exceptions import (
     PoseEvaluationError,
 )
 from pharmacophoremt.screening.rigid_search import RigidPoseSearch
+from pharmacophoremt.screening.scoring import get_screening_score
 
 
 class ConformerScreening:
@@ -30,6 +31,11 @@ class ConformerScreening:
         Donor-H and aromatic-axis tolerance.
     min_fit_value : float, default=0.0
         Minimum weighted coverage for a hit.
+    search_method : {'placed_and_triplets', 'seeded_hit'}
+        Compatibility checked-pose search, or explicit seed-only binary molecular
+        ranking. In seeded_hit mode every negative ties at zero; the first hit
+        proves maximum ranking_score even with incomplete enumeration/failed
+        other frames. A non-hit with failed frames remains unscored.
 
     Notes
     -----
@@ -56,6 +62,7 @@ class ConformerScreening:
         point_tolerance="0.10 nm",
         direction_tolerance="30 degrees",
         min_fit_value=0.0,
+        search_method="placed_and_triplets",
     ):
         self.search = RigidPoseSearch(
             pharmacophore,
@@ -63,7 +70,10 @@ class ConformerScreening:
             point_tolerance=point_tolerance,
             direction_tolerance=direction_tolerance,
             min_fit_value=min_fit_value,
+            search_method=search_method,
         )
+        self.search_method = self.search.search_method
+        self.score_method = self.search.score_method
 
     @signal(tags=["screening", "conformers", "evaluate"])
     @arg_digest()
@@ -128,6 +138,13 @@ class ConformerScreening:
                 pose_id=pose_id, stage="frames", reason=str(error)
             ) from error
 
+        def rank(entry):
+            return (
+                get_screening_score(entry, score_method="seeded_hit")
+                if self.score_method
+                else entry["fit_value"]
+            )
+
         records, best = [], None
         for frame in frames:
             stage = "chemical_state"
@@ -178,15 +195,19 @@ class ConformerScreening:
                 stage = "pose_record"
                 alignment = result["alignment"]
                 coordinates = (
-                    alignment["aligned_atom_coordinates"]
-                    if alignment is not None
-                    else detached(
-                        get(
-                            molecular_system,
-                            element="atom",
-                            selection=result["selected_atom_indices"],
-                            structure_indices=[frame],
-                            coordinates=True,
+                    None
+                    if result.get("pose_evaluated") is False
+                    else (
+                        alignment["aligned_atom_coordinates"]
+                        if alignment is not None
+                        else detached(
+                            get(
+                                molecular_system,
+                                element="atom",
+                                selection=result["selected_atom_indices"],
+                                structure_indices=[frame],
+                                coordinates=True,
+                            )
                         )
                     )
                 )
@@ -209,16 +230,19 @@ class ConformerScreening:
                 resolved_chemical_state_index=resolved_state,
             )
             records.append(record)
+
             if record["status"] != "failed" and (
                 best is None
-                or (record["status"] == "matched", record["fit_value"])
-                > (best["status"] == "matched", best["fit_value"])
+                or (record["status"] == "matched", rank(record))
+                > (best["status"] == "matched", rank(best))
             ):
                 best = record
 
         failures = [record for record in records if record["status"] == "failed"]
         proven_maximum = (
-            best is not None and best["status"] == "matched" and best["fit_value"] == 1
+            best is not None
+            and best["status"] == "matched"
+            and (self.score_method == "seeded_hit" or best["fit_value"] == 1)
         )
         resolved = best is not None and (not failures or proven_maximum)
         if resolved:
@@ -231,12 +255,19 @@ class ConformerScreening:
             result.pop("structure_index")
             result.pop("resolved_chemical_state_index")
             result["best_observed"] = deepcopy(best)
+        if self.score_method:
+            result["ranking_score"] = (
+                1.0 if proven_maximum else 0.0 if resolved else None
+            )
+            result["score_method"] = "seeded_hit@1"
         return dict(
             result,
             best_conformer_index=best["conformer_index"] if resolved else None,
             conformers=records,
             ensemble=dict(
-                method="prepared_conformer_rigid_search@1",
+                method="prepared_conformer_seed_hit@1"
+                if self.score_method
+                else "prepared_conformer_rigid_search@1",
                 structure_indices=frames,
                 n_requested=len(frames),
                 n_evaluated=len(records) - len(failures),
@@ -244,7 +275,12 @@ class ConformerScreening:
                 complete=not failures,
                 score_resolved=resolved,
                 proven_maximum=proven_maximum,
-                ranking="hit_then_coverage_first_requested_tie",
+                ranking="seeded_hit_first_requested_tie"
+                if self.score_method
+                else "hit_then_coverage_first_requested_tie",
+                maximum_scope="binary_hit"
+                if self.score_method
+                else "checked_pose_coverage",
             ),
         )
 

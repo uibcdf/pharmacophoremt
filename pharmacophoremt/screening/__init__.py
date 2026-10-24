@@ -21,4 +21,5 @@ from .rigid_refinement import (
     refine_rigid_feature_correspondences as refine_rigid_feature_correspondences,
 )
 from .rigid_search import RigidPoseSearch as RigidPoseSearch
+from .scoring import get_screening_score as get_screening_score
 from .virtual_screening import VirtualScreening as VirtualScreening

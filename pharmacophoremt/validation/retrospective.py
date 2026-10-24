@@ -10,6 +10,7 @@ from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
     PoseEvaluationError,
 )
+from pharmacophoremt.screening.scoring import _resolve_score_method, get_screening_score
 from pharmacophoremt.validation.metrics import bedroc, enrichment_factor, roc_auc
 
 
@@ -27,11 +28,17 @@ class RetrospectiveValidator:
         Evaluate placed poses or search prepared rigid ligands/conformers.
         The tool's hit criteria apply.
         Required explicit tool. No molecular preparation or legacy fallback.
+    score_method : {'checked_pose_coverage', 'seeded_hit'} or None
+        Placed evaluation defaults to checked coverage; a seed-only tool selects
+        its declared binary criterion. Legacy rigid/conformer partial coverage
+        requires explicit checked_pose_coverage consent and is not frame invariant.
     """
 
     @signal(tags=["validation", "retrospective", "init"])
     @arg_digest()
-    def __init__(self, pharmacophore, min_match_ratio=1.0, *, evaluator=None):
+    def __init__(
+        self, pharmacophore, min_match_ratio=1.0, *, evaluator=None, score_method=None
+    ):
         try:
             self.min_match_ratio = float(min_match_ratio)
         except (TypeError, ValueError) as error:
@@ -59,6 +66,7 @@ class RetrospectiveValidator:
             )
         self.pharmacophore = pharmacophore
         self.evaluator = evaluator
+        self.score_method = _resolve_score_method(evaluator, score_method)
 
     @signal(tags=["validation", "retrospective", "run"])
     @arg_digest()
@@ -82,6 +90,9 @@ class RetrospectiveValidator:
         evaluated indices, original class counts and failure counts. A batch
         with no evaluable inputs raises. Single-class AUC/BEDROC remain NaN.
         Additional options apply only to the native evaluator/search tool.
+        Scores follow score_method, never an implicit substitution of coverage
+        for a molecular score. Valid seed-only negatives may have fit_value=None
+        because no pose was fitted; their binary score is zero, not a failure.
         """
         if on_error not in {"raise", "record"}:
             raise ArgumentError(
@@ -107,11 +118,18 @@ class RetrospectiveValidator:
                 argument="dataset", reason="no successfully evaluated inputs"
             )
         indices = np.array([entry["input_index"] for entry in valid], dtype=int)
-        scores = np.array([entry["fit_value"] for entry in valid], dtype=float)
+        scores = np.array(
+            [
+                get_screening_score(entry, score_method=self.score_method)
+                for entry in valid
+            ],
+            dtype=float,
+        )
         labels = true_labels[indices]
         hits = [entry["status"] == "matched" for entry in valid]
         report = dict(
             n_actives=len(actives),
+            score_method=self.score_method + "@1",
             n_decoys=len(decoys),
             n_evaluated=len(valid),
             n_failed=len(failures),

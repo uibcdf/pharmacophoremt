@@ -1,5 +1,11 @@
 # Prepared-ligand rigid search
 
+**#63 molecular ranking:** choose `search_method='seeded_hit'` for the new
+seed-only binary criterion, described in [its contract](seeded_ranking_workflow.md).
+The `rigid_triplet_fit@1` sections below describe the direct compatibility default
+`placed_and_triplets`; ranking its pose coverage now requires explicit
+`score_method='checked_pose_coverage'` in the facade/retrospective consumers.
+
 The native classical slice tracked in `uibcdf/pharmacophoremt#15` adds rigid
 correspondence search to the [reference-ligand workflow](reference_ligand_workflow.md).
 It composes independently usable tools: chemical extraction, correspondence
@@ -112,7 +118,8 @@ assert result['status'] == 'matched' and result['fit_value'] == 1
 
 reflected = msm.copy(source)
 msm.set(reflected, coordinates=puw.quantity([coordinates * [1, 1, -1]], 'nm'))
-report = RetrospectiveValidator(query, evaluator=search).run(
+report = RetrospectiveValidator(query, evaluator=search,
+                               score_method='checked_pose_coverage').run(
     [displaced], [reflected],
 )
 assert report['AUC'] == report['BEDROC'] == 1
