@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import hashlib
 import importlib.util
 import io
 import json
@@ -21,6 +22,94 @@ spec.loader.exec_module(driver)
 
 
 class TestEsr1ConsensusTraining(unittest.TestCase):
+    def test_archived_stop_preserves_sources_without_consensus_or_evaluation(self):
+        spec = importlib.util.spec_from_file_location(
+            "training_evidence_reader", ROOT / "phmt_test_support/evidence_archive.py"
+        )
+        reader = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(reader)
+        path = ROOT / "devguide/evidence/esr1_consensus_training_20261024_summary.json"
+        summary, run = reader.read_archived_evidence(path)
+        self.assertEqual(
+            run["producer"]["git_head"], "5242ca63eb239aaecb95ae782304dbeca7b53135"
+        )
+        self.assertEqual(run["producer"]["dirty"], "")
+        self.assertTrue(run["producer_stable"])
+        self.assertEqual(run["producer"]["versions"]["molsysmt"], "0.23.0")
+        self.assertEqual(len(run["producer"]["conda_records"]), 325)
+        self.assertEqual(run["declaration"]["sha256"], driver.DECLARATION_SHA256)
+        self.assertEqual(run["outcome"]["status"], "stopped")
+        self.assertEqual(run["outcome"]["stage"], "preparation")
+        self.assertFalse(run["outcome"]["evaluation_opened"])
+        self.assertIsNone(run["consensus"])
+        self.assertIsNone(run["selected"])
+        self.assertEqual(run["training_readiness"], [])
+        inputs = ROOT / summary["original_inputs"]
+        acquired = json.loads((inputs / "acquisition.json").read_text())
+        self.assertEqual(
+            hashlib.sha256((inputs / "acquisition.json").read_bytes()).hexdigest(),
+            run["acquisition"]["sha256"],
+        )
+        expected = [
+            e for e in driver.declaration()["cohort"] if e["role"] == "training"
+        ]
+        self.assertEqual(
+            [r["cid"] for r in run["records"]], [e["cid"] for e in expected]
+        )
+        self.assertEqual(
+            [r["cid"] for r in acquired["records"]], [e["cid"] for e in expected]
+        )
+        self.assertFalse(acquired["evaluation_acquired"])
+        for record in acquired["records"]:
+            acquisition = record["acquisition"]
+            identity = (
+                acquisition
+                if acquisition["status"] == "completed"
+                else acquisition["response"]
+            )
+            self.assertEqual(
+                driver.pilot.identity(inputs / identity["file"]),
+                {k: identity[k] for k in ("file", "sha256", "byte_count")},
+            )
+        records = {r["cid"]: r for r in run["records"]}
+        for cid, counts, features in (
+            ("31477", (49, 49), {"hb donor": 2, "hb acceptor": 5, "aromatic ring": 1}),
+            ("6293", (26, 28), {"hb donor": 2, "hb acceptor": 4, "aromatic ring": 2}),
+        ):
+            prepared = records[cid]["preparation"]
+            self.assertEqual(prepared["status"], "completed")
+            self.assertTrue(all(prepared["checks"].values()))
+            self.assertEqual(
+                (prepared["counts"]["n_atoms"], prepared["counts"]["n_bonds"]), counts
+            )
+            self.assertEqual(prepared["counts"]["n_structures"], 1)
+            self.assertEqual(prepared["feature_counts"], features)
+            self.assertLess(prepared["coordinate_rmsd_nm"], 1e-12)
+        failed = records["24633"]
+        self.assertEqual(failed["acquisition"]["http_status"], 404)
+        self.assertEqual(failed["preparation"]["status"], "failed")
+        self.assertIn("acquisition failed", failed["preparation"]["message"])
+        self.assertFalse((inputs / "CID24633.sdf").exists())
+        self.assertEqual(len(run["attribution"]["items"]), 12)
+        self.assertEqual(len(run["attribution"]["uses"]), 14)
+        ids = {i["id"] for i in run["attribution"]["items"]}
+        self.assertTrue(
+            {"phmt:dataset:pubchem-3d:31477", "phmt:dataset:pubchem-3d:6293"} <= ids
+        )
+        self.assertNotIn("phmt:dataset:pubchem-3d:24633", ids)
+        self.assertTrue(all("10.1107/S0567739476001873" not in i for i in ids))
+        for key in (
+            "execution_log",
+            "acquisition_log",
+            "cleanup_evidence",
+            "environment_creation_evidence",
+        ):
+            reader.read_archived_bytes(path, identity_key=key)
+        _, qualification = reader.read_archived_evidence(
+            path, identity_key="qualification_evidence"
+        )
+        self.assertEqual(qualification["source_commit"], run["producer"]["git_head"])
+
     def test_only_three_frozen_training_requests_and_original_failure_are_retained(
         self,
     ):

@@ -29,14 +29,21 @@ model choice and stop rules before new structures/scores. It excludes the entire
 prior Bath CID population and conflicting assay CIDs. This remains a same-assay,
 CID-only split, with molecular/series independence unqualified.
 
-Next, acquire/prepare only the three training structures, execute the declared
-consensus and commit the selected valid query and original training evidence
-before opening evaluation. Failure preserves the outcome and leaves evaluation
-unopened; it cannot trigger replacement or method tuning. Molecular identity/
-scaffold overlap capability is proposed in MolSysMT #447 rather than implemented
-here. Receive newer molecular providers separately under #41; conformer and
-stereo capabilities remain MolSysMT responsibilities. A graded molecular
-partial-match optimum is not implemented.
+The [original training attempt](../docs/content/validation/esr1_consensus_comparison.md)
+has now stopped at its declared all-three gate: two supplied SDFs prepare with
+public MolSysMT 0.23.0; CID 24633 returns PubChem 3D HTTP 404. Original inputs,
+full result and actual attribution are retained. No consensus, query or
+evaluation is produced. All 64 evaluation inputs remain unopened; the missing
+input is not inactivity or a MolSysMT failure.
+
+Next, predeclare a distinct training-readiness/candidate policy before acquiring
+new training inputs, retaining the untouched evaluation set and fixed scientific
+parameters. Preserve this terminal original attempt; do not silently replace an
+input or tune on evaluation. Molecular identity/scaffold overlap capability is
+proposed in MolSysMT #447 rather than implemented here. The independent cleanup
+hook diagnostic belongs to MolSysSuite #139. Receive newer molecular providers
+separately under #41; conformer and stereo capabilities remain MolSysMT
+responsibilities. A graded molecular partial-match optimum is not implemented.
 
 This is development source after public 0.4.0, not a new release/package. Current
 public delivery and central follow-ups remain unchanged. New addon work and wider

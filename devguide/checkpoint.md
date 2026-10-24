@@ -1,5 +1,70 @@
 # Development Checkpoint
 
+## Original training attempt stopped — 2026-10-24
+
+**#64's declared training gate has executed and stopped honestly.** Clean source
+`5242ca63eb239aaecb95ae782304dbeca7b53135` acquires only the three fixed training
+inputs: PubChem supplies SDFs for 31477 and 6293, but 24633 returns HTTP 404
+`PUGREST.NotFound`. Both available systems prepare successfully with public
+MolSysMT 0.23.0 and pass every byte/state/atom/stereo/coordinate preservation
+check. This is an unavailable acquisition, not a MolSysMT rejection or inactivity.
+
+The all-three requirement stops this attempt at `stage='preparation'`.
+**No consensus call, selected query, readiness score or evaluation exists.**
+All 64 reserved evaluation CIDs remain without acquired structures or scores.
+Do not replace CID 24633, relax parameters or assign a missing input a negative
+score. The original declaration and original prior #62/#63 outputs remain intact.
+
+The [summary](evidence/esr1_consensus_training_20261024_summary.json) qualifies
+the full original output (raw SHA-256
+`98f8320431c0b12397729f69034623cc80b41c8ca973e76915d79605443c6df6`),
+execution/acquisition logs, environment creation, qualification and cleanup.
+Both original SDFs, the 82-byte 404 and acquisition receipt are retained in
+`tests/data/esr1_consensus_comparison/training_20261024/`, with a scoped notice.
+The [case](../docs/content/validation/esr1_consensus_comparison.md) states the
+measured preparation counts, zero evaluation denominator and actual 12-item /
+14-use Ackredit payload without unexecuted consensus/screening credit.
+
+Linux/Python 3.14.9 uses the same explicit 325-package public provider set as
+the prior seeded replay, with exact editable source installed after provisioning.
+Actual PHMT metadata `0.4.0+13.g5242ca6`, module origins, all source/native hashes
+and unchanged before/after producer audit are retained. This is not a new public
+package. All 51 selected rigid-consensus/scoring controls pass; 232 historical
+public MolSysMT Pandas warnings remain recorded. A separate exposed-reference
+control reproduces archived counts/features/states/RMSD after sharing the prior
+preparation orchestration. No full scientific suite is rerun for this case-only
+change or new hosted/installed matrix inferred.
+Closeout passes 43 administrative/documentation tests plus 24 subtests, including
+the archived-stop guard and strict Sphinx; three reporting tests, whole-tree
+Ruff, generated-index and whitespace checks pass.
+
+The owned environment is retired; raw responses/logs remain under the recorded
+owned `/tmp/phmt64-training-20261024-SxBHSJ` root and are portable in the archives.
+Retirement reports native success and removes its prefix, but the OpenCL hook
+attempts a shared active-prefix path; the file is absent and deletion fails.
+The original mixed log/JSON receipt is retained and routed to
+[MolSysSuite #139](https://github.com/uibcdf/molsyssuite/issues/139). Do not treat
+native cleanup success as proof of hook scope or infer a root cause. No shared
+repair/global-cache cleanup is attempted; molecular results are unaffected.
+
+Previously pending `b4565a15d211b162acff6be88e7c68620a4386ba` now receives CI
+40129944533 with reporting and all eight Linux/macOS Python 3.11–3.14 science
+jobs successful; their actual dependency-context/install/import/test steps are
+verified natively. Policy 40129944770 and Conda governance 40129944824 succeed.
+Declaration head `d53654fad6a448105f26d344f6c99bc306988e23` CI 40132174230 is
+still running, with policy 40132174354 and Conda governance 40132174378 green.
+These do not qualify the final training/archive head; follow #9 for its own
+native receiving, including Documentation when available.
+
+**Next:** #64 remains partial because no discrimination comparison was possible.
+The original attempt is terminal under its frozen declaration. Predeclare a
+distinct attempt with a bounded training-candidate/readiness policy before any
+new acquisition, preserving the still-unopened evaluation cohort and scientific
+method parameters. Readiness must use provider-owned molecular operations; do
+not silently substitute an input, generate conformers locally or tune against
+evaluation. MolSysMT #447 remains a separate molecular-overlap proposal and is
+not the cause of this stop. New addon/release infrastructure stays deferred.
+
 ## Training-only comparison declared — 2026-10-24
 
 The next scientific segment is [#64](pending_proposals/esr1_consensus_comparison.md).

@@ -1,0 +1,71 @@
+{
+  "schema": "pharmacophoremt.esr1_consensus_training_acquisition@1",
+  "issue": 64,
+  "acquired_at": "2026-10-24T21:05:55.709459+00:00",
+  "declaration": {
+    "file": "declaration.json",
+    "sha256": "a1a476e7e94fd3480ee3845fbc5cca138221c4052eb7165a254499fd526ff647",
+    "byte_count": 27373
+  },
+  "producer": {
+    "git_head": "5242ca63eb239aaecb95ae782304dbeca7b53135",
+    "dirty": "",
+    "driver": {
+      "file": "esr1_consensus_training.py",
+      "sha256": "0361ffeaf23a1f8b9a9856525578d75d53dc8fe8b1df338e97311ca79772447c",
+      "byte_count": 15385
+    }
+  },
+  "records": [
+    {
+      "cid": "31477",
+      "sid": "144205272",
+      "label": 1,
+      "role": "training",
+      "assay_outcome": "Active",
+      "selection_hash": "009f9ce6f792ee1a57c9a54428be5bbf913a0e8333e1e227d84e1134e9e4eab6",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/31477/SDF?record_type=3d",
+      "acquisition": {
+        "status": "completed",
+        "file": "CID31477.sdf",
+        "sha256": "8125b817a88277b50b0be0618ab127000e4259730956b468637f079f8c623e69",
+        "byte_count": 8542
+      }
+    },
+    {
+      "cid": "24633",
+      "sid": "144209427",
+      "label": 1,
+      "role": "training",
+      "assay_outcome": "Active",
+      "selection_hash": "00bd1c307696a8046a5198dc533251b7a6a675e295783f32d5b77e4dd5b12170",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/24633/SDF?record_type=3d",
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID24633.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "6293",
+      "sid": "144205039",
+      "label": 1,
+      "role": "training",
+      "assay_outcome": "Active",
+      "selection_hash": "01c77866cc9b45961bb32eecbbdac981ed69b49bcb300cfd5be0594a3176be8f",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6293/SDF?record_type=3d",
+      "acquisition": {
+        "status": "completed",
+        "file": "CID6293.sdf",
+        "sha256": "57255b3e8ac08cd5b15f42f83d0cf2aade3d78e744639b643b0b7087438861cd",
+        "byte_count": 5127
+      }
+    }
+  ],
+  "evaluation_acquired": false,
+  "scope": "unchanged PubChem computed 3D training responses; no replacement or molecular interpretation"
+}

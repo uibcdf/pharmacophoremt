@@ -6,7 +6,7 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, modeling, mvp]
-guard: devtools/tests/test_esr1_consensus_declaration.py::TestEsr1ConsensusDeclaration::test_frozen_declaration_reconstructs_original_sources_and_excludes_exposed_cids
+guard: devtools/tests/test_esr1_consensus_training.py::TestEsr1ConsensusTraining::test_archived_stop_preserves_sources_without_consensus_or_evaluation
 normative: devguide/esr1_consensus_comparison.md
 blocked_by: []
 supersedes: []
@@ -86,3 +86,53 @@ and common-subset denominators, independent metric/accounting guards, exact
 runtime/source provenance, actual attribution and portable original outputs.
 No new result is claimed by the declaration. Keep this issue partial for those
 scientific execution stages; addon and release infrastructure remain deferred.
+
+## Original training attempt — 2026-10-24
+
+Clean producer `5242ca63eb239aaecb95ae782304dbeca7b53135` executed the training
+stage against the unchanged declaration. PubChem returned SDFs for CIDs 31477
+and 6293, and HTTP 404 `PUGREST.NotFound` for CID 24633. Both available systems
+prepare successfully under public MolSysMT 0.23.0, passing every original-byte,
+state, atom-identity, stereo and coordinate preservation check. The third input
+is unavailable because acquisition failed; this is not a MolSysMT rejection.
+
+The predeclared all-three prerequisite stops this attempt at preparation.
+No consensus is attempted, no new query/readiness score is produced, and no
+structure or score from the 64 reserved evaluation CIDs is acquired/computed.
+Do not infer inactivity or unsuccessful consensus from absent input data.
+No input or method is replaced, relaxed or tuned.
+
+The [summary](../evidence/esr1_consensus_training_20261024_summary.json) qualifies
+the full original run, execution/acquisition logs, native environment creation,
+qualification and cleanup receipts. The [raw training inputs and notice](../../tests/data/esr1_consensus_comparison/training_20261024/NOTICE.md)
+retain both SDFs and the original 82-byte error. The
+[case](../../docs/content/validation/esr1_consensus_comparison.md) reports the
+measured preparation counts and honest zero evaluation denominator. Actual
+source/runtime hashes remain stable, with all 325 provisioned Conda records;
+the editable PHMT version is `0.4.0+13.g5242ca6`, not a new public package.
+The actual attribution contains 12 items / 14 uses for reached branches only.
+
+All 51 selected rigid-consensus/scoring controls pass; 232 historical public
+MolSysMT Pandas warnings remain in the original log. The exposed original
+reference additionally reproduces archived counts/features/states/RMSD through
+the shared preparation orchestration. This is not a new full hosted matrix or
+a scientific timing benchmark. The owned environment is retired after capture;
+no global cache cleanup or shared-environment repair is performed.
+Closeout passes 43 administrative/documentation tests and 24 subtests, including
+the archived-stop guard and strict Sphinx, plus three reporting tests, whole-tree
+Ruff and index/whitespace checks. Those administrative checks do not rerun the
+scientific workload or qualify a new full hosted matrix.
+
+Retirement reports native success and removes the owned prefix, but its OpenCL
+unlink hook attempts an active shared-prefix path. That target is absent and
+the deletion fails. Original mixed text/JSON output is retained; root cause
+and shared-tooling follow-up belong to
+[MolSysSuite #139](https://github.com/uibcdf/molsyssuite/issues/139), not PHMT
+molecular code or this availability result.
+
+This original attempt is terminal under its declaration. The broader comparison
+issue remains partial because no discrimination comparison exists. **Next:**
+declare a distinct training-readiness policy/attempt before acquiring any new
+training candidate or using provider-owned conformation capabilities; preserve
+this stop and keep evaluation unopened. It must not silently replace CID 24633
+or rerun this declaration against refreshed source responses as if unchanged.

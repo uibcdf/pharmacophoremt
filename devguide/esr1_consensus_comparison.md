@@ -129,3 +129,17 @@ This driver has no evaluation acquisition/scoring mode.
 
 Deeper docs, addon and release work remain deferred. Original #62/#63 outputs
 stay immutable; new measurements require separate run identities.
+
+## Measured original attempt — 2026-10-24
+
+The [training summary](evidence/esr1_consensus_training_20261024_summary.json)
+retains an executed stop at preparation. CID 24633 returns PubChem 3D HTTP 404;
+31477 and 6293 prepare and pass all preservation controls with public MolSysMT
+0.23.0. No consensus, new query, readiness screening or evaluation is executed.
+The [case](../docs/content/validation/esr1_consensus_comparison.md) and owning
+report qualify original inputs, all outcomes, versions and actual attribution.
+
+This is the predeclared stop, not permission to replace an input or relax the
+all-three rule. The 64 evaluation inputs remain unopened. A new attempt requires
+a separately frozen training-readiness policy before additional acquisition;
+retain this declaration, original 404 and original full output unchanged.

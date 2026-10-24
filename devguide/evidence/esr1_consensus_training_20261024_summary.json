@@ -1,0 +1,127 @@
+{
+  "schema": "pharmacophoremt.esr1_consensus_training_summary@1",
+  "issue": 64,
+  "measured_at": "2026-10-24T21:10:49.212812+00:00",
+  "producer": {
+    "git_head": "5242ca63eb239aaecb95ae782304dbeca7b53135",
+    "dirty": "",
+    "stable": true,
+    "python": "3.14.9 | packaged by conda-forge | (main, Oct 22 2026, 10:21:21) [GCC 15.3.0]",
+    "versions": {
+      "pharmacophoremt": "0.4.0+13.g5242ca6",
+      "molsysmt": "0.23.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "rdkit": "2026.9.1",
+      "pandas": "3.1.0",
+      "pyunitwizard": "0.29.0",
+      "argdigest": "0.17.0",
+      "smonitor": "0.22.0",
+      "depdigest": "0.15.1",
+      "ackredit": "0.12.1"
+    },
+    "conda_record_count": 325
+  },
+  "declaration": {
+    "file": "declaration.json",
+    "sha256": "a1a476e7e94fd3480ee3845fbc5cca138221c4052eb7165a254499fd526ff647",
+    "byte_count": 27373
+  },
+  "acquisition": {
+    "file": "acquisition.json",
+    "sha256": "29319c6d603266fed1b825595074abce2620d55d2870c1f5b770f88a2268f13d",
+    "byte_count": 2402
+  },
+  "original_inputs": "tests/data/esr1_consensus_comparison/training_20261024",
+  "outcome": {
+    "status": "stopped",
+    "stage": "preparation",
+    "evaluation_opened": false,
+    "message": "not all three training inputs prepared; no consensus or evaluation"
+  },
+  "counts": {
+    "training_inputs": 3,
+    "acquired_3d": 2,
+    "acquisition_failed": 1,
+    "prepared": 2,
+    "preparation_failed_or_unavailable": 1,
+    "consensus_attempted": 0,
+    "queries_produced": 0,
+    "evaluation_inputs_reserved": 64,
+    "evaluation_inputs_acquired": 0,
+    "evaluation_inputs_scored": 0
+  },
+  "full_evidence": {
+    "path": "esr1_consensus_training_20261024.json.gz",
+    "compressed_sha256": "c09601c6989ddc57dc29a6778fdc84121d1c51cb828fadf04458082682c5f1b9",
+    "compressed_bytes": 176361,
+    "uncompressed_sha256": "98f8320431c0b12397729f69034623cc80b41c8ca973e76915d79605443c6df6",
+    "uncompressed_bytes": 716213
+  },
+  "execution_log": {
+    "path": "esr1_consensus_training_20261024.log.gz",
+    "compressed_sha256": "2cadd46348dc9f8339abe7a50a69cb5a806c3f2f747d275b81babcc0986b84f7",
+    "compressed_bytes": 397,
+    "uncompressed_sha256": "4e691fde758c69cd7b7601df1e75c37eb0525ed0a2a13df35e13ddfc12867c0d",
+    "uncompressed_bytes": 692
+  },
+  "acquisition_log": {
+    "path": "esr1_consensus_training_20261024_acquisition.log.gz",
+    "compressed_sha256": "edb041ea7ad9c3608ee959bcc8d772248848616f523e2f5d55b3206d96324a78",
+    "compressed_bytes": 81,
+    "uncompressed_sha256": "45db4e9a8b881459ff0ad54127a08dac47167f5b0427718d93c7e1afe0b795c7",
+    "uncompressed_bytes": 113
+  },
+  "environment_creation_evidence": {
+    "path": "esr1_consensus_training_20261024_environment.json.gz",
+    "compressed_sha256": "b60d7351f4bebb057a6132ff7acddaec0fbde87d0d8c0924dbcea14c6ee24c44",
+    "compressed_bytes": 26250,
+    "uncompressed_sha256": "635eef52444ea56fc0756919d4cbde943edfd0956a1316ef5e20a03fe181c18c",
+    "uncompressed_bytes": 257390
+  },
+  "attribution": {
+    "items": 12,
+    "uses": 14,
+    "scope": "actual preparation/data/software branches only; no consensus/fit/readiness/evaluation branch"
+  },
+  "source_identity": "clean source 5242ca63eb239aaecb95ae782304dbeca7b53135, not a new public package; the base Conda PHMT 0.4.0 record is overwritten by editable source",
+  "scope": "terminal stopped attempt under the original declaration: missing PubChem 3D input, not molecular inactivity or a MolSysMT failure; no replacement, consensus, new query or held-out evaluation",
+  "temporary_resources": {
+    "owner": "PharmacophoreMT #64 training 2026-10-24",
+    "root": "/tmp/phmt64-training-20261024-SxBHSJ",
+    "environment": "/tmp/phmt64-training-20261024-SxBHSJ/environment",
+    "status": "retired",
+    "original_responses_and_logs_retained": true,
+    "shared_cache_cleanup": false,
+    "cache_route": "Mamba default package cache; no global cache cleanup",
+    "environment_exists_after_cleanup": false,
+    "native_cleanup_success": true,
+    "native_unlink_records": 325,
+    "cleanup_diagnostic": "OpenCL unlink hook attempted an active shared-prefix path; target absent, deletion failed; separate shared-tooling issue; root cause unverified",
+    "shared_environment_repair_attempted": false,
+    "cleanup_diagnostic_issue": "uibcdf/molsyssuite#139",
+    "external_unlink_success": false
+  },
+  "qualification_evidence": {
+    "path": "esr1_consensus_training_20261024_qualification.json.gz",
+    "compressed_sha256": "fac851b7ee2dda42422cf30da9482ee34df9504038c30e327211820a0a5d18b2",
+    "compressed_bytes": 1934,
+    "uncompressed_sha256": "8a9184fd93836f4f2b9bb01122b7658cd4d3cfd5e1f3c41a8479ab1bfec92dfe",
+    "uncompressed_bytes": 4607
+  },
+  "cleanup_evidence": {
+    "path": "esr1_consensus_training_20261024_cleanup.log.gz",
+    "compressed_sha256": "bcdf730b9396784c9d74306df8a2ff22121e5a80830e599beb830fd1d57b38ad",
+    "compressed_bytes": 48749,
+    "uncompressed_sha256": "b49804e295e7d6d9f897ce7c5036913828db6c822c2385c7f903c7bcb09b5d8a",
+    "uncompressed_bytes": 360242
+  },
+  "closeout_verification": {
+    "administrative_and_documentation": "43 passed; 24 subtests passed, including strict Sphinx and archived-stop guard",
+    "reporting": "3 passed",
+    "ruff": "whole repository passed",
+    "report_index": "current",
+    "scientific_rerun_scope": "51 selected controls in qualified public-provider environment; no new full suite",
+    "environment_retired": true
+  }
+}
