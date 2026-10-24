@@ -30,6 +30,61 @@ reader = load_file("esr1_declaration_reader", "phmt_test_support/evidence_archiv
 
 
 class TestEsr1ConsensusDeclaration(unittest.TestCase):
+    def test_readiness_attempt_preserves_evaluation_methods_and_bounded_candidate_order(
+        self,
+    ):
+        readiness = load_file(
+            "readiness_declaration",
+            "phmt_test_support/esr1_consensus_readiness_declaration.py",
+        )
+        original = json.loads(driver.OUTPUT.read_text())
+        path = (
+            ROOT / "devguide/evidence/esr1_activity_pilot_inputs_20261023_summary.json"
+        )
+        _, raw = reader.read_archived_bytes(path)
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp)
+            with tarfile.open(fileobj=io.BytesIO(raw)) as archive:
+                for name in (
+                    "ESR1ago.tar.gz",
+                    "aid743075_concise.csv",
+                    "aid743075_description.json",
+                ):
+                    (directory / name).write_bytes(archive.extractfile(name).read())
+            protocol = readiness.build_declaration(directory)
+        self.assertEqual(protocol, json.loads(readiness.OUTPUT.read_text()))
+        self.assertEqual(
+            [e for e in protocol["cohort"] if e["role"] == "evaluation"],
+            [e for e in original["cohort"] if e["role"] == "evaluation"],
+        )
+        candidates = [
+            e for e in protocol["cohort"] if e["role"] == "training_candidate"
+        ]
+        self.assertEqual(
+            [e["cid"] for e in candidates],
+            [
+                "31477",
+                "24633",
+                "6293",
+                "9818306",
+                "123504",
+                "5857",
+                "443831",
+                "13765",
+                "6422843",
+                "17701",
+                "6327657",
+                "70400",
+            ],
+        )
+        self.assertEqual(len({e["cid"] for e in protocol["cohort"]}), 76)
+        for key in ("baseline", "screening", "comparison", "preparation", "sources"):
+            self.assertEqual(protocol[key], original[key])
+        for key in ("parameters", "selection", "tool"):
+            self.assertEqual(protocol["consensus"][key], original["consensus"][key])
+        self.assertEqual(protocol["training_readiness"]["candidate_cap"], 12)
+        self.assertEqual(protocol["training_readiness"]["required_inputs"], 3)
+
     def test_frozen_declaration_reconstructs_original_sources_and_excludes_exposed_cids(
         self,
     ):

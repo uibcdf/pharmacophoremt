@@ -22,6 +22,60 @@ spec.loader.exec_module(driver)
 
 
 class TestEsr1ConsensusTraining(unittest.TestCase):
+    def test_readiness_acquisition_reuses_three_originals_and_never_requests_evaluation(
+        self,
+    ):
+        path = ROOT / "tests/data/esr1_consensus_comparison/readiness_declaration.json"
+        protocol = driver.declaration(path)
+        prior_ids = {"31477", "24633", "6293"}
+        expected_urls = [
+            e["url"]
+            for e in driver.training_entries(protocol)
+            if e["cid"] not in prior_ids
+        ]
+        calls = []
+
+        def fetch(url, target):
+            calls.append(url)
+            target.write_bytes(b"new opaque training response")
+
+        with tempfile.TemporaryDirectory() as tmp:
+            directory = Path(tmp) / "pool"
+            with (
+                patch.object(driver.pilot, "fetch", side_effect=fetch),
+                patch.object(driver.time, "sleep"),
+            ):
+                receipt = driver.acquire_training(directory, path)
+            self.assertEqual(calls, expected_urls)
+            self.assertEqual(len(calls), 9)
+            self.assertEqual(len(receipt["records"]), 12)
+            self.assertEqual(receipt["records"][1]["acquisition"]["http_status"], 404)
+            self.assertFalse((directory / "CID24633.sdf").exists())
+            self.assertEqual(driver.validate_acquisition(directory, protocol), receipt)
+            receipt["records"][1]["acquisition"]["http_status"] = 503
+            (directory / "acquisition.json").write_text(json.dumps(receipt))
+            with self.assertRaises(ValueError):
+                driver.validate_acquisition(directory, protocol)
+        records = [
+            dict(cid="a", preparation=dict(status="failed")),
+            dict(cid="b", preparation=dict(status="completed", feature_counts={})),
+            dict(
+                cid="c",
+                preparation=dict(
+                    status="completed", feature_counts={"aromatic ring": 1}
+                ),
+            ),
+            dict(cid="d", preparation=dict(status="completed", feature_counts={})),
+            dict(
+                cid="e",
+                preparation=dict(
+                    status="completed", feature_counts={"aromatic ring": 99}
+                ),
+            ),
+        ]
+        self.assertEqual(driver.choose_training_ids(records), ["b", "c", "d"])
+        self.assertEqual(driver.choose_training_ids(records[:2]), ["b"])
+
     def test_archived_stop_preserves_sources_without_consensus_or_evaluation(self):
         spec = importlib.util.spec_from_file_location(
             "training_evidence_reader", ROOT / "phmt_test_support/evidence_archive.py"

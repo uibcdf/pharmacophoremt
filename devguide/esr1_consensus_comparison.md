@@ -143,3 +143,51 @@ This is the predeclared stop, not permission to replace an input or relax the
 all-three rule. The 64 evaluation inputs remain unopened. A new attempt requires
 a separately frozen training-readiness policy before additional acquisition;
 retain this declaration, original 404 and original full output unchanged.
+
+## Attempt 2: bounded training readiness — declared 2026-10-24
+
+The separate [readiness declaration](../tests/data/esr1_consensus_comparison/readiness_declaration.json)
+preserves the original attempt and its terminal stop. Its SHA-256 is
+`b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e`.
+It reuses the exact original 64 evaluation records, baseline query, preparation
+route, consensus parameters/model ordering, screening and comparison criteria.
+No evaluation structures or scores have been examined.
+
+The fixed candidate pool contains 12 training-only actives in the existing hash
+order: original first three, followed by active positions 19:28 (zero-based),
+skipping all 16 reserved evaluation actives. CIDs are 31477, 24633, 6293,
+9818306, 123504, 5857, 443831, 13765, 6422843, 17701, 6327657 and 70400.
+The original three acquisition responses are reused without refresh, including
+the known 404. Only the other nine are requested, once each. The known original
+training observations are exposed development evidence, not fresh validation.
+
+Prepare and retain every candidate using the same public MolSysMT route and
+preservation checks. Eligibility requires completed acquisition and successful
+preparation/feature-inventory operation; it has no minimum feature-count,
+geometry, pharmacophore-support, similarity or screening-score threshold.
+Select the first three eligible candidates in the declared order **before**
+consensus. Their first member is the fixed pivot. Do not test another trio,
+pivot, model, budget or threshold if consensus or selected-query readiness fails.
+Fewer than three eligible inputs also stops the attempt. The pool cannot expand.
+
+This conditions training on public-input availability/provider readiness, rather
+than treating the original missing CID as replaceable within attempt 1. It does
+not filter or replace evaluation inputs; their failures will remain unscored.
+All candidates, failures, selected identities and full consensus alternatives
+must be retained. A valid query and complete training evidence must still be
+committed before evaluation opens.
+
+Reproduce the new declaration from the same original source directory with
+`phmt_test_support/esr1_consensus_readiness_declaration.py --source-dir <sources>
+--output <new-json>`. It verifies attempt 1's original declaration, source bytes
+and retained acquisition identity and refuses output overwrite. The existing
+training runner supports the second frozen declaration explicitly:
+
+```bash
+python phmt_test_support/esr1_consensus_training.py \
+  --declaration tests/data/esr1_consensus_comparison/readiness_declaration.json \
+  --data-dir /tmp/esr1-readiness-inputs --acquire
+/tmp/esr1-training-env/bin/python phmt_test_support/esr1_consensus_training.py \
+  --declaration tests/data/esr1_consensus_comparison/readiness_declaration.json \
+  --data-dir /tmp/esr1-readiness-inputs --output /tmp/esr1-readiness-run.json
+```

@@ -12,6 +12,7 @@ import importlib.metadata
 import importlib.util
 import json
 import platform
+import shutil
 import subprocess
 import sys
 import time
@@ -23,6 +24,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 DECLARATION = ROOT / "tests/data/esr1_consensus_comparison/declaration.json"
 DECLARATION_SHA256 = "a1a476e7e94fd3480ee3845fbc5cca138221c4052eb7165a254499fd526ff647"
+READINESS_DECLARATION_SHA256 = (
+    "b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e"
+)
 spec = importlib.util.spec_from_file_location(
     "esr1_training_pilot_support", Path(__file__).with_name("esr1_activity_pilot.py")
 )
@@ -31,9 +35,22 @@ spec.loader.exec_module(pilot)
 
 
 def declaration(path=DECLARATION):
-    if pilot.digest(path.read_bytes()) != DECLARATION_SHA256:
-        raise ValueError("training requires the original committed #64 declaration")
+    if pilot.digest(path.read_bytes()) not in {
+        DECLARATION_SHA256,
+        READINESS_DECLARATION_SHA256,
+    }:
+        raise ValueError("training requires a frozen committed #64 declaration")
     return json.loads(path.read_text())
+
+
+def training_entries(protocol):
+    role = "training_candidate" if "training_readiness" in protocol else "training"
+    return [e for e in protocol["cohort"] if e["role"] == role]
+
+
+def choose_training_ids(records):
+    """Fixed case sampling: preparation success only, never scores/features."""
+    return [r["cid"] for r in records if r["preparation"]["status"] == "completed"][:3]
 
 
 def git(*args):
@@ -43,13 +60,40 @@ def git(*args):
 
 
 def acquire_training(directory, declaration_path=DECLARATION):
-    """Acquire exactly the three declared training responses, without retries."""
+    """Acquire fixed training entries; attempt 2 reuses original responses."""
     protocol = declaration(declaration_path)
-    entries = [e for e in protocol["cohort"] if e["role"] == "training"]
+    entries = training_entries(protocol)
+    retained = {}
+    if "training_readiness" in protocol:
+        policy = protocol["training_readiness"]
+        prior_path = ROOT / policy["prior_acquisition_path"]
+        if pilot.digest(prior_path.read_bytes()) != policy["prior_acquisition_sha256"]:
+            raise ValueError("original training receipt changed")
+        retained = {e["cid"]: e for e in json.loads(prior_path.read_text())["records"]}
     directory.mkdir(parents=True, exist_ok=False)
     records = []
     for entry in entries:
         record = dict(entry)
+        if entry["cid"] in retained:
+            acquired = retained[entry["cid"]]["acquisition"]
+            identity = (
+                acquired if acquired["status"] == "completed" else acquired["response"]
+            )
+            source = prior_path.parent / identity["file"]
+            if pilot.identity(source) != {
+                k: identity[k] for k in ("file", "sha256", "byte_count")
+            }:
+                raise ValueError("original response changed; do not refresh")
+            shutil.copyfile(source, directory / identity["file"])
+            record.update(
+                acquisition=acquired, acquisition_origin="retained_original_response"
+            )
+            records.append(record)
+            print(
+                f"retained training CID {entry['cid']}: {acquired['status']}",
+                flush=True,
+            )
+            continue
         path = directory / f"CID{entry['cid']}.sdf"
         try:
             pilot.fetch(entry["url"], path)
@@ -75,7 +119,9 @@ def acquire_training(directory, declaration_path=DECLARATION):
         )
         time.sleep(0.25)
     receipt = dict(
-        schema="pharmacophoremt.esr1_consensus_training_acquisition@1",
+        schema="pharmacophoremt.esr1_consensus_training_acquisition@2"
+        if retained
+        else "pharmacophoremt.esr1_consensus_training_acquisition@1",
         issue=64,
         acquired_at=datetime.now(timezone.utc).isoformat(),
         declaration=pilot.identity(declaration_path),
@@ -94,18 +140,33 @@ def acquire_training(directory, declaration_path=DECLARATION):
 
 def validate_acquisition(directory, protocol):
     receipt = json.loads((directory / "acquisition.json").read_text())
-    expected = [e for e in protocol["cohort"] if e["role"] == "training"]
+    expected = training_entries(protocol)
+    version = 2 if "training_readiness" in protocol else 1
+    expected_sha = READINESS_DECLARATION_SHA256 if version == 2 else DECLARATION_SHA256
     if (
-        receipt.get("schema") != "pharmacophoremt.esr1_consensus_training_acquisition@1"
-        or receipt["declaration"]["sha256"] != DECLARATION_SHA256
+        receipt.get("schema")
+        != f"pharmacophoremt.esr1_consensus_training_acquisition@{version}"
+        or receipt["declaration"]["sha256"] != expected_sha
         or receipt.get("evaluation_acquired") is not False
         or len(receipt["records"]) != len(expected)
     ):
         raise ValueError("invalid frozen training acquisition")
+    retained = {}
+    if version == 2:
+        policy = protocol["training_readiness"]
+        prior_path = ROOT / policy["prior_acquisition_path"]
+        if pilot.digest(prior_path.read_bytes()) != policy["prior_acquisition_sha256"]:
+            raise ValueError("original training receipt changed")
+        retained = {
+            e["cid"]: e["acquisition"]
+            for e in json.loads(prior_path.read_text())["records"]
+        }
     for record, entry in zip(receipt["records"], expected, strict=True):
         if any(record[key] != value for key, value in entry.items()):
             raise ValueError("training acquisition substituted a declared input")
         acquired = record["acquisition"]
+        if entry["cid"] in retained and acquired != retained[entry["cid"]]:
+            raise ValueError("original response identity replaced; do not refresh")
         identity = (
             acquired if acquired["status"] == "completed" else acquired.get("response")
         )
@@ -226,7 +287,7 @@ def execute(directory, output, declaration_path=DECLARATION):
             "phmt:dataset:aid743075",
             roles=["input_data"],
             context={
-                "scope": "three predeclared training actives; no evaluation scores"
+                "scope": "predeclared training inputs/candidates; no evaluation scores"
             },
         )
         for entry in acquisition["records"]:
@@ -274,13 +335,14 @@ def execute(directory, output, declaration_path=DECLARATION):
                 f"prepared training CID {entry['cid']}: {record['preparation']['status']}",
                 flush=True,
             )
-        if len(systems) == 3:
+        selected_training_ids = choose_training_ids(records)
+        if len(selected_training_ids) == 3:
             outcome["stage"] = "consensus"
             try:
                 result = from_rigid_ligands(
                     [
-                        dict(ligand_id=e["cid"], molecular_system=systems[e["cid"]])
-                        for e in acquisition["records"]
+                        dict(ligand_id=cid, molecular_system=systems[cid])
+                        for cid in selected_training_ids
                     ],
                     **protocol["consensus"]["parameters"],
                 )
@@ -319,11 +381,11 @@ def execute(directory, output, declaration_path=DECLARATION):
                         )
                     },
                 )
-                for entry in acquisition["records"]:
-                    evaluation = search.evaluate(systems[entry["cid"]])
+                for cid in selected_training_ids:
+                    evaluation = search.evaluate(systems[cid])
                     readiness.append(
                         dict(
-                            cid=entry["cid"],
+                            cid=cid,
                             evaluation=evaluation,
                             ranking_score=get_screening_score(
                                 evaluation, score_method="seeded_hit"
@@ -344,7 +406,7 @@ def execute(directory, output, declaration_path=DECLARATION):
                 outcome.update(status="ready", stage="training_complete")
         else:
             outcome["message"] = (
-                "not all three training inputs prepared; no consensus or evaluation"
+                "fewer than three eligible training inputs; no consensus or evaluation"
             )
     final_producer = producer(phmt, msm)
     stable = initial_producer == final_producer
@@ -355,7 +417,9 @@ def execute(directory, output, declaration_path=DECLARATION):
             message="source/runtime changed during training; not qualified",
         )
     run = dict(
-        schema="pharmacophoremt.esr1_consensus_training_run@1",
+        schema="pharmacophoremt.esr1_consensus_training_run@2"
+        if "training_readiness" in protocol
+        else "pharmacophoremt.esr1_consensus_training_run@1",
         issue=64,
         measured_at=datetime.now(timezone.utc).isoformat(),
         producer=initial_producer,
@@ -364,6 +428,7 @@ def execute(directory, output, declaration_path=DECLARATION):
         declaration=pilot.identity(declaration_path),
         acquisition=pilot.identity(directory / "acquisition.json"),
         records=records,
+        selected_training_cids=selected_training_ids,
         consensus=consensus,
         selected=selected,
         training_readiness=readiness,

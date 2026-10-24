@@ -23,8 +23,8 @@ PREFIX = "phmt-esr1-consensus-comparison-v1:"
 FEATURES = ["hb donor", "hb acceptor", "aromatic ring"]
 
 
-def select_cohort(assay_rows, excluded_cids):
-    """Select IDs by declared labels/hash; no chemical equivalence is inferred."""
+def _ordered_population(assay_rows, excluded_cids):
+    """Read the case's eligible external-ID population without molecular inference."""
     by_cid = defaultdict(list)
     for row in assay_rows:
         if row["CID"]:
@@ -47,6 +47,12 @@ def select_cohort(assay_rows, excluded_cids):
         )
         for label, cids in groups.items()
     }
+    return by_cid, ordered, len(ambiguous)
+
+
+def select_cohort(assay_rows, excluded_cids):
+    """Select IDs by declared labels/hash; no chemical equivalence is inferred."""
+    by_cid, ordered, ambiguous_count = _ordered_population(assay_rows, excluded_cids)
     if len(ordered["Active"]) < 19 or len(ordered["Inactive"]) < 48:
         raise ValueError("insufficient unambiguous new CIDs; do not substitute")
     cohort = []
@@ -71,25 +77,15 @@ def select_cohort(assay_rows, excluded_cids):
         population=dict(
             assay_rows=len(assay_rows),
             assay_unique_cids=len(by_cid),
-            all_ambiguous_cids=len(ambiguous),
+            all_ambiguous_cids=ambiguous_count,
             excluded_bath_cids=len(excluded_cids),
             eligible_counts={label: len(cids) for label, cids in ordered.items()},
         ),
     )
 
 
-def build_declaration(directory):
-    """Verify original source bytes, then reproduce the pre-score declaration."""
-    original = json.loads(
-        (
-            ROOT / "devguide/evidence/esr1_activity_pilot_20261023_summary.json"
-        ).read_text()
-    )
-    if (
-        hashlib.sha256(MANIFEST.read_bytes()).hexdigest()
-        != original["manifest"]["sha256"]
-    ):
-        raise ValueError("original input manifest identity changed")
+def _source_population(directory):
+    """Reuse verified original response bytes; never reacquire a refreshed source."""
     manifest = json.loads(MANIFEST.read_text())
     sources = {key: manifest[key] for key in ("source", "assay", "assay_description")}
     payloads = {}
@@ -109,6 +105,22 @@ def build_declaration(directory):
     assay = list(csv.DictReader(io.StringIO(payloads["assay"].decode())))
     if any(row["AID"] != "743075" for row in assay):
         raise ValueError("unexpected assay identity")
+    return sources, assay, excluded
+
+
+def build_declaration(directory):
+    """Verify original source bytes, then reproduce the pre-score declaration."""
+    original = json.loads(
+        (
+            ROOT / "devguide/evidence/esr1_activity_pilot_20261023_summary.json"
+        ).read_text()
+    )
+    if (
+        hashlib.sha256(MANIFEST.read_bytes()).hexdigest()
+        != original["manifest"]["sha256"]
+    ):
+        raise ValueError("original input manifest identity changed")
+    sources, assay, excluded = _source_population(directory)
     selection = select_cohort(assay, excluded)
     return dict(
         schema="pharmacophoremt.esr1_consensus_comparison_declaration@1",

@@ -1,5 +1,33 @@
 # Development Checkpoint
 
+## Second training attempt predeclared — 2026-10-24
+
+The [new declaration](../tests/data/esr1_consensus_comparison/readiness_declaration.json)
+fixes a 12-candidate training pool and provider-readiness policy under #64.
+SHA-256 `b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e`.
+It preserves the original 64 evaluation entries, baseline query, molecular
+preparation route, native consensus/scoring parameters and model selection.
+
+Reuse all three original acquisition responses exactly, including the 404;
+request only the other nine predeclared candidates. Prepare all 12 with public
+MolSysMT and retain failures. Select the first three successful preparations
+in fixed order, without feature-count, geometry, support or score thresholds.
+No alternate trio/pivot/model or increased budget follows failure. A valid
+selected query and full training receipt must be committed before evaluation
+acquisition/scoring. Attempt 1 remains terminal and its files are unchanged.
+
+The [protocol](esr1_consensus_comparison.md)
+links commands, source identity, cap and stop rules. The existing runner accepts
+the two frozen declarations explicitly and checks original response reuse.
+New guards protect unchanged evaluation/methods, the fixed candidate order,
+exactly nine new requests, retained failures and score-free eligibility.
+All 45 administrative/documentation tests plus 24 subtests, three reporting
+tests, strict Sphinx, whole-tree Ruff and generated-index checks pass.
+
+Next is executing only this new training stage in the same exact public-provider
+environment, then archiving its measured outcome. Evaluation remains unopened;
+this declaration itself produces no molecular/scoring result.
+
 ## Original training attempt stopped — 2026-10-24
 
 **#64's declared training gate has executed and stopped honestly.** Clean source

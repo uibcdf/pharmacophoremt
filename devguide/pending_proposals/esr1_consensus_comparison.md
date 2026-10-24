@@ -136,3 +136,25 @@ declare a distinct training-readiness policy/attempt before acquiring any new
 training candidate or using provider-owned conformation capabilities; preserve
 this stop and keep evaluation unopened. It must not silently replace CID 24633
 or rerun this declaration against refreshed source responses as if unchanged.
+
+## Second declaration — 2026-10-24
+
+A separate [bounded-readiness declaration](../../tests/data/esr1_consensus_comparison/readiness_declaration.json)
+freezes 12 training candidates before any new acquisition: original three plus
+the next nine eligible actives outside the reserved evaluation cohort. All
+original evaluation records, scientific parameters, model choice and comparison
+criteria stay identical. Original responses are reused exactly, including the
+404; only nine new URLs may be requested.
+
+Every candidate's MolSysMT preparation is retained. The first three successfully
+prepared candidates are chosen in fixed order without feature-count/geometry/
+score filtering. No alternate trio/pivot/model or expanded pool follows a failed
+consensus/readiness result. This is an explicit new sampling policy and run,
+not silent replacement in the original stopped attempt. It does not open or
+condition the evaluation set on availability.
+
+New offline guards reconstruct the bounded pool and unchanged methods/evaluation,
+exercise original-response reuse and exactly nine new requests, and ensure
+first-success selection cannot rank candidates by feature count. The original
+declaration/archive guards remain active. No new molecular routine or backend
+is added; existing public APIs and case orchestration are reused.

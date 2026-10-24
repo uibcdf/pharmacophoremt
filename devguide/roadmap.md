@@ -36,10 +36,17 @@ full result and actual attribution are retained. No consensus, query or
 evaluation is produced. All 64 evaluation inputs remain unopened; the missing
 input is not inactivity or a MolSysMT failure.
 
-Next, predeclare a distinct training-readiness/candidate policy before acquiring
-new training inputs, retaining the untouched evaluation set and fixed scientific
-parameters. Preserve this terminal original attempt; do not silently replace an
-input or tune on evaluation. Molecular identity/scaffold overlap capability is
+The separate [second declaration](../tests/data/esr1_consensus_comparison/readiness_declaration.json)
+now fixes a 12-candidate training pool before any new acquisition, preserving
+the original 64 evaluation entries and all scientific parameters. Reuse the
+original three response identities, including the 404; acquire only the other
+nine and prepare all candidates with MolSysMT. Select the first three successful
+preparations in fixed order without feature-count/geometry/score filtering.
+
+Next, execute only this new training stage and commit full original evidence
+and a valid selected query before opening evaluation. No alternate trio, pivot,
+model, expanded pool or budget increase follows failure. Preserve the original
+stopped attempt and do not tune on evaluation. Molecular identity/scaffold overlap capability is
 proposed in MolSysMT #447 rather than implemented here. The independent cleanup
 hook diagnostic belongs to MolSysSuite #139. Receive newer molecular providers
 separately under #41; conformer and stereo capabilities remain MolSysMT
