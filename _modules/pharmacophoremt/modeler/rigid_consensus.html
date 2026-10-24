@@ -1,0 +1,903 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>pharmacophoremt.modeler.rigid_consensus – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pharmacophoremt/modeler/rigid_consensus';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt.modeler.rigid_consensus</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pharmacophoremt.modeler.rigid_consensus</h1><div class="highlight"><pre>
+<span></span><span class="sd">"""Alternative consensus models from prepared, rigid, unaligned ligand frames."""</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">copy</span><span class="w"> </span><span class="kn">import</span> <span class="n">deepcopy</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">itertools</span><span class="w"> </span><span class="kn">import</span> <span class="n">product</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">math</span><span class="w"> </span><span class="kn">import</span> <span class="n">prod</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">argdigest</span><span class="w"> </span><span class="kn">import</span> <span class="n">arg_digest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">smonitor</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._ackredit</span><span class="w"> </span><span class="kn">import</span> <span class="n">attributed</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.molsysmt</span><span class="w"> </span><span class="kn">import</span> <span class="n">detached</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.smonitor.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">ArgumentError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.pharmacophore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pharmacophore</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">.aligned_cliques</span><span class="w"> </span><span class="kn">import</span> <span class="n">_limit</span><span class="p">,</span> <span class="n">get_aligned_consensus_hypotheses</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.aligned_consensus</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">_records</span><span class="p">,</span>
+    <span class="n">_site_from_consensus</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">CLASSICAL_FEATURES</span><span class="p">,</span> <span class="n">get_features</span>
+
+<span class="n">METHOD</span> <span class="o">=</span> <span class="s2">"pivot_rigid_clique_consensus@1"</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_inventory</span><span class="p">(</span><span class="n">ligand</span><span class="p">,</span> <span class="n">features</span><span class="p">,</span> <span class="n">molecular_system</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
+    <span class="k">return</span> <span class="n">get_features</span><span class="p">(</span>
+        <span class="n">ligand</span><span class="p">[</span><span class="s2">"molecular_system"</span><span class="p">]</span> <span class="k">if</span> <span class="n">molecular_system</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">molecular_system</span><span class="p">,</span>
+        <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"selection"</span><span class="p">,</span> <span class="s2">"all"</span><span class="p">),</span>
+        <span class="n">structure_index</span><span class="o">=</span><span class="n">ligand</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"structure_index"</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+        <span class="n">chemical_state</span><span class="o">=</span><span class="n">ligand</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"chemical_state"</span><span class="p">,</span> <span class="s2">"reference"</span><span class="p">),</span>
+        <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
+    <span class="p">)</span>
+
+
+<div class="viewcode-block" id="from_rigid_ligands">
+<a class="viewcode-back" href="../../../pharmacophoremt.modeler.html#pharmacophoremt.modeler.rigid_consensus.from_rigid_ligands">[docs]</a>
+<span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"modeling"</span><span class="p">,</span> <span class="s2">"consensus"</span><span class="p">,</span> <span class="s2">"rigid"</span><span class="p">])</span>
+<span class="nd">@arg_digest</span><span class="p">()</span>
+<span class="nd">@attributed</span><span class="p">(</span><span class="s2">"numpy"</span><span class="p">,</span> <span class="s2">"molsysmt"</span><span class="p">,</span> <span class="s2">"pyunitwizard"</span><span class="p">,</span> <span class="n">model_results</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">from_rigid_ligands</span><span class="p">(</span>
+    <span class="n">ligands</span><span class="p">,</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">reference_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+    <span class="n">correspondence_strategy</span><span class="o">=</span><span class="s2">"association_cliques"</span><span class="p">,</span>
+    <span class="n">n_seeds</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">refinement_strategy</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="n">orientation_policy</span><span class="o">=</span><span class="s2">"final"</span><span class="p">,</span>
+    <span class="n">features</span><span class="o">=</span><span class="n">CLASSICAL_FEATURES</span><span class="p">,</span>
+    <span class="n">min_matches</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span>
+    <span class="n">min_support</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span>
+    <span class="n">min_sites</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">distance_tolerance</span><span class="o">=</span><span class="s2">"0.15 nm"</span><span class="p">,</span>
+    <span class="n">direction_tolerance</span><span class="o">=</span><span class="s2">"30 degrees"</span><span class="p">,</span>
+    <span class="n">radius</span><span class="o">=</span><span class="s2">"0.15 nm"</span><span class="p">,</span>
+    <span class="n">max_graph_nodes</span><span class="o">=</span><span class="mi">64</span><span class="p">,</span>
+    <span class="n">max_cliques</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+    <span class="n">max_trials</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
+    <span class="n">max_fits</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+    <span class="n">max_layouts</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+    <span class="n">max_combinations</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
+    <span class="n">max_matrix_entries</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span>
+    <span class="n">name</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Align prepared ligand frames to a pivot and retain consensus alternatives.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    ligands : sequence of dict</span>
+<span class="sd">        At least two unique ligand_id/molecular_system records, optionally with</span>
+<span class="sd">        selection, structure_index and chemical_state. One prepared frame each.</span>
+<span class="sd">    reference_index : int, default=0</span>
+<span class="sd">        Explicit pivot; it must have three non-collinear classical centers.</span>
+<span class="sd">    correspondence_strategy : str, default='association_cliques'</span>
+<span class="sd">        Proposal family: 'association_cliques', 'triplet_seeds' or</span>
+<span class="sd">        'ranked_triplet_seeds' (G3PS seed stage only).</span>
+<span class="sd">    n_seeds : int or None</span>
+<span class="sd">        Scientific guess limit for ranked_triplet_seeds. None retains all;</span>
+<span class="sd">        finite values may miss valid placements. Other families reject it.</span>
+<span class="sd">    refinement_strategy : {None, 'greedy'}, default=None</span>
+<span class="sd">        None fits supplied proposals once. greedy grows each proposal through the</span>
+<span class="sd">        public refinement tool and retains its best fully evaluated placement.</span>
+<span class="sd">    orientation_policy : {'final', 'each_step'}, default='final'</span>
+<span class="sd">        Angular growth policy when refinement is greedy. Both validate final</span>
+<span class="sd">        matching completely. each_step without refinement raises.</span>
+<span class="sd">    features : sequence of str</span>
+<span class="sd">        Classical chemical families obtained with MolSysMT-supported extraction.</span>
+<span class="sd">    min_matches : int, default=3</span>
+<span class="sd">        Minimum final injective pivot-feature matches, at least three. A smaller</span>
+<span class="sd">        seed may grow before meeting this requirement when refinement is selected.</span>
+<span class="sd">    min_support, min_sites : int</span>
+<span class="sd">        Common-ligand support and minimum sites in emitted consensus hypotheses.</span>
+<span class="sd">    distance_tolerance, direction_tolerance : quantities</span>
+<span class="sd">        Post-fit pivot displacement/orientation and aligned clique criteria.</span>
+<span class="sd">    radius : length quantity</span>
+<span class="sd">        Shape radius for emitted models, independent of discovery tolerance.</span>
+<span class="sd">    max_graph_nodes, max_cliques : int</span>
+<span class="sd">        Bounds per association graph and per aligned layout graph/enumeration.</span>
+<span class="sd">    max_trials : int</span>
+<span class="sd">        Triplet candidate-product bound per source ligand.</span>
+<span class="sd">    max_fits, max_layouts : int</span>
+<span class="sd">        Total attempted fits and Cartesian product of accepted placements.</span>
+<span class="sd">    max_combinations : int</span>
+<span class="sd">        Consensus candidate-extension bound per layout.</span>
+<span class="sd">    max_matrix_entries : int</span>
+<span class="sd">        Bound on the post-fit pivot assignment matrix, including dummy columns.</span>
+<span class="sd">    name : str, optional</span>
+<span class="sd">        Model name prefix.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        Native models, detached sources/placements/layouts report, complete=True.</span>
+<span class="sd">        Unplaced ligands retain their place in support denominators. Failed</span>
+<span class="sd">        providers or exhausted resources raise; they are not scientific negatives.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    All fitting and molecular transformation use MolSysMT through the existing</span>
+<span class="sd">    align_to_pharmacophore tool. Every seed pair must satisfy absolute center and</span>
+<span class="sd">    orientation criteria after fitting, and an injective full-inventory matching</span>
+<span class="sd">    must meet min_matches. All accepted proposal placements are retained, even</span>
+<span class="sd">    when different proposals give identical geometry. No optimum-coverage early</span>
+<span class="sd">    stop is applied. Completion concerns the chosen pivot/proposal family and</span>
+<span class="sd">    maximal aligned hypotheses, not all continuous or flexible alignments. A</span>
+<span class="sd">    ligand lacking a direct pivot placement contributes no sites in any layout.</span>
+<span class="sd">    Chemical preparation, conformer generation and global multiple alignment are</span>
+<span class="sd">    separate operations. Original molecular systems are never changed.</span>
+<span class="sd">    With greedy refinement, its declared growth policy replaces ordinary seed</span>
+<span class="sd">    acceptance: final checks orientation in final matching, each_step also checks</span>
+<span class="sd">    every fitted anchor during growth. Both retain their best fully evaluated</span>
+<span class="sd">    accepted state. All initial/trial fits count against the global allowance.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; result = from_rigid_ligands([{'ligand_id':'a', 'molecular_system':a}, {'ligand_id':'b', 'molecular_system':b}])</span>
+<span class="sd">    &gt;&gt;&gt; alternatives = result['models']</span>
+<span class="sd">    """</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.rigid_correspondence</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+        <span class="n">get_rigid_feature_correspondences</span><span class="p">,</span>
+    <span class="p">)</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.rigid_placements</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_rigid_feature_placements</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.rigid_refinement</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+        <span class="n">refine_rigid_feature_correspondences</span><span class="p">,</span>
+    <span class="p">)</span>
+
+    <span class="k">if</span> <span class="p">(</span>
+        <span class="n">reference_index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">ligands</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="n">min_support</span> <span class="o">&gt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">ligands</span><span class="p">)</span>
+        <span class="ow">or</span> <span class="ow">not</span> <span class="nb">set</span><span class="p">(</span><span class="n">features</span><span class="p">)</span> <span class="o">&lt;=</span> <span class="nb">set</span><span class="p">(</span><span class="n">CLASSICAL_FEATURES</span><span class="p">)</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"reference_index/min_support/features"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"require an existing pivot, attainable support and classical families"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="k">if</span> <span class="n">n_seeds</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">correspondence_strategy</span> <span class="o">!=</span> <span class="s2">"ranked_triplet_seeds"</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span><span class="n">argument</span><span class="o">=</span><span class="s2">"n_seeds"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">"requires ranked_triplet_seeds"</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">refinement_strategy</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">and</span> <span class="n">orientation_policy</span> <span class="o">!=</span> <span class="s2">"final"</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"orientation_policy"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">"each_step requires greedy refinement"</span>
+        <span class="p">)</span>
+    <span class="n">inventories</span> <span class="o">=</span> <span class="p">[</span><span class="n">_inventory</span><span class="p">(</span><span class="n">ligand</span><span class="p">,</span> <span class="n">features</span><span class="p">)</span> <span class="k">for</span> <span class="n">ligand</span> <span class="ow">in</span> <span class="n">ligands</span><span class="p">]</span>
+    <span class="n">pivot</span> <span class="o">=</span> <span class="n">inventories</span><span class="p">[</span><span class="n">reference_index</span><span class="p">]</span>
+    <span class="c1"># Validate the pivot even if other sources have empty inventories.</span>
+    <span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.correspondence</span><span class="w"> </span><span class="kn">import</span> <span class="n">_noncollinear</span>
+
+    <span class="n">reference_records</span> <span class="o">=</span> <span class="n">_records</span><span class="p">(</span><span class="n">pivot</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">reference_records</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">3</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">_noncollinear</span><span class="p">(</span>
+        <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">r</span><span class="p">[</span><span class="s2">"center"</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">reference_records</span><span class="p">])</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"reference_index"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"pivot requires three non-collinear feature centers"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">placements</span><span class="p">,</span> <span class="n">source_reports</span><span class="p">,</span> <span class="n">n_fits</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="p">(</span><span class="n">ligand</span><span class="p">,</span> <span class="n">inventory</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="nb">zip</span><span class="p">(</span><span class="n">ligands</span><span class="p">,</span> <span class="n">inventories</span><span class="p">)):</span>
+        <span class="n">options</span><span class="p">,</span> <span class="n">rejected</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+        <span class="n">proposals</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="n">refinement</span> <span class="o">=</span> <span class="kc">None</span>
+        <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="n">reference_index</span><span class="p">:</span>
+            <span class="n">options</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+                <span class="nb">dict</span><span class="p">(</span><span class="n">inventory</span><span class="o">=</span><span class="n">inventory</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="s2">"pivot_identity@1"</span><span class="p">))</span>
+            <span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">proposals</span> <span class="o">=</span> <span class="n">get_rigid_feature_correspondences</span><span class="p">(</span>
+                <span class="n">pivot</span><span class="p">,</span>
+                <span class="n">inventory</span><span class="p">,</span>
+                <span class="n">correspondence_strategy</span><span class="o">=</span><span class="n">correspondence_strategy</span><span class="p">,</span>
+                <span class="n">distance_tolerance</span><span class="o">=</span><span class="n">distance_tolerance</span><span class="p">,</span>
+                <span class="n">min_matches</span><span class="o">=</span><span class="n">min_matches</span><span class="p">,</span>
+                <span class="n">max_graph_nodes</span><span class="o">=</span><span class="n">max_graph_nodes</span><span class="p">,</span>
+                <span class="n">max_cliques</span><span class="o">=</span><span class="n">max_cliques</span><span class="p">,</span>
+                <span class="n">max_trials</span><span class="o">=</span><span class="n">max_trials</span><span class="p">,</span>
+                <span class="n">n_seeds</span><span class="o">=</span><span class="n">n_seeds</span><span class="p">,</span>
+                <span class="n">max_matrix_entries</span><span class="o">=</span><span class="n">max_matrix_entries</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">mappings</span> <span class="o">=</span> <span class="n">proposals</span><span class="p">[</span><span class="s2">"correspondences"</span><span class="p">]</span>
+            <span class="n">_limit</span><span class="p">(</span>
+                <span class="s2">"rigid_alignment"</span><span class="p">,</span> <span class="s2">"scheduled fits"</span><span class="p">,</span> <span class="n">n_fits</span> <span class="o">+</span> <span class="nb">len</span><span class="p">(</span><span class="n">mappings</span><span class="p">),</span> <span class="n">max_fits</span>
+            <span class="p">)</span>
+            <span class="n">placement_tool</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="n">get_rigid_feature_placements</span>
+                <span class="k">if</span> <span class="n">refinement_strategy</span> <span class="ow">is</span> <span class="kc">None</span>
+                <span class="k">else</span> <span class="n">refine_rigid_feature_correspondences</span>
+            <span class="p">)</span>
+            <span class="n">refinement_options</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="p">{}</span>
+                <span class="k">if</span> <span class="n">refinement_strategy</span> <span class="ow">is</span> <span class="kc">None</span>
+                <span class="k">else</span> <span class="nb">dict</span><span class="p">(</span><span class="n">orientation_policy</span><span class="o">=</span><span class="n">orientation_policy</span><span class="p">)</span>
+            <span class="p">)</span>
+            <span class="n">fitted</span> <span class="o">=</span> <span class="n">placement_tool</span><span class="p">(</span>
+                <span class="n">ligand</span><span class="p">[</span><span class="s2">"molecular_system"</span><span class="p">],</span>
+                <span class="n">pivot</span><span class="p">,</span>
+                <span class="n">mappings</span><span class="p">,</span>
+                <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"selection"</span><span class="p">,</span> <span class="s2">"all"</span><span class="p">),</span>
+                <span class="n">structure_index</span><span class="o">=</span><span class="n">ligand</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"structure_index"</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span>
+                <span class="n">chemical_state</span><span class="o">=</span><span class="n">ligand</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"chemical_state"</span><span class="p">,</span> <span class="s2">"reference"</span><span class="p">),</span>
+                <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
+                <span class="n">feature_inventory</span><span class="o">=</span><span class="n">inventory</span><span class="p">,</span>
+                <span class="n">min_matches</span><span class="o">=</span><span class="n">min_matches</span><span class="p">,</span>
+                <span class="n">distance_tolerance</span><span class="o">=</span><span class="n">distance_tolerance</span><span class="p">,</span>
+                <span class="n">direction_tolerance</span><span class="o">=</span><span class="n">direction_tolerance</span><span class="p">,</span>
+                <span class="n">max_fits</span><span class="o">=</span><span class="nb">max</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">max_fits</span> <span class="o">-</span> <span class="n">n_fits</span><span class="p">),</span>
+                <span class="n">max_matrix_entries</span><span class="o">=</span><span class="n">max_matrix_entries</span><span class="p">,</span>
+                <span class="o">**</span><span class="n">refinement_options</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">n_fits</span> <span class="o">+=</span> <span class="n">fitted</span><span class="p">[</span><span class="s2">"report"</span><span class="p">][</span><span class="s2">"n_fits"</span><span class="p">]</span>
+            <span class="n">options</span> <span class="o">=</span> <span class="p">[</span>
+                <span class="p">{</span>
+                    <span class="n">key</span><span class="p">:</span> <span class="n">value</span>
+                    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">option</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="n">key</span> <span class="o">!=</span> <span class="s2">"molecular_system"</span>
+                <span class="p">}</span>
+                <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">fitted</span><span class="p">[</span><span class="s2">"placements"</span><span class="p">]</span>
+            <span class="p">]</span>
+            <span class="n">rejected</span> <span class="o">=</span> <span class="n">fitted</span><span class="p">[</span><span class="s2">"report"</span><span class="p">][</span><span class="s2">"rejected_placements"</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">refinement_strategy</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+                <span class="n">refinement</span> <span class="o">=</span> <span class="p">{</span>
+                    <span class="n">key</span><span class="p">:</span> <span class="n">value</span>
+                    <span class="k">for</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span> <span class="ow">in</span> <span class="n">fitted</span><span class="p">[</span><span class="s2">"report"</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+                    <span class="k">if</span> <span class="n">key</span>
+                    <span class="ow">not</span> <span class="ow">in</span> <span class="p">{</span>
+                        <span class="s2">"reference_inventory"</span><span class="p">,</span>
+                        <span class="s2">"source_inventory"</span><span class="p">,</span>
+                        <span class="s2">"accepted_placements"</span><span class="p">,</span>
+                        <span class="s2">"rejected_placements"</span><span class="p">,</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+        <span class="n">source_reports</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">ligand_id</span><span class="o">=</span><span class="n">ligand</span><span class="p">[</span><span class="s2">"ligand_id"</span><span class="p">],</span>
+                <span class="n">status</span><span class="o">=</span><span class="s2">"pivot"</span>
+                <span class="k">if</span> <span class="n">index</span> <span class="o">==</span> <span class="n">reference_index</span>
+                <span class="k">else</span> <span class="p">(</span><span class="s2">"placed"</span> <span class="k">if</span> <span class="n">options</span> <span class="k">else</span> <span class="s2">"unplaced"</span><span class="p">),</span>
+                <span class="n">proposals</span><span class="o">=</span><span class="n">proposals</span><span class="p">,</span>
+                <span class="n">accepted_placements</span><span class="o">=</span><span class="n">options</span><span class="p">,</span>
+                <span class="n">rejected_placements</span><span class="o">=</span><span class="n">rejected</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">refinement</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">source_reports</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">"refinement"</span><span class="p">]</span> <span class="o">=</span> <span class="n">refinement</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">options</span><span class="p">:</span>
+            <span class="n">empty</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">inventory</span><span class="p">)</span>
+            <span class="n">empty</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]</span> <span class="o">=</span> <span class="p">[]</span>
+            <span class="n">options</span> <span class="o">=</span> <span class="p">[</span><span class="nb">dict</span><span class="p">(</span><span class="n">inventory</span><span class="o">=</span><span class="n">empty</span><span class="p">,</span> <span class="n">alignment</span><span class="o">=</span><span class="kc">None</span><span class="p">)]</span>
+        <span class="n">placements</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">options</span><span class="p">)</span>
+    <span class="n">n_layouts</span> <span class="o">=</span> <span class="n">prod</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">options</span><span class="p">)</span> <span class="k">for</span> <span class="n">options</span> <span class="ow">in</span> <span class="n">placements</span><span class="p">)</span>
+    <span class="n">_limit</span><span class="p">(</span><span class="s2">"alignment_layouts"</span><span class="p">,</span> <span class="s2">"placement combinations"</span><span class="p">,</span> <span class="n">n_layouts</span><span class="p">,</span> <span class="n">max_layouts</span><span class="p">)</span>
+    <span class="n">models</span><span class="p">,</span> <span class="n">layouts</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[]</span>
+    <span class="n">ligand_ids</span> <span class="o">=</span> <span class="p">[</span><span class="n">ligand</span><span class="p">[</span><span class="s2">"ligand_id"</span><span class="p">]</span> <span class="k">for</span> <span class="n">ligand</span> <span class="ow">in</span> <span class="n">ligands</span><span class="p">]</span>
+    <span class="n">sources</span> <span class="o">=</span> <span class="p">[</span>
+        <span class="nb">dict</span><span class="p">(</span><span class="n">ligand_id</span><span class="o">=</span><span class="n">identity</span><span class="p">,</span> <span class="o">**</span><span class="n">inventory</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">identity</span><span class="p">,</span> <span class="n">inventory</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">ligand_ids</span><span class="p">,</span> <span class="n">inventories</span><span class="p">)</span>
+    <span class="p">]</span>
+    <span class="n">criteria</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+        <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">reference_index</span><span class="o">=</span><span class="n">reference_index</span><span class="p">,</span>
+            <span class="n">reference_ligand_id</span><span class="o">=</span><span class="n">ligand_ids</span><span class="p">[</span><span class="n">reference_index</span><span class="p">],</span>
+            <span class="n">correspondence_strategy</span><span class="o">=</span><span class="n">correspondence_strategy</span><span class="p">,</span>
+            <span class="n">n_seeds</span><span class="o">=</span><span class="n">n_seeds</span><span class="p">,</span>
+            <span class="n">refinement_strategy</span><span class="o">=</span><span class="n">refinement_strategy</span><span class="p">,</span>
+            <span class="n">orientation_policy</span><span class="o">=</span><span class="n">orientation_policy</span>
+            <span class="k">if</span> <span class="n">refinement_strategy</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+            <span class="k">else</span> <span class="kc">None</span><span class="p">,</span>
+            <span class="n">features</span><span class="o">=</span><span class="n">features</span><span class="p">,</span>
+            <span class="n">min_matches</span><span class="o">=</span><span class="n">min_matches</span><span class="p">,</span>
+            <span class="n">min_support</span><span class="o">=</span><span class="n">min_support</span><span class="p">,</span>
+            <span class="n">min_sites</span><span class="o">=</span><span class="n">min_sites</span><span class="p">,</span>
+            <span class="n">distance_tolerance</span><span class="o">=</span><span class="n">distance_tolerance</span><span class="p">,</span>
+            <span class="n">direction_tolerance</span><span class="o">=</span><span class="n">direction_tolerance</span><span class="p">,</span>
+            <span class="n">max_graph_nodes</span><span class="o">=</span><span class="n">max_graph_nodes</span><span class="p">,</span>
+            <span class="n">max_cliques</span><span class="o">=</span><span class="n">max_cliques</span><span class="p">,</span>
+            <span class="n">max_trials</span><span class="o">=</span><span class="n">max_trials</span><span class="p">,</span>
+            <span class="n">max_fits</span><span class="o">=</span><span class="n">max_fits</span><span class="p">,</span>
+            <span class="n">max_layouts</span><span class="o">=</span><span class="n">max_layouts</span><span class="p">,</span>
+            <span class="n">max_combinations</span><span class="o">=</span><span class="n">max_combinations</span><span class="p">,</span>
+            <span class="n">max_matrix_entries</span><span class="o">=</span><span class="n">max_matrix_entries</span><span class="p">,</span>
+            <span class="n">emitted_radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+            <span class="n">completion_scope</span><span class="o">=</span><span class="s2">"declared_pivot_proposals_and_maximal_aligned_hypotheses"</span><span class="p">,</span>
+            <span class="n">duplicate_policy</span><span class="o">=</span><span class="s2">"retain_every_accepted_proposal_placement"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+    <span class="k">for</span> <span class="n">layout_index</span><span class="p">,</span> <span class="n">option_indices</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span>
+        <span class="n">product</span><span class="p">(</span><span class="o">*</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">options</span><span class="p">))</span> <span class="k">for</span> <span class="n">options</span> <span class="ow">in</span> <span class="n">placements</span><span class="p">))</span>
+    <span class="p">):</span>
+        <span class="n">chosen</span> <span class="o">=</span> <span class="p">[</span><span class="n">options</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="k">for</span> <span class="n">options</span><span class="p">,</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">placements</span><span class="p">,</span> <span class="n">option_indices</span><span class="p">)]</span>
+        <span class="n">report</span> <span class="o">=</span> <span class="n">get_aligned_consensus_hypotheses</span><span class="p">(</span>
+            <span class="p">[</span><span class="n">option</span><span class="p">[</span><span class="s2">"inventory"</span><span class="p">]</span> <span class="k">for</span> <span class="n">option</span> <span class="ow">in</span> <span class="n">chosen</span><span class="p">],</span>
+            <span class="n">ligand_ids</span><span class="o">=</span><span class="n">ligand_ids</span><span class="p">,</span>
+            <span class="n">min_support</span><span class="o">=</span><span class="n">min_support</span><span class="p">,</span>
+            <span class="n">min_sites</span><span class="o">=</span><span class="n">min_sites</span><span class="p">,</span>
+            <span class="n">distance_tolerance</span><span class="o">=</span><span class="n">distance_tolerance</span><span class="p">,</span>
+            <span class="n">direction_tolerance</span><span class="o">=</span><span class="n">direction_tolerance</span><span class="p">,</span>
+            <span class="n">max_graph_nodes</span><span class="o">=</span><span class="n">max_graph_nodes</span><span class="p">,</span>
+            <span class="n">max_cliques</span><span class="o">=</span><span class="n">max_cliques</span><span class="p">,</span>
+            <span class="n">max_combinations</span><span class="o">=</span><span class="n">max_combinations</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="n">layout_id</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">"layout_</span><span class="si">{</span><span class="n">layout_index</span><span class="si">:</span><span class="s2">05d</span><span class="si">}</span><span class="s2">"</span>
+        <span class="n">layout</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">layout_id</span><span class="o">=</span><span class="n">layout_id</span><span class="p">,</span>
+            <span class="n">placement_indices</span><span class="o">=</span><span class="nb">list</span><span class="p">(</span><span class="n">option_indices</span><span class="p">),</span>
+            <span class="n">unplaced_ligand_ids</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">ligand_ids</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">option</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">chosen</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">option</span><span class="p">[</span><span class="s2">"alignment"</span><span class="p">]</span> <span class="ow">is</span> <span class="kc">None</span>
+            <span class="p">],</span>
+        <span class="p">)</span>
+        <span class="n">layouts</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">layout</span><span class="p">,</span> <span class="n">consensus</span><span class="o">=</span><span class="n">report</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">hypothesis</span> <span class="ow">in</span> <span class="n">report</span><span class="p">[</span><span class="s2">"hypotheses"</span><span class="p">]:</span>
+            <span class="n">model</span> <span class="o">=</span> <span class="n">Pharmacophore</span><span class="p">(</span>
+                <span class="n">name</span><span class="o">=</span><span class="sa">f</span><span class="s2">"</span><span class="si">{</span><span class="n">name</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="s1">'Rigid consensus'</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">layout_id</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">hypothesis</span><span class="p">[</span><span class="s1">'hypothesis_id'</span><span class="p">]</span><span class="si">}</span><span class="s2">"</span>
+            <span class="p">)</span>
+            <span class="n">sites</span> <span class="o">=</span> <span class="p">[</span><span class="n">report</span><span class="p">[</span><span class="s2">"candidate_sites"</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">hypothesis</span><span class="p">[</span><span class="s2">"site_indices"</span><span class="p">]]</span>
+            <span class="n">model</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+                <span class="nb">dict</span><span class="p">(</span>
+                    <span class="n">method</span><span class="o">=</span><span class="n">METHOD</span><span class="p">,</span>
+                    <span class="n">criteria</span><span class="o">=</span><span class="n">criteria</span><span class="p">,</span>
+                    <span class="n">layout</span><span class="o">=</span><span class="n">layout</span><span class="p">,</span>
+                    <span class="n">hypothesis</span><span class="o">=</span><span class="n">hypothesis</span><span class="p">,</span>
+                    <span class="n">sources</span><span class="o">=</span><span class="n">sources</span><span class="p">,</span>
+                    <span class="n">placements</span><span class="o">=</span><span class="p">[</span>
+                        <span class="nb">dict</span><span class="p">(</span><span class="n">ligand_id</span><span class="o">=</span><span class="n">identity</span><span class="p">,</span> <span class="o">**</span><span class="n">option</span><span class="p">)</span>
+                        <span class="k">for</span> <span class="n">identity</span><span class="p">,</span> <span class="n">option</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">ligand_ids</span><span class="p">,</span> <span class="n">chosen</span><span class="p">)</span>
+                    <span class="p">],</span>
+                    <span class="n">consensus</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                        <span class="n">method</span><span class="o">=</span><span class="n">report</span><span class="p">[</span><span class="s2">"method"</span><span class="p">],</span>
+                        <span class="n">sites</span><span class="o">=</span><span class="n">sites</span><span class="p">,</span>
+                        <span class="n">ligand_ids</span><span class="o">=</span><span class="n">ligand_ids</span><span class="p">,</span>
+                        <span class="n">n_ligands</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ligands</span><span class="p">),</span>
+                        <span class="n">criteria</span><span class="o">=</span><span class="n">report</span><span class="p">[</span><span class="s2">"criteria"</span><span class="p">],</span>
+                        <span class="n">complete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+                    <span class="p">),</span>
+                    <span class="n">emitted_radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+            <span class="k">for</span> <span class="n">site</span> <span class="ow">in</span> <span class="n">sites</span><span class="p">:</span>
+                <span class="n">model</span><span class="o">.</span><span class="n">add_interaction_site</span><span class="p">(</span><span class="n">_site_from_consensus</span><span class="p">(</span><span class="n">site</span><span class="p">,</span> <span class="n">radius</span><span class="p">))</span>
+            <span class="n">models</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">model</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="n">METHOD</span><span class="p">,</span>
+        <span class="n">models</span><span class="o">=</span><span class="n">models</span><span class="p">,</span>
+        <span class="n">complete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">report</span><span class="o">=</span><span class="n">detached</span><span class="p">(</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">method</span><span class="o">=</span><span class="n">METHOD</span><span class="p">,</span>
+                <span class="n">sources</span><span class="o">=</span><span class="n">sources</span><span class="p">,</span>
+                <span class="n">source_alignments</span><span class="o">=</span><span class="n">source_reports</span><span class="p">,</span>
+                <span class="n">layouts</span><span class="o">=</span><span class="n">layouts</span><span class="p">,</span>
+                <span class="n">n_fits</span><span class="o">=</span><span class="n">n_fits</span><span class="p">,</span>
+                <span class="n">n_layouts</span><span class="o">=</span><span class="n">n_layouts</span><span class="p">,</span>
+                <span class="n">criteria</span><span class="o">=</span><span class="n">criteria</span><span class="p">,</span>
+                <span class="n">complete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+    <span class="p">)</span></div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

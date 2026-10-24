@@ -1,0 +1,795 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+  
+    <title>Compose independently observed interaction families – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/cookbook/interaction_composition';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Build a complex model from prepared native observations" href="complex_based_modeler.html" />
+    <link rel="prev" title="Build queries from aromatic observations" href="aromatic_interactions.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="reference_ligand.html">Build from a reference ligand and evaluate a placed pose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_interactions.html">Build from observed ligand–receptor interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ionic_interactions.html">Build queries from ionic observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aromatic_interactions.html">Build queries from aromatic observations</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Compose independently observed interaction families</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complex_based_modeler.html">Build a complex model from prepared native observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_based_modeler.html">Build explicit complementary receptor hypotheses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccd_interactions.html">Joint hypotheses with complete CCD molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophore_curation.html">Create and evaluate independent hypothesis variants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_workflow.html">Carry a prepared hypothesis through curation, saving and screening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_search_workflow.html">Recover a moved prepared ligand and retain limited-search failures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_consensus_workflow.html">Build consensus from two distinct prepared CCD ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_receptor_workflow.html">Review cached prepared receptor hypotheses and contacts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_conformers.html">Search rigid poses and prepared conformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aligned_consensus.html">Build consensus from prepared aligned ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aligned_cliques.html">Discover aligned consensus and alternative hypotheses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rigid_consensus.html">Build consensus from prepared rigid unaligned ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ligand_based_modeler.html">Choose native ligand consensus through the modeler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modular_rigid_tools.html">Compose rigid modeling from reusable steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ranked_seeds.html">Rank rigid seeds by typed feature environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rigid_refinement.html">Refine rigid correspondences with alternative orientation policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_ccd_ligands.html">Model with traceable prepared CCD ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_est_template.html">Prepare an observed EST ligand with an explicit template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_est_hydrogens.html">Include directional donors in the observed EST workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_receptor_coverage.html">Audit the observed receptor before detecting interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_eralpha_interface.html">Compose and control a prepared ERα fragment hypothesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excluded_volumes.html">Compose exclusion spheres with a pharmacophoric query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retrospective_validation.html">Validate a labeled set and inspect failures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attribution.html">Keep scientific references with models and results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewer_addon.html">Inspect a cached pharmacophore with MolSysViewer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="eralpha_input_audit.html">Audit the ERalpha input before native modeling</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Cookbook</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Compose independently observed interaction families</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="compose-independently-observed-interaction-families">
+<h1>Compose independently observed interaction families<a class="headerlink" href="#compose-independently-observed-interaction-families" title="Link to this heading">#</a></h1>
+<p><code class="docutils literal notranslate"><span class="pre">from_interaction_collection()</span></code> builds a joint hypothesis from named cached
+MolSysMT analyses. It calls <code class="docutils literal notranslate"><span class="pre">from_interactions()</span></code> for each and then the public
+<code class="docutils literal notranslate"><span class="pre">compose_pharmacophores()</span></code> tool. Molecular recognition, geometry, selection and
+detection remain in MolSysMT. No interaction detector runs during conversion.</p>
+<section id="detect-explicitly-and-build-the-joint-query">
+<h2>Detect explicitly and build the joint query<a class="headerlink" href="#detect-explicitly-and-build-the-joint-query" title="Link to this heading">#</a></h2>
+<p>This fixture deliberately groups disconnected prepared controls into a declared
+ligand selection. It is an executable adapter example, not a chemical ligand or
+biological binding complex. The indexed isotope keeps an explicit donor hydrogen.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">molsysmt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">msm</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyunitwizard</span> <span class="k">as</span> <span class="n">puw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.modeler</span><span class="w"> </span><span class="kn">import</span> <span class="n">from_interaction_collection</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening</span><span class="w"> </span><span class="kn">import</span> <span class="n">PoseEvaluator</span>
+
+<span class="n">theta</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="n">ring</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">column_stack</span><span class="p">((</span><span class="mf">.14</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="mf">.14</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mi">6</span><span class="p">)))</span>
+<span class="n">xyz</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span>
+    <span class="n">ring</span><span class="p">,</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.7</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="n">ring</span> <span class="o">+</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.35</span><span class="p">],</span> <span class="p">[</span><span class="mf">.25</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">.7</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.3</span><span class="p">,</span> <span class="mf">.1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">1.3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mf">3.3</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+<span class="p">))</span>
+<span class="n">source</span> <span class="o">=</span> <span class="n">msm</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span>
+    <span class="n">msm</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="s1">'smiles:c1ccccc1.[Na+].[2H]O.C.c1ccccc1.[Cl-].C=O.C'</span><span class="p">,</span> <span class="n">to_form</span><span class="o">=</span><span class="s1">'rdkit.Mol'</span><span class="p">),</span>
+    <span class="n">to_form</span><span class="o">=</span><span class="s1">'molsysmt.MolSys'</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="n">source</span><span class="o">.</span><span class="n">structures</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">coordinates</span><span class="o">=</span><span class="n">puw</span><span class="o">.</span><span class="n">quantity</span><span class="p">([</span><span class="n">xyz</span><span class="p">],</span> <span class="s1">'nm'</span><span class="p">))</span>
+<span class="n">ligand</span><span class="p">,</span> <span class="n">partner</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)),</span> <span class="nb">list</span><span class="p">(</span><span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">20</span><span class="p">))</span>
+<span class="n">options</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">,</span> <span class="n">selection_2</span><span class="o">=</span><span class="n">partner</span><span class="p">,</span>
+               <span class="n">selection_mode</span><span class="o">=</span><span class="s1">'between'</span><span class="p">,</span> <span class="n">structure_indices</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">pbc</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="k">def</span><span class="w"> </span><span class="nf">detect</span><span class="p">():</span>
+    <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">hydrophobic</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">hydrophobic</span><span class="o">.</span><span class="n">get_hydrophobic_interactions</span><span class="p">(</span>
+            <span class="n">source</span><span class="p">,</span> <span class="n">distance_threshold</span><span class="o">=</span><span class="s1">'.4 nm'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+        <span class="n">hbonds</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">hbonds</span><span class="o">.</span><span class="n">get_hbonds</span><span class="p">(</span>
+            <span class="n">source</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'donor_acceptor_distance_angle'</span><span class="p">,</span> <span class="n">profile</span><span class="o">=</span><span class="s1">'smarts_donor_acceptor'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+        <span class="n">ionic</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">ionic</span><span class="o">.</span><span class="n">get_ionic_interactions</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="s1">'.3 nm'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+        <span class="n">pi_prolif</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">pi_pi</span><span class="o">.</span><span class="n">get_pi_pi_interactions</span><span class="p">(</span>
+            <span class="n">source</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'plane_angle_intersection'</span><span class="p">,</span> <span class="n">profile</span><span class="o">=</span><span class="s1">'smarts_5_6'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+        <span class="n">cation_pi</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">cation_pi</span><span class="o">.</span><span class="n">get_cation_pi_interactions</span><span class="p">(</span>
+            <span class="n">source</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'centroid_distance_angle'</span><span class="p">,</span> <span class="n">profile</span><span class="o">=</span><span class="s1">'smarts_5_6'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+        <span class="n">pi_molstar</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">pi_pi</span><span class="o">.</span><span class="n">get_pi_pi_interactions</span><span class="p">(</span>
+            <span class="n">source</span><span class="p">,</span> <span class="n">method</span><span class="o">=</span><span class="s1">'centroid_angle_offset'</span><span class="p">,</span> <span class="n">profile</span><span class="o">=</span><span class="s1">'three_atom_plane'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+        <span class="n">ionic_empty</span><span class="o">=</span><span class="n">msm</span><span class="o">.</span><span class="n">interactions</span><span class="o">.</span><span class="n">ionic</span><span class="o">.</span><span class="n">get_ionic_interactions</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="s1">'.01 nm'</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">),</span>
+    <span class="p">)</span>
+
+<span class="n">analyses</span> <span class="o">=</span> <span class="n">detect</span><span class="p">()</span>
+<span class="n">query</span> <span class="o">=</span> <span class="n">from_interaction_collection</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">analyses</span><span class="p">,</span> <span class="n">ligand</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="s1">'.02 nm'</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">query</span><span class="o">.</span><span class="n">n_interaction_sites</span> <span class="o">==</span> <span class="mi">9</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">(</span><span class="n">site</span><span class="o">.</span><span class="n">weight</span> <span class="k">for</span> <span class="n">site</span> <span class="ow">in</span> <span class="n">query</span><span class="o">.</span><span class="n">interaction_sites</span><span class="p">)</span> <span class="o">==</span> <span class="mi">9</span>
+<span class="k">assert</span> <span class="nb">sum</span><span class="p">(</span><span class="n">row</span><span class="p">[</span><span class="s1">'action'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'reused'</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">query</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'site_map'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">2</span>
+<span class="n">charge</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">site</span> <span class="k">for</span> <span class="n">site</span> <span class="ow">in</span> <span class="n">query</span><span class="o">.</span><span class="n">interaction_sites</span> <span class="k">if</span> <span class="n">site</span><span class="o">.</span><span class="n">feature_name</span> <span class="o">==</span> <span class="s1">'positive charge'</span><span class="p">)</span>
+<span class="k">assert</span> <span class="p">{</span><span class="n">row</span><span class="p">[</span><span class="s1">'component'</span><span class="p">]</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">charge</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'observations'</span><span class="p">]}</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'ionic'</span><span class="p">,</span> <span class="s1">'cation_pi'</span><span class="p">}</span>
+<span class="n">empty</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">row</span> <span class="k">for</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">query</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s1">'components'</span><span class="p">]</span> <span class="k">if</span> <span class="n">row</span><span class="p">[</span><span class="s1">'label'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'ionic_empty'</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">empty</span><span class="p">[</span><span class="s1">'n_sites'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">empty</span><span class="p">[</span><span class="s1">'metadata'</span><span class="p">][</span><span class="s1">'evaluated_structure_indices'</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">evaluator</span> <span class="o">=</span> <span class="n">PoseEvaluator</span><span class="p">(</span><span class="n">query</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)[</span><span class="s1">'status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'matched'</span>
+<span class="n">moved</span> <span class="o">=</span> <span class="n">msm</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">,</span> <span class="n">translation</span><span class="o">=</span><span class="s1">'[1,0,0] nm'</span><span class="p">,</span> <span class="n">in_place</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">moved</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)[</span><span class="s1">'fit_value'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span>
+<span class="n">reversed_h</span> <span class="o">=</span> <span class="n">msm</span><span class="o">.</span><span class="n">structure</span><span class="o">.</span><span class="n">translate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="p">[</span><span class="mi">7</span><span class="p">],</span> <span class="n">translation</span><span class="o">=</span><span class="s1">'[-.2,0,0] nm'</span><span class="p">,</span> <span class="n">in_place</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">result</span> <span class="o">=</span> <span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">reversed_h</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">result</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'not_matched'</span> <span class="ow">and</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">result</span><span class="p">[</span><span class="s1">'fit_value'</span><span class="p">],</span> <span class="mi">8</span> <span class="o">/</span> <span class="mi">9</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The charge center supported by ionic and cation-pi analyses contributes one unit
+of fit weight. The ring supported by two pi-pi profiles also remains one site.
+The independent contacts remain labeled observations; relation and occurrence
+indices belong to their original analyses. Names, producer versions, criteria,
+original bibliographies and empty evaluated scopes remain component metadata.</p>
+<p>The high-level dispatcher also accepts
+<code class="docutils literal notranslate"><span class="pre">phmt.model(source,</span> <span class="pre">method='interaction-collection',</span> <span class="pre">interaction_collection=analyses,</span> <span class="pre">ligand_selection=ligand)</span></code>.
+All analyses must use the same unchanged source axes, selected frame and declared
+state. Atomic H-bond/hydrophobic conversion currently requires the source reference
+state. Uncovered frames or a failed child conversion raise; no partial query or
+zero fit is returned. Source declarations do not authenticate molecular origin.</p>
+</section>
+<section id="compose-cached-hypotheses-independently">
+<h2>Compose cached hypotheses independently<a class="headerlink" href="#compose-cached-hypotheses-independently" title="Link to this heading">#</a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">compose_pharmacophores()</span></code> needs only models in a declared common coordinate
+frame. It does not access a molecular system or perform alignment. Its default
+<code class="docutils literal notranslate"><span class="pre">duplicate_policy='keep'</span></code> preserves independently chosen constraints. For native
+observed queries, explicitly choosing <code class="docutils literal notranslate"><span class="pre">same_participant</span></code> requires matching source
+axes, ligand, frame and state. Compatible participant constraints are reused;
+different radii, geometry, weights or essential flags raise.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.modeler</span><span class="w"> </span><span class="kn">import</span> <span class="n">compose_pharmacophores</span><span class="p">,</span> <span class="n">from_interactions</span>
+
+<span class="n">pieces</span> <span class="o">=</span> <span class="p">{</span><span class="n">label</span><span class="p">:</span> <span class="n">from_interactions</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">observed</span><span class="p">,</span> <span class="n">ligand</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="s1">'.02 nm'</span><span class="p">)</span>
+          <span class="k">for</span> <span class="n">label</span><span class="p">,</span> <span class="n">observed</span> <span class="ow">in</span> <span class="n">analyses</span><span class="o">.</span><span class="n">items</span><span class="p">()}</span>
+<span class="n">modular</span> <span class="o">=</span> <span class="n">compose_pharmacophores</span><span class="p">(</span><span class="n">pieces</span><span class="p">,</span> <span class="n">duplicate_policy</span><span class="o">=</span><span class="s1">'same_participant'</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">modular</span><span class="o">.</span><span class="n">n_interaction_sites</span> <span class="o">==</span> <span class="mi">9</span>
+<span class="k">assert</span> <span class="n">PoseEvaluator</span><span class="p">(</span><span class="n">modular</span><span class="p">)</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)[</span><span class="s1">'fit_value'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
+<span class="n">kept</span> <span class="o">=</span> <span class="n">compose_pharmacophores</span><span class="p">(</span><span class="n">pieces</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">kept</span><span class="o">.</span><span class="n">n_interaction_sites</span> <span class="o">==</span> <span class="mi">11</span>
+<span class="n">kept_result</span> <span class="o">=</span> <span class="n">PoseEvaluator</span><span class="p">(</span><span class="n">kept</span><span class="p">)</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)</span>
+<span class="k">assert</span> <span class="n">kept_result</span><span class="p">[</span><span class="s1">'status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'not_matched'</span>
+<span class="k">assert</span> <span class="n">np</span><span class="o">.</span><span class="n">isclose</span><span class="p">(</span><span class="n">kept_result</span><span class="p">[</span><span class="s1">'fit_value'</span><span class="p">],</span> <span class="mi">9</span> <span class="o">/</span> <span class="mi">11</span><span class="p">)</span>
+<span class="k">assert</span> <span class="nb">len</span><span class="p">(</span><span class="n">kept_result</span><span class="p">[</span><span class="s1">'missing_essential_sites'</span><span class="p">])</span> <span class="o">==</span> <span class="mi">2</span>
+
+<span class="c1"># Different hypotheses for a participant need an explicit choice.</span>
+<span class="n">wide_charge</span> <span class="o">=</span> <span class="n">from_interactions</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">analyses</span><span class="p">[</span><span class="s1">'ionic'</span><span class="p">],</span> <span class="n">ligand</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="s1">'.4 nm'</span><span class="p">)</span>
+<span class="k">try</span><span class="p">:</span>
+    <span class="n">compose_pharmacophores</span><span class="p">({</span><span class="s1">'narrow'</span><span class="p">:</span> <span class="n">pieces</span><span class="p">[</span><span class="s1">'ionic'</span><span class="p">],</span> <span class="s1">'wide'</span><span class="p">:</span> <span class="n">wide_charge</span><span class="p">},</span>
+                          <span class="n">duplicate_policy</span><span class="o">=</span><span class="s1">'same_participant'</span><span class="p">)</span>
+<span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+    <span class="k">assert</span> <span class="s1">'conflicting constraints'</span> <span class="ow">in</span> <span class="nb">str</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">AssertionError</span><span class="p">(</span><span class="s1">'Expected an explicit constraint conflict'</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>The <code class="docutils literal notranslate"><span class="pre">keep</span></code> outcome is an expected consequence of essential one-to-one matching:
+one chemical participant cannot satisfy two separate required constraints of
+the same feature. This is not a performance ranking between the policies. Use
+<code class="docutils literal notranslate"><span class="pre">keep</span></code> for intentional independent constraints; use participant reuse for repeated
+evidence about one compatible constraint. Reuse does not average centers or add
+weights. Its 1e-12 nm/dimensionless tolerance handles representation equality,
+not spatial clustering. Disk normal sign is irrelevant; donor direction is not.
+Distinct atoms with coincident centers are kept distinct.</p>
+<p>Every output site and provenance snapshot is independent of the inputs. Generic
+composition can also combine a positive query with an independently constructed
+<a class="reference internal" href="excluded_volumes.html"><span class="std std-doc">exclusion model</span></a>. Input scores remain component provenance;
+the tool does not invent a score for the combined hypothesis.</p>
+</section>
+<section id="capture-actual-work-and-persist-the-query">
+<h2>Capture actual work and persist the query<a class="headerlink" href="#capture-actual-work-and-persist-the-query" title="Link to this heading">#</a></h2>
+<p>Detect inside an application-owned Ackredit capture to retain the actual method
+and software references. Composing cached models preserves their original
+bibliography without crediting another detection, recognition or fitting run.
+Composition adds no invented literature citation; the evaluator records its
+assignment method when reached. Ackredit is optional for scientific work.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">tempfile</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">ackredit</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">ack</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">pharmacophoremt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">phmt</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.io</span><span class="w"> </span><span class="kn">import</span> <span class="n">load_json</span><span class="p">,</span> <span class="n">to_json</span>
+
+<span class="k">with</span> <span class="n">ack</span><span class="o">.</span><span class="n">session</span><span class="p">(</span><span class="s1">'joint workflow'</span><span class="p">):</span>
+    <span class="k">with</span> <span class="n">ack</span><span class="o">.</span><span class="n">capture</span><span class="p">(</span><span class="s1">'detect, compose and evaluate'</span><span class="p">)</span> <span class="k">as</span> <span class="n">run</span><span class="p">:</span>
+        <span class="k">with</span> <span class="n">phmt</span><span class="o">.</span><span class="n">attribution</span><span class="p">():</span>
+            <span class="n">fresh</span> <span class="o">=</span> <span class="n">detect</span><span class="p">()</span>
+            <span class="n">credited</span> <span class="o">=</span> <span class="n">from_interaction_collection</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">fresh</span><span class="p">,</span> <span class="n">ligand</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="s1">'.02 nm'</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="n">PoseEvaluator</span><span class="p">(</span><span class="n">credited</span><span class="p">)</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)[</span><span class="s1">'status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'matched'</span>
+    <span class="n">references</span> <span class="o">=</span> <span class="n">run</span><span class="o">.</span><span class="n">attribution</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+    <span class="k">assert</span> <span class="nb">any</span><span class="p">(</span><span class="s1">'get_pi_pi_interactions'</span> <span class="ow">in</span> <span class="n">use</span><span class="p">[</span><span class="s1">'used_by'</span><span class="p">]</span> <span class="k">for</span> <span class="n">use</span> <span class="ow">in</span> <span class="n">references</span><span class="p">[</span><span class="s1">'uses'</span><span class="p">])</span>
+    <span class="k">assert</span> <span class="nb">any</span><span class="p">(</span><span class="n">item</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'doi'</span><span class="p">)</span> <span class="o">==</span> <span class="s1">'10.1186/s13321-021-00548-6'</span> <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">references</span><span class="p">[</span><span class="s1">'items'</span><span class="p">])</span>
+    <span class="k">assert</span> <span class="n">ack</span><span class="o">.</span><span class="n">Attribution</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">references</span><span class="p">)</span><span class="o">.</span><span class="n">report</span><span class="p">(</span><span class="nb">format</span><span class="o">=</span><span class="s1">'bibtex'</span><span class="p">)</span>
+    <span class="n">before</span> <span class="o">=</span> <span class="n">ack</span><span class="o">.</span><span class="n">get_attribution</span><span class="p">()</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
+    <span class="k">with</span> <span class="n">puw</span><span class="o">.</span><span class="n">context</span><span class="p">(</span><span class="n">standard_units</span><span class="o">=</span><span class="p">[</span><span class="s1">'pm'</span><span class="p">,</span> <span class="s1">'fs'</span><span class="p">,</span> <span class="s1">'degrees'</span><span class="p">]):</span>
+        <span class="k">with</span> <span class="n">tempfile</span><span class="o">.</span><span class="n">TemporaryDirectory</span><span class="p">()</span> <span class="k">as</span> <span class="n">directory</span><span class="p">:</span>
+            <span class="n">path</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">directory</span><span class="p">)</span> <span class="o">/</span> <span class="s1">'joint_query.json'</span>
+            <span class="n">to_json</span><span class="p">(</span><span class="n">credited</span><span class="p">,</span> <span class="n">path</span><span class="p">)</span>
+            <span class="n">restored</span> <span class="o">=</span> <span class="n">load_json</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
+            <span class="k">assert</span> <span class="n">restored</span><span class="o">.</span><span class="n">metadata</span> <span class="o">==</span> <span class="n">credited</span><span class="o">.</span><span class="n">metadata</span>
+            <span class="k">assert</span> <span class="p">[</span><span class="n">site</span><span class="o">.</span><span class="n">metadata</span> <span class="k">for</span> <span class="n">site</span> <span class="ow">in</span> <span class="n">restored</span><span class="o">.</span><span class="n">interaction_sites</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="n">site</span><span class="o">.</span><span class="n">metadata</span> <span class="k">for</span> <span class="n">site</span> <span class="ow">in</span> <span class="n">credited</span><span class="o">.</span><span class="n">interaction_sites</span><span class="p">]</span>
+            <span class="k">assert</span> <span class="n">PoseEvaluator</span><span class="p">(</span><span class="n">restored</span><span class="p">)</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">selection</span><span class="o">=</span><span class="n">ligand</span><span class="p">)[</span><span class="s1">'fit_value'</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span>
+    <span class="k">assert</span> <span class="n">ack</span><span class="o">.</span><span class="n">get_attribution</span><span class="p">()</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span> <span class="o">==</span> <span class="n">before</span>
+</pre></div>
+</div>
+<p>For standalone composition of stored components, load each with <code class="docutils literal notranslate"><span class="pre">load_json()</span></code>
+and pass the named mapping to <code class="docutils literal notranslate"><span class="pre">compose_pharmacophores()</span></code>. Original component
+attribution remains evidence; reading stored models adds no scientific credit.
+An all-empty composition stays empty and is rejected as an evaluation query.</p>
+<p>From a compatible source checkout, run
+<code class="docutils literal notranslate"><span class="pre">python</span> <span class="pre">-m</span> <span class="pre">devtools.validate_interaction_composition</span> <span class="pre">--output</span> <span class="pre">composition_validation.json</span></code>
+for actual five-family detection, both composition policies, independent
+displacement/donor/exclusion controls, persistence, source fingerprints and
+tracking on/off. These disconnected analytical controls do not qualify a
+biological complex, receptor preparation or runtime/memory benchmark.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="aromatic_interactions.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Build queries from aromatic observations</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="complex_based_modeler.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Build a complex model from prepared native observations</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#detect-explicitly-and-build-the-joint-query">Detect explicitly and build the joint query</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#compose-cached-hypotheses-independently">Compose cached hypotheses independently</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#capture-actual-work-and-persist-the-query">Capture actual work and persist the query</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

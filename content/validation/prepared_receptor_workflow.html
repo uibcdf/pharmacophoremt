@@ -1,0 +1,710 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+  
+    <title>Cached prepared ERα receptor and contact control – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/validation/prepared_receptor_workflow';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="ERα signaling: a frozen ligand-reference activity pilot" href="esr1_activity_pilot.html" />
+    <link rel="prev" title="Prepared distinct EST/DES consensus control" href="prepared_consensus_workflow.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="prepared_ccd.html">Prepared CCD EST/DES: count and provenance controls</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_workflow.html">Prepared construction-to-screening control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_search_workflow.html">Prepared rigid-search and frame-budget control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_consensus_workflow.html">Prepared distinct EST/DES consensus control</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Cached prepared ERα receptor and contact control</a></li>
+<li class="toctree-l1"><a class="reference internal" href="esr1_activity_pilot.html">ERα signaling: a frozen ligand-reference activity pilot</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Validation and benchmarks</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Cached prepared ERα receptor and contact control</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="cached-prepared-er-receptor-and-contact-control">
+<h1>Cached prepared ERα receptor and contact control<a class="headerlink" href="#cached-prepared-er-receptor-and-contact-control" title="Link to this heading">#</a></h1>
+<section id="identity-and-claim">
+<h2>Identity and claim<a class="headerlink" href="#identity-and-claim" title="Link to this heading">#</a></h2>
+<p>Case <code class="docutils literal notranslate"><span class="pre">cached-prepared-eralpha-receptor&#64;1</span></code>, owned by
+<a class="reference external" href="https://github.com/uibcdf/pharmacophoremt/issues/52">PharmacophoreMT #52</a>,
+maintainers LMMV/dprada; review date 2026-10-10. Evidence class: analytical
+classical-workflow controls on a historically prepared real fragment. The claim
+concerns explicit projection geometry, exclusion vetoes, retained native contacts,
+source maps, saved models and failed rebuild semantics.</p>
+<p>Translated PHE404 is a synthetic methodological candidate, not an independent
+ligand, generated conformer, experimental binding pose or activity label. Contact
+reconstruction does not qualify freshly detected or environmentally refined
+interactions. No biological or performance claim applies.</p>
+</section>
+<section id="inputs-and-preparation">
+<h2>Inputs and preparation<a class="headerlink" href="#inputs-and-preparation" title="Link to this heading">#</a></h2>
+<p>The <a class="reference internal" href="../cookbook/prepared_eralpha_interface.html"><span class="std std-doc">prepared-fragment recipe</span></a> retains
+original deposited 1QKU acquisition/licensing references and explicit chemical
+assumptions: receptor residues 304–550, excluded incomplete residues, HIE states,
+charged termini, inspected ARG correspondence and generated local hydrogens.
+This stage reads the unchanged archived H5MSM, without repeating preparation or
+detection. Its 4,047 atoms/4,088 bonds include 1,995 observed heavy atoms and 2,052
+local H. Full-receptor, environmental H and peptide stereochemical acceptance
+remain outside the historical preparation claim.</p>
+<p>The <a class="reference external" href="https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/eralpha_interface_py314_summary.json">original summary</a>
+identifies the prepared artifact by compressed/uncompressed SHA-256 and byte counts.
+The loaded native bytes have SHA-256
+<code class="docutils literal notranslate"><span class="pre">a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a</span></code>.
+Original data/atom maps remain in the
+<a class="reference external" href="https://github.com/uibcdf/pharmacophoremt/blob/main/tests/data/eralpha_interface/manifest.json">fragment manifest</a>.
+A reusable offline archive-byte reader verifies identity; MolSysMT decodes the
+molecular format and supplies all selections, recognition, planes and movement.</p>
+<p>PHE404 ring atoms are <code class="docutils literal notranslate"><span class="pre">[796,797,798,799,800,801]</span></code>; heavy atoms 791–801. All selected
+atoms, including nine H, retain complete-system indices. EST selects 4003–4046.
+Frame zero/reference chemical state is explicit. Separate ±z ring hypotheses at
+0.35 nm with radius 0.02 nm use caller-declared vectors and explicit copied cached
+ring axes. Exclusion radii 0.01/0.40 nm are independent query choices, not physical
+radii. A positive PHE404 candidate uses public <code class="docutils literal notranslate"><span class="pre">[0,0,.35]</span> <span class="pre">nm</span></code> translation; the
+observed EST negative uses <code class="docutils literal notranslate"><span class="pre">[2,0,0]</span> <span class="pre">nm</span></code> displacement of a copy.</p>
+</section>
+<section id="execution-and-independent-controls">
+<h2>Execution and independent controls<a class="headerlink" href="#execution-and-independent-controls" title="Link to this heading">#</a></h2>
+<p>The <a class="reference internal" href="../cookbook/prepared_receptor_workflow.html"><span class="std std-doc">recipe</span></a> composes public tools.
+The <a class="reference external" href="https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/prepared_receptor_workflow.md">maintained contract</a>
+describes independent atom, mean-center, plane, distance and veto expectations.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python<span class="w"> </span>-m<span class="w"> </span>devtools.prepared_workflow<span class="w"> </span>--case<span class="w"> </span>receptor<span class="w"> </span>--output<span class="w"> </span>/tmp/prepared-receptor.json
+python<span class="w"> </span>-m<span class="w"> </span>pytest<span class="w"> </span>tests/test_prepared_receptor_workflow.py<span class="w"> </span>tests/test_receptor_projections.py<span class="w"> </span>tests/test_complex_based_facade.py<span class="w"> </span>--receptor<span class="o">=</span>llm
+</pre></div>
+</div>
+<p>Use normal editable <code class="docutils literal notranslate"><span class="pre">molsyssuite&#64;uibcdf_3.14</span></code>, without Requires-Python/PYTHONPATH
+bypass. Retain current producer source/input/loaded-extension identity alongside
+historical preparation hashes/date, the original head/dirty developer/test overlay,
+full guards and actual attribution. Query evaluation uses one-degree angular
+tolerance. Cross-unit/independent geometry comparisons use 1e-12 nm/dimensionless.
+All source coordinates, full chemical-state/history and cached analyses are
+compared before/after; literal unknown native NaNs remain in finite JSON text.</p>
+<p>Four query variants write/read through JSON/YAML/versioned PHMT virtual-site SDF
+under pm/fs/degrees then Å/ps/radians. Fresh processes read twelve saved models
+without new calculation uses. These codecs represent pharmacophores; native
+molecular I/O continues through MolSysMT.</p>
+</section>
+<section id="results-and-interpretation">
+<h2>Results and interpretation<a class="headerlink" href="#results-and-interpretation" title="Link to this heading">#</a></h2>
+<p>Seven new scientific guards pass in <strong>122.44 s on Python 3.14.7</strong>. The broader
+initial selection passed 133 unchanged controls (66 receptor projections, 31
+complex facade, 36 previous prepared placed/search/consensus); seven new cases
+initially failed at setup due to the client expecting the host exception family
+for a provider out-of-range frame. Corrected handling retains that provider error
+and adds explicit invalidated-frame-zero coverage checks. Only the affected seven
+guards were rerun; they all pass. Original initial failure logs/client/guard remain
+in the evidence, without claiming that initial selection passed completely.
+Both public recipe blocks and the reviewed installed-development preflight pass.</p>
+<p>The <a class="reference external" href="https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/prepared_receptor_workflow_py314_summary.json">new original summary</a>
+links the full original gzip output by compressed/uncompressed SHA-256 and byte
+counts. Its producer head is <code class="docutils literal notranslate"><span class="pre">a64e369eae1bbd331b7cfd2f17371ce38b73d284</span></code>, with
+an explicitly uncommitted developer/test overlay retained as executed bytes.
+Runtime scientific source remains unchanged. All 31 prior JSON gzip archives and
+the native prepared input retain their original bytes. Both host tracking modes
+pass with identical scientific fields and unchanged producer Python/input hashes.</p>
+<p>The positive projection and exclusion-veto control have the same positive coverage, while the broadened veto changes final
+status. The opposite hypothesis and original candidate test distinct geometric
+negatives. Independent original-coordinate means/plane axes and atom-to-atom
+bounds protect these expectations rather than relying on self-placement alone.</p>
+<p>Observed native families retain twelve hydrophobic contacts and zero H-bond/pi-pi
+contacts. Deposited participant identities and direct distance arithmetic check
+the hydrophobic evidence. Source reconstruction retains six sites and the
+evaluated-empty labels. Empty/exclusion-only hypotheses cannot be positive queries;
+uncached/unevaluated frame failures must clear both facade results.</p>
+<p>Host-on capture retains twelve items/36 uses, including the actually consumed
+prepared artifact dataset. Host-off retains three items/three uses from independently
+configured provider operations. Fresh processes read all twelve saved models and register zero new uses.
+Historical preparation/detection attribution is kept as cached provenance, not
+new execution credit. The strict isolated rendering of these two new pages uses
+Sphinx 9.1/Python 3.13, without claiming a scientific gate on that interpreter.</p>
+<p>No labels, splits, enrichment denominator, prospective binding acceptance or
+speed/memory comparison are measured. Optional attribution must name the derived
+prepared artifact actually loaded, without claiming historical preparation or
+contact detection was executed again.</p>
+</section>
+<section id="maintenance-and-independent-gates">
+<h2>Maintenance and independent gates<a class="headerlink" href="#maintenance-and-independent-gates" title="Link to this heading">#</a></h2>
+<p>Rerun after input/native loading, source maps, cached observations, projection/
+exclusion decisions, geometry, persistence or failure contracts change. Append
+new identities, preserve old outputs and keep current provider hashes separate
+from historical preparation provenance. MolSysMT #375/#323/#350/#367 and required
+hosted/installed/public delivery #23 remain separate gates. No sibling source or
+runtime molecular implementation is added here.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="prepared_consensus_workflow.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Prepared distinct EST/DES consensus control</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="esr1_activity_pilot.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">ERα signaling: a frozen ligand-reference activity pilot</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#identity-and-claim">Identity and claim</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#inputs-and-preparation">Inputs and preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#execution-and-independent-controls">Execution and independent controls</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-and-interpretation">Results and interpretation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#maintenance-and-independent-gates">Maintenance and independent gates</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

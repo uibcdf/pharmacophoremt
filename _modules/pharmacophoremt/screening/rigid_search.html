@@ -1,0 +1,780 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>pharmacophoremt.screening.rigid_search – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pharmacophoremt/screening/rigid_search';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt.screening.rigid_search</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pharmacophoremt.screening.rigid_search</h1><div class="highlight"><pre>
+<span></span><span class="sd">"""Bounded rigid search built from reusable native pharmacophoric tools."""</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">copy</span><span class="w"> </span><span class="kn">import</span> <span class="n">deepcopy</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">molsysmt</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">msm</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">argdigest</span><span class="w"> </span><span class="kn">import</span> <span class="n">arg_digest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">smonitor</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._ackredit</span><span class="w"> </span><span class="kn">import</span> <span class="n">attributed</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.arg_digestion.argument._contracts</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">digest_search_method</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.molsysmt</span><span class="w"> </span><span class="kn">import</span> <span class="n">detached</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.pose_batch</span><span class="w"> </span><span class="kn">import</span> <span class="n">run_evaluations</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.smonitor.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">PoseEvaluationError</span><span class="p">,</span>
+    <span class="n">SearchLimitError</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._version</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.modeler.features</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_features</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.pharmacophore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pharmacophore</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.alignment</span><span class="w"> </span><span class="kn">import</span> <span class="n">align_to_pharmacophore</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.correspondence</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">_essential_anchors</span><span class="p">,</span>
+    <span class="n">get_correspondences</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.pose_evaluation</span><span class="w"> </span><span class="kn">import</span> <span class="n">PoseEvaluator</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.screening.scoring</span><span class="w"> </span><span class="kn">import</span> <span class="n">get_screening_score</span>
+
+
+<div class="viewcode-block" id="RigidPoseSearch">
+<a class="viewcode-back" href="../../../pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_search.RigidPoseSearch">[docs]</a>
+<span class="k">class</span><span class="w"> </span><span class="nc">RigidPoseSearch</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">"""Find a placed rigid ligand pose from essential-center triplet seeds.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    pharmacophore : Pharmacophore</span>
+<span class="sd">        Query with at least three essential non-collinear centers.</span>
+<span class="sd">    max_trials : int, default=10000</span>
+<span class="sd">        Maximum raw candidate triplet products visited before truncation.</span>
+<span class="sd">    point_tolerance : length quantity, default='0.10 nm'</span>
+<span class="sd">        Point-site tolerance, shared with correspondence and pose evaluation.</span>
+<span class="sd">    direction_tolerance : angle quantity, default='30 degrees'</span>
+<span class="sd">        Donor-H and aromatic-axis tolerance used after alignment.</span>
+<span class="sd">    min_fit_value : float, default=0.0</span>
+<span class="sd">        Minimum weighted coverage for a hit.</span>
+<span class="sd">    search_method : {'placed_and_triplets', 'seeded_hit'}</span>
+<span class="sd">        The compatibility default also tests the supplied pose. Explicit</span>
+<span class="sd">        'seeded_hit' tests fitted triplet seeds only and returns a binary</span>
+<span class="sd">        ranking_score, independent of input placement. Partial fit_value remains</span>
+<span class="sd">        checked-pose evidence, never the molecular score.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    The compatibility method is rigid_triplet_fit@1; seed-only binary ranking</span>
+<span class="sd">    uses rigid_triplet_seed_hit@1. Proposed center fits are checked by</span>
+<span class="sd">    PoseEvaluator, including all essential sites and exclusions. Neither method</span>
+<span class="sd">    guarantees exhaustive continuous tolerance solutions or generates conformers.</span>
+<span class="sd">    A budget-exhausted search raises unless a valid hit establishes the maximum</span>
+<span class="sd">    for the selected criterion (unit coverage or binary hit respectively).</span>
+<span class="sd">    A complete method negative is reported explicitly.</span>
+<span class="sd">    Molecular inputs are never modified. Returned results are portable; the best</span>
+<span class="sd">    alignment retains fitted coordinates and can be reproduced with the public</span>
+<span class="sd">    alignment tool. Recognition and provider failures retain their cause.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; search = RigidPoseSearch(query, max_trials=10000)</span>
+<span class="sd">    &gt;&gt;&gt; result = search.evaluate(prepared_ligand)</span>
+<span class="sd">    """</span>
+
+    <span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"screening"</span><span class="p">,</span> <span class="s2">"rigid_search"</span><span class="p">,</span> <span class="s2">"init"</span><span class="p">])</span>
+    <span class="nd">@arg_digest</span><span class="p">()</span>
+    <span class="k">def</span><span class="w"> </span><span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">pharmacophore</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">max_trials</span><span class="o">=</span><span class="mi">10000</span><span class="p">,</span>
+        <span class="n">point_tolerance</span><span class="o">=</span><span class="s2">"0.10 nm"</span><span class="p">,</span>
+        <span class="n">direction_tolerance</span><span class="o">=</span><span class="s2">"30 degrees"</span><span class="p">,</span>
+        <span class="n">min_fit_value</span><span class="o">=</span><span class="mf">0.0</span><span class="p">,</span>
+        <span class="n">search_method</span><span class="o">=</span><span class="s2">"placed_and_triplets"</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">search_method</span> <span class="o">=</span> <span class="n">digest_search_method</span><span class="p">(</span><span class="n">search_method</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">score_method</span> <span class="o">=</span> <span class="s2">"seeded_hit"</span> <span class="k">if</span> <span class="n">search_method</span> <span class="o">==</span> <span class="s2">"seeded_hit"</span> <span class="k">else</span> <span class="kc">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span> <span class="o">=</span> <span class="n">PoseEvaluator</span><span class="p">(</span>
+            <span class="n">pharmacophore</span><span class="p">,</span>
+            <span class="n">point_tolerance</span><span class="o">=</span><span class="n">point_tolerance</span><span class="p">,</span>
+            <span class="n">direction_tolerance</span><span class="o">=</span><span class="n">direction_tolerance</span><span class="p">,</span>
+            <span class="n">min_fit_value</span><span class="o">=</span><span class="n">min_fit_value</span><span class="p">,</span>
+        <span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pharmacophore</span> <span class="o">=</span> <span class="n">Pharmacophore</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pharmacophore</span><span class="o">.</span><span class="n">interaction_sites</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">sites</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pharmacophore</span><span class="o">.</span><span class="n">n_interaction_sites</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">sites</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">pharmacophore</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">model_metadata</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">max_trials</span> <span class="o">=</span> <span class="n">max_trials</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">point_tolerance</span> <span class="o">=</span> <span class="n">point_tolerance</span>
+        <span class="n">_essential_anchors</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="p">)</span>
+
+<div class="viewcode-block" id="RigidPoseSearch.evaluate">
+<a class="viewcode-back" href="../../../pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_search.RigidPoseSearch.evaluate">[docs]</a>
+    <span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"screening"</span><span class="p">,</span> <span class="s2">"rigid_search"</span><span class="p">,</span> <span class="s2">"evaluate"</span><span class="p">])</span>
+    <span class="nd">@arg_digest</span><span class="p">()</span>
+    <span class="nd">@attributed</span><span class="p">()</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">evaluate</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">molecular_system</span><span class="p">,</span>
+        <span class="o">*</span><span class="p">,</span>
+        <span class="n">selection</span><span class="o">=</span><span class="s2">"all"</span><span class="p">,</span>
+        <span class="n">structure_index</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+        <span class="n">chemical_state</span><span class="o">=</span><span class="s2">"reference"</span><span class="p">,</span>
+        <span class="n">pose_id</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Return the best checked coverage, alignment and search evidence.</span>
+
+<span class="sd">        The compatibility method includes the supplied placement and stops at</span>
+<span class="sd">        unit coverage. Explicit seeded_hit excludes that placement, stops at the</span>
+<span class="sd">        first fitted admissible hit and reports binary ranking_score. Complete</span>
+<span class="sd">        negatives with no fitted pose have pose_evaluated=False and fit_value=None;</span>
+<span class="sd">        no assignments or placed coordinates are invented. Other fitted coverage</span>
+<span class="sd">        remains pose evidence. Incomplete unproven searches and provider failures</span>
+<span class="sd">        raise PoseEvaluationError retaining their cause.</span>
+<span class="sd">        """</span>
+        <span class="n">stage</span> <span class="o">=</span> <span class="s2">"recognition"</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="n">options</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">selection</span><span class="o">=</span><span class="n">selection</span><span class="p">,</span>
+                <span class="n">structure_index</span><span class="o">=</span><span class="n">structure_index</span><span class="p">,</span>
+                <span class="n">chemical_state</span><span class="o">=</span><span class="n">chemical_state</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">requested</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span>
+                <span class="p">{</span><span class="n">kind</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">site</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">query</span> <span class="k">for</span> <span class="n">kind</span> <span class="ow">in</span> <span class="n">site</span><span class="o">.</span><span class="n">features</span><span class="p">}</span>
+            <span class="p">)</span>
+            <span class="n">inventory</span> <span class="o">=</span> <span class="n">get_features</span><span class="p">(</span><span class="n">molecular_system</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="n">requested</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span><span class="p">)</span>
+            <span class="n">stage</span> <span class="o">=</span> <span class="s2">"correspondence"</span>
+            <span class="n">proposals</span> <span class="o">=</span> <span class="n">get_correspondences</span><span class="p">(</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">pharmacophore</span><span class="p">,</span>
+                <span class="n">inventory</span><span class="p">,</span>
+                <span class="n">point_tolerance</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">point_tolerance</span><span class="p">,</span>
+                <span class="n">max_trials</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_trials</span><span class="p">,</span>
+            <span class="p">)</span>
+            <span class="n">seeded</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">search_method</span> <span class="o">==</span> <span class="s2">"seeded_hit"</span>
+            <span class="n">stage</span> <span class="o">=</span> <span class="s2">"matching"</span>
+            <span class="c1"># A seed-only search never ranks the arbitrary supplied placement.</span>
+            <span class="c1"># With no fitted pose, no pose coverage or assignments are invented.</span>
+            <span class="n">best</span> <span class="o">=</span> <span class="p">(</span>
+                <span class="kc">None</span>
+                <span class="k">if</span> <span class="n">seeded</span>
+                <span class="k">else</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span>
+                    <span class="n">molecular_system</span><span class="p">,</span> <span class="n">pose_id</span><span class="o">=</span><span class="n">pose_id</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+            <span class="n">best_alignment</span><span class="p">,</span> <span class="n">n_fitted</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span> <span class="mi">0</span>
+
+            <span class="k">def</span><span class="w"> </span><span class="nf">maximum</span><span class="p">(</span><span class="n">result</span><span class="p">):</span>
+                <span class="k">return</span> <span class="p">(</span>
+                    <span class="n">result</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span>
+                    <span class="ow">and</span> <span class="n">result</span><span class="p">[</span><span class="s2">"status"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"matched"</span>
+                    <span class="ow">and</span> <span class="p">(</span><span class="n">seeded</span> <span class="ow">or</span> <span class="n">result</span><span class="p">[</span><span class="s2">"fit_value"</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">)</span>
+                <span class="p">)</span>
+
+            <span class="n">optimal</span> <span class="o">=</span> <span class="n">maximum</span><span class="p">(</span><span class="n">best</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">correspondence</span> <span class="ow">in</span> <span class="n">proposals</span><span class="p">[</span><span class="s2">"correspondences"</span><span class="p">]:</span>
+                <span class="k">if</span> <span class="n">optimal</span><span class="p">:</span>
+                    <span class="k">break</span>
+                <span class="n">stage</span> <span class="o">=</span> <span class="s2">"alignment"</span>
+                <span class="n">aligned</span> <span class="o">=</span> <span class="n">align_to_pharmacophore</span><span class="p">(</span>
+                    <span class="n">molecular_system</span><span class="p">,</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">pharmacophore</span><span class="p">,</span>
+                    <span class="n">correspondence</span><span class="p">,</span>
+                    <span class="n">feature_inventory</span><span class="o">=</span><span class="n">inventory</span><span class="p">,</span>
+                    <span class="o">**</span><span class="n">options</span><span class="p">,</span>
+                <span class="p">)</span>
+                <span class="n">n_fitted</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">stage</span> <span class="o">=</span> <span class="s2">"matching"</span>
+                <span class="n">result</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span>
+                    <span class="n">aligned</span><span class="p">[</span><span class="s2">"molecular_system"</span><span class="p">],</span> <span class="n">pose_id</span><span class="o">=</span><span class="n">pose_id</span><span class="p">,</span> <span class="o">**</span><span class="n">options</span>
+                <span class="p">)</span>
+                <span class="c1"># Preserve the existence of a valid hit even if an inadmissible</span>
+                <span class="c1"># pose covers more optional sites but violates an exclusion.</span>
+                <span class="k">if</span> <span class="n">best</span> <span class="ow">is</span> <span class="kc">None</span> <span class="ow">or</span> <span class="p">(</span>
+                    <span class="n">result</span><span class="p">[</span><span class="s2">"status"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"matched"</span><span class="p">,</span>
+                    <span class="n">result</span><span class="p">[</span><span class="s2">"fit_value"</span><span class="p">],</span>
+                <span class="p">)</span> <span class="o">&gt;</span> <span class="p">(</span>
+                    <span class="n">best</span><span class="p">[</span><span class="s2">"status"</span><span class="p">]</span> <span class="o">==</span> <span class="s2">"matched"</span><span class="p">,</span>
+                    <span class="n">best</span><span class="p">[</span><span class="s2">"fit_value"</span><span class="p">],</span>
+                <span class="p">):</span>
+                    <span class="n">best</span><span class="p">,</span> <span class="n">best_alignment</span> <span class="o">=</span> <span class="n">result</span><span class="p">,</span> <span class="n">aligned</span><span class="p">[</span><span class="s2">"alignment"</span><span class="p">]</span>
+                <span class="n">optimal</span> <span class="o">=</span> <span class="n">maximum</span><span class="p">(</span><span class="n">best</span><span class="p">)</span>
+            <span class="k">if</span> <span class="ow">not</span> <span class="n">proposals</span><span class="p">[</span><span class="s2">"complete"</span><span class="p">]</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">optimal</span><span class="p">:</span>
+                <span class="n">stage</span> <span class="o">=</span> <span class="s2">"search_budget"</span>
+                <span class="k">raise</span> <span class="n">SearchLimitError</span><span class="p">(</span>
+                    <span class="n">max_trials</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_trials</span><span class="p">,</span> <span class="n">n_trials</span><span class="o">=</span><span class="n">proposals</span><span class="p">[</span><span class="s2">"n_trials"</span><span class="p">]</span>
+                <span class="p">)</span>
+        <span class="k">except</span> <span class="n">PoseEvaluationError</span><span class="p">:</span>
+            <span class="k">raise</span>
+        <span class="k">except</span> <span class="ne">Exception</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">PoseEvaluationError</span><span class="p">(</span>
+                <span class="n">pose_id</span><span class="o">=</span><span class="n">pose_id</span><span class="p">,</span> <span class="n">stage</span><span class="o">=</span><span class="n">stage</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="nb">str</span><span class="p">(</span><span class="n">error</span><span class="p">)</span>
+            <span class="p">)</span> <span class="kn">from</span><span class="w"> </span><span class="nn">error</span>
+        <span class="k">if</span> <span class="n">best</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="n">best</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">status</span><span class="o">=</span><span class="s2">"not_matched"</span><span class="p">,</span>
+                <span class="n">fit_value</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span>
+                <span class="n">pose_id</span><span class="o">=</span><span class="n">pose_id</span><span class="p">,</span>
+                <span class="n">structure_index</span><span class="o">=</span><span class="n">inventory</span><span class="p">[</span><span class="s2">"structure_index"</span><span class="p">],</span>
+                <span class="n">selected_atom_indices</span><span class="o">=</span><span class="n">inventory</span><span class="p">[</span><span class="s2">"selected_atom_indices"</span><span class="p">],</span>
+                <span class="n">chemical_state</span><span class="o">=</span><span class="n">inventory</span><span class="p">[</span><span class="s2">"chemical_state"</span><span class="p">],</span>
+                <span class="n">recognition</span><span class="o">=</span><span class="n">detached</span><span class="p">(</span><span class="n">inventory</span><span class="p">[</span><span class="s2">"recognition"</span><span class="p">]),</span>
+                <span class="n">model_metadata</span><span class="o">=</span><span class="n">deepcopy</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">evaluator</span><span class="o">.</span><span class="n">model_metadata</span><span class="p">),</span>
+                <span class="n">software</span><span class="o">=</span><span class="p">{</span><span class="s2">"pharmacophoremt"</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span> <span class="s2">"molsysmt"</span><span class="p">:</span> <span class="n">msm</span><span class="o">.</span><span class="n">__version__</span><span class="p">},</span>
+            <span class="p">)</span>
+        <span class="n">result</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">best</span><span class="p">,</span>
+            <span class="n">pose_evaluated</span><span class="o">=</span><span class="ow">not</span> <span class="n">seeded</span> <span class="ow">or</span> <span class="n">n_fitted</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">,</span>
+            <span class="n">alignment</span><span class="o">=</span><span class="n">best_alignment</span><span class="p">,</span>
+            <span class="n">search</span><span class="o">=</span><span class="nb">dict</span><span class="p">(</span>
+                <span class="n">method</span><span class="o">=</span><span class="s2">"rigid_triplet_seed_hit@1"</span> <span class="k">if</span> <span class="n">seeded</span> <span class="k">else</span> <span class="s2">"rigid_triplet_fit@1"</span><span class="p">,</span>
+                <span class="n">max_trials</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">max_trials</span><span class="p">,</span>
+                <span class="n">n_trials</span><span class="o">=</span><span class="n">proposals</span><span class="p">[</span><span class="s2">"n_trials"</span><span class="p">],</span>
+                <span class="n">n_pruned</span><span class="o">=</span><span class="n">proposals</span><span class="p">[</span><span class="s2">"n_pruned"</span><span class="p">],</span>
+                <span class="n">n_proposals</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">proposals</span><span class="p">[</span><span class="s2">"correspondences"</span><span class="p">]),</span>
+                <span class="n">n_fitted</span><span class="o">=</span><span class="n">n_fitted</span><span class="p">,</span>
+                <span class="n">enumeration_complete</span><span class="o">=</span><span class="n">proposals</span><span class="p">[</span><span class="s2">"complete"</span><span class="p">],</span>
+                <span class="n">termination</span><span class="o">=</span><span class="p">(</span><span class="s2">"hit_found"</span> <span class="k">if</span> <span class="n">seeded</span> <span class="k">else</span> <span class="s2">"optimal_fit_found"</span><span class="p">)</span>
+                <span class="k">if</span> <span class="n">optimal</span>
+                <span class="k">else</span> <span class="s2">"enumeration_complete"</span><span class="p">,</span>
+                <span class="n">identity_pose_tested</span><span class="o">=</span><span class="ow">not</span> <span class="n">seeded</span><span class="p">,</span>
+            <span class="p">),</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">seeded</span><span class="p">:</span>
+            <span class="n">result</span><span class="p">[</span><span class="s2">"score_method"</span><span class="p">]</span> <span class="o">=</span> <span class="s2">"seeded_hit@1"</span>
+            <span class="n">result</span><span class="p">[</span><span class="s2">"ranking_score"</span><span class="p">]</span> <span class="o">=</span> <span class="n">get_screening_score</span><span class="p">(</span>
+                <span class="n">result</span><span class="p">,</span> <span class="n">score_method</span><span class="o">=</span><span class="s2">"seeded_hit"</span>
+            <span class="p">)</span>
+        <span class="k">return</span> <span class="n">result</span></div>
+
+
+<div class="viewcode-block" id="RigidPoseSearch.run">
+<a class="viewcode-back" href="../../../pharmacophoremt.screening.html#pharmacophoremt.screening.rigid_search.RigidPoseSearch.run">[docs]</a>
+    <span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"screening"</span><span class="p">,</span> <span class="s2">"rigid_search"</span><span class="p">,</span> <span class="s2">"batch"</span><span class="p">])</span>
+    <span class="nd">@arg_digest</span><span class="p">()</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">run</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">molecular_database</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">on_error</span><span class="o">=</span><span class="s2">"raise"</span><span class="p">,</span> <span class="o">**</span><span class="n">evaluation_options</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">"""Search each prepared input with stable identity and explicit failures.</span>
+
+<span class="sd">        With on_error='record', failures have fit_value=None and keep their cause.</span>
+<span class="sd">        Otherwise the first failed search raises. One source frame is searched</span>
+<span class="sd">        per input; repeated objects and generators retain independent indices.</span>
+<span class="sd">        """</span>
+        <span class="k">return</span> <span class="n">run_evaluations</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">molecular_database</span><span class="p">,</span> <span class="n">on_error</span><span class="p">,</span> <span class="n">evaluation_options</span><span class="p">)</span></div>
+</div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

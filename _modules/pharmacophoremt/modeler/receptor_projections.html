@@ -1,0 +1,757 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>pharmacophoremt.modeler.receptor_projections – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pharmacophoremt/modeler/receptor_projections';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt.modeler.receptor_projections</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pharmacophoremt.modeler.receptor_projections</h1><div class="highlight"><pre>
+<span></span><span class="sd">"""Complementary pharmacophoric hypotheses from cached receptor features."""</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">copy</span><span class="w"> </span><span class="kn">import</span> <span class="n">deepcopy</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">argdigest</span><span class="w"> </span><span class="kn">import</span> <span class="n">arg_digest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">smonitor</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyunitwizard</span> <span class="k">as</span> <span class="n">puw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._ackredit</span><span class="w"> </span><span class="kn">import</span> <span class="n">attributed</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.arg_digestion.argument._contracts</span><span class="w"> </span><span class="kn">import</span> <span class="p">(</span>
+    <span class="n">digest_center</span><span class="p">,</span>
+    <span class="n">digest_direction</span><span class="p">,</span>
+    <span class="n">digest_feature_inventory</span><span class="p">,</span>
+    <span class="n">digest_projection_specs</span><span class="p">,</span>
+    <span class="n">digest_radius</span><span class="p">,</span>
+    <span class="n">digest_structure_index</span><span class="p">,</span>
+<span class="p">)</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.molsysmt</span><span class="w"> </span><span class="kn">import</span> <span class="n">detached</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.smonitor.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">ArgumentError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._version</span><span class="w"> </span><span class="kn">import</span> <span class="n">__version__</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.interaction_site</span><span class="w"> </span><span class="kn">import</span> <span class="n">InteractionSite</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.interaction_site.shape</span><span class="w"> </span><span class="kn">import</span> <span class="n">Disk</span><span class="p">,</span> <span class="n">Sphere</span><span class="p">,</span> <span class="n">SphereAndVector</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.pharmacophore</span><span class="w"> </span><span class="kn">import</span> <span class="n">Pharmacophore</span>
+
+<span class="n">METHOD</span> <span class="o">=</span> <span class="s2">"explicit_receptor_projection@1"</span>
+<span class="n">COMPLEMENTS</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s2">"hb donor"</span><span class="p">:</span> <span class="s2">"hb acceptor"</span><span class="p">,</span>
+    <span class="s2">"hb acceptor"</span><span class="p">:</span> <span class="s2">"hb donor"</span><span class="p">,</span>
+    <span class="s2">"aromatic ring"</span><span class="p">:</span> <span class="s2">"aromatic ring"</span><span class="p">,</span>
+    <span class="s2">"positive charge"</span><span class="p">:</span> <span class="s2">"negative charge"</span><span class="p">,</span>
+    <span class="s2">"negative charge"</span><span class="p">:</span> <span class="s2">"positive charge"</span><span class="p">,</span>
+    <span class="s2">"hydrophobicity"</span><span class="p">:</span> <span class="s2">"hydrophobicity"</span><span class="p">,</span>
+<span class="p">}</span>
+
+
+<span class="k">def</span><span class="w"> </span><span class="nf">_specifications</span><span class="p">(</span><span class="n">inventory</span><span class="p">,</span> <span class="n">specs</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Validate declared query decisions, without inferring molecular geometry."""</span>
+    <span class="n">digest_projection_specs</span><span class="p">(</span><span class="n">specs</span><span class="p">)</span>
+    <span class="n">allowed</span> <span class="o">=</span> <span class="p">{</span>
+        <span class="s2">"feature_index"</span><span class="p">,</span>
+        <span class="s2">"projection_direction"</span><span class="p">,</span>
+        <span class="s2">"distance"</span><span class="p">,</span>
+        <span class="s2">"label"</span><span class="p">,</span>
+        <span class="s2">"target_direction"</span><span class="p">,</span>
+        <span class="s2">"target_normal"</span><span class="p">,</span>
+        <span class="s2">"evidence"</span><span class="p">,</span>
+    <span class="p">}</span>
+    <span class="n">required</span> <span class="o">=</span> <span class="p">{</span><span class="s2">"feature_index"</span><span class="p">,</span> <span class="s2">"projection_direction"</span><span class="p">,</span> <span class="s2">"distance"</span><span class="p">,</span> <span class="s2">"label"</span><span class="p">}</span>
+    <span class="n">normalized</span><span class="p">,</span> <span class="n">seen</span> <span class="o">=</span> <span class="p">[],</span> <span class="nb">set</span><span class="p">()</span>
+    <span class="k">for</span> <span class="n">spec</span> <span class="ow">in</span> <span class="n">specs</span><span class="p">:</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="n">required</span> <span class="o">&lt;=</span> <span class="n">spec</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="ow">or</span> <span class="n">spec</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span> <span class="o">-</span> <span class="n">allowed</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"projection_specs"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"missing or unknown projection fields"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">index</span> <span class="o">=</span> <span class="n">digest_structure_index</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"feature_index"</span><span class="p">])</span>
+        <span class="k">if</span> <span class="n">index</span> <span class="o">&gt;=</span> <span class="nb">len</span><span class="p">(</span><span class="n">inventory</span><span class="p">[</span><span class="s2">"features"</span><span class="p">])</span> <span class="ow">or</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">seen</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"projection_specs"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"require unique existing feature indices; build alternative directions as separate hypotheses"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">seen</span><span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">index</span><span class="p">)</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"label"</span><span class="p">],</span> <span class="nb">str</span><span class="p">)</span> <span class="ow">or</span> <span class="ow">not</span> <span class="n">spec</span><span class="p">[</span><span class="s2">"label"</span><span class="p">]</span><span class="o">.</span><span class="n">strip</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"projection_specs"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"declare a nonempty hypothesis label"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="k">if</span> <span class="s2">"evidence"</span> <span class="ow">in</span> <span class="n">spec</span> <span class="ow">and</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"evidence"</span><span class="p">],</span> <span class="nb">dict</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"projection_specs"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"projection evidence must be a mapping"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">kind</span> <span class="o">=</span> <span class="n">COMPLEMENTS</span><span class="p">[</span><span class="n">inventory</span><span class="p">[</span><span class="s2">"features"</span><span class="p">][</span><span class="n">index</span><span class="p">][</span><span class="s2">"kind"</span><span class="p">]]</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">kind</span> <span class="o">==</span> <span class="s2">"hb donor"</span><span class="p">)</span> <span class="o">!=</span> <span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"target_direction"</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">)</span> <span class="ow">or</span> <span class="p">(</span>
+            <span class="n">kind</span> <span class="o">==</span> <span class="s2">"aromatic ring"</span>
+        <span class="p">)</span> <span class="o">!=</span> <span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"target_normal"</span><span class="p">)</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"projection_specs"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"declare target_direction only for donor targets and target_normal only for aromatic targets"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">normalized</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">feature_index</span><span class="o">=</span><span class="n">index</span><span class="p">,</span>
+                <span class="n">label</span><span class="o">=</span><span class="n">spec</span><span class="p">[</span><span class="s2">"label"</span><span class="p">],</span>
+                <span class="n">projection_direction</span><span class="o">=</span><span class="n">digest_direction</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"projection_direction"</span><span class="p">]),</span>
+                <span class="n">distance</span><span class="o">=</span><span class="n">digest_radius</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"distance"</span><span class="p">]),</span>
+                <span class="n">target_direction</span><span class="o">=</span><span class="kc">None</span>
+                <span class="k">if</span> <span class="n">kind</span> <span class="o">!=</span> <span class="s2">"hb donor"</span>
+                <span class="k">else</span> <span class="n">digest_direction</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"target_direction"</span><span class="p">]),</span>
+                <span class="n">target_normal</span><span class="o">=</span><span class="kc">None</span>
+                <span class="k">if</span> <span class="n">kind</span> <span class="o">!=</span> <span class="s2">"aromatic ring"</span>
+                <span class="k">else</span> <span class="n">digest_direction</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"target_normal"</span><span class="p">]),</span>
+                <span class="n">evidence</span><span class="o">=</span><span class="n">detached</span><span class="p">(</span><span class="n">spec</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"evidence"</span><span class="p">,</span> <span class="p">{})),</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">normalized</span>
+
+
+<div class="viewcode-block" id="from_receptor_projections">
+<a class="viewcode-back" href="../../../pharmacophoremt.modeler.html#pharmacophoremt.modeler.receptor_projections.from_receptor_projections">[docs]</a>
+<span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"modeling"</span><span class="p">,</span> <span class="s2">"receptor_projections"</span><span class="p">])</span>
+<span class="nd">@arg_digest</span><span class="p">()</span>
+<span class="nd">@attributed</span><span class="p">(</span><span class="s2">"numpy"</span><span class="p">,</span> <span class="s2">"pyunitwizard"</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">from_receptor_projections</span><span class="p">(</span>
+    <span class="n">feature_inventory</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">projection_specs</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="s2">"0.15 nm"</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Build one complementary ligand hypothesis from declared receptor features.</span>
+
+<span class="sd">    ``feature_inventory`` is a cached native ``get_features`` inventory containing</span>
+<span class="sd">    only classical chemical features. ``projection_specs`` is an explicit list</span>
+<span class="sd">    (possibly empty) of mappings with ``feature_index``, ``projection_direction``,</span>
+<span class="sd">    positive explicit-unit ``distance`` and nonempty ``label``. The direction is</span>
+<span class="sd">    normalized as a query parameter; the target center is the source feature</span>
+<span class="sd">    center plus distance times that direction. Unlisted features emit no sites.</span>
+
+<span class="sd">    Each source feature may appear once in a hypothesis. Alternative faces or</span>
+<span class="sd">    directions require separate calls. A receptor acceptor yields a ligand donor</span>
+<span class="sd">    and requires an independent ``target_direction``. Aromatic targets require an</span>
+<span class="sd">    independent ``target_normal``. These target orientations are dimensionless</span>
+<span class="sd">    query parameters; they are not inferred from the projection direction.</span>
+<span class="sd">    Other targets are spheres and cannot declare target orientation. Receptor</span>
+<span class="sd">    donors yield spherical acceptors, compatible with the native undirected</span>
+<span class="sd">    acceptor inventory. Charges are complemented; hydrophobic/aromatic kinds</span>
+<span class="sd">    retain their kind. Optional ``evidence`` mappings retain caller declarations.</span>
+
+<span class="sd">    This operation places pharmacophoric query geometry, without accessing or</span>
+<span class="sd">    moving molecular atoms, computing bond directions, finding pockets, assigning</span>
+<span class="sd">    chemistry, or detecting observed interactions. Inventory origin, common frame</span>
+<span class="sd">    and physical justification of each projection remain caller declarations.</span>
+<span class="sd">    Molecular geometry must come from public MolSysMT tools; missing donor/local</span>
+<span class="sd">    acceptor direction capabilities are tracked in MolSysMT #375. There are no</span>
+<span class="sd">    default projection distances, directions or chemical-repair fallbacks.</span>
+
+<span class="sd">    The returned Pharmacophore contains essential sites of weight one and</span>
+<span class="sd">    detached source/specification provenance. An explicit empty projection list</span>
+<span class="sd">    returns an empty hypothesis, which is not a valid positive PoseEvaluator query.</span>
+<span class="sd">    Native quantity inventories are required; detached JSON is not decoded here.</span>
+<span class="sd">    Cached attribution is preserved without crediting new molecular recognition.</span>
+<span class="sd">    This method does not assert equivalence to retired structure-based heuristics</span>
+<span class="sd">    or biological validity. Radius is a matching tolerance, independent of distance.</span>
+<span class="sd">    """</span>
+    <span class="k">if</span> <span class="n">feature_inventory</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"feature_inventory"</span><span class="p">,</span> <span class="n">reason</span><span class="o">=</span><span class="s2">"provide a cached receptor inventory"</span>
+        <span class="p">)</span>
+    <span class="n">digest_feature_inventory</span><span class="p">(</span><span class="n">feature_inventory</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">any</span><span class="p">(</span>
+        <span class="n">record</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">COMPLEMENTS</span> <span class="k">for</span> <span class="n">record</span> <span class="ow">in</span> <span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]</span>
+    <span class="p">):</span>
+        <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+            <span class="n">argument</span><span class="o">=</span><span class="s2">"feature_inventory"</span><span class="p">,</span>
+            <span class="n">reason</span><span class="o">=</span><span class="s2">"use a chemical receptor inventory; exclusions are separate"</span><span class="p">,</span>
+        <span class="p">)</span>
+    <span class="n">specs</span> <span class="o">=</span> <span class="n">_specifications</span><span class="p">(</span><span class="n">feature_inventory</span><span class="p">,</span> <span class="n">projection_specs</span><span class="p">)</span>
+    <span class="n">radius</span> <span class="o">=</span> <span class="n">digest_radius</span><span class="p">(</span><span class="n">radius</span><span class="p">)</span>
+    <span class="n">model</span> <span class="o">=</span> <span class="n">Pharmacophore</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="n">name</span><span class="p">,</span> <span class="n">ref_struct</span><span class="o">=</span><span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"structure_index"</span><span class="p">])</span>
+    <span class="n">rows</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">site_index</span><span class="p">,</span> <span class="n">spec</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">specs</span><span class="p">):</span>
+        <span class="n">record</span> <span class="o">=</span> <span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"features"</span><span class="p">][</span><span class="n">spec</span><span class="p">[</span><span class="s2">"feature_index"</span><span class="p">]]</span>
+        <span class="n">kind</span> <span class="o">=</span> <span class="n">COMPLEMENTS</span><span class="p">[</span><span class="n">record</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">]]</span>
+        <span class="n">source_center</span> <span class="o">=</span> <span class="n">digest_center</span><span class="p">(</span><span class="n">record</span><span class="p">[</span><span class="s2">"center"</span><span class="p">])</span>
+        <span class="n">center</span> <span class="o">=</span> <span class="n">digest_center</span><span class="p">(</span>
+            <span class="n">puw</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">source_center</span><span class="p">,</span> <span class="n">to_unit</span><span class="o">=</span><span class="s2">"nm"</span><span class="p">)</span>
+            <span class="o">+</span> <span class="n">spec</span><span class="p">[</span><span class="s2">"projection_direction"</span><span class="p">]</span> <span class="o">*</span> <span class="n">puw</span><span class="o">.</span><span class="n">convert</span><span class="p">(</span><span class="n">spec</span><span class="p">[</span><span class="s2">"distance"</span><span class="p">],</span> <span class="n">to_unit</span><span class="o">=</span><span class="s2">"nm"</span><span class="p">)</span>
+        <span class="p">)</span>
+        <span class="k">if</span> <span class="n">kind</span> <span class="o">==</span> <span class="s2">"hb donor"</span><span class="p">:</span>
+            <span class="n">shape</span> <span class="o">=</span> <span class="n">SphereAndVector</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">radius</span><span class="p">),</span> <span class="n">spec</span><span class="p">[</span><span class="s2">"target_direction"</span><span class="p">])</span>
+        <span class="k">elif</span> <span class="n">kind</span> <span class="o">==</span> <span class="s2">"aromatic ring"</span><span class="p">:</span>
+            <span class="n">shape</span> <span class="o">=</span> <span class="n">Disk</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">spec</span><span class="p">[</span><span class="s2">"target_normal"</span><span class="p">],</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">radius</span><span class="p">))</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">shape</span> <span class="o">=</span> <span class="n">Sphere</span><span class="p">(</span><span class="n">center</span><span class="p">,</span> <span class="n">deepcopy</span><span class="p">(</span><span class="n">radius</span><span class="p">))</span>
+        <span class="n">metadata</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">method</span><span class="o">=</span><span class="n">METHOD</span><span class="p">,</span>
+                <span class="n">source_feature_index</span><span class="o">=</span><span class="n">spec</span><span class="p">[</span><span class="s2">"feature_index"</span><span class="p">],</span>
+                <span class="n">receptor_kind</span><span class="o">=</span><span class="n">record</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">],</span>
+                <span class="n">atom_indices</span><span class="o">=</span><span class="n">record</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">],</span>
+                <span class="n">geometry_atom_indices</span><span class="o">=</span><span class="n">record</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+                    <span class="s2">"geometry_atom_indices"</span><span class="p">,</span> <span class="n">record</span><span class="p">[</span><span class="s2">"atom_indices"</span><span class="p">]</span>
+                <span class="p">),</span>
+                <span class="n">structure_index</span><span class="o">=</span><span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"structure_index"</span><span class="p">],</span>
+                <span class="n">chemical_state</span><span class="o">=</span><span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"chemical_state"</span><span class="p">],</span>
+                <span class="n">projection</span><span class="o">=</span><span class="n">spec</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+        <span class="n">site</span> <span class="o">=</span> <span class="n">InteractionSite</span><span class="p">(</span><span class="n">shape</span><span class="p">,</span> <span class="n">kind</span><span class="p">,</span> <span class="n">metadata</span><span class="o">=</span><span class="n">metadata</span><span class="p">)</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">add_interaction_site</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+        <span class="n">rows</span><span class="o">.</span><span class="n">append</span><span class="p">(</span>
+            <span class="n">detached</span><span class="p">(</span>
+                <span class="nb">dict</span><span class="p">(</span>
+                    <span class="n">site_index</span><span class="o">=</span><span class="n">site_index</span><span class="p">,</span>
+                    <span class="n">feature_index</span><span class="o">=</span><span class="n">spec</span><span class="p">[</span><span class="s2">"feature_index"</span><span class="p">],</span>
+                    <span class="n">receptor_kind</span><span class="o">=</span><span class="n">record</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">],</span>
+                    <span class="n">target_kind</span><span class="o">=</span><span class="n">kind</span><span class="p">,</span>
+                    <span class="n">center</span><span class="o">=</span><span class="n">site</span><span class="o">.</span><span class="n">center</span><span class="p">,</span>
+                    <span class="n">shape</span><span class="o">=</span><span class="n">site</span><span class="o">.</span><span class="n">shape_name</span><span class="p">,</span>
+                <span class="p">)</span>
+            <span class="p">)</span>
+        <span class="p">)</span>
+    <span class="n">used</span> <span class="o">=</span> <span class="p">{</span><span class="n">spec</span><span class="p">[</span><span class="s2">"feature_index"</span><span class="p">]</span> <span class="k">for</span> <span class="n">spec</span> <span class="ow">in</span> <span class="n">specs</span><span class="p">}</span>
+    <span class="n">model</span><span class="o">.</span><span class="n">metadata</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+        <span class="nb">dict</span><span class="p">(</span>
+            <span class="n">method</span><span class="o">=</span><span class="n">METHOD</span><span class="p">,</span>
+            <span class="n">software</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">"pharmacophoremt"</span><span class="p">:</span> <span class="n">__version__</span><span class="p">,</span>
+                <span class="s2">"numpy"</span><span class="p">:</span> <span class="n">np</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+                <span class="s2">"pyunitwizard"</span><span class="p">:</span> <span class="n">puw</span><span class="o">.</span><span class="n">__version__</span><span class="p">,</span>
+            <span class="p">},</span>
+            <span class="n">source_inventory</span><span class="o">=</span><span class="n">feature_inventory</span><span class="p">,</span>
+            <span class="n">projection_specs</span><span class="o">=</span><span class="n">specs</span><span class="p">,</span>
+            <span class="n">supplied_projection_specs</span><span class="o">=</span><span class="n">projection_specs</span><span class="p">,</span>
+            <span class="n">emitted_radius</span><span class="o">=</span><span class="n">radius</span><span class="p">,</span>
+            <span class="n">sites</span><span class="o">=</span><span class="n">rows</span><span class="p">,</span>
+            <span class="n">omitted_feature_indices</span><span class="o">=</span><span class="p">[</span>
+                <span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"features"</span><span class="p">]))</span> <span class="k">if</span> <span class="n">i</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">used</span>
+            <span class="p">],</span>
+            <span class="n">policy</span><span class="o">=</span><span class="p">{</span>
+                <span class="s2">"common_frame"</span><span class="p">:</span> <span class="s2">"caller_declared"</span><span class="p">,</span>
+                <span class="s2">"placement"</span><span class="p">:</span> <span class="s2">"explicit_hypothesis"</span><span class="p">,</span>
+                <span class="s2">"molecular_geometry_inference"</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+            <span class="p">},</span>
+        <span class="p">)</span>
+    <span class="p">)</span>
+    <span class="k">if</span> <span class="s2">"attribution"</span> <span class="ow">in</span> <span class="n">feature_inventory</span><span class="p">:</span>
+        <span class="n">model</span><span class="o">.</span><span class="n">metadata</span><span class="p">[</span><span class="s2">"source_attribution"</span><span class="p">]</span> <span class="o">=</span> <span class="n">detached</span><span class="p">(</span>
+            <span class="n">feature_inventory</span><span class="p">[</span><span class="s2">"attribution"</span><span class="p">]</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="n">model</span></div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,771 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <title>pharmacophoremt.screening.feature_neighborhoods – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pharmacophoremt/screening/feature_neighborhoods';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../../_static/searchtools.js"></script>
+    <script src="../../../_static/language_data.js"></script>
+    <script src="../../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar hide-on-wide">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../../content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="../../index.html" class="nav-link">Module code</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt.screening.feature_neighborhoods</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <h1>Source code for pharmacophoremt.screening.feature_neighborhoods</h1><div class="highlight"><pre>
+<span></span><span class="sd">"""Typed pharmacophoric environments and explicit ranking of rigid triplets."""</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">numpy</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">np</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">argdigest</span><span class="w"> </span><span class="kn">import</span> <span class="n">arg_digest</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">scipy.optimize</span><span class="w"> </span><span class="kn">import</span> <span class="n">linear_sum_assignment</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">smonitor</span><span class="w"> </span><span class="kn">import</span> <span class="n">signal</span>
+
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt</span><span class="w"> </span><span class="kn">import</span> <span class="n">pyunitwizard</span> <span class="k">as</span> <span class="n">puw</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._ackredit</span><span class="w"> </span><span class="kn">import</span> <span class="n">attributed</span><span class="p">,</span> <span class="n">credit_criterion</span><span class="p">,</span> <span class="n">credit_software</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.molsysmt</span><span class="w"> </span><span class="kn">import</span> <span class="n">detached</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt._private.smonitor.exceptions</span><span class="w"> </span><span class="kn">import</span> <span class="n">ArgumentError</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.modeler.aligned_cliques</span><span class="w"> </span><span class="kn">import</span> <span class="n">_limit</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pharmacophoremt.modeler.aligned_consensus</span><span class="w"> </span><span class="kn">import</span> <span class="n">_records</span>
+
+<span class="n">METHOD</span> <span class="o">=</span> <span class="s2">"typed_neighborhood_assignment@1"</span>
+
+
+<div class="viewcode-block" id="get_feature_pair_dissimilarities">
+<a class="viewcode-back" href="../../../pharmacophoremt.screening.html#pharmacophoremt.screening.feature_neighborhoods.get_feature_pair_dissimilarities">[docs]</a>
+<span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"screening"</span><span class="p">,</span> <span class="s2">"correspondence"</span><span class="p">,</span> <span class="s2">"neighborhood"</span><span class="p">])</span>
+<span class="nd">@arg_digest</span><span class="p">()</span>
+<span class="nd">@attributed</span><span class="p">(</span><span class="s2">"numpy"</span><span class="p">,</span> <span class="s2">"pyunitwizard"</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">get_feature_pair_dissimilarities</span><span class="p">(</span>
+    <span class="n">reference_inventory</span><span class="p">,</span>
+    <span class="n">feature_inventory</span><span class="p">,</span>
+    <span class="o">*</span><span class="p">,</span>
+    <span class="n">distance_tolerance</span><span class="o">=</span><span class="s2">"0.15 nm"</span><span class="p">,</span>
+    <span class="n">max_matrix_entries</span><span class="o">=</span><span class="mi">1000000</span><span class="p">,</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Compare typed distance neighborhoods without molecular access or fitting.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    reference_inventory, feature_inventory : dict</span>
+<span class="sd">        Native classical inventories; output axes retain their original order.</span>
+<span class="sd">    distance_tolerance : length quantity</span>
+<span class="sd">        Uniform positional tolerance on both inventories. Neighbor distance</span>
+<span class="sd">        differences are divided by twice this tolerance and capped at one.</span>
+<span class="sd">    max_matrix_entries : int</span>
+<span class="sd">        Bound on each allocated distance, pair or padded neighbor-cost matrix.</span>
+<span class="sd">        This does not bound cumulative assignment work or elapsed time.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        Finite costs, compatible mask, axis sizes, assignment/work counts,</span>
+<span class="sd">        detached criteria and complete=True. Costs are dimensionless in [0, 1].</span>
+<span class="sd">        Different focal types are incompatible even when their numeric cost is 1.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Adapts G3PS section 2.2.1 (Permann et al., 2021): exclude each focal feature,</span>
+<span class="sd">    assign typed neighbor distances, then divide the optimal cost by the larger</span>
+<span class="sd">    whole-inventory feature count. Unmatched neighbors have unit cost through</span>
+<span class="sd">    explicit square padding. Uniform tolerances and this padding are declared</span>
+<span class="sd">    adaptations. Dissimilarity ranks guesses; it is not a safe rejection test or</span>
+<span class="sd">    a completed G3PS alignment. Orientations are checked after molecular fitting.</span>
+<span class="sd">    Empty axes succeed without an assignment. Resource exhaustion raises.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; costs = get_feature_pair_dissimilarities(reference, candidate)</span>
+<span class="sd">    &gt;&gt;&gt; compatible = costs['compatible']</span>
+<span class="sd">    """</span>
+    <span class="n">first</span><span class="p">,</span> <span class="n">second</span> <span class="o">=</span> <span class="n">_records</span><span class="p">(</span><span class="n">reference_inventory</span><span class="p">),</span> <span class="n">_records</span><span class="p">(</span><span class="n">feature_inventory</span><span class="p">)</span>
+    <span class="n">n_first</span><span class="p">,</span> <span class="n">n_second</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">first</span><span class="p">),</span> <span class="nb">len</span><span class="p">(</span><span class="n">second</span><span class="p">)</span>
+    <span class="n">nonempty</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="n">n_first</span> <span class="ow">and</span> <span class="n">n_second</span><span class="p">)</span>
+    <span class="n">neighbor_size</span> <span class="o">=</span> <span class="nb">max</span><span class="p">(</span><span class="n">n_first</span><span class="p">,</span> <span class="n">n_second</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span> <span class="k">if</span> <span class="n">nonempty</span> <span class="k">else</span> <span class="mi">0</span>
+    <span class="n">largest</span> <span class="o">=</span> <span class="p">(</span>
+        <span class="nb">max</span><span class="p">(</span><span class="n">n_first</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_second</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">n_first</span> <span class="o">*</span> <span class="n">n_second</span><span class="p">,</span> <span class="n">neighbor_size</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">nonempty</span>
+        <span class="k">else</span> <span class="mi">0</span>
+    <span class="p">)</span>
+    <span class="n">_limit</span><span class="p">(</span><span class="s2">"feature_neighborhoods"</span><span class="p">,</span> <span class="s2">"matrix entries"</span><span class="p">,</span> <span class="n">largest</span><span class="p">,</span> <span class="n">max_matrix_entries</span><span class="p">)</span>
+    <span class="n">costs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">n_first</span><span class="p">,</span> <span class="n">n_second</span><span class="p">))</span>
+    <span class="n">compatible</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="n">n_first</span><span class="p">,</span> <span class="n">n_second</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span>
+    <span class="n">assignments</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">nonempty</span><span class="p">:</span>
+        <span class="n">positions</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">r</span><span class="p">[</span><span class="s2">"center"</span><span class="p">]</span> <span class="k">for</span> <span class="n">r</span> <span class="ow">in</span> <span class="n">records</span><span class="p">])</span> <span class="k">for</span> <span class="n">records</span> <span class="ow">in</span> <span class="p">(</span><span class="n">first</span><span class="p">,</span> <span class="n">second</span><span class="p">)</span>
+        <span class="p">]</span>
+        <span class="n">distances</span> <span class="o">=</span> <span class="p">[</span>
+            <span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span><span class="p">(</span><span class="n">points</span><span class="p">[:,</span> <span class="kc">None</span><span class="p">,</span> <span class="p">:]</span> <span class="o">-</span> <span class="n">points</span><span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="p">:,</span> <span class="p">:],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+            <span class="k">for</span> <span class="n">points</span> <span class="ow">in</span> <span class="n">positions</span>
+        <span class="p">]</span>
+        <span class="n">denominator</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">float</span><span class="p">(</span><span class="n">puw</span><span class="o">.</span><span class="n">get_value</span><span class="p">(</span><span class="n">distance_tolerance</span><span class="p">,</span> <span class="n">to_unit</span><span class="o">=</span><span class="s2">"nm"</span><span class="p">))</span>
+        <span class="k">for</span> <span class="n">row</span><span class="p">,</span> <span class="n">reference</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">first</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">column</span><span class="p">,</span> <span class="n">candidate</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">second</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">reference</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">]</span> <span class="o">!=</span> <span class="n">candidate</span><span class="p">[</span><span class="s2">"kind"</span><span class="p">]:</span>
+                    <span class="k">continue</span>
+                <span class="n">compatible</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="kc">True</span>
+                <span class="k">if</span> <span class="ow">not</span> <span class="n">neighbor_size</span><span class="p">:</span>
+                    <span class="n">costs</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+                    <span class="k">continue</span>
+                <span class="n">neighbors</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="n">neighbor_size</span><span class="p">,</span> <span class="n">neighbor_size</span><span class="p">))</span>
+                <span class="n">left</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_first</span><span class="p">)</span> <span class="k">if</span> <span class="n">i</span> <span class="o">!=</span> <span class="n">row</span><span class="p">]</span>
+                <span class="n">right</span> <span class="o">=</span> <span class="p">[</span><span class="n">j</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n_second</span><span class="p">)</span> <span class="k">if</span> <span class="n">j</span> <span class="o">!=</span> <span class="n">column</span><span class="p">]</span>
+                <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">reference_index</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">left</span><span class="p">):</span>
+                    <span class="k">for</span> <span class="n">j</span><span class="p">,</span> <span class="n">candidate_index</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">right</span><span class="p">):</span>
+                        <span class="k">if</span> <span class="p">(</span>
+                            <span class="n">first</span><span class="p">[</span><span class="n">reference_index</span><span class="p">][</span><span class="s2">"kind"</span><span class="p">]</span>
+                            <span class="o">==</span> <span class="n">second</span><span class="p">[</span><span class="n">candidate_index</span><span class="p">][</span><span class="s2">"kind"</span><span class="p">]</span>
+                        <span class="p">):</span>
+                            <span class="n">neighbors</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span>
+                                <span class="nb">abs</span><span class="p">(</span>
+                                    <span class="n">distances</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="n">row</span><span class="p">,</span> <span class="n">reference_index</span><span class="p">]</span>
+                                    <span class="o">-</span> <span class="n">distances</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="n">column</span><span class="p">,</span> <span class="n">candidate_index</span><span class="p">]</span>
+                                <span class="p">)</span>
+                                <span class="o">/</span> <span class="n">denominator</span><span class="p">,</span>
+                                <span class="mf">1.0</span><span class="p">,</span>
+                            <span class="p">)</span>
+                <span class="n">rows</span><span class="p">,</span> <span class="n">columns</span> <span class="o">=</span> <span class="n">linear_sum_assignment</span><span class="p">(</span><span class="n">neighbors</span><span class="p">)</span>
+                <span class="n">costs</span><span class="p">[</span><span class="n">row</span><span class="p">,</span> <span class="n">column</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">neighbors</span><span class="p">[</span><span class="n">rows</span><span class="p">,</span> <span class="n">columns</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">())</span> <span class="o">/</span> <span class="nb">max</span><span class="p">(</span>
+                    <span class="n">n_first</span><span class="p">,</span> <span class="n">n_second</span>
+                <span class="p">)</span>
+                <span class="n">assignments</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">if</span> <span class="n">compatible</span><span class="o">.</span><span class="n">any</span><span class="p">():</span>
+            <span class="n">credit_criterion</span><span class="p">(</span>
+                <span class="s2">"g3ps_seed_ranking"</span><span class="p">,</span> <span class="vm">__name__</span> <span class="o">+</span> <span class="s2">".get_feature_pair_dissimilarities"</span>
+            <span class="p">)</span>
+        <span class="k">if</span> <span class="n">assignments</span><span class="p">:</span>
+            <span class="n">target</span> <span class="o">=</span> <span class="vm">__name__</span> <span class="o">+</span> <span class="s2">".get_feature_pair_dissimilarities.assignment"</span>
+            <span class="n">credit_software</span><span class="p">(</span><span class="s2">"scipy"</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+            <span class="n">credit_criterion</span><span class="p">(</span><span class="s2">"assignment"</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+    <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="n">METHOD</span><span class="p">,</span>
+        <span class="n">n_reference</span><span class="o">=</span><span class="n">n_first</span><span class="p">,</span>
+        <span class="n">n_candidate</span><span class="o">=</span><span class="n">n_second</span><span class="p">,</span>
+        <span class="n">costs</span><span class="o">=</span><span class="n">costs</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+        <span class="n">compatible</span><span class="o">=</span><span class="n">compatible</span><span class="o">.</span><span class="n">tolist</span><span class="p">(),</span>
+        <span class="n">complete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">n_pair_assignments</span><span class="o">=</span><span class="n">assignments</span><span class="p">,</span>
+        <span class="n">n_assignment_matrix_entries</span><span class="o">=</span><span class="n">assignments</span> <span class="o">*</span> <span class="n">neighbor_size</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span>
+        <span class="n">largest_matrix_entries</span><span class="o">=</span><span class="n">largest</span><span class="p">,</span>
+        <span class="n">criteria</span><span class="o">=</span><span class="n">detached</span><span class="p">(</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">distance_tolerance</span><span class="o">=</span><span class="n">distance_tolerance</span><span class="p">,</span>
+                <span class="n">distance_difference_denominator</span><span class="o">=</span><span class="s2">"twice_uniform_position_tolerance"</span><span class="p">,</span>
+                <span class="n">unmatched_neighbor_cost</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+                <span class="n">normalization</span><span class="o">=</span><span class="s2">"larger_whole_inventory_feature_count"</span><span class="p">,</span>
+                <span class="n">orientation_policy</span><span class="o">=</span><span class="s2">"post_fit_only"</span><span class="p">,</span>
+                <span class="n">max_matrix_entries</span><span class="o">=</span><span class="n">max_matrix_entries</span><span class="p">,</span>
+                <span class="n">completion_scope</span><span class="o">=</span><span class="s2">"typed_neighborhood_comparison_only"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+    <span class="p">)</span></div>
+
+
+
+<div class="viewcode-block" id="rank_rigid_feature_correspondences">
+<a class="viewcode-back" href="../../../pharmacophoremt.screening.html#pharmacophoremt.screening.feature_neighborhoods.rank_rigid_feature_correspondences">[docs]</a>
+<span class="nd">@signal</span><span class="p">(</span><span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">"screening"</span><span class="p">,</span> <span class="s2">"correspondence"</span><span class="p">,</span> <span class="s2">"ranking"</span><span class="p">])</span>
+<span class="nd">@arg_digest</span><span class="p">()</span>
+<span class="nd">@attributed</span><span class="p">(</span><span class="s2">"numpy"</span><span class="p">)</span>
+<span class="k">def</span><span class="w"> </span><span class="nf">rank_rigid_feature_correspondences</span><span class="p">(</span>
+    <span class="n">correspondences</span><span class="p">,</span> <span class="n">feature_pair_dissimilarities</span><span class="p">,</span> <span class="o">*</span><span class="p">,</span> <span class="n">n_seeds</span><span class="o">=</span><span class="kc">None</span>
+<span class="p">):</span>
+<span class="w">    </span><span class="sd">"""Rank supplied three-pair guesses by summed neighborhood dissimilarity.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    ----------</span>
+<span class="sd">    correspondences : sequence of mappings</span>
+<span class="sd">        Exactly three injective pairs each. Native inventory indices must agree</span>
+<span class="sd">        with the comparison axes. Geometric feasibility is the producer's job.</span>
+<span class="sd">    feature_pair_dissimilarities : dict</span>
+<span class="sd">        Completed get_feature_pair_dissimilarities output, also after JSON saving.</span>
+<span class="sd">        The caller owns its identity/origin; this tool cannot authenticate it.</span>
+<span class="sd">    n_seeds : int or None</span>
+<span class="sd">        Retain at most this many guesses; None retains every supplied guess.</span>
+<span class="sd">        This is a scientific selection, not a failed computation budget.</span>
+
+<span class="sd">    Returns</span>
+<span class="sd">    -------</span>
+<span class="sd">    dict</span>
+<span class="sd">        Canonical correspondences, summed scores, supplied proposal indices,</span>
+<span class="sd">        selected/omitted counts, selection_exhaustive and complete=True. Ties</span>
+<span class="sd">        use lexicographic pairs then supplied index; duplicates remain separate.</span>
+
+<span class="sd">    Notes</span>
+<span class="sd">    -----</span>
+<span class="sd">    Implements the multiple-guess ranking part of G3PS section 2.2.1, not its</span>
+<span class="sd">    greedy refinement or translation/exclusion correction. A finite seed count</span>
+<span class="sd">    may omit valid alignments; complete concerns ranking/declared selection only.</span>
+<span class="sd">    No molecular access, fitting or geometry rejection occurs. Source attribution</span>
+<span class="sd">    is retained separately from newly reached ranking operations.</span>
+
+<span class="sd">    Examples</span>
+<span class="sd">    --------</span>
+<span class="sd">    &gt;&gt;&gt; ranked = rank_rigid_feature_correspondences(seeds, costs, n_seeds=20)</span>
+<span class="sd">    &gt;&gt;&gt; mappings = ranked['correspondences']</span>
+<span class="sd">    """</span>
+    <span class="n">report</span> <span class="o">=</span> <span class="n">feature_pair_dissimilarities</span>
+    <span class="n">shape</span> <span class="o">=</span> <span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s2">"n_reference"</span><span class="p">],</span> <span class="n">report</span><span class="p">[</span><span class="s2">"n_candidate"</span><span class="p">])</span>
+    <span class="n">costs</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s2">"costs"</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">float</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">compatible</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">asarray</span><span class="p">(</span><span class="n">report</span><span class="p">[</span><span class="s2">"compatible"</span><span class="p">],</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">bool</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">ranked</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">for</span> <span class="n">supplied_index</span><span class="p">,</span> <span class="n">pairs</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">correspondences</span><span class="p">):</span>
+        <span class="k">if</span> <span class="p">(</span>
+            <span class="nb">len</span><span class="p">(</span><span class="n">pairs</span><span class="p">)</span> <span class="o">!=</span> <span class="mi">3</span>
+            <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">pairs</span><span class="p">[:,</span> <span class="mi">0</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+            <span class="ow">or</span> <span class="n">np</span><span class="o">.</span><span class="n">any</span><span class="p">(</span><span class="n">pairs</span><span class="p">[:,</span> <span class="mi">1</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span>
+        <span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"correspondences"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"require triplets inside the comparison axes"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">canonical</span> <span class="o">=</span> <span class="nb">tuple</span><span class="p">(</span><span class="nb">sorted</span><span class="p">(</span><span class="nb">tuple</span><span class="p">(</span><span class="n">pair</span><span class="p">)</span> <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">pairs</span><span class="p">))</span>
+        <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">compatible</span><span class="p">[</span><span class="n">pair</span><span class="p">]</span> <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">canonical</span><span class="p">):</span>
+            <span class="k">raise</span> <span class="n">ArgumentError</span><span class="p">(</span>
+                <span class="n">argument</span><span class="o">=</span><span class="s2">"correspondences"</span><span class="p">,</span>
+                <span class="n">reason</span><span class="o">=</span><span class="s2">"triplet contains incompatible feature types"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="n">score</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">sum</span><span class="p">(</span><span class="n">costs</span><span class="p">[</span><span class="n">pair</span><span class="p">]</span> <span class="k">for</span> <span class="n">pair</span> <span class="ow">in</span> <span class="n">canonical</span><span class="p">))</span>
+        <span class="n">ranked</span><span class="o">.</span><span class="n">append</span><span class="p">((</span><span class="n">score</span><span class="p">,</span> <span class="n">canonical</span><span class="p">,</span> <span class="n">supplied_index</span><span class="p">))</span>
+    <span class="n">ranked</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="n">selected</span> <span class="o">=</span> <span class="n">ranked</span> <span class="k">if</span> <span class="n">n_seeds</span> <span class="ow">is</span> <span class="kc">None</span> <span class="k">else</span> <span class="n">ranked</span><span class="p">[:</span><span class="n">n_seeds</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">ranked</span><span class="p">:</span>
+        <span class="n">credit_criterion</span><span class="p">(</span>
+            <span class="s2">"g3ps_seed_ranking"</span><span class="p">,</span> <span class="vm">__name__</span> <span class="o">+</span> <span class="s2">".rank_rigid_feature_correspondences"</span>
+        <span class="p">)</span>
+    <span class="k">return</span> <span class="nb">dict</span><span class="p">(</span>
+        <span class="n">method</span><span class="o">=</span><span class="s2">"summed_neighborhood_triplet_ranking@1"</span><span class="p">,</span>
+        <span class="n">correspondences</span><span class="o">=</span><span class="p">[</span>
+            <span class="p">[[</span><span class="nb">int</span><span class="p">(</span><span class="n">i</span><span class="p">),</span> <span class="nb">int</span><span class="p">(</span><span class="n">j</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span> <span class="ow">in</span> <span class="n">pairs</span><span class="p">]</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">pairs</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">selected</span>
+        <span class="p">],</span>
+        <span class="n">scores</span><span class="o">=</span><span class="p">[</span><span class="n">score</span> <span class="k">for</span> <span class="n">score</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span> <span class="ow">in</span> <span class="n">selected</span><span class="p">],</span>
+        <span class="n">supplied_proposal_indices</span><span class="o">=</span><span class="p">[</span><span class="n">index</span> <span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">_</span><span class="p">,</span> <span class="n">index</span> <span class="ow">in</span> <span class="n">selected</span><span class="p">],</span>
+        <span class="n">n_supplied</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ranked</span><span class="p">),</span>
+        <span class="n">n_selected</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">),</span>
+        <span class="n">n_omitted</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ranked</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">),</span>
+        <span class="n">selection_exhaustive</span><span class="o">=</span><span class="nb">len</span><span class="p">(</span><span class="n">ranked</span><span class="p">)</span> <span class="o">==</span> <span class="nb">len</span><span class="p">(</span><span class="n">selected</span><span class="p">),</span>
+        <span class="n">complete</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+        <span class="n">source_attribution</span><span class="o">=</span><span class="n">detached</span><span class="p">(</span><span class="n">report</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">"attribution"</span><span class="p">)),</span>
+        <span class="n">criteria</span><span class="o">=</span><span class="n">detached</span><span class="p">(</span>
+            <span class="nb">dict</span><span class="p">(</span>
+                <span class="n">n_seeds</span><span class="o">=</span><span class="n">n_seeds</span><span class="p">,</span>
+                <span class="n">dissimilarity_method</span><span class="o">=</span><span class="n">report</span><span class="p">[</span><span class="s2">"method"</span><span class="p">],</span>
+                <span class="n">dissimilarity_criteria</span><span class="o">=</span><span class="n">report</span><span class="p">[</span><span class="s2">"criteria"</span><span class="p">],</span>
+                <span class="n">tie_break</span><span class="o">=</span><span class="s2">"canonical_pairs_then_supplied_index"</span><span class="p">,</span>
+                <span class="n">completion_scope</span><span class="o">=</span><span class="s2">"supplied_guesses_and_declared_seed_selection"</span><span class="p">,</span>
+            <span class="p">)</span>
+        <span class="p">),</span>
+    <span class="p">)</span></div>
+
+</pre></div>
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

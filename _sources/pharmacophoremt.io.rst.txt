@@ -1,0 +1,53 @@
+pharmacophoremt.io package
+==========================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pharmacophoremt.io.phmt
+
+Submodules
+----------
+
+pharmacophoremt.io.ligandscout module
+-------------------------------------
+
+.. automodule:: pharmacophoremt.io.ligandscout
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.io.pharmer module
+---------------------------------
+
+.. automodule:: pharmacophoremt.io.pharmer
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.io.rdkit module
+-------------------------------
+
+.. automodule:: pharmacophoremt.io.rdkit
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.io.sdf module
+-----------------------------
+
+.. automodule:: pharmacophoremt.io.sdf
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.io
+   :members:
+   :show-inheritance:
+   :undoc-members:

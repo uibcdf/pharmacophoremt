@@ -1,0 +1,1032 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="../../" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../../_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="../../_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="../../_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="../../_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="../../_static/icon.svg" rel="icon" type="image/svg+xml">
+  
+    <title>Audit the ERalpha input before native modeling – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="../../_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="../../_static/documentation_options.js?v=6c02275b"></script>
+    <script src="../../_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="../../_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="../../_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="../../_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'content/cookbook/eralpha_input_audit';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Validation and benchmarks" href="../validation/index.html" />
+    <link rel="prev" title="Inspect a cached pharmacophore with MolSysViewer" href="viewer_addon.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="../../_static/searchtools.js"></script>
+    <script src="../../_static/language_data.js"></script>
+    <script src="../../searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="../../_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item current active">
+  <a class="nav-link nav-internal" href="index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="reference_ligand.html">Build from a reference ligand and evaluate a placed pose</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_interactions.html">Build from observed ligand–receptor interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ionic_interactions.html">Build queries from ionic observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aromatic_interactions.html">Build queries from aromatic observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interaction_composition.html">Compose independently observed interaction families</a></li>
+<li class="toctree-l1"><a class="reference internal" href="complex_based_modeler.html">Build a complex model from prepared native observations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="structure_based_modeler.html">Build explicit complementary receptor hypotheses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ccd_interactions.html">Joint hypotheses with complete CCD molecules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophore_curation.html">Create and evaluate independent hypothesis variants</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_workflow.html">Carry a prepared hypothesis through curation, saving and screening</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_search_workflow.html">Recover a moved prepared ligand and retain limited-search failures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_consensus_workflow.html">Build consensus from two distinct prepared CCD ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_receptor_workflow.html">Review cached prepared receptor hypotheses and contacts</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_conformers.html">Search rigid poses and prepared conformations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aligned_consensus.html">Build consensus from prepared aligned ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="aligned_cliques.html">Discover aligned consensus and alternative hypotheses</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rigid_consensus.html">Build consensus from prepared rigid unaligned ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ligand_based_modeler.html">Choose native ligand consensus through the modeler</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modular_rigid_tools.html">Compose rigid modeling from reusable steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ranked_seeds.html">Rank rigid seeds by typed feature environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="rigid_refinement.html">Refine rigid correspondences with alternative orientation policies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_ccd_ligands.html">Model with traceable prepared CCD ligands</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_est_template.html">Prepare an observed EST ligand with an explicit template</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_est_hydrogens.html">Include directional donors in the observed EST workflow</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observed_receptor_coverage.html">Audit the observed receptor before detecting interactions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="prepared_eralpha_interface.html">Compose and control a prepared ERα fragment hypothesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="excluded_volumes.html">Compose exclusion spheres with a pharmacophoric query</a></li>
+<li class="toctree-l1"><a class="reference internal" href="retrospective_validation.html">Validate a labeled set and inspect failures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="attribution.html">Keep scientific references with models and results</a></li>
+<li class="toctree-l1"><a class="reference internal" href="viewer_addon.html">Inspect a cached pharmacophore with MolSysViewer</a></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">Audit the ERalpha input before native modeling</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="../../index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    
+    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Cookbook</a></li>
+    
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">Audit the ERalpha input before native modeling</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="audit-the-eralpha-input-before-native-modeling">
+<h1>Audit the ERalpha input before native modeling<a class="headerlink" href="#audit-the-eralpha-input-before-native-modeling" title="Link to this heading">#</a></h1>
+<p>This notebook executes the first validation gate for the existing regression
+snapshot. It records <strong>blocked chemical recognition</strong>, without assigning a fit
+score or claiming a completed native pharmacophore. The historical feature-
+presence regression still uses the legacy modeler.</p>
+<p>Run from a source checkout with compatible development providers. The fixture and
+case-specific script live in <code class="docutils literal notranslate"><span class="pre">tests/data/</span></code> and <code class="docutils literal notranslate"><span class="pre">devtools/</span></code>; they are not promised
+as installed package data. Start the kernel within the checkout, or set
+<code class="docutils literal notranslate"><span class="pre">PHMT_REPOSITORY_ROOT</span></code> to the checkout’s absolute path before starting it.</p>
+<p>The recorded run uses Python 3.13.14, MolSysMT source revision
+<code class="docutils literal notranslate"><span class="pre">4d490427e38c5836be82472348fdf61934442bda</span></code>, PyUnitWizard
+<code class="docutils literal notranslate"><span class="pre">2ffe1885675f47c76af03c08e51bc889a5e99a05</span></code> and existing scientific dependencies.
+This is source-tree evidence, not stable-distribution acceptance.</p>
+<p>Owning work: <a class="reference external" href="https://github.com/uibcdf/pharmacophoremt/issues/22">PharmacophoreMT #22</a>
+and <a class="reference external" href="https://github.com/uibcdf/molsysmt/issues/298">MolSysMT #298</a>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">json</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">os</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">sys</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">pathlib</span><span class="w"> </span><span class="kn">import</span> <span class="n">Path</span>
+
+<span class="n">start</span> <span class="o">=</span> <span class="n">Path</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">'PHMT_REPOSITORY_ROOT'</span><span class="p">,</span> <span class="n">Path</span><span class="o">.</span><span class="n">cwd</span><span class="p">()))</span><span class="o">.</span><span class="n">resolve</span><span class="p">()</span>
+<span class="n">root</span> <span class="o">=</span> <span class="nb">next</span><span class="p">((</span><span class="n">p</span> <span class="k">for</span> <span class="n">p</span> <span class="ow">in</span> <span class="p">(</span><span class="n">start</span><span class="p">,</span> <span class="o">*</span><span class="n">start</span><span class="o">.</span><span class="n">parents</span><span class="p">)</span>
+             <span class="k">if</span> <span class="p">(</span><span class="n">p</span> <span class="o">/</span> <span class="s1">'tests/data/eralpha_audit.json'</span><span class="p">)</span><span class="o">.</span><span class="n">is_file</span><span class="p">()),</span> <span class="kc">None</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">root</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">raise</span> <span class="ne">RuntimeError</span><span class="p">(</span><span class="s1">'Set PHMT_REPOSITORY_ROOT to the PharmacophoreMT checkout.'</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="nb">str</span><span class="p">(</span><span class="n">root</span><span class="p">))</span>
+<span class="kn">from</span><span class="w"> </span><span class="nn">devtools.audit_eralpha</span><span class="w"> </span><span class="kn">import</span> <span class="n">audit</span>
+
+<span class="n">manifest</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">((</span><span class="n">root</span> <span class="o">/</span> <span class="s1">'tests/data/eralpha_audit.json'</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">())</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">({</span><span class="n">key</span><span class="p">:</span> <span class="n">manifest</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span>
+                 <span class="p">[</span><span class="s1">'fixture'</span><span class="p">,</span> <span class="s1">'sha256'</span><span class="p">,</span> <span class="s1">'description'</span><span class="p">,</span> <span class="s1">'provenance_status'</span><span class="p">]},</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{
+  "fixture": "tests/data/eralpha_complex.pdb",
+  "sha256": "90e3159bc03424d976742c96c8cc2d2b32c9e1abf140d4652b70518b06a775f1",
+  "description": "Prepared OpenMM snapshot historically labeled ERalpha/estradiol",
+  "provenance_status": "derivation_and_chemical_identity_unverified"
+}
+</pre></div>
+</div>
+</div>
+</div>
+<section id="execute-the-provider-gate">
+<h2>Execute the provider gate<a class="headerlink" href="#execute-the-provider-gate" title="Link to this heading">#</a></h2>
+<p>All molecular conversion, selection, extraction, coordinates and chemical-state
+access go through public MolSysMT APIs. Counts describe the provider’s loaded
+graph, which can include its default connectivity reconstruction. The audit
+aggregates observations for this particular snapshot; general molecular readiness
+belongs to <a class="reference external" href="https://github.com/uibcdf/molsysmt/issues/217">MolSysMT #217</a> and receptor
+coverage to <a class="reference external" href="https://github.com/uibcdf/molsysmt/issues/218">#218</a>.</p>
+<p>The file has an OpenMM preparation header, explicit hydrogens and solvent. Its
+unnamed ligand cannot be located by automatic small-molecule classification.
+The fixture-specific selection is therefore qualified by the file checksum and
+retained source atom identities.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">report</span> <span class="o">=</span> <span class="n">audit</span><span class="p">()</span>
+<span class="n">summary</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="s1">'python'</span><span class="p">:</span> <span class="n">sys</span><span class="o">.</span><span class="n">version</span><span class="o">.</span><span class="n">split</span><span class="p">()[</span><span class="mi">0</span><span class="p">],</span>
+    <span class="s1">'molsysmt_version'</span><span class="p">:</span> <span class="n">report</span><span class="p">[</span><span class="s1">'molsysmt_version'</span><span class="p">],</span>
+    <span class="s1">'counts'</span><span class="p">:</span> <span class="n">report</span><span class="p">[</span><span class="s1">'counts'</span><span class="p">],</span>
+    <span class="s1">'ligand_element_counts'</span><span class="p">:</span> <span class="n">report</span><span class="p">[</span><span class="s1">'ligand_element_counts'</span><span class="p">],</span>
+    <span class="s1">'automatic_small_molecule_selection_count'</span><span class="p">:</span> <span class="n">report</span><span class="p">[</span><span class="s1">'automatic_small_molecule_selection_count'</span><span class="p">],</span>
+    <span class="s1">'coordinates_finite'</span><span class="p">:</span> <span class="n">report</span><span class="p">[</span><span class="s1">'coordinates_finite'</span><span class="p">],</span>
+    <span class="s1">'source_unchanged'</span><span class="p">:</span> <span class="n">report</span><span class="p">[</span><span class="s1">'source_unchanged'</span><span class="p">],</span>
+    <span class="s1">'parts'</span><span class="p">:</span> <span class="p">{</span>
+        <span class="n">part</span><span class="p">:</span> <span class="p">{</span>
+            <span class="n">route</span><span class="p">:</span> <span class="p">{</span><span class="n">key</span><span class="p">:</span> <span class="n">observation</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="k">for</span> <span class="n">key</span> <span class="ow">in</span>
+                    <span class="p">[</span><span class="s1">'n_atoms'</span><span class="p">,</span> <span class="s1">'n_bonds'</span><span class="p">,</span> <span class="s1">'connectivity_completeness'</span><span class="p">,</span>
+                     <span class="s1">'recognition_status'</span><span class="p">,</span> <span class="s1">'diagnostic'</span><span class="p">]}</span>
+            <span class="k">for</span> <span class="n">route</span><span class="p">,</span> <span class="n">observation</span> <span class="ow">in</span> <span class="n">routes</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+        <span class="p">}</span>
+        <span class="k">for</span> <span class="n">part</span><span class="p">,</span> <span class="n">routes</span> <span class="ow">in</span> <span class="n">report</span><span class="p">[</span><span class="s1">'parts'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+    <span class="p">},</span>
+<span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">summary</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{
+  "python": "3.13.14",
+  "molsysmt_version": "0.22.4+118.g03b318549.dirty",
+  "counts": {
+    "n_atoms": 54437,
+    "n_groups": 17032,
+    "n_molecules": 16783,
+    "n_structures": 1
+  },
+  "ligand_element_counts": {
+    "C": 18,
+    "O": 2,
+    "H": 24
+  },
+  "automatic_small_molecule_selection_count": 0,
+  "coordinates_finite": true,
+  "source_unchanged": true,
+  "parts": {
+    "ligand": {
+      "native_pdb": {
+        "n_atoms": 44,
+        "n_bonds": 47,
+        "connectivity_completeness": "partial",
+        "recognition_status": "blocked",
+        "diagnostic": {
+          "code": "MSM-ERR-STRUCT-003",
+          "message": "Structural inconsistency detected: Chemical graph analysis requires connectivity declared complete.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+        }
+      },
+      "pdb_text_rdkit_roundtrip": {
+        "n_atoms": 44,
+        "n_bonds": 47,
+        "connectivity_completeness": "complete",
+        "recognition_status": "blocked",
+        "diagnostic": {
+          "code": "MSM-ERR-STRUCT-003",
+          "message": "Structural inconsistency detected: Every covalent bond requires a supported declared order.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+        }
+      }
+    },
+    "protein": {
+      "native_pdb": {
+        "n_atoms": 4058,
+        "n_bonds": 4096,
+        "connectivity_completeness": "partial",
+        "recognition_status": "blocked",
+        "diagnostic": {
+          "code": "MSM-ERR-STRUCT-003",
+          "message": "Structural inconsistency detected: Chemical graph analysis requires connectivity declared complete.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+        }
+      },
+      "pdb_text_rdkit_roundtrip": {
+        "n_atoms": 4058,
+        "n_bonds": 4096,
+        "connectivity_completeness": "complete",
+        "recognition_status": "blocked",
+        "diagnostic": {
+          "code": "MSM-ERR-STRUCT-003",
+          "message": "Structural inconsistency detected: Every covalent bond requires a supported declared order.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+        }
+      }
+    }
+  }
+}
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">assert</span> <span class="n">report</span><span class="p">[</span><span class="s1">'sha256'</span><span class="p">]</span> <span class="o">==</span> <span class="n">manifest</span><span class="p">[</span><span class="s1">'sha256'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">report</span><span class="p">[</span><span class="s1">'counts'</span><span class="p">]</span> <span class="o">==</span> <span class="n">manifest</span><span class="p">[</span><span class="s1">'expected_counts'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">report</span><span class="p">[</span><span class="s1">'ligand_atom_names'</span><span class="p">]</span> <span class="o">==</span> <span class="n">manifest</span><span class="p">[</span><span class="s1">'ligand'</span><span class="p">][</span><span class="s1">'atom_names'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">report</span><span class="p">[</span><span class="s1">'ligand_element_counts'</span><span class="p">]</span> <span class="o">==</span> <span class="n">manifest</span><span class="p">[</span><span class="s1">'ligand'</span><span class="p">][</span><span class="s1">'element_counts'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">report</span><span class="p">[</span><span class="s1">'source_unchanged'</span><span class="p">]</span> <span class="ow">and</span> <span class="n">report</span><span class="p">[</span><span class="s1">'coordinates_finite'</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">part</span><span class="p">,</span> <span class="n">routes</span> <span class="ow">in</span> <span class="n">report</span><span class="p">[</span><span class="s1">'parts'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+    <span class="k">for</span> <span class="n">route</span><span class="p">,</span> <span class="n">observation</span> <span class="ow">in</span> <span class="n">routes</span><span class="o">.</span><span class="n">items</span><span class="p">():</span>
+        <span class="k">assert</span> <span class="n">observation</span><span class="p">[</span><span class="s1">'n_atoms'</span><span class="p">]</span> <span class="o">==</span> <span class="n">manifest</span><span class="p">[</span><span class="n">part</span><span class="p">][</span><span class="s1">'n_atoms'</span><span class="p">]</span>
+        <span class="k">assert</span> <span class="n">observation</span><span class="p">[</span><span class="s1">'n_bonds'</span><span class="p">]</span> <span class="o">==</span> <span class="n">manifest</span><span class="p">[</span><span class="n">part</span><span class="p">][</span><span class="s1">'n_bonds'</span><span class="p">]</span>
+        <span class="k">assert</span> <span class="n">observation</span><span class="p">[</span><span class="s1">'recognition_status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'blocked'</span>
+        <span class="k">assert</span> <span class="n">observation</span><span class="p">[</span><span class="s1">'diagnostic'</span><span class="p">][</span><span class="s1">'code'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'MSM-ERR-STRUCT-003'</span>
+        <span class="k">assert</span> <span class="s1">'fit_value'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">observation</span>
+        <span class="k">if</span> <span class="n">route</span> <span class="o">==</span> <span class="s1">'pdb_text_rdkit_roundtrip'</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="nb">set</span><span class="p">(</span><span class="n">observation</span><span class="p">[</span><span class="s1">'bond_orders'</span><span class="p">])</span> <span class="o">==</span> <span class="p">{</span><span class="mi">0</span><span class="p">}</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'Input audit passed. Native chemical preparation remains unresolved.'</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Input audit passed. Native chemical preparation remains unresolved.
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="what-this-result-establishes">
+<h2>What this result establishes<a class="headerlink" href="#what-this-result-establishes" title="Link to this heading">#</a></h2>
+<p>Native PDB import records partial connectivity and absent declared bond orders and
+formal charges. Public PDB-text → RDKit → native conversion preserves atom/bond
+counts but retains unsupported order-zero bonds. MolSysMT rejects both inputs.
+A <code class="docutils literal notranslate"><span class="pre">complete</span></code> connectivity flag alone does not justify chemical feature recognition.
+Neither failure is a geometrically nonmatching ligand or a biological inactive.</p>
+<p>The <a class="reference external" href="https://www.rcsb.org/structure/1QKU">historical dataset label, PDB 1QKU</a>, refers
+to the wild-type human estrogen receptor ligand-binding domain with estradiol.
+The local prepared snapshot’s derivation from that entry is unverified. C18H24O2
+is compatible with estradiol, but does not verify connectivity or stereochemistry.
+<a class="reference external" href="https://www.rcsb.org/ligand/EST">RCSB CCD EST</a> is a candidate authoritative template;
+it has not been applied. The associated
+<a class="reference external" href="https://doi.org/10.1074/jbc.M009870200">Gangloff et al. publication (2001)</a> is
+reference context, not validation of this snapshot.</p>
+<p>These reference-data sources must remain separate from executed software/method
+attribution. See the <a class="reference internal" href="attribution.html"><span class="std std-doc">Ackredit recipe</span></a> for detached calculation
+bibliographies once a native calculation completes.</p>
+</section>
+<section id="controls-after-provider-supported-preparation">
+<h2>Controls after provider-supported preparation<a class="headerlink" href="#controls-after-provider-supported-preparation" title="Link to this heading">#</a></h2>
+<p>First recover the preparation history or adopt an independently sourced input.
+Choose the ligand chemical state and review an explicit template atom map,
+including hydrogens, conflicts, orders, aromaticity, charges and coordinates.
+MolSysMT owns this operation; PharmacophoreMT consumes the resulting system.</p>
+<p>Then execute the following controls, retaining units, parameters and source
+identities in the query/results:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Control</p></th>
+<th class="head"><p>Expected evidence</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Reference placed against its own native query</p></td>
+<td><p>Matched, unit geometric coverage</p></td>
+</tr>
+<tr class="row-odd"><td><p>Same ligand displaced by 2 nm, without alignment</p></td>
+<td><p>Essential sites missing, placed-pose rejection</p></td>
+</tr>
+<tr class="row-even"><td><p>Shared rigid transform of query and input</p></td>
+<td><p>Same geometric outcome</p></td>
+</tr>
+<tr class="row-odd"><td><p>Dedicated donor direction and aromatic-normal changes</p></td>
+<td><p>Rejection according to the declared angular criteria</p></td>
+</tr>
+<tr class="row-even"><td><p>JSON roundtrip</p></td>
+<td><p>Same features, shapes, units, evidence and evaluation</p></td>
+</tr>
+<tr class="row-odd"><td><p>Explicit Ackredit session</p></td>
+<td><p>Detached references for executed software/methods</p></td>
+</tr>
+<tr class="row-even"><td><p>Provider-observed receptor interactions</p></td>
+<td><p>Named detector profile, evaluated coverage and retained observations</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A proposed initial site radius of 0.10 nm and direction tolerance of 20 degrees
+are geometric test choices; compare 0.15/0.20 nm sensitivity before interpreting
+results. They are not established binding cutoffs. Review expected feature counts
+after chemical preparation; do not copy legacy counts as a native scientific oracle.
+Chemical features require hypothesis curation before being treated as binding roles.</p>
+<p>Rigid search can recover a displaced copy, so that displacement is a negative
+control for <strong>placed evaluation</strong> only. Geometric self-consistency is not evidence
+of affinity, enrichment or performance. No ERalpha positive native validation is
+claimed by the audit above.</p>
+</section>
+<section id="independently-acquired-1qku-ccd-est-input">
+<h2>Independently acquired 1QKU / CCD EST input<a class="headerlink" href="#independently-acquired-1qku-ccd-est-input" title="Link to this heading">#</a></h2>
+<p>The source bytes in <code class="docutils literal notranslate"><span class="pre">tests/data/eralpha_rcsb/</span></code> were acquired from official RCSB
+services on 2026-10-03 and qualified with URLs, checksums, file sizes and entry
+revision. This gives the new case a documented origin; it does not recover the
+old OpenMM snapshot’s history. See <a class="reference external" href="https://www.rcsb.org/structure/1QKU">RCSB 1QKU</a>,
+<a class="reference external" href="https://www.rcsb.org/ligand/EST">CCD EST</a> and the
+<a class="reference external" href="https://www.rcsb.org/docs/programmatic-access/file-download-services">official download services</a>.</p>
+<p>Select the ligand by <strong>label asymmetry ID D</strong>, represented by MolSysMT <code class="docutils literal notranslate"><span class="pre">chain_id</span></code>.
+Its <strong>author chain is A</strong>, residue 600. The 20 observed heavy-atom names agree with
+the CCD definition, which also contains 24 H. Name agreement is candidate
+correspondence evidence; an exhaustive chemical map has not been validated.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span><span class="w"> </span><span class="nn">devtools.audit_eralpha_sources</span><span class="w"> </span><span class="kn">import</span> <span class="n">audit</span> <span class="k">as</span> <span class="n">audit_sources</span>
+
+<span class="n">source_manifest</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">((</span><span class="n">root</span> <span class="o">/</span> <span class="s1">'tests/data/eralpha_rcsb/manifest.json'</span><span class="p">)</span><span class="o">.</span><span class="n">read_text</span><span class="p">())</span>
+<span class="n">source_report</span> <span class="o">=</span> <span class="n">audit_sources</span><span class="p">()</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'entry_id'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'1QKU'</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'counts'</span><span class="p">]</span> <span class="o">==</span> <span class="n">source_manifest</span><span class="p">[</span><span class="s1">'expected_counts'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'checksums'</span><span class="p">]</span> <span class="o">==</span> <span class="p">{</span>
+    <span class="n">name</span><span class="p">:</span> <span class="n">data</span><span class="p">[</span><span class="s1">'sha256'</span><span class="p">]</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">source_manifest</span><span class="p">[</span><span class="s1">'files'</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">()</span>
+<span class="p">}</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'author_asym_ids'</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="s1">'A'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'author_residue_ids'</span><span class="p">]</span> <span class="o">==</span> <span class="p">[</span><span class="s1">'600'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'ligand_element_counts'</span><span class="p">]</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'C'</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">'O'</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'ccd_element_counts'</span><span class="p">]</span> <span class="o">==</span> <span class="p">{</span><span class="s1">'C'</span><span class="p">:</span> <span class="mi">18</span><span class="p">,</span> <span class="s1">'H'</span><span class="p">:</span> <span class="mi">24</span><span class="p">,</span> <span class="s1">'O'</span><span class="p">:</span> <span class="mi">2</span><span class="p">}</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'heavy_atom_names_agree'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'source_unchanged'</span><span class="p">]</span> <span class="ow">and</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'files_unchanged'</span><span class="p">]</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'recognition_status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'blocked'</span>
+<span class="k">assert</span> <span class="n">source_report</span><span class="p">[</span><span class="s1">'chemical_mapping_status'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'not_validated'</span>
+<span class="k">assert</span> <span class="s1">'fit_value'</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">source_report</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">source_report</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">2</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>{
+  "schema": "pharmacophoremt.eralpha_source_audit@1",
+  "molsysmt_version": "0.22.4+118.g03b318549.dirty",
+  "checksums": {
+    "1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+    "EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+    "1qku_EST_D.sdf": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f"
+  },
+  "entry_id": "1QKU",
+  "observed_revision": {
+    "ordinal": "5",
+    "data_content_type": "Structure model",
+    "major_revision": "1",
+    "minor_revision": "4",
+    "revision_date": "2024-05-08"
+  },
+  "counts": {
+    "n_atoms": 6596,
+    "n_groups": 1343,
+    "n_structures": 1
+  },
+  "source_atom_indices": [
+    5940,
+    5941,
+    5942,
+    5943,
+    5944,
+    5945,
+    5946,
+    5947,
+    5948,
+    5949,
+    5950,
+    5951,
+    5952,
+    5953,
+    5954,
+    5955,
+    5956,
+    5957,
+    5958,
+    5959
+  ],
+  "ligand_atom_names": [
+    "C1",
+    "C2",
+    "C3",
+    "O3",
+    "C4",
+    "C5",
+    "C6",
+    "C7",
+    "C8",
+    "C9",
+    "C10",
+    "C11",
+    "C12",
+    "C13",
+    "C14",
+    "C15",
+    "C16",
+    "C17",
+    "O17",
+    "C18"
+  ],
+  "ligand_element_counts": {
+    "C": 18,
+    "O": 2
+  },
+  "ligand_n_bonds_in_loaded_graph": 23,
+  "author_asym_ids": [
+    "A"
+  ],
+  "author_residue_ids": [
+    "600"
+  ],
+  "ccd_atom_count": 44,
+  "ccd_bond_count": 47,
+  "ccd_element_counts": {
+    "C": 18,
+    "O": 2,
+    "H": 24
+  },
+  "heavy_atom_names_agree": true,
+  "chemical_mapping_status": "not_validated",
+  "hydrogen_generation_status": "not_performed",
+  "coordinates_finite": true,
+  "coordinate_unit": "nm",
+  "recognition_status": "blocked",
+  "diagnostic": {
+    "code": "MSM-ERR-STRUCT-003",
+    "message": "Structural inconsistency detected: Chemical graph analysis requires connectivity declared complete.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT"
+  },
+  "source_unchanged": true,
+  "files_unchanged": true
+}
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="minimum-preparation-contract">
+<h2>Minimum preparation contract<a class="headerlink" href="#minimum-preparation-contract" title="Link to this heading">#</a></h2>
+<p>The proposed tools in <a class="reference external" href="https://github.com/uibcdf/molsysmt/issues/298">MolSysMT #298</a>
+separate a read-only chemical-template assessment from application to a new
+native system. The first implementation requires an explicit exhaustive atom map,
+compatible declared chemistry, resolved states and a complete supported template.
+It must report conflicts, preserve source coordinates/identity and retain the
+template’s origin. These tools are proposed; this notebook does not call a
+placeholder API or claim that template application is already implemented.</p>
+<p>The observed ligand has no H coordinates. Applying chemical assignments does not
+supply the missing donor-H geometry; hydrogen generation is a distinct provider
+operation. CCD model/ideal H positions have not been transplanted to the complex.
+The retained ModelServer SDF is an auxiliary source export with an unversioned
+CTAB counts line, rejected by the native SDF probe at clean MolSysMT source
+<code class="docutils literal notranslate"><span class="pre">e9f135c2962aeefdb08135a7bc567d2d08bf27c5</span></code>. Its bytes are not repaired locally.</p>
+<p>The source-curation gate is now reproducible. Chemical preparation, positive
+native evaluation and the geometric controls above remain the next acceptance
+steps. Neither input audit is an ERalpha biological benchmark.</p>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="viewer_addon.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Inspect a cached pharmacophore with MolSysViewer</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../validation/index.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Validation and benchmarks</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#execute-the-provider-gate">Execute the provider gate</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-this-result-establishes">What this result establishes</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#controls-after-provider-supported-preparation">Controls after provider-supported preparation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#independently-acquired-1qku-ccd-est-input">Independently acquired 1QKU / CCD EST input</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#minimum-preparation-contract">Minimum preparation contract</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="../../_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="../../_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

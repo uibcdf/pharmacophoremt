@@ -1,0 +1,51 @@
+pharmacophoremt package
+=======================
+
+Subpackages
+-----------
+
+.. toctree::
+   :maxdepth: 4
+
+   pharmacophoremt.config
+   pharmacophoremt.interaction_site
+   pharmacophoremt.io
+   pharmacophoremt.modeler
+   pharmacophoremt.screening
+   pharmacophoremt.validation
+   pharmacophoremt.viewer
+
+Submodules
+----------
+
+pharmacophoremt.attribution module
+----------------------------------
+
+.. automodule:: pharmacophoremt.attribution
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.demo module
+---------------------------
+
+.. automodule:: pharmacophoremt.demo
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.pharmacophore module
+------------------------------------
+
+.. automodule:: pharmacophoremt.pharmacophore
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt
+   :members:
+   :show-inheritance:
+   :undoc-members:

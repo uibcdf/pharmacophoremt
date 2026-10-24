@@ -1,0 +1,1634 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="_static/favicon-16x16.png" sizes="16x16" rel="icon" type="image/png">
+    <link href="_static/favicon-124x124.png" sizes="124x124" rel="icon" type="image/png">
+    <link href="_static/favicon-128x128.png" sizes="128x128" rel="icon" type="image/png">
+    <link href="_static/favicon-192x192.png" sizes="192x192" rel="icon" type="image/png">
+    <link href="_static/icon.svg" rel="icon" type="image/svg+xml">
+  
+    <title>pharmacophoremt.modeler package – PharmacophoreMT 0.4.0</title>
+  
+
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  <!--
+    this give us a css class that will be invisible only if js is disabled
+  -->
+  <noscript>
+    <style>
+      .pst-js-only { display: none !important; }
+
+    </style>
+  </noscript>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=18bd87630a240e9c25be" rel="stylesheet" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=b86133f3" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_tabs.css?v=f45e19d3" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b6180aee" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css?v=b6180aee" />
+  
+  <!-- So that users can add custom icons -->
+  <script defer src="_static/scripts/fontawesome.js?digest=18bd87630a240e9c25be"></script>
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be" />
+
+    <script src="_static/documentation_options.js?v=6c02275b"></script>
+    <script src="_static/doctools.js?v=fd6eb6e6"></script>
+    <script src="_static/sphinx_highlight.js?v=6ffebe34"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/nglview-js-widgets@3.1.0/dist/index.js"></script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'pharmacophoremt.modeler';</script>
+    <script>DOCUMENTATION_OPTIONS.search_as_you_type = false;</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="color-scheme" content="light dark"/>
+  <meta name="docsearch:language" content="en"/>
+  <meta name="docsearch:version" content="0.4.0" />
+  
+    
+    <script src="_static/searchtools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <script src="searchindex.js"></script>
+  
+  </head>
+  <body data-default-mode="">
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+  
+  
+  
+  
+  <dialog id="pst-search-dialog">
+    
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+  </dialog>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header id="pst-header" class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+<div class="bd-header__inner bd-page-width">
+  <button type="button" class="pst-navbar-icon sidebar-toggle primary-toggle" aria-label="Site navigation">
+    <span class="fa-solid fa-bars"></span>
+  </button>
+  
+  
+  <div class="col-lg-3 navbar-header-items__start">
+    
+      <div class="navbar-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/logo.svg" class="logo__image only-light" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+    <img src="_static/logo.svg" class="logo__image only-dark pst-js-only" alt="PharmacophoreMT 0.4.0 documentation - Home"/>
+  
+  
+</a></div>
+    
+  </div>
+  
+  <div class="col-lg-9 navbar-header-items">
+    
+    <div class="me-auto navbar-header-items__center">
+      
+        <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+      
+    </div>
+    
+    
+    <div class="navbar-header-items__end">
+      
+        <div class="navbar-item navbar-persistent--container">
+          
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+        </div>
+      
+      
+        <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+      
+        <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+      
+    </div>
+    
+  </div>
+  
+  
+    <div class="navbar-persistent--mobile">
+
+<button type="button" class="btn search-button-field search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+ <i class="fa-solid fa-magnifying-glass"></i>
+ <span class="search-button__default-text">Search</span>
+ <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+</button>
+    </div>
+  
+
+  
+    <button type="button" class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
+      <span class="fa-solid fa-outdent"></span>
+    </button>
+  
+</div>
+
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <dialog id="pst-primary-sidebar-modal"></dialog>
+      <div id="pst-primary-sidebar" class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+      <div class="sidebar-header-items__center">
+        
+          
+          
+            <div class="navbar-item">
+<nav>
+  <ul class="bd-navbar-elements navbar-nav">
+    
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/about/index.html">
+    About
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/showcase/index.html">
+    Showcase
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/user/index.html">
+    User guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/cookbook/index.html">
+    Cookbook
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/validation/index.html">
+    Validation and benchmarks
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/developer/index.html">
+    Developer guide
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="api/index.html">
+    API
+  </a>
+</li>
+
+
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="content/ai_assistants.html">
+    AI Assistants
+  </a>
+</li>
+
+  </ul>
+</nav></div>
+          
+        
+      </div>
+    
+    
+    
+      <div class="sidebar-header-items__end">
+        
+          <div class="navbar-item">
+
+<div class="theme-switch-container dropdown pst-js-only" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Color mode">
+  <button type="button" class="btn btn-sm nav-link pst-navbar-icon theme-switch-button dropdown-toggle" aria-label="Color mode" data-bs-toggle="dropdown">
+    <i class="theme-switch fa-solid fa-sun fa-lg fa-fw" data-mode="light" title="Light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg fa-fw" data-mode="dark" title="Dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg fa-fw" data-mode="auto" title="System Settings"></i>
+  </button>
+  <ul class="dropdown-menu dropdown-menu-end">
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg fa-fw me-1"></i>System Settings</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="light"><i class="fa-solid fa-sun fa-lg fa-fw me-1"></i>Light</button></li>
+    <li><button type="button" class="dropdown-item d-flex align-items-center theme-change-button" data-mode="dark"><i class="fa-solid fa-moon fa-lg fa-fw me-1"></i>Dark</button></li>
+  </ul>
+</div></div>
+        
+          <div class="navbar-item"><ul class="navbar-icon-links"
+    aria-label="Icon Links">
+        <li class="nav-item">
+          
+          
+          
+          
+          
+          
+          
+          
+          <a href="https://github.com/uibcdf/pharmacophoremt" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fa-brands fa-github fa-lg" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
+        </li>
+</ul></div>
+        
+      </div>
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item pst-sidebar-collapse"><button type="button" id="pst-collapse-sidebar-button" aria-expanded="true" aria-controls="pst-primary-sidebar">
+  <svg class="pst-icon" role="img" aria-hidden="true" focusable="false" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+    <path fill="currentColor" d="M3 15.5C2.36232 15.5 1.74874 15.2564 1.28478 14.8189C0.820828 14.3815 0.541576 13.7832 0.504167 13.1467L0.5 13L0.5 3C0.499965 2.36232 0.743605 1.74874 1.18107 1.28478C1.61854 0.820828 2.21676 0.541576 2.85333 0.504167L3 0.5L13 0.5C13.6377 0.499965 14.2513 0.743605 14.7152 1.18107C15.1792 1.61854 15.4584 2.21676 15.4958 2.85333L15.5 3L15.5 13C15.5 13.6377 15.2564 14.2513 14.8189 14.7152C14.3815 15.1792 13.7832 15.4584 13.1467 15.4958L13 15.5L3 15.5ZM3 13.8333L10.5 13.8333L10.5 2.16667L3 2.16667C2.79589 2.16669 2.59889 2.24163 2.44636 2.37726C2.29383 2.5129 2.19638 2.69979 2.1725 2.9025L2.16667 3L2.16667 13C2.16669 13.2041 2.24163 13.4011 2.37726 13.5536C2.5129 13.7062 2.69979 13.8036 2.9025 13.8275L3 13.8333ZM6.65583 10.325L6.5775 10.2558L4.91083 8.58917C4.76735 8.44567 4.68116 8.25476 4.66843 8.05223C4.65569 7.84971 4.71729 7.6495 4.84167 7.48917L4.91083 7.41083L6.5775 5.74417C6.72747 5.59471 6.9287 5.50794 7.14032 5.50148C7.35194 5.49502 7.55809 5.56935 7.7169 5.70937C7.8757 5.8494 7.97525 6.04463 7.99533 6.25539C8.01541 6.46616 7.95451 6.67667 7.825 6.84417L7.75583 6.9225L6.67917 8L7.75583 9.0775C7.89931 9.22099 7.98551 9.41191 7.99824 9.61443C8.01097 9.81695 7.94938 10.0172 7.825 10.1775L7.75583 10.2558C7.61234 10.3993 7.42142 10.4855 7.2189 10.4982C7.01638 10.511 6.81617 10.4494 6.65583 10.325Z"/>
+  </svg>
+  <span class="pst-collapse-sidebar-label">Collapse Sidebar</span>
+  <span class="pst-expand-sidebar-label">Expand Sidebar</span>
+</button></div>
+        <div class="sidebar-primary-item">
+
+<nav class="bd-docs-nav bd-links"
+     aria-label="Section Navigation">
+  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
+  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.config.html">pharmacophoremt.config package</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="pharmacophoremt.interaction_site.html">pharmacophoremt.interaction_site package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.feature.html">pharmacophoremt.interaction_site.feature package</a></li>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.interaction_site.shape.html">pharmacophoremt.interaction_site.shape package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="pharmacophoremt.io.html">pharmacophoremt.io package</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="pharmacophoremt.io.phmt.html">pharmacophoremt.io.phmt package</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 current active"><a aria-current="page" class="current reference internal" href="#">pharmacophoremt.modeler package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.screening.html">pharmacophoremt.screening package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.validation.html">pharmacophoremt.validation package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pharmacophoremt.viewer.html">pharmacophoremt.viewer package</a></li>
+</ul>
+</div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+      <div class="sidebar-primary-item">
+<div id="ethical-ad-placement"
+      class="flat"
+      data-ea-publisher="readthedocs"
+      data-ea-type="readthedocs-sidebar"
+      data-ea-manual="true">
+</div></div>
+  </div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item">
+
+<nav aria-label="Breadcrumb" class="d-print-none">
+  <ul class="bd-breadcrumbs">
+    
+    <li class="breadcrumb-item breadcrumb-home">
+      <a href="index.html" class="nav-link" aria-label="Home">
+        <i class="fa-solid fa-home"></i>
+      </a>
+    </li>
+    <li class="breadcrumb-item active" aria-current="page"><span class="ellipsis">pharmacophoremt.modeler package</span></li>
+  </ul>
+</nav>
+</div>
+      
+    </div>
+  
+  
+</div>
+</div>
+              
+              
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="pharmacophoremt-modeler-package">
+<h1>pharmacophoremt.modeler package<a class="headerlink" href="#pharmacophoremt-modeler-package" title="Link to this heading">#</a></h1>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading">#</a></h2>
+</section>
+<section id="module-pharmacophoremt.modeler.aligned_cliques">
+<span id="pharmacophoremt-modeler-aligned-cliques-module"></span><h2>pharmacophoremt.modeler.aligned_cliques module<a class="headerlink" href="#module-pharmacophoremt.modeler.aligned_cliques" title="Link to this heading">#</a></h2>
+<p>Exact local feature cliques and joint-support hypotheses in a common frame.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.aligned_cliques.from_aligned_ligand_cliques">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.aligned_cliques.</span></span><span class="sig-name descname"><span class="pre">from_aligned_ligand_cliques</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ligands</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('hydrophobicity',</span> <span class="pre">'hb</span> <span class="pre">donor',</span> <span class="pre">'hb</span> <span class="pre">acceptor',</span> <span class="pre">'aromatic</span> <span class="pre">ring',</span> <span class="pre">'positive</span> <span class="pre">charge',</span> <span class="pre">'negative</span> <span class="pre">charge')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_support</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_sites</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_graph_nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_cliques</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_combinations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/aligned_cliques.html#from_aligned_ligand_cliques"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.aligned_cliques.from_aligned_ligand_cliques" title="Link to this definition">#</a></dt>
+<dd><p>Build alternative Feature + Shape consensus models from prepared aligned ligands.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ligands</strong> (<em>sequence</em><em> of </em><em>dict</em>) – Unique ligand_id/molecular_system records; optional selection,
+structure_index and chemical_state default to ‘all’, 0 and ‘reference’.</p></li>
+<li><p><strong>features</strong> (<em>sequence</em><em> of </em><em>str</em>) – Classical families extracted through MolSysMT-supported get_features.</p></li>
+<li><p><strong>min_support</strong> (<em>int</em>) – Shared ligand and site-count requirements for each hypothesis.</p></li>
+<li><p><strong>min_sites</strong> (<em>int</em>) – Shared ligand and site-count requirements for each hypothesis.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>quantities</em>) – Geometric discovery/aggregation criteria in the declared common frame.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>quantities</em>) – Geometric discovery/aggregation criteria in the declared common frame.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em><em>, </em><em>default='0.15 nm'</em>) – Emitted shape radius, independent of discovery tolerance.</p></li>
+<li><p><strong>max_graph_nodes</strong> (<em>int</em>) – Explicit discovery bounds; exceeding a bound raises PHMT-E107.</p></li>
+<li><p><strong>max_cliques</strong> (<em>int</em>) – Explicit discovery bounds; exceeding a bound raises PHMT-E107.</p></li>
+<li><p><strong>max_combinations</strong> (<em>int</em>) – Explicit discovery bounds; exceeding a bound raises PHMT-E107.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Model name prefix; each name includes its deterministic hypothesis ID.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Models in hypothesis order, a detached scientific report and complete=True.
+No supported hypothesis yields models=[], not an empty usable model.
+Each model retains source, correspondence and joint-support evidence.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Inputs are prepared and aligned by the caller through MolSysMT. No chemical
+preparation, hydrogen addition or molecular alignment occurs here. Sites
+begin essential with weight 1; support is not affinity. Optional attribution
+records the whole hypothesis-generation calculation in the report and each
+derived model, retaining original bibliography and producer versions.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">from_aligned_ligand_cliques</span><span class="p">([{</span><span class="s1">'ligand_id'</span><span class="p">:</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'molecular_system'</span><span class="p">:</span><span class="n">a</span><span class="p">},</span> <span class="p">{</span><span class="s1">'ligand_id'</span><span class="p">:</span><span class="s1">'b'</span><span class="p">,</span> <span class="s1">'molecular_system'</span><span class="p">:</span><span class="n">b</span><span class="p">}])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">models</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">'models'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.aligned_cliques.get_aligned_consensus_hypotheses">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.aligned_cliques.</span></span><span class="sig-name descname"><span class="pre">get_aligned_consensus_hypotheses</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_inventories</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_support</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_sites</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_graph_nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_cliques</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_combinations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/aligned_cliques.html#get_aligned_consensus_hypotheses"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.aligned_cliques.get_aligned_consensus_hypotheses" title="Link to this definition">#</a></dt>
+<dd><p>Aggregate aligned cliques and enumerate maximal jointly supported hypotheses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_inventories</strong> (<em>sequence</em><em> of </em><em>dict</em>) – Native inventories in one declared coordinate frame.</p></li>
+<li><p><strong>ligand_ids</strong> (<em>sequence</em><em> of </em><em>str</em>) – Unique source identities; empty inventories count in support fractions.</p></li>
+<li><p><strong>min_support</strong> (<em>int</em><em>, </em><em>default=2</em>) – Minimum count for each site and for the common supporters of all sites.</p></li>
+<li><p><strong>min_sites</strong> (<em>int</em><em>, </em><em>default=1</em>) – Minimum number of sites in an emitted hypothesis.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>quantities</em>) – Pairwise clique and final aggregation tolerances.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>quantities</em>) – Pairwise clique and final aggregation tolerances.</p></li>
+<li><p><strong>max_graph_nodes</strong> (<em>int</em>) – Bounds forwarded to get_aligned_feature_cliques.</p></li>
+<li><p><strong>max_cliques</strong> (<em>int</em>) – Bounds forwarded to get_aligned_feature_cliques.</p></li>
+<li><p><strong>max_combinations</strong> (<em>int</em><em>, </em><em>default=10000</em>) – Bound on attempted candidate-site extensions, including rejected ones.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Candidate sites, their correspondence groups, rejected aggregation,
+alternative hypotheses with shared ligand evidence, discovery report,
+combination count and complete=True. Evaluated-empty discovery succeeds.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>A feature occurrence cannot be reused within a hypothesis; different
+hypotheses may share it. Joint support is an intersection, not pairwise
+support. Sites are unweighted feature means with the lexicographically first
+ligand member’s orientation, as in get_consensus_sites. Emitted hypotheses
+are inclusion-maximal feasible packages of maximal site cliques, not all
+subcliques or globally optimized pharmacophores. No affinity score is assigned.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">get_aligned_consensus_hypotheses</span><span class="p">([</span><span class="n">get_features</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">get_features</span><span class="p">(</span><span class="n">b</span><span class="p">)],</span> <span class="n">ligand_ids</span><span class="o">=</span><span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alternatives</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">'hypotheses'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.aligned_cliques.get_aligned_feature_cliques">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.aligned_cliques.</span></span><span class="sig-name descname"><span class="pre">get_aligned_feature_cliques</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_inventories</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_support</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_graph_nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_cliques</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/aligned_cliques.html#get_aligned_feature_cliques"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.aligned_cliques.get_aligned_feature_cliques" title="Link to this definition">#</a></dt>
+<dd><p>Discover all supported maximal feature cliques in a declared common frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_inventories</strong> (<em>sequence</em><em> of </em><em>dict</em>) – Native get_features results; each ligand contributes one prepared frame.</p></li>
+<li><p><strong>ligand_ids</strong> (<em>sequence</em><em> of </em><em>str</em>) – Unique declared identities, including sources with empty inventories.</p></li>
+<li><p><strong>min_support</strong> (<em>int</em><em>, </em><em>default=2</em>) – Minimum distinct-ligand count per clique.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>length quantity</em><em>, </em><em>default='0.15 nm'</em>) – Inclusive maximum pairwise feature-center distance.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>angle quantity</em><em>, </em><em>default='30 degrees'</em>) – Inclusive directed donor angle or unoriented aromatic-axis angle.</p></li>
+<li><p><strong>max_graph_nodes</strong> (<em>int</em><em>, </em><em>default=64</em>) – Total feature occurrence bound, checked before graph construction.</p></li>
+<li><p><strong>max_cliques</strong> (<em>int</em><em>, </em><em>default=1000</em>) – Bound on all enumerated maximal cliques, including unsupported ones.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Canonical groups of [inventory index, feature index] pairs, unsupported
+groups, graph counts, criteria and complete=True. Exhausting any limit
+raises PHMT-E107; no truncated result is returned.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Edges require equal kinds, distinct ligands and compatible absolute geometry.
+NetworkX find_cliques implements Bron–Kerbosch with the Tomita adaptation.
+Maximal is inclusion-maximal, not only the largest clique. This discovers
+site correspondences, not DISCO superpositions or RDP patterns. Graph size
+bounds pair construction and storage; the output bound is not a wall-time
+limit or an internal NetworkX search-step bound.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">get_aligned_feature_cliques</span><span class="p">([</span><span class="n">get_features</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">get_features</span><span class="p">(</span><span class="n">b</span><span class="p">)],</span> <span class="n">ligand_ids</span><span class="o">=</span><span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">groups</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">'groups'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.aligned_consensus">
+<span id="pharmacophoremt-modeler-aligned-consensus-module"></span><h2>pharmacophoremt.modeler.aligned_consensus module<a class="headerlink" href="#module-pharmacophoremt.modeler.aligned_consensus" title="Link to this heading">#</a></h2>
+<p>Reference-anchored consensus on native feature inventories in a common frame.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.aligned_consensus.from_aligned_ligands">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.aligned_consensus.</span></span><span class="sig-name descname"><span class="pre">from_aligned_ligands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ligands</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('hydrophobicity',</span> <span class="pre">'hb</span> <span class="pre">donor',</span> <span class="pre">'hb</span> <span class="pre">acceptor',</span> <span class="pre">'aromatic</span> <span class="pre">ring',</span> <span class="pre">'positive</span> <span class="pre">charge',</span> <span class="pre">'negative</span> <span class="pre">charge')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_support</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_matrix_entries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/aligned_consensus.html#from_aligned_ligands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.aligned_consensus.from_aligned_ligands" title="Link to this definition">#</a></dt>
+<dd><p>Build reference-anchored consensus from prepared ligands in one frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ligands</strong> (<em>sequence</em><em> of </em><em>dict</em>) – At least two sources with unique ‘ligand_id’ and ‘molecular_system’. Each
+may declare selection, structure_index and chemical_state; defaults are
+‘all’, 0 and ‘reference’. Each identity contributes one prepared frame.</p></li>
+<li><p><strong>reference_index</strong> (<em>int</em>) – Source whose features anchor the hypothesis. Features absent from that
+source are outside this method’s discovery scope.</p></li>
+<li><p><strong>features</strong> (<em>sequence</em><em> of </em><em>str</em>) – Classical families obtained through get_features/MolSysMT.</p></li>
+<li><p><strong>min_support</strong> (<em>int</em>) – Minimum distinct input ligand count, including empty inventories.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>quantities</em>) – Matching and final center/reference-orientation acceptance tolerances.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>quantities</em>) – Matching and final center/reference-orientation acceptance tolerances.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em>) – Emitted site radius, independent of correspondence/dispersion tolerance.</p></li>
+<li><p><strong>max_matrix_entries</strong> (<em>int</em>) – Assignment matrix bound per reference/candidate comparison.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Output model name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Essential, equally weighted editable sites with native portable source,
+correspondence, support and dispersion metadata. Empty consensus raises.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>No preparation, alignment, conformer generation or all-pattern enumeration.
+Support records feature correspondence, not affinity or guaranteed acceptance
+under independently curated emitted radii. Geometry rejection is retained;
+maximum-cardinality pairwise matches are not globally optimized afterward.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">query</span> <span class="o">=</span> <span class="n">from_aligned_ligands</span><span class="p">([{</span><span class="s1">'ligand_id'</span><span class="p">:</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'molecular_system'</span><span class="p">:</span><span class="n">a</span><span class="p">},</span> <span class="p">{</span><span class="s1">'ligand_id'</span><span class="p">:</span><span class="s1">'b'</span><span class="p">,</span> <span class="s1">'molecular_system'</span><span class="p">:</span><span class="n">b</span><span class="p">}])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.aligned_consensus.get_aligned_feature_matches">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.aligned_consensus.</span></span><span class="sig-name descname"><span class="pre">get_aligned_feature_matches</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">reference_inventory</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_inventory</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_matrix_entries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/aligned_consensus.html#get_aligned_feature_matches"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.aligned_consensus.get_aligned_feature_matches" title="Link to this definition">#</a></dt>
+<dd><p>Match two native inventories already expressed in a common frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>reference_inventory</strong> (<em>dict</em>) – Outputs of get_features; feature indices retain their original ordering.</p></li>
+<li><p><strong>feature_inventory</strong> (<em>dict</em>) – Outputs of get_features; feature indices retain their original ordering.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>length quantity</em>) – Maximum distance between matched feature centers, inclusive.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>angle quantity</em>) – Maximum directed donor-vector or unoriented aromatic-axis angle.</p></li>
+<li><p><strong>max_matrix_entries</strong> (<em>int</em>) – Bound on assignment matrix entries, including unmatched dummy columns.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Injective matches [reference feature index, candidate feature index],
+unmatched indices, matrix size and complete=True. Maximize cardinality,
+then minimize total center distance. Matrix-budget exhaustion raises
+PHMT-E106 before allocation; it is not an empty scientific match.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Equal optima retain the solver’s deterministic input-order choice. This tool
+performs no alignment, preparation, molecular access or exhaustive search.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">matches</span> <span class="o">=</span> <span class="n">get_aligned_feature_matches</span><span class="p">(</span><span class="n">get_features</span><span class="p">(</span><span class="n">reference</span><span class="p">),</span> <span class="n">get_features</span><span class="p">(</span><span class="n">ligand</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.aligned_consensus.get_consensus_sites">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.aligned_consensus.</span></span><span class="sig-name descname"><span class="pre">get_consensus_sites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_inventories</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">correspondence_groups</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_ids</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_support</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/aligned_consensus.html#get_consensus_sites"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.aligned_consensus.get_consensus_sites" title="Link to this definition">#</a></dt>
+<dd><p>Aggregate explicit pharmacophoric correspondences into supported sites.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_inventories</strong> (<em>sequence</em><em> of </em><em>dict</em>) – One native inventory per distinct ligand in a common coordinate frame.</p></li>
+<li><p><strong>correspondence_groups</strong> (<em>sequence</em>) – Each site group lists [inventory index, feature index] pairs. Each group
+contains at most one feature per ligand, with one common chemical kind;
+an occurrence cannot belong to multiple groups within this hypothesis.</p></li>
+<li><p><strong>ligand_ids</strong> (<em>sequence</em><em> of </em><em>str</em>) – Unique declared source identities, including ligands with no features.</p></li>
+<li><p><strong>min_support</strong> (<em>int</em>) – Minimum distinct-ligand count per site, between 1 and the input count.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>length quantity</em>) – Maximum member distance from the unweighted feature-center mean.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>angle quantity</em>) – Maximum orientation deviation from the first member’s donor vector or
+aromatic axis. Reference orientation is retained; no angular mean occurs.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Unit-bearing site records, explicit members/support/dispersion, rejected
+groups with reasons, and complete=True, including evaluated-empty results.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This aggregates pharmacophoric geometry, not molecular coordinates. It never
+reads/modifies a molecular system. Ligand identities are caller declarations;
+this method does not infer chemical equivalence or collapse dataset duplicates.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">sites</span> <span class="o">=</span> <span class="n">get_consensus_sites</span><span class="p">([</span><span class="n">get_features</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">get_features</span><span class="p">(</span><span class="n">b</span><span class="p">)],</span> <span class="p">[[[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]]],</span> <span class="n">ligand_ids</span><span class="o">=</span><span class="p">[</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'b'</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.complex_based">
+<span id="pharmacophoremt-modeler-complex-based-module"></span><h2>pharmacophoremt.modeler.complex_based module<a class="headerlink" href="#module-pharmacophoremt.modeler.complex_based" title="Link to this heading">#</a></h2>
+<p>Compatibility facade for prepared native complex observations.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.complex_based.ComplexBasedModeler">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.complex_based.</span></span><span class="sig-name descname"><span class="pre">ComplexBasedModeler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receptor_selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">interaction_collection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cation_mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duplicate_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same_participant'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/complex_based.html#ComplexBasedModeler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.complex_based.ComplexBasedModeler" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pharmacophoremt.modeler.modeler.Modeler" title="pharmacophoremt.modeler.modeler.Modeler"><code class="xref py py-class docutils literal notranslate"><span class="pre">Modeler</span></code></a></p>
+<p>Build complex hypotheses from explicit cached MolSysMT observations.</p>
+<p>The source must be the same unchanged prepared system used by every analysis
+in interaction_collection. ligand_selection is explicit; the observations
+define the partner boundary. No receptor selection, chemical preparation,
+interaction detection or legacy threshold/merging policy is inferred here.
+The native scientific definitions are not equivalent to the retired heuristics.</p>
+<p>build() returns one Pharmacophore for frame zero, an integer frame or a
+one-element frame sequence; multiple explicit frames return a list in caller
+order. Every frame must have been evaluated by every supplied analysis.
+Empty observed models remain empty. Failures raise without publishing partial
+results; result is cleared before each attempt and stores a successful return.
+Original native evidence, profile/state and optional attribution are retained
+by from_interaction_collection().</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.complex_based.ComplexBasedModeler.build">
+<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/complex_based.html#ComplexBasedModeler.build"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.complex_based.ComplexBasedModeler.build" title="Link to this definition">#</a></dt>
+<dd><p>Convert declared evaluated structures through the public native tool.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>structure_indices</strong> (<em>int</em><em> or </em><em>sequence</em><em> of </em><em>int</em><em>, </em><em>optional</em>) – Default frame zero, or explicit unique nonnegative local indices.
+‘all’ is not accepted: select assessed structures explicitly.</p>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>One model for a single requested structure, otherwise ordered models.
+Provider/coverage/conversion failures propagate without partial return.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a> or list of <a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.composition">
+<span id="pharmacophoremt-modeler-composition-module"></span><h2>pharmacophoremt.modeler.composition module<a class="headerlink" href="#module-pharmacophoremt.modeler.composition" title="Link to this heading">#</a></h2>
+<p>Independent common-frame hypothesis composition with labeled contributions.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.composition.compose_pharmacophores">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.composition.</span></span><span class="sig-name descname"><span class="pre">compose_pharmacophores</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophores</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">duplicate_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'keep'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/composition.html#compose_pharmacophores"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.composition.compose_pharmacophores" title="Link to this definition">#</a></dt>
+<dd><p>Compose named hypotheses declared in one coordinate frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophores</strong> (<em>mapping</em><em> of </em><em>str to Pharmacophore</em>) – Named components in insertion order. Empty components retain provenance.
+Coordinate alignment/origin is a caller declaration; no molecular access
+occurs. Conflicting declared reference frames are refused.</p></li>
+<li><p><strong>duplicate_policy</strong> (<em>{'keep'</em><em>, </em><em>'same_participant'}</em><em>, </em><em>default='keep'</em>) – Keep each constraint independently, or reuse compatible participants of
+native observed-interaction queries with identical source axes, ligand,
+frame and explicit state. Reuse does not add weights or average geometry.
+Conflicting constraints for the same participant raise. Equality uses
+1e-12 nm/dimensionless representation tolerance; disk normal sign is free.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Output name. Input names/descriptions/scores remain component provenance.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Independent sites/metadata and component-to-output site correspondence.
+Observations carry component labels: native relation/occurrence indices
+are local to their original analysis. Cached citations remain evidence,
+without crediting detection or recognition again. An all-empty composition
+remains empty and is not a valid PoseEvaluator query.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This constructs a joint hypothesis, not a consensus or logical alternative.
+<cite>keep</cite> can intentionally produce competing constraints. <cite>same_participant</cite>
+is bounded to native observed-interaction components; generic spatial or
+fused-ring clustering and automatic alignment are separate future strategies.
+Source declarations cannot authenticate molecular origin. Use MolSysMT for
+any molecular transformations. Saved components may be composed without the
+original molecular object or Ackredit. This is separate from legacy <cite>merge</cite>.</p>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.curation">
+<span id="pharmacophoremt-modeler-curation-module"></span><h2>pharmacophoremt.modeler.curation module<a class="headerlink" href="#module-pharmacophoremt.modeler.curation" title="Link to this heading">#</a></h2>
+<p>Reusable selection, independent copying and explicit constraint curation.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.curation.copy_pharmacophore">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.curation.</span></span><span class="sig-name descname"><span class="pre">copy_pharmacophore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophore</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/curation.html#copy_pharmacophore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.curation.copy_pharmacophore" title="Link to this definition">#</a></dt>
+<dd><p>Copy all native sites, geometry and metadata independently.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophore</strong> (<a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore"><em>Pharmacophore</em></a>) – Cached model. The linked molecular system stays the same reference; it
+is neither copied nor queried. Use MolSysMT to copy molecular systems.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Override the copied name; None preserves it.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Independent sites, quantities, feature lists and nested metadata. Scores,
+reference fields and original bibliography remain unchanged. Pure copying
+neither credits a new calculation nor changes the hypothesis provenance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">variant</span> <span class="o">=</span> <span class="n">copy_pharmacophore</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">'alternative'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.curation.edit_pharmacophore">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.curation.</span></span><span class="sig-name descname"><span class="pre">edit_pharmacophore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophore</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">essential</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sigma</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">in_place</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/curation.html#edit_pharmacophore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.curation.edit_pharmacophore" title="Link to this definition">#</a></dt>
+<dd><p>Apply explicit constraints after validating the entire edit.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophore</strong> (<a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore"><em>Pharmacophore</em></a>) – Native-serializable cached model. Molecular data is never accessed.</p></li>
+<li><p><strong>site_indices</strong> (<em>'all'</em><em>, </em><em>int</em><em> or </em><em>sequence</em><em> of </em><em>int</em><em>, </em><em>default='all'</em>) – Nonempty unique target indices; untargeted sites remain in the result.</p></li>
+<li><p><strong>essential</strong> (<em>bool</em><em>, </em><em>optional</em>) – New obligatory flag. None leaves it unchanged.</p></li>
+<li><p><strong>weight</strong> (<em>finite nonnegative real</em><em>, </em><em>optional</em>) – New independent site weight. Zero does not remove essential or exclusion
+semantics; use extraction to remove a constraint.</p></li>
+<li><p><strong>radius</strong> (<em>positive length quantity</em><em>, </em><em>optional</em>) – Actual radius of Sphere, SphereAndVector, Disk or Cylinder. No bare units.</p></li>
+<li><p><strong>sigma</strong> (<em>positive length quantity</em><em>, </em><em>optional</em>) – GaussianKernel width, distinct from a radius. A mixed incompatible target
+set raises without modifying any site. At least one edit field is required.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Variant name and caller explanation.</p></li>
+<li><p><strong>reason</strong> (<em>str</em><em>, </em><em>optional</em>) – Variant name and caller explanation.</p></li>
+<li><p><strong>in_place</strong> (<em>bool</em><em>, </em><em>default=False</em>) – Return an independent variant, or commit to the original model after all
+validation. Existing native site identities remain when editing in place.</p></li>
+<li><p><strong>skip_digestion</strong> (<em>bool</em><em>, </em><em>default=False</em>) – Skip optional argument preprocessing. Scientific validation and atomic
+rejection of incompatible edits still apply.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Edited model with score None, original full model snapshot, local mapping
+and before/after values. Source observations and bibliography are retained.
+Optional capture records actual host/quantity work, not another detection.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This edits hypothesis constraints, not molecular coordinates or the rigid
+correspondence refinement algorithm. Curation provenance is a distinct root;
+compose curated models using generic keep. Bounded native participant reuse
+should precede curation. Pure copy/extraction preserve citations without a new
+scientific attribution boundary. No paper is assigned to caller choices.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">variant</span> <span class="o">=</span> <span class="n">edit_pharmacophore</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">site_indices</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">weight</span><span class="o">=</span><span class="mf">2.0</span><span class="p">,</span>
+<span class="gp">... </span>                            <span class="n">reason</span><span class="o">=</span><span class="s1">'declared anchor preference'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.curation.extract_pharmacophore">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.curation.</span></span><span class="sig-name descname"><span class="pre">extract_pharmacophore</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophore</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reason</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/curation.html#extract_pharmacophore"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.curation.extract_pharmacophore" title="Link to this definition">#</a></dt>
+<dd><p>Make an independent subset with explicit source-to-output correspondence.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophore</strong> (<a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore"><em>Pharmacophore</em></a>) – Native-serializable cached hypothesis, unchanged.</p></li>
+<li><p><strong>site_indices</strong> (<em>'all'</em><em>, </em><em>int</em><em> or </em><em>sequence</em><em> of </em><em>int</em><em>, </em><em>default='all'</em>) – Unique local site indices in output order, obtainable with
+get_interaction_site_indices(). Empty extraction remains an empty model.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Output name and caller’s explanation for the selection.</p></li>
+<li><p><strong>reason</strong> (<em>str</em><em>, </em><em>optional</em>) – Output name and caller’s explanation for the selection.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Independent selected sites; original complete native model snapshot,
+observations/bibliography and site mapping in metadata. The score is None
+until reevaluated. Extraction does not align, deduplicate or rerun detection.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">subset</span> <span class="o">=</span> <span class="n">extract_pharmacophore</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">site_indices</span><span class="o">=</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.curation.get_interaction_site_indices">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.curation.</span></span><span class="sig-name descname"><span class="pre">get_interaction_site_indices</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pharmacophore</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">site_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">shape_names</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/curation.html#get_interaction_site_indices"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.curation.get_interaction_site_indices" title="Link to this definition">#</a></dt>
+<dd><p>Select cached site indices in requested order, without molecular access.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pharmacophore</strong> (<a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore"><em>Pharmacophore</em></a>) – Native hypothesis, unchanged.</p></li>
+<li><p><strong>site_indices</strong> (<em>'all'</em><em>, </em><em>int</em><em> or </em><em>sequence</em><em> of </em><em>int</em><em>, </em><em>default='all'</em>) – Unique nonnegative local site indices. An explicit empty sequence is valid.
+These are model indices, not MolSysMT molecular selections.</p></li>
+<li><p><strong>feature_names</strong> (<em>str</em><em> or </em><em>sequence</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – Exact cached names. Any selected feature may match; feature and shape
+filters combine with AND. Unknown names raise instead of hiding a typo.</p></li>
+<li><p><strong>shape_names</strong> (<em>str</em><em> or </em><em>sequence</em><em> of </em><em>str</em><em>, </em><em>optional</em>) – Exact cached names. Any selected feature may match; feature and shape
+filters combine with AND. Unknown names raise instead of hiding a typo.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Independent indices, possibly empty. No sorting or geometry clustering.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list of int</p>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">donors</span> <span class="o">=</span> <span class="n">get_interaction_site_indices</span><span class="p">(</span><span class="n">query</span><span class="p">,</span> <span class="n">feature_names</span><span class="o">=</span><span class="s1">'hb donor'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.dispatcher">
+<span id="pharmacophoremt-modeler-dispatcher-module"></span><h2>pharmacophoremt.modeler.dispatcher module<a class="headerlink" href="#module-pharmacophoremt.modeler.dispatcher" title="Link to this heading">#</a></h2>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.dispatcher.model">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.dispatcher.</span></span><span class="sig-name descname"><span class="pre">model</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'complex-based'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receptor_selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/dispatcher.html#model"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.dispatcher.model" title="Link to this definition">#</a></dt>
+<dd><p>Build a pharmacophore through an explicitly configured modeling route.</p>
+<p>The default complex-based route requires ligand_selection and a named
+interaction_collection of cached native MolSysMT observations on the same
+unchanged prepared source. It performs no implicit molecular preparation,
+ligand recognition or interaction detection. Optional structure_indices is
+passed to the modeler’s build method. Other native methods keep their own
+prepared-input contracts. Structure-based consumes cached receptor inventories
+and explicit hypothesis projections; it performs no molecular inference.</p>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.excluded_volumes">
+<span id="pharmacophoremt-modeler-excluded-volumes-module"></span><h2>pharmacophoremt.modeler.excluded_volumes module<a class="headerlink" href="#module-pharmacophoremt.modeler.excluded_volumes" title="Link to this heading">#</a></h2>
+<p>Pharmacophoric exclusion spheres constructed from cached heavy-atom geometry.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.excluded_volumes.get_excluded_volume_sites">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.excluded_volumes.</span></span><span class="sig-name descname"><span class="pre">get_excluded_volume_sites</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_inventory</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/excluded_volumes.html#get_excluded_volume_sites"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.excluded_volumes.get_excluded_volume_sites" title="Link to this definition">#</a></dt>
+<dd><p>Build independent exclusion sites from an existing heavy-atom inventory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_inventory</strong> (<em>dict</em>) – Native <code class="docutils literal notranslate"><span class="pre">get_features(...,</span> <span class="pre">features=['included</span> <span class="pre">volume'])</span></code> result.
+Only singleton heavy-atom records are accepted. Empty inventories yield
+an empty site list; missing or chemical-only inventories are not a
+replacement for heavy-atom extraction.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em><em> or </em><em>explicit-unit str</em>) – Caller-selected positive finite scalar radius shared by the sites.
+There is no default, physical-radius assignment or ligand-based pruning.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p><code class="docutils literal notranslate"><span class="pre">interaction_sites</span></code> contains independent excluded-volume Sphere sites,
+with weight zero and source correspondence. <code class="docutils literal notranslate"><span class="pre">report</span></code> is detached JSON
+construction provenance, including source inventory and any original
+cached attribution. Optional attribution credits only construction.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>No molecular access, recognition, chemistry preparation or periodic imaging
+occurs here. The inventory’s source/frame identity remains a caller
+declaration. Obtain coordinates, selections and any physical atomic radii
+through MolSysMT. A uniform sphere radius is a pharmacophoric hypothesis,
+not a van der Waals overlap or force-field model.</p>
+<p>Add these sites to a query with positive sites in the same coordinate frame
+using <code class="docutils literal notranslate"><span class="pre">Pharmacophore.add_interaction_site</span></code>. The current PoseEvaluator vetoes
+candidate heavy-atom centers strictly inside an exclusion. Radius equality
+is permitted; exclusions contribute no weight to positive fit. Essential or
+optional flags do not soften that veto. An exclusion-only query is not a
+valid PoseEvaluator query. No global site indices exist until composition.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">inventory</span> <span class="o">=</span> <span class="n">get_features</span><span class="p">(</span><span class="n">receptor</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">'included volume'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">excluded</span> <span class="o">=</span> <span class="n">get_excluded_volume_sites</span><span class="p">(</span><span class="n">inventory</span><span class="p">,</span> <span class="n">radius</span><span class="o">=</span><span class="s1">'0.10 nm'</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">site</span> <span class="ow">in</span> <span class="n">excluded</span><span class="p">[</span><span class="s1">'interaction_sites'</span><span class="p">]:</span>
+<span class="gp">... </span>    <span class="n">query</span><span class="o">.</span><span class="n">add_interaction_site</span><span class="p">(</span><span class="n">site</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.features">
+<span id="pharmacophoremt-modeler-features-module"></span><h2>pharmacophoremt.modeler.features module<a class="headerlink" href="#module-pharmacophoremt.modeler.features" title="Link to this heading">#</a></h2>
+<p>Reusable chemical participants obtained through public MolSysMT tools.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.features.get_features">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.features.</span></span><span class="sig-name descname"><span class="pre">get_features</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemical_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'reference'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('hydrophobicity',</span> <span class="pre">'hb</span> <span class="pre">donor',</span> <span class="pre">'hb</span> <span class="pre">acceptor',</span> <span class="pre">'aromatic</span> <span class="pre">ring',</span> <span class="pre">'positive</span> <span class="pre">charge',</span> <span class="pre">'negative</span> <span class="pre">charge')</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/features.html#get_features"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.features.get_features" title="Link to this definition">#</a></dt>
+<dd><p>Extract participants and their geometry from one prepared ligand frame.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecular_system</strong> (<em>molecular system</em>) – Any source supported by MolSysMT, with declared chemistry and coordinates.</p></li>
+<li><p><strong>selection</strong> (<em>MolSysMT selection</em><em>, </em><em>default='all'</em>) – Participants must be wholly contained in the selection.</p></li>
+<li><p><strong>structure_index</strong> (<em>int</em><em>, </em><em>default=0</em>) – Local coordinate frame.</p></li>
+<li><p><strong>chemical_state</strong> (<em>str</em><em> or </em><em>int</em><em>, </em><em>default='reference'</em>) – Chemical state resolved by MolSysMT independently of the frame.</p></li>
+<li><p><strong>features</strong> (<em>sequence</em><em> of </em><em>str</em>) – Requested classical families; ‘included volume’ also yields heavy atoms.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Feature records containing local atom indices, explicit-unit centers,
+dimensionless donor directions or aromatic normals, and detached provider
+recognition/geometry evidence. Charge records retain elementary charges.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This versioned definition uses MolSysMT’s atomic hydrophobic and donor/acceptor
+SMARTS rules, stored-aromatic-bond minimum cycle basis, and declared formal
+charge centers. Charge positions are unweighted centroids of the provider’s
+geometry members. No protonation, hydrogen addition, repair, periodic imaging,
+or conformer generation occurs. Missing/ambiguous chemistry raises in MolSysMT.
+Ring membership is not a claim of equivalence to RDKit SSSR.
+Donor-pair vector arithmetic is the remaining molecular-geometry migration
+tracked in MolSysMT #375 / PharmacophoreMT #41; no local acceptor direction
+model is supplied. Receptor hypothesis projections must be explicit.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">inventory</span> <span class="o">=</span> <span class="n">get_features</span><span class="p">(</span><span class="n">prepared_ligand</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">'aromatic ring'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ring_atoms</span> <span class="o">=</span> <span class="n">inventory</span><span class="p">[</span><span class="s1">'features'</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">'atom_indices'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.interaction_based">
+<span id="pharmacophoremt-modeler-interaction-based-module"></span><h2>pharmacophoremt.modeler.interaction_based module<a class="headerlink" href="#module-pharmacophoremt.modeler.interaction_based" title="Link to this heading">#</a></h2>
+<p>Build pharmacophores from already evaluated MolSysMT interactions.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.interaction_based.from_interactions">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.interaction_based.</span></span><span class="sig-name descname"><span class="pre">from_interactions</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interactions</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_selection</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cation_mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/interaction_based.html#from_interactions"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.interaction_based.from_interactions" title="Link to this definition">#</a></dt>
+<dd><p>Construct sites from native hydrophobic, H-bond, ionic and aromatic contacts.</p>
+<p>The caller supplies the same, unchanged molecular system and index space
+used to calculate <code class="docutils literal notranslate"><span class="pre">interactions</span></code>. Axis checks cannot authenticate origin.
+Only cross-boundary observations involving the selected ligand contribute.
+A ligand donor becomes a directed sphere along its indexed donor-H bond;
+an acceptor or hydrophobic atom becomes a sphere. An ionic ligand participant
+becomes a positive/negative charge sphere at the unweighted centroid of its
+provider-defined geometry members, using the shared <code class="docutils literal notranslate"><span class="pre">get_features</span></code> tool.
+Repeated observations of the same participant contribute evidence to one site.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecular_system</strong> (<em>molecular system</em>) – Source accepted by MolSysMT, with the evaluated coordinates intact.</p></li>
+<li><p><strong>interactions</strong> (<em>molsysmt.Interactions</em>) – Native observations, including evaluated-frame coverage.</p></li>
+<li><p><strong>ligand_selection</strong> (<em>selection</em>) – MolSysMT selection containing all participating ligand atoms.</p></li>
+<li><p><strong>structure_index</strong> (<em>int</em><em>, </em><em>default=0</em>) – One evaluated frame in the result’s local index space.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em><em>, </em><em>default='0.15 nm'</em>) – Pharmacophore matching radius; independent of interaction cutoffs.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Model name.</p></li>
+<li><p><strong>cation_mapping</strong> (<em>{'exact'</em><em>, </em><em>'containing_center'}</em><em>, </em><em>default='exact'</em>) – For cation-pi observations, require exact shared charge-center membership
+or explicitly map a smaller observed cation into one containing positive
+center. Original reference atoms and charge measurements remain evidence.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>A model retaining source indices, criteria, versions and attribution.
+A covered frame with no qualifying observations yields an empty model.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This bounded route does not reconstruct periodic images. Nonzero image
+vectors and unsupported interaction kinds raise instead of losing evidence.
+No protonation, hydrogen addition, coordinate generation or repair occurs.
+Ionic observations require <code class="docutils literal notranslate"><span class="pre">formal_charge_centers&#64;1</span></code> and their explicit
+chemical-state index. Whole-center membership and charge are checked against
+current recognition. The minimum-contact distance is retained as evidence;
+it is not the sphere center, matching radius or an electrostatic energy.
+Pi-pi and cation-pi ring participants become shared least-squares aromatic
+disks, independently of the detector’s recorded plane/profile. Rings must
+match shared membership exactly. Supported upstream profiles and original
+criteria remain distinct from this hypothesis geometry; neither plane-axis
+sign nor an observed ring-normal direction determines a binding vector.</p>
+<p class="rubric">Examples</p>
+<p>Given a source complex and native MolSysMT observations in its index space:</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">query</span> <span class="o">=</span> <span class="n">from_interactions</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">observations</span><span class="p">,</span> <span class="n">ligand_selection</span><span class="o">=</span><span class="s1">'molecule_type == "small molecule"'</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.interaction_collection">
+<span id="pharmacophoremt-modeler-interaction-collection-module"></span><h2>pharmacophoremt.modeler.interaction_collection module<a class="headerlink" href="#module-pharmacophoremt.modeler.interaction_collection" title="Link to this heading">#</a></h2>
+<p>Compose separately computed native analyses through public modeling tools.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.interaction_collection.from_interaction_collection">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.interaction_collection.</span></span><span class="sig-name descname"><span class="pre">from_interaction_collection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interaction_collection</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ligand_selection</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cation_mapping</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'exact'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">duplicate_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'same_participant'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/interaction_collection.html#from_interaction_collection"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.interaction_collection.from_interaction_collection" title="Link to this definition">#</a></dt>
+<dd><p>Build a joint hypothesis from a named collection of cached native analyses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecular_system</strong> (<em>molecular system</em>) – Same unchanged source used by every MolSysMT analysis.</p></li>
+<li><p><strong>interaction_collection</strong> (<em>mapping</em><em> of </em><em>str to molsysmt.Interactions</em>) – Explicit analysis labels, preserved with original profile/version/evidence.
+All analyses must share source maps, axes, selected frame and one declared
+chemical state. No detector is run here. Evaluated-empty analyses remain
+visible; uncovered frames and any failed conversion raise.</p></li>
+<li><p><strong>ligand_selection</strong> (<em>MolSysMT selection</em>) – Whole ligand participants, as for <cite>from_interactions</cite>.</p></li>
+<li><p><strong>structure_index</strong> (<em>int</em><em>, </em><em>default=0</em>) – One common evaluated frame in each result’s local index space.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em><em>, </em><em>default='0.15 nm'</em>) – Common emitted matching radius, independent of detection cutoffs.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Composed query name.</p></li>
+<li><p><strong>cation_mapping</strong> (<em>{'exact'</em><em>, </em><em>'containing_center'}</em><em>, </em><em>default='exact'</em>) – Explicit cation-pi conversion policy, passed to each public adapter.</p></li>
+<li><p><strong>duplicate_policy</strong> (<em>{'same_participant'</em><em>, </em><em>'keep'}</em><em>, </em><em>default='same_participant'</em>) – Public composition policy. Reuse compatible constraints without adding
+weights. Use <cite>compose_pharmacophores</cite> directly for independently edited
+component radii, flags or weights.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Joint query with detached labeled component evidence and site mapping.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>No preparation, alignment, molecular recognition implementation or native
+heterogeneous-result merging occurs here. MolSysMT owns those operations.
+Atomic H-bond/hydrophobic conversion currently uses the source reference
+state; those analyses must declare it. Failures never yield a partial query
+or fit value. Completed child attribution may remain in an application capture.</p>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.ligand_based">
+<span id="pharmacophoremt-modeler-ligand-based-module"></span><h2>pharmacophoremt.modeler.ligand_based module<a class="headerlink" href="#module-pharmacophoremt.modeler.ligand_based" title="Link to this heading">#</a></h2>
+<p>Compatibility facade for explicitly selected native ligand consensus.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.ligand_based.LigandBasedModeler">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.ligand_based.</span></span><span class="sig-name descname"><span class="pre">LigandBasedModeler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_systems</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_points</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_actives</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_conformers</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">conformer_rmsd_threshold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">consensus_method</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/ligand_based.html#LigandBasedModeler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.ligand_based.LigandBasedModeler" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pharmacophoremt.modeler.modeler.Modeler" title="pharmacophoremt.modeler.modeler.Modeler"><code class="xref py py-class docutils literal notranslate"><span class="pre">Modeler</span></code></a></p>
+<p>Build native consensus from prepared ligands with an explicit method.</p>
+<p>consensus_method=’aligned_cliques’ consumes a caller-declared common frame;
+‘rigid’ fits prepared frames through existing public MolSysMT operations.
+There is no implicit or legacy consensus method.</p>
+<p>The historical constructor names and list return remain. n_points now means
+minimum native consensus sites, not exact-size legacy subsets; min_actives
+means joint distinct-ligand support, defaulting to all inputs. Native keyword
+options are forwarded to the selected public tool, except min_sites/min_support,
+which use those historical constructor names.</p>
+<p>Inputs may be an iterable of prepared systems (positional ligand IDs, frame
+zero/reference state) or explicit unique ligand_id/molecular_system records
+with optional selection, structure_index and chemical_state. One frame per
+ligand is consumed; frames of one ligand are not independent supporters.
+Raw repeated objects are refused. Chemical identity across different objects
+or declared IDs remains the caller’s responsibility.</p>
+<p>Historical n_conformers=50/conformer_rmsd_threshold=0.5 defaults are accepted
+for call compatibility but perform no preparation. Other values are refused;
+conformer generation must be a separate provider-supported operation.</p>
+<p>build() returns the native model list in hypothesis order, including [] for
+evaluated-empty consensus. No dummy model or legacy RMSD score is created.
+result/report retain the complete native result/report after successful
+building; both are cleared before a new attempt, including failed attempts.
+Native failure, search-limit, source and attribution contracts are preserved.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.ligand_based.LigandBasedModeler.build">
+<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/ligand_based.html#LigandBasedModeler.build"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.ligand_based.LigandBasedModeler.build" title="Link to this definition">#</a></dt>
+<dd><p>Delegate once to the declared native tool and return its model list.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.modeler">
+<span id="pharmacophoremt-modeler-modeler-module"></span><h2>pharmacophoremt.modeler.modeler module<a class="headerlink" href="#module-pharmacophoremt.modeler.modeler" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.modeler.Modeler">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.modeler.</span></span><span class="sig-name descname"><span class="pre">Modeler</span></span><a class="reference internal" href="_modules/pharmacophoremt/modeler/modeler.html#Modeler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.modeler.Modeler" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">ABC</span></code></p>
+<p>Base class for all pharmacophore modelers.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.modeler.Modeler.build">
+<span class="property"><span class="k"><span class="pre">abstractmethod</span></span><span class="w"> </span></span><span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/modeler.html#Modeler.build"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.modeler.Modeler.build" title="Link to this definition">#</a></dt>
+<dd><p>Execute the modeling process and return a Pharmacophore.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.receptor_projections">
+<span id="pharmacophoremt-modeler-receptor-projections-module"></span><h2>pharmacophoremt.modeler.receptor_projections module<a class="headerlink" href="#module-pharmacophoremt.modeler.receptor_projections" title="Link to this heading">#</a></h2>
+<p>Complementary pharmacophoric hypotheses from cached receptor features.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.receptor_projections.from_receptor_projections">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.receptor_projections.</span></span><span class="sig-name descname"><span class="pre">from_receptor_projections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_inventory</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">projection_specs</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/receptor_projections.html#from_receptor_projections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.receptor_projections.from_receptor_projections" title="Link to this definition">#</a></dt>
+<dd><p>Build one complementary ligand hypothesis from declared receptor features.</p>
+<p><code class="docutils literal notranslate"><span class="pre">feature_inventory</span></code> is a cached native <code class="docutils literal notranslate"><span class="pre">get_features</span></code> inventory containing
+only classical chemical features. <code class="docutils literal notranslate"><span class="pre">projection_specs</span></code> is an explicit list
+(possibly empty) of mappings with <code class="docutils literal notranslate"><span class="pre">feature_index</span></code>, <code class="docutils literal notranslate"><span class="pre">projection_direction</span></code>,
+positive explicit-unit <code class="docutils literal notranslate"><span class="pre">distance</span></code> and nonempty <code class="docutils literal notranslate"><span class="pre">label</span></code>. The direction is
+normalized as a query parameter; the target center is the source feature
+center plus distance times that direction. Unlisted features emit no sites.</p>
+<p>Each source feature may appear once in a hypothesis. Alternative faces or
+directions require separate calls. A receptor acceptor yields a ligand donor
+and requires an independent <code class="docutils literal notranslate"><span class="pre">target_direction</span></code>. Aromatic targets require an
+independent <code class="docutils literal notranslate"><span class="pre">target_normal</span></code>. These target orientations are dimensionless
+query parameters; they are not inferred from the projection direction.
+Other targets are spheres and cannot declare target orientation. Receptor
+donors yield spherical acceptors, compatible with the native undirected
+acceptor inventory. Charges are complemented; hydrophobic/aromatic kinds
+retain their kind. Optional <code class="docutils literal notranslate"><span class="pre">evidence</span></code> mappings retain caller declarations.</p>
+<p>This operation places pharmacophoric query geometry, without accessing or
+moving molecular atoms, computing bond directions, finding pockets, assigning
+chemistry, or detecting observed interactions. Inventory origin, common frame
+and physical justification of each projection remain caller declarations.
+Molecular geometry must come from public MolSysMT tools; missing donor/local
+acceptor direction capabilities are tracked in MolSysMT #375. There are no
+default projection distances, directions or chemical-repair fallbacks.</p>
+<p>The returned Pharmacophore contains essential sites of weight one and
+detached source/specification provenance. An explicit empty projection list
+returns an empty hypothesis, which is not a valid positive PoseEvaluator query.
+Native quantity inventories are required; detached JSON is not decoded here.
+Cached attribution is preserved without crediting new molecular recognition.
+This method does not assert equivalence to retired structure-based heuristics
+or biological validity. Radius is a matching tolerance, independent of distance.</p>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.reference_ligand">
+<span id="pharmacophoremt-modeler-reference-ligand-module"></span><h2>pharmacophoremt.modeler.reference_ligand module<a class="headerlink" href="#module-pharmacophoremt.modeler.reference_ligand" title="Link to this heading">#</a></h2>
+<p>Single-reference ligand pharmacophores using the shared native inventory.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.reference_ligand.from_feature_inventory">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.reference_ligand.</span></span><span class="sig-name descname"><span class="pre">from_feature_inventory</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">feature_inventory</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/reference_ligand.html#from_feature_inventory"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.reference_ligand.from_feature_inventory" title="Link to this definition">#</a></dt>
+<dd><p>Construct a query from an existing native feature inventory.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>feature_inventory</strong> (<em>dict</em>) – Nonempty native get_features result, retaining explicit-unit geometry.
+Classical features and included heavy-atom volumes are supported.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em><em>, </em><em>default='0.15 nm'</em>) – Emitted shape radius, independent of chemical recognition.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Query name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Essential sites of weight one, with detached inventory provenance.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>No molecular access, recognition or fitting occurs. Inventory origin and
+coordinate frame remain caller declarations. Native quantity objects are
+required; this is not a decoder for detached inventory JSON. Previously
+captured attribution is retained without crediting another recognition run.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">query</span> <span class="o">=</span> <span class="n">from_feature_inventory</span><span class="p">(</span><span class="n">get_features</span><span class="p">(</span><span class="n">prepared_ligand</span><span class="p">))</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.reference_ligand.from_ligand">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.reference_ligand.</span></span><span class="sig-name descname"><span class="pre">from_ligand</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">selection</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">structure_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">chemical_state</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'reference'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('hydrophobicity',</span> <span class="pre">'hb</span> <span class="pre">donor',</span> <span class="pre">'hb</span> <span class="pre">acceptor',</span> <span class="pre">'aromatic</span> <span class="pre">ring',</span> <span class="pre">'positive</span> <span class="pre">charge',</span> <span class="pre">'negative</span> <span class="pre">charge')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/reference_ligand.html#from_ligand"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.reference_ligand.from_ligand" title="Link to this definition">#</a></dt>
+<dd><p>Build a classical query from one prepared, experimentally placed ligand.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>molecular_system</strong> (<em>molecular system</em>) – Prepared source accepted by MolSysMT; its coordinates are left intact.</p></li>
+<li><p><strong>selection</strong> (<em>MolSysMT selection</em><em>, </em><em>default='all'</em>) – Ligand atoms; use an explicit selection for a complex.</p></li>
+<li><p><strong>structure_index</strong> (<em>int</em><em>, </em><em>default=0</em>) – Reference coordinate frame.</p></li>
+<li><p><strong>chemical_state</strong> (<em>str</em><em> or </em><em>int</em><em>, </em><em>default='reference'</em>) – MolSysMT chemical state for recognition.</p></li>
+<li><p><strong>features</strong> (<em>sequence</em><em> of </em><em>str</em>) – Families requested from <code class="xref py py-func docutils literal notranslate"><span class="pre">get_features()</span></code>.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em><em>, </em><em>default='0.15 nm'</em>) – Matching tolerance, independent of recognition or interaction cutoffs.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Query name.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Essential, equally weighted sites: atomic/group spheres, donor-H directed
+spheres, and aromatic disks. Geometry, state and recognition are recorded.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p><a class="reference internal" href="pharmacophoremt.html#pharmacophoremt.pharmacophore.Pharmacophore" title="pharmacophoremt.pharmacophore.Pharmacophore">Pharmacophore</a></p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>A reference query is a hypothesis, not evidence that every chemical feature
+contributes to binding. Callers may edit essential flags and weights. Empty
+inventories raise. This function performs no alignment or multi-ligand consensus.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">query</span> <span class="o">=</span> <span class="n">from_ligand</span><span class="p">(</span><span class="n">prepared_ligand</span><span class="p">,</span> <span class="n">features</span><span class="o">=</span><span class="p">[</span><span class="s1">'aromatic ring'</span><span class="p">,</span> <span class="s1">'hb acceptor'</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">PoseEvaluator</span><span class="p">(</span><span class="n">query</span><span class="p">)</span><span class="o">.</span><span class="n">evaluate</span><span class="p">(</span><span class="n">prepared_ligand</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.rigid_consensus">
+<span id="pharmacophoremt-modeler-rigid-consensus-module"></span><h2>pharmacophoremt.modeler.rigid_consensus module<a class="headerlink" href="#module-pharmacophoremt.modeler.rigid_consensus" title="Link to this heading">#</a></h2>
+<p>Alternative consensus models from prepared, rigid, unaligned ligand frames.</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.rigid_consensus.from_rigid_ligands">
+<span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.rigid_consensus.</span></span><span class="sig-name descname"><span class="pre">from_rigid_ligands</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ligands</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">reference_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">correspondence_strategy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'association_cliques'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_seeds</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">refinement_strategy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">orientation_policy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'final'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">features</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">('hydrophobicity',</span> <span class="pre">'hb</span> <span class="pre">donor',</span> <span class="pre">'hb</span> <span class="pre">acceptor',</span> <span class="pre">'aromatic</span> <span class="pre">ring',</span> <span class="pre">'positive</span> <span class="pre">charge',</span> <span class="pre">'negative</span> <span class="pre">charge')</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_matches</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_support</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">min_sites</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">distance_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction_tolerance</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'30</span> <span class="pre">degrees'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_graph_nodes</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">64</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_cliques</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_trials</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_fits</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_layouts</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_combinations</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">max_matrix_entries</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1000000</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/rigid_consensus.html#from_rigid_ligands"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.rigid_consensus.from_rigid_ligands" title="Link to this definition">#</a></dt>
+<dd><p>Align prepared ligand frames to a pivot and retain consensus alternatives.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ligands</strong> (<em>sequence</em><em> of </em><em>dict</em>) – At least two unique ligand_id/molecular_system records, optionally with
+selection, structure_index and chemical_state. One prepared frame each.</p></li>
+<li><p><strong>reference_index</strong> (<em>int</em><em>, </em><em>default=0</em>) – Explicit pivot; it must have three non-collinear classical centers.</p></li>
+<li><p><strong>correspondence_strategy</strong> (<em>str</em><em>, </em><em>default='association_cliques'</em>) – Proposal family: ‘association_cliques’, ‘triplet_seeds’ or
+‘ranked_triplet_seeds’ (G3PS seed stage only).</p></li>
+<li><p><strong>n_seeds</strong> (<em>int</em><em> or </em><em>None</em>) – Scientific guess limit for ranked_triplet_seeds. None retains all;
+finite values may miss valid placements. Other families reject it.</p></li>
+<li><p><strong>refinement_strategy</strong> (<em>{None</em><em>, </em><em>'greedy'}</em><em>, </em><em>default=None</em>) – None fits supplied proposals once. greedy grows each proposal through the
+public refinement tool and retains its best fully evaluated placement.</p></li>
+<li><p><strong>orientation_policy</strong> (<em>{'final'</em><em>, </em><em>'each_step'}</em><em>, </em><em>default='final'</em>) – Angular growth policy when refinement is greedy. Both validate final
+matching completely. each_step without refinement raises.</p></li>
+<li><p><strong>features</strong> (<em>sequence</em><em> of </em><em>str</em>) – Classical chemical families obtained with MolSysMT-supported extraction.</p></li>
+<li><p><strong>min_matches</strong> (<em>int</em><em>, </em><em>default=3</em>) – Minimum final injective pivot-feature matches, at least three. A smaller
+seed may grow before meeting this requirement when refinement is selected.</p></li>
+<li><p><strong>min_support</strong> (<em>int</em>) – Common-ligand support and minimum sites in emitted consensus hypotheses.</p></li>
+<li><p><strong>min_sites</strong> (<em>int</em>) – Common-ligand support and minimum sites in emitted consensus hypotheses.</p></li>
+<li><p><strong>distance_tolerance</strong> (<em>quantities</em>) – Post-fit pivot displacement/orientation and aligned clique criteria.</p></li>
+<li><p><strong>direction_tolerance</strong> (<em>quantities</em>) – Post-fit pivot displacement/orientation and aligned clique criteria.</p></li>
+<li><p><strong>radius</strong> (<em>length quantity</em>) – Shape radius for emitted models, independent of discovery tolerance.</p></li>
+<li><p><strong>max_graph_nodes</strong> (<em>int</em>) – Bounds per association graph and per aligned layout graph/enumeration.</p></li>
+<li><p><strong>max_cliques</strong> (<em>int</em>) – Bounds per association graph and per aligned layout graph/enumeration.</p></li>
+<li><p><strong>max_trials</strong> (<em>int</em>) – Triplet candidate-product bound per source ligand.</p></li>
+<li><p><strong>max_fits</strong> (<em>int</em>) – Total attempted fits and Cartesian product of accepted placements.</p></li>
+<li><p><strong>max_layouts</strong> (<em>int</em>) – Total attempted fits and Cartesian product of accepted placements.</p></li>
+<li><p><strong>max_combinations</strong> (<em>int</em>) – Consensus candidate-extension bound per layout.</p></li>
+<li><p><strong>max_matrix_entries</strong> (<em>int</em>) – Bound on the post-fit pivot assignment matrix, including dummy columns.</p></li>
+<li><p><strong>name</strong> (<em>str</em><em>, </em><em>optional</em>) – Model name prefix.</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns<span class="colon">:</span></dt>
+<dd class="field-even"><p>Native models, detached sources/placements/layouts report, complete=True.
+Unplaced ligands retain their place in support denominators. Failed
+providers or exhausted resources raise; they are not scientific negatives.</p>
+</dd>
+<dt class="field-odd">Return type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>dict</p>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>All fitting and molecular transformation use MolSysMT through the existing
+align_to_pharmacophore tool. Every seed pair must satisfy absolute center and
+orientation criteria after fitting, and an injective full-inventory matching
+must meet min_matches. All accepted proposal placements are retained, even
+when different proposals give identical geometry. No optimum-coverage early
+stop is applied. Completion concerns the chosen pivot/proposal family and
+maximal aligned hypotheses, not all continuous or flexible alignments. A
+ligand lacking a direct pivot placement contributes no sites in any layout.
+Chemical preparation, conformer generation and global multiple alignment are
+separate operations. Original molecular systems are never changed.
+With greedy refinement, its declared growth policy replaces ordinary seed
+acceptance: final checks orientation in final matching, each_step also checks
+every fitted anchor during growth. Both retain their best fully evaluated
+accepted state. All initial/trial fits count against the global allowance.</p>
+<p class="rubric">Examples</p>
+<div class="doctest highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">result</span> <span class="o">=</span> <span class="n">from_rigid_ligands</span><span class="p">([{</span><span class="s1">'ligand_id'</span><span class="p">:</span><span class="s1">'a'</span><span class="p">,</span> <span class="s1">'molecular_system'</span><span class="p">:</span><span class="n">a</span><span class="p">},</span> <span class="p">{</span><span class="s1">'ligand_id'</span><span class="p">:</span><span class="s1">'b'</span><span class="p">,</span> <span class="s1">'molecular_system'</span><span class="p">:</span><span class="n">b</span><span class="p">}])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">alternatives</span> <span class="o">=</span> <span class="n">result</span><span class="p">[</span><span class="s1">'models'</span><span class="p">]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.scoring">
+<span id="pharmacophoremt-modeler-scoring-module"></span><h2>pharmacophoremt.modeler.scoring module<a class="headerlink" href="#module-pharmacophoremt.modeler.scoring" title="Link to this heading">#</a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.scoring.ScoringFunction">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.scoring.</span></span><span class="sig-name descname"><span class="pre">ScoringFunction</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">point_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">vector_weight</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1.0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rmsd_cutoff</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.12</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/scoring.html#ScoringFunction"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.scoring.ScoringFunction" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>A customizable function to score common pharmacophores.
+Rescued and refined from OpenPharmacophore.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.scoring.ScoringFunction.point_score">
+<span class="sig-name descname"><span class="pre">point_score</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rmsd</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/scoring.html#ScoringFunction.point_score"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.scoring.ScoringFunction.point_score" title="Link to this definition">#</a></dt>
+<dd><p>Score based on RMSD (lower is better, returns 0 to 1).</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler.structure_based">
+<span id="pharmacophoremt-modeler-structure-based-module"></span><h2>pharmacophoremt.modeler.structure_based module<a class="headerlink" href="#module-pharmacophoremt.modeler.structure_based" title="Link to this heading">#</a></h2>
+<p>Compatibility facade for explicit cached receptor hypotheses.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.structure_based.StructureBasedModeler">
+<span class="property"><span class="k"><span class="pre">class</span></span><span class="w"> </span></span><span class="sig-prename descclassname"><span class="pre">pharmacophoremt.modeler.structure_based.</span></span><span class="sig-name descname"><span class="pre">StructureBasedModeler</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">molecular_system</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">skip_digestion</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="keyword-only-separator o"><abbr title="Keyword-only parameters separator (PEP 3102)"><span class="pre">*</span></abbr></span></em>, <em class="sig-param"><span class="n"><span class="pre">feature_inventory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">projection_specs</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excluded_volume_inventory</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">excluded_volume_radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">radius</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'0.15</span> <span class="pre">nm'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/structure_based.html#StructureBasedModeler"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.structure_based.StructureBasedModeler" title="Link to this definition">#</a></dt>
+<dd><p>Bases: <a class="reference internal" href="#pharmacophoremt.modeler.modeler.Modeler" title="pharmacophoremt.modeler.modeler.Modeler"><code class="xref py py-class docutils literal notranslate"><span class="pre">Modeler</span></code></a></p>
+<p>Compose explicit projections and optional cached heavy-atom exclusions.</p>
+<p>The unchanged prepared molecular_system is retained as a reference; no
+molecular operation occurs in this facade. Feature inventories and projection
+decisions are explicit. Select/prepare the receptor through MolSysMT first;
+actual pocket identification belongs to TopoMT. Old SMARTS, spherical pocket
+selection, first-neighbor/+z inference and fixed projection rules are retired.</p>
+<p>Optional excluded_volume_inventory must declare the same atom selection,
+structure_index and chemical_state as feature_inventory, and requires an
+explicit excluded_volume_radius. Source identity and coordinate consistency
+remain caller responsibilities; comparing declarations does not authenticate
+cached inventories against molecular_system. Exclusions are constructed by
+get_excluded_volume_sites(), without atom access or physical-radius assignment.</p>
+<p>build() returns one Pharmacophore at the inventory’s declared frame. A single
+explicit requested frame must match it. Multiple frames require separately
+obtained inventories/modelers. result is cleared before every build attempt.
+The new explicit hypothesis method is not equivalent to legacy heuristics.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="pharmacophoremt.modeler.structure_based.StructureBasedModeler.build">
+<span class="sig-name descname"><span class="pre">build</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">structure_indices</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/pharmacophoremt/modeler/structure_based.html#StructureBasedModeler.build"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pharmacophoremt.modeler.structure_based.StructureBasedModeler.build" title="Link to this definition">#</a></dt>
+<dd><p>Build one hypothesis from the declared cached frame, without inference.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-pharmacophoremt.modeler">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-pharmacophoremt.modeler" title="Link to this heading">#</a></h2>
+</section>
+</section>
+
+
+                </article>
+              
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+<div
+    id="pst-page-navigation-heading-2"
+    class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> On this page
+  </div>
+  <nav id="pst-page-toc-nav" class="page-toc" aria-labelledby="pst-page-navigation-heading-2">
+    <ul class="pst-show_toc_level nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#submodules">Submodules</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.aligned_cliques">pharmacophoremt.modeler.aligned_cliques module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.aligned_cliques.from_aligned_ligand_cliques"><code class="docutils literal notranslate"><span class="pre">from_aligned_ligand_cliques()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.aligned_cliques.get_aligned_consensus_hypotheses"><code class="docutils literal notranslate"><span class="pre">get_aligned_consensus_hypotheses()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.aligned_cliques.get_aligned_feature_cliques"><code class="docutils literal notranslate"><span class="pre">get_aligned_feature_cliques()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.aligned_consensus">pharmacophoremt.modeler.aligned_consensus module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.aligned_consensus.from_aligned_ligands"><code class="docutils literal notranslate"><span class="pre">from_aligned_ligands()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.aligned_consensus.get_aligned_feature_matches"><code class="docutils literal notranslate"><span class="pre">get_aligned_feature_matches()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.aligned_consensus.get_consensus_sites"><code class="docutils literal notranslate"><span class="pre">get_consensus_sites()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.complex_based">pharmacophoremt.modeler.complex_based module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.complex_based.ComplexBasedModeler"><code class="docutils literal notranslate"><span class="pre">ComplexBasedModeler</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.complex_based.ComplexBasedModeler.build"><code class="docutils literal notranslate"><span class="pre">ComplexBasedModeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.composition">pharmacophoremt.modeler.composition module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.composition.compose_pharmacophores"><code class="docutils literal notranslate"><span class="pre">compose_pharmacophores()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.curation">pharmacophoremt.modeler.curation module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.curation.copy_pharmacophore"><code class="docutils literal notranslate"><span class="pre">copy_pharmacophore()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.curation.edit_pharmacophore"><code class="docutils literal notranslate"><span class="pre">edit_pharmacophore()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.curation.extract_pharmacophore"><code class="docutils literal notranslate"><span class="pre">extract_pharmacophore()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.curation.get_interaction_site_indices"><code class="docutils literal notranslate"><span class="pre">get_interaction_site_indices()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.dispatcher">pharmacophoremt.modeler.dispatcher module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.dispatcher.model"><code class="docutils literal notranslate"><span class="pre">model()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.excluded_volumes">pharmacophoremt.modeler.excluded_volumes module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.excluded_volumes.get_excluded_volume_sites"><code class="docutils literal notranslate"><span class="pre">get_excluded_volume_sites()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.features">pharmacophoremt.modeler.features module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.features.get_features"><code class="docutils literal notranslate"><span class="pre">get_features()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.interaction_based">pharmacophoremt.modeler.interaction_based module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.interaction_based.from_interactions"><code class="docutils literal notranslate"><span class="pre">from_interactions()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.interaction_collection">pharmacophoremt.modeler.interaction_collection module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.interaction_collection.from_interaction_collection"><code class="docutils literal notranslate"><span class="pre">from_interaction_collection()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.ligand_based">pharmacophoremt.modeler.ligand_based module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.ligand_based.LigandBasedModeler"><code class="docutils literal notranslate"><span class="pre">LigandBasedModeler</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.ligand_based.LigandBasedModeler.build"><code class="docutils literal notranslate"><span class="pre">LigandBasedModeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.modeler">pharmacophoremt.modeler.modeler module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.modeler.Modeler"><code class="docutils literal notranslate"><span class="pre">Modeler</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.modeler.Modeler.build"><code class="docutils literal notranslate"><span class="pre">Modeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.receptor_projections">pharmacophoremt.modeler.receptor_projections module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.receptor_projections.from_receptor_projections"><code class="docutils literal notranslate"><span class="pre">from_receptor_projections()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.reference_ligand">pharmacophoremt.modeler.reference_ligand module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.reference_ligand.from_feature_inventory"><code class="docutils literal notranslate"><span class="pre">from_feature_inventory()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.reference_ligand.from_ligand"><code class="docutils literal notranslate"><span class="pre">from_ligand()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.rigid_consensus">pharmacophoremt.modeler.rigid_consensus module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.rigid_consensus.from_rigid_ligands"><code class="docutils literal notranslate"><span class="pre">from_rigid_ligands()</span></code></a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.scoring">pharmacophoremt.modeler.scoring module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.scoring.ScoringFunction"><code class="docutils literal notranslate"><span class="pre">ScoringFunction</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.scoring.ScoringFunction.point_score"><code class="docutils literal notranslate"><span class="pre">ScoringFunction.point_score()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler.structure_based">pharmacophoremt.modeler.structure_based module</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.structure_based.StructureBasedModeler"><code class="docutils literal notranslate"><span class="pre">StructureBasedModeler</span></code></a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#pharmacophoremt.modeler.structure_based.StructureBasedModeler.build"><code class="docutils literal notranslate"><span class="pre">StructureBasedModeler.build()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#module-pharmacophoremt.modeler">Module contents</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+          </footer>
+        
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script defer src="_static/scripts/bootstrap.js?digest=18bd87630a240e9c25be"></script>
+<script defer src="_static/scripts/pydata-sphinx-theme.js?digest=18bd87630a240e9c25be"></script>
+
+  <footer class="bd-footer">
+<div class="bd-footer__inner bd-page-width">
+  
+    <div class="footer-items__start">
+      
+        <div class="footer-item"><div>
+	&copy; 2025, <a href=contents/about/who.html>Liliana M. Moreno Vargas, Diego Prada Gracia
+		and contributors</a> | <a href="https://www.uibcdf.org/">UIBCDF Lab</a> 
+	at the <a href="http://himfg.com.mx">Federico Gómez Children’s Hospital of Mexico</a><br />
+	<a href="https://github.com/uibcdf/pharmacophoremt">PharmacophoreMT is an open source project</a> shared
+	under <a href="https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE">an MIT license</a>
+	with a structure based on the
+	<a href="https://github.com/MolSSI/cookiecutter-cms">Computational Molecular Science
+		Python Cookiecutter</a> version 1.5
+</div></div>
+      
+        <div class="footer-item">
+  <p class="sphinx-version">
+    Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 9.1.1
+     | 
+    Built with the <a href="https://pydata-sphinx-theme.readthedocs.io/en/stable/index.html">PyData Sphinx Theme</a> 0.23.0
+    <br/>
+  </p>
+
+</div>
+      
+    </div>
+  
+  
+  
+    <div class="footer-items__end">
+      
+        <div class="footer-item"><a href= "mailto:uibcdf@gmail.com">Contact us</a><br /></div>
+      
+    </div>
+  
+</div>
+
+  </footer>
+  </body>
+</html>

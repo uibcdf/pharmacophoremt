@@ -1,0 +1,149 @@
+pharmacophoremt.modeler package
+===============================
+
+Submodules
+----------
+
+pharmacophoremt.modeler.aligned\_cliques module
+-----------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.aligned_cliques
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.aligned\_consensus module
+-------------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.aligned_consensus
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.complex\_based module
+---------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.complex_based
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.composition module
+------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.composition
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.curation module
+---------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.curation
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.dispatcher module
+-----------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.dispatcher
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.excluded\_volumes module
+------------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.excluded_volumes
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.features module
+---------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.features
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.interaction\_based module
+-------------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.interaction_based
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.interaction\_collection module
+------------------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.interaction_collection
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.ligand\_based module
+--------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.ligand_based
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.modeler module
+--------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.modeler
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.receptor\_projections module
+----------------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.receptor_projections
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.reference\_ligand module
+------------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.reference_ligand
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.rigid\_consensus module
+-----------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.rigid_consensus
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.scoring module
+--------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.scoring
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.modeler.structure\_based module
+-----------------------------------------------
+
+.. automodule:: pharmacophoremt.modeler.structure_based
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.modeler
+   :members:
+   :show-inheritance:
+   :undoc-members:

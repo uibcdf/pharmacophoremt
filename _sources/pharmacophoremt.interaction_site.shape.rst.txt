@@ -1,0 +1,69 @@
+pharmacophoremt.interaction\_site.shape package
+===============================================
+
+Submodules
+----------
+
+pharmacophoremt.interaction\_site.shape.cylinder module
+-------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.cylinder
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.shape.disk module
+---------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.disk
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.shape.gaussian\_kernel module
+---------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.gaussian_kernel
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.shape.point module
+----------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.point
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.shape.shapelet module
+-------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.shapelet
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.shape.sphere module
+-----------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.sphere
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.interaction\_site.shape.sphere\_and\_vector module
+------------------------------------------------------------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape.sphere_and_vector
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.interaction_site.shape
+   :members:
+   :show-inheritance:
+   :undoc-members:

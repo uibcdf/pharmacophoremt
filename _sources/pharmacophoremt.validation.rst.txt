@@ -1,0 +1,45 @@
+pharmacophoremt.validation package
+==================================
+
+Submodules
+----------
+
+pharmacophoremt.validation.loo module
+-------------------------------------
+
+.. automodule:: pharmacophoremt.validation.loo
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.validation.metrics module
+-----------------------------------------
+
+.. automodule:: pharmacophoremt.validation.metrics
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.validation.retrospective module
+-----------------------------------------------
+
+.. automodule:: pharmacophoremt.validation.retrospective
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+pharmacophoremt.validation.rigid\_consensus module
+--------------------------------------------------
+
+.. automodule:: pharmacophoremt.validation.rigid_consensus
+   :members:
+   :show-inheritance:
+   :undoc-members:
+
+Module contents
+---------------
+
+.. automodule:: pharmacophoremt.validation
+   :members:
+   :show-inheritance:
+   :undoc-members:
