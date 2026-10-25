@@ -179,6 +179,7 @@ required_paths = [
   "site-packages/pharmacophoremt/validation/metrics.py",
   "site-packages/pharmacophoremt/validation/retrospective.py",
   "site-packages/pharmacophoremt/validation/rigid_consensus.py",
+  "site-packages/pharmacophoremt/validation/saved_results.py",
   "site-packages/pharmacophoremt/viewer/__init__.py",
   "site-packages/pharmacophoremt/viewer/color_palettes.py",
 ]

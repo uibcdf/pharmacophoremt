@@ -1,5 +1,32 @@
 # Development Checkpoint
 
+## Native saved-result summaries implemented; clean receipt pending — 2026-10-24
+
+#65 now has public `validation.summarize_screening_results` and
+`validation.compare_screening_results`, documented in the
+[API](../docs/api/saved_results.md) and
+[recipe](../docs/content/cookbook/retrospective_validation.md).
+They compose the existing native score reader and metrics with explicit original
+cohort, index mapping and upstream causes. Native evaluation failures retain
+their own cause/evidence; unavailable inputs never become negatives. Repeated
+source IDs remain distinct original samples. New metric attribution stays
+separate from immutable source attribution. No molecular-provider code changes.
+
+Local canonical Python 3.14.7: 84 saved-result/metric tests pass, including real
+Ackredit and optional-provider controls; 49 administrative/documentation tests
+plus 24 subtests pass, including strict Sphinx. Three reporting tests, generated
+indexes, whole-tree Ruff and whitespace checks pass. A preliminary derived replay
+of #64 reproduces all counts, scores, original mappings, metrics and missing-score
+sensitivity. Permanent clean-producer receipt is still pending. No full source
+matrix, installed/public package or new molecular experiment is claimed.
+
+**Immediate next action:** commit this implementation, execute
+`python -m phmt_test_support.replay_esr1_saved_results --output /new/path.json`
+from that clean head, retain its new derived evidence separately, then finish
+#65's owning report/issue. Historical #64 results/drivers remain unchanged.
+Follow #9 for the implementation head's hosted receiving. No extra environment
+has been created; public 0.4.0 and its MolSysSuite notice remain unchanged.
+
 ## Paired comparison complete; next native reporting segment — 2026-10-24
 
 **#64 is complete as a bounded exploratory comparison.** Clean producer

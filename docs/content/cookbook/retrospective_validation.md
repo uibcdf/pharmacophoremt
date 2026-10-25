@@ -108,3 +108,81 @@ other failed frames; inspect `entry['ensemble']['n_failed']` and
 `entry['conformers']` in `evaluations`. Failed-molecule and failed-frame counts
 therefore need not coincide. Labels, curation and benchmark preparation remain
 your scientific choices; these recipes do not establish biological validation.
+
+## Summarize saved results against the original cohort
+
+`summarize_screening_results` reads detached native results and recomputes metrics
+without molecular access or another search. Supply every original sample and its
+label, an explicit mapping from native batch indices, and a cause for every input
+that could not reach the native tool. Molecular preparation remains in MolSysMT.
+
+```python
+from pharmacophoremt.validation import summarize_screening_results
+
+summary = summarize_screening_results(
+    cohort=[
+        {'input_index': 10, 'label': 1, 'source_id': 'active-A'},
+        {'input_index': 20, 'label': 0, 'source_id': 'inactive-B'},
+        {'input_index': 30, 'label': 1, 'source_id': 'unavailable-C'},
+    ],
+    evaluations=saved_native_batch,  # native input_index 0 and 1
+    input_mapping=[
+        {'native_input_index': 0, 'input_index': 10},
+        {'native_input_index': 1, 'input_index': 20},
+    ],
+    unscored=[{'input_index': 30, 'stage': 'acquisition', 'reason': 'HTTP 404'}],
+    score_method='seeded_hit',
+    source_metadata={'producer': saved_producer, 'attribution': saved_attribution},
+)
+assert summary['n_total'] == 3
+assert summary['n_upstream_unscored'] == 1
+```
+
+Choose `seeded_hit` for saved seed-only binary search evidence or
+`checked_pose_coverage` for recorded placed/legacy coverage. The existing
+`get_screening_score` contract validates the native evidence. A completed seed-only
+negative can have no fitted pose. A failed search remains unscored, with its full
+native error retained. Missing upstream inputs never receive native failure
+records or zero scores.
+
+Original indices may be sparse. Repeated source IDs with distinct sample indices
+remain separate observations; this tool does not infer chemical identity or
+independence. Duplicate, unknown, overlapping or incomplete mappings, native label
+conflicts and missing causes raise. `records` preserves original order, detached
+cohort fields, native evidence and explicit causes. Original/evaluated/unscored
+class counts and upstream/search counts remain separate. `metrics` describes
+scored inputs only. Undefined AUC/BEDROC are `None`, including single-class sets;
+all empty-set metrics are `None`. No-active EF retains the native metric's zero.
+
+For `seeded_hit`, `missing_binary_score_AUC_sensitivity` additionally reports
+label-dependent hypothetical worst/best 0/1 scores for missing entries. These are
+sensitivity bounds, not imputation or confidence intervals. They do not alter
+the recorded scores or the evaluated-subset metrics.
+
+## Compare saved arms on their common scored subset
+
+```python
+from pharmacophoremt.validation import compare_screening_results
+
+paired = compare_screening_results(
+    original_cohort, saved_baseline_arm, saved_comparison_arm,
+    ef_fractions=(0.1,), bedroc_alpha=20.0,
+)
+common = paired['common_subset']
+delta_auc = common['delta_comparison_minus_baseline']['AUC']
+```
+
+Each arm is a dictionary with `evaluations`, `input_mapping`, explicit
+`score_method`, optional `unscored` and `source_metadata`, as above. Both arms must
+use the same criterion. Full original-cohort summaries remain in `arms`; the
+common subset intersects scored original indices and recomputes both sets of
+metrics on exactly those inputs. Ties use the existing unbiased metric contracts.
+Undefined deltas are `None`. Matching criteria do not establish equivalent
+queries, producers or chemical-series independence.
+
+Source metadata and source attribution are copied unchanged. With
+`pharmacophoremt.attribution()` enabled, attribution of these new operations and
+the metrics actually recomputed is separate; reading old evidence never credits
+its preparation, recognition or fitting again. See the
+[saved-result API](../../api/saved_results.md) and the
+[frozen ERα comparison](../validation/esr1_consensus_comparison.md).

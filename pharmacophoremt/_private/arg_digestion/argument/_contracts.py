@@ -496,6 +496,50 @@ def digest_result(obj):
     return obj
 
 
+def _saved_records(obj, argument):
+    if not isinstance(obj, (list, tuple)) or any(
+        not isinstance(row, dict) for row in obj
+    ):
+        raise ArgumentError(argument=argument, reason="expected a list of records")
+    return obj
+
+
+def digest_cohort(obj):
+    return _saved_records(obj, "cohort")
+
+
+def digest_evaluations(obj):
+    return _saved_records(obj, "evaluations")
+
+
+def digest_input_mapping(obj):
+    return _saved_records(obj, "input_mapping")
+
+
+def digest_unscored(obj):
+    return _saved_records(obj, "unscored")
+
+
+def digest_source_metadata(obj):
+    if obj is not None and not isinstance(obj, dict):
+        raise ArgumentError(
+            argument="source_metadata", reason="expected a dictionary or None"
+        )
+    return obj
+
+
+def digest_baseline(obj):
+    if not isinstance(obj, dict):
+        raise ArgumentError(argument="baseline", reason="expected a saved-result arm")
+    return obj
+
+
+def digest_comparison(obj):
+    if not isinstance(obj, dict):
+        raise ArgumentError(argument="comparison", reason="expected a saved-result arm")
+    return obj
+
+
 def digest_enabled(obj):
     if not isinstance(obj, (bool, np.bool_)):
         raise ArgumentError(argument="enabled", reason="expected a boolean")

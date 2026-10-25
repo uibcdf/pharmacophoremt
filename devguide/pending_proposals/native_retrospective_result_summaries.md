@@ -6,7 +6,7 @@ opened: 2026-10-24
 closed:
 verification: asserted
 area: [validation, screening]
-guard: devtools/tests/test_esr1_consensus_evaluation.py::TestEsr1ConsensusEvaluation::test_prepared_native_indices_keep_failed_originals_and_class_order_distinct
+guard: tests/test_saved_results.py::test_original_sparse_indices_distinct_samples_and_native_failure_are_preserved
 normative: devguide/api_design_standards.md
 blocked_by: []
 supersedes: []
@@ -58,5 +58,28 @@ retain historical driver commits for exact replay.
 Public documented contracts, reusable owner implementation using existing
 scientific tools, analytical tie/failure/index oracles, saved-result/no-molecular-
 work controls and a consumer using the existing #64 evidence. Do not rewrite
-historical measurements as adoption of the new API. Contract/implementation
-work has not started; no extra environment or public delivery is claimed.
+historical measurements as adoption of the new API. The public implementation
+and focused qualification are in progress; no extra environment or public
+delivery is claimed.
+
+## Implementation and initial verification — 2026-10-24
+
+`validation.summarize_screening_results` composes get_screening_score and the
+existing metrics using explicit original records, native/original mapping,
+upstream causes and separate source metadata. It retains complete class and
+failure denominators. `validation.compare_screening_results` requires the same
+criterion and recomputes common-scored-subset statistics. Sparse indices and
+repeated source IDs remain distinct observations; incomplete/unknown/duplicate
+or overlapping mappings and label conflicts raise. Undefined metrics are None.
+Native errors and upstream causes remain separate. New calculations receive
+their own reached attribution without recrediting source calculations.
+
+84 saved-result/metric tests pass in canonical Python 3.14.7, including analytical
+tie/failure controls and real Ackredit sessions plus optional absent/broken
+provider behavior. A preliminary new consumer replay of the immutable #64 archive
+reproduces all original counts, indices, labels/scores, arm metrics, common AUC
+delta and binary missing-score sensitivity; native/source records stay unchanged.
+Permanent clean-producer evidence and administrative/documentation qualification
+remain pending. The driver is `phmt_test_support/replay_esr1_saved_results.py`;
+it calls the public tool and does not rerun molecular work. The original #64
+driver, declarations and outputs are unchanged.
