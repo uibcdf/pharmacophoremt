@@ -292,3 +292,23 @@ Use new paths, preserve original outputs and record a distinct new run identity.
 Installation/native-byte differences fail the historical qualification check;
 do not bypass it or call current-head execution the original producer. No source
 reacquisition or molecular workflow runs when merely reading these archives.
+
+### Derive new summaries without repeating the molecular experiment
+
+The reusable native [saved-result tools](../../api/saved_results.md) now provide
+original-cohort accounting and common-scored-subset comparison. A separate
+[derived verification](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_saved_summary_replay_20261024_summary.json)
+from clean implementation `e32c80e0cbc9837e8badcda2b7c93f22d30f1ddc` reproduces
+all original 64/45/19 counts, native/original mappings, scores, metrics and binary
+missing-score sensitivity using only the saved evidence. The original #64
+scientific result retains its own producer and attribution. New summary/metric
+attribution records only operations actually recomputed; no molecular preparation,
+recognition, fitting or source acquisition is repeated.
+
+```bash
+python -m phmt_test_support.replay_esr1_saved_results --output /tmp/esr1-new-derived-summary.json
+```
+
+Use an unused output path and the qualified implementation checkout. This new
+result provides API-consumer verification, not new activity observations or
+stronger biological acceptance.

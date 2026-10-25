@@ -1,0 +1,141 @@
+{
+  "common_metrics": {
+    "baseline": {
+      "AUC": 0.48484848484848486,
+      "BEDROC": 0.17571537292872424,
+      "EF@10%": 0.8181818181818181,
+      "n_actives": 12,
+      "n_evaluated": 45,
+      "n_inactives": 33
+    },
+    "comparison": {
+      "AUC": 0.553030303030303,
+      "BEDROC": 0.45893157044378563,
+      "EF@10%": 1.6829268292682928,
+      "n_actives": 12,
+      "n_evaluated": 45,
+      "n_inactives": 33
+    }
+  },
+  "counts_per_arm": {
+    "baseline": {
+      "n_actives": 16,
+      "n_actives_evaluated": 12,
+      "n_actives_found": 0,
+      "n_actives_unscored": 4,
+      "n_evaluated": 45,
+      "n_inactives": 48,
+      "n_inactives_evaluated": 33,
+      "n_inactives_found": 1,
+      "n_inactives_unscored": 15,
+      "n_native_failed": 0,
+      "n_total": 64,
+      "n_unscored": 19,
+      "n_upstream_unscored": 19,
+      "unscored_by_stage": {
+        "acquisition": 19
+      }
+    },
+    "consensus": {
+      "n_actives": 16,
+      "n_actives_evaluated": 12,
+      "n_actives_found": 2,
+      "n_actives_unscored": 4,
+      "n_evaluated": 45,
+      "n_inactives": 48,
+      "n_inactives_evaluated": 33,
+      "n_inactives_found": 2,
+      "n_inactives_unscored": 15,
+      "n_native_failed": 0,
+      "n_total": 64,
+      "n_unscored": 19,
+      "n_upstream_unscored": 19,
+      "unscored_by_stage": {
+        "acquisition": 19
+      }
+    }
+  },
+  "delta_comparison_minus_baseline": {
+    "AUC": 0.06818181818181812,
+    "BEDROC": 0.2832161975150614,
+    "EF@10%": 0.8647450110864747
+  },
+  "full_evidence": {
+    "compressed_bytes": 166177,
+    "compressed_sha256": "30d19603141c56a8a883afa766258e230e452d63c01668839d62892b60fca1d9",
+    "file": "esr1_saved_summary_replay_20261024.json.gz",
+    "uncompressed_bytes": 513514,
+    "uncompressed_sha256": "d8104d4019c908dfd01345158e7440880d2a26c3e356662248b5322196005da4"
+  },
+  "issue": 65,
+  "measured_at": "2026-10-25T00:31:13.695314+00:00",
+  "producer": {
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "git_head": "e32c80e0cbc9837e8badcda2b7c93f22d30f1ddc",
+    "git_status": "",
+    "module_origins": {
+      "ackredit": "/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+      "argdigest": "/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "depdigest": "/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+      "molsysmt": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "numpy": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/__init__.py",
+      "pharmacophoremt": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "pyunitwizard": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "smonitor": "/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py"
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "versions": {
+      "ackredit": "0.12.0+11.g74f865d",
+      "argdigest": "0.16.0+1.g6dabaf7",
+      "depdigest": "0.15.1+3.ga27172b",
+      "molsysmt": "0.23.0+93.g48aba006f",
+      "numpy": "2.4.6",
+      "pharmacophoremt": "0.4.0+17.g25a49f5",
+      "pyunitwizard": "0.28.1+15.g6c62ca6",
+      "smonitor": "0.21.0+1.gd6b2394"
+    }
+  },
+  "schema": "pharmacophoremt.esr1_saved_summary_replay_summary@1",
+  "scope": "New descriptive metrics from unchanged saved evidence; no molecular preparation/search, new activity observations or public delivery.",
+  "source_archive": {
+    "compressed_bytes": 3544665,
+    "compressed_sha256": "56c7617f92e213520cab8a2e08023d2a8e4a5eb115275c2b1654c87157ad6ef5",
+    "path": "esr1_paired_evaluation_20261024.json.gz",
+    "uncompressed_bytes": 48465962,
+    "uncompressed_sha256": "610b418d88707132d40b4ef5fd534a04498c1389f8b73c5e1ca1d4db39c1d1f9"
+  },
+  "source_producer_head": "012544472e8eca27d1646a6e8065ee22872d4368",
+  "source_summary": "devguide/evidence/esr1_paired_evaluation_20261024_summary.json",
+  "source_summary_sha256": "c06934b0e297e4876676fd51879c4841955005caf5f975a399a281c2dbfe6758",
+  "verification": {
+    "baseline": {
+      "binary_sensitivity": true,
+      "evaluated_counts": true,
+      "labels_scores": true,
+      "metrics": true,
+      "native_records": true,
+      "original_counts": true,
+      "original_indices": true,
+      "source_metadata": true,
+      "unscored_causes": true,
+      "unscored_counts": true
+    },
+    "consensus": {
+      "binary_sensitivity": true,
+      "evaluated_counts": true,
+      "labels_scores": true,
+      "metrics": true,
+      "native_records": true,
+      "original_counts": true,
+      "original_indices": true,
+      "source_metadata": true,
+      "unscored_causes": true,
+      "unscored_counts": true
+    },
+    "paired": {
+      "AUC_delta": true,
+      "common_indices": true,
+      "source_unchanged": true
+    }
+  }
+}

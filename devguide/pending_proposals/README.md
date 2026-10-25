@@ -36,8 +36,4 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`noarch_distribution_adoption.md`](noarch_distribution_adoption.md) — [#10](https://github.com/uibcdf/pharmacophoremt/issues/10) — Adopt the distribution policy and a guarded single-file noarch publication route. *(partial, measured)*
 - [`retire_legacy_molecular_operations.md`](retire_legacy_molecular_operations.md) — [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) — Retire general molecular operations from reachable legacy workflows. *(partial, measured)*
 
-### Open (1)
-
-- [`native_retrospective_result_summaries.md`](native_retrospective_result_summaries.md) — [#65](https://github.com/uibcdf/pharmacophoremt/issues/65) — Reuse saved native evaluations with original-cohort and unscored-input accounting. *(open, asserted)*
-
 <!-- /generated -->

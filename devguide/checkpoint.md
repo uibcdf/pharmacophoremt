@@ -1,5 +1,46 @@
 # Development Checkpoint
 
+## Native saved-result reporting complete — 2026-10-24
+
+**#65's local API and real-consumer criteria are complete.** Implementation
+`e32c80e0cbc9837e8badcda2b7c93f22d30f1ddc` is pushed to main. Public
+`validation.summarize_screening_results` and `compare_screening_results` compose
+existing score/metric tools, retain all original indices/classes/unscored causes
+and recompute paired metrics on exactly the common scored subset. No molecular
+operation moves into PHMT. The [API](../docs/api/saved_results.md),
+[recipe](../docs/content/cookbook/retrospective_validation.md) and
+[resolved owner report](archive/native_retrospective_result_summaries.md) document
+the reusable contracts, ambiguous-input rejection and attribution separation.
+
+A new clean-head consumer reads the immutable #64 archive and reproduces all
+64/45/19 counts, original mappings, native scores, arm metrics, common AUC delta
+and binary missing-score sensitivity. The
+[derived summary](evidence/esr1_saved_summary_replay_20261024_summary.json) qualifies
+the new result, raw SHA-256
+`d8104d4019c908dfd01345158e7440880d2a26c3e356662248b5322196005da4`.
+Original query/input/search outputs, producer and source attribution are retained
+unchanged. New attribution records only the newly reached summary/scoring/metric
+operations. The old case-specific ledger remains solely for historical replay;
+new statistical consumers use the public tool.
+
+Canonical Python 3.14.7 passes 84 selected scientific tests; the final complete
+administrative run passes 50 tests plus 26 subtests, including strict Sphinx and
+the new replay archive guard. Three reporting tests, indexes, Ruff and whitespace
+checks pass. The replay
+records current editable provider versions/origins separately from the original
+scientific providers. No extra environment, molecular experiment, complete new
+hosted/installed matrix or public package/release is claimed.
+
+**Next:** inspect exact implementation/final-head CI through #9; implementation
+CI 40147016165 is queued, policy 40147016265 / Conda governance 40147016227
+succeed at this observation. Older fc9f14b CI 40145759546 remains in progress.
+Keep public-delivery/installed receiving separate. Before stronger biological
+claims, review endpoint and fresh data suitability and predeclare an unexposed
+evaluation set; these 64 outcomes cannot be reused as unseen validation after
+tuning. Receive molecular identity/scaffold/conformer/state tools through #41
+and their provider issues, without local replacements. Addon, broader release
+infrastructure and a new release remain deferred.
+
 ## Native saved-result summaries implemented; clean receipt pending — 2026-10-24
 
 #65 now has public `validation.summarize_screening_results` and

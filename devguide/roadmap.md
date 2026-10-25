@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Native reporting delivered; receiving and scientific design next — 2026-10-24
+
+[#65](archive/native_retrospective_result_summaries.md) now delivers reusable
+saved-result summaries and paired common-subset comparison in PHMT validation.
+The [new derived receipt](evidence/esr1_saved_summary_replay_20261024_summary.json)
+reproduces unchanged #64 counts, scores, metrics and provenance from clean
+implementation `e32c80e0cbc9837e8badcda2b7c93f22d30f1ddc`. It performs no
+molecular work. New statistical consumers use the native tool; the original
+case driver/output retain their historical producer. 84 selected scientific
+tests and administrative/strict-docs/archive guards pass locally; full
+exact-head hosted and installed receiving remain separate under #9/#23.
+
+Next verify exact-head hosted receiving and review the design of fresh,
+unexposed biological evaluation data before further predictive claims. The
+observed 64-input comparison is development evidence, with 19 unavailable
+structures and unqualified chemical-series independence. Existing MolSysMT
+identity/scaffold/conformer/state proposals remain provider-owned and received
+through #41. No local molecular workaround, addon work or new release is added.
+Public 0.4.0 and its original release-specific suite notice are unchanged.
+
 ## Current priorities — 2026-10-24
 
 **#64's bounded paired comparison is complete.** The
