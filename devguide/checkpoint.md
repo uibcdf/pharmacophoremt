@@ -1,5 +1,42 @@
 # Development Checkpoint
 
+## Fresh binding evaluation protocol and source triage — 2026-10-24
+
+[#66](pending_proposals/esr1_binding_evaluation_readiness.md) is the next local
+scientific segment. The [pre-data protocol](esr1_binding_evaluation_plan.md)
+keeps both #64 queries and native scoring fixed, declares endpoint/quality/
+censored-label/duplicate policies and sampling/failure gates before acquiring
+individual activities or molecular structures. No new cohort is frozen yet.
+
+Metadata review covers PubChem AIDs 1223/625258/2051711 and all 1,485 records of
+the current ChEMBL_37 human CHEMBL206/B/9 assay query (two pages). These flags do
+not guarantee tracer displacement. The fixed next source pool is CHEMBL3382763,
+then CHEMBL3705057, with original experimental/document review still required.
+No source has yet qualified for a new chemically independent cohort.
+
+The conservative exposure audit excludes all 8,099 valid CIDs in the previously
+read full Tox21 table, containing all 4,402 Bath CIDs and all prior requested IDs,
+including failures. Another 149 rows lack a CID and retain row indices/SIDs as
+unresolved identities. This literal identifier ledger does not establish molecular
+or series independence. MolSysMT #447 remains open; #219/#366/#375 remain provider
+responsibilities. No local chemistry or molecular-I/O workaround is introduced.
+
+Nine original metadata responses remain in the task-owned
+`/tmp/phmt66-binding-metadata-20261024/`, with checksums/URLs in
+`tests/data/esr1_binding_evaluation/source_inventory.json`. Keep them for source
+qualification (owners LMMV/dprada, review 2026-11-07). Only factual projections,
+checksums and the case-specific review are published; full raw metadata
+redistribution remains separate. No environment has been created or removed.
+
+**Immediate next:** commit this protocol/reader, retain its clean-head metadata
+and exclusion review, then qualify the two source documents/activity schemas under
+these committed rules. Source/provider/cohort/preparation gates must pass before
+new scoring. The reader has no activity/structure acquisition or molecular route.
+Older fc9f14b CI 40145759546 is now successful; #65 implementation e32c80e CI
+40147016165 is in progress and closeout d2e82e8 CI 40147294367 is queued. Both
+#65 policy and Conda controls succeed. Exact-head receiving remains #9; public
+0.4.0 and its existing release notice remain unchanged.
+
 ## Native saved-result reporting complete — 2026-10-24
 
 **#65's local API and real-consumer criteria are complete.** Implementation

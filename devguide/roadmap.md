@@ -1,5 +1,24 @@
 # Strategic Roadmap
 
+## Fresh binding challenge in design/source qualification — 2026-10-24
+
+[#66](pending_proposals/esr1_binding_evaluation_readiness.md) now owns the next
+evaluation segment. Its [committed protocol](esr1_binding_evaluation_plan.md)
+preserves the two frozen queries and fixes endpoint, activity/censor/quality,
+exclusion, sampling and failure rules before new individual activity/structure
+acquisition. Discovery metadata covers 1,485 ChEMBL assays and three PubChem
+alternatives; CHEMBL3382763 then CHEMBL3705057 form the next bounded source pool.
+Metadata nomination does not qualify a dataset or freeze a cohort.
+
+The historical exposure inventory covers every known prior-source CID (8,099),
+including all Bath and requested inputs, plus 149 unresolved blank-CID rows/SIDs.
+MolSysMT #447 is still needed for molecular identity/scaffold independence; general
+preparation/state/conformer work stays with its provider. Local source review and
+activity-schema qualification can proceed in parallel with those provider needs.
+No score is computed or missing input converted to inactivity. #65 supplies the
+later native original-cohort and common-subset reporting tools. #9 retains exact-
+head receiving; addon and a new public release remain deferred.
+
 ## Native reporting delivered; receiving and scientific design next — 2026-10-24
 
 [#65](archive/native_retrospective_result_summaries.md) now delivers reusable

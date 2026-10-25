@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-10-24: frozen paired evaluation, native saved-result summaries, exact-source evidence and remaining receiving/scientific-design work; public release remains 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-10-24: frozen paired evaluation, native saved-result summaries and fresh binding-study protocol/source readiness; public release remains 0.4.0.
 
 ## Classical Workflow Specification
 

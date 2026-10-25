@@ -1,0 +1,72 @@
+{
+  "issue": 66,
+  "raw_retention_directory": "/tmp/phmt66-binding-metadata-20261024",
+  "responses": [
+    {
+      "byte_count": 19854,
+      "file": "AID1223.description.json",
+      "local_file_written_at": "2026-10-25T00:43:04.617912+00:00",
+      "sha256": "e1e85c542c5de87ce0704e6f9dbe45eeeeec0bfeeb71bbd48feb10828ff6b0ce",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1223/description/JSON"
+    },
+    {
+      "byte_count": 3855,
+      "file": "AID625258.description.json",
+      "local_file_written_at": "2026-10-25T00:43:04.573685+00:00",
+      "sha256": "34065f96b5396863363de5b3c4b68888b1dc19cfa9cacbee1e61ab4aea98ac4f",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/625258/description/JSON"
+    },
+    {
+      "byte_count": 3383,
+      "file": "AID2051711.description.json",
+      "local_file_written_at": "2026-10-25T00:43:04.571857+00:00",
+      "sha256": "0825f2a638b8297f6476b99771985ffe956dc87b7cd2425b75c2fde4e92b8628",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/2051711/description/JSON"
+    },
+    {
+      "byte_count": 13785,
+      "file": "assay_summaries.json",
+      "local_file_written_at": "2026-10-25T00:43:34.097125+00:00",
+      "sha256": "a83ca62d58b640110b29cc313c79c81b3031f97740edb697fb7500096278f871",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1223,625258,2051711/summary/JSON"
+    },
+    {
+      "byte_count": 361268,
+      "file": "chembl_human_binding_assays.json",
+      "local_file_written_at": "2026-10-25T00:47:29.386840+00:00",
+      "sha256": "08089bedd7898ec762e02573ea75150163a4ac55c42ccc8f710a5a08b726e6ed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay.json?target_chembl_id=CHEMBL206&assay_type=B&confidence_score=9&assay_organism=Homo+sapiens&limit=1000&order_by=assay_chembl_id&only=assay_chembl_id%2Cdescription%2Cassay_organism%2Cconfidence_score%2Cassay_type%2Cbao_format%2Cdocument_chembl_id%2Csrc_id"
+    },
+    {
+      "byte_count": 190385,
+      "file": "chembl_human_binding_assays_page2.json",
+      "local_file_written_at": "2026-10-25T00:47:58.430983+00:00",
+      "sha256": "2fb2770dc9d68d752a6e05e7a7894054f9b57b3219e5021c32d51b0b8fb6c0ac",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay.json?limit=1000&offset=1000&target_chembl_id=CHEMBL206&assay_type=B&confidence_score=9&assay_organism=Homo+sapiens&order_by=assay_chembl_id&only=assay_chembl_id%2Cdescription%2Cassay_organism%2Cconfidence_score%2Cassay_type%2Cbao_format%2Cdocument_chembl_id%2Csrc_id"
+    },
+    {
+      "byte_count": 212,
+      "file": "chembl_status.json",
+      "local_file_written_at": "2026-10-25T00:47:57.907701+00:00",
+      "sha256": "29dc1fb09487a8d2962253a4d0d92c4ded0aa0d831effab42445d0c3483d4740",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/status.json"
+    },
+    {
+      "byte_count": 988,
+      "file": "CHEMBL3382763.assay.json",
+      "local_file_written_at": "2026-10-25T00:48:13.277268+00:00",
+      "sha256": "cd40a127eae2c137b9ebaa5713ba1f078dedbbdcea3f009f636c73a5debb5222",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL3382763.json"
+    },
+    {
+      "byte_count": 1159,
+      "file": "CHEMBL3705057.assay.json",
+      "local_file_written_at": "2026-10-25T00:48:13.210833+00:00",
+      "sha256": "0429f995756f584ebc644b7cf5ed7b924d6a0a9c1f848fce2c9e1c5282453ca4",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL3705057.json"
+    }
+  ],
+  "schema": "pharmacophoremt.esr1_binding_metadata_sources@1",
+  "scope": "Exact local metadata bytes; no individual activity rows or molecular structures. Publication includes only factual projections and checksums; source-specific raw redistribution remains separate.",
+  "stage": "metadata_only"
+}
