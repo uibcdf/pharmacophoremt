@@ -232,3 +232,23 @@ full results, a preparation journal, all native outcomes, input mapping and actu
 attribution are retained. Existing output/journal paths are refused. The retained
 editable version metadata identifies the unchanged training library; the new
 evaluation driver and its actual Git producer are recorded independently.
+
+## Completed result and reusable follow-up
+
+The [paired summary](evidence/esr1_paired_evaluation_20261024_summary.json)
+and [case](../docs/content/validation/esr1_consensus_comparison.md) retain the
+completed 64-input comparison: 45 common evaluable compounds, 19 unavailable
+3D records, AUC 0.4848/0.5530 and descriptive difference +0.0682. All original
+failure causes and independent metric/index/integrity checks are preserved.
+This closes the bounded #64 workflow, not biological predictive acceptance.
+The environment retained during training is retired after this phase; the
+original source snapshots remain historical and unchanged.
+
+The case demonstrates a reusable PHMT validation need: original-cohort/saved-
+evaluation/unscored-input aggregation and paired common-subset reporting.
+That product proposal is [#65](https://github.com/uibcdf/pharmacophoremt/issues/65).
+The current case-only ledger remains an explicitly bounded interim consumer
+under LMMV/dprada, review 2026-11-07; future consumers migrate to a qualified
+native operation, while historical driver commits remain available for replay.
+No molecular operation or generic environment-management workaround is added.
+This observed cohort cannot become unseen validation after future tuning.

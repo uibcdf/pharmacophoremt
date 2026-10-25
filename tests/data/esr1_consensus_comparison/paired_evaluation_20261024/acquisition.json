@@ -1,0 +1,1120 @@
+{
+  "schema": "pharmacophoremt.esr1_paired_evaluation_acquisition@1",
+  "issue": 64,
+  "acquired_at": "2026-10-24T23:42:20.212608+00:00",
+  "declaration": {
+    "file": "readiness_declaration.json",
+    "sha256": "b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e",
+    "byte_count": 32303
+  },
+  "frozen_queries": {
+    "baseline": {
+      "file": "baseline.query.json",
+      "sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+      "byte_count": 86446
+    },
+    "consensus": {
+      "file": "consensus.query.json",
+      "sha256": "f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d",
+      "byte_count": 444164
+    }
+  },
+  "training_summary": {
+    "file": "esr1_consensus_readiness_training_20261024_summary.json",
+    "sha256": "2fb964185c07e199ac11130ca459fbf8a6efd8842199cd7963e14df03fe58fd2",
+    "byte_count": 5736
+  },
+  "producer": {
+    "git_head": "012544472e8eca27d1646a6e8065ee22872d4368",
+    "dirty": "",
+    "driver": {
+      "file": "esr1_consensus_evaluation.py",
+      "sha256": "1784c1e341c11c8e2b23fbc11094a2d7f8ae2ab66c10e98b5512fcc364444b5b",
+      "byte_count": 20541
+    }
+  },
+  "records": [
+    {
+      "cid": "2347",
+      "sid": "144210189",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "02a40a4bb95f21f00f87ff203893d40cac16df1b5e19f63e6a2956a936941018",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2347/SDF?record_type=3d",
+      "cohort_index": 0,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID2347.sdf",
+        "sha256": "0400bae6557d699eb3616f746f27bff2d737586982772bed550dda5a4c5e500f",
+        "byte_count": 7237
+      }
+    },
+    {
+      "cid": "10204",
+      "sid": "144204609",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "031ac9f7e8ccdf77cdf80633bf594f36fc7fcfe6541a73a0814108b279895844",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10204/SDF?record_type=3d",
+      "cohort_index": 1,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID10204.sdf",
+        "sha256": "9c54a6e6fae544262318d0e5983b92f02681151ff4573fd131b544238c478b07",
+        "byte_count": 7607
+      }
+    },
+    {
+      "cid": "6852393",
+      "sid": "144206107",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "03667c02ed273b64ed5f99ee8a57b47a19401434059eac8957b58b34b98cc3f4",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6852393/SDF?record_type=3d",
+      "cohort_index": 2,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID6852393.sdf",
+        "sha256": "9dfd91c0bab423a68d92c81cfc90a6d31d9b2d222a7b08b8f0c8a95c579021ef",
+        "byte_count": 7373
+      }
+    },
+    {
+      "cid": "79688",
+      "sid": "144211795",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "04ab7729d081ff562d00468ce5659330808252b0e42fd6c9984a38fe685605a4",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/79688/SDF?record_type=3d",
+      "cohort_index": 3,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID79688.sdf",
+        "sha256": "d1b2b8b3edf2987ba836ab68d21f9d9c320ddf9de5e0e007c0548ae3f884e439",
+        "byte_count": 4612
+      }
+    },
+    {
+      "cid": "138394061",
+      "sid": "144205551",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "04fb3ba441ce53db76c50757f7159b8c9c9a932f626b650a23b1ec9281c7e423",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/138394061/SDF?record_type=3d",
+      "cohort_index": 4,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID138394061.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "608116",
+      "sid": "144207753",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "0593d8f79af8ec1910d60d03f92df5a47662c9c6c68d9c13890dcc735c48a17d",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/608116/SDF?record_type=3d",
+      "cohort_index": 5,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID608116.sdf",
+        "sha256": "aa85069e4d2d09aa408a15a6050b3aa50fc9042fb9f9174b9bde337319df2c92",
+        "byte_count": 5841
+      }
+    },
+    {
+      "cid": "9904",
+      "sid": "144206718",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "06f38f570dbc24d74f05f5f7ab2bb89320c0514a745ebe9baaafc58875c18af8",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/9904/SDF?record_type=3d",
+      "cohort_index": 6,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID9904.sdf",
+        "sha256": "d64141eedb89668a002b9e6ad18b525a70532811aaeea630b2781ee6e46d58ba",
+        "byte_count": 7432
+      }
+    },
+    {
+      "cid": "5479",
+      "sid": "144204137",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "07c7d493f91fb940e681f5edce2befabf577ab2ec8f5358ab1709aa5160adf1a",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5479/SDF?record_type=3d",
+      "cohort_index": 7,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID5479.sdf",
+        "sha256": "d65a6068dd541d7c3346069230f0ca60c919ac3c6bf782bb0073a6232d6e09d3",
+        "byte_count": 4865
+      }
+    },
+    {
+      "cid": "87250",
+      "sid": "144207743",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "07e4f7de0b37c97eeb76eb9a7b1fd743e3b1ecafc373c2e4e3b7ae64eec12bee",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/87250/SDF?record_type=3d",
+      "cohort_index": 8,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID87250.sdf",
+        "sha256": "130b0632de417e1e57901724a365e638771a42017cb202c6de14bf4b4deb1b78",
+        "byte_count": 5098
+      }
+    },
+    {
+      "cid": "62130",
+      "sid": "144207684",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "082a0e8d70cb9952031e98bdc28bde09df0bc3c54b3071398861c73898efbc67",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/62130/SDF?record_type=3d",
+      "cohort_index": 9,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID62130.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "7070",
+      "sid": "144209422",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "084036e9030166e2cd717bae94d611bfe712de90bf363f2c3c52aceb29769f33",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7070/SDF?record_type=3d",
+      "cohort_index": 10,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7070.sdf",
+        "sha256": "a3b4ab2ee35fb7687fbb24dc8b5574dfd509896ec87ac7095d95570ee06e8697",
+        "byte_count": 5171
+      }
+    },
+    {
+      "cid": "5280961",
+      "sid": "144203712",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "0a5de96ebd2b7d7f7a8b79fa7bdd7460fe68433770f7f6a87f1aaa7994f9ef95",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5280961/SDF?record_type=3d",
+      "cohort_index": 11,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID5280961.sdf",
+        "sha256": "48da79ff5cc8c67bb9d51c682398f37324933d9b7ba865f29d7aa813576c026f",
+        "byte_count": 5658
+      }
+    },
+    {
+      "cid": "5281227",
+      "sid": "144205086",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "0b5d516e4f3ec74a7bdaa64c550638190bdb30c40f4c0a7c5bc4e3abbb08e0d3",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5281227/SDF?record_type=3d",
+      "cohort_index": 12,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID5281227.sdf",
+        "sha256": "481be80d21f878b3c70c8f28d4de916d27d9b5e1f23fb1817e2d8e5e148131ce",
+        "byte_count": 10835
+      }
+    },
+    {
+      "cid": "65359",
+      "sid": "144206973",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "0b644b084c5866234cc5b5017b88c77add1c8e1f57651eedff1fbd674531c8d0",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/65359/SDF?record_type=3d",
+      "cohort_index": 13,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID65359.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "8572",
+      "sid": "144208483",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "0ba6d51d27b426636ed740ca609f2fbafd14cdc896c2b49423a4084070b330c5",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8572/SDF?record_type=3d",
+      "cohort_index": 14,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID8572.sdf",
+        "sha256": "4f7de7f21d160346f09ab1445ac76a1428efa46dd81b0df77152753fb8336ef3",
+        "byte_count": 5063
+      }
+    },
+    {
+      "cid": "472181",
+      "sid": "144209978",
+      "label": 1,
+      "role": "evaluation",
+      "assay_outcome": "Active",
+      "selection_hash": "0ce212abf85df025677624b84c4eb48e986eec5f7ae68cd57a0009116d16f8f5",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/472181/SDF?record_type=3d",
+      "cohort_index": 15,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID472181.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "15284",
+      "sid": "144212000",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0009b1639b3bad8c0981998ff15bd4879e147c91633d14a6abb869ed7ba9577b",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/15284/SDF?record_type=3d",
+      "cohort_index": 16,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID15284.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "70425",
+      "sid": "144210178",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "001759681fd99894696efa6b2f7c749ad629fec55d6d8bfb41621b89a445198b",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/70425/SDF?record_type=3d",
+      "cohort_index": 17,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID70425.sdf",
+        "sha256": "0afbbdd5fb0425b49ac9ee244a09ebcc622be2a51cab631405112f7f4a606ed0",
+        "byte_count": 8168
+      }
+    },
+    {
+      "cid": "11193251",
+      "sid": "144213743",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "001d8a148e6ded4ee2da8c43f95771fe31d7dd2951c1148d8cb754867b13a726",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/11193251/SDF?record_type=3d",
+      "cohort_index": 18,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID11193251.sdf",
+        "sha256": "528b5c6dfab48e292b184c97ac532a6053fd7e49c143a7c7d98117b370eed42b",
+        "byte_count": 8272
+      }
+    },
+    {
+      "cid": "23686673",
+      "sid": "144212448",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0025fd8b05ff2b738f44665ac33e4c9a799e7fae14447d466e0e9aa18e620266",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23686673/SDF?record_type=3d",
+      "cohort_index": 19,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID23686673.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "6950248",
+      "sid": "144205909",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "002fb1d610cfdc7f58ea87a8993d190c02fcc175cb44dcc92eeea332fe6173de",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6950248/SDF?record_type=3d",
+      "cohort_index": 20,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID6950248.sdf",
+        "sha256": "0405594f67a83b31eb87c9e7112118fdc9ba3df0392b31aa187be443435b7187",
+        "byte_count": 3139
+      }
+    },
+    {
+      "cid": "33255",
+      "sid": "144205244",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "005e7803a3414c450f9cd43d83a3d221e518f5f6450cc45e4cea706e9c4b70b5",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/33255/SDF?record_type=3d",
+      "cohort_index": 21,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID33255.sdf",
+        "sha256": "132ded94af2ea4b68583f72e2f68e4dfdff5e6a2e03d017a988fad7821392e84",
+        "byte_count": 7543
+      }
+    },
+    {
+      "cid": "6209",
+      "sid": "144207690",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "006edb15bdc1a452d6282b56e19dff6704894ea7b0b883bc4e93eef4dd569445",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6209/SDF?record_type=3d",
+      "cohort_index": 22,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID6209.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "7059",
+      "sid": "144209577",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0070bc3430385c11d22b285add5d999e6f2f116a295b167843f448568db08d5b",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7059/SDF?record_type=3d",
+      "cohort_index": 23,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7059.sdf",
+        "sha256": "3590f6fa1cdb615d791394de5b8a19051acdd3e1b712664829df2d3a771354b3",
+        "byte_count": 3804
+      }
+    },
+    {
+      "cid": "13624",
+      "sid": "144209147",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "00c8f588d4887d71a1043e4b9a33a9f1046c857a05f23917a55c3dbbe5e1dedf",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13624/SDF?record_type=3d",
+      "cohort_index": 24,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID13624.sdf",
+        "sha256": "d3ff49274b67d470948c1825977c88bdccb4504e1e9206c2c7bf32a051edaf03",
+        "byte_count": 3200
+      }
+    },
+    {
+      "cid": "13387",
+      "sid": "144209548",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "00cf6c33826800984dee4e3c045fe9f5e7433a59c1940af8f47623369dc55867",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/13387/SDF?record_type=3d",
+      "cohort_index": 25,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID13387.sdf",
+        "sha256": "294fceed4c58fa8e9595a9b07a338a77f6fd575bb48ea6b356d7c9de7337f7b8",
+        "byte_count": 2674
+      }
+    },
+    {
+      "cid": "2794",
+      "sid": "144204067",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "01116941057304acea7ac0a8f02bc49fe67697481c8f440e3e4c0aca2d0f828b",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/2794/SDF?record_type=3d",
+      "cohort_index": 26,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID2794.sdf",
+        "sha256": "10bbfc712ad1feac17ebdcee340a5288f356b856d23aa29f8f6983cbc39e344d",
+        "byte_count": 8427
+      }
+    },
+    {
+      "cid": "12989",
+      "sid": "144207377",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0126bd812afccd905cf101a0893e7526dac99ec4e48afe1bf14ab257433edabf",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12989/SDF?record_type=3d",
+      "cohort_index": 27,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID12989.sdf",
+        "sha256": "50babeb8f77e8260aeffd96585cb3ad9a7f4b31d2a3c7b7749d5e8799b49dc62",
+        "byte_count": 4546
+      }
+    },
+    {
+      "cid": "6538105",
+      "sid": "144212807",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "01377af89c46e00e264d2f427fc8507332b95dd76a041ff5055b430962217468",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6538105/SDF?record_type=3d",
+      "cohort_index": 28,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID6538105.sdf",
+        "sha256": "fdfc4c5c4c56fc5e81512d5c3261308701fd12bd076f0f4ce3590d4d87230037",
+        "byte_count": 7126
+      }
+    },
+    {
+      "cid": "10486",
+      "sid": "144207390",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "013db4ef754e57f0ef9168d59bf48f2bafe923582794f65659d9f2e504017ab2",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10486/SDF?record_type=3d",
+      "cohort_index": 29,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID10486.sdf",
+        "sha256": "74e7480d8a1258e433dc7af1533a00701981ebb54c779d7b0c317c246d39d9f9",
+        "byte_count": 2351
+      }
+    },
+    {
+      "cid": "644076",
+      "sid": "144206455",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0165787d600d21f034fe7fe6a8a0a483dbb40cccbb6086a3fab850236a4ee777",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/644076/SDF?record_type=3d",
+      "cohort_index": 30,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID644076.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "7237",
+      "sid": "144207856",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "01690b2e29c97d741b79c46f8809cbda87a33e56d1c8ad21561cda5cbc85bc85",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7237/SDF?record_type=3d",
+      "cohort_index": 31,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7237.sdf",
+        "sha256": "f61074b55f8a61c00767b778b137d258c345ecb064dc817c695d22d05c3f8c42",
+        "byte_count": 2963
+      }
+    },
+    {
+      "cid": "7284",
+      "sid": "144208440",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0178c82bba8e59003400c9ca5c5c101985198167776272c365d0240ead590d57",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7284/SDF?record_type=3d",
+      "cohort_index": 32,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7284.sdf",
+        "sha256": "0fca5faa7eb859903c1175ba8e28b4c910463133ef5b741170f41c4222d24967",
+        "byte_count": 2748
+      }
+    },
+    {
+      "cid": "23688977",
+      "sid": "144206476",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "01c14e772cfd50c00caf7ba3183860dc83585b974dc8dc932050581f1e69c7f7",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23688977/SDF?record_type=3d",
+      "cohort_index": 33,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID23688977.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "14075",
+      "sid": "144207696",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "01cd6b273fa3cf80d50d46dd20591ee6ddb9bb48b5f5dd9d23212322e791f976",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/14075/SDF?record_type=3d",
+      "cohort_index": 34,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID14075.sdf",
+        "sha256": "2e55f8dfbc603502c246d64d677e4e3372ec58fa44907f601013a37297334a84",
+        "byte_count": 2183
+      }
+    },
+    {
+      "cid": "60196362",
+      "sid": "144207121",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "021cb239c0b971ad3cff6eb6e0e09c43f2ab0d930c65e4c0db1a225edf9842db",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/60196362/SDF?record_type=3d",
+      "cohort_index": 35,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID60196362.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "16591",
+      "sid": "144209810",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "022e295659e13c368cb678be075313fd4ae2414e64b11d7366a15feb24e9be0a",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16591/SDF?record_type=3d",
+      "cohort_index": 36,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID16591.sdf",
+        "sha256": "e22b0c045c29c77aaf97085f674001983b682efb34087ecfae3a73f7cfa0494f",
+        "byte_count": 3711
+      }
+    },
+    {
+      "cid": "74483",
+      "sid": "144214044",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0239d3477b43b1692017e07172b8d3759e1d2caf62c6acec600d52f06aeea436",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/74483/SDF?record_type=3d",
+      "cohort_index": 37,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID74483.sdf",
+        "sha256": "e0486a012a9ca69705911d9b7483f9d1b7522b961dc62422b7dc5ad9f0af32eb",
+        "byte_count": 5672
+      }
+    },
+    {
+      "cid": "10197675",
+      "sid": "144207802",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "024aa417472c525f83a712f638cd2ca28a28a809d0c81cc07b6ca34c0686bbf9",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10197675/SDF?record_type=3d",
+      "cohort_index": 38,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID10197675.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "3714831",
+      "sid": "144211819",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02723bf7ac83f027618904991c4bfa550ba7a77704fe282536a0920e23e7e851",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/3714831/SDF?record_type=3d",
+      "cohort_index": 39,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID3714831.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "7479",
+      "sid": "144211024",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0280ea4a80a623ed20ef2f2eb2353dafadfdac5d4957541260e9d38ede57f76a",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7479/SDF?record_type=3d",
+      "cohort_index": 40,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7479.sdf",
+        "sha256": "d3afe42ac541e387932d38ae90369a26e51b61ca778663e22160f4852bca3968",
+        "byte_count": 3709
+      }
+    },
+    {
+      "cid": "18510",
+      "sid": "144207509",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0294ff0962b5a8fa1fc4ffbd5071fe500340b314dc8af69a2aed8cf2292d1d7e",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/18510/SDF?record_type=3d",
+      "cohort_index": 41,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID18510.sdf",
+        "sha256": "b8770ea9cf4943ee296d6fa76a00fe2e7e96a3655f36a26c04ab6ca73e2a51c9",
+        "byte_count": 6226
+      }
+    },
+    {
+      "cid": "445639",
+      "sid": "144204637",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0297e480ad9a7a593201b44ab3be5b50d2535ee7858aec27f897bae76e5471a4",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/445639/SDF?record_type=3d",
+      "cohort_index": 42,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID445639.sdf",
+        "sha256": "797218b57025cba40295638d23cf3d90a9b4e1508a2a2ce37f384c0f5394b38c",
+        "byte_count": 6979
+      }
+    },
+    {
+      "cid": "10409",
+      "sid": "144212782",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02b93a1385d42ee2c848abc686dc6c8de3607d21cdd81cd814d67cda4bf54efe",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10409/SDF?record_type=3d",
+      "cohort_index": 43,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID10409.sdf",
+        "sha256": "c7473c743673f9da5145ff428cb75177f8a0daceb210fa12dfe75ad86bd5c84b",
+        "byte_count": 6009
+      }
+    },
+    {
+      "cid": "6786",
+      "sid": "144209618",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02bd3b93a43933bfbdb0b275f53150c03061a94606745363995c2dc9c492d6fb",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6786/SDF?record_type=3d",
+      "cohort_index": 44,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID6786.sdf",
+        "sha256": "48bbbc57703cd7f4f977ac9c7d99e4fac3f8a5a78a77c133648d81a6b2d0a13b",
+        "byte_count": 6976
+      }
+    },
+    {
+      "cid": "16230",
+      "sid": "144208584",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02cda9ac899d8f58c6c70ab5d84f2e28d26c708b5e1aa3bbd44c26c7cf5b545e",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/16230/SDF?record_type=3d",
+      "cohort_index": 45,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID16230.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "70014",
+      "sid": "144212184",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02d63cb10333d4394d0424b91b3ec5a992802a54e6fca4c85378040700f4a41e",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/70014/SDF?record_type=3d",
+      "cohort_index": 46,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID70014.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "23194",
+      "sid": "144207313",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02fab1d7da829b96fca91f8c231ac4086aefea96c5fd1d6a7c2dbb50f107ccc9",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23194/SDF?record_type=3d",
+      "cohort_index": 47,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID23194.sdf",
+        "sha256": "b2be753dcc1da74b89ec7b970bd66ce141fc8dbdb1e26bf9c46a7317c3038516",
+        "byte_count": 6919
+      }
+    },
+    {
+      "cid": "5354133",
+      "sid": "144208059",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "02fe69ce77616c806428bacc2bfa49f92f2763243cfc4d455a6bf9952549dd77",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5354133/SDF?record_type=3d",
+      "cohort_index": 48,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID5354133.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "1549517",
+      "sid": "144204679",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "030c46bb72a0dbccfc91050b8dc45ddda6c0ca574891ae701a60bac1b1a0a14f",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/1549517/SDF?record_type=3d",
+      "cohort_index": 49,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID1549517.sdf",
+        "sha256": "5138e75c06fc43a9ab80e3ee2173fbe3a18b86b4f21d893bec1980ae74d35aea",
+        "byte_count": 2984
+      }
+    },
+    {
+      "cid": "23683938",
+      "sid": "144210479",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "031ba2d6caaabec1dadb9d04ab82f33f30d2612f8983f4ad652268f5736dff4b",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/23683938/SDF?record_type=3d",
+      "cohort_index": 50,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID23683938.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "7203",
+      "sid": "144208201",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "032d45f0321fcd59e1bd693f6ca415d4cb38698bcab5584ee74f3e3dcee1042f",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7203/SDF?record_type=3d",
+      "cohort_index": 51,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7203.sdf",
+        "sha256": "3c8e9c247aa0394710295338232f43af103ba31ba24050a54c64f658fbbc671c",
+        "byte_count": 3712
+      }
+    },
+    {
+      "cid": "36605",
+      "sid": "144204769",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "03450f5b599f8c95dfa7a9a0f3201348483a615027fe1d68565d9b48c596ecaa",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/36605/SDF?record_type=3d",
+      "cohort_index": 52,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID36605.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "6333",
+      "sid": "144207988",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0352f97c94305c71a132bea141fd6ff978c508a8c2c2d54b20530566d4e96467",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/6333/SDF?record_type=3d",
+      "cohort_index": 53,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID6333.sdf",
+        "sha256": "6cdc068b8d8956712bdd42868b3611c778b26bccaac06a0415034f168b75d70c",
+        "byte_count": 1519
+      }
+    },
+    {
+      "cid": "5354342",
+      "sid": "144209942",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "03693645c7df390200404bda1b83d3dc7225a0a721eefdec5ae3cc5dd1276279",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/5354342/SDF?record_type=3d",
+      "cohort_index": 54,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID5354342.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "18056",
+      "sid": "144208423",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "036b4c17d6709881851b3f205194dc72738fda11c71e45e0d8324a64c33a67c0",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/18056/SDF?record_type=3d",
+      "cohort_index": 55,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID18056.sdf",
+        "sha256": "4b240846f1d2bbb1d040c8396751ac79bfad129024d0de0a68abecf4320cea97",
+        "byte_count": 2225
+      }
+    },
+    {
+      "cid": "73539",
+      "sid": "144211574",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "03ba9ebdc56ce5c4f04914c8ee109ff5e74e80a16fe33eec696ba224c76a37ba",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/73539/SDF?record_type=3d",
+      "cohort_index": 56,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID73539.sdf",
+        "sha256": "7d2e21e067ce998b05b8eb26fea4a81f66f71d3d204f67728b0ec41ebb811a10",
+        "byte_count": 3184
+      }
+    },
+    {
+      "cid": "10197650",
+      "sid": "144211404",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "03d5ae5c2254c5c88a78b5d97cface57f1c1b16e4533c893d9a2dce1ae12f0db",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/10197650/SDF?record_type=3d",
+      "cohort_index": 57,
+      "acquisition": {
+        "status": "failed",
+        "http_status": 404,
+        "response": {
+          "file": "CID10197650.http-error.txt",
+          "sha256": "601553e267ea28ff660b69a63ad3432be20c0a33993ffbe4c7bffaf94564123c",
+          "byte_count": 82
+        }
+      }
+    },
+    {
+      "cid": "7348",
+      "sid": "144211669",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "03df39ccb647b64cf47474526f1d08031e09f6b4fd7d40e7defbeb9ee7b70a0e",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7348/SDF?record_type=3d",
+      "cohort_index": 58,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7348.sdf",
+        "sha256": "3e1c2eefbba06fb2e878bd72c0a832f6178674e19ad4896cc2b475d4a2c57592",
+        "byte_count": 6388
+      }
+    },
+    {
+      "cid": "31370",
+      "sid": "144208196",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "03ed15cbf2bd0b02c83b27e12683c6342e6a6417f900ab51e840ca1aaa036e3e",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/31370/SDF?record_type=3d",
+      "cohort_index": 59,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID31370.sdf",
+        "sha256": "04186f834f8c5ba4652002a451da20da0233214a3f604ae7fa5fa8dd7ed8d43b",
+        "byte_count": 2338
+      }
+    },
+    {
+      "cid": "42981",
+      "sid": "144212074",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "04089abcac3f67ba40914e0fc9b94b15da7ae7b10ccd09d4cead81aedfc40c95",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/42981/SDF?record_type=3d",
+      "cohort_index": 60,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID42981.sdf",
+        "sha256": "dd5c0201ca5af890123bc3b8c91f66bb0bca54cfedb1f0c6a8333b0d3e0ddd2f",
+        "byte_count": 7682
+      }
+    },
+    {
+      "cid": "12512",
+      "sid": "144207547",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0412cda181e9a74efe9e84c61a64c323d3fd0be1a92a99adbff91ad1b21dd2b0",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/12512/SDF?record_type=3d",
+      "cohort_index": 61,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID12512.sdf",
+        "sha256": "898cc57282258b3f0222383d984b152394b0f72f336617c3397a9338e63517f6",
+        "byte_count": 3113
+      }
+    },
+    {
+      "cid": "8129",
+      "sid": "144208445",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "0436349905bd39ca72f84a229ada1f650e7ea0e4b209184201003894770fc9da",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/8129/SDF?record_type=3d",
+      "cohort_index": 62,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID8129.sdf",
+        "sha256": "fd8343d566f2a4a4630447069a1d027f76a93234fcac6c82c4b5f265ba4678cf",
+        "byte_count": 3653
+      }
+    },
+    {
+      "cid": "7819",
+      "sid": "144207382",
+      "label": 0,
+      "role": "evaluation",
+      "assay_outcome": "Inactive",
+      "selection_hash": "04566aa981b3ad96986c7245692864432d3a8c4e2c6831acdddee6e0af6e6d22",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/7819/SDF?record_type=3d",
+      "cohort_index": 63,
+      "acquisition": {
+        "status": "completed",
+        "file": "CID7819.sdf",
+        "sha256": "b9c0b9a589319680ea9272b023701b6584b484e454ac2f1d979a11d86fcdf00e",
+        "byte_count": 3285
+      }
+    }
+  ],
+  "scope": "all 64 unchanged evaluation inputs; one request each, all failures retained, no replacements"
+}

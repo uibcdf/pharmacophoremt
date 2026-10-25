@@ -23,5 +23,9 @@ contains its stopped attempt's exact acquisition responses; the separate
 `readiness_declaration.json` and `readiness_training_20261024/` define/retain the
 bounded second training attempt. Its frozen query and full output are qualified
 by `devguide/evidence/esr1_consensus_readiness_training_20261024_summary.json`.
-There are still no evaluation structures/scores. Follow the maintained protocol
-for the unchanged 64-input paired evaluation and source/provider requirements.
+The subsequent `paired_evaluation_20261024/` snapshot retains all 64 original
+evaluation responses (45 SDFs / 19 HTTP errors), exact query input copies and
+acquisition receipt. Full measured results, both-arm/preparation journals and
+checks are qualified by `devguide/evidence/esr1_paired_evaluation_20261024_summary.json`.
+This evaluation is now exposed evidence; preserve all original bytes and do not
+reuse it as unseen validation after further query/method development.

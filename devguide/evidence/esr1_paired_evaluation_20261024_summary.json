@@ -1,0 +1,282 @@
+{
+  "schema": "pharmacophoremt.esr1_paired_evaluation_summary@1",
+  "issue": 64,
+  "measured_at": "2026-10-24T23:48:19.014457+00:00",
+  "producer": {
+    "git_head": "012544472e8eca27d1646a6e8065ee22872d4368",
+    "dirty": "",
+    "stable": true,
+    "product_provider_files_match_training": true,
+    "python": "3.14.9 | packaged by conda-forge | (main, Oct 22 2026, 10:21:21) [GCC 15.3.0]",
+    "versions": {
+      "pharmacophoremt": "0.4.0+17.g25a49f5",
+      "molsysmt": "0.23.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "rdkit": "2026.9.1",
+      "pandas": "3.1.0",
+      "pyunitwizard": "0.29.0",
+      "argdigest": "0.17.0",
+      "smonitor": "0.22.0",
+      "depdigest": "0.15.1",
+      "ackredit": "0.12.1"
+    },
+    "conda_records": 325
+  },
+  "declaration": {
+    "file": "readiness_declaration.json",
+    "sha256": "b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e",
+    "byte_count": 32303
+  },
+  "training_summary": {
+    "file": "esr1_consensus_readiness_training_20261024_summary.json",
+    "sha256": "2fb964185c07e199ac11130ca459fbf8a6efd8842199cd7963e14df03fe58fd2",
+    "byte_count": 5736
+  },
+  "acquisition": {
+    "file": "acquisition.json",
+    "sha256": "f273ae79fe4a969471f7dba6f1bc3f138a82b0e883c900c950f6b0ec229a9fdb",
+    "byte_count": 38740
+  },
+  "queries": {
+    "baseline": {
+      "file": "baseline.query.json",
+      "sha256": "c165f3755e1a76603a69f7fd1c24259e8f4706c20407eb3fdf653a4b5f7804f3",
+      "byte_count": 86446
+    },
+    "consensus": {
+      "file": "consensus.query.json",
+      "sha256": "f80a09a68e21a8826a399467bb449082765e10328c8480717811049aa1d93a6d",
+      "byte_count": 444164
+    }
+  },
+  "original_inputs": "tests/data/esr1_consensus_comparison/paired_evaluation_20261024",
+  "counts": {
+    "original_inputs": 64,
+    "original_actives": 16,
+    "original_inactives": 48,
+    "available_sdf": 45,
+    "acquisition_failed": 19,
+    "missing_active": 4,
+    "missing_inactive": 15,
+    "prepared": 45,
+    "preparation_failed": 0,
+    "common_evaluated": 45,
+    "common_actives": 12,
+    "common_inactives": 33,
+    "search_failures_per_arm": 0
+  },
+  "arms": {
+    "baseline": {
+      "n_evaluated": 45,
+      "n_actives": 12,
+      "n_inactives": 33,
+      "AUC": 0.48484848484848486,
+      "BEDROC": 0.17571537292872424,
+      "EF@10%": 0.8181818181818181,
+      "n_total": 64,
+      "n_unscored": 19,
+      "unscored_by_stage": {
+        "acquisition": 19
+      },
+      "missing_binary_score_AUC_sensitivity": {
+        "pessimistic_hypothetical": 0.3333333333333333,
+        "optimistic_hypothetical": 0.6145833333333334
+      }
+    },
+    "consensus": {
+      "n_evaluated": 45,
+      "n_actives": 12,
+      "n_inactives": 33,
+      "AUC": 0.553030303030303,
+      "BEDROC": 0.45893157044378563,
+      "EF@10%": 1.6829268292682928,
+      "n_total": 64,
+      "n_unscored": 19,
+      "unscored_by_stage": {
+        "acquisition": 19
+      },
+      "missing_binary_score_AUC_sensitivity": {
+        "pessimistic_hypothetical": 0.3854166666666667,
+        "optimistic_hypothetical": 0.6666666666666666
+      }
+    }
+  },
+  "common_subset": {
+    "cohort_indices": [
+      0,
+      1,
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      10,
+      11,
+      12,
+      14,
+      17,
+      18,
+      20,
+      21,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      31,
+      32,
+      34,
+      36,
+      37,
+      40,
+      41,
+      42,
+      43,
+      44,
+      47,
+      49,
+      51,
+      53,
+      55,
+      56,
+      58,
+      59,
+      60,
+      61,
+      62,
+      63
+    ],
+    "arms": {
+      "baseline": {
+        "n_evaluated": 45,
+        "n_actives": 12,
+        "n_inactives": 33,
+        "AUC": 0.48484848484848486,
+        "BEDROC": 0.17571537292872424,
+        "EF@10%": 0.8181818181818181
+      },
+      "consensus": {
+        "n_evaluated": 45,
+        "n_actives": 12,
+        "n_inactives": 33,
+        "AUC": 0.553030303030303,
+        "BEDROC": 0.45893157044378563,
+        "EF@10%": 1.6829268292682928
+      }
+    },
+    "delta_AUC_consensus_minus_baseline": 0.06818181818181812
+  },
+  "hits": {
+    "baseline": [
+      {
+        "cid": "33255",
+        "label": 0
+      }
+    ],
+    "consensus": [
+      {
+        "cid": "87250",
+        "label": 1
+      },
+      {
+        "cid": "5280961",
+        "label": 1
+      },
+      {
+        "cid": "70425",
+        "label": 0
+      },
+      {
+        "cid": "11193251",
+        "label": 0
+      }
+    ]
+  },
+  "input_integrity_unchanged": true,
+  "full_evidence": {
+    "path": "esr1_paired_evaluation_20261024.json.gz",
+    "compressed_sha256": "56c7617f92e213520cab8a2e08023d2a8e4a5eb115275c2b1654c87157ad6ef5",
+    "compressed_bytes": 3544665,
+    "uncompressed_sha256": "610b418d88707132d40b4ef5fd534a04498c1389f8b73c5e1ca1d4db39c1d1f9",
+    "uncompressed_bytes": 48465962
+  },
+  "preparation_evidence": {
+    "path": "esr1_paired_evaluation_20261024_preparation.json.gz",
+    "compressed_sha256": "20fe44c70a88ac16103516e223696b5425c2bf2c231f1ed55a8c688e312fda93",
+    "compressed_bytes": 243926,
+    "uncompressed_sha256": "6e80c5924d61e2c83c0cd52916c7fd403139a0e8bf00e561287f7c7911f3552b",
+    "uncompressed_bytes": 4320856
+  },
+  "baseline_evidence": {
+    "path": "esr1_paired_evaluation_20261024_baseline.json.gz",
+    "compressed_sha256": "5988b4de5d4b615ea465432052ab95271b522abccbfbb5da40d4cca8a4cb1c35",
+    "compressed_bytes": 807193,
+    "uncompressed_sha256": "7e9b2504fae7d1f3a6b125a8b409a38652a679570af2b858434eb6796ee0014e",
+    "uncompressed_bytes": 12548466
+  },
+  "consensus_evidence": {
+    "path": "esr1_paired_evaluation_20261024_consensus.json.gz",
+    "compressed_sha256": "ce8f329154ad5e270847cde5cefc10d87a04f0c1b5b1f6cd31a324f8d55bf2e0",
+    "compressed_bytes": 3055634,
+    "uncompressed_sha256": "c2452cea328f402d820e768a5dd173fa9195ba1393ccd0d13f5b1ac7f61cb71f",
+    "uncompressed_bytes": 42763225
+  },
+  "execution_log": {
+    "path": "esr1_paired_evaluation_20261024.log.gz",
+    "compressed_sha256": "f591340df04e90c9b65f873552b7240fc54d111d3fb63ef96d33358534e032a4",
+    "compressed_bytes": 1033,
+    "uncompressed_sha256": "5ec0194dcac0f64c98e563a39db5e4eae7a50e5f9a685ea7f23ee478cc74a36e",
+    "uncompressed_bytes": 4598
+  },
+  "acquisition_log": {
+    "path": "esr1_paired_evaluation_20261024_acquisition.log.gz",
+    "compressed_sha256": "fdf490b789354911c57e02078243866c381d1a9706a09d1588dccc680ee19215",
+    "compressed_bytes": 513,
+    "uncompressed_sha256": "65039c95c7cde21f94d6b403abd1c9afceeab00be7dc215a9f0d22140626d677",
+    "uncompressed_bytes": 2972
+  },
+  "attribution": {
+    "items": 60,
+    "uses": 89,
+    "scope": "actual acquisition-selected data/preparation/native search/retrospective/metric branches; full detached payload retained"
+  },
+  "scope": "descriptive same-assay external-CID-disjoint paired comparison; modest observed subset difference, 19 unscored inputs; no independent-series, affinity or predictive acceptance",
+  "temporary_resources": {
+    "owner": "PharmacophoreMT #64 paired evaluation",
+    "root": "/tmp/phmt64-paired-20261024-qKYX7C",
+    "shared_training_root": "/tmp/phmt64-readiness-20261024-4ceLcb",
+    "environment": "/tmp/phmt64-readiness-20261024-4ceLcb/environment",
+    "status": "owned environment retired after completed evaluation",
+    "no_shared_cache_cleanup": true,
+    "environment_exists_after_cleanup": false,
+    "retirement_method": "verified owned-prefix filesystem removal; no uninstall hooks",
+    "uninstall_hooks_executed": false,
+    "raw_evidence_and_inputs_retained": true
+  },
+  "qualification_evidence": {
+    "path": "esr1_paired_evaluation_20261024_qualification.json.gz",
+    "compressed_sha256": "aac291c0649bffd9bdc72837e5f7b959273b14786d9232783dff6d76836ce9dd",
+    "compressed_bytes": 1549,
+    "uncompressed_sha256": "79c5391e7afc03703c234a00c8bda9a0426716604522d6ebe498bdbf81916fb0",
+    "uncompressed_bytes": 3368
+  },
+  "cleanup_evidence": {
+    "path": "esr1_paired_evaluation_20261024_cleanup.json.gz",
+    "compressed_sha256": "113fdcea902d508f998468c02d76eff590cda391aab01aeb6770ec11c2a192da",
+    "compressed_bytes": 438,
+    "uncompressed_sha256": "b4d08de76557d63a65528b1e9e8d8f368e95dc3e13e2342b9f388c9a47a223d2",
+    "uncompressed_bytes": 737
+  },
+  "closeout_verification": {
+    "administrative_and_documentation": "49 passed; 24 subtests passed, including strict Sphinx and independent paired-result oracle",
+    "reporting": "3 passed",
+    "ruff": "whole repository passed",
+    "report_index": "current",
+    "scientific_scope": "103 selected controls plus original fixed empirical evaluation; no new full scientific suite or public artifact",
+    "environment_retired_without_uninstall_hooks": true
+  }
+}

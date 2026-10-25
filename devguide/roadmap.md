@@ -2,69 +2,50 @@
 
 ## Current priorities — 2026-10-24
 
-The MVP scoring segment **#63 is locally qualified**: explicit seed-only binary
-molecular ranking is separate from checked-pose coverage, shared across native
-rigid/conformer/facade/retrospective tools. Legacy coverage ranking requires an
-explicit choice. All 949 source tests pass with public MolSysMT 0.23.0 on
-Linux/Python 3.14.9. See the [resolved report](archive/rigid_negative_ranking_contract.md),
-[contract](seeded_ranking_workflow.md) and [checkpoint](checkpoint.md).
+**#64's bounded paired comparison is complete.** The
+[resolved report](archive/esr1_consensus_comparison.md),
+[measured case](../docs/content/validation/esr1_consensus_comparison.md) and
+[paired summary](evidence/esr1_paired_evaluation_20261024_summary.json) preserve
+the original training stop, separately declared ready query and fixed evaluation.
+Both queries score the same 45 prepared inputs (12 active / 33 inactive); 19
+original HTTP 404 inputs remain unscored. Reference/consensus AUC is
+0.4848484848 / 0.5530303030, with descriptive common-subset difference
++0.0681818182. EF10% is 0.8182 / 1.6829. This is modest same-assay exploratory
+evidence with missing inputs, extensive ties and unqualified chemical-series
+independence, not predictive acceptance. Future tuning cannot reuse these 64
+now-exposed outcomes as unseen validation.
 
-The predeclared #62 development replay preserves the frozen query and all inputs;
-25 evaluate, six remain unscored and the same sole active hits. Binary AUC 0.5833
-is not predictive improvement over the earlier checked-coverage criterion.
-Original outputs remain immutable and this exposed cohort is not a fresh holdout.
+All molecular operations remain in public MolSysMT. Source/provider hashes match
+qualified training and state/coordinate/atom observations stay identical across
+arms. Original full outputs, all response failures, native/preparation journals,
+exact query hashes, actual attribution and independent metric oracles are retained.
+103 selected scientific controls and the documented administrative/strict-docs
+gates pass. These are separate from final-head hosted/installed/public receiving.
 
-Durable original-input retention now completes #62's bounded pilot: the
-[snapshot](evidence/esr1_activity_pilot_inputs_20261023_summary.json) and scoped
-notice preserve all original responses and support offline restoration of the
-35 inputs plus original query. No scientific result or source identity changes.
-See the [resolved report](archive/esr1_activity_pilot.md).
+The earlier #63 explicit binary ranking contract and #62 frozen pilot/replay/input
+retention remain delivered. Their old results are not overwritten. Public 0.4.0
+is unchanged; no new package/release is produced.
 
-The next comparison is now predeclared under
-[#64](pending_proposals/esr1_consensus_comparison.md): frozen reference versus
-one training-only native rigid consensus, three new training actives and
-64 previously unscreened evaluation CIDs. The
-[protocol](esr1_consensus_comparison.md) freezes the full split, methods, budgets,
-model choice and stop rules before new structures/scores. It excludes the entire
-prior Bath CID population and conflicting assay CIDs. This remains a same-assay,
-CID-only split, with molecular/series independence unqualified.
+**Next product segment: [#65](https://github.com/uibcdf/pharmacophoremt/issues/65).**
+Generalize the demonstrated original-cohort/saved-result/unscored-input accounting
+into independently useful native PHMT validation tools. Reuse existing score and
+metric contracts; support explicit native/original index mapping and common-subset
+comparison without rerunning molecular search. Keep source preparation in MolSysMT
+and preserve original producer attribution. #64 provides concrete consumer evidence
+and independent oracles. This local API work does not wait for a molecular-provider
+change and does not add another ad hoc scientific-case implementation.
 
-The [original training attempt](../docs/content/validation/esr1_consensus_comparison.md)
-has now stopped at its declared all-three gate: two supplied SDFs prepare with
-public MolSysMT 0.23.0; CID 24633 returns PubChem 3D HTTP 404. Original inputs,
-full result and actual attribution are retained. No consensus, query or
-evaluation is produced. All 64 evaluation inputs remain unopened; the missing
-input is not inactivity or a MolSysMT failure.
+Before stronger biological-performance claims, review endpoint/data suitability
+and predeclare fresh training/evaluation data. Molecular identity/scaffold overlap
+belongs to MolSysMT #447; conformer/state/stereo needs remain in their existing
+provider issues, received through #41. Do not implement those molecular operations
+here or infer chemical-series independence from different external CIDs.
 
-The separate [second declaration](../tests/data/esr1_consensus_comparison/readiness_declaration.json)
-now fixes a 12-candidate training pool before any new acquisition, preserving
-the original 64 evaluation entries and all scientific parameters. Reuse the
-original three response identities, including the 404; acquire only the other
-nine and prepare all candidates with MolSysMT. Select the first three successful
-preparations in fixed order without feature-count/geometry/score filtering.
-
-The second training stage is now **ready**: eight candidates prepare, the fixed
-first-success rule selects 31477/6293/9818306, and native consensus completes
-146 fits, two layouts and three hypotheses. The declared ordering selects a
-three-site query jointly supported by two ligands; training-only readiness
-scores are 1, 0, 1. Original inputs, all failures, full evidence and the exact
-query hash are retained in the
-[new summary](evidence/esr1_consensus_readiness_training_20261024_summary.json).
-
-Next, after committing the frozen query/training evidence, execute the unchanged
-paired evaluation on all 64 reserved inputs. Restore both queries by checksum,
-retain every failure and per-arm/common-subset denominator, and do not tune on
-evaluation. No evaluation structure or score exists yet. Preserve both distinct
-training attempts. Molecular identity/scaffold overlap capability is
-proposed in MolSysMT #447 rather than implemented here. The independent cleanup
-hook diagnostic belongs to MolSysSuite #139. Receive newer molecular providers
-separately under #41; conformer and stereo capabilities remain MolSysMT
-responsibilities. A graded molecular partial-match optimum is not implemented.
-
-This is development source after public 0.4.0, not a new release/package. Current
-public delivery and central follow-ups remain unchanged. New addon work and wider
-documentation/release-infrastructure expansion remain deferred. Final-head native
-receiving is tracked separately from the completed local source/scientific checks.
+The owned #64 environment is retired after evidence capture via scoped filesystem
+removal of its verified task-created prefix. No uninstall hook/shared repair/
+global-cache cleanup runs; earlier native hook behavior remains MolSysSuite #139.
+New addon work and wider documentation/release infrastructure remain deferred.
+Follow #9 for this head's native receiving; older successful matrices remain dated.
 
 ## Current priorities — 2026-10-23
 

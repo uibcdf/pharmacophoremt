@@ -1,4 +1,14 @@
-# ERα training gates and a frozen consensus query
+# ERα frozen consensus and paired evaluation
+
+The completed paired comparison scores the same 45 available/prepared compounds
+from 64 fixed evaluation inputs. Consensus AUC is **0.5530**, versus **0.4848**
+for the original reference query; the descriptive difference is **+0.0682**.
+Nineteen inputs lack the requested PubChem 3D record and remain unscored. This
+is a modest observed subset difference in one selected cellular-assay cohort,
+not predictive qualification or an independent chemical-series benchmark.
+
+The measured phases below preserve the original stop, separate ready-training
+attempt and final evaluation without rewriting their inputs or outcomes.
 
 Case `esr1-consensus-training-20261024-01`, owned by
 [#64](https://github.com/uibcdf/pharmacophoremt/issues/64), maintainers `LMMV`
@@ -180,6 +190,105 @@ Next is the separately recorded paired evaluation on the unchanged 64 reserved
 inputs, after this query/training receipt is committed. Use the checksum reader
 to restore both original baseline and new consensus query; native PHMT loads
 them. Retain all evaluation failures and per-arm/common-subset denominators.
-The owned environment remains available for that pending phase; no retirement
-hooks or shared-cache cleanup run in this closeout. This readiness stage has
+At that training checkpoint the owned environment was retained for the pending
+phase; no retirement hooks or shared-cache cleanup ran. This readiness stage has
 no ROC AUC, enrichment or predictive-performance result.
+
+## Completed paired evaluation — 2026-10-24
+
+Case `esr1-consensus-paired-20261024-01` uses the exact 64 evaluation entries
+and both already committed query hashes. Clean execution producer is
+`012544472e8eca27d1646a6e8065ee22872d4368`. The PHMT library and MolSysMT file
+hashes match qualified training exactly; the library metadata remains
+`0.4.0+17.g25a49f5`, while the new case driver has its own recorded identity.
+The unchanged 325-provider environment uses Linux/Python 3.14.9, MolSysMT 0.23.0
+and PyUnitWizard 0.29.0. Original data/query/state/source identities remain stable.
+
+All 64 CIDs receive one acquisition attempt: 45 SDFs are available and 19
+requests return HTTP 404 (4 of 16 actives / 15 of 48 inactives). All 45 available
+systems pass the same MolSysMT preparation/preservation checks, so both arms
+score the **same 12 actives and 33 inactives**. No molecular preparation or
+native search fails. Read-only public MolSysMT observations confirm unchanged
+coordinates, chemical states, atom IDs and elements before/between/after arms.
+
+| Metric or accounting | Original reference | Frozen consensus |
+| --- | ---: | ---: |
+| Original evaluation inputs | 64 | 64 |
+| Evaluated active / inactive | 12 / 33 | 12 / 33 |
+| Unscored active / inactive | 4 / 15 | 4 / 15 |
+| Active / inactive geometric hits | 0 / 1 | 2 / 2 |
+| AUC on common 45-input subset | 0.4848484848 | 0.5530303030 |
+| BEDROC, alpha 20 | 0.1757153729 | 0.4589315704 |
+| Tie-aware EF at 10% | 0.8181818182 | 1.6829268293 |
+| Hypothetical missing-binary-score AUC range, all 64 | 0.3333–0.6146 | 0.3854–0.6667 |
+
+The primary descriptive AUC difference is **0.0681818182**, calculated on the
+common-evaluable subset without another molecular search. Reference has one
+inactive hit (CID 33255) and 44 zero ties. Consensus hits two assay actives
+(87250, 5280961) and two assay inactives (70425, 11193251), with 41 zero ties.
+At the top-five cutoff, boundary ties share fractional selection credit;
+enrichment is not computed by choosing a favorable tie ordering.
+
+The 19 missing inputs are never assigned observed negative scores or fabricated
+native failures. Their original acquisition causes remain in the full 64-input
+ledger. Native `RetrospectiveValidator` counts/indices refer to its prepared
+45-input batch; an explicit mapping preserves original study indices and class
+counts. Hypothetical binary 0/1 extremes yield sensitivity bounds on the full
+cohort. Those values are neither imputed observations nor confidence intervals.
+
+The positive difference is exploratory. Only 12 actives were scored, many
+results tie, 19 requested structures are unavailable, supplied states/one
+computed conformer are assumed, the endpoint is a cellular reporter rather than
+direct binding, and chemical-series independence remains unqualified. This
+single selected comparison does not establish predictive improvement. All 64
+outcomes are now exposed; future query/model changes need fresh declared
+evaluation data instead of retuning and reusing this cohort as unseen.
+
+### Original outputs and checks
+
+The [paired summary](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/esr1_paired_evaluation_20261024_summary.json)
+qualifies the full original output, preparation journal, both complete arm
+journals, execution/acquisition logs, qualification and cleanup records. Full
+output decompressed SHA-256 is
+`610b418d88707132d40b4ef5fd534a04498c1389f8b73c5e1ca1d4db39c1d1f9`.
+[All original inputs and notice](https://github.com/uibcdf/pharmacophoremt/tree/main/tests/data/esr1_consensus_comparison/paired_evaluation_20261024)
+retain the 45 SDFs, 19 error bodies, acquisition receipt and exact query input
+copies. Actual enclosing Ackredit contains 60 items and 89 uses from the reached
+data/preparation/search/retrospective/metric branches. Saved reading registers
+no new scientific use.
+
+The offline guard independently checks pairwise AUC, boundary-tie EF and
+exponential-rank BEDROC, both missing-score scenarios, source/native/original
+index mapping, all failures, query hashes and before/after input integrity.
+The public-provider selection additionally passes 103 scientific controls;
+312 historical MolSysMT Pandas warnings are retained in its log. These do not
+qualify a new complete hosted matrix, installed artifact or timing benchmark.
+
+The owned environment is retired after evidence capture and verification,
+removing only the verified task-created prefix through scoped filesystem
+cleanup. No uninstall hooks, shared-environment repair or global cache cleanup
+run. [MolSysSuite #139](https://github.com/uibcdf/molsyssuite/issues/139) remains
+the separate investigation of the earlier native unlink-hook attempt.
+
+### Replaying the recorded science
+
+Read the archived result with the existing checksum reader for integrity-only
+inspection. A new calculation keeps the exact 325-provider file and installs
+the **training library producer** separately from the **evaluation driver**;
+the driver refuses changed product/provider files before scoring.
+
+```bash
+mamba create -p /tmp/esr1-paired-env \
+  --file devguide/evidence/seeded_ranking_environment_20261024_explicit.txt
+git worktree add --detach /tmp/esr1-library-source 25a49f5322a06c1deeff95b396cf194fc5d8f9b6
+git worktree add --detach /tmp/esr1-evaluation-source 012544472e8eca27d1646a6e8065ee22872d4368
+/tmp/esr1-paired-env/bin/python -m pip install --no-deps --editable /tmp/esr1-library-source
+python -c "import shutil; shutil.copytree('tests/data/esr1_consensus_comparison/paired_evaluation_20261024', '/tmp/esr1-paired-inputs')"
+/tmp/esr1-paired-env/bin/python -I /tmp/esr1-evaluation-source/phmt_test_support/esr1_consensus_evaluation.py \
+  --data-dir /tmp/esr1-paired-inputs --output /tmp/esr1-paired-new-run.json
+```
+
+Use new paths, preserve original outputs and record a distinct new run identity.
+Installation/native-byte differences fail the historical qualification check;
+do not bypass it or call current-head execution the original producer. No source
+reacquisition or molecular workflow runs when merely reading these archives.

@@ -1,12 +1,12 @@
 ---
 summary: Compare training-only rigid consensus against a frozen reference on new assay CIDs.
 issue: uibcdf/pharmacophoremt#64
-status: partial
+status: resolved
 opened: 2026-10-24
-closed:
+closed: 2026-10-24
 verification: measured
 area: [validation, modeling, mvp]
-guard: devtools/tests/test_esr1_consensus_training.py::TestEsr1ConsensusTraining::test_archived_readiness_freezes_selected_query_and_keeps_evaluation_unopened
+guard: devtools/tests/test_esr1_consensus_evaluation.py::TestEsr1ConsensusEvaluation::test_original_paired_result_has_independent_oracles_and_complete_failure_accounting
 normative: devguide/esr1_consensus_comparison.md
 blocked_by: []
 supersedes: []
@@ -223,3 +223,69 @@ must match qualified training; actual before/after producer and state audits
 are retained. Two offline guards test all 64 requests/query identities/failures
 and prepared-batch/original-index/class-order separation. This records an
 executable route before the opt-in measured evaluation, not an observed result.
+
+
+## Paired comparison completed — 2026-10-24
+
+Clean producer `012544472e8eca27d1646a6e8065ee22872d4368` evaluates the two
+already committed queries on the unchanged 64 inputs, with no source/model/
+parameter tuning. Exactly 45 SDFs are available and all prepare successfully;
+19 HTTP 404 responses remain unscored (4 active / 15 inactive). Both arms score
+all 45 prepared systems (12 active / 33 inactive), without native search failure.
+Public MolSysMT state/coordinate/atom observations remain identical across arms.
+
+| Metric on the common 45-input subset | Reference | Consensus |
+| --- | ---: | ---: |
+| AUC | 0.4848484848 | 0.5530303030 |
+| BEDROC, alpha 20 | 0.1757153729 | 0.4589315704 |
+| Tie-aware EF at 10% | 0.8181818182 | 1.6829268293 |
+| Active / inactive geometric hits | 0 / 1 | 2 / 2 |
+
+The descriptive consensus-minus-reference AUC difference is 0.0681818182.
+Hypothetical full-cohort missing-binary-score AUC ranges are 0.3333–0.6146 and
+0.3854–0.6667 respectively; neither imputation nor confidence intervals. Only
+12 actives are scored, many scores tie, the supplied single conformer/state is
+assumed and the endpoint is cellular signaling, not direct binding. The observed
+subset difference is modest and does not establish predictive improvement or
+chemical-series independence. All 64 evaluation outcomes are now exposed.
+
+The [paired summary](../evidence/esr1_paired_evaluation_20261024_summary.json)
+qualifies original full output (raw SHA-256
+`610b418d88707132d40b4ef5fd534a04498c1389f8b73c5e1ca1d4db39c1d1f9`),
+preparation/both-arm journals, execution/acquisition logs and qualification/
+cleanup receipts. All 45 SDFs, 19 original errors, query input copies and
+acquisition record are portable with a scoped notice. Actual Ackredit retains
+60 items / 89 uses. Native prepared-batch indices are mapped to original study
+indices; no unavailable system is fabricated or given an observed negative score.
+
+Product/provider file hashes match the qualified training exactly, before/after
+producer audit is stable, and actual origins plus 325 Conda records remain in
+the full run. Library metadata stays `0.4.0+17.g25a49f5` because that library is
+unchanged; the new evaluation driver has its separately recorded source identity.
+All 103 selected scientific controls pass, with 312 historical public MolSysMT
+Pandas warnings retained. Independent standard-library pairwise AUC, tie-aware
+EF and exponential-rank BEDROC oracles confirm both arms/common subset and all
+missing-score bounds. Query/source/index/integrity checks pass without scientific
+reexecution. This is not a timing benchmark or new full hosted/installed gate.
+
+The owned environment is retired after evidence verification by removing only
+the verified task-created prefix through bounded filesystem cleanup. No native
+uninstall hooks, shared-environment target/repair or global-cache cleanup runs;
+original inputs/results remain retained. MolSysSuite #139 is still a separate
+investigation, not fixed by this operational retirement.
+
+This completes #64's bounded predeclared workflow/comparison acceptance, including
+the preserved original training stop, separate ready attempt and all failures.
+The earlier partial/remaining statements above describe their checkpoints and
+are superseded here. No new public package/release is produced. Further
+query/method development must use this now-exposed cohort as development evidence
+and declare genuinely unexposed evaluation data before a new predictive claim.
+Molecular identity/scaffold and conformation/state capabilities remain provider-
+owned under the existing MolSysMT issues; no consumer molecular workaround.
+
+Closeout passes 49 administrative/documentation tests plus 24 subtests, including
+strict Sphinx and the new independent paired-result guard; three reporting
+tests, whole-tree Ruff and generated-index/whitespace checks pass. The reusable
+native saved-result/original-cohort aggregation follow-up is PHMT #65, not a
+missing molecular operation. Original source/outputs stay immutable during that
+future API work; new predictive claims require fresh predeclared evaluation data.
