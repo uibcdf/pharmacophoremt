@@ -53,10 +53,12 @@ PubChem alternatives inspected through description/summary metadata:
 | AID | Observed aggregate CID counts | Disposition |
 | --- | --- | --- |
 | 1223 | 63 total; 17 active, 46 inactive | Competitive binding in permeabilized cells, conditional on a previous primary screen; secondary endpoint only, not an automatic replacement for isolated-protein binding |
-| 625258 | 835 total; 20 active, 0 inactive, 818 unspecified | Homologous target assignment; unspecified is not inactive. Aggregate categories overlap and cannot be subtracted from the total to manufacture negatives |
+| 625258 | 835 total; 20 active, 0 inactive, 818 unspecified | Homologous target assignment; unspecified is not inactive. Aggregate counts do not form a partition and cannot be subtracted from the total to manufacture negatives |
 | 2051711 | 1 total; 0 active/inactive, 1 unspecified | Human recombinant annotation but insufficient population/protocol for this challenge |
 
 These are measured metadata projections, not individual compound classifications.
+The nonpartitioned counts alone cannot distinguish cross-substance CID overlap
+from a source aggregation inconsistency; individual rows have not been inspected.
 The search is not an exhaustive review of all possible binding datasets.
 
 ## Activity classification and sampling, before opening activity rows

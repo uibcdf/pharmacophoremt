@@ -28,10 +28,27 @@ qualification (owners LMMV/dprada, review 2026-11-07). Only factual projections,
 checksums and the case-specific review are published; full raw metadata
 redistribution remains separate. No environment has been created or removed.
 
-**Immediate next:** commit this protocol/reader, retain its clean-head metadata
-and exclusion review, then qualify the two source documents/activity schemas under
-these committed rules. Source/provider/cohort/preparation gates must pass before
-new scoring. The reader has no activity/structure acquisition or molecular route.
+The protocol/reader is committed at clean producer
+`507ca37d8f21815bb29c0a34f8ccf3b020edbacf`. Its
+[measured review](evidence/esr1_binding_metadata_review_20261024_summary.json)
+retains metadata identities, complete pagination, every excluded CID and all 149
+unresolved row indices/SIDs. Raw result SHA-256 is
+`4c43930e138a4904f0950e4b547ef34202bde3dec225aed3db96065c5241ab43`.
+It reports `metadata_review_only` / `not_ready`, with no cohort, new activities,
+molecular inputs or scores. Aggregate-count wording is subsequently clarified
+without changing the predeclared source order, thresholds or sampling rules.
+
+**Immediate next:** qualify the CHEMBL3352633 and CHEMBL3638543 source documents,
+then the two nominated activity schemas under these committed rules. Metadata-
+only acquisition must precede individual activity curation; provider identity/
+scaffold, exact cohort and preparation gates must pass before scoring. The
+current reader has no activity/structure acquisition or molecular route.
+The final complete local administrative run passes 52 tests / 26 subtests,
+including strict Sphinx and both historical-source/clean-receipt guards; three
+reporting tests, indexes, Ruff and whitespace checks pass. Declaration 507ca37
+CI 40148673520 is queued, with policy 40148673714 / Conda 40148673624 successful;
+final-head receiving remains separate. Source attribution/terms remain in the
+[review notice](evidence/esr1_binding_metadata_review_20261024_NOTICE.md).
 Older fc9f14b CI 40145759546 is now successful; #65 implementation e32c80e CI
 40147016165 is in progress and closeout d2e82e8 CI 40147294367 is queued. Both
 #65 policy and Conda controls succeed. Exact-head receiving remains #9; public

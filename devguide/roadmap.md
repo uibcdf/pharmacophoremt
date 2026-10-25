@@ -10,6 +10,12 @@ acquisition. Discovery metadata covers 1,485 ChEMBL assays and three PubChem
 alternatives; CHEMBL3382763 then CHEMBL3705057 form the next bounded source pool.
 Metadata nomination does not qualify a dataset or freeze a cohort.
 
+Clean producer `507ca37d8f21815bb29c0a34f8ccf3b020edbacf` retains the
+[measured metadata/exclusion review](evidence/esr1_binding_metadata_review_20261024_summary.json),
+explicitly not ready for scoring. Next inspect the nominated source documents
+and qualify individual activity schemas under the committed protocol; no new
+activity values or molecular inputs have yet been acquired.
+
 The historical exposure inventory covers every known prior-source CID (8,099),
 including all Bath and requested inputs, plus 149 unresolved blank-CID rows/SIDs.
 MolSysMT #447 is still needed for molecular identity/scaffold independence; general

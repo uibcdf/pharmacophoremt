@@ -4,7 +4,7 @@ issue: uibcdf/pharmacophoremt#66
 status: partial
 opened: 2026-10-24
 closed:
-verification: inspected
+verification: measured
 area: [validation, screening, mvp]
 guard: devtools/tests/test_esr1_binding_readiness.py::TestEsr1BindingReadiness::test_exclusions_cover_entire_read_source_and_failed_requested_inputs
 normative: devguide/esr1_binding_evaluation_plan.md
@@ -33,7 +33,7 @@ explicit in the protocol. Keep this root while source qualification needs it;
 owners LMMV/dprada, review 2026-11-07. No environment is created or removed.
 
 The bounded PubChem review rejects AID625258 as a primary human binding cohort:
-homologous target assignment, no explicitly inactive CIDs and overlapping
+homologous target assignment, no explicitly inactive CIDs and nonpartitioned
 aggregate categories (835 total, 20 active, 818 unspecified). Never manufacture
 inactives from unspecified or total-minus-active. AID2051711 has only one
 unspecified CID. AID1223 has 17 active / 46 inactive CIDs, but is permeabilized-cell
@@ -80,6 +80,39 @@ canonical Python 3.14.7 workspace, including strict Sphinx and the new source-ID
 guard. Three reporting tests, generated indexes, Ruff and whitespace checks pass.
 Clean-head metadata/exclusion evidence remains pending; no scientific runtime
 module changes, installed-package proof or new full matrix is inferred.
+
+## Clean-producer metadata/exclusion review — 2026-10-24
+
+Clean committed producer `507ca37d8f21815bb29c0a34f8ccf3b020edbacf` verifies all
+nine retained metadata responses and both ChEMBL discovery pages. The
+[portable review summary](../evidence/esr1_binding_metadata_review_20261024_summary.json)
+qualifies its compressed result; raw SHA-256
+`4c43930e138a4904f0950e4b547ef34202bde3dec225aed3db96065c5241ab43`.
+The full output contains all 8,099 known excluded CIDs and the 149 unresolved
+source row indices/SIDs. Source hashes, original input archive identities,
+protocol/driver identity, pagination, query metadata and candidate projections
+are retained. Full raw metadata remains local rather than portable; exact bytes
+must be preserved at the named owned path while source qualification continues.
+
+The result is explicitly `metadata_review_only`, `not_ready`, with no evaluation
+cohort, new individual activity acquisition, molecular inputs or scores. This
+does not relabel earlier #62/#64 results or prove chemical independence. The
+protocol's aggregate-count explanation is clarified after this source review:
+counts that do not partition the total can reflect cross-substance overlap or
+source inconsistency; no individual rows were opened to resolve that distinction.
+The recorded source protocol identity predates that wording clarification;
+source order, thresholds, sampling and failure rules are unchanged.
+
+The new offline receipt guard checks clean producer, original-source/exclusion
+identity, all remaining gates and actual metadata counts. The final complete
+administrative run passes **52 tests / 26 subtests** in canonical Python 3.14.7,
+including strict Sphinx, installed-support isolation and both new guards. Three
+reporting tests, generated indexes, whole-tree Ruff and whitespace checks pass.
+Source attribution/redistribution scope is retained in the
+[review notice](../evidence/esr1_binding_metadata_review_20261024_NOTICE.md).
+Declaration CI 40148673520 is queued; policy 40148673714 and Conda governance
+40148673624 succeed at observation. Final-head receiving remains separate under
+#9; source/provider/cohort qualification stays partial in #66.
 
 Next review the two source documents and then acquire their individual activity
 tables under this committed protocol, retaining all quality/threshold/duplicate

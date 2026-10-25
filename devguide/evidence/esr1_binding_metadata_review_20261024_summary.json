@@ -1,0 +1,200 @@
+{
+  "chembl": {
+    "complete_pagination": true,
+    "discovery_pages": 2,
+    "discovery_records": 1485,
+    "nominees": [
+      {
+        "assay_chembl_id": "CHEMBL3382763",
+        "assay_organism": "Homo sapiens",
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "confidence_score": 9,
+        "description": "Displacement of fluorescein-labeled estrogen from human recombinant ERalpha by fluorescence polarization based competitive binding affinity assay",
+        "document_chembl_id": "CHEMBL3352633",
+        "target_chembl_id": "CHEMBL206",
+        "variant_sequence": null
+      },
+      {
+        "assay_chembl_id": "CHEMBL3705057",
+        "assay_organism": "Homo sapiens",
+        "assay_type": "B",
+        "bao_format": "BAO_0000357",
+        "confidence_score": 9,
+        "description": "Binding Assay: The ER binding affinity of the compounds was determined using an in vitro competitive radioligand binding assay was [2,4,6,7-3H(N)]-Estradiol ([3H]E2), a natural high affinity ER ligand, and bacterially expressed GST fusion ER-alpha or ER-beta ligand binding domain (LBD) protein.",
+        "document_chembl_id": "CHEMBL3638543",
+        "target_chembl_id": "CHEMBL206",
+        "variant_sequence": null
+      }
+    ],
+    "status": {
+      "activities": 24527044,
+      "chembl_db_version": "ChEMBL_37",
+      "chembl_release_date": "2026-05-01",
+      "compound_records": 3824604,
+      "disinct_compounds": 2921148,
+      "publications": 101100,
+      "status": "UP",
+      "targets": 18552
+    }
+  },
+  "evaluation_cohort": null,
+  "full_evidence": {
+    "compressed_bytes": 27878,
+    "compressed_sha256": "ab2777c7475023ae8cea8261ab85990c2e27108f4a7790ba227f5d2b063419b1",
+    "file": "esr1_binding_metadata_review_20261024.json.gz",
+    "uncompressed_bytes": 141825,
+    "uncompressed_sha256": "4c43930e138a4904f0950e4b547ef34202bde3dec225aed3db96065c5241ab43"
+  },
+  "historical_exclusions": {
+    "assay_blank_cid_rows": 149,
+    "assay_distinct_valid_cids": 8099,
+    "assay_rows": 10486,
+    "bath_distinct_cids": 4402,
+    "bath_rows": 4410,
+    "n_excluded_cids": 8099,
+    "prior_requests": {
+      "original_comparison": {
+        "byte_count": 27373,
+        "distinct_requested_cids": 67,
+        "path": "tests/data/esr1_consensus_comparison/declaration.json",
+        "sha256": "a1a476e7e94fd3480ee3845fbc5cca138221c4052eb7165a254499fd526ff647"
+      },
+      "pilot": {
+        "byte_count": 20590,
+        "distinct_requested_cids": 32,
+        "path": "tests/data/esr1_activity_pilot/manifest.json",
+        "sha256": "23aba072556e806f9b0d9ea5c06c322f1502855356d538e90a7c3a9e8e25e9ac"
+      },
+      "readiness_comparison": {
+        "byte_count": 32303,
+        "distinct_requested_cids": 76,
+        "path": "tests/data/esr1_consensus_comparison/readiness_declaration.json",
+        "sha256": "b8ff6305ed7527289dad6ee13f7992b74928d93738c6f290fbdeff4099b1757e"
+      }
+    },
+    "scope": "literal external CID exclusion only; no molecular equivalence or scaffold inference",
+    "snapshot": {
+      "byte_count": 3095,
+      "path": "devguide/evidence/esr1_activity_pilot_inputs_20261023_summary.json",
+      "sha256": "3f270b0f83b9ab9452604982fed1419096b054a0d46f71f29c0fdab3f19345f1"
+    },
+    "source_archive": {
+      "compressed_bytes": 12495338,
+      "compressed_sha256": "fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995",
+      "path": "esr1_activity_pilot_inputs_20261023.tar.gz",
+      "uncompressed_bytes": 16506880,
+      "uncompressed_sha256": "40cbd8570c4ac8671935f5066710fa2126a33e01bc4bdb1d241ddfd2c088b474"
+    }
+  },
+  "issue": 66,
+  "new_individual_activities_acquired": false,
+  "new_molecular_inputs_acquired": false,
+  "new_scores_computed": false,
+  "producer": {
+    "driver": {
+      "byte_count": 9301,
+      "sha256": "54fa74a58b3448f2df935ea1a61e288650bf482e6f22a8283cfe90cede8d233f"
+    },
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "git_head": "507ca37d8f21815bb29c0a34f8ccf3b020edbacf",
+    "git_status": "",
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "protocol": {
+    "byte_count": 10758,
+    "path": "devguide/esr1_binding_evaluation_plan.md",
+    "sha256": "cdceaa4979e19527266654e64b95fabade5505db5723bb98b6d36139ac63489d"
+  },
+  "pubchem_metadata": [
+    {
+      "AID": 1223,
+      "CIDCountActive": 17,
+      "CIDCountAll": 63,
+      "CIDCountInactive": 46,
+      "CIDCountInconclusive": 0,
+      "CIDCountProbe": 0,
+      "CIDCountUnspecified": 0,
+      "LastDataChange": {
+        "Day": 10,
+        "Month": 3,
+        "Year": 2008
+      },
+      "Revision": 1,
+      "SIDCountActive": 17,
+      "SIDCountAll": 63,
+      "SIDCountInactive": 46,
+      "SIDCountInconclusive": 0,
+      "SIDCountProbe": 0,
+      "SIDCountUnspecified": 0,
+      "SourceID": "ER_ALPHA_BINDING_DOSE_RESPONSE",
+      "SourceName": "NMMLSC",
+      "Version": 1
+    },
+    {
+      "AID": 625258,
+      "CIDCountActive": 20,
+      "CIDCountAll": 835,
+      "CIDCountInactive": 0,
+      "CIDCountInconclusive": 0,
+      "CIDCountProbe": 0,
+      "CIDCountUnspecified": 818,
+      "LastDataChange": {
+        "Day": 15,
+        "Month": 6,
+        "Year": 2026
+      },
+      "Revision": 1,
+      "SIDCountActive": 20,
+      "SIDCountAll": 871,
+      "SIDCountInactive": 0,
+      "SIDCountInconclusive": 0,
+      "SIDCountProbe": 0,
+      "SIDCountUnspecified": 854,
+      "SourceID": "CHEMBL1909145",
+      "SourceName": "ChEMBL",
+      "Version": 12
+    },
+    {
+      "AID": 2051711,
+      "CIDCountActive": 0,
+      "CIDCountAll": 1,
+      "CIDCountInactive": 0,
+      "CIDCountInconclusive": 0,
+      "CIDCountProbe": 0,
+      "CIDCountUnspecified": 1,
+      "LastDataChange": {
+        "Day": 2,
+        "Month": 1,
+        "Year": 2025
+      },
+      "Revision": 1,
+      "SIDCountActive": 0,
+      "SIDCountAll": 1,
+      "SIDCountInactive": 0,
+      "SIDCountInconclusive": 0,
+      "SIDCountProbe": 0,
+      "SIDCountUnspecified": 1,
+      "SourceID": "CHEMBL5474416",
+      "SourceName": "ChEMBL",
+      "Version": 1
+    }
+  ],
+  "raw_metadata_portable": false,
+  "raw_metadata_retained_at": "/tmp/phmt66-binding-metadata-20261024",
+  "readiness": "not_ready",
+  "recorded_at": "2026-10-25T00:57:10.855175+00:00",
+  "remaining_gates": [
+    "experimental endpoint and activity-schema qualification",
+    "provider-owned identity/scaffold and source-ID correspondence",
+    "source rights and exact cohort declaration",
+    "molecular coordinate/state readiness before scoring"
+  ],
+  "schema": "pharmacophoremt.esr1_binding_metadata_review_summary@1",
+  "source_inventory": {
+    "byte_count": 3751,
+    "path": "tests/data/esr1_binding_evaluation/source_inventory.json",
+    "sha256": "6bc35c75aa5e904ad893b37760c1a66aa8d631ec823e850b4024ace81ea79cd9"
+  },
+  "stage": "metadata_review_only"
+}

@@ -17,6 +17,50 @@ spec.loader.exec_module(driver)
 
 
 class TestEsr1BindingReadiness(unittest.TestCase):
+    def test_clean_metadata_receipt_preserves_nonready_gates_and_measured_counts(self):
+        summary, run = driver.reader.read_archived_evidence(
+            ROOT
+            / "devguide/evidence/esr1_binding_metadata_review_20261024_summary.json"
+        )
+        self.assertEqual(
+            run["producer"]["git_head"], "507ca37d8f21815bb29c0a34f8ccf3b020edbacf"
+        )
+        self.assertEqual(run["producer"]["git_status"], "")
+        self.assertEqual(run["historical_exclusions"], driver.historical_exclusions())
+        inventory = json.loads(driver.INVENTORY.read_text())
+        self.assertEqual(len(inventory["responses"]), 9)
+        self.assertEqual(
+            run["source_inventory"]["sha256"],
+            driver.identity(driver.INVENTORY)["sha256"],
+        )
+        self.assertEqual(run["readiness"], "not_ready")
+        self.assertIsNone(run["evaluation_cohort"])
+        self.assertFalse(run["new_individual_activities_acquired"])
+        self.assertFalse(run["new_molecular_inputs_acquired"])
+        self.assertFalse(run["new_scores_computed"])
+        self.assertFalse(run["raw_metadata_portable"])
+        self.assertEqual(run["chembl"]["discovery_records"], 1485)
+        self.assertEqual(run["chembl"]["discovery_pages"], 2)
+        self.assertTrue(run["chembl"]["complete_pagination"])
+        self.assertEqual(run["chembl"]["status"]["chembl_db_version"], "ChEMBL_37")
+        self.assertEqual(
+            [r["assay_chembl_id"] for r in run["chembl"]["nominees"]],
+            ["CHEMBL3382763", "CHEMBL3705057"],
+        )
+        by_aid = {r["AID"]: r for r in run["pubchem_metadata"]}
+        self.assertEqual(
+            (by_aid[1223]["CIDCountActive"], by_aid[1223]["CIDCountInactive"]), (17, 46)
+        )
+        self.assertEqual(by_aid[625258]["CIDCountInactive"], 0)
+        self.assertGreater(
+            by_aid[625258]["CIDCountActive"] + by_aid[625258]["CIDCountUnspecified"],
+            by_aid[625258]["CIDCountAll"],
+        )
+        self.assertEqual(
+            by_aid[2051711]["CIDCountAll"], by_aid[2051711]["CIDCountUnspecified"]
+        )
+        self.assertEqual(summary["producer"], run["producer"])
+
     def test_exclusions_cover_entire_read_source_and_failed_requested_inputs(self):
         observed = driver.historical_exclusions()
         manifest = json.loads(
