@@ -21,14 +21,21 @@ with larger, documented binding populations and measured weak comparators.
 Retain the fixed-query/threshold protocol, earlier 8,099 CID and 149 unresolved-
 row ledger, and all 25 newly exposed ChEMBL IDs. MolSysMT still owns later
 identity/alias/scaffold and molecular preparation. #66 remains partial for a
-suitable cohort. Clean-producer source-result receipt and local gates are pending.
+suitable cohort. Clean producer `c744df9a6d050486bfeb96a55d4233ecfab5f649` has
+a [measured terminal result](evidence/esr1_binding_source_qualification_20261024_summary.json),
+raw SHA-256 `bca7028c5e8c661ecec151f514d9a2ba46d7a3a465bb0b33b38c3467ff7298f8`.
+All original rows and the 25 source identifiers are retained; prior metadata
+records and all #62/#64/#65 outputs remain unchanged. Final local qualification
+passes 57 tests / 49 subtests, plus reporting/index/Ruff/whitespace checks.
+Producer CI 40149799918, policy 40149800151 and Conda governance 40149800161
+are queued at observation; final-head receiving remains #9. The older #65 CI
+is still running, so no new complete source matrix is claimed here.
 Raw article/patent/document sources remain in the owned
 `/tmp/phmt66-source-qualification-20261024-ormfxb58/`; activity pages/GET receipt
 are portable in the case directory. No environment is created/removed and the
 public release stays 0.4.0.
-Local source-stage qualification passes 56 administrative tests / 49 subtests,
-including strict Sphinx and new censor/quality/replicate/primary-table controls,
-plus reporting/index/Ruff/whitespace gates. No public runtime module changes.
+The final gates include strict Sphinx and censor/quality/replicate/primary-table
+controls. No public runtime module changes.
 
 ## Fresh binding evaluation protocol and source triage — 2026-10-24
 

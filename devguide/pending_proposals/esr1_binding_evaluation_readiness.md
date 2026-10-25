@@ -57,6 +57,31 @@ Prefer larger binding populations with measured weak comparators. Preserve this
 terminal result, the original protocol and fixed queries. #66 remains partial
 for a suitable fresh cohort; waiting for MolSysMT alone cannot fix these counts.
 
+## Clean source-stage result and closeout — 2026-10-24
+
+Committed producer `c744df9a6d050486bfeb96a55d4233ecfab5f649` executes the saved
+activity qualification with empty Git status. The
+[measured summary](../evidence/esr1_binding_source_qualification_20261024_summary.json)
+qualifies the full compressed original-row/classification/exposure ledger,
+raw SHA-256 `bca7028c5e8c661ecec151f514d9a2ba46d7a3a465bb0b33b38c3467ff7298f8`.
+It is `stopped`, terminal, without a cohort or molecular/scoring work. Original
+GET receipt and every row are byte-qualified; the 25 ChEMBL identifiers remain
+visible without claiming chemical novelty or merging unknown aliases.
+
+The final complete administrative run passes **57 tests / 49 subtests** in
+canonical Python 3.14.7, including strict Sphinx, source/primary-column controls
+and the new clean-receipt archive guard. Three reporting tests, generated
+indexes, whole-tree Ruff and whitespace checks pass. Producer CI 40149799918,
+policy 40149800151 and Conda governance 40149800161 are queued at observation;
+exact final-head receiving remains #9. No new scientific runtime, installed
+package, complete new hosted matrix or public release is claimed.
+
+The author PDF, patent HTML and other source responses remain in the named owned
+root for audit; rights and source-specific terms remain in its portable inventory
+and the retained activity-data notice. No shared environment is changed or
+removed. #66 stays partial until a suitable fresh population is identified under
+a new pre-data source declaration.
+
 ## What and why
 
 The #62/#64 observations are exposed development evidence. #65 now supplies

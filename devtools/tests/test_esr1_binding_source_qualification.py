@@ -32,6 +32,35 @@ def observation(value, relation="=", **patch):
 
 
 class TestBindingSourceQualification(unittest.TestCase):
+    def test_clean_source_receipt_retains_terminal_stop_and_every_original_row(self):
+        summary, run = driver.readiness.reader.read_archived_evidence(
+            ROOT
+            / "devguide/evidence/esr1_binding_source_qualification_20261024_summary.json"
+        )
+        self.assertEqual(
+            run["producer"]["git_head"], "c744df9a6d050486bfeb96a55d4233ecfab5f649"
+        )
+        self.assertEqual(run["producer"]["git_status"], "")
+        self.assertEqual(
+            run["protocol_source"], "acfbe85b812eb6bd32f9682ac2fd86824ebeaff9"
+        )
+        current = driver.execute()
+        self.assertEqual(run["assessments"], current["assessments"])
+        self.assertEqual(run["acquisition"], current["acquisition"])
+        self.assertEqual(
+            run["new_exposed_source_identifiers"],
+            current["new_exposed_source_identifiers"],
+        )
+        self.assertEqual(run["readiness"], "stopped")
+        self.assertTrue(run["terminal_stop"])
+        self.assertIsNone(run["evaluation_cohort"])
+        self.assertEqual(summary["producer"], run["producer"])
+        for assay, assessment in run["assessments"].items():
+            original = json.loads(
+                (driver.DATA / f"{assay}.activities.page0.json").read_text()
+            )["activities"]
+            self.assertEqual([r["source"] for r in assessment["ledger"]], original)
+
     def test_exact_and_censored_bounds_do_not_invent_weak_labels(self):
         for value, relation, expected in (
             ("1000", "=", 1),

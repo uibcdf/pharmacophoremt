@@ -16,6 +16,12 @@ MolSysMT remains responsible for aliases/identity/scaffold and preparation;
 #66 remains partial for an eligible fresh cohort. #9 retains exact-head CI
 receiving. No addon, new package or release work is added.
 
+The clean c744df9 source/label
+[receipt](evidence/esr1_binding_source_qualification_20261024_summary.json)
+retains the terminal stop and every original source record. Final local gates
+pass 57 tests / 49 subtests; hosted/installed receiving is separate. This
+result must stay visible when selecting a new source population.
+
 ## Fresh binding challenge in design/source qualification — 2026-10-24
 
 [#66](pending_proposals/esr1_binding_evaluation_readiness.md) now owns the next

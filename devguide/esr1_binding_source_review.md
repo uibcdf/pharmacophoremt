@@ -94,6 +94,21 @@ Run from the qualified checkout with an unused output path:
 python -m phmt_test_support.esr1_binding_source_qualification --output /tmp/esr1-new-source-qualification.json
 ```
 
+Clean producer `c744df9a6d050486bfeb96a55d4233ecfab5f649` generated the
+[measured result summary](evidence/esr1_binding_source_qualification_20261024_summary.json)
+and its checksum-qualified compressed full row/label/exposure ledger. Raw result
+SHA-256 is `bca7028c5e8c661ecec151f514d9a2ba46d7a3a465bb0b33b38c3467ff7298f8`.
+Its Git status is empty, source protocol remains `acfbe85`, and all original
+activity rows/GET identities survive unchanged. The result reports
+`stopped` / `terminal_stop=true`, with no cohort, molecular inputs or scores.
+
+The final canonical Python 3.14.7 administrative run passes 57 tests / 49
+subtests, including strict Sphinx, analytical censor/quality/conflict controls,
+independent primary-column values, complete source populations and the clean
+archive guard. Reporting/index/Ruff/whitespace checks pass. No public runtime
+module, installed package or new hosted-matrix qualification is inferred.
+CI receiving remains separate under #9.
+
 Next design a **new dated source pool** before inspecting additional activity
 records. Prefer a larger well-defined human binding source with measured weak
 comparators, or a separately declared homogeneous multi-assay design; do not

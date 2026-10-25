@@ -1,0 +1,125 @@
+{
+  "acquisition": {
+    "byte_count": 1418,
+    "path": "tests/data/esr1_binding_evaluation/source_qualification_20261024/activity_acquisition.json",
+    "sha256": "db2de00ca853129f535b2d6235df4577af89199a48b40be7f211194a25f7bac0"
+  },
+  "assessments": {
+    "CHEMBL3382763": {
+      "endpoints": {
+        "IC50": {
+          "n_identifiers": 15,
+          "n_positive_identifiers": 6,
+          "n_unclassified_identifiers": 7,
+          "n_weak_identifiers": 2,
+          "population_upper_bound_passes": false,
+          "scope": "literal source identifiers before molecular equivalence, old-CID exclusions or scaffold audit"
+        },
+        "Kd": {
+          "n_identifiers": 0,
+          "n_positive_identifiers": 0,
+          "n_unclassified_identifiers": 0,
+          "n_weak_identifiers": 0,
+          "population_upper_bound_passes": false,
+          "scope": "literal source identifiers before molecular equivalence, old-CID exclusions or scaffold audit"
+        },
+        "Ki": {
+          "n_identifiers": 0,
+          "n_positive_identifiers": 0,
+          "n_unclassified_identifiers": 0,
+          "n_weak_identifiers": 0,
+          "population_upper_bound_passes": false,
+          "scope": "literal source identifiers before molecular equivalence, old-CID exclusions or scaffold audit"
+        }
+      },
+      "n_rows": 15
+    },
+    "CHEMBL3705057": {
+      "endpoints": {
+        "IC50": {
+          "n_identifiers": 0,
+          "n_positive_identifiers": 0,
+          "n_unclassified_identifiers": 0,
+          "n_weak_identifiers": 0,
+          "population_upper_bound_passes": false,
+          "scope": "literal source identifiers before molecular equivalence, old-CID exclusions or scaffold audit"
+        },
+        "Kd": {
+          "n_identifiers": 0,
+          "n_positive_identifiers": 0,
+          "n_unclassified_identifiers": 0,
+          "n_weak_identifiers": 0,
+          "population_upper_bound_passes": false,
+          "scope": "literal source identifiers before molecular equivalence, old-CID exclusions or scaffold audit"
+        },
+        "Ki": {
+          "n_identifiers": 10,
+          "n_positive_identifiers": 10,
+          "n_unclassified_identifiers": 0,
+          "n_weak_identifiers": 0,
+          "population_upper_bound_passes": false,
+          "scope": "literal source identifiers before molecular equivalence, old-CID exclusions or scaffold audit"
+        }
+      },
+      "n_rows": 10
+    }
+  },
+  "evaluation_cohort": null,
+  "exposure_scope": "literal ChEMBL identifiers; aliases and molecular equivalence remain provider-owned",
+  "full_evidence": {
+    "compressed_bytes": 2299,
+    "compressed_sha256": "44642f4bc10475f4ffd5f937daaf1b4b6b5b63176361dc59242ead0495be1dd7",
+    "file": "esr1_binding_source_qualification_20261024.json.gz",
+    "uncompressed_bytes": 29515,
+    "uncompressed_sha256": "bca7028c5e8c661ecec151f514d9a2ba46d7a3a465bb0b33b38c3467ff7298f8"
+  },
+  "issue": 66,
+  "new_exposed_source_identifiers": [
+    "CHEMBL135",
+    "CHEMBL3360841",
+    "CHEMBL3360842",
+    "CHEMBL3360843",
+    "CHEMBL3360844",
+    "CHEMBL3360845",
+    "CHEMBL3360846",
+    "CHEMBL3360847",
+    "CHEMBL3360848",
+    "CHEMBL3360849",
+    "CHEMBL3360850",
+    "CHEMBL3360851",
+    "CHEMBL3360852",
+    "CHEMBL3360853",
+    "CHEMBL3545017",
+    "CHEMBL3645263",
+    "CHEMBL3645264",
+    "CHEMBL3645265",
+    "CHEMBL3645266",
+    "CHEMBL3645267",
+    "CHEMBL3645268",
+    "CHEMBL3645269",
+    "CHEMBL3645270",
+    "CHEMBL3645271",
+    "CHEMBL83"
+  ],
+  "new_molecular_inputs_acquired": false,
+  "new_scores_computed": false,
+  "producer": {
+    "driver": {
+      "byte_count": 8922,
+      "sha256": "60d916500c1af0f8f3e7a468dad948e281dc058193204d8992cece6dbbf4ebae"
+    },
+    "executable": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "git_head": "c744df9a6d050486bfeb96a55d4233ecfab5f649",
+    "git_status": "",
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "protocol_source": "acfbe85b812eb6bd32f9682ac2fd86824ebeaff9",
+  "readiness": "stopped",
+  "recorded_at": "2026-10-25T01:13:56.954178+00:00",
+  "rights_and_attribution": "../../tests/data/esr1_binding_evaluation/source_qualification_20261024/NOTICE.md",
+  "schema": "pharmacophoremt.esr1_binding_source_qualification_summary@1",
+  "scope": "source/label feasibility only; no molecular identity or independence inferred; no scoring route",
+  "source_review": "../esr1_binding_source_review.md",
+  "stop_reason": "predeclared_source_pool_exhausted_insufficient_class_counts",
+  "terminal_stop": true
+}
