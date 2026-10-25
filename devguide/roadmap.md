@@ -1,5 +1,21 @@
 # Strategic Roadmap
 
+## First binding source pool exhausted; redeclare sources next — 2026-10-24
+
+The [#66 source qualification](esr1_binding_source_review.md) stops both fixed
+candidates under the unchanged pre-data protocol. Their complete tables have
+15 IC50 identifiers (6 positive / 2 weak / 7 unresolved) and 10 Ki identifiers
+(10 positive / 0 weak), before molecular audits. Neither can meet the minimum
+20 groups per class. No missing value becomes inactive; no molecular preparation
+or scoring is run. This is a source-readiness failure independent of MolSysMT.
+
+Next declare a new dated source pool with adequate measured weak comparators
+before inspecting more activities. Keep both original queries and the first
+terminal result, and include the 25 new ChEMBL IDs in historical exposure checks.
+MolSysMT remains responsible for aliases/identity/scaffold and preparation;
+#66 remains partial for an eligible fresh cohort. #9 retains exact-head CI
+receiving. No addon, new package or release work is added.
+
 ## Fresh binding challenge in design/source qualification — 2026-10-24
 
 [#66](pending_proposals/esr1_binding_evaluation_readiness.md) now owns the next

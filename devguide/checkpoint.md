@@ -1,5 +1,35 @@
 # Development Checkpoint
 
+## First fresh-binding source pool stopped — 2026-10-24
+
+#66's two predeclared sources fail the fixed population floor. The
+[source review](esr1_binding_source_review.md) checks original experimental
+methods/α-column tables and complete official activity pages, acquired only
+after protocol commit `acfbe85b812eb6bd32f9682ac2fd86824ebeaff9`.
+CHEMBL3382763 has 15 IC50 source identifiers: **6 positive / 2 weak / 7 unresolved**.
+CHEMBL3705057 has 10 Ki identifiers: **10 positive / 0 weak**. These precede any
+old-ID exclusion or molecular grouping. Neither can supply 20 groups per class.
+
+The unchanged first pool is terminally stopped. No new query, threshold, source
+replacement, mixed endpoint, molecular preparation or pharmacophore score is
+introduced. All rows, flags, null values and the 25 new ChEMBL identifiers are
+retained. This result is independent of MolSysMT #447; that provider's future
+identity/scaffold tools cannot create missing source classes.
+
+**Next:** design a new dated source pool before inspecting further activities,
+with larger, documented binding populations and measured weak comparators.
+Retain the fixed-query/threshold protocol, earlier 8,099 CID and 149 unresolved-
+row ledger, and all 25 newly exposed ChEMBL IDs. MolSysMT still owns later
+identity/alias/scaffold and molecular preparation. #66 remains partial for a
+suitable cohort. Clean-producer source-result receipt and local gates are pending.
+Raw article/patent/document sources remain in the owned
+`/tmp/phmt66-source-qualification-20261024-ormfxb58/`; activity pages/GET receipt
+are portable in the case directory. No environment is created/removed and the
+public release stays 0.4.0.
+Local source-stage qualification passes 56 administrative tests / 49 subtests,
+including strict Sphinx and new censor/quality/replicate/primary-table controls,
+plus reporting/index/Ruff/whitespace gates. No public runtime module changes.
+
 ## Fresh binding evaluation protocol and source triage — 2026-10-24
 
 [#66](pending_proposals/esr1_binding_evaluation_readiness.md) is the next local

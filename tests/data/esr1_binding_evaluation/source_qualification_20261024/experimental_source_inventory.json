@@ -1,0 +1,58 @@
+{
+  "files": [
+    {
+      "byte_count": 1645,
+      "file": "CHEMBL3352633.document.json",
+      "sha256": "346c037609599842d63f4d99e114caf18b6eb47933a2809649925f96d3844e7a"
+    },
+    {
+      "byte_count": 6776,
+      "file": "CHEMBL3382763.activities.page0.json",
+      "sha256": "b7e5e9f32fa3df407f8087cb9eafed6e2bbbefda80c1060252ba8c9fef0f8e51"
+    },
+    {
+      "byte_count": 483,
+      "file": "CHEMBL3638543.document.json",
+      "sha256": "88a024ab628f2f2e6f578d611ab159da379f2a2646c10e53d8e028f2194ef059"
+    },
+    {
+      "byte_count": 4542,
+      "file": "CHEMBL3705057.activities.page0.json",
+      "sha256": "b7cc8afbd9a449854c89ee283f47425e86168ef03fd20453f6754c63bcf41d6d"
+    },
+    {
+      "byte_count": 1418,
+      "file": "activity_acquisition.json",
+      "sha256": "db2de00ca853129f535b2d6235df4577af89199a48b40be7f211194a25f7bac0"
+    },
+    {
+      "byte_count": 40748,
+      "file": "author_repository.html",
+      "sha256": "b3b5d86e9cf2d814f236fe26c7642b8c20c2459162d5cc84174ce17875c51c31"
+    },
+    {
+      "byte_count": 810,
+      "file": "document_acquisition.json",
+      "sha256": "62f465f893029692f6ea88160cdacd65c909fcc53e6cb8753604468409899fe9"
+    },
+    {
+      "byte_count": 2215992,
+      "file": "jm500670d.author.pdf",
+      "sha256": "62684a3e43e2a0482b44429612089b1d1000ee7b38d140df5fb04ec395431d82"
+    },
+    {
+      "byte_count": 1694384,
+      "file": "patent.html",
+      "sha256": "24314828ec1071cd9fd4aa45588c195b6eeab1a2177c2bad34840ee9e64a1a5c"
+    },
+    {
+      "byte_count": 8749,
+      "file": "pubmed25369367.europepmc.json",
+      "sha256": "e3a57e284d84395b8bf51dad05faead6279243e1c0e72bff7b9d700e37877b1a"
+    }
+  ],
+  "protocol_source": "acfbe85b812eb6bd32f9682ac2fd86824ebeaff9",
+  "retained_at": "/tmp/phmt66-source-qualification-20261024-ormfxb58",
+  "schema": "pharmacophoremt.esr1_binding_experimental_source_review@1",
+  "scope": "Raw article/patent/document bytes retained locally; no whole-paper redistribution. Activities are separately retained as ChEMBL data."
+}

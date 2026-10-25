@@ -1,5 +1,12 @@
 # Fresh ERα ligand-binding evaluation protocol
 
+**Status update — 2026-10-24:** the first two-source pool is now
+[qualified and stopped](esr1_binding_source_review.md) for insufficient class
+counts. Its activity pages were acquired after the original declaration below;
+the declaration retains its pre-acquisition wording and unchanged study rules.
+No molecular inputs or pharmacophore scores were acquired. A new source pool
+needs a separate dated declaration before more activity inspection.
+
 Owner: [PharmacophoreMT #66](https://github.com/uibcdf/pharmacophoremt/issues/66),
 LMMV/dprada, 2026-10-24. This is a pre-score protocol and metadata-readiness
 review. No new activity rows, molecular structures or pharmacophore scores have

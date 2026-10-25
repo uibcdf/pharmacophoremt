@@ -6,13 +6,56 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, screening, mvp]
-guard: devtools/tests/test_esr1_binding_readiness.py::TestEsr1BindingReadiness::test_exclusions_cover_entire_read_source_and_failed_requested_inputs
+guard: devtools/tests/test_esr1_binding_source_qualification.py::TestBindingSourceQualification::test_original_activity_tables_match_primary_receptor_column_oracles
 normative: devguide/esr1_binding_evaluation_plan.md
-blocked_by: [uibcdf/molsysmt#447]
+blocked_by: []
 supersedes: []
 ---
 
 # Fresh ERα binding evaluation readiness
+
+## First declared source pool stopped — 2026-10-24
+
+The [experimental/source review](../esr1_binding_source_review.md) executes the
+unchanged protocol at `acfbe85b812eb6bd32f9682ac2fd86824ebeaff9`. The complete
+original activity tables are now acquired after that declaration and retained
+with acquisition URLs/times/hashes under
+`tests/data/esr1_binding_evaluation/source_qualification_20261024/`.
+The article's experimental pages/table were visually inspected through the
+author manuscript; the patent's Example 6/Table 2 was checked separately from
+transactivation. Independent α-column numeric oracles match both ChEMBL tables.
+
+CHEMBL3382763 has 15 IC50 records/identifiers: 6 positive, 2 weak, 7 unclassified
+under the fixed quality/censor/cutoff rules (4 without a numerical value,
+2 intermediate, 1 flagged duplicate). CHEMBL3705057 has 10 Ki records/identifiers:
+10 positive, no weak comparator. These counts precede molecular grouping and
+old-source exclusions; they do not establish independent molecular groups.
+
+**The declared pool is exhausted and stopped.** Neither can reach 20 groups per
+class even before identity/scaffold checks. No lower threshold, extra source,
+IC50/Ki pooling, inactive imputation, molecular inputs or new scores are used.
+This source failure is independent of MolSysMT #447; it is no longer represented
+as that provider blocking the current source stage. #447 still owns a necessary
+gate for any future otherwise suitable cohort. Keep all 25 newly inspected
+ChEMBL IDs in the exposure ledger without attempting local alias/chemistry rules.
+
+The new case consumer applies only study-specific tabular classification and
+conflict rules, using the existing identity/archive support. Analytical tests
+cover exact/censored bounds, invalid/missing quality, nulls, non-nM inputs,
+contradictory observations and separated endpoints. No public runtime/scientific
+method, generic molecular operation or optional engine is added. Clean-producer
+result retention and final local qualification follow below at closeout.
+
+The initial source-stage complete local administrative run passes 56 tests /
+49 subtests in canonical Python 3.14.7, including strict Sphinx, the existing
+distribution/support-isolation guards and four new analytical/source controls.
+Three reporting tests, indexes, Ruff and whitespace checks pass. No new full
+hosted/installed matrix is inferred; #9 retains exact-head receiving.
+
+**Next:** declare a new dated source pool before opening more activity records.
+Prefer larger binding populations with measured weak comparators. Preserve this
+terminal result, the original protocol and fixed queries. #66 remains partial
+for a suitable fresh cohort; waiting for MolSysMT alone cannot fix these counts.
 
 ## What and why
 

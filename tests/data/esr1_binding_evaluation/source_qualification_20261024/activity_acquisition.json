@@ -1,0 +1,21 @@
+{
+  "protocol_source": "acfbe85b812eb6bd32f9682ac2fd86824ebeaff9",
+  "requests": [
+    {
+      "file": "CHEMBL3382763.activities.page0.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?assay_chembl_id=CHEMBL3382763&limit=1000&order_by=activity_id&only=activity_id%2Cassay_chembl_id%2Cmolecule_chembl_id%2Cstandard_type%2Cstandard_relation%2Cstandard_value%2Cstandard_units%2Cstandard_flag%2Cdata_validity_comment%2Cpotential_duplicate%2Cdocument_chembl_id%2Ctarget_chembl_id%2Cactivity_comment",
+      "started_at": "2026-10-25T01:04:58.019465+00:00",
+      "finished_at": "2026-10-25T01:04:59.360784+00:00",
+      "sha256": "b7e5e9f32fa3df407f8087cb9eafed6e2bbbefda80c1060252ba8c9fef0f8e51",
+      "byte_count": 6776
+    },
+    {
+      "file": "CHEMBL3705057.activities.page0.json",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/activity.json?assay_chembl_id=CHEMBL3705057&limit=1000&order_by=activity_id&only=activity_id%2Cassay_chembl_id%2Cmolecule_chembl_id%2Cstandard_type%2Cstandard_relation%2Cstandard_value%2Cstandard_units%2Cstandard_flag%2Cdata_validity_comment%2Cpotential_duplicate%2Cdocument_chembl_id%2Ctarget_chembl_id%2Cactivity_comment",
+      "started_at": "2026-10-25T01:04:59.361035+00:00",
+      "finished_at": "2026-10-25T01:05:00.255887+00:00",
+      "sha256": "b7cc8afbd9a449854c89ee283f47425e86168ef03fd20453f6754c63bcf41d6d",
+      "byte_count": 4542
+    }
+  ]
+}
