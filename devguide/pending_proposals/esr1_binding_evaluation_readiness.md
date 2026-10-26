@@ -14,6 +14,19 @@ supersedes: []
 
 # Fresh ERα binding evaluation readiness
 
+## Second source-pool declaration — 2026-10-26
+
+The [new declaration](../esr1_binding_pool2.md) fixes 42 metadata-nominated assays
+before additional activity requests. It first screens raw capacity using only
+an activity-ID projection and total count, then reviews up to three largest
+survivors under unchanged class/quality/endpoint rules. All counts must resolve;
+unknown data/projection or failed sources are not zero and receive no replacement.
+The first terminal pool and all exposure records remain intact. No new activities
+have been requested for pool 2 when its declaration is committed.
+
+Exact new-stage code/results and receiving are recorded separately. This remains
+case-specific source selection; molecular responsibilities stay with MolSysMT.
+
 ## First declared source pool stopped — 2026-10-24
 
 The [experimental/source review](../esr1_binding_source_review.md) executes the

@@ -1,0 +1,500 @@
+{
+  "capacity": {
+    "all_nominees_must_resolve": true,
+    "minimum_total_records": 40,
+    "page_limit": 1,
+    "projection": [
+      "activity_id"
+    ],
+    "unexpected_projection": "stop; do not treat unexpected activity values as unseen"
+  },
+  "classification": {
+    "endpoint_order": [
+      "Ki",
+      "Kd",
+      "IC50"
+    ],
+    "exclude_prior_chembl_identifiers": true,
+    "minimum_per_class": 20,
+    "pooling": false,
+    "positive_nM_at_most": 1000,
+    "require_provider_identity_scaffold": true,
+    "reuse": "phmt_test_support/esr1_binding_source_qualification.py:assess_rows",
+    "weak_nM_at_least": 10000
+  },
+  "declared_on": "2026-10-26",
+  "detailed_selection": {
+    "incomplete_or_failed_acquisition": "stop; no replacement",
+    "maximum_assays": 3,
+    "maximum_records_per_assay": 5000,
+    "order": "descending total_count, then numeric ChEMBL assay ID"
+  },
+  "issue": 66,
+  "metadata_sources": [
+    {
+      "byte_count": 361268,
+      "file": "chembl_human_binding_assays.json",
+      "sha256": "08089bedd7898ec762e02573ea75150163a4ac55c42ccc8f710a5a08b726e6ed"
+    },
+    {
+      "byte_count": 190385,
+      "file": "chembl_human_binding_assays_page2.json",
+      "sha256": "2fb2770dc9d68d752a6e05e7a7894054f9b57b3219e5021c32d51b0b8fb6c0ac"
+    }
+  ],
+  "no_molecular_inputs_or_scoring": true,
+  "nomination_rule": {
+    "bao_format": "BAO_0000357",
+    "description_any_binding": [
+      "displacement",
+      "binding affinity",
+      "binding assay"
+    ],
+    "description_any_human": [
+      "human recombinant",
+      "recombinant human",
+      "purified human"
+    ],
+    "description_none": [
+      "coactivator",
+      "recruitment",
+      "mutant",
+      "mutated",
+      "y537",
+      "d538",
+      "relative",
+      " at "
+    ],
+    "excluded_assays": [
+      "CHEMBL3382763",
+      "CHEMBL3705057",
+      "CHEMBL5474416"
+    ],
+    "scope": "bounded text nomination, not validated experimental chemistry; no claim all other assays are unsuitable"
+  },
+  "nominees": [
+    {
+      "assay_chembl_id": "CHEMBL855028",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1137384",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL855873",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1146919",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL868058",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1149514",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL886321",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1139947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL886514",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full length human recombinant ERalpha after 3 hrs by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1139144",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL889118",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1145362",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL897997",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1149686",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL898603",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17beta-estradiol from recombinant human ERalpha",
+      "document_chembl_id": "CHEMBL1149626",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL900763",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluoromone from human recombinant ERalpha by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1137575",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL904964",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1143673",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL909843",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha LBD by SPA",
+      "document_chembl_id": "CHEMBL1137296",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL946607",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1150148",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1004751",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]estradiol from human recombinant ERalpha receptor",
+      "document_chembl_id": "CHEMBL1150129",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1005362",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha receptor by liquid scintillation counter",
+      "document_chembl_id": "CHEMBL1141697",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1034370",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estradiol from human recombinant ERalpha by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1137758",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1074482",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha by liquid scintillation counting",
+      "document_chembl_id": "CHEMBL1159035",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1106119",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluoromone from human recombinant ERalpha assessed as reduction of maximum polarization by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1156190",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1106815",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent estrogen ES2 from human recombinant ERalpha by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1154244",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1120283",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17-beta-estradiol from human recombinant full length ERalpha",
+      "document_chembl_id": "CHEMBL1158617",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1247885",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1240532",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2320011",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ER after 14 to 18 hrs by scintillation counting analysis",
+      "document_chembl_id": "CHEMBL2311335",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2387873",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent ES2 from human recombinant ERalpha after 2 hrs by fluorimetric analysis",
+      "document_chembl_id": "CHEMBL2385050",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3102027",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled ES2 from human recombinant ERalpha receptor after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL3098089",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3292464",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [6,7-3H]17beta-estradiol from human recombinant estrogen receptor-alpha after 18 hrs by liquid scintillation counting analysis",
+      "document_chembl_id": "CHEMBL3286276",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3425270",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled ES2 from human recombinant ERalpha receptor after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL3421623",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3757700",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [6,7-3H]17beta-estradiol from recombinant human ERalpha ligand binding domain incubated for 16 hrs by scintillation counting analysis",
+      "document_chembl_id": "CHEMBL3751809",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3776150",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluormone ES2 from GST-tagged recombinant human ERalpha LBD after 1 hr by Lanthascreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL3774369",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3807011",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of Fluormone ES2 from human recombinant full length untagged-ERalpha by fluorescence polarization competition binding assay",
+      "document_chembl_id": "CHEMBL3804822",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3861280",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent ES2 from recombinant human ERalpha after 2 hrs in absence of light by fluorometric analysis",
+      "document_chembl_id": "CHEMBL3860069",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4031197",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluormone labelled EL Red from human recombinant estrogen receptor alpha after 1 to 5 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4028861",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4147481",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluoromone TM from recombinant human ERalpha after 2 hrs by fluorescence polarization analysis",
+      "document_chembl_id": "CHEMBL4145507",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4186516",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of Fluormone-tagged ES2 from human recombinant ERalpha after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4184175",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4186517",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of Fluormone-tagged ES2 from human recombinant ERalpha up to 1000 nM after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4184175",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4219450",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estradiol (fluoromone) from human recombinant full-length estrogen receptor alpha after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4219027",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4253004",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha assessed as receptor binding after 45 mins by scintillation counting method",
+      "document_chembl_id": "CHEMBL4251582",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4308524",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent ligand from human recombinant GST-tagged ER-alpha ligand binding domain (307 to 554 residues) incubated for 15 mins by TR-FRET based competitive assay",
+      "document_chembl_id": "CHEMBL4304828",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4348610",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to purified human ERalpha LBD assessed as dissociation constant incubated for 2 hrs by fluorescence tracer based competitive fluorometric binding assay",
+      "document_chembl_id": "CHEMBL4346693",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4672972",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent ligand from human recombinant GST-tagged ER-alpha ligand binding domain (307 to 554 residues) incubated for 15 mins by TR-FRET based competitive assay",
+      "document_chembl_id": "CHEMBL4665908",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4685966",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent-labelled E2 from recombinant human GST-tagged ERalpha by LanthaScreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL4680223",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4716149",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of ES2 from recombinant human ER-alpha incubated for 2 hrs by fluorescence based assay",
+      "document_chembl_id": "CHEMBL4715691",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5122019",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha by competitive fluorometric binding assay",
+      "document_chembl_id": "CHEMBL5120785",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5390002",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorochrome-tagged estrogen from human recombinant estrogen receptor-alpha incubated for 2 hr by competitive binding based microplate reader analysis",
+      "document_chembl_id": "CHEMBL5385969",
+      "src_id": 1
+    }
+  ],
+  "previous_terminal_source": "59c98d63999accab0decbc5edfed1287fb4480ba",
+  "schema": "pharmacophoremt.esr1_binding_pool2_declaration@1",
+  "scope": "Freeze before any new activity-resource request; capacity-only counts followed by the top-three bounded table review. All previous rules and exposed identifiers remain retained."
+}
