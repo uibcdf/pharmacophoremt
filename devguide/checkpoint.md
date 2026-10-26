@@ -13,7 +13,14 @@ Acquisition `eef3fa82abcf3e22ca0c1974948fc577a3f1b42c` is clean and preserved,
 including every response and request URL/time/hash in the case directory.
 The offline reader's status-counter/list mismatch is fixed with an original-
 response guard, without repeating requests. Corrected clean-replay evidence
-and final gates follow at closeout. Keep the owned raw root
+is retained for producer `992df4e31131e2435821b73c5cf6901f6913e407` in the
+[pool-2 summary](evidence/esr1_binding_pool2_20261026_summary.json), raw SHA-256
+`f64b56923aa564d742bc4b16d457400c43c3412ead0b9c02284de807811cc9c5`.
+The original acquisition remains eef3fa8, and all source files/old exposure
+records are unchanged. Final local qualification passes 62 tests / 56 subtests,
+including strict Sphinx and original-response/clean-replay guards, plus reporting,
+index, Ruff and whitespace checks. New-head hosted/installed receiving remains
+separate under #9. Keep the owned raw root
 `/tmp/phmt66-pool2-20261026-4qpzxx/` for qualification, review 2026-11-09.
 
 **Next:** broaden metadata nomination under a new dated declaration before
@@ -28,6 +35,8 @@ run 40353440186 attempt 1 fails before tests only in macOS/Python 3.13 because
 ambermd repodata download times out; the other seven scientific jobs pass.
 Native `rerun --failed` was requested without changing routes/pins/workflows;
 the retry remains separately observed under #9, not automatically successful.
+Its macOS/Python 3.13 environment now installs successfully and actual tests
+are running at the later observation; completion is still pending.
 Public 0.4.0 remains unchanged; no new package/release is produced.
 
 ## First fresh-binding source pool stopped — 2026-10-24

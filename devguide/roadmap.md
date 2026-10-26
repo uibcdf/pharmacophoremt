@@ -15,6 +15,12 @@ declared study design. Molecular identity/scaffold and preparation remain in
 MolSysMT. Hosted recovery/receiving remains #9; addon and a new release stay
 deferred.
 
+The [clean corrected replay](evidence/esr1_binding_pool2_20261026_summary.json)
+preserves the original acquisition, all capacity responses and unchanged compound
+exposure inventory. Final local qualification passes 62 tests / 56 subtests;
+exact-head hosted and installed receiving remain separate. Do not discard the
+bounded negative source result when broadening the next nomination rule.
+
 ## First binding source pool exhausted; redeclare sources next — 2026-10-24
 
 The [#66 source qualification](esr1_binding_source_review.md) stops both fixed

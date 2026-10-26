@@ -36,6 +36,12 @@ cannot be called successful from the earlier green run. New pool-2 source and
 closeout commits require their own receiving; installed/public claims stay
 separate. This existing issue remains partial for its broader original scope.
 
+Later native observation of attempt 2: macOS/Python 3.13 job 121791848676 has
+successfully completed Setup conda env and is executing Run tests. This confirms
+the reattempt passed the earlier metadata-download point, not that the run is
+already green. Pool-2 local source controls subsequently pass 62 tests / 56
+subtests; their final pushed head still needs independent hosted receiving.
+
 ## What
 
 Implement uibcdf/molsyssuite#39 in PharmacophoreMT. At d0215fa, main is

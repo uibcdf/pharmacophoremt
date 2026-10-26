@@ -26,6 +26,44 @@ def page(total):
 
 
 class TestBindingPool2(unittest.TestCase):
+    def test_clean_replay_keeps_original_acquisition_and_no_new_compound_exposure(self):
+        summary, run = driver.source.readiness.reader.read_archived_evidence(
+            ROOT / "devguide/evidence/esr1_binding_pool2_20261026_summary.json"
+        )
+        self.assertEqual(
+            run["producer"]["git_head"], "992df4e31131e2435821b73c5cf6901f6913e407"
+        )
+        self.assertEqual(run["producer"]["git_status"], "")
+        directory = ROOT / summary["original_inputs"]
+        original = json.loads((directory / "acquisition.json").read_text())
+        self.assertEqual(
+            original["producer"]["git_head"], "eef3fa82abcf3e22ca0c1974948fc577a3f1b42c"
+        )
+        self.assertEqual(original["producer"]["git_status"], "")
+        self.assertEqual(
+            run["declaration"], driver.source.readiness.identity(driver.DECLARATION)
+        )
+        self.assertEqual(
+            run["acquisition"],
+            driver.source.readiness.identity(directory / "acquisition.json"),
+        )
+        current = driver.summarize(directory)
+        for key in (
+            "capacity_totals",
+            "selected",
+            "invalid_capacity",
+            "assessments",
+            "readiness",
+            "newly_inspected_chembl_identifiers",
+            "previously_exposed_chembl_identifiers",
+        ):
+            self.assertEqual(run[key], current[key])
+        self.assertEqual(len(run["previously_exposed_chembl_identifiers"]), 25)
+        self.assertTrue(run["terminal_stop"])
+        self.assertFalse(run["new_scores_computed"])
+        self.assertFalse(run["new_molecular_inputs_acquired"])
+        self.assertEqual(summary["producer"], run["producer"])
+
     def test_original_capacity_responses_stop_before_values_and_global_status_is_not_a_table(
         self,
     ):

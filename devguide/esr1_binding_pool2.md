@@ -97,6 +97,19 @@ activity-resource phases, with an original-response regression control. No API
 request is repeated or failed population converted into an empty negative study.
 Original acquisition and corrected offline producer identities remain distinct.
 
+Clean corrected producer `992df4e31131e2435821b73c5cf6901f6913e407` now has a
+[portable replay summary](evidence/esr1_binding_pool2_20261026_summary.json)
+and checksum-qualified full result, raw SHA-256
+`f64b56923aa564d742bc4b16d457400c43c3412ead0b9c02284de807811cc9c5`.
+It reuses exactly the saved responses, reports `capacity_pool_stopped` and
+retains the 25 previously exposed compound identifiers with no new ones.
+
+The final local canonical Python 3.14.7 run passes **62 administrative tests /
+56 subtests**, including strict Sphinx, source-projection/capacity/ranking controls,
+the original status-counter regression and clean replay identity. Three reporting
+tests, generated indexes, Ruff and whitespace checks pass. No public runtime
+module, scientific-matrix/installed-package qualification or release is claimed.
+
 Next broaden the **metadata nomination** in a new dated declaration before
 querying more activity resources, or review a separately specified study design.
 Do not infer that all binding sources lack weak comparators from this bounded

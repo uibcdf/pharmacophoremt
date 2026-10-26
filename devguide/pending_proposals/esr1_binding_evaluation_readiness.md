@@ -43,6 +43,18 @@ installed-support isolation. Reporting/index/Ruff/whitespace checks pass. A
 clean corrected-producer replay and permanent receipt follow at closeout;
 original acquisition remains the independently recorded eef3fa8 producer.
 
+Clean corrected replay `992df4e31131e2435821b73c5cf6901f6913e407` now retains the
+[pool-2 receipt](../evidence/esr1_binding_pool2_20261026_summary.json), raw SHA-256
+`f64b56923aa564d742bc4b16d457400c43c3412ead0b9c02284de807811cc9c5`.
+The full result preserves every count, declaration/acquisition identity and the
+unchanged prior compound-exposure inventory. It is terminally
+`capacity_pool_stopped`; no detailed table is selected or deferred by capacity.
+The final local run passes **62 tests / 56 subtests**, including strict Sphinx,
+distribution/support isolation and the clean-replay guard; reporting/index/Ruff/
+whitespace gates pass. No new whole science matrix or installed/public artifact
+is inferred. The corrected local producer and evidence closeout are pushed
+together; exact final-head CI receiving remains in #9.
+
 ## Second source-pool declaration — 2026-10-26
 
 The [new declaration](../esr1_binding_pool2.md) fixes 42 metadata-nominated assays
