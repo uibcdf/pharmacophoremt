@@ -1,5 +1,20 @@
 # Strategic Roadmap
 
+## Broader source nomination needed after capacity-only stop — 2026-10-26
+
+#66's [second declared pool](esr1_binding_pool2.md) screens 42 metadata-nominated
+human binding assays without activity values or compound/structure data.
+All raw counts are below 40 (maximum 26), making twenty groups per class
+impossible. No detailed table or score is acquired; both prior result sets and
+exposure inventories are unchanged. The result is bounded by its metadata
+heuristic and cannot reject the remaining ChEMBL/source universe.
+
+Next expand metadata nomination through another dated pre-data declaration,
+keeping scientific/class and fixed-query rules intact, or review a separately
+declared study design. Molecular identity/scaffold and preparation remain in
+MolSysMT. Hosted recovery/receiving remains #9; addon and a new release stay
+deferred.
+
 ## First binding source pool exhausted; redeclare sources next — 2026-10-24
 
 The [#66 source qualification](esr1_binding_source_review.md) stops both fixed

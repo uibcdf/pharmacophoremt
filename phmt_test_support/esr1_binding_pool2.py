@@ -232,10 +232,11 @@ def summarize(directory):
     for row in journal["requests"]:
         if row["status"] != "completed":
             continue
-        for activity in payloads[row["file"]].get("activities", []):
-            identifier = activity.get("molecule_chembl_id")
-            if isinstance(identifier, str):
-                exposed.add(identifier)
+        if row["phase"] in {"capacity", "details"}:
+            for activity in payloads[row["file"]].get("activities", []):
+                identifier = activity.get("molecule_chembl_id")
+                if isinstance(identifier, str):
+                    exposed.add(identifier)
         if row["phase"] == "capacity":
             try:
                 totals[row["assay"]] = capacity_total(payloads[row["file"]])
@@ -317,7 +318,10 @@ def summarize(directory):
         if journal["phase"] != "completed"
         else "requires_experimental_and_molecular_gates"
         if numerical
+        else "capacity_pool_stopped"
+        if not selected
         else "selected_detail_pool_stopped",
+        "terminal_stop": journal["phase"] == "completed" and not numerical,
         "evaluation_cohort": None,
         "new_molecular_inputs_acquired": False,
         "new_scores_computed": False,

@@ -1,0 +1,157 @@
+{
+  "green_push": {
+    "jobs": [
+      {
+        "conclusion": "success",
+        "id": 121039624253,
+        "name": "Reporting governance",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624398,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624438,
+        "name": "Test on macos-15, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624445,
+        "name": "Test on macos-15, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624447,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624477,
+        "name": "Test on macos-15, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624483,
+        "name": "Test on macos-15, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624489,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121039624618,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "skipped",
+        "id": 121039625016,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "test_steps": []
+      }
+    ],
+    "run_id": 40150094066,
+    "total_count": 10
+  },
+  "later_scheduled_failure": {
+    "attempt": 1,
+    "cause": "libmamba download error 28, low-transfer timeout fetching ambermd/noarch/repodata.json.zst; no science test executed in this cell",
+    "conclusion": "failure",
+    "failed_steps": [
+      "Setup conda env",
+      "Post Setup conda env"
+    ],
+    "job_id": 121679410832,
+    "job_name": "Test on macos-15, Python 3.13",
+    "raw_job_log": {
+      "byte_count": 17951,
+      "path": "/tmp/phmt-ci-40353440186-macos313.log",
+      "sha256": "ef04930511bbf66d8f9399f98d63d9784e683c5eaeaa4d735b33208e70f8fc43"
+    },
+    "run_id": 40353440186
+  },
+  "native_evidence": true,
+  "observed_at": "2026-10-26T19:32:32.577195+00:00",
+  "retry": {
+    "conclusion": null,
+    "event": "schedule",
+    "head_sha": "59c98d63999accab0decbc5edfed1287fb4480ba",
+    "id": 40353440186,
+    "run_attempt": 2,
+    "status": "in_progress",
+    "updated_at": "2026-10-26T19:21:52Z"
+  },
+  "schema": "pharmacophoremt.ci_receiving_observation@1",
+  "scope": "Exact-source hosted receiving and separate later transient installation failure; no installed/public artifact or new-head qualification.",
+  "source": "59c98d63999accab0decbc5edfed1287fb4480ba"
+}

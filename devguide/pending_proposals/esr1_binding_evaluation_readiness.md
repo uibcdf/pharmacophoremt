@@ -6,13 +6,42 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, screening, mvp]
-guard: devtools/tests/test_esr1_binding_source_qualification.py::TestBindingSourceQualification::test_original_activity_tables_match_primary_receptor_column_oracles
-normative: devguide/esr1_binding_evaluation_plan.md
+guard: devtools/tests/test_esr1_binding_pool2.py::TestBindingPool2::test_original_capacity_responses_stop_before_values_and_global_status_is_not_a_table
+normative: devguide/esr1_binding_pool2.md
 blocked_by: []
 supersedes: []
 ---
 
 # Fresh ERα binding evaluation readiness
+
+## Second declared pool stops at raw capacity — 2026-10-26
+
+The [pool-2 declaration and outcome](../esr1_binding_pool2.md) now retain all
+42 ID-only capacity responses plus the ChEMBL_37 status response. Clean
+acquisition `eef3fa82abcf3e22ca0c1974948fc577a3f1b42c` was committed before
+any new activity-resource request. Every total is below 40 (maximum 26), so
+none can provide twenty groups per class. No full activity table or new
+potency/compound data is requested; the old 25 inspected ChEMBL IDs remain the
+compound exposure ledger. Both earlier terminal results are preserved.
+
+The reader's first offline pass failed on the status resource's integer
+`activities` counter. This local case-reader error does not invalidate its
+already completed acquisition; phase-aware iteration and an original-response
+guard now protect that provider schema distinction. The initial declaration/
+acquisition producer is preserved, without pretending the corrected reader
+produced the original requests. Clean corrected-replay evidence follows at
+closeout. No public runtime API, molecular workaround or new engine is added.
+
+The screen covers the 42 nominated metadata records, not all binding sources.
+Next broaden nomination through a new dated pre-data declaration. No class
+minimum, numerical threshold, query or no-pooling contract is relaxed. #66
+remains partial for an eligible fresh cohort, independently of MolSysMT #447.
+
+The corrected-reader/source guard and complete local administrative suite pass
+61 tests / 56 subtests in canonical Python 3.14.7, including strict Sphinx and
+installed-support isolation. Reporting/index/Ruff/whitespace checks pass. A
+clean corrected-producer replay and permanent receipt follow at closeout;
+original acquisition remains the independently recorded eef3fa8 producer.
 
 ## Second source-pool declaration — 2026-10-26
 

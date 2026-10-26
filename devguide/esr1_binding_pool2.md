@@ -69,3 +69,37 @@ or public runtime API is introduced.
 The #66 checkpoint records actual results separately after this declaration is
 committed. Neither an aggregate total nor an unseen score is available when this
 source/ranking/budget rule is fixed.
+
+## Observed capacity outcome — 2026-10-26
+
+The clean acquisition producer is `eef3fa82abcf3e22ca0c1974948fc577a3f1b42c`.
+All **42 capacity responses** completed and satisfy the ID-only projection;
+the additional status response reports ChEMBL_37. Every raw total is below 40;
+the largest is **26**, CHEMBL3776150, followed by 25, CHEMBL886514. No source
+survives the necessary population gate. There is no detailed-table request,
+no new potency/label/compound information, no molecular input and no score.
+
+This is a terminal stop of this declared metadata-nominated pool. It says nothing
+about the suitability of unselected ChEMBL assays or other sources. Twenty
+independent groups in each class cannot be obtained from fewer than forty raw
+records; later grouping/exclusions cannot cure this population deficit.
+
+Original status/capacity responses and acquisition journal are retained under
+`tests/data/esr1_binding_evaluation/pool2_capacity_20261026/`, with source-specific
+notice and every request URL/time/hash. The local acquisition root is
+`/tmp/phmt66-pool2-20261026-4qpzxx/`. Keep it while qualification is being retained;
+owners LMMV/dprada, review 2026-11-09. No environment is created or removed.
+
+The first offline reader failed because ChEMBL status has an integer `activities`
+counter, unlike the activity resource's list. The acquisition itself had already
+completed all 43 metadata requests. The reader now restricts record iteration to
+activity-resource phases, with an original-response regression control. No API
+request is repeated or failed population converted into an empty negative study.
+Original acquisition and corrected offline producer identities remain distinct.
+
+Next broaden the **metadata nomination** in a new dated declaration before
+querying more activity resources, or review a separately specified study design.
+Do not infer that all binding sources lack weak comparators from this bounded
+text filter. Preserve the original class thresholds, no-pooling rule, fixed queries,
+both terminal pools and all prior exposure records. Molecular aliases/identity/
+scaffold and preparation remain MolSysMT responsibilities.

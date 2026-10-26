@@ -1,5 +1,35 @@
 # Development Checkpoint
 
+## Second binding-source pool stopped at capacity — 2026-10-26
+
+The [second predeclared source pool](esr1_binding_pool2.md) nominates 42 assays
+from retained metadata before new activity requests. All 42 ID-only capacity
+responses complete under ChEMBL_37; the largest contains **26 raw records**.
+None can supply the fixed twenty groups per class. No detailed activity values,
+new compound information, molecular preparation or score is acquired. This
+bounded metadata filter is not a conclusion about every binding source.
+
+Acquisition `eef3fa82abcf3e22ca0c1974948fc577a3f1b42c` is clean and preserved,
+including every response and request URL/time/hash in the case directory.
+The offline reader's status-counter/list mismatch is fixed with an original-
+response guard, without repeating requests. Corrected clean-replay evidence
+and final gates follow at closeout. Keep the owned raw root
+`/tmp/phmt66-pool2-20261026-4qpzxx/` for qualification, review 2026-11-09.
+
+**Next:** broaden metadata nomination under a new dated declaration before
+more activity queries. Retain both terminal pools and the original fixed
+queries/thresholds/no-pooling rule; MolSysMT owns identity/scaffold/aliases and
+preparation for a future eligible cohort. #66 stays partial.
+
+CI receiving for 59c98d6 is now verified: original push 40150094066 succeeds
+with governance and all eight actual Linux/macOS Python 3.11–3.14 test steps.
+Policy 40150094121 and Conda governance 40150094315 succeed. A later scheduled
+run 40353440186 attempt 1 fails before tests only in macOS/Python 3.13 because
+ambermd repodata download times out; the other seven scientific jobs pass.
+Native `rerun --failed` was requested without changing routes/pins/workflows;
+the retry remains separately observed under #9, not automatically successful.
+Public 0.4.0 remains unchanged; no new package/release is produced.
+
 ## First fresh-binding source pool stopped — 2026-10-24
 
 #66's two predeclared sources fail the fixed population floor. The

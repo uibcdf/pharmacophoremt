@@ -15,6 +15,27 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Exact-source receiving and later scheduled infrastructure failure — 2026-10-26
+
+59c98d63999accab0decbc5edfed1287fb4480ba original push CI 40150094066 now
+verifies governance and all eight actual Linux/macOS Python 3.11–3.14 test
+steps successful; policy 40150094121 and Conda governance 40150094315 also
+succeed. The [native observation](../evidence/ci_receiving_20261026.json)
+retains job/test-step identity separately from later scheduled failures.
+
+Scheduled run 40353440186 attempt 1 at the same source fails overall: macOS/
+Python 3.13 cannot download ambermd/noarch/repodata.json.zst (libmamba error 28,
+low-transfer timeout), and no tests run in that cell. Cleanup then reports a
+missing micromamba-shell. The other seven science jobs and governance passed.
+The original raw job log remains at `/tmp/phmt-ci-40353440186-macos313.log`,
+with identity in the observation. No scientific failure is reproduced here.
+
+Native `gh run rerun --failed` requests attempt 2 without changing workflow,
+channels, pins or scientific code. It remains in progress at observation and
+cannot be called successful from the earlier green run. New pool-2 source and
+closeout commits require their own receiving; installed/public claims stay
+separate. This existing issue remains partial for its broader original scope.
+
 ## What
 
 Implement uibcdf/molsyssuite#39 in PharmacophoreMT. At d0215fa, main is

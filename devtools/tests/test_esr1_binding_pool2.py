@@ -26,6 +26,39 @@ def page(total):
 
 
 class TestBindingPool2(unittest.TestCase):
+    def test_original_capacity_responses_stop_before_values_and_global_status_is_not_a_table(
+        self,
+    ):
+        directory = ROOT / "tests/data/esr1_binding_evaluation/pool2_capacity_20261026"
+        report = driver.summarize(directory)
+        journal = json.loads((directory / "acquisition.json").read_text())
+        self.assertEqual(len(journal["requests"]), 43)
+        self.assertEqual(journal["producer"]["git_status"], "")
+        self.assertTrue(all(r["status"] == "completed" for r in journal["requests"]))
+        self.assertEqual(len(report["capacity_totals"]), 42)
+        self.assertEqual(max(report["capacity_totals"].values()), 26)
+        self.assertEqual(report["capacity_totals"]["CHEMBL3776150"], 26)
+        self.assertEqual(report["selected"], [])
+        self.assertEqual(report["deferred_capacity_survivors"], [])
+        self.assertEqual(report["assessments"], {})
+        self.assertEqual(report["newly_inspected_chembl_identifiers"], [])
+        self.assertEqual(report["invalid_capacity"], {})
+        self.assertEqual(report["readiness"], "capacity_pool_stopped")
+        self.assertTrue(report["terminal_stop"])
+        self.assertIsNone(report["evaluation_cohort"])
+        self.assertFalse(any(r["phase"] == "details" for r in journal["requests"]))
+        # ChEMBL status has a global integer 'activities' counter. It is valid
+        # status provenance, never an iterable of individual activity records.
+        self.assertIsInstance(
+            json.loads((directory / "status.json").read_text())["activities"], int
+        )
+        for request in journal["requests"]:
+            if request["phase"] == "capacity":
+                payload = json.loads((directory / request["file"]).read_text())
+                self.assertTrue(
+                    all(set(r) == {"activity_id"} for r in payload["activities"])
+                )
+
     def test_capacity_projection_has_no_labels_and_zero_is_observed_not_missing(self):
         for total in (0, 1, 39, 40, 100):
             self.assertEqual(driver.capacity_total(page(total)), total)
