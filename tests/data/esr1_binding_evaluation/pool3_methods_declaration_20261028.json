@@ -1,0 +1,85 @@
+{
+  "candidates": [
+    {
+      "assay_chembl_id": "CHEMBL5730671",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "capacity_total": 69,
+      "confidence_score": 9,
+      "description": "Competitive Binding Assay: Competitive binding assays were performed by incubating rhER alpha (\u03b1) and beta 1 (\u03b21) receptors with 10 nM [3H]estradiol (the radio ligand) in the presence or absence of increasing concentrations, 0.25 to 250,000 nM, of the phenolic test compounds of Tables 1 to 3 (nM is nano molar). Each data point is the average of at least two assays. Stock solutions of the compounds of Tables 1 to 3 were prepared at 10\u00d7E-2 M in 100% ethanol, water or DMSO (dimethyl sulfoxide). Compounds were diluted 10 fold in binding buffer and then 1:4 in the final assay mix. The final concentration of ethanol or DMSO in the assay well was 5%. The highest concentration of the hydrolysis test compound was 2.5\u00d7E-4 M (250,000 nM). The residual monomers of Tables 1 to 3 were tested at seven concentrations over log increments. The lowest concentration was 2.5\u00d7E-10 M (0.25 nM).",
+      "document_chembl_id": "CHEMBL5725373",
+      "src_id": 37
+    },
+    {
+      "assay_chembl_id": "CHEMBL865582",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "capacity_total": 61,
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha",
+      "document_chembl_id": "CHEMBL1139663",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3705466",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "capacity_total": 54,
+      "confidence_score": 9,
+      "description": "Binding Assay: The competition assay was performed in a 96-well plate (polystyrene*) which binds <2.0% of the total input [3H]-17beta-estradiol and each data point was gathered in triplicate. 100 uG/100 uL of the receptor preparation was aliquoted per well. A saturating dose of 2.5 nM [3H]17beta-estradiol+competitor (or buffer) in a 50 uL volume was added in the preliminary competition when 100x and 500x competitor were evaluated, only 0.8 nM [3H]17beta-estradiol was used. The plate was incubated at room temperature for 2.5 h. At the end of this incubation period 150 uL of ice-cold dextran coated charcoal (5% activated charcoal coated with 0.05% 69K dextran) was added to each well and the plate was immediately centrifuged at 99 g for 5 minutes at 4 C. 200 uL of the supernatant solution was then removed for scintillation counting. Samples were counted to 2% or 10 minutes, whichever occurs first.",
+      "document_chembl_id": "CHEMBL3639280",
+      "src_id": 37
+    },
+    {
+      "assay_chembl_id": "CHEMBL5326431",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "capacity_total": 48,
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as inhibition constant",
+      "document_chembl_id": "CHEMBL5325416",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL860989",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "capacity_total": 42,
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estrone from ER alpha",
+      "document_chembl_id": "CHEMBL1146098",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5381568",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "capacity_total": 40,
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by LanthaScreen TR-FRET competitive binding assay",
+      "document_chembl_id": "CHEMBL5380788",
+      "src_id": 1
+    }
+  ],
+  "capacity_report_sha256": "1797393a5b553e0149de4c77c77cf27b1d65e0651ff5782bccc018308ccac1e9",
+  "capacity_source": "c42d91e1687b51953251e2d33e6d5c9cdbde3d3e",
+  "declared_on": "2026-10-28",
+  "experimental_gate": "Original protocol must identify human ERalpha orthosteric ligand competition, receptor construct/species and appropriate absolute Ki/Kd/IC50. Unknown or mixed columns remain unresolved. No pooling.",
+  "issue": 66,
+  "next_stage": "Commit a finite detailed-source acquisition declaration after method review and before activity-resource requests.",
+  "schema": "pharmacophoremt.esr1_binding_pool3_methods_declaration@1",
+  "scope": "Original-method review of the six capacity survivors without explicit metadata warnings, in fixed descending-capacity order. No activity-resource, compound/structure or scoring requests.",
+  "source_review_policy": {
+    "allowed": "Official document/assay metadata, original patents, articles and supplements; retain original response bytes and failures.",
+    "incidental_exposure": "Full source documents may contain compound structures/names or potency tables. Flag retained documents as potentially value-exposed, record actually inspected data sections, never call them unseen or omit adverse observations. Do not calculate new class counts in this stage.",
+    "selection": "Review methods in the declared order, regardless of visible class balance; no query/scoring changes. A later detailed-source declaration must preserve this review and exposure.",
+    "unavailable": "Record unavailable or ambiguous sources; do not replace candidates, infer species or treat retrieval failure as experimental rejection."
+  },
+  "unchanged": "Original fixed queries, thresholds, endpoints, twenty groups/class, no-pooling and complete historical exposure remain. MolSysMT owns later molecular identity/scaffold/preparation."
+}

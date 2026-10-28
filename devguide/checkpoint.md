@@ -1,5 +1,18 @@
 # Development Checkpoint
 
+## Six-source methods review declared — 2026-10-28
+
+The [methods declaration](esr1_binding_pool3_methods.md) fixes the six candidates
+and their capacity-derived order before further original-document reading.
+Next acquire official assay/document metadata and review original methods,
+beginning with CHEMBL5725373 / CHEMBL5730671. No activity-resource, molecular
+input or score is requested in this stage. Full documents may contain potency
+tables/compound identities; retain potential and actually inspected exposure
+instead of calling visible data unseen. Methods, not class balance, determine
+experimental suitability. Another finite declaration is required before
+detailed activities. Earlier census/results and all molecular-provider gates
+remain unchanged.
+
 ## Complete capacity census: fifteen sources need experimental review — 2026-10-28
 
 #66's [third source census](esr1_binding_pool3.md) completes every declared request:
