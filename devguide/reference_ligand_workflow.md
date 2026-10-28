@@ -19,13 +19,17 @@ The explicit definition is `classical_atomic_formal@1`:
 | Family | MolSysMT provider | Query geometry |
 | --- | --- | --- |
 | Hydrophobicity | `get_hydrophobic_sites(method='smarts_hydrophobic_atoms')` | Atomic sphere |
-| H-bond donor | `get_hbond_sites(method='smarts_donor_acceptor')` | Donor-centered sphere and indexed donor-H direction |
+| H-bond donor | `get_hbond_sites(method='smarts_donor_acceptor')`, `get_vectors()` when available | Donor-centered sphere and indexed donor-H direction |
 | H-bond acceptor | Same hydrogen-bond provider | Atomic sphere, no inferred lone-pair direction |
 | Aromatic ring | `get_aromatic_rings()` and `get_least_squares_plane()` | Disk centered on the fitted plane with its normal |
 | Positive/negative charge | `get_charge_centers()` and `get_center()` | Sphere at the uniform centroid of geometry members |
 
-Names refer to `molsysmt.physchem` for chemical tools and `molsysmt.structure`
-for geometry tools. Aromatic membership uses the provider's stored-aromatic-bond
+Hydrogen-bond recognition prefers `molsysmt.interactions.hbonds`; historical
+providers expose it under `molsysmt.physchem`, which also owns the other chemical
+tools listed here. Geometry tools belong to `molsysmt.structure`. The
+[receiving contract](molsysmt_feature_receiving.md) records actual routes, failure
+behavior and the bounded donor-arithmetic exception for older providers.
+Aromatic membership uses the provider's stored-aromatic-bond
 minimum cycle basis, not a universal ring definition. Formal charges are declared
 chemical-state charges, not inferred ionization at a chosen pH. For carboxylates,
 the provider identifies the whole charged group and uses its two oxygens for

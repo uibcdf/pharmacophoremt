@@ -199,13 +199,16 @@ def test_real_workflow_uses_provider_preserves_sources_and_portable_attribution(
         puw.get_value(msm.get(item, coordinates=True), to_unit="nm").copy()
         for item in (source, translated, negative)
     ]
-    calls, provider = [], msm.physchem.get_hbond_sites
+    owner = msm.interactions.hbonds
+    if not hasattr(owner, "get_hbond_sites"):
+        owner = msm.physchem
+    calls, provider = [], owner.get_hbond_sites
 
     def observed(*args, **kwargs):
         calls.append(kwargs["structure_indices"])
         return provider(*args, **kwargs)
 
-    monkeypatch.setattr(msm.physchem, "get_hbond_sites", observed)
+    monkeypatch.setattr(owner, "get_hbond_sites", observed)
     ligands = [
         dict(ligand_id=identity, molecular_system=item)
         for identity, item in zip(

@@ -70,9 +70,12 @@ def diagnose(case):
             **{name: values[index] for name, values in atoms.items()},
         )
 
-    sites = msm.physchem.get_hbond_sites(
-        system, method="smarts_donor_acceptor", structure_indices=[0]
-    )
+    from pharmacophoremt._private.molsysmt import capability
+
+    recognition = capability("interactions.hbonds.get_hbond_sites", required=False)
+    if recognition is None:
+        recognition = capability("physchem.get_hbond_sites")
+    sites = recognition(system, method="smarts_donor_acceptor", structure_indices=[0])
     donors, acceptors = sites["donor_hydrogen_pairs"], sites["acceptor_atom_indices"]
     ligand = np.asarray(case["ligand"], dtype=np.int64)
     receptor = np.asarray(case["receptor"], dtype=np.int64)

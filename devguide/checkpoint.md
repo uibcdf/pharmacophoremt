@@ -1,5 +1,45 @@
 # Development Checkpoint
 
+## Provider feature receiving implemented; historical minimum retained — 2026-10-28
+
+#41 now receives public `interactions.hbonds.get_hbond_sites` and delegates
+nonempty donor-H directions to `structure.get_vectors` when available. Actual
+routes and detached vector provenance are retained. Available-provider failures
+propagate, coincident D/H remains invalid, and acceptors stay position-only under
+unchanged `classical_atomic_formal@1`. No sibling code, dependency minimum or CI
+provider pin changes. See [the contract](molsysmt_feature_receiving.md) and
+[complete receipt](evidence/molsysmt_feature_receiving_20261028_summary.json).
+
+Source MolSysMT **3781031d0c1d08f34b2aa966ad0b82bf3b64a31d** passes all 160
+selected scientific tests across the integration and ERalpha-diagnostic runs,
+with zero skips. Earlier missing-namespace failures and two stale test probes
+remain in the evidence; the corrected checks preserve their scientific assertions.
+All 67 administrative controls pass after refreshing the changed test-support
+file's declared digest. Shared dependency conflicts remain MolSysSuite #82,
+so these are bounded source results, not a clean installed-package qualification.
+
+The original public MolSysMT 0.23.0 payload passes nine compatibility controls in
+a separate process with shared transitive dependencies. An ordinary fresh public
+environment fails before testing because of host disk quota exhaustion. Preserve
+both outcomes without promoting the payload import into normal installation
+evidence. Public 0.23.0 and the existing CI provider pin lack vectors; #41 remains
+**partial/open**, retaining only their existing donor arithmetic with an explicit
+legacy label. Exception owner LMMV/dprada, review **2026-11-11**, removal after
+qualified public-vector delivery and source/installed/public receiving permit
+migration. #375's broader direction contract and #323/#447 remain distinct.
+
+**Next:** verify exact-head hosted receiving (#9), then qualify the provider
+delivery chosen by its owners through clean source/installed/public routes and
+retire the exception when possible. The newer fetched provider main 1f0bef2 is
+preserved, 32 commits ahead of the actual tested sibling; it is not qualified by
+these runs. #66 still needs four original journal binding protocols or a separately
+justified study design; no further detailed activities, molecular inputs or scores
+were acquired here. No human scientific-method approval is outstanding. Addon,
+broader algorithms and a new release remain deferred; public 0.4.0 is unchanged.
+Keep `/tmp/phmt41-receiving-20261028-89triy8l/` for receiving/evidence review,
+owners LMMV/dprada, review 2026-11-11. Failed task-owned environment/cache paths
+were retired with a receipt; no shared environment or cache was changed.
+
 ## Methods review: no accepted source; four original protocols unresolved — 2026-10-28
 
 The [six-source methods review](esr1_binding_pool3_methods.md) and

@@ -12,12 +12,14 @@ from pharmacophoremt._private.smonitor.exceptions import (
 )
 
 
-def capability(path):
+def capability(path, *, required=True):
     provider = msm
     for name in path.split("."):
         provider = getattr(provider, name, None)
         if provider is None:
-            raise ProviderCapabilityError(capability=path)
+            if required:
+                raise ProviderCapabilityError(capability=path)
+            return None
     return provider
 
 

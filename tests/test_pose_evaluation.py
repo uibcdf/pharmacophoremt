@@ -108,7 +108,10 @@ def test_failures_have_no_score_and_duplicate_inputs_keep_their_indices():
 def test_coincident_donor_checks_real_donor_hydrogen_direction():
     # The source isotope preserves an indexed H through the SMILES conversion.
     source = system("[2H]O", [[0.1, 0, 0], [0, 0, 0]])
-    sites = msm.physchem.get_hbond_sites(source, method="smarts_donor_acceptor")
+    owner = msm.interactions.hbonds
+    if not hasattr(owner, "get_hbond_sites"):
+        owner = msm.physchem
+    sites = owner.get_hbond_sites(source, method="smarts_donor_acceptor")
     assert sites["donor_hydrogen_pairs"].tolist() == [[1, 0]]
     model = Pharmacophore()
     model.add_interaction_site(

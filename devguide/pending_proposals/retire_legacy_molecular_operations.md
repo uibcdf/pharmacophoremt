@@ -14,6 +14,24 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Progress — 2026-10-28, provider API receiving
+
+Native feature extraction now prefers public
+`interactions.hbonds.get_hbond_sites` and delegates ordered donor-H Cartesian
+directions to public `structure.get_vectors` when available. Provenance names
+the actual route, and available-provider failures are never replaced locally.
+The [receiving contract](../molsysmt_feature_receiving.md) retains unchanged
+position-only acceptors and `classical_atomic_formal@1`, plus source/payload
+evidence and incomplete clean-install receiving. No sibling implementation,
+dependency minimum or CI provider pin is changed.
+
+#41 remains partial: the qualified historical public provider lacks vectors,
+so its existing arithmetic is retained with an explicit compatibility label.
+Bounded exception owner LMMV/dprada, review **2026-11-11**; remove it after a
+qualified public minimum exposes the matching reusable vector contract and
+source/installed/public receiving allows migration. The old dated entries below
+remain historical observations, including their original review dates.
+
 ## Progress — 2026-10-10, utility and reader retirement (#46)
 
 The five orphaned `utils` modules, their empty initializer and the name-grouped

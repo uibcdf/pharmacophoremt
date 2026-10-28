@@ -1,5 +1,27 @@
 # Strategic Roadmap
 
+## Receive provider delivery and remove bounded legacy geometry — 2026-10-28
+
+#41's [feature API integration](molsysmt_feature_receiving.md) now uses the public
+new H-bond namespace and general Cartesian vectors when available, with explicit
+provenance and visible provider failures. Source-provider integration and the
+ERalpha diagnostic pass 160 selected tests. The historical public payload passes
+its compatibility controls, while an ordinary fresh environment is unqualified
+after host quota exhaustion. No provider floor or CI pin changes.
+
+Next complete #9 exact-head hosted receiving and clean source/installed/public
+qualification of a provider delivery confirmed by its owners. Then remove the
+old donor arithmetic, retained only for the supported provider without vectors.
+#41 stays partial; owner LMMV/dprada reviews that exception by **2026-11-11**.
+Do not adopt ideal acceptor geometry or close #375 from generic donor-vector
+evidence. No molecular algorithm is added locally or implemented in a sibling.
+
+#66's four unresolved original journal protocols remain an independent useful
+next scientific segment; preserve the original-method and exposure gates before
+detailed activity acquisition. Addon, broader algorithms and a new release stay
+deferred. See the [checkpoint](checkpoint.md) for exact execution/environment
+boundaries and retained failures.
+
 ## Original-method qualification remains open; independent receiving available — 2026-10-28
 
 #66's [six-source review](esr1_binding_pool3_methods.md) accepts no source for

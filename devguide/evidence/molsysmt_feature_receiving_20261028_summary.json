@@ -1,0 +1,138 @@
+{
+  "administrative": {
+    "corrected": {
+      "errors": 0,
+      "status": "passed",
+      "tests": 67
+    },
+    "first": {
+      "cause": "changed test-support source digest not refreshed",
+      "errors": 22,
+      "tests": 67
+    },
+    "sdk": "/tmp/phmt-installed-qualification-1wwqno5j/sdk-installed"
+  },
+  "canonical_python": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+  "commands": {
+    "administrative": "PHARMACOPHOREMT_SUITE_ROOT=/tmp/phmt-installed-qualification-1wwqno5j/sdk-installed <canonical-python> -m unittest discover -s devtools/tests",
+    "modern_diagnostic": "<canonical-python> <owned-root>/run_tests.py tests/test_molsysmt_feature_routes.py::test_available_recognition_failure_never_tries_historical_namespace tests/test_eralpha_interaction_diagnostics.py --junitxml=<owned-root>/modern_diagnostic.xml",
+    "modern_integration": "<canonical-python> <owned-root>/run_tests.py tests/test_molsysmt_feature_routes.py tests/test_reference_ligand.py tests/test_pose_evaluation.py tests/test_attribution.py tests/test_conformer_screening.py tests/test_aligned_consensus.py tests/test_rigid_consensus.py tests/test_curation.py --junitxml=<owned-root>/modern_integration_corrected.xml",
+    "public_environment_attempt": "CONDA_PKGS_DIRS=<owned-root>/package-cache mamba create --yes --prefix <owned-root>/public-environment --file devguide/evidence/seeded_ranking_environment_20261024_explicit.txt --json",
+    "public_payload": "<canonical-python> <owned-root>/public_run.py tests/test_reference_ligand.py tests/test_molsysmt_feature_routes.py::test_coincident_donor_hydrogen_keeps_visible_failure tests/test_molsysmt_feature_routes.py::test_historical_namespace_and_geometry_are_bounded_compatibility_only --junitxml=<owned-root>/public_payload.xml"
+  },
+  "corrected_source_skips": 0,
+  "corrected_source_tests": 160,
+  "full_evidence": {
+    "compressed_bytes": 79138,
+    "compressed_sha256": "ba00cbf42187fccf7e76ae0985d70e974547b89ed3fd5666bfb08400f6275f95",
+    "file": "molsysmt_feature_receiving_20261028.json.gz",
+    "uncompressed_bytes": 727471,
+    "uncompressed_sha256": "ca3fab044f4426b4384d68966c85e4f68dd53dcc6a3cba83bdda5bb05da6b825"
+  },
+  "issue": "uibcdf/pharmacophoremt#41",
+  "limitations": [
+    "Shared pip check fails; MolSysSuite #82 owns conflicts.",
+    "Fresh ordinary public environment failed before qualification: disk quota exceeded.",
+    "Unmodified old public payload imported under shared dependencies; not ordinary installation evidence.",
+    "No sibling mutation, provider pin/floor change, ideal acceptor directions, new preparation, source activities or score acquisition.",
+    "#41 remains partial for historical arithmetic; #375 is not closed."
+  ],
+  "owned_root": "/tmp/phmt41-receiving-20261028-89triy8l",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "producer_scope": "Baseline uses initially clean consumer 2e96149. Later runs use evolving uncommitted overlays; their exact start/end source hashes were not all captured. implementation_overlay.json is an explicitly AFTER-exploration snapshot, not retroactive reconstruction. New clean-source receiving must retain a separate identity.",
+  "public_payload_controls": 9,
+  "recorded_at": "2026-10-28T20:02:29.695279+00:00",
+  "results": {
+    "baseline": {
+      "errors": 0,
+      "failures": 2,
+      "nonpassing": [
+        {
+          "id": "tests.test_reference_ligand::test_reference_ligand_to_evaluation_and_retrospective_ranking",
+          "kind": "failure",
+          "message": "pharmacophoremt._private.smonitor.exceptions.ProviderCapabilityError: MolSysMT does not provide the required capability 'physchem.get_hbond_sites'."
+        },
+        {
+          "id": "tests.test_reference_ligand::test_all_six_families_round_trip_without_changing_molecular_coordinates",
+          "kind": "failure",
+          "message": "pharmacophoremt._private.smonitor.exceptions.ProviderCapabilityError: MolSysMT does not provide the required capability 'physchem.get_hbond_sites'."
+        }
+      ],
+      "passed": 5,
+      "skipped": 0,
+      "tests": 7,
+      "time_seconds": 6.638
+    },
+    "modern_diagnostic": {
+      "errors": 0,
+      "failures": 0,
+      "nonpassing": [],
+      "passed": 7,
+      "skipped": 0,
+      "tests": 7,
+      "time_seconds": 84.157
+    },
+    "modern_focused": {
+      "errors": 0,
+      "failures": 0,
+      "nonpassing": [],
+      "passed": 18,
+      "skipped": 0,
+      "tests": 18,
+      "time_seconds": 10.119
+    },
+    "modern_integration": {
+      "errors": 0,
+      "failures": 2,
+      "nonpassing": [
+        {
+          "id": "tests.test_pose_evaluation::test_coincident_donor_checks_real_donor_hydrogen_direction",
+          "kind": "failure",
+          "message": "AttributeError: module 'molsysmt.physchem' has no attribute 'get_hbond_sites'. Did you mean: 'get_water_sites'?"
+        },
+        {
+          "id": "tests.test_aligned_consensus::test_real_workflow_uses_provider_preserves_sources_and_portable_attribution",
+          "kind": "failure",
+          "message": "AttributeError: module 'molsysmt.physchem' has no attribute 'get_hbond_sites'. Did you mean: 'get_water_sites'?"
+        }
+      ],
+      "passed": 151,
+      "skipped": 0,
+      "tests": 153,
+      "time_seconds": 142.614
+    },
+    "modern_integration_corrected": {
+      "errors": 0,
+      "failures": 0,
+      "nonpassing": [],
+      "passed": 153,
+      "skipped": 0,
+      "tests": 153,
+      "time_seconds": 140.795
+    },
+    "public_payload": {
+      "errors": 0,
+      "failures": 0,
+      "nonpassing": [],
+      "passed": 9,
+      "skipped": 0,
+      "tests": 9,
+      "time_seconds": 11.243
+    },
+    "reference_after": {
+      "errors": 0,
+      "failures": 0,
+      "nonpassing": [],
+      "passed": 7,
+      "skipped": 0,
+      "tests": 7,
+      "time_seconds": 6.569
+    }
+  },
+  "review": "2026-11-11",
+  "schema": "pharmacophoremt.molsysmt_feature_receiving_exploration@1",
+  "scope": "Analytical and workflow source-provider receiving; no biological/activity validation or clean installed-package qualification."
+}
