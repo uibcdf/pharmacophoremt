@@ -1,0 +1,30 @@
+{
+  "command": "gh run list --branch main --limit 3 --json databaseId,headSha,name,status,conclusion",
+  "head": "f815d4de2a95cd869a6f90c60f0fb17b946dd996",
+  "next": "PHMT #9 retains scientific implementation-head and separate final-closeout-head receiving.",
+  "recorded_at": "2026-10-28T20:05:17.360539+00:00",
+  "runs": [
+    {
+      "conclusion": "success",
+      "databaseId": 40759846929,
+      "headSha": "f815d4de2a95cd869a6f90c60f0fb17b946dd996",
+      "name": "Conda publication governance",
+      "status": "completed"
+    },
+    {
+      "conclusion": "success",
+      "databaseId": 40759846827,
+      "headSha": "f815d4de2a95cd869a6f90c60f0fb17b946dd996",
+      "name": "MolSysSuite policy",
+      "status": "completed"
+    },
+    {
+      "conclusion": "",
+      "databaseId": 40759846097,
+      "headSha": "f815d4de2a95cd869a6f90c60f0fb17b946dd996",
+      "name": "CI",
+      "status": "queued"
+    }
+  ],
+  "scope": "Native GitHub status-only observation; no job/test-matrix equivalence is inferred."
+}

@@ -1,0 +1,74 @@
+{
+  "consumer_and_provider_worktrees_clean_before_and_after": true,
+  "consumer_head": "f815d4de2a95cd869a6f90c60f0fb17b946dd996",
+  "full_evidence": {
+    "compressed_bytes": 11939,
+    "compressed_sha256": "b628b2b06f6e6b0ab9ff88a5438153ecc291012084ba576292849e0e6ec5df01",
+    "file": "molsysmt_feature_receiving_clean_20261028.json.gz",
+    "uncompressed_bytes": 63264,
+    "uncompressed_sha256": "bd39edf0c42391489fb4552c80ba67ad7d25c2c57cc7b13337de8ba86c635a07"
+  },
+  "issue": "uibcdf/pharmacophoremt#41",
+  "known_incomplete_receiving": [
+    "Clean ordinary public environment failed before tests because of host disk quota.",
+    "Shared dependency closure has pre-existing pip check conflicts, tracked in MolSysSuite #82.",
+    "No clean installed-PHMT distribution qualification is inferred.",
+    "Fetched newer provider main 1f0bef2 is not the actual tested source.",
+    "Hosted final-head receiving remains separate under PHMT #9."
+  ],
+  "modern_capabilities_required_before_execution": [
+    "interactions.hbonds.get_hbond_sites",
+    "structure.get_vectors"
+  ],
+  "modern_only_skips_accepted": false,
+  "previous_exploration": "molsysmt_feature_receiving_20261028_summary.json",
+  "provider_head": "3781031d0c1d08f34b2aa966ad0b82bf3b64a31d",
+  "recorded_at": "2026-10-28T20:05:46.991470+00:00",
+  "remaining_exception": {
+    "issue": "uibcdf/pharmacophoremt#41",
+    "owner": [
+      "LMMV",
+      "dprada"
+    ],
+    "removal": "Qualified public provider vector contract and source/installed/public receiving permit minimum migration.",
+    "review": "2026-11-11",
+    "scope": "Existing donor arithmetic only when public vectors genuinely absent."
+  },
+  "results": {
+    "clean_modern": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt41-receiving-20261028-89triy8l/run_tests.py",
+        "tests/test_molsysmt_feature_routes.py",
+        "tests/test_reference_ligand.py",
+        "tests/test_eralpha_interaction_diagnostics.py",
+        "--junitxml=/tmp/phmt41-receiving-20261028-89triy8l/clean_modern.xml"
+      ],
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 27
+    },
+    "clean_public_payload": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "/tmp/phmt41-receiving-20261028-89triy8l/public_run_clean.py",
+        "tests/test_reference_ligand.py",
+        "tests/test_molsysmt_feature_routes.py::test_coincident_donor_hydrogen_keeps_visible_failure",
+        "tests/test_molsysmt_feature_routes.py::test_historical_namespace_and_geometry_are_bounded_compatibility_only",
+        "tests/test_aligned_consensus.py::test_real_workflow_uses_provider_preserves_sources_and_portable_attribution",
+        "tests/test_pose_evaluation.py::test_coincident_donor_checks_real_donor_hydrogen_direction",
+        "--junitxml=/tmp/phmt41-receiving-20261028-89triy8l/clean_public_payload.xml"
+      ],
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 11
+    }
+  },
+  "schema": "pharmacophoremt.molsysmt_feature_receiving_clean@1",
+  "scope": "Clean source checkout and controlled old public-payload import, shared transitive dependencies; neither route certifies an ordinary clean installed dependency closure.",
+  "source_native_and_test_identities_unchanged": true
+}

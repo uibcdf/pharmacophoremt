@@ -6,7 +6,7 @@ opened: 2026-10-10
 closed:
 verification: measured
 area: [architecture, modeling, screening, integration]
-guard:
+guard: tests/test_molsysmt_feature_routes.py
 normative: devguide/extensible_modeling_contracts.md
 blocked_by: []
 supersedes: []
@@ -24,6 +24,12 @@ The [receiving contract](../molsysmt_feature_receiving.md) retains unchanged
 position-only acceptors and `classical_atomic_formal@1`, plus source/payload
 evidence and incomplete clean-install receiving. No sibling implementation,
 dependency minimum or CI provider pin is changed.
+
+Clean source f815d4d passes 27 modern and 11 original-public-payload controls
+without skips and with stable producer identities; the
+[separate receipt](../evidence/molsysmt_feature_receiving_clean_20261028_summary.json)
+retains its exact source/native/import boundaries. This does not qualify a clean
+installed distribution or close the historical-provider exception below.
 
 #41 remains partial: the qualified historical public provider lacks vectors,
 so its existing arithmetic is retained with an explicit compatibility label.

@@ -77,6 +77,14 @@ artifact hashes, commands and actual import routes. Source tests use the verifie
 published pytest-receptor 1.2.2 wheel solely for reporting; they explicitly import
 the PHMT checkout. A clean installed-PHMT qualification is not inferred.
 
+The separate [clean-source receipt](evidence/molsysmt_feature_receiving_clean_20261028_summary.json)
+identifies consumer `f815d4de2a95cd869a6f90c60f0fb17b946dd996`: 27 modern-provider
+controls and 11 old-public-payload controls pass with zero skips. Both source
+worktrees are clean, and consumer/provider Python, native-extension and test
+identities agree before and after execution. Modern capabilities are required
+before testing. The earlier exploratory archive remains unchanged; these later
+results do not retroactively make its dirty producers clean.
+
 Run `tests/test_molsysmt_feature_routes.py`, `tests/test_reference_ligand.py`,
 `tests/test_pose_evaluation.py`, `tests/test_attribution.py`,
 `tests/test_conformer_screening.py`, `tests/test_aligned_consensus.py`,

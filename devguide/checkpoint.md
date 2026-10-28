@@ -18,8 +18,8 @@ All 67 administrative controls pass after refreshing the changed test-support
 file's declared digest. Shared dependency conflicts remain MolSysSuite #82,
 so these are bounded source results, not a clean installed-package qualification.
 
-The original public MolSysMT 0.23.0 payload passes nine compatibility controls in
-a separate process with shared transitive dependencies. An ordinary fresh public
+The original public MolSysMT 0.23.0 payload initially passes nine compatibility
+controls in a separate process with shared transitive dependencies. An ordinary fresh public
 environment fails before testing because of host disk quota exhaustion. Preserve
 both outcomes without promoting the payload import into normal installation
 evidence. Public 0.23.0 and the existing CI provider pin lack vectors; #41 remains
@@ -39,6 +39,14 @@ broader algorithms and a new release remain deferred; public 0.4.0 is unchanged.
 Keep `/tmp/phmt41-receiving-20261028-89triy8l/` for receiving/evidence review,
 owners LMMV/dprada, review 2026-11-11. Failed task-owned environment/cache paths
 were retired with a receipt; no shared environment or cache was changed.
+
+**Committed-source confirmation:** consumer **f815d4de2a95cd869a6f90c60f0fb17b946dd996**
+passes 27 modern-provider controls and 11 old-public-payload controls, zero skips,
+with clean consumer/provider worktrees and identical Python/native/test identities
+before and after. The [new receipt](evidence/molsysmt_feature_receiving_clean_20261028_summary.json)
+is separate from the preserved exploratory archive. Implementation-head policy
+40759846827 and Conda governance 40759846929 pass; scientific CI 40759846097 is
+queued at observation. This closeout head's receiving remains #9 independently.
 
 ## Methods review: no accepted source; four original protocols unresolved — 2026-10-28
 
