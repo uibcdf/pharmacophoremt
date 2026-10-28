@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Original-method follow-up complete; full articles still needed — 2026-10-28
+
+#66's [Scott supplement follow-up and four-article handoff](esr1_binding_pool3_methods.md#scott-supplement-and-access-follow-up--2026-10-28)
+visually reviews S53/S55 and reads S54/S65 from the unchanged official supplement.
+S53 supplies binding/degradation results and errors, not the complete binding
+protocol. S55's L536S belongs to crystallography and is not transferred to the
+binding receptor. Four original journal binding methods remain unresolved;
+no source is accepted for detailed activity acquisition. Forty table positions
+do not establish forty independent groups or the required class balance.
+
+Newly observed development evidence includes Scott labels 2–41's activity values
+and chemical strings, plus unsolicited search snippets including literal
+BDBM50180465. The [portable exposure projection](../tests/data/esr1_binding_evaluation/pool3_methods_followup_20261028.json)
+and [separate manual-review receipt](evidence/esr1_binding_methods_followup_20261028_summary.json)
+retain that exposure without molecular alias mapping. No direct activity-resource
+request, molecular-system construction, class count, pharmacophore query change
+or score is performed. Original ledgers/results and the fixed study rules remain.
+
+Three search batches/twelve queries and five web-tool open attempts yield no
+original main methods; four opens report 403, one tool-level inaccessibility.
+Search snippets/support descriptions are not retrieved full methods. Earlier
+batches are manual summarized observations; only the final tool response is
+saved in full. Review starts at clean 0fbba04 and remains manual source analysis,
+not a clean automated molecular validation claim. Keep original private source
+root and `/tmp/phmt66-methods-followup-20261028-eg5fjg0r/`, owners LMMV/dprada,
+review 2026-11-11. No environment or provider implementation changes.
+
+**Next:** obtain the four listed original protocols through ordinary authorized
+institutional/author/publisher access; do not repeat the same searches without
+a new access lead. Review experimental suitability before a new finite activity
+declaration. A different study design requires separate justification/declaration;
+keep all existing exposure history. No scientific-method approval is outstanding,
+but original source text is needed to resolve these methods.
+
+**MolSysMT waiting points:** #375 public generic-vector delivery/version and
+later source/installed/public migration, with a separate acceptor-direction
+contract; #447 reusable molecular identity/scaffold overlap for a future eligible
+cohort; #323 environmental fixed-state H refinement. These do not solve original
+article access. #41's implementation and historical exception below remain
+unchanged. Hosted receiving stays #9. Addon and a new release remain deferred;
+public 0.4.0 is unchanged.
+
+Local closeout passes all 67 administrative unittest controls, three reporting
+tests, generated indexes, archive/projection/prior-declaration identities,
+whole-tree Ruff lint/format and whitespace checks. No runtime implementation or
+documentation-site input changes; no fresh molecular matrix, installed-package
+or biological qualification is inferred. Final-head hosted receiving remains #9.
+
 ## Provider feature receiving implemented; historical minimum retained — 2026-10-28
 
 #41 now receives public `interactions.hbonds.get_hbond_sites` and delegates

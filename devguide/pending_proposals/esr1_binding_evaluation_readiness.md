@@ -14,6 +14,25 @@ supersedes: []
 
 # Fresh ERα binding evaluation readiness
 
+## Supplement follow-up and explicit original-text handoff — 2026-10-28
+
+The [new separate manual receipt](../evidence/esr1_binding_methods_followup_20261028_summary.json)
+retains visual Scott S53/S55 review and textual S54/S65 exposure. The binding and
+degradation table has results/errors for labels 2–41, without the full binding
+protocol; crystallography L536S does not establish the binding construct. Four
+original journal protocols remain unresolved, with an exact DOI/assay/missing-text
+handoff in [the maintained methods record](../esr1_binding_pool3_methods.md#original-method-handoff).
+
+Activities and chemical strings for Scott labels 2–41 and incidental search
+information, including BDBM50180465, are now observed development evidence.
+Preserve this exposure alongside every earlier ledger; no aliases, independent
+groups, classes or score are inferred. No direct activity-resource request or
+computational molecular-system construction is performed. Bounded ordinary
+discovery still provides no full methods; stop repeating it without a new lead.
+Source access remains separate from provider #375/#447/#323 and from #9 hosted
+receiving. No source is accepted; #66 remains partial, with the previous review
+and raw identities retained unchanged. No environment or release changes.
+
 ## Original-method review: no accepted detailed source — 2026-10-28
 
 The [six-source review](../esr1_binding_pool3_methods.md) and

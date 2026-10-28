@@ -1,5 +1,22 @@
 # Strategic Roadmap
 
+## Original binding protocols need a new access route — 2026-10-28
+
+#66's [supplement follow-up](esr1_binding_pool3_methods.md#scott-supplement-and-access-follow-up--2026-10-28)
+confirms that Scott S53 supplies results/errors and S55 specifies a crystallography
+variant, without resolving the binding protocol. Four journal methods remain
+unresolved after bounded ordinary discovery. Obtain their original methods
+through authorized access; repeat public discovery only with a new lead. Preserve
+the newly observed S53 activity/S54 chemical-string and search-snippet exposure
+in subsequent declarations. No source is accepted or scored, and no activity
+classes are inferred from the visible table.
+
+An alternative study design needs its own scientific justification/declaration.
+Molecular identity/scaffold (#447), environmental H refinement (#323) and public
+generic-vector delivery (#375/#41) remain provider coordination, independent of
+current source access. Keep CI receiving under #9; addon and a new release remain
+deferred. The [checkpoint](checkpoint.md) contains the exact handoff and evidence.
+
 ## Receive provider delivery and remove bounded legacy geometry — 2026-10-28
 
 #41's [feature API integration](molsysmt_feature_receiving.md) now uses the public

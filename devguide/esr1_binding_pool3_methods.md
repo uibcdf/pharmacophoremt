@@ -1,5 +1,9 @@
 # Pool-3 experimental methods review — declaration of 2026-10-28
 
+**Follow-up:** the [Scott supplement and access review](#scott-supplement-and-access-follow-up--2026-10-28)
+below retains the newly observed activity/chemical-string exposure and an exact
+four-article handoff. No source is accepted for detailed activity acquisition.
+
 Owner #66, LMMV/dprada. The [complete capacity census](esr1_binding_pool3.md)
 retains fifteen survivors. This review fixes the following six-source order
 before further original-source reading, using only existing metadata warnings
@@ -129,3 +133,72 @@ in CI 40738760689. That result does not qualify this later manual review.
 Declaration `70c340c` policy 40750615075 and Conda governance 40750614288 succeed;
 its CI 40750612798 remains in progress at observation. Final-head receiving stays
 in #9. No release/package event occurs and public 0.4.0 remains unchanged.
+
+## Scott supplement and access follow-up — 2026-10-28
+
+The [separate manual-review receipt](evidence/esr1_binding_methods_followup_20261028_summary.json)
+and [portable factual projection](../tests/data/esr1_binding_evaluation/pool3_methods_followup_20261028.json)
+append this review to the original six-source record. Context is clean consumer
+`0fbba041b8629a7376c67c9e08dfbf7842461828`; this is manual document/access
+review, not an automated molecular calculation or biological qualification.
+The original declaration, queries, thresholds, no-pooling and earlier outcomes
+remain unchanged. Source files, review images and the final search-tool response
+stay in the owned private roots; earlier search batches retain summarized
+observations rather than a claim of captured original HTTP payloads.
+
+The official [Scott supplement](https://doi.org/10.1021/acs.jmedchem.2c01964.s001),
+Figshare item 21994969/file 39038188, still matches the published MD5
+`3012afc2c686036a65d7be0de3390c8a`. Visual review confirms that S53 Table S1
+reports binding and degradation pIC50 values with errors/replicates for labels
+2–41. These are distinct endpoints and forty table positions, not forty verified
+independent molecular groups. The table supplies no complete binding protocol.
+S55 explicitly assigns L536S to crystallography; neither that variant nor its
+reference on S65 establishes the binding receptor construct. Original binding
+methods remain unresolved. S54's molecular-string text was also observed.
+
+**Exposure update:** binding/degradation values and chemical strings for Scott
+labels 2–41 are now observed development evidence. An unsolicited search snippet
+also exposes literal **BDBM50180465**, a chemical name and an ERalpha IC50 value;
+no direct BindingDB activity request or molecular/CID alias mapping is performed.
+Further abstract/mirror/structural-metadata snippets are recorded as observations,
+not method evidence. A mirrored full article is not opened or downloaded.
+Preserve the new ledger with all prior CIDs/ChEMBL IDs/unresolved identities in
+future declarations. No source can become unseen merely by using another ID.
+No activity classes, computational molecular systems, new pharmacophore queries or scores are
+constructed. The separate molecular-string CSV remains undownloaded.
+
+Three bounded search batches (twelve queries) and five web-tool open attempts
+still yield no original main-article methods. Four opens report HTTP 403; one
+reports tool-level inaccessibility without an HTTP code. Indexed official ACS
+results expose abstract/supporting-information descriptions, not full methods.
+The advertised Güngör supplement describes analytical/spectral data; its contents
+are not reviewed or asserted to lack biology. No authentication/access bypass
+is attempted. Stop repeating these discovery routes without a new access lead.
+
+### Original-method handoff
+
+| Source, in retained declaration order | Binding assay | Required original text |
+| --- | --- | --- |
+| [Sun 2006](https://doi.org/10.1016/j.bmcl.2005.12.057) | CHEMBL865582 | Original ERalpha binding protocol and any explicitly referenced method |
+| [Xin 2023](https://doi.org/10.1016/j.ejmech.2023.115328) | CHEMBL5326431 | Original ERalpha binding protocol and construct; crystallography alone is insufficient |
+| [Güngör 2006](https://doi.org/10.1021/jm0509389) | CHEMBL860989 | Original ERalpha displacement protocol, independently of ERbeta selectivity claims |
+| [Scott 2023](https://doi.org/10.1021/acs.jmedchem.2c01964) | CHEMBL5381568 | Main binding methods; S53 results and S55 crystallography do not substitute |
+
+For each, establish actual species/isoform/construct or variant, preparation and
+assay format, tracer/concentrations, buffer/incubation/concentration series,
+absolute endpoint/calculation and assay-to-document correspondence. Ordinary
+authorized institutional/author/publisher access is the next useful route. Keep
+sources unresolved if those texts cannot be obtained. An alternative study design
+needs its own justification/declaration; do not relax rules or acquire individual
+activities to choose by visible class balance. Existing #447 identity/scaffold
+and molecular-preparation gates apply only after an eligible source is found.
+
+Keep `/tmp/phmt66-methods-followup-20261028-eg5fjg0r/` and the original source
+root, owners LMMV/dprada, review 2026-11-11. No environment, provider implementation
+or release is changed. #66 remains partial; original-text access is the immediate
+limit, independent of MolSysMT #375/#447/#323.
+
+Closeout passes 67 administrative controls, three reporting tests, generated
+indexes, archive/projection/prior-declaration hash checks, whole-tree Ruff and
+whitespace checks. These verify retained evidence and repository contracts;
+they do not qualify the missing experimental methods or execute molecular science.

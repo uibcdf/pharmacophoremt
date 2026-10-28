@@ -1,0 +1,448 @@
+{
+  "accepted_sources": [],
+  "activity_class_counts_computed": false,
+  "direct_activity_resource_requests": 0,
+  "evaluation_cohort": null,
+  "issue": "uibcdf/pharmacophoremt#66",
+  "molecular_systems_loaded_or_constructed": false,
+  "molsysmt_coordination": [
+    {
+      "issue": "uibcdf/molsysmt#375",
+      "pending": "Supported public generic-vector delivery/version and separate explicit acceptor-direction scientific contract. Donor vector source integration already received under PHMT #41.",
+      "state_observed": "open"
+    },
+    {
+      "issue": "uibcdf/molsysmt#447",
+      "pending": "Reusable molecular identity and scaffold-overlap annotations for a future qualified cohort, not current document access.",
+      "state_observed": "open"
+    },
+    {
+      "issue": "uibcdf/molsysmt#323",
+      "pending": "Fixed-state environmental hydrogen refinement, not current binding-method review.",
+      "state_observed": "open"
+    }
+  ],
+  "new_pharmacophore_scores_computed": false,
+  "new_review_exposure": {
+    "document_activity_values_observed": true,
+    "incidental_external_identifiers": [
+      {
+        "alias_or_cid_mapping": null,
+        "literal_id": "BDBM50180465",
+        "namespace": "BindingDB",
+        "source_kind": "unsolicited search-engine snippet; no direct activity-resource request",
+        "source_url": "https://bindingdb.org/rwd/bind/searchby_smiles.jsp?SearchType=4&smilesStr=CC1Oc2c%28C%29c%28O%29ccc2-c2c%28C%29cc%28O%29c%28C%29c12&submit=Search",
+        "visible_activity": "IC50 237 nM, ERalpha",
+        "visible_name": "4,6,7,10-tetramethyl-6H-benzo[c]chromene-3,8-diol"
+      }
+    ],
+    "independence_status": "Source documents and search snippets are exposed development evidence; no later cohort may call these observations unseen without a fresh declared audit. Existing historical ledgers remain in force.",
+    "literal_cids_seen_again": [
+      "10399473"
+    ],
+    "new_literal_external_ids_are_not_proof_of_new_molecules": true,
+    "other_relevant_search_exposure": [
+      {
+        "compound_labels_seen": [
+          29,
+          48,
+          50,
+          51,
+          52,
+          53,
+          55,
+          56,
+          57,
+          58
+        ],
+        "kind": "unverified mirror snippet, not opened or downloaded and not used for method qualification",
+        "source": "https://www.lookchem.com/FreePDFArticle_76244-77-4_6544827.htm"
+      },
+      {
+        "beta_binding_and_transcription_values_visible": true,
+        "compound_labels_seen": [
+          "1aa",
+          "1ba"
+        ],
+        "kind": "official abstract/search result, method not received",
+        "source": "https://pubs.acs.org/doi/abs/10.1021/jm0509389"
+      },
+      {
+        "binding_construct_inferred": false,
+        "compound_label_seen": "30o",
+        "coordinates_requested": false,
+        "crystallography_receptor_label": "ERalpha Y537S",
+        "kind": "wwPDB metadata search snippet only",
+        "source": "https://doi.org/10.2210/pdb7Y8F/pdb"
+      },
+      {
+        "kind": "unrequested secondary search snippet; no method qualification",
+        "scott_compound_38_binding_degradation_and_other_values_visible": true,
+        "source": "https://dalriadatx.com/articles/small-molecule-highlights-07-february-2023/"
+      }
+    ],
+    "other_search_results": "Unrelated synthesis, kinase and administrative records appeared in broad discovery; not nominated, opened or used as an evaluation source. Search-result exposure is distinct from provider-owned molecular alias interpretation.",
+    "scott_binding_and_degradation_labels_seen": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ],
+    "scott_molecular_string_labels_seen": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41
+    ]
+  },
+  "next": "Obtain original full binding methods through ordinary authorized publisher/institution/author access for the four listed articles. Review original protocols before another declared detailed-activity acquisition. If unavailable, retain unresolved status and choose a separately justified study design rather than repeat the same discovery or weaken scientific gates.",
+  "original_declaration": {
+    "bytes": 5750,
+    "path": "tests/data/esr1_binding_evaluation/pool3_methods_declaration_20261028.json",
+    "sha256": "36eb1dc907df2f56fde84facc80cee442d191931c2929394bb0e13c0d21ca7b6"
+  },
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "previous_queries_thresholds_no_pooling_and_results_unchanged": true,
+  "prior_review": {
+    "bytes": 4502,
+    "path": "devguide/evidence/esr1_binding_pool3_methods_20261028_summary.json",
+    "sha256": "835244a01f3ba1694176fa01e5d32a78aa5bdb0d18251cbe3856c097466b886e"
+  },
+  "private_root": "/tmp/phmt66-methods-followup-20261028-eg5fjg0r",
+  "producer": {
+    "context_git_head": "0fbba041b8629a7376c67c9e08dfbf7842461828",
+    "context_git_status_before_public_projection": "",
+    "scope": "Manual review begins in this source context; factual annotation, source hashes and separate web observation coverage are retained, not a clean automated scientific-run claim."
+  },
+  "recorded_at": "2026-10-28T20:32:52.822653+00:00",
+  "review": "2026-11-11",
+  "review_kind": "manual_original_document_and_search_review; not a molecular execution or biological validation",
+  "schema": "pharmacophoremt.esr1_binding_methods_followup@1",
+  "scott_supplement": {
+    "binding_assay_tracer_from_reviewed_supplement": null,
+    "binding_protocol_qualified": false,
+    "chemical_string_page_text_observed": 54,
+    "crystallography": {
+      "applies_to": "crystallography",
+      "binding_construct": null,
+      "compound_labels": [
+        29,
+        38
+      ],
+      "page": 55,
+      "receptor_label": "ERalpha L536S",
+      "reference": 7,
+      "reference_page": 65,
+      "transferred_to_binding_identity": false
+    },
+    "doi": "10.1021/acs.jmedchem.2c01964.s001",
+    "file_id": 39038188,
+    "item_id": 21994969,
+    "license_from_retained_official_metadata": {
+      "name": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "value": 10
+    },
+    "md5": "3012afc2c686036a65d7be0de3390c8a",
+    "molecular_equivalence_or_independent_groups_inferred": false,
+    "reference_page_text_reviewed": 65,
+    "source": {
+      "bytes": 2264092,
+      "path": "/tmp/phmt66-methods-20261028-f1n4twnm/jm2c01964_si_001.pdf",
+      "sha256": "8e352acfc957c3a9c69b9a5b4b012f86efee4df78e8ecd5754b2dd47854e08ff"
+    },
+    "table_s1": {
+      "additional_columns": [
+        "SD",
+        "SEM",
+        "n"
+      ],
+      "binding_and_degradation_are_distinct": true,
+      "binding_endpoint_label": "pIC50",
+      "compound_labels": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "contains_complete_binding_protocol": false,
+      "degradation_endpoint_label": "pIC50",
+      "page": 53,
+      "positions": 40
+    },
+    "table_s2": {
+      "compound_labels_seen": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41
+      ],
+      "molecular_string_text_observed": true,
+      "page": 54,
+      "parsed_into_molecular_systems": false,
+      "separate_csv_downloaded": false,
+      "source_heading": "Molecular Formula Strings"
+    },
+    "url": "https://ndownloader.figshare.com/files/39038188",
+    "visually_reviewed_pages": [
+      53,
+      55
+    ]
+  },
+  "unresolved_original_methods": [
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL865582",
+      "author_year": "Sun 2006",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1016/j.bmcl.2005.12.057",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5326431",
+      "author_year": "Xin 2023",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1016/j.ejmech.2023.115328",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL860989",
+      "author_year": "G\u00fcng\u00f6r 2006",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1021/jm0509389",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5381568",
+      "author_year": "Scott 2023",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1021/acs.jmedchem.2c01964",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    }
+  ],
+  "web_observations": {
+    "coverage": "Manual annotations of tool-visible search/open responses, not original HTTP payload capture. Only final search batch has a separately saved complete tool response; earlier batches remain summarized observations. No authentication/access bypass or mirrored full article used.",
+    "new_full_main_article_received": false,
+    "official_gungor_supporting_information_description": "Analytical and spectral data; advertisement only, not a review of the supplement contents.",
+    "opens": [
+      {
+        "tool_reported_http_status": 403,
+        "url": "https://pubs.acs.org/doi/10.1021/acs.jmedchem.2c01964"
+      },
+      {
+        "tool_reported_http_status": 403,
+        "url": "https://pubs.acs.org/doi/10.1021/jm0509389"
+      },
+      {
+        "tool_reported_http_status": 403,
+        "url": "https://www.sciencedirect.com/science/article/pii/S0223523423002945"
+      },
+      {
+        "tool_reported_error": "URL not accessible via this tool; no HTTP code inferred",
+        "url": "https://doi.org/10.1016/j.bmcl.2005.12.057"
+      },
+      {
+        "tool_reported_http_status": 403,
+        "url": "https://pubs.acs.org/doi/abs/10.1021/jm0509389"
+      }
+    ],
+    "query_batches": [
+      [
+        "\"10.1016/j.bmcl.2005.12.057\" full text repository",
+        "\"10.1016/j.ejmech.2023.115328\" manuscript",
+        "\"10.1021/jm0509389\" full text",
+        "\"10.1021/acs.jmedchem.2c01964\" binding assay"
+      ],
+      [
+        "\"jm0509389\" \"supporting\" site:acs.figshare.com",
+        "\"6H-Benzo\" \"1468\" \"binding\" Sun Cama",
+        "\"115328\" \"supplementary\" estrogen Xin",
+        "\"2c01964\" \"LanthaScreen\""
+      ],
+      [
+        "\"jm0509389\" supporting information [ACS/ACS Figshare domains]",
+        "\"115328\" \"estrogen\" \"Supplementary\" [publisher domains]",
+        "\"6H-Benzo[c]chromen-6-one derivatives\" manuscript [primary-source domains]",
+        "\"2c01964\" \"binding\" \"assay\" [ACS/ACS Figshare/AstraZeneca domains]"
+      ]
+    ]
+  }
+}

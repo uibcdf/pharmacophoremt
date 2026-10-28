@@ -1,0 +1,127 @@
+{
+  "accepted_sources": [],
+  "activity_class_counts_computed": false,
+  "direct_activity_resource_requests": 0,
+  "evaluation_cohort": null,
+  "full_evidence": {
+    "compressed_bytes": 4881,
+    "compressed_sha256": "049b7c28867e4b6f416a99c354370d074099205834e62988dc526a0950d47c62",
+    "file": "esr1_binding_methods_followup_20261028.json.gz",
+    "uncompressed_bytes": 16681,
+    "uncompressed_sha256": "0bf423b13fda0d7fe23ede18fac7b8acf3894f1b4bc521595c69ea3db6f2896b"
+  },
+  "issue": "uibcdf/pharmacophoremt#66",
+  "molecular_systems_loaded_or_constructed": false,
+  "molsysmt_coordination": [
+    {
+      "issue": "uibcdf/molsysmt#375",
+      "pending": "Supported public generic-vector delivery/version and separate explicit acceptor-direction scientific contract. Donor vector source integration already received under PHMT #41.",
+      "state_observed": "open"
+    },
+    {
+      "issue": "uibcdf/molsysmt#447",
+      "pending": "Reusable molecular identity and scaffold-overlap annotations for a future qualified cohort, not current document access.",
+      "state_observed": "open"
+    },
+    {
+      "issue": "uibcdf/molsysmt#323",
+      "pending": "Fixed-state environmental hydrogen refinement, not current binding-method review.",
+      "state_observed": "open"
+    }
+  ],
+  "new_pharmacophore_scores_computed": false,
+  "next": "Obtain original full binding methods through ordinary authorized publisher/institution/author access for the four listed articles. Review original protocols before another declared detailed-activity acquisition. If unavailable, retain unresolved status and choose a separately justified study design rather than repeat the same discovery or weaken scientific gates.",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "private_root": "/tmp/phmt66-methods-followup-20261028-eg5fjg0r",
+  "producer": {
+    "context_git_head": "0fbba041b8629a7376c67c9e08dfbf7842461828",
+    "context_git_status_before_public_projection": "",
+    "scope": "Manual review begins in this source context; factual annotation, source hashes and separate web observation coverage are retained, not a clean automated scientific-run claim."
+  },
+  "public_projection": {
+    "bytes": 13796,
+    "path": "tests/data/esr1_binding_evaluation/pool3_methods_followup_20261028.json",
+    "sha256": "485b54920e897212e2d546fc2df7b1a0be6857bbbaef3d3a46de44040a97a99c"
+  },
+  "recorded_at": "2026-10-28T20:32:52.822653+00:00",
+  "review": "2026-11-11",
+  "review_kind": "manual_original_document_and_search_review; not a molecular execution or biological validation",
+  "schema": "pharmacophoremt.esr1_binding_methods_followup@1",
+  "source_review_scope": {
+    "binding_protocol_qualified": false,
+    "chemical_strings_and_activity_values_observed": true,
+    "crystallography_variant_not_transferred_to_binding": "L536S",
+    "scott_pages": [
+      53,
+      54,
+      55,
+      65
+    ],
+    "table_s1_positions": 40
+  },
+  "unresolved_original_methods": [
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL865582",
+      "author_year": "Sun 2006",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1016/j.bmcl.2005.12.057",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5326431",
+      "author_year": "Xin 2023",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1016/j.ejmech.2023.115328",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL860989",
+      "author_year": "G\u00fcng\u00f6r 2006",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1021/jm0509389",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5381568",
+      "author_year": "Scott 2023",
+      "disposition": "unresolved_original_methods",
+      "doi": "10.1021/acs.jmedchem.2c01964",
+      "needed": [
+        "human ERalpha species/isoform and actual binding construct or variant",
+        "binding preparation/format; isolated receptor versus cells/lysate",
+        "competition/tracer identity and concentrations",
+        "buffer, incubation and concentration series",
+        "reported absolute endpoint and calculation; distinguish IC50, Ki, Kd and functional degradation",
+        "source rights and traceable assay-to-document correspondence"
+      ]
+    }
+  ]
+}
