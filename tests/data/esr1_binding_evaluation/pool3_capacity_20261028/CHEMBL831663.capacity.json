@@ -1,0 +1,1 @@
+{"activities": [{"activity_id": 1435501}], "page_meta": {"limit": 1, "next": "/chembl/api/data/activity.json?limit=1&offset=1&assay_chembl_id=CHEMBL831663&order_by=activity_id&only=activity_id", "offset": 0, "previous": null, "total_count": 21}}

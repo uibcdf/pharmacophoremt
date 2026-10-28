@@ -28,6 +28,49 @@ def page(total):
 
 
 class TestBindingPool2(unittest.TestCase):
+    def test_pool3_original_census_and_clean_receipt_retain_pending_survivors(self):
+        declaration_path = (
+            ROOT / "tests/data/esr1_binding_evaluation/pool3_declaration_20261028.json"
+        )
+        summary, archived = driver.source.readiness.reader.read_archived_evidence(
+            ROOT / "devguide/evidence/esr1_binding_pool3_20261028_summary.json"
+        )
+        directory = ROOT / summary["original_inputs"]
+        journal = json.loads((directory / "acquisition.json").read_text())
+        current = driver.summarize(directory, declaration_path=declaration_path)
+        self.assertEqual(len(journal["requests"]), 476)
+        self.assertTrue(all(r["status"] == "completed" for r in journal["requests"]))
+        self.assertFalse(any(r["phase"] == "details" for r in journal["requests"]))
+        self.assertEqual(journal["producer"], archived["producer"])
+        self.assertEqual(archived["producer"]["git_status"], "")
+        self.assertEqual(
+            archived["producer"]["git_head"], "751f7f4208186db401c6de373f826abf439ff695"
+        )
+        for key in archived.keys() - {"producer", "recorded_at"}:
+            self.assertEqual(current[key], archived[key], key)
+        self.assertEqual(len(archived["capacity_totals"]), 475)
+        eligible = sorted(
+            (a for a, n in archived["capacity_totals"].items() if n >= 40),
+            key=lambda a: (-archived["capacity_totals"][a], int(a[6:])),
+        )
+        self.assertEqual(len(eligible), 15)
+        self.assertEqual(archived["deferred_capacity_survivors"], eligible)
+        self.assertEqual(archived["capacity_totals"][eligible[0]], 439)
+        self.assertEqual(archived["capacity_totals"][eligible[-1]], 40)
+        self.assertEqual(archived["selected"], [])
+        self.assertEqual(archived["assessments"], {})
+        self.assertEqual(archived["numerical_survivors"], [])
+        self.assertEqual(archived["newly_inspected_chembl_identifiers"], [])
+        self.assertEqual(len(archived["previously_exposed_chembl_identifiers"]), 25)
+        self.assertEqual(
+            archived["readiness"], "capacity_survivors_require_source_review"
+        )
+        self.assertFalse(archived["terminal_stop"])
+        self.assertFalse(archived["new_molecular_inputs_acquired"])
+        self.assertFalse(archived["new_scores_computed"])
+        self.assertIsNone(archived["evaluation_cohort"])
+        self.assertEqual(summary["producer"], archived["producer"])
+
     def test_capacity_only_survivors_are_pending_and_never_fetch_detail_values(self):
         declaration = json.loads(driver.DECLARATION.read_text())
         declaration["nominees"] = [{"assay_chembl_id": "CHEMBL9"}]

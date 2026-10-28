@@ -1,5 +1,23 @@
 # Strategic Roadmap
 
+## Fifteen capacity survivors; original methods review next — 2026-10-28
+
+#66's [complete pool-3 census](esr1_binding_pool3.md) retains all 475 capacity
+responses plus status and an independently reproduced clean-source receipt.
+Fifteen sources have at least 40 raw records; none is yet an experimentally or
+molecularly qualified cohort. The largest two describe coactivator experiments;
+relative and single-concentration metadata are also explicit warnings. No detailed
+values, compound information, structures or scores are acquired.
+
+Next review original methods for the six descriptions without those explicit
+warnings, starting with CHEMBL5725373 / CHEMBL5730671, and retain the other
+survivors/rejection reasons. Commit another finite detailed-source declaration
+before activity tables. Keep original queries/class thresholds/no-pooling and
+all historical exposure/results. Later identity/scaffold/preparation gates remain
+MolSysMT-owned. Source-count review can advance without #323/#375/#447 delivery;
+a chemically independent scoring cohort cannot be claimed from those counts.
+Addon, wider algorithms and a new release remain deferred.
+
 ## Next bounded step: remaining single-protein capacity census — 2026-10-28
 
 #66 now has a [third pre-data declaration](esr1_binding_pool3.md): all 475 remaining

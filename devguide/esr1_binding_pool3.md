@@ -90,3 +90,64 @@ separately executed strict full-Sphinx guard, three reporting tests, generated
 indexes, whole-tree Ruff lint/format and whitespace checks. Acquisition is still
 pending at this declaration checkpoint. Existing historical archives are unchanged;
 no new full scientific matrix or installed-package qualification is claimed.
+
+## Observed complete census — 2026-10-28
+
+Clean producer `751f7f4208186db401c6de373f826abf439ff695` completes all **476
+requests**: status and 475 capacity projections, with no acquisition failure or
+unexpected projection. **15 assays** have at least 40 raw records; the other
+460 fail this necessary condition. No detailed table is acquired. The recorded
+outcome is `capacity_survivors_require_source_review`, with no terminal pool stop
+and no experimental, numerical-class or molecular survivor asserted.
+
+| Assay | Raw records | Existing metadata clue; not experimental qualification |
+| --- | ---: | --- |
+| CHEMBL1614199 | 439 | Coactivator inhibitors; wrong endpoint as described |
+| CHEMBL1614527 | 96 | Coactivator potentiators; wrong endpoint as described |
+| CHEMBL5730671 | 69 | Recombinant α/β radioligand competition; confirm α table/construct |
+| CHEMBL865582 | 61 | Binding affinity; method/species/endpoint unresolved |
+| CHEMBL1023359 | 58 | Displacement at 5 µM; single-concentration wording |
+| CHEMBL1023357 | 57 | Displacement at 0.2 µM; single-concentration wording |
+| CHEMBL1023358 | 57 | Displacement at 1 µM; single-concentration wording |
+| CHEMBL3705466 | 54 | Radioligand competition; receptor/absolute endpoint unresolved |
+| CHEMBL5365324 | 52 | Relative binding affinity |
+| CHEMBL5326428 | 48 | Relative binding; receptor origin unknown |
+| CHEMBL5326431 | 48 | Inhibition constant; receptor origin unknown |
+| CHEMBL830569 | 44 | Relative binding affinity |
+| CHEMBL2339773 | 43 | Displacement relative to estradiol |
+| CHEMBL860989 | 42 | Estrone displacement; source details unresolved |
+| CHEMBL5381568 | 40 | TR-FRET competition; receptor origin unknown |
+
+The largest counts do not establish suitable ligand-binding experiments. The
+coactivator descriptions contradict the declared endpoint; relative and fixed-
+concentration descriptions cannot be assumed to provide absolute Ki/Kd/IC50.
+Six descriptions have no such explicit warning, but absence of a warning is not
+acceptance. Review their original documents, beginning with CHEMBL5725373
+(CHEMBL5730671), before a separately declared detailed-source pool. Keep every
+capacity survivor and rejection reason visible; do not pool records or infer
+unseen class balance, human wild-type constructs or chemical independence.
+
+All original responses and the original acquisition journal are portable in
+`tests/data/esr1_binding_evaluation/pool3_capacity_20261028/`, with source-specific
+notice. An independent clean-source offline invocation reproduces every report
+field except its new timestamp. The [retained result](evidence/esr1_binding_pool3_20261028_summary.json)
+has raw SHA-256 `1797393a5b553e0149de4c77c77cf27b1d65e0651ff5782bccc018308ccac1e9`.
+All 25 prior ChEMBL identifiers and the historical CID/unresolved-row ledger remain
+unchanged; no new compound information, structures, preparation or scores occur.
+
+Keep `/tmp/phmt66-pool3-20261028-o60k3mue/` for qualification/source review,
+owners LMMV/dprada, review 2026-11-11. Its two clean review outputs and original
+inputs are useful evidence; no environment is created/removed and no shared
+cleanup runs. Shared-prefix dependency conflicts are reported in
+[MolSysSuite #82](https://github.com/uibcdf/molsyssuite/issues/82#issuecomment-6476021125);
+that observation does not alter the earlier fixed-cohort qualification.
+Provider identity/scaffold and later preparation remain MolSysMT-owned.
+
+Final local qualification passes **64 administrative unittest controls**, including
+the new original-census/archive regression and historical replays, plus three
+reporting tests, generated indexes, whole-tree Ruff lint/format and whitespace
+checks. The strict full-Sphinx guard passed at the declaration checkpoint; its
+documentation inputs are unchanged. These checks do not imply a completed new
+scientific matrix, installed package or public release. Producer CI 40734597561
+remains in progress at observation; policy 40734598454 and Conda governance
+40734598539 succeed. Track final-head receiving separately under #9.

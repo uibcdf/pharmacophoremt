@@ -1,5 +1,40 @@
 # Development Checkpoint
 
+## Complete capacity census: fifteen sources need experimental review — 2026-10-28
+
+#66's [third source census](esr1_binding_pool3.md) completes every declared request:
+475 ID-only capacity responses plus status, without acquisition failure. Fifteen
+assays contain at least 40 raw records (largest 439); 460 fail that necessary
+condition. No detailed values, compound information, molecular preparation or
+scores are acquired. All fifteen remain pending experimental review; the largest
+two are coactivator experiments as described, and several others have relative
+or single-concentration wording. Capacity is not class balance or cohort readiness.
+
+Clean acquisition and independent offline replay both identify producer
+`751f7f4208186db401c6de373f826abf439ff695`; all fields except replay timestamp agree.
+The [portable receipt](evidence/esr1_binding_pool3_20261028_summary.json) retains
+original bytes and all pending survivors, raw SHA-256
+`1797393a5b553e0149de4c77c77cf27b1d65e0651ff5782bccc018308ccac1e9`.
+Both previous pools, query hashes, thresholds, no-pooling and all exposure history
+remain unchanged. No provider implementation or public release changes.
+
+**Next:** review original experimental documents for the six candidates without
+an explicit metadata warning, starting with CHEMBL5725373 / CHEMBL5730671. Keep
+the complete pending list/rejection evidence. Declare a finite detailed-source
+pool and budget before individual activity requests; qualify class balance and
+then MolSysMT #447 identity/scaffold/preparation gates before freezing a cohort
+or scoring. #41/#375 receiving stays separate. No human approval is outstanding.
+
+Keep the owned raw root `/tmp/phmt66-pool3-20261028-o60k3mue/` (LMMV/dprada,
+review 2026-11-11). Shared environment conflicts are handed to MolSysSuite #82;
+no environment mutation or clean-install claim. Producer CI 40734597561 remains
+in progress at observation; policy 40734598454 and Conda governance 40734598539
+succeed. Final-head receiving remains #9, separate from the earlier green sources.
+Final local gates pass 64 administrative unittest controls, three reporting tests,
+generated indexes, whole-tree Ruff lint/format and whitespace checks. The strict
+full-Sphinx guard passed at declaration with unchanged documentation inputs.
+No new full scientific/installed/public qualification is inferred.
+
 ## Resumed: complete remaining single-protein capacity nomination — 2026-10-28
 
 Main receives the three published governance commits by fast-forward through

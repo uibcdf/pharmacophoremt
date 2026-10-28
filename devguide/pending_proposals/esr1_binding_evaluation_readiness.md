@@ -6,13 +6,38 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, screening, mvp]
-guard: devtools/tests/test_esr1_binding_pool2.py::TestBindingPool2::test_capacity_only_survivors_are_pending_and_never_fetch_detail_values
+guard: devtools/tests/test_esr1_binding_pool2.py::TestBindingPool2::test_pool3_original_census_and_clean_receipt_retain_pending_survivors
 normative: devguide/esr1_binding_pool3.md
 blocked_by: []
 supersedes: []
 ---
 
 # Fresh ERα binding evaluation readiness
+
+## Complete pool-3 census: fifteen capacity survivors — 2026-10-28
+
+All 475 capacity responses plus status complete without failure under clean
+producer `751f7f4208186db401c6de373f826abf439ff695`. The [result](../evidence/esr1_binding_pool3_20261028_summary.json)
+retains 15 assays with at least 40 raw records (maximum 439), pending experimental
+review. The largest two describe coactivator experiments; several others have
+relative/single-concentration warnings. No experimental or class-balance
+acceptance follows from capacity. No detailed activity, compound information,
+structures, preparation or scores are acquired. Independent clean offline replay
+matches every field except its new timestamp; all original inputs are portable.
+
+Next original-method review starts at CHEMBL5725373 / CHEMBL5730671 and retains
+the full pending list and exclusion reasons. A separate dated declaration is
+required before detailed activity tables. Queries, thresholds, no-pooling and
+all historical exposure/results remain unchanged; MolSysMT owns later molecular
+identity/scaffold/preparation. Keep the owned raw root
+`/tmp/phmt66-pool3-20261028-o60k3mue/` through useful qualification (owners
+LMMV/dprada, review 2026-11-11). #66 remains partial, independently of the separate
+provider-API receiving and final-head hosted/installed gates.
+Final local gates pass 64 administrative unittest controls (including the new
+original-census/archive guard), three reporting tests, generated indexes and
+whole-tree Ruff lint/format/whitespace checks. Strict full Sphinx passed at the
+declaration checkpoint with unchanged documentation inputs. No new scientific
+matrix or installed/public package acceptance is claimed.
 
 ## Third source declaration: complete remaining single-protein nomination — 2026-10-28
 
