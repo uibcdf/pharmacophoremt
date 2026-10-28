@@ -1,0 +1,106 @@
+{
+  "accepted_sources": [],
+  "activity_class_counts_computed": false,
+  "activity_resource_requests": 0,
+  "candidate_dispositions": [
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5730671",
+      "capacity_total": 69,
+      "disposition": "stopped_reported_panel_capacity",
+      "document": "CHEMBL5725373"
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL865582",
+      "capacity_total": 61,
+      "disposition": "unresolved_original_methods",
+      "document": "CHEMBL1139663"
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL3705466",
+      "capacity_total": 54,
+      "disposition": "not_qualified_for_primary_question",
+      "document": "CHEMBL3639280"
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5326431",
+      "capacity_total": 48,
+      "disposition": "unresolved_original_methods",
+      "document": "CHEMBL5325416"
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL860989",
+      "capacity_total": 42,
+      "disposition": "unresolved_original_methods",
+      "document": "CHEMBL1146098"
+    },
+    {
+      "accepted_for_detailed_activity_acquisition": false,
+      "assay": "CHEMBL5381568",
+      "capacity_total": 40,
+      "disposition": "unresolved_original_methods",
+      "document": "CHEMBL5380788"
+    }
+  ],
+  "declaration": {
+    "path": "tests/data/esr1_binding_evaluation/pool3_methods_declaration_20261028.json",
+    "sha256": "36eb1dc907df2f56fde84facc80cee442d191931c2929394bb0e13c0d21ca7b6"
+  },
+  "digital_molecular_system_inputs_acquired": false,
+  "evaluation_cohort": null,
+  "full_evidence": {
+    "compressed_bytes": 3862,
+    "compressed_sha256": "c1447a1d857518c7d09f30bcadca9415529d8953b789ada2f3494d9bfbc46181",
+    "file": "esr1_binding_pool3_methods_20261028.json.gz",
+    "uncompressed_bytes": 10774,
+    "uncompressed_sha256": "22bcc8e394bc4f95a312aaa9d03bd6a4eec89988c44a9b22499f7ae094f0cc1e"
+  },
+  "historical_exposure_unchanged": {
+    "original_cids": 8099,
+    "previous_chembl_identifiers": 25,
+    "unresolved_rows": 149
+  },
+  "new_document_activity_information_observed": true,
+  "new_review_exposure_scope": "See full evidence; includes new literal CID 10399473 and document/abstract activity information. Earlier corpus ledgers retain their original scope.",
+  "new_scores_computed": false,
+  "next": "Obtain the original full methods of the four journal sources or declare a separately justified study design. No detailed activity table or cohort is authorized by these unresolved methods. Independent PHMT #41 provider-API receiving can continue without changing this source result.",
+  "original_metadata": "tests/data/esr1_binding_evaluation/pool3_methods_20261028",
+  "producer": {
+    "context_git_head": "70c340cbe5c60c6ec7867e7709c8fc5ddbf3b5f2",
+    "context_git_status": "?? tests/data/esr1_binding_evaluation/pool3_methods_20261028/\n",
+    "kind": "manual_document_review",
+    "scope": "Manual review and factual projections; not an automated molecular/scientific execution or a source-code reconstruction claim."
+  },
+  "publisher_receiving": [
+    {
+      "coredata_present": true,
+      "file": "bmcl200512057.publisher.xml",
+      "full_method_text_observed": false,
+      "http_status": 200,
+      "originalText_present": false,
+      "sections_present": false,
+      "transport_status": "completed"
+    },
+    {
+      "coredata_present": true,
+      "file": "ejmech115328.publisher.xml",
+      "full_method_text_observed": false,
+      "http_status": 200,
+      "originalText_present": false,
+      "sections_present": false,
+      "transport_status": "completed"
+    }
+  ],
+  "readiness": "not_ready_original_methods_or_population",
+  "recorded_at": "2026-10-28T19:14:53.089969+00:00",
+  "schema": "pharmacophoremt.esr1_binding_pool3_methods_summary@1",
+  "source_inventory": {
+    "path": "tests/data/esr1_binding_evaluation/pool3_methods_20261028/source_inventory.json",
+    "sha256": "a86496256cf3e887589f6bfff35e95b89ad76c675ebc0afb5b87f1f351bb1a45"
+  },
+  "web_observation_scope": "The 35 journalled requests are manual HTTP acquisitions. Read-only web search/open operations are separate; later tool responses are not fully captured. Source locators and actual/potential incidental exposure are recorded in the manual review. No complete network-capture or automated full-text-review claim."
+}

@@ -1,5 +1,51 @@
 # Development Checkpoint
 
+## Methods review: no accepted source; four original protocols unresolved — 2026-10-28
+
+The [six-source methods review](esr1_binding_pool3_methods.md) and
+[manual-review receipt](evidence/esr1_binding_pool3_methods_20261028_summary.json)
+retain every candidate. The first patent reports only 23 α-table positions
+(including repeated controls), insufficient for forty independent groups despite
+69 database records. Method 16 in the other patent uses CHO cytosol and leaves
+the binding receptor's species/isoform/construct unresolved; a human-receptor
+sentence in a different method is not transferred to it. The four journal
+candidates still need their original full binding methods. The open Scott
+supplement and two successful metadata-only publisher XML responses do not close
+that gate. No source is accepted for detailed activity acquisition.
+
+**Document/search activity information is now observed.** The new ledger retains
+the seen patent tables/names/CAS and abstract/search snippets, including literal
+CID 10399473 outside the original 8,099 CID ledger. CID 5870 is already historical;
+SID 46517467 is also retained. No chemical aliases are inferred. Future declarations
+and post-tuning independence audits must preserve this exposure. Earlier ledgers
+and queries/rules are unchanged. No activity-resource table, computational
+molecular system, class-count calculation or new pharmacophore score is acquired.
+
+Source acquisition starts in clean declaration context
+`70c340cbe5c60c6ec7867e7709c8fc5ddbf3b5f2`; the manual review retains its later
+untracked-metadata overlay. It is not an automated clean-source scientific run.
+Raw review SHA-256:
+`22bcc8e394bc4f95a312aaa9d03bd6a4eec89988c44a9b22499f7ae094f0cc1e`.
+Twelve ChEMBL responses are portable. The 35 manual HTTP attempts and private
+documents/errors remain identified separately from web observations. Keep
+`/tmp/phmt66-methods-20261028-f1n4twnm/` for qualification/source review, owners
+LMMV/dprada, review 2026-11-11. No environment or sibling is changed.
+
+**Next:** obtain the four original journal protocols or declare a separately
+justified study design; do not download individual activities under unresolved
+source gates. Independent #41 provider-API receiving is available while source
+access is pending. MolSysMT still owns geometry, identity/scaffold and preparation;
+source access and reported panel size are not MolSysMT implementation blockers.
+No human scientific-method approval is outstanding. Hosted receiving remains #9;
+public 0.4.0, addon deferral and the two earlier terminal pools are unchanged.
+Final local gates pass 67 administrative unittest controls, three reporting tests,
+generated indexes, whole-tree Ruff lint/format and whitespace checks. Prior
+capacity closeout c42d91e now passes all eight actual test cells in CI 40738760689;
+the [native observation](evidence/ci_pool3_receiving_20261028.json) keeps that
+identity separate. Methods declaration 70c340c policy 40750615075 and Conda
+governance 40750614288 pass, while CI 40750612798 is in progress at observation.
+New-head and installed/public receiving remain separate.
+
 ## Six-source methods review declared — 2026-10-28
 
 The [methods declaration](esr1_binding_pool3_methods.md) fixes the six candidates

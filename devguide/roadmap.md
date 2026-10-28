@@ -1,5 +1,27 @@
 # Strategic Roadmap
 
+## Original-method qualification remains open; independent receiving available — 2026-10-28
+
+#66's [six-source review](esr1_binding_pool3_methods.md) accepts no source for
+detailed activities. The first patent's 23 reported α positions fail the minimum
+population upper bound, independently of 69 database records. The other patent's
+CHO-cytosol method does not qualify the primary receptor/format. Four journal
+protocols remain unresolved after ordinary publisher/locator/supplement review;
+HTTP success, abstract pharmacology and an open data supplement are insufficient.
+Keep those sources unresolved, without substitutes or relaxed scientific rules.
+
+Document/search potency and compound information has now been observed; preserve
+the explicit new exposure ledger, including CID 10399473, alongside earlier
+history. No activity-resource tables, computational molecular inputs, new class
+counts or scores are acquired. Fixed queries and earlier source results remain.
+
+Next obtain those original protocols or predeclare a separately justified study
+design. The independent #41 review of newer public-provider site recognition and
+general donor geometry can proceed while source access is pending. Do not
+implement molecular operations locally or confuse those access/population limits
+with provider #323/#375/#447. Addon, broader algorithms and a new release remain
+deferred; exact-head source receiving remains #9.
+
 ## Fifteen capacity survivors; original methods review next — 2026-10-28
 
 #66's [complete pool-3 census](esr1_binding_pool3.md) retains all 475 capacity

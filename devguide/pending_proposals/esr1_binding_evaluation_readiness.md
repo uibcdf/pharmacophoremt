@@ -6,13 +6,43 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, screening, mvp]
-guard: devtools/tests/test_esr1_binding_pool2.py::TestBindingPool2::test_pool3_original_census_and_clean_receipt_retain_pending_survivors
-normative: devguide/esr1_binding_pool3.md
+guard: devtools/tests/test_esr1_binding_methods.py
+normative: devguide/esr1_binding_pool3_methods.md
 blocked_by: []
 supersedes: []
 ---
 
 # Fresh ERα binding evaluation readiness
+
+## Original-method review: no accepted detailed source — 2026-10-28
+
+The [six-source review](../esr1_binding_pool3_methods.md) and
+[retained annotation](../evidence/esr1_binding_pool3_methods_20261028_summary.json)
+preserve one reported-panel capacity stop, one unqualified CHO-cytosol method
+and four unresolved original journal protocols. HTTP 403 responses, successful
+metadata-only XML and the available Scott supplement retain their different
+meanings. No source is accepted for individual activity acquisition or scoring.
+The first patent's 23 α positions cannot support forty independent groups;
+no database-record duplication or new class count is asserted.
+
+New document/search activity and compound information is explicitly observed.
+The exposure ledger retains CID 10399473 (outside the earlier CID universe),
+historical CID 5870, SID 46517467, source CAS and potentially exposed document
+corpora. No chemical aliases are interpreted and earlier source ledgers are not
+rewritten. No activity-resource table or computational molecular system is
+requested. Queries, thresholds, no-pooling and molecular-provider gates remain.
+
+Manual review context/overlay and the 35 manual HTTP requests are distinct from
+web observations and automated scientific execution. Twelve ChEMBL responses
+are portable; keep the private source root
+`/tmp/phmt66-methods-20261028-f1n4twnm/`, owners LMMV/dprada, review 2026-11-11.
+Next obtain full original methods for four candidates or declare another study
+design. Independent #41 receiving can advance; no provider implementation would
+fix the current source-access/population limits. #66 remains partial.
+Final local checks pass 67 administrative unittest controls, three reporting tests,
+indexes, whole-tree Ruff lint/format and whitespace checks. The prior c42d91e
+eight-cell source CI succeeds with independently verified Run tests steps;
+methods-review source and installed/public qualification remain distinct.
 
 ## Complete pool-3 census: fifteen capacity survivors — 2026-10-28
 

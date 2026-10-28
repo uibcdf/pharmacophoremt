@@ -1,0 +1,456 @@
+{
+  "declaration": {
+    "bytes": 5750,
+    "sha256": "36eb1dc907df2f56fde84facc80cee442d191931c2929394bb0e13c0d21ca7b6"
+  },
+  "initial_web_tool_capture": {
+    "bytes": 26984,
+    "file": "initial_web_search_response.json",
+    "private": true,
+    "sha256": "45c2a99935a594a017a12e0ca92124d084f48fadc54aa3d93e13680691bab4ee"
+  },
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "private_source_root": "/tmp/phmt66-methods-20261028-f1n4twnm",
+  "producer": {
+    "git_head": "70c340cbe5c60c6ec7867e7709c8fc5ddbf3b5f2",
+    "git_status": ""
+  },
+  "requests": [
+    {
+      "bytes": 506,
+      "file": "CHEMBL5725373.document.json",
+      "finished_at": "2026-10-28T19:02:09.660513+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "12467786cfea213842400b1c1319c130fc52ec03a509c46824023fb181f2525a",
+      "started_at": "2026-10-28T19:02:08.529843+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/document/CHEMBL5725373.json"
+    },
+    {
+      "bytes": 1749,
+      "file": "CHEMBL5730671.assay.json",
+      "finished_at": "2026-10-28T19:02:10.509295+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "77d59030ca29dabb8c44c39713778e8e2fcdbed38dc72e3e6eabcb87b1fd8273",
+      "started_at": "2026-10-28T19:02:09.660845+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL5730671.json"
+    },
+    {
+      "bytes": 1115,
+      "file": "CHEMBL1139663.document.json",
+      "finished_at": "2026-10-28T19:02:11.600163+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "e4eeca7bc8b72151884d2ae9611fc52dcb4f144e85becda60be9168744e54584",
+      "started_at": "2026-10-28T19:02:10.509597+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/document/CHEMBL1139663.json"
+    },
+    {
+      "bytes": 865,
+      "file": "CHEMBL865582.assay.json",
+      "finished_at": "2026-10-28T19:02:12.760563+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "fb68dd8bceb76482a9e4a5fb375da2f4600e4ff1cc3fe6b9e773f99c580d1c89",
+      "started_at": "2026-10-28T19:02:11.600457+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL865582.json"
+    },
+    {
+      "bytes": 501,
+      "file": "CHEMBL3639280.document.json",
+      "finished_at": "2026-10-28T19:02:13.512589+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "afca50e5425f6a77122a7f18f3e16d4c39ca8dbe902d8d32306dfdbf8acda747",
+      "started_at": "2026-10-28T19:02:12.760893+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/document/CHEMBL3639280.json"
+    },
+    {
+      "bytes": 1771,
+      "file": "CHEMBL3705466.assay.json",
+      "finished_at": "2026-10-28T19:02:14.431087+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "e96d745f159f43d99761230cb0f449a17ac8b66b80d0855346d2c6635d03ba4f",
+      "started_at": "2026-10-28T19:02:13.512926+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL3705466.json"
+    },
+    {
+      "bytes": 2172,
+      "file": "CHEMBL5325416.document.json",
+      "finished_at": "2026-10-28T19:02:15.158041+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "7f7080aa70bab83cf3f9cc0b84c1914ea18c31fc6fada10837aab158fd3063f3",
+      "started_at": "2026-10-28T19:02:14.431398+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/document/CHEMBL5325416.json"
+    },
+    {
+      "bytes": 918,
+      "file": "CHEMBL5326431.assay.json",
+      "finished_at": "2026-10-28T19:02:15.935479+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "f1d736b8a5254767ebfc9e5e18bc79c64c3dd95aaf58382ff465f92a06b7f656",
+      "started_at": "2026-10-28T19:02:15.158356+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL5326431.json"
+    },
+    {
+      "bytes": 1910,
+      "file": "CHEMBL1146098.document.json",
+      "finished_at": "2026-10-28T19:02:16.998179+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "bb453cff3000fbdc9f76c0f26f9e9f1718c84f4e2fe90ab9854641faa2a9f238",
+      "started_at": "2026-10-28T19:02:15.935820+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/document/CHEMBL1146098.json"
+    },
+    {
+      "bytes": 879,
+      "file": "CHEMBL860989.assay.json",
+      "finished_at": "2026-10-28T19:02:18.791523+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "0a145a98efc28b138fc06381e9232063c866254873af7fd992a11d67b98ae847",
+      "started_at": "2026-10-28T19:02:16.998505+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL860989.json"
+    },
+    {
+      "bytes": 1962,
+      "file": "CHEMBL5380788.document.json",
+      "finished_at": "2026-10-28T19:02:19.519760+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "8224443806925c5f1a4b79d237ff187e3799a64eb5e965a7ee521b605a33ff91",
+      "started_at": "2026-10-28T19:02:18.791896+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/document/CHEMBL5380788.json"
+    },
+    {
+      "bytes": 936,
+      "file": "CHEMBL5381568.assay.json",
+      "finished_at": "2026-10-28T19:02:20.389266+00:00",
+      "portable": true,
+      "potential_document_data_exposure": false,
+      "sha256": "cbd98db4bd8a6db948d46336ff1de0ddd2cde246251f12afa0d4353f440118c3",
+      "started_at": "2026-10-28T19:02:19.520188+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/chembl/api/data/assay/CHEMBL5381568.json"
+    },
+    {
+      "bytes": 370951,
+      "file": "US9688816B2.html",
+      "finished_at": "2026-10-28T19:03:58.169421+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "original source; potential data exposure; private review, no redistribution claim",
+      "sha256": "4bd6fa30b62177bce2561fb56e16985ed6194b1fb3a186dc298203817699260d",
+      "started_at": "2026-10-28T19:03:57.430241+00:00",
+      "status": "completed",
+      "url": "https://patents.google.com/patent/US9688816B2/en"
+    },
+    {
+      "bytes": 814884,
+      "file": "US8815934B2.html",
+      "finished_at": "2026-10-28T19:03:58.836201+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "original source; potential data exposure; private review, no redistribution claim",
+      "sha256": "575afa18d9198fde5637e8ddb3970f4f09000fb21396327d8cc16d940ecdb12c",
+      "started_at": "2026-10-28T19:03:58.169871+00:00",
+      "status": "completed",
+      "url": "https://patents.google.com/patent/US8815934B2/en"
+    },
+    {
+      "bytes": 1838501,
+      "file": "US9688816.pdf",
+      "finished_at": "2026-10-28T19:03:59.346689+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "original source; potential data exposure; private review, no redistribution claim",
+      "sha256": "825b07a442f7b03e199a0ab9930c2e0d272d672a89881a5ee2e8654edb69e814",
+      "started_at": "2026-10-28T19:03:58.836626+00:00",
+      "status": "completed",
+      "url": "https://patentimages.storage.googleapis.com/4c/1f/56/4db591e08e09cc/US9688816.pdf"
+    },
+    {
+      "bytes": 3692719,
+      "file": "US8815934.pdf",
+      "finished_at": "2026-10-28T19:03:59.852064+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "original source; potential data exposure; private review, no redistribution claim",
+      "sha256": "bc8ffbfa4d8414348656f1e566e7213e9af34c50b1306ab12f3fb88836846c2d",
+      "started_at": "2026-10-28T19:03:59.347121+00:00",
+      "status": "completed",
+      "url": "https://patentimages.storage.googleapis.com/60/fa/6c/a805fcd86dcff8/US8815934.pdf"
+    },
+    {
+      "bytes": 5193,
+      "file": "PMID16412638.epmc.json",
+      "finished_at": "2026-10-28T19:04:57.417650+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "sha256": "36fde5ccb3bd1a91eab5de76f896ab0a62bb4b1ca78978f7dbaef98fa3cee9c8",
+      "started_at": "2026-10-28T19:04:56.615569+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A16412638+AND+SRC%3AMED&resultType=core&format=json"
+    },
+    {
+      "bytes": 12517,
+      "file": "PMID37037140.epmc.json",
+      "finished_at": "2026-10-28T19:04:58.340291+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "sha256": "c9f94abeaec4d20de8847f4d1455c9c4e761038f0456c9ac2140b389bf919248",
+      "started_at": "2026-10-28T19:04:57.418101+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A37037140+AND+SRC%3AMED&resultType=core&format=json"
+    },
+    {
+      "bytes": 6970,
+      "file": "PMID16610787.epmc.json",
+      "finished_at": "2026-10-28T19:04:59.130331+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "sha256": "ed0acc2c46a0ca228b001a12c5c02efd07a7a6059e54f15f277b45d45d0258de",
+      "started_at": "2026-10-28T19:04:58.340743+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A16610787+AND+SRC%3AMED&resultType=core&format=json"
+    },
+    {
+      "bytes": 15904,
+      "file": "PMID36727211.epmc.json",
+      "finished_at": "2026-10-28T19:04:59.930854+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "sha256": "96d85718fefde6c3b572083dc575b40d187528757c9f4731633307ef08d22182",
+      "started_at": "2026-10-28T19:04:59.130764+00:00",
+      "status": "completed",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID%3A36727211+AND+SRC%3AMED&resultType=core&format=json"
+    },
+    {
+      "bytes": 2511,
+      "file": "acs_figshare_search.json",
+      "finished_at": "2026-10-28T19:05:00.771390+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "request_json": {
+        "limit": 10,
+        "search_for": "\"10.1021/acs.jmedchem.2c01964\""
+      },
+      "sha256": "d2493fd5d3a393788730223e7b3698c3e38bb54ea84f76ed19f5e0fa7c2ad016",
+      "started_at": "2026-10-28T19:04:59.931274+00:00",
+      "status": "completed",
+      "url": "https://api.figshare.com/v2/articles/search"
+    },
+    {
+      "bytes": 12162,
+      "file": "figshare21994972.json",
+      "finished_at": "2026-10-28T19:05:38.245541+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "sha256": "181bee9698405ec51ee1dfa056606707cd48a2a107957fed8f702c9914d6d14f",
+      "started_at": "2026-10-28T19:05:37.357419+00:00",
+      "status": "completed",
+      "url": "https://api.figshare.com/v2/articles/21994972"
+    },
+    {
+      "bytes": 12301,
+      "file": "figshare21994969.json",
+      "finished_at": "2026-10-28T19:05:39.117731+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "sha256": "7df28de60a1f7d9e10e3913e8607b9be49ec6b891d4b761d8729ae515eadcda2",
+      "started_at": "2026-10-28T19:05:38.246046+00:00",
+      "status": "completed",
+      "url": "https://api.figshare.com/v2/articles/21994969"
+    },
+    {
+      "bytes": 2264092,
+      "file": "jm2c01964_si_001.pdf",
+      "finished_at": "2026-10-28T19:07:00.938979+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "official original source; potential data exposure; no public raw redistribution claim",
+      "sha256": "8e352acfc957c3a9c69b9a5b4b012f86efee4df78e8ecd5754b2dd47854e08ff",
+      "started_at": "2026-10-28T19:06:56.691935+00:00",
+      "status": "completed",
+      "url": "https://ndownloader.figshare.com/files/39038188"
+    },
+    {
+      "error_type": "HTTPError",
+      "file": "jm0509389.publisher.html",
+      "finished_at": "2026-10-28T19:07:01.164391+00:00",
+      "http_error": {
+        "bytes": 5454,
+        "code": 403,
+        "file": "jm0509389.publisher.html.http-error",
+        "sha256": "7d9689bb104f0801e946e2635bc95fac6911a12462cf0a6e260465b63168c7cd"
+      },
+      "message": "HTTP Error 403: Forbidden",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "official original source; potential data exposure; no public raw redistribution claim",
+      "started_at": "2026-10-28T19:07:00.939480+00:00",
+      "status": "failed",
+      "url": "https://pubs.acs.org/doi/10.1021/jm0509389"
+    },
+    {
+      "error_type": "HTTPError",
+      "file": "jm2c01964.publisher.html",
+      "finished_at": "2026-10-28T19:07:01.362264+00:00",
+      "http_error": {
+        "bytes": 5509,
+        "code": 403,
+        "file": "jm2c01964.publisher.html.http-error",
+        "sha256": "302aaacb9c328dfaed1d325ea6b85983fb013629b529be786a61be05805dc895"
+      },
+      "message": "HTTP Error 403: Forbidden",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "official original source; potential data exposure; no public raw redistribution claim",
+      "started_at": "2026-10-28T19:07:01.165252+00:00",
+      "status": "failed",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jmedchem.2c01964"
+    },
+    {
+      "error_type": "HTTPError",
+      "file": "ejmech115328.publisher.html",
+      "finished_at": "2026-10-28T19:07:01.848680+00:00",
+      "http_error": {
+        "bytes": 832804,
+        "code": 403,
+        "file": "ejmech115328.publisher.html.http-error",
+        "sha256": "fe64b221e672e7db29ea5b39ac797408d0750345316423ac1347c712df3eb92d"
+      },
+      "message": "HTTP Error 403: Forbidden",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "official original source; potential data exposure; no public raw redistribution claim",
+      "started_at": "2026-10-28T19:07:01.362752+00:00",
+      "status": "failed",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0223523423002945"
+    },
+    {
+      "bytes": 6986,
+      "file": "bmcl200512057.crossref.json",
+      "finished_at": "2026-10-28T19:07:02.149548+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "official original source; potential data exposure; no public raw redistribution claim",
+      "sha256": "fd8d098b92999ffe532466519851bb054a50751f1031c507020f42faf3e942ca",
+      "started_at": "2026-10-28T19:07:01.849198+00:00",
+      "status": "completed",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.bmcl.2005.12.057"
+    },
+    {
+      "bytes": 25992,
+      "file": "openalex_j.bmcl.2005.12.057.json",
+      "finished_at": "2026-10-28T19:07:50.755316+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "locator metadata only; not experimental-method evidence",
+      "sha256": "dac5e252b8069e0d3a16872c3cc5f128458d5f45573b8632bd2bb591c9f0d12d",
+      "started_at": "2026-10-28T19:07:50.124689+00:00",
+      "status": "completed",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.bmcl.2005.12.057"
+    },
+    {
+      "bytes": 45352,
+      "file": "openalex_j.ejmech.2023.115328.json",
+      "finished_at": "2026-10-28T19:07:51.217408+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "locator metadata only; not experimental-method evidence",
+      "sha256": "8817a541ad02146513be234a9d0da16da1b94796ec493a88f28f0b1da29af140",
+      "started_at": "2026-10-28T19:07:50.755959+00:00",
+      "status": "completed",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.ejmech.2023.115328"
+    },
+    {
+      "bytes": 34643,
+      "file": "openalex_jm0509389.json",
+      "finished_at": "2026-10-28T19:07:51.610029+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "locator metadata only; not experimental-method evidence",
+      "sha256": "77a7a8e519bea8aaf43a20a15c6627001d049525644b4b8b491986a7d05afd5a",
+      "started_at": "2026-10-28T19:07:51.217954+00:00",
+      "status": "completed",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1021/jm0509389"
+    },
+    {
+      "bytes": 50984,
+      "file": "openalex_acs.jmedchem.2c01964.json",
+      "finished_at": "2026-10-28T19:07:52.036061+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "locator metadata only; not experimental-method evidence",
+      "sha256": "70c72d5500944b27441143047ade82591d758ef276a51c0a1cd9bf0c88560dbd",
+      "started_at": "2026-10-28T19:07:51.610564+00:00",
+      "status": "completed",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1021/acs.jmedchem.2c01964"
+    },
+    {
+      "error_type": "HTTPError",
+      "file": "bmcl200512057.publisher.html",
+      "finished_at": "2026-10-28T19:09:19.095228+00:00",
+      "http_error": {
+        "bytes": 832804,
+        "code": 403,
+        "file": "bmcl200512057.publisher.html.http-error",
+        "sha256": "e1dffba78e05f73c0dac13ddf0858da5fc605dfc8148bcbf034c5d5ffd645673"
+      },
+      "message": "HTTP Error 403: Forbidden",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "ordinary official source route; no credentials or bypass",
+      "started_at": "2026-10-28T19:09:18.275318+00:00",
+      "status": "failed",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0960894X05016112"
+    },
+    {
+      "bytes": 1832,
+      "file": "bmcl200512057.publisher.xml",
+      "finished_at": "2026-10-28T19:09:19.620983+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "ordinary official source route; no credentials or bypass",
+      "sha256": "d90d17f362ca1f4562fe318653f8a18a12cb5a3054d8ce9a9f1cfc693900a657",
+      "started_at": "2026-10-28T19:09:19.096031+00:00",
+      "status": "completed",
+      "url": "https://api.elsevier.com/content/article/PII:S0960894X05016112?httpAccept=text/xml"
+    },
+    {
+      "bytes": 1941,
+      "file": "ejmech115328.publisher.xml",
+      "finished_at": "2026-10-28T19:09:20.177286+00:00",
+      "portable": false,
+      "potential_document_data_exposure": true,
+      "scope": "ordinary official source route; no credentials or bypass",
+      "sha256": "d8c5469dc1c0803b07f7d742586fbf056dde29fd17e3bd9a681f86791cc9e4c9",
+      "started_at": "2026-10-28T19:09:19.621601+00:00",
+      "status": "completed",
+      "url": "https://api.elsevier.com/content/article/PII:S0223523423002945?httpAccept=text/xml"
+    }
+  ],
+  "review_on": "2026-11-11",
+  "schema": "pharmacophoremt.esr1_methods_sources@1",
+  "scope": "Manual original-source acquisition; only the twelve ChEMBL metadata responses are portable. Other raw documents/abstracts/locator metadata/error bodies remain private at the named owned root. HTTP completion is not full-text or experimental qualification.",
+  "web_observation_scope": "The 35 journalled requests are manual HTTP acquisitions. Read-only web search/open operations are separate; later tool responses are not fully captured. Source locators and actual/potential incidental exposure are recorded in the manual review. No complete network-capture or automated full-text-review claim."
+}

@@ -15,6 +15,19 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Prior capacity-source receiving completed — 2026-10-28
+
+Capacity closeout `c42d91e1687b51953251e2d33e6d5c9cdbde3d3e` CI 40738760689
+now succeeds, with all eight actual Linux/macOS Python 3.11–3.14 Run tests
+steps independently checked. The [native receipt](../evidence/ci_pool3_receiving_20261028.json)
+retains exact source, attempt, job and step identities. Its policy 40738761165
+and Conda governance 40738761066 were separately verified successful earlier.
+This closes that pending observation, not the later methods declaration or
+manual review. Declaration 70c340c CI 40750612798 remains in progress; policy
+40750615075 and Conda governance 40750614288 succeed at observation. New-head
+and installed/public qualification remain separate; #9 stays partial for its
+broader original scope.
+
 ## Terminal receiving of the previously pending runs — 2026-10-28
 
 The [new native observation](../evidence/ci_receiving_20261028.json) preserves

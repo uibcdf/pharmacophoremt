@@ -1,0 +1,136 @@
+{
+  "jobs": [
+    {
+      "conclusion": "success",
+      "id": 122994330585,
+      "name": "Reporting governance",
+      "status": "completed",
+      "test_steps": []
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331109,
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331121,
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331182,
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331223,
+      "name": "Test on macos-15, Python 3.11",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331242,
+      "name": "Test on macos-15, Python 3.13",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331285,
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331540,
+      "name": "Test on macos-15, Python 3.14",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "id": 122994331682,
+      "name": "Test on macos-15, Python 3.12",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "skipped",
+      "id": 122994332340,
+      "name": "Check skipped-commit backlog",
+      "status": "completed",
+      "test_steps": []
+    }
+  ],
+  "native_evidence": true,
+  "observed_at": "2026-10-28T19:21:03.306686+00:00",
+  "run": {
+    "conclusion": "success",
+    "event": "push",
+    "head_sha": "c42d91e1687b51953251e2d33e6d5c9cdbde3d3e",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40738760689",
+    "id": 40738760689,
+    "run_attempt": 1,
+    "status": "completed"
+  },
+  "schema": "pharmacophoremt.ci_receiving_observation@1",
+  "scope": "Actual eight-cell source receiving of prior capacity closeout; not the later methods declaration/review, installed/public artifacts or a new scientific source experiment.",
+  "total_count": 10
+}
