@@ -1,5 +1,32 @@
 # Development Checkpoint
 
+## Resumed: complete remaining single-protein capacity nomination — 2026-10-28
+
+Main receives the three published governance commits by fast-forward through
+`9eb6787f11e32a927950d8c53e097949556d83e1`. The [new pool-3 declaration](esr1_binding_pool3.md)
+nominates all **475 remaining single-protein assays** from the frozen metadata,
+without pool 2's description filter. Acquire only status and ID-only capacity
+responses after committing the declaration. No detailed activity values,
+compound information, molecular inputs or scores are authorized by that run.
+Every capacity must resolve before ranking; survivors remain pending experimental
+review and a separate detailed-acquisition declaration. Existing thresholds,
+queries, no-pooling and all previous exposure/results remain unchanged.
+
+The [new native CI observation](evidence/ci_receiving_20261028.json) closes the
+earlier pending observations: pool-2 closeout CI 40388775895 passes all eight
+actual test cells, scheduled retry 40353440186 attempt 2 is successful, and
+governance head 9eb6787 passes its eight actual cells in 40612031912 plus policy
+40612032102 and Conda governance 40612032124. Later nightly 40711753014 executes
+the decision/governance only and intentionally skips science; it is not another
+matrix. Preserve the earlier failed attempt and dated pending records under #9.
+These results do not qualify a future head or installed/public bytes.
+
+**Next:** commit this declaration/support change, acquire the capacity census in
+a new owned directory, retain every response/failure and qualify the offline
+result before choosing experimental sources. Molecular identity/scaffolds remain
+MolSysMT #447. Newer H-bond API receiving remains separate in #41/#375; addon,
+new release and molecular-provider modifications remain deferred.
+
 ## Second binding-source pool stopped at capacity — 2026-10-26
 
 The [second predeclared source pool](esr1_binding_pool2.md) nominates 42 assays

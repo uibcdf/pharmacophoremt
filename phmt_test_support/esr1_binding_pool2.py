@@ -1,4 +1,9 @@
-"""Bounded #66 pool-2 acquisition and offline source-population review."""
+"""Bounded #66 declared-pool acquisition and offline source-population review.
+
+The default declaration and serialized schemas retain the historical pool-2
+contract. A later declaration can request capacity-only review with zero detailed
+assays; unresolved capacity survivors must then remain pending, never rejected.
+"""
 
 from __future__ import annotations
 
@@ -103,13 +108,15 @@ def _url(assay, capacity):
     )
 
 
-def acquire(directory):
+def acquire(directory, *, declaration_path=DECLARATION):
     """Reuse the existing fetch helper; journal original successes and failures."""
-    declaration = json.loads(DECLARATION.read_text())
+    declaration = json.loads(declaration_path.read_text())
     directory.mkdir(parents=True, exist_ok=False)
     journal = {
-        "schema": "pharmacophoremt.esr1_binding_pool2_acquisition@1",
-        "declaration": source.readiness.identity(DECLARATION),
+        "schema": declaration.get(
+            "acquisition_schema", "pharmacophoremt.esr1_binding_pool2_acquisition@1"
+        ),
+        "declaration": source.readiness.identity(declaration_path),
         "producer": _producer(),
         "requests": [],
         "phase": "capacity",
@@ -213,11 +220,11 @@ def acquire(directory):
     return journal
 
 
-def summarize(directory):
+def summarize(directory, *, declaration_path=DECLARATION):
     """Revalidate saved responses and reuse the unchanged source classifier."""
-    declaration = json.loads(DECLARATION.read_text())
+    declaration = json.loads(declaration_path.read_text())
     journal = json.loads((directory / "acquisition.json").read_text())
-    if journal["declaration"] != source.readiness.identity(DECLARATION):
+    if journal["declaration"] != source.readiness.identity(declaration_path):
         raise ValueError("acquisition used a different declaration")
     payloads = {}
     for row in journal["requests"]:
@@ -300,10 +307,12 @@ def summarize(directory):
         )
     ]
     return {
-        "schema": "pharmacophoremt.esr1_binding_pool2_review@1",
+        "schema": declaration.get(
+            "review_schema", "pharmacophoremt.esr1_binding_pool2_review@1"
+        ),
         "recorded_at": datetime.now(timezone.utc).isoformat(),
         "producer": _producer(),
-        "declaration": source.readiness.identity(DECLARATION),
+        "declaration": source.readiness.identity(declaration_path),
         "acquisition": source.readiness.identity(directory / "acquisition.json"),
         "acquisition_phase": journal["phase"],
         "capacity_totals": totals,
@@ -318,10 +327,14 @@ def summarize(directory):
         if journal["phase"] != "completed"
         else "requires_experimental_and_molecular_gates"
         if numerical
+        else "capacity_survivors_require_source_review"
+        if not selected and deferred
         else "capacity_pool_stopped"
         if not selected
         else "selected_detail_pool_stopped",
-        "terminal_stop": journal["phase"] == "completed" and not numerical,
+        "terminal_stop": journal["phase"] == "completed"
+        and not numerical
+        and not (not selected and deferred),
         "evaluation_cohort": None,
         "new_molecular_inputs_acquired": False,
         "new_scores_computed": False,
@@ -331,13 +344,14 @@ def summarize(directory):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data-dir", type=Path, required=True)
+    parser.add_argument("--declaration", type=Path, default=DECLARATION)
     parser.add_argument("--acquire", action="store_true")
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
     if args.output and args.output.exists():
         raise FileExistsError(args.output)
     if args.acquire:
-        journal = acquire(args.data_dir)
+        journal = acquire(args.data_dir, declaration_path=args.declaration)
         print(
             json.dumps(
                 {
@@ -348,7 +362,7 @@ def main():
             )
         )
     if args.output:
-        report = summarize(args.data_dir)
+        report = summarize(args.data_dir, declaration_path=args.declaration)
         with args.output.open("x") as output:
             json.dump(report, output, indent=2, sort_keys=True, allow_nan=False)
             output.write("\n")

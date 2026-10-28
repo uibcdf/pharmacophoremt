@@ -2,8 +2,10 @@
 
 import importlib.util
 import json
+import tempfile
 import unittest
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 spec = importlib.util.spec_from_file_location(
@@ -26,6 +28,82 @@ def page(total):
 
 
 class TestBindingPool2(unittest.TestCase):
+    def test_capacity_only_survivors_are_pending_and_never_fetch_detail_values(self):
+        declaration = json.loads(driver.DECLARATION.read_text())
+        declaration["nominees"] = [{"assay_chembl_id": "CHEMBL9"}]
+        declaration["detailed_selection"]["maximum_assays"] = 0
+        declaration["acquisition_schema"] = "capacity-only-acquisition"
+        declaration["review_schema"] = "capacity-only-review"
+        calls = []
+
+        def fetch(url, path):
+            calls.append(url)
+            payload = (
+                {"chembl_db_version": "ChEMBL_37", "activities": 1000000}
+                if "status.json" in url
+                else page(40)
+            )
+            path.write_text(json.dumps(payload))
+            return path.read_bytes()
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            declared = root / "declaration.json"
+            declared.write_text(json.dumps(declaration))
+            with patch.object(driver.pilot, "fetch", fetch):
+                journal = driver.acquire(root / "inputs", declaration_path=declared)
+            report = driver.summarize(root / "inputs", declaration_path=declared)
+            self.assertEqual(journal["schema"], "capacity-only-acquisition")
+            self.assertEqual(report["schema"], "capacity-only-review")
+            self.assertEqual(journal["phase"], "completed")
+            self.assertEqual(len(calls), 2)
+            self.assertIn("only=activity_id", calls[1])
+            self.assertIn("limit=1", calls[1])
+            self.assertEqual(report["deferred_capacity_survivors"], ["CHEMBL9"])
+            self.assertEqual(report["selected"], [])
+            self.assertEqual(report["assessments"], {})
+            self.assertEqual(report["newly_inspected_chembl_identifiers"], [])
+            self.assertEqual(
+                report["readiness"], "capacity_survivors_require_source_review"
+            )
+            self.assertFalse(report["terminal_stop"])
+            declared.write_text(declared.read_text() + "\n")
+            with self.assertRaisesRegex(ValueError, "different declaration"):
+                driver.summarize(root / "inputs", declaration_path=declared)
+
+    def test_pool3_declares_all_remaining_single_protein_assays_without_text_filter(
+        self,
+    ):
+        path = (
+            ROOT / "tests/data/esr1_binding_evaluation/pool3_declaration_20261028.json"
+        )
+        declaration = json.loads(path.read_text())
+        rows = declaration["nominees"]
+        ids = [r["assay_chembl_id"] for r in rows]
+        previous = json.loads(driver.DECLARATION.read_text())
+        excluded = {r["assay_chembl_id"] for r in previous["nominees"]} | {
+            "CHEMBL3382763",
+            "CHEMBL3705057",
+            "CHEMBL5474416",
+        }
+        self.assertEqual(len(ids), 475)
+        self.assertEqual(len(set(ids)), 475)
+        self.assertEqual(ids, sorted(ids, key=lambda x: int(x[6:])))
+        self.assertFalse(set(ids) & excluded)
+        self.assertEqual(
+            set(declaration["nomination_rule"]["excluded_assays"]), excluded
+        )
+        self.assertEqual(declaration["metadata_sources"], previous["metadata_sources"])
+        self.assertTrue(all(r["bao_format"] == "BAO_0000357" for r in rows))
+        self.assertEqual(declaration["detailed_selection"]["maximum_assays"], 0)
+        self.assertEqual(declaration["capacity"]["minimum_total_records"], 40)
+        self.assertEqual(declaration["classification"], previous["classification"])
+        self.assertTrue(declaration["no_molecular_inputs_or_scoring"])
+        # Known misleading recruitment metadata and single-concentration wording
+        # remain candidates for capacity, explicitly not qualified endpoints.
+        self.assertIn("CHEMBL4233993", ids)
+        self.assertTrue(any(" at " in r["description"].lower() for r in rows))
+
     def test_clean_replay_keeps_original_acquisition_and_no_new_compound_exposure(self):
         summary, run = driver.source.readiness.reader.read_archived_evidence(
             ROOT / "devguide/evidence/esr1_binding_pool2_20261026_summary.json"

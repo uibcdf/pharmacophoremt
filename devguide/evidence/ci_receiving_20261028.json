@@ -1,0 +1,441 @@
+{
+  "conda_governance": {
+    "conclusion": "success",
+    "head_sha": "9eb6787f11e32a927950d8c53e097949556d83e1",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40612032124",
+    "id": 40612032124,
+    "run_attempt": 1,
+    "status": "completed"
+  },
+  "governance_adoption": {
+    "attempt": 1,
+    "conclusion": "success",
+    "event": "push",
+    "head_sha": "9eb6787f11e32a927950d8c53e097949556d83e1",
+    "id": 40612031912,
+    "jobs": [
+      {
+        "conclusion": "success",
+        "id": 122565633834,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 122565634063,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 122565634075,
+        "name": "Test on macos-15, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "skipped",
+        "id": 122565635190,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 122565635498,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 122565636259,
+        "name": "Test on macos-15, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 122565638979,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 122565639732,
+        "name": "Reporting governance",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 122565642708,
+        "name": "Test on macos-15, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 122565663918,
+        "name": "Test on macos-15, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40612031912"
+  },
+  "later_nightly_decision": {
+    "attempt": 1,
+    "conclusion": "success",
+    "event": "schedule",
+    "head_sha": "9eb6787f11e32a927950d8c53e097949556d83e1",
+    "id": 40711753014,
+    "jobs": [
+      {
+        "conclusion": "success",
+        "id": 122898575195,
+        "name": "Reporting governance",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 122898575379,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "skipped",
+        "id": 122898723203,
+        "name": "Test on ${{ matrix.cfg.os }}, Python ${{ matrix.cfg.python-version }}",
+        "status": "completed",
+        "test_steps": []
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40711753014"
+  },
+  "native_evidence": true,
+  "observed_at": "2026-10-28T17:15:46.756419+00:00",
+  "policy": {
+    "conclusion": "success",
+    "head_sha": "9eb6787f11e32a927950d8c53e097949556d83e1",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40612032102",
+    "id": 40612032102,
+    "run_attempt": 1,
+    "status": "completed"
+  },
+  "pool2_closeout": {
+    "attempt": 1,
+    "conclusion": "success",
+    "event": "push",
+    "head_sha": "8e83a64c829bd187bc929ca02d5b5117441a5302",
+    "id": 40388775895,
+    "jobs": [
+      {
+        "conclusion": "success",
+        "id": 121803963390,
+        "name": "Reporting governance",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964586,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964597,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964624,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964632,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964643,
+        "name": "Test on macos-15, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964653,
+        "name": "Test on macos-15, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964709,
+        "name": "Test on macos-15, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121803964727,
+        "name": "Test on macos-15, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "skipped",
+        "id": 121803965049,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "test_steps": []
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40388775895"
+  },
+  "scheduled_retry": {
+    "attempt": 2,
+    "conclusion": "success",
+    "event": "schedule",
+    "head_sha": "59c98d63999accab0decbc5edfed1287fb4480ba",
+    "id": 40353440186,
+    "jobs": [
+      {
+        "conclusion": "success",
+        "id": 121791848676,
+        "name": "Test on macos-15, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "skipped",
+        "id": 121791848718,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 121791849508,
+        "name": "Reporting governance",
+        "status": "completed",
+        "test_steps": []
+      },
+      {
+        "conclusion": "success",
+        "id": 121791850607,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121791850858,
+        "name": "Test on macos-15, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121791850882,
+        "name": "Test on macos-15, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121791851227,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121791851308,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121791851537,
+        "name": "Test on macos-15, Python 3.14",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      },
+      {
+        "conclusion": "success",
+        "id": 121791900258,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "status": "completed",
+        "test_steps": [
+          {
+            "conclusion": "success",
+            "name": "Run tests",
+            "status": "completed"
+          }
+        ]
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/40353440186"
+  },
+  "schema": "pharmacophoremt.ci_receiving_observation@1",
+  "scope": "Terminal native source/job/test facts; preserves the earlier pending observation and original failed attempt. No installed/public artifact or future-head qualification."
+}

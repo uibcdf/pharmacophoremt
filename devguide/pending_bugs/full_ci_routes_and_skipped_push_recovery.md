@@ -15,6 +15,22 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Terminal receiving of the previously pending runs — 2026-10-28
+
+The [new native observation](../evidence/ci_receiving_20261028.json) preserves
+the earlier pending snapshot and verifies terminal outcomes. Pool-2 closeout
+`8e83a64` CI 40388775895 passes all eight actual Linux/macOS Python 3.11–3.14
+test cells. Scheduled 40353440186 attempt 2 succeeds; its retried macOS/Python
+3.13 job 121791848676 completes Run tests successfully. The original attempt-1
+ambermd timeout remains unchanged, separately retained failure evidence.
+
+Published governance source `9eb6787` CI 40612031912 also passes all eight actual
+test cells; policy 40612032102 and Conda governance 40612032124 succeed. Later
+nightly 40711753014 succeeds in governance/decision and intentionally omits the
+scientific matrix. No matrix is inferred from that decision-only success, and
+none of these historical runs qualifies a later changed head or public artifact.
+#9 remains partial for its broader original acceptance scope.
+
 ## Exact-source receiving and later scheduled infrastructure failure — 2026-10-26
 
 59c98d63999accab0decbc5edfed1287fb4480ba original push CI 40150094066 now

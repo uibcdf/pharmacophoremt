@@ -6,13 +6,25 @@ opened: 2026-10-24
 closed:
 verification: measured
 area: [validation, screening, mvp]
-guard: devtools/tests/test_esr1_binding_pool2.py::TestBindingPool2::test_original_capacity_responses_stop_before_values_and_global_status_is_not_a_table
-normative: devguide/esr1_binding_pool2.md
+guard: devtools/tests/test_esr1_binding_pool2.py::TestBindingPool2::test_capacity_only_survivors_are_pending_and_never_fetch_detail_values
+normative: devguide/esr1_binding_pool3.md
 blocked_by: []
 supersedes: []
 ---
 
 # Fresh ERα binding evaluation readiness
+
+## Third source declaration: complete remaining single-protein nomination — 2026-10-28
+
+The [pool-3 declaration](../esr1_binding_pool3.md) covers all 475 remaining
+single-protein assays from the original frozen metadata, with no description
+filter. It permits status and ID-only capacity acquisition only after commit;
+every total must resolve before ranking. All survivors remain pending original
+experimental-method review and a separate detailed-source declaration. No activity
+values, compound information, preparation or scores are acquired at declaration.
+Both previous pools, fixed queries/class thresholds/no-pooling and historical
+exposure ledgers remain unchanged. MolSysMT #447 remains the later molecular
+identity/scaffold gate. New-head hosted receiving remains #9.
 
 ## Second declared pool stops at raw capacity — 2026-10-26
 

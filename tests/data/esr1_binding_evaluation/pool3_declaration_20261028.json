@@ -1,0 +1,4860 @@
+{
+  "acquisition_schema": "pharmacophoremt.esr1_binding_pool3_acquisition@1",
+  "capacity": {
+    "all_nominees_must_resolve": true,
+    "minimum_total_records": 40,
+    "page_limit": 1,
+    "projection": [
+      "activity_id"
+    ],
+    "unexpected_projection": "stop; do not treat unexpected activity values as unseen"
+  },
+  "classification": {
+    "endpoint_order": [
+      "Ki",
+      "Kd",
+      "IC50"
+    ],
+    "exclude_prior_chembl_identifiers": true,
+    "minimum_per_class": 20,
+    "pooling": false,
+    "positive_nM_at_most": 1000,
+    "require_provider_identity_scaffold": true,
+    "reuse": "phmt_test_support/esr1_binding_source_qualification.py:assess_rows",
+    "weak_nM_at_least": 10000
+  },
+  "declared_on": "2026-10-28",
+  "detailed_selection": {
+    "maximum_assays": 0,
+    "maximum_records_per_assay": 5000,
+    "order": "descending total_count, then numeric ChEMBL assay ID",
+    "scope": "Rank and retain every capacity survivor as pending; do not acquire detailed activity tables in this declaration."
+  },
+  "issue": 66,
+  "metadata_sources": [
+    {
+      "byte_count": 361268,
+      "file": "chembl_human_binding_assays.json",
+      "sha256": "08089bedd7898ec762e02573ea75150163a4ac55c42ccc8f710a5a08b726e6ed"
+    },
+    {
+      "byte_count": 190385,
+      "file": "chembl_human_binding_assays_page2.json",
+      "sha256": "2fb2770dc9d68d752a6e05e7a7894054f9b57b3219e5021c32d51b0b8fb6c0ac"
+    }
+  ],
+  "no_molecular_inputs_or_scoring": true,
+  "nomination_rule": {
+    "bao_format": "BAO_0000357",
+    "description_filter": null,
+    "excluded_assays": [
+      "CHEMBL855028",
+      "CHEMBL855873",
+      "CHEMBL868058",
+      "CHEMBL886321",
+      "CHEMBL886514",
+      "CHEMBL889118",
+      "CHEMBL897997",
+      "CHEMBL898603",
+      "CHEMBL900763",
+      "CHEMBL904964",
+      "CHEMBL909843",
+      "CHEMBL946607",
+      "CHEMBL1004751",
+      "CHEMBL1005362",
+      "CHEMBL1034370",
+      "CHEMBL1074482",
+      "CHEMBL1106119",
+      "CHEMBL1106815",
+      "CHEMBL1120283",
+      "CHEMBL1247885",
+      "CHEMBL2320011",
+      "CHEMBL2387873",
+      "CHEMBL3102027",
+      "CHEMBL3292464",
+      "CHEMBL3382763",
+      "CHEMBL3425270",
+      "CHEMBL3705057",
+      "CHEMBL3757700",
+      "CHEMBL3776150",
+      "CHEMBL3807011",
+      "CHEMBL3861280",
+      "CHEMBL4031197",
+      "CHEMBL4147481",
+      "CHEMBL4186516",
+      "CHEMBL4186517",
+      "CHEMBL4219450",
+      "CHEMBL4253004",
+      "CHEMBL4308524",
+      "CHEMBL4348610",
+      "CHEMBL4672972",
+      "CHEMBL4685966",
+      "CHEMBL4716149",
+      "CHEMBL5122019",
+      "CHEMBL5390002",
+      "CHEMBL5474416"
+    ],
+    "metadata_records": 1485,
+    "order": "numeric ChEMBL assay ID",
+    "previously_reviewed_single_protein_records": 45,
+    "remaining_single_protein_records": 475,
+    "scope": "BAO and target annotations nominate capacity only; recruitment, variants, relative and single-concentration assays can remain and require later experimental rejection.",
+    "single_protein_records": 520
+  },
+  "nominees": [
+    {
+      "assay_chembl_id": "CHEMBL673841",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha mediated transcriptional activation; Not determined",
+      "document_chembl_id": "CHEMBL1145829",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673842",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha mediated transcriptional activation; Not determined",
+      "document_chembl_id": "CHEMBL1145829",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673844",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for Estrogen receptor alpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1144864",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673846",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human Estrogen receptor alpha compared to estradiol (E2)",
+      "document_chembl_id": "CHEMBL1134060",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673847",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1131638",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673848",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor alpha compared to 17-beta-estradiol",
+      "document_chembl_id": "CHEMBL1132343",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673850",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1132262",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL673860",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding constant for Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1135566",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL674662",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human estrogen receptor alpha; ND means Not determined",
+      "document_chembl_id": "CHEMBL1147539",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL676804",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha after 3 hr at 0C",
+      "document_chembl_id": "CHEMBL1134802",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL676805",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity (RBA) for human Estrogen receptor alpha compared to estradiol",
+      "document_chembl_id": "CHEMBL1135564",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL676813",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Affinity of sulfamate compound for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1145899",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL676815",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Fold selectivity for estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136115",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677476",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from human estrogen receptor alpha; ND means Not determined",
+      "document_chembl_id": "CHEMBL1147539",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677477",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1148423",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677478",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1146804",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677479",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1147539",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677863",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "In vitro displacement of 0.5 nM [3H]E2 from human Estrogen receptor alpha at 10 uM",
+      "document_chembl_id": "CHEMBL1136750",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677864",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136473",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677865",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136709",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677869",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "log(I/IC50) against estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136444",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677870",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136444",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677871",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for Human Estrogen receptor-alpha",
+      "document_chembl_id": "CHEMBL1136557",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677873",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1145083",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677874",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity against human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136468",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677875",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha by displacement of [3H]estradiol",
+      "document_chembl_id": "CHEMBL1145083",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL677876",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor alpha compared to [3H]estradiol",
+      "document_chembl_id": "CHEMBL1145083",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL679322",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1147609",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL679325",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17-beta-estradiol from human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1132758",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL679884",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1137074",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL679888",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "In vitro binding affinity for estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136523",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL679894",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibitory activity against Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1133963",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL681150",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136709",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL681151",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "In vitro displacement of 0.5 nM [3H]17-beta-estradiol from human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136756",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL681152",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Minimum effective concentration for Estrogen receptor 1 (ER alpha) inhibition",
+      "document_chembl_id": "CHEMBL1145088",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL681155",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for Estrogen receptor alpha compared to estradiol",
+      "document_chembl_id": "CHEMBL1136709",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL681157",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "In vitro inhibition of [3H]17-beta-estradiol binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1134479",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL681158",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for Estrogen receptor alpha compared 10 nM [3H]estradiol",
+      "document_chembl_id": "CHEMBL1134677",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682291",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha mediated transcriptional activation",
+      "document_chembl_id": "CHEMBL1145829",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682292",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17-beta-estradiol from human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1132343",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682294",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of radioligand from human Estrogen receptor alpha, percent inhibition at 10 uM",
+      "document_chembl_id": "CHEMBL1135457",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682295",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of radioligand from human Estrogen receptor alpha, percent inhibition at 10 uM",
+      "document_chembl_id": "CHEMBL1135457",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682298",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1136521",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682299",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of radioligand from human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1135457",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL682302",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "In vitro inhibition of [6,7-3H]-17beta-estradiol binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1132714",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL826971",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1144292",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL827788",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human Estrogen receptor Alpha",
+      "document_chembl_id": "CHEMBL1144341",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL827859",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1139605",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL828339",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Mean fluorescence intensity corrected to basal for GW-5638 selective peptide binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1145207",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL829337",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1139570",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL829466",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of [3H]17-beta-estradiol binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1139599",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL830569",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor 1 compared to [3H]estradiol (100%)",
+      "document_chembl_id": "CHEMBL1138843",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL831071",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding potency for human ER alpha",
+      "document_chembl_id": "CHEMBL1137846",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL831072",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding potency for human ER alpha",
+      "document_chembl_id": "CHEMBL1137199",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL831077",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1142044",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL831661",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1141983",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL831663",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of transcriptional activation by human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1141983",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL832667",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of bindign to recombinant human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1144457",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL832786",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1137038",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL832956",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human Estrogen receptor Alpha; NC= Nonconvergence with an IC50>1 mM",
+      "document_chembl_id": "CHEMBL1144341",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL833547",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1141904",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL836272",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1145187",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL836278",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1145187",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL839292",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of [3H]estradiol binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1138654",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL839294",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of [3H]estradiol binding to human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1138654",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL839531",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1138676",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840163",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Mean fluorescence intensity corrected to basal for GW-5638 selective peptide binding to human estrogen receptor alpha; NT=Not tested",
+      "document_chembl_id": "CHEMBL1145207",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840164",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Mean fluorescence intensity corrected to basal for GW-5638 selective peptide binding to human estrogen receptor alpha; NT=Not tested.",
+      "document_chembl_id": "CHEMBL1145207",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840188",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity of E isomers to human ERalpha-HBD at 4C compared to [3H]-estradiol ",
+      "document_chembl_id": "CHEMBL1140290",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840189",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity of Z isomers to human ERalpha-HBD at 4C compared to [3H]estradiol ",
+      "document_chembl_id": "CHEMBL1140290",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840190",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity of E isomers to human ERalpha-HBD at 25 degree C compared to [3H]estradiol ",
+      "document_chembl_id": "CHEMBL1140290",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840191",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity of Z isomers to human ERalpha-HBD at 25 degree C compared to [3H]estradiol ",
+      "document_chembl_id": "CHEMBL1140290",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840193",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity (RBA) for human recombinant estrogen receptor alpha compared to [3H]-Estradiol at 4 nM",
+      "document_chembl_id": "CHEMBL1139536",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL840199",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1145207",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL842030",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human estrogen receptor alpha after 24 hr r at 0C",
+      "document_chembl_id": "CHEMBL1134802",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL844242",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity for human estrogen receptor alpha by displacement of [3H]-estradiol",
+      "document_chembl_id": "CHEMBL1134296",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL852960",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1138102",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL858794",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha",
+      "document_chembl_id": "CHEMBL1147729",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL860989",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estrone from ER alpha",
+      "document_chembl_id": "CHEMBL1146098",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL860990",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of [3H]estrone binding to ER alpha at 100 uM",
+      "document_chembl_id": "CHEMBL1146098",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL862205",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from ERalpha at 3 uM",
+      "document_chembl_id": "CHEMBL1149464",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL863236",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of binding to recombinant human ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1141200",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL865276",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL1149417",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL865582",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha",
+      "document_chembl_id": "CHEMBL1139663",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL866167",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha L384M/M421G mutant",
+      "document_chembl_id": "CHEMBL1149487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL866738",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1146841",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867043",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17beta-estradiol from ERalpha",
+      "document_chembl_id": "CHEMBL1149385",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867062",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from ERalpha",
+      "document_chembl_id": "CHEMBL1149464",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867419",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER alpha",
+      "document_chembl_id": "CHEMBL1149487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867420",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to wild type ERalpha",
+      "document_chembl_id": "CHEMBL1149487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867422",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER alpha upto 10 uM",
+      "document_chembl_id": "CHEMBL1149487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867425",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Selectivity for ERalpha L384M/M421G mutant over ERalpha",
+      "document_chembl_id": "CHEMBL1149487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL867524",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha",
+      "document_chembl_id": "CHEMBL1147723",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL868001",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL1146005",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL868587",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [6,7-3H]17 beta-estradiol from human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1138968",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL869146",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1145331",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL869166",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ERalpha",
+      "document_chembl_id": "CHEMBL1145331",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL872900",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1133963",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL873597",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17-beta-estradiol from human Estrogen receptor alpha; Not active means no effect at <1000 nM",
+      "document_chembl_id": "CHEMBL1132758",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL875573",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Percent activation of estrogen receptor alpha in luciferase assay at 10 uM",
+      "document_chembl_id": "CHEMBL1145175",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL881339",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity towards human estrogen receptor alpha in a competitive binding assay using fluorescently labelled estradiol",
+      "document_chembl_id": "CHEMBL1141087",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL881884",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity for human Estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1140390",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL884294",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity towards human estrogen receptor alpha in a competitive binding assay using fluorescently labelled estradiol; relative to 4-hydroxytamoxifen",
+      "document_chembl_id": "CHEMBL1141087",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL884936",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity towards human estrogen receptor alpha using [3H]estradiol upon incubation at 0 degree C for 18-24 h; [RBA E2 = 100]",
+      "document_chembl_id": "CHEMBL1141109",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL885749",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of ES2 ligand from human recombinant ERalpha relative to tamoxifen",
+      "document_chembl_id": "CHEMBL1139184",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL888711",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human LBD of of ERalpha",
+      "document_chembl_id": "CHEMBL1146264",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL889785",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluormone from human estrogen receptor by fluorescence binding assay",
+      "document_chembl_id": "CHEMBL1146252",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL891640",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha by radioligand binding assay",
+      "document_chembl_id": "CHEMBL1146346",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL895549",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human Estrogen alpha receptor at 1 uM",
+      "document_chembl_id": "CHEMBL1148818",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL895878",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL1148765",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL896315",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL1148875",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL896664",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of iodoacetamide-fluorescein-labeled SRC3 from ERalpha by TR-FRET assay",
+      "document_chembl_id": "CHEMBL1149553",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL897773",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL1149651",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL900460",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human ERalpha ligand binding domain",
+      "document_chembl_id": "CHEMBL1137551",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL902632",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human estrogen receptor",
+      "document_chembl_id": "CHEMBL1138341",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL904961",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1143673",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL908635",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1149495",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL910650",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1139848",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL911193",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor",
+      "document_chembl_id": "CHEMBL1137374",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL912467",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha",
+      "document_chembl_id": "CHEMBL1139848",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL915470",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1139477",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL917701",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from ERalpha ligand binding domain",
+      "document_chembl_id": "CHEMBL1149265",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL925467",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity at human recombinant ERalpha",
+      "document_chembl_id": "CHEMBL1140529",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL929273",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1142381",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL947314",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of radiolabeled estradiol from human estrogen receptor alpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1152299",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL951130",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from purified full length human ERalpha receptor",
+      "document_chembl_id": "CHEMBL1143167",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL951867",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from purified full length human ERalpha receptor relative to estradiol",
+      "document_chembl_id": "CHEMBL1143167",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL958059",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]17beta-estradiol from human recombinant ERalpha receptor relative to 17-beta-estradiol",
+      "document_chembl_id": "CHEMBL1150770",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL972480",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length human estrogen receptor alpha assessed as relative binding affinity by radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1138623",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL972482",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to full-length human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1138623",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL975503",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17beta-estradiol from human recombinant ERalpha receptor relative to estradiol",
+      "document_chembl_id": "CHEMBL1155878",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL983675",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full length biotinylated human ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL1144155",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL985066",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antiestrogenic activity at human recombinant estrogen receptor alpha assessed as inhibition of recruitment of LxxLL-containing coactivators after 30 mins by ELISA in presence of estradiol",
+      "document_chembl_id": "CHEMBL1143370",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL985067",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antiestrogenic activity at human recombinant estrogen receptor alpha assessed as inhibition of recruitment of LxxLL-containing coactivators after 30 mins by ELISA in absence of estradiol",
+      "document_chembl_id": "CHEMBL1143370",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL986880",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant estrogen receptor alpha by radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1143370",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL993942",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length human estrogen receptor alpha by radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1143352",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL998458",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogenic activity at human estrogen receptor expressing Saccharomyces cerevisiae carrying estrogen responsive sequence containing plasmid assessed as metabolism of chlorophenol res beta-D-galactopyranoside",
+      "document_chembl_id": "CHEMBL1148943",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1005364",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]17beta-estradiol from human recombinant ERalpha receptor by liquid scintillation counter relative to 17-beta-estradiol",
+      "document_chembl_id": "CHEMBL1141697",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1010833",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha receptor relative to estrogen",
+      "document_chembl_id": "CHEMBL1139264",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1022145",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL1152783",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1023357",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estradiol from human recombinant ERalpha at 0.2 uM by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1137758",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1023358",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estradiol from human recombinant ERalpha at 1 uM by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1137758",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1023359",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estradiol from human recombinant ERalpha at 5 uM by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1137758",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1028200",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full length purified human ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1140106",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1031406",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha at 3 uM",
+      "document_chembl_id": "CHEMBL1142492",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1032441",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]17beta-estradiol from human recombinant ERalpha receptor relative to 17-beta-estradiol",
+      "document_chembl_id": "CHEMBL1142534",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1036980",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]E2 from human recombinant ERalpha receptor by liquid scintillation counting relative to E2",
+      "document_chembl_id": "CHEMBL1154625",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1038076",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha at 10 uM",
+      "document_chembl_id": "CHEMBL1156750",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1043955",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human full length ERalpha assessed as relative binding affinity by competitive radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1154151",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1044868",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human full length ERalpha receptor",
+      "document_chembl_id": "CHEMBL1154151",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1045063",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Activity at human recombinant ERalpha by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL1154617",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1052731",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol form human ERalpha receptor assessed as relative binding affinity by competitive radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1153603",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1055459",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha receptor at 10 uM",
+      "document_chembl_id": "CHEMBL1152385",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1057727",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length human estrogen receptor alpha by radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1151900",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1057729",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to full-length human estrogen receptor alpha",
+      "document_chembl_id": "CHEMBL1151900",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1106124",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length human estrogen receptor alpha assessed as relative binding affinity by radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1156191",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1106453",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha assessed as relative binding affinity by liquid scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL1157771",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1106813",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent estrogen ES2 from human recombinant ERalpha by fluorescence polarization assay relative to 17-beta-estradiol",
+      "document_chembl_id": "CHEMBL1154244",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1120285",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17-beta-estradiol from human recombinant full length ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL1158617",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1120819",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Ratio of 17-beta-estradiol EC50 to compound EC50 for transactivation of human ERalpha",
+      "document_chembl_id": "CHEMBL1157750",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1166108",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human ERalpha after 16 hrs by scintillation counting",
+      "document_chembl_id": "CHEMBL1165993",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1252337",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human estrogen receptor alpha relative to control",
+      "document_chembl_id": "CHEMBL1250439",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1614199",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "PUBCHEM_BIOASSAY: Estrogen Receptor-alpha Coactivator Binding Inhibitors Dose Response Confirmation. (Class of assay: confirmatory) [Related pubchem assays: 629 (Primary screen preceding this dose response confirmation assay.)]",
+      "document_chembl_id": "CHEMBL1201862",
+      "src_id": 7
+    },
+    {
+      "assay_chembl_id": "CHEMBL1614214",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "PUBCHEM_BIOASSAY: Estrogen Receptor-alpha Coactivator Binding Inhibitors ELISA Secondary Assay. (Class of assay: confirmatory) [Related pubchem assays: 713 (Primary dose response assay preceding this ELISA secondary assay.), 629 (Primary screen preceding this dose response confirmation assay.)]",
+      "document_chembl_id": "CHEMBL1201862",
+      "src_id": 7
+    },
+    {
+      "assay_chembl_id": "CHEMBL1614527",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "PUBCHEM_BIOASSAY: Estrogen Receptor-alpha Coactivator Binding Potentiators Dose Response Confirmation. (Class of assay: confirmatory) [Related pubchem assays: 639 (Primary screen preceding this dose response confirmation assay.)]",
+      "document_chembl_id": "CHEMBL1201862",
+      "src_id": 7
+    },
+    {
+      "assay_chembl_id": "CHEMBL1645747",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha by liquid scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL1641505",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1656580",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha after 16 hrs by liquid scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL1649075",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1663552",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human estrogen receptor beta at 1 uM relative to control",
+      "document_chembl_id": "CHEMBL1649335",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1663610",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human estrogen receptor beta",
+      "document_chembl_id": "CHEMBL1649335",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1664596",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha by liquid scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL1649421",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1664694",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ERalpha after 18 to 24 hrs relative to estradiol",
+      "document_chembl_id": "CHEMBL1649425",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1671300",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Effect on human Gal4-fused ERalpha at 10 uM by luciferase reporter gene assay",
+      "document_chembl_id": "CHEMBL1667725",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1785391",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from human full-length ERalpha receptor by competitive radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL1781957",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1785596",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human full-length ERalpha receptor",
+      "document_chembl_id": "CHEMBL1781957",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1837905",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity at human estrogen receptor by fluorescence assay",
+      "document_chembl_id": "CHEMBL1833942",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1838303",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from human estrogen receptor after 18 hrs by liquid scintillation counting",
+      "document_chembl_id": "CHEMBL1833942",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1919078",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha by liquid scintillation counting relative to E2",
+      "document_chembl_id": "CHEMBL1914369",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1921536",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ERalpha assessed as relative binding affinity after 1 hr by liquid scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL1914317",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1932038",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha after 1 hr by liquid scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL1926507",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL1952652",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Activity at human ERalpha receptor at 10 uM",
+      "document_chembl_id": "CHEMBL1949601",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2025226",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from human full length recombinant ERalpha by scintillation proximity assay",
+      "document_chembl_id": "CHEMBL2021840",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2025409",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL2021840",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2033171",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ERalpha after 18 to 24 hrs",
+      "document_chembl_id": "CHEMBL2029328",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2034132",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human full length estrogen receptor alpha by competitive radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL2029345",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2044602",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to human recombinant ERalpha receptor using [3H]E2 as substrate after 1 hr by liquid scintillation counting relative to E2",
+      "document_chembl_id": "CHEMBL2040729",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2167239",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human estrogen receptor-alpha at 10 uM by radioligand displacement assay",
+      "document_chembl_id": "CHEMBL2163259",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2173701",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]estradiol from recombinant human ERalpha after 1 hr by liquid scintillation counter relative to estradiol",
+      "document_chembl_id": "CHEMBL2169876",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2188856",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha ligand binding domain by hydroxylapatite assay relative to untreated control",
+      "document_chembl_id": "CHEMBL2176980",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2213031",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human estrogen receptor at 10 uM by CEREP assay",
+      "document_chembl_id": "CHEMBL2203234",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2216232",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human estrogen receptor",
+      "document_chembl_id": "CHEMBL2203046",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2320009",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human recombinant ER at 10'-8 to 10'-7 M after 14 to 18 hrs by scintillation counting analysis",
+      "document_chembl_id": "CHEMBL2311335",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2328439",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha after 1 hr by scintillation counting analysis relative to E2",
+      "document_chembl_id": "CHEMBL2321834",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2339770",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human full length estrogen receptor alpha by Scatchard plot analysis",
+      "document_chembl_id": "CHEMBL2331087",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2339773",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human full length estrogen receptor alpha after 18 to 24 hrs by competitive radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL2331087",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2384636",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at human estrogen receptor-alpha at 25 uM by yeast two-hybrid assay in presence of SRC1",
+      "document_chembl_id": "CHEMBL2380210",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2384638",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at human estrogen receptor-alpha by yeast two-hybrid assay in presence of SRC1",
+      "document_chembl_id": "CHEMBL2380210",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2384640",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human estrogen receptor-alpha by yeast two-hybrid assay in presence of SRC1",
+      "document_chembl_id": "CHEMBL2380210",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2387871",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent ES2 from human recombinant ERalpha at 100 uM after 2 hrs by fluorimetric analysis relative to control",
+      "document_chembl_id": "CHEMBL2385050",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2395059",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to estrogen receptor-alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL2390943",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2396434",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human estrogen receptor alpha at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL2390846",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2406172",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at human Gal4-ERalpha assessed as inhibition of 17beta-estradiol-induced effect at 3 uM by reporter gene assay",
+      "document_chembl_id": "CHEMBL2401681",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2406174",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at human Gal4-ERalpha assessed as inhibition of 17beta-estradiol-induced effect by reporter gene assay",
+      "document_chembl_id": "CHEMBL2401681",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2406175",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human Gal4-ERalpha at 10 uM by reporter gene assay relative to 17beta-estradiol",
+      "document_chembl_id": "CHEMBL2401681",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2406176",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human Gal4-ERalpha by reporter gene assay",
+      "document_chembl_id": "CHEMBL2401681",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2411348",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at estrogen receptor alpha (unknown origin) by NH Pro assay",
+      "document_chembl_id": "CHEMBL2407028",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2411349",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at estrogen receptor alpha (unknown origin) by NH Pro assay",
+      "document_chembl_id": "CHEMBL2407028",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL2445311",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha-mediated human MCF7 cell growth inhibition",
+      "document_chembl_id": "CHEMBL2439954",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3052550",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to ER-alpha (unknown origin) relative to estradiol",
+      "document_chembl_id": "CHEMBL3045364",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3052551",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from Homo sapiens (human) recombinant ER-alpha by HAP binding assay",
+      "document_chembl_id": "CHEMBL3045364",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3061168",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length Homo sapiens (human) ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL3045314",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3095120",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human estrogen receptor assessed as decrease in estradiol-dependent beta-galactosidase activity",
+      "document_chembl_id": "CHEMBL3091275",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3100440",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha receptor at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL3098111",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3101663",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) relative to tamoxifen",
+      "document_chembl_id": "CHEMBL3098128",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3102032",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of FITC-estradiol from human ERalpha by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL3098089",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3136542",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER-alpha relative to control",
+      "document_chembl_id": "CHEMBL3132860",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3136673",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [125I]-estradiol from wild type human ER-alpha at 1 mM after 16 hrs relative to estradiol",
+      "document_chembl_id": "CHEMBL3132860",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3241719",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL3232811",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3243130",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from human full-length ERalpha after 18 to 24 hrs by competitive radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL3232883",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3243180",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) relative to estradiol",
+      "document_chembl_id": "CHEMBL3232883",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3266011",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ER-alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL3259597",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3268082",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ER-alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL3259563",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3268856",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent estrogen from recombinant ERalpha (unknown origin) at 0.1 mg/ml by competition binding assay",
+      "document_chembl_id": "CHEMBL3259730",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3291713",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from recombinant human estrogen receptor-alpha by liquid scintillation counting analysis relative to estradiol",
+      "document_chembl_id": "CHEMBL3286341",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3361492",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-E2 from recombinant human ERalpha at 20 uM after 9 hrs by competitive binding assay relative to control",
+      "document_chembl_id": "CHEMBL3351677",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3370904",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor-alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL3351663",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3371989",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor (unknown origin) incubated for 4 hrs",
+      "document_chembl_id": "CHEMBL3351728",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3374335",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) transcriptional activity at 10 mM",
+      "document_chembl_id": "CHEMBL3352043",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3375722",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) relative to estradiol",
+      "document_chembl_id": "CHEMBL3352468",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3381785",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ERalpha at 10 uM",
+      "document_chembl_id": "CHEMBL3352189",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3382765",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estrogen from human recombinant ERalpha at 1 uM by fluorescence polarization based competitive binding affinity assay",
+      "document_chembl_id": "CHEMBL3352633",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3382767",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha",
+      "document_chembl_id": "CHEMBL3352633",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3382769",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at human recombinant ERalpha by FRET assay",
+      "document_chembl_id": "CHEMBL3352633",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3383335",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human recombinant ERalpha by FRET assay",
+      "document_chembl_id": "CHEMBL3352633",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3384919",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from human recombinant ERalpha at 3 nM after 16 to 20 hrs by cell-free assay",
+      "document_chembl_id": "CHEMBL3351241",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3399000",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [2,4,6,7-3H]17beta-estradiol from human recombinant ER-alpha after 18 hrs by liquid scintillation counting method relative to E2",
+      "document_chembl_id": "CHEMBL3396984",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3413397",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human full-length ERalpha after 18 to 24 hrs by relative binding affinity/competitive radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL3407405",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3423887",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled ES2 from human recombinant ERalpha receptor at 100000 nM after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL3421623",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3424582",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER-alpha",
+      "document_chembl_id": "CHEMBL3421549",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3429910",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ER alpha (unknown origin) by LanthaScreen TR-FRET competitive binding assay",
+      "document_chembl_id": "CHEMBL3425438",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3582785",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-E2 from estrogen receptor-alpha (unknown origin) by scintillation counting analysis",
+      "document_chembl_id": "CHEMBL3580562",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3588422",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) by fluorescence polarization-based competition binding assay",
+      "document_chembl_id": "CHEMBL3585304",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3588423",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) by fluorescence polarization-based competition binding assay relative to E2",
+      "document_chembl_id": "CHEMBL3585304",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3591150",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER-alpha ligand binding domain after 2 hrs by competitive fluorometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL3588800",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3591297",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER-alpha ligand binding domain after 2 hrs by competitive fluorometric binding assay",
+      "document_chembl_id": "CHEMBL3588800",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3599826",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor alpha (unknown origin)-SRC1 coactivator interaction incubated for 1 hr by receptor cofactor assay system based method",
+      "document_chembl_id": "CHEMBL3596179",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3619225",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ERalpha (301 to 553 amino acid residues) (unknown origin) assessed as induction of interaction with SRC1 after 24 hrs by yeast two-hybrid assay relative to isopaucifloral F",
+      "document_chembl_id": "CHEMBL3616426",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3619226",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (301 to 553 amino acid residues) (unknown origin) assessed as inhibition of E2 induced interaction with SRC1 after 24 hrs by yeast-two-hybrid assay",
+      "document_chembl_id": "CHEMBL3616426",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3624137",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ER-alpha at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL3621160",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3624758",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL3621041",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3627331",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER-alpha",
+      "document_chembl_id": "CHEMBL3621110",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3629958",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [6,7-3H]17 beta-estradiol from human recombinant ER alpha assessed as relative binding affinity incubated for 18 hrs at 4 degC by radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL3627694",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3705080",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding Assay: The binding affinity and selectivity of candidate molecules yielded from database screening were determined by a fluorescent polarization competitive binding assay using purified baculovirus-expressed human ER beta or ER alpha and a fluorescent estrogen ligand EL Red (PanVera Corp.).",
+      "document_chembl_id": "CHEMBL3639035",
+      "src_id": 37
+    },
+    {
+      "assay_chembl_id": "CHEMBL3705466",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding Assay: The competition assay was performed in a 96-well plate (polystyrene*) which binds <2.0% of the total input [3H]-17beta-estradiol and each data point was gathered in triplicate. 100 uG/100 uL of the receptor preparation was aliquoted per well. A saturating dose of 2.5 nM [3H]17beta-estradiol+competitor (or buffer) in a 50 uL volume was added in the preliminary competition when 100x and 500x competitor were evaluated, only 0.8 nM [3H]17beta-estradiol was used. The plate was incubated at room temperature for 2.5 h. At the end of this incubation period 150 uL of ice-cold dextran coated charcoal (5% activated charcoal coated with 0.05% 69K dextran) was added to each well and the plate was immediately centrifuged at 99 g for 5 minutes at 4 C. 200 uL of the supernatant solution was then removed for scintillation counting. Samples were counted to 2% or 10 minutes, whichever occurs first.",
+      "document_chembl_id": "CHEMBL3639280",
+      "src_id": 37
+    },
+    {
+      "assay_chembl_id": "CHEMBL3755031",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL3751680",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3757153",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL3751840",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3757697",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [6,7-3H]17beta-estradiol from recombinant human ERalpha ligand binding domain at 0.4 to 4 uM incubated for 16 hrs by scintillation counting analysis",
+      "document_chembl_id": "CHEMBL3751809",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3766816",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) at 10 uM",
+      "document_chembl_id": "CHEMBL3763120",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3767742",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein labelled E2 from full length estrogen receptor alpha (unknown origin) after 2 hrs by fluorescence polarization assay relative to raloxifene",
+      "document_chembl_id": "CHEMBL3763071",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3767746",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at biotinylated ERalpha LBD (unknown origin) assessed as increase in SRC3 coactivator recruitment after 1 hr by TR-FRET assay",
+      "document_chembl_id": "CHEMBL3763071",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3767748",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Partial agonist activity at biotinylated ERalpha LBD (unknown origin) assessed as inhibition of E2-induced SRC3 coactivator recruitment after 1 hr by TR-FRET assay",
+      "document_chembl_id": "CHEMBL3763071",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3767752",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Partial agonist activity at biotinylated ERalpha LBD (unknown origin) assessed as increase in SRC3 coactivator recruitment after 1 hr by TR-FRET assay",
+      "document_chembl_id": "CHEMBL3763071",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3767756",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from full length human estrogen receptor alpha relative to estradiol",
+      "document_chembl_id": "CHEMBL3763071",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3777180",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human estrogen receptor at 10 uM by radioligand binding assay",
+      "document_chembl_id": "CHEMBL3774360",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3777355",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-E2 from human ER-alpha incubated for 16 to 20 hrs by liquid scintillation counting analysis",
+      "document_chembl_id": "CHEMBL3774317",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3778066",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor (unknown origin) at 10 uM by Gal4-based luciferase assay",
+      "document_chembl_id": "CHEMBL3774336",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3778069",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor (unknown origin) by Gal4-based luciferase assay",
+      "document_chembl_id": "CHEMBL3774336",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3784074",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Activation of estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL3779771",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3802989",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human GST-tagged estrogen receptor alpha ligand binding domain assessed as induction of biotinylated coactivator peptide recruitment after 30 mins by Alphascreen assay",
+      "document_chembl_id": "CHEMBL3797169",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3803234",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at human GST-tagged estrogen receptor alpha ligand binding domain assessed as inhibition of biotinylated coactivator peptide recruitment at 10 to 100 uM after 30 mins by Alphascreen assay",
+      "document_chembl_id": "CHEMBL3797169",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3825990",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ER-alpha (unknown origin) by Lanthascreen-FRET assay",
+      "document_chembl_id": "CHEMBL3822435",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3829134",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estrogen ligand from recombinant ER-alpha (unknown origin) incubated for 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL3826943",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3857091",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of fluorescien-conjugated coactivator PGC1a binding to ERalpha (unknown origin) after 1 hr by TR-FRET assay",
+      "document_chembl_id": "CHEMBL3856205",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3861281",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent ES2 from recombinant human ERalpha at 100 uM after 2 hrs in absence of light by fluorometric analysis relative to control",
+      "document_chembl_id": "CHEMBL3860069",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3868172",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by FP assay",
+      "document_chembl_id": "CHEMBL3867467",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL3995257",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]E2 from ERalpha (unknown origin) by radiometric assay relative to estradiol",
+      "document_chembl_id": "CHEMBL3994587",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4013737",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length human ERalpha receptor by scintillation counting",
+      "document_chembl_id": "CHEMBL4011648",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4013750",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full-length human ERalpha receptor by scintillation counting relative to estradiol",
+      "document_chembl_id": "CHEMBL4011648",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4028165",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4024791",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4035615",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) at 1 uM by fluorescence assay",
+      "document_chembl_id": "CHEMBL4033683",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4035616",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) at 1 uM in presence of estradiol by fluorescence assay",
+      "document_chembl_id": "CHEMBL4033683",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4044955",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from estrogen ERalpha receptor (unknown origin) at 1 uM",
+      "document_chembl_id": "CHEMBL4043136",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4132007",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4130365",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4134090",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha receptor at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL4130451",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4137983",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ER (unknown origin) by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4130640",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4137993",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ER (unknown origin) by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4130640",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4151747",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4145684",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4187143",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ER at 10 uM after 1200 mins by scintillation counting analysis relative to control",
+      "document_chembl_id": "CHEMBL4184197",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4200110",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha LBD after 2 hrs in absence of light by competitive fluorometric binding assay relative to 17beta-estradiol",
+      "document_chembl_id": "CHEMBL4196131",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4200112",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha LBD after 2 hrs in absence of light by competitive fluorometric binding assay",
+      "document_chembl_id": "CHEMBL4196131",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4200447",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human full length ERalpha after 18 to 24 hrs by scintillation counting method",
+      "document_chembl_id": "CHEMBL4196158",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4219452",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of Fluormone ES2 Green from full-length estrogen receptor alpha (unknown origin) after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4219027",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4219455",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled estradiol (fluoromone) from human recombinant full-length estrogen receptor alpha after 2 hrs by fluorescence polarization assay relative to estradiol",
+      "document_chembl_id": "CHEMBL4219027",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4232326",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H] estradiol from human estrogen receptor alpha after 18 hrs by by scintillation counting analysis",
+      "document_chembl_id": "CHEMBL4229384",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4233992",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to recombinant N-terminal His6-tagged ERalpha LBD (unknown origin) (299 to 554 residues) by surface plasmon resonance method",
+      "document_chembl_id": "CHEMBL4229451",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4233993",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of 5-iodoacetamidofluorescein-labelled SRC3 from C417-biotin labelled ERalpha (unknown origin) (304 to 554 residues) after 45 mins by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4229451",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4252999",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL4251582",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4253002",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Potency index, ratio of tamoxifen IC50 to compound IC50 for binding affinity to ERalpha receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL4251582",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4253007",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL4251582",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4263471",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of fluorescein-tagged estrogen binding to GST-tagged ERalpha (unknown origin) ligand binding domain after 1 hr by LanthaScreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL4261581",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4263473",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at full length ERalpha (unknown origin) after 24 hrs by ERE-driven luciferase reporter gene assay",
+      "document_chembl_id": "CHEMBL4261581",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4263488",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ERalpha (unknown origin) ligand binding domain assessed as fluorescein-labeled coactivator peptide recruitment by LanthaScreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL4261581",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4311075",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ER at 10 uM after 1200 mins by scintillation counting analysis relative to control",
+      "document_chembl_id": "CHEMBL4308884",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4322487",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at 17-beta-estradiol-stimulated GST-tagged ER-alpha ligand binding domain (unknown origin) assessed as fluorescein PGC1a coactivator peptide recruitment incubated up to 24 hrs by LanthaScreen TR-FRET co-regulator assay",
+      "document_chembl_id": "CHEMBL4321804",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4322488",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of 17-beta-estradiol-stimulated human ER alpha-binding domain at 100 uM by luciferase reporter gene assay",
+      "document_chembl_id": "CHEMBL4321804",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4322489",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at GST-tagged ER-alpha ligand binding domain (unknown origin) assessed as fluorescein PGC1a coactivator peptide recruitment incubated up to 24 hrs by LanthaScreen TR-FRET co-regulator assay",
+      "document_chembl_id": "CHEMBL4321804",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4348593",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to purified human ERalpha LBD incubated for 2 hrs by fluorescence tracer based competitive fluorometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL4346693",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4362958",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by competitive fluorometric receptor binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL4359894",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4367633",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Selective estrogen receptor down regulator activity at ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4364300",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4371246",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human GST-tagged estrogen receptor alpha ligand binding domain after 1 hr by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4371004",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4371256",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at GAL4 DNA binding domain fused full-length chimeric estrogen receptor alpha (unknown origin) by FRET-based assay",
+      "document_chembl_id": "CHEMBL4371004",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4371259",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human GST-tagged estrogen receptor alpha ligand binding domain assessed as coactivator peptide PGC1a recruitment by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4371004",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4374490",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ER (unknown origin) by Alpha Screen assay",
+      "document_chembl_id": "CHEMBL4373669",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4374491",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ER (unknown origin) by Alpha Screen assay",
+      "document_chembl_id": "CHEMBL4373669",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4382189",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from full length human ERalpha by competitive radiometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL4376905",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4393300",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to GST-tagged human ER alpha ligand-binding domain by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4392845",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4393377",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluormone tracer from full length human recombinant ERalpha incubated for 2 hrs by competitive fluorescence polarization binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL4392852",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4393379",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Ratio of RBA for Estrone to RBA for test compound for displacement of fluormone tracer from full length human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL4392852",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4393381",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Ratio of RBA for DPN to RBA for test compound for displacement of fluormone tracer from full length human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL4392852",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4393401",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Ratio of RBA for estradiol RBA for test compound for displacement of fluormone tracer from full length human recombinant ERalpha relative to estradiol",
+      "document_chembl_id": "CHEMBL4392852",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4398425",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Fluormone-ES2 binding affinity to ERalpha (unknown origin) after 2 hrs by fluorescent polarization based competition binding assay",
+      "document_chembl_id": "CHEMBL4396892",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4398426",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL4396892",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4398453",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) after 18 hrs by dual luciferase reporter gene assay",
+      "document_chembl_id": "CHEMBL4396892",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4398454",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4396892",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4400655",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-E2 from human recombinant ERalpha after 16 to 20 hrs in presence of 1000 fold excess of N-{3-[5-(2,4,5-Trifluoro-3-hydroxybenzoyl)thiophen-2-yl]-phenyl}-2-trifluoromethoxybenzenesulfonamide by liquid scintillation counting analysis relative to control",
+      "document_chembl_id": "CHEMBL4400508",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4400657",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-E2 from human recombinant ERalpha after 16 to 20 hrs in presence of 1000 fold excess of N-{3-[5-(2,4,5-Trifluoro-3-hydroxybenzoyl)thiophen-2-yl]-phenyl}-2-trifluoro-methylbenzenesulfonamide by liquid scintillation counting analysis relative to control",
+      "document_chembl_id": "CHEMBL4400508",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4401223",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of estrogen receptor-alpha (unknown origin) by ELISA",
+      "document_chembl_id": "CHEMBL4400529",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4404098",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ERalpha (unknown origin) incubated for 2 hrs by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4402557",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4413809",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) using fluorescein-conjugated coactivator PGC-1alpha incubated for 1 hr by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4411321",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4421250",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL4420080",
+      "src_id": 38
+    },
+    {
+      "assay_chembl_id": "CHEMBL4429354",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluoromone ligand from recombinant ER-alpha (unknown origin) by LanthaScreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL4428065",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4480099",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein-labeled PGC1alpha peptide from human GST-tagged ERalpha LBD after 2 hrs in presence of estradiol-beta by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4477262",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4603649",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at estradiol receptor (unknown origin) at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL4602618",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4603650",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of beta-estradiol-induced estradiol receptor activation (unknown origin) at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL4602618",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4611948",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ligand binding to ERalpha (unknown origin) by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4610082",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4627692",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4627260",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4671097",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-estradiol from human recombinant Estrogen ERalpha receptor at 10 uM incubated for 120 mins by scintillation counting analysis relative to control",
+      "document_chembl_id": "CHEMBL4665820",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4676555",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Transactivation of ER (unknown origin)",
+      "document_chembl_id": "CHEMBL4673256",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4681038",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at human ER",
+      "document_chembl_id": "CHEMBL4680080",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4681576",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to GST-tagged ERalpha LBD (unknown origin) using fluorescein PGC1alpha as coactivator incubated for 1 hr by LanthaScreen TR-FRET co-regulator assay",
+      "document_chembl_id": "CHEMBL4680094",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4685968",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent-labelled E2 from recombinant human GST-tagged ERalpha by LanthaScreen TR-FRET assay relative to E2",
+      "document_chembl_id": "CHEMBL4680223",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4687109",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by SPR assay",
+      "document_chembl_id": "CHEMBL4680259",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4703592",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL4699562",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4709241",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by TR-FRET assay",
+      "document_chembl_id": "CHEMBL4706533",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4709737",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of wild type ESR1 (unknown origin) by transactivation assay",
+      "document_chembl_id": "CHEMBL4706546",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4716147",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of ES2 from recombinant human ER-alpha at 100 uM incubated for 2 hrs by fluorescence based assay relative to control",
+      "document_chembl_id": "CHEMBL4715691",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4726123",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of His-tagged human ERalpha pre-incubated for 15 mins before fluorescent ligand addition and measured after 1 hr by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4725248",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4768890",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to purified human ERalpha LBD incubated for 2 hrs by fluorescence tracer based competitive fluorometric binding assay relative to 17beta-estradiol",
+      "document_chembl_id": "CHEMBL4765290",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4810897",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescein PGC1alpha from recombinant ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL4808242",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4811178",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) at 1 uM by fluorescence polarization assay relative to control",
+      "document_chembl_id": "CHEMBL4808256",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4822799",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative Binding affinity to human ERalpha LBD measured after 2 hrs by competitive fluorometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL4819131",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4822802",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha LBD assessed as inhibition constant measured after 2 hrs by microplate reader",
+      "document_chembl_id": "CHEMBL4819131",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4824517",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha LBD measured after 2 hrs by competitive fluorometric binding assay relative to 17beta-estradiol",
+      "document_chembl_id": "CHEMBL4823274",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4824520",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha LBD measured after 2 hrs by by competitive fluorometric binding assay",
+      "document_chembl_id": "CHEMBL4823274",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4825525",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Activation of estrogen receptor alpha (unknown origin) by fluorescence polarization based competition assay",
+      "document_chembl_id": "CHEMBL4823324",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4838647",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent estradiol from recombinant ERalpha (unknown origin) at 1 uM measured after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL4837222",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL4880463",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen ER alpha (h) Eurofins-Cerep binding assay",
+      "document_chembl_id": "CHEMBL4507261",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4880545",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen ER alpha (h) Eurofins-Cerep binding assay",
+      "document_chembl_id": "CHEMBL4507262",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4880802",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Estrogen ERalpha at compound concentration of 10.0 uM in the Eurofins-Panlabs radioligand binding assay (Eurofins_assay_226010)",
+      "document_chembl_id": "CHEMBL4507332",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4881731",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ER_ALPHA_AGON Cerep selectivity data (BI)",
+      "document_chembl_id": "CHEMBL4507276",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4881831",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ERALPHA/H Eurofins-Panlabs selectivity data (BI)",
+      "document_chembl_id": "CHEMBL4507276",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4882264",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ERALPHA/H Eurofins-Panlabs selectivity data (BI)",
+      "document_chembl_id": "CHEMBL4507278",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4882336",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ERALPHA/H Eurofins-Panlabs selectivity data (BI)",
+      "document_chembl_id": "CHEMBL4507279",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4883687",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen ER alpha (h) Eurofins-Cerep binding assay",
+      "document_chembl_id": "CHEMBL4507310",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4883768",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen ER alpha (h) Eurofins-Cerep binding assay",
+      "document_chembl_id": "CHEMBL4507311",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4886552",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen ER alpha (h) CEREP ligand profiling",
+      "document_chembl_id": "CHEMBL4507259",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4886757",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen ER alpha (h) CEREP ligand profiling",
+      "document_chembl_id": "CHEMBL4507259",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4888391",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ERalpha In-house nuclear receptor screen",
+      "document_chembl_id": "CHEMBL4800728",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL4888422",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ERalpha Indigo Bioscience nuclear receptor screen",
+      "document_chembl_id": "CHEMBL4800728",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5031537",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity of ERalpha LBD (unknown origin) assessed as relative binding affinity incubated for 2 hrs by LanthaScreen TR-FRET assay relative to control",
+      "document_chembl_id": "CHEMBL5030533",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5031538",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity of ERalpha LBD (unknown origin) incubated for 2 hrs by LanthaScreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL5030533",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5033716",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent estradiol from full-length ERalpha (unknown origin) measured after 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL5032528",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5034688",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]estradiol from human ER at 10 uM after 1200 mins by scintillation counting analysis relative to control",
+      "document_chembl_id": "CHEMBL5034007",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5037522",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha measured after 2 hrs by fluorescence polarization plate reader",
+      "document_chembl_id": "CHEMBL5036334",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5044541",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative Binding affinity to human ERalpha by competitive fluorometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL5042519",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045826",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha by competitive fluorometric receptor binding assay",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045828",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of degradation of human ERalpha by generation of singlet oxygen incubated for 3 hrs followed by irradiated with 460 +/- 10 nm LED light for 30 mins by circular dichroism spectroscopy",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045829",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of degradation of human ERalpha by generation of singlet oxygen incubated for 3 hrs followed by irradiated with 460 +/- 10 nm LED light for 15 mins by circular dichroism spectroscopy",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045830",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha assessed as change in enthalpy by isothermal titration calorimetry",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045831",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha assessed as change in entropy by isothermal titration calorimetry",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045832",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of degradation of human ERalpha irradiated with 460 +/- 10 nm LED light for 15 mins by gel electrophoresis",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5045833",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of degradation of human ERalpha irradiated with 460 +/- 10 nm LED light for 30 to 45 mins by gel electrophoresis",
+      "document_chembl_id": "CHEMBL5042547",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053006",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity towards estrogen receptor alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5052830",
+      "src_id": 38
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053639",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent-labeled E2 from LBD of ERalpha (unknown origin) by TR-FRET assay",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053641",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent-labeled E2 from LBD of ERalpha (unknown origin) assessed as relative binding affinity by TR-FRET assay relative to control",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053645",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) assessed as inhibition of fluorescein-labeled PGC-1 coactivator recruitment incubated for 10 mins measured by TR-FRET assay",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053646",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) assessed as inhibition of fluorescein-labeled PGC-1 coactivator recruitment incubated for 30 mins measured by TR-FRET assay",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053658",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ERalpha (unknown origin) assessed as induction of fluorescein-labelled coactivator PGC1 peptide recruitment at 1 uM by LanthaScreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053659",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) assessed as inhibition of fluorescein-labeled PGC-1 coactivator recruitment at 1 uM incubated for 10 mins measured by TR-FRET assay relative to control",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053660",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) assessed as inhibition of fluorescein-labeled PGC-1 coactivator recruitment at 5 uM incubated for 30 mins measured by TR-FRET assay relative to control",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053661",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) assessed as inhibition of fluorescein-labelled coactivator PGC1 peptide recruitment at 4 nM incubated for 10 mins by LanthaScreen TR-FRET assay relative to control",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5053662",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) assessed as inhibition of fluorescein-labelled coactivator PGC1 peptide recruitment at 4 nM incubated for 30 mins by LanthaScreen TR-FRET assay relative to control",
+      "document_chembl_id": "CHEMBL5053487",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5054551",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluorescent labeled-ligand from ERalpha (unknown origin) by competitive binding assay",
+      "document_chembl_id": "CHEMBL5053520",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5058472",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to human ERalpha using [3H]-E2 as substrate at 3 uM measured after 16 to 20 hrs by liquid scintillation counter assay relative to control",
+      "document_chembl_id": "CHEMBL5055689",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5058807",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "ERALPHA/H Eurofins SafetyScreen44 (BI)",
+      "document_chembl_id": "CHEMBL5058643",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5110671",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of EL red from human full-length ER-alpha by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL5108026",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5110687",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Modulation of ER-alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5108026",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5121196",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5120749",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5121198",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5120749",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5121266",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) at 10 uM by Lanthascreen TR-FRET assay",
+      "document_chembl_id": "CHEMBL5120752",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5122021",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha by competitive fluorometric binding assay relative to 17beta-estradiol",
+      "document_chembl_id": "CHEMBL5120785",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5130473",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to human recombinant ERalpha measured for 1 hrs by fluorescence based competitor assay relative to control",
+      "document_chembl_id": "CHEMBL5126623",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5157329",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at estrogen receptor alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5154690",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5167811",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Relative binding affinity to human ERalpha measured after 2 hrs by competitive fluorometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL5154927",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5231910",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL5230133",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5231914",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ER (unknown origin) by luciferase reporter assay",
+      "document_chembl_id": "CHEMBL5230133",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5233958",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]-17beta-estradiol to estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL5233223",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5263169",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to Estrogen receptor alpha (unknown origin) at 1 uM by displacement assay relative to control",
+      "document_chembl_id": "CHEMBL5260820",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5304425",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Estrogen Eralpha Eurofins Panlabs panel",
+      "document_chembl_id": "CHEMBL5303765",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5326428",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by competitive fluorometric receptor binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL5325416",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5326431",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as inhibition constant",
+      "document_chembl_id": "CHEMBL5325416",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5326452",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ESR1 (unknown origin) mRNA transcription at 1 to 5 uM by RT-qPCR analysis",
+      "document_chembl_id": "CHEMBL5325416",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5335645",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5331145",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337704",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ER-alpha (unknown origin) at 20 nM by ER-alpha coactivator assay",
+      "document_chembl_id": "CHEMBL5335823",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337705",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ER-alpha (unknown origin) at 1 microM by ER-alpha coactivator assay",
+      "document_chembl_id": "CHEMBL5335823",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337706",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ER-alpha (unknown origin) at 10 microM by ER-alpha coactivator assay",
+      "document_chembl_id": "CHEMBL5335823",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337707",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ER-alpha (unknown origin) by ER-alpha coactivator assay",
+      "document_chembl_id": "CHEMBL5335823",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337708",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ER-alpha (unknown origin) by ER-alpha coactivator assay relative to control",
+      "document_chembl_id": "CHEMBL5335823",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337709",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ER-alpha (unknown origin) by ER-alpha coactivator assay",
+      "document_chembl_id": "CHEMBL5335823",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5337737",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity incubated for 2 hrs by fluorescence polarization assay relative to control",
+      "document_chembl_id": "CHEMBL5335824",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5342097",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity incubated for 2 hrs by fluorescence polarization assay relative to estradiol",
+      "document_chembl_id": "CHEMBL5338775",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5342100",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as inhibition constant incubated for 2 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL5338775",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5342103",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as dissociation constant",
+      "document_chembl_id": "CHEMBL5338775",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350394",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of degradation of ERalpha (unknown origin) relative to control",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350395",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human wild type ERalpha ligand binding domain",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350396",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha D538G mutant ligand binding domain",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350397",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha Y537S mutant ligand binding domain",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350398",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of ERalpha degradation (unknown origin)",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350430",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to wild type ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5350431",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha Y537S mutant (unknown origin)",
+      "document_chembl_id": "CHEMBL5346947",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5365324",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha assessed as relative binding affinity incubated under vibration for 1 min followed by 2 hrs incubation under dark condition by fluorescence polarization assay relative to estradiol",
+      "document_chembl_id": "CHEMBL5360672",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5371111",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) incubated for 4 hrs by fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL5370532",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5381568",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) by LanthaScreen TR-FRET competitive binding assay",
+      "document_chembl_id": "CHEMBL5380788",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5464080",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Estrogen Eralpha at 10.0 \u00b5M in the Eurofins Panlabs Safety Screen",
+      "document_chembl_id": "CHEMBL5463725",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5464201",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Estrogen Eralpha at 10.0 \u00b5M in the Eurofins Panlabs Safety Screen",
+      "document_chembl_id": "CHEMBL5463725",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5478136",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Selectivity interaction (Eurofins CEREP Diversity Profile (receptors and ion channels)) EUB0000279b ESR1",
+      "document_chembl_id": "CHEMBL5465560",
+      "src_id": 65
+    },
+    {
+      "assay_chembl_id": "CHEMBL5501667",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of estrogen receptor (unknown origin) degradation by Western blot analysis",
+      "document_chembl_id": "CHEMBL5500354",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5506221",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to wild type ERalpha (unknown origin) assessed as apparent dissociation constant",
+      "document_chembl_id": "CHEMBL5505953",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5506222",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5505953",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5507544",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity incubated for 2 hrs under dark condition by fluorescence polarization assay relative to control",
+      "document_chembl_id": "CHEMBL5505978",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5516984",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha assessed as relative binding affinity incubated under dark condition for 2 hrs by competitive fluorometric binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL5512683",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5516987",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha assessed as inhibition constant incubated under dark condition for 2 hrs by competitive fluorometric binding assay",
+      "document_chembl_id": "CHEMBL5512683",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5519760",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Induction of ER degradation (unknown origin)",
+      "document_chembl_id": "CHEMBL5518186",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5524030",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5523678",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5536989",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) by renilla luciferase assay",
+      "document_chembl_id": "CHEMBL5532762",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5543465",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at N-terminal His-tagged ERRalpha (unknown origin) (145 to 423 residues) using fluor-ILRKLLQE as substrate by Fluorescence polarization assay",
+      "document_chembl_id": "CHEMBL5543063",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5551047",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at Estrogen receptor (unknown origin)",
+      "document_chembl_id": "CHEMBL5550117",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5614941",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity by fluorescence polarization assay relative to control",
+      "document_chembl_id": "CHEMBL5614372",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5623447",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at full length ERR-alpha (unknown origin)",
+      "document_chembl_id": "CHEMBL5620420",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5626277",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of [3H]17 beta estradiol from human ERalpha by radioligand binding assay",
+      "document_chembl_id": "CHEMBL5625177",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL5650399",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of beta-estradiol receptor (unknown origin) at 0.3 uM incubated for 6 hrs by ingenuity upstream regulator analysis",
+      "document_chembl_id": "CHEMBL5649168",
+      "src_id": 72
+    },
+    {
+      "assay_chembl_id": "CHEMBL5650407",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of beta-estradiol receptor (unknown origin) at 3 uM incubated for 6 hrs by ingenuity upstream regulator analysis",
+      "document_chembl_id": "CHEMBL5649168",
+      "src_id": 72
+    },
+    {
+      "assay_chembl_id": "CHEMBL5650497",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human Estrogen ER alpha at 10 uM by radioligand binding assay relative to control",
+      "document_chembl_id": "CHEMBL5649168",
+      "src_id": 72
+    },
+    {
+      "assay_chembl_id": "CHEMBL5685927",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Estrogen ERalpha receptor (unknown origin) at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL5678817",
+      "src_id": 72
+    },
+    {
+      "assay_chembl_id": "CHEMBL5709407",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of human ERalpha at 10 uM relative to control",
+      "document_chembl_id": "CHEMBL5705898",
+      "src_id": 72
+    },
+    {
+      "assay_chembl_id": "CHEMBL5723971",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of Estrogen ERalpha  at 10.0 \u00b5M in the Eurofins-Panlabs selectivity screen",
+      "document_chembl_id": "CHEMBL5723583",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5724466",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Activity against ERALPHA/H in the  Eurofins SafetyScreen44 (BI) by Radioactive Assay",
+      "document_chembl_id": "CHEMBL5723587",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL5729854",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding Assay: The binding affinity and selectivity of candidate molecules yielded from database screening were determined by a fluorescent polarization competitive binding assay using purified baculovirus-expressed human ER beta or ER alpha and a fluorescent estrogen ligand EL Red (PanVera Corp.).",
+      "document_chembl_id": "CHEMBL3639035",
+      "src_id": 37
+    },
+    {
+      "assay_chembl_id": "CHEMBL5730671",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Competitive Binding Assay: Competitive binding assays were performed by incubating rhER alpha (\u03b1) and beta 1 (\u03b21) receptors with 10 nM [3H]estradiol (the radio ligand) in the presence or absence of increasing concentrations, 0.25 to 250,000 nM, of the phenolic test compounds of Tables 1 to 3 (nM is nano molar). Each data point is the average of at least two assays. Stock solutions of the compounds of Tables 1 to 3 were prepared at 10\u00d7E-2 M in 100% ethanol, water or DMSO (dimethyl sulfoxide). Compounds were diluted 10 fold in binding buffer and then 1:4 in the final assay mix. The final concentration of ethanol or DMSO in the assay well was 5%. The highest concentration of the hydrolysis test compound was 2.5\u00d7E-4 M (250,000 nM). The residual monomers of Tables 1 to 3 were tested at seven concentrations over log increments. The lowest concentration was 2.5\u00d7E-10 M (0.25 nM).",
+      "document_chembl_id": "CHEMBL5725373",
+      "src_id": 37
+    },
+    {
+      "assay_chembl_id": "CHEMBL6083296",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity incubated for 2 hrs in presence of coumestrol by fluorescence polarization based competitive binding assay relative to estradiol",
+      "document_chembl_id": "CHEMBL6083176",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6086856",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human ERalpha receptor assessed as inhibition constant",
+      "document_chembl_id": "CHEMBL6083286",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6116730",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity by fluorescence polarization assay relative to control",
+      "document_chembl_id": "CHEMBL6114981",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6116734",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL6114981",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6116736",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin) at 1 uM relative to control",
+      "document_chembl_id": "CHEMBL6114981",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6119887",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to GST-tagged human estrogen receptor alpha incubated for 1 hr by Fluormone ES2 Green based TR-FRET assay",
+      "document_chembl_id": "CHEMBL6115050",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6119893",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Potency index, ratio of RAL IC50 to test compound IC50 for binding affinity to GST-tagged human estrogen receptor alpha incubated for 1 hr by Fluormone ES2 Green dye based TR-FRET assay",
+      "document_chembl_id": "CHEMBL6115050",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6126893",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ERalpha (unknown origin)",
+      "document_chembl_id": "CHEMBL6121064",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6130015",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Displacement of fluormone ES2 from full length human estrogen receptor alpha incubated for 60 mins under dark condition by TR-FRET assay",
+      "document_chembl_id": "CHEMBL6127096",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6134933",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to human recombinant ERalpha ligand binding domain extracted from saccharomyces cerevisiae coexpressing yellow fluorescent protein assessed as relative binding affinity at 10 uM incubated for 14 to 16 hrs by fluorimetry based fluorescence microscopic analysis",
+      "document_chembl_id": "CHEMBL6134764",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6139029",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as dissociation constant incubated for 2 hrs by competitive fluorescence polarization analysis",
+      "document_chembl_id": "CHEMBL6134865",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6139030",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to ERalpha (unknown origin) assessed as relative binding affinity incubated for 2 hrs by competitive fluorescence polarization analysis relative to raloxifene",
+      "document_chembl_id": "CHEMBL6134865",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6139572",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Agonist activity at ERalpha (unknown origin) up to 1.5 uM by mammalian 1-hybrid assay",
+      "document_chembl_id": "CHEMBL6134884",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6139585",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Antagonist activity at ERalpha (unknown origin) up to 1.5 uM by mammalian 1-hybrid assay",
+      "document_chembl_id": "CHEMBL6134884",
+      "src_id": 1
+    },
+    {
+      "assay_chembl_id": "CHEMBL6194296",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Binding affinity to estrogen receptor at compound concentration of 10.0 uM using Cerep panel",
+      "document_chembl_id": "CHEMBL6193874",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL6194418",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Activity against ERALPHA/H at compound concentration of 30.0 uM using a Eurofins SafetyScreen44 (BI) by Radioactive Assay",
+      "document_chembl_id": "CHEMBL6193876",
+      "src_id": 54
+    },
+    {
+      "assay_chembl_id": "CHEMBL6194540",
+      "assay_organism": "Homo sapiens",
+      "assay_type": "B",
+      "bao_format": "BAO_0000357",
+      "confidence_score": 9,
+      "description": "Inhibition of ER-a at compound concentration of 10.0 uM using the Cerep panel",
+      "document_chembl_id": "CHEMBL6193877",
+      "src_id": 54
+    }
+  ],
+  "previous_terminal_source": "8e83a64c829bd187bc929ca02d5b5117441a5302",
+  "review_schema": "pharmacophoremt.esr1_binding_pool3_review@1",
+  "schema": "pharmacophoremt.esr1_binding_pool3_declaration@1",
+  "scope": "Capacity-only census of every remaining single-protein assay in the frozen metadata; no activity values, compound information, structures or scores. Experimental qualification and any detailed acquisition need a later dated declaration."
+}

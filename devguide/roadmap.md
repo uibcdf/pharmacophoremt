@@ -1,5 +1,22 @@
 # Strategic Roadmap
 
+## Next bounded step: remaining single-protein capacity census — 2026-10-28
+
+#66 now has a [third pre-data declaration](esr1_binding_pool3.md): all 475 remaining
+single-protein assays in the retained metadata, without a description filter.
+First acquire ID-only capacity metadata, retaining every failure. Rank only after
+all capacities resolve; no detailed activity table or molecular/score acquisition
+is part of this declaration. Capacity survivors need original experimental review
+and another dated detailed-source decision. Keep thresholds, fixed queries,
+no-pooling and all historical exposure/outcomes. Provider #447 remains a later
+molecular-independence gate, not a source-count blocker.
+
+Previously pending source CI/retry observations are now successful; see the
+[dated native receipt](evidence/ci_receiving_20261028.json). New-head receiving
+remains #9. The separate #41/#375 provider-API integration review is still useful;
+source code availability does not itself qualify its scientific contract.
+Addon, expanded algorithms and a new release remain deferred.
+
 ## Broader source nomination needed after capacity-only stop — 2026-10-26
 
 #66's [second declared pool](esr1_binding_pool2.md) screens 42 metadata-nominated
