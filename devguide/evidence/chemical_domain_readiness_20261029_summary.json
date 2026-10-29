@@ -1,0 +1,121 @@
+{
+  "baseline": {
+    "test_nodes": [
+      "tests.test_eralpha_interaction_diagnostics::test_recognition_and_empty_observations_are_distinct",
+      "tests.test_eralpha_interaction_diagnostics::test_candidate_distances_and_angles_have_independent_coordinate_oracles",
+      "tests.test_eralpha_interaction_diagnostics::test_fixed_cutoff_sensitivity_does_not_reclassify_original_analyses",
+      "tests.test_eralpha_interaction_diagnostics::test_phe404_is_recognized_and_profile_comparison_retains_its_definition",
+      "tests.test_eralpha_interaction_diagnostics::test_reference_intersection_rejects_frozen_phe404_pair",
+      "tests.test_eralpha_interaction_diagnostics::test_nondefault_unit_policy_preserves_diagnosis_and_explicit_records",
+      "tests.test_conformer_screening::test_structure_state_policy_uses_each_declared_state_instead_of_reference",
+      "tests.test_conformer_screening::test_state_dependent_selection_uses_the_same_frame_state_as_recognition",
+      "tests.test_conformer_screening::test_missing_frame_state_is_retained_and_other_frames_still_run",
+      "tests.test_reference_ligand::test_formal_charge_group_centroid_sign_and_source_membership",
+      "tests.test_reference_ligand::test_unsupported_feature_and_incomplete_geometry_fail_visibly",
+      "tests.test_eralpha_interface::test_closed_fragment_states_and_source_maps_are_explicit",
+      "tests.test_eralpha_interface::test_evaluated_empty_families_are_retained_as_observations",
+      "tests.test_eralpha_interface::test_native_history_unknowns_maps_and_units_survive_saved_readers",
+      "tests.test_eralpha_hydrogens::test_second_hydrogen_addition_is_an_unchanged_independent_copy[standard_units0]",
+      "tests.test_eralpha_hydrogens::test_second_hydrogen_addition_is_an_unchanged_independent_copy[standard_units1]",
+      "tests.test_interaction_composition::test_collection_consumes_public_adapter_and_composition",
+      "tests.test_interaction_composition::test_compose_is_independent_and_calls_no_molecular_operations",
+      "tests.test_interaction_composition::test_saved_components_compose_with_nondefault_units_and_detached_reader",
+      "tests.test_ionic_interactions::test_empty_internal_uncovered_and_periodic_observations",
+      "tests.test_prepared_ccd_ligands::test_qualified_preparation_preserves_identity_and_declared_chemistry[EST]",
+      "tests.test_prepared_ccd_ligands::test_qualified_preparation_preserves_identity_and_declared_chemistry[DES]"
+    ],
+    "totals": {
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0,
+      "tests": 22
+    },
+    "warnings": "Five existing StructuralAttributeDropWarning occurrences for b_factor during concatenation; retained in original log."
+  },
+  "coordination": "uibcdf/molsyssuite#155",
+  "full_evidence": {
+    "compressed_bytes": 50183,
+    "compressed_sha256": "b098a8fd9059584fd69fb411dddaa13ec25db307ba2f8dea61e0ab5adea9ac6a",
+    "file": "chemical_domain_readiness_20261029.json.gz",
+    "uncompressed_bytes": 230144,
+    "uncompressed_sha256": "14608919750462d3a065d32292bbd74959751d3361ac13f8cfee8b9e98fe10bb"
+  },
+  "inventory_summary": {
+    "direct_topology_calls": [
+      {
+        "call": "msm.topology.get_substructure_matches",
+        "line": 172,
+        "moved_tool": true,
+        "path": "phmt_test_support/diagnose_eralpha_interface.py"
+      }
+    ],
+    "direct_topology_chemical_facades": [],
+    "false_positive_review": "Viewer n_components fields index rendering components, not MolSysMT chemical components; no migration action is inferred from that spelling. PHMT correspondence graphs are pharmacophore matching, not generic molecular graph kernels.",
+    "literal_topology_conversion_targets": [],
+    "scan_roots": [
+      "pharmacophoremt",
+      "phmt_test_support",
+      "molsysviewer_pharmacophoremt",
+      "tests",
+      "devtools"
+    ],
+    "scanned_python_files": 288
+  },
+  "issue": "uibcdf/pharmacophoremt#69",
+  "next": "Receive identified implementation and source migration map under MolSysMT #255; qualify exact state/axis/absence/copy/persistence behavior, update the one graph caller only at receiving, rerun unchanged scientific controls, then separately qualify installed/public artifacts. No speculative public minimum or compatibility alias.",
+  "ownership": {
+    "created_at": "2026-10-29T15:43:43.805576+00:00",
+    "issue": "uibcdf/pharmacophoremt#69",
+    "owner": [
+      "LMMV",
+      "dprada"
+    ],
+    "provider_preserved": {
+      "behind": 3,
+      "head": "71fbe4f46d3c70e4e973c8025f01752a8c9b1084",
+      "origin_main": "4e9bf09c4e02d49ab81082bc9a5706d6bab3c3f8",
+      "status": ""
+    },
+    "purpose": "Read-only chemical-domain consumer inventory and pre-cutover selected baseline. No runtime/API/pin/schema edits before provider delivery.",
+    "review": "2026-11-12",
+    "suite_checkout_preserved": {
+      "head": "b12f7230b297cdc0b22a649e6e625207d7fc4c1d",
+      "status": ""
+    }
+  },
+  "preflight_summary": {
+    "chemical_states_namespace_present": false,
+    "historical_graph_tool_present": true,
+    "pip_check_exit_code": 1,
+    "provider_metadata_version": "0.23.0+322.g71fbe4f46",
+    "provider_module": "/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+    "provider_module_version": "0.23.0+322.g71fbe4f46",
+    "pytest_receptor_origin": "/tmp/phmt69-readiness-20261029-pee7tccd/pytest_receptor-1.2.2-py3-none-any.whl/pytest_receptor/__init__.py",
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "receptor_wheel_sha256": "48c290fba7e12d19015fa436989fdad465d5ff7bba78fa94f7825e305ccf7961",
+    "scope": "Current shared-environment source baseline before provider migration, not clean closure or installed/cutover qualification."
+  },
+  "producer": {
+    "consumer_head": "87de52f1a13913ed1d941c3a0a6425a979a64b1f",
+    "consumer_provider_clean_and_identities_stable_before_after": true,
+    "provider_head": "71fbe4f46d3c70e4e973c8025f01752a8c9b1084",
+    "scope": "Current shared-environment source baseline before provider migration, not clean closure or installed/cutover qualification."
+  },
+  "provider_issue": "uibcdf/molsysmt#255",
+  "provider_plan": {
+    "path": "devguide/pending_proposals/retire_topology_bonds_after_1_0_in_favor_of_chemicalstates.md",
+    "sha256": "9296beb9b6f470ba4d367be306f3376600db2127d7897a864d940b9ed9a86200",
+    "source": "4e9bf09c4e02d49ab81082bc9a5706d6bab3c3f8"
+  },
+  "recorded_at": "2026-10-29T15:51:04.966940+00:00",
+  "schema": "pharmacophoremt.chemical_domain_readiness@1",
+  "scope_limits": [
+    "No client/provider runtime source, source pin, dependency floor, schema, scientific profile, population or molecular input changed.",
+    "No code for chemical_states target namespace exists in the actual used provider; this baseline cannot qualify a future cutover.",
+    "Shared pip-check conflicts remain MolSysSuite #82; not clean installed/public qualification.",
+    "AST inventory is bounded literal-call inspection, not arbitrary alias/data-flow proof.",
+    "Inventory/hierarchy-only absence, zero-state and state-only target semantics require provider guards and consumer rerun after delivery."
+  ],
+  "stage": "pre_cutover_inventory_and_existing_behavior_baseline",
+  "target_implementation_received": false
+}

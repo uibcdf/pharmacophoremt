@@ -1,0 +1,128 @@
+{
+  "conclusion": "success",
+  "event": "push",
+  "native_command": "gh run view 40764900309 --json databaseId,headSha,status,conclusion,event,jobs",
+  "native_original_identity": {
+    "bytes": 35655,
+    "sha256": "b2104b099b6fa09ffa67626f6167fba4bb806fd1e0d018f6c9d1cef617535b65"
+  },
+  "native_original_retained_in": "chemical_domain_readiness_20261029.json.gz",
+  "next": "Final readiness-document head hosted receiving remains #9. The editable 71fbe4 baseline is a separate context.",
+  "other_jobs": [
+    {
+      "conclusion": "success",
+      "name": "Reporting governance",
+      "status": "completed"
+    },
+    {
+      "conclusion": "skipped",
+      "name": "Check skipped-commit backlog",
+      "status": "completed"
+    }
+  ],
+  "recorded_at": "2026-10-29T15:51:04.966940+00:00",
+  "run_id": 40764900309,
+  "schema": "pharmacophoremt.ci_receiving@1",
+  "scientific_provider_pin": "8ae160fc93ed5bc815bcc24b37c2875ba735623d",
+  "scientific_test_cells": [
+    {
+      "conclusion": "success",
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on macos-15, Python 3.12",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on macos-15, Python 3.11",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on macos-15, Python 3.14",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on macos-15, Python 3.13",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    },
+    {
+      "conclusion": "success",
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "status": "completed",
+      "test_steps": [
+        {
+          "conclusion": "success",
+          "name": "Run tests",
+          "status": "completed"
+        }
+      ]
+    }
+  ],
+  "scope": "Native exact-head source CI job/test-step observation; installed/public bytes and future heads remain separate.",
+  "source_head": "87de52f1a13913ed1d941c3a0a6425a979a64b1f",
+  "status": "completed"
+}

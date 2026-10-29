@@ -1,5 +1,61 @@
 # Development Checkpoint
 
+## Chemical-domain receiving prepared; current baselines pass — 2026-10-29
+
+New [#69 receiving contract](chemical_domain_receiving.md) prepares the
+maintainer-approved pre-1.0 MolSysMT #255 separation, coordinated by MolSysSuite
+#155. The provider plan at 4e9bf09 records target ownership/API contracts with
+runtime implementation not started. Keep client code and dependency pins as
+they are until an identified implementation is ready for receiving.
+
+The bounded 288-file AST inventory finds one direct graph call to migrate:
+`phmt_test_support/diagnose_eralpha_interface.py:172`, currently
+`msm.topology.get_substructure_matches`. Target: the delivered
+`msm.chemical_states.get_substructure_matches`, preserving SMARTS/profile, atom
+scope and explicit intended state/frame. No direct Topology chemical facade or
+literal Topology conversion target is found in this scan. Native feature/state
+selection, preparation, copies and persisted interaction/history evidence still
+need indirect receiving; a namespace-only edit is insufficient.
+
+The [source baseline receipt](evidence/chemical_domain_readiness_20261029_summary.json)
+records **22 passed, zero failures/errors/skips** on clean consumer **87de52f**
+and clean editable MolSysMT **71fbe4f46d3c70e4e973c8025f01752a8c9b1084**.
+Consumer/provider Python, native and test identities are stable before/after.
+The provider is preserved three commits behind fetched 4e9bf09; its tracked
+package tree is identical at inspection. The target lowercase `chemical_states`
+module is absent. Five existing b_factor-drop warnings and shared pip-check
+conflicts remain disclosed. This is current-behavior source evidence, not target
+cutover or clean installed/public qualification. No sibling or environment is
+changed, and no molecular operation is implemented here.
+
+The [native hosted receipt](evidence/ci_methods_receiving_20261029.json) now
+confirms all **eight actual Linux/macOS Python 3.11–3.14 Run tests cells** in
+original push CI **40764900309** for exact source 87de52f. Its provider pin is
+8ae160fc, separate from the editable 71fbe4f baseline. The skipped recovery job
+is retained as a non-scientific job. Prior queued observations remain historical;
+this new result does not qualify a future head or the chemical-domain cutover.
+
+**Next:** receive MolSysMT #255's identified implementation and migration map;
+check state/absence/component/axis/copy/persistence contracts, migrate the one
+graph caller and rerun the unchanged scientific guards. Separately qualify
+required source CI and exact installed/public artifacts before changing supported
+minimums. #69 stays partial. #255 precedes provider #447 identity/scaffolds;
+#323 refinement and #375 geometry remain distinct. #66 still needs the four
+original protocols or a separately justified design; no repeated source searches,
+activities or scores are acquired in this readiness step. Addon/new release
+remain deferred; public 0.4.0 is unchanged. Final-head receiving stays #9.
+
+Keep `/tmp/phmt69-readiness-20261029-pee7tccd/`, owners LMMV/dprada, review
+2026-11-12. Original plan, source inventory, verified public reporting wheel,
+runner and complete outputs are retained. The current baseline is measured;
+new target contracts are intentionally unqualified until delivered.
+
+Local closeout passes 67 administrative controls, three reporting tests, generated
+indexes, evidence/source-identity checks, whole-tree Ruff lint/format and whitespace.
+The reporting catalog now includes #69; its initial missing-entry failure and
+corrected result remain in the owned raw root. That administrative registration
+does not change the scientific guards or the recorded clean 87de52f producer.
+
 ## Original-method follow-up complete; full articles still needed — 2026-10-28
 
 #66's [Scott supplement follow-up and four-article handoff](esr1_binding_pool3_methods.md#scott-supplement-and-access-follow-up--2026-10-28)

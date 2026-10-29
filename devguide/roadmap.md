@@ -1,5 +1,26 @@
 # Strategic Roadmap
 
+## Prepare and receive the chemical-domain cutover — 2026-10-29
+
+[#69's receiving contract](chemical_domain_receiving.md) inventories the one direct
+SMARTS namespace move plus indirect state, preparation, copy and persistence
+boundaries. The new 22-test current-behavior source baseline passes on exact
+provider 71fbe4f; original source 87de52f also passes eight actual hosted scientific
+cells on its separate qualified pin. Neither executes the target migration.
+
+Next receive the maintainer-approved MolSysMT #255 implementation through the
+MolSysSuite #155 coordination route. Preserve scientific definitions, source
+maps, units, failures and saved producer evidence; require real state/absence/
+component/copy/codec receiving before source and installed/public compatibility
+claims or dependency migration. Runtime/client edits and speculative floors are
+not part of advance-notice preparation. General molecular operations stay in
+MolSysMT; PHMT does not add a chemical graph or state engine.
+
+#255 precedes the provider's #447 identity/scaffold work. #66's original-method
+access remains independent; retain the four-article handoff and all observed
+exposure. #323/#375 have their own scientific/delivery scope. Addon, broader
+algorithms and a new release remain deferred. See [checkpoint](checkpoint.md).
+
 ## Original binding protocols need a new access route — 2026-10-28
 
 #66's [supplement follow-up](esr1_binding_pool3_methods.md#scott-supplement-and-access-follow-up--2026-10-28)
