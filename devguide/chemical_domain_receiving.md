@@ -4,10 +4,24 @@ Owner: [PharmacophoreMT #69](https://github.com/uibcdf/pharmacophoremt/issues/69
 LMMV/dprada. Provider implementation belongs to
 [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255); shared coordination
 is [MolSysSuite #155](https://github.com/uibcdf/molsyssuite/issues/155).
-This 2026-10-29 record prepares receiving. It changes no runtime API, scientific
-definition, input population, dependency pin or public package minimum.
+The 2026-10-29 baseline below is retained as historical pre-cutover evidence.
+The 2026-10-30 candidate receives the delivered module without changing profiles
+or input populations: `diagnose_eralpha_interface` calls
+`msm.chemical_states.get_substructure_matches`. Controlled source routes select
+MolSysMT `9fb77c3583b44dda31c0466348369de137301df9`, Viewer
+`ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352` and DepDigest
+`13cc73780a7cb645546ae3f396177f98b86a8792`. The old DepDigest source described
+0.13.0 and could not satisfy the new provider's >=0.15.1 floor; other support
+sources remain unchanged. The installed-test-support manifest records the actual
+changed helper digest. No public package minimum is inferred from these pins.
 
-## Provider boundary and actual source
+The same 22 baseline nodes pass on the patched source (315.23 seconds, exit 0,
+zero failures/errors/skips), with unchanged scientific expectations and ten
+visible b_factor-drop warnings. Full source CI and installed/platform evidence
+remain owner acceptance work under #69/#23. These are controlled-source inputs,
+not permission to publish or merge an unqualified package.
+
+## Historical provider baseline
 
 The maintainer's 2026-10-28 pre-1.0 decision replaces #255's historical post-1.0
 scheduling. The immutable [provider plan at 4e9bf09](https://github.com/uibcdf/molsysmt/blob/4e9bf09c4e02d49ab81082bc9a5706d6bab3c3f8/devguide/pending_proposals/retire_topology_bonds_after_1_0_in_favor_of_chemicalstates.md)
@@ -31,7 +45,7 @@ records hashes for 288 Python files under runtime, test support, addon, tests an
 developer tools. This is bounded AST/literal-call inspection, not unrestricted
 alias/data-flow analysis.
 
-| Consumer boundary | Current use | Receiving requirement |
+| Consumer boundary | Original use | Receiving requirement |
 | --- | --- | --- |
 | `phmt_test_support/diagnose_eralpha_interface.py:172` | `msm.topology.get_substructure_matches` on the unchanged prepared graph | Move to the delivered `msm.chemical_states.get_substructure_matches`, with the same SMARTS/profile, atom order and explicit intended chemical-state/frame scope. Make this edit only when receiving the provider implementation. |
 | `_private.molsysmt.source_frame`, `modeler.features` | Public selection, frame coordinates and declared feature chemistry | State-dependent selection and recognition must resolve the same state; no implicit state-zero substitution or local graph interpretation. |

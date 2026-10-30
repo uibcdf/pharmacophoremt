@@ -267,7 +267,7 @@ sha256 = "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae"
 [[installed_tests.support.files]]
 source = "phmt_test_support/diagnose_eralpha_interface.py"
 target = "phmt_test_support/diagnose_eralpha_interface.py"
-sha256 = "862ac8141010368b27aeda774dbacd570121d89465ab279981f0077ddf05520d"
+sha256 = "12765a9f34f8f88b7a4b10d6e8241e8f072aa2209710c3d3b9fe0000722fe0cc"
 
 [[installed_tests.support.files]]
 source = "phmt_test_support/evidence_archive.py"

@@ -59,3 +59,25 @@ minimum, release or addon work follows from this advance notice.
 Owners LMMV/dprada. Preserve the owned raw root recorded in the contract for
 review on 2026-11-12. Original-method access under #66 remains separate; no new
 activity or score is acquired by this preparation.
+
+
+## Implemented receiving candidate — 2026-10-30
+
+The helper's SMARTS call now uses the delivered chemical_states module. Unchanged
+consumer a9abeb9 gives 16 passes / 6 setup errors on the original 22 selections;
+all six share the obsolete namespace. The one-line source proposal passes those
+same 22 selections (exit 0, 315.23 seconds), without changing assertions, fixtures,
+geometry, profiles, maps, units or provenance. Ten existing b_factor-drop warnings
+remain visible. Local Python is 3.14.7 with Pandas 2.3.3 and the existing backend.
+
+Controlled requirements, source-route inventory and the non-3.14 override select
+the exact MolSysMT/Viewer receiving sources. DepDigest is advanced because its
+old 0.13.0 source cannot satisfy the provider's >=0.15.1 requirement. Actual input
+and helper-support digests are updated after reviewing the exact pin/namespace
+changes; no gate or installed test is weakened. Declared-route validation is
+separate from installed validation. Historical source receipts remain unchanged.
+
+Diego requested owner-reviewed PRs. Keep #69 partial until the owner reviews the
+candidate, qualifies its exact source/installed routes and establishes the real
+published runtime floor before a release. No main merge, tag, package or profile
+stabilization is performed by the receiving PR.
