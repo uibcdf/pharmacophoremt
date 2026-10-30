@@ -16,10 +16,10 @@ id = "depdigest-base"
 name = "depdigest"
 role = "required-runtime"
 url = "https://github.com/uibcdf/depdigest"
-commit = "ba670098a5b773e7f1570adc47b890d063bd5627"
+commit = "13cc73780a7cb645546ae3f396177f98b86a8792"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
 
 [[source_routes]]
 id = "pyunitwizard-base"
@@ -46,10 +46,10 @@ id = "molsysviewer-base"
 name = "molsysviewer"
 role = "integration"
 url = "https://github.com/uibcdf/molsysviewer"
-commit = "e0ae8a05099fce944b45355387f44d23d9458b13"
+commit = "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
 
 [[source_routes]]
 id = "ackredit-base"
@@ -66,10 +66,10 @@ id = "molsysmt-base"
 name = "molsysmt"
 role = "required-runtime"
 url = "https://github.com/uibcdf/molsysmt"
-commit = "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+commit = "9fb77c3583b44dda31c0466348369de137301df9"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
 
 [[source_routes]]
 id = "smonitor-3.14"
@@ -86,10 +86,10 @@ id = "depdigest-3.14"
 name = "depdigest"
 role = "required-runtime"
 url = "https://github.com/uibcdf/depdigest"
-commit = "ba670098a5b773e7f1570adc47b890d063bd5627"
+commit = "13cc73780a7cb645546ae3f396177f98b86a8792"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
 
 [[source_routes]]
 id = "pyunitwizard-3.14"
@@ -116,10 +116,10 @@ id = "molsysviewer-3.14"
 name = "molsysviewer"
 role = "integration"
 url = "https://github.com/uibcdf/molsysviewer"
-commit = "e0ae8a05099fce944b45355387f44d23d9458b13"
+commit = "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
 
 [[source_routes]]
 id = "ackredit-3.14"
@@ -136,19 +136,19 @@ id = "molsysmt-3.14"
 name = "molsysmt"
 role = "required-runtime"
 url = "https://github.com/uibcdf/molsysmt"
-commit = "8ae160fc93ed5bc815bcc24b37c2875ba735623d"
+commit = "9fb77c3583b44dda31c0466348369de137301df9"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification."
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies.txt"
-sha256 = "5a4c359b68f23b1abef62952b051a5737997aa7ffcf0157aeae56b6a36fce9f1"
+sha256 = "8c2024d6a94233461bbda6b68f9ccc003ac50064cb4647fbce1c7f152b207629"
 reason = "Existing pip --no-deps manifest preserved; inline repeat of the same MolSysMT pin is bound by workflow hash"
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-sha256 = "5a4c359b68f23b1abef62952b051a5737997aa7ffcf0157aeae56b6a36fce9f1"
+sha256 = "8c2024d6a94233461bbda6b68f9ccc003ac50064cb4647fbce1c7f152b207629"
 reason = "Existing pip --no-deps manifest preserved; inline repeat of the same MolSysMT pin is bound by workflow hash"
 
 [[contexts]]
@@ -282,7 +282,7 @@ channel_reason = "Preserve actual AmberTools bootstrap; no required scientific d
 
 [[workflows]]
 path = ".github/workflows/CI.yaml"
-sha256 = "21edca0dc05f7a237601d600f69f38f26301b0a88e2ee86a09fbecdc066672bc"
+sha256 = "1f9ead097efd5a5225cc6b1cab47b0ea6498e9d647682d168e436c9214b7cdd8"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
 
 [[workflows]]

@@ -1,9 +1,9 @@
 # Exact published source revisions for native consumer integration (#22/#36/#39).
 # Controlled source qualification is separate from public dependency closure (#10/#23).
 git+https://github.com/uibcdf/smonitor@f604b940ab281df4554869fdd24f796ea6d42c27
-git+https://github.com/uibcdf/depdigest@ba670098a5b773e7f1570adc47b890d063bd5627
+git+https://github.com/uibcdf/depdigest@13cc73780a7cb645546ae3f396177f98b86a8792
 git+https://github.com/uibcdf/pyunitwizard@2ab37a525ce99728ad8aee846b4a4f7acc4f1b65
 git+https://github.com/uibcdf/argdigest@5c6711ebfe23b9516ef0e8f830abee70589ec406
-git+https://github.com/uibcdf/molsysviewer@e0ae8a05099fce944b45355387f44d23d9458b13
+git+https://github.com/uibcdf/molsysviewer@ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352
 git+https://github.com/uibcdf/ackredit@71f7f1984de1a3925c32d29074784bb553e89bfc
-git+https://github.com/uibcdf/molsysmt@8ae160fc93ed5bc815bcc24b37c2875ba735623d
+git+https://github.com/uibcdf/molsysmt@9fb77c3583b44dda31c0466348369de137301df9

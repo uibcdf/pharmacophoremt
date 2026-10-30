@@ -169,7 +169,7 @@ def diagnose(case):
         for policy in declaration["hbond_sensitivity"]
     ]
     patterns = case["analyses"]["pi_pi"].parameters["smarts_patterns"]
-    matches = msm.topology.get_substructure_matches(
+    matches = msm.chemical_states.get_substructure_matches(
         system, patterns, structure_indices=[0]
     )
     rings = sorted(
