@@ -2,8 +2,12 @@
 
 ## Owner receiving candidate reviewed; four typed-column checks pending — 2026-11-02
 
-MolSysMT #255 is now implemented in identified development source; #69 no longer
-waits merely for the namespace to exist. The owner's reviewed candidate is
+MolSysMT #255 is implemented and closed: the provider has announced main merge
+**00abb958fb93649131d5ce5fe5e12e90cf4900e9**, with runtime/test trees identical
+to the executed de7ffad checkpoint. That equivalence is provider-reported, not
+a fresh local run on the merge commit. The remaining provider defect is
+[MolSysMT #531](https://github.com/uibcdf/molsysmt/issues/531); #69 no longer
+waits for the migration implementation. The owner's reviewed candidate is
 **43a258c516ebb3c8f971ac45629a1a60b3871fab**, branch
 `receiving/chemical-domain-owner-20261102`. Main retains its previous runtime,
 pins and scientific assertions while the candidate has a known provider gap.
@@ -29,8 +33,9 @@ not a claim that the four outstanding full-suite failures passed.
 **Provider gap:** complete EST/DES merge/extraction fails four exact typed-state
 preservation checks. The isolated public `CC.CC` repro changes component_name/type
 descriptors from `string` to `object`; the inspected values and atom identities
-are preserved. [MolSysMT #255 handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
-asks for the intended typed contract or correction. Keep the four assertions;
+are preserved. [MolSysMT #531](https://github.com/uibcdf/molsysmt/issues/531)
+continues the [original #255 handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
+and asks for the intended typed contract or correction. Keep the four assertions;
 do not normalize these chemical payloads locally, xfail them or integrate a red
 controlled-source pair into main. #69 remains partial. Draft #70's earlier green
 22-case claim is bounded, and its earlier hosted failure is preserved separately.

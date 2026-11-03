@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-02: reviewed chemical-domain candidate isolated pending provider typed-column fidelity, preserved main source route and unresolved original binding methods; public release remains 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-02: provider migration merged, reviewed chemical-domain candidate isolated pending MolSysMT #531 typed-column fidelity, preserved main source route and unresolved original binding methods; public release remains 0.4.0.
 
 ## Classical Workflow Specification
 

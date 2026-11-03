@@ -9,7 +9,11 @@ domain controls. All 22 original baseline nodes pass; clean candidate confirmati
 passes 73 focused controls. The full original source run still identifies four
 typed-component preservation checks after the seven client corrections.
 
-Next obtain [MolSysMT #255's typed-column disposition/correction](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577),
+MolSysMT #255 is now closed after main merge 00abb958; the provider reports
+runtime/test trees identical to executed de7ffad. No fresh merge execution or
+package qualification is inferred. The remaining defect is separately tracked.
+
+Next obtain [MolSysMT #531's typed-column disposition/correction](https://github.com/uibcdf/molsysmt/issues/531),
 receive it and rerun those unchanged assertions. Main's working source route is
 preserved; do not integrate a known-red pair or add a local chemical normalizer.
 Complete source/installed/public qualification separately. The

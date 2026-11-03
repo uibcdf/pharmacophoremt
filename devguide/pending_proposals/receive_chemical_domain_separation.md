@@ -8,7 +8,7 @@ verification: measured
 area: [integration, modeling, screening, validation]
 guard: tests/test_conformer_screening.py
 normative: devguide/chemical_domain_receiving.md
-blocked_by: [uibcdf/molsysmt#255]
+blocked_by: [uibcdf/molsysmt#531]
 supersedes: []
 ---
 
@@ -26,8 +26,11 @@ passes 73 focused controls. Its six added domain guards live in the candidate's
 `tests/test_chemical_domain_receiving.py`, not the unchanged main runtime.
 
 Four typed-state preservation assertions still fail on component_name/type dtype
-changes after public extraction. [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
-owns the minimal public repro and required dtype disposition/correction. Keep
+changes after public extraction. [MolSysMT #531](https://github.com/uibcdf/molsysmt/issues/531)
+owns the minimal public repro and required dtype disposition/correction, continuing
+the [original #255 handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577).
+The migration itself is merged on provider main at 00abb958 and #255 is closed;
+reported runtime/test equivalence to executed de7ffad does not resolve this gap. Keep
 these assertions and preserve original source/artifact evidence. No consumer
 normalizer or xfail is introduced; no red source pair is integrated into main.
 Source, installed/public and platform acceptance remain separate. #69 stays partial.

@@ -11,7 +11,9 @@ The delivered implementation is now reviewed in branch
 `msm.chemical_states.get_substructure_matches` and controlled sources MolSysMT
 **de7ffad2aef18ff3bccd184133dc69e081cb506e**, Viewer **ca7ebea6** and DepDigest
 **13cc7378**. The DepDigest revision supplies the consumed provider's >=0.15.1
-floor. No published minimum, provider-main merge or package release is inferred.
+floor. The provider subsequently announced main merge **00abb958fb93649131d5ce5fe5e12e90cf4900e9**
+and closed #255, reporting identical runtime/test trees to de7ffad. The local
+executed identity remains de7ffad; no package release or public minimum follows.
 The installed-support helper checksum and reviewed route/workflow hashes match
 the actual edits. Existing inputs, feature/profile definitions and scores stay fixed.
 
@@ -34,8 +36,9 @@ the exact assigned R/S array and other independent expectations; it passes.
 typed `component_name` and `component_type` column descriptors from `string` to
 `object`. An isolated public `CC.CC` extraction reproduces it. The inspected CCD
 projection retains values, identities and coordinates; exact typed preservation
-still fails. [Provider handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
-requests the intended contract or provider correction. Keep these assertions;
+still fails. [MolSysMT #531](https://github.com/uibcdf/molsysmt/issues/531)
+continues the [original provider handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
+after #255's closure and requests the intended contract or provider correction. Keep these assertions;
 no local metadata normalization, xfail or fake chemistry is added. The candidate
 is not accepted for integration into main while these receiving checks remain red.
 
