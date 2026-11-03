@@ -1,5 +1,34 @@
 # Strategic Roadmap
 
+## Remaining observed donor caller migrated; next aromatic queries — 2026-11-03
+
+#41 source migration now covers the observed H-bond caller as well as
+get_features: code 6a7537b shares validation of public MolSysMT vectors, retains
+the original chemical profile/ordered pairs/frame, reuses repeated-pair geometry
+and seals provider provenance. No available-provider error is replaced locally.
+The [receipt](evidence/observed_donor_receiving_20261103_summary.json) retains
+418 passing modern controls, 14 passing original-public-payload controls and both
+affected driver profiles (composition and complete CCD) with original scientific
+outcomes, source preservation and actual credit. Full physical and metadata
+identities remain stable in every phase. No provider/native/pin/floor change.
+
+Next accept **#34 aromatic queries** against its independent profile/participant
+mapping, geometry, empty/failure/persistence and attribution contract, driver and
+cookbook. The source implementation task below is now received. #41 remains
+partial only for its supported-public delivery/installed receiving and final
+historical arithmetic retirement (review 2026-11-11, LMMV/dprada). Ideal acceptor
+models retain #375's separate scientific scope. The original 0.23.0 payload was
+byte-verified, but this is not clean ordinary installation or current channel
+inventory. No complete new-source full suite, biological or performance claim.
+
+Actual quota failures and initial fixture/parser corrections are retained with
+successful reruns. Completed owned build/HTML derivatives alone are retired;
+scientific/source/log/config/wheel/provider/native/env resources remain. The
+normal owned editable refresh identifies PHMT 0.4.0+62.g6a7537b. #9 hosted and
+#23/#10 installed/public gates stay separate; #82 inherited findings stay open.
+#60 concrete copy receiving and #66's four original-method inputs retain their
+scopes. #323/#447 remain provider-owned. Addon/new release stay deferred.
+
 ## Ionic queries accepted; finish the remaining vector caller before aromatic review — 2026-11-03
 
 #33 is resolved: 45 focused controls (24 ionic plus pose/reference regressions),

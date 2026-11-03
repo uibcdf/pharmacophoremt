@@ -6,13 +6,65 @@ opened: 2026-10-10
 closed:
 verification: measured
 area: [architecture, modeling, screening, integration]
-guard: tests/test_molsysmt_feature_routes.py
-normative: devguide/extensible_modeling_contracts.md
+guard: tests/test_interaction_donor_geometry.py
+normative: devguide/molsysmt_feature_receiving.md
 blocked_by: []
 supersedes: []
 ---
 
 # Molecular ownership audit and bounded legacy retirement
+
+## Observed donor-vector source migration received — 2026-11-03
+
+Clean code producer **6a7537beb5747f8f455c489f0908ce4c46b90fd6** replaces direct
+coordinate subtraction in from_interactions' H-bond branch with public MolSysMT
+structure.get_vectors. Both native callers now share bounded provider-result
+validation in the private consumer boundary. Ordered donor/H pairs, the requested
+frame, offsets, first-to-second nonperiodic convention, finite length/unit
+geometry and coincident-input rejection are checked. Available-provider errors
+or malformed results are never replaced by arithmetic. Recognition is not rerun;
+the original observed profile and evidence remain unchanged. Repeated observations
+reuse one geometry call per donor/H pair while retaining all observation records.
+
+Observed donor sites retain donor_geometry_route and detached donor_geometry
+(only on the modern route), alongside existing local/source atom/frame maps.
+The feature inventory retains its existing route/evidence format. Acceptor-only,
+evaluated-empty and internal observations need no donor vector call. The only
+remaining arithmetic is one shared, explicitly labeled genuine-absence branch
+for the historical public provider. No public signature, feature definition,
+provider source/native/pin, dependency bound or preparation algorithm changes.
+
+The [new receipt](../evidence/observed_donor_receiving_20261103_summary.json)
+retains 418 passing modern controls and 14 original-public-payload controls,
+zero failures/errors/skips; both composition and CCD drivers pass off/on with
+original results, input preservation and actual attribution. Physical and metadata
+identities remain stable in all four phases. Fifteen new guards include two
+unit contexts, frame one, reversed donor/H indices, nonidentity source maps,
+repetition, cached-profile preservation, detached persistence, available-provider
+failure, eight malformed payloads and historical/coincident/empty controls.
+Fourteen new-contract guards fail on the original implementation (including two
+more precise coincident diagnostics); one no-donor control already passes. The
+first fixture-threshold error and incomplete quota attempts remain separately
+recorded and do not count as implementation counterexamples or passing evidence.
+
+The original 0.23.0 Conda artifact SHA-256 and all 3,213 extracted files match
+before/after its controlled import test. That process uses inherited transitive
+dependencies, not a clean ordinary installation. Modern source receiving uses
+normal editable PHMT 0.4.0+62.g6a7537b in the owned #69 venv, with all provider/
+native identities unchanged across its normal refresh. Shared-prefix/sibling
+worktrees are untouched. Current receiving does not resolve earlier #32/#82
+workspace findings or qualify installed/public/platform, biological or performance
+gates. Exact-head hosted receiving stays #9 and delivery stays #23/#10.
+
+#41 remains partial for supported public-vector delivery, justified floor migration
+and final removal of historical arithmetic: owners LMMV/dprada, review
+**2026-11-11**. Ideal acceptor models remain separate #375 science. The additional
+caller finding below is now implemented and qualified for source adoption; its
+dated text remains historical. Next accept #34 aromatic queries independently.
+Owned root /tmp/phmt41-donor-20261103-v7u6z70u/, review 2026-11-17. Actual quota
+exhaustion required retirement of only verified completed own build/HTML
+derivatives and a task-only download cache; source/config/log/scientific originals,
+frozen wheel, providers/native and environments are preserved in the receipt.
 
 ## Additional caller found — 2026-11-03, ionic acceptance audit
 

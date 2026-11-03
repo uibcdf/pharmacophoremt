@@ -7,6 +7,27 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Observed donor-vector receiving — 2026-11-03
+
+The [new summary](observed_donor_receiving_20261103_summary.json) and full archive
+record code 6a7537b under #41: shared provider-vector validation, preserved observed
+profile/pairs/frame, cached repeated pairs and detached donor geometry/route.
+418 modern and 14 original-0.23.0-payload controls pass, with all physical and
+metadata identities stable. Both composition and full CCD driver profiles retain
+original scientific outcomes/input preservation and actual credit. Original raw
+driver JSON is embedded as UTF-8 text with its byte identity; parse the relevant
+`driver_original_outputs` text field to inspect it. Verified scratch gzip keeps
+exact original bytes while avoiding redundant uncompressed files during quota
+recovery. The payload's artifact SHA and 3,213 files match before/after tests.
+
+The archive preserves original before-contract failures, fixture/parser mistakes,
+incomplete quota attempts, normal editable refresh manifests and a precise own-
+derivative retirement receipt. It does not reclassify those attempts as successes.
+No source/log/config/scientific originals, frozen wheel, provider/native or shared
+environment is removed. Modern source/payload receiving does not qualify clean
+ordinary installed/public closure, platforms, biology or performance. #41's final
+historical fallback retirement still needs supported public delivery/receiving.
+
 ## Ionic query source/API acceptance — 2026-11-03
 
 The [new summary](ionic_acceptance_20261103_summary.json) and checksum-qualified

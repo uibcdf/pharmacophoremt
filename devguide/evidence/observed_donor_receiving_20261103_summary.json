@@ -1,0 +1,760 @@
+{
+  "actual_runtime": "0.4.0+62.g6a7537b",
+  "boundaries": {
+    "biological_validation": false,
+    "clean_installed_public_closure": false,
+    "distribution": "uibcdf/pharmacophoremt#23/#10",
+    "full_new_source_suite": false,
+    "full_platform_matrix": false,
+    "historical_exception": {
+      "owners": [
+        "LMMV",
+        "dprada"
+      ],
+      "removal": "Qualified supported public generic-vector delivery and source/installed/public receiving permit support migration.",
+      "review": "2026-11-11",
+      "scope": "One shared labeled arithmetic branch, used only on genuine vector-capability absence."
+    },
+    "hosted": "uibcdf/pharmacophoremt#9",
+    "incomplete_attempts": "Original fixture error, empty-output exit 120, snapshot/build quota failures and parser-prefix correction retained; no passing result inferred from them.",
+    "next": "Independent #34 aromatic acceptance; #66 original-method access remains separate.",
+    "performance_measured": false,
+    "provider_source_native_or_pin_changed": false,
+    "public_payload": "Original SHA-verified 0.23.0 Conda payload, explicit import path in separate process with inherited dependencies; not ordinary installed closure or fresh channel inventory.",
+    "runtime_floor_changed": false,
+    "scientific_definition_or_profile_changed": false,
+    "source_delegation_received": true,
+    "source_environment": "Owned #69 system-site-packages venv; normal editable PHMT refresh only, 0.4.0+62.g6a7537b. Providers/native unchanged.",
+    "temporary_resources": "Completed owned build/HTML derivatives retired after quota exhaustion; source/log/config/scientific originals, wheel/provider/native/prefixes retained. Workflow JSON exact bytes kept in verified gzip before raw scratch retirement.",
+    "workspace": "Prior #32/#82 inherited closure and metadata findings remain unresolved; all current four phase identities are stable."
+  },
+  "consumer": {
+    "head": "6a7537beb5747f8f455c489f0908ce4c46b90fd6",
+    "status": ""
+  },
+  "driver_profiles": {
+    "ccd": [
+      {
+        "actual_items": 9,
+        "actual_uses": 28,
+        "cases": [
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 0,
+              "hydrophobic": 27,
+              "ionic": 0,
+              "pi_molstar": 1,
+              "pi_prolif": 1
+            },
+            "expected": {
+              "case_id": "EST",
+              "n_duplicate_rings": 1,
+              "n_sites": 10,
+              "n_steric_clashes": 0,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 0,
+                "hydrophobic": 27,
+                "ionic": 0,
+                "pi_molstar": 1,
+                "pi_prolif": 1
+              },
+              "placement": "ring_offset"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 11,
+                "n_sites": 10
+              },
+              "partner": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 11,
+                "n_sites": 10
+              }
+            }
+          },
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 1,
+              "hydrophobic": 44,
+              "ionic": 0,
+              "pi_molstar": 1,
+              "pi_prolif": 1
+            },
+            "expected": {
+              "case_id": "EST",
+              "n_duplicate_rings": 1,
+              "n_sites": 11,
+              "n_steric_clashes": 0,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 1,
+                "hydrophobic": 44,
+                "ionic": 0,
+                "pi_molstar": 1,
+                "pi_prolif": 1
+              },
+              "placement": "donor_contact"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 12,
+                "n_sites": 11
+              },
+              "partner": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 12,
+                "n_sites": 11
+              }
+            }
+          },
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 0,
+              "hydrophobic": 57,
+              "ionic": 0,
+              "pi_molstar": 2,
+              "pi_prolif": 2
+            },
+            "expected": {
+              "case_id": "DES",
+              "n_duplicate_rings": 2,
+              "n_sites": 16,
+              "n_steric_clashes": 1,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 0,
+                "hydrophobic": 57,
+                "ionic": 0,
+                "pi_molstar": 2,
+                "pi_prolif": 2
+              },
+              "placement": "ring_offset"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 1,
+                "excluded_fit": 1.0,
+                "excluded_status": "not_matched",
+                "kept_n_sites": 18,
+                "n_sites": 16
+              },
+              "partner": {
+                "excluded_clashes": 1,
+                "excluded_fit": 1.0,
+                "excluded_status": "not_matched",
+                "kept_n_sites": 18,
+                "n_sites": 16
+              }
+            }
+          },
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 2,
+              "hydrophobic": 87,
+              "ionic": 0,
+              "pi_molstar": 2,
+              "pi_prolif": 2
+            },
+            "expected": {
+              "case_id": "DES",
+              "n_duplicate_rings": 2,
+              "n_sites": 18,
+              "n_steric_clashes": 0,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 2,
+                "hydrophobic": 87,
+                "ionic": 0,
+                "pi_molstar": 2,
+                "pi_prolif": 2
+              },
+              "placement": "donor_contact"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 20,
+                "n_sites": 18
+              },
+              "partner": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 20,
+                "n_sites": 18
+              }
+            }
+          }
+        ],
+        "host_tracking": false,
+        "n_evaluations": 48,
+        "n_primary_roles": 8,
+        "valid": true
+      },
+      {
+        "actual_items": 17,
+        "actual_uses": 57,
+        "cases": [
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 0,
+              "hydrophobic": 27,
+              "ionic": 0,
+              "pi_molstar": 1,
+              "pi_prolif": 1
+            },
+            "expected": {
+              "case_id": "EST",
+              "n_duplicate_rings": 1,
+              "n_sites": 10,
+              "n_steric_clashes": 0,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 0,
+                "hydrophobic": 27,
+                "ionic": 0,
+                "pi_molstar": 1,
+                "pi_prolif": 1
+              },
+              "placement": "ring_offset"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 11,
+                "n_sites": 10
+              },
+              "partner": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 11,
+                "n_sites": 10
+              }
+            }
+          },
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 1,
+              "hydrophobic": 44,
+              "ionic": 0,
+              "pi_molstar": 1,
+              "pi_prolif": 1
+            },
+            "expected": {
+              "case_id": "EST",
+              "n_duplicate_rings": 1,
+              "n_sites": 11,
+              "n_steric_clashes": 0,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 1,
+                "hydrophobic": 44,
+                "ionic": 0,
+                "pi_molstar": 1,
+                "pi_prolif": 1
+              },
+              "placement": "donor_contact"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 12,
+                "n_sites": 11
+              },
+              "partner": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 12,
+                "n_sites": 11
+              }
+            }
+          },
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 0,
+              "hydrophobic": 57,
+              "ionic": 0,
+              "pi_molstar": 2,
+              "pi_prolif": 2
+            },
+            "expected": {
+              "case_id": "DES",
+              "n_duplicate_rings": 2,
+              "n_sites": 16,
+              "n_steric_clashes": 1,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 0,
+                "hydrophobic": 57,
+                "ionic": 0,
+                "pi_molstar": 2,
+                "pi_prolif": 2
+              },
+              "placement": "ring_offset"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 1,
+                "excluded_fit": 1.0,
+                "excluded_status": "not_matched",
+                "kept_n_sites": 18,
+                "n_sites": 16
+              },
+              "partner": {
+                "excluded_clashes": 1,
+                "excluded_fit": 1.0,
+                "excluded_status": "not_matched",
+                "kept_n_sites": 18,
+                "n_sites": 16
+              }
+            }
+          },
+          {
+            "counts": {
+              "cation_pi": 0,
+              "hbonds": 2,
+              "hydrophobic": 87,
+              "ionic": 0,
+              "pi_molstar": 2,
+              "pi_prolif": 2
+            },
+            "expected": {
+              "case_id": "DES",
+              "n_duplicate_rings": 2,
+              "n_sites": 18,
+              "n_steric_clashes": 0,
+              "observations": {
+                "cation_pi": 0,
+                "hbonds": 2,
+                "hydrophobic": 87,
+                "ionic": 0,
+                "pi_molstar": 2,
+                "pi_prolif": 2
+              },
+              "placement": "donor_contact"
+            },
+            "roles": {
+              "ligand": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 20,
+                "n_sites": 18
+              },
+              "partner": {
+                "excluded_clashes": 0,
+                "excluded_fit": 1.0,
+                "excluded_status": "matched",
+                "kept_n_sites": 20,
+                "n_sites": 18
+              }
+            }
+          }
+        ],
+        "host_tracking": true,
+        "n_evaluations": 48,
+        "n_primary_roles": 8,
+        "valid": true
+      }
+    ],
+    "composition": [
+      {
+        "actual_items": 5,
+        "actual_uses": 21,
+        "evaluations": {
+          "broad_reference": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "collision_excluded": {
+            "fit_value": 1.0,
+            "status": "not_matched"
+          },
+          "collision_positive": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "displaced": {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          },
+          "donor_reversed": {
+            "fit_value": 0.8888888888888888,
+            "status": "not_matched"
+          },
+          "kept": {
+            "fit_value": 0.8181818181818182,
+            "status": "not_matched"
+          },
+          "modular": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "reference": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "roundtrip": {
+            "fit_value": 1.0,
+            "status": "matched"
+          }
+        },
+        "host_tracking": false,
+        "n_evaluations": 9,
+        "n_observations": 23,
+        "n_sites": 9,
+        "valid": true
+      },
+      {
+        "actual_items": 13,
+        "actual_uses": 50,
+        "evaluations": {
+          "broad_reference": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "collision_excluded": {
+            "fit_value": 1.0,
+            "status": "not_matched"
+          },
+          "collision_positive": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "displaced": {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          },
+          "donor_reversed": {
+            "fit_value": 0.8888888888888888,
+            "status": "not_matched"
+          },
+          "kept": {
+            "fit_value": 0.8181818181818182,
+            "status": "not_matched"
+          },
+          "modular": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "reference": {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          "roundtrip": {
+            "fit_value": 1.0,
+            "status": "matched"
+          }
+        },
+        "host_tracking": true,
+        "n_evaluations": 9,
+        "n_observations": 23,
+        "n_sites": 9,
+        "valid": true
+      }
+    ]
+  },
+  "execution_attempts": {
+    "after_complete": {
+      "exit": 120,
+      "junit_bytes": 0,
+      "log_bytes": 0,
+      "note": "Exit 120 with empty log/XML amid confirmed quota exhaustion; no scientific result inferred.",
+      "qualification": "incomplete output; no valid test result claimed"
+    },
+    "after_initial": {
+      "exit": 0,
+      "note": "Before extending no-donor test with evaluated-empty construction.",
+      "passed": 29
+    },
+    "after_retry": {
+      "exit": 0,
+      "note": "Includes extended evaluated-empty assertion, bytecode/cache disabled.",
+      "tests": 29
+    },
+    "before": {
+      "exit": 1,
+      "failed": 14,
+      "note": "Corrected explicit .4 nm fixture. Two coincident guards refine existing rejection diagnostics; other failures expose missing provider delegation/validation/provenance.",
+      "passed": 1
+    },
+    "first_editable_refresh": {
+      "exit": 1,
+      "log": "install_quota_failure.log",
+      "outcome": "Disk quota failure during build dependency installation, before editable wheel build/uninstall; old PHMT remains."
+    },
+    "followup": "20-byte write probe succeeded; later 128-KiB write, full snapshot save and isolated build dependencies failed with EDQUOT. First install stopped before uninstall. Retired only verified completed owned build/render derivatives (58,728,806 bytes), then completed normal editable refresh from a complete clean pre-install snapshot. Task-only pip download cache retired afterward; all provider/native records compare equal.",
+    "initial_fixture": "15 fixture assertion failures before meaningful implementation comparison; see fixture_initial_note.json.",
+    "normal_editable_refresh_retry": {
+      "exit": 0,
+      "new_version": "0.4.0+62.g6a7537b",
+      "providers_native_and_source_unchanged": true
+    },
+    "payload_verifier_initial": {
+      "initial_script": "verify_public_payload_initial.py",
+      "outcome": "Archive SHA matched; parser initially omitted root site-packages/ entries and yielded zero files. Prefix handling corrected; no byte mismatch or provider modification occurred."
+    },
+    "read_startup_failure": {
+      "exit": 101,
+      "reason": "synthetic bubblewrap /tmp/.git mount quota failure before read-only command execution"
+    },
+    "snapshot_before_first_install": {
+      "exit": 1,
+      "outcome": "Disk quota exceeded saving complete manifest; incomplete file retained; no valid pre-install manifest claimed."
+    }
+  },
+  "full_evidence": {
+    "compressed_bytes": 3370549,
+    "compressed_sha256": "c36f51bb08d46dfc07ef8c08bf01383f3f87d6d1664069b637514464e42b8f11",
+    "path": "observed_donor_receiving_20261103.json.gz",
+    "uncompressed_bytes": 47720704,
+    "uncompressed_sha256": "c316c2cc7082cdeb85f01d7c162b00b5e167e4ef4f5f0cb60146ceb323bfbb4f"
+  },
+  "full_identity_unchanged": {
+    "ccd": true,
+    "composition": true,
+    "focused": true,
+    "public": true
+  },
+  "install_transition": {
+    "after_phmt": "0.4.0+62.g6a7537b",
+    "before_phmt": "0.4.0+56.g9387852",
+    "new_head": "6a7537beb5747f8f455c489f0908ce4c46b90fd6",
+    "normal_editable_refresh_only": true,
+    "providers_and_native_unchanged": true
+  },
+  "issue": "uibcdf/pharmacophoremt#41",
+  "junit": {
+    "before_contract": {
+      "errors": 0,
+      "failures": 14,
+      "per_module": {
+        "tests.test_interaction_donor_geometry": 15
+      },
+      "skipped": 0,
+      "suites": [
+        {
+          "errors": "0",
+          "failures": "14",
+          "hostname": "spika",
+          "name": "pytest",
+          "skipped": "0",
+          "tests": "15",
+          "time": "5.312",
+          "timestamp": "2026-11-03T16:28:48.420933-06:00"
+        }
+      ],
+      "tests": 15
+    },
+    "modern": {
+      "errors": 0,
+      "failures": 0,
+      "per_module": {
+        "tests.test_aligned_consensus": 17,
+        "tests.test_aromatic_interactions": 46,
+        "tests.test_attribution": 21,
+        "tests.test_ccd_interactions": 30,
+        "tests.test_complex_based_facade": 31,
+        "tests.test_conformer_screening": 20,
+        "tests.test_curation": 47,
+        "tests.test_interaction_composition": 41,
+        "tests.test_interaction_donor_geometry": 15,
+        "tests.test_ionic_interactions": 24,
+        "tests.test_molsysmt_feature_routes": 14,
+        "tests.test_pose_evaluation": 14,
+        "tests.test_receptor_projections": 66,
+        "tests.test_reference_ligand": 7,
+        "tests.test_rigid_consensus": 25
+      },
+      "skipped": 0,
+      "suites": [
+        {
+          "errors": "0",
+          "failures": "0",
+          "hostname": "spika",
+          "name": "pytest",
+          "skipped": "0",
+          "tests": "418",
+          "time": "327.518",
+          "timestamp": "2026-11-03T16:40:25.215001-06:00"
+        }
+      ],
+      "tests": 418
+    },
+    "public_payload": {
+      "errors": 0,
+      "failures": 0,
+      "per_module": {
+        "tests.test_aligned_consensus": 1,
+        "tests.test_interaction_donor_geometry": 3,
+        "tests.test_molsysmt_feature_routes": 2,
+        "tests.test_pose_evaluation": 1,
+        "tests.test_reference_ligand": 7
+      },
+      "skipped": 0,
+      "suites": [
+        {
+          "errors": "0",
+          "failures": "0",
+          "hostname": "spika",
+          "name": "pytest",
+          "skipped": "0",
+          "tests": "14",
+          "time": "12.052",
+          "timestamp": "2026-11-03T16:42:58.113797-06:00"
+        }
+      ],
+      "tests": 14
+    }
+  },
+  "measured_date": "2026-11-03",
+  "metadata_lookup_unchanged": {
+    "ccd": true,
+    "composition": true,
+    "focused": true,
+    "public": true
+  },
+  "modern_native": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "modern_provider": {
+    "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+    "status": ""
+  },
+  "physical_identity_unchanged": {
+    "ccd": true,
+    "composition": true,
+    "focused": true,
+    "public": true
+  },
+  "public_payload_artifact": {
+    "artifact": "/tmp/phmt41-receiving-20261028-89triy8l/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+    "scope": "Original frozen 0.23.0 Conda bytes versus previously extracted payload, not fresh channel inventory or clean installation.",
+    "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b"
+  },
+  "public_payload_files_unchanged": true,
+  "public_payload_files_verified": 3213,
+  "resource_retirement": {
+    "bytes_retired": 58728806,
+    "issue": "uibcdf/pharmacophoremt#41",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "post_install_owned_pip_cache_retired": {
+      "bytes": 1328753,
+      "path": "/tmp/phmt41-donor-20261103-v7u6z70u/pip-cache",
+      "reason": "Task-only build download cache after successful normal editable refresh; no shared cache touched."
+    },
+    "preserved_wheel": {
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/wheels/pharmacophoremt-0.4.0+46.g7e5b5a5-py3-none-any.whl",
+      "sha256": "4bbec721da449c3c9195296895cc2ef09d5f7e526639cfc8e1b97e9b3a4b8155"
+    },
+    "providers_native_and_environments": "Preserved; no tracked source removed.",
+    "reason": "Actual user disk quota blocked snapshot/build dependencies. Only completed owned reproducible derivatives retired. First preflight aborted before deletion because a historical render did not meet the source/log check; that render is preserved.",
+    "removed": [
+      {
+        "bytes": 16453276,
+        "local_retirement_marker": "/tmp/phmt69-fixed-20261103-q6cirii4/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt69-fixed-20261103-q6cirii4/wheel-source/build",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 181
+      },
+      {
+        "bytes": 6072171,
+        "local_retirement_marker": "/tmp/phmt30-acceptance-20261103-2mheqiv3/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt30-acceptance-20261103-2mheqiv3/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 43
+      },
+      {
+        "bytes": 6060370,
+        "local_retirement_marker": "/tmp/phmt37-acceptance-20261103-a5qoieik/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt37-acceptance-20261103-a5qoieik/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 45
+      },
+      {
+        "bytes": 6033254,
+        "local_retirement_marker": "/tmp/phmt36-acceptance-20261103-1lir6w0a/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt36-acceptance-20261103-1lir6w0a/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 39
+      },
+      {
+        "bytes": 6002330,
+        "local_retirement_marker": "/tmp/phmt29-acceptance-20261103-o7s59ui_/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt29-acceptance-20261103-o7s59ui_/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 39
+      },
+      {
+        "bytes": 6035981,
+        "local_retirement_marker": "/tmp/phmt17-acceptance-20261103-pqipkabu/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt17-acceptance-20261103-pqipkabu/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 39
+      },
+      {
+        "bytes": 6014500,
+        "local_retirement_marker": "/tmp/phmt33-acceptance-20261103-rk5qeyp_/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt33-acceptance-20261103-rk5qeyp_/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 39
+      },
+      {
+        "bytes": 6056924,
+        "local_retirement_marker": "/tmp/phmt32-acceptance-20261103-1_kyuklf/DERIVATIVES_RETIRED_20261103.json",
+        "path": "/tmp/phmt32-acceptance-20261103-1_kyuklf/docs-html",
+        "reason": "Retired reproducible build/render derivative; original source/config/logs/scientific evidence, wheels and environments retained.",
+        "regular_files": 45
+      }
+    ],
+    "skipped_without_full_preflight": [
+      "/tmp/phmt38-acceptance-20261103-q_sscz2e/docs-html"
+    ]
+  },
+  "schema": "pharmacophoremt.observed_donor_receiving_summary@1",
+  "temporary_resources": {
+    "borrowed_owned_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "consumer_base": "98dcc0c8b66fb6e1220d5fc208d8efa7997b41c8",
+    "issue": "uibcdf/pharmacophoremt#41",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Migrate observed donor/H vectors to public MolSysMT and share bounded receiving validation",
+    "review": "2026-11-17",
+    "scope": "Owned source receiving; no provider/native/shared-prefix/sibling changes. Normal PHMT editable refresh only after committed code producer."
+  }
+}

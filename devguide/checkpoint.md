@@ -1,5 +1,51 @@
 # Development Checkpoint
 
+## Observed donor vectors delegated; aromatic acceptance next — 2026-11-03
+
+Clean code **6a7537beb5747f8f455c489f0908ce4c46b90fd6** migrates the identified
+from_interactions H-bond vector to public MolSysMT and shares bounded receiving
+validation with get_features. Recognition/profile, ordered participants, local/
+source/frame axes and repeated observation evidence are preserved. Modern donor
+sites add detached geometry/route provenance; errors or invalid provider output
+propagate. One labeled genuine-old-provider absence branch retains historical
+arithmetic. No provider/native/pin/floor or chemical/scientific definition changes.
+
+The [receipt](evidence/observed_donor_receiving_20261103_summary.json) records
+**418 modern controls**, zero failures/errors/skips (327.52 s), including all 15
+new donor guards. **14 original-public-payload controls** pass without skips.
+The frozen 0.23.0 Conda SHA and all 3,213 extracted files match before/after; this
+uses inherited dependencies and is not clean ordinary installed qualification.
+Both original drivers pass with tracking off/on: composition retains 23
+observations/nine sites/nine evaluations; CCD eight roles/48 evaluations per
+profile, original directional/steric/persistence outcomes and unchanged complete
+chemistry/coordinates/bytes. Actual credits remain complete. Full physical and
+metadata identities agree in all four phases. No new complete suite is claimed;
+previous full-suite and #32/#82 metadata results retain their dated scopes.
+
+Fourteen new-contract controls fail before the migration; two refine the existing
+coincident-input rejection diagnostics. One no-donor control already passes.
+An initial fixture-threshold error and incomplete quota attempts are retained
+separately. The normal editable refresh succeeds only after actual quota recovery;
+complete pre/post manifests prove provider/native equality. PHMT runtime is now
+0.4.0+62.g6a7537b in the owned #69 venv. Only completed own build/HTML derivatives
+(58,728,806 bytes) and its task-only download cache are retired; all source/config/
+logs/scientific originals, the frozen wheel, providers/native and environments
+remain. Exact driver JSON bytes are kept in verified gzip to limit scratch usage.
+Canonical prefix and sibling worktrees are untouched.
+
+**Next: #34 aromatic acceptance**, independently checking its profile/participant
+mapping, geometry, empty/failure/persistence and actual attribution, driver and
+cookbook. The #41 modern caller migration is received; #41 stays partial for
+supported public delivery, justified floor/installed receiving and final historical
+fallback retirement, review 2026-11-11 (LMMV/dprada). Ideal acceptor models remain
+separate #375 science. #60 is available for a concrete independent variant; #66
+still needs four original methods. Addon/new release remain deferred. Hosted gates
+stay #9, installed/public/platform #23/#10 and inherited workspace #82.
+
+Owned root `/tmp/phmt41-donor-20261103-v7u6z70u/`, LMMV/dprada, review 2026-11-17.
+No local process remains after closeout. These are analytical/source controls,
+not biological or performance qualification. Original archives remain unchanged.
+
 ## Ionic acceptance complete; remaining donor-vector caller next — 2026-11-03
 
 #33 is resolved with its [archived report](archive/native_ionic_interactions.md)

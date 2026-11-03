@@ -1,5 +1,55 @@
 # MolSysMT feature API receiving
 
+## Observed donor migration received — 2026-11-03
+
+Code producer 6a7537beb5747f8f455c489f0908ce4c46b90fd6 closes the newly identified
+source caller: from_interactions now requests public structure.get_vectors for
+each distinct selected ordered donor/H pair. get_features and observed conversion
+share the same private receiving validation; neither reconstructs an available
+provider's failed/invalid output. Original observed chemistry/profile, participant
+roles, source/frame maps and repeated-contact evidence remain unchanged. No extra
+H-bond recognition or detection occurs during this conversion.
+
+Each observed donor site adds donor_geometry_route; its value is
+molsysmt.structure.get_vectors on the modern route and
+legacy_cartesian_donor_arithmetic_pending_phmt41 on genuine historical absence.
+Modern sites also carry detached donor_geometry, including original units,
+participants, offsets, requested frame, Cartesian method and parameters. Existing
+site source_atom_indices/model source_structure_indices keep the external maps;
+provider geometry indices are local. Acceptor-only, internal and evaluated-empty
+observations perform no donor-vector call. Existing get_features evidence and
+classical_atomic_formal@1 remain unchanged, with position-only acceptors.
+
+The [new receipt](evidence/observed_donor_receiving_20261103_summary.json) records
+**418 modern source controls** and **14 original 0.23.0 payload controls**, zero
+failures/errors/skips. Both modern capabilities are asserted before the source
+gate. Both affected drivers also pass: composition retains 23 observations,
+nine reused sites/nine evaluations per profile; CCD retains eight role hypotheses/
+48 evaluations per profile, including directional/steric negatives and unchanged
+complete input chemistry/bytes. Off/on scientific projections agree, with actual
+credits. Full physical and metadata identities are stable in all four phases.
+Prior #32/#82 observed-preparation metadata findings remain their original results.
+
+The public artifact's SHA-256 and 3,213 extracted files are verified against its
+original Conda bytes before and after testing. This is controlled unmodified-payload
+receiving with inherited dependencies and editable PHMT, not clean ordinary
+installation or a fresh channel-inventory check. Normal editable PHMT refresh to
+0.4.0+62.g6a7537b leaves controlled providers/native unchanged. No floor, pin,
+provider/sibling/shared-prefix changes or new biological/performance qualification.
+The new guards retain original baseline failures and all fixture/quota retries;
+none of the incomplete attempts is relabeled as a successful scientific run.
+
+The additional-caller finding below is superseded by this measured source
+migration. #41 stays partial for supported public-vector delivery, justified
+floor/installed receiving and final historical fallback retirement (LMMV/dprada,
+review 2026-11-11); ideal acceptor models remain #375's separate scientific scope.
+One shared private arithmetic branch preserves only genuine capability absence.
+Next local acceptance is #34. Source-free installed/public/platform gates stay
+#23/#10 and exact-head hosted gates #9. Owned resources are reviewed 2026-11-17;
+completed own build/render derivatives were retired to recover quota while
+preserving frozen source/config/log/scientific originals, wheels and native/env
+resources. Exact original driver JSON bytes remain in verified gzip artifacts.
+
 ## Additional observed-interaction caller — 2026-11-03
 
 The #33 ownership review identifies direct donor/H coordinate subtraction in the

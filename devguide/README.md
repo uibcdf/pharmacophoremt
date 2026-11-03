@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #33 ionic source/API acceptance is resolved (45 controls, both driver profiles, three cookbook blocks, stable full identities). Next migrate the newly found donor-vector caller in from_interactions under #41 using current public MolSysMT tools, then accept #34 aromatic queries. #41's public-floor/legacy retirement remains separate (review 2026-11-11); #60 is available when needed; #66 awaits four original methods. Prior #32/#82 metadata differences remain explicit; hosted/installed/public gates are separate. Public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #41's observed donor-vector caller is migrated to MolSysMT with shared receiving validation. Clean code 6a7537b passes 418 modern and 14 original-public-payload controls plus composition/CCD drivers; all phase identities are stable. Next accept #34 aromatic queries. #41's supported-public/installed migration and final old-provider fallback removal remain partial (review 2026-11-11). #66 awaits four original methods; #60 is available for a concrete variant. Quota/resource retirement and earlier #82 limits are explicit; hosted/public gates remain separate. Public release stays 0.4.0.
 
 ## Classical Workflow Specification
 
