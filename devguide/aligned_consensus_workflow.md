@@ -98,3 +98,44 @@ Unaligned discovery,
 complete native complex consensus, aggregate angular statistics and a replacement
 for legacy RDP/clique modeling remain subsequent work. Generic molecular/angular
 provider gaps require linked consumer evidence, not copied kernels.
+
+## Current source/API acceptance — 2026-11-03
+
+#21 is resolved with its [archived report](archive/native_aligned_consensus.md).
+The [new receipt](evidence/aligned_reference_acceptance_20261103_summary.json)
+verifies all 17 aligned-consensus controls within the original 418-item source
+execution at code 6a7537b. Clean receiving head daae2d2 has identical tracked
+runtime/helper/test/driver/workflow trees, actual loaded sources/native bytes,
+helpers/inputs and metadata. Original receipt hash/XML are retained; no fresh
+pytest/full-suite execution is claimed. Exhaustive assignment, repeated/reordered
+types, identity/occurrence rejection, reference orientation, empty evidence,
+per-input frame/state/selection and allocation-budget guards retain that proof.
+
+Fresh fixed-input workflow execution passes with host tracking off/on under
+pm/fs/degrees. Its independent center .17 nm/RMSD .02 nm and support 2/3 remain
+correct with an empty-feature ligand in the denominator. Base radius .06 nm gives
+matched/matched/not_matched (fits 1/1/0); a separate .005 nm model retains support
+two yet rejects both contributors. Complete rejected-group evidence is distinct
+from failed construction (PHMT-E102/null fit); a two-entry matrix under limit one
+fails PHMT-E106/null fit. JSON/YAML read under angstrom/ps/radians preserve
+metadata, radius and all outcomes. Eleven pose evaluations per tracking profile
+pass; source atom identity/chemical state/coordinates remain unchanged. Off/on
+science agrees; actual prepared-input capture is 3 items/3 uses and 11/29.
+
+Both unchanged cookbook blocks execute in an application-owned session (11 items/
+22 uses). Strict isolated rendering passes with two neighbor link-target stubs.
+Full physical and metadata identities remain stable in both fresh phases. No
+runtime/test/input/provider/prefix/sibling change is required. The initial
+one-off capsule's missing-import failure is retained separately, never qualified
+as a successful run. Earlier October and #32/#82 records retain their identities.
+
+Molecular operations remain public MolSysMT calls. PHMT mean/residual calculations
+aggregate cached pharmacophoric site populations; retaining the reference
+orientation requires no new molecular/angular-average provider. Declared IDs do
+not establish chemical uniqueness. This method remains reference-anchored,
+nonexhaustive and independent of radius/affinity interpretation. Current receiving
+does not qualify clean installed/public/platform, biology, performance or hosted
+gates (#23/#10/#9). The old provider revisions/future-implementation list above
+are historical; other implemented methods have their own contracts and acceptance.
+Next review #24's aligned-clique method; #41 public/legacy migration remains
+partial (review 2026-11-11). Owned resources are reviewed 2026-11-17 by LMMV/dprada.

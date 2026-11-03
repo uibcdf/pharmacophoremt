@@ -1,5 +1,51 @@
 # Development Checkpoint
 
+## Reference-anchored aligned consensus accepted; clique method next — 2026-11-03
+
+#21 is resolved with its [archived report](archive/native_aligned_consensus.md)
+and [new receipt](evidence/aligned_reference_acceptance_20261103_summary.json).
+Clean receiving head **daae2d226f17f91e521425abfb779268bfad4b7e** exactly matches
+code 6a7537b's runtime/helper/test/driver/workflow trees, actual loaded sources/
+native bytes, helper/input hashes and metadata. The prior 418-item execution,
+including all **17 aligned-consensus controls**, is verified/reused with its
+original receipt hash/XML. No fresh pytest or complete full-suite run is claimed.
+
+Fresh analytical off/on workflows pass: independent center .17 nm, RMSD .02 nm,
+support 2/3 including the empty-feature ligand. The base .06 nm query accepts
+both contributors and rejects sodium (fits 1/1/0); a .005 nm query retains support
+two yet rejects both contributors. Matching/aggregation compose, unsupported
+construction fails PHMT-E102/null fit, and matrix budget exhaustion fails
+PHMT-E106/null fit. JSON/YAML under different unit policies retain metadata/radius
+and all pose outcomes. All 11 evaluations per tracking profile pass; declared
+atom identity/chemical state/coordinates remain unchanged. Off/on science agrees,
+with actual capture 3 items/3 uses off and 11/29 on. Both cookbook blocks and
+strict isolated rendering pass (two neighbor stubs), with actual recipe credit
+11/22. Full identities are stable in both fresh phases.
+
+**Ownership:** all molecular conversion/translation/inspection/recognition and
+geometry/state access use MolSysMT. PHMT's public tools match and aggregate
+cached pharmacophoric features, counting declared IDs and retaining reference
+orientation; no molecular/angular kernel or hidden preparation/alignment is added.
+No library/test/fixture/scientific-definition/provider/prefix/sibling change is
+needed. A missing import in the first one-off acceptance script is retained as an
+incomplete attempt, corrected only in that script.
+
+**Next: #24 aligned-clique acceptance**, independently reviewing reference-free
+site discovery, alternative jointly supported hypotheses, graph/clique budgets,
+occurrence conflicts, rejection/completion evidence, persistence and actual
+attribution plus its executable example. Current tools support that work. #21 is
+not a claim of exhaustive search, ligand chemical uniqueness, affinity, biology
+or performance. #41 remains partial for supported-public/floor/installed migration
+and final historical fallback retirement (review 2026-11-11). #60 is available for
+a concrete independent variant; #66 awaits four original binding methods.
+Addon/new release remain deferred; hosted #9, installed/public/platform #23/#10
+and inherited workspace #82 keep their gates.
+
+Owned root `/tmp/phmt21-acceptance-20261103-7sqezsdu/`, LMMV/dprada, review
+2026-11-17. Borrowed #69 venv still resolves editable PHMT 0.4.0+62.g6a7537b with
+unchanged controlled providers/native. No local process remains after closeout.
+Original archives/provider/warning history remain unchanged.
+
 ## Aromatic workflow accepted; aligned consensus next — 2026-11-03
 
 #34 is resolved with its [archived report](archive/native_aromatic_interactions.md)

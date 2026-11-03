@@ -1,0 +1,349 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "attribution_scope": "Fixed fixtures prepared once through public MolSysMT outside captures; captures cover reached construction/matching/aggregation/evaluation/persistence work on prepared inputs.",
+    "biological_validation": false,
+    "chemical_identity": "Three declared identities in an analytical fixture; chemical equivalence/dataset uniqueness is not inferred.",
+    "clean_dependency_closure": false,
+    "documentation_scope": "Strict isolated unchanged aligned-consensus cookbook page with two neighbor link-target stubs; not full-site/neighboring-recipe qualification.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "fresh_scope": "Fixed three-input analytical acceptance capsule plus two unchanged cookbook blocks at clean daae2d2. Original 17 aligned-consensus controls and adjacent source guards reused from exact matching 418-item source execution.",
+    "full_platform_matrix": false,
+    "historical_fallback": "PHMT #41 stays partial, review 2026-11-11. No floor/pin/release change.",
+    "initial_capsule_failure": "Missing NumPy import in one-off script, retained with initial source snapshot/log; incomplete attempt not qualified as science. No library/test/provider correction.",
+    "installed_wheel_qualification": false,
+    "new_pytest_execution": false,
+    "ownership": "Molecular conversion/translation/inspection/chemical-state serialization through public MolSysMT; PHMT matches/aggregates cached pharmacophoric features and retains reference orientations. No molecular mean/angle/preparation kernel is added.",
+    "performance_measured": false,
+    "prior_source_producer": "6a7537beb5747f8f455c489f0908ce4c46b90fd6",
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_or_scientific_definition_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Owned #69 system-site-packages venv; ordinary editable PHMT 0.4.0+62.g6a7537b with controlled providers/native unchanged. No prefix/provider/native/sibling mutation.",
+    "verified_reused_pytest": true
+  },
+  "consumer": {
+    "head": "daae2d226f17f91e521425abfb779268bfad4b7e",
+    "status": ""
+  },
+  "cookbook_actual_attribution": {
+    "items": 11,
+    "uses": 22
+  },
+  "executed_cookbook_blocks": 2,
+  "execution_attempts": {
+    "correction": "Add explicit numpy import to the acceptance script only; no library/test/provider/source change.",
+    "initial_capsule": {
+      "cause": "Missing numpy import in the one-off acceptance capsule, before numerical oracle/persistence/attribution comparisons completed.",
+      "exit_code": 1,
+      "retained": [
+        "run_workflow_initial.py",
+        "workflow_initial_before.json",
+        "workflow_initial.log"
+      ],
+      "scientific_qualification": false
+    }
+  },
+  "fresh_workflow_profiles": [
+    {
+      "actual_items": 3,
+      "actual_uses": 3,
+      "evaluations": {
+        "evaluations": [
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ],
+        "narrow_evaluations": [
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ]
+      },
+      "expected_center_nm": [
+        0.17,
+        0,
+        0
+      ],
+      "expected_position_rmsd_nm": 0.02,
+      "failed_construction": {
+        "code": "PHMT-E102",
+        "fit_value": null,
+        "reason": "Invalid 'ligands': no supported geometrically consistent consensus sites.",
+        "status": "failed"
+      },
+      "host_tracking": false,
+      "independent_oracle_passed": true,
+      "matrix_budget_failure": {
+        "code": "PHMT-E106",
+        "extra": {
+          "api_url": "",
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "matrix_entries": 2,
+          "max_matrix_entries": 1
+        },
+        "fit_value": null,
+        "status": "failed"
+      },
+      "n_declared_ligands": 3,
+      "n_pose_evaluations": 11,
+      "narrow_radius_nm": 0.005,
+      "positive_radius_nm": 0.06,
+      "restored_evaluations": {
+        "json": [
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ],
+        "yaml": [
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ]
+      },
+      "source_domains_unchanged": true,
+      "support_count": 2,
+      "support_fraction": 0.6666666666666666
+    },
+    {
+      "actual_items": 11,
+      "actual_uses": 29,
+      "evaluations": {
+        "evaluations": [
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ],
+        "narrow_evaluations": [
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ]
+      },
+      "expected_center_nm": [
+        0.17,
+        0,
+        0
+      ],
+      "expected_position_rmsd_nm": 0.02,
+      "failed_construction": {
+        "code": "PHMT-E102",
+        "fit_value": null,
+        "reason": "Invalid 'ligands': no supported geometrically consistent consensus sites.",
+        "status": "failed"
+      },
+      "host_tracking": true,
+      "independent_oracle_passed": true,
+      "matrix_budget_failure": {
+        "code": "PHMT-E106",
+        "extra": {
+          "api_url": "",
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "matrix_entries": 2,
+          "max_matrix_entries": 1
+        },
+        "fit_value": null,
+        "status": "failed"
+      },
+      "n_declared_ligands": 3,
+      "n_pose_evaluations": 11,
+      "narrow_radius_nm": 0.005,
+      "positive_radius_nm": 0.06,
+      "restored_evaluations": {
+        "json": [
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ],
+        "yaml": [
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 1.0,
+            "status": "matched"
+          },
+          {
+            "fit_value": 0.0,
+            "status": "not_matched"
+          }
+        ]
+      },
+      "source_domains_unchanged": true,
+      "support_count": 2,
+      "support_fraction": 0.6666666666666666
+    }
+  ],
+  "full_evidence": {
+    "compressed_bytes": 383609,
+    "compressed_sha256": "829affb29ca8bba88d6e5fc3816a2745f7dc339a8d794af854540bcaef42a126",
+    "path": "aligned_reference_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 3273852,
+    "uncompressed_sha256": "61bde133e67f0aa59a5ea4a44f7099961488dd7912f15c1f92382b9eeaf2ab9c"
+  },
+  "full_identity_unchanged": {
+    "cookbook": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#21",
+  "measured_date": "2026-11-03",
+  "metadata_lookup_unchanged": {
+    "cookbook": true,
+    "workflow": true
+  },
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "physical_identity_unchanged": {
+    "cookbook": true,
+    "workflow": true
+  },
+  "reused_source_tests": {
+    "actual_source_native_helpers_tests_inputs_and_metadata_match": true,
+    "errors": 0,
+    "failures": 0,
+    "measured_consumer": {
+      "head": "6a7537beb5747f8f455c489f0908ce4c46b90fd6",
+      "status": ""
+    },
+    "original_full_evidence": {
+      "compressed_bytes": 3370549,
+      "compressed_sha256": "c36f51bb08d46dfc07ef8c08bf01383f3f87d6d1664069b637514464e42b8f11",
+      "path": "observed_donor_receiving_20261103.json.gz",
+      "uncompressed_bytes": 47720704,
+      "uncompressed_sha256": "c316c2cc7082cdeb85f01d7c162b00b5e167e4ef4f5f0cb60146ceb323bfbb4f"
+    },
+    "original_receipt": "devguide/evidence/observed_donor_receiving_20261103_summary.json",
+    "owning_aligned_consensus_items": 17,
+    "receiving_consumer": {
+      "head": "daae2d226f17f91e521425abfb779268bfad4b7e",
+      "status": ""
+    },
+    "reused_actual_pytest_items": 418,
+    "scope": "Verified reuse of original 418-item source execution at 6a7537b, including all 17 aligned-consensus controls; no fresh pytest execution is claimed.",
+    "skipped": 0,
+    "tracked_tree_identities": {
+      "6a7537beb5747f8f455c489f0908ce4c46b90fd6": {
+        ".github": "47d933288a89b267d5b497f2982e64304e969fc6",
+        "devtools": "0cac9809cd05cb39c19518be0866b33e031f04f2",
+        "molsysviewer_pharmacophoremt": "350924fd3c143cc967a5a58c92ecbb23fd0d2f87",
+        "pharmacophoremt": "7a9ccd6463095f8a1c3be99b61f96e263eab135c",
+        "phmt_test_support": "c9f12e199cf17069fa895daaeb3977a53d6e62d1",
+        "pyproject.toml": "c1f68d6bcefcf7300284e97a2a73d2102577737b",
+        "tests": "816166dcea8a82fd50be8e99f1b5c9456a5fd3f4"
+      },
+      "daae2d226f17f91e521425abfb779268bfad4b7e": {
+        ".github": "47d933288a89b267d5b497f2982e64304e969fc6",
+        "devtools": "0cac9809cd05cb39c19518be0866b33e031f04f2",
+        "molsysviewer_pharmacophoremt": "350924fd3c143cc967a5a58c92ecbb23fd0d2f87",
+        "pharmacophoremt": "7a9ccd6463095f8a1c3be99b61f96e263eab135c",
+        "phmt_test_support": "c9f12e199cf17069fa895daaeb3977a53d6e62d1",
+        "pyproject.toml": "c1f68d6bcefcf7300284e97a2a73d2102577737b",
+        "tests": "816166dcea8a82fd50be8e99f1b5c9456a5fd3f4"
+      }
+    }
+  },
+  "schema": "pharmacophoremt.aligned_reference_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_owned_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "consumer_base": "daae2d226f17f91e521425abfb779268bfad4b7e",
+    "issue": "uibcdf/pharmacophoremt#21",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Reference-anchored aligned consensus source/API acceptance, exact prior-test reuse, cookbook and bounded workflow controls",
+    "review": "2026-11-17",
+    "scope": "All molecular preparation/inspection/transforms via MolSysMT; pharmacophoric matching/aggregation via existing PHMT tools; no provider/native/prefix/sibling changes or clean public qualification."
+  }
+}

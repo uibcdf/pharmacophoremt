@@ -1,5 +1,32 @@
 # Strategic Roadmap
 
+## Reference-anchored aligned method accepted; next clique discovery — 2026-11-03
+
+#21 is resolved. The [receipt](evidence/aligned_reference_acceptance_20261103_summary.json)
+verifies reuse of all 17 aligned-consensus controls from the original 418-item
+run at code 6a7537b, with exact source/native/helper/test/input/metadata and tracked
+tree identity at clean receiving head daae2d2. Fresh off/on capsule execution
+retains center/support/dispersion, input domains, failed-versus-negative semantics,
+matrix budget, radius-independent support and JSON/YAML outcomes across unit
+policies. Eleven pose evaluations per profile, both cookbook blocks and strict
+isolated rendering pass. Full identities are stable; no runtime/test/input/
+provider changes or new pytest/full-suite execution are claimed.
+
+Next accept **#24 aligned clique consensus**: review reference-independent
+maximal-site discovery and alternative jointly supported hypotheses, unique
+identities/occurrences, graph/clique budgets, rejection/completion evidence,
+persistence and actual attribution plus its cookbook. Its completeness claims
+remain distinct from #21's single reference and one chosen pairwise assignment.
+All molecular operations remain MolSysMT-owned; PHMT matches/aggregates cached
+pharmacophoric sites and retains reference orientations. No generic molecular
+or angular averaging tool is copied here.
+
+#41 public/floor/installed migration and final historical arithmetic retirement
+stay partial, review 2026-11-11. #60 concrete-copy receiving and #66's four original
+binding methods keep their scopes. Hosted #9, installed/public/platform #23/#10
+and workspace #82 remain independent. #323/#375/#447 retain provider ownership;
+addon/new release stay deferred. See [checkpoint](checkpoint.md).
+
 ## Aromatic source/API acceptance complete; next aligned consensus — 2026-11-03
 
 #34 is resolved. The [receipt](evidence/aromatic_acceptance_20261103_summary.json)

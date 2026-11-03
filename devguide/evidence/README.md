@@ -7,6 +7,22 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Aligned-reference source/API acceptance — 2026-11-03
+
+The [new summary](aligned_reference_acceptance_20261103_summary.json) and
+checksum-qualified archive record #21 at clean receiving head daae2d2. All 17
+aligned-consensus controls are verified reuse of code 6a7537b's original 418-item
+execution, with matching tracked trees/loaded sources/native/helpers/tests/inputs/
+metadata and retained original receipt hash/XML. No new pytest is claimed.
+Fresh prepared-input off/on capsules pass independent center/support/dispersion,
+11 pose evaluations each, radius-independent support, complete rejected groups,
+null-score construction/budget failures and JSON/YAML under changed unit policy.
+Molecular domains remain unchanged. Two cookbook blocks and strict isolated
+rendering pass (two neighbor stubs), with stable full identities and actual
+credit. A missing NumPy import in the initial one-off capsule is preserved as
+an incomplete attempt, corrected only in that script. No library/test/provider
+change or clean installed/public/platform, biological/performance claim follows.
+
 ## Aromatic source/API acceptance — 2026-11-03
 
 The [new summary](aromatic_acceptance_20261103_summary.json) and checksum-qualified
