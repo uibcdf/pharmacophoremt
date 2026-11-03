@@ -12,6 +12,9 @@ shared/editable dependency limitations remain explicit in the
 The next gate is our [eight-cell source CI 41674239397](https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397),
 still pending at this receipt. Verify every actual scientific test step for exact
 7e5b5a5, then integrate directly into main and inspect main receiving under #9.
+The later macOS 3.14 cancellation occurred before any step because GitHub could
+not supply a hosted ARM64 runner. Recover that cell after the active attempt
+settles; its rejected individual retry and native annotations are in the checkpoint.
 Main runtime/pins are preserved until that result; no provider implementation or
 human scientific validation is currently awaited for this step. Keep installed
 Conda/public qualification and any future minimum/release separate. Addon and

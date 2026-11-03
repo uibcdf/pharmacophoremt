@@ -1,0 +1,107 @@
+{
+  "annotations": [
+    {
+      "annotation_level": "failure",
+      "blob_href": "https://github.com/uibcdf/pharmacophoremt/blob/7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d/.github",
+      "end_column": null,
+      "end_line": 1,
+      "message": "The job was not acquired by Runner of type hosted even after multiple attempts",
+      "path": ".github",
+      "raw_details": "",
+      "start_column": null,
+      "start_line": 1,
+      "title": ""
+    },
+    {
+      "annotation_level": "notice",
+      "blob_href": "https://github.com/uibcdf/pharmacophoremt/blob/7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d/.github",
+      "end_column": null,
+      "end_line": 1,
+      "message": "Due to capacity constraints, jobs targeting macOS arm64 runners may experience longer queue times.",
+      "path": ".github",
+      "raw_details": "",
+      "start_column": null,
+      "start_line": 1,
+      "title": ""
+    },
+    {
+      "annotation_level": "notice",
+      "blob_href": "https://github.com/uibcdf/pharmacophoremt/blob/7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d/.github",
+      "end_column": null,
+      "end_line": 1,
+      "message": "Due to capacity constraints, jobs targeting macOS arm64 runners may experience longer queue times.",
+      "path": ".github",
+      "raw_details": "",
+      "start_column": null,
+      "start_line": 1,
+      "title": ""
+    },
+    {
+      "annotation_level": "notice",
+      "blob_href": "https://github.com/uibcdf/pharmacophoremt/blob/7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d/.github",
+      "end_column": null,
+      "end_line": 1,
+      "message": "Due to capacity constraints, jobs targeting macOS arm64 runners may experience longer queue times.",
+      "path": ".github",
+      "raw_details": "",
+      "start_column": null,
+      "start_line": 1,
+      "title": ""
+    }
+  ],
+  "attempt": 1,
+  "consumer": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+  "individual_retry": {
+    "command": [
+      "gh",
+      "run",
+      "rerun",
+      "41674239397",
+      "--repo",
+      "uibcdf/pharmacophoremt",
+      "--job",
+      "126050438777"
+    ],
+    "exit_code": 1,
+    "output": "job 126050438777 cannot be rerun\n"
+  },
+  "issue": "uibcdf/pharmacophoremt#9",
+  "job": {
+    "check_run_url": "https://api.github.com/repos/uibcdf/pharmacophoremt/check-runs/126050438777",
+    "completed_at": "2026-11-03T16:59:58Z",
+    "conclusion": "cancelled",
+    "created_at": "2026-11-03T16:26:36Z",
+    "head_branch": "receiving/chemical-domain-fixed-20261103",
+    "head_sha": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438777",
+    "id": 126050438777,
+    "labels": [
+      "macos-15"
+    ],
+    "name": "Test on macos-15, Python 3.14",
+    "node_id": "CR_kwDOP5ch7M8AAAAdWTEOeQ",
+    "run_attempt": 1,
+    "run_id": 41674239397,
+    "run_url": "https://api.github.com/repos/uibcdf/pharmacophoremt/actions/runs/41674239397",
+    "runner_group_id": 0,
+    "runner_group_name": "",
+    "runner_id": 0,
+    "runner_name": "",
+    "started_at": "2026-11-03T16:26:36Z",
+    "status": "completed",
+    "steps": [],
+    "url": "https://api.github.com/repos/uibcdf/pharmacophoremt/actions/jobs/126050438777",
+    "workflow_name": "CI"
+  },
+  "next": "Wait for the active attempt to settle and retry the unexecuted/cancelled cell through the supported rerun route; retain original successful cells and inspect actual retry steps. Do not claim an eight-cell pass. No code/science correction inferred from runner capacity.",
+  "receiving_issue": "uibcdf/pharmacophoremt#69",
+  "receptor": {
+    "boundary": "Available published older receptor reports pending; authoritative native job/annotations supply the capacity cause.",
+    "exit_code": 3,
+    "text": "PENDING conclusion=None status=in_progress | uibcdf/pharmacophoremt | run=41674239397 attempt=1 | profile=ci\nworkflow: .github/workflows/CI.yaml | jobs: 10 (cancelled=1, in_progress=4, skipped=1, success=4)\nnon-success groups (1, 1 jobs):\n- Test on macos-15, Python 3.14 | cancelled\nci roles: test=8(cancelled:1,in_progress:4,success:3); other=2(skipped:1,success:1)\nartifacts: none\nrun: https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397\n",
+    "version": "1.0.0"
+  },
+  "recorded_at": "2026-11-03T17:03:18.648408+00:00",
+  "run": 41674239397,
+  "schema": "pharmacophoremt.hosted_receiving_capacity@1"
+}

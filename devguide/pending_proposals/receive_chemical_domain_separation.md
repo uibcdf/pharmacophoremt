@@ -34,7 +34,11 @@ finishes: governance and Linux 3.13/3.14 pass at the receipt; six scientific cel
 are still active/queued. #9 owns that receiving gate. Next inspect all eight actual
 test steps at exact 7e5b5a5, integrate directly if green, update the durable guard
 to the candidate's domain module and inspect main CI. #69 remains partial.
-Historical receipts and the earlier handoff below retain their original claims.
+Later macOS 3.14 cancellation is a hosted runner-capacity failure before any step;
+the [native addendum](../evidence/chemical_domain_ci_capacity_20261103.json)
+retains the cause and rejected individual-rerun attempt. Recover that cell after
+the active attempt settles; Linux 3.11 has now passed too. Historical receipts
+and the earlier handoff below retain their original claims.
 
 ## Reviewed isolated candidate and typed-fidelity handoff — 2026-11-02
 

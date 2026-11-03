@@ -44,7 +44,16 @@ main 23c0648 passes all eight scientific cells on its **older** source pins;
 that does not qualify the new pair. #531 is no longer the blocker. #69 stays
 partial and #9 owns remaining hosted receiving.
 
-**Resume:** inspect all eight actual `Run tests` steps in 41674239397 at exact
+**Later native capacity update:** macOS 3.14 job **126050438777** is cancelled
+without executing steps. [Native job/annotation receipt](evidence/chemical_domain_ci_capacity_20261103.json)
+records that no hosted runner acquired the job despite multiple attempts, with
+explicit macOS ARM64 capacity notices. Linux 3.11 has meanwhile passed; this is
+not a scientific failure or a complete matrix pass. An individual rerun attempt
+returns `job 126050438777 cannot be rerun` while the workflow remains active.
+After the current attempt settles, retry the unexecuted cell through the supported
+rerun route, retaining earlier successful jobs and checking actual retry steps.
+
+**Resume:** recover that cell and inspect all eight actual `Run tests` steps in 41674239397 at exact
 7e5b5a5; diagnose failures if any. Once green, integrate the published candidate
 directly into main, preserving current checkpoint/evidence, update this report's
 guard to the candidate domain module and inspect the resulting main CI. Keep
@@ -58,6 +67,13 @@ editable PHMT; reinstall/select exact candidate source before replaying source
 tests. The clean `wheel-source` clone preserves 7e5b5a5. The archived installed
 runner binds support to a checkout at that commit. Both local scientific
 processes have completed; only the remote matrix remains active.
+
+The capacity-note followup is documentation/evidence only and uses one bounded
+`[skip ci]` checkpoint to avoid adding another eight-cell queue during this
+observed runner shortage. Main's unskipped 53c1541 CI **41679560745** remains
+active on its unchanged old runtime/pins. #9 retains recovery/daily-backlog
+ownership; candidate integration must finish on an unskipped main head. Local
+report/index/whitespace checks cover this note; no scientific evidence is relabeled.
 
 ## Owner receiving candidate reviewed; four typed-column checks pending — 2026-11-02
 
