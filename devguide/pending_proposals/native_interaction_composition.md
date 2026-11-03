@@ -78,3 +78,21 @@ Public-tool composition, both duplicate policies, source/constraint compatibilit
 evaluated-empty and failed cases, source preservation, persistence, independent
 geometry/veto controls and real optional attribution pass. Document the standalone
 tools and executable cookbook; retain reproducible original evidence.
+
+## Functional acceptance in progress — 2026-11-03
+
+Review of main b5564f4 reproduced cached participant reuse despite a contradictory
+`source_geometry_atom_indices` declaration: local atom/geometry [6] was accepted
+with source geometry [7] under an identity source map. Optional site-level state
+declarations were also unchecked against their native component. Eight new
+counterexamples fail before the correction; a reordered/nonidentity source-map
+control already passes. All nine controls pass after validating declared geometry
+maps and site states before reuse. Inputs and intentional molecular references
+remain unchanged; generic keep remains independent of native identity assertions.
+
+This is PHMT cached-evidence validation, without molecular queries, normalization,
+coordinate calculations, provider changes or new scientific definitions. Next
+qualify the complete owning/coupled controls, existing tracking off/on driver and
+three cookbook blocks on a committed producer before deciding closure. The recent
+1,020-case full source run at 96f917a remains its original baseline, not execution
+of this new correction. Exact-head hosted receiving stays #9.

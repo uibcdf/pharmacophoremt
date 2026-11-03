@@ -25,6 +25,16 @@ source correspondence must agree with the maps. Source declarations cannot
 authenticate molecular origin. Identity is the feature plus whole atom membership,
 never center proximity. Distinct coincident participants remain distinct.
 
+When a site declares geometry members, `geometry_atom_indices` and
+`source_geometry_atom_indices` must both be present. Local members are nonempty,
+unique nonnegative integer indices within the declared atom map; each source
+member must match that map in the supplied order. Reordered geometry is valid
+when its source correspondence is reordered consistently, including nonidentity
+source maps. An optional site-level `chemical_state_index` must be an integer
+agreeing with its component's declared state. Inconsistent evidence raises
+without changing the inputs. Generic `keep` preserves input evidence independently
+without asserting native participant identity.
+
 Compatible duplicates retain one shape, flag and weight. Shape kind, geometry
 members, original charge, center, radius and orientation must agree. Weights and
 essential flags agree exactly. Absolute representation tolerance is 1e-12 nm/

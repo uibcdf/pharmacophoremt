@@ -85,6 +85,46 @@ def _participant(site, model):
             argument="pharmacophores",
             reason="require complete native participant correspondence",
         )
+    if "chemical_state_index" in metadata:
+        state = metadata["chemical_state_index"]
+        if (
+            isinstance(state, (bool, np.bool_))
+            or not isinstance(state, (int, np.integer))
+            or state != model.metadata["parameters"]["chemical_state_index"]
+        ):
+            raise ArgumentError(
+                argument="pharmacophores",
+                reason="site chemical state differs from the native component declaration",
+            )
+    if (
+        "geometry_atom_indices" in metadata
+        or "source_geometry_atom_indices" in metadata
+    ):
+        geometry = metadata.get("geometry_atom_indices")
+        source_geometry = metadata.get("source_geometry_atom_indices")
+        source_map = model.metadata["source_atom_indices"]
+        if (
+            not isinstance(geometry, list)
+            or not geometry
+            or not isinstance(source_geometry, list)
+            or len(geometry) != len(source_geometry)
+            or any(
+                isinstance(index, bool)
+                or not isinstance(index, int)
+                or not 0 <= index < len(source_map)
+                for index in geometry
+            )
+            or len(set(geometry)) != len(geometry)
+            or any(
+                isinstance(index, bool) or not isinstance(index, int) or index < 0
+                for index in source_geometry
+            )
+            or source_geometry != [source_map[index] for index in geometry]
+        ):
+            raise ArgumentError(
+                argument="pharmacophores",
+                reason="require complete native geometry correspondence",
+            )
     return site.feature_name, tuple(sorted(atoms))
 
 

@@ -16,8 +16,10 @@ from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt._private.smonitor.warnings import AckreditTrackingWarning
 from pharmacophoremt.io import load_json, to_json
+from pharmacophoremt.io.phmt import _to_dict
 from pharmacophoremt.modeler import (
     compose_pharmacophores,
+    copy_pharmacophore,
     from_interaction_collection,
     from_interactions,
     get_excluded_volume_sites,
@@ -247,6 +249,79 @@ def test_incompatible_cached_model_sources_are_rejected(case, field, value):
         compose_pharmacophores(
             {"a": original, "b": other}, duplicate_policy="same_participant"
         )
+
+
+@pytest.mark.parametrize(
+    "changes",
+    [
+        {"source_geometry_atom_indices": [7]},
+        {"geometry_atom_indices": [999], "source_geometry_atom_indices": [999]},
+        {"geometry_atom_indices": [True], "source_geometry_atom_indices": [1]},
+        {"geometry_atom_indices": [6, 6], "source_geometry_atom_indices": [6, 6]},
+        {"geometry_atom_indices": None},
+        {"source_geometry_atom_indices": None},
+        {"chemical_state_index": 1},
+        {"chemical_state_index": False},
+    ],
+)
+def test_native_reuse_rejects_inconsistent_site_geometry_or_state_without_mutation(
+    case, changes
+):
+    original = components(case)["ionic"]
+    changed = copy_pharmacophore(original)
+    for field, value in changes.items():
+        if value is None:
+            changed.interaction_sites[0].metadata.pop(field)
+        else:
+            changed.interaction_sites[0].metadata[field] = deepcopy(value)
+    before = _to_dict(changed)
+    original_before = _to_dict(original)
+    linked = changed.molecular_system
+    with pytest.raises(
+        ArgumentError, match="geometry correspondence|site chemical state"
+    ):
+        compose_pharmacophores(
+            {"changed": changed}, duplicate_policy="same_participant"
+        )
+    assert _to_dict(changed) == before
+    assert _to_dict(original) == original_before
+    assert changed.molecular_system is linked
+    kept = compose_pharmacophores({"changed": changed})
+    assert kept.n_interaction_sites == 1
+    assert (
+        kept.interaction_sites[0].metadata["composition_contributions"][0]["metadata"]
+        == before["interaction_sites"][0]["metadata"]
+    )
+
+
+def test_native_reuse_accepts_reordered_geometry_under_nonidentity_source_maps(case):
+    original = copy_pharmacophore(components(case)["pi_prolif"])
+    source_map = [100 + index for index in original.metadata["source_atom_indices"]]
+    original.metadata["source_atom_indices"] = source_map
+    for site in original.interaction_sites:
+        for local, external in [
+            ("atom_indices", "source_atom_indices"),
+            ("geometry_atom_indices", "source_geometry_atom_indices"),
+        ]:
+            site.metadata[external] = [
+                source_map[index] for index in site.metadata[local]
+            ]
+    reordered = copy_pharmacophore(original)
+    site = reordered.interaction_sites[0]
+    site.metadata["geometry_atom_indices"].reverse()
+    site.metadata["source_geometry_atom_indices"].reverse()
+    result = compose_pharmacophores(
+        {"original": original, "reordered": reordered},
+        duplicate_policy="same_participant",
+    )
+    assert result.n_interaction_sites == 1
+    assert result.metadata["site_map"][-1]["action"] == "reused"
+    assert (
+        result.interaction_sites[0].metadata["composition_contributions"][1][
+            "metadata"
+        ]["source_geometry_atom_indices"]
+        == site.metadata["source_geometry_atom_indices"]
+    )
 
 
 @pytest.mark.parametrize("failure", ["state", "maps", "uncovered", "profile"])

@@ -1,5 +1,28 @@
 # Development Checkpoint
 
+## Composition acceptance: cached provenance correction in progress — 2026-11-03
+
+#36 review reproduced participant reuse with a geometry/source map disagreement
+and an unchecked optional site chemical state. The scoped correction validates
+declared geometry pairs and site state before reuse; eight new counterexamples
+fail before the fix and all nine new controls pass afterward. The positive control
+preserves reordered geometry with a nonidentity source map. Generic keep and all
+scientific geometry/weight/essential definitions remain unchanged. No molecular
+operation or provider implementation is added.
+
+Next qualify the complete composition/coupled source selection, existing driver
+with tracking off/on and three cookbook blocks against a clean committed producer.
+Preserve prior baseline/source identities; the 1,020-case run below belongs to
+96f917a and does not execute this new correction. After #36 acceptance, continue
+with #37 complete CCD workflows. #41 review by 2026-11-11, #60 receiving, #66's four
+original methods and hosted/installed/public gates keep their separate scopes.
+
+Artifacts are in `/tmp/phmt36-acceptance-20261103-1lir6w0a/`, owners LMMV/dprada,
+review 2026-11-17. The existing owned #69 venv is reused; refresh only the ordinary
+editable PHMT install after this candidate is committed. Controlled provider/native
+installs, canonical prefix and sibling worktrees stay unchanged. Final-head CI #9
+and shared conflicts #82 remain separate from local functional acceptance.
+
 ## Rigid-refinement source/API acceptance complete; interaction workflow next — 2026-11-03
 
 #29 is resolved with its [archived report](archive/public_rigid_refinement.md)
