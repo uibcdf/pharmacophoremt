@@ -7,6 +7,7 @@ import hashlib
 import importlib
 import io
 import json
+import re
 import shutil
 import sys
 import tarfile
@@ -336,9 +337,13 @@ class TestDistributionContract(unittest.TestCase):
         ):
             path = self.root / "devtools/requirements" / filename
             original = path.read_text()
-            path.write_text(
-                original.replace("8ae160fc93ed5bc815bcc24b37c2875ba735623d", "main")
+            changed, replacements = re.subn(
+                r"(git\+https://github\.com/uibcdf/molsysmt@)[0-9a-f]{40}",
+                r"\g<1>main",
+                original,
             )
+            self.assertEqual(replacements, 1)
+            path.write_text(changed)
             with (
                 self.subTest(filename=filename),
                 self.assertRaisesRegex(ValueError, "source input changed"),
@@ -348,9 +353,13 @@ class TestDistributionContract(unittest.TestCase):
 
     def test_unreviewed_inline_source_command_drift_is_rejected(self):
         path = self.root / ".github/workflows/CI.yaml"
-        path.write_text(
-            path.read_text().replace("8ae160fc93ed5bc815bcc24b37c2875ba735623d", "main")
+        changed, replacements = re.subn(
+            r"(git\+https://github\.com/uibcdf/molsysmt@)[0-9a-f]{40}",
+            r"\g<1>main",
+            path.read_text(),
         )
+        self.assertEqual(replacements, 1)
+        path.write_text(changed)
         with self.assertRaisesRegex(ValueError, "reviewed workflow changed"):
             self.routes.audit(self.root)
 

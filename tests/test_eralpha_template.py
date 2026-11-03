@@ -52,7 +52,7 @@ def test_template_transfer_retains_observed_identity_pose_and_explicit_state(pre
     columns = state["atom_attributes"]["columns"]
     assert columns["formal_charge"]["values"] == [0] * 20
     assert columns["stereochemistry"]["values"] == [
-        report["manifest"]["expected_stereo"][name] or ""
+        report["manifest"]["expected_stereo"][name] or "unspecified"
         for name in report["source_atom_names"]
     ]
     assert columns["stereochemistry"]["values"][8] == "R"
