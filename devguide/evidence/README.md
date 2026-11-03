@@ -7,6 +7,19 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Exclusion construction source/API acceptance — 2026-11-03
+
+The [new summary](exclusion_acceptance_20261103_summary.json) and checksum-qualified
+archive record #32 at clean source 25d4107: 26 owning controls, both original
+observed-driver profiles, three executed cookbook blocks and strict isolated
+recipe rendering with two neighboring link-target stubs. Original source/ligand/
+heavy pose, indices, 153 exclusions and all seven outcomes remain intact. Physical
+identities and actual module versions are stable; distribution lookups switch to
+older canonical records, so strict full/metadata equality stays false in every
+phase. Exact differences and the transient pre-science sandbox startup failure
+are retained. Original archives remain unchanged. Clean installed/public/platform,
+biological, performance and full-site qualification remain separate.
+
 ## Prepared CCD source/API acceptance — 2026-11-03
 
 The [new summary](prepared_ccd_acceptance_20261103_summary.json) and its

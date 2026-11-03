@@ -1,0 +1,435 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+56.g9387852",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "documentation_scope": "Strict isolated unchanged exclusion cookbook page; two neighboring recipes are link-target stubs, not full-site/neighboring-recipe qualification.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "full_baseline": "96f917a: 1020 source items, historical baseline; not execution of later composition correction.",
+    "full_new_source_suite_reexecution": false,
+    "full_platform_matrix": false,
+    "helper_route": "Ordinary editable runtime resolved before checkout access for unshipped source helpers.",
+    "installed_wheel_qualification": false,
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_or_fixture_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Owned #69 system-site-packages venv, ordinary editable PHMT 0.4.0+56.g9387852 with controlled source providers/native. No shared-prefix/sibling mutation."
+  },
+  "consumer": {
+    "head": "25d41077a238cd3f5b54e235011df3e5b276531f",
+    "status": ""
+  },
+  "executed_cookbook_blocks": 3,
+  "full_evidence": {
+    "compressed_bytes": 1224941,
+    "compressed_sha256": "52c15f9046ef2a115c18d05dff4caf3c485fcaf2cd01a08f1f44e15d0fe6d642",
+    "path": "exclusion_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 25708872,
+    "uncompressed_sha256": "7142644e96832f1575c42ac1bb2435d03c04cd97a291a363d9d33cf86262b569"
+  },
+  "full_identity_unchanged": {
+    "cookbook": false,
+    "focused": false,
+    "workflow": false
+  },
+  "issue": "uibcdf/pharmacophoremt#32",
+  "junit": {
+    "suites": [
+      {
+        "errors": "0",
+        "failures": "0",
+        "hostname": "spika",
+        "name": "pytest",
+        "skipped": "0",
+        "tests": "26",
+        "time": "26.057",
+        "timestamp": "2026-11-03T16:10:59.564209-06:00"
+      }
+    ],
+    "tests": 26
+  },
+  "measured_date": "2026-11-03",
+  "metadata_lookup_review": {
+    "differences": {
+      "cookbook": {
+        "depdigest": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/depdigest\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}"
+          },
+          "metadata_version": {
+            "after": "0.15.1+8.g0884f0c",
+            "before": "0.15.1"
+          }
+        },
+        "molsysmt": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysmt\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}"
+          },
+          "metadata_version": {
+            "after": "0.23.0+322.g71fbe4f46",
+            "before": "0.23.0+370.g0faf1584d"
+          }
+        },
+        "molsysviewer": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysviewer\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer\"}"
+          },
+          "metadata_version": {
+            "after": "0.24.0+188.g73a6f388",
+            "before": "0.24.0+238.gca7ebea6"
+          }
+        },
+        "pharmacophoremt": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pharmacophoremt\"}",
+            "before": null
+          },
+          "metadata_version": {
+            "after": "0.4.0+29.g8e83a64",
+            "before": "0.4.0+56.g9387852"
+          }
+        }
+      },
+      "focused": {
+        "depdigest": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/depdigest\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}"
+          },
+          "metadata_version": {
+            "after": "0.15.1+8.g0884f0c",
+            "before": "0.15.1"
+          }
+        },
+        "molsysmt": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysmt\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}"
+          },
+          "metadata_version": {
+            "after": "0.23.0+322.g71fbe4f46",
+            "before": "0.23.0+370.g0faf1584d"
+          }
+        },
+        "molsysviewer": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysviewer\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer\"}"
+          },
+          "metadata_version": {
+            "after": "0.24.0+188.g73a6f388",
+            "before": "0.24.0+238.gca7ebea6"
+          }
+        },
+        "pharmacophoremt": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pharmacophoremt\"}",
+            "before": null
+          },
+          "metadata_version": {
+            "after": "0.4.0+29.g8e83a64",
+            "before": "0.4.0+56.g9387852"
+          }
+        }
+      },
+      "workflow": {
+        "depdigest": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/depdigest\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}"
+          },
+          "metadata_version": {
+            "after": "0.15.1+8.g0884f0c",
+            "before": "0.15.1"
+          }
+        },
+        "molsysmt": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysmt\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}"
+          },
+          "metadata_version": {
+            "after": "0.23.0+322.g71fbe4f46",
+            "before": "0.23.0+370.g0faf1584d"
+          }
+        },
+        "molsysviewer": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysviewer\"}",
+            "before": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer\"}"
+          },
+          "metadata_version": {
+            "after": "0.24.0+188.g73a6f388",
+            "before": "0.24.0+238.gca7ebea6"
+          }
+        },
+        "pharmacophoremt": {
+          "direct_url": {
+            "after": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pharmacophoremt\"}",
+            "before": null
+          },
+          "metadata_version": {
+            "after": "0.4.0+29.g8e83a64",
+            "before": "0.4.0+56.g9387852"
+          }
+        }
+      }
+    },
+    "physical_identities_stable": true,
+    "review": "Only distribution-record lookup version/direct_url switches to older canonical records; actual module versions/source/native/helper/test/input identities remain unchanged. Existing inherited closure limitation, not clean installed qualification.",
+    "strict_full_equality": false
+  },
+  "metadata_lookup_unchanged": {
+    "cookbook": false,
+    "focused": false,
+    "workflow": false
+  },
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "owning_pytest_items": 26,
+  "physical_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "profiles": [
+    {
+      "actual_items": 4,
+      "actual_uses": 13,
+      "collision_targets": {
+        "ligand_atom_index": 3,
+        "receptor_source_atom_index": 394,
+        "translation": {
+          "block_digests": [
+            "blake2b-128:5e3246204a853ae352792b438c9dd021"
+          ],
+          "digest": "blake2b-128:e4ace51d618348058f0f1febef1673ae",
+          "manifest": {
+            "blocks": [
+              3
+            ],
+            "dtype": "float64",
+            "field": null,
+            "format": "qrec/0.3",
+            "shape": [
+              1,
+              1,
+              3
+            ],
+            "si": {
+              "exponents": {
+                "m": 1
+              },
+              "factor": 1e-09,
+              "offset": 0.0
+            },
+            "unit": "nanometer"
+          },
+          "values": [
+            [
+              [
+                0.001200000000000756,
+                0.17149999999999999,
+                0.19450000000000012
+              ]
+            ]
+          ]
+        }
+      },
+      "heavy_pose_preserved": true,
+      "host_tracking": false,
+      "ligand_unchanged": true,
+      "n_residues": 19,
+      "n_sites": 153,
+      "outcomes": {
+        "collision": {
+          "fit_value": 1.0,
+          "n_clashes": 1,
+          "status": "not_matched"
+        },
+        "reference": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "reloaded_collision": {
+          "fit_value": 1.0,
+          "n_clashes": 1,
+          "status": "not_matched"
+        },
+        "reloaded_reference": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "unexcluded_collision": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "unexcluded_reference": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "wide_radius_reference": {
+          "fit_value": 1.0,
+          "n_clashes": 12,
+          "status": "not_matched"
+        }
+      },
+      "query_metadata_preserved": true,
+      "query_site_offset": 5,
+      "source_unchanged": true,
+      "valid": true
+    },
+    {
+      "actual_items": 15,
+      "actual_uses": 39,
+      "collision_targets": {
+        "ligand_atom_index": 3,
+        "receptor_source_atom_index": 394,
+        "translation": {
+          "block_digests": [
+            "blake2b-128:5e3246204a853ae352792b438c9dd021"
+          ],
+          "digest": "blake2b-128:e4ace51d618348058f0f1febef1673ae",
+          "manifest": {
+            "blocks": [
+              3
+            ],
+            "dtype": "float64",
+            "field": null,
+            "format": "qrec/0.3",
+            "shape": [
+              1,
+              1,
+              3
+            ],
+            "si": {
+              "exponents": {
+                "m": 1
+              },
+              "factor": 1e-09,
+              "offset": 0.0
+            },
+            "unit": "nanometer"
+          },
+          "values": [
+            [
+              [
+                0.001200000000000756,
+                0.17149999999999999,
+                0.19450000000000012
+              ]
+            ]
+          ]
+        }
+      },
+      "heavy_pose_preserved": true,
+      "host_tracking": true,
+      "ligand_unchanged": true,
+      "n_residues": 19,
+      "n_sites": 153,
+      "outcomes": {
+        "collision": {
+          "fit_value": 1.0,
+          "n_clashes": 1,
+          "status": "not_matched"
+        },
+        "reference": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "reloaded_collision": {
+          "fit_value": 1.0,
+          "n_clashes": 1,
+          "status": "not_matched"
+        },
+        "reloaded_reference": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "unexcluded_collision": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "unexcluded_reference": {
+          "fit_value": 1.0,
+          "n_clashes": 0,
+          "status": "matched"
+        },
+        "wide_radius_reference": {
+          "fit_value": 1.0,
+          "n_clashes": 12,
+          "status": "not_matched"
+        }
+      },
+      "query_metadata_preserved": true,
+      "query_site_offset": 5,
+      "source_unchanged": true,
+      "valid": true
+    }
+  ],
+  "sandbox_preflight": {
+    "error": "failed to register synthetic bubblewrap mount target /tmp/.git: Quota exceeded (os error 122)",
+    "exit_code": 101,
+    "followup": "Read-only escalated capacity/owned-resource inspection: /tmp had 3.1G available and 29% inode use. Default sandbox git status then succeeded. Transient startup failure; no cleanup or prefix/source changes.",
+    "initial_failed_command": "read-only rg/source inspection",
+    "scientific_execution_started": false
+  },
+  "schema": "pharmacophoremt.exclusion_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_owned_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "consumer_base": "25d41077a238cd3f5b54e235011df3e5b276531f",
+    "issue": "uibcdf/pharmacophoremt#32",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Independent exclusion builder source/API acceptance and observed geometry workflow",
+    "review": "2026-11-17",
+    "scope": "Controlled source providers/system-site-packages; no public or clean installed closure; no shared-prefix/sibling mutation."
+  },
+  "tracking_independent_science": true
+}

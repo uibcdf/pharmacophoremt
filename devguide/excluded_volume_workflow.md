@@ -126,3 +126,37 @@ inferred from these local results.
 The [owning result](https://github.com/uibcdf/pharmacophoremt/issues/32#issuecomment-5973661182)
 retains the implementation and review handoff. The receptor case remains under
 #22; no provider chemical-preparation completion is inferred.
+
+## Current source/API acceptance — 2026-11-03
+
+#32 is resolved with its [archived report](archive/public_excluded_volume_sites.md).
+Clean producer 25d41077a238cd3f5b54e235011df3e5b276531f passes all 26 owning
+controls without failures/errors/skips. Both original driver profiles preserve
+all seven pose/persistence outcomes, 153 exclusions/19 residues and source,
+ligand/heavy-pose/metadata/byte identities. The collision remains one veto with
+five positive matches/fit 1; the wider radius still vetoes with 12 clashes/fit 1.
+All three cookbook blocks execute and strict isolated recipe rendering passes
+with two neighboring recipe link-target stubs. No expectations are relaxed.
+
+The [dated receipt](evidence/exclusion_acceptance_20261103_summary.json) retains
+full new measured output, actual enabled 15-item/39-use and disabled-provider
+4-item/13-use credit, commands, original log/XML and producer identities. Cached
+construction remains independent of molecular access. Actual loaded module
+versions/source/native/helper/test/input identities are stable in every phase.
+Distribution metadata lookups switch to older canonical PHMT, MolSysMT, Viewer
+and DepDigest records; strict full equality and metadata equality remain false,
+with every difference retained. This inherited workspace limitation does not
+qualify clean dependency closure. Ordinary editable PHMT 0.4.0+56.g9387852,
+controlled source providers and native bytes are unchanged; no runtime, test,
+fixture, provider, canonical-prefix or sibling changes are required.
+
+The Oct03 description of pending legacy migration above is historical: #44
+already changed the structure facade to consume explicit cached inventories and
+delegate optional exclusions to this builder. This review inspects that call;
+it does not rerun or broaden #44's separate contract. Other October measurements
+remain unchanged. Receptor preparation/physical radii stay MolSysMT-owned.
+These controls establish source/API pharmacophoric geometry, not biological or
+performance evidence, clean installed/public/platform or hosted qualification.
+Those gates remain #23/#10/#9; inherited workspace findings stay #82. Temporary
+resources are reviewed 2026-11-17 by LMMV/dprada. Next accept #33 ionic queries,
+then #34 aromatic queries against their independent criteria.

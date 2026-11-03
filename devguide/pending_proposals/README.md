@@ -6,7 +6,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (14)
+### Active (13)
 
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
 - [`modular_rigid_strategy_comparison.md`](modular_rigid_strategy_comparison.md) — [#27](https://github.com/uibcdf/pharmacophoremt/issues/27) — Expose modular rigid placement steps and compare consensus strategies reproducibly. *(active, measured)*
@@ -20,7 +20,6 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_reference_ligand_workflow.md`](native_reference_ligand_workflow.md) — [#14](https://github.com/uibcdf/pharmacophoremt/issues/14) — Build classical reference-ligand queries and evaluate them using shared MolSysMT chemical extraction. *(active, measured)*
 - [`native_rigid_consensus.md`](native_rigid_consensus.md) — [#26](https://github.com/uibcdf/pharmacophoremt/issues/26) — Build alternative native consensus models from prepared rigid unaligned ligands. *(active, measured)*
 - [`native_rigid_pose_search.md`](native_rigid_pose_search.md) — [#15](https://github.com/uibcdf/pharmacophoremt/issues/15) — Search prepared rigid ligands using reusable correspondence and MolSysMT alignment tools. *(active, measured)*
-- [`public_excluded_volume_sites.md`](public_excluded_volume_sites.md) — [#32](https://github.com/uibcdf/pharmacophoremt/issues/32) — Build reusable exclusion spheres from native heavy-atom inventories without molecular inference. *(active, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(active, measured)*
 
 ### Partial (5)

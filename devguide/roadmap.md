@@ -1,5 +1,30 @@
 # Strategic Roadmap
 
+## Exclusion-sphere acceptance complete; ionic and aromatic queries next — 2026-11-03
+
+#32 is resolved after all 26 owning controls, both original observed-driver
+profiles, three cookbook blocks and strict isolated recipe rendering pass on
+clean source 25d4107. Original source geometry/chemistry/bytes, source indices,
+153 exclusions/19 residues, exact-boundary semantics, one/12-clash vetoes with
+fit 1, native persistence and actual attribution remain intact. The [receipt](evidence/exclusion_acceptance_20261103_summary.json)
+retains new measured results beside untouched originals. No runtime/test/input/
+provider changes are needed. Loaded physical identities remain stable; strict
+full/metadata equality is false because lookups switch to older canonical records.
+The inherited workspace boundary is explicit, not clean installed qualification.
+
+Next accept **#33 ionic queries**, then **#34 aromatic queries**, using their own
+participant/source/frame/state, geometry and weighting, empty/failure,
+persistence and attribution contracts plus their driver/cookbook controls.
+Current molecular tools support those reviews; #32/#36/#37 results do not close
+these independent issues automatically. #44's cached exclusion delegation is
+already delivered; the original Oct03 legacy statement is historical.
+
+#41 retains public delivery/installed receiving and its 2026-11-11 review; #60
+native-copy receiving is available for a concrete consumer; #66 needs the four
+original binding methods. #323/#375/#447 retain provider ownership. Hosted gates
+stay #9, installed/public qualification #23/#10 and workspace limitations #82.
+Addon/new release remain deferred. See [checkpoint](checkpoint.md).
+
 ## Prepared CCD acceptance complete; next exclusions and interaction queries — 2026-11-03
 
 #30 is resolved: 23 owning controls, all 12 driver comparisons with tracking

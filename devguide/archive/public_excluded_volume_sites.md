@@ -1,9 +1,9 @@
 ---
 summary: Build reusable exclusion spheres from native heavy-atom inventories without molecular inference.
 issue: uibcdf/pharmacophoremt#32
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-11-03
 verification: measured
 area: [modeling, geometry]
 guard: tests/test_excluded_volume_sites.py
@@ -13,6 +13,49 @@ supersedes: []
 ---
 
 # Public heavy-atom exclusion sites
+
+## Resolution — 2026-11-03
+
+Reviewed and incorporated as a source/API workflow. Clean producer
+25d41077a238cd3f5b54e235011df3e5b276531f passes all **26 owning controls**, zero
+failures/errors/skips, in 26.06 s: 22 constructor and four observed controls.
+The original driver passes both host tracking profiles with identical scientific
+projections, unchanged source/input hashes, 153 spheres over 19 residues and all
+seven pose/persistence outcomes. All three cookbook blocks execute; strict
+isolated rendering passes with two neighboring recipe link-target stubs.
+
+The .1 nm reference passes; a controlled O3/candidate index 3 to GLU353 OE2/
+complete-source index 394 collision gives one veto with five positive matches and
+fit 1. The .35 nm sensitivity control retains 12 clashes and fit 1. Native query
+persistence preserves reference/collision results and metadata. Original source,
+prepared ligand and heavy pose remain unchanged. Enabled workflow attribution
+has 15 items/39 uses, including three input datasets; disabled host tracking still
+retains actually reached provider credit (4 items/13 uses). Constructor-only
+credits do not invent another extraction, G3PS or receptor interaction detection.
+
+The [new receipt](../evidence/exclusion_acceptance_20261103_summary.json) retains
+complete new outputs, source/native/helper/test/input identities, commands/logs/XML
+and full before/after metadata differences. Actual module versions and physical
+identities remain stable in every phase. Distribution-record lookups instead
+switch to older canonical PHMT/MolSysMT/Viewer/DepDigest records: **strict full
+identity equality and metadata equality are false in all three phases**. These
+original differences are retained, consistent with the inherited #82 workspace
+limitation; no clean installed closure is inferred or host repaired.
+
+No runtime, test, fixture, expectation, provider, shared-prefix or sibling changes
+are needed. Ordinary editable PHMT 0.4.0+56.g9387852 uses controlled MolSysMT
+0faf1584 and unchanged native bytes. The Oct03 claims below remain historical.
+Their legacy-migration statement is superseded by #44: the current structure
+facade delegates explicit cached exclusions to this public builder; that is source
+inspection here, not a new qualification of the complete facade.
+
+This closes the bounded construction/source acceptance, not physical radii,
+receptor chemistry, biological prediction, performance, clean installed/public/
+Conda/platform or exact-head hosted gates. Those remain #22/#66, provider work,
+#23/#10 and #9 as applicable. The old 1,020-item full run stays a dated baseline.
+Owned root /tmp/phmt32-acceptance-20261103-1_kyuklf/, LMMV/dprada, review 2026-11-17.
+A transient pre-science sandbox quota startup failure is retained; the default
+sandbox recovered without deleting resources or changing environments.
 
 ## What
 

@@ -1,5 +1,44 @@
 # Development Checkpoint
 
+## Exclusion construction accepted; ionic query review next — 2026-11-03
+
+#32 is resolved with its [archived report](archive/public_excluded_volume_sites.md)
+and [new receipt](evidence/exclusion_acceptance_20261103_summary.json). Clean
+producer **25d41077a238cd3f5b54e235011df3e5b276531f** passes **26 owning controls**,
+zero failures/errors/skips, in 26.06 s. Both unchanged driver profiles and all
+three cookbook blocks pass. Strict isolated recipe rendering passes with two
+neighboring link-target stubs; no full-site claim. Original source/ligand/heavy
+pose, 153 exclusions over 19 residues, source index spaces and native persistence
+are preserved. The one-clash and 12-clash vetoes both retain positive fit 1.
+Actual enabled credit is 15 items/39 uses; disabled host tracking retains reached
+provider credit (4/13). Original evidence and expectations are unchanged.
+
+**Identity boundary:** loaded module versions/source/native/helper/test/input
+identities remain stable in all three phases. Distribution-record lookups switch
+to older canonical PHMT/MolSysMT/Viewer/DepDigest records; strict full equality
+and metadata equality remain **false**, with exact original differences retained.
+This is the inherited workspace limitation tracked with #82, not clean installed
+closure. No provider/prefix repair or source change is made. Current structure
+facade already delegates exclusions under #44; the old Oct03 migration statement
+is historical, not an outstanding local kernel.
+
+**Next: #33 ionic observation queries**, then #34 aromatic queries. Check their
+own participant mapping, source/frame/state and explicit scientific semantics,
+empty/failure behavior, persistence, actual attribution, drivers and cookbooks.
+Current providers suffice. #41 public-vector migration stays partial (review
+2026-11-11); #60 is available for a concrete independent-variant consumer. #66
+still awaits four original binding methods through a new authorized lead. Addon
+and a new release remain deferred.
+
+Owned root `/tmp/phmt32-acceptance-20261103-1_kyuklf/`, LMMV/dprada, review
+2026-11-17. The owned #69 venv remains ordinary editable PHMT
+0.4.0+56.g9387852 with controlled providers/native unchanged. Canonical prefix and
+sibling trees are untouched. A transient pre-science sandbox startup quota error
+is retained; default execution recovered without cleanup. No runtime/test/fixture
+changes or local process remain. #23/#10 installed/public/platform and #9 hosted
+gates remain separate. The old full-suite baseline is not a new complete run;
+no biological or performance qualification is inferred.
+
 ## Prepared CCD foundation accepted; exclusion boundary next — 2026-11-03
 
 #30 is resolved with its [archived report](archive/prepared_ccd_ligand_validation.md).
