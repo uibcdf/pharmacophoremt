@@ -1,5 +1,32 @@
 # Strategic Roadmap
 
+## Aromatic source/API acceptance complete; next aligned consensus — 2026-11-03
+
+#34 is resolved. The [receipt](evidence/aromatic_acceptance_20261103_summary.json)
+verifies that clean receiving head ee257a1 has the exact runtime/helper/test/
+driver/workflow trees, loaded sources/native bytes, inputs and metadata of code
+6a7537b's original 418-item run, including all 46 aromatic controls. That test
+execution is reused, not rerun. Fresh driver execution passes both tracking
+profiles, each with seven profiles/14 case combinations/28 queries/84 evaluations,
+original scientific outcomes and actual credit. Strict conversion failure remains
+a null-score failure; explicit containing-center mapping preserves atomic evidence.
+Three cookbook blocks and strict isolated recipe rendering pass. Full identities
+remain stable; no runtime/test/input/provider change is needed.
+
+Next accept **#21 reference-anchored aligned consensus**, then **#24 aligned clique
+consensus**, each against its own matching/support/orientation/budget/rejection,
+persistence and attribution contract plus executable examples. Current qualified
+providers support this work. #34/#36/#37 and aggregate tests do not automatically
+close those independent methods. Source/API evidence remains separate from
+biological accuracy, profile superiority, energies, performance or universal
+fused-ring equivalence. Original October/#35 evidence stays unchanged.
+
+#41 supported-public/floor/installed migration and final historical arithmetic
+retirement remain partial, review 2026-11-11. #60 concrete-copy receiving and
+#66's four original-method inputs keep their scopes. Hosted #9, installed/public
+#23/#10 and workspace #82 are independent gates. #323/#375/#447 stay with their
+provider owners. Addon/new release remain deferred. See [checkpoint](checkpoint.md).
+
 ## Remaining observed donor caller migrated; next aromatic queries — 2026-11-03
 
 #41 source migration now covers the observed H-bond caller as well as

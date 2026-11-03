@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (42)
+### Resolved (43)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -20,6 +20,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
 - [`minimal_viewer_addon_delivery.md`](minimal_viewer_addon_delivery.md) — [#56](https://github.com/uibcdf/pharmacophoremt/issues/56) — Bundle the implemented MolSysViewer addon and qualify its minimal installed Python contract. *(resolved, measured)*
+- [`native_aromatic_interactions.md`](native_aromatic_interactions.md) — [#34](https://github.com/uibcdf/pharmacophoremt/issues/34) — Build aromatic and cation-pi hypotheses with shared geometry and explicit participant mapping. *(resolved, measured)*
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*

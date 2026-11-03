@@ -7,6 +7,22 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Aromatic source/API acceptance — 2026-11-03
+
+The [new summary](aromatic_acceptance_20261103_summary.json) and checksum-qualified
+archive record #34 at clean receiving head ee257a1. Original code 6a7537b's
+418-item source execution (46 aromatic cases) is verified for identical tracked
+trees/loaded sources/native/helpers/tests/inputs/metadata, with original receipt
+hash/XML retained. No fresh pytest is claimed. Fresh driver profiles each pass
+14 case/profile combinations, 28 queries/84 evaluations across seven profiles;
+strict compound-cation failure retains a null score and the explicit alternative
+preserves its three observations/charges. Three cookbook blocks and strict isolated
+rendering pass (one neighboring exclusion link-target stub). Source domains,
+persistence, actual credit and all fresh phase identities remain unchanged.
+Original October/#35 archives remain intact. This is source/API analytical
+acceptance, not fresh full-suite, installed/public/platform, biological/energy or
+performance qualification. No runtime/test/input/provider changes are needed.
+
 ## Observed donor-vector receiving — 2026-11-03
 
 The [new summary](observed_donor_receiving_20261103_summary.json) and full archive

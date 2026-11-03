@@ -6,7 +6,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (12)
+### Active (11)
 
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
 - [`modular_rigid_strategy_comparison.md`](modular_rigid_strategy_comparison.md) — [#27](https://github.com/uibcdf/pharmacophoremt/issues/27) — Expose modular rigid placement steps and compare consensus strategies reproducibly. *(active, measured)*
@@ -14,7 +14,6 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_ackredit_attribution.md`](native_ackredit_attribution.md) — [#19](https://github.com/uibcdf/pharmacophoremt/issues/19) — Capture portable native scientific attribution through optional public Ackredit APIs. *(active, measured)*
 - [`native_aligned_clique_consensus.md`](native_aligned_clique_consensus.md) — [#24](https://github.com/uibcdf/pharmacophoremt/issues/24) — Discover aligned clique consensus with alternative jointly supported hypotheses. *(active, measured)*
 - [`native_aligned_consensus.md`](native_aligned_consensus.md) — [#21](https://github.com/uibcdf/pharmacophoremt/issues/21) — Implement reusable reference-anchored consensus for prepared aligned ligands. *(active, measured)*
-- [`native_aromatic_interactions.md`](native_aromatic_interactions.md) — [#34](https://github.com/uibcdf/pharmacophoremt/issues/34) — Build aromatic and cation-pi hypotheses with shared geometry and explicit participant mapping. *(active, measured)*
 - [`native_eralpha_validation.md`](native_eralpha_validation.md) — [#22](https://github.com/uibcdf/pharmacophoremt/issues/22) — Audit the ERalpha snapshot and migrate its regression to a reproducible native workflow. *(active, measured)*
 - [`native_reference_ligand_workflow.md`](native_reference_ligand_workflow.md) — [#14](https://github.com/uibcdf/pharmacophoremt/issues/14) — Build classical reference-ligand queries and evaluate them using shared MolSysMT chemical extraction. *(active, measured)*
 - [`native_rigid_consensus.md`](native_rigid_consensus.md) — [#26](https://github.com/uibcdf/pharmacophoremt/issues/26) — Build alternative native consensus models from prepared rigid unaligned ligands. *(active, measured)*

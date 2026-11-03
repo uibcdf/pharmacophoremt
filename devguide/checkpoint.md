@@ -1,5 +1,43 @@
 # Development Checkpoint
 
+## Aromatic workflow accepted; aligned consensus next — 2026-11-03
+
+#34 is resolved with its [archived report](archive/native_aromatic_interactions.md)
+and [new receipt](evidence/aromatic_acceptance_20261103_summary.json). Source
+receiving head **ee257a1aaec6ea02a185e6961b0deea9769f7fbf** is clean and matches
+measured code 6a7537b across tracked runtime/helper/test/driver/workflow trees,
+actual loaded sources/native bytes, helper/input hashes and metadata. Its prior
+418-item execution includes **46 aromatic controls**, zero failures/errors/skips;
+that original receipt/XML is verified and reused, not called a new pytest run.
+
+Fresh execution passes both aromatic driver profiles: seven native profiles,
+14 case/profile combinations, 28 queries/84 evaluations each. Source atom
+identity/chemical state/coordinates and native persistence remain unchanged.
+Reference/round-trip positives fit one; displacement negatives fit zero. The one
+expected strict compound-cation failure per profile retains fit_value=None; the
+explicit containing-center alternative retains three original observations/charges.
+Off/on science agrees; actual credit is 6 items/11 uses off and 14/30 on. All three
+cookbook blocks and strict isolated rendering pass (one exclusion link-target
+stub). Full identities are stable in both fresh phases. No runtime/test/input/
+expectation/provider/prefix/sibling changes are required. October/#35 archives
+and earlier #32/#82 workspace findings retain their original identities/scopes.
+
+**Next: #21 reference-anchored aligned consensus**, reviewing matching/unique-
+identity support, center aggregation/reference orientation, rejection/budget
+semantics, provenance/persistence, actual attribution and its cookbook; then
+#24's distinct aligned clique discovery. Both use current qualified molecular
+operations and can advance now. Neither should be closed from aggregate counts
+alone. #41 remains partial only for its supported-public/floor/installed migration
+and final historical arithmetic retirement (review 2026-11-11); ideal acceptor
+models remain separate #375 science. #60 is available for a concrete independent
+variant; #66 still awaits four original binding methods. Addon/new release defer.
+
+Owned root `/tmp/phmt34-acceptance-20261103-pxec9r01/`, LMMV/dprada, review
+2026-11-17. The borrowed #69 venv still resolves editable PHMT 0.4.0+62.g6a7537b
+and unchanged controlled providers/native. No local process remains. Hosted #9,
+clean installed/public/platform #23/#10 and inherited workspace #82 remain
+separate; no new full suite, biological, energy or performance claim is inferred.
+
 ## Observed donor vectors delegated; aromatic acceptance next — 2026-11-03
 
 Clean code **6a7537beb5747f8f455c489f0908ce4c46b90fd6** migrates the identified

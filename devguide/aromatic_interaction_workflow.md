@@ -157,3 +157,40 @@ The eight known warnings are six deliberate structural B-factor drops, one
 optional-attribution failure control and one legacy stripped-unit warning.
 Ruff, generated reporting indexes, three offline reporting tests and whitespace
 checks pass. Review, full-site and published-dependency qualification remain open.
+
+## Current source/API acceptance — 2026-11-03
+
+#34 is resolved with its [archived report](archive/native_aromatic_interactions.md).
+The [new receipt](evidence/aromatic_acceptance_20261103_summary.json) verifies
+reuse of all 46 aromatic controls within the original 418-item run at code
+6a7537b. Clean receiving head ee257a1 has identical tracked runtime/helper/test/
+driver/workflow trees, actual loaded sources/native bytes, helpers/inputs and
+metadata. The original complete XML and receipt hash are retained; this review
+does not claim a new pytest or full-suite execution. Adjacent hydrophobic/H-bond/
+ionic regressions retain that same qualified source identity.
+
+Fresh driver execution covers both host-tracking profiles, each with seven
+methods/profiles, 14 case/profile combinations, 28 queries and 84 evaluations.
+All declared reference/round-trip positives fit one and displacement negatives
+fit zero; source identity/chemical state/coordinates and query metadata remain
+unchanged. One strict compound-cation mapping failure per profile keeps a null
+fit value; its explicit containing-center alternative retains all three atomic
+observations, including zero-charge resonance atoms. Scientific projections agree
+with tracking off/on. Actual captures retain 6 items/11 uses and 14 items/30 uses,
+including declared reference articles without claiming those engines executed.
+
+All three cookbook blocks execute. Strict isolated recipe rendering passes with
+one neighboring exclusion-recipe link-target stub. Full physical source/native/
+helper/test/input and metadata identities are stable in both fresh phases. No
+runtime, test, fixture, expectation, provider, prefix or sibling change is needed.
+The owned #69 venv still imports ordinary editable PHMT 0.4.0+62.g6a7537b and the
+same controlled providers/native. Original October and #35 archives remain
+unchanged; earlier #32/#82 workspace findings are not resolved by this run.
+
+This accepts the bounded source/API conversion, not profile superiority,
+biological binding, energies, performance, universal fused-ring mapping, clean
+installed/public/platform or hosted qualification (#23/#10/#9). #41 public-floor/
+installed migration and historical fallback retirement stay partial, review
+2026-11-11. Next review #21 reference-anchored aligned consensus, then #24's
+alternative clique discovery under its own contract. Temporary resources are
+reviewed 2026-11-17 by LMMV/dprada; addon/new release remain deferred.
