@@ -1,5 +1,22 @@
 # Strategic Roadmap
 
+## Finish hosted receiving of the corrected chemical-domain candidate — 2026-11-03
+
+MolSysMT #531 is resolved and received on source 0faf1584. Candidate **7e5b5a5**,
+`receiving/chemical-domain-fixed-20261103`, passes **1,009 complete local source
+tests**, all original 22 controls and all four unchanged typed CCD checks.
+Separately, 110 installed local-wheel tests pass with checked origins and bytes;
+shared/editable dependency limitations remain explicit in the
+[receipt](evidence/chemical_domain_fixed_provider_receiving_20261103_summary.json).
+
+The next gate is our [eight-cell source CI 41674239397](https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397),
+still pending at this receipt. Verify every actual scientific test step for exact
+7e5b5a5, then integrate directly into main and inspect main receiving under #9.
+Main runtime/pins are preserved until that result; no provider implementation or
+human scientific validation is currently awaited for this step. Keep installed
+Conda/public qualification and any future minimum/release separate. Addon and
+broader scientific segments remain deferred; see the [checkpoint](checkpoint.md).
+
 ## Resolve typed component preservation before integrating #69 — 2026-11-02
 
 Owner review is published in candidate **43a258c**, isolated from main. It receives

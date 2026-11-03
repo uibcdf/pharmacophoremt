@@ -8,11 +8,33 @@ verification: measured
 area: [integration, modeling, screening, validation]
 guard: tests/test_conformer_screening.py
 normative: devguide/chemical_domain_receiving.md
-blocked_by: [uibcdf/molsysmt#531]
+blocked_by: [uibcdf/pharmacophoremt#9]
 supersedes: []
 ---
 
 # Chemical-domain receiving preparation
+
+## Provider correction received; exact candidate CI pending — 2026-11-03
+
+MolSysMT #531 is closed. Clean consumer **7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d**
+on `receiving/chemical-domain-fixed-20261103` receives provider **0faf1584**.
+The [new receipt](../evidence/chemical_domain_fixed_provider_receiving_20261103_summary.json)
+records **1,009 source tests passed**, including all original 22 controls and the
+four unchanged typed-preservation cases; a separate **110-case installed-wheel
+selection passes** with actual installed origins/bytes checked before and after.
+No consumer molecular fix or weaker scientific assertion is introduced.
+
+Source/native/test bytes are stable; distribution-metadata lookup differences,
+shared dependency conflicts and the bounded installed-wheel scope remain explicit.
+This does not qualify clean public dependency closure or the full installed Conda
+matrix. The 67 administrative controls pass after retiring only owned build/cache.
+
+Main retains runtime/pins while [candidate CI 41674239397](https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397)
+finishes: governance and Linux 3.13/3.14 pass at the receipt; six scientific cells
+are still active/queued. #9 owns that receiving gate. Next inspect all eight actual
+test steps at exact 7e5b5a5, integrate directly if green, update the durable guard
+to the candidate's domain module and inspect main CI. #69 remains partial.
+Historical receipts and the earlier handoff below retain their original claims.
 
 ## Reviewed isolated candidate and typed-fidelity handoff — 2026-11-02
 

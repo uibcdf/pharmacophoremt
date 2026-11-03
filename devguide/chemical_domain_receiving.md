@@ -4,6 +4,37 @@ Owner: [PharmacophoreMT #69](https://github.com/uibcdf/pharmacophoremt/issues/69
 LMMV/dprada. Provider implementation belongs to
 [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255); shared coordination
 is [MolSysSuite #155](https://github.com/uibcdf/molsyssuite/issues/155).
+
+## Corrected-provider receiving — 2026-11-03
+
+MolSysMT #531 is closed after source correction **0faf1584d05ac47ddcebfc20d9c9978b7f4f230e**.
+Clean consumer **7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d**, branch
+`receiving/chemical-domain-fixed-20261103`, receives that exact source with the
+reviewed namespace/spies/canonical-stereo changes and compatible Viewer/DepDigest
+pins. Main runtime and pins remain unchanged pending the candidate's source CI.
+
+The [new original receipt](evidence/chemical_domain_fixed_provider_receiving_20261103_summary.json)
+records **1,009 complete local source tests passed**, zero failures/errors/skips,
+including every original 22-node baseline and the four unchanged typed CCD
+preservation controls. A separate four-case replay also passes. No consumer
+normalizer or weaker preservation assertion is needed. The old failed provider
+receipt below is preserved with its original identity.
+
+Separately, **110 tests pass against an installed local wheel** outside source,
+using the immutable SDK's staged unshipped support and before/after runtime-origin
+and wheel-byte checks. Editable providers and shared dependencies remain explicit;
+this is not the full installed Conda/public/platform gate. Source/native/test
+identity is stable; full metadata lookup equality is false after pytest and
+retained as such. The known shared dependency conflicts remain #82. Original
+quota failures, reduced-debug Rust rebuild and successful administrative retry
+are in the receipt; no sibling worktree/shared prefix changes.
+
+The [exact eight-cell source matrix](https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397)
+is pending at publication (governance and Linux 3.13/3.14 pass). **Next:** receive
+all actual scientific steps at exact 7e5b5a5, then integrate directly and inspect
+main receiving. #69 remains partial for these owning gates, not blocked on #531.
+Installed/public delivery and dependency minima retain their separate authority.
+
 ## Owner receiving candidate — 2026-11-02
 
 The delivered implementation is now reviewed in branch

@@ -1,5 +1,64 @@
 # Development Checkpoint
 
+## Provider defect received; local source and installed receiving pass — 2026-11-03
+
+MolSysMT #531 is closed and its correction is received on exact provider
+**0faf1584d05ac47ddcebfc20d9c9978b7f4f230e**. The reviewed consumer is clean
+**7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d**, published on
+`receiving/chemical-domain-fixed-20261103`. Viewer ca7ebea6 and DepDigest 13cc7378
+remain the compatible source inputs. Main still retains its prior runtime/pins;
+the candidate is isolated until its required source matrix is checked.
+
+The [new receipt](evidence/chemical_domain_fixed_provider_receiving_20261103_summary.json)
+records **1,009 passed / zero failures, errors or skips** in the complete local
+`tests` selection (1,455.25 seconds). Every original 22-node baseline and all four
+unchanged EST/DES typed-preservation controls pass. A preceding four-case replay
+passes independently. The earlier de7ffad failures and corrective measurements
+below remain historical; no assertion, fixture, feature/profile or scoring
+definition is weakened. Molecular implementation stays in MolSysMT.
+
+A separate **110-case installed-wheel selection passes**, zero skips, outside
+the source checkout. It covers the complete CCD, chemical-domain, cached-receptor
+and ERalpha-template modules. Wheel SHA-256 is
+`4bbec721da449c3c9195296895cc2ef09d5f7e526639cfc8e1b97e9b3a4b8155`.
+Every wheel member except pip-rewritten RECORD matches installed bytes before
+and after; loaded runtime roots stay inside the owned prefix and outside source.
+The immutable SDK stages and retires the unshipped support namespace/data.
+This is bounded PHMT-wheel receiving against editable source providers, not a
+full installed Conda/public/platform gate or a published package.
+
+Source/native/test bytes remain stable. Full-run distribution-metadata lookups
+again differ after pytest; full equality remains false, while physical identity
+equality is true. Python 3.14.7/Pandas 2.3.3/RDKit 2026.3.1 and shared pip-check
+conflicts retain the disclosed #82 boundary. Fresh Rust is built with debug
+symbols/incremental output disabled after an owned quota failure; its actual
+hash and initial failure are retained. All 67 administrative controls pass on
+retry after only owned Cargo products/cache are retired. No sibling worktree or
+shared prefix is modified.
+
+**Current gate:** [exact candidate CI 41674239397](https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397),
+attempt 1 at 7e5b5a5, is still pending. At this receipt, governance and Linux
+Python 3.13/3.14 pass; Linux 3.11/3.12 and macOS 3.11/3.12/3.13 are active,
+macOS 3.14 is queued. The skipped backlog-decision job is retained. Previous
+main 23c0648 passes all eight scientific cells on its **older** source pins;
+that does not qualify the new pair. #531 is no longer the blocker. #69 stays
+partial and #9 owns remaining hosted receiving.
+
+**Resume:** inspect all eight actual `Run tests` steps in 41674239397 at exact
+7e5b5a5; diagnose failures if any. Once green, integrate the published candidate
+directly into main, preserving current checkpoint/evidence, update this report's
+guard to the candidate domain module and inspect the resulting main CI. Keep
+installed/public dependency delivery under #23/#10 separate; no new public
+minimum, package, tag or release is implied. No human scientific validation is
+pending for this receiving step. #66/#323/#375 and addon priorities are unchanged.
+
+Retain `/tmp/phmt69-fixed-20261103-q6cirii4/`, owners LMMV/dprada, review
+2026-11-17. Its venv now contains the local **installed wheel**, not the original
+editable PHMT; reinstall/select exact candidate source before replaying source
+tests. The clean `wheel-source` clone preserves 7e5b5a5. The archived installed
+runner binds support to a checkout at that commit. Both local scientific
+processes have completed; only the remote matrix remains active.
+
 ## Owner receiving candidate reviewed; four typed-column checks pending — 2026-11-02
 
 MolSysMT #255 is implemented and closed: the provider has announced main merge
