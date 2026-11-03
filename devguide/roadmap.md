@@ -1,5 +1,23 @@
 # Strategic Roadmap
 
+## Accept classical MVP segments while original methods are awaited — 2026-11-03
+
+#38's cached-model curation source/API acceptance is complete: 84 owning tests
+pass, all three cookbook blocks reproduce seven expected outcomes, and current
+producer identities remain stable. Its shared-site partial in-place mutation is
+corrected and guarded; [the receipt](evidence/curation_acceptance_20261103_summary.json)
+preserves pre-fix failures and all earlier evidence separately.
+
+Next perform functional/API acceptance of #17's existing prepared-conformer
+screening: current state/frame access, explicit failed-conformer accounting,
+resolved scores, unchanged inputs, portable best poses and retrospective use.
+Then review #29's explicit rigid refinement/orientation alternatives. Reuse existing
+guards and recipes; propose any missing molecular operation to MolSysMT by issue.
+#66's four original binding methods remain an independent access gate. No exhausted
+search repetition, study redesign, addon or new release is needed for these steps.
+Source/API acceptance and #9/#23/#10 hosted/installed/public qualification retain
+their separate scopes. See the [checkpoint](checkpoint.md) for exact resumption.
+
 ## Await original binding methods; official access handoff is concrete — 2026-11-03
 
 The [#66 handoff](https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289)

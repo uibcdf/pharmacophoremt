@@ -1,5 +1,41 @@
 # Development Checkpoint
 
+## Curation source/API acceptance complete; prepared-conformer review next — 2026-11-03
+
+#38 is resolved with its [archived report](archive/public_pharmacophore_curation.md)
+and [current acceptance receipt](evidence/curation_acceptance_20261103_summary.json).
+Clean code producer **404aa3829ac8d43bd6cb3c883f5547eb460857b0** passes **84**
+owning curation/contracts/model/site/pose controls, zero failures/errors/skips.
+The eleven new controls protect atomic rejection of partial in-place shared-site
+edits and valid independent/all-occurrence alternatives; nine fail before the fix.
+All three existing cookbook blocks reproduce seven expected evaluation outcomes,
+native persistence, source mappings and actual attribution. Full code/native/test/
+helper and metadata identities are stable in both phases. Original October and
+pre-fix evidence is retained. The isolated page render passes after supplying a
+stub for its adjacent attribution link; full-site rendering is not inferred.
+
+**Next:** review acceptance of [#17](https://github.com/uibcdf/pharmacophoremt/issues/17)
+against the current public prepared-frame/state, score-resolution and failure
+contracts. Inspect implementation, execute its existing real-provider guards and
+cookbook, and resolve concrete gaps before archival. Then review #29's supplied
+correspondence refinement and alternative orientation policies. No conformer
+generation or molecular repair belongs here; any missing reusable molecular
+capability goes to MolSysMT through an issue. #66 still needs a new authorized
+route to the four original binding methods; do not repeat exhausted searches or
+change its study rules. #60, #323/#375/#447, addon and release priorities remain
+separate; addon/new release stay deferred.
+
+The owned work root `/tmp/phmt38-acceptance-20261103-q_sscz2e/` retains execution
+artifacts, owners LMMV/dprada, review 2026-11-17. The #69 venv now contains an
+ordinary editable PHMT install at measured version `0.4.0+52.g404aa38`, replacing
+the previously measured local wheel; that original wheel/artifact receipt is
+unchanged. Actual provider roots/pins/native bytes and the shared canonical prefix
+are unchanged. Helper imports explicitly add the source checkout after resolving
+PHMT through its editable install. Shared pip-check conflicts remain #82; these
+84 passes and recipes do not qualify clean installed/public dependency closure,
+the complete current suite/platform matrix or biological performance. Exact
+final-head CI remains #9. No local background job is required to resume #17.
+
 ## Cached-model curation acceptance in progress — 2026-11-03
 
 The next independent MVP segment is functional/API acceptance of #38 while

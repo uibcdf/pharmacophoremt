@@ -101,3 +101,24 @@ unchanged. The full run establishes passing local tests, not qualification again
 four fixed provider sources. Its original audit and log remain alongside the
 independently stable cookbook evidence. The editable installation is confirmed
 without a PYTHONPATH override; only MolSysMT is overridden for this full run.
+
+## Current source/API acceptance — 2026-11-03
+
+Clean producer **404aa3829ac8d43bd6cb3c883f5547eb460857b0** passes 84 owning
+curation/contracts/model/site/pose controls, zero failures, errors or skips.
+Eleven new alias controls include nine failing counterexamples before the fix;
+the complete curation module now has 47 cases. The three existing cookbook blocks
+reproduce all seven expected status/coverage outcomes and actual attribution.
+Full source/native/helper/test and metadata lookup identities remain unchanged
+during both phases. The [new receipt](evidence/curation_acceptance_20261103_summary.json)
+retains complete models, evaluations, credits, commands, runners, identities and
+initial harness failures. A strict isolated rendering of this cookbook page
+passes with a stub for the adjacent attribution link; full-site navigation is
+outside that rendering check. Original October records above are preserved.
+
+#38's source/API acceptance is resolved and its report is
+[archived](archive/public_pharmacophore_curation.md). This does not imply a full
+current-suite rerun, clean installed/public/Conda/platform qualification or
+biological/performance validation. The temporary venv borrows shared scientific
+dependencies with disclosed MolSysSuite #82 conflicts; molecular links remain
+the separate #60 policy. Exact final-head hosted receiving stays #9.

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (34)
+### Resolved (35)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -32,6 +32,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`prepared_receptor_continuation.md`](prepared_receptor_continuation.md) — [#52](https://github.com/uibcdf/pharmacophoremt/issues/52) — Qualify cached ERalpha receptor projections, exclusions and observed-contact model reconstruction. *(resolved, measured)*
 - [`prepared_rigid_search_continuation.md`](prepared_rigid_search_continuation.md) — [#50](https://github.com/uibcdf/pharmacophoremt/issues/50) — Qualify saved prepared queries through rigid recovery, selected negatives and frame-budget accounting. *(resolved, measured)*
 - [`provenance_strings_interpreted_as_quantities.md`](provenance_strings_interpreted_as_quantities.md) — [#25](https://github.com/uibcdf/pharmacophoremt/issues/25) — Provenance serialization interprets literal identifiers as physical quantities. *(resolved, reproduced)*
+- [`public_pharmacophore_curation.md`](public_pharmacophore_curation.md) — [#38](https://github.com/uibcdf/pharmacophoremt/issues/38) — Consolidate reusable cached-model selection, copying, extraction and constraint editing. *(resolved, measured)*
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`receive_chemical_domain_separation.md`](receive_chemical_domain_separation.md) — [#69](https://github.com/uibcdf/pharmacophoremt/issues/69) — Receive MolSysMT chemical-domain separation with unchanged scientific profiles. *(resolved, measured)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*

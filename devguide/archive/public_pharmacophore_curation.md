@@ -1,9 +1,9 @@
 ---
 summary: Consolidate reusable cached-model selection, copying, extraction and constraint editing.
 issue: uibcdf/pharmacophoremt#38
-status: active
+status: resolved
 opened: 2026-10-04
-closed:
+closed: 2026-11-03
 verification: measured
 area: [modeling, curation, provenance]
 guard: tests/test_curation.py
@@ -13,6 +13,41 @@ supersedes: []
 ---
 
 # Independent hypothesis variants and explicit constraint curation
+
+
+## Source/API acceptance resolved — 2026-11-03
+
+Functional acceptance is complete on clean producer
+**404aa3829ac8d43bd6cb3c883f5547eb460857b0**. The
+[new acceptance receipt](../evidence/curation_acceptance_20261103_summary.json)
+retains **84 passed / zero failures, errors or skips** in the complete curation,
+argument-contract, native model/site and pose-evaluation selection. Its eleven
+new alias controls include nine failures before the correction and eleven
+passes afterward. Default independent edits isolate repeated occurrences;
+in-place edits require all occurrences of each selected shared object and retain
+native identities. Invalid partial edits preserve sites, shapes, metadata, name
+and score, even with optional digestion skipped and through the class setter.
+
+All three existing cookbook blocks execute, preserving the seven original
+status/coverage expectations, full source/model mappings, non-default-unit
+persistence and actual attribution (zero cached uses, two edit items/two uses).
+Full source/native/helper/test and distribution-metadata identities are unchanged
+before/after both acceptance phases on current controlled providers. The strict
+isolated curation-page build passes with an adjacent link-target stub; its initial
+missing-target harness failure is retained. The complete archive retains runners,
+models, evaluations, actual credits, source identities, initial install/helper
+failures and original regression outputs. Historical October evidence below is
+unchanged, including its failed full-suite Ackredit stability audit.
+
+The durable guard is `tests/test_curation.py`, with the maintained
+[curation contract](../pharmacophore_curation_workflow.md). This resolves #38's
+cached-model source/API scope, not full current-suite, clean installed/public
+Conda/platform, biological or performance qualification. Shared dependency
+conflicts remain MolSysSuite #82; final-head hosted receiving remains #9.
+#60's intentional molecular links and any independent molecular copying remain
+separate MolSysMT-owned work. No provider source, dataset, science profile,
+public dependency floor, addon or release changes. Earlier active/next statements
+below retain their original dated context and are superseded by this resolution.
 
 ## What
 
