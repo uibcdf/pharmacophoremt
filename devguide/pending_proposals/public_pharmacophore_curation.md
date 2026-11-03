@@ -88,3 +88,20 @@ quantity/boolean/weight/index validation; preservation of other shape parameters
 independent evaluation of geometric, essential, weighted and excluded constraints;
 safe native persistence; honest optional attribution; executable cookbook and
 integration evidence linked to the owning issue. Keep the report active for review.
+
+## Functional acceptance in progress — 2026-11-03
+
+The authorized acceptance review found that repeated references to the same
+native InteractionSite at distinct model indices allowed a partial in-place
+edit to change an unselected occurrence. The public add method permits those
+references. Nine new regression cases fail against the original implementation;
+two companion controls already pass. The scoped contract now rejects partial
+in-place alias selections before mutation, including through a class setter and
+with optional digestion skipped. Default independent edits and in-place selection
+of every occurrence remain supported, preserving source history and identities.
+All eleven focused controls pass after the correction. The maintained workflow
+and cookbook document the boundary; #60's molecular-link policy is unchanged.
+
+Next run the complete curation/owning integration controls and all three existing
+cookbook blocks against a committed producer, retaining current source/native
+identities and separate historical receipts before deciding closure.

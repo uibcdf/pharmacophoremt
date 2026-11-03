@@ -122,6 +122,12 @@ with units. Incompatible targets raise before modifying the original, including
 with `in_place=True`. Class setters `set_radius`, `set_sigma`, `set_weight` and
 `set_essential` delegate to the same editor, update in place and return None.
 
+If several model indices refer to the same site object, select all its
+occurrences for an in-place edit. Selecting only some occurrences raises before
+changing anything. Use the default independent edit to change just one local
+occurrence; the copied sites are separate objects. An in-place edit remains
+visible through other references to the original site.
+
 ## Preserve original evidence and capture actual work
 
 Copying preserves score and bibliography. Extraction and editing invalidate score

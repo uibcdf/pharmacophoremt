@@ -22,6 +22,15 @@ selection, geometry and transformations remain MolSysMT operations.
   `set_essential`, `set_weight`, `set_radius` and `set_sigma` delegate here and
   preserve setter return value None.
 
+If the same native site object occurs at several model indices, an in-place
+selection must include every occurrence of each targeted object. A partial
+selection raises before changing any site, shape, metadata, name or score,
+including when optional digestion is skipped. Use the default independent edit
+to change just one occurrence: each output occurrence is a separate native site.
+Selecting every occurrence in place preserves the shared site identity and
+records a change for each selected index. References held by other callers still
+refer to that site; use an independent variant when isolation is required.
+
 Extraction and editing set score to None. The original score remains in the
 complete `source_model` snapshot. Metadata has method
 `explicit_pharmacophore_curation@1`, operation, producer version, reason,

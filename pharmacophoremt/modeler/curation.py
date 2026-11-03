@@ -226,6 +226,8 @@ def edit_pharmacophore(
     in_place : bool, default=False
         Return an independent variant, or commit to the original model after all
         validation. Existing native site identities remain when editing in place.
+        If a site occurs at multiple model indices, an in-place edit must select
+        every occurrence; otherwise it raises before changing the model.
     skip_digestion : bool, default=False
         Skip optional argument preprocessing. Scientific validation and atomic
         rejection of incompatible edits still apply.
@@ -264,6 +266,8 @@ def edit_pharmacophore(
             argument="site_indices/edits",
             reason="require targets and at least one explicit edit",
         )
+    if in_place:
+        contracts.in_place_selection(pharmacophore, selected)
     result = copy_pharmacophore(pharmacophore, name=name)
     from pharmacophoremt.interaction_site.shape import (
         Cylinder,

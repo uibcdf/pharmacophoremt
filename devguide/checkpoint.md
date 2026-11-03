@@ -1,5 +1,26 @@
 # Development Checkpoint
 
+## Cached-model curation acceptance in progress — 2026-11-03
+
+The next independent MVP segment is functional/API acceptance of #38 while
+#66 awaits the four original binding methods. Review reproduced a partial
+in-place edit changing an unselected index when two indices share a native site.
+The scoped correction rejects that ambiguous selection atomically; independent
+edits and selection of all shared occurrences remain valid. Nine new regression
+cases fail before the correction, and all eleven new controls pass afterward.
+No molecular implementation, provider source or #60 molecular-copy policy changes.
+
+Next qualify the complete curation/owning integration selection and the existing
+three-block cookbook against this committed producer, then archive #38 only if
+its acceptance conditions hold. Follow with separate acceptance review of #17
+prepared-conformer screening and #29 rigid refinement; addon/release stay deferred.
+The current work root is `/tmp/phmt38-acceptance-20261103-q_sscz2e/`, owners
+LMMV/dprada, review 2026-11-17. Its receipts preserve the original alias
+reproduction and pre/post regression outputs. The previously owned #69 venv
+now installs this checkout editably with ordinary pip build isolation; its prior
+7e5b5a5 installed-wheel receipt/artifact remains historical. Provider/native
+installs and the canonical shared prefix are unchanged. Final-head CI stays #9.
+
 ## Original-paper access handoff ready; last unreviewed support checked — 2026-11-03
 
 #66's [clickable access handoff](https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289)

@@ -68,6 +68,91 @@ def generic_model():
     return result
 
 
+@pytest.mark.parametrize("skip_digestion", [False, True])
+@pytest.mark.parametrize(
+    "index, edits",
+    [
+        (0, {"weight": 2}),
+        (0, {"essential": False}),
+        (0, {"radius": ".2 nm"}),
+        (3, {"sigma": ".2 nm"}),
+    ],
+)
+def test_partial_in_place_alias_edit_is_rejected_without_mutation(
+    index, edits, skip_digestion
+):
+    model = generic_model()
+    model.add_interaction_site(model.interaction_sites[index])
+    before = deepcopy(_to_dict(model))
+    sites = list(model.interaction_sites)
+    shapes = [site.shape for site in sites]
+    metadata = model.metadata
+    with pytest.raises(ArgumentError, match="shared site"):
+        edit_pharmacophore(
+            model,
+            site_indices=[index],
+            in_place=True,
+            name="must not commit",
+            skip_digestion=skip_digestion,
+            **edits,
+        )
+    assert _to_dict(model) == before
+    assert model.metadata is metadata
+    assert all(site is old for site, old in zip(model.interaction_sites, sites))
+    assert all(site.shape is old for site, old in zip(model.interaction_sites, shapes))
+
+
+def test_class_setter_rejects_partial_shared_site_selection():
+    model = generic_model()
+    model.add_interaction_site(model.interaction_sites[0])
+    before = deepcopy(_to_dict(model))
+    with pytest.raises(ArgumentError, match="shared site"):
+        model.set_weight(index=0, weight=2)
+    assert _to_dict(model) == before
+
+
+def test_independent_edit_can_change_one_occurrence_of_a_shared_site():
+    model = generic_model()
+    model.add_interaction_site(model.interaction_sites[0])
+    before = deepcopy(_to_dict(model))
+    variant = edit_pharmacophore(model, site_indices=[0], weight=2)
+    assert _to_dict(model) == before
+    assert variant.interaction_sites[0].weight == 2
+    assert variant.interaction_sites[-1].weight == 1
+    assert variant.interaction_sites[0] is not variant.interaction_sites[-1]
+    assert all(
+        site is not model.interaction_sites[i]
+        for i, site in enumerate(variant.interaction_sites)
+    )
+    assert variant.metadata["source_model"] == before
+    assert variant.score is None
+
+
+def test_in_place_edit_of_every_shared_site_occurrence_preserves_identity_and_history():
+    model = generic_model()
+    shared = model.interaction_sites[0]
+    model.add_interaction_site(shared)
+    last = model.n_interaction_sites - 1
+    before = deepcopy(_to_dict(model))
+    result = edit_pharmacophore(
+        model, site_indices=[last, 0], weight=2, radius=".2 nm", in_place=True
+    )
+    assert result is model
+    assert model.interaction_sites[0] is model.interaction_sites[last] is shared
+    assert shared.weight == 2
+    assert np.isclose(float(puw.get_value(shared.radius, to_unit="nm")), 0.2)
+    assert model.metadata["source_model"] == before
+    assert model.metadata["parameters"]["site_indices"] == [last, 0]
+    assert [row["source_site_index"] for row in model.metadata["changes"]] == [last, 0]
+    assert all(
+        row["fields"]["weight"] == {"before": 1, "after": 2}
+        for row in model.metadata["changes"]
+    )
+    assert [_to_dict(model)["interaction_sites"][i] for i in range(1, last)] == [
+        before["interaction_sites"][i] for i in range(1, last)
+    ]
+
+
 def test_selection_preserves_explicit_order_and_exact_cached_feature_shape_names(
     observed,
 ):

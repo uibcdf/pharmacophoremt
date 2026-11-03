@@ -58,6 +58,23 @@ def indices(obj):
     return values
 
 
+def in_place_selection(pharmacophore, selected):
+    """Refuse a commit that would also edit an unselected site occurrence."""
+    selected = set(selected)
+    targeted = {id(pharmacophore.interaction_sites[index]) for index in selected}
+    if any(
+        index not in selected and id(site) in targeted
+        for index, site in enumerate(pharmacophore.interaction_sites)
+    ):
+        raise ArgumentError(
+            argument="site_indices",
+            reason=(
+                "a shared site also occurs at an unselected index; use "
+                "in_place=False or select every occurrence of each shared site"
+            ),
+        )
+
+
 def text(obj):
     if obj is not None and not isinstance(obj, str):
         raise ArgumentError(argument="name/reason", reason="expected text or None")
