@@ -1,0 +1,158 @@
+{
+  "actual_junit_cases": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 165
+  },
+  "actual_phmt_runtime": "0.4.0+56.g9387852",
+  "consumer": {
+    "head": "37052f7bb7190046997ba96955d4dea154cf3a91",
+    "status": ""
+  },
+  "date": "2026-11-03",
+  "decision": {
+    "biological_or_performance_validation": false,
+    "channel_inventory_verified": false,
+    "ci_provider_pin_changed": false,
+    "clean_installed_dependency_closure_qualified": false,
+    "exception_owner": [
+      "LMMV",
+      "dprada"
+    ],
+    "molecular_algorithms_added": false,
+    "next_local_segment": "Review #30 prepared CCD acceptance against its own contract, then #32/#33/#34. #60 copy receiving is available for an actual independent-variant consumer.",
+    "removal_condition": "Qualified supported public vector delivery plus source/installed/public receiving permits provider support migration.",
+    "review": "2026-11-11",
+    "runtime_constraints_changed": false,
+    "status": "partial/open"
+  },
+  "dependency_declarations": {
+    "conda_molsysmt": "molsysmt (no version constraint)",
+    "followup": "#23/#10 qualify delivered floors and newer compatibility; no speculative bound from source version suffix.",
+    "historically_qualified_public_payload": "0.23.0; original 2026-10-28 receipt, not a new installation or a claimed declared floor",
+    "python_molsysmt": "molsysmt (no version constraint)"
+  },
+  "full_evidence": {
+    "compressed_bytes": 83850,
+    "compressed_sha256": "bb6d19c2d3875be8019387c4b25947c441f7e8493e924e85f2da31fa5db65fe3",
+    "path": "molsysmt_feature_review_20261103.json.gz",
+    "uncompressed_bytes": 320317,
+    "uncompressed_sha256": "1fba14991474e23cb25068cf62af222ee2b3ce7a333a4081afe21abbc98146b9"
+  },
+  "issue": "uibcdf/pharmacophoremt#41",
+  "modern_capabilities_required": [
+    "interactions.hbonds.get_hbond_sites",
+    "structure.get_vectors"
+  ],
+  "network_attempts": {
+    "main_repodata_curl": {
+      "command": "curl --connect-timeout 10 --max-time 25 --fail --silent --show-error -D linux-main.headers -o linux-main.json URL",
+      "exit_code": 28,
+      "outcome": "Timeout after 25002 milliseconds; no channel contents received",
+      "response_bytes": 0,
+      "url": "https://conda.anaconda.org/uibcdf/linux-64/repodata.json"
+    },
+    "package_api_urllib": {
+      "outcome": "TimeoutError before HTTP response; no artifact downloaded",
+      "timeout_seconds": 35,
+      "url": "https://api.anaconda.org/package/uibcdf/molsysmt"
+    },
+    "web_api_and_file_listing": "Both direct official endpoint opens returned inaccessible"
+  },
+  "original_junit_suite_attributes": [
+    {
+      "errors": "0",
+      "failures": "0",
+      "hostname": "spika",
+      "name": "pytest",
+      "skipped": "0",
+      "tests": "165",
+      "time": "127.534",
+      "timestamp": "2026-11-03T14:28:21.652962-06:00"
+    }
+  ],
+  "provider": {
+    "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+    "status": ""
+  },
+  "provider_native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "public_review": {
+    "github_releases": {
+      "latest": {
+        "draft": false,
+        "html_url": "https://github.com/uibcdf/molsysmt/releases/tag/0.23.0",
+        "prerelease": false,
+        "published_at": "2026-10-07T06:46:29Z",
+        "tag_name": "0.23.0",
+        "target_commitish": "46ef28eb60a258aa77d82ff1bc39ee0d1591e3c9"
+      },
+      "records": 10,
+      "retrieved_date": "2026-11-03",
+      "route": "Connected GitHub read-only fetch",
+      "url": "https://api.github.com/repos/uibcdf/molsysmt/releases?per_page=10"
+    },
+    "github_tags": {
+      "latest_semantic_tag": {
+        "node_id": "MDM6UmVmMTM3OTM3MjQzOnJlZnMvdGFncy8wLjIzLjA=",
+        "object": {
+          "sha": "8a18c2de49e0a8de71adbc12da2e4bc3b2b05a42",
+          "type": "tag",
+          "url": "https://api.github.com/repos/uibcdf/molsysmt/git/tags/8a18c2de49e0a8de71adbc12da2e4bc3b2b05a42"
+        },
+        "ref": "refs/tags/0.23.0",
+        "url": "https://api.github.com/repos/uibcdf/molsysmt/git/refs/tags/0.23.0"
+      },
+      "records": 48,
+      "retrieved_date": "2026-11-03",
+      "route": "Connected GitHub read-only fetch",
+      "url": "https://api.github.com/repos/uibcdf/molsysmt/git/matching-refs/tags/"
+    },
+    "interpretation": "Latest visible GitHub release/tag is 0.23.0. Channel inventory is NOT verified because official Anaconda metadata queries failed. Source availability alone does not identify a supported public vector delivery."
+  },
+  "results": {
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "/tmp/phmt41-public-review-20261103-icry1l76/run_receiving.py",
+      "focused"
+    ],
+    "exit_code": 0,
+    "full_identity_unchanged": true,
+    "metadata_lookup_unchanged": true,
+    "physical_source_native_test_identities_unchanged": true,
+    "pytest_arguments": [
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "tests/test_molsysmt_feature_routes.py",
+      "tests/test_reference_ligand.py",
+      "tests/test_pose_evaluation.py",
+      "tests/test_attribution.py",
+      "tests/test_conformer_screening.py",
+      "tests/test_aligned_consensus.py",
+      "tests/test_rigid_consensus.py",
+      "tests/test_curation.py",
+      "--junitxml=/tmp/phmt41-public-review-20261103-icry1l76/focused.xml"
+    ],
+    "scope": "Bounded PHMT source/API analytical acceptance on owned system-site-packages venv with editable providers; not clean installed/public/Conda/platform or biological qualification."
+  },
+  "schema": "pharmacophoremt.molsysmt_feature_review_summary@1",
+  "temporary_resources": {
+    "borrowed_owned_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "consumer_base": "37052f7bb7190046997ba96955d4dea154cf3a91",
+    "issue": "uibcdf/pharmacophoremt#41",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Bounded current public vector delivery and consumer compatibility review",
+    "review": "2026-11-17",
+    "scope": "Read-only release/channel/source inspection first. No shared environment, sibling source, provider pin or public minimum changes."
+  }
+}

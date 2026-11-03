@@ -1,4 +1,38 @@
-# MolSysMT feature API receiving — 2026-10-28
+# MolSysMT feature API receiving
+
+## Current review — 2026-11-03
+
+Clean consumer `37052f7bb7190046997ba96955d4dea154cf3a91` passes all **165**
+designated source controls, zero failures/errors/skips, on controlled MolSysMT
+`0faf1584d05ac47ddcebfc20d9c9978b7f4f230e`. Both public capabilities are asserted
+before execution. Actual PHMT runtime is `0.4.0+56.g9387852`; source/native,
+helpers/tests/inputs and distribution-metadata identities agree before and after.
+The CI pin now selects this modern provider; the older-pin statement below is
+historical. The [new receipt](evidence/molsysmt_feature_review_20261103_summary.json)
+preserves exact commands, snapshots, original log/XML and public-query responses.
+
+The latest visible GitHub release and semantic tag remain **0.23.0**
+([release](https://github.com/uibcdf/molsysmt/releases/tag/0.23.0)). Fresh official
+Anaconda package and main-channel metadata requests fail before returning content;
+therefore the current channel inventory is **unverified**, not evidence that no
+new package exists. The earlier 0.23.0 payload tests remain dated evidence.
+No new public environment or clean dependency closure is qualified. Shared
+dependency conflicts remain MolSysSuite #82; exact-head hosted receiving is #9.
+
+Keep #41 partial/open and its existing exception review on **2026-11-11**.
+Request an identified supported generic-vector delivery in provider #375, then
+qualify source/installed/public compatibility before removing the fallback.
+Acceptor chemical models retain their separate scientific contract. Current
+Python and Conda declarations both say bare `molsysmt`; 0.23.0 is a historical
+qualified payload, not a declared minimum. #23/#10 own a justified delivered floor
+and newer-public compatibility receiving. This review changes no runtime bounds,
+CI pin, scientific definition or molecular implementation.
+
+The owned review directory is `/tmp/phmt41-public-review-20261103-icry1l76/`,
+owners LMMV/dprada, retention review 2026-11-17. The existing owned #69 prefix is
+borrowed unchanged; no shared environment or sibling worktree is modified.
+
+## Historical receiving — 2026-10-28
 
 Owner: [PharmacophoreMT #41](https://github.com/uibcdf/pharmacophoremt/issues/41),
 LMMV/dprada. Provider coordination remains

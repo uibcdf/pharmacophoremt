@@ -14,6 +14,24 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Progress — 2026-11-03, delivery and compatibility review
+
+The [current receiving review](../molsysmt_feature_receiving.md) passes all 165
+designated source controls without skips on clean PHMT 37052f7 and controlled
+MolSysMT 0faf1584. Both modern APIs are required; full source/native/test/input
+and metadata identities remain stable. The current CI provider pin has vectors.
+Latest visible GitHub release/tag is still 0.23.0; failed official Anaconda
+metadata queries leave current channel inventory unverified. Earlier public
+payload evidence is not relabeled as a fresh clean installation.
+
+Keep this issue partial and the existing fallback review **2026-11-11** with
+owners LMMV/dprada. Remove it only after an identified supported public vector
+delivery and source/installed/public receiving. Bare Python/Conda dependency
+declarations have no MolSysMT version minimum; #23/#10 retain qualification and
+justified floor migration. No bounds, pins, acceptor definition, provider source
+or molecular algorithm changes. The [dated receipt](../evidence/molsysmt_feature_review_20261103_summary.json)
+retains the successful source execution and failed public-metadata queries.
+
 ## Progress — 2026-10-28, provider API receiving
 
 Native feature extraction now prefers public

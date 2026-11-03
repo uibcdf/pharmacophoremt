@@ -1,5 +1,43 @@
 # Development Checkpoint
 
+## #41 review complete; public migration remains pending — 2026-11-03
+
+Clean producer **37052f7bb7190046997ba96955d4dea154cf3a91** passes all **165**
+designated feature/reference/pose/attribution/conformer/consensus/curation controls,
+zero failures/errors/skips, in 127.55 s. Both modern MolSysMT APIs are required
+before testing. Controlled provider 0faf1584 and actual editable PHMT
+`0.4.0+56.g9387852` are unchanged; all physical and metadata identities agree.
+The [receipt](evidence/molsysmt_feature_review_20261103_summary.json) preserves
+original snapshots, log/XML, GitHub responses and failed channel requests.
+
+Latest visible GitHub MolSysMT release/tag remains 0.23.0. Official Anaconda
+package/main-repodata requests return no contents before timing out; current
+channel inventory is unverified. Do not infer absence of newer packages or clean
+installed compatibility. Current CI already pins the modern provider; the
+Oct28 older-pin statement below is historical. Python/Conda runtime declarations
+both have bare `molsysmt`, so 0.23.0 is not a declared floor. #23/#10 retain
+delivered-floor/newer-public compatibility qualification. #41 stays partial:
+owner LMMV/dprada, existing review **2026-11-11**, removal after identified
+supported public vectors and source/installed/public receiving. #375 acceptor
+models are separate. No runtime, pin, bound, provider or molecular-kernel change.
+
+**Next local segment: #30 prepared CCD acceptance**, then #32 exclusions, #33
+ionic and #34 aromatic queries, each against its own original criteria, driver,
+cookbook and source evidence. Recent #36/#37 results support those reviews but
+do not close them automatically. #60 can receive native copies for an actual
+independent-variant consumer; it is not waiting for #121 implementation. #66
+still needs four original binding methods through a new authorized lead.
+No new study rules, addon or release. #9 exact-head CI and #23/#10 installed/
+public delivery retain their independent gates.
+
+Owned review root `/tmp/phmt41-public-review-20261103-icry1l76/`, LMMV/dprada,
+retention review 2026-11-17. Borrowed #69 venv/providers/native bytes and canonical
+prefix/sibling trees are unchanged; no public environment is created. Shared
+conflicts remain MolSysSuite #82. At this review, all three runs for 37052f7
+(CI 41711171488, policy 41711172638, Conda governance 41711172542) remain queued;
+this local result does not qualify those hosted gates. No local process remains
+from the completed source gate or failed network queries.
+
 ## Composition and complete-CCD source/API acceptance complete — 2026-11-03
 
 #36 and #37 are resolved with their [composition](archive/native_interaction_composition.md)

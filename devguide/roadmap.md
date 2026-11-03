@@ -1,5 +1,27 @@
 # Strategic Roadmap
 
+## #41 reviewed; next accept the prepared CCD foundation — 2026-11-03
+
+#41's designated modern-provider source gate passes **165 controls**, zero
+failures/errors/skips, with stable physical and metadata identities. Current CI
+already has vectors. The [delivery review](molsysmt_feature_receiving.md) finds
+GitHub release/tag 0.23.0 still latest; failed official Anaconda metadata queries
+leave channel inventory unverified. Keep the bounded historical fallback and
+2026-11-11 review until supported public vector delivery and source/installed/
+public qualification permit migration. No dependency floor or provider pin change.
+
+| Order | Next result | Boundary |
+| --- | --- | --- |
+| 1 | #30: review and accept the prepared EST/DES CCD foundation using its own preservation, self/cross-ligand, attribution, driver and cookbook criteria. | Available with controlled providers; #37's workflow evidence supports, but does not replace, this independent review. |
+| 2 | #32, then #33/#34: reconcile public exclusion, ionic and aromatic query acceptance. | Preserve original source/frame/state, participant, empty/failure, geometry and attribution contracts. Reuse applicable results without closing from aggregate counts. |
+| Provider delivery | #41/#375: identify supported public generic vectors and qualify migration; #23/#10: justified floors and newer-public compatibility. | Existing source delegation is complete; clean installed/public delivery remains unqualified. Acceptor models are separate science. |
+| When a consumer needs it | #60: qualify native copies for independent molecular variants. | #121 is delivered; intentional model references remain explicit. |
+| External scientific input | #66: receive the four original binding methods through a new authorized lead. | Preserve fixed study rules and prior exposure; no repeated exhausted searches. |
+
+Exact-head hosted gates remain #9; shared dependency conflicts #82. #323/#447
+retain provider ownership. Addon and a new release stay deferred. See the
+[checkpoint](checkpoint.md) and [dated receipt](evidence/molsysmt_feature_review_20261103_summary.json).
+
 ## Composition and full-CCD source/API acceptance complete — 2026-11-03
 
 #36 and #37 now join #38/#17/#29 as reviewed source/API slices. The corrected
