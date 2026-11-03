@@ -1,5 +1,54 @@
 # Pool-3 experimental methods review — declaration of 2026-10-28
 
+## Unreviewed Güngör support checked; original-paper handoff — 2026-11-03
+
+The [issue access handoff](https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289)
+now lists all four full article titles, direct DOI links and required biological
+method sections. The maintainer currently has no new access route and will check
+ordinary authorized access. Missing source text is not a request for scientific
+approval or a MolSysMT implementation gap.
+
+One concrete unreviewed source remained in the older record: the official Güngör
+supporting document advertised as analytical/spectral information. This bounded
+follow-up retrieves that specific supplement through its public Figshare metadata,
+not another attempt at the exhausted main-article routes. DOI
+[10.1021/jm0509389.s001](https://doi.org/10.1021/jm0509389.s001), item 4057095,
+file 6570186, has 40,808 bytes, verified MD5
+`9c954112f13b4b9b2d96831ad1c3369e` and SHA-256
+`7af7ecd52f7f593fa4d4e8655e3c59a44f4cac847f84618280deb99e3a19331e`.
+The official metadata declares CC BY-NC 4.0; source PDF/text/renderings remain in
+the owned private review root rather than being copied into the repository.
+
+All **nine PDF pages** are text-checked and visually reviewed. Pages 2–5 contain
+Tables 7–10 with chemical structures/formulae, synthetic references and NMR data;
+pages 6–7 contain Table 11's LC/MS data and instrumental conditions; pages 8–9
+contain Tables 12–13's HRMS and elemental analyses. Page 7's experimental conditions
+describe chromatography/mass spectrometry, not an ERα competition experiment.
+No binding protocol is supplied by this document. That bounded observation does
+not establish that the unretrieved main article lacks a biological method.
+
+The [separate manual receipt](evidence/esr1_gungor_support_review_20261103_summary.json)
+and [factual/exposure projection](../tests/data/esr1_binding_evaluation/gungor_support_review_20261103.json)
+retain source and rendered-page identities. Full supporting-document chemical
+and analytical content is now observed development evidence, including literal
+source codes BMS-408407, BB45657134, BB45657137 and BB45657141. No molecular/CID
+alias or scaffold relationship is inferred. Analytical purity percentages are
+not binding activities. Keep this exposed corpus alongside every earlier ledger;
+it cannot later become unseen by changing identifiers.
+
+**All four original binding methods remain unresolved.** No source is accepted,
+activity-resource request, class count, molecular system or score is added.
+Queries, thresholds, no-pooling and source order remain fixed. The review journals
+three top-level HTTP calls; automatic download redirects and separate web-tool
+observations are explicitly not a complete HTTP capture. One targeted official
+support-index search was empty; the documented API lookup supplies the exact
+support item. Raw metadata/responses stay private.
+
+Next obtain the four original main methods through a new authorized route; this
+supporting-information route is now exhausted too. Retain
+`/tmp/phmt66-gungor-support-20261103-crebhpm_/`, owners LMMV/dprada, review
+2026-11-17. The 2026-10-28 records below preserve their original claims and exposure.
+
 **Follow-up:** the [Scott supplement and access review](#scott-supplement-and-access-follow-up--2026-10-28)
 below retains the newly observed activity/chemical-string exposure and an exact
 four-article handoff. No source is accepted for detailed activity acquisition.

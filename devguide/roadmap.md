@@ -1,5 +1,19 @@
 # Strategic Roadmap
 
+## Await original binding methods; official access handoff is concrete — 2026-11-03
+
+The [#66 handoff](https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289)
+now names all four original articles with clickable DOI links and required
+biological-method sections. A bounded review of the previously unreviewed
+Güngör supporting document finds chemical/analytical characterization, not the
+missing receptor-binding protocol. The [manual receipt](evidence/esr1_gungor_support_review_20261103_summary.json)
+preserves this result and the newly observed source corpus; no source is accepted.
+
+Next obtain the four main methods through a new authorized route. Do not repeat
+exhausted discovery or infer a cohort from analytical data. #69 is resolved;
+source/public-artifact qualification and molecular-provider science keep their
+separate owners. The [checkpoint](checkpoint.md) records the exact pause boundary.
+
 ## Chemical-domain source adoption complete; return to MVP validation — 2026-11-03
 
 #69's reviewed candidate **7e5b5a5** is integrated through code merge **76f43ffa**

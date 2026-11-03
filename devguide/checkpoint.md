@@ -1,5 +1,40 @@
 # Development Checkpoint
 
+## Original-paper access handoff ready; last unreviewed support checked — 2026-11-03
+
+#66's [clickable access handoff](https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289)
+lists Sun 2006, Xin 2023, Güngör 2006 and Scott 2023 with full titles, direct DOI
+links and required biological binding-method sections. The maintainer currently
+has no new route and will check ordinary authorized access. No human scientific
+validation is needed before source review; the original experimental text is missing.
+
+The explicitly unreviewed official Güngör supporting document provided one
+bounded new route. Its identity is verified and all nine pages visually/textually
+reviewed: chemical/analytical characterization, including LC/MS instrumental
+conditions, supplies no receptor-binding protocol. This finding is limited to
+that supplement, not the unretrieved main article. The
+[new manual receipt](evidence/esr1_gungor_support_review_20261103_summary.json)
+retains factual review and exposure; prior records remain unchanged. Raw source
+PDF/text/renderings stay private in `/tmp/phmt66-gungor-support-20261103-crebhpm_/`,
+owners LMMV/dprada, review 2026-11-17.
+
+**Next input:** original main binding methods through a new authorized access
+lead for those four papers. The article searches and this support route are
+exhausted; do not repeat them without a new lead, request individual activity
+tables, change study rules or score an unqualified cohort. Newly observed
+chemical/analytical source content remains exposed development evidence; no
+aliases, class counts, computational molecular systems or scores are created.
+#66 stays partial. #9 owns the separate new-main CI; #69 source adoption remains
+resolved, and installed/public delivery, addon and new-release priorities are unchanged.
+
+This documentation/data-only followup uses one bounded `[skip ci]` checkpoint
+while unskipped integrated-source CI **41688951342** at **0485c17** remains active.
+No runtime, helper, test implementation, workflow or dependency input changes;
+the only new test-tree input is the manual factual/exposure projection. Local
+method/report guards, archive/projection identity, indexes, Ruff and whitespace
+cover the changed scope. #9 retains final-head/daily-backlog recovery; that older
+head's eventual result is not relabeled as execution of this documentation head.
+
 ## Chemical-domain source adoption complete — 2026-11-03
 
 The reviewed chemical-domain adaptation is integrated through code merge

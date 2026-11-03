@@ -14,6 +14,25 @@ supersedes: []
 
 # Fresh ERα binding evaluation readiness
 
+## Original-paper access handoff; Güngör support exhausted — 2026-11-03
+
+The [issue handoff](https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289)
+contains all four full titles, DOI links and required original biological-method
+sections. The maintainer currently has no new access route and will check.
+
+The previously unreviewed official Güngör supplement is now retrieved with its
+advertised MD5 verified and all nine pages visually/textually reviewed. It covers
+NMR, LC/MS, HRMS and elemental characterization; its instrumental conditions are
+not receptor-binding methods. The [new separate receipt](../evidence/esr1_gungor_support_review_20261103_summary.json)
+retains this limited finding and the now-observed chemical/analytical source corpus,
+without alias inference or changed previous exposure ledgers. Source bytes stay
+private under their recorded rights. The original main method remains unresolved.
+
+No source is accepted, activity-resource request, class count, computational
+molecular system or score is added. All four original protocols remain the next
+input; repeat neither exhausted article discovery nor this now-reviewed support
+route without a new lead. #66 stays partial, independent of provider implementation.
+
 ## Supplement follow-up and explicit original-text handoff — 2026-10-28
 
 The [new separate manual receipt](../evidence/esr1_binding_methods_followup_20261028_summary.json)

@@ -1,0 +1,126 @@
+{
+  "accepted_sources": [],
+  "access_handoff_comment": "https://github.com/uibcdf/pharmacophoremt/issues/66#issuecomment-6611742289",
+  "activity_class_counts_computed": false,
+  "binding_protocol_qualified": false,
+  "direct_activity_resource_requests": 0,
+  "disposition": "Main-article ERalpha competition method remains unresolved. Complete review of this specific nine-page supplement finds no receptor binding protocol; do not infer that the main article lacks one.",
+  "exposure": {
+    "analytical_percentages_are_not_binding_activity_values": true,
+    "chemical_identity_and_analytical_data_observed": true,
+    "complete_support_document_observed": true,
+    "identity_or_scaffold_mapping": null,
+    "independence_note": "Preserve the entire reviewed supporting-document corpus as exposed development evidence, together with prior ledgers. Do not later call it unseen under different molecular identifiers.",
+    "literal_codes_are_not_alias_or_molecular_identity_assignments": true,
+    "literal_source_codes_seen": [
+      "BMS-408407",
+      "BB45657134",
+      "BB45657137",
+      "BB45657141"
+    ],
+    "metadata_abstract_repeats_prior_exposed_biological_results": true,
+    "new_binding_activity_values_in_pdf_observed": false
+  },
+  "full_evidence": {
+    "compressed_bytes": 3709,
+    "compressed_sha256": "50304e357c4e5de8578fe59c9dd07838e91eac4ed4463d4f3a02b9a2afc87cca",
+    "file": "esr1_gungor_support_review_20261103.json.gz",
+    "uncompressed_bytes": 10335,
+    "uncompressed_sha256": "e37a3cff6b2fafd2489762de51602a53bb06d6fd16413cf78601677ac9977852"
+  },
+  "issue": "uibcdf/pharmacophoremt#66",
+  "molecular_systems_loaded_or_constructed": false,
+  "new_pharmacophore_scores_computed": false,
+  "next": "Obtain original main biological binding methods through a new authorized route for the four named articles. Stop this supporting-information route; do not repeat exhausted searches or change the fixed study rules.",
+  "original_article_methods_still_unresolved": [
+    "10.1016/j.bmcl.2005.12.057",
+    "10.1016/j.ejmech.2023.115328",
+    "10.1021/jm0509389",
+    "10.1021/acs.jmedchem.2c01964"
+  ],
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "private_root": "/tmp/phmt66-gungor-support-20261103-crebhpm_",
+  "producer": {
+    "consumer_context": "0485c176642b5adbef16f143cde259618c19f2f1",
+    "scope": "Manual follow-up of the unreviewed official supplement already identified in the preserved methods handoff.",
+    "status_before": ""
+  },
+  "public_projection": {
+    "bytes": 5918,
+    "path": "tests/data/esr1_binding_evaluation/gungor_support_review_20261103.json",
+    "sha256": "bfda1d0ca1c044aebbe34e5e9e44de998a8900333a2bcfc16f6ea28e5db863ee"
+  },
+  "recorded_at": "2026-11-03T18:11:08.197882+00:00",
+  "review": "2026-11-17",
+  "review_kind": "Manual complete PDF review; not automated method qualification or molecular science.",
+  "schema": "pharmacophoremt.esr1_gungor_support_review@1",
+  "source": {
+    "advertised_md5_verified": true,
+    "article_doi": "10.1021/jm0509389",
+    "bytes": 40808,
+    "download_url": "https://ndownloader.figshare.com/files/6570186",
+    "figshare_article_id": 4057095,
+    "figshare_file_id": 6570186,
+    "filename": "jm0509389_si_001.pdf",
+    "inspected_pages": [
+      {
+        "image_sha256": "5951bce36bf57d7b998c888565a49802eeb4aff767a2bd7133aae9c3d9b31680",
+        "pdf_page": 1,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "d95bd5087c650ca9ca249233f42af112a3a5cd5b55e643a212ce5e5e55f99fa5",
+        "pdf_page": 2,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "71bd40f45867e73609d99ad77bf39bc742bb6ad286ae5c59ca93afa612b67dbd",
+        "pdf_page": 3,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "2c784541683d3b5f2208484abf8ca01a7ede53050997876aa0485b13b8c1ac8b",
+        "pdf_page": 4,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "bf8b9a1896a4c1e430a63b063beb5bc568902e9081de11e0991f31903c17b3a4",
+        "pdf_page": 5,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "63a0cdf4a9b7d752cd27f1246e3392ef936f8fae3097d2393e9869ac57971480",
+        "pdf_page": 6,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "028ab39c195eebac3651247fbfc8bdd23fa540619d21f1b90baaa89ad824b9a9",
+        "pdf_page": 7,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "765bc553ef677bd35d78168819e0f8685dea2e038462a41b841691118cafaa4c",
+        "pdf_page": 8,
+        "visually_reviewed": true
+      },
+      {
+        "image_sha256": "20a54c80b78d88c8abe79e62f7230b88473474b29591b3ec8ec96b98d97b5880",
+        "pdf_page": 9,
+        "visually_reviewed": true
+      }
+    ],
+    "license": {
+      "name": "CC BY-NC 4.0",
+      "url": "https://creativecommons.org/licenses/by-nc/4.0/",
+      "value": 10
+    },
+    "md5": "9c954112f13b4b9b2d96831ad1c3369e",
+    "pdf_pages": 9,
+    "sha256": "7af7ecd52f7f593fa4d4e8655e3c59a44f4cac847f84618280deb99e3a19331e",
+    "supplement_doi": "10.1021/jm0509389.s001",
+    "url": "https://acs.figshare.com/articles/journal_contribution/Synthesis_and_Characterization_of_3-Arylquinazolinone_and_3-Arylquinazolinethione_Derivatives_as_Selective_Estrogen_Receptor_Beta_Modulators/4057095"
+  }
+}

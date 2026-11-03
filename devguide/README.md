@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: chemical-domain source adaptation integrated after eight hosted scientific cells pass; #69 archived. Return to MVP validation under #66, with original binding protocols still needed. Exact-head CI and installed/public qualification remain separate; public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #69 source adaptation integrated; #66 has a clickable four-paper access handoff and a complete Güngör-support review, with original binding methods still needed. Exact-head CI and installed/public qualification remain separate; public release stays 0.4.0.
 
 ## Classical Workflow Specification
 
