@@ -238,3 +238,29 @@ changes can affect greedy outcomes even without deleting input candidates.
 Generic geometric solvers and molecular transformations belong in MolSysMT;
 PHMT owns pharmacophoric constraints and method-specific search decisions.
 Rust, GPU and distributed execution must preserve a chosen scientific contract.
+
+
+## Current source/API acceptance — 2026-11-03
+
+#29 is resolved with an [archived report](archive/public_rigid_refinement.md).
+Clean source **96f917a7287fdd69e2a8b1a7c6600f975a745e6a** passes 1020 complete
+local source tests, zero failures/errors/skips, plus the preceding 165-case
+owning selection. All five cookbook blocks and six original policy comparisons
+pass. Comparison outputs are identical with tracking off/on and retain actual
+G3PS policy credits. Physical loaded-module/source/native/helper/test/input identities and actual module versions are equal in every phase. Full-run distribution-metadata lookups instead switch to older canonical PHMT, MolSysMT, Viewer and DepDigest records. Strict full equality remains false for that run; focused, cookbook and comparison full equality remain true. The original differences are retained separately, without claiming clean dependency closure.
+
+The [current receipt](evidence/rigid_refinement_acceptance_20261103_summary.json) retains complete cases,
+traces, exact commands/runners and source/native/input identities. It preserves
+both policy preferences and earlier checkpoint retention without a universal
+winner. No runtime, test, seed, tolerance or default changes were needed.
+Original October timing/RSS measurements above remain historical; this acceptance
+adds scientific/functional evidence, not another performance comparison.
+
+The unchanged owned system-site-packages venv uses ordinary editable PHMT runtime
+404aa38, whose tracked runtime/support/test/tool/workflow trees equal measured
+main 96f917a. MolSysMT 0faf1584, Viewer ca7ebea6 and DepDigest 13cc7378 remain the
+controlled sources. Shared conflicts stay MolSysSuite #82. The strict isolated
+cookbook page has an adjacent link-target stub and is not a full-site gate.
+This complete local source result does not qualify clean installed/public/Conda
+or the supported platform matrix, biological performance or full G3PS. Exact
+final-head hosted receiving stays #9; package delivery stays #23/#10.

@@ -1,5 +1,31 @@
 # Strategic Roadmap
 
+## Rigid-refinement accepted; next consolidate complete interaction workflows — 2026-11-03
+
+#38 curation, #17 prepared-frame screening and now #29 supplied-seed rigid
+refinement have reviewed source/API acceptance. #29 passes the 1020-item complete
+local source suite, including the 165-case owning selection also run separately,
+all five cookbook blocks and six policy comparisons with actual attribution.
+The [receipt](evidence/rigid_refinement_acceptance_20261103_summary.json)
+preserves exact producer identities, outputs and original historical comparisons.
+No scientific default, runtime or test changes are needed for this acceptance.
+
+| Order | Work and deliverable | Readiness / owner |
+| --- | --- | --- |
+| 1 | #36: accept public hypothesis composition and named interaction collections; preserve labeled observations, common source/frame/state, keep/reuse semantics, empty/failure behavior and independent constraints. | Can proceed now with the current MolSysMT tools and controlled providers. Execute its existing guards, driver and cookbook. |
+| 2 | #37: accept the complete frozen EST/DES CCD interaction workflow, both roles and explicit placements, original chemistry/bytes, directional and steric negatives, unit persistence and attribution. | After #36 review, reuse public molecular preparation/translation/merge; designed controls are not observed biological complexes. Reconcile #30/#32/#33/#34 only after their own contracts are checked. |
+| Parallel, by 2026-11-11 | #41: review the bounded old-public donor arithmetic exception and receive a supported generic-vector delivery before retiring it. | Current source already delegates vectors to MolSysMT. Public dependency/installed receiving remains #23/#10; ideal acceptor models remain separate #375 science. |
+| Parallel, when a variant is needed | #60: receive native copy ownership for explicitly independent molecular variants and caches. | MolSysMT #121 is CLOSED; decision 655892f is included in controlled 0faf1584. Test the PHMT consumer profile; preserve intentional model references. No automatic default/API/minimum migration. |
+| Scientific access gate | #66: obtain and qualify the original binding methods of Sun, Xin, Güngör and Scott before the next fixed-protocol data stage. | Needs a new authorized access lead. Preserve exposure, thresholds, sampling and no-pooling; #447 molecular/scaffold independence and #323 environmental H remain separate provider work. |
+| Independent receiving | #9 exact-head CI/recovery; #23/#10 clean installed/public delivery when that milestone is selected. | Local source success does not close remote/platform/dependency/public gates. Addon and a new release stay deferred. |
+
+**Immediate recommendation: proceed with #36, then #37.** Reuse completed source
+checks only while the relevant code, test, input and provider identities remain
+applicable. Keep the original evidence and run the owning workflow demonstrations;
+aggregate passes do not automatically close all older issues. General molecular
+operations and provider gaps stay in MolSysMT via issues; pharmacophoric composition,
+interpretation and evaluation stay in PHMT. See [checkpoint](checkpoint.md).
+
 ## Prepared-conformer acceptance complete; qualify rigid refinement — 2026-11-03
 
 #17's source/API scope is resolved without runtime/test changes. All 95 owning
@@ -737,7 +763,7 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
   biological qualification remain separate from this controlled projection tool.
 - [x] Public common-frame hypothesis composition and named native interaction-collection conversion (#36), with labeled evidence, explicit keep/participant-reuse policies, independent controls and preserved empty/failure semantics. Disconnected prepared controls do not establish biological complex acceptance.
 - [x] Joint native interaction controls with complete frozen CCD EST/DES molecules (#37), two caller-declared rigid placements and both participant roles. Existing public tools retain neutral empty families, duplicate-profile evidence, directional controls and an independent DES steric veto; designed CCD pairs do not establish biological complex acceptance.
-- [x] Independent cached-model selection, copying, extraction and explicit constraint editing (#38), with class delegation, source-model history, score invalidation, distinct radius/sigma semantics and independent essential/weight/exclusion controls. Scientific/API review and activity-based comparison remain open.
+- [x] Independent cached-model selection, copying, extraction and explicit constraint editing (#38), with class delegation, source-model history, score invalidation, distinct radius/sigma semantics and independent essential/weight/exclusion controls. Source/API acceptance was resolved on 2026-11-03; activity-based comparison remains open.
 - [x] Standalone exclusion-sphere construction from cached MolSysMT heavy-atom geometry, with explicit constant-radius choices, independent veto controls, native persistence and an observed receptor continuation (#32). Physical-radius/surface/pruning strategies and biological validation remain open; do not infer steric volumes from inactive-only features.
 - [ ] Refinement, validated I/O and inspectable MolSysViewer/DockingMT workflow integration.
 - [ ] Execute the chosen public vertical pilots with declared preparation, independent controls and no leakage.
@@ -746,8 +772,11 @@ ideas; its direct-RDKit and hidden-preparation proposals are superseded.
 - [ ] Complete molecular geometry delegation to MolSysMT (#41 / #375).
   Prepared class/default transitions and obsolete utility/reader retirement are
   delivered under #18/#42/#44/#45/#46. The remaining bounded donor-H arithmetic
-  in `get_features()` awaits the provider contract; broad molecular ownership
-  and provider scientific acceptance are not inferred from those retirements.
+  in `get_features()` is limited to the qualified historical public provider without
+  vectors. Current source consumes public `structure.get_vectors`; removing the
+  compatibility branch requires supported public delivery/receiving (#41 review
+  2026-11-11). Ideal acceptor geometry and provider scientific acceptance retain
+  their separate contracts.
 - [x] Implement own deferred native Ackredit capture and portable bibliography (#19); see [the cookbook](../docs/content/cookbook/attribution.md).
 - [ ] Review the attribution contract and verify optional-integration distribution support (#6, #19).
 - [ ] Confirm production dependency/distribution closure (#10) and required hosted CI evidence (#9).

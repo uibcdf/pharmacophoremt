@@ -1,9 +1,9 @@
 ---
 summary: Public greedy refinement with both angular policies and valid checkpoint retention.
 issue: uibcdf/pharmacophoremt#29
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-11-03
 verification: measured
 area: [screening, modeling, validation, attribution]
 guard: tests/test_rigid_refinement.py
@@ -13,6 +13,42 @@ supersedes: []
 ---
 
 # Public rigid refinement and orientation policies
+
+## Source/API acceptance resolved — 2026-11-03
+
+Clean producer **96f917a7287fdd69e2a8b1a7c6600f975a745e6a** passes
+**1020 complete local source tests**, zero failures/errors/skips, after
+165 owning refinement/workload/modular/consensus/geometry/seed controls pass.
+No runtime or test change is needed. All five cookbook blocks execute; all six
+original policy comparisons reproduce their unchanged counts and full scientific
+reports with tracking off/on and actual G3PS policy attribution. The strict
+isolated cookbook page renders with an adjacent ranked-seed link-target stub;
+full-site navigation/rendering is outside that check.
+
+Physical loaded-module/source/native/helper/test/input identities and actual module versions are equal in every phase. Full-run distribution-metadata lookups instead switch to older canonical PHMT, MolSysMT, Viewer and DepDigest records. Strict full equality remains false for that run; focused, cookbook and comparison full equality remain true. The original differences are retained separately, without claiming clean dependency closure.
+The [new receipt](../evidence/rigid_refinement_acceptance_20261103_summary.json) retains full test cases,
+original logs, runners, exact source/native/input identities, complete comparison
+and cookbook reports, bibliography and actual credits. Original October scientific
+and timing/RSS archives are unchanged. No new performance benchmark is claimed.
+
+The controls retain angular recovery favoring final (four matches versus no
+placement), blocking favoring each_step (five versus no placement), and valid
+three-match checkpoint retention by both. Rejected trials do not replace the
+last accepted geometry; budgets count initial/trial fits and failures propagate.
+Selected/observed matching and fit anchors remain separate. Both policies stay
+available and ordinary consensus placement remains the default.
+
+The durable guard is `tests/test_rigid_refinement.py`, with expanded workload
+controls in `tests/test_rigid_refinement_workloads.py` and the maintained
+[workflow](../rigid_refinement_workflow.md). This closes supplied-seed source/API
+acceptance, not clean installed/public/Conda/platform, biological or performance
+qualification. The owned #69 venv retains ordinary editable PHMT runtime 404aa38;
+its tracked runtime/support/test/tool/workflow trees equal measured clean main
+96f917a. Providers/native bytes and the canonical prefix are unchanged. Shared
+conflicts remain MolSysSuite #82; exact final-head hosted receiving stays #9 and
+public delivery #23/#10. Earlier review/incorporation wording below is historical
+and superseded by this dated acceptance.
+
 
 ## What
 

@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Rigid-refinement source/API acceptance complete; interaction workflow next — 2026-11-03
+
+#29 is resolved with its [archived report](archive/public_rigid_refinement.md)
+and [current receipt](evidence/rigid_refinement_acceptance_20261103_summary.json). Clean producer
+**96f917a7287fdd69e2a8b1a7c6600f975a745e6a** passes **1020 complete local
+source tests**, zero failures/errors/skips, after 165 owning controls pass.
+All five cookbook blocks and six original comparisons pass with identical
+scientific reports with tracking off/on and actual policy attribution. No runtime
+or test change is needed. Physical loaded-module/source/native/helper/test/input identities and actual module versions are equal in every phase. Full-run distribution-metadata lookups instead switch to older canonical PHMT, MolSysMT, Viewer and DepDigest records. Strict full equality remains false for that run; focused, cookbook and comparison full equality remain true. The original differences are retained separately, without claiming clean dependency closure.
+Both final/each_step remain available; reciprocal counterexamples and valid
+checkpoint retention are protected. Old performance archives remain unchanged.
+
+**Next product segment: #36, then #37.** Accept public common-frame composition
+and named native interaction collections first, then replay the complete EST/DES
+CCD joint-interaction workflow with the same controlled providers. Review source
+axes/frame/state, participant reuse versus explicit keep, incompatible constraints,
+evaluated-empty/failed analyses, steric/directional negatives, persistence and actual
+credits. Reuse the complete source result while its runtime/test/input/provider
+identities remain applicable; run the owning drivers/examples for fresh full
+workflow evidence. See the ordered [roadmap](roadmap.md). Adjacent #30/#32/#33/#34
+acceptance can be reconciled as their independent contracts are reviewed, not
+closed automatically from an aggregate count.
+
+**Parallel boundaries:** #41's historical-public donor arithmetic exception needs
+review by 2026-11-11; current source already uses public MolSysMT generic vectors.
+Public capability delivery/receiving is separate from ideal acceptor geometry.
+MolSysMT #121 is CLOSED and its copy decision is an ancestor of controlled 0faf1584;
+[#60's status correction](https://github.com/uibcdf/pharmacophoremt/issues/60#issuecomment-6613270157)
+replaces provider-implementation waiting with scoped consumer receiving when an
+independent molecular variant is needed. Intentional live model links stay explicit.
+#66 still needs the four original binding methods via a new authorized access lead.
+#323 environmental H, #375 directions/delivery and #447 identity/scaffold retain
+their distinct provider scopes. No local molecular kernel or study-rule change.
+Addon and new release remain deferred; #9 hosted CI and #23/#10 installed/public
+delivery remain independently owned.
+
+Artifacts stay in `/tmp/phmt29-acceptance-20261103-o7s59ui_/`, owners LMMV/dprada,
+review 2026-11-17. The owned #69 venv/providers/native bytes are reused unchanged;
+ordinary editable PHMT still identifies runtime `0.4.0+52.g404aa38`, with tracked
+runtime/support/test/tool/workflow trees equal to measured 96f917a. No canonical
+prefix or sibling worktree is modified. Shared dependency conflicts remain #82.
+The isolated strict cookbook-page render uses a neighboring link-target stub.
+The local suite and analytical receipts do not establish clean installed/public/
+Conda/platform or biological/performance qualification. Prior-head 96f917a CI
+41699308864 has all eight scientific jobs queued at the retained receptor query;
+that is not green evidence. Final-head receiving/recovery stays #9. No local
+background job is required to resume #36 after this closeout.
+
 ## Prepared-conformer source/API acceptance complete; rigid refinement next — 2026-11-03
 
 #17 is resolved with its [archived report](archive/native_conformer_screening.md)

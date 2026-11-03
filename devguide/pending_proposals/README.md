@@ -6,7 +6,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (18)
+### Active (17)
 
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(active, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
@@ -24,7 +24,6 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_rigid_pose_search.md`](native_rigid_pose_search.md) — [#15](https://github.com/uibcdf/pharmacophoremt/issues/15) — Search prepared rigid ligands using reusable correspondence and MolSysMT alignment tools. *(active, measured)*
 - [`prepared_ccd_ligand_validation.md`](prepared_ccd_ligand_validation.md) — [#30](https://github.com/uibcdf/pharmacophoremt/issues/30) — Traceable CCD ideal ligands for native preparation, refinement and consensus controls. *(active, measured)*
 - [`public_excluded_volume_sites.md`](public_excluded_volume_sites.md) — [#32](https://github.com/uibcdf/pharmacophoremt/issues/32) — Build reusable exclusion spheres from native heavy-atom inventories without molecular inference. *(active, measured)*
-- [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(active, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(active, measured)*
 
 ### Partial (5)
