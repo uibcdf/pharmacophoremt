@@ -5,6 +5,24 @@ LMMV/dprada. Provider implementation belongs to
 [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255); shared coordination
 is [MolSysSuite #155](https://github.com/uibcdf/molsyssuite/issues/155).
 
+## Source adoption integrated — 2026-11-03
+
+The reviewed candidate **7e5b5a5** is adopted in code merge **76f43ffa** with
+identical tracked runtime/support/test/tool/workflow trees. Controlled provider
+**0faf1584**, compatible Viewer ca7ebea6 and DepDigest 13cc7378 are received.
+[Native hosted evidence](evidence/chemical_domain_hosted_adoption_20261103.json)
+verifies all eight actual Linux/macOS Python 3.11–3.14 scientific test steps,
+retaining the original capacity cancellation, seven prior passes and successful
+single-cell recovery separately. The [resolved source report](archive/receive_chemical_domain_separation.md)
+is guarded by the real domain module and existing typed CCD controls.
+
+All original profiles, source maps, units, chemistry/geometry expectations and
+producer evidence remain. Local 1,009-source and 110-installed-wheel results keep
+their metadata/shared-dependency limits. Public artifacts/minimums and full
+installed Conda/platform qualification remain #23/#10; ordinary new-main CI stays
+#9 and is not called a fresh run of the candidate. The dated records below retain
+their original availability/acceptance claims.
+
 ## Corrected-provider receiving — 2026-11-03
 
 MolSysMT #531 is closed after source correction **0faf1584d05ac47ddcebfc20d9c9978b7f4f230e**.

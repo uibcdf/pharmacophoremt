@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Chemical-domain source adoption complete — 2026-11-03
+
+The reviewed chemical-domain adaptation is integrated through code merge
+**76f43ffa6663f4a3c85ef27c27d212d773d55442**, preserving the later main checkpoints.
+Its six tracked runtime/support/test/tool/workflow trees are identical to measured
+candidate **7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d**. Provider **0faf1584**,
+Viewer **ca7ebea6** and DepDigest **13cc7378** are now the controlled source inputs.
+No molecular implementation, scientific profile, fixture or public minimum changes.
+
+[Hosted adoption receipt](evidence/chemical_domain_hosted_adoption_20261103.json)
+verifies all **eight actual Linux/macOS Python 3.11–3.14 scientific test steps**.
+The first attempt's seven passes and macOS 3.14 runner-capacity cancellation remain
+original evidence. Attempt 2 recovers that cell successfully; inherited successful
+jobs are not described as newly executed tests. The unused backlog-decision skip
+remains visible. The redundant old-runtime documentation matrix was deliberately
+cancelled to free capacity and is not called passing.
+
+The [local receiving receipt](evidence/chemical_domain_fixed_provider_receiving_20261103_summary.json)
+retains 1,009 complete local source passes, all original 22 controls/four typed
+CCD cases, and the separate 110-case installed local-wheel pass. Full metadata
+lookup equality remains false after pytest while physical source/native/test
+bytes remain equal; shared conflicts stay MolSysSuite #82. These exact source and
+bounded wheel results do not qualify public dependency closure, the complete
+installed Conda/platform matrix or a new release/minimum.
+
+#69's source receiving is resolved and its report is
+[archived](archive/receive_chemical_domain_separation.md), guarded by
+`tests/test_chemical_domain_receiving.py`. The guard exercises absent/zero/unknown
+versus known-empty chemistry, ambiguous/explicit states, extraction/copy/H5MSM
+and state-local components versus stable molecules. The four unchanged CCD typed
+preservation controls independently protect the provider correction. Ordinary
+post-integration exact-head CI remains #9; inspect it separately, without relabeling
+candidate CI as a new main run. The unskipped integration supersedes the prior
+bounded documentation-only skip; daily recovery and weekly full matrices remain.
+
+**Next:** return to MVP scientific validation under #66. Its four original binding
+protocols still need a new authorized access lead; do not repeat the exhausted
+public searches or acquire activities/scores before eligibility is established.
+#23/#10 own future exact installed/public delivery; #323/#375/#447 retain their
+separate scopes. Addon and a new release remain deferred. No human validation
+is outstanding for this source adoption.
+
+Retain `/tmp/phmt69-integration-20261103-dh5mbdjd/` and the earlier source/wheel
+roots through review on 2026-11-17, owners LMMV/dprada. Original producer failures,
+versions, source/native hashes and artifacts remain unchanged. The earlier venv
+contains the local installed wheel; source replay requires selecting/reinstalling
+the identified source. No sibling source or shared prefix is modified.
+
 ## Provider defect received; local source and installed receiving pass — 2026-11-03
 
 MolSysMT #531 is closed and its correction is received on exact provider

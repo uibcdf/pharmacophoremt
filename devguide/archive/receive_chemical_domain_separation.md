@@ -1,18 +1,37 @@
 ---
 summary: Receive MolSysMT chemical-domain separation with unchanged scientific profiles.
 issue: uibcdf/pharmacophoremt#69
-status: partial
+status: resolved
 opened: 2026-10-28
-closed:
+closed: 2026-11-03
 verification: measured
 area: [integration, modeling, screening, validation]
-guard: tests/test_conformer_screening.py
+guard: tests/test_chemical_domain_receiving.py
 normative: devguide/chemical_domain_receiving.md
-blocked_by: [uibcdf/pharmacophoremt#9]
+blocked_by: []
 supersedes: []
 ---
 
 # Chemical-domain receiving preparation
+
+## Source-adoption resolution — 2026-11-03
+
+Controlled-source adoption is complete in code integration **76f43ffa**, whose
+tracked code/support/test/tool/workflow trees exactly match qualified **7e5b5a5**.
+The [native hosted receipt](../evidence/chemical_domain_hosted_adoption_20261103.json)
+verifies all eight Linux/macOS Python 3.11–3.14 actual scientific test steps.
+Original attempt-1 capacity cancellation and seven successful executions remain
+retained; attempt 2 supplies the missing macOS 3.14 result. Nothing is normalized
+or weakened in PHMT to mask the provider's typed-column correction.
+
+The durable domain module protects actual chemical absence/known-emptiness,
+state choice, ownership, stable molecule/component distinction, extraction and
+persistence; existing unchanged CCD assertions protect exact typed preservation.
+The separate local receipt retains 1,009 source and 110 bounded installed-wheel
+passes with its original metadata/dependency limits. Ordinary new-head receiving
+remains #9; exact installed/public delivery remains #23/#10. Closure means source
+adoption, not public artifacts, a new minimum, release or stabilized science.
+All earlier dated claims below retain their original context.
 
 ## Provider correction received; exact candidate CI pending — 2026-11-03
 

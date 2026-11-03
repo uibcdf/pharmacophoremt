@@ -1,5 +1,23 @@
 # Strategic Roadmap
 
+## Chemical-domain source adoption complete; return to MVP validation — 2026-11-03
+
+#69's reviewed candidate **7e5b5a5** is integrated through code merge **76f43ffa**
+after all eight actual Linux/macOS Python 3.11–3.14 source test steps pass,
+including the recovered macOS 3.14 cell. The original cancelled attempt and
+inherited successful executions remain separate in the
+[hosted receipt](evidence/chemical_domain_hosted_adoption_20261103.json).
+1,009 local source and 110 bounded installed-wheel passes keep their declared
+limits. Ordinary new-head receiving stays #9; public artifact/minimum delivery
+stays #23/#10. No new release or scientific profile is inferred.
+
+The next product segment remains scientific validation under #66: obtain the
+four original binding protocols through a new authorized access lead, qualify
+eligibility, then follow the fixed pre-data declaration before any activity
+acquisition or scoring. Repeating exhausted searches or silently replacing the
+study design is not the next action. #323/#375/#447 retain their independent
+provider boundaries. Addon work remains deferred; see the [checkpoint](checkpoint.md).
+
 ## Finish hosted receiving of the corrected chemical-domain candidate — 2026-11-03
 
 MolSysMT #531 is resolved and received on source 0faf1584. Candidate **7e5b5a5**,

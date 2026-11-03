@@ -1,0 +1,5709 @@
+{
+  "attempt1": {
+    "attempt": 1,
+    "conclusion": "failure",
+    "databaseId": 41674239397,
+    "headSha": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+    "jobs": [
+      {
+        "completedAt": "2026-11-03T16:27:46Z",
+        "conclusion": "success",
+        "databaseId": 126050438080,
+        "name": "Reporting governance",
+        "startedAt": "2026-11-03T16:26:41Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:43Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:04Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:06Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:06Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:10Z",
+            "conclusion": "success",
+            "name": "Check reporting records and generated indexes",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:16Z",
+            "conclusion": "success",
+            "name": "Install CI-governance test tools",
+            "number": 6,
+            "startedAt": "2026-11-03T16:27:10Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:18Z",
+            "conclusion": "success",
+            "name": "Test CI recovery and contributor routes",
+            "number": 7,
+            "startedAt": "2026-11-03T16:27:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:18Z",
+            "conclusion": "success",
+            "name": "Review declared dependency routes",
+            "number": 8,
+            "startedAt": "2026-11-03T16:27:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Test distribution and dependency contracts",
+            "number": 9,
+            "startedAt": "2026-11-03T16:27:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Check generated ordinary environments",
+            "number": 10,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 18,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 19,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 20,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 21,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438080"
+      },
+      {
+        "completedAt": "2026-11-03T17:00:00Z",
+        "conclusion": "success",
+        "databaseId": 126050438593,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "startedAt": "2026-11-03T16:26:40Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:02Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:02Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:03Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:28:09Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:03Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:56Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:28:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:19Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:30:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:20Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:33:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:22Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:33:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:22Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:22Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:26Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:27Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:33:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:27Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:33:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:33:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:54Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:54Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T16:59:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:54Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T16:59:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:55Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T16:59:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:55Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T16:59:55Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438593"
+      },
+      {
+        "completedAt": "2026-11-03T17:09:33Z",
+        "conclusion": "success",
+        "databaseId": 126050438621,
+        "name": "Test on macos-15, Python 3.11",
+        "startedAt": "2026-11-03T16:33:24Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:33:27Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:33:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:32Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:33:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:32Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:33:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:32Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:33:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:36:27Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:33:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:40:14Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:36:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:02Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:40:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:05Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:43:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:07Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:43:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:07Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:43:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:08Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:43:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:11Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:43:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:14Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:43:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:14Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:43:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:43:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:27Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:27Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:09:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:28Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:09:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:28Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:09:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:31Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:09:28Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438621"
+      },
+      {
+        "completedAt": "2026-11-03T17:07:03Z",
+        "conclusion": "success",
+        "databaseId": 126050438637,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "startedAt": "2026-11-03T16:26:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:26:56Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:26:56Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:26:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:26:56Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:26:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:49Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:26:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:55Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:27:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:04Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:30:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:05Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:33:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:06Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:33:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:07Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:33:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:07Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:33:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:11Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:33:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:12Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:33:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:12Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:33:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:33:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:07:00Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:07:00Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:07:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:07:00Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:07:00Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438637"
+      },
+      {
+        "completedAt": "2026-11-03T17:15:26Z",
+        "conclusion": "success",
+        "databaseId": 126050438686,
+        "name": "Test on macos-15, Python 3.12",
+        "startedAt": "2026-11-03T16:39:06Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:39:10Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:39:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:14Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:39:10Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:14Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:39:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:15Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:39:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:42:35Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:39:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:29Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:42:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:27Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:46:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:30Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:49:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:33Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:49:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:34Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:49:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:35Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:49:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:42Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:49:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:47Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:49:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:47Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:49:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:17Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:49:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:18Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:15:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:18Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:15:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:18Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:15:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:19Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:15:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:20Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:15:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:20Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:15:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:20Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:15:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:24Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:15:20Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438686"
+      },
+      {
+        "completedAt": "2026-11-03T17:06:41Z",
+        "conclusion": "success",
+        "databaseId": 126050438701,
+        "name": "Test on macos-15, Python 3.13",
+        "startedAt": "2026-11-03T16:36:58Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:37:01Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:36:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:37:07Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:37:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:37:07Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:37:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:37:07Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:37:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:50Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:37:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:38Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:39:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:42Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:43:38Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:45Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:46:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:48Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:46:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:48Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:46:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:49Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:46:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:55Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:46:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:59Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:46:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:59Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:46:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:32Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:46:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:33Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:06:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:33Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:33Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:34Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:34Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:06:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:34Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:06:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:35Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:06:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:38Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:06:35Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438701"
+      },
+      {
+        "completedAt": "2026-11-03T16:39:46Z",
+        "conclusion": "success",
+        "databaseId": 126050438776,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "startedAt": "2026-11-03T16:26:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:41Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:19Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:41Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:19Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:19Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:28:13Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:43Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:28:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:43Z",
+            "conclusion": "skipped",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:30:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:44Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:30:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:45Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:30:44Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:46Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:30:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:46Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:30:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:49Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:30:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:49Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:30:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:49Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:30:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:30:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438776"
+      },
+      {
+        "completedAt": "2026-11-03T16:59:58Z",
+        "conclusion": "cancelled",
+        "databaseId": 126050438777,
+        "name": "Test on macos-15, Python 3.14",
+        "startedAt": "2026-11-03T16:26:36Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050438777"
+      },
+      {
+        "completedAt": "2026-11-03T16:54:00Z",
+        "conclusion": "success",
+        "databaseId": 126050439028,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "startedAt": "2026-11-03T16:26:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:11Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:12Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:12Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:28:16Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:31:13Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:28:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:17Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:31:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:18Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:33:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:19Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:33:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:20Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:33:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:20Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:33:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:24Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:33:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:25Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:33:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:25Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:33:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:50Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:33:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:50Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T16:53:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:55Z",
+            "conclusion": "success",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T16:53:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T16:53:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:58Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:58Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T16:53:58Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050439028"
+      },
+      {
+        "completedAt": "2026-11-03T16:26:36Z",
+        "conclusion": "skipped",
+        "databaseId": 126050440766,
+        "name": "Check skipped-commit backlog",
+        "startedAt": "2026-11-03T16:26:36Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126050440766"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/attempts/1"
+  },
+  "attempt2": {
+    "attempt": 2,
+    "conclusion": "success",
+    "databaseId": 41674239397,
+    "headSha": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+    "jobs": [
+      {
+        "completedAt": "2026-11-03T17:52:52Z",
+        "conclusion": "success",
+        "databaseId": 126079906288,
+        "name": "Test on macos-15, Python 3.14",
+        "startedAt": "2026-11-03T17:36:40Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:36:44Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:36:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:36:49Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:36:44Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:36:49Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:36:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:36:49Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:36:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:39:16Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:36:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:11Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:39:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:11Z",
+            "conclusion": "skipped",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T17:43:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:13Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T17:43:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:14Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T17:43:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:15Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T17:43:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:15Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T17:43:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:19Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T17:43:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:21Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T17:43:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:43:21Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T17:43:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:46Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T17:43:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:47Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:52:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:47Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:52:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:47Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:52:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:47Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:52:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:47Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:52:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:47Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:52:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:48Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:52:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:52:50Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:52:48Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079906288"
+      },
+      {
+        "completedAt": "2026-11-03T16:26:36Z",
+        "conclusion": "skipped",
+        "databaseId": 126079906359,
+        "name": "Check skipped-commit backlog",
+        "startedAt": "2026-11-03T17:16:24Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079906359"
+      },
+      {
+        "completedAt": "2026-11-03T16:39:46Z",
+        "conclusion": "success",
+        "databaseId": 126079907082,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "startedAt": "2026-11-03T16:26:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:41Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:39Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:19Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:41Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:19Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:19Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:28:13Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:43Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:28:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:43Z",
+            "conclusion": "skipped",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:30:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:44Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:30:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:45Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:30:44Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:46Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:30:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:46Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:30:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:49Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:30:46Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:49Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:30:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:49Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:30:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:30:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:42Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T16:39:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:43Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T16:39:43Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079907082"
+      },
+      {
+        "completedAt": "2026-11-03T17:06:41Z",
+        "conclusion": "success",
+        "databaseId": 126079907913,
+        "name": "Test on macos-15, Python 3.13",
+        "startedAt": "2026-11-03T16:36:58Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:37:01Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:36:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:37:07Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:37:01Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:37:07Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:37:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:37:07Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:37:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:50Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:37:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:38Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:39:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:42Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:43:38Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:45Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:46:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:48Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:46:45Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:48Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:46:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:49Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:46:48Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:55Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:46:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:59Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:46:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:59Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:46:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:32Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:46:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:33Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:06:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:33Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:33Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:34Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:06:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:34Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:06:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:34Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:06:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:35Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:06:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:38Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:06:35Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079907913"
+      },
+      {
+        "completedAt": "2026-11-03T17:09:33Z",
+        "conclusion": "success",
+        "databaseId": 126079908729,
+        "name": "Test on macos-15, Python 3.11",
+        "startedAt": "2026-11-03T16:33:24Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:33:27Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:33:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:32Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:33:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:32Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:33:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:32Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:33:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:36:27Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:33:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:40:14Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:36:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:02Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:40:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:05Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:43:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:07Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:43:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:07Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:43:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:08Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:43:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:11Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:43:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:14Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:43:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:43:14Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:43:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:43:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:26Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:27Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:09:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:27Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:09:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:28Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:09:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:28Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:09:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:31Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:09:28Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079908729"
+      },
+      {
+        "completedAt": "2026-11-03T17:15:26Z",
+        "conclusion": "success",
+        "databaseId": 126079908991,
+        "name": "Test on macos-15, Python 3.12",
+        "startedAt": "2026-11-03T16:39:06Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:39:10Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:39:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:14Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:39:10Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:14Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:39:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:39:15Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:39:14Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:42:35Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:39:15Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:46:29Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:42:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:27Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:46:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:30Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:49:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:33Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:49:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:34Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:49:33Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:35Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:49:34Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:42Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:49:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:47Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:49:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:49:47Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:49:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:17Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:49:47Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:18Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:15:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:18Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:15:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:18Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:15:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:19Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:15:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:20Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:15:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:20Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:15:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:20Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:15:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:24Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:15:20Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079908991"
+      },
+      {
+        "completedAt": "2026-11-03T16:27:46Z",
+        "conclusion": "success",
+        "databaseId": 126079971469,
+        "name": "Reporting governance",
+        "startedAt": "2026-11-03T16:26:41Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:43Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:04Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:06Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:06Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:10Z",
+            "conclusion": "success",
+            "name": "Check reporting records and generated indexes",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:16Z",
+            "conclusion": "success",
+            "name": "Install CI-governance test tools",
+            "number": 6,
+            "startedAt": "2026-11-03T16:27:10Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:18Z",
+            "conclusion": "success",
+            "name": "Test CI recovery and contributor routes",
+            "number": 7,
+            "startedAt": "2026-11-03T16:27:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:18Z",
+            "conclusion": "success",
+            "name": "Review declared dependency routes",
+            "number": 8,
+            "startedAt": "2026-11-03T16:27:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Test distribution and dependency contracts",
+            "number": 9,
+            "startedAt": "2026-11-03T16:27:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Check generated ordinary environments",
+            "number": 10,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 18,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 19,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 20,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:43Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 21,
+            "startedAt": "2026-11-03T16:27:43Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079971469"
+      },
+      {
+        "completedAt": "2026-11-03T16:54:00Z",
+        "conclusion": "success",
+        "databaseId": 126079982406,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "startedAt": "2026-11-03T16:26:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:11Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:12Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:12Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:28:16Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:31:13Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:28:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:17Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:31:13Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:18Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:33:17Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:19Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:33:18Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:20Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:33:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:20Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:33:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:24Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:33:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:25Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:33:24Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:25Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:33:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:50Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:33:25Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:50Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T16:53:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:55Z",
+            "conclusion": "success",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T16:53:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T16:53:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:57Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:58Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T16:53:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:53:58Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T16:53:58Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079982406"
+      },
+      {
+        "completedAt": "2026-11-03T17:07:03Z",
+        "conclusion": "success",
+        "databaseId": 126079982812,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "startedAt": "2026-11-03T16:26:39Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:26:56Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:26:56Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:26:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:26:56Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:26:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:49Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:26:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:55Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:27:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:04Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:30:55Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:05Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:33:04Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:06Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:33:05Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:07Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:33:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:07Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:33:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:11Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:33:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:12Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:33:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:12Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:33:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:33:12Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:06:59Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:07:00Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T17:06:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:07:00Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T17:07:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:07:00Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T17:07:00Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079982812"
+      },
+      {
+        "completedAt": "2026-11-03T17:00:00Z",
+        "conclusion": "success",
+        "databaseId": 126079984799,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "startedAt": "2026-11-03T16:26:40Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T16:26:42Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T16:26:40Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:02Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T16:26:42Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:02Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T16:27:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:27:03Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T16:27:02Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:28:09Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T16:27:03Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:30:56Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T16:28:09Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:19Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T16:30:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:20Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T16:33:19Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:22Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T16:33:20Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:22Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:22Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:26Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T16:33:22Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:27Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T16:33:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:33:27Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T16:33:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "success",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T16:33:27Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "success",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "skipped",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:53Z",
+            "conclusion": "skipped",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:54Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "2026-11-03T16:59:53Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:54Z",
+            "conclusion": "success",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "2026-11-03T16:59:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:54Z",
+            "conclusion": "success",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "2026-11-03T16:59:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:55Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "2026-11-03T16:59:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T16:59:55Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 37,
+            "startedAt": "2026-11-03T16:59:55Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/job/126079984799"
+      }
+    ],
+    "status": "completed",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41674239397/attempts/2"
+  },
+  "attempt_identity_note": "Seven successful original executions are preserved in attempt 1. The retry recovers the unexecuted macOS 3.14 cell; GitHub attempt-2 metadata projects inherited successful jobs with new bookkeeping IDs. Original execution timestamps/steps and IDs are retained rather than relabeled as fresh reruns.",
+  "candidate": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+  "cells": {
+    "macos-15/3.11": {
+      "job_id": 126079908729,
+      "name": "Test on macos-15, Python 3.11",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:43:07Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:43:07Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:43:14Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:43:14Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T17:09:26Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:43:14Z",
+        "status": "completed"
+      }
+    },
+    "macos-15/3.12": {
+      "job_id": 126079908991,
+      "name": "Test on macos-15, Python 3.12",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:49:34Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:49:33Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:49:47Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:49:47Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T17:15:17Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:49:47Z",
+        "status": "completed"
+      }
+    },
+    "macos-15/3.13": {
+      "job_id": 126079907913,
+      "name": "Test on macos-15, Python 3.13",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:46:48Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:46:48Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:46:59Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:46:59Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T17:06:32Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:46:59Z",
+        "status": "completed"
+      }
+    },
+    "macos-15/3.14": {
+      "job_id": 126079906288,
+      "name": "Test on macos-15, Python 3.14",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T17:43:15Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T17:43:14Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T17:43:21Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T17:43:21Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T17:52:46Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T17:43:21Z",
+        "status": "completed"
+      }
+    },
+    "ubuntu-latest/3.11": {
+      "job_id": 126079984799,
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:33:22Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:33:22Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:33:27Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:33:27Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T16:59:53Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:33:27Z",
+        "status": "completed"
+      }
+    },
+    "ubuntu-latest/3.12": {
+      "job_id": 126079982812,
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:33:07Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:33:06Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:33:12Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:33:12Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T17:06:59Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:33:12Z",
+        "status": "completed"
+      }
+    },
+    "ubuntu-latest/3.13": {
+      "job_id": 126079982406,
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:33:20Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:33:19Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:33:25Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:33:25Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T16:53:50Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:33:25Z",
+        "status": "completed"
+      }
+    },
+    "ubuntu-latest/3.14": {
+      "job_id": 126079907082,
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "required_preflight_steps": {
+        "Check dependency routes and installed Git context": {
+          "completedAt": "2026-11-03T16:30:46Z",
+          "conclusion": "success",
+          "name": "Check dependency routes and installed Git context",
+          "number": 10,
+          "startedAt": "2026-11-03T16:30:45Z",
+          "status": "completed"
+        },
+        "Verify interpreter and macOS architecture": {
+          "completedAt": "2026-11-03T16:30:49Z",
+          "conclusion": "success",
+          "name": "Verify interpreter and macOS architecture",
+          "number": 14,
+          "startedAt": "2026-11-03T16:30:49Z",
+          "status": "completed"
+        }
+      },
+      "test_step": {
+        "completedAt": "2026-11-03T16:39:42Z",
+        "conclusion": "success",
+        "name": "Run tests",
+        "number": 15,
+        "startedAt": "2026-11-03T16:30:49Z",
+        "status": "completed"
+      }
+    }
+  },
+  "duplicate_after": {
+    "conclusion": "",
+    "databaseId": 41679560745,
+    "headSha": "53c15415cc1ba1050f93220ff860d15c0b015bc9",
+    "jobs": [
+      {
+        "completedAt": "2026-11-03T17:02:32Z",
+        "conclusion": "success",
+        "databaseId": 126069274140,
+        "name": "Reporting governance",
+        "startedAt": "2026-11-03T17:01:43Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:01:44Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:01:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:01:58Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:01:44Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:01:59Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 3,
+            "startedAt": "2026-11-03T17:01:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:01:59Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 4,
+            "startedAt": "2026-11-03T17:01:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:03Z",
+            "conclusion": "success",
+            "name": "Check reporting records and generated indexes",
+            "number": 5,
+            "startedAt": "2026-11-03T17:01:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:06Z",
+            "conclusion": "success",
+            "name": "Install CI-governance test tools",
+            "number": 6,
+            "startedAt": "2026-11-03T17:02:03Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:06Z",
+            "conclusion": "success",
+            "name": "Test CI recovery and contributor routes",
+            "number": 7,
+            "startedAt": "2026-11-03T17:02:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:07Z",
+            "conclusion": "success",
+            "name": "Review declared dependency routes",
+            "number": 8,
+            "startedAt": "2026-11-03T17:02:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:28Z",
+            "conclusion": "success",
+            "name": "Test distribution and dependency contracts",
+            "number": 9,
+            "startedAt": "2026-11-03T17:02:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:28Z",
+            "conclusion": "success",
+            "name": "Check generated ordinary environments",
+            "number": 10,
+            "startedAt": "2026-11-03T17:02:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 18,
+            "startedAt": "2026-11-03T17:02:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 19,
+            "startedAt": "2026-11-03T17:02:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 20,
+            "startedAt": "2026-11-03T17:02:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 21,
+            "startedAt": "2026-11-03T17:02:29Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069274140"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275088,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "startedAt": "2026-11-03T17:07:54Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:07:56Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:07:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:08:36Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:07:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:08:36Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:08:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:08:36Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:08:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:35Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:08:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:12:08Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:09:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:54Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T17:12:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:56Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T17:14:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:56Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T17:14:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:57Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T17:14:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:57Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T17:14:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:59Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T17:14:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:00Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T17:14:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:00Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T17:15:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T17:15:00Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275088"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275110,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "startedAt": "2026-11-03T17:10:48Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:10:50Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:10:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:11:37Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:10:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:11:37Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:11:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:11:37Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:11:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:12:31Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:11:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:16:07Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:12:31Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T17:16:07Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275110"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275166,
+        "name": "Test on macos-15, Python 3.14",
+        "startedAt": "2026-11-03T17:15:11Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:15:16Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:15:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:21Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:15:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:21Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:15:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:21Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:15:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:15:21Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275166"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275226,
+        "name": "Test on macos-15, Python 3.11",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "queued",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275226"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275244,
+        "name": "Test on macos-15, Python 3.13",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "queued",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275244"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275368,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "startedAt": "2026-11-03T17:12:54Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:12:58Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:12:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:13:26Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:12:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:13:26Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:13:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:13:26Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:13:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:20Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:13:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:14:20Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275368"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275512,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "startedAt": "2026-11-03T17:15:29Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:15:32Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:15:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:49Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:15:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:49Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:15:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:49Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:15:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:16:45Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:15:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:16:45Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275512"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275596,
+        "name": "Test on macos-15, Python 3.12",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "queued",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275596"
+      },
+      {
+        "completedAt": "2026-11-03T16:58:18Z",
+        "conclusion": "skipped",
+        "databaseId": 126069277269,
+        "name": "Check skipped-commit backlog",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069277269"
+      }
+    ],
+    "status": "queued",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745"
+  },
+  "duplicate_before": {
+    "attempt": 1,
+    "conclusion": "",
+    "databaseId": 41679560745,
+    "headSha": "53c15415cc1ba1050f93220ff860d15c0b015bc9",
+    "jobs": [
+      {
+        "completedAt": "2026-11-03T17:02:32Z",
+        "conclusion": "success",
+        "databaseId": 126069274140,
+        "name": "Reporting governance",
+        "startedAt": "2026-11-03T17:01:43Z",
+        "status": "completed",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:01:44Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:01:43Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:01:58Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:01:44Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:01:59Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 3,
+            "startedAt": "2026-11-03T17:01:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:01:59Z",
+            "conclusion": "success",
+            "name": "Run actions/setup-python@v5",
+            "number": 4,
+            "startedAt": "2026-11-03T17:01:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:03Z",
+            "conclusion": "success",
+            "name": "Check reporting records and generated indexes",
+            "number": 5,
+            "startedAt": "2026-11-03T17:01:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:06Z",
+            "conclusion": "success",
+            "name": "Install CI-governance test tools",
+            "number": 6,
+            "startedAt": "2026-11-03T17:02:03Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:06Z",
+            "conclusion": "success",
+            "name": "Test CI recovery and contributor routes",
+            "number": 7,
+            "startedAt": "2026-11-03T17:02:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:07Z",
+            "conclusion": "success",
+            "name": "Review declared dependency routes",
+            "number": 8,
+            "startedAt": "2026-11-03T17:02:06Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:28Z",
+            "conclusion": "success",
+            "name": "Test distribution and dependency contracts",
+            "number": 9,
+            "startedAt": "2026-11-03T17:02:07Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:28Z",
+            "conclusion": "success",
+            "name": "Check generated ordinary environments",
+            "number": 10,
+            "startedAt": "2026-11-03T17:02:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Post Run actions/setup-python@v5",
+            "number": 18,
+            "startedAt": "2026-11-03T17:02:28Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 19,
+            "startedAt": "2026-11-03T17:02:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Post Run actions/checkout@v4",
+            "number": 20,
+            "startedAt": "2026-11-03T17:02:29Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:02:29Z",
+            "conclusion": "success",
+            "name": "Complete job",
+            "number": 21,
+            "startedAt": "2026-11-03T17:02:29Z",
+            "status": "completed"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069274140"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275088,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "startedAt": "2026-11-03T17:07:54Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:07:56Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:07:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:08:36Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:07:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:08:36Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:08:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:08:36Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:08:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:09:35Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:08:36Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:12:08Z",
+            "conclusion": "success",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:09:35Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:54Z",
+            "conclusion": "success",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "2026-11-03T17:12:08Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:56Z",
+            "conclusion": "success",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "2026-11-03T17:14:54Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:56Z",
+            "conclusion": "success",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "2026-11-03T17:14:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:57Z",
+            "conclusion": "success",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "2026-11-03T17:14:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:57Z",
+            "conclusion": "success",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "2026-11-03T17:14:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:59Z",
+            "conclusion": "success",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "2026-11-03T17:14:57Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:00Z",
+            "conclusion": "success",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "2026-11-03T17:14:59Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:00Z",
+            "conclusion": "success",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "2026-11-03T17:15:00Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "2026-11-03T17:15:00Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Check out the reviewed dependency SDK",
+            "number": 33,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275088"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275110,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "startedAt": "2026-11-03T17:10:48Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:10:50Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:10:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:11:37Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:10:50Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:11:37Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:11:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:11:37Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:11:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:12:31Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:11:37Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:12:31Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275110"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275166,
+        "name": "Test on macos-15, Python 3.14",
+        "startedAt": "2026-11-03T17:15:11Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:15:16Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:15:11Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:21Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:15:16Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:21Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:15:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:21Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:15:21Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:15:21Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275166"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275226,
+        "name": "Test on macos-15, Python 3.11",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "queued",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275226"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275244,
+        "name": "Test on macos-15, Python 3.13",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "queued",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275244"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275368,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "startedAt": "2026-11-03T17:12:54Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:12:58Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:12:56Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:13:26Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:12:58Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:13:26Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:13:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:13:26Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:13:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:14:20Z",
+            "conclusion": "success",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:13:26Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "2026-11-03T17:14:20Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275368"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275512,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "startedAt": "2026-11-03T17:15:29Z",
+        "status": "in_progress",
+        "steps": [
+          {
+            "completedAt": "2026-11-03T17:15:32Z",
+            "conclusion": "success",
+            "name": "Set up job",
+            "number": 1,
+            "startedAt": "2026-11-03T17:15:30Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:49Z",
+            "conclusion": "success",
+            "name": "Run actions/checkout@v4",
+            "number": 2,
+            "startedAt": "2026-11-03T17:15:32Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:49Z",
+            "conclusion": "success",
+            "name": "Additional info about the build",
+            "number": 3,
+            "startedAt": "2026-11-03T17:15:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "2026-11-03T17:15:49Z",
+            "conclusion": "success",
+            "name": "Set up Python",
+            "number": 4,
+            "startedAt": "2026-11-03T17:15:49Z",
+            "status": "completed"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Setup conda env",
+            "number": 5,
+            "startedAt": "2026-11-03T17:15:49Z",
+            "status": "in_progress"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install pinned suite dependencies",
+            "number": 6,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install tested MolSysMT source",
+            "number": 7,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check out the reviewed dependency SDK",
+            "number": 8,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install isolated dependency-check tools",
+            "number": 9,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check dependency routes and installed Git context",
+            "number": 10,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Info conda",
+            "number": 11,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Install package",
+            "number": 12,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Test import module",
+            "number": 13,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Verify interpreter and macOS architecture",
+            "number": 14,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Run tests",
+            "number": 15,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Check coverage",
+            "number": 16,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload coverage reports to Codecov",
+            "number": 17,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Upload test results to Codecov",
+            "number": 18,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Setup conda env",
+            "number": 34,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Set up Python",
+            "number": 35,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          },
+          {
+            "completedAt": "0001-01-01T00:00:00Z",
+            "conclusion": "",
+            "name": "Post Run actions/checkout@v4",
+            "number": 36,
+            "startedAt": "0001-01-01T00:00:00Z",
+            "status": "pending"
+          }
+        ],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275512"
+      },
+      {
+        "completedAt": "0001-01-01T00:00:00Z",
+        "conclusion": "",
+        "databaseId": 126069275596,
+        "name": "Test on macos-15, Python 3.12",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "queued",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069275596"
+      },
+      {
+        "completedAt": "2026-11-03T16:58:18Z",
+        "conclusion": "skipped",
+        "databaseId": 126069277269,
+        "name": "Check skipped-commit backlog",
+        "startedAt": "2026-11-03T16:58:18Z",
+        "status": "completed",
+        "steps": [],
+        "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745/job/126069277269"
+      }
+    ],
+    "status": "queued",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/41679560745"
+  },
+  "hosted_issue": "uibcdf/pharmacophoremt#9",
+  "integration_tree_equivalence": {
+    "candidate": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+    "integration": "76f43ffa6663f4a3c85ef27c27d212d773d55442",
+    "scope": "Tracked-tree equivalence; generated version metadata and later main CI retain distinct identities. Reuse applies to the unchanged selected source, not a new public artifact.",
+    "trees": {
+      ".github": {
+        "candidate": "47d933288a89b267d5b497f2982e64304e969fc6",
+        "equal": true,
+        "integration": "47d933288a89b267d5b497f2982e64304e969fc6"
+      },
+      "devtools": {
+        "candidate": "0cac9809cd05cb39c19518be0866b33e031f04f2",
+        "equal": true,
+        "integration": "0cac9809cd05cb39c19518be0866b33e031f04f2"
+      },
+      "molsysviewer_pharmacophoremt": {
+        "candidate": "350924fd3c143cc967a5a58c92ecbb23fd0d2f87",
+        "equal": true,
+        "integration": "350924fd3c143cc967a5a58c92ecbb23fd0d2f87"
+      },
+      "pharmacophoremt": {
+        "candidate": "556c7a492914391c7501fd96a9b55443abee3dbc",
+        "equal": true,
+        "integration": "556c7a492914391c7501fd96a9b55443abee3dbc"
+      },
+      "phmt_test_support": {
+        "candidate": "c9f12e199cf17069fa895daaeb3977a53d6e62d1",
+        "equal": true,
+        "integration": "c9f12e199cf17069fa895daaeb3977a53d6e62d1"
+      },
+      "tests": {
+        "candidate": "474950c62427f73fafac91af8e57605fd4954b81",
+        "equal": true,
+        "integration": "474950c62427f73fafac91af8e57605fd4954b81"
+      }
+    }
+  },
+  "issue": "uibcdf/pharmacophoremt#69",
+  "limits": [
+    "Source CI does not qualify public installed artifacts or a new dependency minimum.",
+    "The main integration has its own commit and ensuing CI; it is not relabeled as this candidate run.",
+    "The duplicate old-runtime documentation matrix was cancelled deliberately, not classified as passed.",
+    "Original local source metadata lookup differences and shared dependency conflicts retain their prior receipts."
+  ],
+  "owned_work": {
+    "candidate": "7e5b5a5a3ee9c60528864928e56d1abac8aeaf9d",
+    "duplicate_cancellation": {
+      "command": [
+        "gh",
+        "run",
+        "cancel",
+        "41679560745",
+        "--repo",
+        "uibcdf/pharmacophoremt"
+      ],
+      "exit_code": 0,
+      "reason": "Own documentation-only duplicate matrix on old code/pins; exact runtime/support/test/developer/workflow trees equal fully green 23c0648. Preserve all prior facts, no relabeling of cancelled jobs as passed. Free capacity for corrected candidate; final main integration is unskipped."
+    },
+    "duplicate_code_trees_equal_to_green_23c0648": true,
+    "duplicate_run": 41679560745,
+    "hosted_issue": "uibcdf/pharmacophoremt#9",
+    "integration": "76f43ffa6663f4a3c85ef27c27d212d773d55442",
+    "issue": "uibcdf/pharmacophoremt#69",
+    "main_base": "86b4976871220fa033b242ad0786bb3c8754fc07",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Receive hosted matrix recovery and prepare direct integration of unchanged reviewed source; preserve older run identities.",
+    "recovery": {
+      "attempt": 2,
+      "command": [
+        "gh",
+        "run",
+        "rerun",
+        "41674239397",
+        "--repo",
+        "uibcdf/pharmacophoremt",
+        "--failed"
+      ],
+      "exit_code": 0,
+      "scope": "Only original unexecuted macOS 3.14 recovered; seven already successful scientific executions preserved. Latest GitHub projection may give inherited successful jobs new bookkeeping IDs; original IDs and original execution timestamps remain retained."
+    },
+    "review": "2026-11-17",
+    "tracked_code_trees_equal_candidate": true
+  },
+  "provider": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+  "recorded_at": "2026-11-03T17:54:33.483438+00:00",
+  "schema": "pharmacophoremt.chemical_domain_hosted_adoption@1",
+  "source_gate": "passed-eight-actual-scientific-test-steps"
+}
