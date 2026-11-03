@@ -95,7 +95,7 @@ def forbid_molecular_calls(monkeypatch):
     for name in ("get", "select", "convert", "extract", "copy", "set"):
         monkeypatch.setattr(msm, name, forbidden)
     for owner, name in (
-        (msm.physchem, "get_hbond_sites"),
+        (msm.interactions.hbonds, "get_hbond_sites"),
         (msm.structure, "get_center"),
         (msm.structure, "get_least_squares_plane"),
     ):

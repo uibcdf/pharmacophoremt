@@ -6,13 +6,35 @@ opened: 2026-10-28
 closed:
 verification: measured
 area: [integration, modeling, screening, validation]
-guard: tests/test_conformer_screening.py
+guard: tests/test_chemical_domain_receiving.py
 normative: devguide/chemical_domain_receiving.md
 blocked_by: [uibcdf/molsysmt#255]
 supersedes: []
 ---
 
 # Chemical-domain receiving preparation
+
+## Owner candidate and provider fidelity gap — 2026-11-02
+
+The [receiving candidate](../chemical_domain_receiving.md) adopts the identified
+de7ffad implementation and reviews PR #70 plus its follow-up. Actual tests give
+998 pass / 11 fail / zero skips in the first full source run; all original 22
+baseline nodes pass. Corrected cached-receptor spies pass their full 66-test
+module; the strict canonical stereo-token guard passes, and six added domain
+controls pass. All 67 administrative controls and the declared dependency audit
+pass. Actual logs, typed differences and source/native identities are retained in
+the [owner receipt](../evidence/chemical_domain_receiving_20261102_summary.json).
+
+Four exact typed-chemistry guards still fail on component-label dtype changes
+after public extraction. The minimal public repro and exact context are reported
+in [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577).
+The candidate remains isolated in `receiving/chemical-domain-owner-20261102`;
+do not integrate the failing controlled-source pair into main or replace these
+assertions with a consumer normalizer. Await provider correction/contract
+disposition, then receive it and rerun the affected controls. #69 stays partial.
+No package minimum, installed/platform acceptance or release is claimed.
+
+The earlier readiness/proposal records below retain their original context.
 
 ## What
 
@@ -59,3 +81,25 @@ minimum, release or addon work follows from this advance notice.
 Owners LMMV/dprada. Preserve the owned raw root recorded in the contract for
 review on 2026-11-12. Original-method access under #66 remains separate; no new
 activity or score is acquired by this preparation.
+
+
+## Implemented receiving candidate — 2026-10-30
+
+The helper's SMARTS call now uses the delivered chemical_states module. Unchanged
+consumer a9abeb9 gives 16 passes / 6 setup errors on the original 22 selections;
+all six share the obsolete namespace. The one-line source proposal passes those
+same 22 selections (exit 0, 315.23 seconds), without changing assertions, fixtures,
+geometry, profiles, maps, units or provenance. Ten existing b_factor-drop warnings
+remain visible. Local Python is 3.14.7 with Pandas 2.3.3 and the existing backend.
+
+Controlled requirements, source-route inventory and the non-3.14 override select
+the exact MolSysMT/Viewer receiving sources. DepDigest is advanced because its
+old 0.13.0 source cannot satisfy the provider's >=0.15.1 requirement. Actual input
+and helper-support digests are updated after reviewing the exact pin/namespace
+changes; no gate or installed test is weakened. Declared-route validation is
+separate from installed validation. Historical source receipts remain unchanged.
+
+Diego requested owner-reviewed PRs. Keep #69 partial until the owner reviews the
+candidate, qualifies its exact source/installed routes and establishes the real
+published runtime floor before a release. No main merge, tag, package or profile
+stabilization is performed by the receiving PR.
