@@ -1,5 +1,12 @@
 # Development Checkpoint
 
+**Current receiving update — 2026-11-02:** use the
+[owner checkpoint at c4f8075](https://github.com/uibcdf/pharmacophoremt/blob/c4f8075/devguide/checkpoint.md)
+for this candidate. Source **43a258c** passes the final 73 focused controls, but
+four exact component dtype-preservation checks remain with MolSysMT #255.
+This branch is intentionally isolated from main pending that disposition.
+The dated sections below preserve the original pre-cutover source context.
+
 ## Chemical-domain receiving prepared; current baselines pass — 2026-10-29
 
 New [#69 receiving contract](chemical_domain_receiving.md) prepares the
