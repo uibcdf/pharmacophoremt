@@ -1,5 +1,40 @@
 # Development Checkpoint
 
+## Prepared CCD foundation accepted; exclusion boundary next — 2026-11-03
+
+#30 is resolved with its [archived report](archive/prepared_ccd_ligand_validation.md).
+Clean source **54df39ca4956335cf0d408b02a61f73ce97a0a96** passes all **23 owning
+controls**, zero failures/errors/skips, in 75.27 s. The unchanged driver passes
+all 12 comparisons under both host tracking profiles: four self controls, two
+prepared-frame screens and six cross-ligand hypotheses. All four cookbook blocks
+execute. Strict isolated recipe rendering passes with a neighboring notebook
+link-target stub; actual notebook/full-site execution is not claimed.
+
+Original EST/DES bytes, chemical identity, H/charge/stereo/bond endpoints and
+coordinates are preserved. Raw readiness rejection remains visible; all original
+feature/self/cross outcomes pass without changing expectations. Actual attribution
+has 21 items/99 uses, including both datasets and distinct resource/method uses.
+The [new receipt](evidence/prepared_ccd_acceptance_20261103_summary.json) retains
+full outputs, commands/logs/XML and source/native/helper/test/input plus metadata
+identities, equal before/after in every phase. October originals stay unchanged.
+
+**Next: #32**, review public native heavy-atom exclusion-sphere construction,
+source/selection/frame/state axes, unit-aware centers/radii, empty/invalid inputs,
+detachment and attribution; then #33 ionic and #34 aromatic acceptance. Each issue
+keeps its own guards, driver and cookbook requirements. #30 needs no code changes.
+Current providers suffice for this next local work. #41 stays partial for public
+vector delivery/installed qualification, review 2026-11-11; #60 is available for
+an actual independent-variant consumer. #66 still awaits four original methods.
+Addon and new release remain deferred.
+
+Owned root `/tmp/phmt30-acceptance-20261103-2mheqiv3/`, owners LMMV/dprada,
+review 2026-11-17; borrowed #69 prefix remains ordinary editable PHMT
+0.4.0+56.g9387852 with unchanged controlled providers/native. Canonical prefix and
+sibling trees are untouched. Shared conflicts stay #82; installed/public/platform
+receiving stays #23/#10 and exact-head hosted gates #9. No complete new-source
+suite, biological or performance qualification is inferred. The old 1,020-item run
+is its original baseline. No local scientific process remains after closeout.
+
 ## #41 review complete; public migration remains pending — 2026-11-03
 
 Clean producer **37052f7bb7190046997ba96955d4dea154cf3a91** passes all **165**

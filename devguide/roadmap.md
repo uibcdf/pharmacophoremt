@@ -1,5 +1,29 @@
 # Strategic Roadmap
 
+## Prepared CCD acceptance complete; next exclusions and interaction queries — 2026-11-03
+
+#30 is resolved: 23 owning controls, all 12 driver comparisons with tracking
+off/on, four executed cookbook blocks and strict isolated recipe rendering pass
+on clean source 54df39ca4956335cf0d408b02a61f73ce97a0a96. Full identities are
+stable and original chemistry/bytes, readiness failure, frame accounting and
+finite self/cross-ligand outcomes are preserved. The [receipt](evidence/prepared_ccd_acceptance_20261103_summary.json)
+retains actual attribution and new measured outputs beside untouched originals.
+No runtime, fixture or expectation changes are needed.
+
+Next review **#32 exclusion-sphere construction**, followed by **#33 ionic** and
+**#34 aromatic** query acceptance, against each issue's own molecular-source axes,
+geometry, empty/failure semantics, detached evidence and actual attribution.
+Current public source tools support those reviews. Aggregate passes and #30/#37
+closure do not close these independent contracts automatically. Native copy
+receiving #60 remains available for a concrete independent-variant consumer.
+
+#41's historical-public vector exception remains partial, review 2026-11-11;
+identified public delivery/installed receiving is still needed. #66's four original
+binding methods remain an external-input gate. #323/#375/#447 retain provider
+ownership. Hosted gates stay #9, clean installed/public qualification #23/#10 and
+shared conflicts #82. Addon/new release remain deferred. These CCD controls do not
+establish biological prediction, generated conformers or computational performance.
+
 ## #41 reviewed; next accept the prepared CCD foundation — 2026-11-03
 
 #41's designated modern-provider source gate passes **165 controls**, zero

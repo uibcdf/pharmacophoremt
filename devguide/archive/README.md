@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (39)
+### Resolved (40)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -30,6 +30,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`ordinary_documentation_build.md`](ordinary_documentation_build.md) — [#53](https://github.com/uibcdf/pharmacophoremt/issues/53) — Repair the strict whole-site build and unrelated software identity claims. *(resolved, measured)*
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
+- [`prepared_ccd_ligand_validation.md`](prepared_ccd_ligand_validation.md) — [#30](https://github.com/uibcdf/pharmacophoremt/issues/30) — Traceable CCD ideal ligands for native preparation, refinement and consensus controls. *(resolved, measured)*
 - [`prepared_distinct_consensus.md`](prepared_distinct_consensus.md) — [#51](https://github.com/uibcdf/pharmacophoremt/issues/51) — Qualify distinct prepared EST/DES consensus support, empty outcomes and persisted source maps. *(resolved, measured)*
 - [`prepared_end_to_end_workflow.md`](prepared_end_to_end_workflow.md) — [#49](https://github.com/uibcdf/pharmacophoremt/issues/49) — Qualify construction, curation, persistence and placed screening on a public prepared CCD control. *(resolved, measured)*
 - [`prepared_receptor_continuation.md`](prepared_receptor_continuation.md) — [#52](https://github.com/uibcdf/pharmacophoremt/issues/52) — Qualify cached ERalpha receptor projections, exclusions and observed-contact model reconstruction. *(resolved, measured)*

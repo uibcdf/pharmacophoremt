@@ -7,6 +7,17 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Prepared CCD source/API acceptance — 2026-11-03
+
+The [new summary](prepared_ccd_acceptance_20261103_summary.json) and its
+checksum-qualified full archive record #30's acceptance on clean source 54df39c:
+23 owning tests, 12 driver comparisons replayed with host tracking off/on, four
+cookbook blocks, strict isolated recipe rendering, original preparation/input
+preservation and actual 21-item/99-use credit. All physical and metadata identities
+are stable. Its notebook link target is a stub, not an actual notebook render.
+Original October archives remain unchanged. This is source/API analytical evidence;
+clean installed/public/platform, biological and performance gates remain separate.
+
 ## Documentation foundation — 2026-10-23
 
 The [local source/render receipt](documentation_foundations_20261023.json) and

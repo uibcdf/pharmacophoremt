@@ -147,3 +147,31 @@ Original evidence archives still verify unchanged. Follow-up work should curate
 experimentally relevant preparations and conformations before biological or
 large-workload claims; neutral CCD reference states are not an automatic choice
 of solution pH, protonation or receptor-compatible state.
+
+## Current source/API acceptance — 2026-11-03
+
+#30 is resolved with its [archived report](archive/prepared_ccd_ligand_validation.md).
+Clean producer 54df39ca4956335cf0d408b02a61f73ce97a0a96 passes all 23 owning
+controls without failures/errors/skips. The original driver passes 12 comparisons,
+each executed with host tracking off/on, preserving all original preparation,
+self/frame and cross-ligand expectations. All four cookbook blocks execute; strict
+isolated rendering passes with a neighboring notebook link-target stub. Actual
+notebook and full-site qualification are outside that check.
+
+The [dated receipt](evidence/prepared_ccd_acceptance_20261103_summary.json)
+retains the complete new measured output, full before/after identities, commands,
+original test log/XML and real 21-item/99-use attribution. Both consumed datasets,
+CCD resource description and reached methods keep their separate roles. All
+physical source/native/helper/test/input and distribution-metadata identities
+agree in the focused, driver and cookbook phases. Ordinary editable PHMT runtime
+0.4.0+56.g9387852 and controlled source providers in the owned #69 venv are
+unchanged. No runtime, test, fixture or expectation changes are required.
+
+Original October evidence and its producer limits remain untouched. These are
+analytical/source API controls on real chemical components with ideal reference
+geometry. They do not establish biological binding, generated conformers,
+performance, clean dependency closure, installed/public distribution or other
+platforms. Shared conflicts remain MolSysSuite #82, exact-head hosted gates #9 and
+installed/public qualification #23/#10. Owned acceptance resources are reviewed
+2026-11-17 by LMMV/dprada. Next accept #32's exclusion-sphere boundary, then
+#33/#34's ionic/aromatic queries against their own criteria.

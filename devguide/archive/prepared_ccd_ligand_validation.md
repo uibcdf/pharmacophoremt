@@ -1,9 +1,9 @@
 ---
 summary: Traceable CCD ideal ligands for native preparation, refinement and consensus controls.
 issue: uibcdf/pharmacophoremt#30
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-11-03
 verification: measured
 area: [modeling, screening, validation, attribution]
 guard: tests/test_prepared_ccd_ligands.py
@@ -13,6 +13,44 @@ supersedes: []
 ---
 
 # Prepared CCD ligand validation
+
+## Resolution — 2026-11-03
+
+Reviewed and incorporated as a source/API workflow. Clean producer
+54df39ca4956335cf0d408b02a61f73ce97a0a96 passes all **23 owning controls**, zero
+failures/errors/skips, in 75.27 s. The unchanged original driver passes all
+**12 comparisons**, each replayed with host tracking disabled and enabled:
+four self-recovery, two prepared-frame screening and six cross-ligand controls.
+All four existing cookbook blocks execute and the strict isolated recipe renders.
+The neighboring notebook is a link-target stub; actual notebook/full-site
+execution is outside that render check.
+
+Both original SDFs/manifest retain their checksums. Public MolSysMT preparation
+preserves 44/40 atoms, 24/20 explicit H, charges, stereo, bond endpoints and
+coordinates; raw aromatic-readiness rejection stays MSM-ERR-STRUCT-003. The same
+14/20 full inventories, 5/6 self matches with 3/4 fits, requested frame accounting
+and three bounded cross-ligand outcomes pass without expectation changes.
+Scientific outputs agree with tracking off/on. Actual capture retains 21 items,
+99 uses, both checksum-qualified CCD datasets and separate resource/method uses.
+
+The [new receipt](../evidence/prepared_ccd_acceptance_20261103_summary.json)
+retains complete driver output, actual citations, snapshots, commands and logs/XML.
+Physical source/native/helper/test/input and distribution-metadata identities
+remain equal in all three phases. The owned #69 system-site-packages venv resolves
+ordinary editable PHMT 0.4.0+56.g9387852, controlled MolSysMT 0faf1584 and its
+unchanged native extension. No runtime, test, input, expectation, provider, shared
+prefix or sibling changes are needed. The Oct03 results below and dirty-producer
+limits in the collection record remain historical; the instruction to await
+review is superseded by this resolution.
+
+This closes #30's prepared-input analytical/source acceptance. Ideal CCD geometry
+remains distinct from experimental conformers, biological/affinity validation and
+performance evidence. Shared dependency conflicts stay MolSysSuite #82;
+source-free installed/public/Conda/platform qualification stays #23/#10 and
+exact-head hosted receiving #9. The earlier 1,020-item full run is a dated baseline,
+not execution of every later correction. #22/#66 and provider #323/#375/#447 retain
+their separate scientific/delivery boundaries. Temporary root
+/tmp/phmt30-acceptance-20261103-2mheqiv3/, owners LMMV/dprada, review 2026-11-17.
 
 ## What
 

@@ -1,0 +1,434 @@
+{
+  "actual_attribution": {
+    "dataset_ids": [
+      "pharmacophoremt:dataset:ccd:EST:9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+      "pharmacophoremt:dataset:ccd:DES:a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4"
+    ],
+    "items": 21,
+    "uses": 99
+  },
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+56.g9387852",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "documentation_scope": "Strict isolated unchanged prepared CCD cookbook page; notebook neighbor is a link-target stub, execution disabled; not full-site or actual notebook qualification.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "full_baseline": "96f917a: 1020 source items; historical baseline before the later composition provenance correction, not a new full suite.",
+    "full_new_source_suite_reexecution": false,
+    "full_platform_matrix": false,
+    "helper_route": "Ordinary editable runtime resolved before checkout access for unshipped source helpers.",
+    "installed_wheel_qualification": false,
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_or_fixture_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Owned #69 system-site-packages venv, ordinary editable PHMT 0.4.0+56.g9387852 with controlled source providers/native. No shared-prefix or sibling mutation."
+  },
+  "comparisons": [
+    {
+      "case_id": "EST",
+      "expectation_passed": true,
+      "expected": {
+        "max_matches": 5,
+        "n_fits": 3,
+        "n_placements": 1
+      },
+      "kind": "self_recovery",
+      "orientation_policy": "final",
+      "outcome": {
+        "max_matches": 5,
+        "n_fits": 3,
+        "n_placements": 1
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "EST",
+      "expectation_passed": true,
+      "expected": {
+        "max_matches": 5,
+        "n_fits": 3,
+        "n_placements": 1
+      },
+      "kind": "self_recovery",
+      "orientation_policy": "each_step",
+      "outcome": {
+        "max_matches": 5,
+        "n_fits": 3,
+        "n_placements": 1
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "EST",
+      "expectation_passed": true,
+      "expected": {
+        "best_conformer_index": 1,
+        "complete": true,
+        "fit_value": 1.0,
+        "n_evaluated": 2,
+        "status": "matched"
+      },
+      "kind": "prepared_screening",
+      "orientation_policy": null,
+      "outcome": {
+        "best_conformer_index": 1,
+        "complete": true,
+        "fit_value": 1.0,
+        "n_evaluated": 2,
+        "status": "matched"
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "DES",
+      "expectation_passed": true,
+      "expected": {
+        "max_matches": 6,
+        "n_fits": 4,
+        "n_placements": 1
+      },
+      "kind": "self_recovery",
+      "orientation_policy": "final",
+      "outcome": {
+        "max_matches": 6,
+        "n_fits": 4,
+        "n_placements": 1
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "DES",
+      "expectation_passed": true,
+      "expected": {
+        "max_matches": 6,
+        "n_fits": 4,
+        "n_placements": 1
+      },
+      "kind": "self_recovery",
+      "orientation_policy": "each_step",
+      "outcome": {
+        "max_matches": 6,
+        "n_fits": 4,
+        "n_placements": 1
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "DES",
+      "expectation_passed": true,
+      "expected": {
+        "best_conformer_index": 1,
+        "complete": true,
+        "fit_value": 1.0,
+        "n_evaluated": 2,
+        "status": "matched"
+      },
+      "kind": "prepared_screening",
+      "orientation_policy": null,
+      "outcome": {
+        "best_conformer_index": 1,
+        "complete": true,
+        "fit_value": 1.0,
+        "n_evaluated": 2,
+        "status": "matched"
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "donor_acceptor_aromatic_30",
+      "expectation_passed": true,
+      "expected": {
+        "max_joint_sites": 0,
+        "n_fits": 12,
+        "n_models": 0
+      },
+      "kind": "cross_consensus",
+      "orientation_policy": "final",
+      "outcome": {
+        "max_joint_sites": 0,
+        "n_fits": 12,
+        "n_models": 0
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "donor_acceptor_aromatic_30",
+      "expectation_passed": true,
+      "expected": {
+        "max_joint_sites": 0,
+        "n_fits": 4,
+        "n_models": 0
+      },
+      "kind": "cross_consensus",
+      "orientation_policy": "each_step",
+      "outcome": {
+        "max_joint_sites": 0,
+        "n_fits": 4,
+        "n_models": 0
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "acceptor_aromatic_30",
+      "expectation_passed": true,
+      "expected": {
+        "max_joint_sites": 3,
+        "n_fits": 2,
+        "n_models": 1
+      },
+      "kind": "cross_consensus",
+      "orientation_policy": "final",
+      "outcome": {
+        "max_joint_sites": 3,
+        "n_fits": 2,
+        "n_models": 1
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "acceptor_aromatic_30",
+      "expectation_passed": true,
+      "expected": {
+        "max_joint_sites": 3,
+        "n_fits": 2,
+        "n_models": 1
+      },
+      "kind": "cross_consensus",
+      "orientation_policy": "each_step",
+      "outcome": {
+        "max_joint_sites": 3,
+        "n_fits": 2,
+        "n_models": 1
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "donor_acceptor_aromatic_90",
+      "expectation_passed": true,
+      "expected": {
+        "max_joint_sites": 4,
+        "n_fits": 12,
+        "n_models": 4
+      },
+      "kind": "cross_consensus",
+      "orientation_policy": "final",
+      "outcome": {
+        "max_joint_sites": 4,
+        "n_fits": 12,
+        "n_models": 4
+      },
+      "scientific_outputs_stable": true
+    },
+    {
+      "case_id": "donor_acceptor_aromatic_90",
+      "expectation_passed": true,
+      "expected": {
+        "max_joint_sites": 4,
+        "n_fits": 8,
+        "n_models": 2
+      },
+      "kind": "cross_consensus",
+      "orientation_policy": "each_step",
+      "outcome": {
+        "max_joint_sites": 4,
+        "n_fits": 8,
+        "n_models": 2
+      },
+      "scientific_outputs_stable": true
+    }
+  ],
+  "consumer": {
+    "head": "54df39ca4956335cf0d408b02a61f73ce97a0a96",
+    "status": ""
+  },
+  "executed_cookbook_blocks": 4,
+  "full_evidence": {
+    "compressed_bytes": 760064,
+    "compressed_sha256": "6213a2c6198ba10fd4502915f03497020ce631639a5972f3143786230c2fa6b8",
+    "path": "prepared_ccd_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 7804022,
+    "uncompressed_sha256": "4a136d70e94c8bc4c340c39b211465cc329e36e04bc4d90c51957332f0c90d16"
+  },
+  "full_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#30",
+  "junit": {
+    "suites": [
+      {
+        "errors": "0",
+        "failures": "0",
+        "hostname": "spika",
+        "name": "pytest",
+        "skipped": "0",
+        "tests": "23",
+        "time": "75.263",
+        "timestamp": "2026-11-03T16:01:44.331342-06:00"
+      }
+    ],
+    "tests": 23
+  },
+  "measured_date": "2026-11-03",
+  "metadata_lookup_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "owning_pytest_items": 23,
+  "physical_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "preparations": [
+    {
+      "coordinate_rmsd_nm": 2.557046007899672e-17,
+      "element_counts": {
+        "C": 18,
+        "H": 24,
+        "O": 2
+      },
+      "feature_counts": {
+        "aromatic ring": 1,
+        "hb acceptor": 2,
+        "hb donor": 2,
+        "hydrophobicity": 9
+      },
+      "prepared_counts": {
+        "n_atoms": 44,
+        "n_bonds": 47,
+        "n_structures": 1
+      },
+      "raw_recognition": {
+        "code": "MSM-ERR-STRUCT-003",
+        "message": "Structural inconsistency detected: Every atom requires explicit is_aromatic metadata.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT",
+        "status": "blocked"
+      },
+      "source": {
+        "byte_count": 3127,
+        "case_id": "EST",
+        "component_name": "Estradiol",
+        "component_url": "https://www.rcsb.org/ligand/EST",
+        "coordinate_kind": "CCD ideal; not observed protein-bound coordinates",
+        "expected": {
+          "all_feature_counts": {
+            "aromatic ring": 1,
+            "hb acceptor": 2,
+            "hb donor": 2,
+            "hydrophobicity": 9
+          },
+          "n_atoms": 44,
+          "n_bonds": 47,
+          "n_hydrogens": 24,
+          "search_feature_count": 5
+        },
+        "file": "EST_ideal.sdf",
+        "sha256": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+        "source_url": "https://files.rcsb.org/ligands/download/EST_ideal.sdf"
+      },
+      "source_bytes_unchanged": true,
+      "source_coordinates_unchanged": true,
+      "source_state_unchanged": true
+    },
+    {
+      "coordinate_rmsd_nm": 2.5331659285547802e-17,
+      "element_counts": {
+        "C": 18,
+        "H": 20,
+        "O": 2
+      },
+      "feature_counts": {
+        "aromatic ring": 2,
+        "hb acceptor": 2,
+        "hb donor": 2,
+        "hydrophobicity": 14
+      },
+      "prepared_counts": {
+        "n_atoms": 40,
+        "n_bonds": 41,
+        "n_structures": 1
+      },
+      "raw_recognition": {
+        "code": "MSM-ERR-STRUCT-003",
+        "message": "Structural inconsistency detected: Every atom requires explicit is_aromatic metadata.. Ensure that the atoms, residues, or frames match between the systems being compared or merged. Docs: https://www.uibcdf.org/MolSysMT",
+        "status": "blocked"
+      },
+      "source": {
+        "byte_count": 2817,
+        "case_id": "DES",
+        "component_name": "Diethylstilbestrol",
+        "component_url": "https://www.rcsb.org/ligand/DES",
+        "coordinate_kind": "CCD ideal; not observed protein-bound coordinates",
+        "expected": {
+          "all_feature_counts": {
+            "aromatic ring": 2,
+            "hb acceptor": 2,
+            "hb donor": 2,
+            "hydrophobicity": 14
+          },
+          "n_atoms": 40,
+          "n_bonds": 41,
+          "n_hydrogens": 20,
+          "search_feature_count": 6
+        },
+        "file": "DES_ideal.sdf",
+        "sha256": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+        "source_url": "https://files.rcsb.org/ligands/download/DES_ideal.sdf"
+      },
+      "source_bytes_unchanged": true,
+      "source_coordinates_unchanged": true,
+      "source_state_unchanged": true
+    }
+  ],
+  "schema": "pharmacophoremt.prepared_ccd_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_owned_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "consumer_base": "54df39ca4956335cf0d408b02a61f73ce97a0a96",
+    "issue": "uibcdf/pharmacophoremt#30",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Prepared CCD independent source/API acceptance, driver and cookbook replay",
+    "review": "2026-11-17",
+    "scope": "Controlled source providers/system-site-packages; no public or clean installed closure; no shared-prefix or sibling mutation."
+  }
+}

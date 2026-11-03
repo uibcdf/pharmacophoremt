@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #69 adoption and #38/#17/#29/#36/#37 source/API acceptance resolved. #41's modern-provider review passes 165 controls with stable identities; public delivery/installation still needs qualification and its exception review remains 2026-11-11. Next accept #30's prepared CCD foundation, then #32/#33/#34 against their own criteria. #60 receiving is available when needed; #66 awaits four original methods. Hosted/installed/public gates remain separate; public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #30 prepared CCD source/API acceptance is resolved after 23 owning tests, 12 tracking comparisons and four cookbook blocks pass with stable identities. Next accept #32 exclusions, then #33/#34 ionic/aromatic queries. #41's public migration remains partial (review 2026-11-11); #60 receiving is available when needed; #66 awaits four original methods. Hosted/installed/public gates remain separate; public release stays 0.4.0.
 
 ## Classical Workflow Specification
 
