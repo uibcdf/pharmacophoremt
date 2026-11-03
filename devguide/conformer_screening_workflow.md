@@ -112,7 +112,7 @@ json.dumps(result, allow_nan=False)
 ## Verification and limits
 
 `tests/test_conformer_screening.py` supplies analytical real-provider controls.
-Verification uses the existing published source pins, MolSysMT
+Initial verification on 2026-10-02 used the then-published source pins, MolSysMT
 `4d490427e38c5836be82472348fdf61934442bda` and PyUnitWizard
 `2ffe1885675f47c76af03c08e51bc889a5e99a05`, with installed dependencies.
 It does not establish clean-wheel, hosted-matrix or biological-pilot compatibility.
@@ -121,3 +121,45 @@ discrete search limitations apply per frame. Runtime scales with requested frame
 and candidate fits; the current fitting consumer copies the provider system for
 each seed. Streaming, compact prepared representations, Rust, GPU and distributed
 execution need measured follow-up work in the appropriate owner.
+
+## Current source/API acceptance — 2026-11-03
+
+#17's prepared-frame source/API scope is resolved and its report is
+[archived](archive/native_conformer_screening.md). Clean source
+**3ecfe23cbab455226ab48c99248f7c9c127b6d8c** passes **95 controls**, including
+all 20 conformer cases and the owning rigid-search, seeded-scoring, facade,
+retrospective and composed-attribution consumers. Zero failures, errors or skips.
+The workflow example and five cookbook blocks execute on the current controlled
+providers. The [acceptance receipt](evidence/conformer_acceptance_20261103_summary.json)
+retains exact runners, six executed blocks, full model/pose/frame results,
+actual optional attribution, source/native identities and prior-head CI status.
+No runtime or test change was needed for this acceptance.
+
+Five retained analytical ensembles make the distinct score-resolution cases
+reviewable beyond test counts:
+
+| Case | Status | Pose coverage | Definitive criterion | Failed frames |
+| --- | --- | --- | --- | --- |
+| Complete negative | not_matched | .8 | checked coverage .8 | 0 |
+| Negative plus failed frame | failed | None | unresolved | 1 |
+| Unit-coverage hit plus failed frame | matched | 1 | checked coverage 1 | 1 |
+| All frames failed | failed | None | unresolved | 2 |
+| Seed hit plus missing frame-state association | matched | .75 | binary hit 1 | 1 |
+
+The last case uses an actual public-provider state failure, not a substituted
+negative. Full per-frame causes and ensemble incompleteness remain visible.
+The separate analytical retrospective record preserves repeated inputs and
+original indices [0, 1, 3], with three evaluated inputs and one unresolved input
+excluded. Its AUC/BEDROC of one verifies this known fixture's accounting; it is
+not biological validation. Atom/coordinate/chemical-state/frame-association
+fingerprints are unchanged for every recorded source.
+
+Full code/native/helper/test and metadata lookup identities remain equal across
+all three phases. The owned system-site-packages venv retains ordinary editable
+PHMT version `0.4.0+52.g404aa38`; its tracked runtime/test/support/tool/workflow
+trees equal measured main 3ecfe23. MolSysMT 0faf1584, Viewer ca7ebea6 and DepDigest
+13cc7378 remain the controlled sources. Shared conflicts stay MolSysSuite #82.
+The strict isolated cookbook-page build uses an adjacent retrospective link-target
+stub; full-site rendering is untested here. This is bounded source/API acceptance,
+not a complete current-suite rerun or clean installed/public/Conda/platform gate.
+Exact final-head hosted receiving remains #9 and delivery remains #23/#10.

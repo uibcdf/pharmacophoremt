@@ -1,5 +1,22 @@
 # Strategic Roadmap
 
+## Prepared-conformer acceptance complete; qualify rigid refinement — 2026-11-03
+
+#17's source/API scope is resolved without runtime/test changes. All 95 owning
+controls and six workflow/cookbook blocks pass with stable producer identities.
+The [receipt](evidence/conformer_acceptance_20261103_summary.json) additionally
+retains five full ensembles, actual frame failures and attribution, immutable
+inputs and retrospective exclusion of an unresolved molecule. #38 remains resolved.
+
+Next accept #29's existing public rigid pair evaluator and supplied-seed greedy
+refinement, both orientation policies and retained best accepted states. Review
+rollback, counts, resource/provider failures and current examples; preserve
+evidence favoring either policy without claiming universal superiority. Reuse
+existing analytical/workload guards rather than adding molecular operations.
+#66 still needs its four original binding methods through a new authorized route.
+Exact-head CI remains #9 and installed/public delivery #23/#10. Addon and a new
+release stay deferred; see the [checkpoint](checkpoint.md) for the exact handoff.
+
 ## Accept classical MVP segments while original methods are awaited — 2026-11-03
 
 #38's cached-model curation source/API acceptance is complete: 84 owning tests

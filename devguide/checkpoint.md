@@ -1,5 +1,48 @@
 # Development Checkpoint
 
+## Prepared-conformer source/API acceptance complete; rigid refinement next — 2026-11-03
+
+#17 is resolved with its [archived report](archive/native_conformer_screening.md)
+and [current acceptance receipt](evidence/conformer_acceptance_20261103_summary.json).
+Clean source **3ecfe23cbab455226ab48c99248f7c9c127b6d8c** passes **95 controls**,
+zero failures/errors/skips: all 20 prepared-conformer cases plus rigid, seeded,
+facade, retrospective and composed-attribution consumers. The workflow example
+and five current cookbook blocks pass. No runtime or test change is required.
+
+Five full analytical ensembles retain complete negatives, unresolved/entirely
+failed ensembles, a unit-coverage maximum with another frame failed, and a binary
+hit at .75 optional coverage with an actual missing state on another frame.
+Every failure stays explicit. The retrospective record preserves repeated input
+IDs and excludes the unresolved input: original scored indices [0, 1, 3], three
+evaluated inputs, one failed input. Actual references/uses and unchanged source
+atom/coordinate/chemical-state/frame-association fingerprints are retained.
+Full source/native/helper/test and metadata lookup identities are stable across
+all three phases. A strict isolated cookbook-page render passes with an adjacent
+link-target stub; this does not qualify the full documentation site.
+
+**Next:** functional/API acceptance of [#29](https://github.com/uibcdf/pharmacophoremt/issues/29).
+Review the public supplied-correspondence evaluator/refiner, both `final` and
+`each_step` orientation policies, rejected-trial rollback, retained best accepted
+states, resource/provider failures, immutable sources and actual attribution.
+Execute its existing analytical/workload guards and cookbook before archival.
+Preserve measured cases favoring either policy; do not infer a universal winner
+or require a new timing benchmark to accept scientific behavior. Molecular
+recognition, fitting and transformation remain in MolSysMT; missing capabilities
+go through provider issues. #66 still awaits the four original binding methods;
+no new search lead or study change has arrived. Addon/new release stay deferred.
+
+Artifacts remain in `/tmp/phmt17-acceptance-20261103-pqipkabu/`, owners LMMV/dprada,
+review 2026-11-17. The unchanged owned #69 venv still imports ordinary editable
+PHMT `0.4.0+52.g404aa38`; measured main 3ecfe23 has identical tracked runtime,
+support, test, tool and workflow trees. Actual providers/native bytes, sibling
+worktrees and canonical prefix are unchanged. Explicit checkout helper routing
+is retained in the original runner. Shared pip-check conflicts stay #82.
+This is bounded source/API qualification, not full current-suite or clean
+installed/public/Conda/platform/biological/performance qualification. Prior-head
+3ecfe23 policy and Conda governance pass; its scientific CI 41696393621 is still
+pending at the receipt. Exact final-head receiving and recovery stay #9, separately
+from #23/#10 delivery. No local background job is needed to resume #29.
+
 ## Curation source/API acceptance complete; prepared-conformer review next — 2026-11-03
 
 #38 is resolved with its [archived report](archive/public_pharmacophore_curation.md)

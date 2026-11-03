@@ -1,0 +1,403 @@
+{
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "documentation_scope": "Strict isolated prepared-conformer cookbook page with adjacent retrospective link-target stub; not full-site rendering/navigation.",
+    "failure_case_scope": "Existing analytical fixtures; five full ensemble outcomes, actual optional attribution, atom/coordinate/chemical-state/frame-association fingerprints and retrospective input accounting. No external biological cohort.",
+    "final_head_hosted_receiving": "uibcdf/pharmacophoremt#9",
+    "full_current_suite_reexecution": false,
+    "full_platform_matrix": false,
+    "helper_route": "Runtime resolved through ordinary editable install before explicitly adding checkout for unshipped phmt_test_support, devtools and existing test fixtures.",
+    "installed_wheel_qualification": false,
+    "performance_comparison": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_or_test_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Unchanged owned system-site-packages #69 venv; ordinary editable PHMT remains 0.4.0+52.g404aa38, whose five runtime/support/test/tool/workflow trees equal measured clean main 3ecfe23. No reinstall, canonical prefix or provider/sibling source mutation."
+  },
+  "consumer": {
+    "head": "3ecfe23cbab455226ab48c99248f7c9c127b6d8c",
+    "status": ""
+  },
+  "executed_recipe_blocks": 6,
+  "failure_cases": {
+    "all_frames_failed": {
+      "actual_items": 11,
+      "actual_uses": 23,
+      "best_conformer_index": null,
+      "ensemble": {
+        "complete": false,
+        "maximum_scope": "checked_pose_coverage",
+        "method": "prepared_conformer_rigid_search@1",
+        "n_evaluated": 0,
+        "n_failed": 2,
+        "n_requested": 2,
+        "proven_maximum": false,
+        "ranking": "hit_then_coverage_first_requested_tie",
+        "score_resolved": false,
+        "structure_indices": [
+          0,
+          1
+        ]
+      },
+      "fit_value": null,
+      "ranking_score": null,
+      "source_unchanged": true,
+      "status": "failed"
+    },
+    "binary_partial_hit_with_failed_state": {
+      "actual_items": 9,
+      "actual_uses": 25,
+      "best_conformer_index": 0,
+      "ensemble": {
+        "complete": false,
+        "maximum_scope": "binary_hit",
+        "method": "prepared_conformer_seed_hit@1",
+        "n_evaluated": 1,
+        "n_failed": 1,
+        "n_requested": 2,
+        "proven_maximum": true,
+        "ranking": "seeded_hit_first_requested_tie",
+        "score_resolved": true,
+        "structure_indices": [
+          0,
+          1
+        ]
+      },
+      "fit_value": 0.75,
+      "ranking_score": 1.0,
+      "source_unchanged": true,
+      "status": "matched"
+    },
+    "complete_negative": {
+      "actual_items": 12,
+      "actual_uses": 30,
+      "best_conformer_index": 0,
+      "ensemble": {
+        "complete": true,
+        "maximum_scope": "checked_pose_coverage",
+        "method": "prepared_conformer_rigid_search@1",
+        "n_evaluated": 2,
+        "n_failed": 0,
+        "n_requested": 2,
+        "proven_maximum": false,
+        "ranking": "hit_then_coverage_first_requested_tie",
+        "score_resolved": true,
+        "structure_indices": [
+          0,
+          1
+        ]
+      },
+      "fit_value": 0.8,
+      "ranking_score": null,
+      "source_unchanged": true,
+      "status": "not_matched"
+    },
+    "unit_hit_with_failed_frame": {
+      "actual_items": 11,
+      "actual_uses": 24,
+      "best_conformer_index": 0,
+      "ensemble": {
+        "complete": false,
+        "maximum_scope": "checked_pose_coverage",
+        "method": "prepared_conformer_rigid_search@1",
+        "n_evaluated": 1,
+        "n_failed": 1,
+        "n_requested": 2,
+        "proven_maximum": true,
+        "ranking": "hit_then_coverage_first_requested_tie",
+        "score_resolved": true,
+        "structure_indices": [
+          0,
+          1
+        ]
+      },
+      "fit_value": 1.0,
+      "ranking_score": null,
+      "source_unchanged": true,
+      "status": "matched"
+    },
+    "unresolved_negative": {
+      "actual_items": 12,
+      "actual_uses": 30,
+      "best_conformer_index": null,
+      "ensemble": {
+        "complete": false,
+        "maximum_scope": "checked_pose_coverage",
+        "method": "prepared_conformer_rigid_search@1",
+        "n_evaluated": 1,
+        "n_failed": 1,
+        "n_requested": 2,
+        "proven_maximum": false,
+        "ranking": "hit_then_coverage_first_requested_tie",
+        "score_resolved": false,
+        "structure_indices": [
+          0,
+          1
+        ]
+      },
+      "fit_value": null,
+      "ranking_score": null,
+      "source_unchanged": true,
+      "status": "failed"
+    }
+  },
+  "focused": {
+    "errors": "0",
+    "failures": "0",
+    "hostname": "spika",
+    "name": "pytest",
+    "skipped": "0",
+    "tests": "95",
+    "time": "76.779",
+    "timestamp": "2026-11-03T12:55:20.061066-06:00"
+  },
+  "full_evidence": {
+    "compressed_bytes": 211375,
+    "compressed_sha256": "ca2561617aa3d142c110a4010696d939a914f17d6a4bb270c4f92e093eb55a1c",
+    "path": "conformer_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 3130657,
+    "uncompressed_sha256": "53bdbb0bf7ee5a4f307bf65aabe0465ffc1be4015f9721d43bacec2c5c7b0678"
+  },
+  "full_identity_unchanged": {
+    "cookbook": true,
+    "failure_cases": true,
+    "focused": true
+  },
+  "issue": "uibcdf/pharmacophoremt#17",
+  "measured_date": "2026-11-03",
+  "recipes": {
+    "devguide/conformer_screening_workflow.md": {
+      "best_conformer_index": 1,
+      "ensemble": {
+        "complete": true,
+        "maximum_scope": "checked_pose_coverage",
+        "method": "prepared_conformer_rigid_search@1",
+        "n_evaluated": 2,
+        "n_failed": 0,
+        "n_requested": 2,
+        "proven_maximum": true,
+        "ranking": "hit_then_coverage_first_requested_tie",
+        "score_resolved": true,
+        "structure_indices": [
+          1,
+          0
+        ]
+      },
+      "executed_blocks": 1,
+      "fit_value": 1.0,
+      "status": "matched"
+    },
+    "docs/content/cookbook/prepared_conformers.md": {
+      "best_conformer_index": 1,
+      "ensemble": {
+        "complete": true,
+        "maximum_scope": "binary_hit",
+        "method": "prepared_conformer_seed_hit@1",
+        "n_evaluated": 2,
+        "n_failed": 0,
+        "n_requested": 2,
+        "proven_maximum": true,
+        "ranking": "seeded_hit_first_requested_tie",
+        "score_resolved": true,
+        "structure_indices": [
+          1,
+          0
+        ]
+      },
+      "executed_blocks": 5,
+      "fit_value": 1.0,
+      "status": "matched"
+    }
+  },
+  "retrospective": {
+    "AUC": 1.0,
+    "BEDROC": 1.0,
+    "evaluated_indices": [
+      0,
+      1,
+      3
+    ],
+    "n_evaluated": 3,
+    "n_failed": 1,
+    "scores": [
+      1.0,
+      1.0,
+      0.8
+    ]
+  },
+  "schema": "pharmacophoremt.conformer_acceptance_summary@1",
+  "scope": "Prepared-conformer source/API analytical acceptance; no biological, performance, full installed/public or platform qualification.",
+  "source_environment": {
+    "consumer": {
+      "head": "3ecfe23cbab455226ab48c99248f7c9c127b6d8c",
+      "status": ""
+    },
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "helper_source": {
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/phmt_test_support",
+      "python_file_count": 41,
+      "python_source_sha256": "f93c63a912cf41a2aed7943021c6f893646bc121e2a38cc96dd9cf5283f38a86",
+      "version": "unknown"
+    },
+    "packages": {
+      "ackredit": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/ackredit\"}",
+        "metadata_version": "0.12.0+11.g74f865d",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "python_file_count": 69,
+        "python_source_sha256": "d639082940adb6acf99133514c34af26e835db2c64ac739f233f402d2fb9e2a5",
+        "version": "0.12.0+11.g74f865d"
+      },
+      "argdigest": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/argdigest\"}",
+        "metadata_version": "0.17.0+5.gcd9c4f3",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/argdigest/argdigest",
+        "python_file_count": 39,
+        "python_source_sha256": "da5850780c3af5a58e0c383e16b8d6fe53dfb620dfa6005c4be35c9837aeb8fd",
+        "version": "0.17.0+5.gcd9c4f3"
+      },
+      "depdigest": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}",
+        "metadata_version": "0.15.1",
+        "native_extensions": [],
+        "path": "/tmp/phmt69-fixed-20261103-q6cirii4/depdigest/depdigest",
+        "python_file_count": 17,
+        "python_source_sha256": "21ac513be7d1206b4dbcdcad5d7bd7dc22a23576932ed0448d6b004f0b032f13",
+        "version": "0.15.1"
+      },
+      "molsysmt": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}",
+        "metadata_version": "0.23.0+370.g0faf1584d",
+        "native_extensions": [
+          {
+            "bytes": 31213144,
+            "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+            "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+          }
+        ],
+        "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt",
+        "python_file_count": 3031,
+        "python_source_sha256": "f6e5d28a3a5d113ff99b21324df9dd728ddc21e892db34445d2b4f3eaf5df40f",
+        "version": "0.23.0+370.g0faf1584d"
+      },
+      "molsysviewer": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer\"}",
+        "metadata_version": "0.24.0+238.gca7ebea6",
+        "native_extensions": [],
+        "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer/molsysviewer",
+        "python_file_count": 653,
+        "python_source_sha256": "5282eb1275b291861f02ef4c5fcaf285e1ab830414b64860543c7b68822ed551",
+        "version": "0.24.0+238.gca7ebea6"
+      },
+      "pharmacophoremt": {
+        "direct_url": null,
+        "metadata_version": "0.4.0+52.g404aa38",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "python_file_count": 132,
+        "python_source_sha256": "d8b3068f6da9c1d402188718cbb2d0bfa4cbf4ce0991d1707bc43c40e531d505",
+        "version": "0.4.0+52.g404aa38"
+      },
+      "pyunitwizard": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pyunitwizard\"}",
+        "metadata_version": "0.29.0+4.g9d74f0e",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "python_file_count": 92,
+        "python_source_sha256": "038e50e50b50d6bb45e1862f10b383fe3ddb994cce86ed5aa8435a706e706649",
+        "version": "0.29.0+4.g9d74f0e"
+      },
+      "smonitor": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/smonitor\"}",
+        "metadata_version": "0.22.0+3.gebdd054",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+        "python_file_count": 41,
+        "python_source_sha256": "c67830bd0cbb9fee405c0e5fe4c2395911d7c93ec4f5965c8c62681b3d55065c",
+        "version": "0.22.0+3.gebdd054"
+      }
+    },
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "recipe_sha256": {
+      "devguide/conformer_screening_workflow.md": "27ca1b9eccff9ffac3e6f226fbc678703aebd511fb3aa86aa291e170aa2d3175",
+      "docs/content/cookbook/prepared_conformers.md": "285dcc48a966cb8e0c98c2e8e3ad2e20c08336eb5cf15c8424fa95835205a490"
+    },
+    "recorded_at": "2026-11-03T18:55:19.632965+00:00",
+    "test_sources": {
+      "tests/test_aligned_cliques.py": "a18d24655f8b043984754c8f0bc3c79475217d2591d0af6258fcfb2599e2345d",
+      "tests/test_aligned_consensus.py": "8e4a4354eb778bbb7f90010171623147e1eec990c8c829a46d130ac3172faed8",
+      "tests/test_aromatic_interactions.py": "9ae7cc8af18e03d53a3567b953f3be71f04229f588cc24a09e9ebe5fd09a3a17",
+      "tests/test_attribution.py": "eb2e4d422324c3425db2647a233986725f4a8e5a9b1eb6f41d5905942d1f13bb",
+      "tests/test_ccd_interactions.py": "341d318d641e2e3eadc89b45bb657297c1aabefacb8a7ecc391820d121ba89cb",
+      "tests/test_chemical_domain_receiving.py": "a46e86d374747863d9e30b425dc210a4019b83f76f6aea1a0431b3c74c366120",
+      "tests/test_ci_backlog.py": "1c932cd05648058c8d02556313fbc179d8a0ac735372485e7e936eeb4cb14074",
+      "tests/test_ci_routes.py": "c814b71fb8ef3bbcba4c5807ecdb3e8acabbc9246008da9a8b80e388f5c57aa2",
+      "tests/test_complex_based_facade.py": "16777487dcded72b5c1f518e42c153e6dc478a8b1572153f7d598e5f1615eec7",
+      "tests/test_conformer_screening.py": "a09b86a9ed4a755ee519c898c3253904fe1f291333140d694a57a06f83dfde53",
+      "tests/test_contracts.py": "87bfd129937504302ad8247e7d2675634b1d42b65468ed58493ca2dc6f53d241",
+      "tests/test_correspondence_geometry.py": "9075598b20812709d7a3233793009c3d8825796eb389ca1af5614ef792363eaf",
+      "tests/test_curation.py": "83d0f3786a5158500b8e25f97e4661391f1dfd530e1be3ad7edafe6b4d606386",
+      "tests/test_eralpha_exclusions.py": "9e3395968b3e1f28c69e527f64f949215222257593fdca4fd62fc190a8335a38",
+      "tests/test_eralpha_hydrogens.py": "06d6770387eea8b982d0df1741578beed1920a3b38e49a32baceaee2055a9432",
+      "tests/test_eralpha_interaction_diagnostics.py": "b36285087e69d72364099eccd5b83f8dc5c900301c2fd0b0f71dbbbe96800e37",
+      "tests/test_eralpha_interface.py": "29574ede8fb333c451f0f2d815f79edea4e344a73e19be9a2bc9dc7474064abe",
+      "tests/test_eralpha_receptor.py": "bdc5f2001328a365f8bb6f078242f127ff9601d4e58d0ca152c4d5d3f52dabb9",
+      "tests/test_eralpha_template.py": "80e9f16bed89847102d4fa97b8e063865d5c4fb6fd49c833bdd44efdf46efec9",
+      "tests/test_evidence_archive.py": "bc1ec7bd3fedee9f604c127b5d9e6e34dda04e4097a84c5ec43dfc5a361a33a6",
+      "tests/test_excluded_volume_sites.py": "5c60c86fc774f077ceec152c155718dceb31671d2c5eead91afd28fe6755f29f",
+      "tests/test_import.py": "59dec9a2615f4547b75cb12428902e9041e1ec44892094e31413aa7115a22638",
+      "tests/test_interaction_composition.py": "257cd57859bd28301a6da0d21e947eccc012c68fdb4a86fe75e42429e579a581",
+      "tests/test_interaction_site.py": "85fda68a46ff2f8f77d0a09006f4d361b2b2011431b292df2b40eb7d0d17c4ee",
+      "tests/test_io_ligandscout.py": "f1e5f0e8f0fc60811f26a04c92692ba844839f092794892a5b25e731d8c1dbcb",
+      "tests/test_io_pharmer.py": "f1395d58ab230819c1e7cdeabeb9ff9987cbef74beb7add4c8c4ee023d71e1de",
+      "tests/test_io_rdkit.py": "c86b1c59cd80567287a247a3710997c37da4e07e53f56c570c951b7b14260c39",
+      "tests/test_io_sdf.py": "01f6bb4b87b178c64fbe2e4d99496c55937f06cbb9e3aa5a80a42411f9d0098f",
+      "tests/test_ionic_interactions.py": "10b03e0d1fb111b68378ca9993a315ecb7e454d46a986ed9a22d6dd89a2b435d",
+      "tests/test_ligand_based_facade.py": "3bb2e9e4964d489d63eaa128a0306066fcb246aabc578031fd062c6d13e5f3dd",
+      "tests/test_modular_rigid_tools.py": "7b9439207c32efa6e6b83725020df5b1a889a84750ee2d42f9f7b1d78a98756a",
+      "tests/test_molecular_ownership.py": "8ed31be10d223f241f64b012da906a090c8100b19a61e07831a460bea671a492",
+      "tests/test_molsysmt_feature_routes.py": "883ae2a1a3a2f2b23a8619e7e5cf1489a0c4b3c965f4e7011eb6f238bbeac861",
+      "tests/test_molsysviewer_pharmacophoremt_addon.py": "046a203c71530d53bf6bf28b0b0fa45d60a8a0e21f3256b408cad100902dd151",
+      "tests/test_pharmacophore.py": "17dae96831fc10db2075a2116d74fb6efa5fdac7c6e67bc4eda6ae49ae5e994a",
+      "tests/test_pose_evaluation.py": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "tests/test_prepared_ccd_ligands.py": "c7e5263ff0aca21982dda18a36969cea9733aacf2aceb591d9b06b95ed940ec6",
+      "tests/test_prepared_consensus_workflow.py": "b1a513985364a66555d4816f6b9278898073723f986c68d1cf7652a405364a28",
+      "tests/test_prepared_receptor_workflow.py": "a3fb67ddb096ab61536d7c5572b9a62d84e3b5a12c8f02db207df50f0b422fe9",
+      "tests/test_prepared_search_workflow.py": "2b8ea7ed9a37fe16e0bc857ffcd11183769d27d7f0a90822f88e67264042d573",
+      "tests/test_prepared_workflow.py": "b67037c3d16e55913d79ae29dfd53800257967da53eecddb9280ad10d50148e4",
+      "tests/test_ranked_seeds.py": "cea3ca2a91816578859fc96d964bd2bb87ebbddeb72964ff3ee5c67dfe397aa5",
+      "tests/test_receptor_projections.py": "a016b753754d3265ffbdaed4b5e5aa6d03f6ca2a6ab5623b9c4094a9245ec9b3",
+      "tests/test_reference_ligand.py": "84ce19dc32d1d38d1800941554abbdbc540a2c3cdc7a0fe3beff89dc50f5ad8f",
+      "tests/test_reporting_protocol.py": "48db33a741e841d5dd6b1bec9d4da0a5105ccad0ce683288c6036e94b6ff9067",
+      "tests/test_retrospective.py": "cf2fa09ab50c4aab7f0f3aa7beea73ef107b58e710d81df23df19f533b6c8d97",
+      "tests/test_rigid_consensus.py": "2003b2a2b0eb54d60cde005c74721b0fd17d78384d3af28e10115f851e7ad9a2",
+      "tests/test_rigid_refinement.py": "0f91bddf1433ac36512932a22254ade69949e6464a9948e5b69ef64d76e62d7b",
+      "tests/test_rigid_refinement_workloads.py": "226a76047046034eb252ef381d9b1ec89fd15f780944890931d3111b2ce7fc6f",
+      "tests/test_rigid_search.py": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "tests/test_rigid_strategy_comparison.py": "e1d6f1e289869ef6683e560602f212eb72439a8754d3942ac451209b8aaa6a61",
+      "tests/test_saved_results.py": "ab004b1fb926f122de0fda6d0656de96661729c1d977ebe5cd9435af72e14107",
+      "tests/test_seeded_scoring.py": "1703113fb5457b75cb3997f61b32738198b9bd2330cb5a5d8ce2459f5905c9b4",
+      "tests/test_validation_eralpha.py": "bb0776a3b74bf480ab3831ef4b5f69ef38cc3495040382fe6305b735cc6f9d68",
+      "tests/test_validation_metrics.py": "d7f9472a6a99729bedde9769abf1332eecdc230b213dca5e7969824e5322b3e9",
+      "tests/test_virtual_screening.py": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f"
+    }
+  }
+}

@@ -6,7 +6,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (19)
+### Active (18)
 
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(active, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
@@ -16,7 +16,6 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_aligned_clique_consensus.md`](native_aligned_clique_consensus.md) — [#24](https://github.com/uibcdf/pharmacophoremt/issues/24) — Discover aligned clique consensus with alternative jointly supported hypotheses. *(active, measured)*
 - [`native_aligned_consensus.md`](native_aligned_consensus.md) — [#21](https://github.com/uibcdf/pharmacophoremt/issues/21) — Implement reusable reference-anchored consensus for prepared aligned ligands. *(active, measured)*
 - [`native_aromatic_interactions.md`](native_aromatic_interactions.md) — [#34](https://github.com/uibcdf/pharmacophoremt/issues/34) — Build aromatic and cation-pi hypotheses with shared geometry and explicit participant mapping. *(active, measured)*
-- [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(active, measured)*
 - [`native_eralpha_validation.md`](native_eralpha_validation.md) — [#22](https://github.com/uibcdf/pharmacophoremt/issues/22) — Audit the ERalpha snapshot and migrate its regression to a reproducible native workflow. *(active, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(active, measured)*
 - [`native_ionic_interactions.md`](native_ionic_interactions.md) — [#33](https://github.com/uibcdf/pharmacophoremt/issues/33) — Construct native charge queries from ionic observations through shared feature tools. *(active, measured)*
