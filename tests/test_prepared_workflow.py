@@ -136,6 +136,6 @@ def test_selected_preparation_does_not_invoke_hbond_geometry(monkeypatch):
     def forbidden(*args, **kwargs):
         pytest.fail("This fixture selection must not request hydrogen-bond sites")
 
-    monkeypatch.setattr(msm.physchem, "get_hbond_sites", forbidden)
+    monkeypatch.setattr(msm.interactions.hbonds, "get_hbond_sites", forbidden)
     prepared = prepare_case("EST", features=FEATURES)
     assert {row["kind"] for row in prepared["inventory"]["features"]} == set(FEATURES)
