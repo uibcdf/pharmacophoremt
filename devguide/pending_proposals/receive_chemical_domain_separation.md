@@ -14,6 +14,24 @@ supersedes: []
 
 # Chemical-domain receiving preparation
 
+## Reviewed isolated candidate and typed-fidelity handoff — 2026-11-02
+
+The owner's candidate is [43a258c](https://github.com/uibcdf/pharmacophoremt/commit/43a258c516ebb3c8f971ac45629a1a60b3871fab),
+branch `receiving/chemical-domain-owner-20261102`; main runtime/pins are retained.
+The [full source receipt](../evidence/chemical_domain_receiving_20261102_summary.json)
+preserves 998 passes / 11 failures / zero skips, with all original 22 baseline
+nodes passed. After client-side corrections, the
+[clean candidate confirmation](../evidence/chemical_domain_candidate_confirmation_20261102_summary.json)
+passes 73 focused controls. Its six added domain guards live in the candidate's
+`tests/test_chemical_domain_receiving.py`, not the unchanged main runtime.
+
+Four typed-state preservation assertions still fail on component_name/type dtype
+changes after public extraction. [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
+owns the minimal public repro and required dtype disposition/correction. Keep
+these assertions and preserve original source/artifact evidence. No consumer
+normalizer or xfail is introduced; no red source pair is integrated into main.
+Source, installed/public and platform acceptance remain separate. #69 stays partial.
+
 ## What
 
 Prepare the consumer transition under MolSysMT #255 and MolSysSuite #155 without

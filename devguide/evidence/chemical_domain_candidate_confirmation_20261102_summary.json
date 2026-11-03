@@ -1,0 +1,33 @@
+{
+  "command": [
+    "/tmp/phmt69-receiving-20261102-t6z6qujh/venv/bin/python",
+    "-m",
+    "pytest",
+    "-p",
+    "pytest_receptor.plugin",
+    "--receptor=llm",
+    "tests/test_chemical_domain_receiving.py",
+    "tests/test_receptor_projections.py",
+    "tests/test_eralpha_template.py::test_template_transfer_retains_observed_identity_pose_and_explicit_state",
+    "--junitxml=/tmp/phmt69-receiving-20261102-t6z6qujh/candidate_confirmation.xml"
+  ],
+  "consumer_clean_before_after": true,
+  "consumer_head": "43a258c516ebb3c8f971ac45629a1a60b3871fab",
+  "full_evidence": {
+    "compressed_bytes": 2255,
+    "compressed_sha256": "87ca2a252a5e4beda13726d5dde4a1f325c0bc34a17061612f1dd963ade4df90",
+    "file": "chemical_domain_candidate_confirmation_20261102.json.gz",
+    "uncompressed_bytes": 13382,
+    "uncompressed_sha256": "539adbd0db00229c951fb93439a41cbd1c688d5457f9c5b7ecbebf20b9ce9134"
+  },
+  "provider": "de7ffad2aef18ff3bccd184133dc69e081cb506e",
+  "recorded_at": "2026-11-03T05:27:48.057593+00:00",
+  "schema": "pharmacophoremt.chemical_domain_candidate_confirmation@1",
+  "scope": "Focused final-candidate source confirmation: six domain controls, corrected receptor module and strict stereo-transport guard. The four typed-component preservation failures are outside this confirmation and remain unresolved. Not complete installed/public/platform qualification.",
+  "totals": {
+    "errors": 0,
+    "failures": 0,
+    "skipped": 0,
+    "tests": 73
+  }
+}

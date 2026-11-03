@@ -1,0 +1,179 @@
+{
+  "administrative": {
+    "declared_dependency_audit": "passed --declared-only; installed Git-context audit is not inferred",
+    "status": "passed with owned immutable SDK 1c248b67",
+    "tests": 67
+  },
+  "coordination": "uibcdf/molsyssuite#155",
+  "corrected_stereochemistry": {
+    "nonpassing": {},
+    "totals": {
+      "errors": 0,
+      "failures": 0,
+      "passed": 1,
+      "seconds": 5.309,
+      "skipped": 0,
+      "tests": 1
+    }
+  },
+  "depdigest": "13cc73780a7cb645546ae3f396177f98b86a8792",
+  "environment_scope": "Owned venv with system site packages and exact editable provider/client installs; not clean public dependency closure or installed wheel/Conda/platform qualification.",
+  "full_evidence": {
+    "compressed_bytes": 94015,
+    "compressed_sha256": "39ef8a6fc3aa3786a3e5c2d1feecf2654601321c8d4b8734b29b16ebf086d5ae",
+    "file": "chemical_domain_receiving_20261102.json.gz",
+    "uncompressed_bytes": 758559,
+    "uncompressed_sha256": "3798825cb5993fac62053d9e725cff25a38570f584d1e9347fec96d8b01214cb"
+  },
+  "identity_review": {
+    "actual_module_source_native_version_identities_stable": {
+      "ackredit": true,
+      "argdigest": true,
+      "depdigest": true,
+      "molsysmt": true,
+      "molsysviewer": true,
+      "pharmacophoremt": true,
+      "pyunitwizard": true,
+      "smonitor": true
+    },
+    "consumer_provider_and_test_sources_stable": true,
+    "distribution_lookup_differences": {
+      "depdigest": {
+        "direct_url": [
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-receiving-20261102-t6z6qujh/depdigest\"}",
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/depdigest\"}"
+        ],
+        "metadata_version": [
+          "0.15.1",
+          "0.15.1+8.g0884f0c"
+        ]
+      },
+      "molsysmt": {
+        "direct_url": [
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-receiving-20261102-t6z6qujh/molsysmt\"}",
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysmt\"}"
+        ],
+        "metadata_version": [
+          "0.23.0+361.gde7ffad2a",
+          "0.23.0+322.g71fbe4f46"
+        ]
+      },
+      "molsysviewer": {
+        "direct_url": [
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-receiving-20261102-t6z6qujh/molsysviewer\"}",
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/molsysviewer\"}"
+        ],
+        "metadata_version": [
+          "0.24.0+238.gca7ebea6",
+          "0.24.0+188.g73a6f388"
+        ]
+      },
+      "pharmacophoremt": {
+        "direct_url": [
+          null,
+          "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pharmacophoremt\"}"
+        ],
+        "metadata_version": [
+          "0.4.0+43.ga9abeb9.dirty",
+          "0.4.0+29.g8e83a64"
+        ]
+      }
+    },
+    "scope": "Original runner flag remains false: metadata/distribution lookups differed after pytest in the system-site venv. Actual module paths, module versions, Python/native byte identities and source/test files remained unchanged. Fresh-process post-run metadata resolves the owned installed revisions. No clean installed-closure claim."
+  },
+  "issue": "uibcdf/pharmacophoremt#69",
+  "next": "Resolve provider typed component-column dtype preservation under MolSysMT #255 before integrating controlled-source candidate into main. Separately qualify installed/public artifacts. No provider-main merge, published minimum, package/release or scientific-profile stabilization is inferred.",
+  "pip_check_exit_code": 1,
+  "producer": {
+    "consumer_base": "a9abeb9347e75c3f2e3f13877f9ad69f06cbbee2",
+    "scope": "Identified uncommitted owner-receiving overlay; exact before/after package/native/test/source patch and added test bytes are retained. Later cached-spy test correction is qualified separately, not presented as an unchanged full-suite producer."
+  },
+  "provider": "de7ffad2aef18ff3bccd184133dc69e081cb506e",
+  "provider_issue": "uibcdf/molsysmt#255",
+  "pytest_totals": {
+    "failed": 11,
+    "passed": 998,
+    "scope": "pytest original cases; JUnit also contains unittest subtest records",
+    "skipped": 0
+  },
+  "recorded_at": "2026-11-03T05:22:50.282488+00:00",
+  "remaining_provider_failures": {
+    "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[DES_donor_contact]": "failure",
+    "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[DES_ring_offset]": "failure",
+    "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[EST_donor_contact]": "failure",
+    "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[EST_ring_offset]": "failure"
+  },
+  "results": {
+    "corrected_receptor_module": {
+      "nonpassing": {},
+      "totals": {
+        "errors": 0,
+        "failures": 0,
+        "passed": 66,
+        "seconds": 6.87,
+        "skipped": 0,
+        "tests": 66
+      }
+    },
+    "domain_controls": {
+      "nonpassing": {},
+      "totals": {
+        "errors": 0,
+        "failures": 0,
+        "passed": 6,
+        "seconds": 3.767,
+        "skipped": 0,
+        "tests": 6
+      }
+    },
+    "full_source": {
+      "nonpassing": {
+        "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[DES_donor_contact]": "failure",
+        "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[DES_ring_offset]": "failure",
+        "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[EST_donor_contact]": "failure",
+        "tests.test_ccd_interactions::test_public_merge_preserves_complete_components_and_original_sources[EST_ring_offset]": "failure",
+        "tests.test_eralpha_template::test_template_transfer_retains_observed_identity_pose_and_explicit_state": "failure",
+        "tests.test_receptor_projections::test_complementary_numerical_controls_and_no_molecular_operations[class]": "failure",
+        "tests.test_receptor_projections::test_complementary_numerical_controls_and_no_molecular_operations[dispatcher]": "failure",
+        "tests.test_receptor_projections::test_complementary_numerical_controls_and_no_molecular_operations[tool]": "failure",
+        "tests.test_receptor_projections::test_incomplete_legacy_calls_fail_before_molecular_access[False]": "failure",
+        "tests.test_receptor_projections::test_incomplete_legacy_calls_fail_before_molecular_access[True]": "failure",
+        "tests.test_receptor_projections::test_native_public_inventory_exclusions_pose_and_preserved_source": "failure"
+      },
+      "totals": {
+        "errors": 0,
+        "failures": 11,
+        "passed": 1015,
+        "seconds": 1363.276,
+        "skipped": 0,
+        "tests": 1026
+      }
+    },
+    "original_22_nodes_in_full_run": {
+      "tests.test_conformer_screening::test_missing_frame_state_is_retained_and_other_frames_still_run": "passed",
+      "tests.test_conformer_screening::test_state_dependent_selection_uses_the_same_frame_state_as_recognition": "passed",
+      "tests.test_conformer_screening::test_structure_state_policy_uses_each_declared_state_instead_of_reference": "passed",
+      "tests.test_eralpha_hydrogens::test_second_hydrogen_addition_is_an_unchanged_independent_copy[standard_units0]": "passed",
+      "tests.test_eralpha_hydrogens::test_second_hydrogen_addition_is_an_unchanged_independent_copy[standard_units1]": "passed",
+      "tests.test_eralpha_interaction_diagnostics::test_candidate_distances_and_angles_have_independent_coordinate_oracles": "passed",
+      "tests.test_eralpha_interaction_diagnostics::test_fixed_cutoff_sensitivity_does_not_reclassify_original_analyses": "passed",
+      "tests.test_eralpha_interaction_diagnostics::test_nondefault_unit_policy_preserves_diagnosis_and_explicit_records": "passed",
+      "tests.test_eralpha_interaction_diagnostics::test_phe404_is_recognized_and_profile_comparison_retains_its_definition": "passed",
+      "tests.test_eralpha_interaction_diagnostics::test_recognition_and_empty_observations_are_distinct": "passed",
+      "tests.test_eralpha_interaction_diagnostics::test_reference_intersection_rejects_frozen_phe404_pair": "passed",
+      "tests.test_eralpha_interface::test_closed_fragment_states_and_source_maps_are_explicit": "passed",
+      "tests.test_eralpha_interface::test_evaluated_empty_families_are_retained_as_observations": "passed",
+      "tests.test_eralpha_interface::test_native_history_unknowns_maps_and_units_survive_saved_readers": "passed",
+      "tests.test_interaction_composition::test_collection_consumes_public_adapter_and_composition": "passed",
+      "tests.test_interaction_composition::test_compose_is_independent_and_calls_no_molecular_operations": "passed",
+      "tests.test_interaction_composition::test_saved_components_compose_with_nondefault_units_and_detached_reader": "passed",
+      "tests.test_ionic_interactions::test_empty_internal_uncovered_and_periodic_observations": "passed",
+      "tests.test_prepared_ccd_ligands::test_qualified_preparation_preserves_identity_and_declared_chemistry[DES]": "passed",
+      "tests.test_prepared_ccd_ligands::test_qualified_preparation_preserves_identity_and_declared_chemistry[EST]": "passed",
+      "tests.test_reference_ligand::test_formal_charge_group_centroid_sign_and_source_membership": "passed",
+      "tests.test_reference_ligand::test_unsupported_feature_and_incomplete_geometry_fail_visibly": "passed"
+    }
+  },
+  "schema": "pharmacophoremt.chemical_domain_receiving@1",
+  "viewer": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352"
+}

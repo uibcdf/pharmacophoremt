@@ -4,10 +4,66 @@ Owner: [PharmacophoreMT #69](https://github.com/uibcdf/pharmacophoremt/issues/69
 LMMV/dprada. Provider implementation belongs to
 [MolSysMT #255](https://github.com/uibcdf/molsysmt/issues/255); shared coordination
 is [MolSysSuite #155](https://github.com/uibcdf/molsyssuite/issues/155).
-This 2026-10-29 record prepares receiving. It changes no runtime API, scientific
-definition, input population, dependency pin or public package minimum.
+## Owner receiving candidate — 2026-11-02
 
-## Provider boundary and actual source
+The delivered implementation is now reviewed in branch
+`receiving/chemical-domain-owner-20261102`. This candidate receives public
+`msm.chemical_states.get_substructure_matches` and controlled sources MolSysMT
+**de7ffad2aef18ff3bccd184133dc69e081cb506e**, Viewer **ca7ebea6** and DepDigest
+**13cc7378**. The DepDigest revision supplies the consumed provider's >=0.15.1
+floor. No published minimum, provider-main merge or package release is inferred.
+The installed-support helper checksum and reviewed route/workflow hashes match
+the actual edits. Existing inputs, feature/profile definitions and scores stay fixed.
+
+The [owner receipt](evidence/chemical_domain_receiving_20261102_summary.json)
+retains the full source run: **998 passed / 11 failed / zero skipped** in pytest,
+1363.38 seconds. JUnit separately includes unittest subtest records (1,026 rows).
+All original 22 baseline nodes pass within that run. The candidate also adds
+six passing real consumer controls for absent/zero/unknown versus known-empty
+chemistry, ambiguous reference and explicit state, independent copies/nonconsecutive
+extraction/H5MSM persistence, and state-local components versus stable molecules.
+
+Six failures are stale cached-receptor spies: their full corrected module passes
+**66 tests**. The prepared-workflow spy also targets the actual H-bond namespace.
+The manifest and inline-source drift controls mutate the actual active hash and
+require exactly one replacement before asserting audit rejection. The template
+transport guard now expects the provider's canonical `unspecified`, preserving
+the exact assigned R/S array and other independent expectations; it passes.
+
+**Four controls remain failed:** complete EST/DES merge/extraction changes the
+typed `component_name` and `component_type` column descriptors from `string` to
+`object`. An isolated public `CC.CC` extraction reproduces it. The inspected CCD
+projection retains values, identities and coordinates; exact typed preservation
+still fails. [Provider handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
+requests the intended contract or provider correction. Keep these assertions;
+no local metadata normalization, xfail or fake chemistry is added. The candidate
+is not accepted for integration into main while these receiving checks remain red.
+
+The owned Python 3.14.7 venv shares system dependencies (Pandas 2.3.3,
+RDKit 2026.3.1). Provider/Viewer/DepDigest and client are actual editable installs;
+the provider's Rust extension is freshly built and hashed. Source/native/module
+versions remain stable before/after the full run. Distribution-metadata lookup
+results differ after pytest and are retained explicitly; fresh-process imports
+and metadata identify the owned revisions. The runner's strict overall identity
+flag remains false for that distinction. Shared pip-check conflicts also remain.
+This is not clean installed/public/platform qualification.
+
+All 67 administrative controls pass with an owned immutable SDK; the declared-only
+dependency audit passes. Intermediate stale-SDK/quota failures, the two initial
+new-test oracle errors and corrected results are retained. Only owned Cargo cache/
+build directories were retired after installation; the native extension, sources
+and logs remain. Owners LMMV/dprada review the owned root
+`/tmp/phmt69-receiving-20261102-t6z6qujh/` on 2026-11-16.
+
+### Earlier proposal and baselines
+
+Draft PR #70 at 300d8f4 proposed source 9fb77c3 and reported a separate patched
+22-case pass (315.23 seconds). Its eight hosted source cells were red, and the
+follow-up correction was not yet adopted. That reported result is not the owner
+run above or an integrated green client. The 2026-10-29 baseline below retains
+its original sources and pre-cutover scope.
+
+## Historical provider baseline
 
 The maintainer's 2026-10-28 pre-1.0 decision replaces #255's historical post-1.0
 scheduling. The immutable [provider plan at 4e9bf09](https://github.com/uibcdf/molsysmt/blob/4e9bf09c4e02d49ab81082bc9a5706d6bab3c3f8/devguide/pending_proposals/retire_topology_bonds_after_1_0_in_favor_of_chemicalstates.md)
@@ -31,7 +87,7 @@ records hashes for 288 Python files under runtime, test support, addon, tests an
 developer tools. This is bounded AST/literal-call inspection, not unrestricted
 alias/data-flow analysis.
 
-| Consumer boundary | Current use | Receiving requirement |
+| Consumer boundary | Original use | Receiving requirement |
 | --- | --- | --- |
 | `phmt_test_support/diagnose_eralpha_interface.py:172` | `msm.topology.get_substructure_matches` on the unchanged prepared graph | Move to the delivered `msm.chemical_states.get_substructure_matches`, with the same SMARTS/profile, atom order and explicit intended chemical-state/frame scope. Make this edit only when receiving the provider implementation. |
 | `_private.molsysmt.source_frame`, `modeler.features` | Public selection, frame coordinates and declared feature chemistry | State-dependent selection and recognition must resolve the same state; no implicit state-zero substitution or local graph interpretation. |

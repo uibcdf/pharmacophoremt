@@ -1,5 +1,60 @@
 # Development Checkpoint
 
+## Owner receiving candidate reviewed; four typed-column checks pending — 2026-11-02
+
+MolSysMT #255 is now implemented in identified development source; #69 no longer
+waits merely for the namespace to exist. The owner's reviewed candidate is
+**43a258c516ebb3c8f971ac45629a1a60b3871fab**, branch
+`receiving/chemical-domain-owner-20261102`. Main retains its previous runtime,
+pins and scientific assertions while the candidate has a known provider gap.
+See [the contract](chemical_domain_receiving.md) and
+[full original receiving receipt](evidence/chemical_domain_receiving_20261102_summary.json).
+
+The candidate adopts MolSysMT **de7ffad2aef18ff3bccd184133dc69e081cb506e**, Viewer
+**ca7ebea6** and DepDigest **13cc7378** in controlled source routes, the public
+chemical_states SMARTS tool and actual helper/route hashes. It corrects the
+prepared-workflow and cached-receptor negative spies and the source-drift tests'
+stale pin literal. The strict template guard uses canonical `unspecified` for
+undeclared stereo, keeping every assigned R/S value exact. No fixture/population,
+feature/profile, query, geometry criterion or scoring definition is changed.
+
+The original full source run reports **998 passed / 11 failed / zero skipped**;
+JUnit includes additional unittest-subtest records. All original 22 baseline
+nodes pass. Corrective runs pass the complete receptor module (66), strict stereo
+guard (1) and six new real state/absence/component/extraction/copy/persistence
+controls. A separate [clean-candidate confirmation](evidence/chemical_domain_candidate_confirmation_20261102_summary.json)
+passes **73 controls, zero skips**, at exact 43a258c. This is a focused confirmation,
+not a claim that the four outstanding full-suite failures passed.
+
+**Provider gap:** complete EST/DES merge/extraction fails four exact typed-state
+preservation checks. The isolated public `CC.CC` repro changes component_name/type
+descriptors from `string` to `object`; the inspected values and atom identities
+are preserved. [MolSysMT #255 handoff](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577)
+asks for the intended typed contract or correction. Keep the four assertions;
+do not normalize these chemical payloads locally, xfail them or integrate a red
+controlled-source pair into main. #69 remains partial. Draft #70's earlier green
+22-case claim is bounded, and its earlier hosted failure is preserved separately.
+
+Source receiving uses Python 3.14.7, Pandas 2.3.3 and RDKit 2026.3.1 in an owned
+system-site venv, with exact editable provider installs and a newly built Rust
+extension. Actual module/Python/native/test bytes remain stable in the full run;
+distribution-metadata lookups differ after pytest and are explicitly retained.
+The strict runner flag remains false for that metadata distinction. This is not
+clean installed/public/platform qualification. Shared dependency conflicts remain
+MolSysSuite #82; canonical 67 administrative controls and declared-only route
+audit pass. Only owned Cargo build/cache directories were retired after quota
+exhaustion; native binary/source/logs remain. No sibling source is modified.
+
+**Next:** receive provider dtype disposition/correction, update the isolated
+candidate and rerun the four failed controls plus applicable unchanged guards.
+Then complete source CI and separately installed/public qualification before
+main integration or any new minimum/release claim. Keep the owned root
+`/tmp/phmt69-receiving-20261102-t6z6qujh/` for review on 2026-11-16, owners
+LMMV/dprada. Its editable PHMT link follows this checkout: select the identified
+candidate source before resuming tests in that venv. #66 original methods,
+#323 refinement and #375 geometry retain their separate limits. Addon and a new
+release remain deferred; public 0.4.0 is unchanged.
+
 ## Chemical-domain receiving prepared; current baselines pass — 2026-10-29
 
 New [#69 receiving contract](chemical_domain_receiving.md) prepares the

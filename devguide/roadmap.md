@@ -1,5 +1,22 @@
 # Strategic Roadmap
 
+## Resolve typed component preservation before integrating #69 — 2026-11-02
+
+Owner review is published in candidate **43a258c**, isolated from main. It receives
+the implemented de7ffad chemical-domain API, current controlled source pins,
+negative-spy corrections, real pin-mutation counterexamples and six new consumer
+domain controls. All 22 original baseline nodes pass; clean candidate confirmation
+passes 73 focused controls. The full original source run still identifies four
+typed-component preservation checks after the seven client corrections.
+
+Next obtain [MolSysMT #255's typed-column disposition/correction](https://github.com/uibcdf/molsysmt/issues/255#issuecomment-6596125577),
+receive it and rerun those unchanged assertions. Main's working source route is
+preserved; do not integrate a known-red pair or add a local chemical normalizer.
+Complete source/installed/public qualification separately. The
+[checkpoint](checkpoint.md) links the exact candidate, full failures, corrections
+and source/environment limits. No new dataset, scientific profile, package floor,
+addon work or release is authorized by source receiving.
+
 ## Prepare and receive the chemical-domain cutover — 2026-10-29
 
 [#69's receiving contract](chemical_domain_receiving.md) inventories the one direct
