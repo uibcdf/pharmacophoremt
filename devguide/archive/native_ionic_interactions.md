@@ -1,9 +1,9 @@
 ---
 summary: Construct native charge queries from ionic observations through shared feature tools.
 issue: uibcdf/pharmacophoremt#33
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-11-03
 verification: measured
 area: [modeling, interactions]
 guard: tests/test_ionic_interactions.py
@@ -13,6 +13,48 @@ supersedes: []
 ---
 
 # Native ionic observation queries
+
+## Resolution — 2026-11-03
+
+Reviewed and incorporated as an ionic source/API workflow. Clean producer
+16614ae7cc0f32544badea0b6de6770e1a64edce passes all **45 focused controls**,
+zero failures/errors/skips, in 19.88 s: 24 ionic, 14 pose and seven reference-
+ligand controls. Existing hydrophobic/H-bond behavior remains protected. Both
+original driver profiles pass six queries/18 evaluations each over atomic,
+carboxylate and guanidinium inputs in both ligand roles. Reference/round-trip
+positives have fit one and displacements fit zero. All three cookbook blocks
+execute and strict isolated recipe rendering passes without neighbor stubs.
+
+The unchanged original expectations retain whole charge membership, provider
+geometry, repeated-contact aggregation, state/frame/source mappings, unit-aware
+persistence, exclusions and genuine optional-attribution absence/failure/readers.
+Science agrees with tracking off/on; input coordinates and producers remain
+unchanged. Enabled capture has nine items/18 uses; host-disabled capture retains
+one reached provider item/use. No unrelated ionic method article is invented.
+The [new receipt](../evidence/ionic_acceptance_20261103_summary.json) retains full
+outputs, commands/logs/XML, actual credit and exact before/after identities.
+Physical source/native/helper/test/input and distribution metadata are stable
+in all three phases. This does not resolve the separate #32/#82 metadata-lookup
+finding in observed H-preparation workflows.
+
+No runtime, test, fixture, expectation, provider, prefix or sibling changes are
+needed. Ordinary editable PHMT 0.4.0+56.g9387852 and controlled MolSysMT 0faf1584/
+native remain unchanged. Original October records and their limits below remain
+historical. Source acceptance does not qualify clean installed/public/platform,
+biological or performance gates (#23/#10/#9 and inherited workspace #82).
+
+A separate ownership finding is handed to #41: the reachable H-bond branch in
+from_interactions still computes donor/H displacement directly from molecular
+coordinates. Ionic recognition and centers delegate correctly. The earlier broad
+modern-source delegation claim covered get_features, not this other caller.
+Next migrate this existing caller to public MolSysMT vectors before #34 acceptance,
+retaining its scientific profile, ordered participants and failure behavior.
+Owners LMMV/dprada, review 2026-11-11; no new local kernel is authorized. Future
+public-minimum retirement and ideal acceptor models remain separate.
+
+Owned root /tmp/phmt33-acceptance-20261103-rk5qeyp_/, LMMV/dprada, review 2026-11-17.
+No local process remains. #66's four original methods and addon/release deferrals
+remain unchanged. This closes #33's ionic contract, not the separate #41 finding.
 
 ## What
 

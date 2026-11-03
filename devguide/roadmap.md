@@ -1,5 +1,31 @@
 # Strategic Roadmap
 
+## Ionic queries accepted; finish the remaining vector caller before aromatic review — 2026-11-03
+
+#33 is resolved: 45 focused controls (24 ionic plus pose/reference regressions),
+six queries/18 evaluations in each original tracking profile, three cookbook
+blocks and strict isolated recipe rendering pass on clean source 16614ae7.
+The [receipt](evidence/ionic_acceptance_20261103_summary.json) retains source/unit/
+state maps, provider compound geometry, repeated contacts, original expectations,
+negative poses, persistence and actual credit. Full physical and metadata
+identities are stable in each phase. No runtime/test/input/provider changes.
+
+The architecture review finds another existing donor-vector caller under #41:
+from_interactions' H-bond branch still subtracts molecular donor/H coordinates.
+Previous modern-vector receiving qualified get_features, not every caller.
+**Next migrate this branch to existing public MolSysMT vectors**, preserving the
+observed profile, ordered participants, frames and failure behavior; reuse bounded
+validation and retain historical compatibility only for genuine capability absence.
+Owner LMMV/dprada, review 2026-11-11. This source work can proceed now; public floor/
+legacy retirement and ideal acceptor models remain separate. Then accept #34's
+already implemented aromatic mappings against their independent contract.
+
+#60 native-copy receiving remains available for a concrete consumer; #66 needs
+the four original binding methods. Hosted gates stay #9, clean installed/public
+qualification #23/#10 and inherited workspace findings #82. Prior #32 metadata
+mismatches remain unresolved, not relabeled by this stable ionic run. #323/#447
+retain provider ownership. Addon/new release remain deferred. See [checkpoint](checkpoint.md).
+
 ## Exclusion-sphere acceptance complete; ionic and aromatic queries next — 2026-11-03
 
 #32 is resolved after all 26 owning controls, both original observed-driver

@@ -7,6 +7,20 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Ionic query source/API acceptance — 2026-11-03
+
+The [new summary](ionic_acceptance_20261103_summary.json) and checksum-qualified
+archive record #33 at clean source 16614ae7: 45 controls (24 ionic plus pose/
+reference regressions), six queries/18 evaluations in each original tracking
+profile, three cookbook blocks and strict isolated recipe rendering without
+neighbor stubs. All physical/metadata identities are stable; prior #32 lookup
+mismatches retain their original scope. Original expectations, source coordinates,
+provider charge geometry, source/state/unit maps and actual attribution remain
+intact. The receipt also freezes a separate #41 ownership finding: direct donor/H
+coordinate subtraction in from_interactions' H-bond branch, to migrate next using
+existing provider vectors. Original archives remain unchanged. Clean installed/
+public/platform, biological and performance qualification remain separate.
+
 ## Exclusion construction source/API acceptance — 2026-11-03
 
 The [new summary](exclusion_acceptance_20261103_summary.json) and checksum-qualified

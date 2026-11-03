@@ -127,3 +127,32 @@ six selected queries/18 pose controls per profile, identical tracking-independen
 science and nine items/18 uses when host tracking is enabled. All ten original
 archives verify. Review, immutable providers, hosted-matrix and distribution
 qualification remain separate from this local evidence.
+
+## Current source/API acceptance — 2026-11-03
+
+#33 is resolved with its [archived report](archive/native_ionic_interactions.md).
+Clean producer 16614ae7cc0f32544badea0b6de6770e1a64edce passes 45 controls,
+zero failures/errors/skips: all 24 ionic controls plus 14 pose/seven reference
+controls retaining existing hydrophobic/H-bond behavior. Both original profiles
+pass six queries and 18 pose evaluations each, with unchanged source coordinates,
+expected compound geometry, repeated contacts, unit/state/source maps and native
+persistence. Three cookbook blocks execute; strict isolated recipe rendering
+passes without neighbor stubs. No runtime/test/input/expectation changes are needed.
+
+The [new receipt](evidence/ionic_acceptance_20261103_summary.json) preserves full
+output, original commands/log/XML and actual enabled nine-item/18-use and disabled
+one-item/one-use capture. Scientific projections agree with tracking off/on.
+Physical source/native/helper/test/input and distribution metadata remain equal
+in all three phases, on the unchanged owned #69 venv/providers. Earlier observed
+H-preparation metadata differences under #32/#82 remain separate and unresolved.
+This does not qualify clean installed/public/platform, biological, performance
+or exact-head hosted gates (#23/#10/#9). October originals remain unchanged.
+
+The ownership review finds a separate existing H-bond caller in from_interactions
+still subtracting molecular donor/H coordinates. #41 now owns that migration to
+already available public MolSysMT vectors, preserving the observed profile and
+participant axes; the ionic branch already delegates correctly. Next perform
+that bounded source migration, then review #34's aromatic acceptance independently.
+Public-minimum retirement and ideal acceptor models remain separate. The old
+statement that aromatic mappings are future implementation is historical: current
+source already implements them; their independent acceptance is still #34.

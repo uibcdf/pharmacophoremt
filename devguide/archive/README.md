@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (41)
+### Resolved (42)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -23,6 +23,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*
+- [`native_ionic_interactions.md`](native_ionic_interactions.md) — [#33](https://github.com/uibcdf/pharmacophoremt/issues/33) — Construct native charge queries from ionic observations through shared feature tools. *(resolved, measured)*
 - [`native_retrospective_result_summaries.md`](native_retrospective_result_summaries.md) — [#65](https://github.com/uibcdf/pharmacophoremt/issues/65) — Reuse saved native evaluations with original-cohort and unscored-input accounting. *(resolved, measured)*
 - [`native_structure_modeler_transition.md`](native_structure_modeler_transition.md) — [#44](https://github.com/uibcdf/pharmacophoremt/issues/44) — Replace the structure modeler's molecular heuristics with explicit cached receptor projections. *(resolved, measured)*
 - [`native_virtual_screening_transition.md`](native_virtual_screening_transition.md) — [#45](https://github.com/uibcdf/pharmacophoremt/issues/45) — Replace implicit legacy screening and validation preparation with explicit prepared-native tools. *(resolved, measured)*

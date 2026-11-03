@@ -1,5 +1,40 @@
 # Development Checkpoint
 
+## Ionic acceptance complete; remaining donor-vector caller next — 2026-11-03
+
+#33 is resolved with its [archived report](archive/native_ionic_interactions.md)
+and [new receipt](evidence/ionic_acceptance_20261103_summary.json). Clean producer
+**16614ae7cc0f32544badea0b6de6770e1a64edce** passes **45 focused controls**, zero
+failures/errors/skips, in 19.88 s (24 ionic, 14 pose, seven reference). Both
+original driver profiles pass six queries/18 evaluations each. Three cookbook
+blocks and strict isolated recipe rendering pass without neighbor stubs. Whole
+charge membership, provider centroids, repeated contacts, state/source/unit maps,
+negative poses and native persistence retain original expectations. Actual credit
+is nine items/18 uses enabled and one provider item/use host-disabled. Physical
+and metadata identities are equal in all three phases. Earlier #32/#82 metadata
+lookup differences remain their original unresolved observations.
+
+**Next implementation: #41's newly identified H-bond donor-vector caller.** The
+ionic audit finds direct coordinate subtraction in from_interactions' H-bond
+branch. get_features delegates vectors correctly, but that prior gate did not
+cover every molecular caller. Migrate this existing branch to already available
+public MolSysMT vectors with shared bounded validation and unchanged observed
+profile/ordered participant/frame semantics. Do not swap chemistry definitions
+or fallback after available-provider failure. Owners LMMV/dprada, review
+2026-11-11; current H-bond pose regressions are interim functional controls.
+This source migration can proceed now; public-minimum/old-public retirement and
+ideal acceptor models remain separate. Then accept #34 aromatic queries.
+
+No runtime/test/input/provider/prefix/sibling changes are needed for #33. The
+owned #69 venv remains ordinary editable PHMT 0.4.0+56.g9387852 with controlled
+MolSysMT 0faf1584/providers/native unchanged. Owned root
+/tmp/phmt33-acceptance-20261103-rk5qeyp_/, LMMV/dprada, review 2026-11-17.
+No local process remains. Original archives remain unchanged; the old full-suite
+baseline is not a new complete run. #9 hosted, #23/#10 clean installed/public/
+platform and #82 inherited workspace gates remain separate. #60 is available for
+an actual independent-variant consumer, #66 awaits four original methods, and
+addon/new release remain deferred. No biological/performance qualification follows.
+
 ## Exclusion construction accepted; ionic query review next — 2026-11-03
 
 #32 is resolved with its [archived report](archive/public_excluded_volume_sites.md)

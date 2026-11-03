@@ -14,6 +14,32 @@ supersedes: []
 
 # Molecular ownership audit and bounded legacy retirement
 
+## Additional caller found — 2026-11-03, ionic acceptance audit
+
+The #33 review at clean source 16614ae7cc0f32544badea0b6de6770e1a64edce finds
+another reachable donor-vector caller: the H-bond branch in
+pharmacophoremt/modeler/interaction_based.py subtracts donor/H coordinates before
+SphereAndVector construction. The [inspection receipt](../evidence/ionic_acceptance_20261103_summary.json)
+retains its exact source hash/statement. Ionic charge recognition and centroids
+already delegate correctly. Earlier modern-vector receiving covered get_features;
+it did not establish complete delegation in every molecular caller. This corrects
+that broader interpretation without rewriting its successful source evidence.
+
+**Next local implementation:** migrate this caller to existing public MolSysMT
+structure.get_vectors, reuse bounded output validation, preserve the original
+observed H-bond profile/ordered participants and propagate available-provider
+failures. Do not replace its chemistry with another recognition profile. Historical
+public compatibility may retain arithmetic only for genuine capability absence;
+public floor/exception retirement still needs separate delivery/installed receiving.
+This source migration can proceed now, before #34 acceptance, without waiting
+for a new provider API, release or ideal acceptor model.
+
+Existing arithmetic is interim historical duplication, not a new authorized
+kernel. Owners LMMV/dprada, review **2026-11-11**, removal from the modern caller
+on provider-mediated migration and final legacy removal after qualified public
+support migration. Interim H-bond pose regression passes in #33's 45-case
+selection; that does not establish architectural delegation. #41 stays partial.
+
 ## Progress — 2026-11-03, delivery and compatibility review
 
 The [current receiving review](../molsysmt_feature_receiving.md) passes all 165

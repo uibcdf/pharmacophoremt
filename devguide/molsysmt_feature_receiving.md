@@ -1,5 +1,23 @@
 # MolSysMT feature API receiving
 
+## Additional observed-interaction caller — 2026-11-03
+
+The #33 ownership review identifies direct donor/H coordinate subtraction in the
+reachable H-bond branch of from_interactions. The modern-provider gate below
+qualified get_features and its consumers; its success did not prove every caller
+was delegated. The [new inspection](evidence/ionic_acceptance_20261103_summary.json)
+retains source 16614ae7, file hash and exact statement. Ionic membership/centroids
+already use public provider tools. No runtime change is made by this review.
+
+Next under #41, use existing public structure.get_vectors for this caller while
+preserving its original observed H-bond profile, ordered participant/frame axes,
+zero-vector errors and provider failures. Reuse bounded output validation; do not
+introduce another molecular kernel or switch chemical definitions. Owner
+LMMV/dprada, review 2026-11-11; current H-bond pose regressions pass as interim
+controls. This source task can proceed before #34 with current provider tools.
+Removal of all historical-public arithmetic still requires separate supported
+public delivery/installed receiving. Ideal acceptor models retain their scope.
+
 ## Current review — 2026-11-03
 
 Clean consumer `37052f7bb7190046997ba96955d4dea154cf3a91` passes all **165**

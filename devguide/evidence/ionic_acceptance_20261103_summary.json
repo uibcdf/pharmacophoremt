@@ -1,0 +1,485 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+56.g9387852",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "documentation_scope": "Strict isolated unchanged ionic cookbook page; no neighbor stubs, full-site qualification separate.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "full_baseline": "96f917a: original 1020 source items, not execution of every later correction.",
+    "full_new_source_suite_reexecution": false,
+    "full_platform_matrix": false,
+    "helper_route": "Ordinary editable runtime resolved before checkout access for unshipped source helpers.",
+    "installed_wheel_qualification": false,
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_or_fixture_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Owned #69 system-site-packages venv, ordinary editable PHMT 0.4.0+56.g9387852 and controlled providers/native. No canonical-prefix/sibling mutation."
+  },
+  "consumer": {
+    "head": "16614ae7cc0f32544badea0b6de6770e1a64edce",
+    "status": ""
+  },
+  "executed_cookbook_blocks": 3,
+  "focused_pytest_items": 45,
+  "full_evidence": {
+    "compressed_bytes": 356705,
+    "compressed_sha256": "319070330769f886a9406d1051b84490358844276b2b3c49131964c63e442f24",
+    "path": "ionic_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 3054418,
+    "uncompressed_sha256": "2b92ac60a7a1f8d1e0e9b03b9d59d421b77a3dc8b307a1c5091f256f6d7c4564"
+  },
+  "full_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#33",
+  "junit": {
+    "per_module": {
+      "tests.test_ionic_interactions": 24,
+      "tests.test_pose_evaluation": 14,
+      "tests.test_reference_ligand": 7
+    },
+    "suites": [
+      {
+        "errors": "0",
+        "failures": "0",
+        "hostname": "spika",
+        "name": "pytest",
+        "skipped": "0",
+        "tests": "45",
+        "time": "19.879",
+        "timestamp": "2026-11-03T16:18:32.220299-06:00"
+      }
+    ],
+    "tests": 45
+  },
+  "measured_date": "2026-11-03",
+  "metadata_lookup_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "ownership_followup": {
+    "file": "pharmacophoremt/modeler/interaction_based.py",
+    "inspected_consumer": "16614ae7cc0f32544badea0b6de6770e1a64edce",
+    "interim_control": "Existing prepared-input H-bond pose regression passes in the 45-case selection; preserve scientific profile and ordered donor/H participant axes until migration. No new local kernel is authorized.",
+    "issue": "uibcdf/pharmacophoremt#41",
+    "line": 350,
+    "next_action": "Migrate this caller to existing public MolSysMT structure.get_vectors, reusing bounded provider-result validation and retaining historical-public compatibility only for genuine capability absence. Do not substitute a new chemical recognition profile or fallback after provider errors. This source adoption need not await future acceptor models or a new provider release. Public floor/legacy retirement receiving remains separate.",
+    "owner": [
+      "LMMV",
+      "dprada"
+    ],
+    "review": "2026-11-11",
+    "scope": "The ionic branch delegates membership/centroids correctly. The reachable hbond branch in from_interactions still subtracts source coordinates for donor/H directions, outside the modern get_features delegation previously reviewed. This qualifies the earlier broad source-delegation claim.",
+    "sha256": "3c0d89fe8c545d554a480056bc70eb7232da282d4e0d83c7d8c04122b3826e34",
+    "statement": "direction = coordinates[atoms[1]] - coordinates[atoms[0]]"
+  },
+  "owning_ionic_items": 24,
+  "physical_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "profiles": [
+    {
+      "actual_items": 1,
+      "actual_uses": 1,
+      "host_tracking": false,
+      "n_evaluations": 18,
+      "n_queries": 6,
+      "queries": [
+        {
+          "case": "atomic",
+          "features": [
+            "positive charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "first",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            0
+          ]
+        },
+        {
+          "case": "atomic",
+          "features": [
+            "negative charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "second",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            1
+          ]
+        },
+        {
+          "case": "carboxylate",
+          "features": [
+            "negative charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "first",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "case": "carboxylate",
+          "features": [
+            "positive charge",
+            "positive charge"
+          ],
+          "n_sites": 2,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "second",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            4,
+            5
+          ]
+        },
+        {
+          "case": "guanidinium",
+          "features": [
+            "positive charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "first",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "case": "guanidinium",
+          "features": [
+            "negative charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "second",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            4
+          ]
+        }
+      ],
+      "valid": true
+    },
+    {
+      "actual_items": 9,
+      "actual_uses": 18,
+      "host_tracking": true,
+      "n_evaluations": 18,
+      "n_queries": 6,
+      "queries": [
+        {
+          "case": "atomic",
+          "features": [
+            "positive charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "first",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            0
+          ]
+        },
+        {
+          "case": "atomic",
+          "features": [
+            "negative charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "second",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            1
+          ]
+        },
+        {
+          "case": "carboxylate",
+          "features": [
+            "negative charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "first",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "case": "carboxylate",
+          "features": [
+            "positive charge",
+            "positive charge"
+          ],
+          "n_sites": 2,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "second",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            4,
+            5
+          ]
+        },
+        {
+          "case": "guanidinium",
+          "features": [
+            "positive charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "first",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            0,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "case": "guanidinium",
+          "features": [
+            "negative charge"
+          ],
+          "n_sites": 1,
+          "outcomes": {
+            "displaced": {
+              "fit_value": 0.0,
+              "status": "not_matched"
+            },
+            "reference": {
+              "fit_value": 1.0,
+              "status": "matched"
+            },
+            "roundtrip": {
+              "fit_value": 1.0,
+              "status": "matched"
+            }
+          },
+          "role": "second",
+          "roundtrip_metadata_preserved": true,
+          "selection": [
+            4
+          ]
+        }
+      ],
+      "valid": true
+    }
+  ],
+  "schema": "pharmacophoremt.ionic_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_owned_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "consumer_base": "16614ae7cc0f32544badea0b6de6770e1a64edce",
+    "issue": "uibcdf/pharmacophoremt#33",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Ionic query independent source/API acceptance, pose regressions, driver and cookbook",
+    "review": "2026-11-17",
+    "scope": "Controlled source providers/system-site-packages; no clean installed/public closure; no shared-prefix or sibling mutation."
+  },
+  "tracking_independent_science": true
+}
