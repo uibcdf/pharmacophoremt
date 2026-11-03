@@ -1,9 +1,9 @@
 ---
 summary: Validate joint native interaction hypotheses with complete prepared CCD chemical components.
 issue: uibcdf/pharmacophoremt#37
-status: active
+status: resolved
 opened: 2026-10-04
-closed:
+closed: 2026-11-03
 verification: measured
 area: [validation, interactions]
 guard: tests/test_ccd_interactions.py
@@ -13,6 +13,42 @@ supersedes: []
 ---
 
 # Real chemical components in controlled interaction workflows
+
+## Source/API acceptance resolved — 2026-11-03
+
+All 30 original CCD guards pass within the one 219-case coupled source selection
+at clean producer **9387852af67a17f59e48d14fc78260ffc4320650**, receiving #36's cached
+provenance correction. This is not a separate standalone 30-case execution. No
+additional runtime/test changes or molecular implementation were needed for #37.
+The [new receipt](../evidence/ccd_interaction_acceptance_20261103_summary.json)
+retains the unchanged coupled run and fresh complete driver/cookbook evidence.
+
+The driver passes both host-tracking profiles with eight primary role hypotheses
+and 48 pose evaluations each. All four EST/DES/placement cases retain original
+chemistry, explicit H, source atom/bond identities, coordinates and file bytes,
+neutral covered-empty charge families, profile reuse and independent essential/
+steric semantics. DES ring-offset still has one exclusion clash in either role
+despite positive fit one. Donor-H negatives and the unchanged partner control,
+fresh common-frame detection and nondefault-unit persistence all pass. Scientific
+projections agree across tracking; actual captures retain 9 items/28 uses off and
+17 items/57 uses on. All three existing cookbook blocks execute and the isolated
+strict page build passes with adjacent link-target stubs.
+
+Full code/native/helper/test/input and metadata identities are stable in the
+current workflow/cookbook and original coupled-test phases. This uses ordinary
+editable PHMT `0.4.0+56.g9387852` with controlled MolSysMT 0faf1584, Viewer ca7ebea6,
+DepDigest 13cc7378 and unchanged native bytes in the owned #69 venv. The earlier
+anonymous provider snapshot and failed live-source stability audits remain their
+original historical evidence, not descriptions of this current source route.
+No canonical-prefix/sibling mutation or new provider minimum is introduced.
+
+The durable guard is `tests/test_ccd_interactions.py`, with the maintained
+[workflow](../ccd_interaction_workflow.md). Original October source/data/results
+remain unchanged. The full 1,020-item baseline at 96f917a does not execute #36's
+new correction; current receiving is the 219-case selection plus the complete
+recorded driver/examples. Exact-head hosted CI remains #9; clean installed/public/
+Conda/platform gates stay #23/#10 and shared conflicts #82. Designed CCD pairs
+are not observed biological complexes, pH choices or performance benchmarks.
 
 ## What
 

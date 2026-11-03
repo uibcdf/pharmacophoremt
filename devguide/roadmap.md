@@ -1,5 +1,32 @@
 # Strategic Roadmap
 
+## Composition and full-CCD source/API acceptance complete — 2026-11-03
+
+#36 and #37 now join #38/#17/#29 as reviewed source/API slices. The corrected
+cached map/state guard and all 219 coupled controls pass, including 41 composition
+and 30 CCD cases. Both original drivers retain their expected scientific results
+with tracking off/on, unchanged inputs and actual attribution; all six cookbook
+blocks pass. [Composition evidence](evidence/composition_acceptance_20261103_summary.json)
+and [CCD evidence](evidence/ccd_interaction_acceptance_20261103_summary.json)
+retain exact source/native/input identities and original before/after failures.
+
+The next bounded architecture task is #41's compatibility review by 2026-11-11:
+verify supported public generic-vector delivery/receiving before removing the old-
+public arithmetic exception or raising a floor. Current source already uses the
+provider tool; general molecular geometry remains in MolSysMT, with ideal acceptor
+models separate. In parallel #60 can qualify explicit molecular variants against
+the already delivered #121 copy contract when needed, preserving intentional model
+references. Reconcile adjacent native preparation/interaction/consensus issues
+only against their own contracts; do not close them from the aggregate test count.
+
+#66's four original binding methods remain the independent scientific access gate.
+Preserve the fixed study and all earlier exposure; no new lead or cohort is
+inferred from these analytical controls. #323 environmental H, #375 directions/
+delivery and #447 molecular identity/scaffolds retain separate provider ownership.
+Exact-head CI stays #9; clean installed/public qualification #23/#10. The prior
+1,020-item run belongs to its original producer and is not relabeled as execution
+of the new correction. Addon/new release remain deferred. See [checkpoint](checkpoint.md).
+
 ## Rigid-refinement accepted; next consolidate complete interaction workflows — 2026-11-03
 
 #38 curation, #17 prepared-frame screening and now #29 supplied-seed rigid

@@ -136,3 +136,25 @@ control and one legacy unit warning. The editable installation in
 reporting indexes, three offline reporting tests, whitespace checks and all
 twelve original archive hashes pass. This is local source evidence, not a
 published-wheel or hosted-matrix qualification.
+
+
+## Current source/API acceptance — 2026-11-03
+
+#36 is resolved with its [archived report](archive/native_interaction_composition.md).
+Clean source 9387852af67a17f59e48d14fc78260ffc4320650 passes 219 coupled tests,
+including 41 composition cases and nine new cached-map/state controls. Eight
+counterexamples fail before the correction; all nine new controls pass after it.
+Both original tracking profiles retain nine expected evaluation outcomes, 23
+observations and nine unit-weight constraints after reuse. All three cookbook
+blocks execute; full code/native/helper/test/input and metadata identities stay
+unchanged in every current phase. The [new receipt](evidence/composition_acceptance_20261103_summary.json)
+retains original tests, models, observations, credits, commands and identities.
+
+The correction checks PHMT cached evidence without molecular access. The old
+1,020-test run at 96f917a remains a separate baseline; no complete new-source suite
+rerun is claimed. Ordinary editable PHMT is refreshed only in the owned #69 venv;
+providers/native bytes, canonical prefix and sibling worktrees are unchanged.
+Shared conflicts remain #82 and clean installed/public/platform qualification
+#23/#10. Exact final-head hosted receiving stays #9. The isolated strict cookbook
+page has an adjacent link-target stub and is not a full-site gate. Original
+October measurements and their source/qualification limits above are preserved.

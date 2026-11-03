@@ -146,3 +146,26 @@ accuracy, pH/state selection, conformer energy, runtime/memory rankings or
 published dependency qualification. Protein receptor preparation remains with
 [MolSysMT #298](https://github.com/uibcdf/molsysmt/issues/298), observed OPEN on
 2026-10-04; the observed ERalpha interaction gate is still separate.
+
+
+## Current source/API acceptance — 2026-11-03
+
+#37 is resolved with its [archived report](archive/ccd_interaction_composition.md).
+At clean source 9387852af67a17f59e48d14fc78260ffc4320650, all 30 CCD guards pass
+inside #36's one 219-case coupled run. The original driver passes eight primary
+role hypotheses and 48 pose evaluations per tracking profile, with identical
+scientific projections, unchanged complete input chemistry/axes/coordinates/file
+bytes and actual credits. EST retains 10/11 sites and DES 16/18 by placement;
+the DES ring-offset steric veto in both roles remains an expected result.
+All three existing cookbook blocks execute. The [new receipt](evidence/ccd_interaction_acceptance_20261103_summary.json)
+retains full observations, models, evaluations, source/native identities and the
+original coupled test record; no standalone 30-case rerun is implied.
+
+Full code/native/helper/test/input and metadata identities remain unchanged in
+all current phases, using ordinary editable PHMT 0.4.0+56.g9387852 and controlled
+source providers in the owned #69 venv. No anonymous provider import override or
+additional runtime/test change is needed. Original October snapshot/live-drift
+records above remain historical. The strict isolated page render has adjacent
+link-target stubs; it is not full-site qualification. No complete new-source
+suite rerun, clean installed/public/Conda/platform, biological or performance gate
+is inferred. Shared conflicts remain #82, final-head CI #9, and delivery #23/#10.

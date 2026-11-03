@@ -1,5 +1,52 @@
 # Development Checkpoint
 
+## Composition and complete-CCD source/API acceptance complete — 2026-11-03
+
+#36 and #37 are resolved with their [composition](archive/native_interaction_composition.md)
+and [CCD](archive/ccd_interaction_composition.md) reports archived. Clean producer
+9387852af67a17f59e48d14fc78260ffc4320650 passes 219 coupled source controls,
+zero failures/errors/skips, including 41 composition and all 30 CCD cases. The
+cached provenance fix rejects inconsistent geometry/source maps and optional site
+states before reuse. Eight counterexamples fail before the fix; all nine new
+controls pass after it, preserving valid reordered/nonidentity maps and inputs.
+No molecular algorithm, detector/profile, geometry, weight or essential semantics
+change. #37 needs no additional code or fixtures.
+
+The [composition receipt](evidence/composition_acceptance_20261103_summary.json)
+retains two profiles/nine evaluations each, 23 original observations, nine reused
+versus eleven kept constraints and actual credits. The [CCD receipt](evidence/ccd_interaction_acceptance_20261103_summary.json)
+retains eight role hypotheses/48 evaluations per profile, unchanged complete EST/
+DES chemistry, atom/bond/source axes, coordinates and file bytes, empty charge
+families, directional controls, rigid covariance and the DES steric veto. Six
+cookbook blocks and both strict isolated page builds pass; adjacent link-target
+stubs bound those rendering checks. Full code/native/helper/test/input and metadata
+identities stay equal in every current phase. Historical original archives remain
+unchanged. The 1,020-item full run at 96f917a is a baseline, not execution of the
+new correction; no complete new-source suite rerun is claimed.
+
+**Next:** review #41's bounded old-public donor-geometry exception by 2026-11-11.
+Check actual supported public vector delivery and source/installed/public receiving
+before choosing its retirement/floor migration. Current source already delegates
+to MolSysMT; ideal acceptor geometry is a separate #375 scientific contract.
+#60 can receive the delivered #121 copy contract when a workflow needs independent
+molecular variants; keep model references explicit and do not add a local copy
+engine. Other already implemented native slices (#30/#32/#33/#34 and consensus)
+retain their own independent acceptance review; aggregate passes do not close
+them automatically. #66 still needs the four original binding methods via a new
+authorized lead. No study-rule changes or repeated exhausted searches. #323/#375/
+#447 keep their provider scopes. Addon/new release remain deferred.
+
+Owned roots: `/tmp/phmt36-acceptance-20261103-1lir6w0a/` and
+`/tmp/phmt37-acceptance-20261103-a5qoieik/`, owners LMMV/dprada, review 2026-11-17.
+The shared owned #69 venv now imports ordinary editable PHMT
+`0.4.0+56.g9387852` after its normal isolated-build refresh. Controlled MolSysMT
+0faf1584/Viewer ca7ebea6/DepDigest 13cc7378 and native bytes stay unchanged;
+canonical prefix and sibling trees are untouched. Old installed-wheel and earlier
+source receipts remain historical. Shared pip conflicts stay #82; source-free
+installed/public/Conda/platform qualification remains #23/#10 and exact final-head
+CI/recovery #9. These source controls are not biological/performance acceptance.
+No local background job is needed after this closeout.
+
 ## Composition acceptance: cached provenance correction in progress — 2026-11-03
 
 #36 review reproduced participant reuse with a geometry/source map disagreement

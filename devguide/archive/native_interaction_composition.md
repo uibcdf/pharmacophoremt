@@ -1,9 +1,9 @@
 ---
 summary: Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse.
 issue: uibcdf/pharmacophoremt#36
-status: active
+status: resolved
 opened: 2026-10-04
-closed:
+closed: 2026-11-03
 verification: measured
 area: [modeling, interactions]
 guard: tests/test_interaction_composition.py
@@ -13,6 +13,41 @@ supersedes: []
 ---
 
 # Public hypothesis and interaction-collection composition
+
+## Source/API acceptance resolved — 2026-11-03
+
+Clean producer **9387852af67a17f59e48d14fc78260ffc4320650** passes 219 coupled source
+controls, zero failures/errors/skips, including all 41 composition cases. Nine new
+controls preserve eight pre-fix failures and nine post-fix passes: contradictory,
+incomplete, repeated, boolean or out-of-range geometry declarations and conflicting
+site states are rejected; reordered geometry under nonidentity source maps stays
+valid. Cached inputs and intentional molecular references are unchanged. Generic
+keep preserves independent evidence without asserting native participant identity.
+
+The [new receipt](../evidence/composition_acceptance_20261103_summary.json) retains
+full tests, original reproduction, source/native/input identities, runners, models,
+observations, actual credits and before/after regressions. Both existing driver
+profiles pass nine evaluations each: seven analyses/23 observations, nine reused
+sites versus eleven kept constraints, displacement/donor negatives and independent
+steric veto. Scientific projections agree across tracking; actual captures retain
+5 items/21 uses off and 13 items/50 uses on. Three cookbook blocks and strict
+isolated page rendering pass; the page has an adjacent link-target stub and does
+not qualify full-site rendering/navigation.
+
+Full code/native/helper/test/input and distribution-metadata identities remain
+equal before/after all three current phases. The correction validates PHMT cached
+provenance only: no molecular operation, detector/profile, state interpretation,
+geometry definition, provider pin or dependency floor changes. The prior full
+1,020-item run belongs to 96f917a and is retained as a baseline, not execution of
+this new correction. Current exact-head hosted receiving stays #9; clean installed/
+public/Conda/platform qualification stays #23/#10, with shared #82 conflicts.
+
+The durable guard is `tests/test_interaction_composition.py`; the maintained
+[workflow](../interaction_composition_workflow.md) specifies the strict native
+mapping/state boundary and generic keep distinction. Historical October claims
+and original archives below are unchanged. This closes cached-composition source/
+API acceptance, not biological or performance qualification. #37 receives this
+same correction with complete CCD inputs, separately recorded.
 
 ## What
 
