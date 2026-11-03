@@ -7,6 +7,26 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Aligned-clique source/API acceptance — 2026-11-03
+
+The [new summary](aligned_clique_acceptance_20261103_summary.json) and checksum-
+qualified original archive record #24 at clean receiving head 17fb209. Sixty fresh
+controls pass (25 clique, 17 aligned-consensus, 18 contracts/serialization), including
+independent subset oracles, whole-package support, occurrence conflicts, typed
+orientations, bounds and actual optional attribution/readers. Fresh off/on capsules
+pass absent-first-ligand discovery, two overlapping alternatives, three jointly
+supported two-site packages, complete-empty discovery and all three failed budgets.
+Three models pass six JSON/YAML round trips and 29 pose evaluations per profile;
+source domains and full identities remain unchanged. Science agrees off/on with
+actual credit 3 items/6 uses off and 15/37 on. Three original cookbook blocks pass
+(12/30 actual credit), as does strict isolated rendering with one link-target stub.
+Initial script-only cross-policy byte-hash failures and the independent rounding
+diagnostic remain preserved; final same-policy and default before/after comparisons
+pass without library/test/input/tolerance/provider changes. All molecular operations
+use MolSysMT. No new full-suite, clean installed/public/platform, biological or
+performance qualification is claimed; original October and #32/#82 records retain
+their identities and scopes.
+
 ## Aligned-reference source/API acceptance — 2026-11-03
 
 The [new summary](aligned_reference_acceptance_20261103_summary.json) and

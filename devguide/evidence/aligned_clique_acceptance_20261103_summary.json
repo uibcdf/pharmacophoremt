@@ -1,0 +1,274 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "attribution_scope": "Five fixed molecular sources constructed once through public MolSysMT outside capture; captures cover pharmacophoric discovery, package support, model evaluation and persistence.",
+    "biological_validation": false,
+    "chemical_identity": "Declared ligand IDs in fixed analytical fixtures, not chemical uniqueness or biological validation.",
+    "clean_dependency_closure": false,
+    "completeness": "All maximal feasible disjoint packages within the discovered maximal-site-clique family at declared budgets; not all subcliques, chemical patterns or continuous alignments.",
+    "documentation_scope": "Strict isolated unchanged aligned-cliques cookbook page with one attribution neighbor link-target stub; not full-site/neighboring-recipe qualification.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_fallback": "PHMT #41 remains partial: supported public/floor/installed receiving and final legacy retirement, review 2026-11-11.",
+    "initial_capsule": "Initial and diagnostic attempts fail cross-unit-policy byte fingerprints. Independent no-model diagnostic reproduces rounding; final runner compares same-policy fingerprints plus exact default-policy before/after. No production/test/input/tolerance change.",
+    "installed_wheel_qualification": false,
+    "new_pytest_execution": true,
+    "ownership": "MolSysMT supplies all molecular conversion, translation, selection, inspection, chemical recognition and geometry/state. PHMT owns cached pharmacophoric occurrence compatibility, site aggregation and joint-support packaging. NetworkX supplies generic maximal-clique enumeration.",
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_scientific_definition_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b; controlled providers/native unchanged, no sibling or prefix mutation."
+  },
+  "consumer": {
+    "head": "17fb209ed38924af1ea9dc5b5ceb359bfb4b51bc",
+    "status": ""
+  },
+  "cookbook_actual_attribution": {
+    "items": 12,
+    "uses": 30
+  },
+  "executed_cookbook_blocks": 3,
+  "execution_attempts": {
+    "correction": "Compare both molecular-domain fingerprints within the same pm policy, additionally compare default policy before/after entire workflow. No library/provider/test/input/threshold change.",
+    "diagnosis": {
+      "calculation_executed": false,
+      "default_repeat_equal": true,
+      "max_observed_context_delta_nm": 5.551115123125783e-17,
+      "output": "fingerprint_diagnostic.json",
+      "script": "diagnose_fingerprint.py"
+    },
+    "diagnostic_capsule": {
+      "exit_code": 1,
+      "qualified": false,
+      "retained": [
+        "run_workflow_diagnostic.py",
+        "workflow_diagnostic.log",
+        "workflow_diagnostic_before.json",
+        "workflow_attempt_fingerprints_False.json",
+        "diagnostic_outputs/"
+      ]
+    },
+    "initial_capsule": {
+      "exit_code": 1,
+      "qualified": false,
+      "reason": "Fingerprint compared default-context baseline against pm-context final coordinates; byte hash differs from unit-conversion rounding.",
+      "retained": [
+        "run_workflow_initial.py",
+        "workflow_initial_before.json",
+        "workflow_initial.log"
+      ]
+    }
+  },
+  "focused_tests": {
+    "actual_pytest_items": 60,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt24-acceptance-20261103-vw26hupl/pytest-temp",
+      "--junitxml=/tmp/phmt24-acceptance-20261103-vw26hupl/focused.xml",
+      "tests/test_aligned_cliques.py",
+      "tests/test_aligned_consensus.py",
+      "tests/test_contracts.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_aligned_cliques": 25,
+      "tests.test_aligned_consensus": 17,
+      "tests.test_contracts": 18
+    },
+    "seconds": 16.54,
+    "skips": 0
+  },
+  "fresh_workflow_profiles": [
+    {
+      "actual_items": 3,
+      "actual_uses": 6,
+      "alternative_models": 2,
+      "base_support_fraction": 0.6666666666666666,
+      "budget_failures": [
+        {
+          "code": "PHMT-E107",
+          "extra": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 2,
+            "resource": "nodes",
+            "stage": "feature_graph"
+          },
+          "query_returned": false
+        },
+        {
+          "code": "PHMT-E107",
+          "extra": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 2,
+            "resource": "maximal cliques",
+            "stage": "feature_cliques"
+          },
+          "query_returned": false
+        },
+        {
+          "code": "PHMT-E107",
+          "extra": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 2,
+            "observed": 3,
+            "resource": "candidate extensions",
+            "stage": "hypothesis_combinations"
+          },
+          "query_returned": false
+        }
+      ],
+      "completed_empty_molecular": true,
+      "host_tracking": false,
+      "matched": 18,
+      "n_joint_two_site_packages": 3,
+      "n_models": 3,
+      "no_three_site_package": true,
+      "not_matched": 11,
+      "pose_evaluations": 29,
+      "round_trips": 6,
+      "source_domains_unchanged_in_both_unit_policies": true
+    },
+    {
+      "actual_items": 15,
+      "actual_uses": 37,
+      "alternative_models": 2,
+      "base_support_fraction": 0.6666666666666666,
+      "budget_failures": [
+        {
+          "code": "PHMT-E107",
+          "extra": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 2,
+            "resource": "nodes",
+            "stage": "feature_graph"
+          },
+          "query_returned": false
+        },
+        {
+          "code": "PHMT-E107",
+          "extra": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 2,
+            "resource": "maximal cliques",
+            "stage": "feature_cliques"
+          },
+          "query_returned": false
+        },
+        {
+          "code": "PHMT-E107",
+          "extra": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 2,
+            "observed": 3,
+            "resource": "candidate extensions",
+            "stage": "hypothesis_combinations"
+          },
+          "query_returned": false
+        }
+      ],
+      "completed_empty_molecular": true,
+      "host_tracking": true,
+      "matched": 18,
+      "n_joint_two_site_packages": 3,
+      "n_models": 3,
+      "no_three_site_package": true,
+      "not_matched": 11,
+      "pose_evaluations": 29,
+      "round_trips": 6,
+      "source_domains_unchanged_in_both_unit_policies": true
+    }
+  ],
+  "full_evidence": {
+    "compressed_bytes": 1367021,
+    "compressed_sha256": "0081fbc78fc25d72616123b7b8ff91ebfd4ea07ec188691d8fe6afa0681183fd",
+    "path": "aligned_clique_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 15253929,
+    "uncompressed_sha256": "83b2efcccaabb5636c3bf5412c0fbedb0ed878ebc9f1996915a25af39f5d36c2"
+  },
+  "full_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#24",
+  "measured_date": "2026-11-03",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "schema": "pharmacophoremt.aligned_clique_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#24",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Bounded aligned-clique source/API acceptance; preserve original evidence and active borrowed prefix",
+    "review_date": "2026-11-17"
+  }
+}

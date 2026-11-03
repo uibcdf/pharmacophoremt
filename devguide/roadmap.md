@@ -1,5 +1,29 @@
 # Strategic Roadmap
 
+## Aligned clique source/API acceptance complete; next rigid consensus — 2026-11-03
+
+#24 is resolved. The [receipt](evidence/aligned_clique_acceptance_20261103_summary.json)
+records 60 fresh focused controls at clean 17fb209 (25 clique, 17 aligned, 18
+contracts), zero failures/errors/skips. Independent clique/package oracles and
+fresh off/on capsules retain absent-first-ligand discovery, ambiguous alternatives,
+whole-package support, completed-empty versus failed budgets, six JSON/YAML round
+trips and 29 pose evaluations per profile. Source domains and full identities remain
+stable. Three cookbook blocks and strict isolated rendering pass. Initial script-only
+cross-policy hash failures are retained and diagnosed; no runtime/test/provider
+change or new full-suite claim follows. Molecular operations remain MolSysMT-owned.
+
+Next accept **#26 prepared rigid unaligned consensus**: review both correspondence
+families, provider-owned proper fits/molecular transforms, post-fit validation,
+alternative placements, support including unplaced sources, bounds, persistence,
+actual attribution and cookbook. Its explicit pivot and finite proposal families
+remain distinct from continuous/global alignment. #24's maximal-site-clique family
+is not all chemical patterns or a biological/performance claim.
+
+#41 public/floor/installed migration and final legacy retirement stay partial,
+review 2026-11-11. #60 concrete-copy receiving and #66's four original binding methods
+retain their scopes. Hosted #9, installed/public/platform #23/#10 and workspace #82
+remain separate; addon/new release stay deferred. See [checkpoint](checkpoint.md).
+
 ## Reference-anchored aligned method accepted; next clique discovery — 2026-11-03
 
 #21 is resolved. The [receipt](evidence/aligned_reference_acceptance_20261103_summary.json)

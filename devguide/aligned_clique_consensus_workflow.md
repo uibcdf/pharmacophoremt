@@ -131,3 +131,40 @@ prepared-ligand route and standalone inventories, inspects alternatives and rend
 the bibliography. Dated test/build results and controlled provider revisions are
 retained in the checkpoint/report. This is analytical local evidence; biological
 validation, installation and hosted supported-matrix acceptance remain separate.
+
+## Current source/API acceptance — 2026-11-03
+
+#24 is resolved with its [archived report](archive/native_aligned_clique_consensus.md)
+and [new receipt](evidence/aligned_clique_acceptance_20261103_summary.json).
+At clean receiving head 17fb209, all 60 fresh focused controls pass (25 owning
+clique controls, 17 aggregation and 18 contracts/serialization), with independent
+subset oracles and actual optional attribution/readers. No new full suite is claimed.
+
+Fresh off/on analytical capsules preserve absent-first-ligand discovery, independent
+center .17 nm/RMSD .02 nm/support 2/3, two separate overlapping alternatives and
+exactly three two-site packages with common supporters AC, BC and CD; a three-site
+package is correctly absent. Completed-empty molecular discovery emits no model.
+Each of the three budgets raises PHMT-E107/complete=False without partial success.
+Three models survive six JSON/YAML round trips under changed unit policies.
+Twenty-nine pose evaluations per profile pass, including narrower-radius negatives
+that retain discovery support. Molecular domains remain unchanged under each
+same-policy comparison, and off/on science agrees. Actual prepared-input credits
+are 3 items/6 uses off and 15/37 on. All three unchanged cookbook blocks execute
+(12/30 actual credit); strict isolated rendering passes with one neighbor stub.
+Loaded sources/native/helpers/tests/inputs and metadata remain stable in all phases.
+
+The preserved initial and diagnostic capsule failures compare coordinate bytes
+across different unit policies; a no-model diagnostic reproduces floating-point
+rounding. Only the one-off runner changes, comparing like policies and retaining
+an additional exact default-policy before/after check. No runtime/test/input/
+scientific-definition/provider/prefix/sibling change is needed. The molecular
+boundary remains public MolSysMT; PHMT compares/aggregates/packages cached
+pharmacophoric occurrences, and NetworkX supplies generic clique enumeration.
+
+This accepts only the declared bounded source/API method and maximal-site-clique
+candidate family. It does not qualify all molecular patterns, chemical uniqueness,
+biology, affinity, performance, clean installed/public/platform or hosted gates.
+#23/#10/#9/#82 retain their boundaries; #41 public/legacy receiving remains partial
+(review 2026-11-11). The October provider/review statements above are historical.
+Next review #26 under its independent rigid correspondence/placement contract.
+Owned resources remain with LMMV/dprada for review 2026-11-17.

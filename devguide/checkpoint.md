@@ -1,5 +1,51 @@
 # Development Checkpoint
 
+## Aligned clique consensus accepted; rigid unaligned method next — 2026-11-03
+
+#24 is resolved with its [archived report](archive/native_aligned_clique_consensus.md)
+and [new receipt](evidence/aligned_clique_acceptance_20261103_summary.json).
+Clean receiving head **17fb209ed38924af1ea9dc5b5ceb359bfb4b51bc** passes 60
+fresh focused controls in 16.54 s (25 clique, 17 aligned, 18 contracts), no failures/
+errors/skips. Independent subset oracles cover maximal cliques and jointly supported
+disjoint packages. Typed orientations, reordering, source/frame/state, bounds,
+empty/failure separation and real optional attribution/readers retain their guards.
+No new complete full-suite execution is claimed.
+
+Fresh off/on analytical capsules pass absent-first-ligand discovery, center .17 nm,
+RMSD .02 nm, support 2/3, two overlapping alternative models and exactly three
+whole-supported two-site packages (AC, BC, CD), with no unsupported triple. Empty
+molecular discovery emits no model; each budget raises PHMT-E107/complete=False
+without partial success. Three models pass six JSON/YAML round trips; all 29 pose
+evaluations per profile pass (18 positive, 11 negative). Narrower radius rejects
+contributors while retaining support. Source molecular domains remain unchanged
+within each unit policy. Off/on science agrees; actual credits are 3 items/6 uses
+off, 15/37 on. Three unchanged cookbook blocks and strict isolated rendering pass
+(one attribution link-target stub), with actual recipe credit 12/30. Full identities
+are stable in all three phases.
+
+The initial capsule/diagnostic fail a cross-unit-policy byte hash; a no-model
+experiment reproduces rounding up to 5.55e-17 nm. Scripts/logs are preserved as
+failed attempts. The final script compares identical policies and also checks exact
+default-policy before/after equality. No library/test/input/tolerance/provider/
+prefix/sibling change is needed. All molecular operations use MolSysMT; PHMT owns
+cached pharmacophoric compatibility/aggregation/packages, NetworkX generic cliques.
+
+**Next: #26 prepared rigid unaligned consensus**, independently reviewing both
+correspondence proposal families, proper MolSysMT fitting/transformation, accepted
+placements/alternatives, post-fit geometry, support including unplaced sources,
+budgets, persistence and actual attribution plus its cookbook. Current #24 success
+does not close that distinct method or establish continuous global optimality.
+#41 remains partial for supported-public/floor/installed receiving and final legacy
+retirement (review 2026-11-11). #60 is available for a concrete independent variant;
+#66 awaits four original binding methods. Addon/new release remain deferred.
+Hosted #9, installed/public/platform #23/#10 and inherited workspace #82 retain
+their gates. These analytical controls are not biological/performance qualification.
+
+Owned root `/tmp/phmt24-acceptance-20261103-vw26hupl/`, LMMV/dprada, review
+2026-11-17; borrowed #69 venv remains normal editable PHMT 0.4.0+62.g6a7537b,
+with unchanged controlled providers/native. No local process remains after closeout.
+All historical evidence and original October report text remain unchanged.
+
 ## Reference-anchored aligned consensus accepted; clique method next — 2026-11-03
 
 #21 is resolved with its [archived report](archive/native_aligned_consensus.md)
