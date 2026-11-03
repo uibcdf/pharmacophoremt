@@ -6,7 +6,12 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed
-from pharmacophoremt._private.molsysmt import capability, detached, source_frame
+from pharmacophoremt._private.molsysmt import (
+    capability,
+    detached,
+    donor_directions,
+    source_frame,
+)
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
 CLASSICAL_FEATURES = (
@@ -25,60 +30,6 @@ def _groups(result, prefix="atom"):
     return [
         atoms[start:stop].tolist() for start, stop in zip(offsets[:-1], offsets[1:])
     ]
-
-
-def _donor_geometry(molecular_system, pairs, structure_index):
-    """Receive Cartesian unit directions; never repair a provider failure locally."""
-    result = capability("structure.get_vectors")(
-        molecular_system,
-        selection=pairs,
-        pairs=True,
-        structure_indices=[structure_index],
-        pbc=False,
-        output_type="dictionary",
-    )
-    directions = np.asarray(result["directions"], dtype=float)
-    offsets = np.arange(len(pairs) + 1)
-    if (
-        directions.shape != (1, len(pairs), 3)
-        or not np.array_equal(result["atom_indices"], pairs[:, 0])
-        or not np.array_equal(result["atom_indices_2"], pairs[:, 1])
-        or not np.array_equal(result["atom_offsets"], offsets)
-        or not np.array_equal(result["atom_offsets_2"], offsets)
-        or not np.array_equal(result["structure_indices"], [structure_index])
-        or not np.array_equal(result["structure_indices_2"], [structure_index])
-        or not result["pairs"]
-        or result["pbc"]
-        or result["method"] != "directed_cartesian"
-        or result["parameters"]["sense"] != "first_to_second"
-    ):
-        raise ArgumentError(
-            argument="MolSysMT donor geometry",
-            reason="provider directions do not retain the requested pairs/frame/Cartesian convention",
-        )
-    distances = puw.get_value(result["distances"], to_unit="nm")
-    if (
-        np.shape(distances) != (1, len(pairs))
-        or not np.isfinite(distances).all()
-        or np.any(distances < 0)
-    ):
-        raise ArgumentError(
-            argument="MolSysMT donor geometry",
-            reason="expected finite nonnegative distances for the requested donor pairs",
-        )
-    if np.any(distances == 0):
-        raise ArgumentError(
-            argument="molecular_system",
-            reason="donor and indexed hydrogen have coincident coordinates",
-        )
-    if not np.isfinite(directions).all() or not np.allclose(
-        np.linalg.norm(directions, axis=-1), 1.0, rtol=0, atol=1e-12
-    ):
-        raise ArgumentError(
-            argument="MolSysMT donor geometry",
-            reason="expected finite unit directions from the molecular provider",
-        )
-    return directions[0], detached(result)
 
 
 @signal(tags=["modeling", "features"])
@@ -202,36 +153,12 @@ def get_features(
         recognition["hydrogen_bond_route"] = {"recognition": f"molsysmt.{path}"}
         if "hb donor" in requested:
             pairs = np.asarray(result["donor_hydrogen_pairs"], dtype=np.int64)
-            provider_vectors = (
-                capability("structure.get_vectors", required=False)
-                if len(pairs)
-                else None
+            directions, route, geometry = donor_directions(
+                molecular_system, pairs, structure_index, coordinates
             )
-            recognition["hydrogen_bond_route"]["donor_geometry"] = (
-                None
-                if not len(pairs)
-                else "molsysmt.structure.get_vectors"
-                if provider_vectors is not None
-                else "legacy_cartesian_donor_arithmetic_pending_phmt41"
-            )
-            if len(pairs) and provider_vectors is not None:
-                directions, geometry = _donor_geometry(
-                    molecular_system, pairs, structure_index
-                )
+            recognition["hydrogen_bond_route"]["donor_geometry"] = route
+            if geometry is not None:
                 recognition["donor_geometry"] = geometry
-            else:
-                # Existing public 0.23.0 / pinned-CI compatibility only (#41).
-                # No acceptor, periodic or other new molecular kernel belongs here.
-                directions = []
-                for donor, hydrogen in pairs:
-                    direction = coordinates[hydrogen] - coordinates[donor]
-                    norm = np.linalg.norm(direction)
-                    if norm == 0:
-                        raise ArgumentError(
-                            argument="molecular_system",
-                            reason="donor and indexed hydrogen have coincident coordinates",
-                        )
-                    directions.append(direction / norm)
             for (donor, hydrogen), direction in zip(pairs, directions):
                 append(
                     "hb donor",

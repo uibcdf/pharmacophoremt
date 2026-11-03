@@ -11,7 +11,7 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import digest_ra
 from pharmacophoremt._private.arg_digestion.argument.cation_mapping import (
     digest_cation_mapping,
 )
-from pharmacophoremt._private.molsysmt import detached, source_frame
+from pharmacophoremt._private.molsysmt import detached, donor_directions, source_frame
 from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
     ProviderCapabilityError,
@@ -153,6 +153,10 @@ def from_interactions(
     -----
     This bounded route does not reconstruct periodic images. Nonzero image
     vectors and unsupported interaction kinds raise instead of losing evidence.
+    Donor directions use public MolSysMT Cartesian vectors with detached geometry
+    provenance, without rerunning the observed chemical recognition. Only genuine
+    absence on the historical supported provider selects the labeled #41
+    compatibility route; available-provider failures propagate unchanged.
     No protonation, hydrogen addition, coordinate generation or repair occurs.
     Ionic observations require ``formal_charge_centers@1`` and their explicit
     chemical-state index. Whole-center membership and charge are checked against
@@ -239,6 +243,7 @@ def from_interactions(
         }
     )
     sites = {}
+    donor_geometries = {}
     ligand = set(ligand_indices.tolist())
     ionic_inventory = None
     ionic_records = None
@@ -250,6 +255,7 @@ def from_interactions(
             for part in relation["participants"]
         }
         kind = relation["interaction_type"]
+        donor_route, donor_geometry = None, None
         charge_record = None
         shared_record = None
         participant_mapping = None
@@ -347,7 +353,15 @@ def from_interactions(
             if set(roles["donor"]) <= ligand and set(roles["hydrogen"]) <= ligand:
                 atoms = roles["donor"] + roles["hydrogen"]
                 feature = "hb donor"
-                direction = coordinates[atoms[1]] - coordinates[atoms[0]]
+                if atoms not in donor_geometries:
+                    directions, route, geometry = donor_directions(
+                        molecular_system,
+                        np.asarray([atoms], dtype=np.int64),
+                        structure_index,
+                        coordinates,
+                    )
+                    donor_geometries[atoms] = (directions[0], route, geometry)
+                direction, donor_route, donor_geometry = donor_geometries[atoms]
             elif set(roles["acceptor"]) <= ligand and not set(roles["donor"]) & ligand:
                 atoms, feature, direction = roles["acceptor"], "hb acceptor", None
             else:
@@ -376,6 +390,10 @@ def from_interactions(
                 "structure_index": int(structure_index),
                 "observations": [],
             }
+            if donor_route is not None:
+                site_metadata["donor_geometry_route"] = donor_route
+                if donor_geometry is not None:
+                    site_metadata["donor_geometry"] = detached(donor_geometry)
             if shared_record is not None:
                 subset = dict(aromatic_inventory, features=[shared_record])
                 site = from_feature_inventory(subset, radius=radius).interaction_sites[
