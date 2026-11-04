@@ -1,5 +1,13 @@
 # Live molecular references and independent pharmacophore variants
 
+## Merge facade received — 2026-11-04
+
+[#77 compatibility contract](pharmacophore_merge.md) now makes Pharmacophore.merge
+a keep-policy facade over public composition: independent sites and structured
+provenance of both inputs, explicit common-frame handling and unchanged molecular
+reference ownership. Earlier #77 pending statements below describe their original
+review checkpoints. No molecular routine is added.
+
 Source/API receiving under [#60](https://github.com/uibcdf/pharmacophoremt/issues/60),
 2026-11-04, owner LMMV/dprada. This review qualifies existing operations; no
 runtime implementation or dependency floor changes. [Receipt](evidence/live_reference_ownership_20261104_summary.json)

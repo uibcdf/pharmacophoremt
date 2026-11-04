@@ -254,7 +254,8 @@ def compose_pharmacophores(pharmacophores, *, duplicate_policy="keep", name=None
     fused-ring clustering and automatic alignment are separate future strategies.
     Source declarations cannot authenticate molecular origin. Use MolSysMT for
     any molecular transformations. Saved components may be composed without the
-    original molecular object or Ackredit. This is separate from legacy `merge`.
+    original molecular object or Ackredit. Pharmacophore.merge delegates here
+    with self/other labels and the keep policy.
     """
     components = digest_pharmacophores(pharmacophores)
     duplicate_policy = digest_duplicate_policy(duplicate_policy)

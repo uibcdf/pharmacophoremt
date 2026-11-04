@@ -7,6 +7,14 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Pharmacophore.merge receiving — 2026-11-04
+
+[Receipt](pharmacophore_merge_20261104_summary.json) retains original guards,
+exact code/test overlays and qualified composition/curation/persistence scope.
+[Compatibility contract](../pharmacophore_merge.md) records structured metadata,
+independent site occurrences and frame/score behavior. Runtime molecular/provider
+code is unchanged; installed/platform/predictive gates remain separate.
+
 ## Live-reference/native-copy receiving — 2026-11-04
 
 [Receipt](live_reference_ownership_20261104_summary.json): 199 source controls pass,

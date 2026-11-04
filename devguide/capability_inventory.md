@@ -114,3 +114,11 @@ MolSysMT #215 still pending. Remaining format-specific fidelity is separate.
 curation data, intentional live molecular references and explicit public MolSysMT
 eager copies. 199 focused source controls pass, with no runtime/provider/floor
 change or installed claim. Legacy Pharmacophore.merge remains separate #77.
+
+## Merge facade received — 2026-11-04
+
+[#77 contract](pharmacophore_merge.md) migrates legacy merge onto the existing
+public keep-policy composer. Metadata from both components is retained;
+independent sites and explicit frame/provenance/score behavior replace the old
+shared-site/empty-metadata result. Molecular source remains an intentional live
+reference; no molecular copying or new scientific composition method is added.

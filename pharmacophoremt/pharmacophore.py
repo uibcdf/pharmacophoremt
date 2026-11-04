@@ -342,28 +342,41 @@ class Pharmacophore:
         edit_pharmacophore(self, site_indices=index, sigma=sigma, in_place=True)
 
     def merge(self, other):
-        """Return a new Pharmacophore combining sites from self and other.
+        """Compose independent constraints from self followed by other.
 
-        The merged pharmacophore takes the name and metadata of self. No
-        deduplication is applied; call the modeler's merge helper if needed.
+        Delegate to compose_pharmacophores with duplicate_policy='keep' and
+        component labels 'self'/'other'. Repeated sites remain independent
+        occurrences. The result keeps self's name, description and live molecular
+        reference; no molecular inspection, copying or alignment occurs.
+
+        Both inputs' metadata, scores and references remain in
+        metadata['components']; the output score and ref_mol are None. A common
+        known ref_struct is retained, while conflicting declared frames raise.
+        Matching frame indices do not authenticate a common molecular origin.
+        The caller must supply hypotheses in the same coordinate frame.
+
+        Unlike the old shared-site concatenation, output sites and metadata are
+        independent. Component provenance replaces the former promise of
+        copying self's metadata directly into the result's root dictionary.
 
         Parameters
         ----------
         other : Pharmacophore
+            Second hypothesis in the caller-declared common frame.
 
         Returns
         -------
         Pharmacophore
+            Independent joint hypothesis with complete component provenance.
         """
-        from pharmacophoremt.pharmacophore import Pharmacophore
+        from pharmacophoremt.modeler.composition import compose_pharmacophores
 
-        merged = Pharmacophore(
+        merged = compose_pharmacophores(
+            {"self": self, "other": other},
+            duplicate_policy="keep",
             name=self.name,
-            description=self.description,
-            molecular_system=self.molecular_system,
         )
-        for site in self.interaction_sites + other.interaction_sites:
-            merged.add_interaction_site(site, skip_digestion=True)
+        merged.description = self.description
         return merged
 
     def similarity(self, other, tolerance_nm=0.15):

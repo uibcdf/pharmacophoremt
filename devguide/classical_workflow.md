@@ -306,7 +306,7 @@ for l_indices in lig_feats['aromatic ring']:
 
 **Requirements:**
 - `ComplexBasedModeler` can already process multiple frames via `structure_indices`. Add support for a **list of separate molecular systems** (different PDB structures).
-- After obtaining one `Pharmacophore` per complex, merge them using `Pharmacophore.merge()` and store site frequency (how many complexes contributed each feature) in the provenance `coverage` field.
+- After obtaining one `Pharmacophore` per complex, a separately specified common-frame consensus method must establish cross-complex correspondence and support. `Pharmacophore.merge()` keeps all constraints and does not compute consensus, frequency or essentiality; it must not substitute for that proposed method.
 - Sites present in ≥ 50% of complexes are marked `essential=True` by default.
 
 ### 3.2 LigandBasedModeler — Complete Algorithm
@@ -403,9 +403,14 @@ ph.add_excluded_volumes_from_receptor(molecular_system, radius='0.15 nm')
 
 ### 4.5 Pharmacophore Comparison and Merging
 
+The current [merge contract](pharmacophore_merge.md) requires caller-declared
+common-frame hypotheses and preserves both component histories. It performs no
+molecular alignment or consensus. The similarity helper has a separate contract;
+merge does not establish the example's alignment assumption or calculate that score.
+
 ```python
 similarity = ph_complex.similarity(ph_ligand)   # float 0–1, overlap after alignment
-ph_combined = ph_complex.merge(ph_ligand)        # union with averaged overlapping sites
+ph_combined = ph_complex.merge(ph_ligand)        # independent constraints; no averaging or deduplication
 ```
 
 ### 4.6 Pharmacophore Serialization — Complete Coverage

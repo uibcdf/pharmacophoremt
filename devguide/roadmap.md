@@ -1,5 +1,30 @@
 # Strategic Roadmap
 
+## Merge delegates to public composition — 2026-11-04
+
+[#77](https://github.com/uibcdf/pharmacophoremt/issues/77) is fixed with a small
+facade change: [compatibility contract](pharmacophore_merge.md) and
+[receipt](evidence/pharmacophore_merge_20261104_summary.json). All constraints stay
+in order without deduplication; sites/metadata are independent. Both metadata,
+scores and references live in labelled component provenance. The first name,
+description and live molecular reference remain; the output score/ref_mol are
+None, common known ref_struct is retained and conflicts raise. No molecular
+inspection, copying, detection, fitting or local composition engine is added.
+
+**202 broad compatibility controls and 28 final merge guards pass**; all three
+attempt identities remain stable. The composer-only post-broad change is a
+docstring clarification, with final chained/failure guards separately qualified.
+The metadata namespace/site-alias/frame changes are explicit. Native persistence
+and nested provenance remain covered; directly related planning examples now
+separate concatenation, averaging and consensus. Source receiving and hosted/
+installed/platform/predictive qualification remain separate. Earlier dated
+entries below retain their historical pending statements.
+
+Next: bounded #6 review of nested ligand-consensus and screening facade admission,
+using the existing scientific methods and provider contracts. Audit scientific
+semantics/provenance/study design remains independent; #74/MolSysMT #215 and #66
+retain their gates. Addon and new release stay deferred.
+
 ## Live-reference/native-copy review qualified — 2026-11-04
 
 [#60](https://github.com/uibcdf/pharmacophoremt/issues/60) closes its reviewed

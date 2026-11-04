@@ -236,3 +236,16 @@ now closed; exact receiving provider 0faf1584 is distinct from inspected sibling
 comparison test failures and their correction remain visible. This does not clear
 all library ownership: #77 independently tracks confirmed legacy merge metadata
 loss and measured site aliases needing a settled compatibility contract. Next #77.
+
+## Progress — 2026-11-04: legacy merge repair (#77)
+
+[Merge contract](pharmacophore_merge.md) and [receipt](evidence/pharmacophore_merge_20261104_summary.json)
+record delegation to existing keep-policy composition, independent site occurrences
+and both component metadata histories. Name/description/first live molecular
+reference remain; root metadata is structured provenance, output score/ref_mol
+None and common declared frame retained. Frame conflicts now refuse visibly.
+This is an explicit compatibility migration, not a second scientific engine.
+Original metadata loss is fixed; original site-sharing observation was not a
+historically promised independence violation. All attempts and exact bytes are
+retained. No molecular/provider operation added or full-suite/installed/predictive
+promotion. Next #6 nested facade admission; other audit studies retain their scope.

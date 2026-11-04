@@ -178,3 +178,24 @@ for actual five-family detection, both composition policies, independent
 displacement/donor/exclusion controls, persistence, source fingerprints and
 tracking on/off. These disconnected analytical controls do not qualify a
 biological complex, receptor preparation or runtime/memory benchmark.
+
+## Pharmacophore.merge compatibility facade
+
+`left.merge(right)` calls the public composer with labels self/other and policy
+keep. It retains the first model's name/description and live molecular reference,
+while each output site and nested metadata is independent. Site order and all
+repeated constraints are retained. It performs no molecular access or alignment.
+
+The result's root metadata is composition provenance. The original first metadata
+is at `result.metadata["components"][0]["metadata"]`; the second is in component 1.
+Original scores and references remain there too. The output score/ref_mol are None;
+a common known ref_struct is retained. Conflicting declared frames raise; matching
+indices do not authenticate molecular origin. Declare a common prepared frame
+before combining hypotheses, using MolSysMT for molecular operations.
+
+Earlier merge returned shared sites and lost metadata despite its docstring.
+Callers should use explicit source edits when they intend mutation and component
+provenance when reading original metadata. Chained/self/empty input follows the
+composer contract. Merge does not average sites, fit molecules, infer consensus
+or calculate a joint score. Use the standalone tool for explicit labels or native
+same-participant reuse.

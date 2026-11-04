@@ -1,0 +1,155 @@
+{
+  "accepted_files": {
+    "pharmacophoremt/modeler/composition.py": "80bd511f7ed4583001654e089371d11c8199ef8eaae967259570c39b9f8790f6",
+    "pharmacophoremt/pharmacophore.py": "504c4fad34d8090ac362c40572f9f1f62e49217289e8717b841f77f908301988",
+    "tests/test_pharmacophore_merge.py": "ed293fa122af7a010f7569616c606fc88ed9f75d662ada21bc73b6ebe58d677a"
+  },
+  "administrative": {
+    "index_and_whitespace_checks": true,
+    "reporting_controls": 3,
+    "ruff_formatted_files": 323
+  },
+  "attempt_history": [
+    "Original 25 guards: 23 failures/2 passes. Guards include the confirmed metadata loss and intentional ownership/frame contract migration, not 23 pre-existing scientific bugs. Initial Ruff semicolon diagnostics were removed by formatting before the actual red run.",
+    "One initial apply_patch request used an incorrect repository-relative path; no file was changed and the path was corrected before implementation.",
+    "Broad run: 202 pass, no failures/errors/skips. Production merge delegates once to the existing composer.",
+    "After broad run: composer docstring clarified with identical executable AST; three tests add nested association history and late deepcopy refusal. Final 28 merge cases pass with exact final source/test bytes.",
+    "Strict isolated page initially missed its linked local Markdown document, then the Markdown closure missed a linked notebook. Real Markdown/notebook dependency closure (11 pages) renders successfully with execution disabled; no full-site or newly executed recipe claim."
+  ],
+  "base_commit": "528872f516bb617741f547046f43ae5697e6fa1c",
+  "compatibility": "Public keep-policy composition, self/other labels, first name/description/live molecular source; independent sites and structured metadata of both inputs, root score/ref_mol None, common known ref_struct retained and conflicts refused. No molecular operations or second composition engine.",
+  "composer_post_broad_docstring_only": true,
+  "date": "2026-11-04",
+  "documentation": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/tmp/phmt77-merge-20261104-efirf52l/docs_nb_closure",
+      "/tmp/phmt77-merge-20261104-efirf52l/docs_nb_closure_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "content/cookbook/aligned_cliques.md": "3006ed9accc7f34655e64bb282929f9472b3c9d3181840da6d97f89bd79eccc6",
+      "content/cookbook/aligned_consensus.md": "536032500982f1579b4eeed8def5e3e14a7d087c19c46e3bc23334c1206ad9c9",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/excluded_volumes.md": "21ab9d5878b01b20f740171c0a8098e86382d6501baff1e0fa4b904ced0892ba",
+      "content/cookbook/interaction_composition.md": "a52259c6799c1fcd466314101762671478b677076a1ddfa6d470ff7d87c47a45",
+      "content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc",
+      "content/cookbook/observed_est_template.md": "8865d922f90d71267a09f6d781cbbf74bc903ab500cb4ea0e874708f04148e94",
+      "content/cookbook/observed_receptor_coverage.md": "4214f7a1ef1269e5f83880b3247321be62820936220fa2db9f657eeecbd76457",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3"
+    },
+    "scope": "Strict isolated changed cookbook page with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim."
+  },
+  "full_evidence": {
+    "compressed_bytes": 279056,
+    "compressed_sha256": "539aabcca64b56efd1995f6f2c1d610ed6595024b8ccb6fac3ea168fccb528c0",
+    "path": "pharmacophore_merge_20261104.json.gz",
+    "uncompressed_bytes": 1028371,
+    "uncompressed_sha256": "97470299b69978063d2eb9d7bd3bb81c6001326023f1c173ce0fe8552ab8feb5"
+  },
+  "issue": "uibcdf/pharmacophoremt#77",
+  "original_report_body_preserved": true,
+  "runs": {
+    "final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt77-merge-20261104-efirf52l/final-temp",
+        "--junitxml=/tmp/phmt77-merge-20261104-efirf52l/final.xml",
+        "tests/test_pharmacophore_merge.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 28,
+      "skipped": 0
+    },
+    "green": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt77-merge-20261104-efirf52l/green-temp",
+        "--junitxml=/tmp/phmt77-merge-20261104-efirf52l/green.xml",
+        "tests/test_pharmacophore_merge.py",
+        "tests/test_pharmacophore.py",
+        "tests/test_interaction_composition.py",
+        "tests/test_curation.py",
+        "tests/test_live_reference_ownership.py",
+        "tests/test_native_schema_writing.py",
+        "tests/test_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 202,
+      "skipped": 0
+    },
+    "red": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt77-merge-20261104-efirf52l/red-temp",
+        "--junitxml=/tmp/phmt77-merge-20261104-efirf52l/red.xml",
+        "tests/test_pharmacophore_merge.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 23,
+      "full_identity_unchanged": true,
+      "items": 25,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.merge-composition-receiving@1",
+  "scope": "Linux/Python 3.14.7 source receiving with extracted public ArgDigest 0.17.0 and inherited scientific dependencies. No full-suite, clean installed/public/all-platform, performance or predictive qualification.",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt77-merge-20261104-efirf52l",
+    "review": "2026-11-18"
+  },
+  "unchanged_cookbook_python_blocks": true
+}

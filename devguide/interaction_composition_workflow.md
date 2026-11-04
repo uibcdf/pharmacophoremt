@@ -1,5 +1,13 @@
 # Common-frame hypothesis composition
 
+## Merge facade received — 2026-11-04
+
+[#77 compatibility contract](pharmacophore_merge.md) now makes Pharmacophore.merge
+a keep-policy facade over public composition: independent sites and structured
+provenance of both inputs, explicit common-frame handling and unchanged molecular
+reference ownership. Earlier #77 pending statements below describe their original
+review checkpoints. No molecular routine is added.
+
 Owned by [#36](https://github.com/uibcdf/pharmacophoremt/issues/36).
 `compose_pharmacophores()` combines named cached hypotheses without molecular
 access. `from_interaction_collection()` converts named native MolSysMT analyses

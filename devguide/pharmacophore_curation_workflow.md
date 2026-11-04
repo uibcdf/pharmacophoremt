@@ -1,5 +1,13 @@
 # Explicit curation of cached pharmacophore hypotheses
 
+## Merge facade received — 2026-11-04
+
+[#77 compatibility contract](pharmacophore_merge.md) now makes Pharmacophore.merge
+a keep-policy facade over public composition: independent sites and structured
+provenance of both inputs, explicit common-frame handling and unchanged molecular
+reference ownership. Earlier #77 pending statements below describe their original
+review checkpoints. No molecular routine is added.
+
 ## Live-reference qualification — 2026-11-04
 
 [#60 ownership contract](live_reference_ownership.md) qualifies intentional

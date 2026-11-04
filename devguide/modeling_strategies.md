@@ -238,7 +238,7 @@ ph.add_excluded_volumes_from_receptor(receptor_system, radius='0.15 nm')
 
 ```python
 similarity = ph_complex.similarity(ph_ligand)   # 0–1 overlap score
-ph_combined = ph_complex.merge(ph_ligand)        # union of sites
+ph_combined = ph_complex.merge(ph_ligand)        # independent common-frame constraints; no averaging
 ```
 
 ---
