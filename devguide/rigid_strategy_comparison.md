@@ -147,3 +147,52 @@ repeat measurements without that load before making performance decisions.
 This evidence motivates an independently specified coverage-oriented G3PS
 comparison and larger prepared-inventory workloads, rather than default changes
 or native acceleration based on these small controls.
+
+## Current source/API and analytical comparison acceptance — 2026-11-03
+
+#27 is resolved with its [archived report](archive/modular_rigid_strategy_comparison.md)
+and [new receipt](evidence/rigid_comparison_acceptance_20261103_summary.json).
+Clean receiving head 50776a1 passes 23 fresh controls (13 objective/frozen-case,
+10 modular), without failures/errors/skips, in 52.85 s. No new full suite is claimed.
+Fresh off/on objective capsules use public MolSysMT Structures/get_rmsd over the
+same four feature pairs: .11 nm/zero matches for the full fit, approximately
+.21865464043704247 nm/three matches for the selected triplet. The four-essential-
+site query still rejects that partial fit (.75); nine pose checks and two JSON/
+YAML round trips per profile pass with unchanged sources. Off/on science agrees;
+actual credit is 3 items/3 uses host-off and 12/47 host-on. The preserved initial script-only
+failure included inherited bibliography in science; only attribution and
+source_attribution are excluded, with complete unfiltered outputs retained.
+
+Three unchanged cookbook blocks pass (13 items/58 uses); summary rereading adds no credit.
+Strict isolated rendering passes with two neighbor stubs. All these tasks finish
+before the unchanged original comparison CLI runs: 12 sequential isolated workers,
+one warmup/three measured calls/separate attribution call, CPU/one-thread policy,
+300 s wall allowance without changed scientific budgets. All expected outcomes and
+summary stability checks pass: five completed, five completed-empty, two failed
+PHMT-E107 records. Source/native identities agree across workers and all four
+before/after phases. Complete samples and actual reached credit remain archived.
+No owned test/build/benchmark load overlaps; machine-wide exclusivity is not claimed.
+
+| Case | Association fits/models/sites | Triplet fits/models/sites | Median call seconds: association/triplet |
+| --- | --- | --- | --- |
+| rigid_typed_5 | 1/1/5 | 11/7/5 | 1.396/8.269 |
+| reflection_typed_5 | 1/0/0 | 11/0/0 | 0.812/3.830 |
+| symmetric_3 | 6/6/3 | 6/6/3 | 3.351/3.281 |
+| warped_square | 4/0/0 | 16/16/3 | 1.279/10.361 |
+| empty_source | 0/0/0 | 0/0/0 | 0.390/0.572 |
+| fit_budget_failure | failed PHMT-E107 | failed PHMT-E107 | 0.028/0.102 (failed calls) |
+
+
+Whole-worker high-water RSS after measurements is 302.0–506.9 MiB,
+including setup and warmups; it is not per-call incremental memory. Failed-call
+times remain failed measurements. Local descriptive costs with different retained
+alternatives/coverage do not establish a universal winner, equivalent-workload
+speedup or a default-strategy change. These analytical fragments are not biological
+validation. October measurements retain their original provider/load scope.
+
+Molecular operations and generic RMSD remain public MolSysMT calls; PHMT owns
+pharmacophoric tools and task-specific comparison interpretation. No library/test/
+input/provider/prefix/sibling change is needed. Clean installed/public/platform/
+hosted gates stay #23/#10/#9, inherited workspace #82, and #41 public/legacy receiving
+remains partial (review 2026-11-11). Next accept #28's ranked stage independently.
+Owned resources remain with LMMV/dprada for review 2026-11-17.

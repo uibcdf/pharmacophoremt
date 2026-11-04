@@ -1,5 +1,50 @@
 # Development Checkpoint
 
+## Modular comparison accepted; ranked seeds next — 2026-11-03
+
+#27 is resolved with its [archive](archive/modular_rigid_strategy_comparison.md)
+and [receipt](evidence/rigid_comparison_acceptance_20261103_summary.json). Clean
+receiving **50776a15dd2cb103a7b56d65834f2f1d202651e6** passes 23 fresh controls
+(13 objective/frozen-case, 10 modular), no failures/errors/skips, in 52.85 s.
+No new full suite is claimed. Public cached query/explicit placement/saved summary
+contracts retain their molecular-access, source ownership, completion and credit guards.
+
+Fresh same-four-pair MolSysMT RMSD capsules give .11 nm/zero matches for full mapping
+and .21865464043704247 nm/three matches for a triplet. The four-essential-site query
+remains not_matched at partial fit .75. All nine pose checks/two JSON/YAML round
+trips per tracking profile pass; source domains and off/on science stay unchanged.
+Actual credit is 3 items/3 uses host-off and 12/47 host-on. Three cookbook blocks pass
+(13 items/58 uses); summary rereading adds no credit, strict isolated rendering uses two
+neighbor stubs. An initial one-off comparison included inherited bibliography;
+its failed script/log/queries and diagnosis remain preserved, with all unfiltered
+outputs retained. Only the two bibliography fields are excluded from science.
+
+After those tasks finish, the unchanged CLI passes all 12 controls across six
+frozen cases/two families: five completed, five completed-empty and two expected
+PHMT-E107 failures. Each isolated sequential worker has one warmup, three timed
+calls and separate actual citation. All 36 samples and complete original outputs
+are archived; source/native hashes agree across workers and all four phases.
+No owned test/build/benchmark load overlaps measurements. Current observed times
+and whole-worker RSS (302.0–506.9 MiB) remain descriptive; outputs
+differ, RSS includes setup/warmups, and no universal ranking/default change follows.
+Association yields four fits/zero warped-square models, triplets sixteen fits/
+sixteen three-site alternatives, without a distinct-binding-mode claim.
+
+No runtime/test/input/scientific-definition/provider/prefix/sibling change is needed.
+All molecular operations and generic RMSD use MolSysMT; PHMT owns pharmacophoric
+query/proposal/acceptance/summary/assembly. Clean installed/public/platform/hosted
+qualification remains #23/#10/#9, and inherited workspace #82 is independent.
+**Next: #28 ranked triplet seeds**, reviewing typed neighborhoods/assignment,
+independent oracles, all-seed family equivalence, limited-seed false negatives,
+resource-before-allocation, consumer composition and actual adapted-stage credit.
+#41 public/floor/installed receiving and legacy retirement stay partial (review
+2026-11-11); #60 and #66 retain their independent gates. Addon/new release defer.
+
+Owned `/tmp/phmt27-acceptance-20261103-p_h5tcap/`, LMMV/dprada, review 2026-11-17.
+Borrowed #69 venv remains ordinary editable PHMT 0.4.0+62.g6a7537b with unchanged
+controlled providers/native. No local process remains after closeout. Historical
+reports/evidence and earlier metadata findings retain their original scopes.
+
 ## Prepared rigid unaligned consensus accepted; comparison next — 2026-11-03
 
 #26 is resolved with its [archived report](archive/native_rigid_consensus.md) and

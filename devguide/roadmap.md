@@ -1,5 +1,31 @@
 # Strategic Roadmap
 
+## Modular strategy comparison accepted; ranked seeds next — 2026-11-03
+
+#27 is resolved with its [receipt](evidence/rigid_comparison_acceptance_20261103_summary.json).
+At clean 50776a1, 23 fresh controls, off/on same-domain objective capsules (nine pose
+checks/two round trips each), three cookbook blocks and strict isolated rendering
+pass. Generic RMSD and all molecular operations use MolSysMT. The corrected one-off
+comparison excludes only direct/inherited bibliography; original attempts remain.
+
+The original six-case/two-family comparison runs after all owned tests/docs end:
+12 sequential isolated workers, one warmup/three measured calls/separate citation
+call; all expectations and output stability checks pass. Five completed, five empty
+and two expected failed records stay distinct. Source/native/metadata identities
+remain stable. Warped-square association has zero models, triplets sixteen three-
+site alternatives; current timings/RSS describe these different workloads and
+establish no universal ranking or default change. No runtime/test/provider change
+or new full suite is claimed.
+
+Next accept **#28 ranked triplet seeds**: typed-neighborhood comparison, independent
+assignment oracles, all-seed equivalence, finite-selection misses, allocation bounds,
+consumer composition and reached adapted-stage credit. This is the G3PS seed stage;
+other refinement/rescue/exclusion contracts retain their separate scopes.
+#41 public/floor/installed migration and legacy retirement remain partial, review
+2026-11-11. #60 independent-copy receiving and #66's original binding methods retain
+their scopes. Hosted #9, installed/public/platform #23/#10 and workspace #82 remain
+separate. Addon/new release stay deferred. See [checkpoint](checkpoint.md).
+
 ## Rigid unaligned source/API acceptance complete; comparison next — 2026-11-03
 
 #26 is resolved with its [receipt](evidence/rigid_consensus_acceptance_20261103_summary.json):

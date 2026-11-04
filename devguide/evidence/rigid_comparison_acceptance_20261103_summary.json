@@ -1,0 +1,611 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "benchmark": {
+    "expectation_passed": true,
+    "measured_calls": 36,
+    "records": [
+      {
+        "actual_items": 16,
+        "actual_uses": 64,
+        "case_id": "rigid_typed_5",
+        "expectation_passed": true,
+        "max_joint_sites": 5,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 523444224,
+          "process_lifetime_peak_rss_bytes_before_measurements": 523116544,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 1,
+        "n_layouts": 1,
+        "n_models": 1,
+        "scientific_outputs_stable": true,
+        "status": "completed",
+        "strategy": "association_cliques",
+        "timing": {
+          "imports_and_fixture_seconds": 3.867539927130565,
+          "max_seconds": 1.4057479361072183,
+          "median_seconds": 1.395807077176869,
+          "min_seconds": 1.374199581798166,
+          "samples_seconds": [
+            1.395807077176869,
+            1.4057479361072183,
+            1.374199581798166
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            1.4521799308713526
+          ]
+        }
+      },
+      {
+        "actual_items": 16,
+        "actual_uses": 64,
+        "case_id": "rigid_typed_5",
+        "expectation_passed": true,
+        "max_joint_sites": 5,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 528609280,
+          "process_lifetime_peak_rss_bytes_before_measurements": 527626240,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 11,
+        "n_layouts": 7,
+        "n_models": 7,
+        "scientific_outputs_stable": true,
+        "status": "completed",
+        "strategy": "triplet_seeds",
+        "timing": {
+          "imports_and_fixture_seconds": 3.895954426843673,
+          "max_seconds": 8.482625097967684,
+          "median_seconds": 8.26859192410484,
+          "min_seconds": 8.133073230041191,
+          "samples_seconds": [
+            8.482625097967684,
+            8.26859192410484,
+            8.133073230041191
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            8.251738920109347
+          ]
+        }
+      },
+      {
+        "actual_items": 16,
+        "actual_uses": 60,
+        "case_id": "reflection_typed_5",
+        "expectation_passed": true,
+        "max_joint_sites": 0,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 522772480,
+          "process_lifetime_peak_rss_bytes_before_measurements": 522608640,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 1,
+        "n_layouts": 1,
+        "n_models": 0,
+        "scientific_outputs_stable": true,
+        "status": "completed_empty",
+        "strategy": "association_cliques",
+        "timing": {
+          "imports_and_fixture_seconds": 1.9802828300744295,
+          "max_seconds": 0.8183397869579494,
+          "median_seconds": 0.8122699700761586,
+          "min_seconds": 0.7852868598420173,
+          "samples_seconds": [
+            0.8122699700761586,
+            0.8183397869579494,
+            0.7852868598420173
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            2.8435004740022123
+          ]
+        }
+      },
+      {
+        "actual_items": 16,
+        "actual_uses": 60,
+        "case_id": "reflection_typed_5",
+        "expectation_passed": true,
+        "max_joint_sites": 0,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 523464704,
+          "process_lifetime_peak_rss_bytes_before_measurements": 523300864,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 11,
+        "n_layouts": 1,
+        "n_models": 0,
+        "scientific_outputs_stable": true,
+        "status": "completed_empty",
+        "strategy": "triplet_seeds",
+        "timing": {
+          "imports_and_fixture_seconds": 1.9981018118560314,
+          "max_seconds": 3.8679325298871845,
+          "median_seconds": 3.830164232989773,
+          "min_seconds": 3.822383414953947,
+          "samples_seconds": [
+            3.822383414953947,
+            3.8679325298871845,
+            3.830164232989773
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            5.90317696495913
+          ]
+        }
+      },
+      {
+        "actual_items": 13,
+        "actual_uses": 58,
+        "case_id": "symmetric_3",
+        "expectation_passed": true,
+        "max_joint_sites": 3,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 523644928,
+          "process_lifetime_peak_rss_bytes_before_measurements": 523153408,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 6,
+        "n_layouts": 6,
+        "n_models": 6,
+        "scientific_outputs_stable": true,
+        "status": "completed",
+        "strategy": "association_cliques",
+        "timing": {
+          "imports_and_fixture_seconds": 3.8012636150233448,
+          "max_seconds": 3.5919500591699034,
+          "median_seconds": 3.351205723825842,
+          "min_seconds": 3.2171387230046093,
+          "samples_seconds": [
+            3.2171387230046093,
+            3.351205723825842,
+            3.5919500591699034
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            3.362509995000437
+          ]
+        }
+      },
+      {
+        "actual_items": 13,
+        "actual_uses": 58,
+        "case_id": "symmetric_3",
+        "expectation_passed": true,
+        "max_joint_sites": 3,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 523259904,
+          "process_lifetime_peak_rss_bytes_before_measurements": 522768384,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 6,
+        "n_layouts": 6,
+        "n_models": 6,
+        "scientific_outputs_stable": true,
+        "status": "completed",
+        "strategy": "triplet_seeds",
+        "timing": {
+          "imports_and_fixture_seconds": 3.79992104601115,
+          "max_seconds": 3.368764977902174,
+          "median_seconds": 3.28109471895732,
+          "min_seconds": 3.2650583691429347,
+          "samples_seconds": [
+            3.368764977902174,
+            3.28109471895732,
+            3.2650583691429347
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            3.357105363160372
+          ]
+        }
+      },
+      {
+        "actual_items": 16,
+        "actual_uses": 57,
+        "case_id": "warped_square",
+        "expectation_passed": true,
+        "max_joint_sites": 0,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 522141696,
+          "process_lifetime_peak_rss_bytes_before_measurements": 521977856,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 4,
+        "n_layouts": 1,
+        "n_models": 0,
+        "scientific_outputs_stable": true,
+        "status": "completed_empty",
+        "strategy": "association_cliques",
+        "timing": {
+          "imports_and_fixture_seconds": 1.9339835850987583,
+          "max_seconds": 1.2860385698731989,
+          "median_seconds": 1.278717052191496,
+          "min_seconds": 1.2769074260722846,
+          "samples_seconds": [
+            1.2860385698731989,
+            1.278717052191496,
+            1.2769074260722846
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            3.289072558982298
+          ]
+        }
+      },
+      {
+        "actual_items": 16,
+        "actual_uses": 61,
+        "case_id": "warped_square",
+        "expectation_passed": true,
+        "max_joint_sites": 3,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 531533824,
+          "process_lifetime_peak_rss_bytes_before_measurements": 530550784,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 16,
+        "n_layouts": 16,
+        "n_models": 16,
+        "scientific_outputs_stable": true,
+        "status": "completed",
+        "strategy": "triplet_seeds",
+        "timing": {
+          "imports_and_fixture_seconds": 1.99987057200633,
+          "max_seconds": 10.496996488887817,
+          "median_seconds": 10.360805158037692,
+          "min_seconds": 10.264010646147653,
+          "samples_seconds": [
+            10.496996488887817,
+            10.264010646147653,
+            10.360805158037692
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            12.69664116203785
+          ]
+        }
+      },
+      {
+        "actual_items": 12,
+        "actual_uses": 41,
+        "case_id": "empty_source",
+        "expectation_passed": true,
+        "max_joint_sites": 0,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 317546496,
+          "process_lifetime_peak_rss_bytes_before_measurements": 317382656,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 0,
+        "n_layouts": 1,
+        "n_models": 0,
+        "scientific_outputs_stable": true,
+        "status": "completed_empty",
+        "strategy": "association_cliques",
+        "timing": {
+          "imports_and_fixture_seconds": 1.989738526986912,
+          "max_seconds": 0.39690999197773635,
+          "median_seconds": 0.3900944930501282,
+          "min_seconds": 0.3788147019222379,
+          "samples_seconds": [
+            0.3788147019222379,
+            0.39690999197773635,
+            0.3900944930501282
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            0.7404870730824769
+          ]
+        }
+      },
+      {
+        "actual_items": 12,
+        "actual_uses": 43,
+        "case_id": "empty_source",
+        "expectation_passed": true,
+        "max_joint_sites": 0,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 316686336,
+          "process_lifetime_peak_rss_bytes_before_measurements": 316522496,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "n_fits": 0,
+        "n_layouts": 1,
+        "n_models": 0,
+        "scientific_outputs_stable": true,
+        "status": "completed_empty",
+        "strategy": "triplet_seeds",
+        "timing": {
+          "imports_and_fixture_seconds": 2.0165616860613227,
+          "max_seconds": 0.5965106301009655,
+          "median_seconds": 0.5724302579183131,
+          "min_seconds": 0.5696708678733557,
+          "samples_seconds": [
+            0.5724302579183131,
+            0.5965106301009655,
+            0.5696708678733557
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            0.9093928909860551
+          ]
+        }
+      },
+      {
+        "case_id": "fit_budget_failure",
+        "error_code": "PHMT-E107",
+        "error_context": {
+          "api_url": "",
+          "complete": false,
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "limit": 1,
+          "observed": 6,
+          "resource": "scheduled fits",
+          "stage": "rigid_alignment"
+        },
+        "expectation_passed": true,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 519450624,
+          "process_lifetime_peak_rss_bytes_before_measurements": 519450624,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "scientific_outputs_stable": true,
+        "status": "failed",
+        "strategy": "association_cliques",
+        "timing": {
+          "imports_and_fixture_seconds": 3.784591404022649,
+          "max_seconds": 0.02771542896516621,
+          "median_seconds": 0.027559129986912012,
+          "min_seconds": 0.026831788010895252,
+          "samples_seconds": [
+            0.026831788010895252,
+            0.02771542896516621,
+            0.027559129986912012
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            0.058074105996638536
+          ]
+        }
+      },
+      {
+        "case_id": "fit_budget_failure",
+        "error_code": "PHMT-E107",
+        "error_context": {
+          "api_url": "",
+          "complete": false,
+          "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+          "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+          "limit": 1,
+          "observed": 6,
+          "resource": "scheduled fits",
+          "stage": "rigid_alignment"
+        },
+        "expectation_passed": true,
+        "memory": {
+          "process_lifetime_peak_rss_bytes_after_measurements": 519028736,
+          "process_lifetime_peak_rss_bytes_before_measurements": 519028736,
+          "scope": "whole worker high-water RSS, including imports, fixture and warmups; not per-call incremental allocation; unavailable on other platforms"
+        },
+        "scientific_outputs_stable": true,
+        "status": "failed",
+        "strategy": "triplet_seeds",
+        "timing": {
+          "imports_and_fixture_seconds": 3.6448250459507108,
+          "max_seconds": 0.10449484293349087,
+          "median_seconds": 0.10205794894136488,
+          "min_seconds": 0.100898397853598,
+          "samples_seconds": [
+            0.100898397853598,
+            0.10449484293349087,
+            0.10205794894136488
+          ],
+          "scope": "from_rigid_ligands_only; imports, fixture construction, warmups, summary and attribution excluded",
+          "warmup_call_seconds": [
+            0.12684831395745277
+          ]
+        }
+      }
+    ],
+    "repetitions": 3,
+    "scientific_outputs_stable": true,
+    "separate_attribution_calls": 12,
+    "status_counts": {
+      "completed": 5,
+      "completed_empty": 5,
+      "failed": 2
+    },
+    "warmups": 1,
+    "worker_sources_and_extensions_equal": true,
+    "worker_timeout_seconds": 300
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "comparison_scope": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-m",
+        "devtools.benchmark_rigid_consensus",
+        "--repetitions",
+        "3",
+        "--warmups",
+        "1",
+        "--timeout",
+        "300",
+        "--output",
+        "/tmp/phmt27-acceptance-20261103-p_h5tcap/benchmark.json"
+      ],
+      "load_scope": "All owned tests, objective capsule, cookbook and Sphinx rendering completed before launch. No other owned test/build/benchmark is launched while timing. No machine-wide exclusive-host or incidental-load guarantee.",
+      "preconditions": {
+        "cookbook": 0,
+        "focused": 0,
+        "objective": 0
+      },
+      "sphinx_complete": true,
+      "timeout_reason": "Explicit supported wall-clock worker allowance of 300 s includes five complete calls and imports with current providers; does not change any scientific graph/fit/layout budget.",
+      "worker_policy": "Original sequential isolated process per case/strategy; unchanged six-case fixture, default two strategies, one warmup/three measured calls/separate citation call."
+    },
+    "documentation_scope": "Strict isolated unchanged modular-rigid-tools cookbook with two neighbor link-target stubs; not full-site or neighbor-recipe qualification.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_fallback": "PHMT #41 stays partial for public/floor/installed receiving and final legacy retirement, review 2026-11-11.",
+    "initial_attempt": {
+      "correction": "Exclude only the two defined bibliography fields attribution/source_attribution from comparison. Retain both complete unfiltered runs. No numerical tolerance, library, provider, test, fixture or scientific-definition change.",
+      "initial_objective": {
+        "exit_code": 1,
+        "qualified": false,
+        "reason": "The one-off science comparison excluded direct attribution but included inherited query metadata.source_attribution; retained query comparison isolates that sole difference.",
+        "retained": [
+          "run_objective_initial.py",
+          "objective_initial.log",
+          "objective_initial_before.json",
+          "initial-objective-outputs/",
+          "initial_query_comparison.json"
+        ]
+      }
+    },
+    "installed_wheel_qualification": false,
+    "new_pytest_execution": true,
+    "ownership": "Public MolSysMT supplies all molecular conversion/inspection/fitting/transforms/copy/set and generic point-cloud RMSD. PHMT constructs cached pharmacophoric queries, proposes mappings, accepts placements and summarizes bounded hypotheses; NetworkX supplies generic clique enumeration.",
+    "performance_measured": true,
+    "performance_scope": "Descriptive observed local call times and whole-worker high-water RSS for these finite analytical proposal families. Different coverage/alternative counts; no equivalent-workload speedup, universal ranking or incremental-memory claim.",
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_scientific_definition_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b; controlled providers/native unchanged; no sibling/prefix mutation."
+  },
+  "consumer": {
+    "head": "50776a15dd2cb103a7b56d65834f2f1d202651e6",
+    "status": ""
+  },
+  "cookbook_actual_attribution": {
+    "items": 13,
+    "uses": 58
+  },
+  "executed_cookbook_blocks": 3,
+  "focused_tests": {
+    "actual_pytest_items": 23,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt27-acceptance-20261103-p_h5tcap/pytest-temp",
+      "--junitxml=/tmp/phmt27-acceptance-20261103-p_h5tcap/focused.xml",
+      "tests/test_rigid_strategy_comparison.py",
+      "tests/test_modular_rigid_tools.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_modular_rigid_tools": 10,
+      "tests.test_rigid_strategy_comparison": 13
+    },
+    "seconds": 52.85,
+    "skips": 0
+  },
+  "full_evidence": {
+    "compressed_bytes": 1070221,
+    "compressed_sha256": "c15f86aa6ae293b27e2eac220e15dd73c820ee2e8c2d8852f05f53b216466657",
+    "path": "rigid_comparison_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 9430334,
+    "uncompressed_sha256": "ed92ca0187479edd3a6d94954e4c0a74b95f4e5d0d359bc78c466cf8c34d1619"
+  },
+  "full_identity_unchanged": {
+    "benchmark": true,
+    "cookbook": true,
+    "focused": true,
+    "objective": true
+  },
+  "issue": "uibcdf/pharmacophoremt#27",
+  "measured_date": "2026-11-03",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "objective_profiles": [
+    {
+      "actual_items": 3,
+      "actual_uses": 3,
+      "full_mapping_matches": 0,
+      "host_tracking": false,
+      "pose_evaluations": 9,
+      "round_trips": 2,
+      "same_four_pair_rmsd_nm": {
+        "full_mapping": 0.10999999999999992,
+        "triplet": 0.21865464043704247
+      },
+      "source_domains_unchanged": true,
+      "triplet_matches": 3,
+      "triplet_proposals": 16
+    },
+    {
+      "actual_items": 12,
+      "actual_uses": 47,
+      "full_mapping_matches": 0,
+      "host_tracking": true,
+      "pose_evaluations": 9,
+      "round_trips": 2,
+      "same_four_pair_rmsd_nm": {
+        "full_mapping": 0.10999999999999992,
+        "triplet": 0.21865464043704247
+      },
+      "source_domains_unchanged": true,
+      "triplet_matches": 3,
+      "triplet_proposals": 16
+    }
+  ],
+  "schema": "pharmacophoremt.rigid_comparison_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#27",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Modular rigid comparison source/API acceptance; original six-case sequential comparison with fresh objective/cookbook controls; no provider/prefix/sibling mutation",
+    "review_date": "2026-11-17"
+  }
+}

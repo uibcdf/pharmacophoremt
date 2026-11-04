@@ -7,6 +7,35 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Modular rigid comparison acceptance — 2026-11-03
+
+The [new summary](rigid_comparison_acceptance_20261103_summary.json) and checksum-
+qualified original archive record #27 at clean receiving 50776a1. Twenty-three fresh
+controls pass (13 objective/frozen-case, 10 modular). Off/on objective capsules use
+MolSysMT RMSD over the same four pairs (.11 nm/zero matches versus .21865 nm/three),
+retain the partial query rejection, nine pose checks and two round trips each.
+Source domains stay unchanged and science agrees off/on, with credit 3 items/3 uses host-off and 12/47 host-on.
+Three cookbook blocks pass (13 items/58 uses); summary rereading adds no credit; strict
+isolated rendering uses two neighbor stubs. The initial script-only bibliography
+comparison failure/diagnosis and complete unfiltered outputs remain preserved.
+
+The unchanged original driver runs only after owned tests/builds finish: six
+frozen cases/two families, 12 sequential isolated workers, one warmup/three measured
+calls/separate attribution each. All expectations/stability checks pass, with five
+completed/five completed-empty/two failed PHMT-E107 records. All 36 timing samples,
+whole-worker high-water RSS, sources/inputs/environment and actual references are
+retained. Worker source/native hashes agree with each other and the controller;
+full identities stay stable in all four phases. Times/RSS are descriptive, not an
+equivalent-workload speed ranking, incremental allocation or biological validation.
+No library/test/input/provider/prefix/sibling change or new full suite is claimed.
+
+Full original JSON outputs occur once in the archive's `original_files` as exact
+UTF-8 `text` with raw SHA-256. Parse `benchmark.json`, `objective_result.json` and
+`cookbook_result.json` for every sample, model, report, evaluation and citation.
+`phases` and the summary are compact projections; original October evidence remains
+unchanged with its original overlapping-load caveat. Public/installed/hosted and
+workspace gates remain separate.
+
 ## Rigid-unaligned source/API acceptance — 2026-11-03
 
 The [new summary](rigid_consensus_acceptance_20261103_summary.json) and checksum-
