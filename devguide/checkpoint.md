@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Ranked-seed stage accepted; prepared rigid search next — 2026-11-03
+
+#28 is resolved with its [archive](archive/g3ps_ranked_seed_tools.md) and
+[receipt](evidence/ranked_seed_acceptance_20261103_summary.json). Clean receiving
+**9731e054b9eb56b5b9a121dd889af214773b0643** passes 82 fresh controls in 23.11 s
+(22 ranked, 60 geometry), zero failures/errors/skips. No new full suite is claimed.
+Cached typed assignment/ranking, independent oracles, empty/unequal axes, identity/
+unit/motion invariance, ownership, saved reports, preflight budgets, consumer calls
+and actual adapted-stage attribution retain guards.
+
+Fresh off/on capsules preserve plain/ranked-all's 16-seed family and eight accepted
+mappings/geometries, with 16 fits each. One selected seed omits 15, performs one fit
+and completes without models, missing a known four-feature solution. Computation
+limits fail explicitly; they cannot silently select fewer guesses. Twelve pose
+checks and two JSON/YAML round trips per profile pass. Original reflected poses
+remain partial nonmatches (.75), references and public MolSysMT replay match (1).
+Source domains remain unchanged under like-unit comparisons; off/on science agrees.
+Credit is 0 items/0 uses host-off and 14/77 host-on; four cookbook blocks pass (14 items/70 uses)
+and summary rereading adds no credit. The page fixes stale refinement prose; every
+Python block is unchanged and the published page matches strict isolated staged
+rendering with two neighbor stubs. Primary section 2.2.1 is freshly accessible at
+PMC; earlier access failures remain historical. Stage-only adaptation stays explicit.
+
+The original comparison runs after owned tests/docs end: 14 sequential isolated
+workers, seven frozen cases/two strategies, one warmup/three timed calls/separate
+citation. All expectations/stability checks pass: eight completed/five empty/one
+failed PHMT-E107 record. All 42 samples, sources/native/environment and actual
+references remain archived. Timed ranked calls select one seed; ranked-all is not
+timed. Whole-worker RSS (302.3–507.1 MiB) includes setup/warmups.
+Costs with changed coverage/alternatives do not justify a universal ranking,
+equivalent-recall speedup or new default seed limit. Full identities stay stable
+in all four phases; no runtime/test/input/provider/prefix/sibling change is needed.
+
+All molecular operations use MolSysMT; PHMT owns cached pharmacophoric neighborhoods
+and selection, SciPy generic assignment. **Next: #15 prepared rigid pose-search
+acceptance**, reviewing independent public proposals/alignment, search completion,
+valid maximum-coverage early stops, failure accounting and retrospective composition.
+#29 refinement is already resolved; rescue needs its separate scientific/provider
+contract. #41 public/floor/installed receiving and final legacy retirement remain
+partial (review 2026-11-11). #60/#66 retain independent gates; hosted #9,
+installed/public/platform #23/#10 and workspace #82 remain separate. Addon/new
+release stay deferred.
+
+Owned `/tmp/phmt28-acceptance-20261103-guahqzj6/`, LMMV/dprada, review 2026-11-17.
+Borrowed #69 venv remains ordinary editable PHMT 0.4.0+62.g6a7537b with unchanged
+controlled providers/native. No local process remains after closeout. Original
+historical evidence and earlier metadata findings retain their dated scopes.
+
 ## Modular comparison accepted; ranked seeds next — 2026-11-03
 
 #27 is resolved with its [archive](archive/modular_rigid_strategy_comparison.md)

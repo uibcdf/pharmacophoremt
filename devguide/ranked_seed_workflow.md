@@ -163,3 +163,65 @@ measurement; timings across those two artifacts cannot isolate strategy or code
 performance. This comparison is local analytical evidence, not biological or
 external-tool benchmarking. All-seed family equivalence is tested separately;
 all-seed ranked execution was not timed in this comparison.
+
+## Current source/API and ranked comparison acceptance — 2026-11-03
+
+#28 is resolved with its [archive](archive/g3ps_ranked_seed_tools.md) and
+[new receipt](evidence/ranked_seed_acceptance_20261103_summary.json). Clean receiving
+9731e05 passes 82 fresh controls (22 ranked/60 correspondence geometry), zero
+failures/errors/skips, in 23.11 s. No new full suite is claimed. Section 2.2.1 was
+freshly reviewed at the [primary PMC text](https://pmc.ncbi.nlm.nih.gov/articles/PMC8658842/).
+The declared adaptation and stage-only citation remain explicit; no full-G3PS
+replication is inferred. Earlier provider-capability inspections above are dated,
+not a new claim that a current provider API is absent.
+
+Fresh off/on capsules compare plain and ranked-all on the same 16 seeds: both
+perform 16 fits and retain the same eight accepted mappings/site geometries within
+1e-12 nm numerical comparison. One selected seed omits 15 and completes with no
+models, missing the known four-feature match. Completed selection and exhausted
+work stay distinct: neighborhood and triplet limits fail PHMT-E107/complete=False.
+Twelve pose checks and two JSON/YAML round trips per profile pass, preserving source
+domains under each identical unit policy. Reference/replay fits one; the original
+reflected pose remains not_matched at .75. Off/on science agrees, with actual
+credit 0 items/0 uses host-off and 14/77 host-on. Baseline/empty results receive no G3PS
+method credit. Saved comparison/ranking and summary-reading ownership retain guards.
+
+Four original cookbook blocks pass (14 items/70 uses); summary rereading adds no credit.
+The published recipe fixes only stale refinement prose and exactly matches its
+strict isolated staged rendering (two neighbor stubs); all Python blocks remain
+unchanged. No runtime/test/input/provider/prefix/sibling/default change is needed.
+All molecular operations remain MolSysMT-owned; PHMT owns typed neighborhoods and
+selection, SciPy generic assignment.
+
+The unchanged original CLI executes seven frozen cases/two strategies only after
+owned tests/docs finish. Fourteen sequential isolated workers each perform one
+warmup/three timed calls/separate citation. All expected outcomes and stability
+checks pass: eight completed, five completed-empty and one failed PHMT-E107 record.
+Sources/native hashes agree across workers and all four phase snapshots. The timed
+ranked strategy explicitly uses n_seeds=1; ranked-all coverage is checked separately.
+
+| Case | Triplet fits/models/sites | Ranked-one fits/models/sites | Median call seconds: triplet/ranked-one |
+| --- | --- | --- | --- |
+| rigid_typed_5 | 11/7/5 | 1/1/5 | 7.782/1.456 |
+| reflection_typed_5 | 11/0/0 | 1/0/0 | 3.654/0.917 |
+| symmetric_3 | 6/6/3 | 1/1/3 | 3.334/0.811 |
+| warped_square | 16/16/3 | 1/1/3 | 10.165/1.014 |
+| empty_source | 0/0/0 | 0/0/0 | 0.535/0.544 |
+| fit_budget_failure | failed PHMT-E107 | 1/1/3 | 0.105/0.780 (baseline failed) |
+| ranked_reflection_false_negative | 16/8/4 | 1/0/0 | 6.792/0.547 |
+
+
+Whole-worker high-water RSS is 302.3–507.1 MiB including setup/warmups,
+not incremental allocation. The baseline fit-budget failure and ranked selected
+success are different scientific work. Every sample/reference/environment identity
+is retained; costs remain local/descriptive and establish no equivalent-recall
+speedup, universal ranking or default selection limit. No owned test/build/benchmark
+overlaps measurement; machine-wide exclusivity is not claimed. October evidence
+retains its original identities and scope.
+
+Clean installed/public/platform/hosted qualification remains #23/#10/#9; workspace
+#82 and #41 public/legacy receiving (review 2026-11-11) stay separate. #29 refinement
+is resolved. Next accept #15 prepared rigid pose search, especially completion,
+maximum-coverage early stops and failed-search accounting. #60/#66 and addon/new
+release deferrals retain their scopes. Owned resources remain LMMV/dprada,
+review 2026-11-17.

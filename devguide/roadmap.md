@@ -1,5 +1,31 @@
 # Strategic Roadmap
 
+## Ranked-seed acceptance complete; prepared rigid search next — 2026-11-03
+
+#28 is resolved with its [receipt](evidence/ranked_seed_acceptance_20261103_summary.json).
+At clean 9731e05, 82 fresh controls, off/on selection capsules (12 pose checks/two
+round trips each), four unchanged cookbook blocks and strict isolated staged
+rendering pass with stable identities. Recipe prose now links available refinement.
+Molecular operations stay in MolSysMT; typed neighborhoods/selection remain in PHMT.
+
+Both all-seed families preserve 16 proposals/eight accepted mappings. Selecting one
+omits 15 and misses the known four-feature match. The original seven-case/two-
+strategy driver runs after tests/docs finish: 14 isolated sequential workers,
+one warmup/three timed calls/separate citation, all expectations/stability checks
+pass (eight completed/five empty/one failed PHMT-E107). All 42 samples and honest
+whole-worker RSS remain descriptive; different coverage/alternatives establish no
+equivalent-recall speedup or default selection limit. No runtime/test/provider
+change or new full suite is claimed. #29 refinement is already resolved.
+
+Next accept **#15 prepared rigid pose search**: public correspondence/alignment
+composition, search completion, legitimate maximum-coverage early stops, explicit
+failed-search accounting and retrospective use. It can use current MolSysMT tools.
+Then consolidate the remaining reference/placed-pose/attribution acceptance records
+under #14/#13/#19, keeping actual biological pilot/endpoint gates independent.
+#41 public/floor/installed receiving and legacy retirement remain partial, review
+2026-11-11; #60/#66 retain their scopes. Hosted #9, installed/public/platform #23/#10
+and workspace #82 remain separate; addon/new release defer. See [checkpoint](checkpoint.md).
+
 ## Modular strategy comparison accepted; ranked seeds next — 2026-11-03
 
 #27 is resolved with its [receipt](evidence/rigid_comparison_acceptance_20261103_summary.json).

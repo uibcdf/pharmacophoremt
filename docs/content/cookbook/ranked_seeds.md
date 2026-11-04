@@ -4,8 +4,9 @@ Use `get_feature_pair_dissimilarities()` and `rank_rigid_feature_correspondences
 to prioritize supplied guesses before fitting them. The convenience strategy
 `ranked_triplet_seeds` composes both with the existing typed triplet generator.
 It adapts the seed-selection stage in section 2.2.1 of the
-[G3PS paper](https://doi.org/10.3390/molecules26237201); greedy refinement and
-translation/exclusion correction are separate future stages.
+[G3PS paper](https://doi.org/10.3390/molecules26237201). Greedy refinement has its
+[own contract](rigid_refinement.md); translation and exclusion correction remain
+future stages.
 
 ## Prepare an analytical control
 

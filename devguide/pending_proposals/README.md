@@ -6,9 +6,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (7)
+### Active (6)
 
-- [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(active, measured)*
 - [`molsysmt_placed_pose_workflow.md`](molsysmt_placed_pose_workflow.md) — [#13](https://github.com/uibcdf/pharmacophoremt/issues/13) — Deliver a bounded MolSysMT-backed interaction-to-pharmacophore and pose-evaluation workflow. *(active, measured)*
 - [`native_ackredit_attribution.md`](native_ackredit_attribution.md) — [#19](https://github.com/uibcdf/pharmacophoremt/issues/19) — Capture portable native scientific attribution through optional public Ackredit APIs. *(active, measured)*
 - [`native_eralpha_validation.md`](native_eralpha_validation.md) — [#22](https://github.com/uibcdf/pharmacophoremt/issues/22) — Audit the ERalpha snapshot and migrate its regression to a reproducible native workflow. *(active, measured)*

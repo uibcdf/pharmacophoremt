@@ -7,6 +7,36 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Ranked-seed source/API acceptance — 2026-11-03
+
+The [new summary](ranked_seed_acceptance_20261103_summary.json) and checksum-
+qualified original archive record #28 at clean receiving 9731e05. Eighty-two fresh
+controls pass (22 ranked, 60 geometry). Off/on capsules preserve the same 16-seed
+family/eight accepted mappings and geometries for plain/ranked-all; selecting one
+omits 15 and returns a completed empty result, missing the known four-feature
+solution. Twelve pose checks/two round trips each pass with unchanged source
+domains and matching science. Actual capture is 0 items/0 uses host-off and 14/77 host-on. Four original cookbook
+blocks pass (14 items/70 uses); summary rereading adds no credit. The published prose-only
+refinement correction matches strict isolated staged rendering with two neighbor
+stubs and exactly unchanged Python blocks. The primary-source audit is retained.
+
+The unchanged seven-case/two-strategy comparison runs after owned tests/docs:
+14 sequential isolated workers, one warmup/three timed calls/separate attribution
+each; all expectations/stability checks pass. Eight completed/five empty/one failed
+PHMT-E107 record remain distinct. The timed ranked strategy explicitly selects one
+seed; all-ranked coverage is checked separately. All 42 samples, whole-worker RSS,
+provider/source/native/environment identities and actual reached-stage references
+are preserved. Sources/native bytes agree across workers and all four phases.
+Different output families and the actual miss prevent an equivalent-recall speed
+claim or new default seed limit. No runtime/test/input/provider/prefix/sibling
+change, new full suite, clean installed/public/platform or biological claim follows.
+
+Parse the archive's `original_files[name].text` for complete `selection_result.json`,
+`cookbook_result.json` and `benchmark.json`, each retained once with raw SHA-256.
+The selection capsule retains representative first models, full reports and all
+accepted seed geometries. `phases` and the summary are projections; all October and
+earlier source/metadata evidence retains its original identity and scope.
+
 ## Modular rigid comparison acceptance — 2026-11-03
 
 The [new summary](rigid_comparison_acceptance_20261103_summary.json) and checksum-
