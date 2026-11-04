@@ -1,5 +1,15 @@
 # Strategic Roadmap
 
+## Cross-cutting audit priorities — 2026-11-04
+
+See the [architectural, scientific and product audit](audit_20261104.md) for the
+ordered 17-area improvement plan and completion criteria. Address #73 first,
+then coordinate API/persistence/installed reproducibility with scientific study
+design. Sensitivity analysis must preserve an independent final evaluation set;
+optimization follows resource measurements. The list is a planning assessment,
+not a declaration that every area is defective or already implemented. Earlier
+dated milestones and their evidence remain preserved below.
+
 ## Native geometry contracts received; native loader options next — 2026-11-04
 
 #6's [new receipt](evidence/native_geometry_contract_receiving_20261104_summary.json) qualifies definition-owned Point/Sphere/

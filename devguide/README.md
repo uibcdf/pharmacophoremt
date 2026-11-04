@@ -4,6 +4,11 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 ## Strategic Vision
 
+[Architectural, scientific and product audit — 2026-11-04](audit_20261104.md)
+records the discussed list of 17 improvement areas, priorities,
+completion criteria and evidence limits. Start with #73; coordinate API and
+reproducibility work with scientific study design.
+
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
 3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #6 receives definition-owned contracts for four native shapes with public ArgDigest 0.17.0; 1093 full-source test items pass. ArgDigest >=0.17.0 and both CI source routes are aligned. Next #73 fixes confirmed silently ignored native loader options, then method-dependent dispatcher contracts. #6 remains partial; public/installed/platform/hosted gates stay separate. Molecular operations remain MolSysMT-owned; addon deferred, public release still 0.4.0.

@@ -1,5 +1,16 @@
 # Development Checkpoint
 
+## Comprehensive audit recorded — 2026-11-04
+
+The [dated architectural, scientific and product audit](audit_20261104.md)
+preserves the revised list of 17 improvement areas discussed with the maintainer.
+It distinguishes confirmed defects, audit targets and proposed experiments.
+Immediate work remains #73, followed by bounded API contracts under #6, while
+experimental study design can proceed alongside technical consolidation.
+Public 0.4.0 installed qualification and the earlier 1093-case source run retain
+their original scope; this documentation review executes no new science.
+Molecular operations remain MolSysMT-owned; addon and advanced methods defer.
+
 ## Definition-owned native geometry contracts received — 2026-11-04
 
 #6 adopts scoped public ArgDigest contracts for Point, Sphere, SphereAndVector
