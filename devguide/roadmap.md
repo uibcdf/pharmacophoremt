@@ -1,5 +1,27 @@
 # Strategic Roadmap
 
+## Native schema and writer preparation received — 2026-11-04
+
+[#76](https://github.com/uibcdf/pharmacophoremt/issues/76) introduces
+[pharmacophoremt.native@1](native_schema.md) for new JSON/YAML, independently
+of the producer package version. Unknown explicit schemas and model/site/shape
+fields are refused. Historical untagged data keeps its defaults and limits.
+Writers validate and fully encode before opening a destination; invalid scientific
+values or serialization errors preserve existing bytes and absent paths. Disk
+I/O/crash/concurrent-writer atomicity is outside the guarantee.
+
+**265 focused checks pass**, including 58 new guards. [Receipt](evidence/native_schema_writing_20261104_summary.json)
+retains original failures, the six SDF-envelope comparison updates, exact overlays
+on base 0413e6c and all three stable identity comparisons. SDF container source
+and historical private payload are unchanged; #74 waits on MolSysMT #215.
+Source receiving only; no full-suite/clean installed/platform/predictive claim.
+
+Next: #60 / audit item 5, live source references, independent pharmacophore copies
+and explicit molecular variants. Molecular copying/inspection must remain public
+MolSysMT operations. Audit item 4 still has translator-specific fidelity and
+provider-backed SDF migration; #6 nested contracts/#66 study gates remain separate.
+Addon and new release defer. Earlier dated checkpoints retain their original scope.
+
 ## Native persistence validated; SDF container migration tracked — 2026-11-04
 
 [#75](https://github.com/uibcdf/pharmacophoremt/issues/75) fixes external

@@ -7,6 +7,14 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Native schema and writer receiving — 2026-11-04
+
+[Receipt](native_schema_writing_20261104_summary.json) retains 265 passing focused
+cases, all attempts, exact code/test bytes and stable runtime identities. The
+[native contract](../native_schema.md) separates schema/version, tagged versus
+legacy admission and writer preparation versus OS failure guarantees. SDF payload/
+container unchanged; provider migration #74 / MolSysMT #215 remains pending.
+
 ## Native persistence reader validation — 2026-11-04
 
 [Receipt](native_persistence_validation_20261104_summary.json): 207 focused checks

@@ -8,14 +8,14 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 records the discussed list of 17 improvement areas, priorities,
 completion criteria and evidence limits. #73 is now fixed; continue with the
 [current capability inventory](capability_inventory.md), scoped #6 contracts and
-scientific study design. The first dispatch contract is now received; persistence
-field/schema fidelity is the next bounded review.
+scientific study design. Native schema/writer checks are now received under #76;
+live references and independent variants under #60 are the next bounded review.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #75 fixes native file value validation (207 focused checks). [Persistence matrix](persistence_fidelity.md) records fields/schema limits and #74 SDF-container migration waiting on MolSysMT #215. Next: native schema/unknown-field and writer policy. #6 remains partial; molecular operations and formats remain MolSysMT-owned; addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #76 receives native schema and validation/encoding before destination opening (265 focused checks). Next: #60 live references and independent variants. SDF container migration #74 waits for MolSysMT #215; molecular operations/formats remain MolSysMT-owned. #6 stays partial; addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 

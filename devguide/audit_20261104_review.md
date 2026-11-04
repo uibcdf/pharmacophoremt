@@ -213,3 +213,15 @@ Existing SDF container handling directly uses RDKit and is architectural debt,
 now tracked in #74 with a MolSysMT #215 handoff. Previous semantic tests establish
 payload fidelity within their scope, not correct molecular ownership. No new
 molecular routines/provider changes or predictive/installed claims are made.
+
+## Progress — 2026-11-04: item 4 native schema/writer slice fixed (#76)
+
+[Native contract](native_schema.md) and [receipt](evidence/native_schema_writing_20261104_summary.json)
+record 265 passing focused cases and exact bytes on base 0413e6c. New JSON/YAML
+have explicit native schema/field admission; untagged legacy compatibility remains.
+Validation and encoding happen before destination opening, preserving previous
+bytes on those failures. No atomic OS/crash/concurrency guarantee. SDF source/
+private payload unchanged; six tests now compare equal complete pharmacophore
+payloads with their distinct schema envelopes. #74/provider and per-translator
+fidelity remain incomplete. Next independent theme: #60 live references/variants,
+with molecular copying and inspection delegated to public MolSysMT.

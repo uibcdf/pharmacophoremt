@@ -1,5 +1,12 @@
 # Native provenance and persistence
 
+## Native schema received — 2026-11-04
+
+New native JSON/YAML use [pharmacophoremt.native@1](native_schema.md). Explicit
+schema/field admission and validation/encoding-before-open are received under
+#76; legacy untagged reads retain their documented scope. SDF container and
+payload remain unchanged, with molecular ownership migration still #74.
+
 ## Ownership and validation review — 2026-11-04
 
 See the [field/schema matrix and ownership review](persistence_fidelity.md).

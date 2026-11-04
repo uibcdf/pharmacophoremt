@@ -100,3 +100,10 @@ API work; the original-method access gate remains unresolved.
 See [field/schema and ownership review](persistence_fidelity.md): #75 reader
 validation is fixed with 207 focused checks; #74 explicitly tracks unqualified
 SDF-container ownership until a public MolSysMT record/property API is received.
+
+## Native schema/writer receiving — 2026-11-04
+
+[#76 native contract](native_schema.md) records tagged JSON/YAML schema/field
+admission, legacy compatibility and validation/encoding before destination opening.
+265 focused controls pass. SDF private payload/container unchanged, with #74 /
+MolSysMT #215 still pending. Remaining format-specific fidelity is separate.

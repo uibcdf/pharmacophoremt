@@ -1,0 +1,137 @@
+{
+  "accepted_files": {
+    "pharmacophoremt/io/phmt/__init__.py": "718b7f586174cbb63af8fe8e1617b4b4a86dff46e42ef9cf79f4b0d954587b01",
+    "tests/test_io_sdf.py": "43f0e64fad8f578266d567a40a1d40268e7d76cd4b9ab36e2891a5c236611b5f",
+    "tests/test_native_schema_writing.py": "15f1e1549c0c02163226c709d9ed444e8a34a1b3dbce66deec24a422184ae7e2"
+  },
+  "administrative": {
+    "distribution_controls": 22,
+    "index_and_whitespace_checks": true,
+    "reporting_controls": 3,
+    "ruff_formatted_files": 321
+  },
+  "attempt_history": [
+    "Original 52 new guards: 48 failures / 4 passes. Tests execute unknown/missing-field and unknown-schema admission, six-shape exports, invalid/unencodable exports over existing/absent destinations, valid writes, future producer strings and application metadata.",
+    "First broader run: 253 passes / 6 failures in SDF tests comparing their entire legacy payload with newly tagged JSON. No scientific-field mismatch; only the new native JSON schema field differs.",
+    "Six SDF assertions now compare every complete payload field after separately checking the native JSON schema and absent native marker in legacy SDF. Added four tagged nonfinite metadata refusal guards and two legacy extra-field/default guards. No SDF runtime change.",
+    "Final: 265 passes / 0 failures/errors/skips, 58 new schema/writer controls. All three source/native/test/input/metadata identities remain stable.",
+    "Reporting issue inventory #76 addition is a separately executed post-scientific overlay; no repeated full scientific suite inferred."
+  ],
+  "base_commit": "0413e6cc4c8aeb28822b00a379c61fbe3294ee87",
+  "date": "2026-11-04",
+  "full_evidence": {
+    "compressed_bytes": 259195,
+    "compressed_sha256": "ae7ef912022808497686eb44d1cd0791f79c6827987995f2ccfa8c149f3c0534",
+    "path": "native_schema_writing_20261104.json.gz",
+    "uncompressed_bytes": 1051242,
+    "uncompressed_sha256": "a1341349ca220ebdbfcb61380381af5bba8429e30278a336994255813ee1fe72"
+  },
+  "issue": "uibcdf/pharmacophoremt#76",
+  "legacy_untagged_compatibility": true,
+  "native_schema": "pharmacophoremt.native@1",
+  "post_scientific_reporting_inventory_overlay_sha256": "350aed78dd38bf04398c3f106885787a67023fa5cb4c3caf8390bd379d484ffd",
+  "private_legacy_payload_function_unchanged": true,
+  "runs": {
+    "final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-schema-20261104-pbvf10zy/final-temp",
+        "--junitxml=/tmp/phmt-schema-20261104-pbvf10zy/final.xml",
+        "tests/test_native_schema_writing.py",
+        "tests/test_native_persistence_validation.py",
+        "tests/test_io_dispatch.py",
+        "tests/test_io_sdf.py",
+        "tests/test_contracts.py",
+        "tests/test_curation.py",
+        "tests/test_interaction_site.py",
+        "tests/test_native_geometry_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 265,
+      "skipped": 0
+    },
+    "green": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-schema-20261104-pbvf10zy/green-temp",
+        "--junitxml=/tmp/phmt-schema-20261104-pbvf10zy/green.xml",
+        "tests/test_native_schema_writing.py",
+        "tests/test_native_persistence_validation.py",
+        "tests/test_io_dispatch.py",
+        "tests/test_io_sdf.py",
+        "tests/test_contracts.py",
+        "tests/test_curation.py",
+        "tests/test_interaction_site.py",
+        "tests/test_native_geometry_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "failures": 6,
+      "full_identity_unchanged": true,
+      "items": 259,
+      "skipped": 0
+    },
+    "red": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-schema-20261104-pbvf10zy/red-temp",
+        "--junitxml=/tmp/phmt-schema-20261104-pbvf10zy/red.xml",
+        "tests/test_native_schema_writing.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 48,
+      "full_identity_unchanged": true,
+      "items": 52,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.native-schema-writer-receiving@1",
+  "scope": "Linux/Python 3.14.7 source receiving with extracted public ArgDigest 0.17.0 and inherited scientific dependencies; not full-suite, clean installed, all-platform or predictive qualification.",
+  "sdf_container_migration": "uibcdf/pharmacophoremt#74 / uibcdf/molsysmt#215",
+  "sdf_container_source_unchanged": true,
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt-schema-20261104-pbvf10zy",
+    "review": "2026-11-18"
+  },
+  "writer_guarantee": "Validation and full encoding before destination opening. Existing bytes/absent paths preserved on those failures. No atomic OS replacement, disk failure/crash durability or concurrent-writer claim."
+}

@@ -1,5 +1,18 @@
 # Pharmacophore persistence: fields, schema and ownership
 
+## Native schema and writer receiving — 2026-11-04
+
+[#76](https://github.com/uibcdf/pharmacophoremt/issues/76) completes the next native
+slice: [native schema contract](native_schema.md), with 265 focused checks in the
+[receipt](evidence/native_schema_writing_20261104_summary.json). New JSON/YAML are
+tagged pharmacophoremt.native@1; explicit unknown schemas/fields fail and legacy
+untagged files retain defaults. Producer versions remain independent. Writers
+validate and fully encode before opening, preserving destinations on validation/
+serialization failure; OS write/crash/concurrency guarantees are not claimed.
+SDF source and historical private payload are unchanged; #74 remains pending.
+The original matrix below describes its earlier #75 checkpoint; native schema,
+unknown-field and writer rows are superseded by this dated contract.
+
 Reviewed 2026-11-04 on base 83e13bd7d5fbcf42ca10dad1ebeb76cdfe47ae97 and the
 [#75](https://github.com/uibcdf/pharmacophoremt/issues/75) validation overlay.
 Owner: LMMV/dprada. This is the first bounded review for audit item 4; it does not

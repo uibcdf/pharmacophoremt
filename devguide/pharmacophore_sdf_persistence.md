@@ -1,5 +1,12 @@
 # Annotated pharmacophore SDF persistence
 
+## Native JSON envelope separation — 2026-11-04
+
+#76 adds a [native JSON/YAML schema](native_schema.md) only at their export
+boundary. SDF @1 retains its historical untagged private payload and both SD
+properties; all pharmacophore-field comparisons remain guarded. This does not
+migrate the molecular container: #74 / MolSysMT #215 are still pending.
+
 ## Ownership and validation review — 2026-11-04
 
 See the [field/schema matrix and ownership review](persistence_fidelity.md).

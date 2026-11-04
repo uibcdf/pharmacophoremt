@@ -6,6 +6,67 @@ import yaml
 from pharmacophoremt import interaction_site as interaction_sites
 from pharmacophoremt import pyunitwizard as puw
 
+_NATIVE_SCHEMA = "pharmacophoremt.native@1"
+_MODEL_FIELDS = {
+    "schema",
+    "software",
+    "version",
+    "name",
+    "description",
+    "score",
+    "ref_mol",
+    "ref_struct",
+    "metadata",
+    "units",
+    "interaction_sites",
+}
+_SITE_FIELDS = {"features", "essential", "weight", "shape", "metadata"}
+_SHAPE_FIELDS = {
+    "point": {"type", "position"},
+    "sphere": {"type", "center", "radius"},
+    "sphere and vector": {"type", "center", "radius", "direction"},
+    "disk": {"type", "center", "radius", "normal"},
+    "gaussian kernel": {"type", "center", "sigma"},
+    "cylinder": {"type", "start", "end", "radius"},
+}
+
+
+def _require_fields(record, fields, label):
+    if not isinstance(record, dict) or set(record) != fields:
+        raise ValueError(f"Invalid {_NATIVE_SCHEMA} {label}: missing or unknown fields")
+
+
+def _validate_schema(data):
+    """Admit the versioned native envelope or the historical untagged format."""
+    if not isinstance(data, dict):
+        raise ValueError("Native pharmacophore data must be a mapping")
+    if "schema" not in data:
+        return
+    if data["schema"] != _NATIVE_SCHEMA:
+        raise ValueError("Unsupported native pharmacophore schema")
+    _require_fields(data, _MODEL_FIELDS, "model")
+    json.dumps(data, allow_nan=False)
+    if not isinstance(data["version"], str):
+        raise ValueError("Native pharmacophore producer version must be a string")
+    if not isinstance(data["interaction_sites"], list):
+        raise ValueError("Native pharmacophore interaction_sites must be a list")
+    for site in data["interaction_sites"]:
+        _require_fields(site, _SITE_FIELDS, "site")
+        shape = site["shape"]
+        if not isinstance(shape, dict) or not isinstance(shape.get("type"), str):
+            raise ValueError("Invalid native pharmacophore shape")
+        fields = _SHAPE_FIELDS.get(shape["type"])
+        if fields is None:
+            raise ValueError("Unsupported native pharmacophore shape")
+        _require_fields(shape, fields, "shape")
+
+
+def _export_record(pharmacophore):
+    # Keep _to_dict's historical payload stable for the separate SDF @1 format.
+    data = {"schema": _NATIVE_SCHEMA, **_to_dict(pharmacophore)}
+    _from_dict(data)
+    return data
+
 
 def _to_dict(pharmacophore):
     """Internal helper to convert a Pharmacophore to a serializable dictionary."""
@@ -106,6 +167,7 @@ def _from_dict(data):
     )
     from pharmacophoremt.pharmacophore import Pharmacophore
 
+    _validate_schema(data)
     if data.get("software") != "pharmacophoremt":
         raise ValueError(
             "Not a valid PharmacophoreMT file (missing 'software: pharmacophoremt')"
@@ -200,9 +262,10 @@ def to_json(pharmacophore, file_name):
     file_name : str
         Path to the output JSON file.
     """
-    data = _to_dict(pharmacophore)
-    with open(file_name, "w") as f:
-        json.dump(data, f, indent=4)
+    data = _export_record(pharmacophore)
+    text = json.dumps(data, indent=4, allow_nan=False)
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write(text)
 
 
 def load_json(file_name):
@@ -217,7 +280,7 @@ def load_json(file_name):
     -------
     Pharmacophore
     """
-    with open(file_name, "r") as f:
+    with open(file_name, "r", encoding="utf-8") as f:
         data = json.load(f)
     return _from_dict(data)
 
@@ -232,9 +295,10 @@ def to_yaml(pharmacophore, file_name):
     file_name : str
         Path to the output YAML file.
     """
-    data = _to_dict(pharmacophore)
-    with open(file_name, "w") as f:
-        yaml.safe_dump(data, f, sort_keys=False, allow_unicode=True)
+    data = _export_record(pharmacophore)
+    text = yaml.safe_dump(data, sort_keys=False, allow_unicode=True)
+    with open(file_name, "w", encoding="utf-8") as f:
+        f.write(text)
 
 
 def load_yaml(file_name):
@@ -249,6 +313,6 @@ def load_yaml(file_name):
     -------
     Pharmacophore
     """
-    with open(file_name, "r") as f:
+    with open(file_name, "r", encoding="utf-8") as f:
         data = yaml.safe_load(f)
     return _from_dict(data)

@@ -76,9 +76,11 @@ def test_supported_shapes_preserve_scientific_fields_across_unit_contexts(
         assert list(sd.GetConformer().GetAtomPosition(0)) == pytest.approx(
             np.array(CENTER) * 10, abs=5.1e-5
         )
-        assert json.loads(sd.GetProp("PHARMACOPHOREMT_MODEL")) == json.loads(
-            (tmp_path / "native.json").read_text()
-        )
+        sdf_payload = json.loads(sd.GetProp("PHARMACOPHOREMT_MODEL"))
+        native_payload = json.loads((tmp_path / "native.json").read_text())
+        assert native_payload.pop("schema") == "pharmacophoremt.native@1"
+        assert "schema" not in sdf_payload  # The SDF @1 payload stays unchanged.
+        assert sdf_payload == native_payload
     with puw.context(standard_units=["angstrom", "ps", "radians"]):
         restored = load_sdf(path)
         site = restored.interaction_sites[0]
