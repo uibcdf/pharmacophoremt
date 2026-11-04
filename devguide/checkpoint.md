@@ -1,5 +1,59 @@
 # Development Checkpoint
 
+## Optional attribution source/API accepted; package receiving pending — 2026-11-04
+
+#19 is now **partial**, not closed: the source/API review is accepted, while its
+delivered-package/all-minor public-provider gates remain under #10/#23. See the
+[maintained report](pending_proposals/native_ackredit_attribution.md) and
+[new receipt](evidence/attribution_acceptance_20261104_summary.json). At clean
+**213df1116163419e3164df4dc0673c56f178b2a2**, 39 fresh controls pass in 17.52 s
+(21 attribution, 18 contracts), zero failures/errors/skips. Ten intentional warnings
+retain five original groups; no new full suite is claimed.
+
+Fresh host-off/on workflows preserve scientific outcomes, original molecular
+domains and analytical retrospective scores [1,1,0] with perfect known ranking.
+Application sessions remain intact; off/on workflow capture has 3 items/6 uses
+and 12/39 respectively. Host-off does not disable upstream attribution. Independent
+pose results retain the same 11 items/15 uses despite reuse; mutating one leaves
+the other unchanged. Host suspension, successful empty recognition, JSON/YAML and
+five saved-report formats pass. A fresh engine-blocked reader preserves original
+records, all five reports and identical BibTeX with zero new credit.
+
+Reached-method controls credit mixed-class BEDROC, nonempty clique enumeration
+and adapted G3PS seed ranking/assignment; undefined single-class metrics, empty
+graphs and empty neighborhoods do not claim those unreached branches. Contexts
+retain adaptations/omitted stages. Design-only papers stay absent. Cookbook prose
+now distinguishes delivered clique/G3PS stages; both Python blocks stay unchanged
+and pass. Refreshed original/provider citation checks retain their bounded sources.
+
+Global real-provider registration failure under warnings-as-errors retains the
+scientific result, original scientific error and session, with observed MSM-WARN-
+ATTR-001/PHMT-W102. Tracking is failed with no complete references. Strict isolated
+reviewed-page rendering uses four neighbor stubs; full source/native/helper/test/
+input/metadata identities stay stable in four phases. No runtime/test/provider/
+prefix/sibling change is needed. All initial owned execution attempts pass.
+
+The verified 2026-10-13 public 0.23.0/0.12.0 receipt remains historical; it is not
+current/all-minor/installed qualification. Current controlled Ackredit source is
+not evidence of recommended public 0.12.1 receiving. Public extra/floor/support/
+release/platform/hosted claims remain unchanged. Ackredit owns capture/rendering/
+sessions; MolSysMT owns molecular work; PHMT owns optional activation and its
+scientific branch declarations.
+
+**Next: #22 bounded prepared ERalpha source/scientific acceptance.** Review its
+current maintained fragment chain, original input/map/preparation receipts,
+independent deposited-contact and directional/exclusion controls, persistence,
+actual attribution, recipe and qualified provider identity. Preserve unresolved
+full-receptor/preparation/biological gates explicitly; do not guess missing #66
+binding protocols or implement molecular preparation in PHMT. #19 delivery resumes
+only through exact-candidate #10/#23 gates; no release/addon is requested now.
+#41 public/floor/installed migration and historical donor-absence retirement remain
+partial, review 2026-11-11; #60 keeps its concrete-consumer scope. Hosted #9 and
+workspace #82 remain separate. Owned /tmp/phmt19-acceptance-20261104-aqj9ubv7/,
+LMMV/dprada, review 2026-11-18; borrowed #69 prefix, normal editable PHMT
+0.4.0+62.g6a7537b and providers/native unchanged. No local process remains after
+checkpoint. Historical evidence and metadata findings retain their original scope.
+
 ## Observed extraction and placed poses accepted; attribution review next — 2026-11-03
 
 #13 is resolved with its [archive](archive/molsysmt_placed_pose_workflow.md) and

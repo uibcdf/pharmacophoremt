@@ -1,0 +1,375 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "all_minor_public_provider_qualification": false,
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "cookbook_change": "Clarify already delivered reached NetworkX clique algorithms, adapted G3PS stages and single-class BEDROC skip; both Python blocks unchanged.",
+    "documentation_scope": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-W",
+        "--keep-going",
+        "-n",
+        "-b",
+        "html",
+        "/tmp/phmt19-acceptance-20261104-aqj9ubv7/docs-source",
+        "/tmp/phmt19-acceptance-20261104-aqj9ubv7/docs-html"
+      ],
+      "neighbor_stubs": {
+        "aligned_cliques.md": [],
+        "aligned_consensus.md": [],
+        "ranked_seeds.md": [],
+        "rigid_refinement.md": []
+      },
+      "scope": "Strict isolated reviewed maintained attribution cookbook with both unchanged executed Python blocks; four neighbor-only stubs, not full-site or neighbor qualification."
+    },
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "execution_attempts": {
+      "corrections": "No scientific/test/example corrections or runtime/provider changes required; reviewed cookbook clarifies reached versus design-only methods without changing either Python block.",
+      "examples_initial_exit_code": 0,
+      "focused_initial_exit_code": 0,
+      "reader_initial_exit_code": 0,
+      "workflow_initial_exit_code": 0
+    },
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_public_receiving": {
+      "archive_verified": true,
+      "record_schema": "pharmacophoremt.public-attribution-review@1",
+      "scope": "Verified original archived 2026-10-13 public 0.23.0/0.12.0 evidence; not reexecuted on current source and not relabeled as current all-minor/installed PHMT evidence.",
+      "summary": {
+        "baseline_package_identities_preserved": 309,
+        "current_root_sha": "7b346dd6e3285270c76c372d699e2e7a9239e966",
+        "date": "2026-10-13",
+        "development_tests": {
+          "errors": 0,
+          "failures": 0,
+          "junit_reported_tests": 39,
+          "skipped": 0,
+          "tests": 39
+        },
+        "full_evidence": {
+          "compressed_bytes": 181705,
+          "compressed_sha256": "16a23bad9aedf89678f159498452dc61cac625202aabdea88f8f5bb0130263e1",
+          "path": "public_attribution_review_20261013.json.gz",
+          "uncompressed_bytes": 970040,
+          "uncompressed_sha256": "aa47a639dcf36fa78d23722c155328729b95fa3eeb94e73e7798e80e44020e2f"
+        },
+        "initial_development_tests": {
+          "errors": 0,
+          "failures": 1,
+          "junit_reported_tests": 39,
+          "skipped": 0,
+          "tests": 39
+        },
+        "new_cross_provider_cases": 7,
+        "new_viewer_absence_cases": 1,
+        "owners": [
+          "uibcdf/pharmacophoremt#19",
+          "uibcdf/pharmacophoremt#6"
+        ],
+        "prior_source_scientific_cells": 8,
+        "prior_source_verified_jobs": 11,
+        "public_provider_versions": {
+          "ackredit": "0.12.0",
+          "argdigest": "0.15.0",
+          "beartype": "0.22.9",
+          "depdigest": "0.14.0",
+          "molsysmt": "0.23.0",
+          "molsysviewer": "0.24.0",
+          "openmm": "8.6.1",
+          "pytest": "9.1.1",
+          "pytest_receptor": "1.2.0",
+          "pyunitwizard": "0.28.1",
+          "smonitor": "0.19.0"
+        },
+        "public_python": "3.14.8 | packaged by conda-forge | (main, Oct 12 2026, 17:35:27) [GCC 15.3.0]",
+        "public_tests": {
+          "errors": 0,
+          "failures": 0,
+          "junit_reported_tests": 39,
+          "skipped": 0,
+          "tests": 39
+        },
+        "remaining": [
+          "#19 contract/release review",
+          "#6 whole support-library adoption",
+          "#10/#23 installed/public artifact",
+          "#9 accepted current PR receiving",
+          "MolSysSuite #117 scientific helper isolation"
+        ],
+        "removed_active_blocker": "uibcdf/molsysmt#295",
+        "schema": "pharmacophoremt.public-attribution-review-summary@1",
+        "scope": "Selected Linux/Python 3.14 public-provider consumer contracts and independent prior source CI; no new all-minor public or installed PHMT artifact qualification.",
+        "sdk_sha": "8f00e6d9de943b6e4710ea62936e2ebea00fad24",
+        "source_sha": "e9120934e9bd173ccfcfc44fa5c740147c4641f1",
+        "strict_documentation": {
+          "errors": 0,
+          "failures": 0,
+          "junit_reported_tests": 1,
+          "skipped": 0,
+          "tests": 1
+        }
+      }
+    },
+    "installed_wheel_qualification": false,
+    "issue_19_complete": false,
+    "molecular_receiving": "PHMT #41 remains partial for supported-public/floor/installed receiving and historical donor-absence retirement, review 2026-11-11; attribution acceptance does not retire that branch.",
+    "new_pytest_execution": true,
+    "ownership": "Ackredit owns sessions, portable bibliography, deduplication and renderers. PHMT owns optional activation, scientific branch declarations, detached host payloads and preservation of science/errors. Public MolSysMT owns all molecular operations; no molecular or reporting engine copied.",
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "reference_review": {
+      "checks": [
+        {
+          "finding": "Official full author list, title, DOI, year and pages agree with the offline NumPy software-description declaration.",
+          "records": [
+            "numpy"
+          ],
+          "url": "https://numpy.org/citing-numpy/"
+        },
+        {
+          "finding": "Official authors including the corporate SciPy contributors, title, DOI, year and pages agree with the offline software-description declaration.",
+          "records": [
+            "scipy"
+          ],
+          "url": "https://scipy.org/citing-scipy/"
+        },
+        {
+          "finding": "Provider documentation identifies Crouse 2016 and the same DOI/pages. PHMT records a referenced implementation and actual SciPy version, not a copied solver.",
+          "records": [
+            "assignment"
+          ],
+          "url": "https://docs.scipy.org/doc/scipy/reference/generated/scipy.optimize.linear_sum_assignment.html"
+        },
+        {
+          "finding": "Official provider lists Bron/Kerbosch and the Tomita/Tanaka/Takahashi adaptation with matching bibliographic fields. Runtime controls separately establish reached enumeration.",
+          "records": [
+            "bron_kerbosch",
+            "tomita_cliques"
+          ],
+          "url": "https://networkx.org/documentation/stable/reference/algorithms/generated/networkx.algorithms.clique.find_cliques.html"
+        },
+        {
+          "finding": "Original publication record agrees on both authors, title, DOI, year, volume and pages; no new claim of full-text method revalidation.",
+          "records": [
+            "bedroc"
+          ],
+          "url": "https://pubmed.ncbi.nlm.nih.gov/17288412/"
+        },
+        {
+          "finding": "Publisher metadata agrees on W. Kabsch, title, 1976 A32 pages 922\u2013923 and DOI; molecular fitting remains provider-owned.",
+          "records": [
+            "kabsch"
+          ],
+          "url": "https://journals.iucr.org/paper?a12999"
+        },
+        {
+          "finding": "Primary article author/title/DOI/year/article number agree. Sections 2.2.1/2.2.2 distinguish ranking from refinement; runtime contexts retain specific adaptations and excluded stages, not a complete G3PS claim.",
+          "records": [
+            "g3ps_seed_ranking"
+          ],
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8658842/"
+        }
+      ],
+      "networkx_software_description": {
+        "scope": "Existing unchanged offline NetworkX software-description declaration; this turn refreshed its implementation references, not a separate full author-list reinspection.",
+        "url": "https://networkx.org/documentation/stable/#citing"
+      },
+      "review_date": "2026-11-04",
+      "scope": "Refreshed bounded original/provider bibliographic records and method-identity descriptions; literature inspection does not itself credit execution or qualify full algorithms/biological accuracy.",
+      "source": "pharmacophoremt/_private/references.py"
+    },
+    "remaining_issue_19": "Delivered PharmacophoreMT package and all-minor public-provider receiving remain pending with #10/#23. No public extra/floor/support expansion.",
+    "runtime_test_provider_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_review_accepted": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b and controlled providers/native unchanged. This source Ackredit version is not advertised as recommended 0.12.1 public receiving."
+  },
+  "consumer": {
+    "head": "213df1116163419e3164df4dc0673c56f178b2a2",
+    "status": ""
+  },
+  "example_result_attribution": {
+    "items": 11,
+    "uses": 15
+  },
+  "executed_example_blocks": 2,
+  "focused_tests": {
+    "actual_pytest_items": 39,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt19-acceptance-20261104-aqj9ubv7/pytest-temp",
+      "--junitxml=/tmp/phmt19-acceptance-20261104-aqj9ubv7/focused.xml",
+      "tests/test_attribution.py",
+      "tests/test_contracts.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_attribution": 21,
+      "tests.test_contracts": 18
+    },
+    "seconds": 17.52,
+    "skips": 0,
+    "warning_scope": "Intentional host/cross-provider optional-attribution failure controls; five original warning groups retained.",
+    "warnings": 10
+  },
+  "fresh_reader": {
+    "forbidden_imports": [],
+    "new_credit": 0,
+    "original_payload_preserved": true,
+    "reports": [
+      "bibtex",
+      "csl-json",
+      "json",
+      "markdown",
+      "provenance"
+    ]
+  },
+  "full_evidence": {
+    "compressed_bytes": 659935,
+    "compressed_sha256": "e6719d9da7c647038676dddfea9112647d10dba947a3e1fc924fe21bcb63bd5c",
+    "path": "attribution_acceptance_20261104.json.gz",
+    "uncompressed_bytes": 3292375,
+    "uncompressed_sha256": "8794f6be6397a796671d7479503308110da675fd07e64019470d6839a733bb89"
+  },
+  "full_identity_unchanged": {
+    "examples": true,
+    "focused": true,
+    "reader": true,
+    "workflow": true
+  },
+  "global_registration_failure": {
+    "application_session_preserved": true,
+    "capture_status": "failed",
+    "complete_references": null,
+    "diagnostic_codes": [
+      "MSM-WARN-ATTR-001",
+      "PHMT-W102"
+    ],
+    "science_preserved": true,
+    "scientific_error_preserved": true,
+    "warning_policy": "error"
+  },
+  "issue": "uibcdf/pharmacophoremt#19",
+  "measured_date": "2026-11-04",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "reached_branch_controls": {
+    "declared_excluded_stages": true,
+    "empty_graph_enumeration_references": [],
+    "empty_neighborhood_assignment_or_g3ps_credit": false,
+    "mixed_class_bedroc_criterion_credited": true,
+    "nonempty_clique_enumeration_references": [
+      "10.1145/362342.362367",
+      "10.1016/j.tcs.2006.06.015"
+    ],
+    "ranked_seed_basis": "10.3390/molecules26237201",
+    "ranked_seed_role": "methodological_basis",
+    "ranked_seed_section": "2.2.1",
+    "single_class_bedroc_criterion_credited": false,
+    "unimplemented_pharmacophore_clique_papers_credited": false
+  },
+  "schema": "pharmacophoremt.attribution_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#19",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Optional attribution source/API review; public delivery/all-minor receiving remain independently pending",
+    "review_date": "2026-11-18"
+  },
+  "workflow_profiles": [
+    {
+      "actual_workflow_items": 3,
+      "actual_workflow_uses": 6,
+      "analytical_auc": 1,
+      "analytical_bedroc": 1,
+      "application_session_preserved": true,
+      "empty_recognition_completed": true,
+      "host_tracking": false,
+      "independent_result_payloads": false,
+      "paused_host_has_no_top_level_payload": true,
+      "retrospective_scores": [
+        1,
+        1,
+        0
+      ],
+      "round_trips": 0,
+      "saved_report_formats": [],
+      "scientific_outcome": "matched"
+    },
+    {
+      "actual_workflow_items": 12,
+      "actual_workflow_uses": 39,
+      "analytical_auc": 1,
+      "analytical_bedroc": 1,
+      "application_session_preserved": true,
+      "empty_recognition_completed": true,
+      "host_tracking": true,
+      "independent_result_payloads": true,
+      "paused_host_has_no_top_level_payload": true,
+      "retrospective_scores": [
+        1,
+        1,
+        0
+      ],
+      "round_trips": 2,
+      "saved_report_formats": [
+        "bibtex",
+        "csl-json",
+        "json",
+        "markdown",
+        "provenance"
+      ],
+      "scientific_outcome": "matched"
+    }
+  ]
+}

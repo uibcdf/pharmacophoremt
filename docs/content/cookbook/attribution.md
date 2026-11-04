@@ -107,8 +107,15 @@ their reached branch references under the same capture contract.
 Capture separates reached scientific criteria, referenced implementations,
 executed software versions and software-description publications. Assignment
 credits SciPy and its referenced rectangular-assignment implementation when
-executed. BEDROC credits its defining publication when calculated. The clique
-papers currently under review are not credited as executed methods.
+executed. BEDROC credits its defining publication only when its mixed-class
+calculation runs; an undefined single-class result does not credit that criterion.
+The delivered [clique routes](aligned_cliques.md) credit NetworkX and its referenced
+Bron–Kerbosch/Tomita implementation when enumeration runs, including completed
+empty results after enumeration; an empty graph does not credit enumeration.
+[Ranked seeds](ranked_seeds.md) and [greedy refinement](rigid_refinement.md) retain
+their separate adapted G3PS stage, orientation policy and omitted-stage context.
+They do not claim the whole paper's method. Design-only RDP/pharmacophore-clique
+papers remain uncredited as executed methods.
 
 Importing PharmacophoreMT or entering an empty activation context does not load
 Ackredit. Host declarations use consumer-owned identifiers so they do not replace

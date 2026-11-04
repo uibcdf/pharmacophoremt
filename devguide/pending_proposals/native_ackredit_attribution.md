@@ -1,7 +1,7 @@
 ---
 summary: Capture portable native scientific attribution through optional public Ackredit APIs.
 issue: uibcdf/pharmacophoremt#19
-status: active
+status: partial
 opened: 2026-10-02
 closed:
 verification: measured
@@ -13,6 +13,69 @@ supersedes: []
 ---
 
 # Native portable Ackredit attribution
+
+## Source/API contract accepted; delivery remains partial — 2026-11-04
+
+The [new receipt](../evidence/attribution_acceptance_20261104_summary.json) records
+clean receiving **213df1116163419e3164df4dc0673c56f178b2a2**. All 39 fresh controls
+pass in 17.52 s: 21 attribution and 18 contract controls, zero failures/errors/skips.
+Ten warnings in five original groups deliberately exercise optional/cross-provider
+attribution failures. No new full suite is claimed. The guard protects lazy import,
+genuine absence, application sessions, reused/detached references, reached roles/
+versions, serialization, fresh readers and failure isolation with real providers.
+
+Fresh host-off/on analytical workflows preserve matched results and retrospective
+scores [1,1,0], AUC/BEDROC one, empty successful recognition and molecular domains.
+Application sessions remain intact. Host-off records no top-level PHMT payload
+but does not disable providers' independent policies (3 workflow items/6 uses).
+Host-on captures 12 items/39 uses. Both independent pose results retain the same
+11 items/15 uses despite session reuse; mutating the first payload cannot change
+the second. Pausing host capture removes only the PHMT outer payload. JSON/YAML
+preserve the model's original attribution. Five saved-report formats render with
+no new session credit, and a fresh child process reads the original payload and
+all five reports without importing PHMT, MolSysMT, RDKit or SciPy; BibTeX is identical.
+
+Branch controls distinguish executed from design-only references. Mixed-class
+BEDROC credits its criterion; undefined single-class BEDROC does not. Nonempty
+clique enumeration credits NetworkX's Bron–Kerbosch/Tomita references; an empty
+graph does not credit enumeration. Ranked triplets credit adapted G3PS section
+2.2.1 and actual assignment, with methodological_basis role and omitted-stage
+context. Empty neighborhood axes credit neither assignment nor G3PS. The reviewed
+unimplemented RDP/pharmacophore-clique papers remain absent. Separate delivered
+refinement contexts remain stage/orientation-specific; this is not the whole G3PS
+algorithm. Cookbook prose now makes these distinctions; both Python blocks are
+unchanged and execute successfully. Selected original/provider citation records
+were freshly inspected; the receipt names every inspected source and its limits.
+
+A global failure of real Ackredit register_item under warnings-as-errors preserves
+the full scientific result, application session and original scientific exception's
+code/stage/cause type/text. MSM-WARN-ATTR-001 and PHMT-W102 remain observed catalog
+events. The host payload is honestly failed, with offline records/errors and no
+complete bibliography. All initial scientific/example/reader/render attempts pass;
+no runtime/test/provider/prefix/sibling change is needed. Strict isolated reviewed-
+page rendering passes with four neighboring link-target stubs. Full loaded-source/
+native/helper/test/input and metadata identities stay stable in four phases.
+
+This accepts activation, payload, reporting and reached-credit source/API behavior.
+**#19 remains open/partial** for delivered PharmacophoreMT package and all-minor
+public-provider receiving under #10/#23. The original 2026-10-13 public 0.23.0/0.12.0
+archive is checksum-verified and retained as its original measurement, not rerun
+or promoted to current/all-minor/installed evidence. Guide-recommended Ackredit
+0.12.1 is not established by this controlled-source run. No new public extra,
+provider floor, release, platform/hosted, biological or performance claim follows.
+
+Ackredit owns portable capture/report/session machinery; PHMT owns optional
+activation and pharmacophoric method declarations. All molecular operations stay
+in public MolSysMT tools. #41 public/floor/installed receiving and final historical
+donor-absence retirement remain partial (review 2026-11-11); #9/#82 retain their
+hosted/workspace scopes. Next review #22's bounded prepared ERalpha workflow and
+remaining scientific gates, keeping geometry/observation evidence separate from
+biological enrichment and missing original endpoint methods under #66. #60 keeps
+its concrete-consumer gate. Addon/new release defer. Owned temporary root
+/tmp/phmt19-acceptance-20261104-aqj9ubv7/, LMMV/dprada, review 2026-11-18; borrowed
+#69 prefix remains normal editable PHMT 0.4.0+62.g6a7537b with unchanged providers/
+native. No local process remains after checkpoint. Original statements below keep
+their historical scope and are superseded where noted.
 
 ## What
 

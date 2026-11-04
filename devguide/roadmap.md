@@ -1,5 +1,30 @@
 # Strategic Roadmap
 
+## Attribution source/API accepted; real prepared case next — 2026-11-04
+
+#19's [receipt](evidence/attribution_acceptance_20261104_summary.json) accepts the
+source/API contract at clean 213df11: 39 fresh controls, off/on session/reuse/
+branch/failure capsules, five saved-report formats, fresh no-engine/no-credit
+reader, two unchanged examples and strict isolated rendering pass with stable
+identities. Ten warnings are intentional failure controls. Cookbook prose now
+distinguishes reached clique/G3PS stages from design-only papers. No runtime/test/
+provider change or new full suite. Ackredit owns capture/reporting and MolSysMT
+owns molecular work.
+
+**#19 remains partial/open** for delivered PHMT/all-minor public-provider receiving
+under #10/#23. The old public-provider receipt is verified as historical evidence;
+current controlled source does not establish recommended public 0.12.1 receiving,
+an installation extra, a new minimum floor or public/platform/hosted success.
+
+Next review **#22's bounded prepared ERalpha workflow**: original data/preparation
+and maps, observed versus hypothesized sites, independent geometry/exclusions,
+persistence, attribution and current-provider guards/recipe. Preserve its remaining
+full-receptor/preparation/biological gates and #66's missing endpoint methods;
+analytical workflow controls are not biological enrichment. #41 public/legacy
+receiving stays partial (review 2026-11-11), #60 keeps its concrete-consumer scope,
+hosted #9 and workspace #82 remain separate. Addon/new release defer.
+See [checkpoint](checkpoint.md).
+
 ## Observed placed-pose slice accepted; attribution review next — 2026-11-03
 
 #13 is resolved with its [receipt](evidence/placed_pose_acceptance_20261103_summary.json).

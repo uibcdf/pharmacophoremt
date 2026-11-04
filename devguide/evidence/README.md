@@ -7,6 +7,35 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Optional attribution source/API review — 2026-11-04
+
+The [new summary](attribution_acceptance_20261104_summary.json) and checksum-
+qualified archive accept #19's source/API slice at clean 213df11. Thirty-nine
+fresh controls pass (21 attribution, 18 contracts), zero failures/errors/skips;
+ten warnings in five groups intentionally exercise optional tracking failures.
+Off/on analytical workflows preserve science, sessions and molecular domains
+(actual workflow credit 3 items/6 uses off, 12/39 on). Independent results retain
+11 items/15 uses each with detached ownership. JSON/YAML, five saved-report
+formats and a fresh no-engine/no-credit reader preserve original references.
+
+Reached-branch controls distinguish mixed/single-class BEDROC, nonempty/empty
+clique enumeration and ranked/empty neighborhood assignment. G3PS context names
+its adapted stage and excluded stages; unimplemented design papers remain absent.
+Real global registration failure under warnings-as-errors preserves the scientific
+result, original exception and application session; catalog diagnostics remain
+observed and capture honestly fails without a complete bibliography. Both original
+examples pass; strict isolated reviewed-page rendering uses four neighbor stubs.
+Full identities stay stable in four phases; all initial execution attempts pass.
+Only explanatory cookbook prose changes; no runtime/test/provider change or new
+full suite. Bounded primary/provider citation review links are retained.
+
+Parse original_files[name].text for complete workflow_result.json, examples_result.json
+and reader_child_result.json, retained once with raw SHA-256. The verified October
+public-provider receipt remains historical. #19 stays partial/open for delivered
+PHMT/all-minor public receiving; no public release, provider floor/extra or new
+platform/hosted/clean closure is established. Ackredit owns reporting and MolSysMT
+owns molecular operations. Prior evidence keeps its original scope.
+
 ## Observed interaction / placed-pose source/API acceptance — 2026-11-03
 
 The [new summary](placed_pose_acceptance_20261103_summary.json) and checksum-
