@@ -195,3 +195,57 @@ supply a mapping directly to `align_to_pharmacophore()` without automatic seed
 selection. The #31 guard therefore does not qualify arbitrary explicit mappings
 or repair the provider contract. Keep that dependency explicit rather than add a
 consumer molecular validator or import a private provider helper.
+
+## Current prepared rigid source/API acceptance — 2026-11-03
+
+#15 is resolved with its [archive](archive/native_rigid_pose_search.md) and
+[new receipt](evidence/rigid_search_acceptance_20261103_summary.json). Clean receiving
+1e00aca passes 68 fresh controls in 42.89 s (13 rigid search, 26 seeded scoring,
+eight retrospective, 21 attribution), zero failures/errors/skips. Ten intentional
+attribution-failure warnings retain their original logs/groups. No new full suite
+is claimed. Existing source/frame/selection, angular/chemical, provider-error,
+exclusion, score and accounting contracts remain guarded.
+
+Fresh off/on prepared-input controls verify recovery and standalone provider tools.
+Identity and fitted admissible coverage-one hits can prove the compatibility
+maximum despite incomplete enumeration, retaining zero and one fitted seeds
+respectively. An exclusion-vetoed fit at one is not an admissible maximum; without
+one, incomplete work raises search_budget with PHMT-E105 cause. Complete negatives
+retain checked scores. Explicit seed-only no-pose negatives retain fit_value=None,
+pose_evaluated=False/no assignments and valid binary zero, distinguished by status
+from failed searches. No initial-frame coverage is silently used as a molecular score.
+
+| Control | Retained outcome | Completion/criterion evidence |
+| --- | --- | --- |
+| Valid supplied identity, one-product bound | matched, fit 1, no fit call | enumeration incomplete; optimal_fit_found |
+| Valid ionic fitted seed, six-product bound | matched, fit 1, one fit | enumeration incomplete; optimal_fit_found |
+| Unproven moved-source bound | failed, no fit value | search_budget caused by PHMT-E105 |
+| Fully enumerated exclusion veto | not_matched, fit 1 | enumeration_complete, retained clashes |
+| Truncated exclusion-vetoed work | failed, no fit value | no admissible maximum proof |
+| Complete seed-only no-pose negative | not_matched, fit None, ranking 0 | enumeration complete; pose_evaluated=False |
+
+The compatibility retrospective route explicitly selects checked_pose_coverage.
+A full six-input analytical ranking retains repeated/generator identity, three
+active hits and AUC/BEDROC one. A limited run preserves original classes 3/3,
+failures at [1,3], evaluated indices [0,2,4,5] and scores [1,1,0,0]; two evaluated
+inputs remain in each class. Failures never become scored negatives. JSON/YAML
+read under changed unit policies retains metadata and reference/moved/negative
+results (1/1/0). Molecular-domain fingerprints remain unchanged under each same
+unit policy; off/on science agrees with actual credit 3 items/6 uses host-off and 13/50 host-on.
+
+Both unchanged Python examples pass (13 items/50 uses); strict isolated original-page
+rendering passes with three neighbor stubs. Full source/native/helper/test/input/
+metadata identity remains stable in all three phases. An initial wrong-path
+launcher never started tests/imports and is retained separately. No runtime/test/
+input/provider/prefix/sibling change is needed. All molecular work remains public
+MolSysMT calls; PHMT owns pharmacophoric proposal/pose/termination/scoring decisions.
+
+This accepts the declared finite source/API method, not continuous/global pose
+or conformational completeness, minimum-RMSD tie optimization, biology, affinity
+or performance. #63's binary criterion remains independently declared. Clean
+installed/public/platform/hosted #23/#10/#9, workspace #82 and #41 public/legacy
+receiving (review 2026-11-11) remain separate. Earlier provider inspections and
+future-work lists above retain their dated scope; prepared conformers, consensus
+and refinement now have their own delivered/accepted contracts. Next accept #14's
+reference-ligand route; #13/#19 retain their owning reviews. Owned resources remain
+LMMV/dprada for review 2026-11-17.

@@ -1,0 +1,278 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "completion": "Unit coverage of an admissible compatibility pose proves maximal checked coverage even with incomplete triplet enumeration. Binary seed-hit uses its own hit proof. Neither criterion proves complete alternative enumeration, continuous/global rigid feasibility, conformational coverage or minimum RMSD.",
+    "documentation_scope": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "sphinx",
+        "-W",
+        "--keep-going",
+        "-n",
+        "-b",
+        "html",
+        "/tmp/phmt15-acceptance-20261103-yioexkdv/docs-source",
+        "/tmp/phmt15-acceptance-20261103-yioexkdv/docs-html"
+      ],
+      "neighbor_stubs": [
+        "conformer_screening_workflow",
+        "reference_ligand_workflow",
+        "seeded_ranking_workflow"
+      ],
+      "scope": "Strict isolated original maintained rigid-search page and its two executed examples; neighbor link-target stubs only, not full-site/neighbor contract qualification."
+    },
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "execution_attempts": {
+      "correction": "Launch the existing script from the actual owned root. No library/test/provider change.",
+      "initial_launcher": {
+        "actual_root": "/tmp/phmt15-acceptance-20261103-yioexkdv",
+        "attempted_script": "/tmp/phmt15-acceptance-20261103-6q4b3h2v/run_suite.py",
+        "exit_code": 2,
+        "qualified": false,
+        "reason": "One-off launch command used an incorrect temporary basename. Python could not open the file; no test/import/scientific execution started."
+      }
+    },
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_fallback": "PHMT #41 stays partial for public/floor/installed receiving and final legacy retirement, review 2026-11-11.",
+    "installed_wheel_qualification": false,
+    "new_pytest_execution": true,
+    "ownership": "MolSysMT supplies all molecular construction, chemical/coordinate inspection, motion, point-cloud fitting, copy/get/set and RMSD. PHMT owns pharmacophoric triplet choice, evaluated-pose acceptance, discrete termination proofs, score interpretation and failure accounting.",
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_scientific_definition_changes": false,
+    "scoring": "Compatibility partial coverage requires explicit checked_pose_coverage consent for retrospective ranking and remains frame dependent. Seeded_hit binary ranking is independently declared; a complete no-pose negative can have fit_value=None and score zero, while a failed search has no score.",
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b; controlled providers/native unchanged; no prefix/sibling mutation."
+  },
+  "consumer": {
+    "head": "1e00aca9a9f389adbeca41ff00388ce02570b895",
+    "status": ""
+  },
+  "examples_actual_attribution": {
+    "items": 13,
+    "uses": 50
+  },
+  "executed_example_blocks": 2,
+  "focused_tests": {
+    "actual_pytest_items": 68,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt15-acceptance-20261103-yioexkdv/pytest-temp",
+      "--junitxml=/tmp/phmt15-acceptance-20261103-yioexkdv/focused.xml",
+      "tests/test_rigid_search.py",
+      "tests/test_seeded_scoring.py",
+      "tests/test_retrospective.py",
+      "tests/test_attribution.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_attribution": 21,
+      "tests.test_retrospective": 8,
+      "tests.test_rigid_search": 13,
+      "tests.test_seeded_scoring": 26
+    },
+    "seconds": 42.89,
+    "skips": 0,
+    "warning_scope": "Intentional optional/cross-provider attribution-failure controls; original receptor warning groups/log retained.",
+    "warnings": 10
+  },
+  "full_evidence": {
+    "compressed_bytes": 871875,
+    "compressed_sha256": "879fc2974f7a2d24f826d36fb6b1676af09e1400c74568d2161b1f16197947c8",
+    "path": "rigid_search_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 8374526,
+    "uncompressed_sha256": "a1517758dcb55ede54a13a334ec4633acde3ba5352dc2fa074d2af3b5f39b0e1"
+  },
+  "full_identity_unchanged": {
+    "examples": true,
+    "focused": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#15",
+  "measured_date": "2026-11-03",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "schema": "pharmacophoremt.rigid_search_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#15",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Prepared rigid pose-search source/API acceptance, maximum-proof versus incomplete work and retrospective failure accounting; no provider/prefix/sibling mutation",
+    "review_date": "2026-11-17"
+  },
+  "workflow_profiles": [
+    {
+      "actual_items": 3,
+      "actual_uses": 6,
+      "binary_no_pose_fit_value": null,
+      "binary_no_pose_negative_score": 0,
+      "exclusion_unit_coverage_is_not_maximum": true,
+      "host_tracking": false,
+      "identity_zero_fit": true,
+      "incomplete_fitted_maximum": {
+        "enumeration_complete": false,
+        "identity_pose_tested": true,
+        "max_trials": 6,
+        "method": "rigid_triplet_fit@1",
+        "n_fitted": 1,
+        "n_proposals": 1,
+        "n_pruned": 5,
+        "n_trials": 6,
+        "termination": "optimal_fit_found"
+      },
+      "incomplete_identity_maximum": {
+        "enumeration_complete": false,
+        "identity_pose_tested": true,
+        "max_trials": 1,
+        "method": "rigid_triplet_fit@1",
+        "n_fitted": 0,
+        "n_proposals": 0,
+        "n_pruned": 1,
+        "n_trials": 1,
+        "termination": "optimal_fit_found"
+      },
+      "moved_recovered": true,
+      "reflection_and_distortion_rejected": true,
+      "retrospective": {
+        "full_auc": 1.0,
+        "full_bedroc": 1.0,
+        "limited_active_evaluated": 2,
+        "limited_decoy_evaluated": 2,
+        "limited_evaluated_indices": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "limited_failed": 2,
+        "limited_scores": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "original_actives": 3,
+        "original_decoys": 3
+      },
+      "round_trips": 2,
+      "source_domains_unchanged_in_both_unit_policies": true,
+      "unproven_failure": {
+        "cause_code": "PHMT-E105",
+        "code": "PHMT-E103",
+        "query_returned": false,
+        "stage": "search_budget"
+      }
+    },
+    {
+      "actual_items": 13,
+      "actual_uses": 50,
+      "binary_no_pose_fit_value": null,
+      "binary_no_pose_negative_score": 0,
+      "exclusion_unit_coverage_is_not_maximum": true,
+      "host_tracking": true,
+      "identity_zero_fit": true,
+      "incomplete_fitted_maximum": {
+        "enumeration_complete": false,
+        "identity_pose_tested": true,
+        "max_trials": 6,
+        "method": "rigid_triplet_fit@1",
+        "n_fitted": 1,
+        "n_proposals": 1,
+        "n_pruned": 5,
+        "n_trials": 6,
+        "termination": "optimal_fit_found"
+      },
+      "incomplete_identity_maximum": {
+        "enumeration_complete": false,
+        "identity_pose_tested": true,
+        "max_trials": 1,
+        "method": "rigid_triplet_fit@1",
+        "n_fitted": 0,
+        "n_proposals": 0,
+        "n_pruned": 1,
+        "n_trials": 1,
+        "termination": "optimal_fit_found"
+      },
+      "moved_recovered": true,
+      "reflection_and_distortion_rejected": true,
+      "retrospective": {
+        "full_auc": 1.0,
+        "full_bedroc": 1.0,
+        "limited_active_evaluated": 2,
+        "limited_decoy_evaluated": 2,
+        "limited_evaluated_indices": [
+          0,
+          2,
+          4,
+          5
+        ],
+        "limited_failed": 2,
+        "limited_scores": [
+          1,
+          1,
+          0,
+          0
+        ],
+        "original_actives": 3,
+        "original_decoys": 3
+      },
+      "round_trips": 2,
+      "source_domains_unchanged_in_both_unit_policies": true,
+      "unproven_failure": {
+        "cause_code": "PHMT-E105",
+        "code": "PHMT-E103",
+        "query_returned": false,
+        "stage": "search_budget"
+      }
+    }
+  ]
+}

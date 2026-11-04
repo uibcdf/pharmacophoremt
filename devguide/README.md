@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #28 ranked-stage acceptance is resolved. All 82 fresh controls, off/on selection capsules, four cookbook blocks/strict isolated staged render and 14 sequential comparison controls pass with stable identities. All seeds preserve eight accepted mappings; selecting one misses that known match. Molecular operations remain MolSysMT-owned; no default limit or equivalent-recall speedup is inferred. Next accept #15 prepared rigid pose search; #29 refinement is resolved. #41 public/legacy receiving stays partial (review 2026-11-11), #60/#66 retain independent gates. Hosted/public/workspace qualification remains separate; public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #15 prepared rigid pose-search acceptance is resolved. All 68 fresh controls, off/on maximum-proof/failure/retrospective capsules, native persistence, two examples and strict isolated rendering pass with stable identities. Molecular operations use MolSysMT. Valid coverage-one maxima retain incomplete enumeration; unproven/vetoed truncation fails. Compatibility coverage and explicit binary ranking stay distinct. Next accept #14 reference construction, then #13/#19. #41 public/legacy receiving stays partial (review 2026-11-11); #60/#66 and hosted/public/workspace gates remain separate. Public release stays 0.4.0.
 
 ## Classical Workflow Specification
 

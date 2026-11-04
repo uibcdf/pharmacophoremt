@@ -1,5 +1,29 @@
 # Strategic Roadmap
 
+## Rigid pose-search acceptance complete; reference construction next — 2026-11-03
+
+#15 is resolved with its [receipt](evidence/rigid_search_acceptance_20261103_summary.json).
+At clean 1e00aca, 68 fresh controls, off/on prepared rigid/termination/failure
+capsules, two examples and strict isolated rendering pass with stable identities.
+Ten warnings are intentional attribution-failure controls. No runtime/test/provider
+change or new full suite is claimed. Public MolSysMT owns molecular work.
+
+Valid coverage-one hits can prove the compatibility maximum despite incomplete
+triplet enumeration, retaining the incomplete flag. A vetoed fit at one cannot;
+unproven truncation is a PHMT-E105-caused failure. Explicit seeded-hit no-pose
+negatives retain binary zero and no fabricated pose. Retrospective accounting
+preserves classes, duplicate/generator indices and unscored failures. Native
+persistence/unit and source-domain controls pass. Neither criterion guarantees
+continuous/global poses or biological activity; #63 scoring consent stays explicit.
+
+Next accept **#14 native reference-ligand construction**, independently reviewing
+shared six-family chemistry/geometry, source/group mappings, generated constraints,
+placed matching/persistence and its example. Then accept #13's observation/placed-
+pose and #19's attribution contracts. Current MolSysMT tools support this work.
+#41 public/floor/installed migration and legacy retirement remain partial, review
+2026-11-11; #60/#66 retain their scopes. Hosted #9, installed/public/platform #23/#10
+and workspace #82 remain separate; addon/new release defer. See [checkpoint](checkpoint.md).
+
 ## Ranked-seed acceptance complete; prepared rigid search next — 2026-11-03
 
 #28 is resolved with its [receipt](evidence/ranked_seed_acceptance_20261103_summary.json).

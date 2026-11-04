@@ -7,6 +7,34 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Prepared rigid pose-search acceptance — 2026-11-03
+
+The [new summary](rigid_search_acceptance_20261103_summary.json) and checksum-
+qualified archive record #15 at clean 1e00aca. Sixty-eight fresh controls pass
+(13 rigid, 26 seeded scoring, eight retrospective, 21 attribution); ten warnings
+are deliberate optional/cross-provider attribution failures. Off/on capsules verify
+proper recovery, independent proposals/MolSysMT alignment, admissible identity and
+fitted unit-coverage maxima with retained incomplete enumeration, exclusion-vetoed
+coverage one and unproven PHMT-E105-caused failures. Complete seed-only no-pose
+negatives retain binary zero and fit None without fabricated assignments.
+
+Analytical retrospective ranking keeps six original inputs, repeated/generator
+identity and perfect known ranking. Limited work retains classes 3/3, failures
+[1,3], evaluated indices [0,2,4,5] and scores [1,1,0,0]. JSON/YAML and like-unit-
+policy source fingerprints remain unchanged; off/on science agrees with actual
+credit 3 items/6 uses host-off and 13/50 host-on. Both documented examples pass (13 items/50 uses); strict isolated
+original-page rendering uses three neighbor stubs. Full identities stay stable
+in all three phases. An initial launcher exited for a wrong temporary basename
+before imports/tests; it is retained separately, not qualified as a scientific run.
+No library/test/input/provider/prefix/sibling change or new full suite is claimed.
+
+Parse `original_files[name].text` for complete `workflow_result.json` and
+`examples_result.json`, retained once with raw SHA-256; `phases` and the summary
+are projections. Molecular operations remain MolSysMT-owned. These are declared
+finite prepared-source/score/accounting controls, not continuous/global completeness,
+minimum-RMSD optimization, biology, performance or clean installed/public/platform/
+hosted qualification. All earlier evidence and metadata findings keep their scopes.
+
 ## Ranked-seed source/API acceptance — 2026-11-03
 
 The [new summary](ranked_seed_acceptance_20261103_summary.json) and checksum-

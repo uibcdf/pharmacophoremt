@@ -1,5 +1,51 @@
 # Development Checkpoint
 
+## Prepared rigid pose search accepted; reference construction next — 2026-11-03
+
+#15 is resolved with its [archive](archive/native_rigid_pose_search.md) and
+[receipt](evidence/rigid_search_acceptance_20261103_summary.json). Clean receiving
+**1e00aca9a9f389adbeca41ff00388ce02570b895** passes 68 fresh controls in 42.89 s
+(13 rigid, 26 seeded scoring, eight retrospective, 21 attribution), zero failures/
+errors/skips. Ten intentional optional/cross-provider attribution-failure warnings
+retain their original groups/logs. No new full suite is claimed.
+
+Fresh off/on prepared controls recover moved poses, reject reflection/distortion/
+missing chemistry, and compose independent proposals/public MolSysMT alignment.
+Admissible identity and fitted unit-coverage hits preserve incomplete enumeration
+with zero/one fit, while legitimately proving the compatibility maximum. Exclusion
+veto at fit one is not such a proof; unfinished unproven work retains search_budget/
+PHMT-E105 failure. Explicit seed-only no-pose negatives retain fit None, no invented
+assignments and binary zero; failed searches remain separately unscored. Compatibility
+partial coverage remains pose evidence, with explicit retrospective scoring consent.
+
+A six-input analytical full retrospective run retains repeated/generator identity,
+three active hits and AUC/BEDROC one. The limited run preserves original classes
+3/3, failures [1,3], evaluated indices [0,2,4,5], scores [1,1,0,0] and two evaluated
+inputs in each class. JSON/YAML round trips under changed units preserve metadata
+and outcomes. Source domains stay unchanged under like-unit-policy comparisons;
+off/on science agrees with credit 3 items/6 uses host-off and 13/50 host-on. Both original
+example blocks pass (13 items/50 uses); strict isolated rendering uses three neighbor
+stubs. Full identities are stable in focused/workflow/example phases. A first
+wrong-path launcher exited before imports/tests and is retained separately.
+
+No library/test/input/scientific-definition/provider/prefix/sibling change is needed.
+All molecular construction/inspection/motion/fit/copy/get/set/RMSD use MolSysMT;
+PHMT owns pharmacophoric proposals, pose constraints, termination/score interpretation
+and failure accounting. These are finite prepared fragment controls, not biological,
+performance, continuous/global or published-delivery qualification.
+**Next: #14 reference-ligand source/API acceptance**, reviewing six-family shared
+recognition/geometry, grouped participant mappings, query construction, placed
+matching, persistence and its example. Then consolidate #13 observation/placed-pose
+and #19 attribution contracts. #63's independent binary criterion stays intact.
+#41 public/floor/installed receiving and legacy retirement stay partial (review
+2026-11-11); #60/#66 retain their gates. Hosted #9, installed/public/platform #23/#10
+and workspace #82 remain separate; addon/new release defer.
+
+Owned `/tmp/phmt15-acceptance-20261103-yioexkdv/`, LMMV/dprada, review 2026-11-17.
+Borrowed #69 venv remains normal editable PHMT 0.4.0+62.g6a7537b with unchanged
+controlled providers/native. No local process remains after closeout. Historical
+reports/evidence/metadata findings retain their original scopes.
+
 ## Ranked-seed stage accepted; prepared rigid search next — 2026-11-03
 
 #28 is resolved with its [archive](archive/g3ps_ranked_seed_tools.md) and
