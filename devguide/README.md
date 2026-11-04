@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #24 aligned-clique source/API acceptance is resolved. All 60 fresh controls, off/on analytical capsules (29 pose evaluations each), six JSON/YAML round trips, three cookbook blocks and strict isolated rendering pass with stable identities. All molecular operations use MolSysMT; PHMT owns cached pharmacophoric compatibility/aggregation/packages. Next accept #26 prepared rigid unaligned consensus. #41 public/legacy migration remains partial (review 2026-11-11); #66 awaits four original methods; #60 is available for a concrete variant. Hosted/public/workspace gates remain separate; public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #26 prepared rigid unaligned source/API acceptance is resolved. All 95 fresh controls, five off/on analytical cases under both baseline families, 112 pose evaluations and eight round trips per profile, two cookbook blocks and strict isolated rendering pass with stable identities. Molecular fitting/transformation/replay use MolSysMT; PHMT owns pharmacophoric correspondences and bounded consensus. Next accept #27 modular strategy comparison and its objective counterexample. #41 public/legacy migration stays partial (review 2026-11-11); #66 awaits four original methods; #60 retains independent-copy receiving. Hosted/public/workspace gates remain separate; public release stays 0.4.0.
 
 ## Classical Workflow Specification
 

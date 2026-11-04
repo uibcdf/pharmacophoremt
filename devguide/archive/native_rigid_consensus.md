@@ -1,9 +1,9 @@
 ---
 summary: Build alternative native consensus models from prepared rigid unaligned ligands.
 issue: uibcdf/pharmacophoremt#26
-status: active
+status: resolved
 opened: 2026-10-03
-closed:
+closed: 2026-11-03
 verification: measured
 area: [modeling, consensus, attribution]
 guard: tests/test_rigid_consensus.py
@@ -13,6 +13,75 @@ supersedes: []
 ---
 
 # Prepared rigid unaligned consensus and comparable proposal strategies
+
+## Resolution — 2026-11-03
+
+Reviewed and incorporated as the prepared rigid unaligned source/API method.
+The [new receipt](../evidence/rigid_consensus_acceptance_20261103_summary.json)
+records clean receiving head **0bab03aaa089418be11d2be2efb3c8bd6f7ff29e**.
+All **95 freshly executed controls** pass in 50.44 s without failures/errors/skips:
+25 rigid-consensus, 10 modular tools and 60 correspondence-geometry controls.
+They protect an independent injective oracle, both baseline families, six symmetric
+mappings, noncoplanar reflection/distortion, degenerate centers, explicit pivot/
+selection/frame/units, unplaced support, preflight budgets, public-tool composition,
+provider error propagation, actual attribution and native persistence. No new full
+suite is claimed.
+
+Fresh host-off/on capsules use five frozen analytical cases with both baseline
+strategies. Typed recovery explicitly adds one nonempty, unplaced charge source:
+its original feature remains in evidence and support stays 2/3. Every accepted
+typed placement recovers the original atom coordinates within 1e-12 nm. The
+association family attempts one fit and retains one model; triplets attempt eleven
+fits and retain seven. Six symmetric mappings/layouts/models per family remain
+separate. Reflected feature geometry and an empty source each complete with no
+models; the reflected case retains rejected fits, not chemical-absence evidence.
+The exhausted fit budget raises PHMT-E107/complete=False without a query.
+
+Per tracking profile, the ten case/strategy records contain four completed,
+four completed-empty and two deliberately failed calculations; twenty models
+pass 112 pose evaluations (56 matched, 56 valid negatives), including public
+MolSysMT replay of retained placements and rejection of the original unaligned
+frame. Eight JSON/YAML round trips under changed unit policies preserve model
+metadata and outcomes. All declared molecular domains remain unchanged within
+both pm and default unit-policy comparisons. Off/on scientific projections agree;
+actual prepared-input credit is 3 items/6 uses host-off and 16/75 host-on. Reached
+least-RMSD, clique and assignment references are retained; unexecuted RDP/frequent-
+clique/G3PS methods receive no runtime credit.
+
+Both unchanged cookbook blocks execute with application-owned capture
+(16 items/68 uses); strict isolated Sphinx rendering passes with four neighboring
+link-target stubs. Full loaded source/native/helper/test/input and metadata
+identities are stable in focused, capsule and cookbook phases. No library/test/
+fixture/scientific-definition/provider/prefix/sibling change is needed.
+
+MolSysMT owns conversion, molecular inspection, motion, native anchor clouds,
+proper least-RMSD fitting, copy/set/replay and RMSD. PHMT proposes and validates
+pharmacophoric correspondences and assembles bounded placement/layout/hypothesis
+alternatives. NetworkX supplies generic clique enumeration. No local molecular
+solver, conformer generation, hidden preparation or fitted-pose early stop is added.
+Completion remains one pivot and its declared finite family; maximal mappings
+exclude submappings. Equivalent poses from different seeds remain separate, and
+support does not imply affinity, chemical uniqueness or distinct binding modes.
+
+The dated October primary-source survey remains linked and its objectives and
+ownership distinctions are reviewed. Current accessible primary texts confirm
+the frequent-clique/conformer-support and Pharmer index distinctions. Several
+other endpoints are inaccessible or challenged; the receipt retains those exact
+access limitations. No new complete literature replication review, latest external
+software qualification, external-algorithm equivalence or speed ranking is claimed.
+This closes the documented comparison/source-API slice without converting design
+citations into executed implementations.
+
+This resolves #26, not clean installed/public/platform/hosted (#23/#10/#9),
+inherited workspace (#82), biological or performance qualification. #41 remains
+partial for supported-public/floor/installed receiving and final legacy retirement
+(review 2026-11-11). Next #27 independently accepts the modular comparison driver,
+its warped-square objective counterexample and honest timing/memory scope. Its
+ten modular guards passing here do not close that broader comparison. #60 retains
+independent-copy receiving; #66 still awaits four original binding methods.
+Addon/new release remain deferred. Owned /tmp/phmt26-acceptance-20261103-o71te38f/,
+LMMV/dprada, review 2026-11-17; no local process remains after closeout. Original
+October claims below retain their identities; pending-review statements are historical.
 
 ## What
 

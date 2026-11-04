@@ -1,5 +1,30 @@
 # Strategic Roadmap
 
+## Rigid unaligned source/API acceptance complete; comparison next — 2026-11-03
+
+#26 is resolved with its [receipt](evidence/rigid_consensus_acceptance_20261103_summary.json):
+95 fresh controls at clean 0bab03a, zero failures/errors/skips. Five analytical
+cases under both families and host-tracking modes preserve proper rigid recovery,
+reflection rejection, six symmetric alternatives, empty completion and failed
+budgets. Per profile, 20 models pass 112 pose evaluations and eight JSON/YAML round
+trips. Unplaced nonempty sources retain their original evidence and denominator.
+Both cookbook blocks and strict isolated rendering pass; source/native/metadata
+identities and molecular domains remain stable. Molecular operations use MolSysMT;
+no runtime/test/input/provider change or new full-suite claim follows.
+
+Next accept **#27 modular tools and reproducible strategy comparison**: inspect
+its unchanged original opt-in driver and frozen warped-square counterexample,
+objective/coverage differences, independent tools, source/input/provider identity,
+isolated repeats/timing, memory scope and separate actual credit. Completed-empty
+and failed cases must stay distinct; different output families do not establish
+a universal speed winner. Ten modular controls passing in #26 are only part of
+that independent acceptance. Then review #28's ranked proposal stage separately.
+
+#41 public/floor/installed migration and final legacy retirement remain partial,
+review 2026-11-11. #60 independent-copy receiving and #66's four original methods
+retain their scopes. Hosted #9, installed/public/platform #23/#10 and workspace #82
+remain separate; addon/new release stay deferred. See [checkpoint](checkpoint.md).
+
 ## Aligned clique source/API acceptance complete; next rigid consensus — 2026-11-03
 
 #24 is resolved. The [receipt](evidence/aligned_clique_acceptance_20261103_summary.json)

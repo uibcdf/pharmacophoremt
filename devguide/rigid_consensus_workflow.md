@@ -163,3 +163,44 @@ branch capture and native JSON retention. Fixtures have analytical coordinates a
 declared chemistry; they are not experimentally validated pharmacophore cases.
 
 See the [executable cookbook](../docs/content/cookbook/rigid_consensus.md).
+
+## Current source/API acceptance — 2026-11-03
+
+#26 is resolved with its [archived report](archive/native_rigid_consensus.md) and
+[new receipt](evidence/rigid_consensus_acceptance_20261103_summary.json). Clean
+receiving head 0bab03a passes 95 fresh controls (25 rigid consensus, 10 modular,
+60 correspondence geometry) in 50.44 s without failures/errors/skips. Independent
+injective, degenerate, reflection, symmetry, support, frame/state, budget, provider-
+error and actual-attribution guards protect the two baseline families. This is
+focused source receiving, not a new full suite.
+
+Five frozen analytical cases run under both methods and both host-tracking modes.
+Typed recovery adds an explicitly declared nonempty unplaced source, retaining its
+one charge feature and support 2/3. Atom coordinates recover within 1e-12 nm. The
+association family has one fit/model; the triplet family has eleven fits/seven
+models. Both symmetric families retain six mappings/layouts/models. Reflection
+and empty source complete without models; exhausted fits fail with no query.
+Each profile retains four completed, four completed-empty and two failed records,
+20 models, 112 successful pose checks and eight JSON/YAML round trips across unit
+policies. Original frames remain unchanged and correctly fail placed-pose queries;
+public MolSysMT replay of retained placement evidence passes. Off/on science and
+molecular-domain fingerprints agree under each identical unit policy.
+
+Actual prepared-input capture is 3 items/6 uses host-off and 16/75 host-on. Both original
+cookbook blocks pass (16 items/68 uses), with strict isolated rendering using four
+neighbor link-target stubs. Full source/native/helper/test/input/metadata identity
+is stable in all three phases. No runtime/test/input/provider/prefix change is
+needed. The molecular fit/copy/transform/replay boundary remains public MolSysMT;
+PHMT owns cached pharmacophoric matching/acceptance and bounded assembly.
+
+The [strategy survey](pharmacophore_search_strategies.md) remains a dated review.
+Fresh access checks confirm only the accessible frequent-clique and Pharmer primary
+texts; unavailable endpoints are preserved in the receipt and are not labeled a
+fresh full-method review. Literature alternatives remain separate from runtime
+credits, performance, commercial-release behavior or implemented equivalence.
+This acceptance retains the explicit finite-family/pivot limits above and does
+not establish global optimum, unique geometry, biology, affinity or clean public/
+installed/platform/hosted qualification. #23/#10/#9/#82 retain their scopes; #41
+public/legacy receiving stays partial, review 2026-11-11. Next #27 independently
+accepts the comparison driver and objective counterexample. Owned resources remain
+with LMMV/dprada for review 2026-11-17.

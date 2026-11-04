@@ -1,5 +1,52 @@
 # Development Checkpoint
 
+## Prepared rigid unaligned consensus accepted; comparison next — 2026-11-03
+
+#26 is resolved with its [archived report](archive/native_rigid_consensus.md) and
+[new receipt](evidence/rigid_consensus_acceptance_20261103_summary.json). Clean
+receiving head **0bab03aaa089418be11d2be2efb3c8bd6f7ff29e** passes 95 fresh
+controls in 50.44 s (25 rigid, 10 modular, 60 correspondence geometry), without
+failures/errors/skips. No new full suite is claimed. Both finite proposal families,
+independent mapping oracle, degenerate/reflected geometry, six symmetric mappings,
+explicit source/frame/pivot, budgets, provider errors and actual credit retain guards.
+
+Fresh off/on capsules execute five frozen analytical cases with both methods.
+Typed recovery adds a nonempty unplaced charge source and retains its original
+feature/support denominator (2/3). Atom coordinates recover within 1e-12 nm.
+Association uses one fit/model; triplets eleven fits/seven models. Symmetry retains
+six mappings/layouts/models per family. Reflection and empty source complete
+without models; the exhausted fit budget fails PHMT-E107/complete=False. Each
+profile records four completed, four completed-empty and two expected failures,
+20 models, 112 passing pose evaluations (56 positives/56 negatives) and eight
+JSON/YAML round trips across units. Original frames remain unchanged and fail
+queries in the pivot frame; public MolSysMT placement replay passes. Off/on
+science agrees. Credit is 3 items/6 uses host-off and 16/75 host-on; both cookbook
+blocks pass (16 items/68 uses), as does strict isolated rendering with four
+neighbor stubs. Full identities are stable in all three phases.
+
+No library/test/input/scientific-definition/provider/prefix/sibling changes are
+needed. All molecular conversion/inspection/motion/fitting/copy/set/RMSD/replay use
+MolSysMT. PHMT owns pharmacophoric proposal/acceptance and bounded assembly;
+NetworkX owns generic clique enumeration. The October strategy survey remains
+dated; fresh primary-text access is limited and transparently retained in the
+receipt, with no full re-review or external implementation/performance claim.
+
+**Next: #27 modular tools and reproducible strategy comparison**, reviewing the
+standalone report/placement contract, unchanged original opt-in driver, frozen
+warped-square counterexample, source/input identities, isolated timing/repeats,
+honest memory scope and actual attribution separately from timing. The ten modular
+guards passing here do not close that broader comparison. #26 is one pivot with
+finite proposal families, not a continuous/global optimum or biological validation.
+#41 public/floor/installed receiving and final legacy retirement remain partial
+(review 2026-11-11). #60 independent-copy receiving and #66's four original binding
+methods retain their scopes. Addon/new release remain deferred; hosted #9,
+installed/public/platform #23/#10 and workspace #82 retain their gates.
+
+Owned `/tmp/phmt26-acceptance-20261103-o71te38f/`, LMMV/dprada, review 2026-11-17.
+Borrowed #69 venv remains ordinary editable PHMT 0.4.0+62.g6a7537b with unchanged
+controlled providers/native. No local process remains after closeout. Original
+historical reports/evidence retain their identities and scopes.
+
 ## Aligned clique consensus accepted; rigid unaligned method next — 2026-11-03
 
 #24 is resolved with its [archived report](archive/native_aligned_clique_consensus.md)

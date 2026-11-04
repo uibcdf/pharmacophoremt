@@ -1,0 +1,404 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "attribution_scope": "Five unchanged frozen analytical cases constructed through MolSysMT once outside captures; typed recovery adds one nonempty unplaced charge source. Captures cover executed discovery/fitting/validation/replay/evaluation/persistence. No timing or performance comparison.",
+    "biological_validation": false,
+    "chemical_identity": "Frozen disconnected-fragment analytical fixtures and caller-declared identities; not chemical uniqueness, active conformers or binding modes.",
+    "clean_dependency_closure": false,
+    "completeness": "One explicit pivot, two declared finite proposal families and maximal aligned-site hypothesis packages. Retain every accepted proposal even with equivalent geometry; no continuous global optimum or all submappings claim.",
+    "documentation_scope": "Strict isolated unchanged rigid-consensus cookbook page with four neighbor link-target stubs; not full-site or neighbor-recipe qualification.",
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_fallback": "PHMT #41 stays partial for public/floor/installed receiving and final legacy retirement, review 2026-11-11.",
+    "installed_wheel_qualification": false,
+    "literature_scope": {
+      "current_access_observations": [
+        {
+          "status": "primary full text accessible",
+          "supports": "Frequent labeled clique mining over conformer graphs, with molecular support based on at least one conformer; distinct from PHMT maximal association proposals.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2631088/"
+        },
+        {
+          "status": "primary full text accessible",
+          "supports": "Pharmer indexes feature triplets using KDB-tree and Bloom fingerprints; it is a database-search method, not PHMT's exhaustive local triplet proposal implementation.",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3124593/"
+        },
+        {
+          "status": "browser challenge; full text not reverified",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8049614/"
+        },
+        {
+          "status": "429; alternate official MDPI endpoint also 429; not reverified",
+          "url": "https://doi.org/10.3390/molecules26237201"
+        },
+        {
+          "status": "not accessible through browsing tool; not reverified",
+          "url": "https://doi.org/10.1021/ci7000583"
+        },
+        {
+          "status": "not accessible through browsing tool; not reverified",
+          "url": "https://doi.org/10.1007/BF00141577"
+        },
+        {
+          "status": "not accessible through browsing tool; not reverified",
+          "url": "https://doi.org/10.1007/s10822-006-9078-7"
+        }
+      ],
+      "decision": "The already documented primary-source comparison remains dated. No new external algorithm implementation, speed ranking, equivalence or latest-product claim is introduced. Source/API acceptance tests PHMT's two declared baselines and its actual MolSysMT fitting boundary. Other literature entries were not freshly reacquired. No repeated access search without a new lead.",
+      "historical_review": "devguide/pharmacophore_search_strategies.md, primary-source review dated 2026-10-03; retain original claims and links.",
+      "review_date": "2026-11-03",
+      "scope": "Audit the existing dated survey's separation of objectives, finite proposal families and unimplemented external methods. This is not a new complete primary-method replication review or current commercial/software qualification."
+    },
+    "new_pytest_execution": true,
+    "ownership": "All molecular conversion, preparation, inspection, rotation/translation, point-cloud least-RMSD fitting, copy/set/replay and RMSD use public MolSysMT. PHMT owns typed pharmacophoric proposals/post-fit acceptance and bounded consensus assembly. NetworkX owns generic cliques.",
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_scientific_definition_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b; controlled providers/native unchanged; no sibling/prefix mutation."
+  },
+  "consumer": {
+    "head": "0bab03aaa089418be11d2be2efb3c8bd6f7ff29e",
+    "status": ""
+  },
+  "cookbook_actual_attribution": {
+    "items": 16,
+    "uses": 68
+  },
+  "executed_cookbook_blocks": 2,
+  "focused_tests": {
+    "actual_pytest_items": 95,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt26-acceptance-20261103-o71te38f/pytest-temp",
+      "--junitxml=/tmp/phmt26-acceptance-20261103-o71te38f/focused.xml",
+      "tests/test_rigid_consensus.py",
+      "tests/test_modular_rigid_tools.py",
+      "tests/test_correspondence_geometry.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_correspondence_geometry": 60,
+      "tests.test_modular_rigid_tools": 10,
+      "tests.test_rigid_consensus": 25
+    },
+    "seconds": 50.44,
+    "skips": 0
+  },
+  "fresh_workflow_profiles": [
+    {
+      "actual_items": 3,
+      "actual_uses": 6,
+      "cases": [
+        {
+          "case_id": "rigid_typed_5",
+          "max_joint_sites": 5,
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "status": "completed",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "rigid_typed_5",
+          "max_joint_sites": 5,
+          "n_fits": 11,
+          "n_layouts": 7,
+          "n_models": 7,
+          "status": "completed",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "reflection_typed_5",
+          "max_joint_sites": 0,
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "reflection_typed_5",
+          "max_joint_sites": 0,
+          "n_fits": 11,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "symmetric_3",
+          "max_joint_sites": 3,
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "status": "completed",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "symmetric_3",
+          "max_joint_sites": 3,
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "status": "completed",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "empty_source",
+          "max_joint_sites": 0,
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "empty_source",
+          "max_joint_sites": 0,
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "fit_budget_failure",
+          "error_code": "PHMT-E107",
+          "error_context": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 6,
+            "resource": "scheduled fits",
+            "stage": "rigid_alignment"
+          },
+          "status": "failed",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "fit_budget_failure",
+          "error_code": "PHMT-E107",
+          "error_context": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 6,
+            "resource": "scheduled fits",
+            "stage": "rigid_alignment"
+          },
+          "status": "failed",
+          "strategy": "triplet_seeds"
+        }
+      ],
+      "host_tracking": false,
+      "matched": 56,
+      "n_models": 20,
+      "not_matched": 56,
+      "pose_evaluations": 112,
+      "round_trips": 8,
+      "source_domains_unchanged_in_both_unit_policies": true,
+      "status_counts": {
+        "completed": 4,
+        "completed_empty": 4,
+        "failed": 2
+      }
+    },
+    {
+      "actual_items": 16,
+      "actual_uses": 75,
+      "cases": [
+        {
+          "case_id": "rigid_typed_5",
+          "max_joint_sites": 5,
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 1,
+          "status": "completed",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "rigid_typed_5",
+          "max_joint_sites": 5,
+          "n_fits": 11,
+          "n_layouts": 7,
+          "n_models": 7,
+          "status": "completed",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "reflection_typed_5",
+          "max_joint_sites": 0,
+          "n_fits": 1,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "reflection_typed_5",
+          "max_joint_sites": 0,
+          "n_fits": 11,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "symmetric_3",
+          "max_joint_sites": 3,
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "status": "completed",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "symmetric_3",
+          "max_joint_sites": 3,
+          "n_fits": 6,
+          "n_layouts": 6,
+          "n_models": 6,
+          "status": "completed",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "empty_source",
+          "max_joint_sites": 0,
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "empty_source",
+          "max_joint_sites": 0,
+          "n_fits": 0,
+          "n_layouts": 1,
+          "n_models": 0,
+          "status": "completed_empty",
+          "strategy": "triplet_seeds"
+        },
+        {
+          "case_id": "fit_budget_failure",
+          "error_code": "PHMT-E107",
+          "error_context": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 6,
+            "resource": "scheduled fits",
+            "stage": "rigid_alignment"
+          },
+          "status": "failed",
+          "strategy": "association_cliques"
+        },
+        {
+          "case_id": "fit_budget_failure",
+          "error_code": "PHMT-E107",
+          "error_context": {
+            "api_url": "",
+            "complete": false,
+            "doc_url": "https://www.uibcdf.org/pharmacophoremt",
+            "issues_url": "https://github.com/uibcdf/pharmacophoremt/issues",
+            "limit": 1,
+            "observed": 6,
+            "resource": "scheduled fits",
+            "stage": "rigid_alignment"
+          },
+          "status": "failed",
+          "strategy": "triplet_seeds"
+        }
+      ],
+      "host_tracking": true,
+      "matched": 56,
+      "n_models": 20,
+      "not_matched": 56,
+      "pose_evaluations": 112,
+      "round_trips": 8,
+      "source_domains_unchanged_in_both_unit_policies": true,
+      "status_counts": {
+        "completed": 4,
+        "completed_empty": 4,
+        "failed": 2
+      }
+    }
+  ],
+  "full_evidence": {
+    "compressed_bytes": 5793857,
+    "compressed_sha256": "ef69a4cc0f2e1422fbd29c8b712b71d0d374b437029dfa9c11e4a86baafc5f3f",
+    "path": "rigid_consensus_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 101944641,
+    "uncompressed_sha256": "99b06adad3c5b1ee5cee40d6348e02f043fc197b072fe8ac8e36a950a33c3cc2"
+  },
+  "full_identity_unchanged": {
+    "cookbook": true,
+    "focused": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#26",
+  "measured_date": "2026-11-03",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "schema": "pharmacophoremt.rigid_consensus_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#26",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Prepared rigid unaligned consensus source/API acceptance; preserve original evidence; no sibling/prefix mutation",
+    "review_date": "2026-11-17"
+  }
+}

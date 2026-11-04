@@ -7,6 +7,30 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Rigid-unaligned source/API acceptance — 2026-11-03
+
+The [new summary](rigid_consensus_acceptance_20261103_summary.json) and checksum-
+qualified original archive record #26 at clean receiving head 0bab03a. Ninety-five
+fresh controls pass (25 rigid, 10 modular, 60 correspondence geometry). Five frozen
+analytical cases under both methods and host-tracking modes retain proper recovery,
+nonempty-unplaced support 2/3, six symmetric alternatives, reflection/empty completion
+and failed fit budgets. Each profile has four completed, four completed-empty and
+two failed records, 20 models, 112 passing pose checks and eight JSON/YAML round
+trips. Molecular domains remain unchanged under like-unit-policy comparisons;
+public MolSysMT placement replay passes while original displaced frames fail.
+Actual capture is 3 items/6 uses host-off and 16/75 host-on. Both cookbook blocks pass
+(16 items/68 uses); strict isolated rendering passes with four neighbor stubs.
+Full loaded source/native/helper/test/input/metadata identity stays stable in all
+three phases. The dated primary-source survey remains distinct from fresh limited
+access checks, runtime credit and unimplemented external methods. No runtime/test/
+input/provider change, new full suite, clean installed/public/platform, biology
+or performance qualification is claimed. All historical evidence remains unchanged.
+
+The complete workflow/cookbook outputs are retained once as exact UTF-8 text with
+raw SHA-256 in the archive's `original_files`. Parse the `text` field of
+`workflow_result.json` or `cookbook_result.json` for every original model, report,
+evaluation and reference; `phases` and the summary are compact projections.
+
 ## Aligned-clique source/API acceptance — 2026-11-03
 
 The [new summary](aligned_clique_acceptance_20261103_summary.json) and checksum-
