@@ -1,5 +1,7 @@
 """Prepared native observations replace the implicit complex chemistry engine."""
 
+import warnings
+
 import ackredit as ack
 import molsysmt as msm
 import numpy as np
@@ -105,7 +107,8 @@ def test_legacy_calls_fail_before_any_molecular_operation(monkeypatch, skip, mis
 )
 def test_retired_thresholds_are_not_silently_ignored(case, option):
     source, ligand, analyses = case
-    with pytest.warns(DigestNotDigestedWarning), pytest.raises(UnknownArgumentError):
+    with warnings.catch_warnings(), pytest.raises(UnknownArgumentError):
+        warnings.simplefilter("error", DigestNotDigestedWarning)
         phmt.model(
             source,
             ligand_selection=ligand,

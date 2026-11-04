@@ -18,6 +18,17 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Scoped model dispatch receiving — 2026-11-04
+
+[Receipt](../evidence/model_dispatch_contract_20261104_summary.json): 290 focused controls pass with public ArgDigest
+0.17.0; all six before/after source/native/metadata comparisons remain stable.
+The method domain derives PHMT keyword names from endpoint signatures. Scoped
+aliases refuse ambiguous source names; explicit skip controls and narrower native
+checks remain. Eight legacy warning guards now enforce early refusal. Source-only
+receiving; no dependency/public/installed or scientific-definition promotion.
+#6 remains partial. See the [capability map](../capability_inventory.md) and
+checkpoint for nested-facade/persistence follow-up. All attempts are retained.
+
 ## Loader boundary follow-up — 2026-11-04
 
 #73 is fixed; [77 focused checks](../evidence/native_loader_dispatch_20261104_summary.json) pass. Reader-owned closed

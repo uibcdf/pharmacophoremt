@@ -1,5 +1,39 @@
 # Strategic Roadmap
 
+## Capability inventory and model dispatch contracts — 2026-11-04
+
+The [current capability inventory](capability_inventory.md) separates executable
+routes, partial integrations, planned capabilities and scientific/delivery limits.
+It maps the six generic modeling methods, direct consensus tools, screening,
+validation, persistence and provider ownership to maintained contracts and tests.
+It does not promote analytical controls into predictive evidence.
+
+#6 now declares a scoped ArgDigest method domain and the existing `system` /
+`mol_sys` aliases for `model`. Admitted keyword names come from actual PHMT
+endpoint signatures, including builder frame options and the ligand consensus
+union. The ligand facade retains its narrower method checks. Unknown keywords
+are rejected before endpoint work; conflicting source aliases can no longer
+silently overwrite input. Existing defaults, individual aliases, explicit True/
+False digestion controls and method diagnostics are preserved. No molecular
+engine, provider implementation, dependency floor or scientific method changes.
+
+[Receiving evidence](evidence/model_dispatch_contract_20261104_summary.json) records **290 passing focused controls**, exact
+source/test/resource overlays on base `1c6a03479bd0514a5d5988a8134b8359bca837b9`,
+all failed attempts and stable runtime identities. Initial fixture/expected-error
+mistakes, declaration discovery correction, warning-contract updates and an
+explicit False bypass-admission correction remain visible. Existing real workflow
+assertions are unchanged; eight legacy warning expectations now enforce early
+refusal without a missing-digester warning. Twenty-two distribution controls,
+three reporting checks, Ruff and index checks pass. This is Linux/Python 3.14.7
+source receiving with public ArgDigest 0.17.0 and inherited dependencies, not
+full-suite/installed/all-platform or predictive qualification. Hosted CI stays #9.
+
+**Next:** audit item 4, document and check field/schema fidelity of native
+JSON/YAML and explicit annotated SDF. #6 remains partial: nested consensus and
+screening facade contracts require their own review. #60 identity/copy semantics
+and #66 experimental study design remain separate. Addon and new release defer.
+Earlier dated checkpoints below retain their original statements.
+
 ## Native loader admission fixed — 2026-11-04
 
 #73 is resolved: `io.load` forwards options to its selected JSON/YAML/YML,

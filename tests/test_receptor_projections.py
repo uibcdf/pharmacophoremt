@@ -1,6 +1,7 @@
 """Independent hypothesis controls; cached construction has no molecular kernel."""
 
 import json
+import warnings
 from copy import deepcopy
 
 import molsysmt as msm
@@ -369,7 +370,8 @@ def test_retired_pocket_arguments_are_not_silently_ignored(argument):
         with pytest.raises(UnknownArgumentError):
             phmt.model(object(), method="structure-based", selection="all")
         return
-    with pytest.warns(DigestNotDigestedWarning), pytest.raises(UnknownArgumentError):
+    with warnings.catch_warnings(), pytest.raises(UnknownArgumentError):
+        warnings.simplefilter("error", DigestNotDigestedWarning)
         phmt.model(object(), method="structure-based", **{argument: "all"})
 
 

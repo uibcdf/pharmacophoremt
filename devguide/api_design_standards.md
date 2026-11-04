@@ -2,6 +2,18 @@
 
 Guidelines for writing clean, consistent, and ecosystem-compliant code in PharmacophoreMT.
 
+## Current scoped adoption — 2026-11-04
+
+The public `model` facade declares its method-dependent keyword domain and
+existing source aliases through ArgDigest. See the [capability/contract map](capability_inventory.md)
+and [receiving evidence](evidence/model_dispatch_contract_20261104_summary.json).
+Native shape constructors retain their previously received definition-owned
+contracts. Remaining callers are not implicitly migrated; #6 tracks partial
+adoption. Model methods, valid scientific inputs and provider ownership are
+unchanged. A conflicting alias now raises ArgumentConsistencyError; an unknown
+method-specific option raises UnknownArgumentError before downstream digestion,
+without the former missing-digester warning.
+
 ## 1. Argument Digestion (`argdigest`)
 All public-facing API functions MUST be decorated with `@arg_digest`.
 - **Contract Definition**: Use the `_argdigest.py` configuration to map parameters to their respective digesters.

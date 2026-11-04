@@ -186,3 +186,19 @@ the original implementation; 77 focused checks pass after correction. Initial
 fixture failures remain recorded. This resolves E02/item 1 only; it does not
 qualify broader persistence, scientific prediction or the complete 17-area plan.
 Next: items 2–3, an actual capability inventory and bounded #6 dispatcher review.
+
+## Progress — 2026-11-04: capability map delivered; API contracts partial (#6)
+
+Audit item 2 now has a maintained [capability inventory](capability_inventory.md)
+with implemented/partial/planned boundaries, inputs/outputs, scientific limits,
+provider ownership and control links. It is a core product map, not an exhaustive
+format-fidelity or release-compatibility matrix.
+
+Item 3 receives the generic model facade's method-dependent domain and existing
+source aliases. Conflicting source names are refused instead of silently replacing
+an input; unknown options fail before endpoint execution. The [receipt](evidence/model_dispatch_contract_20261104_summary.json)
+records exact accepted bytes on base 1c6a03479bd0514a5d5988a8134b8359bca837b9,
+290 passing focused controls and all failed/corrected attempts. No scientific
+method or MolSysMT implementation changes. #6 stays partial; nested consensus/
+screening contracts and broader API review remain. Next bounded work is item 4,
+native persistence field/schema fidelity. Initial audit observations are preserved.

@@ -1,9 +1,11 @@
 from argdigest import arg_digest
 from smonitor import signal
 
+from pharmacophoremt._private.arg_digestion.model_dispatch import CONFIG
+
 
 @signal(tags=["modeler", "dispatch"])
-@arg_digest(type_check=True)
+@arg_digest(config=CONFIG, type_check=True)
 def model(
     molecular_system,
     method="complex-based",
@@ -21,6 +23,13 @@ def model(
     passed to the modeler's build method. Other native methods keep their own
     prepared-input contracts. Structure-based consumes cached receptor inventories
     and explicit hypothesis projections; it performs no molecular inference.
+
+    Extra keyword admission follows the chosen method's endpoint signatures.
+    The ligand-based route additionally checks consensus_method in its facade.
+    system and mol_sys are aliases for molecular_system; supplying more than
+    one name for the source is an error. Unknown methods retain their own
+    ArgumentError (NotImplementedError with digestion bypassed). Explicit
+    skip_digestion retains its existing bypass.
     """
 
     if method == "reference-ligand":

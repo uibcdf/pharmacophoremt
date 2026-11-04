@@ -7,13 +7,15 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 [Architectural, scientific and product audit — 2026-11-04](audit_20261104.md)
 records the discussed list of 17 improvement areas, priorities,
 completion criteria and evidence limits. #73 is now fixed; continue with the
-capability inventory and bounded #6 API contracts alongside scientific study design.
+[current capability inventory](capability_inventory.md), scoped #6 contracts and
+scientific study design. The first dispatch contract is now received; persistence
+field/schema fidelity is the next bounded review.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #73 fixed; 77 focused loader/format/contract checks pass. Molecular loading and option contracts remain MolSysMT-owned. Next: actual capability inventory and one bounded method-dependent dispatcher under #6. Earlier 1093-case full-source evidence retains its original scope; public/installed/platform/hosted gates stay separate. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: capability inventory published; scoped modeling dispatch domain/aliases received with 290 focused checks. #73 remains fixed; #6 remains partial. Next: native persistence field/schema fidelity, then nested facade contracts. Molecular operations remain MolSysMT-owned; public/installed/platform/hosted gates stay separate. Addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 
