@@ -88,7 +88,14 @@ def _to_dict(pharmacophore):
 
 
 def _from_dict(data):
-    """Internal helper to reconstruct a Pharmacophore from a dictionary."""
+    """Reconstruct external native data through public shape/site validation.
+
+    File contents are untrusted scientific inputs; only the resulting validated
+    site is eligible for an internal digestion bypass. No molecular data is read.
+    """
+    from pharmacophoremt._private.arg_digestion.argument._contracts import (
+        digest_metadata,
+    )
     from pharmacophoremt.interaction_site.shape import (
         Cylinder,
         Disk,
@@ -119,9 +126,7 @@ def _from_dict(data):
         ref_struct=data.get("ref_struct"),
     )
 
-    from copy import deepcopy
-
-    ph.metadata = deepcopy(data.get("metadata", {}))
+    ph.metadata = digest_metadata(data.get("metadata", {}))
 
     for s_data in data.get("interaction_sites", []):
         features = s_data["features"]
@@ -133,40 +138,40 @@ def _from_dict(data):
 
         if stype == "point":
             position = puw.quantity(shape_data["position"], "nm")
-            shape = Point(position, skip_digestion=True)
+            shape = Point(position)
 
         elif stype == "sphere":
             center = puw.quantity(shape_data["center"], "nm")
             radius = puw.quantity(shape_data["radius"], "nm")
-            shape = Sphere(center, radius, skip_digestion=True)
+            shape = Sphere(center, radius)
 
         elif stype == "sphere and vector":
             center = puw.quantity(shape_data["center"], "nm")
             radius = puw.quantity(shape_data["radius"], "nm")
             direction = np.array(shape_data["direction"])
-            shape = SphereAndVector(center, radius, direction, skip_digestion=True)
+            shape = SphereAndVector(center, radius, direction)
 
         elif stype == "gaussian kernel":
             center = puw.quantity(shape_data["center"], "nm")
             sigma = puw.quantity(shape_data["sigma"], "nm")
-            shape = GaussianKernel(center, sigma, skip_digestion=True)
+            shape = GaussianKernel(center, sigma)
 
         elif stype == "disk":
             center = puw.quantity(shape_data["center"], "nm")
             radius = puw.quantity(shape_data["radius"], "nm")
             normal = np.array(shape_data["normal"])
-            shape = Disk(center, normal, radius, skip_digestion=True)
+            shape = Disk(center, normal, radius)
 
         elif stype == "cylinder":
             start = puw.quantity(shape_data["start"], "nm")
             end = puw.quantity(shape_data["end"], "nm")
             radius = puw.quantity(shape_data["radius"], "nm")
-            shape = Cylinder(start, end, radius, skip_digestion=True)
+            shape = Cylinder(start, end, radius)
 
         elif stype == "shapelet":
             from pharmacophoremt.interaction_site.shape import Shapelet
 
-            shape = Shapelet(skip_digestion=True)
+            shape = Shapelet()
 
         else:
             raise NotImplementedError(
@@ -179,7 +184,6 @@ def _from_dict(data):
             essential=essential,
             weight=weight,
             metadata=metadata,
-            skip_digestion=True,
         )
         ph.add_interaction_site(site, skip_digestion=True)
 

@@ -1,5 +1,13 @@
 # I/O and External Formats
 
+## Ownership and validation review — 2026-11-04
+
+See the [field/schema matrix and ownership review](persistence_fidelity.md).
+#75 fixes native scientific-value validation. #74 tracks the existing SDF
+container migration to MolSysMT #215; direct RDKit container code remains
+frozen migration debt. Earlier semantic qualification does not establish
+architectural compliance. No new molecular codec is added.
+
 This document defines the architecture for interoperability and the supported formats for PharmacophoreMT.
 
 ## Current generic loader contract — 2026-11-04

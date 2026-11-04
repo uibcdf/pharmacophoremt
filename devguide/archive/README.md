@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (52)
+### Resolved (53)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -31,6 +31,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*
 - [`native_ionic_interactions.md`](native_ionic_interactions.md) — [#33](https://github.com/uibcdf/pharmacophoremt/issues/33) — Construct native charge queries from ionic observations through shared feature tools. *(resolved, measured)*
 - [`native_loader_ignored_options.md`](native_loader_ignored_options.md) — [#73](https://github.com/uibcdf/pharmacophoremt/issues/73) — Reject silently ignored options in native io.load routes. *(resolved, measured)*
+- [`native_persistence_validation_bypass.md`](native_persistence_validation_bypass.md) — [#75](https://github.com/uibcdf/pharmacophoremt/issues/75) — Validate external native pharmacophore shapes and sites on loading. *(resolved, measured)*
 - [`native_reference_ligand_workflow.md`](native_reference_ligand_workflow.md) — [#14](https://github.com/uibcdf/pharmacophoremt/issues/14) — Build classical reference-ligand queries and evaluate them using shared MolSysMT chemical extraction. *(resolved, measured)*
 - [`native_retrospective_result_summaries.md`](native_retrospective_result_summaries.md) — [#65](https://github.com/uibcdf/pharmacophoremt/issues/65) — Reuse saved native evaluations with original-cohort and unscored-input accounting. *(resolved, measured)*
 - [`native_rigid_consensus.md`](native_rigid_consensus.md) — [#26](https://github.com/uibcdf/pharmacophoremt/issues/26) — Build alternative native consensus models from prepared rigid unaligned ligands. *(resolved, measured)*

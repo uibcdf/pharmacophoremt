@@ -1,5 +1,13 @@
 # Annotated pharmacophore SDF persistence
 
+## Ownership and validation review — 2026-11-04
+
+See the [field/schema matrix and ownership review](persistence_fidelity.md).
+#75 fixes native scientific-value validation. #74 tracks the existing SDF
+container migration to MolSysMT #215; direct RDKit container code remains
+frozen migration debt. Earlier semantic qualification does not establish
+architectural compliance. No new molecular codec is added.
+
 Owned by [PharmacophoreMT #47](https://github.com/uibcdf/pharmacophoremt/issues/47).
 `pharmacophoremt.io.to_sdf(model, path)` and `load_sdf(path)` persist one PHMT
 pharmacophore. `Pharmacophore(path, form='sdf')` uses the same reader. Generic

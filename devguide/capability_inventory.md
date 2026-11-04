@@ -45,7 +45,7 @@ a user declaration alone cannot authenticate that identity.
 | `validation.enrichment_factor`, `roc_auc`, `bedroc`; `RetrospectiveValidator` | Available: native tie-aware metrics and declared-label evaluation; [metric](../tests/test_validation_metrics.py), [retrospective](../tests/test_retrospective.py) controls | Metrics alone establish neither label validity nor external prediction. Independent protocol, leakage controls, baselines and uncertainty remain audit items 10–15/#66 |
 | `validation.LeaveOneOutValidator` | Partial: explicit modeler/evaluator orchestration and [native status/recall controls](../tests/test_virtual_screening.py) | Selects the first hypothesis; recall is internal self-consistency, not independent prediction. Grouping, model selection and leakage review remain necessary before a predictive claim |
 | `Pharmacophore`, feature/shape objects | Available as native representation; Point/Sphere/SphereAndVector/Disk have [contract controls](../tests/test_native_geometry_contracts.py) | An exported shape class does not imply support by every matcher/serializer. Extension registration and richer relations remain planned |
-| JSON/YAML; annotated SDF; RDKit/LigandScout/Pharmer translators | Partial across formats: implemented routes with [dispatch](../tests/test_io_dispatch.py), [SDF](../tests/test_io_sdf.py), [RDKit](../tests/test_io_rdkit.py), [LigandScout](../tests/test_io_ligandscout.py), [Pharmer](../tests/test_io_pharmer.py) controls | Field fidelity, supported feature/shape subsets and schema evolution need a per-format matrix (audit item 4). Generic `.sdf` loading is molecular MolSysMT conversion; annotated pharmacophore SDF uses `load_sdf` explicitly |
+| JSON/YAML; annotated SDF; RDKit/LigandScout/Pharmer translators | Partial across formats: implemented routes with [dispatch](../tests/test_io_dispatch.py), [SDF](../tests/test_io_sdf.py), [RDKit](../tests/test_io_rdkit.py), [LigandScout](../tests/test_io_ligandscout.py), [Pharmer](../tests/test_io_pharmer.py) controls | [First field/schema matrix](persistence_fidelity.md) records #75 reader validation and remaining schema/writer policy. Direct RDKit SDF container use is migration debt under #74 / MolSysMT #215. Generic `.sdf` loading is molecular MolSysMT conversion; annotated pharmacophore SDF uses `load_sdf` explicitly |
 | `attribution`, `attribution_report` | Partial delivery: optional scientific provenance and detached records implemented; [controls](../tests/test_attribution.py) | #19/#23 retain public-provider/installed qualification; recorded branches are distinct from reviewed literature |
 | MolSysViewer rendering/addon | Partial integration with existing source payload/render paths | Browser acceptance remains #58; addon is deferred by maintainer priority, not represented as absent code |
 | Public package/platform support | Separate delivery axis under #10/#23 | Existing public 0.4.0 and its exact installed receipts do not qualify every later source commit or all provider combinations |
@@ -94,3 +94,9 @@ with native JSON/YAML and explicit SDF. For #6, review the nested ligand-consens
 and screening facade contracts separately rather than extending this domain with
 new scientific methods. Experimental study design under #66 can proceed alongside
 API work; the original-method access gate remains unresolved.
+
+## Persistence review — 2026-11-04
+
+See [field/schema and ownership review](persistence_fidelity.md): #75 reader
+validation is fixed with 207 focused checks; #74 explicitly tracks unqualified
+SDF-container ownership until a public MolSysMT record/property API is received.

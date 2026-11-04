@@ -7,6 +7,14 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Native persistence reader validation — 2026-11-04
+
+[Receipt](native_persistence_validation_20261104_summary.json): 207 focused checks
+pass; all attempts, source/test bytes and final stable runtime identities remain.
+[Ownership/field matrix](../persistence_fidelity.md) distinguishes #75's repair
+from #74's pending SDF container migration to MolSysMT #215. No provider code,
+molecular codec or clean installed/all-platform/predictive qualification is added.
+
 ## Scoped model dispatch receiving — 2026-11-04
 
 [Receipt](../evidence/model_dispatch_contract_20261104_summary.json): 290 focused controls pass with public ArgDigest

@@ -1,0 +1,144 @@
+{
+  "accepted_files": {
+    "pharmacophoremt/io/phmt/__init__.py": "2edbef2a9ea0eb00b79f4e80bc70cc5bbfbf18f5e75ab66cc25ce1864e4de725",
+    "tests/test_native_persistence_validation.py": "c54237147a65b1177c7a70e91dea801a3dd8d5c1e35194040e30490af0aa1533"
+  },
+  "attempt_history": [
+    "Original-production probe accepts negative weight, string essential status, negative radius and two-component center.",
+    "Initial 48-case run: 34 refusal guards fail, 12 positive guards incorrectly demand exact floating equality across units, 2 historical-default guards pass.",
+    "First 207-case run: only 12 exact-float test failures remain. Test correction made before runner after-snapshot: test_sources changes, all runtime/provider/native/metadata keys stay stable. Overlapping attempted runs used distinct pytest temporary directories; this run is not identity-qualified.",
+    "Corrected geometry assertions use rtol=1e-13/atol=1e-14 with exact other supported fields. Final 207 cases pass; full runtime/source/native/test/input/metadata identity unchanged.",
+    "Post-run reporting inventory adds #74/#75 with separately executed three reporting tests; no second scientific suite is inferred."
+  ],
+  "base_commit": "83e13bd7d5fbcf42ca10dad1ebeb76cdfe47ae97",
+  "date": "2026-11-04",
+  "full_evidence": {
+    "compressed_bytes": 255327,
+    "compressed_sha256": "907a8a78e2ba70ed60367621ec5bba4d39e70ad75354f4a3d3db14e73748f6ed",
+    "path": "native_persistence_validation_20261104.json.gz",
+    "uncompressed_bytes": 1011483,
+    "uncompressed_sha256": "25c3b14ffee61bcaf9eaae9dcbdf9b1c46fbbaa29add88597f1b4fbe2cee48c0"
+  },
+  "issue": "uibcdf/pharmacophoremt#75",
+  "post_scientific_reporting_inventory_overlay_sha256": "2177027f45910512743f3c6b8d2a7cafd01b2f2f5c95ff7bdce7fc7aba3bc411",
+  "provider_handoff": "uibcdf/molsysmt#215",
+  "provider_review": {
+    "head": "71fbe4f46d3c70e4e973c8025f01752a8c9b1084",
+    "inspected_files": [
+      "molsysmt/form/file_sdf/_native.py",
+      "molsysmt/form/file_sdf/__init__.py",
+      "molsysmt/form/file_sdf/to_file_sdf.py"
+    ],
+    "scope": "Read-only source inspection; not executed scientific provider or public delivery"
+  },
+  "public_argdigest": {
+    "artifact_sha256": "9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1",
+    "original_artifact_receipt": "native_geometry_contract_receiving_20261104_summary.json",
+    "version": "0.17.0"
+  },
+  "related_migration": "uibcdf/pharmacophoremt#74",
+  "runs": {
+    "final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-persistence-20261104-2nl24th1/final-temp",
+        "--junitxml=/tmp/phmt-persistence-20261104-2nl24th1/final.xml",
+        "tests/test_native_persistence_validation.py",
+        "tests/test_io_dispatch.py",
+        "tests/test_io_sdf.py",
+        "tests/test_contracts.py",
+        "tests/test_curation.py",
+        "tests/test_interaction_site.py",
+        "tests/test_native_geometry_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "identity_changed_keys": [],
+      "items": 207,
+      "skipped": 0
+    },
+    "green": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-persistence-20261104-2nl24th1/green-temp",
+        "--junitxml=/tmp/phmt-persistence-20261104-2nl24th1/green.xml",
+        "tests/test_native_persistence_validation.py",
+        "tests/test_io_dispatch.py",
+        "tests/test_io_sdf.py",
+        "tests/test_contracts.py",
+        "tests/test_curation.py",
+        "tests/test_interaction_site.py",
+        "tests/test_native_geometry_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "failures": 12,
+      "full_identity_unchanged": false,
+      "identity_changed_keys": [
+        "test_sources"
+      ],
+      "items": 207,
+      "skipped": 0
+    },
+    "red": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-persistence-20261104-2nl24th1/red-temp",
+        "--junitxml=/tmp/phmt-persistence-20261104-2nl24th1/red.xml",
+        "tests/test_native_persistence_validation.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 46,
+      "full_identity_unchanged": true,
+      "identity_changed_keys": [],
+      "items": 48,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.native-persistence-validation@1",
+  "scope": "Linux/Python 3.14.7 source receiving; extracted public ArgDigest 0.17.0 and inherited scientific dependencies. No full-suite, clean installed, all-platform or predictive qualification.",
+  "sdf_container_unchanged": true,
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt-persistence-20261104-2nl24th1",
+    "review": "2026-11-18"
+  }
+}

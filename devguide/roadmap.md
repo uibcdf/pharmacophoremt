@@ -1,5 +1,28 @@
 # Strategic Roadmap
 
+## Native persistence validated; SDF container migration tracked — 2026-11-04
+
+[#75](https://github.com/uibcdf/pharmacophoremt/issues/75) fixes external
+JSON/YAML reconstruction bypassing public shape/site validation. **207 focused
+checks pass**, including 48 new persistence cases; valid six-shape geometry,
+constraints, metadata, units and historical defaults remain supported.
+[Receipt](evidence/native_persistence_validation_20261104_summary.json) retains
+all attempts and a fully stable final source/native/metadata identity. One initial
+floating-point assertion correction and intermediate test-source drift are explicit.
+Source receiving only; no full-suite/installed/platform/predictive qualification.
+
+The [field/schema and ownership matrix](persistence_fidelity.md) identifies
+existing direct RDKit SDF container operations as migration debt, independently
+of #47's semantic fidelity. **#74 waits for public property/record support under
+MolSysMT #215**, with a concrete consumer handoff. All molecular representation,
+inspection, manipulation and formats (including SDF/PDBQT) belong to MolSysMT.
+SDF container source and sibling/provider environments are unchanged.
+
+Next: explicit native schema/version and unknown-field compatibility policy,
+plus writer validation/transaction review. Resume SDF migration only through the
+public provider route; no local parser/property engine. #6 stays partial; addon
+and new release defer. Earlier dated checkpoints retain their original claims.
+
 ## Capability inventory and model dispatch contracts — 2026-11-04
 
 The [current capability inventory](capability_inventory.md) separates executable

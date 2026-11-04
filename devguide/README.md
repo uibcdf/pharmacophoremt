@@ -15,7 +15,7 @@ coverage, classified findings, method-level scientific limits and actionable che
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: capability inventory published; scoped modeling dispatch domain/aliases received with 290 focused checks. #73 remains fixed; #6 remains partial. Next: native persistence field/schema fidelity, then nested facade contracts. Molecular operations remain MolSysMT-owned; public/installed/platform/hosted gates stay separate. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #75 fixes native file value validation (207 focused checks). [Persistence matrix](persistence_fidelity.md) records fields/schema limits and #74 SDF-container migration waiting on MolSysMT #215. Next: native schema/unknown-field and writer policy. #6 remains partial; molecular operations and formats remain MolSysMT-owned; addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 
