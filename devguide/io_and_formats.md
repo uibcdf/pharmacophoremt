@@ -2,6 +2,27 @@
 
 This document defines the architecture for interoperability and the supported formats for PharmacophoreMT.
 
+## Current generic loader contract — 2026-11-04
+
+`io.load(file_name, **kwargs)` requires a string path. It dispatches `.pml` to
+LigandScout, `.json` to native JSON when `software == "pharmacophoremt"` and to
+Pharmer otherwise, and `.yaml`/`.yml` to native YAML. Extra options reach the
+selected reader; these readers currently have closed signatures, so unknown
+keywords raise TypeError. JSON classification reads the file before this check.
+Valid calls retain their existing results and parsing errors.
+
+Other extensions delegate to `molsysmt.convert(..., to_form="molsysmt.MolSys",
+**kwargs)`. MolSysMT owns their admitted options, molecular representation and
+conversion. Provider exceptions propagate unchanged: callers must not rely on
+the former blanket ValueError replacement. The facade does not auto-detect
+PharmacophoreMT's annotated SDF; use explicit `load_sdf` for that format.
+
+[Dispatch evidence](evidence/native_loader_dispatch_20261104_summary.json) covers
+five pharmacophore routes and a real minimal molecular SDF through MolSysMT.
+The priorities and format specifications below include planned capabilities;
+they are not an implemented-capability inventory. Broader format fidelity and
+schema admission remain audit items 2/4.
+
 ## 1. Interoperability Roadmap
 
 PharmacophoreMT aims to be the universal bridge between pharmacophore modeling tools. We categorize external support into three priority tiers:

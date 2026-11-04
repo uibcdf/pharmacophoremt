@@ -1,5 +1,30 @@
 # Strategic Roadmap
 
+## Native loader admission fixed — 2026-11-04
+
+#73 is resolved: `io.load` forwards options to its selected JSON/YAML/YML,
+LigandScout or Pharmer reader, whose closed signature rejects unknown keywords.
+Valid reads retain the direct reader's results. Molecular formats and options
+remain delegated to public `molsysmt.convert`; its original exceptions now
+propagate instead of being replaced by a generic format error. No provider,
+chemical preparation, molecular parser or dependency is changed.
+
+The [receiving receipt](evidence/native_loader_dispatch_20261104_summary.json) retains source/test bytes on base
+`4a471bc2630d3db95bc9009689450391f1987f91`, all attempts and stable before/after
+source/native/metadata identities. Corrected guards reproduce six original
+failures and eight passes; **77 focused checks pass** after the fix. Two initial
+positive-control fixture rejections remain recorded. This is Linux/Python 3.14.7
+source receiving with public ArgDigest 0.17.0 and inherited scientific dependencies;
+no new full-suite, installed, hosted or predictive qualification is claimed.
+
+**Next:** audit items 2–3: inventory actual public capabilities and select one
+method-dependent dispatcher for #6's option/domain/alias review. Preserve current
+scientific contracts; do not invent a second molecular option registry or assume
+all planned formats exist. #6 remains partial. Item 10's experimental study design
+can proceed independently of API work; unavailable original methods remain #66.
+The addon and a new release remain deferred. Earlier dated entries below retain
+their original next-step statements as history.
+
 ## Cross-cutting audit priorities — 2026-11-04
 
 The [evidence and verification addendum](audit_20261104_review.md) classifies

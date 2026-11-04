@@ -1,19 +1,39 @@
 ---
 summary: Reject silently ignored options in native io.load routes.
 issue: uibcdf/pharmacophoremt#73
-status: open
+status: resolved
 opened: 2026-11-04
-closed:
+closed: 2026-11-04
 severity: medium
 verification: measured
 area: [api, io]
-guard:
+guard: tests/test_io_dispatch.py
 normative: devguide/support_library_boundaries.md
 blocked_by: []
 supersedes: []
 ---
 
 # Native loader silently ignores extra options
+
+## Resolution — 2026-11-04
+
+Forwarding `**kwargs` to each selected reader restores its existing closed-signature
+admission; no parallel ArgDigest option registry is needed. JSON, YAML, YML,
+PML and Pharmer all reject unknown options and preserve valid results. The
+molecular branch delegates to MolSysMT with original options, results and errors.
+Provider error types now propagate unchanged instead of becoming generic ValueError.
+JSON dispatch still reads the identity marker before reader admission; this is
+not a promise to reject keywords before file I/O.
+
+[Executed evidence](../evidence/native_loader_dispatch_20261104_summary.json):
+77 focused checks pass, including 14 new dispatch controls. Corrected original
+production fails six guards and passes eight controls. Two initial positive-
+control fixture incompatibilities, all exact overlays and stable provider/source
+identities are retained. Base revision is 4a471bc2630d3db95bc9009689450391f1987f91;
+accepted code/test SHA-256 values are in the receipt. Linux/Python 3.14.7 with
+extracted public ArgDigest 0.17.0 and inherited scientific dependencies; no
+installed/all-platform/full-suite or predictive validation claim. Original report
+below is preserved. Broader persistence semantics and #6 API domains stay separate.
 
 ## What
 

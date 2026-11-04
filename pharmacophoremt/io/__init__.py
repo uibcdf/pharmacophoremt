@@ -30,8 +30,12 @@ from .sdf import to_sdf as to_sdf
 
 def load(file_name, **kwargs):
     """
-    Polymorphic loader for molecular systems and pharmacophores.
-    Rescued and refined from OpenPharmacophore.
+    Load a pharmacophore or delegate molecular loading to MolSysMT.
+
+    Pharmacophore readers own option admission: their currently closed
+    signatures reject extra keywords with TypeError. Molecular options are
+    forwarded to ``molsysmt.convert`` with ``to_form="molsysmt.MolSys"``.
+    Reader and provider exceptions propagate unchanged.
     """
     if not isinstance(file_name, str):
         raise TypeError("file_name must be a string path.")
@@ -40,7 +44,7 @@ def load(file_name, **kwargs):
 
     # 1. Pharmacophore Formats
     if extension == ".pml":
-        return from_ligandscout(file_name)
+        return from_ligandscout(file_name, **kwargs)
     elif extension == ".json":
         # Check if it's our native JSON or a Pharmer JSON
         import json
@@ -48,17 +52,12 @@ def load(file_name, **kwargs):
         with open(file_name, "r") as f:
             data = json.load(f)
         if data.get("software") == "pharmacophoremt":
-            return load_json(file_name)
+            return load_json(file_name, **kwargs)
         else:
-            return from_pharmer(file_name)
+            return from_pharmer(file_name, **kwargs)
     elif extension in [".yaml", ".yml"]:
-        return load_yaml(file_name)
+        return load_yaml(file_name, **kwargs)
 
     # 2. Molecular System Formats (via MolSysMT)
     # Most trajectory and structural formats
-    try:
-        return msm.convert(file_name, to_form="molsysmt.MolSys", **kwargs)
-    except Exception:
-        raise ValueError(
-            f"Format {extension} not recognized or failed to load via MolSysMT."
-        )
+    return msm.convert(file_name, to_form="molsysmt.MolSys", **kwargs)

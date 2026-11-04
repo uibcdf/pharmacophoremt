@@ -1,0 +1,132 @@
+{
+  "base_commit": "4a471bc2630d3db95bc9009689450391f1987f91",
+  "date": "2026-11-04",
+  "full_evidence": {
+    "compressed_bytes": 434348,
+    "compressed_sha256": "1d69758f61b2b1ac3c4c617235d8bbb9afd058db1a5430f88c737c17e305731f",
+    "path": "native_loader_dispatch_20261104.json.gz",
+    "uncompressed_bytes": 1632584,
+    "uncompressed_sha256": "28938f8fc4104a6fa2accc336e187384d27adfdb06c783516dabfe41511af869"
+  },
+  "guard_sha256": "5c184703b70d3003e15fcabe1e42cccd4d4258c17df7223bc2fe083b55e59967",
+  "initial_attempts": "The first two attempts also fail the direct MolSysMT positive control: existing 0ZI.sdf uses unsupported V2000 flags; existing alanine PDB fails strict parsing. Neither input nor provider was repaired. Final guard uses a minimal valid one-oxygen V2000 fixture. Corrected original production: 6 failures / 8 passes. Final: 77 passes.",
+  "issue": "uibcdf/pharmacophoremt#73",
+  "production_sha256": "1bca90899350f9743e91aae327996cc6c00de788060cb9f7af6492a5b830128c",
+  "runs": {
+    "green": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt73-20261104-zign_up9/green-temp",
+        "--junitxml=/tmp/phmt73-20261104-zign_up9/green.xml",
+        "tests/test_io_dispatch.py",
+        "tests/test_io_pharmer.py",
+        "tests/test_io_ligandscout.py",
+        "tests/test_io_sdf.py",
+        "tests/test_io_rdkit.py",
+        "tests/test_contracts.py",
+        "tests/test_molecular_ownership.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 77,
+      "skipped": 0
+    },
+    "red": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt73-20261104-zign_up9/red-temp",
+        "--junitxml=/tmp/phmt73-20261104-zign_up9/red.xml",
+        "tests/test_io_dispatch.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 7,
+      "full_identity_unchanged": true,
+      "items": 14,
+      "skipped": 0
+    },
+    "red_corrected": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt73-20261104-zign_up9/red_corrected-temp",
+        "--junitxml=/tmp/phmt73-20261104-zign_up9/red_corrected.xml",
+        "tests/test_io_dispatch.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 7,
+      "full_identity_unchanged": true,
+      "items": 14,
+      "skipped": 0
+    },
+    "red_final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt73-20261104-zign_up9/red_final-temp",
+        "--junitxml=/tmp/phmt73-20261104-zign_up9/red_final.xml",
+        "tests/test_io_dispatch.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 6,
+      "full_identity_unchanged": true,
+      "items": 14,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.io-dispatch-receiving@1",
+  "scope": "Focused Linux/Python 3.14.7 source receiving; public ArgDigest 0.17.0 extraction and inherited scientific dependencies; not clean installed, full-suite, all-platform or predictive qualification.",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt73-20261104-zign_up9",
+    "review": "2026-11-18"
+  }
+}

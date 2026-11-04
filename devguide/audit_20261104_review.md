@@ -52,7 +52,7 @@ scientific evidence.
 | ID | Concrete anchor | Observation and evidence status |
 | --- | --- | --- |
 | E01 | [Geometry receiving receipt](evidence/native_geometry_contract_receiving_20261104_summary.json), [guards](../tests/test_native_geometry_contracts.py) | Recorded: 1093 actual full-run cases pass; public/development focused scopes and exact overlays retained. This is controlled source receiving, not full public installation qualification. |
-| E02 | [Native loader report](pending_bugs/native_loader_ignored_options.md), [facade](../pharmacophoremt/io/__init__.py), E01 archived load_options_probe.py/results | Confirmed historical reproduction: native JSON/YAML discard unknown facade keywords while direct readers refuse them. #73 owns the fix. |
+| E02 | [Native loader report](archive/native_loader_ignored_options.md), [facade](../pharmacophoremt/io/__init__.py), E01 archived load_options_probe.py/results | Confirmed historical reproduction: native JSON/YAML discard unknown facade keywords while direct readers refuse them. #73 owns the fix. |
 | E03 | [Dispatch](../pharmacophoremt/modeler/dispatcher.py), [screening facade](../pharmacophoremt/screening/virtual_screening.py), [support boundaries](support_library_boundaries.md) | Inspected: method-dependent forwarding, explicit native choices, inert legacy parameters and scoped contracts. No general dispatcher defect is asserted. |
 | E04 | [Native persistence](../pharmacophoremt/io/phmt/__init__.py), [contract tests](../tests/test_contracts.py), [curation tests](../tests/test_curation.py), [format specification](io_and_formats.md) | Inspected: software version field, explicit native units, shape branches and existing persistence controls. Schema evolution and complete format fidelity require a separate audit. |
 | E05 | [Curation contract](pharmacophore_curation_workflow.md), [copy/alias tests](../tests/test_curation.py), [#60](https://github.com/uibcdf/pharmacophoremt/issues/60) | Existing guards cover detached site evidence and atomic edits; live molecular references and independent molecular variants remain a separately owned boundary. |
@@ -174,3 +174,15 @@ study's execution criterion. No blanket 17-issue implementation campaign or
 automatic closure is implied. Keep original observations and failed attempts.
 All reusable general molecular operations remain MolSysMT-owned; provider gaps
 are proposed in their owner's repository.
+
+## Progress — 2026-11-04: item 1 fixed (#73)
+
+The [archived resolution](archive/native_loader_ignored_options.md) and
+[receipt](evidence/native_loader_dispatch_20261104_summary.json) record the fix
+on base 4a471bc2630d3db95bc9009689450391f1987f91 with exact accepted source/test
+hashes: five pharmacophore routes refuse unknown keywords; molecular options
+and original provider errors remain MolSysMT-owned. Six regression guards fail
+the original implementation; 77 focused checks pass after correction. Initial
+fixture failures remain recorded. This resolves E02/item 1 only; it does not
+qualify broader persistence, scientific prediction or the complete 17-area plan.
+Next: items 2–3, an actual capability inventory and bounded #6 dispatcher review.

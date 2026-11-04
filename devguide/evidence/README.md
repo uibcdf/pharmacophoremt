@@ -7,6 +7,15 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Loader boundary follow-up — 2026-11-04
+
+#73 is fixed; [77 focused checks](../evidence/native_loader_dispatch_20261104_summary.json) pass. Reader-owned closed
+signatures refuse extra pharmacophore options. Molecular options and original
+exceptions remain MolSysMT-owned. No additional domain/alias registry or dependency
+change is needed for this facade. #6 remains partial; next review an actual
+method-dependent dispatcher and publish the current capability inventory.
+Earlier next-step statements below describe their original checkpoints.
+
 ## Native geometry contract receiving — 2026-11-04
 
 The [summary](native_geometry_contract_receiving_20261104_summary.json) and original

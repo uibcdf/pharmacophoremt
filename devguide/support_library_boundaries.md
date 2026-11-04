@@ -4,6 +4,15 @@ This contract belongs to [#6](https://github.com/uibcdf/pharmacophoremt/issues/6
 The synchronized provider guides retain their authority. Source receiving,
 published package receiving and central adoption states are separate evidence.
 
+## Loader boundary follow-up — 2026-11-04
+
+#73 is fixed; [77 focused checks](evidence/native_loader_dispatch_20261104_summary.json) pass. Reader-owned closed
+signatures refuse extra pharmacophore options. Molecular options and original
+exceptions remain MolSysMT-owned. No additional domain/alias registry or dependency
+change is needed for this facade. #6 remains partial; next review an actual
+method-dependent dispatcher and publish the current capability inventory.
+Earlier next-step statements below describe their original checkpoints.
+
 ## Runtime boundaries
 
 | Owner | PharmacophoreMT consumer behavior | Qualification limit |

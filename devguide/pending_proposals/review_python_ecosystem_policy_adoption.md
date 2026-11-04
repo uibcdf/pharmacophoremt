@@ -18,6 +18,15 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Loader boundary follow-up — 2026-11-04
+
+#73 is fixed; [77 focused checks](../evidence/native_loader_dispatch_20261104_summary.json) pass. Reader-owned closed
+signatures refuse extra pharmacophore options. Molecular options and original
+exceptions remain MolSysMT-owned. No additional domain/alias registry or dependency
+change is needed for this facade. #6 remains partial; next review an actual
+method-dependent dispatcher and publish the current capability inventory.
+Earlier next-step statements below describe their original checkpoints.
+
 ## Scoped geometry adoption and loader follow-up — 2026-11-04
 
 #6 adopts scoped public ArgDigest contracts for Point, Sphere, SphereAndVector
