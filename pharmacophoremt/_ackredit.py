@@ -31,16 +31,39 @@ def backend():
 
 
 def _warn(operation, error):
+    warning_type = None
     try:
         from ._private.smonitor.emitter import warn
         from ._private.smonitor.warnings import AckreditTrackingWarning
 
+        warning_type = AckreditTrackingWarning
         warn(
             AckreditTrackingWarning(extra=dict(operation=operation, reason=str(error)))
         )
-    except Exception:
-        # Even a warning promoted to an error must not erase completed science.
-        pass
+    except Exception as diagnostic_error:
+        if type(diagnostic_error) is warning_type:
+            # Promotion of this warning must not erase completed science.
+            return None
+        import json
+
+        from ._private.smonitor.catalog import CATALOG
+
+        failure = dict(
+            operation="emit attribution diagnostic",
+            reason=f"{type(diagnostic_error).__name__}: {diagnostic_error}",
+            tracking_operation=operation,
+            tracking_reason=f"{type(error).__name__}: {error}",
+        )
+        # Use a plain structured log rather than re-entering a broken emitter.
+        # If output is unavailable, the detached failed payload still retains
+        # both failures without replacing the scientific result or exception.
+        code = CATALOG["warnings"]["AckreditTrackingWarning"]["code"]
+        try:
+            print(json.dumps(dict(code=code, **failure)), file=sys.stderr)
+        except Exception as output_error:
+            failure["fallback_error"] = f"{type(output_error).__name__}: {output_error}"
+        return failure
+    return None
 
 
 class _Calculation:
@@ -59,7 +82,9 @@ class _Calculation:
         self.errors.append(
             dict(operation=operation, reason=f"{type(error).__name__}: {error}")
         )
-        _warn(operation, error)
+        diagnostic_failure = _warn(operation, error)
+        if diagnostic_failure is not None:
+            self.errors.append(diagnostic_failure)
 
     def start(self):
         try:

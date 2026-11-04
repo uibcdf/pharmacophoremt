@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #22 bounded prepared ERalpha source/scientific chain is accepted, with 17 fresh controls, independent off/on original CLI, all three unchanged recipe blocks, fixed diagnosis, persistence/native artifacts and strict isolated rendering. #22 stays partial/open for full-receptor/environment/biology; #323/#350 remain provider-owned. Next #6 adoption/qualification review. Molecular operations stay in MolSysMT. #19/#23/#10 delivery, #41 public/legacy receiving (review 2026-11-11), #60/#66 and hosted/workspace gates remain separate. Public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #6 support review fixes #72 hidden optional-attribution diagnostic loss; five original regression failures become 44 passing controls. Conditional unit boundaries and 8 environment/22 distribution controls pass, with exact source overlays retained. #6 stays partial: next scoped ArgDigest function/domain/alias adoption. ArgDigest #46 owns optional-Beartype diagnostics. Molecular work remains in MolSysMT; public/installed/hosted/workspace/scientific gates and addon deferral retain their scopes. Public release stays 0.4.0.
 
 ## Classical Workflow Specification
 

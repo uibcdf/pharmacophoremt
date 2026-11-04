@@ -7,6 +7,34 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Support-library boundary review and diagnostic fix — 2026-11-04
+
+The [summary](support_boundary_review_20261104_summary.json) and full original
+archive preserve #6 review and #72 correction. Exact runtime/test overlays on
+cbdee9a, five expected failing original guards and 44 passing final controls
+(26 attribution, 18 contract; 17.87 s, zero failures/errors/skips) remain retained.
+Ten warnings are intentional existing optional-tracking failures. Original/fixed
+payloads prove that unexpected host diagnostic failure now remains visible while
+science/session identity survives. Broken fallback output retains error evidence
+without replacing a scientific exception. Full qualified/verification source/
+native/input/metadata identities pass; old workspace discrepancies remain #82.
+
+Three real conditional length/persistence form probes preserve application units.
+Optional Beartype absence succeeds but retains misleading required-library errors,
+handed to ArgDigest #46. Declarations/generated environments, eight environment and
+22 distribution controls pass with the existing immutable SDK; missing-default-
+SDK launches remain unqualified. Local GHR is 1.0.0 with a valid four-rule config,
+not an inferred upgrade to guide-recommended 1.4.0. Strict isolated updated
+cookbook rendering passes; both original Python blocks are unchanged and no new
+recipe execution/full-site claim follows.
+
+Parse original_files[name].text for complete patches, controls, payloads, logs,
+events and optional-form probes, retained with raw SHA-256. #6 remains partial
+for explicit ArgDigest function/domain/alias adoption and broader qualification.
+No molecular/provider/prefix/dependency-floor/public-release or new full-suite
+change; installed/public/platform/hosted and central states retain their own
+owners. Molecular operations stay in MolSysMT. Earlier evidence keeps its scope.
+
 ## Bounded prepared ERalpha source/scientific review — 2026-11-04
 
 The [summary](eralpha_acceptance_20261104_summary.json) and checksum-qualified

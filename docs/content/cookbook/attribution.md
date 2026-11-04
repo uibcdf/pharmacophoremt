@@ -81,6 +81,12 @@ the scientific result and host declarations, and marks capture `failed`.
 The report helper requires a successfully captured payload and an available
 compatible provider; it does not present partial tracking as a complete report.
 
+If construction or emission of the host diagnostic itself fails, `errors` also
+retains that failure and the original tracking context. A structured stderr record
+provides a fallback without calling the failed emitter again. If that output is
+unavailable, its failure remains in the payload; the scientific result or original
+scientific exception is preserved.
+
 The original controlled MolSysMT revision could interrupt recognition when an
 application promoted its attribution warning to an error.
 [MolSysMT #295](https://github.com/uibcdf/molsysmt/issues/295) is now resolved.

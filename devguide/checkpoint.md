@@ -1,5 +1,49 @@
 # Development Checkpoint
 
+## Support review fixes hidden diagnostic loss; explicit contracts next — 2026-11-04
+
+#6 is partial with [current boundaries](support_library_boundaries.md),
+[report](pending_proposals/review_python_ecosystem_policy_adoption.md) and
+[receipt](evidence/support_boundary_review_20261104_summary.json). #72 fixes a real
+host optional-attribution defect found during review: warning construction/emission
+errors were silently lost. SMonitor remains the normal public catalog path;
+unexpected failures now retain tracking/diagnostic context and a structured stderr
+fallback. Broken output is retained in the failed payload, preserving science and
+original scientific errors. No molecular/provider engine is implemented locally.
+
+Five new guards fail on original cbdee9a code; final exact source overlay passes
+44 attribution/contract controls in 17.87 s, zero failures/errors/skips. Ten
+intentional existing tracking warnings retain five groups. Exact patches, all
+original attempts, source/native/input/metadata identities and original/fixed
+scientific payloads remain archived. Qualified/verification full identities pass;
+prior #22/#32 metadata lookup discrepancies remain under #82, not repaired.
+
+Conditional real OpenMM/Astropy/unyt length inputs and JSON recovery preserve an
+application's unyt policy. This is bounded source receiving for #127, not public/
+all-minor qualification or a new mass API. Optional Beartype absence still permits
+normal product use but records ERROR-level required-library diagnostics plus a
+WARNING that checks are optional; owner follow-up is ArgDigest #46. No local
+suppression, provider patch or mandatory Beartype dependency is introduced.
+
+Accepted SDK 1c248b6 validates declarations/generated environments; eight environment
+and 22 distribution controls pass. The initial missing-default-SDK launch is
+unqualified; the existing immutable #69 SDK is reused through the documented
+override. Local GHR 1.0.0 accepts four rules; delivered guide 1.4.0 does not imply
+an operator upgrade. Old hosted/test-tool/version evidence is not relabeled.
+Strict isolated updated cookbook rendering passes; its two code blocks stay
+unchanged, without a new recipe/full-site execution claim. No new full suite.
+
+**Next: scoped ArgDigest function/domain and alias adoption for native geometry.**
+The current root lacks FUNCTION_SOURCE/DOMAIN_SOURCE/NORMALIZATION_SOURCE; value
+checks and curation registry are not full two-axis adoption. Preserve real public
+inputs, explicit physical units, host diagnostics, aliases and skip behavior;
+start with a bounded family and its existing guards. Central review states,
+installed/public #23/#10, hosted #9, workspace #82, #19 delivery, #22 science,
+#41 public/legacy receiving (review 2026-11-11) and #66 endpoint methods remain
+independent. MolSysMT owns every molecular operation. Addon/new release defer.
+Owned /tmp/phmt6-review-20261104-wsgvlcbl/, LMMV/dprada, review 2026-11-18; borrowed
+#69 scientific prefix/SDK are unchanged. No local process remains after checkpoint.
+
 ## Bounded prepared ERalpha chain accepted; adoption review next — 2026-11-04
 
 #22 is now **partial/open**: its declared fragment source/scientific contract

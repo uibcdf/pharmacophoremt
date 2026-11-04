@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Support review delivers diagnostic fix; scoped argument contracts next — 2026-11-04
+
+#6's [receipt](evidence/support_boundary_review_20261104_summary.json) retains
+five failing original guards and 44 passing final attribution/contract controls.
+#72 fixes hidden host diagnostic-emission failures while preserving science and
+original errors; public SMonitor remains the normal emitter. Qualified source/
+native/input/metadata identities remain stable. Conditional unit-form/persistence
+probes and 8 environment/22 distribution controls pass; no full scientific suite
+or installed/public/central adoption claim. The optional Beartype diagnostic
+observation is handed to ArgDigest #46; no provider implementation is copied.
+
+#6 stays **partial**: modern explicit function/domain/alias contracts are not yet
+configured. Next adopt those ArgDigest declarations for a bounded native geometry
+family, preserving inputs, quantities, diagnostics, compatibility and skip behavior.
+Keep current supported tool pins and actual operator installations distinct from
+guide delivery. Public/all-minor provider receiving, #19/#23/#10 delivery, #22 wider
+science, #41 public/legacy migration (review 2026-11-11), hosted #9, workspace #82,
+#60 and #66 retain their gates. Molecular operations remain MolSysMT-owned.
+Addon/new release defer. See [checkpoint](checkpoint.md).
+
 ## Prepared ERalpha fragment accepted within scope; adoption next — 2026-11-04
 
 #22's [receipt](evidence/eralpha_acceptance_20261104_summary.json) accepts its

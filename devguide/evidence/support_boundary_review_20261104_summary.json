@@ -1,0 +1,164 @@
+{
+  "accepted_source_patch_sha256": "e419f0f158631ca77dbdcc8a4c0a53bc9f9c163e24f833ce45ceea250b769ccc",
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "administrative": {
+    "declared_routes_exit_code": 0,
+    "distribution_controls": 22,
+    "environment_controls": 8,
+    "generated_environments_changed": [],
+    "ghr_config_check": true,
+    "ghr_version": "1.0.0",
+    "sdk": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f"
+  },
+  "beartype_followup": {
+    "beartype_imported": false,
+    "diagnostics": [
+      "ARG-WARN-TYPECHECK-001",
+      "DEP-ERR-MISS-001"
+    ],
+    "issue": "uibcdf/argdigest#46",
+    "product_success": true
+  },
+  "consumer": {
+    "head": "cbdee9a4256a73ff132fef63f77246a8ebfe0dbe",
+    "status": " M pharmacophoremt/_ackredit.py\n M tests/test_attribution.py\n"
+  },
+  "diagnostic_fix": {
+    "broken_output_retained_in_payload": true,
+    "expected_warning_promotion_preserves_science": true,
+    "normal_catalog_unchanged": true,
+    "original_scientific_error_preserved": true,
+    "unexpected_failure_retained_and_logged": true
+  },
+  "full_evidence": {
+    "compressed_bytes": 809636,
+    "compressed_sha256": "e577cee742fcfd5a0e81eb4db6c043cfe3390d7c7fafb37a63dbd9c85fb6a8d0",
+    "path": "support_boundary_review_20261104.json.gz",
+    "uncompressed_bytes": 2943231,
+    "uncompressed_sha256": "a6da4e91b965c64b353f1543e27d4e0b0196a4bb472e26c0e542fff299496570"
+  },
+  "full_identity_unchanged": {
+    "final": true,
+    "green": true,
+    "qualified": true,
+    "red": true,
+    "verification": true
+  },
+  "issues": [
+    "uibcdf/pharmacophoremt#6",
+    "uibcdf/pharmacophoremt#72"
+  ],
+  "limits": {
+    "adoption": "Direct/value/unit/diagnostic/optional boundaries have bounded source evidence; modern explicit ArgDigest function/domain/alias adoption remains incomplete. No central registry state edit.",
+    "full_suite_execution": false,
+    "hosted": "Current exact head remains #9; old hosted successes are historical.",
+    "installed_public_all_minor_qualification": false,
+    "issue_6_state": "partial",
+    "issue_72_resolved": true,
+    "operator_tool": "Local GHR 1.0.0 validates current four-rule schema; synchronized guide recommends 1.4.0, no operator upgrade inferred/performed.",
+    "ownership": "PHMT owns its optional tracking boundary and detached errors; SMonitor public catalog emission remains the normal path, stdlib stderr supplies the local fallback. All molecular work remains MolSysMT. No provider or molecular engine is copied.",
+    "performance_measured": false,
+    "provider_followup": "uibcdf/argdigest#46 owns repeated ERROR-level required-library messages for absent optional Beartype; no local provider-warning suppression or mandatory Beartype dependency.",
+    "providers_prefixes_or_dependency_pins_changed": false,
+    "render_scope": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-W",
+        "--keep-going",
+        "-n",
+        "-b",
+        "html",
+        "/tmp/phmt6-review-20261104-wsgvlcbl/docs-source",
+        "/tmp/phmt6-review-20261104-wsgvlcbl/docs-html"
+      ],
+      "neighbor_stubs": {
+        "aligned_cliques.md": [],
+        "aligned_consensus.md": [],
+        "ranked_seeds.md": [],
+        "rigid_refinement.md": []
+      },
+      "scope": "Strict isolated updated attribution cookbook; four neighbor stubs. Existing example blocks are unchanged; this is rendering, not new execution or full-site qualification."
+    },
+    "scientific_method_or_molecular_changes": false,
+    "scientific_receiving": "#19/#22 remain partial for their delivery/wider scientific gates; #41 public/legacy receiving and #66 missing original binding protocols remain independent.",
+    "source_overlay": "Measured runtime/test code is an exact uncommitted overlay on cbdee9a; complete patches and actual source/native/test/input identities are retained. Documentation added after scientific checks does not alter the runtime/test overlay.",
+    "unit_receiving": "Actual conditional length/form/persistence smoke under application unyt, not all optional translators or public installed closure; no mass API invented.",
+    "workspace": "Qualified/verification full identities pass. Prior #22/#32 distribution discovery failures remain retained under MolSysSuite #82."
+  },
+  "measured_date": "2026-11-04",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "regression": {
+    "errors": 0,
+    "failures": 0,
+    "final_module_counts": {
+      "tests.test_attribution": 26,
+      "tests.test_contracts": 18
+    },
+    "final_passed_controls": 44,
+    "original_failed_controls": 5,
+    "seconds": 17.87,
+    "skips": 0,
+    "warning_scope": "Intentional existing host/cross-provider tracking failures, five original groups retained.",
+    "warnings": 10
+  },
+  "schema": "pharmacophoremt.support_boundary_review_summary@1",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_sdk": {
+      "clean_devtools": true,
+      "dependency_declarations_exit": 0,
+      "distribution_tests": 22,
+      "environment_tests": 8,
+      "generated_environments_exit": 0,
+      "head": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "override": "PHARMACOPHOREMT_SUITE_ROOT",
+      "path": "/tmp/phmt69-receiving-20261102-t6z6qujh/sdk"
+    },
+    "extra_temporary_resources": [
+      {
+        "path": "/tmp/matplotlib-4_2ho1iv",
+        "purpose": "Automatic Matplotlib cache from optional-unit probe; reproducible, no scientific source/input",
+        "review_date": "2026-11-18"
+      }
+    ],
+    "issue": "uibcdf/pharmacophoremt#6",
+    "issues": [
+      "uibcdf/pharmacophoremt#6",
+      "uibcdf/pharmacophoremt#72",
+      "uibcdf/argdigest#46"
+    ],
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Support-library integration review and targeted diagnostic failure reproduction; no molecular/backend/prefix changes",
+    "review_date": "2026-11-18"
+  },
+  "unit_smoke": {
+    "application_policy_preserved": true,
+    "inputs": [
+      "openmm_angstrom",
+      "astropy_angstrom",
+      "unyt_angstrom"
+    ],
+    "lengths_and_native_persistence_preserved": true
+  }
+}

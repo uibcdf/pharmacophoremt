@@ -6,11 +6,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (1)
-
-- [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(active, measured)*
-
-### Partial (7)
+### Partial (8)
 
 - [`adopt_required_python_314.md`](adopt_required_python_314.md) — [#23](https://github.com/uibcdf/pharmacophoremt/issues/23) — Adopt the mandatory four-minor contract and qualify normal installed delivery *(partial, measured)*
 - [`esr1_binding_evaluation_readiness.md`](esr1_binding_evaluation_readiness.md) — [#66](https://github.com/uibcdf/pharmacophoremt/issues/66) — Qualify a fresh ERα binding endpoint and cohort before new scoring. *(partial, measured)*
@@ -19,5 +15,6 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_eralpha_validation.md`](native_eralpha_validation.md) — [#22](https://github.com/uibcdf/pharmacophoremt/issues/22) — Audit the ERalpha snapshot and migrate its regression to a reproducible native workflow. *(partial, measured)*
 - [`noarch_distribution_adoption.md`](noarch_distribution_adoption.md) — [#10](https://github.com/uibcdf/pharmacophoremt/issues/10) — Adopt the distribution policy and a guarded single-file noarch publication route. *(partial, measured)*
 - [`retire_legacy_molecular_operations.md`](retire_legacy_molecular_operations.md) — [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) — Retire general molecular operations from reachable legacy workflows. *(partial, measured)*
+- [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(partial, measured)*
 
 <!-- /generated -->

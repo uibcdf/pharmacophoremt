@@ -325,3 +325,93 @@ def test_composed_ensemble_and_retrospective_results_keep_bounded_credit(prepare
     assert multiple["attribution"]["scientific_outcome"] == "matched"
     assert "10.1021/ci600426e" in json.dumps(report["attribution"])
     assert report["attribution"]["status"] == "captured"
+
+
+@pytest.mark.parametrize("stage", ["construction", "emission"])
+@pytest.mark.parametrize("warning_policy", ["always", "error"])
+def test_unexpected_attribution_diagnostic_failures_are_visible(
+    monkeypatch, prepared, capsys, stage, warning_policy
+):
+    from pharmacophoremt._private.smonitor import emitter
+    from pharmacophoremt._private.smonitor import warnings as host_warnings
+
+    source, query = prepared
+    evaluator = PoseEvaluator(query)
+    plain = evaluator.evaluate(source)
+
+    def failed_backend():
+        raise RuntimeError("controlled optional attribution backend failure")
+
+    def failed_diagnostic(*args, **kwargs):
+        raise OSError("controlled host diagnostic failure")
+
+    monkeypatch.setattr(_ackredit, "backend", failed_backend)
+    owner, name = (
+        (host_warnings, "AckreditTrackingWarning")
+        if stage == "construction"
+        else (emitter, "warn")
+    )
+    monkeypatch.setattr(owner, name, failed_diagnostic)
+    with ack.session("broken optional diagnostic") as application:
+        with warnings.catch_warnings():
+            warnings.simplefilter(warning_policy)
+            with phmt.attribution():
+                result = evaluator.evaluate(source)
+        assert ack.current_session() is application
+    payload = result.pop("attribution")
+    assert result == plain
+    assert payload["status"] == "failed" and payload["references"] is None
+    assert payload["host_references"]
+    diagnostic = payload["errors"][-1]
+    assert diagnostic["operation"] == "emit attribution diagnostic"
+    assert "OSError: controlled host diagnostic failure" in diagnostic["reason"]
+    assert diagnostic["tracking_operation"] == "start attribution"
+    assert (
+        "controlled optional attribution backend failure"
+        in diagnostic["tracking_reason"]
+    )
+    fallback = json.loads(capsys.readouterr().err.strip().splitlines()[-1])
+    assert fallback == dict(code="PHMT-W102", **diagnostic)
+
+
+def test_broken_attribution_diagnostic_output_preserves_result_and_original_error(
+    monkeypatch, prepared
+):
+    from pharmacophoremt._private.smonitor import emitter
+
+    source, query = prepared
+    evaluator = PoseEvaluator(query)
+    plain = evaluator.evaluate(source)
+    invalid = object()
+    with pytest.raises(PoseEvaluationError) as original:
+        evaluator.evaluate(invalid)
+
+    def failed_backend():
+        raise RuntimeError("controlled optional attribution backend failure")
+
+    def failed_diagnostic(*args, **kwargs):
+        raise OSError("controlled host diagnostic failure")
+
+    class BrokenOutput:
+        def write(self, text):
+            raise OSError("controlled fallback output failure")
+
+    with monkeypatch.context() as changes:
+        changes.setattr(_ackredit, "backend", failed_backend)
+        changes.setattr(emitter, "warn", failed_diagnostic)
+        changes.setattr(sys, "stderr", BrokenOutput())
+        with ack.session("broken diagnostic output") as application:
+            with phmt.attribution():
+                result = evaluator.evaluate(source)
+                with pytest.raises(PoseEvaluationError) as caught:
+                    evaluator.evaluate(invalid)
+            assert ack.current_session() is application
+    payload = result.pop("attribution")
+    assert result == plain
+    assert payload["status"] == "failed" and payload["references"] is None
+    assert payload["errors"][-1]["fallback_error"] == (
+        "OSError: controlled fallback output failure"
+    )
+    assert caught.value.code == original.value.code == "PHMT-E103"
+    assert type(caught.value.__cause__) is type(original.value.__cause__)
+    assert str(caught.value.__cause__) == str(original.value.__cause__)

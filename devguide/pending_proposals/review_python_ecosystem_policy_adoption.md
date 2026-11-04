@@ -1,13 +1,13 @@
 ---
 summary: Review PharmacophoreMT Python ecosystem policy adoption.
 issue: uibcdf/pharmacophoremt#6
-status: active
+status: partial
 opened: 2026-09-27
 closed:
 verification: measured
 area: [governance, tooling]
 guard: tests/test_contracts.py
-normative:
+normative: devguide/support_library_boundaries.md
 blocked_by: []
 supersedes: []
 ---
@@ -17,6 +17,53 @@ supersedes: []
 **Reported:** 2026-09-27, under the inventory coordinated by
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
+
+## Source-boundary review and diagnostic fix — 2026-11-04
+
+#6 remains **partial**. The [current boundary contract](../support_library_boundaries.md)
+and [receipt](../evidence/support_boundary_review_20261104_summary.json) separate
+actual source receiving from central states and published/installed qualification.
+The measured source is cbdee9a plus the exact retained runtime/test overlay.
+
+The review found and fixes [#72](https://github.com/uibcdf/pharmacophoremt/issues/72):
+unexpected failures in host warning construction/emission were silently erased.
+Normal catalog emission and promotion of the exact host warning remain unchanged.
+Unexpected failures now retain tracking/diagnostic context in the detached failed
+payload and a plain JSON stderr fallback; if output fails too, its error remains
+in the payload. Science, original scientific exceptions and application sessions
+are preserved. No SMonitor/provider or molecular implementation is copied.
+Five new guards fail on original code. Final source passes **44 controls** in
+17.87 s (26 attribution, 18 contracts), zero failures/errors/skips; ten existing
+intentional attribution-failure warnings retain their original five groups.
+Intermediate attempts, exact patches, native/source identities and metadata are
+retained; qualified and verification phases preserve their full identities.
+
+Fresh conditional Sphere/JSON length probes exercise real OpenMM, Astropy and
+unyt inputs under an application unyt policy and preserve import policy/values.
+This supplies bounded source evidence for MolSysSuite #127, not public/all-minor
+receiving or a new mass/translation API. Optional Beartype absence still succeeds
+but emits DEP-ERR-MISS-001 plus ARG-WARN-TYPECHECK-001; the reproduced observation
+is handed to [ArgDigest #46](https://github.com/uibcdf/argdigest/issues/46), without
+consumer suppression or a mandatory Beartype dependency.
+
+The existing clean immutable SDK validates declared routes and generated
+environments, with eight environment-tool and 22 distribution controls passing.
+Initial default-path launches lacked .molsyssuite and are unqualified; the
+supported PHARMACOPHOREMT_SUITE_ROOT override reuses the original #69 SDK without
+changing its pin or checkout. Local GHR is actually 1.0.0 and accepts the four-rule
+configuration; guide recommendation 1.4.0 is not an installed upgrade. Current
+source environment pins and old hosted records keep their own identities.
+
+Modern explicit ArgDigest FUNCTION_SOURCE/DOMAIN_SOURCE/NORMALIZATION_SOURCE
+configuration is still absent. Existing value checks/scoped curation registry do
+not establish full two-axis adoption. **Next migrate a bounded native geometry
+family** to function/domain and alias declarations, preserving supported inputs,
+units, error/skip behavior and compatibility. Public closure #23/#10, hosted #9,
+workspace #82, #19/#22 wider gates and #41 public/legacy migration remain separate.
+No provider/prefix/policy/central registry/dependency-floor/release/addon change.
+No new full suite is claimed. Owned /tmp/phmt6-review-20261104-wsgvlcbl/, LMMV/dprada,
+review 2026-11-18; no local process remains after checkpoint. Original historical
+findings and evidence below retain their original scope.
 
 ## What
 
