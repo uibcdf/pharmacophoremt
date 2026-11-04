@@ -19,7 +19,7 @@ dependencies:
 - nglview
 - molsysmt
 - pyunitwizard
-- argdigest
+- argdigest>=0.17.0
 - smonitor
 - depdigest
 - rdkit

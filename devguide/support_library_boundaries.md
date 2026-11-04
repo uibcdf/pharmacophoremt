@@ -8,7 +8,7 @@ published package receiving and central adoption states are separate evidence.
 
 | Owner | PharmacophoreMT consumer behavior | Qualification limit |
 | --- | --- | --- |
-| ArgDigest | Public value digestion, optional type checking and scoped curation digesters | Modern function/domain and declared-alias integration remains incomplete; root FUNCTION_SOURCE, DOMAIN_SOURCE and NORMALIZATION_SOURCE are not configured. |
+| ArgDigest | Public value digestion, optional type checking and scoped curation digesters | Four native shape constructors use scoped definition-owned FunctionContracts with ArgDigest >=0.17.0. Their closed signatures need no extra domains/aliases; other API domains and real aliases remain under #6. |
 | PyUnitWizard | Explicit physical inputs, application-owned policy, conversion/extraction and portable QuantityRecords | Conditional source probes do not certify all optional forms, provider floors or public installations. |
 | SMonitor | Authored catalog codes, public exceptions/warnings, signals and DiagnosticBundle | Provider internals remain provider-owned; an optional tracking failure must preserve science and observable error context. |
 | DepDigest | Direct declaration and public lazy availability/loading at viewer and Ackredit boundaries | Direct optional callers do not require a DeclaredRegistry migration merely because that API exists. |
@@ -17,6 +17,53 @@ published package receiving and central adoption states are separate evidence.
 Molecular construction, inspection, manipulation and general calculations remain
 MolSysMT operations. Support-library review does not authorize a downstream
 molecular implementation or new preparation policy.
+
+## Native geometry receiving — 2026-11-04
+
+`pharmacophoremt._private.arg_digestion.native_geometry` declares four exact
+signature contracts. Its scoped DigestConfig inherits the host's digestion
+source/style, standardizer, strictness and skip parameter; it explicitly selects
+`contract_owner="definition"`. Point, Sphere, SphereAndVector and Disk alone
+opt in. Defining keys are module.__init__; inherited application classes keep
+those contracts while diagnostic display names remain their runtime classes.
+No global defaults or other callable configuration change.
+
+Closed signatures are their own admission domain. These four shapes expose no
+aliases; center and position are distinct. Adding empty Domain/AliasTable
+registries would not establish useful adoption. Reassess domains for genuine
+extra keyword surfaces and declare only supported aliases at their actual scope.
+The root legacy standardizer remains unchanged pending that separate review.
+
+`tests/test_native_geometry_contracts.py` protects resolved declarations,
+application mixins/deep inheritance, positional/keyword calls, nm/angstrom policy,
+unit directions/normals, host invalid-value diagnostics and causes, skip behavior,
+unknown/missing/duplicate names and native feature composition. Existing geometry,
+reference and placed-pose controls protect scientific consumers. The
+[receipt](evidence/native_geometry_contract_receiving_20261104_summary.json) retains four original owner failures, 40 original behavior
+passes, 85 passing public/development scopes and 1093 passing full-source items.
+The first wrapper-attribute test correction remains retained. Exact public
+ArgDigest 0.17.0 bytes are tested through an owned extraction with inherited
+scientific dependencies, not a fresh clean installation or all-minor qualification.
+
+The raw JUnit aggregate says 1110 tests while its actual testcase elements and
+receptor say 1093; the existing #71 counter discrepancy is preserved. Twenty-one
+warnings in seven original groups remain visible. After that measured full run,
+the new #73 queue entry required a one-line reporting-test issue inventory update;
+its initial failure and three passing final reporting controls are separate
+closeout evidence, not another full-suite run.
+
+ArgDigest >=0.17.0 owns the contract_owner API. Metadata/recipe/generated ordinary
+environments and controlled CI c7128f0 source routes are aligned; no provider,
+prefix, other dependency pin or workflow-policy revision is changed. Optional
+Beartype absence still constructs the model with the existing required ERROR /
+optional WARNING discrepancy owned by ArgDigest #46. No local suppression.
+
+Confirmed native `io.load` unknown-option loss is
+[#73](https://github.com/uibcdf/pharmacophoremt/issues/73), the next independently
+closable change. Method-dependent model dispatch and actual alias receiving
+remain #6 follow-up. Molecular loading, representations, preparation, inspection
+and general calculations remain MolSysMT-owned. #6 stays partial; this scoped
+receiving does not promote central or public/installed/platform/hosted states.
 
 ## Optional-attribution diagnostic failures
 
@@ -43,7 +90,7 @@ construction/emission under ordinary and warnings-as-errors policies, and retain
 science when fallback output is unavailable. Existing attribution/contract guards
 continue to protect normal capture, absence, warnings, units and saved references.
 
-## Current bounded review — 2026-11-04
+## Earlier bounded review — 2026-11-04
 
 [The receipt](evidence/support_boundary_review_20261104_summary.json) preserves
 five failing regression controls on original code and 44 passing final controls,

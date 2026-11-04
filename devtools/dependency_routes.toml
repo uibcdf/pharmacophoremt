@@ -36,10 +36,10 @@ id = "argdigest-base"
 name = "argdigest"
 role = "required-runtime"
 url = "https://github.com/uibcdf/argdigest"
-commit = "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+commit = "c7128f09b2fe064b6c5603d1077dbd2cec52223d"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "ArgDigest 0.17.0 published source for definition-owned native geometry contracts (#6); scientific commands unchanged. Installed/public whole-closure qualification remains #10/#23."
 
 [[source_routes]]
 id = "molsysviewer-base"
@@ -106,10 +106,10 @@ id = "argdigest-3.14"
 name = "argdigest"
 role = "required-runtime"
 url = "https://github.com/uibcdf/argdigest"
-commit = "5c6711ebfe23b9516ef0e8f830abee70589ec406"
+commit = "c7128f09b2fe064b6c5603d1077dbd2cec52223d"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-reason = "Retain existing exact source input; no pin or scientific command change"
+reason = "ArgDigest 0.17.0 published source for definition-owned native geometry contracts (#6); scientific commands unchanged. Installed/public whole-closure qualification remains #10/#23."
 
 [[source_routes]]
 id = "molsysviewer-3.14"
@@ -143,13 +143,13 @@ reason = "Controlled source input; scientific commands unchanged. Chemical-domai
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies.txt"
-sha256 = "f1cbcab8389ca839263b84749fc2e80fd794f78e08fe72d237ae5be41838de2d"
-reason = "Existing pip --no-deps manifest preserved; inline repeat of the same MolSysMT pin is bound by workflow hash"
+sha256 = "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f"
+reason = "Reviewed pip --no-deps manifest: ArgDigest 0.17.0 for #6 definition-owned contracts; other provider pins and scientific workflow commands preserved"
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-sha256 = "f1cbcab8389ca839263b84749fc2e80fd794f78e08fe72d237ae5be41838de2d"
-reason = "Existing pip --no-deps manifest preserved; inline repeat of the same MolSysMT pin is bound by workflow hash"
+sha256 = "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f"
+reason = "Reviewed pip --no-deps manifest: ArgDigest 0.17.0 for #6 definition-owned contracts; other provider pins and scientific workflow commands preserved"
 
 [[contexts]]
 name = "ci-3.11"

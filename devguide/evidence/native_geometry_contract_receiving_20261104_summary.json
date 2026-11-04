@@ -1,0 +1,198 @@
+{
+  "accepted_source_overlay_sha256": "1c8f50ce13a221a409994db48cb9fd37be24c94d54c2b7aacd2d17d227ee289b",
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "closeout": {
+    "checks": {
+      "archive": {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0
+      },
+      "format": {
+        "command": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0
+      },
+      "index": {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0
+      },
+      "reporting": {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0
+      },
+      "ruff": {
+        "command": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0
+      },
+      "whitespace": {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0
+      }
+    },
+    "initial_receipt_identity": {
+      "compressed_bytes": 570160,
+      "compressed_sha256": "c8a37d06e37929aba14d52a4f4e310f734296d7cba5810bd4104198d1cd2809d",
+      "path": "native_geometry_contract_receiving_20261104.json.gz",
+      "uncompressed_bytes": 2168728,
+      "uncompressed_sha256": "2fd59c656e3e413cdd0cc0b85f9d1a4954caf0b57124c9fa69f5ba6df140b491"
+    },
+    "junit": {
+      "actual_cases": 1093,
+      "aggregate_tests": 1110,
+      "owner": "uibcdf/pharmacophoremt#71",
+      "receptor_passed": 1093,
+      "warning_groups": 7,
+      "warnings": 21
+    },
+    "scope": "Post-full-run #73 issue inventory addition changes one expected reporting set entry only. No production or scientific test change. Three reporting/18 archive controls, index, Ruff, format and whitespace pass separately. Initial reporting inventory failure is preserved."
+  },
+  "consumer": {
+    "head": "b0a8f7eb2fb3bb33ef3b51c28bddbd71f00bca4f",
+    "status": " M devtools/conda-build/meta.yaml\n M devtools/conda-build/resources.toml\n M devtools/conda-envs/development_env.yaml\n M devtools/conda-envs/docs_env.yaml\n M devtools/conda-envs/production_env.yaml\n M devtools/dependency_routes.toml\n M devtools/requirements/controlled_suite_dependencies.txt\n M devtools/requirements/controlled_suite_dependencies_py314.txt\n M pharmacophoremt/interaction_site/shape/disk.py\n M pharmacophoremt/interaction_site/shape/point.py\n M pharmacophoremt/interaction_site/shape/sphere.py\n M pharmacophoremt/interaction_site/shape/sphere_and_vector.py\n M pyproject.toml\n?? pharmacophoremt/_private/arg_digestion/native_geometry.py\n?? tests/test_native_geometry_contracts.py\n"
+  },
+  "counts": {
+    "characterized": {
+      "errors": 0,
+      "failures": 4,
+      "items": 44,
+      "skipped": 0
+    },
+    "development": {
+      "errors": 0,
+      "failures": 0,
+      "items": 85,
+      "skipped": 0
+    },
+    "full": {
+      "errors": 0,
+      "failures": 0,
+      "items": 1093,
+      "skipped": 0
+    },
+    "geometry": {
+      "errors": 0,
+      "failures": 0,
+      "items": 85,
+      "skipped": 0
+    },
+    "original": {
+      "errors": 0,
+      "failures": 5,
+      "items": 44,
+      "skipped": 0
+    }
+  },
+  "full_evidence": {
+    "compressed_bytes": 576735,
+    "compressed_sha256": "f8bcae854966c0ad7354d69737ff7644f8e45d65147d0bb1170da2fa9cf54b54",
+    "path": "native_geometry_contract_receiving_20261104.json.gz",
+    "uncompressed_bytes": 2191340,
+    "uncompressed_sha256": "fd574d36a81c4878e8fea76d8d9b8cdd011e942c29b21d5b5f82e40e954f0a7c"
+  },
+  "full_identity_unchanged": {
+    "characterized": true,
+    "development": true,
+    "full": true,
+    "geometry": true,
+    "original": true
+  },
+  "full_suite_seconds": 1401.42,
+  "issues": [
+    "uibcdf/pharmacophoremt#6",
+    "uibcdf/pharmacophoremt#73",
+    "uibcdf/argdigest#46",
+    "uibcdf/molsyssuite#123"
+  ],
+  "junit": {
+    "actual_cases": 1093,
+    "aggregate_tests": 1110,
+    "owner": "uibcdf/pharmacophoremt#71",
+    "receptor_passed": 1093,
+    "warning_groups": 7,
+    "warnings": 21
+  },
+  "limits": {
+    "beartype": "Public 0.17.0 fresh absence still constructs a model with DEP-ERR-MISS-001 + ARG-WARN-TYPECHECK-001; ArgDigest #46 remains owner.",
+    "contract_scope": "Point, Sphere, SphereAndVector, Disk constructors only. Closed signatures need no extra domains; no shape aliases invented. Existing standardizer/value/unit/type-check/skip semantics retained. Root normalization and other callables unchanged.",
+    "dependency_floor": "ArgDigest >=0.17.0; metadata, recipe, generated ordinary environments and both controlled source manifests/inventory aligned.",
+    "issue_6": "partial",
+    "molecular_implementation_changed": false,
+    "next": "Confirmed native io.load unknown-option loss is #73; method-dependent model dispatcher options remain #6 follow-up.",
+    "performance": "Not measured. Test durations do not establish performance superiority.",
+    "post_full_suite_change": "Post-full-run #73 issue inventory addition changes one expected reporting set entry only. No production or scientific test change. Three reporting/18 archive controls, index, Ruff, format and whitespace pass separately. Initial reporting inventory failure is preserved.",
+    "qualification": "Source PharmacophoreMT overlay + exact extracted public ArgDigest 0.17.0 under inherited controlled scientific dependencies on Linux/Python 3.14.7. No clean Conda install, full public dependency closure, all-minor/platform matrix or hosted success is inferred.",
+    "shared_prefix_or_provider_source_mutated": false,
+    "temporary_resources": {
+      "owners": [
+        "LMMV",
+        "dprada"
+      ],
+      "path": "/tmp/phmt6-geometry-20261104-2f7oq6kg",
+      "review": "2026-11-18",
+      "shared_resources": "Borrowed #69 venv/SDK untouched. Exact public provider file and originals retained."
+    }
+  },
+  "measured_date": "2026-11-04",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "public_provider": {
+    "bytes": 55325,
+    "release": "https://github.com/uibcdf/argdigest/releases/tag/0.17.0",
+    "sha256": "9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1",
+    "source_commit": "c7128f09b2fe064b6c5603d1077dbd2cec52223d",
+    "url": "https://api.anaconda.org/download/uibcdf/argdigest/0.17.0/noarch/argdigest-0.17.0-py_0.tar.bz2"
+  },
+  "schema": "pharmacophoremt.native_geometry_contract_receiving_summary@1",
+  "source_patch_sha256": "5f7aad70b7489f5d104fa2035b734033b0b55ebfd626d791fac7eea6d62a4df9"
+}

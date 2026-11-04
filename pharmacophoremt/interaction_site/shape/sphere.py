@@ -9,6 +9,7 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt._private.arg_digestion.native_geometry import CONFIG
 from pharmacophoremt._private.colors import convert as convert_color_code
 from pharmacophoremt.viewer.color_palettes import get_color_from_palette_for_feature
 
@@ -36,7 +37,7 @@ class Sphere:
     """
 
     @signal(tags=["core", "shape", "sphere", "init"])
-    @arg_digest(type_check=True)
+    @arg_digest(config=CONFIG, type_check=True)
     def __init__(self, center, radius, skip_digestion=False):
 
         self.shape_name = "sphere"

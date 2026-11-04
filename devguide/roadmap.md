@@ -1,5 +1,26 @@
 # Strategic Roadmap
 
+## Native geometry contracts received; native loader options next — 2026-11-04
+
+#6's [new receipt](evidence/native_geometry_contract_receiving_20261104_summary.json) qualifies definition-owned Point/Sphere/
+SphereAndVector/Disk constructor contracts with real public ArgDigest 0.17.0.
+All 1093 full-source test items pass; four owner guards fail original production
+code, while 40 original behavior controls already pass. Two separate 85-control
+runs pass with public/development providers. Exact dirty overlays and all attempts
+remain retained; source/native/metadata identities stay stable.
+
+Closed signatures require no invented domain/alias declarations. Metadata,
+recipe, generated ordinary environments and both exact CI source routes now
+require/support ArgDigest >=0.17.0; other pins and molecular operations are
+unchanged. No shared prefix/provider edit or clean installed/all-platform claim.
+
+**Next: #73 native loader option admission**, then #6's method-dependent model
+forwarding and actual aliases. The loader reproducer confirms silent unknown-
+keyword loss for native JSON/YAML. MolSysMT owns molecular loading and option
+contracts. #6 stays partial; ArgDigest #46 owns optional-Beartype diagnostics.
+#41/#19/#22/#23/#10/#9/#82/#60/#66 keep their existing gates; no new release or
+addon priority. See [checkpoint](checkpoint.md) and [boundaries](support_library_boundaries.md).
+
 ## Support review delivers diagnostic fix; scoped argument contracts next — 2026-11-04
 
 #6's [receipt](evidence/support_boundary_review_20261104_summary.json) retains

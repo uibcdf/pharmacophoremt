@@ -18,6 +18,58 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Scoped geometry adoption and loader follow-up — 2026-11-04
+
+#6 adopts scoped public ArgDigest contracts for Point, Sphere, SphereAndVector
+and Disk. Each defining module owns its constructor's signature through
+`DigestConfig(contract_owner="definition")`; application subclasses and mixins
+keep that identity while refusal messages retain the runtime class. Existing
+value digesters, normalization hook, optional type checks, PyUnitWizard policy
+and `skip_digestion` remain active. Closed signatures need no extra Domain or
+AliasTable: no shape-specific aliases are supported or introduced, and center
+and position stay distinct. Other callables keep their existing configuration.
+
+The [receipt](../evidence/native_geometry_contract_receiving_20261104_summary.json) retains the exact published ArgDigest 0.17.0 Conda file
+(SHA-256 9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1),
+source/test/metadata overlays on b0a8f7e and every attempt. Corrected guards fail
+four owner checks and pass 40 behavior checks on original production code.
+One initial wrapper-attribute test mistake and its correction remain visible.
+The final full source suite passes **1093 actual test items** in 1401.42 s,
+with zero failures/errors/skips; original warnings and XML counters are retained.
+The 85-control scope also passes separately with public 0.17.0 and the normal
+0.17.0+5 development provider. All five source/native/metadata identity checks
+remain true. This is Linux/Python 3.14.7 source receiving with extracted public
+ArgDigest and inherited scientific dependencies, not a clean public installation,
+all-minor/platform matrix or hosted qualification.
+
+ArgDigest **>=0.17.0** is now explicit in metadata, Conda recipe and generated
+ordinary environments. Both controlled CI manifests/inventory use the published
+source c7128f09b2fe064b6c5603d1077dbd2cec52223d, replacing 0.15.0 source
+5c6711e. Other provider pins, scientific commands, SDK and frozen workflow
+pins are unchanged. The new private module is in the package resource inventory.
+Eight environment/22 distribution checks and declaration/generation checks pass.
+Initial generation correctly refused stale input hashes before their reviewed
+update; this attempt is retained. The borrowed prefix is unchanged. The sibling
+ArgDigest clone is clean but six commits behind its remote and remains untouched.
+
+The raw JUnit aggregate says 1110 tests while its actual testcase elements and
+receptor say 1093; the existing #71 counter discrepancy is preserved. Twenty-one
+warnings in seven original groups remain visible. After that measured full run,
+the new #73 queue entry required a one-line reporting-test issue inventory update;
+its initial failure and three passing final reporting controls are separate
+closeout evidence, not another full-suite run.
+
+**#6 remains partial. Next fix [#73](https://github.com/uibcdf/pharmacophoremt/issues/73):**
+real native JSON/YAML `io.load` calls silently discard unknown options, whereas
+the direct readers refuse them. Preserve valid format contracts and delegate
+molecular conversion/options to MolSysMT; do not copy its option registry or
+engine. Then review method-dependent model dispatcher domains and real aliases.
+Public 0.17.0 Beartype absence still succeeds with ERROR + WARNING; ArgDigest #46
+remains owner. #41 (review 2026-11-11), #19/#22, #23/#10, hosted #9, workspace #82,
+#60 and #66 retain their independent gates. Molecular operations remain MolSysMT;
+no release/addon or central adoption-state change. Owners LMMV/dprada, temporary
+capsule /tmp/phmt6-geometry-20261104-2f7oq6kg, review 2026-11-18.
+
 ## Source-boundary review and diagnostic fix — 2026-11-04
 
 #6 remains **partial**. The [current boundary contract](../support_library_boundaries.md)

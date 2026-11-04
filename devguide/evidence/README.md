@@ -7,6 +7,40 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Native geometry contract receiving — 2026-11-04
+
+The [summary](native_geometry_contract_receiving_20261104_summary.json) and original
+archive retain #6's scoped Point/Sphere/SphereAndVector/Disk FunctionContracts,
+public ArgDigest 0.17.0 file and exact source/test/metadata overlay on b0a8f7e.
+Four owner guards fail original code while 40 behavior controls pass; the initial
+incorrect wrapper-attribute guard and correction remain visible. Public and
+normal development 85-control scopes pass. Final full-source run passes 1093
+actual XML test items in 1401.42 s, zero failures/errors/skips. Raw receptor
+warnings/XML and all five before/after source/native/metadata identities are kept.
+No test aggregate discrepancy is silently repaired or substituted for actual items.
+
+The raw JUnit aggregate says 1110 tests while its actual testcase elements and
+receptor say 1093; the existing #71 counter discrepancy is preserved. Twenty-one
+warnings in seven original groups remain visible. After that measured full run,
+the new #73 queue entry required a one-line reporting-test issue inventory update;
+its initial failure and three passing final reporting controls are separate
+closeout evidence, not another full-suite run.
+
+Metadata/recipe/generated ordinary environments and both CI source routes now
+require/support ArgDigest >=0.17.0. Closed shape signatures require no invented
+keyword domain or aliases; other callable configurations are unchanged. The exact
+public Conda bytes are received by extraction under inherited controlled scientific
+dependencies, not by a fresh clean installation. No all-minor/platform/hosted claim.
+ArgDigest #46 retains optional-Beartype diagnostic ownership. Original probes also
+confirm #73's silently ignored native JSON/YAML loader options; this is the next
+separate correction. Molecular loading/operations remain delegated to MolSysMT.
+
+Read `original_files[name].text` with each raw SHA-256 for runners, logs, XML,
+snapshots, input files and the complete accepted overlay. `public_provider.base64`
+retains the exact public artifact; verify its SHA-256 before extraction. The archive
+is data and does not execute stored commands. Owners LMMV/dprada; temporary capsule
+/tmp/phmt6-geometry-20261104-2f7oq6kg, review 2026-11-18. #6 remains partial and other gates retain their scopes.
+
 ## Support-library boundary review and diagnostic fix — 2026-11-04
 
 The [summary](support_boundary_review_20261104_summary.json) and full original
