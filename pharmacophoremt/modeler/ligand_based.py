@@ -14,6 +14,7 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_n_conformers,
     digest_n_points,
 )
+from pharmacophoremt._private.arg_digestion.ligand_consensus import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.modeler.modeler import Modeler
 
@@ -60,7 +61,9 @@ class LigandBasedModeler(Modeler):
     minimum native consensus sites, not exact-size legacy subsets; min_actives
     means joint distinct-ligand support, defaulting to all inputs. Native keyword
     options are forwarded to the selected public tool, except min_sites/min_support,
-    which use those historical constructor names.
+    which use those historical constructor names. A definition-owned ArgDigest
+    domain admits method-specific options before consuming prepared inputs; the
+    explicit body checks remain active when optional digestion is bypassed.
 
     Inputs may be an iterable of prepared systems (positional ligand IDs, frame
     zero/reference state) or explicit unique ligand_id/molecular_system records
@@ -81,7 +84,7 @@ class LigandBasedModeler(Modeler):
     """
 
     @signal(tags=["modeler", "ligand", "init"])
-    @arg_digest(type_check=True)
+    @arg_digest(config=CONFIG, type_check=True)
     def __init__(
         self,
         molecular_systems,

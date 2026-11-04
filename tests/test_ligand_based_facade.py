@@ -3,6 +3,7 @@
 import molsysmt as msm
 import numpy as np
 import pytest
+from argdigest import UnknownArgumentError
 
 import pharmacophoremt as phmt
 from pharmacophoremt import pyunitwizard as puw
@@ -74,7 +75,12 @@ def test_dispatcher_routes_ligand_collection_before_single_system_conversion(
     ],
 )
 def test_invalid_or_ambiguous_legacy_parameters_are_refused(options):
-    with pytest.raises(ArgumentError):
+    error = (
+        UnknownArgumentError
+        if {"min_sites", "min_support"} & options.keys()
+        else ArgumentError
+    )
+    with pytest.raises(error):
         LigandBasedModeler(
             [object(), object()], consensus_method="aligned_cliques", **options
         )

@@ -18,6 +18,22 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Nested constructor contracts received — 2026-11-04
+
+[Contract](../nested_facade_contracts.md) and [receipt](../evidence/nested_facade_contracts_20261104_summary.json)
+qualify definition-owned method domains for LigandBasedModeler/VirtualScreening,
+derived from their actual native endpoint signatures. Unknown options fail before
+consuming input/native construction; valid methods, defaults, forwarding, units,
+subclasses and scientific bypass checks remain. #78 fixes leaked VirtualScreening
+skip controls with an explicit local parameter. No new aliases or molecular registry.
+
+167 focused cases pass (39 new), with three retained intentional unknown-run-option
+warnings. Source/native/metadata identities stay stable in all three attempts.
+The two old min_sites/min_support expectations now require earlier refusal. #6
+remains partial; run's instance-state dispatch/cache reset stays unchanged and
+batch/evaluation declarations/public-provider delivery remain separate work.
+No provider source/prefix/floor/pin or scientific algorithm changes.
+
 ## Scoped model dispatch receiving — 2026-11-04
 
 [Receipt](../evidence/model_dispatch_contract_20261104_summary.json): 290 focused controls pass with public ArgDigest

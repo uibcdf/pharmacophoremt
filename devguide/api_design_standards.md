@@ -2,6 +2,14 @@
 
 Guidelines for writing clean, consistent, and ecosystem-compliant code in PharmacophoreMT.
 
+## Nested facade receiving — 2026-11-04
+
+[Definition-owned constructor domains](nested_facade_contracts.md) now cover
+ligand consensus and screening options under #6; #78 consumes VirtualScreening's
+explicit skip control locally. This is method-specific admission before input
+consumption, not a change to scoring/search/preparation. Public batch/evaluation
+contracts and broader adoption remain partial, preserving cache-clear order.
+
 ## Current scoped adoption — 2026-11-04
 
 The public `model` facade declares its method-dependent keyword domain and

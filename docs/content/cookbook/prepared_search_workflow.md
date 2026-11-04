@@ -77,3 +77,18 @@ stable facade ties, attribution on/off and fresh readers. Its
 [validation case](../validation/prepared_search_workflow.md) retains the actual
 outputs and limits. These are analytical workflow controls, not activity labels,
 experimental poses, generated-conformer qualification or a speed comparison.
+
+## Screening facade constructor controls
+
+VirtualScreening requires an explicit placed, rigid or conformers method. Its
+constructor accepts that native tool's options: max_trials/search_method belong
+to rigid/conformers, while selection/frame options are supplied to run(). Unknown
+constructor names are refused before evaluator entry. Both explicit boolean
+skip_digestion controls are now consumed by the facade; they are never forwarded
+to the native constructor. True bypasses only optional host preprocessing, retaining
+method/inert preparation and downstream native checks. Nonbooleans are refused.
+
+Run-time options still reach native tools after matches/evaluations are cleared,
+including invalid-option attempts. Negative/failed score handling and explicit
+ranking methods are unchanged. All molecular preparation/inspection/calculation
+continues through MolSysMT.

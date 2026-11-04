@@ -16,6 +16,8 @@ required_paths = [
   "site-packages/pharmacophoremt/_private/arg_digestion/argument/_contracts.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/native_geometry.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/model_dispatch.py",
+  "site-packages/pharmacophoremt/_private/arg_digestion/ligand_consensus.py",
+  "site-packages/pharmacophoremt/_private/arg_digestion/screening_facade.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/argument/cation_mapping.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/argument/center.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/argument/description.py",

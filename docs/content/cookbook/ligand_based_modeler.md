@@ -69,3 +69,14 @@ the application chooses one. The maintained
 [migration contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/ligand_based_workflow.md) specifies the
 breaking scientific transition and its guards. Environmental hydrogen refinement
 for the observed ERα pilot remains a separate MolSysMT #323 dependency.
+
+## Constructor option admission
+
+Options follow the explicitly selected native consensus tool. A rigid-only option
+such as max_fits is refused for aligned_cliques before prepared inputs are consumed.
+Use n_points/min_actives for the minimum site/support names; min_sites/min_support
+are not extra facade options. Unknown names now raise ArgDigest UnknownArgumentError
+at this constructor, rather than a delayed native_options error. Application
+subclasses keep the defining constructor contract. Explicit skip_digestion=True
+retains mandatory method/prepared-input/legacy preparation checks; it does not
+generate conformers or relax the scientific method. No new aliases are introduced.

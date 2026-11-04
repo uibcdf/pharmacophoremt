@@ -122,3 +122,11 @@ public keep-policy composer. Metadata from both components is retained;
 independent sites and explicit frame/provenance/score behavior replace the old
 shared-site/empty-metadata result. Molecular source remains an intentional live
 reference; no molecular copying or new scientific composition method is added.
+
+## Nested constructor receiving — 2026-11-04
+
+[#6/#78 contract](nested_facade_contracts.md) records method-specific native
+constructor admission and explicit local VirtualScreening skip controls. 167 source
+controls pass; methods/scoring/cache/scientific constraints remain. Broader batch/
+public provider/installed receiving stays separate. No molecular options registry
+or new scientific backend is introduced.

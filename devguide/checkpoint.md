@@ -1,5 +1,26 @@
 # Development Checkpoint
 
+## Nested facade admission and skip control received — 2026-11-04
+
+#6's [nested contract](nested_facade_contracts.md) and [receipt](evidence/nested_facade_contracts_20261104_summary.json)
+qualify ligand-consensus/screening constructor domains derived from existing
+endpoint signatures. **167 focused controls pass** (39 new), with all three
+source/native/test/metadata identity checks stable. No method, score, preparation
+or molecular routine changes. Definition ownership and mandatory bypass checks
+are preserved. #78 fixes explicit True/False VirtualScreening controls leaking
+to native constructors; nonboolean values are refused.
+
+Two old min_sites/min_support tests now expect earlier UnknownArgumentError.
+Three intentional unknown-run-option warnings remain; run/cache order is unchanged.
+#6 stays partial for broader public/batch/support and delivery receiving. Source
+qualification is separate from full-suite/installed/platform/predictive evidence.
+
+Next product review: audit items 8–9, multi-feature/shared-participant semantics
+and traceable observation-to-constraint choices. Inspect existing definitions and
+controls before changing science. Molecular gaps belong in MolSysMT; #74/#215,
+#66, addon/new release and other gates retain their existing scope. Earlier dated
+checkpoints remain historical.
+
 ## Merge delegates to public composition — 2026-11-04
 
 [#77](https://github.com/uibcdf/pharmacophoremt/issues/77) is fixed with a small

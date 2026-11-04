@@ -1,0 +1,230 @@
+{
+  "accepted_files": {
+    "devtools/conda-build/resources.toml": "4a2d7433eb6df2b5c0d34a2ddae1b6f389f9c9a5a9f25da1ea7dd5a007694dcc",
+    "pharmacophoremt/_private/arg_digestion/ligand_consensus.py": "d19f9564ddea98e5530f35dd6bd7c3888c10cca4cacf0d9c58f3fdc124352228",
+    "pharmacophoremt/_private/arg_digestion/screening_facade.py": "799a0c10200e5a84c5e555984c51d41c9a60776479c03fe991262c68c8306b35",
+    "pharmacophoremt/modeler/ligand_based.py": "4cbdcc9d65001d7cc7c5c4217d9d3ab15e17789d02290977e69e7486ea331b8b",
+    "pharmacophoremt/screening/virtual_screening.py": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+    "tests/test_ligand_based_facade.py": "e6120e3a8fa851a10830fcbcb28a42413d3dfa1cc1c299686a40412b9bbfb531",
+    "tests/test_nested_facade_contracts.py": "8baaf5da9b5f6215867df59be2e7cc4c46ea196197e232c103150e5d2b5b009b"
+  },
+  "administrative": {
+    "distribution_controls": 22,
+    "index_and_whitespace_checks": true,
+    "reporting_controls": 3,
+    "ruff_formatted_files": 326
+  },
+  "attempt_history": [
+    "Original nine-case real constructor probe: omitted controls succeed for all methods; explicit False and True fail in six combinations when forwarded downstream.",
+    "Original 28 guards: 16 failures/12 passes, including new declaration/early-admission requirements and the six genuine skip-control failures. Formatting removes two initial semicolon lint diagnostics before that test execution.",
+    "First broad run: 154 passes/2 failures because min_sites/min_support now raise earlier UnknownArgumentError rather than the previous host ArgumentError. Two assertions are updated precisely, not relaxed to a broad tuple.",
+    "Final: 167 cases pass (39 new), zero failures/errors/skips, three retained missing-digester warnings from intentional invalid run-option probes. All three identities stable; constructor scientific bodies and run/cache function are unchanged.",
+    "Both cookbook Python code-block sets remain unchanged. Strict isolated Markdown/notebook link closure (14 real pages) renders with execution disabled; no full-site/new scientific recipe claim."
+  ],
+  "base_commit": "174225924757caf651587205711a8b6e228879aa",
+  "constructor_bodies_unchanged": true,
+  "constructor_domain_owners": [
+    "pharmacophoremt.modeler.ligand_based.__init__",
+    "pharmacophoremt.screening.virtual_screening.__init__"
+  ],
+  "date": "2026-11-04",
+  "documentation": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/tmp/phmt6-nested-20261104-8tg115yn/docs_nb_closure",
+      "/tmp/phmt6-nested-20261104-8tg115yn/docs_nb_closure_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "content/about/installation.md": "69d9fa76974f2714b1deffc3fabe8a50e83f879784c2e06165c2ee28164fd87f",
+      "content/cookbook/aligned_cliques.md": "3006ed9accc7f34655e64bb282929f9472b3c9d3181840da6d97f89bd79eccc6",
+      "content/cookbook/aligned_consensus.md": "536032500982f1579b4eeed8def5e3e14a7d087c19c46e3bc23334c1206ad9c9",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/ligand_based_modeler.md": "d4860211f592e5bcea3819b449a683e4e9f78dca66f7d391f7fa8e5da5ee4e7b",
+      "content/cookbook/prepared_ccd_ligands.md": "db8af2d1ae26b822e2f8a63e86a4fe5cbb3081a4511d2dcb685e0ef2ff8baa58",
+      "content/cookbook/prepared_search_workflow.md": "205686f6283ebcdc28a1f7b79d8a95b5810ce1e1cf1b5b1948a2cf9c50dd5a46",
+      "content/cookbook/prepared_workflow.md": "8ca83596127dd385527d69113576b0a37e8a9a3a4ce20c8f4360d89c0ff27cab",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3",
+      "content/validation/prepared_ccd.md": "881cacc322d1c3211bddd790d24e4fba84bfe609a134a9949e179a4bfde14179",
+      "content/validation/prepared_search_workflow.md": "c48355f420445b913782571cb5e8449f83a676e7c373819f2e5d39e9063f0640",
+      "content/validation/prepared_workflow.md": "cdc6a96f44d4e5a0889bbd34c82c5b0577674f09e888bbbc4ca44a478eada666"
+    },
+    "scope": "Strict isolated changed cookbook page with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim."
+  },
+  "full_evidence": {
+    "compressed_bytes": 286780,
+    "compressed_sha256": "b68f143b7360aac5c43129e0e26f6b6d289479496debcbe3a20746807bf714ee",
+    "path": "nested_facade_contracts_20261104.json.gz",
+    "uncompressed_bytes": 1112096,
+    "uncompressed_sha256": "864d0d41eb69c585d7e02e9d5bd9dfbd73c225ceb7c886740ff186e677280ad7"
+  },
+  "issue": "uibcdf/pharmacophoremt#6",
+  "original_skip_probe": [
+    {
+      "method": "placed",
+      "skip": "omitted",
+      "success": true
+    },
+    {
+      "message": "'pharmacophoremt.screening.pose_evaluation.__init__' does not accept the argument 'skip_digestion'. Check the arguments it accepts. It accepts: direction_tolerance, min_fit_value, pharmacophore, point_tolerance, self. See https://www.uibcdf.org/argdigest.",
+      "method": "placed",
+      "skip": false,
+      "success": false,
+      "type": "UnknownArgumentError"
+    },
+    {
+      "message": "PoseEvaluator.__init__() got an unexpected keyword argument 'skip_digestion'",
+      "method": "placed",
+      "skip": true,
+      "success": false,
+      "type": "TypeError"
+    },
+    {
+      "method": "rigid",
+      "skip": "omitted",
+      "success": true
+    },
+    {
+      "message": "'pharmacophoremt.screening.rigid_search.__init__' does not accept the argument 'skip_digestion'. Check the arguments it accepts. It accepts: direction_tolerance, max_trials, min_fit_value, pharmacophore, point_tolerance, search_method, self. See https://www.uibcdf.org/argdigest.",
+      "method": "rigid",
+      "skip": false,
+      "success": false,
+      "type": "UnknownArgumentError"
+    },
+    {
+      "message": "RigidPoseSearch.__init__() got an unexpected keyword argument 'skip_digestion'",
+      "method": "rigid",
+      "skip": true,
+      "success": false,
+      "type": "TypeError"
+    },
+    {
+      "method": "conformers",
+      "skip": "omitted",
+      "success": true
+    },
+    {
+      "message": "'pharmacophoremt.screening.conformer_screening.__init__' does not accept the argument 'skip_digestion'. Check the arguments it accepts. It accepts: direction_tolerance, max_trials, min_fit_value, pharmacophore, point_tolerance, search_method, self. See https://www.uibcdf.org/argdigest.",
+      "method": "conformers",
+      "skip": false,
+      "success": false,
+      "type": "UnknownArgumentError"
+    },
+    {
+      "message": "ConformerScreening.__init__() got an unexpected keyword argument 'skip_digestion'",
+      "method": "conformers",
+      "skip": true,
+      "success": false,
+      "type": "TypeError"
+    }
+  ],
+  "post_scientific_reporting_inventory_sha256": "25231dab2863dd91c68858c27ad2e05a2ba290ed4367787aa98658b597ec3072",
+  "remaining_work": "#6 stays partial for broader public/batch/support declarations and delivered-provider qualification. Instance-dependent run options remain delegated after cache clearing; no molecular registry or algorithm is introduced.",
+  "resolved_bug": "uibcdf/pharmacophoremt#78",
+  "runs": {
+    "final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt6-nested-20261104-8tg115yn/final-temp",
+        "--junitxml=/tmp/phmt6-nested-20261104-8tg115yn/final.xml",
+        "tests/test_nested_facade_contracts.py",
+        "tests/test_ligand_based_facade.py",
+        "tests/test_virtual_screening.py",
+        "tests/test_model_dispatch_contract.py",
+        "tests/test_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 167,
+      "skipped": 0
+    },
+    "green": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt6-nested-20261104-8tg115yn/green-temp",
+        "--junitxml=/tmp/phmt6-nested-20261104-8tg115yn/green.xml",
+        "tests/test_nested_facade_contracts.py",
+        "tests/test_ligand_based_facade.py",
+        "tests/test_virtual_screening.py",
+        "tests/test_model_dispatch_contract.py",
+        "tests/test_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "failures": 2,
+      "full_identity_unchanged": true,
+      "items": 156,
+      "skipped": 0
+    },
+    "red": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt6-nested-20261104-8tg115yn/red-temp",
+        "--junitxml=/tmp/phmt6-nested-20261104-8tg115yn/red.xml",
+        "tests/test_nested_facade_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 16,
+      "full_identity_unchanged": true,
+      "items": 28,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.nested-facade-contracts-receiving@1",
+  "scientific_algorithms_providers_dependencies_unchanged": true,
+  "scope": "Linux/Python 3.14.7 source receiving with extracted public ArgDigest 0.17.0 and inherited scientific dependencies; not full-suite, clean installed/public/all-platform, performance or predictive qualification.",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt6-nested-20261104-8tg115yn",
+    "review": "2026-11-18"
+  },
+  "virtual_run_function_unchanged": true
+}

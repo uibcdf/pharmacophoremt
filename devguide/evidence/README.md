@@ -7,6 +7,14 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Nested facade constructor receiving — 2026-11-04
+
+[Receipt](nested_facade_contracts_20261104_summary.json): 167 focused controls pass,
+including 39 new admission/forwarding/subclass/bypass/cache cases. Exact overlays,
+original skip probe and all attempts/three stable identities remain retained.
+[Contract](../nested_facade_contracts.md) keeps #6 partial and scopes #78's fix.
+Three intentional batch warnings remain; no provider/floor/scientific-method change.
+
 ## Pharmacophore.merge receiving — 2026-11-04
 
 [Receipt](pharmacophore_merge_20261104_summary.json) retains original guards,

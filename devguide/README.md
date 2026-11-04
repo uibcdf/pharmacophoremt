@@ -10,13 +10,14 @@ completion criteria and evidence limits. #73 is now fixed; continue with the
 [current capability inventory](capability_inventory.md), scoped #6 contracts and
 scientific study design. Native schema/writer checks are now received under #76;
 live references/variants are now qualified under #60; legacy merge #77 is now fixed through public composition; nested facade
-admission under #6 is next.
+admission is now received, with broader #6 adoption still partial. Scientific
+semantics/provenance under audit items 8–9 is next.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #77 merge now delegates to public composition with independent data and both component histories. Next: bounded nested facade contracts under #6. Molecular operations remain MolSysMT-owned; SDF migration #74 waits on #215; installed/platform/scientific gates stay separate. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: nested ligand/screening constructor domains received (167 focused checks); #78 skip forwarding fixed, #6 remains partial. Next: scientific multi-feature/shared-participant semantics and observation provenance (audit 8–9). Molecular operations remain MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 

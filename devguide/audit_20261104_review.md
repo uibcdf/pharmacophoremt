@@ -249,3 +249,14 @@ Original metadata loss is fixed; original site-sharing observation was not a
 historically promised independence violation. All attempts and exact bytes are
 retained. No molecular/provider operation added or full-suite/installed/predictive
 promotion. Next #6 nested facade admission; other audit studies retain their scope.
+
+## Progress — 2026-11-04: nested facade contracts partial adoption (#6/#78)
+
+[Nested contract](nested_facade_contracts.md) and [receipt](evidence/nested_facade_contracts_20261104_summary.json)
+record 167 passing controls, definition-owned signature-derived constructor domains
+and #78's repaired local skip-control handling. Valid scientific behavior and
+run/cache order remain. Two legacy option-error expectations migrate to earlier
+ArgDigest refusal; three intentional run warnings remain visible. All attempts/
+identities preserved; no full-suite/installed/predictive claim. #6 stays partial.
+Next product review: items 8–9, existing multi-feature/shared-participant semantics
+and observation-to-constraint provenance; molecular operations stay in MolSysMT.

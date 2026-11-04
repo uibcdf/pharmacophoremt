@@ -8,6 +8,7 @@ from smonitor import signal
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_screening_method,
 )
+from pharmacophoremt._private.arg_digestion.screening_facade import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.screening.conformer_screening import ConformerScreening
 from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
@@ -28,7 +29,10 @@ class VirtualScreening:
     other values are refused. All essential sites must match. Set a native
     min_fit_value threshold to bound total weighted coverage. Lengths and angles
     require explicit units. Method-specific keyword options reach the selected
-    public tool; evaluate/run options are supplied to run().
+    public tool; evaluate/run options are supplied to run(). A definition-owned
+    ArgDigest domain rejects unknown constructor options before evaluator entry.
+    skip_digestion controls this facade only and is never forwarded to the native
+    constructor; its scientific checks and method validation remain active.
 
     For molecular ranking choose search_method='seeded_hit' with rigid/conformers.
     Their legacy checked-pose ranking instead requires explicit
@@ -45,7 +49,7 @@ class VirtualScreening:
     """
 
     @signal(tags=["screening", "init"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def __init__(
         self,
         pharmacophore,
@@ -56,6 +60,7 @@ class VirtualScreening:
         *,
         screening_method=None,
         score_method=None,
+        skip_digestion=False,
         **native_options,
     ):
         tools = {

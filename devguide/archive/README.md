@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (56)
+### Resolved (57)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -62,6 +62,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`translated_coincident_feature_centers.md`](translated_coincident_feature_centers.md) — [#31](https://github.com/uibcdf/pharmacophoremt/issues/31) — Centroid roundoff admitted co-located feature centers as non-collinear rigid anchors. *(resolved, measured)*
 - [`validation_benchmark_publication.md`](validation_benchmark_publication.md) — [#20](https://github.com/uibcdf/pharmacophoremt/issues/20) — Decide how to collect and publish scientific validation and benchmark evidence. *(resolved, measured)*
 - [`viewer_panel_feedback.md`](viewer_panel_feedback.md) — [#59](https://github.com/uibcdf/pharmacophoremt/issues/59) — Distinguish cached input states and clean panel listeners through the existing anywidget lifecycle. *(resolved, measured)*
+- [`virtual_screening_skip_forwarding.md`](virtual_screening_skip_forwarding.md) — [#78](https://github.com/uibcdf/pharmacophoremt/issues/78) — Consume VirtualScreening constructor digestion control at its own boundary. *(resolved, measured)*
 - [`zero_angle_roundoff.md`](zero_angle_roundoff.md) — [#16](https://github.com/uibcdf/pharmacophoremt/issues/16) — Zero-angle direction checks rejected their own source because normalization roundoff became a real angle. *(resolved, measured)*
 
 <!-- /generated -->
