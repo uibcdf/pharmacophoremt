@@ -71,6 +71,14 @@ CATALOG = {
             "code": "PHMT-E107",
             "message": "Clique consensus requires {observed} {resource} at stage '{stage}', exceeding its limit of {limit}; hypothesis discovery remains unresolved.",
         },
+        "NativeFormatError": {
+            "code": "PHMT-E108",
+            "message": "Invalid native pharmacophore {field}: {reason}.",
+        },
+        "ArgumentTypeError": {
+            "code": "PHMT-E109",
+            "message": "Invalid '{argument}': expected {expected_type}, got {actual_type}.",
+        },
     },
 }
 

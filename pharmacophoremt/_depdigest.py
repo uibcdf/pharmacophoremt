@@ -11,7 +11,8 @@ LIBRARIES = {
     "depdigest": {"type": "hard", "pypi": "depdigest"},
     "rdkit": {"type": "hard", "pypi": "rdkit"},
     "networkx": {"type": "hard", "pypi": "networkx"},
-    "nglview": {"type": "soft", "pypi": "nglview"},
+    "yaml": {"type": "hard", "pypi": "PyYAML"},
+    "nglview": {"type": "hard", "pypi": "nglview"},
     "molsysviewer": {"type": "soft", "pypi": "molsysviewer"},
     "ackredit": {"type": "soft", "pypi": "ackredit"},
 }

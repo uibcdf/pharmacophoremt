@@ -150,3 +150,14 @@ scope per layout. Known input repetition changes counts/means, not unit weights.
 No runtime/helper/provider or dependency source changes. Existing independent
 oracles stay green; broader audit 8–9/13 and biological balancing remain partial.
 Next define bounded development-only sensitivity/ablation (12) without holdout use.
+
+## Native diagnostic receiving — 2026-11-04
+
+[#81 contract](native_io_diagnostics.md) and
+[receipt](evidence/native_io_diagnostics_20261104_summary.json) add coded owned
+native I/O refusals (PHMT-E108/E109) while preserving ValueError/TypeError catch
+compatibility, data admission and original parser/provider/filesystem errors.
+243 selected cases pass; exact concrete types/wording migrate explicitly.
+#6 dependency declarations align nglview and the existing direct PyYAML codec.
+No native schema, scientific algorithm, molecular/SDF implementation or installed/
+public qualification change; broader ArgDigest admission remains separate.

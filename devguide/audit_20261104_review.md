@@ -305,3 +305,23 @@ development cohort/protocol and molecular-provider preparation. Next define
 bounded development-only parameter/constraint sensitivity (12), keeping the
 reserved holdout unused. #66, #74/MolSysMT #215 and installed/hosted gates retain
 independent scope. Original audit text remains unchanged before this addendum.
+
+## Progress — 2026-11-04: native I/O support-library consistency (#81/#6)
+
+[Contract](native_io_diagnostics.md) and [receipt](evidence/native_io_diagnostics_20261104_summary.json)
+record 243 passing controls (45 new), all six stable attempt identities, coded
+owned refusals retaining ValueError/TypeError inheritance and original provider/
+parser/filesystem behavior. Exact concrete types/wording migrate explicitly;
+scientific PHMT-E102, admission rules, schema and writer protection remain.
+
+nglview classification now agrees with its mandatory package contract. Existing
+native YAML imports have a direct PyYAML>=5.1 requirement (sort_keys API floor),
+matching metadata, recipe and three regenerated ordinary environments. Actual
+PyYAML 6.0.3 is source-qualified; floor/public/installed/platform delivery remains
+separate. No molecular implementation, sibling/prefix, source pin, SDF container
+or scientific algorithm changes. Original tests/failures/configuration attempts
+are retained; original audit text remains a prefix.
+
+#6 stays partial. Next scope native I/O ArgDigest admission, then return to the
+planned development-only sensitivity protocol. #10/#23/#9, #66 and #74/MolSysMT
+#215 retain their separate gates; this does not complete the scientific audit.

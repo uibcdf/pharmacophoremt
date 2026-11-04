@@ -5,6 +5,7 @@ import yaml
 
 from pharmacophoremt import interaction_site as interaction_sites
 from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt._private.smonitor.exceptions import NativeFormatError
 
 _NATIVE_SCHEMA = "pharmacophoremt.native@1"
 _MODEL_FIELDS = {
@@ -33,31 +34,38 @@ _SHAPE_FIELDS = {
 
 def _require_fields(record, fields, label):
     if not isinstance(record, dict) or set(record) != fields:
-        raise ValueError(f"Invalid {_NATIVE_SCHEMA} {label}: missing or unknown fields")
+        raise NativeFormatError(field=label, reason="missing or unknown fields")
 
 
 def _validate_schema(data):
     """Admit the versioned native envelope or the historical untagged format."""
     if not isinstance(data, dict):
-        raise ValueError("Native pharmacophore data must be a mapping")
+        raise NativeFormatError(field="record", reason="expected a mapping")
     if "schema" not in data:
         return
     if data["schema"] != _NATIVE_SCHEMA:
-        raise ValueError("Unsupported native pharmacophore schema")
+        raise NativeFormatError(field="schema", reason="unsupported schema")
     _require_fields(data, _MODEL_FIELDS, "model")
-    json.dumps(data, allow_nan=False)
+    try:
+        json.dumps(data, allow_nan=False)
+    except ValueError as error:
+        raise NativeFormatError(
+            field="record", reason="expected finite JSON-encodable values"
+        ) from error
     if not isinstance(data["version"], str):
-        raise ValueError("Native pharmacophore producer version must be a string")
+        raise NativeFormatError(field="version", reason="expected a string")
     if not isinstance(data["interaction_sites"], list):
-        raise ValueError("Native pharmacophore interaction_sites must be a list")
+        raise NativeFormatError(field="interaction_sites", reason="expected a list")
     for site in data["interaction_sites"]:
         _require_fields(site, _SITE_FIELDS, "site")
         shape = site["shape"]
         if not isinstance(shape, dict) or not isinstance(shape.get("type"), str):
-            raise ValueError("Invalid native pharmacophore shape")
+            raise NativeFormatError(
+                field="shape", reason="expected a mapping with a string type"
+            )
         fields = _SHAPE_FIELDS.get(shape["type"])
         if fields is None:
-            raise ValueError("Unsupported native pharmacophore shape")
+            raise NativeFormatError(field="shape", reason="unsupported shape type")
         _require_fields(shape, fields, "shape")
 
 
@@ -169,15 +177,13 @@ def _from_dict(data):
 
     _validate_schema(data)
     if data.get("software") != "pharmacophoremt":
-        raise ValueError(
-            "Not a valid PharmacophoreMT file (missing 'software: pharmacophoremt')"
-        )
+        raise NativeFormatError(field="software", reason="expected 'pharmacophoremt'")
     if data.get("units", {"length": "nm", "direction": "dimensionless"}) != {
         "length": "nm",
         "direction": "dimensionless",
     }:
-        raise ValueError(
-            "Native pharmacophore files use nm lengths and dimensionless directions"
+        raise NativeFormatError(
+            field="units", reason="expected nm lengths and dimensionless directions"
         )
 
     ph = Pharmacophore(

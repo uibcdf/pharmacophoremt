@@ -2,6 +2,8 @@ import os
 
 import molsysmt as msm
 
+from pharmacophoremt._private.smonitor.exceptions import ArgumentTypeError
+
 from .ligandscout import (
     from_ligandscout as from_ligandscout,
 )
@@ -38,7 +40,11 @@ def load(file_name, **kwargs):
     Reader and provider exceptions propagate unchanged.
     """
     if not isinstance(file_name, str):
-        raise TypeError("file_name must be a string path.")
+        raise ArgumentTypeError(
+            argument="file_name",
+            expected_type="a string path",
+            actual_type=type(file_name).__name__,
+        )
 
     extension = os.path.splitext(file_name)[1].lower()
 

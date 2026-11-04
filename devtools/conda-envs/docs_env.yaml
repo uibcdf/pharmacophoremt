@@ -24,3 +24,4 @@ dependencies:
 - depdigest
 - rdkit
 - networkx
+- PyYAML>=5.1

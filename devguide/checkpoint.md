@@ -1,5 +1,35 @@
 # Development Checkpoint
 
+## Native I/O diagnostics and dependency declarations repaired — 2026-11-04
+
+[#81](https://github.com/uibcdf/pharmacophoremt/issues/81) closes the owned native
+I/O diagnostic gap; [contract](native_io_diagnostics.md) and
+[original evidence](evidence/native_io_diagnostics_20261104_summary.json) retain
+**243 passing selected cases in 25.53 s, including 45 new guards**. All six
+attempt identities remain stable; the final identity includes actual PyYAML
+6.0.3 source/native bytes. Ten intentional attribution-failure warnings remain.
+New PHMT-E108/NativeFormatError and PHMT-E109/ArgumentTypeError preserve ValueError/
+TypeError catch compatibility; exact types and wording intentionally change.
+Typed context, args-only/profile rendering, original finite-value cause,
+PHMT-E102 scientific validation and writer destination protection pass.
+
+Parser/encoder/unexpected runtime/filesystem and MolSysMT provider exceptions
+retain their contracts. Data admission, native schema, scientific algorithms,
+SDF container/payload and source pins are unchanged. #6 also aligns mandatory
+nglview classification and declares the existing YAML codec directly as
+PyYAML>=5.1 (API floor for sort_keys=False). Metadata/Conda recipe and three SDK-
+generated ordinary environments agree; no real environment is changed or public
+package newly qualified. Other provider floors, scientific commands and source pins remain; three scientific
+CI environment selectors now enforce the same PyYAML floor.
+
+**#6 stays partial. Next:** bounded ArgDigest native I/O argument/admission
+contracts, preserving direct-reader Path support, dispatcher string-only
+compatibility, reader option refusal and molecular delegation. Then resume the
+development-only sensitivity/ablation protocol; scientific data/holdout gates
+remain. #74/MolSysMT #215, #66 and installed/public/hosted #10/#23/#9 retain their
+scope. Addon/new release deferred, public version still 0.4.0. Earlier dated
+next-step statements below remain historical.
+
 ## Consensus support and redundancy reviewed — 2026-11-04
 
 [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) qualifies the bounded

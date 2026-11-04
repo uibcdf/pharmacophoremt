@@ -31,6 +31,7 @@ dependencies = [
     "depdigest",
     "rdkit",
     "networkx",
+    "PyYAML>=5.1",
 ]
 
 # Update the urls once the hosting is set up.

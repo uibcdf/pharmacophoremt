@@ -18,6 +18,24 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Native I/O diagnostics and declarations — 2026-11-04
+
+[#81](https://github.com/uibcdf/pharmacophoremt/issues/81), [contract](../native_io_diagnostics.md)
+and [receipt](../evidence/native_io_diagnostics_20261104_summary.json) record 243
+passing selected cases, including 45 new guards. Owned native refusals now carry
+PHMT-E108/E109 with ValueError/TypeError inheritance, typed context and rendered
+catalog messages. Original parser/filesystem/molecular-provider errors and
+PHMT-E102 scientific validation remain. All six attempt identities are stable;
+exact exception types/wording change explicitly. No science or molecular engine.
+
+Mandatory nglview classification is aligned. Native YAML's existing direct import
+is explicitly required as PyYAML>=5.1 in metadata/recipe and three regenerated
+ordinary environments (actual executed 6.0.3; no installed-floor/public claim).
+SDK/source pins and borrowed prefixes remain unchanged; three scientific
+environment selectors also adopt the same minimum. #6 stays partial for broader ArgDigest/batch/admission and
+minimum-provider/public receiving. Next native I/O contracts; preserve molecular
+delegation and current option/path/error behavior, then resume sensitivity work.
+
 ## Nested constructor contracts received — 2026-11-04
 
 [Contract](../nested_facade_contracts.md) and [receipt](../evidence/nested_facade_contracts_20261104_summary.json)

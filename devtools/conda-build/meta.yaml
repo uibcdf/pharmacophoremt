@@ -25,6 +25,7 @@ requirements:
     - depdigest
     - rdkit
     - networkx
+    - pyyaml >=5.1
 test:
   imports:
     - pharmacophoremt

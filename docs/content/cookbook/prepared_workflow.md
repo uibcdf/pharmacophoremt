@@ -73,6 +73,13 @@ payload. Exporting molecular hits is a separate MolSysMT workflow. Use
 `screen.to_dataframe()`/`to_csv()` for ranked scalar hits and `evaluations` for
 the complete input/failure denominator.
 
+For native JSON/YAML, PHMT-owned schema/envelope refusals carry `PHMT-E108`
+and remain `ValueError` instances. The existing nonstring `io.load()` filename
+refusal carries `PHMT-E109` and remains a `TypeError`. Scientific value checks
+retain their existing codes. Use the code and context instead of matching a
+whole rendered message. Parser, filesystem and molecular-provider exceptions
+keep their original contracts; molecular inputs continue through MolSysMT.
+
 ## Inspect the complete qualification
 
 ```bash

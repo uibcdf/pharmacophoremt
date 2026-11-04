@@ -61,3 +61,15 @@ class ConsensusLimitError(PharmacophoreMTException, RuntimeError):
 
 class CliqueLimitError(PharmacophoreMTException, RuntimeError):
     catalog_key = "CliqueLimitError"
+
+
+class NativeFormatError(PharmacophoreMTException, ValueError):
+    """PHMT-owned native pharmacophore data admission failure."""
+
+    catalog_key = "NativeFormatError"
+
+
+class ArgumentTypeError(PharmacophoreMTException, TypeError):
+    """PHMT-owned argument type refusal retaining TypeError compatibility."""
+
+    catalog_key = "ArgumentTypeError"
