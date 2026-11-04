@@ -2,6 +2,11 @@
 
 ## Cross-cutting audit priorities — 2026-11-04
 
+The [evidence and verification addendum](audit_20261104_review.md) classifies
+the 17 areas by observed status and impact, links method-level evidence and
+defines operational completion checks and dependencies. It preserves the initial
+assessment and does not convert proposed studies into completed validation.
+
 See the [architectural, scientific and product audit](audit_20261104.md) for the
 ordered 17-area improvement plan and completion criteria. Address #73 first,
 then coordinate API/persistence/installed reproducibility with scientific study

@@ -8,6 +8,8 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 records the discussed list of 17 improvement areas, priorities,
 completion criteria and evidence limits. Start with #73; coordinate API and
 reproducibility work with scientific study design.
+Its [evidence and verification addendum](audit_20261104_review.md) records review
+coverage, classified findings, method-level scientific limits and actionable checks.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.

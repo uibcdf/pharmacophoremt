@@ -1,5 +1,15 @@
 # Development Checkpoint
 
+## Audit evidence and acceptance criteria expanded — 2026-11-04
+
+The [audit addendum](audit_20261104_review.md) preserves the initial 17-point
+assessment and adds coverage/exclusions, classified findings with evidence,
+impact-based priorities, a scientific method matrix and operational closure
+checks/dependencies. Existing tie-aware metrics and independent scientific
+oracles are recognized, not proposed as absent functionality. No new scientific
+tests, installation or predictive validation were executed for this review.
+Next remains #73, then bounded #6 work; study design can proceed in parallel.
+
 ## Comprehensive audit recorded — 2026-11-04
 
 The [dated architectural, scientific and product audit](audit_20261104.md)
