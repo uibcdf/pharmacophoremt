@@ -7,6 +7,34 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Observed interaction / placed-pose source/API acceptance — 2026-11-03
+
+The [new summary](placed_pose_acceptance_20261103_summary.json) and checksum-
+qualified archive accept #13 at clean 1eea04d. Ninety-nine fresh controls pass
+(14 pose, eight retrospective, 44 metric, 18 contract, 15 observed donor geometry),
+zero failures/errors/skips/warnings. Off/on real public MolSysMT observations,
+participant grouping, source/frame mappings, direction, one-to-one/essential/
+weight/exclusion constraints and explicit native facade pass. Full coverage does
+not override an essential-site miss or steric veto; failed sources remain unscored.
+Original retrospective classes 3/2, failures [0,4], evaluated [1,2,3], scores [1,1,0]
+and analytical perfect ranking are retained. Six round trips per profile preserve
+constraints/provenance/physical geometry and matched outcomes.
+
+Actual capsule credit is 3 items/12 uses off and 12/43 on. A separate real-provider
+explicit C-H role versus SMARTS mismatch returns a valid zero-coverage negative
+(credit 4/5 off, 12/22 on); this is declared geometry, not conventional H-bond
+evidence. Off/on science, original observations and molecular domains remain
+unchanged. The unchanged example passes (11/23); strict isolated original-page
+rendering uses six neighbor stubs. Full identities stay stable in four phases.
+The supplementary oracle's initial recognition-key typo/log and corrected attempt
+are retained; no runtime/test/provider change or new full suite is claimed.
+
+Parse original_files[name].text for complete workflow_result.json, profile_result.json
+and examples_result.json, retained once with raw SHA-256. Molecular work remains
+MolSysMT-owned. #41's historical absence migration and installed/public/platform/
+hosted/workspace gates remain separate. These are analytical/API controls, not
+biological or performance qualification; historical evidence keeps its own scope.
+
 ## Reference-ligand source/API acceptance — 2026-11-03
 
 The [new summary](reference_ligand_acceptance_20261103_summary.json) and checksum-

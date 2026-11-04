@@ -1,5 +1,27 @@
 # Strategic Roadmap
 
+## Observed placed-pose slice accepted; attribution review next — 2026-11-03
+
+#13 is resolved with its [receipt](evidence/placed_pose_acceptance_20261103_summary.json).
+At clean 1eea04d, 99 fresh controls, off/on actual-observation/placed capsules,
+six round trips per profile, the unchanged example and strict isolated rendering
+pass with stable identities. Repeated participant evidence collapses into one site;
+source/frame/direction, essential/weight/assignment/exclusion and failed-versus-
+negative accounting remain explicit. A real-provider declared-profile mismatch
+confirms that observation roles do not guarantee SMARTS candidate acceptance.
+Source domains/observations remain unchanged. Public MolSysMT owns molecular work.
+No library/test/provider change, new full suite or biology/public-delivery claim.
+
+Next review **#19 optional attribution**: activation and application sessions,
+repeated detached references, reached branches, failure isolation and original
+scientific errors, saved readers/reporting and cookbook. Use its existing public
+receiving receipt; delivered-package/all-minor public qualification remains pending
+unless independently verified. #22 pilot/#66 endpoint methods stay separate.
+#41 public/floor/installed receiving and final legacy retirement remain partial
+(review 2026-11-11); #60 keeps its own gate. Hosted #9, installed/public/platform
+#23/#10 and workspace #82 remain independent. Addon/new release defer.
+See [checkpoint](checkpoint.md).
+
 ## Reference construction accepted; observed placed poses next — 2026-11-03
 
 #14 is resolved with its [receipt](evidence/reference_ligand_acceptance_20261103_summary.json).

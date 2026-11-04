@@ -172,3 +172,55 @@ correspondence/alignment for prepared ligands (`#15`). Conformer generation, add
 ensemble consensus, application-level Ackredit participation and docking/pocket
 workflow adapters are subsequent work. Scientific acceptance for a biological
 pilot requires its own independent controls after these contracts are agreed.
+
+## Current placed-observation source/API acceptance — 2026-11-03
+
+#13 is resolved with its [archive](archive/molsysmt_placed_pose_workflow.md) and
+[receipt](evidence/placed_pose_acceptance_20261103_summary.json). Clean receiving
+1eea04d passes 99 fresh controls in 16.66 s (14 pose, eight retrospective, 44 metric,
+18 contract, 15 observed donor geometry), zero failures/errors/skips/warnings.
+Real public MolSysMT controls cover current native observations and provider-vector
+receiving. No new full suite or library/test/provider change is claimed.
+
+Fresh host-off/on capsules preserve two hydrophobic observations in one site and
+two donor observations in one directed site or two opposite-side acceptor spheres.
+Local/source pair [1,0]/[21,20], frame 1 and declared structure sources [4,7] stay
+explicit; labels do not authenticate source identity. Direct/dispatcher queries
+agree; source/displaced scores are 1/0 and shared MolSysMT rigid motion preserves
+the matched result. Wrong frame/donor direction rejects. One-to-one zero-weight
+essential and steric veto controls both yield not_matched despite coverage one.
+Essential priority, optional weighted coverage and explicit minimum-fit criteria
+retain distinct effects. Covered-empty models and failed conversions/calculations
+are separate; unsupported kinds and nonzero images are deliberate record controls.
+
+The batch/facade preserves all input identities, negatives and source-stage failures
+without a fabricated score. Analytical retrospective original classes 3/2, failures
+[0,4], evaluated [1,2,3] and scores [1,1,0] produce AUC/BEDROC one. Six JSON/YAML
+round trips per profile preserve metadata/constraints and physical geometry to
+1e-12 across pm/fs/degrees and angstrom/ps/radians. Source domains and cached
+observations remain unchanged. Off/on science agrees; actual capture is 3 items/
+12 uses off and 12/43 on.
+
+The chemical-profile review is settled for this API: extraction preserves upstream
+roles, while evaluation independently uses the stated SMARTS definition. A caller-
+declared explicit C-H donor geometric observation converts to a query but produces
+a valid zero-coverage negative under smarts_donor_acceptor. No conventional C-H
+hydrogen-bond claim, chemical repair or guarantee that observed roles match follows.
+The original outputs retain both definitions and original attribution (4 items/
+5 uses off; 12/22 on), so mismatches cannot silently become recognition equivalence.
+
+The unchanged documented block passes (11 items/23 uses); strict isolated original-
+page rendering passes with six neighbor stubs. Full identities stay stable across
+four phases. The supplementary script's initial wrong recognition lookup key and
+its correction are retained without runtime changes. Historical dependency pins,
+80-test run and future-work lists above keep their dated scope; native modeler/
+screening transitions and additional families/consensus now have separate delivered
+contracts. The facade requires explicit method choice and does no local preparation.
+
+MolSysMT owns molecular work. #41 public/floor/installed receiving and final
+historical donor-absence retirement remain partial (review 2026-11-11); ideal
+acceptor #375 remains independent. These are prepared-source analytical/API controls,
+not biological, performance, clean installed/public/platform or hosted acceptance.
+#23/#10/#9 and workspace #82 retain their gates. Next review #19's optional
+attribution contract without promoting local source evidence into delivered-package/
+all-minor public receiving. Temporary resources: LMMV/dprada, review 2026-11-17.

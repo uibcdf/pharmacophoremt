@@ -1,5 +1,57 @@
 # Development Checkpoint
 
+## Observed extraction and placed poses accepted; attribution review next — 2026-11-03
+
+#13 is resolved with its [archive](archive/molsysmt_placed_pose_workflow.md) and
+[receipt](evidence/placed_pose_acceptance_20261103_summary.json). Clean receiving
+**1eea04d6f92b2e58d8603aa95e204f3e9fa0caf2** passes 99 fresh controls in 16.66 s:
+14 pose, eight retrospective, 44 metric, 18 contract and 15 observed donor-geometry
+controls; zero failures/errors/skips/warnings. No new full suite is claimed.
+
+Fresh off/on real-provider capsules collapse repeated observations into one site
+per participant while retaining both evidence records. Donor/local/source/frame
+mappings, atomic acceptors, direct/dispatcher equivalence and shared public MolSysMT
+motion pass. Wrong frame/direction and displaced poses reject. Essential priority,
+zero-weight essential requirements, one-to-one assignment, optional weights,
+minimum coverage and heavy-atom exclusions remain distinct. Covered-empty models
+are not valid queries. Unsupported kinds/nonzero periodic images are explicit
+native-record controls, without a new molecular implementation.
+
+Batches preserve matched/failed/matched/not_matched at [0,1,2,3]; failure has fit None
+and source-stage/cause evidence. The explicitly placed facade retains every result
+and returns hits [0,2]. Retrospective generators preserve original classes 3/2,
+failures [0,4], evaluated [1,2,3], scores [1,1,0], AUC/BEDROC one. Six JSON/YAML
+round trips per profile, molecular domains and original observations stay unchanged;
+actual credit is 3 items/12 uses off and 12/43 on. Off/on scientific outcomes agree.
+
+Accepted chemistry boundary: observed roles and evaluation SMARTS are distinct
+definitions. A caller-declared explicit C-H donor geometric observation converts
+but is rejected with zero coverage under smarts_donor_acceptor; it is not a
+conventional hydrogen-bond claim. Profile-control credit is 4 items/5 uses off,
+12/22 on. The unchanged example passes (11/23); strict isolated original-page
+rendering uses six neighbor stubs. Full identities stay stable in four phases.
+One supplementary oracle initially used the wrong recognition key; original/log
+and key-only correction are retained. No runtime/test/input/provider/prefix/sibling
+change is needed. The normal editable runtime stays 0.4.0+62.g6a7537b.
+
+**Next: #19 optional attribution contract review**: lazy activation/absence,
+application-owned sessions, detached payloads and repeated references, reached-
+branch method/software credit, provider-failure isolation and original scientific
+errors, saved-reader/reporting without new credit, cookbook and current guards.
+Read its 2026-10-13 public receiving receipt before choosing new checks. Preserve
+its delivered-package/all-minor public receiving as pending unless separately
+qualified; local source acceptance alone cannot close that scope. #22's biological
+pilot and #66's missing original binding methods remain independent.
+
+MolSysMT owns all molecular work; PHMT owns pharmacophoric interpretation/matching/
+accounting. Historical modeler/screener migration is delivered under its own issues;
+no implicit preparation/search is added. #41 public/floor/installed receiving and
+historical donor-absence retirement remain partial, review 2026-11-11. #60 keeps
+its concrete consumer gate; hosted #9, installed/public/platform #23/#10 and workspace
+#82 remain separate. Addon/new release defer. Owned /tmp/phmt13-acceptance-20261103-k2desp6c/,
+LMMV/dprada, review 2026-11-17; borrowed #69 prefix/providers/native unchanged. No
+local process remains after closeout. Historical evidence keeps its original scope.
+
 ## Native reference-ligand construction accepted; placed observations next — 2026-11-03
 
 #14 is resolved with its [archive](archive/native_reference_ligand_workflow.md)

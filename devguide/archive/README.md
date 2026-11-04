@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (50)
+### Resolved (51)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -22,6 +22,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
 - [`minimal_viewer_addon_delivery.md`](minimal_viewer_addon_delivery.md) — [#56](https://github.com/uibcdf/pharmacophoremt/issues/56) — Bundle the implemented MolSysViewer addon and qualify its minimal installed Python contract. *(resolved, measured)*
 - [`modular_rigid_strategy_comparison.md`](modular_rigid_strategy_comparison.md) — [#27](https://github.com/uibcdf/pharmacophoremt/issues/27) — Expose modular rigid placement steps and compare consensus strategies reproducibly. *(resolved, measured)*
+- [`molsysmt_placed_pose_workflow.md`](molsysmt_placed_pose_workflow.md) — [#13](https://github.com/uibcdf/pharmacophoremt/issues/13) — Deliver a bounded MolSysMT-backed interaction-to-pharmacophore and pose-evaluation workflow. *(resolved, measured)*
 - [`native_aligned_clique_consensus.md`](native_aligned_clique_consensus.md) — [#24](https://github.com/uibcdf/pharmacophoremt/issues/24) — Discover aligned clique consensus with alternative jointly supported hypotheses. *(resolved, measured)*
 - [`native_aligned_consensus.md`](native_aligned_consensus.md) — [#21](https://github.com/uibcdf/pharmacophoremt/issues/21) — Implement reusable reference-anchored consensus for prepared aligned ligands. *(resolved, measured)*
 - [`native_aromatic_interactions.md`](native_aromatic_interactions.md) — [#34](https://github.com/uibcdf/pharmacophoremt/issues/34) — Build aromatic and cation-pi hypotheses with shared geometry and explicit participant mapping. *(resolved, measured)*

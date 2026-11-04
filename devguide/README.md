@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #14 native reference-ligand source/API acceptance is resolved. All 53 fresh controls, off/on six-family/15-site capsules, persistence, the unchanged example and strict isolated rendering pass with stable identities. MolSysMT owns molecular work. Next accept #13 observed-interaction/placed-pose semantics, then #19 attribution. #41 public/legacy receiving stays partial (review 2026-11-11); #60/#66 and hosted/public/workspace gates remain separate. Public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-03: #13 observed-interaction/placed-pose source/API acceptance is resolved. All 99 fresh controls, off/on observation/constraint/accounting capsules, declared-profile mismatch, persistence, the unchanged example and strict isolated rendering pass with stable identities. MolSysMT owns molecular work. Next review #19 optional attribution, preserving its delivered-package/all-minor public gates. #41 public/legacy receiving stays partial (review 2026-11-11); #60/#66 and hosted/public/workspace gates remain separate. Public release stays 0.4.0.
 
 ## Classical Workflow Specification
 

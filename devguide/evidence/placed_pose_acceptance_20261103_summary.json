@@ -1,0 +1,355 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "chemical_definitions": "Conversion preserves supplied observation roles/profile. Evaluation independently applies classical_atomic_formal@1 SMARTS, so an observed role is not a guarantee of candidate acceptance. The explicit C-H profile control is declared geometry, not a claim of conventional hydrogen bonding.",
+    "clean_dependency_closure": false,
+    "documentation_scope": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-W",
+        "--keep-going",
+        "-n",
+        "-b",
+        "html",
+        "/tmp/phmt13-acceptance-20261103-k2desp6c/docs-source",
+        "/tmp/phmt13-acceptance-20261103-k2desp6c/docs-html"
+      ],
+      "exit_code": 0,
+      "neighbor_stubs": {
+        "aromatic_interaction_workflow.md": [],
+        "interaction_composition_workflow.md": [],
+        "ionic_interaction_workflow.md": [],
+        "reference_ligand_workflow.md": [],
+        "rigid_search_workflow.md": [],
+        "virtual_screening_workflow.md": []
+      },
+      "scope": "Strict isolated unchanged maintained placed-pose page and its one executed block; neighbor link-target stubs, not full-site or neighbor qualification."
+    },
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "execution_attempts": {
+      "corrections": "Main capsule/tests/example/render need no corrections; supplementary profile oracle key correction is retained.",
+      "example_initial_exit_code": 0,
+      "focused_initial_exit_code": 0,
+      "profile_control_initial": {
+        "cause": "One-off oracle read nonexistent recognition.hbond instead of the documented recognition.hydrogen_bond key, after native observation/conversion/negative outcome assertions had passed.",
+        "correction": "Only correct that one-off lookup key; no runtime/test/provider change.",
+        "exit_code": 1,
+        "log": "profile_initial.log",
+        "script": "run_profile_control_initial.py"
+      },
+      "scientific_workflow_initial_exit_code": 0
+    },
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_fallback": "PHMT #41 stays partial for supported-public/floor/installed receiving and final historical donor arithmetic retirement, review 2026-11-11. Genuine absence only; available-provider failures never retry. Atomic acceptors do not implement #375 ideal acceptor geometry.",
+    "installed_wheel_qualification": false,
+    "legacy_migration": "VirtualScreening requires an explicit native method; placed delegates to PoseEvaluator, retains all native evaluations and returns hits with original input references. No local chemistry/preparation or implicit molecular search is introduced; delivered #18/#42/#44/#45/#46 contracts retain their own scopes.",
+    "new_pytest_execution": true,
+    "ownership": "Public MolSysMT supplies molecular construction, atom/state/coordinate inspection, hydrophobic/H-bond recognition and observations, native source mappings, donor vectors, molecular rotation/translation. PHMT interprets cached observations into pharmacophoric constraints and owns one-to-one weighted matching, exclusions, explicit method composition, persistence and failure/metric accounting.",
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_scientific_definition_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b; controlled providers/native unchanged; no prefix/sibling mutation.",
+    "source_identity": "Caller must supply the unchanged molecular system/local index space used for observations. Declared native source labels and matching axis lengths do not authenticate chemical or coordinate origin."
+  },
+  "chemical_definition_controls": [
+    {
+      "actual_items": 4,
+      "actual_uses": 5,
+      "caller_declared_donor": "bonded C-H",
+      "converted_donor_sites": 1,
+      "evaluation_fit": 0,
+      "evaluation_profile": "smarts_donor_acceptor",
+      "evaluation_status": "not_matched",
+      "host_tracking": false,
+      "observed_profile": "explicit_sites"
+    },
+    {
+      "actual_items": 12,
+      "actual_uses": 22,
+      "caller_declared_donor": "bonded C-H",
+      "converted_donor_sites": 1,
+      "evaluation_fit": 0,
+      "evaluation_profile": "smarts_donor_acceptor",
+      "evaluation_status": "not_matched",
+      "host_tracking": true,
+      "observed_profile": "explicit_sites"
+    }
+  ],
+  "consumer": {
+    "head": "1eea04d6f92b2e58d8603aa95e204f3e9fa0caf2",
+    "status": ""
+  },
+  "examples_actual_attribution": {
+    "items": 11,
+    "uses": 23
+  },
+  "executed_example_blocks": 1,
+  "focused_tests": {
+    "actual_pytest_items": 99,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt13-acceptance-20261103-k2desp6c/pytest-temp",
+      "--junitxml=/tmp/phmt13-acceptance-20261103-k2desp6c/focused.xml",
+      "tests/test_pose_evaluation.py",
+      "tests/test_retrospective.py",
+      "tests/test_validation_metrics.py",
+      "tests/test_contracts.py",
+      "tests/test_interaction_donor_geometry.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_contracts": 18,
+      "tests.test_interaction_donor_geometry": 15,
+      "tests.test_pose_evaluation": 14,
+      "tests.test_retrospective": 8,
+      "tests.test_validation_metrics": 44
+    },
+    "seconds": 16.66,
+    "skips": 0,
+    "warnings": 0
+  },
+  "full_evidence": {
+    "compressed_bytes": 791466,
+    "compressed_sha256": "1b8f427166b930ec3612988eaed05c59981c4f8f23bd006638a7563943d349be",
+    "path": "placed_pose_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 5010154,
+    "uncompressed_sha256": "7f8b4245abc9fa23a47c1fe8b8fed9df72941207d8a735128b346ac576494c11"
+  },
+  "full_identity_unchanged": {
+    "examples": true,
+    "focused": true,
+    "profile": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#13",
+  "measured_date": "2026-11-03",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "schema": "pharmacophoremt.placed_pose_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#13",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Observed interaction to query and already-placed pose source/API acceptance; no provider/prefix/sibling mutation",
+    "review_date": "2026-11-17"
+  },
+  "workflow_profiles": [
+    {
+      "acceptor_sites": 2,
+      "actual_items": 3,
+      "actual_uses": 12,
+      "batch_failure_fit": null,
+      "batch_statuses": [
+        "matched",
+        "failed",
+        "matched",
+        "not_matched"
+      ],
+      "cached_dispatcher_equivalent": true,
+      "covered_empty_model": true,
+      "declared_source_donor_atoms": [
+        21,
+        20
+      ],
+      "declared_structure_sources": [
+        4,
+        7
+      ],
+      "donor_geometry": "molsysmt.structure.get_vectors",
+      "donor_observations": 2,
+      "donor_sites": 1,
+      "donor_statuses": [
+        "matched",
+        "not_matched",
+        "not_matched"
+      ],
+      "essential_priority_fit": 0.009900990099009901,
+      "essential_zero_weight_nonmatch_at_full_fit": true,
+      "evaluated_local_frame": 1,
+      "exclusion_nonmatch_at_full_fit": true,
+      "facade_hit_indices": [
+        0,
+        2
+      ],
+      "host_tracking": false,
+      "hydrophobic_observations": 2,
+      "hydrophobic_sites": 1,
+      "local_donor_atoms": [
+        1,
+        0
+      ],
+      "minimum_fit_veto": true,
+      "optional_weight_fit": 0.25,
+      "placed_scores": [
+        1.0,
+        0.0
+      ],
+      "retrospective": {
+        "auc": 1.0,
+        "bedroc": 1.0,
+        "evaluated_indices": [
+          1,
+          2,
+          3
+        ],
+        "failures": [
+          0,
+          4
+        ],
+        "original_actives": 3,
+        "original_decoys": 2,
+        "scores": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      "round_trip_evaluations": 6,
+      "round_trips": 6,
+      "shared_transformed_match": true,
+      "source_and_observations_unchanged": true,
+      "visible_failures": [
+        "uncovered_frame",
+        "split_donor_h",
+        "unsupported_kind",
+        "nonzero_image",
+        "empty_query_evaluation",
+        "implicit_legacy_screening"
+      ]
+    },
+    {
+      "acceptor_sites": 2,
+      "actual_items": 12,
+      "actual_uses": 43,
+      "batch_failure_fit": null,
+      "batch_statuses": [
+        "matched",
+        "failed",
+        "matched",
+        "not_matched"
+      ],
+      "cached_dispatcher_equivalent": true,
+      "covered_empty_model": true,
+      "declared_source_donor_atoms": [
+        21,
+        20
+      ],
+      "declared_structure_sources": [
+        4,
+        7
+      ],
+      "donor_geometry": "molsysmt.structure.get_vectors",
+      "donor_observations": 2,
+      "donor_sites": 1,
+      "donor_statuses": [
+        "matched",
+        "not_matched",
+        "not_matched"
+      ],
+      "essential_priority_fit": 0.009900990099009901,
+      "essential_zero_weight_nonmatch_at_full_fit": true,
+      "evaluated_local_frame": 1,
+      "exclusion_nonmatch_at_full_fit": true,
+      "facade_hit_indices": [
+        0,
+        2
+      ],
+      "host_tracking": true,
+      "hydrophobic_observations": 2,
+      "hydrophobic_sites": 1,
+      "local_donor_atoms": [
+        1,
+        0
+      ],
+      "minimum_fit_veto": true,
+      "optional_weight_fit": 0.25,
+      "placed_scores": [
+        1.0,
+        0.0
+      ],
+      "retrospective": {
+        "auc": 1.0,
+        "bedroc": 1.0,
+        "evaluated_indices": [
+          1,
+          2,
+          3
+        ],
+        "failures": [
+          0,
+          4
+        ],
+        "original_actives": 3,
+        "original_decoys": 2,
+        "scores": [
+          1.0,
+          1.0,
+          0.0
+        ]
+      },
+      "round_trip_evaluations": 6,
+      "round_trips": 6,
+      "shared_transformed_match": true,
+      "source_and_observations_unchanged": true,
+      "visible_failures": [
+        "uncovered_frame",
+        "split_donor_h",
+        "unsupported_kind",
+        "nonzero_image",
+        "empty_query_evaluation",
+        "implicit_legacy_screening"
+      ]
+    }
+  ]
+}

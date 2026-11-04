@@ -6,9 +6,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (4)
+### Active (3)
 
-- [`molsysmt_placed_pose_workflow.md`](molsysmt_placed_pose_workflow.md) — [#13](https://github.com/uibcdf/pharmacophoremt/issues/13) — Deliver a bounded MolSysMT-backed interaction-to-pharmacophore and pose-evaluation workflow. *(active, measured)*
 - [`native_ackredit_attribution.md`](native_ackredit_attribution.md) — [#19](https://github.com/uibcdf/pharmacophoremt/issues/19) — Capture portable native scientific attribution through optional public Ackredit APIs. *(active, measured)*
 - [`native_eralpha_validation.md`](native_eralpha_validation.md) — [#22](https://github.com/uibcdf/pharmacophoremt/issues/22) — Audit the ERalpha snapshot and migrate its regression to a reproducible native workflow. *(active, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(active, measured)*
