@@ -1,5 +1,27 @@
 # Strategic Roadmap
 
+## Reference construction accepted; observed placed poses next — 2026-11-03
+
+#14 is resolved with its [receipt](evidence/reference_ligand_acceptance_20261103_summary.json).
+At clean a3cd1f5, 53 fresh controls, off/on six-family/15-site capsules, JSON/YAML,
+the unchanged example and strict isolated rendering pass with stable identities.
+Known group centers/signs, donor direction, aromatic axis invariance, essential
+constraints and visible failures retain source/provenance and physical units.
+Initial one-off cross-unit exactness and temporary-renderer toctree failures are
+retained and corrected without library/test/provider changes. Public MolSysMT
+owns molecular work; PHMT owns pharmacophoric constraints and cached matching.
+No new full suite, biology or public/installed closure is claimed.
+
+Next accept **#13 observed-interaction extraction and already-placed pose evaluation**:
+actual public MolSysMT observations, selected frame/state/source mappings, essential
+and one-to-one constraints, exclusions, direction, shared rigid/unit invariance,
+visible failures and historical entry-point migration. This does not introduce
+implicit pose search or molecular preparation. Then accept #19 attribution.
+#41 supported-public/floor/installed receiving and final legacy retirement stay
+partial (review 2026-11-11); #60/#66 keep their own gates. Hosted #9,
+installed/public/platform #23/#10 and workspace #82 remain separate. Addon/new
+release defer. See [checkpoint](checkpoint.md).
+
 ## Rigid pose-search acceptance complete; reference construction next — 2026-11-03
 
 #15 is resolved with its [receipt](evidence/rigid_search_acceptance_20261103_summary.json).

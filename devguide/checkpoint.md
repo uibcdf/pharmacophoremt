@@ -1,5 +1,52 @@
 # Development Checkpoint
 
+## Native reference-ligand construction accepted; placed observations next — 2026-11-03
+
+#14 is resolved with its [archive](archive/native_reference_ligand_workflow.md)
+and [receipt](evidence/reference_ligand_acceptance_20261103_summary.json). Clean
+receiving **a3cd1f5ec6da2b4ee81e17605290e02815ad3dfb** passes 53 fresh controls
+in 18.54 s: seven reference, 14 provider-route, 14 pose and 18 contract controls;
+zero failures/errors/skips/warnings. No new full suite is claimed.
+
+Fresh host-off/on fixed prepared inputs cover six families and 15 essential,
+unit-weight sites. Direct/cached/dispatcher sites agree. Known donor vector,
+unoriented aromatic normal, grouped charge participant/geometry memberships,
+centroids and signs pass. Reference/displaced/chemistry-absent scores remain 1/0/0;
+reversing only explicit donor H preserves its center but gives coverage 14/15,
+not_matched. Partial groups, unsupported features and empty queries fail visibly.
+JSON/YAML unit-policy round trips preserve constraints, provenance, geometry and
+pose outcomes. Source atom/state/coordinate domains and tracking-independent science
+remain unchanged; actual credit is 3 items/6 uses host-off and 11/25 host-on.
+
+The unchanged documented block passes with credit 12 items/36 uses. Strict isolated
+original-page rendering uses four neighbor stubs. Full source/native/helper/test/
+input/metadata identities remain stable in all three phases. The initial capsule
+failed a cross-policy exact dictionary oracle; independent saved-query diagnosis
+shows roundoff at most 2.220446049250313e-16 nm with exact constraints/provenance.
+Only the one-off physical-comparison assertion changes (1e-12 tolerance). The first
+renderer needed its temporary stubs added to a hidden toctree. All attempts and
+original outputs are retained; no runtime/test/input/provider/prefix/sibling change
+is needed. MolSysMT owns molecular work; PHMT owns pharmacophoric constraints,
+cached inventories, matching and provenance. The historical #41 absence branch
+is not retired by this acceptance; atomic acceptors do not imply ideal #375 geometry.
+
+**Next: independently accept #13 observation-to-query and already-placed pose
+evaluation.** Review actual MolSysMT observations, selected frame/state/source
+mappings, directional versus positional constraints, essential/one-to-one/excluded-
+volume semantics, shared rigid/unit invariance, recorded failures and legacy-entry
+migration. Reuse delivered provider tools and existing analytical/recipe guards;
+do not add molecular implementations or turn placed evaluation into implicit search.
+Then accept #19 attribution. #41 supported-public/floor/installed receiving and
+legacy retirement remain partial, review 2026-11-11. #60/#66 retain their gates;
+hosted #9, installed/public/platform #23/#10 and workspace #82 stay separate.
+Addon/new release defer. These are source/API analytical controls, not biological,
+performance or published-delivery qualification.
+
+Owned /tmp/phmt14-acceptance-20261103-wi6edou1/, LMMV/dprada, review 2026-11-17.
+Borrowed #69 venv remains normal editable PHMT 0.4.0+62.g6a7537b with unchanged
+controlled providers/native. No local process remains after closeout. Earlier
+reports/evidence/metadata findings keep their dated scopes.
+
 ## Prepared rigid pose search accepted; reference construction next — 2026-11-03
 
 #15 is resolved with its [archive](archive/native_rigid_pose_search.md) and

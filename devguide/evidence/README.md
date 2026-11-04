@@ -7,6 +7,32 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Reference-ligand source/API acceptance — 2026-11-03
+
+The [new summary](reference_ligand_acceptance_20261103_summary.json) and checksum-
+qualified archive accept #14 at clean a3cd1f5. Fifty-three fresh controls pass
+(seven reference, 14 provider-route, 14 pose, 18 contract), without failures/errors/
+skips/warnings. Off/on fixed analytical capsules extract 15 sites spanning all six
+families; cached/direct/dispatcher construction agrees. Independent donor/ring/
+charge geometry, essential unit-weight constraints, 1/0/0 reference/displaced/absent
+scores, reversed-H 14/15 nonmatch, charge-sign rejection and visible partial-group/
+unsupported/empty failures pass. Two round trips and six saved-query pose checks
+per profile preserve provenance/constraints/physical units and source domains.
+
+Off/on science agrees; actual credit is 3 items/6 uses host-off and 11/25 host-on.
+The unchanged example passes (12 items/36 uses); strict isolated original-page
+rendering uses four neighbor stubs. Full identities stay stable in all three
+phases. Initial cross-unit dictionary equality and temporary-stub toctree failures
+are retained; only the one-off physical oracle and temporary navigation change.
+Parse original_files[name].text for complete workflow_result.json and examples_result.json,
+retained once with raw SHA-256; phases and this summary are projections.
+
+No library/test/input/provider/prefix/sibling change or new full suite is claimed.
+All molecular work remains MolSysMT-owned; the historical #41 absence branch remains
+bounded and partial for public/legacy receiving. These controls establish neither
+biology nor performance nor clean installed/public/platform/hosted qualification.
+Historical outputs and metadata findings keep their original scopes.
+
 ## Prepared rigid pose-search acceptance — 2026-11-03
 
 The [new summary](rigid_search_acceptance_20261103_summary.json) and checksum-

@@ -1,0 +1,244 @@
+{
+  "actual_module_versions": {
+    "ackredit": "0.12.0+11.g74f865d",
+    "argdigest": "0.17.0+5.gcd9c4f3",
+    "depdigest": "0.15.1",
+    "molsysmt": "0.23.0+370.g0faf1584d",
+    "molsysviewer": "0.24.0+238.gca7ebea6",
+    "pharmacophoremt": "0.4.0+62.g6a7537b",
+    "pyunitwizard": "0.29.0+4.g9d74f0e",
+    "smonitor": "0.22.0+3.gebdd054"
+  },
+  "boundaries": {
+    "biological_validation": false,
+    "clean_dependency_closure": false,
+    "documentation_scope": {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-m",
+        "sphinx",
+        "-E",
+        "-W",
+        "--keep-going",
+        "-n",
+        "-b",
+        "html",
+        "/tmp/phmt14-acceptance-20261103-wi6edou1/docs-source",
+        "/tmp/phmt14-acceptance-20261103-wi6edou1/docs-html"
+      ],
+      "neighbor_stubs": {
+        "conformer_screening_workflow.md": [],
+        "molsysmt_feature_receiving.md": [],
+        "placed_pose_workflow.md": [
+          "verification-and-release-limits"
+        ],
+        "rigid_search_workflow.md": []
+      },
+      "scope": "Strict isolated unchanged maintained reference-ligand page and its one executed block; neighbor link-target stubs, not full-site or neighbor qualification."
+    },
+    "exact_head_hosted": "uibcdf/pharmacophoremt#9",
+    "execution_attempts": {
+      "correction": "Only replace the one-off cross-policy bitwise geometry assertion with physical explicit-unit comparisons at 1e-12 tolerance. Keep exact fields and evaluation oracles. No library/test/provider change.",
+      "diagnostic": {
+        "correction_to_diagnostic_wording": "The diagnostic initially describes unit strings/values. The serializer actually always emits nm numeric values. The retained differences show only roundoff on pm-to-angstrom conversion; no unit-string difference. Geometries match to 1e-12 nm and constraints/provenance match exactly.",
+        "exit_code": 0,
+        "max_center_difference_nm": 2.220446049250313e-16,
+        "result": "unit_diagnostic.json",
+        "script": "diagnose_units.py"
+      },
+      "initial_isolated_render": {
+        "cause": "Four link-target stubs missing from temporary toctree, toc.not_included warnings.",
+        "correction": "Include the four stubs in the temporary hidden toctree; original normative page unchanged. No suppressed warnings.",
+        "exit_code": 1,
+        "index": "docs_index_initial.md",
+        "log": "sphinx_initial.log"
+      },
+      "initial_workflow": {
+        "exit_code": 1,
+        "log": "workflow_initial.log",
+        "saved_query": "reference_query_initial.json",
+        "script": "run_workflow_initial.py",
+        "stage": "first JSON round trip: exact dictionary equality across unit policies"
+      }
+    },
+    "feature_definition": "classical_atomic_formal@1: stored-bond minimum-cycle aromaticity, explicit donor-H direction, atomic acceptor spheres and formal-charge groups. Not pH inference, ideal acceptor vectors, universal SSSR equivalence or proof every site binds.",
+    "full_platform_matrix": false,
+    "full_suite_execution": false,
+    "historical_fallback": "PHMT #41 stays partial for supported-public/floor/installed receiving and final historical donor arithmetic retirement, review 2026-11-11. Available-provider failures never trigger legacy retry; #375 ideal acceptor chemistry is separate.",
+    "installed_wheel_qualification": false,
+    "new_pytest_execution": true,
+    "ownership": "Public MolSysMT owns source conversion, atom/state/coordinate inspection, six-family participant recognition, donor vectors, ring planes, charge-group centroids and molecular translation. PHMT owns pharmacophoric feature records, query constraints, detached provenance, one-to-one pose matching and persistence.",
+    "performance_measured": false,
+    "public_delivery": "uibcdf/pharmacophoremt#23/#10",
+    "runtime_test_fixture_scientific_definition_changes": false,
+    "shared_conflicts": "uibcdf/molsyssuite#82",
+    "source_api_acceptance": true,
+    "source_environment": "Borrowed owned #69 system-site-packages venv; normal editable PHMT 0.4.0+62.g6a7537b; controlled providers/native unchanged; no prefix/sibling mutation."
+  },
+  "consumer": {
+    "head": "a3cd1f5ec6da2b4ee81e17605290e02815ad3dfb",
+    "status": ""
+  },
+  "examples_actual_attribution": {
+    "items": 12,
+    "uses": 36
+  },
+  "executed_example_blocks": 1,
+  "focused_tests": {
+    "actual_pytest_items": 53,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt14-acceptance-20261103-wi6edou1/pytest-temp",
+      "--junitxml=/tmp/phmt14-acceptance-20261103-wi6edou1/focused.xml",
+      "tests/test_reference_ligand.py",
+      "tests/test_molsysmt_feature_routes.py",
+      "tests/test_pose_evaluation.py",
+      "tests/test_contracts.py"
+    ],
+    "errors": 0,
+    "failures": 0,
+    "module_counts": {
+      "tests.test_contracts": 18,
+      "tests.test_molsysmt_feature_routes": 14,
+      "tests.test_pose_evaluation": 14,
+      "tests.test_reference_ligand": 7
+    },
+    "seconds": 18.54,
+    "skips": 0,
+    "warnings": 0
+  },
+  "full_evidence": {
+    "compressed_bytes": 792234,
+    "compressed_sha256": "d67b726ff4a2c83741c47d1d34e751f856288d0f2d3a56b810c14b7ae691c7bc",
+    "path": "reference_ligand_acceptance_20261103.json.gz",
+    "uncompressed_bytes": 6659145,
+    "uncompressed_sha256": "c0a93bcedca91097c8df23a8cd67760963dc4297a013370c46417a3d7125307c"
+  },
+  "full_identity_unchanged": {
+    "examples": true,
+    "focused": true,
+    "workflow": true
+  },
+  "issue": "uibcdf/pharmacophoremt#14",
+  "measured_date": "2026-11-03",
+  "native_extensions": [
+    {
+      "bytes": 31213144,
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+    }
+  ],
+  "schema": "pharmacophoremt.reference_ligand_acceptance_summary@1",
+  "source_environment": {
+    "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+    "providers": {
+      "depdigest": {
+        "head": "13cc73780a7cb645546ae3f396177f98b86a8792",
+        "status": ""
+      },
+      "molsysmt": {
+        "head": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+        "status": ""
+      },
+      "molsysviewer": {
+        "head": "ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352",
+        "status": ""
+      }
+    },
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]"
+  },
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "issue": "uibcdf/pharmacophoremt#14",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "purpose": "Native single-reference six-family source/API acceptance and shared MolSysMT receiving; no provider/prefix/sibling mutation",
+    "review_date": "2026-11-17"
+  },
+  "workflow_profiles": [
+    {
+      "actual_items": 3,
+      "actual_uses": 6,
+      "aromatic_axis_reversal_accepted": true,
+      "charge_sign_mismatch_rejected": true,
+      "directed_donor_acceptance": [
+        "matched",
+        "not_matched"
+      ],
+      "displaced_fit": 0,
+      "essential_sites": 15,
+      "evaluated_inputs": 4,
+      "family_counts": {
+        "aromatic ring": 1,
+        "hb acceptor": 4,
+        "hb donor": 1,
+        "hydrophobicity": 7,
+        "negative charge": 1,
+        "positive charge": 1
+      },
+      "host_tracking": false,
+      "independent_cached_and_dispatcher_sites_equal": true,
+      "missing_chemistry_fit": 0,
+      "opposite_donor_fit": 0.9333333333333333,
+      "reference_fit": 1,
+      "round_trip_evaluations": 6,
+      "round_trips": 2,
+      "sites": 15,
+      "source_domains_unchanged_in_both_unit_policies": true,
+      "uniform_weight": 1,
+      "visible_failures": [
+        "partial_ring",
+        "partial_charge",
+        "unsupported_feature",
+        "empty_inventory"
+      ]
+    },
+    {
+      "actual_items": 11,
+      "actual_uses": 25,
+      "aromatic_axis_reversal_accepted": true,
+      "charge_sign_mismatch_rejected": true,
+      "directed_donor_acceptance": [
+        "matched",
+        "not_matched"
+      ],
+      "displaced_fit": 0,
+      "essential_sites": 15,
+      "evaluated_inputs": 4,
+      "family_counts": {
+        "aromatic ring": 1,
+        "hb acceptor": 4,
+        "hb donor": 1,
+        "hydrophobicity": 7,
+        "negative charge": 1,
+        "positive charge": 1
+      },
+      "host_tracking": true,
+      "independent_cached_and_dispatcher_sites_equal": true,
+      "missing_chemistry_fit": 0,
+      "opposite_donor_fit": 0.9333333333333333,
+      "reference_fit": 1,
+      "round_trip_evaluations": 6,
+      "round_trips": 2,
+      "sites": 15,
+      "source_domains_unchanged_in_both_unit_policies": true,
+      "uniform_weight": 1,
+      "visible_failures": [
+        "partial_ring",
+        "partial_charge",
+        "unsupported_feature",
+        "empty_inventory"
+      ]
+    }
+  ]
+}

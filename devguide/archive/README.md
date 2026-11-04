@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (49)
+### Resolved (50)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -29,6 +29,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*
 - [`native_ionic_interactions.md`](native_ionic_interactions.md) — [#33](https://github.com/uibcdf/pharmacophoremt/issues/33) — Construct native charge queries from ionic observations through shared feature tools. *(resolved, measured)*
+- [`native_reference_ligand_workflow.md`](native_reference_ligand_workflow.md) — [#14](https://github.com/uibcdf/pharmacophoremt/issues/14) — Build classical reference-ligand queries and evaluate them using shared MolSysMT chemical extraction. *(resolved, measured)*
 - [`native_retrospective_result_summaries.md`](native_retrospective_result_summaries.md) — [#65](https://github.com/uibcdf/pharmacophoremt/issues/65) — Reuse saved native evaluations with original-cohort and unscored-input accounting. *(resolved, measured)*
 - [`native_rigid_consensus.md`](native_rigid_consensus.md) — [#26](https://github.com/uibcdf/pharmacophoremt/issues/26) — Build alternative native consensus models from prepared rigid unaligned ligands. *(resolved, measured)*
 - [`native_rigid_pose_search.md`](native_rigid_pose_search.md) — [#15](https://github.com/uibcdf/pharmacophoremt/issues/15) — Search prepared rigid ligands using reusable correspondence and MolSysMT alignment tools. *(resolved, measured)*

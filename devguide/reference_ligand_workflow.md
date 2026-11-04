@@ -117,3 +117,39 @@ those pinned MolSysMT/PyUnitWizard source snapshots on PYTHONPATH and
 All seven reference-ligand controls passed, and the example above was executed
 separately with its assertions intact. Ruff, the generated-report index check,
 the three offline reporting tests and `git diff --check` also passed.
+
+## Current reference-ligand source/API acceptance — 2026-11-03
+
+#14 is resolved with its [archive](archive/native_reference_ligand_workflow.md)
+and [receipt](evidence/reference_ligand_acceptance_20261103_summary.json). Clean
+receiving a3cd1f5 passes 53 fresh controls in 18.54 s (seven reference, 14 provider-
+route, 14 pose, 18 contract controls), no failures/errors/skips/warnings. Fresh
+host-off/on capsules extract 15 sites spanning all six families; cached/direct/
+dispatcher construction agrees. Group participant versus geometry membership,
+signed charges and independent known centers/donor vector/ring normal are checked.
+All sites default to essential with weight one. Reference/displaced/chemistry-
+absent scores are 1/0/0; opposite explicit donor H leaves 14/15 coverage and fails
+the essential-site contract. Aromatic axis reversal is accepted and charge-sign
+mismatch rejected. Partial groups and unsupported/empty queries fail visibly.
+
+JSON/YAML written under pm/fs/degrees and read under angstrom/ps/radians preserve
+constraints/provenance, physical geometry to 1e-12 and six pose outcomes per profile.
+Same-policy source domains, exact default-policy fingerprints and off/on science
+remain unchanged. Actual credit is 3 items/6 uses host-off and 11/25 host-on.
+The unchanged example passes (12 items/36 uses); strict isolated original-page
+rendering passes with four neighbor stubs. Full identities remain stable in all
+three phases. Initial cross-unit bitwise geometry and temporary-stub toctree
+failures, their diagnostics and corrected attempts are retained; the maximum
+diagnosed center roundoff is 2.220446049250313e-16 nm. No library/test/provider change
+or new full suite is claimed.
+
+Public MolSysMT owns molecular recognition and geometry; no molecular workaround
+is added. PHMT owns pharmacophoric constraints, cached inventories and matching.
+#41 public/floor/installed receiving and final historical donor-absence retirement
+remain partial (review 2026-11-11); ideal acceptor geometry #375 is separate. These
+prepared fragment controls do not establish biology, affinity, performance, pH
+inference or universal ring-basis equivalence. #23/#10/#9 and workspace #82 retain
+their own qualification gates. Earlier dated evidence/future-work statements keep
+their historical scope; conformer/consensus/refinement now have separate delivered
+contracts. Next review #13, then #19. LMMV/dprada own temporary resources, review
+2026-11-17.
