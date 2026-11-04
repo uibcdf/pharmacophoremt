@@ -107,3 +107,10 @@ SDF-container ownership until a public MolSysMT record/property API is received.
 admission, legacy compatibility and validation/encoding before destination opening.
 265 focused controls pass. SDF private payload/container unchanged, with #74 /
 MolSysMT #215 still pending. Remaining format-specific fidelity is separate.
+
+## Ownership receiving — 2026-11-04
+
+#60's [contract](live_reference_ownership.md) qualifies existing independent native
+curation data, intentional live molecular references and explicit public MolSysMT
+eager copies. 199 focused source controls pass, with no runtime/provider/floor
+change or installed claim. Legacy Pharmacophore.merge remains separate #77.

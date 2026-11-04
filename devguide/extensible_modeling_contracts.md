@@ -1,5 +1,13 @@
 # Growth contracts and order of implementation
 
+## Live-reference qualification — 2026-11-04
+
+[#60 ownership contract](live_reference_ownership.md) qualifies intentional
+live molecular references and explicit public MolSysMT eager copies with
+199 source controls. Cached hypotheses remain historical after source changes;
+raw mutations/automatic cache authentication and installed delivery stay outside
+this scope. Legacy merge metadata/alias review remains #77.
+
 The accepted direction is broad pharmacophoric modeling built on independently
 usable tools. The immediate acceptance gate is executing conventional workflows
 reliably. Advanced methods remain objectives; they do not justify skipping the

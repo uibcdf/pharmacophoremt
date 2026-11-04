@@ -225,3 +225,14 @@ private payload unchanged; six tests now compare equal complete pharmacophore
 payloads with their distinct schema envelopes. #74/provider and per-translator
 fidelity remain incomplete. Next independent theme: #60 live references/variants,
 with molecular copying and inspection delegated to public MolSysMT.
+
+## Progress — 2026-11-04: item 5 native-reference scope adequate; legacy merge open
+
+[#60 contract](live_reference_ownership.md) and [receipt](evidence/live_reference_ownership_20261104_summary.json)
+qualify existing curation/live-reference and explicit public MolSysMT eager-copy
+semantics with 199 source controls, without production changes. Provider #121 is
+now closed; exact receiving provider 0faf1584 is distinct from inspected sibling
+71fbe4f. No full-suite/installed/platform/predictive promotion. Eight initial NaN-
+comparison test failures and their correction remain visible. This does not clear
+all library ownership: #77 independently tracks confirmed legacy merge metadata
+loss and measured site aliases needing a settled compatibility contract. Next #77.

@@ -1,5 +1,13 @@
 # Explicit curation of cached pharmacophore hypotheses
 
+## Live-reference qualification — 2026-11-04
+
+[#60 ownership contract](live_reference_ownership.md) qualifies intentional
+live molecular references and explicit public MolSysMT eager copies with
+199 source controls. Cached hypotheses remain historical after source changes;
+raw mutations/automatic cache authentication and installed delivery stay outside
+this scope. Legacy merge metadata/alias review remains #77.
+
 The owner is PharmacophoreMT. Curation operates on cached Feature + Shape sites;
 it neither queries nor copies a molecular system. Molecular preparation,
 selection, geometry and transformations remain MolSysMT operations.

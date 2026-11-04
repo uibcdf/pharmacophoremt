@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (54)
+### Resolved (55)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -20,6 +20,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
+- [`live_reference_copy_review.md`](live_reference_copy_review.md) — [#60](https://github.com/uibcdf/pharmacophoremt/issues/60) — Qualify intentional molecular references and explicit independent source variants. *(resolved, measured)*
 - [`minimal_viewer_addon_delivery.md`](minimal_viewer_addon_delivery.md) — [#56](https://github.com/uibcdf/pharmacophoremt/issues/56) — Bundle the implemented MolSysViewer addon and qualify its minimal installed Python contract. *(resolved, measured)*
 - [`modular_rigid_strategy_comparison.md`](modular_rigid_strategy_comparison.md) — [#27](https://github.com/uibcdf/pharmacophoremt/issues/27) — Expose modular rigid placement steps and compare consensus strategies reproducibly. *(resolved, measured)*
 - [`molsysmt_placed_pose_workflow.md`](molsysmt_placed_pose_workflow.md) — [#13](https://github.com/uibcdf/pharmacophoremt/issues/13) — Deliver a bounded MolSysMT-backed interaction-to-pharmacophore and pose-evaluation workflow. *(resolved, measured)*

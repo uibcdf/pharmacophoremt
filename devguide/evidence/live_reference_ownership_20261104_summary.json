@@ -1,0 +1,112 @@
+{
+  "accepted_test_sha256": "35f50bb73416415a4dcaaf902f34174fcf25cdb59fca07a628335bcacca08003",
+  "attempt_history": [
+    "Initial ten controls: eight comparison failures/two passes. Plain dictionary equality treats preserved unavailable aromatic NaN intersection distances as unequal. These are test comparison failures, not measured native copy corruption.",
+    "A standalone diagnostic initially lacked the unshipped helper path; corrected with explicit repo helper discovery. The probe confirms exact NumPy comparison passes with original NaN positions and dictionary equality fails.",
+    "Corrected guards use exact NumPy comparisons, retaining NaNs rather than imputing zero. Qualified scope: 199 passing cases, ten new integrations plus existing curation/builder/contract controls, zero failures/errors/skips. Both source/native/test/input/metadata identities are stable.",
+    "No production repair is inferred or applied. Legacy merge probe confirms independent metadata loss/shared site identities, handed to new #77.",
+    "Post-scientific reporting inventory includes #60/#77, qualified by three separate reporting controls."
+  ],
+  "base_commit": "eb39eefbbd68d72a5c7b31f9adefeb448acbb4ae",
+  "date": "2026-11-04",
+  "dependency_floor_unchanged": true,
+  "executed_molsysmt_source": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+  "full_evidence": {
+    "compressed_bytes": 198239,
+    "compressed_sha256": "fc24f747f92a060bccd9a2eed0be5826910497a1b0861ebb876383d6ad8b919a",
+    "path": "live_reference_ownership_20261104.json.gz",
+    "uncompressed_bytes": 753242,
+    "uncompressed_sha256": "98ce597db136cf5a7074b692dd600cc2fe551dfe449085a7a71a8072cd094b02"
+  },
+  "independent_finding": "uibcdf/pharmacophoremt#77",
+  "issue": "uibcdf/pharmacophoremt#60",
+  "merge_probe": {
+    "first_site_shared": true,
+    "merged_metadata": {},
+    "second_site_shared": true,
+    "source_metadata": {
+      "identity": {
+        "items": [
+          "first"
+        ]
+      }
+    }
+  },
+  "nan_comparison_probe": {
+    "nan_paths": [
+      "analysis.pi_prolif.measurements.intersection_distance[0]",
+      "analysis.pi_molstar.measurements.intersection_distance[0]"
+    ],
+    "numpy_exact_comparison_passes": true,
+    "plain_dictionary_comparison": false
+  },
+  "post_scientific_reporting_inventory_overlay_sha256": "bd8d5746ab7821f54a2a260a4314aa7dd6eb66683bc2bdfa9f10e0f65a505cf6",
+  "read_only_sibling_context": "71fbe4f46d3c70e4e973c8025f01752a8c9b1084",
+  "runs": {
+    "qualified": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt60-ownership-20261104-x67ixozz/qualified-temp",
+        "--junitxml=/tmp/phmt60-ownership-20261104-x67ixozz/qualified.xml",
+        "tests/test_live_reference_ownership.py",
+        "tests/test_curation.py",
+        "tests/test_complex_based_facade.py",
+        "tests/test_ligand_based_facade.py",
+        "tests/test_receptor_projections.py",
+        "tests/test_contracts.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 199,
+      "skipped": 0
+    },
+    "receiving": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt60-ownership-20261104-x67ixozz/receiving-temp",
+        "--junitxml=/tmp/phmt60-ownership-20261104-x67ixozz/receiving.xml",
+        "tests/test_live_reference_ownership.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "failures": 8,
+      "full_identity_unchanged": true,
+      "items": 10,
+      "skipped": 0
+    }
+  },
+  "runtime_implementation_unchanged": true,
+  "schema": "pharmacophoremt.live-reference-copy-receiving@1",
+  "scope": "Bounded current curation/live-reference and explicit eager molecular copy source qualification. Analytical disconnected prepared inputs, not experimental biology. Linux/Python 3.14.7 with public ArgDigest 0.17.0 extraction and inherited dependencies; not clean installed/all-platform/full-suite/performance/predictive qualification.",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt60-ownership-20261104-x67ixozz",
+    "review": "2026-11-18"
+  }
+}

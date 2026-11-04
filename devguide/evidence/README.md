@@ -7,6 +7,14 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Live-reference/native-copy receiving — 2026-11-04
+
+[Receipt](live_reference_ownership_20261104_summary.json): 199 source controls pass,
+including ten new integration cases; exact sources, both attempts, NaN-comparison
+probe/correction and legacy merge reproducer remain retained. [Contract](../live_reference_ownership.md)
+records #60's bounded qualification and #77's separate finding. No production or
+provider implementation changes; installed/public/platform/predictive gates remain.
+
 ## Native schema and writer receiving — 2026-11-04
 
 [Receipt](native_schema_writing_20261104_summary.json) retains 265 passing focused

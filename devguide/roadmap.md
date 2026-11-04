@@ -1,5 +1,29 @@
 # Strategic Roadmap
 
+## Live-reference/native-copy review qualified — 2026-11-04
+
+[#60](https://github.com/uibcdf/pharmacophoremt/issues/60) closes its reviewed
+source/API scope: [ownership contract](live_reference_ownership.md) and
+[receipt](evidence/live_reference_ownership_20261104_summary.json) retain **199
+passing controls**, including ten new integration cases. Pure pharmacophore copies
+keep live molecular references while owning independent native data. Explicit
+molecular variants/edits use MolSysMT; owner-local invalidation, maps, quantities,
+failed operations, retained historical results and no-new-credit copying pass.
+
+No runtime implementation, provider source/prefix or dependency floor changes.
+Earlier #60 incomplete-provider warning is superseded: MolSysMT #121 is closed.
+Executed provider is 0faf1584; newer sibling 71fbe4f is read-only contract context.
+Two aromatic NaN measurement positions caused eight initial comparison-guard
+failures; corrected exact comparisons preserve missing values. Both attempt
+identities stay stable. Source receiving only; full-suite/installed/platform/
+performance/predictive and broader provider #408/#122 claims remain separate.
+
+**Next: #77**, confirmed legacy Pharmacophore.merge metadata loss plus measured
+shared sites requiring an explicit compatibility/ownership decision. Reuse public
+composition/copy tools; do not infer molecular source/frame identity or implement
+molecular copying here. #74/MolSysMT #215, #6 and #66 retain their gates; addon and
+new release defer. Earlier dated checkpoints retain their original statements.
+
 ## Native schema and writer preparation received — 2026-11-04
 
 [#76](https://github.com/uibcdf/pharmacophoremt/issues/76) introduces
