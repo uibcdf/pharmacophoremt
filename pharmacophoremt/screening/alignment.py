@@ -37,6 +37,8 @@ def align_to_pharmacophore(
         Query supplying target centers.
     correspondence : sequence of pairs of int
         (Site index, feature index) pairs, at least three, without repeats.
+        A paired record must have any one kind listed at its site. Uniqueness
+        applies to typed records, not their possibly overlapping atom sets.
     selection : MolSysMT selection, default='all'
         Atoms to move; other atoms and other frames are left intact in a copy.
     structure_index : int, default=0

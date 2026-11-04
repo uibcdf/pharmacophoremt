@@ -1,5 +1,34 @@
 # Strategic Roadmap
 
+## Native constraint semantics qualified — 2026-11-04
+
+[#79](https://github.com/uibcdf/pharmacophoremt/issues/79) records a bounded
+scientific review of audit items 8–9: [contract](native_constraint_semantics.md),
+[user interpretation](../docs/content/user/constraint_semantics.md) and
+[original evidence](evidence/native_constraint_semantics_20261104_summary.json).
+**368 focused cases pass in 174.42 s, including 40 new controls**; both attempt
+source/native/test/metadata identities remain stable. Point/Sphere feature lists
+are alternatives; capacity is per typed record, allowing shared atoms across
+roles and indexed donor-H pairs. Existing donor assignments already preserve
+hydrogen identity; the suspected loss was refuted. Shape restrictions and
+correspondence/alignment compatibility remain. Two additive result criteria
+explain this method; matching/scoring/defaults and algorithm ID are unchanged.
+
+Recognized features, observed contacts and caller projections retain distinct
+origins, unit-weight/essential construction defaults and deliberate curation
+history through JSON/YAML under nm/radian and pm/degree policies. Those defaults
+are hypotheses, not measured binding importance; repeated observations do not
+inflate weights. Arbitrary direct edits do not create a decision history.
+
+Audit items 8–9 remain **partial**, not globally completed. **Next:** review
+consensus support, participant reuse and redundancy (audit 8/13) against existing
+independent oracles; then design informative parameter/constraint sensitivity
+controls (audit 12). Do not claim missing functionality before inspecting the
+existing tools. Molecular operations stay with MolSysMT; #74/MolSysMT #215 and
+#66 keep their separate gates. #6 remains partial; full-suite/installed/platform/
+predictive qualification, addon and a new release are separate. Earlier entries
+retain their historical next-step statements. Public release remains 0.4.0.
+
 ## Nested facade admission and skip control received — 2026-11-04
 
 #6's [nested contract](nested_facade_contracts.md) and [receipt](evidence/nested_facade_contracts_20261104_summary.json)

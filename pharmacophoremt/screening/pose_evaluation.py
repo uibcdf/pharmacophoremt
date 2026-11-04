@@ -40,8 +40,11 @@ class PoseEvaluator:
     bound directed donor-H angles. Aromatic Disk sites bound center distance by
     radius and the unoriented plane-axis angle; they do not test point-in-disk
     intersection or infer a physical disk thickness. Other definitions raise.
-    Each candidate fills at most one site. All essential sites must be assigned,
-    even with zero weight. No alignment or molecular preparation is performed.
+    Point/Sphere feature lists are alternatives: any one listed kind can fill
+    the site. Assignment is one-to-one per typed feature record, not per atom;
+    distinct chemical roles and indexed donor-H pairs may share atoms. One
+    record fills at most one site. All essential sites must be assigned, even
+    with zero weight. No alignment or molecular preparation is performed.
 
     Parameters
     ----------
@@ -388,6 +391,8 @@ class PoseEvaluator:
                 angle_comparison_cosine_slack=_ANGLE_COSINE_SLACK,
                 min_fit_value=self.min_fit_value,
                 assignment="one_to_one",
+                assignment_unit="typed_feature_record",
+                site_feature_logic="any_of",
                 aromatic_normal="unoriented_axis",
                 aromatic_disk_position="center_distance_within_radius",
                 essential="all",

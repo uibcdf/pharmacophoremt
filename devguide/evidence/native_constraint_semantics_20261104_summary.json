@@ -1,0 +1,164 @@
+{
+  "accepted_files": {
+    "pharmacophoremt/interaction_site/interaction_site.py": "7b46e00417487f037c43d167e7439c63630ceb6fa6bd675d51545f4c2bd713fa",
+    "pharmacophoremt/screening/alignment.py": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc",
+    "pharmacophoremt/screening/correspondence.py": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24",
+    "pharmacophoremt/screening/pose_evaluation.py": "76948a8d98e454ecda4c98246660dba60c37497b63c44c144b77f65709e4e9a9",
+    "tests/test_constraint_semantics.py": "dbeaaae1c8c81d689a4cfa997148f6a595e001325ad63708400fd9957953ac88"
+  },
+  "additive_criteria": {
+    "assignment_unit": "typed_feature_record",
+    "site_feature_logic": "any_of"
+  },
+  "administrative": {
+    "original_audit_text_preserved": true,
+    "original_cookbook_python_blocks_preserved": true,
+    "reporting_controls": 3,
+    "ruff_formatted_files": 327
+  },
+  "attempt_history": [
+    "Original real-provider two-H donor probe retains distinct donor-H atom pairs, refuting suspected identity loss; final identity-controlled guards independently protect this behavior.",
+    "Original 36 controls: 35 behavior passes, one unmet additive result-criteria assertion; not a scientific matching defect. Exact original test reconstructed from final prefix and verified against its captured SHA-256.",
+    "One apply_patch context mismatch refused the complete patch without modifying files; patch applied successfully against formatted test source.",
+    "Final selected 368 cases pass in 174.42 seconds, including 40 new guards; zero failures/errors/skips. Both runtime/native/test/metadata comparisons stable.",
+    "First isolated documentation render fails with three warnings because its minimal configuration omits required autodoc and heading-anchor settings. Original attempt retained. Second uses the real required settings and all 21 real linked pages render strictly with execution disabled. No source fix, suppression, new recipe execution or full-site claim.",
+    "Reporting inventory/index changes occur after scientific completion; executed source/test bytes remain identical. Original audit texts and Python cookbook code blocks remain unchanged."
+  ],
+  "base_commit": "fabb0565d2b5ddb9dd521d6421941b9135803247",
+  "date": "2026-11-04",
+  "documentation": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/tmp/phmt-semantics-20261104-gamhmcnp/docs_nb_closure",
+      "/tmp/phmt-semantics-20261104-gamhmcnp/docs_nb_closure_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "api/saved_results.md": "e90ea438d2fc6e6cc424404c87866f42d63d58e471c58710cd1a94d25c2d7eec",
+      "content/cookbook/aligned_cliques.md": "3006ed9accc7f34655e64bb282929f9472b3c9d3181840da6d97f89bd79eccc6",
+      "content/cookbook/aligned_consensus.md": "536032500982f1579b4eeed8def5e3e14a7d087c19c46e3bc23334c1206ad9c9",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/complex_based_modeler.md": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/excluded_volumes.md": "21ab9d5878b01b20f740171c0a8098e86382d6501baff1e0fa4b904ced0892ba",
+      "content/cookbook/interaction_composition.md": "a52259c6799c1fcd466314101762671478b677076a1ddfa6d470ff7d87c47a45",
+      "content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc",
+      "content/cookbook/observed_est_template.md": "8865d922f90d71267a09f6d781cbbf74bc903ab500cb4ea0e874708f04148e94",
+      "content/cookbook/observed_receptor_coverage.md": "4214f7a1ef1269e5f83880b3247321be62820936220fa2db9f657eeecbd76457",
+      "content/cookbook/pharmacophore_curation.md": "9c4b4a126cb13962f724bd19a25a131f5b90d8fc530110f6038ab772d27ca3c7",
+      "content/cookbook/prepared_conformers.md": "285dcc48a966cb8e0c98c2e8e3ad2e20c08336eb5cf15c8424fa95835205a490",
+      "content/cookbook/prepared_eralpha_interface.md": "53c94eaac83bd0db81850c8c53afb45aaf21a4878633e8906e34da91b6740e4c",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/reference_ligand.md": "427cd17377db3a2dcc67e2428e64883c823326c897edb5c7d6695cc54c2f9234",
+      "content/cookbook/retrospective_validation.md": "98f47fef715ed89eb4ace0f88e4dbc2a546cd683b0ef49dcb1064240b484fa92",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3",
+      "content/user/constraint_semantics.md": "cc432bbc2007eccd1d2e20496158e2a2cd12532704a0822a0e0f84c38ed4fa93",
+      "content/validation/esr1_activity_pilot.md": "44e13e8ed159d16e67c9340d8fea0a991f5c732852e8ef0eef2252bdc1f2c022",
+      "content/validation/esr1_consensus_comparison.md": "097bb55117f9a8c369a3d594738bcd63523be4b2679942d9f589f8125a23a255"
+    },
+    "scope": "Strict isolated changed cookbook page with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim."
+  },
+  "full_evidence": {
+    "compressed_bytes": 272950,
+    "compressed_sha256": "540a40ede650c236d39b4b5501d8d5dabfc494308bec5d7274ccbe998d4cd70a",
+    "path": "native_constraint_semantics_20261104.json.gz",
+    "uncompressed_bytes": 997087,
+    "uncompressed_sha256": "2589784cbba61d1854f2484f4108aef715532f1e7834ccfcbd32c3ccd27d1634"
+  },
+  "issue": "uibcdf/pharmacophoremt#79",
+  "new_cases": 40,
+  "post_scientific_reporting_inventory_sha256": "d6d082c56993c68424d8560eaa6751fe4cde88b957e741824f16062c5a71922b",
+  "remaining_work": "Audit 8\u20139 remains partial beyond this native slice: review consensus support/participant reuse/redundancy with independent oracles, then parameter/constraint sensitivity. #6/#66/#74/MolSysMT #215 and installed/public/hosted gates stay separate.",
+  "runs": {
+    "final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-semantics-20261104-gamhmcnp/final-temp",
+        "--junitxml=/tmp/phmt-semantics-20261104-gamhmcnp/final.xml",
+        "tests/test_constraint_semantics.py",
+        "tests/test_pose_evaluation.py",
+        "tests/test_reference_ligand.py",
+        "tests/test_ionic_interactions.py",
+        "tests/test_aromatic_interactions.py",
+        "tests/test_interaction_composition.py",
+        "tests/test_curation.py",
+        "tests/test_correspondence_geometry.py",
+        "tests/test_modular_rigid_tools.py",
+        "tests/test_rigid_search.py",
+        "tests/test_receptor_projections.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 368,
+      "skipped": 0
+    },
+    "red": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-semantics-20261104-gamhmcnp/red-temp",
+        "--junitxml=/tmp/phmt-semantics-20261104-gamhmcnp/red.xml",
+        "tests/test_constraint_semantics.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 1,
+      "full_identity_unchanged": true,
+      "items": 36,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.native-constraint-semantics-qualification@1",
+  "scientific_algorithms_defaults_providers_dependencies_unchanged": true,
+  "scientific_claims": {
+    "alternative_kinds": true,
+    "construction_defaults_are_not_binding_importance": true,
+    "correspondence_alignment_admission": true,
+    "donor_h_identity_preserved_not_fixed": true,
+    "json_yaml_choices_and_curation_history": true,
+    "shape_restrictions": true,
+    "shared_role_atom_membership": true,
+    "typed_record_capacity": true
+  },
+  "scope": "Linux/Python 3.14.7 source analytical qualification with extracted public ArgDigest 0.17.0 and inherited controlled scientific dependencies; not full-suite, clean installed/public/all-platform, predictive or performance qualification.",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt-semantics-20261104-gamhmcnp",
+    "review": "2026-11-18"
+  },
+  "unchanged_matching_method": "essential_then_weighted_one_to_one@1",
+  "whole_module_ast_unchanged_except_docstrings_and_two_criteria": true
+}

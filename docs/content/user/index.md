@@ -20,6 +20,8 @@ inputs. Each recipe explains the corresponding class or public tool contract.
 
 ## Evaluate, screen and retain evidence
 
+- Read [constraint semantics](constraint_semantics.md) to interpret feature
+  alternatives, shared participants, essential sites and construction defaults.
 - Follow the [prepared workflow](../cookbook/prepared_workflow.md) to connect a
   query, model curation, saved formats and placed-pose evaluation.
 - Use [prepared search](../cookbook/prepared_search_workflow.md) for rigid recovery
@@ -34,6 +36,12 @@ inputs. Each recipe explains the corresponding class or public tool contract.
 Lengths and angles have explicit units. Molecular preparation and transformations
 are MolSysMT operations; the recipes identify the inputs the consumer must supply.
 Geometric coverage alone does not establish affinity or activity discrimination.
+
+```{toctree}
+:hidden:
+
+constraint_semantics
+```
 
 ## Find examples and reference material
 

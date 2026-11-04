@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (57)
+### Resolved (58)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -30,6 +30,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_aromatic_interactions.md`](native_aromatic_interactions.md) — [#34](https://github.com/uibcdf/pharmacophoremt/issues/34) — Build aromatic and cation-pi hypotheses with shared geometry and explicit participant mapping. *(resolved, measured)*
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
+- [`native_constraint_semantics.md`](native_constraint_semantics.md) — [#79](https://github.com/uibcdf/pharmacophoremt/issues/79) — Qualify alternative-feature sites, typed participant capacity and hypothesis decisions. *(resolved, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*
 - [`native_ionic_interactions.md`](native_ionic_interactions.md) — [#33](https://github.com/uibcdf/pharmacophoremt/issues/33) — Construct native charge queries from ionic observations through shared feature tools. *(resolved, measured)*
 - [`native_loader_ignored_options.md`](native_loader_ignored_options.md) — [#73](https://github.com/uibcdf/pharmacophoremt/issues/73) — Reject silently ignored options in native io.load routes. *(resolved, measured)*

@@ -55,7 +55,11 @@ definitions is a review point before broader workflow adoption.
 
 The initial query supports Point, Sphere and donor SphereAndVector geometries, plus
 heavy-atom included and spherical excluded volumes. Candidate features are
-assigned one to one. All essential sites must match, including zero-weight
+assigned one to one per typed record. Point/Sphere feature lists are alternatives;
+distinct roles and indexed donor-H pairs may share atoms. The
+[native constraint contract](native_constraint_semantics.md) qualifies these
+interpretations without introducing atom-disjoint or conjunctive matching.
+All essential sites must match, including zero-weight
 essential sites. Optional sites contribute their weight. Exclusion spheres veto
 heavy atoms strictly inside their radius. Direction checks compare actual
 donor-H vectors, including when the feature and query centers coincide.

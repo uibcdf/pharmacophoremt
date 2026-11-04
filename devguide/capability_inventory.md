@@ -33,19 +33,19 @@ a user declaration alone cannot authenticate that identity.
 | `method="ligand-based"`; `LigandBasedModeler` | Available with explicit `consensus_method="rigid"` or `"aligned_cliques"` and prepared ligand records | List of models, possibly empty. Legacy conformer-generation options accept only inert defaults; no implicit chemical preparation | [Tests](../tests/test_ligand_based_facade.py), [workflow](prepared_consensus_workflow.md) |
 | `modeler.from_aligned_ligands` | Available as a direct tool, outside the generic facade's six method names | Reference-based consensus in a declared shared frame; reference dependence remains | [Workflow](aligned_consensus_workflow.md), [tests](../tests/test_aligned_consensus.py) |
 | `modeler.from_aligned_ligand_cliques`, `from_rigid_ligands` | Available as direct tools with explicit support/search budgets | Joint-support hypotheses; rigid fits delegated to MolSysMT, no exhaustive conformational optimum | [Aligned workflow](aligned_clique_consensus_workflow.md), [rigid workflow](rigid_consensus_workflow.md) |
-| `modeler.compose_pharmacophores`, `copy_pharmacophore`, `extract_pharmacophore`, `edit_pharmacophore` | Available for native hypotheses with declared source/frame relations | Composition and curation; no molecular copying engine. Remaining live-reference ownership review is #60 | [Composition tests](../tests/test_interaction_composition.py), [curation tests](../tests/test_curation.py) |
+| `modeler.compose_pharmacophores`, `copy_pharmacophore`, `extract_pharmacophore`, `edit_pharmacophore` | Available for native hypotheses with declared source/frame relations | Composition and curation; no molecular copying engine. [Live-reference ownership is qualified under #60](live_reference_ownership.md) | [Composition tests](../tests/test_interaction_composition.py), [curation tests](../tests/test_curation.py) |
 
 ## Matching, evaluation and supporting surfaces
 
 | Public surface | State and demonstrated scope | Explicit limit / remaining work |
 | --- | --- | --- |
-| `screening.PoseEvaluator` | Available: fixed-pose typed one-to-one assignment, essential sites, weights, directions and exclusions; [controls](../tests/test_pose_evaluation.py) | Disk uses declared center/axis matching, not physical disk intersection. Geometry compatibility is not binding affinity |
+| `screening.PoseEvaluator` | Available: fixed-pose typed-record one-to-one assignment, any-of Point/Sphere kinds, essential sites, weights, directions and exclusions; [contract/#79 controls](native_constraint_semantics.md) | Disk uses declared center/axis matching, not physical disk intersection. Geometry compatibility is not binding affinity |
 | `RigidPoseSearch`; modular correspondence, placement, ranking and refinement tools | Available: finite rigid proposals with provider-owned fits; [search](../tests/test_rigid_search.py), [modular](../tests/test_modular_rigid_tools.py), [refinement](../tests/test_rigid_refinement.py) controls | `seeded_hit` is discrete search success; incomplete budget/coverage stays explicit. No global continuous optimum or docking engine |
 | `ConformerScreening`, `VirtualScreening` | Available for explicitly supplied prepared frames and selected evaluation method; [conformer](../tests/test_conformer_screening.py), [facade](../tests/test_virtual_screening.py) controls | No hidden conformer generation. Failed evaluations remain unscored, not valid negatives; inert legacy parameters are not active algorithms |
 | `validation.enrichment_factor`, `roc_auc`, `bedroc`; `RetrospectiveValidator` | Available: native tie-aware metrics and declared-label evaluation; [metric](../tests/test_validation_metrics.py), [retrospective](../tests/test_retrospective.py) controls | Metrics alone establish neither label validity nor external prediction. Independent protocol, leakage controls, baselines and uncertainty remain audit items 10–15/#66 |
 | `validation.LeaveOneOutValidator` | Partial: explicit modeler/evaluator orchestration and [native status/recall controls](../tests/test_virtual_screening.py) | Selects the first hypothesis; recall is internal self-consistency, not independent prediction. Grouping, model selection and leakage review remain necessary before a predictive claim |
 | `Pharmacophore`, feature/shape objects | Available as native representation; Point/Sphere/SphereAndVector/Disk have [contract controls](../tests/test_native_geometry_contracts.py) | An exported shape class does not imply support by every matcher/serializer. Extension registration and richer relations remain planned |
-| JSON/YAML; annotated SDF; RDKit/LigandScout/Pharmer translators | Partial across formats: implemented routes with [dispatch](../tests/test_io_dispatch.py), [SDF](../tests/test_io_sdf.py), [RDKit](../tests/test_io_rdkit.py), [LigandScout](../tests/test_io_ligandscout.py), [Pharmer](../tests/test_io_pharmer.py) controls | [First field/schema matrix](persistence_fidelity.md) records #75 reader validation and remaining schema/writer policy. Direct RDKit SDF container use is migration debt under #74 / MolSysMT #215. Generic `.sdf` loading is molecular MolSysMT conversion; annotated pharmacophore SDF uses `load_sdf` explicitly |
+| JSON/YAML; annotated SDF; RDKit/LigandScout/Pharmer translators | Partial across formats: implemented routes with [dispatch](../tests/test_io_dispatch.py), [SDF](../tests/test_io_sdf.py), [RDKit](../tests/test_io_rdkit.py), [LigandScout](../tests/test_io_ligandscout.py), [Pharmer](../tests/test_io_pharmer.py) controls | [First field/schema matrix](persistence_fidelity.md) records #75 reader validation and [#76 native schema/writer qualification](native_schema.md). Direct RDKit SDF container use is migration debt under #74 / MolSysMT #215. Generic `.sdf` loading is molecular MolSysMT conversion; annotated pharmacophore SDF uses `load_sdf` explicitly |
 | `attribution`, `attribution_report` | Partial delivery: optional scientific provenance and detached records implemented; [controls](../tests/test_attribution.py) | #19/#23 retain public-provider/installed qualification; recorded branches are distinct from reviewed literature |
 | MolSysViewer rendering/addon | Partial integration with existing source payload/render paths | Browser acceptance remains #58; addon is deferred by maintainer priority, not represented as absent code |
 | Public package/platform support | Separate delivery axis under #10/#23 | Existing public 0.4.0 and its exact installed receipts do not qualify every later source commit or all provider combinations |
@@ -89,11 +89,12 @@ The [new contract guards](../tests/test_model_dispatch_contract.py) use endpoint
 spies to verify boundary order/identity; existing real molecular workflow tests
 provide the separate compatibility controls. They do not test predictive utility.
 
-Next bounded work: audit item 4, field/schema preservation across formats, beginning
-with native JSON/YAML and explicit SDF. For #6, review the nested ligand-consensus
-and screening facade contracts separately rather than extending this domain with
-new scientific methods. Experimental study design under #66 can proceed alongside
-API work; the original-method access gate remains unresolved.
+Current follow-up (2026-11-04): #75/#76 native persistence, #60 ownership,
+#77 merge and #78 nested facade repairs are qualified in their stated source
+scopes. [Native constraint semantics](native_constraint_semantics.md) under #79
+qualifies part of audit 8–9. Next review consensus support/participant reuse and
+redundancy (8/13), then sensitivity (12). Broader #6 declarations, molecular SDF
+ownership #74/MolSysMT #215 and experimental #66 retain separate gates.
 
 ## Persistence review — 2026-11-04
 
@@ -130,3 +131,12 @@ constructor admission and explicit local VirtualScreening skip controls. 167 sou
 controls pass; methods/scoring/cache/scientific constraints remain. Broader batch/
 public provider/installed receiving stays separate. No molecular options registry
 or new scientific backend is introduced.
+
+## Native constraint interpretation — 2026-11-04
+
+[#79 contract](native_constraint_semantics.md) makes any-of feature lists and
+unique typed-record capacity explicit. Shared atom membership across distinct
+roles is permitted; donor-H identity was already retained. 368 focused controls
+pass, including 40 new semantics/provenance/persistence cases. Result criteria
+are additive; the assignment algorithm, defaults and molecular provider are
+unchanged. Audit 8–9 remains partial outside this bounded native slice.

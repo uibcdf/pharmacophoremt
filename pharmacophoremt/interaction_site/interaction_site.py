@@ -13,7 +13,9 @@ class InteractionSite:
     shape : :obj:`pharmacophoremt.interaction_site.shape.Shape`
         Geometric shape of the interaction site.
     features : str or list of str
-        Chemical features associated with this site.
+        Chemical features associated with this site. Native PoseEvaluator
+        interprets Point/Sphere lists as alternatives, with one assignment per
+        site. Directed, disk and exclusion sites have narrower feature contracts.
 
     Attributes
     ----------

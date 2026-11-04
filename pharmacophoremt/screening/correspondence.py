@@ -75,6 +75,8 @@ def get_correspondences(
     At least three essential sites must have non-collinear centers. Each seed
     uses three different candidate records. Pair distances may differ by at most
     the sum of the corresponding site tolerances. Degenerate triplets are omitted.
+    Site feature lists are alternatives, as in PoseEvaluator. Record uniqueness
+    does not require disjoint atom membership across distinct chemical roles.
     This is a seed proposal method, not a complete continuous constraint solver.
 
     Examples

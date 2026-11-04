@@ -76,7 +76,10 @@ the query. A reference feature is not automatically evidence of a binding role.
 definition, parameters and source context used in the calculation.
 
 Every essential site must match, including zero-weight essential sites. Optional
-sites contribute their weight. A participant fills at most one site. Donor
+sites contribute their weight. A Point/Sphere feature list accepts any one listed
+kind. One typed feature record fills at most one site; distinct roles or indexed
+donor-H pairs may share atoms. See [constraint semantics](../user/constraint_semantics.md)
+before interpreting this as a simultaneous-contact hypothesis. Donor
 SphereAndVector sites check directed donor-H angles. Aromatic disks check center
 distance and the unoriented normal angle: reversing a plane normal is equivalent.
 This disk profile does not calculate disk thickness or point-in-disk intersection.
