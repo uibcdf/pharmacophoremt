@@ -6,7 +6,7 @@ Welcome to the official developer guide for **PharmacophoreMT**. This directory 
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #19 optional attribution source/API review is accepted, with 39 fresh controls, off/on branch/session/failure capsules, saved reports, fresh reader, unchanged examples and strict isolated rendering. #19 stays partial/open for delivered-package/all-minor public receiving under #10/#23. Next review #22 bounded prepared ERalpha acceptance without promoting geometry to biological evidence. Molecular work stays in MolSysMT. #41 public/legacy receiving stays partial (review 2026-11-11); #60/#66 and hosted/workspace gates remain separate. Public release stays 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: #22 bounded prepared ERalpha source/scientific chain is accepted, with 17 fresh controls, independent off/on original CLI, all three unchanged recipe blocks, fixed diagnosis, persistence/native artifacts and strict isolated rendering. #22 stays partial/open for full-receptor/environment/biology; #323/#350 remain provider-owned. Next #6 adoption/qualification review. Molecular operations stay in MolSysMT. #19/#23/#10 delivery, #41 public/legacy receiving (review 2026-11-11), #60/#66 and hosted/workspace gates remain separate. Public release stays 0.4.0.
 
 ## Classical Workflow Specification
 

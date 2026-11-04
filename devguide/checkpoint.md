@@ -1,5 +1,63 @@
 # Development Checkpoint
 
+## Bounded prepared ERalpha chain accepted; adoption review next — 2026-11-04
+
+#22 is now **partial/open**: its declared fragment source/scientific contract
+is accepted, while full-receptor/preparation/environment/biological gates remain.
+See [report](pending_proposals/native_eralpha_validation.md),
+[contract](eralpha_validation.md) and
+[receipt](evidence/eralpha_acceptance_20261104_summary.json). At clean receiving
+**b2b952873db709dbb40d66ae20848a5f8b71b3cc**, 17 fresh controls pass in 480.51 s
+(three input/audit, eight interface, six diagnostic), zero failures/errors/skips;
+four expected B-factor-drop warnings. No new full suite is claimed.
+
+The unchanged original CLI independently prepares both host-attribution profiles,
+retaining 4,047 atoms/4,088 bonds, 1,995 observed heavy atoms, 2,052 local H and
+the declared 304–550 fragment/EST. Original source identity/maps/coordinates stay
+unchanged. Twelve frozen hydrophobic pairs and independent distances give six
+observed sites; empty H-bond/pi-pi families retain coverage. Five ligand-reference
+sites remain hypotheses. The 11-site essential model preserves declared weights,
+reference/displaced fit 1/0, donor/orthogonal-normal negatives 7/8 and normal-sign
+invariance. An independent 153-sphere exclusion collision veto retains fit one.
+H5MSM history/unknowns/maps/analyses, JSON bibliography and unit-policy recovery pass.
+Both profiles share scientific hash `e57e345f637cd7e71979ebf2faff31582753d6681b75687814571affae6282ba`;
+actual credit is 5 items/25 uses host-off and 16/64 host-on. Both original native artifacts are retained verbatim
+in separate checksum-qualified gzip archives.
+
+All three unchanged cookbook blocks pass, including diagnosis. Supplementary
+off/on diagnoses reuse the exact prepared recipe input: eight candidate triples,
+fixed H-bond counts 0/6/2/0/1, 29 rings/28 pair distances and aromatic counts
+0/0/1. Actual diagnostic credit is 5 items/11 uses host-off and 8/14 host-on; science/source/cached
+observations remain unchanged. Loaded source/native/helper/test/input and runtime
+versions stay stable. Full identity is true for focused/driver and false for
+examples: four stale canonical distribution metadata/direct_url lookups trigger
+the original wrapper exit 1 after science completes. Both snapshots and the exact
+changes remain under workspace #82; no prefix repair, scientific rerun or false
+full-identity pass is claimed. Strict isolated original-page rendering uses two neighbor stubs.
+Initial temporary external-link staging/missing-config render failures and their
+correction are retained. No scientific correction or runtime/test/input/provider/
+prefix/sibling change is needed; source/runtime remains 0.4.0+62.g6a7537b.
+
+MolSysMT owns molecular preparation/inspection/recognition/geometry/motion/native IO.
+PHMT owns explicit case declarations, pharmacophoric interpretation/curation and
+matching. General rejected-reference diagnostics (#350) and environmental H (#323)
+were observed open; the independent intersection oracle remains only in a fixed-
+case test. The legacy snapshot's derivation, excluded residues/full receptor,
+peptide stereo, environmental refinement and biological enrichment remain pending.
+Do not repair chemistry locally, infer missing #66 binding protocols or relabel
+geometry controls as biological negatives. Original October evidence stays historical.
+
+**Next: #6 support-library/developer-tool adoption review.** Inspect current
+ArgDigest/PyUnitWizard/SMonitor/DepDigest boundaries and actual pinned tool evidence;
+reuse valid #19/source receipts with explicit limits. Identify concrete remaining
+work and keep source review, public/provider floors, exact installed artifacts and
+central adoption states separate. #19 delivery, #23/#10/#9 and workspace #82 keep
+their gates; #41 public/floor/installed receiving and historical donor-absence
+retirement remain partial (review 2026-11-11). #60 retains its concrete-consumer
+scope. Addon/new release defer. Owned /tmp/phmt22-acceptance-20261104-vuaam0td/,
+LMMV/dprada, review 2026-11-18; borrowed #69 prefix/providers/native unchanged.
+No local process remains after checkpoint.
+
 ## Optional attribution source/API accepted; package receiving pending — 2026-11-04
 
 #19 is now **partial**, not closed: the source/API review is accepted, while its

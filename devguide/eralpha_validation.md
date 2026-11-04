@@ -1,5 +1,51 @@
 # ERalpha input audit and native validation gate
 
+## Current bounded prepared-case acceptance — 2026-11-04
+
+#22 is **partial**, with the declared 304–550/EST source/scientific workflow
+accepted and wider receptor/environment/biological gates still open. See the
+[maintained report](pending_proposals/native_eralpha_validation.md) and
+[new receipt](evidence/eralpha_acceptance_20261104_summary.json). Clean receiving
+b2b9528 passes 17 fresh controls in 480.51 s (three input/audit, eight interface,
+six diagnostic), zero failures/errors/skips; four expected B-factor-drop warnings.
+No new full suite or runtime/test/fixture/provider change is claimed.
+
+The original opt-in CLI independently prepares both attribution modes with
+4,047 atoms/4,088 bonds, 1,995 observed heavy atoms and 2,052 local H. Source/maps/
+history remain unchanged. Twelve frozen hydrophobic contacts produce six sites;
+evaluated-empty H-bond/pi-pi analyses remain distinct from five ligand-reference
+hypotheses. The curated 11-site query gives reference/displacement fit 1/0,
+donor/orthogonal-normal negatives 7/8 and accepts normal-axis reversal. The
+153-heavy-atom/19-residue exclusion veto preserves positive fit one. Native
+history (including unknowns), chemical values, cached analyses, original maps,
+JSON provenance and nondefault-unit results survive persistence. Both profiles
+share scientific hash `e57e345f637cd7e71979ebf2faff31582753d6681b75687814571affae6282ba` and actual credit
+5 items/25 uses host-off and 16/64 host-on. Exact current H5MSM bytes are retained in two separately qualified
+native gzip archives; do not read them as JSON or regenerate them from a model.
+
+All three unchanged recipe blocks pass. Off/on diagnostic capsules reuse the
+recipe's prepared input and preserve eight near H-bond candidates, fixed counts
+0/6/2/0/1, 29 rings/28 pair distances and aromatic counts 0/0/1, with credit
+5 items/11 uses host-off and 8/14 host-on. Candidates and alternate criteria do not replace original
+observations. The independent rejected-intersection oracle stays in the frozen-
+case test; public general geometry/detectors remain MolSysMT operations. #323
+environmental H and #350 rejected-reference diagnostics were checked open.
+
+Loaded source/native/helper/test/input and runtime versions stay stable. Full
+identity is true in focused/driver but false in examples: four distribution
+metadata/direct_url lookups resolve stale canonical records. The full-identity
+wrapper exits 1 after all science passes; original output/snapshots/diagnostic
+remain retained under workspace #82, without rerun or prefix repair. Strict
+isolated original-page rendering passes with two neighbor stubs. Initial
+temporary external-link staging and the resulting missing-config renderer failures
+are retained; scientific attempts need no correction. Original October receipts
+remain checksum-qualified historical measurements. The legacy snapshot's origin,
+full receptor/excluded residues, peptide stereo, environmental refinement and
+biological enrichment remain unqualified; no #66 endpoint labels or performance
+claim is inferred. #19 delivery, #41 public/legacy receiving, #23/#10/#9 and
+workspace #82 keep their own gates. Next #6 reviews adoption/remaining qualification
+work; addon/new release defer. LMMV/dprada review owned resources 2026-11-18.
+
 **2026-10-10 retirement:** #42 removes the legacy complex chemistry engine.
 Its #5 feature-presence guard and runtime remain historical source at
 `1198af1c410621deb1477a4fc8b8f5ea3c46b376`; the active guard now refuses incomplete

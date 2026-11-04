@@ -1,5 +1,31 @@
 # Strategic Roadmap
 
+## Prepared ERalpha fragment accepted within scope; adoption next — 2026-11-04
+
+#22's [receipt](evidence/eralpha_acceptance_20261104_summary.json) accepts its
+declared 304–550/EST source/scientific workflow at clean b2b9528: 17 fresh controls,
+the unchanged two-profile original CLI, all three recipe blocks, supplementary
+tracking-independent diagnosis and strict isolated rendering pass. Loaded
+source/native identities stay stable, but example distribution lookups switch to
+four stale canonical records: the full-identity wrapper failure remains under #82. Four warnings are expected attribute drops. Current original native
+artifacts, full outputs and original data/history/maps stay checksum-qualified.
+Twelve observed hydrophobic contacts and five ligand-reference hypotheses retain
+distinct roles; direction/normal/weight/exclusion and persistence controls pass.
+No library/test/input/provider change, new full suite or biological claim.
+
+**#22 stays partial/open** for full receptor/excluded residues, peptide stereo,
+environmental preparation and biological acceptance. MolSysMT #323/#350 remain
+open; the client uses public molecular tools and keeps the rejected-intersection
+arithmetic solely as an independent fixed-case test oracle. No missing #66
+binding method or physical cutoff preference is invented.
+
+Next **#6 support-library/tool adoption review** should consolidate current
+boundaries and actual evidence, then name concrete remaining qualification work.
+Source acceptance cannot promote central states, public/provider floors or exact
+installed/platform artifacts. #19 delivery/#23/#10, hosted #9, workspace #82 and
+#41 public/legacy receiving (review 2026-11-11) remain separate. #60 keeps its own
+consumer gate. Addon/new release defer. See [checkpoint](checkpoint.md).
+
 ## Attribution source/API accepted; real prepared case next — 2026-11-04
 
 #19's [receipt](evidence/attribution_acceptance_20261104_summary.json) accepts the

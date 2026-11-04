@@ -7,6 +7,41 @@ links original records here; the dated observations below retain their original
 publication-status statements. No original evidence is moved or rewritten.
 The prepared CCD EST/DES case is the first documented collection demonstrator.
 
+## Bounded prepared ERalpha source/scientific review — 2026-11-04
+
+The [summary](eralpha_acceptance_20261104_summary.json) and checksum-qualified
+original archive accept #22's declared fragment at clean b2b9528. Seventeen fresh
+controls pass (three input/audit, eight interface, six diagnostic), zero failures/
+errors/skips, with four expected B-factor drops. The unchanged original CLI
+independently prepares both profiles, preserving 1,995 observed heavy atoms plus
+2,052 local H, twelve hydrophobic observations, evaluated-empty H-bond/pi-pi families
+and original history/maps. Six observed and five ligand-reference sites retain
+their distinct roles. Reference/displacement, independent direction/normal,
+weight/exclusion and persistence/unit controls pass; actual credit is 5 items/25 uses host-off and 16/64 host-on.
+Both profiles have the same current scientific hash, distinct from historical
+measurements. Exact original H5MSM bytes remain in native_plain/native_tracked
+sibling gzip identities; raw readers verify them without treating binary as JSON.
+
+All three unchanged recipe blocks pass. Supplementary off/on diagnosis reuses the
+same prepared recipe case and retains eight candidate triples, fixed H-bond
+counts 0/6/2/0/1 and aromatic counts 0/0/1 (credit 5 items/11 uses host-off and 8/14 host-on). Original
+source/cached observations and actual loaded source/native/helper/test/input/
+runtime versions stay stable. Focused/driver full identity passes; example full
+identity fails on four stale canonical distribution records, with its original
+wrapper exit 1/snapshots/diagnostic preserved under workspace #82. No science
+rerun or prefix repair is performed. Strict isolated original-page rendering
+passes with two neighbor stubs. Initial temporary external-link staging and
+missing-config renderer failures are retained; no scientific correction or
+runtime/test/provider change/new full suite is claimed.
+
+Parse original_files[name].text for complete driver_output.json and examples_result.json;
+native binary outputs have separate raw-byte identities. Original October archives
+are verified without overwriting/relabeling their measurements. #22 remains partial
+for full-receptor/environment/biological gates, with MolSysMT #323/#350 open. General
+molecular operations remain provider-owned; the rejected intersection arithmetic
+stays only in an independent fixed-case test. Public/installed/platform/hosted,
+workspace, biological endpoint and performance gates retain separate scopes.
+
 ## Optional attribution source/API review — 2026-11-04
 
 The [new summary](attribution_acceptance_20261104_summary.json) and checksum-

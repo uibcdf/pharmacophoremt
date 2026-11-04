@@ -1,7 +1,7 @@
 ---
 summary: Audit the ERalpha snapshot and migrate its regression to a reproducible native workflow.
 issue: uibcdf/pharmacophoremt#22
-status: active
+status: partial
 opened: 2026-10-02
 closed:
 verification: measured
@@ -13,6 +13,95 @@ supersedes: []
 ---
 
 # Native ERalpha validation case
+
+## Bounded prepared-case review accepted; wider gates remain partial — 2026-11-04
+
+The [new receipt](../evidence/eralpha_acceptance_20261104_summary.json) accepts
+the declared 304–550/EST source/scientific workflow at clean receiving
+**b2b952873db709dbb40d66ae20848a5f8b71b3cc**. All 17 fresh controls pass in
+480.51 s (three input/audit, eight prepared-interface and six diagnostic controls),
+zero failures/errors/skips. Four expected B-factor-drop warnings retain their
+original catalog group and explicit intersection policy. No new full suite is
+claimed. The durable guard protects native refusal of the legacy unprepared
+snapshot, frozen deposition identity and honest readiness failures; companion
+guards protect prepared maps/history, independent contacts/orientations/exclusions,
+persistence, original attribution and fixed-case geometry oracles.
+
+The unchanged original opt-in interface CLI independently prepares both host
+tracking modes. Each prepared system retains 4,047 atoms/4,088 bonds: 1,995
+observed heavy atoms and 2,052 local generated H. Original/source identity and
+coordinates remain unchanged. The declared 304–550 fragment, excluded 301–303,
+HIE histidines, charged termini, explicit ARG name permutation and curated EST
+chemical/stereochemical choices remain inputs, not inferred pH or receptor
+acceptance. Generated atom source indices remain -1.
+
+Each profile preserves the 12 frozen hydrophobic source pairs and their independent
+coordinate distances, while H-bond/pi-pi families retain evaluated-empty coverage.
+Six observed sites plus five separately labeled ligand-reference sites form
+11 essential constraints. Explicit weight .5 on hydrophobic sites is a declared
+choice. Reference fit is one, 2 nm displacement zero; donor reversal/orthogonal
+normal give 7/8 and fail one essential site. Normal-axis reversal is accepted.
+The 19-residue/153-heavy-atom exclusion control moves ligand source atom 5943
+onto receptor source atom 394, preserving positive fit one but vetoing the pose.
+Native H5MSM, JSON, unknown numerical preparation history, maps, cached analyses,
+query metadata and nondefault-unit outcomes survive recovery. Both independent
+profiles are valid with the same scientific SHA-256
+`e57e345f637cd7e71979ebf2faff31582753d6681b75687814571affae6282ba`; actual credit is 5 items/25 uses host-off and 16/64 host-on.
+
+All three unchanged cookbook Python blocks execute, including the maintained
+diagnosis. Supplementary off/on diagnoses reuse that exact prepared case and
+unchanged cached observations; they are not independently re-prepared profiles.
+Eight recognized near H-bond triples remain diagnostic candidates, not observations.
+The fixed H-bond comparisons retain counts 0/6/2/0/1, 29 SMARTS rings supply 28
+ring-pair distances, and fixed aromatic profiles retain counts 0/0/1. Six close
+H-bond candidates fail the original angular criterion; a different aromatic
+criterion accepting one pair neither replaces the original result nor establishes
+biological superiority. Independent frozen-case tests verify angles/intersection;
+production diagnosis uses public MolSysMT distances/angles/planes and detectors.
+The missing rejected-reference surface stays #350; environmental refinement stays
+#323, both observed open on 2026-11-04. Diagnostic science agrees across tracking
+modes, with 5 items/11 uses host-off and 8/14 host-on.
+
+Actual loaded-source/native/helper/test/input identities and runtime versions stay
+stable in all three phases. Full identity is true for focused/original-driver,
+but false for examples: after all scientific assertions pass, four distribution
+lookups switch to stale canonical PHMT 0.4.0+29.g8e83a64, MolSysMT 0.23.0+322.g71fbe4f46,
+Viewer 0.24.0+188.g73a6f388 and DepDigest 0.15.1+8.g0884f0c metadata/direct_url records.
+The original wrapper exit 1, full_identity_unchanged=False, both snapshots and the
+field-by-field diagnostic are retained. This repeats the class already tracked
+under MolSysSuite #82; the trigger is not isolated here. No science rerun, prefix
+repair or relabeling of the failed full-identity check is performed. Strict isolated original-page rendering
+passes with two neighbor-only stubs. Initial temporary staging mistakenly matched
+an absolute GitHub .md URL and stopped before writing conf.py; the following
+renderer therefore failed. Those unqualified attempts/logs remain recorded; only
+the temporary external-link filter changes. Scientific assertions pass on the first
+executions; the final example identity wrapper fails as described. No library/
+test/fixture/provider/prefix/sibling mutation or scientific-definition change is
+performed. The two current original native H5MSM outputs are
+retained as separate raw-byte/checksum-qualified gzip archives; no binary unknowns
+are coerced into JSON. Original October interface/diagnosis/repeat-H archives are
+verified and remain unchanged.
+
+**#22 remains open/partial.** This accepts a declared prepared fragment and
+methodological controls, not full-receptor/excluded-residue chemistry, peptide
+stereochemical acceptance, environmental H refinement, water/assembly choice,
+affinity, biological enrichment or performance. The old solvated snapshot's
+derivation remains unverified. No new binding labels, scaffold cohorts, cutoff
+optimization or missing #66 endpoint protocol is inferred. Public MolSysMT owns
+all molecular preparation, recognition, geometry, transformation and native IO;
+PHMT owns case declarations, pharmacophoric interpretation/curation and matching.
+No missing provider tool is copied here.
+
+Installed/public/platform/hosted #23/#10/#9, workspace #82 and #19 delivery retain
+their separate gates. #41 public/floor/installed receiving and final historical
+donor-absence retirement remain partial (review 2026-11-11). Next #6 can consolidate
+current support-library/tooling adoption and identify the remaining concrete
+qualification work without changing central registry states from local evidence.
+#60 retains its concrete-consumer gate; addon/new release defer. Owned
+/tmp/phmt22-acceptance-20261104-vuaam0td/, LMMV/dprada, review 2026-11-18; borrowed
+#69 prefix remains normal editable PHMT 0.4.0+62.g6a7537b with unchanged providers/
+native. No local process remains after checkpoint. Earlier source/provider,
+implementation and biological-future statements below keep their historical scope.
 
 ## What
 
