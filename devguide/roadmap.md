@@ -1,5 +1,26 @@
 # Strategic Roadmap
 
+## Native I/O ArgDigest adoption waits on provider contracts — 2026-11-04
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) is blocked by
+[ArgDigest #47](https://github.com/uibcdf/argdigest/issues/47) (literal keyword
+loss/explicit source overwrite, also affecting current model dispatch) and
+[#48](https://github.com/uibcdf/argdigest/issues/48) (TypeError compatibility).
+Both reviewed issues are published with user authorization. No runtime or
+provider edit is made; generic binding stays in ArgDigest and molecular work
+in MolSysMT. [Readiness](native_io_admission_readiness.md) and
+[original evidence](evidence/native_io_admission_readiness_20261104_summary.json)
+distinguish failing candidate probes from 260 passing legacy compatibility
+cases (41 new). Those passes do not repair the current dispatcher defect.
+
+Receive supported published provider bytes and qualify the original adversarial
+cases before activating native I/O contracts. Broader #6 remains partial.
+Independent next product work is development-only sensitivity/ablation under
+audit item 12, following #80's support/redundancy review. Reserved evaluation
+data, #66's original-method gate, #74/MolSysMT #215 and installed/public/hosted
+qualification remain separate. Addon/new release deferred; public 0.4.0 unchanged.
+Earlier dated next-step statements below retain their historical scope.
+
 ## Native I/O diagnostics and dependency declarations repaired — 2026-11-04
 
 [#81](https://github.com/uibcdf/pharmacophoremt/issues/81) closes the owned native

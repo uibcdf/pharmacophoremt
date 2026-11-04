@@ -1,5 +1,35 @@
 # Development Checkpoint
 
+## Native I/O ArgDigest handoff published; adoption gated — 2026-11-04
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) now tracks two
+provider gates: [ArgDigest #47](https://github.com/uibcdf/argdigest/issues/47)
+can drop a literal kwargs option or overwrite an explicit source, including the
+current model dispatcher; [#48](https://github.com/uibcdf/argdigest/issues/48)
+requests TypeError-compatible contract refusal for existing closed I/O APIs.
+The user authorized both publications after reviewing their exact drafts.
+**No runtime migration or fix is activated.** Generic binding belongs in
+ArgDigest; molecular forms, inspection and manipulation remain MolSysMT-owned.
+
+[Readiness and next receiving steps](native_io_admission_readiness.md),
+[original evidence](evidence/native_io_admission_readiness_20261104_summary.json)
+and [published proposal record](evidence/native_io_argdigest_issue_drafts_20261104.json)
+retain the two failing candidate probes and actual current-dispatcher effect.
+All three recorded identities are stable. **260 selected legacy compatibility
+cases pass in 7.23 s, including 41 new controls**, with no failures/errors/skips.
+They protect existing paths, TypeError refusals, option identity and provider
+delegation; they do not establish a repaired provider or scientific validity.
+
+**Next for #82:** wait for supported published ArgDigest correction/policy,
+receive exact bytes, rerun adversarial source/keyword and exception-family
+probes plus legacy guards, then consider bounded native I/O activation. #82 is
+blocked; broader #6 stays partial. Independent product work can resume the
+development-only sensitivity/ablation protocol described under #80, preserving
+reserved evaluation data. #66, #74/MolSysMT #215 and installed/public/hosted
+gates remain separate. Addon/new release deferred; public version stays 0.4.0.
+No continuing local process. Owned evidence capsule review: 2026-11-18 or
+provider readiness. Earlier next-step statements below remain historical.
+
 ## Native I/O diagnostics and dependency declarations repaired — 2026-11-04
 
 [#81](https://github.com/uibcdf/pharmacophoremt/issues/81) closes the owned native

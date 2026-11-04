@@ -18,6 +18,20 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Native I/O receiving gated by published provider issues — 2026-11-04
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) is blocked by
+[ArgDigest #47](https://github.com/uibcdf/argdigest/issues/47), literal keyword
+loss/explicit source overwrite including current model dispatch, and
+[#48](https://github.com/uibcdf/argdigest/issues/48), TypeError-compatible
+closed-signature refusal. Both exact reviewed drafts are published with explicit
+user authorization. [Readiness](../native_io_admission_readiness.md) and
+[original evidence](../evidence/native_io_admission_readiness_20261104_summary.json)
+retain failing candidate probes separately from 260 passing legacy controls,
+including 41 new. No runtime/provider edit or local workaround; provider-owned
+correction/publication and receiving remain pending. #6 stays partial. Molecular
+work stays with MolSysMT. Independent development-only sensitivity can proceed.
+
 ## Native I/O diagnostics and declarations — 2026-11-04
 
 [#81](https://github.com/uibcdf/pharmacophoremt/issues/81), [contract](../native_io_diagnostics.md)

@@ -17,8 +17,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`retire_legacy_molecular_operations.md`](retire_legacy_molecular_operations.md) — [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) — Retire general molecular operations from reachable legacy workflows. *(partial, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(partial, measured)*
 
-### Blocked (1)
+### Blocked (2)
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
+- [`native_io_argdigest_admission.md`](native_io_argdigest_admission.md) — [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) — Gate native I/O ArgDigest receiving on preserved call shape and exception families. *(blocked, measured)*
 
 <!-- /generated -->

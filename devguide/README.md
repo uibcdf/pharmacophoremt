@@ -12,12 +12,15 @@ scientific study design. Native schema/writer checks are now received under #76;
 live references/variants are now qualified under #60; legacy merge #77 is now fixed through public composition; nested facade
 admission is now received, with broader #6 adoption still partial. Scientific
 semantics/provenance under audit items 8–9 now has a [qualified native slice](native_constraint_semantics.md) under #79 and a [consensus support/redundancy review](consensus_support_review.md) under #80; broader coverage stays partial. [Native I/O diagnostics/dependencies](native_io_diagnostics.md) are now repaired under #81/#6.
+[Native I/O ArgDigest receiving](native_io_admission_readiness.md) is now gated
+under #82 by the published ArgDigest #47/#48 issues; legacy compatibility passes
+do not fix the measured current model-source replacement defect.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: native I/O diagnostic #81 repaired (243 selected cases, 45 new); nglview/PyYAML declarations aligned. #6 remains partial: next native I/O ArgDigest contracts, then development-only sensitivity. Audit 8–9/13 remains partial. #6 remains partial. Molecular operations remain MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: native I/O ArgDigest adoption #82 waits on ArgDigest #47/#48; 260 legacy controls pass (41 new), while the provider/current-dispatcher defect remains open. #6 stays partial. Independent next work: development-only sensitivity. Native I/O diagnostic #81 is repaired; molecular operations remain MolSysMT-owned and #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 

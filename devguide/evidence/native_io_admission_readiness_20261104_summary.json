@@ -1,0 +1,223 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "705aff461bdf2c15097befcf38c677dcad03cb4b5a535ebe4f950f63f5ae3076",
+    "devguide/checkpoint.md": "cb5042e597f2a9b75aeb37d398efa759fcc15aa3e9f057579afd3c3b96ded2c2",
+    "devguide/evidence/native_io_argdigest_issue_drafts_20261104.json": "238cd3648d9b32dd450355ed58928fd074827465c65f4b41adee5964215cb15a",
+    "devguide/native_io_admission_readiness.md": "48f68ce937d81ae0f8b10c90a2e0768c36432afae4934d367f3169ace7591976",
+    "devguide/pending_proposals/README.md": "fb8c5d19e3041ca79033978aa3098370451fedb0ebd88f130746954bb2b6a9d2",
+    "devguide/pending_proposals/native_io_argdigest_admission.md": "eb5be267c5a7124759f3a221b456242e4c9ed8ad07d518fd6cb25ef26ca6d30d",
+    "devguide/pending_proposals/review_python_ecosystem_policy_adoption.md": "3110c5ecff2d4460763e563afba684aa58e1300ed328c47ee8b8395973afbdf4",
+    "devguide/roadmap.md": "a96c522ebc19adf385ce723234c2b75c8d9fbb0d8093f797f20918407f21c352",
+    "devguide/support_library_boundaries.md": "62712abcb0fb37d5a31d78c89f9e4ff0523eef3dec36ca56bed6572ddefa9ec7",
+    "tests/test_native_io_admission.py": "abbc3b2c0a37807bb8e3f808cc54f0c02e1e7364002f00409667492094ac84bd",
+    "tests/test_reporting_protocol.py": "ae09d2cdf2d8cdc8afe2fa3c1e4327e1e2d59eac925f9ba0d2209494b01abf11"
+  },
+  "administrative": {
+    "archive_reader_controls": 18,
+    "documentation": "Devguide checkpoint/report changes only; no Sphinx book/recipe inputs changed.",
+    "indexes_current": true,
+    "reporting_controls": 3,
+    "reporting_inventory_update_after_scientific_run": "#82 added to explicit report identity inventory; scientific test and runtime bytes unchanged.",
+    "ruff_formatted_files": 331,
+    "runtime_provider_dependency_workflow_input_changes": false
+  },
+  "base_commit": "6dc3da62a5d4623b6c22617b8d528582a52b1f79",
+  "candidate_findings": {
+    "closed_calls": 12,
+    "current_consumer_source_replaced": true,
+    "typeerror_family_changes": 8,
+    "variadic_preserved": [
+      true,
+      false,
+      false,
+      false,
+      true
+    ]
+  },
+  "current_model_source_defect_fixed": false,
+  "date": "2026-11-04",
+  "full_evidence": {
+    "compressed_bytes": 517348,
+    "compressed_sha256": "24efeac6b2eb7247063a19fc3f780a245eb781b8af5c1e80e9c01015c9c0d039",
+    "path": "native_io_admission_readiness_20261104.json.gz",
+    "uncompressed_bytes": 1767698,
+    "uncompressed_sha256": "4144caf76dde10196088a12282bf6c10029c349576eb11973a73caeb995febcf"
+  },
+  "identity_checks": {
+    "compatibility": true,
+    "consumer_probe": true,
+    "probe": true
+  },
+  "issue": "uibcdf/pharmacophoremt#82",
+  "legacy_controls": {
+    "cases": 260,
+    "elapsed_seconds": 7.23,
+    "errors": 0,
+    "failed": 0,
+    "new_cases": 41,
+    "run": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-native-admission-20261104-9_parngb/compatibility-temp",
+        "--junitxml=/tmp/phmt-native-admission-20261104-9_parngb/compatibility.xml",
+        "tests/test_native_io_admission.py",
+        "tests/test_io_dispatch.py",
+        "tests/test_native_io_diagnostics.py",
+        "tests/test_native_schema_writing.py",
+        "tests/test_native_persistence_validation.py",
+        "tests/test_model_dispatch_contract.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "full_identity_unchanged": true
+    },
+    "skipped": 0
+  },
+  "migration_activated": false,
+  "provider_issues": [
+    "https://github.com/uibcdf/argdigest/issues/47",
+    "https://github.com/uibcdf/argdigest/issues/48"
+  ],
+  "providers": {
+    "ackredit": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/ackredit\"}",
+      "metadata_version": "0.12.0+11.g74f865d",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 69,
+      "python_source_sha256": "d639082940adb6acf99133514c34af26e835db2c64ac739f233f402d2fb9e2a5",
+      "version": "0.12.0+11.g74f865d"
+    },
+    "argdigest": {
+      "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/argdigest_1792715908426/work\"}",
+      "metadata_version": "0.17.0",
+      "native_extensions": [],
+      "path": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages/argdigest",
+      "python_file_count": 39,
+      "python_source_sha256": "72379c83874374e974481ecb6987368449af492af49f2ab70b542165ff3fdf51",
+      "version": "0.17.0"
+    },
+    "depdigest": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}",
+      "metadata_version": "0.15.1",
+      "native_extensions": [],
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/depdigest/depdigest",
+      "python_file_count": 17,
+      "python_source_sha256": "21ac513be7d1206b4dbcdcad5d7bd7dc22a23576932ed0448d6b004f0b032f13",
+      "version": "0.15.1"
+    },
+    "molsysmt": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}",
+      "metadata_version": "0.23.0+370.g0faf1584d",
+      "native_extensions": [
+        {
+          "bytes": 31213144,
+          "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+          "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+        }
+      ],
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt",
+      "python_file_count": 3031,
+      "python_source_sha256": "f6e5d28a3a5d113ff99b21324df9dd728ddc21e892db34445d2b4f3eaf5df40f",
+      "version": "0.23.0+370.g0faf1584d"
+    },
+    "molsysviewer": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer\"}",
+      "metadata_version": "0.24.0+238.gca7ebea6",
+      "native_extensions": [],
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer/molsysviewer",
+      "python_file_count": 653,
+      "python_source_sha256": "5282eb1275b291861f02ef4c5fcaf285e1ab830414b64860543c7b68822ed551",
+      "version": "0.24.0+238.gca7ebea6"
+    },
+    "pharmacophoremt": {
+      "direct_url": null,
+      "metadata_version": "0.4.0+62.g6a7537b",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 136,
+      "python_source_sha256": "252fcdf3fdecb6320e97e2dd9be3dd3b28c9b6902a345500c497a4f47b7e32da",
+      "version": "0.4.0+62.g6a7537b"
+    },
+    "pyunitwizard": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pyunitwizard\"}",
+      "metadata_version": "0.29.0+4.g9d74f0e",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 92,
+      "python_source_sha256": "038e50e50b50d6bb45e1862f10b383fe3ddb994cce86ed5aa8435a706e706649",
+      "version": "0.29.0+4.g9d74f0e"
+    },
+    "smonitor": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/smonitor\"}",
+      "metadata_version": "0.22.0+3.gebdd054",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+      "python_file_count": 41,
+      "python_source_sha256": "c67830bd0cbb9fee405c0e5fe4c2395911d7c93ec4f5965c8c62681b3d55065c",
+      "version": "0.22.0+3.gebdd054"
+    },
+    "yaml": {
+      "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/conda/feedstock_root/build_artifacts/pyyaml_1770223234623/work\"}",
+      "metadata_version": "6.0.3",
+      "native_extensions": [
+        {
+          "bytes": 249056,
+          "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/yaml/_yaml.cpython-314-x86_64-linux-gnu.so",
+          "sha256": "4b8bd263b000e1f4d84342cf793f314a239f054893d29100ebaa0c1749e34057"
+        }
+      ],
+      "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/yaml",
+      "python_file_count": 17,
+      "python_source_sha256": "acee27dded421cf44e5103c15a7c6067e164b428569ecc8ea2ff8ae918b51871",
+      "version": "6.0.3"
+    }
+  },
+  "public_argdigest": {
+    "conda_sha256": "9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1",
+    "source": "c7128f09b2fe064b6c5603d1077dbd2cec52223d",
+    "version": "0.17.0"
+  },
+  "publication_history": [
+    "Two provider issue creation attempts were rejected pending explicit destination authorization; no provider issue was created by those attempts.",
+    "User reviewed exact destination/title/body material and explicitly authorized both publications.",
+    "Exact reviewed drafts published as ArgDigest #47/#48, each with registered component:pharmacophoremt. No provider source edit or alternative publication route.",
+    "Bounded suite refresh preserves the four in-progress consumer files; clean ArgDigest clone is six documentation commits behind origin/main, without runtime difference. Clone remains unmerged."
+  ],
+  "remaining_work": "Provider owns correction/refusal-policy API and publication. Consumer receives exact supported bytes, reruns adversarial probes and legacy guards, then considers scoped activation. #82 blocked/#6 partial; independent development-only sensitivity remains possible. No local binding/error engine or molecular workaround.",
+  "schema": "pharmacophoremt.native-io-admission-readiness@1",
+  "scope": "Linux/Python 3.14.7 source probes and legacy compatibility with public ArgDigest 0.17.0 extraction and inherited scientific dependencies; not clean installed/public/all-platform, full-suite or predictive qualification.",
+  "support_owner": "uibcdf/pharmacophoremt#6",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "continuing_process_required": false,
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt-native-admission-20261104-9_parngb",
+    "review": "2026-11-18 or provider readiness"
+  },
+  "unchanged_files": {
+    "devguide/audit_20261104.md": "347a0734d24a9c61bc70c5e5202a803858bc2c1fc80d6424e7a09c20539b0939",
+    "devguide/audit_20261104_review.md": "3888ad009cdb5a6d0ba314fb55cfbc58772c5d79929a9c0c48cda56855489a5d",
+    "devtools/conda-build/meta.yaml": "3497f65fcae4c7c2db441402a181d48956107eb9442d5b2f1ee84209840f50e5",
+    "devtools/conda-build/resources.toml": "4a2d7433eb6df2b5c0d34a2ddae1b6f389f9c9a5a9f25da1ea7dd5a007694dcc",
+    "devtools/dependency_routes.toml": "fd59da2fad716631471019cc56487254e0a4dcf56c6bb1139306b76299ec4fa0",
+    "devtools/requirements/controlled_suite_dependencies.txt": "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f",
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f",
+    "pharmacophoremt/_argdigest.py": "fdb6b8f5ec997d2ed7606218c09b43a7421b7e1fa3c418b2ce52cbf8b9aa1b7a",
+    "pharmacophoremt/io/__init__.py": "b09aecad056f387540329fd854a45d57096c53602dd90a479f37ed12f871ab00",
+    "pharmacophoremt/io/phmt/__init__.py": "756e4837f9686bedc29d6397207063ae38f19bf26afdd08e45095a7234a9bf6f",
+    "pharmacophoremt/io/sdf.py": "1dac35660a56ac85f3bff1bd58cd6b66457689d48bb3bc817440c4b25173d491",
+    "pyproject.toml": "0b8dc89625ffce690a71bb089897074064486efe81289813f457b8744fb56cd8"
+  }
+}

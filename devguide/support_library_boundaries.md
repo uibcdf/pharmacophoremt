@@ -1,6 +1,20 @@
 # Support-library boundaries and receiving limits
 
 This contract belongs to [#6](https://github.com/uibcdf/pharmacophoremt/issues/6).
+
+## Native I/O adoption gate and provider handoff — 2026-11-04
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) is blocked by
+[ArgDigest #47](https://github.com/uibcdf/argdigest/issues/47) and
+[#48](https://github.com/uibcdf/argdigest/issues/48). Literal VAR_KEYWORD-name
+options can disappear or overwrite named inputs, including the current model
+source; closed I/O refusal also loses TypeError-family compatibility under
+candidate decoration. [Readiness](native_io_admission_readiness.md) retains
+original probes and 260 passing legacy compatibility cases (41 new controls).
+Those passes are not a fix. No provider monkey-patch, local binding/error engine
+or premature native I/O decoration is introduced. Receive supported published
+provider correction/policy before activation; #6 remains partial. Molecular
+formats/options/inspection/calculations remain MolSysMT-owned.
 The synchronized provider guides retain their authority. Source receiving,
 published package receiving and central adoption states are separate evidence.
 

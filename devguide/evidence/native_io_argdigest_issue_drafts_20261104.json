@@ -1,0 +1,30 @@
+{
+  "date": "2026-11-04",
+  "consumer_issue": "uibcdf/pharmacophoremt#82",
+  "status": "published_with_explicit_user_authorization",
+  "provider_issues_created": true,
+  "issues": [
+    {
+      "repository_full_name": "uibcdf/argdigest",
+      "title": "Literal keyword matching **kwargs parameter is expanded twice and can overwrite named arguments",
+      "body": "Consumer: uibcdf/pharmacophoremt#6/#82, source 6dc3da62a5d4623b6c22617b8d528582a52b1f79. Reproduced on Python 3.14.7 with published ArgDigest 0.17.0, source c7128f09b2fe064b6c5603d1077dbd2cec52223d; Conda SHA-256 9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1. Current read-only sibling cd9c4f3ab80e892075fc5bee9b4ae9ce0ab5e018 has the same relevant implementation.\n\n```python\nfrom argdigest import arg_digest, DigestConfig\n\n@arg_digest(config=DigestConfig(argument_digestion=False, standardizer=None))\ndef delegate(file_name, **kwargs):\n    return file_name, kwargs\n\nmarker = object()\nassert delegate('original', kwargs=marker) == ('original', {'kwargs': marker})\nassert delegate('original', kwargs={'file_name': 'changed'}) == (\n    'original', {'kwargs': {'file_name': 'changed'}}\n)\n```\n\nActual first result is ('original', {}); actual second is ('changed', {}). A nested {'selection': marker} also becomes a top-level selection instead of retaining the literal kwargs option. Ordinary selection and literal skip_digestion=True contrast controls preserve the examples.\n\nSource: core.utils.bind_arguments already flattens the VAR_KEYWORD container. core.decorator._run_digestion checks for plan.var_keyword_name in the already-flat map and expands/removes it a second time. A caller can legally supply a literal keyword with that name. This occurs before normalization/domain admission and can replace explicit named arguments without a collision refusal.\n\nCurrent consumer effect: phmt.model(original_source, method='reference-ligand', kwargs={'molecular_system': replacement_source}) reaches a recorded endpoint with replacement_source. An endpoint spy verifies routing only, with no molecular inspection or fabricated chemical answer. Independent candidate and current-consumer probes retain recorded source/native/test/input/metadata identity.\n\nPlease preserve literal keyword names/value identity, including a key equal to the VAR_KEYWORD parameter name; apply ordinary domain refusal to unknown keywords without dropping/expanding them. Protect alternate VAR_KEYWORD names, opaque/mapping values, named-argument collisions, aliases/domains, call shape and bypass parity. Generic binding belongs in ArgDigest; no downstream local binding engine/renaming/monkey-patch is proposed. Native I/O migration is deferred until a supported published correction is received. Other consumers may be affected; please assess suite impact before rollout.\n",
+      "published_issue_number": 47,
+      "published_url": "https://github.com/uibcdf/argdigest/issues/47",
+      "published_at": "2026-11-04T23:28:00Z",
+      "labels": [
+        "component:pharmacophoremt"
+      ]
+    },
+    {
+      "repository_full_name": "uibcdf/argdigest",
+      "title": "Support TypeError-compatible contract refusals when adopting existing Python I/O APIs",
+      "body": "Consumer: uibcdf/pharmacophoremt#6/#82 at 6dc3da62a5d4623b6c22617b8d528582a52b1f79. Native JSON/YAML readers and writers have closed Python signatures: unsupported keywords raise TypeError before file/model work. Receiving definition-owned contracts must preserve that catch family.\n\n```python\nfrom argdigest import arg_digest, DigestConfig\n\ndef original(file_name):\n    return file_name\n\nwrapped = arg_digest(config=DigestConfig(argument_digestion=False))(original)\nfor function in (original, wrapped):\n    try:\n        function('file.json', typo=True)\n    except Exception as error:\n        print(type(error).__name__, isinstance(error, TypeError))\n# TypeError True\n# UnknownArgumentError False\n```\n\nPublished 0.17.0 changes unknown-keyword and skip_digestion=False refusal to UnknownArgumentError outside TypeError; literal True reaches the original closed callable and retains native TypeError. We measure eight family changes across twelve calls to four real native endpoints. Calls remain refused: this is a compatibility capability request, distinct from the literal-VAR_KEYWORD defect.\n\nPlease define a supported provider-owned route to preserve TypeError compatibility for call-shape refusals while retaining ArgDigest code/context and domain enforcement. Opt-in policy, compatible inheritance or provider-owned exception selection are possible designs for the provider to decide. Warn/ignore must not silently discard options. No downstream error/validation engine or undocumented skip configuration is proposed.\n\nPython 3.14.7/public ArgDigest 0.17.0, Conda SHA-256 9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1; source/runtime/native identities are retained. Existing PHMT-E108/ValueError schema and PHMT-E109/TypeError filename contracts, native path support and original MolSysMT/provider errors must also remain. Source correction, supported API and installed/public consumer qualification remain separate gates.\n",
+      "published_issue_number": 48,
+      "published_url": "https://github.com/uibcdf/argdigest/issues/48",
+      "published_at": "2026-11-04T23:28:08Z",
+      "labels": [
+        "component:pharmacophoremt"
+      ]
+    }
+  ]
+}
