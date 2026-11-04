@@ -115,3 +115,13 @@ LMMV/dprada, review 2026-11-18. Original scientific outputs are archived; retain
 this capsule for follow-up until reviewed. Borrowed scientific and public
 ArgDigest prefixes remain unchanged. No background local test or build is
 required after closeout.
+
+## Consensus continuation — 2026-11-04
+
+[Consensus support/redundancy review](consensus_support_review.md) under #80
+qualifies the native continuation with 126 selected cases (28 new), retaining
+existing algorithms/oracles. Marginal per-site and joint per-hypothesis support
+have different contracts; declared repeated inputs can bias support and means.
+No molecular deduplication/series classifier is added. Audit 8–9/13 remains
+partial for real cohort balancing and predictive complexity; next define the
+bounded development-only sensitivity/ablation protocol (12).

@@ -1,0 +1,283 @@
+{
+  "accepted_files": {
+    "devguide/archive/consensus_support_review.md": "54b0939f43f183eebdb0ed454e8a717a5cb0a2f575797529e60420eefdfd13c1",
+    "devguide/consensus_support_review.md": "4f30b1c6a4b6c2155c3c5673ef5f18fa2c2ab0e7a0cdba43a27b1a4523daf322",
+    "docs/content/cookbook/aligned_cliques.md": "455846309dbd98be2a33b9d66688330b66a61e3676aa47888b5e28b06c0b9eb9",
+    "docs/content/cookbook/aligned_consensus.md": "cc824036b72ed0f0ba7e003122daac2d86a7a7bf898b9b07dcefb97b56ff23a3",
+    "docs/content/cookbook/rigid_consensus.md": "1d9043084113228a32ef0937dd8e5e7520908b6e510e1c3570ae458ca33c9acb",
+    "tests/test_consensus_support_review.py": "916131c90a3bd28a55adfc71cba6c347f59e1cc4b72bcc707b4e372e77369644",
+    "tests/test_reporting_protocol.py": "ff3f461f75cbbe02f46cf2c6ff187085c432abb5114f2e915227dba895783b60"
+  },
+  "administrative": {
+    "archive_controls": 18,
+    "index_and_whitespace_checks": true,
+    "original_audit_text_preserved": true,
+    "reporting_controls": 3,
+    "ruff_formatted_files": 328,
+    "three_cookbook_python_block_sets_preserved": true
+  },
+  "attempt_history": [
+    "Original real-provider charge probe: reference model has marginal supporter sets AB and AC but joint A; clique method emits two separately supported hypotheses. Known B repetition permits support three. Full probe identity unchanged.",
+    "One selected run: 126 cases pass in 160.40 seconds, including 28 new cross-method/multiplicity/shared-role/persistence cases. Zero failures/errors/skips; complete runtime/native/test/input/metadata identity unchanged. Existing independent oracles unchanged.",
+    "Three cookbook Python block sets unchanged; strict real linked 23-page Markdown/notebook closure renders with execution disabled. No new recipe/full-site execution.",
+    "Initial archive assembly refuses zero saved-model files because its one-off glob does not match pytest-truncated directory names. Original scripts/failures retained; corrected glob next refuses thirteen because it follows pytest current-directory symlink. Exclude that symlink parent and verify twelve distinct actual saved files. No scientific run or source change.",
+    "Reporting inventory/index changes occur after scientific completion; no executed source/new-test bytes changed. Original audit texts preserved as prefixes; current guidance has dated bounded results."
+  ],
+  "base_commit": "7ec284fafdf10a936ce93265caa80a5ae484ff43",
+  "date": "2026-11-04",
+  "documentation": {
+    "command": [
+      "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/tmp/phmt-consensus-review-20261104-vd1h3_79/docs_nb_closure",
+      "/tmp/phmt-consensus-review-20261104-vd1h3_79/docs_nb_closure_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "api/saved_results.md": "e90ea438d2fc6e6cc424404c87866f42d63d58e471c58710cd1a94d25c2d7eec",
+      "content/cookbook/aligned_cliques.md": "455846309dbd98be2a33b9d66688330b66a61e3676aa47888b5e28b06c0b9eb9",
+      "content/cookbook/aligned_consensus.md": "cc824036b72ed0f0ba7e003122daac2d86a7a7bf898b9b07dcefb97b56ff23a3",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/complex_based_modeler.md": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/excluded_volumes.md": "21ab9d5878b01b20f740171c0a8098e86382d6501baff1e0fa4b904ced0892ba",
+      "content/cookbook/interaction_composition.md": "a52259c6799c1fcd466314101762671478b677076a1ddfa6d470ff7d87c47a45",
+      "content/cookbook/modular_rigid_tools.md": "c628129f8ef3a96283ccf6566347fcf478938b8031b7d97564f8e278c642a516",
+      "content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc",
+      "content/cookbook/observed_est_template.md": "8865d922f90d71267a09f6d781cbbf74bc903ab500cb4ea0e874708f04148e94",
+      "content/cookbook/observed_receptor_coverage.md": "4214f7a1ef1269e5f83880b3247321be62820936220fa2db9f657eeecbd76457",
+      "content/cookbook/pharmacophore_curation.md": "9c4b4a126cb13962f724bd19a25a131f5b90d8fc530110f6038ab772d27ca3c7",
+      "content/cookbook/prepared_conformers.md": "285dcc48a966cb8e0c98c2e8e3ad2e20c08336eb5cf15c8424fa95835205a490",
+      "content/cookbook/prepared_eralpha_interface.md": "53c94eaac83bd0db81850c8c53afb45aaf21a4878633e8906e34da91b6740e4c",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/reference_ligand.md": "427cd17377db3a2dcc67e2428e64883c823326c897edb5c7d6695cc54c2f9234",
+      "content/cookbook/retrospective_validation.md": "98f47fef715ed89eb4ace0f88e4dbc2a546cd683b0ef49dcb1064240b484fa92",
+      "content/cookbook/rigid_consensus.md": "1d9043084113228a32ef0937dd8e5e7520908b6e510e1c3570ae458ca33c9acb",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3",
+      "content/user/constraint_semantics.md": "cc432bbc2007eccd1d2e20496158e2a2cd12532704a0822a0e0f84c38ed4fa93",
+      "content/validation/esr1_activity_pilot.md": "44e13e8ed159d16e67c9340d8fea0a991f5c732852e8ef0eef2252bdc1f2c022",
+      "content/validation/esr1_consensus_comparison.md": "097bb55117f9a8c369a3d594738bcd63523be4b2679942d9f589f8125a23a255"
+    },
+    "scope": "Strict isolated changed cookbook page with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim."
+  },
+  "full_evidence": {
+    "compressed_bytes": 364465,
+    "compressed_sha256": "cf23a6020b372525958cc9578b45a791b00feff13e04c2e8dbb362a39eb1367b",
+    "path": "consensus_support_review_20261104.json.gz",
+    "uncompressed_bytes": 2592593,
+    "uncompressed_sha256": "8d29227ac247bc6b98a009702d722ae83df2d8a49951f3c837f73cf592f48a26"
+  },
+  "issue": "uibcdf/pharmacophoremt#80",
+  "method_identifiers": [
+    "aligned_reference_consensus@1",
+    "aligned_maximal_clique_consensus@1",
+    "pivot_rigid_clique_consensus@1"
+  ],
+  "persisted_models": {
+    "test_consensus_support_and_mem0/reference.json": "c931c3bbab4077c630ff7f91247212a1624bdec49f8d2d056a41483323b092e2",
+    "test_consensus_support_and_mem1/cliques.json": "2b52a7f19a982df1b7b010bc50daae3dd6a296190691b37cdb1dec207165fe1d",
+    "test_consensus_support_and_mem10/cliques.yaml": "096a63e3fe4ced07ab9aa04101763f2d36e8368dcaf46c6889445e192c1c9bdd",
+    "test_consensus_support_and_mem11/rigid.yaml": "10921325c3011668321083612d1bdba2b819dc7f0429132e30ac4cf5a055a817",
+    "test_consensus_support_and_mem2/rigid.json": "708b9c487194ce6c13a9ee9ce78c2761e593102eb6773d2209464de7e63a878c",
+    "test_consensus_support_and_mem3/reference.yaml": "e87dfb83e79d3cd02f8a2483091a8a85323cb659767a3132f66f3508c3596f5b",
+    "test_consensus_support_and_mem4/cliques.yaml": "a5b3db9a3dd13d976a1516ebf7422cc3fe39a85d4d2ba9511781bdfc6a05b4ff",
+    "test_consensus_support_and_mem5/rigid.yaml": "e25547daaccf6fdd0fe1e3d38a3e95649098f019163d881b79117b3788d50265",
+    "test_consensus_support_and_mem6/reference.json": "981acd7b20de917b1f9eec67ebb50717ff9e2dd4a58af5d94705d9de1b43359d",
+    "test_consensus_support_and_mem7/cliques.json": "4514f8341dece03b02dacc671b3609d7f69bab43f54d9c66541a6c60e9a381c2",
+    "test_consensus_support_and_mem8/rigid.json": "35b32c99c09a538bac33873ff1ecc2a18d5fe5ef6513b469253f0a51e4113331",
+    "test_consensus_support_and_mem9/reference.yaml": "8f316039f9b5b96b4792ca7a473843245b5af9c16e704f4ed5d4fb85dd3c2cba"
+  },
+  "probe_identity_unchanged": true,
+  "probe_result": {
+    "cliques": [
+      {
+        "sites": [
+          {
+            "essential": true,
+            "features": [
+              "positive charge"
+            ],
+            "members": [
+              "a",
+              "b"
+            ],
+            "support_count": 2,
+            "weight": 1.0
+          }
+        ],
+        "statuses": [
+          "matched",
+          "matched",
+          "not_matched"
+        ]
+      },
+      {
+        "sites": [
+          {
+            "essential": true,
+            "features": [
+              "negative charge"
+            ],
+            "members": [
+              "a",
+              "c"
+            ],
+            "support_count": 2,
+            "weight": 1.0
+          }
+        ],
+        "statuses": [
+          "matched",
+          "not_matched",
+          "matched"
+        ]
+      }
+    ],
+    "declaration": "Analytical declared charge cohort. b-repeat intentionally reuses the exact same prepared source; no chemical identity inference or biological claim.",
+    "reference": {
+      "sites": [
+        {
+          "essential": true,
+          "features": [
+            "positive charge"
+          ],
+          "members": [
+            "a",
+            "b"
+          ],
+          "support_count": 2,
+          "weight": 1.0
+        },
+        {
+          "essential": true,
+          "features": [
+            "negative charge"
+          ],
+          "members": [
+            "a",
+            "c"
+          ],
+          "support_count": 2,
+          "weight": 1.0
+        }
+      ],
+      "statuses": [
+        "matched",
+        "not_matched",
+        "not_matched"
+      ]
+    },
+    "repeated_cliques": [
+      {
+        "sites": [
+          {
+            "essential": true,
+            "features": [
+              "positive charge"
+            ],
+            "members": [
+              "a",
+              "b",
+              "b-repeat"
+            ],
+            "support_count": 3,
+            "weight": 1.0
+          }
+        ],
+        "statuses": [
+          "matched",
+          "matched",
+          "not_matched"
+        ]
+      }
+    ],
+    "repeated_reference": {
+      "sites": [
+        {
+          "essential": true,
+          "features": [
+            "positive charge"
+          ],
+          "members": [
+            "a",
+            "b",
+            "b-repeat"
+          ],
+          "support_count": 3,
+          "weight": 1.0
+        }
+      ],
+      "statuses": [
+        "matched",
+        "matched",
+        "not_matched"
+      ]
+    }
+  },
+  "remaining_work": "Audit 8\u20139/13 remains partial for real chemical-series balancing and predictive complexity. Next define a bounded development-only sensitivity/ablation protocol, preserving holdout isolation. #66/#74/MolSysMT #215/#6 and installed/public/hosted gates stay separate.",
+  "run": {
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-p",
+      "no:cacheprovider",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--basetemp",
+      "/tmp/phmt-consensus-review-20261104-vd1h3_79/review-temp",
+      "--junitxml=/tmp/phmt-consensus-review-20261104-vd1h3_79/review.xml",
+      "tests/test_consensus_support_review.py",
+      "tests/test_aligned_consensus.py",
+      "tests/test_aligned_cliques.py",
+      "tests/test_rigid_consensus.py",
+      "tests/test_rigid_strategy_comparison.py",
+      "tests/test_modular_rigid_tools.py",
+      "tests/test_prepared_consensus_workflow.py"
+    ],
+    "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "errors": 0,
+    "exit_code": 0,
+    "expected_exit_code": 0,
+    "failures": 0,
+    "full_identity_unchanged": true,
+    "items": 126,
+    "new_cases": 28,
+    "skipped": 0
+  },
+  "runtime_helpers_inputs_workflows_resources_unchanged": true,
+  "schema": "pharmacophoremt.consensus-support-review@1",
+  "scientific_disposition": "No algorithm/default/weighting change warranted. Different declared marginal/joint/per-layout support contracts agree with original probe and independent oracles. Deliberate input repetition changes eligibility and feature mean, not initial site weight; it is not molecular uniqueness or series validation.",
+  "scope": "Linux/Python 3.14.7 source analytical cross-method review with extracted public ArgDigest 0.17.0 and inherited controlled scientific dependencies; not full-suite, clean installed/public/all-platform, biological predictive or performance qualification.",
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt-consensus-review-20261104-vd1h3_79",
+    "review": "2026-11-18"
+  },
+  "unchanged_controls": {
+    "phmt_test_support/absence_inputs.py": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+    "tests/test_aligned_cliques.py": "a18d24655f8b043984754c8f0bc3c79475217d2591d0af6258fcfb2599e2345d",
+    "tests/test_aligned_consensus.py": "8e4a4354eb778bbb7f90010171623147e1eec990c8c829a46d130ac3172faed8",
+    "tests/test_modular_rigid_tools.py": "7b9439207c32efa6e6b83725020df5b1a889a84750ee2d42f9f7b1d78a98756a",
+    "tests/test_prepared_consensus_workflow.py": "b1a513985364a66555d4816f6b9278898073723f986c68d1cf7652a405364a28",
+    "tests/test_rigid_consensus.py": "2003b2a2b0eb54d60cde005c74721b0fd17d78384d3af28e10115f851e7ad9a2",
+    "tests/test_rigid_strategy_comparison.py": "e1d6f1e289869ef6683e560602f212eb72439a8754d3942ac451209b8aaa6a61"
+  },
+  "unchanged_producers": {
+    "pharmacophoremt/modeler/aligned_cliques.py": "a2e9af4672c168a0469705f5cfecc0772a7a5c8b6aa23807f1b9e8e28fa16cbd",
+    "pharmacophoremt/modeler/aligned_consensus.py": "169703f576c7931128cc91284dfcd64e5049870a22eb1367a14e28fe80194922",
+    "pharmacophoremt/modeler/rigid_consensus.py": "fd72cdc2aae7dbbbc71b90fcbfa9c3b1752afc190386b049bdb997150bafade2",
+    "pharmacophoremt/validation/rigid_consensus.py": "79c0113a9a32a9017dce17b1daa9a2c90844a48327a32ec6bb999d5d009a30e1"
+  }
+}

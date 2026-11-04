@@ -97,6 +97,15 @@ promise of final query acceptance or affinity. Sites start essential with unit
 weight. Curate these choices before constructing an evaluator. Frequency alone
 does not establish a binding requirement.
 
+Here `min_support` applies separately to each site. If site X has supporters
+A/B and site Y has A/C, both can be emitted with support two even though only
+A supports the whole query. Use [aligned clique hypotheses](aligned_cliques.md)
+when the hypothesis must have a common supporting population. Repeating a known
+prepared source under a new ID changes counts and can shift site means; the
+software does not deduplicate chemical identities or balance chemical series.
+Molecular comparison/grouping belongs to MolSysMT-backed preparation and the
+study protocol. Keep those decisions separate from pharmacophore weights.
+
 ## Reuse the intermediate tools
 
 `get_aligned_feature_matches()` works directly on two native `get_features()`

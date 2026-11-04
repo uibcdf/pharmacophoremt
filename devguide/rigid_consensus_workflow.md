@@ -204,3 +204,16 @@ installed/platform/hosted qualification. #23/#10/#9/#82 retain their scopes; #41
 public/legacy receiving stays partial, review 2026-11-11. Next #27 independently
 accepts the comparison driver and objective counterexample. Owned resources remain
 with LMMV/dprada for review 2026-11-17.
+
+## Cross-method support review — 2026-11-04
+
+[#80](https://github.com/uibcdf/pharmacophoremt/issues/80) and the
+[support/method matrix](consensus_support_review.md) qualify marginal versus joint
+support, deliberate input multiplicity and shared typed-role atoms across native
+methods. 126 selected cases pass (28 new); existing independent oracles remain
+unchanged. Declared ID uniqueness is not chemical uniqueness. Repetition can
+change frequency, means and eligibility without increasing unit site weights.
+This is a supported no-runtime-change conclusion, with original results and
+identities in the [receipt](evidence/consensus_support_review_20261104_summary.json).
+Real series balancing and predictive evidence remain outside this analytical
+qualification. Molecular preparation/comparison/grouping remains MolSysMT-owned.

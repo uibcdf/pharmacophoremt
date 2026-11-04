@@ -1,5 +1,34 @@
 # Development Checkpoint
 
+## Consensus support and redundancy reviewed — 2026-11-04
+
+[#80](https://github.com/uibcdf/pharmacophoremt/issues/80) qualifies the bounded
+native comparison: [support/method matrix](consensus_support_review.md) and
+[original evidence](evidence/consensus_support_review_20261104_summary.json).
+**126 selected cases pass in 160.40 s, including 28 new controls.** The original
+probe and selected run both retain stable source/native/test/input/metadata
+identities. Existing independent assignment, clique, package and rigid oracles
+remain unchanged and green. No runtime/helper/provider/input,
+scientific method, weighting or dependency changes are needed.
+
+The reference method requires support per site; clique hypotheses require the
+intersection across all their sites, and rigid consensus applies that condition
+within each accepted pivot layout. Repeating a known source under a new ID can
+change eligibility and the unweighted feature mean without changing site weight.
+Shared donor/acceptor atoms remain valid distinct typed occurrences. Native
+JSON/YAML retain these member/support/initial-constraint decisions under changed
+unit policies. Existing counts of equivalent rigid proposals are preserved.
+
+Audit 8–9/13 remains **partial** for real chemical-series redundancy, development
+cohort balancing, model complexity and empirical importance. **Next:** define a
+bounded development-only sensitivity/ablation protocol for emitted radius,
+matching tolerances and curated constraints, starting with analytical controls.
+Keep reserved evaluation data unused; preparation/identity/grouping stays in
+MolSysMT. Do not add a local molecular deduplication or grouping routine.
+#66, #74/MolSysMT #215, broader #6 and installed/public/hosted gates remain separate.
+Addon/new release defer; public version remains 0.4.0. Earlier dated next steps
+below remain historical.
+
 ## Native constraint semantics qualified — 2026-11-04
 
 [#79](https://github.com/uibcdf/pharmacophoremt/issues/79) records a bounded

@@ -140,3 +140,13 @@ roles is permitted; donor-H identity was already retained. 368 focused controls
 pass, including 40 new semantics/provenance/persistence cases. Result criteria
 are additive; the assignment algorithm, defaults and molecular provider are
 unchanged. Audit 8–9 remains partial outside this bounded native slice.
+
+## Consensus support/redundancy receiving — 2026-11-04
+
+[#80 review](consensus_support_review.md) compares native reference, aligned-clique
+and pivot-rigid methods with 126 selected passing controls (28 new). Reference
+support is per site; clique/rigid hypotheses require common supporters, with rigid
+scope per layout. Known input repetition changes counts/means, not unit weights.
+No runtime/helper/provider or dependency source changes. Existing independent
+oracles stay green; broader audit 8–9/13 and biological balancing remain partial.
+Next define bounded development-only sensitivity/ablation (12) without holdout use.

@@ -282,3 +282,26 @@ Items 8–9 stay partial outside this native slice; no full-suite, installed,
 all-platform or predictive promotion. Next review consensus support and
 redundancy (8/13) with existing independent oracles, then parameter/constraint
 sensitivity (12). #66, #74/MolSysMT #215 and broader #6 retain independent gates.
+
+## Progress — 2026-11-04: consensus support and controlled redundancy (#80)
+
+[Method/support matrix](consensus_support_review.md) and
+[receipt](evidence/consensus_support_review_20261104_summary.json) retain the
+supported no-algorithm-change conclusion: 126 selected cases pass, including
+28 new cross-method/support/multiplicity/persistence controls. Independent
+injection, clique, package and rigid oracles stay unchanged and green. Both
+original probe and selected runtime/native/test/input/metadata identities pass.
+
+Marginal site support in reference consensus does not guarantee minimum common
+support across the whole query. Clique packages enforce joint intersection;
+rigid layouts reuse that rule. A known repeated source under a new ID can affect
+eligibility, frequency and site mean while weights remain one. Native metadata
+retains member/constraint evidence; shared atoms across distinct roles are not
+reused typed occurrences. No molecular, provider, dependency or runtime change.
+
+Items 8–9/13 remain partial beyond this analytical native slice. Real series
+balancing, predictive complexity and binding-importance claims require a defined
+development cohort/protocol and molecular-provider preparation. Next define
+bounded development-only parameter/constraint sensitivity (12), keeping the
+reserved holdout unused. #66, #74/MolSysMT #215 and installed/hosted gates retain
+independent scope. Original audit text remains unchanged before this addendum.

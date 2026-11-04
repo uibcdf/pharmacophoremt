@@ -115,6 +115,13 @@ All accepted placements remain alternatives, including equivalent geometry from
 different seeds. No unit-coverage early stop or hidden geometric deduplication is
 applied. Compare proposal/fit/layout counts before drawing performance conclusions.
 
+The common-support condition applies independently within each accepted layout.
+Different models can reuse the same source evidence; their count is not a count
+of independent observations. Support uses declared ligand IDs, without chemical
+deduplication or series balancing. Distinct typed feature occurrences may share
+atoms. Initial site weights remain one regardless of support frequency; curate
+them explicitly before interpreting a model scientifically.
+
 ## Inputs, accounting and limits
 
 The [modular recipe](modular_rigid_tools.md) exposes cached query construction,

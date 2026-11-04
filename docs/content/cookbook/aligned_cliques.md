@@ -146,6 +146,13 @@ screening: support is correspondence frequency, not affinity, and a smaller
 radius can reject a ligand that contributed to discovery. Alternative hypotheses
 are not merged or automatically ranked as binding models.
 
+Joint support counts declared ligand IDs. Repeating a prepared source under a
+new ID can make a previously unsupported site qualify and move its unweighted
+center; its initial site weight remains one. Chemical uniqueness and series
+balance require explicit preparation/study decisions. Occurrence uniqueness
+concerns typed features: distinct donor/acceptor roles may share atoms, as
+explained in [constraint semantics](../user/constraint_semantics.md).
+
 ## Completion, budgets and references
 
 `max_graph_nodes` defaults to 64 input occurrences, `max_cliques` to 1000
