@@ -1,5 +1,24 @@
 # Strategic Roadmap
 
+## Experimental carbonyl source receiving delivered — 2026-11-05
+
+[#93](https://github.com/uibcdf/pharmacophoremt/issues/93) completes the unchanged
+12-model/72-primary/24-recovery declaration with **37 passing selected controls**
+(29 scientific/receiving, eight declaration). [Case](../docs/content/validation/carbonyl_acceptor_receiving.md)
+and [original evidence](evidence/carbonyl_acceptor_receiving_20261105_summary.json)
+retain independent axes/query/candidate/assignment checks, source/role/repeated-
+position mappings, units, native recovery, custody and actual model/method credit.
+Unsupported water and undefined carbonyl remain unscored. Initial unit-map API
+adapter failures are preserved; no scientific plan or setting changes.
+
+Next [#94](https://github.com/uibcdf/pharmacophoremt/issues/94) designs/qualifies an
+explicit public cached-carbonyl profile using the existing generation tools.
+All molecular geometry/inspection stays in MolSysMT; current production/default
+features/profile/providers/pins/dependencies/release remain unchanged. One
+aldehyde analytical source control is not broad chemistry, energetic/electronic,
+biological, performance or installed/public qualification. Existing scientific/
+provider/data/delivery gates and addon/release disposition remain separate.
+
 ## Experimental acceptor receiving prespecified — 2026-11-05
 
 [#92](https://github.com/uibcdf/pharmacophoremt/issues/92) binds the MolSysMT #375

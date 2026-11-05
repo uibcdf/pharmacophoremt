@@ -33,3 +33,21 @@ Reanalysis does not execute molecular measurements. The
 [case](../../../docs/content/validation/tyr_cardinality.md) distinguishes this
 native separated-target control from overlapping-site one-to-one enforcement,
 which retains its existing guard in `tests/test_pose_evaluation.py`.
+
+## Carbonyl acceptor source receiving
+
+```bash
+python -m pytest devtools/tests/scientific/test_carbonyl_acceptor_receiving.py tests/test_carbonyl_acceptor_plan.py --receptor=llm
+```
+
+The #93 selection runs the unchanged main CLI once (12 models, 72 primary and
+24 recovery evaluations) plus two separate optional-attribution simulations
+(each two models, 12 primary/four recovery calls). Receiving refusals operate on
+the saved native payload without rerunning the molecular provider. Reexecute
+when case/input/provider, receiving/projection/matching/persistence changes.
+`PHMT_CARBONYL_RECEIVING_RESULT` selects read-only reanalysis of original JSON
+with its adjacent `.receipt.json`; result/unchanged-driver/frozen-plan hashes
+must agree. This is not molecular reexecution. Default tests retain cheap
+declaration and compressed-evidence controls. See the
+[case](../../../docs/content/validation/carbonyl_acceptor_receiving.md) for original
+attempts, scientific limits and the separate public-profile proposal.

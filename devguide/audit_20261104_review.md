@@ -505,3 +505,27 @@ controls. Molecular representations/inspection/geometry/transforms stay in
 MolSysMT; runtime/default feature/profile/provider/dependency/release and prior
 #89–#91 scientific evidence remain unchanged. Audit12/15 and the existing data,
 provider/refinement/pockets and hosted/installed/public gates remain partial.
+
+
+## Experimental carbonyl source receiving measured — 2026-11-05
+
+[#93](https://github.com/uibcdf/pharmacophoremt/issues/93) executes the unchanged
+#92 declaration: 12 models, 72 primary/24 recovery evaluations, two positive
+provider calls and four unsupported/undefined source queries without scores.
+All37 selected controls pass (29 scientific/receiving, eight declaration),
+including independent source/query/candidate/assignment oracles, sparse repeated-
+position/source/role mappings, units, custody, native recovery and actual credit.
+[Case](../docs/content/validation/carbonyl_acceptor_receiving.md) and
+[receipt](evidence/carbonyl_acceptor_receiving_20261105_summary.json) preserve the
+initial unit-map API adapter failure before directions/models/poses and its
+same-unit conversion fix. Both full identity phases remain stable; original
+scientific plan/protocol/answers remain unchanged. Optional absence/failure
+simulations each retain their own two-model/12-primary/four-recovery subset.
+
+Audit12/15 stays partial beyond one-aldehyde analytical receiving. Separate lobes
+are alternative one-site donor hypotheses; unsupported water and undefined
+carbonyl remain unscored. This is not broader chemistry, electronic/energetic,
+biological, target-breadth, performance or installed/public qualification.
+All molecular operations remain MolSysMT-owned. No production/default/profile/
+provider/prefix/pin/dependency/release change. Next#94 designs/qualifies explicit
+public cached-carbonyl generation; existing provider/data/delivery gates persist.

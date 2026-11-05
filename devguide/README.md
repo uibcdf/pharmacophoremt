@@ -36,7 +36,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #92 reviews the existing MolSysMT #375 experimental source contract and freezes carbonyl acceptor receiving, with eight passing offline guards and zero new molecular direction/model/pose evaluations. Next #93 executes the unchanged planned 12 models/72 primary/24 recovery evaluations through existing explicit projections and provider-only molecular operations. No public/default acceptor adoption, dependency/provider/release change or biological claim; wider scientific/data/hosted/installed/public gates stay separate.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #93 qualifies experimental carbonyl acceptor source receiving (12 models/72 primary/24 recovery evaluations, 37 passing selected controls). Independent geometry/assignment, sparse correspondence, native recovery, custody, units and actual credit pass; original unit-map adapter failure remains. Next #94 designs and qualifies explicit public cached-carbonyl generation, preserving MolSysMT ownership and separate alternatives. Current production/default profiles/providers/dependencies/release remain unchanged; wider scientific/data/hosted/installed/public gates stay separate.
 
 ## Classical Workflow Specification
 

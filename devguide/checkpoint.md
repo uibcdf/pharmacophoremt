@@ -1,5 +1,58 @@
 # Development Checkpoint
 
+## Carbonyl acceptor source receiving measured — 2026-11-05
+
+[#93](https://github.com/uibcdf/pharmacophoremt/issues/93) executes #92's unchanged
+[declaration](carbonyl_acceptor_receiving_protocol.md): **12 models, 72 primary
+and 24 JSON/YAML recovery evaluations** complete. Two positive provider calls
+retain source axis [0,1,0]; four unsupported/undefined source queries yield no
+usable model or score. All **37 selected controls pass**: 29 scientific/receiving
+and eight declaration. [Case](../docs/content/validation/carbonyl_acceptor_receiving.md)
+and [original receipt](evidence/carbonyl_acceptor_receiving_20261105_summary.json)
+retain actual CLI argv, full outputs, native shapes/dtypes/quantities, source/
+provider/helper/test/input/metadata identities, custody and actual model/method
+credit. Two optional simulations each separately complete two models/12 primary/
+four recovery calls; they are not fresh uninstalled-provider qualification.
+
+Each one-site hypothesis accepts only its aligned lobe witness. Reversed and
+displaced controls reject. Water has a defined observed donor but an unsupported
+acceptor (status0); collinear carbonyl has undefined geometry (status2). Neither
+acceptor receives a substituted direction or pose score. Independent original-
+coordinate axes and query/candidate/assignment oracles agree for both physical
+policies and repeated source positions. Source coordinates, chemistry/history,
+analyses, caches, inventories, candidates and application units remain intact.
+
+The initial 37-case selection has nine passes, two failures and 26 fixture errors:
+the new driver passes a descriptive unit map to a PyUnitWizard API requiring a
+list. It stops before directions/models/poses and has no full result. Convert the
+same map values to the required list; preserve original code/log/XML. The frozen
+plan/protocol/scientific choices are unchanged. Both full identity phases remain
+stable; the corrected 37-case run is the original completed molecular measurement.
+
+All molecular representations/construction/selection/inspection/recognition/
+geometry/transforms remain public MolSysMT. Only unshipped case orchestration,
+guards and guidance/evidence change. The production/default position-only
+acceptor inventory and public donor/aromatic profile, provider/prefix/pin/
+dependencies/release and #89–#92 scientific declarations/evidence remain intact.
+Actual controlled provider is `0faf1584d05ac47ddcebfc20d9c9978b7f4f230e` with public
+ArgDigest 0.17.0 extraction; source evidence does not establish installed/public
+or platform delivery. The clean sibling MolSysMT main is 110 commits behind at
+the bounded fetch; preserve it without pull/checkout/edit.
+
+**Next: [#94](https://github.com/uibcdf/pharmacophoremt/issues/94)** designs and
+qualifies an explicitly chosen public cached-carbonyl generation contract.
+Keep provider direction caches separate from molecular inspection and the current
+default feature inventory, preserve separate alternatives/budget semantics,
+declare target donor orientation and extend the existing argument/diagnostic/
+quantity/attribution contracts. Do not promote this hardcoded case adapter.
+One aldehyde control does not validate other carbonyl/N environments, PBC,
+environmental H, energetic/electronic accuracy, biological discrimination,
+target breadth or performance. Audit12/15, #375/#323, optional pockets,
+#66/#82/#74/#215 and #9/#23 retain their gates. Addon/release remain deferred.
+
+Owner LMMV/dprada, capsule `build/phmt-carbonyl-receiving-20261105-60xuz5ld`,
+review 2026-11-19 or source/scientific change. No continuing process is required.
+
 ## Carbonyl acceptor receiving declared — 2026-11-05
 
 [#92](https://github.com/uibcdf/pharmacophoremt/issues/92) reviews the existing

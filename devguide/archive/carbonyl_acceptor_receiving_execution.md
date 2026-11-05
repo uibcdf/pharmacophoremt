@@ -1,12 +1,12 @@
 ---
 summary: Execute the frozen experimental carbonyl acceptor receiving matrix.
 issue: uibcdf/pharmacophoremt#93
-status: open
+status: resolved
 opened: 2026-11-05
-closed:
-verification: asserted
+closed: 2026-11-05
+verification: measured
 area: [modeling, validation]
-guard:
+guard: devtools/tests/scientific/test_carbonyl_acceptor_receiving.py
 normative: devguide/carbonyl_acceptor_receiving_protocol.md
 blocked_by: []
 supersedes: []
@@ -36,3 +36,26 @@ chemistry/PBC, environmental H #323, pockets, #66/#82/#74/#215 and #9/#23 remain
 independent. The provider's existing experimental admission supports controlled
 source receiving; an unanswered broader public-delivery request is not a reason
 to invent a local molecular tool or silently claim a delivered public minimum.
+
+## Resolution — 2026-11-05
+
+The unchanged matrix completes: 12 models, 72 primary/24 recovery evaluations,
+two positive provider calls and four unsupported/undefined source queries with
+no model or score. All 37 selected controls pass (29 scientific/receiving,
+eight declaration), including independent source-coordinate/query/candidate
+oracles, separate lobes, source/role/repeated-position correspondence, native
+roundtrips, units, custody and actual attribution. Both optional-provider
+simulations separately pass with two models/12 primary/four recovery calls each.
+
+Initial selection: nine passes, two failures/26 fixture errors from passing the
+descriptive unit map to a list-based PyUnitWizard API. It stops before directions,
+models or poses and emits no full result. Retain code/log/XML and fix only the
+adapter's unit-map-to-list conversion; scientific plan/settings remain unchanged.
+Both complete before/after identity phases stay stable.
+
+No production/default/profile/provider/prefix/pin/dependency/release change.
+All molecular operations remain public MolSysMT. Existing #89–#92 scientific
+inputs/protocols/evidence remain intact. The case and original receipt delimit
+one neutral aldehyde/source experiment, not broader chemical, electronic,
+energetic, biological or installed/public qualification. #94 owns subsequent
+public cached-acceptor contract design and qualification.

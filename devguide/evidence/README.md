@@ -1,5 +1,19 @@
 # Local scientific evidence
 
+## Carbonyl acceptor source receiving — 2026-11-05
+
+[Receipt](carbonyl_acceptor_receiving_20261105_summary.json) links untouched main
+scientific results and original source/log/supplemental archives. 12 models,
+72 primary/24 recovery calls complete; 37 selected controls pass. Initial unit-map
+API adapter failures stop before directions/models/poses and remain recorded.
+The plan/protocol/scientific settings and prior #89–#92 evidence stay unchanged.
+Source/native/helper/test/input/metadata identities, custody, physical-policy/
+repeated-frame agreement, native recovery and actual provider/model credit pass.
+The [case](../../docs/content/validation/carbonyl_acceptor_receiving.md) distinguishes
+separate lobe hypotheses, unsupported/undefined/no-score outcomes and one-aldehyde
+analytical limits. Public profile work is #94; no production/provider/release,
+biological/energetic/electronic/installed/public qualification follows.
+
 ## Carbonyl acceptor receiving declaration — 2026-11-05
 
 [Receipt](carbonyl_acceptor_plan_20261105_summary.json) retains exact provider
