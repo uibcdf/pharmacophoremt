@@ -1,0 +1,2131 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "b4d94d25c091bd3ee1dcf360cd66c2e31663df0c8b045844d9308490722d3540",
+    "devguide/archive/README.md": "845023ad361da67656e5b28fc332ecfc15194a92d5b2861285f75d8b5f6e0290",
+    "devguide/archive/installed_receptor_study_support.md": "667867fb179bbf8fc4c8591b645013ae95c497985d5b7675939b17d20b1b821b",
+    "devguide/checkpoint.md": "327933a24365989d38d9a5abbd78626e3fcc28c6df1c9fea196dd03bd9b4deb7",
+    "devguide/evidence/README.md": "a131434323935c4a7380bd0311ba983e69e0319619f660ea08278b9b34cc6bac",
+    "devguide/native_io_admission_readiness.md": "d7a221a93195d50cdfb5e9985f911836e5561066fea17e4f0653fc27ad08216c",
+    "devguide/release_0_5_0_readiness.md": "40f0dda47708ee3f53d32275a318379f0e4391b39da0b67de85e11dabdda0914",
+    "devguide/release_0_5_0_review.md": "de5f2562160dd0f3cec8029067a6a8d98c95bd118e5a892cfe0edf32673c367f",
+    "devguide/roadmap.md": "66390b1dd5746b81d640f2107a00f79c0f287df7e624298bfdab3359643db3cd",
+    "devtools/conda-build/README.md": "e4242a540ade34e99b18cf302361e8ddca08b01e2d41d76725902fe8fcfaa2e1",
+    "devtools/conda-build/resources.toml": "4045588f2e464a70b81bc442b34dcb3ab8b164b9411b58fd72b9fd5432fa28dd",
+    "devtools/tests/test_distribution_contract.py": "35c00740a1f49c27d36243e6bf1871b16ffaddf705770c1ff35a6531028eb98a",
+    "docs/content/about/index.md": "ad64ebf7ff8364345c9191edb2f5a673b8bd9f616576e9a42d3b1f000cbb5170",
+    "docs/content/about/release_notes.md": "7a5ddeae9d1ffc847ad07f78db82dc13e619c77782f9823e0687a5c95c3e8897",
+    "phmt_test_support/README.md": "cc63192cb78c5947373382ac71692839511c61e3544463c298ce8f98923ebe30",
+    "tests/test_reporting_protocol.py": "2ea179b660c845058a75946f6e3a193cbf35dce3f400a2cd7705e24ed8bf7a90"
+  },
+  "administrative": [
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "name": "dependency_routes"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "index"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "name": "reporting"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "name": "archive_reader"
+    },
+    {
+      "command": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_distribution_contract.py"
+      ],
+      "exit_code": 0,
+      "name": "distribution"
+    },
+    {
+      "command": [
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "ruff"
+    },
+    {
+      "command": [
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "ruff_format"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "diff"
+    }
+  ],
+  "baseline_hosted": {
+    "ci": {
+      "normal_push_detector": "inapplicable/skipped",
+      "reporting": "success",
+      "run_id": 42127815112,
+      "source_science_cells_queued": 8,
+      "status": "queued"
+    },
+    "conda_governance": {
+      "conclusion": "success",
+      "run_id": 42127815644
+    },
+    "policy": {
+      "conclusion": "success",
+      "run_id": 42127815356
+    },
+    "receptor": "published gh-run-receptor1.4.0; actual captured metadata bundles retained; not evidence for a later source",
+    "source": "3d26b28ae072c106784299ee96d3a50f0edebc91"
+  },
+  "command_provenance": {
+    "guard": "Exact unittest command reconstructed from the actual shell invocation and retained failure/success output; original guard source retained.",
+    "initial_and_repaired_guard": [
+      "python",
+      "-B",
+      "-m",
+      "unittest",
+      "devtools.tests.test_distribution_contract.TestDistributionContract.test_receptor_study_helpers_and_frozen_plans_are_privately_staged"
+    ],
+    "probe": "Actual safe-path child argv, pytest collection arguments, source and real origins retained; explicit no scientific body execution."
+  },
+  "date": "2026-11-05",
+  "documentation": {
+    "asset_count": 2,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/docs_nb_closure_refresh",
+      "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/docs_nb_closure_refresh_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "README.md": "5fc8dbe3e6785a32a004c8b1b03cfcf70305faec53bba03b39f8b9435dd7e4f4",
+      "_static/LogoUIBCDF_vertical.png": "87a844eab0a393f95f532c41c04a461aae4a9cf177ba279d47fefd668e8f4503",
+      "_static/LogotipoIxtlilton.png": "88f968acae56349274438b6a6225fa40232cdbe3f9e8e5512d32d8a40ef8e19f",
+      "api/developers/api_developers.rst": "69cbde4002d51cbbfa165b8a17cd28ad1963e713b44cae8558d2149e6befa06f",
+      "api/index.md": "22b43118a49151e375f7ac779bd35d43d1562f6c11dfdb5c92b1ed3d64edfbd0",
+      "api/saved_results.md": "e90ea438d2fc6e6cc424404c87866f42d63d58e471c58710cd1a94d25c2d7eec",
+      "api/users/api_users.rst": "08399e8b4d5803b23560554a5155282c3b10d201f001711b6d0913d0bac7d0e8",
+      "content/about/citation.md": "e3375aacec236b40092a61cbfed4abd7f124e47c7ce9019858fe04134655704a",
+      "content/about/index.md": "ad64ebf7ff8364345c9191edb2f5a673b8bd9f616576e9a42d3b1f000cbb5170",
+      "content/about/installation.md": "69d9fa76974f2714b1deffc3fabe8a50e83f879784c2e06165c2ee28164fd87f",
+      "content/about/release_notes.md": "7a5ddeae9d1ffc847ad07f78db82dc13e619c77782f9823e0687a5c95c3e8897",
+      "content/about/what.md": "7f2232eb22c5dab4437fd5292fc067cbca6eaa07e9398cc3a82e78894f7b9893",
+      "content/about/who.md": "94b058d1706af0a7ad6591992a4511177494219e996785b339b03fb664809588",
+      "content/cookbook/aligned_cliques.md": "455846309dbd98be2a33b9d66688330b66a61e3676aa47888b5e28b06c0b9eb9",
+      "content/cookbook/aligned_consensus.md": "cc824036b72ed0f0ba7e003122daac2d86a7a7bf898b9b07dcefb97b56ff23a3",
+      "content/cookbook/aromatic_interactions.md": "997782885e6ec43488240f62759af0455254bf8420a2373c997b0afd4dd20caf",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/ccd_interactions.md": "2d9637e4313daf6d0bd00fbd354081f963fbe4f981cdf3debe3e269f09d6f272",
+      "content/cookbook/complex_based_modeler.md": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/excluded_volumes.md": "21ab9d5878b01b20f740171c0a8098e86382d6501baff1e0fa4b904ced0892ba",
+      "content/cookbook/index.md": "fc40676feacc6e6e808fe3d79e078bc80a5e2b173393182716be10b6d6ed8826",
+      "content/cookbook/interaction_composition.md": "a52259c6799c1fcd466314101762671478b677076a1ddfa6d470ff7d87c47a45",
+      "content/cookbook/ionic_interactions.md": "cd4aa4cfdb3503720e061145c4bcb8b77e0cfd71803921c64a1a9f3cfdd46115",
+      "content/cookbook/ligand_based_modeler.md": "d4860211f592e5bcea3819b449a683e4e9f78dca66f7d391f7fa8e5da5ee4e7b",
+      "content/cookbook/modular_rigid_tools.md": "c628129f8ef3a96283ccf6566347fcf478938b8031b7d97564f8e278c642a516",
+      "content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc",
+      "content/cookbook/observed_est_template.md": "8865d922f90d71267a09f6d781cbbf74bc903ab500cb4ea0e874708f04148e94",
+      "content/cookbook/observed_interactions.md": "7cb1e668d53b6e0d9f2eb4df69375b653c327f40b8c5c23d4258baf092d72ead",
+      "content/cookbook/observed_receptor_coverage.md": "4214f7a1ef1269e5f83880b3247321be62820936220fa2db9f657eeecbd76457",
+      "content/cookbook/pharmacophore_curation.md": "9c4b4a126cb13962f724bd19a25a131f5b90d8fc530110f6038ab772d27ca3c7",
+      "content/cookbook/prepared_ccd_ligands.md": "db8af2d1ae26b822e2f8a63e86a4fe5cbb3081a4511d2dcb685e0ef2ff8baa58",
+      "content/cookbook/prepared_conformers.md": "285dcc48a966cb8e0c98c2e8e3ad2e20c08336eb5cf15c8424fa95835205a490",
+      "content/cookbook/prepared_consensus_workflow.md": "5a4c5ae9c9b1af37ce1f3cf57a4314f0493f72de3b0b54143489a27dab969a8c",
+      "content/cookbook/prepared_eralpha_interface.md": "53c94eaac83bd0db81850c8c53afb45aaf21a4878633e8906e34da91b6740e4c",
+      "content/cookbook/prepared_receptor_workflow.md": "987d7c375b1ab2c688304413a018f70c4146ac307bd3418b6f1c416f567a6356",
+      "content/cookbook/prepared_search_workflow.md": "205686f6283ebcdc28a1f7b79d8a95b5810ce1e1cf1b5b1948a2cf9c50dd5a46",
+      "content/cookbook/prepared_workflow.md": "2b7f61d5d85c064091d2cee3a442c0a499d49bf68b3a11738780712c861a1c35",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/reference_ligand.md": "427cd17377db3a2dcc67e2428e64883c823326c897edb5c7d6695cc54c2f9234",
+      "content/cookbook/retrospective_validation.md": "98f47fef715ed89eb4ace0f88e4dbc2a546cd683b0ef49dcb1064240b484fa92",
+      "content/cookbook/rigid_consensus.md": "1d9043084113228a32ef0937dd8e5e7520908b6e510e1c3570ae458ca33c9acb",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3",
+      "content/cookbook/structure_based_modeler.md": "fbb71a39fa0b6f4a29e47cd368ae4b410f653c4a744150f078423fa917c92b08",
+      "content/cookbook/viewer_addon.md": "3ccc78d81c6fbb2d6e836e2fd2c5833d7837ddeec59842748e0059f5131eee29",
+      "content/developer/index.md": "9eab09bf979d9e81a42f8c3bd102229f0647a3f21ef7620e7597e4dc3de3a34b",
+      "content/showcase/index.md": "d768346c39bc561a0ac1480733c6ce21295f0bb7e2f2019a2600b8ec3d5a8d7b",
+      "content/user/constraint_semantics.md": "c827de0e07a804d8eae9358d216988a5c16f6cf559f4ab61933f537fe813bd35",
+      "content/user/index.md": "755040482bdcbff55c317cbb29792a79d8cb21a6fa3aa2763b46805ec2ba7784",
+      "content/validation/carbonyl_acceptor_receiving.md": "4e89c622b70bb76ddf3c60c04d5abdba910b32c7fc813f3ddcf2c0016454b0f6",
+      "content/validation/esr1_activity_pilot.md": "44e13e8ed159d16e67c9340d8fea0a991f5c732852e8ef0eef2252bdc1f2c022",
+      "content/validation/esr1_consensus_comparison.md": "097bb55117f9a8c369a3d594738bcd63523be4b2679942d9f589f8125a23a255",
+      "content/validation/index.md": "55e43343f78724be515f86c9e2463085d12f2d78e6a7759a63b20ba05b612f97",
+      "content/validation/prepared_ccd.md": "881cacc322d1c3211bddd790d24e4fba84bfe609a134a9949e179a4bfde14179",
+      "content/validation/prepared_consensus_workflow.md": "9a81d7359902d5174785085ba129ce466d171e8eb5e4f4137cfe374896ed9f58",
+      "content/validation/prepared_receptor_workflow.md": "7c0590e45dae79ea1c8f95d18c47fe0d0b0a63c111d3882440e5e9c2fdaf192c",
+      "content/validation/prepared_search_workflow.md": "c48355f420445b913782571cb5e8449f83a676e7c373819f2e5d39e9063f0640",
+      "content/validation/prepared_workflow.md": "cdc6a96f44d4e5a0889bbd34c82c5b0577674f09e888bbbc4ca44a478eada666",
+      "content/validation/public_carbonyl_generation.md": "4f11e55823714c97227b451e0ea9b43fe54b7369792b879bc044236c4bbdb6a2",
+      "content/validation/receptor_contribution.md": "9a10b25a546a2926032126a90c563e1b860fcac6d7040dcf172e0756bed69329",
+      "content/validation/receptor_hypothesis_pilot.md": "3a639f19d1cbf556f357006549c999f242862e1bbf8d02eca7a041a643af2f64",
+      "content/validation/receptor_sensitivity.md": "59755699352b3b19d5ecb51bab940b1ffb6503ed012aad1ce1c04fe1cd900bb7",
+      "content/validation/tyr_cardinality.md": "e98151209ef02ad8242ccf621515032608d1cf05acef7c4730671682798249ad"
+    },
+    "scope": "Strict isolated proposed 0.5.0 source review case with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim.",
+    "source_document_count": 61
+  },
+  "full_evidence": {
+    "compressed_bytes": 606766,
+    "compressed_sha256": "ca3b23a0064bfb092e34899495d9280c407d18e5c76f2e6aa5b7932b6d7632eb",
+    "path": "release_050_review_20261105.json.gz",
+    "uncompressed_bytes": 2450690,
+    "uncompressed_sha256": "6c4eed611483e7fa155912da999459199a83dd978cd00c5db460c3c10a1e9de2"
+  },
+  "issues": [
+    "uibcdf/pharmacophoremt#95",
+    "uibcdf/pharmacophoremt#96"
+  ],
+  "molecular_operations_owner": "molsysmt",
+  "new_molecular_scientific_evaluations": 0,
+  "new_tag_release_package_or_upload": false,
+  "next_action": "Review/receive published dependency corrections and public molecular-provider closure; decide/freeze exact0.5.0 source/version plan under#95, then verify required source/build/installed/public gates under#9/#10/#23.",
+  "observations": [
+    "Review immutable0.4.0-to-3d26b28 history:100 commits/1146 paths/43 runtime Python files. AST signature inventory initially includes a private helper; retain that administrative inventory, correct classification to exclude private module names, yielding nine public signature changes. Runtime sources are unchanged.",
+    "Source test imports reveal three helpers absent from the literal51-file installed-support descriptor. New actual shared-staging guard fails all three module-spec subcases before repair; preserve exact initial descriptor/guard/output.",
+    "Declare only three original helper/plan pairs with exact SHA256. Shared guard passes; actual safe-path child imports all three from the private stage, verifies exact module-relative plans and collects126 selected nodes. No scientific fixture/test body runs. All57 inputs stable; imports/namespace/resources retire.",
+    "Existing51 declaration records, six added source bytes, full installed tests selection, SDK/provider pins, environment/dependency/version metadata and runtime payload contracts remain unchanged. This is not an artifact/install/native-matrix test.",
+    "Draft notes distinguish new cached generation, seed-only ranking and saved analysis from retained workflows, document schema/options/merge/score migration and scientific/provider limits. Further0.x minors include0.10.0/0.11.0; no fixed0.9-to1.0 transition.",
+    "ArgDigest#47/#48 owning comments describe corrected source7fdf726 and unchanged public0.17.0; no consumer receiving or provider source/prefix edit occurs. PHMT#82 remains separate.",
+    "Declared routes, index, reporting3/archive18/distribution23, Ruff/format and whitespace pass. Strict isolated61-document/two-asset closure renders with execution off; no full-site/recipe execution or documentation deployment claim.",
+    "Baseline hosted policy/Conda governance and reporting pass, eight source-science cells queued. New overlay needs exact-head evidence under#9/#23. No frozen candidate, version plan change, build, upload, promotion, tag, Release or central availability notice is created.",
+    "Late exact-version publication refresh supersedes initial provider-availability assessment: ArgDigest0.17.1 Release and main-label/solver-index coordinate/digest agree. Initial full review/summary and all original measurements remain separately preserved. Next receive actual published0.17.1; do not wait for its publication or infer consumer qualification from it."
+  ],
+  "preserved_prior_gzip_archives": {
+    "devguide/evidence/aligned_clique_acceptance_20261103.json.gz": "0081fbc78fc25d72616123b7b8ff91ebfd4ea07ec188691d8fe6afa0681183fd",
+    "devguide/evidence/aligned_reference_acceptance_20261103.json.gz": "829affb29ca8bba88d6e5fc3816a2745f7dc339a8d794af854540bcaef42a126",
+    "devguide/evidence/aromatic_acceptance_20261103.json.gz": "1e4e350f4529eee99f63da828e8b0a8a897f3244b3382b14c3215d1d7a3969fe",
+    "devguide/evidence/aromatic_attribution_import_review_py314.json.gz": "56174f01b551f3ee964780f75300c20903d4e149db1e3c6379795be53ae8efca",
+    "devguide/evidence/aromatic_interactions_py314.json.gz": "93f793af10829052a662e1b0d72da9b939a2e922d31b50097ab6534a9cdad2c0",
+    "devguide/evidence/attribution_acceptance_20261104.json.gz": "e6719d9da7c647038676dddfea9112647d10dba947a3e1fc924fe21bcb63bd5c",
+    "devguide/evidence/carbonyl_acceptor_plan_20261105.json.gz": "d17a5bf489ab5a8f8f69cbc422207ff9404d44dfb191618c006faafeec593e91",
+    "devguide/evidence/carbonyl_acceptor_receiving_20261105.json.gz": "83b7073e88c797c34a74aa97c4c4f1cbb1268b7ef00d6549c6bab5d55a54fa50",
+    "devguide/evidence/carbonyl_acceptor_receiving_20261105_results.json.gz": "637da21efafa1ce7c2eadd657dca58d8ae6897254cfd9391da5a147a34a8bb18",
+    "devguide/evidence/ccd_interaction_acceptance_20261103.json.gz": "63e353a4d7eae1f703dac829d1c05e0c36b915e263bbc1e4bfaadafb2ebd4a3a",
+    "devguide/evidence/ccd_interactions_py314.json.gz": "ddcc0d9c1aff4d963ad083aa0a1a88550a3c000d168ad0d71c7a1c1588ee6def",
+    "devguide/evidence/chemical_domain_candidate_confirmation_20261102.json.gz": "87ca2a252a5e4beda13726d5dde4a1f325c0bc34a17061612f1dd963ade4df90",
+    "devguide/evidence/chemical_domain_fixed_provider_receiving_20261103.json.gz": "18a905719786b2e88fee6cb433d90e5e875505c0e0c6984f61a0a7560d76fba6",
+    "devguide/evidence/chemical_domain_readiness_20261029.json.gz": "b098a8fd9059584fd69fb411dddaa13ec25db307ba2f8dea61e0ab5adea9ac6a",
+    "devguide/evidence/chemical_domain_receiving_20261102.json.gz": "39ef8a6fc3aa3786a3e5c2d1feecf2654601321c8d4b8734b29b16ebf086d5ae",
+    "devguide/evidence/complex_based_facade_initial_full_py314.json.gz": "f297559ebe5cf4a223a8f75985abab81da7e6540bbefd4d8cce9d24a4c0f2ad2",
+    "devguide/evidence/complex_based_facade_review_py314.json.gz": "a2be8f0f07598a6c552b914005e33b99d5ffaec49b12a2f06c33bc5041a471c1",
+    "devguide/evidence/composition_acceptance_20261103.json.gz": "e42ffe135b0c774de32e9d60dbb611b38d379a97c129ddaff0218c75629023a4",
+    "devguide/evidence/conda_040_delivery_20261023.json.gz": "3c94819c1c0625d877b073aaf24d019b547b963025797aee85d6777a67ec78ae",
+    "devguide/evidence/conda_040_staging_20261023.json.gz": "9ad4e155fb4d51bf06bfbd9e68c58940f2279e66598ad5bbe19135bfdeced412",
+    "devguide/evidence/conformer_acceptance_20261103.json.gz": "ca2561617aa3d142c110a4010696d939a914f17d6a4bb270c4f92e093eb55a1c",
+    "devguide/evidence/consensus_support_review_20261104.json.gz": "cf23a6020b372525958cc9578b45a791b00feff13e04c2e8dbb362a39eb1367b",
+    "devguide/evidence/curation_acceptance_20261103.json.gz": "49fed7353c3df62c38f9cdcf5762aed3b70b050313491460b9957d800a1ebbee",
+    "devguide/evidence/curation_py314_cookbook_audit.json.gz": "4e751027aa43fce3dac4e18a39562ee16bbf0577be6a07684972c17704c88a7a",
+    "devguide/evidence/current_viewer_addon_20261013.json.gz": "6dc714d2a64f2a9b3be1cf48a77b087bbe47ba1f8ea729545126770dc70e5429",
+    "devguide/evidence/current_viewer_addon_20261013_phmt_wheel.whl.gz": "171cfa2d13a26d74f0fe8350b1c7999a43aba91ebb2f4e22e2863575a0056316",
+    "devguide/evidence/current_viewer_addon_20261013_viewer_wheel.whl.gz": "5887afe5dbc99dcd2118a20cee7a94849954cf91c61724d13653c4764e0b0e47",
+    "devguide/evidence/diagnostic_angle_closure_review_py314.json.gz": "2323a511e5b346edb74d6d219ddfe6ae8313f2eed90c456df988249900116d83",
+    "devguide/evidence/eralpha_acceptance_20261104.json.gz": "2796a69d67044e835f7341e854ee6ea1f17d214b316895cafdb6f6c077e1d15a",
+    "devguide/evidence/eralpha_acceptance_20261104_plain.h5msm.gz": "f2cbc29c835a13011554152f7a490da3321c5ad81dcebfb1dec90dd8d583bf6b",
+    "devguide/evidence/eralpha_acceptance_20261104_tracked.h5msm.gz": "f2cbc29c835a13011554152f7a490da3321c5ad81dcebfb1dec90dd8d583bf6b",
+    "devguide/evidence/eralpha_exclusions_py314.json.gz": "0772bff8f0805337607f0363444be679a2a2918b0c2c118a16984d57ea4ab9bc",
+    "devguide/evidence/eralpha_hydrogens_py314.json.gz": "26449bdb560daefba45d30940e3188dc6135031c5fb1bb401bb353066b96c26a",
+    "devguide/evidence/eralpha_interaction_diagnostics_py314.json.gz": "66edbe76c43e89fe12296fe991377d9416fe4ea437c77ea510b4d81ba064c2b2",
+    "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+    "devguide/evidence/eralpha_interface_py314.json.gz": "6a520e2b99074f7ce1a66b9e4ced094918050173e0483951cd2cdb4de01eb8f9",
+    "devguide/evidence/eralpha_receptor_py314.json.gz": "8b1c6065221caac82a691cbadcc11ffe040019477bad9137fb652b1d16dc3fce",
+    "devguide/evidence/eralpha_template_py314.json.gz": "cf69eb7c1f6cfa00fe4834a8edcc79c72d6dcb408013253393f1ec2455c21813",
+    "devguide/evidence/esr1_activity_pilot_20261023.json.gz": "0be4db53bf2816451d7770ac3949749a5bfbcbc14074156456a24854dea7cc48",
+    "devguide/evidence/esr1_activity_pilot_20261023.log.gz": "270db7cad014152dc72a3637ad28aa602e32e8f18481e796006b9777b1e48d51",
+    "devguide/evidence/esr1_activity_pilot_20261023_preparation.json.gz": "208bd617eec47a114a97584c601ef335ef93bffd5a611f84f3ec8030ad8d34bb",
+    "devguide/evidence/esr1_activity_pilot_20261023_query.json.gz": "ddc326f938e80f6acdf74b8d4e8ca63e817c71f8489f11dd09cae1b1c5d1bc9a",
+    "devguide/evidence/esr1_activity_pilot_inputs_20261023.tar.gz": "fc6a5295bbf4dbd9743f31a7f54d396b09578e60754ebcabd4388a588252e995",
+    "devguide/evidence/esr1_binding_metadata_review_20261024.json.gz": "ab2777c7475023ae8cea8261ab85990c2e27108f4a7790ba227f5d2b063419b1",
+    "devguide/evidence/esr1_binding_methods_followup_20261028.json.gz": "049b7c28867e4b6f416a99c354370d074099205834e62988dc526a0950d47c62",
+    "devguide/evidence/esr1_binding_pool2_20261026.json.gz": "ef213daac68a8af3ce0495c2b4fe73bde6157bcf3202cbbcaca76d37adf81e29",
+    "devguide/evidence/esr1_binding_pool3_20261028.json.gz": "fc85e3c799f237601432127826a35ce40c6618920dbdfe9f4d710e7d05131ce1",
+    "devguide/evidence/esr1_binding_pool3_methods_20261028.json.gz": "c1447a1d857518c7d09f30bcadca9415529d8953b789ada2f3494d9bfbc46181",
+    "devguide/evidence/esr1_binding_source_qualification_20261024.json.gz": "44642f4bc10475f4ffd5f937daaf1b4b6b5b63176361dc59242ead0495be1dd7",
+    "devguide/evidence/esr1_consensus_readiness_training_20261024.json.gz": "3870cb9fe8b4d55757bd4627de9f79f290833e6238a5ee5813222b29497f2d53",
+    "devguide/evidence/esr1_consensus_readiness_training_20261024.log.gz": "1a4dc95817ca83ccdb40fd1b176b7dbe2c4198c67a0e419df17f3a2c58aa6f32",
+    "devguide/evidence/esr1_consensus_readiness_training_20261024_acquisition.log.gz": "0671c9c3e338be0cdff7e23a51204909cf3053d79aff8318eb469121319575e0",
+    "devguide/evidence/esr1_consensus_readiness_training_20261024_environment.json.gz": "1ac1af7694f86ddc3db7ab69159666dfacc5893851eb502309481bcd31188487",
+    "devguide/evidence/esr1_consensus_readiness_training_20261024_qualification.json.gz": "8a9f909cb932d3dfa36004a68847263f269d2e63ba87370e7079ca96a38c1f90",
+    "devguide/evidence/esr1_consensus_readiness_training_20261024_query.json.gz": "d9e5cce14296a696474a9377e587d7cc988595a121afd6ce269fb6c41d0704f3",
+    "devguide/evidence/esr1_consensus_training_20261024.json.gz": "c09601c6989ddc57dc29a6778fdc84121d1c51cb828fadf04458082682c5f1b9",
+    "devguide/evidence/esr1_consensus_training_20261024.log.gz": "2cadd46348dc9f8339abe7a50a69cb5a806c3f2f747d275b81babcc0986b84f7",
+    "devguide/evidence/esr1_consensus_training_20261024_acquisition.log.gz": "edb041ea7ad9c3608ee959bcc8d772248848616f523e2f5d55b3206d96324a78",
+    "devguide/evidence/esr1_consensus_training_20261024_cleanup.log.gz": "bcdf730b9396784c9d74306df8a2ff22121e5a80830e599beb830fd1d57b38ad",
+    "devguide/evidence/esr1_consensus_training_20261024_environment.json.gz": "b60d7351f4bebb057a6132ff7acddaec0fbde87d0d8c0924dbcea14c6ee24c44",
+    "devguide/evidence/esr1_consensus_training_20261024_qualification.json.gz": "fac851b7ee2dda42422cf30da9482ee34df9504038c30e327211820a0a5d18b2",
+    "devguide/evidence/esr1_gungor_support_review_20261103.json.gz": "50304e357c4e5de8578fe59c9dd07838e91eac4ed4463d4f3a02b9a2afc87cca",
+    "devguide/evidence/esr1_paired_evaluation_20261024.json.gz": "56c7617f92e213520cab8a2e08023d2a8e4a5eb115275c2b1654c87157ad6ef5",
+    "devguide/evidence/esr1_paired_evaluation_20261024.log.gz": "f591340df04e90c9b65f873552b7240fc54d111d3fb63ef96d33358534e032a4",
+    "devguide/evidence/esr1_paired_evaluation_20261024_acquisition.log.gz": "fdf490b789354911c57e02078243866c381d1a9706a09d1588dccc680ee19215",
+    "devguide/evidence/esr1_paired_evaluation_20261024_baseline.json.gz": "5988b4de5d4b615ea465432052ab95271b522abccbfbb5da40d4cca8a4cb1c35",
+    "devguide/evidence/esr1_paired_evaluation_20261024_cleanup.json.gz": "113fdcea902d508f998468c02d76eff590cda391aab01aeb6770ec11c2a192da",
+    "devguide/evidence/esr1_paired_evaluation_20261024_consensus.json.gz": "ce8f329154ad5e270847cde5cefc10d87a04f0c1b5b1f6cd31a324f8d55bf2e0",
+    "devguide/evidence/esr1_paired_evaluation_20261024_preparation.json.gz": "20fe44c70a88ac16103516e223696b5425c2bf2c231f1ed55a8c688e312fda93",
+    "devguide/evidence/esr1_paired_evaluation_20261024_qualification.json.gz": "aac291c0649bffd9bdc72837e5f7b959273b14786d9232783dff6d76836ce9dd",
+    "devguide/evidence/esr1_saved_summary_replay_20261024.json.gz": "30d19603141c56a8a883afa766258e230e452d63c01668839d62892b60fca1d9",
+    "devguide/evidence/esr1_seeded_hit_replay_20261024.json.gz": "90e8729cd6f93cca1349fd424b831e2d3e83a0d71c2bc630685edc575dfeb36f",
+    "devguide/evidence/esr1_seeded_hit_replay_20261024.log.gz": "704192b72cb1b35f9bbf6b06117f6c29a3f3365aed9fcbe1a6eaa67cea509ebc",
+    "devguide/evidence/esr1_seeded_hit_replay_20261024_preparation.json.gz": "1bf716aa16b82bdcc4816cac8fe8dac47a2db52f285560de8a60d8480ce168d9",
+    "devguide/evidence/exclusion_acceptance_20261103.json.gz": "52c15f9046ef2a115c18d05dff4caf3c485fcaf2cd01a08f1f44e15d0fe6d642",
+    "devguide/evidence/installed_candidate_readiness_20261010.json.gz": "e89203acdfad1b22a4b2da2569f9972b73cdc44424228edce6a8b391d9940a61",
+    "devguide/evidence/installed_support_adoption_20261020.json.gz": "01e42e6d73e5333028f0a8ff169915aaa95cd97296cb5b241d54ad5584c1d6ba",
+    "devguide/evidence/installed_support_preparation_20261020.json.gz": "e1e8b84ef7348b5138433c7a2db2bbfa442739d467514618e8caa53d6a678f6b",
+    "devguide/evidence/interaction_composition_py314.json.gz": "7df42c37649f21d2bb25e209a3ecd8f3e791094874e7dcdc56b3e4cb1957da5a",
+    "devguide/evidence/ionic_acceptance_20261103.json.gz": "319070330769f886a9406d1051b84490358844276b2b3c49131964c63e442f24",
+    "devguide/evidence/ionic_interactions_py314.json.gz": "2d83015d4677058bab113628a5832e8f5e7c94a9d0acbe8d595102e54d15f802",
+    "devguide/evidence/live_reference_ownership_20261104.json.gz": "fc24f747f92a060bccd9a2eed0be5826910497a1b0861ebb876383d6ad8b919a",
+    "devguide/evidence/live_viewer_addon_20261013.json.gz": "5ff59f2a4ffd324be47c5b36f31b3cc88db91d73a7bfd8d6e4a03eb6fd959cc6",
+    "devguide/evidence/minimal_viewer_addon_20261013.json.gz": "3563ced303ce9f92ed9f118e75fff5d74e97a0282ac5f6de1d3a1ca8f1d1fcea",
+    "devguide/evidence/minimal_viewer_addon_20261013.whl.gz": "7d85eba1e7a0500d65d16ca656d13977c10554b2ac24a386d71881cdf1aebfe4",
+    "devguide/evidence/model_dispatch_contract_20261104.json.gz": "16cb64de25864babf6b6a989479e6b80c8318d5ebad44aff5458c3ec524af9bf",
+    "devguide/evidence/molecular_utility_retirement_review_py314.json.gz": "48a8464758ce901b7813b24906cfea3945abbbd349184b155f15d43ddc87bf79",
+    "devguide/evidence/molsysmt_feature_receiving_20261028.json.gz": "ba00cbf42187fccf7e76ae0985d70e974547b89ed3fd5666bfb08400f6275f95",
+    "devguide/evidence/molsysmt_feature_receiving_clean_20261028.json.gz": "b628b2b06f6e6b0ab9ff88a5438153ecc291012084ba576292849e0e6ec5df01",
+    "devguide/evidence/molsysmt_feature_review_20261103.json.gz": "bb6d19c2d3875be8019387c4b25947c441f7e8493e924e85f2da31fa5db65fe3",
+    "devguide/evidence/native_constraint_semantics_20261104.json.gz": "540a40ede650c236d39b4b5501d8d5dabfc494308bec5d7274ccbe998d4cd70a",
+    "devguide/evidence/native_geometry_contract_receiving_20261104.json.gz": "f8bcae854966c0ad7354d69737ff7644f8e45d65147d0bb1170da2fa9cf54b54",
+    "devguide/evidence/native_io_admission_readiness_20261104.json.gz": "24efeac6b2eb7247063a19fc3f780a245eb781b8af5c1e80e9c01015c9c0d039",
+    "devguide/evidence/native_io_diagnostics_20261104.json.gz": "ead9d033ca0570a5bbb1c68c4d657944ecb0c3fe54727e32fab9edc28dd4df2e",
+    "devguide/evidence/native_loader_dispatch_20261104.json.gz": "1d69758f61b2b1ac3c4c617235d8bbb9afd058db1a5430f88c737c17e305731f",
+    "devguide/evidence/native_persistence_validation_20261104.json.gz": "907a8a78e2ba70ed60367621ec5bba4d39e70ad75354f4a3d3db14e73748f6ed",
+    "devguide/evidence/native_schema_writing_20261104.json.gz": "ae7ef912022808497686eb44d1cd0791f79c6827987995f2ccfa8c149f3c0534",
+    "devguide/evidence/native_virtual_screening_review_py314.json.gz": "8de0a51933098de6c876fe8a88603747b3fb76084ced1a2bb20ecbdf9031ff6a",
+    "devguide/evidence/nested_facade_contracts_20261104.json.gz": "b68f143b7360aac5c43129e0e26f6b6d289479496debcbe3a20746807bf714ee",
+    "devguide/evidence/nonfinite_provenance_review_py314.json.gz": "18aa0032790013b62e098e4dcedd08833181a538a80cc1d53c9a9d70a005267e",
+    "devguide/evidence/observed_donor_receiving_20261103.json.gz": "c36f51bb08d46dfc07ef8c08bf01383f3f87d6d1664069b637514464e42b8f11",
+    "devguide/evidence/ordinary_environment_review_20261010.json.gz": "d25065bf5ba15d484c623715cfa46616baba80070ac4eea11a81693316d9a3b5",
+    "devguide/evidence/packaging_license_20261020.json.gz": "aef2b88ec33703e1c3aff92beb27e95874a4834ddc28fa84598b0bc425f8314c",
+    "devguide/evidence/pharmacophore_merge_20261104.json.gz": "539aabcca64b56efd1995f6f2c1d610ed6595024b8ccb6fac3ea168fccb528c0",
+    "devguide/evidence/pharmacophore_sdf_review_py314.json.gz": "5c7eb9d4689222e82c4105b552111c053c18746b983b32a437e3b81bf41c2d5f",
+    "devguide/evidence/placed_pose_acceptance_20261103.json.gz": "1b8f427166b930ec3612988eaed05c59981c4f8f23bd006638a7563943d349be",
+    "devguide/evidence/prepared_ccd_acceptance_20261103.json.gz": "6213a2c6198ba10fd4502915f03497020ce631639a5972f3143786230c2fa6b8",
+    "devguide/evidence/prepared_ccd_py314.json.gz": "dae5352341d99a0e18eaffdd027932aeafe2179464f91ed44cabbf451a1552d2",
+    "devguide/evidence/prepared_consensus_workflow_py314.json.gz": "bc9b079b3292a97129ac7d334df2cefacef131b1dacc0bc158ab6c31547b0bd2",
+    "devguide/evidence/prepared_receptor_sensitivity_20261104.json.gz": "38a182af02304f261a481ea799b41999491a2050ca04698a1ade97151188421f",
+    "devguide/evidence/prepared_receptor_workflow_py314.json.gz": "0d080c18308a0e64f0236b39484432f26fb3112ebea17d444dd78294b235d8b2",
+    "devguide/evidence/prepared_search_workflow_py314.json.gz": "28482e7c6b0e18ebd56e9a07a77a2b3c0ddb3ef5e9d7ccd8ed1fd660995277b3",
+    "devguide/evidence/prepared_workflow_py314.json.gz": "bfda487d2d1f412dc98e41248871a488aadfa885089c197e2500b78ea865b175",
+    "devguide/evidence/public_attribution_review_20261013.json.gz": "16a23bad9aedf89678f159498452dc61cac625202aabdea88f8f5bb0130263e1",
+    "devguide/evidence/public_cached_carbonyl_20261105.json.gz": "6249c8233a7375409f2878c9aa9c346b4ae996b05395f483478cb7bc343cfe5e",
+    "devguide/evidence/public_cached_carbonyl_20261105_results.json.gz": "c25b515cbcafa17618d2be8e80d5cdde0369e049b9ae740ef1d44d4b90175a71",
+    "devguide/evidence/public_receptor_generation_20261105.json.gz": "4bbca2494adbf052c22bd34847b801f53f4472955f27b171984c723a45b0fa81",
+    "devguide/evidence/public_test_dependencies_20261010.json.gz": "1e433176eac96a7ed893562f498af9fd19356331f36d1f635b50e44056e33f81",
+    "devguide/evidence/ranked_seed_acceptance_20261103.json.gz": "e56f1e430d3a2aeb222457c462f89e89e4bf9dfbea64f17aad3796237c7e2a46",
+    "devguide/evidence/ranked_seeds_py314.json.gz": "72db4fc70243c99614368872ef7b2009d047d9bac72db86743cfef744b74b9b6",
+    "devguide/evidence/receptor_contribution_20261105.json.gz": "79c89eadf3b6974da438225f12e5430701f6840456fa98c55f6c453d4328b6f8",
+    "devguide/evidence/receptor_contribution_20261105_results.json.gz": "e06359fa7bc5f4535be013c6931128081c734cdc1400bd24f42e385de78e9cfb",
+    "devguide/evidence/receptor_contribution_plan_20261105.json.gz": "29481887c3ed8dc80be15a34efef5492da4f539b4540590e2001e24b8a24f6da",
+    "devguide/evidence/receptor_generation_exclusions_20261105.json.gz": "972193b2fc15c5c49f2ea190741db55aebf9e322255ebd0d9585b55e88ce50d0",
+    "devguide/evidence/receptor_hypothesis_pilot_20261104.json.gz": "5a035da2bf26d39a5e090d007851bdb29ddb27e83b979679c02feb2d1092f0c5",
+    "devguide/evidence/receptor_sensitivity_20261104.json.gz": "8f18a0d5cf1337b49a7bb9dd45b7c9629779aa2330bbe42c325d2721c3c9a942",
+    "devguide/evidence/reference_ligand_acceptance_20261103.json.gz": "d67b726ff4a2c83741c47d1d34e751f856288d0f2d3a56b810c14b7ae691c7bc",
+    "devguide/evidence/repeat_hydrogen_review_py314.json.gz": "9b28c8b8e82ed74c1f80e52c12da172df4208ee4cafdd09408411821c30618c7",
+    "devguide/evidence/rigid_comparison_acceptance_20261103.json.gz": "c15f86aa6ae293b27e2eac220e15dd73c820ee2e8c2d8852f05f53b216466657",
+    "devguide/evidence/rigid_consensus_acceptance_20261103.json.gz": "ef69a4cc0f2e1422fbd29c8b712b71d0d374b437029dfa9c11e4a86baafc5f3f",
+    "devguide/evidence/rigid_consensus_py314.json.gz": "e69ee13f96f65f146c8e186f1f36d4b89082fa53f1d10259bbd7039cd6f5c59b",
+    "devguide/evidence/rigid_refinement_acceptance_20261103.json.gz": "ad752500c1a9873aa0605af3968749bcc578e0e6a36ea6063a2683220298cdde",
+    "devguide/evidence/rigid_refinement_benchmark_py314.json.gz": "395964c89d7a186c04fc052315d909ad2e942a059737476b8676c1b91ddaf8f1",
+    "devguide/evidence/rigid_refinement_py314.json.gz": "f7142db8cef755c4b385e80cc943003843113837777c075e31891c5d5ba0b58c",
+    "devguide/evidence/rigid_search_acceptance_20261103.json.gz": "879fc2974f7a2d24f826d36fb6b1676af09e1400c74568d2161b1f16197947c8",
+    "devguide/evidence/seed_eligibility_review_py314.json.gz": "086d0412ae93d8156d61f7e69b6acd7af5055eec84dbd04f63ec63a8ba9cdca3",
+    "devguide/evidence/seeded_ranking_qualification_20261024.json.gz": "00467f1f35ff71bf6269eb9047289f7e7af6ff9ac3f7509f4415d9bc5ef7e527",
+    "devguide/evidence/source_ci_receiving_20261020.json.gz": "3dfba8103151e2c1d1c66b9bffdfd00163cb73b9efd6a157655cb3ae72729946",
+    "devguide/evidence/structure_based_facade_initial_review_py314.json.gz": "ab5f1fba0151e4ece689227389b32a24302aa6648c0a2614138cc90bcb920f2f",
+    "devguide/evidence/structure_based_facade_review_py314.json.gz": "c6e895c3a84f43edefe84a4b38274edc66e9cb167237d28751fba0a8a4b5b4eb",
+    "devguide/evidence/support_boundary_review_20261104.json.gz": "e577cee742fcfd5a0e81eb4db6c043cfe3390d7c7fafb37a63dbd9c85fb6a8d0",
+    "devguide/evidence/tyr_cardinality_20261105.json.gz": "05ca6b973d0bc4e5c4064fe55d4bbcb0799f7c49278ddb3f656711b8544f0608",
+    "devguide/evidence/tyr_cardinality_20261105_results.json.gz": "f63ba58b6e25a947df608a356249a3eeccd3a2608178f49e15a18cf166c8e158",
+    "devguide/evidence/viewer_panel_feedback_20261013.json.gz": "99ef3728ef5bfc2ca559b8cd1d08601190d1c9ce92afa8b60fc8fde95af16711",
+    "devguide/evidence/viewer_panel_feedback_20261013_final.json.gz": "cb1d86058a67a64038c7419931f1a1505bc67c7f4a7bb086079382195868609e"
+  },
+  "prior_review": {
+    "compressed_bytes": 445701,
+    "compressed_sha256": "896c22935510e4b88d99330def23992eb297152cb537d4594b233740d4f88022",
+    "path": "release_050_review_20261105_initial.json.gz",
+    "uncompressed_bytes": 1814929,
+    "uncompressed_sha256": "132bf6f4dfd719efb1734a26713b1ea49e7e262dd2f87488ff2c27060aa5422b"
+  },
+  "public_provider_refresh": {
+    "argdigest_release": {
+      "body": "# 0.17.1\n\nThis patch release repairs consumer argument handling and diagnostic attribution,\nand qualifies the public SMonitor nested-signal correction.\n\n- Preserve literal keywords named like a function's `**kwargs` parameter without\n  expanding them again or replacing explicitly bound arguments (#47).\n- Keep unknown/missing argument errors catchable as Python `TypeError`, retaining\n  their ArgDigest identities, catalog codes and contexts (#48).\n- Missing optional Beartype emits one decoration-time warning without a required\n  dependency error; present but broken/transitive imports propagate (#46).\n- Reject ambiguous consumer digester registrations with the existing\n  `DigestNotDigestedError` and dedicated `ARG-ERR-DIGESTER-001`. Identify the\n  consumer, argument, digester and parameter-naming correction without formatting\n  signature defaults or restricted values (#50).\n  Valid callable registrations avoid diagnostic label reads; missing or unsafe\n  labels cannot reject valid signatures or replace the configuration error (#53).\n- Correct optional PyUnitWizard's API minimum to >=0.22.0 for fast_track (#43).\n- Preserve the original MIT notice using SPDX metadata and a tested\n  Setuptools >=77.0.3 backend; adopt immutable publisher v2.3.0 (#44\u2013#45).\n- Select public SMonitor 0.22.1 in full installed qualification, including nested\n  signal/capture/native/catalog/application-policy controls (#49). Applications\n  relying on corrected filtered/silenced-inner observation need SMonitor\n  >=0.22.1. Core dependency floors remain SMonitor >=0.16.0 / DepDigest >=0.11.0.\n\nQualified for Python 3.11\u20133.14 on Linux, macOS arm64 and Windows. All twelve source cells, twelve full installed cells and twelve separate NumPy-free lower-bound cells passed. Full installed fixtures use SMonitor 0.22.1, DepDigest 0.15.1 and PyUnitWizard 0.27.0; core qualification retains SMonitor 0.16.0 / DepDigest 0.11.0. Consumer scientific acceptance remains with application owners.\n\nSource: `c9c9ee623dab5331fdfa4227bd784dd38620e18b`. Original Conda file: `argdigest-0.17.1-py_0.tar.bz2` (55,828 bytes), SHA-256 `5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899`.\n\nReceipts: [source](https://github.com/uibcdf/argdigest/actions/runs/42071223440), [original producer](https://github.com/uibcdf/argdigest/actions/runs/42094355330), [full installed](https://github.com/uibcdf/argdigest/actions/runs/42111095969), [minimal core](https://github.com/uibcdf/argdigest/actions/runs/42111100594). The failed duplicate producer is historical and does not qualify another file; details are retained in [#51](https://github.com/uibcdf/argdigest/issues/51).\n\nThe original qualified file is public in the UIBCDF Conda channel. [Promotion run](https://github.com/uibcdf/argdigest/actions/runs/42127310186), independent registry/solver-index verification and a fresh Linux x86_64 Python 3.14 public installation confirm the same digest. Fresh public scientific receiving passed 533 tests with 1 absent-sibling skip; all 28 SMonitor receiving controls passed. Installed payload bytes and import origins were checked before and after.\n\n```sh\nconda install -c uibcdf -c conda-forge argdigest=0.17.1\n```\n\nThe [source-only Zenodo archive](https://doi.org/10.5281/zenodo.23991088) is independently verified against all 362 files of the tagged Git export. This DOI records the source snapshot, not the Conda binary. Release and package receipts: [#51](https://github.com/uibcdf/argdigest/issues/51). Consumer scientific acceptance and canonical guide distribution remain with their owners under [MolSysSuite #169](https://github.com/uibcdf/molsyssuite/issues/169) and [#164](https://github.com/uibcdf/molsyssuite/issues/164).\n",
+      "published_at": "2026-11-05T23:08:36Z",
+      "source": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+      "tag": "0.17.1",
+      "url": "https://github.com/uibcdf/argdigest/releases/tag/0.17.1"
+    },
+    "consumer_state": "ArgDigest0.17.1 available; actual artifact receiving underPHMT#82 pending, no provider installed or pins changed",
+    "registry": {
+      "argdigest": {
+        "note": "Package latest_version field is stale; inspect exact file labels and solver-index coordinates.",
+        "reported_latest_version": "0.12.1",
+        "selected_files": [
+          {
+            "attrs": {
+              "arch": null,
+              "build": "py_0",
+              "build_number": 0,
+              "depends": [
+                "depdigest >=0.11.0",
+                "python >=3.11,<3.15",
+                "smonitor >=0.16.0"
+              ],
+              "has_prefix": false,
+              "license": "MIT",
+              "machine": null,
+              "noarch": "python",
+              "operatingsystem": null,
+              "platform": null,
+              "subdir": "noarch",
+              "target-triplet": "None-any-None",
+              "timestamp": 1793907753481
+            },
+            "basename": "noarch/argdigest-0.17.1-py_0.tar.bz2",
+            "download_url": "//conda.anaconda.org/uibcdf/noarch/argdigest-0.17.1-py_0.tar.bz2",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+            "version": "0.17.1"
+          }
+        ],
+        "solver_index": {
+          "files": {
+            "argdigest-0.17.1-py_0.tar.bz2": {
+              "arch": null,
+              "binstar": {
+                "channel": "main",
+                "owner_id": "598bb08739abc9076c199afd",
+                "package_id": "697f605d6a9fcf3c9ff5bbd0"
+              },
+              "build": "py_0",
+              "build_number": 0,
+              "depends": [
+                "depdigest >=0.11.0",
+                "python >=3.11,<3.15",
+                "smonitor >=0.16.0"
+              ],
+              "has_prefix": false,
+              "license": "MIT",
+              "machine": null,
+              "md5": "2c39c19f5a7f1c4afe27352d9f5ee531",
+              "name": "argdigest",
+              "noarch": "python",
+              "operatingsystem": null,
+              "platform": null,
+              "requires": [],
+              "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+              "size": 55828,
+              "subdir": "noarch",
+              "target-triplet": "None-any-None",
+              "timestamp": 1793907753481,
+              "version": "0.17.1"
+            }
+          },
+          "repodata_sha256": "8e8545de2ac671bc9fa6012c27f27795a0f4dce186159518c583ce0f1b4ac120",
+          "url": "https://conda.anaconda.org/uibcdf/noarch/repodata.json"
+        },
+        "url": "https://api.anaconda.org/package/uibcdf/argdigest"
+      },
+      "molsysmt": {
+        "note": "Package latest_version field is stale; inspect exact file labels and solver-index coordinates.",
+        "reported_latest_version": "0.12.0",
+        "selected_files": [
+          {
+            "attrs": {
+              "arch": "aarch64",
+              "build": "pyabi3hecc93d8_0",
+              "build_number": 0,
+              "constrains": [
+                "__glibc >=2.17"
+              ],
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "libgcc >=16",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "aarch64",
+              "noarch": "python",
+              "operatingsystem": "linux",
+              "platform": "linux",
+              "subdir": "linux-aarch64",
+              "target-triplet": "aarch64-any-linux",
+              "timestamp": 1791322734487
+            },
+            "basename": "linux-aarch64/molsysmt-0.23.0-pyabi3hecc93d8_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/linux-aarch64/molsysmt-0.23.0-pyabi3hecc93d8_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "d588b52c843b43774ff59d4a627e4cffc0fcc86c39118f279815f4c6ec31a4dd",
+            "version": "0.23.0"
+          },
+          {
+            "attrs": {
+              "arch": "x86_64",
+              "build": "pyabi3h03bb3b7_0",
+              "build_number": 0,
+              "constrains": [
+                "__glibc >=2.17"
+              ],
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "libgcc >=16",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "x86_64",
+              "noarch": "python",
+              "operatingsystem": "linux",
+              "platform": "linux",
+              "subdir": "linux-64",
+              "target-triplet": "x86_64-any-linux",
+              "timestamp": 1791322751461
+            },
+            "basename": "linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+            "version": "0.23.0"
+          },
+          {
+            "attrs": {
+              "arch": "x86_64",
+              "build": "pyabi3h2d2bc06_0",
+              "build_number": 0,
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "x86_64",
+              "noarch": "python",
+              "operatingsystem": "win32",
+              "platform": "win",
+              "subdir": "win-64",
+              "target-triplet": "x86_64-any-win32",
+              "timestamp": 1791323034561
+            },
+            "basename": "win-64/molsysmt-0.23.0-pyabi3h2d2bc06_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/win-64/molsysmt-0.23.0-pyabi3h2d2bc06_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "d74d69f2ef45e6f44ae9bfc43b89ae8a48d1422c0ad32df8302f17418139eb6b",
+            "version": "0.23.0"
+          },
+          {
+            "attrs": {
+              "arch": "arm64",
+              "build": "pyabi3ha0bc463_0",
+              "build_number": 0,
+              "constrains": [
+                "__osx >=11.0"
+              ],
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "arm64",
+              "noarch": "python",
+              "operatingsystem": "darwin",
+              "platform": "osx",
+              "subdir": "osx-arm64",
+              "target-triplet": "arm64-any-darwin",
+              "timestamp": 1791323164320
+            },
+            "basename": "osx-arm64/molsysmt-0.23.0-pyabi3ha0bc463_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/osx-arm64/molsysmt-0.23.0-pyabi3ha0bc463_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "b2fe891f6e4fe9b167b0383a0f11c9772a5450e3fb93ad030ea5139d5aa54317",
+            "version": "0.23.0"
+          },
+          {
+            "attrs": {
+              "arch": "x86_64",
+              "build": "pyabi3h03bb3b7_0",
+              "build_number": 0,
+              "constrains": [
+                "__glibc >=2.17"
+              ],
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "libgcc >=16",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "x86_64",
+              "noarch": "python",
+              "operatingsystem": "linux",
+              "platform": "linux",
+              "subdir": "linux-64",
+              "target-triplet": "x86_64-any-linux",
+              "timestamp": 1791452347860
+            },
+            "basename": "linux-64/molsysmt-1.0.0-pyabi3h03bb3b7_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/label/staging/linux-64/molsysmt-1.0.0-pyabi3h03bb3b7_0.conda",
+            "labels": [
+              "staging"
+            ],
+            "sha256": "f3354b2d34ed9152d41c71119b46b13f064b40e076af20e97771891e032640dd",
+            "version": "1.0.0"
+          },
+          {
+            "attrs": {
+              "arch": "aarch64",
+              "build": "pyabi3hecc93d8_0",
+              "build_number": 0,
+              "constrains": [
+                "__glibc >=2.17"
+              ],
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "libgcc >=16",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "aarch64",
+              "noarch": "python",
+              "operatingsystem": "linux",
+              "platform": "linux",
+              "subdir": "linux-aarch64",
+              "target-triplet": "aarch64-any-linux",
+              "timestamp": 1791452352188
+            },
+            "basename": "linux-aarch64/molsysmt-1.0.0-pyabi3hecc93d8_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/label/staging/linux-aarch64/molsysmt-1.0.0-pyabi3hecc93d8_0.conda",
+            "labels": [
+              "staging"
+            ],
+            "sha256": "f90ef186b72e4433d1946068c5cbde4fe17cc6d10dc8bb80d00c8de25b4572aa",
+            "version": "1.0.0"
+          },
+          {
+            "attrs": {
+              "arch": "x86_64",
+              "build": "pyabi3h2d2bc06_0",
+              "build_number": 0,
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "x86_64",
+              "noarch": "python",
+              "operatingsystem": "win32",
+              "platform": "win",
+              "subdir": "win-64",
+              "target-triplet": "x86_64-any-win32",
+              "timestamp": 1791452688271
+            },
+            "basename": "win-64/molsysmt-1.0.0-pyabi3h2d2bc06_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/label/staging/win-64/molsysmt-1.0.0-pyabi3h2d2bc06_0.conda",
+            "labels": [
+              "staging"
+            ],
+            "sha256": "4a0bbbc974c463edd610f5eb701f44c7be77e9b4368f3d631224afb5128da518",
+            "version": "1.0.0"
+          },
+          {
+            "attrs": {
+              "arch": "arm64",
+              "build": "pyabi3ha0bc463_0",
+              "build_number": 0,
+              "constrains": [
+                "__osx >=11.0"
+              ],
+              "depends": [
+                "_python_abi3_support 1.*",
+                "argdigest >=0.13.0",
+                "cpython >=3.11",
+                "depdigest >=0.10.0",
+                "h5py",
+                "matplotlib",
+                "molsysviewer",
+                "networkx",
+                "numpy >=1.26,<3",
+                "pandas",
+                "py-mmcif >=1.1.1",
+                "python >=3.11,<3.15",
+                "pyunitwizard >=0.28.1",
+                "smonitor >=0.16.0",
+                "tqdm"
+              ],
+              "has_prefix": false,
+              "license": "MIT License",
+              "machine": "arm64",
+              "noarch": "python",
+              "operatingsystem": "darwin",
+              "platform": "osx",
+              "subdir": "osx-arm64",
+              "target-triplet": "arm64-any-darwin",
+              "timestamp": 1791452776989
+            },
+            "basename": "osx-arm64/molsysmt-1.0.0-pyabi3ha0bc463_0.conda",
+            "download_url": "//conda.anaconda.org/uibcdf/label/staging/osx-arm64/molsysmt-1.0.0-pyabi3ha0bc463_0.conda",
+            "labels": [
+              "staging"
+            ],
+            "sha256": "dcc711e5c93049d2ddd33176b37b8f847651d386c21ad5ad1e507db48e4212b9",
+            "version": "1.0.0"
+          }
+        ],
+        "url": "https://api.anaconda.org/package/uibcdf/molsysmt"
+      }
+    }
+  },
+  "schema": "pharmacophoremt.release-050-source-review@1",
+  "scope": "Proposed scope/migration review and component installed-support declaration repair. Source import/collection and administrative evidence only; no scientific test-body execution, artifact build/installation or publication.",
+  "source_provider_delivery": {
+    "argdigest_issues": [
+      "https://github.com/uibcdf/argdigest/issues/47",
+      "https://github.com/uibcdf/argdigest/issues/48"
+    ],
+    "consumer_receiving": "PHMT#82 pending actual published correction/adversarial receiving; no new provider installed",
+    "corrected_source": "7fdf726d984553c9d89efc08abc2016f46ef41aa",
+    "state": "closed with source corrections; public0.17.0 explicitly unchanged in owning delivery comments"
+  },
+  "source_review": {
+    "actual_release_candidate": null,
+    "added_support_records": [
+      {
+        "sha256": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+        "source": "phmt_test_support/receptor_sensitivity.py",
+        "target": "phmt_test_support/receptor_sensitivity.py"
+      },
+      {
+        "sha256": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+        "source": "tests/data/receptor_sensitivity/plan.json",
+        "target": "tests/data/receptor_sensitivity/plan.json"
+      },
+      {
+        "sha256": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a",
+        "source": "phmt_test_support/prepared_receptor_sensitivity.py",
+        "target": "phmt_test_support/prepared_receptor_sensitivity.py"
+      },
+      {
+        "sha256": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e",
+        "source": "tests/data/prepared_receptor_sensitivity/plan.json",
+        "target": "tests/data/prepared_receptor_sensitivity/plan.json"
+      },
+      {
+        "sha256": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63",
+        "source": "phmt_test_support/receptor_hypothesis_pilot.py",
+        "target": "phmt_test_support/receptor_hypothesis_pilot.py"
+      },
+      {
+        "sha256": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7",
+        "source": "tests/data/receptor_hypothesis_pilot/plan.json",
+        "target": "tests/data/receptor_hypothesis_pilot/plan.json"
+      }
+    ],
+    "base_commit": "60b21b7d183217d50c29ea3e6bc0d05fb5b797a2",
+    "base_tag": "0.4.0",
+    "changed_paths": 1146,
+    "commits_since_tag": 100,
+    "new_molecular_scientific_evaluations": 0,
+    "original_51_support_entries_unchanged": true,
+    "public_signature_change_count": 9,
+    "release_plan_version": "0.4.0",
+    "reviewed_source": "3d26b28ae072c106784299ee96d3a50f0edebc91",
+    "runtime_file_count": 43,
+    "runtime_files": [
+      {
+        "after_sha256": "c28d33a037a30407400c12dc9f8fe57f93a61a9c8337d85eb465b229e2cb098f",
+        "before_sha256": "a97a1357be9db63748b47587894446efb23ff98a3d7ed0065d351c8dda1e242e",
+        "group": "attribution diagnostics and dependency declarations",
+        "path": "pharmacophoremt/_ackredit.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "c38fab9fdca2a430dcceff13befbbef2db5be16754761609ede767507e8dc8f6",
+        "before_sha256": "b6ffd73ce99343e29678772aec667d5916e41791d11b4da1148425fcfa4fb2d0",
+        "group": "attribution diagnostics and dependency declarations",
+        "path": "pharmacophoremt/_depdigest.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "322bf97e5878b8f6304349c095128e0fa51c202ff114df661bd957e7acd78d84",
+        "before_sha256": "2602a2d7b6f3a463895d2f6d02014c79c8351a856b753458090d63f08e2a44ae",
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/argument/_contracts.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "4d1682d6113f963a3bd08f063af6e4741b56647a3087cdf6fb875c7a7ba52269",
+        "before_sha256": "b0a9130a1b136da8293d32b7a980d0e55f39d1852dfe98c1bd14f8cd2decee91",
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/curation.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "d19f9564ddea98e5530f35dd6bd7c3888c10cca4cacf0d9c58f3fdc124352228",
+        "before_sha256": null,
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/ligand_consensus.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "dc5a0f8a1716afbfe610d1992513187d693134ea696e357ef008955c1df84900",
+        "before_sha256": null,
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/model_dispatch.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "e419f4c3a2fd5a61f142eed8f74ca2f2bad6a2afd2280de38db45a7a3a963b0a",
+        "before_sha256": null,
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/native_geometry.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "f75e81a3a7a55daf6144d67e02d8839daf25b4034a7c824af3c6a263dbdd40a3",
+        "before_sha256": null,
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/receptor_generation.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "799a0c10200e5a84c5e555984c51d41c9a60776479c03fe991262c68c8306b35",
+        "before_sha256": null,
+        "group": "argument contracts",
+        "path": "pharmacophoremt/_private/arg_digestion/screening_facade.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+        "before_sha256": "ec578fe50ab54d3fdb7bbae8c04eb2fa607a9e19d06e15eea9e8eb1e38e85654",
+        "group": "MolSysMT receiving and compatibility",
+        "path": "pharmacophoremt/_private/molsysmt.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "d7b619c4e3e81c979a3b87a921630580e8adcaaa8b6d19d8261ef70152857b3a",
+        "before_sha256": "96311a6f2d7c3c2db8d3d9f938b393ab8d1dc9ab34efba0360162e5a50636e94",
+        "group": "attribution diagnostics and dependency declarations",
+        "path": "pharmacophoremt/_private/smonitor/catalog.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "35e2531e0ddd0cad9373a7c07a602ce5f7b8b3c641f368e184c9ba3aa79db427",
+        "before_sha256": "4759494a45818882b28a9bd7c9c7c63738b3471307cc0872de265be11b8f1e49",
+        "group": "attribution diagnostics and dependency declarations",
+        "path": "pharmacophoremt/_private/smonitor/exceptions.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "7b46e00417487f037c43d167e7439c63630ceb6fa6bd675d51545f4c2bd713fa",
+        "before_sha256": "73ee47e6be75e8b30360929d99b1fc494dd2f9ba0495193f6b595f449c06db9a",
+        "group": "shape contracts and interpretation",
+        "path": "pharmacophoremt/interaction_site/interaction_site.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "08ef01d58fa346ac5caa7f78aa7e8c1bad69fe9e45c79e635ec7556c0bf05d1f",
+        "before_sha256": "cdf025dffcb536c24a0f49a729bf6655b7795c6f5611f347fb4f602085766bfc",
+        "group": "shape contracts and interpretation",
+        "path": "pharmacophoremt/interaction_site/shape/disk.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "086f541709c2b1f96c4f1efb4910f157f35c0d77d9b94ec4b71852c69b0a9886",
+        "before_sha256": "52ab6ac86042a55169de8db500d871a75b1356c81422810646f4d39ba073d73b",
+        "group": "shape contracts and interpretation",
+        "path": "pharmacophoremt/interaction_site/shape/point.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "612a298487df1d9bb7fbc4a1ba3abba9f6f7b5211ae1e9101bbea6930d77b339",
+        "before_sha256": "4941e644c7be6ca23202b167561754b6d12b674a8ff51fa7646ffe1fd31c1ca7",
+        "group": "shape contracts and interpretation",
+        "path": "pharmacophoremt/interaction_site/shape/sphere.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "2a7adb73868a73d1560a0da9649922ed84da5311f4361476282d9c3a12fe10fd",
+        "before_sha256": "0d0ea608da6964353d2e7980d19e72db80e24c2f91f9beb983698ad9d20dc50a",
+        "group": "shape contracts and interpretation",
+        "path": "pharmacophoremt/interaction_site/shape/sphere_and_vector.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "b09aecad056f387540329fd854a45d57096c53602dd90a479f37ed12f871ab00",
+        "before_sha256": "d8004741945d9ab55f8f6fd09c01136966be7f5511bdc79a9e71b9a4be92261d",
+        "group": "native persistence and loading",
+        "path": "pharmacophoremt/io/__init__.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "756e4837f9686bedc29d6397207063ae38f19bf26afdd08e45095a7234a9bf6f",
+        "before_sha256": "3843a3268918657f666ba8373d12cc1fa204b5b9549d5dde0ed960cc1c678b55",
+        "group": "native persistence and loading",
+        "path": "pharmacophoremt/io/phmt/__init__.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "0f4c7c3ab06ef05eec5d3bb40f726fd3d2636253f9c3b3fbc75913e74823964b",
+        "before_sha256": "1c7e7357b61c1e2ec2fb4461278df737db4e7cc2a8fee273e54ab2d255ecd842",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/__init__.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "68b5f70ea1748ca3ec15e0b2f5bc48bbb180fdb1e33ed8e2e8de21304425fb7a",
+        "before_sha256": null,
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/_receptor_directions.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "80bd511f7ed4583001654e089371d11c8199ef8eaae967259570c39b9f8790f6",
+        "before_sha256": "16d886bcd4e191864934576ddd2b19e59e48a23fe5c37d354233eaf9ff95903d",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/composition.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "c19bce8a27461176318d775bc333633be3d4fefe9a8209a14b182d8595a15899",
+        "before_sha256": "df1557d1a62888c5121d3eb3990d2645cc1ce183bcab8796f18dc0bbd8abd1c3",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/curation.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "1aa43ff84fc1c241509d7fc1b3c6628ee3601f5e5ed849a0e54a93413de2103d",
+        "before_sha256": "f28010246a3fd00c8725fdab27647115d95c3a16c2b2247c24c0f4235a17172b",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/dispatcher.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "0e282275f0d962db6e293bf9a5328068df85712f07529c180103faf34f559315",
+        "before_sha256": "4ecede3ec9409b133f9d9edaae0afc15586c9660871b09cbc3a4dd4502c6284b",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/excluded_volumes.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+        "before_sha256": "671b9d950223ae28bb24225835345bf606c1a4e092ef92df8f623d34f6b5aafd",
+        "group": "MolSysMT receiving and compatibility",
+        "path": "pharmacophoremt/modeler/features.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "057a4c5337b52132d1a725892a7e0a0f7baf75a408852c1040a53ddd346db70d",
+        "before_sha256": "3c0d89fe8c545d554a480056bc70eb7232da282d4e0d83c7d8c04122b3826e34",
+        "group": "MolSysMT receiving and compatibility",
+        "path": "pharmacophoremt/modeler/interaction_based.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "4cbdcc9d65001d7cc7c5c4217d9d3ab15e17789d02290977e69e7486ea331b8b",
+        "before_sha256": "f11ca9b86019399dbe9bc5e056a9ceb292da944f6013723870b154833f30fc91",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/ligand_based.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "0d427eac50f6876d3aeec6aef398235a6063e00bfae423a014ebe7472767a672",
+        "before_sha256": null,
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/receptor_generation.py",
+        "public_signature_changes": [
+          {
+            "after": "feature_inventory, *, receptor_profile, donor_distances, aromatic_distances, radius, max_hypotheses, excluded_volume_inventory=None, excluded_volume_radius=None, acceptor_directions=None, acceptor_structure_position=None, acceptor_distances=None, acceptor_target_orientation=None, name=None, skip_digestion=False",
+            "before": null,
+            "symbol": "from_receptor_features"
+          }
+        ]
+      },
+      {
+        "after_sha256": "b9cfd54f1610f20c79269dd28eac80879699f611a60075c82bf6a7a60dc6f895",
+        "before_sha256": "0432492a32c5079c28ec90da955f4c2a0bc791f34ec82f8b89e988e87dcc9d27",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/receptor_projections.py",
+        "public_signature_changes": [
+          {
+            "after": "feature_inventory, *, projection_specs, radius='0.15 nm', name=None, skip_digestion=False",
+            "before": "feature_inventory, *, projection_specs, radius='0.15 nm', name=None",
+            "symbol": "from_receptor_projections"
+          }
+        ]
+      },
+      {
+        "after_sha256": "01f72cb0204a1ed42e94ad9ce1adb362ff9e744b7775cec2929a39e7c894a1b3",
+        "before_sha256": "65bdbc3d0223f7a58e4f948af3c2504826aab127e92ea539034f7c0c1f304cfe",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/modeler/structure_based.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "504c4fad34d8090ac362c40572f9f1f62e49217289e8717b841f77f908301988",
+        "before_sha256": "edb6296dd5e6cc10c5f2dbc7bdc5031eab76fc8ac16099aabd361520a02021c0",
+        "group": "model generation composition and curation",
+        "path": "pharmacophoremt/pharmacophore.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "45d3b5fa4089a6def06b34df6152987fee1f6f0a263d0df8f86889652403627d",
+        "before_sha256": "153dadafc322e0043004b4fc5cbeb713d0e1322141798f84f61d53ed3106476d",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/__init__.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc",
+        "before_sha256": "f77c13329caa35d7237e1eb6b4db996743809b3d7c532db0e6151237ddebf744",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/alignment.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "11bb3e24618c15a89ab8e4d2d8013295d957ed06c34bda2bfa665eb2c0292a12",
+        "before_sha256": "f9737a1090a0aa1ea03ec95a59767525de713515cc67ce6ae3ab943de3f11998",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/conformer_screening.py",
+        "public_signature_changes": [
+          {
+            "after": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0, search_method='placed_and_triplets'",
+            "before": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0",
+            "symbol": "ConformerScreening.__init__"
+          }
+        ]
+      },
+      {
+        "after_sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24",
+        "before_sha256": "a24f238762f06022d1c5c58eb094fcad4760081472fbd3e34070aaf58ebd7c42",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/correspondence.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "4c76751a0eafdd84d791d3a2077995a50bf8df31108c4464e38190d8ecaca47c",
+        "before_sha256": "7e75e3a4ad8deb48484f22ee816fb28f837a657c38b461d7603d477330f271b7",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/pose_evaluation.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "631a1d49c7e0f87c5324719444faa0b9148eb7394fb275a303f9b7d604800778",
+        "before_sha256": "414920a4ff2b6087689aac5cf4e1c8a6e9c45a95e83c5a47fbbffa7e6af99415",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/rigid_search.py",
+        "public_signature_changes": [
+          {
+            "after": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0, search_method='placed_and_triplets'",
+            "before": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0",
+            "symbol": "RigidPoseSearch.__init__"
+          }
+        ]
+      },
+      {
+        "after_sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+        "before_sha256": null,
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/scoring.py",
+        "public_signature_changes": [
+          {
+            "after": "result, *, score_method",
+            "before": null,
+            "symbol": "get_screening_score"
+          }
+        ]
+      },
+      {
+        "after_sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+        "before_sha256": "935f10718b2d2f82271e1dbbba10a948df71b3a30bb3b20744b5fe21f26a76f5",
+        "group": "screening ranking and matching",
+        "path": "pharmacophoremt/screening/virtual_screening.py",
+        "public_signature_changes": [
+          {
+            "after": "self, pharmacophore, min_match_ratio=1.0, n_conformers=50, point_tolerance='0.10 nm', direction_tolerance='30 degrees', *, screening_method=None, score_method=None, skip_digestion=False, **native_options",
+            "before": "self, pharmacophore, min_match_ratio=1.0, n_conformers=50, point_tolerance='0.10 nm', direction_tolerance='30 degrees', *, screening_method=None, **native_options",
+            "symbol": "VirtualScreening.__init__"
+          }
+        ]
+      },
+      {
+        "after_sha256": "0ce443961596b762f8240b7053a72a1e1ab1430979161aae9583651428c1e4a5",
+        "before_sha256": "c9ab54aedc68e0078de625cc9849c9821ba45338c74d33714479255c3bfc6091",
+        "group": "saved analysis and validation",
+        "path": "pharmacophoremt/validation/__init__.py",
+        "public_signature_changes": []
+      },
+      {
+        "after_sha256": "b081d41e80b7151f9848f418df40d0bef9b249398eaa261671d0581753b5b5d7",
+        "before_sha256": "920401c4b050c6e2d899156c1c276cb2f81970e4752a402cc5822e0dc91133fe",
+        "group": "saved analysis and validation",
+        "path": "pharmacophoremt/validation/retrospective.py",
+        "public_signature_changes": [
+          {
+            "after": "self, pharmacophore, min_match_ratio=1.0, *, evaluator=None, score_method=None",
+            "before": "self, pharmacophore, min_match_ratio=1.0, *, evaluator=None",
+            "symbol": "RetrospectiveValidator.__init__"
+          }
+        ]
+      },
+      {
+        "after_sha256": "49b8fa863c762f7f90c2470f5b4e8c027d0371aeb193a75ddd184fad90cce562",
+        "before_sha256": null,
+        "group": "saved analysis and validation",
+        "path": "pharmacophoremt/validation/saved_results.py",
+        "public_signature_changes": [
+          {
+            "after": "cohort, baseline, comparison, *, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0",
+            "before": null,
+            "symbol": "compare_screening_results"
+          },
+          {
+            "after": "cohort, evaluations, *, input_mapping, score_method, unscored=(), source_metadata=None, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0",
+            "before": null,
+            "symbol": "summarize_screening_results"
+          }
+        ]
+      }
+    ],
+    "runtime_groups": {
+      "MolSysMT receiving and compatibility": 3,
+      "argument contracts": 7,
+      "attribution diagnostics and dependency declarations": 4,
+      "model generation composition and curation": 11,
+      "native persistence and loading": 2,
+      "saved analysis and validation": 3,
+      "screening ranking and matching": 8,
+      "shape contracts and interpretation": 5
+    },
+    "unchanged_release_dependency_inputs": {
+      "devtools/conda-build/meta.yaml": "3497f65fcae4c7c2db441402a181d48956107eb9442d5b2f1ee84209840f50e5",
+      "devtools/conda-build/release_plan.toml": "bcd78b752420f406fc7f14b52e72e930894ee89c9ca4265502b30bfe951885c7",
+      "devtools/dependency_routes.toml": "fd59da2fad716631471019cc56487254e0a4dcf56c6bb1139306b76299ec4fa0",
+      "devtools/requirements/controlled_suite_dependencies.txt": "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f",
+      "devtools/requirements/controlled_suite_dependencies_py314.txt": "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f",
+      "pyproject.toml": "0b8dc89625ffce690a71bb089897074064486efe81289813f457b8744fb56cd8"
+    }
+  },
+  "support": {
+    "actual_probe": {
+      "argv": [
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/support_probe.py"
+      ],
+      "collected": 126,
+      "command": [
+        "--collect-only",
+        "-q",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/tests/test_receptor_sensitivity.py",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/tests/test_prepared_receptor_sensitivity.py",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/tests/test_receptor_hypothesis_pilot.py"
+      ],
+      "executable": "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "exit_code": 0,
+      "inputs_after": {
+        "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+        "devguide/evidence/eralpha_interface_py314_summary.json": "c27849bb8169272097ab4c2785c153fd038d89a73f8e537b8bd7326d56f1fc6c",
+        "phmt_test_support/__init__.py": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2",
+        "phmt_test_support/absence_inputs.py": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+        "phmt_test_support/aromatic_interaction_cases.py": "d6cb981aebcc9855cb19e17c876dca33a3241f29d24d05a4a7db99476d4813d1",
+        "phmt_test_support/audit_eralpha.py": "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36",
+        "phmt_test_support/audit_eralpha_receptor.py": "2bac1fadefcba1c69c42835b054e6b1fc6ccbf359d60601f14c69c6ff5b2547f",
+        "phmt_test_support/audit_eralpha_sources.py": "414e62567b5e9e4c211497662cc96b3e268db0b2f37dc971fe2a5f73f5da30eb",
+        "phmt_test_support/audit_legacy_cliques.py": "4b9940fcda450e035ffbcd416e80d56674b0b70d3f1875820f35c1245e86b047",
+        "phmt_test_support/benchmark_rigid_consensus.py": "30e301fa07b984c30df2e8025a9a84f513347f8cf035dc7c4b4b7f475ebceebc",
+        "phmt_test_support/ccd_interaction_cases.py": "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae",
+        "phmt_test_support/diagnose_eralpha_interface.py": "12765a9f34f8f88b7a4b10d6e8241e8f072aa2209710c3d3b9fe0000722fe0cc",
+        "phmt_test_support/evidence_archive.py": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb",
+        "phmt_test_support/interaction_cases.py": "b802a8d3b7cd8d0227d2d29367f2c2006ed25781027aa766ac291f3cf7cbb8d5",
+        "phmt_test_support/interaction_collection_cases.py": "c19a49dc4e026e33c6b1685766d089c8185346052374b7df8b8dea0ce95a02a4",
+        "phmt_test_support/legacy_clique_helpers.py": "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14",
+        "phmt_test_support/prepare_eralpha_hydrogens.py": "103c2e6d26495eaf048b135ab5ef76df78d84d947fa56af73682cf8c7d04671b",
+        "phmt_test_support/prepare_eralpha_interface.py": "efe75a6f7b1b50c7e016a9394048186e64699a9d872373d07005c1efe1e7086a",
+        "phmt_test_support/prepare_eralpha_ligand.py": "19c979a39fda4a3873dd5889bceefa8982e12070c8f260b593603808d5c087f8",
+        "phmt_test_support/prepared_ccd_ligands.py": "190c97862cdbc3c84d5673989ba51f630a86fa558b3cbb6bb99d7dfcf809abb2",
+        "phmt_test_support/prepared_consensus_workflow.py": "8c2abec2ecee1196556fb8c8b1045fce41eb6a0dbc51d496d3073425a963908b",
+        "phmt_test_support/prepared_receptor_sensitivity.py": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a",
+        "phmt_test_support/prepared_receptor_workflow.py": "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1",
+        "phmt_test_support/prepared_search_workflow.py": "5d987ce1caa26a76db51c3574278719d85a1cf8d5657873fcbf3d19bdf8ec533",
+        "phmt_test_support/prepared_workflow.py": "3956dce50125ce801246316debfe540317ef3a7902d5b7ae8d4bad71624a39d0",
+        "phmt_test_support/receptor_hypothesis_pilot.py": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63",
+        "phmt_test_support/receptor_sensitivity.py": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+        "phmt_test_support/rigid_consensus_cases.py": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+        "phmt_test_support/rigid_refinement_cases.py": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17",
+        "phmt_test_support/rigid_refinement_workloads.py": "292c1237100948d842dacf3268da2d9fe064d945bd43f94bd58d6d3394e2bcf8",
+        "phmt_test_support/saved_model_reader.py": "25baaf6b218d09e15108809b04739004e471e4e99fd3c5d53f6802775e2b9016",
+        "phmt_test_support/validate_aromatic_interactions.py": "ff20aa36de3938757d32a882ec3553cf7423ab57f7fc62fd812816763bbe426c",
+        "phmt_test_support/validate_eralpha_exclusions.py": "4e199feecf9df45b76dcaa5ea416b2f1cff58c90e3780e50752bd4e7722930ea",
+        "phmt_test_support/validate_eralpha_hydrogens.py": "5c41b37c843e155f0297a9d5c8f9674a9ad394802c2f7643277fe94572db929f",
+        "phmt_test_support/validate_eralpha_interface.py": "b7bca94583a82dd80e313ea4bc5ae3e2d59234fa1d5383a9007e16f4e964576d",
+        "phmt_test_support/validate_eralpha_template.py": "b086a17df01fd0af6c012c4896a9ec7a6e109e3b6d38548d4e692acf232f5ee0",
+        "phmt_test_support/validate_prepared_ccd_ligands.py": "055c3ea310ab5f75d931bc390797a292c0510b2cecc69fe27a5de400cfbbdb75",
+        "tests/data/eralpha_audit.json": "76e3fb58fdebcacb3d3458af17949b3482e360c8cba1ab6bff9d9843dfc07020",
+        "tests/data/eralpha_complex.pdb": "90e3159bc03424d976742c96c8cc2d2b32c9e1abf140d4652b70518b06a775f1",
+        "tests/data/eralpha_interface/diagnostics.json": "fa9f95859f4a3b85ab77fd7d6ab65b8c214a4536dd2e81d7f152d6b231eee04f",
+        "tests/data/eralpha_interface/manifest.json": "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8",
+        "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+        "tests/data/eralpha_rcsb/1qku_EST_D.sdf": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+        "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+        "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+        "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+        "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+        "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+        "tests/data/prepared_ccd/DES_ideal.sdf": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+        "tests/data/prepared_ccd/EST_ideal.sdf": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+        "tests/data/prepared_ccd/manifest.json": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+        "tests/data/prepared_receptor_sensitivity/plan.json": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e",
+        "tests/data/receptor_hypothesis_pilot/plan.json": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7",
+        "tests/data/receptor_sensitivity/plan.json": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+        "tests/data/rigid_consensus_cases.json": "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0",
+        "tests/data/rigid_refinement_cases.json": "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7",
+        "tests/data/rigid_refinement_workloads.json": "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48"
+      },
+      "inputs_before": {
+        "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+        "devguide/evidence/eralpha_interface_py314_summary.json": "c27849bb8169272097ab4c2785c153fd038d89a73f8e537b8bd7326d56f1fc6c",
+        "phmt_test_support/__init__.py": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2",
+        "phmt_test_support/absence_inputs.py": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+        "phmt_test_support/aromatic_interaction_cases.py": "d6cb981aebcc9855cb19e17c876dca33a3241f29d24d05a4a7db99476d4813d1",
+        "phmt_test_support/audit_eralpha.py": "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36",
+        "phmt_test_support/audit_eralpha_receptor.py": "2bac1fadefcba1c69c42835b054e6b1fc6ccbf359d60601f14c69c6ff5b2547f",
+        "phmt_test_support/audit_eralpha_sources.py": "414e62567b5e9e4c211497662cc96b3e268db0b2f37dc971fe2a5f73f5da30eb",
+        "phmt_test_support/audit_legacy_cliques.py": "4b9940fcda450e035ffbcd416e80d56674b0b70d3f1875820f35c1245e86b047",
+        "phmt_test_support/benchmark_rigid_consensus.py": "30e301fa07b984c30df2e8025a9a84f513347f8cf035dc7c4b4b7f475ebceebc",
+        "phmt_test_support/ccd_interaction_cases.py": "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae",
+        "phmt_test_support/diagnose_eralpha_interface.py": "12765a9f34f8f88b7a4b10d6e8241e8f072aa2209710c3d3b9fe0000722fe0cc",
+        "phmt_test_support/evidence_archive.py": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb",
+        "phmt_test_support/interaction_cases.py": "b802a8d3b7cd8d0227d2d29367f2c2006ed25781027aa766ac291f3cf7cbb8d5",
+        "phmt_test_support/interaction_collection_cases.py": "c19a49dc4e026e33c6b1685766d089c8185346052374b7df8b8dea0ce95a02a4",
+        "phmt_test_support/legacy_clique_helpers.py": "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14",
+        "phmt_test_support/prepare_eralpha_hydrogens.py": "103c2e6d26495eaf048b135ab5ef76df78d84d947fa56af73682cf8c7d04671b",
+        "phmt_test_support/prepare_eralpha_interface.py": "efe75a6f7b1b50c7e016a9394048186e64699a9d872373d07005c1efe1e7086a",
+        "phmt_test_support/prepare_eralpha_ligand.py": "19c979a39fda4a3873dd5889bceefa8982e12070c8f260b593603808d5c087f8",
+        "phmt_test_support/prepared_ccd_ligands.py": "190c97862cdbc3c84d5673989ba51f630a86fa558b3cbb6bb99d7dfcf809abb2",
+        "phmt_test_support/prepared_consensus_workflow.py": "8c2abec2ecee1196556fb8c8b1045fce41eb6a0dbc51d496d3073425a963908b",
+        "phmt_test_support/prepared_receptor_sensitivity.py": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a",
+        "phmt_test_support/prepared_receptor_workflow.py": "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1",
+        "phmt_test_support/prepared_search_workflow.py": "5d987ce1caa26a76db51c3574278719d85a1cf8d5657873fcbf3d19bdf8ec533",
+        "phmt_test_support/prepared_workflow.py": "3956dce50125ce801246316debfe540317ef3a7902d5b7ae8d4bad71624a39d0",
+        "phmt_test_support/receptor_hypothesis_pilot.py": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63",
+        "phmt_test_support/receptor_sensitivity.py": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+        "phmt_test_support/rigid_consensus_cases.py": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+        "phmt_test_support/rigid_refinement_cases.py": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17",
+        "phmt_test_support/rigid_refinement_workloads.py": "292c1237100948d842dacf3268da2d9fe064d945bd43f94bd58d6d3394e2bcf8",
+        "phmt_test_support/saved_model_reader.py": "25baaf6b218d09e15108809b04739004e471e4e99fd3c5d53f6802775e2b9016",
+        "phmt_test_support/validate_aromatic_interactions.py": "ff20aa36de3938757d32a882ec3553cf7423ab57f7fc62fd812816763bbe426c",
+        "phmt_test_support/validate_eralpha_exclusions.py": "4e199feecf9df45b76dcaa5ea416b2f1cff58c90e3780e50752bd4e7722930ea",
+        "phmt_test_support/validate_eralpha_hydrogens.py": "5c41b37c843e155f0297a9d5c8f9674a9ad394802c2f7643277fe94572db929f",
+        "phmt_test_support/validate_eralpha_interface.py": "b7bca94583a82dd80e313ea4bc5ae3e2d59234fa1d5383a9007e16f4e964576d",
+        "phmt_test_support/validate_eralpha_template.py": "b086a17df01fd0af6c012c4896a9ec7a6e109e3b6d38548d4e692acf232f5ee0",
+        "phmt_test_support/validate_prepared_ccd_ligands.py": "055c3ea310ab5f75d931bc390797a292c0510b2cecc69fe27a5de400cfbbdb75",
+        "tests/data/eralpha_audit.json": "76e3fb58fdebcacb3d3458af17949b3482e360c8cba1ab6bff9d9843dfc07020",
+        "tests/data/eralpha_complex.pdb": "90e3159bc03424d976742c96c8cc2d2b32c9e1abf140d4652b70518b06a775f1",
+        "tests/data/eralpha_interface/diagnostics.json": "fa9f95859f4a3b85ab77fd7d6ab65b8c214a4536dd2e81d7f152d6b231eee04f",
+        "tests/data/eralpha_interface/manifest.json": "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8",
+        "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+        "tests/data/eralpha_rcsb/1qku_EST_D.sdf": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+        "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+        "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+        "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+        "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+        "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+        "tests/data/prepared_ccd/DES_ideal.sdf": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+        "tests/data/prepared_ccd/EST_ideal.sdf": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+        "tests/data/prepared_ccd/manifest.json": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+        "tests/data/prepared_receptor_sensitivity/plan.json": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e",
+        "tests/data/receptor_hypothesis_pilot/plan.json": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7",
+        "tests/data/receptor_sensitivity/plan.json": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+        "tests/data/rigid_consensus_cases.json": "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0",
+        "tests/data/rigid_refinement_cases.json": "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7",
+        "tests/data/rigid_refinement_workloads.json": "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48"
+      },
+      "modules": [
+        {
+          "module": "phmt_test_support.receptor_sensitivity",
+          "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn/phmt_test_support/receptor_sensitivity.py",
+          "plan": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn/tests/data/receptor_sensitivity/plan.json",
+          "plan_sha256": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14"
+        },
+        {
+          "module": "phmt_test_support.prepared_receptor_sensitivity",
+          "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn/phmt_test_support/prepared_receptor_sensitivity.py",
+          "plan": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn/tests/data/prepared_receptor_sensitivity/plan.json",
+          "plan_sha256": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e"
+        },
+        {
+          "module": "phmt_test_support.receptor_hypothesis_pilot",
+          "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn/phmt_test_support/receptor_hypothesis_pilot.py",
+          "plan": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn/tests/data/receptor_hypothesis_pilot/plan.json",
+          "plan_sha256": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7"
+        }
+      ],
+      "namespace_available_after": false,
+      "namespace_available_before": false,
+      "namespace_loaded_after": false,
+      "nodeids": [
+        "tests/test_receptor_sensitivity.py::test_projection_distance_and_radius_have_declared_acceptance_bands[0-0]",
+        "tests/test_receptor_sensitivity.py::test_projection_distance_and_radius_have_declared_acceptance_bands[0-1]",
+        "tests/test_receptor_sensitivity.py::test_projection_distance_and_radius_have_declared_acceptance_bands[1-0]",
+        "tests/test_receptor_sensitivity.py::test_projection_distance_and_radius_have_declared_acceptance_bands[1-1]",
+        "tests/test_receptor_sensitivity.py::test_projection_distance_and_radius_have_declared_acceptance_bands[2-0]",
+        "tests/test_receptor_sensitivity.py::test_projection_distance_and_radius_have_declared_acceptance_bands[2-1]",
+        "tests/test_receptor_sensitivity.py::test_point_tolerance_does_not_widen_receptor_sphere[0-0]",
+        "tests/test_receptor_sensitivity.py::test_point_tolerance_does_not_widen_receptor_sphere[0-1]",
+        "tests/test_receptor_sensitivity.py::test_point_tolerance_does_not_widen_receptor_sphere[1-0]",
+        "tests/test_receptor_sensitivity.py::test_point_tolerance_does_not_widen_receptor_sphere[1-1]",
+        "tests/test_receptor_sensitivity.py::test_exclusion_sensitivity_changes_veto_without_changing_positive_coverage[0]",
+        "tests/test_receptor_sensitivity.py::test_exclusion_sensitivity_changes_veto_without_changing_positive_coverage[1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[0-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[0-1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[1-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[1-1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[2-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[2-1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[3-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[3-1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[4-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[4-1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[5-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[5-1]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[6-0]",
+        "tests/test_receptor_sensitivity.py::test_constraint_ablation_distinguishes_requirement_weight_and_denominator[6-1]",
+        "tests/test_receptor_sensitivity.py::test_aromatic_sensitivity_uses_an_unoriented_axis[0-0]",
+        "tests/test_receptor_sensitivity.py::test_aromatic_sensitivity_uses_an_unoriented_axis[0-1]",
+        "tests/test_receptor_sensitivity.py::test_aromatic_sensitivity_uses_an_unoriented_axis[1-0]",
+        "tests/test_receptor_sensitivity.py::test_aromatic_sensitivity_uses_an_unoriented_axis[1-1]",
+        "tests/test_receptor_sensitivity.py::test_invalid_frame_is_unscored_instead_of_a_valid_negative[0]",
+        "tests/test_receptor_sensitivity.py::test_invalid_frame_is_unscored_instead_of_a_valid_negative[1]",
+        "tests/test_receptor_sensitivity.py::test_complete_fixed_matrix_and_unchanged_source_custody[0]",
+        "tests/test_receptor_sensitivity.py::test_complete_fixed_matrix_and_unchanged_source_custody[1]",
+        "tests/test_receptor_sensitivity.py::test_application_units_preserve_each_physical_answer",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[-1-point-policy0]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[-1-point-policy1]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[-1-sphere-policy0]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[-1-sphere-policy1]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[0-point-policy0]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[0-point-policy1]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[0-sphere-policy0]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[0-sphere-policy1]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[1-point-policy0]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[1-point-policy1]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[1-sphere-policy0]",
+        "tests/test_receptor_sensitivity.py::test_numerical_boundary_policy_keeps_resolved_inside_and_outside_poses[1-sphere-policy1]",
+        "tests/test_receptor_sensitivity.py::test_positive_site_numerical_allowance_is_explicit_in_criteria[0]",
+        "tests/test_receptor_sensitivity.py::test_positive_site_numerical_allowance_is_explicit_in_criteria[1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[0-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[0-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[0-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[0-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[1-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[1-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[1-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[1-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[2-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[2-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[2-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_predeclared_placement_bands_and_separate_opposite_face[2-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_every_steric_veto_matches_independent_original_coordinate_oracle[0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_every_steric_veto_matches_independent_original_coordinate_oracle[0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_every_steric_veto_matches_independent_original_coordinate_oracle[1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_every_steric_veto_matches_independent_original_coordinate_oracle[1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_every_steric_veto_matches_independent_original_coordinate_oracle[2-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_every_steric_veto_matches_independent_original_coordinate_oracle[2-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[0-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[0-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[0-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[0-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[1-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[1-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[1-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[1-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[2-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[2-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[2-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[2-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[3-0-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[3-0-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[3-1-0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_rotated_candidate_obeys_independent_plane_axis_angle[3-1-1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_source_custody_and_provider_transforms_keep_the_frozen_input[0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_source_custody_and_provider_transforms_keep_the_frozen_input[1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_exclusion_removal_records_a_hypothesis_change_without_modifying_source[0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_exclusion_removal_records_a_hypothesis_change_without_modifying_source[1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_original_negative_and_real_failed_frame_remain_distinct[0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_original_negative_and_real_failed_frame_remain_distinct[1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_complete_prespecified_ledger_unit_policy_and_actual_input_credit[0]",
+        "tests/test_prepared_receptor_sensitivity.py::test_complete_prespecified_ledger_unit_policy_and_actual_input_credit[1]",
+        "tests/test_prepared_receptor_sensitivity.py::test_each_physical_answer_is_preserved_across_application_units",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[0-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[0-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[1-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[1-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[2-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[2-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[3-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[3-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[4-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[4-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[5-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[5-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[6-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[6-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[7-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_every_separate_hypothesis_matches_raw_coordinate_oracle[7-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_exhaustion_is_separate_from_budget_limited_empty_output[0-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_exhaustion_is_separate_from_budget_limited_empty_output[0-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_exhaustion_is_separate_from_budget_limited_empty_output[1-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_exhaustion_is_separate_from_budget_limited_empty_output[1-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_exhaustion_is_separate_from_budget_limited_empty_output[2-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_exhaustion_is_separate_from_budget_limited_empty_output[2-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_independent_pair_controls_preserve_alternatives_and_axis_semantics[1-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_independent_pair_controls_preserve_alternatives_and_axis_semantics[1-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_independent_pair_controls_preserve_alternatives_and_axis_semantics[-1-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_independent_pair_controls_preserve_alternatives_and_axis_semantics[-1-1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_native_custody_persistence_real_failure_and_actual_credit[0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_native_custody_persistence_real_failure_and_actual_credit[1]",
+        "tests/test_receptor_hypothesis_pilot.py::test_physical_hypotheses_and_pair_answers_agree_across_unit_policies",
+        "tests/test_receptor_hypothesis_pilot.py::test_cached_generation_has_no_molecular_access_and_results_are_independent",
+        "tests/test_receptor_hypothesis_pilot.py::test_missing_required_cached_geometry_is_a_failure_not_an_invented_axis[direction-0]",
+        "tests/test_receptor_hypothesis_pilot.py::test_missing_required_cached_geometry_is_a_failure_not_an_invented_axis[normal-2]",
+        "tests/test_receptor_hypothesis_pilot.py::test_missing_profile_family_is_not_applicable_not_inactivity[False]",
+        "tests/test_receptor_hypothesis_pilot.py::test_missing_profile_family_is_not_applicable_not_inactivity[True]"
+      ],
+      "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+      "resources_retired": true,
+      "runtime_origins": {
+        "ackredit": {
+          "path": "/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+          "version": "0.12.0+11.g74f865d"
+        },
+        "argdigest": {
+          "path": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages/argdigest/__init__.py",
+          "version": "0.17.0"
+        },
+        "depdigest": {
+          "path": "/tmp/phmt69-fixed-20261103-q6cirii4/depdigest/depdigest/__init__.py",
+          "version": "0.15.1"
+        },
+        "molsysmt": {
+          "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/__init__.py",
+          "version": "0.23.0+370.g0faf1584d"
+        },
+        "numpy": {
+          "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/__init__.py",
+          "version": "2.4.6"
+        },
+        "pharmacophoremt": {
+          "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+          "version": "0.4.0+62.g6a7537b"
+        },
+        "pyunitwizard": {
+          "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "version": "0.29.0+4.g9d74f0e"
+        },
+        "smonitor": {
+          "path": "/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "version": "0.22.0+16.gccdcace"
+        }
+      },
+      "support_receipt": {
+        "binding": {
+          "context": {
+            "candidate_sha": null,
+            "filename": null,
+            "provider_sha": null,
+            "qualification_sha": null,
+            "run_attempt": null,
+            "run_id": null,
+            "sha256": null
+          },
+          "provider_state": "unknown",
+          "scope": "artifact/qualification/run labels are caller context; not artifact verification",
+          "source_state": "unknown"
+        },
+        "bytes": 6196601,
+        "checks": 4,
+        "declaration_sha256": "13e1437edfcd9b896b07975f4f5cd830c7d3ea021fd3e52b391520db74329fba",
+        "files": [
+          {
+            "bytes": 585225,
+            "kind": "data",
+            "sha256": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+            "source": "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz",
+            "target": "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz"
+          },
+          {
+            "bytes": 9839,
+            "kind": "data",
+            "sha256": "c27849bb8169272097ab4c2785c153fd038d89a73f8e537b8bd7326d56f1fc6c",
+            "source": "devguide/evidence/eralpha_interface_py314_summary.json",
+            "target": "devguide/evidence/eralpha_interface_py314_summary.json"
+          },
+          {
+            "bytes": 74,
+            "kind": "code",
+            "sha256": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2",
+            "source": "phmt_test_support/__init__.py",
+            "target": "phmt_test_support/__init__.py"
+          },
+          {
+            "bytes": 5917,
+            "kind": "code",
+            "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+            "source": "phmt_test_support/absence_inputs.py",
+            "target": "phmt_test_support/absence_inputs.py"
+          },
+          {
+            "bytes": 581,
+            "kind": "code",
+            "sha256": "d6cb981aebcc9855cb19e17c876dca33a3241f29d24d05a4a7db99476d4813d1",
+            "source": "phmt_test_support/aromatic_interaction_cases.py",
+            "target": "phmt_test_support/aromatic_interaction_cases.py"
+          },
+          {
+            "bytes": 5018,
+            "kind": "code",
+            "sha256": "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36",
+            "source": "phmt_test_support/audit_eralpha.py",
+            "target": "phmt_test_support/audit_eralpha.py"
+          },
+          {
+            "bytes": 12549,
+            "kind": "code",
+            "sha256": "2bac1fadefcba1c69c42835b054e6b1fc6ccbf359d60601f14c69c6ff5b2547f",
+            "source": "phmt_test_support/audit_eralpha_receptor.py",
+            "target": "phmt_test_support/audit_eralpha_receptor.py"
+          },
+          {
+            "bytes": 4843,
+            "kind": "code",
+            "sha256": "414e62567b5e9e4c211497662cc96b3e268db0b2f37dc971fe2a5f73f5da30eb",
+            "source": "phmt_test_support/audit_eralpha_sources.py",
+            "target": "phmt_test_support/audit_eralpha_sources.py"
+          },
+          {
+            "bytes": 3162,
+            "kind": "code",
+            "sha256": "4b9940fcda450e035ffbcd416e80d56674b0b70d3f1875820f35c1245e86b047",
+            "source": "phmt_test_support/audit_legacy_cliques.py",
+            "target": "phmt_test_support/audit_legacy_cliques.py"
+          },
+          {
+            "bytes": 13729,
+            "kind": "code",
+            "sha256": "30e301fa07b984c30df2e8025a9a84f513347f8cf035dc7c4b4b7f475ebceebc",
+            "source": "phmt_test_support/benchmark_rigid_consensus.py",
+            "target": "phmt_test_support/benchmark_rigid_consensus.py"
+          },
+          {
+            "bytes": 5854,
+            "kind": "code",
+            "sha256": "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae",
+            "source": "phmt_test_support/ccd_interaction_cases.py",
+            "target": "phmt_test_support/ccd_interaction_cases.py"
+          },
+          {
+            "bytes": 15494,
+            "kind": "code",
+            "sha256": "12765a9f34f8f88b7a4b10d6e8241e8f072aa2209710c3d3b9fe0000722fe0cc",
+            "source": "phmt_test_support/diagnose_eralpha_interface.py",
+            "target": "phmt_test_support/diagnose_eralpha_interface.py"
+          },
+          {
+            "bytes": 4195,
+            "kind": "code",
+            "sha256": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb",
+            "source": "phmt_test_support/evidence_archive.py",
+            "target": "phmt_test_support/evidence_archive.py"
+          },
+          {
+            "bytes": 7641,
+            "kind": "code",
+            "sha256": "b802a8d3b7cd8d0227d2d29367f2c2006ed25781027aa766ac291f3cf7cbb8d5",
+            "source": "phmt_test_support/interaction_cases.py",
+            "target": "phmt_test_support/interaction_cases.py"
+          },
+          {
+            "bytes": 241,
+            "kind": "code",
+            "sha256": "c19a49dc4e026e33c6b1685766d089c8185346052374b7df8b8dea0ce95a02a4",
+            "source": "phmt_test_support/interaction_collection_cases.py",
+            "target": "phmt_test_support/interaction_collection_cases.py"
+          },
+          {
+            "bytes": 2333,
+            "kind": "code",
+            "sha256": "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14",
+            "source": "phmt_test_support/legacy_clique_helpers.py",
+            "target": "phmt_test_support/legacy_clique_helpers.py"
+          },
+          {
+            "bytes": 4167,
+            "kind": "code",
+            "sha256": "103c2e6d26495eaf048b135ab5ef76df78d84d947fa56af73682cf8c7d04671b",
+            "source": "phmt_test_support/prepare_eralpha_hydrogens.py",
+            "target": "phmt_test_support/prepare_eralpha_hydrogens.py"
+          },
+          {
+            "bytes": 8912,
+            "kind": "code",
+            "sha256": "efe75a6f7b1b50c7e016a9394048186e64699a9d872373d07005c1efe1e7086a",
+            "source": "phmt_test_support/prepare_eralpha_interface.py",
+            "target": "phmt_test_support/prepare_eralpha_interface.py"
+          },
+          {
+            "bytes": 7247,
+            "kind": "code",
+            "sha256": "19c979a39fda4a3873dd5889bceefa8982e12070c8f260b593603808d5c087f8",
+            "source": "phmt_test_support/prepare_eralpha_ligand.py",
+            "target": "phmt_test_support/prepare_eralpha_ligand.py"
+          },
+          {
+            "bytes": 7427,
+            "kind": "code",
+            "sha256": "190c97862cdbc3c84d5673989ba51f630a86fa558b3cbb6bb99d7dfcf809abb2",
+            "source": "phmt_test_support/prepared_ccd_ligands.py",
+            "target": "phmt_test_support/prepared_ccd_ligands.py"
+          },
+          {
+            "bytes": 8057,
+            "kind": "code",
+            "sha256": "8c2abec2ecee1196556fb8c8b1045fce41eb6a0dbc51d496d3073425a963908b",
+            "source": "phmt_test_support/prepared_consensus_workflow.py",
+            "target": "phmt_test_support/prepared_consensus_workflow.py"
+          },
+          {
+            "bytes": 12889,
+            "kind": "code",
+            "sha256": "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1",
+            "source": "phmt_test_support/prepared_receptor_workflow.py",
+            "target": "phmt_test_support/prepared_receptor_workflow.py"
+          },
+          {
+            "bytes": 10347,
+            "kind": "code",
+            "sha256": "5d987ce1caa26a76db51c3574278719d85a1cf8d5657873fcbf3d19bdf8ec533",
+            "source": "phmt_test_support/prepared_search_workflow.py",
+            "target": "phmt_test_support/prepared_search_workflow.py"
+          },
+          {
+            "bytes": 18336,
+            "kind": "code",
+            "sha256": "3956dce50125ce801246316debfe540317ef3a7902d5b7ae8d4bad71624a39d0",
+            "source": "phmt_test_support/prepared_workflow.py",
+            "target": "phmt_test_support/prepared_workflow.py"
+          },
+          {
+            "bytes": 1960,
+            "kind": "code",
+            "sha256": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+            "source": "phmt_test_support/rigid_consensus_cases.py",
+            "target": "phmt_test_support/rigid_consensus_cases.py"
+          },
+          {
+            "bytes": 1715,
+            "kind": "code",
+            "sha256": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17",
+            "source": "phmt_test_support/rigid_refinement_cases.py",
+            "target": "phmt_test_support/rigid_refinement_cases.py"
+          },
+          {
+            "bytes": 2770,
+            "kind": "code",
+            "sha256": "292c1237100948d842dacf3268da2d9fe064d945bd43f94bd58d6d3394e2bcf8",
+            "source": "phmt_test_support/rigid_refinement_workloads.py",
+            "target": "phmt_test_support/rigid_refinement_workloads.py"
+          },
+          {
+            "bytes": 1973,
+            "kind": "code",
+            "sha256": "25baaf6b218d09e15108809b04739004e471e4e99fd3c5d53f6802775e2b9016",
+            "source": "phmt_test_support/saved_model_reader.py",
+            "target": "phmt_test_support/saved_model_reader.py"
+          },
+          {
+            "bytes": 10408,
+            "kind": "code",
+            "sha256": "ff20aa36de3938757d32a882ec3553cf7423ab57f7fc62fd812816763bbe426c",
+            "source": "phmt_test_support/validate_aromatic_interactions.py",
+            "target": "phmt_test_support/validate_aromatic_interactions.py"
+          },
+          {
+            "bytes": 11798,
+            "kind": "code",
+            "sha256": "4e199feecf9df45b76dcaa5ea416b2f1cff58c90e3780e50752bd4e7722930ea",
+            "source": "phmt_test_support/validate_eralpha_exclusions.py",
+            "target": "phmt_test_support/validate_eralpha_exclusions.py"
+          },
+          {
+            "bytes": 8022,
+            "kind": "code",
+            "sha256": "5c41b37c843e155f0297a9d5c8f9674a9ad394802c2f7643277fe94572db929f",
+            "source": "phmt_test_support/validate_eralpha_hydrogens.py",
+            "target": "phmt_test_support/validate_eralpha_hydrogens.py"
+          },
+          {
+            "bytes": 18112,
+            "kind": "code",
+            "sha256": "b7bca94583a82dd80e313ea4bc5ae3e2d59234fa1d5383a9007e16f4e964576d",
+            "source": "phmt_test_support/validate_eralpha_interface.py",
+            "target": "phmt_test_support/validate_eralpha_interface.py"
+          },
+          {
+            "bytes": 10212,
+            "kind": "code",
+            "sha256": "b086a17df01fd0af6c012c4896a9ec7a6e109e3b6d38548d4e692acf232f5ee0",
+            "source": "phmt_test_support/validate_eralpha_template.py",
+            "target": "phmt_test_support/validate_eralpha_template.py"
+          },
+          {
+            "bytes": 13852,
+            "kind": "code",
+            "sha256": "055c3ea310ab5f75d931bc390797a292c0510b2cecc69fe27a5de400cfbbdb75",
+            "source": "phmt_test_support/validate_prepared_ccd_ligands.py",
+            "target": "phmt_test_support/validate_prepared_ccd_ligands.py"
+          },
+          {
+            "bytes": 1786,
+            "kind": "data",
+            "sha256": "76e3fb58fdebcacb3d3458af17949b3482e360c8cba1ab6bff9d9843dfc07020",
+            "source": "tests/data/eralpha_audit.json",
+            "target": "tests/data/eralpha_audit.json"
+          },
+          {
+            "bytes": 4410653,
+            "kind": "data",
+            "sha256": "90e3159bc03424d976742c96c8cc2d2b32c9e1abf140d4652b70518b06a775f1",
+            "source": "tests/data/eralpha_complex.pdb",
+            "target": "tests/data/eralpha_complex.pdb"
+          },
+          {
+            "bytes": 2403,
+            "kind": "data",
+            "sha256": "fa9f95859f4a3b85ab77fd7d6ab65b8c214a4536dd2e81d7f152d6b231eee04f",
+            "source": "tests/data/eralpha_interface/diagnostics.json",
+            "target": "tests/data/eralpha_interface/diagnostics.json"
+          },
+          {
+            "bytes": 2289,
+            "kind": "data",
+            "sha256": "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8",
+            "source": "tests/data/eralpha_interface/manifest.json",
+            "target": "tests/data/eralpha_interface/manifest.json"
+          },
+          {
+            "bytes": 704120,
+            "kind": "data",
+            "sha256": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+            "source": "tests/data/eralpha_rcsb/1qku.cif",
+            "target": "tests/data/eralpha_rcsb/1qku.cif"
+          },
+          {
+            "bytes": 2606,
+            "kind": "data",
+            "sha256": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+            "source": "tests/data/eralpha_rcsb/1qku_EST_D.sdf",
+            "target": "tests/data/eralpha_rcsb/1qku_EST_D.sdf"
+          },
+          {
+            "bytes": 9280,
+            "kind": "data",
+            "sha256": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+            "source": "tests/data/eralpha_rcsb/EST.cif",
+            "target": "tests/data/eralpha_rcsb/EST.cif"
+          },
+          {
+            "bytes": 3413,
+            "kind": "data",
+            "sha256": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+            "source": "tests/data/eralpha_rcsb/manifest.json",
+            "target": "tests/data/eralpha_rcsb/manifest.json"
+          },
+          {
+            "bytes": 702,
+            "kind": "data",
+            "sha256": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+            "source": "tests/data/eralpha_template/acquisition.json",
+            "target": "tests/data/eralpha_template/acquisition.json"
+          },
+          {
+            "bytes": 152016,
+            "kind": "data",
+            "sha256": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+            "source": "tests/data/eralpha_template/est_template.h5msm",
+            "target": "tests/data/eralpha_template/est_template.h5msm"
+          },
+          {
+            "bytes": 3303,
+            "kind": "data",
+            "sha256": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+            "source": "tests/data/eralpha_template/manifest.json",
+            "target": "tests/data/eralpha_template/manifest.json"
+          },
+          {
+            "bytes": 2817,
+            "kind": "data",
+            "sha256": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+            "source": "tests/data/prepared_ccd/DES_ideal.sdf",
+            "target": "tests/data/prepared_ccd/DES_ideal.sdf"
+          },
+          {
+            "bytes": 3127,
+            "kind": "data",
+            "sha256": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+            "source": "tests/data/prepared_ccd/EST_ideal.sdf",
+            "target": "tests/data/prepared_ccd/EST_ideal.sdf"
+          },
+          {
+            "bytes": 4569,
+            "kind": "data",
+            "sha256": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+            "source": "tests/data/prepared_ccd/manifest.json",
+            "target": "tests/data/prepared_ccd/manifest.json"
+          },
+          {
+            "bytes": 3690,
+            "kind": "data",
+            "sha256": "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0",
+            "source": "tests/data/rigid_consensus_cases.json",
+            "target": "tests/data/rigid_consensus_cases.json"
+          },
+          {
+            "bytes": 5939,
+            "kind": "data",
+            "sha256": "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7",
+            "source": "tests/data/rigid_refinement_cases.json",
+            "target": "tests/data/rigid_refinement_cases.json"
+          },
+          {
+            "bytes": 11386,
+            "kind": "data",
+            "sha256": "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48",
+            "source": "tests/data/rigid_refinement_workloads.json",
+            "target": "tests/data/rigid_refinement_workloads.json"
+          },
+          {
+            "bytes": 10098,
+            "kind": "code",
+            "sha256": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+            "source": "phmt_test_support/receptor_sensitivity.py",
+            "target": "phmt_test_support/receptor_sensitivity.py"
+          },
+          {
+            "bytes": 3457,
+            "kind": "data",
+            "sha256": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+            "source": "tests/data/receptor_sensitivity/plan.json",
+            "target": "tests/data/receptor_sensitivity/plan.json"
+          },
+          {
+            "bytes": 9758,
+            "kind": "code",
+            "sha256": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a",
+            "source": "phmt_test_support/prepared_receptor_sensitivity.py",
+            "target": "phmt_test_support/prepared_receptor_sensitivity.py"
+          },
+          {
+            "bytes": 2145,
+            "kind": "data",
+            "sha256": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e",
+            "source": "tests/data/prepared_receptor_sensitivity/plan.json",
+            "target": "tests/data/prepared_receptor_sensitivity/plan.json"
+          },
+          {
+            "bytes": 11044,
+            "kind": "code",
+            "sha256": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63",
+            "source": "phmt_test_support/receptor_hypothesis_pilot.py",
+            "target": "phmt_test_support/receptor_hypothesis_pilot.py"
+          },
+          {
+            "bytes": 1101,
+            "kind": "data",
+            "sha256": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7",
+            "source": "tests/data/receptor_hypothesis_pilot/plan.json",
+            "target": "tests/data/receptor_hypothesis_pilot/plan.json"
+          }
+        ],
+        "imports_retired": true,
+        "loaded": [
+          "phmt_test_support",
+          "phmt_test_support.absence_inputs",
+          "phmt_test_support.benchmark_rigid_consensus",
+          "phmt_test_support.evidence_archive",
+          "phmt_test_support.interaction_cases",
+          "phmt_test_support.prepare_eralpha_ligand",
+          "phmt_test_support.prepared_ccd_ligands",
+          "phmt_test_support.prepared_receptor_sensitivity",
+          "phmt_test_support.prepared_receptor_workflow",
+          "phmt_test_support.prepared_workflow",
+          "phmt_test_support.receptor_hypothesis_pilot",
+          "phmt_test_support.receptor_sensitivity",
+          "phmt_test_support.rigid_consensus_cases",
+          "phmt_test_support.saved_model_reader",
+          "phmt_test_support.validate_eralpha_template",
+          "phmt_test_support.validate_prepared_ccd_ligands"
+        ],
+        "namespace": "phmt_test_support",
+        "provider_files_sha256": {
+          "devtools/scripts/installed_imports.py": "ff23458015bb7ce83bc3eea36571c4294bed09fff948e8eb6d9bcb3a0615fa3c",
+          "devtools/scripts/installed_noarch.py": "a43e3b113b140a3f4fbaef98c702df10c9639ed3aca180354bd3456574afb831",
+          "devtools/scripts/installed_test_support.py": "75cd5ac6a8f460f9da870cf3a93b3833103122d79eaa079cd04642ab791bb221"
+        },
+        "reason": "Unshipped scientific fixtures, cached molecular inputs and a standalone public-I/O reader; serial tests use provider-owned private staging, never a source runtime import.",
+        "resources_retired": true,
+        "schema": "molsyssuite.installed-test-support@1",
+        "scope": "unshipped test support; no installed/scientific/public artifact qualification",
+        "staging_path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao/molsyssuite-installed-support-evzsmayn",
+        "state": "verified-support"
+      }
+    },
+    "collected_tests": 126,
+    "current_file_count": 57,
+    "initial_guard_subcase_failures": 3,
+    "input_sha256": {
+      "devguide/evidence/eralpha_interface_prepared_py314.h5msm.gz": "ab67b64df320e1d2a12ee23f312344d207af528db69fdb6ee9bb10a10dee9b6c",
+      "devguide/evidence/eralpha_interface_py314_summary.json": "c27849bb8169272097ab4c2785c153fd038d89a73f8e537b8bd7326d56f1fc6c",
+      "phmt_test_support/__init__.py": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2",
+      "phmt_test_support/absence_inputs.py": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "phmt_test_support/aromatic_interaction_cases.py": "d6cb981aebcc9855cb19e17c876dca33a3241f29d24d05a4a7db99476d4813d1",
+      "phmt_test_support/audit_eralpha.py": "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36",
+      "phmt_test_support/audit_eralpha_receptor.py": "2bac1fadefcba1c69c42835b054e6b1fc6ccbf359d60601f14c69c6ff5b2547f",
+      "phmt_test_support/audit_eralpha_sources.py": "414e62567b5e9e4c211497662cc96b3e268db0b2f37dc971fe2a5f73f5da30eb",
+      "phmt_test_support/audit_legacy_cliques.py": "4b9940fcda450e035ffbcd416e80d56674b0b70d3f1875820f35c1245e86b047",
+      "phmt_test_support/benchmark_rigid_consensus.py": "30e301fa07b984c30df2e8025a9a84f513347f8cf035dc7c4b4b7f475ebceebc",
+      "phmt_test_support/ccd_interaction_cases.py": "f535001ce2ebd292f6c449c7819ac4ba0b916f10791fb1402c60de84ff223cae",
+      "phmt_test_support/diagnose_eralpha_interface.py": "12765a9f34f8f88b7a4b10d6e8241e8f072aa2209710c3d3b9fe0000722fe0cc",
+      "phmt_test_support/evidence_archive.py": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb",
+      "phmt_test_support/interaction_cases.py": "b802a8d3b7cd8d0227d2d29367f2c2006ed25781027aa766ac291f3cf7cbb8d5",
+      "phmt_test_support/interaction_collection_cases.py": "c19a49dc4e026e33c6b1685766d089c8185346052374b7df8b8dea0ce95a02a4",
+      "phmt_test_support/legacy_clique_helpers.py": "0c52a32b8ef1e4ebe1fd6fce30de618326fabd779c74f1bf0701638ab3866f14",
+      "phmt_test_support/prepare_eralpha_hydrogens.py": "103c2e6d26495eaf048b135ab5ef76df78d84d947fa56af73682cf8c7d04671b",
+      "phmt_test_support/prepare_eralpha_interface.py": "efe75a6f7b1b50c7e016a9394048186e64699a9d872373d07005c1efe1e7086a",
+      "phmt_test_support/prepare_eralpha_ligand.py": "19c979a39fda4a3873dd5889bceefa8982e12070c8f260b593603808d5c087f8",
+      "phmt_test_support/prepared_ccd_ligands.py": "190c97862cdbc3c84d5673989ba51f630a86fa558b3cbb6bb99d7dfcf809abb2",
+      "phmt_test_support/prepared_consensus_workflow.py": "8c2abec2ecee1196556fb8c8b1045fce41eb6a0dbc51d496d3073425a963908b",
+      "phmt_test_support/prepared_receptor_sensitivity.py": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a",
+      "phmt_test_support/prepared_receptor_workflow.py": "f047589fcebdd9442473c89b0d9618eea99fb651ae0bbac520c379704fe941e1",
+      "phmt_test_support/prepared_search_workflow.py": "5d987ce1caa26a76db51c3574278719d85a1cf8d5657873fcbf3d19bdf8ec533",
+      "phmt_test_support/prepared_workflow.py": "3956dce50125ce801246316debfe540317ef3a7902d5b7ae8d4bad71624a39d0",
+      "phmt_test_support/receptor_hypothesis_pilot.py": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63",
+      "phmt_test_support/receptor_sensitivity.py": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+      "phmt_test_support/rigid_consensus_cases.py": "4465005a1eb25dd7b6da4b93362521ae692e8fba9cd1637989b3fc83adf6f6c7",
+      "phmt_test_support/rigid_refinement_cases.py": "b8f384ab6058f71c36d33e8d1197161f4c75025d95cefc5b8ff2ca1d55087e17",
+      "phmt_test_support/rigid_refinement_workloads.py": "292c1237100948d842dacf3268da2d9fe064d945bd43f94bd58d6d3394e2bcf8",
+      "phmt_test_support/saved_model_reader.py": "25baaf6b218d09e15108809b04739004e471e4e99fd3c5d53f6802775e2b9016",
+      "phmt_test_support/validate_aromatic_interactions.py": "ff20aa36de3938757d32a882ec3553cf7423ab57f7fc62fd812816763bbe426c",
+      "phmt_test_support/validate_eralpha_exclusions.py": "4e199feecf9df45b76dcaa5ea416b2f1cff58c90e3780e50752bd4e7722930ea",
+      "phmt_test_support/validate_eralpha_hydrogens.py": "5c41b37c843e155f0297a9d5c8f9674a9ad394802c2f7643277fe94572db929f",
+      "phmt_test_support/validate_eralpha_interface.py": "b7bca94583a82dd80e313ea4bc5ae3e2d59234fa1d5383a9007e16f4e964576d",
+      "phmt_test_support/validate_eralpha_template.py": "b086a17df01fd0af6c012c4896a9ec7a6e109e3b6d38548d4e692acf232f5ee0",
+      "phmt_test_support/validate_prepared_ccd_ligands.py": "055c3ea310ab5f75d931bc390797a292c0510b2cecc69fe27a5de400cfbbdb75",
+      "tests/data/eralpha_audit.json": "76e3fb58fdebcacb3d3458af17949b3482e360c8cba1ab6bff9d9843dfc07020",
+      "tests/data/eralpha_complex.pdb": "90e3159bc03424d976742c96c8cc2d2b32c9e1abf140d4652b70518b06a775f1",
+      "tests/data/eralpha_interface/diagnostics.json": "fa9f95859f4a3b85ab77fd7d6ab65b8c214a4536dd2e81d7f152d6b231eee04f",
+      "tests/data/eralpha_interface/manifest.json": "bbdefb1ed26aa33168523a55c4204e710be58d0af9761dbefaea9910e00289a8",
+      "tests/data/eralpha_rcsb/1qku.cif": "8f06e49437b661728c5ca1e3427a4f1bdce9aee1aa9bbe27f1eab4fb2d17f02e",
+      "tests/data/eralpha_rcsb/1qku_EST_D.sdf": "cced6aff1f507dc0520e3be8bb6b5a67592099461d3f77067ed2e362ffbf893f",
+      "tests/data/eralpha_rcsb/EST.cif": "8b80ee77d734e62a82a27571bc1de261e8ea4cf9d053490d10a39c614a69d3a8",
+      "tests/data/eralpha_rcsb/manifest.json": "9630ce2ef3df3c8bc9fbe702a7d717816f51905f160b5ac4b915f37debee2c55",
+      "tests/data/eralpha_template/acquisition.json": "382a5239e9785a6458245ef2b498fb1afde72eee2bc6a512f2f89bfa2b09014c",
+      "tests/data/eralpha_template/est_template.h5msm": "72ab32651f387b4de86e75bfe3e2c54bce44734e2cc1c5e522059846e4565ef7",
+      "tests/data/eralpha_template/manifest.json": "2122dadc4f3716145717c743c45462d491552dc57d8ab89216eb72d902c2a8d4",
+      "tests/data/prepared_ccd/DES_ideal.sdf": "a5066a55ebb0bce8678df671014f75b4cd666cab35936ed36da5b7d8a12722f4",
+      "tests/data/prepared_ccd/EST_ideal.sdf": "9b3fe86469dd81554830f01ea11daa6d58fe329a887e6b36f0a42481eb18980f",
+      "tests/data/prepared_ccd/manifest.json": "83d29ba0ca5b86ace6de8a9926ad5b731c50a6e06c8d037c83e18f3bdc74b310",
+      "tests/data/prepared_receptor_sensitivity/plan.json": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e",
+      "tests/data/receptor_hypothesis_pilot/plan.json": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7",
+      "tests/data/receptor_sensitivity/plan.json": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+      "tests/data/rigid_consensus_cases.json": "9cbe182cffe8ae2614383a91dd0575105ab91d1ffeb48e265befba40a69c66b0",
+      "tests/data/rigid_refinement_cases.json": "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7",
+      "tests/data/rigid_refinement_workloads.json": "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48"
+    },
+    "isolated_imports": 3,
+    "namespace_and_resources_retired": true,
+    "original_file_count": 51,
+    "repaired_guard_passed": true,
+    "scientific_test_bodies_executed": 0
+  },
+  "temporary_resources": {
+    "borrowed_prefixes_preserved": true,
+    "continuing_process_required": false,
+    "owner": "LMMV/dprada",
+    "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-review-20261105-hlkwdxao",
+    "review": "2026-11-19 or relevant change",
+    "shared_stage_retired": true
+  },
+  "version_plan_changed": false
+}

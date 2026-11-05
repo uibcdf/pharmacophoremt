@@ -104,3 +104,24 @@ sensitivity and #66/#74/installed/public gates retain their own scope.
 Owned capsule: `/tmp/phmt-native-admission-20261104-9_parngb`, LMMV/dprada, review
 2026-11-18 or provider readiness. Borrowed sources/prefixes remain unchanged;
 no continuing local process is needed.
+
+## Provider-source update — 2026-11-05
+
+The #95 release-readiness review observes ArgDigest #47/#48 closed with source
+corrections at `7fdf726d984553c9d89efc08abc2016f46ef41aa`. Their delivery comments
+explicitly leave public 0.17.0 unchanged and PHMT #82 pending actual published
+receiving. This updates provider source status only: no corrected artifact is
+installed, no consumer adversarial probe is rerun, no native-I/O migration is
+activated and no provider/pin/floor is changed here. The original failure evidence
+above remains authoritative for its measured public provider. See the
+[0.5.0 review](release_0_5_0_review.md) for the next-candidate disposition.
+
+Same-day publication follow-up: [ArgDigest 0.17.1](https://github.com/uibcdf/argdigest/releases/tag/0.17.1)
+now publishes both corrections at `c9c9ee623dab5331fdfa4227bd784dd38620e18b`.
+The fresh exact-version registry/main solver-index observations agree on
+`argdigest-0.17.1-py_0.tar.bz2`, SHA-256
+`5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899`.
+This replaces the earlier availability assessment, not the original 0.17.0
+failure measurements. Next receive this published artifact under #82; no file
+is installed, no adversarial receiving is executed and no migration is activated
+by the metadata observation. Package latest_version fields are not relied on.

@@ -36,13 +36,25 @@ that event green. Dated preparation sections below retain their historical scope
 
 ## Candidate and file identity
 
+### Proposed 0.5.0 review — 2026-11-05
+
+[Scope and draft migration notes](../../devguide/release_0_5_0_review.md) now
+review the complete 0.4.0-to-3d26b28 runtime delta. #96 adds three selected
+receptor-study helpers and three frozen plans to the private installed-support
+declaration (57 files total), preserving the original entries and bytes. The
+shared-staging guard and actual isolated import/126-node collection pass;
+scientific bodies are not executed. Test support remains unshipped. This fixes
+the source declaration, not a candidate artifact or the eight installed cells.
+The real version plan remains 0.4.0 until the next candidate is selected; no
+build, tag, upload, promotion or release-event route is activated here.
+
 The actual `release_plan.toml` records the reviewed 0.4.0 staged decision.
 `release_plan.example.toml` has illustrative version 0.0.0 only. It requires eleven
 executed jobs: eight full supported source cells with installed-context preflight,
 independent governance, policy/lint/format and Conda governance. A passing recovery
 probe with omitted science cannot authorize publication.
 
-The inventory includes 179 required payload paths, including the generated
+The current inventory includes 188 required payload paths, including the generated
 version module and seven addon paths, covering private diagnostics, current
 modules and committed runtime data.
 Register new package modules/resources in `resources.toml`'s `required_paths`.

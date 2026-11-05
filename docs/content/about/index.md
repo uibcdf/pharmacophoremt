@@ -9,6 +9,7 @@ then choose an installation and citation route.
 
 what
 installation
+release_notes
 who
 citation
 ```

@@ -250,6 +250,41 @@ class TestDistributionContract(unittest.TestCase):
         self.assertFalse(temporary.exists())
         self.assertNotIn("phmt_test_support", sys.modules)
 
+    def test_receptor_study_helpers_and_frozen_plans_are_privately_staged(self):
+        from devtools.scripts.installed_test_support import staged_support
+
+        declaration = self.inventory["installed_tests"]["support"]
+        isolated_path = [entry for entry in sys.path if Path(entry).resolve() != ROOT]
+        with patch.object(sys, "path", isolated_path):
+            original_path = list(sys.path)
+            with staged_support(
+                self.root,
+                declaration,
+                ("pharmacophoremt", "molsysviewer_pharmacophoremt"),
+            ) as stage:
+                for study in (
+                    "receptor_sensitivity",
+                    "prepared_receptor_sensitivity",
+                    "receptor_hypothesis_pilot",
+                ):
+                    with self.subTest(study=study):
+                        spec = importlib.util.find_spec(f"phmt_test_support.{study}")
+                        self.assertIsNotNone(spec, "selected test helper is missing")
+                        self.assertEqual(
+                            Path(spec.origin),
+                            stage.root / f"phmt_test_support/{study}.py",
+                        )
+                        plan = f"tests/data/{study}/plan.json"
+                        self.assertEqual(
+                            (stage.root / plan).read_bytes(),
+                            (ROOT / plan).read_bytes(),
+                        )
+                self.assertEqual(sys.path, original_path)
+                stage.check()
+                temporary = stage.root
+        self.assertFalse(temporary.exists())
+        self.assertNotIn("phmt_test_support", sys.modules)
+
     def test_unshipped_support_cannot_enter_runtime_payload(self):
         entries = self.payload()
         entries["site-packages/phmt_test_support/rigid_consensus_cases.py"] = b""

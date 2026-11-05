@@ -1591,3 +1591,31 @@ with two models and one JSON recovery. Earlier scientific inputs/results retain
 their exact bytes. This qualifies the explicit experimental cached source API,
 with molecular operations remaining in MolSysMT, not broad chemistry, biology,
 performance or supported installed/public delivery. No new tag/package is published.
+
+
+## Proposed 0.5.0 source review and installed support — 2026-11-05
+
+The [#95/#96 receipt](release_050_review_20261105_summary.json) binds the complete
+0.4.0-to-3d26b28 source inventory (100 commits, 43 runtime Python files, nine
+public signature changes), draft migration notes, unchanged runtime/version/
+dependency inputs, before/after shared-staging guard and actual private helper
+imports/126-node collection. Three missing helper specs initially fail; exactly
+three helper/plan pairs fix the declaration while retaining original bytes.
+All 57 staged inputs remain stable and temporary namespace/resources retire.
+No scientific test bodies or molecular calculations run in this review.
+
+The original archive retains commands, SDK identity, source/declaration/plan
+hashes, probe/guard output, provider-source comments and administrative checks:
+23 distribution, three reporting, 18 archive-reader controls, declared routes,
+index, Ruff/format and whitespace. Strict isolated docs cover 61 linked source
+pages and two assets, with execution off. Baseline hosted policy/Conda governance
+pass, reporting passes and all eight science cells remain queued. A revised source
+needs its own exact-head checks. No candidate freeze, version-plan change, build,
+tag, upload, Release or public-delivery claim occurs; #82 and #9/#10/#23 retain
+published-provider receiving and candidate gates. Further 0.x minors may include
+0.10.0, 0.11.0 and beyond; 1.0 depends on readiness.
+
+The final availability refresh observes ArgDigest 0.17.1's actual Release and
+matching main-label/solver-index file/digest. The earlier review based on source-
+delivery comments is preserved separately. No provider file is installed here;
+PHMT #82 now receives the available corrected artifact rather than awaiting it.

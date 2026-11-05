@@ -470,3 +470,35 @@ sha256 = "aac127692d8615e2f3c6897b34e01bc600afc8f3a6c9b3300abd6ccf25003df7"
 source = "tests/data/rigid_refinement_workloads.json"
 target = "tests/data/rigid_refinement_workloads.json"
 sha256 = "064ea11b21afc2fa6dc078761a3d20d8523b24a16bf2b869c942920719641f48"
+
+# Selected receptor studies: #96; immutable helper/plan bytes, private test support.
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/receptor_sensitivity.py"
+target = "phmt_test_support/receptor_sensitivity.py"
+sha256 = "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef"
+
+[[installed_tests.support.files]]
+source = "tests/data/receptor_sensitivity/plan.json"
+target = "tests/data/receptor_sensitivity/plan.json"
+sha256 = "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_receptor_sensitivity.py"
+target = "phmt_test_support/prepared_receptor_sensitivity.py"
+sha256 = "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a"
+
+[[installed_tests.support.files]]
+source = "tests/data/prepared_receptor_sensitivity/plan.json"
+target = "tests/data/prepared_receptor_sensitivity/plan.json"
+sha256 = "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/receptor_hypothesis_pilot.py"
+target = "phmt_test_support/receptor_hypothesis_pilot.py"
+sha256 = "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63"
+
+[[installed_tests.support.files]]
+source = "tests/data/receptor_hypothesis_pilot/plan.json"
+target = "tests/data/receptor_hypothesis_pilot/plan.json"
+sha256 = "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7"

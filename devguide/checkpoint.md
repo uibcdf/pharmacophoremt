@@ -1,5 +1,52 @@
 # Development Checkpoint
 
+## Proposed 0.5.0 scope reviewed; installed support repaired — 2026-11-05
+
+[#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has a
+[source review](release_0_5_0_review.md), [draft release/migration notes](../docs/content/about/release_notes.md)
+and [updated readiness](release_0_5_0_readiness.md). Immutable review baseline is
+`3d26b28ae072c106784299ee96d3a50f0edebc91`, 100 commits/43 changed runtime Python
+files after 0.4.0. The notes separate new cached generation/seed-only scoring/
+saved-result analysis from retained workflows, and cover stricter native records,
+option admission, independent merge provenance and scientific/provider limits.
+No runtime algorithm or scientific choice changes in this review.
+
+[#96](https://github.com/uibcdf/pharmacophoremt/issues/96) repairs three omitted
+selected receptor-study helpers and their frozen plans in the installed-support
+declaration. The same shared-staging guard fails three subcases before repair
+and passes after. A separate safe-path child imports staged helpers/plans and
+collects 126 selected nodes without executing scientific fixtures/bodies. All
+57 support input hashes remain stable; namespace/imports/private resources are
+retired. The accepted SDK, original 51 declarations, helper/plan bytes, runtime
+payloads, dependencies, provider pins and full installed selection remain intact.
+This repairs metadata; it does not qualify a built artifact or installed matrix.
+
+The latest observed source tag/Release remains 0.4.0. The maintainer clarifies
+that further 0.x.y releases may include 0.10.0, 0.11.0 and later minors; neither
+stabilization nor 1.0 readiness is tied to 0.9.x. The next proposed minor remains
+0.5.0. No version-plan change, candidate build, tag, Release or publication occurs.
+
+**Next: review/receive public dependencies and freeze the actual 0.5.0 candidate.**
+ArgDigest 0.17.1 now publishes #47/#48 corrections at source
+`c9c9ee623dab5331fdfa4227bd784dd38620e18b`. Independent exact-version registry
+and solver-index reads find its original noarch file under main, SHA-256
+`5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899`.
+Earlier source-delivery comments left 0.17.0 unchanged; the fresh publication
+observation supersedes that availability assessment. The new file is not installed
+here. PHMT #82 next receives that actual artifact with its adversarial source-
+routing guard; do not replace receiving with publication or a local workaround.
+Review the current public molecular-provider closure as well. At baseline3d26b28,
+policy and Conda governance pass, reporting passes, and all eight source-science
+cells remain queued. The new overlay needs its own exact-head checks; #9/#10/#23
+retain their full source/build/installed/public gates. No addon work is activated.
+
+Workspace refresh preserves the task's PHMT changes and clean MolSysMT/ArgDigest
+siblings 113/four commits behind fetched upstream, without pull/checkout/edit.
+Owner LMMV/dprada; capsule `build/phmt-050-review-20261105-hlkwdxao`, review
+2026-11-19 or relevant change. Borrowed prefixes remain intact; no continuing
+task process is required. [Original review evidence](evidence/release_050_review_20261105_summary.json)
+retains commands, attempts, source/input hashes and measured scope.
+
 ## Public experimental carbonyl generation delivered — 2026-11-05
 
 [#94](https://github.com/uibcdf/pharmacophoremt/issues/94) delivers the explicitly
@@ -37,7 +84,9 @@ the proposed [0.5.0 candidate](release_0_5_0_readiness.md).** Review the complet
 0.4.0-to-candidate capability/API/migration diff and release notes, choose a full
 committed candidate SHA and recover its applicable hosted #9 and installed/public
 #10/#23 gates before tag/publication. The [roadmap](roadmap.md) now names a
-capability-based 0.5 → 0.6–0.8 → 0.9.x → 1.0.0 staircase. Latest observed source
+capability-based 0.5.0 → further 0.x.y releases → 1.0.0 staircase. The maintainer
+clarifies that 0.10.0, 0.11.0 and later minors remain available; stabilization
+and the 1.0 decision are not tied to 0.9.x. Latest observed source
 tag/GitHub Release remains 0.4.0 (2026-10-23); no new tag/package/Release is created
 here. GitHub Release `released` triggers Conda/docs, so coordinate that concrete
 event with the reviewed version plan. Actual publication requires the requested

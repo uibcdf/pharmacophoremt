@@ -22,6 +22,12 @@ prepared CCD inputs, analytical rigid/refinement workloads and the original
 cached receptor summary/native archive. Source-selected tests continue reading
 their own test data and historical records from the qualification checkout.
 
+For proposed 0.5.0 readiness, #96 also declares the three selected receptor
+sensitivity/prepared-sensitivity/hypothesis-pilot helpers and their immutable
+module-relative plans. These bring private installed support to 57 literal
+files. The actual shared-staging import/collection probe collects 126 nodes;
+collection alone does not rerun their science or qualify an installed artifact.
+
 `saved_model_reader.py` is a standalone fresh-process oracle for the four saved
 model cases. It uses only public PharmacophoreMT I/O and Ackredit; parent clients
 run its explicit file with `python -P` in the owned case directory. It needs no

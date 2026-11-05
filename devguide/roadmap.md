@@ -13,8 +13,8 @@ created by this roadmap.
 | Proposed milestone | Capability to consolidate | Acceptance before calling the milestone delivered |
 | --- | --- | --- |
 | 0.5.0 | Current native classical MVP, explicit receptor generation including #94, unit/provenance/error contracts and usable recipes | Qualify #94, review capability/migration/release notes, choose an exact candidate and verify its applicable source/CI/release gates |
-| 0.6–0.8 | Prioritized integration/molecular-ownership completion and broader preparation/scientific/retrospective validation | Assign each minor to a reviewed coherent batch; retain provider handoffs, independent scientific evidence and disclosed limits. Exact versions/dates are not reserved |
-| 0.9.x | Stable candidate for the agreed 1.0 classical scope | Freeze that scope and stabilize public APIs, native records, compatibility/migration, documentation and supported installation evidence |
+| Further 0.x.y releases | Prioritized integration/molecular-ownership completion and broader preparation/scientific/retrospective validation | Assign each minor to a reviewed coherent batch; retain provider handoffs, independent scientific evidence and disclosed limits. The sequence can continue through 0.10.0, 0.11.0 and beyond; no fixed minor count or dates are reserved |
+| Stabilization within 0.x.y | Stable candidate for the agreed 1.0 classical scope, whenever ready | Freeze that scope and stabilize public APIs, native records, compatibility/migration, documentation and supported installation evidence; this phase is not tied to 0.9.x |
 | 1.0.0 | Deliver the agreed classical scope | Stable documented contracts, reproducible scientific cases with limits, and verified supported source/installed/public delivery; later dynamics/AI/addons are not automatic prerequisites |
 
 The next proposed consolidation is **0.5.0 after #94 qualification**, rather
@@ -22,6 +22,11 @@ than another open-ended sequence of source changes without a version checkpoint.
 Use patch versions for repairs to an existing minor; use minor versions for
 coherent capability increments. Neither commit count nor a locally passing
 subset alone determines a release.
+
+Maintainer clarification: minor versions are integers, not decimal fractions.
+0.9.0 may be followed by 0.10.0, 0.11.0 and further 0.x.y versions. No minor
+number implies readiness for 1.0.0; the agreed capability/stability/delivery
+criteria determine that transition. The next proposed milestone remains 0.5.0.
 
 A source tag identifies an exact reviewed commit with matching version/notes,
 applicable passing checks, evidence and limitations. Source tag, GitHub Release
@@ -33,6 +38,18 @@ plan and candidate gates deliberately. #9 owns exact-head hosted recovery;
 #10/#23 retain installed/public qualification. When an actual new tag/release/
 package is delivered, publish the requested version-specific MolSysSuite notice.
 #95 tracks next-candidate readiness; this does not authorize publication now.
+
+## Proposed 0.5.0 scope reviewed — 2026-11-05
+
+The [100-commit source review](release_0_5_0_review.md) covers all 43 changed
+runtime Python files since 0.4.0 and supplies [draft migration/release notes](../docs/content/about/release_notes.md).
+#96 repairs three omitted installed-study helpers/plans with a failing-before/
+passing-after shared-staging guard and actual 126-node collection, without
+running scientific fixtures. [Readiness](release_0_5_0_readiness.md) keeps provider
+publication/receiving (#82), candidate freeze, exact-head source CI and installed/
+public delivery separate. ArgDigest source #47/#48 closure does not qualify its
+published correction for PHMT. Version plan/tag/Release remain 0.4.0; no package
+operation occurs. Further minors, including 0.10.0 and beyond, remain available.
 
 ## Public cached-carbonyl generation delivered — 2026-11-05
 
