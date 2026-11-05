@@ -227,3 +227,8 @@ radii, energy, favored face or causal importance is established. Rerun and appen
 a new measurement after relevant cache/composition/geometry/veto/persistence/
 fixture/provider changes. Broader comparative methodology, MolSysMT #375/#323,
 optional TopoMT #101, #66/#82 and hosted/installed/public #9/#23 remain separate.
+
+The separately [measured receptor contribution study](receptor_contribution.md)
+under #90 compares three PHE regions, paired feature/exclusion constraints and
+fixed tolerance/budget effects on the same original input. Its run identities
+and analytical limits remain distinct from the historical controls above.

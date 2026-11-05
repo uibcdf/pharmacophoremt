@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Receptor contribution comparison delivered — 2026-11-05
+
+[#90](https://github.com/uibcdf/pharmacophoremt/issues/90) executes the unchanged
+60-cell #89 matrix: 342 models, 1,710 primary/108 recovery evaluations and 30
+unscored zero-budget slots. [Case](../docs/content/validation/receptor_contribution.md)
+and [evidence](evidence/receptor_contribution_20261105_summary.json) retain full
+actual outputs, independent original-coordinate/strict-inside oracles, native
+recovery, unit agreement, custody and actual credit. The distance-record guard
+correction and saved-fixture import failure remain; no scientific choice or
+runtime/result changes. All 20 scientific mechanisms and eight plan guards have
+passing evidence, with final 26-control reanalysis and reused optional controls.
+
+This establishes paired constraint/tolerance/budget semantics on three PHE regions
+of one prepared protein. Broader chemical/preparation applicability needs a new
+declaration; biological evaluation retains #66's independent data/endpoint gates.
+All molecular operations stay in MolSysMT. Heavy reexecution is explicit, with
+cheap default evidence/plan guards. Audit12/15, #82, provider/pocket/refinement,
+SDF #74/#215 and #9/#23 delivery/hosted obligations remain separate; addon/release
+deferred, public 0.4.0 unchanged. See checkpoint for source and attempt identities.
+
 ## Receptor contribution declaration delivered — 2026-11-05
 
 [#89](https://github.com/uibcdf/pharmacophoremt/issues/89) freezes

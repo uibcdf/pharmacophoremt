@@ -36,7 +36,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #89 freezes the receptor contribution protocol and 60-cell matrix after provider-only eligibility finds PHE337/367/404. Eight offline guards pass; no new comparison outcomes are measured. Next #90 executes 342 planned models/1,710 primary evaluations, preserving independent oracles, failure/completion and molecular ownership. Broader #6/audit12/15, #66/#82/#74/#215 and #9/#23 delivery/hosted gates remain separate; addon/release deferred, public 0.4.0 unchanged.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #90 measures the unchanged receptor contribution matrix (342 models, 1,710 primary/108 recovery evaluations, 30 unscored zero-budget slots), with independent oracles, native recovery, unit agreement, custody and actual credit. All 20 scientific mechanisms/eight plan guards have passing evidence; original guard/fixture corrections retained. Next requires a separately declared chemistry/preparation extension or qualified #66 biological data. Broader audit12/15, #82/#74/#215 and #9/#23 gates remain separate; addon/release deferred, public 0.4.0 unchanged.
 
 ## Classical Workflow Specification
 

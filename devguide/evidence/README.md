@@ -1,5 +1,18 @@
 # Local scientific evidence
 
+## Measured receptor contribution — 2026-11-05
+
+[Receipt](receptor_contribution_20261105_summary.json) links the original complete
+scientific result gzip separately from the original source/log/guard archive.
+342 models, 1,710 primary/108 recovery evaluations and 30 unscored slots match the
+frozen plan. Independent geometry/clash/fit/unit/custody/native/actual-credit
+checks pass; exact original failures and corrected physical-distance guard remain.
+Saved-output reanalysis is bound to unchanged driver/plan/results; it is not a
+second molecular measurement. Two optional-provider simulations retain their own
+outputs. [The case](../../docs/content/validation/receptor_contribution.md)
+delimits one prepared protein/PHE analytical controls; no biological, affinity,
+physical-radius, performance or platform/public qualification follows.
+
 ## Receptor contribution prespecification — 2026-11-05
 
 [Receipt/full eligibility evidence](receptor_contribution_plan_20261105_summary.json)

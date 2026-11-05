@@ -440,3 +440,23 @@ evaluations are planned workloads. Audit12/15 remains partial. Next #90 executes
 the fixed declaration with independent geometry/clash oracles and full failure/
 completion accounting. Molecular work remains MolSysMT-owned; provider/data/
 delivery and broader chemical/biological gates remain separate.
+
+## Receptor contribution execution — 2026-11-05
+
+[#90](https://github.com/uibcdf/pharmacophoremt/issues/90) measures #89's frozen
+60-cell paired experiment: 342 models, 1,710 primary/108 recovery evaluations,
+30 unscored zero-budget slots. [Case](../docs/content/validation/receptor_contribution.md)
+and [evidence](evidence/receptor_contribution_20261105_summary.json) retain exact
+geometry/fit/clash oracles, physical-policy agreement, full source custody and
+actual input/operation credit. The 1e-12 distance-record guard correction and
+saved-fixture Path import failure are preserved; inputs/helper/plan/results stay
+unchanged. Passing evidence covers all 20 scientific mechanisms and eight plan
+guards, with 26 final reanalysis passes and previously passing optional controls.
+
+Audit12/15 remains partial beyond this analytical PHE/single-protein slice.
+.20 nm exclusions veto PHE337 (two pairs) while preserving positive fit one;
+PHE367/404 remain accepted. .40 nm gives 33/20/21 pairs and vetoes all three.
+Neither these radii nor the disconnected candidate establish physical binding
+or optimal parameters. New chemistry/preparation needs a separate declaration;
+biological #66, provider and public/installed/hosted gates remain independent.
+All molecular operations remain MolSysMT-owned; production runtime is unchanged.

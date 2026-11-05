@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Receptor contribution comparison measured — 2026-11-05
+
+[#90](https://github.com/uibcdf/pharmacophoremt/issues/90) executes #89's unchanged
+[declaration](receptor_contribution_protocol.md): **60 cells, 342 models, 1,710
+primary and 108 native-recovery pose evaluations** complete. Thirty zero-budget
+cell/control slots remain unscored. [Case/report](../docs/content/validation/receptor_contribution.md)
+and [full evidence](evidence/receptor_contribution_20261105_summary.json) retain
+all actual results, source/native/helper/test/input identities and real input/
+operation credit. All main independent geometry/fit/clash/custody/unit/attribution
+checks pass. Two absence/failure controls also pass; these are simulated provider
+availability states, distinct from a fresh uninstalled-provider qualification.
+
+The initial selection has 27 passes and one new recovery guard failure: it
+compares assignment-distance QuantityRecords literally despite allowed native
+coordinate roundoff (first difference 0 versus 2.22e-16 nm). Correct that guard
+to compare physical distances at the existing 1e-12 nm tolerance; all non-distance
+assignment fields and statuses remain exact. A first saved-output reanalysis has
+an omitted Path import in the new fixture; preserve it and correct only the
+fixture. Final bound-output reanalysis passes 26 controls; two unchanged optional
+controls already pass in both earlier attempts. The original full measurement,
+helper, plan, molecular inputs and answers never change. Do not rerun the matrix
+to repair a test-envelope assumption. All four full identity phases are stable.
+
+Joint constraints reject controls accepted by either single-family query.
+At .20 nm exclusions, intact PHE337 has two clash pairs and is vetoed with positive
+fit one; PHE367/404 have zero and remain accepted. At .40 nm the respective pair
+counts are 33/20/21 and all are vetoed, still at positive fit one. At .01 nm all
+three intact references have zero pairs. Tolerance .02/.08/.12 nm admits 1/2/4
+fully positive joint hypotheses. Budget three/zero omits the compatible index-four
+hypothesis and remains incomplete. Both physical policies give identical answers.
+These are paired analytical controls on one prepared protein and PHE chemistry,
+not an independent ligand cohort, optimal radii, affinity or biological evidence.
+
+No production runtime, provider source/pin, dependency floor or release changes.
+All molecular construction/selection/recognition/geometry/transforms stay in
+MolSysMT; only unshipped orchestration, guards and evidence are added. The heavy
+scientific guard is explicit under devtools/tests/scientific; routine tests keep
+cheap frozen-plan and compressed-evidence checks. Original guard bytes/path and
+all attempts remain archived. Case instructions name exact reexecution triggers.
+
+Next address broader scientific applicability with a separately declared chemical/
+preparation extension or qualified biological data under #66; do not extend this
+PHE control's claims. Audit12/15, #82, provider directions/refinement/pockets,
+SDF #74/#215 and #9/#23 hosted/installed/public gates remain separate. Addon/release
+remain deferred; public 0.4.0 unchanged. Owner LMMV/dprada; capsule
+build/phmt-receptor-contribution-run-20261105-xmsurcg5, review 2026-11-19 or
+source/scientific change. No continuing local process is needed.
+
 ## Receptor contribution study prespecified — 2026-11-05
 
 [#89](https://github.com/uibcdf/pharmacophoremt/issues/89) delivers the
