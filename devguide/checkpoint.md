@@ -1,5 +1,54 @@
 # Development Checkpoint
 
+## Carbonyl acceptor receiving declared — 2026-11-05
+
+[#92](https://github.com/uibcdf/pharmacophoremt/issues/92) reviews the existing
+MolSysMT #375 experimental source contract and freezes the
+[first carbonyl receiving protocol](carbonyl_acceptor_receiving_protocol.md),
+[inputs/matrix](../tests/data/carbonyl_acceptor_receiving/plan.json) and
+[provider identity ledger](../tests/data/carbonyl_acceptor_receiving/provider_review.json).
+Plan SHA-256 is `b0af26640c0b7ff6cadde2c7f7e499141921adc29fd2ec7f4c1666218be92340`.
+Eight offline mathematical/correspondence/count/quantity/scope guards pass.
+All before/after twelve-provider/source/native/helper/test/input/metadata and
+new declaration identities, plus application units, remain stable.
+[Original receipt](evidence/carbonyl_acceptor_plan_20261105_summary.json) retains
+the actual command, hashes and inspection scope. **Zero new molecular direction,
+model or pose evaluations**; the provider's own scientific tests are inspected,
+not rerun. No scientific usage is credited for imports/source inspection.
+
+There is no new provider answer to the last #375 request. The normative doc
+already states experimental bounded maintainer admission; reviewed clean source
+`0faf1584d05ac47ddcebfc20d9c9978b7f4f230e` supplies the API/model/original controls.
+Every reviewed file matches that Git object. This supports a narrow controlled
+experiment; it does not establish stable/public package delivery, universal
+chemistry, energetic/electronic accuracy or biological validation.
+
+**Next: [#93](https://github.com/uibcdf/pharmacophoremt/issues/93)** executes this
+unchanged declaration using unshipped orchestration and explicit scientific
+guards. Ordinary neutral CC=O, two literal frames, requested [0,1,0], external
+support and two physical policies yield six planned blocks, **12 models,
+72 primary/24 recovery evaluations**. Two lobes are separate one-site donor
+hypotheses with explicit target axis -u; never two simultaneous essential sites.
+Six aligned/reversed/displaced controls and unsupported water versus collinear
+undefined carbonyl prevent missing-role/geometry conflation. Operational failures
+remain separate; no source setting or predicted answer may be tuned after scoring.
+
+All representations/construction/selection/inspection/geometry/transforms stay
+in public MolSysMT. PHMT retains projection/matching choices. Runtime/default
+position-only acceptors and the public donor/aromatic profile, prior #89–#91
+scientific bytes/results, provider/prefix/pin/dependencies/public 0.4.0 remain
+unchanged. No release/addon or new support-library boundary is introduced.
+Audit12/15, #66/#82/#74/#215, H #323, optional pockets and #9/#23 keep their gates.
+
+The bounded suite-status refresh finds PHMT clean/synced at initial 869cf96 and
+the clean sibling MolSysMT main 109 commits behind its fetched upstream; preserve
+it without pull/checkout/edit. Actual controlled provider above is independent.
+Sandbox startup twice fails from existing shared /tmp quota before reading repo
+files; read-only/owned-file operations use the authorized unsandboxed route and
+task-owned temporary storage. No source/provider repair or scientific rerun.
+Owner LMMV/dprada, capsule `build/phmt-acceptor-receiving-plan-20261105-mib_pszt`,
+review 2026-11-19 or source/scientific change. No continuing process is required.
+
 ## Native TYR dual-donor study measured — 2026-11-05
 
 [#91](https://github.com/uibcdf/pharmacophoremt/issues/91) qualifies the unchanged

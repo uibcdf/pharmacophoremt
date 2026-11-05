@@ -22,4 +22,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
 - [`native_io_argdigest_admission.md`](native_io_argdigest_admission.md) — [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) — Gate native I/O ArgDigest receiving on preserved call shape and exception families. *(blocked, measured)*
 
+### Open (1)
+
+- [`carbonyl_acceptor_receiving_execution.md`](carbonyl_acceptor_receiving_execution.md) — [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) — Execute the frozen experimental carbonyl acceptor receiving matrix. *(open, asserted)*
+
 <!-- /generated -->

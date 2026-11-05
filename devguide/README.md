@@ -36,7 +36,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #91 qualifies the frozen native TYR dual-donor extension (12 cells, 20 models, 100 primary/24 recovery evaluations). Independent geometry/injective-assignment, native recovery, custody, unit and attribution checks pass; original oracle correction and attempts remain. Targets do not overlap, so reuse prevention retains its dedicated existing guard. Next inspect the exact MolSysMT #375 acceptor-direction handoff before declaring receiving; molecular geometry stays upstream. Broader scientific/data/#82/#74/#215 and #9/#23 gates stay separate; addon/release deferred, public 0.4.0 unchanged.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #92 reviews the existing MolSysMT #375 experimental source contract and freezes carbonyl acceptor receiving, with eight passing offline guards and zero new molecular direction/model/pose evaluations. Next #93 executes the unchanged planned 12 models/72 primary/24 recovery evaluations through existing explicit projections and provider-only molecular operations. No public/default acceptor adoption, dependency/provider/release change or biological claim; wider scientific/data/hosted/installed/public gates stay separate.
 
 ## Classical Workflow Specification
 

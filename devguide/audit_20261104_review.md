@@ -483,3 +483,25 @@ optimal-offset/performance/target-breadth claim follows. Next receive exact
 MolSysMT #375 acceptor geometry/input identities and declare independent angular
 controls before another projection profile. No production/provider/dependency/
 release changes; #66/#82/#74/#215 and hosted/installed/public gates stay separate.
+
+
+## Carbonyl acceptor receiving declared — 2026-11-05
+
+[#92](https://github.com/uibcdf/pharmacophoremt/issues/92) reviews the existing
+experimental MolSysMT #375 admission and freezes a carbonyl-only receiving study.
+[Protocol](carbonyl_acceptor_receiving_protocol.md) and
+[receipt](evidence/carbonyl_acceptor_plan_20261105_summary.json) retain exact
+source/doc/API/model/test identities, zero new molecular direction/model/pose
+execution and eight passing offline declaration guards with stable identities.
+The source contract is enough to design controlled receiving; neither a new
+provider reply nor stable public delivery or energetic/biological validation is
+inferred. Original provider tests are inspected, not rerun.
+
+[#93](https://github.com/uibcdf/pharmacophoremt/issues/93) must execute the fixed
+12-model/72-primary/24-recovery matrix before a public acceptor profile proposal.
+Two carbonyl lobes are separate one-site donor hypotheses, with explicit target
+axis -u, repeated source positions, external support and unit/missing-state
+controls. Molecular representations/inspection/geometry/transforms stay in
+MolSysMT; runtime/default feature/profile/provider/dependency/release and prior
+#89–#91 scientific evidence remain unchanged. Audit12/15 and the existing data,
+provider/refinement/pockets and hosted/installed/public gates remain partial.

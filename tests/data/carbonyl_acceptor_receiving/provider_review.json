@@ -1,0 +1,66 @@
+{
+  "schema": "pharmacophoremt.carbonyl-provider-review@1",
+  "recorded_at": "2026-11-05T21:21:34.821418+00:00",
+  "provider_commit": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+  "provider_checkout_clean": true,
+  "files": {
+    "devguide/hbond_site_directions.md": {
+      "sha256": "6079f67154a8057a9dd16110a1a3fb1a998ff70aa83fdb414e6e46f1fe214718",
+      "bytes": 11646
+    },
+    "molsysmt/interactions/hbonds/get_hbond_site_directions.py": {
+      "sha256": "53aebac308f802932475dcf8a29ecfe6d025ca96c0672890b9705b0b06312161",
+      "bytes": 9147
+    },
+    "molsysmt/interactions/hbonds/_hbond_directions.py": {
+      "sha256": "bc68195e2e855d82f19d64491b1822f94a872e7ffb97a54fe63baf6e6ab948c7",
+      "bytes": 14469
+    },
+    "tests/interactions/hbonds/test_get_hbond_site_directions.py": {
+      "sha256": "6a0ea8496b7a1027d4ddc352a30670e34f8567ea9236a2f5510414571a468b54",
+      "bytes": 17459
+    }
+  },
+  "source_contract": {
+    "schema": "molsysmt.hbond_site_directions@1",
+    "method": "ideal_local_geometry",
+    "site_method": "smarts_donor_acceptor",
+    "stability": "experimental, bounded maintainer admission on2026-10-10"
+  },
+  "provider_test_functions_inspected": [
+    "test_carbonyl_independent_angles_support_and_forms",
+    "test_nitrogen_independent_outward_direction",
+    "test_observed_donor_hydrogens_and_unsupported_water_acceptor",
+    "test_other_acceptor_environments_remain_explicitly_unsupported",
+    "test_amide_pyrrole_and_protonated_nitrogen_are_not_acceptors",
+    "test_selected_anchor_retains_external_support_and_is_rotation_covariant",
+    "test_degenerate_geometry_has_no_arbitrary_direction",
+    "test_nonconsecutive_repeated_structures_and_chunking",
+    "test_periodic_images_reconstruct_carbonyl_plane",
+    "test_output_units_are_presented_through_pyunitwizard",
+    "test_invalid_arguments_raise_at_public_boundary",
+    "test_nonfinite_coordinates_raise",
+    "test_typed_empty_results",
+    "test_numeric_status_and_packing_budget_is_enforced",
+    "test_length_backend_and_standard_policy_are_preserved",
+    "test_structure_assigned_chemistry_is_coherent_and_source_is_unchanged",
+    "test_h5msm_delivery_does_not_materialize_full_structural_series",
+    "test_singular_box_is_rejected",
+    "test_metal_coordinated_acceptor_is_outside_profile",
+    "test_undefined_and_unsupported_remain_distinct_in_same_structure"
+  ],
+  "provider_tests_executed_in_this_stage": 0,
+  "molecular_geometry_calls_in_this_stage": 0,
+  "new_models": 0,
+  "new_pose_evaluations": 0,
+  "issue_review": {
+    "issue": "uibcdf/molsysmt#375",
+    "observed_updated_at": "2026-11-05T02:55:07Z",
+    "latest_comment_id": 6648409054,
+    "latest_comment_author": "LMMV",
+    "new_provider_response_after_consumer_request": false
+  },
+  "prior_witnesses": "MolSysMT#375 comment6648409054: earlier carbonyl and indexed donor/water source witnesses on the same controlled provider; not rerun here.",
+  "public_artifact_delivery": "Not requalified or inferred from source; current generic-vector/ideal-direction public handoff remains distinct.",
+  "disposition": "Enough documented experimental source contract to prespecify narrow receiving; no new default/public profile or chemical/biological adoption. No provider edit, local molecular kernel or fallback."
+}

@@ -1,5 +1,22 @@
 # Strategic Roadmap
 
+## Experimental acceptor receiving prespecified — 2026-11-05
+
+[#92](https://github.com/uibcdf/pharmacophoremt/issues/92) binds the MolSysMT #375
+experimental contract/API/model/tests to clean controlled source and freezes a
+[carbonyl-only receiving study](carbonyl_acceptor_receiving_protocol.md).
+Eight offline declaration guards pass with stable identities and zero new
+molecular direction/model/pose evaluations. Existing experimental source admission
+is distinct from a new provider reply, stable public artifact or broad science.
+
+Next [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) executes the unchanged
+12-model/72-primary/24-recovery plan. Its two one-site alternatives, repeated
+frames/external support, explicit donor axis, two unit policies and unsupported/
+undefined/failure controls must pass before any public acceptor profile proposal.
+All molecular work stays in MolSysMT; runtime/default/profile/providers/pins/
+dependencies/release and prior evidence remain unchanged. Broader scientific/
+data and hosted/installed/public gates remain independent; addon/release deferred.
+
 ## Native dual-donor chemical extension delivered — 2026-11-05
 
 [#91](https://github.com/uibcdf/pharmacophoremt/issues/91) executes the frozen

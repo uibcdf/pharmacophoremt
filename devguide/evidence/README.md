@@ -1,5 +1,15 @@
 # Local scientific evidence
 
+## Carbonyl acceptor receiving declaration — 2026-11-05
+
+[Receipt](carbonyl_acceptor_plan_20261105_summary.json) retains exact provider
+source/doc/API/model/test identities, the issue-handoff observation, frozen inputs/
+protocol/matrix, eight passing offline guards and stable before/after identities.
+**Zero new molecular direction/model/pose evaluations**; no provider-test rerun
+or new scientific credit. The planned 12 models/72 primary/24 recovery calls
+remain prospective until #93 executes. Experimental source admission does not
+qualify a public/default profile, package, energetic or biological model.
+
 ## Native TYR dual-donor study — 2026-11-05
 
 [Receipt](tyr_cardinality_20261105_summary.json) links untouched scientific output

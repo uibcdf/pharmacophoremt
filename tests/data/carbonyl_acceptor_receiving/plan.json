@@ -1,0 +1,787 @@
+{
+  "schema": "pharmacophoremt.carbonyl-acceptor-receiving-plan@1",
+  "issue": "uibcdf/pharmacophoremt#92",
+  "phase": "prespecified_not_executed",
+  "declared_at": "2026-11-05T21:21:34.823269+00:00",
+  "molecular_operations_owner": "molsysmt",
+  "provider_commit": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+  "provider_review_sha256": "1b441da6b56604cc59c53bf5a71bdaf9c668b38cd39ccf00cb8544bea0bd7595",
+  "source_profile": "experimental_carbonyl_trigonal_receiving@1",
+  "provider_method": "ideal_local_geometry",
+  "site_method": "smarts_donor_acceptor",
+  "pbc": false,
+  "chemical_state": "reference",
+  "source": {
+    "id": "neutral_aldehyde",
+    "smiles": "CC=O",
+    "selection": [
+      2
+    ],
+    "support_atom_indices": [
+      2,
+      1,
+      0
+    ],
+    "coordinates": {
+      "unit": "nm",
+      "values": [
+        [
+          [
+            0,
+            0.15,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.12,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0.25,
+            0.5,
+            0.6
+          ],
+          [
+            0.4,
+            0.5,
+            0.6
+          ],
+          [
+            0.4,
+            0.62,
+            0.6
+          ]
+        ]
+      ]
+    },
+    "frame_transforms": [
+      {
+        "rotation": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translation": {
+          "unit": "nm",
+          "values": [
+            0,
+            0,
+            0
+          ]
+        }
+      },
+      {
+        "rotation": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ],
+        "translation": {
+          "unit": "nm",
+          "values": [
+            0.4,
+            0.5,
+            0.6
+          ]
+        }
+      }
+    ],
+    "requested_structure_indices": [
+      0,
+      1,
+      0
+    ],
+    "site_roles": [
+      1
+    ],
+    "site_models": [
+      2
+    ],
+    "status": [
+      [
+        1
+      ],
+      [
+        1
+      ],
+      [
+        1
+      ]
+    ],
+    "support_atom_offsets": [
+      0,
+      3
+    ],
+    "direction_site_indices": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "direction_structure_indices": [
+      0,
+      0,
+      1,
+      1,
+      0,
+      0
+    ],
+    "direction_structure_positions": [
+      0,
+      0,
+      1,
+      1,
+      2,
+      2
+    ],
+    "direction_indices": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      1
+    ],
+    "origins": {
+      "unit": "nm",
+      "values": [
+        [
+          0.12,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0,
+          0
+        ],
+        [
+          0.4,
+          0.62,
+          0.6
+        ],
+        [
+          0.4,
+          0.62,
+          0.6
+        ],
+        [
+          0.12,
+          0,
+          0
+        ],
+        [
+          0.12,
+          0,
+          0
+        ]
+      ]
+    },
+    "directions": {
+      "unit": "dimensionless",
+      "values": [
+        [
+          0.5,
+          0.8660254037844386,
+          0
+        ],
+        [
+          0.5,
+          -0.8660254037844386,
+          0
+        ],
+        [
+          -0.8660254037844386,
+          0.5,
+          0
+        ],
+        [
+          0.8660254037844386,
+          0.5,
+          0
+        ],
+        [
+          0.5,
+          0.8660254037844386,
+          0
+        ],
+        [
+          0.5,
+          -0.8660254037844386,
+          0
+        ]
+      ]
+    },
+    "expected_image_offsets": [
+      0,
+      3,
+      6,
+      9,
+      12,
+      15,
+      18
+    ],
+    "expected_image_vectors": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0
+      ]
+    ]
+  },
+  "policies": [
+    {
+      "id": "nm",
+      "standard_units": {
+        "length": "nm",
+        "time": "ps",
+        "angle": "radians"
+      }
+    },
+    {
+      "id": "pm",
+      "standard_units": {
+        "length": "pm",
+        "time": "fs",
+        "angle": "degrees"
+      }
+    }
+  ],
+  "query": {
+    "constructor": "from_receptor_projections",
+    "source_feature_kind": "hb acceptor",
+    "target_feature_kind": "hb donor",
+    "offset": {
+      "unit": "nm",
+      "values": 0.35
+    },
+    "radius": {
+      "unit": "nm",
+      "values": 0.02
+    },
+    "direction_tolerance": {
+      "unit": "degrees",
+      "values": 1
+    },
+    "min_fit": 1,
+    "essential": true,
+    "weight": 1,
+    "sites_per_model": 1,
+    "choices_per_source_feature": 2,
+    "alternatives": "Two separate one-site hypotheses; never duplicate one source feature as two simultaneous essential sites.",
+    "target_direction_rule": "Explicit pharmacophoric choice -u, where u is the selected provider carbonyl direction; not a provider-inferred donor orbital."
+  },
+  "candidate": {
+    "smiles": "[2H]O",
+    "base_coordinates": {
+      "unit": "nm",
+      "values": [
+        [
+          [
+            0.1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    "donor_pair": [
+      1,
+      0
+    ],
+    "construction": "Public MolSysMT conversion and coordinate insertion; fixed declared Cartesian rotations orient the observed O-to-D vector, then public translate places the donor anchor at the declared query center plus control displacement. Apply source-frame rotation through public rotate. No local molecular alignment/geometry code.",
+    "rotations_from_x_to_target": [
+      [
+        [
+          -0.5,
+          0.8660254037844386,
+          0
+        ],
+        [
+          -0.8660254037844386,
+          -0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          -0.5,
+          -0.8660254037844386,
+          0
+        ],
+        [
+          0.8660254037844386,
+          -0.5,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    ],
+    "reversed_axis_rotation": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "structure_index": 0
+  },
+  "controls": [
+    {
+      "id": "lobe0_aligned",
+      "source_lobe": 0,
+      "donor_axis_sign": -1,
+      "displacement": {
+        "unit": "nm",
+        "values": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_fits": [
+        1,
+        0
+      ]
+    },
+    {
+      "id": "lobe0_reversed",
+      "source_lobe": 0,
+      "donor_axis_sign": 1,
+      "displacement": {
+        "unit": "nm",
+        "values": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_fits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "lobe0_displaced",
+      "source_lobe": 0,
+      "donor_axis_sign": -1,
+      "displacement": {
+        "unit": "nm",
+        "values": [
+          0,
+          0,
+          0.1
+        ]
+      },
+      "expected_fits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "lobe1_aligned",
+      "source_lobe": 1,
+      "donor_axis_sign": -1,
+      "displacement": {
+        "unit": "nm",
+        "values": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_fits": [
+        0,
+        1
+      ]
+    },
+    {
+      "id": "lobe1_reversed",
+      "source_lobe": 1,
+      "donor_axis_sign": 1,
+      "displacement": {
+        "unit": "nm",
+        "values": [
+          0,
+          0,
+          0
+        ]
+      },
+      "expected_fits": [
+        0,
+        0
+      ]
+    },
+    {
+      "id": "lobe1_displaced",
+      "source_lobe": 1,
+      "donor_axis_sign": -1,
+      "displacement": {
+        "unit": "nm",
+        "values": [
+          0,
+          0,
+          0.1
+        ]
+      },
+      "expected_fits": [
+        0,
+        0
+      ]
+    }
+  ],
+  "negative_sources": [
+    {
+      "id": "water_acceptor_unsupported",
+      "smiles": "[2H]O",
+      "selection": "all",
+      "coordinates": {
+        "unit": "nm",
+        "values": [
+          [
+            [
+              0.1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      },
+      "structure_indices": [
+        0
+      ],
+      "site_roles": [
+        0,
+        1
+      ],
+      "site_models": [
+        1,
+        0
+      ],
+      "status": [
+        [
+          1,
+          0
+        ]
+      ],
+      "acceptor_status": 0,
+      "acceptor_direction_records": 0,
+      "donor_direction_records": 1,
+      "expected_models": 0,
+      "expected_pose_evaluations": 0,
+      "score": null
+    },
+    {
+      "id": "carbonyl_geometry_undefined",
+      "smiles": "CC=O",
+      "selection": [
+        2
+      ],
+      "coordinates": {
+        "unit": "nm",
+        "values": [
+          [
+            [
+              -0.15,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0.12,
+              0,
+              0
+            ]
+          ]
+        ]
+      },
+      "structure_indices": [
+        0
+      ],
+      "site_roles": [
+        1
+      ],
+      "site_models": [
+        2
+      ],
+      "status": [
+        [
+          2
+        ]
+      ],
+      "acceptor_status": 2,
+      "acceptor_direction_records": 0,
+      "donor_direction_records": 0,
+      "expected_models": 0,
+      "expected_pose_evaluations": 0,
+      "score": null
+    }
+  ],
+  "matrix": [
+    {
+      "id": "carbonyl-nm-position0",
+      "policy_id": "nm",
+      "structure_position": 0,
+      "source_structure_index": 0,
+      "expected_returned_models": 2,
+      "expected_primary_evaluations": 12,
+      "expected_recovery_evaluations": 4
+    },
+    {
+      "id": "carbonyl-nm-position1",
+      "policy_id": "nm",
+      "structure_position": 1,
+      "source_structure_index": 1,
+      "expected_returned_models": 2,
+      "expected_primary_evaluations": 12,
+      "expected_recovery_evaluations": 4
+    },
+    {
+      "id": "carbonyl-nm-position2",
+      "policy_id": "nm",
+      "structure_position": 2,
+      "source_structure_index": 0,
+      "expected_returned_models": 2,
+      "expected_primary_evaluations": 12,
+      "expected_recovery_evaluations": 4
+    },
+    {
+      "id": "carbonyl-pm-position0",
+      "policy_id": "pm",
+      "structure_position": 0,
+      "source_structure_index": 0,
+      "expected_returned_models": 2,
+      "expected_primary_evaluations": 12,
+      "expected_recovery_evaluations": 4
+    },
+    {
+      "id": "carbonyl-pm-position1",
+      "policy_id": "pm",
+      "structure_position": 1,
+      "source_structure_index": 1,
+      "expected_returned_models": 2,
+      "expected_primary_evaluations": 12,
+      "expected_recovery_evaluations": 4
+    },
+    {
+      "id": "carbonyl-pm-position2",
+      "policy_id": "pm",
+      "structure_position": 2,
+      "source_structure_index": 0,
+      "expected_returned_models": 2,
+      "expected_primary_evaluations": 12,
+      "expected_recovery_evaluations": 4
+    }
+  ],
+  "planned_counts": {
+    "positive_provider_direction_calls": 2,
+    "negative_provider_direction_calls": 4,
+    "source_position_policy_blocks": 6,
+    "returned_models": 12,
+    "primary_evaluations": 72,
+    "recovery_evaluations": 24,
+    "negative_queries": 4,
+    "negative_pose_evaluations": 0
+  },
+  "supplemental_optional_attribution": {
+    "states": [
+      "unavailable",
+      "failed"
+    ],
+    "source_position": 0,
+    "policy_id": "nm",
+    "each_models": 2,
+    "each_primary_evaluations": 12,
+    "each_recovery_evaluations": 4,
+    "separate_from_primary_denominators": true
+  },
+  "tolerances": {
+    "geometry_length": {
+      "unit": "nm",
+      "values": 1e-12
+    },
+    "dimensionless": 1e-12,
+    "assignment_distance": {
+      "unit": "nm",
+      "values": 1e-12
+    },
+    "other_assignment_fields": "exact"
+  },
+  "receiving_checks": [
+    "Validate versioned schema, named method/site definition/state/pbc and producer identity before selecting records.",
+    "Match acceptor role and original source anchor, full CSR support, ordered repeated structure position, model2/status1, local multiplicity0/1, finite normalized vectors and unit-bearing origins.",
+    "For status0 or2 retain the reason and no acceptor query/score; never use a donor direction merely because a finite direction exists elsewhere in the result.",
+    "Refuse malformed schema/mapping/units/codes/finite geometry as a receiving failure. Propagate operational/provider errors. No default axis, alternate backend or first-neighbor repair.",
+    "Independent test-only original-coordinate carbonyl oracles and declared proper transforms check every provider/query/candidate geometry and all per-control fits, assignments and native roundtrips.",
+    "Preserve native source coordinates/chemistry/history, observations, full cached provider payloads/inventories, candidates, application units and original/derived source/native/helper/test/input/metadata identities.",
+    "Record actual methods/software/model provenance and separately cited geometric inspiration; never claim an experimental geometry profile is an orbital or energetic optimum. Optional tracking absence/failure preserves science."
+  ],
+  "measured_results": null,
+  "measured_models": 0,
+  "measured_pose_evaluations": 0,
+  "holdout_access": false,
+  "non_applicable": [
+    "Biological labels/statistical inference: analytical source controls only.",
+    "Timing/memory comparison: no performance experiment.",
+    "New ArgDigest/DepDigest/SMonitor runtime adoption: no production or optional-engine boundary changes in declaration."
+  ],
+  "exclusions": [
+    "New public/default acceptor profile",
+    "Nitrogen/ester/carboxylate/water acceptor geometry adoption",
+    "Periodic reconstruction",
+    "Chemical-state/protonation/H optimization",
+    "Physical ligand realizability, binding/affinity/activity/optimality claims",
+    "Dependency/provider/source/pin/release/addon changes"
+  ]
+}
