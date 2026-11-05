@@ -1,0 +1,15 @@
+{
+  "schema": "pharmacophoremt.receptor-contribution-eligibility-rule@1",
+  "recorded_at": "2026-11-05T17:26:40.407062+00:00",
+  "input_native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "scope": "Public molecular inspection and feature inventories only; no new hypotheses or pose evaluation.",
+  "candidate_scope": "Every PHE group in original source order in the prepared fragment; group-specific MolSysMT selection",
+  "eligibility": {
+    "donor_H_pairs": 1,
+    "aromatic_records": 1,
+    "aromatic_members": 6,
+    "heavy_inventory": "nonempty singleton records with equal source atom-set/frame/state declarations"
+  },
+  "selection_rule": "Retain PHE404 plus the first two other eligible source-ordered PHE groups. If fewer than three or anchor invalid, block this design; do not substitute another chemistry or alter outcomes.",
+  "model_evaluation_permitted": false
+}

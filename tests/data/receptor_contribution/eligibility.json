@@ -1,0 +1,440 @@
+{
+  "schema": "pharmacophoremt.receptor-contribution-eligibility-ledger@1",
+  "native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "eligibility_rule_sha256": "f41df022a84792b6244865e00416a1bb0f1bca95e72efbee32825deeb9e9bb0d",
+  "chosen_group_ids": [
+    "337",
+    "367",
+    "404"
+  ],
+  "model_pose_evaluations": 0,
+  "rows": [
+    {
+      "source_group_order": 33,
+      "group_id": "337",
+      "selection": "group_id == \"337\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        2223,
+        2224,
+        2225,
+        2226,
+        2227,
+        2228,
+        2229,
+        2230,
+        2231
+      ],
+      "donor_atoms": [
+        251,
+        2223
+      ],
+      "acceptor_atoms": [
+        [
+          254
+        ]
+      ],
+      "ring_atoms": [
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ],
+      "heavy_atom_indices": [
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ],
+      "chemical_inventory_sha256": "9a818768af8e46b41895eeefc55b00a7693ad89265b4a6fb7bdb5064e836dae0",
+      "heavy_inventory_sha256": "0f2275b8e9b80442632f95bb2c1ace00bcad19d5a9471325e02f5c29ce4658fb"
+    },
+    {
+      "source_group_order": 63,
+      "group_id": "367",
+      "selection": "group_id == \"367\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        2461,
+        2462,
+        2463,
+        2464,
+        2465,
+        2466,
+        2467,
+        2468,
+        2469
+      ],
+      "donor_atoms": [
+        486,
+        2461
+      ],
+      "acceptor_atoms": [
+        [
+          489
+        ]
+      ],
+      "ring_atoms": [
+        491,
+        492,
+        493,
+        494,
+        495,
+        496
+      ],
+      "heavy_atom_indices": [
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496
+      ],
+      "chemical_inventory_sha256": "ca829c4d7fb75700e0932f186948adf8c84e90262e1e62074094eb668c5f39dd",
+      "heavy_inventory_sha256": "0210c43ca78f4213f5848d42575c7559f6ca418e1fde20b8ecb435a27f253071"
+    },
+    {
+      "source_group_order": 100,
+      "group_id": "404",
+      "selection": "group_id == \"404\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        2772,
+        2773,
+        2774,
+        2775,
+        2776,
+        2777,
+        2778,
+        2779,
+        2780
+      ],
+      "donor_atoms": [
+        791,
+        2772
+      ],
+      "acceptor_atoms": [
+        [
+          794
+        ]
+      ],
+      "ring_atoms": [
+        796,
+        797,
+        798,
+        799,
+        800,
+        801
+      ],
+      "heavy_atom_indices": [
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801
+      ],
+      "chemical_inventory_sha256": "6f856a701d808cd7546898524424c2c0d261c62b63dc68cd375b38d385bf39a9",
+      "heavy_inventory_sha256": "cebdc24efee0a2ee22719503988fd789d41533eee180cb8e23d93ff9e7f3c696"
+    },
+    {
+      "source_group_order": 121,
+      "group_id": "425",
+      "selection": "group_id == \"425\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963,
+        2937,
+        2938,
+        2939,
+        2940,
+        2941,
+        2942,
+        2943,
+        2944,
+        2945
+      ],
+      "donor_atoms": [
+        953,
+        2937
+      ],
+      "acceptor_atoms": [
+        [
+          956
+        ]
+      ],
+      "ring_atoms": [
+        958,
+        959,
+        960,
+        961,
+        962,
+        963
+      ],
+      "heavy_atom_indices": [
+        953,
+        954,
+        955,
+        956,
+        957,
+        958,
+        959,
+        960,
+        961,
+        962,
+        963
+      ],
+      "chemical_inventory_sha256": "7174ac5a4a9f887a9b77499ce62513787b8c9c9ce61df7fd47a2aa673d5b5140",
+      "heavy_inventory_sha256": "4c66ae92b9e193448156fa39e10c49dd8d5ed1876bf50a8067b7c850ffc747ee"
+    },
+    {
+      "source_group_order": 131,
+      "group_id": "435",
+      "selection": "group_id == \"435\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        1031,
+        1032,
+        1033,
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1039,
+        1040,
+        1041,
+        3016,
+        3017,
+        3018,
+        3019,
+        3020,
+        3021,
+        3022,
+        3023,
+        3024
+      ],
+      "donor_atoms": [
+        1031,
+        3016
+      ],
+      "acceptor_atoms": [
+        [
+          1034
+        ]
+      ],
+      "ring_atoms": [
+        1036,
+        1037,
+        1038,
+        1039,
+        1040,
+        1041
+      ],
+      "heavy_atom_indices": [
+        1031,
+        1032,
+        1033,
+        1034,
+        1035,
+        1036,
+        1037,
+        1038,
+        1039,
+        1040,
+        1041
+      ],
+      "chemical_inventory_sha256": "466f0109cf8e64a8bd2f399c0a688b3cc1a8ac9516f7d509ff84f973526896ec",
+      "heavy_inventory_sha256": "9c07fc0bf1f81e5fd372708989dd3570caa2ec90b5d335aaa34b41c7e31f62ed"
+    },
+    {
+      "source_group_order": 141,
+      "group_id": "445",
+      "selection": "group_id == \"445\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        1116,
+        1117,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126,
+        3096,
+        3097,
+        3098,
+        3099,
+        3100,
+        3101,
+        3102,
+        3103,
+        3104
+      ],
+      "donor_atoms": [
+        1116,
+        3096
+      ],
+      "acceptor_atoms": [
+        [
+          1119
+        ]
+      ],
+      "ring_atoms": [
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126
+      ],
+      "heavy_atom_indices": [
+        1116,
+        1117,
+        1118,
+        1119,
+        1120,
+        1121,
+        1122,
+        1123,
+        1124,
+        1125,
+        1126
+      ],
+      "chemical_inventory_sha256": "55f7092a088fb7022bcb95939935022a0b187c3e4cb0a0877ba0d718e9fff8df",
+      "heavy_inventory_sha256": "08aae736af413163b30f3daa754019eb8b1457ee25f71a88b4801ae45e28ae6c"
+    },
+    {
+      "source_group_order": 157,
+      "group_id": "461",
+      "selection": "group_id == \"461\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        1239,
+        1240,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249,
+        3231,
+        3232,
+        3233,
+        3234,
+        3235,
+        3236,
+        3237,
+        3238,
+        3239
+      ],
+      "donor_atoms": [
+        1239,
+        3231
+      ],
+      "acceptor_atoms": [
+        [
+          1242
+        ]
+      ],
+      "ring_atoms": [
+        1244,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249
+      ],
+      "heavy_atom_indices": [
+        1239,
+        1240,
+        1241,
+        1242,
+        1243,
+        1244,
+        1245,
+        1246,
+        1247,
+        1248,
+        1249
+      ],
+      "chemical_inventory_sha256": "85338ebf96c45acc38ed40f3525f722d2a950d2607c6f1487cc33b925a7810f0",
+      "heavy_inventory_sha256": "0a017f20e8d8d083a8cd0342eb8ac1b93c9f888beb7a490b6d183da77025361f"
+    }
+  ]
+}

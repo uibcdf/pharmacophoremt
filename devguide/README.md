@@ -36,7 +36,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: public receptor generation now composes optional cached exclusions under #88 (217 passing selected cases, 61 new), following #87/#86/#85/#83/#84. Next prespecify a broader donor/ring/joint/exclusion development comparison. Further directions remain MolSysMT #375 and optional pockets TopoMT #101. #82 awaits published ArgDigest fixes. Wider #6/audit12, #66, SDF #74/#215 and hosted/installed/public gates remain separate. Addon deferred; public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #89 freezes the receptor contribution protocol and 60-cell matrix after provider-only eligibility finds PHE337/367/404. Eight offline guards pass; no new comparison outcomes are measured. Next #90 executes 342 planned models/1,710 primary evaluations, preserving independent oracles, failure/completion and molecular ownership. Broader #6/audit12/15, #66/#82/#74/#215 and #9/#23 delivery/hosted gates remain separate; addon/release deferred, public 0.4.0 unchanged.
 
 ## Classical Workflow Specification
 

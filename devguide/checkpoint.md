@@ -1,5 +1,54 @@
 # Development Checkpoint
 
+## Receptor contribution study prespecified — 2026-11-05
+
+[#89](https://github.com/uibcdf/pharmacophoremt/issues/89) delivers the
+[protocol](receptor_contribution_protocol.md), [explicit matrix](../tests/data/receptor_contribution/plan.json)
+and lightweight declaration guards. **No new hypothesis/pose comparison is
+executed in this stage.** All fit arrays/workloads are prospective expectations.
+The [receipt](evidence/receptor_contribution_plan_20261105_summary.json) retains
+actual public MolSysMT eligibility inspection, all attempts, exact source/native/
+helper/test/input/metadata identities and original derived-input/operation credit.
+
+A rule frozen before inspection finds all seven PHE groups eligible, retaining
+337/367/404 by source order plus the required 404 anchor. Each has one donor–H,
+one six-member ring and eleven heavy records. Input SHA-256 and original full
+coordinates, chemistry/history, cached observations and application units remain
+unchanged. One prepared protein and PHE chemistry supply analytical controls;
+these are not independent ligands or biological samples.
+
+The matrix fixes six paired variants, five candidate controls, two physical
+unit policies and separate tolerance/budget blocks: **60 planned generation
+cells, 342 returned models, 1,710 primary pose evaluations**. Thirty zero-budget
+cell/control slots stay unevaluated; native recovery plans 108 extra evaluations.
+Eight offline guards pass for frozen identities, analytical component/radius
+answers, strict-veto separation, proper rotations, pairing and denominators.
+These checks do not execute or validate the planned molecular comparison.
+
+**Next: [#90](https://github.com/uibcdf/pharmacophoremt/issues/90)** implements the
+unshipped recorder and executes this exact declaration with independent geometry/
+clash oracles, actual custody/credit and full failure/completion accounting.
+Original source loading, selection, representation, recognition, geometry,
+coordinate operations and candidate construction remain entirely MolSysMT-owned.
+No provider/dependency/floor/pin/production API/release changes in this stage.
+The implementation must investigate an unexpected candidate/source result, not
+silently alter eligibility, choices or expected answers.
+
+The first audit collector stops at its cohort gate without a usable output;
+its script/log/before snapshot remain. Collector corrections use named provider
+attributes, native quantity detachment and save the ledger before its gate.
+A second start hits an existing temporary directory; a distinct task directory
+then completes with seven eligible regions and stable identities. These attempts
+are not passing audits. Borrowed providers/prefixes remain unchanged. A bounded
+workspace refresh preserves MolSysMT 103 commits behind and TopoMT six behind
+with its pre-existing `_version.py` modification; no sibling pull/merge/edit occurs.
+
+Owner LMMV/dprada; owned ignored capsule
+`build/phmt-receptor-contribution-20261105-sqlggbr5`, review 2026-11-19 or
+source/scientific change. No continuing local process is required. Broader
+scientific audit12/15, #66, #82, #74/#215 and #9/#23 hosted/installed/public gates
+remain independent. Addon/release deferred, public 0.4.0 unchanged.
+
 ## Optional receptor exclusions qualified — 2026-11-05
 
 [#88](https://github.com/uibcdf/pharmacophoremt/issues/88) extends

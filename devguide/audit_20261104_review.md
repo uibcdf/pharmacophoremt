@@ -424,3 +424,19 @@ development comparisons before evaluating new parameters. These analytical
 settings are not independent ligands, physical radii or biological evidence.
 Further provider directions, environmental refinement, optional pockets, #66,
 ArgDigest published-fix receiving #82 and delivery/hosted gates remain separate.
+
+## Receptor contribution prespecification — 2026-11-05
+
+[#89](https://github.com/uibcdf/pharmacophoremt/issues/89) freezes a
+[paired analytical protocol](receptor_contribution_protocol.md) and explicit
+60-cell matrix for donor/ring/joint/exclusion contributions, fixed tolerance
+and budget blocks. Actual public MolSysMT eligibility finds seven eligible PHE
+regions and deterministically retains 337/367/404. Input/custody, actual credit,
+all attempts and exact producers remain in the
+[receipt](evidence/receptor_contribution_plan_20261105_summary.json).
+Eight offline guards protect the prospective declaration. No new model/pose
+comparison or biological validation is executed; 342 models/1,710 primary
+evaluations are planned workloads. Audit12/15 remains partial. Next #90 executes
+the fixed declaration with independent geometry/clash oracles and full failure/
+completion accounting. Molecular work remains MolSysMT-owned; provider/data/
+delivery and broader chemical/biological gates remain separate.

@@ -1,5 +1,26 @@
 # Strategic Roadmap
 
+## Receptor contribution declaration delivered — 2026-11-05
+
+[#89](https://github.com/uibcdf/pharmacophoremt/issues/89) freezes
+[the protocol](receptor_contribution_protocol.md) and
+[60-cell matrix](../tests/data/receptor_contribution/plan.json). Public MolSysMT
+inspection finds seven eligible PHE regions and deterministically retains
+337/367/404 before any model/pose comparison. All scientific fit arrays and
+342 models/1,710 primary evaluations remain planned, not measured outcomes.
+Eight lightweight guards verify the declaration, not future biological or
+molecular results; [original eligibility evidence](evidence/receptor_contribution_plan_20261105_summary.json)
+retains actual producers, input custody/credit and all initial collector attempts.
+
+Next execute **[#90](https://github.com/uibcdf/pharmacophoremt/issues/90)**:
+implement an unshipped recorder using existing public PHMT tools and provider-only
+molecular construction/recognition/transforms, then compare every declared result
+with independent oracles. Keep .08/.12 nm tolerance and 3/0 budget effects separate,
+strict-veto/positive-fit meanings distinct, and zero-budget slots unscored.
+One prepared input/PHE chemistry is not a target cohort or biological validation.
+Broader audit12/15, provider directions/refinement/pockets, #66/#82/#74/#215 and
+hosted/installed/public #9/#23 retain their scope; addon/release remain deferred.
+
 ## Generated receptor exclusions delivered — 2026-11-05
 
 [#88](https://github.com/uibcdf/pharmacophoremt/issues/88) composes optional cached

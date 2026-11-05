@@ -1,0 +1,3830 @@
+{
+  "schema": "pharmacophoremt.receptor-contribution-plan@1",
+  "phase": "prespecified_not_executed",
+  "issue": "uibcdf/pharmacophoremt#89",
+  "declared_at": "2026-11-05T17:31:43.447178+00:00",
+  "input_summary": "devguide/evidence/eralpha_interface_py314_summary.json",
+  "native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "eligibility_ledger_sha256": "69dd53f80ca5a273cbf7f3691e7bb8924212fb004629986e7350af3ebce5728d",
+  "eligibility_rule_sha256": "f41df022a84792b6244865e00416a1bb0f1bca95e72efbee32825deeb9e9bb0d",
+  "structure_index": 0,
+  "chemical_state": "reference",
+  "regions": [
+    {
+      "source_group_order": 33,
+      "group_id": "337",
+      "selection": "group_id == \"337\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261,
+        2223,
+        2224,
+        2225,
+        2226,
+        2227,
+        2228,
+        2229,
+        2230,
+        2231
+      ],
+      "donor_atoms": [
+        251,
+        2223
+      ],
+      "acceptor_atoms": [
+        [
+          254
+        ]
+      ],
+      "ring_atoms": [
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ],
+      "heavy_atom_indices": [
+        251,
+        252,
+        253,
+        254,
+        255,
+        256,
+        257,
+        258,
+        259,
+        260,
+        261
+      ],
+      "chemical_inventory_sha256": "9a818768af8e46b41895eeefc55b00a7693ad89265b4a6fb7bdb5064e836dae0",
+      "heavy_inventory_sha256": "0f2275b8e9b80442632f95bb2c1ace00bcad19d5a9471325e02f5c29ce4658fb"
+    },
+    {
+      "source_group_order": 63,
+      "group_id": "367",
+      "selection": "group_id == \"367\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496,
+        2461,
+        2462,
+        2463,
+        2464,
+        2465,
+        2466,
+        2467,
+        2468,
+        2469
+      ],
+      "donor_atoms": [
+        486,
+        2461
+      ],
+      "acceptor_atoms": [
+        [
+          489
+        ]
+      ],
+      "ring_atoms": [
+        491,
+        492,
+        493,
+        494,
+        495,
+        496
+      ],
+      "heavy_atom_indices": [
+        486,
+        487,
+        488,
+        489,
+        490,
+        491,
+        492,
+        493,
+        494,
+        495,
+        496
+      ],
+      "chemical_inventory_sha256": "ca829c4d7fb75700e0932f186948adf8c84e90262e1e62074094eb668c5f39dd",
+      "heavy_inventory_sha256": "0210c43ca78f4213f5848d42575c7559f6ca418e1fde20b8ecb435a27f253071"
+    },
+    {
+      "source_group_order": 100,
+      "group_id": "404",
+      "selection": "group_id == \"404\" and group_name == \"PHE\"",
+      "status": "eligible",
+      "reasons": [],
+      "selected_atom_indices": [
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801,
+        2772,
+        2773,
+        2774,
+        2775,
+        2776,
+        2777,
+        2778,
+        2779,
+        2780
+      ],
+      "donor_atoms": [
+        791,
+        2772
+      ],
+      "acceptor_atoms": [
+        [
+          794
+        ]
+      ],
+      "ring_atoms": [
+        796,
+        797,
+        798,
+        799,
+        800,
+        801
+      ],
+      "heavy_atom_indices": [
+        791,
+        792,
+        793,
+        794,
+        795,
+        796,
+        797,
+        798,
+        799,
+        800,
+        801
+      ],
+      "chemical_inventory_sha256": "6f856a701d808cd7546898524424c2c0d261c62b63dc68cd375b38d385bf39a9",
+      "heavy_inventory_sha256": "cebdc24efee0a2ee22719503988fd789d41533eee180cb8e23d93ff9e7f3c696"
+    }
+  ],
+  "policies": [
+    {
+      "id": "nm",
+      "standard_units": [
+        "nm",
+        "ps",
+        "radians"
+      ]
+    },
+    {
+      "id": "pm",
+      "standard_units": [
+        "pm",
+        "fs",
+        "degrees"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "donor",
+      "families": [
+        "hb donor"
+      ],
+      "exclusion_radius_nm": null
+    },
+    {
+      "id": "ring",
+      "families": [
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": null
+    },
+    {
+      "id": "joint",
+      "families": [
+        "hb donor",
+        "hb acceptor",
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": null
+    },
+    {
+      "id": "joint_ex01",
+      "families": [
+        "hb donor",
+        "hb acceptor",
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": 0.01
+    },
+    {
+      "id": "joint_ex20",
+      "families": [
+        "hb donor",
+        "hb acceptor",
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": 0.2
+    },
+    {
+      "id": "joint_ex40",
+      "families": [
+        "hb donor",
+        "hb acceptor",
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": 0.4
+    }
+  ],
+  "donor_distances_nm": [
+    0.28,
+    0.35
+  ],
+  "aromatic_distances_nm": [
+    0.35,
+    0.45
+  ],
+  "face_signs": [
+    1,
+    -1
+  ],
+  "min_fit_value": 1,
+  "direction_tolerance_degrees": 1,
+  "geometry_tolerance_nm": 1e-12,
+  "geometry_tolerance_dimensionless": 1e-12,
+  "controls": [
+    "intact",
+    "donor_displaced",
+    "ring_displaced",
+    "both_displaced",
+    "ring_rotated"
+  ],
+  "candidate_definition": {
+    "kind": "disconnected_analytical_O_and_benzene",
+    "heavy_atom_count": 7,
+    "explicit_H_count": 0,
+    "donor_complement_distance_nm": 0.35,
+    "ring_complement_distance_nm": 0.35,
+    "ring_face": 1,
+    "displacement_nm": [
+      1,
+      0,
+      0
+    ],
+    "rotation": {
+      "angle_degrees": 90,
+      "axis_rule": "least absolute component of cached ring normal; ties x,y,z",
+      "matrices": [
+        [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "aromatic_axis_cosine_upper_bound": 0.3333333333333333,
+      "center": "public provider-derived candidate ring center"
+    }
+  },
+  "custody": [
+    "original coordinates",
+    "complete chemical state/history",
+    "cached hydrophobic/hbonds/pi_pi analyses",
+    "inventories",
+    "application unit policy"
+  ],
+  "molecular_operations_owner": "molsysmt",
+  "profile": "donor_aromatic_faces",
+  "persistence": {
+    "formats": [
+      "json",
+      "yaml"
+    ],
+    "representative_rule": "First returned model with intact positive fit one; otherwise first returned; none for zero budget",
+    "full_content_comparison": "geometry within 1e-12 nm/dimensionless; all other native fields exact",
+    "post_recovery_pose": "intact; preserve original scientific result with separately captured operation attribution"
+  },
+  "counts": {
+    "generation_cells": 60,
+    "blocks": {
+      "baseline": 36,
+      "tolerance": 12,
+      "budget": 12
+    },
+    "planned_returned_models": 342,
+    "planned_primary_pose_evaluations": 1710,
+    "zero_budget_unevaluated_candidate_slots": 30,
+    "native_representative_models": 54,
+    "native_roundtrips": 108,
+    "planned_post_recovery_pose_evaluations": 108
+  },
+  "actual_pose_evaluations": 0,
+  "measured_comparison_results": null,
+  "holdout_access": false,
+  "population": {
+    "prepared_input_artifacts": 1,
+    "protein_targets": 1,
+    "residue_chemistries": [
+      "PHE"
+    ],
+    "regions": 3,
+    "independent_biological_ligands": 0,
+    "independent_activity_labels": 0,
+    "inference": "paired analytical controls only; no independent samples, affinity, pH, environmental refinement, biological accuracy or performance claim"
+  },
+  "matrix": [
+    {
+      "id": "phe337-nm-baseline-donor-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.0,
+          1.0
+        ],
+        "donor_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          1.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          1.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-baseline-ring-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 4,
+      "expected_returned": 4,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-baseline-joint-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-baseline-joint_ex01-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint_ex01",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.01,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-baseline-joint_ex20-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint_ex20",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.2,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-baseline-joint_ex40-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint_ex40",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.4,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": 7
+    },
+    {
+      "id": "phe337-nm-tolerance-joint-r0.08-b8",
+      "block": "tolerance",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.08,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-tolerance-joint-r0.12-b8",
+      "block": "tolerance",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.12,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-budget-joint-r0.02-b3",
+      "block": "budget",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 3,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 3,
+      "expected_remaining": 5,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-nm-budget-joint-r0.02-b0",
+      "block": "budget",
+      "group_id": "337",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 0,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 0,
+      "expected_remaining": 8,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [],
+        "donor_displaced": [],
+        "ring_displaced": [],
+        "both_displaced": [],
+        "ring_rotated": []
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-baseline-donor-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.0,
+          1.0
+        ],
+        "donor_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          1.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          1.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-baseline-ring-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 4,
+      "expected_returned": 4,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-baseline-joint-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-baseline-joint_ex01-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint_ex01",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.01,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-baseline-joint_ex20-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint_ex20",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.2,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-baseline-joint_ex40-r0.02-b8",
+      "block": "baseline",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint_ex40",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.4,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": 7
+    },
+    {
+      "id": "phe337-pm-tolerance-joint-r0.08-b8",
+      "block": "tolerance",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.08,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-tolerance-joint-r0.12-b8",
+      "block": "tolerance",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.12,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-budget-joint-r0.02-b3",
+      "block": "budget",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 3,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 3,
+      "expected_remaining": 5,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe337-pm-budget-joint-r0.02-b0",
+      "block": "budget",
+      "group_id": "337",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 0,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 0,
+      "expected_remaining": 8,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [],
+        "donor_displaced": [],
+        "ring_displaced": [],
+        "both_displaced": [],
+        "ring_rotated": []
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-baseline-donor-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.0,
+          1.0
+        ],
+        "donor_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          1.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          1.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-baseline-ring-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 4,
+      "expected_returned": 4,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-baseline-joint-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-baseline-joint_ex01-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint_ex01",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.01,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-baseline-joint_ex20-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint_ex20",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.2,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-baseline-joint_ex40-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint_ex40",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.4,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": 7
+    },
+    {
+      "id": "phe367-nm-tolerance-joint-r0.08-b8",
+      "block": "tolerance",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.08,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-tolerance-joint-r0.12-b8",
+      "block": "tolerance",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.12,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-budget-joint-r0.02-b3",
+      "block": "budget",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 3,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 3,
+      "expected_remaining": 5,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-nm-budget-joint-r0.02-b0",
+      "block": "budget",
+      "group_id": "367",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 0,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 0,
+      "expected_remaining": 8,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [],
+        "donor_displaced": [],
+        "ring_displaced": [],
+        "both_displaced": [],
+        "ring_rotated": []
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-baseline-donor-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.0,
+          1.0
+        ],
+        "donor_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          1.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          1.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-baseline-ring-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 4,
+      "expected_returned": 4,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-baseline-joint-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-baseline-joint_ex01-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint_ex01",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.01,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-baseline-joint_ex20-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint_ex20",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.2,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-baseline-joint_ex40-r0.02-b8",
+      "block": "baseline",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint_ex40",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.4,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": 7
+    },
+    {
+      "id": "phe367-pm-tolerance-joint-r0.08-b8",
+      "block": "tolerance",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.08,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-tolerance-joint-r0.12-b8",
+      "block": "tolerance",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.12,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-budget-joint-r0.02-b3",
+      "block": "budget",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 3,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 3,
+      "expected_remaining": 5,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe367-pm-budget-joint-r0.02-b0",
+      "block": "budget",
+      "group_id": "367",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 0,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 0,
+      "expected_remaining": 8,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [],
+        "donor_displaced": [],
+        "ring_displaced": [],
+        "both_displaced": [],
+        "ring_rotated": []
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-baseline-donor-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.0,
+          1.0
+        ],
+        "donor_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          1.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          1.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-baseline-ring-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 4,
+      "expected_returned": 4,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-baseline-joint-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-baseline-joint_ex01-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint_ex01",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.01,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-baseline-joint_ex20-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint_ex20",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.2,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-baseline-joint_ex40-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint_ex40",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.4,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": 7
+    },
+    {
+      "id": "phe404-nm-tolerance-joint-r0.08-b8",
+      "block": "tolerance",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.08,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-tolerance-joint-r0.12-b8",
+      "block": "tolerance",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.12,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-budget-joint-r0.02-b3",
+      "block": "budget",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 3,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 3,
+      "expected_remaining": 5,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-nm-budget-joint-r0.02-b0",
+      "block": "budget",
+      "group_id": "404",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 0,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 0,
+      "expected_remaining": 8,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [],
+        "donor_displaced": [],
+        "ring_displaced": [],
+        "both_displaced": [],
+        "ring_rotated": []
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-baseline-donor-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.0,
+          1.0
+        ],
+        "donor_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          1.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          1.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-baseline-ring-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 4,
+      "expected_returned": 4,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-baseline-joint-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-baseline-joint_ex01-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint_ex01",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.01,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-baseline-joint_ex20-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint_ex20",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.2,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-baseline-joint_ex40-r0.02-b8",
+      "block": "baseline",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint_ex40",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": 0.4,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched_and_no_strict_inside_clashes",
+      "minimum_guaranteed_intact_reference_clash_pairs": 7
+    },
+    {
+      "id": "phe404-pm-tolerance-joint-r0.08-b8",
+      "block": "tolerance",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.08,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          0.5,
+          0.5,
+          1.0,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-tolerance-joint-r0.12-b8",
+      "block": "tolerance",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.12,
+      "max_hypotheses": 8,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 8,
+      "expected_remaining": 0,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5,
+          1.0,
+          0.5
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0,
+          0.5,
+          0.0
+        ],
+        "ring_displaced": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-budget-joint-r0.02-b3",
+      "block": "budget",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 3,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 3,
+      "expected_remaining": 5,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "donor_displaced": [
+          0.5,
+          0.0,
+          0.0
+        ],
+        "ring_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "both_displaced": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "ring_rotated": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    },
+    {
+      "id": "phe404-pm-budget-joint-r0.02-b0",
+      "block": "budget",
+      "group_id": "404",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 0,
+      "exclusion_radius_nm": null,
+      "expected_total_hypotheses": 8,
+      "expected_returned": 0,
+      "expected_remaining": 8,
+      "expected_complete": false,
+      "expected_positive_fit_values": {
+        "intact": [],
+        "donor_displaced": [],
+        "ring_displaced": [],
+        "both_displaced": [],
+        "ring_rotated": []
+      },
+      "evaluation_scope": "all returned hypotheses; no score if none returned",
+      "expected_acceptance_rule": "all_positive_sites_matched",
+      "minimum_guaranteed_intact_reference_clash_pairs": null
+    }
+  ]
+}

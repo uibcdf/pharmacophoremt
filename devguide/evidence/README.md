@@ -1,5 +1,17 @@
 # Local scientific evidence
 
+## Receptor contribution prespecification — 2026-11-05
+
+[Receipt/full eligibility evidence](receptor_contribution_plan_20261105_summary.json)
+retains the frozen source-order rule, actual public MolSysMT audit of seven PHE
+regions, deterministic 337/367/404 selection, full source custody, reached input/
+operation credit and stable producer identities. All initial collector/setup
+attempts remain; no hypothesis or pose is evaluated. Eight offline plan guards
+protect [the protocol](../receptor_contribution_protocol.md) and prospective
+60-cell matrix. **342 models/1,710 evaluations are planned, not measured.**
+Actual execution is #90; #89 closes only prespecification. One prepared protein/
+PHE chemistry provides no independent biological cohort or efficacy claim.
+
 ## Generated receptor exclusions — 2026-11-05
 
 [Receipt/full evidence](receptor_generation_exclusions_20261105_summary.json):
