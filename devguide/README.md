@@ -36,7 +36,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #90 measures the unchanged receptor contribution matrix (342 models, 1,710 primary/108 recovery evaluations, 30 unscored zero-budget slots), with independent oracles, native recovery, unit agreement, custody and actual credit. All 20 scientific mechanisms/eight plan guards have passing evidence; original guard/fixture corrections retained. Next requires a separately declared chemistry/preparation extension or qualified #66 biological data. Broader audit12/15, #82/#74/#215 and #9/#23 gates remain separate; addon/release deferred, public 0.4.0 unchanged.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #91 qualifies the frozen native TYR dual-donor extension (12 cells, 20 models, 100 primary/24 recovery evaluations). Independent geometry/injective-assignment, native recovery, custody, unit and attribution checks pass; original oracle correction and attempts remain. Targets do not overlap, so reuse prevention retains its dedicated existing guard. Next inspect the exact MolSysMT #375 acceptor-direction handoff before declaring receiving; molecular geometry stays upstream. Broader scientific/data/#82/#74/#215 and #9/#23 gates stay separate; addon/release deferred, public 0.4.0 unchanged.
 
 ## Classical Workflow Specification
 

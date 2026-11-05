@@ -1,0 +1,291 @@
+{
+  "schema": "pharmacophoremt.tyr-cardinality-eligibility-ledger@1",
+  "native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "chosen_group_ids": [
+    "328",
+    "331"
+  ],
+  "model_pose_evaluations": 0,
+  "rows": [
+    {
+      "source_group_order": 24,
+      "group_id": "328",
+      "selection": "group_id == \"328\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          172,
+          2156
+        ],
+        "O": [
+          183,
+          2164
+        ]
+      },
+      "ring_atoms": [
+        177,
+        178,
+        179,
+        180,
+        181,
+        182
+      ],
+      "selected_atom_indices": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        2156,
+        2157,
+        2158,
+        2159,
+        2160,
+        2161,
+        2162,
+        2163,
+        2164
+      ],
+      "acceptor_atoms": [
+        [
+          175
+        ],
+        [
+          183
+        ]
+      ]
+    },
+    {
+      "source_group_order": 27,
+      "group_id": "331",
+      "selection": "group_id == \"331\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          199,
+          2176
+        ],
+        "O": [
+          210,
+          2184
+        ]
+      },
+      "ring_atoms": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209
+      ],
+      "selected_atom_indices": [
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        2176,
+        2177,
+        2178,
+        2179,
+        2180,
+        2181,
+        2182,
+        2183,
+        2184
+      ],
+      "acceptor_atoms": [
+        [
+          202
+        ],
+        [
+          210
+        ]
+      ]
+    },
+    {
+      "source_group_order": 155,
+      "group_id": "459",
+      "selection": "group_id == \"459\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          1220,
+          3215
+        ],
+        "O": [
+          1231,
+          3223
+        ]
+      },
+      "ring_atoms": [
+        1225,
+        1226,
+        1227,
+        1228,
+        1229,
+        1230
+      ],
+      "selected_atom_indices": [
+        1220,
+        1221,
+        1222,
+        1223,
+        1224,
+        1225,
+        1226,
+        1227,
+        1228,
+        1229,
+        1230,
+        1231,
+        3215,
+        3216,
+        3217,
+        3218,
+        3219,
+        3220,
+        3221,
+        3222,
+        3223
+      ],
+      "acceptor_atoms": [
+        [
+          1223
+        ],
+        [
+          1231
+        ]
+      ]
+    },
+    {
+      "source_group_order": 222,
+      "group_id": "526",
+      "selection": "group_id == \"526\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          1766,
+          3788
+        ],
+        "O": [
+          1777,
+          3796
+        ]
+      },
+      "ring_atoms": [
+        1771,
+        1772,
+        1773,
+        1774,
+        1775,
+        1776
+      ],
+      "selected_atom_indices": [
+        1766,
+        1767,
+        1768,
+        1769,
+        1770,
+        1771,
+        1772,
+        1773,
+        1774,
+        1775,
+        1776,
+        1777,
+        3788,
+        3789,
+        3790,
+        3791,
+        3792,
+        3793,
+        3794,
+        3795,
+        3796
+      ],
+      "acceptor_atoms": [
+        [
+          1769
+        ],
+        [
+          1777
+        ]
+      ]
+    },
+    {
+      "source_group_order": 233,
+      "group_id": "537",
+      "selection": "group_id == \"537\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          1853,
+          3884
+        ],
+        "O": [
+          1864,
+          3892
+        ]
+      },
+      "ring_atoms": [
+        1858,
+        1859,
+        1860,
+        1861,
+        1862,
+        1863
+      ],
+      "selected_atom_indices": [
+        1853,
+        1854,
+        1855,
+        1856,
+        1857,
+        1858,
+        1859,
+        1860,
+        1861,
+        1862,
+        1863,
+        1864,
+        3884,
+        3885,
+        3886,
+        3887,
+        3888,
+        3889,
+        3890,
+        3891,
+        3892
+      ],
+      "acceptor_atoms": [
+        [
+          1856
+        ],
+        [
+          1864
+        ]
+      ]
+    }
+  ]
+}

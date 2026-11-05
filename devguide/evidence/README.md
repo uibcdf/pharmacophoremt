@@ -1,5 +1,18 @@
 # Local scientific evidence
 
+## Native TYR dual-donor study — 2026-11-05
+
+[Receipt](tyr_cardinality_20261105_summary.json) links untouched scientific output
+and source/log/guard archives: 12 cells, 20 models, 100 primary/24 recovery calls,
+original all-TYR eligibility, frozen protocol/matrix, source/native/metadata
+identities, custody and actual input/method credit. Initial oracle type/orientation
+failures remain; unchanged-output reanalysis passes ten controls, and two unchanged
+optional simulations already pass initially. The existing overlapping-site guard
+passes separately. All four identity phases are stable. The
+[case](../../docs/content/validation/tyr_cardinality.md) explains separated native
+N/O targets and one-protein analytical limits; no biological/affinity/performance
+or installed/public/platform claim follows. No production/provider change.
+
 ## Measured receptor contribution — 2026-11-05
 
 [Receipt](receptor_contribution_20261105_summary.json) links the original complete

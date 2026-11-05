@@ -1,0 +1,631 @@
+{
+  "schema": "pharmacophoremt.tyr-cardinality-plan@1",
+  "issue": "uibcdf/pharmacophoremt#91",
+  "declared_at": "2026-11-05T19:19:52.133463+00:00",
+  "phase": "prespecified_not_executed",
+  "native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "eligibility_sha256": "261a7e097d89ae48ab896ba2cbeae2c6ac0ae3d6f8c164965c53d2aa34030d15",
+  "eligibility_rule_sha256": "9d3907a70974104d48cb764c02386d578f4d4d7426d5316045739f63f007a290",
+  "regions": [
+    {
+      "source_group_order": 24,
+      "group_id": "328",
+      "selection": "group_id == \"328\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          172,
+          2156
+        ],
+        "O": [
+          183,
+          2164
+        ]
+      },
+      "ring_atoms": [
+        177,
+        178,
+        179,
+        180,
+        181,
+        182
+      ],
+      "selected_atom_indices": [
+        172,
+        173,
+        174,
+        175,
+        176,
+        177,
+        178,
+        179,
+        180,
+        181,
+        182,
+        183,
+        2156,
+        2157,
+        2158,
+        2159,
+        2160,
+        2161,
+        2162,
+        2163,
+        2164
+      ],
+      "acceptor_atoms": [
+        [
+          175
+        ],
+        [
+          183
+        ]
+      ]
+    },
+    {
+      "source_group_order": 27,
+      "group_id": "331",
+      "selection": "group_id == \"331\" and group_name == \"TYR\"",
+      "status": "eligible",
+      "reasons": [],
+      "donor_pairs_by_element": {
+        "N": [
+          199,
+          2176
+        ],
+        "O": [
+          210,
+          2184
+        ]
+      },
+      "ring_atoms": [
+        204,
+        205,
+        206,
+        207,
+        208,
+        209
+      ],
+      "selected_atom_indices": [
+        199,
+        200,
+        201,
+        202,
+        203,
+        204,
+        205,
+        206,
+        207,
+        208,
+        209,
+        210,
+        2176,
+        2177,
+        2178,
+        2179,
+        2180,
+        2181,
+        2182,
+        2183,
+        2184
+      ],
+      "acceptor_atoms": [
+        [
+          202
+        ],
+        [
+          210
+        ]
+      ]
+    }
+  ],
+  "policies": [
+    {
+      "id": "nm",
+      "standard_units": [
+        "nm",
+        "ps",
+        "radians"
+      ]
+    },
+    {
+      "id": "pm",
+      "standard_units": [
+        "pm",
+        "fs",
+        "degrees"
+      ]
+    }
+  ],
+  "variants": [
+    {
+      "id": "donor",
+      "families": [
+        "hb donor"
+      ],
+      "exclusion_radius_nm": null
+    },
+    {
+      "id": "ring",
+      "families": [
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": null
+    },
+    {
+      "id": "joint",
+      "families": [
+        "hb donor",
+        "hb acceptor",
+        "aromatic ring"
+      ],
+      "exclusion_radius_nm": null
+    }
+  ],
+  "controls": [
+    "intact",
+    "nitrogen_target_only",
+    "oxygen_target_only",
+    "ring_only",
+    "ring_rotated"
+  ],
+  "profile": "donor_aromatic_faces",
+  "structure_index": 0,
+  "chemical_state": "reference",
+  "donor_distances_nm": [
+    0.35
+  ],
+  "aromatic_distances_nm": [
+    0.35
+  ],
+  "face_signs": [
+    1,
+    -1
+  ],
+  "direction_tolerance_degrees": 1,
+  "min_fit_value": 1,
+  "geometry_tolerance_nm": 1e-12,
+  "geometry_tolerance_dimensionless": 1e-12,
+  "rotation_matrices": [
+    [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ]
+  ],
+  "rotation_axis_rule": "least absolute component of cached ring normal, ties x,y,z",
+  "counts": {
+    "generation_cells": 12,
+    "returned_models": 20,
+    "primary_evaluations": 100,
+    "recovery_evaluations": 24
+  },
+  "molecular_operations_owner": "molsysmt",
+  "holdout_access": false,
+  "measured_comparison_results": null,
+  "matrix": [
+    {
+      "id": "tyr328-nm-donor",
+      "group_id": "328",
+      "policy_id": "nm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 1,
+      "expected_returned": 1,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1
+        ],
+        "nitrogen_target_only": [
+          0.5
+        ],
+        "oxygen_target_only": [
+          0.5
+        ],
+        "ring_only": [
+          0
+        ],
+        "ring_rotated": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "tyr328-nm-ring",
+      "group_id": "328",
+      "policy_id": "nm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0
+        ],
+        "nitrogen_target_only": [
+          1,
+          0
+        ],
+        "oxygen_target_only": [
+          1,
+          0
+        ],
+        "ring_only": [
+          1,
+          0
+        ],
+        "ring_rotated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "tyr328-nm-joint",
+      "group_id": "328",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0.6666666666666666
+        ],
+        "nitrogen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "oxygen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "ring_only": [
+          0.3333333333333333,
+          0
+        ],
+        "ring_rotated": [
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    },
+    {
+      "id": "tyr328-pm-donor",
+      "group_id": "328",
+      "policy_id": "pm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 1,
+      "expected_returned": 1,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1
+        ],
+        "nitrogen_target_only": [
+          0.5
+        ],
+        "oxygen_target_only": [
+          0.5
+        ],
+        "ring_only": [
+          0
+        ],
+        "ring_rotated": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "tyr328-pm-ring",
+      "group_id": "328",
+      "policy_id": "pm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0
+        ],
+        "nitrogen_target_only": [
+          1,
+          0
+        ],
+        "oxygen_target_only": [
+          1,
+          0
+        ],
+        "ring_only": [
+          1,
+          0
+        ],
+        "ring_rotated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "tyr328-pm-joint",
+      "group_id": "328",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0.6666666666666666
+        ],
+        "nitrogen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "oxygen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "ring_only": [
+          0.3333333333333333,
+          0
+        ],
+        "ring_rotated": [
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    },
+    {
+      "id": "tyr331-nm-donor",
+      "group_id": "331",
+      "policy_id": "nm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 1,
+      "expected_returned": 1,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1
+        ],
+        "nitrogen_target_only": [
+          0.5
+        ],
+        "oxygen_target_only": [
+          0.5
+        ],
+        "ring_only": [
+          0
+        ],
+        "ring_rotated": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "tyr331-nm-ring",
+      "group_id": "331",
+      "policy_id": "nm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0
+        ],
+        "nitrogen_target_only": [
+          1,
+          0
+        ],
+        "oxygen_target_only": [
+          1,
+          0
+        ],
+        "ring_only": [
+          1,
+          0
+        ],
+        "ring_rotated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "tyr331-nm-joint",
+      "group_id": "331",
+      "policy_id": "nm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0.6666666666666666
+        ],
+        "nitrogen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "oxygen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "ring_only": [
+          0.3333333333333333,
+          0
+        ],
+        "ring_rotated": [
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    },
+    {
+      "id": "tyr331-pm-donor",
+      "group_id": "331",
+      "policy_id": "pm",
+      "variant": "donor",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 1,
+      "expected_returned": 1,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1
+        ],
+        "nitrogen_target_only": [
+          0.5
+        ],
+        "oxygen_target_only": [
+          0.5
+        ],
+        "ring_only": [
+          0
+        ],
+        "ring_rotated": [
+          1
+        ]
+      }
+    },
+    {
+      "id": "tyr331-pm-ring",
+      "group_id": "331",
+      "policy_id": "pm",
+      "variant": "ring",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0
+        ],
+        "nitrogen_target_only": [
+          1,
+          0
+        ],
+        "oxygen_target_only": [
+          1,
+          0
+        ],
+        "ring_only": [
+          1,
+          0
+        ],
+        "ring_rotated": [
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "id": "tyr331-pm-joint",
+      "group_id": "331",
+      "policy_id": "pm",
+      "variant": "joint",
+      "query_radius_nm": 0.02,
+      "max_hypotheses": 2,
+      "expected_total_hypotheses": 2,
+      "expected_returned": 2,
+      "expected_complete": true,
+      "expected_positive_fit_values": {
+        "intact": [
+          1,
+          0.6666666666666666
+        ],
+        "nitrogen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "oxygen_target_only": [
+          0.6666666666666666,
+          0.3333333333333333
+        ],
+        "ring_only": [
+          0.3333333333333333,
+          0
+        ],
+        "ring_rotated": [
+          0.6666666666666666,
+          0.6666666666666666
+        ]
+      }
+    }
+  ]
+}

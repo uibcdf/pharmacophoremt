@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Native dual-donor chemical extension delivered — 2026-11-05
+
+[#91](https://github.com/uibcdf/pharmacophoremt/issues/91) executes the frozen
+[native TYR protocol](tyr_cardinality_protocol.md): 12 cells, 20 models,
+100 primary/24 recovery evaluations on source-ordered TYR328/331. All eight new
+scientific mechanisms/four plan guards have passing evidence; the initial oracle
+type/orientation defect is retained and corrected through bound-output reanalysis.
+Two optional simulations and the existing overlapping-site guard pass separately.
+[Case](../docs/content/validation/tyr_cardinality.md) and
+[original evidence](evidence/tyr_cardinality_20261105_summary.json) delimit native
+N/O donor loss, joint restrictions, intact custody and unit agreement. Targets
+do not overlap, so this study does not isolate record reuse in overlapping sites.
+
+Next inspect exact MolSysMT #375 acceptor-direction handoff/input identities and
+prespecify independent angular/chemical receiving before adopting a new profile.
+All molecular geometry remains MolSysMT-owned. Broader audit12/15, original
+binding-method data #66, #82, environmental H #323, optional TopoMT #101,
+SDF #74/#215 and hosted/installed/public #9/#23 stay separate. No production,
+provider/dependency/release change; addon/release deferred, public 0.4.0 unchanged.
+
 ## Receptor contribution comparison delivered — 2026-11-05
 
 [#90](https://github.com/uibcdf/pharmacophoremt/issues/90) executes the unchanged

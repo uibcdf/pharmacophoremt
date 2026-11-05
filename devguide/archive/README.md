@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (68)
+### Resolved (69)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -71,6 +71,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`retire_orphaned_molecular_utilities.md`](retire_orphaned_molecular_utilities.md) — [#46](https://github.com/uibcdf/pharmacophoremt/issues/46) — Retire unused molecular utilities and the name-grouped archival SDF reader. *(resolved, measured)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
 - [`translated_coincident_feature_centers.md`](translated_coincident_feature_centers.md) — [#31](https://github.com/uibcdf/pharmacophoremt/issues/31) — Centroid roundoff admitted co-located feature centers as non-collinear rigid anchors. *(resolved, measured)*
+- [`tyr_cardinality.md`](tyr_cardinality.md) — [#91](https://github.com/uibcdf/pharmacophoremt/issues/91) — Qualify native dual-donor N/O receptor constraints on prepared TYR regions. *(resolved, measured)*
 - [`validation_benchmark_publication.md`](validation_benchmark_publication.md) — [#20](https://github.com/uibcdf/pharmacophoremt/issues/20) — Decide how to collect and publish scientific validation and benchmark evidence. *(resolved, measured)*
 - [`viewer_panel_feedback.md`](viewer_panel_feedback.md) — [#59](https://github.com/uibcdf/pharmacophoremt/issues/59) — Distinguish cached input states and clean panel listeners through the existing anywidget lifecycle. *(resolved, measured)*
 - [`virtual_screening_skip_forwarding.md`](virtual_screening_skip_forwarding.md) — [#78](https://github.com/uibcdf/pharmacophoremt/issues/78) — Consume VirtualScreening constructor digestion control at its own boundary. *(resolved, measured)*

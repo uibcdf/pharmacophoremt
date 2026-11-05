@@ -1,0 +1,20 @@
+{
+  "schema": "pharmacophoremt.tyr-cardinality-eligibility-rule@1",
+  "recorded_at": "2026-11-05T19:15:18.724603+00:00",
+  "input_native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "candidate_scope": "All TYR groups in original source order",
+  "structure_index": 0,
+  "chemical_state": "reference",
+  "eligibility": {
+    "donor_pairs": 2,
+    "donor_elements": [
+      "N",
+      "O"
+    ],
+    "hydrogen_element": "H",
+    "ring_records": 1,
+    "ring_members": 6
+  },
+  "selection_rule": "First two eligible source-ordered TYR groups; block if fewer than two. No model/pose evaluation during eligibility.",
+  "model_pose_evaluation_allowed": false
+}

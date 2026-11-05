@@ -1,5 +1,55 @@
 # Development Checkpoint
 
+## Native TYR dual-donor study measured — 2026-11-05
+
+[#91](https://github.com/uibcdf/pharmacophoremt/issues/91) qualifies the unchanged
+[TYR declaration](tyr_cardinality_protocol.md): **12 cells, 20 models, 100 primary
+and 24 native-recovery evaluations** complete. Outcome-independent public MolSysMT
+inspection finds five eligible TYR groups; the first two, 328/331, are fixed
+before model/pose evaluation. [Case](../docs/content/validation/tyr_cardinality.md)
+and [original evidence](evidence/tyr_cardinality_20261105_summary.json) retain the
+frozen rule/ledger/plan, actual argv, full outputs, source/native/helper/test/input/
+metadata identities, original data/method credit and every attempt.
+
+Eight new scientific mechanisms and four plan guards have passing evidence.
+Initial selection: eight passes/four new oracle failures from reading a sphere's
+normal before rejecting its incompatible feature type. Correct only that guard;
+bound-output reanalysis passes ten controls. The two unchanged optional-provider
+simulations already pass initially, each with 10 primary/two recovery calls.
+No scientific plan/input/driver/model/result is changed or rerun for the guard
+repair. The existing overlapping-site one-to-one control also passes separately.
+All four phase identities are stable; source, chemistry/history, cached original
+observations, candidates, inventories and application units remain intact.
+
+Both regions/policies give donor-only fit 1/2 and joint fit 2/3 when one target
+acceptor is absent; missing essentials reject both. Ring-only still accepts the
+correct face. Intact joint fits are 1 and 2/3 across the two faces. Independent
+source-coordinate and exhaustive typed injective-assignment oracles agree.
+Targets are separated by 1.288/.746 nm at .02 nm radius: this native control
+does not isolate record reuse across overlapping sites. No biological importance,
+physical ligand, affinity, optimal offset, target breadth or performance follows.
+
+All molecular operations remain public MolSysMT. Production runtime, prior
+#89/#90 scientific bytes/evidence, providers/prefixes, dependencies/pins and
+public 0.4.0 remain unchanged. Heavy reexecution is explicit; routine tests keep
+cheap declaration/evidence checks. No new release or MolSysSuite release notice.
+
+**Next:** inspect the exact MolSysMT #375 native acceptor-direction handoff and
+its original input/provider identities, then declare an independent angular/
+chemical receiving study before adopting another projection profile. Do not
+implement acceptor geometry here. If that handoff is unavailable, #66's original
+binding-method evidence and public ArgDigest #82 receiving remain independent
+work; neither is cleared by these analytical controls. Environmental H #323,
+optional TopoMT #101, SDF #74/#215, broader audit12/15 and hosted/installed/public
+#9/#23 retain their gates. Addon/release remain deferred.
+
+Workspace audit preserves MolSysMT's clean local clone 108 commits behind;
+TopoMT is on another worker's upstream-less `work/fpocket-handoff-101` branch.
+No sibling pull/checkout/edit occurs. Actual execution uses the controlled
+MolSysMT `0faf1584d05ac47ddcebfc20d9c9978b7f4f230e`, not those sibling heads.
+Owner LMMV/dprada, capsule `build/phmt-tyr-cardinality-20261105-3dadzwve`, review
+2026-11-19 or source/scientific change. No continuing local process is required.
+
 ## Receptor contribution comparison measured — 2026-11-05
 
 [#90](https://github.com/uibcdf/pharmacophoremt/issues/90) executes #89's unchanged
