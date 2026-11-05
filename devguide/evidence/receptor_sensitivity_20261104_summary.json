@@ -1,0 +1,407 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "40765ae0e47210c791b7116c28adc73295abee238d5d3fad07f6565f6319082b",
+    "devguide/archive/README.md": "7268611e21e8bcff476c89ba8a04a5a9744eb6e6711f704d740d33a7d68e9b5b",
+    "devguide/archive/pose_radius_boundary_units.md": "18e5496b3a1eca9d4605461b4c6cb863fbb26cf09bcc1b2ed5cdb67a4c719ada",
+    "devguide/archive/receptor_projection_sensitivity.md": "1e57bf8084a32f655783e8e4d9122caf9269b5c2bb32c074b90cfd3af3c09cba",
+    "devguide/audit_20261104.md": "a006d0c06328678fcbb54ceeb63334fe426ec1af504f1cd02f6bbd602355ff32",
+    "devguide/audit_20261104_review.md": "d8fa54a2d205eab08f731d1ee7f1be4b5d6f0ca4efc1a1c2ada42b76318c6c77",
+    "devguide/capability_inventory.md": "cc20323f385fa402a2c5192744c6ed98bd26e139d9070d818977d7f59b7ae9e7",
+    "devguide/checkpoint.md": "fa261eed16a8755685a3f8c4f8467dc9a0767149480d4eb035235d64efcbb19c",
+    "devguide/receptor_sensitivity_protocol.md": "2478fcec6e383d67c9d1a1616b2f8ba50f191475fdc46c3230314a166a0f9b37",
+    "devguide/roadmap.md": "0132e20df1dd453c029dc66a71fccbced127a90d0c41c771d007126452b10484",
+    "docs/content/user/constraint_semantics.md": "c827de0e07a804d8eae9358d216988a5c16f6cf559f4ab61933f537fe813bd35",
+    "docs/content/validation/index.md": "f1fa81d5b09d8bce5b51f64510fe84f69338f91cbeb2c73bedd71cac763cd913",
+    "docs/content/validation/receptor_sensitivity.md": "59755699352b3b19d5ecb51bab940b1ffb6503ed012aad1ce1c04fe1cd900bb7",
+    "pharmacophoremt/screening/pose_evaluation.py": "4c76751a0eafdd84d791d3a2077995a50bf8df31108c4464e38190d8ecaca47c",
+    "phmt_test_support/receptor_sensitivity.py": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+    "tests/data/receptor_sensitivity/README.md": "e6c1032a9cf79c8fb008d7171aa7dc46c2c3301e19a36cfd4baa1f9da14312f9",
+    "tests/data/receptor_sensitivity/plan.json": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+    "tests/test_receptor_sensitivity.py": "912bfe6a20af66b00c73e6db8b384bf240344d34802897368531091f49093859",
+    "tests/test_reporting_protocol.py": "fdc0c45f86ece1963842c65e79bf3af0d332840fd964007afc76b33f7a63ff4c"
+  },
+  "actual_attribution": "Final test and independent standalone matrices each retain 90 captured completed-evaluation payloads; two genuine invalid-frame failures remain unscored.",
+  "administrative": {
+    "archive_reader_controls": 18,
+    "distribution_controls": 22,
+    "indexes_current": true,
+    "reporting_controls": 3,
+    "reporting_inventory_added_after_scientific_run": "#83/#84; scientific guard bytes unchanged",
+    "ruff_formatted_files": 334
+  },
+  "attempt_history": [
+    "Original declaration/expected tables fixed before first execution. Initial 35 guards: 23 fail/12 pass; 21 failures are wrong new serialized-field assumptions, two expose actual radius-boundary reversals.",
+    "Use public QuantityRecord decoding and actual root curation history. Exact corrected 35-case source is recovered and verified against its original before-run hash. Three guards fail/32 pass: two parameter-band guards and a cross-policy assertion for the same two cells.",
+    "Add 14 supplementary Point/Sphere resolved-margin/criteria guards without altering the original matrix. One intended acceptance command names nonexistent tests/test_excluded_volumes.py and exits 4 with zero cases; original command/log/identities retained.",
+    "Eight-epsilon positive-site comparison plus additive result criterion passes all 245 selected controls in 194.25 s, including 49 new guards. No fixture, expectation or provider changes.",
+    "Arithmetic review avoids expanded-radius overflow with the difference form, retaining the same declared numerical policy. Rerun all 245 controls on final source: pass in 198.40 s, zero failures/errors/skips.",
+    "Documented standalone recorder independently runs both full matrices with stable before/after identity and agrees with final test scientific answers. All five pytest plus recorder identities remain stable.",
+    "Original audit/protocol text preserved; declaration unchanged. New/changed book pages and their real 25-page Markdown/notebook closure render strictly with execution off; not a full-site or new recipe-execution claim."
+  ],
+  "base_commit": "3700139dd89b6871ca75929f3c364e7a4e0d56cf",
+  "date": "2026-11-04",
+  "declared_failed_unscored_cells_per_matrix": 2,
+  "declared_valid_cells_per_matrix": 90,
+  "defect": "uibcdf/pharmacophoremt#84",
+  "documentation": {
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/docs_nb_closure",
+      "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/docs_nb_closure_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "api/saved_results.md": "e90ea438d2fc6e6cc424404c87866f42d63d58e471c58710cd1a94d25c2d7eec",
+      "content/cookbook/aligned_cliques.md": "455846309dbd98be2a33b9d66688330b66a61e3676aa47888b5e28b06c0b9eb9",
+      "content/cookbook/aligned_consensus.md": "cc824036b72ed0f0ba7e003122daac2d86a7a7bf898b9b07dcefb97b56ff23a3",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/complex_based_modeler.md": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/excluded_volumes.md": "21ab9d5878b01b20f740171c0a8098e86382d6501baff1e0fa4b904ced0892ba",
+      "content/cookbook/interaction_composition.md": "a52259c6799c1fcd466314101762671478b677076a1ddfa6d470ff7d87c47a45",
+      "content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc",
+      "content/cookbook/observed_est_template.md": "8865d922f90d71267a09f6d781cbbf74bc903ab500cb4ea0e874708f04148e94",
+      "content/cookbook/observed_receptor_coverage.md": "4214f7a1ef1269e5f83880b3247321be62820936220fa2db9f657eeecbd76457",
+      "content/cookbook/pharmacophore_curation.md": "9c4b4a126cb13962f724bd19a25a131f5b90d8fc530110f6038ab772d27ca3c7",
+      "content/cookbook/prepared_conformers.md": "285dcc48a966cb8e0c98c2e8e3ad2e20c08336eb5cf15c8424fa95835205a490",
+      "content/cookbook/prepared_eralpha_interface.md": "53c94eaac83bd0db81850c8c53afb45aaf21a4878633e8906e34da91b6740e4c",
+      "content/cookbook/prepared_receptor_workflow.md": "987d7c375b1ab2c688304413a018f70c4146ac307bd3418b6f1c416f567a6356",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/reference_ligand.md": "427cd17377db3a2dcc67e2428e64883c823326c897edb5c7d6695cc54c2f9234",
+      "content/cookbook/retrospective_validation.md": "98f47fef715ed89eb4ace0f88e4dbc2a546cd683b0ef49dcb1064240b484fa92",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3",
+      "content/cookbook/structure_based_modeler.md": "1f7bed8ffa6fff04e99268b7294f658f1c7239be3d43c64a9c5a3515366105a5",
+      "content/user/constraint_semantics.md": "c827de0e07a804d8eae9358d216988a5c16f6cf559f4ab61933f537fe813bd35",
+      "content/validation/esr1_activity_pilot.md": "44e13e8ed159d16e67c9340d8fea0a991f5c732852e8ef0eef2252bdc1f2c022",
+      "content/validation/esr1_consensus_comparison.md": "097bb55117f9a8c369a3d594738bcd63523be4b2679942d9f589f8125a23a255",
+      "content/validation/prepared_receptor_workflow.md": "6eded559aaee798a8933469eb0665af7fe86005e150eb040079d686d6ea7811c",
+      "content/validation/receptor_sensitivity.md": "59755699352b3b19d5ecb51bab940b1ffb6503ed012aad1ce1c04fe1cd900bb7"
+    },
+    "scope": "Strict isolated new analytical case and changed constraint interpretation with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim."
+  },
+  "final_seconds": 198.4,
+  "full_evidence": {
+    "compressed_bytes": 4947654,
+    "compressed_sha256": "8f18a0d5cf1337b49a7bb9dd45b7c9629779aa2330bbe42c325d2721c3c9a942",
+    "path": "receptor_sensitivity_20261104.json.gz",
+    "uncompressed_bytes": 73853271,
+    "uncompressed_sha256": "e82d9bf35cce1cb7d375d922b8c9449adf2493c7d6388002f41b30175250b6ee"
+  },
+  "issue": "uibcdf/pharmacophoremt#83",
+  "new_guards": 49,
+  "numerical_policy": {
+    "additive_criterion": "position_comparison_relative_slack",
+    "angular_assignment_score_method_unchanged": true,
+    "arithmetic_review": {
+      "difference_refuses_infinite_distance": true,
+      "expanded_threshold_is_infinite": true,
+      "expanded_threshold_refuses_infinite_distance": false,
+      "scope": "Implementation arithmetic review only; not a molecular or scientific workload."
+    },
+    "comparison": "distance > radius and distance - radius > relative_slack * radius refuses a positive-site assignment",
+    "physical_tolerances_unchanged": true,
+    "positive_distance_relative_slack": 1.7763568394002505e-15,
+    "steric_strict_interior_unchanged": true
+  },
+  "original_prespecification": {
+    "base_commit": "3700139dd89b6871ca75929f3c364e7a4e0d56cf",
+    "before_case_execution": true,
+    "files": {
+      "devguide/receptor_sensitivity_protocol.md": "be5618505217b34c3a029d71147b47c001a992200ec6e774eac9ec4738524728",
+      "tests/data/receptor_sensitivity/plan.json": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14"
+    },
+    "recorded_at_utc": "2026-11-05T01:18:06.589893+00:00"
+  },
+  "plan_sha256": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+  "providers": {
+    "ackredit": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/ackredit\"}",
+      "metadata_version": "0.12.0+11.g74f865d",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+      "python_file_count": 69,
+      "python_source_sha256": "d639082940adb6acf99133514c34af26e835db2c64ac739f233f402d2fb9e2a5",
+      "version": "0.12.0+11.g74f865d"
+    },
+    "argdigest": {
+      "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/argdigest_1792715908426/work\"}",
+      "metadata_version": "0.17.0",
+      "native_extensions": [],
+      "path": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages/argdigest",
+      "python_file_count": 39,
+      "python_source_sha256": "72379c83874374e974481ecb6987368449af492af49f2ab70b542165ff3fdf51",
+      "version": "0.17.0"
+    },
+    "depdigest": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}",
+      "metadata_version": "0.15.1",
+      "native_extensions": [],
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/depdigest/depdigest",
+      "python_file_count": 17,
+      "python_source_sha256": "21ac513be7d1206b4dbcdcad5d7bd7dc22a23576932ed0448d6b004f0b032f13",
+      "version": "0.15.1"
+    },
+    "molsysmt": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}",
+      "metadata_version": "0.23.0+370.g0faf1584d",
+      "native_extensions": [
+        {
+          "bytes": 31213144,
+          "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+          "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+        }
+      ],
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt",
+      "python_file_count": 3031,
+      "python_source_sha256": "f6e5d28a3a5d113ff99b21324df9dd728ddc21e892db34445d2b4f3eaf5df40f",
+      "version": "0.23.0+370.g0faf1584d"
+    },
+    "molsysviewer": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer\"}",
+      "metadata_version": "0.24.0+238.gca7ebea6",
+      "native_extensions": [],
+      "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysviewer/molsysviewer",
+      "python_file_count": 653,
+      "python_source_sha256": "5282eb1275b291861f02ef4c5fcaf285e1ab830414b64860543c7b68822ed551",
+      "version": "0.24.0+238.gca7ebea6"
+    },
+    "pharmacophoremt": {
+      "direct_url": null,
+      "metadata_version": "0.4.0+62.g6a7537b",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 136,
+      "python_source_sha256": "badb952ac716842f1771dac99eb5627df08c142a1fb98c2433fbe53bd2d31a82",
+      "version": "0.4.0+62.g6a7537b"
+    },
+    "pyunitwizard": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pyunitwizard\"}",
+      "metadata_version": "0.29.0+4.g9d74f0e",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+      "python_file_count": 92,
+      "python_source_sha256": "038e50e50b50d6bb45e1862f10b383fe3ddb994cce86ed5aa8435a706e706649",
+      "version": "0.29.0+4.g9d74f0e"
+    },
+    "smonitor": {
+      "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/smonitor\"}",
+      "metadata_version": "0.22.0+3.gebdd054",
+      "native_extensions": [],
+      "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+      "python_file_count": 41,
+      "python_source_sha256": "c67830bd0cbb9fee405c0e5fe4c2395911d7c93ec4f5965c8c62681b3d55065c",
+      "version": "0.22.0+3.gebdd054"
+    },
+    "yaml": {
+      "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/conda/feedstock_root/build_artifacts/pyyaml_1770223234623/work\"}",
+      "metadata_version": "6.0.3",
+      "native_extensions": [
+        {
+          "bytes": 249056,
+          "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/yaml/_yaml.cpython-314-x86_64-linux-gnu.so",
+          "sha256": "4b8bd263b000e1f4d84342cf793f314a239f054893d29100ebaa0c1749e34057"
+        }
+      ],
+      "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/yaml",
+      "python_file_count": 17,
+      "python_source_sha256": "acee27dded421cf44e5103c15a7c6067e164b428569ecc8ea2ff8ae918b51871",
+      "version": "6.0.3"
+    }
+  },
+  "public_argdigest": {
+    "conda_sha256": "9c35fa297b5a85dc65ac49ccd108f60f08dbeac4f745d6c369a767c0a0b3a3e1",
+    "receiving_reused_from": "devguide/evidence/native_geometry_contract_receiving_20261104_summary.json",
+    "source": "c7128f09b2fe064b6c5603d1077dbd2cec52223d",
+    "version": "0.17.0"
+  },
+  "remaining_work": "Only the first analytical receptor slice is complete. Audit 12 stays partial for real development cohorts, preparation/search variability and uncertainty. Next prespecify the cached prepared-receptor extension. MolSysMT #375/#323, TopoMT pockets, #66, #74/MolSysMT #215, #82/ArgDigest #47/#48 and broader #6 remain independent.",
+  "runs": {
+    "accepted": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/accepted-temp",
+        "--junitxml=/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/accepted.xml",
+        "tests/test_receptor_sensitivity.py",
+        "tests/test_receptor_projections.py",
+        "tests/test_pose_evaluation.py",
+        "tests/test_curation.py",
+        "tests/test_excluded_volumes.py",
+        "tests/test_constraint_semantics.py",
+        "tests/test_prepared_receptor_workflow.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 4,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 0,
+      "skipped": 0
+    },
+    "corrected": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/corrected-temp",
+        "--junitxml=/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/corrected.xml",
+        "tests/test_receptor_sensitivity.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 1,
+      "failures": 3,
+      "full_identity_unchanged": true,
+      "items": 35,
+      "skipped": 0
+    },
+    "final": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/final-temp",
+        "--junitxml=/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/final.xml",
+        "tests/test_receptor_sensitivity.py",
+        "tests/test_receptor_projections.py",
+        "tests/test_pose_evaluation.py",
+        "tests/test_curation.py",
+        "tests/test_excluded_volume_sites.py",
+        "tests/test_constraint_semantics.py",
+        "tests/test_prepared_receptor_workflow.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 245,
+      "skipped": 0
+    },
+    "initial": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/initial-temp",
+        "--junitxml=/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/initial.xml",
+        "tests/test_receptor_sensitivity.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 1,
+      "expected_exit_code": 0,
+      "failures": 23,
+      "full_identity_unchanged": true,
+      "items": 35,
+      "skipped": 0
+    },
+    "qualified": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "no:cacheprovider",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--basetemp",
+        "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/qualified-temp",
+        "--junitxml=/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/qualified.xml",
+        "tests/test_receptor_sensitivity.py",
+        "tests/test_receptor_projections.py",
+        "tests/test_pose_evaluation.py",
+        "tests/test_curation.py",
+        "tests/test_excluded_volume_sites.py",
+        "tests/test_constraint_semantics.py",
+        "tests/test_prepared_receptor_workflow.py"
+      ],
+      "environment_override": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+      "errors": 0,
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 245,
+      "skipped": 0
+    },
+    "recorder": {
+      "command": [
+        "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+        "-B",
+        "-m",
+        "phmt_test_support.receptor_sensitivity",
+        "--output",
+        "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r/recorder_full_results.json"
+      ],
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "full_identity_unchanged": true,
+      "items": 0,
+      "skipped": 0
+    }
+  },
+  "schema": "pharmacophoremt.receptor-sensitivity@1",
+  "scientific_semantics": {
+    "assignment_score_exclusion_angle_and_molecular_operations_unchanged": true,
+    "original_audit_text_preserved": true,
+    "original_plan_unchanged": true,
+    "original_protocol_preserved": true,
+    "scope": "Whole runtime-module AST matches after normalizing only docstrings, numerical constant/comparison and one additive criterion."
+  },
+  "scope": "First analytical explicit-receptor fixed-pose sensitivity slice, Linux/Python 3.14.7 source with inherited controlled scientific dependencies and extracted public ArgDigest 0.17.0. Not full-suite, clean installed/public/all-platform, biological or performance qualification.",
+  "selected_final_cases": 245,
+  "settings_are_not_independent_molecules": true,
+  "temporary_resources": {
+    "borrowed_prefix": "/tmp/phmt69-fixed-20261103-q6cirii4/venv",
+    "borrowed_public_argdigest": "/tmp/phmt6-geometry-20261104-2f7oq6kg/published/site-packages",
+    "continuing_process_required": false,
+    "immutable_sdk": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "owner": "LMMV/dprada",
+    "path": "/tmp/phmt-receptor-sensitivity-20261104-ibrz8n8r",
+    "review": "2026-11-18 or source/scientific change"
+  }
+}

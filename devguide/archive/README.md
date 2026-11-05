@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (60)
+### Resolved (62)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -48,6 +48,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`ordinary_documentation_build.md`](ordinary_documentation_build.md) — [#53](https://github.com/uibcdf/pharmacophoremt/issues/53) — Repair the strict whole-site build and unrelated software identity claims. *(resolved, measured)*
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
+- [`pose_radius_boundary_units.md`](pose_radius_boundary_units.md) — [#84](https://github.com/uibcdf/pharmacophoremt/issues/84) — Preserve inclusive positive-site radius decisions across application units. *(resolved, measured)*
 - [`prepared_ccd_ligand_validation.md`](prepared_ccd_ligand_validation.md) — [#30](https://github.com/uibcdf/pharmacophoremt/issues/30) — Traceable CCD ideal ligands for native preparation, refinement and consensus controls. *(resolved, measured)*
 - [`prepared_distinct_consensus.md`](prepared_distinct_consensus.md) — [#51](https://github.com/uibcdf/pharmacophoremt/issues/51) — Qualify distinct prepared EST/DES consensus support, empty outcomes and persisted source maps. *(resolved, measured)*
 - [`prepared_end_to_end_workflow.md`](prepared_end_to_end_workflow.md) — [#49](https://github.com/uibcdf/pharmacophoremt/issues/49) — Qualify construction, curation, persistence and placed screening on a public prepared CCD control. *(resolved, measured)*
@@ -59,6 +60,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(resolved, measured)*
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`receive_chemical_domain_separation.md`](receive_chemical_domain_separation.md) — [#69](https://github.com/uibcdf/pharmacophoremt/issues/69) — Receive MolSysMT chemical-domain separation with unchanged scientific profiles. *(resolved, measured)*
+- [`receptor_projection_sensitivity.md`](receptor_projection_sensitivity.md) — [#83](https://github.com/uibcdf/pharmacophoremt/issues/83) — Qualify the first prespecified analytical receptor projection sensitivity matrix. *(resolved, measured)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*
 - [`retire_orphaned_molecular_utilities.md`](retire_orphaned_molecular_utilities.md) — [#46](https://github.com/uibcdf/pharmacophoremt/issues/46) — Retire unused molecular utilities and the name-grouped archival SDF reader. *(resolved, measured)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*

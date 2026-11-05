@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Receptor-based analytical sensitivity now qualified — 2026-11-04
+
+[#83](https://github.com/uibcdf/pharmacophoremt/issues/83) delivers the first
+prespecified receptor projection sensitivity matrix; [protocol](receptor_sensitivity_protocol.md)
+and [original evidence](evidence/receptor_sensitivity_20261104_summary.json)
+retain all settings and initial failures. **245 selected controls pass, 49 new**;
+the final case has 90 valid fixed-pose settings and two failed/unscored frames,
+with physical answers preserved under nm and pm policies. #84 fixes the inclusive
+positive-site numerical boundary, without changing physical tolerances or
+molecular/provider implementations. See the [analytical case](../docs/content/validation/receptor_sensitivity.md).
+
+Audit item 12 is still partial: real receptor development inputs, molecular
+preparation variability, finite search and uncertainty need separate protocols.
+Next extend the cached prepared-receptor case under a new declaration; explicit
+projections are not automatic pocket/hypothesis generation. MolSysMT #375/#323,
+TopoMT pocket ownership, #66's methods and #74/MolSysMT #215 remain independent.
+#82 waits for ArgDigest #47/#48; broader #6 and installed/public/hosted gates stay
+open. Addon/new release deferred; public 0.4.0 unchanged. Earlier entries retain
+their dated scope and then-next actions.
+
 ## Native I/O ArgDigest adoption waits on provider contracts — 2026-11-04
 
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) is blocked by

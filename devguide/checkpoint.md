@@ -1,5 +1,44 @@
 # Development Checkpoint
 
+## First receptor sensitivity slice qualified; unit boundary repaired — 2026-11-04
+
+[#83](https://github.com/uibcdf/pharmacophoremt/issues/83) completes the first
+analytical receptor-based sensitivity slice: [prespecified protocol](receptor_sensitivity_protocol.md),
+[case](../docs/content/validation/receptor_sensitivity.md) and
+[original receipt/full evidence](evidence/receptor_sensitivity_20261104_summary.json).
+The complete grid predates execution. Each final matrix retains 90 valid
+fixed-pose settings and two deliberate failed/unscored frames under two unit
+policies; settings are not independent molecules or activity measurements.
+Placement/radius, Point-versus-Sphere tolerance, strict exclusions, curated
+essential/weight/removal choices and unoriented aromatic axes have known answers.
+All molecular construction/recognition/inspection uses existing MolSysMT tools.
+
+The protocol exposes and repairs [#84](https://github.com/uibcdf/pharmacophoremt/issues/84):
+ordinary unit-conversion roundoff could flip two inclusive positive-site radius
+equalities. PoseEvaluator now compares excess distance against eight float64
+epsilons times the radius/Point tolerance and records that numerical policy.
+No physical cutoff tuning, molecular change, provider edit or altered exclusion/
+angular/assignment/scoring semantics. The difference form avoids radius expansion
+overflow. The original matrix and all failed outputs remain unchanged/archived.
+
+**245 selected controls pass in 198.40 s, including 49 new guards**, with zero
+failures/errors/skips. Five pytest and one standalone-recorder identity checks
+are stable. The documented recorder also executes the full 92-attempt matrix;
+sources, inventories, curation inputs and application units remain intact.
+Actual attribution is retained for the 90 completed evaluations. Initial wrong
+guard-field assumptions, three genuine failing guards for the two cells and
+one selector usage failure are retained separately. No full-suite, clean
+installed/public/all-platform, biological or performance claim follows.
+
+**Next:** prespecify a development-only extension of the cached prepared-receptor
+case, keeping molecular direction/preparation needs with MolSysMT (#375/#323)
+and actual pockets with TopoMT. Audit item 12 remains partial for real development
+cohorts, preparation/search variability and uncertainty. #66's original-method
+gate and #74/MolSysMT #215 remain. #82 stays blocked on ArgDigest #47/#48; broader
+#6 stays partial. Addon/new release deferred; public version remains 0.4.0.
+Owned capsule review: 2026-11-18 or source/scientific change; no continuing local
+process. Earlier dated next-step statements below remain historical.
+
 ## Native I/O ArgDigest handoff published; adoption gated — 2026-11-04
 
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) now tracks two

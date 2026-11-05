@@ -325,3 +325,27 @@ are retained; original audit text remains a prefix.
 #6 stays partial. Next scope native I/O ArgDigest admission, then return to the
 planned development-only sensitivity protocol. #10/#23/#9, #66 and #74/MolSysMT
 #215 retain their separate gates; this does not complete the scientific audit.
+
+## First receptor sensitivity slice — 2026-11-04
+
+[#83](https://github.com/uibcdf/pharmacophoremt/issues/83) qualifies the first
+[analytical receptor protocol](receptor_sensitivity_protocol.md). The complete
+45-cell grid plus one failed frame per unit policy predates execution. All 92
+attempts are retained. #84 fixes two unit-roundoff radius equalities with an
+explicit bounded positive-site comparison policy; physical tolerances, strict
+exclusions, assignment and scoring remain. The original expected table is
+unchanged, and original faulty guard assumptions/failures are retained separately.
+
+245 selected cases pass in 198.40 s, including 49 new guards; all five pytest and
+one standalone-recorder source/native/test/input identity checks are stable.
+The documented recorder executes the same full matrix, preserving coordinates,
+inventories, curation inputs, unit policy and actual attribution. See the
+[receipt/full evidence](evidence/receptor_sensitivity_20261104_summary.json) and
+[case](../docs/content/validation/receptor_sensitivity.md).
+
+Audit item 12 remains partial beyond analytical receptor geometry. Next
+prespecify a cached prepared-receptor development extension; molecular direction/
+preparation variants remain MolSysMT-owned (#375/#323), actual pockets TopoMT-owned.
+No activity labels, held-out data, empirical importance, optimal biological
+parameters, performance or installed/public/full-suite claim. #66, #74/MolSysMT
+#215, #82/ArgDigest #47/#48 and broader #6 retain their independent gates.

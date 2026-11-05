@@ -1,0 +1,210 @@
+{
+  "schema": "pharmacophoremt.receptor-sensitivity-plan@1",
+  "issue": "uibcdf/pharmacophoremt#83",
+  "date": "2026-11-04",
+  "policy": [
+    "nm",
+    "ps",
+    "radians"
+  ],
+  "alternate_policy": [
+    "pm",
+    "fs",
+    "degrees"
+  ],
+  "charge_input": {
+    "smiles": "[Na+].[Na+].[Cl-]",
+    "coordinates_nm": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0.5,
+        0,
+        0
+      ]
+    ],
+    "receptor_selection": [
+      0,
+      1
+    ],
+    "candidate_selection": [
+      2
+    ]
+  },
+  "aromatic_input": {
+    "builder": "phmt_test_support.interaction_cases.aromatic_build_case",
+    "case": "parallel",
+    "separation_nm": 0.35
+  },
+  "distance_nm": [
+    0.25,
+    0.375,
+    0.5,
+    0.625,
+    0.75
+  ],
+  "radius_nm": [
+    0.0625,
+    0.125,
+    0.25
+  ],
+  "expected_distance_matches_by_radius": [
+    [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    [
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      true,
+      true,
+      true
+    ]
+  ],
+  "point_contrast_distance_nm": [
+    0.25,
+    0.375
+  ],
+  "point_tolerance_nm": [
+    0.03125,
+    0.125,
+    0.5
+  ],
+  "point_contrast_radius_nm": 0.125,
+  "expected_point_contrast_matches": [
+    false,
+    true
+  ],
+  "exclusion_radius_nm": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "expected_exclusion_clashes": [
+    0,
+    0,
+    1
+  ],
+  "constraint_variants": [
+    {
+      "id": "baseline",
+      "operation": "baseline",
+      "min_fit_value": 0,
+      "status": "not_matched",
+      "fit_value": 0.5,
+      "missing": [
+        1
+      ]
+    },
+    {
+      "id": "optional_half",
+      "operation": "optional",
+      "min_fit_value": 0.5,
+      "status": "matched",
+      "fit_value": 0.5,
+      "missing": []
+    },
+    {
+      "id": "optional_strict",
+      "operation": "optional",
+      "min_fit_value": 0.75,
+      "status": "not_matched",
+      "fit_value": 0.5,
+      "missing": []
+    },
+    {
+      "id": "essential_zero",
+      "operation": "essential_zero",
+      "min_fit_value": 1,
+      "status": "not_matched",
+      "fit_value": 1,
+      "missing": [
+        1
+      ]
+    },
+    {
+      "id": "optional_zero",
+      "operation": "optional_zero",
+      "min_fit_value": 1,
+      "status": "matched",
+      "fit_value": 1,
+      "missing": []
+    },
+    {
+      "id": "remove_missing",
+      "operation": "remove_missing",
+      "min_fit_value": 1,
+      "status": "matched",
+      "fit_value": 1,
+      "missing": []
+    },
+    {
+      "id": "remove_present",
+      "operation": "remove_present",
+      "min_fit_value": 1,
+      "status": "not_matched",
+      "fit_value": 0,
+      "missing": [
+        0
+      ]
+    }
+  ],
+  "aromatic_tilt_degrees": [
+    0,
+    15,
+    30,
+    45,
+    90,
+    150,
+    180
+  ],
+  "direction_tolerance_degrees": [
+    15,
+    30
+  ],
+  "expected_aromatic_matches_by_tolerance": [
+    [
+      true,
+      true,
+      false,
+      false,
+      false,
+      false,
+      true
+    ],
+    [
+      true,
+      true,
+      true,
+      false,
+      false,
+      true,
+      true
+    ]
+  ],
+  "valid_cells_per_policy": 45,
+  "failed_cells_per_policy": 1,
+  "invalid_frame": 1,
+  "search_budget": 0,
+  "holdout_access": false,
+  "geometry_tolerance_nm": 1e-12,
+  "claim": "Deterministic analytical behavior only; no biological optima, activity labels or predictive qualification."
+}

@@ -23,6 +23,11 @@ Every molecular input, selection, recognition, geometry or transformation belong
 to MolSysMT. Cached observations must correspond to the unchanged prepared source;
 a user declaration alone cannot authenticate that identity.
 
+Known facade edge under [#82](https://github.com/uibcdf/pharmacophoremt/issues/82):
+ArgDigest #47 can expand a literal kwargs option and replace an explicit source.
+It remains open independently of the scientific receptor work below. Native I/O
+adoption also waits on ArgDigest #48; legacy compatibility passes do not fix it.
+
 | Public route | State and input contract | Output and scientific limit | Owning controls / contract |
 | --- | --- | --- | --- |
 | `model(..., method="reference-ligand")`; `modeler.from_ligand`, `from_feature_inventory` | Available for prepared ligand or cached native inventory | One query; feature presence does not establish binding importance | [Workflow](reference_ligand_workflow.md), [tests](../tests/test_reference_ligand.py) |
@@ -92,8 +97,11 @@ provide the separate compatibility controls. They do not test predictive utility
 Current follow-up (2026-11-04): #75/#76 native persistence, #60 ownership,
 #77 merge and #78 nested facade repairs are qualified in their stated source
 scopes. [Native constraint semantics](native_constraint_semantics.md) under #79
-qualifies part of audit 8–9. Next review consensus support/participant reuse and
-redundancy (8/13), then sensitivity (12). Broader #6 declarations, molecular SDF
+qualifies part of audit 8–9; #80 reviews support/redundancy. The first
+[receptor sensitivity matrix](receptor_sensitivity_protocol.md) under #83 passes
+245 selected cases (49 new), and #84 fixes the measured unit-policy radius
+boundary. Audit item 12 stays partial for real development/preparation/search
+uncertainty; next prespecify the cached prepared-receptor extension. Broader #6 declarations, molecular SDF
 ownership #74/MolSysMT #215 and experimental #66 retain separate gates.
 
 ## Persistence review — 2026-11-04

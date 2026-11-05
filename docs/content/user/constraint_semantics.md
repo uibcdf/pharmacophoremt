@@ -17,6 +17,13 @@ feature and compare center distance and the unoriented plane normal. Excluded
 volumes are separate spheres: a selected heavy-atom center strictly inside one
 vetoes the pose. These shapes cannot combine arbitrary feature alternatives.
 
+Inclusive positive-site distance comparisons allow a relative margin of eight
+float64 epsilons to preserve equality through ordinary unit-conversion roundoff.
+Results expose it as `position_comparison_relative_slack`; it does not replace
+the declared radius or Point tolerance. Exclusion boundaries remain strict.
+The [receptor sensitivity controls](../validation/receptor_sensitivity.md)
+illustrate these separate roles.
+
 `fit_value` is the fraction of matched non-exclusion weight. Essential sites,
 exclusions and the chosen minimum coverage also determine `status`; high
 coverage alone does not imply an accepted pose. Results record

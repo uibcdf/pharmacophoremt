@@ -29,6 +29,7 @@ from pharmacophoremt._private.smonitor.exceptions import (
 from pharmacophoremt.modeler.features import DEFINITION, get_features
 
 _ANGLE_COSINE_SLACK = float(8 * np.finfo(np.float64).eps)
+_POSITION_RELATIVE_SLACK = float(8 * np.finfo(np.float64).eps)
 
 
 class PoseEvaluator:
@@ -45,6 +46,12 @@ class PoseEvaluator:
     distinct chemical roles and indexed donor-H pairs may share atoms. One
     record fills at most one site. All essential sites must be assigned, even
     with zero weight. No alignment or molecular preparation is performed.
+
+    Inclusive positive-site distances allow eight float64 epsilons relative to
+    the site radius (or Point tolerance), preventing ordinary unit-conversion
+    roundoff from reversing an equality. This numerical allowance is recorded
+    in criteria; it is not an additional physical matching tolerance. Steric
+    exclusions retain their strictly-inside comparison.
 
     Parameters
     ----------
@@ -253,7 +260,10 @@ class PoseEvaluator:
                 if feature["kind"] not in site.features:
                     continue
                 distance = float(np.linalg.norm(feature["center"] - center))
-                if distance > radius:
+                if (
+                    distance > radius
+                    and distance - radius > _POSITION_RELATIVE_SLACK * radius
+                ):
                     continue
                 if site.shape_name == "sphere and vector":
                     direction = np.asarray(
@@ -389,6 +399,7 @@ class PoseEvaluator:
                     unit="degrees",
                 ).to_dict(),
                 angle_comparison_cosine_slack=_ANGLE_COSINE_SLACK,
+                position_comparison_relative_slack=_POSITION_RELATIVE_SLACK,
                 min_fit_value=self.min_fit_value,
                 assignment="one_to_one",
                 assignment_unit="typed_feature_record",
