@@ -103,8 +103,12 @@ qualifies part of audit 8–9; #80 reviews support/redundancy. The first
 boundary. Audit item 12 stays partial for real development/preparation/search
 uncertainty. The [prepared-receptor extension](prepared_receptor_sensitivity_protocol.md)
 under #85 now passes 288 selected controls (43 new) with the original source and
-complete 64-attempt matrix. Next inventory actual provider pocket/geometry
-contracts before declaring receptor hypothesis generation. Broader #6 declarations, molecular SDF
+complete 64-attempt matrix. The [first cached generation pilot](receptor_hypothesis_pilot_protocol.md)
+under #86 now qualifies eight donor/ring alternatives, budget states, independent
+oracles and native recovery with 110 selected passing controls (34 new). It is
+unshipped case support, not another public modeling route. Next design its
+explicit public contract; further directions remain MolSysMT #375 and optional
+pocket receiving TopoMT #101. Broader #6 declarations, molecular SDF
 ownership #74/MolSysMT #215 and experimental #66 retain separate gates.
 
 ## Persistence review — 2026-11-04

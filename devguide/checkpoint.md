@@ -1,5 +1,43 @@
 # Development Checkpoint
 
+## Cached receptor hypothesis-generation pilot qualified — 2026-11-04
+
+[#86](https://github.com/uibcdf/pharmacophoremt/issues/86) qualifies the first
+[prespecified generation pilot](receptor_hypothesis_pilot_protocol.md): the
+unchanged prepared PHE404 inventory supplies one indexed donor and one ring.
+MolSysMT owns source loading, selection, chemistry, vectors and planes. PHMT
+declares distances/radius, complements the donor and enumerates both ring faces
+as separate two-site hypotheses. The position-only acceptor is explicitly omitted.
+This is unshipped case support; no public runtime/API, provider, pin or floor changes.
+
+**110 selected controls pass in 191.26 s, including 34 new guards**, zero
+failures/errors/skips. Eight alternatives have independent raw-coordinate oracles
+and supplied-pair positive/negative controls; budgets 8/3/0 retain completion and
+remaining 0/5/8. JSON/YAML preserve all evidence and constraints, with geometry
+within the frozen 1e-12 tolerance. Literal pm roundtrip equality can differ by
+ordinary float64 rounding; exact flags and original initial failures are retained.
+The standalone command also completes both unit-policy runs. All three source/
+native/test/input/metadata identity checks are stable, with original coordinates,
+full chemical history, cached observations, inventories and application units intact.
+[Original evidence](evidence/receptor_hypothesis_pilot_20261104_summary.json) and
+[case interpretation](../docs/content/validation/receptor_hypothesis_pilot.md)
+retain actual input/operation credit and the three corrected harness assumptions.
+
+Provider review is complete for this scope. Requests are published in
+[MolSysMT #375](https://github.com/uibcdf/molsysmt/issues/375#issuecomment-6648409054)
+and [TopoMT #101](https://github.com/uibcdf/topomt/issues/101); #323 remains separate
+environmental H refinement. Next design the explicit public cached-generation
+contract from this fixed pilot, including profile/parameter choices and budget/
+unsupported outcomes. Further acceptor chemistry requires its own admitted
+provider profile and declaration; TopoMT stays optional. Neither complete DFND
+nor universal acceptor coverage blocks this donor/ring development route.
+
+Broader audit item 12, #66, #74/MolSysMT #215, #82/ArgDigest #47/#48 and #6 retain
+their scope; installed/public/full-suite/hosted qualification stays separate.
+Addon/new release deferred; public 0.4.0 unchanged. Owned capsule
+`/tmp/phmt-receptor-pilot-20261104-gmfqhead`, review 2026-11-18 or scientific/source
+change; no continuing local process is required. Earlier next steps are historical.
+
 ## Prepared ERalpha receptor sensitivity qualified — 2026-11-04
 
 [#85](https://github.com/uibcdf/pharmacophoremt/issues/85) extends #83 on the

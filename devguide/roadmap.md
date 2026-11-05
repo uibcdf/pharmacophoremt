@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## First cached receptor hypothesis-generation slice delivered — 2026-11-04
+
+[#86](https://github.com/uibcdf/pharmacophoremt/issues/86) qualifies eight separate
+donor/ring hypotheses from MolSysMT-derived PHE404 geometry, with explicit
+acceptor omission and complete/truncated/zero enumeration. [Protocol](receptor_hypothesis_pilot_protocol.md),
+[original results](evidence/receptor_hypothesis_pilot_20261104_summary.json) and
+[case](../docs/content/validation/receptor_hypothesis_pilot.md) retain independent
+geometry/pair oracles, JSON/YAML, unit policies and native input custody.
+**110 selected controls pass (34 new)**; the standalone pilot also completes.
+No public API/provider/dependency changes or biological claim follows.
+
+Next design an explicit public cached-generation contract using this fixed
+profile as evidence, preserving required scientific choices, budget exhaustion,
+unsupported chemistry and separate alternatives. Receive further MolSysMT
+direction profiles under #375 through new bounded declarations. TopoMT #101 is
+an optional original-provider integration; DFND completion is not a prerequisite.
+#323 environmental H refinement, audit 12's real cohorts/preparation uncertainty,
+#66, #74/#215, #82/ArgDigest #47/#48 and broader #6 remain separate. Addon/new
+release deferred; public 0.4.0 and installed/public/hosted gates unchanged.
+
 ## Prepared receptor sensitivity extension delivered — 2026-11-04
 
 [#85](https://github.com/uibcdf/pharmacophoremt/issues/85) qualifies the fixed

@@ -371,3 +371,21 @@ receptor hypothesis generation; missing reusable tools belong in provider issues
 #375/#323, #66, #74/MolSysMT #215, #82/ArgDigest #47/#48 and broader #6 retain their
 independent gates. No full-suite, installed/public/all-platform, hosted,
 predictive or performance promotion follows.
+
+## Cached receptor hypothesis generation — 2026-11-04
+
+[#86](https://github.com/uibcdf/pharmacophoremt/issues/86) qualifies the
+[fixed donor/ring generation pilot](receptor_hypothesis_pilot_protocol.md):
+eight separate two-site hypotheses, explicit position-only acceptor omission,
+and budgets 8/3/0 with remaining 0/5/8. **110 selected controls pass (34 new)**;
+the standalone command also completes both unit policies. Independent raw-input
+geometry and synthetic supplied-pair controls, JSON/YAML and full native source
+custody pass. The three original harness failures and actual identities remain
+in the [receipt/full evidence](evidence/receptor_hypothesis_pilot_20261104_summary.json).
+No production runtime/provider/dependency/preparation or original evidence changes.
+
+This is unshipped case support, not a public automatic receptor-modeling API or
+biological validation. Audit 12 remains partial. Next design the explicit cached
+public contract; further direction chemistry belongs to MolSysMT #375 and optional
+pockets to TopoMT #101. Environmental H refinement #323, #66, #74/#215,
+#82/ArgDigest #47/#48, broader #6 and installed/public/hosted gates stay separate.

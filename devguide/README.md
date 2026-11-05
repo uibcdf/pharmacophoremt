@@ -22,10 +22,14 @@ is now qualified under #83; #84 repairs a measured unit-policy radius-boundary
 defect. Audit item 12 remains partial beyond this analytical slice.
 The [prepared ERalpha sensitivity extension](prepared_receptor_sensitivity_protocol.md)
 under #85 now applies that methodology to the original cached receptor geometry.
+The first [cached receptor hypothesis-generation pilot](receptor_hypothesis_pilot_protocol.md)
+under #86 now qualifies eight donor/ring alternatives and explicit enumeration
+budgets, using MolSysMT geometry without a new public API. Further direction
+profiles and optional pockets are requested in MolSysMT #375 and TopoMT #101.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: prepared receptor sensitivity #85 qualified (288 selected cases, 43 new; full 64-attempt matrix), following #83/#84. Next inventory provider pocket/geometry contracts before declaring receptor hypothesis generation. The sensitivity audit remains partial. #82 waits on ArgDigest #47/#48; #6 stays partial. Molecular work remains MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: receptor hypothesis-generation pilot #86 qualified (110 selected cases, 34 new; eight separate donor/ring alternatives), following #85/#83/#84. Next design the explicit public cached-generation contract; provider handoffs are MolSysMT #375 and optional TopoMT #101. The wider scientific audit remains partial. #82 waits on ArgDigest #47/#48; #6 stays partial. Molecular work remains MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 
