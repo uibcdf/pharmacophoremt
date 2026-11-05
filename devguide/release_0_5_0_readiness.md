@@ -1,0 +1,39 @@
+# Proposed 0.5.0 consolidation
+
+Owner LMMV/dprada, [#95](https://github.com/uibcdf/pharmacophoremt/issues/95),
+2026-11-05. Proposed version, not a tag/release/package or publication decision.
+Use the [roadmap staircase](roadmap.md)
+for later milestones. The observed latest source tag/GitHub Release remains
+[0.4.0](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0), 2026-10-23.
+Package-channel contents are not inferred from that observation.
+
+## Scope to review for the next candidate
+
+Consolidate the current native classical workflows and scientific/provenance/
+quantity/error contracts, including #94's explicit experimental cached-carbonyl
+generation. Review the capability inventory, runnable recipes and migration notes
+against the complete 0.4.0-to-candidate diff. Keep experimental/partial methods
+and known limitations explicit. Do not add more unrelated capability solely to
+fill a version number. Dynamics, AI, optional pockets and the viewer addon are
+not automatic prerequisites for this consolidation.
+
+## Concrete readiness route
+
+| Gate | Current state and next action |
+| --- | --- |
+| Exact source candidate | Select one full committed SHA after #94 closeout; record it in #95 before freezing/tagging |
+| Scientific/local source evidence | #94 has 295 unique passing selected controls across preserved scopes, unchanged 12-model/72-primary/24-recovery replay, and an executed recipe; these do not certify the full suite |
+| Hosted supported source matrix | #9 owns exact-head Python 3.11–3.14 Linux/macOS recovery; inspect the candidate's executed required jobs rather than reusing old-head or queued results |
+| Public contract and migration notes | Review the complete new/changed/retired API and feature definitions since 0.4.0; write version-specific release notes with examples and scope |
+| Version/metadata plan | Review and commit the real 0.5.0 release plan when a candidate is selected. The existing `devtools/conda-build/release_plan.toml` still records 0.4.0 and is deliberately unchanged by this planning stage |
+| Candidate distribution/install | #10/#23 retain exact-file build, dependency-closure, installed supported-platform/minor and independent public-install requirements; a new source tag cannot certify them |
+| Documentation | Verify the applicable candidate docs/environment/publication route; a bounded linked-page render is not hosted/full-site publication |
+| Source tag/Release/package decision | State which artifacts are actually ready. Tags/Release titles use exact X.Y.Z and immutable source/artifacts. A source-only milestone must preserve explicit package-pending status and common release gates |
+| Publication coordination | GitHub Release `released` currently triggers Conda and docs workflows. Coordinate that concrete event with reviewed plan/gates; do not use a Release as an accidental upload experiment |
+| Suite notice | On actual tag/release/package publication, file/update the version-specific MolSysSuite notice with source, files/hashes, executed gates and pending deliveries, as the maintainer requested |
+
+Current package/public dependency flags, source-provider pins and their original
+evidence retain their authority. Do not silently mark dependencies public or
+replace shared prefixes to clear a gate. MolSysMT owns any molecular capability
+or package handoff; report unmet needs there. This document reserves no tag,
+changes no version metadata and starts no publication workflow.

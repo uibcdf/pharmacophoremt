@@ -1577,3 +1577,17 @@ open #47, not a passing SDF-fidelity test; its producer provenance was recorded
 after execution. This is focused source/retirement evidence, not full-suite,
 complete hosted/installed/public matrices, biology, performance or whole-component
 resource review. Donor geometry delegation remains MolSysMT #375.
+
+
+## Public cached-carbonyl generation — 2026-11-05
+
+The [#94 summary](public_cached_carbonyl_20261105_summary.json) links original
+full results, source overlays, commands, all failed/repaired phases and stable
+before/after twelve-provider/native/helper/test/input identities. 295 unique
+selected nodes have passing evidence across preserved scopes; final focused
+114 includes a fresh unchanged 12-model/72-primary/24-recovery public replay.
+Four unsupported/undefined queries remain unscored. Three cookbook blocks execute
+with two models and one JSON recovery. Earlier scientific inputs/results retain
+their exact bytes. This qualifies the explicit experimental cached source API,
+with molecular operations remaining in MolSysMT, not broad chemistry, biology,
+performance or supported installed/public delivery. No new tag/package is published.

@@ -99,3 +99,15 @@ No molecular operation, physical-radius assignment or generation pruning occurs.
 [Original evidence](evidence/receptor_generation_exclusions_20261105_summary.json)
 records 217 passing selected controls (61 new), boundary/prepared independent
 oracles and the final source identities; #87's original evidence remains intact.
+
+## Experimental cached carbonyl profile — 2026-11-05
+
+[#94](https://github.com/uibcdf/pharmacophoremt/issues/94) adds the explicitly
+selected `donor_aromatic_carbonyl_experimental` source profile. Its
+[contract](public_cached_carbonyl_generation.md) requires a separate native provider
+cache, structure position, acceptor distance choices and target donor orientation.
+Original donor/aromatic behavior and default position-only features remain.
+Only provider carbonyl model2/status1 is admitted; alternatives stay separate,
+unsupported/undefined/known outside-profile omissions retain reasons, and source
+consistency checks do not authenticate molecular coordinates. General molecular
+operations remain in MolSysMT; installed/public delivery stays separate.

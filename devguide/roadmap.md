@@ -1,5 +1,54 @@
 # Strategic Roadmap
 
+## Release staircase towards 1.0.0 — 2026-11-05
+
+Maintainer direction and ownership:
+[#95](https://github.com/uibcdf/pharmacophoremt/issues/95). Consolidate coherent,
+reproducible intermediate milestones as capabilities become ready. The observed
+latest tag/GitHub Release is [0.4.0](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0),
+published 2026-10-23; main6e7c934 contains 99 later commits. These are dated source
+observations, not proof of current package-channel contents. No tag/package is
+created by this roadmap.
+
+| Proposed milestone | Capability to consolidate | Acceptance before calling the milestone delivered |
+| --- | --- | --- |
+| 0.5.0 | Current native classical MVP, explicit receptor generation including #94, unit/provenance/error contracts and usable recipes | Qualify #94, review capability/migration/release notes, choose an exact candidate and verify its applicable source/CI/release gates |
+| 0.6–0.8 | Prioritized integration/molecular-ownership completion and broader preparation/scientific/retrospective validation | Assign each minor to a reviewed coherent batch; retain provider handoffs, independent scientific evidence and disclosed limits. Exact versions/dates are not reserved |
+| 0.9.x | Stable candidate for the agreed 1.0 classical scope | Freeze that scope and stabilize public APIs, native records, compatibility/migration, documentation and supported installation evidence |
+| 1.0.0 | Deliver the agreed classical scope | Stable documented contracts, reproducible scientific cases with limits, and verified supported source/installed/public delivery; later dynamics/AI/addons are not automatic prerequisites |
+
+The next proposed consolidation is **0.5.0 after #94 qualification**, rather
+than another open-ended sequence of source changes without a version checkpoint.
+Use patch versions for repairs to an existing minor; use minor versions for
+coherent capability increments. Neither commit count nor a locally passing
+subset alone determines a release.
+
+A source tag identifies an exact reviewed commit with matching version/notes,
+applicable passing checks, evidence and limitations. Source tag, GitHub Release
+and package publication keep separate identities and status; source-only progress
+does not certify a delivered package or waive common release requirements.
+Before a GitHub Release, account for the existing released-event workflows that
+trigger guarded Conda publication and documentation. Prepare the real version
+plan and candidate gates deliberately. #9 owns exact-head hosted recovery;
+#10/#23 retain installed/public qualification. When an actual new tag/release/
+package is delivered, publish the requested version-specific MolSysSuite notice.
+#95 tracks next-candidate readiness; this does not authorize publication now.
+
+## Public cached-carbonyl generation delivered — 2026-11-05
+
+[#94](https://github.com/uibcdf/pharmacophoremt/issues/94) delivers the explicit
+experimental public profile, with separate alternatives and cached source/state/
+role/unit/provenance admission. The original donor/aromatic profile remains
+compatible. **295 unique selected nodes have passing evidence** across preserved
+scopes (final focused run 114). The unchanged real-provider replay returns 12
+models/72 primary/24 recovery evaluations and four unscored negative queries;
+three standalone cookbook blocks also execute. [Case](../docs/content/validation/public_carbonyl_generation.md)
+and [receipt](evidence/public_cached_carbonyl_20261105_summary.json) retain all
+attempts, exact identities, scientific limits and unchanged earlier evidence.
+All molecular operations remain MolSysMT-owned; no provider/pin/environment or
+publication change. Next #95 consolidates the proposed 0.5.0 candidate using the
+staircase and [readiness route](release_0_5_0_readiness.md) above.
+
 ## Experimental carbonyl source receiving delivered — 2026-11-05
 
 [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) completes the unchanged

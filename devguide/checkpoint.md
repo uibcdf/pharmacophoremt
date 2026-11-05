@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Public experimental carbonyl generation delivered — 2026-11-05
+
+[#94](https://github.com/uibcdf/pharmacophoremt/issues/94) delivers the explicitly
+selected `donor_aromatic_carbonyl_experimental` development-source profile.
+The [contract](public_cached_carbonyl_generation.md),
+[case](../docs/content/validation/public_carbonyl_generation.md) and
+[receipt](evidence/public_cached_carbonyl_20261105_summary.json) bind four mandatory
+acceptor choices, native cache consistency, omissions, independent alternatives,
+exact lazy budgets, exclusions, persistence and actual attribution. Default
+position-only acceptors and the existing donor/aromatic profile remain compatible.
+The generator accesses no molecular system: molecular representations, formats,
+construction, inspection, selection, recognition and geometry remain MolSysMT-owned.
+
+**295 unique selected nodes have passing evidence across preserved scopes:**
+181 existing generation/exclusion/projection controls, 98 new cached-profile
+controls, eight real-provider replay controls and eight frozen declaration guards.
+The final focused run passes 114. Public replay preserves #92/#93's fixed science:
+12 models, 72 primary/24 JSON/YAML recovery evaluations and four unscored
+unsupported/undefined queries. Three actual cookbook blocks return two models
+and recover one JSON model without pose scoring. Original collection and four
+guard-assumption failures remain in the receipt; scientific settings never change.
+All completed source/native/helper/test/input/metadata identity phases are stable.
+This is one-aldehyde analytical source qualification, not broad chemical,
+electronic/energetic, biological, performance or installed/public qualification.
+
+Actual controlled MolSysMT remains `0faf1584d05ac47ddcebfc20d9c9978b7f4f230e`,
+with public ArgDigest 0.17.0 extraction. No provider source/prefix/pin, dependency
+floor, environment or release plan changes. The bounded workspace refresh finds
+PHMT initially clean/synced at `6e7c934`; sibling MolSysMT is clean and 111 commits
+behind its fetched upstream, preserved without pull/checkout/edit. Earlier #89–#93
+scientific declarations and original outputs retain their exact bytes.
+
+**Next: [#95](https://github.com/uibcdf/pharmacophoremt/issues/95), consolidate
+the proposed [0.5.0 candidate](release_0_5_0_readiness.md).** Review the complete
+0.4.0-to-candidate capability/API/migration diff and release notes, choose a full
+committed candidate SHA and recover its applicable hosted #9 and installed/public
+#10/#23 gates before tag/publication. The [roadmap](roadmap.md) now names a
+capability-based 0.5 → 0.6–0.8 → 0.9.x → 1.0.0 staircase. Latest observed source
+tag/GitHub Release remains 0.4.0 (2026-10-23); no new tag/package/Release is created
+here. GitHub Release `released` triggers Conda/docs, so coordinate that concrete
+event with the reviewed version plan. Actual publication requires the requested
+version-specific MolSysSuite notice. Wider scientific/data/provider issues and
+the deferred addon retain their separate status.
+
+Owner LMMV/dprada; capsule `build/phmt-public-carbonyl-20261105-bq0s5q6l`, review
+2026-11-19 or source/scientific change. The borrowed immutable environments remain
+available for reproducibility; no continuing task process is required.
+
 ## Carbonyl acceptor source receiving measured — 2026-11-05
 
 [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) executes #92's unchanged

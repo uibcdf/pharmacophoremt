@@ -51,3 +51,17 @@ must agree. This is not molecular reexecution. Default tests retain cheap
 declaration and compressed-evidence controls. See the
 [case](../../../docs/content/validation/carbonyl_acceptor_receiving.md) for original
 attempts, scientific limits and the separate public-profile proposal.
+
+## Public cached-carbonyl generator replay
+
+```bash
+python -m pytest tests/test_cached_carbonyl_generation.py devtools/tests/scientific/test_public_carbonyl_generation.py tests/test_carbonyl_acceptor_plan.py --receptor=llm
+```
+
+This new explicit replay uses #93's unchanged original source/control declaration
+through the public generator: 12 models,72 primary/24 recovery evaluations and
+four unscored source queries. It reuses fixed original measured donor coordinates
+through public MolSysMT construction and independent original-coordinate oracles;
+it is regression, not an independent chemical cohort. Ordinary tests keep the
+public cache/contract controls and cheap evidence guards. Reexecute on affected
+source/provider/API changes; preserve the original result identity and limits.

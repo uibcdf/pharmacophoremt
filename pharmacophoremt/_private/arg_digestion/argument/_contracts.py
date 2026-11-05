@@ -75,9 +75,13 @@ def digest_projection_specs(obj):
 
 
 def digest_receptor_profile(obj):
-    if not isinstance(obj, str) or obj != "donor_aromatic_faces":
+    if not isinstance(obj, str) or obj not in {
+        "donor_aromatic_faces",
+        "donor_aromatic_carbonyl_experimental",
+    }:
         raise ArgumentError(
-            argument="receptor_profile", reason="explicitly choose donor_aromatic_faces"
+            argument="receptor_profile",
+            reason="explicitly choose donor_aromatic_faces or donor_aromatic_carbonyl_experimental",
         )
     return obj
 
@@ -97,6 +101,43 @@ def digest_donor_distances(obj):
 
 def digest_aromatic_distances(obj):
     return _projection_distances(obj, "aromatic_distances")
+
+
+def digest_acceptor_directions(obj):
+    if obj is not None and not isinstance(obj, dict):
+        raise ArgumentError(
+            argument="acceptor_directions",
+            reason="expected a native direction cache or None",
+        )
+    return obj
+
+
+def digest_acceptor_distances(obj):
+    return None if obj is None else _projection_distances(obj, "acceptor_distances")
+
+
+def digest_acceptor_structure_position(obj):
+    if obj is None:
+        return None
+    if (
+        isinstance(obj, (bool, np.bool_))
+        or not isinstance(obj, (int, np.integer))
+        or obj < 0
+    ):
+        raise ArgumentError(
+            argument="acceptor_structure_position",
+            reason="expected an explicit nonnegative integer position",
+        )
+    return int(obj)
+
+
+def digest_acceptor_target_orientation(obj):
+    if obj is not None and (not isinstance(obj, str) or obj != "towards_receptor"):
+        raise ArgumentError(
+            argument="acceptor_target_orientation",
+            reason="explicitly choose towards_receptor",
+        )
+    return obj
 
 
 def digest_max_hypotheses(obj):

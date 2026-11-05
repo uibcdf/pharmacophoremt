@@ -9,6 +9,10 @@ from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_acceptor_directions,
+    digest_acceptor_distances,
+    digest_acceptor_structure_position,
+    digest_acceptor_target_orientation,
     digest_aromatic_distances,
     digest_direction,
     digest_donor_distances,
@@ -24,16 +28,61 @@ from pharmacophoremt._private.arg_digestion.receptor_generation import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
+from ._receptor_directions import cached_carbonyl_choices
 from .excluded_volumes import _attach_receptor_exclusions, _receptor_exclusions
 from .receptor_projections import from_receptor_projections
 
 METHOD = "cached_receptor_donor_aromatic_faces@1"
+CARBONYL_METHOD = "cached_receptor_donor_aromatic_carbonyl@1"
+CARBONYL_PROFILE = "donor_aromatic_carbonyl_experimental"
 
 
-def _choices(inventory, donor_distances, aromatic_distances):
+def _choices(
+    inventory,
+    donor_distances,
+    aromatic_distances,
+    *,
+    carbonyl=None,
+    acceptor_distances=None,
+    method=METHOD,
+):
     options, omitted = [], []
     for index, record in enumerate(inventory["features"]):
         kind = record["kind"]
+        if kind == "hb acceptor" and carbonyl is not None:
+            if index in carbonyl["omitted"]:
+                omitted.append(carbonyl["omitted"][index])
+                continue
+            choices = []
+            for distance_index, distance in enumerate(acceptor_distances):
+                for row in carbonyl["admitted"][index]:
+                    axis = puw.quantity(row["axis"], "dimensionless")
+                    choice = dict(
+                        feature_index=index,
+                        distance_index=distance_index,
+                        distance=puw.convert(distance, to_unit="nm"),
+                        face_sign=None,
+                        provider_record_index=row["provider_record_index"],
+                        local_direction_index=row["local_direction_index"],
+                    )
+                    spec = dict(
+                        feature_index=index,
+                        projection_direction=axis,
+                        target_direction=-axis,
+                        distance=choice["distance"],
+                        label=f"feature {index}, distance {distance_index}, carbonyl direction {row['local_direction_index']}",
+                        evidence=dict(
+                            method=method,
+                            choice=choice,
+                            geometry_origin="cached provider-derived geometry",
+                            placement_origin="explicit pharmacophoric hypothesis",
+                            target_orientation="towards_receptor",
+                            provider_geometry=row["evidence"],
+                        ),
+                    )
+                    choices.append((choice, spec))
+            options.append(choices)
+            continue
         if kind not in {"hb donor", "aromatic ring"}:
             omitted.append(
                 dict(
@@ -70,7 +119,7 @@ def _choices(inventory, donor_distances, aromatic_distances):
                     distance=choice["distance"],
                     label=f"feature {index}, distance {distance_index}, face {sign}",
                     evidence=dict(
-                        method=METHOD,
+                        method=method,
                         choice=choice,
                         geometry_origin="cached provider-derived geometry",
                         placement_origin="explicit pharmacophoric hypothesis",
@@ -96,6 +145,10 @@ def from_receptor_features(
     max_hypotheses,
     excluded_volume_inventory=None,
     excluded_volume_radius=None,
+    acceptor_directions=None,
+    acceptor_structure_position=None,
+    acceptor_distances=None,
+    acceptor_target_orientation=None,
     name=None,
     skip_digestion=False,
 ):
@@ -106,7 +159,7 @@ def from_receptor_features(
     feature_inventory : dict
         Native get_features result for one explicitly prepared region, structure
         and chemical state. Cached origin/frame claims remain caller declarations.
-    receptor_profile : {'donor_aromatic_faces'}
+    receptor_profile : {'donor_aromatic_faces', 'donor_aromatic_carbonyl_experimental'}
         Required scientific choice. Every indexed donor emits a spherical ligand
         acceptor along its cached D→H direction. Every aromatic ring emits a Disk
         on either face, with the cached ring axis explicitly used as target axis.
@@ -125,6 +178,20 @@ def from_receptor_features(
         Explicit uniform query radius, required with the heavy-atom cache.
         Exclusions append after positive sites at weight zero; they are not
         physical radii, hypothesis pruning or a steric calculation here.
+    acceptor_directions : dict, optional
+        Required native MolSysMT hbond_site_directions@1 cache for the experimental
+        carbonyl profile; ideal_local_geometry/smarts_donor_acceptor, pbc=False.
+        Original recognition/source/state and native origins must match the
+        feature cache. This does not authenticate molecular source coordinates.
+    acceptor_structure_position : int, optional
+        Required explicit position in the provider's ordered structure axis,
+        including repetitions, referring to the cached feature frame.
+    acceptor_distances : list or tuple of length quantities, optional
+        Required nonempty positive choices for the experimental profile.
+    acceptor_target_orientation : {'towards_receptor'}, optional
+        Required explicit hypothesis rule: donor target axis -u for provider
+        direction u. The two carbonyl lobes produce separate hypotheses.
+        These four options must be None with the original profile.
     name : str, optional
         Model-name prefix; deterministic enumeration indices are appended.
     skip_digestion : bool, default=False
@@ -182,7 +249,47 @@ def from_receptor_features(
             argument="feature_inventory",
             reason="provide chemical features; exclusions require a separate inventory",
         )
-    options, omitted = _choices(feature_inventory, donor_distances, aromatic_distances)
+    acceptor_directions = digest_acceptor_directions(acceptor_directions)
+    acceptor_structure_position = digest_acceptor_structure_position(
+        acceptor_structure_position
+    )
+    acceptor_distances = digest_acceptor_distances(acceptor_distances)
+    acceptor_target_orientation = digest_acceptor_target_orientation(
+        acceptor_target_orientation
+    )
+    experimental = receptor_profile == CARBONYL_PROFILE
+    optional = [
+        acceptor_directions,
+        acceptor_structure_position,
+        acceptor_distances,
+        acceptor_target_orientation,
+    ]
+    if experimental and any(value is None for value in optional):
+        raise ArgumentError(
+            argument="receptor_profile",
+            reason="experimental carbonyl generation requires a native direction cache, explicit structure position, acceptor distances and target orientation",
+        )
+    if not experimental and any(value is not None for value in optional):
+        raise ArgumentError(
+            argument="receptor_profile",
+            reason="acceptor options require the explicitly selected experimental carbonyl profile",
+        )
+    carbonyl = (
+        cached_carbonyl_choices(
+            feature_inventory, acceptor_directions, acceptor_structure_position
+        )
+        if experimental
+        else None
+    )
+    method = CARBONYL_METHOD if experimental else METHOD
+    options, omitted = _choices(
+        feature_inventory,
+        donor_distances,
+        aromatic_distances,
+        carbonyl=carbonyl,
+        acceptor_distances=acceptor_distances,
+        method=method,
+    )
     excluded = _receptor_exclusions(
         feature_inventory, excluded_volume_inventory, excluded_volume_radius
     )
@@ -196,7 +303,9 @@ def from_receptor_features(
         remaining=total - count,
         max_hypotheses=budget,
         complete=complete,
-        order="inventory feature; distance; aromatic +1/-1 face; rightmost feature fastest",
+        order="inventory feature; distance; aromatic +1/-1 face; provider carbonyl local direction; rightmost feature fastest"
+        if experimental
+        else "inventory feature; distance; aromatic +1/-1 face; rightmost feature fastest",
     )
     parameters = dict(
         receptor_profile=receptor_profile,
@@ -206,6 +315,12 @@ def from_receptor_features(
     )
     if excluded is not None:
         parameters["excluded_volume_radius"] = excluded["report"]["radius"]
+    if experimental:
+        parameters.update(
+            acceptor_distances=acceptor_distances,
+            acceptor_structure_position=acceptor_structure_position,
+            acceptor_target_orientation=acceptor_target_orientation,
+        )
     rows, models = [], []
     for index, combination in enumerate(islice(product(*options), count)):
         choices, specs = zip(*combination, strict=True)
@@ -221,7 +336,7 @@ def from_receptor_features(
             _attach_receptor_exclusions(model, excluded)
         generation = detached(
             dict(
-                method=METHOD,
+                method=method,
                 hypothesis_id=identity,
                 parameters=parameters,
                 choices=choices,
@@ -231,13 +346,13 @@ def from_receptor_features(
             )
         )
         model.metadata["projection_method"] = model.metadata["method"]
-        model.metadata["method"] = METHOD
+        model.metadata["method"] = method
         model.metadata["generation"] = generation
         rows.append(detached(dict(hypothesis_id=identity, choices=choices)))
         models.append(model)
     report = detached(
         dict(
-            method=METHOD,
+            method=method,
             status="enumerated" if options else "no_supported_features",
             source_inventory=feature_inventory,
             parameters=parameters,
@@ -256,4 +371,12 @@ def from_receptor_features(
     if excluded is not None:
         report["excluded_volumes"] = detached(excluded["report"])
         report["excluded_volumes"]["attached_model_count"] = len(models)
-    return dict(method=METHOD, models=models, report=report, complete=complete)
+    if experimental:
+        report["acceptor_directions"] = detached(acceptor_directions)
+        report["criteria"].update(
+            experimental=True,
+            acceptor_model="provider carbonyl_trigonal model2/status1 only",
+            acceptor_target_orientation="explicit towards_receptor hypothesis (-u)",
+            cache_consistency="declared source context; not molecular-source authentication",
+        )
+    return dict(method=method, models=models, report=report, complete=complete)

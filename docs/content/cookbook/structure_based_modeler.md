@@ -209,3 +209,83 @@ positive features. No exclusion-only positive model is returned. The
 [contract and original evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_generation_exclusions.md)
 retain strict-boundary controls and the prepared PHE404 example under two unit
 policies. Molecular loading, selection, geometry and movement remain in MolSysMT.
+
+## Experimental cached carbonyl alternatives
+
+The explicitly selected `donor_aromatic_carbonyl_experimental` profile also uses
+provider model2/status1 acceptor geometry. This example requires a MolSysMT source
+with the experimental `get_hbond_site_directions` API; the qualified producer is
+`0faf1584d05ac47ddcebfc20d9c9978b7f4f230e`. Computing the cache and consuming it
+are separate operations. Installed/public provider qualification remains distinct.
+
+The following three blocks form a standalone analytical example. MolSysMT creates
+and inspects the molecular source. No hydrogen optimization or pocket finding is
+performed. The literal neutral-aldehyde coordinates are the unchanged #92/#93
+fixture, in nm.
+
+```python
+import molsysmt as msm
+import pharmacophoremt as phmt
+from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt.modeler import get_features, from_receptor_features
+
+carbonyl = msm.convert(
+    msm.convert('smiles:CC=O', to_form='rdkit.Mol'),
+    to_form='molsysmt.MolSys',
+)
+carbonyl.structures.append(
+    coordinates=puw.quantity([[[0,.15,0], [0,0,0], [.12,0,0]]], 'nm')
+)
+carbonyl_features = get_features(carbonyl, selection=[2], features=['hb acceptor'])
+carbonyl_directions = msm.interactions.hbonds.get_hbond_site_directions(
+    carbonyl, selection=[2], structure_indices=[0], chemical_state='reference',
+    method='ideal_local_geometry', site_method='smarts_donor_acceptor', pbc=False,
+)
+```
+
+Choose a separate hypothesis per lobe, with explicit distance/radius and donor
+orientation. `towards_receptor` means target D→H=-u; it is a pharmacophoric choice,
+not a predicted electronic orbital or an energetic optimum. Structure position0
+refers to the first entry in the provider's requested axis, even when indices repeat.
+
+```python
+with phmt.attribution():
+    carbonyl_generated = from_receptor_features(
+        carbonyl_features,
+        receptor_profile='donor_aromatic_carbonyl_experimental',
+        donor_distances=['.35 nm'], aromatic_distances=['.35 nm'],
+        acceptor_directions=carbonyl_directions,
+        acceptor_structure_position=0, acceptor_distances=['.35 nm'],
+        acceptor_target_orientation='towards_receptor',
+        radius='20 pm', max_hypotheses=2,
+    )
+assert carbonyl_generated['complete']
+assert carbonyl_generated['report']['enumeration']['total_possible'] == 2
+assert len(carbonyl_generated['models']) == 2
+assert all(model.n_interaction_sites == 1 for model in carbonyl_generated['models'])
+```
+
+Native pharmacophore persistence preserves the selected provider evidence and
+scientific choices. It does not recompute molecular geometry.
+
+```python
+from pathlib import Path
+from tempfile import TemporaryDirectory
+from pharmacophoremt.io import to_json, load_json
+
+with TemporaryDirectory(prefix='phmt-carbonyl-recipe-') as temporary:
+    saved = Path(temporary) / 'carbonyl.json'
+    to_json(carbonyl_generated['models'][0], saved)
+    recovered_carbonyl = load_json(saved)
+assert recovered_carbonyl.n_interaction_sites == 1
+assert recovered_carbonyl.interaction_sites[0].features == ['hb donor']
+```
+
+Both donor/aromatic distance lists remain required even when their families are
+absent. Unsupported, undefined and known outside-profile acceptors are omitted
+with reasons; missing or incoherent caches fail before generation, including at
+zero budget. Cached source-context consistency does not authenticate an unchanged
+molecular system. Default position-only features and `donor_aromatic_faces` remain
+available. See the [contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_carbonyl_generation.md)
+and [original carbonyl receiving case](../validation/carbonyl_acceptor_receiving.md)
+for scientific limits; this example is not biological validation.
