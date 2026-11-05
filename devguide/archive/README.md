@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (65)
+### Resolved (66)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -62,6 +62,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(resolved, measured)*
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`receive_chemical_domain_separation.md`](receive_chemical_domain_separation.md) — [#69](https://github.com/uibcdf/pharmacophoremt/issues/69) — Receive MolSysMT chemical-domain separation with unchanged scientific profiles. *(resolved, measured)*
+- [`receptor_generation_exclusions.md`](receptor_generation_exclusions.md) — [#88](https://github.com/uibcdf/pharmacophoremt/issues/88) — Compose optional native receptor exclusions into bounded generated hypotheses. *(resolved, measured)*
 - [`receptor_hypothesis_pilot.md`](receptor_hypothesis_pilot.md) — [#86](https://github.com/uibcdf/pharmacophoremt/issues/86) — Qualify bounded receptor hypotheses from cached native donor and ring geometry. *(resolved, measured)*
 - [`receptor_projection_sensitivity.md`](receptor_projection_sensitivity.md) — [#83](https://github.com/uibcdf/pharmacophoremt/issues/83) — Qualify the first prespecified analytical receptor projection sensitivity matrix. *(resolved, measured)*
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*

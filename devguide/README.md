@@ -30,10 +30,13 @@ Its [public cached builder](public_receptor_generation.md), #87, now supports
 multiple donor/ring occurrences and explicit bounded alternatives in development
 source, with 192 passing selected controls (54 new). Molecular geometry remains
 MolSysMT-owned; public delivery and broader scientific qualification are separate.
+Optional [cached generation exclusions](receptor_generation_exclusions.md), #88,
+now preserve separate hypotheses and explicit veto semantics (217 selected cases,
+61 new); source-declaration compatibility remains distinct from source authenticity.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: public source `from_receptor_features` #87 qualified (192 selected cases, 54 new), following #86/#85/#83/#84. Next compose optional cached receptor exclusions; further directions remain MolSysMT #375 and optional pockets TopoMT #101. ArgDigest #47/#48 are source-fixed; #82 awaits published receiving. Wider #6/scientific audit, SDF #74/#215 and installed/public gates stay separate. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: public receptor generation now composes optional cached exclusions under #88 (217 passing selected cases, 61 new), following #87/#86/#85/#83/#84. Next prespecify a broader donor/ring/joint/exclusion development comparison. Further directions remain MolSysMT #375 and optional pockets TopoMT #101. #82 awaits published ArgDigest fixes. Wider #6/audit12, #66, SDF #74/#215 and hosted/installed/public gates remain separate. Addon deferred; public release still 0.4.0.
 
 ## Classical Workflow Specification
 

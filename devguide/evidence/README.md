@@ -1,5 +1,20 @@
 # Local scientific evidence
 
+## Generated receptor exclusions — 2026-11-05
+
+[Receipt/full evidence](receptor_generation_exclusions_20261105_summary.json):
+217 selected controls pass, including 61 new guards, two unit policies, strict
+inside/equality/outside and original-coordinate prepared 0/42 clash-pair oracles.
+Five recipe blocks and a separate captured two-model replay preserve source
+coordinates/history/observations, native recovery and actual input/operation
+credit. The quota-aborted broader attempt remains explicit and unqualified.
+[Contract](../receptor_generation_exclusions.md) and
+[case](../../docs/content/validation/prepared_receptor_workflow.md#generated-receptor-exclusions)
+retain context-authentication, explicit-radius and biological/delivery limits.
+No provider source, dependency floor/pin, published artifact or molecular routine
+changes. Borrowed environments remain unchanged; owned task storage is relocated
+to ignored build/ after complete hash verification to recover shared /tmp quota.
+
 The [collection policy](../validation_collection.md) selected the existing
 library documentation as the first publication view under #20 on 2026-10-07.
 The [Validation and benchmarks section](../../docs/content/validation/index.md)

@@ -1,5 +1,55 @@
 # Development Checkpoint
 
+## Optional receptor exclusions qualified — 2026-11-05
+
+[#88](https://github.com/uibcdf/pharmacophoremt/issues/88) extends
+`modeler.from_receptor_features` with paired optional `excluded_volume_inventory`
+and `excluded_volume_radius`. [Contract](receptor_generation_exclusions.md),
+[recipe](../docs/content/cookbook/structure_based_modeler.md#attach-cached-exclusions-to-every-generated-hypothesis)
+and [original evidence](evidence/receptor_generation_exclusions_20261105_summary.json)
+retain **217 passing selected controls (61 new)** in 258.89 s. This is
+controlled Linux/Python 3.14.7 source evidence, not a full-suite/public/platform
+or biological qualification. MolSysMT source is the recorded controlled
+`0faf1584d05ac47ddcebfc20d9c9978b7f4f230e`, not the sibling clone's current main.
+
+The generator and StructureBasedModeler share the existing recipe validation and
+independent attachment. Cache checks compare declared selected atom sets, frame
+and state; they do not authenticate molecular source/coordinates or complete
+heavy-atom coverage. Explicit uniform radii remain query choices. Every real
+model records its actual global indices, while root reports keep local recipes
+and applied-model counts. Positive enumeration and weights remain unchanged;
+zero/unsupported generation validates requested exclusions without returning an
+exclusion-only positive query. Molecular operations remain wholly in MolSysMT.
+
+Both unit policies preserve the strict-inside/equality/outside control. Prepared
+PHE404 translated .35 nm along its native ring normal has 0/42 clash pairs at
+.01/.40 nm exclusion radii; the favorable face retains positive fit one while
+the large-radius veto rejects it. The independent coordinate oracle, original
+chemical history/observations/coordinates, native recovery and actual input/
+operation credit are retained. These settings are not independent ligands or
+physical-radius validation. Five cookbook blocks and a separately captured
+two-model prepared replay execute; strict bounded linked-page rendering passes.
+
+An initial 53-case run passes. A broader attempt is interrupted by shared `/tmp`
+write quota, with incomplete log/XML/after-snapshot, and is not qualification.
+All partial bytes are retained; only this owned capsule moves to ignored
+`build/phmt-receptor-exclusions-20261105-p66pjssu` after hash verification, with
+its historical `/tmp/phmt-receptor-exclusions-20261105-p66pjssu` alias preserved.
+The final 217-case run uses repository storage and passes with stable source/
+native/helper/test/input/metadata identities. Borrowed providers/prefixes remain
+unchanged. No continuing process is needed. Owner LMMV/dprada, review 2026-11-19
+or source/scientific change; original evidence is committed separately.
+
+**Next:** prespecify a broader receptor-generation development comparison before
+new parameter evaluation: donor-only, ring-only, their joint constraints and
+optional exclusions, with independent oracles and separate failures/omissions.
+Define eligible prepared regions and fixed settings before evaluation; do not
+tune radii to produce acceptance. Further acceptor profiles remain MolSysMT #375
+receiving; optional pockets TopoMT #101 and environmental H refinement #323 stay
+separate. ArgDigest #47/#48 are source-fixed; #82 awaits published-fix receiving.
+Wider #6/audit12, #66, #74/#215 and hosted/installed/public #9/#23 stay open.
+Addon/release deferred, published 0.4.0 unchanged. Earlier next steps are historical.
+
 ## Public cached receptor generation qualified — 2026-11-05
 
 [#87](https://github.com/uibcdf/pharmacophoremt/issues/87) delivers

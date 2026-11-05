@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Generated receptor exclusions delivered — 2026-11-05
+
+[#88](https://github.com/uibcdf/pharmacophoremt/issues/88) composes optional cached
+heavy-atom exclusions into each `from_receptor_features` hypothesis, reusing the
+facade's validated recipe. [Contract](receptor_generation_exclusions.md),
+[case](../docs/content/validation/prepared_receptor_workflow.md#generated-receptor-exclusions)
+and [evidence](evidence/receptor_generation_exclusions_20261105_summary.json)
+retain 217 passing selected cases (61 new), strict-boundary and original-coordinate
+prepared controls under two unit policies, native recovery and actual credit.
+The root recipe has no invented global indices; positive enumeration is unchanged.
+MolSysMT owns all molecular operations. Uniform radii are explicit query choices.
+
+Next prespecify a broader development comparison of donor/ring/joint/exclusion
+contributions, eligible prepared regions and fixed parameters before execution.
+Further acceptor-direction receiving is MolSysMT #375, optional pockets TopoMT
+#101, environmental H refinement #323. Broader #6/audit12, #66, #74/#215,
+ArgDigest published-fix receiving #82 and hosted/installed/public #9/#23 remain
+separate. Addon/release deferred; published 0.4.0 unchanged. Earlier next steps
+are historical; see the checkpoint for the quota-interrupted attempt and recovery.
+
 ## Cached receptor generation is public in source — 2026-11-05
 
 [#87](https://github.com/uibcdf/pharmacophoremt/issues/87) promotes #86 into

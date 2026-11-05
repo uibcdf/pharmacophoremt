@@ -24,6 +24,7 @@ from pharmacophoremt._private.arg_digestion.receptor_generation import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
+from .excluded_volumes import _attach_receptor_exclusions, _receptor_exclusions
 from .receptor_projections import from_receptor_projections
 
 METHOD = "cached_receptor_donor_aromatic_faces@1"
@@ -93,6 +94,8 @@ def from_receptor_features(
     aromatic_distances,
     radius,
     max_hypotheses,
+    excluded_volume_inventory=None,
+    excluded_volume_radius=None,
     name=None,
     skip_digestion=False,
 ):
@@ -115,6 +118,13 @@ def from_receptor_features(
         Required positive positional matching tolerance, independent of offsets.
     max_hypotheses : int
         Required finite nonnegative bound. Zero can return incomplete empty output.
+    excluded_volume_inventory : dict, optional
+        Native included-volume inventory with the same declared atom set,
+        structure and chemical-state selector as the chemical cache.
+    excluded_volume_radius : length quantity, optional
+        Explicit uniform query radius, required with the heavy-atom cache.
+        Exclusions append after positive sites at weight zero; they are not
+        physical radii, hypothesis pruning or a steric calculation here.
     name : str, optional
         Model-name prefix; deterministic enumeration indices are appended.
     skip_digestion : bool, default=False
@@ -133,8 +143,8 @@ def from_receptor_features(
     The Cartesian product contains one choice for EVERY admitted source feature,
     in inventory order; distance order precedes aromatic +/− face. The rightmost
     feature changes fastest. Opposite faces are separate hypotheses. Multiple
-    donor-H pairs remain distinct even when they share a donor atom. Every site
-    starts essential and weight one; these are construction assumptions.
+    donor-H pairs remain distinct even when they share a donor atom. Every positive
+    site starts essential and weight one; these are construction assumptions.
 
     Unsupported records are explicitly omitted. Position-only acceptors get no
     invented directions. Missing/invalid admitted direction geometry raises before
@@ -173,6 +183,9 @@ def from_receptor_features(
             reason="provide chemical features; exclusions require a separate inventory",
         )
     options, omitted = _choices(feature_inventory, donor_distances, aromatic_distances)
+    excluded = _receptor_exclusions(
+        feature_inventory, excluded_volume_inventory, excluded_volume_radius
+    )
     total = prod(len(choices) for choices in options) if options else 0
     count = min(total, budget)
     complete = count == total
@@ -191,6 +204,8 @@ def from_receptor_features(
         aromatic_distances=aromatic_distances,
         radius=radius,
     )
+    if excluded is not None:
+        parameters["excluded_volume_radius"] = excluded["report"]["radius"]
     rows, models = [], []
     for index, combination in enumerate(islice(product(*options), count)):
         choices, specs = zip(*combination, strict=True)
@@ -202,6 +217,8 @@ def from_receptor_features(
             name=f"{name or 'Receptor hypothesis'} {index}",
             skip_digestion=True,
         )
+        if excluded is not None:
+            _attach_receptor_exclusions(model, excluded)
         generation = detached(
             dict(
                 method=METHOD,
@@ -236,4 +253,7 @@ def from_receptor_features(
             ),
         )
     )
+    if excluded is not None:
+        report["excluded_volumes"] = detached(excluded["report"])
+        report["excluded_volumes"]["attached_model_count"] = len(models)
     return dict(method=METHOD, models=models, report=report, complete=complete)

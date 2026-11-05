@@ -21,6 +21,42 @@ from pharmacophoremt.interaction_site.shape import Sphere
 METHOD = "fixed_radius_heavy_atom_exclusions@1"
 
 
+def _receptor_exclusions(feature_inventory, excluded_volume_inventory, radius):
+    """Prepare the shared receptor recipe after matching declared cache contexts."""
+    if (excluded_volume_inventory is None) != (radius is None):
+        raise ArgumentError(
+            argument="excluded_volume_inventory",
+            reason="provide both cached heavy-atom inventory and explicit exclusion radius, or neither",
+        )
+    if excluded_volume_inventory is None:
+        return None
+    digest_feature_inventory(excluded_volume_inventory)
+    if (
+        excluded_volume_inventory["structure_index"]
+        != feature_inventory["structure_index"]
+        or excluded_volume_inventory["chemical_state"]
+        != feature_inventory["chemical_state"]
+        or set(excluded_volume_inventory["selected_atom_indices"])
+        != set(feature_inventory["selected_atom_indices"])
+    ):
+        raise ArgumentError(
+            argument="excluded_volume_inventory",
+            reason="inventories must declare the same atom selection, frame and chemical state",
+        )
+    return get_excluded_volume_sites(excluded_volume_inventory, radius=radius)
+
+
+def _attach_receptor_exclusions(model, excluded):
+    """Copy query sites and local/global correspondence into one independent model."""
+    start = model.n_interaction_sites
+    for site in excluded["interaction_sites"]:
+        model.add_interaction_site(deepcopy(site))
+    model.metadata["excluded_volumes"] = deepcopy(excluded["report"])
+    model.metadata["excluded_volumes"]["global_site_indices"] = list(
+        range(start, model.n_interaction_sites)
+    )
+
+
 @signal(tags=["modeling", "excluded_volume"])
 @arg_digest()
 @attributed("numpy", "pyunitwizard")

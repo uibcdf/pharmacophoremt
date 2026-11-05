@@ -172,3 +172,58 @@ changes. Physical radii, favored orientations, causal binding importance,
 biological validity and statistical uncertainty remain unqualified. Next inspect
 provider pocket/geometry contracts before declaring receptor hypothesis generation;
 MolSysMT #375/#323, TopoMT pockets, PHMT #66/#74/#82 and delivery gates remain.
+
+## Generated receptor exclusions
+
+Measured 2026-11-05, owner LMMV/dprada,
+[#88](https://github.com/uibcdf/pharmacophoremt/issues/88). This analytical
+extension checks optional exclusions in public `from_receptor_features`, using
+the unchanged #52 input/provenance/preparation above. The
+[prespecified contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_generation_exclusions.md)
+freezes settings and independent oracles before evaluation. No new biological
+ligands, activity labels, held-out cohort, preparation or detector run is added.
+
+MolSysMT selects PHE404, supplies the ring plane and heavy centers and translates
+the candidate .35 nm along its cached ring axis. Source ring atoms are 796–801;
+heavy atoms 791–801. Generate both faces at .35 nm, positional radius .02 nm,
+budget two and separate .01/.40 nm exclusion choices. Original-coordinate mean/
+SVD checks the ring geometry; independent `math.dist` enumeration defines every
+strict-inside sphere/atom pair. The tolerance is 1e-12 nm/unit for geometry.
+
+| Fixed setting | Result under nm/ps/radians and pm/fs/degrees |
+| --- | --- |
+| Prepared forward face, exclusion .01 nm | Positive fit one, zero clash pairs, matched |
+| Prepared forward face, exclusion .40 nm | Positive fit one, 42 clash pairs, vetoed |
+| Prepared opposite face | Positive fit zero under both radii, not matched |
+| Indexed water donor complement; one-O candidate at .25/.50/.75 nm, exclusion .50 nm | All positive fits one; inside vetoed with one pair, equality and outside matched |
+
+The last row is a separate analytical boundary control, not a receptor or solvent
+binding model. Molecular construction/recognition/movement use MolSysMT. These
+settings are not independent ligands/replicates; no predictive or statistical
+accuracy claim follows. Uniform radii are query choices, not physical atomic radii.
+Only the selected heavy region is constrained. Positive enumeration is unchanged;
+the generator performs no pruning or steric test. Compatible cache declarations
+do not authenticate source identity or complete coverage.
+
+From the qualified development environment:
+
+```bash
+python -m pytest tests/test_receptor_generation_exclusions.py --receptor=llm
+```
+
+The [recipe](../cookbook/structure_based_modeler.md#attach-cached-exclusions-to-every-generated-hypothesis)
+and [original receipt/full evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/receptor_generation_exclusions_20261105_summary.json)
+retain 217 passing selected controls (61 new), five executed recipe blocks,
+separate captured prepared replay, JSON/YAML recovery, actual input/operation
+credit and exact source/native/test/input/metadata identities. Full coordinates,
+chemical history, cached observations and application units are preserved.
+The initial 53-case pass and subsequent quota-interrupted broader attempt are
+retained separately; final qualification uses only the completed stable run.
+Linux/Python 3.14.7 uses inherited controlled dependencies/public ArgDigest 0.17.0
+extraction, not clean installed/public/platform or full-suite qualification.
+
+Runtime/memory are not benchmarked. No binding, physical accessibility, optimal
+radii, energy, favored face or causal importance is established. Rerun and append
+a new measurement after relevant cache/composition/geometry/veto/persistence/
+fixture/provider changes. Broader comparative methodology, MolSysMT #375/#323,
+optional TopoMT #101, #66/#82 and hosted/installed/public #9/#23 remain separate.

@@ -13,7 +13,10 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_structure_indices,
 )
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
-from pharmacophoremt.modeler.excluded_volumes import get_excluded_volume_sites
+from pharmacophoremt.modeler.excluded_volumes import (
+    _attach_receptor_exclusions,
+    _receptor_exclusions,
+)
 from pharmacophoremt.modeler.modeler import Modeler
 from pharmacophoremt.modeler.receptor_projections import from_receptor_projections
 
@@ -92,41 +95,18 @@ class StructureBasedModeler(Modeler):
                 argument="structure_indices",
                 reason="request the single cached inventory frame",
             )
-        exclusions = self.excluded_volume_inventory
-        if (exclusions is None) != (self.excluded_volume_radius is None):
-            raise ArgumentError(
-                argument="excluded_volume_inventory",
-                reason="provide both cached heavy-atom inventory and explicit exclusion radius, or neither",
-            )
-        if exclusions is not None:
-            digest_feature_inventory(exclusions)
-            if (
-                exclusions["structure_index"] != frame
-                or exclusions["chemical_state"]
-                != self.feature_inventory["chemical_state"]
-                or set(exclusions["selected_atom_indices"])
-                != set(self.feature_inventory["selected_atom_indices"])
-            ):
-                raise ArgumentError(
-                    argument="excluded_volume_inventory",
-                    reason="inventories must declare the same atom selection, frame and chemical state",
-                )
+        excluded = _receptor_exclusions(
+            self.feature_inventory,
+            self.excluded_volume_inventory,
+            self.excluded_volume_radius,
+        )
         model = from_receptor_projections(
             self.feature_inventory,
             projection_specs=self.projection_specs,
             **self.native_options,
         )
         model.molecular_system = self.system
-        if exclusions is not None:
-            excluded = get_excluded_volume_sites(
-                exclusions, radius=self.excluded_volume_radius
-            )
-            start = model.n_interaction_sites
-            for site in excluded["interaction_sites"]:
-                model.add_interaction_site(site)
-            model.metadata["excluded_volumes"] = excluded["report"]
-            model.metadata["excluded_volumes"]["global_site_indices"] = list(
-                range(start, model.n_interaction_sites)
-            )
+        if excluded is not None:
+            _attach_receptor_exclusions(model, excluded)
         self.result = model
         return model

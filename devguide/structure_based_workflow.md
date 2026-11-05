@@ -94,3 +94,15 @@ hypotheses and biological qualification remain future work.
 
 See [the executable recipe](../docs/content/cookbook/structure_based_modeler.md)
 and `tests/test_receptor_projections.py` for independent controls.
+
+## Shared generation exclusions — 2026-11-05
+
+Under [#88](https://github.com/uibcdf/pharmacophoremt/issues/88), the facade and
+`from_receptor_features` share private PHMT context/attachment helpers behind
+public `get_excluded_volume_sites`. The generator accepts paired cached heavy
+inventory/radius without changing this facade's scientific output or retained
+molecular reference. [The contract](receptor_generation_exclusions.md) records
+empty/invalid/budget handling, independent models and declared-context limits.
+The [guard](../tests/test_receptor_generation_exclusions.py) compares both routes
+and verifies the facade clears stale results on failure. Molecular inspection,
+geometry, preparation and transformation remain MolSysMT responsibilities.

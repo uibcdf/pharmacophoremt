@@ -171,3 +171,41 @@ explains native-cache versus saved-QuantityRecord semantics and the
 retains independent controls and the actual development environment. All
 molecular operations remain MolSysMT-owned; further acceptor profiles remain
 separately qualified provider/consumer work.
+
+## Attach cached exclusions to every generated hypothesis
+
+Obtain a separate heavy-atom inventory for the same prepared source, selection,
+frame and chemical-state selector. Pass it together with an explicit exclusion
+radius. The generator reuses the facade's exclusion construction and appends
+independent zero-weight constraints after each hypothesis's positive sites.
+
+```python
+ring_heavy = get_features(ring_source, features=['included volume'])
+with_exclusions = from_receptor_features(
+    ring_cache, receptor_profile='donor_aromatic_faces',
+    donor_distances=['.28 nm'], aromatic_distances=['.35 nm', '.45 nm'],
+    radius='20 pm', max_hypotheses=2,
+    excluded_volume_inventory=ring_heavy, excluded_volume_radius='.10 nm',
+)
+assert with_exclusions['report']['enumeration'] == generated['report']['enumeration']
+assert with_exclusions['report']['excluded_volumes']['attached_model_count'] == 2
+assert 'global_site_indices' not in with_exclusions['report']['excluded_volumes']
+for hypothesis in with_exclusions['models']:
+    assert hypothesis.n_interaction_sites == 7
+    assert hypothesis.metadata['excluded_volumes']['global_site_indices'] == [1,2,3,4,5,6]
+    assert [site.weight for site in hypothesis.interaction_sites] == [1,0,0,0,0,0,0]
+```
+
+This leaves positive enumeration and its incomplete budget unchanged. No pruning
+or steric test occurs during generation. During later pose evaluation, a selected
+candidate heavy-atom center strictly inside a sphere vetoes a model while its
+positive fit value stays unchanged; equality is permitted. The uniform radius is
+a query assumption, without physical-radius or whole-pocket accessibility claims.
+
+Cache checks compare declared atom sets, frame and state; they do not authenticate
+a common molecular source or complete heavy-atom coverage. Both optional inputs
+must be supplied together, and are validated even with zero budget or no admitted
+positive features. No exclusion-only positive model is returned. The
+[contract and original evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_generation_exclusions.md)
+retain strict-boundary controls and the prepared PHE404 example under two unit
+policies. Molecular loading, selection, geometry and movement remain in MolSysMT.

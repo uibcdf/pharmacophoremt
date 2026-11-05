@@ -85,3 +85,17 @@ admission/receiving; environmental H refinement remains #323. Broader #6/#82,
 #66, #74/#215 and installed/public/platform/hosted gates remain separate. ArgDigest
 #47/#48 are fixed in source; public 0.17.0 and their consumer delivery gate remain
 unchanged. This work does not raise a provider floor or adopt a source workaround.
+
+## Optional cached exclusions — 2026-11-05
+
+[#88](https://github.com/uibcdf/pharmacophoremt/issues/88) extends the signature
+with paired `excluded_volume_inventory` and `excluded_volume_radius`, using the
+existing separate heavy-atom input domain. The [contract](receptor_generation_exclusions.md)
+defines declared context matching, mandatory validation even at zero budget,
+independent per-model attachment, actual global indices and local root recipes.
+The weight-one assumption above concerns positive sites; appended exclusions have
+weight zero. The original positive method ID and enumeration remain unchanged.
+No molecular operation, physical-radius assignment or generation pruning occurs.
+[Original evidence](evidence/receptor_generation_exclusions_20261105_summary.json)
+records 217 passing selected controls (61 new), boundary/prepared independent
+oracles and the final source identities; #87's original evidence remains intact.
