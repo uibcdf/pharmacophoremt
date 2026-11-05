@@ -1,5 +1,43 @@
 # Development Checkpoint
 
+## Public cached receptor generation qualified — 2026-11-05
+
+[#87](https://github.com/uibcdf/pharmacophoremt/issues/87) delivers
+`modeler.from_receptor_features` in development source. The [contract](public_receptor_generation.md)
+requires `receptor_profile='donor_aromatic_faces'`, explicit-unit donor/aromatic
+distance choices, radius and finite budget. Every admitted donor/ring occurs once
+per joint hypothesis; faces and caller choices remain separate. The lazy product
+records exact total/remaining/completion and omitted families. Invalid admitted
+geometry fails before any model, including with zero budget. Chemical features
+and excluded-volume inventories retain separate domains.
+
+**192 selected controls pass in 218.87 s, including 54 new**. Both unchanged
+prepared-input unit-policy replays match independent frozen oracles and recover
+all eight models. After a docstring-only clarification, 52 fast controls pass.
+Four cookbook blocks and a separately captured three-hypothesis prepared replay
+execute, preserving original coordinates, chemical history, observations and
+units. [Original evidence](evidence/public_receptor_generation_20261105_summary.json)
+retains initial skip-declaration failures, the corrected unit-spelling guard,
+exact identities and actual input/operation credit. Historical #86 bytes remain.
+
+ArgDigest owns signature/value admission; SMonitor supplies PHMT-E102,
+PyUnitWizard carries units and optional Ackredit retains actual model/report
+credit. The projection constructor now declares the standard boolean skip
+control; its scientific checks and facade defaults remain. No optional backend,
+provider source/pin, dependency floor, published package or preparation changes.
+The package-resource inventory now requires both new runtime modules.
+
+Next compose optional receptor exclusions through the existing cached-volume
+contract, with explicit radii/frame/state and independent hypotheses. Further
+acceptor profiles remain MolSysMT #375 receiving; TopoMT #101 is optional and
+#323 environmental H refinement stays separate. ArgDigest #47/#48 are source-fixed
+at `7fdf726d984553c9d89efc08abc2016f46ef41aa`; public 0.17.0 is unchanged and #82
+awaits published receiving under MolSysSuite #164. Broader #6/audit 12, #66,
+#74/#215 and full-suite/installed/public/hosted gates remain independent.
+Addon/release deferred, public 0.4.0 unchanged. Owned capsule
+`/tmp/phmt-public-receptor-20261105-p20atfmx`, review 2026-11-19 or scientific/source
+change; no continuing local process required. Earlier next steps are historical.
+
 ## Cached receptor hypothesis-generation pilot qualified — 2026-11-04
 
 [#86](https://github.com/uibcdf/pharmacophoremt/issues/86) qualifies the first

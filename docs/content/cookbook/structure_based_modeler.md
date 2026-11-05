@@ -5,6 +5,10 @@ features. The `StructureBasedModeler` class and `model(method='structure-based')
 compose this tool with optional cached exclusions. Prepare/select the receptor
 through MolSysMT first. Actual pocket detection belongs to TopoMT.
 
+Development-source addition: `from_receptor_features()` enumerates separate
+cached donor/aromatic alternatives under an explicit profile and finite budget;
+see the final section below. It is not yet a new published package version.
+
 This small propane input is an analytical recognition/placement control, not a
 protein pocket or a biological binding model. All molecular construction and
 movement below use the provider. The direction and distance are deliberately
@@ -111,3 +115,59 @@ arithmetic in `get_features()` remains tracked under PharmacophoreMT #41.
 Environmental hydrogen refinement is separately MolSysMT #323. This method
 declares query geometry explicitly and does not claim automatic chemically
 informed pocket modeling, legacy equivalence, affinity or activity validation.
+
+## Enumerate cached donor/aromatic alternatives
+
+The development-source public tool `from_receptor_features` generalizes the
+[qualified receptor pilot](../validation/receptor_hypothesis_pilot.md). Choose
+`receptor_profile='donor_aromatic_faces'`, both distance lists, a query radius
+and a finite `max_hypotheses`. Each admitted source record contributes once to
+all joint models. Aromatic +/− faces are separate alternatives; every donor-H
+pair remains a separate occurrence. Unsupported chemical families are recorded
+as omitted; excluded volumes require a separate inventory.
+
+This second input is a declared planar benzene control. MolSysMT constructs,
+recognizes and characterizes it. It is an analytical feature example, without a
+protein pocket, steric-accessibility claim or biological binding interpretation.
+
+```python
+from pharmacophoremt.modeler import from_receptor_features
+
+ring_source = msm.convert(
+    msm.convert('smiles:c1ccccc1', to_form='rdkit.Mol'),
+    to_form='molsysmt.MolSys',
+)
+ring_source.structures.append(coordinates=puw.quantity([[
+    [.14, 0, 0], [.07, .1212435565298214, 0],
+    [-.07, .1212435565298214, 0], [-.14, 0, 0],
+    [-.07, -.1212435565298214, 0], [.07, -.1212435565298214, 0],
+]], 'nm'))
+ring_cache = get_features(ring_source, features=['aromatic ring'])
+generated = from_receptor_features(
+    ring_cache, receptor_profile='donor_aromatic_faces',
+    donor_distances=['.28 nm'], aromatic_distances=['.35 nm', '.45 nm'],
+    radius='20 pm', max_hypotheses=2,
+)
+assert len(generated['models']) == 2
+assert generated['report']['enumeration']['total_possible'] == 4
+assert generated['report']['enumeration']['remaining'] == 2
+assert generated['complete'] is False
+assert all(m.n_interaction_sites == 1 for m in generated['models'])
+```
+
+The prefix follows feature/distance/face order; it is not energetic ranking.
+Zero budget is incomplete when eligible alternatives exist. A valid chemical
+cache without admitted records returns no models and status
+`no_supported_features`; a malformed admitted direction raises even with zero
+budget. Donor-complement distances and aromatic distances are pharmacophoric
+choices. Radius is a matching tolerance. Essentiality and weight one do not
+measure binding importance.
+
+Model metadata retain generation/underlying-projection methods, source maps,
+structure/state, unit-bearing choices, omissions and enumeration scope. The
+[public contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_receptor_generation.md)
+explains native-cache versus saved-QuantityRecord semantics and the
+[source receiving receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/public_receptor_generation_20261105_summary.json)
+retains independent controls and the actual development environment. All
+molecular operations remain MolSysMT-owned; further acceptor profiles remain
+separately qualified provider/consumer work.

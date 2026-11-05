@@ -1,5 +1,23 @@
 # Strategic Roadmap
 
+## Cached receptor generation is public in source — 2026-11-05
+
+[#87](https://github.com/uibcdf/pharmacophoremt/issues/87) promotes #86 into
+`modeler.from_receptor_features`: explicit profile/unit parameters, multiple
+indexed donors/rings, lazy finite enumeration and preserved omissions.
+[Contract](public_receptor_generation.md), [recipe](../docs/content/cookbook/structure_based_modeler.md#enumerate-cached-donoraromatic-alternatives)
+and [original evidence](evidence/public_receptor_generation_20261105_summary.json)
+retain **192 passing selected controls (54 new)**, two prepared-input policies,
+four executed recipe blocks and a separately captured replay. No new package,
+biological, exhaustive docking or pocket qualification follows.
+
+Next compose optional exclusions from cached heavy-atom inventories, explicit
+radii and matching frame/state, preserving separate hypotheses. Further acceptor
+directions remain MolSysMT #375 and original-provider pockets optional TopoMT #101.
+#323, audit 12, #66, #74/#215, wider #6 and delivery gates stay separate. ArgDigest
+#47/#48 are source-fixed; #82 awaits public correction receiving. Addon/release
+deferred; public 0.4.0 unchanged.
+
 ## First cached receptor hypothesis-generation slice delivered — 2026-11-04
 
 [#86](https://github.com/uibcdf/pharmacophoremt/issues/86) qualifies eight separate

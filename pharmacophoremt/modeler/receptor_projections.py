@@ -16,6 +16,9 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_radius,
     digest_structure_index,
 )
+from pharmacophoremt._private.arg_digestion.argument.skip_digestion import (
+    digest_skip_digestion,
+)
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt._version import __version__
@@ -101,7 +104,12 @@ def _specifications(inventory, specs):
 @arg_digest()
 @attributed("numpy", "pyunitwizard")
 def from_receptor_projections(
-    feature_inventory, *, projection_specs, radius="0.15 nm", name=None
+    feature_inventory,
+    *,
+    projection_specs,
+    radius="0.15 nm",
+    name=None,
+    skip_digestion=False,
 ):
     """Build one complementary ligand hypothesis from declared receptor features.
 
@@ -134,10 +142,13 @@ def from_receptor_projections(
     detached source/specification provenance. An explicit empty projection list
     returns an empty hypothesis, which is not a valid positive PoseEvaluator query.
     Native quantity inventories are required; detached JSON is not decoded here.
+    ``skip_digestion`` is a boolean internal generic-digestion control. Native
+    inventory, projection and physical-quantity checks remain mandatory with True.
     Cached attribution is preserved without crediting new molecular recognition.
     This method does not assert equivalence to retired structure-based heuristics
     or biological validity. Radius is a matching tolerance, independent of distance.
     """
+    digest_skip_digestion(skip_digestion)
     if feature_inventory is None:
         raise ArgumentError(
             argument="feature_inventory", reason="provide a cached receptor inventory"

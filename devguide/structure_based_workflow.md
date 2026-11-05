@@ -1,5 +1,12 @@
 # Explicit receptor projection workflow
 
+Development source also exposes [bounded cached generation](public_receptor_generation.md)
+through `modeler.from_receptor_features`. It composes the explicitly admitted
+donor/aromatic projection policy from native caches and returns separate models
+with enumeration evidence. This page's supplied-projection constructor and
+facades retain their scientific behavior; the standard boolean skip control
+does not bypass inventory/projection/quantity checks.
+
 Owner: [PharmacophoreMT #44](https://github.com/uibcdf/pharmacophoremt/issues/44),
 under the molecular-ownership migration in #41. Development contract, 2026-10-10.
 

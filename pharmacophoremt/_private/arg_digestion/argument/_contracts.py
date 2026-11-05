@@ -74,6 +74,43 @@ def digest_projection_specs(obj):
     return obj
 
 
+def digest_receptor_profile(obj):
+    if not isinstance(obj, str) or obj != "donor_aromatic_faces":
+        raise ArgumentError(
+            argument="receptor_profile", reason="explicitly choose donor_aromatic_faces"
+        )
+    return obj
+
+
+def _projection_distances(obj, argument):
+    if not isinstance(obj, (list, tuple)) or not obj:
+        raise ArgumentError(
+            argument=argument,
+            reason="provide a nonempty list of scalar length quantities",
+        )
+    return [_length(value, argument) for value in obj]
+
+
+def digest_donor_distances(obj):
+    return _projection_distances(obj, "donor_distances")
+
+
+def digest_aromatic_distances(obj):
+    return _projection_distances(obj, "aromatic_distances")
+
+
+def digest_max_hypotheses(obj):
+    if (
+        isinstance(obj, (bool, np.bool_))
+        or not isinstance(obj, (int, np.integer))
+        or obj < 0
+    ):
+        raise ArgumentError(
+            argument="max_hypotheses", reason="expected a finite nonnegative integer"
+        )
+    return int(obj)
+
+
 def digest_sigma(obj):
     return _length(obj, "sigma")
 

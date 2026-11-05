@@ -26,10 +26,14 @@ The first [cached receptor hypothesis-generation pilot](receptor_hypothesis_pilo
 under #86 now qualifies eight donor/ring alternatives and explicit enumeration
 budgets, using MolSysMT geometry without a new public API. Further direction
 profiles and optional pockets are requested in MolSysMT #375 and TopoMT #101.
+Its [public cached builder](public_receptor_generation.md), #87, now supports
+multiple donor/ring occurrences and explicit bounded alternatives in development
+source, with 192 passing selected controls (54 new). Molecular geometry remains
+MolSysMT-owned; public delivery and broader scientific qualification are separate.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: receptor hypothesis-generation pilot #86 qualified (110 selected cases, 34 new; eight separate donor/ring alternatives), following #85/#83/#84. Next design the explicit public cached-generation contract; provider handoffs are MolSysMT #375 and optional TopoMT #101. The wider scientific audit remains partial. #82 waits on ArgDigest #47/#48; #6 stays partial. Molecular work remains MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: public source `from_receptor_features` #87 qualified (192 selected cases, 54 new), following #86/#85/#83/#84. Next compose optional cached receptor exclusions; further directions remain MolSysMT #375 and optional pockets TopoMT #101. ArgDigest #47/#48 are source-fixed; #82 awaits published receiving. Wider #6/scientific audit, SDF #74/#215 and installed/public gates stay separate. Addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 

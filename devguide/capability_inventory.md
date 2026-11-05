@@ -35,6 +35,7 @@ adoption also waits on ArgDigest #48; legacy compatibility passes do not fix it.
 | `method="interaction-collection"`; `modeler.from_interaction_collection` | Available for named compatible analyses on one prepared source/frame | One composed query; source maps, duplicate policy and observation coverage matter | [Workflow](interaction_composition_workflow.md), [tests](../tests/test_interaction_composition.py) |
 | `method="complex-based"` (default); `ComplexBasedModeler` | Available as explicit cached-collection facade; requires ligand selection and collection | One query for one frame; list for multiple requested frames. No automatic complex preparation/detection | [Workflow](complex_based_workflow.md), [tests](../tests/test_complex_based_facade.py) |
 | `method="structure-based"`; `StructureBasedModeler`, `from_receptor_projections` | Available for cached receptor inventory and caller-declared projections | One hypothesis in the cached frame, optional explicit exclusions. No pocket discovery or inferred optimal ligand pose | [Workflow](structure_based_workflow.md), [tests](../tests/test_receptor_projections.py) |
+| `modeler.from_receptor_features` | Available in development source for native chemical caches, explicit donor/aromatic profile, distances/radius and budget | Separate joint hypotheses with exact completion/omission evidence; no molecular operation, ranking or biological validity | [Contract](public_receptor_generation.md), [tests](../tests/test_public_receptor_generation.py) |
 | `method="ligand-based"`; `LigandBasedModeler` | Available with explicit `consensus_method="rigid"` or `"aligned_cliques"` and prepared ligand records | List of models, possibly empty. Legacy conformer-generation options accept only inert defaults; no implicit chemical preparation | [Tests](../tests/test_ligand_based_facade.py), [workflow](prepared_consensus_workflow.md) |
 | `modeler.from_aligned_ligands` | Available as a direct tool, outside the generic facade's six method names | Reference-based consensus in a declared shared frame; reference dependence remains | [Workflow](aligned_consensus_workflow.md), [tests](../tests/test_aligned_consensus.py) |
 | `modeler.from_aligned_ligand_cliques`, `from_rigid_ligands` | Available as direct tools with explicit support/search budgets | Joint-support hypotheses; rigid fits delegated to MolSysMT, no exhaustive conformational optimum | [Aligned workflow](aligned_clique_consensus_workflow.md), [rigid workflow](rigid_consensus_workflow.md) |
@@ -106,8 +107,10 @@ under #85 now passes 288 selected controls (43 new) with the original source and
 complete 64-attempt matrix. The [first cached generation pilot](receptor_hypothesis_pilot_protocol.md)
 under #86 now qualifies eight donor/ring alternatives, budget states, independent
 oracles and native recovery with 110 selected passing controls (34 new). It is
-unshipped case support, not another public modeling route. Next design its
-explicit public contract; further directions remain MolSysMT #375 and optional
+unshipped case support. Its [public cached tool](public_receptor_generation.md),
+#87, now passes 192 selected source controls (54 new), with explicit parameters
+and multiple source occurrences. Next compose optional cached exclusions;
+further directions remain MolSysMT #375 and optional
 pocket receiving TopoMT #101. Broader #6 declarations, molecular SDF
 ownership #74/MolSysMT #215 and experimental #66 retain separate gates.
 
