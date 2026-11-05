@@ -101,7 +101,10 @@ qualifies part of audit 8–9; #80 reviews support/redundancy. The first
 [receptor sensitivity matrix](receptor_sensitivity_protocol.md) under #83 passes
 245 selected cases (49 new), and #84 fixes the measured unit-policy radius
 boundary. Audit item 12 stays partial for real development/preparation/search
-uncertainty; next prespecify the cached prepared-receptor extension. Broader #6 declarations, molecular SDF
+uncertainty. The [prepared-receptor extension](prepared_receptor_sensitivity_protocol.md)
+under #85 now passes 288 selected controls (43 new) with the original source and
+complete 64-attempt matrix. Next inventory actual provider pocket/geometry
+contracts before declaring receptor hypothesis generation. Broader #6 declarations, molecular SDF
 ownership #74/MolSysMT #215 and experimental #66 retain separate gates.
 
 ## Persistence review — 2026-11-04

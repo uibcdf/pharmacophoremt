@@ -349,3 +349,25 @@ preparation variants remain MolSysMT-owned (#375/#323), actual pockets TopoMT-ow
 No activity labels, held-out data, empirical importance, optimal biological
 parameters, performance or installed/public/full-suite claim. #66, #74/MolSysMT
 #215, #82/ArgDigest #47/#48 and broader #6 retain their independent gates.
+
+## Prepared ERalpha sensitivity slice — 2026-11-04
+
+[#85](https://github.com/uibcdf/pharmacophoremt/issues/85) applies the
+[prespecified receptor protocol](prepared_receptor_sensitivity_protocol.md) to
+#52's unchanged real prepared fragment: 64 attempts per matrix, including two
+actual failed/unscored frames. 288 selected controls pass (43 new), with all three
+recorded source/native/test/input identity checks stable; final pytest/CLI add
+NumPy/SciPy/RDKit native identity to the inherited provider footprint. Original
+41-pass/two-failure guard and exact envelope correction are retained; independent
+oracles and every expected setting stay fixed. Runtime/provider/prefix/dependency,
+source coordinates/history/contacts, curation inputs and old evidence stay intact.
+
+The [receipt/full evidence](evidence/prepared_receptor_sensitivity_20261104_summary.json)
+and [case](../docs/content/validation/prepared_receptor_workflow.md#prepared-receptor-sensitivity-extension)
+distinguish geometric controls from physical/biological parameter justification.
+Audit item 12 remains partial for real cohorts and preparation/search uncertainty.
+Next inventory actual TopoMT pocket/MolSysMT geometry contracts before declaring
+receptor hypothesis generation; missing reusable tools belong in provider issues.
+#375/#323, #66, #74/MolSysMT #215, #82/ArgDigest #47/#48 and broader #6 retain their
+independent gates. No full-suite, installed/public/all-platform, hosted,
+predictive or performance promotion follows.

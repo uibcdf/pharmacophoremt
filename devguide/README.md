@@ -20,10 +20,12 @@ coverage, classified findings, method-level scientific limits and actionable che
 The first [receptor projection sensitivity protocol](receptor_sensitivity_protocol.md)
 is now qualified under #83; #84 repairs a measured unit-policy radius-boundary
 defect. Audit item 12 remains partial beyond this analytical slice.
+The [prepared ERalpha sensitivity extension](prepared_receptor_sensitivity_protocol.md)
+under #85 now applies that methodology to the original cached receptor geometry.
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: first analytical receptor sensitivity #83 qualified (245 selected cases, 49 new); #84 unit-boundary defect repaired. Next prespecify the prepared-receptor development extension; the complete sensitivity audit remains partial. #82 still waits on ArgDigest #47/#48 and #6 stays partial. Molecular operations remain MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-04: prepared receptor sensitivity #85 qualified (288 selected cases, 43 new; full 64-attempt matrix), following #83/#84. Next inventory provider pocket/geometry contracts before declaring receptor hypothesis generation. The sensitivity audit remains partial. #82 waits on ArgDigest #47/#48; #6 stays partial. Molecular work remains MolSysMT-owned; #74 SDF migration waits on #215. Addon deferred, public release still 0.4.0.
 
 ## Classical Workflow Specification
 

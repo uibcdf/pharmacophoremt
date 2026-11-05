@@ -1,5 +1,41 @@
 # Development Checkpoint
 
+## Prepared ERalpha receptor sensitivity qualified — 2026-11-04
+
+[#85](https://github.com/uibcdf/pharmacophoremt/issues/85) extends #83 on the
+unchanged #52 prepared fragment: [prespecified protocol](prepared_receptor_sensitivity_protocol.md),
+[original evidence](evidence/prepared_receptor_sensitivity_20261104_summary.json)
+and [case](../docs/content/validation/prepared_receptor_workflow.md#prepared-receptor-sensitivity-extension).
+Each final matrix retains 62 valid placed settings and two actual failed/unscored
+frames under nm and pm. PHE404 copies use public MolSysMT rotation/translation;
+they are methodological controls, not new ligands or binding predictions.
+Native decoding, selection, recognition and geometry remain MolSysMT-owned.
+
+The fixed placement/radius bands, separate faces, strict exclusion vetoes and
+unoriented-axis angle transitions agree with independent original-coordinate
+oracles. Exclusion radii .01/.20/.40 nm yield 0/5/47 clash pairs on 0/3/11 atoms
+with positive fit one. The rotated axis angle is about 36.07 degrees. Explicit
+exclusion removal records its source and reason; it does not infer binding
+importance. Source coordinates, full chemical history, cached contacts, native
+inventories and application units stay unchanged; actual input credit is saved.
+
+**288 selected cases pass in 442.24 s, including 43 new guards**. The documented
+standalone recorder also executes all 64 attempts; all three recorded identities
+are stable. Final pytest/CLI include 12 source/native provider identities. Two
+initial new assertions assumed a tagged internal history snapshot; only that
+guard expectation changes, preserving every field and the declared oracle/grid.
+No runtime, provider, prefix, dependency, workflow or old evidence changes.
+
+**Next:** inspect actual TopoMT pocket/MolSysMT geometry contracts and declare a
+receptor hypothesis-generation pilot before implementing orchestration. Missing
+reusable provider operations go to their issue boards. Automatic generation,
+real cohorts, preparation/search uncertainty and whole audit item 12 remain open.
+#375/#323, #66, #74/MolSysMT #215, #82/ArgDigest #47/#48 and broader #6 remain
+independent. Installed/public/hosted/full-suite qualification stays separate.
+Addon/new release deferred; public 0.4.0 unchanged. Owned capsule review:
+2026-11-18 or scientific/source change; no continuing local process. Earlier
+dated next-step statements below retain their historical scope.
+
 ## First receptor sensitivity slice qualified; unit boundary repaired — 2026-11-04
 
 [#83](https://github.com/uibcdf/pharmacophoremt/issues/83) completes the first

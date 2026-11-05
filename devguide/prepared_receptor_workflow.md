@@ -134,3 +134,15 @@ provider items/three uses. All 31 earlier JSON gzip archives and the original
 prepared binary stay byte-identical. The original summary links full raw output
 and explicit initial failure history; the completion receipt retains final
 report/archive checks, source/native rechecks and strict isolated rendering.
+
+## Prespecified sensitivity continuation — 2026-11-04
+
+[#85](https://github.com/uibcdf/pharmacophoremt/issues/85) qualifies the
+[prepared sensitivity protocol](prepared_receptor_sensitivity_protocol.md) on this
+unchanged archived source. All 64 declared attempts, including two failed/unscored
+frames, remain in the [original receipt/full evidence](evidence/prepared_receptor_sensitivity_20261104_summary.json).
+288 selected controls pass (43 new); all three recorded identities and source/
+chemical-history/cached-observation custody remain stable. The only initial
+failures are two new curation-envelope assertions, corrected without changing
+oracles, settings or runtime. All original text/evidence above stays historical.
+No new preparation, molecular geometry kernel, pocket or biological validation.

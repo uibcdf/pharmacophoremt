@@ -1,5 +1,25 @@
 # Strategic Roadmap
 
+## Prepared receptor sensitivity extension delivered — 2026-11-04
+
+[#85](https://github.com/uibcdf/pharmacophoremt/issues/85) qualifies the fixed
+PHE404 placement/exclusion/orientation/curation matrix on the original prepared
+ERalpha fragment. [Protocol](prepared_receptor_sensitivity_protocol.md),
+[original evidence](evidence/prepared_receptor_sensitivity_20261104_summary.json)
+and [case](../docs/content/validation/prepared_receptor_workflow.md#prepared-receptor-sensitivity-extension)
+retain 64 attempts per matrix, including two failed/unscored frames. **288
+selected controls pass (43 new)**; source/cached data and all three recorded
+identities remain stable. No runtime/provider/dependency or preparation change.
+
+Next inventory TopoMT pocket and MolSysMT geometry APIs, then prespecify a
+receptor hypothesis-generation pilot using supported capabilities. Missing
+reusable tools belong in provider issues. Explicit projections/control outcomes
+do not deliver automatic pockets or biological validity; audit item 12 remains
+partial for real cohorts and preparation/search uncertainty. #375/#323, #66,
+#74/MolSysMT #215, #82/ArgDigest #47/#48 and broader #6 retain their gates.
+Addon/new release deferred, public 0.4.0 unchanged; delivery/hosted qualification
+remains separate. Earlier entries retain their original dated scope.
+
 ## Receptor-based analytical sensitivity now qualified — 2026-11-04
 
 [#83](https://github.com/uibcdf/pharmacophoremt/issues/83) delivers the first

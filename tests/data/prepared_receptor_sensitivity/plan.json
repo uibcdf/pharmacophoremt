@@ -1,0 +1,125 @@
+{
+  "schema": "pharmacophoremt.prepared-receptor-sensitivity-plan@1",
+  "issue": "uibcdf/pharmacophoremt#85",
+  "date": "2026-11-04",
+  "policies": [
+    [
+      "nm",
+      "ps",
+      "radians"
+    ],
+    [
+      "pm",
+      "fs",
+      "degrees"
+    ]
+  ],
+  "input_summary": "devguide/evidence/eralpha_interface_py314_summary.json",
+  "native_sha256": "a42ef9868578ba16c62d52a1267d24160b973dca0d50dbc804ca46b6b2fe316a",
+  "selection": "group_id == \"404\"",
+  "ring_atoms": [
+    796,
+    797,
+    798,
+    799,
+    800,
+    801
+  ],
+  "heavy_atoms": [
+    791,
+    792,
+    793,
+    794,
+    795,
+    796,
+    797,
+    798,
+    799,
+    800,
+    801
+  ],
+  "frame": 0,
+  "chemical_state": "reference",
+  "translation_nm": [
+    0,
+    0,
+    0.35
+  ],
+  "rotation": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      1,
+      0
+    ]
+  ],
+  "rotation_center": "cached native ring center",
+  "face_signs": [
+    1,
+    -1
+  ],
+  "distance_nm": [
+    0.25,
+    0.35,
+    0.45
+  ],
+  "radius_nm": [
+    0.02,
+    0.08,
+    0.12
+  ],
+  "expected_positive_face_matches_by_radius": [
+    [
+      false,
+      true,
+      false
+    ],
+    [
+      false,
+      true,
+      false
+    ],
+    [
+      true,
+      true,
+      true
+    ]
+  ],
+  "exclusion_radius_nm": [
+    0.01,
+    0.2,
+    0.4
+  ],
+  "axis_signs": [
+    1,
+    -1
+  ],
+  "direction_tolerance_degrees": [
+    1,
+    30,
+    60,
+    90
+  ],
+  "base_distance_nm": 0.35,
+  "base_radius_nm": 0.02,
+  "base_direction_tolerance_degrees": 1,
+  "expected_original_status": "not_matched",
+  "expected_exclusion_removal_status": "matched",
+  "clash_oracle": "Enumerate original heavy centers plus declared translation against original excluded centers, math.dist < radius; retain all source atom and global site indices.",
+  "angular_oracle": "Test-only original-coordinate SVD plane, literal proper rotation, folded absolute-dot axis angle; not provider result-derived.",
+  "valid_cells_per_policy": 31,
+  "failed_cells_per_policy": 1,
+  "invalid_frame": 1,
+  "geometry_tolerance_nm": 1e-12,
+  "search_budget": 0,
+  "holdout_access": false
+}

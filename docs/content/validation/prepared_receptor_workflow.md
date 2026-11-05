@@ -117,3 +117,58 @@ new identities, preserve old outputs and keep current provider hashes separate
 from historical preparation provenance. MolSysMT #375/#323/#350/#367 and required
 hosted/installed/public delivery #23 remain separate gates. No sibling source or
 runtime molecular implementation is added here.
+
+## Prepared receptor sensitivity extension
+
+Measured 2026-11-04, owner [#85](https://github.com/uibcdf/pharmacophoremt/issues/85),
+LMMV/dprada. This is a new analytical measurement on the unchanged #52 source;
+all original preparation/observations/results above retain their historical scope.
+The [prespecified protocol](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/prepared_receptor_sensitivity_protocol.md)
+and [complete declaration](https://github.com/uibcdf/pharmacophoremt/blob/main/tests/data/prepared_receptor_sensitivity/plan.json)
+predate evaluation. MolSysMT loads the same H5MSM and supplies recognition,
+centers, planes, selections and the two public molecular transformations.
+
+The translated and properly rotated/translated PHE404 copies are methodological
+candidates, not new ligands, conformers or binding poses. Only the selected PHE404
+region supplies exclusions; this is not whole-pocket steric validation. Each
+unit policy has 31 valid fixed-pose settings plus one real invalid frame:
+**64 attempts** under nm/ps/radians and pm/fs/degrees. Settings are not independent
+molecules or biological replicates; no search, new preparation, activity labels,
+reserved cohort or timing/memory benchmark is used.
+
+| Prespecified choice | Result under both unit policies |
+| --- | --- |
+| Separate faces and placement/radius | Positive-face matching counts are 1/1/3 across .02/.08/.12 nm radii; opposite-face placements remain negative |
+| Exclusion radii .01/.20/.40 nm | 0/5/47 sphere-atom clash pairs involving 0/3/11 candidate atoms; positive coverage stays one while the veto changes status |
+| Rotated aromatic candidate | Independent original-coordinate plane oracle gives about 36.07 degrees. Both target-axis signs refuse at 1/30 degrees and accept at 60/90 |
+| Explicit exclusion removal | Source-preserving curation records the reason/map and removes the veto without changing positive coverage |
+| Invalid frame | Native source failure remains unscored, distinct from a valid negative |
+
+From the qualified development source route recorded in the receipt:
+
+```bash
+python -m phmt_test_support.prepared_receptor_sensitivity --output /tmp/prepared-receptor-sensitivity.json
+python -m pytest tests/test_prepared_receptor_sensitivity.py --receptor=llm
+```
+
+The recorder is unshipped case support, not an installed public command. The
+[receipt/full original evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/prepared_receptor_sensitivity_20261104_summary.json)
+retains 288 passing selected cases (43 new) and an independent complete CLI run,
+original 41-pass/two-failure guard, exact correction, all models/results/actual
+attribution and source/native/test/input identities. Those two failures were a
+new guard's legacy-snapshot/export-envelope assumption, corrected without changing
+model fields, runtime, scientific oracles or parameter tables. Final pytest/CLI
+record 12 actual providers, including NumPy/SciPy/RDKit native files; initial
+pytest retains its nine-provider footprint. Linux/Python 3.14.7 source evidence
+uses inherited controlled dependencies and public ArgDigest 0.17.0 extraction;
+it is not clean installed/public/all-platform or full-suite qualification.
+
+The original input, full chemical history, cached observations, inventories,
+curation source and application policy remain intact. Captured references credit
+the actually loaded derived artifact and operations reached, with no new
+preparation/detection claim. Retain the original binary and old evidence; rerun
+and append a new measurement after geometry/curation/evaluation/fixture/provider
+changes. Physical radii, favored orientations, causal binding importance,
+biological validity and statistical uncertainty remain unqualified. Next inspect
+provider pocket/geometry contracts before declaring receptor hypothesis generation;
+MolSysMT #375/#323, TopoMT pockets, PHMT #66/#74/#82 and delivery gates remain.
