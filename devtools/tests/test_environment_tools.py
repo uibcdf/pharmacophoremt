@@ -99,6 +99,30 @@ class TestEnvironmentTools(unittest.TestCase):
             )
             self.assertIn("numpy<3,>=2.1", document["dependencies"])
 
+    def test_public_receiving_is_source_free_and_outside_ordinary_generation(self):
+        path = "devtools/conda-envs/public_test_env_py314.yaml"
+        selected = self.tools.selected_environment(self.root, path, "3.14")
+        self.assertEqual(selected["channels"], ["uibcdf", "conda-forge"])
+        self.assertFalse(
+            any(isinstance(value, dict) for value in selected["dependencies"])
+        )
+        self.assertFalse(
+            any("git+" in str(value) for value in selected["dependencies"])
+        )
+        import tomllib
+
+        inventory = tomllib.loads(
+            (self.root / "devtools/dependency_routes.toml").read_text()
+        )
+        context = next(
+            value
+            for value in inventory["contexts"]
+            if value["name"] == "public-test-3.14"
+        )
+        self.assertEqual(context["sources"], [])
+        self.assertEqual(context["environment"], path)
+        self.assertNotIn(path, self.tools.environment_documents(self.root))
+
     def test_drift_and_late_invalid_tooling_fail_without_writing(self):
         path = self.root / "devtools/conda-envs/production_env.yaml"
         path.write_text(path.read_text().replace("- depdigest\n", ""))

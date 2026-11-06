@@ -191,6 +191,13 @@ sources = []
 reason = "Source-free public dependency declaration; actual installed invocation still requires separate evidence"
 
 [[contexts]]
+name = "public-test-3.14"
+environment = "devtools/conda-envs/public_test_env_py314.yaml"
+python_minor = "3.14"
+sources = []
+reason = "Independent public-provider source receiving under #95; no Git providers, no claim for a PHMT installed release artifact"
+
+[[contexts]]
 name = "development-3.14"
 environment = "devtools/conda-envs/development_env.yaml"
 python_minor = "3.14"
@@ -244,6 +251,14 @@ purpose = "production"
 channel_priority = "strict"
 narrowing_reason = "Retain routine minor and reviewed native scientific environment constraints"
 reason = "Current consuming declaration under PharmacophoreMT #10"
+
+[[environments]]
+path = "devtools/conda-envs/public_test_env_py314.yaml"
+kind = "runtime"
+purpose = "test"
+channel_priority = "strict"
+narrowing_reason = "Bounded public-provider receiving on routine Python 3.14; separate from the supported matrix"
+reason = "All direct runtime requirements and existing public installed-test inputs, with no source replacement or staged channel"
 
 [[environments]]
 path = "devtools/conda-envs/setup_env.yaml"
