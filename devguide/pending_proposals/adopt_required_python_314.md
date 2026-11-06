@@ -14,6 +14,11 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Current source receiving — 2026-11-06
+
+[Receiving record](../source_suite_receiving_20261106.md) and [original receipt](../evidence/source_suite_receiving_20261106_summary.json) preserve #102's exact two-test correction, 111 passing focused controls, old-head full hosted 2,071 pass/two failures and incomplete local attempts (task hook; later 1 GiB cap). Fix-head CI 42174357921 has passing reporting governance, four executing Linux and four queued macOS scientific cells at the recorded observation; corrected complete full coverage remains pending. No cancelled, queued, omitted or local-capacity-limited execution clears missing supported/full-installed/public gates. Scientific code, source pins and existing recovery routes remain unchanged.
+
+
 ## What
 
 The suite maintainer requires Python 3.11–3.14 from every Python member under

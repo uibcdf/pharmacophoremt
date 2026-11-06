@@ -2,6 +2,8 @@
 
 Welcome to the official developer guide for **PharmacophoreMT**. This directory is the "source of truth" for the toolkit's architecture, standards, and planning.
 
+[Current source receiving — 2026-11-06](source_suite_receiving_20261106.md) records #102's corrected schema-envelope guards, 111 passing selected controls and the complete/incomplete hosted/local evidence without merging their scopes. Start with the [checkpoint](checkpoint.md) for current gates.
+
 ## Strategic Vision
 
 [Architectural, scientific and product audit — 2026-11-04](audit_20261104.md)

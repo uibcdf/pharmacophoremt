@@ -11,6 +11,10 @@ Later development can continue through 0.10.0, 0.11.0 and further 0.x.y
 versions. Neither stabilization nor the 1.0.0 decision is tied to 0.9.x;
 readiness follows the agreed scope and evidence, not a fixed minor count.
 
+## Current source receiving — 2026-11-06
+
+[Source receiving](source_suite_receiving_20261106.md) records #102's two test-only envelope corrections at immutable `5a86017`, 111 passing selected controls and the independent full-source/failed/local-capacity evidence. Corrected full hosted evidence remains pending; queued/executing cells and incomplete local runs are not passing gates. This does not freeze a candidate, establish clean installed/public closure or resolve #95's required modern molecular delivery.
+
 ## Source review completed, release freeze pending
 
 The [current review](release_0_5_0_post_review.md) extends the preserved 100-commit

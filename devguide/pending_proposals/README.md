@@ -21,4 +21,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
 
+### Open (1)
+
+- [`qualify_receptor_screening_studies.md`](qualify_receptor_screening_studies.md) — [#103](https://github.com/uibcdf/pharmacophoremt/issues/103) — Qualify a reproducible receptor-to-screening workflow on ERalpha and a second receptor. *(open, asserted)*
+
 <!-- /generated -->

@@ -15,6 +15,11 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Current source receiving — 2026-11-06
+
+[Receiving record](../source_suite_receiving_20261106.md) and [original receipt](../evidence/source_suite_receiving_20261106_summary.json) preserve #102's exact two-test correction, 111 passing focused controls, old-head full hosted 2,071 pass/two failures and incomplete local attempts (task hook; later 1 GiB cap). Fix-head CI 42174357921 has passing reporting governance, four executing Linux and four queued macOS scientific cells at the recorded observation; corrected complete full coverage remains pending. No cancelled, queued, omitted or local-capacity-limited execution clears missing supported/full-installed/public gates. Scientific code, source pins and existing recovery routes remain unchanged.
+
+
 ## Prior capacity-source receiving completed — 2026-10-28
 
 Capacity closeout `c42d91e1687b51953251e2d33e6d5c9cdbde3d3e` CI 40738760689

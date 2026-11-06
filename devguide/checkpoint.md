@@ -1,5 +1,16 @@
 # Development Checkpoint
 
+## Schema-oracle correction and current source receiving — 2026-11-06
+
+[#102](https://github.com/uibcdf/pharmacophoremt/issues/102) is repaired in main `5a860171c38e46708a1e5c6df3da8caf33366388`: two prepared-workflow guards now check the tagged public envelope separately and preserve exact comparison of every internal history field. Production/scientific/provider/input/version-plan bytes are unchanged. **111 selected cases pass**, with strict source/native/metadata/consumer identity equality.
+
+Corrected-source CI [42174357921](https://github.com/uibcdf/pharmacophoremt/actions/runs/42174357921) is still partial at this observation: reporting passes, Linux 3.11–3.14 execute and all four macOS cells remain queued. No corrected complete full-source result is claimed yet.
+
+[Receiving record](source_suite_receiving_20261106.md) and [original receipt](evidence/source_suite_receiving_20261106_summary.json) retain old-head CI (2,071 pass/two failed), the initial progress-hook interruption and its correction, a stopped idle-I/O diagnostic, and the corrected full local attempt that reaches its 1 GiB cap after 1,428 passing reports. Neither interrupted local run counts as a passed suite. Shared-prefix pip-check conflicts and non-equivalence to hosted acquisition remain explicit. Heavy phases stay serial/CPU19/1 GiB/no swap/nice19/idle I/O/threads1; pressure-triggered pauses are recorded. All local scientific scopes have ended.
+
+**Next:** inspect applicable exact-head hosted #9/#23 roles and retain missing supported/installed/public gates. The accepted longer-term [#103 work plan](pending_proposals/qualify_receptor_screening_studies.md) starts by reviewing ERalpha evidence and fixing a bounded receptor-based study protocol; general molecular gaps go to their provider. This scientific work can proceed with identified controlled sources while #95's public MolSysMT delivery/candidate gates remain separate. Current plan/tag/Release remains 0.4.0; no freeze, upload, addon or suite version notice. Owned capsule `build/phmt-full-source-20261105-cdf3ayvo`, LMMV/dprada, review 2026-11-19 or relevant change.
+
+
 ## Proposed 0.5.0 review refreshed through fbe6677 — 2026-11-05
 
 [#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has a

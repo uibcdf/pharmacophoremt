@@ -1,0 +1,210 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "194a28aaa2ddf67a56a9b84424f80d7c52d027b6d3ff20c9778f83a26b498f75",
+    "devguide/archive/README.md": "a35f2838bcba53ce66bbfac52c9b2fb082ab69c28334a16031eef5e4b0b89d33",
+    "devguide/archive/prepared_workflow_schema_oracles.md": "44645115448ac0470ce1c2863ef5a344406b5a6255deb2f7c2bcfd7e4731727a",
+    "devguide/checkpoint.md": "61034cc573f37bab19f34543509b67db4861ba4e8ab51f6b4ec22692a9273e07",
+    "devguide/native_schema.md": "a9ad6ba19b58d46186002a8ee5d746f0ad7796294447500f137aa21d4b15f4f0",
+    "devguide/pending_bugs/full_ci_routes_and_skipped_push_recovery.md": "02005165723488377288d590355d7e64b4c5510b50e81084dbfe85ad5a7a38b5",
+    "devguide/pending_proposals/README.md": "c7bab550c6ced0187a0b143b880efb64990a6cea75749e50a949face95a64c9d",
+    "devguide/pending_proposals/adopt_required_python_314.md": "b311d36c389d9ef24e5397867128ef0a715aed6f9010c9fdf71a3295fa9bd50d",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "0a0293909e5e8b25c5797b366604f22202d9a863fd7b38a85bcc7735180b0579",
+    "devguide/receptor_validation_evidence_review.md": "4c94e1e8647d8944309a5d52daa6f6474955fa96ec54f56fe87043d72e04817e",
+    "devguide/release_0_5_0_readiness.md": "b5addbaf637ee2883eeff8f42379daf9d7d2261a66c299c0f877608ef74faa09",
+    "devguide/roadmap.md": "5fdfcb49157133a4f951b7ea04c0691c62fef1d4244d35a0f38ac643e319c999",
+    "devguide/source_suite_receiving_20261106.md": "dda28429c8707d1b2a126fa13b8eb903aeb31b2dd7875b723b2f62bd81e5232e",
+    "tests/test_prepared_search_workflow.py": "fd51d7a3f436e002ceafb35e6b966daa99ba3c8cc2df6f08a8bb4726f9076a56",
+    "tests/test_prepared_workflow.py": "5feb257ecc1439ae6dc93d8bfe8041f810b7ee3b40e116be6fc8331bae4ad90a",
+    "tests/test_reporting_protocol.py": "e3e6f2ea4b544b29c7f1d09dafe7dde395db273933b2d705619c403846f0e932"
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "args": [
+          "python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "name": "index_generate"
+      },
+      {
+        "args": [
+          "python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "index_check"
+      },
+      {
+        "args": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "name": "reporting"
+      },
+      {
+        "args": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "name": "archive_tests"
+      },
+      {
+        "args": [
+          "ruff",
+          "check",
+          "tests/test_prepared_workflow.py",
+          "tests/test_prepared_search_workflow.py",
+          "tests/test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "name": "ruff"
+      },
+      {
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "whitespace"
+      }
+    ],
+    "recorded_at": "2026-11-06T07:02:53.810644+00:00",
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    }
+  },
+  "capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-full-source-20261105-cdf3ayvo",
+  "cleanup": {
+    "local_scientific_processes_required": false,
+    "recorded_at": "2026-11-06T07:03:20.464354+00:00",
+    "retention": "Keep original receipts/inputs and owned task records for #9/#23/#102/#103; review 2026-11-19 or relevant change. Borrowed prefixes/SDK/provider sources remain untouched.",
+    "scope_states": {
+      "phmt-complete-source-20261106.scope": "ActiveState=failed\nSubState=failed\nResult=oom-kill\n",
+      "phmt-full-source-20261105.scope": "ActiveState=inactive\nSubState=dead\nResult=success\n",
+      "phmt-full-source-diagnostic-20261106.scope": "ActiveState=failed\nSubState=failed\nResult=timeout\n",
+      "phmt-full-source-preflight-20261105.scope": "ActiveState=inactive\nSubState=dead\nResult=success\n",
+      "phmt-source-oracles-20261106.scope": "ActiveState=inactive\nSubState=dead\nResult=success\n",
+      "phmt-source-records-20261106.scope": "ActiveState=inactive\nSubState=dead\nResult=success\n"
+    }
+  },
+  "focused": {
+    "failed": 0,
+    "identities_stable": {
+      "consumer": true,
+      "packages": true,
+      "python": true
+    },
+    "passed": 111,
+    "skipped": 0
+  },
+  "full_evidence": {
+    "compressed_bytes": 613259,
+    "compressed_sha256": "7bd2453d1fe548d59ee4c352c93d97f5764661a010283b5b09f24557fac4dff7",
+    "path": "source_suite_receiving_20261106.json.gz",
+    "uncompressed_bytes": 3136287,
+    "uncompressed_sha256": "e8ba5205437845ca1160b9a17453508fcfe378b753277903504666edfd40fb18"
+  },
+  "hosted_corrected": {
+    "complete_source_accepted": false,
+    "run": 42174357921,
+    "source": "5a860171c38e46708a1e5c6df3da8caf33366388",
+    "status": "Reporting passed; Linux four scientific cells executing/macOS four queued at the recorded observation. Missing exact-head supported gates stay #9/#23."
+  },
+  "hosted_original": {
+    "accepted": false,
+    "failed": 2,
+    "job": 127732249759,
+    "passed": 2071,
+    "run": 42169030918,
+    "source": "bacc3741fbc911d2bb9ebf0a27cbe80e67475b8a"
+  },
+  "issues": [
+    9,
+    23,
+    95,
+    102,
+    103
+  ],
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "partial_attempts": {
+    "complete": {
+      "outcomes": {
+        "passed": 1428
+      },
+      "reports": 1428,
+      "unique_nodes": 1411
+    },
+    "focused": {
+      "outcomes": {
+        "passed": 111
+      },
+      "reports": 111,
+      "unique_nodes": 111
+    },
+    "initial": {
+      "outcomes": {
+        "passed": 1202
+      },
+      "reports": 1202,
+      "unique_nodes": 1185
+    }
+  },
+  "progress_count_note": {
+    "cause": "17 extra unittest subtest reports from three evidence-archive guards. Earlier task annotations saying unique reports/cases are incorrect; preserve raw data and use distinct node IDs separately. No incomplete attempt is complete source acceptance.",
+    "corrected_full_distinct_node_ids": 1411,
+    "corrected_full_reports": 1428,
+    "initial_distinct_node_ids": 1185,
+    "initial_reports": 1202
+  },
+  "recorded_at": "2026-11-06T07:03:55.207260+00:00",
+  "resources": {
+    "backend_threads": 1,
+    "cpu": 19,
+    "cpu_quota": "100%",
+    "heavy_phases": "serial",
+    "io": "idle",
+    "memory_max_bytes": 1073741824,
+    "nice": 19,
+    "note": "Original incomplete attempts, pressure pauses, idle-I/O stop and memory-cap kill retained. No higher-memory full local retry.",
+    "swap_max_bytes": 0,
+    "tasks_max": 32
+  },
+  "review_by": "2026-11-19 or relevant source/provider change",
+  "schema": "pharmacophoremt.source-suite-receiving.v1",
+  "scope": "Test-oracle correction and partial source receiving; initial receptor validation evidence review. Not complete corrected source/platform/installed/public acceptance.",
+  "source_fix": "5a860171c38e46708a1e5c6df3da8caf33366388"
+}

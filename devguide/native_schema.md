@@ -110,3 +110,7 @@ compatibility, data admission and original parser/provider/filesystem errors.
 #6 dependency declarations align nglview and the existing direct PyYAML codec.
 No native schema, scientific algorithm, molecular/SDF implementation or installed/
 public qualification change; broader ArgDigest admission remains separate.
+
+## Curation history and public envelopes
+
+`metadata.source_model` curation snapshots retain the historical untagged native payload from `_to_dict`. Public JSON/YAML exports add `schema: pharmacophoremt.native@1` to their outer envelope. Comparing a public export with an internal history snapshot therefore requires checking that known marker separately and comparing every remaining field exactly. This distinction preserves the existing SDF @1 payload; it does not relax scientific-field or provenance fidelity. The prepared-workflow and prepared-search guards under #102 protect this boundary.

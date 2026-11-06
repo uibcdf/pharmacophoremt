@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (78)
+### Resolved (79)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -62,6 +62,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`prepared_receptor_continuation.md`](prepared_receptor_continuation.md) — [#52](https://github.com/uibcdf/pharmacophoremt/issues/52) — Qualify cached ERalpha receptor projections, exclusions and observed-contact model reconstruction. *(resolved, measured)*
 - [`prepared_receptor_sensitivity.md`](prepared_receptor_sensitivity.md) — [#85](https://github.com/uibcdf/pharmacophoremt/issues/85) — Qualify prespecified sensitivity on the cached prepared ERalpha receptor geometry. *(resolved, measured)*
 - [`prepared_rigid_search_continuation.md`](prepared_rigid_search_continuation.md) — [#50](https://github.com/uibcdf/pharmacophoremt/issues/50) — Qualify saved prepared queries through rigid recovery, selected negatives and frame-budget accounting. *(resolved, measured)*
+- [`prepared_workflow_schema_oracles.md`](prepared_workflow_schema_oracles.md) — [#102](https://github.com/uibcdf/pharmacophoremt/issues/102) — Compare complete curation payloads separately from the public native schema envelope. *(resolved, measured)*
 - [`provenance_strings_interpreted_as_quantities.md`](provenance_strings_interpreted_as_quantities.md) — [#25](https://github.com/uibcdf/pharmacophoremt/issues/25) — Provenance serialization interprets literal identifiers as physical quantities. *(resolved, reproduced)*
 - [`public_cached_carbonyl_generation.md`](public_cached_carbonyl_generation.md) — [#94](https://github.com/uibcdf/pharmacophoremt/issues/94) — Qualify explicitly selected public cached-carbonyl receptor generation. *(resolved, measured)*
 - [`public_excluded_volume_sites.md`](public_excluded_volume_sites.md) — [#32](https://github.com/uibcdf/pharmacophoremt/issues/32) — Build reusable exclusion spheres from native heavy-atom inventories without molecular inference. *(resolved, measured)*

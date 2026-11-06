@@ -1,5 +1,12 @@
 # Strategic Roadmap
 
+## Receptor-validation objective — accepted 2026-11-06
+
+[#103](https://github.com/uibcdf/pharmacophoremt/issues/103) and its [work plan](pending_proposals/qualify_receptor_screening_studies.md) now own the longer-term goal: a reproducible prepared-receptor-to-screening workflow, qualified first with ERalpha and then a second scientifically motivated receptor. Consolidate current delivery, qualify explicit hypothesis construction/evaluation, and execute declared studies with leakage controls, comparisons, preparation sensitivity and honest negative/inconclusive results. The first scientific step is to review existing ERalpha evidence and freeze the first study protocol; do not choose/tune a second case before reviewing data and feasibility.
+
+General molecular operations remain MolSysMT-owned; unmet reusable capabilities are proposed to the actual provider. Source science can progress independently of public package delivery, which retains its own gates. The two-study objective does not expand proposed 0.5.0 automatically, reserve later minor versions or set a favorable-result requirement.
+
+
 ## 0.5.0 post-review consolidation — 2026-11-05
 
 [#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now consolidates
