@@ -1,0 +1,187 @@
+{
+  "schema": "pharmacophoremt.public-dependency-receiving@1",
+  "recorded_at_utc": "2026-11-06T00:54:15.617461+00:00",
+  "owner": "LMMV/dprada",
+  "issue": "uibcdf/pharmacophoremt#95",
+  "source": "9c163654375c5933be6400282105b89376f03578",
+  "scope": "Linux/Python 3.14 editable PHMT source with fresh exclusively public Conda dependency closure; no PHMT artifact/full matrix/publication qualification",
+  "unique_passing_nodes": 203,
+  "full_proposed_scope_public_qualification": "blocked: modern chemical-domain, generic-vector and experimental direction delivery not present in selected public MolSysMT 0.23.0",
+  "identity_stability": {
+    "identity_after": {
+      "conda_packages": true,
+      "modules": true,
+      "source_files": true,
+      "molsysmt_capabilities": true
+    },
+    "identity_final": {
+      "conda_packages": true,
+      "modules": true,
+      "source_files": true,
+      "molsysmt_capabilities": true
+    },
+    "identity_closeout": {
+      "conda_packages": true,
+      "modules": true,
+      "source_files": true,
+      "molsysmt_capabilities": true
+    }
+  },
+  "public_provider_origins": {
+    "molsysmt": true,
+    "argdigest": true,
+    "depdigest": true,
+    "smonitor": true,
+    "pyunitwizard": true,
+    "ackredit": true,
+    "molsysviewer": true,
+    "numpy": true,
+    "scipy": true,
+    "rdkit": true,
+    "openmm": true,
+    "pytest_receptor": true
+  },
+  "actual_test_origin_agreement": {
+    "pharmacophoremt": true,
+    "molsysmt": true,
+    "argdigest": true,
+    "depdigest": true,
+    "smonitor": true,
+    "pyunitwizard": true,
+    "ackredit": true,
+    "numpy": true,
+    "scipy": true,
+    "rdkit": true,
+    "pytest_receptor": true
+  },
+  "warnings": {
+    "count": 248,
+    "scope": "focused_rerun only",
+    "owning_issue": "uibcdf/molsysmt#431",
+    "state": "known old-public-version topology inplace deprecations; current provider source not reexecuted"
+  },
+  "initial_failures": {
+    "administrative_count": "New environment/context exposes stale expected counts 17 routes/seven contexts; corrected to 18/eight while preserving 14 source routes; final distribution rerun retained separately.",
+    "collector_cache_path": "Initial receipt collector assumed a flat cache and stopped before archive creation; corrected only URL-derived Mamba cache location. Initial collector script retained; no science or package bytes changed.",
+    "ordering": "First runner called before immutable clone checkout completed; no manager operation occurred. Recorded before successful unchanged rerun.",
+    "collection": "First -I pytest attempt cannot import unshipped tests/support; five collection errors, no scientific test bodies. Corrected to normal source cwd visibility with no provider/PYTHONPATH overlays."
+  },
+  "environment": {
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "prefix": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj",
+    "conda_package_count": 325,
+    "channels": [
+      "uibcdf",
+      "conda-forge"
+    ],
+    "manager": "Mamba 2.9.0",
+    "sdk": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "providers": {
+      "pharmacophoremt": "0.4.0+103.g9c16365",
+      "molsysmt": "0.23.0",
+      "argdigest": "0.17.1",
+      "depdigest": "0.15.2",
+      "smonitor": "0.22.1",
+      "pyunitwizard": "0.29.0",
+      "ackredit": "0.12.0",
+      "molsysviewer": "0.24.0",
+      "numpy": "2.5.4",
+      "scipy": "1.18.1",
+      "rdkit": "2026.9.1",
+      "openmm": "8.6.1",
+      "pytest_receptor": "1.1.0"
+    },
+    "source_files_hashed": 862,
+    "provider_and_source_package_files_hashed": 5627,
+    "native_files_hashed": 186
+  },
+  "actual_artifacts": {
+    "molsysmt": {
+      "version": "0.23.0",
+      "build": "pyabi3h03bb3b7_0",
+      "subdir": "linux-64",
+      "channel": "uibcdf",
+      "url": "https://conda.anaconda.org/uibcdf/linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+      "fn": "molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+      "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+      "md5": "910376ed59c081b851bf4a9c529d3457",
+      "actual_archive_sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+      "actual_archive_bytes": 55898508
+    },
+    "argdigest": {
+      "version": "0.17.1",
+      "build": "py_0",
+      "subdir": "noarch",
+      "channel": "uibcdf",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/argdigest-0.17.1-py_0.tar.bz2",
+      "fn": "argdigest-0.17.1-py_0.tar.bz2",
+      "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+      "md5": "2c39c19f5a7f1c4afe27352d9f5ee531",
+      "actual_archive_sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+      "actual_archive_bytes": 55828
+    },
+    "depdigest": {
+      "version": "0.15.2",
+      "build": "py_0",
+      "subdir": "noarch",
+      "channel": "uibcdf",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/depdigest-0.15.2-py_0.tar.bz2",
+      "fn": "depdigest-0.15.2-py_0.tar.bz2",
+      "sha256": "1da96487be3c1eb870701ee53b97a6341e30a6700a75c6eef5468e9f14dc579c",
+      "md5": "bc984f9f98895c9b59206dcd8f1a0234",
+      "actual_archive_sha256": "1da96487be3c1eb870701ee53b97a6341e30a6700a75c6eef5468e9f14dc579c",
+      "actual_archive_bytes": 32908
+    },
+    "smonitor": {
+      "version": "0.22.1",
+      "build": "py_0",
+      "subdir": "noarch",
+      "channel": "uibcdf",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/smonitor-0.22.1-py_0.tar.bz2",
+      "fn": "smonitor-0.22.1-py_0.tar.bz2",
+      "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e",
+      "md5": "75cf9201d7a2091e9491698ce78b23b1",
+      "actual_archive_sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e",
+      "actual_archive_bytes": 60043
+    },
+    "pyunitwizard": {
+      "version": "0.29.0",
+      "build": "py_0",
+      "subdir": "noarch",
+      "channel": "uibcdf",
+      "url": "https://conda.anaconda.org/uibcdf/noarch/pyunitwizard-0.29.0-py_0.tar.bz2",
+      "fn": "pyunitwizard-0.29.0-py_0.tar.bz2",
+      "sha256": "9169cd302dbda415ebc441ef6f5077dcde834d435626fcf80c179a9013657f34",
+      "md5": "f85fea519cbb0891d36d8a843bd9795a",
+      "actual_archive_sha256": "9169cd302dbda415ebc441ef6f5077dcde834d435626fcf80c179a9013657f34",
+      "actual_archive_bytes": 94325
+    }
+  },
+  "selected_controls": {
+    "focused": {
+      "passed": 0,
+      "skipped": 0,
+      "failure": 0,
+      "error": 5
+    },
+    "focused_rerun": {
+      "passed": 105,
+      "skipped": 18,
+      "failure": 0,
+      "error": 0
+    },
+    "cached_controls": {
+      "passed": 98,
+      "skipped": 0,
+      "failure": 0,
+      "error": 0
+    }
+  },
+  "full_evidence": {
+    "path": "public_dependency_receiving_20261105.json.gz",
+    "compressed_sha256": "33caebb37775860c4a9797b6258d7fbfeb292f46aeef41690e4ceb014388d54a",
+    "compressed_bytes": 4915537,
+    "uncompressed_sha256": "e4faffd2a7407d2f1060f3afe4bcfcfa8abf84cd85a75fd5ec60e061e4aae70f",
+    "uncompressed_bytes": 33603344
+  }
+}

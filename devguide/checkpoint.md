@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Fresh public dependency closure received; modern delivery pending — 2026-11-05
+
+[#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has an executed
+[public receiving record](public_dependency_receiving.md) and
+[original receipt](evidence/public_dependency_receiving_20261105_summary.json).
+Immutable PHMT `9c163654375c5933be6400282105b89376f03578` is the only editable
+installation in a new owned prefix: Python 3.14.10, 325 packages, exclusively
+public uibcdf/conda-forge URLs. Exact selected provider archive bytes/hashes,
+actual prefix imports and native identities are checked. MolSysMT is 0.23.0;
+ArgDigest 0.17.1/DepDigest 0.15.2/SMonitor 0.22.1/PyUnitWizard 0.29.0 are public.
+Accepted SDK/Mamba create operator, installed-context preflight and pip check pass.
+
+**203 unique selected controls pass, with 18 skips and no scientific failures.**
+Native I/O supplies 82 passes, reference-ligand/placed-pose 21, historical feature
+routes two, and pure cached experimental-profile orchestration 98. Twelve modern
+vector-route and six independent chemical-domain controls are skipped because
+their APIs are absent. Public MolSysMT also lacks experimental site directions;
+the unchanged source-bound #93/#94 experiment is not replayed on a different
+contract. Cached protocol success does not qualify molecular geometry. Existing
+historical donor arithmetic remains bounded #41/#375 debt, not new code.
+
+Before/after source/helper/test/input/configuration, selected provider/native,
+module/distribution and complete Conda package identities agree. Original clone/
+runner ordering and isolated-collection failures remain in the receipt; the
+unchanged test selection succeeds with normal source-CWD visibility and no
+provider/PYTHONPATH overlay. 248 old-public topology warnings match MolSysMT #431.
+The new source-free environment/context is outside ordinary generation. Receiving
+finds one stale administrative count assertion: 18 routes/eight contexts replace
+17/seven; the 14 controlled source routes and all science stay intact.
+
+**Next:** obtain the supported public version/artifact for the already consumed
+modern chemical-domain/vector/direction contracts through existing MolSysMT
+#255/#375, then receive those exact bytes under a new run identity. Keep full
+proposed-scope public qualification and 0.5.0 candidate freeze pending that
+delivery decision. Do not invent a minimum, promote staging files, weaken an
+oracle or implement a molecular fallback. Independent PHMT cached-model work can
+continue. #95 remains open; #9/#10/#23 retain exact-source/full hosted/build/
+installed/public gates. The real version plan/tag/Release remains 0.4.0; no
+candidate package/tag/Release/publication or addon work occurs here.
+
+Initial workspace refresh preserves PHMT task changes and clean sibling clones
+behind fetched upstream: MolSysMT 115, ArgDigest six, DepDigest 11, SMonitor two,
+PyUnitWizard 16, Viewer 108 and Ackredit 15 commits. No sibling pull/edit or
+borrowed-prefix mutation. Owner LMMV/dprada; capsule
+`build/phmt-public-closure-20261105-t9gy9lgj`, review 2026-11-19 or relevant change.
+No continuing task process is required. The final unskipped push needs its own
+exact-head CI inspection; queued science is not replaced by these local subsets.
+
 ## Published ArgDigest received; native I/O admission active — 2026-11-05
 
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) now receives the exact

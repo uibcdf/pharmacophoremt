@@ -39,6 +39,28 @@ public molecular/provider closure and obtain exact-source #9/#10/#23 gates.
 
 ## Scope to review for the next candidate
 
+### Public dependency receiving is partial — 2026-11-05
+
+The [source-free public receiving](public_dependency_receiving.md) on immutable
+PHMT `9c163654375c5933be6400282105b89376f03578` creates a fresh Conda closure,
+installs only PHMT editable, and passes pip check and actual context preflight.
+**203 unique selected controls pass; 18 modern-provider controls are skipped.**
+Public MolSysMT 0.23.0 supplies the historical classical workflows, but lacks the
+modern chemical-domain namespace, public generic vectors and experimental H-bond
+direction operation. Cached-profile tests qualify PHMT protocol orchestration,
+not the absent molecular calculation. Actual imports/native/archive identities
+and before/after checks are retained in the
+[original receipt](evidence/public_dependency_receiving_20261105_summary.json).
+
+Hold full proposed-scope qualification and candidate freeze until the supported
+public delivery boundary is resolved through existing MolSysMT #255/#375.
+Receive the identified artifact under a new run identity; then decide the real
+minimum and applicable candidate gates. Existing source corrections remain
+completed; no provider edit, new molecular fallback or speculative version floor
+is added here. MolSysMT #431 owns observed old-public topology warning debt.
+This receipt is Linux/Python 3.14 source compatibility, not a PHMT artifact,
+full source/installed matrix or publication. #95 stays open.
+
 Consolidate the current native classical workflows and scientific/provenance/
 quantity/error contracts, including #94's explicit experimental cached-carbonyl
 generation. Review the capability inventory, runnable recipes and migration notes
@@ -53,6 +75,7 @@ not automatic prerequisites for this consolidation.
 | --- | --- |
 | Exact source candidate | Select one full committed SHA after #94 closeout; record it in #95 before freezing/tagging |
 | Scientific/local source evidence | #94 has 295 unique passing selected controls across preserved scopes, unchanged 12-model/72-primary/24-recovery replay, and an executed recipe; these do not certify the full suite |
+| Public molecular/dependency closure | Fresh public closure solves/installs and passes 203 selected controls, with 18 modern-capability skips. Resolve MolSysMT #255/#375 public delivery and receive the actual artifact before full proposed-scope qualification; do not treat skips as acceptance |
 | Hosted supported source matrix | #9 owns exact-head Python 3.11–3.14 Linux/macOS recovery; inspect the candidate's executed required jobs rather than reusing old-head or queued results |
 | Public contract and migration notes | Baseline review and draft notes are complete below, including nine public signature changes; recheck against the actual selected candidate and preserve known scientific/provider limits |
 | Version/metadata plan | Review and commit the real 0.5.0 release plan when a candidate is selected. The existing `devtools/conda-build/release_plan.toml` still records 0.4.0 and is deliberately unchanged by this planning stage |

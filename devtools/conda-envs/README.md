@@ -8,6 +8,21 @@ qualification). Set `PHARMACOPHOREMT_SUITE_ROOT` to the current clean SDK checko
 it at `.molsyssuite`; the loader verifies the commit and administrative import
 origin. Current publication wrappers use the same reviewed provider identity.
 
+## Public-provider receiving context — 2026-11-05
+
+`public_test_env_py314.yaml` declares the separate source-free `public-test-3.14`
+context under #95. It uses runtime requirements and the existing public test
+integrations; no Git/provider overlay or ordinary generator target is added.
+Use the accepted create operator with a new owned name/cache and declared-only
+channels. Install only an immutable PHMT source clone editable with --no-deps
+--no-build-isolation. Check actual archive/import provenance, pip check and the
+registered installed-context preflight before interpreting selected tests.
+
+The [executed receipt](../../devguide/public_dependency_receiving.md) passes 203
+selected controls, with 18 modern-provider skips on public MolSysMT 0.23.0.
+It is partial Linux/Python 3.14 source compatibility, not a PHMT artifact/full
+installed matrix or qualification of absent modern molecular capabilities.
+
 ## Generate or check ordinary documents
 
 ```bash

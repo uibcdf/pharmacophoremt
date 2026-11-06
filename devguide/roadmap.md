@@ -39,6 +39,20 @@ plan and candidate gates deliberately. #9 owns exact-head hosted recovery;
 package is delivered, publish the requested version-specific MolSysSuite notice.
 #95 tracks next-candidate readiness; this does not authorize publication now.
 
+## Public closure measured; modern delivery pending — 2026-11-05
+
+[#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has an executed
+[public dependency receipt](public_dependency_receiving.md): a fresh exclusive
+uibcdf/conda-forge environment, pip check/actual preflight passing, **203 unique
+selected controls passing and 18 modern-capability skips**. Actual public
+MolSysMT 0.23.0 supports the tested historical classical workflows but lacks
+the current source chemical-domain/vector/experimental-direction contracts.
+The pure cached-profile controls do not qualify those molecular calculations.
+Keep full 0.5.0-scope public qualification/freeze pending the supported delivery
+handoff in existing MolSysMT #255/#375, followed by actual artifact receiving.
+No molecular fallback, dependency-floor guess, release-plan change or publication
+is introduced. PHMT work on cached models can continue independently.
+
 ## Native I/O provider receiving completed — 2026-11-05
 
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) receives public

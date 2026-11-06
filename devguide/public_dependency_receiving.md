@@ -55,3 +55,73 @@ This is Linux/Python 3.14 source compatibility, not the full supported source or
 installed Conda matrix, a PHMT artifact, package publication, biological validation
 or performance measurement. #9/#10/#23 keep their own exact-candidate gates.
 Further 0.x.y releases including 0.10.0/0.11.0 remain available; no 1.0 deadline.
+
+## Executed receiving — 2026-11-05
+
+Immutable PHMT source `9c163654375c5933be6400282105b89376f03578` is installed
+editable into a newly created owned prefix. Python 3.14.10 and 325 Conda packages
+come exclusively from the declared public channels. Actual installed URLs and
+selected provider archive bytes/hashes are checked independently of the manager
+input receipt. The complete closure is retained in the
+[receipt](evidence/public_dependency_receiving_20261105_summary.json).
+MolSysMT is `0.23.0-pyabi3h03bb3b7_0`, SHA-256
+`7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b`.
+ArgDigest 0.17.1, DepDigest 0.15.2, SMonitor 0.22.1 and PyUnitWizard 0.29.0
+are public noneditable dependencies. Provider metadata contains historical build
+directories; actual imports resolve to this prefix. Only PHMT is editable.
+Installation, pip check and the actual public-context preflight pass.
+
+| Unchanged selection | Passed | Skipped |
+| --- | ---: | ---: |
+| Native I/O dispatch/admission | 82 | 0 |
+| Reference-ligand and placed-pose workflows | 21 | 0 |
+| Provider feature routes | 2 | 12 |
+| Independent modern chemical-domain receiving | 0 | 6 |
+| Pure cached experimental-profile controls | 98 | 0 |
+
+**203 unique selected controls pass, with 18 capability-specific skips and no
+scientific failures.** The cached-profile controls use typed protocol fixtures,
+not real molecular recognition or experimental direction calculation. The old
+public feature route retains only its preexisting bounded donor arithmetic under
+#41/#375; no new molecular implementation or fallback is introduced.
+
+The actual public MolSysMT lacks `chemical_states`,
+`interactions.hbonds.get_hbond_sites`, `structure.get_vectors` and
+`interactions.hbonds.get_hbond_site_directions`. Required-capability probes retain
+PHMT-E104, separately from tests and empty scientific results. The actual charge
+API `physchem.get_charge_centers` and center/plane tools are present. An initial
+exploratory probe of the unused name `get_formal_charge_sites` establishes no
+charge limitation. The source-bound #93/#94 experiment is not reexecuted on an
+absent/different provider contract; its frozen declaration/oracles remain intact.
+
+Before/after snapshots agree for 862 source/helper/test/input/configuration files,
+5,627 selected source/provider package files including 186 native extensions,
+module/distribution identities and the complete Conda package inventory. Actual imports in
+the corrected test process agree with the isolated identity probe. The first
+`-I` pytest invocation fails collection because unshipped test/support namespaces
+are unavailable. The unchanged selection then runs with normal source-CWD
+visibility, usersite disabled and PYTHONPATH removed; it adds no provider overlay.
+The earlier clone/runner ordering attempt and all original failures are retained.
+248 known old-provider pandas deprecations belong to MolSysMT #431; warnings are
+neither filtered nor promoted into scientific failures in this selection.
+
+**Disposition: partial public compatibility; hold full proposed-scope qualification.**
+The next provider handoff is a supported public version/artifact containing the
+modern chemical-domain/vector/direction contracts, via existing MolSysMT #255/#375.
+#431 keeps the known warning-publication relationship. Source fixes and broad
+chemical-model admission are not requested again. When delivery is identified,
+receive its actual files under a new run identity before choosing a justified
+public minimum and freezing the 0.5.0 candidate. #95 remains open; #9/#10/#23 and
+all release/installed/platform gates remain separate. Independent PHMT cached
+model work can continue while that delivery is pending.
+
+Administrative receiving also exposes one stale declaration-count assertion:
+the new public environment/context makes 18 routes/eight contexts, preserving all
+14 source routes. Only those expected counts are corrected; all 23 distribution
+controls are rerun. The nine environment controls protect source-free acquisition
+and separation from the five ordinary generated environments.
+
+Owner LMMV/dprada; capsule `build/phmt-public-closure-20261105-t9gy9lgj`, review
+2026-11-19 or relevant provider/source change. Borrowed prefixes and sibling
+checkouts remain unchanged. No continuing process, PHMT release candidate build,
+tag, Release, version-plan change or publication is needed by this receipt.
