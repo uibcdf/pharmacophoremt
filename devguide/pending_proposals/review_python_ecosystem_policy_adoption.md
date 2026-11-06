@@ -18,6 +18,17 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Source admission reviewed without migration — 2026-11-05
+
+[#101 contract](../molecular_source_admission.md) refutes the suspected legacy
+source overwrite. Public ArgDigest0.17.1 keeps unknown closed-signature extras
+separate from standardizer input; direct system/mol_sys names are refused.
+Only model() declares source aliases.153 public-prefix controls pass,89 new;
+runtime/scientific/provider behavior stays unchanged. No speculative alias
+expansion, redundant domain, suppression or new support-adoption claim. #6 stays
+partial; [original receipt](../evidence/molecular_source_admission_20261105_summary.json)
+retains the incorrect initial hypothesis and actual measured contract.
+
 ## Saved-result/retrospective adoption — 2026-11-05
 
 [#100 contract](../retrospective_result_contracts.md) and

@@ -1,5 +1,18 @@
 # Strategic Roadmap
 
+## Source-name admission qualified without an API expansion — 2026-11-05
+
+[#101](https://github.com/uibcdf/pharmacophoremt/issues/101) withdraws the initial
+overwrite suspicion: closed signatures refuse unknown source extras before the
+legacy standardizer can see them. Only model() declares system/mol_sys aliases.
+[Contract](molecular_source_admission.md) and [receipt](evidence/molecular_source_admission_20261105_summary.json)
+retain wrong candidate expectations/fixture correction and153 passing final
+public-prefix cases (89 new guards plus independent probe/63 existing controls).
+Production/scientific/provider behavior is unchanged; no speculative alias/API
+expansion is performed. Broader #6/audit3 stays partial; focus on actual gaps and
+#95's public modern MolSysMT/#375 delivery/exact-candidate gates. #255 is closed
+source-separation history. #9/#10/#23 remain independent; no release/addon work.
+
 ## Retrospective settings/contract consolidation — 2026-11-05
 
 [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) fixes EF-key overwrite

@@ -86,4 +86,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`virtual_screening_skip_forwarding.md`](virtual_screening_skip_forwarding.md) — [#78](https://github.com/uibcdf/pharmacophoremt/issues/78) — Consume VirtualScreening constructor digestion control at its own boundary. *(resolved, measured)*
 - [`zero_angle_roundoff.md`](zero_angle_roundoff.md) — [#16](https://github.com/uibcdf/pharmacophoremt/issues/16) — Zero-angle direction checks rejected their own source because normalization roundoff became a real angle. *(resolved, measured)*
 
+### Withdrawn (1)
+
+- [`molecular_source_alias_overwrite.md`](molecular_source_alias_overwrite.md) — [#101](https://github.com/uibcdf/pharmacophoremt/issues/101) — Competing molecular-source argument names must not silently replace the source. *(withdrawn, measured)*
+
 <!-- /generated -->

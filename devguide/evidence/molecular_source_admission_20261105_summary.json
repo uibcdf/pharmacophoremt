@@ -1,0 +1,499 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "3f212b8a03b267e87f76e6b1212089c6df6b3758e79493331cb4ddd27ef373f2",
+    "devguide/api_design_standards.md": "625a299885e18de6c154fe301664cf4b368012482ce984043097e5bd1edb67dc",
+    "devguide/archive/README.md": "9500aa0bb192654d397af6f3bbe1b204a787f2133b02066a126d915001d9372d",
+    "devguide/archive/molecular_source_alias_overwrite.md": "0af247c1f43ef8f27a4195fc3955c37dfc07960c50ab0aeb9c78695a99862426",
+    "devguide/audit_20261104.md": "bfbcca2d69ae715ad94030adb19e0efe067ce5d4e86f89e7847865a67567d051",
+    "devguide/audit_20261104_review.md": "b0a1f0ccf58e4467f1cb15dde6636046b9aa0a63191da624bb3b69170bc24400",
+    "devguide/checkpoint.md": "48b71fddcc1f0bb989ac7ffba754b3bcc6d55788cf63fbff80730a75a53e707c",
+    "devguide/molecular_source_admission.md": "79159772c286fa73371dd53b15000eca0b6612a075c8b0e93fb21a1fec63f132",
+    "devguide/pending_proposals/review_python_ecosystem_policy_adoption.md": "1ac3d6b782afc6ce249490ddc2ad82ef7d5fe5afeace6f174fc8ab384de0f3bd",
+    "devguide/roadmap.md": "d6fc501e6c550209cdd4c19fbfdd7a8e847b1f7f0e4909e4c0de5e1343334a55",
+    "devguide/support_library_boundaries.md": "57776a97e3813635556b29a6a45196ea0e0ead50bf8cf079297e647e465154fd",
+    "tests/test_molecular_source_aliases.py": "4f548dc8fe7fef0ca3a9005521083f9a5b60b21686a7363541e464b5a0a468e4",
+    "tests/test_reporting_protocol.py": "7c93425fc091d92aa2b557e65bbf08dbfca1aee2ced9c92d50b18812b8ed5c48"
+  },
+  "actual_admission_probe": {
+    "canonical_reference_preserved": true,
+    "closed_outcomes": [
+      {
+        "case": "constructor_alias",
+        "type": "UnknownArgumentError"
+      },
+      {
+        "case": "constructor_pair",
+        "type": "UnknownArgumentError"
+      },
+      {
+        "case": "feature_alias",
+        "type": "UnknownArgumentError"
+      },
+      {
+        "case": "feature_pair",
+        "type": "UnknownArgumentError"
+      }
+    ],
+    "dispatcher_pair_type": "ArgumentConsistencyError",
+    "molecular_boundary_calls": 0,
+    "suspected_overwrite_confirmed": false
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "name": "reporting"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "name": "archive_reader"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "indexes"
+      },
+      {
+        "command": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "name": "ruff"
+      },
+      {
+        "command": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "name": "format"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "whitespace"
+      }
+    ],
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-source-alias-admin-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    }
+  },
+  "base_commit": "bb2649f443ff30e2200c24056f56bf6469ea5178",
+  "broader_issue": "uibcdf/pharmacophoremt#6",
+  "contract": "devguide/molecular_source_admission.md",
+  "date": "2026-11-05",
+  "disposition": "withdrawn: original suspected silent source overwrite refuted on actual public ArgDigest0.17.1; no production fix or alias expansion",
+  "existing_dispatcher_controls_passed": 56,
+  "existing_reference_ligand_controls_passed": 7,
+  "full_evidence": {
+    "compressed_bytes": 128198,
+    "compressed_sha256": "0dd85f13bbb431009fe9d33f341acbf6499507c5ad5ae7cbe48c3080e2b095c4",
+    "path": "molecular_source_admission_20261105.json.gz",
+    "uncompressed_bytes": 1204436,
+    "uncompressed_sha256": "d49161f7415c1f9157631f4363c2bf4447aa7885a6941058d8e0a35d9b24b1bc"
+  },
+  "guard": "tests/test_molecular_source_aliases.py",
+  "independent_actual_admission_probe_passed": 1,
+  "issue": "uibcdf/pharmacophoremt#101",
+  "limits": [
+    "#101 withdrawn/refuted; no confirmed high-severity overwrite, runtime/scientific/provider/dependency change or new aliases",
+    "broader#6/audit3 remains partial; public/candidate source/installed/platform gates remain#95/#9/#10/#23",
+    "MolSysMT#255 is closed source-separation history; modern public boundary remains#95/#375",
+    "previous distribution/route/generated-env results are reused only for unchanged declarations and are not counted as newly executed",
+    "actual plan/tag/Release0.4.0 unchanged; no publication/addon/provider-source edit"
+  ],
+  "new_durable_guards_passed": 89,
+  "provider_matches_prior_100": {
+    "ackredit": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "argdigest": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "depdigest": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "molsysmt": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "numpy": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "pyunitwizard": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "scipy": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    },
+    "smonitor": {
+      "direct_url": true,
+      "metadata_version": true,
+      "native_extensions": true,
+      "path": true,
+      "python_file_count": true,
+      "python_source_sha256": true,
+      "version": true
+    }
+  },
+  "provider_originals_in_archive": "reviewed_before.json and reviewed_after.json contain complete actual code/native/metadata/path manifests",
+  "providers": {
+    "ackredit": {
+      "metadata_version": "0.12.0",
+      "native_extension_count": 0,
+      "native_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/ackredit",
+      "python_file_count": 69,
+      "python_source_sha256": "743808d9e6090eb53f8bfdc47ea0b4a68a173dc004430ca7f1bb30e38aaecd3e",
+      "version": "0.12.0"
+    },
+    "argdigest": {
+      "metadata_version": "0.17.1",
+      "native_extension_count": 0,
+      "native_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/argdigest",
+      "python_file_count": 39,
+      "python_source_sha256": "6e99fceb522d8e7d543caac520fb2156df4a69701d93a30a1b9caf2b9cb347d1",
+      "version": "0.17.1"
+    },
+    "depdigest": {
+      "metadata_version": "0.15.2",
+      "native_extension_count": 0,
+      "native_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/depdigest",
+      "python_file_count": 17,
+      "python_source_sha256": "3799659baa6eb4d6696b53b554a2b2ed866de6923256b86cd83b8b183900fb76",
+      "version": "0.15.2"
+    },
+    "molsysmt": {
+      "metadata_version": "0.23.0",
+      "native_extension_count": 1,
+      "native_manifest_sha256": "070429d06baf641c78cd89a758bf1b2e0706a5ba3a34a0027fc53fb3161ef5e7",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/molsysmt",
+      "python_file_count": 2851,
+      "python_source_sha256": "ef8120fd777a61a93d185be2ccd5cdb32f8d7c66bf23195daad19ae1ea89b500",
+      "version": "0.23.0"
+    },
+    "numpy": {
+      "metadata_version": "2.5.4",
+      "native_extension_count": 19,
+      "native_manifest_sha256": "2bd59ff83939871d385c81d5a8bee97bfcb7606138b798e49b11ced3ef3f41e4",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy",
+      "python_file_count": 407,
+      "python_source_sha256": "c960537aeb62e6c0bf228865b2730e0f9d685a7a06cfaf29556d515f827ef9e6",
+      "version": "2.5.4"
+    },
+    "pharmacophoremt": {
+      "metadata_version": "0.4.0+62.g6a7537b",
+      "native_extension_count": 0,
+      "native_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "python_file_count": 142,
+      "python_source_sha256": "eca9183296cf949c659ef4a3524fa6f8cf6184d92bdcb6f0250d7d7d0dc7bf8d",
+      "version": "0.4.0+62.g6a7537b"
+    },
+    "pyunitwizard": {
+      "metadata_version": "0.29.0",
+      "native_extension_count": 0,
+      "native_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/pyunitwizard",
+      "python_file_count": 92,
+      "python_source_sha256": "8c771abf9c9f302796e50c144852e7300af9e22a9171e62bb2cb7d4369570caa",
+      "version": "0.29.0"
+    },
+    "scipy": {
+      "metadata_version": "1.18.1",
+      "native_extension_count": 99,
+      "native_manifest_sha256": "f7a3b373197a06290986ab945bae1c4b75bfa6b13c3b842786abc6345144a1ee",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy",
+      "python_file_count": 606,
+      "python_source_sha256": "926fb9665e88ad31c8338f199307c4da9ca591eb3268a0c7bb38ed2a8ed72b4f",
+      "version": "1.18.1"
+    },
+    "smonitor": {
+      "metadata_version": "0.22.1",
+      "native_extension_count": 0,
+      "native_manifest_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/smonitor",
+      "python_file_count": 41,
+      "python_source_sha256": "63e13eec13b6b39f44e509cc6e9af4b51c722ebf76fef5f3fa0b38347df65346",
+      "version": "0.22.1"
+    }
+  },
+  "recorded_at": "2026-11-06T04:58:48.885812+00:00",
+  "resources": {
+    "baseline": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-source-alias-baseline-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory": "MemTotal:       32165612 kB\nMemFree:         1234000 kB\nMemAvailable:    9149124 kB\nBuffers:          352108 kB\nCached:         17048088 kB\nSwapCached:        33132 kB\nActive:         16445232 kB\nInactive:       11205676 kB\nActive(anon):   14532244 kB\nInactive(anon):  6294600 kB\nActive(file):    1912988 kB\nInactive(file):  4911076 kB\nUnevictable:          16 kB\nMlocked:              16 kB\nSwapTotal:       8388604 kB\nSwapFree:            988 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              6560 kB\nWriteback:             0 kB\nAnonPages:      10219164 kB\nMapped:          1318108 kB\nShmem:          10576484 kB\nKReclaimable:    1555988 kB\nSlab:            2405280 kB\nSReclaimable:    1555988 kB\nSUnreclaim:       849292 kB\nKernelStack:       45296 kB\nPageTables:       165192 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24471408 kB\nCommitted_AS:   63033080 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      247312 kB\nVmallocChunk:          0 kB\nPercpu:            32000 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    155648 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4197416 kB\nDirectMap2M:    14508032 kB\nDirectMap1G:    14680064 kB\n",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=523862022\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=501100225\n",
+      "nice": 19,
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "RAYON_NUM_THREADS": "1"
+      }
+    },
+    "reviewed": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-source-alias-reviewed-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory": "MemTotal:       32165612 kB\nMemFree:          963852 kB\nMemAvailable:    8995752 kB\nBuffers:          355788 kB\nCached:         17249360 kB\nSwapCached:        33132 kB\nActive:         16651008 kB\nInactive:       11270200 kB\nActive(anon):   14689936 kB\nInactive(anon):  6291392 kB\nActive(file):    1961072 kB\nInactive(file):  4978808 kB\nUnevictable:          16 kB\nMlocked:              16 kB\nSwapTotal:       8388604 kB\nSwapFree:           1024 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              4044 kB\nWriteback:             0 kB\nAnonPages:      10284192 kB\nMapped:          1323808 kB\nShmem:          10665644 kB\nKReclaimable:    1556948 kB\nSlab:            2407536 kB\nSReclaimable:    1556948 kB\nSUnreclaim:       850588 kB\nKernelStack:       45824 kB\nPageTables:       167148 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24471408 kB\nCommitted_AS:   64607352 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      247872 kB\nVmallocChunk:          0 kB\nPercpu:            32000 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    157696 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4197416 kB\nDirectMap2M:    14508032 kB\nDirectMap1G:    14680064 kB\n",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=523862062\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=501100265\n",
+      "nice": 19,
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "RAYON_NUM_THREADS": "1"
+      }
+    }
+  },
+  "runs": {
+    "baseline": {
+      "arguments": [
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--junitxml=/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-aliases-20261105-lpt0r75w/baseline.xml",
+        "tests/test_molecular_source_aliases.py",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-aliases-20261105-lpt0r75w/test_original_source_overwrite.py"
+      ],
+      "attempt": "baseline",
+      "errors": 0,
+      "exit_code": 1,
+      "failures": 119,
+      "identities_stable": true,
+      "recorded_at": "2026-11-06T04:47:54.921052+00:00",
+      "skips": 0,
+      "testcases": 132
+    },
+    "reviewed": {
+      "arguments": [
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--junitxml=/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-aliases-20261105-lpt0r75w/reviewed.xml",
+        "tests/test_molecular_source_aliases.py",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-aliases-20261105-lpt0r75w/test_actual_admission_probe.py",
+        "tests/test_model_dispatch_contract.py",
+        "tests/test_reference_ligand.py"
+      ],
+      "attempt": "reviewed",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "identities_stable": true,
+      "recorded_at": "2026-11-06T04:52:28.543892+00:00",
+      "skips": 0,
+      "testcases": 153
+    }
+  },
+  "runtime_unchanged": {
+    "base_commit": "bb2649f443ff30e2200c24056f56bf6469ea5178",
+    "command": [
+      "git",
+      "diff",
+      "--name-only",
+      "--",
+      "pharmacophoremt",
+      "molsysviewer_pharmacophoremt",
+      "phmt_test_support",
+      "pyproject.toml",
+      "devtools/conda-build",
+      "devtools/dependency_routes.toml"
+    ],
+    "runtime_source_metadata_recipe_pins_and_support_unchanged": true
+  },
+  "schema": "phmt.molecular_source_admission.summary@1",
+  "scope": "Argument/source-custody review of all14 public signatures declaring a single molecular_system input (13 closed, one existing dispatcher alias table), with prepared public-provider smoke controls. Existing Python3.14.10 prefix/current PHMT checkout, not full science/support, current installed artifact, modern-source/platform matrix, predictive/performance or publication qualification.",
+  "signature_inventory": {
+    "all_14_entries_match_guard_matrix": true,
+    "entries": {
+      "pharmacophoremt.modeler.complex_based.__init__": {
+        "path": "pharmacophoremt/modeler/complex_based.py",
+        "signature": "self, molecular_system, ligand_selection=None, receptor_selection=None, skip_digestion=False, *, interaction_collection=None, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant'"
+      },
+      "pharmacophoremt.modeler.dispatcher.model": {
+        "path": "pharmacophoremt/modeler/dispatcher.py",
+        "signature": "molecular_system, method='complex-based', ligand_selection=None, receptor_selection=None, **kwargs"
+      },
+      "pharmacophoremt.modeler.features.get_features": {
+        "path": "pharmacophoremt/modeler/features.py",
+        "signature": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES"
+      },
+      "pharmacophoremt.modeler.interaction_based.from_interactions": {
+        "path": "pharmacophoremt/modeler/interaction_based.py",
+        "signature": "molecular_system, interactions, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact'"
+      },
+      "pharmacophoremt.modeler.interaction_collection.from_interaction_collection": {
+        "path": "pharmacophoremt/modeler/interaction_collection.py",
+        "signature": "molecular_system, interaction_collection, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant'"
+      },
+      "pharmacophoremt.modeler.reference_ligand.from_ligand": {
+        "path": "pharmacophoremt/modeler/reference_ligand.py",
+        "signature": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, radius='0.15 nm', name=None"
+      },
+      "pharmacophoremt.modeler.structure_based.__init__": {
+        "path": "pharmacophoremt/modeler/structure_based.py",
+        "signature": "self, molecular_system, skip_digestion=False, *, feature_inventory=None, projection_specs=None, excluded_volume_inventory=None, excluded_volume_radius=None, radius='0.15 nm', name=None"
+      },
+      "pharmacophoremt.pharmacophore.__init__": {
+        "path": "pharmacophoremt/pharmacophore.py",
+        "signature": "self, pharmacophore=None, form=None, name=None, description=None, molecular_system=None, score=None, ref_mol=None, ref_struct=None, skip_digestion=False"
+      },
+      "pharmacophoremt.screening.alignment.align_to_pharmacophore": {
+        "path": "pharmacophoremt/screening/alignment.py",
+        "signature": "molecular_system, pharmacophore, correspondence, *, selection='all', structure_index=0, chemical_state='reference', feature_inventory=None"
+      },
+      "pharmacophoremt.screening.conformer_screening.evaluate": {
+        "path": "pharmacophoremt/screening/conformer_screening.py",
+        "signature": "self, molecular_system, *, selection='all', structure_indices='all', chemical_state='reference', pose_id=None, on_error='raise'"
+      },
+      "pharmacophoremt.screening.pose_evaluation.evaluate": {
+        "path": "pharmacophoremt/screening/pose_evaluation.py",
+        "signature": "self, molecular_system, *, selection='all', structure_index=0, chemical_state='reference', pose_id=None"
+      },
+      "pharmacophoremt.screening.rigid_placements.get_rigid_feature_placements": {
+        "path": "pharmacophoremt/screening/rigid_placements.py",
+        "signature": "molecular_system, reference_inventory, correspondences, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, feature_inventory=None, min_matches=3, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_fits=1000, max_matrix_entries=1000000"
+      },
+      "pharmacophoremt.screening.rigid_refinement.refine_rigid_feature_correspondences": {
+        "path": "pharmacophoremt/screening/rigid_refinement.py",
+        "signature": "molecular_system, reference_inventory, correspondences, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, feature_inventory=None, orientation_policy='final', min_matches=3, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_fits=1000, max_matrix_entries=1000000"
+      },
+      "pharmacophoremt.screening.rigid_search.evaluate": {
+        "path": "pharmacophoremt/screening/rigid_search.py",
+        "signature": "self, molecular_system, *, selection='all', structure_index=0, chemical_state='reference', pose_id=None"
+      }
+    },
+    "source_scan_scope": "public top-level functions and constructors/methods named with a molecular_system argument, excluding private namespaces/helpers"
+  },
+  "temporary_resources": {
+    "borrowed": "public-provider prefix and controlled source env; never edit providers/prefixes",
+    "continuing_process_required": false,
+    "created": "2026-11-05",
+    "issue": "uibcdf/pharmacophoremt#101",
+    "owner": "LMMV/dprada",
+    "purpose": "single molecular source alias conflict receiving",
+    "review": "2026-11-19 or relevant change"
+  },
+  "total_final_cases_passed": 153,
+  "warnings": {
+    "groups": 2,
+    "owner": "uibcdf/molsysmt public0.23.0 native/topology.py sort_values/reset_index inplace path",
+    "reviewed_count": 136,
+    "suppressed_or_patched": false,
+    "type": "Pandas4Warning"
+  }
+}

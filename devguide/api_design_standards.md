@@ -2,6 +2,16 @@
 
 Guidelines for writing clean, consistent, and ecosystem-compliant code in PharmacophoreMT.
 
+## Molecular-source admission review — 2026-11-05
+
+[#101 review](molecular_source_admission.md) refutes a suspected source overwrite
+without changing production. Thirteen direct closed single-source entries require
+molecular_system; unknown system/mol_sys names are refused before molecular work.
+Only model() currently declares those aliases through its existing scoped table.
+The legacy standardizer is not a promise that all APIs accept those names.
+153 public-prefix controls pass; closed signatures need no redundant domains or
+new alias expansion. Actual bypass, live-reference and provider limits remain.
+
 ## Retrospective and saved-result receiving — 2026-11-05
 
 [#100 contracts](retrospective_result_contracts.md) declare saved summary/paired

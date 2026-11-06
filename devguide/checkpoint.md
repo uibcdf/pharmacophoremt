@@ -1,5 +1,39 @@
 # Development Checkpoint
 
+## Molecular-source admission reviewed; overwrite suspicion refuted — 2026-11-05
+
+[#101](https://github.com/uibcdf/pharmacophoremt/issues/101) is withdrawn as a
+refuted suspicion, not a production fix. The legacy standardizer's assignments
+do not see unknown extras on closed public signatures. Thirteen direct
+single-source entries accept molecular_system; system/mol_sys are refused before
+molecular work. Only model() declares those aliases and detects collisions.
+[Contract](molecular_source_admission.md), [receipt](evidence/molecular_source_admission_20261105_summary.json)
+and [archive](archive/molecular_source_alias_overwrite.md) preserve initial wrong
+alias-expansion expectations, the failed overwrite probe and one invalid array
+comparison. No public alias expansion or runtime/provider edit is made.
+
+Final public-prefix **153 cases pass**:89 new guards, one independent actual-
+admission probe and63 existing dispatcher/reference-ligand controls. No skips or
+failures. The explicit probe sees four UnknownArgumentErrors, zero molecular
+boundary calls, preserved canonical identity and dispatcher collision refusal.
+136 old public MolSysMT Pandas deprecation warnings remain visible. Eight public
+provider source/native/metadata identities match prior #100 and stay stable;
+no modern-source/full-installed/platform qualification is inferred.
+
+Heavy tasks remain serial, one allowed CPU/1GiB/no swap/nice19/idle I/O/threads1,
+with actual process limits retained. Capsule
+`build/phmt-source-aliases-20261105-lpt0r75w`, owner LMMV/dprada, review
+2026-11-19 or relevant change; borrowed prefixes/providers untouched and no
+continuing local process required.
+
+**Next:** keep #6 scoped to actual nontrivial gaps rather than forcing aliases or
+redundant domains onto protected closed signatures. #95's public modern MolSysMT
+delivery/#375 and exact-candidate/full #9/#10/#23 gates retain priority when
+available. MolSysMT#255 is closed source-separation history, not an open provider
+implementation request. #66/#74 and PyUnitWizard#141/SMonitor#63 retain separate
+gates. Broader #6/audit3 remains partial; actual plan/tag/Release stays0.4.0,
+with no publication/addon work.
+
 ## Retrospective settings and result contracts consolidated — 2026-11-05
 
 [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) fixes silent EF

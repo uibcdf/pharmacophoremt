@@ -45,7 +45,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #100 prevents retrospective EF report-key overwrite and receives four saved-result/retrospective contracts, with 168 unique selected passes. #99 native batch admission and #98 provider performance handoffs retain their evidence. Broader #6 remains partial; next review actual nontrivial public-contract gaps. Serial one-CPU/1-GiB/no-swap scopes preserve the shared machine. #95 modern public MolSysMT delivery and #9/#10/#23 full gates remain pending. Actual plan/tag/Release stays 0.4.0; no publication/addon work.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #101's source admission review refutes a suspected overwrite and preserves the actual API: direct closed calls use molecular_system; only model() declares system/mol_sys aliases.153 public-prefix cases pass (89 new guards); production is unchanged. #100/#99 contracts and #98 provider handoffs retain their scope. Broader #6 remains partial; #95 modern public MolSysMT delivery/#375 and #9/#10/#23 full gates remain pending. #255 is closed source-separation history. Serial one-CPU/1-GiB/no-swap scopes preserve the shared machine. Actual plan/tag/Release stays0.4.0; no publication/addon work.
 
 ## Classical Workflow Specification
 
