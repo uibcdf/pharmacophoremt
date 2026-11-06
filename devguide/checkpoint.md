@@ -1,5 +1,29 @@
 # Development Checkpoint
 
+## BRD4 precision/capacity declaration, before acquisition — 2026-11-06
+
+#106 now has a [prospective protocol](receptor_study2_capacity_protocol.md) and
+[frozen plan](evidence/brd4_capacity_plan_20261106.json). A SciPy-only planning
+calculation supports a rounded50-group/class target for a prespecified binary
+decision rate, under explicit independence/failure limits; this is not AUC power
+or a biology result. No new source summary/activity is requested at declaration.
+
+**Next:** publish the exact plan, then receive the complete1780-AID/37-batch
+PubChem summary census before ranking any source. Require exact typed SIDCountAll
+coverage; unknown is not zero. Existing endpoint exclusions persist, no source
+is accepted by count, and no activity row/structure/score is authorized here.
+A source below100 tested SIDs cannot meet50 groups/class under this declared
+design. Keep #66 unchanged and all molecular work in MolSysMT. One interim
+CI skip may publish this pre-acquisition declaration; final integration must
+be unskipped, with exact-head hosted observation and missing gates owned by #9.
+
+New ORA/Cambridge/Dundee metadata follow-up does not provide the unread RSC
+method; no author-copy form is sent. Owned capsule
+build/phmt-brd4-capacity-20261106-hvanytql, LMMV/dprada, review2026-11-20 or
+relevant change; serial CPU19/512MiB/no swap/low priority. Runtime, scientific
+inputs, provider trees, dependencies and0.4.0 release plan stay unchanged.
+
+
 ## Second-target source feasibility received; BRD4 admission remains partial — 2026-11-06
 
 [#106](pending_proposals/qualify_brd4_second_receptor_study.md) owns the next

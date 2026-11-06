@@ -44,3 +44,14 @@ No favorable result, broad negative-dataset claim, general molecular code,
 provider/runtime/dependency edit, release freeze or automatic0.5.0 gate follows.
 Raw source text/PDF remains private with provenance; the public receipt retains
 factual projections and source identities. Both full studies remain pending.
+
+## Prospective precision and capacity declaration — 2026-11-06
+
+The [new protocol](../receptor_study2_capacity_protocol.md) declares50 groups
+per measured class for a prespecified binary decision-rate planning target, with
+explicit independence/failure/AUC-power limits. Its frozen machine plan requests
+summary metadata for the existing1780-AID universe in37 bounded batches. Fewer
+than100 tested SIDs is a necessary capacity stop, while a larger count remains
+unqualified for labels, experimental methods and molecular independence. No
+new summaries/activities are acquired at this declaration. Original institutional
+metadata still supplies no qualified copy of the incorporated RSC method.

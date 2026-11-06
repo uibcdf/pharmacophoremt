@@ -1,0 +1,107 @@
+{
+  "capacity_field": "SIDCountAll",
+  "commit_gate": "Publish this exact plan before metadata acquisition. Preserve its bytes and every failed/partial attempt; outcome is a separate record.",
+  "declared_at": "2026-11-06T09:25:33.656898+00:00",
+  "endpoint": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/{comma_separated_aids}/summary/JSON",
+  "expected_batches": 37,
+  "exposure_timing": "Declared after the already recorded literature/abstract/search exposure, before these new capacity summaries or a study cohort. This is not a blinded source-selection design and does not certify an unseen holdout.",
+  "first_batch": [
+    1904,
+    620142,
+    620143,
+    620195,
+    620200,
+    624099,
+    624150,
+    646016,
+    646019,
+    646022,
+    646025,
+    648836,
+    648852,
+    648853,
+    648856,
+    648860,
+    649991,
+    649992,
+    649996,
+    649998
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "minimum_original_occurrences": 100,
+  "order": "First the previously described20 AIDs, then every remaining AID ascending in batches of50; exactly37 batches.",
+  "precision_planning": {
+    "assumptions": "Independent Bernoulli groups/decision units; not guaranteed by identifiers, chemical uniqueness or repeated hypotheses. Not power for an AUC difference, series robustness or prediction. Missing/failing inputs can reduce attained precision and are not replaced.",
+    "binary_decision_rate": "Prespecified screen hit fraction separately in each measured class",
+    "confidence_level": 0.95,
+    "half_width_ceiling": 0.14,
+    "maximum_planning_half_width_at_50": 0.1335548568317142,
+    "method": "SciPy binomtest.proportion_ci wilson",
+    "original_calculation_sha256": "cb121c9645e245be898c23d34d204c1b9d875eaf9626c028d9bba3414551ece9"
+  },
+  "preexisting_incompatible_endpoint_aids": [
+    1904,
+    620142,
+    620143,
+    624099,
+    624150,
+    648836,
+    648856,
+    649992,
+    649996
+  ],
+  "prospective_minimum_per_class": 50,
+  "request_limits": {
+    "maximum_aids_per_call": 50,
+    "maximum_attempts_per_batch": 2,
+    "maximum_response_bytes": 2097152,
+    "minimum_delay_seconds": 0.5,
+    "no_rotation_or_bypass": true,
+    "retry_only": [
+      "HTTP500",
+      "HTTP502",
+      "HTTP503",
+      "HTTP504",
+      "timeout"
+    ],
+    "stop_on": [
+      "HTTP401",
+      "HTTP403",
+      "HTTP429",
+      "schema_or_projection_failure",
+      "second_transient_failure"
+    ],
+    "timeout_seconds": 20,
+    "transient_retry_wait_seconds": 2
+  },
+  "schema": "pharmacophoremt.brd4-metadata-capacity-plan@1",
+  "scope": "New dated metadata-only capacity census of the already retrieved BRD4 gene-index universe; no dedicated activity/compound/coordinate endpoint or model/score. Target/source/cohort remain unaccepted.",
+  "source_body_identity": {
+    "bytes": 26681,
+    "sha256": "a17528e079008435987218a89274bb3252a6fb595c5fa1e37a509d07b7c7b1fd"
+  },
+  "source_body_key": "brd4_assay_ids.json",
+  "source_full_evidence": {
+    "compressed_bytes": 31198,
+    "compressed_sha256": "66d917ebf1d5458985005543ee7b823f472450792939a8fa9b692c53eb1c8bc0",
+    "path": "receptor_study2_feasibility_20261106.json.gz",
+    "uncompressed_bytes": 148341,
+    "uncompressed_sha256": "fd61eb9aa4a5c5290581850bbad986acad722663f716df4d9c73e378eae44e83"
+  },
+  "source_receipt": "devguide/evidence/receptor_study2_feasibility_20261106_summary.json",
+  "source_rules": [
+    "Every source count must be a typed nonnegative integer and each reply must contain exactly the requested distinct AIDs. Missing/conflicting/retired/failed evidence remains unknown, never zero.",
+    "All1780 counts must resolve before any census ranking or promotion; a partial prefix is not a complete census.",
+    "A source with fewer than100 tested SIDs cannot supply50 groups in each class when one eligible source occurrence supplies at most one group. Mixtures/aliases/repeated measurements are not split to manufacture groups.",
+    "A sufficient raw total is only a necessary capacity condition; no accepted experiment, label capacity, chemical/series independence, original-method availability or unseen holdout follows. Existing endpoint exclusions remain.",
+    "No pooling of separate AIDs, use of upstream active flags as study labels or selection by PHMT outcome. No activity rows or molecular aliases are inspected in this phase.",
+    "After complete receiving, list capacity survivors in descending SIDCountAll then AID ascending for future original-method/description review. No new detailed-source request is authorized by the count alone.",
+    "Class thresholds/endpoints, source rights, cohort selection and full method still require a separate declaration before dedicated activities/scores. This does not change #66 or add a release gate."
+  ],
+  "subsequent_batch_size": 50,
+  "total_aids": 1780,
+  "version_plan_unchanged": "0.4.0"
+}
