@@ -549,3 +549,21 @@ installed/public gates are not promoted. No provider/pin/environment/publication
 change. Next #95 consolidates a proposed 0.5.0 candidate and the capability-based
 staircase towards 1.0.0; [readiness](release_0_5_0_readiness.md) separates exact
 source, hosted CI, installed/public and actual release-event evidence.
+
+
+## Published ArgDigest native-I/O receiving — 2026-11-05
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) now receives original
+public 0.17.1 and activates four definition-owned native codec contracts.
+[Contract](native_io_argdigest_receiving.md) and
+[receipt](evidence/native_io_argdigest_receiving_20261105_summary.json) retain
+500 unique passing selected source nodes, 27 new durable guards, exact artifact/
+source binding and every initial failure. The model-source replacement defect
+is protected; TypeError catches, opaque paths/descriptors, units and native
+parser/filesystem/encoder identities remain. Normal unknown-option messages now
+use ArgDigest's stable catalog code. No local binder/error engine or molecular
+routine is added. Minimum >=0.17.1 and controlled source pins match the consumed
+repair; other providers/SDK, scientific settings/commands and release plan stay.
+Broader #6/guide distribution and audit scientific coverage remain partial.
+Next qualify public molecular/dependency closure under #95 before actual candidate
+freeze and full #9/#10/#23 source/installed/public gates. No package/tag release.

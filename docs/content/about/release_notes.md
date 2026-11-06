@@ -72,8 +72,9 @@ repairs strengthen their stated scope; they are not all new 0.5.0 algorithms.
 6. **Use explicit supported options.** Definition-owned ArgDigest contracts
    constrain modeling, ligand-consensus, screening and native geometry options.
    Unknown/method-incompatible keywords fail earlier. Generic digestion bypasses
-   do not bypass native scientific checks. ArgDigest 0.17.0 is the declared
-   minimum; PyYAML >=5.1 is now an explicit required dependency, and the existing
+   do not bypass native scientific checks. The ArgDigest
+   minimum is now >=0.17.1 for the received binding/error-family repairs;
+   PyYAML >=5.1 is an explicit required dependency, and the existing
    required NGLView dependency is consistently classified.
 
 Default chemical acceptors remain position-only. The original donor/aromatic
@@ -120,9 +121,13 @@ helpers and their frozen plans without shipping test support as runtime code.
 
 ArgDigest [0.17.1](https://github.com/uibcdf/argdigest/releases/tag/0.17.1) now
 publishes the #47/#48 corrections. Its exact Conda file is present under main
-and in the solver index; it has not been installed or qualified by this review.
-PHMT #82 still needs receiving with that artifact, including the measured
-literal-kwargs model-source routing regression. Molecular
+and in the solver index. PHMT #82 now receives its verified bytes in an owned
+overlay and passes 500 selected source controls. The model-source replacement
+regression is repaired; the four native JSON/YAML codecs use definition-owned
+signature admission. Ordinary unknown-option errors now carry ARG-ERR-CONTRACT-001
+while remaining catchable as TypeError, replacing incidental Python message text.
+This receiving is not a clean installed/public dependency-closure qualification.
+Molecular
 SDF fidelity/ownership, hydrogen refinement, pockets and broader scientific
 validation keep their owning issues. This draft does not claim them repaired.
 The viewer addon, dynamics and AI are outside this consolidation's required scope.

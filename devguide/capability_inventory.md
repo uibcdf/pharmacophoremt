@@ -23,10 +23,10 @@ Every molecular input, selection, recognition, geometry or transformation belong
 to MolSysMT. Cached observations must correspond to the unchanged prepared source;
 a user declaration alone cannot authenticate that identity.
 
-Known facade edge under [#82](https://github.com/uibcdf/pharmacophoremt/issues/82):
-ArgDigest #47 can expand a literal kwargs option and replace an explicit source.
-It remains open independently of the scientific receptor work below. Native I/O
-adoption also waits on ArgDigest #48; legacy compatibility passes do not fix it.
+[Published ArgDigest 0.17.1 receiving](native_io_argdigest_receiving.md), #82,
+now protects literal keyword/source identity and activates four closed native
+codec contracts with TypeError-compatible diagnostics. ArgDigest >=0.17.1 is
+required; broader #6 and installed/public dependency closure remain separate.
 
 | Public route | State and input contract | Output and scientific limit | Owning controls / contract |
 | --- | --- | --- | --- |

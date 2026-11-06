@@ -26,7 +26,7 @@ dependencies = [
     "nglview",
     "molsysmt",
     "pyunitwizard",
-    "argdigest>=0.17.0",
+    "argdigest>=0.17.1",
     "smonitor",
     "depdigest",
     "rdkit",

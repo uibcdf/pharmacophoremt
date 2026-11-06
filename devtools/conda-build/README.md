@@ -34,6 +34,16 @@ This extra event did not rebuild or replace the already verified public file.
 Review the shared route under #131/#45; do not repeat producer/promotion to make
 that event green. Dated preparation sections below retain their historical scope.
 
+## Published ArgDigest receiving — 2026-11-05
+
+#82 receives exact public 0.17.1 and activates closed native codec contracts.
+The justified minimum >=0.17.1 is aligned across metadata/recipe/three ordinary
+environments and the controlled source manifests, whose original scientific
+commands and other pins stay intact. 500 unique selected source controls pass;
+this is an owned public-file overlay, not a fresh solve or installed PHMT artifact.
+See [the contract/receipt](../../devguide/native_io_argdigest_receiving.md).
+The real release plan stays 0.4.0; candidate/installed/public gates remain #10/#23.
+
 ## Candidate and file identity
 
 ### Proposed 0.5.0 review — 2026-11-05
@@ -54,7 +64,7 @@ executed jobs: eight full supported source cells with installed-context prefligh
 independent governance, policy/lint/format and Conda governance. A passing recovery
 probe with omitted science cannot authorize publication.
 
-The current inventory includes 188 required payload paths, including the generated
+The current inventory includes 189 required payload paths, including the generated
 version module and seven addon paths, covering private diagnostics, current
 modules and committed runtime data.
 Register new package modules/resources in `resources.toml`'s `required_paths`.

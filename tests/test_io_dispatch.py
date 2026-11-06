@@ -6,6 +6,7 @@ from pathlib import Path
 import molsysmt as msm
 import numpy as np
 import pytest
+from argdigest import UnknownArgumentError
 
 from pharmacophoremt import Pharmacophore, io
 from pharmacophoremt import pyunitwizard as puw
@@ -56,10 +57,14 @@ def test_native_facade_preserves_reader_results(native_input):
 
 def test_native_facade_refuses_unknown_options_like_direct_reader(native_input):
     path, reader, _ = native_input
-    with pytest.raises(TypeError, match="unexpected keyword argument"):
-        reader(path, typo_probe_option=True)
-    with pytest.raises(TypeError, match="unexpected keyword argument"):
-        io.load(path, typo_probe_option=True)
+    for tool in (reader, io.load):
+        with pytest.raises(TypeError) as caught:
+            tool(path, typo_probe_option=True)
+        if reader in (io.load_json, io.load_yaml):
+            assert isinstance(caught.value, UnknownArgumentError)
+            assert caught.value.code == "ARG-ERR-CONTRACT-001"
+        else:
+            assert "unexpected keyword argument" in str(caught.value)
 
 
 def test_molecular_options_and_result_are_forwarded_unchanged(monkeypatch):

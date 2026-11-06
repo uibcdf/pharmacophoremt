@@ -2,9 +2,12 @@ import json
 
 import numpy as np
 import yaml
+from argdigest import arg_digest
+from smonitor import signal
 
 from pharmacophoremt import interaction_site as interaction_sites
 from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt._private.arg_digestion.native_io import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import NativeFormatError
 
 _NATIVE_SCHEMA = "pharmacophoremt.native@1"
@@ -258,6 +261,8 @@ def _from_dict(data):
     return ph
 
 
+@signal(tags=["io", "native", "write"])
+@arg_digest(config=CONFIG)
 def to_json(pharmacophore, file_name):
     """Export a Pharmacophore to a JSON file.
 
@@ -274,6 +279,8 @@ def to_json(pharmacophore, file_name):
         f.write(text)
 
 
+@signal(tags=["io", "native", "read"])
+@arg_digest(config=CONFIG)
 def load_json(file_name):
     """Load a Pharmacophore from a JSON file.
 
@@ -291,6 +298,8 @@ def load_json(file_name):
     return _from_dict(data)
 
 
+@signal(tags=["io", "native", "write"])
+@arg_digest(config=CONFIG)
 def to_yaml(pharmacophore, file_name):
     """Export a Pharmacophore to a YAML file.
 
@@ -307,6 +316,8 @@ def to_yaml(pharmacophore, file_name):
         f.write(text)
 
 
+@signal(tags=["io", "native", "read"])
+@arg_digest(config=CONFIG)
 def load_yaml(file_name):
     """Load a Pharmacophore from a YAML file.
 

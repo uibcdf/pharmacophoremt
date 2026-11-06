@@ -12,9 +12,10 @@ scientific study design. Native schema/writer checks are now received under #76;
 live references/variants are now qualified under #60; legacy merge #77 is now fixed through public composition; nested facade
 admission is now received, with broader #6 adoption still partial. Scientific
 semantics/provenance under audit items 8–9 now has a [qualified native slice](native_constraint_semantics.md) under #79 and a [consensus support/redundancy review](consensus_support_review.md) under #80; broader coverage stays partial. [Native I/O diagnostics/dependencies](native_io_diagnostics.md) are now repaired under #81/#6.
-[Native I/O ArgDigest receiving](native_io_admission_readiness.md) is now gated
-under #82 by the published ArgDigest #47/#48 issues; legacy compatibility passes
-do not fix the measured current model-source replacement defect.
+[Native I/O ArgDigest receiving](native_io_argdigest_receiving.md), #82, now
+receives published 0.17.1, protects literal keyword/source identity and activates
+four native codec contracts. 500 unique selected controls pass; broader #6,
+canonical guide distribution and full installed/public closure remain separate.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 The first [receptor projection sensitivity protocol](receptor_sensitivity_protocol.md)
@@ -36,7 +37,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #95 has a [review of all 43 changed runtime files since 0.4.0](release_0_5_0_review.md), draft release/migration notes and updated 0.5.0 readiness. #96 repairs three omitted installed-test helpers and plans; private imports and 126-node collection pass without a scientific rerun. Next review/receive published providers, including #82's corrected ArgDigest, and freeze the real candidate before its exact-source/installed/public gates. The roadmap permits 0.10.0, 0.11.0 and later minors; 1.0 follows readiness. Latest observed tag/Release and committed version plan remain 0.4.0; no new publication. #94's experimental source qualification and molecular ownership retain their scope.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #82 receives exact public ArgDigest 0.17.1 and activates native JSON/YAML admission, with 500 unique passing selected controls (27 new). Model-source replacement is protected, TypeError catches/opaque paths/units/native errors are retained, and the justified >=0.17.1 floor is aligned with recipe/environments/controlled pins. Next #95 qualifies the public molecular/dependency closure before freezing 0.5.0 and obtaining exact-source/installed/public gates. The roadmap permits 0.10.0, 0.11.0 and later minors. Latest PHMT tag/Release and version plan remain 0.4.0; no publication. Molecular operations stay MolSysMT-owned; broader #6/science/guide adoption remains separate.
 
 ## Classical Workflow Specification
 

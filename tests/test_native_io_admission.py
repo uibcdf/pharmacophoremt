@@ -9,12 +9,79 @@ from pathlib import Path
 
 import molsysmt as msm
 import pytest
+from argdigest import UnknownArgumentError, describe_contract
 
+import pharmacophoremt as phmt
 from pharmacophoremt import io
 from pharmacophoremt import pyunitwizard as puw
 from tests.test_io_sdf import model
 
+
+@pytest.mark.parametrize("skip", [None, False, True])
+@pytest.mark.parametrize("option", ["opaque", "empty", "source", "selection", "method"])
+def test_model_literal_kwargs_never_replaces_explicit_source(skip, option, monkeypatch):
+    import pharmacophoremt.modeler.reference_ligand as endpoint
+
+    source, replacement, result = object(), object(), object()
+    value = {
+        "opaque": replacement,
+        "empty": {},
+        "source": {"molecular_system": replacement},
+        "selection": {"selection": replacement},
+        "method": {"method": replacement},
+    }[option]
+    calls = []
+
+    def capture(molecular_system, **options):
+        calls.append((molecular_system, options))
+        return result
+
+    monkeypatch.setattr(endpoint, "from_ligand", capture)
+    options = {"kwargs": value}
+    if skip is not None:
+        options["skip_digestion"] = skip
+    if skip is True:
+        assert phmt.model(source, method="reference-ligand", **options) is result
+        assert len(calls) == 1 and calls[0][0] is source
+        assert calls[0][1]["kwargs"] is value
+        assert calls[0][1]["selection"] == "all"
+    else:
+        with pytest.raises(UnknownArgumentError) as caught:
+            phmt.model(source, method="reference-ligand", **options)
+        assert isinstance(caught.value, TypeError)
+        assert calls == []
+
+
 TOOLS = [io.load_json, io.load_yaml, io.to_json, io.to_yaml]
+
+
+@pytest.mark.parametrize("tool", TOOLS, ids=lambda tool: tool.__name__)
+def test_native_io_definition_contract_preserves_opaque_values(tool):
+    plan = tool.digestion_plan
+    owner = f"pharmacophoremt.io.phmt.{tool.__name__}"
+    assert plan.contract_caller == owner
+    contract = plan.contracts.resolve(owner)
+    assert contract is not None
+    description = describe_contract(contract, plan.domains)
+    assert description["caller"] == owner and description["admits"] == "signature"
+    assert not plan.enable_argument_digestion
+    assert plan.standardizer is None
+    # An empty provider alias registry is valid; raw path/descriptor behavior
+    # below protects the public value contract without relying on its storage.
+
+
+@pytest.mark.parametrize("tool", TOOLS, ids=lambda tool: tool.__name__)
+@pytest.mark.parametrize("keyword", ["typo", "skip_digestion"])
+def test_native_io_ordinary_refusal_uses_provider_code(tool, keyword, tmp_path):
+    path = tmp_path / "absent"
+    args = (
+        (path,) if tool.__name__.startswith("load") else (ForbiddenModelAccess(), path)
+    )
+    with pytest.raises(UnknownArgumentError) as caught:
+        tool(*args, **{keyword: False})
+    assert isinstance(caught.value, TypeError)
+    assert caught.value.code == "ARG-ERR-CONTRACT-001"
+    assert not path.exists()
 
 
 class ForbiddenModelAccess:

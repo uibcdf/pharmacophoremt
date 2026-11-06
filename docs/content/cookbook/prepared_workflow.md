@@ -82,6 +82,13 @@ keep their original contracts; molecular inputs continue through MolSysMT.
 
 ## Inspect the complete qualification
 
+Native JSON/YAML call admission uses ArgDigest >=0.17.1. Unknown keywords raise
+TypeError-compatible ArgDigest diagnostics (ARG-ERR-CONTRACT-001), and the closed
+codec signatures reject unsupported skip controls. Raw path/descriptor values
+reach Python open unchanged; native physical/schema validation remains active.
+The [receiving record](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/native_io_argdigest_receiving.md)
+distinguishes focused source compatibility from installed/public qualification.
+
 ```bash
 python -m devtools.prepared_workflow --output /tmp/prepared-workflow.json
 python -m pytest -q tests/test_prepared_workflow.py

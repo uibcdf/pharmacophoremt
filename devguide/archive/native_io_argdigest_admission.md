@@ -1,14 +1,14 @@
 ---
 summary: Gate native I/O ArgDigest receiving on preserved call shape and exception families.
 issue: uibcdf/pharmacophoremt#82
-status: blocked
+status: resolved
 opened: 2026-11-04
-closed:
+closed: 2026-11-05
 verification: measured
 area: [io, tooling]
 guard: tests/test_native_io_admission.py
 normative:
-blocked_by: [uibcdf/argdigest#47, uibcdf/argdigest#48]
+blocked_by: []
 supersedes: []
 ---
 
@@ -85,3 +85,41 @@ change or local workaround. 260 selected compatibility cases pass, including
 Wait for supported published provider correction/API, then receive it with the
 original reproductions and legacy controls before activation. Review 2026-11-18
 or provider readiness. Broader #6 remains partial.
+
+## Published-provider receiving and activation — 2026-11-05
+
+The original public ArgDigest 0.17.1 archive is downloaded and verified against
+SHA-256 `5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899`.
+Its 38 tracked Python files match published source
+`c9c9ee623dab5331fdfa4227bd784dd38620e18b`; the generated version module is
+recorded separately. An owned extracted overlay supplies the actual provider;
+shared prefixes and provider source remain untouched.
+
+The new 15-case model-source regression first fails ten ordinary/False cases
+on 0.17.0 and passes on 0.17.1, retaining True-bypass source/value identity.
+All 12 original closed-call family probes and five literal-keyword cases now
+agree. The original 260 compatibility controls plus 15 new source guards pass
+before activation. Twelve new contract/code guards then fail before declaration.
+
+Four native codecs now use definition-owned ArgDigest signature contracts and
+SMonitor signals, keeping opaque open-path/descriptor values and existing body
+validation. TypeError catches remain valid; ordinary unknown/False-skip refusals
+gain ARG-ERR-CONTRACT-001 rather than Python's incidental message. Molecular
+loading/options/errors remain delegated unchanged to MolSysMT.
+
+The first activation passes 283/287, with four new guard failures from assuming
+that an empty provider alias registry must be None. Correct that storage
+assumption; existing raw path/value behavior guards remain. Final native scope
+passes 287, and 213 additional geometry/facade/cache/attribution/chemical-domain
+controls pass: **500 unique selected nodes**, with stable complete producer
+identities. This is focused Linux/Python 3.14 source compatibility, not the full
+library, supported installed matrix, public dependency closure or new science.
+
+ArgDigest minimum >=0.17.1, matching recipe/ordinary environments and exact
+controlled source pins now reflect the consumed correction. The original SDK,
+other provider pins, scientific settings/commands and release plan stay intact.
+The [activation contract](../native_io_argdigest_receiving.md) and
+[receipt](../evidence/native_io_argdigest_receiving_20261105_summary.json)
+retain original failures/probes, source/metadata/input/extension identities and
+all attempts. Broader #6 and provider-guide distribution (#169/#164), molecular
+SDF ownership and #9/#10/#23 qualification remain separate. No tag/package release.

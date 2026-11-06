@@ -39,6 +39,16 @@ plan and candidate gates deliberately. #9 owns exact-head hosted recovery;
 package is delivered, publish the requested version-specific MolSysSuite notice.
 #95 tracks next-candidate readiness; this does not authorize publication now.
 
+## Native I/O provider receiving completed — 2026-11-05
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) receives public
+ArgDigest 0.17.1 and activates four native codec signature contracts. 500 unique
+selected source nodes pass, protecting model-source identity and compatible
+TypeError/path/unit/native failures. [Contract and original receipt](native_io_argdigest_receiving.md)
+retain the new floor/pins and separate source/installed/public scope. Molecular
+operations remain MolSysMT-owned. Next #95 qualifies the public molecular/
+dependency closure before selecting a real 0.5.0 candidate; no tag/publication.
+
 ## Proposed 0.5.0 scope reviewed — 2026-11-05
 
 The [100-commit source review](release_0_5_0_review.md) covers all 43 changed

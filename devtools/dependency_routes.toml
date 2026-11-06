@@ -36,10 +36,10 @@ id = "argdigest-base"
 name = "argdigest"
 role = "required-runtime"
 url = "https://github.com/uibcdf/argdigest"
-commit = "c7128f09b2fe064b6c5603d1077dbd2cec52223d"
+commit = "c9c9ee623dab5331fdfa4227bd784dd38620e18b"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies.txt"
-reason = "ArgDigest 0.17.0 published source for definition-owned native geometry contracts (#6); scientific commands unchanged. Installed/public whole-closure qualification remains #10/#23."
+reason = "ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23."
 
 [[source_routes]]
 id = "molsysviewer-base"
@@ -106,10 +106,10 @@ id = "argdigest-3.14"
 name = "argdigest"
 role = "required-runtime"
 url = "https://github.com/uibcdf/argdigest"
-commit = "c7128f09b2fe064b6c5603d1077dbd2cec52223d"
+commit = "c9c9ee623dab5331fdfa4227bd784dd38620e18b"
 install = "pip-no-deps-git"
 input = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-reason = "ArgDigest 0.17.0 published source for definition-owned native geometry contracts (#6); scientific commands unchanged. Installed/public whole-closure qualification remains #10/#23."
+reason = "ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23."
 
 [[source_routes]]
 id = "molsysviewer-3.14"
@@ -143,13 +143,13 @@ reason = "Controlled source input; scientific commands unchanged. Chemical-domai
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies.txt"
-sha256 = "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f"
-reason = "Reviewed pip --no-deps manifest: ArgDigest 0.17.0 for #6 definition-owned contracts; other provider pins and scientific workflow commands preserved"
+sha256 = "522cb7899ce22f7a338eeb216f339f6600f600f088eee24215784bc87e4d4911"
+reason = "Reviewed pip --no-deps manifest: published ArgDigest 0.17.1 source received under #82/#6; other provider pins and scientific workflow commands preserved"
 
 [[source_inputs]]
 path = "devtools/requirements/controlled_suite_dependencies_py314.txt"
-sha256 = "b4a0be5c17b14a37e846f845db9b8d907415c0ef4ecdc1c32fa415cf40a7641f"
-reason = "Reviewed pip --no-deps manifest: ArgDigest 0.17.0 for #6 definition-owned contracts; other provider pins and scientific workflow commands preserved"
+sha256 = "522cb7899ce22f7a338eeb216f339f6600f600f088eee24215784bc87e4d4911"
+reason = "Reviewed pip --no-deps manifest: published ArgDigest 0.17.1 source received under #82/#6; other provider pins and scientific workflow commands preserved"
 
 [[contexts]]
 name = "ci-3.11"

@@ -27,14 +27,15 @@ passes after; actual isolated imports and collection of 126 selected nodes pass,
 with no scientific bodies executed. All 57 staged inputs and cleanup are checked.
 This does not qualify an installed artifact or supported native matrix.
 
-ArgDigest 0.17.1 now publishes the #47/#48 corrections. Exact-version registry
-and main solver-index reads agree on its noarch file and SHA-256
-`5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899`.
-This updates the earlier source-only comments; the file is not installed here.
-PHMT #82 next needs actual artifact/adversarial consumer receiving. Review this measured
-model-source routing limitation and the current public molecular-provider closure
-before selecting a candidate; neither source issue closure nor a floating newer
-dependency establishes compatibility. No provider pin/floor is changed here.
+[#82 published-provider receiving](native_io_argdigest_receiving.md) now verifies
+and consumes the exact 0.17.1 archive in an owned overlay. 500 unique selected
+source controls pass, protecting literal keyword/source identity and native
+call/error/path/value behavior. Four native codecs gain signature contracts;
+ArgDigest >=0.17.1, recipe/ordinary environments and controlled source pins are
+aligned. This is a post-review delta: one new private contract module and the
+native I/O wrappers. Recheck it against the actual candidate; no 0.5.0 freeze
+or whole installed/public dependency-closure claim follows. Next qualify the
+public molecular/provider closure and obtain exact-source #9/#10/#23 gates.
 
 ## Scope to review for the next candidate
 

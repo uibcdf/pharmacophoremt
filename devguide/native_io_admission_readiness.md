@@ -1,5 +1,11 @@
 # Native I/O ArgDigest receiving readiness
 
+Current status — 2026-11-05: [published 0.17.1 receiving](native_io_argdigest_receiving.md)
+now passes and activates scoped native-codec admission under #82. The model-source
+overwrite regression is repaired by the received provider, with 500 unique
+passing selected controls. ArgDigest >=0.17.1 is required. The dated failing
+0.17.0 study below is retained as history; it is not the current adoption state.
+
 Reviewed 2026-11-04 at `6dc3da62a5d4623b6c22617b8d528582a52b1f79`, under
 [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) and
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82).

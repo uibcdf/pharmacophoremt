@@ -1619,3 +1619,19 @@ The final availability refresh observes ArgDigest 0.17.1's actual Release and
 matching main-label/solver-index file/digest. The earlier review based on source-
 delivery comments is preserved separately. No provider file is installed here;
 PHMT #82 now receives the available corrected artifact rather than awaiting it.
+
+
+## Native I/O ArgDigest receiving — 2026-11-05
+
+The [#82 summary](native_io_argdigest_receiving_20261105_summary.json) links the
+original public 0.17.1 artifact identity, 38 matching tracked Python files/one
+generated version module, source/metadata overlays and every before/after
+phase. 500 unique selected nodes pass: native/dispatch 287 and geometry/facade/
+cache/attribution/chemical-domain 213. Original 0.17.0 reproduces ten model-source
+guard failures; all 15 cases pass after receiving, as do the original 12 family/
+five literal probes. Twelve declaration guards fail before activation; the four
+initial alias-registry storage assumptions and refused stale manifest hashes
+are preserved and corrected without scientific changes. Minimum/pins now select
+0.17.1; original scientific inputs/archives and other providers remain intact.
+This is source qualification with a verified public-file overlay, not a clean
+solve, supported installed PHMT matrix, public closure or new scientific result.

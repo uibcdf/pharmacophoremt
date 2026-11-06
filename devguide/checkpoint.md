@@ -1,5 +1,56 @@
 # Development Checkpoint
 
+## Published ArgDigest received; native I/O admission active — 2026-11-05
+
+[#82](https://github.com/uibcdf/pharmacophoremt/issues/82) now receives the exact
+public ArgDigest 0.17.1 archive, SHA-256
+`5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899`.
+38 Python files match published source `c9c9ee623dab5331fdfa4227bd784dd38620e18b`,
+plus one recorded generated version module. Actual code is imported from an
+owned extracted overlay; borrowed prefixes/provider source are unchanged.
+[Contract and delivery](native_io_argdigest_receiving.md) and
+[original receipt](evidence/native_io_argdigest_receiving_20261105_summary.json)
+retain all attempts and complete producer/input identities.
+
+The new model-source regression reproduces ten failures/five bypass passes on
+0.17.0, then all 15 cases pass on 0.17.1. All original closed-call error-family
+and literal-keyword probes agree. The four native JSON/YAML functions now use
+definition-owned ArgDigest signature contracts and SMonitor signals, preserving
+closed signatures, TypeError catches, opaque paths/descriptors, native schema/
+unit/value checks and original parser/filesystem/encoder errors. Ordinary unknown
+options gain ARG-ERR-CONTRACT-001; Python message wording is not retained.
+Molecular loading/options/errors remain delegated unchanged to MolSysMT.
+
+**500 unique selected controls pass:** final native scope 287 and separate
+geometry/facade/cache/attribution/chemical-domain scope 213. Twelve declaration
+guards initially fail before activation. First activation passes 283/287, with
+four new guard assumptions about empty alias-registry storage corrected without
+runtime/scientific change. Source/native/helper/test/input/metadata phase
+identities stay stable. These are focused Linux/Python 3.14 source controls,
+not full-suite, installed-platform/public closure or new biological evidence.
+
+ArgDigest minimum >=0.17.1 is aligned in metadata/recipe/three generated ordinary
+environments and the controlled source pins. Only the two changed manifest hashes
+are reviewed; the shared generator correctly rejected stale ones first. Other
+providers/SDK, scientific commands, source/installed matrix, original study inputs
+and version plan remain unchanged. Registered guide copies are unedited; newer
+canonical guide content is read with separate central distribution under
+MolSysSuite #169/#164. Broader #6 and new nested SMonitor observation adoption
+retain their own scope.
+
+**Next: #95 public molecular/dependency-closure qualification**, including actual
+MolSysMT capability/version receiving, before choosing the exact 0.5.0 candidate
+and changing its version plan. Missing general molecular functions stay with
+MolSysMT via owning issues. #9/#10/#23 retain full exact-source/build/installed/
+public gates; tag/Release and plan remain 0.4.0. No addon or publication starts.
+The staircase permits further 0.x.y minors including 0.10.0/0.11.0 and beyond.
+
+Workspace refresh initially finds PHMT clean/synced at `580daaa`; clean siblings
+ArgDigest/MolSysMT are five/114 commits behind fetched upstream and preserved
+without pull/checkout/edit. Owner LMMV/dprada; capsule
+`build/phmt-argdigest-0171-20261105-ktkwrb5k`, review 2026-11-19 or relevant change.
+No continuing process is required; borrowed prefixes remain intact.
+
 ## Proposed 0.5.0 scope reviewed; installed support repaired — 2026-11-05
 
 [#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has a
