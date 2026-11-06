@@ -1,0 +1,259 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "4364c16c3c5287cdb86f7856b8fb43339a6840589e69b8741d39bc615cde6ee8",
+    "devguide/checkpoint.md": "985161f5c3e82ef9e287ffcb7a0262a384dcfbc486b39050f8feaf1eca0283fc",
+    "devguide/pending_proposals/qualify_brd4_second_receptor_study.md": "e4acb5ec18a1aa62f3bd2743d11dd3d40e7a358866df77871dae6360a2c303ac",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "6c27806001a49d2a4eaa2e87281b609c9d2c05080495350b44e483950238b850",
+    "devguide/receptor_study2_capacity_protocol.md": "21878cb1da12f67a65528120e46a8f53a392336b7ae6b71ad187d1ae5a261026",
+    "devguide/receptor_study2_capacity_receiving.md": "a6b852f43802fdc6d1681473682234fdd07b33bae77f51a6227e10dfc2f6eafc",
+    "devguide/roadmap.md": "3389b06843575d1d01fc3943c60cad8a4458ba1e7862556860076d0893cda999"
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "label": "indexes"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "label": "reporting"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "label": "archive"
+      },
+      {
+        "command": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "label": "ruff"
+      },
+      {
+        "command": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "label": "format"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "label": "whitespace"
+      }
+    ],
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "recorded_at": "2026-11-06T09:46:00.612910+00:00",
+    "resources": {
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    }
+  },
+  "exposure": {
+    "actually_reviewed": "All81 survivor titles and endpoint-bearing source sections; complete non-genetic protocol descriptions as available. Genetic endpoint sections reviewed, not every unrelated genetic protocol step. 743454 protocol is a placeholder; explicit RNAi title is its exclusion evidence. Patent comments show upstream generic potency labels; those are not adopted.",
+    "chemical_alias_or_group_resolution": false,
+    "dedicated_activity_compound_structure_requests": 0,
+    "incidental_activity": [
+      {
+        "aid": 1795677,
+        "example": "Chemistry Example1",
+        "literal_source_name": "2-methyl-4-phenylisoquinolin-1-one",
+        "reported_IC50": 2.782,
+        "reported_unit": "micromolar",
+        "scope": "Source-prose exposure only, no CID/chemical alias resolution, study label or computational molecule.",
+        "source": "US10023592B2"
+      }
+    ],
+    "potential_exposure": "Other delivered but unreviewed source sections/aggregate categories may expose activities. No zero-activity-exposure, blinded selection or unseen-holdout claim.",
+    "prior_ledgers": "Earlier ERalpha/#66 and #106 literature/search exposure records remain intact; this is additive.",
+    "recorded_at": "2026-11-06T09:42:41.315807+00:00",
+    "retrieved": "All1780 original summaries include source prose/protocol/comments and aggregate SID/CID activity categories; full responses retained privately by SHA256/bytes. This is more than count-only delivery."
+  },
+  "full_evidence": {
+    "compressed_bytes": 106253,
+    "compressed_sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+    "path": "brd4_capacity_20261106.json.gz",
+    "uncompressed_bytes": 2177379,
+    "uncompressed_sha256": "acd7e2651971b5ebb39be366fe9c07e5d4078fa81dc38446604ebb28d18cb980"
+  },
+  "issues": [
+    103,
+    106
+  ],
+  "measured_counts": {
+    "accepted_experimental_sources": 0,
+    "computational_molecular_systems": 0,
+    "dedicated_activity_compound_structure_requests": 0,
+    "http_attempts": 37,
+    "http_errors": 0,
+    "manual_incompatible_endpoint_or_material": 53,
+    "manual_isolated_BD1_method_leads": 9,
+    "manual_unresolved": 19,
+    "maximum_old_pending_sid_total": 9,
+    "old_pending_sources_below_design_capacity": 11,
+    "pharmacophore_scores": 0,
+    "raw_sid_totals_at_least_100": 84,
+    "received_aids": 1780,
+    "remaining_after_prior_exclusions": 81,
+    "requested_aids": 1780,
+    "retries": 0
+  },
+  "new_tag_package_or_release": false,
+  "next": {
+    "aid": 1805333,
+    "limits": "Method lead only, no selected receptor/cohort or activity acquisition. Similar methods/patents are not independent data and are not pooled. If method fails, record that outcome before a new dated nomination.",
+    "questions": [
+      "human species and complete tagged construct",
+      "incorporated original methods",
+      "AID/result-table mapping and endpoint/units/censoring",
+      "interference/counterscreen disposition",
+      "source rights and later fixed class/cohort rules"
+    ],
+    "selection": "Highest raw SID total among explicitly isolated-BD1 method leads after complete census/manual review; not activity classes or PHMT outcome.",
+    "sid_count_all": 499,
+    "source": "US10941160B2"
+  },
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "precision": {
+    "limits": "Independent Bernoulli decision/group assumption; not achieved precision, chemical/series independence or AUC-difference power. Preserve original/evaluable/failure denominators.",
+    "method": "Public binomtest.proportion_ci Wilson95%",
+    "planning_intervals": 144,
+    "provider_source_native_identity_stable": true,
+    "rounded_groups_per_class": 50,
+    "software": "SciPy1.18.1 / Python3.14.7",
+    "worst_half_width_at_50": 0.1335548568317142
+  },
+  "published_plan_head": "327a4161ae11321084fbcdb37bbc77805e6e391a",
+  "published_plan_sha256": "051798a1cac4ba72df51fb5e8fed0022466b8bddb43c5197834b24b8f528764e",
+  "raw_source_retention": {
+    "capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-capacity-20261106-hvanytql",
+    "full_protocol_prose_published": false,
+    "portable_scope": "Exact own plans/controllers/projections/journals with source bodies represented by SHA256/bytes only; rights and cohort eligibility remain unresolved.",
+    "review_by": "2026-11-20 or relevant change"
+  },
+  "recorded_at": "2026-11-06T09:46:19.592021+00:00",
+  "release_plan": "0.4.0",
+  "remaining": "Both #103 studies incomplete. #66 retains separate methods/exposure. MolSysMT owns all molecular operations; source/installed/public/platform #9/#10/#23/#95 remain separate. Final unskipped integration and exact-head CI observation recover the interim plan skip.",
+  "resources": {
+    "acquisition": {
+      "affinity": [
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "nice": 19,
+      "peak": "24969216"
+    },
+    "administrative": {
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    },
+    "backend_threads": 1,
+    "io": "idle"
+  },
+  "runtime_scientific_inputs_provider_dependency_and_release_plan_unchanged": true,
+  "schema": "pharmacophoremt.brd4-capacity-receiving-summary@1",
+  "scope": "Prospective precision planning, complete metadata-capacity receiving and manual endpoint review. Not an accepted experiment/cohort, molecular execution, biological study or current full source/installed/public qualification.",
+  "source_head_before": "327a4161ae11321084fbcdb37bbc77805e6e391a",
+  "source_version_custody": "All requested identities exact; old20 description versions match. Dated per-source observations, not an atomic database snapshot."
+}

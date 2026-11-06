@@ -55,3 +55,19 @@ than100 tested SIDs is a necessary capacity stop, while a larger count remains
 unqualified for labels, experimental methods and molecular independence. No
 new summaries/activities are acquired at this declaration. Original institutional
 metadata still supplies no qualified copy of the incorporated RSC method.
+
+## Complete capacity and endpoint receiving — 2026-11-06
+
+The [separate outcome](../receptor_study2_capacity_receiving.md) and
+[receipt](../evidence/brd4_capacity_20261106_summary.json) retain the completed
+1,780-AID/37-batch census under the published plan. All 11 old pending sources
+have at most nine SIDs and stop for this design. Of 84 raw-capacity records,
+81 survive prior exclusions: manual review finds 53 incompatible records,
+nine isolated-BD1 method leads and 19 unresolved. No assay is accepted.
+
+Next acquire/review AID1805333's original US10941160B2 method, chosen by capacity
+among explicit BD1 leads, then settle human construct/endpoint/interference/rights
+and predeclare class/cohort rules before activity acquisition. Raw source prose
+and aggregate categories remain private and potentially exposed; one explicit
+Example1 IC50 exposure is recorded. No pooling, molecular aliases, new scores,
+provider implementation, #66 change or release-plan change is introduced.

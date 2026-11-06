@@ -71,3 +71,13 @@ acquisition; then freeze receptor/comparator/evaluation settings before scores.
 MolSysMT owns identity/scaffold, formats, preparation/state/H/water, geometry and
 transforms. No molecular routine or provider edit is introduced here. Both full
 #103 studies, installed/public qualification and the0.4.0 release plan remain.
+
+## Separate execution record — 2026-11-06
+
+The [receiving outcome](receptor_study2_capacity_receiving.md) and its original
+receipt now record complete acquisition and manual review. The declaration above
+and the published machine-plan bytes remain unchanged. All 1,780 counts resolved;
+84 records meet the raw total, 81 remain after prior exclusions, and manual review
+finds 53 incompatible records, nine isolated-BD1 method leads and 19 unresolved.
+The old pending 11-source sample fails this design's necessary capacity condition.
+Next qualify the original method for AID1805333; no activity cohort is admitted.

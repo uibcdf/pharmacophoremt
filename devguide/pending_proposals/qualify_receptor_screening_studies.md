@@ -69,3 +69,13 @@ original protocols use rabbit-lysate luciferase refolding. Next resolve the
 named original-method/construct/concentration questions and predeclare later
 source/capacity/class/rights/exclusion rules. #66 remains separate; both studies
 and the full parent objective stay incomplete. No molecular fallback is added.
+
+## Second-target capacity and endpoint receiving — 2026-11-06
+
+#106's [published-plan census](../receptor_study2_capacity_receiving.md) resolves
+all 1,780 AIDs in 37 attempts. The old 11 pending sources cannot meet the declared
+size. Manual review of 81 remaining raw-capacity records yields nine isolated-BD1
+method leads, 53 incompatible records and 19 unresolved; none is accepted.
+Next qualify AID1805333/US10941160B2's original method and later actual class/group
+capacity before admitting a second study. Molecular/provider ownership, source
+exposure and #66's separate original-method gate persist. Both studies stay open.

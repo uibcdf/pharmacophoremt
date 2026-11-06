@@ -3,10 +3,12 @@
 ## Receptor-validation objective — accepted 2026-11-06
 
 [#106](pending_proposals/qualify_brd4_second_receptor_study.md) now owns
-[second-target admission](receptor_study2_source_review.md): bounded metadata
-and original-method receiving prioritizes BRD4 BD1, with no accepted target/cohort.
-Resolve the named original-method/construct questions and declare source/data
-selection before activity acquisition; both biological studies remain pending.
+[second-target admission](receptor_study2_capacity_receiving.md): the complete
+published-plan 1,780-AID capacity census leaves nine isolated-BD1 method leads
+after endpoint review, with no accepted target/cohort. The earlier pending sample
+fails necessary capacity for this design. Next qualify the original method for
+AID1805333/US10941160B2 and predeclare class/cohort selection before dedicated
+activity acquisition. Both biological studies remain pending.
 
 
 The [prepared-input audit](receptor_preparation_admission_audit.md) and [first-study admission protocol](receptor_study1_admission_protocol.md) now separate source admission from biology. #105 receives provider-defined aromatic-N directions through the [qualified experimental source profile](public_cached_aromatic_n_generation.md). Next admit an original-method binding source/cohort and preparation contract before freezing/evaluating study1; review a second target against data quality and an informative scientific contrast. Existing MolSysMT#375/#323 own carboxylate/H-refinement gaps. #104 removes direct CIF traversal from the source helper. The biological source/cohort and complete method remain unqualified; this progress does not complete either study.

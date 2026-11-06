@@ -1,5 +1,33 @@
 # Development Checkpoint
 
+## Complete BRD4 capacity/endpoint receiving — 2026-11-06
+
+[#106](pending_proposals/qualify_brd4_second_receptor_study.md) now has a
+[complete census/review](receptor_study2_capacity_receiving.md) and
+[original receipt](evidence/brd4_capacity_20261106_summary.json), following the
+immutable plan published at327a416. All 1,780 AIDs resolve in37 HTTP200 attempts;
+84 raw records meet100 SIDs,81 remain after prior exclusions. Manual review:
+53 incompatible, nine isolated-BD1 method leads,19 unresolved; zero accepted
+experiments. All11 old pending sources have at most nine SIDs, so their unread
+incorporated RSC reference cannot fix the new design's capacity stop.
+
+**Next:** qualify the original US10941160B2 method for AID1805333 (499 raw SIDs),
+the largest explicit isolated-BD1 lead. Verify human species, tagged construct,
+incorporated methods, result-column/endpoint/units, interference and rights.
+Then declare class/cohort/exposure/grouping rules before dedicated activities;
+do not pool patents or infer independent/weak groups from raw totals. Raw summary
+prose/aggregate categories and explicit Example1 IC50 exposure remain recorded;
+no unseen-holdout claim. #66 remains separate, MolSysMT retains all molecular
+work (#447/#323/#375), and both #103 studies stay unfinished.
+
+Final integration must recover the interim plan's CI skip with an unskipped
+head and exact-head hosted observation under #9. Local administrative/archive
+checks are not full source/installed/public/platform qualification. Runtime,
+scientific inputs, provider trees, dependencies and0.4.0 plan remain unchanged.
+Owned capsule build/phmt-brd4-capacity-20261106-hvanytql, LMMV/dprada,
+review2026-11-20 or relevant change. Serial CPU19/512MiB/no swap/tasks32/
+low-priority phases leave resources available to other work.
+
 ## BRD4 precision/capacity declaration, before acquisition — 2026-11-06
 
 #106 now has a [prospective protocol](receptor_study2_capacity_protocol.md) and

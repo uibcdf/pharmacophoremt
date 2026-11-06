@@ -2,9 +2,11 @@
 
 Welcome to the official developer guide for **PharmacophoreMT**. This directory is the "source of truth" for the toolkit's architecture, standards, and planning.
 
-[Second-receptor source review](receptor_study2_source_review.md), #106, records
-BRD4/HSP90 metadata and original-method feasibility. BRD4 BD1 is prioritized
-for further admission; no second target or experimental cohort is accepted.
+[Second-receptor capacity receiving](receptor_study2_capacity_receiving.md),
+#106, completes the published-plan 1,780-AID census: nine isolated-BD1 method
+leads remain after endpoint review, with no accepted source/cohort. Next qualify
+the original AID1805333 method. The earlier
+[BRD4/HSP90 source review](receptor_study2_source_review.md) retains its own scope.
 
 
 [Current source receiving — 2026-11-06](source_suite_receiving_20261106.md) records #102's corrected schema-envelope guards, 111 passing selected controls and the complete/incomplete hosted/local evidence without merging their scopes. Start with the [checkpoint](checkpoint.md) for current gates.
@@ -54,7 +56,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #95's post-review consolidation now covers fbe6677, including #82/#99/#100 and #101's unchanged source-name policy. All 46 changed runtime files/nine original argument-signature changes are reviewed; 59 private input hashes match. Fresh main/index checks still identify received MolSysMT 0.23.0/ArgDigest 0.17.1; closed #255/#431 source work is distinct from public delivery/#375. Strict local 62-document/two-image render passes with execution off. Next receive supported public molecular bytes, select the exact candidate and execute #9/#10/#23 gates. Actual plan/tag/Release stays 0.4.0; no freeze/publication/addon work. Serial one-CPU/1-GiB/no-swap commands preserve shared resources.
+3. [Checkpoint](checkpoint.md): **Start here!** Current 2026-11-06 receiving separates #103's unfinished biological studies, #106's capacity/method admission and #9/#10/#23/#95 source/installed/public delivery. Next qualify AID1805333's original method; no cohort or new release is accepted. Actual plan/tag/Release stays 0.4.0. Shared-host phases remain serial, on one CPU with 512 MiB/no swap and low priority.
 
 ## Classical Workflow Specification
 
