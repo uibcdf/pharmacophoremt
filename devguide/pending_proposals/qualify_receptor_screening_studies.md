@@ -1,10 +1,10 @@
 ---
 summary: Qualify a reproducible receptor-to-screening workflow on ERalpha and a second receptor.
 issue: uibcdf/pharmacophoremt#103
-status: open
+status: partial
 opened: 2026-11-06
 closed:
-verification: asserted
+verification: measured
 area: [science, receptor, validation]
 guard:
 normative: devguide/validation_collection.md
@@ -33,6 +33,10 @@ Existing analytical, preparation, pose, cached-generation and activity records r
 ## Initial review — 2026-11-06
 
 The [initial evidence review](../receptor_validation_evidence_review.md) distinguishes the cellular agonist ligand-reference cohort from receptor geometric controls and #66's unqualified binding-source pool. No fresh study, molecular run or holdout is claimed. The next protocol must declare receptor construction and data eligibility before evaluation; it cannot silently replace #66's frozen ligand-query method.
+
+## Prepared-input audit and first-study admission — 2026-11-06
+
+The [read-only preparation/provider audit](../receptor_preparation_admission_audit.md) and [stage-A study protocol](../receptor_study1_admission_protocol.md) now separate actual source readiness/CIP/direction observations from biological eligibility. #104 removes a historical direct-CIF traversal with nine passing controls. New PHMT#105 owns consuming already delivered aromatic-N directions; measured carboxylate and H-refinement needs are handed to MolSysMT#375/#323. No new activity cohort, model/score or completed study is claimed.
 
 ## First work package
 

@@ -40,6 +40,54 @@ def test_receptor_scope_uses_label_chain_a_with_source_indices(audited):
     assert report["policy"]["bioassembly"] == "not_constructed"
 
 
+def test_author_chain_inspection_is_delegated_to_public_molsysmt(audited, monkeypatch):
+    import ast
+    import importlib
+    import inspect
+
+    module = importlib.import_module(audit.__module__)
+    tree = ast.parse(inspect.getsource(module))
+    assert not any(
+        isinstance(node, ast.Call)
+        and isinstance(node.func, ast.Attribute)
+        and node.func.attr in {"getObj", "getValue", "getRowCount"}
+        for node in ast.walk(tree)
+    ), "Delegate molecular format-field inspection to MolSysMT"
+
+    source, original, _, _ = audited
+    provider_get = msm.get
+    chain_queries = []
+
+    def observed_get(system, *args, **kwargs):
+        if (
+            isinstance(system, str)
+            and system == str(SOURCES / "1qku.cif")
+            and kwargs.get("element") == "chain"
+            and kwargs.get("chain_id") is True
+            and kwargs.get("chain_name") is True
+        ):
+            chain_queries.append(kwargs.copy())
+        return provider_get(system, *args, **kwargs)
+
+    monkeypatch.setattr(msm, "get", observed_get)
+    result = portable(audit(source))
+    assert len(chain_queries) == 1
+    assert chain_queries[0]["output_type"] == "dictionary"
+    assert scientific_projection(result) == scientific_projection(original)
+    # Frozen in both original eralpha_receptor_py314 runs, before this migration.
+    assert result["source"]["deposited_label_to_author_chains"] == {
+        "A": ["A"],
+        "B": ["B"],
+        "C": ["C"],
+        "D": ["A"],
+        "E": ["B"],
+        "F": ["C"],
+        "G": ["A"],
+        "H": ["B"],
+        "I": ["C"],
+    }
+
+
 def test_heavy_atom_gaps_are_outside_the_observed_ligand_shells(audited):
     _, report, _, _ = audited
     coverage = report["receptor_coverage"]

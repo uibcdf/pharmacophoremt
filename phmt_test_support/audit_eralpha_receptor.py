@@ -84,14 +84,16 @@ def audit(source=None):
     receptor = msm.build.get_residue_chemical_coverage(
         source, selection=RECEPTOR_SELECTION, structure_indices=0
     )
-    entry = msm.convert(
-        str(SOURCES / "1qku.cif"), to_form="mmcif.PdbxContainers.DataContainer"
+    chains = msm.get(
+        str(SOURCES / "1qku.cif"),
+        element="chain",
+        chain_id=True,
+        chain_name=True,
+        output_type="dictionary",
     )
-    sites = entry.getObj("atom_site")
     author_chains = {}
-    for row in range(sites.getRowCount()):
-        label = sites.getValue("label_asym_id", row)
-        author_chains.setdefault(label, set()).add(sites.getValue("auth_asym_id", row))
+    for label, author in zip(chains["chain_id"], chains["chain_name"], strict=True):
+        author_chains.setdefault(label, set()).add(author)
     shells = {}
     for radius in SHELL_RADII:
         selection = (

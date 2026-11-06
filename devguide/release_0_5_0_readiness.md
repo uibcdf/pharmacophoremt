@@ -11,6 +11,12 @@ Later development can continue through 0.10.0, 0.11.0 and further 0.x.y
 versions. Neither stabilization nor the 1.0.0 decision is tied to 0.9.x;
 readiness follows the agreed scope and evidence, not a fixed minor count.
 
+## Later source-helper receiving — 2026-11-06
+
+[#104](https://github.com/uibcdf/pharmacophoremt/issues/104) replaces direct CIF traversal in one unshipped receptor-audit helper with public MolSysMT getters. Its nine source guards and two selected shared-stager controls pass; the helper digest is updated after the initial correct stale-pin refusal. The [admission audit](receptor_preparation_admission_audit.md) / [receipt](evidence/receptor_admission_audit_20261106_summary.json) retain this59-input delta:58 unchanged and one reviewed helper update. Earlier exact51/59-hash statements describe their original snapshots, not an assertion that this later helper is unchanged. No public runtime API, molecular source, dependency/provider pin or version plan changes.
+
+#103's first-study admission and #105's planned aromatic-N receiving are separate forward scientific work. New carboxylate/H-refinement/data gates do not expand proposed0.5.0 automatically. Public modern molecular delivery and exact candidate/source/installed/public/platform gates retain their authority.
+
 ## Current source receiving — 2026-11-06
 
 [Source receiving](source_suite_receiving_20261106.md) records #102's two test-only envelope corrections at immutable `5a86017`, 111 passing selected controls and the independent full-source/failed/local-capacity evidence. Corrected full hosted evidence remains pending; queued/executing cells and incomplete local runs are not passing gates. This does not freeze a candidate, establish clean installed/public closure or resolve #95's required modern molecular delivery.
@@ -32,7 +38,7 @@ plans through the unchanged shared private stager. Its guard fails before and
 passes after; actual isolated imports and collection of 126 selected nodes pass,
 with no scientific bodies executed. That original 57-input receiving retains its
 scope; #97 subsequently adds two cached-scaling inputs, bringing the declaration
-to 59. All current hashes match; a metadata check is not a new staged/scientific run.
+to 59. All hashes matched that reviewed snapshot; the later #104 helper delta is recorded above. A metadata check is not a new staged/scientific run.
 This does not qualify an installed artifact or supported native matrix.
 
 [#82 published-provider receiving](native_io_argdigest_receiving.md) now verifies
@@ -96,7 +102,7 @@ not automatic prerequisites for this consolidation.
 | Public molecular/dependency closure | Existing public closure passes 203 selected controls with 18 modern-capability skips. New registry/index observation still finds public MolSysMT 0.23.0. Resolve supported delivery/#375 and receive actual bytes before full proposed-scope qualification; #255/#431 are closed source history and skips are not acceptance |
 | Hosted supported source matrix | #9 owns exact-head Python 3.11–3.14 Linux/macOS recovery; inspect the candidate's executed required jobs rather than reusing old-head or queued results |
 | Public contract and migration notes | Current review/draft notes include #82/#99/#100 and #101's unchanged source-name policy, original nine signature changes and no later additions. Recheck the candidate; retain scientific/provider limits and application-subclass batch migration |
-| Installed test inputs | 59 privately staged files, original 51 exact plus six #96/two #97 additions; current hashes match. Three new runtime contract files are inventoried. This does not replace exact-file installed tests |
+| Installed test inputs | 59 declared private inputs:58 unchanged from aa837dc and one #104 helper update, qualified by nine source/two shared-stager controls. Original51/six #96/two #97 receipts remain historical. Three runtime contract files stay inventoried. Exact-file installed tests remain pending |
 | Version/metadata plan | Review and commit the real 0.5.0 release plan when a candidate is selected. The existing `devtools/conda-build/release_plan.toml` still records 0.4.0 and is deliberately unchanged by this planning stage |
 | Candidate distribution/install | #10/#23 retain exact-file build, dependency-closure, installed supported-platform/minor and independent public-install requirements; a new source tag cannot certify them |
 | Documentation | Verify the applicable candidate docs/environment/publication route; a bounded linked-page render is not hosted/full-site publication |

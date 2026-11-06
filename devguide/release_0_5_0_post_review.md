@@ -1,5 +1,10 @@
 # 0.5.0 post-review consolidation
 
+## Later private-helper delta — 2026-11-06
+
+The immutable review below retains its original fbe6677 runtime/source scope. [#104 receiving](receptor_preparation_admission_audit.md) subsequently changes one unshipped receptor helper and its declared test-support digest, preserving all58 other private inputs and the public runtime. Nine source controls and two selected shared-stager controls pass. This is a separate source/helper receipt, not a new candidate, artifact or biological result; #103/#105 scientific work has independent admission gates.
+
+
 Owner LMMV/dprada; 2026-11-05; [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
 Reviewed source `fbe6677f5a770a2123a2512fc3367a93209456ae`, not a frozen candidate.
 [Original new inspection](evidence/release_050_consolidation_20261105_summary.json)
@@ -33,7 +38,7 @@ of missing APIs. Current source-route/context counts are 14/eight.
 
 The private support list is **59 files**: original 51 entries exact, six #96
 receptor helper/plan additions and two #97 cached-scaling additions. All 59 input
-hashes match current bytes. Three new runtime contract files are in the Conda
+hashes matched the reviewed bytes. The later #104 delta above supersedes only that helper's current hash. Three new runtime contract files are in the Conda
 resource inventory. The shared @1 stager/accepted SDK are unchanged; private
 import/collection and installed/full-platform tests retain separate scopes.
 

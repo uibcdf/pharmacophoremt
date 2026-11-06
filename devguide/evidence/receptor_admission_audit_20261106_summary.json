@@ -1,0 +1,121 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "36a70e8fcca0c28acbfbc67e12bdd46fe15496676735b7cd951da861e44c6622",
+    "devguide/archive/README.md": "19945b41a873dc82e588dea69cebf75496b1fa346b12a52cb6b84cae01afb2ff",
+    "devguide/archive/receptor_chain_metadata_ownership.md": "6ab1ade342c139100b7c9206e8c685d13ec43ed0191aa607ba6127611f17c7f9",
+    "devguide/checkpoint.md": "86887dc10ce5430d788eb8c8341670f0a97e8bef54bbba884b8464a03e63ae3c",
+    "devguide/pending_proposals/README.md": "93b183d0fc7189ea3b14587282ce5fb82cdaacffc0d1df7be490fb26103d8f62",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "3ee95cd2744e7b83d22a737688d24cfe4614c2f0b24536b0aa9d3cfc393f75b8",
+    "devguide/pending_proposals/receive_aromatic_nitrogen_receptor_directions.md": "6a37d05a2917d64a05d6b76da65ca1daa7412b9ddd75dec89c071df4cf75fc61",
+    "devguide/receptor_preparation_admission_audit.md": "f5e4e5e5d4c93152da925f6ed58933b7ee1358c28f789a75b1fd78877f43169a",
+    "devguide/receptor_study1_admission_protocol.md": "b7cc592eae329997505ed0a198155bcb2e689ed3b47ea580fb0b5748da78c828",
+    "devguide/receptor_validation_evidence_review.md": "ee1d98bad22ab964493fd052fdd7917ceb3be9cf80fddc62cc290d0d0851009f",
+    "devguide/release_0_5_0_post_review.md": "125e7c3b9b6d71991cb1fe0458cb36ee642a30f0c912a5f2b493329b3ce02c1d",
+    "devguide/release_0_5_0_readiness.md": "5486bf474b3e500c306bd2cde40784d5f20fbe1b56bfdae001c0f7f7a14e33f2",
+    "devguide/roadmap.md": "86c7e598530a22f66c6c9a13146baf90189e093c4c0d8a29a2ddb0faac07738a",
+    "devtools/conda-build/resources.toml": "cca608bf067b2722af0980cfd84616e1b77608252cd28a3bb44b463f8abeab06",
+    "docs/content/validation/prepared_receptor_workflow.md": "8ca3eeb8b3006df973956213e945a0c1917e170caab3dd1dd4514459f0ee012d",
+    "phmt_test_support/audit_eralpha_receptor.py": "6babf3722a9b962fe88798d0902842f038ab2cecda2497c4fde046cd08a445a2",
+    "tests/test_eralpha_receptor.py": "edbcac44ac80ceb54bab76a993313e16a4f34034a8734e85af58d5f813d86baf",
+    "tests/test_reporting_protocol.py": "2b11ca1ce095e00ca9b585cc0e752cef9ff7a4847027b034655a72e2acdd99a4"
+  },
+  "attempts": {
+    "ownership_after": {
+      "cases": 9,
+      "errors": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "ownership_before": {
+      "cases": 1,
+      "errors": 0,
+      "failed": 1,
+      "skipped": 0
+    },
+    "ownership_final": {
+      "cases": 9,
+      "errors": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "ownership_mapping_final": {
+      "cases": 9,
+      "errors": 0,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-receptor-audit-20261106-5_32rtg8",
+  "docs": {
+    "assets": 2,
+    "execution": "off",
+    "source_documents": 62,
+    "strict_render_exit_code": 0
+  },
+  "full_evidence": {
+    "compressed_bytes": 1308666,
+    "compressed_sha256": "68e697c2df1ad1e8175f639b2b8f036c77a0e72169d5439cd6b61d5cd54f1fc1",
+    "path": "receptor_admission_audit_20261106.json.gz",
+    "uncompressed_bytes": 22069420,
+    "uncompressed_sha256": "7f0ff38ed65bf0ce155a8353501156e37413d2a1480558fe60a13d17287d125b"
+  },
+  "future_work": "#105 explicit native aromatic-N receiving; study preparation/data/method gates remain #103. MolSysMT #323/#375 provider-owned. #9/#10/#23/#95 separate qualification/delivery. Plan/tag/Release remains 0.4.0.",
+  "identity_scope": {
+    "final_direction_full_identity_equality": true,
+    "first_readiness_physical_source_native_stable": true,
+    "first_readiness_strict_metadata_equality": false,
+    "note": "Original metadata mismatches, quantity serialization ambiguity, initial test-layout NameError and initial stale private-stager hash refusal are preserved verbatim.",
+    "selected_tests_distribution_metadata_equality": false,
+    "selected_tests_physical_identity_stable": true,
+    "source_input_custody_preserved": true
+  },
+  "issues": [
+    103,
+    104,
+    105
+  ],
+  "observations": {
+    "coordinate_cip": 264,
+    "declared_cip": 5,
+    "defined_sites": 13,
+    "directions": 16,
+    "interpretation": "Coverage and native geometry observations; neither universal chemical validity nor biological validation. MolSysMT supplies all molecular operations.",
+    "sites": 15,
+    "unsupported_sites": 2
+  },
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "private_support": {
+    "changed": [
+      "phmt_test_support/audit_eralpha_receptor.py"
+    ],
+    "files": 59,
+    "final_selected_controls_passed": 2,
+    "unchanged": 58
+  },
+  "publication_verification": {
+    "accepted_files_verified": 18,
+    "all_original_file_bodies_verified": 88,
+    "archive_integrity": true,
+    "no_archive_rewrite": true,
+    "publisher_post_write_error": "Initial publisher process could not import repository support from its script-directory sys.path. Both envelope files already existed; this independent root-context readback verifies them without replacing the archive."
+  },
+  "recorded_at": "2026-11-06T08:21:56.887349+00:00",
+  "resources": {
+    "backend_threads": 1,
+    "cpu": 19,
+    "heavy_phases": "serial",
+    "io": "idle",
+    "memory_max_bytes": 1073741824,
+    "nice": 19,
+    "quota": "100%",
+    "swap_max_bytes": 0,
+    "tasks_max": 32
+  },
+  "review_by": "2026-11-20 or relevant source/provider change",
+  "schema": "pharmacophoremt.receptor-admission-audit.v1",
+  "scope": "Read-only prepared-input/provider admission audit, public chain-getter ownership repair and first-study protocol. No completed biological study, clean installed environment, full suite/platform or public artifact qualification.",
+  "source_head_before": "aa837dcea5c9317e36660c333a9d0a1607e74105"
+}

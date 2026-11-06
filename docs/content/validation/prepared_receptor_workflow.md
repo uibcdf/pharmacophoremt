@@ -232,3 +232,9 @@ The separately [measured receptor contribution study](receptor_contribution.md)
 under #90 compares three PHE regions, paired feature/exclusion constraints and
 fixed tolerance/budget effects on the same original input. Its run identities
 and analytical limits remain distinct from the historical controls above.
+
+## Read-only admission review for a future binding study — 2026-11-06
+
+The separate [prepared-state audit](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_preparation_admission_audit.md), [receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/receptor_admission_audit_20261106_summary.json) and [first-study admission protocol](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_study1_admission_protocol.md) under #103 reuse these unchanged native bytes without repeating preparation, optimization or scoring. Public MolSysMT supplies readiness/CIP diagnostics and15 critical-region sites/16 directional records. GLU353 side-chain directions remain unsupported; HIS524 aromatic-N receiving is a separate PHMT proposal. These observations do not make the historical fragment assay-matched, environment-refined or biologically validated.
+
+Source custody and physical producers remain stable. The first diagnostic run's strict distribution-metadata equality fails and is retained; the final direction run has full identity equality. Quantities use verified PyUnitWizard records, actual credits are archived, and original attempts are preserved. No runtime/memory superiority, whole-library/platform/installed/public qualification or new activity cohort follows. The original case/scientific results above remain unchanged.

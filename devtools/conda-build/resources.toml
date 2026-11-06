@@ -252,7 +252,7 @@ sha256 = "a27ac8a7dd7537447fd865970fa81ff869f5ca819d553abbf0665d02bf39bf36"
 [[installed_tests.support.files]]
 source = "phmt_test_support/audit_eralpha_receptor.py"
 target = "phmt_test_support/audit_eralpha_receptor.py"
-sha256 = "2bac1fadefcba1c69c42835b054e6b1fc6ccbf359d60601f14c69c6ff5b2547f"
+sha256 = "6babf3722a9b962fe88798d0902842f038ab2cecda2497c4fde046cd08a445a2"
 
 [[installed_tests.support.files]]
 source = "phmt_test_support/audit_eralpha_sources.py"
