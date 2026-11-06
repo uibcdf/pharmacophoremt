@@ -262,17 +262,18 @@ class TestDistributionContract(unittest.TestCase):
                 declaration,
                 ("pharmacophoremt", "molsysviewer_pharmacophoremt"),
             ) as stage:
-                for study in (
-                    "receptor_sensitivity",
-                    "prepared_receptor_sensitivity",
-                    "receptor_hypothesis_pilot",
+                for study, helper in (
+                    ("receptor_sensitivity", "receptor_sensitivity"),
+                    ("prepared_receptor_sensitivity", "prepared_receptor_sensitivity"),
+                    ("receptor_hypothesis_pilot", "receptor_hypothesis_pilot"),
+                    ("cached_generation_scaling", "benchmark_cached_generation"),
                 ):
                     with self.subTest(study=study):
-                        spec = importlib.util.find_spec(f"phmt_test_support.{study}")
+                        spec = importlib.util.find_spec(f"phmt_test_support.{helper}")
                         self.assertIsNotNone(spec, "selected test helper is missing")
                         self.assertEqual(
                             Path(spec.origin),
-                            stage.root / f"phmt_test_support/{study}.py",
+                            stage.root / f"phmt_test_support/{helper}.py",
                         )
                         plan = f"tests/data/{study}/plan.json"
                         self.assertEqual(

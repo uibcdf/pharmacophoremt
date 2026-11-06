@@ -1,0 +1,32 @@
+{
+  "schema": "pharmacophoremt.cached-generation-scaling-plan@1",
+  "issue": 97,
+  "profile": "donor_aromatic_faces",
+  "donor_distances_nm": [0.28, 0.35],
+  "aromatic_distances_nm": [0.35, 0.45],
+  "radius_nm": 0.02,
+  "excluded_radius_nm": 0.03,
+  "warmups": 1,
+  "repeats": 5,
+  "allocation_repeats": 1,
+  "worker_timeout_seconds": 180,
+  "standard_units": ["nm", "ps", "radians"],
+  "thread_environment": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "cases": [
+    {"id": "size_1_1", "donors": 1, "rings": 1, "exclusions": 0, "budget": 8},
+    {"id": "size_2_2", "donors": 2, "rings": 2, "exclusions": 0, "budget": 8},
+    {"id": "size_4_4", "donors": 4, "rings": 4, "exclusions": 0, "budget": 8},
+    {"id": "size_8_8", "donors": 8, "rings": 8, "exclusions": 0, "budget": 8},
+    {"id": "budget_0", "donors": 2, "rings": 2, "exclusions": 0, "budget": 0},
+    {"id": "budget_1", "donors": 2, "rings": 2, "exclusions": 0, "budget": 1},
+    {"id": "budget_32", "donors": 2, "rings": 2, "exclusions": 0, "budget": 32},
+    {"id": "budget_64", "donors": 2, "rings": 2, "exclusions": 0, "budget": 64},
+    {"id": "exclusions_16", "donors": 2, "rings": 2, "exclusions": 16, "budget": 8},
+    {"id": "exclusions_64", "donors": 2, "rings": 2, "exclusions": 64, "budget": 8}
+  ]
+}

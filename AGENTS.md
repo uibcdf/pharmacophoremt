@@ -34,6 +34,17 @@ reporting test command is `python -m unittest discover -s tests -p test_reportin
 The frozen Python-policy caller remains `.github/workflows/molsyssuite-policy.yml`;
 retain its reviewed pin and the separate current-guide/instruction audit.
 
+## Shared workstation resources
+
+This is a shared workstation. Keep heavy checks, builds and measurements serial;
+leave processors and RAM available for other work. Default to one allowed logical
+CPU, one numerical/backend thread and low CPU/I/O priority for heavy local tasks.
+Check available memory and memory/swap pressure before starting; defer benchmarks
+under pressure. Use standard OS resource limits where available and record the
+actual limits and any inability to enforce them. Never stop or change unrelated
+processes. These local execution defaults do not weaken required test/release
+gates; keep unexecuted work and its recovery route explicit.
+
 ## Component qualification
 
 Track this member's source qualification and public-delivery evidence in

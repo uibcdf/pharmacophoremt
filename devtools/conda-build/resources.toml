@@ -503,3 +503,13 @@ sha256 = "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63"
 source = "tests/data/receptor_hypothesis_pilot/plan.json"
 target = "tests/data/receptor_hypothesis_pilot/plan.json"
 sha256 = "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/benchmark_cached_generation.py"
+target = "phmt_test_support/benchmark_cached_generation.py"
+sha256 = "165b6ddc6feca62b0004d0f2aad66bd8f334af008a19e077fb7b6289e3333d84"
+
+[[installed_tests.support.files]]
+source = "tests/data/cached_generation_scaling/plan.json"
+target = "tests/data/cached_generation_scaling/plan.json"
+sha256 = "c60372071eb89aa20133c2964cfd0eff67ea12591f94d8c4589205c859b9d088"
