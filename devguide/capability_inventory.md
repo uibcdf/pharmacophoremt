@@ -35,7 +35,7 @@ required; broader #6 and installed/public dependency closure remain separate.
 | `method="interaction-collection"`; `modeler.from_interaction_collection` | Available for named compatible analyses on one prepared source/frame | One composed query; source maps, duplicate policy and observation coverage matter | [Workflow](interaction_composition_workflow.md), [tests](../tests/test_interaction_composition.py) |
 | `method="complex-based"` (default); `ComplexBasedModeler` | Available as explicit cached-collection facade; requires ligand selection and collection | One query for one frame; list for multiple requested frames. No automatic complex preparation/detection | [Workflow](complex_based_workflow.md), [tests](../tests/test_complex_based_facade.py) |
 | `method="structure-based"`; `StructureBasedModeler`, `from_receptor_projections` | Available for cached receptor inventory and caller-declared projections | One hypothesis in the cached frame, optional explicit exclusions. No pocket discovery or inferred optimal ligand pose | [Workflow](structure_based_workflow.md), [tests](../tests/test_receptor_projections.py) |
-| `modeler.from_receptor_features` | Available in development source for explicit donor/aromatic generation and the experimental cached-carbonyl profile, with physical distance/radius choices, finite budgets and optional cached exclusions | Separate hypotheses, exact completion/omissions and independent zero-weight exclusions; carbonyl requires native MolSysMT directions and explicit structure position/orientation. Cache consistency does not authenticate source. No molecular operation, pruning, ranking or biological qualification | [Original contract](public_receptor_generation.md), [carbonyl contract](public_cached_carbonyl_generation.md), [exclusions](receptor_generation_exclusions.md), [public cache controls](../tests/test_cached_carbonyl_generation.py), [replay case](../docs/content/validation/public_carbonyl_generation.md) |
+| `modeler.from_receptor_features` | Available in development source for explicit donor/aromatic generation and the experimental cached-carbonyl and aromatic-N profiles, with physical distance/radius choices, finite budgets and optional cached exclusions | Separate hypotheses, exact completion/omissions and independent zero-weight exclusions; experimental acceptors require native MolSysMT directions and explicit structure position/orientation. Aromatic-N receiving admits the provider's defined models2/3, not unsupported carboxylates. Cache consistency does not authenticate source. No molecular operation, pruning, ranking or biological qualification | [Original contract](public_receptor_generation.md), [carbonyl contract](public_cached_carbonyl_generation.md), [aromatic-N contract](public_cached_aromatic_n_generation.md), [exclusions](receptor_generation_exclusions.md), [carbonyl controls](../tests/test_cached_carbonyl_generation.py), [aromatic-N controls](../tests/test_cached_aromatic_n_generation.py), [replay case](../docs/content/validation/public_carbonyl_generation.md) |
 | `method="ligand-based"`; `LigandBasedModeler` | Available with explicit `consensus_method="rigid"` or `"aligned_cliques"` and prepared ligand records | List of models, possibly empty. Legacy conformer-generation options accept only inert defaults; no implicit chemical preparation | [Tests](../tests/test_ligand_based_facade.py), [workflow](prepared_consensus_workflow.md) |
 | `modeler.from_aligned_ligands` | Available as a direct tool, outside the generic facade's six method names | Reference-based consensus in a declared shared frame; reference dependence remains | [Workflow](aligned_consensus_workflow.md), [tests](../tests/test_aligned_consensus.py) |
 | `modeler.from_aligned_ligand_cliques`, `from_rigid_ligands` | Available as direct tools with explicit support/search budgets | Joint-support hypotheses; rigid fits delegated to MolSysMT, no exhaustive conformational optimum | [Aligned workflow](aligned_clique_consensus_workflow.md), [rigid workflow](rigid_consensus_workflow.md) |
@@ -95,24 +95,25 @@ The [new contract guards](../tests/test_model_dispatch_contract.py) use endpoint
 spies to verify boundary order/identity; existing real molecular workflow tests
 provide the separate compatibility controls. They do not test predictive utility.
 
-Current follow-up (2026-11-04): #75/#76 native persistence, #60 ownership,
-#77 merge and #78 nested facade repairs are qualified in their stated source
-scopes. [Native constraint semantics](native_constraint_semantics.md) under #79
-qualifies part of audit 8–9; #80 reviews support/redundancy. The first
-[receptor sensitivity matrix](receptor_sensitivity_protocol.md) under #83 passes
-245 selected cases (49 new), and #84 fixes the measured unit-policy radius
-boundary. Audit item 12 stays partial for real development/preparation/search
-uncertainty. The [prepared-receptor extension](prepared_receptor_sensitivity_protocol.md)
-under #85 now passes 288 selected controls (43 new) with the original source and
-complete 64-attempt matrix. The [first cached generation pilot](receptor_hypothesis_pilot_protocol.md)
-under #86 now qualifies eight donor/ring alternatives, budget states, independent
-oracles and native recovery with 110 selected passing controls (34 new). It is
-unshipped case support. Its [public cached tool](public_receptor_generation.md),
-#87, now passes 192 selected source controls (54 new), with explicit parameters
-and multiple source occurrences. Next compose optional cached exclusions;
-further directions remain MolSysMT #375 and optional
-pocket receiving TopoMT #101. Broader #6 declarations, molecular SDF
-ownership #74/MolSysMT #215 and experimental #66 retain separate gates.
+Current follow-up (2026-11-06): native persistence, ownership, merge, constraint
+semantics and facade contracts retain their separately qualified source scopes.
+The [receptor sensitivity matrix](receptor_sensitivity_protocol.md),
+[prepared-source extension](prepared_receptor_sensitivity_protocol.md) and
+[cached-generation pilot](receptor_hypothesis_pilot_protocol.md) remain analytical
+or preparation controls, not biological studies. Cached exclusions are already
+implemented under [#88](receptor_generation_exclusions.md), and the explicit
+[aromatic-N profile](public_cached_aromatic_n_generation.md) is received under
+#105 with250 unique selected passing controls. These counts retain their own
+original producers and must not be added across overlapping selections.
+
+Next scientific work is the separately declared source/cohort and preparation
+admission under [#103](pending_proposals/qualify_receptor_screening_studies.md),
+including #66's original ERalpha methods and #106's BRD4 qualification. Required
+carboxylate/environmental-H and molecular/grouping gaps stay with MolSysMT
+#375/#323/#447; optional pocket receiving stays with TopoMT #101. Broader #6
+contracts, SDF ownership #74/MolSysMT #215 and public source/installed/package
+qualification remain independent. The [checkpoint](checkpoint.md) identifies
+the current next action; the dated sections below preserve their earlier scope.
 
 ## Persistence review — 2026-11-04
 

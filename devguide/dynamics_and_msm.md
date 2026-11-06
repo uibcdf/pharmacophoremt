@@ -1,5 +1,7 @@
 # Dynamics and Markov State Models (MSM)
 
+> Status reviewed2026-11-06: Prospective Gen2 design, not a delivered trajectory/MSM pipeline. Consult the capability inventory for current scope. Molecular trajectory representation, processing and general calculations belong to MolSysMT. See [capabilities](capability_inventory.md), [roadmap](roadmap.md) and [testing](testing_and_validation.md).
+
 This document details the architecture for dynamic pharmacophore (Dynophores) analysis.
 
 ## 1. Trajectory Extraction Pipeline

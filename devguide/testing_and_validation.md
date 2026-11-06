@@ -1,117 +1,130 @@
-# Testing and Scientific Validation
+# Testing and scientific validation
 
-Rigorous testing and validation are non-negotiable for a scientifically credible pharmacophore toolkit. This document defines the requirements for both the software test suite and the scientific validation of pharmacophore models.
+Reviewed 2026-11-06 for onboarding. The [capability inventory](capability_inventory.md)
+identifies implemented APIs; the [validation collection](validation_collection.md)
+governs evidence. Historical results retain their producer and environment.
+Passing software controls does not establish experimental predictive accuracy.
 
----
+## Select the verification scope
 
-## 1. Software Test Suite
+| Scope | Evidence | Starting point |
+| --- | --- | --- |
+| Reporting/archive integrity | Issue records, indexes and original bytes | Commands below; [reporting protocol](reporting_protocol.md) |
+| Selected source controls | Exercised code and actual provider combination | Tests linked from the capability inventory |
+| Complete source qualification | Applicable complete suite on supported environments | [CI workflow](../.github/workflows/CI.yaml), #9/#23 |
+| Installed/public delivery | Exact distributed file and dependency closure | [Release readiness](release_0_5_0_readiness.md), #10/#23/#95 |
+| Scientific study | Declared inputs, labels, comparisons and uncertainty | Owning protocol and original evidence |
 
-### 1.1 Coverage Requirements
+For documentation/report changes, run from the repository root:
 
-Every public-facing component must have at least one integration test that exercises the component end-to-end. The current critical gaps are:
+```bash
+python -B devtools/devguide_index.py --check
+python -B -m unittest discover -s tests -p test_reporting_protocol.py
+python -B -m unittest discover -s tests -p test_evidence_archive.py
+git diff --check
+```
 
-| Component | Required Test |
-| :--- | :--- |
-| `LigandBasedModeler` | Require explicit native method and prepared inputs; check joint distinct-ligand support, minimum sites, source/frame/unit evidence and evaluated-empty versus failed calculations; no legacy score |
-| `StructureBasedModeler` | Consume cached receptor features and explicit projections; guard complementary kinds, query orientations/units, declared frame/state/selection, independent exclusions, saved evidence and no molecular calls (`test_receptor_projections.py`) |
-| `ComplexBasedModeler` | Consume explicit native observations on the same prepared source; guard nine analytical sites, evaluated-empty families, failed coverage and prepared ERα continuation (`test_complex_based_facade.py`, `test_eralpha_interface.py`) |
-| `VirtualScreening` | Screen a small library (5 actives + 5 decoys) against a known pharmacophore; assert actives rank above decoys |
-| Full pipeline | model → screen → validate (EF, LOO) on a benchmark dataset |
-| IO round-trips | Read every format, write back, read again; assert numerical equivalence within tolerance |
+After changing a queued report, first regenerate indexes with
+`python -B devtools/devguide_index.py`. Archive checks do not execute science or
+certify its conclusions. For Sphinx builds, follow the
+[documentation contributor guide](../docs/README.md); notebook execution is off.
 
-### 1.2 Physical Invariance Tests
+In a qualified Python 3.14 development environment, a focused selection is:
 
-These tests verify that the geometric computations are correct regardless of the arbitrary coordinate system.
+```bash
+python -m pytest --receptor=llm tests/test_validation_metrics.py tests/test_retrospective.py
+```
 
-- **Translational invariance**: shift all atom coordinates by an arbitrary vector; the pharmacophore interaction sites must shift by the same vector, and all inter-site distances must remain identical.
-- **Rotational invariance**: rotate all atom coordinates by an arbitrary rotation matrix; the pharmacophore interaction sites must rotate accordingly, and all inter-site distances and direction angles must remain invariant.
-- **Unit invariance**: verify that `get_distance_matrix()` returns the same values regardless of whether coordinates were input in Å or nm.
+Select other tests by changed code, inputs and provider boundaries. Check actual
+import origins and the matching dependency context first. The
+[environment guide](../devtools/conda-envs/README.md) distinguishes ordinary,
+controlled-source and public-provider routes. A justified optional-provider skip
+does not satisfy its designated installed gate.
 
-### 1.3 Regression and Inter-Library Stability
+The complete source command is `python -m pytest --receptor=llm`; it requires
+the complete selected dependency route and sufficient resources. Follow root
+shared-workstation instructions: serial heavy phases, one allowed CPU/backend
+thread, bounded memory and low priority. Select an available CPU on the new
+machine and verify enforcement; do not copy CPU19 from an old receipt. Interrupted
+or resource-limited attempts remain incomplete. Retain recovery under #9 rather
+than increasing limits or presenting selected controls as a full-suite pass.
 
-- Pinned tests against known outputs on benchmark structures (ERα, DHFR, thrombin): the generated pharmacophore must match the reference within configurable tolerances.
-- Automated checks that updates to `molsysmt` or `pyunitwizard` do not break `pharmacophoremt` contracts — run as part of CI.
+## Software and numerical controls
 
-### 1.4 Format Round-Trip Tests
+Use independent expected values and relevant positive, negative, degenerate and
+failure cases. Existing modules are starting points, not a list of missing code:
 
-Reading an external file and writing it back must preserve all essential features:
-- Coordinates must match within 0.001 Å.
-- Feature type labels must be identical.
-- Direction vectors must match within 1° angular deviation.
-- Required for: pharmer, ligandscout, rdkit, sdf, json, yaml.
+| Boundary | Preserve | Starting controls |
+| --- | --- | --- |
+| Ligand consensus | Explicit native method, prepared inputs, distinct support, budgets and empty/failed distinction | [Ligand facade](../tests/test_ligand_based_facade.py), [rigid consensus](../tests/test_rigid_consensus.py) |
+| Receptor projections | Complementary kinds, direction/frame/unit custody, exclusions and provider ownership | [Projections](../tests/test_receptor_projections.py), [aromatic-N receiving](public_cached_aromatic_n_generation.md) |
+| Complex facade | Explicit cached observations/selection, same-source/frame coverage and failures | [Complex facade](../tests/test_complex_based_facade.py), [ERalpha interface](../tests/test_eralpha_interface.py) |
+| Screening/ranking | Known geometric answers, valid zero/negative results, ties, budgets and failed-input accounting | [Pose evaluation](../tests/test_pose_evaluation.py), [rigid search](../tests/test_rigid_search.py), [virtual screening](../tests/test_virtual_screening.py) |
+| Persistence | Declared field/schema fidelity and unsupported cases | [Native schema](native_schema.md), [fidelity matrix](persistence_fidelity.md) |
+| Retrospective reporting | Original/evaluable counts, labels/scores, settings and failures | [Result contract](retrospective_result_contracts.md), [metric controls](../tests/test_validation_metrics.py) |
 
----
+Test translation/rotation covariance of sites and invariance of relevant
+distances, angles, matching and scores. Check equivalent physical units at
+declared boundaries. Tolerances belong to the operation and quantity; one global
+coordinate/angle tolerance cannot qualify every serializer or method. MolSysMT
+owns molecular transforms and inspection; PHMT owns pharmacophore interpretation.
 
-## 2. Scientific Validation of Pharmacophore Models
+Assert independently known answers for analytical controls. Do not require every
+real active to outrank every weak compound or update baselines merely to obtain
+a green test. Changed scientific answers require investigation and an owning
+issue. Format availability does not establish lossless support for every shape,
+constraint, provenance field or molecular reference.
 
-Before any screening campaign, the pharmacophore model must be validated with the following methods.
+## Current scientific evaluation APIs
 
-### 2.1 Leave-One-Out (LOO) Validation
+Actual exports are `validation.enrichment_factor`, `roc_auc`, `bedroc`,
+`RetrospectiveValidator` and `LeaveOneOutValidator`; see the
+[module exports](../pharmacophoremt/validation/__init__.py) and capability inventory.
+Earlier `compute_*`, `validate_loo` and `load_benchmark` names in this document
+were implementation sketches, not supported API instructions.
 
-**Purpose:** Verify that the pharmacophore model generalizes across the training set.
+Scores rank higher first and must be finite; binary labels are explicit study
+inputs. Native EF uses `ceil(fraction * N)` with shared credit at boundary ties.
+AUC gives half credit to tied active/weak pairs. AUC/BEDROC return NaN when the
+required class comparison is undefined. Declare score direction, fractions,
+BEDROC alpha and ties before evaluation. The
+[metric implementation](../pharmacophoremt/validation/metrics.py) and its controls
+own exact definitions and edge cases.
 
-**Protocol:**
-1. For each active compound `i` in the training set (i = 1 to N):
-   a. Build a pharmacophore using all actives **except** `i`.
-   b. Screen compound `i` against the resulting model.
-   c. Record whether `i` is recovered (RMSD ≤ cutoff or Fit Value ≥ threshold).
-2. Report the LOO recall: `n_recovered / N`.
-3. A model with LOO recall < 0.7 should trigger a warning that the hypothesis may be too narrow.
+LOO rebuilds from prepared inputs, requires an explicit evaluator factory and
+selects the first native hypothesis. Its recall measures self-consistency; it
+does not alone demonstrate generalization or supply a negative comparison.
+Conformers, states and observations from one ligand are not independent examples.
+Declare grouping and model selection before predictive claims.
 
-**Implementation target:** `pharmacophoremt.validation.validate_loo(modeler, actives, cutoff_rmsd=2.0)`.
+For each study, qualify original assay methods, label/censoring semantics,
+provenance/rights, molecular/series overlap, preparation assumptions, comparisons,
+finite budgets and uncertainty. Keep tuning separate from evaluation. Report
+original/evaluated denominators, valid negative scores and unscored failures;
+failed calculations are not inactivity. Identity/scaffold/state work belongs to
+MolSysMT.
 
-### 2.2 Enrichment Factor (EF)
+No universal LOO-recall, EF or AUC cutoff defines a scientifically valid study or
+successful library. Compare with a declared baseline and quantify uncertainty;
+retain negative/inconclusive results. Property-matched decoys are not automatically
+experimentally inactive, and a fixed active:decoy ratio is not a universal design.
+Select comparators for the scientific question and explain the resulting limits.
 
-**Purpose:** Measure how much better the pharmacophore selects actives compared to random.
+## Current studies and future work
 
-**Protocol:**
-1. Prepare a test set: known actives (from a public database such as ChEMBL) and decoys at a ratio of 1:39 (from DUD-E or generated by property-matching).
-2. Screen all compounds and rank by RMSD (ascending) or Fit Value (descending).
-3. At each fraction `x%` of the ranked list:
-   ```
-   EF(x%) = (# actives in top x% of list) / (x% × total_actives)
-   ```
-4. Report EF at x = 1%, 5%, 10%.
-5. A random model yields EF = 1.0. A good model should yield EF@1% ≥ 10.
+The [ERalpha review](receptor_validation_evidence_review.md) separates geometric/
+preparation controls, the earlier cellular ligand-reference cohort and unqualified
+binding sources under #66. The [first-study protocol](receptor_study1_admission_protocol.md)
+and [BRD4 admission record](pending_proposals/qualify_brd4_second_receptor_study.md)
+retain distinct gates. Both full studies under #103 are unfinished; follow the
+[checkpoint](checkpoint.md). Existing ERalpha, DHFR and thrombin files/notebooks
+are not an automatically admitted active/decoy benchmark collection.
 
-**Implementation target:** `pharmacophoremt.validation.compute_enrichment_factor(matches, actives_ids, fractions=[0.01, 0.05, 0.10])`.
+Use the [case template](templates/evidence_case.md), retaining original inputs,
+executable code, measured results, source/native identities and actual attribution.
+Reading an archive differs from reexecuting science on new providers. Larger
+workflows are opt-in and preserve failed/partial attempts.
 
-### 2.3 ROC Curve and AUC
-
-**Purpose:** Measure discriminative power across all possible score cutoffs.
-
-**Protocol:**
-1. Use the same ranked list as EF.
-2. Compute True Positive Rate (TPR) and False Positive Rate (FPR) at each cutoff.
-3. Plot the ROC curve and compute Area Under the Curve (AUC).
-4. AUC = 0.5: random; AUC > 0.7: acceptable; AUC > 0.8: good; AUC > 0.9: excellent.
-
-**Implementation target:** `pharmacophoremt.validation.compute_roc(matches, actives_ids)` → returns `(fpr, tpr, auc)`.
-
-### 2.4 Hit Rate Analysis
-
-**Purpose:** At a given score cutoff, what fraction of molecules retrieved are true actives?
-
-**Implementation target:** `pharmacophoremt.validation.compute_hit_rate(matches, actives_ids, cutoff_rmsd=2.0)` → `float`.
-
-### 2.5 MSM and Kinetic Validation (Gen 2)
-
-*(Relevant when validating dynamic pharmacophores in Gen 2)*
-
-- **Ergodicity Check**: Transition matrices must be validated for ergodicity before macrostate derivation.
-- **Timescale Separation**: Validation of the spectral gap between the slowest relaxation timescales (implied timescale analysis).
-- **Metastability**: PCCA+ macrostates must be tested for self-consistency via the crispness metric.
-
----
-
-## 3. Benchmark Datasets
-
-The following standard datasets must be available in `pharmacophoremt.data` for automated validation:
-
-| Target | PDB ID (complex) | Source of Actives | Decoys |
-| :--- | :--- | :--- | :--- |
-| Estrogen Receptor α (ERα) | 1ERE | ChEMBL / DUD-E | DUD-E |
-| Dihydrofolate Reductase (DHFR) | 1DRF | ChEMBL / DUD-E | DUD-E |
-| Thrombin | 2ZC9 | ChEMBL / DUD-E | DUD-E |
-
-A function `pharmacophoremt.data.load_benchmark(name)` must return `(complex_system, actives, decoys)` ready for use.
+Dynamics/MSM, specialized covalent/peptide/water methods and AI validation remain
+future work. They will need their own questions, numerical controls and study
+protocols when implemented; present receptor/software controls do not qualify them.

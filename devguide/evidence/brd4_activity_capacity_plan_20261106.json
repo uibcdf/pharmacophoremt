@@ -1,0 +1,75 @@
+{
+  "schema": "pharmacophoremt.brd4-assay-label-capacity-plan@1",
+  "declared_on": "2026-11-06",
+  "owners": ["LMMV", "dprada"],
+  "issues": [103, 106],
+  "declaration": "Publish these exact bytes before dedicated activity acquisition. Preserve this plan and every attempt; outcomes use separate artifacts.",
+  "source": {
+    "aid": 1805333,
+    "version": 3,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_9746_1",
+    "original_patent": "US10941160B2",
+    "original_patent_html_sha256": "109493c079f9a23038ad750881da68fa31a6ef6d4ca44b862e79fe2f9632c9fe",
+    "description_sha256": "fb9852a5db2b4983146384677aa7e8cea4ad8b62d1d9699b2547b6ce5a65cc06",
+    "expected_raw_tested_sids": 499,
+    "expected_raw_cids": 494,
+    "admission": "Endpoint/column definition qualified for necessary private label-capacity inspection only. Complete experimental material, molecular correspondence, interference and cohort eligibility remain conditional; no accepted receptor/cohort or score."
+  },
+  "endpoint": {
+    "type": "IC50",
+    "meaning": "Reported isolated-BD1 peptide-displacement potency under this assay's conditions; neither KD/Ki nor cellular potency, general inactivity or proven target engagement.",
+    "primary_source_location": "Biological Evaluation Example1 and Table24 BRD4 column/legend, separate from Raji/HL60/H460 columns.",
+    "result_fields": {
+      "type_tid": 1,
+      "type_name": "Standard Type",
+      "relation_tid": 2,
+      "relation_name": "Standard Relation",
+      "value_tid": 3,
+      "value_name": "PubChem Standard Value",
+      "value_unit": "micromolar",
+      "unit_authority": "The received TID3 descriptor explicitly states micromolar. Do not interpret numeric source-unit enum6 or interchange raw TID5 IC50 values without qualified conversion.",
+      "ignored_for_labels": ["PUBCHEM_ACTIVITY_OUTCOME", "PUBCHEM_ACTIVITY_SCORE", "IC50 Qualifier", "IC50", "Ligand", "Target", "Target Accession(s)"]
+    }
+  },
+  "labels": {
+    "strong": {"IC50_max_inclusive": 0.5, "unit": "micromolar"},
+    "weak": {"IC50_min_exclusive": 5.0, "unit": "micromolar"},
+    "rationale": "Use original patent A versus C bins, separated by more than tenfold; retain B as intermediate. Selected after method/legend and the documented incidental exposures, before any class-frequency projection or dedicated activity acquisition. No performance or favorable-count tuning.",
+    "allowed_relations": ["=", "<", "<=", ">", ">="],
+    "interval_rule": "Accept finite strictly positive IC50 values only. Interpret relation as an interval over positive potency. Strong requires the complete interval within (0,0.5]; weak requires the complete interval within (5,infinity). Never replace a censored interval by a point, midpoint or bound equality. Other supported intervals remain intermediate or class-ambiguous; retain unsupported, invalid and missing records explicitly.",
+    "boundary_examples": {"equal_0.5": "strong", "less_or_equal_0.5": "strong", "equal_5": "intermediate", "greater_than_5": "weak", "greater_or_equal_5": "class_ambiguous", "greater_than_0.5": "class_ambiguous", "less_than_5": "class_ambiguous", "zero_or_nonfinite": "invalid"},
+    "no_upstream_flag_or_other_endpoint_substitution": true
+  },
+  "capacity": {
+    "minimum_independent_eligible_groups_per_class": 50,
+    "earlier_precision_plan": "devguide/evidence/brd4_capacity_plan_20261106.json",
+    "unit": "At most one eligible group per original SID. Numeric identifiers do not establish chemical/series independence.",
+    "projection": "Retain every row, exact source identifiers and conflicting/duplicate SIDs. A SID with incompatible labels is not promoted to either eligible class. Count raw occurrences and distinct SID label upper bounds separately, with failure/ambiguous denominators.",
+    "stop": "If either eligible SID upper bound is below50, this single source cannot meet the design. Do not relax labels, pool another AID or replace unfavorable records. A later source requires a new dated nomination.",
+    "pass_is_not_admission": "At least50 raw SIDs/class only permits subsequent MolSysMT identity/scaffold/state/series and exposure admission. No chemical uniqueness, independence, accepted labels or achieved statistical precision follows."
+  },
+  "request_order": [
+    "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805333/description/JSON",
+    "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805333/summary/JSON",
+    "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805333/CSV",
+    "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805333/description/JSON",
+    "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805333/summary/JSON"
+  ],
+  "request_limits": {"maximum_top_level_requests": 5, "attempts_per_request": 1, "maximum_bytes_per_response": 2097152, "timeout_seconds": 20, "minimum_delay_seconds": 0.5, "retries": 0},
+  "receiving": "Require exact AID/version/revision, unchanged descriptor semantics and499 tested SIDs/494 raw CIDs before and after. CSV mapping must uniquely match the declared source fields before projecting labels; unexplained headers/schema/coverage or changed metadata stop receiving. Preserve delivered raw values; do not select a partial favorable prefix. A dated series of observations is not an atomic database snapshot.",
+  "rights_and_exposure": {
+    "activity_rows": "Private feasibility receiving only; no raw individual table redistribution authorized by this plan. Publish own aggregate facts, controllers and source identities. Resolve exact source-curation/license version before any later public cohort artifact.",
+    "observed_policies": [
+      {"url": "https://www.bindingdb.org/rwd/bind/info.jsp", "observation": "Current info page names CC BY3.0 for staff-curated data and CC BY-SA3.0 for ChEMBL imports."},
+      {"url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701568/", "observation": "Resource-authored2024 update states CC BY4.0 for BindingDB-curated data; do not silently reconcile this version difference or infer individual-record curation solely from database name."},
+      {"url": "https://www.ncbi.nlm.nih.gov/home/about/policies/", "observation": "NCBI hosting does not establish unrestricted rights to linked/submitted third-party material."}
+    ],
+    "prior_exposure": "Whole patent/summary/descriptor retrieval includes chemistry and potency information. Method Example1 IC502.782micromolar, first two Table24 B rows, adjacent synthesis names and unrelated chemistry snippets were actually displayed; no chemical aliases were resolved. Earlier source/ERalpha ledgers persist. No blinded/unseen-holdout claim.",
+    "threshold_timing": "Source A/B/C legend was read before this declaration; class counts have not been computed or reviewed. This is a prospective capacity projection on an exposed source, not preregistration before all literature exposure."
+  },
+  "molecular_boundary": "No chemical structure/format parsing, identity/scaffold resolution, sequence correspondence, receptor/ligand preparation or molecular geometry here. These operations remain MolSysMT-owned; use supported tools or precise owning issues. PHMT owns assay interpretation, pharmacophores and study orchestration.",
+  "resources": "Serial execution; explicit taskset to one allowed destination CPU with verified affinity (CPU19 was the historical source-host choice), CPU quota100%,512MiB/no swap/tasks32/nice19/idle I/O and backend threads1 where enforceable. Record actual limits and any inability to enforce them. Stop/defer under memory pressure; no local high-memory full-suite retry.",
+  "unchanged": "#66's frozen ERalpha study, provider/runtime/dependency/workflow bytes and release plan0.4.0. Both #103 biological studies remain unfinished."
+}

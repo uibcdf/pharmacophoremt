@@ -1,0 +1,175 @@
+{
+  "accepted_files": {
+    "devguide/evidence/brd4_activity_capacity_plan_20261106.json": "079f2b6652f17c292ca41e7eba04b3e9c2404e9c4a2f067b4ddd92669d95d718",
+    "devguide/pending_proposals/qualify_brd4_second_receptor_study.md": "d140c63bb7a486bc8ee7180bc29a5c22c05713c48e8119eca7fbbab3fc560d9b",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "141ef74e292abfbc690ff5816f03f5de3adcd90df7d65158dc70b837b360bc56",
+    "devguide/receptor_study2_primary_method.md": "b14d291be0b974b1975dd590cc3493bdd1c052c528b11de2c2bd7c1eaa4588fd"
+  },
+  "case_capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-method-20261106-wxkumo9y",
+  "facts": {
+    "accepted_experimental_sources": 0,
+    "activity_requests": 0,
+    "class_counts": null,
+    "descriptor": {
+      "aid": 1805333,
+      "micromolar_standard_value_tid": 3,
+      "raw_IC50_tid5_unit_enum": 6,
+      "raw_unit_enum_interpreted": false,
+      "relation_tid": 2,
+      "revision": 2,
+      "source": "BindingDB_9746_1",
+      "type_tid": 1,
+      "version": 3
+    },
+    "direct_patent_observation": "Biological Example1: isolated His-BD1/H4-peptide competition, final2nM protein/15nM peptide and four-parameter IC50. Table24 BRD4 separate from cellular columns. A<=0.5uM, B>0.5..<=5uM, C>5uM; categorical intervals are not exact potencies.",
+    "exposure": "Entire patent/descriptor/reference delivery potentially exposed. Actual views include Example1 IC502.782uM, first two Table24 B rows, nearby synthesis names/chemistry/SMILES snippets, reference construct pages and displayed xenograft summary. Rights search exposes unnamed affinity examples; broad local navigation re-displays already historical ERalpha fixtures. No aliases or unseen-holdout claim.",
+    "incorporated_reference": {
+      "complete_pages_visually_reviewed_now": [
+        1,
+        18,
+        19,
+        44,
+        45
+      ],
+      "doi": "10.1038/nature09504",
+      "interpretation": "Human cloning/reference expressed construct/tag documented; patent exact construct transfer remains inference. Figure1 schematic is not sequence correspondence. No molecular sequence parsing/alignment or receptor mapping.",
+      "original_pdf_sha256": "b90a7aa3d5d7d0d7ad852019d42a96938460ccd18245893dfcf48cf4774f3d2f"
+    },
+    "migration_boundary": "Goal was cleared and migration requested; this archives work already performed, not further scientific acquisition/execution. Prepared activity plan remains unexecuted.",
+    "models_or_scores": 0,
+    "molecular_operations": 0,
+    "recorded_at": "2026-11-06T16:48:05.548460+00:00",
+    "remaining": [
+      "exact patent/reference material correspondence",
+      "compound-level interference/orthogonal binding evidence",
+      "source-curation/license version before raw-row redistribution",
+      "actual class capacity",
+      "MolSysMT identity/state/series grouping/preparation and full cohort admission"
+    ],
+    "rights": [
+      {
+        "observed": "Staff-curated CC BY3.0; ChEMBL imports CC BY-SA3.0.",
+        "url": "https://www.bindingdb.org/rwd/bind/info.jsp"
+      },
+      {
+        "observed": "Resource-authored update states CC BY4.0 for BindingDB-curated data.",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11701568/"
+      },
+      {
+        "observed": "Hosting does not supply unrestricted third-party rights.",
+        "url": "https://www.ncbi.nlm.nih.gov/home/about/policies/"
+      }
+    ],
+    "status": "endpoint_defined_for_private_necessary_capacity_only"
+  },
+  "full_evidence": {
+    "compressed_bytes": 19674,
+    "compressed_sha256": "e2e06f1b9435ba9f6ca8c2df9d8dc748b80572517aee6028e4c233b15c8082f9",
+    "path": "brd4_primary_method_20261106.json.gz",
+    "uncompressed_bytes": 67214,
+    "uncompressed_sha256": "e245ff9525d3eafdc785089efac7b5bcb77125c8e142ac0f48b5817312f5123b"
+  },
+  "issues": [
+    103,
+    106
+  ],
+  "next": "On explicit scientific resumption, verify published plan/context and receive only the declared private single-source activity-capacity table. Both studies remain incomplete.",
+  "private_source_artifacts": 9,
+  "prospective_activity_plan_sha256": "079f2b6652f17c292ca41e7eba04b3e9c2404e9c4a2f067b4ddd92669d95d718",
+  "raw_source_bodies_published": false,
+  "recorded_at": "2026-11-06T16:48:06.384867+00:00",
+  "release_plan": "0.4.0",
+  "resource_correction": {
+    "correction": "Use explicit taskset -c19 inside each following bounded systemd scope and verify actual os.sched_getaffinity before work. Do not repeat acquisitions to replace historical resource evidence.",
+    "disposition": "Do not claim these original phases were CPU19-pinned. CPU quota limits total usage to one CPU; the requested cpuset alone did not prove affinity.",
+    "enforced": "Their own cgroups report cpu.max100000/100000, memory.max536870912, memory.swap.max0 and pids.max32; nice19. Phases were serial with idle I/O and single backend-thread settings. No molecular/scoring workload ran.",
+    "observed": "The first current-turn primary download, descriptor download and supplement-render resource records report affinity CPUs0-19 despite requested systemd AllowedCPUs=19.",
+    "provider_source_or_runtime_change": false,
+    "scope": "Operator resource-custody correction; original receiving results preserved without rerun."
+  },
+  "resources": {
+    "archive": {
+      "affinity": [
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    },
+    "original_receiving": {
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "nice": 19,
+      "peak": "23429120"
+    },
+    "original_rendering": {
+      "affinity": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "nice": 19,
+      "peak": "43483136"
+    }
+  },
+  "review_by": "2026-11-20 or relevant change",
+  "runtime_provider_input_dependency_workflow_changed": false,
+  "schema": "pharmacophoremt.brd4-primary-method-review-summary@1",
+  "scope": "Archive of original-method/source-column manual review completed before migration; not a biological experiment, accepted cohort, activity-capacity execution or full software gate.",
+  "source_head_before": "7395ad004dc08c0442572a12f3e952d59c5fdec4"
+}

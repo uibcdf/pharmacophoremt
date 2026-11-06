@@ -2,6 +2,11 @@
 
 Guidelines for writing clean, consistent, and ecosystem-compliant code in PharmacophoreMT.
 
+For the current implemented surface use the [capability inventory](capability_inventory.md)
+and [support boundaries](support_library_boundaries.md). Dated receiving sections
+below preserve their original scope; they do not imply complete #6 adoption.
+The registered root integration guides govern new support-library calls.
+
 ## Molecular-source admission review — 2026-11-05
 
 [#101 review](molecular_source_admission.md) refutes a suspected source overwrite
@@ -55,9 +60,13 @@ method-specific option raises UnknownArgumentError before downstream digestion,
 without the former missing-digester warning.
 
 ## 1. Argument Digestion (`argdigest`)
-All public-facing API functions MUST be decorated with `@arg_digest`.
-- **Contract Definition**: Use the `_argdigest.py` configuration to map parameters to their respective digesters.
-- **Validation**: Ensure that `selection` arguments are compatible with `molsysmt` syntax.
+New or changed public argument boundaries use ArgDigest's registered,
+definition-owned contracts at the actual defining function/method. Follow
+`ARGDIGEST_GUIDE.md`, the existing scoped native declarations and #6; do not copy
+an invented decorator/configuration or add redundant placeholder digesters.
+Keep scientific validation at its owning boundary, including bypass behavior.
+MolSysMT owns molecular selection syntax and preparation; aliases are admitted
+only where the actual PHMT signature/contract declares them.
 
 ## 2. Diagnostics and Errors (`smonitor`)
 Use the `smonitor` catalog for all user-facing warnings and errors.

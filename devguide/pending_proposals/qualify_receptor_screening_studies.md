@@ -79,3 +79,14 @@ method leads, 53 incompatible records and 19 unresolved; none is accepted.
 Next qualify AID1805333/US10941160B2's original method and later actual class/group
 capacity before admitting a second study. Molecular/provider ownership, source
 exposure and #66's separate original-method gate persist. Both studies stay open.
+
+## Second-source endpoint and label declaration — 2026-11-06
+
+#106's [original-method review](../receptor_study2_primary_method.md) now defines
+the actual BD1 competition IC50, categorical source intervals and PubChem result
+columns. A [prospective private capacity plan](../evidence/brd4_activity_capacity_plan_20261106.json)
+uses separated strong/weak intervals and the existing50-group/class requirement,
+without treating raw SIDs as independent molecules. Next publish then receive
+the declared single-source activity table for necessary capacity only. Human
+construct transfer, interference, molecular/grouping/exposure admission and both
+complete studies remain conditional. No molecular fallback or PHMT score is added.

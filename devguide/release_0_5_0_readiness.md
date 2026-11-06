@@ -28,7 +28,7 @@ readiness follows the agreed scope and evidence, not a fixed minor count.
 
 [#104](https://github.com/uibcdf/pharmacophoremt/issues/104) replaces direct CIF traversal in one unshipped receptor-audit helper with public MolSysMT getters. Its nine source guards and two selected shared-stager controls pass; the helper digest is updated after the initial correct stale-pin refusal. The [admission audit](receptor_preparation_admission_audit.md) / [receipt](evidence/receptor_admission_audit_20261106_summary.json) retain this59-input delta:58 unchanged and one reviewed helper update. Earlier exact51/59-hash statements describe their original snapshots, not an assertion that this later helper is unchanged. No public runtime API, molecular source, dependency/provider pin or version plan changes.
 
-#103's first-study admission and #105's planned aromatic-N receiving are separate forward scientific work. New carboxylate/H-refinement/data gates do not expand proposed0.5.0 automatically. Public modern molecular delivery and exact candidate/source/installed/public/platform gates retain their authority.
+#103's first-study admission and #105's received experimental aromatic-N profile retain separate scientific scopes. The profile's selected source controls do not complete either biological study or qualify a release candidate. New carboxylate/H-refinement/data gates do not expand proposed0.5.0 automatically. Public modern molecular delivery and exact candidate/source/installed/public/platform gates retain their authority.
 
 ## Current source receiving — 2026-11-06
 

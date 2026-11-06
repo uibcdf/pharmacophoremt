@@ -1,5 +1,7 @@
 # Modeling Strategies and the Modeler Engine
 
+> Status reviewed2026-11-06: Scientific design catalogue with implemented and proposed ideas. Use the capability inventory and owning method contracts to select an executable route. Pseudocode is not an installed API; preparation/inspection/geometry belong to MolSysMT. See [capabilities](capability_inventory.md), [roadmap](roadmap.md) and [testing](testing_and_validation.md).
+
 **2026-10-10 utility retirement (#46):** Legacy molecular helper implementations
 are removed after the explicit native consumer transitions. See
 [the retirement contract](molecular_utility_retirement.md). Earlier requests below

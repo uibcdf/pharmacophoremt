@@ -1,0 +1,28 @@
+{
+  "broken": [],
+  "deferred_own_envelope": [],
+  "exact_histories_verified": [
+    {
+      "history": "devguide/checkpoint_history_20261106.md",
+      "original": "devguide/checkpoint.md",
+      "original_bytes": 300629,
+      "original_sha256": "730b36030372964c12de7c9c7fb2fb4ac948b108466d4bcc142ad9f05d3e3d60",
+      "preservation": "Exact original bytes after migration-history preface, same directory so relative paths retain their base."
+    },
+    {
+      "history": "devguide/roadmap_history_20261106.md",
+      "original": "devguide/roadmap.md",
+      "original_bytes": 138013,
+      "original_sha256": "a788e50049924b8e0a8f05e0c5376fa97f430d70f6e5a639e65b84550c158656",
+      "preservation": "Exact original bytes after migration-history preface, same directory so relative paths retain their base."
+    }
+  ],
+  "local_links": 1512,
+  "migration_receipt_sha256": "e1fa957b2664e8cb6bb744f2670f83a97d9d445af931069be1082fed6b18e9d4",
+  "pages": 134,
+  "passed": true,
+  "recorded_at": "2026-11-06T16:55:13.502504+00:00",
+  "scope": "Every Markdown file under devguide except permanent archive; CommonMark links/images and Markdown heading fragments, including preserved root-level histories. Fenced code is not scanned as links. External URLs/HTTP availability and semantic correctness remain separate review.",
+  "source_controller_sha256": "1a21e1a3b3a2ea5e98a8047be4dea66bf153b0d184216e7e25e4d00a0455c6ee",
+  "strict": true
+}

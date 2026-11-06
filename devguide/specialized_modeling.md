@@ -1,5 +1,7 @@
 # Specialized Modeling
 
+> Status reviewed2026-11-06: Prospective specialized-modeling directions, not delivered peptide/covalent/water/quantum workflows. Adoption needs a concrete study and supported owning-provider contracts; consult the capability inventory. See [capabilities](capability_inventory.md), [roadmap](roadmap.md) and [testing](testing_and_validation.md).
+
 Extension of core concepts for non-standard molecular systems.
 
 ## 1. Peptide and Macrocycle Modeling

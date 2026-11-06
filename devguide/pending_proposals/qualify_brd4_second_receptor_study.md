@@ -71,3 +71,23 @@ and predeclare class/cohort rules before activity acquisition. Raw source prose
 and aggregate categories remain private and potentially exposed; one explicit
 Example1 IC50 exposure is recorded. No pooling, molecular aliases, new scores,
 provider implementation, #66 change or release-plan change is introduced.
+
+## Original method and prospective label capacity — 2026-11-06
+
+The [primary-method review](../receptor_study2_primary_method.md) now receives
+US10941160B2's original binding method, Table24 column/interval semantics and
+unchanged AID1805333 version3/revision2 descriptors. The incorporated Nature
+supplement is verified, including complete visual review of construct-table
+pages44–45; no sequence/molecular mapping is implemented here. Human material
+is supported through the citation, with exact transfer to the patent still an
+inference. Interference and full biological/cohort admission remain unresolved.
+
+The [new pre-activity plan](../evidence/brd4_activity_capacity_plan_20261106.json)
+declares strong IC50≤0.5 micromolar versus weak IC50>5 micromolar, complete
+censoring intervals and50 eligible SID upper bounds/class. Publish before
+activities, preserve unknowns/duplicates/conflicts, stop on insufficient capacity
+without pooling or threshold changes. No class count or activity resource is
+received in this tranche. Private feasibility use is separate from later raw-row
+redistribution, whose source/curation/license version still needs resolution.
+Source exposure, original browser size failure and actual affinity correction
+remain in the [receipt](../evidence/brd4_primary_method_20261106_summary.json).

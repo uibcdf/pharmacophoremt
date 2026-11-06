@@ -2,6 +2,15 @@
 
 This contract belongs to [#6](https://github.com/uibcdf/pharmacophoremt/issues/6).
 
+## Current orientation — 2026-11-06
+
+#82 has received public ArgDigest0.17.1; the older blocked-provider paragraph
+below is its historical readiness state. Native I/O, batch, saved-result and
+source-admission slices have scoped receiving evidence, while broader #6 remains
+partial. Use [capabilities](capability_inventory.md), [API standards](api_design_standards.md)
+and canonical root guides for a new change. Historical counts do not prove a
+current full source/installed/public context, particularly after rebuilding a host.
+
 ## Source admission reviewed without migration — 2026-11-05
 
 [#101 contract](molecular_source_admission.md) refutes the suspected legacy
@@ -36,7 +45,7 @@ selected passes, 45 new, public-prefix and controlled modern-source scopes
 distinct. No provider edit or floor/pin change. #6 remains partial; saved-result/
 retrospective public contracts and full source/installed/public gates remain.
 
-## Native I/O adoption gate and provider handoff — 2026-11-04
+## Historical native I/O adoption gate and provider handoff — 2026-11-04
 
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) is blocked by
 [ArgDigest #47](https://github.com/uibcdf/argdigest/issues/47) and

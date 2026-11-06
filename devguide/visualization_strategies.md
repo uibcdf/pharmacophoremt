@@ -1,5 +1,7 @@
 # Visualization Strategies
 
+> Status reviewed2026-11-06: Design roadmap containing future interactions as well as current integration ideas. Source addon/payload code exists, but live-browser acceptance remains issue58 and addon development is deferred. Use the capability inventory for delivered scope; molecular rendering belongs to MolSysViewer. See [capabilities](capability_inventory.md), [roadmap](roadmap.md) and [testing](testing_and_validation.md).
+
 This document defines the integration roadmap between **PharmacophoreMT** and **MolSysViewer**, ensuring a high-performance and interactive experience.
 
 ## Current delivered contract — 2026-10-13

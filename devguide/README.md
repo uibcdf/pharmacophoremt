@@ -1,93 +1,55 @@
-# Developer Guide - PharmacophoreMT
+# PharmacophoreMT developer guide
 
-Welcome to the official developer guide for **PharmacophoreMT**. This directory is the "source of truth" for the toolkit's architecture, standards, and planning.
+This directory is the team's maintained development context. Start with
+**[onboarding](onboarding.md)** when joining or moving machines, then the
+**[current checkpoint](checkpoint.md)**. Owners LMMV/dprada; handoff reviewed
+2026-11-06 under #107. Code and documentation are English; team discussion may
+use Spanish. Repository/suite instructions retain their authority.
 
-[Second-receptor capacity receiving](receptor_study2_capacity_receiving.md),
-#106, completes the published-plan 1,780-AID census: nine isolated-BD1 method
-leads remain after endpoint review, with no accepted source/cohort. Next qualify
-the original AID1805333 method. The earlier
-[BRD4/HSP90 source review](receptor_study2_source_review.md) retains its own scope.
+## Find the right document
 
+| Need | Read |
+| --- | --- |
+| Join the team / build a fresh context | [Onboarding](onboarding.md), [machine migration](machine_migration.md) |
+| Understand current work and next action | [Checkpoint](checkpoint.md), [decisions/workstreams](decisions_and_workstreams.md), [roadmap](roadmap.md) |
+| Know what actually works | [Capability inventory](capability_inventory.md), [core architecture](core_architecture.md), [vision/scope](vision_and_scope.md) |
+| Change an API or integration | [API standards](api_design_standards.md), [support boundaries](support_library_boundaries.md), registered root guides |
+| Choose tests / assess scientific claims | [Testing/validation](testing_and_validation.md), [evidence collection](validation_collection.md), [case template](templates/evidence_case.md) |
+| Work on receptor validation | [#103 plan](pending_proposals/qualify_receptor_screening_studies.md), [study1 admission](receptor_study1_admission_protocol.md), [BRD4 method/next plan](receptor_study2_primary_method.md) |
+| Understand the audit/backlog | [Audit](audit_20261104.md), [review addendum](audit_20261104_review.md), active issue indexes below |
+| Prepare an intermediate release | [#95 readiness](release_0_5_0_readiness.md), [publication controls](../devtools/conda-build/README.md), #9/#10/#23 |
+| Update user docs | [Documentation contributor guide](../docs/README.md), [cookbook](../docs/content/cookbook/index.md), [validation collection](../docs/content/validation/index.md) |
+| Recover why a decision changed | [Checkpoint history](checkpoint_history_20261106.md), [roadmap history](roadmap_history_20261106.md), owning issue and Git history |
 
-[Current source receiving — 2026-11-06](source_suite_receiving_20261106.md) records #102's corrected schema-envelope guards, 111 passing selected controls and the complete/incomplete hosted/local evidence without merging their scopes. Start with the [checkpoint](checkpoint.md) for current gates.
+## Authority and evidence
 
-[Prepared-receptor admission audit](receptor_preparation_admission_audit.md) and [study1 protocol](receptor_study1_admission_protocol.md), 2026-11-06, record the first #103 preparation/capability receiving. #104 passes nine source controls; #105 now receives native aromatic-N geometry through an [explicit experimental profile](public_cached_aromatic_n_generation.md). Both biological studies remain pending.
+Current checkpoint and capability inventory summarize the present; owning code,
+contracts, issue state and original receipts prove narrower details. Dated old
+"current/next" observations are historical, not the live queue. Historical
+controls retain their exact source/provider/native identities. A correct cache,
+geometry, archive or build is not biological validation or public delivery.
 
-## Strategic Vision
+Actual release plan/latest Release is0.4.0; proposed0.5 is not frozen. Both #103
+biological studies remain unfinished. BRD4 source methods and a prospective
+label-capacity plan are recorded, but no dedicated activities/class projection
+has run. Migration itself starts no scientific acquisition, model or release.
 
-[Architectural, scientific and product audit — 2026-11-04](audit_20261104.md)
-records the discussed list of 17 improvement areas, priorities,
-completion criteria and evidence limits. #73 is now fixed; continue with the
-[current capability inventory](capability_inventory.md), scoped #6 contracts and
-scientific study design. Native schema/writer checks are now received under #76;
-live references/variants are now qualified under #60; legacy merge #77 is now fixed through public composition; nested facade
-admission is now received, with broader #6 adoption still partial. Scientific
-semantics/provenance under audit items 8–9 now has a [qualified native slice](native_constraint_semantics.md) under #79 and a [consensus support/redundancy review](consensus_support_review.md) under #80; broader coverage stays partial. [Native I/O diagnostics/dependencies](native_io_diagnostics.md) are now repaired under #81/#6.
-[Native I/O ArgDigest receiving](native_io_argdigest_receiving.md), #82, now
-receives published 0.17.1, protects literal keyword/source identity and activates
-four native codec contracts. 500 unique selected controls pass; broader #6,
-canonical guide distribution and full installed/public closure remain separate.
-[Native batch contracts](native_batch_contracts.md), #99, now reject empty-batch
-typos before input consumption and retain scientific/caching/error accounting;
-206 unique selected controls pass. Broader #6 remains partial; the checkpoint
-records remaining saved-result/retrospective contract work and provider gates.
-[Saved-result/retrospective contracts](retrospective_result_contracts.md), #100,
-now reuse existing settings validation to prevent EF report-key overwrite;
-168 unique selected controls pass. Native option ownership and cohort/failure
-accounting remain. Broader #6 and public/current-candidate full gates stay separate.
-Its [evidence and verification addendum](audit_20261104_review.md) records review
-coverage, classified findings, method-level scientific limits and actionable checks.
-The first [receptor projection sensitivity protocol](receptor_sensitivity_protocol.md)
-is now qualified under #83; #84 repairs a measured unit-policy radius-boundary
-defect. Audit item 12 remains partial beyond this analytical slice.
-The [prepared ERalpha sensitivity extension](prepared_receptor_sensitivity_protocol.md)
-under #85 now applies that methodology to the original cached receptor geometry.
-The first [cached receptor hypothesis-generation pilot](receptor_hypothesis_pilot_protocol.md)
-under #86 now qualifies eight donor/ring alternatives and explicit enumeration
-budgets, using MolSysMT geometry without a new public API. Further direction
-profiles and optional pockets are requested in MolSysMT #375 and TopoMT #101.
-Its [public cached builder](public_receptor_generation.md), #87, now supports
-multiple donor/ring occurrences and explicit bounded alternatives in development
-source, with 192 passing selected controls (54 new). Molecular geometry remains
-MolSysMT-owned; public delivery and broader scientific qualification are separate.
-Optional [cached generation exclusions](receptor_generation_exclusions.md), #88,
-now preserve separate hypotheses and explicit veto semantics (217 selected cases,
-61 new); source-declaration compatibility remains distinct from source authenticity.
+All general molecular formats/inspection/preparation/analysis belong to MolSysMT.
+PharmacophoreMT owns the pharmacophore and its evaluation. Proposed TopoMT,
+DockingMT, dynamics/MSM/AI and accelerated integrations are not delivered APIs.
+The detailed [classical catalogue](classical_workflow.md), [I/O planning](io_and_formats.md),
+[modeling strategies](modeling_strategies.md), [dynamics](dynamics_and_msm.md),
+[specialized modeling](specialized_modeling.md), [AI](ai_and_data_science.md) and
+[visualization planning](visualization_strategies.md) must be read in that scope.
 
-1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
-2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** Current 2026-11-06 receiving separates #103's unfinished biological studies, #106's capacity/method admission and #9/#10/#23/#95 source/installed/public delivery. Next qualify AID1805333's original method; no cohort or new release is accepted. Actual plan/tag/Release stays 0.4.0. Shared-host phases remain serial, on one CPU with 512 MiB/no swap and low priority.
+## Issue-backed records
 
-## Classical Workflow Specification
+- [Open defects](pending_bugs/README.md)
+- [Open proposals](pending_proposals/README.md)
+- [Permanent archive](archive/README.md)
+- [Reporting protocol](reporting_protocol.md)
 
-4. [Classical Workflow](classical_workflow.md): **The complete specification** of what must be implemented for a robust, scientifically rigorous classical pharmacophore pipeline — from molecular preparation through post-screening analysis. Read this before working on any Gen 1b task.
-
-## Technical Standards
-
-5. [Naming Conventions](naming_conventions.md): Rules for namespaces and brand transition.
-6. [Core Architecture](core_architecture.md): Ecosystem standards, composition patterns, and viewer spec.
-7. [API Design Standards](api_design_standards.md): Guidelines for `argdigest`, `smonitor`, and documentation.
-8. [I/O and External Formats](io_and_formats.md): Interoperability with Pharmer, LigandScout, and others.
-9. [Testing and Validation](testing_and_validation.md): Scientific rigor, physical invariance, enrichment factors, and ROC.
-
-## Modeling Domains
-
-10. [Modeling Strategies](modeling_strategies.md): Ligand, Structure, and Complex-based approaches — full specification including Gen 1b requirements.
-11. [Dynamics and MSM](dynamics_and_msm.md): Dynophores, kinetics, and Markov State Models (Gen 2).
-12. [Specialized Modeling](specialized_modeling.md): Peptides, Covalent inhibitors, and Water networks (Gen 3).
-13. [AI & Data Science](ai_and_data_science.md): Graph exports, Diffusion blueprints, and 3DPFs (Gen 4).
-14. [Visualization Strategies](visualization_strategies.md): Programmatic and Add-on integration with MolSysViewer.
-
----
-
-**Current priority:** Gen 1b — Classical Consolidation. See [checkpoint.md](checkpoint.md) and [classical_workflow.md](classical_workflow.md).
-
-**Philosophy:** Interoperability, Physical Rigor, Atomized Design, AI-Ready.
-
-## Issue records
-
-Open defects are listed in [pending_bugs](pending_bugs/README.md), and open
-proposals in [pending_proposals](pending_proposals/README.md); resolved reports
-remain in the permanent [archive](archive/README.md). Follow the
-[local reporting protocol](reporting_protocol.md), which implements the
-[MolSysSuite reporting protocol](https://github.com/uibcdf/molsyssuite/blob/main/devguide/reporting_protocol.md).
+Open an owning issue before an independently closable report. Regenerate indexes
+with `python devtools/devguide_index.py` and verify `--check`; archive closed
+records rather than deleting them. See root/local AGENTS and the suite guide
+before contributor actions, direct pushes, external reports or releases.

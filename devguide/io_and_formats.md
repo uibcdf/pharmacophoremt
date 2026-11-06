@@ -1,5 +1,10 @@
 # I/O and External Formats
 
+Current implementation/fidelity is defined by [capabilities](capability_inventory.md),
+[native schema](native_schema.md) and [persistence matrix](persistence_fidelity.md).
+The interoperability tiers and high-performance layout below are design plans,
+not evidence that every translator or format is implemented.
+
 ## Native schema received — 2026-11-04
 
 New native JSON/YAML use [pharmacophoremt.native@1](native_schema.md). Explicit
@@ -64,7 +69,9 @@ Focus on conversion rather than direct native parsing of binary formats.
 
 ## 2. High-Performance Storage: .h5phmt
 
-For large-scale data (MD trajectories, Dynophores, and MSM networks), PharmacophoreMT uses the **HDF5-based .h5phmt format**.
+An HDF5-based `.h5phmt` layout is proposed for future pharmacophore ensembles.
+There is no qualified current reader/writer or runtime storage promise for this
+layout. Molecular trajectory formats and operations remain MolSysMT-owned.
 
 ### Hierarchical Structure:
 - `/metadata`: Global info, MolSysMT source, physical units.
@@ -74,33 +81,16 @@ For large-scale data (MD trajectories, Dynophores, and MSM networks), Pharmacoph
     - `weights`: Statistical occupancy data.
 - `/msm`: Kinetic matrices, populations, and metastable macrostate centroids.
 
-## 3. JSON / YAML Exchange Format Specification
+## 3. Current native JSON/YAML contract
 
-For human-readable exchange, we use standard JSON or YAML files with an internal identity marker.
-
-### Functions:
-- `load_json`, `to_json`
-- `load_yaml`, `to_yaml`
-
-### Internal Identity Tag:
-Any file MUST contain the following root keys to be recognized by these functions:
-- `software: "pharmacophoremt"`
-- `version: "0.1.0"` (or current version)
-
-### Example (.yaml):
-```yaml
-software: pharmacophoremt
-version: 0.1.0
-name: "My Binding Model"
-interaction_sites:
-  - features: ["hb donor", "hb acceptor"]
-    shape:
-      type: sphere
-      center: [1.2, 3.4, -0.5] # in nm
-      radius: 0.15
-    metadata:
-      importance: 1.0
-```
+Use `load_json`/`to_json` and `load_yaml`/`to_yaml` with the complete
+[pharmacophoremt.native@1 schema](native_schema.md). New writes include the
+schema marker, producing version, model/site/shape fields, explicit quantities
+and metadata defined there. A `software`/`version` pair alone is not a complete
+tagged record. Historical untagged admission retains only its documented
+compatibility scope; do not create new files from an old illustrative sketch.
+Use public writers and the [field-fidelity matrix](persistence_fidelity.md),
+rather than a second hand-maintained payload example here.
 
 ## 4. The Translator Pattern
 Each format is handled by a specialized **Translator**:

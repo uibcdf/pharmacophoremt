@@ -1,0 +1,206 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "ac5a11b568286e478d7fb905f6f75c782181c3c2fa22c6098d8b19770f9ef3f1",
+    "devguide/ai_and_data_science.md": "a459fbdbb8b6263b7dcefa85611cd2f38e31dcc5a32c254dc2b5e036888e1011",
+    "devguide/api_design_standards.md": "8a631cda85d785127d10f8c07a77c23e265f5d4edd319f7b90b8a50d2f5c802f",
+    "devguide/archive/README.md": "ecd2cdda8d66bc2922896bc4fa0002d95f47be309ca41d6df4401f8707cde38c",
+    "devguide/archive/portable_developer_handoff.md": "fff2c9c857aa607c41ccd4350c279a22dcc419e1148256f939f90934ac7f92cd",
+    "devguide/capability_inventory.md": "7545bbd83fc036d11c38a019a39325bd4715487575dee410e5668413314ff79e",
+    "devguide/checkpoint.md": "c00bdff7c764c6a60ee8fdff0f56a0561d4f13edcc0fe34e9c7ea2cb4aec80bc",
+    "devguide/checkpoint_history_20261106.md": "809b453f48c0344c4a6c12b4f8c13d02a995fef762fa55537f329fe1abd2def7",
+    "devguide/classical_workflow.md": "498d7d1ed5e7b59023a51fa4e41c81f264a13b85111e6a099616defdde3639d8",
+    "devguide/core_architecture.md": "55223503f3f58743bbb8bf9728c14a5214e81913b53dc68db4ed342801411eef",
+    "devguide/decisions_and_workstreams.md": "0a50d660beff18f849167a585249e787bc27ef47d2b359c3cb2134547200ebdb",
+    "devguide/dynamics_and_msm.md": "5f7a374688333844cad6876d8b8c845fb19d34a22d96888f03e47db32b218539",
+    "devguide/evidence/brd4_activity_capacity_plan_20261106.json": "079f2b6652f17c292ca41e7eba04b3e9c2404e9c4a2f067b4ddd92669d95d718",
+    "devguide/evidence/brd4_primary_method_20261106.json.gz": "e2e06f1b9435ba9f6ca8c2df9d8dc748b80572517aee6028e4c233b15c8082f9",
+    "devguide/evidence/brd4_primary_method_20261106_summary.json": "65420dc3936aed4ea6a8732375695f47936bff55588ffb6235b12acd9d9fa45e",
+    "devguide/io_and_formats.md": "355deaf99b1ef1ef375a8afc5bb7806e7851895b1c3f5f56ebb049233a70a693",
+    "devguide/machine_migration.md": "6c49da2a55dfd0108f45f54cc694e44f896f14b8c5893ad1ff4e8e8ae9c834c9",
+    "devguide/modeling_strategies.md": "a39241e0a878fb368acaccd70b4253fa3b82e5f165baa9f37335dc1834bb0c0a",
+    "devguide/onboarding.md": "dac7e80e9b9f3363de47def75e8b505bf8677a1baee17c424a33f48e9439e47f",
+    "devguide/pending_proposals/qualify_brd4_second_receptor_study.md": "d140c63bb7a486bc8ee7180bc29a5c22c05713c48e8119eca7fbbab3fc560d9b",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "141ef74e292abfbc690ff5816f03f5de3adcd90df7d65158dc70b837b360bc56",
+    "devguide/receptor_study2_primary_method.md": "b14d291be0b974b1975dd590cc3493bdd1c052c528b11de2c2bd7c1eaa4588fd",
+    "devguide/release_0_5_0_readiness.md": "ccc99e885f96dd4150e35d143e3d03741dfe34f5186b3909bc8f185c85eb67c6",
+    "devguide/roadmap.md": "30deda26a05a46aeef802f21cb10ea77dba74d8550fad83ea2ae881c6db37080",
+    "devguide/roadmap_history_20261106.md": "f2e46deeb6efbde3f41073d00704d7abb3294c0555ec29a5c5e366d7ebde5f7f",
+    "devguide/specialized_modeling.md": "6049304be71cc2a0994f986a43d71ef8278d297052446eca67bf62c38398de28",
+    "devguide/support_library_boundaries.md": "4a2c85407efcf846d37d23cbf328039c0789d381dc16e95fa9c9492e0842c2ae",
+    "devguide/testing_and_validation.md": "d65b2800e81f3227a0058c688152c5be6c9e919b8f28ec58b5cd2f612ae32174",
+    "devguide/vision_and_scope.md": "9b980a174ef149a4b442f4286f62b67f11af3152d0ec1d3467e740e9b90499a5",
+    "devguide/visualization_strategies.md": "0043e8f1d38afeec8164d41b20091ae0436d6a1ac298019bd90f2dc9844ae1f3",
+    "tests/test_reporting_protocol.py": "8fc353726107e0782ede071ba52512a91634e8f3d8ac5c956353ccc48e928535"
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "label": "indexes"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "label": "reporting"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "label": "archive"
+      },
+      {
+        "command": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "label": "ruff"
+      },
+      {
+        "command": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "label": "format"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "label": "whitespace"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-devguide-migration-20261106-h2p44m17/check_links.py"
+        ],
+        "exit_code": 0,
+        "label": "links_pre_envelope"
+      }
+    ],
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "recorded_at": "2026-11-06T16:52:38.247997+00:00",
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0",
+      "nice": 19,
+      "peak": "417669120"
+    },
+    "scope": "Documentation/report/archive/style verification, not source science or destination installation. Link precheck defers only the migration envelope created next; strict post-generation link check is required."
+  },
+  "case_capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-devguide-migration-20261106-h2p44m17",
+  "ci": "Final unskipped head must be pushed/observed under #9/#107. Previous7395ad0 full source CI remains queued; its policy/publication-governance workflows succeeded. No full-source/installed/public acceptance follows.",
+  "documentation_corrections": [
+    "Current read order/state/decisions/bootstrap/resource/transfer routes.",
+    "Exact old checkpoint/roadmap bytes preserved after historical prefaces.",
+    "Current source capabilities separated from prospective TopoMT/ElastNetMT/MSM/AI/I/O plans.",
+    "Unsupported API/benchmark examples and universal favorable-result validation promises removed from current guidance.",
+    "#105 aromatic-N receiving and #82 support state updated; complete scientific/delivery limits retained.",
+    "Completed pre-migration original-method review archived; dedicated activities/class counts/models/scores still absent."
+  ],
+  "entrypoints": [
+    "devguide/onboarding.md",
+    "devguide/checkpoint.md",
+    "devguide/decisions_and_workstreams.md",
+    "devguide/machine_migration.md",
+    "devguide/roadmap.md"
+  ],
+  "full_evidence": {
+    "compressed_bytes": 34162,
+    "compressed_sha256": "f5048dabdcc70a6fe8a172f222e99ea77876a9a555257d939af08b3bbb6e54db",
+    "path": "developer_migration_20261106.json.gz",
+    "uncompressed_bytes": 132959,
+    "uncompressed_sha256": "77ef6498a4c4f955bea44659ebbf8b24ce12e950310650aedee35fab4dff70b7"
+  },
+  "issue": 107,
+  "links_pre_envelope": {
+    "broken": 0,
+    "local_links": 1512,
+    "own_future_envelope_deferred": 1,
+    "pages": 134,
+    "scope": "Every Markdown file under devguide except permanent archive; CommonMark links/images and Markdown heading fragments, including preserved root-level histories. Fenced code is not scanned as links. External URLs/HTTP availability and semantic correctness remain separate review."
+  },
+  "new_package_tag_or_release": false,
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "post_envelope_validation": "developer_migration_20261106_links.json is a separate post-generation strict local-link result; it must pass before committing. It does not check external HTTP or execute destination commands.",
+  "preserved_histories": [
+    {
+      "history": "devguide/checkpoint_history_20261106.md",
+      "original": "devguide/checkpoint.md",
+      "original_bytes": 300629,
+      "original_sha256": "730b36030372964c12de7c9c7fb2fb4ac948b108466d4bcc142ad9f05d3e3d60",
+      "preservation": "Exact original bytes after migration-history preface, same directory so relative paths retain their base."
+    },
+    {
+      "history": "devguide/roadmap_history_20261106.md",
+      "original": "devguide/roadmap.md",
+      "original_bytes": 138013,
+      "original_sha256": "a788e50049924b8e0a8f05e0c5376fa97f430d70f6e5a639e65b84550c158656",
+      "preservation": "Exact original bytes after migration-history preface, same directory so relative paths retain their base."
+    }
+  ],
+  "recorded_at": "2026-11-06T16:54:37.695025+00:00",
+  "release_plan": "0.4.0",
+  "review_by": "2026-11-20 or destination receiving",
+  "runtime_provider_molecular_input_dependency_workflow_changed": false,
+  "schema": "pharmacophoremt.developer-migration-summary@1",
+  "scope": "Developer-documentation/machine-transfer handoff with preserved history, source-machine availability and administrative evidence. Destination setup, source science, full CI/installed/public qualification and both studies remain unexecuted/incomplete in their owning records.",
+  "source_head_before": "7395ad004dc08c0442572a12f3e952d59c5fdec4",
+  "test_change": "Existing reporting protocol issue inventory adds107; no scientific assertion is changed.",
+  "verified_inventory": {
+    "checked_absent_historical_resources": 9,
+    "current_local_capsules_present": 7,
+    "destination_environment_executed": false,
+    "pinned_git_objects_present": 3,
+    "private_transfer_files_represented_by_identity": 212,
+    "raw_sources_credentials_or_native_binaries_published": false,
+    "support_hash_failures": 0,
+    "tracked_declared_support_files": 59
+  }
+}
