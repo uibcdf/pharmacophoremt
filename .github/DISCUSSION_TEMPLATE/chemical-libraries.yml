@@ -1,0 +1,73 @@
+title: "[Library] Name of resource"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a database or chemical library for PharmacophoreMT to study.
+        Search the [Chemical libraries category](https://github.com/uibcdf/pharmacophoremt/discussions/categories/chemical-libraries)
+        and its index first; add to an existing resource thread when possible.
+        Unknown technical or access details are welcome and do not prevent a proposal.
+
+        Share public links and descriptions. Do not upload private data, credentials,
+        or licensed files. Report concrete bugs and implementation requests in
+        [Issues](https://github.com/uibcdf/pharmacophoremt/issues), linking the relevant discussion.
+        Listing a resource here does not establish implemented or qualified support.
+  - type: input
+    id: resource-name
+    attributes:
+      label: Resource name
+      placeholder: "Database, library, or named collection"
+    validations:
+      required: true
+  - type: input
+    id: official-url
+    attributes:
+      label: Official website or documentation
+      description: "Link to the resource owner, rather than a third-party mirror."
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: use-case
+    attributes:
+      label: Main use case
+      description: "Choose the closest fit; describe additional uses below."
+      options:
+        - Screening a new compound collection
+        - Retrospective validation or benchmarking
+        - Drug repurposing
+        - Natural-product discovery
+        - Bioactivity or target annotations
+        - Supplier or compound availability
+        - Another use or not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: scientific-value
+    attributes:
+      label: Scientific value
+      description: "What would this resource help you do, and what makes it useful?"
+      placeholder: "Describe the scientific task, useful subsets, or a concrete example."
+    validations:
+      required: true
+  - type: textarea
+    id: formats-access-terms
+    attributes:
+      label: Formats, access, and terms
+      description: "Share what you know; Unknown is a valid answer. Include public documentation links when available."
+      placeholder: |
+        Formats or API:
+        Available 2D or 3D structures:
+        Download, account, or subscription requirements:
+        Data license or applicable terms:
+  - type: textarea
+    id: preparation-blockers
+    attributes:
+      label: Preparation needs or known limitations
+      description: "Optional. Note missing conformers, preparation needs, scale, access barriers, or anything that needs investigation. Unknown is welcome."
+      placeholder: "What would need checking before this collection could be screened?"
+  - type: textarea
+    id: related-links
+    attributes:
+      label: Related discussions or issues
+      description: "Optional. Link existing resource threads, implementation issues, or relevant public evidence."

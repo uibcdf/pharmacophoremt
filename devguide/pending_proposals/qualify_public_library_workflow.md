@@ -1,0 +1,78 @@
+---
+summary: Qualify reproducible public-library acquisition, preparation and pharmacophore screening.
+issue: uibcdf/pharmacophoremt#108
+status: active
+opened: 2026-11-06
+closed:
+verification: inspected
+area: [data, screening, usability]
+guard:
+normative: devguide/public_library_registry.md
+blocked_by: []
+supersedes: []
+---
+
+# Public-library acquisition and screening
+
+## What
+
+The user requests both retrospective validation and new-library screening, with
+powerful, friendly public-library management. The
+[provider research](../public_library_support_research.md) proposes complementary
+discovery, activity-reference, drug, natural-product and benchmark resources.
+The [Discussions index](https://github.com/uibcdf/pharmacophoremt/discussions/109)
+is the public registry; this issue owns actionable product work, separately from
+#103/#66/#106's scientific source and receptor admission.
+
+## How and ownership
+
+Qualify the journey from task/collection selection through a bounded subset,
+immutable acquisition or authorized import, explicit molecular preparation,
+declared pharmacophore screening, source-linked export and reproducible recovery.
+Keep provider discovery/download/import/preparation/screening/availability coverage
+explicit instead of assigning blanket support to a provider name.
+
+MolSysMT owns molecular collections, formats, identity, states, conformers,
+scaffolds and geometry. PHMT owns pharmacophore orchestration, screening/results
+and scientific interpretation. Missing general molecular operations need an owning
+provider issue and supported contract; no retired molecular reader or local
+preparation fallback is recreated here.
+
+## What is inspected and what remains
+
+At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
+calculates tranche bins but performs no HTTP acquisition; virtual screening
+materializes its full input iterable. Prepared-native evaluators do not constitute
+a qualified arbitrary-public-library workflow. The research records official
+provider documentation and access limitations, not acquisition/preparation evidence.
+
+The registry records proposed priorities and initial assessments for 17 resources.
+No provider is newly qualified. DrugBank's automatic-acquisition route is deferred
+under the observed download pause, with a specific revisit trigger. Enamine's
+applicable agreement/access requirements remain an explicit assessment item.
+No chemical dataset download, molecular preparation or score ran in this work.
+
+## Alternatives and limits
+
+Do not equate a public page with unrestricted computational use or redistribution,
+an SDF with a prepared conformer ensemble, a catalog snapshot with current stock,
+or a generated decoy with a measured inactive. Do not turn failed preparation into
+a negative score. Provider priorities remain proposals, not release commitments.
+
+## Acceptance criteria
+
+1. Maintain the category, public index, source-specific records, intake template
+   and dated dispositions under the [registry guidance](../public_library_registry.md).
+2. Select a bounded first provider/subset with explicit data rights, original IDs,
+   actual access, molecular preparation requirements and immutable manifest.
+3. Qualify acquisition/import, replay and interrupted recovery with original-byte
+   hashes and transparent rate-limit/failure accounting.
+4. Receive supported molecular-provider contracts; retain record → molecule →
+   state → conformer correspondence through bounded incremental screening.
+5. Demonstrate source-linked hit export and reproducible run recovery. Preserve
+   negatives, unsupported inputs and failures, with actual denominators.
+6. Keep retrospective endpoints, grouping/leakage, splits and prospective-library
+   claims separately qualified; registry delivery does not complete #103.
+
+The first implementation provider and release scope remain to be selected from
+the evidence. Future bounded integrations can use linked issues when accepted.
