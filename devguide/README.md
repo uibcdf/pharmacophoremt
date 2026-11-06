@@ -2,6 +2,11 @@
 
 Welcome to the official developer guide for **PharmacophoreMT**. This directory is the "source of truth" for the toolkit's architecture, standards, and planning.
 
+[Second-receptor source review](receptor_study2_source_review.md), #106, records
+BRD4/HSP90 metadata and original-method feasibility. BRD4 BD1 is prioritized
+for further admission; no second target or experimental cohort is accepted.
+
+
 [Current source receiving — 2026-11-06](source_suite_receiving_20261106.md) records #102's corrected schema-envelope guards, 111 passing selected controls and the complete/incomplete hosted/local evidence without merging their scopes. Start with the [checkpoint](checkpoint.md) for current gates.
 
 [Prepared-receptor admission audit](receptor_preparation_admission_audit.md) and [study1 protocol](receptor_study1_admission_protocol.md), 2026-11-06, record the first #103 preparation/capability receiving. #104 passes nine source controls; #105 now receives native aromatic-N geometry through an [explicit experimental profile](public_cached_aromatic_n_generation.md). Both biological studies remain pending.

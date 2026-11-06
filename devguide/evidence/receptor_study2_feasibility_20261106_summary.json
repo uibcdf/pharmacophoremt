@@ -1,0 +1,160 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "2bf4a733f2e55d5279d22e4d7dd40a44270a16f99a36416d39368ee7627a3bc9",
+    "devguide/checkpoint.md": "f38be61d6246f81427749c94156c6d3c59cd84e9622337e7c5f0071e06d1c4a8",
+    "devguide/pending_proposals/README.md": "b028e8334e8957055259fe90381673c3d1bf5c5c6633866a11dd72ad83ecd83c",
+    "devguide/pending_proposals/qualify_brd4_second_receptor_study.md": "391b5b59a85942fc63bbd7704a6f9a136ee26ad7eb2aad2302fe1fb998c1ad02",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "cb967cff0596b5412c85aeb60ba17508d6abfd8c26717414175e54934dc08929",
+    "devguide/receptor_study2_source_review.md": "2d4e0673f447e291e35eb7ad089eedc520485192a34f27b7258f922ff8aeb68f",
+    "devguide/roadmap.md": "bcc897508f5108b3e6582d16bbd84ba8059fe0cf99f42fc5e32b7a4b10489e9d",
+    "tests/test_reporting_protocol.py": "cdca548be9a9df04d126407914e3f4ca87e171474d10738cab46588c0244bed9"
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "command": [
+          "python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "label": "indexes"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "label": "reporting"
+      },
+      {
+        "command": [
+          "python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "label": "archive"
+      },
+      {
+        "command": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "label": "ruff"
+      },
+      {
+        "command": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "label": "format"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "label": "whitespace"
+      }
+    ],
+    "python": "3.14.7 | packaged by conda-forge | (main, Sep  2 2026, 21:08:32) [GCC 15.3.0]",
+    "recorded_at": "2026-11-06T09:06:38.220445+00:00",
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    }
+  },
+  "candidate_priority": "BRD4 BD1 prioritized for further admission; no second target accepted.",
+  "exposure": "Search and source-abstract/paper activity/chemical information is explicitly observed/potentially exposed. No molecular aliases/groups or unseen holdout inferred. Whole-paper retrieval includes results; zero activity exposure is NOT claimed. Earlier ERalpha ledgers unchanged.",
+  "full_evidence": {
+    "compressed_bytes": 31198,
+    "compressed_sha256": "66d917ebf1d5458985005543ee7b823f472450792939a8fa9b692c53eb1c8bc0",
+    "path": "receptor_study2_feasibility_20261106.json.gz",
+    "uncompressed_bytes": 148341,
+    "uncompressed_sha256": "fd61eb9aa4a5c5290581850bbad986acad722663f716df4d9c73e378eae44e83"
+  },
+  "issues": [
+    103,
+    106
+  ],
+  "measured_counts": {
+    "accepted_experimental_sources": 0,
+    "brd4_associated_aids": 1780,
+    "computational_molecular_systems": 0,
+    "dedicated_activity_resource_requests": 0,
+    "distinct_aids": 39,
+    "hsp90aa1_associated_aids": 682,
+    "journaled_top_level_http_requests": 18,
+    "pharmacophore_scores": 0,
+    "preselected_descriptions": 40
+  },
+  "new_tag_package_or_release": false,
+  "next": "Resolve named BRD4 original-method/construct questions or commit a new bounded source nomination; predeclare later activity/capacity/precision/rights/exclusions. MolSysMT owns subsequent identity/scaffold/preparation/geometry. #66 remains separate; both #103 studies incomplete.",
+  "original_method_receiving": {
+    "acs_original": "DOI10.1021/jm200640v / PMCID PMC3188285, biological sections/ref18/ref21/rights reviewed; raw XML private.",
+    "media_integrity": "One.pdf-named200 response is HTML and is rejected as a PDF; a separate publisher response has valid PDF magic.",
+    "nature_reference": "DOI10.1038/nature09504 publisher supplement59pages, pages1,18-22 textually/visually reviewed; raw PDF private.",
+    "poppler_warnings": "Retained with readable relevant page renders; no whole59-page visual review.",
+    "remaining_reference": "DOI10.1039/c1mb05099k publisher403, unread; construct/tag/concentration transfer and interference/cohort still unqualified."
+  },
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "raw_source_retention": {
+    "archive_scope": "Public original review projections/controllers/identities, not the full copyrighted source corpus. Reacquisition must verify original hashes; raw local provenance remains.",
+    "capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-target-feasibility-20261106-ruqnddau",
+    "raw_papers_protocol_prose_and_images_published": false,
+    "review_by": "2026-11-20 or relevant change",
+    "source_specific_rights": true
+  },
+  "recorded_at": "2026-11-06T09:09:06.927694+00:00",
+  "release_plan": "0.4.0",
+  "resources": {
+    "backend_threads": 1,
+    "cpu": 19,
+    "io": "idle",
+    "memory_max_bytes": 536870912,
+    "nice": 19,
+    "quota": "100%",
+    "requests_rendering": "serial",
+    "swap_max_bytes": 0,
+    "tasks_max": 32
+  },
+  "runtime_scientific_inputs_provider_dependency_and_release_plan_unchanged": true,
+  "schema": "pharmacophoremt.second-receptor-feasibility-review.v1",
+  "scope": "Manual bounded metadata/original-method feasibility review; not molecular execution, accepted experimental cohort, biological validation or full source/installed/public qualification.",
+  "source_head_before": "6c555eba9ef3cc2c28c568c57ff9d85065924f5b"
+}

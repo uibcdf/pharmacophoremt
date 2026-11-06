@@ -57,3 +57,15 @@ MolSysMT. The two models/eight primary/two recovered analytical evaluations are
 not a binding study. Next admit original assay methods and cohort/exposure rules,
 resolve preparation/state/family decisions with their providers, and review the
 second receptor's data/feasibility; keep both full studies and #103 open.
+
+## Second-target source/method receiving — 2026-11-06
+
+#106 and its [bounded review](../receptor_study2_source_review.md) receive40
+assay descriptions/39 distinct IDs and original BRD4 method material, preserving
+all source/exposure/access limits. BRD4 BD1 is prioritized for further admission;
+no experimental source, second target, cohort, receptor preparation or score is
+accepted. HSP90 target associations alone do not qualify human binding: several
+original protocols use rabbit-lysate luciferase refolding. Next resolve the
+named original-method/construct/concentration questions and predeclare later
+source/capacity/class/rights/exclusion rules. #66 remains separate; both studies
+and the full parent objective stay incomplete. No molecular fallback is added.

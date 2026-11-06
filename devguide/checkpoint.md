@@ -1,5 +1,38 @@
 # Development Checkpoint
 
+## Second-target source feasibility received; BRD4 admission remains partial — 2026-11-06
+
+[#106](pending_proposals/qualify_brd4_second_receptor_study.md) owns the next
+second-study admission slice under #103. [Review](receptor_study2_source_review.md)
+and [receipt](evidence/receptor_study2_feasibility_20261106_summary.json) retain
+the fixed first20 AIDs/target metadata sample:40 descriptions,39 distinct IDs,
+no experimentally accepted source. Human gene associations include rabbit-lysate
+HSP90 refolding and other nonbinding/different-domain experiments. BRD4 BD1 has
+a received original ACS method lead and an incorporated original Nature
+supplement with pages1,18-22 visually/textually checked. The RSC incorporated
+method, assay/construct/tag/concentration transfer, interference disposition and
+cohort/precision/exposure gates remain unresolved. BRD4 is prioritized for further
+qualification; no second target/cohort/receptor/scoring plan is accepted.
+
+**Next:** resolve those named method questions or commit a new bounded metadata
+nomination; declare source/capacity/labels/rights/exclusions before dedicated
+activity requests. Preserve all incidental search/article exposure, without
+chemical aliases or an unseen-holdout claim. ERalpha#66's four original methods
+remain a separate access handoff; do not repeat exhausted routes without a new
+authorized lead or change its frozen queries/thresholds. MolSysMT owns later
+identity/scaffold/preparation/state/H/water/geometry, including #447/#323/#375.
+No local molecular implementation or score is added. Both studies remain open.
+
+Raw papers/protocols/renderings remain private; published evidence is bounded
+factual projections/identities/controllers. HTTP500/403, misleading200 HTML
+downloads and Poppler warnings are preserved. Owned capsule
+build/phmt-target-feasibility-20261106-ruqnddau, LMMV/dprada, review2026-11-20
+or relevant change; serial CPU19/512MiB/no swap/tasks32/low-priority phases.
+Borrowed/provider trees stay unchanged; MolSysMT's clean123-commit lag is
+preserved. Runtime, molecular inputs, dependencies and0.4.0 plan/tag/Release
+remain unchanged. #9/#10/#23/#95 full/installed/public gates stay separate.
+
+
 ## Explicit native aromatic-N profile received — 2026-11-06
 
 [#105](archive/receive_aromatic_nitrogen_receptor_directions.md) now adds the

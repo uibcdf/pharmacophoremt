@@ -2,6 +2,13 @@
 
 ## Receptor-validation objective — accepted 2026-11-06
 
+[#106](pending_proposals/qualify_brd4_second_receptor_study.md) now owns
+[second-target admission](receptor_study2_source_review.md): bounded metadata
+and original-method receiving prioritizes BRD4 BD1, with no accepted target/cohort.
+Resolve the named original-method/construct questions and declare source/data
+selection before activity acquisition; both biological studies remain pending.
+
+
 The [prepared-input audit](receptor_preparation_admission_audit.md) and [first-study admission protocol](receptor_study1_admission_protocol.md) now separate source admission from biology. #105 receives provider-defined aromatic-N directions through the [qualified experimental source profile](public_cached_aromatic_n_generation.md). Next admit an original-method binding source/cohort and preparation contract before freezing/evaluating study1; review a second target against data quality and an informative scientific contrast. Existing MolSysMT#375/#323 own carboxylate/H-refinement gaps. #104 removes direct CIF traversal from the source helper. The biological source/cohort and complete method remain unqualified; this progress does not complete either study.
 
 [#103](https://github.com/uibcdf/pharmacophoremt/issues/103) and its [work plan](pending_proposals/qualify_receptor_screening_studies.md) now own the longer-term goal: a reproducible prepared-receptor-to-screening workflow, qualified first with ERalpha and then a second scientifically motivated receptor. Consolidate current delivery, qualify explicit hypothesis construction/evaluation, and execute declared studies with leakage controls, comparisons, preparation sensitivity and honest negative/inconclusive results. The first scientific step is to review existing ERalpha evidence and freeze the first study protocol; do not choose/tune a second case before reviewing data and feasibility.
