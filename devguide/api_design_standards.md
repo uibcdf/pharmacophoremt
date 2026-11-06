@@ -2,6 +2,17 @@
 
 Guidelines for writing clean, consistent, and ecosystem-compliant code in PharmacophoreMT.
 
+## Retrospective and saved-result receiving — 2026-11-05
+
+[#100 contracts](retrospective_result_contracts.md) declare saved summary/paired
+comparison and retrospective constructor/run ownership. The retrospective run
+keeps explicitly open forwarding to its instance-selected native evaluator, whose
+own domain decides method-specific membership. Four contracts do not establish
+complete #6 adoption. Existing saved-result metric-settings validation now also
+prevents retrospective EF-key collisions before cohort materialization/evaluation,
+including internal bypass; requested fractions/key names and metric formulae remain.
+168 unique selected controls pass, with analytical and real molecular scopes explicit.
+
 ## Native screening receiving — 2026-11-05
 
 [Native batch contracts](native_batch_contracts.md), #99/#6, declare nine

@@ -6,12 +6,14 @@ from smonitor import signal
 
 from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.arg_digestion.argument._contracts import digest_evaluator
+from pharmacophoremt._private.arg_digestion.validation_results import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
     PoseEvaluationError,
 )
 from pharmacophoremt.screening.scoring import _resolve_score_method, get_screening_score
 from pharmacophoremt.validation.metrics import bedroc, enrichment_factor, roc_auc
+from pharmacophoremt.validation.saved_results import _settings
 
 
 class RetrospectiveValidator:
@@ -35,7 +37,7 @@ class RetrospectiveValidator:
     """
 
     @signal(tags=["validation", "retrospective", "init"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def __init__(
         self, pharmacophore, min_match_ratio=1.0, *, evaluator=None, score_method=None
     ):
@@ -69,7 +71,7 @@ class RetrospectiveValidator:
         self.score_method = _resolve_score_method(evaluator, score_method)
 
     @signal(tags=["validation", "retrospective", "run"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     @attributed("numpy")
     def run(
         self,
@@ -89,6 +91,8 @@ class RetrospectiveValidator:
         ``on_error='record'`` excludes failures from metrics and reports the
         evaluated indices, original class counts and failure counts. A batch
         with no evaluable inputs raises. Single-class AUC/BEDROC remain NaN.
+        EF fractions must have distinct ``EF@...%`` report keys. Metric settings
+        are checked before materializing inputs or invoking native evaluation.
         Additional options apply only to the native evaluator/search tool.
         Scores follow score_method, never an implicit substitution of coverage
         for a molecular score. Valid seed-only negatives may have fit_value=None
@@ -98,6 +102,7 @@ class RetrospectiveValidator:
             raise ArgumentError(
                 argument="on_error", reason="expected 'raise' or 'record'"
             )
+        ef_fractions, bedroc_alpha = _settings(ef_fractions, bedroc_alpha)
         actives, decoys = list(actives), list(decoys)
         systems = actives + decoys
         true_labels = np.array([1] * len(actives) + [0] * len(decoys), dtype=int)

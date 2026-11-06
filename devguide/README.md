@@ -20,6 +20,10 @@ canonical guide distribution and full installed/public closure remain separate.
 typos before input consumption and retain scientific/caching/error accounting;
 206 unique selected controls pass. Broader #6 remains partial; the checkpoint
 records remaining saved-result/retrospective contract work and provider gates.
+[Saved-result/retrospective contracts](retrospective_result_contracts.md), #100,
+now reuse existing settings validation to prevent EF report-key overwrite;
+168 unique selected controls pass. Native option ownership and cohort/failure
+accounting remain. Broader #6 and public/current-candidate full gates stay separate.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 The first [receptor projection sensitivity protocol](receptor_sensitivity_protocol.md)
@@ -41,7 +45,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #99's native batch admission now has 206 unique passing selected controls, preserving scientific bodies and cache/error accounting. Next review remaining #6 saved-result/retrospective contracts. #98's generic quantity-probe/catalog-path costs remain handed to PyUnitWizard #141/SMonitor #63; #97's baseline is unchanged. Serial one-CPU/1-GiB/no-swap scopes preserve the shared machine. #95's modern public MolSysMT delivery and #9/#10/#23 full gates remain pending. No publication or addon work; actual plan/tag/Release stays 0.4.0 and further 0.x.y minors remain available.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #100 prevents retrospective EF report-key overwrite and receives four saved-result/retrospective contracts, with 168 unique selected passes. #99 native batch admission and #98 provider performance handoffs retain their evidence. Broader #6 remains partial; next review actual nontrivial public-contract gaps. Serial one-CPU/1-GiB/no-swap scopes preserve the shared machine. #95 modern public MolSysMT delivery and #9/#10/#23 full gates remain pending. Actual plan/tag/Release stays 0.4.0; no publication/addon work.
 
 ## Classical Workflow Specification
 

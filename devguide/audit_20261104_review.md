@@ -622,3 +622,17 @@ failures/two corrected scoring fixtures and 206 unique passing final selectors
 No scientific model, molecular implementation, provider/floor or release change.
 Item 3/#6 remains partial: next review saved-result/retrospective admission;
 provider delivery, broader science and #9/#10/#23 full gates remain separate.
+
+
+## Retrospective settings/contract consolidation — 2026-11-05
+
+[#100](https://github.com/uibcdf/pharmacophoremt/issues/100) qualifies a bounded
+item3/#6 follow-up and fixes measured EF report-key overwrite: two fractions
+select different top counts but format as EF@50%. Retrospective now reuses the
+unchanged saved-result settings validator; four definition-owned contracts keep
+instance-native forwarding explicitly open. [Contract](retrospective_result_contracts.md)
+and [receipt](evidence/retrospective_contracts_20261105_summary.json) retain the
+original probe and 168 unique final passes (23 new), separating analytical/public
+and real molecular/source scopes. Metric formulae, original/unscored/native
+failure accounting, molecular ownership and provider/dependency versions remain.
+Item3/#6 stays partial; no predictive, performance, full-platform or release claim.

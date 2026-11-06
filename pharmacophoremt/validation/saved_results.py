@@ -10,6 +10,7 @@ from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_score_method,
 )
+from pharmacophoremt._private.arg_digestion.validation_results import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.screening import get_screening_score
 
@@ -80,7 +81,7 @@ def _metrics(rows, fractions, alpha):
 
 
 @signal(tags=["validation", "screening", "summary"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed()
 def summarize_screening_results(
     cohort,
@@ -280,7 +281,7 @@ def summarize_screening_results(
 
 
 @signal(tags=["validation", "screening", "comparison"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed()
 def compare_screening_results(
     cohort, baseline, comparison, *, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0

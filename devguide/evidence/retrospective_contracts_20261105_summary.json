@@ -1,0 +1,1639 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "b539be1158d86891999313087643577b78a4c34c7176a02a14287ccd88d4924b",
+    "devguide/api_design_standards.md": "d07bbc4fc2e3d6019ab2d3fceda8c314c72df556fd7f2871da30924fed32d9dc",
+    "devguide/archive/README.md": "31fd39968870dca6054bfb8f87ca9717a62e315b0a05db41acb1da92c12dd124",
+    "devguide/archive/retrospective_metric_key_collision.md": "b3d1687c6461480ecb4888e8dd16d91672acb91e88d7d34e5894dd6277ee15a4",
+    "devguide/audit_20261104.md": "f005038d4166e434850c3ea3aa1a2cd5c88ed26479b90c8c510486e3ae4f1eaf",
+    "devguide/audit_20261104_review.md": "f56f3a4270094533925eca4e32da9bcf13f17aa0596cdd5b0c17395758a42f7f",
+    "devguide/checkpoint.md": "ad6bf37b01f69abd3b5c08a187e551172eeaa0ae5e72d14953f1b9717ce94e27",
+    "devguide/pending_proposals/review_python_ecosystem_policy_adoption.md": "e2267b56445b005dbb2860638b3ba66db0b1fc8d4064f8fbb0d8cbdcc9bafbed",
+    "devguide/retrospective_result_contracts.md": "8092d57a87258bbecfded7ede05a6dda8323dab178cd6ae1da3ff14d065e0955",
+    "devguide/roadmap.md": "eb1984b009059c9a75ed97ef32a8bfa25ef74b3672050481706574f885322b6a",
+    "devguide/support_library_boundaries.md": "0ab5891488e28874f4a777e7902244b23b93bdb58e99f3b23862d73fd9a6bf8f",
+    "devtools/conda-build/resources.toml": "da48cfc9885eb3e1bfcd3a4bd40e46e7f46ae7aaee2bcc7044b09579d0ca9a4c",
+    "pharmacophoremt/_private/arg_digestion/validation_results.py": "58d31f28a6d262b0e64da78eacd0a4a63b706f30396d967cf9813bfae1cb1d82",
+    "pharmacophoremt/validation/retrospective.py": "d156cde37234a5f8fa898470573cd909cebe2e5c232bfec0ebd5c5c66fd395a8",
+    "pharmacophoremt/validation/saved_results.py": "84e338ceb0d3d676d5ea4ad3777f73a92863b28784d5a5a80fdfde99a4fdb11b",
+    "tests/test_reporting_protocol.py": "d0fd2091059cb2b8cb615cbfe3ba44ea9a40420c927e143342afabddc3733a34",
+    "tests/test_retrospective_contracts.py": "7a11f95d7cf8b322d0ee7cb90a0e40f57ce6f7a445c95302333b0bea9fa37432"
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "name": "reporting"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "devtools/tests",
+          "-p",
+          "test_distribution_contract.py"
+        ],
+        "exit_code": 0,
+        "name": "distribution"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "name": "archive_reader"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/check_dependency_routes.py",
+          "--declared-only"
+        ],
+        "exit_code": 0,
+        "name": "routes"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/broadcast_requirements.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "generated_envs"
+      },
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "indexes"
+      },
+      {
+        "command": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "name": "ruff"
+      },
+      {
+        "command": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "name": "format"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "whitespace"
+      }
+    ],
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-retro-admin-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    }
+  },
+  "base_commit": "90beb1aee988a9a5e384805d3d1bbdede4328e7c",
+  "baseline_historical_probe_passes": 1,
+  "broader_issue": "uibcdf/pharmacophoremt#6",
+  "contract": "devguide/retrospective_result_contracts.md",
+  "date": "2026-11-05",
+  "full_evidence": {
+    "compressed_bytes": 163867,
+    "compressed_sha256": "bcc351310b2a4cf9544608711cfdbc28160f984488ec669962c999dae6e610d3",
+    "path": "retrospective_contracts_20261105.json.gz",
+    "uncompressed_bytes": 648944,
+    "uncompressed_sha256": "940294b6d548e1edc4d061cb185a43a2a6cf5bd325a902ab9e1952c1f8da0791"
+  },
+  "guard": "tests/test_retrospective_contracts.py",
+  "issue": "uibcdf/pharmacophoremt#100",
+  "limits": [
+    "#6/audit3 remains partial; instance-dependent retrospective forwarding stays explicitly open and relies on native batch domains",
+    "valid metric formulae, scoring, labels/failure denominators, saved-result bodies, molecular operations, metadata/pins/recipe/release plan stay unchanged",
+    "actual plan/tag/Release0.4.0 unchanged; #95 public modern MolSysMT delivery (#375/#255) and #9/#10/#23 full gates remain independent",
+    "#66 original-method access, #74/MolSysMT#215 format ownership and PyUnitWizard#141/SMonitor#63 performance handoffs retain their own scope"
+  ],
+  "measured_original_defect": {
+    "fractions": [
+      0.5,
+      0.5000000000000001
+    ],
+    "independent_metric_values": [
+      2.0,
+      1.0
+    ],
+    "keys": [
+      "EF@50%",
+      "EF@50%"
+    ],
+    "n_evaluated": 2,
+    "requested_top_counts": [
+      1,
+      2
+    ],
+    "returned_metric_values": {
+      "EF@50%": 1.0
+    }
+  },
+  "new_durable_controls": 23,
+  "original_guard_failures": 8,
+  "original_guard_passes": 15,
+  "provider_matches_prior_99": {
+    "controlled_modern_source": {
+      "ackredit": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "argdigest": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "depdigest": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "molsysmt": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "numpy": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "pyunitwizard": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "scipy": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "smonitor": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      }
+    },
+    "public": {
+      "ackredit": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "argdigest": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "depdigest": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "molsysmt": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "numpy": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "pyunitwizard": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "scipy": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      },
+      "smonitor": {
+        "direct_url": true,
+        "metadata_version": true,
+        "native_extensions": true,
+        "path": true,
+        "python_file_count": true,
+        "python_source_sha256": true,
+        "version": true
+      }
+    }
+  },
+  "providers": {
+    "controlled_modern_source": {
+      "ackredit": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/ackredit\"}",
+        "metadata_version": "0.12.0+11.g74f865d",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/ackredit/ackredit",
+        "python_file_count": 69,
+        "python_source_sha256": "d639082940adb6acf99133514c34af26e835db2c64ac739f233f402d2fb9e2a5",
+        "version": "0.12.0+11.g74f865d"
+      },
+      "argdigest": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/argdigest_1793907682986/work\"}",
+        "metadata_version": "0.17.1",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-argdigest-0171-20261105-ktkwrb5k/published/site-packages/argdigest",
+        "python_file_count": 39,
+        "python_source_sha256": "6e99fceb522d8e7d543caac520fb2156df4a69701d93a30a1b9caf2b9cb347d1",
+        "version": "0.17.1"
+      },
+      "depdigest": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/depdigest\"}",
+        "metadata_version": "0.15.1",
+        "native_extensions": [],
+        "path": "/tmp/phmt69-fixed-20261103-q6cirii4/depdigest/depdigest",
+        "python_file_count": 17,
+        "python_source_sha256": "21ac513be7d1206b4dbcdcad5d7bd7dc22a23576932ed0448d6b004f0b032f13",
+        "version": "0.15.1"
+      },
+      "molsysmt": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///tmp/phmt69-fixed-20261103-q6cirii4/molsysmt\"}",
+        "metadata_version": "0.23.0+370.g0faf1584d",
+        "native_extensions": [
+          {
+            "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt/_rust.abi3.so",
+            "sha256": "5c2fa321c1f33fee82bf96e65ab2415a1cc3c676aa6da9904b8f79f40f4f38e1"
+          }
+        ],
+        "path": "/tmp/phmt69-fixed-20261103-q6cirii4/molsysmt/molsysmt",
+        "python_file_count": 3031,
+        "python_source_sha256": "f6e5d28a3a5d113ff99b21324df9dd728ddc21e892db34445d2b4f3eaf5df40f",
+        "version": "0.23.0+370.g0faf1584d"
+      },
+      "numpy": {
+        "direct_url": "{\"archive_info\": {\"hash\": \"sha256=67bfc5dc678227ea6ad6cc75838ae920b11bc7da7649fc19c624fda3aaec691a\", \"hashes\": {\"sha256\": \"67bfc5dc678227ea6ad6cc75838ae920b11bc7da7649fc19c624fda3aaec691a\"}}, \"url\": \"file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1779169198/work/dist/numpy-2.4.6-cp314-cp314-linux_x86_64.whl\"}",
+        "metadata_version": "2.4.6",
+        "native_extensions": [
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_multiarray_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "5c05589b2386477e88acecdef7b8ba2fec2f2fb1ab261a741aad052cbf938bf6"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_multiarray_umath.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "f606e050ba80c6ec93078daf44ecd5c6cf40bd8cf6f262f6e44ade0278e26d2f"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_operand_flag_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c535fb6af12e0813682698b451934349ae97abd5bffe2ffd8058b6ab223b714c"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_rational_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7f3cb472b4e9795bf3e278365e24db3e63f171717eb5e24f30bf16fffd89a3a0"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_simd.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c64c824014f992f1f287128acdde649bef1bc1951cdc49407f12e6a213bfa76e"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_struct_ufunc_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "097174c29333d751ceff4d50cdd646f353af7803086192fff45c0ef407e5c42a"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/_core/_umath_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a092df93c8a517002b5007a345a6e40b1ffdf50a5e35bed3711fddd76a3fc23e"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/fft/_pocketfft_umath.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "47ee9668aed9bd6d64a4b7d04ba6e04dcaa4ffda802e15572aead3078bf74e89"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/linalg/_umath_linalg.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "69e59ce750880a2e6fc174bde14a7ea3409e469bd342809da078de3d6e4b0054"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/linalg/lapack_lite.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "69e02b701988da15b6a2e97a513b41ad864c8e2da9221a4ff3cb9b3fcff625b8"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_bounded_integers.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "171b0db385110b412c9c6697cb698919ea4e01a2233ee1cced9734dc4e3c6c16"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_common.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0245debae9256a278fb64985f2346920f4c09576370228890de5dbc124ded31c"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_generator.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ec9069d9b5bc280b75e5f61f9095caf276467fdecd6a3c8d00be72b95bf3c85b"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_mt19937.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "3e7d3f11cd6269f0c7cce645b849552b169a6bdec01b9e0d55456d4a5773ac31"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_pcg64.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "dfa1f30fed5e80121b48f463c2a6e644da2289e13a554c0fe028a38b475ecbd2"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_philox.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "140982ed775eb4f80e888939ac01a0cf9d0c3d0b543fa74012e43145db0e7456"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/_sfc64.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "46331d6d693704a53dfe782480aac95e52373b1fc5367b6b82a716e096cb8102"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/bit_generator.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ec7926144110965d7cc7055116e71f3da5ed81fae48e5cb1384e78ef2f601d48"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy/random/mtrand.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a12a55c7bef92ddda2cced9e060e22723e927e87d616c89da066294ff12de4e8"
+          }
+        ],
+        "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/numpy",
+        "python_file_count": 407,
+        "python_source_sha256": "500656f58ea7ca7df81dedf239657d804cb5c6d041ae5011381f52301ca90baa",
+        "version": "2.4.6"
+      },
+      "pharmacophoremt": {
+        "direct_url": null,
+        "metadata_version": "0.4.0+62.g6a7537b",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "python_file_count": 142,
+        "python_source_sha256": "eca9183296cf949c659ef4a3524fa6f8cf6184d92bdcb6f0250d7d7d0dc7bf8d",
+        "version": "0.4.0+62.g6a7537b"
+      },
+      "pyunitwizard": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/pyunitwizard\"}",
+        "metadata_version": "0.29.0+4.g9d74f0e",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+        "python_file_count": 92,
+        "python_source_sha256": "038e50e50b50d6bb45e1862f10b383fe3ddb994cce86ed5aa8435a706e706649",
+        "version": "0.29.0+4.g9d74f0e"
+      },
+      "scipy": {
+        "direct_url": "{\"archive_info\": {\"hash\": \"sha256=b44156f5ddc143ebcf13d39f18be0502db1474b5151e04d38277612990f3eea6\", \"hashes\": {\"sha256\": \"b44156f5ddc143ebcf13d39f18be0502db1474b5151e04d38277612990f3eea6\"}}, \"url\": \"file:///home/conda/feedstock_root/build_artifacts/scipy-split_1790021771871/work/dist/scipy-1.18.1-cp314-cp314-linux_x86_64.whl\"}",
+        "metadata_version": "1.18.1",
+        "native_extensions": [
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/_cyutility.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1709f4e864ed2a5aedc777969d5064ed92f3d8384b3ae88e853f6c58edd212b3"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/_lib/_ccallback_c.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c8ed11fe87bf4e90741e1b813f590b5893daaf6816b326583064c1b5d4fdcafb"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/_lib/_fpumode.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7c5e72b96d1f45d3c79819129dae7906ee0267e6245dd4aaf43f0fba9e55ad13"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/_lib/_uarray/_uarray.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ebc10b9a2ea5e023598d4d93b0618836d7ade0ae902f733a5f8df994453dba6c"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/_lib/messagestream.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "d6926130a21c74be000a177e1b987eb1fa55a2fda5b6b775010e6122f83415e9"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/cluster/hierarchy/_hierarchy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "300538eced911f988a393f2e7642f5df2ba4bedbc8cbe9a778f569f0095dfbeb"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/cluster/hierarchy/_optimal_leaf_ordering.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a1614a872fb34368c52fd0e393bbfb50ded94bd06cfe34ffa51ac9da788e4b01"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/cluster/vq/_vq.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e41bfedae681bd913f5eb656029cb6206c20214e6a62ba8b70e6b90c1baafcbd"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/fft/_duccfft/pyduccfft.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e69f171445de1eed65c2b24fef5025c8c4bbd337a8fe58966be473618a5e7b8d"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/fftpack/convolve.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7e266e8874d5700a5b585ca03c5046b6d0c1a2185d75666042fa2b6809a78b62"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/integrate/_dop.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "622c385d41c11280c636d53ec3e209a5bb4f69eee025ef9de4afffb317927944"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/integrate/_odepack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "f323b55a5da74a4021e96a067d75d3a6509fb6ef6d5a47b185eb3f370604d624"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/integrate/_quadpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ed61120d6e6e51bda37776335cae91e43a6395b72d6245b285e8e1252ed4f1ad"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/integrate/_vode.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "336253b5e1787230b7e0bfa79e63697a943f6855533473314edf0eb108d54d30"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/interpolate/_dierckx.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a79dc251ffd27d29a3946a80e5c32a7ca6a83cc9edd2bd0cb8bb2fdcf724e1b1"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/interpolate/_fitpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "aab6477d0a39942a755757cc781c91072abe99b5378bfaafb64930b805b44c5b"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/interpolate/_interpnd.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e54b3a0b3ce17388d3173defc7288ff66c24b08c431c8e517877aa80f0d38556"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/interpolate/_ppoly.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "3f8c928b4d89399cfe3ee0ab70e4c55f634d082b657b231cb5452de507e18b5b"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/interpolate/_rbfinterp_pythran.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "022e14c6a616c54254631a49acc029ae2acdd8e2a3101ca37db3ec4aea80d83f"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/interpolate/_rgi_cython.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "dd0719aa0f9352b4171bd3906c122480fe7793a0d81469e34db548eaafc22184"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/io/_fast_matrix_market/_fmm_core.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0f1fa4eb760fe6c6ade5901fee7960090af1758419c612a42ae4a9eb0c1d60c3"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/io/matlab/_mio5_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "943926d0b9891c79d0c49c305c277ec79818678643ea203344fd0002dd894485"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/io/matlab/_mio_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4cf60b4b90318219645f7e4d10e90de68fa93cdea6a81ac3cf7e6657dd7078ee"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/io/matlab/_streams.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e072af66a276c0839a2465891096d373ce8470bf631959e917d75e208b9dc5a4"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_batched_linalg.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "513a38a8c218dbb1887f77a7104e590146c1a8e9aef155b274cc0a6be14b5be7"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_cythonized_array_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "2c7212b1b8b46d938106515771cc44470f53acefcd32dc7629166b9d7022fd8d"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_decomp_interpolative.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bd6bbdc7d51ba6a96b41ab9a6612f16b64a25a4c69ce8cac4d9762e92fe045a3"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_decomp_update.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "2a1d1af059d656630cbaa9feec5f81ce2e2ad01aa60c3739680a9ec42e10496a"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_fblas.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "06ecfb9802bcd2f9d3190aed26943624c6d8afbf6fab13911d7e63739c52341f"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_flapack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fb7c68bf7e054606b8bb6122c5db699000a746c0138edf7e6129eaa9d975029c"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_internal_matfuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "f32550fd4f6bdf83c0ccaa99a368182383e632817ce364d3bdd0d39b3100f328"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_linalg_pythran.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "93747608140c18cbadc3cbdadd9e755a53b7ce55ec7e111619e20d1021748c1e"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_matfuncs_sqrtm_triu.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a88e01b417abf97bad23b720be0de7eff179b7879c45345d64aa03ae6d30d987"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/_solve_toeplitz.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fc1cbdb69d9601a3764fd887732a1ab729d6711674cb78585063f430b5c522d7"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/cython_blas.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9f6f373339d291a720e87e32259e77249ca6d179c682af2ce905176639a9d25f"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/linalg/cython_lapack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fbae44026e4e6aad3ce6d0c892ab55ce3261355aeb370b3a8dddd8617a565568"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/ndimage/_nd_image.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "02c1e369e63e7cb8d9a1b54278dac593d49e12c9758cc8464f944170e040e213"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/ndimage/_ni_label.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "da690164141c64941d0b1d37c56103869fe12822cc1a2cc737899e968ad75056"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/ndimage/_rank_filter_1d.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "577b04f75ec1108b4697f264bbd7f833912045c6ef0e1fa8f27375596eb56999"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/odr/__odrpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "27b69e28b5faee00ad41016b571bd4d813b64265ea18c8ae4df89cb0054c5faf"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_bglu_dense.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "924cf9b1894621a3b30309066e91234b56eb2243522e6df0d345072458f51ea5"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_direct.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8bca11be346f5d37571af3737d3b1d9db01c0ca60a90344efa2b9dafe6160e87"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_group_columns.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7343c2e5aa34de6b6bca0bda283e6d965be37c5038f5874d18ef38b07e9f2fa1"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_highspy/_core.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "046a5b49fa55eaa5d49fe39c9faaec2cd23bdcec95ee65f531004c24e4f310ce"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_highspy/_highs_options.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a792e484b51335b16d899734492f3a8bb0282ad1e875fb830784a2307310e120"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_lbfgsb.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c96bd9ef02b127e942e293f56100f31de57cb9d8213f4302ac5017564d75707b"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_lsap.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "cadb24d054f37616e9fa6f3d532a2ad4499a84cb793d0a2a02c16cd7d0b40534"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9b5990f7839159ff6f3288c35ca7938df58548b0583285d99c2214ae1a719e04"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_minpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "d58109f5c9da485dabdcb96c51654cd6b0ea9a4673ecbea7df69936bfd6db6c6"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_moduleTNC.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7f4cede224f8a46edd43512981ce2d2d9147807e3103d8a043389867befd244d"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_pava_pybind.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9c2f8ada50ff29781f731691e18fe6d84cfe6e3f17134c9107f125ddbd23cb3c"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_slsqplib.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7d5c54a132c98962b229d603d69b9437c3976cb11c3b9b93f11f421382559c1f"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_trlib/_trlib.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9dbd14df90a9c926788a990df8a949e3b217fc0dd000b17aba592e91f238e5ba"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/_zeros.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "38345b2805a018656dd12db6e77b00a09be4d5af58dd253033bb5a5938d74a34"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/optimize/cython_optimize/_zeros.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "86e559233ffbcb73c3624887726727a63091dd3c0fdd202fc09a593d6482a30f"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/signal/_max_len_seq_inner.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "919f906b3d95d463b220b82ead811cc6d1e8e0309af6c586733d1426376cbda5"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/signal/_peak_finding_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "206b96faaf1f909b26d9be396e9e640ebd87ce9f74324d7bd9f7f35014a7e550"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/signal/_sigtools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4e43c03f6afe8e312c406e4bda1c446d62d2048c236de3d491752f9dcbda5cf6"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/signal/_sosfilt.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "551c0ce38b50dcaf9fa567b7c464499a8cbef61b79e96f4db2c1c3f41a02189e"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/signal/_spline.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "d37c570e3cf39a84a77613069a0f8bee3bf6d66d99d295499a500b3fd44be796"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/signal/_upfirdn_apply.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "b7f3b678c8d66852ef21f8f8240ecdc3ae73f0e9aec029e784afbabc1e330466"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/_csparsetools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "cfcd261aa7db664075b165f7af844dc577744f0a08dee17860e11a80ec5dc197"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/_sparsetools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ecd285f4b9a61d501a6b2626a1444d5264f6334a5915a467ad251e257fdb8651"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_flow.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "188f9aee502a77563f0672c5e715097f88ffa3f002f002f127ba26b624ce10e8"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_matching.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4ea01bc22a7d4bdb83478825b1a747aa7116412579524fbe74b0f235eafed3cf"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ce6cb1d830cf4e7c4bf61c47035f0d6d50e93f4daec76a298b9a9bcb1be7e384"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_reordering.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "85b86fcdb194c005f9145d293e313f0c8a9876a9c42eb2c606992cd67178e94e"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "84c451d26f0bf240ed64cf2dce23951c6a5e1d6df01677e90b393875e3b118ec"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_tools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "245cd2c4950ef6f26bd6e5c6934b4f8e6e2a71a5df7bc9f0c6d5b6b756ac0078"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/csgraph/_traversal.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e9a2e090601312604b70cdeab0d0dee056a03a2e03d14303563c3cf6f873d0fa"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/linalg/_dsolve/_superlu.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7316e002b7c03f8d0201ecfe9771e7b93cfd23f254fb83c158121f9d9e4c4f3d"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/linalg/_eigen/arpack/_arpacklib.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "844672c5c731e76d5b843e4dc0d7cc2ad09c97f48409ebb65c235b809fde18f1"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/sparse/linalg/_propack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8b9ff3098974b6e00596eb939b53a060297b5513e754a068abf8d59587d9ec47"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/_ckdtree.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "23244214978ba56e7a9cbb65c97199392d15ade222a49da54efabcfbc160b1e7"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/_distance_pybind.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "5d9e5b7d0ee2e801066768583024bfd765aec7976a78731edd7165871e89bcd5"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/_distance_wrap.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a36c7bc0ac1d21237d057a14a877d4ad966a7da8692caa872e90b63992e9f49a"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/_hausdorff.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0609db14a0d8cfa5ed5c9f7f019f371b2014ef56fd23fa590e5975b029ee4609"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/_qhull.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ef8331633c03bdd50b8d7bb496dd82bca23f1bf7b61d53b82d5996d28a7f1e95"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/_voronoi.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "f269b2742394eccff4ce4f3cb280e26998c1318fd212ad990fce21bed8bfa1ee"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/transform/_rigid_transform_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "21104ade8aabb92f0f61b9b44fed5975b3ad25d744a0672696dbedbb8e68690d"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/spatial/transform/_rotation_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "969c4ff593da7110f94121162cf0589422860bee8e549a3db8f7cd0bf59dfae9"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_comb.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9c95a644557b0a4caa3985bacdbfda549c9217bd0327b335e3bc05cb6e4547ba"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_ellip_harm_2.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c16ad006ee8dd16a8242009926dfe18cabdc6488b926a4ff6676b3b5c9011087"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_gufuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "deec751718938c6e72979f4e1154a31520ea62ee08c74fb1f72cef18e41e6ef7"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_specfun.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "3a0ae71ee047a59963d42a55063aa70ecc211b1347cd6f4a2eee47ee56580507"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_special_ufuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e726eea97e4010fa94d215dcd37bd2633c1a24086739a47df1732c3ba4587048"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_ufuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "72cda3f107d5d883f724ccde51304639cce4685c229593cb8496de0463a1f632"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/_ufuncs_cxx.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "3b93efa31971003f4577d1e13e00698e0fbbc727dc675b0ee0eeda41384eda76"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/special/cython_special.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fb4fd93168621d8a0721f2fcc6bba7c511810f711e48fc1cab203f32ab7cdcf6"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_ansari_swilk_statistics.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c75a514085904f4a18af8e9fffb7df8ea447df524c464421f31aa5fbbe5a57f3"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_biasedurn.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "514c36014d0ac1c2c818477fdc96470a5f05bf7f3123a134487ba9835680d987"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_levy_stable/levyst.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "f6ffe12c76fa42db95a2863992101436ccf179729c819d6c218221b2214802c9"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_qmc_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8297162097078d6d1a85b20a7b06a33c370efe83f671163044920656eef09bef"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_qmvnt_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ddd02a9361e078d4b8f7eee499d5baa973beb2b9dd6c80349fa83f685458268a"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_rcont/rcont.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1e49d7b5366bafde53ff02379c6ec2ada1064dafb6bd19d19bcb0235aa99836c"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_sobol.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ac46cf81e77b674c367d7c760f692a81767a03becb32e935b6eb2a12ab925ce8"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_stats.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ef23d79d5aa2bcab20b47a25ab55459452ebef3e151ccb88b9bda364b2f38dc7"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_stats_pythran.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "21f2d025d6de46b1d825087a8a04a7efb058323a92d0a91109a53ac4a78f61d5"
+          },
+          {
+            "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy/stats/_unuran/unuran_wrapper.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0d05a90bca89d7531f34bebeea1892dc853ca45a74581b7555054fe34a2e587b"
+          }
+        ],
+        "path": "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/scipy",
+        "python_file_count": 606,
+        "python_source_sha256": "48382fa14acd4f66623caa881064b9884f31747e4db17b2b4a8ab763a1630a18",
+        "version": "1.18.1"
+      },
+      "smonitor": {
+        "direct_url": "{\"dir_info\": {\"editable\": true}, \"url\": \"file:///home/liliana/repos%40uibcdf/smonitor\"}",
+        "metadata_version": "0.22.0+16.gccdcace",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/smonitor/smonitor",
+        "python_file_count": 41,
+        "python_source_sha256": "b52e8ea69497390c27c84fa37b5e1c1a1b4bd4bab292b4249bd32d71fb7e0660",
+        "version": "0.22.0+16.gccdcace"
+      }
+    },
+    "public": {
+      "ackredit": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/ackredit_1791358278535/work\"}",
+        "metadata_version": "0.12.0",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/ackredit",
+        "python_file_count": 69,
+        "python_source_sha256": "743808d9e6090eb53f8bfdc47ea0b4a68a173dc004430ca7f1bb30e38aaecd3e",
+        "version": "0.12.0"
+      },
+      "argdigest": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/argdigest_1793907682986/work\"}",
+        "metadata_version": "0.17.1",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/argdigest",
+        "python_file_count": 39,
+        "python_source_sha256": "6e99fceb522d8e7d543caac520fb2156df4a69701d93a30a1b9caf2b9cb347d1",
+        "version": "0.17.1"
+      },
+      "depdigest": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/micromamba/envs/build/conda-bld/depdigest_1793913284602/work\"}",
+        "metadata_version": "0.15.2",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/depdigest",
+        "python_file_count": 17,
+        "python_source_sha256": "3799659baa6eb4d6696b53b554a2b2ed866de6923256b86cd83b8b183900fb76",
+        "version": "0.15.2"
+      },
+      "molsysmt": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/micromamba/envs/build/conda-bld/molsysmt_1791322528917/work\"}",
+        "metadata_version": "0.23.0",
+        "native_extensions": [
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/molsysmt/_rust.abi3.so",
+            "sha256": "fb07932ca17b75f1edbcfda5e290434243568d69e06ccab11263878c611a8103"
+          }
+        ],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/molsysmt",
+        "python_file_count": 2851,
+        "python_source_sha256": "ef8120fd777a61a93d185be2ccd5cdb32f8d7c66bf23195daad19ae1ea89b500",
+        "version": "0.23.0"
+      },
+      "numpy": {
+        "direct_url": "{\"archive_info\": {\"hash\": \"sha256=7d3822dd8936e8f8f32ba03258b6a976ffeb298548df99098c8ea8f9232b53a5\", \"hashes\": {\"sha256\": \"7d3822dd8936e8f8f32ba03258b6a976ffeb298548df99098c8ea8f9232b53a5\"}}, \"url\": \"file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1791675316/work/dist/numpy-2.5.4-cp314-cp314-linux_x86_64.whl\"}",
+        "metadata_version": "2.5.4",
+        "native_extensions": [
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_multiarray_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bb082814d2438d8752f53f4d1f8aecaacb40d80fe96463ed55925ba0c0b6036d"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_multiarray_umath.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4a0334365bad8c180820b6bd5a0f08ee954486142a4efc3fabde4206ab293872"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_operand_flag_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "155b667d71cd8ae24018476963e07db04525f66174f85012d6f9fb6a25346a56"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_rational_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ce890908a318a9c6e56eef1e1a34b11ee8b3ab5964db1344760a7975fb524bc6"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_simd.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "2933f2e3fdcbd78b21c02d0e1f442c08eea9d31f4a0c44ca33ca552003a7c629"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_struct_ufunc_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ca9b75edca41f077a1aa59de5c8627c7954b5af0decfdd4eddf00a8c7c2191c7"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/_core/_umath_tests.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "cef5369931f579aa69cbf3b69b6983c70f3166c8d220887eb0f3656275c01534"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/fft/_pocketfft_umath.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4d157e72109ff3946d8de2f630e5e15c5e3b099690008bd2f6dbb849f7e96380"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/linalg/_umath_linalg.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "19fdd9e6fd4328481fad3550a409e74b5f0ec337a9864710777167de5915ce44"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/linalg/lapack_lite.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "927c502807fa2173573514437455e13cb23fcf5205217bdfedaf4cb5b0423d65"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_bounded_integers.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1b097abd2cfeb01fab793bf47e00fb51a354d150dbe2f322ee1a274677761050"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_common.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fb8b6ab2d866995e34812fc01d105e8e02036b0dd4667ccd1957c3601e8210de"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_generator.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "49a4e933f712ccf8c9cc567b0e2cd1a48439415152b91da00d83213a05ffa14b"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_mt19937.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1fbb9361c048d6140d9e229d5c0489ee4c490e0704c599541f554ca7cf0c8723"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_pcg64.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c31d97c689117dff82786dea4dddabfd2fde0f6396ce74dc1fcd9c9d6bef062d"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_philox.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bc643df79f0056e971b031628ee9c10f5947b150f8e4f48784e5d397512ac086"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/_sfc64.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4df0e899fe72c830cc43393a99bc92a4b1aad9f4013bb4f34d3641350ec7fb4f"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/bit_generator.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "25a248fe09b0bbcb54492b82815d20d9677c671b916462697a1042ab22ecd797"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/random/mtrand.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "81870f8a4d0efc3517e0b0a418f1118c34accfcdd32868f403367eb7fe9612c4"
+          }
+        ],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy",
+        "python_file_count": 407,
+        "python_source_sha256": "c960537aeb62e6c0bf228865b2730e0f9d685a7a06cfaf29556d515f827ef9e6",
+        "version": "2.5.4"
+      },
+      "pharmacophoremt": {
+        "direct_url": null,
+        "metadata_version": "0.4.0+62.g6a7537b",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+        "python_file_count": 142,
+        "python_source_sha256": "eca9183296cf949c659ef4a3524fa6f8cf6184d92bdcb6f0250d7d7d0dc7bf8d",
+        "version": "0.4.0+62.g6a7537b"
+      },
+      "pyunitwizard": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/micromamba/envs/build/conda-bld/pyunitwizard_1792785130617/work\"}",
+        "metadata_version": "0.29.0",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/pyunitwizard",
+        "python_file_count": 92,
+        "python_source_sha256": "8c771abf9c9f302796e50c144852e7300af9e22a9171e62bb2cb7d4369570caa",
+        "version": "0.29.0"
+      },
+      "scipy": {
+        "direct_url": "{\"archive_info\": {\"hash\": \"sha256=ea9e882c25077b6607d75d890361977a9370340ac5a9fc9109bb7ae5c812af95\", \"hashes\": {\"sha256\": \"ea9e882c25077b6607d75d890361977a9370340ac5a9fc9109bb7ae5c812af95\"}}, \"url\": \"file:///home/conda/feedstock_root/build_artifacts/scipy-split_1792929785172/work/dist/scipy-1.18.1-cp314-cp314-linux_x86_64.whl\"}",
+        "metadata_version": "1.18.1",
+        "native_extensions": [
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/_cyutility.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "6d594573e7a200c89050e38477b846d738c1d170cb4cac2691a47653c5473db0"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/_lib/_ccallback_c.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fa947ae870b73a8dd0633ba6bcd2298e7c7513550aa7b05776a924641501306f"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/_lib/_fpumode.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0e2794a8738702f179defec0b11d5e7e3b64acb8eb58023e6578a2d60548d374"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/_lib/_uarray/_uarray.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "72f0af2bae7b86eeaa910d246bd15ba2d1d6a08ad6157ed839cf44eea955d3af"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/_lib/messagestream.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "07f54da1a006bb64e6b0e2d141c41576c4655246946e6ea387d046f98b5b6ac5"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/cluster/hierarchy/_hierarchy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4690e5a10249b5534e629144385c5b3f53207eb8a44c8fa44200e4e8990bdcbc"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/cluster/hierarchy/_optimal_leaf_ordering.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4483132ba3ae92a5fb49eda56c996004071adeb0dc7bc93d5d0ddc778a846d48"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/cluster/vq/_vq.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "152e8989170a651d49fe0a345e160d2ee3d403862a98d069555918109ea4127e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/fft/_duccfft/pyduccfft.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7f2d84c27858b5edb24a6c42234bab385669cd5ab32ec8b2e22193e36f626743"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/fftpack/convolve.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "07ef54d63cd33659ccd28feb72f06551182382e5fafc775c4492c7b7685729dd"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/integrate/_dop.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "108eadf08702de714b7e27da99c779216c7ce7b8b212cfaaaf56fcc3ef6296ae"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/integrate/_odepack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "42177d925026e51afdd8dde116d47c5a6e034a8c17f527137510095f4888382e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/integrate/_quadpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1043b78d0529db78f7ac4acc6045a0f126ec309af25ef941fb343105ea137faf"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/integrate/_vode.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "2b749c5c97cc7ae0eaa3e33bb677973f81f7c7345b22b5b80dede400c7629567"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/interpolate/_dierckx.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "6b789919bd11cab66ec2f0140727d698430424463ab04bc543a04721d81b9afa"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/interpolate/_fitpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0417d194ef5562ce2e89481b5036853cacbe94c987ee1d518daca141b9819287"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/interpolate/_interpnd.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "27f314b3e299ba6d151de3bf3113ce18632206ee3b9aa7823375f03eee641752"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/interpolate/_ppoly.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bf84fc94c835259ae347eb2adc9c9b53ff905e52ac9865b0d576375bfe83019b"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/interpolate/_rbfinterp_pythran.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "cb5ef28e4765094380aa0f6f454af56beb477d713cc9798022e3c9560702237a"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/interpolate/_rgi_cython.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "05e188772a21d3747e75f00bc7ef5609ad8a0184474c357d317be074b4103d1d"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/io/_fast_matrix_market/_fmm_core.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9177cca8cc982c3ea4657876cec7459eac868e9849a8c097a5739c29f0547ba3"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/io/matlab/_mio5_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "402904cf56d7a1e8dbffd907bfce980d5ae41b752457b7cdc1b61836d498eddc"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/io/matlab/_mio_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "a9910ec592287765fda6c60f5b01b6ca72e4a0b90aac171cc662beaf392419cd"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/io/matlab/_streams.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c61155e65919020ad7c13742209d3688724b839b69fa779c2682826e4913381e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_batched_linalg.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "61ca0c316e71258f41b49b0fe5bf9b06eee769930c5de940b2ea341f1a851e12"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_cythonized_array_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "14fd47199d2336ac6cd97565cc8f920209b9f1d1595be13c5433aacdc05ce087"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_decomp_interpolative.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "70d41ece64e8983d8f91e1c0a8b10495def597d1d1624a6400e37c181b338ab0"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_decomp_update.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "5e08dc55b97a7b9440af0010c15dc0dda8619354252f65ede18bf6703355534e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_fblas.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0e4ac03fb95f3b2142217c59764e386d90e823c1e76f0c53c9ade9fdcc75634b"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_flapack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0099f4a213f77e084a610b90ff28ab979eb64ab354c810a92b5f13931c11a58d"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_internal_matfuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e246c2dbacdcc952ba32076b25c3289cf20ecaa804df5623929b792d18287b3f"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_linalg_pythran.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "06046043c76b8b3e284d917e6b45da757570adc08e2e61c152ef409583f58191"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_matfuncs_sqrtm_triu.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "89050d828729f4debfd95d7717cf1e8ef95b6c5a5f091089ce04631a394b6563"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/_solve_toeplitz.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "d6bcbf2825ba87c346508df36207d4d684777f56ee0d88ee2ca8f150a37773b3"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/cython_blas.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "aa5a45332118397eaf4d67f4b5249a439d6ef21de3c30e2f7bb53bbcee7fd5d9"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/linalg/cython_lapack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7fe70f1678d1142551a682b9a6ecd490de0293e18e8e8299f126adbddf239954"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/ndimage/_nd_image.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "44c392203e57727a6a6251685af6f841e4d7e90c2f235bbdd62b680da376b237"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/ndimage/_ni_label.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "85b4335142462c3d3310e3b389e63c549801c2f7e2c920ac8a04f2a68ddfc4d6"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/ndimage/_rank_filter_1d.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1ec9d0bf0bbdcc427b8fee9fdb689d2e82d21cd15d94e7178b0f39d0847f8944"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/odr/__odrpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "534c65d85f0ce357478156ad84068ecfbe0222f91ec4140b3be74d79cb8c99df"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_bglu_dense.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c6a02a7adb9968e93a657ed74fd004676c69910616ec158fdfcd74c7af5f6bdb"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_direct.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "989393f737719d78bcc680ed0553538cb2bdeabd87495bfb2ef280f4f1a64d21"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_group_columns.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "73817240932f0a715db88ba5ed02eac678456786356807ecda3055c3d079f728"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_highspy/_core.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "3e60a67bd8554cf614f6b278aaa6af01c7909cc7000f263a603618d03537c9bc"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_highspy/_highs_options.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "519122368577d7f0605ee514910371a06954b8dd68c2f0f4734e5ed4ed9363c6"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_lbfgsb.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7597dd46d2906d2f01a921656e31caecfe117792ffdd9765811b6b5bdb2d4386"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_lsap.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "da8120ba798b3b5ac0d13bbd9b91e441cc169641ad08534b677a7340b56426ee"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_lsq/givens_elimination.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8686bd894858b5a4c68ac783d8d75cd57648750a9b3b48608d6f9bc0a749519c"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_minpack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4982a426e830c1b6659515556281f08d020a71abb6b6485ab244ea95404b0f89"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_moduleTNC.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ad873265db5e43fb097905854f6210a358a176215328f85047b086712cc023b2"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_pava_pybind.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "095cd69c77700d134b28149263171ff5f20ca456129e1789de866a1442413188"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_slsqplib.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1cc6abe1043af937ed8bb4fbbfc86102830b8103f39f51739d1f86978a0b24d2"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_trlib/_trlib.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "dde9fe134f367891b2db58d1a1d088feaf004ed42c12f8eac6adff0737ed3736"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/_zeros.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "83966070e4e650c0755c782b53694567dda6cdbe3b4ae4f27f624e748e73cec2"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/optimize/cython_optimize/_zeros.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "46fbca9aba59f6a6a7b328fa5aaca3d4907e2337ba6cfc54d07c987461235d9a"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/signal/_max_len_seq_inner.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4d522afa36368475c725dad7b76886dbfa9999c19ea95545e47c1487930a43f5"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/signal/_peak_finding_utils.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fef20f7d0853ca490f65ccebf91a4f7647b0678611ec46eec0c52b090bb14fda"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/signal/_sigtools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "b62fa8272330995392663d5d9b5fffbc51e760004e942b40b891b08001596660"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/signal/_sosfilt.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "4d3b1b728e373c7051cfc4156b1d715697241f88076676d38c1a92330b79747a"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/signal/_spline.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "2eef9fbce5907124aea6e2807cc4d6b5b3f38bd48a2795b9ba0df841bc803590"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/signal/_upfirdn_apply.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "0913ac2a9cb8342c244f016c58131f64526df209418bf1b7d6655027ab2e9fab"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/_csparsetools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "6e0102b4358dffdf56b0f59af1b55e342788d82ba8a00653c540f90f1b0ec182"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/_sparsetools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8aecd1a1d346fc60143b42544b24816ddcbde048bd2ab03559bf57ee68268d71"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_flow.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "7bde04df1e7f668518976ca7eaaa70306be598b4ebdc3f2d667eb0eaad138f1b"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_matching.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8b82ba0e0e44c0fe01f360a0b56f5139b29a4ed30873cf058c47fea8b1489d3c"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_min_spanning_tree.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "49df0bf8a8076770085d1d99d2e301f7a6078a9f7ba0c752113283a761129260"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_reordering.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bd05ed293f0460d14ba7d94353c8fe13cf8c231b247b8494dc60c94136a25518"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_shortest_path.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "c2b114bc9f18ba4e14a8f0bd9590f4b57fb58972196f0efc275df8a6302fbbf2"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_tools.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "318e4f66abe21090948a1e93460d75898b52d9d2036d3e06236fe4206f6c134f"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/csgraph/_traversal.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "28d55706f8b7271e457c705a19e5f9e41f3f5a75f35ee45b1e54db922179ef5e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/linalg/_dsolve/_superlu.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "2506d5734a3717c0f6ea719b0fb92dafc81934b6e72a224b098a6558f90d2167"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/linalg/_eigen/arpack/_arpacklib.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "9e7935426962c87f9702ca666b06688e8b6fa6f6bd3b903f0fc3a1ae5b1508ba"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/sparse/linalg/_propack.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "b5d87ef3ff7f6b081c44803ad6feaaf2141c7d7898fe9f8144a2f17a5ce3b5fe"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/_ckdtree.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bb3a1db2e3a06014964ae72603e20db3abb02666e4a1c2892850f60725cccd93"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/_distance_pybind.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "d055230de3221ebce6bcb7c95af97d7e0e2b77559a97491b98d8d9410f56cb1c"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/_distance_wrap.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "29e0dbbbf418251667c8aee888bdc2c4eec4ffed184b6264f3e6e294cec0492f"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/_hausdorff.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "767f0fe13c33007861abe4df846b688729f6f8031cf559ca50c2993837b2e204"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/_qhull.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1acd8d0150ad0f2ac76c9a68a53336829caa07fc1f8e099b5206867590c0dd88"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/_voronoi.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "94aca1a8a28edcd9dd01ad6d621680ccc7808c6be93d0586599e12bbcdc9ab0d"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/transform/_rigid_transform_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "ef403a5a85bccfff13b1b453158dd70acde05dd6247c9c3f4b0a6887108d3b6c"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/spatial/transform/_rotation_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "fad120b5f27a2320a561fae684bfe2c44059111bbb0339aec09a4a0edf72fd6b"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_comb.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "74d44c03f671f00d9cef8f896efd1b5fd4ea7f0a78a584477555d235c7b38b69"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_ellip_harm_2.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "d070b8b2820ac6dbef4680ffe74190ec901a8657cee3df53a0944215e7d1b162"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_gufuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "46fda0b2db79c5b1267acc68a17c5ea2c93e3407a6b4f8bca5fc8a5f44106b35"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_specfun.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "35b4985bedf6c4ad62d24d0f17d4052c6f1605f2d41035d83cd6ecf4d67072ae"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_special_ufuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "25a844aabd0d13f3c27dfa3a7e82c2ec4caa58c54be4ab3c09b4fc2df82acc8c"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_ufuncs.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e3f07e3f57f530c93836c00b7051fda827863ddcbb35e529bda4578e237203c1"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/_ufuncs_cxx.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "cf53fe06815f39c44d5e4726a434fea5b4144cb4d5b023d0caded2ef06e17085"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/special/cython_special.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "e28f9d747f9b58f9ad3d3411d59773eccf782a01f0b76d4bc012431b5e498653"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_ansari_swilk_statistics.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "034241a431db0299499162b2bfc38c04b89a27b19d1d1f984f0485eed678fc4e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_biasedurn.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "1fd5fe4521fef2ff403d6fdfd2e6cd89f2ab888faaa31c1211bcd75ca85e61bd"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_levy_stable/levyst.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "89ea174ee323cd38f2915a6ec0f35ce25235a5a12a8faf9b3300c3ff52f16eef"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_qmc_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "769fa66815f4cccb9087fecec600fa9bcbca6ce04373d79d2eae264c5caccff2"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_qmvnt_cy.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "93a63e1a0bf6f3ca56f72139f690c32556721738c02cf5c69960e02391d6db38"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_rcont/rcont.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "bf9e43471903c3f5c0595918b20ef1b9cbc6919ffa87be422043dcbe388e0377"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_sobol.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "8228531e20054bee0a539536187517037c5ea94f06ea2536d74d8175ab86dad9"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_stats.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "37825613225122d37cfe9567499972834c236e4c8a21311b19647ca0999b710e"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_stats_pythran.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "3c9a92494eb75f3b5b3b08e8adae9d77e190a268182da8b5fb7872504f845467"
+          },
+          {
+            "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy/stats/_unuran/unuran_wrapper.cpython-314-x86_64-linux-gnu.so",
+            "sha256": "793c7ca4a8c9bf1bfd8fc58bb41810f3545e8a3d7fcafaf9aa1878e78e7a7828"
+          }
+        ],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/scipy",
+        "python_file_count": 606,
+        "python_source_sha256": "926fb9665e88ad31c8338f199307c4da9ca591eb3268a0c7bb38ed2a8ed72b4f",
+        "version": "1.18.1"
+      },
+      "smonitor": {
+        "direct_url": "{\"dir_info\": {}, \"url\": \"file:///home/runner/micromamba/envs/build/conda-bld/smonitor_1793848904034/work\"}",
+        "metadata_version": "0.22.1",
+        "native_extensions": [],
+        "path": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/smonitor",
+        "python_file_count": 41,
+        "python_source_sha256": "63e13eec13b6b39f44e509cc6e9af4b51c722ebf76fef5f3fa0b38347df65346",
+        "version": "0.22.1"
+      }
+    }
+  },
+  "recorded_at": "2026-11-06T04:37:42.619681+00:00",
+  "resources": {
+    "baseline": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-retro-baseline-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory": "MemTotal:       32165612 kB\nMemFree:         1288960 kB\nMemAvailable:    8912640 kB\nBuffers:          320780 kB\nCached:         16774624 kB\nSwapCached:        33152 kB\nActive:         16303568 kB\nInactive:       11141780 kB\nActive(anon):   14581828 kB\nInactive(anon):  6330504 kB\nActive(file):    1721740 kB\nInactive(file):  4811276 kB\nUnevictable:          16 kB\nMlocked:              16 kB\nSwapTotal:       8388604 kB\nSwapFree:            924 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:             46692 kB\nWriteback:             0 kB\nAnonPages:      10318348 kB\nMapped:          1316016 kB\nShmem:          10562716 kB\nKReclaimable:    1555592 kB\nSlab:            2404304 kB\nSReclaimable:    1555592 kB\nSUnreclaim:       848712 kB\nKernelStack:       45184 kB\nPageTables:       165724 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24471408 kB\nCommitted_AS:   63601284 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      247200 kB\nVmallocChunk:          0 kB\nPercpu:            32000 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    149504 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4197416 kB\nDirectMap2M:    14508032 kB\nDirectMap1G:    14680064 kB\n",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=523820357\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=501059674\n",
+      "nice": 19,
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "RAYON_NUM_THREADS": "1"
+      }
+    },
+    "focused": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-retro-focused-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory": "MemTotal:       32165612 kB\nMemFree:         1455912 kB\nMemAvailable:    9131240 kB\nBuffers:          322716 kB\nCached:         16825364 kB\nSwapCached:        33152 kB\nActive:         16224308 kB\nInactive:       11191660 kB\nActive(anon):   14501012 kB\nInactive(anon):  6330420 kB\nActive(file):    1723296 kB\nInactive(file):  4861240 kB\nUnevictable:          16 kB\nMlocked:              16 kB\nSwapTotal:       8388604 kB\nSwapFree:            924 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              2700 kB\nWriteback:             0 kB\nAnonPages:      10236644 kB\nMapped:          1320112 kB\nShmem:          10563796 kB\nKReclaimable:    1555720 kB\nSlab:            2404408 kB\nSReclaimable:    1555720 kB\nSUnreclaim:       848688 kB\nKernelStack:       45744 kB\nPageTables:       166572 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24471408 kB\nCommitted_AS:   63865580 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      247668 kB\nVmallocChunk:          0 kB\nPercpu:            32000 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    149504 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4197416 kB\nDirectMap2M:    14508032 kB\nDirectMap1G:    14680064 kB\n",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=523820357\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=501059674\n",
+      "nice": 19,
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "RAYON_NUM_THREADS": "1"
+      }
+    },
+    "scientific": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-retro-scientific-20261105.scope",
+      "ionice": "idle",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory": "MemTotal:       32165612 kB\nMemFree:         1484824 kB\nMemAvailable:    9120240 kB\nBuffers:          323956 kB\nCached:         16783152 kB\nSwapCached:        33148 kB\nActive:         16212548 kB\nInactive:       11150188 kB\nActive(anon):   14487704 kB\nInactive(anon):  6330400 kB\nActive(file):    1724844 kB\nInactive(file):  4819788 kB\nUnevictable:          16 kB\nMlocked:              16 kB\nSwapTotal:       8388604 kB\nSwapFree:            932 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              3700 kB\nWriteback:             0 kB\nAnonPages:      10224108 kB\nMapped:          1320960 kB\nShmem:          10562828 kB\nKReclaimable:    1555712 kB\nSlab:            2404384 kB\nSReclaimable:    1555712 kB\nSUnreclaim:       848672 kB\nKernelStack:       45424 kB\nPageTables:       165848 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24471408 kB\nCommitted_AS:   63572428 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      247360 kB\nVmallocChunk:          0 kB\nPercpu:            32000 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    149504 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4197416 kB\nDirectMap2M:    14508032 kB\nDirectMap1G:    14680064 kB\n",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=523820357\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=501059674\n",
+      "nice": 19,
+      "threads": {
+        "MKL_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "RAYON_NUM_THREADS": "1"
+      }
+    }
+  },
+  "runs": {
+    "baseline": {
+      "arguments": [
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--junitxml=/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-retrospective-contracts-20261105-qwzpbysw/baseline.xml",
+        "tests/test_retrospective_contracts.py",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-retrospective-contracts-20261105-qwzpbysw/test_original_collision_probe.py"
+      ],
+      "attempt": "baseline",
+      "errors": 0,
+      "exit_code": 1,
+      "failures": 8,
+      "identities_stable": true,
+      "recorded_at": "2026-11-06T04:31:21.843878+00:00",
+      "skips": 0,
+      "testcases": 24
+    },
+    "focused": {
+      "arguments": [
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--junitxml=/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-retrospective-contracts-20261105-qwzpbysw/focused.xml",
+        "tests/test_retrospective_contracts.py",
+        "tests/test_saved_results.py",
+        "tests/test_validation_metrics.py"
+      ],
+      "attempt": "focused",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "identities_stable": true,
+      "recorded_at": "2026-11-06T04:32:31.766161+00:00",
+      "skips": 0,
+      "testcases": 107
+    },
+    "scientific": {
+      "arguments": [
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--junitxml=/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-retrospective-contracts-20261105-qwzpbysw/scientific.xml",
+        "tests/test_retrospective_contracts.py",
+        "tests/test_retrospective.py",
+        "tests/test_seeded_scoring.py",
+        "tests/test_virtual_screening.py"
+      ],
+      "attempt": "scientific",
+      "errors": 0,
+      "exit_code": 0,
+      "failures": 0,
+      "identities_stable": true,
+      "recorded_at": "2026-11-06T04:33:39.420610+00:00",
+      "skips": 0,
+      "testcases": 84
+    }
+  },
+  "runtime_comparison": [
+    {
+      "added_contract_configurations": 2,
+      "existing_settings_validator_calls_added": 0,
+      "normalized_exact_ast_matches": true,
+      "path": "pharmacophoremt/validation/saved_results.py",
+      "retrospective_run_docstring_updated": false
+    },
+    {
+      "added_contract_configurations": 2,
+      "existing_settings_validator_calls_added": 1,
+      "normalized_exact_ast_matches": true,
+      "path": "pharmacophoremt/validation/retrospective.py",
+      "retrospective_run_docstring_updated": true
+    },
+    {
+      "unchanged_bytes": [
+        "pharmacophoremt/validation/metrics.py",
+        "pharmacophoremt/screening/scoring.py",
+        "pharmacophoremt/screening/virtual_screening.py",
+        "pharmacophoremt/_private/pose_batch.py",
+        "pyproject.toml",
+        "devtools/dependency_routes.toml",
+        "devtools/conda-build/meta.yaml",
+        "devtools/conda-build/release_plan.toml",
+        "pharmacophoremt/_argdigest.py"
+      ]
+    }
+  ],
+  "schema": "phmt.retrospective_contracts.summary@1",
+  "scope": "Current PHMT source in an existing Python3.14.10 public-provider prefix and inherited Python3.14.7 controlled modern molecular sources/public ArgDigest0.17.1 extracted overlay. Selected analytical and prepared-molecular regression, not full source/support, installed-current-artifact, all-platform, predictive/performance or release qualification.",
+  "temporary_resources": {
+    "borrowed": "public-closure prefix and qualified controlled sources; never edit",
+    "continuing_process_required": false,
+    "created": "2026-11-05",
+    "issue": "uibcdf/pharmacophoremt#100",
+    "owner": "LMMV/dprada",
+    "purpose": "bounded saved-result/retrospective contracts and EF key collision review",
+    "review": "2026-11-19 or relevant change"
+  },
+  "unique_selected_controls_passed": 168
+}

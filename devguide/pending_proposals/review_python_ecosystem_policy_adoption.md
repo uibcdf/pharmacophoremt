@@ -18,6 +18,17 @@ supersedes: []
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.
 
+## Saved-result/retrospective adoption — 2026-11-05
+
+[#100 contract](../retrospective_result_contracts.md) and
+[receipt](../evidence/retrospective_contracts_20261105_summary.json) receive four
+definition-owned ArgDigest contracts. Retrospective run stays explicitly open
+because native evaluator selection is instance state; existing native domains
+own option membership. Existing PHMT settings validation now refuses colliding
+EF report keys before cohort materialization/evaluation, including bypass.
+168 unique selected controls pass; metric/scoring/cohort/failure semantics and
+provider ownership remain. #6 stays partial; no floor/pin/provider/release change.
+
 ## Native screening adoption — 2026-11-05
 
 [#99](https://github.com/uibcdf/pharmacophoremt/issues/99) adds nine

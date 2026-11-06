@@ -1,5 +1,19 @@
 # Strategic Roadmap
 
+## Retrospective settings/contract consolidation — 2026-11-05
+
+[#100](https://github.com/uibcdf/pharmacophoremt/issues/100) fixes EF-key overwrite
+by reusing existing saved-result settings validation before retrospective cohort
+materialization/evaluation. Four definition-owned ArgDigest contracts keep native
+instance-dependent forwarding explicitly open. [Contract](retrospective_result_contracts.md)
+and [receipt](evidence/retrospective_contracts_20261105_summary.json) retain the
+original analytical overwrite probe and 168 unique final passes (23 new).
+Metric formulae, molecular operations, cohort/failure accounting and scientific
+definitions remain. Broader #6/audit3 stays partial: next review actual remaining
+nontrivial public-contract gaps, without inventing redundant closed-signature
+domains. Provider answers/delivery, #95 and #9/#10/#23 full gates remain separate.
+Serial one-CPU/1GiB/no-swap/low-priority work; no release/addon work.
+
 ## Native batch contracts consolidated — 2026-11-05
 
 [#99](https://github.com/uibcdf/pharmacophoremt/issues/99) fixes empty batches

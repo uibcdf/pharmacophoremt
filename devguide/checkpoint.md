@@ -1,5 +1,39 @@
 # Development Checkpoint
 
+## Retrospective settings and result contracts consolidated — 2026-11-05
+
+[#100](https://github.com/uibcdf/pharmacophoremt/issues/100) fixes silent EF
+report-key overwrite. The original two-sample probe gives EF2/EF1 for fractions
+0.5/0.5000000000000001 but only EF@50%=1 survives. Retrospective run now reuses
+the unchanged saved-result settings validator before materialization/evaluation,
+including internal bypass. Four definition-owned ArgDigest contracts cover saved
+summary/comparison and retrospective constructor/run. Native option delegation
+stays explicitly open because the evaluator is instance state; no derived domain.
+
+[Contract](retrospective_result_contracts.md), [receipt](evidence/retrospective_contracts_20261105_summary.json)
+and [archive](archive/retrospective_metric_key_collision.md) retain the original
+probe and baseline (eight new-guard failures/15 passes plus one historical-probe
+pass). Final public-prefix107/source84 controls pass: **168 unique selectors**,
+23 new, no skips/errors/failures. One intentional attribution warning is retained
+in the public scope. Eight selected providers per scope match prior #99 and
+remain stable. Source AST comparison isolates settings admission/docstring/four
+decorator configurations; metric formulae, scoring, saved-result bodies, molecular
+operations, batch/facade accounting, metadata, pins and release plan remain.
+
+Heavy scopes are serial, one allowed CPU/1GiB/no swap, nice19/idle I/O/backend
+threads1, with actual cgroup/affinity/pressure records. Capsule
+`build/phmt-retrospective-contracts-20261105-qwzpbysw`, owner LMMV/dprada,
+review 2026-11-19 or relevant change. Borrowed providers/prefixes are not edited;
+no continuing local process is needed.
+
+**Next:** review remaining #6 nontrivial public contracts against actual gaps;
+closed signatures already enforce admission and do not require redundant domains.
+Keep instance-dependent forwarding limits explicit. Independently receive
+supported PyUnitWizard #141/SMonitor #63 answers and modern public MolSysMT
+#375/#255 delivery for #95. Original-method access #66, format ownership
+#74/MolSysMT #215 and full #9/#10/#23 gates remain. Broader #6/audit3 stays
+partial. Actual plan/tag/Release remains0.4.0; no publication/addon work.
+
 ## Native batch admission consolidated — 2026-11-05
 
 [#99](https://github.com/uibcdf/pharmacophoremt/issues/99) fixes empty native
