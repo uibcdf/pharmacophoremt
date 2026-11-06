@@ -70,7 +70,12 @@ def test_curation_preserves_observations_and_declared_constraints(workflow):
         dict(source_site_index=index, site_index=output)
         for output, index in enumerate([9, *range(9)])
     ]
-    assert current["metadata"]["source_model"] == original
+    # Public JSON adds its envelope marker; curation retains the historical
+    # payload shared with SDF @1. Every other source field must remain exact.
+    assert original["schema"] == "pharmacophoremt.native@1"
+    assert current["metadata"]["source_model"] == {
+        key: value for key, value in original.items() if key != "schema"
+    }
     for a, b in zip(sites, wide["interaction_sites"]):
         assert a["shape"]["center"] == b["shape"]["center"]
         assert a["metadata"] == b["metadata"]

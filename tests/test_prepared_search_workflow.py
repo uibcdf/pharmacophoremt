@@ -36,7 +36,12 @@ def test_declared_anchors_and_prior_query_contract(workflow):
     assert workflow["prior_query"]["interaction_sites"][5]["essential"] is False
     assert "three" in workflow["incompatible_query_rejection"]["message"]
     assert workflow["model"]["score"] is None
-    assert workflow["model"]["metadata"]["source_model"] == workflow["prior_query"]
+    # The public JSON envelope is tagged; internal curation history preserves
+    # the historical SDF-compatible payload, including all scientific fields.
+    assert workflow["prior_query"]["schema"] == "pharmacophoremt.native@1"
+    assert workflow["model"]["metadata"]["source_model"] == {
+        key: value for key, value in workflow["prior_query"].items() if key != "schema"
+    }
     # Independent frozen CTAB atom-zero coordinate, nm.
     np.testing.assert_allclose(
         sites[1]["shape"]["center"], [0.1463, -0.0446, -0.2486], rtol=0, atol=1e-12
