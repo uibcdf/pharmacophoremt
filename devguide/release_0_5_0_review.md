@@ -1,5 +1,20 @@
 # 0.5.0 source-scope and installed-support review
 
+## Current consolidation — 2026-11-05
+
+The [post-review consolidation](release_0_5_0_post_review.md) extends the original
+review through immutable source `fbe6677f5a770a2123a2512fc3367a93209456ae`:
+111 commits/1,201 paths/46 runtime Python files since 0.4.0. The 11 later commits
+change nine runtime files and add no textual public argument signatures. Native
+batch/EF migration notes, received ArgDigest 0.17.1,59 private support inputs and
+current provider/public limits are now consolidated with original receipts.
+This is a reviewed snapshot, not a candidate freeze or version-plan change.
+
+## Initial 3d26b28 review (preserved)
+
+The original assessment and its then-pending statements below retain their
+dated scope. Current status is in the addendum and [readiness](release_0_5_0_readiness.md).
+
 Reviewed 2026-11-05, owner LMMV/dprada, [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
 The source review compares immutable tag 0.4.0 at
 `60b21b7d183217d50c29ea3e6bc0d05fb5b797a2` with

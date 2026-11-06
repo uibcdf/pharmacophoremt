@@ -3,8 +3,9 @@
 ## 0.5.0 — draft consolidation
 
 This is a proposed release, not a published tag or package. The source review
-compares 0.4.0 with commit
-[`3d26b28ae072c106784299ee96d3a50f0edebc91`](https://github.com/uibcdf/pharmacophoremt/commit/3d26b28ae072c106784299ee96d3a50f0edebc91).
+now includes changes through commit
+[`fbe6677f5a770a2123a2512fc3367a93209456ae`](https://github.com/uibcdf/pharmacophoremt/commit/fbe6677f5a770a2123a2512fc3367a93209456ae),
+extending the initial `3d26b28` review. This is a reviewed source snapshot.
 The exact release candidate, version plan and installed/public qualification
 remain pending under [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
 Use the [installation guide](installation.md) for the delivered 0.4.0 package.
@@ -28,7 +29,7 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 - **Saved-result analysis:** `validation.summarize_screening_results` and
   `compare_screening_results` account for the original cohort, explicit input
   mappings, failures/unscored inputs, evaluated-subset metrics and paired
-  discordances. Reading saved results performs no molecular calculation. See
+  common-subset statistics/deltas. Reading saved results performs no molecular calculation. See
   the [saved-result recipe](../cookbook/retrospective_validation.md#summarize-saved-results-against-the-original-cohort).
 
 Reference-ligand, interaction/complex-based, consensus, placed-pose and rigid
@@ -76,6 +77,23 @@ repairs strengthen their stated scope; they are not all new 0.5.0 algorithms.
    minimum is now >=0.17.1 for the received binding/error-family repairs;
    PyYAML >=5.1 is an explicit required dependency, and the existing
    required NGLView dependency is consistently classified.
+7. **Check native batch options even for empty input.** With normal digestion,
+   `PoseEvaluator.run`,
+   `RigidPoseSearch.run` and `ConformerScreening.run` refuse unknown or wrong-method
+   options before native input consumption. Use `structure_index` for a single
+   pose/rigid frame and `structure_indices` for prepared conformers.
+   `VirtualScreening` still clears its result caches before delegating. Applications
+   adding `evaluate` parameters must own their corresponding batch API/contract.
+8. **Choose EF fractions with distinct report keys.** `RetrospectiveValidator`
+   now uses the same settings validation as saved-result summaries. Fractions
+   formatting to the same `EF@...%` key raise before cohort materialization or
+   native evaluation, including internal digestion bypass. Previously one result
+   could overwrite another. Valid fractions, defaults and metric formulae remain.
+9. **Keep the existing source-name policy.** Direct single-source APIs use
+   `molecular_system`. The `model()` dispatcher also accepts one declared
+   `system` or `mol_sys` alias and refuses competing names. This clarification
+   does not introduce aliases to other closed APIs; unknown names already fail
+   before molecular access.
 
 Default chemical acceptors remain position-only. The original donor/aromatic
 generation profile remains available; it does not silently select carbonyl
@@ -103,9 +121,15 @@ and evaluated-subset limits. They do not establish independent activity predicti
 Optional attribution retains actual reached method/provider evidence and reports
 tracking/diagnostic failures without erasing completed scientific results.
 
+The [cached-generation scaling case](../validation/cached_generation_scaling.md)
+records fixed synthetic workloads, independent geometry/count checks and bounded
+resource measurements. A subsequent fixed-work profile motivates provider-owned
+PyUnitWizard/SMonitor proposals. The measurements retain their original inputs
+and environments; no runtime optimization or general speed guarantee follows.
+
 MolSysMT owns molecular representations/formats, preparation, recognition,
-geometry and transformations. Current-source donor vectors are delegated to its
-public geometry tools. The labeled historical compatibility route remains scoped
+geometry and transformations. When the provider exposes the qualified vector
+capability, donor geometry is delegated to it. The labeled historical compatibility route remains scoped
 under [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) /
 [MolSysMT #375](https://github.com/uibcdf/molsysmt/issues/375); newer source
 capabilities do not imply compatibility with every published provider version.
@@ -116,8 +140,8 @@ The release must identify an exact source/closure and pass its required hosted
 source and installed-candidate gates. Historical/local selected passes are not
 a complete 0.5.0 release qualification. The Linux/macOS arm64 Python 3.11–3.14
 installed matrix and independent public receiving remain separate under #10/#23.
-The installed-test declaration repair in #96 supplies three receptor-study
-helpers and their frozen plans without shipping test support as runtime code.
+Installed tests privately stage their receptor-study helpers/plans and cached
+scaling inputs. Test support is not shipped as runtime code.
 
 ArgDigest [0.17.1](https://github.com/uibcdf/argdigest/releases/tag/0.17.1) now
 publishes the #47/#48 corrections. Its exact Conda file is present under main
@@ -126,9 +150,16 @@ overlay and passes 500 selected source controls. The model-source replacement
 regression is repaired; the four native JSON/YAML codecs use definition-owned
 signature admission. Ordinary unknown-option errors now carry ARG-ERR-CONTRACT-001
 while remaining catchable as TypeError, replacing incidental Python message text.
-This receiving is not a clean installed/public dependency-closure qualification.
-Molecular
-SDF fidelity/ownership, hydrogen refinement, pockets and broader scientific
+Later public-provider receiving on immutable source `9c16365` passes its selected
+controls, retaining modern-capability skips. A fresh registry/index check still
+finds MolSysMT 0.23.0 as the highest numeric version under the public main label;
+its historical workflows do not qualify the absent modern chemical-state/vector/
+direction APIs. Resolve the supported delivery boundary and receive actual bytes
+before freezing this full proposed scope. MolSysMT #255/#431 are closed source
+work, separate from public delivery. The broader direction proposal #375 remains
+with MolSysMT. Provider performance proposals add no candidate gate.
+
+Molecular SDF fidelity/ownership, hydrogen refinement, pockets and broader scientific
 validation keep their owning issues. This draft does not claim them repaired.
 The viewer addon, dynamics and AI are outside this consolidation's required scope.
 

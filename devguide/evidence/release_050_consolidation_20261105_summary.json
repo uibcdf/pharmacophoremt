@@ -1,0 +1,585 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "c919077f1da27509bb44482d84f5bb15e765a06913acfe61f6942fa1e20dcd48",
+    "devguide/checkpoint.md": "927946781ab26a7c67b0f7df2b1b4e7f52f0da7463814a61c1229afc046f2452",
+    "devguide/release_0_5_0_post_review.md": "469cfb9c943d828529677f34d7b063695477d66edfe42f384e546a34ffd201ad",
+    "devguide/release_0_5_0_readiness.md": "b9c240521cea711f4e552b93456adf147d382cc39fd9b526464a7801220b9899",
+    "devguide/release_0_5_0_review.md": "e8941e3fa8c6c01acbf7b0a336489b4693c3e793812e1a143ea1ee15f5f08d2d",
+    "devguide/roadmap.md": "107ce9ed2b1bad334ac316f34f2dd3943f934e737e9d605f0174f70171f53fed",
+    "docs/content/about/release_notes.md": "4e135aaa90335ba904151236aea75fa0f2fc6313c76c46dff08013c4a3b13ad8"
+  },
+  "actual_candidate": null,
+  "actual_plan_version": "0.4.0",
+  "administrative": {
+    "all_passed": true,
+    "all_rendered_source_hashes_still_current": true,
+    "commands": [
+      {
+        "command": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "indexes"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "whitespace"
+      }
+    ],
+    "current_runtime_metadata_recipe_pins_support_tools_unchanged": true,
+    "no_new_scientific_or_installed_tests": true,
+    "prior_python_distribution_route_environment_evidence_reused_only_for_unchanged_inputs": true,
+    "reviewed_source": "fbe6677f5a770a2123a2512fc3367a93209456ae"
+  },
+  "current_review": "devguide/release_0_5_0_post_review.md",
+  "date": "2026-11-05",
+  "documentation": {
+    "asset_count": 2,
+    "command": [
+      "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-consolidation-20261105-5si1f6vz/docs_review_closure_final",
+      "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-050-consolidation-20261105-5si1f6vz/docs_review_closure_final_out"
+    ],
+    "exit_code": 0,
+    "input_files": {
+      "README.md": "5fc8dbe3e6785a32a004c8b1b03cfcf70305faec53bba03b39f8b9435dd7e4f4",
+      "_static/LogoUIBCDF_vertical.png": "87a844eab0a393f95f532c41c04a461aae4a9cf177ba279d47fefd668e8f4503",
+      "_static/LogotipoIxtlilton.png": "88f968acae56349274438b6a6225fa40232cdbe3f9e8e5512d32d8a40ef8e19f",
+      "api/developers/api_developers.rst": "69cbde4002d51cbbfa165b8a17cd28ad1963e713b44cae8558d2149e6befa06f",
+      "api/index.md": "22b43118a49151e375f7ac779bd35d43d1562f6c11dfdb5c92b1ed3d64edfbd0",
+      "api/saved_results.md": "e90ea438d2fc6e6cc424404c87866f42d63d58e471c58710cd1a94d25c2d7eec",
+      "api/users/api_users.rst": "08399e8b4d5803b23560554a5155282c3b10d201f001711b6d0913d0bac7d0e8",
+      "content/about/citation.md": "e3375aacec236b40092a61cbfed4abd7f124e47c7ce9019858fe04134655704a",
+      "content/about/index.md": "ad64ebf7ff8364345c9191edb2f5a673b8bd9f616576e9a42d3b1f000cbb5170",
+      "content/about/installation.md": "69d9fa76974f2714b1deffc3fabe8a50e83f879784c2e06165c2ee28164fd87f",
+      "content/about/release_notes.md": "4e135aaa90335ba904151236aea75fa0f2fc6313c76c46dff08013c4a3b13ad8",
+      "content/about/what.md": "7f2232eb22c5dab4437fd5292fc067cbca6eaa07e9398cc3a82e78894f7b9893",
+      "content/about/who.md": "94b058d1706af0a7ad6591992a4511177494219e996785b339b03fb664809588",
+      "content/cookbook/aligned_cliques.md": "455846309dbd98be2a33b9d66688330b66a61e3676aa47888b5e28b06c0b9eb9",
+      "content/cookbook/aligned_consensus.md": "cc824036b72ed0f0ba7e003122daac2d86a7a7bf898b9b07dcefb97b56ff23a3",
+      "content/cookbook/aromatic_interactions.md": "997782885e6ec43488240f62759af0455254bf8420a2373c997b0afd4dd20caf",
+      "content/cookbook/attribution.md": "df0baefd68447beefa5510233fb84844855bb602e2cb6e5c0f8368d414f4239c",
+      "content/cookbook/ccd_interactions.md": "2d9637e4313daf6d0bd00fbd354081f963fbe4f981cdf3debe3e269f09d6f272",
+      "content/cookbook/complex_based_modeler.md": "8ec92d839accacb467a0e46818a38de3606c72006200f4989fbc9c8425382914",
+      "content/cookbook/eralpha_input_audit.ipynb": "a4fc4ca2c73377c33b478324d0b1b5fd59e2e12f23347a02b47d517c1f043261",
+      "content/cookbook/excluded_volumes.md": "21ab9d5878b01b20f740171c0a8098e86382d6501baff1e0fa4b904ced0892ba",
+      "content/cookbook/index.md": "fc40676feacc6e6e808fe3d79e078bc80a5e2b173393182716be10b6d6ed8826",
+      "content/cookbook/interaction_composition.md": "a52259c6799c1fcd466314101762671478b677076a1ddfa6d470ff7d87c47a45",
+      "content/cookbook/ionic_interactions.md": "cd4aa4cfdb3503720e061145c4bcb8b77e0cfd71803921c64a1a9f3cfdd46115",
+      "content/cookbook/ligand_based_modeler.md": "d4860211f592e5bcea3819b449a683e4e9f78dca66f7d391f7fa8e5da5ee4e7b",
+      "content/cookbook/modular_rigid_tools.md": "c628129f8ef3a96283ccf6566347fcf478938b8031b7d97564f8e278c642a516",
+      "content/cookbook/observed_est_hydrogens.md": "33d541d5854293407b10fa39f34f3031d0afd0ab79e30e00d84074c6bf0eccdc",
+      "content/cookbook/observed_est_template.md": "8865d922f90d71267a09f6d781cbbf74bc903ab500cb4ea0e874708f04148e94",
+      "content/cookbook/observed_interactions.md": "7cb1e668d53b6e0d9f2eb4df69375b653c327f40b8c5c23d4258baf092d72ead",
+      "content/cookbook/observed_receptor_coverage.md": "4214f7a1ef1269e5f83880b3247321be62820936220fa2db9f657eeecbd76457",
+      "content/cookbook/pharmacophore_curation.md": "9c4b4a126cb13962f724bd19a25a131f5b90d8fc530110f6038ab772d27ca3c7",
+      "content/cookbook/prepared_ccd_ligands.md": "db8af2d1ae26b822e2f8a63e86a4fe5cbb3081a4511d2dcb685e0ef2ff8baa58",
+      "content/cookbook/prepared_conformers.md": "285dcc48a966cb8e0c98c2e8e3ad2e20c08336eb5cf15c8424fa95835205a490",
+      "content/cookbook/prepared_consensus_workflow.md": "5a4c5ae9c9b1af37ce1f3cf57a4314f0493f72de3b0b54143489a27dab969a8c",
+      "content/cookbook/prepared_eralpha_interface.md": "53c94eaac83bd0db81850c8c53afb45aaf21a4878633e8906e34da91b6740e4c",
+      "content/cookbook/prepared_receptor_workflow.md": "987d7c375b1ab2c688304413a018f70c4146ac307bd3418b6f1c416f567a6356",
+      "content/cookbook/prepared_search_workflow.md": "205686f6283ebcdc28a1f7b79d8a95b5810ce1e1cf1b5b1948a2cf9c50dd5a46",
+      "content/cookbook/prepared_workflow.md": "9c6e3a6190178aa0ab4dd89168fed204b31ec7415be5a183676313b681a8f434",
+      "content/cookbook/ranked_seeds.md": "97facfaea3c84faa76c762510f2f51b7953c067cafbb67a8ff3a4a2adaedad24",
+      "content/cookbook/reference_ligand.md": "427cd17377db3a2dcc67e2428e64883c823326c897edb5c7d6695cc54c2f9234",
+      "content/cookbook/retrospective_validation.md": "98f47fef715ed89eb4ace0f88e4dbc2a546cd683b0ef49dcb1064240b484fa92",
+      "content/cookbook/rigid_consensus.md": "1d9043084113228a32ef0937dd8e5e7520908b6e510e1c3570ae458ca33c9acb",
+      "content/cookbook/rigid_refinement.md": "eec16f12c2ede84302d4099f3e630706f17eadfdb7b3e470b042b4ff6627e1e3",
+      "content/cookbook/structure_based_modeler.md": "fbb71a39fa0b6f4a29e47cd368ae4b410f653c4a744150f078423fa917c92b08",
+      "content/cookbook/viewer_addon.md": "3ccc78d81c6fbb2d6e836e2fd2c5833d7837ddeec59842748e0059f5131eee29",
+      "content/developer/index.md": "9eab09bf979d9e81a42f8c3bd102229f0647a3f21ef7620e7597e4dc3de3a34b",
+      "content/showcase/index.md": "d768346c39bc561a0ac1480733c6ce21295f0bb7e2f2019a2600b8ec3d5a8d7b",
+      "content/user/constraint_semantics.md": "c827de0e07a804d8eae9358d216988a5c16f6cf559f4ab61933f537fe813bd35",
+      "content/user/index.md": "755040482bdcbff55c317cbb29792a79d8cb21a6fa3aa2763b46805ec2ba7784",
+      "content/validation/cached_generation_scaling.md": "f2fae9ca32291ef6f816ce6798790dc4a5087055046fe40669314354685fdba4",
+      "content/validation/carbonyl_acceptor_receiving.md": "4e89c622b70bb76ddf3c60c04d5abdba910b32c7fc813f3ddcf2c0016454b0f6",
+      "content/validation/esr1_activity_pilot.md": "44e13e8ed159d16e67c9340d8fea0a991f5c732852e8ef0eef2252bdc1f2c022",
+      "content/validation/esr1_consensus_comparison.md": "097bb55117f9a8c369a3d594738bcd63523be4b2679942d9f589f8125a23a255",
+      "content/validation/index.md": "65d43dea834145ed563754bee08af9d3561818bf6cb322a29050adad15c753e0",
+      "content/validation/prepared_ccd.md": "881cacc322d1c3211bddd790d24e4fba84bfe609a134a9949e179a4bfde14179",
+      "content/validation/prepared_consensus_workflow.md": "9a81d7359902d5174785085ba129ce466d171e8eb5e4f4137cfe374896ed9f58",
+      "content/validation/prepared_receptor_workflow.md": "7c0590e45dae79ea1c8f95d18c47fe0d0b0a63c111d3882440e5e9c2fdaf192c",
+      "content/validation/prepared_search_workflow.md": "c48355f420445b913782571cb5e8449f83a676e7c373819f2e5d39e9063f0640",
+      "content/validation/prepared_workflow.md": "cdc6a96f44d4e5a0889bbd34c82c5b0577674f09e888bbbc4ca44a478eada666",
+      "content/validation/public_carbonyl_generation.md": "4f11e55823714c97227b451e0ea9b43fe54b7369792b879bc044236c4bbdb6a2",
+      "content/validation/receptor_contribution.md": "9a10b25a546a2926032126a90c563e1b860fcac6d7040dcf172e0756bed69329",
+      "content/validation/receptor_hypothesis_pilot.md": "3a639f19d1cbf556f357006549c999f242862e1bbf8d02eca7a041a643af2f64",
+      "content/validation/receptor_sensitivity.md": "59755699352b3b19d5ecb51bab940b1ffb6503ed012aad1ce1c04fe1cd900bb7",
+      "content/validation/tyr_cardinality.md": "e98151209ef02ad8242ccf621515032608d1cf05acef7c4730671682798249ad"
+    },
+    "operator_reuse": "Previous qualified linked-page renderer; same traversal/configuration/execution-off settings, new owned target/title/resource capture only.",
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-050-doc-review-final-20261105.scope",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "memory": "MemTotal:       32165612 kB\nMemFree:         1882704 kB\nMemAvailable:    8876468 kB\nBuffers:          279692 kB\nCached:         16382152 kB\nSwapCached:        33132 kB\nActive:         16436512 kB\nInactive:       10420412 kB\nActive(anon):   14770656 kB\nInactive(anon):  6185584 kB\nActive(file):    1665856 kB\nInactive(file):  4234828 kB\nUnevictable:          16 kB\nMlocked:              16 kB\nSwapTotal:       8388604 kB\nSwapFree:             64 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:             10344 kB\nWriteback:             0 kB\nAnonPages:      10163712 kB\nMapped:          1228536 kB\nShmem:          10761528 kB\nKReclaimable:    1558008 kB\nSlab:            2409552 kB\nSReclaimable:    1558008 kB\nSUnreclaim:       851544 kB\nKernelStack:       45152 kB\nPageTables:       165908 kB\nSecPageTables:         0 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    24471408 kB\nCommitted_AS:   62979964 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      247120 kB\nVmallocChunk:          0 kB\nPercpu:            32000 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    165888 kB\nFilePmdMapped:      6144 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:     4197416 kB\nDirectMap2M:    14508032 kB\nDirectMap1G:    14680064 kB\n",
+      "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=524571592\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=501809364\n",
+      "nice": 19
+    },
+    "scope": "Strict isolated proposed 0.5.0 source review case with real linked local Markdown/notebook dependency closure; code blocks and notebooks not executed, no full-site claim.",
+    "source_document_count": 62
+  },
+  "full_evidence": {
+    "compressed_bytes": 113729,
+    "compressed_sha256": "aed14e9b1fb8ad4d83bc8988f8f6243632b7de1fffa88d18e0719f13ea7d98d9",
+    "path": "release_050_consolidation_20261105.json.gz",
+    "uncompressed_bytes": 960410,
+    "uncompressed_sha256": "6945ca0a68272316197a8e8373acb4fb4b39ccfafb662e7817518a2810582aeb"
+  },
+  "github_observations": {
+    "issues": [
+      {
+        "body": "Maintainer direction \u2014 2026-11-05: consolidate useful intermediate tags on the path to 1.0.0. This issue owns roadmap and release-candidate preparation; it does not publish a tag or package.\n\nThe latest observed tag/GitHub Release is [0.4.0](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0), published 2026-10-23. Baseline `6e7c934` had 99 commits since that tag. Package-channel contents are a separate observation.\n\nThe maintained [roadmap](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/roadmap.md) and [0.5.0 readiness route](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/release_0_5_0_readiness.md) now record this proposed capability-based staircase:\n\n- **0.5.0:** consolidate current native classical workflows, explicit receptor generation including qualified #94, quantity/provenance/error contracts, usable recipes, compatibility and migration/release notes.\n- **Further 0.x.y minors:** coherent prioritized molecular-ownership/integration and broader preparation/scientific/retrospective validation batches. The sequence can continue through 0.10.0, 0.11.0 and later minors. Exact versions, counts and dates are not reserved.\n- **Stabilization in whichever 0.x.y minor is ready:** agree and freeze the classical 1.0 scope; stabilize public APIs, native records, compatibility/migration and supported installation evidence. This phase is not tied to 0.9.x.\n- **1.0.0:** deliver that stable documented classical scope with reproducible scientific cases, disclosed limits and qualified supported source/installed/public delivery. Dynamics, AI and the viewer addon are not automatic prerequisites.\n\n#94 is delivered in source at [3d26b28ae072c106784299ee96d3a50f0edebc91](https://github.com/uibcdf/pharmacophoremt/commit/3d26b28ae072c106784299ee96d3a50f0edebc91). Its receipt records 295 unique passing selected controls across preserved scopes, a final 114-case run, the unchanged 12-model/72-primary/24-recovery replay and three executed cookbook blocks. This evidence has a narrow analytical scope and does not certify a full release candidate.\n\nNext preparation:\n1. Review the complete 0.4.0-to-candidate capability/API/migration diff and draft version-specific release notes.\n2. Choose and record one full committed candidate SHA; verify its applicable source and exact-head hosted #9 gates.\n3. Commit a reviewed real 0.5.0 version plan when selecting that candidate. The existing release plan still records 0.4.0 and is unchanged by this planning stage.\n4. Complete applicable exact-file build, dependency closure, supported installed matrix and independent public-install gates under #10/#23.\n5. State readiness separately for source tag, GitHub Release and package. GitHub Release `released` triggers Conda/docs workflows, so coordinate that event deliberately.\n6. On actual new tag/release/package publication, deliver the requested version-specific MolSysSuite notice with immutable source/artifact identity, executed checks and pending deliveries.\n\nTags must identify reviewed version-consistent commits and evidence. Patch versions repair an existing minor; minor versions consolidate coherent new capabilities. Neither commit count nor locally passing subsets alone determine publication. Preserve historical tags/artifacts and keep provider-owned molecular operations in MolSysMT.\n\nPlanning records are delivered; this issue remains open for the concrete 0.5.0 candidate and its readiness decision. No tag, GitHub Release, package, version-plan change or publication workflow has been created here.\n\nMaintainer clarification: 0.9 need not be followed by 1.0. Minor versions are integers, and 0.10.0, 0.11.0 and further pre-1.0 milestones remain available. Only the agreed scope/stability/delivery criteria determine readiness for 1.0.0. Proposed next minor remains 0.5.0.\n\n## Fresh public dependency receiving \u2014 2026-11-05\n\nDelivered in main [25f39fa](https://github.com/uibcdf/pharmacophoremt/commit/25f39fa466130adb87d864a5593d032e44106c70); actual receiving source is immutable `9c163654375c5933be6400282105b89376f03578`. [Contract/results](https://github.com/uibcdf/pharmacophoremt/blob/25f39fa466130adb87d864a5593d032e44106c70/devguide/public_dependency_receiving.md) and [original receipt](https://github.com/uibcdf/pharmacophoremt/blob/25f39fa466130adb87d864a5593d032e44106c70/devguide/evidence/public_dependency_receiving_20261105_summary.json) retain the complete closure, actual archives/imports/native identities, failed attempts, node outcomes and unchanged producer/input evidence.\n\nA new Python 3.14.10/Mamba 2.9.0 environment contains 325 exclusively public uibcdf/conda-forge packages. Only PHMT is editable; installation, pip check and the actual public-context preflight pass. **203 unique selected controls pass, 18 are skipped, zero scientific failures.** Native I/O:82; reference/pose:21; historical feature routes:2; pure cached-profile orchestration:98. The last group does not execute molecular recognition/direction calculation.\n\nPublic MolSysMT `0.23.0-pyabi3h03bb3b7_0` lacks the modern `chemical_states` namespace, modern H-bond recognition namespace, generic `structure.get_vectors` and experimental site-direction operation. Twelve modern vector-route and six chemical-domain controls are omitted; skips do not qualify these capabilities. The existing historical donor arithmetic remains bounded #41/#375 debt, with no new molecular fallback. Known old-public pandas topology deprecations remain MolSysMT#431.\n\n**Disposition: partial public compatibility; full proposed-scope public qualification and candidate freeze remain pending.** The concrete relationship with MolSysMT is its supported public delivery of already consumed source contracts, tracked through existing [#255](https://github.com/uibcdf/molsysmt/issues/255)/[#375](https://github.com/uibcdf/molsysmt/issues/375). Receive the identified artifact under a new run identity, then choose a justified public minimum and exact candidate gates. Source fixes are not reopened and no dependency floor is guessed. No provider edits, scientific changes, version-plan change, candidate package, tag, Release or publication. #9/#10/#23 retain their own full exact-source/installed/platform/public gates. Independent PHMT cached-model work can continue.",
+        "last_provider_comments": [],
+        "number": 95,
+        "repository": "uibcdf/pharmacophoremt",
+        "source_url": "https://github.com/uibcdf/pharmacophoremt/issues/95",
+        "state": "open",
+        "title": "Consolidate intermediate release milestones towards 1.0.0",
+        "updated_at": "2026-11-06T05:02:46Z"
+      },
+      {
+        "body": "## What\n\nPharmacophoreMT's molecular-ownership audit (https://github.com/uibcdf/pharmacophoremt/issues/41) needs public MolSysMT geometry for recognized donor\u2013H pairs and, under an explicitly named chemical model, acceptor local directions. Recognition already belongs to `physchem.get_hbond_sites`; coordinate-derived molecular directions must also remain provider-owned.\n\n## Inspected consumer evidence\n\nAt PharmacophoreMT `3ed12cd9405c8bbb577afefca58c372b5e0785f1`, `modeler/features.py` delegates recognition to public `get_hbond_sites` but computes and normalizes `coordinates[hydrogen] - coordinates[donor]` locally. `modeler/structure_based.py` additionally recognizes protein SMARTS through RDKit, infers a projection from the first bonded neighbor, and invents `[0,0,1]` when no neighbor exists. The latter is a legacy hypothesis heuristic, not an established lone-pair method.\n\nLocal provider inspected: clean `8ae160fc93ed5bc815bcc24b37c2875ba735623d`. Remote structure-module inventory inspected on 2026-10-10 (default branch then `9ea9be32a26f957d7f521a37c3bde5537f028596`) exposes centers, least-squares planes, angles, distances and neighbors, but no public directed atom-pair vector tool. Public hbond-site documentation explicitly excludes geometry. Issue searches for `lone pair` and `direction` found no existing request with this contract. These are source/API observations, not an executed defect reproduction or qualification of remote main.\n\n## Requested provider-owned contract\n\nPlease decide and document reusable public operations, composing existing recognition and geometry rather than duplicating molecular kernels:\n\n1. Directed vectors/displacements for explicitly supplied ordered source atom pairs, with explicit structure selection, physical units, stable source indices, finite/zero-length behavior, declared periodic convention and producer/method evidence. A general pair-vector operation should be independently reusable beyond hydrogen bonds.\n2. An explicit fixed-state hydrogen-bond geometry operation or composed recipe: donor\u2013H directions from recognized source pairs; acceptor directions only under a documented named chemical/local-geometry model, returning multiplicity and unsupported/ambiguous cases rather than arbitrary axes or first-neighbor guesses. Resolve the selected chemical state coherently with recognition and retain geometry-member correspondence.\n\nNo protonation, hydrogen addition, environmental optimization, pocket finding or pharmacophoric projection distances/type complementation should be implicit. PHMT owns deciding where hypothetical complementary ligand sites are placed; MolSysMT owns geometry derived from the molecular system. Source coordinates/chemistry must remain unchanged. Include independent numerical/unit controls, reordered atom pairs, incomplete/unsupported local chemistry, multiple frames and undefined geometry.\n\n## Consumer transition and related work\n\nPHMT will retire the legacy structure-based molecular implementation and consume cached native inventories with explicitly declared hypothesis projections. It will not implement a new molecular direction/lone-pair engine while this proposal is pending. The existing donor-vector calculation is tracked as a bounded outstanding migration under PHMT #41, not accepted as a second permanent geometry tool.\n\nThis capability is distinct from #323 (environment-dependent fixed-state H refinement) and #350 (bounded diagnostics for rejected aromatic interaction candidates). Their scientific scopes remain unchanged. Provider maintainers decide the API, chemical model and priority; a delivered donor-pair vector tool alone must not be described as delivering acceptor lone-pair geometry.",
+        "last_provider_comments": [
+          {
+            "author": "dprada",
+            "body": "Triaged against provider source `072aa9bdbfb9299f7e3256f9b27f6aae8ea52629` and the frozen 1.0 admission rule. **Post-1.0 capability proposal; remains open.**\n\n**What** \u2014 Reusable directed atom-pair geometry, then fixed-state donor-H and explicitly modeled acceptor directions with atom correspondence and undefined/unsupported outcomes.\n\n**How** \u2014 Own general vectors in `structure`, periodic image conventions in `pbc` and chemical interpretation in `physchem`. Compose `get_hbond_sites` with those tools; reuse existing MIC primitives where their conventions fit. Donor-vector support alone does not complete acceptor geometry.\n\n**Why** \u2014 uibcdf/pharmacophoremt#41 needs molecular directions while retaining ownership of complementary pharmacophore hypotheses/projection distances. Existing site recognition explicitly excludes geometry; arbitrary fallback axes are not a scientific acceptor model.\n\n**Record** \u2014 [Provider analysis, existing pieces, boundaries and acceptance criteria](https://github.com/uibcdf/molsysmt/blob/main/devguide/pending_proposals/fixed_state_hbond_site_directions.md).\n\nEvidence is source/contract inspection, not executed acceptor-model validation. The consumer can continue its bounded donor-vector migration without implementing a new local lone-pair engine. Public signatures/models remain undecided.\n",
+            "url": "https://github.com/uibcdf/molsysmt/issues/375#issuecomment-6095206665"
+          }
+        ],
+        "number": 375,
+        "repository": "uibcdf/molsysmt",
+        "source_url": "https://github.com/uibcdf/molsysmt/issues/375",
+        "state": "open",
+        "title": "Expose reusable fixed-state hydrogen-bond site directions through public geometry tools",
+        "updated_at": "2026-11-06T05:02:50Z"
+      },
+      {
+        "body": "## What\n\nWarning-strict MolSysViewer documentation examples fail in hosted CI when public native topology operations emit `Pandas4Warning` for deprecated `inplace` arguments. Three pages fail on Linux/macOS/Windows: selections, measurements and state export. Normal scientific output is not reported as incorrect; the observed failure is in warning-strict execution.\n\n## How\n\nConsumer exact source: MolSysViewer `7449675aa8407e94136357f11da1256188e46183`.\n\n- [Python 3.14 source-pair run 39882740307](https://github.com/uibcdf/molsysviewer/actions/runs/39882740307), all three platform cells fail `tests/test_documentation_pages_run.py::test_the_page_runs_as_written`.\n- [Core run 39882740305](https://github.com/uibcdf/molsysviewer/actions/runs/39882740305), six cells fail the same three examples; the two Python 3.11 cells pass.\n- The source-pair routine provider reference is the preserved public MolSysMT `46ef28eb60a258aa77d82ff1bc39ee0d1591e3c9` / 0.23.0. This does not claim the current provider main is identically qualified.\n\nFirst failing block:\n\n```python\nimport molsysviewer as msv\nview = msv.demo['1TCD']\nview.active_selection.set('molecule_type==\"protein\" and group_index<5')\n```\n\nThe consumer guard runs page blocks with `DeprecationWarning` and `UserWarning` promoted to errors. Exact CI message:\n\n> The inplace keyword in Bonds_DataFrame.sort_values is deprecated and will be removed in a future version (PDEP-8).\n\nHosted warnings also identify native topology `reset_index` and chemical-state `Series.reset_index`. Local inspection of current MolSysMT `fa2f3aa9232372e5fa7db8bbf4ebd9e2ad481056` still finds `Bonds_DataFrame._sort_bonds` calling `sort_values(..., inplace=True)` and `reset_index(..., inplace=True)`. That is inspected evidence; the current local development environment does not reproduce the newer hosted pandas warning. Exact installed pandas-version receiving and current-main scientific qualification remain to be done by the owner.\n\n## Why\n\nPlease repair the owning public operations while preserving scientific topology values, ordering, domain identities and independent output/source ownership across supported pandas versions. No downstream warning filter, skipped example, weakened warning guard or speculative pandas upper bound has been added.\n\nRelated but distinct: #386 fixed obsolete `pandas.concat(copy=...)` calls and is closed. This report concerns deprecated `inplace` operations still present in current source; historical copy warnings in the old public baseline do not establish a regression of that fix.\n\nConsumer integration: uibcdf/molsysviewer#264. Rerun `python -m pytest --receptor=ci tests/test_documentation_pages_run.py` in the affected environment after the provider repair, then qualify a new exact source pin separately. No new public package floor or installed-pair qualification follows from this report.\n",
+        "last_provider_comments": [
+          {
+            "author": "dprada",
+            "body": "Triaged. Reproduced against current source with published pandas 3.1.0 / Python 3.14.7 on Linux; seven warning-strict guards fail before the repair with the reported `Pandas4Warning`.\n\nWhat \u2014 Native bond normalization, hierarchy extraction and chemical-state extraction use deprecated pandas inplace operations.\nHow \u2014 Run native topology construction/extraction with DeprecationWarning and UserWarning promoted to errors; the first failure is `Bonds_DataFrame.sort_values(inplace=True)`.\nWhy \u2014 This breaks warning-strict consumers; no scientific output corruption is established. The repair must preserve topology data, nullable dtypes, domain/table identity and independent ownership.\nRecord \u2014 devguide/pending_bugs/native_topology_inplace_calls_break_warning_strict_examples.md\n\nAnalysis and progress remain in the record; this issue carries triage and the final resolution. The existing development pandas 2.3.3 was left unchanged; pandas 3.1.0 is inspected in a separate process using an unpacked published wheel.\n",
+            "url": "https://github.com/uibcdf/molsysmt/issues/431#issuecomment-6356108864"
+          },
+          {
+            "author": "dprada",
+            "body": "Fixed in 128a0bbb94e6804f5663e58a45313c77de1cc30d \u2014 fix: preserve native topology operations with pandas 3.1\n\nFor users \u2014 Native topology normalization and extraction now run with warning-strict pandas 3.1.0, preserving ordering, nullable metadata, authoritative bond-table identity and independent ownership. The same 1,366 focused tests pass on pandas 2.3.3 and 3.1.0; all five exact-commit GitHub checks pass. Please receive this exact provider commit under uibcdf/molsysviewer#264 and rerun the consumer documentation pages; this source fix does not qualify a new installed pair.\nGuard  \u2014 tests/native/test_pandas_warning_compatibility.py\nRecord \u2014 devguide/archive/resolved_bugs/native_topology_inplace_calls_break_warning_strict_examples.md",
+            "url": "https://github.com/uibcdf/molsysmt/issues/431#issuecomment-6356232433"
+          }
+        ],
+        "number": 431,
+        "repository": "uibcdf/molsysmt",
+        "source_url": "https://github.com/uibcdf/molsysmt/issues/431",
+        "state": "closed",
+        "title": "Native topology inplace calls emit pandas deprecations and break warning-strict Viewer examples",
+        "updated_at": "2026-11-06T00:56:58Z"
+      },
+      {
+        "body": "What  \u2014 After 1.0, retire the public Topology.bonds compatibility property in favor of MolSys.chemical_states and standalone ChemicalStates bond access.\nHow   \u2014 Inventory bond readers and mutators, provide equivalent state-aware operations, publish a migration policy, and remove the facade only at a compatible breaking-version boundary.\nWhy   \u2014 Bonds depend on a selected chemical state; exposing them as a Topology attribute obscures that ownership. Keep Topology.bonds through 1.0 for existing clients.\nRecord \u2014 devguide/pending_proposals/retire_topology_bonds_after_1_0_in_favor_of_chemicalstates.md\n",
+        "number": 255,
+        "repository": "uibcdf/molsysmt",
+        "source_url": "https://github.com/uibcdf/molsysmt/issues/255",
+        "state": "closed",
+        "title": "Complete ChemicalStates separation from Topology before 1.0",
+        "updated_at": "2026-11-06T00:56:54Z"
+      },
+      {
+        "body": "## Observed bounded profile\n\nPharmacophoreMT [#98](https://github.com/uibcdf/pharmacophoremt/issues/98), following its fixed-work #97 baseline, profiles the existing cached generator on **two donor/two ring occurrences, 32 returned hypotheses of 64 possible, four sites, no molecular operation**. Actual providers: public **PyUnitWizard 0.29.0 / SMonitor 0.22.1**, Python **3.14.10**, Linux x86_64. One CPU, 1 GiB memory cap, zero swap, nice19/idle I/O, six backend thread limits one; no concurrent own tests/builds.\n\nThe instrumented generator call records:\n- 22,672 public `is_quantity` invocations: cumulative 6.889 s.\n- **17,792 `emit_probe_miss` calls**, code `PUW-DBG-PROBE-001`: cumulative **6.116 s of 9.357 s** profiled generator duration.\n- This path reaches 17,792 SMonitor `ensure_configured` calls, 17,792 path resolutions and 213,504 `lstat` calls. The SMonitor provider-path part is separately reported to its owner.\n\nThese are nested cumulative times, not additive ownership shares or an uninstrumented speedup estimate. Separate controls take 4.669 / 4.620 s; warmup, profile and both controls have identical complete native model/report/metadata fingerprints, independent geometry/order/coverage, cache/unit-policy preservation and unchanged source/native/provider identities. PHMT scientific runtime remains immutable9c163654375c5933be6400282105b89376f03578; the consumer profile driver is frozen at80efdc520278055ed216279dc324a60df8f729c2. The profile's full receipt will be linked from #98 closeout.\n\n## Provider-only reproduction (executed)\n\n```python\nimport cProfile\nimport pstats\nimport pyunitwizard as puw\n\nassert puw.is_quantity(1) is False  # first-use bootstrap outside the profile\nprofile = cProfile.Profile()\nprofile.enable()\nanswers = [puw.is_quantity(1) for _ in range(100)]\nprofile.disable()\nassert answers == [False] * 100\npstats.Stats(profile).sort_stats(\"cumulative\").print_stats(\n    \"emit_probe_miss|ensure_configured|realpath|lstat\"\n)\n```\n\nThe fresh process imports no PharmacophoreMT or molecular system. All 100 answers are False. It records exactly **100 probe-miss emissions, 100 ensure_configured/path resolutions and 1,200 lstat calls**, after warmup. The executed file/versions and raw pstats are retained. A caller walking ordinary mixed metadata legitimately needs quantity detection; normal negative results currently materialize DEBUG payload/configuration/event work for every leaf.\n\n## Requested outcome / ownership\n\nPlease identify a supported low-cost expected-negative probe route or improve this generic boundary. Keep boolean results, string/parser/backend behavior, lazy optional availability, application policy and requested diagnostic/capture guarantees. In particular, avoid eagerly constructing repr/context/event data when the supported observer contract does not require it; retain complete requested diagnostics. The owner should decide the compatible API/implementation and tests; this is not a request to silently suppress all diagnostics or infer quantity types in downstream code.\n\nInspected current main00d1cd89744e02083dd53e3e1705c5920221fb4c still has the same public `is_quantity(..., parser=None)` emission paths and unconditional [emit_probe_miss](https://github.com/uibcdf/pyunitwizard/blob/00d1cd89744e02083dd53e3e1705c5920221fb4c/pyunitwizard/_private/smonitor/emitter.py). That is source inspection, not a new main/public-artifact qualification. Searches for probe-miss / is_quantity-performance found no existing matching issue.\n\nThe concrete relationship with `component:pharmacophoremt` is repeated quantity detection while detaching cached model metadata; `component:smonitor` owns the downstream registration/emission cost. PHMT adds no local quantity detector, unsupported-type blacklist, provider edit, global diagnostic suppression or speculative dependency floor. This is a performance/API proposal with scientifically correct outputs, not a reproduced wrong scientific answer. Provider maintainers retain prioritization/publication ownership.",
+        "number": 141,
+        "repository": "uibcdf/pyunitwizard",
+        "source_url": "https://github.com/uibcdf/pyunitwizard/issues/141",
+        "state": "open",
+        "title": "Provide a low-cost expected-negative quantity probe without per-leaf diagnostic materialization",
+        "updated_at": "2026-11-06T02:34:34Z"
+      },
+      {
+        "body": "## Observed provider-owned cost\n\nPharmacophoreMT [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) profiles a fixed cached-generation workload with public PyUnitWizard 0.29.0/SMonitor 0.22.1, Python 3.14.10/Linux x86_64. One CPU, 1 GiB/no swap, low CPU/idle I/O priority, serial execution. Scientifically identical complete native model/report/metadata and geometry/order/coverage/custody checks pass before accepting the profile.\n\nOne instrumented public generator call records **17,792 ensure_configured calls**, all from emit_from_catalog; **17,792 pathlib.resolve/realpath calls and 213,504 lstat calls**. The provider root is the same stable absolute installed PyUnitWizard package directory. ensure_configured contributes 2.454 s cumulative inside 9.357 s of instrumented call time; Path.resolve contributes 1.835 s nested within it. These nested times are not additive shares or uninstrumented speedup estimates. Separate generator controls take 4.669/4.620 s.\n\nThe source checks configured-package membership only **after** Path(package_root).resolve(). Every warmed DEBUG probe-miss emission therefore repeats filesystem normalization before the memoized return. PyUnitWizard's repeated negative-probe emission is separately tracked in [PyUnitWizard#141](https://github.com/uibcdf/pyunitwizard/issues/141); this issue isolates SMonitor's generic already-configured registration path.\n\n## SMonitor-only reproduction (executed)\n\n```python\nimport cProfile\nimport pstats\nfrom pathlib import Path\nimport smonitor\nfrom smonitor.integrations import ensure_configured\n\nroot = Path(smonitor.__file__).parent\nensure_configured(root)  # first-use outside the profile\nprofile = cProfile.Profile()\nprofile.enable()\nfor _ in range(100):\n    ensure_configured(root)\nprofile.disable()\npstats.Stats(profile).sort_stats(\"cumulative\").print_stats(\"resolve|realpath|lstat\")\n```\n\nThis fresh process imports neither PyUnitWizard nor PharmacophoreMT, emits no application catalog events and performs no molecular operation. On the actual 0.22.1 prefix it records 100 ensure_configured/path resolutions and 1,200 lstat calls after warmup. The joined public PyUnitWizard reproduction independently records the same 100/1,200 counts. Raw pstats, exact imports/providers and original full consumer outputs will be linked from #98's receipt.\n\n## Requested outcome and compatibility\n\nPlease provide or identify a supported low-cost route for repeated already-configured catalog emission. Keep first-use/provider registration, declaration-only versus bootstrap behavior, application configuration authority, explicit forced-provider policy, reset/configuration lifecycle, path semantics and concurrency guarantees. Include relative/cwd/symlink cases where relevant and retain the safeguards from #3. The owner should choose a compatible internal cache/prebound emitter/other supported design; a blanket cache that silently changes path semantics is not prescribed.\n\nCurrent main [c1b6ce29c3729b99429b395a00c7866a759be406](https://github.com/uibcdf/smonitor/blob/c1b6ce29c3729b99429b395a00c7866a759be406/smonitor/integrations/core.py) has the same leading resolve-before-membership mechanism (read-only inspection, not a new execution/qualification of main). Searches for ensure_configured/realpath/performance found no matching performance issue. Existing #3/#38/#48 retain their completed, separate semantics.\n\nThe concrete component relationships are PharmacophoreMT's repeated metadata detachment and PyUnitWizard's normal probe-miss emission. No consumer monkey-patch, private-cache access, global diagnostic suppression, provider source/prefix edit or speculative floor is added. This is a generic performance proposal with correct scientific outputs; maintainers retain prioritization and publication ownership.",
+        "number": 63,
+        "repository": "uibcdf/smonitor",
+        "source_url": "https://github.com/uibcdf/smonitor/issues/63",
+        "state": "open",
+        "title": "Avoid repeated provider path resolution for already-configured catalog emission",
+        "updated_at": "2026-11-06T02:34:42Z"
+      }
+    ],
+    "latest_release": {
+      "assets": [],
+      "assets_url": "https://api.github.com/repos/uibcdf/pharmacophoremt/releases/422182433/assets",
+      "author": {
+        "avatar_url": "https://avatars.githubusercontent.com/u/36432062?v=4",
+        "events_url": "https://api.github.com/users/LMMV/events{/privacy}",
+        "followers_url": "https://api.github.com/users/LMMV/followers",
+        "following_url": "https://api.github.com/users/LMMV/following{/other_user}",
+        "gists_url": "https://api.github.com/users/LMMV/gists{/gist_id}",
+        "gravatar_id": "",
+        "html_url": "https://github.com/LMMV",
+        "id": 36432062,
+        "login": "LMMV",
+        "node_id": "MDQ6VXNlcjM2NDMyMDYy",
+        "organizations_url": "https://api.github.com/users/LMMV/orgs",
+        "received_events_url": "https://api.github.com/users/LMMV/received_events",
+        "repos_url": "https://api.github.com/users/LMMV/repos",
+        "site_admin": false,
+        "starred_url": "https://api.github.com/users/LMMV/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/LMMV/subscriptions",
+        "type": "User",
+        "url": "https://api.github.com/users/LMMV",
+        "user_view_type": "public"
+      },
+      "body": "PharmacophoreMT 0.4.0 consolidates the native classical pharmacophore workflows for explicitly prepared molecular inputs.\n\n- Explicit native ligand, observed-complex and cached-receptor modeling routes preserve input, geometry and method provenance.\n- Reusable feature matching, consensus, rigid placement, prepared-conformer screening and pose evaluation retain matched, empty and failed outcomes separately.\n- Native JSON/YAML and versioned pharmacophore SDF persistence preserve saved-model evidence and detached attribution. General molecular preparation and manipulation remain delegated to MolSysMT.\n\nInstall the public Conda package through the official channels:\n\n```bash\nconda create -n pharmacophoremt --strict-channel-priority -c uibcdf -c conda-forge pharmacophoremt=0.4.0 molsysmt=0.23.0\n```\n\nThe qualified molecular-provider context is MolSysMT 0.23.0. Receiving its newer development H-bond namespace and direction contract remains separate work in [PharmacophoreMT #41](https://github.com/uibcdf/pharmacophoremt/issues/41). Prepared/analytical controls do not establish biological or activity-based validation. New viewer-addon development remains deferred, and browser limitations remain separately tracked.\n\nDelivery evidence:\n\n- Original source: `60b21b7d183217d50c29ea3e6bc0d05fb5b797a2`; tag and Release title: `0.4.0`.\n- One original noarch archive: `pharmacophoremt-0.4.0-py_0.tar.bz2`, SHA-256 `e5ed3a7c20ec36b9938fee51a6a9e0dc1654d7709d0d26ad75e49babac5d59a4`.\n- All eight Linux/macOS arm64 \u00d7 Python 3.11\u20133.14 source science cells and eleven required source/control jobs pass. [Source CI](https://github.com/uibcdf/pharmacophoremt/actions/runs/39990974160).\n- [Original staged producer](https://github.com/uibcdf/pharmacophoremt/actions/runs/39996616723); [eight installed cells](https://github.com/uibcdf/pharmacophoremt/actions/runs/39997342556), each with 921 passing tests and all four required phases; [same-byte promotion and independent public verification](https://github.com/uibcdf/pharmacophoremt/actions/runs/40002784859).\n- A fresh normal public-channel installation on Linux/Python 3.14.9 passes runtime/version, cached-model construction, native JSON recovery, explicit-unit and shared payload-origin checks. Existing provider and controlled-test warnings are retained; no warning-free or browser qualification is claimed.\n\n[Conda package](https://anaconda.org/uibcdf/pharmacophoremt), [publication tracking](https://github.com/uibcdf/pharmacophoremt/issues/10), [Python/public delivery tracking](https://github.com/uibcdf/pharmacophoremt/issues/23).\n\nPermanent receipts: [source/staging](https://github.com/uibcdf/pharmacophoremt/blob/78580b914637cc20467e198d3d0734bf79132c6e/devguide/evidence/conda_040_staging_20261023_summary.json), [installed/public delivery](https://github.com/uibcdf/pharmacophoremt/blob/78580b914637cc20467e198d3d0734bf79132c6e/devguide/evidence/conda_040_delivery_20261023_summary.json). [MolSysSuite availability and owner follow-ups](https://github.com/uibcdf/molsyssuite/issues/131).\n",
+      "created_at": "2026-10-23T18:31:43Z",
+      "draft": false,
+      "html_url": "https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0",
+      "id": 422182433,
+      "immutable": false,
+      "name": "0.4.0",
+      "node_id": "RE_kwDOP5ch7M4ZKf4h",
+      "prerelease": false,
+      "published_at": "2026-10-23T18:33:00Z",
+      "tag_name": "0.4.0",
+      "tarball_url": "https://api.github.com/repos/uibcdf/pharmacophoremt/tarball/0.4.0",
+      "target_commitish": "main",
+      "updated_at": "2026-10-23T18:51:43Z",
+      "upload_url": "https://uploads.github.com/repos/uibcdf/pharmacophoremt/releases/422182433/assets{?name,label}",
+      "url": "https://api.github.com/repos/uibcdf/pharmacophoremt/releases/422182433",
+      "zipball_url": "https://api.github.com/repos/uibcdf/pharmacophoremt/zipball/0.4.0"
+    },
+    "recorded_as": "Read-only observations for current #95 consolidation, 2026-11-05 local session; metadata observations, not executed provider receiving.",
+    "remote_tags": {
+      "command": [
+        "git",
+        "ls-remote",
+        "--tags",
+        "origin"
+      ],
+      "fallback_reason": "GitHub connector refused tags-list endpoint; native read-only Git query used.",
+      "observed_output": "f0810257a8ed05897643d6303e264adb2697b727\trefs/tags/0.1.0\nb77c1093bccaaf6ae27406667709e67ca573a274\trefs/tags/0.2.0\nefb18c28b23e8c017a9c420fa7cf91dc54997ace\trefs/tags/0.3.0\nc5c4c72634818f9ce586cd665a8adc79ed33a540\trefs/tags/0.4.0\n60b21b7d183217d50c29ea3e6bc0d05fb5b797a2\trefs/tags/0.4.0^{}\n"
+    }
+  },
+  "issue": "uibcdf/pharmacophoremt#95",
+  "limits": [
+    "Existing public MolSysMT0.23.0 current file does not supply the reviewed modern chemical-state/vector/direction APIs; public boundary/#375 remains unresolved",
+    "#255/#431 are closed source work, not open implementation tasks; PyUnitWizard#141/SMonitor#63 remain separate performance proposals",
+    "#9/#10/#23 full exact-candidate gates and#6/#66/#74 wider scopes retain separate authority",
+    "No release/version-plan/publication decision or version-specific MolSysSuite notice follows"
+  ],
+  "new_molecular_scientific_evaluations": 0,
+  "new_tag_release_package_upload_or_docs_publication": false,
+  "next_action": "Receive the supported public molecular subset needed by this proposed scope; decide actual minimum/scope and exact candidate; execute required source/build/installed/public/platform gates. Entire broader MolSysMT#375 closure is not a blanket gate.",
+  "public_provider_observation": {
+    "packages": {
+      "argdigest": {
+        "highest_main_files": [
+          {
+            "basename": "noarch/argdigest-0.17.1-py_0.tar.bz2",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+            "version": "0.17.1"
+          }
+        ],
+        "main_highest_numeric_version": "0.17.1",
+        "main_versions": [
+          "0.5.0",
+          "0.5.1",
+          "0.5.4",
+          "0.7.0",
+          "0.9.0",
+          "0.9.2",
+          "0.11.0",
+          "0.12.0",
+          "0.12.1",
+          "0.13.0",
+          "0.14.0",
+          "0.15.0",
+          "0.16.0",
+          "0.17.0",
+          "0.17.1"
+        ],
+        "package_reported_latest_version_not_authoritative": "0.12.1",
+        "selected_verified_coordinate": {
+          "filename": "argdigest-0.17.1-py_0.tar.bz2",
+          "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+          "subdir": "noarch",
+          "url": "https://conda.anaconda.org/uibcdf/noarch/argdigest-0.17.1-py_0.tar.bz2",
+          "version": "0.17.1"
+        }
+      },
+      "molsysmt": {
+        "highest_main_files": [
+          {
+            "basename": "linux-aarch64/molsysmt-0.23.0-pyabi3hecc93d8_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "d588b52c843b43774ff59d4a627e4cffc0fcc86c39118f279815f4c6ec31a4dd",
+            "version": "0.23.0"
+          },
+          {
+            "basename": "linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+            "version": "0.23.0"
+          },
+          {
+            "basename": "win-64/molsysmt-0.23.0-pyabi3h2d2bc06_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "d74d69f2ef45e6f44ae9bfc43b89ae8a48d1422c0ad32df8302f17418139eb6b",
+            "version": "0.23.0"
+          },
+          {
+            "basename": "osx-arm64/molsysmt-0.23.0-pyabi3ha0bc463_0.conda",
+            "labels": [
+              "staging",
+              "main"
+            ],
+            "sha256": "b2fe891f6e4fe9b167b0383a0f11c9772a5450e3fb93ad030ea5139d5aa54317",
+            "version": "0.23.0"
+          }
+        ],
+        "main_highest_numeric_version": "0.23.0",
+        "main_versions": [
+          "0.11.2",
+          "0.11.3",
+          "0.12.0",
+          "0.22.4",
+          "0.23.0"
+        ],
+        "package_reported_latest_version_not_authoritative": "0.12.0",
+        "selected_verified_coordinate": {
+          "filename": "molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+          "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+          "subdir": "linux-64",
+          "url": "https://conda.anaconda.org/uibcdf/linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+          "version": "0.23.0"
+        }
+      }
+    },
+    "recorded_at": "2026-11-06T05:10:40.578334+00:00",
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-050-public-inventory-20261105.scope",
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19
+    },
+    "scope": "Read-only bounded package inventory and exact release/main-label/solver-index verification; no package download/install/solve or modern capability receiving.",
+    "sdk": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f"
+  },
+  "recorded_at": "2026-11-06T05:31:56.209209+00:00",
+  "reviewed_source": "fbe6677f5a770a2123a2512fc3367a93209456ae",
+  "runtime_metadata_recipe_pins_support_and_tools_unchanged_during_task": true,
+  "schema": "phmt.release050_consolidation.summary@1",
+  "scope": "Read-only consolidation of the0.4.0-to-fbe6677 source review, draft migration notes,59 private input hashes and current public provider coordinates. Strict linked-doc render with execution off; no new science/full source/support/installed/public-platform candidate qualification.",
+  "source_review": {
+    "base_tag": "0.4.0",
+    "current_source_matches_prior_qualified_receipts": {
+      "molecular_source_admission_20261105_summary.json": {
+        "current_selected_bytes_match_receipt": {
+          "tests/test_molecular_source_aliases.py": true
+        },
+        "not_a_new_scientific_execution": true,
+        "original_archive_sha256": "0dd85f13bbb431009fe9d33f341acbf6499507c5ad5ae7cbe48c3080e2b095c4"
+      },
+      "native_batch_contracts_20261105_summary.json": {
+        "current_selected_bytes_match_receipt": {
+          "pharmacophoremt/_private/arg_digestion/native_screening.py": true,
+          "pharmacophoremt/screening/conformer_screening.py": true,
+          "pharmacophoremt/screening/pose_evaluation.py": true,
+          "pharmacophoremt/screening/rigid_search.py": true
+        },
+        "not_a_new_scientific_execution": true,
+        "original_archive_sha256": "937e179cdb23ed77621ebdfd5a2d4d40b6298bb5ac90cddab43bbe20fab6de3a"
+      },
+      "native_io_argdigest_receiving_20261105_summary.json": {
+        "current_selected_bytes_match_receipt": {
+          "pharmacophoremt/_private/arg_digestion/native_io.py": true,
+          "pharmacophoremt/io/phmt/__init__.py": true,
+          "pyproject.toml": true
+        },
+        "not_a_new_scientific_execution": true,
+        "original_archive_sha256": "711be7d5bea1156bbaa47b646b637e0953ff90122fc422c09020383100a051a4"
+      },
+      "retrospective_contracts_20261105_summary.json": {
+        "current_selected_bytes_match_receipt": {
+          "pharmacophoremt/_private/arg_digestion/validation_results.py": true,
+          "pharmacophoremt/validation/retrospective.py": true,
+          "pharmacophoremt/validation/saved_results.py": true
+        },
+        "not_a_new_scientific_execution": true,
+        "original_archive_sha256": "bcc351310b2a4cf9544608711cfdbc28160f984488ec669962c999dae6e610d3"
+      }
+    },
+    "post_changed_paths": 94,
+    "post_commits": 11,
+    "post_public_argument_signature_changes": 0,
+    "post_runtime_file_count": 9,
+    "prior_review": "3d26b28ae072c106784299ee96d3a50f0edebc91",
+    "source_routes": {
+      "after": {
+        "argdigest-3.14": {
+          "commit": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+          "id": "argdigest-3.14",
+          "input": "devtools/requirements/controlled_suite_dependencies_py314.txt",
+          "install": "pip-no-deps-git",
+          "name": "argdigest",
+          "reason": "ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.",
+          "role": "required-runtime",
+          "url": "https://github.com/uibcdf/argdigest"
+        },
+        "argdigest-base": {
+          "commit": "c9c9ee623dab5331fdfa4227bd784dd38620e18b",
+          "id": "argdigest-base",
+          "input": "devtools/requirements/controlled_suite_dependencies.txt",
+          "install": "pip-no-deps-git",
+          "name": "argdigest",
+          "reason": "ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.",
+          "role": "required-runtime",
+          "url": "https://github.com/uibcdf/argdigest"
+        }
+      },
+      "before": {
+        "argdigest-3.14": {
+          "commit": "c7128f09b2fe064b6c5603d1077dbd2cec52223d",
+          "id": "argdigest-3.14",
+          "input": "devtools/requirements/controlled_suite_dependencies_py314.txt",
+          "install": "pip-no-deps-git",
+          "name": "argdigest",
+          "reason": "ArgDigest 0.17.0 published source for definition-owned native geometry contracts (#6); scientific commands unchanged. Installed/public whole-closure qualification remains #10/#23.",
+          "role": "required-runtime",
+          "url": "https://github.com/uibcdf/argdigest"
+        },
+        "argdigest-base": {
+          "commit": "c7128f09b2fe064b6c5603d1077dbd2cec52223d",
+          "id": "argdigest-base",
+          "input": "devtools/requirements/controlled_suite_dependencies.txt",
+          "install": "pip-no-deps-git",
+          "name": "argdigest",
+          "reason": "ArgDigest 0.17.0 published source for definition-owned native geometry contracts (#6); scientific commands unchanged. Installed/public whole-closure qualification remains #10/#23.",
+          "role": "required-runtime",
+          "url": "https://github.com/uibcdf/argdigest"
+        }
+      },
+      "changed_ids": [
+        "argdigest-base",
+        "argdigest-3.14"
+      ],
+      "current_contexts": [
+        "ci-3.11",
+        "ci-3.12",
+        "ci-3.13",
+        "ci-3.14",
+        "production-3.14",
+        "public-test-3.14",
+        "development-3.14",
+        "docs-3.12"
+      ],
+      "other_routes_unchanged": true
+    },
+    "support": {
+      "added_since_prior": [
+        {
+          "sha256": "020cc9277902d07aa4c0e3339c7bfa278a4f732ec7e9e215fc0dfa2d8e4ad3ef",
+          "source": "phmt_test_support/receptor_sensitivity.py",
+          "target": "phmt_test_support/receptor_sensitivity.py"
+        },
+        {
+          "sha256": "86163192950a9ef87d878221c40a0cd39ada8847582075ca60933c86c46f1f14",
+          "source": "tests/data/receptor_sensitivity/plan.json",
+          "target": "tests/data/receptor_sensitivity/plan.json"
+        },
+        {
+          "sha256": "0ec430a447bfd814793ae80cde2d20459ba6efdedcc4061a56e5fa2978144d6a",
+          "source": "phmt_test_support/prepared_receptor_sensitivity.py",
+          "target": "phmt_test_support/prepared_receptor_sensitivity.py"
+        },
+        {
+          "sha256": "8a3fd4e7fd7788f20ca0333952f81f0c3d9e2bb9d55f63600fd8f64724ee800e",
+          "source": "tests/data/prepared_receptor_sensitivity/plan.json",
+          "target": "tests/data/prepared_receptor_sensitivity/plan.json"
+        },
+        {
+          "sha256": "3bcb640e493ca9aa149b009add179bf8f9a8d26d17f42a46301f3fdfcb90db63",
+          "source": "phmt_test_support/receptor_hypothesis_pilot.py",
+          "target": "phmt_test_support/receptor_hypothesis_pilot.py"
+        },
+        {
+          "sha256": "0c7fb38ffa73ce9cc38d52e90d2a0e04a2610e9aa54b3b0722a5386a0b0d43d7",
+          "source": "tests/data/receptor_hypothesis_pilot/plan.json",
+          "target": "tests/data/receptor_hypothesis_pilot/plan.json"
+        },
+        {
+          "sha256": "165b6ddc6feca62b0004d0f2aad66bd8f334af008a19e077fb7b6289e3333d84",
+          "source": "phmt_test_support/benchmark_cached_generation.py",
+          "target": "phmt_test_support/benchmark_cached_generation.py"
+        },
+        {
+          "sha256": "c60372071eb89aa20133c2964cfd0eff67ea12591f94d8c4589205c859b9d088",
+          "source": "tests/data/cached_generation_scaling/plan.json",
+          "target": "tests/data/cached_generation_scaling/plan.json"
+        }
+      ],
+      "all_current_input_hashes_match": true,
+      "current_count": 59,
+      "original51_entries_unchanged": true,
+      "runtime_resource_paths_added": [
+        "site-packages/pharmacophoremt/_private/arg_digestion/native_io.py",
+        "site-packages/pharmacophoremt/_private/arg_digestion/native_screening.py",
+        "site-packages/pharmacophoremt/_private/arg_digestion/validation_results.py"
+      ]
+    },
+    "tag_changed_paths": 1201,
+    "tag_commits": 111,
+    "tag_public_argument_signature_changes": 9,
+    "tag_runtime_file_count": 46
+  },
+  "temporary_resources": {
+    "borrowed": "controlled scientific/docs prefix and accepted immutable SDK; never edit",
+    "continuing_process_required": false,
+    "created": "2026-11-05",
+    "issue": "uibcdf/pharmacophoremt#95",
+    "owner": "LMMV/dprada",
+    "purpose": "post-review0.5.0 source and migration-note consolidation; not candidate freeze/publication",
+    "review": "2026-11-19 or relevant change"
+  },
+  "version_plan_changed": false
+}

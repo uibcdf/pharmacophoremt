@@ -13,18 +13,22 @@ readiness follows the agreed scope and evidence, not a fixed minor count.
 
 ## Source review completed, release freeze pending
 
-The [100-commit review](release_0_5_0_review.md) compares 0.4.0 with exact source
-`3d26b28ae072c106784299ee96d3a50f0edebc91`, covering all 43 changed runtime Python
-files and public signature changes. [Draft notes](../docs/content/about/release_notes.md)
-now distinguish new APIs, changed ranking/schema/merge/option behavior, retained
-workflows and scientific limits. This is the review baseline, not a frozen
-candidate; the installed-support correction #96 and these notes are a separate
-overlay requiring their own exact-head checks.
+The [current review](release_0_5_0_post_review.md) extends the preserved 100-commit
+3d26b28 baseline through `fbe6677f5a770a2123a2512fc3367a93209456ae`:
+111 commits/1,201 paths/46 runtime Python files since 0.4.0. Eleven later commits
+change nine runtime files and add no textual public argument signatures; the
+original nine signature changes remain. [Draft notes](../docs/content/about/release_notes.md)
+include native batch admission on empty inputs (#99), collision-safe retrospective
+EF settings (#100) and unchanged direct/dispatcher source-name policy (#101),
+alongside earlier ranking/schema/merge/source-binding changes. This is a reviewed
+snapshot, not a selected candidate or version-plan change.
 
 #96 supplies three omitted selected receptor-study helpers and their frozen
 plans through the unchanged shared private stager. Its guard fails before and
 passes after; actual isolated imports and collection of 126 selected nodes pass,
-with no scientific bodies executed. All 57 staged inputs and cleanup are checked.
+with no scientific bodies executed. That original 57-input receiving retains its
+scope; #97 subsequently adds two cached-scaling inputs, bringing the declaration
+to 59. All current hashes match; a metadata check is not a new staged/scientific run.
 This does not qualify an installed artifact or supported native matrix.
 
 [#82 published-provider receiving](native_io_argdigest_receiving.md) now verifies
@@ -32,9 +36,11 @@ and consumes the exact 0.17.1 archive in an owned overlay. 500 unique selected
 source controls pass, protecting literal keyword/source identity and native
 call/error/path/value behavior. Four native codecs gain signature contracts;
 ArgDigest >=0.17.1, recipe/ordinary environments and controlled source pins are
-aligned. This is a post-review delta: one new private contract module and the
-native I/O wrappers. Recheck it against the actual candidate; no 0.5.0 freeze
-or whole installed/public dependency-closure claim follows. Next qualify the
+aligned. That first post-review delta is consolidated with #99/#100's two further
+contract modules and existing native wrappers. Relevant current bytes still
+match their individual qualified receipts. Recheck against the actual candidate;
+no 0.5.0 freeze or whole installed/public dependency-closure claim follows.
+Next qualify the
 public molecular/provider closure and obtain exact-source #9/#10/#23 gates.
 
 ## Scope to review for the next candidate
@@ -53,11 +59,19 @@ and before/after checks are retained in the
 [original receipt](evidence/public_dependency_receiving_20261105_summary.json).
 
 Hold full proposed-scope qualification and candidate freeze until the supported
-public delivery boundary is resolved through existing MolSysMT #255/#375.
+public molecular delivery boundary is resolved under PHMT#95 / MolSysMT#375.
+The open status of the whole #375 proposal is not itself the gate: identify
+delivery for the already-reviewed capabilities needed by this proposed scope.
+Broader acceptor families and environmental refinement remain separate.
 Receive the identified artifact under a new run identity; then decide the real
 minimum and applicable candidate gates. Existing source corrections remain
 completed; no provider edit, new molecular fallback or speculative version floor
-is added here. MolSysMT #431 owns observed old-public topology warning debt.
+is added here. MolSysMT #255/#431 are closed source work; completed corrections
+are distinct from delivery in the actual public dependency closure. Fresh
+read-only main-file inventory/exact solver-index verification still finds
+MolSysMT 0.23.0 and ArgDigest 0.17.1 at already-received coordinates. No package is
+installed or downloaded by this check. PyUnitWizard#141/SMonitor#63 performance
+proposals add no new candidate gate or minimum.
 This receipt is Linux/Python 3.14 source compatibility, not a PHMT artifact,
 full source/installed matrix or publication. #95 stays open.
 
@@ -73,11 +87,12 @@ not automatic prerequisites for this consolidation.
 
 | Gate | Current state and next action |
 | --- | --- |
-| Exact source candidate | Select one full committed SHA after #94 closeout; record it in #95 before freezing/tagging |
+| Exact source candidate | fbe6677 is a reviewed snapshot, not the frozen candidate. Select one full committed SHA with reviewed dependency scope and record it in #95 before freezing/tagging |
 | Scientific/local source evidence | #94 has 295 unique passing selected controls across preserved scopes, unchanged 12-model/72-primary/24-recovery replay, and an executed recipe; these do not certify the full suite |
-| Public molecular/dependency closure | Fresh public closure solves/installs and passes 203 selected controls, with 18 modern-capability skips. Resolve MolSysMT #255/#375 public delivery and receive the actual artifact before full proposed-scope qualification; do not treat skips as acceptance |
+| Public molecular/dependency closure | Existing public closure passes 203 selected controls with 18 modern-capability skips. New registry/index observation still finds public MolSysMT 0.23.0. Resolve supported delivery/#375 and receive actual bytes before full proposed-scope qualification; #255/#431 are closed source history and skips are not acceptance |
 | Hosted supported source matrix | #9 owns exact-head Python 3.11–3.14 Linux/macOS recovery; inspect the candidate's executed required jobs rather than reusing old-head or queued results |
-| Public contract and migration notes | Baseline review and draft notes are complete below, including nine public signature changes; recheck against the actual selected candidate and preserve known scientific/provider limits |
+| Public contract and migration notes | Current review/draft notes include #82/#99/#100 and #101's unchanged source-name policy, original nine signature changes and no later additions. Recheck the candidate; retain scientific/provider limits and application-subclass batch migration |
+| Installed test inputs | 59 privately staged files, original 51 exact plus six #96/two #97 additions; current hashes match. Three new runtime contract files are inventoried. This does not replace exact-file installed tests |
 | Version/metadata plan | Review and commit the real 0.5.0 release plan when a candidate is selected. The existing `devtools/conda-build/release_plan.toml` still records 0.4.0 and is deliberately unchanged by this planning stage |
 | Candidate distribution/install | #10/#23 retain exact-file build, dependency-closure, installed supported-platform/minor and independent public-install requirements; a new source tag cannot certify them |
 | Documentation | Verify the applicable candidate docs/environment/publication route; a bounded linked-page render is not hosted/full-site publication |

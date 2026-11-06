@@ -1,5 +1,20 @@
 # Strategic Roadmap
 
+## 0.5.0 post-review consolidation — 2026-11-05
+
+[#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now consolidates
+reviewed fbe6677: 111 commits/1,201 paths/46 runtime Python files since 0.4.0,
+11 later commits/nine runtime files/no new argument signatures after 3d26b28.
+[Review](release_0_5_0_post_review.md), [draft notes](../docs/content/about/release_notes.md)
+and [readiness](release_0_5_0_readiness.md) cover #82/#99/#100 and #101's actual
+source-name policy. Runtime/study identities remain; 59 support hashes match.
+Fresh read-only exact main/index checks still find the already-received public
+MolSysMT 0.23.0/ArgDigest 0.17.1 files. #255/#431 are closed source work; supported
+modern public delivery/#375 and exact-candidate #9/#10/#23 gates remain distinct.
+Strict local 62-document/two-image rendering passes with execution off, not hosted
+publication or new science. No version-plan bump/freeze/tag/package/Release or
+new optimization gate; further 0.x.y minors and deferred addon retain their scope.
+
 ## Source-name admission qualified without an API expansion — 2026-11-05
 
 [#101](https://github.com/uibcdf/pharmacophoremt/issues/101) withdraws the initial

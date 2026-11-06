@@ -45,7 +45,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #101's source admission review refutes a suspected overwrite and preserves the actual API: direct closed calls use molecular_system; only model() declares system/mol_sys aliases.153 public-prefix cases pass (89 new guards); production is unchanged. #100/#99 contracts and #98 provider handoffs retain their scope. Broader #6 remains partial; #95 modern public MolSysMT delivery/#375 and #9/#10/#23 full gates remain pending. #255 is closed source-separation history. Serial one-CPU/1-GiB/no-swap scopes preserve the shared machine. Actual plan/tag/Release stays0.4.0; no publication/addon work.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #95's post-review consolidation now covers fbe6677, including #82/#99/#100 and #101's unchanged source-name policy. All 46 changed runtime files/nine original argument-signature changes are reviewed; 59 private input hashes match. Fresh main/index checks still identify received MolSysMT 0.23.0/ArgDigest 0.17.1; closed #255/#431 source work is distinct from public delivery/#375. Strict local 62-document/two-image render passes with execution off. Next receive supported public molecular bytes, select the exact candidate and execute #9/#10/#23 gates. Actual plan/tag/Release stays 0.4.0; no freeze/publication/addon work. Serial one-CPU/1-GiB/no-swap commands preserve shared resources.
 
 ## Classical Workflow Specification
 

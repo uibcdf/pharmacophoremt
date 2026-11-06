@@ -1,5 +1,42 @@
 # Development Checkpoint
 
+## Proposed 0.5.0 review refreshed through fbe6677 — 2026-11-05
+
+[#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has a
+[post-review consolidation](release_0_5_0_post_review.md), updated
+[draft migration notes](../docs/content/about/release_notes.md),
+[readiness route](release_0_5_0_readiness.md) and
+[original new evidence](evidence/release_050_consolidation_20261105_summary.json).
+Immutable reviewed source fbe6677 adds 11 commits/nine runtime files after the
+initial 3d26b28 review, with no extra textual public argument signatures. The
+whole 0.4.0 diff is 111 commits/1,201 paths/46 runtime Python files/nine signatures.
+Counts are descriptive; this is not a frozen candidate or new science run.
+
+Notes now cover #82's public ArgDigest 0.17.1, #99's empty-batch admission and
+application batch-extension migration, #100's collision-safe EF settings and
+#101's unchanged source-name policy. Relevant runtime bytes still match their
+original qualified receipts. All 59 private support input hashes match, with
+original 51 entries exact and eight #96/#97 additions; three runtime contract
+modules are inventoried. Original studies/profiles and overlap limits remain.
+
+Fresh accepted-SDK read-only registry/main-label/solver-index checks confirm the
+already-received MolSysMT 0.23.0/ArgDigest 0.17.1 coordinates/hashes. No package is
+downloaded, installed or solved. MolSysMT#255/#431 are closed source work; their
+public delivery is distinct. Broader #375 directions scope remains provider-owned;
+PyUnitWizard#141/SMonitor#63 are performance proposals, not new release gates.
+Strict local rendering passes 62 source documents/two images with execution off.
+Initial collector-field error and initial/final renders remain in the evidence.
+
+**Next:** obtain a supported public MolSysMT boundary for the full proposed scope,
+receive those exact bytes, review the actual minimum/scope, then select the
+candidate and execute exact-source/build/installed/public/platform gates under
+#9/#10/#23. Do not count skipped/queued roles or historical selected tests as
+candidate acceptance. Actual plan/tag/Release stays 0.4.0; no freeze, publication,
+addon or suite version notice. Capsule
+`build/phmt-050-consolidation-20261105-5si1f6vz`, owner LMMV/dprada, review
+2026-11-19 or relevant change; serial one-CPU/1-GiB/no-swap/low-priority commands,
+borrowed environments unchanged, no continuing process required.
+
 ## Molecular-source admission reviewed; overwrite suspicion refuted — 2026-11-05
 
 [#101](https://github.com/uibcdf/pharmacophoremt/issues/101) is withdrawn as a
