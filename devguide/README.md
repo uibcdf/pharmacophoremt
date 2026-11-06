@@ -37,7 +37,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #95's fresh public closure passes 203 selected controls with 18 modern-provider skips; full proposed0.5.0 qualification waits for supported MolSysMT delivery. #97 now measures cached generation independently: ten declared workloads/two modes, 50 timing/ten separate allocation samples and all 80 calls agreeing with independent oracles. One CPU/1GiB/no swap/low priority and serial execution honor the shared-machine instruction now in AGENTS.md. Next scope a fixed-workload profile before optimizing; preserve molecular ownership and #9/#10/#23 gates. The roadmap permits 0.10.0, 0.11.0 and later minors. Latest real version plan/tag/Release remains0.4.0; no publication or addon work.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #98's fixed-work profile preserves all native models/reports and independent scientific/custody checks. Generic repeated quantity-probe/catalog-path costs are handed to PyUnitWizard #141/SMonitor #63 with provider-only reproductions; no local replacement or performance fix. #97's baseline remains unchanged. Resource admission and one CPU/1 GiB/no swap/low priority preserve the shared machine. #95's public modern MolSysMT delivery and #9/#10/#23 full gates remain pending; no new release gate is added. Further 0.x.y minors remain available; latest real version plan/tag/Release stays 0.4.0. No publication or addon work.
 
 ## Classical Workflow Specification
 

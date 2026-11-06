@@ -586,3 +586,23 @@ optimization, biological validity, complexity claim or new installation. Audit16
 remains partial for broader workloads/causal profiling; next scope a fixed-workload
 profile before choosing an optimization. #95 public modern-provider delivery and
 #9/#10/#23 exact-candidate gates remain separate. No release/addon work.
+
+
+## Fixed-work profile and provider ownership — 2026-11-05
+
+[#98](https://github.com/uibcdf/pharmacophoremt/issues/98) completes the frozen
+budget32 profile: warmup, one cProfile call and two controls preserve all128 native
+model exports/four complete reports, independent geometry/order/coverage, caches,
+units and selected source/provider/native identities. Repeated expected-negative
+quantity diagnostics and warmed provider path resolution are independently
+reproduced without PHMT and handed to PyUnitWizard#141/SMonitor#63.
+[Protocol](cached_generation_profile_protocol.md) and
+[original receipt](evidence/cached_generation_profile_20261105_summary.json) retain
+all calls, raw/JSON pstats, full payloads, admissions and source inspections.
+Nested cumulative times are not additive ownership shares or measured speedup.
+Initial pressure prevents execution; later admitted one-CPU/1GiB/no-swap/low-
+priority execution completes normally. No production/provider/floor/scientific
+change or disabled diagnostics. Audit item16/#6 remain partial; receive supported
+owner guidance/delivery before adoption and preserve scientific/diagnostic
+contracts. These proposals add no release gate; #95's molecular delivery and
+#9/#10/#23 keep their independent scope. No publication/addon work.

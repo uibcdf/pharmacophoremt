@@ -39,6 +39,20 @@ plan and candidate gates deliberately. #9 owns exact-head hosted recovery;
 package is delivered, publish the requested version-specific MolSysSuite notice.
 #95 tracks next-candidate readiness; this does not authorize publication now.
 
+## Fixed-work profile and provider handoffs — 2026-11-05
+
+[#98](https://github.com/uibcdf/pharmacophoremt/issues/98) completes the
+[declared budget 32 profile](cached_generation_profile_protocol.md) with exact
+full model/report/metadata and independent geometry/custody equivalence over
+four calls. Measured repeated quantity-probe diagnostics and warmed provider
+path resolution belong to PyUnitWizard #141/SMonitor #63; minimal provider-only
+reproductions and original pstats are retained. No local detector, diagnostic
+suppression, production optimization, provider edit or speculative floor.
+Receive the supported owner response/delivery before adopting a performance
+change; audit item 16/#6 remain partial beyond this bounded investigation. Standard
+resource admission and one-CPU/1 GiB/no-swap/low-priority execution stay enforced.
+These proposals add no new 0.5.0 gate; #95's molecular delivery remains separate.
+
 ## Cached-generation computational baseline — 2026-11-05
 
 [#97](https://github.com/uibcdf/pharmacophoremt/issues/97) executes the

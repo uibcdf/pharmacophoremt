@@ -5,10 +5,11 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (75)
+### Resolved (76)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
+- [`cached_generation_profile.md`](cached_generation_profile.md) — [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) — Profile fixed-work cached generation and hand generic costs to their owners. *(resolved, measured)*
 - [`cached_generation_scaling_baseline.md`](cached_generation_scaling_baseline.md) — [#97](https://github.com/uibcdf/pharmacophoremt/issues/97) — Measure cached receptor-generation scaling with bounded shared resources. *(resolved, measured)*
 - [`carbonyl_acceptor_receiving_execution.md`](carbonyl_acceptor_receiving_execution.md) — [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) — Execute the frozen experimental carbonyl acceptor receiving matrix. *(resolved, measured)*
 - [`carbonyl_acceptor_receiving_plan.md`](carbonyl_acceptor_receiving_plan.md) — [#92](https://github.com/uibcdf/pharmacophoremt/issues/92) — Freeze bounded experimental carbonyl acceptor receiving before evaluation. *(resolved, inspected)*

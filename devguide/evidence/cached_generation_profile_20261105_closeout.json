@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.cached-generation-profile-closeout@1",
+  "at": "2026-11-06T02:29:05.386211+00:00",
+  "initial_verifier_sha256": "5c070421a569125bc61237c3fbd10b427d1c8e8a8bf7ee6440776b7f23236e4e",
+  "initial_stage_results": [
+    {
+      "name": "index_generate",
+      "exit_code": 0,
+      "log": "wrote devguide/archive/README.md\n"
+    },
+    {
+      "name": "index_check",
+      "exit_code": 0,
+      "log": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "exit_code": 0,
+      "log": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.008s\n\nOK\n"
+    },
+    {
+      "name": "archive",
+      "exit_code": 0,
+      "log": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.cached-generation-profile-receiving@1\", \"report_schema\": \"pharmacophoremt.cached-generation-profile-evidence@1\", \"recorded_at_utc\": \"2026-11-06T02:20:11.508176+00:00\", \"archive_bytes_verified\": true}\n"
+    },
+    {
+      "name": "docs",
+      "exit_code": 0,
+      "log": "Running Sphinx v9.1.0\nloading translations [en]... done\nmaking output directory... done\nmyst v5.1.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions=set(), disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, strikethrough_single_tilde=False, colon_fence_exact_match=False, suppress_warnings=[], highlight_code_blocks=True)\nbuilding [mo]: targets for 0 po files that are out of date\nwriting output... \nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: [new config] 2 added, 0 changed, 0 removed\nreading sources... [ 50%] cached_generation_scaling\nreading sources... [100%] index\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\ncopying assets... \ncopying static files... \nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-generation-profile-20261105-70lnmli0/docs-html/_static/language_data.js\nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-generation-profile-20261105-70lnmli0/docs-html/_static/basic.css\nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-generation-profile-20261105-70lnmli0/docs-html/_static/documentation_options.js\nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-generation-profile-20261105-70lnmli0/docs-html/_static/alabaster.css\ncopying static files: done\ncopying extra files... \ncopying extra files: done\ncopying assets: done\nwriting output... [ 50%] cached_generation_scaling\nwriting output... [100%] index\n\ngenerating indices... genindex done\nwriting additional pages... search done\ndumping search index in English (code: en)... done\ndumping object inventory... done\nbuild succeeded.\n\nThe HTML pages are in build/phmt-generation-profile-20261105-70lnmli0/docs-html.\n"
+    },
+    {
+      "name": "ruff",
+      "exit_code": 0,
+      "log": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "exit_code": 0,
+      "log": "370 files already formatted\n"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "log": ""
+    }
+  ],
+  "initial_tail_failure": "ModuleNotFoundError: No module named 'phmt_test_support' while importing the unshipped archive reader after all eight command stages passed. No profiling/scientific failure. Resolved by loading the unchanged reader file explicitly, without source/provider PYTHONPATH overlays; no stage is relabeled as repeated.",
+  "archive_reader_sha256": "abddcfb7f8c4e0253ad852deb789e69d7329191f46745e90f8ca8eaf4f0ae5bb",
+  "binary_archive_integrity": {
+    "profile_stats": {
+      "bytes": 74760,
+      "sha256": "e070c6da0c8e4695a66118d8cf87c98f6579ba54d1aa79e560d7f9132f00f963"
+    },
+    "puw_probe_stats": {
+      "bytes": 13403,
+      "sha256": "aa2b1974ed2453993bfa23a4aec8d30001979dfd2c97bb8a1a093f21ecf90e48"
+    },
+    "smonitor_probe_stats": {
+      "bytes": 4348,
+      "sha256": "7eabe1c9ec313a8340fb47f18e8b04a5cc7fc63b1ee2bb80d44cbfd8093e63f2"
+    }
+  },
+  "runtime_source_9c_diff_empty": true,
+  "initial_head_739_declarations_diff_empty": true,
+  "earlier_support_delta_note": "Whole-directory comparison to9c includes the already received #97 private helper/plan declarations, not a new runtime/dependency change. Initial verifier asserted the wrong administrative baseline after binary integrity passed; corrected using initial739 declarations and actual9c runtime separately.",
+  "unchanged_paths": [
+    "pharmacophoremt",
+    "pyproject.toml",
+    "devtools/dependency_routes.toml",
+    "devtools/conda-build",
+    "devtools/requirements"
+  ],
+  "docs": {
+    "scope": "Strict actual case/navigation two-page render; no full-site/hosted/notebook validation",
+    "source_sha256": "f2fae9ca32291ef6f816ce6798790dc4a5087055046fe40669314354685fdba4",
+    "copied_sha256": "f2fae9ca32291ef6f816ce6798790dc4a5087055046fe40669314354685fdba4"
+  },
+  "untested": "No new full scientific suite/artifact/matrix, optimization or provider change. Existing #97 tests are dated; four new native/scientific complete-result checks pass."
+}

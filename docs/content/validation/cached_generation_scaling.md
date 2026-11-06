@@ -94,6 +94,26 @@ scientific setting changes.
 
 ## Interpretation and maintenance
 
+### Fixed-work profile follow-up (#98)
+
+The [declared follow-up](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/cached_generation_profile_protocol.md)
+profiles only the existing two-donor/two-ring, budget 32 case. Four calls return
+the same 32 of 64 models, four sites each, with exact full native model/report/
+metadata fingerprints and unchanged caches, units and selected identities.
+The [original profile receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/cached_generation_profile_20261105_summary.json)
+contains 9.357 s instrumented duration and separate 4.669/4.620 s controls; those
+are not an optimization comparison with this earlier benchmark.
+
+The profile records 22,672 quantity tests,17,792 normal negative-probe diagnostics,
+and 17,792 repeated provider path resolutions/213,504 lstat calls. Nested
+cumulative times cannot be summed. Fresh provider-only reproductions isolate the
+generic costs; [PyUnitWizard #141](https://github.com/uibcdf/pyunitwizard/issues/141)
+and [SMonitor #63](https://github.com/uibcdf/smonitor/issues/63) own the proposals.
+No downstream detector, disabled diagnostic, production optimization or dependency
+floor is added. Requested capture/application policy and scientific contracts
+must survive any supported provider improvement. Resource admission and standard
+one-CPU/1 GiB/no-swap/low-priority limits remain enforced.
+
 The workload axes vary feature/site counts, finite budget and exclusions. Rows
 with different returned hypotheses or site counts do not establish an
 equivalent-work speedup. Exact theoretical totals do not mean all alternatives

@@ -1,0 +1,351 @@
+{
+  "schema": "pharmacophoremt.cached-generation-profile-receiving@1",
+  "recorded_at_utc": "2026-11-06T02:20:11.508176+00:00",
+  "owner": "LMMV/dprada",
+  "issue": "uibcdf/pharmacophoremt#98",
+  "driver_commit": "80efdc520278055ed216279dc324a60df8f729c2",
+  "actual_runtime_source": "9c163654375c5933be6400282105b89376f03578",
+  "driver_sha256": "ccec6d17078b57c6b64c42fce35e1cba12ce5a3bc8cbed79f2415ee5df4750f2",
+  "helper_sha256": "165b6ddc6feca62b0004d0f2aad66bd8f334af008a19e077fb7b6289e3333d84",
+  "plan_sha256": "c60372071eb89aa20133c2964cfd0eff67ea12591f94d8c4589205c859b9d088",
+  "scope": "One fixed synthetic cached-generation profile, not optimization or release/public-artifact qualification",
+  "case": {
+    "id": "budget_32",
+    "donors": 2,
+    "rings": 2,
+    "exclusions": 0,
+    "budget": 32
+  },
+  "actual_providers": {
+    "pharmacophoremt": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/source/pharmacophoremt/__init__.py",
+      "distribution_version": "0.4.0+103.g9c16365",
+      "module_version": "0.4.0+103.g9c16365",
+      "direct_url": {
+        "dir_info": {
+          "editable": true
+        },
+        "url": "file:///home/liliana/repos%40uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/source"
+      },
+      "file_count": 140,
+      "file_tree_sha256": "c0bccac1602f598af0a2b9878ada23aa7f2778ae0fa759cf3accc2a1c4af94bc",
+      "native_files": {}
+    },
+    "numpy": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/__init__.py",
+      "distribution_version": "2.5.4",
+      "module_version": "2.5.4",
+      "direct_url": {
+        "archive_info": {
+          "hash": "sha256=7d3822dd8936e8f8f32ba03258b6a976ffeb298548df99098c8ea8f9232b53a5",
+          "hashes": {
+            "sha256": "7d3822dd8936e8f8f32ba03258b6a976ffeb298548df99098c8ea8f9232b53a5"
+          }
+        },
+        "url": "file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1791675316/work/dist/numpy-2.5.4-cp314-cp314-linux_x86_64.whl"
+      },
+      "file_count": 426,
+      "file_tree_sha256": "7394b39c55ca8044badf06c5947bf584fd3526b4a1f3ad0b6b3fd98f955560d4",
+      "native_files": {
+        "_core/_multiarray_tests.cpython-314-x86_64-linux-gnu.so": "bb082814d2438d8752f53f4d1f8aecaacb40d80fe96463ed55925ba0c0b6036d",
+        "_core/_multiarray_umath.cpython-314-x86_64-linux-gnu.so": "4a0334365bad8c180820b6bd5a0f08ee954486142a4efc3fabde4206ab293872",
+        "_core/_operand_flag_tests.cpython-314-x86_64-linux-gnu.so": "155b667d71cd8ae24018476963e07db04525f66174f85012d6f9fb6a25346a56",
+        "_core/_rational_tests.cpython-314-x86_64-linux-gnu.so": "ce890908a318a9c6e56eef1e1a34b11ee8b3ab5964db1344760a7975fb524bc6",
+        "_core/_simd.cpython-314-x86_64-linux-gnu.so": "2933f2e3fdcbd78b21c02d0e1f442c08eea9d31f4a0c44ca33ca552003a7c629",
+        "_core/_struct_ufunc_tests.cpython-314-x86_64-linux-gnu.so": "ca9b75edca41f077a1aa59de5c8627c7954b5af0decfdd4eddf00a8c7c2191c7",
+        "_core/_umath_tests.cpython-314-x86_64-linux-gnu.so": "cef5369931f579aa69cbf3b69b6983c70f3166c8d220887eb0f3656275c01534",
+        "fft/_pocketfft_umath.cpython-314-x86_64-linux-gnu.so": "4d157e72109ff3946d8de2f630e5e15c5e3b099690008bd2f6dbb849f7e96380",
+        "linalg/_umath_linalg.cpython-314-x86_64-linux-gnu.so": "19fdd9e6fd4328481fad3550a409e74b5f0ec337a9864710777167de5915ce44",
+        "linalg/lapack_lite.cpython-314-x86_64-linux-gnu.so": "927c502807fa2173573514437455e13cb23fcf5205217bdfedaf4cb5b0423d65",
+        "random/_bounded_integers.cpython-314-x86_64-linux-gnu.so": "1b097abd2cfeb01fab793bf47e00fb51a354d150dbe2f322ee1a274677761050",
+        "random/_common.cpython-314-x86_64-linux-gnu.so": "fb8b6ab2d866995e34812fc01d105e8e02036b0dd4667ccd1957c3601e8210de",
+        "random/_generator.cpython-314-x86_64-linux-gnu.so": "49a4e933f712ccf8c9cc567b0e2cd1a48439415152b91da00d83213a05ffa14b",
+        "random/_mt19937.cpython-314-x86_64-linux-gnu.so": "1fbb9361c048d6140d9e229d5c0489ee4c490e0704c599541f554ca7cf0c8723",
+        "random/_pcg64.cpython-314-x86_64-linux-gnu.so": "c31d97c689117dff82786dea4dddabfd2fde0f6396ce74dc1fcd9c9d6bef062d",
+        "random/_philox.cpython-314-x86_64-linux-gnu.so": "bc643df79f0056e971b031628ee9c10f5947b150f8e4f48784e5d397512ac086",
+        "random/_sfc64.cpython-314-x86_64-linux-gnu.so": "4df0e899fe72c830cc43393a99bc92a4b1aad9f4013bb4f34d3641350ec7fb4f",
+        "random/bit_generator.cpython-314-x86_64-linux-gnu.so": "25a248fe09b0bbcb54492b82815d20d9677c671b916462697a1042ab22ecd797",
+        "random/mtrand.cpython-314-x86_64-linux-gnu.so": "81870f8a4d0efc3517e0b0a418f1118c34accfcdd32868f403367eb7fe9612c4"
+      }
+    },
+    "pyunitwizard": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/pyunitwizard/__init__.py",
+      "distribution_version": "0.29.0",
+      "module_version": "0.29.0",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/pyunitwizard_1792785130617/work"
+      },
+      "file_count": 92,
+      "file_tree_sha256": "1a0a32ebba6c5c61ee5584f9baabca1cc51f4d26a3656891107e3aba5022e8f8",
+      "native_files": {}
+    },
+    "argdigest": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/argdigest/__init__.py",
+      "distribution_version": "0.17.1",
+      "module_version": "0.17.1",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/argdigest_1793907682986/work"
+      },
+      "file_count": 39,
+      "file_tree_sha256": "63613d53c03aaaf6750d04b0234c9c6539b902635d4f52350029856766090189",
+      "native_files": {}
+    },
+    "smonitor": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/smonitor/__init__.py",
+      "distribution_version": "0.22.1",
+      "module_version": "0.22.1",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/smonitor_1793848904034/work"
+      },
+      "file_count": 41,
+      "file_tree_sha256": "ed6b6ca950c02cd5422052c616a6213d2286b44facf89df82ae7772bbb57f948",
+      "native_files": {}
+    },
+    "depdigest": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/depdigest/__init__.py",
+      "distribution_version": "0.15.2",
+      "module_version": "0.15.2",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/depdigest_1793913284602/work"
+      },
+      "file_count": 17,
+      "file_tree_sha256": "f6b8862f46221aa767302a19e22a54e51eb6fef09cda622026623b5d53dd141b",
+      "native_files": {}
+    },
+    "molsysmt": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/molsysmt/__init__.py",
+      "distribution_version": "0.23.0",
+      "module_version": "0.23.0",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/molsysmt_1791322528917/work"
+      },
+      "file_count": 2852,
+      "file_tree_sha256": "9015f6a2be7207f5a6bd958d4a57de88dea52d332c99acef14ecad08878b8d08",
+      "native_files": {
+        "_rust.abi3.so": "fb07932ca17b75f1edbcfda5e290434243568d69e06ccab11263878c611a8103"
+      }
+    }
+  },
+  "resources": {
+    "at": "2026-11-06T02:05:34.045901+00:00",
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io_priority": "idle",
+    "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt98-profile-20261105-70lnmli0.scope",
+    "limits": {
+      "cpu.max": "100000 100000",
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "pids.max": "32"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "RAYON_NUM_THREADS": "1"
+    }
+  },
+  "calls": [
+    {
+      "mode": "warmup",
+      "elapsed_seconds": 4.813426916953176,
+      "oracle": {
+        "total_possible": 64,
+        "returned": 32,
+        "remaining": 32,
+        "complete": false,
+        "sites_per_model": 4,
+        "geometry_order_sha256": "abaf173d99aa0a4e3f6774a70ef5489bfc9f9e85df01f580041832e523c58523"
+      },
+      "full_payload_sha256": "c08c1ffa5c19b0ab11e030f0ce8ea57810e040c7474a48b1502baf6b89afcfa4",
+      "admission": {
+        "memory_kib": {
+          "MemAvailable": 6586060,
+          "SwapTotal": 8388604,
+          "SwapFree": 1100
+        },
+        "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.09 total=521994370\nfull avg10=0.00 avg60=0.00 avg300=0.08 total=499309385\n",
+        "admitted": true
+      }
+    },
+    {
+      "mode": "profile",
+      "elapsed_seconds": 9.356618910096586,
+      "oracle": {
+        "total_possible": 64,
+        "returned": 32,
+        "remaining": 32,
+        "complete": false,
+        "sites_per_model": 4,
+        "geometry_order_sha256": "abaf173d99aa0a4e3f6774a70ef5489bfc9f9e85df01f580041832e523c58523"
+      },
+      "full_payload_sha256": "c08c1ffa5c19b0ab11e030f0ce8ea57810e040c7474a48b1502baf6b89afcfa4",
+      "admission": {
+        "memory_kib": {
+          "MemAvailable": 6454592,
+          "SwapTotal": 8388604,
+          "SwapFree": 1100
+        },
+        "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.08 total=521997895\nfull avg10=0.00 avg60=0.00 avg300=0.07 total=499312530\n",
+        "admitted": true
+      }
+    },
+    {
+      "mode": "control_1",
+      "elapsed_seconds": 4.668523720931262,
+      "oracle": {
+        "total_possible": 64,
+        "returned": 32,
+        "remaining": 32,
+        "complete": false,
+        "sites_per_model": 4,
+        "geometry_order_sha256": "abaf173d99aa0a4e3f6774a70ef5489bfc9f9e85df01f580041832e523c58523"
+      },
+      "full_payload_sha256": "c08c1ffa5c19b0ab11e030f0ce8ea57810e040c7474a48b1502baf6b89afcfa4",
+      "admission": {
+        "memory_kib": {
+          "MemAvailable": 6433640,
+          "SwapTotal": 8388604,
+          "SwapFree": 4
+        },
+        "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.08 total=522026886\nfull avg10=0.00 avg60=0.00 avg300=0.07 total=499341482\n",
+        "admitted": true
+      }
+    },
+    {
+      "mode": "control_2",
+      "elapsed_seconds": 4.620145163033158,
+      "oracle": {
+        "total_possible": 64,
+        "returned": 32,
+        "remaining": 32,
+        "complete": false,
+        "sites_per_model": 4,
+        "geometry_order_sha256": "abaf173d99aa0a4e3f6774a70ef5489bfc9f9e85df01f580041832e523c58523"
+      },
+      "full_payload_sha256": "c08c1ffa5c19b0ab11e030f0ce8ea57810e040c7474a48b1502baf6b89afcfa4",
+      "admission": {
+        "memory_kib": {
+          "MemAvailable": 6419496,
+          "SwapTotal": 8388604,
+          "SwapFree": 8
+        },
+        "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.07 total=522027371\nfull avg10=0.00 avg60=0.00 avg300=0.06 total=499341967\n",
+        "admitted": true
+      }
+    }
+  ],
+  "full_payload_equivalence": true,
+  "caches_units_and_identities_stable": true,
+  "hotspots": {
+    "<built-in method posix.lstat>": {
+      "calls": 213504,
+      "exclusive_seconds": 0.6708428200000001,
+      "cumulative_seconds": 0.6708428200000001,
+      "function": [
+        "~",
+        0,
+        "<built-in method posix.lstat>"
+      ]
+    },
+    "realpath": {
+      "calls": 17792,
+      "exclusive_seconds": 0.465680709,
+      "cumulative_seconds": 1.6603935730000001,
+      "function": [
+        "<frozen posixpath>",
+        388,
+        "realpath"
+      ]
+    },
+    "ensure_configured": {
+      "calls": 17792,
+      "exclusive_seconds": 0.21393292100000003,
+      "cumulative_seconds": 2.454137674,
+      "function": [
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/smonitor/integrations/core.py",
+        30,
+        "ensure_configured"
+      ]
+    },
+    "is_quantity": {
+      "calls": 22672,
+      "exclusive_seconds": 0.13949021,
+      "cumulative_seconds": 6.888514757,
+      "function": [
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/pyunitwizard/api/introspection.py",
+        151,
+        "is_quantity"
+      ]
+    },
+    "emit_probe_miss": {
+      "calls": 17792,
+      "exclusive_seconds": 0.088301793,
+      "cumulative_seconds": 6.116223422,
+      "function": [
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/pyunitwizard/_private/smonitor/emitter.py",
+        14,
+        "emit_probe_miss"
+      ]
+    }
+  },
+  "total_profile_exclusive_seconds": 9.356557149,
+  "total_profile_calls": 6674988,
+  "exclusive_ownership": {
+    "method": "Disjoint actual module-root paths; never infer ownership from repository ancestor substrings. Cumulative times are kept separate.",
+    "seconds": {
+      "builtins": 2.802159987999998,
+      "stdlib_or_other": 1.8099846590000002,
+      "smonitor": 2.4981896560000005,
+      "pyunitwizard": 1.0013031819999998,
+      "argdigest": 0.039489071,
+      "numpy": 0.5668731250000003,
+      "pint": 0.4425374790000001,
+      "pharmacophoremt": 0.196019989
+    },
+    "total_seconds": 9.356557149
+  },
+  "handoffs": [
+    "https://github.com/uibcdf/pyunitwizard/issues/141",
+    "https://github.com/uibcdf/smonitor/issues/63"
+  ],
+  "disposition": "Profile and owning-provider handoff complete; no PHMT scientific runtime/provider/floor/diagnostic-policy change. Provider compatibility and any improvement remain unqualified.",
+  "limits": "Cumulative times are nested/instrumented, not additive ownership or uninstrumented savings. Two unprofiled calls are controls, not a speedup campaign. File ownership uses actual module roots, never a repository ancestor substring.",
+  "full_evidence": {
+    "path": "cached_generation_profile_20261105.json.gz",
+    "compressed_sha256": "2d3a3630ba115aeae3312bfbfaef646b5f6ef7bdbac39d9c4e4aa40774e7162f",
+    "compressed_bytes": 960733,
+    "uncompressed_sha256": "022455501b114bc8c42fba174bd177b7a08591c5fa03dfbce7cf1b46b9d80521",
+    "uncompressed_bytes": 21688365
+  },
+  "profile_stats": {
+    "path": "cached_generation_profile_20261105_profile_stats.gz",
+    "compressed_sha256": "832480eff985d8ecfa2cc9a01225f84961cabb73ff8e133042d32605ed6d1001",
+    "compressed_bytes": 27585,
+    "uncompressed_sha256": "e070c6da0c8e4695a66118d8cf87c98f6579ba54d1aa79e560d7f9132f00f963",
+    "uncompressed_bytes": 74760
+  },
+  "puw_probe_stats": {
+    "path": "cached_generation_profile_20261105_puw_probe_stats.gz",
+    "compressed_sha256": "f86d6fc01039bdecbda8606796c499f5b5d1b892a6c0a6e5b5cc12b5c241d6be",
+    "compressed_bytes": 4554,
+    "uncompressed_sha256": "aa2b1974ed2453993bfa23a4aec8d30001979dfd2c97bb8a1a093f21ecf90e48",
+    "uncompressed_bytes": 13403
+  },
+  "smonitor_probe_stats": {
+    "path": "cached_generation_profile_20261105_smonitor_probe_stats.gz",
+    "compressed_sha256": "9e52c046bb189459d77f371d8e8f2386b01da2b7d2b0db6745ba497e2b5db5e5",
+    "compressed_bytes": 1753,
+    "uncompressed_sha256": "7eabe1c9ec313a8340fb47f18e8b04a5cc7fc63b1ee2bb80d44cbfd8093e63f2",
+    "uncompressed_bytes": 4348
+  }
+}

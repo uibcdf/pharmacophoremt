@@ -1,5 +1,53 @@
 # Development Checkpoint
 
+## Fixed-work profile completed; generic costs handed to providers — 2026-11-05
+
+[#98](https://github.com/uibcdf/pharmacophoremt/issues/98) follows #97 with only
+the unchanged budget 32 case. Frozen driver `80efdc5` uses immutable PHMT `9c16365`
+in the borrowed public prefix (PyUnitWizard 0.29.0/SMonitor 0.22.1/Python 3.14.10).
+One warmup, one instrumented call and two controls agree on all 128 native model
+exports/four full detached reports, geometry/order/coverage, input caches,
+unit policy and selected source/provider/native identities. Each call returns
+32 of 64 hypotheses, four sites/model, incomplete coverage. The
+[protocol](cached_generation_profile_protocol.md),
+[receipt](evidence/cached_generation_profile_20261105_summary.json) and
+[archive](archive/cached_generation_profile.md) preserve all payloads/callers,
+raw pstats, admissions and provider reproductions. Production runtime is unchanged.
+
+The 9.357 s instrumented call makes 22,672 quantity tests and 17,792 DEBUG
+PUW-DBG-PROBE-001 emissions. The nested probe branch takes 6.116 s cumulative;
+catalog configuration resolves the same provider path 17,792 times and calls
+lstat 213,504 times. Controls take 4.669/4.620 s. Nested rows are not additive shares
+or a measured speedup. Exclusive ownership is resolved from actual module roots,
+not from the repository name in ancestor paths. Two small independent provider
+reproductions confirm 100 warmed lookups cause 100 path resolutions/1,200 lstats;
+the SMonitor-only process imports neither PyUnitWizard nor PHMT.
+
+The generic proposals are now
+[PyUnitWizard #141](https://github.com/uibcdf/pyunitwizard/issues/141) and
+[SMonitor #63](https://github.com/uibcdf/smonitor/issues/63), with registered
+component labels. Their owners retain API/implementation/compatibility and
+publication. No local type blacklist, private cache, suppressed diagnostic,
+provider edit, scientific change, runtime optimization or floor is introduced.
+Broader #6 / audit item 16 stay partial; these proposals are not new 0.5.0 release gates.
+
+Resource admission initially refuses full-memory avg10=0.28. Preparation stays
+lightweight; later admission permits the one-CPU/1 GiB/no-swap/nice=19/idle-I/O
+scope with six thread settings one and RuntimeMax=180 s. Every call rechecks
+memory pressure. The profile scope ends normally; other processes and borrowed
+prefixes are untouched. Read-only suite refresh preserves the own ahead commit
+and clean PyUnitWizard/SMonitor clones 17/two commits behind fetched upstream.
+
+**Next:** receive a supported provider answer/delivery, then repeat this exact
+work and preserve result/error/unit/diagnostic semantics before any adoption.
+Continue independent PHMT contracts/science when useful; do not invent a
+downstream quantity/diagnostic replacement. #95's modern molecular public
+delivery and #9/#10/#23 source/installed/public gates remain independent.
+The real version plan/tag/Release stays 0.4.0; addon/publication remain deferred.
+Owner LMMV/dprada; capsule `build/phmt-generation-profile-20261105-70lnmli0`,
+review 2026-11-19 or relevant change. Final unskipped-head CI belongs to #9/#23;
+no continuing local profile worker is required.
+
 ## Cached-generation baseline measured with shared-machine limits — 2026-11-05
 
 [#97](https://github.com/uibcdf/pharmacophoremt/issues/97) executes audit item 16's
