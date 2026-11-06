@@ -1,12 +1,41 @@
 # Development Checkpoint
 
+## Explicit native aromatic-N profile received — 2026-11-06
+
+[#105](archive/receive_aromatic_nitrogen_receptor_directions.md) now adds the
+explicit donor_aromatic_carbonyl_aromatic_n_experimental profile, consuming
+MolSysMT models2/3 with native support/state/frame/unit checks and unchanged
+prior profiles. [Contract](public_cached_aromatic_n_generation.md) /
+[original receipt](evidence/cached_aromatic_n_20261106_summary.json) retain the
+two-case failing baseline, invocation correction,248 passing compatibility
+cases and final37 passing aromatic-N controls:250 unique selectors. Both passing
+runs have full producer/source/native/distribution-metadata equality and stable
+inputs. The unchanged HIS524 source yields two hypotheses/eight primary/two
+YAML recovery evaluations against declared analytical poses; source/candidate
+custody and actual attribution remain. No biological study is completed.
+
+**Next for #103:** admit the original assay methods/source pool/cohort and
+exposure/grouping policy before binding evaluation; receive provider preparation
+contracts (MolSysMT#323/#375/#447, applicable assessment) and freeze the complete
+study method only after those decisions. Review a second target by data quality,
+feasibility and scientific contrast. Do not repeat #66 access searches without a
+new authorized lead, tune on visible outcomes, silently drop required molecular
+families or implement provider operations here. Both studies remain open.
+
+Scientific phases remain serial/CPU19/1GiB/no swap/tasks32/nice19/idle I/O/
+threads1. Owned capsule build/phmt-aromatic-n-20261106-e8i9z7kj, LMMV/dprada,
+review2026-11-20 or relevant change; borrowed environments/provider sources and
+all original archives remain untouched. Source/installed/public/platform gates
+#9/#10/#23/#95 remain independent. Actual plan/tag/Release0.4.0; no publication.
+
+
 ## Receptor admission audited; next native aromatic-N receiving — 2026-11-06
 
 [#103](https://github.com/uibcdf/pharmacophoremt/issues/103) now has a [prepared-input/provider audit](receptor_preparation_admission_audit.md), [first-study admission protocol](receptor_study1_admission_protocol.md) and [original receipt](evidence/receptor_admission_audit_20261106_summary.json). Public MolSysMT reads the unchanged prepared artifact, reports readiness gaps, distinguishes five declared versus264 coordinate-derived CIP labels, and returns15 critical-region sites/16 directions. These are diagnostic observations, not biological validity or a completed study. GLU353 carboxylate directions remain unsupported; HIS524 aromatic-N geometry is already supplied. Source/input custody is intact. The first readiness run's strict metadata lookup equality fails while physical code/native identity is stable; the final direction run has full identity equality. Both original results and the first quantity-recording failure/correction are retained.
 
 [#104](https://github.com/uibcdf/pharmacophoremt/issues/104) removes direct CIF field traversal in the source-audit helper using an already available public getter. The original guard fails; the final nine-control module passes, preserving science/frame/unit/custody/blocked outcomes and the full historical chain map. The shared stager first refuses the old helper digest; its reviewed pin alone is updated, then both selected inventory/staging controls pass (58 other inputs unchanged). A first test-layout NameError is retained and corrected. Generic molecular work remains MolSysMT-owned; no provider code, molecular input, old result or public runtime API changes.
 
-**Next executable PHMT work:** [#105](pending_proposals/receive_aromatic_nitrogen_receptor_directions.md) designs and receives an explicit experimental aromatic-N profile from existing provider caches, keeping the current carbonyl profile stable. MolSysMT [#375](https://github.com/uibcdf/molsysmt/issues/375#issuecomment-6679894733) and [#323](https://github.com/uibcdf/molsysmt/issues/323#issuecomment-6679895720) now have concrete first-study handoffs. Source/data/preparation admission remains incomplete; #66's original-method/exposure gates cannot be replaced silently, and the second receptor is unselected. This is forward work toward both reproducible studies, not a narrower definition of completion.
+**Next executable PHMT work:** [#105](archive/receive_aromatic_nitrogen_receptor_directions.md) designs and receives an explicit experimental aromatic-N profile from existing provider caches, keeping the current carbonyl profile stable. MolSysMT [#375](https://github.com/uibcdf/molsysmt/issues/375#issuecomment-6679894733) and [#323](https://github.com/uibcdf/molsysmt/issues/323#issuecomment-6679895720) now have concrete first-study handoffs. Source/data/preparation admission remains incomplete; #66's original-method/exposure gates cannot be replaced silently, and the second receptor is unselected. This is forward work toward both reproducible studies, not a narrower definition of completion.
 
 Heavy phases run serially on CPU19/1GiB/no swap/32 tasks/nice19/idle I/O/threads1. Owned capsule `build/phmt-receptor-audit-20261106-5_32rtg8`, LMMV/dprada, review2026-11-20 or relevant change; all local scientific phases end before closeout. Existing full-source/installed/public/platform #9/#10/#23 and public molecular delivery/#95 stay separate. Actual release plan/tag/Release remains0.4.0; no publication or addon work.
 

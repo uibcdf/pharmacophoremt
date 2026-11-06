@@ -1,5 +1,18 @@
 # 0.5.0 post-review consolidation
 
+## Later experimental aromatic-N runtime delta — 2026-11-06
+
+#105 now receives native models2/3 through an explicit additional profile in
+three existing runtime files; textual public signatures, dependency/provider
+pins and the0.4.0 version plan remain unchanged. [Source receiving](public_cached_aromatic_n_generation.md)
+qualifies250 unique selected controls, including actual HIS524 cache consumption
+and analytical molecular witnesses. Prior source-review hashes remain historical.
+Any candidate including this later source must review its scope, migration notes
+and exact source/installed/public/platform evidence; the old fbe6677 review alone
+does not qualify it. This does not automatically require completing both #103
+studies or all of MolSysMT#375 before a consolidation release.
+
+
 ## Later private-helper delta — 2026-11-06
 
 The immutable review below retains its original fbe6677 runtime/source scope. [#104 receiving](receptor_preparation_admission_audit.md) subsequently changes one unshipped receptor helper and its declared test-support digest, preserving all58 other private inputs and the public runtime. Nine source controls and two selected shared-stager controls pass. This is a separate source/helper receipt, not a new candidate, artifact or biological result; #103/#105 scientific work has independent admission gates.

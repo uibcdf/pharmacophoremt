@@ -47,3 +47,13 @@ Inventory current ERalpha receptor-generation and screening evidence and disting
 Freeze scientific questions, receptor/preparation assumptions, chemical states, input identities, activity/negative-label definitions, selection/splits, leakage controls and comparison methods before evaluation. Declare direction/weight/radius/exclusion choices and keep construction/tuning separate from evaluation. Retain failures and original/evaluated cohort counts. Report measured performance, preparation sensitivity and appropriate uncertainty, including negative/inconclusive results. No favorable result is manufactured or required to hide a method limitation.
 
 Both bounded studies must be reproducible from frozen inputs/plans and identified compatible environments, with saved-model replay, actual attribution and original measured outputs in the existing validation collection. This supplies evidence toward an agreed classical 1.0 scope; it does not reserve a version/date, authorize publication or require the addon/dynamics/AI. Intermediate 0.x releases may continue through 0.10, 0.11 and later. Shared-host work remains serial and bounded, leaving RAM/CPUs to others.
+
+## Native aromatic-N source receiving — 2026-11-06
+
+#105 is resolved by the [explicit profile](../public_cached_aromatic_n_generation.md),
+with250 unique passing selected controls and actual MolSysMT cache/model/witness
+receiving. The older profiles remain compatible, and molecular work stays in
+MolSysMT. The two models/eight primary/two recovered analytical evaluations are
+not a binding study. Next admit original assay methods and cohort/exposure rules,
+resolve preparation/state/family decisions with their providers, and review the
+second receptor's data/feasibility; keep both full studies and #103 open.

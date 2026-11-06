@@ -289,3 +289,21 @@ molecular system. Default position-only features and `donor_aromatic_faces` rema
 available. See the [contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_carbonyl_generation.md)
 and [original carbonyl receiving case](../validation/carbonyl_acceptor_receiving.md)
 for scientific limits; this example is not biological validation.
+
+## Experimental aromatic-nitrogen acceptors
+
+Select `receptor_profile='donor_aromatic_carbonyl_aromatic_n_experimental'`
+explicitly to combine the same donor/ring choices with native carbonyl model2
+and aromatic-nitrogen model3 directions. Supply the same four acceptor options
+shown above. A defined model3 site yields one direction, whereas a carbonyl
+yields two separate alternatives. The older carbonyl profile keeps omitting
+model3; no default changes. Recognition and molecular geometry come from
+MolSysMT, and support atoms can lie outside the selected acceptor anchors.
+
+The [contract and original receiving evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_aromatic_n_generation.md)
+include real HIS524 receiving from the archived prepared receptor, literal
+geometric donor witnesses and native model recovery. These controls establish
+cache interpretation and pharmacophore construction. Carboxylates, nitrile
+directions, environmental H refinement and biological screening utility remain
+outside this experimental profile's qualification. Unsupported and undefined
+geometry stay explicit omissions; invalid caches fail before any hypothesis.

@@ -33,7 +33,7 @@ def _integers(value, shape=None):
     return values
 
 
-def _receive(inventory, cache, position):
+def _receive(inventory, cache, position, *, aromatic_n):
     _require(isinstance(cache, dict), "provide a native MolSysMT direction cache")
     _require(
         cache["schema"] == "molsysmt.hbond_site_directions@1"
@@ -208,6 +208,11 @@ def _receive(inventory, cache, position):
                 len(atoms) == 3 or np.all(statuses[:, site] == 2),
                 "defined carbonyl directions require plane support",
             )
+        if aromatic_n and models[site] == 3:
+            _require(
+                len(atoms) == 3,
+                "aromatic-nitrogen directions require anchor and two support atoms",
+            )
     directions = np.asarray(cache["directions"], dtype=float)
     _require(
         directions.ndim == 2
@@ -307,6 +312,7 @@ def _receive(inventory, cache, position):
         ]
         if key in sites
     }
+    admitted_models = {2, 3} if aromatic_n else {2}
     for index, feature in enumerate(inventory["features"]):
         if feature["kind"] != "hb acceptor":
             continue
@@ -329,12 +335,14 @@ def _receive(inventory, cache, position):
             source_structure_index=int(frames[position]),
             support_atom_indices=support[offsets[site] : offsets[site + 1]],
         )
-        if model != 2 or status != 1:
+        if model not in admitted_models or status != 1:
             reason = (
                 "unsupported_acceptor_geometry"
                 if model == 0
                 else "undefined_acceptor_geometry"
-                if model == 2
+                if model in admitted_models
+                else "outside_carbonyl_aromatic_n_profile"
+                if aromatic_n
                 else "outside_carbonyl_profile"
             )
             omitted[index] = dict(
@@ -373,10 +381,10 @@ def _receive(inventory, cache, position):
     return dict(admitted=admitted, omitted=omitted)
 
 
-def cached_carbonyl_choices(inventory, cache, position):
+def cached_acceptor_choices(inventory, cache, position, *, aromatic_n=False):
     """Receive versioned cached evidence; retain native causes on malformed input."""
     try:
-        return _receive(inventory, cache, position)
+        return _receive(inventory, cache, position, aromatic_n=aromatic_n)
     except ArgumentError:
         raise
     except (

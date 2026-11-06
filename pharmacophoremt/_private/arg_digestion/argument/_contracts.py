@@ -78,10 +78,11 @@ def digest_receptor_profile(obj):
     if not isinstance(obj, str) or obj not in {
         "donor_aromatic_faces",
         "donor_aromatic_carbonyl_experimental",
+        "donor_aromatic_carbonyl_aromatic_n_experimental",
     }:
         raise ArgumentError(
             argument="receptor_profile",
-            reason="explicitly choose donor_aromatic_faces or donor_aromatic_carbonyl_experimental",
+            reason="explicitly choose donor_aromatic_faces, donor_aromatic_carbonyl_experimental or donor_aromatic_carbonyl_aromatic_n_experimental",
         )
     return obj
 

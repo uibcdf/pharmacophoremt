@@ -1,5 +1,18 @@
 # Proposed 0.5.0 consolidation
 
+## Later experimental aromatic-N runtime delta — 2026-11-06
+
+#105 now receives native models2/3 through an explicit additional profile in
+three existing runtime files; textual public signatures, dependency/provider
+pins and the0.4.0 version plan remain unchanged. [Source receiving](public_cached_aromatic_n_generation.md)
+qualifies250 unique selected controls, including actual HIS524 cache consumption
+and analytical molecular witnesses. Prior source-review hashes remain historical.
+Any candidate including this later source must review its scope, migration notes
+and exact source/installed/public/platform evidence; the old fbe6677 review alone
+does not qualify it. This does not automatically require completing both #103
+studies or all of MolSysMT#375 before a consolidation release.
+
+
 Owner LMMV/dprada, [#95](https://github.com/uibcdf/pharmacophoremt/issues/95),
 2026-11-05. Proposed version, not a tag/release/package or publication decision.
 Use the [roadmap staircase](roadmap.md)

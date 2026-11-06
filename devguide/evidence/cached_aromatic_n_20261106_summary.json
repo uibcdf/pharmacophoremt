@@ -1,0 +1,218 @@
+{
+  "accepted_files": {
+    "devguide/README.md": "4489797f3c6a736026e7fb4f9cac49169aa68cfd64901dfe7b95925a8d964d5b",
+    "devguide/archive/README.md": "7c34adc2e4765ec33c00d8b2b2f68313b71f83dcb3f3cc858d4b72a58192c9e2",
+    "devguide/archive/receive_aromatic_nitrogen_receptor_directions.md": "6b414a5854a416e1d09cfab15ebed4f7b7d30fe4d8a52f1be24f33414117b0d6",
+    "devguide/checkpoint.md": "8fc8c1386ded214793b65b569975c9b67820bca8eedd9d80e599dee5693a63c7",
+    "devguide/pending_proposals/README.md": "50c449481fe9b0c27256b939e23bf878c2e826c25dbe478630d2d87edade358f",
+    "devguide/pending_proposals/qualify_receptor_screening_studies.md": "22f5c0cc6e19b9c541048040f4d66cca535b7836b9bf5891352f6c5ed5749030",
+    "devguide/public_cached_aromatic_n_generation.md": "e8389d21ce34ef7acfe625b9771e126ef894214d97260780ff5ac9ff359431dc",
+    "devguide/receptor_study1_admission_protocol.md": "904aa675d28b84ef56df042474ab58a5d0f1ba9ff0228eb8c7721cdc9fb181e3",
+    "devguide/release_0_5_0_post_review.md": "1ac961be17a88f4ac3ceadc78ae24b6ca68498cd96ea6cbe8bcd924d33c1d8c4",
+    "devguide/release_0_5_0_readiness.md": "33e5ce07888d8a384ecfcb22464bab2d5ba1fd075ad5fd4ce9e59f6314de4867",
+    "devguide/roadmap.md": "3a28fc6893503f7d584b80d1b65ff75c21ba631016f80613569ed52b0a73890c",
+    "docs/content/about/release_notes.md": "2468bad0fc6b48deba8ef384d4a850cfc58c18df7b5f3364b2bbce056b6655e1",
+    "docs/content/cookbook/structure_based_modeler.md": "dc4ca657cf5c37fbd26c0b3ab217f5cecda895b19903da8b2ffa7a61f1377592",
+    "docs/content/validation/prepared_receptor_workflow.md": "c523b1d68a7dabdb5e703cf2c34043b1765fb88b3d620d5e13be299798a97fda",
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": "b7755962de72099e53c307d6067e7222cef8a7978ce791a90aff5abf5c1ca1a0",
+    "pharmacophoremt/modeler/_receptor_directions.py": "fe40fe5c6022049ecadba178f954ba2b51177b96d52c1fced37c4ecd38123c1d",
+    "pharmacophoremt/modeler/receptor_generation.py": "3e89ae2999df4c9ebe2443bb08104a27a81d518db4bc4fac61edf0cb1594e350",
+    "tests/test_cached_aromatic_n_generation.py": "c05c29acb80ff96cad34a8141e403a1ff103a34020ce9203627ef5a8ef1a234f"
+  },
+  "administrative": {
+    "all_passed": true,
+    "commands": [
+      {
+        "args": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "name": "indexes_generate"
+      },
+      {
+        "args": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "indexes_check"
+      },
+      {
+        "args": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "name": "reporting"
+      },
+      {
+        "args": [
+          "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "name": "archive_tests"
+      },
+      {
+        "args": [
+          "/tmp/phmt69-fixed-20261103-q6cirii4/venv/bin/python",
+          "-s",
+          "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-aromatic-n-20261106-e8i9z7kj/distribution_controls.py"
+        ],
+        "exit_code": 0,
+        "name": "private_stager"
+      },
+      {
+        "args": [
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "name": "ruff"
+      },
+      {
+        "args": [
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "name": "format"
+      },
+      {
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "name": "whitespace"
+      }
+    ],
+    "recorded_at": "2026-11-06T08:39:45.975677+00:00",
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "limits": {
+        "cpu.max": "100000 100000",
+        "memory.max": "1073741824",
+        "memory.swap.max": "0",
+        "pids.max": "32"
+      },
+      "nice": 19,
+      "peak": "397336576\n"
+    }
+  },
+  "attempts": {
+    "baseline_registered": {
+      "cases": 2,
+      "errors": 0,
+      "failed": 2,
+      "skipped": 0
+    },
+    "final": {
+      "cases": 37,
+      "errors": 0,
+      "failed": 0,
+      "skipped": 0
+    },
+    "first": {
+      "cases": 248,
+      "errors": 0,
+      "failed": 0,
+      "skipped": 0
+    }
+  },
+  "capsule": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-aromatic-n-20261106-e8i9z7kj",
+  "docs": {
+    "assets": 2,
+    "code_execution": "off",
+    "source_documents": 62,
+    "strict_exit_code": 0
+  },
+  "full_evidence": {
+    "compressed_bytes": 466692,
+    "compressed_sha256": "5f84f3a3d98ec1ba34741d02bdb4313cb758d7445eb53ebe0e5aeea6f73c11f7",
+    "path": "cached_aromatic_n_20261106.json.gz",
+    "uncompressed_bytes": 3729951,
+    "uncompressed_sha256": "a2ef35b9f36f7f83436921647634708626db778162265b973f24e6a60aafac22"
+  },
+  "future_work": "#103 original methods/source/cohort and preparation admission, complete runnable study and second target. Provider #323/#375/#447 and #9/#10/#23/#95 exact-source/installed/public/platform gates retain their scope.",
+  "issues": [
+    103,
+    105
+  ],
+  "method": "cached_receptor_donor_aromatic_carbonyl_aromatic_n@1",
+  "molecular_operations_owner": "molsysmt",
+  "native_control": {
+    "fit_arrays": [
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "interpretation": "Deliberately exposed analytical witnesses, not biological binding evidence.",
+    "models": 2,
+    "primary_evaluations": 8,
+    "recovery_evaluations": 2,
+    "source_candidate_custody_unchanged": true
+  },
+  "new_package_tag_or_release": false,
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "profile": "donor_aromatic_carbonyl_aromatic_n_experimental",
+  "public_release_plan_unchanged": "0.4.0",
+  "reconstruction_limits": "Final runtime/test/declaration bytes are retained exactly; first/final runtime hashes agree. The earlier 35-case untracked test revision has its hash, JUnit and original observations but its entire pre-amendment source body was not retained. Do not claim byte-exact reconstruction of that earlier test overlay from Git head alone. Startup duplicate-plugin refusal precedes tests and retains a bounded projection, not a scientific result.",
+  "recorded_at": "2026-11-06T08:41:17.991324+00:00",
+  "removed_paths_relocated_to_archive": [
+    "devguide/pending_proposals/receive_aromatic_nitrogen_receptor_directions.md"
+  ],
+  "resources": {
+    "backend_threads": 1,
+    "cpu": 19,
+    "cpu_quota": "100%",
+    "heavy_phases": "serial",
+    "io": "idle",
+    "memory_max_bytes": 1073741824,
+    "nice": 19,
+    "swap_max_bytes": 0,
+    "tasks_max": 32
+  },
+  "review_by": "2026-11-20 or relevant source/provider change",
+  "schema": "pharmacophoremt.cached-aromatic-n-receiving.v1",
+  "scope": "Explicit experimental source API receiving, algebraic placement/matching, native prepared HIS524 cache and literal molecular donor witnesses. No biological cohort/study, benchmark, full suite/platform, clean installed or public artifact qualification.",
+  "source_head_before": "c4c31a89a61d1555780f3d135e3dab5be79f4d96",
+  "strict_provider_source_native_metadata_and_input_stability": true,
+  "unique_passing_selectors": 250
+}

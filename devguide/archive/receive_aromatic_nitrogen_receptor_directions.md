@@ -1,13 +1,13 @@
 ---
 summary: Receive already defined native aromatic-nitrogen acceptor directions in an explicit receptor profile.
 issue: uibcdf/pharmacophoremt#105
-status: open
+status: resolved
 opened: 2026-11-06
-closed:
+closed: 2026-11-06
 verification: measured
 area: [modeling, receptor, integration]
-guard:
-normative: devguide/receptor_study1_admission_protocol.md
+guard: tests/test_cached_aromatic_n_generation.py
+normative: devguide/public_cached_aromatic_n_generation.md
 blocked_by: []
 supersedes: []
 ---
@@ -27,3 +27,21 @@ Use a real provider aromatic-N cache plus independent feature-cloud construction
 ## Scope and acceptance
 
 This is pharmacophore interpretation/construction of existing provider output. It can progress independently of new carboxylate geometry; MolSysMT#375 owns that different gap, and #323 owns environmental H refinement. Do not treat unsupported GLU353 sites, wider models or biological utility as delivered by this slice. The full first-study preparation/data/method gates remain pending in the [admission protocol](../receptor_study1_admission_protocol.md). No activity tuning, new score claim, public package or release-floor decision follows.
+
+## Resolution — 2026-11-06
+
+The explicit donor_aromatic_carbonyl_aromatic_n_experimental source profile
+receives native models2/3 without broadening either previous profile. It validates
+three-atom aromatic-N support and one-direction correspondence, delegates all
+molecular work, and reuses bounded product construction/exclusions/persistence.
+250 unique selected controls pass across248-case compatibility and final37-case
+receiving scopes, with strict provider/source/native/metadata/input stability.
+The native case retains two models/eight primary/two recovered analytical
+evaluations, original credit and unchanged receptor/candidate custody.
+
+The module guard protects placement, opposite/absent geometry, mixed products,
+budgets, support/cardinality/context/units, cached-only access, exclusions,
+optional credit and recovery. [Contract](../public_cached_aromatic_n_generation.md)
+and [original receipt](../evidence/cached_aromatic_n_20261106_summary.json)
+retain all attempts and limits. This resolves the bounded source consumer slice;
+#103 biological studies and provider/public-delivery gates remain unfinished.

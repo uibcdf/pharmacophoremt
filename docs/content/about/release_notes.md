@@ -10,6 +10,16 @@ The exact release candidate, version plan and installed/public qualification
 remain pending under [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
 Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
+### Later development after the reviewed snapshot
+
+#105 adds the explicitly selected
+`donor_aromatic_carbonyl_aromatic_n_experimental` profile: native model2 carbonyl
+and model3 aromatic-N alternatives, preserving the older profiles. Its
+[contract and receiving](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_aromatic_n_generation.md)
+include analytical controls and real HIS524 cache consumption. This later source
+delta needs exact candidate/scope review under #95; it does not freeze0.5.0 or
+qualify biological utility or public provider delivery.
+
 ### New capabilities since 0.4.0
 
 - **Bounded cached receptor generation:** `modeler.from_receptor_features`

@@ -238,3 +238,17 @@ and analytical limits remain distinct from the historical controls above.
 The separate [prepared-state audit](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_preparation_admission_audit.md), [receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/receptor_admission_audit_20261106_summary.json) and [first-study admission protocol](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/receptor_study1_admission_protocol.md) under #103 reuse these unchanged native bytes without repeating preparation, optimization or scoring. Public MolSysMT supplies readiness/CIP diagnostics and15 critical-region sites/16 directional records. GLU353 side-chain directions remain unsupported; HIS524 aromatic-N receiving is a separate PHMT proposal. These observations do not make the historical fragment assay-matched, environment-refined or biologically validated.
 
 Source custody and physical producers remain stable. The first diagnostic run's strict distribution-metadata equality fails and is retained; the final direction run has full identity equality. Quantities use verified PyUnitWizard records, actual credits are archived, and original attempts are preserved. No runtime/memory superiority, whole-library/platform/installed/public qualification or new activity cohort follows. The original case/scientific results above remain unchanged.
+
+## Native aromatic-N construction receiving — 2026-11-06
+
+The subsequent [explicit-profile receiving](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_aromatic_n_generation.md)
+and [original outputs](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/cached_aromatic_n_20261106_summary.json)
+under #105 consume the already defined HIS524 direction. Two explicit-distance
+hypotheses give the declared [1,0,0,0]/[0,0,1,0] fit arrays over four literal
+indexed-D/O witness poses, with two successful YAML recovery evaluations. All
+molecular construction/recognition is performed by MolSysMT; receptor and
+candidate custody remain exact. These are exposed analytical controls for
+geometry, orientation and persistence, not binding evidence or assay-matched
+preparation. The older carbonyl profile still omits model3. Both selected source
+runs retain full provider/native/metadata equality; no installed/public or whole
+library qualification follows.

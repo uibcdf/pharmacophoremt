@@ -28,13 +28,15 @@ from pharmacophoremt._private.arg_digestion.receptor_generation import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
-from ._receptor_directions import cached_carbonyl_choices
+from ._receptor_directions import cached_acceptor_choices
 from .excluded_volumes import _attach_receptor_exclusions, _receptor_exclusions
 from .receptor_projections import from_receptor_projections
 
 METHOD = "cached_receptor_donor_aromatic_faces@1"
 CARBONYL_METHOD = "cached_receptor_donor_aromatic_carbonyl@1"
 CARBONYL_PROFILE = "donor_aromatic_carbonyl_experimental"
+AROMATIC_N_METHOD = "cached_receptor_donor_aromatic_carbonyl_aromatic_n@1"
+AROMATIC_N_PROFILE = "donor_aromatic_carbonyl_aromatic_n_experimental"
 
 
 def _choices(
@@ -42,20 +44,21 @@ def _choices(
     donor_distances,
     aromatic_distances,
     *,
-    carbonyl=None,
+    acceptors=None,
     acceptor_distances=None,
+    acceptor_label="carbonyl",
     method=METHOD,
 ):
     options, omitted = [], []
     for index, record in enumerate(inventory["features"]):
         kind = record["kind"]
-        if kind == "hb acceptor" and carbonyl is not None:
-            if index in carbonyl["omitted"]:
-                omitted.append(carbonyl["omitted"][index])
+        if kind == "hb acceptor" and acceptors is not None:
+            if index in acceptors["omitted"]:
+                omitted.append(acceptors["omitted"][index])
                 continue
             choices = []
             for distance_index, distance in enumerate(acceptor_distances):
-                for row in carbonyl["admitted"][index]:
+                for row in acceptors["admitted"][index]:
                     axis = puw.quantity(row["axis"], "dimensionless")
                     choice = dict(
                         feature_index=index,
@@ -70,7 +73,7 @@ def _choices(
                         projection_direction=axis,
                         target_direction=-axis,
                         distance=choice["distance"],
-                        label=f"feature {index}, distance {distance_index}, carbonyl direction {row['local_direction_index']}",
+                        label=f"feature {index}, distance {distance_index}, {acceptor_label} direction {row['local_direction_index']}",
                         evidence=dict(
                             method=method,
                             choice=choice,
@@ -159,10 +162,14 @@ def from_receptor_features(
     feature_inventory : dict
         Native get_features result for one explicitly prepared region, structure
         and chemical state. Cached origin/frame claims remain caller declarations.
-    receptor_profile : {'donor_aromatic_faces', 'donor_aromatic_carbonyl_experimental'}
+    receptor_profile : str
         Required scientific choice. Every indexed donor emits a spherical ligand
         acceptor along its cached D→H direction. Every aromatic ring emits a Disk
         on either face, with the cached ring axis explicitly used as target axis.
+        'donor_aromatic_faces' admits these two families only.
+        'donor_aromatic_carbonyl_experimental' adds native model2 carbonyls.
+        'donor_aromatic_carbonyl_aromatic_n_experimental' explicitly adds model3
+        aromatic-nitrogen acceptors alongside model2. Neither admits model4.
     donor_distances, aromatic_distances : list or tuple of length quantities
         Nonempty positive finite scalar choices with explicit units, in caller
         order. Both lists are required even if a family is absent. Repeated
@@ -180,7 +187,7 @@ def from_receptor_features(
         physical radii, hypothesis pruning or a steric calculation here.
     acceptor_directions : dict, optional
         Required native MolSysMT hbond_site_directions@1 cache for the experimental
-        carbonyl profile; ideal_local_geometry/smarts_donor_acceptor, pbc=False.
+        acceptor profiles; ideal_local_geometry/smarts_donor_acceptor, pbc=False.
         Original recognition/source/state and native origins must match the
         feature cache. This does not authenticate molecular source coordinates.
     acceptor_structure_position : int, optional
@@ -191,6 +198,7 @@ def from_receptor_features(
     acceptor_target_orientation : {'towards_receptor'}, optional
         Required explicit hypothesis rule: donor target axis -u for provider
         direction u. The two carbonyl lobes produce separate hypotheses.
+        An admitted aromatic nitrogen contributes one native direction.
         These four options must be None with the original profile.
     name : str, optional
         Model-name prefix; deterministic enumeration indices are appended.
@@ -257,7 +265,9 @@ def from_receptor_features(
     acceptor_target_orientation = digest_acceptor_target_orientation(
         acceptor_target_orientation
     )
-    experimental = receptor_profile == CARBONYL_PROFILE
+    aromatic_n = receptor_profile == AROMATIC_N_PROFILE
+    experimental = receptor_profile in {CARBONYL_PROFILE, AROMATIC_N_PROFILE}
+    family = "carbonyl/aromatic-N" if aromatic_n else "carbonyl"
     optional = [
         acceptor_directions,
         acceptor_structure_position,
@@ -267,27 +277,33 @@ def from_receptor_features(
     if experimental and any(value is None for value in optional):
         raise ArgumentError(
             argument="receptor_profile",
-            reason="experimental carbonyl generation requires a native direction cache, explicit structure position, acceptor distances and target orientation",
+            reason=f"experimental {family} generation requires a native direction cache, explicit structure position, acceptor distances and target orientation",
         )
     if not experimental and any(value is not None for value in optional):
         raise ArgumentError(
             argument="receptor_profile",
             reason="acceptor options require the explicitly selected experimental carbonyl profile",
         )
-    carbonyl = (
-        cached_carbonyl_choices(
-            feature_inventory, acceptor_directions, acceptor_structure_position
+    acceptors = (
+        cached_acceptor_choices(
+            feature_inventory,
+            acceptor_directions,
+            acceptor_structure_position,
+            aromatic_n=aromatic_n,
         )
         if experimental
         else None
     )
-    method = CARBONYL_METHOD if experimental else METHOD
+    method = (
+        AROMATIC_N_METHOD if aromatic_n else CARBONYL_METHOD if experimental else METHOD
+    )
     options, omitted = _choices(
         feature_inventory,
         donor_distances,
         aromatic_distances,
-        carbonyl=carbonyl,
+        acceptors=acceptors,
         acceptor_distances=acceptor_distances,
+        acceptor_label="acceptor" if aromatic_n else "carbonyl",
         method=method,
     )
     excluded = _receptor_exclusions(
@@ -303,7 +319,9 @@ def from_receptor_features(
         remaining=total - count,
         max_hypotheses=budget,
         complete=complete,
-        order="inventory feature; distance; aromatic +1/-1 face; provider carbonyl local direction; rightmost feature fastest"
+        order="inventory feature; distance; aromatic +1/-1 face; provider acceptor local direction; rightmost feature fastest"
+        if aromatic_n
+        else "inventory feature; distance; aromatic +1/-1 face; provider carbonyl local direction; rightmost feature fastest"
         if experimental
         else "inventory feature; distance; aromatic +1/-1 face; rightmost feature fastest",
     )
@@ -375,7 +393,9 @@ def from_receptor_features(
         report["acceptor_directions"] = detached(acceptor_directions)
         report["criteria"].update(
             experimental=True,
-            acceptor_model="provider carbonyl_trigonal model2/status1 only",
+            acceptor_model="provider carbonyl_trigonal model2 or aromatic_nitrogen_bisector model3/status1 only"
+            if aromatic_n
+            else "provider carbonyl_trigonal model2/status1 only",
             acceptor_target_orientation="explicit towards_receptor hypothesis (-u)",
             cache_consistency="declared source context; not molecular-source authentication",
         )
