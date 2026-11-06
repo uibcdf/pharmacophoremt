@@ -39,6 +39,21 @@ plan and candidate gates deliberately. #9 owns exact-head hosted recovery;
 package is delivered, publish the requested version-specific MolSysSuite notice.
 #95 tracks next-candidate readiness; this does not authorize publication now.
 
+## Cached-generation computational baseline — 2026-11-05
+
+[#97](https://github.com/uibcdf/pharmacophoremt/issues/97) executes the
+[frozen scaling protocol](cached_generation_scaling_protocol.md): ten synthetic
+cached donor/ring/exclusion workloads, 20 serial workers, 50 timing and ten
+separate traced-allocation samples. All 80 warmup/measured calls agree with
+independent geometry/order/coverage and cache/identity controls. The
+[case](../docs/content/validation/cached_generation_scaling.md) retains all samples
+and their shared-host limits. Standard OS enforcement bounds the whole run to
+one CPU/1GiB/no swap/low priority, honoring the maintainer's resource instruction
+now retained in root AGENTS.md. No molecular operation or production optimization.
+Audit16 remains partial: next scope a fixed-workload profile before choosing a
+performance change. #95's provider public delivery and exact-candidate gates stay
+pending; this baseline adds no release requirement or mandatory CI benchmark.
+
 ## Public closure measured; modern delivery pending — 2026-11-05
 
 [#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has an executed

@@ -14,7 +14,7 @@ They do not rerun scientific calculations.
 | Scientific preparation/workflow controls | [Prepared CCD EST/DES case](prepared_ccd.md); [cached ERα receptor controls](prepared_receptor_workflow.md) and [prespecified sensitivity](prepared_receptor_workflow.md#prepared-receptor-sensitivity-extension); [ERα training gates and frozen consensus](esr1_consensus_comparison.md) | Original unavailable-input stop and separate ready training query; no held-out evaluation or biological binding acceptance |
 | Retrospective screening | [Frozen ERα assay and binary development replay](esr1_activity_pilot.md); [paired frozen-reference/consensus evaluation](esr1_consensus_comparison.md); [validation recipe](../cookbook/retrospective_validation.md) | Paired AUC 0.485/0.553 on 45 common inputs, 19 unscored; descriptive same-assay evidence without chemical-series/predictive qualification |
 | Vertical pilot | [Declared ERα interface](../cookbook/prepared_eralpha_interface.md) and [diagnostic evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/eralpha_interaction_diagnostics.md) | Environmental hydrogen refinement and biological acceptance remain open |
-| Computational benchmarks | [Rigid strategy comparison](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rigid_strategy_comparison.md), [refinement comparisons](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rigid_refinement_workflow.md#expanded-validation-and-measurement-contract) | Scoped analytical workloads with original timing/memory records |
+| Computational benchmarks | [Cached receptor-generation scaling](cached_generation_scaling.md), [rigid strategy comparison](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rigid_strategy_comparison.md), [refinement comparisons](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rigid_refinement_workflow.md#expanded-validation-and-measurement-contract) | Scoped analytical workloads with original timing/memory records; cached generation uses one CPU and separate traced-allocation samples |
 
 These classes remain distinct. Returned hypotheses and geometric coverage do
 not establish affinity, activity, binding modes or prospective enrichment.
@@ -34,6 +34,7 @@ receptor_contribution
 tyr_cardinality
 carbonyl_acceptor_receiving
 public_carbonyl_generation
+cached_generation_scaling
 esr1_activity_pilot
 esr1_consensus_comparison
 ```

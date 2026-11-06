@@ -1,0 +1,466 @@
+{
+  "schema": "pharmacophoremt.cached-generation-scaling-receiving@1",
+  "recorded_at_utc": "2026-11-06T01:33:49.244184+00:00",
+  "owner": "LMMV/dprada",
+  "issue": "uibcdf/pharmacophoremt#97",
+  "helper_commit": "d2fc819929a93fe0273c7b2b68e0ff9d27d708a2",
+  "runtime_source": "9c163654375c5933be6400282105b89376f03578",
+  "scope": "Synthetic cached PHMT donor/ring protocol scaling; source baseline in borrowed public dependency prefix, no molecular operations/artifact/new public installation/full release or biological qualification",
+  "plan_sha256": "c60372071eb89aa20133c2964cfd0eff67ea12591f94d8c4589205c859b9d088",
+  "driver_sha256": "165b6ddc6feca62b0004d0f2aad66bd8f334af008a19e077fb7b6289e3333d84",
+  "actual_runtime": {
+    "pharmacophoremt": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/source/pharmacophoremt/__init__.py",
+      "distribution_version": "0.4.0+103.g9c16365",
+      "module_version": "0.4.0+103.g9c16365",
+      "direct_url": {
+        "dir_info": {
+          "editable": true
+        },
+        "url": "file:///home/liliana/repos%40uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/source"
+      },
+      "file_count": 140,
+      "file_tree_sha256": "c0bccac1602f598af0a2b9878ada23aa7f2778ae0fa759cf3accc2a1c4af94bc",
+      "native_files": {}
+    },
+    "numpy": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/numpy/__init__.py",
+      "distribution_version": "2.5.4",
+      "module_version": "2.5.4",
+      "direct_url": {
+        "archive_info": {
+          "hash": "sha256=7d3822dd8936e8f8f32ba03258b6a976ffeb298548df99098c8ea8f9232b53a5",
+          "hashes": {
+            "sha256": "7d3822dd8936e8f8f32ba03258b6a976ffeb298548df99098c8ea8f9232b53a5"
+          }
+        },
+        "url": "file:///home/conda/feedstock_root/build_artifacts/bld/rattler-build_numpy_1791675316/work/dist/numpy-2.5.4-cp314-cp314-linux_x86_64.whl"
+      },
+      "file_count": 426,
+      "file_tree_sha256": "7394b39c55ca8044badf06c5947bf584fd3526b4a1f3ad0b6b3fd98f955560d4",
+      "native_files": {
+        "_core/_multiarray_tests.cpython-314-x86_64-linux-gnu.so": "bb082814d2438d8752f53f4d1f8aecaacb40d80fe96463ed55925ba0c0b6036d",
+        "_core/_multiarray_umath.cpython-314-x86_64-linux-gnu.so": "4a0334365bad8c180820b6bd5a0f08ee954486142a4efc3fabde4206ab293872",
+        "_core/_operand_flag_tests.cpython-314-x86_64-linux-gnu.so": "155b667d71cd8ae24018476963e07db04525f66174f85012d6f9fb6a25346a56",
+        "_core/_rational_tests.cpython-314-x86_64-linux-gnu.so": "ce890908a318a9c6e56eef1e1a34b11ee8b3ab5964db1344760a7975fb524bc6",
+        "_core/_simd.cpython-314-x86_64-linux-gnu.so": "2933f2e3fdcbd78b21c02d0e1f442c08eea9d31f4a0c44ca33ca552003a7c629",
+        "_core/_struct_ufunc_tests.cpython-314-x86_64-linux-gnu.so": "ca9b75edca41f077a1aa59de5c8627c7954b5af0decfdd4eddf00a8c7c2191c7",
+        "_core/_umath_tests.cpython-314-x86_64-linux-gnu.so": "cef5369931f579aa69cbf3b69b6983c70f3166c8d220887eb0f3656275c01534",
+        "fft/_pocketfft_umath.cpython-314-x86_64-linux-gnu.so": "4d157e72109ff3946d8de2f630e5e15c5e3b099690008bd2f6dbb849f7e96380",
+        "linalg/_umath_linalg.cpython-314-x86_64-linux-gnu.so": "19fdd9e6fd4328481fad3550a409e74b5f0ec337a9864710777167de5915ce44",
+        "linalg/lapack_lite.cpython-314-x86_64-linux-gnu.so": "927c502807fa2173573514437455e13cb23fcf5205217bdfedaf4cb5b0423d65",
+        "random/_bounded_integers.cpython-314-x86_64-linux-gnu.so": "1b097abd2cfeb01fab793bf47e00fb51a354d150dbe2f322ee1a274677761050",
+        "random/_common.cpython-314-x86_64-linux-gnu.so": "fb8b6ab2d866995e34812fc01d105e8e02036b0dd4667ccd1957c3601e8210de",
+        "random/_generator.cpython-314-x86_64-linux-gnu.so": "49a4e933f712ccf8c9cc567b0e2cd1a48439415152b91da00d83213a05ffa14b",
+        "random/_mt19937.cpython-314-x86_64-linux-gnu.so": "1fbb9361c048d6140d9e229d5c0489ee4c490e0704c599541f554ca7cf0c8723",
+        "random/_pcg64.cpython-314-x86_64-linux-gnu.so": "c31d97c689117dff82786dea4dddabfd2fde0f6396ce74dc1fcd9c9d6bef062d",
+        "random/_philox.cpython-314-x86_64-linux-gnu.so": "bc643df79f0056e971b031628ee9c10f5947b150f8e4f48784e5d397512ac086",
+        "random/_sfc64.cpython-314-x86_64-linux-gnu.so": "4df0e899fe72c830cc43393a99bc92a4b1aad9f4013bb4f34d3641350ec7fb4f",
+        "random/bit_generator.cpython-314-x86_64-linux-gnu.so": "25a248fe09b0bbcb54492b82815d20d9677c671b916462697a1042ab22ecd797",
+        "random/mtrand.cpython-314-x86_64-linux-gnu.so": "81870f8a4d0efc3517e0b0a418f1118c34accfcdd32868f403367eb7fe9612c4"
+      }
+    },
+    "pyunitwizard": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/pyunitwizard/__init__.py",
+      "distribution_version": "0.29.0",
+      "module_version": "0.29.0",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/pyunitwizard_1792785130617/work"
+      },
+      "file_count": 92,
+      "file_tree_sha256": "1a0a32ebba6c5c61ee5584f9baabca1cc51f4d26a3656891107e3aba5022e8f8",
+      "native_files": {}
+    },
+    "argdigest": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/argdigest/__init__.py",
+      "distribution_version": "0.17.1",
+      "module_version": "0.17.1",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/miniconda3/envs/noarch-publisher/conda-bld/argdigest_1793907682986/work"
+      },
+      "file_count": 39,
+      "file_tree_sha256": "63613d53c03aaaf6750d04b0234c9c6539b902635d4f52350029856766090189",
+      "native_files": {}
+    },
+    "smonitor": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/smonitor/__init__.py",
+      "distribution_version": "0.22.1",
+      "module_version": "0.22.1",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/smonitor_1793848904034/work"
+      },
+      "file_count": 41,
+      "file_tree_sha256": "ed6b6ca950c02cd5422052c616a6213d2286b44facf89df82ae7772bbb57f948",
+      "native_files": {}
+    },
+    "depdigest": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/depdigest/__init__.py",
+      "distribution_version": "0.15.2",
+      "module_version": "0.15.2",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/depdigest_1793913284602/work"
+      },
+      "file_count": 17,
+      "file_tree_sha256": "f6b8862f46221aa767302a19e22a54e51eb6fef09cda622026623b5d53dd141b",
+      "native_files": {}
+    },
+    "molsysmt": {
+      "file": "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-closure-20261105-t9gy9lgj/envs/phmt-public-20261105-t9gy9lgj/lib/python3.14/site-packages/molsysmt/__init__.py",
+      "distribution_version": "0.23.0",
+      "module_version": "0.23.0",
+      "direct_url": {
+        "dir_info": {},
+        "url": "file:///home/runner/micromamba/envs/build/conda-bld/molsysmt_1791322528917/work"
+      },
+      "file_count": 2852,
+      "file_tree_sha256": "9015f6a2be7207f5a6bd958d4a57de88dea52d332c99acef14ecad08878b8d08",
+      "native_files": {
+        "_rust.abi3.so": "fb07932ca17b75f1edbcfda5e290434243568d69e06ccab11263878c611a8103"
+      }
+    }
+  },
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "platform": "Linux-7.0.0-38-generic-x86_64-with-glibc2.43",
+  "resources": {
+    "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt97-benchmark-20261105-t3nuhxu8.scope",
+    "pid": 4043595,
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io_priority": "idle",
+    "limits": {
+      "cpu.max": "100000 100000",
+      "memory.max": "1073741824",
+      "memory.swap.max": "0",
+      "pids.max": "32"
+    },
+    "thread_environment": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "NUMBA_NUM_THREADS": "1",
+      "RAYON_NUM_THREADS": "1"
+    }
+  },
+  "counts": {
+    "cells": 10,
+    "workers": 20,
+    "timing_samples": 50,
+    "allocation_samples": 10,
+    "warmup_calls": 20,
+    "all_calls": 80,
+    "unique_guard_passes": 24
+  },
+  "identity_stable_all_workers": true,
+  "all_oracles_caches_policies_agree": true,
+  "results": [
+    {
+      "case": {
+        "id": "size_1_1",
+        "donors": 1,
+        "rings": 1,
+        "exclusions": 0,
+        "budget": 8
+      },
+      "total_possible": 8,
+      "returned": 8,
+      "remaining": 0,
+      "complete": true,
+      "sites_per_model": 2,
+      "geometry_order_sha256": "62005e48ee95e5bc381ba408324d1ce1ef138c6457786992a99daa6e26f914a6",
+      "elapsed_seconds": [
+        0.5219925029668957,
+        0.5216552738565952,
+        0.5265734598506242,
+        0.6456423162017018,
+        0.52406644099392
+      ],
+      "min_seconds": 0.5216552738565952,
+      "median_seconds": 0.52406644099392,
+      "max_seconds": 0.6456423162017018,
+      "traced_current_bytes": 588468,
+      "traced_peak_bytes": 621497
+    },
+    {
+      "case": {
+        "id": "size_2_2",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 0,
+        "budget": 8
+      },
+      "total_possible": 64,
+      "returned": 8,
+      "remaining": 56,
+      "complete": false,
+      "sites_per_model": 4,
+      "geometry_order_sha256": "fc51a4c42f1b95b1ed00ac7c57f1c679e5ac26d969402c21ac50a84e5512f979",
+      "elapsed_seconds": [
+        1.024038861040026,
+        1.0306445250753313,
+        1.497301350114867,
+        1.0142097969073802,
+        1.02087502903305
+      ],
+      "min_seconds": 1.0142097969073802,
+      "median_seconds": 1.024038861040026,
+      "max_seconds": 1.497301350114867,
+      "traced_current_bytes": 996389,
+      "traced_peak_bytes": 1054257
+    },
+    {
+      "case": {
+        "id": "size_4_4",
+        "donors": 4,
+        "rings": 4,
+        "exclusions": 0,
+        "budget": 8
+      },
+      "total_possible": 4096,
+      "returned": 8,
+      "remaining": 4088,
+      "complete": false,
+      "sites_per_model": 8,
+      "geometry_order_sha256": "d4e464392f2360d5c2ba071f08e2e171645ef212e4c29bc815495ac0d1c55627",
+      "elapsed_seconds": [
+        3.335282376036048,
+        4.0972873729187995,
+        1.8360423401463777,
+        3.1959683620370924,
+        2.074264844181016
+      ],
+      "min_seconds": 1.8360423401463777,
+      "median_seconds": 3.1959683620370924,
+      "max_seconds": 4.0972873729187995,
+      "traced_current_bytes": 1811317,
+      "traced_peak_bytes": 1920549
+    },
+    {
+      "case": {
+        "id": "size_8_8",
+        "donors": 8,
+        "rings": 8,
+        "exclusions": 0,
+        "budget": 8
+      },
+      "total_possible": 16777216,
+      "returned": 8,
+      "remaining": 16777208,
+      "complete": false,
+      "sites_per_model": 16,
+      "geometry_order_sha256": "e534bc1daba03433707b03f87545068a64daa3274f52f19ce930d1a36eeb3b3e",
+      "elapsed_seconds": [
+        3.814928767969832,
+        3.7625644360668957,
+        3.953514830209315,
+        4.310892410809174,
+        5.123241886962205
+      ],
+      "min_seconds": 3.7625644360668957,
+      "median_seconds": 3.953514830209315,
+      "max_seconds": 5.123241886962205,
+      "traced_current_bytes": 3436855,
+      "traced_peak_bytes": 3648829
+    },
+    {
+      "case": {
+        "id": "budget_0",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 0,
+        "budget": 0
+      },
+      "total_possible": 64,
+      "returned": 0,
+      "remaining": 64,
+      "complete": false,
+      "sites_per_model": 4,
+      "geometry_order_sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "elapsed_seconds": [
+        0.021577560110017657,
+        0.020288235042244196,
+        0.020574287977069616,
+        0.020824757171794772,
+        0.020617966074496508
+      ],
+      "min_seconds": 0.020288235042244196,
+      "median_seconds": 0.020617966074496508,
+      "max_seconds": 0.021577560110017657,
+      "traced_current_bytes": 64824,
+      "traced_peak_bytes": 84998
+    },
+    {
+      "case": {
+        "id": "budget_1",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 0,
+        "budget": 1
+      },
+      "total_possible": 64,
+      "returned": 1,
+      "remaining": 63,
+      "complete": false,
+      "sites_per_model": 4,
+      "geometry_order_sha256": "4d91cb60a3a768b21cb07c0bc7d7058081479b92d6ff14db6797ef2676b81ef8",
+      "elapsed_seconds": [
+        0.15503948903642595,
+        0.14754736796021461,
+        0.15076493099331856,
+        0.13839568896219134,
+        0.13700791611336172
+      ],
+      "min_seconds": 0.13700791611336172,
+      "median_seconds": 0.14754736796021461,
+      "max_seconds": 0.15503948903642595,
+      "traced_current_bytes": 197741,
+      "traced_peak_bytes": 222662
+    },
+    {
+      "case": {
+        "id": "budget_32",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 0,
+        "budget": 32
+      },
+      "total_possible": 64,
+      "returned": 32,
+      "remaining": 32,
+      "complete": false,
+      "sites_per_model": 4,
+      "geometry_order_sha256": "abaf173d99aa0a4e3f6774a70ef5489bfc9f9e85df01f580041832e523c58523",
+      "elapsed_seconds": [
+        4.249768329085782,
+        4.217199792852625,
+        3.996514997910708,
+        5.657907148823142,
+        4.038232822902501
+      ],
+      "min_seconds": 3.996514997910708,
+      "median_seconds": 4.217199792852625,
+      "max_seconds": 5.657907148823142,
+      "traced_current_bytes": 3695820,
+      "traced_peak_bytes": 3877651
+    },
+    {
+      "case": {
+        "id": "budget_64",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 0,
+        "budget": 64
+      },
+      "total_possible": 64,
+      "returned": 64,
+      "remaining": 0,
+      "complete": true,
+      "sites_per_model": 4,
+      "geometry_order_sha256": "5c773544e619cbc5ac8e6a4dfae3aa38579b3e4c71f33e1242a02b68d6b158d5",
+      "elapsed_seconds": [
+        8.77134459791705,
+        8.326355600031093,
+        8.466556021943688,
+        8.863062842050567,
+        8.526692752027884
+      ],
+      "min_seconds": 8.326355600031093,
+      "median_seconds": 8.526692752027884,
+      "max_seconds": 8.863062842050567,
+      "traced_current_bytes": 7289082,
+      "traced_peak_bytes": 7636525
+    },
+    {
+      "case": {
+        "id": "exclusions_16",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 16,
+        "budget": 8
+      },
+      "total_possible": 64,
+      "returned": 8,
+      "remaining": 56,
+      "complete": false,
+      "sites_per_model": 20,
+      "geometry_order_sha256": "ef1299e05341cb412b8c1ca2a527cacda32b501485b173c04b0f8f2fb8a1b028",
+      "elapsed_seconds": [
+        1.322395034134388,
+        1.3419186328537762,
+        1.3267217960674316,
+        1.3381668988149613,
+        1.3102077459916472
+      ],
+      "min_seconds": 1.3102077459916472,
+      "median_seconds": 1.3267217960674316,
+      "max_seconds": 1.3419186328537762,
+      "traced_current_bytes": 1864189,
+      "traced_peak_bytes": 2016419
+    },
+    {
+      "case": {
+        "id": "exclusions_64",
+        "donors": 2,
+        "rings": 2,
+        "exclusions": 64,
+        "budget": 8
+      },
+      "total_possible": 64,
+      "returned": 8,
+      "remaining": 56,
+      "complete": false,
+      "sites_per_model": 68,
+      "geometry_order_sha256": "0cd076ba2d6566ee487632e5bcf7def52dca0dc06836ee01a0b8c770f5dd605a",
+      "elapsed_seconds": [
+        2.0968319620005786,
+        2.073552541900426,
+        2.098002534825355,
+        2.0843609089497477,
+        2.109967111144215
+      ],
+      "min_seconds": 2.073552541900426,
+      "median_seconds": 2.0968319620005786,
+      "max_seconds": 2.109967111144215,
+      "traced_current_bytes": 4359329,
+      "traced_peak_bytes": 4789383
+    }
+  ],
+  "public_closure_receipt": {
+    "path": "devguide/evidence/public_dependency_receiving_20261105_summary.json",
+    "sha256": "1b493cdbaa2157758f672409082cef1af8d2e8010adeeea3dc97a3c2a6a79985"
+  },
+  "guard_counts": {
+    "guard_initial": {
+      "passed": 24,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    "guard_final": {
+      "passed": 23,
+      "failure": 1,
+      "error": 0,
+      "skipped": 0
+    },
+    "guard_corrected": {
+      "passed": 1,
+      "failure": 0,
+      "error": 0,
+      "skipped": 0
+    }
+  },
+  "performance_limits": "Five wall-time samples with inactive attribution and GC disabled only during the call; allocations separately traced once/cell, not RSS/native totals. Shared host/one pinned logical CPU/low priority; changed workloads/coverage do not imply speedup or asymptotic complexity. All original attempts remain separate.",
+  "full_evidence": {
+    "path": "cached_generation_scaling_20261105.json.gz",
+    "compressed_sha256": "d7a4a76baf7e031488f7cd4c3d7551421d9e8b4abd93786bc8126429f3ec35cd",
+    "compressed_bytes": 44757,
+    "uncompressed_sha256": "f1d8af2aae8f73928a0edb4977307550f620981d8533f64e78ddb58113eb2d00",
+    "uncompressed_bytes": 932061
+  }
+}

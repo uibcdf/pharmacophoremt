@@ -1,5 +1,57 @@
 # Development Checkpoint
 
+## Cached-generation baseline measured with shared-machine limits — 2026-11-05
+
+[#97](https://github.com/uibcdf/pharmacophoremt/issues/97) executes audit item 16's
+[prespecified scaling baseline](cached_generation_scaling_protocol.md).
+Frozen helper/plan `d2fc819929a93fe0273c7b2b68e0ff9d27d708a2` uses the unchanged
+public donor/ring cached generator in borrowed PHMT source
+`9c163654375c5933be6400282105b89376f03578` and the previously received public
+dependency prefix. No molecular system or operation, experimental direction
+model, source-provider overlay or new installation is involved.
+
+**All ten cells/two modes pass:** 20 serial workers, 50 timing samples, ten
+separate traced-allocation samples and 20 warmups; all 80 calls agree with the
+independent mixed-radix geometry/choice/count oracle. Every selected source/
+provider/native, cache and unit-policy identity stays stable. At budget eight,
+two/four/eight/16 positive sites take median 0.524/1.024/3.196/3.954 seconds on
+this restricted shared host. Four positive sites at budget64 return 64 models
+in median 8.527 seconds; peak traced allocations are 7.283 MiB. These differing
+workloads/coverage and observed spread do not establish speedup, asymptotic
+complexity, real-receptor cost or total native/process memory. No optimization.
+[Case](../docs/content/validation/cached_generation_scaling.md) and
+[original receipt](evidence/cached_generation_scaling_20261105_summary.json)
+retain every sample, failed precheck and producer/command identity.
+
+The maintainer explicitly requires leaving processors/RAM available. Root
+AGENTS.md now retains that local instruction. Effective kernel proof confirms
+one allowed logical CPU [19] of 20, CPUQuota100%, combined MemoryMax1GiB,
+MemorySwapMax0, TasksMax32, six thread settings one, nice19 and idle I/O. All own
+tests finish before timing. Admission sees about 8.3GiB available and zero full
+memory stalls over ten/60 seconds; nearly full shared swap/past pressure is
+retained, with no other-process intervention. No continuing task worker is needed.
+
+Twenty-four unique new guards pass across preserved scopes: final23 plus the
+corrected unit-bearing normal fixture. The provisional24 has test-only implicit
+unit-strip warnings, and an intermediate normal fixture uses an unsupported raw
+list; both mistakes are corrected before timing without scientific/runtime
+changes. The final single case runs under the new limits; the earlier23 are not
+relabeled as newly restricted tests. Private helper/plan support uses the unchanged
+shared stager (59 declared inputs); 23 distribution/nine environment/three
+reporting/18 archive controls and route/generation/index/Ruff checks pass.
+
+**Next:** use this baseline to scope a fixed-workload profile before choosing
+any generation optimization; audit16 remains partial beyond this synthetic
+slice. Keep model/scientific oracles and metadata ownership intact. #95's public
+modern MolSysMT delivery and candidate freeze remain pending through #255/#375;
+#9/#10/#23 retain full exact-head/source/installed/public gates. Latest real
+version plan/tag/Release remains0.4.0. No addon or publication starts here.
+
+Owner LMMV/dprada; capsule `build/phmt-cached-scaling-20261105-t3nuhxu8`, review
+2026-11-19 or relevant change. Borrowed public prefix/source are unchanged.
+Final unskipped-head CI status/recovery belongs to #9/#23, independently of
+these local measurements and administrative checks.
+
 ## Fresh public dependency closure received; modern delivery pending — 2026-11-05
 
 [#95](https://github.com/uibcdf/pharmacophoremt/issues/95) now has an executed

@@ -1,0 +1,189 @@
+{
+  "schema": "pharmacophoremt.cached-generation-scaling-closeout@1",
+  "recorded_at_utc": "2026-11-06T01:37:38.403140+00:00",
+  "commands": [
+    {
+      "name": "docs",
+      "argv": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-W",
+        "-n",
+        "--keep-going",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-cached-scaling-20261105-t3nuhxu8/docs-source",
+        "/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-cached-scaling-20261105-t3nuhxu8/docs-html"
+      ],
+      "started_at": "2026-11-06T01:37:35.341905+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:36.658767+00:00"
+    },
+    {
+      "name": "archive",
+      "argv": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "devtools.evidence_archive",
+        "devguide/evidence/cached_generation_scaling_20261105_summary.json"
+      ],
+      "started_at": "2026-11-06T01:37:36.659035+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:36.802475+00:00"
+    },
+    {
+      "name": "reporting",
+      "argv": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "started_at": "2026-11-06T01:37:36.802761+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:37.859559+00:00"
+    },
+    {
+      "name": "index",
+      "argv": [
+        "/home/liliana/Myopt/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "started_at": "2026-11-06T01:37:37.859904+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:38.238333+00:00"
+    },
+    {
+      "name": "ruff",
+      "argv": [
+        "ruff",
+        "check",
+        "."
+      ],
+      "started_at": "2026-11-06T01:37:38.238583+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:38.254805+00:00"
+    },
+    {
+      "name": "format",
+      "argv": [
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "started_at": "2026-11-06T01:37:38.255052+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:38.294076+00:00"
+    },
+    {
+      "name": "whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "started_at": "2026-11-06T01:37:38.294381+00:00",
+      "exit_code": 0,
+      "finished_at": "2026-11-06T01:37:38.402698+00:00"
+    }
+  ],
+  "logs": {
+    "docs": "Running Sphinx v9.1.0\nloading translations [en]... done\nmaking output directory... done\nmyst v5.1.0: MdParserConfig(commonmark_only=False, gfm_only=False, enable_extensions=set(), disable_syntax=[], all_links_external=False, links_external_new_tab=False, url_schemes=('http', 'https', 'mailto', 'ftp'), ref_domains=None, fence_as_directive=set(), number_code_blocks=[], title_to_header=False, heading_anchors=0, heading_slug_func=None, html_meta={}, footnote_sort=True, footnote_transition=True, words_per_minute=200, substitutions={}, linkify_fuzzy_links=True, dmath_allow_labels=True, dmath_allow_space=True, dmath_allow_digits=True, dmath_double_inline=False, update_mathjax=True, mathjax_classes='tex2jax_process|mathjax_process|math|output_area', enable_checkboxes=False, strikethrough_single_tilde=False, colon_fence_exact_match=False, suppress_warnings=[], highlight_code_blocks=True)\nbuilding [mo]: targets for 0 po files that are out of date\nwriting output... \nbuilding [html]: targets for 2 source files that are out of date\nupdating environment: [new config] 2 added, 0 changed, 0 removed\nreading sources... [ 50%] cached_generation_scaling\nreading sources... [100%] index\n\nlooking for now-outdated files... none found\npickling environment... done\nchecking consistency... done\npreparing documents... done\ncopying assets... \ncopying static files... \nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-cached-scaling-20261105-t3nuhxu8/docs-html/_static/language_data.js\nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-cached-scaling-20261105-t3nuhxu8/docs-html/_static/basic.css\nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-cached-scaling-20261105-t3nuhxu8/docs-html/_static/documentation_options.js\nWriting evaluated template result to /home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-cached-scaling-20261105-t3nuhxu8/docs-html/_static/alabaster.css\ncopying static files: done\ncopying extra files... \ncopying extra files: done\ncopying assets: done\nwriting output... [ 50%] cached_generation_scaling\nwriting output... [100%] index\n\ngenerating indices... genindex done\nwriting additional pages... search done\ndumping search index in English (code: en)... done\ndumping object inventory... done\nbuild succeeded.\n\nThe HTML pages are in build/phmt-cached-scaling-20261105-t3nuhxu8/docs-html.\n",
+    "archive": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.cached-generation-scaling-receiving@1\", \"report_schema\": \"pharmacophoremt.cached-generation-scaling-evidence@1\", \"recorded_at_utc\": \"2026-11-06T01:33:49.244184+00:00\", \"archive_bytes_verified\": true}\n",
+    "reporting": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.922s\n\nOK\n",
+    "index": "Generated report indexes are current.\n",
+    "ruff": "All checks passed!\n",
+    "format": "369 files already formatted\n",
+    "whitespace": ""
+  },
+  "docs": {
+    "scope": "Strict two-page HTML inspection of the actual new case plus a generated navigation page; no notebook/full-site/hosted execution",
+    "source_sha256": "bff989f6de73f94f89d1941034d8e579fdb2a361c18f85b6ffd14af09f183dfb",
+    "copied_sha256": "bff989f6de73f94f89d1941034d8e579fdb2a361c18f85b6ffd14af09f183dfb"
+  },
+  "initial_attempt_identity_limit": "Provisional pre-freeze guard overlays were not independently hashed; their retained logs are diagnostic attempts, not immutable final qualification. The actual benchmark uses frozen d2fc819 with complete plan/helper/provider/native identity checks.",
+  "runtime_delta": "",
+  "post_archive_initial_failure": {
+    "stage": "reporting index registration",
+    "tests": 3,
+    "failures": 1,
+    "error": "test_existing_reports_have_valid_metadata_and_generated_indexes: Items in the first set but not the second: 'uibcdf/pharmacophoremt#97'",
+    "resolution": "Register the newly archived issue in the existing exact issue inventory; no reporting policy or scientific assertion is relaxed."
+  },
+  "post_archive_final_checks": [
+    {
+      "name": "reporting",
+      "argv": [
+        "python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "at": "2026-11-06T01:40:30.438607+00:00",
+      "log": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.900s\n\nOK\n"
+    },
+    {
+      "name": "index",
+      "argv": [
+        "python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "at": "2026-11-06T01:40:30.811908+00:00",
+      "log": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "ruff",
+      "argv": [
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "at": "2026-11-06T01:40:30.845866+00:00",
+      "log": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "argv": [
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "at": "2026-11-06T01:40:30.864188+00:00",
+      "log": "369 files already formatted\n"
+    },
+    {
+      "name": "whitespace",
+      "argv": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "at": "2026-11-06T01:40:30.912264+00:00",
+      "log": ""
+    }
+  ]
+}

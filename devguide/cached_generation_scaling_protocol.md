@@ -84,7 +84,7 @@ full-memory stalls (Linux memory-pressure full avg10=0). Record remaining swap
 and the longer pressure averages; these thresholds are conservative local
 execution choices, not scientific acceptance or a general suite policy. Defer
 measurement when admission fails. The complete scope includes the serial
-controller and its worker, so combined resident memory stays bounded. A killed/
+controller and its worker, so combined cgroup-accounted memory stays bounded. A killed/
 timed-out worker is a retained failure. No benchmark starts while own tests run.
 
 ## Acceptance and maintenance
@@ -101,3 +101,34 @@ producer/input/native identities and passing independent checks. Report failures
 without retuning the declaration. No benchmark output is a release/full-suite/
 platform/public-artifact or biological qualification. Reassess after generator,
 provider, instrumentation, workload or machine changes; retain earlier results.
+
+## Executed baseline — 2026-11-05
+
+Frozen helper/plan commit `d2fc819929a93fe0273c7b2b68e0ff9d27d708a2` executes
+against unchanged borrowed PHMT source `9c163654375c5933be6400282105b89376f03578`
+and the prior public dependency prefix. All 20 workers pass: 50 timing samples,
+ten traced-allocation samples, 20 warmups and all 80 independent call checks.
+Every source/provider/native identity, input-cache digest and unit-policy check
+agrees. The [original receipt](evidence/cached_generation_scaling_20261105_summary.json)
+and [computational case](../docs/content/validation/cached_generation_scaling.md)
+retain every sample and narrower interpretation; no production optimization.
+
+Resource admission observes about 8.3 GiB available RAM and zero full-memory
+stalls over ten/60 seconds. Swap is nearly full and the longer pressure history
+is retained; neither other processes nor host caches are modified. Effective
+kernel proof confirms CPU affinity [19], quota one CPU, memory.max=1073741824,
+memory.swap.max=0, pids.max=32, nice19 and idle I/O. Serial execution completes
+in about 401 seconds of whole-controller wall time; that includes worker setup,
+warmups, oracle, tracing and persistence, and is not a generator-call sample.
+
+Twenty-four unique new guards pass across the 23-case final scope plus one
+corrected normal-fixture case. The earlier provisional 24-case pass has 13
+test-only unit-strip warnings; explicit dimensionless extraction removes them.
+The next run correctly refuses a raw-list corrupted normal, so that fixture is
+changed to a wrong unit-bearing normal to isolate geometric disagreement.
+The final single case passes under the resource limits. Original attempts and
+the private-staging module/directory-name assumption failure remain retained.
+Only the test harness changes; the frozen workload/scientific answers and
+production generator stay intact. Private support declares the helper/plan
+through the unchanged shared stager (59 inputs); 23 distribution and the related
+administrative checks pass. No new installed artifact/matrix claim follows.
