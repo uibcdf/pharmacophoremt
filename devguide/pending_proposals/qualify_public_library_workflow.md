@@ -26,6 +26,21 @@ is the public registry; this issue owns actionable product work, separately from
 
 ## How and ownership
 
+Before fixing the API, the maintainer explicitly requests comparison with how
+established pharmacophore tools use chemical libraries. The
+[workflow survey](../pharmacophore_library_workflow_survey.md) now separates
+preparation, reusable search assets, query execution, maintenance and hit triage.
+It compares nine ecosystems using official documentation/source and original
+papers; no competitor or new PHMT screening workflow was executed.
+
+The reaffirmed product targets are powerful, measured capabilities, an intuitive
+guided route and a coherent, detailed public API. Quality takes precedence over
+a delivery deadline. A bounded iterator is one execution candidate alongside
+reusable prepared/indexed assets; neither its interface nor an index format is
+accepted by identifying the current memory gap. First record lifecycle/identity,
+user/expert journeys, provider boundaries and acceptance experiments, then choose
+a bounded implementation slice.
+
 Qualify the journey from task/collection selection through a bounded subset,
 immutable acquisition or authorized import, explicit molecular preparation,
 declared pharmacophore screening, source-linked export and reproducible recovery.

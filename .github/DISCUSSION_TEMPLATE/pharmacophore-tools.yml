@@ -1,0 +1,77 @@
+title: "[Tool] Name of resource"
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest a pharmacophore tool or method for PharmacophoreMT to study.
+        Search the [Pharmacophore tools category](https://github.com/uibcdf/pharmacophoremt/discussions/categories/pharmacophore-tools)
+        and its index first; add to an existing resource thread when possible.
+        Unknown technical or access details are welcome and do not prevent a proposal.
+
+        Share public links and descriptions. Do not upload private data, credentials,
+        or licensed files. Report concrete bugs and implementation requests in
+        [Issues](https://github.com/uibcdf/pharmacophoremt/issues), linking the relevant discussion.
+        Listing a tool here does not establish integration, scientific equivalence,
+        or measured performance in PharmacophoreMT. No tests or benchmarks are needed to suggest it.
+  - type: input
+    id: resource-name
+    attributes:
+      label: Tool or method name
+      placeholder: "Application, toolkit, screening engine, service, or research method"
+    validations:
+      required: true
+  - type: input
+    id: official-url
+    attributes:
+      label: Official website, documentation, or original publication
+      description: "Link to the resource owner or authors, rather than a third-party summary."
+      placeholder: "https://..."
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Main role
+      description: "Choose the closest fit; describe additional roles or uses below."
+      options:
+        - Integrated pharmacophore application
+        - Screening engine or command-line tool
+        - Molecular or pharmacophore toolkit
+        - Hosted screening service
+        - Research method or prototype
+        - Another role or not sure yet
+    validations:
+      required: true
+  - type: textarea
+    id: study-value
+    attributes:
+      label: Why study this resource?
+      description: "What can PharmacophoreMT learn from it, and which scientific task or user workflow does it help with?"
+      placeholder: "Describe a useful capability, design choice, workflow, or concrete example."
+    validations:
+      required: true
+  - type: textarea
+    id: version-license-docs
+    attributes:
+      label: Known version, access, license, and documentation
+      description: "Share what you know; Unknown is a valid answer. Public links are enough."
+      placeholder: |
+        Version or publication date:
+        Documentation, source repository, or original paper:
+        Account, installation, or subscription requirements:
+        Software license or applicable access terms:
+  - type: textarea
+    id: comparison-questions
+    attributes:
+      label: Questions worth investigating
+      description: "Optional. Suggest scientific, workflow, public-API, or performance questions without needing to answer them."
+      placeholder: |
+        Scientific definitions, constraints, or validation:
+        Library preparation, indexing, screening, or result handling:
+        User experience or public-API design:
+        Performance, storage, memory, or reproducibility:
+  - type: textarea
+    id: related-links
+    attributes:
+      label: Related discussions or issues
+      description: "Optional. Link existing tool threads, implementation issues, or relevant public evidence."

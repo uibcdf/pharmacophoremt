@@ -13,6 +13,12 @@ libraries, assessments, requirements and reasons why incorporation remains pendi
 - [Primary-source research](public_library_support_research.md).
 - [Intake form](../.github/DISCUSSION_TEMPLATE/chemical-libraries.yml).
 
+The separate [Pharmacophore tools registry](pharmacophore_tools_registry.md) and
+[public study index](https://github.com/uibcdf/pharmacophoremt/discussions/129)
+record software to study/compare, with evidence levels and open questions. The
+[workflow survey](pharmacophore_library_workflow_survey.md) informs #108's design;
+tool-study ownership is #128, not a new chemical-library provider entry.
+
 This purposeful local category extends Announcements, Q&A and Ideas without
 replacing them. Its open-ended format supports early proposals and source-specific
 assessment. The maintainers own triage until explicitly delegated; there is no

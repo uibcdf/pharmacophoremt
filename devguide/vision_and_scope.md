@@ -24,6 +24,29 @@ may continue past 0.9 before an agreed classical 1.0 scope is achieved.
 
 ## Design principles
 
+The maintainer reaffirmed these product requirements on 2026-11-06: powerful
+pharmacophore capabilities and measured performance, an intuitive route for users
+who want results, and a complete, coherent public API for users who need detailed
+control. Quality and a well-founded structure take precedence over a delivery
+deadline. These are acceptance targets, not claims that current source already
+meets them.
+
+Provide progressive access to the same scientific operations: a short guided
+workflow, inspectable settings/results, and composable documented public tools.
+Expert control must include the choices that affect the answer, such as feature
+definitions, chemical preparation, conformer coverage, query constraints, finite
+search budgets, scoring and failure handling. Convenient defaults need explicit
+meaning and reproducible provenance.
+
+For public-library support, compare established tools and workflows before
+committing to the API or an indexing strategy. Use the
+[workflow survey](pharmacophore_library_workflow_survey.md) and #108 to derive
+requirements, alternatives and experiments. Measure library build/preparation,
+storage, query latency, throughput and memory separately under declared inputs
+and scientific criteria. A fast incomplete calculation and an indexed search
+over a prepared library have different scope; raw timing alone cannot choose
+the design. A tiny demonstration does not establish large-library performance.
+
 - MolSysMT owns molecular forms/formats, inspection, preparation, chemistry,
   state/identity maps and general molecular calculations. PHMT owns pharmacophore
   construction, constraints, matching and interpretation. Propose missing

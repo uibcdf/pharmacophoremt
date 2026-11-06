@@ -7,6 +7,24 @@ and [support boundaries](support_library_boundaries.md). Dated receiving section
 below preserve their original scope; they do not imply complete #6 adoption.
 The registered root integration guides govern new support-library calls.
 
+## Product design requirements — 2026-11-06
+
+The accepted [product requirements](vision_and_scope.md#design-principles) pair
+an intuitive guided workflow with a coherent, detailed public API and measured
+scientific/performance quality. High-level workflows should compose the same
+documented public operations available to expert users. Expose the effective
+settings, source/state/conformer correspondence and failure accounting needed to
+understand and reproduce results. Users should not need private modules to inspect
+or control a supported scientific operation.
+
+For chemical-library work, the
+[comparative workflow survey](pharmacophore_library_workflow_survey.md) precedes
+selection of public entry points, persistence/index formats and performance
+claims. Early streaming or download sketches remain design candidates until
+that comparison and provider-boundary review support their scope. Record tradeoffs
+and evidence in #108; a competitor's UI, method name or timing is not an accepted
+PHMT contract or equivalent scientific result.
+
 ## Molecular-source admission review — 2026-11-05
 
 [#101 review](molecular_source_admission.md) refutes a suspected source overwrite

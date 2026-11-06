@@ -11,6 +11,12 @@ primary-source research and proposed implementation priorities. It does not
 claim working provider integrations, downloaded libraries, accepted cohorts,
 executed new screening, a frozen public API or a release commitment.
 
+The complementary [pharmacophore-workflow survey](pharmacophore_library_workflow_survey.md)
+compares how existing tools prepare, index, screen and maintain collections.
+The maintainer explicitly requests that comparison before API design and
+reaffirms intuitive use, expert public control and measured power without a
+deadline-driven shortcut. Provider priority alone does not settle the workflow.
+
 ## Recommendation by scientific use
 
 Support several complementary provider families through one consistent workflow.
