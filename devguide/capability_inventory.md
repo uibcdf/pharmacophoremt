@@ -179,3 +179,19 @@ compatibility, data admission and original parser/provider/filesystem errors.
 #6 dependency declarations align nglview and the existing direct PyYAML codec.
 No native schema, scientific algorithm, molecular/SDF implementation or installed/
 public qualification change; broader ArgDigest admission remains separate.
+
+
+## Native batch admission consolidated — 2026-11-05
+
+[#99](https://github.com/uibcdf/pharmacophoremt/issues/99) qualifies a bounded
+item 3/#6 contract improvement: unknown/wrong-method/literal kwargs options fail
+before native input consumption even for empty batches. Nine definition-owned
+ArgDigest contracts preserve scientific ASTs, method-specific frames, pose IDs,
+failure causes and facade cache order. [Contract](native_batch_contracts.md) and
+[receipt](evidence/native_batch_contracts_20261105_summary.json) retain original
+failures/two corrected scoring fixtures and 206 unique passing final selectors
+(45 new), with public-prefix/modern-source scopes kept separate. Serial one-CPU/
+1-GiB/no-swap/low-priority resource limits are verified from actual processes.
+No scientific model, molecular implementation, provider/floor or release change.
+Item 3/#6 remains partial: next review saved-result/retrospective admission;
+provider delivery, broader science and #9/#10/#23 full gates remain separate.

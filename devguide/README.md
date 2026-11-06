@@ -16,6 +16,10 @@ semantics/provenance under audit items 8–9 now has a [qualified native slice](
 receives published 0.17.1, protects literal keyword/source identity and activates
 four native codec contracts. 500 unique selected controls pass; broader #6,
 canonical guide distribution and full installed/public closure remain separate.
+[Native batch contracts](native_batch_contracts.md), #99, now reject empty-batch
+typos before input consumption and retain scientific/caching/error accounting;
+206 unique selected controls pass. Broader #6 remains partial; the checkpoint
+records remaining saved-result/retrospective contract work and provider gates.
 Its [evidence and verification addendum](audit_20261104_review.md) records review
 coverage, classified findings, method-level scientific limits and actionable checks.
 The first [receptor projection sensitivity protocol](receptor_sensitivity_protocol.md)
@@ -37,7 +41,7 @@ now preserve separate hypotheses and explicit veto semantics (217 selected cases
 
 1. [Vision and Scope](vision_and_scope.md): The project's "Constitution" and the four pillars of innovation.
 2. [Roadmap](roadmap.md): Long-term strategic milestones from Gen 1b to Gen 4.
-3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #98's fixed-work profile preserves all native models/reports and independent scientific/custody checks. Generic repeated quantity-probe/catalog-path costs are handed to PyUnitWizard #141/SMonitor #63 with provider-only reproductions; no local replacement or performance fix. #97's baseline remains unchanged. Resource admission and one CPU/1 GiB/no swap/low priority preserve the shared machine. #95's public modern MolSysMT delivery and #9/#10/#23 full gates remain pending; no new release gate is added. Further 0.x.y minors remain available; latest real version plan/tag/Release stays 0.4.0. No publication or addon work.
+3. [Checkpoint](checkpoint.md): **Start here!** State as of 2026-11-05: #99's native batch admission now has 206 unique passing selected controls, preserving scientific bodies and cache/error accounting. Next review remaining #6 saved-result/retrospective contracts. #98's generic quantity-probe/catalog-path costs remain handed to PyUnitWizard #141/SMonitor #63; #97's baseline is unchanged. Serial one-CPU/1-GiB/no-swap scopes preserve the shared machine. #95's modern public MolSysMT delivery and #9/#10/#23 full gates remain pending. No publication or addon work; actual plan/tag/Release stays 0.4.0 and further 0.x.y minors remain available.
 
 ## Classical Workflow Specification
 

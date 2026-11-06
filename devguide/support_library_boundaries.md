@@ -2,6 +2,18 @@
 
 This contract belongs to [#6](https://github.com/uibcdf/pharmacophoremt/issues/6).
 
+## Native screening adoption — 2026-11-05
+
+[#99](https://github.com/uibcdf/pharmacophoremt/issues/99) adds nine
+definition-owned contracts and three native run domains derived from evaluate
+signatures through public ArgDigest 0.17.1. Empty/nonempty unknown-option refusal
+now precedes native iterable consumption; scientific ASTs, batch failure/ID
+accounting and facade cache order remain. [Contract](native_batch_contracts.md),
+[receipt](evidence/native_batch_contracts_20261105_summary.json): 206 unique
+selected passes, 45 new, public-prefix and controlled modern-source scopes
+distinct. No provider edit or floor/pin change. #6 remains partial; saved-result/
+retrospective public contracts and full source/installed/public gates remain.
+
 ## Native I/O adoption gate and provider handoff — 2026-11-04
 
 [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) is blocked by

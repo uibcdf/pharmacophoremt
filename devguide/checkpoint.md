@@ -1,5 +1,41 @@
 # Development Checkpoint
 
+## Native batch admission consolidated — 2026-11-05
+
+[#99](https://github.com/uibcdf/pharmacophoremt/issues/99) fixes empty native
+batches silently accepting unknown evaluation options. Nine definition-owned
+ArgDigest contracts cover constructor/evaluate/run in PoseEvaluator,
+RigidPoseSearch and ConformerScreening; their run domains derive from their own
+evaluate signatures. Unknown/wrong-frame/literal kwargs names now fail before
+native input consumption. Valid value/default/skip behavior, batch IDs, recorded
+failure causes, negatives and ranking remain. VirtualScreening.run still clears
+both caches before materialization/delegation. A subclass extending evaluate
+must own its matching batch API/contract; no instance-derived domain is added.
+
+[Contract](native_batch_contracts.md), [receipt](evidence/native_batch_contracts_20261105_summary.json)
+and [archive](archive/native_batch_option_admission.md) retain original failures,
+two corrected scoring fixtures, exact source overlays and resource limits.
+Final public-prefix 84/84 and modern source 167/167 pass: **206 unique selectors**,
+45 new, no skips. One intentional attribution warning remains in the source
+scope. Eight actual scientific providers match prior #82 source/native/metadata
+identities and remain stable. Scientific ASTs match after removing only nine
+decorator configurations and imports; facade/batch/metadata/pins/recipe unchanged.
+
+Heavy tasks remain serial, one allowed CPU, 1 GiB/no swap, nice 19/idle I/O,
+six backend thread limits one, verified from the running process cgroup.
+Capsule `build/phmt-native-batch-20261105-fjqyejoy`, owner LMMV/dprada; review
+2026-11-19 or relevant change. Borrowed prefixes/source are not edited; no
+continuing process is needed.
+
+**Next:** review the remaining #6 saved-result/retrospective public contracts,
+preserving cohort accounting, unscored failures, baselines and explicit molecular
+ownership. Broader audit item 3/#6 stays partial. Independently receive supported
+answers to PyUnitWizard #141/SMonitor #63 and modern public MolSysMT delivery
+#375/#255 under #95; no local provider replacement. #66 original-method access,
+#74/MolSysMT #215 and #9/#10/#23 source/installed/public/platform gates remain.
+No new release gate, addon or publication; actual plan/tag/Release stays 0.4.0.
+Further 0.x.y minor steps remain available.
+
 ## Fixed-work profile completed; generic costs handed to providers — 2026-11-05
 
 [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) follows #97 with only

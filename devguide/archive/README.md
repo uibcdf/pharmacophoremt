@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (76)
+### Resolved (77)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -34,6 +34,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_aligned_clique_consensus.md`](native_aligned_clique_consensus.md) — [#24](https://github.com/uibcdf/pharmacophoremt/issues/24) — Discover aligned clique consensus with alternative jointly supported hypotheses. *(resolved, measured)*
 - [`native_aligned_consensus.md`](native_aligned_consensus.md) — [#21](https://github.com/uibcdf/pharmacophoremt/issues/21) — Implement reusable reference-anchored consensus for prepared aligned ligands. *(resolved, measured)*
 - [`native_aromatic_interactions.md`](native_aromatic_interactions.md) — [#34](https://github.com/uibcdf/pharmacophoremt/issues/34) — Build aromatic and cation-pi hypotheses with shared geometry and explicit participant mapping. *(resolved, measured)*
+- [`native_batch_option_admission.md`](native_batch_option_admission.md) — [#99](https://github.com/uibcdf/pharmacophoremt/issues/99) — Native batches must reject unknown evaluation options independently of input length. *(resolved, measured)*
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
 - [`native_constraint_semantics.md`](native_constraint_semantics.md) — [#79](https://github.com/uibcdf/pharmacophoremt/issues/79) — Qualify alternative-feature sites, typed participant capacity and hypothesis decisions. *(resolved, measured)*

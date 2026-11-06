@@ -6,6 +6,7 @@ from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.native_screening import CONFIG
 from pharmacophoremt._private.molsysmt import capability, detached
 from pharmacophoremt._private.pose_batch import failure_record, run_evaluations
 from pharmacophoremt._private.smonitor.exceptions import (
@@ -54,7 +55,7 @@ class ConformerScreening:
     """
 
     @signal(tags=["screening", "conformers", "init"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def __init__(
         self,
         pharmacophore,
@@ -77,7 +78,7 @@ class ConformerScreening:
         self.score_method = self.search.score_method
 
     @signal(tags=["screening", "conformers", "evaluate"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     @attributed()
     def evaluate(
         self,
@@ -289,7 +290,7 @@ class ConformerScreening:
         )
 
     @signal(tags=["screening", "conformers", "batch"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def run(self, molecular_database, *, on_error="raise", **evaluation_options):
         """Screen inputs once, preserving molecule IDs and per-frame failures.
 

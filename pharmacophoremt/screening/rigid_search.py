@@ -10,6 +10,7 @@ from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_search_method,
 )
+from pharmacophoremt._private.arg_digestion.native_screening import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.pose_batch import run_evaluations
 from pharmacophoremt._private.smonitor.exceptions import (
@@ -69,7 +70,7 @@ class RigidPoseSearch:
     """
 
     @signal(tags=["screening", "rigid_search", "init"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def __init__(
         self,
         pharmacophore,
@@ -97,7 +98,7 @@ class RigidPoseSearch:
         _essential_anchors(self.evaluator)
 
     @signal(tags=["screening", "rigid_search", "evaluate"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     @attributed()
     def evaluate(
         self,
@@ -233,7 +234,7 @@ class RigidPoseSearch:
         return result
 
     @signal(tags=["screening", "rigid_search", "batch"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def run(self, molecular_database, *, on_error="raise", **evaluation_options):
         """Search each prepared input with stable identity and explicit failures.
 

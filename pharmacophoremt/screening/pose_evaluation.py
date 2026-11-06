@@ -20,6 +20,7 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import (
     digest_radius,
     digest_weight,
 )
+from pharmacophoremt._private.arg_digestion.native_screening import CONFIG
 from pharmacophoremt._private.molsysmt import detached, source_frame
 from pharmacophoremt._private.pose_batch import run_evaluations
 from pharmacophoremt._private.smonitor.exceptions import (
@@ -82,7 +83,7 @@ class PoseEvaluator:
     """
 
     @signal(tags=["screening", "pose", "init"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def __init__(
         self,
         pharmacophore,
@@ -331,7 +332,7 @@ class PoseEvaluator:
         )
 
     @signal(tags=["screening", "pose", "evaluate"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     @attributed("numpy", "pyunitwizard")
     def evaluate(
         self,
@@ -412,7 +413,7 @@ class PoseEvaluator:
         )
 
     @signal(tags=["screening", "pose", "batch"])
-    @arg_digest()
+    @arg_digest(config=CONFIG)
     def run(self, molecular_database, *, on_error="raise", **evaluation_options):
         """Evaluate each input once, retaining its zero-based ``input_index``.
 

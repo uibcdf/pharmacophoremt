@@ -1,5 +1,19 @@
 # Strategic Roadmap
 
+## Native batch contracts consolidated — 2026-11-05
+
+[#99](https://github.com/uibcdf/pharmacophoremt/issues/99) fixes empty batches
+accepting misspelled evaluation options. Nine definition-owned ArgDigest
+contracts and three evaluate-derived run domains preserve scientific bodies,
+method-specific frames, batch IDs/error causes and facade cache order.
+[Contract](native_batch_contracts.md) and [receipt](evidence/native_batch_contracts_20261105_summary.json)
+retain 206 unique selected passes, 45 new, with public-prefix and modern-source
+receiving kept separate. Every heavy run is serial, one CPU/1 GiB/no swap and
+low priority. Broader audit3/#6 remains partial. Next review saved-result and
+retrospective public admission without changing cohort/failure/baseline semantics.
+#95's modern public MolSysMT delivery, provider performance handoffs and
+#9/#10/#23 exact-candidate gates remain independent. No new release/addon work.
+
 ## Release staircase towards 1.0.0 — 2026-11-05
 
 Maintainer direction and ownership:

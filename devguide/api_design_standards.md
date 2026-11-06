@@ -2,6 +2,17 @@
 
 Guidelines for writing clean, consistent, and ecosystem-compliant code in PharmacophoreMT.
 
+## Native screening receiving — 2026-11-05
+
+[Native batch contracts](native_batch_contracts.md), #99/#6, declare nine
+definition-owned constructor/evaluate/run contracts. Run option membership comes
+from each defining evaluate signature, preserving method-specific frames and
+batch-owned pose IDs. Normal unknown-option refusal precedes native iterable
+consumption, including empty input. VirtualScreening.run retains cache reset
+before native delegation. Inherited native methods keep their defining contract;
+applications extending evaluate must own the corresponding batch API/contract.
+206 unique selected controls pass; broader #6 remains partial.
+
 ## Nested facade receiving — 2026-11-04
 
 [Definition-owned constructor domains](nested_facade_contracts.md) now cover
