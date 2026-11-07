@@ -1,0 +1,307 @@
+{
+  "schema": "pharmacophoremt.library-incremental-support-summary@1",
+  "recorded_at_utc": "2026-11-07T00:46:03.086703+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "Increment B: unshipped prepared-input reference adapter, lazy source consumption, explicit source occurrence/work keys and native semantics. Analytical software controls only.",
+  "plan": {
+    "path": "public_library_incremental_support_plan_20261107.json",
+    "sha256": "d62e13144709ad2bfc8c49e5650ed81ad3bab7787631a5f67a7d60f23ca4c57a",
+    "bytes": 6965
+  },
+  "producer_head": "c16d4d5930d703c40fa30c10088f392728c819bc",
+  "uncommitted_source_overlay": [
+    "phmt_test_support/prepared_library_reference.py",
+    "tests/test_prepared_library_reference.py",
+    "devtools/conda-build/resources.toml",
+    "devtools/tests/test_distribution_contract.py"
+  ],
+  "selected_source_files": {
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+      "bytes": 1405
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41",
+      "bytes": 12410
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746",
+      "bytes": 10334
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "pharmacophoremt/screening/virtual_screening.py": {
+      "sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+      "bytes": 7034
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "tests/test_conformer_screening.py": {
+      "sha256": "a09b86a9ed4a755ee519c898c3253904fe1f291333140d694a57a06f83dfde53",
+      "bytes": 14724
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_seeded_scoring.py": {
+      "sha256": "1703113fb5457b75cb3997f61b32738198b9bd2330cb5a5d8ce2459f5905c9b4",
+      "bytes": 13674
+    },
+    "tests/test_virtual_screening.py": {
+      "sha256": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f",
+      "bytes": 13242
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650",
+      "bytes": 1905
+    },
+    "tests/test_prepared_library_reference.py": {
+      "sha256": "9797b6b8efcbe573d21fab4de0d94837bb5333cb5223d4f515729b78b4ef0732",
+      "bytes": 12637
+    },
+    "phmt_test_support/prepared_library_reference.py": {
+      "sha256": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+      "bytes": 4808
+    },
+    "devtools/conda-build/resources.toml": {
+      "sha256": "578d44e569ebfe27e1b5da1d492c0996ddd3ce53a97823a098a45857688ad5c0",
+      "bytes": 27239
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "e55fe221b1bcf57fb2c50097a2611c68f5cd03ea5aebdc898eba13b3ded3f2ed",
+      "bytes": 25207
+    }
+  },
+  "final_scientific_attempt": {
+    "path": "attempt3",
+    "counts": {
+      "tests": 26,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "exit_code": 0,
+    "peak_cgroup_bytes": 344678400,
+    "placement": {
+      "work_source": "phmt_test_support",
+      "tests": "tests"
+    }
+  },
+  "scientific_attempts": [
+    {
+      "path": ".",
+      "counts": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exit_code": 0,
+      "peak_cgroup_bytes": 344723456,
+      "placement": {
+        "work_source": "devtools",
+        "tests": "devtools/tests"
+      }
+    },
+    {
+      "path": "attempt2",
+      "counts": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exit_code": 0,
+      "peak_cgroup_bytes": 344784896,
+      "placement": {
+        "work_source": "devtools",
+        "tests": "tests"
+      }
+    },
+    {
+      "path": "attempt3",
+      "counts": {
+        "tests": 26,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0
+      },
+      "exit_code": 0,
+      "peak_cgroup_bytes": 344678400,
+      "placement": {
+        "work_source": "phmt_test_support",
+        "tests": "tests"
+      }
+    }
+  ],
+  "scientific_attempt_count_note": "Same 26 analytical cases across three placement/support executions; do not count 78 independent cases. Scientific implementation and all analytical assertions unchanged.",
+  "source_and_native_unchanged_in_final_attempt": true,
+  "context": {
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "origins": {
+      "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+      "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+    },
+    "versions": {
+      "pharmacophoremt": "0.4.0+120.g0925d97",
+      "molsysmt": "0.23.0+513.g9e1f1b1ad",
+      "argdigest": "0.17.1+3.g0712641",
+      "smonitor": "0.22.1+1.gc1b6ce2",
+      "pyunitwizard": "0.29.1+6.gf82b618",
+      "pytest": "9.2.0",
+      "pytest-receptor": "1.2.0",
+      "gh-run-receptor": "1.4.0",
+      "rdkit": "2026.9.2",
+      "ackredit": "0.12.1+10.g4beb850"
+    },
+    "native_before": {
+      "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+        "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+        "bytes": 101188064
+      }
+    },
+    "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-library-private-support-20261107-5fu9lhy2.scope",
+    "limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "memory_before_kib": {
+      "MemAvailable": 50686744,
+      "SwapFree": 8388568
+    },
+    "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=166993\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=166155\n",
+    "scope": "Unshipped incremental prepared-input analytical controls; no checkpoint/recovery/provider/benchmark qualification."
+  },
+  "post_run_context": {
+    "sdk": {
+      "head": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "clean": true,
+      "override": "PHARMACOPHOREMT_SUITE_ROOT",
+      "recovered_from": "Local object-store clone; no dependency pin/environment change",
+      "declarations_exit_code": 0,
+      "installed_closure_checked": false
+    },
+    "provider_head_after": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+    "provider_state_after": [],
+    "identity_limit": "Base Git head plus exact source overlay hashes identify producer; installed/editable version metadata alone does not. Only selected files/native artifact have pre/post checks."
+  },
+  "resources": {
+    "scientific_peak_cgroup_bytes": 344678400,
+    "scientific_memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "scope": "Whole owned controller/test cgroup, not per-input allocation or benchmark."
+  },
+  "affected_administration": {
+    "tests": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "forbidden_scientific_roots": [
+      "molsysmt",
+      "numpy",
+      "pharmacophoremt",
+      "rdkit",
+      "scipy"
+    ],
+    "loaded_scientific_modules": [],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 75550720,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "scope": "Affected distribution/staging unittest checks including new private-support guard; no scientific provider import or installed artifact qualification."
+  },
+  "full_administrative_attempt": {
+    "exit_code": 137,
+    "complete": false,
+    "systemd_result": "oom-kill",
+    "peak_cgroup_bytes": 536870912,
+    "last_visible_test": "test_esr1_activity_pilot.TestEsr1ActivityPilot.test_original_inputs_restore_offline_with_source_labels_and_failures",
+    "assertion_failure_observed": false,
+    "pending_owner": "https://github.com/uibcdf/pharmacophoremt/issues/9",
+    "limit": "Existing broader control did not finish under shared-workstation cap; no passing total fabricated, no cap increased."
+  },
+  "local_checks": {
+    "scientific_cases": 26,
+    "affected_distribution_cases": 24,
+    "reporting_cases": 3,
+    "archive_cases": 18,
+    "ruff_check": 0,
+    "ruff_format": 0,
+    "index": 0,
+    "declarations": 0,
+    "distinct_complete_passing_cases": 71,
+    "full_administrative_discovery_passed": false
+  },
+  "full_evidence": {
+    "path": "public_library_incremental_support_20261107.json.gz",
+    "compressed_sha256": "2e350570705961de12d468169697d2cdbb648b3b1088816199b34d4a31afdaa4",
+    "compressed_bytes": 64650,
+    "uncompressed_sha256": "7efe846bad45cccdef75b9160755737f18938db02db2f25609687a1a54af960e",
+    "uncompressed_bytes": 381334,
+    "own_file_count": 39
+  },
+  "earlier_original_receipt": {
+    "path": "public_library_incremental_20261107_summary.json",
+    "sha256": "275239437fcfbc8ee32254e132a0c1ebee76969d308c147de2415b71dc6ec6e9",
+    "bytes": 9261
+  },
+  "pending": [
+    "Journal, checkpoints, restart/retry and duplicate-publication detection",
+    "Authenticated molecular snapshots or inferred equivalence",
+    "Public API/installed-package support for this unshipped prototype",
+    "Public-provider receiving/preparation and biological validation",
+    "Indexing, throughput/memory-allocation benchmark or competitor comparison",
+    "Full source/installed/platform/release qualification",
+    "Broader interrupted administrative coverage under #9"
+  ],
+  "local_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-library-incremental-20261107-5fu9lhy2",
+  "temporary_resources": {
+    "owner": "LMMV/dprada",
+    "review_date": "2026-11-20",
+    "policy": "Retain original logs/control scripts and plan; remove isolated SDK after checks. Shared source/environment untouched."
+  },
+  "review": "Independent static audit of unchanged scientific implementation; final boundary adds private support declaration and isolated staging guard.",
+  "evidence_limit": "No journal, restart, authenticated collection, public runtime/provider/index, benchmark or biological qualification. Native attribution retained by actual calls; no fabricated application session. No remote CI dispatch or installed-artifact/full-platform gate executed."
+}

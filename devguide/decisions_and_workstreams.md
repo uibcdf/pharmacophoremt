@@ -1,6 +1,6 @@
 # Decisions and active workstreams
 
-Handoff reviewed 2026-11-06. Use the [checkpoint](checkpoint.md) for current
+Handoff reviewed 2026-11-07 UTC. Use the [checkpoint](checkpoint.md) for current
 actions and [roadmap](roadmap.md) for order. Owning contracts/issues and original
 evidence retain finer-grained authority than this orientation page.
 
@@ -26,7 +26,7 @@ evidence retain finer-grained authority than this orientation page.
 | #103 receptor-to-screening studies | Objective accepted; neither full biological study is complete | Admit original methods/data/cohort/preparation, freeze receptor/comparator/evaluation and execute |
 | #66 ERalpha binding | Frozen source pools/exposure persist; original Sun2006, Xin2023, Gungor2006 and Scott2023 methods unresolved | New authorized access lead; don't repeat exhausted routes or alter frozen queries/thresholds |
 | #106 second-target admission | Nine fixed leads reviewed; capacity/coupled outcomes and seven held sources remain separate | Resolve original material/data/curation authority; further unresolved-domain review needs a new declaration; no activities admitted |
-| #108 public-library workflow | Survey → [architecture proposal](public_library_architecture.md) and [worked contracts](public_library_contract_examples.md); identities, guided/expert parity and committed-failure/new-run policy are explicit proposals | Qualify a bounded prepared-input reference prototype; journal durability, index strategy and new public names remain unimplemented/unfrozen |
+| #108 public-library workflow | Survey → architecture/worked contracts → [unshipped incremental reference](prepared_library_reference.md), 26 new analytical controls pass | Saved identities, single-writer journal, compatible recovery and repeat-query controls; no persistent/public/provider/index qualification yet |
 | #128 tool-study registry | [Dedicated public index](https://github.com/uibcdf/pharmacophoremt/discussions/129) and ten documentary study records | Maintain [scope/evidence/disposition rules](pharmacophore_tools_registry.md), declare comparisons before execution, and preserve unresolved questions |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |

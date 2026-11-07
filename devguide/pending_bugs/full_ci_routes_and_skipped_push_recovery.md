@@ -289,3 +289,28 @@ The automatic Release-event publisher is a distinct failed workflow at a shared
 staged-route guard (#10 / MolSysSuite #131); its build/upload steps are skipped.
 Do not call it green, repeat publication, or conflate it with the successful source
 and installed scientific matrices. Required external-PR/recovery scope remains open.
+
+### Incremental library prototype — 2026-11-07 UTC
+
+The [separate analytical receipt](../evidence/public_library_incremental_support_20261107_summary.json)
+records 26 passing controls for an unshipped lazy prepared-input adapter; 24
+affected distribution/staging controls, three reporting and 18 archive controls
+plus full Ruff check/format and declared-route checking also pass. Private support
+delivery is hash-declared with a new isolation guard. No native runtime, dependency
+pin or workflow is changed.
+The migrated default administrative SDK path was absent; a local isolated checkout
+of the already accepted pin restored declaration checking without an environment
+change. That declaration result is not installed closure.
+
+A broader administrative unittest discovery was OOM-killed at its 512-MiB limit
+during existing ESR1 evidence restoration. Preserve the original partial log and
+systemd `Result=oom-kill`/536,870,912-byte peak confirmation. It is incomplete,
+not passing evidence. A separate affected distribution/staging run passes all
+24 controls under the same cap, with scientific imports forbidden and no OOM.
+Full administrative reexecution/recovery remains owned here; do not increase
+shared-machine limits or hide that attempt behind the focused passing result.
+
+Use the maintainer-authorized direct route with `[skip ci]` and no remote dispatch.
+These scoped checks do not clear exact-head full source/installed/platform gates;
+existing deliberate/daily/weekly recovery retains ownership. No release or public
+API/provider/index qualification follows from this prototype. Keep #9 open.

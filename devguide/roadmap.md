@@ -129,6 +129,8 @@ The [architecture proposal](public_library_architecture.md) now specifies that
 lifecycle, identity/invalidation, guided/expert operation parity and explicit
 commit/retry behavior. [Worked native controls](public_library_contract_examples.md)
 separate existing evaluator semantics from proposed streaming/journal mechanisms.
-The recommended first prototype consumes already prepared analytical inputs through
-public native tools, preserves all outcomes, then qualifies recovery/repeat-query
-behavior before real receiving and reusable-index experiments.
+The [unshipped reference prototype](prepared_library_reference.md) now consumes
+already prepared analytical inputs through public native tools, retaining all
+native evidence and explicit work/source occurrences; 26 new analytical controls
+pass. Next qualify saved identities/journal/recovery and repeat-query behavior
+before real receiving, public API selection and reusable-index experiments.

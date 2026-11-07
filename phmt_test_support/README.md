@@ -28,6 +28,14 @@ module-relative plans. These bring private installed support to 57 literal
 files. The actual shared-staging import/collection probe collects 126 nodes;
 collection alone does not rerun their science or qualify an installed artifact.
 
+The incremental prepared-library prototype adds one literal helper declaration
+(60 private files in total). Its controls live in the default scientific
+`tests/` selection and import this namespace; they never require a development
+`devtools` package in installed science. The administrative staging guard resolves
+the helper and checks its exact bytes without importing scientific providers.
+This is test-support delivery, not a new installed/public runtime API or artifact
+qualification. See the [prototype contract](../devguide/prepared_library_reference.md).
+
 `saved_model_reader.py` is a standalone fresh-process oracle for the four saved
 model cases. It uses only public PharmacophoreMT I/O and Ackredit; parent clients
 run its explicit file with `python -P` in the owned case directory. It needs no

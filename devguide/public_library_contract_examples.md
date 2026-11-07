@@ -123,3 +123,15 @@ when these scientific/native/provider contracts or expectations change, using a 
 measurement identity and retaining previous results; do not update an oracle merely
 to obtain a pass. Full source/installed/platform and #103 scientific gates remain
 separate.
+
+## Incremental adapter controls — 2026-11-07 UTC
+
+The [new reference prototype](prepared_library_reference.md) exercises these native
+semantics through lazy, source-linked single-input composition. Its
+[separate declared plan](evidence/public_library_incremental_support_plan_20261107.json)
+and [receipt](evidence/public_library_incremental_support_20261107_summary.json) address
+eager preflight, reader lifetime, explicit work/source occurrences, placed-batch
+evidence parity, nested conformer IDs, no-fit/budget/failure distinctions and ties.
+They do not replace the original 14-test native receipt or establish the proposed
+checkpoint/restart/provider scenarios above. Supplied work-key uniqueness and
+unchanged inputs/evaluator remain producer preconditions.

@@ -268,3 +268,16 @@ default presets/budgets; high-level public names; backend measurements and real
 provider/benchmark selection. Changes must preserve the existing facade's cache,
 ranking and failure meaning or document an explicit migration. No performance,
 software-integration or predictive claim follows from this architecture note.
+
+## Increment B implementation checkpoint — 2026-11-07 UTC
+
+The [prepared-input reference prototype](prepared_library_reference.md) now
+composes the three native single-input tools lazily with explicit source occurrence
+and work keys. It remains unshipped development code; public names, persistent
+schemas and index selection are still open. Its controls address consumption,
+closure, native evidence equivalence, nested IDs and failure/score semantics.
+The [separate receipt](evidence/public_library_incremental_support_20261107_summary.json)
+owns this new execution identity; earlier native controls retain theirs.
+Increment C's journal/recovery/compatibility and real-provider acquisition remain
+unimplemented. Producer-declared keys and controlled unchanged input are explicit
+preconditions, not an authenticated collection or duplicate-publication guarantee.

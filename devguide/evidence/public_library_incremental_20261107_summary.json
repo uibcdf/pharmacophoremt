@@ -1,0 +1,206 @@
+{
+  "schema": "pharmacophoremt.library-incremental-control-summary@1",
+  "recorded_at_utc": "2026-11-07T00:37:43.413531+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "Increment B: unshipped prepared-input reference adapter, lazy source consumption, explicit source occurrence/work keys and native semantics. Analytical software controls only.",
+  "plan": {
+    "path": "public_library_incremental_plan_20261107.json",
+    "sha256": "3a07869e0e76053fb404c06bf75df3cbdcb82918b79d28945bf3f6bcde65c814",
+    "bytes": 5633
+  },
+  "producer_head": "c16d4d5930d703c40fa30c10088f392728c819bc",
+  "uncommitted_source_overlay": [
+    "devtools/prepared_library_reference.py",
+    "devtools/tests/test_prepared_library_reference.py"
+  ],
+  "selected_source_files": {
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+      "bytes": 1405
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41",
+      "bytes": 12410
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746",
+      "bytes": 10334
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "pharmacophoremt/screening/virtual_screening.py": {
+      "sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+      "bytes": 7034
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "tests/test_conformer_screening.py": {
+      "sha256": "a09b86a9ed4a755ee519c898c3253904fe1f291333140d694a57a06f83dfde53",
+      "bytes": 14724
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_seeded_scoring.py": {
+      "sha256": "1703113fb5457b75cb3997f61b32738198b9bd2330cb5a5d8ce2459f5905c9b4",
+      "bytes": 13674
+    },
+    "tests/test_virtual_screening.py": {
+      "sha256": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f",
+      "bytes": 13242
+    },
+    "devtools/prepared_library_reference.py": {
+      "sha256": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+      "bytes": 4808
+    },
+    "devtools/tests/test_prepared_library_reference.py": {
+      "sha256": "0e682766c82ee30daad1faa9564f352fee333979027a3728239d8316e82b05e9",
+      "bytes": 12628
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650",
+      "bytes": 1905
+    }
+  },
+  "counts": {
+    "tests": 26,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "exit_code": 0,
+  "source_and_native_unchanged": true,
+  "context": {
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+    "origins": {
+      "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+      "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+    },
+    "versions": {
+      "pharmacophoremt": "0.4.0+120.g0925d97",
+      "molsysmt": "0.23.0+513.g9e1f1b1ad",
+      "argdigest": "0.17.1+3.g0712641",
+      "smonitor": "0.22.1+1.gc1b6ce2",
+      "pyunitwizard": "0.29.1+6.gf82b618",
+      "pytest": "9.2.0",
+      "pytest-receptor": "1.2.0",
+      "gh-run-receptor": "1.4.0",
+      "rdkit": "2026.9.2",
+      "ackredit": "0.12.1+10.g4beb850"
+    },
+    "native_before": {
+      "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+        "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+        "bytes": 101188064
+      }
+    },
+    "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-library-incremental-20261107-5fu9lhy2.scope",
+    "limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "memory_before_kib": {
+      "MemAvailable": 49490184,
+      "SwapFree": 8388568
+    },
+    "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=166991\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=166153\n",
+    "scope": "Unshipped incremental prepared-input analytical controls; no checkpoint/recovery/provider/benchmark qualification."
+  },
+  "post_run_context": {
+    "sdk": {
+      "head": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "clean": true,
+      "source": "Local shared object-store clone from ../molsyssuite, detached at accepted pin",
+      "override": "PHARMACOPHOREMT_SUITE_ROOT",
+      "declarations_exit_code": 0,
+      "installed_closure_checked": false
+    },
+    "post_run_provider_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+    "post_run_provider_state": [],
+    "source_identity_note": "Base Git head plus exact source overlay hashes identify this producer. Installed/editable version metadata alone does not identify its overlay.",
+    "scope_note": "Only selected source files and native artifact have pre/post checks, not full SDK/source or installed qualification."
+  },
+  "resources": {
+    "peak_cgroup_bytes": 344723456,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "scope": "Whole owned controller/test cgroup; not incremental per-input allocation or a benchmark."
+  },
+  "local_checks": {
+    "ruff_check": 0,
+    "ruff_format": 0,
+    "reporting_tests": 3,
+    "archive_tests": 18,
+    "declarations": 0
+  },
+  "review": {
+    "independent_static_review": true,
+    "decisions": [
+      "Forward native work key to every single-input evaluation, including nested conformer outcomes",
+      "Reject embedded on_error and digestion bypass before source iteration",
+      "Work key uniqueness and unchanged input/query/evaluator are explicit producer preconditions",
+      "Reader closure belongs to caller; adapter stops pulling and releases its references",
+      "Native score/status/coverage retain their distinct meanings"
+    ]
+  },
+  "full_evidence": {
+    "path": "public_library_incremental_20261107.json.gz",
+    "compressed_sha256": "b572e5e308e04f40cd0b73e434f91f5b6835e94cccf52cb5dc999e4c2de3b16a",
+    "compressed_bytes": 29199,
+    "uncompressed_sha256": "9fdf79acbf031898dfac105b1d1bead8c58a4d98956bfed7c07b22c6f66a8634",
+    "uncompressed_bytes": 167956,
+    "own_file_count": 20
+  },
+  "pending": [
+    "Journal, checkpoints, restart/retry and duplicate-publication detection",
+    "Authenticated molecular snapshots or inferred equivalence",
+    "Public API/installed-package support for this unshipped prototype",
+    "Public-provider receiving/preparation and biological validation",
+    "Indexing, throughput/memory-allocation benchmark or competitor comparison",
+    "Full source/installed/platform/release qualification"
+  ],
+  "local_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-library-incremental-20261107-5fu9lhy2",
+  "temporary_resources": {
+    "owner": "LMMV/dprada",
+    "review_date": "2026-11-20",
+    "policy": "Retain original control capsule; isolated SDK checkout can be removed after declaration checks. Shared source checkouts/environments untouched."
+  },
+  "evidence_limit": "Original tests/log/events/producer overlay are archived. No serialized molecular collection or per-input durable journal is implemented. Initial administrative default-path lookup failed before scientific execution; recovery used the unchanged accepted SDK pin. No remote CI dispatched; full exact-head gates remain #9."
+}

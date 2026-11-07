@@ -250,6 +250,30 @@ class TestDistributionContract(unittest.TestCase):
         self.assertFalse(temporary.exists())
         self.assertNotIn("phmt_test_support", sys.modules)
 
+    def test_incremental_reference_is_privately_staged_without_runtime_imports(self):
+        from devtools.scripts.installed_test_support import staged_support
+
+        declaration = self.inventory["installed_tests"]["support"]
+        isolated_path = [entry for entry in sys.path if Path(entry).resolve() != ROOT]
+        with patch.object(sys, "path", isolated_path):
+            original_path = list(sys.path)
+            with staged_support(
+                self.root,
+                declaration,
+                ("pharmacophoremt", "molsysviewer_pharmacophoremt"),
+            ) as stage:
+                name = "phmt_test_support.prepared_library_reference"
+                spec = importlib.util.find_spec(name)
+                expected = ROOT / "phmt_test_support/prepared_library_reference.py"
+                self.assertEqual(Path(spec.origin).read_bytes(), expected.read_bytes())
+                self.assertTrue(Path(spec.origin).is_relative_to(stage.root))
+                self.assertNotIn(name, sys.modules)
+                self.assertEqual(sys.path, original_path)
+                stage.check()
+                temporary = stage.root
+        self.assertFalse(temporary.exists())
+        self.assertNotIn("phmt_test_support", sys.modules)
+
     def test_receptor_study_helpers_and_frozen_plans_are_privately_staged(self):
         from devtools.scripts.installed_test_support import staged_support
 

@@ -66,8 +66,12 @@ native writers provide transactional checkpoints.
 design in explicit status/score/coverage/witness expectations. The separately
 [declared control selection](../evidence/public_library_native_contract_plan_20261106.json)
 checks existing native behavior; it is not an implemented iterator/journal,
-public-library receiving or biological validation. The first prototype remains
-a bounded prepared-input reference workflow before choosing an index strategy.
+public-library receiving or biological validation. The first
+[incremental prepared-input prototype](../prepared_library_reference.md) now
+composes the existing native tools before choosing an index strategy. Its
+[separate analytical receipt](../evidence/public_library_incremental_support_20261107_summary.json)
+owns the new lazy-consumption/source-mapping/evidence controls. It adds no public
+API, molecular snapshot, journal/restart or provider receiving qualification.
 
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening
@@ -79,7 +83,9 @@ The registry records proposed priorities and initial assessments for 17 resource
 No provider is newly qualified. DrugBank's automatic-acquisition route is deferred
 under the observed download pause, with a specific revisit trigger. Enamine's
 applicable agreement/access requirements remain an explicit assessment item.
-No chemical dataset download, molecular preparation or score ran in this work.
+The registry research did not download or prepare a chemical dataset or run a
+screening score. Native and incremental analytical fixture controls are separately
+declared executions, not screening of a newly acquired public collection.
 
 ## Alternatives and limits
 

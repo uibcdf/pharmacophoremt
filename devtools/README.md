@@ -72,3 +72,10 @@ limit plus one byte before rejecting oversized input. Separate CLI controls
 protect that bound and frozen-plan validation before source access. Classification
 and aggregate output remain unchanged; earlier archived source/result identities
 retain their original meaning.
+
+The unshipped `phmt_test_support.prepared_library_reference.screen_prepared` prototype composes the
+three native evaluators one prepared entry at a time, preserving work/source
+occurrences, nested IDs and explicit score/failure meaning. It is development
+code, with caller-owned readers and no acquisition, index, journal or public API
+commitment. Its [contract and qualification](../devguide/prepared_library_reference.md)
+link the declared analytical controls and original execution receipt.
