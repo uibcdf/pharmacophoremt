@@ -16,7 +16,7 @@ evidence retain finer-grained authority than this orientation page.
 | No mandatory favorable EF/AUC/LOO outcome | Scientific quality comes from declared labels, comparators, leakage controls, uncertainty and honest negative/inconclusive results | [Two-study objective](pending_proposals/qualify_receptor_screening_studies.md), #103 |
 | Intermediate0.x releases remain possible |1.0 is agreed scientific/product scope, not a compulsory0.9-to1.0 jump;0.10/0.11 remain available | [Readiness](release_0_5_0_readiness.md), #95 |
 | Addon work is deferred | Source/payload code exists; live-browser qualification remains separate | #58, [viewer planning](visualization_strategies.md) |
-| Direct pushes retain exact-head CI/recovery duties | Principal-maintainer authorization persists; new contributors use owner-reviewed PRs | [Checkpoint policy](../MOLSYSSUITE_GUIDE.md#direct-pushes-and-validation-checkpoints), #9 |
+| Principal-maintainer delivery uses direct commit/push and deliberate CI checkpoints | Liliana explicitly authorizes this route and requests `[skip ci]` for routine/small commits (2026-11-06); batch pushes and retain scope-appropriate local checks, with pending exact-head evidence under #9 | [Local instructions](../AGENTS.md#principal-maintainer-delivery-instructions), [checkpoint policy](../MOLSYSSUITE_GUIDE.md#direct-pushes-and-validation-checkpoints), #9 |
 | Controlled source is distinct from public delivery | A passing subset/provider source cannot qualify a public package or full installed/platform matrix | [Public receiving](public_dependency_receiving.md), #10/#23/#95 |
 
 ## Current workstreams
@@ -25,7 +25,9 @@ evidence retain finer-grained authority than this orientation page.
 | --- | --- | --- |
 | #103 receptor-to-screening studies | Objective accepted; neither full biological study is complete | Admit original methods/data/cohort/preparation, freeze receptor/comparator/evaluation and execute |
 | #66 ERalpha binding | Frozen source pools/exposure persist; original Sun2006, Xin2023, Gungor2006 and Scott2023 methods unresolved | New authorized access lead; don't repeat exhausted routes or alter frozen queries/thresholds |
-| #106 second-target admission | BRD4 prioritized;1,780-AID census complete, nine isolated-BD1 leads, no admitted target/cohort | [Primary-method review](receptor_study2_primary_method.md), then prospective single-source necessary label capacity; no activities received yet |
+| #106 second-target admission | Nine fixed leads reviewed; capacity/coupled outcomes and seven held sources remain separate | Resolve original material/data/curation authority; further unresolved-domain review needs a new declaration; no activities admitted |
+| #108 public-library workflow | Survey → [architecture proposal](public_library_architecture.md) and [worked contracts](public_library_contract_examples.md); identities, guided/expert parity and committed-failure/new-run policy are explicit proposals | Qualify a bounded prepared-input reference prototype; journal durability, index strategy and new public names remain unimplemented/unfrozen |
+| #128 tool-study registry | [Dedicated public index](https://github.com/uibcdf/pharmacophoremt/discussions/129) and ten documentary study records | Maintain [scope/evidence/disposition rules](pharmacophore_tools_registry.md), declare comparisons before execution, and preserve unresolved questions |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |
 | #9/#10/#23 CI/support/distribution | Separate source, supported-platform/minor, installed and public backlogs | Exact run/attempt and artifact/dependency evidence; narrow checks cannot clear full gates |
@@ -39,13 +41,54 @@ guides; [support boundaries](support_library_boundaries.md) tracks actual adopti
 
 ## Resume science deliberately
 
-Migration does not execute the next scientific plan. When resumed, verify the
-published plan/source identities first. #106 next checks private single-AID
-capacity using strong IC50≤0.5 versus weak IC50>5 micromolar and50 eligible SID
-upper bounds per class. Those are assay-specific reported potencies, not general
-inactivity or independent molecules. A failed necessary gate stops that declared
-source/design before a new nomination. A passing raw count still needs MolSysMT
+Migration alone does not execute a scientific plan. Deliberate resumption now
+received #106's declared single-AID capacity, after verifying the published plan
+and unchanged source identities. Strong IC50≤0.5 versus weak IC50>5 micromolar
+remain assay-specific reported potencies, not general inactivity or independent
+molecules. AID1805333 stops:32 eligible weak SIDs cannot meet50 per class. Preserve
+the91 missing relations rather than assuming equality, and record the stop before
+a new source nomination. A passing later raw count would still need MolSysMT
 chemical/state/series grouping, preparation, and complete PHMT material/exposure/
 interference admission before receptor/comparator choices and scores are frozen.
 Do not pool patents, tune on outcomes, relax labels or replace failures. Both
 studies remain open until the complete declared evidence actually exists.
+
+The [follow-on review](receptor_study2_source_lineage_review.md) records shared
+publication evidence for AID 1795677 without transferring the earlier class
+counts or asserting molecular equivalence. AID 1797292's original method is now
+received, but original table units and material/species are unresolved; a failed
+PDF receiving attempt does not qualify a page or authorize unit/species transfer.
+A [separate recovery](receptor_study2_pdf_recovery.md) now verifies the complete
+PDF and bounded visual review; original table-unit and actual material authority
+still require source clarification before activities.
+The [fourth-source review](receptor_study2_fourth_source_method_review.md) reuses
+the originalUS9763922 HTML and verifies fresh1797167 metadata. Its exact AlphaLisa
+method correspondence and explicit FormulaII table units are positive documentary
+evidence; experimental material and individual-row mapping remain unresolved.
+The [2061300 review](receptor_study2_fifth_source_method_review.md) now supports
+original FP-derived inhibitor Ki in nM, distinct from tracer Kd. The incorporated
+PCT states Ki/30 min; historical metadata hashes support a dated correction
+of our old "KD title" description without changing original KO/US `30 mM` bytes.
+Material, tracer and individual-row authority remain pending. The
+[1798835 review](receptor_study2_sixth_source_method_review.md) now supports the
+BD1 K57–E168 TR-FRET Ki column in µM and preserves the separate BD2/cellular
+contexts and literal BD2 boundary conflict. Actual material, probe Kd/calculation
+and row authority remain pending; unrelated curator annotations do not fill them.
+The [last three reviews](receptor_study2_remaining_sources_review.md) now cover
+1805218/1805772/1804941. Source 1805218 has conflicting predicted/experimental
+prose and a 134-record numeric table; no three-record capacity bound follows.
+Actual material/controls/curation and source-specific interval transfer remain
+pending. All nine fixed leads have bounded outcomes, with no newly admitted
+activities. Draft authority questions remain unsent; 19 unresolved-domain records
+are not silently excluded or promoted.
+
+## Public libraries and complete unresolved metadata receiving — 2026-11-06
+
+The [19-source receiving](receptor_study2_unresolved_domain_receiving.md) verifies
+all source identities/fields in one response; all remain domain-unresolved and
+the nine earlier outcomes stay intact. No new activity cohort is admitted.
+The user also requests both retrospective validation and new-library screening.
+[Provider research](public_library_support_research.md) proposes a common library
+workflow and records access/3D/implementation limits. It is a product design
+input, not implemented library support, new scoring or retrospective acceptance.
+Generic molecular collection reading/preparation remains MolSysMT-owned.

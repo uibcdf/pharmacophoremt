@@ -51,6 +51,19 @@ Track this member's source qualification and public-delivery evidence in
 `uibcdf/pharmacophoremt#23`. The common Python/support
 requirements and actual component metadata retain their separate authority.
 
+## Principal-maintainer delivery instructions
+
+For this work directly supervised by Liliana, she explicitly authorizes commit
+and push to this repository without opening a PR (2026-11-06). Preserve existing
+work and use focused commits; do not introduce a PR approval round for that
+authorized internal route.
+
+Use the recognized `[skip ci]` marker on routine/small commits and batch pushes.
+Run the local checks appropriate to the changed scope. Remote CI is reserved for
+deliberate validation checkpoints and the existing recovery schedules; record
+pending exact-head coverage under #9. This instruction does not turn local
+checks into full source/installed/release evidence or waive their separate gates.
+
 ## Registered integration guides
 
 Read the registered consumer guides when working on their respective boundaries:

@@ -56,7 +56,7 @@ Versioned historical evidence and current product claims retain distinct scope.
 1. Observe the dedicated category without changing other categories/history.
 2. Publish the index and ten initial tool records with primary sources, explicit
    evidence boundaries, comparison questions and stable links.
-3. Deliver the friendly intake template through normal review and record actual
+3. Deliver the friendly intake template through the authorized direct route and record actual
    default-branch/rendering state; retain the usable interim text template.
 4. Maintain the comparison survey and owner/disposition protocol. A future
    executed comparison declares scientific problem, versions, prepared inputs,

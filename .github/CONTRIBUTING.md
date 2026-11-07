@@ -13,6 +13,13 @@ describes how to merge code changes into this projectname.
 
 ## Making Changes
 
+Principal-maintainer-supervised internal work may use the explicitly authorized
+direct commit/push route in [AGENTS.md](../AGENTS.md#principal-maintainer-delivery-instructions).
+Routine/small commits use `[skip ci]`, with scope-appropriate local checks and
+batched pushes. Remote CI runs at deliberate validation checkpoints or through
+the existing recovery schedules; pending exact-head evidence remains tracked.
+The PR route below applies to contributions without that internal authorization.
+
 * Add some really awesome code to your local fork.  It's usually a [good
   idea](http://blog.jasonmeridth.com/posts/do-not-issue-pull-requests-from-your-master-branch/)
   to make changes on a

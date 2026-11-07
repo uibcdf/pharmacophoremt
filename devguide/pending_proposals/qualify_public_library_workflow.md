@@ -55,6 +55,20 @@ preparation fallback is recreated here.
 
 ## What is inspected and what remains
 
+The [architecture proposal](../public_library_architecture.md) now specifies
+source/prepared/search-asset/query/run identities, guided/expert operation parity,
+invalidation and a single-writer journal policy. A committed terminal failure
+stays authoritative in that run; retrying it creates a linked new run, while
+resume handles uncommitted/interrupted work. It does not claim that current
+native writers provide transactional checkpoints.
+
+[Worked native examples](../public_library_contract_examples.md) ground that
+design in explicit status/score/coverage/witness expectations. The separately
+[declared control selection](../evidence/public_library_native_contract_plan_20261106.json)
+checks existing native behavior; it is not an implemented iterator/journal,
+public-library receiving or biological validation. The first prototype remains
+a bounded prepared-input reference workflow before choosing an index strategy.
+
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening
 materializes its full input iterable. Prepared-native evaluators do not constitute

@@ -54,9 +54,10 @@ a file format or an API does not establish a functioning PHMT integration.
 New proposals use the category form: resource name/official URL, scientific use
 and value, known formats/access/terms, preparation limitations and related links.
 Unknown technical details are acceptable; contributors need not decide support
-status or priority. Until the form is published and its rendering observed, the
-same fields in the public index provide the interim text template. Do not claim
-that local YAML validation proves a live GitHub form.
+status or priority. The form source is maintained in this repository; verify
+default-branch delivery separately from actual rendering. Until rendering is
+observed, the same fields in the public index provide a usable text template.
+Local YAML validation does not prove a live GitHub form.
 
 Triage reuses the existing resource thread, links duplicates without deleting
 history, and moves concrete work to an owning issue. Summarize any accepted,
@@ -108,10 +109,11 @@ official citations are in each public thread. The product issue records current
 dispositions and revisit conditions. Final remote-body and link readback is
 recorded in that capsule; publication evidence is not scientific validation.
 
-The intake YAML is prepared locally; source publication, default-branch adoption
-and actual form rendering retain their separate observed states. Record its
-review route in #108 rather than silently claiming a live form. The text fields
-in the public index provide a usable interim proposal route.
+The principal maintainer explicitly authorizes direct commit/push, with `[skip ci]`
+for routine/small changes, on 2026-11-06. The forms and guidance follow that route;
+PR #127 retains the initial preparation history rather than an approval gate.
+Record actual main-branch delivery and rendering evidence separately in #108.
+The text fields in the public index remain a usable proposal route.
 
 Molecular collections/preparation remain MolSysMT-owned. This launch downloads
 no chemical dataset, generates no states/conformers, runs no new model/score and

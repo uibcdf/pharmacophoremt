@@ -53,9 +53,10 @@ before it supports a design decision.
 The friendly category form asks for name/official source, role, why study it,
 known version/access/license/documents, comparison questions and related links.
 Unknown details are welcome, and no local test/benchmark is required to suggest a
-tool. Until default-branch form adoption and live rendering are observed, the
-index provides the same usable text fields. Local YAML checks alone do not prove
-a live GitHub form. Record its review/adoption state in #128 and PR #127.
+tool. Form source is maintained in this repository; default-branch delivery and
+live rendering are separate observations. Until rendering is verified, the index
+provides the same usable text fields. Local YAML checks alone do not prove a live
+GitHub form. Record actual delivery/rendering in #128.
 
 Search/reuse the canonical tool thread, link duplicates and preserve discussion
 history. Concrete implementations or executed benchmark proposals use owning
@@ -120,7 +121,9 @@ index links are verified in the owned local publication capsule
 `build/phmt-public-library-20261106-0mxdo3ak`. This is administrative/research
 publication evidence, not scientific validation.
 
-The automatic form is prepared for the registry-source PR #127. Default-branch
-adoption, live rendering, software execution, scientific comparisons and measured
-large-library performance retain separate pending states. The text template and
-public study records are usable independently of form adoption.
+The principal maintainer explicitly authorizes direct commit/push with routine
+`[skip ci]` commits on 2026-11-06. The source follows that route; PR #127 retains
+the initial preparation history and is not an approval gate. Default-branch
+delivery, live rendering, software execution, scientific comparisons and measured
+large-library performance retain separate evidence. The text template and public
+records remain usable independently of a rendered form check.

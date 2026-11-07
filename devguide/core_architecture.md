@@ -72,6 +72,15 @@ records activation, absence/failure and delivery limits.
 
 ## Proposed interoperability and extensions
 
+The [public-library architecture proposal](public_library_architecture.md)
+extends the reviewed lifecycle from source/received/prepared artifacts to optional
+PHMT search assets, frozen queries/plans, run outcomes and grouped hits. It keeps
+guided and expert operations scientifically equivalent and distinguishes a bounded
+reference route from reusable indexing. [Worked native contracts](public_library_contract_examples.md)
+identify existing status/score/coverage behavior and unimplemented journal/recovery
+requirements. These documents do not introduce executable collection APIs or
+change existing model, facade or native evaluator semantics.
+
 A generalized native MolSysMT form for `Pharmacophore` is an interoperability
 proposal, not an executable getter/conversion contract promised here. Future
 adapters need provider-reviewed attribute meanings, mappings and failures; do not

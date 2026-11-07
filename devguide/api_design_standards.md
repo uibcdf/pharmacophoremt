@@ -25,6 +25,13 @@ that comparison and provider-boundary review support their scope. Record tradeof
 and evidence in #108; a competitor's UI, method name or timing is not an accepted
 PHMT contract or equivalent scientific result.
 
+The resulting [architecture proposal](public_library_architecture.md) and
+[worked native examples](public_library_contract_examples.md) specify the
+identity/lifecycle, public operation families and status/score/coverage distinctions
+that a first prototype must preserve. Public names and persistent journal/index
+schemas remain undecided. A high-level preset and expert composition must resolve
+to the same scientific settings, including grouping, limits and tie semantics.
+
 ## Molecular-source admission review — 2026-11-05
 
 [#101 review](molecular_source_admission.md) refutes a suspected source overwrite

@@ -1,0 +1,257 @@
+{
+  "recorded_at": "2026-11-06T22:52:39.081297+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "scope": "User-authorized Chemical libraries Discussions registry launch and reviewable intake-form source; no library acquisition, molecular preparation, model, score or provider qualification.",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "category": {
+    "id": "DIC_kwDOP5ch7M4DKjiI",
+    "name": "Chemical libraries",
+    "slug": "chemical-libraries",
+    "description": "Public databases and chemical libraries: integration candidates, assessments, support status, and reasons for deferral",
+    "isAnswerable": false
+  },
+  "index": "https://github.com/uibcdf/pharmacophoremt/discussions/109",
+  "discussions": [
+    {
+      "number": 109,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/109",
+      "body_sha256": "a496cd456bdaa4fe745d27bc3ab081cde1cbb0f8ecce0a9da2d5fd9e4c6bef16"
+    },
+    {
+      "number": 110,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/110",
+      "body_sha256": "78770e8c14f8a4ff7f04915a92351e15298948eeffcfb87462342dd7e3ab2fa0"
+    },
+    {
+      "number": 111,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/111",
+      "body_sha256": "094c6acb40357da40400a3103a454aca06823820aa4f52673a70206e1fcdab3a"
+    },
+    {
+      "number": 112,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/112",
+      "body_sha256": "4469905fbad86cef134534cd9fca7887ab789303de3a782e859ee2c53e1a4f61"
+    },
+    {
+      "number": 113,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/113",
+      "body_sha256": "c0fcfd52b0c21da5678c22a408f099c9cdf01e7e54e67f22b00c25fec3f82a57"
+    },
+    {
+      "number": 114,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/114",
+      "body_sha256": "1abcd5edf542ed0a028e7e34eeceb7cf7ed05ad0725bc241fcbfcbddef32461d"
+    },
+    {
+      "number": 115,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/115",
+      "body_sha256": "f696eb29b3a01516626d75a44341121bc3fa87a42fc4128871818a718e764df9"
+    },
+    {
+      "number": 116,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/116",
+      "body_sha256": "795f83180cde459363e927c9934767903f99fe35f2a7d9eb49d7fe07572fff9c"
+    },
+    {
+      "number": 117,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/117",
+      "body_sha256": "ae7c66197ae7b780de5afd1c9b50b49b4edba6ffb8e2dca8366f92a0b5a397f5"
+    },
+    {
+      "number": 118,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/118",
+      "body_sha256": "0d73a7cf736e56031d4223c3f022364c03005b9ba6e3baee70f80afd7c4d62fa"
+    },
+    {
+      "number": 119,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/119",
+      "body_sha256": "5d4546aa6c81afa1866f27c479bf887b278b023fdc36ad1f59e8a468c998cd93"
+    },
+    {
+      "number": 120,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/120",
+      "body_sha256": "15fd381ac38a467db987ae8d48acaa3e343afcb5cb46d214dce55a6646627f6b"
+    },
+    {
+      "number": 121,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/121",
+      "body_sha256": "f539355577da33f64072feb125737976669a42cc69bfa1f745e562077e0e127c"
+    },
+    {
+      "number": 122,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/122",
+      "body_sha256": "41a1be1a02248694aea9dd48b0ed931909b24b89b63dfb994719daed4e12e5bd"
+    },
+    {
+      "number": 123,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/123",
+      "body_sha256": "25e0bf0f795d7107af13c94398b762a4ac8293e15e28ef4650a9bb19a1830329"
+    },
+    {
+      "number": 124,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/124",
+      "body_sha256": "82f3e866b289751531636c858a8f5d4e92819ced671f81a9fde94286d60304f3"
+    },
+    {
+      "number": 125,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/125",
+      "body_sha256": "7d6ec6085d2bfe554908d678274f315e7b798740dca67f7ad489d3715fd1c1b3"
+    },
+    {
+      "number": 126,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/126",
+      "body_sha256": "4b38c79bfd503a677c7219aa79d932aa9c9b4964c08fcc6813951f497fc4b5ba"
+    }
+  ],
+  "source_review": {
+    "url": "https://github.com/uibcdf/pharmacophoremt/pull/127",
+    "isDraft": true,
+    "state": "OPEN",
+    "headRefOid": "e6da7e7415596fa2c4d8f45b86fbe6d37e346b87",
+    "changedFiles": 6,
+    "verified_files": {
+      ".github/DISCUSSION_TEMPLATE/chemical-libraries.yml": {
+        "blob_sha": "bb9f0436796884ce7ec35168af644ea8f77b44de",
+        "sha256": "0dda5dbc595f2c8fcb7b354095c9030351b98c0cc822e13fa5e4589f63fdd186"
+      },
+      "devguide/public_library_registry.md": {
+        "blob_sha": "07207bbe41f39df05a59489281cb0d5b00ce2d4c",
+        "sha256": "dff6c18c9611c52930234f6ab8272ecee46a228d69f31994b5d3f6ccb0a5c48e"
+      },
+      "devguide/public_library_support_research.md": {
+        "blob_sha": "a1862f98d156a78e3dc6a477a8c901c03ac7d5ee",
+        "sha256": "bbb9990be8dae3b7ee6153cd128b9de88135cb68797cf09c92af63f1d5f4e77b"
+      },
+      "devguide/pending_proposals/qualify_public_library_workflow.md": {
+        "blob_sha": "2f5c7b6d524fe831a6113031be27208bbf048f95",
+        "sha256": "54c5bf4f71e3675de5e10c3a0fb74820afa0de3a94c7956ee84a4535d02fb8a8"
+      },
+      "devguide/pending_proposals/README.md": {
+        "blob_sha": "46f9a8b90dd5c9ff55d312b3911ef4bbb70e2610",
+        "sha256": "fc3736d0fade6b5714e1b2d13ed5be71433847067f8a1104a2eb17a07ad4a06a"
+      },
+      "tests/test_reporting_protocol.py": {
+        "blob_sha": "b161ca4a28876e27185266747c923c1028cb300c",
+        "sha256": "4401542e9b95c02458a097c3e434a4c2ff3aa9ea4ad91c1b11396d596db787a8"
+      }
+    }
+  },
+  "default_branch_commit_at_readback": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+  "form_state": "Prepared and published in draft PR #127; not adopted on default branch and not UI-rendered. Interim text template is live in index #109.",
+  "local_validation": {
+    "scope": "Offline form syntax, local links, issue-backed reporting and whitespace; no UI or scientific qualification",
+    "cpu_affinity": [
+      19
+    ],
+    "nice": 19,
+    "address_space_limit_bytes": 536870912,
+    "backend_threads": 1,
+    "local_links": 9,
+    "form_fields": 7,
+    "required_fields": 4,
+    "checks": [
+      {
+        "command": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "files": {
+      ".github/DISCUSSION_TEMPLATE/chemical-libraries.yml": {
+        "sha256": "0dda5dbc595f2c8fcb7b354095c9030351b98c0cc822e13fa5e4589f63fdd186",
+        "bytes": 3035
+      },
+      "devguide/public_library_registry.md": {
+        "sha256": "dff6c18c9611c52930234f6ab8272ecee46a228d69f31994b5d3f6ccb0a5c48e",
+        "bytes": 7611
+      },
+      "devguide/public_library_support_research.md": {
+        "sha256": "bbb9990be8dae3b7ee6153cd128b9de88135cb68797cf09c92af63f1d5f4e77b",
+        "bytes": 16066
+      },
+      "devguide/pending_proposals/qualify_public_library_workflow.md": {
+        "sha256": "54c5bf4f71e3675de5e10c3a0fb74820afa0de3a94c7956ee84a4535d02fb8a8",
+        "bytes": 3971
+      }
+    }
+  },
+  "additional_checks": [
+    "Targeted Ruff lint and format check pass for tests/test_reporting_protocol.py.",
+    "Exact remote bodies/categories verified for index plus 17 provider threads; both-way index and #108 links verified.",
+    "Six remote PR file texts match local reviewed contents; no unrelated work published."
+  ],
+  "correction": {
+    "initial_failure": "The report inventory assertion did not yet include newly opened issue #108. Existing report metadata and generated indexes passed.",
+    "correction": "Added #108 to the explicit expected issue set in tests/test_reporting_protocol.py; retained the original failing output.",
+    "scope": "Inventory update only; no runtime or scientific behavior changed."
+  },
+  "hosted_checks_observation": {
+    "head_sha": "e6da7e7415596fa2c4d8f45b86fbe6d37e346b87",
+    "CI": {
+      "id": 42307705362,
+      "attempt": 1,
+      "status": "queued",
+      "conclusion": null
+    },
+    "MolSysSuite policy": {
+      "id": 42307705720,
+      "attempt": 1,
+      "conclusion": "success"
+    },
+    "Conda publication governance": {
+      "id": 42307705870,
+      "attempt": 1,
+      "conclusion": "success"
+    },
+    "coverage": "Observation only; no full CI pass or merge claimed."
+  },
+  "run_inspection_fallback": {
+    "observed": "gh run-receptor extension is not installed; version/help probes return unknown command.",
+    "route": "Bounded native GitHub API run listing for the exact PR head; no logs, rerun or mutation.",
+    "owner": "LMMV/dprada; existing CI/tooling work #9",
+    "removal_condition": "Receive the published receptor in the migrated development tooling before broader Actions diagnosis; this scope remains native facts only."
+  },
+  "private_receipts": "build/phmt-library-discussions-20261106-klzq7bv0",
+  "unexecuted": [
+    "Default-branch form adoption and live rendered form check",
+    "Full PR CI completion and integration review",
+    "Any public-library end-to-end workflow or scientific validation"
+  ]
+}

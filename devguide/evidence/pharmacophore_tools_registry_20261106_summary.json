@@ -1,0 +1,1130 @@
+{
+  "recorded_at": "2026-11-06T23:22:25.510062+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "scope": "User-authorized pharmacophore-tool registry, comparative documentary study and product/API requirements. No competitor/PHMT molecular execution, new runtime or performance/biological validation.",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/128",
+  "related_issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "category": {
+    "id": "DIC_kwDOP5ch7M4DKjnD",
+    "name": "Pharmacophore tools",
+    "slug": "pharmacophore-tools",
+    "description": "Pharmacophore software to study and compare: workflows, APIs, scientific methods, performance evidence, and lessons for PharmacophoreMT",
+    "isAnswerable": false
+  },
+  "preserved_categories": [
+    "announcements",
+    "chemical-libraries",
+    "ideas",
+    "pharmacophore-tools",
+    "q-a"
+  ],
+  "index": "https://github.com/uibcdf/pharmacophoremt/discussions/129",
+  "chemical_library_index": "https://github.com/uibcdf/pharmacophoremt/discussions/109",
+  "verified_tool_discussions": [
+    {
+      "number": 129,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/129",
+      "body_sha256": "c153524136a99b47958283e69e033134a879fbb49f2e107e4b4ce1ba357b69b0"
+    },
+    {
+      "number": 130,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/130",
+      "body_sha256": "aab13e164a66a2cdf1ff3ed46a5add651c424c38febc0fcfe8e53d076bbb47d3"
+    },
+    {
+      "number": 131,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/131",
+      "body_sha256": "0daef5e9f73bd31d4c447c08552ecbce5de6bd761c04989c78d0e0f59798f882"
+    },
+    {
+      "number": 132,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/132",
+      "body_sha256": "0bbcac7f965687770b244447fef4ad216b856629c94a2c28e199479981e386c5"
+    },
+    {
+      "number": 133,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/133",
+      "body_sha256": "35bead0eb69d2e877f6d6be68f110e97707dda1925d9ce5fd06043f3f687f649"
+    },
+    {
+      "number": 134,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/134",
+      "body_sha256": "a33b3c31fdc4d89bb30770edbf1ba1a85b6962a3b424d4fa8f8c9a71e613f4db"
+    },
+    {
+      "number": 135,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/135",
+      "body_sha256": "b56adc745117a5c635af7ed38ecca2fcd1b6f454efe3dad4dc409f19f66afb92"
+    },
+    {
+      "number": 136,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/136",
+      "body_sha256": "9ae415d7dc7cc80fbca8a0260619a8de069e2f325fa7aed5d72a676a1a13fdd8"
+    },
+    {
+      "number": 137,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/137",
+      "body_sha256": "a6c2179f19d41af2ae3200ff3f9caaeaf6479b4cd71360ef09c6f67772d4aee6"
+    },
+    {
+      "number": 138,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/138",
+      "body_sha256": "c48630c8a6f4dcb84b0e3496abefb3b8342713795b117ba14cb851e91416cee8"
+    },
+    {
+      "number": 139,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/139",
+      "body_sha256": "f76a56c49aeefeeabcb2478c0629972160886094e95ae5a19d2c7ff636ba7fd3"
+    }
+  ],
+  "research_note": "devguide/pharmacophore_library_workflow_survey.md",
+  "survey_scope": "Nine ecosystems, ten tool records; official source/manual/product documentation and original publications; current, dated and historical claims distinguished.",
+  "accepted_product_targets": [
+    "Powerful capabilities with scientific/performance evidence",
+    "Intuitive guided route",
+    "Complete coherent detailed public API",
+    "Quality ahead of delivery speed",
+    "Compare established workflows before fixing library APIs and index strategies"
+  ],
+  "unfrozen_design_candidates": [
+    "Collection/preparation/search-asset/run/result lifecycle",
+    "Incremental prepared-input scan",
+    "Reusable indexing/hybrid filtering",
+    "Optional external-engine semantics contract"
+  ],
+  "source_review": {
+    "PR": {
+      "url": "https://github.com/uibcdf/pharmacophoremt/pull/127",
+      "title": "Add chemical-library and pharmacophore-tool research registries",
+      "headRefOid": "0620ac3e1966cb427db85760d29bcedf7bf689c0",
+      "changedFiles": 13,
+      "isDraft": true,
+      "state": "OPEN"
+    },
+    "default_branch": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+    "files": {
+      ".github/DISCUSSION_TEMPLATE/chemical-libraries.yml": {
+        "blob_sha": "bb9f0436796884ce7ec35168af644ea8f77b44de",
+        "sha256": "0dda5dbc595f2c8fcb7b354095c9030351b98c0cc822e13fa5e4589f63fdd186"
+      },
+      ".github/DISCUSSION_TEMPLATE/pharmacophore-tools.yml": {
+        "blob_sha": "9e1e93d940f18656412ab0bb3b8f2df9b8267070",
+        "sha256": "eb50fd2f8ae589bfa189e1c46304dbef545bac80f557ffef4143ef193832ca82"
+      },
+      "devguide/public_library_registry.md": {
+        "blob_sha": "ad95feb492eca6c6e15411ac0f45d2de8dee3102",
+        "sha256": "7e11e070f9fc9db38c5189d6a04321599f7252dca0229b04340c35794b196480"
+      },
+      "devguide/public_library_support_research.md": {
+        "blob_sha": "e0e45d75b8d147d238615da9c9f0ed3d7803c522",
+        "sha256": "77e6050e1c52e5cf40cbffa38bfd74073ad9e2b3ff6d9a772efc8e0457dbd649"
+      },
+      "devguide/pending_proposals/qualify_public_library_workflow.md": {
+        "blob_sha": "c84d7c33de1472eddf2d2e9dfde8ee95cc3bb092",
+        "sha256": "3e0451a3cc9c6b0646683bb5866d5311b58801f935c9b28915e76012aebe02f6"
+      },
+      "devguide/pending_proposals/study_pharmacophore_tools.md": {
+        "blob_sha": "555388a44348a883ffd8a105a8107608cae64c9b",
+        "sha256": "3d6e882361b7caa81acc460b79e2ab1eee5ee087db7dbb84ecbf8e05d6f21cbe"
+      },
+      "devguide/pending_proposals/README.md": {
+        "blob_sha": "3708ba5de1b6cc46e9326781d1e66a052e9cbbfb",
+        "sha256": "6b9b0ecb273de852aca04a7bbaee953acb2c5fe78a86414f0619a62ec8403813"
+      },
+      "tests/test_reporting_protocol.py": {
+        "blob_sha": "4447336d7345c403880450681108221af752165b",
+        "sha256": "e065f2653b0d9144ec9da58482c08653eefb587ab504dc23882e64d439a4afc1"
+      },
+      "devguide/pharmacophore_library_workflow_survey.md": {
+        "blob_sha": "5bceb6b7dbe80b63165f6172551166a9f4b156bc",
+        "sha256": "bb9f5855448e3c68729c10368f01e2680a8facaf051187d85bb86ea7f4bc52b6"
+      },
+      "devguide/pharmacophore_tools_registry.md": {
+        "blob_sha": "137c6ea7edb6a57240acb6a2a017fb17397c9e6e",
+        "sha256": "abc48589dd4a135690e62f7c324ace3060bf2055388b6bc3e8dcc1cee640ea26"
+      },
+      "devguide/vision_and_scope.md": {
+        "blob_sha": "50eb5176b14511294f2606b0ad9ec64a8853c452",
+        "sha256": "6818821826a72e09edee6a8d5271d03fff61340e2a98654ab61b03b60faea215"
+      },
+      "devguide/api_design_standards.md": {
+        "blob_sha": "c621ffcc92d26d8997f4b14b15c74abc108090a8",
+        "sha256": "4a895201ce2213fe1059a7df3a9a8aca2115f9f84dd23512f574e94ac63e4cb8"
+      },
+      "devguide/README.md": {
+        "blob_sha": "09130be8422f9b7f4cb43bdb05e40af4c716bc0a",
+        "sha256": "ad3291f72788ec0bb59c07fe79fe9f362517437e46edb0d05ab670158c361c8d"
+      }
+    }
+  },
+  "forms_state": "Both YAML forms validated and published in draft PR #127, not adopted on main and not UI-rendered; live indexes provide interim text templates.",
+  "offline_validation": {
+    "scope": "Twelve maintained Markdown pages: local links, issue-backed indexes, reporting/archive controls and whitespace. External bibliography is a research ledger, not a URL-health test or installed-software qualification.",
+    "cpu_affinity": [
+      19
+    ],
+    "nice": 19,
+    "address_space_limit_bytes": 536870912,
+    "backend_threads": 1,
+    "checks": [
+      {
+        "command": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "output": "registry-source-validation-0.txt"
+      },
+      {
+        "command": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "registry-source-validation-1.txt"
+      },
+      {
+        "command": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "registry-source-validation-2.txt"
+      },
+      {
+        "command": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "output": "registry-source-validation-3.txt"
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "registry-source-validation-4.txt"
+      }
+    ],
+    "local_link_count": 184,
+    "local_links": [
+      {
+        "file": "devguide/pharmacophore_library_workflow_survey.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/pharmacophore_library_workflow_survey.md",
+        "target": "pharmacophore_tools_registry.md"
+      },
+      {
+        "file": "devguide/pharmacophore_library_workflow_survey.md",
+        "target": "../pharmacophoremt/screening/virtual_screening.py"
+      },
+      {
+        "file": "devguide/pharmacophore_library_workflow_survey.md",
+        "target": "../pharmacophoremt/_private/pose_batch.py"
+      },
+      {
+        "file": "devguide/pharmacophore_library_workflow_survey.md",
+        "target": "../pharmacophoremt/data/zinc.py"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "pending_proposals/qualify_receptor_screening_studies.md"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "checkpoint.md"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "core_architecture.md"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "testing_and_validation.md"
+      },
+      {
+        "file": "devguide/vision_and_scope.md",
+        "target": "roadmap.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "support_library_boundaries.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "vision_and_scope.md#design-principles"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "molecular_source_admission.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "retrospective_result_contracts.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "native_batch_contracts.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "nested_facade_contracts.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/api_design_standards.md",
+        "target": "evidence/model_dispatch_contract_20261104_summary.json"
+      },
+      {
+        "file": "devguide/pending_proposals/qualify_public_library_workflow.md",
+        "target": "../public_library_support_research.md"
+      },
+      {
+        "file": "devguide/pending_proposals/qualify_public_library_workflow.md",
+        "target": "../pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/pending_proposals/qualify_public_library_workflow.md",
+        "target": "../public_library_registry.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "onboarding.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "checkpoint.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "onboarding.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "machine_migration.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "checkpoint.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "decisions_and_workstreams.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "roadmap.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "core_architecture.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "vision_and_scope.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "api_design_standards.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "support_library_boundaries.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "testing_and_validation.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "validation_collection.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "templates/evidence_case.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pending_proposals/qualify_receptor_screening_studies.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study1_admission_protocol.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_primary_method.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pending_proposals/qualify_public_library_workflow.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pharmacophore_tools_registry.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pending_proposals/study_pharmacophore_tools.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "audit_20261104.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "audit_20261104_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "release_0_5_0_readiness.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "../devtools/conda-build/README.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "../docs/README.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "../docs/content/cookbook/index.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "../docs/content/validation/index.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "checkpoint_history_20261106.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "roadmap_history_20261106.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_label_capacity_receiving.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_source_lineage_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_third_source_method_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_pdf_recovery.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_fourth_source_method_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_fifth_source_method_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_sixth_source_method_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_remaining_sources_review.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "receptor_study2_unresolved_domain_receiving.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "classical_workflow.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "io_and_formats.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "modeling_strategies.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "dynamics_and_msm.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "specialized_modeling.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "ai_and_data_science.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "visualization_strategies.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pending_bugs/README.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "pending_proposals/README.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "archive/README.md"
+      },
+      {
+        "file": "devguide/README.md",
+        "target": "reporting_protocol.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "onboarding.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "decisions_and_workstreams.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "machine_migration.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "checkpoint_history_20261106.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "pharmacophore_tools_registry.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_capacity_receiving.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_primary_method.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_primary_method_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_activity_capacity_plan_20261106.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_label_capacity_receiving.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_source_lineage_review.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_third_source_method_review.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_source_lineage_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_pdf_recovery.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_pdf_recovery_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_pdf_recovery.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_fourth_source_method_review.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_fourth_source_method_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_fifth_source_method_review.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_fifth_source_method_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_sixth_source_method_review.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_sixth_source_method_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_remaining_sources_review.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_remaining_sources_20261106_summary.json"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "receptor_study2_unresolved_domain_receiving.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "machine_migration.md"
+      },
+      {
+        "file": "devguide/checkpoint.md",
+        "target": "evidence/brd4_label_capacity_20261106_summary.json"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "checkpoint.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "roadmap.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "../MOLSYSSUITE_GUIDE.md#component-responsibility-map"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "ligand_based_workflow.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "structure_based_workflow.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "public_receptor_generation.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "native_constraint_semantics.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "native_provenance_persistence.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "validation_collection.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "audit_20261104.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "audit_20261104_review.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "pending_proposals/qualify_receptor_screening_studies.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "release_0_5_0_readiness.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "visualization_strategies.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "../MOLSYSSUITE_GUIDE.md#direct-pushes-and-validation-checkpoints"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "public_dependency_receiving.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "pharmacophore_tools_registry.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "machine_migration.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "support_library_boundaries.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_source_lineage_review.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_pdf_recovery.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_fourth_source_method_review.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_fifth_source_method_review.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_sixth_source_method_review.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_remaining_sources_review.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "receptor_study2_unresolved_domain_receiving.md"
+      },
+      {
+        "file": "devguide/decisions_and_workstreams.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "checkpoint.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "capability_inventory.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "decisions_and_workstreams.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "roadmap_history_20261106.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "pending_proposals/qualify_receptor_screening_studies.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "onboarding.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "machine_migration.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_primary_method.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "evidence/brd4_activity_capacity_plan_20261106.json"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_label_capacity_receiving.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_source_lineage_review.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_third_source_method_review.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_pdf_recovery.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_fourth_source_method_review.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_fifth_source_method_review.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_sixth_source_method_review.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_remaining_sources_review.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "receptor_study2_unresolved_domain_receiving.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "classical_workflow.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "modeling_strategies.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "dynamics_and_msm.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "specialized_modeling.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "ai_and_data_science.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "pending_proposals/qualify_public_library_workflow.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "public_library_registry.md"
+      },
+      {
+        "file": "devguide/roadmap.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/public_library_support_research.md",
+        "target": "../MOLSYSSUITE_GUIDE.md#component-responsibility-map"
+      },
+      {
+        "file": "devguide/public_library_support_research.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/public_library_support_research.md",
+        "target": "../docs/content/validation/esr1_activity_pilot.md"
+      },
+      {
+        "file": "devguide/public_library_support_research.md",
+        "target": "../pharmacophoremt/data/zinc.py"
+      },
+      {
+        "file": "devguide/public_library_support_research.md",
+        "target": "../pharmacophoremt/screening/virtual_screening.py"
+      },
+      {
+        "file": "devguide/public_library_registry.md",
+        "target": "pending_proposals/qualify_public_library_workflow.md"
+      },
+      {
+        "file": "devguide/public_library_registry.md",
+        "target": "public_library_support_research.md"
+      },
+      {
+        "file": "devguide/public_library_registry.md",
+        "target": "../.github/DISCUSSION_TEMPLATE/chemical-libraries.yml"
+      },
+      {
+        "file": "devguide/public_library_registry.md",
+        "target": "pharmacophore_tools_registry.md"
+      },
+      {
+        "file": "devguide/public_library_registry.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/pharmacophore_tools_registry.md",
+        "target": "pending_proposals/study_pharmacophore_tools.md"
+      },
+      {
+        "file": "devguide/pharmacophore_tools_registry.md",
+        "target": "pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/pharmacophore_tools_registry.md",
+        "target": "vision_and_scope.md"
+      },
+      {
+        "file": "devguide/pharmacophore_tools_registry.md",
+        "target": "api_design_standards.md"
+      },
+      {
+        "file": "devguide/pharmacophore_tools_registry.md",
+        "target": "../.github/DISCUSSION_TEMPLATE/pharmacophore-tools.yml"
+      },
+      {
+        "file": "devguide/pharmacophore_tools_registry.md",
+        "target": "pending_proposals/qualify_public_library_workflow.md"
+      },
+      {
+        "file": "devguide/pending_proposals/study_pharmacophore_tools.md",
+        "target": "../pharmacophore_library_workflow_survey.md"
+      },
+      {
+        "file": "devguide/pending_proposals/study_pharmacophore_tools.md",
+        "target": "../pharmacophore_tools_registry.md"
+      }
+    ],
+    "survey_external_bibliography": [
+      "https://cdpkit.org/applications/confgen.html",
+      "https://cdpkit.org/applications/index.html",
+      "https://cdpkit.org/applications/isogen.html",
+      "https://cdpkit.org/applications/psdcreate.html",
+      "https://cdpkit.org/applications/psdinfo.html",
+      "https://cdpkit.org/applications/psdmerge.html",
+      "https://cdpkit.org/applications/psdscreen.html",
+      "https://cdpkit.org/applications/tautgen.html",
+      "https://cdpkit.org/introduction.html",
+      "https://docs.inteligand.com/ligandscout/",
+      "https://docs.inteligand.com/ligandscout/usage/",
+      "https://docs.inteligand.com/ls-remote/server-configuration/",
+      "https://docs.inteligand.com/ls-remote/version-dependencies/",
+      "https://github.com/OliverBScott/align-it",
+      "https://github.com/OliverBScott/align-it/tree/main/example",
+      "https://github.com/dkoes/pharmit",
+      "https://github.com/dkoes/pharmit/blob/master/README.md",
+      "https://github.com/dkoes/pharmit/blob/master/scripts/conformers.sql",
+      "https://github.com/dkoes/pharmit/blob/master/scripts/createconfs.py",
+      "https://github.com/uibcdf/openpharmacophore",
+      "https://github.com/uibcdf/pharmacophoremt/issues/108",
+      "https://github.com/uibcdf/pharmacophoremt/issues/128",
+      "https://learn.schrodinger.com/public/python_api/2022-2/_modules/schrodinger/pipeline/stages/phase.html",
+      "https://learn.schrodinger.com/public/python_api/2024-1/api/schrodinger.pipeline.stages.phase.html",
+      "https://learn.schrodinger.com/public/python_api/2024-4/api/schrodinger.application.phase.packages.phase_database_job_utils.html",
+      "https://pharmit.csb.pitt.edu/help.html",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC3124593/",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC4987880/",
+      "https://raw.githubusercontent.com/rdkit/rdkit/master/license.txt",
+      "https://www.3ds.com/assets/invest/2023-10/biovia-discovery-studio-overview.pdf",
+      "https://www.3ds.com/products/biovia/discovery-studio/ligand-and-pharmacophore-based-design",
+      "https://www.chemcomp.com/en/Products.htm",
+      "https://www.chemcomp.com/release_notes/moe202406/rnotes.htm",
+      "https://www.inteligand.com/download/LigandScout-4.2-Tutorial-Cards.pdf",
+      "https://www.inteligand.com/download/LigandScout_4_Command_Line_Tools.pdf",
+      "https://www.inteligand.com/products/ligandscout-xt/",
+      "https://www.inteligand.com/products/ligandscout/",
+      "https://www.inteligand.com/products/pharmacophoredb/",
+      "https://www.inteligand.com/solutions/library-generation/",
+      "https://www.rdkit.org/docs/Cookbook.html?highlight=etkdg",
+      "https://www.rdkit.org/docs/GettingStartedInPython.html",
+      "https://www.rdkit.org/docs/source/rdkit.Chem.Pharm3D.EmbedLib.html",
+      "https://www.schrodinger.com/eula/",
+      "https://www.schrodinger.com/platform/products/phase/",
+      "https://www.schrodinger.com/platform/products/prepared-commercial-compound-library/",
+      "https://www.schrodinger.com/wp-content/uploads/2024/04/2024q1_molport_report.pdf",
+      "https://www.uibcdf.org/OpenPharmacophore/_modules/openpharmacophore/screening/mol_db.html",
+      "https://www.uibcdf.org/OpenPharmacophore/_modules/openpharmacophore/screening/screening.html",
+      "https://www.uibcdf.org/OpenPharmacophore/contents/examples/virtual-screening/screening.html"
+    ],
+    "files": {
+      "devguide/pharmacophore_library_workflow_survey.md": {
+        "sha256": "bb9f5855448e3c68729c10368f01e2680a8facaf051187d85bb86ea7f4bc52b6",
+        "bytes": 28793
+      },
+      "devguide/vision_and_scope.md": {
+        "sha256": "6818821826a72e09edee6a8d5271d03fff61340e2a98654ab61b03b60faea215",
+        "bytes": 5469
+      },
+      "devguide/api_design_standards.md": {
+        "sha256": "4a895201ce2213fe1059a7df3a9a8aca2115f9f84dd23512f574e94ac63e4cb8",
+        "bytes": 5986
+      },
+      "devguide/pending_proposals/qualify_public_library_workflow.md": {
+        "sha256": "3e0451a3cc9c6b0646683bb5866d5311b58801f935c9b28915e76012aebe02f6",
+        "bytes": 4926
+      },
+      "devguide/README.md": {
+        "sha256": "432674841de57ffc683d8e36c11f8fe22130842648a3bd07876c73dca450a0f2",
+        "bytes": 6627
+      },
+      "devguide/checkpoint.md": {
+        "sha256": "41df27547359e7618ef2d2f3f00d9e23193131ab84aad56f80a68b969a719e48",
+        "bytes": 16154
+      },
+      "devguide/decisions_and_workstreams.md": {
+        "sha256": "baf6428d013915ce678b7f4d5ba5cce60a05ae35ae5eaa87736577c86dcdf7cb",
+        "bytes": 9215
+      },
+      "devguide/roadmap.md": {
+        "sha256": "7e2faa1c6bccef94599b5863bb74d993c7bcb2952b34eaeb96fca60d8d33b7ab",
+        "bytes": 8678
+      },
+      "devguide/public_library_support_research.md": {
+        "sha256": "77e6050e1c52e5cf40cbffa38bfd74073ad9e2b3ff6d9a772efc8e0457dbd649",
+        "bytes": 16465
+      },
+      "devguide/public_library_registry.md": {
+        "sha256": "7e11e070f9fc9db38c5189d6a04321599f7252dca0229b04340c35794b196480",
+        "bytes": 8008
+      },
+      "devguide/pharmacophore_tools_registry.md": {
+        "sha256": "abc48589dd4a135690e62f7c324ace3060bf2055388b6bc3e8dcc1cee640ea26",
+        "bytes": 8088
+      },
+      "devguide/pending_proposals/study_pharmacophore_tools.md": {
+        "sha256": "3d6e882361b7caa81acc460b79e2ab1eee5ee087db7dbb84ecbf8e05d6f21cbe",
+        "bytes": 3320
+      }
+    }
+  },
+  "additional_checks": [
+    "Both forms:7 unique fields,4required each; YAML parsing and supported field types pass.",
+    "Targeted Ruff lint and format checks pass for reporting inventory update.",
+    "13 exact remote PR file texts verified;101 source-branch relative targets exist.",
+    "11 exact tool-record/index bodies verified; bidirectional index/tool/#128 links and both index cross-links verified."
+  ],
+  "independent_review": {
+    "scope": "Pharmit/Pharmer evidence and accepted product/ownership guidance",
+    "result": "No blocking factual/ownership error; adopted novice-intake, lifecycle-state, live-handle/portable-evidence and equivalent-effective-settings refinements.",
+    "inspected_Pharmit_file_blobs": {
+      "createconfs.py": "60bd3df80819855cb445bb83a11ef359d61ddd85",
+      "conformers.sql": "ea6d92020353d70a3eea8b7f8b6d460e56b39a9d"
+    }
+  },
+  "hosted_run_observations": [
+    {
+      "conclusion": null,
+      "head_sha": "0620ac3e1966cb427db85760d29bcedf7bf689c0",
+      "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42311103831",
+      "id": 42311103831,
+      "name": "MolSysSuite policy",
+      "run_attempt": 1,
+      "status": "queued"
+    },
+    {
+      "conclusion": null,
+      "head_sha": "0620ac3e1966cb427db85760d29bcedf7bf689c0",
+      "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42311103860",
+      "id": 42311103860,
+      "name": "Conda publication governance",
+      "run_attempt": 1,
+      "status": "queued"
+    },
+    {
+      "conclusion": null,
+      "head_sha": "0620ac3e1966cb427db85760d29bcedf7bf689c0",
+      "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42311103485",
+      "id": 42311103485,
+      "name": "CI",
+      "run_attempt": 1,
+      "status": "queued"
+    }
+  ],
+  "receptor_fallback": {
+    "observed": "Published gh_run_receptor1.4.0 Python module is present but refuses gh2.46.0; requires>=2.48.0.",
+    "route": "Bounded native GitHub run facts; no environment mutation or CI rerun.",
+    "owner": "Existing tooling/CI work #9",
+    "correction": "Earlier absent CLI extension did not establish absent Python module; current module probe identifies the exact compatibility problem."
+  },
+  "provider_state": "Local MolSysMT9e1f1b1ad8bf clean but18commits behind refreshed origin/main; no checkout update/provider qualification. Prior PHMT work preserved.",
+  "pending": [
+    "PR review and exact-head hosted gates",
+    "Default-branch template adoption and rendered-form verification",
+    "Lifecycle/API/index design decision and bounded implementation",
+    "Any competitor execution, equivalent-problem benchmark, large-library or biological validation"
+  ],
+  "local_receipts": "build/phmt-public-library-20261106-0mxdo3ak"
+}

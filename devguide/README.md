@@ -18,6 +18,7 @@ use Spanish. Repository/suite instructions retain their authority.
 | Work on receptor validation | [#103 plan](pending_proposals/qualify_receptor_screening_studies.md), [study1 admission](receptor_study1_admission_protocol.md), [BRD4 method/next plan](receptor_study2_primary_method.md) |
 | Propose or assess a chemical library | [Public registry](https://github.com/uibcdf/pharmacophoremt/discussions/109), [provider research](public_library_support_research.md), [tool/workflow comparison](pharmacophore_library_workflow_survey.md), [#108 workflow](pending_proposals/qualify_public_library_workflow.md) |
 | Propose or study a pharmacophore tool | [Tool registry guidance](pharmacophore_tools_registry.md), [#128 proposal](pending_proposals/study_pharmacophore_tools.md), [comparative survey](pharmacophore_library_workflow_survey.md) |
+| Design the library workflow and public API | [Architecture proposal](public_library_architecture.md), [worked native contracts](public_library_contract_examples.md), [#108 scope](pending_proposals/qualify_public_library_workflow.md) |
 | Understand the audit/backlog | [Audit](audit_20261104.md), [review addendum](audit_20261104_review.md), active issue indexes below |
 | Prepare an intermediate release | [#95 readiness](release_0_5_0_readiness.md), [publication controls](../devtools/conda-build/README.md), #9/#10/#23 |
 | Update user docs | [Documentation contributor guide](../docs/README.md), [cookbook](../docs/content/cookbook/index.md), [validation collection](../docs/content/validation/index.md) |
@@ -32,9 +33,37 @@ controls retain their exact source/provider/native identities. A correct cache,
 geometry, archive or build is not biological validation or public delivery.
 
 Actual release plan/latest Release is0.4.0; proposed0.5 is not frozen. Both #103
-biological studies remain unfinished. BRD4 source methods and a prospective
-label-capacity plan are recorded, but no dedicated activities/class projection
-has run. Migration itself starts no scientific acquisition, model or release.
+biological studies remain unfinished. Deliberate destination resumption now
+[receives the published BRD4 capacity plan](receptor_study2_label_capacity_receiving.md):
+AID1805333 stops with32 eligible weak SIDs against50 required. No receptor/model/
+score or release follows; individual activity rows remain private.
+The [follow-on lineage review](receptor_study2_source_lineage_review.md) identifies
+a coupled report, and the [third-source method review](receptor_study2_third_source_method_review.md)
+retains unresolved original units/material. The [separate PDF recovery](receptor_study2_pdf_recovery.md)
+now verifies the original document and reviews bounded pages/PCT table images,
+preserving the earlier failed gate without admitting activities or guessed units.
+The [fourth-source review](receptor_study2_fourth_source_method_review.md) supports
+AID1797167's AlphaLisa method context and its own table's micromolar units;
+experimental material and individual-row provenance remain pending. Both sources
+stay unadmitted. The [fifth-source review](receptor_study2_fifth_source_method_review.md)
+supports AID 2061300's FP-derived Ki in nM and incorporated PCT wording, corrects our
+historical title characterization, and retains unresolved material/tracer/row
+authority. The [sixth-source review](receptor_study2_sixth_source_method_review.md)
+supports AID 1798835's BD1 TR-FRET Ki in µM, preserves the BD2 boundary conflict
+and leaves material/probe Kd/row authority pending. No activities follow;
+The [final three reviews](receptor_study2_remaining_sources_review.md) complete
+bounded review of the nine fixed leads. Original data/material authority remains
+pending, including 1805218's experimental/predicted contradiction; no activities
+follow. Draft curator questions are prepared, not sent; unresolved-domain sources
+retain their separate status.
+
+The [19-source metadata continuation](receptor_study2_unresolved_domain_receiving.md)
+now preserves complete fresh coverage/identity without resolving domain assignment
+or admitting activities. The user also requests powerful, friendly management of
+public libraries for both retrospective validation and new screening. The
+[provider research and proposed workflow](public_library_support_research.md)
+separate discovery catalogs, activity references, drugs, natural products and
+benchmarks, with explicit access/3D/readiness boundaries.
 
 All general molecular formats/inspection/preparation/analysis belong to MolSysMT.
 PharmacophoreMT owns the pharmacophore and its evaluation. Proposed TopoMT,

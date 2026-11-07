@@ -1,0 +1,144 @@
+{
+  "recorded_at": "2026-11-06T23:22:25.510062+00:00",
+  "scope": "User-authorized pharmacophore-tool registry, comparative documentary study and product/API requirements. No competitor/PHMT molecular execution, new runtime or performance/biological validation.",
+  "research_note": "devguide/pharmacophore_library_workflow_survey.md",
+  "product_targets": [
+    "Powerful capabilities with scientific/performance evidence",
+    "Intuitive guided route",
+    "Complete coherent detailed public API",
+    "Quality ahead of delivery speed",
+    "Compare established workflows before fixing library APIs and index strategies"
+  ],
+  "design_candidates": [
+    "Collection/preparation/search-asset/run/result lifecycle",
+    "Incremental prepared-input scan",
+    "Reusable indexing/hybrid filtering",
+    "Optional external-engine semantics contract"
+  ],
+  "evidence": "devguide/evidence/pharmacophore_tools_registry_20261106_summary.json",
+  "source_review": {
+    "url": "https://github.com/uibcdf/pharmacophoremt/pull/127",
+    "title": "Add chemical-library and pharmacophore-tool research registries",
+    "headRefOid": "0620ac3e1966cb427db85760d29bcedf7bf689c0",
+    "changedFiles": 13,
+    "isDraft": true,
+    "state": "OPEN"
+  },
+  "primary_bibliography": [
+    "https://cdpkit.org/applications/confgen.html",
+    "https://cdpkit.org/applications/index.html",
+    "https://cdpkit.org/applications/isogen.html",
+    "https://cdpkit.org/applications/psdcreate.html",
+    "https://cdpkit.org/applications/psdinfo.html",
+    "https://cdpkit.org/applications/psdmerge.html",
+    "https://cdpkit.org/applications/psdscreen.html",
+    "https://cdpkit.org/applications/tautgen.html",
+    "https://cdpkit.org/introduction.html",
+    "https://docs.inteligand.com/ligandscout/",
+    "https://docs.inteligand.com/ligandscout/usage/",
+    "https://docs.inteligand.com/ls-remote/server-configuration/",
+    "https://docs.inteligand.com/ls-remote/version-dependencies/",
+    "https://github.com/OliverBScott/align-it",
+    "https://github.com/OliverBScott/align-it/tree/main/example",
+    "https://github.com/dkoes/pharmit",
+    "https://github.com/dkoes/pharmit/blob/master/README.md",
+    "https://github.com/dkoes/pharmit/blob/master/scripts/conformers.sql",
+    "https://github.com/dkoes/pharmit/blob/master/scripts/createconfs.py",
+    "https://github.com/uibcdf/openpharmacophore",
+    "https://github.com/uibcdf/pharmacophoremt/issues/108",
+    "https://github.com/uibcdf/pharmacophoremt/issues/128",
+    "https://learn.schrodinger.com/public/python_api/2022-2/_modules/schrodinger/pipeline/stages/phase.html",
+    "https://learn.schrodinger.com/public/python_api/2024-1/api/schrodinger.pipeline.stages.phase.html",
+    "https://learn.schrodinger.com/public/python_api/2024-4/api/schrodinger.application.phase.packages.phase_database_job_utils.html",
+    "https://pharmit.csb.pitt.edu/help.html",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC3124593/",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC4987880/",
+    "https://raw.githubusercontent.com/rdkit/rdkit/master/license.txt",
+    "https://www.3ds.com/assets/invest/2023-10/biovia-discovery-studio-overview.pdf",
+    "https://www.3ds.com/products/biovia/discovery-studio/ligand-and-pharmacophore-based-design",
+    "https://www.chemcomp.com/en/Products.htm",
+    "https://www.chemcomp.com/release_notes/moe202406/rnotes.htm",
+    "https://www.inteligand.com/download/LigandScout-4.2-Tutorial-Cards.pdf",
+    "https://www.inteligand.com/download/LigandScout_4_Command_Line_Tools.pdf",
+    "https://www.inteligand.com/products/ligandscout-xt/",
+    "https://www.inteligand.com/products/ligandscout/",
+    "https://www.inteligand.com/products/pharmacophoredb/",
+    "https://www.inteligand.com/solutions/library-generation/",
+    "https://www.rdkit.org/docs/Cookbook.html?highlight=etkdg",
+    "https://www.rdkit.org/docs/GettingStartedInPython.html",
+    "https://www.rdkit.org/docs/source/rdkit.Chem.Pharm3D.EmbedLib.html",
+    "https://www.schrodinger.com/eula/",
+    "https://www.schrodinger.com/platform/products/phase/",
+    "https://www.schrodinger.com/platform/products/prepared-commercial-compound-library/",
+    "https://www.schrodinger.com/wp-content/uploads/2024/04/2024q1_molport_report.pdf",
+    "https://www.uibcdf.org/OpenPharmacophore/_modules/openpharmacophore/screening/mol_db.html",
+    "https://www.uibcdf.org/OpenPharmacophore/_modules/openpharmacophore/screening/screening.html",
+    "https://www.uibcdf.org/OpenPharmacophore/contents/examples/virtual-screening/screening.html"
+  ],
+  "offline_checks": [
+    {
+      "command": [
+        "python3",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "output": "registry-source-validation-0.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "registry-source-validation-1.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "registry-source-validation-2.txt"
+    },
+    {
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "registry-source-validation-3.txt"
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "registry-source-validation-4.txt"
+    }
+  ],
+  "unexecuted": [
+    "PR review and exact-head hosted gates",
+    "Default-branch template adoption and rendered-form verification",
+    "Lifecycle/API/index design decision and bounded implementation",
+    "Any competitor execution, equivalent-problem benchmark, large-library or biological validation"
+  ]
+}
