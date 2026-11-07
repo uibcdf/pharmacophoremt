@@ -1,0 +1,70 @@
+{
+  "schema": "pharmacophoremt.saved-result-cli-execution@1",
+  "recorded_at_utc": "2026-11-07T16:51:11.648987+00:00",
+  "parent_source": "bf4a11b200935b24543753cae81d16321a9ae0e7",
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "limits": {
+    "rlimit_as_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "aggregate_memory_swap_tasks_quota": "Not enforced: uid2000 has no user runtime directory/bus. Prior failed launch retained in saved-export receipt; no other user bus used.",
+    "io_priority": "idle; inherited from recorded launcher"
+  },
+  "memory_entry": "MemTotal:       63455508 kB\nMemFree:        56472372 kB\nMemAvailable:   61170152 kB\nBuffers:          473272 kB\nCached:          4650048 kB\nSwapCached:            0 kB\nActive:          2345108 kB\nInactive:        3564936 kB\nActive(anon):     829896 kB\nInactive(anon):        0 kB\nActive(file):    1515212 kB\nInactive(file):  3564936 kB\nUnevictable:       10256 kB\nMlocked:           10256 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388604 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              6452 kB\nWriteback:             0 kB\nAnonPages:        797696 kB\nMapped:           897796 kB\nShmem:             35788 kB\nKReclaimable:     248520 kB\nSlab:             488896 kB\nSReclaimable:     248520 kB\nSUnreclaim:       240376 kB\nKernelStack:       14256 kB\nPageTables:        19956 kB\nSecPageTables:      5244 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:    5447264 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      220600 kB\nVmallocChunk:          0 kB\nPercpu:            44640 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    157696 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      329504 kB\nDirectMap2M:     4792320 kB\nDirectMap1G:    63963136 kB\n",
+  "pressure_entry": "some avg10=0.00 avg60=0.00 avg300=0.00 total=939\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=608\n",
+  "source_files": {
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3277,
+      "sha256": "8dd92dada24b86637c726543eece515364bca052575d7dafb1714fe44c1347a7"
+    },
+    "pharmacophoremt_results/_meta.py": {
+      "bytes": 208,
+      "sha256": "9398bd0b3b99904b774618a55cb021d301b78d4a7add332f5b517bcbca746e83"
+    },
+    "pharmacophoremt_results/_diagnostics.py": {
+      "bytes": 1212,
+      "sha256": "0fbd0ec419d4cf6ee6a73c4f86914a82c86a91ec9482164724b91218efc950b5"
+    },
+    "pharmacophoremt_results/_exports.py": {
+      "bytes": 3800,
+      "sha256": "6cd4da88c975cc42ef72b28df973a02c51b34173bb2f07558584d96e501bdd55"
+    },
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 19472,
+      "sha256": "cd63be25449f710ec5d50d4e063d4b98285a0a6356f650ac82c4ee0376681d3f"
+    },
+    "pharmacophoremt_results/_smonitor.py": {
+      "bytes": 621,
+      "sha256": "9d3c2f67b9cb16d567e0832ff16db121f06ce584f981c0224f96a01ee1e29a09"
+    },
+    "pharmacophoremt_results/__init__.py": {
+      "bytes": 992,
+      "sha256": "79ff398e277ff7034cc2d4abfdcf833bfbafd7354930862b36284eb552b62d35"
+    },
+    "pharmacophoremt_results/__main__.py": {
+      "bytes": 111,
+      "sha256": "c75dea215fafaa6a5e017c51d22a5182fd05578df7147a3a9ed123d42b36b0f9"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 32437,
+      "sha256": "8cff52f75e6179208e5e4eb0a4e023c8884b59789a439c0f9f735d581a5d1b95"
+    },
+    "devtools/tests/test_public_run_cli.py": {
+      "bytes": 12101,
+      "sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217"
+    },
+    "devtools/tests/test_public_run_results.py": {
+      "bytes": 22042,
+      "sha256": "4969bfda4b3ad91049a4a1062167a49173c8224d1767f50cc85c7eef98cb3b34"
+    },
+    "devtools/tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    }
+  }
+}

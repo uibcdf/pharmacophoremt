@@ -3,6 +3,7 @@
 import argparse
 import json
 import sqlite3
+import sys
 from pathlib import Path
 
 from argdigest import arg_digest
@@ -383,43 +384,104 @@ class ScreeningRunView:
 
 
 def main(argv=None):
-    """Print bounded scalar saved results; errors produce no partial JSON stdout."""
-    parser = argparse.ArgumentParser(description=ScreeningRunView.__doc__)
-    parser.add_argument("ledger", type=Path)
+    """Inspect saved ranks or export complete evidence through the public view.
+
+    Successful inspection prints bounded scalar JSON; export prints the original
+    API receipt. Handled failures exit2 without a success response. Publication
+    followed by cleanup/close failure retains a coded JSON receipt on stderr.
+    """
+    parser = argparse.ArgumentParser(
+        description="Inspect or export a saved PharmacophoreMT screening run without rerunning science."
+    )
+    parser.add_argument("ledger", type=Path, help="Saved screening-run database.")
+    exports = parser.add_mutually_exclusive_group()
+    exports.add_argument(
+        "--to-jsonl",
+        type=Path,
+        metavar="FILE",
+        help="Export all confirmed original outcomes to a new JSONL file.",
+    )
+    exports.add_argument(
+        "--to-csv",
+        type=Path,
+        metavar="FILE",
+        help="Export all confirmed outcomes to a new scalar CSV file.",
+    )
     parser.add_argument(
         "--score-method",
-        required=True,
         choices=("seeded_hit@1", "checked_pose_coverage@1"),
+        help="Required for ranked inspection; cannot be combined with export.",
     )
-    parser.add_argument("--limit", type=int, default=10)
-    parser.add_argument("--allow-legacy", action="store_true")
+    parser.add_argument(
+        "--limit",
+        type=int,
+        help="Ranked inspection only; defaults to 10. Export has no limit.",
+    )
+    parser.add_argument(
+        "--allow-legacy",
+        action="store_true",
+        help="Explicitly admit read-only legacy reference-ledger@1 files.",
+    )
     arguments = parser.parse_args(argv)
+    exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
+    if exporting and (
+        arguments.score_method is not None or arguments.limit is not None
+    ):
+        parser.error("--score-method and --limit are only valid for ranked inspection")
+    if not exporting and arguments.score_method is None:
+        parser.error("--score-method is required for ranked inspection")
+    receipt = None
     try:
         with ScreeningRunView.open(
             arguments.ledger, allow_legacy=arguments.allow_legacy
         ) as view:
-            result = view.top_results(
-                score_method=arguments.score_method, limit=arguments.limit
-            )
-        result["records"] = [
-            {
-                "manifest_ordinal": record["manifest_ordinal"],
-                **{
-                    name: record["outcome"][name]
-                    for name in (
-                        "work_key",
-                        "source_key",
-                        "occurrence_key",
-                        "ranking_score",
-                        "score_method",
-                    )
-                },
-                "status": record["outcome"]["native_result"]["status"],
-            }
-            for record in result["records"]
-        ]
+            if arguments.to_jsonl is not None:
+                result = receipt = view.to_jsonl(arguments.to_jsonl)
+            elif arguments.to_csv is not None:
+                result = receipt = view.to_csv(arguments.to_csv)
+            else:
+                result = view.top_results(
+                    score_method=arguments.score_method,
+                    limit=10 if arguments.limit is None else arguments.limit,
+                )
+        if not exporting:
+            result["records"] = [
+                {
+                    "manifest_ordinal": record["manifest_ordinal"],
+                    **{
+                        name: record["outcome"][name]
+                        for name in (
+                            "work_key",
+                            "source_key",
+                            "occurrence_key",
+                            "ranking_score",
+                            "score_method",
+                        )
+                    },
+                    "status": record["outcome"]["native_result"]["status"],
+                }
+                for record in result["records"]
+            ]
         encoded = json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False)
     except (ScreeningRunError, OSError, ValueError, sqlite3.Error) as error:
+        context = getattr(error, "extra", {})
+        if context.get("published") is True:
+            receipt = context["receipt"]
+        if receipt is not None:
+            print(
+                json.dumps(
+                    {
+                        "code": getattr(error, "code", None),
+                        "error": str(error),
+                        "published": True,
+                        "receipt": receipt,
+                        "temporary_path": context.get("temporary_path"),
+                    },
+                    ensure_ascii=False,
+                    allow_nan=False,
+                ),
+                file=sys.stderr,
+            )
         parser.error(str(error))
     print(encoded)
     return 0

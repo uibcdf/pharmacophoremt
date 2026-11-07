@@ -33,9 +33,14 @@ Preceding [guided/expert receiving](guided_expert_journey_receiving.md),
 producers, evidence and limitations. MolSysMT#292 owns attribution-policy
 clarification. Historical pause records remain unchanged.
 
-**Next concrete action:** expose complete-view CLI export through the same public
-methods, so a user can export a saved database without writing Python or choosing
-a ranking criterion. Qualify refusal/output behavior and the installed command.
+The [CLI exporter](saved_result_cli.md) is now implemented through the same public
+methods: `--to-jsonl FILE`/`--to-csv FILE`. All12 command/15 export/21 reader source
+controls and full Ruff checks pass; the old inspection command remains compatible.
+Owned installed command receiving is pending at this source checkpoint.
+
+**Next concrete action:** receive one exact owned installed wheel of the command
+outside the checkout, exercising documented commands on the four original saved
+runs and retaining public support/provider boundaries and publication errors.
 Broader source operations continue separately; molecular collections remain
 MolSysMT#624-owned. Full changed-pin/installed/public gates remain independent.
 

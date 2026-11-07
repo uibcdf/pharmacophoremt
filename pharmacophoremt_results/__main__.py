@@ -1,4 +1,4 @@
-"""Run the bounded saved-evidence scalar inspector."""
+"""Inspect saved ranks or export complete saved evidence."""
 
 from ._api import main
 

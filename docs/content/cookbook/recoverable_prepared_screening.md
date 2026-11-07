@@ -149,6 +149,25 @@ Saved inspection works independently of the main scientific package:
 python -m pharmacophoremt_results RUN.sqlite3 --score-method seeded_hit@1 --limit 10
 ```
 
+Export all confirmed results directly from the command line:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --to-jsonl outcomes.jsonl
+python -m pharmacophoremt_results RUN.sqlite3 --to-csv outcomes.csv
+```
+
+These commands use the same public methods as the Python example below and print
+their export receipt as JSON. Export includes negatives and failures, with
+pending counts in the receipt; it takes no ranking criterion or limit. Combining
+export with `--score-method`, `--limit` or both output formats is refused. Legacy
+files still require explicit `--allow-legacy`.
+
+Handled errors exit2 without a success response. If a complete file was published
+before cleanup or view-close failed, stderr also carries a JSON line with
+`published: true`, the receipt, catalog code and any remaining temporary path.
+Inspect that completed file and receipt before retrying; fresh destinations are
+never overwritten. Original configuration in the receipt remains caller-owned.
+
 Exporting an existing run needs only the saved database and fresh output paths;
 it does not require reopening its molecular inputs or resuming science:
 

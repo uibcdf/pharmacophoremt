@@ -1,0 +1,32 @@
+{
+  "schema": "pharmacophoremt.saved-result-cli-plan@1",
+  "date_utc": "2026-11-07",
+  "owners": ["LMMV", "dprada"],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "bf4a11b200935b24543753cae81d16321a9ae0e7",
+  "contract": "devguide/saved_result_cli.md",
+  "question": "Can users inspect and export complete saved results from the existing module command through the same public API, without hidden filtering, scientific imports, overwritten files or ambiguous publication failures?",
+  "controls": [
+    "Complete JSONL/CSV command outputs equal original saved records and scalar projection; receipt equals original configuration and actual bytes/hash",
+    "Empty, partial and explicit legacy export retains zero, failures, pending counts and original historical values",
+    "Existing inspection syntax/output, limit defaults and literal export database filename remain compatible; help requires no database",
+    "Conflicting format/ranking/limit options, unknown options and missing criterion fail before database/output I/O",
+    "Missing/corrupt databases and existing destinations preserve caller files and emit no success JSON",
+    "Actual public export prepublication and postpublication/close failures preserve empty stdout and truthful coded receipt/publication context",
+    "Fresh command processes load no scientific, citation or development-support providers",
+    "Existing reader/export controls, reporting/archive/index and full Ruff checks",
+    "One exact owned installed wheel with published support payloads runs the same controls and actual documented commands on four original complete/partial/legacy databases"
+  ],
+  "resources": {
+    "serial": true,
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io_priority": "idle",
+    "per_process_memory_limit_bytes": 536870912,
+    "pressure_check": "MemAvailable >2GiB; memory pressure avg10 <1",
+    "aggregate_limits": "Use owned cgroup if available; otherwise explicitly record unavailable aggregate memory/no-swap/tasks/quota and enforce standard OS limits. Do not access another user's bus."
+  },
+  "publication": "Own executable/control text and scalar/hash receipts only; original databases, full native/query/export bodies and third-party payloads remain local",
+  "nonclaims": "No new scientific computation, acquisition/preparation, collection connector, scale/speedup, biological validity, complete PHMT solve, supported platform matrix or release"
+}

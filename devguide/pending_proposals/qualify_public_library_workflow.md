@@ -25,10 +25,18 @@ retry trap. Revised source and the same owned installed wheel pass; the initial
 failed harness and completed guided outcomes remain preserved without repeated
 guided computation. Native MolSysMT attribution-policy clarification is handed
 to its existing #292. No runtime/API/schema/scoring change, human usability,
-general-library or biological claim. Next public saved-result export, then broader
-source operations; all remaining acceptance criteria keep their authority.
+general-library or biological claim. Complete saved exports have since been
+received under the linked contract below. All remaining acceptance criteria keep
+their authority.
 
 ## What
+
+The [CLI increment](../saved_result_cli.md) now composes the public exporter with
+`--to-jsonl FILE`/`--to-csv FILE`, retaining ranked inspection, explicit legacy
+admission and truthful publication-failure context. All12 command/15 export/21
+reader source controls pass; owned installed command receiving remains pending.
+MolSysMT#624 is still open at the current read-only observation and has no
+delivered collection contract received here; no molecular collection is forked.
 
 The user requests both retrospective validation and new-library screening, with
 powerful, friendly public-library management. The
