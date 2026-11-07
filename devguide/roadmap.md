@@ -1,9 +1,65 @@
 # Strategic roadmap
 
-Maintained 2026-11-06. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
+Maintained 2026-11-07. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
 and [decisions](decisions_and_workstreams.md) first. The former detailed delivery
 log/checklists remain in [roadmap history](roadmap_history_20261106.md); old
 checkboxes record historical code, not current scientific/public qualification.
+
+## Accepted destination: a mature pre-1.0 0.x
+
+Liliana accepted the following staircase on 2026-11-07 and then resumed the work:
+finish the pending increment and pursue a powerful, intuitive, scientifically
+supported **0.x** product. The final minor number follows completed scope; it
+may be 0.23, 0.40 or another 0.x. No final number, date, release freeze or automatic
+1.0 transition is reserved. Milestones describe capabilities; versions group
+useful delivered changes. One milestone may need several versions, and one
+version may advance several milestones.
+
+| Milestone | Usable result and acceptance | Current evidence and remaining work |
+| --- | --- | --- |
+| 1. Coherent classical core | Generation, composition, correspondence, alignment, evaluation and scoring preserve compatible feature, geometry, unit, identity and failure semantics. Public contracts and reproducible controls explain supported domains and incomplete answers. | Native routes and scoped controls exist in the [capability inventory](capability_inventory.md). The [feature-reuse subworkflow](feature_inventory_reuse.md) now has equal native evidence under its declared scope. Close remaining observed gaps before changing cache/search contracts. |
+| 2. Complete public workflow | A user imports prepared data, builds/loads a query, inspects a plan, screens, resumes and exports through documented public operations. Guided and expert routes resolve to the same effective settings. | [Incremental](prepared_library_reference.md), [recovery](prepared_library_recovery.md) and [read-only inspection](reference_run_inspection.md) references are unshipped experiments. Integrate a selected complete task into the public API and qualify actual installed use by someone outside the development workflow. |
+| 3. Robust molecular collections | Provider-owned records, molecules, states, conformers and atom/source mappings have explicit resource, preparation, bounded iteration, snapshot and recovery contracts. | The fixed [PubChem3D case](pubchem3d_receiving_pilot.md) qualifies individual artifacts only. Receive the reusable boundary from [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624); PHMT must not add a replacement molecular parser or collection. |
+| 4. Progressively qualified public libraries | A common user journey supports selected sources and formats, with separately demonstrated discovery, download/import, preparation, screening and availability operations and their access conditions. | [Source assessments](public_library_registry.md) and the three-record pilot do not establish general connectors. Qualify each selected operation/source increment; the mature-release scope names the selected sources and remaining exclusions. |
+| 5. Efficient repeated queries and screening | Reusable annotations, scans and indexes are compared on equivalent problems, including build/storage, cold/repeated-query cost, memory, invalidation and coverage. Acceleration addresses measured bottlenecks. | The [in-memory reuse experiment](feature_inventory_reuse.md) passes its equality controls and public recipe. No cache/index strategy or speedup follows from fewer outer requests; broader workload/resource evidence remains required. |
+| 6. Reproducible scientific validation and comparisons | Admitted retrospective data, leakage controls, simple references, uncertainty and complete failure denominators support reproducible evaluations. Comparisons explain equivalent or differing scientific problems. | Neither #103 biological study is complete; #66/#106 source/admission limits below remain binding. [Tool records](pharmacophore_tools_registry.md) distinguish documentary study from executed comparisons. Product increments can progress while these independent scientific gates remain open. |
+| 7. Mature usable pre-1.0 0.x | The selected classical scope, guided/expert workflows, source operations, traceable results and measured performance form a coherent installed product. Documentation and compatibility match actual public delivery. | Freeze a candidate only after its declared scope and exact source, dependency, installed/public/platform gates are satisfied under #9/#10/#23/#95. Source prototypes and selected local tests alone cannot establish this milestone. |
+
+User experience, documentation, validation and implementation advance in parallel
+from the first increment. The staircase orders dependencies and acceptance, not
+seven isolated development phases. Molecular-provider work retains its owner;
+an unresolved provider feature does not stop independent PHMT contracts, examples,
+user testing or result interpretation.
+
+Each intermediate version must let a user complete a concrete public task or
+substantially improve one. Its preparation names scope and acceptance, public
+API/examples, appropriate scientific or technical evidence, checked installation,
+compatibility and migration limits. A prototype resolves uncertainty; once the
+evidence suffices, integrate, simplify or retire it with a recorded reason rather
+than making another prototype the only delivered result.
+
+Every implementation increment leaves [checkpoint](checkpoint.md) usable for the
+next session: actual implementation state, evidence/source identities and limits,
+unresolved gates, and the next concrete action. Update owning contracts and
+workstreams as their facts change; keep historical measurements and failures
+under their original identities. Plans and successful narrow checks are not
+completion evidence for the staircase. Routine `[skip ci]` delivery and deliberate
+full validation checkpoints retain their separate authority.
+
+## Immediate product increment
+
+The previously pending [feature-reuse experiment](feature_inventory_reuse.md) is
+measured: 87 selected scientific cases, full native evidence equality for six
+original-source/reference comparisons, and four executed public cookbook blocks.
+It retains post-fit validation and distinguishes selected-prefix work from full
+search. It adds no persistent cache/index or speedup claim.
+
+Next, audit the existing public facade against the proven incremental/recovery/
+inspection references and select one complete prepared-input task for public
+integration under #108/#95. Define admission, identity, source lifetime, score/
+failure and result ownership before implementation; use the current native tools.
+The provider collection boundary remains MolSysMT#624-owned. Qualify the selected
+public task's source and installed use before counting milestone2 as delivered.
 
 ## Current priority: classical consolidation
 
@@ -81,8 +137,10 @@ and the later suite notice require actual qualified delivery; migration publishe
 no package or tag.
 
 The two-study objective does not automatically become a0.5 requirement. Use as
-many0.x releases as needed, including0.10/0.11;1.0 depends on agreed classical
-scope and evidence, not a reserved version/date. The addon remains deferred #58.
+many0.x releases as needed, including0.10/0.11 and later minors. The accepted
+destination here is the mature pre-1.0 0.x described above; the separate 1.0
+decision follows later review of agreed scope and evidence. The addon remains
+deferred #58.
 
 ## Later directions: prospective, not implemented promises
 
@@ -132,11 +190,14 @@ separate existing evaluator semantics from proposed streaming/journal mechanisms
 The [unshipped incremental prototype](prepared_library_reference.md) now has a
 separate [saved-query recovery experiment](prepared_library_recovery.md): ordered
 manifest mapping, retained attempts, immutable confirmed outcomes and linked
-repeat-query runs. All 48 selected scientific and 45 affected administrative
-cases pass. Saved replay uses no molecular/citation provider. Next qualify actual
-provider collection/snapshot contracts and a bounded permitted real subset before
-public API selection and reusable-index experiments; declarations alone do not
-authenticate prepared molecular content or qualify production durability.
+repeat-query runs. Their original receipt records 48 selected scientific and 45
+affected administrative passes; these historical counts do not qualify a later
+head. Saved replay uses no molecular/citation provider. The later real-input case
+below has its own execution identity. Provider collection/snapshot contracts,
+public workflow integration and reusable-index decisions retain separate
+acceptance; declarations alone do not authenticate prepared molecular content
+or qualify production durability. Current actions are maintained in the resumed
+increment above and [checkpoint](checkpoint.md).
 
 The [fixed three-record PubChem3D case](pubchem3d_receiving_pilot.md) now supplies
 the first bounded real-data receiving/import/snapshot/screening measurement.
@@ -146,3 +207,9 @@ labels or broad connector support follow. The missing reusable resource-owning
 collection contract is handed to [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624).
 Broader source/format coverage and the guided/expert public workflow still need
 qualification before index/performance claims.
+
+The later quantity-report correction preserves that case's earlier evidence and
+verifies explicit sealed coordinate records. [Read-only saved-run inspection](reference_run_inspection.md)
+adds work/attempt coverage and bounded observed ranks, without current molecular
+providers or new screening. Both remain scoped development evidence, not a
+managed collection or a public workflow qualification.

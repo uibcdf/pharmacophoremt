@@ -25,6 +25,7 @@ Historical timings from different environments do not isolate an improvement.
 
 prepared_ccd
 pubchem3d_library_pilot
+reused_feature_inventories
 prepared_workflow
 prepared_search_workflow
 prepared_consensus_workflow

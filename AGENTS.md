@@ -64,6 +64,16 @@ deliberate validation checkpoints and the existing recovery schedules; record
 pending exact-head coverage under #9. This instruction does not turn local
 checks into full source/installed/release evidence or waive their separate gates.
 
+## Implementation increments and continuity
+
+At Liliana's instruction (2026-11-07), update `devguide/` with every implementation
+increment so it remains a reliable checkpoint. Keep `devguide/checkpoint.md`
+current with what actually changed, its verification/evidence and limitations,
+remaining work and the next concrete action. Link detailed owning contracts and
+receipts instead of accumulating execution history in the checkpoint. Keep the
+roadmap and owning workstream/report consistent with the implemented state and
+the accepted mature-0.x plan; preserve earlier evidence and run identities.
+
 ## Registered integration guides
 
 Read the registered consumer guides when working on their respective boundaries:

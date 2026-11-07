@@ -101,6 +101,16 @@ source access or recalculation. Historical reading of the unchanged PubChem3D
 database is separate from the new analytical guards. No grouping, compound
 independence, reusable index or new public API is inferred.
 
+The [fresh/reused feature experiment](../feature_inventory_reuse.md) now compares
+full native correspondence, explicit-placement and checked-pose evidence across
+the same three original artifacts and two distinct acceptor references. All six
+comparisons agree and the public composition recipe executes without its helper.
+Only a mapping prefix is fitted in the real case; omitted work does not become
+a compound negative. Fewer outer extraction requests establish no speedup or
+full-search/cache/index equivalence. Next integrate a selected complete public
+prepared-input task using the proven native/reference contracts, with separate
+source/installed acceptance and MolSysMT#624 collection ownership.
+
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening
 materializes its full input iterable. Prepared-native evaluators do not constitute

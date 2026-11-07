@@ -80,6 +80,63 @@ systems. `complete=True` covers supplied mappings; check proposal completion
 separately. Budget exhaustion raises a diagnostic. All accepted alternatives
 remain available, including equivalent placements.
 
+## Reuse one prepared source across queries
+
+Keep the requested families and the source selection, frame and chemical state
+explicit when reusing an inventory. Here a second reference has different
+internal distances. Continue from the prepared `reference`, `source` and
+`families` above; all operations below use the public API.
+
+```python
+alternative = msm.copy(reference)
+values = puw.get_value(msm.get(alternative, coordinates=True), to_unit='nm').copy()
+values[0, 2] = [0.2, 1.0, 0.0]
+msm.set(alternative, coordinates=puw.quantity(values, 'nm'))
+references = [
+    ('original', phmt.modeler.get_features(
+        reference, features=families, chemical_state=0)),
+    ('changed-distances', phmt.modeler.get_features(
+        alternative, features=families, chemical_state=0)),
+]
+source_inventory = phmt.modeler.get_features(
+    source, features=families, chemical_state=0,
+)
+results = {}
+for name, target in references:
+    proposals = phmt.screening.get_rigid_feature_correspondences(
+        target, source_inventory, distance_tolerance='0.01 nm',
+        min_matches=3, max_graph_nodes=64, max_cliques=1000,
+    )
+    placed = phmt.screening.get_rigid_feature_placements(
+        source, target, proposals['correspondences'], features=families,
+        feature_inventory=source_inventory, chemical_state=0,
+        distance_tolerance='0.01 nm', min_matches=3, max_fits=16,
+    )
+    results[name] = {
+        'proposals': proposals,
+        'placement_report': placed['report'],
+    }
+
+assert results['original']['placement_report']['n_fits'] == 6
+assert results['changed-distances']['proposals']['correspondences'] == []
+assert results['changed-distances']['placement_report']['n_fits'] == 0
+```
+
+The same source inventory serves both requests. Fitting still extracts features
+from each placed copy and checks their identities and geometry. This reuses the
+initial observation; it does not remove native post-fit validation. Changing
+the source, geometry, chemistry, selection, frame or feature-family request
+requires a new compatible inventory. Axis agreement alone cannot authenticate
+its source. Keep the family declaration even if no records of a kind are found.
+
+This example fits all proposed mappings within its explicit budget. Selecting
+only a prefix instead requires reporting the omitted mappings; an empty accepted
+prefix is not a compound negative. The [reuse control](../validation/reused_feature_inventories.md)
+compares complete fresh/reused native evidence for that separate bounded case.
+Neither route is a replacement for `RigidPoseSearch`'s full stopping/scoring
+contract or a performance benchmark. Use compatible verified provider versions;
+source composition evidence alone does not qualify an installed package.
+
 ## Summarize a saved consensus report
 
 ```python

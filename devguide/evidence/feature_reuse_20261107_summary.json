@@ -1,0 +1,864 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-summary@1",
+  "recorded_at_utc": "2026-11-07T03:11:58.168658+00:00",
+  "case_id": "feature-inventory-reuse-20261107",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "evidence_class": "Analytical and fixed-real-input native subworkflow equivalence; no full-search/index/performance/biological qualification.",
+  "prospective_plan": {
+    "path": "feature_reuse_plan_20261107.json",
+    "sha256": "eeea9d49ae9c00d096d64b1ed2e00a8bb8ae6e463cb0afb3723dac4ff724e98f",
+    "bytes": 4895,
+    "declaration": "https://github.com/uibcdf/pharmacophoremt/issues/108#issuecomment-6701310593"
+  },
+  "execution_plan": {
+    "path": "feature_reuse_execution_20261107.json",
+    "sha256": "be537ac4536734691984c61868e6704e3bb88c32ea7e95dd45ec3361ae364376",
+    "bytes": 9602
+  },
+  "producer_head": "80dbd94389d4f3602c95b03ea16bdb3d94d7af87",
+  "selected_source_files": {
+    "phmt_test_support/feature_reuse_experiment.py": {
+      "sha256": "96bba5fcc9a833909760759dcf10b565564e78394da94c9cce3ea613dd0d6f12",
+      "bytes": 9164
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "tests/test_feature_reuse_experiment.py": {
+      "sha256": "f3ceb536f0748c957c70415905bf8f37d6a4f0708f10fe083f16b9c6a8fc4ceb",
+      "bytes": 9872
+    },
+    "tests/test_modular_rigid_tools.py": {
+      "sha256": "7b9439207c32efa6e6b83725020df5b1a889a84750ee2d42f9f7b1d78a98756a",
+      "bytes": 7392
+    },
+    "tests/test_correspondence_geometry.py": {
+      "sha256": "9075598b20812709d7a3233793009c3d8825796eb389ca1af5614ef792363eaf",
+      "bytes": 3923
+    },
+    "tests/test_rigid_consensus.py": {
+      "sha256": "2003b2a2b0eb54d60cde005c74721b0fd17d78384d3af28e10115f851e7ad9a2",
+      "bytes": 12274
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_aligned_consensus.py": {
+      "sha256": "8e4a4354eb778bbb7f90010171623147e1eec990c8c829a46d130ac3172faed8",
+      "bytes": 11906
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "pharmacophoremt/_ackredit.py": {
+      "sha256": "c28d33a037a30407400c12dc9f8fe57f93a61a9c8337d85eb465b229e2cb098f",
+      "bytes": 7714
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/references.py": {
+      "sha256": "f4ff0d16369e09c9c136c2284a327de1619e9b90720b1b68cff65bca3431812d",
+      "bytes": 10227
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+      "sha256": "b7755962de72099e53c307d6067e7222cef8a7978ce791a90aff5abf5c1ca1a0",
+      "bytes": 31629
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/modeler/reference_ligand.py": {
+      "sha256": "312fa3634a1073975b850dd80885771a107a04b9472866779cc07692bc77901b",
+      "bytes": 6620
+    },
+    "pharmacophoremt/modeler/aligned_consensus.py": {
+      "sha256": "169703f576c7931128cc91284dfcd64e5049870a22eb1367a14e28fe80194922",
+      "bytes": 18938
+    },
+    "pharmacophoremt/screening/rigid_correspondence.py": {
+      "sha256": "3b47e7c57e19ccc57679bbab85dcb4213f58bbc2198eab3a4bf5927dd4666844",
+      "bytes": 8626
+    },
+    "pharmacophoremt/screening/rigid_placements.py": {
+      "sha256": "b11400d6ccab3269c91e5ffbdc6d012c23c1d1c977fcb50e18add2e031e3392a",
+      "bytes": 8467
+    },
+    "pharmacophoremt/screening/correspondence.py": {
+      "sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24",
+      "bytes": 5426
+    },
+    "pharmacophoremt/screening/alignment.py": {
+      "sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc",
+      "bytes": 7339
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/feature_geometry.py": {
+      "sha256": "4be179c25993dd1cc57aef8dfe3e766a4ce344a23bcedbe1e1cab3a63760d08a",
+      "bytes": 5180
+    },
+    "pharmacophoremt/screening/feature_neighborhoods.py": {
+      "sha256": "b63df861196166b29daea4313fbea3470ce991034866b1a088a7a916cb12307f",
+      "bytes": 10034
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "devtools/conda-build/resources.toml": {
+      "sha256": "993042087903e4e913b739b29f6aad6e7211858306bda984463de618f2a9a2c9",
+      "bytes": 28133
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "3f14f84b5f6bbca4eebad5c492938b0e6afb06779f87d4835d8a087030d791b8",
+      "bytes": 25619
+    }
+  },
+  "original_outputs": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn",
+  "scientific_controls": {
+    "arguments": [
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "tests/test_feature_reuse_experiment.py",
+      "tests/test_modular_rigid_tools.py",
+      "tests/test_correspondence_geometry.py",
+      "--receptor=llm",
+      "--receptor-events=/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/attempt1-tests.events.jsonl",
+      "--junitxml=/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/attempt1-tests.junit.xml"
+    ],
+    "exit_code": 0,
+    "counts": {
+      "tests": 87,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    "new_guard_cases": 17,
+    "nodeids": [
+      "tests.test_feature_reuse_experiment::test_two_distinct_queries_preserve_full_native_evidence_and_rigid_positive",
+      "tests.test_feature_reuse_experiment::test_selected_mapping_prefix_is_separate_from_complete_proposal_family",
+      "tests.test_feature_reuse_experiment::test_directed_donor_geometry_is_reextracted_and_verified_after_rigid_fit",
+      "tests.test_feature_reuse_experiment::test_zero_feature_source_retains_empty_native_proposals_without_fabricated_score",
+      "tests.test_feature_reuse_experiment::test_nondefault_unit_policy_preserves_explicit_length_and_rmsd_records",
+      "tests.test_feature_reuse_experiment::test_explicit_second_frame_is_checked_without_changing_either_source_frame",
+      "tests.test_feature_reuse_experiment::test_native_resource_limits_propagate_without_recording_a_negative[options0]",
+      "tests.test_feature_reuse_experiment::test_native_resource_limits_propagate_without_recording_a_negative[options1]",
+      "tests.test_feature_reuse_experiment::test_invalid_reference_geometry_propagates_native_argument_failure",
+      "tests.test_feature_reuse_experiment::test_native_alignment_refuses_wrong_cached_source_axes[structure_index-1]",
+      "tests.test_feature_reuse_experiment::test_native_alignment_refuses_wrong_cached_source_axes[chemical_state-reference]",
+      "tests.test_feature_reuse_experiment::test_native_alignment_refuses_wrong_cached_source_axes[selected_atom_indices-value2]",
+      "tests.test_feature_reuse_experiment::test_invalid_experiment_declarations_fail_before_source_access[queries0-features0-1]",
+      "tests.test_feature_reuse_experiment::test_invalid_experiment_declarations_fail_before_source_access[queries1-features1-1]",
+      "tests.test_feature_reuse_experiment::test_invalid_experiment_declarations_fail_before_source_access[queries2-positive charge-1]",
+      "tests.test_feature_reuse_experiment::test_invalid_experiment_declarations_fail_before_source_access[queries3-features3-True]",
+      "tests.test_feature_reuse_experiment::test_application_owned_attribution_wraps_comparison_without_changing_native_arms",
+      "tests.test_modular_rigid_tools::test_cached_inventory_construction_requires_no_molecular_provider_access",
+      "tests.test_modular_rigid_tools::test_inventory_orientation_contract_and_included_volume",
+      "tests.test_modular_rigid_tools::test_explicit_mapping_placement_is_standalone_detached_and_source_preserving",
+      "tests.test_modular_rigid_tools::test_placement_budget_preflight_and_invalid_injective_mapping_never_fit",
+      "tests.test_modular_rigid_tools::test_modeler_calls_public_placement_tool_for_each_nonpivot_source",
+      "tests.test_modular_rigid_tools::test_saved_report_summary_preserves_support_counts_and_never_credits_reading",
+      "tests.test_modular_rigid_tools::test_invalid_or_incomplete_report_is_never_summarized_as_a_negative[<lambda>0]",
+      "tests.test_modular_rigid_tools::test_invalid_or_incomplete_report_is_never_summarized_as_a_negative[<lambda>1]",
+      "tests.test_modular_rigid_tools::test_invalid_or_incomplete_report_is_never_summarized_as_a_negative[<lambda>2]",
+      "tests.test_modular_rigid_tools::test_invalid_or_incomplete_report_is_never_summarized_as_a_negative[<lambda>3]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-query-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-query-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-query-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-association_cliques-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-association_cliques-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-association_cliques-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-ranked_triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-ranked_triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-ranked_triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-query-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-query-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-query-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-association_cliques-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-association_cliques-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-association_cliques-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-ranked_triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-ranked_triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-ranked_triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-query-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-query-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-query-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-association_cliques-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-association_cliques-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-association_cliques-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-ranked_triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-ranked_triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-ranked_triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[query-origin0]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[query-origin1]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[query-origin2]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[association_cliques-origin0]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[association_cliques-origin1]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[association_cliques-origin2]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[ranked_triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[ranked_triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[ranked_triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[query-origin0]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[query-origin1]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[query-origin2]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[association_cliques-origin0]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[association_cliques-origin1]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[association_cliques-origin2]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[triplet_seeds-origin2]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[ranked_triplet_seeds-origin0]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[ranked_triplet_seeds-origin1]",
+      "tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[ranked_triplet_seeds-origin2]"
+    ]
+  },
+  "scientific_comparison": {
+    "records": [
+      {
+        "cid": 1983,
+        "feature_count": 2,
+        "comparisons": [
+          {
+            "key": "caffeine-acceptors",
+            "proposed_mappings": 0,
+            "selected_mappings": 0,
+            "omitted_mappings": 0,
+            "placement_coverage": "all_proposed_mappings",
+            "accepted_placements": 0,
+            "rejected_placements": 0,
+            "evaluated_accepted_poses": [],
+            "full_native_evidence_equal": true,
+            "whole_source_score": null
+          },
+          {
+            "key": "aspirin-acceptors",
+            "proposed_mappings": 0,
+            "selected_mappings": 0,
+            "omitted_mappings": 0,
+            "placement_coverage": "all_proposed_mappings",
+            "accepted_placements": 0,
+            "rejected_placements": 0,
+            "evaluated_accepted_poses": [],
+            "full_native_evidence_equal": true,
+            "whole_source_score": null
+          }
+        ],
+        "outer_extraction_requests": {
+          "reused": 1,
+          "fresh": 2,
+          "scope": "harness source requests only; native post-fit extraction excluded"
+        },
+        "attribution_status": "captured",
+        "host_reference_count": 21
+      },
+      {
+        "cid": 2244,
+        "feature_count": 4,
+        "comparisons": [
+          {
+            "key": "caffeine-acceptors",
+            "proposed_mappings": 24,
+            "selected_mappings": 1,
+            "omitted_mappings": 23,
+            "placement_coverage": "selected_prefix_only",
+            "accepted_placements": 0,
+            "rejected_placements": 1,
+            "evaluated_accepted_poses": [],
+            "full_native_evidence_equal": true,
+            "whole_source_score": null
+          },
+          {
+            "key": "aspirin-acceptors",
+            "proposed_mappings": 24,
+            "selected_mappings": 1,
+            "omitted_mappings": 23,
+            "placement_coverage": "selected_prefix_only",
+            "accepted_placements": 1,
+            "rejected_placements": 0,
+            "evaluated_accepted_poses": [
+              {
+                "status": "matched",
+                "fit_value": 1.0,
+                "ranking_score": 1.0,
+                "score_method": "checked_pose_coverage@1"
+              }
+            ],
+            "full_native_evidence_equal": true,
+            "whole_source_score": null
+          }
+        ],
+        "outer_extraction_requests": {
+          "reused": 1,
+          "fresh": 2,
+          "scope": "harness source requests only; native post-fit extraction excluded"
+        },
+        "attribution_status": "captured",
+        "host_reference_count": 46
+      },
+      {
+        "cid": 2519,
+        "feature_count": 3,
+        "comparisons": [
+          {
+            "key": "caffeine-acceptors",
+            "proposed_mappings": 6,
+            "selected_mappings": 1,
+            "omitted_mappings": 5,
+            "placement_coverage": "selected_prefix_only",
+            "accepted_placements": 1,
+            "rejected_placements": 0,
+            "evaluated_accepted_poses": [
+              {
+                "status": "matched",
+                "fit_value": 1.0,
+                "ranking_score": 1.0,
+                "score_method": "checked_pose_coverage@1"
+              }
+            ],
+            "full_native_evidence_equal": true,
+            "whole_source_score": null
+          },
+          {
+            "key": "aspirin-acceptors",
+            "proposed_mappings": 24,
+            "selected_mappings": 1,
+            "omitted_mappings": 23,
+            "placement_coverage": "selected_prefix_only",
+            "accepted_placements": 0,
+            "rejected_placements": 1,
+            "evaluated_accepted_poses": [],
+            "full_native_evidence_equal": true,
+            "whole_source_score": null
+          }
+        ],
+        "outer_extraction_requests": {
+          "reused": 1,
+          "fresh": 2,
+          "scope": "harness source requests only; native post-fit extraction excluded"
+        },
+        "attribution_status": "captured",
+        "host_reference_count": 46
+      }
+    ],
+    "source_records": 3,
+    "reference_inventories": 2,
+    "comparisons": 6,
+    "full_native_evidence_equal": true,
+    "original_artifacts_unchanged": true,
+    "original_directory_identities": {
+      "cid-1983/import-report.json": {
+        "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+        "bytes": 986
+      },
+      "cid-1983/preparation.json": {
+        "sha256": "eef07bad73f5f14a76c94e9bd48b510825e0fbd9d6ae4950ff21a1cb1b23141e",
+        "bytes": 97435
+      },
+      "cid-1983/prepared.h5msm": {
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344
+      },
+      "cid-2244/import-report.json": {
+        "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+        "bytes": 986
+      },
+      "cid-2244/preparation.json": {
+        "sha256": "715a1088a50ee8596411ef29382e52c85e74042eddcf6dc195634117f7c549cc",
+        "bytes": 100790
+      },
+      "cid-2244/prepared.h5msm": {
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328
+      },
+      "cid-2519/import-report.json": {
+        "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+        "bytes": 986
+      },
+      "cid-2519/preparation.json": {
+        "sha256": "80638db51ce69fd1ceb301e3de488b2a12afddaac480e1f03e0f9c9f3159955a",
+        "bytes": 114186
+      },
+      "cid-2519/prepared.h5msm": {
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328
+      },
+      "composed-outcomes.json": {
+        "sha256": "f404c23c031922259b5956075a3642e02282f5eb2e210850514b3b4a5e4d0700",
+        "bytes": 91393
+      },
+      "native-outcomes.json": {
+        "sha256": "369f3f7cf0b1868d7495636e2eb5a7b8de79399cbbd703fa42c9c9e288832336",
+        "bytes": 91393
+      },
+      "query.json": {
+        "sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+        "bytes": 21959
+      },
+      "result.json": {
+        "sha256": "562d3a52f622935cb4957bd5af7a5a46fb94cb469e4999bd2e02bb97a352f652",
+        "bytes": 10781
+      },
+      "screening.sqlite3": {
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3",
+        "bytes": 118784
+      },
+      "snapshot-manifest.json": {
+        "sha256": "f1cbd7a82b346f9a5708887152ae8379991e265544a00336b1457226abd565ff",
+        "bytes": 2797
+      },
+      "stages.jsonl": {
+        "sha256": "9173cc7d96f37a999498d404440fcc4193d8eb3107b503ac20070a24ab939985",
+        "bytes": 1240
+      },
+      "translation-control.json": {
+        "sha256": "86007b013a60a49952dd402f910d168642522f88d43064ee99499b171684b742",
+        "bytes": 29969
+      },
+      "work.jsonl": {
+        "sha256": "860509cf143759b1472c5b4859126a9d98fc6aa213fcba09d64aa68e51c42e31",
+        "bytes": 399
+      }
+    },
+    "outer_extraction_requests": {
+      "fresh": 6,
+      "reused": 3,
+      "scope": "Harness source requests only; native post-fit extraction excluded"
+    },
+    "new_molecular_http_requests": 0,
+    "whole_source_ranking": "Not computed; selected-prefix placement and checked-pose evidence only.",
+    "performance_claim": false,
+    "full_rigid_search_equivalence": false,
+    "attribution": "Actual reached native software/method records retained; manual source provenance from original PubChem receipt, no claim of complete source/provider instrumentation."
+  },
+  "public_recipe": {
+    "source_document": "docs/content/cookbook/modular_rigid_tools.md",
+    "source_identity": {
+      "sha256": "210a6eb751188e1e6108bcc4eb8c57e4407c480e36c8be858f05a153cf5fad47",
+      "bytes": 8933
+    },
+    "python_blocks_executed": 4,
+    "uses_only_public_scientific_operations": true,
+    "original_reference_fits": 6,
+    "changed_reference_proposals": 0,
+    "changed_reference_fits": 0,
+    "complete_original_proposals": true,
+    "complete_changed_proposals": true,
+    "performance_claim": false,
+    "installed_artifact_qualification": false
+  },
+  "actual_attribution": {
+    "path_in_archive": "capsule/attribution.public.json",
+    "sha256": "275644dd3ba13ece77a0dd40dcc285ef2eb697d7bde7f69d35207b861915c382",
+    "bytes": 29002,
+    "items": 16,
+    "uses": 49,
+    "scope": "Actual reached native software/methods in application-owned session; manual original PubChem source provenance separate, no complete provider/source instrumentation claim."
+  },
+  "administrative": {
+    "tests": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "forbidden_scientific_roots": [
+      "ackredit",
+      "molsysmt",
+      "numpy",
+      "pharmacophoremt",
+      "rdkit",
+      "scipy"
+    ],
+    "loaded_scientific_modules": [],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 75517952,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "scope": "PubChem metadata/preflight and private support guards with scientific imports forbidden; no scientific provider import or installed artifact qualification."
+  },
+  "administrative_actual_selector": "devtools/tests/test_distribution_contract.py; legacy controller scope label names the earlier receiving case, actual24-case selection and source are retained.",
+  "governance": {
+    "checks": [
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "final-check-0.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "final-check-1.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-2.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "final-check-3.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-4.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-5.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/check_dependency_routes.py",
+          "--declared-only"
+        ],
+        "exit_code": 0,
+        "output": "final-check-6.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      }
+    ],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 384712704,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+  },
+  "completed_distinct_local_test_cases": 132,
+  "test_count_limit": "87 scientific (17 new)+24 distribution+3 reporting+18 archive. Six source/reference comparisons and four executed cookbook blocks are separate measured work, not extra tests or independent compounds. No whole-source/broad-administration suite claim.",
+  "controllers": {
+    "tests": {
+      "exit_code": 0,
+      "elapsed_seconds_execution_observation_only": 36.20382517200778,
+      "performance_claim": false,
+      "source_files_unchanged": true,
+      "native_unchanged": true,
+      "native_after": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup_peak_bytes": 276967424,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "context": {
+        "sqlite_version": "3.54.1",
+        "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+        "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+        "origins": {
+          "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+          "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+          "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+          "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+          "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+        },
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "argdigest": "0.17.1+3.g0712641",
+          "smonitor": "0.22.1+1.gc1b6ce2",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "pytest": "9.2.0",
+          "pytest-receptor": "1.2.0",
+          "gh-run-receptor": "1.4.0",
+          "rdkit": "2026.9.2",
+          "ackredit": "0.12.1+10.g4beb850"
+        },
+        "native_before": {
+          "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+            "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+            "bytes": 101188064
+          }
+        },
+        "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-feature-reuse-tests-attempt1-20261107.scope",
+        "limits": {
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000"
+        },
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "memory_before_kib": {
+          "MemAvailable": 50769760,
+          "SwapFree": 8388568
+        },
+        "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=246440\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=245452\n",
+        "scope": "Feature-reuse subworkflow equivalence with actual native attribution. No full-search/index/biological/benchmark qualification; original source artifacts remain local."
+      },
+      "scope": "Original complete molecular/query/native outputs remain local; public projection only."
+    },
+    "science": {
+      "exit_code": 0,
+      "elapsed_seconds_execution_observation_only": 12.762740281992592,
+      "performance_claim": false,
+      "source_files_unchanged": true,
+      "native_unchanged": true,
+      "native_after": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup_peak_bytes": 231174144,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "context": {
+        "sqlite_version": "3.54.1",
+        "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+        "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+        "origins": {
+          "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+          "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+          "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+          "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+          "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+        },
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "argdigest": "0.17.1+3.g0712641",
+          "smonitor": "0.22.1+1.gc1b6ce2",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "pytest": "9.2.0",
+          "pytest-receptor": "1.2.0",
+          "gh-run-receptor": "1.4.0",
+          "rdkit": "2026.9.2",
+          "ackredit": "0.12.1+10.g4beb850"
+        },
+        "native_before": {
+          "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+            "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+            "bytes": 101188064
+          }
+        },
+        "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-feature-reuse-science-attempt1-20261107.scope",
+        "limits": {
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000"
+        },
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "memory_before_kib": {
+          "MemAvailable": 50722664,
+          "SwapFree": 8388568
+        },
+        "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=246441\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=245453\n",
+        "scope": "Feature-reuse subworkflow equivalence with actual native attribution. No full-search/index/biological/benchmark qualification; original source artifacts remain local."
+      },
+      "scope": "Original complete molecular/query/native outputs remain local; public projection only."
+    },
+    "recipe": {
+      "exit_code": 0,
+      "elapsed_seconds_execution_observation_only": 9.151895393995801,
+      "performance_claim": false,
+      "source_files_unchanged": true,
+      "native_unchanged": true,
+      "native_after": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup_peak_bytes": 237027328,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "context": {
+        "sqlite_version": "3.54.1",
+        "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+        "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+        "origins": {
+          "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+          "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+          "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+          "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+          "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+        },
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "argdigest": "0.17.1+3.g0712641",
+          "smonitor": "0.22.1+1.gc1b6ce2",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "pytest": "9.2.0",
+          "pytest-receptor": "1.2.0",
+          "gh-run-receptor": "1.4.0",
+          "rdkit": "2026.9.2",
+          "ackredit": "0.12.1+10.g4beb850"
+        },
+        "native_before": {
+          "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+            "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+            "bytes": 101188064
+          }
+        },
+        "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-feature-reuse-public-recipe-20261107.scope",
+        "limits": {
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000"
+        },
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "memory_before_kib": {
+          "MemAvailable": 50709308,
+          "SwapFree": 8388568
+        },
+        "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=246442\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=245453\n",
+        "scope": "Feature-reuse subworkflow equivalence with actual native attribution. No full-search/index/biological/benchmark qualification; original source artifacts remain local."
+      },
+      "scope": "Original complete molecular/query/native outputs remain local; public projection only."
+    }
+  },
+  "post_run_context": {
+    "provider_local_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+    "provider_local_worktree": [],
+    "sdk_head": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "sdk_clean": true,
+    "provider_observation": {
+      "provider_local_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+      "provider_worktree_clean": true,
+      "provider_remote_head": "add779264adc6610f3bbd381c2da617a56d14e73",
+      "remote_observation": "Connected read-only GitHub branch API; no local fetch/prune or provider/environment update.",
+      "collection_issue": {
+        "url": "https://github.com/uibcdf/molsysmt/issues/624",
+        "state": "open",
+        "comments": 1
+      },
+      "offline_status": "offline_suite_status.json",
+      "offline_status_exit": 1,
+      "attention_disposition": "Preserve own PHMT changes and cached provider32-behind state; cached count is not asserted for newer remote SHA.",
+      "prior_approval_review_boundary": "Earlier default suite-status fetch/prune was rejected. This increment uses explicit --no-fetch only; no alternative fetch is attempted."
+    },
+    "claim": "Observed source/native context and exact overlays; no provider rebuild, update or installed/public qualification."
+  },
+  "full_evidence": {
+    "path": "feature_reuse_20261107_full.json.gz",
+    "compressed_sha256": "1e36a5ae6057db792a6ab9f9e9c2af96d01c2b1d92da357df2ef9a013c2e2861",
+    "compressed_bytes": 138188,
+    "uncompressed_sha256": "06e99a1e8fbde924bae41437cfe518de7bbc67711263c77e7a703be22c409be9",
+    "uncompressed_bytes": 819717,
+    "own_file_count": 70,
+    "scope": "Complete owned code/control/scalar/citation projection; no PubChem H5MSM/query/feature/placement geometry bodies or original molecular native payloads."
+  },
+  "complete_native_outputs": {
+    "publication": "local_only",
+    "file_count": 4,
+    "identity_inventory": {
+      "sha256": "111599813f30fbac90916145d3ab50317f78163f21ce61b40e3616603d8dc2bb",
+      "bytes": 1646
+    },
+    "prior_artifacts": "All original PubChem bodies/native snapshots and past failed/successful runs remain unchanged."
+  },
+  "pending_goal": "Active mature pre1.0 0.x staircase; only this pending experiment and its public composition are closed. Next integrate a selected complete public prepared-input workflow.",
+  "pending_gates": [
+    "Public prepared-input integration and source/installed qualification #108/#95",
+    "Provider-owned molecular collections MolSysMT#624",
+    "Representative reuse/index cost measurements and broader chemical/state/conformer inputs",
+    "Separate biological studies #103/#66/#106",
+    "Full supported source/installed/public/platform evidence #9/#23 and prior broad administrative OOM"
+  ],
+  "temporary_resources": {
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "review_date": "2026-11-20",
+    "policy": "Retain source originals and every measurement/control identity; remove only isolated owned SDK after checks. Shared provider/environment unchanged."
+  }
+}

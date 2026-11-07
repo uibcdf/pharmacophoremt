@@ -15,6 +15,18 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Feature-reuse increment and mature-0.x checkpoint — 2026-11-07
+
+The [feature-reuse receipt](../evidence/feature_reuse_20261107_summary.json) owns
+87 selected scientific cases (17 new), the affected distribution guards and
+the existing reporting/archive/style/declaration checks. Six original-source/
+reference comparisons and the public cookbook execution are separate measured
+work, not extra test cases or independent chemical samples. The accepted mature
+0.x staircase and per-increment checkpoint instruction are persisted without
+changing public runtime signatures, provider pins or release plans. Routine
+delivery uses `[skip ci]`; no full source/installed/public/platform gate is
+inferred and no workflow is dispatched. Existing recovery debt stays separate.
+
 ## Read-only saved-run inspection — 2026-11-07
 
 The [inspection receipt](../evidence/reference_run_inspection_20261107_summary.json)

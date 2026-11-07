@@ -1,0 +1,113 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-experiment-plan@1",
+  "recorded_at_utc": "2026-11-07T02:54:04.458512+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "80dbd94389d4f3602c95b03ea16bdb3d94d7af87",
+  "context": "User resumed active mature-0.x goal and requires devguide to be kept as implementation checkpoint at every increment.",
+  "question": "Does one unchanged native feature inventory reused across two distinct reference inventories preserve full native correspondence/explicit-placement evidence relative to fresh extraction with identical settings?",
+  "evidence_class": "Bounded classical subworkflow equivalence; not full RigidPoseSearch equivalence or a benchmark/biological study.",
+  "source_records": [
+    {
+      "cid": 1983,
+      "source_key": "PubChemCID:1983",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+      "snapshot": {
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344
+      },
+      "expected_acceptor_features": 2
+    },
+    {
+      "cid": 2244,
+      "source_key": "PubChemCID:2244",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+      "snapshot": {
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328
+      },
+      "expected_acceptor_features": 4
+    },
+    {
+      "cid": 2519,
+      "source_key": "PubChemCID:2519",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+      "snapshot": {
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328
+      },
+      "expected_acceptor_features": 3
+    }
+  ],
+  "references": [
+    {
+      "key": "caffeine-acceptors",
+      "cid": 2519
+    },
+    {
+      "key": "aspirin-acceptors",
+      "cid": 2244
+    }
+  ],
+  "requested_families": [
+    "hb acceptor"
+  ],
+  "source_options": {
+    "selection": "all",
+    "structure_index": 0,
+    "chemical_state": 0
+  },
+  "settings": {
+    "correspondence_strategy": "association_cliques",
+    "min_matches": 3,
+    "distance_tolerance": {
+      "value": 0.15,
+      "unit": "nm"
+    },
+    "direction_tolerance": {
+      "value": 30,
+      "unit": "degree"
+    },
+    "max_graph_nodes": 64,
+    "max_cliques": 1000,
+    "max_trials": 10000,
+    "max_matrix_entries": 1000000,
+    "max_placements": 1
+  },
+  "oracles": [
+    "Source feature counts 2/4/3 in fixed CID order; identical feature definition/families/options in fresh and reused arms",
+    "Both references produce zero eligible three-feature association proposals for CID1983; this is proposal-family scope, not a new full screening claim",
+    "Identity mappings exist in each reference self-case and full fresh/reused proposal/placement reports agree",
+    "First canonical mapping only is fitted per query/arm. Record selected/omitted counts; empty accepted set with omitted proposals is not a compound negative",
+    "Three-of-four placement acceptance is separate from all-essential query evaluation",
+    "Source coordinates/maps and reused inventory remain unchanged; all three H5MSM bytes and historical capsule file identities unchanged",
+    "Per source outer extraction requests fresh2 versus reused1; native post-fit extraction continues. No time/memory speedup claim follows",
+    "Preserve actual native software/method attribution when available; source provenance from original PubChem receipt, no new acquisition"
+  ],
+  "resource_limits": {
+    "allowed_cpu": 19,
+    "cpu_quota_percent": 100,
+    "backend_threads": 1,
+    "memory_bytes": 536870912,
+    "swap_bytes": 0,
+    "max_tasks": 32,
+    "nice": 19,
+    "io": "idle",
+    "wall_limit": {
+      "value": 180,
+      "unit": "s"
+    }
+  },
+  "new_molecular_http_requests": 0,
+  "publication": "Native feature/query/placement geometry and H5MSM remain local; publish owned code/control/scalar/citation projections only.",
+  "limitations": [
+    "Unchanged same-source/frame/selection/state/chemistry/geometry is a caller precondition; no molecular snapshot/cache authentication added",
+    "Requested families declared separately; absence of records is not extraction coverage",
+    "No new public API/index/backend/dependency or provider/environment update",
+    "No equivalence claim for full seeded search, whole-library performance or biological prediction"
+  ],
+  "pending_goal": "Mature usable pre1.0 0.x through useful releases with exact source/installed/public gates. This experiment alone does not achieve that goal."
+}

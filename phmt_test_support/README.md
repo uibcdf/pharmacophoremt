@@ -45,7 +45,7 @@ remain unshipped helpers, with no new installed/public runtime promise.
 
 `ReferenceRunView` and the standalone command in the same `reference_run_store`
 helper add read-only historical inspection with explicit work/attempt coverage
-and observed top-K. No support file or schema is added (63 declared files remain);
+and observed top-K. That increment added no support file or schema (63 files then);
 the existing helper's hash changes. See the
 [inspection contract](../devguide/reference_run_inspection.md).
 
@@ -55,6 +55,14 @@ to public MolSysMT and exercises native query/recovery. It performs no download
 or molecular parsing. Original/derived molecular payloads stay local; the
 [case contract](../devguide/pubchem3d_receiving_pilot.md) links scalar evidence and
 the preserved initial dispatch failure. No general PubChem connector is implied.
+
+`feature_reuse_experiment` adds one literal declaration (64 private support
+files). It compares fresh and reused source inventories through existing public
+correspondence, placement and checked-pose tools, retains full native evidence
+and distinguishes selected mappings from omitted work. It is a case harness,
+not a runtime cache/index or replacement matcher. The
+[measured contract](../devguide/feature_inventory_reuse.md) and public cookbook
+composition keep its interpretation and source/installed limits explicit.
 
 `saved_model_reader.py` is a standalone fresh-process oracle for the four saved
 model cases. It uses only public PharmacophoreMT I/O and Ackredit; parent clients

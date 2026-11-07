@@ -535,3 +535,8 @@ sha256 = "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6"
 source = "phmt_test_support/pubchem3d_receiving_pilot.py"
 target = "phmt_test_support/pubchem3d_receiving_pilot.py"
 sha256 = "7edf3d837b0ce98c11f18b24dfda2093d94ec2ec486e884038161ee8b73310c9"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_reuse_experiment.py"
+target = "phmt_test_support/feature_reuse_experiment.py"
+sha256 = "96bba5fcc9a833909760759dcf10b565564e78394da94c9cce3ea613dd0d6f12"

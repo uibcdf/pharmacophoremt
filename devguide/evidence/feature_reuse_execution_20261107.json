@@ -1,0 +1,232 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-experiment-plan@1",
+  "recorded_at_utc": "2026-11-07T02:54:04.458512+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "80dbd94389d4f3602c95b03ea16bdb3d94d7af87",
+  "context": "User resumed active mature-0.x goal and requires devguide to be kept as implementation checkpoint at every increment.",
+  "question": "Does one unchanged native feature inventory reused across two distinct reference inventories preserve full native correspondence/explicit-placement evidence relative to fresh extraction with identical settings?",
+  "evidence_class": "Bounded classical subworkflow equivalence; not full RigidPoseSearch equivalence or a benchmark/biological study.",
+  "source_records": [
+    {
+      "cid": 1983,
+      "source_key": "PubChemCID:1983",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+      "snapshot": {
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344
+      },
+      "expected_acceptor_features": 2
+    },
+    {
+      "cid": 2244,
+      "source_key": "PubChemCID:2244",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+      "snapshot": {
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328
+      },
+      "expected_acceptor_features": 4
+    },
+    {
+      "cid": 2519,
+      "source_key": "PubChemCID:2519",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+      "snapshot": {
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328
+      },
+      "expected_acceptor_features": 3
+    }
+  ],
+  "references": [
+    {
+      "key": "caffeine-acceptors",
+      "cid": 2519
+    },
+    {
+      "key": "aspirin-acceptors",
+      "cid": 2244
+    }
+  ],
+  "requested_families": [
+    "hb acceptor"
+  ],
+  "source_options": {
+    "selection": "all",
+    "structure_index": 0,
+    "chemical_state": 0
+  },
+  "settings": {
+    "correspondence_strategy": "association_cliques",
+    "min_matches": 3,
+    "distance_tolerance": {
+      "value": 0.15,
+      "unit": "nm"
+    },
+    "direction_tolerance": {
+      "value": 30,
+      "unit": "degree"
+    },
+    "max_graph_nodes": 64,
+    "max_cliques": 1000,
+    "max_trials": 10000,
+    "max_matrix_entries": 1000000,
+    "max_placements": 1
+  },
+  "oracles": [
+    "Source feature counts 2/4/3 in fixed CID order; identical feature definition/families/options in fresh and reused arms",
+    "Both references produce zero eligible three-feature association proposals for CID1983; this is proposal-family scope, not a new full screening claim",
+    "Identity mappings exist in each reference self-case and full fresh/reused proposal/placement reports agree",
+    "First canonical mapping only is fitted per query/arm. Record selected/omitted counts; empty accepted set with omitted proposals is not a compound negative",
+    "Three-of-four placement acceptance is separate from all-essential query evaluation",
+    "Source coordinates/maps and reused inventory remain unchanged; all three H5MSM bytes and historical capsule file identities unchanged",
+    "Per source outer extraction requests fresh2 versus reused1; native post-fit extraction continues. No time/memory speedup claim follows",
+    "Preserve actual native software/method attribution when available; source provenance from original PubChem receipt, no new acquisition"
+  ],
+  "resource_limits": {
+    "allowed_cpu": 19,
+    "cpu_quota_percent": 100,
+    "backend_threads": 1,
+    "memory_bytes": 536870912,
+    "swap_bytes": 0,
+    "max_tasks": 32,
+    "nice": 19,
+    "io": "idle",
+    "wall_limit": {
+      "value": 180,
+      "unit": "s"
+    }
+  },
+  "new_molecular_http_requests": 0,
+  "publication": "Native feature/query/placement geometry and H5MSM remain local; publish owned code/control/scalar/citation projections only.",
+  "limitations": [
+    "Unchanged same-source/frame/selection/state/chemistry/geometry is a caller precondition; no molecular snapshot/cache authentication added",
+    "Requested families declared separately; absence of records is not extraction coverage",
+    "No new public API/index/backend/dependency or provider/environment update",
+    "No equivalence claim for full seeded search, whole-library performance or biological prediction"
+  ],
+  "pending_goal": "Mature usable pre1.0 0.x through useful releases with exact source/installed/public gates. This experiment alone does not achieve that goal.",
+  "prospective_identity": {
+    "sha256": "eeea9d49ae9c00d096d64b1ed2e00a8bb8ae6e463cb0afb3723dac4ff724e98f",
+    "bytes": 4895
+  },
+  "source_files": {
+    "phmt_test_support/feature_reuse_experiment.py": {
+      "sha256": "96bba5fcc9a833909760759dcf10b565564e78394da94c9cce3ea613dd0d6f12",
+      "bytes": 9164
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "tests/test_feature_reuse_experiment.py": {
+      "sha256": "f3ceb536f0748c957c70415905bf8f37d6a4f0708f10fe083f16b9c6a8fc4ceb",
+      "bytes": 9872
+    },
+    "tests/test_modular_rigid_tools.py": {
+      "sha256": "7b9439207c32efa6e6b83725020df5b1a889a84750ee2d42f9f7b1d78a98756a",
+      "bytes": 7392
+    },
+    "tests/test_correspondence_geometry.py": {
+      "sha256": "9075598b20812709d7a3233793009c3d8825796eb389ca1af5614ef792363eaf",
+      "bytes": 3923
+    },
+    "tests/test_rigid_consensus.py": {
+      "sha256": "2003b2a2b0eb54d60cde005c74721b0fd17d78384d3af28e10115f851e7ad9a2",
+      "bytes": 12274
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_aligned_consensus.py": {
+      "sha256": "8e4a4354eb778bbb7f90010171623147e1eec990c8c829a46d130ac3172faed8",
+      "bytes": 11906
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "pharmacophoremt/_ackredit.py": {
+      "sha256": "c28d33a037a30407400c12dc9f8fe57f93a61a9c8337d85eb465b229e2cb098f",
+      "bytes": 7714
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/references.py": {
+      "sha256": "f4ff0d16369e09c9c136c2284a327de1619e9b90720b1b68cff65bca3431812d",
+      "bytes": 10227
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+      "sha256": "b7755962de72099e53c307d6067e7222cef8a7978ce791a90aff5abf5c1ca1a0",
+      "bytes": 31629
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/modeler/reference_ligand.py": {
+      "sha256": "312fa3634a1073975b850dd80885771a107a04b9472866779cc07692bc77901b",
+      "bytes": 6620
+    },
+    "pharmacophoremt/modeler/aligned_consensus.py": {
+      "sha256": "169703f576c7931128cc91284dfcd64e5049870a22eb1367a14e28fe80194922",
+      "bytes": 18938
+    },
+    "pharmacophoremt/screening/rigid_correspondence.py": {
+      "sha256": "3b47e7c57e19ccc57679bbab85dcb4213f58bbc2198eab3a4bf5927dd4666844",
+      "bytes": 8626
+    },
+    "pharmacophoremt/screening/rigid_placements.py": {
+      "sha256": "b11400d6ccab3269c91e5ffbdc6d012c23c1d1c977fcb50e18add2e031e3392a",
+      "bytes": 8467
+    },
+    "pharmacophoremt/screening/correspondence.py": {
+      "sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24",
+      "bytes": 5426
+    },
+    "pharmacophoremt/screening/alignment.py": {
+      "sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc",
+      "bytes": 7339
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/feature_geometry.py": {
+      "sha256": "4be179c25993dd1cc57aef8dfe3e766a4ce344a23bcedbe1e1cab3a63760d08a",
+      "bytes": 5180
+    },
+    "pharmacophoremt/screening/feature_neighborhoods.py": {
+      "sha256": "b63df861196166b29daea4313fbea3470ce991034866b1a088a7a916cb12307f",
+      "bytes": 10034
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "devtools/conda-build/resources.toml": {
+      "sha256": "993042087903e4e913b739b29f6aad6e7211858306bda984463de618f2a9a2c9",
+      "bytes": 28133
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "3f14f84b5f6bbca4eebad5c492938b0e6afb06779f87d4835d8a087030d791b8",
+      "bytes": 25619
+    }
+  },
+  "scientific_selectors": [
+    "tests/test_feature_reuse_experiment.py",
+    "tests/test_modular_rigid_tools.py",
+    "tests/test_correspondence_geometry.py"
+  ],
+  "new_guard_expected_cases": 17,
+  "administrative_selector": "devtools/tests/test_distribution_contract.py",
+  "administrative_expected_cases": 24,
+  "sdk_revision": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f"
+}
