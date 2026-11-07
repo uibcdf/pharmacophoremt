@@ -1,0 +1,135 @@
+{
+  "schema": "pharmacophoremt.pubchem3d-pilot-execution-plan@1",
+  "prospective_plan": {
+    "path": "pubchem3d_pilot_plan_20261107.json",
+    "sha256": "c3d5cf966de3538c9cd9c2864b6ddba96e2c60d0fe2214c926794bab5054b9df",
+    "bytes": 6917
+  },
+  "acquisition": {
+    "sha256": "ef5fa6f9d691436358e8986e8a349e96a1a9a7b863fb15ae3f3c26d436f1b752",
+    "bytes": 9143
+  },
+  "source_files": {
+    "devtools/conda-build/resources.toml": {
+      "sha256": "bdf2802dc3e47af2c2f4de653f7f8cce7639d743f6792779fdfdf0db9c30ad5b",
+      "bytes": 27908
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "4b89611d2424e39c3ed175d403e3542f3b26ec16a7396ed0e5ea0b855a54b288",
+      "bytes": 25571
+    },
+    "devtools/tests/test_pubchem3d_receiving_pilot.py": {
+      "sha256": "1b540b25a08a165c92f4e66744176033c331214babfd5fba3ab472425bc13ced",
+      "bytes": 11588
+    },
+    "devtools/tests/test_reference_run_store.py": {
+      "sha256": "bc28145f2276f1450b118a89e0954e159ff00836af69cbdf0eb496a39392e132",
+      "bytes": 21794
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650",
+      "bytes": 1905
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+      "bytes": 1405
+    },
+    "pharmacophoremt/io/phmt/__init__.py": {
+      "sha256": "01eb4d19f99e1004a12fab925f76bef49c64ae70088a3242d3ec2a7541510f59",
+      "bytes": 11203
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41",
+      "bytes": 12410
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746",
+      "bytes": 10334
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "pharmacophoremt/screening/virtual_screening.py": {
+      "sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+      "bytes": 7034
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "phmt_test_support/prepared_library_recovery.py": {
+      "sha256": "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6",
+      "bytes": 8795
+    },
+    "phmt_test_support/prepared_library_reference.py": {
+      "sha256": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+      "bytes": 4808
+    },
+    "phmt_test_support/pubchem3d_receiving_pilot.py": {
+      "sha256": "0bd561ae2ea83266fa8620ab36bf1d056d979669bba9e2763ad829606a67ba7c",
+      "bytes": 27861
+    },
+    "phmt_test_support/reference_run_store.py": {
+      "sha256": "10b4ee6aa31102bc0e82cc6faf84d84b504227df346f888fb75cd2f597205960",
+      "bytes": 23028
+    },
+    "tests/test_conformer_screening.py": {
+      "sha256": "a09b86a9ed4a755ee519c898c3253904fe1f291333140d694a57a06f83dfde53",
+      "bytes": 14724
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "tests/test_prepared_library_recovery.py": {
+      "sha256": "4c384121e3e8f2e84036f9cfe9264daab1e6fd9f6402864039def915c1566253",
+      "bytes": 17760
+    },
+    "tests/test_prepared_library_reference.py": {
+      "sha256": "9797b6b8efcbe573d21fab4de0d94837bb5333cb5223d4f515729b78b4ef0732",
+      "bytes": 12637
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_seeded_scoring.py": {
+      "sha256": "1703113fb5457b75cb3997f61b32738198b9bd2330cb5a5d8ce2459f5905c9b4",
+      "bytes": 13674
+    },
+    "tests/test_virtual_screening.py": {
+      "sha256": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f",
+      "bytes": 13242
+    }
+  },
+  "producer_head": "f09b4274a8d969adb057457ee9ea9a44e3afcf66",
+  "provider_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+  "unit_selectors": [
+    "devtools/tests/test_pubchem3d_receiving_pilot.py",
+    "devtools/tests/test_distribution_contract.py"
+  ],
+  "expected_unit_counts": {
+    "tests": 32,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "original_outputs": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j",
+  "science_output": "attempt2",
+  "source_originals_publication": "Local only; publish scalar projection/hash metadata; original full local result identity retained.",
+  "oracles": "Unmodified prospective plan: fixed three received/prepared or stop; caffeine reference/translated seededself score1; recovery/exact composed parity; other scores unlabeled.",
+  "amendment_sha256": "17428b34199c82020a7885077da287cf6d348b9a0dc06d55576ccb5538b58958"
+}

@@ -86,3 +86,10 @@ saved query bytes/effective settings and composes them with the unshipped
 manifest validation, single-owner transactions, immutable confirmed outcomes and
 saved replay. See the [controlled recovery contract](../devguide/prepared_library_recovery.md)
 for publication versus delivery, producer preconditions and the separate evidence.
+
+`python -m phmt_test_support.pubchem3d_receiving_pilot PLAN ACQUISITION OUTPUT`
+executes the opt-in fixed-three receiving case **offline**, from authorized
+original bytes whose plan/order/hash admission passes. It uses a fresh output
+directory and records per-stage failures; one failed preparation stops scoring.
+It adds no downloader or parser. See [the measured contract](../devguide/pubchem3d_receiving_pilot.md)
+for local-only molecular artifacts, scalar publication and exact rerun context.

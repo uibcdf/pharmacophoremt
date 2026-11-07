@@ -266,6 +266,7 @@ class TestDistributionContract(unittest.TestCase):
                     "prepared_library_reference",
                     "reference_run_store",
                     "prepared_library_recovery",
+                    "pubchem3d_receiving_pilot",
                 ):
                     with self.subTest(helper=helper):
                         name = f"phmt_test_support.{helper}"

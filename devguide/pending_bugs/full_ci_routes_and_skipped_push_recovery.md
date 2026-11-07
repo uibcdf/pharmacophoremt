@@ -337,3 +337,26 @@ Use the standing maintainer-authorized direct route with `[skip ci]`, no remote
 dispatch and no rule/schedule changes. Exact-head full source/installed/platform
 coverage remains pending for deliberate/daily/weekly recovery. Keep #9 open;
 the scoped passing count must not erase prior failed or unexecuted gates.
+
+### Fixed PubChem3D data-flow pilot — 2026-11-07 UTC
+
+The [case receipt](../evidence/pubchem3d_pilot_20261107_summary.json) retains all six
+successful declared HTTP requests and both molecular attempts. Attempt 1 fails
+before scoring because public H5MSM 0.5 conversion rejects a legacy precision
+keyword; attempt 2 uses the public fixed-float64 codec, with unchanged source,
+query/oracles and 1e-12-nm readback gate. All three records prepare and score;
+first-item recovery and composed native parity pass. This is an unlabeled
+software/data-flow pilot, not a new biological or performance result.
+
+The final affected administration scope passes 32 cases (8 metadata/admission,
+24 distribution/staging), with scientific imports forbidden. Reporting (3),
+archive (18), full Ruff check/format, index and declared-route checks keep their
+separate evidence. Source hashes/native bytes and actual one-CPU/512-MiB/no-swap
+limits are retained. No provider/environment update, new runtime dependency or
+workflow/rule change is performed. Initial/second administration runs repeat the
+same 32 cases; they are not 64 independent checks.
+
+Use the standing `[skip ci]` direct route without dispatch. Exact-head full
+source/installed/platform gates and the earlier broader administrative OOM remain
+owned here. No raw molecular inputs or geometry-bearing results are published;
+the archive contains own code, scalar case results and hash/status provenance.

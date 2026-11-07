@@ -1,0 +1,29 @@
+{
+  "schema": "pharmacophoremt.pubchem3d-snapshot-route-amendment@1",
+  "declared_at_utc": "2026-11-07T01:49:36.132275+00:00",
+  "original_plan_sha256": "c3d5cf966de3538c9cd9c2864b6ddba96e2c60d0fe2214c926794bab5054b9df",
+  "original_plan_unchanged": true,
+  "initial_execution_plan_sha256": "95d7fc563f9723cb760f3bc272e4add398e53f903ecdfa5177e4e55d59a57af6",
+  "initial_attempt": {
+    "status": "preparation_failed",
+    "received": 3,
+    "import_aromaticity_completed": 3,
+    "snapshots_completed": 0,
+    "screening": "not_run",
+    "failure": "Public convert routes to H5MSM 0.5 and rejects legacy float_precision=double argument. Original stages/result/source snapshot retained.",
+    "result_sha256": "940d770d3021593aa9bdaf867a58d852c0f0faf1fd9d71d491337823e937968d"
+  },
+  "correction": "Use public msm.h5msm.write/read; 0.5 coordinates have fixed float64 storage and reader validation. Preserve explicit double-precision/nm1e-12 inventory/roundtrip gate. No direct HDF5/private writer or precision fallback.",
+  "unchanged": [
+    "Original three CIDs/conformer IDs/source bytes",
+    "Received chemistry/indexed H/geometry and aromaticity policy",
+    "Query features/radius/budget/scoring and independent controls",
+    "All-or-stop denominators",
+    "No provider/environment update"
+  ],
+  "provider_evidence": [
+    "molsysmt/h5msm.py public write/read",
+    "molsysmt/form/_h5msm05_structures.py fixed float64 coordinate schema checked by public reader"
+  ],
+  "scope": "Consumer dispatch correction, not proof of missing double-precision native persistence."
+}

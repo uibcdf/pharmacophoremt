@@ -1,0 +1,126 @@
+{
+  "schema": "pharmacophoremt.pubchem3d-pilot-plan@1",
+  "declared_at_utc": "2026-11-07T01:34:10.764790+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "First bounded real-public-structure receiving/import/snapshot/screening pilot. Three Compound CIDs, one explicitly identified computed conformer per CID. Software/provenance pilot, no biological/activity/affinity/stock/large-library claim.",
+  "producer_head": "f09b4274a8d969adb057457ee9ea9a44e3afcf66",
+  "provider_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+  "provider_status": "Local provider clean, 32 commits behind fetched origin/main; preserve it and actual environment, no update/merge/rebuild.",
+  "cids": [
+    1983,
+    2244,
+    2519
+  ],
+  "molecules": [
+    {
+      "cid": 1983,
+      "name": "acetaminophen",
+      "formula": "C8H9NO2",
+      "n_atoms": 20,
+      "n_hydrogens": 9
+    },
+    {
+      "cid": 2244,
+      "name": "aspirin",
+      "formula": "C9H8O4",
+      "n_atoms": 21,
+      "n_hydrogens": 8
+    },
+    {
+      "cid": 2519,
+      "name": "caffeine",
+      "formula": "C8H10N4O2",
+      "n_atoms": 24,
+      "n_hydrogens": 10
+    }
+  ],
+  "acquisition": {
+    "route": "Fixed case-specific original-byte HTTP receiving in owned capsule; not a reusable PHMT molecular downloader or qualified PubChem connector.",
+    "listing_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/compound/cid/{cid}/conformers/TXT",
+    "sdf_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/conformers/{conformer_id}/SDF",
+    "choice": "First native conformer ID in the received diverse order; keep complete original listing.",
+    "max_requests": 6,
+    "max_retries": 0,
+    "minimum_seconds_between_requests": 1,
+    "socket_timeout_seconds": 30,
+    "per_request_wall_seconds": 35,
+    "listing_max_bytes": 65536,
+    "sdf_max_bytes": 2097152,
+    "redirects": "https pubchem.ncbi.nlm.nih.gov only; record requested/final URL",
+    "throttling": "Stop all further requests on red/black X-Throttling-Control; no 2D/name/alternate-host or second-conformer fallback.",
+    "response_evidence": [
+      "UTC times",
+      "HTTP status",
+      "requested/final URL",
+      "selected headers including content-type and throttling",
+      "original bytes or bounded truncation marker",
+      "byte count and SHA256"
+    ],
+    "source_type": "PubChem Compound/CID plus computed conformer ID; no invented depositor SID."
+  },
+  "preparation": {
+    "import": "msm.convert(sdf,to_form=molsysmt.MolSys,discard_properties=True,stereo_engine=rdkit,return_report=True)",
+    "allowed_conversion_losses": [
+      "sdf_properties",
+      "sdf_bond_display"
+    ],
+    "loss_rule": "Retain original SDF unchanged outside native domains. Reject any other reported conversion loss; never call the import lossless. This is ordinary compound data, not PHMT annotated-SDF schema migration.",
+    "chemical_state": "Retain supplied state, charges, bonds and indexed hydrogens; no protonation/neutralization/tautomer/fragment/hydrogen/conformer generation.",
+    "aromaticity": "Explicit public msm.physchem.get_aromaticity followed by aligned public msm.set annotations; no direct RDKit or private provider call.",
+    "readiness": "Record public get_chemical_readiness/get_hydrogen_inventory before/after; target recognition must still succeed under its own native prerequisites.",
+    "snapshot": "Public MolSysMT SDF->MolSys->file:h5msm->MolSys, explicit float_precision=double, no interactions embedded.",
+    "roundtrip": "Atom IDs/types, formal charges, aromatic flags, bond index mapping, state/frame counts preserved; coordinates compared explicitly in nm atol1e-12.",
+    "all_or_stop": "All three fixed records must be received and prepared before screening; preserve each failure and do not replace IDs or shrink the selection silently."
+  },
+  "query": {
+    "reference_cid": 2519,
+    "construction": "PHMT from_ligand(features=[hb acceptor],radius=0.15 nm), save native JSON; no selecting feature subset after scoring.",
+    "screening_method": "rigid",
+    "search_method": "seeded_hit",
+    "score_method": "seeded_hit",
+    "max_trials": 10000,
+    "evaluation": "one received source frame, reference chemical state, all source atoms; on_error=record",
+    "oracle": "Reference caffeine must admit its own triplet-seeded hit with binary score1 if query/native eligibility passes. Other library scores are observations, not biological truth labels.",
+    "source_mappings": "Stable work keys include CID/native conformer/source frame; source key CID, original occurrence in frozen order. Distinct CIDs do not prove molecular/series independence.",
+    "recovery_control": "Commit first work item, close/reopen run, finish pending work; first committing attempt remains singular. Saved full outcomes compared against composed native reference using identical effective settings.",
+    "geometry_control": "Optional predeclared public proper translation of reference caffeine [1,2,3] nm, in_place=False, must preserve seeded binary self-hit; source bytes unchanged.",
+    "failure": "Budget/recognition/preparation failures remain unscored with original cause. No tolerance/budget/feature/source changes to force a pass."
+  },
+  "rights": {
+    "documents": [
+      "https://www.ncbi.nlm.nih.gov/home/about/policies/",
+      "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/downloads.md"
+    ],
+    "usage": "Local bounded scientific-software pilot; preserve source-specific provenance, no blanket CC0 claim.",
+    "publication": "Original HTTP bodies, molecular SDF/H5MSM and geometry-bearing query/results stay in owned local capsule pending complete redistribution assessment. Publish own code, request/status/hash manifest and scalar scientific projection; no clinical/contributor annotation prose."
+  },
+  "resources": {
+    "cpu": 19,
+    "cpu_quota_percent": 100,
+    "memory_max_bytes": 536870912,
+    "memory_swap_max_bytes": 0,
+    "tasks_max": 32,
+    "nice": 19,
+    "io_priority": "idle",
+    "backend_threads": 1,
+    "scientific_timeout_seconds": 180
+  },
+  "sources": [
+    "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/pug-rest.md",
+    "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/pubchem3d.md",
+    "https://pubchem.ncbi.nlm.nih.gov/pcfe/docs/markdown/dynamic-request-throttling.md"
+  ],
+  "excluded": [
+    "New molecular parser/downloader/preparation fallback",
+    "Automatic environment/provider upgrade",
+    "Biological retrospective validation or replacement of #103/#66/#106 inputs",
+    "Purchasability/stock/affinity/bioactivity claims",
+    "Exhaustive conformer/state/chemical-space coverage",
+    "Public runtime/provider connector/index/benchmark/production snapshot qualification"
+  ],
+  "original_outputs": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j"
+}

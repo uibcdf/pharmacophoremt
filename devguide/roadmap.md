@@ -137,3 +137,12 @@ cases pass. Saved replay uses no molecular/citation provider. Next qualify actua
 provider collection/snapshot contracts and a bounded permitted real subset before
 public API selection and reusable-index experiments; declarations alone do not
 authenticate prepared molecular content or qualify production durability.
+
+The [fixed three-record PubChem3D case](pubchem3d_receiving_pilot.md) now supplies
+the first bounded real-data receiving/import/snapshot/screening measurement.
+It retains its initial public precision-keyword failure and corrected fixed-
+float64 codec attempt. All original records are accounted for; no biological
+labels or broad connector support follow. The missing reusable resource-owning
+collection contract is handed to [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624).
+Broader source/format coverage and the guided/expert public workflow still need
+qualification before index/performance claims.

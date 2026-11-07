@@ -43,6 +43,13 @@ files. Saved replay needs no scientific provider; reexecution reconstructs an
 existing native evaluator from saved query bytes and effective settings. These
 remain unshipped helpers, with no new installed/public runtime promise.
 
+`pubchem3d_receiving_pilot` adds one literal declaration (63 private files). It
+accepts only the frozen three-record received-byte case, delegates molecular work
+to public MolSysMT and exercises native query/recovery. It performs no download
+or molecular parsing. Original/derived molecular payloads stay local; the
+[case contract](../devguide/pubchem3d_receiving_pilot.md) links scalar evidence and
+the preserved initial dispatch failure. No general PubChem connector is implied.
+
 `saved_model_reader.py` is a standalone fresh-process oracle for the four saved
 model cases. It uses only public PharmacophoreMT I/O and Ackredit; parent clients
 run its explicit file with `python -P` in the owned case directory. It needs no

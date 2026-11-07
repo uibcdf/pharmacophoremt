@@ -120,3 +120,14 @@ no chemical dataset, generates no states/conformers, runs no new model/score and
 certifies no library integration. The research note's new #108/registry links are
 navigation updates after its earlier dated evidence hash; earlier closeout hashes
 continue identifying their original bytes, not this maintained revision.
+
+## Bounded PubChem3D evidence — 2026-11-07 UTC
+
+The [three-record case](pubchem3d_receiving_pilot.md) now measures six successful
+receiving requests, public-provider preparation/native snapshot readback and a
+declared pharmacophore screen with recovery. The original precision-keyword
+failure and corrected public fixed-float64 codec attempt remain separate.
+The PubChem record stays **Under review** for general managed-library support:
+this is one supplied conformer per CID and no activity/affinity/stock benchmark.
+Raw/derived molecular payloads remain local; scalar/provenance evidence is public.
+The reusable collection contract is [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624).

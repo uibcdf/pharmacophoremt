@@ -78,6 +78,14 @@ publication. It distinguishes confirmed results from generator delivery and keep
 terminal failures authoritative. Its analytical controls do not authenticate
 live molecular inputs or qualify power-loss/distributed/platform durability.
 
+The [first fixed real-structure pilot](../pubchem3d_receiving_pilot.md) now receives
+three PubChem computed conformers, prepares them through public MolSysMT, verifies
+native persistence and executes a declared caffeine-acceptor query with recovery.
+The initial precision-keyword dispatch failure remains separate from its corrected
+public-codec attempt. This is finite-file case evidence, not a managed public
+connector or biological validation. The provider-owned reusable collection need is
+handed to [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624).
+
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening
 materializes its full input iterable. Prepared-native evaluators do not constitute
@@ -85,7 +93,9 @@ a qualified arbitrary-public-library workflow. The research records official
 provider documentation and access limitations, not acquisition/preparation evidence.
 
 The registry records proposed priorities and initial assessments for 17 resources.
-No provider is newly qualified. DrugBank's automatic-acquisition route is deferred
+No provider is qualified for blanket managed-library support. The three-record
+PubChem3D case has only its explicitly measured receiving/import/scoring scope.
+DrugBank's automatic-acquisition route is deferred
 under the observed download pause, with a specific revisit trigger. Enamine's
 applicable agreement/access requirements remain an explicit assessment item.
 The registry research did not download or prepare a chemical dataset or run a
