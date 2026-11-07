@@ -18,7 +18,7 @@ version may advance several milestones.
 | Milestone | Usable result and acceptance | Current evidence and remaining work |
 | --- | --- | --- |
 | 1. Coherent classical core | Generation, composition, correspondence, alignment, evaluation and scoring preserve compatible feature, geometry, unit, identity and failure semantics. Public contracts and reproducible controls explain supported domains and incomplete answers. | Native routes and scoped controls exist in the [capability inventory](capability_inventory.md). The [feature-reuse subworkflow](feature_inventory_reuse.md) now has equal native evidence under its declared scope. Close remaining observed gaps before changing cache/search contracts. |
-| 2. Complete public workflow | A user imports prepared data, builds/loads a query, inspects a plan, screens, resumes and exports through documented public operations. Guided and expert routes resolve to the same effective settings. | The [prepared-input public tool](public_prepared_screening.md) now passes source controls and its recipe. Owned installed receiving is pending; recovery/inspection remain unshipped. Complete the selected public task and qualify independent use before closing this milestone. |
+| 2. Complete public workflow | A user imports prepared data, builds/loads a query, inspects a plan, screens, resumes and exports through documented public operations. Guided and expert routes resolve to the same effective settings. | The [prepared-input public tool](public_prepared_screening.md) now passes134 selected local tests and source/owned installed recipes. Recovery/inspection remain unshipped; the full guided/expert journey, usability and supported installed/public gates remain open. |
 | 3. Robust molecular collections | Provider-owned records, molecules, states, conformers and atom/source mappings have explicit resource, preparation, bounded iteration, snapshot and recovery contracts. | The fixed [PubChem3D case](pubchem3d_receiving_pilot.md) qualifies individual artifacts only. Receive the reusable boundary from [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624); PHMT must not add a replacement molecular parser or collection. |
 | 4. Progressively qualified public libraries | A common user journey supports selected sources and formats, with separately demonstrated discovery, download/import, preparation, screening and availability operations and their access conditions. | [Source assessments](public_library_registry.md) and the three-record pilot do not establish general connectors. Qualify each selected operation/source increment; the mature-release scope names the selected sources and remaining exclusions. |
 | 5. Efficient repeated queries and screening | Reusable annotations, scans and indexes are compared on equivalent problems, including build/storage, cold/repeated-query cost, memory, invalidation and coverage. Acceleration addresses measured bottlenecks. | The [in-memory reuse experiment](feature_inventory_reuse.md) passes its equality controls and public recipe. No cache/index strategy or speedup follows from fewer outer requests; broader workload/resource evidence remains required. |
@@ -83,9 +83,10 @@ The public gap audit selected a separate prepared-input iterator because the
 existing facade owns global hit ranking and complete caches. `PreparedInput` and
 `screen_prepared` now have one public runtime implementation, definition-owned
 admission, structured diagnostics and actual per-evaluation attribution.89 source
-controls and the query/prepared-file/export recipe pass. Finish the owned wheel
-receiving described in the [public contract](public_prepared_screening.md), then
-qualify a separate public recovery/results contract. Managed molecular collections
+controls and the query/prepared-file/export recipe pass. The identical owned wheel
+also passes that recipe outside the checkout, as recorded in the
+[public contract](public_prepared_screening.md). Next qualify a separate public
+recovery/results contract. Managed molecular collections
 remain MolSysMT#624-owned; source work is not full milestone2 delivery.
 
 ## Current priority: classical consolidation

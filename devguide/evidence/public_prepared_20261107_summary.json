@@ -1,0 +1,1229 @@
+{
+  "schema": "pharmacophoremt.public-prepared-summary@1",
+  "recorded_at_utc": "2026-11-07T04:04:03.077443+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "Public prepared-input integration and bounded Linux/Python3.14 own-wheel receiving in recorded source-provider context; no public-channel/Conda/full platform-minor, recovery, collection, index, benchmark or biological qualification.",
+  "producer_head": "707e55f0a02e7b8c693718e28afcf510ff64b8ca",
+  "scientific_controls": {
+    "arguments": [
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "tests/test_prepared_library_reference.py",
+      "tests/test_public_prepared_screening.py",
+      "tests/test_prepared_library_recovery.py",
+      "tests/test_virtual_screening.py",
+      "--receptor=llm",
+      "--receptor-events=/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/attempt1-tests.events.jsonl",
+      "--junitxml=/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/attempt1-tests.junit.xml"
+    ],
+    "exit_code": 0,
+    "counts": {
+      "tests": 89,
+      "errors": 0,
+      "failures": 0,
+      "skipped": 0
+    },
+    "new_guard_cases": 14,
+    "nodeids": [
+      "tests.test_prepared_library_reference::test_lazy_close_stops_pulling_and_releases_borrowed_source",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides0-UnknownArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides1-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides2-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides3-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides4-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides5-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides6-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides7-ArgumentError]",
+      "tests.test_prepared_library_reference::test_invalid_plan_is_rejected_before_iterating_even_empty_source[overrides8-ArgumentError]",
+      "tests.test_prepared_library_reference::test_evaluation_options_mapping_is_copied_before_iteration",
+      "tests.test_prepared_library_reference::test_malformed_mapping_fails_before_scientific_evaluation[work_key-]",
+      "tests.test_prepared_library_reference::test_malformed_mapping_fails_before_scientific_evaluation[work_key-7]",
+      "tests.test_prepared_library_reference::test_malformed_mapping_fails_before_scientific_evaluation[source_key-]",
+      "tests.test_prepared_library_reference::test_malformed_mapping_fails_before_scientific_evaluation[source_key-None]",
+      "tests.test_prepared_library_reference::test_malformed_mapping_fails_before_scientific_evaluation[occurrence_key-]",
+      "tests.test_prepared_library_reference::test_malformed_mapping_fails_before_scientific_evaluation[occurrence_key-False]",
+      "tests.test_prepared_library_reference::test_placed_native_batch_parity_preserves_order_and_repeated_source",
+      "tests.test_prepared_library_reference::test_recorded_input_failure_is_unscored_and_next_occurrence_continues",
+      "tests.test_prepared_library_reference::test_raise_policy_stops_before_the_following_input",
+      "tests.test_prepared_library_reference::test_source_failure_is_not_reclassified_as_a_molecular_negative",
+      "tests.test_prepared_library_reference::test_seeded_no_fit_negative_stays_distinct_from_failure",
+      "tests.test_prepared_library_reference::test_exhausted_search_budget_is_failed_and_unscored",
+      "tests.test_prepared_library_reference::test_partial_conformer_hit_preserves_nested_identity_and_failure",
+      "tests.test_prepared_library_reference::test_unresolved_partial_negative_keeps_observed_witness_unscored",
+      "tests.test_prepared_library_reference::test_requested_conformer_tie_order_is_preserved",
+      "tests.test_public_prepared_screening::test_public_exports_and_compatibility_helper_are_the_same_objects",
+      "tests.test_public_prepared_screening::test_definition_contract_is_closed_and_preserves_source_identity",
+      "tests.test_public_prepared_screening::test_unknown_public_options_fail_before_borrowing_source[options0]",
+      "tests.test_public_prepared_screening::test_unknown_public_options_fail_before_borrowing_source[options1]",
+      "tests.test_public_prepared_screening::test_unknown_public_options_fail_before_borrowing_source[options2]",
+      "tests.test_public_prepared_screening::test_unknown_public_options_fail_before_borrowing_source[options3]",
+      "tests.test_public_prepared_screening::test_nontrivial_public_values_are_refused_before_borrowing_source[overrides0]",
+      "tests.test_public_prepared_screening::test_nontrivial_public_values_are_refused_before_borrowing_source[overrides1]",
+      "tests.test_public_prepared_screening::test_nontrivial_public_values_are_refused_before_borrowing_source[overrides2]",
+      "tests.test_public_prepared_screening::test_nontrivial_public_values_are_refused_before_borrowing_source[overrides3]",
+      "tests.test_public_prepared_screening::test_fresh_runtime_import_and_unconsumed_close_need_no_support_or_ackredit",
+      "tests.test_public_prepared_screening::test_factory_and_unconsumed_close_create_no_application_credit",
+      "tests.test_public_prepared_screening::test_partial_consumption_retains_actual_native_credit_and_source_identity",
+      "tests.test_public_prepared_screening::test_source_interruption_preserves_yielded_native_evidence_and_session",
+      "tests.test_prepared_library_recovery::test_saved_bytes_defaults_and_options_are_detached_from_live_callers",
+      "tests.test_prepared_library_recovery::test_reopen_skips_confirmed_work_and_matches_composed_native_reference",
+      "tests.test_prepared_library_recovery::test_interruption_distinguishes_staged_work_from_confirmed_undelivered_result[before_commit]",
+      "tests.test_prepared_library_recovery::test_interruption_distinguishes_staged_work_from_confirmed_undelivered_result[after_commit]",
+      "tests.test_prepared_library_recovery::test_confirmed_native_failure_remains_unscored_and_is_not_reevaluated",
+      "tests.test_prepared_library_recovery::test_changed_declared_boundary_is_refused_before_source_iteration[prepared_snapshot]",
+      "tests.test_prepared_library_recovery::test_changed_declared_boundary_is_refused_before_source_iteration[preparation]",
+      "tests.test_prepared_library_recovery::test_changed_declared_boundary_is_refused_before_source_iteration[features]",
+      "tests.test_prepared_library_recovery::test_changed_declared_boundary_is_refused_before_source_iteration[index]",
+      "tests.test_prepared_library_recovery::test_changed_declared_boundary_is_refused_before_source_iteration[grouping]",
+      "tests.test_prepared_library_recovery::test_changed_declared_boundary_is_refused_before_source_iteration[numerical]",
+      "tests.test_prepared_library_recovery::test_changed_saved_query_or_execution_settings_require_another_run[query_bytes]",
+      "tests.test_prepared_library_recovery::test_changed_saved_query_or_execution_settings_require_another_run[selection]",
+      "tests.test_prepared_library_recovery::test_changed_saved_query_or_execution_settings_require_another_run[frame]",
+      "tests.test_prepared_library_recovery::test_changed_saved_query_or_execution_settings_require_another_run[on_error]",
+      "tests.test_prepared_library_recovery::test_reordered_or_incomplete_source_fails_without_erasing_confirmed_prefix[reordered]",
+      "tests.test_prepared_library_recovery::test_reordered_or_incomplete_source_fails_without_erasing_confirmed_prefix[short]",
+      "tests.test_prepared_library_recovery::test_second_saved_query_uses_linked_run_and_preserves_original_results",
+      "tests.test_prepared_library_recovery::test_recovery_creation_and_early_close_leave_caller_reader_owned",
+      "tests.test_prepared_library_recovery::test_runtime_mismatch_is_refused_before_pulling_source",
+      "tests.test_prepared_library_recovery::test_reopened_native_search_evidence_keeps_scores_failures_and_nested_ids[seeded_no_fit]",
+      "tests.test_prepared_library_recovery::test_reopened_native_search_evidence_keeps_scores_failures_and_nested_ids[partial_conformer_hit]",
+      "tests.test_virtual_screening::test_requires_explicit_native_method[None]",
+      "tests.test_virtual_screening::test_requires_explicit_native_method[legacy]",
+      "tests.test_virtual_screening::test_requires_explicit_native_method[]",
+      "tests.test_virtual_screening::test_requires_explicit_native_method[method3]",
+      "tests.test_virtual_screening::test_requires_explicit_native_method[True]",
+      "tests.test_virtual_screening::test_retired_preparation_and_partial_essential_threshold_are_refused[options0]",
+      "tests.test_virtual_screening::test_retired_preparation_and_partial_essential_threshold_are_refused[options1]",
+      "tests.test_virtual_screening::test_retired_preparation_and_partial_essential_threshold_are_refused[options2]",
+      "tests.test_virtual_screening::test_retired_preparation_and_partial_essential_threshold_are_refused[options3]",
+      "tests.test_virtual_screening::test_explicit_units_are_required[options0]",
+      "tests.test_virtual_screening::test_explicit_units_are_required[options1]",
+      "tests.test_virtual_screening::test_placed_records_preserve_indices_negatives_and_original_repeated_sources",
+      "tests.test_virtual_screening::test_native_assignment_and_zero_weight_essential_rules_replace_legacy_reuse",
+      "tests.test_virtual_screening::test_hits_rank_by_native_weighted_coverage_with_stable_input_ties",
+      "tests.test_virtual_screening::test_unit_context_and_optional_attribution_survive_the_facade",
+      "tests.test_virtual_screening::test_coincident_donor_geometry_and_steric_veto_remain_native",
+      "tests.test_virtual_screening::test_rigid_method_recovers_transformed_prepared_frame_without_mutation",
+      "tests.test_virtual_screening::test_prepared_conformer_order_and_partial_failure_evidence_are_retained",
+      "tests.test_virtual_screening::test_conformer_ties_follow_requested_source_frame_order",
+      "tests.test_virtual_screening::test_recorded_failures_are_unscored_and_not_hits",
+      "tests.test_virtual_screening::test_no_coordinates_never_trigger_local_preparation",
+      "tests.test_virtual_screening::test_failed_rebuild_clears_caches_and_does_not_publish_partial_results[provider]",
+      "tests.test_virtual_screening::test_failed_rebuild_clears_caches_and_does_not_publish_partial_results[options]",
+      "tests.test_virtual_screening::test_failed_rebuild_clears_caches_and_does_not_publish_partial_results[iterator]",
+      "tests.test_virtual_screening::test_scalar_exports_need_no_molecular_conversion_and_sdf_is_explicitly_retired",
+      "tests.test_virtual_screening::test_loo_requires_explicit_factory_and_uses_native_status_for_negatives",
+      "tests.test_virtual_screening::test_facade_and_validation_callers_have_no_direct_molecular_backend_imports"
+    ]
+  },
+  "canonical_events": {
+    "reader": "pytest_receptor.artifact.read_artifact",
+    "complete": true,
+    "integrity_valid": true,
+    "final_type": "session_finish",
+    "exitstatus": 0,
+    "counts": {
+      "collected": 89,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 89,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 89,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    }
+  },
+  "public_source_recipe": {
+    "source_document": "docs/content/cookbook/prepared_incremental_screening.md",
+    "source_identity": {
+      "sha256": "e62cc8f6c7808ea16ecb052a0218cea6cb5859469c63606b67edde31b6564303",
+      "bytes": 7975
+    },
+    "python_blocks_executed": 2,
+    "summary": {
+      "outcomes": 3,
+      "matched": 2,
+      "not_matched": 1,
+      "failed": 0
+    },
+    "mappings_preserved": true,
+    "scores": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "statuses": [
+      "not_matched",
+      "matched",
+      "matched"
+    ],
+    "source_query_bytes_unchanged": true,
+    "all_phmt_module_origins": {
+      "pharmacophoremt._private": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/__init__.py",
+      "pharmacophoremt._private.smonitor.meta": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/smonitor/meta.py",
+      "pharmacophoremt._private.smonitor.catalog": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/smonitor/catalog.py",
+      "pharmacophoremt._private.smonitor.exceptions": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/smonitor/exceptions.py",
+      "pharmacophoremt._private.smonitor": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/smonitor/__init__.py",
+      "pharmacophoremt._version": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_version.py",
+      "pharmacophoremt.config.logging_setup": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/config/logging_setup.py",
+      "pharmacophoremt.config": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/config/__init__.py",
+      "pharmacophoremt._pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_pyunitwizard.py",
+      "pharmacophoremt.interaction_site.feature.aromatic_ring": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/aromatic_ring.py",
+      "pharmacophoremt.interaction_site.feature.cation_pi": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/cation_pi.py",
+      "pharmacophoremt.interaction_site.feature.excluded_volume": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/excluded_volume.py",
+      "pharmacophoremt.interaction_site.feature.halogen_bond": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/halogen_bond.py",
+      "pharmacophoremt.interaction_site.feature.hb_acceptor": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/hb_acceptor.py",
+      "pharmacophoremt.interaction_site.feature.hb_donor": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/hb_donor.py",
+      "pharmacophoremt.interaction_site.feature.hydrophobicity": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/hydrophobicity.py",
+      "pharmacophoremt.interaction_site.feature.included_volume": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/included_volume.py",
+      "pharmacophoremt.interaction_site.feature.metal_coordination": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/metal_coordination.py",
+      "pharmacophoremt.interaction_site.feature.negative_charge": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/negative_charge.py",
+      "pharmacophoremt.interaction_site.feature.positive_charge": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/positive_charge.py",
+      "pharmacophoremt.interaction_site.feature": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/feature/__init__.py",
+      "pharmacophoremt._private.colors": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/colors.py",
+      "pharmacophoremt.viewer": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/viewer/__init__.py",
+      "pharmacophoremt.viewer.color_palettes": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/viewer/color_palettes.py",
+      "pharmacophoremt._argdigest": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_argdigest.py",
+      "pharmacophoremt._private.arg_digestion.argument._contracts": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/_contracts.py",
+      "pharmacophoremt._private.arg_digestion.argument.cation_mapping": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/cation_mapping.py",
+      "pharmacophoremt._private.arg_digestion.argument.center": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/center.py",
+      "pharmacophoremt._private.arg_digestion.argument.description": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/description.py",
+      "pharmacophoremt._private.arg_digestion.argument.direction": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/direction.py",
+      "pharmacophoremt._private.arg_digestion.argument.duplicate_policy": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/duplicate_policy.py",
+      "pharmacophoremt._private.arg_digestion.argument.end": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/end.py",
+      "pharmacophoremt._private.arg_digestion.argument.features": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/features.py",
+      "pharmacophoremt._private.arg_digestion.argument.form": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/form.py",
+      "pharmacophoremt._private.arg_digestion.argument.interaction_collection": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/interaction_collection.py",
+      "pharmacophoremt._private.arg_digestion.argument.interaction_site": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/interaction_site.py",
+      "pharmacophoremt._private.arg_digestion.argument.misc": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/misc.py",
+      "pharmacophoremt._private.arg_digestion.argument.molecular_system": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/molecular_system.py",
+      "pharmacophoremt._private.arg_digestion.argument.name": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/name.py",
+      "pharmacophoremt._private.arg_digestion.argument.normal": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/normal.py",
+      "pharmacophoremt._private.arg_digestion.argument.pharmacophore": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/pharmacophore.py",
+      "pharmacophoremt._private.arg_digestion.argument.pharmacophores": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/pharmacophores.py",
+      "pharmacophoremt._private.arg_digestion.argument.position": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/position.py",
+      "pharmacophoremt._private.arg_digestion.argument.radius": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/radius.py",
+      "pharmacophoremt._private.arg_digestion.argument.shape": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/shape.py",
+      "pharmacophoremt._private.arg_digestion.argument.sigma": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/sigma.py",
+      "pharmacophoremt._private.arg_digestion.argument.skip_digestion": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py",
+      "pharmacophoremt._private.arg_digestion.argument.start": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/start.py",
+      "pharmacophoremt._private.arg_digestion.argument.view": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument/view.py",
+      "pharmacophoremt._private.arg_digestion.argument_names_standardization": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/argument_names_standardization.py",
+      "pharmacophoremt.interaction_site.shape.cylinder": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/cylinder.py",
+      "pharmacophoremt._private.arg_digestion.native_geometry": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/native_geometry.py",
+      "pharmacophoremt.interaction_site.shape.disk": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/disk.py",
+      "pharmacophoremt.interaction_site.shape.gaussian_kernel": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/gaussian_kernel.py",
+      "pharmacophoremt.interaction_site.shape.point": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/point.py",
+      "pharmacophoremt.interaction_site.shape.shapelet": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/shapelet.py",
+      "pharmacophoremt.interaction_site.shape.sphere": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/sphere.py",
+      "pharmacophoremt.interaction_site.shape.sphere_and_vector": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/sphere_and_vector.py",
+      "pharmacophoremt.interaction_site.shape": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/shape/__init__.py",
+      "pharmacophoremt.interaction_site.interaction_site": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/interaction_site.py",
+      "pharmacophoremt.interaction_site.aromatic_ring_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/aromatic_ring_interaction_sites.py",
+      "pharmacophoremt.interaction_site.cation_pi_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/cation_pi_interaction_sites.py",
+      "pharmacophoremt.interaction_site.excluded_volume_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/excluded_volume_interaction_sites.py",
+      "pharmacophoremt.interaction_site.halogen_bond_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/halogen_bond_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hb_acceptor_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/hb_acceptor_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hb_donor_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/hb_donor_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hydrophobicity_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/hydrophobicity_interaction_sites.py",
+      "pharmacophoremt.interaction_site.included_volume_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/included_volume_interaction_sites.py",
+      "pharmacophoremt.interaction_site.metal_binding_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/metal_binding_interaction_sites.py",
+      "pharmacophoremt.interaction_site.negative_charge_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/negative_charge_interaction_sites.py",
+      "pharmacophoremt.interaction_site.positive_charge_interaction_sites": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/positive_charge_interaction_sites.py",
+      "pharmacophoremt.interaction_site": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/interaction_site/__init__.py",
+      "pharmacophoremt._private.arg_digestion.curation": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/curation.py",
+      "pharmacophoremt.pharmacophore": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/pharmacophore.py",
+      "pharmacophoremt._ackredit": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_ackredit.py",
+      "pharmacophoremt._private.molsysmt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/molsysmt.py",
+      "pharmacophoremt.modeler.features": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/features.py",
+      "pharmacophoremt.modeler.aligned_consensus": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/aligned_consensus.py",
+      "pharmacophoremt.modeler.aligned_cliques": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/aligned_cliques.py",
+      "pharmacophoremt.modeler.composition": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/composition.py",
+      "pharmacophoremt.modeler._aromatic_interactions": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/_aromatic_interactions.py",
+      "pharmacophoremt.modeler.reference_ligand": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/reference_ligand.py",
+      "pharmacophoremt.modeler.interaction_based": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/interaction_based.py",
+      "pharmacophoremt.modeler.interaction_collection": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/interaction_collection.py",
+      "pharmacophoremt.modeler.modeler": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/modeler.py",
+      "pharmacophoremt.modeler.complex_based": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/complex_based.py",
+      "pharmacophoremt.io.ligandscout": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/ligandscout.py",
+      "pharmacophoremt.io.pharmer": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/pharmer.py",
+      "pharmacophoremt._private.arg_digestion.native_io": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/native_io.py",
+      "pharmacophoremt.io.phmt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/phmt/__init__.py",
+      "pharmacophoremt.io.rdkit": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/rdkit.py",
+      "pharmacophoremt.io.sdf": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/sdf.py",
+      "pharmacophoremt.io": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/__init__.py",
+      "pharmacophoremt.modeler.curation": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/curation.py",
+      "pharmacophoremt.modeler.excluded_volumes": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/excluded_volumes.py",
+      "pharmacophoremt.modeler.rigid_consensus": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/rigid_consensus.py",
+      "pharmacophoremt._private.arg_digestion.ligand_consensus": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/ligand_consensus.py",
+      "pharmacophoremt.modeler.ligand_based": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/ligand_based.py",
+      "pharmacophoremt._private.arg_digestion.receptor_generation": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/receptor_generation.py",
+      "pharmacophoremt.modeler._receptor_directions": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/_receptor_directions.py",
+      "pharmacophoremt.modeler.receptor_projections": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/receptor_projections.py",
+      "pharmacophoremt.modeler.receptor_generation": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/receptor_generation.py",
+      "pharmacophoremt.modeler.structure_based": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/structure_based.py",
+      "pharmacophoremt.modeler": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/__init__.py",
+      "pharmacophoremt._private.arg_digestion.model_dispatch": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/model_dispatch.py",
+      "pharmacophoremt.modeler.dispatcher": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/dispatcher.py",
+      "pharmacophoremt.validation.loo": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/loo.py",
+      "pharmacophoremt.validation.metrics": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/metrics.py",
+      "pharmacophoremt._private.arg_digestion.validation_results": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/validation_results.py",
+      "pharmacophoremt._private.arg_digestion.native_screening": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/native_screening.py",
+      "pharmacophoremt._private.pose_batch": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/pose_batch.py",
+      "pharmacophoremt.screening.pose_evaluation": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/pose_evaluation.py",
+      "pharmacophoremt.screening.correspondence": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/correspondence.py",
+      "pharmacophoremt.screening.alignment": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/alignment.py",
+      "pharmacophoremt.screening.scoring": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/scoring.py",
+      "pharmacophoremt.screening.rigid_search": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/rigid_search.py",
+      "pharmacophoremt.screening.conformer_screening": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/conformer_screening.py",
+      "pharmacophoremt.screening.feature_geometry": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/feature_geometry.py",
+      "pharmacophoremt.screening.feature_neighborhoods": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/feature_neighborhoods.py",
+      "pharmacophoremt._private.arg_digestion.prepared_screening": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/prepared_screening.py",
+      "pharmacophoremt.screening.prepared_screening": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/prepared_screening.py",
+      "pharmacophoremt.screening.rigid_correspondence": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/rigid_correspondence.py",
+      "pharmacophoremt.screening.rigid_placements": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/rigid_placements.py",
+      "pharmacophoremt.screening.rigid_refinement": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/rigid_refinement.py",
+      "pharmacophoremt._private.arg_digestion.screening_facade": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/arg_digestion/screening_facade.py",
+      "pharmacophoremt.screening.virtual_screening": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/virtual_screening.py",
+      "pharmacophoremt.screening": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/__init__.py",
+      "pharmacophoremt.validation.saved_results": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/saved_results.py",
+      "pharmacophoremt.validation.retrospective": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/retrospective.py",
+      "pharmacophoremt.validation.rigid_consensus": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/rigid_consensus.py",
+      "pharmacophoremt.validation": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/__init__.py",
+      "pharmacophoremt.attribution": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/attribution.py",
+      "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "pharmacophoremt.data.smarts": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/data/smarts.py",
+      "pharmacophoremt._depdigest": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_depdigest.py",
+      "pharmacophoremt._private.references": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/references.py"
+    },
+    "forbidden_support_imports": false,
+    "actual_native_attribution": true,
+    "items": 12,
+    "uses": 27,
+    "installed_qualification": false
+  },
+  "public_installed_recipe": {
+    "source_document": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source/docs/content/cookbook/prepared_incremental_screening.md",
+    "source_identity": {
+      "sha256": "e62cc8f6c7808ea16ecb052a0218cea6cb5859469c63606b67edde31b6564303",
+      "bytes": 7975
+    },
+    "python_blocks_executed": 2,
+    "summary": {
+      "outcomes": 3,
+      "matched": 2,
+      "not_matched": 1,
+      "failed": 0
+    },
+    "mappings_preserved": true,
+    "scores": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "statuses": [
+      "not_matched",
+      "matched",
+      "matched"
+    ],
+    "source_query_bytes_unchanged": true,
+    "all_phmt_module_origins": {
+      "pharmacophoremt._private": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/__init__.py",
+      "pharmacophoremt._private.smonitor.meta": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/smonitor/meta.py",
+      "pharmacophoremt._private.smonitor.catalog": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/smonitor/catalog.py",
+      "pharmacophoremt._private.smonitor.exceptions": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/smonitor/exceptions.py",
+      "pharmacophoremt._private.smonitor": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/smonitor/__init__.py",
+      "pharmacophoremt._version": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_version.py",
+      "pharmacophoremt.config.logging_setup": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/config/logging_setup.py",
+      "pharmacophoremt.config": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/config/__init__.py",
+      "pharmacophoremt._pyunitwizard": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_pyunitwizard.py",
+      "pharmacophoremt.interaction_site.feature.aromatic_ring": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/aromatic_ring.py",
+      "pharmacophoremt.interaction_site.feature.cation_pi": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/cation_pi.py",
+      "pharmacophoremt.interaction_site.feature.excluded_volume": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/excluded_volume.py",
+      "pharmacophoremt.interaction_site.feature.halogen_bond": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/halogen_bond.py",
+      "pharmacophoremt.interaction_site.feature.hb_acceptor": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/hb_acceptor.py",
+      "pharmacophoremt.interaction_site.feature.hb_donor": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/hb_donor.py",
+      "pharmacophoremt.interaction_site.feature.hydrophobicity": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/hydrophobicity.py",
+      "pharmacophoremt.interaction_site.feature.included_volume": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/included_volume.py",
+      "pharmacophoremt.interaction_site.feature.metal_coordination": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/metal_coordination.py",
+      "pharmacophoremt.interaction_site.feature.negative_charge": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/negative_charge.py",
+      "pharmacophoremt.interaction_site.feature.positive_charge": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/positive_charge.py",
+      "pharmacophoremt.interaction_site.feature": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/feature/__init__.py",
+      "pharmacophoremt._private.colors": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/colors.py",
+      "pharmacophoremt.viewer": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/viewer/__init__.py",
+      "pharmacophoremt.viewer.color_palettes": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/viewer/color_palettes.py",
+      "pharmacophoremt._argdigest": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_argdigest.py",
+      "pharmacophoremt._private.arg_digestion.argument._contracts": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/_contracts.py",
+      "pharmacophoremt._private.arg_digestion.argument.cation_mapping": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/cation_mapping.py",
+      "pharmacophoremt._private.arg_digestion.argument.center": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/center.py",
+      "pharmacophoremt._private.arg_digestion.argument.description": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/description.py",
+      "pharmacophoremt._private.arg_digestion.argument.direction": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/direction.py",
+      "pharmacophoremt._private.arg_digestion.argument.duplicate_policy": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/duplicate_policy.py",
+      "pharmacophoremt._private.arg_digestion.argument.end": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/end.py",
+      "pharmacophoremt._private.arg_digestion.argument.features": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/features.py",
+      "pharmacophoremt._private.arg_digestion.argument.form": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/form.py",
+      "pharmacophoremt._private.arg_digestion.argument.interaction_collection": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/interaction_collection.py",
+      "pharmacophoremt._private.arg_digestion.argument.interaction_site": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/interaction_site.py",
+      "pharmacophoremt._private.arg_digestion.argument.misc": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/misc.py",
+      "pharmacophoremt._private.arg_digestion.argument.molecular_system": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/molecular_system.py",
+      "pharmacophoremt._private.arg_digestion.argument.name": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/name.py",
+      "pharmacophoremt._private.arg_digestion.argument.normal": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/normal.py",
+      "pharmacophoremt._private.arg_digestion.argument.pharmacophore": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/pharmacophore.py",
+      "pharmacophoremt._private.arg_digestion.argument.pharmacophores": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/pharmacophores.py",
+      "pharmacophoremt._private.arg_digestion.argument.position": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/position.py",
+      "pharmacophoremt._private.arg_digestion.argument.radius": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/radius.py",
+      "pharmacophoremt._private.arg_digestion.argument.shape": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/shape.py",
+      "pharmacophoremt._private.arg_digestion.argument.sigma": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/sigma.py",
+      "pharmacophoremt._private.arg_digestion.argument.skip_digestion": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py",
+      "pharmacophoremt._private.arg_digestion.argument.start": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/start.py",
+      "pharmacophoremt._private.arg_digestion.argument.view": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument/view.py",
+      "pharmacophoremt._private.arg_digestion.argument_names_standardization": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/argument_names_standardization.py",
+      "pharmacophoremt.interaction_site.shape.cylinder": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/cylinder.py",
+      "pharmacophoremt._private.arg_digestion.native_geometry": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/native_geometry.py",
+      "pharmacophoremt.interaction_site.shape.disk": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/disk.py",
+      "pharmacophoremt.interaction_site.shape.gaussian_kernel": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/gaussian_kernel.py",
+      "pharmacophoremt.interaction_site.shape.point": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/point.py",
+      "pharmacophoremt.interaction_site.shape.shapelet": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/shapelet.py",
+      "pharmacophoremt.interaction_site.shape.sphere": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/sphere.py",
+      "pharmacophoremt.interaction_site.shape.sphere_and_vector": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/sphere_and_vector.py",
+      "pharmacophoremt.interaction_site.shape": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/shape/__init__.py",
+      "pharmacophoremt.interaction_site.interaction_site": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/interaction_site.py",
+      "pharmacophoremt.interaction_site.aromatic_ring_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/aromatic_ring_interaction_sites.py",
+      "pharmacophoremt.interaction_site.cation_pi_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/cation_pi_interaction_sites.py",
+      "pharmacophoremt.interaction_site.excluded_volume_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/excluded_volume_interaction_sites.py",
+      "pharmacophoremt.interaction_site.halogen_bond_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/halogen_bond_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hb_acceptor_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/hb_acceptor_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hb_donor_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/hb_donor_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hydrophobicity_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/hydrophobicity_interaction_sites.py",
+      "pharmacophoremt.interaction_site.included_volume_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/included_volume_interaction_sites.py",
+      "pharmacophoremt.interaction_site.metal_binding_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/metal_binding_interaction_sites.py",
+      "pharmacophoremt.interaction_site.negative_charge_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/negative_charge_interaction_sites.py",
+      "pharmacophoremt.interaction_site.positive_charge_interaction_sites": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/positive_charge_interaction_sites.py",
+      "pharmacophoremt.interaction_site": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/interaction_site/__init__.py",
+      "pharmacophoremt._private.arg_digestion.curation": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/curation.py",
+      "pharmacophoremt.pharmacophore": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/pharmacophore.py",
+      "pharmacophoremt._ackredit": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_ackredit.py",
+      "pharmacophoremt._private.molsysmt": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/molsysmt.py",
+      "pharmacophoremt.modeler.features": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/features.py",
+      "pharmacophoremt.modeler.aligned_consensus": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/aligned_consensus.py",
+      "pharmacophoremt.modeler.aligned_cliques": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/aligned_cliques.py",
+      "pharmacophoremt.modeler.composition": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/composition.py",
+      "pharmacophoremt.modeler._aromatic_interactions": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/_aromatic_interactions.py",
+      "pharmacophoremt.modeler.reference_ligand": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/reference_ligand.py",
+      "pharmacophoremt.modeler.interaction_based": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/interaction_based.py",
+      "pharmacophoremt.modeler.interaction_collection": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/interaction_collection.py",
+      "pharmacophoremt.modeler.modeler": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/modeler.py",
+      "pharmacophoremt.modeler.complex_based": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/complex_based.py",
+      "pharmacophoremt.io.ligandscout": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/io/ligandscout.py",
+      "pharmacophoremt.io.pharmer": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/io/pharmer.py",
+      "pharmacophoremt._private.arg_digestion.native_io": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/native_io.py",
+      "pharmacophoremt.io.phmt": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/io/phmt/__init__.py",
+      "pharmacophoremt.io.rdkit": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/io/rdkit.py",
+      "pharmacophoremt.io.sdf": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/io/sdf.py",
+      "pharmacophoremt.io": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/io/__init__.py",
+      "pharmacophoremt.modeler.curation": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/curation.py",
+      "pharmacophoremt.modeler.excluded_volumes": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/excluded_volumes.py",
+      "pharmacophoremt.modeler.rigid_consensus": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/rigid_consensus.py",
+      "pharmacophoremt._private.arg_digestion.ligand_consensus": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/ligand_consensus.py",
+      "pharmacophoremt.modeler.ligand_based": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/ligand_based.py",
+      "pharmacophoremt._private.arg_digestion.receptor_generation": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/receptor_generation.py",
+      "pharmacophoremt.modeler._receptor_directions": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/_receptor_directions.py",
+      "pharmacophoremt.modeler.receptor_projections": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/receptor_projections.py",
+      "pharmacophoremt.modeler.receptor_generation": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/receptor_generation.py",
+      "pharmacophoremt.modeler.structure_based": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/structure_based.py",
+      "pharmacophoremt.modeler": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/__init__.py",
+      "pharmacophoremt._private.arg_digestion.model_dispatch": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/model_dispatch.py",
+      "pharmacophoremt.modeler.dispatcher": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/modeler/dispatcher.py",
+      "pharmacophoremt.validation.loo": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/validation/loo.py",
+      "pharmacophoremt.validation.metrics": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/validation/metrics.py",
+      "pharmacophoremt._private.arg_digestion.validation_results": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/validation_results.py",
+      "pharmacophoremt._private.arg_digestion.native_screening": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/native_screening.py",
+      "pharmacophoremt._private.pose_batch": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/pose_batch.py",
+      "pharmacophoremt.screening.pose_evaluation": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/pose_evaluation.py",
+      "pharmacophoremt.screening.correspondence": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/correspondence.py",
+      "pharmacophoremt.screening.alignment": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/alignment.py",
+      "pharmacophoremt.screening.scoring": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/scoring.py",
+      "pharmacophoremt.screening.rigid_search": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/rigid_search.py",
+      "pharmacophoremt.screening.conformer_screening": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/conformer_screening.py",
+      "pharmacophoremt.screening.feature_geometry": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/feature_geometry.py",
+      "pharmacophoremt.screening.feature_neighborhoods": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/feature_neighborhoods.py",
+      "pharmacophoremt._private.arg_digestion.prepared_screening": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/prepared_screening.py",
+      "pharmacophoremt.screening.prepared_screening": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/prepared_screening.py",
+      "pharmacophoremt.screening.rigid_correspondence": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/rigid_correspondence.py",
+      "pharmacophoremt.screening.rigid_placements": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/rigid_placements.py",
+      "pharmacophoremt.screening.rigid_refinement": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/rigid_refinement.py",
+      "pharmacophoremt._private.arg_digestion.screening_facade": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/arg_digestion/screening_facade.py",
+      "pharmacophoremt.screening.virtual_screening": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/virtual_screening.py",
+      "pharmacophoremt.screening": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/screening/__init__.py",
+      "pharmacophoremt.validation.saved_results": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/validation/saved_results.py",
+      "pharmacophoremt.validation.retrospective": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/validation/retrospective.py",
+      "pharmacophoremt.validation.rigid_consensus": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/validation/rigid_consensus.py",
+      "pharmacophoremt.validation": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/validation/__init__.py",
+      "pharmacophoremt.attribution": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/attribution.py",
+      "pharmacophoremt": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/__init__.py",
+      "pharmacophoremt.data.smarts": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/data/smarts.py",
+      "pharmacophoremt._depdigest": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_depdigest.py",
+      "pharmacophoremt._private.references": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/_private/references.py"
+    },
+    "all_imported_phmt_bytes_equal_wheel": true,
+    "forbidden_support_imports": false,
+    "actual_native_attribution": true,
+    "items": 12,
+    "uses": 27,
+    "source_and_installed_comparison": "Declared scientific fields only; actual source/build versions and native evidence preserved without normalization",
+    "installed_qualification": "Bounded owned-wheel recipe receiving only",
+    "outputs": {
+      "attribution.json": {
+        "sha256": "b806dac5351d52732b6c5a8d734105de1e0063ab7fd00320839a9ae7b4d85a57",
+        "bytes": 17094
+      },
+      "scores.csv": {
+        "sha256": "8c23ca0635f2bcb75f0b30b3f9997945e87c400a70990055518d0a102965bec9",
+        "bytes": 329
+      },
+      "native.jsonl": {
+        "sha256": "3927aa009b8516487397c52d2697856eb0b9d1de5d9791dfb220fb1454ccb546",
+        "bytes": 113489
+      }
+    }
+  },
+  "build_receipt": {
+    "source_commit": "707e55f0a02e7b8c693718e28afcf510ff64b8ca",
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "scope": "One owned Linux/Python3.14 wheel with existing source providers; not a public-channel or full installed/platform qualification.",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels/pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl",
+      "sha256": "38761da0b915e006447ce486ff7b4af1288dc7398d5853b4b2d68a4e6713c5f3",
+      "bytes": 4488960
+    },
+    "version": "0.4.0+132.g707e55f",
+    "requires_python": "<3.15,>=3.11",
+    "requires_dist": [
+      "numpy",
+      "scipy",
+      "nglview",
+      "molsysmt",
+      "pyunitwizard",
+      "argdigest>=0.17.1",
+      "smonitor",
+      "depdigest",
+      "rdkit",
+      "networkx",
+      "PyYAML>=5.1",
+      "pytest>=6.1.2; extra == \"test\"",
+      "pytest-runner; extra == \"test\""
+    ],
+    "wheel_file_count": 199,
+    "source_only_support_excluded": true,
+    "generated_version_file": {
+      "sha256": "cced612c633d7efcf9a35f1d879bb32cf35e9099affc6c3d41571c25771231be",
+      "bytes": 35
+    },
+    "owned_install_target": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/installed",
+    "clone_status_after_build": "",
+    "exit_code": 0,
+    "commands": [
+      {
+        "arguments": [
+          "git",
+          "clone",
+          "--shared",
+          "--no-checkout",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source"
+        ],
+        "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+        "exit_code": 0,
+        "log": "build-clone.log"
+      },
+      {
+        "arguments": [
+          "git",
+          "checkout",
+          "--detach",
+          "707e55f0a02e7b8c693718e28afcf510ff64b8ca"
+        ],
+        "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source",
+        "exit_code": 0,
+        "log": "build-checkout.log"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-c",
+          "import importlib.metadata as m,versioningit; assert m.version('versioningit')=='2.3.0'; print(m.version('versioningit')); print(versioningit.__file__)"
+        ],
+        "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source",
+        "exit_code": 0,
+        "log": "build-tool-check.log"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "build",
+          "--wheel",
+          "--no-isolation",
+          "--outdir",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels"
+        ],
+        "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source",
+        "exit_code": 0,
+        "log": "build-wheel.log"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "pip",
+          "install",
+          "--no-index",
+          "--no-deps",
+          "--no-compile",
+          "--target",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/installed",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels/pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl"
+        ],
+        "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6",
+        "exit_code": 0,
+        "log": "install-wheel.log"
+      }
+    ],
+    "peak_cgroup_bytes": 439427072,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "root_source_files_unchanged": true
+  },
+  "outside_checkout_receiving": {
+    "owned_workspace": "/tmp/phmt-public-prepared-20261107-_z8h0kjr",
+    "target": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed",
+    "cwd": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/receiving",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels/pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl",
+      "sha256": "38761da0b915e006447ce486ff7b4af1288dc7398d5853b4b2d68a4e6713c5f3",
+      "bytes": 4488960
+    },
+    "source_commit": "707e55f0a02e7b8c693718e28afcf510ff64b8ca",
+    "reason": "Literal outside-checkout installed target and cwd; identical wheel, no rebuild; first capsule install retained",
+    "retention_review": "2026-11-20",
+    "commands": [
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "pip",
+          "install",
+          "--no-index",
+          "--no-deps",
+          "--no-compile",
+          "--target",
+          "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels/pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl"
+        ],
+        "cwd": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/receiving",
+        "exit_code": 0,
+        "output": "install-outside-checkout.original.log"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-I",
+          "-B",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/run_installed_recipe.py",
+          "--target",
+          "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed",
+          "--source",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source",
+          "--wheel",
+          "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels/pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl"
+        ],
+        "cwd": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/receiving",
+        "exit_code": 0,
+        "output": "installed-recipe.original.log"
+      }
+    ],
+    "exit_code": 0,
+    "limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 255213568,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+  },
+  "controllers": {
+    "tests": {
+      "exit_code": 0,
+      "elapsed_seconds_execution_observation_only": 33.44645532200229,
+      "performance_claim": false,
+      "source_files_unchanged": true,
+      "native_unchanged": true,
+      "native_after": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup_peak_bytes": 445620224,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "context": {
+        "sqlite_version": "3.54.1",
+        "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+        "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+        "origins": {
+          "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+          "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+          "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+          "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+          "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+        },
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "argdigest": "0.17.1+3.g0712641",
+          "smonitor": "0.22.1+1.gc1b6ce2",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "pytest": "9.2.0",
+          "pytest-receptor": "1.2.0",
+          "gh-run-receptor": "1.4.0",
+          "rdkit": "2026.9.2",
+          "ackredit": "0.12.1+10.g4beb850"
+        },
+        "native_before": {
+          "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+            "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+            "bytes": 101188064
+          }
+        },
+        "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-public-prepared-source-tests-20261107.scope",
+        "limits": {
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000"
+        },
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "memory_before_kib": {
+          "MemAvailable": 50731456,
+          "SwapFree": 8388568
+        },
+        "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=253287\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=251853\n",
+        "scope": "Feature-reuse subworkflow equivalence with actual native attribution. No full-search/index/biological/benchmark qualification; original source artifacts remain local."
+      },
+      "scope": "Public prepared-input source controls; not full installed/public/platform qualification."
+    },
+    "recipe": {
+      "exit_code": 0,
+      "elapsed_seconds_execution_observation_only": 4.33863643402583,
+      "performance_claim": false,
+      "source_files_unchanged": true,
+      "native_unchanged": true,
+      "native_after": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup_peak_bytes": 228945920,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "context": {
+        "sqlite_version": "3.54.1",
+        "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+        "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+        "origins": {
+          "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+          "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+          "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+          "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+          "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+        },
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "argdigest": "0.17.1+3.g0712641",
+          "smonitor": "0.22.1+1.gc1b6ce2",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "pytest": "9.2.0",
+          "pytest-receptor": "1.2.0",
+          "gh-run-receptor": "1.4.0",
+          "rdkit": "2026.9.2",
+          "ackredit": "0.12.1+10.g4beb850"
+        },
+        "native_before": {
+          "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+            "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+            "bytes": 101188064
+          }
+        },
+        "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-public-prepared-source-recipe-20261107.scope",
+        "limits": {
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000"
+        },
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "memory_before_kib": {
+          "MemAvailable": 50719968,
+          "SwapFree": 8388568
+        },
+        "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=253292\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=251857\n",
+        "scope": "Public prepared-input recipe source execution; original source artifacts local. No full supported installed/public/platform qualification."
+      },
+      "scope": "Original complete molecular/query/native outputs remain local; public projection only."
+    },
+    "installed": {
+      "exit_code": 0,
+      "elapsed_seconds_execution_observation_only": 4.4132207020011265,
+      "performance_claim": false,
+      "source_files_unchanged": true,
+      "wheel_unchanged": true,
+      "installed_payload_unchanged": true,
+      "native_unchanged": true,
+      "native_after": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup_peak_bytes": 255213568,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "context": {
+        "scope": "One owned wheel on Linux/Python3.14 and recorded source-provider context; no public channel, Conda or full platform/minor qualification",
+        "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+        "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+        "sqlite_version": "3.54.1",
+        "cwd": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/receiving",
+        "sys_path": [
+          "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed",
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python314.zip",
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14",
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/lib-dynload",
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages",
+          "__editable__.argdigest-0.17.1+3.g0712641.finder.__path_hook__",
+          "__editable__.depdigest-0.15.2+2.g032d345.finder.__path_hook__",
+          "__editable__.dockingmt-0.0.0+295.g2fda623.finder.__path_hook__",
+          "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src",
+          "__editable__.molsysmt-0.23.0+513.g9e1f1b1ad.finder.__path_hook__",
+          "__editable__.pharmacophoremt-0.4.0+120.g0925d97.finder.__path_hook__",
+          "__editable__.smonitor-0.22.1+1.gc1b6ce2.finder.__path_hook__",
+          "__editable__.topomt-0.5.0+367.g5ae5c46.dirty.finder.__path_hook__"
+        ],
+        "isolated": true,
+        "target": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed",
+        "source": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/source",
+        "wheel": {
+          "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6/wheels/pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl",
+          "sha256": "38761da0b915e006447ce486ff7b4af1288dc7398d5853b4b2d68a4e6713c5f3",
+          "bytes": 4488960
+        },
+        "wheel_version": "0.4.0+132.g707e55f",
+        "installed_distribution_version": "0.4.0+132.g707e55f",
+        "origins": {
+          "pharmacophoremt": "/tmp/phmt-public-prepared-20261107-_z8h0kjr/installed/pharmacophoremt/__init__.py",
+          "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+          "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+          "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+          "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+          "ackredit": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py"
+        },
+        "versions": {
+          "pharmacophoremt": "0.4.0+132.g707e55f",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "argdigest": "0.17.1+3.g0712641",
+          "smonitor": "0.22.1+1.gc1b6ce2",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "rdkit": "2026.9.2",
+          "ackredit": "0.12.1+10.g4beb850"
+        },
+        "native_before": {
+          "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+            "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+            "bytes": 101188064
+          }
+        },
+        "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-public-prepared-receive-20261107a.scope",
+        "limits": {
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "cpu.max": "100000 100000"
+        },
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "memory_before_kib": {
+          "MemAvailable": 48923252,
+          "SwapFree": 8388568
+        },
+        "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=253306\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=251872\n",
+        "wheel_payload_files_checked": 186,
+        "source_build_metadata_difference_preserved": true
+      },
+      "scope": "Complete original molecular/query/native outputs remain local; only owned control/scalar proof may be published"
+    }
+  },
+  "administrative": {
+    "tests": 24,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "forbidden_scientific_roots": [
+      "ackredit",
+      "molsysmt",
+      "numpy",
+      "pharmacophoremt",
+      "rdkit",
+      "scipy"
+    ],
+    "loaded_scientific_modules": [],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 75231232,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "scope": "Public prepared-input runtime inventory and private compatibility staging; scientific/citation imports forbidden; no installed artifact qualification."
+  },
+  "governance": {
+    "checks": [
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "final-check-0.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "final-check-1.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-2.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "final-check-3.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-4.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-5.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/check_dependency_routes.py",
+          "--declared-only"
+        ],
+        "exit_code": 0,
+        "output": "final-check-6.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      }
+    ],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 383315968,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+  },
+  "source_freeze_checks": {
+    "checks": [
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "output": "freeze-check-0.log"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "freeze-check-1.log"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "freeze-check-2.log"
+      },
+      {
+        "arguments": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "freeze-check-3.log"
+      }
+    ],
+    "limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 31289344,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+  },
+  "interpretation_notes": [
+    "Source controller native-context scope contains inherited feature-reuse wording; actual selectors/assertions/final controller scope are public-prepared. Original bytes retained.",
+    "Existing editable source metadata and generated wheel producer version remain distinct; scientific comparisons do not normalize versions.",
+    "Recipes reuse the same three old prepared conformers/query, not a new chemical sample, activity cohort or independent-compound count.",
+    "134 distinct local cases=89 scientific+24 distribution+3 reporting+18 archive. Repeated reporting, recipe blocks and receiving operations are not extra tests."
+  ],
+  "case_id": "public-prepared-integration-20261107",
+  "prospective_plan": {
+    "path": "public_prepared_plan_20261107.json",
+    "sha256": "e4de655484171526ec457c2917c334d702c9d408c38ea3c35a556e258796fff7",
+    "bytes": 5360,
+    "declaration": "https://github.com/uibcdf/pharmacophoremt/issues/108#issuecomment-6701668004"
+  },
+  "execution_plan": {
+    "path": "public_prepared_execution_20261107.json",
+    "sha256": "36244df696c158fe751b87a425d74c8c133f8478fc4d30cbe84e2c9772018195",
+    "bytes": 9690
+  },
+  "selected_source_files": {
+    "pharmacophoremt/screening/prepared_screening.py": {
+      "sha256": "43a7352f89d820f9875921b28690591f9fc4176986f9df2f40d2728dd1a66ccc",
+      "bytes": 7940
+    },
+    "pharmacophoremt/_private/arg_digestion/prepared_screening.py": {
+      "sha256": "94ed1d67d2d57c66298f0bae33dad2bd1302263b9491a41cc43181ff2aa7d368",
+      "bytes": 1582
+    },
+    "pharmacophoremt/screening/__init__.py": {
+      "sha256": "07075cdf03e0b440193156840b06e275df38817e2ce49c911b2141736cb9d5f5",
+      "bytes": 1266
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+      "bytes": 1405
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650",
+      "bytes": 1905
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+      "sha256": "b7755962de72099e53c307d6067e7222cef8a7978ce791a90aff5abf5c1ca1a0",
+      "bytes": 31629
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746",
+      "bytes": 10334
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41",
+      "bytes": 12410
+    },
+    "pharmacophoremt/_ackredit.py": {
+      "sha256": "c28d33a037a30407400c12dc9f8fe57f93a61a9c8337d85eb465b229e2cb098f",
+      "bytes": 7714
+    },
+    "phmt_test_support/prepared_library_reference.py": {
+      "sha256": "bb92766cdf4f66123ce4f8da88a72f9c84f48691e23ce02b333b3dc40c2a0c06",
+      "bytes": 404
+    },
+    "phmt_test_support/prepared_library_recovery.py": {
+      "sha256": "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6",
+      "bytes": 8795
+    },
+    "phmt_test_support/reference_run_store.py": {
+      "sha256": "b1747b9ebfb1c8db5048259036018157c12843ba173f9502c4dd5143ee440675",
+      "bytes": 30551
+    },
+    "tests/test_prepared_library_reference.py": {
+      "sha256": "cb2955674e1a60cd13a74d1af7c778d045a448d494f1bb5d65d0583d7bce640a",
+      "bytes": 12590
+    },
+    "tests/test_public_prepared_screening.py": {
+      "sha256": "e5ad8ffa5060f80b6291890d36aef4fb4d614662fb1db06cab794c231acf47d9",
+      "bytes": 8657
+    },
+    "tests/test_prepared_library_recovery.py": {
+      "sha256": "4c384121e3e8f2e84036f9cfe9264daab1e6fd9f6402864039def915c1566253",
+      "bytes": 17760
+    },
+    "tests/test_virtual_screening.py": {
+      "sha256": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f",
+      "bytes": 13242
+    },
+    "devtools/conda-build/resources.toml": {
+      "sha256": "1ad878326496748e7091039a4993364537cb8f320b9762e52435f5f62d23bfb0",
+      "bytes": 28280
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "3f14f84b5f6bbca4eebad5c492938b0e6afb06779f87d4835d8a087030d791b8",
+      "bytes": 25619
+    },
+    "docs/content/cookbook/prepared_incremental_screening.md": {
+      "sha256": "e62cc8f6c7808ea16ecb052a0218cea6cb5859469c63606b67edde31b6564303",
+      "bytes": 7975
+    },
+    "docs/api/users/api_users.rst": {
+      "sha256": "5d1347e72dcc35d7e91f00ca37d11f945ef077acb44d8f52cffbda24cc511de6",
+      "bytes": 704
+    },
+    "pyproject.toml": {
+      "sha256": "63745a3f1603bf6d305adeb57a10d2bc13ed392de567d34604d88087e39a76e5",
+      "bytes": 4035
+    }
+  },
+  "completed_distinct_local_test_cases": 134,
+  "full_evidence": {
+    "path": "public_prepared_20261107_full.json.gz",
+    "compressed_sha256": "8732daeba4da00b7c05167bb019aed4d3ff51408e43b6d7265e25bc4b6afb832",
+    "compressed_bytes": 186560,
+    "uncompressed_sha256": "051b442aa7c38d96a442db2026fc4574e040b79029a82efe26c40b7a4161e662",
+    "uncompressed_bytes": 1041037,
+    "own_file_count": 89,
+    "scope": "Allowlisted own code/control/scalar/build metadata only; no original H5MSM/SDF/query/native JSONL/attribution bodies, wheel binary, source clone, installed tree, SDK or build-tool payload. Repository documents are dated snapshots, not future-head identities."
+  },
+  "complete_native_outputs": {
+    "publication": "local_only",
+    "file_count": 6,
+    "identity_inventory": {
+      "sha256": "911723b06efcc01336c6d89490bcff9b3be54657422f2190778a70651971ed63",
+      "bytes": 1868
+    },
+    "original_outputs": [
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-prepared-20261107-bsuq6ue6",
+      "/tmp/phmt-public-prepared-20261107-_z8h0kjr/receiving"
+    ]
+  },
+  "pending_goal": "Active mature pre1.0 0.x staircase; selected public prepared-input task only. Next define separate public recovery/results contract.",
+  "pending_gates": [
+    "Public recovery/results persistence and migration #108",
+    "MolSysMT#624 molecular collections and broader source operations",
+    "Representative reuse/index resource measurements",
+    "Separate biological studies #103/#66/#106",
+    "Full supported source/dependency/installed/public/platform qualification #9/#10/#23/#95"
+  ],
+  "temporary_resources": {
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "review_date": "2026-11-20",
+    "policy": "Retain originals, measured controls, own local wheel and outside-checkout target until reviewed; shared providers/environment unchanged."
+  }
+}

@@ -98,17 +98,36 @@ focused results do not replace the supported source/installed/public matrix.
 
 ## Delivery checkpoint
 
-Owned installed-wheel receiving is **pending** at this source checkpoint. Build
-from a frozen source commit in an isolated local clone, use declared build tools,
-install into an owned target outside the checkout and execute the public recipe
-with actual origin/artifact verification. The shared prefix has versioningit3.3;
-the project requires~=2.0. A verified cached2.3.0 build-only overlay satisfies
-that unchanged requirement without network or shared-environment modification.
+Owned installed-wheel receiving **passes** for frozen source
+`707e55f0a02e7b8c693718e28afcf510ff64b8ca`. The single wheel is
+`pharmacophoremt-0.4.0+132.g707e55f-py3-none-any.whl`,4488960 bytes,
+SHA-256 `38761da0b915e006447ce486ff7b4af1288dc7398d5853b4b2d68a4e6713c5f3`.
+Its inventory excludes tests/devtools/private support. Both cookbook blocks
+execute with Python isolated mode from an owned target and working directory
+under `/tmp`, outside the checkout. Every imported PHMT file matches the wheel.
+The original mappings, native statuses and scores0/1/1 remain unchanged; actual
+attribution retains12 items/27 uses, while original source/build versions differ
+and are preserved. No full native-payload identity across versions is claimed.
+
+The [receipt/archive](evidence/public_prepared_20261107_summary.json) retains
+control code, exact metadata and scalar evidence; original molecular/query and
+full native output bodies remain local. The source-test controller's inherited
+context label mentions the earlier feature-reuse experiment: actual recorded
+selectors,89 outcomes and final scope identify this increment. Original context
+bytes are retained with this explicit correction.
+
+The shared prefix has versioningit3.3; the project requires~=2.0. A verified
+cached2.3.0 build-only overlay satisfies that unchanged requirement without
+network or shared-prefix modification. Build peak439,427,072 bytes and outside
+receiving peak255,213,568 bytes remain below512MiB; no swap/OOM. The first capsule
+install is retained separately; the same wheel is installed under `/tmp` for
+literal outside-checkout receiving, without rebuilding. This is Linux/Python3.14
+with existing source providers, not public-provider/Conda/full platform delivery.
 
 The public helper migration changes experimental recovery source fingerprints.
 Historical saved reading remains separate; incompatible reexecution must use a
 compatible producer or a new linked run, without rewriting prior outcomes.
 MolSysMT#624 still owns reusable molecular collection/lifetime/snapshot tools.
-After bounded installed receiving, continue the selected public recovery/results
-task with an explicit persistence/migration contract. Full #9/#23 supported
+Next continue the selected public recovery/results task with an explicit
+persistence/migration contract. Full #9/#23 supported
 source/installed/public/platform and #95 release gates remain unexecuted here.

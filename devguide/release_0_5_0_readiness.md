@@ -1,5 +1,22 @@
 # Proposed 0.5.0 consolidation
 
+## Later public prepared-input API — 2026-11-07
+
+The [mature-0.x staircase](roadmap.md) keeps the final pre-1.0 minor open.
+Frozen source `707e55f0a02e7b8c693718e28afcf510ff64b8ca` promotes
+`screening.PreparedInput` and `screen_prepared` into public runtime, retaining
+exact legacy-helper aliases and the existing facade's semantics. This is a new
+public API delta after the older reviewed snapshot below; those historical
+signature statements do not cover it. Its [contract](public_prepared_screening.md)
+passes134 selected local cases and public query/files/export recipes from source
+and one identical wheel installed outside the checkout. Actual generated wheel
+version0.4.0+132.g707e55f is development evidence, not a new release.
+
+Receiving is bounded Linux/Python3.14 with recorded source providers; no new
+public dependency/Conda/full platform matrix follows. Public recovery/results,
+usable guided/expert workflows and each candidate's source/installed/public gates
+remain open. The actual release plan stays0.4.0; no0.5.0 freeze/tag is introduced.
+
 ## Later experimental aromatic-N runtime delta — 2026-11-06
 
 #105 now receives native models2/3 through an explicit additional profile in

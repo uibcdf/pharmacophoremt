@@ -12,6 +12,15 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
 ### Later development after the reviewed snapshot
 
+Public `screening.PreparedInput` and `screen_prepared` now evaluate prepared
+inputs incrementally and export all mapped outcomes in encounter order. The
+[recipe](../cookbook/prepared_incremental_screening.md) loads a query, reads
+prepared files lazily and writes fresh JSONL/CSV outputs. Readers stay under
+application ownership; failures remain unscored and valid negatives retain zero.
+This adds no public resume/journal or managed collection contract and leaves
+`VirtualScreening.run`'s ranked hit list unchanged. Source and bounded owned-wheel
+receiving pass; full supported installed/public delivery remains pending.
+
 #105 adds the explicitly selected
 `donor_aromatic_carbonyl_aromatic_n_experimental` profile: native model2 carbonyl
 and model3 aromatic-N alternatives, preserving the older profiles. Its

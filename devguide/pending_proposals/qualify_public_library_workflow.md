@@ -113,9 +113,12 @@ The selected [public prepared-input task](../public_prepared_screening.md) is no
 implemented with one runtime, exact legacy aliases, definition-owned admission
 and lazy native evaluation.89 source controls and both public query/files/export
 recipe blocks pass.24 distribution,3 reporting and18 archive cases also pass;
-Ruff, indexes and declared dependency routes pass. Owned installed-wheel receiving
-remains pending at this source checkpoint. Public recovery/results and
-MolSysMT#624 collection ownership retain their separate acceptance.
+Ruff, indexes and declared dependency routes pass. The same public recipe also
+passes from one frozen owned wheel, installed and run outside the checkout under
+Linux/Python3.14 with recorded source providers. Its
+[receipt](../evidence/public_prepared_20261107_summary.json) preserves actual
+versions and artifact identity. Public recovery/results, MolSysMT#624 collections
+and full supported installed/public/platform delivery retain separate acceptance.
 
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening

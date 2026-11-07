@@ -9,26 +9,27 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last closed increment and next action
 
-The [feature-inventory reuse experiment](feature_inventory_reuse.md) now passes
-132 selected local checks (87 scientific,24 distribution,3 reporting,18 archive),
-all six original PubChem3D source/reference native evidence comparisons and four
-public cookbook blocks. Raw capsule:
-`build/phmt-feature-reuse-20261107-s4ta47zn` (ignored; not part of a clone).
-The [receipt](evidence/feature_reuse_20261107_summary.json) fixes exact source/native
-context, original outputs and publication limits. The new helper is unshipped;
-public runtime signatures/dependencies remain unchanged.
+The [public prepared-input tool](public_prepared_screening.md) passes134 distinct
+selected local tests (89 scientific,24 distribution,3 reporting,18 archive), both
+source recipe blocks and both blocks from the identical owned installed wheel.
+Frozen producer: `707e55f0a02e7b8c693718e28afcf510ff64b8ca`;
+wheel version `0.4.0+132.g707e55f`, not a new release.
+Raw capsule: `build/phmt-public-prepared-20261107-bsuq6ue6` (ignored; not cloned).
+The [receipt](evidence/public_prepared_20261107_summary.json) records exact source,
+artifact, native context, actual results and publication limits.
 
-Only one mapping is fitted per real query/arm. Omitted proposals remain
-unevaluated; accepted three-site placement is separate from all-essential query
-matching. Source coordinates/inventories and old artifact bytes stay unchanged.
-Outer requests are fresh6/reused3, excluding native post-fit recognition; no
-speedup, persistent-cache/index or full-RigidPoseSearch equivalence is established.
+The installed target and working directory are under the owned
+`/tmp/phmt-public-prepared-20261107-_z8h0kjr`, outside the checkout. All imported
+PHMT bytes match the wheel; source/query bytes and native provider remain
+unchanged. The same three old conformers retain mappings and scores0/1/1.
+This is bounded Linux/Python3.14 receiving with recorded source providers, not
+public-provider/Conda/full platform/minor qualification.
 
-**Next concrete action:** qualify the implemented public prepared-input task
-from one frozen locally built wheel outside the checkout, verifying imports,
-source mappings, native outcomes and exported files. Then record its exact
-source/artifact/receiving limits and continue the separate public recovery/results
-contract. The molecular collection boundary remains MolSysMT#624-owned.
+**Next concrete action:** define the public recovery/results contract, including
+saved-result versioning, durable confirmed outcomes, interruptions, explicit retry
+and compatibility/migration. Use the existing recovery/inspection evidence;
+do not promote experimental source fingerprints as chemical identity or silently
+rewrite historical runs. Molecular collection tools remain MolSysMT#624-owned.
 
 ## Active public integration
 
@@ -39,10 +40,10 @@ behavior. Source qualification passes89 scientific cases, including26 promoted
 controls and14 new public controls. Both public recipe blocks export all three
 original prepared inputs with source mappings and scores0/1/1 unchanged.
 
-Owned installed-wheel receiving is next and is not yet passing evidence. Build
-from the frozen source commit with the verified cached versioningit2.3.0 overlay,
-install outside the checkout, verify origins and execute the same public recipe.
-Raw capsule: `build/phmt-public-prepared-20261107-bsuq6ue6`. Current source/API
+Owned installed-wheel receiving now passes. The build uses the verified cached
+versioningit2.3.0 overlay without changing requirements or the shared prefix.
+Source and installed recipes each capture12 actual attribution items/27 uses.
+Full source/build versions remain distinct original evidence. This public API
 promotion is not a release or full supported installed/public qualification.
 
 ## Implemented evidence and delivery boundary
@@ -50,7 +51,7 @@ promotion is not a release or full supported installed/public qualification.
 | Scope | Actual evidence | Limit / next gate |
 | --- | --- | --- |
 | Classical modeling/screening | Public native routes in [capability inventory](capability_inventory.md) | Method-specific scope; geometry does not establish activity prediction |
-| Public prepared iterator | [Public contract](public_prepared_screening.md): one runtime implementation,89 selected source controls, public query/files/export recipe | Owned installed-wheel receiving pending; no public resume/journal contract |
+| Public prepared iterator | [Public contract](public_prepared_screening.md): one runtime,134 selected local cases and source/owned installed query/files/export recipe | Bounded Linux/Python3.14/source providers only; no public resume/journal or full supported delivery |
 | Recovery/inspection | [Recovery](prepared_library_recovery.md), [read-only view](reference_run_inspection.md); prior `c816c8d` source has86 focused local cases | Remain unshipped; helper-alias change updates reexecution fingerprints, not historical reading |
 | Feature reuse | [Native equality and public composition](feature_inventory_reuse.md): 87 selected scientific cases, six source/reference comparisons, four public recipe blocks | No full-search/cache/index/performance or installed-package qualification |
 | Original PubChem3D pilot | [Three fixed conformers](pubchem3d_receiving_pilot.md), mapped persistence and native outcomes; preserved failures and quantity correction | No general public connector, chemical independence or biological validation |
@@ -61,7 +62,7 @@ promotion is not a release or full supported installed/public qualification.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Reuse experiment closed; public prepared-input API/source recipe now implemented | Complete owned installed receiving, then define the separate public recovery/results contract |
+| #108 libraries/product | Reuse experiment closed; public prepared-input API and source/owned installed recipe pass | Define and qualify the separate public recovery/results contract |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
