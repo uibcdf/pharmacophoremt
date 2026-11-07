@@ -6,6 +6,24 @@ and [migration](machine_migration.md). The former long log is preserved verbatim
 after its preface in [checkpoint history](checkpoint_history_20261106.md).
 This page is current; old dated "Next" paragraphs are historical observations.
 
+## Pause checkpoint — 2026-11-07 UTC
+
+Paused at Liliana's request after read-only exploration of feature reuse. Latest
+implemented/checked source is `c816c8d958f00a976206ea942812f72d2bafc7c8`
+([saved-run inspection](reference_run_inspection.md), 86 focused local tests).
+No feature-reuse experiment, new molecular acquisition or new screening ran.
+
+On resume, declare a small in-memory comparison of fresh versus reused
+`get_features` inventories across two queries with the same requested families,
+using existing public correspondence/alignment/placement operations. Preserve
+post-fit re-extraction and compare complete native evidence for that subworkflow.
+`RigidPoseSearch.evaluate` currently extracts its own inventory; do not claim
+equivalence with its full search or add an API/cache/index before the experiment.
+Same-source/selection/frame/state/chemistry/geometry is a caller precondition,
+not authenticated by axis checks. Record requested families separately: absent
+feature records do not prove a family was requested. Keep native units and
+explicit state conventions. No performance benefit is established by fewer calls.
+
 ## Where we are
 
 The library has native prepared/cached ligand-, interaction-, complex- and
