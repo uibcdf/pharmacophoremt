@@ -10,49 +10,38 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [accumulated validation checkpoint](accumulated_ci_checkpoint.md) is prepared:
-coverage includes the core and independent results companion, with full source
-selection preserved. Selected56 coverage/library/route cases,24 distribution
-controls and declared dependency/style checks pass. Test-owned SQLite mutation
-connections now close without warnings. All seven registered guide copies match
-observed canonical bytes after four official synchronizations; source/provider
-pins, shared prefixes and the frozen policy caller remain unchanged.
-[Preparation receipt](evidence/accumulated_ci_preparation_20261107_summary.json):
-101 selected local cases; no hosted checkpoint pass is implied.
+The [accumulated checkpoint](accumulated_ci_checkpoint.md) now targets exact
+`4616c786c5de959ef0d6e98120d7183dcc217553`. The current source includes both runtime
+namespaces in coverage, closes fixture-owned SQLite connections and receives
+four registered guide updates. All seven guides match observed canonical bytes;
+provider pins/prefixes and frozen policy-v1.5.4 remain unchanged. The
+[preparation receipt](evidence/accumulated_ci_preparation_20261107_summary.json)
+retains101 selected local cases, original control failures and their corrections.
 
-The [saved-result CLI](saved_result_cli.md) now exports complete JSONL/CSV through
-`--to-jsonl FILE`/`--to-csv FILE`, composing the same public methods. Existing
-ranked inspection and explicit legacy admission remain compatible. All48
-library reader/export/command bodies pass from `tests/` and an independently
-installed wheel. Four authentic databases retain exact native/configuration,
-scalar/rank and byte equality through all three documented commands. Receipts
-and postpublication error context stay visible; no science is rerun.
+Hosted [execution evidence](evidence/accumulated_ci_execution_20261107.json):
+[CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757)
+has successful reporting governance (3 reporting,18 archive,8 route/recovery and
+full131 administrative cases). Five scientific cells execute and three queue at
+this observation; **complete source CI is still pending**.
+[Policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
+and [publication governance42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565)
+pass all required native steps. No package build/upload/release occurs.
 
-The [receipt](evidence/saved_result_cli_20261107_summary.json) records145 passing
-bodies in the final selected source scope, repeated installed controls and their
-limits. It preserves the initial help-assertion failure and **incomplete** full
-administrative attempt: three512MiB memory failures plus two harness probe errors.
-The corrected guard verifies131 administrative cases import/collect without
-runtime providers, then executes76 selected core/tool cases. That result does
-not clear the full administrative/source gate. API tests now belong to the
-library suite; test method bodies remain unchanged across their relocation.
+The [API/CLI exports](saved_result_cli.md), [public runs](public_prepared_runs.md),
+[guided/expert comparison](guided_expert_journey_receiving.md) and
+[released-reader support](reader_public_provider_receiving.md) retain separate
+frozen producers and receiving limits. Old scheduled42383495995/654586f and its
+original governance failure remain intact. Full current-candidate administrative
+receiving now passes on the hosted route; the earlier local memory/guard failures
+are preserved and are not rewritten as successful local execution.
 
-Frozen wheel producer `2c0d24b91618fed45149e0db84f1dce6f2da2e04`, owned version
-`0.4.0+140.g2c0d24b`, not a public release. Isolated reader receiving admits only
-that wheel, stdlib and authenticated public ArgDigest0.17.1/SMonitor0.22.1/
-DepDigest0.11.0 payloads. This is Linux/Python3.14, not full PHMT/platform delivery.
-Preceding [API export](saved_result_exports.md), [guided/expert](guided_expert_journey_receiving.md)
-and [released-support](reader_public_provider_receiving.md) receipts retain their
-original identities. MolSysMT#292 owns attribution-policy clarification.
-
-**Next concrete action:** freeze and verify the prepared exact source, then manually
-execute complete CI, frozen policy and publication-governance workflows under
-#9/#23. Record each exact run/attempt; the old scheduled42383495995 targets654586f
-and remains separate. Its governance fails on the already corrected API-test
-placement; six older science cells pass and two remain running at observation.
-No full local retry or package/release operation is launched.
-Broader source operations continue separately; molecular collections remain
-MolSysMT#624-owned. Full changed-pin/installed/public gates remain independent.
+**Next concrete action:** continue observing source CI42399097757/attempt1 and
+verify all8 actual Linux/macOS arm64 Python3.11–3.14 cells, dependency preflights
+and Run tests steps. Do not duplicate a live run or infer completion from the
+three governance successes. Retain exact frozen4616c78 identities if a later
+receipt/documentary commit advances main; its exact-head debt stays #9-owned.
+Molecular collections remain MolSysMT#624-owned; installed/public, biological,
+comparison/performance and full milestone acceptance keep their separate gates.
 
 ## Active public integration
 
@@ -89,7 +78,7 @@ change is made here. [Onboarding](onboarding.md) retains the earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; API/CLI exports received from source/owned installed wheel | Exact-head checkpoint, broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; API/CLI exports received from source/owned installed wheel | Observe CI42399097757, then broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

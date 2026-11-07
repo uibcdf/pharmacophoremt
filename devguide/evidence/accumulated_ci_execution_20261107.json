@@ -1,0 +1,993 @@
+{
+  "schema": "pharmacophoremt.accumulated-ci-native-observation@1",
+  "recorded_at_utc": "2026-11-07T18:13:50.513Z",
+  "candidate": "4616c786c5de959ef0d6e98120d7183dcc217553",
+  "scope": "First checkpoint observation; source scientific matrix incomplete",
+  "runs": [
+    {
+      "run_id": 42399097757,
+      "source": "4616c786c5de959ef0d6e98120d7183dcc217553",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_id": 128482803764,
+          "name": "Reporting governance",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Check out the reviewed dependency SDK",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Check reporting records and generated indexes",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install CI-governance test tools",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Test CI recovery and contributor routes",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Review declared dependency routes",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Test distribution and dependency contracts",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check generated ordinary environments",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 19,
+              "name": "Post Check out the reviewed dependency SDK",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 20,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 21,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "job_id": 128482804055,
+          "name": "Test on macos-15, Python 3.14",
+          "status": "in_progress",
+          "conclusion": null,
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Additional info about the build",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Setup conda env",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "in_progress",
+              "conclusion": null
+            },
+            {
+              "number": 7,
+              "name": "Install tested MolSysMT source",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 8,
+              "name": "Check out the reviewed dependency SDK",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 9,
+              "name": "Install isolated dependency-check tools",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 11,
+              "name": "Info conda",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 17,
+              "name": "Upload coverage reports to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 18,
+              "name": "Upload test results to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 34,
+              "name": "Post Setup conda env",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 35,
+              "name": "Post Set up Python",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 36,
+              "name": "Post Run actions/checkout@v4",
+              "status": "pending",
+              "conclusion": null
+            }
+          ]
+        },
+        {
+          "job_id": 128482804090,
+          "name": "Test on ubuntu-latest, Python 3.14",
+          "status": "in_progress",
+          "conclusion": null,
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Additional info about the build",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Setup conda env",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Install tested MolSysMT source",
+              "status": "completed",
+              "conclusion": "skipped"
+            },
+            {
+              "number": 8,
+              "name": "Check out the reviewed dependency SDK",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Install isolated dependency-check tools",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 11,
+              "name": "Info conda",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "in_progress",
+              "conclusion": null
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 17,
+              "name": "Upload coverage reports to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 18,
+              "name": "Upload test results to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 33,
+              "name": "Post Check out the reviewed dependency SDK",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 34,
+              "name": "Post Setup conda env",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 35,
+              "name": "Post Set up Python",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 36,
+              "name": "Post Run actions/checkout@v4",
+              "status": "pending",
+              "conclusion": null
+            }
+          ]
+        },
+        {
+          "job_id": 128482804093,
+          "name": "Test on ubuntu-latest, Python 3.12",
+          "status": "in_progress",
+          "conclusion": null,
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Additional info about the build",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Setup conda env",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Install tested MolSysMT source",
+              "status": "in_progress",
+              "conclusion": null
+            },
+            {
+              "number": 8,
+              "name": "Check out the reviewed dependency SDK",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 9,
+              "name": "Install isolated dependency-check tools",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 11,
+              "name": "Info conda",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 17,
+              "name": "Upload coverage reports to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 18,
+              "name": "Upload test results to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 34,
+              "name": "Post Setup conda env",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 35,
+              "name": "Post Set up Python",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 36,
+              "name": "Post Run actions/checkout@v4",
+              "status": "pending",
+              "conclusion": null
+            }
+          ]
+        },
+        {
+          "job_id": 128482804111,
+          "name": "Test on macos-15, Python 3.12",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "job_id": 128482804161,
+          "name": "Test on macos-15, Python 3.13",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "job_id": 128482804192,
+          "name": "Test on ubuntu-latest, Python 3.13",
+          "status": "in_progress",
+          "conclusion": null,
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Additional info about the build",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Setup conda env",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Install tested MolSysMT source",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Check out the reviewed dependency SDK",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Install isolated dependency-check tools",
+              "status": "in_progress",
+              "conclusion": null
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 11,
+              "name": "Info conda",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 17,
+              "name": "Upload coverage reports to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 18,
+              "name": "Upload test results to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 33,
+              "name": "Post Check out the reviewed dependency SDK",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 34,
+              "name": "Post Setup conda env",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 35,
+              "name": "Post Set up Python",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 36,
+              "name": "Post Run actions/checkout@v4",
+              "status": "pending",
+              "conclusion": null
+            }
+          ]
+        },
+        {
+          "job_id": 128482804195,
+          "name": "Test on ubuntu-latest, Python 3.11",
+          "status": "in_progress",
+          "conclusion": null,
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Additional info about the build",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Set up Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Setup conda env",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Install tested MolSysMT source",
+              "status": "in_progress",
+              "conclusion": null
+            },
+            {
+              "number": 8,
+              "name": "Check out the reviewed dependency SDK",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 9,
+              "name": "Install isolated dependency-check tools",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 11,
+              "name": "Info conda",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 17,
+              "name": "Upload coverage reports to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 18,
+              "name": "Upload test results to Codecov",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 34,
+              "name": "Post Setup conda env",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 35,
+              "name": "Post Set up Python",
+              "status": "pending",
+              "conclusion": null
+            },
+            {
+              "number": 36,
+              "name": "Post Run actions/checkout@v4",
+              "status": "pending",
+              "conclusion": null
+            }
+          ]
+        },
+        {
+          "job_id": 128482804220,
+          "name": "Test on macos-15, Python 3.11",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "job_id": 128482804808,
+          "name": "Check skipped-commit backlog",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "run_id": 42399103089,
+      "source": "4616c786c5de959ef0d6e98120d7183dcc217553",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_id": 128482818600,
+          "name": "policy / conformance",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Check out member repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Set up policy Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Check out MolSysSuite policy",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Check repository conformance",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Install the policy Ruff version",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Check Python lint and imports",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Check Python formatting",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Post Check out MolSysSuite policy",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Post Set up policy Python",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Post Check out member repository",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 17,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": 42399108565,
+      "source": "4616c786c5de959ef0d6e98120d7183dcc217553",
+      "attempt": 1,
+      "jobs": [
+        {
+          "job_id": 128482836053,
+          "name": "publication / check",
+          "status": "completed",
+          "conclusion": "success",
+          "steps": [
+            {
+              "number": 1,
+              "name": "Set up job",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 2,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 3,
+              "name": "Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 4,
+              "name": "Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 5,
+              "name": "Run python -m pip install --disable-pip-version-check PyYAML==6.0.3 'Jinja2>=3,<4' 'packaging>=24'",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 6,
+              "name": "Check publication workflow controls",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Check declared noarch recipe and resources without building",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Post Run actions/setup-python@v5",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Post Run actions/checkout@v4",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Complete job",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "governance_counts_confirmed": {
+    "reporting": 3,
+    "archive": 18,
+    "ci_route_and_recovery": 8,
+    "administrative": 131
+  },
+  "accepted_subgates": [
+    "Reporting governance at job128482803764",
+    "Frozen policy conformance/lint/format at job128482818600",
+    "Publication controls/recipe-resource check at job128482836053"
+  ],
+  "full_scientific_matrix_passed": false
+}

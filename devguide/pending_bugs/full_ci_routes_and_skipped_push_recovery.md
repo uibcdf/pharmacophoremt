@@ -40,6 +40,17 @@ independent of the frozen policy caller. Original coverage-finalizer collision
 and stale-digest refusal are retained. Planned dispatch has not yet established
 any full gate; queue/run/terminal facts belong in the checkpoint evidence.
 
+The manual checkpoint now targets exact4616c786c5de959ef0d6e98120d7183dcc217553.
+Source CI42399097757 has successful reporting governance, including the complete
+131-case administrative suite; five science cells execute and three queue at
+the first job observation. Frozen policy42399103089 and publication governance
+42399108565 pass every required native step. These conclusive governance results
+do not close source/scientific or installed/public coverage. The
+[execution observation](../evidence/accumulated_ci_execution_20261107.json)
+retains exact run/attempt/job/step identities. Keep polling the live source run,
+not dispatching another one for an unchanged head. Any later documentary commit
+retains its own narrower check scope and exact-head debt.
+
 ## Feature-reuse increment and mature-0.x checkpoint — 2026-11-07
 
 The [feature-reuse receipt](../evidence/feature_reuse_20261107_summary.json) owns

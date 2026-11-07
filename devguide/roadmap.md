@@ -119,6 +119,13 @@ public-support
 reader slice does not qualify a full PHMT dependency solve or platform matrix.
 No release or full supported gate is established by this reader increment.
 
+The accumulated checkpoint is now running at exact4616c78: complete reporting
+governance (including131 administrative cases), frozen policy and publication
+governance pass. The eight scientific cells remain executing/queued in
+CI42399097757 at the first observation. Receive that actual full source result
+before counting it toward the classical/public-workflow milestones; installed,
+public dependency, scientific/comparator and usability requirements remain.
+
 ## Current priority: classical consolidation
 
 The accepted longer-term objective under [#103](pending_proposals/qualify_receptor_screening_studies.md)

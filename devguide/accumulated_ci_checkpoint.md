@@ -99,3 +99,33 @@ gates. The previous owned wheels and saved-run observations retain their produce
 identities and are not rebuilt or relabelled as this checkpoint's artifacts.
 No biological study, performance/comparator claim or MolSysMT-owned collection
 contract is completed by this work.
+
+## Exact-source hosted receiving — initial observation
+
+Frozen checkpoint source: `4616c786c5de959ef0d6e98120d7183dcc217553`.
+All three manual requests are accepted once and independently observed with
+`workflow_dispatch`, attempt1 and that exact source. No package workflow runs.
+[Native job/step observation](evidence/accumulated_ci_execution_20261107.json).
+
+| Workflow | Actual run / job evidence | State at observation |
+| --- | --- | --- |
+| Complete source CI | [42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757) | Reporting governance job128482803764 passes:3 reporting,18 archive,8 recovery/route and full131 administrative cases. Five scientific cells are executing and three queued; full source matrix is not yet accepted |
+| Frozen policy | [42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089), job128482818600 | Repository conformance, lint/imports and formatting all execute successfully |
+| Publication governance | [42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565), job128482836053 | Publication controls and declared noarch recipe/resources execute successfully without building |
+
+Receptor1.4.0 independently reports PENDING/exit3 for source CI and PASS/exit0
+for each completed governance workflow. Native source job/step facts agree.
+The nightly-decision job is intentionally skipped for manual `probe_backlog=false`;
+all eight actual scientific cells remain required. Source run status may remain
+`queued` while some jobs execute; retain both run and job facts.
+
+Full hosted administrative receiving now succeeds for this frozen candidate,
+following the earlier failed memory-limited local attempt. That older evidence
+is preserved rather than rewritten. Source/scientific completion, supported
+installed/public artifacts and all remaining mature-0.x milestones are still
+separate. Later documentation-only delivery does not relabel these runs with a
+new source SHA; any newer-head debt remains explicit under #9.
+
+Continue observing these exact live handles; do not restart because a poll times
+out or a queue is slow. Diagnose actual terminal failures with their original
+attempt identity, and verify every required cell/step before accepting source CI.
