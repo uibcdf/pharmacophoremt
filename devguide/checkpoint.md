@@ -15,7 +15,8 @@ The latest increment corrects two analytical boundary fixtures under
 [receipt](evidence/rdkit_boundary_correction_20261107_summary.json) passes59selected
 cases, including14analytical guards and the separate ten-case/186-assignment
 driver. Exact rational controls fail on the old data; production runtime and
-eight interior cases are unchanged. Corrected hosted acceptance remains pending.
+eight interior cases are unchanged. Corrected hosted acceptance is received at
+frozen8db2a53; its terminal evidence appears below.
 
 The received runtime correction fixes [native Point center inspection](native_geometry_inspection.md)
 under[#142](archive/point_center_inspection.md): a read-only alias exposes the

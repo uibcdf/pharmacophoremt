@@ -158,7 +158,8 @@ Production cutoffs and matching definitions are unchanged.
 position as center and returns empty center arrays with three columns. The
 source338-case selection passes, preserving original failures and native schema;
 the same338 bodies pass from one exact owned wheel, resolving#142. This later correction is
-separate from the running489be12 source/coverage checkpoint.
+later than failed489be12 and covered by the successful controlled8db2a53 source
+checkpoint. Full installed/public delivery retains its separate gates.
 
 The [RDKit projection increment](rdkit_projection.md) now provides explicit
 sphere/radius exchange and detached field/loss/default reports with strict or
