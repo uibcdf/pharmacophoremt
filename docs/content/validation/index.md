@@ -24,6 +24,7 @@ Historical timings from different environments do not isolate an improvement.
 :maxdepth: 1
 
 prepared_ccd
+rdkit_bounds_comparison
 pubchem3d_library_pilot
 reused_feature_inventories
 prepared_workflow

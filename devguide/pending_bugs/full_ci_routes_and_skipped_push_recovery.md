@@ -15,6 +15,17 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Executed Pharm3D comparison controls — 2026-11-07
+
+The [analytical case](../rdkit_bounds_comparison.md) adds12 focused scientific
+controls and an opt-in full driver, without changing production runtime,
+dependency pins or prefixes. All61 selected scientific,24 distribution,3 reporting
+and18 archive cases pass with full Ruff/index checks. A prospective resource
+amendment preserves the failed512MiB attempts and uses1GiB RLIMIT_DATA with
+measured whole-command RSS; no original failure becomes a pass. The later test/
+driver/data changes retain exact-head debt: frozen4616c78 CI42399097757 cannot
+qualify them or the newer progress runtime. No duplicate CI is dispatched.
+
 ## Criterion-independent progress increment — 2026-11-07
 
 The [progress source receipt](../evidence/saved_run_progress_source_20261107.json)

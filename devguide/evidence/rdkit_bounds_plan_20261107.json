@@ -1,0 +1,25 @@
+{
+  "schema": "pharmacophoremt.rdkit-bounds-plan@1",
+  "date_utc": "2026-11-07",
+  "owners": ["LMMV", "dprada"],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/128",
+  "source_parent": "e0a84ef64d779aa4ef2bd2e51c00843cbd53ce6e",
+  "contract": "devguide/rdkit_bounds_comparison.md",
+  "represented_scope": "Fixed single-atom charge-feature distance filters, exhaustive assignments, followed by every native proper rigid placement and checked pose. No independent chemical perception, flexible embedding or complete-tool comparison.",
+  "interior_cases": ["identity", "translated", "proper_rotation_translation", "angstrom_equivalent", "permuted_geometry", "stretched", "noncoplanar_reflection", "coplanar_reflection"],
+  "boundary_cases": ["exact_lower_bound", "exact_upper_bound"],
+  "assignment_denominators": {"interior": 174, "boundary": 12, "total": 186},
+  "controls": [
+    "Interior complete accepted mapping sets agree between public native proposals and actual RDKit CoarseScreenPharmacophore",
+    "Native placement/evaluation agrees with predetermined rigid positive, stretched-negative and noncoplanar-reflection-negative answers",
+    "Exact lower/upper boundary identity mappings are native-admitted/RDKit-rejected. Set that one RDKit endpoint to the actual source matrix element, verify the analytical interval within1e-12 angstrom and retain both values; no epsilon repair",
+    "Explicit nm/angstrom conversions, single-atom feature identities, immutable coordinates/inventories and complete fit counts",
+    "Native budget exhaustion and malformed inputs remain failures, not negative screening observations",
+    "Existing correspondence/placement/reflection and RDKit projection regressions; full Ruff and reporting/archive/index checks",
+    "Complete fixed driver retains full outputs, actual provider/source/native identities and reached attribution with owned scalar/code publication"
+  ],
+  "budgets": {"max_graph_nodes": 64, "max_cliques": 1000, "max_fits": 32, "max_matrix_entries": 1000000, "source_frame": 0, "chemical_state": 0},
+  "resources": {"serial": true, "cpu": 19, "backend_threads": 1, "nice": 19, "io_priority": "idle", "rlimit_data_per_process_bytes": 536870912, "command_timeout_seconds": 180, "entry_memory": "MemAvailable >2GiB; memory pressure avg10 <1", "aggregate_controls": "Unavailable own systemd user runtime; no aggregate memory/no-swap/tasks/quota claim"},
+  "publication": "Owned synthetic inputs, comparison/control code and scalar/hash/citation evidence; third-party source/native binaries remain local",
+  "nonclaims": "No general chemical-library support, tool ranking, throughput, speedup, complete RDKit embedding/PHMT search equivalence, biological validity, installed/public platform gate or release"
+}

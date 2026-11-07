@@ -1,0 +1,599 @@
+{
+  "schema": "pharmacophoremt.rdkit-bounds-cases@1",
+  "feature_family": "positive charge",
+  "source_policy": "Synthetic disconnected single-atom positive ions constructed through public MolSysMT; explicit prepared coordinates, one frame/state. No chemical perception comparison.",
+  "cases": [
+    {
+      "key": "identity",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "translated",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            2.4,
+            1,
+            3
+          ],
+          [
+            2.1,
+            1.6,
+            3
+          ],
+          [
+            2.1,
+            1.2,
+            3.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "proper_rotation_translation",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            2,
+            1,
+            3
+          ],
+          [
+            2,
+            1.4,
+            3
+          ],
+          [
+            1.4,
+            1.1,
+            3
+          ],
+          [
+            1.8,
+            1.1,
+            3.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "angstrom_equivalent",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            4.0,
+            0,
+            0
+          ],
+          [
+            1.0,
+            6.0,
+            0
+          ],
+          [
+            1.0,
+            2.0,
+            8.0
+          ]
+        ],
+        "unit": "angstrom"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "permuted_geometry",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ],
+          [
+            0.4,
+            0,
+            0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "stretched",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            1.2
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 0,
+        "placements": 0,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "noncoplanar_reflection",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ],
+          [
+            0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -0.4,
+            0,
+            0
+          ],
+          [
+            -0.1,
+            0.6,
+            0
+          ],
+          [
+            -0.1,
+            0.2,
+            0.8
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 0,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "coplanar_reflection",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.4,
+            0,
+            0
+          ],
+          [
+            0.1,
+            0.6,
+            0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            -0.4,
+            0,
+            0
+          ],
+          [
+            -0.1,
+            0.6,
+            0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".001 nm",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "boundary": null
+    },
+    {
+      "key": "exact_lower_bound",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.3,
+            0,
+            0
+          ],
+          [
+            0,
+            0.4,
+            0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.15,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.2,
+            0.0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".125 nm",
+      "expected": {
+        "coarse_mappings": null,
+        "placements": null,
+        "identity_native": true,
+        "identity_rdkit": false
+      },
+      "boundary": {
+        "endpoint": "lower",
+        "reference_pair": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "key": "exact_upper_bound",
+      "reference": {
+        "centers": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0.3,
+            0,
+            0
+          ],
+          [
+            0,
+            0.4,
+            0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "source": {
+        "centers": [
+          [
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.44999999999999996,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6000000000000001,
+            0.0
+          ]
+        ],
+        "unit": "nm"
+      },
+      "distance_tolerance": ".125 nm",
+      "expected": {
+        "coarse_mappings": null,
+        "placements": null,
+        "identity_native": true,
+        "identity_rdkit": false
+      },
+      "boundary": {
+        "endpoint": "upper",
+        "reference_pair": [
+          1,
+          2
+        ]
+      }
+    }
+  ]
+}

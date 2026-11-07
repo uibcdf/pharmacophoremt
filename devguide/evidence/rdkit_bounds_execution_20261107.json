@@ -1,0 +1,1018 @@
+{
+  "schema": "pharmacophoremt.rdkit-bounds-execution@1",
+  "source_parent": "e0a84ef64d779aa4ef2bd2e51c00843cbd53ce6e",
+  "source_overlay": {
+    "recorded_at_utc": "2026-11-07T19:16:18.268883+00:00",
+    "parent_source": "e0a84ef64d779aa4ef2bd2e51c00843cbd53ce6e",
+    "source_files": {
+      "phmt_test_support/rdkit_bounds_comparison.py": {
+        "bytes": 8899,
+        "sha256": "b08a3b442b4fb858b2a91286a5e5662560cc76667a7bd15366ebf0abefc5f71d"
+      },
+      "devtools/compare_rdkit_bounds.py": {
+        "bytes": 5554,
+        "sha256": "7a03f508e6c802fff49d550e2c157c66f47a6aa38a9f7f5b75895be9bc078b43"
+      },
+      "tests/test_rdkit_bounds_comparison.py": {
+        "bytes": 990,
+        "sha256": "120a8b5f7bffa87711698d71d9e358b65c19105f99447abbb96c4561383257eb"
+      },
+      "devguide/evidence/rdkit_bounds_resource_amendment_20261107.json": {
+        "bytes": 2099,
+        "sha256": "1cdbb4740b1a82094858d6daecdd21dd961d0248db85f595f0bd674dada9bc62"
+      },
+      "tests/data/rdkit_bounds_cases.json": {
+        "bytes": 10058,
+        "sha256": "2dbcb02f2169ed28d2c37c179773eb8aaaf590fe473b180436862c6488f8e18d"
+      },
+      "devguide/rdkit_bounds_comparison.md": {
+        "bytes": 6965,
+        "sha256": "ccca90b089626d9a643cf50583f2d8cbbddab3c1497d9e162f7f976d7c55c201"
+      },
+      "devguide/evidence/rdkit_bounds_plan_20261107.json": {
+        "bytes": 2779,
+        "sha256": "e699e163305990d4218f9f92894d976fe3f75abce097eb258f48a1b288f958b0"
+      }
+    },
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "limits": {
+      "rlimit_data_per_process_bytes": [
+        1073741824,
+        1073741824
+      ],
+      "rlimit_as": "not imposed; native/shared-library mappings remain separate",
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "backend_threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "NUMBA_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1",
+        "RAYON_NUM_THREADS": "1"
+      },
+      "aggregate_memory_swap_tasks_quota": "not enforced; no own systemd user runtime"
+    },
+    "memory_entry": "MemTotal:       63455508 kB\nMemFree:        51360632 kB\nMemAvailable:   61008756 kB\nBuffers:          545764 kB\nCached:          9417860 kB\nSwapCached:            0 kB\nActive:          3050844 kB\nInactive:        7803352 kB\nActive(anon):     970700 kB\nInactive(anon):        0 kB\nActive(file):    2080144 kB\nInactive(file):  7803352 kB\nUnevictable:       10256 kB\nMlocked:           10256 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388604 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              4152 kB\nWriteback:             0 kB\nAnonPages:        902048 kB\nMapped:           910944 kB\nShmem:             72808 kB\nKReclaimable:     424960 kB\nSlab:             688616 kB\nSReclaimable:     424960 kB\nSUnreclaim:       263656 kB\nKernelStack:       14224 kB\nPageTables:        20836 kB\nSecPageTables:      5732 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:    5549144 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      221676 kB\nVmallocChunk:          0 kB\nPercpu:            45792 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    301056 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      329504 kB\nDirectMap2M:     4792320 kB\nDirectMap1G:    63963136 kB\n",
+    "pressure_entry": "some avg10=0.00 avg60=0.00 avg300=0.00 total=957\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=626\n",
+    "prospective_notice": "https://github.com/uibcdf/pharmacophoremt/issues/128#issuecomment-6711714749"
+  },
+  "represented_scope": "Analytical distance filters and native rigid placements; no independent chemical perception, embedding, benchmark, activity cohort or installed/public-platform qualification.",
+  "provider_versions": {
+    "molsysmt": "0.23.0+513.g9e1f1b1ad",
+    "rdkit": "2026.9.2",
+    "numpy": "2.5.4",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "argdigest": "0.17.1+3.g0712641",
+    "smonitor": "0.22.1+1.gc1b6ce2",
+    "depdigest": "0.15.2+2.g032d345",
+    "ackredit": "0.12.1+10.g4beb850"
+  },
+  "package_sources_before": {
+    "pharmacophoremt": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.4.0+134.gee5d9fa",
+      "python_source_sha256": "439c588dc0c76a458571f020dc52f80e046570378ea6bcb00832b22b3bb231d4",
+      "python_file_count": 146
+    },
+    "molsysmt": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.23.0+513.g9e1f1b1ad",
+      "python_source_sha256": "a29d4424e0184a823122a17f7d7573bb252b67b2dff8735e5b21a27a373142e8",
+      "python_file_count": 3064
+    },
+    "rdkit": {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit",
+      "version": "2026.09.2",
+      "python_source_sha256": "6caee28072e4eac310f32d6a3181a901a080040f99cdf5472a19ccc10c1c7b23",
+      "python_file_count": 343
+    }
+  },
+  "package_sources_after": {
+    "pharmacophoremt": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt",
+      "version": "0.4.0+134.gee5d9fa",
+      "python_source_sha256": "439c588dc0c76a458571f020dc52f80e046570378ea6bcb00832b22b3bb231d4",
+      "python_file_count": 146
+    },
+    "molsysmt": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+      "version": "0.23.0+513.g9e1f1b1ad",
+      "python_source_sha256": "a29d4424e0184a823122a17f7d7573bb252b67b2dff8735e5b21a27a373142e8",
+      "python_file_count": 3064
+    },
+    "rdkit": {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit",
+      "version": "2026.09.2",
+      "python_source_sha256": "6caee28072e4eac310f32d6a3181a901a080040f99cdf5472a19ccc10c1c7b23",
+      "python_file_count": 343
+    }
+  },
+  "source_files_unchanged": true,
+  "native_extensions": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b"
+    },
+    {
+      "module": "rdkit.Chem.rdCIPLabeler",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdCIPLabeler.so",
+      "sha256": "118ef4fd433d63123fe89e4863f1cdf6998bb3124413aa85a0ecfed586581d25"
+    },
+    {
+      "module": "rdkit.Chem.rdChemicalFeatures",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdChemicalFeatures.so",
+      "sha256": "ea2c732178854049098a18a63c017a45515356d3e3255391ffb92902dd23c145"
+    },
+    {
+      "module": "rdkit.Chem.rdCoordGen",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdCoordGen.so",
+      "sha256": "a0a52269cb869e8328a7891134573baa06bbb851db678fefe4ec0d83dfd17c6b"
+    },
+    {
+      "module": "rdkit.Chem.rdDistGeom",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdDistGeom.so",
+      "sha256": "f34a96d7254b3472eb24c251a73d0d67eb8d3a109facd8de7343a37be902dadd"
+    },
+    {
+      "module": "rdkit.Chem.rdForceFieldHelpers",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdForceFieldHelpers.so",
+      "sha256": "cc101fcd4456721ecf4b4c68e95fa5dca59c2a33502a1f42115c963b91f8d652"
+    },
+    {
+      "module": "rdkit.Chem.rdMolChemicalFeatures",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdMolChemicalFeatures.so",
+      "sha256": "a8de89cb247663f2d3138b4e232e65372c1ce919e0f03e03b57c0dad0ed2539c"
+    },
+    {
+      "module": "rdkit.Chem.rdMolInterchange",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdMolInterchange.so",
+      "sha256": "86eef9ff43706741602e260b5f81f5facd749261cbf177f2fb38dd31b90a6469"
+    },
+    {
+      "module": "rdkit.Chem.rdchem",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdchem.so",
+      "sha256": "930cb130a3817bd824c7938454c044c811528e2f6dfd6fe455a2aec160da8e03"
+    },
+    {
+      "module": "rdkit.Chem.rdinchi",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdinchi.so",
+      "sha256": "5e9fa76149daa8b04e7edbe971854fd204da1fd94b23c5abd04bdfab1bee103d"
+    },
+    {
+      "module": "rdkit.Chem.rdmolfiles",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdmolfiles.so",
+      "sha256": "3ecf985e51933523ea11a025a92fb62a83caa4fee46679d59b5e133d2075445d"
+    },
+    {
+      "module": "rdkit.Chem.rdmolops",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Chem/rdmolops.so",
+      "sha256": "b4567b40d65e75a948f510558a615b00200ab37aa63999a50de5f6382aa87cfd"
+    },
+    {
+      "module": "rdkit.DataStructs.cDataStructs",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/DataStructs/cDataStructs.so",
+      "sha256": "750301fe624b27a8f85be0bdac626d15571a65038bc56b1e6443ad0b77f50899"
+    },
+    {
+      "module": "rdkit.DistanceGeometry.DistGeom",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/DistanceGeometry/DistGeom.so",
+      "sha256": "6e294bae0ce321c84ec75ae6d3dbe40daeffcc2bde6f39cf446116186aa4a069"
+    },
+    {
+      "module": "rdkit.ForceField.rdForceField",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/ForceField/rdForceField.so",
+      "sha256": "6cc0d152d583071acd8be4fb0220caf94c23e09d4223fba643d91d652db92215"
+    },
+    {
+      "module": "rdkit.Geometry.rdGeometry",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/Geometry/rdGeometry.so",
+      "sha256": "81ed603abbf5b462cb1a303d8c2829accd27ea3b459889bd1fa9f0b5240f1593"
+    },
+    {
+      "module": "rdkit.rdBase",
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/rdkit/rdBase.so",
+      "sha256": "3ee9bab8f63cfcf7a083a8204137800e034d14ccc3d84f72567457a6b7e7d99b"
+    }
+  ],
+  "driver_original": {
+    "bytes": 1376259,
+    "sha256": "49c7efd83a99c57d132ad93b465a0e3ed8aff68e70e65636709d5cc78a02ddaf",
+    "retained_local": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-rdkit-bounds-20261107-chvaqxij/private_complete_driver_attempt2.json"
+  },
+  "selected_source_cases": {
+    "scientific": 61,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18,
+    "distinct_total": 106
+  },
+  "fixed_driver_cases": 10,
+  "assignments_evaluated": 186,
+  "cases": [
+    {
+      "key": "identity",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 1,
+      "accepted_native_statuses": [
+        "matched"
+      ],
+      "accepted_scores": [
+        1.0
+      ],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "f526eeb2852aca051a8607825b82cfc4c850cf35301c069d6d12ccc764c69812"
+    },
+    {
+      "key": "translated",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 1,
+      "accepted_native_statuses": [
+        "matched"
+      ],
+      "accepted_scores": [
+        1.0
+      ],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "ff5fb1047b25e8997156b914bae4aaae4e61f82b57d645cc98190d7a3218b8cb"
+    },
+    {
+      "key": "proper_rotation_translation",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 1,
+      "accepted_native_statuses": [
+        "matched"
+      ],
+      "accepted_scores": [
+        1.0
+      ],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "5abdc0a15628d4b2384ba475f450577250f29ed5cfdef99113e7dd48abe4abb2"
+    },
+    {
+      "key": "angstrom_equivalent",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 1,
+      "accepted_native_statuses": [
+        "matched"
+      ],
+      "accepted_scores": [
+        1.0
+      ],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "c9b2b53d5434e391b026ee49291ce0d41cff2f07d1d9dfefc66873e40f935ec0"
+    },
+    {
+      "key": "permuted_geometry",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            2
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 1,
+      "accepted_native_statuses": [
+        "matched"
+      ],
+      "accepted_scores": [
+        1.0
+      ],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "41391e4cfc58b5e0a7c5483f44782ad7c50b79734f7f176c15b6aaaeb630048c"
+    },
+    {
+      "key": "stretched",
+      "expected": {
+        "coarse_mappings": 0,
+        "placements": 0,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [],
+      "native_mappings": [],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 0,
+      "accepted_placements": 0,
+      "accepted_native_statuses": [],
+      "accepted_scores": [],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "48e7d8acf8fb226dfc9006980e5635d726914f26e6ef5d0c816d89da5d82dded"
+    },
+    {
+      "key": "noncoplanar_reflection",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 0,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 24,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            3
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 0,
+      "accepted_native_statuses": [],
+      "accepted_scores": [],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "4125dc4be7d3c6bc9f0465ed43889288d655f8425024cca5df692131073a9a0c"
+    },
+    {
+      "key": "coplanar_reflection",
+      "expected": {
+        "coarse_mappings": 1,
+        "placements": 1,
+        "identity_native": null,
+        "identity_rdkit": null
+      },
+      "passed": true,
+      "assignments_evaluated": 6,
+      "rdkit_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": true,
+      "fits": 1,
+      "accepted_placements": 1,
+      "accepted_native_statuses": [
+        "matched"
+      ],
+      "accepted_scores": [
+        1.0
+      ],
+      "boundary": null,
+      "inputs_unchanged": true,
+      "full_case_sha256": "359f285550a1c1be0d774f6e3e70fb43762c9cdcbc2c22bfe3eaf417592f1acd"
+    },
+    {
+      "key": "exact_lower_bound",
+      "expected": {
+        "coarse_mappings": null,
+        "placements": null,
+        "identity_native": true,
+        "identity_rdkit": false
+      },
+      "passed": true,
+      "assignments_evaluated": 6,
+      "rdkit_mappings": [],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            1
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": false,
+      "fits": null,
+      "accepted_placements": null,
+      "accepted_native_statuses": [],
+      "accepted_scores": [],
+      "boundary": {
+        "pair": [
+          1,
+          2
+        ],
+        "endpoint": "lower",
+        "original_angstrom": 2.5,
+        "exact_source_angstrom": 2.5
+      },
+      "inputs_unchanged": true,
+      "full_case_sha256": "1cfa444c2783103b85d22f4dd944f7687b363591d9d42afee0e1541039a8df80"
+    },
+    {
+      "key": "exact_upper_bound",
+      "expected": {
+        "coarse_mappings": null,
+        "placements": null,
+        "identity_native": true,
+        "identity_rdkit": false
+      },
+      "passed": true,
+      "assignments_evaluated": 6,
+      "rdkit_mappings": [],
+      "native_mappings": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ],
+      "native_proposals_complete": true,
+      "mapping_sets_equal": false,
+      "fits": null,
+      "accepted_placements": null,
+      "accepted_native_statuses": [],
+      "accepted_scores": [],
+      "boundary": {
+        "pair": [
+          1,
+          2
+        ],
+        "endpoint": "upper",
+        "original_angstrom": 7.5,
+        "exact_source_angstrom": 7.500000000000001
+      },
+      "inputs_unchanged": true,
+      "full_case_sha256": "1c39e283f022313a0a56fd7a260bf09befb02e1ba124a620f340d287173303bf"
+    }
+  ],
+  "attribution": {
+    "items": [
+      {
+        "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+134.gee5d9fa",
+        "type": "software",
+        "title": "PharmacophoreMT",
+        "version": "0.4.0+134.gee5d9fa",
+        "url": "https://github.com/uibcdf/pharmacophoremt",
+        "authors": [
+          "{UIBCDF Lab}"
+        ]
+      },
+      {
+        "id": "pharmacophoremt:software:numpy:2.5.4",
+        "type": "software",
+        "title": "NumPy",
+        "version": "2.5.4",
+        "url": "https://numpy.org/"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "type": "article",
+        "title": "Array programming with NumPy",
+        "authors": [
+          "Harris, Charles R.",
+          "Millman, K. Jarrod",
+          "van der Walt, St\u00e9fan J.",
+          "Gommers, Ralf",
+          "Virtanen, Pauli",
+          "Cournapeau, David",
+          "Wieser, Eric",
+          "Taylor, Julian",
+          "Berg, Sebastian",
+          "Smith, Nathaniel J.",
+          "Kern, Robert",
+          "Picus, Matti",
+          "Hoyer, Stephan",
+          "van Kerkwijk, Marten H.",
+          "Brett, Matthew",
+          "Haldane, Allan",
+          "Fern\u00e1ndez del R\u00edo, Jaime",
+          "Wiebe, Mark",
+          "Peterson, Pearu",
+          "G\u00e9rard-Marchant, Pierre",
+          "Sheppard, Kevin",
+          "Reddy, Tyler",
+          "Weckesser, Warren",
+          "Abbasi, Hameer",
+          "Gohlke, Christoph",
+          "Oliphant, Travis E."
+        ],
+        "journal": "Nature",
+        "year": 2020,
+        "volume": "585",
+        "pages": "357\u2013362",
+        "doi": "10.1038/s41586-020-2649-2"
+      },
+      {
+        "id": "pharmacophoremt:software:molsysmt:0.23.0+513.g9e1f1b1ad",
+        "type": "software",
+        "title": "MolSysMT",
+        "version": "0.23.0+513.g9e1f1b1ad",
+        "url": "https://github.com/uibcdf/molsysmt"
+      },
+      {
+        "id": "pharmacophoremt:software:pyunitwizard:0.29.1+6.gf82b618",
+        "type": "software",
+        "title": "PyUnitWizard",
+        "version": "0.29.1+6.gf82b618",
+        "url": "https://github.com/uibcdf/pyunitwizard"
+      },
+      {
+        "id": "pharmacophoremt:software:networkx:3.7",
+        "type": "software",
+        "title": "NetworkX",
+        "version": "3.7",
+        "url": "https://networkx.org/"
+      },
+      {
+        "id": "pharmacophoremt:networkx:paper:2008",
+        "type": "inproceedings",
+        "title": "Exploring network structure, dynamics, and function using NetworkX",
+        "authors": [
+          "Hagberg, Aric A.",
+          "Schult, Daniel A.",
+          "Swart, Pieter J."
+        ],
+        "booktitle": "Proceedings of the 7th Python in Science Conference (SciPy2008)",
+        "year": 2008,
+        "pages": "11\u201315",
+        "url": "https://networkx.org/documentation/stable/#citing"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1145/362342.362367",
+        "type": "article",
+        "title": "Algorithm 457: finding all cliques of an undirected graph",
+        "authors": [
+          "Bron, C.",
+          "Kerbosch, J."
+        ],
+        "journal": "Communications of the ACM",
+        "year": 1973,
+        "volume": "16",
+        "number": "9",
+        "pages": "575\u2013577",
+        "doi": "10.1145/362342.362367"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1016/j.tcs.2006.06.015",
+        "type": "article",
+        "title": "The worst-case time complexity for generating all maximal cliques and computational experiments",
+        "authors": [
+          "Tomita, Etsuji",
+          "Tanaka, Akira",
+          "Takahashi, Haruhisa"
+        ],
+        "journal": "Theoretical Computer Science",
+        "year": 2006,
+        "volume": "363",
+        "number": "1",
+        "pages": "28\u201342",
+        "doi": "10.1016/j.tcs.2006.06.015"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1107/S0567739476001873",
+        "type": "article",
+        "title": "A solution for the best rotation to relate two sets of vectors",
+        "authors": [
+          "Kabsch, W."
+        ],
+        "journal": "Acta Crystallographica Section A",
+        "year": 1976,
+        "volume": "32",
+        "pages": "922\u2013923",
+        "doi": "10.1107/S0567739476001873"
+      },
+      {
+        "id": "pharmacophoremt:software:scipy:1.18.1",
+        "type": "software",
+        "title": "SciPy",
+        "version": "1.18.1",
+        "url": "https://scipy.org/"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1038/s41592-019-0686-2",
+        "type": "article",
+        "title": "SciPy 1.0: Fundamental Algorithms for Scientific Computing in Python",
+        "authors": [
+          "Virtanen, Pauli",
+          "Gommers, Ralf",
+          "Oliphant, Travis E.",
+          "Haberland, Matt",
+          "Reddy, Tyler",
+          "Cournapeau, David",
+          "Burovski, Evgeni",
+          "Peterson, Pearu",
+          "Weckesser, Warren",
+          "Bright, Jonathan",
+          "van der Walt, St\u00e9fan J.",
+          "Brett, Matthew",
+          "Wilson, Joshua",
+          "Millman, K. Jarrod",
+          "Mayorov, Nikolay",
+          "Nelson, Andrew R. J.",
+          "Jones, Eric",
+          "Kern, Robert",
+          "Larson, Eric",
+          "Carey, C J",
+          "Polat, \u0130lhan",
+          "Feng, Yu",
+          "Moore, Eric W.",
+          "VanderPlas, Jake",
+          "Laxalde, Denis",
+          "Perktold, Josef",
+          "Cimrman, Robert",
+          "Henriksen, Ian",
+          "Quintero, E. A.",
+          "Harris, Charles R.",
+          "Archibald, Anne M.",
+          "Ribeiro, Ant\u00f4nio H.",
+          "Pedregosa, Fabian",
+          "van Mulbregt, Paul",
+          "{SciPy 1.0 Contributors}"
+        ],
+        "journal": "Nature Methods",
+        "year": 2020,
+        "volume": "17",
+        "pages": "261\u2013272",
+        "doi": "10.1038/s41592-019-0686-2"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1109/TAES.2016.140952",
+        "type": "article",
+        "title": "On implementing 2D rectangular assignment algorithms",
+        "authors": [
+          "Crouse, David F."
+        ],
+        "year": 2016,
+        "journal": "IEEE Transactions on Aerospace and Electronic Systems",
+        "volume": "52",
+        "number": "4",
+        "pages": "1679\u20131696",
+        "doi": "10.1109/TAES.2016.140952"
+      },
+      {
+        "id": "pharmacophoremt:comparison:software:rdkit:2026.09.2",
+        "type": "software",
+        "title": "RDKit",
+        "version": "2026.09.2",
+        "url": "https://www.rdkit.org/"
+      }
+    ],
+    "item_count": 14,
+    "use_count": 47,
+    "original_payload_sha256": "742213ad4f8497f3602bd4879d92a9dcfe8bf319eebf40a07853f4792f715b43",
+    "scope": "Native reached attribution plus explicit software credit for completed direct Pharm3D filter cases; not all external internal calls"
+  },
+  "resources": {
+    "scientific": {
+      "kernel_peak_rss_bytes": 391180288,
+      "exit_status": 0,
+      "scope": "Whole command/process high water, not incremental allocation or a benchmark"
+    },
+    "complete-driver": {
+      "kernel_peak_rss_bytes": 475381760,
+      "exit_status": 0,
+      "scope": "Whole command/process high water, not incremental allocation or a benchmark"
+    }
+  },
+  "original_failures": {
+    "initial_pytest": "MemoryError/empty JUnit at512MiB RLIMIT_DATA; no passing count",
+    "initial_driver": "Ten failed case records, including consumer rdkit attribution-token KeyError, and final MemoryError; not successful native results",
+    "isolated_probe": "Valid XYZ recognition before OpenBLAS allocation failure under512MiB data limit",
+    "amendment": "rdkit_bounds_resource_amendment_20261107.json"
+  },
+  "follow_up": "https://github.com/uibcdf/pharmacophoremt/issues/140",
+  "scope_limit": "No new production adapter, native/source/provider/prefix modification, complete tool/embedding equivalence, benchmark, biological, installed/public-platform or release claim"
+}

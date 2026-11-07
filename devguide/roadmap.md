@@ -136,6 +136,14 @@ public dependency, scientific/comparator and usability requirements remain.
 
 ## Current priority: classical consolidation
 
+The first executed [Pharm3D bounds comparison](rdkit_bounds_comparison.md)
+receives ten analytical cases/186 exhaustive assignments and106 selected source
+cases. It supports explicit pair/fit tolerance, boundary and post-fit validation
+contracts, with the discovered public projection gap owned by#140. This is no
+chemical-perception, flexible-search, biological or timing comparison. The
+unchanged production runtime and later case/control files retain their own
+source identities and full exact-head debt under#9/#23.
+
 The accepted longer-term objective under [#103](pending_proposals/qualify_receptor_screening_studies.md)
 is a reproducible prepared-receptor-to-pharmacophore-to-screening workflow,
 evaluated on ERalpha and a scientifically justified second receptor. A third

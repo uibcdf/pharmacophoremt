@@ -4,7 +4,7 @@ issue: uibcdf/pharmacophoremt#128
 status: active
 opened: 2026-11-06
 closed:
-verification: inspected
+verification: measured
 area: [science, design, usability]
 guard:
 normative: devguide/pharmacophore_tools_registry.md
@@ -47,9 +47,18 @@ and interpretation.
 
 The survey reviews primary documentation/source and original publications across
 nine ecosystems; Pharmit and Pharmer have separate registry records because they
-have different responsibilities. No competitor has been installed, executed or
-benchmarked, and no new PHMT API/index, molecular preparation or score follows.
+have different responsibilities. At that original survey no competitor was
+executed or benchmarked, and no new PHMT API/index, preparation or score followed.
 Versioned historical evidence and current product claims retain distinct scope.
+
+The [declared Pharm3D comparison](../rdkit_bounds_comparison.md) now receives
+ten analytical cases/186 exhaustive assignments on installed RDKit2026.09.2,
+with106 selected local cases and the separate complete driver passing. Interior
+filter equality, proper-fit reflection rejection and exact-boundary divergence
+retain their actual scope; nine other tool records remain documentary. Original
+resource/harness failures and the prospective data-budget amendment are preserved.
+[#140](qualify_rdkit_projection.md) owns public projection/constraint fidelity.
+This does not close the broad comparison registry or biological/performance gates.
 
 ## Acceptance criteria
 

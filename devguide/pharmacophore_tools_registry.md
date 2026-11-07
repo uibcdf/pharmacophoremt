@@ -86,6 +86,21 @@ Historical documentation and current product descriptions remain distinguished.
 
 ## Useful comparisons and product criteria
 
+The first [executed Pharm3D comparison](rdkit_bounds_comparison.md) is now
+recorded separately from the original documentary intake. On installed
+RDKit2026.09.2, ten fixed analytical controls evaluate186 assignments: common
+interior distance filters agree, the proper-fit stage rejects a noncoplanar
+reflection, and exact boundary predicates differ as declared. This is a
+reproduced analytical comparison, not a timing benchmark, feature-perception
+comparison or acceptance of a production engine. The other nine initial records
+retain documentary evidence only. [#140](https://github.com/uibcdf/pharmacophoremt/issues/140)
+owns the discovered public projection/constraint-qualification task.
+
+The canonical [RDKit record update](https://github.com/uibcdf/pharmacophoremt/discussions/135#discussioncomment-19463143)
+is published with `Comparison recorded` and executed analytical evidence.
+Its exact body/identity is independently read back; the original documentary
+record and all other threads/categories remain unchanged.
+
 The accepted ambition is powerful pharmacophore work with evidence, an intuitive
 guided route, and a complete coherent expert public API, with quality ahead of a
 delivery deadline. High-level and composed public routes should resolve to the

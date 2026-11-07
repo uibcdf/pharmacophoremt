@@ -1,0 +1,17 @@
+{
+  "schema": "pharmacophoremt.rdkit-bounds-resource-amendment@1",
+  "date_utc": "2026-11-07",
+  "owners": ["LMMV", "dprada"],
+  "original_plan": "rdkit_bounds_plan_20261107.json",
+  "scope_unchanged": "All ten frozen fixtures, expected outcomes,186 assignments, query/feature semantics, native budgets and source/driver controls remain unchanged.",
+  "original_attempts": [
+    "Selected scientific pytest attempt hits MemoryError while writing JUnit; its empty XML is not passing scientific evidence",
+    "Independent complete driver retains ten failed case records and later fails final source hashing with MemoryError; invalid case attribution token rdkit was also a consumer harness defect, now corrected",
+    "Independent quantity/rotation probe recognizes the valid quantity as XYZ, then terminates at OpenBLAS memory allocation under the same512MiB RLIMIT_DATA"
+  ],
+  "reason": "The self-imposed data-segment ceiling prevents native OpenBLAS allocation. It is not an aggregate resident-memory measurement. Revise the declared task budget explicitly before execution, retain all original failures and collect kernel-observed maximum resident size.",
+  "revised_limits": {"rlimit_data_per_process_bytes": 1073741824, "entry_memavailable_minimum_bytes": 4294967296, "pressure_avg10_maximum": 1, "serial": true, "cpu": 19, "backend_threads": 1, "nice": 19, "io_priority": "idle", "command_timeout_seconds": 180, "measurement": "/usr/bin/time -v per scientific/driver command; whole-command peak RSS, not incremental allocation or a benchmark", "aggregate_controls": "No own systemd user runtime; aggregate memory/no-swap/tasks/quota unavailable"},
+  "review_utc": "2026-11-20",
+  "stop_condition": "If this fixed revised budget fails, preserve failure and use an appropriately qualified external/source gate; do not repeatedly increase limits until a test passes.",
+  "nonclaims": "No result at the original512MiB limit is converted to success; no native source/prefix is changed and no library defect is inferred solely from resource exhaustion. No speedup, capacity or biological claim."
+}

@@ -1,0 +1,171 @@
+{
+  "schema": "pharmacophoremt.rdkit-bounds-closeout@1",
+  "source_parent": "e0a84ef64d779aa4ef2bd2e51c00843cbd53ce6e",
+  "sealed_summary": "rdkit_bounds_20261107_summary.json",
+  "sealed_archive": {
+    "own_files_verified": 74,
+    "archive": {
+      "bytes": 70156,
+      "sha256": "59caf8993b97b58198a9ca24adf9ab3f8166f96f7de19249e0c549ec99bb1875"
+    },
+    "summary": {
+      "bytes": 3554,
+      "sha256": "06a1f9a7df5dbd7d2d6f28d5e214e94c410e7c0e5d0db200ed381932781b9e1c"
+    }
+  },
+  "post_seal_checks": [
+    {
+      "name": "ruff-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 0.032161349001398776,
+      "log": "ruff-check-closeout.log",
+      "log_identity": {
+        "bytes": 19,
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "name": "ruff-format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 0.03326747699975385,
+      "log": "ruff-format-closeout.log",
+      "log_identity": {
+        "bytes": 28,
+        "sha256": "98f576aa113de63f96dc6a04b23b22c3e5c72b9c93bed145d6280f0669151501"
+      }
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.4647152819998155,
+      "log": "index-closeout.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "index-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3648582810019434,
+      "log": "index-check-closeout.log",
+      "log_identity": {
+        "bytes": 38,
+        "sha256": "3a525cb88e38e62b2cd78f962eec311aeb1797c9a439b3c7d832b95b00a8d5b5"
+      }
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9658386500013876,
+      "log": "reporting-closeout.log",
+      "log_identity": {
+        "bytes": 101,
+        "sha256": "a1f4c48d0b8e4125a0966260d18f133c2de44d7bfb72a5b6b5bdba67621dab3f"
+      }
+    },
+    {
+      "name": "archive",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.922476176998316,
+      "log": "archive-closeout.log",
+      "log_identity": {
+        "bytes": 117,
+        "sha256": "77edc7aac1b91d12b7e576835101f871b304eff83577c4521296f4f118138710"
+      }
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.018350335998547962,
+      "log": "whitespace-closeout.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "original_reporting_failure": {
+    "name": "reporting",
+    "arguments": [
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "tests",
+      "-p",
+      "test_reporting_protocol.py"
+    ],
+    "exit_code": 1,
+    "seconds": 0.6153326809981081,
+    "log": "reporting-final.log",
+    "log_identity": {
+      "bytes": 949,
+      "sha256": "41e96a680ebc24e16efee0721195103312a53d084a530354e2ff0e5a6cede0b2"
+    }
+  },
+  "reporting_correction": {
+    "original_result": "reporting-final: one of three guards fails because exact issue inventory lacks the newly created issue140",
+    "correction": "Add only uibcdf/pharmacophoremt#140 to the existing explicit issue-set assertion; preserve validation and all original entries",
+    "scientific_controls": "unchanged; no scientific rerun required by this reporting-inventory adjustment"
+  },
+  "current_reporting_guard": {
+    "path": "tests/test_reporting_protocol.py",
+    "bytes": 6936,
+    "sha256": "1cc9664ddba908fb5f78baada5eaa4ce633b9758d0f9ed23d4309593075e47b4"
+  },
+  "scientific_scope": "All61 scientific cases and the complete10-case/186-assignment driver retain their original passing source/body hashes. Later changes only add the issue140 registration guard, reports, public case and receipt/index documents.",
+  "goal": "Active mature-0.x staircase; no full goal/release completion",
+  "source_ci": "Frozen4616c78 CI42399097757/attempt1 remains separate; no new dispatch"
+}

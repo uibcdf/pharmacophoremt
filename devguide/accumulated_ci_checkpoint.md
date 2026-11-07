@@ -140,3 +140,9 @@ The later [progress runtime](saved_run_progress.md) has its own102 selected sour
 cases and exact1950421 installed-wheel receiving. Neither those local results
 nor a later receipt commit relabels the source of this live CI run. Later-head
 full source/policy/installed/public debt remains explicit under #9/#10/#23/#95.
+
+The later [Pharm3D case-time observation](evidence/accumulated_ci_observation_20261107_bounds.json)
+has six science jobs successful and two executing at the same frozen4616c78/
+attempt1. It remains incomplete. The executed analytical comparison and its new
+test/driver/data files retain their own source/overlay and exact-head debt;
+no live run is restarted or assigned a newer producer.

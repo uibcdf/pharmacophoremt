@@ -1,0 +1,89 @@
+{
+  "schema": "pharmacophoremt.rdkit-bounds-summary@1",
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "source_parent": "e0a84ef64d779aa4ef2bd2e51c00843cbd53ce6e",
+  "source_case_overlay": {
+    "phmt_test_support/rdkit_bounds_comparison.py": {
+      "bytes": 8899,
+      "sha256": "b08a3b442b4fb858b2a91286a5e5662560cc76667a7bd15366ebf0abefc5f71d"
+    },
+    "devtools/compare_rdkit_bounds.py": {
+      "bytes": 5554,
+      "sha256": "7a03f508e6c802fff49d550e2c157c66f47a6aa38a9f7f5b75895be9bc078b43"
+    },
+    "tests/test_rdkit_bounds_comparison.py": {
+      "bytes": 990,
+      "sha256": "120a8b5f7bffa87711698d71d9e358b65c19105f99447abbb96c4561383257eb"
+    },
+    "devguide/evidence/rdkit_bounds_resource_amendment_20261107.json": {
+      "bytes": 2099,
+      "sha256": "1cdbb4740b1a82094858d6daecdd21dd961d0248db85f595f0bd674dada9bc62"
+    },
+    "tests/data/rdkit_bounds_cases.json": {
+      "bytes": 10058,
+      "sha256": "2dbcb02f2169ed28d2c37c179773eb8aaaf590fe473b180436862c6488f8e18d"
+    },
+    "devguide/rdkit_bounds_comparison.md": {
+      "bytes": 6965,
+      "sha256": "ccca90b089626d9a643cf50583f2d8cbbddab3c1497d9e162f7f976d7c55c201"
+    },
+    "devguide/evidence/rdkit_bounds_plan_20261107.json": {
+      "bytes": 2779,
+      "sha256": "e699e163305990d4218f9f92894d976fe3f75abce097eb258f48a1b288f958b0"
+    }
+  },
+  "selected_source_cases": {
+    "scientific": 61,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18,
+    "distinct_total": 106
+  },
+  "driver_cases": 10,
+  "assignments": 186,
+  "interior_filter_sets_equal": 8,
+  "boundary_identity_differences": 2,
+  "native_checked_positives": 6,
+  "attribution_items": 14,
+  "attribution_uses": 47,
+  "resources": {
+    "scientific": {
+      "kernel_peak_rss_bytes": 391180288,
+      "exit_status": 0,
+      "scope": "Whole command/process high water, not incremental allocation or a benchmark"
+    },
+    "complete-driver": {
+      "kernel_peak_rss_bytes": 475381760,
+      "exit_status": 0,
+      "scope": "Whole command/process high water, not incremental allocation or a benchmark"
+    }
+  },
+  "original_failed_attempts_preserved": true,
+  "discussion": {
+    "schema": "pharmacophoremt.rdkit-discussion-receiving@1",
+    "discussion": "https://github.com/uibcdf/pharmacophoremt/discussions/135",
+    "comment_url": "https://github.com/uibcdf/pharmacophoremt/discussions/135#discussioncomment-19463143",
+    "comment_id": "DC_kwDOP5ch7M4BKPvn",
+    "body_sha256": "7a2ad5ad7a0d4e490c3a7ea1cab16708a7b24bb95fab9bfa8a59035ad2a2d1ef",
+    "readback_equal": true,
+    "acquisition": "Native GitHub CLI2.103.3 GraphQL fallback; connected plugin lacks Discussion comment operation",
+    "original_record_and_category_unchanged": true,
+    "disposition": "Comparison recorded",
+    "evidence_level": "Executed analytical comparison; not a benchmark or complete-tool qualification"
+  },
+  "follow_up_issue": 140,
+  "own_files": 74,
+  "resource_review_utc": "2026-11-20",
+  "nonclaims": "Owned synthetic inputs/control/code and scalar/hash/citation evidence; full native outputs and third-party source/native bodies remain local. Not a benchmark, biological or full-source/installed/platform/release qualification.",
+  "full_evidence": {
+    "path": "rdkit_bounds_20261107_full.json.gz",
+    "compressed_bytes": 70156,
+    "compressed_sha256": "59caf8993b97b58198a9ca24adf9ab3f8166f96f7de19249e0c549ec99bb1875",
+    "uncompressed_bytes": 314906,
+    "uncompressed_sha256": "724b4e26ae0731eed4a746e2725a328a49d0106b0dce83c5e06abfa76455441d"
+  }
+}

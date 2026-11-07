@@ -68,6 +68,11 @@ Shapelet remains a placeholder outside the qualified six-shape scope. Other
 translators (LigandScout/Pharmer/RDKit pharmacophore objects) need their own field
 matrix. Availability of a class does not establish matcher/format support.
 
+The [Pharm3D comparison](rdkit_bounds_comparison.md) explicitly configures bounds
+after the existing center/family projection. [#140](pending_proposals/qualify_rdkit_projection.md)
+now owns RDKit's preserved/projected/lost fields, admission and deliberate
+compatibility decision; the comparison does not establish a constraint round trip.
+
 ## Executed checks and next steps
 
 [#75 receipt](evidence/native_persistence_validation_20261104_summary.json):

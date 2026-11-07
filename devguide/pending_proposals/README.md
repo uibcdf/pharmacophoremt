@@ -9,7 +9,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 ### Active (2)
 
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
-- [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, inspected)*
+- [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 
 ### Partial (10)
 
@@ -27,5 +27,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 ### Blocked (1)
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
+
+### Open (1)
+
+- [`qualify_rdkit_projection.md`](qualify_rdkit_projection.md) — [#140](https://github.com/uibcdf/pharmacophoremt/issues/140) — Qualify RDKit pharmacophore projection and explicit constraint translation. *(open, inspected)*
 
 <!-- /generated -->

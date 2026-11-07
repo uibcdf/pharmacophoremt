@@ -10,6 +10,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The latest scientific increment executes the
+[Pharm3D distance-filter comparison](rdkit_bounds_comparison.md): ten fixed
+analytical cases/186 full assignments,106 selected local cases and a separate
+complete driver pass. Common interior filters agree; proper native fitting
+rejects the noncoplanar reflection; strict/inclusive boundary differences remain
+explicit. [#140](pending_proposals/qualify_rdkit_projection.md) owns public
+RDKit projection/constraint qualification. No production method/provider changes,
+new general connector, speedup or biological evidence follow. Original failed
+512MiB attempts and the declared1GiB data-budget revision remain preserved.
+
 The latest runtime increment adds
 [criterion-independent saved progress](saved_run_progress.md): public
 `ScreeningRunView.progress()`/`ScreeningRunStore.progress()` and module CLI
@@ -34,8 +44,8 @@ retains101 selected local cases, original control failures and their corrections
 Hosted [execution evidence](evidence/accumulated_ci_execution_20261107.json):
 [CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757)
 has successful reporting governance (3 reporting,18 archive,8 route/recovery and
-full131 administrative cases). The [later native observation](evidence/accumulated_ci_observation_20261107_progress.json)
-has five scientific jobs successful, two executing and one queued;
+full131 administrative cases). The [latest case-time native observation](evidence/accumulated_ci_observation_20261107_bounds.json)
+has six scientific jobs successful and two executing;
 **complete source CI is still pending**.
 [Policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
 and [publication governance42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565)
@@ -49,7 +59,9 @@ original governance failure remain intact. Full administrative receiving for
 frozen4616c78 now passes on the hosted route; the earlier local memory/guard
 failures are preserved and are not rewritten as successful local execution.
 
-**Next concrete action:** continue observing source CI42399097757/attempt1 and
+**Next concrete action:** receive the remaining exact source-CI cells and qualify
+the public RDKit projection fields/losses under#140, retaining existing callers
+through a deliberate compatibility decision. Continue source CI42399097757/attempt1 and
 verify all8 actual Linux/macOS arm64 Python3.11–3.14 cells, dependency preflights
 and Run tests steps. Do not duplicate a live run or infer completion from the
 three governance successes. Retain exact frozen4616c78 identities if a later
@@ -99,7 +111,7 @@ earlier route.
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
-| #128 tool registry | [Ten documentary records](pharmacophore_tools_registry.md) | Declare bounded comparisons; distinguish documentary/executed/benchmark evidence |
+| #128 tool registry | [One executed Pharm3D analytical comparison and nine documentary records](pharmacophore_tools_registry.md) | Qualify public projection#140; declare other comparisons and retain separate benchmark/biological scope |
 | #9/#10/#23/#95 | Full supported source, dependency, installed/public/platform and release gates remain separate | Exact run/attempt/artifact evidence at deliberate checkpoints; no full-suite retry on this shared machine |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |
@@ -115,7 +127,11 @@ increment does not requalify that environment-wide boundary.
 
 Heavy checks stay serial, one allowed CPU/backend thread, low CPU/I/O priority,
 512MiB/no swap where enforceable; verify pressure before entry and retain actual
-limits. Preserve sibling refs/worktrees and provider state. Earlier fetch/prune
+limits. The [Pharm3D case amendment](evidence/rdkit_bounds_resource_amendment_20261107.json)
+explicitly uses1GiB RLIMIT_DATA after native allocation failure; its measured
+whole-command RSS stays separately reported. Do not repeatedly increase that
+budget or rewrite the original failures. Preserve sibling refs/worktrees and
+provider state. Earlier fetch/prune
 was rejected; use explicit offline `--no-fetch` snapshots plus connected read-only
 observation unless a different route is authorized. Do not repeat exhausted
 source routes or raise limits to hide a failure.
