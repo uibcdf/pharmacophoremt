@@ -1,0 +1,33 @@
+{
+  "reason": "Runtime API controls belong to default library testpaths, not thin administrative governance discovery",
+  "source_observation": "pyproject.toml testpaths=[tests]; CI governance unittest discovers devtools/tests without runtime support installation",
+  "provider_bug": false,
+  "records": {
+    "test_public_run_results.py": {
+      "from": "devtools/tests/test_public_run_results.py",
+      "to": "tests/test_public_run_results.py",
+      "before_sha256": "4969bfda4b3ad91049a4a1062167a49173c8224d1767f50cc85c7eef98cb3b34",
+      "after_sha256": "5f0a848f0f39c041e6d7bc217d1e902db6ac8fbf3ccbd462eafe3793fe9a9a9a",
+      "test_bodies_unchanged": true,
+      "test_bodies": 21
+    },
+    "test_public_run_exports.py": {
+      "from": "devtools/tests/test_public_run_exports.py",
+      "to": "tests/test_public_run_exports.py",
+      "before_sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989",
+      "after_sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989",
+      "test_bodies_unchanged": true,
+      "test_bodies": 15
+    },
+    "test_public_run_cli.py": {
+      "from": "devtools/tests/test_public_run_cli.py",
+      "to": "tests/test_public_run_cli.py",
+      "before_sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217",
+      "after_sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217",
+      "test_bodies_unchanged": true,
+      "test_bodies": 12
+    }
+  },
+  "new_scientific_or_runtime_code": false,
+  "owned_wheel_rebuild": false
+}

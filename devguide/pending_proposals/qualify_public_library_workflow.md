@@ -34,7 +34,10 @@ their authority.
 The [CLI increment](../saved_result_cli.md) now composes the public exporter with
 `--to-jsonl FILE`/`--to-csv FILE`, retaining ranked inspection, explicit legacy
 admission and truthful publication-failure context. All12 command/15 export/21
-reader source controls pass; owned installed command receiving remains pending.
+reader controls pass in the actual library suite and independently installed
+wheel. Their test methods move unchanged into `tests/` so thin governance does
+not require runtime providers. The [receipt](../evidence/saved_result_cli_20261107_summary.json)
+retains the incomplete full administrative attempt and qualified narrower scope.
 MolSysMT#624 is still open at the current read-only observation and has no
 delivered collection contract received here; no molecular collection is forked.
 
@@ -234,6 +237,8 @@ existing and concurrent destinations. Original failed launch/lint and actual
 resource-limit gaps are retained. Four authentic original saved databases retain
 full native/configuration equality and scalar projections in isolated installed
 receiving with published support providers. The [receipt](../evidence/saved_result_exports_20261107_summary.json)
-preserves the original verifier/finalizer failures and continuations. Next add
-CLI export through these same methods. This is not complete collection management, predictive
+preserves the original verifier/finalizer failures and continuations.
+CLI export through these same methods has since been received under the linked
+contract above; next qualify accumulated changes at an exact-head checkpoint.
+This is not complete collection management, predictive
 validation, performance qualification or completion of milestone2/#108.

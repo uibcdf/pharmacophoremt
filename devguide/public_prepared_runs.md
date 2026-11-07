@@ -35,8 +35,9 @@ file is completed before exclusive publication; existing destinations are never
 replaced. Export is separate from ranking and scientific resumption.
 The [CLI contract](saved_result_cli.md) composes those same methods through
 `--to-jsonl FILE`/`--to-csv FILE`, preserving the existing ranked inspection
-syntax and explicit legacy admission. Source controls pass; separate installed
-receiving remains pending at this implementation checkpoint.
+syntax and explicit legacy admission. Source controls and bounded independent
+installed reader/command receiving pass. This
+does not clear complete source/governance or installed scientific gates.
 
 ## Version and compatibility contracts
 

@@ -106,9 +106,13 @@ retry trap in source and the same owned wheel. It is no human usability study.
 The [complete-view exporter](saved_result_exports.md) passes15 export/21 reader
 bodies from source and the same exact owned installed artifact. Four authentic
 original saved databases retain full evidence/configuration and scalar projections.
-The [CLI exporter](saved_result_cli.md) passes48 selected source command/reader/
-export controls; next receive the exact installed command, then validate the
-accumulated public workflow from the [checkpoint](checkpoint.md). The public-support
+The [CLI exporter](saved_result_cli.md) passes48 library command/reader/export
+controls from the corrected suite location and one exact installed wheel. The
+documented commands preserve original complete/partial/legacy evidence. Next
+validate the accumulated public workflow at a deliberate exact-head checkpoint.
+The complete administrative/source gate remains open after the recorded local
+resource/guard failures; its corrected selected controls do not clear it. The
+public-support
 reader slice does not qualify a full PHMT dependency solve or platform matrix.
 No release or full supported gate is established by this reader increment.
 

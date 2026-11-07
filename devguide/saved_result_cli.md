@@ -2,10 +2,11 @@
 
 Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108), mature-0.x milestone2.
-This prospective increment composes the existing
-[public complete-view exporter](saved_result_exports.md). Execution and installed
-receiving are tracked separately; the original contract preceded tests. Source
-controls pass; owned installed command receiving remains pending at this checkpoint.
+This increment composes the existing
+[public complete-view exporter](saved_result_exports.md). The original contract
+and plan preceded execution. Source and bounded owned installed receiving pass;
+the [receipt](evidence/saved_result_cli_20261107_summary.json) preserves original
+attempts, the test-layout correction and the incomplete administrative attempt.
 
 ## User contract
 
@@ -83,5 +84,58 @@ and original outputs remain retained; repeated bodies are not new distinct cases
 
 No metadata, dependency route, namespace or runtime resource list changes. The
 existing distribution receiving is retained at its original scope, not counted
-as new execution. Reporting/archive/index checks remain required for the updated
-checkpoint. Raw capsule: `build/phmt-saved-cli-20261107-6k4w_977` (ignored).
+as new execution at that first checkpoint. The later route correction below
+does execute the affected administrative selection. Raw capsule:
+`build/phmt-saved-cli-20261107-6k4w_977` (ignored).
+
+## Actual suite membership and installed receiving
+
+The three public runtime test modules now live under `tests/`, matching the
+default library `testpaths`; they no longer enter the thin administrative
+`devtools/tests` discovery. All48 test method bodies are AST-identical across
+relocation; only the reader fixture's repository-root constant changes. The
+actual default-library route passes48 cases with published Pytest Receptor1.2.0
+and `--receptor=llm`. This corrects a source-inspected CI placement gap under
+[#9](https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6710306958),
+without adding support dependencies to the governance job or claiming hosted CI.
+
+Frozen producer `2c0d24b91618fed45149e0db84f1dce6f2da2e04`; one owned wheel
+`0.4.0+140.g2c0d24b`,4515097 bytes,SHA-256
+`beeff444e9c33fbd13b2a3270e2860cb563a5cb263b05ec0a6690a91a5ac66f0`.
+All209 wheel files except pip's rewritten RECORD and154 non-generated runtime
+Python files match their declared origins. The generated140 version record
+remains distinct from the unchanged shared editable134 cache. Test relocation
+changes no runtime byte or artifact; the wheel is built once and never rebuilt.
+
+Independent installed receiving admits only this wheel, stdlib and original
+authenticated public ArgDigest0.17.1/SMonitor0.22.1/DepDigest0.11.0 payloads.
+All48 frozen reader/export/command bodies pass without skips, both before and
+after the layout correction. Each phase retains39 fresh guarded child records:
+26 successful commands and13 expected refusals with exit2. No scientific,
+attribution or development-support import occurs. Metadata and actual loaded
+state stay separate; installed DepDigest is legitimately unloaded.
+
+For each of four original source/installed complete, source-partial and explicit
+legacy databases, all three exact documented commands execute: ranked inspection,
+full JSONL and scalar CSV. Original direct-SQLite payload/configuration oracles,
+scores0/1/1, the partial zero with2 pending, native records, scalar fields and
+database/runtime bytes remain unchanged. These12 command observations and the
+repeated installed48 are not additional distinct source cases or fresh science.
+
+The final selected source scope passes145 distinct bodies:48 library API,
+76 administrative/core-storage,3 reporting and18 archive. All131 administrative
+cases import/collect without runtime support or science; the selected76 execute
+with that boundary enforced. The preceding full administrative attempt is **not
+passing**: it reports three memory failures under the512MiB address-space cap and
+two loader errors caused by an overstrict harness rejecting harmless top-level
+`find_spec` probes. The corrected guard allows those probes, verifies that the
+public package is not imported, and passes the core-storage controls. Original
+outputs and failed identities remain; this does not clear the full131-case
+administrative gate. Complete source/governance execution remains #9-owned on
+the appropriate hosted route; no higher-memory full local retry is launched.
+
+Full Ruff/index/whitespace and archive-envelope integrity checks pass. The
+next action is a deliberate exact-head CI checkpoint for the accumulated
+classical/public-workflow changes, with actual source/dependency/platform gates
+declared before dispatch. It is separate from reader receiving or a release.
+General molecular collections remain MolSysMT#624-owned and open at observation.

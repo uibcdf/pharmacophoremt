@@ -10,37 +10,35 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [public saved-result exporter](saved_result_exports.md) now passes bounded
-source and owned installed receiving. `ScreeningRunView.to_jsonl(path)` retains
-full original native outcomes; `.to_csv(path)` projects six scalar/source fields.
-Both include zero negatives/failures, preserve manifest order, return original
-configuration/output-digest receipts and protect existing destinations. All15
-export/21 reader bodies pass in both contexts; four authentic complete/partial/
-legacy databases retain full native/configuration equality and unchanged bytes.
-All83 distinct selected cases pass, plus full Ruff/index/whitespace checks.
-[Receipt](evidence/saved_result_exports_20261107_summary.json) retains original
-failed launches/checks, continuations and actual resource-limit gaps.
+The [saved-result CLI](saved_result_cli.md) now exports complete JSONL/CSV through
+`--to-jsonl FILE`/`--to-csv FILE`, composing the same public methods. Existing
+ranked inspection and explicit legacy admission remain compatible. All48
+library reader/export/command bodies pass from `tests/` and an independently
+installed wheel. Four authentic databases retain exact native/configuration,
+scalar/rank and byte equality through all three documented commands. Receipts
+and postpublication error context stay visible; no science is rerun.
 
-Frozen producer `4e8f26acc0a41e373afca400e0854966b66de5dd`; owned wheel
-`0.4.0+138.g4e8f26a`, not a public release. Independent installed reading admits
-only that wheel, stdlib and original public ArgDigest0.17.1/SMonitor0.22.1/
-DepDigest0.11.0 payloads. No scientific/attribution provider is loaded or credited.
-This is a Linux/Python3.14 reader slice, not a complete PHMT solve/platform gate.
+The [receipt](evidence/saved_result_cli_20261107_summary.json) records145 passing
+bodies in the final selected source scope, repeated installed controls and their
+limits. It preserves the initial help-assertion failure and **incomplete** full
+administrative attempt: three512MiB memory failures plus two harness probe errors.
+The corrected guard verifies131 administrative cases import/collect without
+runtime providers, then executes76 selected core/tool cases. That result does
+not clear the full administrative/source gate. API tests now belong to the
+library suite; test method bodies remain unchanged across their relocation.
 
-Preceding [guided/expert receiving](guided_expert_journey_receiving.md),
-[released reader support](reader_public_provider_receiving.md) and
-[recoverable public runs](public_prepared_runs.md) retain their own frozen
-producers, evidence and limitations. MolSysMT#292 owns attribution-policy
-clarification. Historical pause records remain unchanged.
+Frozen wheel producer `2c0d24b91618fed45149e0db84f1dce6f2da2e04`, owned version
+`0.4.0+140.g2c0d24b`, not a public release. Isolated reader receiving admits only
+that wheel, stdlib and authenticated public ArgDigest0.17.1/SMonitor0.22.1/
+DepDigest0.11.0 payloads. This is Linux/Python3.14, not full PHMT/platform delivery.
+Preceding [API export](saved_result_exports.md), [guided/expert](guided_expert_journey_receiving.md)
+and [released-support](reader_public_provider_receiving.md) receipts retain their
+original identities. MolSysMT#292 owns attribution-policy clarification.
 
-The [CLI exporter](saved_result_cli.md) is now implemented through the same public
-methods: `--to-jsonl FILE`/`--to-csv FILE`. All12 command/15 export/21 reader source
-controls and full Ruff checks pass; the old inspection command remains compatible.
-Owned installed command receiving is pending at this source checkpoint.
-
-**Next concrete action:** receive one exact owned installed wheel of the command
-outside the checkout, exercising documented commands on the four original saved
-runs and retaining public support/provider boundaries and publication errors.
+**Next concrete action:** declare and execute a deliberate exact-head CI checkpoint
+for accumulated classical/public-workflow changes under #9/#23. Inspect actual
+source/dependency/installed gate selection before dispatch, preserve failures
+and exact run/attempt identities, and avoid a full local rerun on this workstation.
 Broader source operations continue separately; molecular collections remain
 MolSysMT#624-owned. Full changed-pin/installed/public gates remain independent.
 
@@ -60,7 +58,7 @@ and ignored version cache to0.4.0+134.gee5d9fa. That dated runtime matched its o
 wheel and reopened its same-byte relocated run with zero new evaluations. The
 current exporter changes companion code; old scientific bindings can now require
 a new linked run, while saved reading/export remains independent. The new owned
-wheel retains its distinct138 build version. No shared-prefix/native/provider
+wheel retains its distinct140 build version. No shared-prefix/native/provider
 change is made here. [Onboarding](onboarding.md) retains the earlier route.
 
 ## Implemented evidence and delivery boundary
@@ -79,7 +77,7 @@ change is made here. [Onboarding](onboarding.md) retains the earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; public exporter received from source/owned installed wheel | CLI export, broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; API/CLI exports received from source/owned installed wheel | Exact-head checkpoint, broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

@@ -19,7 +19,7 @@ from pharmacophoremt_results import (
     canonical_json,
 )
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(__file__).resolve().parents[1]
 CRITERION = "checked_pose_coverage@1"
 FRESH_GUARD = """
 import sys
