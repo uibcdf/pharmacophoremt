@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/github/license/uibcdf/pharmacophoremt)](https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE)
 [![Codecov](https://codecov.io/gh/uibcdf/pharmacophoremt/branch/main/graph/badge.svg)](https://app.codecov.io/gh/uibcdf/pharmacophoremt)
 
-Coverage: PharmacophoreMT Python tests, uploaded from Linux/Python 3.13 on eligible full CI runs; weekly and conditional nightly recovery retain the existing cadence. The badge reflects the last uploaded report, which may lag later direct or skip-CI commits; it does not certify a full matrix or scientific correctness.
+Coverage is configured for the PharmacophoreMT core and independent saved-results companion, uploaded from Linux/Python 3.13 on eligible full CI runs. Weekly and conditional nightly recovery retain the existing cadence. The badge reflects the last uploaded report, which may predate companion coverage or later direct/skip-CI commits; it does not certify a full matrix or scientific correctness.
 
 The development source supports Python **3.11–3.14** (`>=3.11,<3.15`). Release
 **[0.4.0](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0)** is public

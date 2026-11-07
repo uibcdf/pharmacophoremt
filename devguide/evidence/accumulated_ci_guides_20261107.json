@@ -1,0 +1,100 @@
+{
+  "schema": "pharmacophoremt.current-guide-instruction-audit@1",
+  "recorded_at_utc": "2026-11-07T17:46:40.304549+00:00",
+  "scope": "Current canonical guide bytes and scoped root/nested instruction review, independent of frozen policy-v1.5.4",
+  "guides": [
+    {
+      "path": "ACKREDIT_GUIDE.md",
+      "sha256": "194b33b0187e85a61f30c13a0a365d99d22ecbd9b3ca1d796bf0e8520dd837e1",
+      "bytes": 31170,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": false
+    },
+    {
+      "path": "ARGDIGEST_GUIDE.md",
+      "sha256": "1bb69c596cabd5d504416534ea952bea5fc7f23e74dea118cee47a4d196b965c",
+      "bytes": 31194,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": true
+    },
+    {
+      "path": "DEPDIGEST_GUIDE.md",
+      "sha256": "fa2d1af5dc9a7bc5e583fce0920ef988b08edff884e709b1629a977e4230624c",
+      "bytes": 13895,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": true
+    },
+    {
+      "path": "GH_RUN_RECEPTOR_GUIDE.md",
+      "sha256": "e47b04cc90e96ab4039aa9a3b5a8be5025b48574b2636cb19f22c05543ca4ae2",
+      "bytes": 31969,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": false
+    },
+    {
+      "path": "MOLSYSSUITE_GUIDE.md",
+      "sha256": "850a98f0757a18734b328332c88e4622f60bdef097148a1fd59b9f009846bfe4",
+      "bytes": 69263,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": false
+    },
+    {
+      "path": "PYUNITWIZARD_GUIDE.md",
+      "sha256": "1c2c00b7ebafd7c611311fe634e4ac81b4ce30b84ae2a4eccfb0939cc675fb8b",
+      "bytes": 21014,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": true
+    },
+    {
+      "path": "SMONITOR_GUIDE.md",
+      "sha256": "a78383aaf936b2e691b2a2c5b994b3362a3a05ef29cd1c156b2e9cf20fe5886e",
+      "bytes": 45388,
+      "matched_current_canonical": true,
+      "changed_by_registered_sync": true
+    }
+  ],
+  "source_provider_checkouts": {
+    "argdigest": {
+      "head": "07126411f108ee1ff607e9c9a0816109b2c9253e",
+      "worktree_status": ""
+    },
+    "smonitor": {
+      "head": "c1b6ce29c3729b99429b395a00c7866a759be406",
+      "worktree_status": ""
+    },
+    "depdigest": {
+      "head": "032d345becf8f8f574c24ede61ee62fcf0321de7",
+      "worktree_status": ""
+    },
+    "pyunitwizard": {
+      "head": "f82b618ea88c151a9b43009228126b1cf7fda65c",
+      "worktree_status": ""
+    },
+    "molsyssuite": {
+      "head": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+      "worktree_status": ""
+    }
+  },
+  "synchronizer": {
+    "owner": "uibcdf/molsyssuite",
+    "path": "devtools/scripts/sync_vendored_guides.py",
+    "source_commit": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+    "sha256": "a04b1407fbb8922a40134b537b776ccc3c37a23da946f06a7f9f59c59c4de163",
+    "result": "4 registered copies synchronized after clean published source-head and destination checks;3 other copies already current",
+    "ref_mutation": "none; official verifier uses ls-remote, no fetch/prune"
+  },
+  "instruction_review": {
+    "root_agents_sha256": "0555fb5c8710de101ff849bce5c22f69b0d28dc1a853d83d07a09d5b6993aedb",
+    "nested_agents_sha256": "df82b455ffdd802442c778c770b0ce04b59894dcc6a2f3041b3a15cda4313370",
+    "local_protocol_sha256": "3d88b8e1b317a16798c81b6b2cac35d4a24eae0f4c75a8eb58b31b7534bdcd9a",
+    "assessment": "Root/nested instructions retain common ownership, principal-maintainer direct/skip-CI route, resource controls, exact-head debt, durable checkpoint and provider boundaries. Current guide clauses reviewed in scope. No new exception or instruction change introduced."
+  },
+  "applicability": {
+    "argdigest": "Published0.17.1 call-shape and nested diagnostics already consumed/received; no new floor or API introduced",
+    "smonitor": "Existing configurations expose only CODES/SIGNALS;22.1 floor already justified by earlier public receiving",
+    "depdigest": "15.2 audit correction documented; basic independent reader still requires no newer floor than its earlier11 receiving",
+    "pyunitwizard": "29.1 public calorie/CODATA baseline documented; no calorie alias or new optional Astropy route consumed here"
+  },
+  "runtime_source_pins_or_shared_prefix_changed": false,
+  "full_provider_release_qualification": false
+}

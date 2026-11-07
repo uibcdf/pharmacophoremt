@@ -200,7 +200,7 @@ jobs:
       run: |
         export PYTHONPATH=$PYTHONPATH:$(pwd)
         # pytest -n logical -v --cov-config=.coveragerc --cov=pharmacophoremt --cov-report=xml --junitxml=junit.xml --color=yes
-        python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov-report=xml --junitxml=junit.xml --color=yes
+        python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes
 
     - name: Check coverage
       shell: bash -l {0}

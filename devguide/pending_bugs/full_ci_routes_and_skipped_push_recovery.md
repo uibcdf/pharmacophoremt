@@ -15,6 +15,31 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Accumulated-change checkpoint preparation — 2026-11-07
+
+The [declared checkpoint](../accumulated_ci_checkpoint.md) prepares a deliberate
+complete source/governance, frozen-policy and publication-governance execution.
+Core and independent-result coverage now share the actual matrix command and
+maintained configuration, with a regression guard preserving the complete test
+selection and original omission/branch policy. Selected56 coverage/API/route
+and24 distribution controls pass; exact-head hosted receiving is not inferred.
+The reviewed workflow digest is acknowledged without changing acquisition/pins.
+
+Old scheduled42383495995/attempt1 targets654586f: native completed governance
+job128435878657 confirms a missing-SMonitor loader error for the reader API test
+module formerly in `devtools/tests`. Its131 other cases pass. The current
+library-suite relocation is separately received; six older science cells pass
+and two remain running at the initial observation. Preserve that live run and
+its original evidence. Its result cannot qualify a later source head.
+
+The new preparation closes only fixture-owned SQLite connections, clears their
+observed warnings, and synchronizes four registered guide copies through the
+official tool. No production runtime/provider/public artifact is changed.
+The [current-guide audit](../evidence/accumulated_ci_guides_20261107.json) remains
+independent of the frozen policy caller. Original coverage-finalizer collision
+and stale-digest refusal are retained. Planned dispatch has not yet established
+any full gate; queue/run/terminal facts belong in the checkpoint evidence.
+
 ## Feature-reuse increment and mature-0.x checkpoint — 2026-11-07
 
 The [feature-reuse receipt](../evidence/feature_reuse_20261107_summary.json) owns

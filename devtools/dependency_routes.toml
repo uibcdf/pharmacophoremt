@@ -297,8 +297,8 @@ channel_reason = "Preserve actual AmberTools bootstrap; no required scientific d
 
 [[workflows]]
 path = ".github/workflows/CI.yaml"
-sha256 = "bbfe18284f4b82b6a61d4c82925bcd5f07011311cd425305e203a0fd1fd35a5f"
-reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+sha256 = "2658491610b728153a831781413f490bfa42b2caad38571f5d0b56a6097dd1f8"
+reason = "Reviewed coverage-only extension to the shipped results companion under #9/#23: complete test selection, acquisition/source pins, SDK and caller routes unchanged. This digest acknowledges inspected commands, not passing runtime or dependency qualification."
 
 [[workflows]]
 path = ".github/workflows/build_and_upload_conda_packages.yaml"

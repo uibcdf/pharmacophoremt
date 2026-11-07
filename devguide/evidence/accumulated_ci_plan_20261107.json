@@ -1,0 +1,25 @@
+{
+  "schema": "pharmacophoremt.accumulated-ci-plan@1",
+  "date_utc": "2026-11-07",
+  "owners": ["LMMV", "dprada"],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/9",
+  "source_parent": "e6215cf2edf8a4f3bf8ae861e82b2601a44cc03a",
+  "contract": "devguide/accumulated_ci_checkpoint.md",
+  "scope": "Deliberate exact-head source/governance/policy/publication-governance validation after accumulated classical/public workflow changes; not a release or installed/public package gate",
+  "preparation": [
+    "Include pharmacophoremt_results beside pharmacophoremt in coverage config and actual source matrix command; preserve full tests and existing branch/omission/threshold policy",
+    "Run affected CI route/backlog guards, focused real coverage receiving, dependency declaration preflight, reporting/archive/index and Ruff checks",
+    "Inspect existing live scheduled run42383495995 natively without treating its older head or running jobs as a current-head pass",
+    "Freeze reviewed clean source and remote head; avoid duplicate exact-head dispatches"
+  ],
+  "workflows": [
+    {"path": ".github/workflows/CI.yaml", "inputs": {"probe_backlog": "false"}, "required": "Reporting governance and all8 actual Linux/macOS arm64 Python3.11-3.14 test cells, including dependency preflight and full Run tests execution"},
+    {"path": ".github/workflows/molsyssuite-policy.yml", "inputs": {}, "required": "Exact-head frozen policy conformance/lint/format; keep reviewed policy-v1.5.4 pin and separate current-guide audit"},
+    {"path": ".github/workflows/conda_publication_governance.yaml", "inputs": {}, "required": "Exact-head publication controls and declared recipe/resource validation without building or publishing"}
+  ],
+  "acceptance": "Each declared gate has conclusive success for the exact source and actual full job/step execution. Queued/running/cancelled/omitted jobs, selected local passes and generic run success without required cells are insufficient. Preserve source dependency and platform limits separately.",
+  "recovery": "Do not duplicate a live exact-head run or restart on observation timeout. Diagnose actual terminal failures, report owning defects, correct source before a new checkpoint or use a justified same-attempt failed-job retry for infrastructure-only failure.",
+  "tools": {"initial": "published gh-run-receptor1.4.0", "native_fallback": "GitHub CLI2.103.3 and connected approved run/job/step endpoints", "raw_evidence": "owned ignored capsule; reviewed scalar/hash publication only"},
+  "local_resources": {"serial": true, "cpu": 19, "backend_threads": 1, "nice": 19, "io_priority": "idle", "per_process_limit_bytes": 536870912, "aggregate_limits": "Unavailable own user systemd runtime; record actual OS limits, do not use another user's bus or raise full-local-run memory"},
+  "nonclaims": "No new scientific computation locally, acquisition, preparation, biological validity, speedup, installed/public artifact, release freeze or completed mature-0.x milestone"
+}

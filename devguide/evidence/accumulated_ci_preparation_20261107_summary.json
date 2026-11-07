@@ -1,0 +1,429 @@
+{
+  "schema": "pharmacophoremt.accumulated-ci-preparation-summary@1",
+  "recorded_at_utc": "2026-11-07T17:56:04.115934+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/9",
+  "source_parent": "e6215cf2edf8a4f3bf8ae861e82b2601a44cc03a",
+  "prospective_notice": "https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6710647417",
+  "scope": "Prepare a deliberate accumulated source/governance checkpoint; both runtime namespaces measured, fixture connection lifetime corrected and current guide copies received. No production runtime/scientific/pin/provider/prefix change.",
+  "counts": {
+    "distinct_selected_local_cases": 101,
+    "coverage_route_library": 56,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "count_policy": "Repeated attempts, guide audits, older remote observations and coverage rendering are not additional distinct local tests.",
+  "coverage_receiving": {
+    "scope": "Focused command/reader/export/route cases, not full source coverage or scientific execution. Main package is intentionally not exercised by these selected controls.",
+    "companion_files": {
+      "pharmacophoremt_results/__init__.py": {
+        "covered_lines": 9,
+        "num_statements": 9,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "pharmacophoremt_results/__main__.py": {
+        "covered_lines": 0,
+        "num_statements": 2,
+        "percent_covered": 0.0,
+        "percent_covered_display": "0",
+        "missing_lines": 2,
+        "excluded_lines": 0,
+        "percent_statements_covered": 0.0,
+        "percent_statements_covered_display": "0",
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "pharmacophoremt_results/_api.py": {
+        "covered_lines": 159,
+        "num_statements": 176,
+        "percent_covered": 88.65979381443299,
+        "percent_covered_display": "89",
+        "missing_lines": 17,
+        "excluded_lines": 0,
+        "percent_statements_covered": 90.3409090909091,
+        "percent_statements_covered_display": "90",
+        "num_branches": 18,
+        "num_partial_branches": 3,
+        "covered_branches": 13,
+        "missing_branches": 5,
+        "percent_branches_covered": 72.22222222222223,
+        "percent_branches_covered_display": "72"
+      },
+      "pharmacophoremt_results/_diagnostics.py": {
+        "covered_lines": 12,
+        "num_statements": 12,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "pharmacophoremt_results/_digestion.py": {
+        "covered_lines": 45,
+        "num_statements": 50,
+        "percent_covered": 85.29411764705883,
+        "percent_covered_display": "85",
+        "missing_lines": 5,
+        "excluded_lines": 0,
+        "percent_statements_covered": 90.0,
+        "percent_statements_covered_display": "90",
+        "num_branches": 18,
+        "num_partial_branches": 5,
+        "covered_branches": 13,
+        "missing_branches": 5,
+        "percent_branches_covered": 72.22222222222223,
+        "percent_branches_covered_display": "72"
+      },
+      "pharmacophoremt_results/_exports.py": {
+        "covered_lines": 59,
+        "num_statements": 61,
+        "percent_covered": 97.1830985915493,
+        "percent_covered_display": "97",
+        "missing_lines": 2,
+        "excluded_lines": 0,
+        "percent_statements_covered": 96.72131147540983,
+        "percent_statements_covered_display": "97",
+        "num_branches": 10,
+        "num_partial_branches": 0,
+        "covered_branches": 10,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "pharmacophoremt_results/_meta.py": {
+        "covered_lines": 3,
+        "num_statements": 3,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "pharmacophoremt_results/_smonitor.py": {
+        "covered_lines": 5,
+        "num_statements": 5,
+        "percent_covered": 100.0,
+        "percent_covered_display": "100",
+        "missing_lines": 0,
+        "excluded_lines": 0,
+        "percent_statements_covered": 100.0,
+        "percent_statements_covered_display": "100",
+        "num_branches": 0,
+        "num_partial_branches": 0,
+        "covered_branches": 0,
+        "missing_branches": 0,
+        "percent_branches_covered": 100.0,
+        "percent_branches_covered_display": "100"
+      },
+      "pharmacophoremt_results/_store.py": {
+        "covered_lines": 364,
+        "num_statements": 449,
+        "percent_covered": 76.56500802568219,
+        "percent_covered_display": "77",
+        "missing_lines": 85,
+        "excluded_lines": 0,
+        "percent_statements_covered": 81.06904231625835,
+        "percent_statements_covered_display": "81",
+        "num_branches": 174,
+        "num_partial_branches": 53,
+        "covered_branches": 113,
+        "missing_branches": 61,
+        "percent_branches_covered": 64.94252873563218,
+        "percent_branches_covered_display": "65"
+      }
+    },
+    "declared_sources": [
+      "pharmacophoremt",
+      "pharmacophoremt_results"
+    ],
+    "junit_cases": 56
+  },
+  "workflow_route_review": {
+    "before_sha256": "bbfe18284f4b82b6a61d4c82925bcd5f07011311cd425305e203a0fd1fd35a5f",
+    "after_sha256": "2658491610b728153a831781413f490bfa42b2caad38571f5d0b56a6097dd1f8",
+    "changed_boundary": "coverage source includes pharmacophoremt_results",
+    "acquisition_and_source_pins_changed": false,
+    "whole_source_or_dependency_gate_passed": false,
+    "first_preflight": "correctly refused stale workflow digest; original refusal retained"
+  },
+  "current_guide_instruction_audit": {
+    "schema": "pharmacophoremt.current-guide-instruction-audit@1",
+    "recorded_at_utc": "2026-11-07T17:46:40.304549+00:00",
+    "scope": "Current canonical guide bytes and scoped root/nested instruction review, independent of frozen policy-v1.5.4",
+    "guides": [
+      {
+        "path": "ACKREDIT_GUIDE.md",
+        "sha256": "194b33b0187e85a61f30c13a0a365d99d22ecbd9b3ca1d796bf0e8520dd837e1",
+        "bytes": 31170,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": false
+      },
+      {
+        "path": "ARGDIGEST_GUIDE.md",
+        "sha256": "1bb69c596cabd5d504416534ea952bea5fc7f23e74dea118cee47a4d196b965c",
+        "bytes": 31194,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": true
+      },
+      {
+        "path": "DEPDIGEST_GUIDE.md",
+        "sha256": "fa2d1af5dc9a7bc5e583fce0920ef988b08edff884e709b1629a977e4230624c",
+        "bytes": 13895,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": true
+      },
+      {
+        "path": "GH_RUN_RECEPTOR_GUIDE.md",
+        "sha256": "e47b04cc90e96ab4039aa9a3b5a8be5025b48574b2636cb19f22c05543ca4ae2",
+        "bytes": 31969,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": false
+      },
+      {
+        "path": "MOLSYSSUITE_GUIDE.md",
+        "sha256": "850a98f0757a18734b328332c88e4622f60bdef097148a1fd59b9f009846bfe4",
+        "bytes": 69263,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": false
+      },
+      {
+        "path": "PYUNITWIZARD_GUIDE.md",
+        "sha256": "1c2c00b7ebafd7c611311fe634e4ac81b4ce30b84ae2a4eccfb0939cc675fb8b",
+        "bytes": 21014,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": true
+      },
+      {
+        "path": "SMONITOR_GUIDE.md",
+        "sha256": "a78383aaf936b2e691b2a2c5b994b3362a3a05ef29cd1c156b2e9cf20fe5886e",
+        "bytes": 45388,
+        "matched_current_canonical": true,
+        "changed_by_registered_sync": true
+      }
+    ],
+    "source_provider_checkouts": {
+      "argdigest": {
+        "head": "07126411f108ee1ff607e9c9a0816109b2c9253e",
+        "worktree_status": ""
+      },
+      "smonitor": {
+        "head": "c1b6ce29c3729b99429b395a00c7866a759be406",
+        "worktree_status": ""
+      },
+      "depdigest": {
+        "head": "032d345becf8f8f574c24ede61ee62fcf0321de7",
+        "worktree_status": ""
+      },
+      "pyunitwizard": {
+        "head": "f82b618ea88c151a9b43009228126b1cf7fda65c",
+        "worktree_status": ""
+      },
+      "molsyssuite": {
+        "head": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+        "worktree_status": ""
+      }
+    },
+    "synchronizer": {
+      "owner": "uibcdf/molsyssuite",
+      "path": "devtools/scripts/sync_vendored_guides.py",
+      "source_commit": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+      "sha256": "a04b1407fbb8922a40134b537b776ccc3c37a23da946f06a7f9f59c59c4de163",
+      "result": "4 registered copies synchronized after clean published source-head and destination checks;3 other copies already current",
+      "ref_mutation": "none; official verifier uses ls-remote, no fetch/prune"
+    },
+    "instruction_review": {
+      "root_agents_sha256": "0555fb5c8710de101ff849bce5c22f69b0d28dc1a853d83d07a09d5b6993aedb",
+      "nested_agents_sha256": "df82b455ffdd802442c778c770b0ce04b59894dcc6a2f3041b3a15cda4313370",
+      "local_protocol_sha256": "3d88b8e1b317a16798c81b6b2cac35d4a24eae0f4c75a8eb58b31b7534bdcd9a",
+      "assessment": "Root/nested instructions retain common ownership, principal-maintainer direct/skip-CI route, resource controls, exact-head debt, durable checkpoint and provider boundaries. Current guide clauses reviewed in scope. No new exception or instruction change introduced."
+    },
+    "applicability": {
+      "argdigest": "Published0.17.1 call-shape and nested diagnostics already consumed/received; no new floor or API introduced",
+      "smonitor": "Existing configurations expose only CODES/SIGNALS;22.1 floor already justified by earlier public receiving",
+      "depdigest": "15.2 audit correction documented; basic independent reader still requires no newer floor than its earlier11 receiving",
+      "pyunitwizard": "29.1 public calorie/CODATA baseline documented; no calorie alias or new optional Astropy route consumed here"
+    },
+    "runtime_source_pins_or_shared_prefix_changed": false,
+    "full_provider_release_qualification": false
+  },
+  "prior_remote_observation": {
+    "schema": "pharmacophoremt.prior-ci-observation@1",
+    "recorded_at_utc": "2026-11-07T17:56:03.736Z",
+    "run_id": 42383495995,
+    "attempt": 1,
+    "head": "654586f752db0ca3b8abc6e72d672f91ba820f42",
+    "scope": "Older scheduled source, not checkpoint-head acceptance",
+    "jobs": [
+      {
+        "id": 128435878657,
+        "name": "Reporting governance",
+        "status": "completed",
+        "conclusion": "failure",
+        "active_or_failed_steps": [
+          {
+            "number": 9,
+            "name": "Test distribution and dependency contracts",
+            "status": "completed",
+            "conclusion": "failure"
+          }
+        ]
+      },
+      {
+        "id": 128435878927,
+        "name": "Check skipped-commit backlog",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      },
+      {
+        "id": 128435945370,
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      },
+      {
+        "id": 128435945381,
+        "name": "Test on macos-15, Python 3.14",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      },
+      {
+        "id": 128435945404,
+        "name": "Test on macos-15, Python 3.12",
+        "status": "in_progress",
+        "conclusion": null,
+        "active_or_failed_steps": [
+          {
+            "number": 15,
+            "name": "Run tests",
+            "status": "in_progress",
+            "conclusion": null
+          }
+        ]
+      },
+      {
+        "id": 128435945409,
+        "name": "Test on macos-15, Python 3.13",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      },
+      {
+        "id": 128435945417,
+        "name": "Test on macos-15, Python 3.11",
+        "status": "in_progress",
+        "conclusion": null,
+        "active_or_failed_steps": [
+          {
+            "number": 15,
+            "name": "Run tests",
+            "status": "in_progress",
+            "conclusion": null
+          }
+        ]
+      },
+      {
+        "id": 128435945453,
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      },
+      {
+        "id": 128435945462,
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      },
+      {
+        "id": 128435945466,
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "status": "completed",
+        "conclusion": "success",
+        "active_or_failed_steps": []
+      }
+    ],
+    "governance_failure": {
+      "job": 128435878657,
+      "module": "test_public_run_results",
+      "exception": "ModuleNotFoundError",
+      "missing_dependency": "smonitor",
+      "reported_entries": 132,
+      "loader_errors": 1,
+      "other_successful_cases": 131
+    },
+    "receptor": {
+      "version": "1.4.0",
+      "status": "PENDING",
+      "exit_code": 3,
+      "capture": "metadata"
+    },
+    "run_restarted_or_cancelled": false
+  },
+  "original_attempts": [
+    "First56 selected tests pass with fixture ResourceWarnings; direct SQLite transaction contexts are closed with contextlib.closing, and rerun56 passes without warnings. No SMonitor/runtime defect asserted.",
+    "First control receipt overwrites the coverage JSON filename; original serialized JSON lost, original trace/XML retained. Offline regeneration has a new identity, followed by corrected distinct filenames.",
+    "Shared dependency preflight refuses changed CI workflow digest until actual coverage-only diff is reviewed and acknowledged. No acquisition or source pin changes.",
+    "Guide metadata-only extraction lacks canonical blob IDs; actual canonical text comparison then identifies4 stale copies. Official sync succeeds and all7 now match. No manual component-copy edit."
+  ],
+  "limits": {
+    "rlimit_as_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "aggregate_memory_swap_tasks_quota": "Unavailable own user systemd runtime; not enforced"
+  },
+  "pending": "No workflow in the declared new-head checkpoint has been dispatched or passed at this preparation seal. Full source/governance/policy/publication-governance and independent installed/public gates remain separate.",
+  "publication": "Own code/control text and scalar/hash projections only; raw remote run/receptor bundles/logs and coverage binary traces remain local. Canonical guide bodies stay in their registered tracked copies, not duplicated here.",
+  "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-ci-checkpoint-20261107-vvrawj84",
+  "retention_owner": "LMMV/dprada",
+  "review_date": "2026-11-20",
+  "full_evidence": {
+    "path": "accumulated_ci_preparation_20261107_full.json.gz",
+    "compressed_sha256": "8e76af4f1ff285357d5f857e8485f1118a542ec5f8e935da052f58200e6c193b",
+    "compressed_bytes": 182489,
+    "uncompressed_sha256": "99401f30a199c357fe79c18df1c132ef8ac397a5d129ffb7ea158d5b4f073eb5",
+    "uncompressed_bytes": 2182866,
+    "own_file_count": 79
+  }
+}

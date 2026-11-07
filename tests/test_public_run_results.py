@@ -10,6 +10,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 
 from pharmacophoremt_results import (
@@ -157,7 +158,7 @@ class TestPublicRunResults(unittest.TestCase):
         outcome["native_result"]["fit_value"] = 0.5
         payload = canonical_json(outcome)
         digest = hashlib.sha256(payload.encode("utf-8")).hexdigest()
-        with sqlite3.connect(self.path) as connection:
+        with closing(sqlite3.connect(self.path)) as connection, connection:
             connection.execute(
                 "UPDATE attempts SET payload=?, digest=? WHERE attempt_id=?",
                 (payload, digest, attempt),
@@ -356,7 +357,7 @@ class TestPublicRunResults(unittest.TestCase):
             with self.subTest(key=key):
                 self.path = self.root / f"corrupt-{index}.sqlite3"
                 self.create_partial()
-                with sqlite3.connect(self.path) as connection:
+                with closing(sqlite3.connect(self.path)) as connection, connection:
                     connection.execute(
                         "UPDATE attempts SET payload=payload || ' ' WHERE work_key=?",
                         (key,),
@@ -389,7 +390,7 @@ class TestPublicRunResults(unittest.TestCase):
         self.assertFalse(self.path.exists())
         with self.create():
             pass
-        with sqlite3.connect(self.path) as connection:
+        with closing(sqlite3.connect(self.path)) as connection, connection:
             connection.execute("PRAGMA user_version=999")
         before = self.directory_bytes()
         with self.assertRaises(ValueError):

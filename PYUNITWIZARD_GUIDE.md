@@ -11,7 +11,7 @@ Metadata
 - Source repository: `pyunitwizard`
 - Source document: `standards/PYUNITWIZARD_GUIDE.md`
 - Source version: Git commit containing this canonical document; consumer copies must record the resolved commit and digest in their synchronization evidence.
-- Last revised: 2026-10-22 (dependency baseline correction; client delivery tracked in `uibcdf/molsyssuite#126`).
+- Last revised: 2026-11-06 (published 0.29.1 baseline; client delivery tracked in `uibcdf/molsyssuite#172`).
 
 ## What is PyUnitWizard
 
@@ -27,8 +27,26 @@ PyUnitWizard is a "Quantities and Units Assistant" designed to provide a unified
 
 PyUnitWizard follows a strict separation between Hard and Soft dependencies:
 
-- **Hard Dependencies**: `numpy`, `pint`, `smonitor>=0.16.0`, `depdigest>=0.11.0` and `argdigest>=0.14.0`, as declared in package metadata. These must be provisioned for normal use.
+- **Hard Dependencies**: `numpy>=1.23.5`, `pint>=0.25`, `smonitor>=0.16.0`, `depdigest>=0.11.0` and `argdigest>=0.14.0`, as declared in package metadata. These must be provisioned for normal use.
 - **Soft Dependencies**: optional unit backends, including `unyt`, `openmm.unit` and `astropy.units`, are managed via `depdigest`. Ackredit attribution is also optional; guide delivery alone does not qualify a newer provider profile.
+
+### Published maintenance baseline: 0.29.1
+
+Public Conda release [0.29.1](https://github.com/uibcdf/pyunitwizard/releases/tag/0.29.1)
+declares NumPy >=1.23.5 (Python 3.11 numerical baseline) and Pint >=0.25
+(CODATA-2022 definitions required by published record vectors). These floors
+are owned by `uibcdf/pyunitwizard#134`; the published 0.29.0 file is unchanged.
+Clients requiring the following Astropy correction must receive PyUnitWizard
+>=0.29.1 from the public `uibcdf` Conda channel.
+
+Release 0.29.1 supports native Astropy thermochemical `cal`, `calorie`, `kcal`
+and `kilocalorie` at construction, parsing and conversion boundaries, including
+`kcal/mol` (4.184 joules per calorie). Applications keep their chosen form and
+parser; clients must not install their own calorie aliases. Conflicting named
+definitions are refused. Native Astropy unit activation is scoped and restored;
+its registry contexts remain process-wide. This correction is owned by
+`uibcdf/pyunitwizard#137` and is delivered in the public 0.29.1 package.
+Receiving this guide alone does not update a client's installed provider.
 
 Baseline support is Python `>=3.11,<3.15` on Linux and macOS arm64. Optional
 provider profiles can have narrower limits; use the provider's maintained

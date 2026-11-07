@@ -10,6 +10,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [accumulated validation checkpoint](accumulated_ci_checkpoint.md) is prepared:
+coverage includes the core and independent results companion, with full source
+selection preserved. Selected56 coverage/library/route cases,24 distribution
+controls and declared dependency/style checks pass. Test-owned SQLite mutation
+connections now close without warnings. All seven registered guide copies match
+observed canonical bytes after four official synchronizations; source/provider
+pins, shared prefixes and the frozen policy caller remain unchanged.
+[Preparation receipt](evidence/accumulated_ci_preparation_20261107_summary.json):
+101 selected local cases; no hosted checkpoint pass is implied.
+
 The [saved-result CLI](saved_result_cli.md) now exports complete JSONL/CSV through
 `--to-jsonl FILE`/`--to-csv FILE`, composing the same public methods. Existing
 ranked inspection and explicit legacy admission remain compatible. All48
@@ -35,10 +45,12 @@ Preceding [API export](saved_result_exports.md), [guided/expert](guided_expert_j
 and [released-support](reader_public_provider_receiving.md) receipts retain their
 original identities. MolSysMT#292 owns attribution-policy clarification.
 
-**Next concrete action:** declare and execute a deliberate exact-head CI checkpoint
-for accumulated classical/public-workflow changes under #9/#23. Inspect actual
-source/dependency/installed gate selection before dispatch, preserve failures
-and exact run/attempt identities, and avoid a full local rerun on this workstation.
+**Next concrete action:** freeze and verify the prepared exact source, then manually
+execute complete CI, frozen policy and publication-governance workflows under
+#9/#23. Record each exact run/attempt; the old scheduled42383495995 targets654586f
+and remains separate. Its governance fails on the already corrected API-test
+placement; six older science cells pass and two remain running at observation.
+No full local retry or package/release operation is launched.
 Broader source operations continue separately; molecular collections remain
 MolSysMT#624-owned. Full changed-pin/installed/public gates remain independent.
 

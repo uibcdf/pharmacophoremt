@@ -1,10 +1,50 @@
 """Complete PR coverage and conditional recovery retain component test selection."""
 
+from configparser import ConfigParser
+from fnmatch import fnmatch
 from pathlib import Path
+from shlex import split
 
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_coverage_measures_the_core_and_saved_results_companion():
+    """The shipped results runtime must not disappear from reported coverage."""
+    workflow = yaml.load(
+        (ROOT / ".github/workflows/CI.yaml").read_text(), Loader=yaml.BaseLoader
+    )
+    step = next(
+        step
+        for step in workflow["jobs"]["test"]["steps"]
+        if step.get("name") == "Run tests"
+    )
+    commands = [
+        line.strip()
+        for line in step["run"].splitlines()
+        if line.strip().startswith("python -m pytest ")
+    ]
+    assert len(commands) == 1
+    sources = {
+        token.removeprefix("--cov=")
+        for token in split(commands[0])
+        if token.startswith("--cov=")
+    }
+    required = {"pharmacophoremt", "pharmacophoremt_results"}
+    assert required <= sources
+    configuration = ConfigParser()
+    configuration.read(ROOT / ".coveragerc")
+    assert required <= set(configuration["run"]["source"].split())
+    assert configuration.getboolean("run", "branch")
+    omitted = configuration["report"]["omit"].split()
+    assert "pharmacophoremt/_private/**" in omitted
+    for name in ("_api.py", "_store.py", "_exports.py"):
+        relative = "pharmacophoremt_results/" + name
+        assert not any(
+            fnmatch(relative, pattern) or fnmatch((ROOT / relative).as_posix(), pattern)
+            for pattern in omitted
+        )
 
 
 def test_contributor_routes_and_complete_supported_matrix():

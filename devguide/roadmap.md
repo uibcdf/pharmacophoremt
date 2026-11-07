@@ -109,7 +109,10 @@ original saved databases retain full evidence/configuration and scalar projectio
 The [CLI exporter](saved_result_cli.md) passes48 library command/reader/export
 controls from the corrected suite location and one exact installed wheel. The
 documented commands preserve original complete/partial/legacy evidence. Next
-validate the accumulated public workflow at a deliberate exact-head checkpoint.
+validate the accumulated public workflow at the
+[declared exact-head checkpoint](accumulated_ci_checkpoint.md). Coverage now
+includes the core and saved-results companion; guide-copy receiving remains
+separate from the unchanged frozen policy caller and actual provider qualification.
 The complete administrative/source gate remains open after the recorded local
 resource/guard failures; its corrected selected controls do not clear it. The
 public-support

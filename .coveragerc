@@ -2,7 +2,9 @@
 
 [run]
 branch = True
-source = pharmacophoremt
+source =
+    pharmacophoremt
+    pharmacophoremt_results
 
 [report]
 show_missing = True
