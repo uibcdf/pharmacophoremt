@@ -123,6 +123,10 @@ continue identifying their original bytes, not this maintained revision.
 
 ## Bounded PubChem3D evidence — 2026-11-07 UTC
 
+The later [quantity-report correction](pubchem3d_receiving_pilot.md#quantity-report-correction-2026-11-07-utc)
+verifies sealed coordinate records on the same three originals. It preserves
+the earlier evidence and adds no new chemical sample or connector qualification.
+
 The [three-record case](pubchem3d_receiving_pilot.md) now measures six successful
 receiving requests, public-provider preparation/native snapshot readback and a
 declared pharmacophore screen with recovery. The original precision-keyword

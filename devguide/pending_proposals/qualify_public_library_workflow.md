@@ -86,6 +86,13 @@ public-codec attempt. This is finite-file case evidence, not a managed public
 connector or biological validation. The provider-owned reusable collection need is
 handed to [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624).
 
+The dated [quantity-report correction](../pubchem3d_receiving_pilot.md#quantity-report-correction-2026-11-07-utc)
+adds sealed coordinate records, five non-default-policy guards and a fresh run
+of the same originals. Nine report inventories and the unchanged full native
+results pass a separate read-only verification; the first post-run verifier
+failure remains retained. This does not enlarge the chemical sample or qualify
+the pending general collection boundary.
+
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening
 materializes its full input iterable. Prepared-native evaluators do not constitute

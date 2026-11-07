@@ -163,8 +163,11 @@ def _plain(value):
     import numpy as np
     import pandas as pd
 
+    from pharmacophoremt import pyunitwizard as puw
     from pharmacophoremt._private.molsysmt import detached
 
+    if puw.is_quantity(value):
+        return detached(value)
     if is_dataclass(value):
         return _plain(asdict(value))
     if value is pd.NA or value is pd.NaT:
@@ -237,7 +240,7 @@ def _inventory(system):
     return {
         "atoms": _plain(atoms),
         "bonds": _plain(bonds),
-        "coordinates_nm": coordinates.copy(),
+        "coordinates": puw.quantity(coordinates.copy(), "nm"),
         "n_atoms": n_atoms,
         "n_structures": n_structures,
         "n_chemical_states": int(msm.get(system, n_chemical_states=True)),
@@ -247,6 +250,8 @@ def _inventory(system):
 
 def _same_inventory(first, second, *, aromaticity_may_change=False):
     import numpy as np
+
+    from pharmacophoremt import pyunitwizard as puw
 
     for key in ("n_atoms", "n_structures", "n_chemical_states", "n_hydrogens"):
         if first[key] != second[key]:
@@ -261,10 +266,10 @@ def _same_inventory(first, second, *, aromaticity_may_change=False):
             right.pop(aromatic, None)
         if left != right:
             raise ValueError(f"prepared {domain} assignments or source mapping changed")
-    if first["coordinates_nm"].shape != second[
-        "coordinates_nm"
-    ].shape or not np.allclose(
-        first["coordinates_nm"], second["coordinates_nm"], rtol=0, atol=1e-12
+    left_coordinates = np.asarray(puw.get_value(first["coordinates"], to_unit="nm"))
+    right_coordinates = np.asarray(puw.get_value(second["coordinates"], to_unit="nm"))
+    if left_coordinates.shape != right_coordinates.shape or not np.allclose(
+        left_coordinates, right_coordinates, rtol=0, atol=1e-12
     ):
         raise ValueError("prepared coordinates differ by more than 1e-12 nm")
 

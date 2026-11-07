@@ -1,0 +1,45 @@
+{
+  "schema": "pharmacophoremt.pubchem3d-pilot-quantity-metadata-amendment@1",
+  "recorded_at_utc": "2026-11-07T02:10:02.239149+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "original_plan": {
+    "path": "pubchem3d_pilot_plan_20261107.json",
+    "sha256": "c3d5cf966de3538c9cd9c2864b6ddba96e2c60d0fe2214c926794bab5054b9df",
+    "bytes": 6917
+  },
+  "previous_successful_receipt": {
+    "path": "pubchem3d_pilot_20261107_summary.json",
+    "sha256": "26bbe73fec027547af2b4192d1d115319cf050b22e12e4eaa1a3ce72228be282",
+    "bytes": 22759
+  },
+  "prior_run": "attempt2",
+  "new_run": "attempt3",
+  "defect": "Private preparation-report inventories serialized coordinates as bare arrays under coordinates_nm. Their unit was implied only by a field name, violating the required quantity record boundary.",
+  "calculation_scope": "Previous inventory comparisons explicitly converted coordinates to nm; native H5MSM and saved PHMT query retained their units. This correction concerns preparation-report representation and does not invalidate the recorded geometric scores.",
+  "change": "Keep coordinates as a PyUnitWizard quantity in memory; detach quantities before generic array conversion using the existing sealed QuantityRecord contract; explicitly convert both inventory operands to nm when comparing. No local unit decoder.",
+  "source_helper": {
+    "path": "phmt_test_support/pubchem3d_receiving_pilot.py",
+    "sha256": "7edf3d837b0ce98c11f18b24dfda2093d94ec2ec486e884038161ee8b73310c9",
+    "bytes": 28175
+  },
+  "unchanged": [
+    "All six original HTTP requests and original source hashes; no new acquisition",
+    "Three fixed CIDs in original order and native conformer selection",
+    "Public MolSysMT import/aromaticity/readiness and fixed-float64 snapshot codec",
+    "Supplied state, hydrogens, coordinates and no chemistry or conformer generation",
+    "Saved caffeine acceptor query, radius, rigid search budget and full native-composition/recovery checks",
+    "Original plan tolerances, case limits and existing publication restrictions"
+  ],
+  "prospective_checks": [
+    "Run the same three original records into fresh attempt3 output",
+    "Require every emitted preparation coordinate inventory to be a verified PyUnitWizard record readable explicitly as nm and length",
+    "Compare decoded report coordinates to corresponding attempt2 numeric inventories at rtol0, atol1e-12 nm; no bare-coordinate legacy reader added to product",
+    "Require complete preparation/native outcome counts, same geometric outcomes, reference self and proper translation controls and recovery/native composition equality",
+    "Exercise regression guards under a non-default unit policy and preserve all original attempts and published artifacts"
+  ],
+  "claim_limit": "Another execution of the same three supplied conformers; no added independent-compound denominator, biological validation, public connector or benchmark."
+}

@@ -15,6 +15,17 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## PubChem3D quantity-report correction — 2026-11-07
+
+The [separate receipt](../evidence/pubchem3d_pilot_quantity_20261107_summary.json)
+owns five focused scientific guards, the affected administrative checks and a
+fresh run of the same three source conformers. All nine report quantities and
+the unchanged full native outcomes pass a supplemental read-only verification;
+the first post-run verifier failure remains retained. This focused source
+change follows the authorized `[skip ci]` route, with no workflow dispatch or
+full source/installed/platform qualification. Existing recovery routes and the
+previous broad administrative OOM remain independently pending under this issue.
+
 ## Current source receiving — 2026-11-06
 
 [Receiving record](../source_suite_receiving_20261106.md) and [original receipt](../evidence/source_suite_receiving_20261106_summary.json) preserve #102's exact two-test correction, 111 passing focused controls, old-head full hosted 2,071 pass/two failures and incomplete local attempts (task hook; later 1 GiB cap). Fix-head CI 42174357921 has passing reporting governance, four executing Linux and four queued macOS scientific cells at the recorded observation; corrected complete full coverage remains pending. No cancelled, queued, omitted or local-capacity-limited execution clears missing supported/full-installed/public gates. Scientific code, source pins and existing recovery routes remain unchanged.

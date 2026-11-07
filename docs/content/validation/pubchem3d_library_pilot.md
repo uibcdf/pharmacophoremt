@@ -70,3 +70,18 @@ identity after relevant scientific/provider/input changes; preserve old outputs
 and source-byte requirements. The resource-owning collection boundary is tracked
 in [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624), with remaining
 public workflow/index work in #108. The separate biological studies remain open.
+
+## Report correction, 2026-11-07 UTC
+
+A later review found that private preparation reports implied coordinate units
+through a field name. The calculation and native snapshot/query units were
+explicit. The helper now writes sealed PyUnitWizard quantity records; five
+focused tests exercise non-default session policies and geometry preservation.
+
+The [separate correction receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/pubchem3d_pilot_quantity_20261107_summary.json)
+retains a fresh execution of the same three originals with identical full native
+results and nine verified length/nm inventories. Its first post-run verifier
+failed on an unrelated metadata key; a separate read-only verification checks
+the exact declared inventories successfully. Both statuses and the original
+artifacts remain retained. No additional source request or biological evidence
+is introduced, and the earlier published archive is preserved.

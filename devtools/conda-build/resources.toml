@@ -534,4 +534,4 @@ sha256 = "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6"
 [[installed_tests.support.files]]
 source = "phmt_test_support/pubchem3d_receiving_pilot.py"
 target = "phmt_test_support/pubchem3d_receiving_pilot.py"
-sha256 = "0bd561ae2ea83266fa8620ab36bf1d056d979669bba9e2763ad829606a67ba7c"
+sha256 = "7edf3d837b0ce98c11f18b24dfda2093d94ec2ec486e884038161ee8b73310c9"

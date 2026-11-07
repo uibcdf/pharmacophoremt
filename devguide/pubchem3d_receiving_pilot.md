@@ -132,3 +132,37 @@ The remaining reusable collection/lifetime/source-map/snapshot contract is
 requested in [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624),
 separately from #215's SDF properties, #219 conformer generation and #447 identity/
 scaffold analysis. This successful finite-file case does not resolve those tools.
+
+## Quantity-report correction, 2026-11-07 UTC
+
+Final review found that the original private preparation JSON inventories saved
+bare coordinate arrays under `coordinates_nm`. Calculations explicitly used nm;
+the native H5MSM and query records retained units. The defect concerns the report
+boundary: a field name alone cannot carry a quantity's unit. The historical
+receipt/archive and both original attempts remain unchanged.
+
+The [separate amendment](evidence/pubchem3d_pilot_quantity_metadata_amendment_20261107.json)
+was [declared before execution](https://github.com/uibcdf/pharmacophoremt/issues/108#issuecomment-6700834249).
+The helper now retains a PyUnitWizard quantity and uses the existing sealed
+QuantityRecord representation before generic array conversion. Comparisons
+explicitly convert both operands to nm. Five focused
+[guards](../tests/test_pubchem3d_pilot_quantities.py) verify JSON roundtrip and
+detachment under non-default session policies, compatible unit conversion,
+absolute tolerance and refusal of changed geometry/scale/shape.
+
+Fresh `attempt3` uses the same three original files without new HTTP requests.
+All preparation and native screening completed, but its surrounding controller
+exited 1 during a subsequent overbroad report walk: it mistook another metadata
+member named `coordinates` for an inventory. That failed controller and original
+log remain retained. A separately
+[declared read-only postcheck](evidence/pubchem3d_pilot_quantity_postcheck_plan_20261107.json)
+checks exactly the three declared inventory paths per record; it does not repeat
+the molecular calculation or rewrite its outputs.
+
+The [correction receipt](evidence/pubchem3d_pilot_quantity_20261107_summary.json)
+records nine verified quantity inventories matching the previous observations
+within 1e-12 nm, unchanged complete native results, the same self/translation/
+recovery/composition checks and unchanged originals. This is another execution
+of the same three conformers, not a larger chemical or biological sample. The
+original controller failure and the successful supplemental verification have
+separate statuses. The full source/installed/public gates remain under #9/#23.
