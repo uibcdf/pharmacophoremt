@@ -32,6 +32,8 @@ inputs. Each recipe explains the corresponding class or public tool contract.
   resolved molecule results while keeping ties and failed calculations visible.
 - Preserve the [scientific attribution](../cookbook/attribution.md) from the methods
   and data actually used, including when you save and reload a model.
+- Exchange prepared [pharmacophore fields with RDKit](rdkit_interoperability.md)
+  using explicit radii and a report of omitted fields.
 
 Lengths and angles have explicit units. Molecular preparation and transformations
 are MolSysMT operations; the recipes identify the inputs the consumer must supply.
@@ -41,6 +43,7 @@ Geometric coverage alone does not establish affinity or activity discrimination.
 :hidden:
 
 constraint_semantics
+rdkit_interoperability
 ```
 
 ## Find examples and reference material

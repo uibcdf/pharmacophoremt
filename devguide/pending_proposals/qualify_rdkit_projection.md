@@ -1,13 +1,13 @@
 ---
 summary: Qualify RDKit pharmacophore projection and explicit constraint translation.
 issue: uibcdf/pharmacophoremt#140
-status: open
+status: partial
 opened: 2026-11-07
 closed:
-verification: inspected
+verification: reproduced
 area: [formats, interoperability, science]
-guard:
-normative: devguide/persistence_fidelity.md
+guard: tests/test_rdkit_projection.py::test_explicit_round_trip_preserves_family_center_and_individual_radius
+normative: devguide/rdkit_projection.md
 blocked_by: []
 supersedes: []
 ---
@@ -22,7 +22,23 @@ creates a new1angstrom radius; existing controls qualify two centers/families,
 not a native constraint round trip. These inspected limits require a public
 field/operation contract rather than an implicit equivalence claim.
 
-## Next implementation direction — prospective, not implemented
+## Source implementation — 2026-11-07
+
+The [owning contract](../rdkit_projection.md) and
+[public recipe](../../docs/content/user/rdkit_interoperability.md) now describe
+the implemented default-compatible point target, opt-in explicit spheres,
+radius=None reader, detached field/loss/default reports, complete preflight and
+warn/raise/ignore policy. Shared native quantity admission retains positive Sphere
+radii and adds explicit nonnegative reader admission for Points. PHMT-W103/E110,
+definition-owned ArgDigest and narrow DepDigest retain the diagnostic boundaries.
+
+The [source receiving](../evidence/rdkit_projection_source_20261107_summary.json)
+passes271 distinct selected cases, all ten analytical driver cases and the exact
+public recipe. This is source qualification, not installed/public delivery;
+same-artifact outside-checkout receiving is the next concrete gate. No arbitrary
+pair-constraint inverse, general connector or scientific-equivalence claim follows.
+
+## Original prospective direction — preserved
 
 Preserve the existing default RDKit target type and fixed1angstrom reader
 assumption. Qualify an opt-in explicit-sphere representation that retains
@@ -51,5 +67,5 @@ sites or infer original radii from arbitrary pair intervals.
 Acceptance includes the matrix, public examples/effective bounds, actual field/
 unit/degeneracy/boundary/round-trip controls and the appropriate source/installed
 provider gates. No production adapter change, complete tool equivalence or
-release is established by the current analytical comparison. PHMT owns these
+release was established by the original analytical comparison. PHMT owns these
 pharmacophore semantics; molecular perception/format/geometry remains provider-owned.

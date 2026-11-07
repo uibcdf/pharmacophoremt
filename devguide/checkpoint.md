@@ -10,6 +10,18 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The latest source increment implements the [public RDKit projection contract](rdkit_projection.md):
+legacy point targets and fixed-radius reading remain available; explicit spheres,
+radius=None reading, detached field/loss reports and warn/strict/ignore choices
+are now public. Full preflight rejects unsupported alternatives, invalid/overflowed
+geometry and invented radius inference before target construction. Its
+[source receipt](evidence/rdkit_projection_source_20261107_summary.json) passes271
+selected local cases, the existing ten-case analytical driver and the exact
+[public recipe](../docs/content/user/rdkit_interoperability.md). Same-artifact
+outside-checkout installed receiving remains the immediate next gate; #140 stays
+partial. No new provider/prefix/native modification, public release, general
+library connector or scientific-equivalence claim follows.
+
 The accumulated frozen-source gates are complete: [terminal receiving](evidence/accumulated_ci_terminal_20261107.json)
 verifies all eight Linux/macOS arm64 Python3.11–3.14 cells with **2259 passed tests
 per cell**, native architecture/dependency checks and the same0.4.0+142.g4616c78
@@ -73,13 +85,14 @@ original governance failure remain intact. Full administrative receiving for
 frozen4616c78 now passes on the hosted route; the earlier local memory/guard
 failures are preserved and are not rewritten as successful local execution.
 
-**Next concrete action:** implement and receive the public RDKit projection field/loss contract
-under#140, preserving legacy target types and declared assumptions.
-Use a later deliberate current-head checkpoint/recovery to receive
-that runtime together with the coverage correction#141; do not repeat the
-completed frozen run or launch a full matrix for each small commit. The newer
-progress runtime, case/reporting files and coverage correction retain exact-head
-debt under#9. MolSysMT#624 collections, installed/public delivery, biological,
+**Next concrete action:** build one owned wheel for the frozen RDKit projection
+source, then receive the same214 library bodies and public recipe outside the
+checkout. Keep actual code/provider/native hashes and source/installed identities;
+do not refresh shared prefixes or rewrite historical prepared-run bindings.
+Use a later deliberate current-head checkpoint/recovery for the accumulated
+runtime and coverage correction#141, preserving exact-head debt under#9. Do not
+repeat completed frozen CI or launch a full matrix for each small commit.
+MolSysMT#624 collections, installed/public dependency/platform delivery, biology,
 comparison/performance and full milestone acceptance keep their separate gates.
 
 ## Active public integration
@@ -124,7 +137,7 @@ earlier route.
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
-| #128 tool registry | [One executed Pharm3D analytical comparison and nine documentary records](pharmacophore_tools_registry.md) | Qualify public projection#140; declare other comparisons and retain separate benchmark/biological scope |
+| #128 tool registry | [One executed Pharm3D analytical comparison and nine documentary records](pharmacophore_tools_registry.md) | Receive the source-qualified projection#140 from the same owned installed artifact; declare other comparisons and retain separate benchmark/biological scope |
 | #9/#10/#23/#95 | Full supported source, dependency, installed/public/platform and release gates remain separate | Exact run/attempt/artifact evidence at deliberate checkpoints; no full-suite retry on this shared machine |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |

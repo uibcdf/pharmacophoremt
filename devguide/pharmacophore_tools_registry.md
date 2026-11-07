@@ -96,6 +96,12 @@ comparison or acceptance of a production engine. The other nine initial records
 retain documentary evidence only. [#140](https://github.com/uibcdf/pharmacophoremt/issues/140)
 owns the discovered public projection/constraint-qualification task.
 
+The [public RDKit projection](rdkit_projection.md) now has source receiving for
+explicit sphere/radius exchange and detached field/loss/default reports. It
+retains complete preflight and the default point target/reader assumptions.
+Same-artifact installed receiving is next; this adds no broader tool-equivalence,
+feature-perception or benchmark claim.
+
 The canonical [RDKit record update](https://github.com/uibcdf/pharmacophoremt/discussions/135#discussioncomment-19463143)
 is published with `Comparison recorded` and executed analytical evidence.
 Its exact body/identity is independently read back; the original documentary

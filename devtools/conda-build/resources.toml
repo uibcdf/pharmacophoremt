@@ -16,6 +16,7 @@ required_paths = [
   "site-packages/pharmacophoremt/_private/arg_digestion/argument/_contracts.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/native_geometry.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/native_io.py",
+  "site-packages/pharmacophoremt/_private/arg_digestion/rdkit_io.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/native_screening.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/prepared_screening.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/receptor_generation.py",

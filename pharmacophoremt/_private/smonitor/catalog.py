@@ -29,6 +29,10 @@ CATALOG = {
         },
     },
     "warnings": {
+        "ProjectionLossWarning": {
+            "code": "PHMT-W103",
+            "message": "Pharmacophore projection {operation} omits fields {fields}. Request return_report=True for field and assumption details.",
+        },
         "AckreditTrackingWarning": {
             "code": "PHMT-W102",
             "message": "Optional attribution failed at {operation}: {reason}. The scientific result is preserved.",
@@ -39,6 +43,10 @@ CATALOG = {
         },
     },
     "exceptions": {
+        "ProjectionLossError": {
+            "code": "PHMT-E110",
+            "message": "Strict pharmacophore projection {operation} refuses omitted fields {fields}.",
+        },
         "InvalidInteractionSiteError": {
             "code": "PHMT-E101",
             "message": "Invalid interaction site configuration: {reason}.",

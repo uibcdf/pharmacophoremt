@@ -138,6 +138,14 @@ requirements remain separate.
 
 ## Current priority: classical consolidation
 
+The [RDKit projection increment](rdkit_projection.md) now provides explicit
+sphere/radius exchange and detached field/loss/default reports with strict or
+warning policies. It preserves the default target/reader assumptions and passes271
+selected source controls, the existing analytical driver and the exact public
+recipe. Same-artifact outside-checkout receiving is next; #140 remains partial.
+The source implementation does not qualify broader library connectors, installed/
+public platforms or complete scientific/performance equivalence.
+
 The first executed [Pharm3D bounds comparison](rdkit_bounds_comparison.md)
 receives ten analytical cases/186 exhaustive assignments and106 selected source
 cases. It supports explicit pair/fit tolerance, boundary and post-fit validation

@@ -73,3 +73,9 @@ class ArgumentTypeError(PharmacophoreMTException, TypeError):
     """PHMT-owned argument type refusal retaining TypeError compatibility."""
 
     catalog_key = "ArgumentTypeError"
+
+
+class ProjectionLossError(PharmacophoreMTException, ValueError):
+    """An explicit strict projection cannot preserve all declared input fields."""
+
+    catalog_key = "ProjectionLossError"

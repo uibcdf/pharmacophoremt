@@ -101,3 +101,11 @@ compatibility, data admission and original parser/provider/filesystem errors.
 #6 dependency declarations align nglview and the existing direct PyYAML codec.
 No native schema, scientific algorithm, molecular/SDF implementation or installed/
 public qualification change; broader ArgDigest admission remains separate.
+
+## RDKit projection source receiving — 2026-11-07
+
+The [owning RDKit contract](rdkit_projection.md) now qualifies default point
+projection, explicit sphere/radius exchange and detached field/loss/default
+reports in source. Native formats retain complete native semantics; RDKit field
+preservation does not establish matching equivalence. #140 remains partial
+pending same-artifact installed receiving, separate from public/full platform gates.

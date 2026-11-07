@@ -8,7 +8,7 @@ import pyunitwizard as puw
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
 
-def _length(obj, argument, vector=False):
+def _length(obj, argument, vector=False, *, nonnegative=False):
     try:
         quantity = puw.ensure_quantity(obj, dimensionality={"[L]": 1})
         values = np.asarray(puw.get_value(quantity, to_unit="nm"), dtype=float)
@@ -21,8 +21,9 @@ def _length(obj, argument, vector=False):
         raise ArgumentError(
             argument=argument, reason=f"expected finite values with shape {shape}"
         )
-    if not vector and values <= 0:
-        raise ArgumentError(argument=argument, reason="expected a positive length")
+    if not vector and (values < 0 if nonnegative else values <= 0):
+        sign = "nonnegative" if nonnegative else "positive"
+        raise ArgumentError(argument=argument, reason=f"expected a {sign} length")
     return quantity
 
 
@@ -44,6 +45,11 @@ def digest_end(obj):
 
 def digest_radius(obj):
     return _length(obj, "radius")
+
+
+def digest_nonnegative_radius(obj):
+    """Projection-reader zero represents Point; native Sphere stays positive."""
+    return _length(obj, "radius", nonnegative=True)
 
 
 def digest_excluded_volume_radius(obj):
