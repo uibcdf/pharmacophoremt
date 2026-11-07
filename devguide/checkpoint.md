@@ -10,6 +10,15 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [guided/expert journey](guided_expert_journey_receiving.md) now has actual
+equal settings, full native evidence, ranks and export bytes on the same retained
+inputs. Its cookbook query preflight now precedes manifest creation: missing-query
+refusal consumes no metadata and leaves a valid same-destination retry. Revised
+source and the same owned installed wheel pass. The original failed harness and
+provider-attribution observation remain separate; MolSysMT#292 owns clarification.
+This is controlled workflow receiving, not a human usability study or full library
+qualification. [Receipt](evidence/guided_expert_journey_20261107_summary.json).
+
 The [released-support receipt](evidence/reader_public_providers_20261107_summary.json)
 retains the original attempts, executed controls and actual publication boundary.
 The earlier [pause checkpoint](evidence/reader_public_providers_20261107_checkpoint.json)
@@ -41,9 +50,11 @@ The same three conformers keep mappings/scores0/1/1; all18 original files remain
 unchanged. This is Linux/Python3.14 with recorded source providers, not full
 supported/public-platform qualification.
 
-**Next concrete action:** execute the documented guided and expert public journeys
-side by side on the same retained prepared inputs, identify a concrete usability
-gap and deliver its public solution with equivalent effective settings/results.
+**Next concrete action:** deliver public complete-view JSONL/scalar-CSV export,
+reusing the saved reader and existing source/status/score meanings so routine
+users can export without reproducing the field projection. Preserve expert
+iteration, zero negatives, failures, original producer evidence and explicit data
+authority; qualify source and independent installed/public reader paths separately.
 Broader source operations continue separately; molecular collections remain
 MolSysMT#624-owned. Full changed-pin/installed/public gates remain independent.
 
@@ -82,7 +93,7 @@ not whole-environment qualification. [Onboarding](onboarding.md) records the rou
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/recoverable runs received; independent reader qualified against exact released support payloads in bounded cells | Guided/expert usability, broader provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity and query-error recovery measured | Public saved-result export, broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

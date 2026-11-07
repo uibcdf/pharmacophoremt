@@ -1,0 +1,236 @@
+{
+  "schema": "pharmacophoremt.guided-expert-journey-plan@1",
+  "recorded_at_utc": "2026-11-07T06:46:03.292936+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "6e1436f0db7978fdc02ec8de4b691a7f09e4c696",
+  "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x",
+  "fixed_files": {
+    "controls/run_journey.py": {
+      "sha256": "aaebc30b139930c4986d345a0a17e486bfeb0a6943b2fcbf1a89151047c9392f",
+      "bytes": 12665
+    },
+    "inputs.json": {
+      "sha256": "dbe2b1692196713b0dbac28b849a5af56f794461b996cab44508247908628742",
+      "bytes": 7414
+    },
+    "recipe_before.md": {
+      "sha256": "2b183defb854bf165eb51f5ef8708e5926e19b9b95d9c60c29ccc920c3a7d869",
+      "bytes": 7535
+    }
+  },
+  "question": "Do guided recipe and expert public composition resolve identical settings/native outcomes through interruption/restart, and does query admission create a recoverable user journey?",
+  "inputs": {
+    "records": [
+      {
+        "cid": 1983,
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+        "work_key": "public:cid:1983:state:0:frame:0",
+        "source_key": "PubChemCID:1983",
+        "occurrence_key": "original:0",
+        "identity": {
+          "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+          "bytes": 132344
+        }
+      },
+      {
+        "cid": 2244,
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+        "work_key": "public:cid:2244:state:0:frame:0",
+        "source_key": "PubChemCID:2244",
+        "occurrence_key": "original:1",
+        "identity": {
+          "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+          "bytes": 132328
+        }
+      },
+      {
+        "cid": 2519,
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+        "work_key": "public:cid:2519:state:0:frame:0",
+        "source_key": "PubChemCID:2519",
+        "occurrence_key": "original:2",
+        "identity": {
+          "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+          "bytes": 132328
+        }
+      }
+    ],
+    "query": {
+      "original_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/query.json",
+      "identity": {
+        "sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+        "bytes": 21959
+      },
+      "source": "Original caffeine three-essential-acceptor query from declared pilot; no source acquisition"
+    },
+    "compatibility": {
+      "prepared_snapshot": {
+        "artifacts": [
+          {
+            "work_key": "public:cid:1983:state:0:frame:0",
+            "source_key": "PubChemCID:1983",
+            "occurrence_key": "original:0",
+            "identity": {
+              "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+              "bytes": 132344
+            }
+          },
+          {
+            "work_key": "public:cid:2244:state:0:frame:0",
+            "source_key": "PubChemCID:2244",
+            "occurrence_key": "original:1",
+            "identity": {
+              "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+              "bytes": 132328
+            }
+          },
+          {
+            "work_key": "public:cid:2519:state:0:frame:0",
+            "source_key": "PubChemCID:2519",
+            "occurrence_key": "original:2",
+            "identity": {
+              "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+              "bytes": 132328
+            }
+          }
+        ]
+      },
+      "preparation": {
+        "declaration": "Original qualified PubChem3D H5 artifacts; no preparation by this task",
+        "chemical_state": 0,
+        "structure_index": 0
+      },
+      "features": {
+        "families": [
+          "hb acceptor"
+        ],
+        "selection": "all",
+        "recognition": "native evaluator",
+        "query_sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d"
+      },
+      "index": null,
+      "grouping": {
+        "declaration": "Preserve work/source/occurrence; no chemical grouping or independent-compound claim"
+      },
+      "numerical": {
+        "receiving_dtype": "float64",
+        "quantities": "Native explicit unit-bearing records",
+        "method": "seeded_hit",
+        "max_trials": 10000
+      }
+    },
+    "original_directory": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/screening.sqlite3",
+      "identity": {
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3",
+        "bytes": 118784
+      },
+      "directory": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3",
+      "directory_inventory": {
+        "cid-1983/import-report.json": {
+          "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+          "bytes": 986
+        },
+        "cid-1983/preparation.json": {
+          "sha256": "eef07bad73f5f14a76c94e9bd48b510825e0fbd9d6ae4950ff21a1cb1b23141e",
+          "bytes": 97435
+        },
+        "cid-1983/prepared.h5msm": {
+          "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+          "bytes": 132344
+        },
+        "cid-2244/import-report.json": {
+          "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+          "bytes": 986
+        },
+        "cid-2244/preparation.json": {
+          "sha256": "715a1088a50ee8596411ef29382e52c85e74042eddcf6dc195634117f7c549cc",
+          "bytes": 100790
+        },
+        "cid-2244/prepared.h5msm": {
+          "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+          "bytes": 132328
+        },
+        "cid-2519/import-report.json": {
+          "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+          "bytes": 986
+        },
+        "cid-2519/preparation.json": {
+          "sha256": "80638db51ce69fd1ceb301e3de488b2a12afddaac480e1f03e0f9c9f3159955a",
+          "bytes": 114186
+        },
+        "cid-2519/prepared.h5msm": {
+          "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+          "bytes": 132328
+        },
+        "composed-outcomes.json": {
+          "sha256": "f404c23c031922259b5956075a3642e02282f5eb2e210850514b3b4a5e4d0700",
+          "bytes": 91393
+        },
+        "native-outcomes.json": {
+          "sha256": "369f3f7cf0b1868d7495636e2eb5a7b8de79399cbbd703fa42c9c9e288832336",
+          "bytes": 91393
+        },
+        "query.json": {
+          "sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+          "bytes": 21959
+        },
+        "result.json": {
+          "sha256": "562d3a52f622935cb4957bd5af7a5a46fb94cb469e4999bd2e02bb97a352f652",
+          "bytes": 10781
+        },
+        "screening.sqlite3": {
+          "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3",
+          "bytes": 118784
+        },
+        "snapshot-manifest.json": {
+          "sha256": "f1cbd7a82b346f9a5708887152ae8379991e265544a00336b1457226abd565ff",
+          "bytes": 2797
+        },
+        "stages.jsonl": {
+          "sha256": "9173cc7d96f37a999498d404440fcc4193d8eb3107b503ac20070a24ab939985",
+          "bytes": 1240
+        },
+        "translation-control.json": {
+          "sha256": "86007b013a60a49952dd402f910d168642522f88d43064ee99499b171684b742",
+          "bytes": 29969
+        },
+        "work.jsonl": {
+          "sha256": "860509cf143759b1472c5b4859126a9d98fc6aa213fcba09d64aa68e51c42e31",
+          "bytes": 399
+        }
+      },
+      "snapshots_manifest": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/snapshot-manifest.json",
+        "identity": {
+          "sha256": "f1cbd7a82b346f9a5708887152ae8379991e265544a00336b1457226abd565ff",
+          "bytes": 2797
+        }
+      }
+    },
+    "parent_source": "6e1436f0db7978fdc02ec8de4b691a7f09e4c696",
+    "baseline_recipe": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/recipe_before.md",
+      "sha256": "2b183defb854bf165eb51f5ef8708e5926e19b9b95d9c60c29ccc920c3a7d869"
+    },
+    "created_at_utc": "2026-11-07T06:43:59.953077+00:00"
+  },
+  "routes": [
+    "Exact current public cookbook functions",
+    "Public ScreeningRunStore + resume_prepared_run composition"
+  ],
+  "expected": [
+    "Equal full plan contexts/query bytes, full native rows, observed ranks and JSONL/CSV bytes; run IDs remain distinct journal identities.",
+    "Same original three prepared artifacts/caffeine query; first validzero confirmation, two new onresume, scores0/1/1 and original keys; no molecular acquisition/preparation or altered thresholds.",
+    "Baseline missing-query guided call is hypothesized to publish a workmanifest and thenblock validretry with FileExistsError; expert preflight shouldconsume no metadata or create artifacts. Preserve measuredfailure beforefix.",
+    "If confirmed, move existing public plan admission before guided manifest creation; verify no manifest/run/metadata consumption on invalidquery and validretry succeeds. Change no scientific runtime/API/schema.",
+    "Retain authentic closed partial DB copies for this new case; earlier missing historical partial DB remains missing.",
+    "Source checks use qualified current provider/native origins under CPU19/100%,one thread,nice19,idleIO,512MiB,noSwap,tasks32, serial.",
+    "No participant usability, speedup, general-library, biological, full installed/public/platform or release claim."
+  ],
+  "publication": "Own controls/code/effective scalar/hash evidence only; full native/query/DB/attribution bodies staylocal."
+}

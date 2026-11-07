@@ -1,0 +1,407 @@
+{
+  "schema": "pharmacophoremt.guided-expert-journey-summary@1",
+  "recorded_at_utc": "2026-11-07T07:00:57.714809+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "source_parent": "6e1436f0db7978fdc02ec8de4b691a7f09e4c696",
+  "scope": "Controlled public guided/expert equivalence and cookbook query-admission recovery; same original3 artifacts/query and unchanged native/runtime. No human usability study, general collection, biological, scale or full supported artifact/platform gate.",
+  "phases": {
+    "baseline-continued": {
+      "phase": "baseline-continued",
+      "revised": false,
+      "recipe": {
+        "path": "build/phmt-guided-expert-20261107-ipd_7x6x/recipe_before.md",
+        "sha256": "2b183defb854bf165eb51f5ef8708e5926e19b9b95d9c60c29ccc920c3a7d869",
+        "bytes": 7535
+      },
+      "negative": {
+        "manifest_created": true,
+        "run_created": false,
+        "metadata_iterations": 1,
+        "metadata_records_pulled": 3,
+        "valid_retry_blocked_by_leftover_manifest": true
+      },
+      "guided_expert_effective_context_equal": true,
+      "full_native_outcomes_equal": true,
+      "exports_byte_equal": true,
+      "scores": [
+        0,
+        1,
+        1
+      ],
+      "statuses": [
+        "not_matched",
+        "matched",
+        "matched"
+      ],
+      "newly_confirmed_after_resume": 2,
+      "native_outcome_sha256": [
+        "c0b79c4b4705d939271ecc4306fd45fb1547fe1d906148dea3932ecd56ba7257",
+        "62e0f7520ddde1154b42ec6ed5c117ec077af1b2af9b0deb47af3946ba573c53",
+        "216aee97c675a8f55081b0bbca30d76cbeb470d748e0c8b12a6db46bbef11308"
+      ],
+      "effective_execution": {
+        "constructor_options": {
+          "direction_tolerance": "30 degrees",
+          "max_trials": 10000,
+          "min_fit_value": 0.0,
+          "point_tolerance": "0.10 nm",
+          "search_method": "seeded_hit"
+        },
+        "evaluation_options": {
+          "chemical_state": 0,
+          "selection": "all",
+          "structure_index": 0
+        },
+        "on_error": "record",
+        "score_method": "seeded_hit",
+        "screening_method": "rigid"
+      },
+      "partial_artifact_retained": true,
+      "original_inputs_native_and_ledger_unchanged": true,
+      "runtime_python_sources_unchanged": true,
+      "source_root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "origins": {
+        "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "pharmacophoremt_results": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/__init__.py",
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py"
+      },
+      "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "versions": {
+        "pharmacophoremt": "0.4.0+120.g0925d97",
+        "molsysmt": "0.23.0+513.g9e1f1b1ad",
+        "argdigest": "0.17.1+3.g0712641",
+        "smonitor": "0.22.1+1.gc1b6ce2",
+        "depdigest": "0.15.2+2.g032d345",
+        "rdkit": "2026.9.2",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "pyunitwizard": "0.29.1+6.gf82b618"
+      },
+      "native": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "limits": {
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "cpu.max": "100000 100000"
+      },
+      "peak_cgroup_bytes": 231198720,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "attribution": "PHMT capture remains disabled with no new native attribution field. MolSysMT recognition retains its own bibliography/provider behavior; no global opt-out is assumed.",
+      "ackredit_imported_by_scientific_provider": true,
+      "reused_completed_guided_run": "build/phmt-guided-expert-20261107-ipd_7x6x/baseline/guided",
+      "claim": "Controlled public workflow equivalence/error recovery; no human usability study, general collection, scale or biological qualification."
+    },
+    "revised-source": {
+      "phase": "revised-source",
+      "revised": true,
+      "recipe": {
+        "path": "build/phmt-guided-expert-20261107-ipd_7x6x/recipe_after.md",
+        "sha256": "798982f8f5520499ebdfea572045f8129ce5d9bc9a8de80410b14cffc1917e66",
+        "bytes": 8278
+      },
+      "negative": {
+        "manifest_created": false,
+        "run_created": false,
+        "metadata_iterations": 0,
+        "metadata_records_pulled": 0
+      },
+      "guided_expert_effective_context_equal": true,
+      "full_native_outcomes_equal": true,
+      "exports_byte_equal": true,
+      "scores": [
+        0,
+        1,
+        1
+      ],
+      "statuses": [
+        "not_matched",
+        "matched",
+        "matched"
+      ],
+      "newly_confirmed_after_resume": 2,
+      "native_outcome_sha256": [
+        "c0b79c4b4705d939271ecc4306fd45fb1547fe1d906148dea3932ecd56ba7257",
+        "62e0f7520ddde1154b42ec6ed5c117ec077af1b2af9b0deb47af3946ba573c53",
+        "216aee97c675a8f55081b0bbca30d76cbeb470d748e0c8b12a6db46bbef11308"
+      ],
+      "effective_execution": {
+        "constructor_options": {
+          "direction_tolerance": "30 degrees",
+          "max_trials": 10000,
+          "min_fit_value": 0.0,
+          "point_tolerance": "0.10 nm",
+          "search_method": "seeded_hit"
+        },
+        "evaluation_options": {
+          "chemical_state": 0,
+          "selection": "all",
+          "structure_index": 0
+        },
+        "on_error": "record",
+        "score_method": "seeded_hit",
+        "screening_method": "rigid"
+      },
+      "partial_artifact_retained": true,
+      "original_inputs_native_and_ledger_unchanged": true,
+      "runtime_python_sources_unchanged": true,
+      "source_root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "origins": {
+        "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "pharmacophoremt_results": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/__init__.py",
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py"
+      },
+      "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "versions": {
+        "pharmacophoremt": "0.4.0+120.g0925d97",
+        "molsysmt": "0.23.0+513.g9e1f1b1ad",
+        "argdigest": "0.17.1+3.g0712641",
+        "smonitor": "0.22.1+1.gc1b6ce2",
+        "depdigest": "0.15.2+2.g032d345",
+        "rdkit": "2026.9.2",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "pyunitwizard": "0.29.1+6.gf82b618"
+      },
+      "native": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "limits": {
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "cpu.max": "100000 100000"
+      },
+      "peak_cgroup_bytes": 231829504,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "attribution": "PHMT capture remains disabled with no new native attribution field. MolSysMT recognition retains its own bibliography/provider behavior; no global opt-out is assumed.",
+      "ackredit_imported_by_scientific_provider": true,
+      "reused_completed_guided_run": null,
+      "claim": "Controlled public workflow equivalence/error recovery; no human usability study, general collection, scale or biological qualification."
+    },
+    "revised-installed": {
+      "phase": "revised-installed",
+      "revised": true,
+      "recipe": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/recipe_after.md",
+        "sha256": "798982f8f5520499ebdfea572045f8129ce5d9bc9a8de80410b14cffc1917e66",
+        "bytes": 8278
+      },
+      "negative": {
+        "manifest_created": false,
+        "run_created": false,
+        "metadata_iterations": 0,
+        "metadata_records_pulled": 0
+      },
+      "guided_expert_effective_context_equal": true,
+      "full_native_outcomes_equal": true,
+      "exports_byte_equal": true,
+      "scores": [
+        0,
+        1,
+        1
+      ],
+      "statuses": [
+        "not_matched",
+        "matched",
+        "matched"
+      ],
+      "newly_confirmed_after_resume": 2,
+      "native_outcome_sha256": [
+        "c0b79c4b4705d939271ecc4306fd45fb1547fe1d906148dea3932ecd56ba7257",
+        "62e0f7520ddde1154b42ec6ed5c117ec077af1b2af9b0deb47af3946ba573c53",
+        "216aee97c675a8f55081b0bbca30d76cbeb470d748e0c8b12a6db46bbef11308"
+      ],
+      "effective_execution": {
+        "constructor_options": {
+          "direction_tolerance": "30 degrees",
+          "max_trials": 10000,
+          "min_fit_value": 0.0,
+          "point_tolerance": "0.10 nm",
+          "search_method": "seeded_hit"
+        },
+        "evaluation_options": {
+          "chemical_state": 0,
+          "selection": "all",
+          "structure_index": 0
+        },
+        "on_error": "record",
+        "score_method": "seeded_hit",
+        "screening_method": "rigid"
+      },
+      "partial_artifact_retained": true,
+      "original_inputs_native_and_ledger_unchanged": true,
+      "runtime_python_sources_unchanged": true,
+      "source_root": "/tmp/phmt-public-runs-20261107-njzjsmvy/installed",
+      "origins": {
+        "pharmacophoremt": "/tmp/phmt-public-runs-20261107-njzjsmvy/installed/pharmacophoremt/__init__.py",
+        "pharmacophoremt_results": "/tmp/phmt-public-runs-20261107-njzjsmvy/installed/pharmacophoremt_results/__init__.py",
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py"
+      },
+      "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "versions": {
+        "pharmacophoremt": "0.4.0+134.gee5d9fa",
+        "molsysmt": "0.23.0+513.g9e1f1b1ad",
+        "argdigest": "0.17.1+3.g0712641",
+        "smonitor": "0.22.1+1.gc1b6ce2",
+        "depdigest": "0.15.2+2.g032d345",
+        "rdkit": "2026.9.2",
+        "numpy": "2.5.4",
+        "scipy": "1.18.1",
+        "pyunitwizard": "0.29.1+6.gf82b618"
+      },
+      "native": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "limits": {
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "cpu.max": "100000 100000"
+      },
+      "peak_cgroup_bytes": 231448576,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+      "attribution": "PHMT capture remains disabled with no new native attribution field. MolSysMT recognition retains its own bibliography/provider behavior; no global opt-out is assumed.",
+      "ackredit_imported_by_scientific_provider": true,
+      "reused_completed_guided_run": null,
+      "claim": "Controlled public workflow equivalence/error recovery; no human usability study, general collection, scale or biological qualification."
+    }
+  },
+  "retained_failed_control": {
+    "exit_code": 1,
+    "failed_assertion": "Ackredit globally absent after molecular evaluation",
+    "mechanism": "Overbroad harness assumption: PHMT host capture is off; native MolSysMT get_hbond_sites independently returns attribution and invokes its provider scope.",
+    "guided_native_completed": 3,
+    "expert_not_started": true,
+    "raw_log": "build/phmt-guided-expert-20261107-ipd_7x6x/baseline.original.log",
+    "raw_log_sha256": "ede6d74e91e582c9027870af1dedd6395fcc9da5c97e8e78220a38d328a0ba61",
+    "resource_limits": "CPU19/quota100%,one thread,nice19,idleIO,512MiB,noSwap,tasks32 enforced by launcher; terminal peak not captured by failed control.",
+    "source_preserved": "control_source.py",
+    "recorded_at_utc": "2026-11-07T06:51:38.289479+00:00"
+  },
+  "provider_handoff": "https://github.com/uibcdf/molsysmt/issues/292#issuecomment-6703588216",
+  "partial_artifact_identities": {
+    "baseline/guided": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/baseline/guided/original-partial.sqlite3",
+      "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369",
+      "bytes": 77824,
+      "confirmed_outcomes": 1
+    },
+    "baseline-continued/expert": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/baseline-continued/expert/original-partial.sqlite3",
+      "sha256": "6f791c3753b57e3e657d31c3582c0b3f1fcf902be2e5299f6442572742a4f58c",
+      "bytes": 77824,
+      "confirmed_outcomes": 1
+    },
+    "revised-source/guided": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/revised-source/guided/original-partial.sqlite3",
+      "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369",
+      "bytes": 77824,
+      "confirmed_outcomes": 1
+    },
+    "revised-installed/guided": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/revised-installed/guided/original-partial.sqlite3",
+      "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369",
+      "bytes": 77824,
+      "confirmed_outcomes": 1
+    }
+  },
+  "installed_artifact": {
+    "wheel": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-runs-20261107-w9c85754/wheels/pharmacophoremt-0.4.0+134.gee5d9fa-py3-none-any.whl",
+    "sha256": "df36ba5e2d8e726813d4ce16ae36ce9738ad897a3f25eb3a7f81f7b8c71aa6db",
+    "installed_target": "/tmp/phmt-public-runs-20261107-njzjsmvy/installed",
+    "wheel_payload_files_verified": 208,
+    "cwd": "/tmp/phmt-guided-expert-cwd-20261107-_h2b27rh",
+    "scope": "Same unchanged owned artifact, new recipe only; scientific source providers retained, no full public/platform or new-package qualification."
+  },
+  "checks": [
+    {
+      "arguments": [
+        "python3",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "output": "closeout-0.log"
+    },
+    {
+      "arguments": [
+        "python3",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "closeout-1.log"
+    },
+    {
+      "arguments": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "closeout-2.log"
+    },
+    {
+      "arguments": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "closeout-3.log"
+    },
+    {
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "closeout-4.log"
+    }
+  ],
+  "limits": {
+    "memory.max": "536870912",
+    "memory.swap.max": "0",
+    "pids.max": "32",
+    "cpu.max": "100000 100000"
+  },
+  "publication": "Own executable source, scalar/hash controls only. Full native/query/DB/attribution bodies, raw runtime streams and third-party binaries remain local.",
+  "next_action": "Public complete-view JSONL/scalar-CSV export, preserving expert iteration and original evidence.",
+  "full_evidence": {
+    "path": "guided_expert_journey_20261107_full.json.gz",
+    "compressed_sha256": "889ea332e555cc5f45ae4040c0333819c280f94ff807bbba5532e3483bcdcbb4",
+    "compressed_bytes": 64399,
+    "uncompressed_sha256": "7521c6013a7116b3e73bd1efd0b9bdfabcae6456e645f5ee6a35ccd68ff19118",
+    "uncompressed_bytes": 260203,
+    "own_file_count": 33
+  }
+}

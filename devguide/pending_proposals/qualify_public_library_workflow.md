@@ -14,6 +14,20 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Guided/expert journey receiving — 2026-11-07 UTC
+
+[Actual public-route receiving](../guided_expert_journey_receiving.md) compares
+the same original three prepared inputs/query through the guided run class and
+expert public store/resume composition. Complete effective contexts, full native
+rows, observed ranks and export bytes agree. The cookbook now admits the query
+before manifest creation/metadata traversal, resolving the measured missing-query
+retry trap. Revised source and the same owned installed wheel pass; the initial
+failed harness and completed guided outcomes remain preserved without repeated
+guided computation. Native MolSysMT attribution-policy clarification is handed
+to its existing #292. No runtime/API/schema/scoring change, human usability,
+general-library or biological claim. Next public saved-result export, then broader
+source operations; all remaining acceptance criteria keep their authority.
+
 ## What
 
 The user requests both retrospective validation and new-library screening, with

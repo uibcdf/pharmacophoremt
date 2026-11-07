@@ -100,7 +100,10 @@ remain MolSysMT#624-owned; source work is not full milestone2 delivery.
 The dated [pause record](evidence/reader_public_providers_20261107_checkpoint.json)
 retains its pending-delivery state. Resumption verifies the saved source unchanged
 and seals the [own/scalar receiving evidence](evidence/reader_public_providers_20261107_summary.json).
-The next guided/expert task starts from the [current checkpoint](checkpoint.md).
+The [guided/expert comparison](guided_expert_journey_receiving.md) now preserves
+full effective/native/export equality and fixes the observed cookbook query-error
+retry trap in source and the same owned wheel. It is no human usability study.
+Next deliver public complete-view export from the [current checkpoint](checkpoint.md).
 No release or full supported gate is established by this reader increment.
 
 ## Current priority: classical consolidation

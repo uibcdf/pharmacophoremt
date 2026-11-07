@@ -1,0 +1,17 @@
+{
+  "schema": "pharmacophoremt.guided-expert-journey-execution@1",
+  "attempt": 2,
+  "recorded_at_utc": "2026-11-07T06:51:38.575042+00:00",
+  "parent_plan": "guided_expert_journey_plan_20261107.json",
+  "reason": "Remove overbroad global Ackredit-absence assertion after observed MolSysMT recognition attribution; do not alter provider flags or captured molecular results. Complete expert comparison while rereading the already completed guided three-record run, without repeating those evaluations.",
+  "script_identity": {
+    "sha256": "17fecdfbf65464b00a34e4d2149bd6527150f05c5cef49b1448cfb07db6ba9d9",
+    "bytes": 13251
+  },
+  "reuse_guided": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/baseline/guided",
+  "preserved_first_attempt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/baseline/failed_control_receipt.json",
+  "recipe_before_identity": {
+    "sha256": "2b183defb854bf165eb51f5ef8708e5926e19b9b95d9c60c29ccc920c3a7d869",
+    "bytes": 7535
+  }
+}

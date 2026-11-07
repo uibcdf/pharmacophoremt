@@ -1,0 +1,26 @@
+{
+  "schema": "pharmacophoremt.guided-expert-journey-execution@1",
+  "attempt": 3,
+  "recorded_at_utc": "2026-11-07T06:53:21.428885+00:00",
+  "parent_plan": "guided_expert_journey_plan_20261107.json",
+  "change": "Move existing public query/settings admission before guided manifest creation/traversal; no scientific/runtime/API/schema changes.",
+  "recipe_identity": {
+    "sha256": "798982f8f5520499ebdfea572045f8129ce5d9bc9a8de80410b14cffc1917e66",
+    "bytes": 8278
+  },
+  "control_identity": {
+    "sha256": "17fecdfbf65464b00a34e4d2149bd6527150f05c5cef49b1448cfb07db6ba9d9",
+    "bytes": 13251
+  },
+  "reference": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/baseline-continued/private_result.json",
+  "selection": [
+    "Revised source guided invalid-query/refusal and same-destination valid retry; native3 outcomes compared with completedexpert.",
+    "Same public recipe from the unchanged previously qualified owned wheel outsidecheckout; recorded source providers, not new artifact/fullpublicgate."
+  ],
+  "source_runtime_change": false,
+  "native_expected": [
+    0,
+    1,
+    1
+  ]
+}

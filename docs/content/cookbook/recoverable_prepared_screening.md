@@ -57,6 +57,8 @@ def plan_for(query_path, compatibility):
 
 
 def start_partial_run(records, query_path, compatibility, manifest_path, run_path):
+    # Admit the query/settings before consuming metadata or creating the manifest.
+    plan = plan_for(query_path, compatibility)
     # The producer retains the exact manifest for a later compatible restart.
     with Path(manifest_path).open('x', encoding='utf-8') as manifest:
         for record in records:
@@ -64,7 +66,6 @@ def start_partial_run(records, query_path, compatibility, manifest_path, run_pat
                 'work_key', 'source_key', 'occurrence_key',
             )}
             manifest.write(json.dumps(mapping, sort_keys=True, separators=(',', ':')) + '\n')
-    plan = plan_for(query_path, compatibility)
     with PreparedScreeningRun.create(
         str(run_path), plan=plan, manifest_path=str(manifest_path),
         run_id='prepared-screening:example:1',
@@ -128,6 +129,17 @@ only `resume_and_export` with the same compatible query, manifest, declarations
 and prepared sequence. Creation and export refuse existing destinations. Export
 failure can leave partial files; the saved confirmed run remains authoritative.
 Use fresh export destinations rather than appending generator deliveries.
+
+Query and setting admission precede manifest creation and metadata traversal.
+A missing or invalid query leaves those destinations available for a corrected
+retry. A failure after manifest writing starts can still leave a partial file;
+inspect that file and use a fresh destination when needed.
+
+For expert composition, `ScreeningRunStore` receives `plan.query_bytes`,
+`plan.context` and the same ordered manifest, and `resume_prepared_run` consumes
+the prepared entries. `PreparedScreeningRun` composes those public operations.
+Both routes expose the same effective settings and native evidence; separate
+run identifiers retain their own journal identities.
 
 The resume iterator yields only new confirmations. A stop after commit but before
 delivery can hide a result from that iterator's consumer; saved `results()` still

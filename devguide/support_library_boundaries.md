@@ -1,5 +1,18 @@
 # Support-library boundaries and receiving limits
 
+## Native attribution scope observation — 2026-11-07
+
+The [guided/expert journey](guided_expert_journey_receiving.md) confirms that
+PHMT's default capture flag governs its own added payload, while MolSysMT
+recognition retains its own bibliography/provider behavior. A cold import probe
+finds Ackredit absent through imports/query planning/prepared reading and loaded
+only at native recognition. The overly broad consumer-harness global-absence
+assertion remains as a failed attempt; actual native rows and export bytes match.
+Default/session-control clarification is handed to existing MolSysMT#292 with
+consumer evidence; no upstream defect is inferred solely from import and no
+provider policy is patched. The independent saved-reader import boundary remains
+separate and unchanged.
+
 ## Independent-reader public support received — 2026-11-07
 
 [Released-provider receiving](reader_public_provider_receiving.md) measures the

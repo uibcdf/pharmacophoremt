@@ -1,0 +1,21 @@
+{
+  "schema": "pharmacophoremt.guided-expert-journey-execution@1",
+  "recorded_at_utc": "2026-11-07T06:47:06.384296+00:00",
+  "parent_plan": "guided_expert_journey_plan_20261107.json",
+  "parent_plan_sha256": "1574a034f395480a1f137a752ec4c9a89ca093574a55cdf8c315fdf7792d7928",
+  "reason": "Pre-execution source inspection corrects the harness assertion: attribution default is disabled and adds no new native attribution field; not_requested was an unexecuted control assumption. Original draft bytes retained in source_before_execution. No method/settings/runtime or proposed comparison changes.",
+  "fixed_case_files": {
+    "controls/run_journey.py": {
+      "sha256": "6c9f6d52d3b62569d17c91be4611662dfc8fa3069296a95b18beeeeec5227a9e",
+      "bytes": 12704
+    },
+    "inputs.json": {
+      "sha256": "dbe2b1692196713b0dbac28b849a5af56f794461b996cab44508247908628742",
+      "bytes": 7414
+    },
+    "recipe_before.md": {
+      "sha256": "2b183defb854bf165eb51f5ef8708e5926e19b9b95d9c60c29ccc920c3a7d869",
+      "bytes": 7535
+    }
+  }
+}
