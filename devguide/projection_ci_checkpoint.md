@@ -4,8 +4,12 @@ Owners LMMV/dprada; declared2026-11-07;
 [#9](https://github.com/uibcdf/pharmacophoremt/issues/9),
 [#23](https://github.com/uibcdf/pharmacophoremt/issues/23),
 [#141](https://github.com/uibcdf/pharmacophoremt/issues/141).
-Status: prepared, not dispatched. Freeze the reviewed receiving commit after
-push; the execution receipt will identify that exact candidate and each run.
+Status: dispatched at exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1.
+The [initial native receipt](evidence/projection_ci_initial_20261107.json)
+records source CI42416657424 with eight running science cells and successful
+reporting; policy42416661473 and publication governance42416665708 complete their
+required steps successfully. Source test counts and corrected XML acceptance
+remain pending. These are dated observations, not whole-gate acceptance.
 
 This deliberately batches accumulated saved-progress runtime, the qualified
 [RDKit projection](rdkit_projection.md) and the

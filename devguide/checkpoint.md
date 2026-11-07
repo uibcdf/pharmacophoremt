@@ -10,6 +10,15 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [new accumulated checkpoint](projection_ci_checkpoint.md) is dispatched at
+exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1. Its
+[initial receipt](evidence/projection_ci_initial_20261107.json) observes source
+CI42416657424 with all eight scientific cells running and reporting successful;
+policy42416661473/publication governance42416665708 pass their required native
+steps. Complete source tests and corrected hosted XML#141 are still pending.
+Preserve these identities and inspect the existing runs; never redispatch on an
+observation timeout or relabel them with a later receipt head.
+
 The latest received increment implements the [public RDKit projection contract](rdkit_projection.md):
 legacy point targets and fixed-radius reading remain available; explicit spheres,
 radius=None reading, detached field/loss reports and warn/strict/ignore choices
@@ -89,16 +98,16 @@ original governance failure remain intact. Full administrative receiving for
 frozen4616c78 now passes on the hosted route; the earlier local memory/guard
 failures are preserved and are not rewritten as successful local execution.
 
-**Next concrete action:** receive the accumulated current runtime/coverage at
-one deliberate [checkpoint](projection_ci_checkpoint.md): freeze the reviewed
-receiving commit after push, verify remote identity and existing runs, then use the
-existing source/policy/publication-governance workflows. This is a batched source
-checkpoint, not a package release. Keep frozen4616c78, installed producer1040dbb
-and the new candidate identities distinct. Exact-head/full-platform debt stays
-#9/#23-owned until actual terminal evidence is inspected; do not repeat frozen CI
-or launch a full matrix for each small commit. MolSysMT#624 collections, complete
-installed/public dependency/platform delivery, biology, comparison/performance
-and full mature0.x acceptance retain their separate gates.
+**Next concrete action:** receive terminal source CI42416657424 and actual
+coverage XML for the frozen489be12 candidate, preserving its eight full cells,
+architecture/dependency/test counts and per-file namespace identity. The already
+successful policy/publication native steps retain separate receipts. Keep
+frozen4616c78, installed producer1040dbb and source candidate489be12 distinct.
+No full local-suite retry, new source dispatch or package publication is needed
+for this observation. Continue independent declared work while the verified
+remote jobs run. MolSysMT#624 collections, complete installed/public dependency/
+platform delivery, biology, comparison/performance and full mature0.x acceptance
+retain their separate gates.
 
 ## Active public integration
 
