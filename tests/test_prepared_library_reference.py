@@ -1,4 +1,4 @@
-"""Analytical controls for the unshipped incremental prepared-input reference."""
+"""Public prepared-input screening preserves the analytical reference contract."""
 
 import gc
 import json
@@ -16,10 +16,11 @@ from pharmacophoremt._private.smonitor.exceptions import (
 from pharmacophoremt.screening import (
     ConformerScreening,
     PoseEvaluator,
+    PreparedInput,
     RigidPoseSearch,
+    screen_prepared,
 )
 from phmt_test_support.absence_inputs import COORDINATES, reference, system
-from phmt_test_support.prepared_library_reference import PreparedInput, screen_prepared
 from tests.test_conformer_screening import (
     distorted_coordinates,
     ensemble,

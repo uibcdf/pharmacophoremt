@@ -107,9 +107,15 @@ the same three original artifacts and two distinct acceptor references. All six
 comparisons agree and the public composition recipe executes without its helper.
 Only a mapping prefix is fitted in the real case; omitted work does not become
 a compound negative. Fewer outer extraction requests establish no speedup or
-full-search/cache/index equivalence. Next integrate a selected complete public
-prepared-input task using the proven native/reference contracts, with separate
-source/installed acceptance and MolSysMT#624 collection ownership.
+full-search/cache/index equivalence.
+
+The selected [public prepared-input task](../public_prepared_screening.md) is now
+implemented with one runtime, exact legacy aliases, definition-owned admission
+and lazy native evaluation.89 source controls and both public query/files/export
+recipe blocks pass.24 distribution,3 reporting and18 archive cases also pass;
+Ruff, indexes and declared dependency routes pass. Owned installed-wheel receiving
+remains pending at this source checkpoint. Public recovery/results and
+MolSysMT#624 collection ownership retain their separate acceptance.
 
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening

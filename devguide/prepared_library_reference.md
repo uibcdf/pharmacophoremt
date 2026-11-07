@@ -1,5 +1,17 @@
 # Incremental prepared-library reference prototype
 
+## Later public implementation — 2026-11-07
+
+The implementation now lives in public `pharmacophoremt.screening.PreparedInput`
+and `screen_prepared`; this support module is an exact compatibility alias.
+The [current public contract](public_prepared_screening.md) records the new
+admission/diagnostic boundary,89 passing selected source cases and the public
+query/prepared-file/export recipe. Installed receiving remains a separate gate.
+The original receipt and the prototype description below retain their historical
+scope; their old "no public API" wording does not describe the later promotion.
+
+## Original prototype scope
+
 Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108).
 This implements increment B of the [library architecture](public_library_architecture.md)

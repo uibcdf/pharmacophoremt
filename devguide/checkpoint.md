@@ -24,22 +24,34 @@ matching. Source coordinates/inventories and old artifact bytes stay unchanged.
 Outer requests are fresh6/reused3, excluding native post-fit recognition; no
 speedup, persistent-cache/index or full-RigidPoseSearch equivalence is established.
 
-**Next concrete action:** promote the proven `PreparedInput`/`screen_prepared`
-iterator into a public screening tool, with the support helper as a compatibility
-alias. The read-only gap audit favors a separate tool because `VirtualScreening`
-currently returns globally ranked hits and owns complete caches, while the
-iterator yields all outcomes in source order without molecular retention. Keep
-the six-field outcome envelope and caller-owned reader semantics; add definition-
-owned argument admission, structured diagnostics and actual per-evaluation
-attribution. Test source behavior and an owned installed-wheel receiving scope.
-Recovery/inspection promotion and MolSysMT#624 collections remain separate work.
+**Next concrete action:** qualify the implemented public prepared-input task
+from one frozen locally built wheel outside the checkout, verifying imports,
+source mappings, native outcomes and exported files. Then record its exact
+source/artifact/receiving limits and continue the separate public recovery/results
+contract. The molecular collection boundary remains MolSysMT#624-owned.
+
+## Active public integration
+
+`PreparedInput`/`screen_prepared` now have one public runtime implementation and
+an exact old-helper alias. The [public contract](public_prepared_screening.md)
+records admission, lazy/source lifetime, native score/error and attribution
+behavior. Source qualification passes89 scientific cases, including26 promoted
+controls and14 new public controls. Both public recipe blocks export all three
+original prepared inputs with source mappings and scores0/1/1 unchanged.
+
+Owned installed-wheel receiving is next and is not yet passing evidence. Build
+from the frozen source commit with the verified cached versioningit2.3.0 overlay,
+install outside the checkout, verify origins and execute the same public recipe.
+Raw capsule: `build/phmt-public-prepared-20261107-bsuq6ue6`. Current source/API
+promotion is not a release or full supported installed/public qualification.
 
 ## Implemented evidence and delivery boundary
 
 | Scope | Actual evidence | Limit / next gate |
 | --- | --- | --- |
 | Classical modeling/screening | Public native routes in [capability inventory](capability_inventory.md) | Method-specific scope; geometry does not establish activity prediction |
-| Incremental/recovery/inspection | [References](prepared_library_reference.md), [recovery](prepared_library_recovery.md), [read-only view](reference_run_inspection.md); latest implemented source `c816c8d`, 86 focused local cases | Unshipped helpers; not full installed/public qualification |
+| Public prepared iterator | [Public contract](public_prepared_screening.md): one runtime implementation,89 selected source controls, public query/files/export recipe | Owned installed-wheel receiving pending; no public resume/journal contract |
+| Recovery/inspection | [Recovery](prepared_library_recovery.md), [read-only view](reference_run_inspection.md); prior `c816c8d` source has86 focused local cases | Remain unshipped; helper-alias change updates reexecution fingerprints, not historical reading |
 | Feature reuse | [Native equality and public composition](feature_inventory_reuse.md): 87 selected scientific cases, six source/reference comparisons, four public recipe blocks | No full-search/cache/index/performance or installed-package qualification |
 | Original PubChem3D pilot | [Three fixed conformers](pubchem3d_receiving_pilot.md), mapped persistence and native outcomes; preserved failures and quantity correction | No general public connector, chemical independence or biological validation |
 | Current goal | Seven accepted [milestones](roadmap.md#accepted-destination-a-mature-pre-10-0x); every increment updates devguide | No milestone/release is completed by its plan alone |
@@ -49,7 +61,7 @@ Recovery/inspection promotion and MolSysMT#624 collections remain separate work.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Survey, references, finite real-input pilot and [reuse equivalence](feature_inventory_reuse.md) exist | Audit the existing public facade and integrate one complete prepared-input task |
+| #108 libraries/product | Reuse experiment closed; public prepared-input API/source recipe now implemented | Complete owned installed receiving, then define the separate public recovery/results contract |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

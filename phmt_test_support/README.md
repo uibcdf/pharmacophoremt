@@ -28,7 +28,7 @@ module-relative plans. These bring private installed support to 57 literal
 files. The actual shared-staging import/collection probe collects 126 nodes;
 collection alone does not rerun their science or qualify an installed artifact.
 
-The incremental prepared-library prototype adds one literal helper declaration
+The original incremental prepared-library prototype added one literal helper declaration
 (60 private files in total). Its controls live in the default scientific
 `tests/` selection and import this namespace; they never require a development
 `devtools` package in installed science. The administrative staging guard resolves
@@ -85,3 +85,10 @@ Administrative distribution guards use the accepted clean immutable SDK via
 science must use the shared runner outside the checkout and retain its support
 receipt and before/after runtime provenance. Staging controls alone do not prove
 an artifact, a platform matrix or public delivery.
+
+The prepared-input implementation is now public under `pharmacophoremt.screening`.
+`prepared_library_reference` remains an exact compatibility alias; its updated
+digest preserves the64-file private support declaration. Source controls now
+exercise the public imports. [Public contract](../devguide/public_prepared_screening.md)
+separates owned installed receiving from source evidence and keeps recovery/
+inspection experiments outside the promoted runtime API.

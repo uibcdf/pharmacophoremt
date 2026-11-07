@@ -1,0 +1,111 @@
+{
+  "schema": "pharmacophoremt.public-prepared-integration-plan@1",
+  "recorded_at_utc": "2026-11-07T03:29:48.257803+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "1b77fd8c4862b3dcc8211047035dc28845015390",
+  "goal": "Mature pre1.0 0.x staircase remains active; this is a useful public prepared-input task, not full milestone2 completion.",
+  "public_symbols": [
+    "pharmacophoremt.screening.PreparedInput",
+    "pharmacophoremt.screening.screen_prepared"
+  ],
+  "signature": "screen_prepared(inputs, evaluator, *, score_method, on_error=\"raise\", evaluation_options=None)",
+  "decisions": [
+    "Promote proven reference into one runtime implementation; old helper exact compatibility aliases",
+    "Definition-owned ArgDigest signature/value admission without iterating input source; selected native evaluator owns copied evaluation_options via run(())",
+    "SMonitor on public factory; no eager factory attribution; native actual evaluation attribution occurs during consumption",
+    "Preserve six-field outcome envelope, work/source/occurrence mapping and all source-order outcomes, valid zeros and unscored failures",
+    "Caller owns source lifetime; no whole-library materialization, molecular retention in outcomes or collection-sized uniqueness set",
+    "Do not change VirtualScreening globally ranked hit/cache semantics",
+    "No public resume/journal/schema/collection/index contract inferred"
+  ],
+  "source_validation": [
+    "Port original prepared-reference controls to public imports",
+    "New public export/admission/lazy-import/application-attribution controls",
+    "Affected recovery and facade controls; installed support/resource declarations and full style/reporting/archive checks"
+  ],
+  "installed_receiving": {
+    "scope": "One owned locally built wheel, installed outside checkout on existing Linux/Python3.14 with recorded source-provider context; no public channel/Conda/full platform/minor qualification.",
+    "build": "No network dependencies, no-build-isolation/no-deps in owned clean local source clone; shared environment untouched",
+    "runtime": "Validate every imported PHMT module origin under owned install target; no checkout/test/support imports",
+    "recipe": "Execute both public cookbook Python blocks with native saved query, original prepared files and fresh JSONL/CSV destinations",
+    "comparison": "Preserve actual producer versions/provenance; assert source mappings, native statuses and expected scores rather than normalize differing source/build version metadata"
+  },
+  "records": [
+    {
+      "cid": 1983,
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+      "work_key": "public:cid:1983:state:0:frame:0",
+      "source_key": "PubChemCID:1983",
+      "occurrence_key": "original:0",
+      "identity": {
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344
+      }
+    },
+    {
+      "cid": 2244,
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+      "work_key": "public:cid:2244:state:0:frame:0",
+      "source_key": "PubChemCID:2244",
+      "occurrence_key": "original:1",
+      "identity": {
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328
+      }
+    },
+    {
+      "cid": 2519,
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+      "work_key": "public:cid:2519:state:0:frame:0",
+      "source_key": "PubChemCID:2519",
+      "occurrence_key": "original:2",
+      "identity": {
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328
+      }
+    }
+  ],
+  "query": {
+    "original_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/query.json",
+    "identity": {
+      "sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+      "bytes": 21959
+    },
+    "source": "Original caffeine three-essential-acceptor query from declared pilot; no source acquisition"
+  },
+  "expected_source_recipe": {
+    "outcomes": 3,
+    "matched": 2,
+    "not_matched": 1,
+    "failed": 0,
+    "scores": [
+      0.0,
+      1.0,
+      1.0
+    ],
+    "criterion": "seeded_hit@1",
+    "frame": 0,
+    "chemical_state": 0
+  },
+  "resource_limits": {
+    "cpu": 19,
+    "cpu_quota_percent": 100,
+    "threads": 1,
+    "memory_bytes": 536870912,
+    "swap_bytes": 0,
+    "tasks": 32,
+    "nice": 19,
+    "io": "idle"
+  },
+  "sdk": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk",
+    "revision": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f"
+  },
+  "new_molecular_http_requests": 0,
+  "release_status": "No tag/version-plan/public package publication authorized by this bounded qualification alone; exact release gates stay separate.",
+  "publication": "Own source/control/scalar proof only; full native query/results and original geometry local pending existing rights scope."
+}

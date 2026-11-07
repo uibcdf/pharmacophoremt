@@ -18,7 +18,7 @@ version may advance several milestones.
 | Milestone | Usable result and acceptance | Current evidence and remaining work |
 | --- | --- | --- |
 | 1. Coherent classical core | Generation, composition, correspondence, alignment, evaluation and scoring preserve compatible feature, geometry, unit, identity and failure semantics. Public contracts and reproducible controls explain supported domains and incomplete answers. | Native routes and scoped controls exist in the [capability inventory](capability_inventory.md). The [feature-reuse subworkflow](feature_inventory_reuse.md) now has equal native evidence under its declared scope. Close remaining observed gaps before changing cache/search contracts. |
-| 2. Complete public workflow | A user imports prepared data, builds/loads a query, inspects a plan, screens, resumes and exports through documented public operations. Guided and expert routes resolve to the same effective settings. | [Incremental](prepared_library_reference.md), [recovery](prepared_library_recovery.md) and [read-only inspection](reference_run_inspection.md) references are unshipped experiments. Integrate a selected complete task into the public API and qualify actual installed use by someone outside the development workflow. |
+| 2. Complete public workflow | A user imports prepared data, builds/loads a query, inspects a plan, screens, resumes and exports through documented public operations. Guided and expert routes resolve to the same effective settings. | The [prepared-input public tool](public_prepared_screening.md) now passes source controls and its recipe. Owned installed receiving is pending; recovery/inspection remain unshipped. Complete the selected public task and qualify independent use before closing this milestone. |
 | 3. Robust molecular collections | Provider-owned records, molecules, states, conformers and atom/source mappings have explicit resource, preparation, bounded iteration, snapshot and recovery contracts. | The fixed [PubChem3D case](pubchem3d_receiving_pilot.md) qualifies individual artifacts only. Receive the reusable boundary from [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624); PHMT must not add a replacement molecular parser or collection. |
 | 4. Progressively qualified public libraries | A common user journey supports selected sources and formats, with separately demonstrated discovery, download/import, preparation, screening and availability operations and their access conditions. | [Source assessments](public_library_registry.md) and the three-record pilot do not establish general connectors. Qualify each selected operation/source increment; the mature-release scope names the selected sources and remaining exclusions. |
 | 5. Efficient repeated queries and screening | Reusable annotations, scans and indexes are compared on equivalent problems, including build/storage, cold/repeated-query cost, memory, invalidation and coverage. Acceleration addresses measured bottlenecks. | The [in-memory reuse experiment](feature_inventory_reuse.md) passes its equality controls and public recipe. No cache/index strategy or speedup follows from fewer outer requests; broader workload/resource evidence remains required. |
@@ -46,6 +46,31 @@ under their original identities. Plans and successful narrow checks are not
 completion evidence for the staircase. Routine `[skip ci]` delivery and deliberate
 full validation checkpoints retain their separate authority.
 
+## Acceptance across the staircase
+
+- **Usability:** representative novice and expert users complete named tasks
+  with the documented public interfaces. Record help needed, obstacles and
+  recovery from errors; compare guided and expert effective settings/results.
+  A short example alone is not evidence of an intuitive user experience.
+- **Library coverage:** maintain a source-by-operation matrix for discovery,
+  acquisition, import, preparation, screening and updates/availability. Each
+  cell names its demonstrated scope, access conditions, unsupported cases and
+  evidence. One successful source operation does not qualify all operations.
+- **Scale:** declare representative workload sizes, query mixes, hardware and
+  resource budgets before performance measurements. Retain build/storage cost,
+  cold/repeated-query cost, omissions and failures; a three-record pilot does
+  not establish large-library capacity.
+- **Continuity:** declare API and saved-result compatibility as contracts mature.
+  Test supported old readers/results, explicit migrations and incompatible-run
+  rejection. Preserve original evidence and distinguish relocatable identity
+  from byte provenance and chemical equivalence.
+
+Releases are selected from completed useful tasks, such as public prepared-input
+screening/export, recoverable runs, a first qualified source, a broader source
+set or measured repeated-query improvements. These are candidate increments,
+not reserved version numbers. Each release independently meets its declared
+installation/distribution gates; passing one task does not close its milestone.
+
 ## Immediate product increment
 
 The previously pending [feature-reuse experiment](feature_inventory_reuse.md) is
@@ -54,12 +79,14 @@ original-source/reference comparisons, and four executed public cookbook blocks.
 It retains post-fit validation and distinguishes selected-prefix work from full
 search. It adds no persistent cache/index or speedup claim.
 
-Next, audit the existing public facade against the proven incremental/recovery/
-inspection references and select one complete prepared-input task for public
-integration under #108/#95. Define admission, identity, source lifetime, score/
-failure and result ownership before implementation; use the current native tools.
-The provider collection boundary remains MolSysMT#624-owned. Qualify the selected
-public task's source and installed use before counting milestone2 as delivered.
+The public gap audit selected a separate prepared-input iterator because the
+existing facade owns global hit ranking and complete caches. `PreparedInput` and
+`screen_prepared` now have one public runtime implementation, definition-owned
+admission, structured diagnostics and actual per-evaluation attribution.89 source
+controls and the query/prepared-file/export recipe pass. Finish the owned wheel
+receiving described in the [public contract](public_prepared_screening.md), then
+qualify a separate public recovery/results contract. Managed molecular collections
+remain MolSysMT#624-owned; source work is not full milestone2 delivery.
 
 ## Current priority: classical consolidation
 
