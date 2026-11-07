@@ -12,7 +12,7 @@ actual answers and their limits. Original attempts retain their own identities.
 ## Dated boundary-fixture correction, 2026-11-07
 
 The original receipt below remains historical. Frozen source489be12 CI42416657424
-fails its upper-bound expectation on macOS; [#143](pending_bugs/analytical_upper_bound_platform.md)
+fails its upper-bound expectation on macOS; [#143](archive/analytical_upper_bound_platform.md)
 owns the correction. Exact Decimal.from_float operands and100-digit square roots
 show that the original upper/lower pair differences exceed0.25nm by approximately
 3.33066907387547e-17/5.55111512312578e-18nm. Its stored decimal-generated coordinates
@@ -28,7 +28,8 @@ and pair-difference equality; both guards fail on the original data. No producti
 predicate, scientific epsilon or matching definition changes. The full revised
 14-case guard and ten-case/186-assignment driver pass locally, with unchanged
 2/1native versus0/0RDKit boundary counts. Hosted acceptance of the revision is
-still pending; the failed earlier run is never relabeled successful.
+now accepted for frozen8db2a53 across all eight Linux/macOS Python3.11–3.14
+cells,2357tests per cell; the failed earlier run is never relabeled successful.
 The [correction receipt](evidence/rdkit_boundary_correction_20261107_summary.json)
 retains original/new inputs and original failures. Earlier source/RSS/attribution
 counts below belong to their original producer and input hash.
@@ -170,3 +171,9 @@ Current owner source711717828 preserves operational causes; source inspection
 does not receive that fix into this shared prefix. No new numerical-provider
 bug is established by an allocation failure. All full source/installed/public,
 biological and broad-tool comparison milestones remain separate.
+
+
+[Corrected hosted receiving](evidence/boundary_ci_terminal_20261107.json) closes
+#143 only for its declared boundary-fixture/source scope. The independent local
+ten-case driver and actual attribution retain their original identities. No
+package publication, biological equivalence or measured acceleration follows.

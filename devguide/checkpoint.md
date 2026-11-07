@@ -11,7 +11,7 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 ## Last received increment and next action
 
 The latest increment corrects two analytical boundary fixtures under
-[#143](pending_bugs/analytical_upper_bound_platform.md). The
+[#143](archive/analytical_upper_bound_platform.md). The
 [receipt](evidence/rdkit_boundary_correction_20261107_summary.json) passes59selected
 cases, including14analytical guards and the separate ten-case/186-assignment
 driver. Exact rational controls fail on the old data; production runtime and
@@ -79,14 +79,15 @@ separate recovery. [Current guide audit](evidence/projection_ci_guide_audit_2026
 compares all seven real canonical texts at exact owner revisions; all match.
 The frozen policy-v1.5.4 caller remains separate and unchanged.
 
-The [recovery checkpoint](boundary_ci_checkpoint.md) is dispatched once at
+The [recovery checkpoint](boundary_ci_checkpoint.md) is complete at exact
 8db2a53f91a3686088874f965d389e636003d990/attempt1. Its
-[initial receipt](evidence/boundary_ci_initial_20261107.json) records source
-CI42421360591 with all eight science cells running and reporting successful;
-policy42421364958/publication42421369303 pass their required native steps.
-[Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json) observes
-unchanged canonical owner heads and rehashes local bytes against the prior
-literal-text audit. No fresh text fetch or policy pin change is claimed.
+[terminal receipt](evidence/boundary_ci_terminal_20261107.json) receives source
+CI42421360591 with2357tests passing in each of eight Linux/macOS Python3.11–3.14
+cells, plus successful reporting/policy42421364958/publication42421369303 native
+steps. All eight XMLs retain105qualified files; native Linux3.13 uploads pass.
+#143 resolves the boundary fixture. Preserve failed489be12, successful8db2a53 and
+later profiling/recovery producer identities separately. [Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json)
+retains its dated owner-head/local-byte observations, separately from frozen policy.
 
 The [#144 saved-reader baseline](archive/profile_saved_run_scaling.md)
 now receives three synthetic reader cells,75repeated samples and three first-open
@@ -98,13 +99,13 @@ cache/index or molecular-throughput claim follows. The [reusable recovery driver
 now passes22case guards and the exact copied10000case;#144 resolves its bounded
 engineering scope. Extra receiving samples retain a separate identity.
 
-**Next concrete action:** receive terminal full-source evidence from the existing
-recovery run42421360591,
-receiving actual terminal full logs/eight cells and corrected macOS boundary
-controls before accepting#143 or its source gate. Declare and review a bounded follow-up for immutable snapshot progress while it runs. Do not redispatch, rebuild/relabel RDKit148/Point151 wheels, relax
-thresholds or retry the full suite locally. MolSysMT#624 collections, full installed/
-public dependency/platform delivery, biology, comparison/performance and mature0.x
-acceptance retain separate gates.
+**Next concrete action:** declare/review a bounded immutable-snapshot progress
+reuse experiment from the measured shared-scan cost, preserving full admission,
+original failure/score/attempt accounting, detached outputs and live-writer
+freshness. No cache/index has been implemented. Later profiling/recovery helpers
+and tests retain current-head source debt under#9; frozen8db2a53 is not relabeled.
+MolSysMT#624 collections, full installed/public dependency/platform delivery,
+biology, comparison/performance and mature0.x acceptance retain separate gates.
 
 ## Active public integration
 

@@ -147,11 +147,12 @@ speedup or molecular-throughput claim follows.
 
 ## Current priority: classical consolidation
 
-The [#143 boundary-fixture correction](pending_bugs/analytical_upper_bound_platform.md)
+The [#143 boundary-fixture correction](archive/analytical_upper_bound_platform.md)
 replaces two nonexact synthetic endpoints with exactly representable geometry.
 Fourteen focused guards and the ten-case driver pass locally; old results and
-all eight interior cases remain. Corrected hosted receiving is pending; production
-cutoffs and matching definitions are unchanged.
+all eight interior cases remain. Corrected frozen8db2a53 hosted receiving now passes2357tests per cell across all
+eight Linux/macOS Python3.11–3.14cells;#143 resolves its bounded fixture scope.
+Production cutoffs and matching definitions are unchanged.
 
 [Native Point inspection](native_geometry_inspection.md) now exposes its canonical
 position as center and returns empty center arrays with three columns. The

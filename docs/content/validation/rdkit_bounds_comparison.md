@@ -27,7 +27,10 @@ binary coordinates rather than accepting an approximate triangle. The revised
 14 focused guards and ten-case/186-assignment driver pass locally, retaining
 2/1native versus0/0RDKit boundary mappings. This later input has its own
 [receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/rdkit_boundary_correction_20261107_summary.json);
-full corrected hosted/platform acceptance remains pending. This corrects a
+corrected source controls now pass in all eight Linux/macOS Python3.11–3.14
+cells at frozen8db2a53, with2357tests per cell. The [terminal receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/boundary_ci_terminal_20261107.json)
+preserves exact identities. Public installed/platform delivery remains separate.
+This corrects a
 fixture exactness claim, not an activity-validation result.
 
 ## What is compared

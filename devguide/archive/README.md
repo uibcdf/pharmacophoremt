@@ -5,9 +5,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (86)
+### Resolved (87)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
+- [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
 - [`cached_generation_profile.md`](cached_generation_profile.md) — [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) — Profile fixed-work cached generation and hand generic costs to their owners. *(resolved, measured)*
 - [`cached_generation_scaling_baseline.md`](cached_generation_scaling_baseline.md) — [#97](https://github.com/uibcdf/pharmacophoremt/issues/97) — Measure cached receptor-generation scaling with bounded shared resources. *(resolved, measured)*
