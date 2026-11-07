@@ -2,7 +2,7 @@
 
 Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108), mature-0.x milestone2.
-Source qualification passes; owned installed-wheel receiving is pending. The
+Source and bounded owned installed-wheel receiving pass. The
 [prospective plan](evidence/public_prepared_runs_plan_20261107.json) was
 [declared before execution](https://github.com/uibcdf/pharmacophoremt/issues/108#issuecomment-6702125074).
 Passing evidence and actual counts will be recorded after execution.
@@ -125,13 +125,46 @@ I/O,512MiB cgroup and no swap. Final scientific peak451,026,944 bytes;
 administration79,155,200, public recipe249,688,064 and migrated consumer244,723,712.
 No OOM/max events occur. These are execution observations, not benchmarks.
 
-Next freeze a source commit, build one owned wheel using the verified cached
-versioningit2.3.0 overlay, and repeat the public task outside the checkout.
-Also read the source-produced run from that installation while preserving its
-original runtime and refusing incompatible reexecution. The unchanged project
-requirement~=2.0 is not replaced to fit the shared prefix's3.3.0.
+## Installed and development receiving
+
+Frozen producer: `ee5d9fae7a412b5276840cbec7289fdd95ddd375`.
+The one wheel is `pharmacophoremt-0.4.0+134.gee5d9fa-py3-none-any.whl`,4512131
+bytes, SHA-256 `df36ba5e2d8e726813d4ce16ae36ce9738ad897a3f25eb3a7f81f7b8c71aa6db`.
+The [receipt/archive](evidence/public_prepared_runs_20261107_summary.json)
+retains exact code, metadata, controls and scalar results. Original geometry,
+queries, databases and full native/attribution bodies remain local.
+
+Both public recipe blocks pass from this identical installed file, with target
+and cwd under owned `/tmp/phmt-public-runs-20261107-njzjsmvy`, outside the checkout.
+Every imported PHMT/companion file matches the wheel. Partial/complete/legacy
+fresh readers and actual public module CLI load no scientific namespace; source
+run reading preserves original runtime/versions. Installed reexecution of that
+source-produced run is refused before a source iterator is available. Scores,
+source mappings and all18 original files remain unchanged; installed peak is
+256,139,264 bytes, with no OOM/max events.
+
+Build peak is425,848,832 bytes under the same limits. A verified cached
+versioningit2.3.0 build-only overlay satisfies the unchanged~=2.0 requirement;
+the shared build-tool3.3.0 is not substituted or upgraded.
+
+After that unchanged-prefix qualification, normal-prefix cold lookup showed the
+old editable registration omitted the new top-level namespace. The canonical
+no-deps/no-index editable refresh updates only this member's metadata and ignored
+generated version cache to0.4.0+134.gee5d9fa. Other provider versions and the
+MolSysMT native hash remain unchanged. A fresh isolated interpreter from `/tmp`
+imports both packages normally, without source-path injection. All154 Python
+files equal the qualified wheel; the location-independent runtime binding matches.
+It reopens the installed complete run, produces zero new results/evaluations and
+preserves all bytes. Refresh peak is149,254,144 bytes, without OOM/max events.
+This distinct development receiving does not requalify the entire shared prefix.
+The original source measurement retains its earlier generated-version/cache
+identity; no producer metadata or source-produced outcomes are normalized.
+
 Full supported
 source/dependency/installed/public/platform/release gates remain under
 #9/#10/#23/#95; biological studies and measured large-library performance retain
 their independent plans. Original geometry and complete native database/export
-bodies remain local under the existing publication scope.
+bodies remain local under the existing publication scope. Next receive released
+support-provider floors/newer versions for the independent reader in an owned
+source-free context, while completing the separate guided/expert usability and
+MolSysMT collection/source-operation work.

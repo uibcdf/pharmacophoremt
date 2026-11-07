@@ -1,7 +1,7 @@
 # Read-only inspection of reference screening runs
 
 The later [public prepared-run implementation](public_prepared_runs.md) is now
-awaiting qualification. Its independently importable companion reader uses
+received in its declared source/owned installed contexts. Its independent reader uses
 ArgDigest/SMonitor without molecular/numerical/citation imports. Explicit legacy
 reading is separate from the new public writer; this page preserves the original
 reference-format command, qualification and historical source identities.

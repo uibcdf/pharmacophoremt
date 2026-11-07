@@ -3,8 +3,9 @@
 This development-source recipe extends
 [incremental prepared screening](prepared_incremental_screening.md) with a saved
 run. It uses public PHMT/MolSysMT operations and an independent saved-result
-reader. Source and installed qualification are in progress; this is not a new
-published release. Use a qualified installation context and your own authorized,
+reader. Selected source controls and one bounded owned-wheel receiving pass;
+full supported installed/public qualification remains pending. Use a qualified
+installation context and your own authorized,
 unchanged prepared artifacts.
 
 Supply `records` with `path`, `work_key`, `source_key` and `occurrence_key`, a

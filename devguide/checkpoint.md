@@ -1,7 +1,7 @@
 # Current development checkpoint
 
-Maintained 2026-11-07 UTC; owners LMMV/dprada. The goal is **active**: finish the
-pending increment, then pursue the accepted [mature pre-1.0 0.x staircase](roadmap.md).
+Maintained 2026-11-07 UTC; owners LMMV/dprada. The goal is **active**: pursue the
+accepted [mature pre-1.0 0.x staircase](roadmap.md) through usable increments.
 The version number follows useful completed scope; no final minor or date is fixed.
 Start with [onboarding](onboarding.md), [decisions](decisions_and_workstreams.md)
 and this page. Detailed earlier receiving/pause statements are preserved in
@@ -9,59 +9,53 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last closed increment and next action
 
-The [public prepared-input tool](public_prepared_screening.md) passes134 distinct
-selected local tests (89 scientific,24 distribution,3 reporting,18 archive), both
-source recipe blocks and both blocks from the identical owned installed wheel.
-Frozen producer: `707e55f0a02e7b8c693718e28afcf510ff64b8ca`;
-wheel version `0.4.0+132.g707e55f`, not a new release.
-Raw capsule: `build/phmt-public-prepared-20261107-bsuq6ue6` (ignored; not cloned).
-The [receipt](evidence/public_prepared_20261107_summary.json) records exact source,
-artifact, native context, actual results and publication limits.
+The [public recoverable-run task](public_prepared_runs.md) now passes197 distinct
+local cases (82 scientific,94 administrative,3 reporting,18 archive), both public
+recipe blocks from source/the same installed wheel, and the migrated original-input
+pilot callback. Frozen producer: `ee5d9fae7a412b5276840cbec7289fdd95ddd375`;
+wheel version `0.4.0+134.gee5d9fa`, not a new release.
+Raw capsule: `build/phmt-public-runs-20261107-w9c85754` (ignored; not cloned).
+The [receipt](evidence/public_prepared_runs_20261107_summary.json) retains original
+failed/passing attempts, exact source/artifact/provider and scalar evidence.
 
-The installed target and working directory are under the owned
-`/tmp/phmt-public-prepared-20261107-_z8h0kjr`, outside the checkout. All imported
-PHMT bytes match the wheel; source/query bytes and native provider remain
-unchanged. The same three old conformers retain mappings and scores0/1/1.
-This is bounded Linux/Python3.14 receiving with recorded source providers, not
-public-provider/Conda/full platform/minor qualification.
+Owned target/cwd under `/tmp/phmt-public-runs-20261107-njzjsmvy` execute the full
+task outside the checkout. Independent readers/CLI load no scientific providers;
+source-produced reading retains original versions and refuses incompatible resume.
+The same three conformers keep mappings/scores0/1/1; all18 original files remain
+unchanged. This is Linux/Python3.14 with recorded source providers, not full
+supported/public-platform qualification.
 
-**Next concrete action:** freeze the source-qualified
-[public recovery/results task](public_prepared_runs.md), build one owned wheel
-and repeat the public task outside the checkout. Read the source-produced run
-without importing scientific providers and refuse incompatible installed resume.
-Molecular collection tools remain MolSysMT#624-owned.
+**Next concrete action:** qualify the independent reader against released support
+provider floors/newer versions in an owned source-free context, then align any
+evidence-backed dependency declarations. Continue guided/expert usability and
+broader source operations separately; molecular collections remain MolSysMT#624-owned.
 
 ## Active public integration
 
-The [public recovery/results increment](public_prepared_runs.md) now passes197
-distinct source/local cases (82 scientific,94 administrative,3 reporting,18
-archive), both public recipe blocks and the migrated real-input pilot callback.
-One core owns a versioned public writer and explicit legacy reading; the companion
-reader/CLI loads no main-PHMT/molecular/numerical/attribution namespace. The first
-confirmation and all18 original pilot files remain unchanged. Source/raw capsule:
-`build/phmt-public-runs-20261107-w9c85754`; final overlay is attempt3. Earlier
-failed/passing attempts remain retained. Owned installed receiving is pending.
+One storage core owns versioned public writing and explicit legacy reading.
+Confirmations/failures and attempts remain authoritative; new generator deliveries
+are separate from the complete saved view. Public seeded scores retain their
+binary/status meaning; historical values are never silently normalized.
+Source and installed recipes each capture12 actual attribution items/27 uses;
+the migrated callback retains12/34. Full original source/build versions remain
+distinct. Earlier [iterator receiving](public_prepared_screening.md) and
+[reuse](feature_inventory_reuse.md) keep their own source identities and limits.
 
-`PreparedInput`/`screen_prepared` now have one public runtime implementation and
-an exact old-helper alias. The [public contract](public_prepared_screening.md)
-records admission, lazy/source lifetime, native score/error and attribution
-behavior. Source qualification passes89 scientific cases, including26 promoted
-controls and14 new public controls. Both public recipe blocks export all three
-original prepared inputs with source mappings and scores0/1/1 unchanged.
-
-Owned installed-wheel receiving now passes. The build uses the verified cached
-versioningit2.3.0 overlay without changing requirements or the shared prefix.
-Source and installed recipes each capture12 actual attribution items/27 uses.
-Full source/build versions remain distinct original evidence. This public API
-promotion is not a release or full supported installed/public qualification.
+After unchanged-prefix owned-wheel receiving, only this member's editable metadata
+and ignored generated-version cache were refreshed to0.4.0+134.gee5d9fa so normal
+imports expose the new companion outside the checkout. Other provider versions
+and MolSysMT native bytes remain unchanged. All154 Python files match the qualified
+wheel; same-byte relocated source reopens its complete installed run with zero
+new evaluations/results and unchanged files. This is separate development receiving,
+not whole-environment qualification. [Onboarding](onboarding.md) records the route.
 
 ## Implemented evidence and delivery boundary
 
 | Scope | Actual evidence | Limit / next gate |
 | --- | --- | --- |
 | Classical modeling/screening | Public native routes in [capability inventory](capability_inventory.md) | Method-specific scope; geometry does not establish activity prediction |
-| Public prepared iterator | [Public contract](public_prepared_screening.md): one runtime,134 selected local cases and source/owned installed query/files/export recipe | Bounded Linux/Python3.14/source providers only; no public resume/journal or full supported delivery |
-| Recovery/inspection | [Public task](public_prepared_runs.md):197 selected local cases, interruption/resume/export and independent guarded reading; old experiments retain their source identities | Owned installed receiving pending; explicit legacy reading does not migrate/reexecute it; full guided usability/provider/public gates remain |
+| Public prepared iterator | [Public contract](public_prepared_screening.md): one runtime,134 selected local cases and source/owned installed query/files/export recipe | Bounded Linux/Python3.14/source providers; the iterator adds no journal. Use the separate recoverable-run route; full supported delivery remains pending |
+| Recovery/inspection | [Public task](public_prepared_runs.md):197 selected cases, source/same-wheel installed and normal editable receiving; old experiments retain their identities | Explicit legacy reading is separate from reexecution; full guided usability, published-provider and supported-platform gates remain |
 | Feature reuse | [Native equality and public composition](feature_inventory_reuse.md): 87 selected scientific cases, six source/reference comparisons, four public recipe blocks | No full-search/cache/index/performance or installed-package qualification |
 | Original PubChem3D pilot | [Three fixed conformers](pubchem3d_receiving_pilot.md), mapped persistence and native outcomes; preserved failures and quantity correction | No general public connector, chemical independence or biological validation |
 | Current goal | Seven accepted [milestones](roadmap.md#accepted-destination-a-mature-pre-10-0x); every increment updates devguide | No milestone/release is completed by its plan alone |
@@ -71,7 +65,7 @@ promotion is not a release or full supported installed/public qualification.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator received; public recoverable runs and independent reader now source-qualified | Complete owned installed receiving, then guided/expert usability and broader provider/source operations |
+| #108 libraries/product | Public iterator and recoverable runs/independent reader received in their bounded contexts | Released support-provider receiving, guided/expert usability and broader provider/source operations |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

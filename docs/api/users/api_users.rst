@@ -24,7 +24,8 @@ scope, reader ownership, score/failure semantics and qualification limits.
 Recoverable prepared screening and saved results
 -----------------------------------------------
 
-Development-source qualification is in progress. The
+Selected source and bounded owned-wheel receiving pass; full supported/public
+qualification remains separate. The
 :doc:`recoverable recipe </content/cookbook/recoverable_prepared_screening>`
 distinguishes immutable confirmations, new iterator deliveries and the complete
 saved view. Independent reading uses the companion package in the same wheel.

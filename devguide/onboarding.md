@@ -1,6 +1,6 @@
 # Developer onboarding
 
-Maintained 2026-11-06; owners LMMV/dprada, [#107](https://github.com/uibcdf/pharmacophoremt/issues/107).
+Maintained 2026-11-07; owners LMMV/dprada, [#107](https://github.com/uibcdf/pharmacophoremt/issues/107).
 Start here when joining the team or rebuilding a development machine. This
 handoff does not claim that the destination installation has been executed.
 
@@ -37,6 +37,7 @@ and optional Ackredit before changing their integration boundaries.
 | Location | Purpose |
 | --- | --- |
 | `pharmacophoremt/` | Distributed model/modeler, screening, validation, codec and support adapters |
+| `pharmacophoremt_results/` | Distributed independent saved-run reader/writer; ArgDigest/SMonitor, no scientific-provider imports |
 | `molsysviewer_pharmacophoremt/` | Distributed addon; browser qualification remains separate/deferred |
 | `tests/`, `tests/data/` | Source contracts and frozen inputs |
 | `phmt_test_support/` | Unshipped fixture/evidence clients; not a molecular engine |
@@ -64,6 +65,24 @@ Ordinary `development_env.yaml` is not the complete scientific context. The
 public-provider receipt's203 selected passes/18 capability skips do not qualify
 absent modern MolSysMT APIs. The historical controlled `/tmp` prefix is now
 absent. A sibling's current `main` or a copied Conda directory does not recreate it.
+
+### Receiving a new packaged namespace
+
+Adding `pharmacophoremt_results` requires refreshing an older editable
+registration: its generated finder may still expose only the two original
+package roots. Reuse the canonical no-dependency editable-install route with the
+declared build requirements, then verify a fresh interpreter outside the checkout,
+without source-path overrides. Restart an existing interpreter to receive the
+new registration.
+
+The [2026-11-07 receiving](public_prepared_runs.md) first qualified the exact
+owned wheel, then refreshed only PHMT editable metadata and its ignored generated
+version cache to0.4.0+134.gee5d9fa. It used the verified cached versioningit2.3.0
+build-only overlay to satisfy~=2.0; the shared3.3.0 was not substituted and no
+provider was upgraded. Cold normal imports work, all154 Python files match the
+qualified wheel, and identical-runtime source reopens the complete installed run
+without new evaluations or writes. Earlier source/producer versions stay original.
+This local receiving is distinct from full environment closure and release support.
 
 ## Fresh controlled-source setup
 

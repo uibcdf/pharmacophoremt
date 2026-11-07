@@ -13,8 +13,8 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 ### Later development after the reviewed snapshot
 
 Recoverable prepared runs and the independent `pharmacophoremt_results` reader
-pass selected source controls and original-input receiving; owned installed
-receiving is pending. The
+pass selected source controls, original-input and bounded owned installed
+receiving. The
 [recipe](../cookbook/recoverable_prepared_screening.md) separates new confirmed
 deliveries from the authoritative complete saved view, and preserves terminal
 failures, attempts and original producer evidence. Public writing uses a new

@@ -14,7 +14,9 @@ attribution. Saved reading earns no new credit. Native quantity records remain
 opaque original explicit-unit evidence; no new molecular parser, optional engine
 or general quantity codec is introduced. The #108 source increment passes82
 scientific,94 administrative and21 reporting/archive cases, plus actual original
-input and guarded independent-reader controls. Owned installed receiving is next;
+input and guarded independent-reader controls. Same-file owned installed and
+normal editable receiving also pass; their [receipt](public_prepared_runs.md)
+keeps actual source/generated versions and own-metadata refresh separate.
 existing full source/public provider/support gates stay separate.
 
 This contract belongs to [#6](https://github.com/uibcdf/pharmacophoremt/issues/6).

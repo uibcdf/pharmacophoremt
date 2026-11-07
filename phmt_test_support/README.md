@@ -100,4 +100,7 @@ format/isolated command remain supported by that shim. New public writing uses
 a distinct versioned format; explicit historical reading does not migrate it.
 The PubChem3D harness now composes the public plan/resume/store for new execution;
 old pilot artifacts and receipts remain unchanged. Three helper digests change,
-with the private support count remaining64. Qualification is pending.
+with the private support count remaining64. The current
+[public contract/receipt](../devguide/public_prepared_runs.md) records197 selected
+local cases, original-input/source and bounded owned installed receiving. Full
+supported source/installed/public/platform qualification remains separate.

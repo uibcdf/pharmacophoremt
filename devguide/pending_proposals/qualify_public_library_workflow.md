@@ -172,5 +172,10 @@ no main-PHMT, molecular, numerical or attribution namespace.197 distinct local
 cases, both source recipe blocks and the migrated original-input callback pass.
 The first administrative namespace failure and subsequent pre-freeze binary-score
 review remain under separate original plans/attempts. Same-file owned installed
-receiving is next; no prospective plan or narrow source result clears full
-supported source/installed/public/platform or biological gates.
+receiving and normal editable receiving now pass. The current source runtime
+matches all154 qualified-wheel Python files and reopens the complete installed
+run with no new evaluation or byte changes. A cold normal-prefix import works
+after refreshing only owning-member editable metadata and ignored version cache;
+other provider versions/native artifacts remain unchanged. Next receive released
+support-provider floors/newer versions for the independent reader. No narrow
+result clears full supported source/installed/public/platform or biological gates.

@@ -6,8 +6,8 @@ The [public prepared-run task](public_prepared_runs.md) adds plan/create/open/
 resume composition and the independently importable `pharmacophoremt_results`
 namespace in the same distribution. New public writing uses an explicit versioned
 format; legacy reading is opt-in and never implies migration/reexecution.
-197 distinct selected local cases and original-input source recipes pass;
-owned identical-wheel receiving is pending. Original attempts and original
+197 distinct selected local cases, original-input source/same-wheel installed
+recipes and normal editable receiving pass in their bounded contexts. Original attempts and original
 native/source evidence remain preserved. This new post-review API/package/data
 format delta needs candidate review; the historical signature statements below
 do not cover it. Full supported dependency/source/installed/public/platform gates

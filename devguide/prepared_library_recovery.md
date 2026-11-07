@@ -3,7 +3,8 @@
 ## Later public implementation — 2026-11-07 UTC
 
 The [public prepared-run contract](public_prepared_runs.md) is now implemented
-and awaiting qualification. The old recovery helper contains exact public
+with197 selected local cases and bounded source/installed/development receiving.
+The old recovery helper contains exact public
 aliases; the old storage helper delegates to the one shipped private stdlib core.
 Historical reading preserves the old format; public writing uses a distinct
 versioned format and admits no implicit legacy reexecution. Changed helper/runtime
