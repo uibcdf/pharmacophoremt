@@ -208,3 +208,21 @@ The reader's support closure is separate from a complete PHMT installation or
 supported platform gate. Next compare guided/expert public journeys on the same
 retained inputs and deliver a solution to a measured usability gap. Molecular
 collection/source ownership, biological validation and scale retain their gates.
+
+## Guided use and complete saved exports — 2026-11-07 UTC
+
+The [guided/expert journey](../guided_expert_journey_receiving.md) measures equal
+effective settings, full native evidence, ranks and exports on the same original
+inputs. Cookbook query admission now precedes manifest creation, allowing a
+corrected same-destination retry without metadata consumption. The retained
+provider-attribution observation belongs to MolSysMT#292; no downstream policy
+override is introduced.
+
+The [public export contract](../saved_result_exports.md) replaces manual cookbook
+projection with `ScreeningRunView.to_jsonl(path)`/`.to_csv(path)`. All15 export/21
+reader source controls and full Ruff checks pass. Receipts retain original
+configuration, exact output hashes and pending counts; private staging protects
+existing and concurrent destinations. Original failed launch/lint and actual
+resource-limit gaps are retained. Owned installed receiving is still pending at
+this source checkpoint. This is not complete collection management, predictive
+validation, performance qualification or completion of milestone2/#108.

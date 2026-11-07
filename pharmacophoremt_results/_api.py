@@ -8,7 +8,7 @@ from pathlib import Path
 from argdigest import arg_digest
 from smonitor import signal
 
-from . import _store
+from . import _exports, _store
 from ._diagnostics import ScreeningRunError
 from ._digestion import config
 
@@ -299,6 +299,76 @@ class ScreeningRunView:
     def results(self):
         """Iterate detached full confirmed outcomes in manifest order."""
         return _iterate("read original outcomes", self._view.results())
+
+    @signal(tags=["results", "export", "jsonl"])
+    @arg_digest(config=config("ScreeningRunView.to_jsonl"))
+    def to_jsonl(self, path):
+        """Export every confirmed original outcome to a fresh UTF-8 JSONL file.
+
+        Parameters
+        ----------
+        path : str or os.PathLike
+            New destination in an existing directory. Existing destinations,
+            including symlinks, are never replaced.
+
+        Returns
+        -------
+        dict
+            Detached ``pharmacophoremt.screening-export@1`` receipt containing
+            original configuration, output byte count/SHA-256, exported record
+            count and pending work count. Full native evidence is retained.
+
+        Notes
+        -----
+        Streams all confirmations, including negatives and failures, in manifest
+        order. A private same-directory file is closed and hashed before exclusive
+        hard-link publication; unsupported filesystems fail. Prepublication errors
+        attempt cleanup without exposing a partial destination. Postpublication
+        cleanup errors carry ``published=True``, ``receipt`` and ``temporary_path``
+        in ``ScreeningRunError.extra``. Separate exports are not one transaction.
+        Saved query bytes and attempts remain in the authoritative database.
+        No science or attribution is executed. Full results can contain geometry;
+        callers own their disclosure. This does not qualify power-loss durability.
+
+        Examples
+        --------
+        >>> with ScreeningRunView.open('run.sqlite3') as view:
+        ...     receipt = view.to_jsonl('outcomes.jsonl')
+        """
+        return _invoke("export JSONL", _exports.export, self, path, "jsonl")
+
+    @signal(tags=["results", "export", "csv"])
+    @arg_digest(config=config("ScreeningRunView.to_csv"))
+    def to_csv(self, path):
+        """Export a complete scalar result table to a fresh UTF-8 CSV file.
+
+        Parameters
+        ----------
+        path : str or os.PathLike
+            New destination in an existing directory. Existing destinations,
+            including symlinks, are never replaced.
+
+        Returns
+        -------
+        dict
+            Detached ``pharmacophoremt.screening-export@1`` receipt with original
+            configuration, output identity and explicit confirmed/pending counts.
+
+        Notes
+        -----
+        Columns are ``work_key,source_key,occurrence_key,status,ranking_score,
+        score_method``. Manifest order, literal identifiers and zero scores are
+        preserved; unscored failures have empty score cells. Native geometry,
+        units and attribution remain available through ``results()``/``to_jsonl``.
+        Publication, cleanup and data-authority semantics match ``to_jsonl``.
+        An empty run writes only the header; pending work is not exported.
+
+        Examples
+        --------
+        >>> with ScreeningRunView.open('run.sqlite3') as view:
+        ...     receipt = view.to_csv('outcomes.csv')
+        """
+        return _invoke("export CSV", _exports.export, self, path, "csv")
 
     def close(self):
         """Release this read snapshot without changing saved evidence."""

@@ -201,6 +201,7 @@ required_paths = [
   "site-packages/pharmacophoremt_results/_api.py",
   "site-packages/pharmacophoremt_results/_diagnostics.py",
   "site-packages/pharmacophoremt_results/_digestion.py",
+  "site-packages/pharmacophoremt_results/_exports.py",
   "site-packages/pharmacophoremt_results/_meta.py",
   "site-packages/pharmacophoremt_results/_smonitor.py",
   "site-packages/pharmacophoremt_results/_store.py",

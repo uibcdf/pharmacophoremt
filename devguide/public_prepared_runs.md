@@ -26,6 +26,14 @@ namespaces. Their private storage core remains standard-library-only.
 This preserves meaningful historical reading without changing PHMT's intentional
 application-preserving eager unit-policy initialization.
 
+The [complete export contract](saved_result_exports.md) adds
+`ScreeningRunView.to_jsonl(path)` and `.to_csv(path)`, with a detached original
+configuration/byte-digest receipt and explicit pending counts. These methods use
+the same complete saved view, including zero negatives and confirmed failures.
+JSONL retains original native evidence; CSV projects scalar fields. A private
+file is completed before exclusive publication; existing destinations are never
+replaced. Export is separate from ranking and scientific resumption.
+
 ## Version and compatibility contracts
 
 New public stores write `pharmacophoremt.screening-run@1`. The legacy

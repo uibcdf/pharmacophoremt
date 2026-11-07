@@ -24,7 +24,6 @@ budget and frame/state0. Keep query, prepared data and settings unchanged while
 consuming. The application owns reader and optional attribution lifetimes.
 
 ```python
-import csv
 import json
 from contextlib import closing
 from pathlib import Path
@@ -91,27 +90,14 @@ def resume_and_export(
         with closing(entries), closing(run.resume(entries)) as outcomes:
             for outcome in outcomes:
                 newly_confirmed += 1
-    fields = [
-        'work_key', 'source_key', 'occurrence_key',
-        'status', 'ranking_score', 'score_method',
-    ]
     # Export the authoritative complete view, including earlier confirmations.
     with ScreeningRunView.open(str(run_path)) as view:
         summary = view.summary(score_method='seeded_hit@1')
-        with Path(jsonl_path).open('x', encoding='utf-8') as native_output, \
-             Path(csv_path).open('x', encoding='utf-8', newline='') as table:
-            writer = csv.DictWriter(table, fieldnames=fields)
-            writer.writeheader()
-            for outcome in view.results():
-                native_output.write(json.dumps(outcome, allow_nan=False) + '\n')
-                writer.writerow({
-                    **{key: outcome[key] for key in (
-                        'work_key', 'source_key', 'occurrence_key',
-                        'ranking_score', 'score_method',
-                    )},
-                    'status': outcome['native_result']['status'],
-                })
-    return {'newly_confirmed': newly_confirmed, 'saved': summary}
+        exports = {
+            'jsonl': view.to_jsonl(jsonl_path),
+            'csv': view.to_csv(csv_path),
+        }
+    return {'newly_confirmed': newly_confirmed, 'saved': summary, 'exports': exports}
 ```
 
 ```python
@@ -126,8 +112,18 @@ summary = resume_and_export(
 
 To continue an existing run in another session, define the functions and call
 only `resume_and_export` with the same compatible query, manifest, declarations
-and prepared sequence. Creation and export refuse existing destinations. Export
-failure can leave partial files; the saved confirmed run remains authoritative.
+and prepared sequence. Creation and export refuse existing destinations. Each
+export publishes a complete file after writing; the two exports are separate
+operations. If the second fails, the first remains complete. Inspect its returned
+receipt or use a fresh destination for a later export; do not resume science just
+to export saved results. The database retains query bytes and attempt history.
+
+Export needs an existing output directory and filesystem support for exclusive
+hard links. Before publication, failure leaves no new destination and attempts to
+remove its private staging file. After publication, a cleanup failure raises
+`ScreeningRunError` with `published=True`, `receipt` and `temporary_path` in
+`error.extra`; the destination is complete. Cleanup failures remain visible.
+Receipts retain original configuration, actual bytes/SHA-256 and pending counts.
 Use fresh export destinations rather than appending generator deliveries.
 
 Query and setting admission precede manifest creation and metadata traversal.

@@ -1,0 +1,77 @@
+{
+  "schema": "pharmacophoremt.saved-result-exports-execution@1",
+  "parent_source": "654586f752db0ca3b8abc6e72d672f91ba820f42",
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "limits": {
+    "rlimit_as_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "aggregate_memory": "not enforced: user systemd bus unavailable",
+    "swap": "not enforced",
+    "tasks": "not enforced",
+    "cpu_quota": "not enforced; affinity one CPU"
+  },
+  "affinity": [
+    19
+  ],
+  "nice": 19,
+  "memory_entry": "MemTotal:       63455508 kB\nMemFree:        57351856 kB\nMemAvailable:   61231064 kB\nBuffers:          456124 kB\nCached:          3851392 kB\nSwapCached:            0 kB\nActive:          2045048 kB\nInactive:        3027400 kB\nActive(anon):     795780 kB\nInactive(anon):        0 kB\nActive(file):    1249268 kB\nInactive(file):  3027400 kB\nUnevictable:       10256 kB\nMlocked:           10256 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388604 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              8868 kB\nWriteback:             0 kB\nAnonPages:        775996 kB\nMapped:           896280 kB\nShmem:             23552 kB\nKReclaimable:     218332 kB\nSlab:             455552 kB\nSReclaimable:     218332 kB\nSUnreclaim:       237220 kB\nKernelStack:       14640 kB\nPageTables:        20016 kB\nSecPageTables:      5128 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:    5536068 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      220968 kB\nVmallocChunk:          0 kB\nPercpu:            44640 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    157696 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      329504 kB\nDirectMap2M:     4792320 kB\nDirectMap1G:    63963136 kB\n",
+  "pressure_entry": "some avg10=0.00 avg60=0.00 avg300=0.00 total=939\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=608\n",
+  "source_files": {
+    "pharmacophoremt_results/__init__.py": {
+      "bytes": 992,
+      "sha256": "79ff398e277ff7034cc2d4abfdcf833bfbafd7354930862b36284eb552b62d35"
+    },
+    "pharmacophoremt_results/__main__.py": {
+      "bytes": 105,
+      "sha256": "05dafb71ef9561b8c366e9a3034ec477ddab8ed62f7e9d626a23ff783036a252"
+    },
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 16976,
+      "sha256": "7fea89d6f817afb71edd12df2165150960394942fbd494987bebf244d2d318c2"
+    },
+    "pharmacophoremt_results/_diagnostics.py": {
+      "bytes": 1212,
+      "sha256": "0fbd0ec419d4cf6ee6a73c4f86914a82c86a91ec9482164724b91218efc950b5"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3277,
+      "sha256": "8dd92dada24b86637c726543eece515364bca052575d7dafb1714fe44c1347a7"
+    },
+    "pharmacophoremt_results/_exports.py": {
+      "bytes": 3800,
+      "sha256": "6cd4da88c975cc42ef72b28df973a02c51b34173bb2f07558584d96e501bdd55"
+    },
+    "pharmacophoremt_results/_meta.py": {
+      "bytes": 208,
+      "sha256": "9398bd0b3b99904b774618a55cb021d301b78d4a7add332f5b517bcbca746e83"
+    },
+    "pharmacophoremt_results/_smonitor.py": {
+      "bytes": 621,
+      "sha256": "9d3c2f67b9cb16d567e0832ff16db121f06ce584f981c0224f96a01ee1e29a09"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 32437,
+      "sha256": "8cff52f75e6179208e5e4eb0a4e023c8884b59789a439c0f9f735d581a5d1b95"
+    },
+    "devtools/tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    },
+    "devtools/tests/test_public_run_results.py": {
+      "bytes": 22042,
+      "sha256": "4969bfda4b3ad91049a4a1062167a49173c8224d1767f50cc85c7eef98cb3b34"
+    },
+    "devtools/conda-build/resources.toml": {
+      "bytes": 28910,
+      "sha256": "7a763a4264ebfe7671d0c19e71bf85bf9707d8fb99857aee0fb92e7c54cada2b"
+    },
+    "docs/content/cookbook/recoverable_prepared_screening.md": {
+      "bytes": 8298,
+      "sha256": "99b76435b7c9f53ddb71d7831eb91dfdc7fb581e0bd969d7f0593f12598321c6"
+    }
+  },
+  "actual_limits_note": "Per-process RLIMIT_AS fallback after unavailable systemd user bus; no aggregate memory/no-swap/tasks/CPU quota enforcement.",
+  "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-saved-exports-20261107-0emth8zc"
+}

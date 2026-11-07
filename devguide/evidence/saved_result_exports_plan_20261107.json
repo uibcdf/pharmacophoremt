@@ -1,0 +1,33 @@
+{
+  "schema": "pharmacophoremt.saved-result-exports-plan@1",
+  "date_utc": "2026-11-07",
+  "owners": ["LMMV", "dprada"],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "654586f752db0ca3b8abc6e72d672f91ba820f42",
+  "question": "Can guided and expert callers export complete saved outcomes without changing source evidence, dropping negatives/failures, loading scientific providers or exposing partial destinations?",
+  "contract": "devguide/saved_result_exports.md",
+  "controls": [
+    "Full JSONL equality and six-column CSV projection in manifest order, preserving zero, failure, repeated source IDs, Unicode, quotes and newlines",
+    "Detached receipt with original complete configuration, canonical configuration hash, actual output bytes/hash and explicit pending coverage",
+    "Empty, partial and explicitly admitted legacy runs with unchanged source files and historical scores",
+    "Existing file/directory/symlink and concurrent destination refusal; closed view and unknown option admission before file effects",
+    "Injected mid-stream, write, hash and publication failures; interruption and cleanup failures preserve original causes and visible publication state",
+    "Fresh guarded reader/export execution without scientific, citation or development-support imports",
+    "Existing public reader controls and relevant distribution/reporting/archive checks",
+    "One owned wheel containing the exact changed runtime; source-free installed receiving with published support providers and original authentic complete/partial/legacy databases"
+  ],
+  "resources": {
+    "serial": true,
+    "cpu": 19,
+    "cpu_quota_percent": 100,
+    "backend_threads": 1,
+    "memory_max_bytes": 536870912,
+    "memory_swap_max_bytes": 0,
+    "tasks_max": 32,
+    "nice": 19,
+    "io_priority": "idle",
+    "entry": "Check available memory and memory/swap pressure before heavy work; record actual enforced limits"
+  },
+  "publication": "Own control code, scalar observations and receipts only; original molecular/query/native/database bodies stay local",
+  "limits": "Linux/Python3.14 bounded receiving; no scale, speedup, biological validity, new library connector or full supported installed/public qualification"
+}

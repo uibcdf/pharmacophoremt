@@ -92,8 +92,8 @@ guarded readers and the migrated original-input callback. Normal editable receiv
 also passes with identical runtime code and no provider changes. The
 [released-support reader receiving](reader_public_provider_receiving.md) now
 measures four bounded cells and selects SMonitor>=0.22.1 from actual missing-error
-observations on0.19. Next execute guided/expert journeys side by side and address
-a measured usability gap; full source/installed/public gates remain separate.
+observations on0.19. Guided/expert parity and query-error recovery are measured;
+full source/installed/public gates remain separate.
 Managed molecular collections
 remain MolSysMT#624-owned; source work is not full milestone2 delivery.
 
@@ -103,7 +103,9 @@ and seals the [own/scalar receiving evidence](evidence/reader_public_providers_2
 The [guided/expert comparison](guided_expert_journey_receiving.md) now preserves
 full effective/native/export equality and fixes the observed cookbook query-error
 retry trap in source and the same owned wheel. It is no human usability study.
-Next deliver public complete-view export from the [current checkpoint](checkpoint.md).
+The [complete-view exporter](saved_result_exports.md) now passes15 export/21 reader
+source controls. Next receive the exact owned installed artifact independently,
+then continue broader usable source operations from the [checkpoint](checkpoint.md).
 No release or full supported gate is established by this reader increment.
 
 ## Current priority: classical consolidation

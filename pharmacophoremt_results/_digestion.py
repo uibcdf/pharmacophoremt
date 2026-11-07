@@ -106,7 +106,14 @@ _METHODS = {
         "summary",
         "top_results",
     ),
-    "ScreeningRunView": ("open", "results", "summary", "top_results"),
+    "ScreeningRunView": (
+        "open",
+        "results",
+        "summary",
+        "top_results",
+        "to_jsonl",
+        "to_csv",
+    ),
 }
 CONTRACTS = [
     FunctionContract(
