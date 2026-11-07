@@ -1,7 +1,6 @@
 # Current development checkpoint
 
-Maintained 2026-11-07 UTC after the fixed PubChem3D pilot and quantity-report
-correction, owners LMMV/dprada.
+Maintained 2026-11-07 UTC after read-only saved-run inspection, owners LMMV/dprada.
 Start with [onboarding](onboarding.md), [decisions/workstreams](decisions_and_workstreams.md)
 and [migration](machine_migration.md). The former long log is preserved verbatim
 after its preface in [checkpoint history](checkpoint_history_20261106.md).
@@ -27,7 +26,7 @@ The addon remains deferred; its source exists but live-browser acceptance is #58
 | #103 two receptor studies | Preparation/analytical controls exist; no full admitted biological study | Complete source/cohort/preparation admission, freeze the full comparison/evaluation plan, then execute |
 | #66 ERalpha | Original Sun2006/Xin2023/Gungor2006/Scott2023 methods remain unresolved; original pools/thresholds/exposure retained | New authorized access lead; don't repeat exhausted routes or silently substitute a source |
 | #106 BRD4 admission | All nine fixed leads have bounded method reviews; prior capacity/coupled outcomes and seven held sources remain distinct | Resolve source-specific material/data authority, especially experimental/predicted provenance in 1805218; no automatic activity admission |
-| #108 public-library workflow | [Fixed PubChem3D pilot](pubchem3d_receiving_pilot.md): 3 original conformers prepared/scored, recovery/native composition agree; quantity-report correction verifies nine sealed inventories and preserves both prior failures | Receive provider collection/snapshot contract [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624); qualify broader real inputs and guided/expert API before managed-library/index promises |
+| #108 public-library workflow | [Fixed PubChem3D pilot](pubchem3d_receiving_pilot.md), quantity correction and [read-only run inspection](reference_run_inspection.md): work coverage, stable bounded observed ranking and historical native evidence preserved | Receive provider collection/snapshot contract [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624); qualify broader real inputs, reusable search assets and guided/expert API before managed-library/index promises |
 | #128 tool-study registry | [Public index](https://github.com/uibcdf/pharmacophoremt/discussions/129) and ten documentary tool records, with forms/guidance in source | Follow [registry guidance](pharmacophore_tools_registry.md); distinguish documentary/executed/benchmark evidence and track actual template delivery/rendering in #128 |
 | MolSysMT | #105 native aromatic-N received; #323/#375/#447 remain open at this handoff | Consume supported H-refinement/carboxylate/grouping contracts; report actual missing general tools there |
 | #95/#10/#23 | Proposed intermediate release and separate public/installed/support gates remain partial | Qualify actual public provider capabilities and exact candidate/source/file/platform gates before freeze |

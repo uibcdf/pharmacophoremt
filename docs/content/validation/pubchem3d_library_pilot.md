@@ -85,3 +85,15 @@ failed on an unrelated metadata key; a separate read-only verification checks
 the exact declared inventories successfully. Both statuses and the original
 artifacts remain retained. No additional source request or biological evidence
 is introduced, and the earlier published archive is preserved.
+
+## Reading saved results without recalculation
+
+The separate [read-only inspection control](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/reference_run_inspection.md)
+reads this case's unchanged saved database without molecular providers. It
+reports three committed/scored work items, two matches, one valid zero-score
+nonmatch, and no failed or pending work. Scores descend with original manifest
+order resolving the two hits' tie: CID2244, CID2519, then CID1983. Full native
+payloads remain equal to the original observations and database/directory bytes
+are unchanged. This is historical evidence reading, not another screening run.
+Its [own receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/reference_run_inspection_20261107_summary.json)
+separates the new analytical guards from the three previously computed records.

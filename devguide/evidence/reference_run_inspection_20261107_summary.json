@@ -1,0 +1,375 @@
+{
+  "schema": "pharmacophoremt.reference-run-inspection-summary@1",
+  "recorded_at_utc": "2026-11-07T02:35:10.893403+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "case_id": "reference-run-inspection-20261107",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "evidence_class": "New analytical saved-work reader/CLI controls plus read-only reuse of historical PubChem3D evidence; no new molecular screening or biological validation.",
+  "prospective_plan": {
+    "path": "reference_run_inspection_plan_20261107.json",
+    "sha256": "008dbc853ee75db6401e51f35b59dd0c44cd09ac774a31f870eeebddfe94c11b",
+    "bytes": 4458,
+    "declaration": "https://github.com/uibcdf/pharmacophoremt/issues/108#issuecomment-6701035981"
+  },
+  "producer_head": "a7d305cbfc3f26710f124df06e038efb9fd68b7d",
+  "selected_source_files": {
+    "phmt_test_support/reference_run_store.py": {
+      "sha256": "b1747b9ebfb1c8db5048259036018157c12843ba173f9502c4dd5143ee440675",
+      "bytes": 30551
+    },
+    "devtools/tests/test_reference_run_inspection.py": {
+      "sha256": "a6440b4931fb126e7067da189fe4386ff95d6307fcd96f28f58a2026ed7b6358",
+      "bytes": 19752
+    },
+    "devtools/tests/test_reference_run_store.py": {
+      "sha256": "bc28145f2276f1450b118a89e0954e159ff00836af69cbdf0eb496a39392e132",
+      "bytes": 21794
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "4b89611d2424e39c3ed175d403e3542f3b26ec16a7396ed0e5ea0b855a54b288",
+      "bytes": 25571
+    },
+    "devtools/conda-build/resources.toml": {
+      "sha256": "7f5bf86e24a5ff760f1d5ab51f00d01684b646c9b4b59b058d7d176a7053f509",
+      "bytes": 27908
+    }
+  },
+  "original_outputs": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-inspection-20261107-04zbgx29",
+  "unit_result": {
+    "tests": 65,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true
+  },
+  "completed_distinct_local_test_cases": 86,
+  "test_count_limit": "20 new inspection/CLI +21 original ledger +24 affected distribution +3 reporting +18 archive. Historical three records, assertions/subtests and repeated prior runs are not extra test cases. No broad administration or full scientific suite claimed.",
+  "historical_read_only_inspection": {
+    "summary": {
+      "run_id": "pubchem3d-fixed-three-pilot@1",
+      "parent_run_id": null,
+      "score_method": "seeded_hit@1",
+      "counts": {
+        "committed_work": 3,
+        "scored_work": 3,
+        "matched_work": 2,
+        "not_matched_work": 1,
+        "failed_work": 0,
+        "declared_work": 3,
+        "pending_work": 0
+      },
+      "attempts": {
+        "started": 3,
+        "staged": 3,
+        "committed": 3
+      },
+      "manifest_work_complete": true,
+      "ranking_scope": "observed_scored_work_only"
+    },
+    "selected_source_order": [
+      "PubChemCID:2244",
+      "PubChemCID:2519",
+      "PubChemCID:1983"
+    ],
+    "selected_manifest_ordinals": [
+      1,
+      2,
+      0
+    ],
+    "saved_native_payloads_equal": true,
+    "original_producer_context_preserved": true,
+    "producer_query_sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+    "original_artifacts_unchanged": true,
+    "original_directory_identities": {
+      "cid-1983/import-report.json": {
+        "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+        "bytes": 986
+      },
+      "cid-1983/preparation.json": {
+        "sha256": "eef07bad73f5f14a76c94e9bd48b510825e0fbd9d6ae4950ff21a1cb1b23141e",
+        "bytes": 97435
+      },
+      "cid-1983/prepared.h5msm": {
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344
+      },
+      "cid-2244/import-report.json": {
+        "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+        "bytes": 986
+      },
+      "cid-2244/preparation.json": {
+        "sha256": "715a1088a50ee8596411ef29382e52c85e74042eddcf6dc195634117f7c549cc",
+        "bytes": 100790
+      },
+      "cid-2244/prepared.h5msm": {
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328
+      },
+      "cid-2519/import-report.json": {
+        "sha256": "e6ca337a49e20cabd08913c553a50edb7dc6c6838b8d589a05561371f14c5991",
+        "bytes": 986
+      },
+      "cid-2519/preparation.json": {
+        "sha256": "80638db51ce69fd1ceb301e3de488b2a12afddaac480e1f03e0f9c9f3159955a",
+        "bytes": 114186
+      },
+      "cid-2519/prepared.h5msm": {
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328
+      },
+      "composed-outcomes.json": {
+        "sha256": "f404c23c031922259b5956075a3642e02282f5eb2e210850514b3b4a5e4d0700",
+        "bytes": 91393
+      },
+      "native-outcomes.json": {
+        "sha256": "369f3f7cf0b1868d7495636e2eb5a7b8de79399cbbd703fa42c9c9e288832336",
+        "bytes": 91393
+      },
+      "query.json": {
+        "sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+        "bytes": 21959
+      },
+      "result.json": {
+        "sha256": "562d3a52f622935cb4957bd5af7a5a46fb94cb469e4999bd2e02bb97a352f652",
+        "bytes": 10781
+      },
+      "screening.sqlite3": {
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3",
+        "bytes": 118784
+      },
+      "snapshot-manifest.json": {
+        "sha256": "f1cbd7a82b346f9a5708887152ae8379991e265544a00336b1457226abd565ff",
+        "bytes": 2797
+      },
+      "stages.jsonl": {
+        "sha256": "9173cc7d96f37a999498d404440fcc4193d8eb3107b503ac20070a24ab939985",
+        "bytes": 1240
+      },
+      "translation-control.json": {
+        "sha256": "86007b013a60a49952dd402f910d168642522f88d43064ee99499b171684b742",
+        "bytes": 29969
+      },
+      "work.jsonl": {
+        "sha256": "860509cf143759b1472c5b4859126a9d98fc6aa213fcba09d64aa68e51c42e31",
+        "bytes": 399
+      }
+    },
+    "ledger_identity": {
+      "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3",
+      "bytes": 118784
+    },
+    "cli_exit_code": 0,
+    "new_scientific_calculations": 0,
+    "new_http_requests": 0,
+    "source_attribution": "Historical native provenance preserved as data; Ackredit not imported and no new science credited."
+  },
+  "context": {
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "sqlite_version": "3.54.1",
+    "limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "memory_before_kib": {
+      "MemAvailable": 49973336,
+      "SwapFree": 8388568
+    },
+    "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=246414\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=245426\n",
+    "source_plan_identity": {
+      "sha256": "008dbc853ee75db6401e51f35b59dd0c44cd09ac774a31f870eeebddfe94c11b",
+      "bytes": 4458
+    },
+    "scope": "Administrative guards and read-only historical evidence only; no molecular computations."
+  },
+  "control": {
+    "exit_code": 0,
+    "unit_counts": {
+      "tests": 65,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "source_files_unchanged": true,
+    "forbidden_imports": [
+      "ackredit",
+      "molsysmt",
+      "numpy",
+      "pharmacophoremt",
+      "rdkit",
+      "scipy"
+    ],
+    "loaded_forbidden_modules": [],
+    "cgroup_peak_bytes": 77295616,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "duration_observation_only": {
+      "value": 7.196803797996836,
+      "unit": "s"
+    },
+    "performance_claim": false
+  },
+  "governance": {
+    "checks": [
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "final-check-0.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "final-check-1.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-2.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "final-check-3.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-4.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "output": "final-check-5.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      },
+      {
+        "arguments": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/check_dependency_routes.py",
+          "--declared-only"
+        ],
+        "exit_code": 0,
+        "output": "final-check-6.log",
+        "limits": "CPU19/quota100%,nice19,idleIO,cgroup512MiB/noSwap,child90sCPU/120swall; no RLIMIT_AS due Git pack mappings"
+      }
+    ],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 384843776,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n"
+  },
+  "provider_context": {
+    "local_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+    "local_worktree": [],
+    "no_provider_update_performed": true,
+    "remote_observation": {
+      "observation": "Connected read-only GitHub branch response; no local fetch/prune or provider update",
+      "url": "https://api.github.com/repos/uibcdf/molsysmt/branches/main",
+      "remote_sha": "add779264adc6610f3bbd381c2da617a56d14e73",
+      "provider_collection_issue": {
+        "number": 624,
+        "state": "open",
+        "observed_comments": 1
+      },
+      "local_snapshot": "offline_suite_status.json",
+      "cached_upstream_limit": "32 behind refers only to cached origin/main; no count inferred for the observed newer remote SHA.",
+      "rejected_action": "suite_status.py with default fetch/prune; automatic review rejected possible sibling ref mutations. Safe alternative --no-fetch used."
+    }
+  },
+  "sdk": {
+    "head": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "clean": true,
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-inspection-20261107-04zbgx29/sdk",
+    "provisioning": "Owned isolated local shared clone; no sibling fetch/prune or worktree update."
+  },
+  "review": "Independent architecture/integrity review, separate guard author and final static review; added later-higher-score replacement and citation-import absence controls.",
+  "full_evidence": {
+    "path": "reference_run_inspection_20261107_full.json.gz",
+    "compressed_sha256": "8db9e1c5a66058e59ab3791eab5bb5916df552e6bc3a7094d57e8e5fce7fd426",
+    "compressed_bytes": 50889,
+    "uncompressed_sha256": "a2bcc709ca0a039a8aff3689a3ab70dc67cb6a6f2c45e4f7be28677e753d62bf",
+    "uncompressed_bytes": 227465,
+    "own_file_count": 32,
+    "scope": "Complete owned control/scalar/source projection, not a portable copy of original molecular/query/native payloads or SQLite database."
+  },
+  "execution_boundaries": {
+    "new_molecular_http_requests": 0,
+    "new_molecular_or_scoring_calculations": 0,
+    "current_scientific_provider_imports": [],
+    "new_citation_capture": false,
+    "public_runtime_api_added": false,
+    "ledger_schema_changed": false,
+    "remote_ci_dispatched": false
+  },
+  "pending": [
+    "General molecular collection/snapshot ownership MolSysMT#624",
+    "Broader real-input/API/feature-asset/index qualification #108",
+    "Separate biological studies and source/cohort admission",
+    "Full supported source/installed/public/platform gates #9/#23 and prior broad administrative OOM"
+  ],
+  "temporary_resources": {
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "review_date": "2026-11-20",
+    "policy": "Retain original immutable history and new raw control outputs; remove only isolated SDK after checks. No sibling ref/worktree/provider update."
+  },
+  "approval_review_exception": "Default suite-status fetch/prune was rejected for sibling ref mutation risk; safer explicit --no-fetch local snapshot and connected read-only remote observation used. No alternative fetch, upgrade or blocking user approval remains."
+}

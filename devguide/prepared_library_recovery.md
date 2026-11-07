@@ -8,6 +8,11 @@ unshipped transaction/recovery experiment. Source lives in
 [`prepared_library_recovery.py`](../phmt_test_support/prepared_library_recovery.py).
 Names and SQLite layout remain experimental, with no new public runtime API.
 
+The later [read-only inspection](reference_run_inspection.md) reuses this same
+ledger to expose work coverage and bounded observed rankings without current
+scientific providers or reexecution. It has separate controls and evidence;
+it does not weaken the compatibility checks for resuming a run.
+
 ## Binding a run
 
 The producer supplies a saved native JSON query, a PHMT work manifest and explicit

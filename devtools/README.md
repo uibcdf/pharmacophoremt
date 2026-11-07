@@ -87,6 +87,12 @@ manifest validation, single-owner transactions, immutable confirmed outcomes and
 saved replay. See the [controlled recovery contract](../devguide/prepared_library_recovery.md)
 for publication versus delivery, producer preconditions and the separate evidence.
 
+`python phmt_test_support/reference_run_store.py RUN.sqlite3 --score-method seeded_hit@1 --limit 10`
+opens a saved run read-only and prints work coverage plus a bounded scalar view
+of observed scores. It needs only the standard library and performs no molecular
+work. [Inspection contract](../devguide/reference_run_inspection.md) explains
+failures/pending work, ordinal ties and the source-only `ReferenceRunView`.
+
 `python -m phmt_test_support.pubchem3d_receiving_pilot PLAN ACQUISITION OUTPUT`
 executes the opt-in fixed-three receiving case **offline**, from authorized
 original bytes whose plan/order/hash admission passes. It uses a fresh output

@@ -6,6 +6,7 @@ qualification, distributed execution nor exactly-once external result delivery.
 """
 
 import hashlib
+import heapq
 import json
 import math
 import os
@@ -605,3 +606,194 @@ class ReferenceLedger:
 
     def __exit__(self, exc_type, exc_value, traceback):
         self.close()
+
+
+class ReferenceRunView:
+    """Read historical reference evidence without resuming or recalculating it.
+
+    The reader owns a read-only SQLite snapshot until closed. Close the ledger's
+    exclusive writer before opening a view, and close the view before resuming.
+    Opening verifies every stored record and attempt, including unpublished work.
+    Ranking scans committed outcomes and retains at most ``limit`` payloads;
+    this is not an index or a constant-time progress operation.
+    """
+
+    def __init__(self, ledger):
+        self._ledger = ledger
+
+    @classmethod
+    def open(cls, path):
+        connection = sqlite3.connect(
+            Path(path).resolve().as_uri() + "?mode=ro",
+            uri=True,
+            timeout=0,
+            isolation_level=None,
+        )
+        try:
+            connection.execute("PRAGMA query_only=ON")
+            if connection.execute("PRAGMA query_only").fetchone() != (1,):
+                raise ValueError("read-only ledger inspection is unavailable")
+            if connection.execute("PRAGMA journal_mode").fetchone() != ("delete",):
+                raise ValueError("reference ledgers require DELETE journal mode")
+            connection.execute("BEGIN")
+            configuration, query_bytes = ReferenceLedger._read_configuration(connection)
+            ledger = ReferenceLedger(connection, configuration, query_bytes)
+            ledger._verify_records()
+            return cls(ledger)
+        except BaseException:
+            connection.close()
+            raise
+
+    @property
+    def configuration(self):
+        """Detach original producer context; do not compare current providers."""
+        self._ledger._db()
+        return _json_load(canonical_json(self._ledger._configuration))
+
+    @property
+    def query_bytes(self):
+        self._ledger._db()
+        return self._ledger.query_bytes
+
+    def results(self):
+        """Yield full saved terminal outcomes in manifest order, including failures."""
+        yield from self._ledger.results()
+
+    def summary(self, *, score_method):
+        """Count declared work and publication coverage under one saved criterion."""
+        return self._inspect(score_method, limit=0)["summary"]
+
+    def top_results(self, *, score_method, limit):
+        """Select observed scored work, retaining negatives and stable ordinal ties."""
+        if type(limit) is not int or limit < 0:
+            raise ValueError("limit must be a nonnegative integer")
+        return self._inspect(score_method, limit=limit)
+
+    def _inspect(self, score_method, *, limit):
+        if type(score_method) is not str or score_method not in {
+            "seeded_hit@1",
+            "checked_pose_coverage@1",
+        }:
+            raise ValueError("choose an explicit supported versioned score criterion")
+        connection = self._ledger._db()
+        configuration = self._ledger._configuration
+        execution = configuration["context"].get("execution", {})
+        if type(execution) is not dict:
+            raise ValueError("execution context must be a mapping")
+        declared = execution.get("score_method")
+        if (
+            declared is not None
+            and score_method != _key(declared, "score_method") + "@1"
+        ):
+            raise ValueError("requested score criterion differs from saved execution")
+        counts = dict.fromkeys(
+            (
+                "committed_work",
+                "scored_work",
+                "matched_work",
+                "not_matched_work",
+                "failed_work",
+            ),
+            0,
+        )
+        counts["declared_work"] = configuration["work_count"]
+        heap = []
+        for ordinal, work_key, payload, digest in connection.execute(
+            "SELECT w.ordinal, o.work_key, a.payload, a.digest FROM work w "
+            "JOIN outcomes o ON o.work_key=w.work_key "
+            "JOIN attempts a ON a.attempt_id=o.attempt_id ORDER BY w.ordinal"
+        ):
+            outcome = self._ledger._outcome(work_key, payload, digest)
+            if outcome["score_method"] != score_method:
+                raise ValueError("saved outcomes use a different score criterion")
+            counts["committed_work"] += 1
+            counts[outcome["native_result"]["status"] + "_work"] += 1
+            score = outcome["ranking_score"]
+            if score is not None:
+                counts["scored_work"] += 1
+                if limit:
+                    # A later ordinal loses a tie; unique ordinals avoid comparing dicts.
+                    candidate = (score, -ordinal, outcome)
+                    if len(heap) < limit:
+                        heapq.heappush(heap, candidate)
+                    elif candidate[:2] > heap[0][:2]:
+                        heapq.heapreplace(heap, candidate)
+        counts["pending_work"] = counts["declared_work"] - counts["committed_work"]
+        started, staged, committed = connection.execute(
+            "SELECT COUNT(*), COALESCE(SUM(payload IS NOT NULL), 0), "
+            "COALESCE(SUM(committed), 0) FROM attempts"
+        ).fetchone()
+        summary = dict(
+            run_id=configuration["run_id"],
+            parent_run_id=configuration["parent_run_id"],
+            score_method=score_method,
+            counts=counts,
+            attempts=dict(started=started, staged=staged, committed=committed),
+            manifest_work_complete=counts["pending_work"] == 0,
+            ranking_scope="observed_scored_work_only",
+        )
+        return dict(
+            summary=summary,
+            limit=limit,
+            records=[
+                dict(manifest_ordinal=-ordinal, outcome=outcome)
+                for _, ordinal, outcome in sorted(
+                    heap, key=lambda item: (-item[0], -item[1])
+                )
+            ],
+        )
+
+    def close(self):
+        self._ledger.close()
+
+    def __enter__(self):
+        self._ledger._db()
+        return self
+
+    def __exit__(self, exc_type, exc_value, traceback):
+        self.close()
+
+
+def main(argv=None):
+    """Print a bounded scalar development view; never execute saved code/science."""
+    import argparse
+
+    parser = argparse.ArgumentParser(description=ReferenceRunView.__doc__)
+    parser.add_argument("ledger", type=Path)
+    parser.add_argument(
+        "--score-method",
+        required=True,
+        choices=("seeded_hit@1", "checked_pose_coverage@1"),
+    )
+    parser.add_argument("--limit", type=int, default=10)
+    arguments = parser.parse_args(argv)
+    try:
+        with ReferenceRunView.open(arguments.ledger) as view:
+            result = view.top_results(
+                score_method=arguments.score_method, limit=arguments.limit
+            )
+        result["records"] = [
+            {
+                "manifest_ordinal": record["manifest_ordinal"],
+                **{
+                    name: record["outcome"][name]
+                    for name in (
+                        "work_key",
+                        "source_key",
+                        "occurrence_key",
+                        "ranking_score",
+                        "score_method",
+                    )
+                },
+                "status": record["outcome"]["native_result"]["status"],
+            }
+            for record in result["records"]
+        ]
+        print(json.dumps(result, indent=2, ensure_ascii=False, allow_nan=False))
+    except (OSError, ValueError, sqlite3.Error) as error:
+        parser.error(str(error))
+    return 0
+
+
+if __name__ == "__main__":
+    raise SystemExit(main())

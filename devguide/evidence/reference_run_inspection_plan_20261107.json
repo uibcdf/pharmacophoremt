@@ -1,0 +1,85 @@
+{
+  "schema": "pharmacophoremt.reference-run-inspection-plan@1",
+  "recorded_at_utc": "2026-11-07T02:25:54.753257+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "a7d305cbfc3f26710f124df06e038efb9fd68b7d",
+  "scope": "Unshipped read-only saved-work inspection; no new acquisition, chemistry or screening and no public API/schema freeze.",
+  "implementation": "ReferenceRunView in existing phmt_test_support/reference_run_store.py; reuse all existing configuration and record integrity checks.",
+  "acceptance": [
+    "Read-only SQLite transaction, query_only ON, no implicit creation or external query/manifest/current molecular-provider requirement",
+    "All stored records/attempts verified; detached original producer metadata and native results preserved",
+    "Exact declared/committed/scored/matched/nonmatched/failed/pending work counts; unpublished attempts remain pending",
+    "Explicit supported saved criterion; mismatch or mixed criteria rejected rather than compared",
+    "Observed top-K with score descending and manifest ordinal ties, valid zeros eligible; bounded retained heap, no full materialization",
+    "Known earlier PubChem3D attempt3 ledger: declared/committed/scored3, matched2/nonmatched1/failed0/pending0, observed order CID2244 then2519 then1983",
+    "No evidence alteration: hashes and directory inventory unchanged after historical inspection",
+    "Focused stdlib-only guards plus affected administration/governance and local lint checks under shared-workstation limits"
+  ],
+  "limits": {
+    "logical_cpu": 19,
+    "backend_threads": 1,
+    "cpu_quota_percent": 100,
+    "memory_bytes": 536870912,
+    "swap_bytes": 0,
+    "tasks": 32,
+    "nice": 19,
+    "io": "idle"
+  },
+  "limitations": [
+    "Repeated historical saved evidence is not a new screening result",
+    "Work counts do not imply independent compounds or chemical/biological completion",
+    "TopK covers observed scored work only; no indexed-query or throughput claim",
+    "Full source/installed/public/platform gates #9/#23 remain separate; no manual CI dispatch"
+  ],
+  "provider_state_inspection": "Automatic review rejected fetch/prune; explicitly offline --no-fetch snapshot preserves sibling refs, with connected GitHub read-only issue/branch observation recorded separately.",
+  "original_pubchem_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j",
+  "frozen_at_utc": "2026-11-07T02:28:19.251866+00:00",
+  "source_files": {
+    "phmt_test_support/reference_run_store.py": {
+      "sha256": "b1747b9ebfb1c8db5048259036018157c12843ba173f9502c4dd5143ee440675",
+      "bytes": 30551
+    },
+    "devtools/tests/test_reference_run_inspection.py": {
+      "sha256": "a6440b4931fb126e7067da189fe4386ff95d6307fcd96f28f58a2026ed7b6358",
+      "bytes": 19752
+    },
+    "devtools/tests/test_reference_run_store.py": {
+      "sha256": "bc28145f2276f1450b118a89e0954e159ff00836af69cbdf0eb496a39392e132",
+      "bytes": 21794
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "4b89611d2424e39c3ed175d403e3542f3b26ec16a7396ed0e5ea0b855a54b288",
+      "bytes": 25571
+    },
+    "devtools/conda-build/resources.toml": {
+      "sha256": "7f5bf86e24a5ff760f1d5ab51f00d01684b646c9b4b59b058d7d176a7053f509",
+      "bytes": 27908
+    }
+  },
+  "unit_selectors": [
+    "test_reference_run_inspection.py",
+    "test_reference_run_store.py",
+    "test_distribution_contract.py"
+  ],
+  "expected_administrative_tests": 65,
+  "expected_governance_tests": {
+    "reporting": 3,
+    "archive": 18
+  },
+  "original_saved_ledger": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/screening.sqlite3",
+    "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3",
+    "bytes": 118784
+  },
+  "expected_saved_order": [
+    "PubChemCID:2244",
+    "PubChemCID:2519",
+    "PubChemCID:1983"
+  ],
+  "selection_oracle_origin": "Previous published PubChem3D scalar receipt already fixes each CID/source_key and score; historical regression evidence, not independent activity validation. Source-key spelling corrected before declaration/execution; unpublished draft retained.",
+  "review_addition": "Guard selection replacement by later higher scores and earlier tied ordinal; citation imports also forbidden."
+}

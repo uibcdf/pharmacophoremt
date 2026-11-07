@@ -284,3 +284,15 @@ saved-query/ordered-manifest/transactional-store contract and controls. Producer
 declared prepared identities and controlled unchanged molecular input remain
 explicit preconditions; real-provider acquisition and authenticated prepared
 snapshots remain unimplemented.
+
+## Result-inspection checkpoint — 2026-11-07 UTC
+
+The [fixed PubChem3D case](pubchem3d_receiving_pilot.md) supplies bounded real-input
+receiving/preparation/screening evidence, including preserved original failures
+and the separate quantity-report correction. The later
+[read-only saved-run view](reference_run_inspection.md) implements work/attempt
+coverage and bounded observed rankings without current molecular providers or
+new science. These remain development references, with no public API/schema
+freeze or general managed-library qualification. MolSysMT's reusable collection
+boundary remains [#624](https://github.com/uibcdf/molsysmt/issues/624); reusable
+search assets still need their own same-problem equivalence/cost experiment.

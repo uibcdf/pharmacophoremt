@@ -93,6 +93,14 @@ results pass a separate read-only verification; the first post-run verifier
 failure remains retained. This does not enlarge the chemical sample or qualify
 the pending general collection boundary.
 
+The [read-only inspection increment](../reference_run_inspection.md) exposes
+confirmed/scored/failed/pending work and bounded observed rankings through the
+same stdlib ledger. Its standalone scalar command and detailed source-only view
+preserve original producer/native evidence without current molecular providers,
+source access or recalculation. Historical reading of the unchanged PubChem3D
+database is separate from the new analytical guards. No grouping, compound
+independence, reusable index or new public API is inferred.
+
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening
 materializes its full input iterable. Prepared-native evaluators do not constitute

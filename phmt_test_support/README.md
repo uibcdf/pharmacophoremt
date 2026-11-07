@@ -43,6 +43,12 @@ files. Saved replay needs no scientific provider; reexecution reconstructs an
 existing native evaluator from saved query bytes and effective settings. These
 remain unshipped helpers, with no new installed/public runtime promise.
 
+`ReferenceRunView` and the standalone command in the same `reference_run_store`
+helper add read-only historical inspection with explicit work/attempt coverage
+and observed top-K. No support file or schema is added (63 declared files remain);
+the existing helper's hash changes. See the
+[inspection contract](../devguide/reference_run_inspection.md).
+
 `pubchem3d_receiving_pilot` adds one literal declaration (63 private files). It
 accepts only the frozen three-record received-byte case, delegates molecular work
 to public MolSysMT and exercises native query/recovery. It performs no download

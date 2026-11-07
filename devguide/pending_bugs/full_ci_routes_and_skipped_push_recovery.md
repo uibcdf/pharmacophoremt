@@ -15,6 +15,15 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Read-only saved-run inspection — 2026-11-07
+
+The [inspection receipt](../evidence/reference_run_inspection_20261107_summary.json)
+owns focused stdlib reader/CLI, original ledger and affected distribution guards,
+plus normal reporting/archive/style/declaration checks. Reading the unchanged
+historical PubChem3D database is not a new scientific execution. No full source/
+installed/platform gate is inferred, and no workflow is dispatched; the authorized
+`[skip ci]` route and existing recovery schedules remain unchanged.
+
 ## PubChem3D quantity-report correction — 2026-11-07
 
 The [separate receipt](../evidence/pubchem3d_pilot_quantity_20261107_summary.json)
