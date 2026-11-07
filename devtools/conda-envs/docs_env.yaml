@@ -20,7 +20,7 @@ dependencies:
 - molsysmt
 - pyunitwizard
 - argdigest>=0.17.1
-- smonitor
+- smonitor>=0.22.1
 - depdigest
 - rdkit
 - networkx

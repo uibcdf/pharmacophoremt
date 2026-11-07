@@ -1,0 +1,2709 @@
+{
+  "schema": "pharmacophoremt.reader-public-providers-checkpoint@1",
+  "recorded_at_utc": "2026-11-07T06:22:53.450455+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "goal_state": "paused at Liliana request; goal tool is updated after checkpoint checks",
+  "execution_completed": true,
+  "delivery_status": "local modified/untracked work saved; evidence archive sealing/review and commit/push pending",
+  "parent_source": "1b8e5ddd13631176fac96ffae40b152c7dab7c2e",
+  "frozen_scientific_producer": "ee5d9fae7a412b5276840cbec7289fdd95ddd375",
+  "frozen_wheel": {
+    "sha256": "df36ba5e2d8e726813d4ce16ae36ce9738ad897a3f25eb3a7f81f7b8c71aa6db",
+    "bytes": 4512131
+  },
+  "cells": [
+    {
+      "cell": "historical-floor",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.19.0",
+        "depdigest": "0.11.0",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "original_reader_tests": 21,
+      "additional_reader_tests": 1,
+      "reader_passed": true,
+      "fresh_children": 7,
+      "child_boundaries_complete": true,
+      "historical_receiving_exit_code": 0,
+      "authentic_saved_runs": 3,
+      "original_files_and_directories_unchanged": true,
+      "application_scenarios": [
+        {
+          "mode": "first-use",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "first_use_user_profile",
+              "passed": true
+            },
+            {
+              "name": "first_use_warning_threshold",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-floor/first-use/initial/report.json",
+          "identity": {
+            "sha256": "d822c6ff5b4ffb30e4c256ba21757cfe6a3a3752902d77bbefdb788d0bfd780c",
+            "bytes": 53338
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-floor/configured-first/initial/report.json",
+          "identity": {
+            "sha256": "e7ab1d5fc46f2632f11274564c188b3c3803b550895f6139087ed25a54d18c20",
+            "bytes": 55709
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-floor/nested-filtered/initial/report.json",
+          "identity": {
+            "sha256": "9586d9b8ff26e44c4810b765e4d4873fce0adb0f1aeff7586e394e23c2f0d331",
+            "bytes": 54152
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-floor/nested-silenced/initial/report.json",
+          "identity": {
+            "sha256": "7d4dd1106eabd8f0f7daed75447f1fa066a1ca7a1b1b35fb7095226a5ca9af7e",
+            "bytes": 55816
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-floor/nested-admitted/initial/report.json",
+          "identity": {
+            "sha256": "3d97771173b103dceee2dbb964916fc4edad8cabdf037f4fd33ef54da9e584d8",
+            "bytes": 55925
+          }
+        }
+      ],
+      "local_reader_report": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/historical-floor/attempt2/reader.result.json",
+      "reader_report_identity": {
+        "sha256": "d84ab3ecf6f07e8e8867a925f213fa182af5f353e648ac096c984a2581a654a2",
+        "bytes": 671825
+      },
+      "local_historical_projection": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/historical-floor/attempt2/historical/public_result.json",
+      "historical_projection_identity": {
+        "sha256": "58230904a2ee6c7e14003ce9e2aa6551a9ea57967ef54756fe5ce5002905b339",
+        "bytes": 15375
+      }
+    },
+    {
+      "cell": "historical-monitor-newer-dependency",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.19.0",
+        "depdigest": "0.15.2",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "original_reader_tests": 21,
+      "additional_reader_tests": 1,
+      "reader_passed": true,
+      "fresh_children": 7,
+      "child_boundaries_complete": true,
+      "historical_receiving_exit_code": 0,
+      "authentic_saved_runs": 3,
+      "original_files_and_directories_unchanged": true,
+      "application_scenarios": [
+        {
+          "mode": "first-use",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "first_use_user_profile",
+              "passed": true
+            },
+            {
+              "name": "first_use_warning_threshold",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-monitor-newer-dependency/first-use/initial/report.json",
+          "identity": {
+            "sha256": "eee6eccea74cfa5c462d73916344023352a9113c4258c666b540c10eb556c412",
+            "bytes": 53814
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-monitor-newer-dependency/configured-first/initial/report.json",
+          "identity": {
+            "sha256": "017f71fed43b4fe040c289a8ff0fc7d9eec172915586a4944f60bda34b048a2e",
+            "bytes": 56185
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-monitor-newer-dependency/nested-filtered/initial/report.json",
+          "identity": {
+            "sha256": "b657513c0b8bd1e9a19208d6e04b6ad3242ef97402fe372e3d0a47047e3186b5",
+            "bytes": 54628
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": false,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": false
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": false
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-monitor-newer-dependency/nested-silenced/initial/report.json",
+          "identity": {
+            "sha256": "4c1005656b40d999fea3b7ea78d0d286d0a15290536b2b96786eb159689b5e17",
+            "bytes": 56292
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/historical-monitor-newer-dependency/nested-admitted/initial/report.json",
+          "identity": {
+            "sha256": "42c0600ecf0a4e5d321134b31e58dde0a2c0717b83ae13de5b0a8dd5119c6ba1",
+            "bytes": 56401
+          }
+        }
+      ],
+      "local_reader_report": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/historical-monitor-newer-dependency/attempt2/reader.result.json",
+      "reader_report_identity": {
+        "sha256": "935cbc00604978a47806feab6575b8405c556662f16c0653302e9d3b4f504056",
+        "bytes": 672129
+      },
+      "local_historical_projection": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/historical-monitor-newer-dependency/attempt2/historical/public_result.json",
+      "historical_projection_identity": {
+        "sha256": "4255dd4813e800ecbef4228c2421bc0a5b5ac5595cd15861a876b614ce000810",
+        "bytes": 15375
+      }
+    },
+    {
+      "cell": "corrected-monitor-floor-dependency",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.22.1",
+        "depdigest": "0.11.0",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "original_reader_tests": 21,
+      "additional_reader_tests": 1,
+      "reader_passed": true,
+      "fresh_children": 7,
+      "child_boundaries_complete": true,
+      "historical_receiving_exit_code": 0,
+      "authentic_saved_runs": 3,
+      "original_files_and_directories_unchanged": true,
+      "application_scenarios": [
+        {
+          "mode": "first-use",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "first_use_user_profile",
+              "passed": true
+            },
+            {
+              "name": "first_use_warning_threshold",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/corrected-monitor-floor-dependency/first-use/initial/report.json",
+          "identity": {
+            "sha256": "51a549ef1ba2f7d430219107de244d7443201d518dac78fd7dbe3f2d0d6d41cb",
+            "bytes": 57377
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/corrected-monitor-floor-dependency/configured-first/initial/report.json",
+          "identity": {
+            "sha256": "5f794c8e278869760144f4b18d88cad246b9087d519fc43daf09e78071eda06b",
+            "bytes": 59728
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/corrected-monitor-floor-dependency/nested-filtered/initial/report.json",
+          "identity": {
+            "sha256": "d60f95b92cfbb0c6b2153cf46610b0f095eb5d21abecff63253ba9e6ef22836f",
+            "bytes": 57738
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/corrected-monitor-floor-dependency/nested-silenced/initial/report.json",
+          "identity": {
+            "sha256": "a53dcfb8b6b49676e10a0b5d71b16a4412b2a08937b493bec19a0b2439f3147d",
+            "bytes": 59360
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/corrected-monitor-floor-dependency/nested-admitted/initial/report.json",
+          "identity": {
+            "sha256": "7c0ada28e4060873ba4475f130ad4a75f5c13fde5f8c0b595bd47642764b1d23",
+            "bytes": 55997
+          }
+        }
+      ],
+      "local_reader_report": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/corrected-monitor-floor-dependency/attempt2/reader.result.json",
+      "reader_report_identity": {
+        "sha256": "f9bc3d494c0eff789707d0dfaf1bb43b1b2bedb443f05cfdde8d33848a5d25b7",
+        "bytes": 672287
+      },
+      "local_historical_projection": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/corrected-monitor-floor-dependency/attempt2/historical/public_result.json",
+      "historical_projection_identity": {
+        "sha256": "700f92b4e0053a34be1a900d182e958520afd1a59a0357218ed961f0d3157f70",
+        "bytes": 15375
+      }
+    },
+    {
+      "cell": "newer-published",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.22.1",
+        "depdigest": "0.15.2",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "original_reader_tests": 21,
+      "additional_reader_tests": 1,
+      "reader_passed": true,
+      "fresh_children": 7,
+      "child_boundaries_complete": true,
+      "historical_receiving_exit_code": 0,
+      "authentic_saved_runs": 3,
+      "original_files_and_directories_unchanged": true,
+      "application_scenarios": [
+        {
+          "mode": "first-use",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "first_use_user_profile",
+              "passed": true
+            },
+            {
+              "name": "first_use_warning_threshold",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/newer-published/first-use/initial/report.json",
+          "identity": {
+            "sha256": "5a0d6cd8439b0c5dda6c4a2b0db8f3e2df7e1c0dd937ec07a507ba60e96b922a",
+            "bytes": 57701
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/newer-published/configured-first/initial/report.json",
+          "identity": {
+            "sha256": "faa4cb89252ac7c99d522f3e43c3e3066afff57686d0a552cc273896344c2b28",
+            "bytes": 60052
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/newer-published/nested-filtered/initial/report.json",
+          "identity": {
+            "sha256": "eefe21300ee330d624f802d8550fd5db9d44f2018ca163df96179f20adc833ce",
+            "bytes": 58062
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "reader_error_retains_sqlite_cause",
+              "passed": true
+            },
+            {
+              "name": "missing_reader_creates_no_file",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/newer-published/nested-silenced/initial/report.json",
+          "identity": {
+            "sha256": "6ef4e526e10edb3a2d4bf5c4d306876b53fb917691e6fb5c110fabcd02e30a1d",
+            "bytes": 59684
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "checks": [
+            {
+              "name": "isolated_no_site_no_bytecode",
+              "passed": true
+            },
+            {
+              "name": "application_exception_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_configuration_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_warning_hook_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_logging_handlers_preserved",
+              "passed": true
+            },
+            {
+              "name": "application_handler_receives_both_markers",
+              "passed": true
+            },
+            {
+              "name": "application_handler_profile_preserved",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_results_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "pharmacophoremt_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "smonitor_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "smonitor_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "argdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "argdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "depdigest_origin_is_explicit_installed_root",
+              "passed": true
+            },
+            {
+              "name": "depdigest_version_matches_cell",
+              "passed": true
+            },
+            {
+              "name": "reader_error_has_public_catalog_base",
+              "passed": true
+            },
+            {
+              "name": "reader_code_registered",
+              "passed": true
+            },
+            {
+              "name": "nested_exception_identity_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_args_preserved",
+              "passed": true
+            },
+            {
+              "name": "nested_original_cause_preserved",
+              "passed": true
+            },
+            {
+              "name": "failure_has_reader_code",
+              "passed": true
+            },
+            {
+              "name": "failure_has_useful_message",
+              "passed": true
+            },
+            {
+              "name": "one_eligible_catalog_observation",
+              "passed": true
+            },
+            {
+              "name": "first_admitted_source_is_expected",
+              "passed": true
+            },
+            {
+              "name": "support_export_retains_same_catalog_observations",
+              "passed": true
+            },
+            {
+              "name": "application_hook_survives_scenario_and_export",
+              "passed": true
+            },
+            {
+              "name": "scientific_namespaces_stay_absent",
+              "passed": true
+            },
+            {
+              "name": "all_file_origins_are_admitted_or_stdlib",
+              "passed": true
+            },
+            {
+              "name": "no_forbidden_import_attempts",
+              "passed": true
+            }
+          ],
+          "local_report": "/tmp/phmt-reader-providers-20261107-tladq1x1/application/newer-published/nested-admitted/initial/report.json",
+          "identity": {
+            "sha256": "e26061891336c4b83aef6541cf07a5746a6afa104e60472fb02b1da02ef863ec",
+            "bytes": 56321
+          }
+        }
+      ],
+      "local_reader_report": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/newer-published/attempt2/reader.result.json",
+      "reader_report_identity": {
+        "sha256": "4f016ec70b75cbc5877a4bec287612e4b71d30179308898789eac314373c621c",
+        "bytes": 671983
+      },
+      "local_historical_projection": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/results/newer-published/attempt2/historical/public_result.json",
+      "historical_projection_identity": {
+        "sha256": "72e4db6b321b4182ad0e08d28dac922061e3fcb8eb1022b9c88d3755938175cb",
+        "bytes": 15375
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "filename": "argdigest-0.17.1-py_0.tar.bz2",
+      "identity": {
+        "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+        "bytes": 55828
+      },
+      "public_url": "https://conda.anaconda.org/uibcdf/noarch/argdigest-0.17.1-py_0.tar.bz2",
+      "admitted_root": "/tmp/phmt-reader-providers-20261107-tladq1x1/argdigest-0.17.1-py_0/site-packages",
+      "payload_files_verified": 48
+    },
+    {
+      "filename": "smonitor-0.19.0-py_1.tar.bz2",
+      "identity": {
+        "sha256": "4b876b4993b1e2caeed40851402a931f3b245ed7c1916d9483d81bc90274e31c",
+        "bytes": 55680
+      },
+      "public_url": "https://conda.anaconda.org/uibcdf/noarch/smonitor-0.19.0-py_1.tar.bz2",
+      "admitted_root": "/tmp/phmt-reader-providers-20261107-tladq1x1/smonitor-0.19.0-py_1/site-packages",
+      "payload_files_verified": 50
+    },
+    {
+      "filename": "smonitor-0.22.1-py_0.tar.bz2",
+      "identity": {
+        "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e",
+        "bytes": 60043
+      },
+      "public_url": "https://conda.anaconda.org/uibcdf/noarch/smonitor-0.22.1-py_0.tar.bz2",
+      "admitted_root": "/tmp/phmt-reader-providers-20261107-tladq1x1/smonitor-0.22.1-py_0/site-packages",
+      "payload_files_verified": 51
+    },
+    {
+      "filename": "depdigest-0.11.0-py_2.tar.bz2",
+      "identity": {
+        "sha256": "b6ba665d9125f49506b7e4231e6065f164d3b643117a22288b44baafceff270f",
+        "bytes": 23231
+      },
+      "public_url": "https://conda.anaconda.org/uibcdf/noarch/depdigest-0.11.0-py_2.tar.bz2",
+      "admitted_root": "/tmp/phmt-reader-providers-20261107-tladq1x1/depdigest-0.11.0-py_2/site-packages",
+      "payload_files_verified": 26
+    },
+    {
+      "filename": "depdigest-0.15.2-py_0.tar.bz2",
+      "identity": {
+        "sha256": "1da96487be3c1eb870701ee53b97a6341e30a6700a75c6eef5468e9f14dc579c",
+        "bytes": 32908
+      },
+      "public_url": "https://conda.anaconda.org/uibcdf/noarch/depdigest-0.15.2-py_0.tar.bz2",
+      "admitted_root": "/tmp/phmt-reader-providers-20261107-tladq1x1/depdigest-0.15.2-py_0/site-packages",
+      "payload_files_verified": 26
+    }
+  ],
+  "distinct_reader_bodies": 22,
+  "reader_tuples": 4,
+  "distinct_administrative_cases": 56,
+  "administration_detail": {
+    "environment": 9,
+    "distribution": 24,
+    "dependency": 2,
+    "reporting": 3,
+    "archive": 18
+  },
+  "count_policy": "Repeats, fresh children and historical partial receipts are not additional distinct test bodies; do not add these to the previous197 cases.",
+  "original_failures_preserved": {
+    "initial_reader_controls_before_tests": 4,
+    "initial_historical_final_import_guard": 4,
+    "actual_old_smonitor_diagnostic_scenarios": 8,
+    "metadata_generator_input_guard": 1,
+    "obsolete_distribution_mutation_fixture": 1
+  },
+  "decision": "Require SMonitor>=0.22.1 in six runtime routes and exact published2147c7c641b7cba8a974b193207f686ee3ebe855 controlled pins/routes; no other provider pin/global DepDigest floor/shared-prefix change.",
+  "receipts": {
+    "matrix_execution.initial.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/matrix_execution.initial.json",
+      "identity": {
+        "sha256": "59393f5b377be92d2d91ee07ae5e802f60324f81076075c1a139fa57b93c3961",
+        "bytes": 37925
+      }
+    },
+    "matrix_execution.attempt2.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/matrix_execution.attempt2.json",
+      "identity": {
+        "sha256": "41f1fba3f7faa05e04b6a97678703cd77e071d9c850c3c0585295bf4624be76c",
+        "bytes": 11764
+      }
+    },
+    "delivery_checks.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/delivery_checks.json",
+      "identity": {
+        "sha256": "fd251ecd7b17b6e396a73118452ab8485ffbd335860e47e366af50457a98a5dd",
+        "bytes": 1761
+      }
+    },
+    "delivery_checks.attempt2.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/delivery_checks.attempt2.json",
+      "identity": {
+        "sha256": "4d856f6763c8700ec5bf5c8511fc181a7f5b949af14ac9fe32d7eb3bb9cb7fa0",
+        "bytes": 2860
+      }
+    },
+    "final_prose_checks.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/final_prose_checks.json",
+      "identity": {
+        "sha256": "857fc9a469e99c6b73d88e3fb0c154f637821af91dbdba5671961aa0e12cdc96",
+        "bytes": 1205
+      }
+    },
+    "payload_inventory.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/payload_inventory.json",
+      "identity": {
+        "sha256": "1b8a29ad4dbc36e23b73dd2e1ebc52c6da815befc1e0638d9f463112405ec540",
+        "bytes": 26891
+      }
+    },
+    "provider_source_receiving.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/provider_source_receiving.json",
+      "identity": {
+        "sha256": "6ded935af7e381dcc9e42d985dbd3ce7cfc40aa14d443ac3334e74e2bf11ecc2",
+        "bytes": 6917
+      }
+    },
+    "metadata_generation_attempt1.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/metadata_generation_attempt1.json",
+      "identity": {
+        "sha256": "4da09a939c62d22a559cbca8131985e7ec52f97d7913e8ddb82b7bdfed8d50d6",
+        "bytes": 575
+      }
+    },
+    "coordination_offline_snapshot.json": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/coordination_offline_snapshot.json",
+      "identity": {
+        "sha256": "3148ed57d1d4d36cff4eb754c234c68daed81179fd957f94d6556d6924df6c4c",
+        "bytes": 2502
+      }
+    }
+  },
+  "archive_control": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/controls/seal_reader_evidence.py",
+    "written": false,
+    "executed": false,
+    "identity": null
+  },
+  "raw_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x",
+  "receiving_workspace": "/tmp/phmt-reader-providers-20261107-tladq1x1",
+  "retention_review": "2026-11-20",
+  "upstream_feedback": {
+    "smonitor": "https://github.com/uibcdf/smonitor/issues/59#issuecomment-6703312169",
+    "central": "https://github.com/uibcdf/molsyssuite/issues/163#issuecomment-6703312710",
+    "molecular_collections": "https://github.com/uibcdf/molsysmt/issues/624"
+  },
+  "next_action": "Review and seal the explicitly allowlisted own/scalar evidence archive; perform final delivery review, commit with [skip ci] and batch push; update exact-head/consumer/central-graph records. Then continue guided/expert usability on the same retained inputs after the user resumes.",
+  "full_gates_still_open": [
+    "#9 exact-head source/CI",
+    "#10 full dependencies",
+    "#23 installed/public/platform",
+    "#95 candidate/release",
+    "guided/expert usability and library operations",
+    "MolSysMT#624 molecular collection contract",
+    "both biological studies and representative scale"
+  ],
+  "publication": "This checkpoint contains own scalar/hash observations only; no original native/query/database/attribution or third-party package bodies."
+}

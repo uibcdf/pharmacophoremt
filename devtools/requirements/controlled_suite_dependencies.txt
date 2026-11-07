@@ -1,6 +1,6 @@
 # Exact published source revisions for native consumer integration (#22/#36/#39).
 # Controlled source qualification is separate from public dependency closure (#10/#23).
-git+https://github.com/uibcdf/smonitor@f604b940ab281df4554869fdd24f796ea6d42c27
+git+https://github.com/uibcdf/smonitor@2147c7c641b7cba8a974b193207f686ee3ebe855
 git+https://github.com/uibcdf/depdigest@13cc73780a7cb645546ae3f396177f98b86a8792
 git+https://github.com/uibcdf/pyunitwizard@2ab37a525ce99728ad8aee846b4a4f7acc4f1b65
 git+https://github.com/uibcdf/argdigest@c9c9ee623dab5331fdfa4227bd784dd38620e18b

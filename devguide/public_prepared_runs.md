@@ -5,7 +5,7 @@ Owners LMMV/dprada; 2026-11-07 UTC;
 Source and bounded owned installed-wheel receiving pass. The
 [prospective plan](evidence/public_prepared_runs_plan_20261107.json) was
 [declared before execution](https://github.com/uibcdf/pharmacophoremt/issues/108#issuecomment-6702125074).
-Passing evidence and actual counts will be recorded after execution.
+The executed evidence and actual counts are recorded below.
 
 ## One public task, separate scientific and saved-reading boundaries
 
@@ -164,7 +164,10 @@ Full supported
 source/dependency/installed/public/platform/release gates remain under
 #9/#10/#23/#95; biological studies and measured large-library performance retain
 their independent plans. Original geometry and complete native database/export
-bodies remain local under the existing publication scope. Next receive released
-support-provider floors/newer versions for the independent reader in an owned
-source-free context, while completing the separate guided/expert usability and
-MolSysMT collection/source-operation work.
+bodies remain local under the existing publication scope. Released support-provider
+receiving is now [measured separately](reader_public_provider_receiving.md):
+the same unchanged wheel passes22 reader controls per cell with four public
+provider combinations; corrected SMonitor0.22.1 also passes all application
+diagnostic scenarios. This qualifies the reader's support closure, not the whole
+PHMT distribution. Continue guided/expert usability and MolSysMT collection/source
+operations under their separate contracts.

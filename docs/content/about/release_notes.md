@@ -12,6 +12,13 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
 ### Later development after the reviewed snapshot
 
+The independent reader now receives exact released support payloads separately
+from scientific execution. SMonitor>=0.22.1 is required to preserve visible coded
+errors through nested filtered/silenced observations; older0.19 can retain the
+exception while losing its diagnostic event. Controlled source routes select the
+same published correction. This does not qualify a new complete PHMT artifact
+or the full supported installation/platform matrix.
+
 Recoverable prepared runs and the independent `pharmacophoremt_results` reader
 pass selected source controls, original-input and bounded owned installed
 receiving. The

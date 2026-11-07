@@ -14,6 +14,21 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Independent-reader released support receiving — 2026-11-07
+
+The [receiving contract](../reader_public_provider_receiving.md) and
+[receipt](../evidence/reader_public_providers_20261107_summary.json) measure four
+source-free public-payload cells with the same frozen PHMT wheel.22 reader
+controls per cell and three authentic original saved runs pass; actual SMonitor
+0.19 diagnostic loss justifies>=0.22.1. All six runtime declarations and both
+controlled source routes/pins/hashes align with the published correction. The
+reader's basic ArgDigest/DepDigest closure is separately verified, including
+legitimately lazy unloaded DepDigest; no global DepDigest floor is inferred.
+Original control failures and all eight old-provider diagnostic failures remain.
+#6 stays partial; full source/installed/public/platform receiving and other
+support boundaries retain their separate gates. Next guided/expert usability
+under #108, with central consumer-impact/graph handoff in MolSysSuite#163.
+
 **Reported:** 2026-09-27, under the inventory coordinated by
 `uibcdf/molsyssuite#56`. Source inspection used
 `7df2496b1341527a0ae504e29ffd267fd43194dd` on `origin/main`.

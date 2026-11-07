@@ -1,0 +1,502 @@
+{
+  "schema": "pharmacophoremt.reader-public-providers-summary@1",
+  "recorded_at_utc": "2026-11-07T06:29:31.895356+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "Same owned PHMT wheel, Linux/Python3.14 independent reader with exact released support payloads. No complete Conda solve, minimal whole-PHMT install, new scientific execution, full supported matrix or release.",
+  "source_parent": "1b8e5ddd13631176fac96ffae40b152c7dab7c2e",
+  "frozen_phmt_producer": "ee5d9fae7a412b5276840cbec7289fdd95ddd375",
+  "wheel": {
+    "sha256": "df36ba5e2d8e726813d4ce16ae36ce9738ad897a3f25eb3a7f81f7b8c71aa6db",
+    "bytes": 4512131
+  },
+  "cells": [
+    {
+      "id": "historical-floor",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.19.0",
+        "depdigest": "0.11.0",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "reader_original": 21,
+      "reader_additional": 1,
+      "reader_passed": true,
+      "fresh_child_observations": 7,
+      "authentic_historical_files": 3,
+      "historical_passed": true,
+      "historical_files_unchanged": true,
+      "application": [
+        {
+          "mode": "first-use",
+          "passed": false,
+          "original_report": {
+            "sha256": "d822c6ff5b4ffb30e4c256ba21757cfe6a3a3752902d77bbefdb788d0bfd780c",
+            "bytes": 53338
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": false,
+          "original_report": {
+            "sha256": "e7ab1d5fc46f2632f11274564c188b3c3803b550895f6139087ed25a54d18c20",
+            "bytes": 55709
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": false,
+          "original_report": {
+            "sha256": "9586d9b8ff26e44c4810b765e4d4873fce0adb0f1aeff7586e394e23c2f0d331",
+            "bytes": 54152
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": false,
+          "original_report": {
+            "sha256": "7d4dd1106eabd8f0f7daed75447f1fa066a1ca7a1b1b35fb7095226a5ca9af7e",
+            "bytes": 55816
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "original_report": {
+            "sha256": "3d97771173b103dceee2dbb964916fc4edad8cabdf037f4fd33ef54da9e584d8",
+            "bytes": 55925
+          }
+        }
+      ]
+    },
+    {
+      "id": "historical-monitor-newer-dependency",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.19.0",
+        "depdigest": "0.15.2",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "reader_original": 21,
+      "reader_additional": 1,
+      "reader_passed": true,
+      "fresh_child_observations": 7,
+      "authentic_historical_files": 3,
+      "historical_passed": true,
+      "historical_files_unchanged": true,
+      "application": [
+        {
+          "mode": "first-use",
+          "passed": false,
+          "original_report": {
+            "sha256": "eee6eccea74cfa5c462d73916344023352a9113c4258c666b540c10eb556c412",
+            "bytes": 53814
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": false,
+          "original_report": {
+            "sha256": "017f71fed43b4fe040c289a8ff0fc7d9eec172915586a4944f60bda34b048a2e",
+            "bytes": 56185
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": false,
+          "original_report": {
+            "sha256": "b657513c0b8bd1e9a19208d6e04b6ad3242ef97402fe372e3d0a47047e3186b5",
+            "bytes": 54628
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": false,
+          "original_report": {
+            "sha256": "4c1005656b40d999fea3b7ea78d0d286d0a15290536b2b96786eb159689b5e17",
+            "bytes": 56292
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "original_report": {
+            "sha256": "42c0600ecf0a4e5d321134b31e58dde0a2c0717b83ae13de5b0a8dd5119c6ba1",
+            "bytes": 56401
+          }
+        }
+      ]
+    },
+    {
+      "id": "corrected-monitor-floor-dependency",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.22.1",
+        "depdigest": "0.11.0",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "reader_original": 21,
+      "reader_additional": 1,
+      "reader_passed": true,
+      "fresh_child_observations": 7,
+      "authentic_historical_files": 3,
+      "historical_passed": true,
+      "historical_files_unchanged": true,
+      "application": [
+        {
+          "mode": "first-use",
+          "passed": true,
+          "original_report": {
+            "sha256": "51a549ef1ba2f7d430219107de244d7443201d518dac78fd7dbe3f2d0d6d41cb",
+            "bytes": 57377
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": true,
+          "original_report": {
+            "sha256": "5f794c8e278869760144f4b18d88cad246b9087d519fc43daf09e78071eda06b",
+            "bytes": 59728
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": true,
+          "original_report": {
+            "sha256": "d60f95b92cfbb0c6b2153cf46610b0f095eb5d21abecff63253ba9e6ef22836f",
+            "bytes": 57738
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": true,
+          "original_report": {
+            "sha256": "a53dcfb8b6b49676e10a0b5d71b16a4412b2a08937b493bec19a0b2439f3147d",
+            "bytes": 59360
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "original_report": {
+            "sha256": "7c0ada28e4060873ba4475f130ad4a75f5c13fde5f8c0b595bd47642764b1d23",
+            "bytes": 55997
+          }
+        }
+      ]
+    },
+    {
+      "id": "newer-published",
+      "versions": {
+        "argdigest": "0.17.1",
+        "smonitor": "0.22.1",
+        "depdigest": "0.15.2",
+        "pharmacophoremt": "0.4.0+134.gee5d9fa"
+      },
+      "reader_original": 21,
+      "reader_additional": 1,
+      "reader_passed": true,
+      "fresh_child_observations": 7,
+      "authentic_historical_files": 3,
+      "historical_passed": true,
+      "historical_files_unchanged": true,
+      "application": [
+        {
+          "mode": "first-use",
+          "passed": true,
+          "original_report": {
+            "sha256": "5a0d6cd8439b0c5dda6c4a2b0db8f3e2df7e1c0dd937ec07a507ba60e96b922a",
+            "bytes": 57701
+          }
+        },
+        {
+          "mode": "configured-first",
+          "passed": true,
+          "original_report": {
+            "sha256": "faa4cb89252ac7c99d522f3e43c3e3066afff57686d0a552cc273896344c2b28",
+            "bytes": 60052
+          }
+        },
+        {
+          "mode": "nested-filtered",
+          "passed": true,
+          "original_report": {
+            "sha256": "eefe21300ee330d624f802d8550fd5db9d44f2018ca163df96179f20adc833ce",
+            "bytes": 58062
+          }
+        },
+        {
+          "mode": "nested-silenced",
+          "passed": true,
+          "original_report": {
+            "sha256": "6ef4e526e10edb3a2d4bf5c4d306876b53fb917691e6fb5c110fabcd02e30a1d",
+            "bytes": 59684
+          }
+        },
+        {
+          "mode": "nested-admitted",
+          "passed": true,
+          "original_report": {
+            "sha256": "e26061891336c4b83aef6541cf07a5746a6afa104e60472fb02b1da02ef863ec",
+            "bytes": 56321
+          }
+        }
+      ]
+    }
+  ],
+  "application_scenarios": {
+    "passed": 12,
+    "failed": 8
+  },
+  "distinct_reader_bodies": 22,
+  "reader_tuples": 4,
+  "administrative_counts": {
+    "test_environment_tools.py": 9,
+    "test_distribution_contract.py": 24,
+    "test_dependency_classification.py": 2,
+    "test_reporting_protocol.py": 3,
+    "test_evidence_archive.py": 18
+  },
+  "distinct_administrative_cases": 56,
+  "count_policy": "Repeated tuples, children, failed attempts and historical receipts are not extra distinct test bodies; do not add these to earlier197 cases.",
+  "old_failures_retained": {
+    "reader_harness_before_tests": 4,
+    "historical_final_import_guard": 4,
+    "actual_old_monitor_diagnostic_scenarios": 8,
+    "generator_reviewed_input_guard": 1,
+    "obsolete_distribution_fixture": 1
+  },
+  "resume": {
+    "original_pause_files_verified": 24,
+    "later_changes_are_prose_only": [
+      "devguide/checkpoint.md",
+      "devguide/pending_proposals/review_python_ecosystem_policy_adoption.md",
+      "devguide/reader_public_provider_receiving.md",
+      "devguide/roadmap.md",
+      "devguide/support_library_boundaries.md"
+    ],
+    "pause_checkpoint_preserved": true
+  },
+  "decision": "SMonitor>=0.22.1; both controlled source pins2147c7c641b7cba8a974b193207f686ee3ebe855. ArgDigest>=0.17.1 unchanged; its basic transitive DepDigest>=0.11.0 remains sufficient. No other provider/prefix/scientific changes.",
+  "provider_source_receiving": {
+    "schema": "pharmacophoremt.public-provider-source-receiving@1",
+    "source_commit": "2147c7c641b7cba8a974b193207f686ee3ebe855",
+    "official_tag": "0.22.1",
+    "source_url": "https://github.com/uibcdf/smonitor/tree/2147c7c641b7cba8a974b193207f686ee3ebe855",
+    "archive": "smonitor-0.22.1-py_0.tar.bz2",
+    "archive_identity": {
+      "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e",
+      "bytes": 60043
+    },
+    "equal_original_payload_files": {
+      "smonitor/__init__.py": {
+        "sha256": "f60b1c2bff72dbbb70fe403e23908e62a8297f6190e18fdcac090092b84e6800",
+        "bytes": 5478
+      },
+      "smonitor/_diagnostics.py": {
+        "sha256": "cc732d5f889e25a66168b600721057241730ed74b857edb818ccec8ac82b05e5",
+        "bytes": 2220
+      },
+      "smonitor/bundle.py": {
+        "sha256": "228374b0a5f14b26c2789143ad29b3c6c56cd5bb36d3cde41ccd34e30005604c",
+        "bytes": 15249
+      },
+      "smonitor/catalog.py": {
+        "sha256": "ff9e04e9594797a6c1b35c65b8e21dccc9d96530f0fc48e3ebd1dca483f40ba7",
+        "bytes": 735
+      },
+      "smonitor/cli.py": {
+        "sha256": "a4d2a9166ef8fb93b994380c1ac490f7fa3f250ce5e0641a12e61b07dff99e5e",
+        "bytes": 8511
+      },
+      "smonitor/config/__init__.py": {
+        "sha256": "0b4a603c4441f665b162d10b845f069f9e1f9cca542612c3c6dc143cb8cc560d",
+        "bytes": 12290
+      },
+      "smonitor/config/discovery.py": {
+        "sha256": "56a036bc65796a8da3a9f8dcf886f88b6b49717912e79c5f91d845731ac74b5f",
+        "bytes": 975
+      },
+      "smonitor/core/__init__.py": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "smonitor/core/capture.py": {
+        "sha256": "42207876c72666c5df87fb143180247be6c2dd80e6bb54bbb8acf06307a86966",
+        "bytes": 4653
+      },
+      "smonitor/core/context.py": {
+        "sha256": "6959142b2b201663cc0f70422261c79b8dba91556f969559083c079b6cc889dd",
+        "bytes": 4452
+      },
+      "smonitor/core/decorator.py": {
+        "sha256": "ce3361a0cdc5d31f0e544c55c8fde4ec340d2a5b2260b130f182444d72f630ec",
+        "bytes": 14275
+      },
+      "smonitor/core/fingerprint.py": {
+        "sha256": "80f0c8377602c8ef3cb4dc71ce02b59dd0f57bc5ed52e2790c400af66ba37856",
+        "bytes": 1093
+      },
+      "smonitor/core/human_summary.py": {
+        "sha256": "1b7b548bc396ac1257a6ca769c61bb4021e3f44ee75c335a5b48a575c0d741aa",
+        "bytes": 571
+      },
+      "smonitor/core/identifiers.py": {
+        "sha256": "48350ab1b1acff14eb950557935470ec2170c1bcc669dcbdca0b4c490e272ca8",
+        "bytes": 177
+      },
+      "smonitor/core/manager.py": {
+        "sha256": "ddf809456df62bffb92b0451a54c315ca312722019b7057792472e074ba0b8c7",
+        "bytes": 56055
+      },
+      "smonitor/core/runtime.py": {
+        "sha256": "7c2b9b7f9f1beca4e1f5b4e1d4c6f4ee123c4c9754e7754b4bde1577b30e7d21",
+        "bytes": 1364
+      },
+      "smonitor/docs_utils.py": {
+        "sha256": "31d6a649e62bd10950f4542144886605ad202a7bc4a65d77378dcc35cc747dd7",
+        "bytes": 858
+      },
+      "smonitor/emitters/__init__.py": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "smonitor/emitters/exceptions.py": {
+        "sha256": "5719837614cde25784e2b58e48780a0a883f044b9acba22398de4c24a88da33d",
+        "bytes": 1144
+      },
+      "smonitor/emitters/logging.py": {
+        "sha256": "ff3bd66f2b449f0a237eed8fbaafe045cdb2a1ca4a1913e4dbefa76cacd3f351",
+        "bytes": 2063
+      },
+      "smonitor/emitters/warnings.py": {
+        "sha256": "14668db77954a6a00ae5807814f9c8d9c97f81c237729af43d5b5e62ca831bc0",
+        "bytes": 1410
+      },
+      "smonitor/handlers/__init__.py": {
+        "sha256": "f57a12db0943691cc477fd69d22d7eaac26e878c1ff66a2a5df89f35f136304d",
+        "bytes": 272
+      },
+      "smonitor/handlers/console.py": {
+        "sha256": "4c0de3e1b2832ab8dc9f73fa6e899400d9da3136598b33510ee57b0263c17563",
+        "bytes": 8155
+      },
+      "smonitor/handlers/file.py": {
+        "sha256": "bf9fcad614065bacdf0b300c442c9723c7cffaddebd736ecc37d2335ac2d8c38",
+        "bytes": 2100
+      },
+      "smonitor/handlers/json.py": {
+        "sha256": "cd5edabe32ab5286dc81315249aac77b35fc5fe5233cdcebc36b9c56a3fc4098",
+        "bytes": 3814
+      },
+      "smonitor/handlers/memory.py": {
+        "sha256": "c12c37421cebaf6a574feabed4bff24f64df8237905bc9ec81293e9174b87543",
+        "bytes": 646
+      },
+      "smonitor/integrations/__init__.py": {
+        "sha256": "2dcb2215de7a7fe694a26e95861c2daa90b3908345d190e19669d49dbcd53717",
+        "bytes": 1015
+      },
+      "smonitor/integrations/argdigest.py": {
+        "sha256": "8ad55e939b7728123273cd47823e720d9badeba569b4e722cee60946b2f6bc16",
+        "bytes": 606
+      },
+      "smonitor/integrations/core.py": {
+        "sha256": "77f572afd7baa16b783a424fa3bc1a5debcf7e684461697b1e0d3a88afb6612d",
+        "bytes": 6876
+      },
+      "smonitor/integrations/depdigest.py": {
+        "sha256": "eaaf62597aae74f795483e8353a8e83db2d1a310deedccb2de6a80f0a49c13b2",
+        "bytes": 606
+      },
+      "smonitor/integrations/diagnostic.py": {
+        "sha256": "8a6065ff00b2e0e5068a74782b5a7352471c897848c031cb6bf0faaa9a312178",
+        "bytes": 25005
+      },
+      "smonitor/integrations/molsysmt.py": {
+        "sha256": "dff282f2606c36e815f85da43bf28d9b5bf566666a44c7ec66d4a400f1b26bbc",
+        "bytes": 603
+      },
+      "smonitor/integrations/provider.py": {
+        "sha256": "dc51dc872c0164c42ce2b4e34fa6724ed31292991937c557c1cb86445b609f96",
+        "bytes": 3076
+      },
+      "smonitor/policy/__init__.py": {
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "bytes": 0
+      },
+      "smonitor/policy/engine.py": {
+        "sha256": "b15cc0eea4a545795e5852c3560105ac9fd20efdc1d97225821292691ec8bb23",
+        "bytes": 6420
+      },
+      "smonitor/profiling.py": {
+        "sha256": "47d2e1d4ee3a83364b256b0a9a12e21da887499e51b25d3f151842016683d176",
+        "bytes": 1842
+      },
+      "smonitor/pytest_plugin.py": {
+        "sha256": "8a6729063c5eb8c92d6f6182a4e554ee5ae4a98de8d820ef5f51a3bb388e37ca",
+        "bytes": 2093
+      },
+      "smonitor/pytest_policy.py": {
+        "sha256": "2aaf3b1cf44dab46ada23beb2fd52ad7994f94ad369db8d69062d9ece13e47dc",
+        "bytes": 9254
+      },
+      "smonitor/templates/README.md": {
+        "sha256": "88658d61af88ee6fc53bfa8a6e046b00bb4c9fb3222f9a41d6a85f728b66f87a",
+        "bytes": 139
+      },
+      "smonitor/templates/_smonitor.py": {
+        "sha256": "4887dab158d203ac17e8544b5d1aa697fe1e99109d6934d13349c068cc9c4b6a",
+        "bytes": 1199
+      },
+      "smonitor/validation.py": {
+        "sha256": "106f24b1a376e41b5a72f6fb8f5900bcd5b32ca4c5ab53e269a11d58efc33f99",
+        "bytes": 2168
+      }
+    },
+    "generated_version_exception": [
+      {
+        "path": "smonitor/_version.py",
+        "sha256": "9a358f530e5648a8ce74b139df678c89c47a1af734012b4bc458f3606456727b",
+        "bytes": 23
+      }
+    ],
+    "scope": "Original published SMonitor Python/resource payload versus exact published tag commit; generated version bytes remain original archive bytes. No source install/build or full scientific source gate."
+  },
+  "pending_gates": [
+    "#9 exact-head source/CI",
+    "#10 full dependencies",
+    "#23 installed/public/platform",
+    "#95 candidate/release",
+    "guided/expert usability and source operations",
+    "MolSysMT#624 collections",
+    "both biological studies and representative scale"
+  ],
+  "publication": "Own source/controls/logs and explicit scalar/hash projections only. Raw reader/app streams and support bundles, original molecular/query/database/native/attribution bodies and third-party payloads stay local.",
+  "temporary_resources": {
+    "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x",
+    "workspace": "/tmp/phmt-reader-providers-20261107-tladq1x1",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "review_date": "2026-11-20"
+  },
+  "sealing_limits": {
+    "memory.max": "536870912",
+    "memory.swap.max": "0",
+    "pids.max": "32",
+    "cpu.max": "100000 100000"
+  },
+  "full_evidence": {
+    "path": "reader_public_providers_20261107_full.json.gz",
+    "compressed_sha256": "13dee1a583762e5e7d6d5bb5d3318c85f1c52811216f15ee20117e58f8e1042a",
+    "compressed_bytes": 525114,
+    "uncompressed_sha256": "b0115471cc53ea786b08d09c0b645ca3ca5ce2ff1692451fbb30f9ef502d9375",
+    "uncompressed_bytes": 4584828,
+    "own_file_count": 218
+  }
+}

@@ -14,6 +14,7 @@ use Spanish. Repository/suite instructions retain their authority.
 | Understand current work and next action | [Checkpoint](checkpoint.md), [decisions/workstreams](decisions_and_workstreams.md), [roadmap](roadmap.md) |
 | Know what actually works | [Capability inventory](capability_inventory.md), [core architecture](core_architecture.md), [vision/scope](vision_and_scope.md) |
 | Change an API or integration | [API standards](api_design_standards.md), [support boundaries](support_library_boundaries.md), registered root guides |
+| Reproduce independent saved-result reading | [Public run contract](public_prepared_runs.md), [released-support receiving](reader_public_provider_receiving.md) |
 | Choose tests / assess scientific claims | [Testing/validation](testing_and_validation.md), [evidence collection](validation_collection.md), [case template](templates/evidence_case.md) |
 | Work on receptor validation | [#103 plan](pending_proposals/qualify_receptor_screening_studies.md), [study1 admission](receptor_study1_admission_protocol.md), [BRD4 method/next plan](receptor_study2_primary_method.md) |
 | Propose or assess a chemical library | [Public registry](https://github.com/uibcdf/pharmacophoremt/discussions/109), [provider research](public_library_support_research.md), [tool/workflow comparison](pharmacophore_library_workflow_survey.md), [#108 workflow](pending_proposals/qualify_public_library_workflow.md) |

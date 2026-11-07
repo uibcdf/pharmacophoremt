@@ -411,7 +411,16 @@ class TestDistributionContract(unittest.TestCase):
         self,
     ):
         path = self.root / "devtools/conda-envs/production_env.yaml"
-        path.write_text(path.read_text().replace("- smonitor\n", ""))
+        document = yaml.safe_load(path.read_text())
+        dependencies = document["dependencies"]
+        monitor = [
+            value
+            for value in dependencies
+            if isinstance(value, str) and Requirement(value).name == "smonitor"
+        ]
+        self.assertEqual(len(monitor), 1)
+        dependencies.remove(monitor[0])
+        path.write_text(yaml.safe_dump(document, sort_keys=False))
         with self.assertRaisesRegex(ValueError, "production_env.yaml.*smonitor"):
             self.routes.audit(self.root)
 

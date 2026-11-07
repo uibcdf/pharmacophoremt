@@ -4,7 +4,7 @@ issue: uibcdf/pharmacophoremt#108
 status: active
 opened: 2026-11-06
 closed:
-verification: inspected
+verification: measured
 area: [data, screening, usability]
 guard:
 normative: devguide/public_library_registry.md
@@ -176,6 +176,21 @@ receiving and normal editable receiving now pass. The current source runtime
 matches all154 qualified-wheel Python files and reopens the complete installed
 run with no new evaluation or byte changes. A cold normal-prefix import works
 after refreshing only owning-member editable metadata and ignored version cache;
-other provider versions/native artifacts remain unchanged. Next receive released
-support-provider floors/newer versions for the independent reader. No narrow
-result clears full supported source/installed/public/platform or biological gates.
+other provider versions/native artifacts remain unchanged. The next scoped
+receiving result is recorded below; no narrow result clears full supported
+source/installed/public/platform or biological gates.
+
+## Released support-provider receiving — 2026-11-07 UTC
+
+The [independent-reader receiving](../reader_public_provider_receiving.md) now
+checks the same frozen wheel against four exact public-payload combinations.
+All22 reader controls per cell and three authentic original saved runs pass.
+SMonitor0.19 loses coded error observations in four of five cold scenarios;
+0.22.1 passes all five with both DepDigest0.11.0/0.15.2. This justifies the new
+SMonitor>=0.22.1 runtime declarations and exact published controlled source pin,
+without changing the shared prefix, scientific runtime or another provider pin.
+Original control failures and all actual old-provider failures are retained.
+The reader's support closure is separate from a complete PHMT installation or
+supported platform gate. Next compare guided/expert public journeys on the same
+retained inputs and deliver a solution to a measured usability gap. Molecular
+collection/source ownership, biological validation and scale retain their gates.

@@ -1,5 +1,20 @@
 # Support-library boundaries and receiving limits
 
+## Independent-reader public support received — 2026-11-07
+
+[Released-provider receiving](reader_public_provider_receiving.md) measures the
+same frozen reader wheel in four source-free Linux/Python3.14 cells.22 controls
+per cell and exact original source/installed/legacy reading pass. SMonitor0.19
+loses coded observations on real reader failures and filtered/silenced nesting;
+0.22.1 passes all five application scenarios with both DepDigest0.11.0/0.15.2.
+Require SMonitor>=0.22.1 and align all six runtime routes, both exact published
+source pins/routes and reviewed manifest hashes. ArgDigest>=0.17.1 stays; its
+transitive DepDigest>=0.11.0 remains sufficient for the reader. No source/prefix
+provider upgrade or local diagnostic implementation follows. #6 remains partial;
+this is no full PHMT closure, all-minor/platform or changed-pin scientific gate.
+Original failed control assumptions and actual old-provider failures are retained
+in the [receipt](evidence/reader_public_providers_20261107_summary.json).
+
 ## Independent saved-run boundary — 2026-11-07
 
 The [public prepared-run implementation](public_prepared_runs.md) adds

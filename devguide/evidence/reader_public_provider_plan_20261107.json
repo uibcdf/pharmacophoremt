@@ -1,0 +1,168 @@
+{
+  "schema": "pharmacophoremt.reader-public-provider-plan@1",
+  "recorded_at_utc": "2026-11-07T06:00:00.912405+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "1b8e5ddd13631176fac96ffae40b152c7dab7c2e",
+  "frozen_phmt_producer": "ee5d9fae7a412b5276840cbec7289fdd95ddd375",
+  "wheel_sha256": "df36ba5e2d8e726813d4ce16ae36ce9738ad897a3f25eb3a7f81f7b8c71aa6db",
+  "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x",
+  "objective": "Qualify independent public saved-result reading against actual public support floors/newer payloads and justify dependency declarations without source-provider contamination.",
+  "matrix": {
+    "schema": "pharmacophoremt.reader-public-matrix@1",
+    "parent_source": "1b8e5ddd13631176fac96ffae40b152c7dab7c2e",
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "cells": [
+      {
+        "id": "historical-floor",
+        "config_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/historical-floor.json",
+        "versions": {
+          "argdigest": "0.17.1",
+          "smonitor": "0.19.0",
+          "depdigest": "0.11.0",
+          "pharmacophoremt": "0.4.0+134.gee5d9fa"
+        },
+        "expected_nested_suppression_failure": true
+      },
+      {
+        "id": "historical-monitor-newer-dependency",
+        "config_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/historical-monitor-newer-dependency.json",
+        "versions": {
+          "argdigest": "0.17.1",
+          "smonitor": "0.19.0",
+          "depdigest": "0.15.2",
+          "pharmacophoremt": "0.4.0+134.gee5d9fa"
+        },
+        "expected_nested_suppression_failure": true
+      },
+      {
+        "id": "corrected-monitor-floor-dependency",
+        "config_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/corrected-monitor-floor-dependency.json",
+        "versions": {
+          "argdigest": "0.17.1",
+          "smonitor": "0.22.1",
+          "depdigest": "0.11.0",
+          "pharmacophoremt": "0.4.0+134.gee5d9fa"
+        },
+        "expected_nested_suppression_failure": false
+      },
+      {
+        "id": "newer-published",
+        "config_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/newer-published.json",
+        "versions": {
+          "argdigest": "0.17.1",
+          "smonitor": "0.22.1",
+          "depdigest": "0.15.2",
+          "pharmacophoremt": "0.4.0+134.gee5d9fa"
+        },
+        "expected_nested_suppression_failure": false
+      }
+    ],
+    "closure_checker": {
+      "distribution": "packaging",
+      "version": "26.3",
+      "scope": "Administrative metadata checker only; not admitted to receiving processes."
+    },
+    "provider_floors": {
+      "argdigest": "0.17.1",
+      "depdigest": "0.11.0",
+      "smonitor_declared_api_floor": "0.19.0",
+      "smonitor_corrected_diagnostic_candidate": "0.22.1"
+    }
+  },
+  "application_modes": [
+    "first-use",
+    "configured-first",
+    "nested-filtered",
+    "nested-silenced",
+    "nested-admitted"
+  ],
+  "frozen_case_files": {
+    "controls/application_receiving.md": {
+      "sha256": "e990d364f3921479b649ec015b5ee7a60fa0f4facac3d13669769c808ac27681",
+      "bytes": 6520
+    },
+    "controls/application_receiving.py": {
+      "sha256": "ee522f146d585a22b80fc31a9f24bdaeea4b93437494696326ea164e88397409",
+      "bytes": 16337
+    },
+    "controls/create_historical_descriptors.py": {
+      "sha256": "9821ae4e28cf05c6736b08746cc9803f92a3caca96e4fb4c91cc74e675298b74",
+      "bytes": 5745
+    },
+    "controls/historical_descriptors.json": {
+      "sha256": "ffc6eb284ece7e63f0840f0b09667934b077dc9a7bd04c0597d49414b2e438ba",
+      "bytes": 12617
+    },
+    "controls/prepare_matrix.py": {
+      "sha256": "b64a6a60e6ec9bfb8021788bb1f04641880819fd3df7ad1bb69412e5b88975d0",
+      "bytes": 4887
+    },
+    "controls/receive_historical_runs.py": {
+      "sha256": "cbf26f6312356248737d6c0c9d99b68fa832b60304e58b8e49ddb6fdef4417c3",
+      "bytes": 19477
+    },
+    "controls/run_matrix.py": {
+      "sha256": "e24c1a41855660250559e4ce471f107886f24c4eea8c4f10bb09e5c1656fd036",
+      "bytes": 5596
+    },
+    "controls/run_reader_receiving.py": {
+      "sha256": "600340090c2ff4a46b69c8e15797e31f4bdb68f933d21c7b1895756ec73b4d3e",
+      "bytes": 20989
+    },
+    "controls/stage_public_payloads.py": {
+      "sha256": "61260ee8fe1de7c93b3905b96c274ddbed1c21255228e94d06fd01c03d79b319",
+      "bytes": 7587
+    },
+    "controls/test_public_run_results.original.py": {
+      "sha256": "4969bfda4b3ad91049a4a1062167a49173c8224d1767f50cc85c7eef98cb3b34",
+      "bytes": 22042
+    },
+    "corrected-monitor-floor-dependency.json": {
+      "sha256": "8ec480b515993ab12e2e1d6d0b06047c13eda23a05bcd0ded38f11a94393f1a9",
+      "bytes": 6115
+    },
+    "historical-floor.json": {
+      "sha256": "f78032b6408ebcae993cc6872d26e2a37b0a5f5dfa15b73d53d54ada7ed59d3b",
+      "bytes": 6032
+    },
+    "historical-monitor-newer-dependency.json": {
+      "sha256": "422bfc6cf38ec7d91b53822024928078b0f9f73bc9997bce363f480ccd31f340",
+      "bytes": 6127
+    },
+    "matrix.json": {
+      "sha256": "8e46859f53adb96ae4e92688994969ff585f1f52f1bc1fbcababf1b319c462d2",
+      "bytes": 2392
+    },
+    "newer-published.json": {
+      "sha256": "c7ea8ae52b9445c368b19bccb37b48dccb99898ef88d346adba7848bd21b04cc",
+      "bytes": 6020
+    },
+    "payload_inventory.json": {
+      "sha256": "1b8a29ad4dbc36e23b73dd2e1ebc52c6da815befc1e0638d9f463112405ec540",
+      "bytes": 26891
+    }
+  },
+  "acceptance": [
+    "All21 unchanged original reader test bodies plus one separately counted all-operation closed-contract control pass per cell; fresh children use -I-S-B admitted payload roots only.",
+    "Actual apppolicy/handler/hooks/bootstrap and catalog/cause/export controls execute in cold separate processes. No scientific namespaces or checkout providers.",
+    "Historical-floor and historical-monitor/newer-dependency are measured baselines. SMonitor0.19 nested filtered/silenced observation is hypothesized to fail; retain original failures. A complete supported reader floor must pass all policies rather than xfail the defects.",
+    "Corrected monitor0.22.1 with DepDigest0.11.0 and0.15.2 should pass all cells; ArgDigest0.17.1 fixed in each. Do not raise DepDigest beyond consumed/qualified API.",
+    "Read exact authentic complete source/installed/legacy databases, original full rows/versions/attribution; public CLI scalar fields only, defaultlegacyrefusal then explicitadmission. Whole original files/directories unchanged.",
+    "No surviving authentic partial DB exists. Check its two original API/CLI receipts and first-confirmation prefix as dated evidence only; current21 tests exercise freshpartial views.",
+    "Validate active recursive support Requires-Dist/Requires-Python markers; optional extras remain inactive. Deliberately absent scientific PHMT requirements are explicit, not a supported minimal whole-PHMT install or pip-check claim.",
+    "Serial CPU19/quota100%, one backendthread, nice19 idleIO,512MiB/no swap/tasks32; pressurechecked before entry; actual resource events retained."
+  ],
+  "publication": "Own executable controls/plans/logs/scalar/hash projections only; no original molecular geometry/query/native DB/export/attribution bodies or third-party binary payloads.",
+  "new_scientific_evaluations": 0,
+  "shared_environment_changes": false,
+  "pending_gates": [
+    "Full source/dependency/installed/public/platform/release #9/#10/#23/#95",
+    "Mature0.x guided/expert usability, source operations, scale and biologicalvalidation",
+    "MolSysMT#624 collections"
+  ]
+}

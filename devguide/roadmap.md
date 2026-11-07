@@ -89,11 +89,19 @@ also passes that recipe outside the checkout, as recorded in the
 [public recovery/results task](public_prepared_runs.md) now passes197 selected
 local cases, source/same-wheel installed interruption/resume/export, independent
 guarded readers and the migrated original-input callback. Normal editable receiving
-also passes with identical runtime code and no provider changes. Next receive
-released support-provider floors/newer versions for the independent reader; full
-guided/expert usability and source/installed/public gates remain separate.
+also passes with identical runtime code and no provider changes. The
+[released-support reader receiving](reader_public_provider_receiving.md) now
+measures four bounded cells and selects SMonitor>=0.22.1 from actual missing-error
+observations on0.19. Next execute guided/expert journeys side by side and address
+a measured usability gap; full source/installed/public gates remain separate.
 Managed molecular collections
 remain MolSysMT#624-owned; source work is not full milestone2 delivery.
+
+The dated [pause record](evidence/reader_public_providers_20261107_checkpoint.json)
+retains its pending-delivery state. Resumption verifies the saved source unchanged
+and seals the [own/scalar receiving evidence](evidence/reader_public_providers_20261107_summary.json).
+The next guided/expert task starts from the [current checkpoint](checkpoint.md).
+No release or full supported gate is established by this reader increment.
 
 ## Current priority: classical consolidation
 
