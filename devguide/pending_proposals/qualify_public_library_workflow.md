@@ -160,3 +160,17 @@ a negative score. Provider priorities remain proposals, not release commitments.
 
 The first implementation provider and release scope remain to be selected from
 the evidence. Future bounded integrations can use linked issues when accepted.
+
+## Public recovery/results implementation — 2026-11-07 UTC
+
+The [declared public task](../public_prepared_runs.md) now has a scientific
+create/open/resume facade and a separately importable result companion, using
+one private stdlib storage core. New public writing is versioned; historical
+experimental reading requires explicit admission and implies no migration.
+ArgDigest/SMonitor remain at public boundaries, while independent reading loads
+no main-PHMT, molecular, numerical or attribution namespace.197 distinct local
+cases, both source recipe blocks and the migrated original-input callback pass.
+The first administrative namespace failure and subsequent pre-freeze binary-score
+review remain under separate original plans/attempts. Same-file owned installed
+receiving is next; no prospective plan or narrow source result clears full
+supported source/installed/public/platform or biological gates.

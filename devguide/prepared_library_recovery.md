@@ -1,5 +1,15 @@
 # Prepared-library recovery reference
 
+## Later public implementation — 2026-11-07 UTC
+
+The [public prepared-run contract](public_prepared_runs.md) is now implemented
+and awaiting qualification. The old recovery helper contains exact public
+aliases; the old storage helper delegates to the one shipped private stdlib core.
+Historical reading preserves the old format; public writing uses a distinct
+versioned format and admits no implicit legacy reexecution. Changed helper/runtime
+fingerprints can refuse old reexecution without implying changed chemistry.
+The original experiment and its measured evidence below retain their identities.
+
 Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108).
 This extends the [incremental reference](prepared_library_reference.md) with an

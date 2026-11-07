@@ -91,4 +91,13 @@ The prepared-input implementation is now public under `pharmacophoremt.screening
 digest preserves the64-file private support declaration. Source controls now
 exercise the public imports. [Public contract](../devguide/public_prepared_screening.md)
 separates owned installed receiving from source evidence and keeps recovery/
-inspection experiments outside the promoted runtime API.
+inspection experiments outside that increment's promoted runtime API.
+
+The later [public prepared-run task](../devguide/public_prepared_runs.md) now
+replaces `prepared_library_recovery` with exact public aliases and delegates
+`reference_run_store` to the one shipped private stdlib core. Its old legacy
+format/isolated command remain supported by that shim. New public writing uses
+a distinct versioned format; explicit historical reading does not migrate it.
+The PubChem3D harness now composes the public plan/resume/store for new execution;
+old pilot artifacts and receipts remain unchanged. Three helper digests change,
+with the private support count remaining64. Qualification is pending.

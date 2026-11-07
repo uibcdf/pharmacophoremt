@@ -1,5 +1,11 @@
 # Read-only inspection of reference screening runs
 
+The later [public prepared-run implementation](public_prepared_runs.md) is now
+awaiting qualification. Its independently importable companion reader uses
+ArgDigest/SMonitor without molecular/numerical/citation imports. Explicit legacy
+reading is separate from the new public writer; this page preserves the original
+reference-format command, qualification and historical source identities.
+
 Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108).
 This extends the unshipped [recovery experiment](prepared_library_recovery.md)

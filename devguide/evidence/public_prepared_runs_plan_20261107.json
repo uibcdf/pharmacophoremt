@@ -1,0 +1,136 @@
+{
+  "schema": "pharmacophoremt.public-prepared-runs-plan@1",
+  "recorded_at_utc": "2026-11-07T04:15:12.016782+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "9af0efe74dd3a7826b6dd269dee5c057e2bf0a89",
+  "objective": "Complete public create/interruption/resume/saved inspection/export task toward mature0.x milestone2, retaining separate source/installed/public gates",
+  "public_scientific_api": [
+    "PreparedRunPlan",
+    "build_prepared_run_plan",
+    "resume_prepared_run",
+    "PreparedScreeningRun"
+  ],
+  "independent_reader_api": "pharmacophoremt_results.ScreeningRunStore/ScreeningRunView; python -m pharmacophoremt_results",
+  "decisions": [
+    "One stdlib private storage core; exact legacy support shim and original ledger format retained",
+    "New public writer format pharmacophoremt.screening-run@1; legacy public reading only explicit allow_legacy; no implicit legacy reexecution/migration",
+    "Public companion uses ArgDigest standard/SMonitor and imports no molecular/numerical/citation/main-PHMT namespace",
+    "Normal scientific public facade owns saved native query, expanded native options and conservative location-independent software binding including companion sources",
+    "Source versions/hashes are execution compatibility, not chemical identity or authenticated molecular snapshot",
+    "Confirmed outcomes immutable and skipped, started/staged attempts retained, commit before yield; saved complete view distinct from new generator deliveries",
+    "Caller owns molecular readers; reopen declared sequence from start; explicit new linked run for changed plan or terminal failure retry"
+  ],
+  "source_selection": [
+    "tests/test_prepared_library_recovery.py",
+    "tests/test_public_prepared_runs.py",
+    "tests/test_public_prepared_screening.py",
+    "tests/test_prepared_library_reference.py"
+  ],
+  "administrative_selection": [
+    "devtools/tests/test_reference_run_store.py",
+    "devtools/tests/test_reference_run_inspection.py",
+    "devtools/tests/test_public_run_results.py",
+    "devtools/tests/test_distribution_contract.py"
+  ],
+  "real_task": {
+    "records": [
+      {
+        "cid": 1983,
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+        "work_key": "public:cid:1983:state:0:frame:0",
+        "source_key": "PubChemCID:1983",
+        "occurrence_key": "original:0",
+        "identity": {
+          "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+          "bytes": 132344
+        }
+      },
+      {
+        "cid": 2244,
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+        "work_key": "public:cid:2244:state:0:frame:0",
+        "source_key": "PubChemCID:2244",
+        "occurrence_key": "original:1",
+        "identity": {
+          "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+          "bytes": 132328
+        }
+      },
+      {
+        "cid": 2519,
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+        "work_key": "public:cid:2519:state:0:frame:0",
+        "source_key": "PubChemCID:2519",
+        "occurrence_key": "original:2",
+        "identity": {
+          "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+          "bytes": 132328
+        }
+      }
+    ],
+    "query": {
+      "original_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/query.json",
+      "identity": {
+        "sha256": "cd0a6a33ca3981429a030a8f96a6ed94825dfece847467a72043b4cda116273d",
+        "bytes": 21959
+      },
+      "source": "Original caffeine three-essential-acceptor query from declared pilot; no source acquisition"
+    },
+    "manifest": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-runs-20261107-w9c85754/work.jsonl",
+      "sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+      "bytes": 324
+    },
+    "expected": {
+      "declared_work": 3,
+      "first_confirmation": {
+        "committed_work": 1,
+        "pending_work": 2,
+        "scores": [
+          0
+        ]
+      },
+      "after_resume": {
+        "committed_work": 3,
+        "pending_work": 0,
+        "scores": [
+          0,
+          1,
+          1
+        ],
+        "statuses": [
+          "not_matched",
+          "matched",
+          "matched"
+        ]
+      },
+      "retry_confirmed_work": false
+    },
+    "fresh_reader": "Read partial/full saved runs from companion with main PHMT,molecular/numerical/citation/support imports forbidden; original inputs/query/manifest unnecessary for saved reading",
+    "legacy": "Read same original PubChem3D ledger only explicit flag; preserve full original bytes/directory, reject default/newwriterlegacy usage"
+  },
+  "installed_receiving": "One frozen owned wheel, same public task and companion python-mCLI/reader outsidecheckout; existing recorded Linux/Python3.14 source-provider context only. Preserve actual generated/source versions; read source-produced native evidence without normalizing versions; create/resume installed runs with the same installed identity. No public-channel/Conda/full minor/platform claim.",
+  "resource_limits": {
+    "cpu": 19,
+    "threads": 1,
+    "quota_percent": 100,
+    "memory_bytes": 536870912,
+    "swap_bytes": 0,
+    "tasks": 32,
+    "nice": 19,
+    "io": "idle"
+  },
+  "new_molecular_http_requests": 0,
+  "publication": "Own code/control/scalar proof only; original H5/query/native run database/full outcome/attribution bodies local; legacy original receipts preserved.",
+  "pending_gates": [
+    "MolSysMT#624 molecular collections",
+    "Full guided/expert usability and source-operation qualification",
+    "Representative resource/index measurements",
+    "Biological studies #103/#66/#106",
+    "Full supported source/dependency/installed/public/platform/release #9/#10/#23/#95"
+  ]
+}

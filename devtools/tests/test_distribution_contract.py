@@ -54,6 +54,7 @@ class TestDistributionContract(unittest.TestCase):
             "devtools/requirements",
             "devtools/dependency_routes.toml",
             "pharmacophoremt",
+            "pharmacophoremt_results",
             "molsysviewer_pharmacophoremt",
             "phmt_test_support",
             "tests/data",
@@ -144,7 +145,11 @@ class TestDistributionContract(unittest.TestCase):
     def test_complete_current_core_data_and_private_resources_are_inventoried(self):
         expected = {
             "site-packages/" + str(path.relative_to(self.root))
-            for namespace in ("pharmacophoremt", "molsysviewer_pharmacophoremt")
+            for namespace in (
+                "pharmacophoremt",
+                "pharmacophoremt_results",
+                "molsysviewer_pharmacophoremt",
+            )
             for path in (self.root / namespace).rglob("*")
             if path.is_file()
         }
@@ -210,14 +215,24 @@ class TestDistributionContract(unittest.TestCase):
         self.assertTrue(packages)
         self.assertTrue(
             all(
-                name in {"pharmacophoremt", "molsysviewer_pharmacophoremt"}
+                name
+                in {
+                    "pharmacophoremt",
+                    "pharmacophoremt_results",
+                    "molsysviewer_pharmacophoremt",
+                }
                 or name.startswith(
-                    ("pharmacophoremt.", "molsysviewer_pharmacophoremt.")
+                    (
+                        "pharmacophoremt.",
+                        "pharmacophoremt_results.",
+                        "molsysviewer_pharmacophoremt.",
+                    )
                 )
                 for name in packages
             )
         )
         self.assertIn("pharmacophoremt.screening", packages)
+        self.assertIn("pharmacophoremt_results", packages)
         self.assertIn("molsysviewer_pharmacophoremt.panels", packages)
         self.assertEqual(
             project["project"]["entry-points"]["molsysviewer.addons"],

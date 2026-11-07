@@ -1,5 +1,18 @@
 # Proposed 0.5.0 consolidation
 
+## Later recoverable-run and independent-reader API — 2026-11-07
+
+The [public prepared-run task](public_prepared_runs.md) adds plan/create/open/
+resume composition and the independently importable `pharmacophoremt_results`
+namespace in the same distribution. New public writing uses an explicit versioned
+format; legacy reading is opt-in and never implies migration/reexecution.
+197 distinct selected local cases and original-input source recipes pass;
+owned identical-wheel receiving is pending. Original attempts and original
+native/source evidence remain preserved. This new post-review API/package/data
+format delta needs candidate review; the historical signature statements below
+do not cover it. Full supported dependency/source/installed/public/platform gates
+remain separate, with the actual release plan0.4.0 unchanged.
+
 ## Later public prepared-input API — 2026-11-07
 
 The [mature-0.x staircase](roadmap.md) keeps the final pre-1.0 minor open.

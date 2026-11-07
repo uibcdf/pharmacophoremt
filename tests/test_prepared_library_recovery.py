@@ -1,4 +1,4 @@
-"""Analytical saved-query recovery controls; no collection authentication claim."""
+"""Public saved-query recovery preserves the analytical reference controls."""
 
 import json
 from copy import deepcopy
@@ -12,15 +12,16 @@ from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt.interaction_site import InteractionSite
 from pharmacophoremt.interaction_site.shape import Sphere
 from pharmacophoremt.io import to_json
-from pharmacophoremt.screening import PoseEvaluator
-from phmt_test_support import prepared_library_recovery as recovery
-from phmt_test_support.absence_inputs import COORDINATES, reference
-from phmt_test_support.prepared_library_recovery import (
-    build_recovery_plan,
-    resume_prepared,
+from pharmacophoremt.screening import PoseEvaluator, PreparedInput, screen_prepared
+from pharmacophoremt.screening import prepared_runs as recovery
+from pharmacophoremt.screening.prepared_runs import (
+    build_prepared_run_plan as build_recovery_plan,
 )
-from phmt_test_support.prepared_library_reference import PreparedInput, screen_prepared
-from phmt_test_support.reference_run_store import ReferenceLedger
+from pharmacophoremt.screening.prepared_runs import (
+    resume_prepared_run as resume_prepared,
+)
+from pharmacophoremt_results import ScreeningRunStore as ReferenceLedger
+from phmt_test_support.absence_inputs import COORDINATES, reference
 from tests.test_conformer_screening import ensemble, moved_coordinates
 from tests.test_pose_evaluation import model_from_source, system
 from tests.test_prepared_library_reference import TrackedSource

@@ -12,6 +12,16 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
 ### Later development after the reviewed snapshot
 
+Recoverable prepared runs and the independent `pharmacophoremt_results` reader
+pass selected source controls and original-input receiving; owned installed
+receiving is pending. The
+[recipe](../cookbook/recoverable_prepared_screening.md) separates new confirmed
+deliveries from the authoritative complete saved view, and preserves terminal
+failures, attempts and original producer evidence. Public writing uses a new
+versioned format; reading an experimental legacy run is explicit and does not
+migrate it. This later API delta needs its own candidate review and actual
+source/installed/public gates before release.
+
 Public `screening.PreparedInput` and `screen_prepared` now evaluate prepared
 inputs incrementally and export all mapped outcomes in encounter order. The
 [recipe](../cookbook/prepared_incremental_screening.md) loads a query, reads

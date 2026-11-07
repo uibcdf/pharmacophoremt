@@ -1,5 +1,22 @@
 # Support-library boundaries and receiving limits
 
+## Independent saved-run boundary — 2026-11-07
+
+The [public prepared-run implementation](public_prepared_runs.md) adds
+`pharmacophoremt_results` in the same distribution. Its public facade has
+definition-owned ArgDigest standard/value contracts and its own SMonitor
+bootstrap/catalog (`PHMT-E201`), preserving application policy and original
+storage errors as causes. It imports no main-PHMT, molecular/numerical or
+attribution namespace. Its private stdlib core owns persisted schema/integrity;
+the legacy support shim loads that core directly and keeps its old stdlib route.
+The scientific facade reuses native I/O/evaluator admission and reached native
+attribution. Saved reading earns no new credit. Native quantity records remain
+opaque original explicit-unit evidence; no new molecular parser, optional engine
+or general quantity codec is introduced. The #108 source increment passes82
+scientific,94 administrative and21 reporting/archive cases, plus actual original
+input and guarded independent-reader controls. Owned installed receiving is next;
+existing full source/public provider/support gates stay separate.
+
 This contract belongs to [#6](https://github.com/uibcdf/pharmacophoremt/issues/6).
 
 ## Current orientation — 2026-11-06

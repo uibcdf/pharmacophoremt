@@ -194,6 +194,16 @@ required_paths = [
   "site-packages/pharmacophoremt/validation/saved_results.py",
   "site-packages/pharmacophoremt/viewer/__init__.py",
   "site-packages/pharmacophoremt/viewer/color_palettes.py",
+  "site-packages/pharmacophoremt/_private/arg_digestion/prepared_runs.py",
+  "site-packages/pharmacophoremt/screening/prepared_runs.py",
+  "site-packages/pharmacophoremt_results/__init__.py",
+  "site-packages/pharmacophoremt_results/__main__.py",
+  "site-packages/pharmacophoremt_results/_api.py",
+  "site-packages/pharmacophoremt_results/_diagnostics.py",
+  "site-packages/pharmacophoremt_results/_digestion.py",
+  "site-packages/pharmacophoremt_results/_meta.py",
+  "site-packages/pharmacophoremt_results/_smonitor.py",
+  "site-packages/pharmacophoremt_results/_store.py",
 ]
 
 [installed_gate]
@@ -526,17 +536,17 @@ sha256 = "bb92766cdf4f66123ce4f8da88a72f9c84f48691e23ce02b333b3dc40c2a0c06"
 [[installed_tests.support.files]]
 source = "phmt_test_support/reference_run_store.py"
 target = "phmt_test_support/reference_run_store.py"
-sha256 = "b1747b9ebfb1c8db5048259036018157c12843ba173f9502c4dd5143ee440675"
+sha256 = "8ef512fee2a166d6542845babea96310e274b6b654d3c9682ce098efa8edc74d"
 
 [[installed_tests.support.files]]
 source = "phmt_test_support/prepared_library_recovery.py"
 target = "phmt_test_support/prepared_library_recovery.py"
-sha256 = "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6"
+sha256 = "08f2bcd26b63bb6f2c003a2b333b27499f9fc195edbc2aa301ad0cd9f3a65637"
 
 [[installed_tests.support.files]]
 source = "phmt_test_support/pubchem3d_receiving_pilot.py"
 target = "phmt_test_support/pubchem3d_receiving_pilot.py"
-sha256 = "7edf3d837b0ce98c11f18b24dfda2093d94ec2ec486e884038161ee8b73310c9"
+sha256 = "d9aed488c9610e278b5bfc6b9da3858b476dbf37c8266737f41149703a41d99a"
 
 [[installed_tests.support.files]]
 source = "phmt_test_support/feature_reuse_experiment.py"

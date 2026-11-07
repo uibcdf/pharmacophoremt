@@ -397,16 +397,14 @@ def _screen(snapshots, output, event):
     from pharmacophoremt import pyunitwizard as puw
     from pharmacophoremt.io import to_json
     from pharmacophoremt.modeler import from_ligand
-    from pharmacophoremt.screening import get_screening_score
-    from phmt_test_support.prepared_library_recovery import (
-        build_recovery_plan,
-        resume_prepared,
-    )
-    from phmt_test_support.prepared_library_reference import (
+    from pharmacophoremt.screening import (
         PreparedInput,
+        build_prepared_run_plan,
+        get_screening_score,
+        resume_prepared_run,
         screen_prepared,
     )
-    from phmt_test_support.reference_run_store import ReferenceLedger
+    from pharmacophoremt_results import ScreeningRunStore
 
     def load_snapshot(record):
         if _identity(record["path"]) != {
@@ -462,7 +460,7 @@ def _screen(snapshots, output, event):
             "backend_threads": 1,
         },
     }
-    plan = build_recovery_plan(
+    plan = build_prepared_run_plan(
         query_path,
         screening_method="rigid",
         score_method="seeded_hit",
@@ -472,26 +470,26 @@ def _screen(snapshots, output, event):
     )
     ledger_path = output / "screening.sqlite3"
     event("screening", "started")
-    with ReferenceLedger.create(
+    with ScreeningRunStore.create(
         ledger_path,
         run_id="pubchem3d-fixed-three-pilot@1",
         query_bytes=plan.query_bytes,
         context=plan.context,
         manifest_path=manifest,
     ) as ledger:
-        outcomes = resume_prepared(ledger, reader(), plan=plan)
+        outcomes = resume_prepared_run(ledger, reader(), plan=plan)
         first = next(outcomes)
         outcomes.close()
         if len(list(ledger.results())) != 1:
             raise ValueError("interruption did not preserve one confirmed outcome")
     event("screening", "interrupted_after_one_confirmed")
-    with ReferenceLedger.open(
+    with ScreeningRunStore.open(
         ledger_path,
         query_bytes=plan.query_bytes,
         context=plan.context,
         manifest_path=manifest,
     ) as ledger:
-        remaining = list(resume_prepared(ledger, reader(), plan=plan))
+        remaining = list(resume_prepared_run(ledger, reader(), plan=plan))
         saved = list(ledger.results())
         attempts = len(list(ledger.attempts(first["work_key"])))
         if len(saved) != 3 or len(remaining) != 2 or attempts != 1:

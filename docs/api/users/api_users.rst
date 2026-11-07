@@ -21,3 +21,27 @@ scope, reader ownership, score/failure semantics and qualification limits.
 
 .. autofunction:: pharmacophoremt.screening.screen_prepared
 
+Recoverable prepared screening and saved results
+-----------------------------------------------
+
+Development-source qualification is in progress. The
+:doc:`recoverable recipe </content/cookbook/recoverable_prepared_screening>`
+distinguishes immutable confirmations, new iterator deliveries and the complete
+saved view. Independent reading uses the companion package in the same wheel.
+
+.. autoclass:: pharmacophoremt.screening.PreparedRunPlan
+   :members:
+
+.. autofunction:: pharmacophoremt.screening.build_prepared_run_plan
+
+.. autofunction:: pharmacophoremt.screening.resume_prepared_run
+
+.. autoclass:: pharmacophoremt.screening.PreparedScreeningRun
+   :members:
+
+.. autoclass:: pharmacophoremt_results.ScreeningRunStore
+   :members:
+
+.. autoclass:: pharmacophoremt_results.ScreeningRunView
+   :members:
+

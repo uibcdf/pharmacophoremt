@@ -85,8 +85,11 @@ existing facade owns global hit ranking and complete caches. `PreparedInput` and
 admission, structured diagnostics and actual per-evaluation attribution.89 source
 controls and the query/prepared-file/export recipe pass. The identical owned wheel
 also passes that recipe outside the checkout, as recorded in the
-[public contract](public_prepared_screening.md). Next qualify a separate public
-recovery/results contract. Managed molecular collections
+[public contract](public_prepared_screening.md). The separate
+[public recovery/results task](public_prepared_runs.md) now passes197 selected
+local cases, source interruption/resume/export, independent guarded readers and
+the migrated original-input pilot callback. Owned installed qualification is next.
+Managed molecular collections
 remain MolSysMT#624-owned; source work is not full milestone2 delivery.
 
 ## Current priority: classical consolidation
