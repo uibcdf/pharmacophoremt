@@ -191,6 +191,18 @@ class ScreeningRunStore:
         """Iterate retained attempt states for one known work key."""
         return _iterate("read retained attempts", self._ledger.attempts(work_key))
 
+    @signal(tags=["results", "run", "progress"])
+    @arg_digest(config=config("ScreeningRunStore.progress"))
+    def progress(self):
+        """Count confirmed/pending work and attempts between writes, without ranking.
+
+        Use this owned writer connection; a separate read view requires closing
+        the writer first. Semantics match :meth:`ScreeningRunView.progress`.
+        """
+        return _invoke(
+            "inspect saved progress", _store.ReferenceRunView(self._ledger).progress
+        )
+
     @signal(tags=["results", "run", "summary"])
     @arg_digest(config=config("ScreeningRunStore.summary"))
     def summary(self, *, score_method):
@@ -276,6 +288,27 @@ class ScreeningRunView:
     def query_bytes(self):
         """Return exact original saved query bytes, without loading its producer."""
         return _invoke("read original query", lambda: self._view.query_bytes)
+
+    @signal(tags=["results", "read", "progress"])
+    @arg_digest(config=config("ScreeningRunView.progress"))
+    def progress(self):
+        """Inspect saved work and attempts without choosing a ranking criterion.
+
+        Returns detached run/parent IDs, ``counts``, ``attempts`` and
+        ``manifest_work_complete``. Work counts separate declared, committed,
+        scored, matched, not-matched, failed and pending items. Attempts separate
+        started, staged and committed records; unpublished stages remain pending.
+        No native payload, query, score criterion or ranking is returned.
+
+        Complete declared work may include failures. Counts describe work items,
+        not independent compounds or biological validity. Empty work is complete.
+        This scans saved evidence in the owned verified snapshot; it performs no
+        scientific computation and is not a constant-time live progress monitor.
+
+        >>> with ScreeningRunView.open('run.sqlite3') as view:
+        ...     pending = view.progress()['counts']['pending_work']
+        """
+        return _invoke("inspect saved progress", self._view.progress)
 
     @signal(tags=["results", "read", "summary"])
     @arg_digest(config=config("ScreeningRunView.summary"))
@@ -384,7 +417,7 @@ class ScreeningRunView:
 
 
 def main(argv=None):
-    """Inspect saved ranks or export complete evidence through the public view.
+    """Inspect saved progress/ranks or export evidence through the public view.
 
     Successful inspection prints bounded scalar JSON; export prints the original
     API receipt. Handled failures exit2 without a success response. Publication
@@ -395,6 +428,11 @@ def main(argv=None):
     )
     parser.add_argument("ledger", type=Path, help="Saved screening-run database.")
     exports = parser.add_mutually_exclusive_group()
+    exports.add_argument(
+        "--summary",
+        action="store_true",
+        help="Show saved work/attempt counts without selecting a ranking criterion.",
+    )
     exports.add_argument(
         "--to-jsonl",
         type=Path,
@@ -410,12 +448,12 @@ def main(argv=None):
     parser.add_argument(
         "--score-method",
         choices=("seeded_hit@1", "checked_pose_coverage@1"),
-        help="Required for ranked inspection; cannot be combined with export.",
+        help="Required for ranked inspection; cannot be combined with summary/export.",
     )
     parser.add_argument(
         "--limit",
         type=int,
-        help="Ranked inspection only; defaults to 10. Export has no limit.",
+        help="Ranked inspection only; defaults to 10. Summary/export has no limit.",
     )
     parser.add_argument(
         "--allow-legacy",
@@ -424,18 +462,21 @@ def main(argv=None):
     )
     arguments = parser.parse_args(argv)
     exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
-    if exporting and (
+    ranked = not (exporting or arguments.summary)
+    if not ranked and (
         arguments.score_method is not None or arguments.limit is not None
     ):
         parser.error("--score-method and --limit are only valid for ranked inspection")
-    if not exporting and arguments.score_method is None:
+    if ranked and arguments.score_method is None:
         parser.error("--score-method is required for ranked inspection")
     receipt = None
     try:
         with ScreeningRunView.open(
             arguments.ledger, allow_legacy=arguments.allow_legacy
         ) as view:
-            if arguments.to_jsonl is not None:
+            if arguments.summary:
+                result = view.progress()
+            elif arguments.to_jsonl is not None:
                 result = receipt = view.to_jsonl(arguments.to_jsonl)
             elif arguments.to_csv is not None:
                 result = receipt = view.to_csv(arguments.to_csv)
@@ -444,7 +485,7 @@ def main(argv=None):
                     score_method=arguments.score_method,
                     limit=10 if arguments.limit is None else arguments.limit,
                 )
-        if not exporting:
+        if ranked:
             result["records"] = [
                 {
                     "manifest_ordinal": record["manifest_ordinal"],

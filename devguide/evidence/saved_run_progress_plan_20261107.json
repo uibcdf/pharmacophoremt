@@ -1,0 +1,31 @@
+{
+  "schema": "pharmacophoremt.saved-run-progress-plan@1",
+  "date_utc": "2026-11-07",
+  "owners": ["LMMV", "dprada"],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "parent_source": "5b89c1e5c3a4cdf4d179c51fdcf7d08c72eafbf1",
+  "contract": "devguide/saved_run_progress.md",
+  "question": "Can a user inspect saved work progress without selecting or combining ranking criteria, while preserving verified original evidence and the existing ranking/export interfaces?",
+  "controls": [
+    "Writer and reader progress agree on empty, partial and complete runs; zero negatives, failures, unpublished staged evidence and repeated attempts retain distinct counts",
+    "Progress is detached, has no ranking criterion/native payload and fails on closed connections",
+    "Mixed-criterion legacy progress counts work without ranking; existing explicit ranking disagreement remains refused",
+    "Fresh guarded CLI --summary matches API progress, preserves database bytes and imports no scientific or attribution namespace",
+    "Summary/export mutual exclusion and summary/ranking-option conflicts fail before database I/O; old ranked and export commands remain compatible",
+    "Missing, corrupt, implicitly admitted legacy and corrupt unpublished evidence cannot produce successful progress",
+    "Existing saved-reader/export/CLI regression bodies, affected distribution contracts, full Ruff, reporting, archive and index checks",
+    "Same exact owned installed wheel passes the selected reader/export/CLI controls outside the checkout with published support payloads and documented summary commands on original complete/partial/legacy saved databases"
+  ],
+  "resources": {
+    "serial": true,
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io_priority": "idle",
+    "per_process_memory_limit_bytes": 536870912,
+    "pressure_check": "MemAvailable >2GiB; memory pressure avg10 <1",
+    "aggregate_limits": "No own systemd user runtime was available at the preceding checkpoint. Recheck availability; enforce and record per-process OS limits without accessing another user's bus."
+  },
+  "publication": "Own control/code text and scalar/hash receipts only; original native/query/database bodies and third-party payloads remain local",
+  "nonclaims": "No new science, public-library connector, molecular collection, benchmark, biological validation, full dependency solve, full supported platform qualification or release"
+}

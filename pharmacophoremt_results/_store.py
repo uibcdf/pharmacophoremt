@@ -694,6 +694,10 @@ class ReferenceRunView:
         """Yield full saved terminal outcomes in manifest order, including failures."""
         yield from self._ledger.results()
 
+    def progress(self):
+        """Count work and attempts without selecting or combining score criteria."""
+        return self._scan(None, limit=0)["summary"]
+
     def summary(self, *, score_method):
         """Count declared work and publication coverage under one saved criterion."""
         return self._inspect(score_method, limit=0)["summary"]
@@ -710,9 +714,8 @@ class ReferenceRunView:
             "checked_pose_coverage@1",
         }:
             raise ValueError("choose an explicit supported versioned score criterion")
-        connection = self._ledger._db()
-        configuration = self._ledger._configuration
-        execution = configuration["context"].get("execution", {})
+        self._ledger._db()
+        execution = self._ledger._configuration["context"].get("execution", {})
         if type(execution) is not dict:
             raise ValueError("execution context must be a mapping")
         declared = execution.get("score_method")
@@ -721,6 +724,11 @@ class ReferenceRunView:
             and score_method != _key(declared, "score_method") + "@1"
         ):
             raise ValueError("requested score criterion differs from saved execution")
+        return self._scan(score_method, limit=limit)
+
+    def _scan(self, score_method, *, limit):
+        connection = self._ledger._db()
+        configuration = self._ledger._configuration
         counts = dict.fromkeys(
             (
                 "committed_work",
@@ -739,7 +747,7 @@ class ReferenceRunView:
             "JOIN attempts a ON a.attempt_id=o.attempt_id ORDER BY w.ordinal"
         ):
             outcome = self._ledger._outcome(work_key, payload, digest)
-            if outcome["score_method"] != score_method:
+            if score_method is not None and outcome["score_method"] != score_method:
                 raise ValueError("saved outcomes use a different score criterion")
             counts["committed_work"] += 1
             counts[outcome["native_result"]["status"] + "_work"] += 1
@@ -761,12 +769,15 @@ class ReferenceRunView:
         summary = dict(
             run_id=configuration["run_id"],
             parent_run_id=configuration["parent_run_id"],
-            score_method=score_method,
             counts=counts,
             attempts=dict(started=started, staged=staged, committed=committed),
             manifest_work_complete=counts["pending_work"] == 0,
-            ranking_scope="observed_scored_work_only",
         )
+        if score_method is not None:
+            summary.update(
+                score_method=score_method,
+                ranking_scope="observed_scored_work_only",
+            )
         return dict(
             summary=summary,
             limit=limit,

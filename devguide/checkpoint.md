@@ -10,7 +10,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [accumulated checkpoint](accumulated_ci_checkpoint.md) now targets exact
+The latest runtime increment adds
+[criterion-independent saved progress](saved_run_progress.md): public
+`ScreeningRunView.progress()`/`ScreeningRunStore.progress()` and module CLI
+`--summary`. One storage scan owns work/status/attempt counts; existing explicit
+ranking/export semantics and full saved-evidence verification remain intact.
+The [source receipt](evidence/saved_run_progress_source_20261107.json) passes102
+distinct selected cases, including9 new progress and48 existing reader/export/CLI
+controls. Exact owned installed receiving is next; no new full CI is dispatched.
+
+The earlier [accumulated checkpoint](accumulated_ci_checkpoint.md) targets exact
 `4616c786c5de959ef0d6e98120d7183dcc217553`. The current source includes both runtime
 namespaces in coverage, closes fixture-owned SQLite connections and receives
 four registered guide updates. All seven guides match observed canonical bytes;
@@ -21,8 +30,8 @@ retains101 selected local cases, original control failures and their corrections
 Hosted [execution evidence](evidence/accumulated_ci_execution_20261107.json):
 [CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757)
 has successful reporting governance (3 reporting,18 archive,8 route/recovery and
-full131 administrative cases). Five scientific cells execute and three queue at
-this observation; **complete source CI is still pending**.
+full131 administrative cases). At the later live observation, four scientific
+cells pass, two execute and two queue; **complete source CI is still pending**.
 [Policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
 and [publication governance42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565)
 pass all required native steps. No package build/upload/release occurs.
@@ -35,11 +44,14 @@ original governance failure remain intact. Full current-candidate administrative
 receiving now passes on the hosted route; the earlier local memory/guard failures
 are preserved and are not rewritten as successful local execution.
 
-**Next concrete action:** continue observing source CI42399097757/attempt1 and
+**Next concrete action:** freeze the source-qualified progress increment, build
+one owned wheel and receive its reader/API/CLI outside the checkout with original
+public support payloads and saved databases. Continue observing
+source CI42399097757/attempt1 and
 verify all8 actual Linux/macOS arm64 Python3.11–3.14 cells, dependency preflights
 and Run tests steps. Do not duplicate a live run or infer completion from the
 three governance successes. Retain exact frozen4616c78 identities if a later
-receipt/documentary commit advances main; its exact-head debt stays #9-owned.
+receipt or runtime commit advances main; later exact-head debt stays #9-owned.
 Molecular collections remain MolSysMT#624-owned; installed/public, biological,
 comparison/performance and full milestone acceptance keep their separate gates.
 
@@ -78,7 +90,7 @@ change is made here. [Onboarding](onboarding.md) retains the earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; API/CLI exports received from source/owned installed wheel | Observe CI42399097757, then broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/runs, guided/expert parity and API/CLI exports received in bounded contexts; criterion-independent progress passes102 selected source cases | Receive one exact owned progress wheel; observe frozen CI42399097757 separately, then broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

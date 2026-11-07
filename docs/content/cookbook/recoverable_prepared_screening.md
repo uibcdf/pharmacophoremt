@@ -143,7 +143,21 @@ recovers it. Confirmed failures remain unscored and are not retried in that run.
 Changed settings, queries or a deliberate failure retry require a new run identity,
 optionally linked with `parent_run_id`, retaining the original evidence.
 
-Saved inspection works independently of the main scientific package:
+Check saved progress without choosing a ranking criterion or loading the main
+scientific package:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --summary
+```
+
+The JSON response separates confirmed, failed and pending work, and retained
+attempts. Staged unconfirmed evidence remains pending. Completion includes
+confirmed failures and refers to declared work items, not independent compounds
+or biological coverage. In Python, use `view.progress()` on an open
+`ScreeningRunView`; a writer offers the same `progress()` between writes.
+This scans saved evidence; close the writer before opening a read view.
+
+To inspect observed ranks, choose the original scoring criterion explicitly:
 
 ```bash
 python -m pharmacophoremt_results RUN.sqlite3 --score-method seeded_hit@1 --limit 10
@@ -159,7 +173,8 @@ python -m pharmacophoremt_results RUN.sqlite3 --to-csv outcomes.csv
 These commands use the same public methods as the Python example below and print
 their export receipt as JSON. Export includes negatives and failures, with
 pending counts in the receipt; it takes no ranking criterion or limit. Combining
-export with `--score-method`, `--limit` or both output formats is refused. Legacy
+export with `--score-method`, `--limit` or both output formats is refused. Summary
+also refuses ranking options and cannot be combined with export. Legacy
 files still require explicit `--allow-legacy`.
 
 Handled errors exit2 without a success response. If a complete file was published

@@ -119,6 +119,12 @@ public-support
 reader slice does not qualify a full PHMT dependency solve or platform matrix.
 No release or full supported gate is established by this reader increment.
 
+The [criterion-independent progress increment](saved_run_progress.md) adds
+public store/view `progress()` and CLI `--summary`, preserving explicit ranking
+and legacy admission. Its102 selected source cases pass; receive one exact
+owned installed wheel next. This later runtime is not covered by the earlier
+frozen checkpoint, and its exact-head debt remains #9-owned.
+
 The accumulated checkpoint is now running at exact4616c78: complete reporting
 governance (including131 administrative cases), frozen policy and publication
 governance pass. The eight scientific cells remain executing/queued in

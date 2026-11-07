@@ -39,6 +39,11 @@ syntax and explicit legacy admission. Source controls and bounded independent
 installed reader/command receiving pass. This
 does not clear complete source/governance or installed scientific gates.
 
+The [criterion-independent progress increment](saved_run_progress.md) adds
+`progress()` to the public store/view and CLI `--summary`, reusing the same scan.
+Its source controls pass; exact owned installed receiving remains pending. Existing
+criterion-specific summaries/ranks and scientific run contracts are unchanged.
+
 ## Version and compatibility contracts
 
 New public stores write `pharmacophoremt.screening-run@1`. The legacy

@@ -1,0 +1,283 @@
+{
+  "schema": "pharmacophoremt.saved-run-progress-source@1",
+  "parent_source": "5b89c1e5c3a4cdf4d179c51fdcf7d08c72eafbf1",
+  "plan": {
+    "path": "saved_run_progress_plan_20261107.json",
+    "sha256": "2116ac71a20442ba1171b73793af05cca3c81293c64b5cf1f12170fd8ffd7818"
+  },
+  "selected_case_counts": {
+    "library": 57,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "distinct_selected_cases": 102,
+  "execution": {
+    "recorded_at_utc": "2026-11-07T18:44:42.591265+00:00",
+    "parent_source": "5b89c1e5c3a4cdf4d179c51fdcf7d08c72eafbf1",
+    "source_files": {
+      "pharmacophoremt_results/_api.py": {
+        "bytes": 21423,
+        "sha256": "446d5225e7d835b8218766373d23a1c283af99642d282741177a989c4cfe954f"
+      },
+      "pharmacophoremt_results/_store.py": {
+        "bytes": 32855,
+        "sha256": "443152d21b5c04e4cba16cfde779273bb3b2ea30785543fcef108f828f8315e2"
+      },
+      "pharmacophoremt_results/_digestion.py": {
+        "bytes": 3317,
+        "sha256": "e06cecc3edf123d1b7d1b34740714dbad58ba8564c1219cf079fa91387ae842f"
+      },
+      "tests/test_public_run_progress.py": {
+        "bytes": 8831,
+        "sha256": "8fe5b06bd21a3eaa3e9f3df8d7d1c5581be72cf4e05b4f6b0ff56d20b6fd7d17"
+      }
+    },
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "providers": {
+      "argdigest": "0.17.1+3.g0712641",
+      "smonitor": "0.22.1+1.gc1b6ce2",
+      "depdigest": "0.15.2+2.g032d345",
+      "pytest": "9.2.0",
+      "pytest-receptor": "1.2.0"
+    },
+    "limits": {
+      "rlimit_as_per_process_bytes": [
+        536870912,
+        536870912
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "aggregate_memory_swap_tasks_quota": "not enforced; no own systemd user runtime",
+      "backend_threads": 1
+    },
+    "memory_entry": "MemTotal:       63455508 kB\nMemFree:        49822716 kB\nMemAvailable:   60662240 kB\nBuffers:          535852 kB\nCached:         10576500 kB\nSwapCached:            0 kB\nActive:          3211728 kB\nInactive:        9096696 kB\nActive(anon):    1258212 kB\nInactive(anon):        0 kB\nActive(file):    1953516 kB\nInactive(file):  9096696 kB\nUnevictable:       10256 kB\nMlocked:           10256 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388604 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:           1578584 kB\nWriteback:             0 kB\nAnonPages:       1206960 kB\nMapped:          1019868 kB\nShmem:             54832 kB\nKReclaimable:     449644 kB\nSlab:             716924 kB\nSReclaimable:     449644 kB\nSUnreclaim:       267280 kB\nKernelStack:       14544 kB\nPageTables:        22348 kB\nSecPageTables:      5644 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:    6460252 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      221936 kB\nVmallocChunk:          0 kB\nPercpu:            45504 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:         0 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    301056 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      329504 kB\nDirectMap2M:     4792320 kB\nDirectMap1G:    63963136 kB\n",
+    "pressure_entry": "some avg10=0.00 avg60=0.00 avg300=0.00 total=956\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=625\n"
+  },
+  "commands": [
+    {
+      "name": "archive",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 4.023278893000679,
+      "log": "archive.log",
+      "log_identity": {
+        "bytes": 117,
+        "sha256": "c49c6adfd70e97f96e0e5b914251208cc3e296d95fb756c04e435dfd526a8565"
+      }
+    },
+    {
+      "name": "dependency-declaration",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.3151548799996817,
+      "log": "dependency-declaration.log",
+      "log_identity": {
+        "bytes": 16657,
+        "sha256": "83f81d3ad5bc329ee2cf4c54cd96dd198b52662fd7099d6aab7d8496c17f2131"
+      }
+    },
+    {
+      "name": "distribution",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_distribution_contract.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 6.22751038000024,
+      "log": "distribution.log",
+      "log_identity": {
+        "bytes": 123,
+        "sha256": "f22d34a8f61317bf1c4e58d0f6e400bc43fd4d4ab8184e24c3dad03a7f27042f"
+      }
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "format",
+        "pharmacophoremt_results/_api.py",
+        "pharmacophoremt_results/_store.py",
+        "pharmacophoremt_results/_digestion.py",
+        "tests/test_public_run_progress.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.016058621000411222,
+      "log": "format.log",
+      "log_identity": {
+        "bytes": 43,
+        "sha256": "a9c322be5811cf4bd7ab6927ecb6751d36851790b8b4de75d87f0c39a56d2c8d"
+      }
+    },
+    {
+      "name": "imports",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "check",
+        "--select",
+        "I",
+        "--fix",
+        "pharmacophoremt_results/_api.py",
+        "pharmacophoremt_results/_store.py",
+        "pharmacophoremt_results/_digestion.py",
+        "tests/test_public_run_progress.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.016159521999725257,
+      "log": "imports.log",
+      "log_identity": {
+        "bytes": 19,
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "name": "index-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.36531838399969274,
+      "log": "index-check.log",
+      "log_identity": {
+        "bytes": 38,
+        "sha256": "3a525cb88e38e62b2cd78f962eec311aeb1797c9a439b3c7d832b95b00a8d5b5"
+      }
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.36531140400074946,
+      "log": "index.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.9658228180014703,
+      "log": "reporting.log",
+      "log_identity": {
+        "bytes": 101,
+        "sha256": "6658ffd29ac60040213b54f27a977c7ef81a8481db6221ff2cb2d4a447b5f086"
+      }
+    },
+    {
+      "name": "ruff-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.03257356999893091,
+      "log": "ruff-check.log",
+      "log_identity": {
+        "bytes": 19,
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "name": "ruff-format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.03223192299992661,
+      "log": "ruff-format.log",
+      "log_identity": {
+        "bytes": 28,
+        "sha256": "fb4be7333d41539def0a8a7662d9037c5f70b7e4975b078cf3f793cc4314a12f"
+      }
+    },
+    {
+      "name": "source-library",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "pytest",
+        "-p",
+        "pytest_receptor.plugin",
+        "--receptor=llm",
+        "--junitxml=/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-saved-progress-20261107-7m2ihh2r/source-library.xml",
+        "tests/test_public_run_progress.py",
+        "tests/test_public_run_results.py",
+        "tests/test_public_run_exports.py",
+        "tests/test_public_run_cli.py"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 9.181246627000291,
+      "log": "source-library.log",
+      "log_identity": {
+        "bytes": 33,
+        "sha256": "ae19d2f223f1e8f910a491ed0fda6faa494fd0d876ab61091c1c7a0ec84ecf11"
+      }
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "elapsed_seconds": 0.018941264001114178,
+      "log": "whitespace.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "installed_receiving": "pending; build one exact committed owned artifact outside checkout",
+  "limits": "Only per-process OS address-space limit and one CPU/backend thread; aggregate cgroup/no-swap/tasks/quota unavailable",
+  "scope": "Criterion-independent saved progress plus reader/export/CLI regressions and affected distribution/report/archive controls; no molecular execution, full source/platform/installed/public release gate"
+}

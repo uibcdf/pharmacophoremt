@@ -15,6 +15,17 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Criterion-independent progress increment — 2026-11-07
+
+The [progress source receipt](../evidence/saved_run_progress_source_20261107.json)
+passes102 selected cases, including57 public progress/reader/export/CLI controls,
+24 distribution,3 reporting and18 archive cases. Full Ruff, declared routes and
+index checks pass. One exact owned installed-wheel receiving is next. This later
+runtime uses the authorized routine `[skip ci]` delivery; the still-live
+CI42399097757/attempt1 at frozen4616c78 is not restarted or relabelled as its
+source evidence. All later exact-head and installed/public/platform gates remain
+open with their separate recovery routes. No release is prepared here.
+
 ## Accumulated-change checkpoint preparation — 2026-11-07
 
 The [declared checkpoint](../accumulated_ci_checkpoint.md) prepares a deliberate
