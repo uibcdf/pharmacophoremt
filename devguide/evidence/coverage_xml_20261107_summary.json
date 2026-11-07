@@ -1,0 +1,61 @@
+{
+  "schema": "pharmacophoremt.coverage-xml-summary@1",
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/141",
+  "source_parent": "d51a7b1e7e9da8a1f56049d05fa00af33fce169c",
+  "coverage_source_corrected": true,
+  "original_regression_exit_code": 1,
+  "corrected_regression_exit_code": 0,
+  "expected_distinct_qualified_fixture_files": 7,
+  "distinct_selected_local_cases": 111,
+  "selected_slices": {
+    "library_routes": 66,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "frozen_ci": {
+    "candidate": "4616c786c5de959ef0d6e98120d7183dcc217553",
+    "source_cells": 8,
+    "passed_per_cell": 2259,
+    "native_gates_passed": true,
+    "coverage_xml_fidelity_accepted": false,
+    "current_terminal_receipt": {
+      "bytes": 56002,
+      "sha256": "96111318cb64b5fada1f3142780366d037116ae6bb01dcbd493b2b539b954f84"
+    }
+  },
+  "corrected_head_hosted_xml_received": false,
+  "workflow_review": {
+    "workflow": ".github/workflows/CI.yaml",
+    "old_sha256": "2658491610b728153a831781413f490bfa42b2caad38571f5d0b56a6097dd1f8",
+    "new_sha256": "d361e326020292a8944ddeb349be0b657ca13bfd051a04527a477f6bb68f8ded",
+    "review": "Only explicit package source arguments become bare--cov; package scope is configured by source_pkgs. Full test selection, branch/omit policy, inputs, triggers, source pins, dependency acquisition and upload policy unchanged."
+  },
+  "source_limits": {
+    "rlimit_as_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "aggregate_memory_swap_tasks_quota": "not enforced; no own systemd user runtime",
+    "backend_threads": 1
+  },
+  "own_files": 80,
+  "resource_review_utc": "2026-11-20",
+  "limits": "Frozen4616c78 source tests pass in eight cells; corrected-head hosted XML/public file attribution, later exact-head source/policy, full installed/public dependency/platform gates and release remain pending. No new molecular/scientific execution or package publication.",
+  "full_evidence": {
+    "path": "coverage_xml_20261107_full.json.gz",
+    "compressed_bytes": 102734,
+    "compressed_sha256": "6e160d59ffc045e1e40a1ff39c4f11c8920b715ab55d2c0ea745b6a9b5a8aca5",
+    "uncompressed_bytes": 555231,
+    "uncompressed_sha256": "d5bd57d3d5d5afa0e6f50d15e79e9e28972454eeebcbff56f56fba8756315a6b"
+  }
+}

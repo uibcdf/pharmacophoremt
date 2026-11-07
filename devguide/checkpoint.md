@@ -10,6 +10,20 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The accumulated frozen-source gates are complete: [terminal receiving](evidence/accumulated_ci_terminal_20261107.json)
+verifies all eight Linux/macOS arm64 Python3.11–3.14 cells with **2259 passed tests
+per cell**, native architecture/dependency checks and the same0.4.0+142.g4616c78
+producer. Reporting governance, frozen policy and publication checks also pass.
+That acceptance belongs to exact4616c78, not a later runtime/control head.
+
+Terminal XML inspection exposes [namespace identity#141](coverage_xml_identity.md).
+The source correction uses `source_pkgs` and bare `--cov`, and passes111 selected
+local cases including an actual emitted-XML regression. The [sealed receipt](evidence/coverage_xml_20261107_summary.json)
+retains the original failing guard and corrected qualified/unused/private-file
+controls, owned control text and scalar/hash evidence. Original hosted captures
+stay local. Corrected-head hosted coverage/public file attribution remains pending;
+raw original aggregates/percentages are never rewritten. No new CI is dispatched.
+
 The latest scientific increment executes the
 [Pharm3D distance-filter comparison](rdkit_bounds_comparison.md): ten fixed
 analytical cases/186 full assignments,106 selected local cases and a separate
@@ -41,15 +55,15 @@ provider pins/prefixes and frozen policy-v1.5.4 remain unchanged. The
 [preparation receipt](evidence/accumulated_ci_preparation_20261107_summary.json)
 retains101 selected local cases, original control failures and their corrections.
 
-Hosted [execution evidence](evidence/accumulated_ci_execution_20261107.json):
-[CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757)
-has successful reporting governance (3 reporting,18 archive,8 route/recovery and
-full131 administrative cases). The [latest case-time native observation](evidence/accumulated_ci_observation_20261107_bounds.json)
-has six scientific jobs successful and two executing;
-**complete source CI is still pending**.
-[Policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
+Hosted [terminal evidence](evidence/accumulated_ci_terminal_20261107.json):
+[CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757),
+[policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
 and [publication governance42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565)
-pass all required native steps. No package build/upload/release occurs.
+are successful at exact4616c786c5de959ef0d6e98120d7183dcc217553/attempt1.
+All8 actual scientific jobs execute dependency preflight, interpreter/architecture,
+full tests and coverage steps; reporting retains3/18/8/131 cases in its separate
+slices. The manual backlog-decision job is intentionally skipped. Earlier pending
+observations remain dated evidence. No package build/upload/release occurs.
 
 The [API/CLI exports](saved_result_cli.md), [public runs](public_prepared_runs.md),
 [guided/expert comparison](guided_expert_journey_receiving.md) and
@@ -59,14 +73,13 @@ original governance failure remain intact. Full administrative receiving for
 frozen4616c78 now passes on the hosted route; the earlier local memory/guard
 failures are preserved and are not rewritten as successful local execution.
 
-**Next concrete action:** receive the remaining exact source-CI cells and qualify
-the public RDKit projection fields/losses under#140, retaining existing callers
-through a deliberate compatibility decision. Continue source CI42399097757/attempt1 and
-verify all8 actual Linux/macOS arm64 Python3.11–3.14 cells, dependency preflights
-and Run tests steps. Do not duplicate a live run or infer completion from the
-three governance successes. Retain exact frozen4616c78 identities if a later
-receipt or runtime commit advances main; later exact-head debt stays #9-owned.
-Molecular collections remain MolSysMT#624-owned; installed/public, biological,
+**Next concrete action:** implement and receive the public RDKit projection field/loss contract
+under#140, preserving legacy target types and declared assumptions.
+Use a later deliberate current-head checkpoint/recovery to receive
+that runtime together with the coverage correction#141; do not repeat the
+completed frozen run or launch a full matrix for each small commit. The newer
+progress runtime, case/reporting files and coverage correction retain exact-head
+debt under#9. MolSysMT#624 collections, installed/public delivery, biological,
 comparison/performance and full milestone acceptance keep their separate gates.
 
 ## Active public integration
@@ -106,7 +119,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports and criterion-independent progress received in bounded source/owned installed contexts | Observe frozen CI42399097757 separately; qualify broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports and criterion-independent progress received in bounded source/owned installed contexts | Frozen CI42399097757 is complete for its own source; qualify broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

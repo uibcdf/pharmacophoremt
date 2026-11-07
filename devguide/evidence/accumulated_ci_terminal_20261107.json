@@ -1,0 +1,1709 @@
+{
+  "schema": "pharmacophoremt.accumulated-ci-terminal@1",
+  "recorded_at_utc": "2026-11-07T20:00:58.933408+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "candidate": "4616c786c5de959ef0d6e98120d7183dcc217553",
+  "native_gates_passed": true,
+  "frozen_source_matrix_accepted": true,
+  "coverage_xml_fidelity_accepted": false,
+  "coverage_followup_issue": 141,
+  "source_cells": 8,
+  "passed_per_cell": 2259,
+  "scientific_case_identity": "Same frozen suite across eight platform/interpreter cells; not18072 independent tests or compounds",
+  "runs": [
+    {
+      "run_id": 42399097757,
+      "source": "4616c786c5de959ef0d6e98120d7183dcc217553",
+      "attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "workflow_dispatch",
+      "updated_at": "2026-11-07T19:37:15Z",
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757",
+      "receptor_exit_code": 0,
+      "receptor_report": "PASS conclusion=success | profile=ci | roles=test:8,other:2 | jobs=9/10 | artifacts=0 | uibcdf/pharmacophoremt run=42399097757",
+      "manifest_identity": {
+        "bytes": 1854,
+        "sha256": "f69412d15359d539b4467ca89e4e04abf7e682bc591b259aeb5220717185003d"
+      },
+      "jobs": [
+        {
+          "id": 128482803764,
+          "name": "Reporting governance",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:45Z",
+          "completed_at": "2026-11-07T18:01:39Z",
+          "required_steps": [
+            {
+              "number": 5,
+              "name": "Check reporting records and generated indexes",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Test CI recovery and contributor routes",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Review declared dependency routes",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 9,
+              "name": "Test distribution and dependency contracts",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check generated ordinary environments",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "actual_counts": {
+            "reporting": 3,
+            "archive": 18,
+            "ci_recovery_routes": 8,
+            "administrative": 131
+          },
+          "original_aggregate_log": {
+            "zip_member": "8_Reporting governance.txt",
+            "bytes": 63932,
+            "sha256": "0a6f452a07b82385f7ab4410c9e12d31fbbb25fb170a0e0ae48d2c1ff15e6da8"
+          }
+        },
+        {
+          "id": 128482804055,
+          "name": "Test on macos-15, Python 3.14",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:01:41Z",
+          "completed_at": "2026-11-07T18:29:58Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.14.10",
+          "architecture": "arm64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794076189287",
+            "lines-valid": "5256",
+            "lines-covered": "4620",
+            "line-rate": "0.879",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9536",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "7_Test on macos-15, Python 3.14.txt",
+            "bytes": 650576,
+            "sha256": "86d02afb9a44aa34199b027adbcab83d0b2309d7560d20b283b1b93851406ab9"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804090,
+          "name": "Test on ubuntu-latest, Python 3.14",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:48Z",
+          "completed_at": "2026-11-07T18:18:31Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.14.10",
+          "architecture": "x86_64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794075504004",
+            "lines-valid": "5256",
+            "lines-covered": "4620",
+            "line-rate": "0.879",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9536",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "4_Test on ubuntu-latest, Python 3.14.txt",
+            "bytes": 664134,
+            "sha256": "518b286362fc2cfde29cd9c193790c2919ccce90ba2c5ee51477ceb296245686"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804093,
+          "name": "Test on ubuntu-latest, Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:45Z",
+          "completed_at": "2026-11-07T18:43:26Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.12.16",
+          "architecture": "x86_64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794076999399",
+            "lines-valid": "5262",
+            "lines-covered": "4626",
+            "line-rate": "0.8791",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9539",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "5_Test on ubuntu-latest, Python 3.12.txt",
+            "bytes": 669111,
+            "sha256": "340361be3ff131fe86d1cba934c3823bee7694ab5f5ba978cf52071b73d2a760"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804111,
+          "name": "Test on macos-15, Python 3.12",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:14:32Z",
+          "completed_at": "2026-11-07T19:05:19Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.12.16",
+          "architecture": "arm64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794078302801",
+            "lines-valid": "5262",
+            "lines-covered": "4626",
+            "line-rate": "0.8791",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9539",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "6_Test on macos-15, Python 3.12.txt",
+            "bytes": 655092,
+            "sha256": "38a10e0e6e35be6c33e92ea4c556dc310a92e25ae03f6c3ef9def65f1d5c639c"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804161,
+          "name": "Test on macos-15, Python 3.13",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:45:09Z",
+          "completed_at": "2026-11-07T19:26:09Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.13.18",
+          "architecture": "arm64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794079561195",
+            "lines-valid": "5262",
+            "lines-covered": "4626",
+            "line-rate": "0.8791",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9539",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "3_Test on macos-15, Python 3.13.txt",
+            "bytes": 654427,
+            "sha256": "dd6273f129fe9ba82d14ced3d3a75fa577394fe6402d164028b2b67d0a2dc5d7"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804192,
+          "name": "Test on ubuntu-latest, Python 3.13",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:45Z",
+          "completed_at": "2026-11-07T18:36:39Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.13.18",
+          "architecture": "x86_64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794076585777",
+            "lines-valid": "5262",
+            "lines-covered": "4626",
+            "line-rate": "0.8791",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9539",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "1_Test on ubuntu-latest, Python 3.13.txt",
+            "bytes": 702458,
+            "sha256": "b24bb71f35237b0cfefd2c910d0265ad9aa46b59cb2542d852614ef56374ed0c"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes",
+          "codecov_steps": [
+            {
+              "number": 17,
+              "name": "Upload coverage reports to Codecov",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 18,
+              "name": "Upload test results to Codecov",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        },
+        {
+          "id": 128482804195,
+          "name": "Test on ubuntu-latest, Python 3.11",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:45Z",
+          "completed_at": "2026-11-07T18:46:07Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.11.18",
+          "architecture": "x86_64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794077159053",
+            "lines-valid": "5262",
+            "lines-covered": "4626",
+            "line-rate": "0.8791",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9539",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/home/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "2_Test on ubuntu-latest, Python 3.11.txt",
+            "bytes": 669395,
+            "sha256": "ba13d22159e26c537af688f6b465862d03b1b97f56f2999820ca167f473a3c54"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804220,
+          "name": "Test on macos-15, Python 3.11",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:49:12Z",
+          "completed_at": "2026-11-07T19:37:14Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Install pinned suite dependencies",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 10,
+              "name": "Check dependency routes and installed Git context",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 12,
+              "name": "Install package",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 13,
+              "name": "Test import module",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 14,
+              "name": "Verify interpreter and macOS architecture",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 15,
+              "name": "Run tests",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 16,
+              "name": "Check coverage",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ],
+          "python": "3.11.18",
+          "architecture": "arm64",
+          "package_version": "0.4.0+142.g4616c78",
+          "reported_tests": {
+            "passed": 2259,
+            "skipped": 0,
+            "warnings": 29
+          },
+          "coverage": {
+            "version": "7.17.2",
+            "timestamp": "1794080226676",
+            "lines-valid": "5262",
+            "lines-covered": "4626",
+            "line-rate": "0.8791",
+            "branches-valid": "1644",
+            "branches-covered": "1300",
+            "branch-rate": "0.7908",
+            "complexity": "0"
+          },
+          "coverage_packages": [
+            {
+              "name": ".",
+              "line-rate": "0.8499",
+              "branch-rate": "0.6677",
+              "complexity": "0"
+            },
+            {
+              "name": "config",
+              "line-rate": "0.2045",
+              "branch-rate": "0",
+              "complexity": "0"
+            },
+            {
+              "name": "data",
+              "line-rate": "1",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site",
+              "line-rate": "0.8717",
+              "branch-rate": "0.75",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.feature",
+              "line-rate": "0.75",
+              "branch-rate": "1",
+              "complexity": "0"
+            },
+            {
+              "name": "interaction_site.shape",
+              "line-rate": "0.4918",
+              "branch-rate": "0.3191",
+              "complexity": "0"
+            },
+            {
+              "name": "io",
+              "line-rate": "0.7623",
+              "branch-rate": "0.6591",
+              "complexity": "0"
+            },
+            {
+              "name": "io.phmt",
+              "line-rate": "0.966",
+              "branch-rate": "0.9259",
+              "complexity": "0"
+            },
+            {
+              "name": "modeler",
+              "line-rate": "0.9537",
+              "branch-rate": "0.9029",
+              "complexity": "0"
+            },
+            {
+              "name": "screening",
+              "line-rate": "0.9539",
+              "branch-rate": "0.8865",
+              "complexity": "0"
+            },
+            {
+              "name": "validation",
+              "line-rate": "0.9286",
+              "branch-rate": "0.875",
+              "complexity": "0"
+            },
+            {
+              "name": "viewer",
+              "line-rate": "0.7",
+              "branch-rate": "0.5",
+              "complexity": "0"
+            }
+          ],
+          "companion_classes_without_package_prefix": [
+            {
+              "name": "_api.py",
+              "filename": "_api.py",
+              "complexity": "0",
+              "line-rate": "0.9432",
+              "branch-rate": "0.7222"
+            },
+            {
+              "name": "_exports.py",
+              "filename": "_exports.py",
+              "complexity": "0",
+              "line-rate": "0.9672",
+              "branch-rate": "1"
+            },
+            {
+              "name": "_store.py",
+              "filename": "_store.py",
+              "complexity": "0",
+              "line-rate": "0.8285",
+              "branch-rate": "0.6667"
+            }
+          ],
+          "xml_source_roots": [
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt",
+            "/Users/runner/work/pharmacophoremt/pharmacophoremt/pharmacophoremt_results"
+          ],
+          "coverage_path_fidelity": {
+            "accepted": false,
+            "issue": 141,
+            "reason": "Bare shared filenames collapse namespace identity; only one root initializer class for two source packages"
+          },
+          "original_aggregate_log": {
+            "zip_member": "0_Test on macos-15, Python 3.11.txt",
+            "bytes": 655726,
+            "sha256": "8acacd530389c2fb5771ceb224589e14ae4f563571ac9c750e9aa44abf5a84c9"
+          },
+          "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt --cov=pharmacophoremt_results --cov-report=xml --junitxml=junit.xml --color=yes"
+        },
+        {
+          "id": 128482804808,
+          "name": "Check skipped-commit backlog",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-07T18:00:42Z",
+          "completed_at": "2026-11-07T18:00:42Z",
+          "interpretation": "Intentional manual probe_backlog=false; not a required scientific job"
+        }
+      ]
+    },
+    {
+      "run_id": 42399103089,
+      "source": "4616c786c5de959ef0d6e98120d7183dcc217553",
+      "attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "workflow_dispatch",
+      "updated_at": "2026-11-07T18:01:03Z",
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089",
+      "receptor_exit_code": 0,
+      "receptor_report": "PASS conclusion=success | profile=ci | roles=other:1 | jobs=1/1 | artifacts=0 | uibcdf/pharmacophoremt run=42399103089",
+      "manifest_identity": {
+        "bytes": 1657,
+        "sha256": "e7fee5605d5a6a64ebe530ac08839928d1b4fdd9cead8b6dc9f8a9966d9618de"
+      },
+      "jobs": [
+        {
+          "id": 128482818600,
+          "name": "policy / conformance",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:48Z",
+          "completed_at": "2026-11-07T18:01:02Z",
+          "required_steps": [
+            {
+              "number": 5,
+              "name": "Check repository conformance",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Check Python lint and imports",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Check Python formatting",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "run_id": 42399108565,
+      "source": "4616c786c5de959ef0d6e98120d7183dcc217553",
+      "attempt": 1,
+      "status": "completed",
+      "conclusion": "success",
+      "event": "workflow_dispatch",
+      "updated_at": "2026-11-07T18:01:09Z",
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565",
+      "receptor_exit_code": 0,
+      "receptor_report": "PASS conclusion=success | profile=generic | jobs=1/1 | artifacts=0 | uibcdf/pharmacophoremt run=42399108565",
+      "manifest_identity": {
+        "bytes": 1657,
+        "sha256": "5a52e8f8fa0ce49f61cb09aa7cb14cfb47edaa842a37ef6cbd7012662ec2bfd3"
+      },
+      "jobs": [
+        {
+          "id": 128482836053,
+          "name": "publication / check",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-07T18:00:51Z",
+          "completed_at": "2026-11-07T18:01:08Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Check publication workflow controls",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Check declared noarch recipe and resources without building",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "frozen_workflow_config_identities": {
+    ".github/workflows/CI.yaml": {
+      "bytes": 8128,
+      "sha256": "2658491610b728153a831781413f490bfa42b2caad38571f5d0b56a6097dd1f8",
+      "receiving_head_bytes_equal": true
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "bytes": 250,
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd",
+      "receiving_head_bytes_equal": true
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "bytes": 273,
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85",
+      "receiving_head_bytes_equal": true
+    },
+    ".github/gh-run-receptor.yaml": {
+      "bytes": 361,
+      "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59",
+      "receiving_head_bytes_equal": true
+    },
+    ".coveragerc": {
+      "bytes": 162,
+      "sha256": "78d67b025230d6ef20e046b922399efc702e63695682449f7c68780db3499187",
+      "receiving_head_bytes_equal": true
+    }
+  },
+  "capture_resources": {
+    "recorded_at_utc": "2026-11-07T19:48:08.712065+00:00",
+    "rlimit_data_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "GOMAXPROCS": "1",
+    "aggregate_memory_swap_tasks_quota": "Not enforced; no own systemd user runtime",
+    "scope": "Read-only hosted evidence capture, no local science/build"
+  },
+  "raw_source_logs_zip": {
+    "bytes": 1003774,
+    "sha256": "50495a0ec9f0c53cd86d38b0a5f7eef090e6a124b5476d9501cceee2fe76a87c"
+  },
+  "publication": "Only scalar native/derived facts and hashes; original API captures/log archive stay local",
+  "limits": "Exact controlled source gate only. Later1950421 progress runtime, d51a7b1 case/reporting changes and later receipt heads retain distinct debt. No full current-head, installed/public dependency/platform package, release, biological or benchmark qualification. Codecov native upload steps pass; public-server freshness and correct per-file coverage mapping are not independently asserted. The XML package-path defect is owned by issue141.",
+  "receiving_head_at_capture": "d51a7b1e7e9da8a1f56049d05fa00af33fce169c",
+  "configuration_comparison_scope": "receiving_head_bytes_equal compares the frozen 4616c78 files with d51a7b1 at capture, before the issue141 coverage correction; it does not describe later corrected configuration bytes"
+}

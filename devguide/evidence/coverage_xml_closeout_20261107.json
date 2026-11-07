@@ -1,0 +1,143 @@
+{
+  "schema": "pharmacophoremt.coverage-xml-closeout@1",
+  "recorded_at_utc": "2026-11-07T20:26:50.591615+00:00",
+  "source_parent": "d51a7b1e7e9da8a1f56049d05fa00af33fce169c",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/141",
+  "final_checks": [
+    {
+      "name": "archive",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.8724544889992103,
+      "log": "archive-final.log",
+      "log_identity": {
+        "bytes": 117,
+        "sha256": "06b00aca2a3df5d9a4bea643b04de8afca5e4b1ff7c7c1aaca7b01471d82dbb2"
+      }
+    },
+    {
+      "name": "index-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.3650657600010163,
+      "log": "index-check-final.log",
+      "log_identity": {
+        "bytes": 38,
+        "sha256": "3a525cb88e38e62b2cd78f962eec311aeb1797c9a439b3c7d832b95b00a8d5b5"
+      }
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.46499187600056757,
+      "log": "index-final.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9153221950000443,
+      "log": "reporting-final.log",
+      "log_identity": {
+        "bytes": 101,
+        "sha256": "15183f3385b0e3045122a674dd95de55cec2129a7918eb6bbdbaa6a02470fd32"
+      }
+    },
+    {
+      "name": "ruff-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 0.032090704000438564,
+      "log": "ruff-check-final.log",
+      "log_identity": {
+        "bytes": 19,
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "name": "ruff-format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 0.1642776459993911,
+      "log": "ruff-format-final.log",
+      "log_identity": {
+        "bytes": 28,
+        "sha256": "274182bccde4cd0320a821b8b9ccf9dccb33765dc79fd8c97face1a4c46df5a6"
+      }
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.018626850000146078,
+      "log": "whitespace-final.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "resources": {
+    "limits": {
+      "rlimit_as_per_process_bytes": [
+        536870912,
+        536870912
+      ],
+      "aggregate_memory": "not enforced: user systemd bus unavailable",
+      "swap": "not enforced",
+      "tasks": "not enforced",
+      "cpu_quota": "not enforced; affinity one CPU"
+    },
+    "memory_peak_bytes": null,
+    "memory_events": "not available: no owned cgroup"
+  },
+  "evidence_summary": "coverage_xml_20261107_summary.json",
+  "limits": "Final scoped documentation/reporting/style checks after evidence sealing. Original111 distinct cases retain their earlier producer/file hashes; repeats add no distinct cases. No new hosted matrix or package qualification. Commit/push identity is recorded in the owning issue after delivery."
+}

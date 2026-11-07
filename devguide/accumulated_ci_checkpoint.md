@@ -8,6 +8,14 @@ This is a deliberate validation checkpoint, not a release or a narrower goal.
 
 ## Declared scope before dispatch
 
+**Current receiving:** the [terminal native receipt](evidence/accumulated_ci_terminal_20261107.json)
+confirms all three frozen4616c78 runs successful and eight actual source cells
+with 2259 passed tests each. The later observations below remain historical.
+An XML namespace-identity defect is separately owned by
+[#141](coverage_xml_identity.md); its source correction passes 111 selected local
+cases, while corrected-head hosted XML remains pending. Native test success,
+per-file coverage fidelity and current-head/installed/public gates stay separate.
+
 Receive accumulated classical-core/public prepared iterator/run/independent
 reader/API-export/CLI changes through the existing complete source CI: reporting
 governance and Linux/macOS arm64 Python3.11–3.14. Preserve complete test selection,

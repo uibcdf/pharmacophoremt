@@ -26,16 +26,14 @@ def test_coverage_measures_the_core_and_saved_results_companion():
         if line.strip().startswith("python -m pytest ")
     ]
     assert len(commands) == 1
-    sources = {
-        token.removeprefix("--cov=")
-        for token in split(commands[0])
-        if token.startswith("--cov=")
-    }
+    tokens = split(commands[0])
+    assert tokens.count("--cov") == 1
+    assert not any(token.startswith("--cov=") for token in tokens)
     required = {"pharmacophoremt", "pharmacophoremt_results"}
-    assert required <= sources
     configuration = ConfigParser()
     configuration.read(ROOT / ".coveragerc")
-    assert required <= set(configuration["run"]["source"].split())
+    assert required == set(configuration["run"]["source_pkgs"].split())
+    assert not configuration["run"].get("source", "").strip()
     assert configuration.getboolean("run", "branch")
     omitted = configuration["report"]["omit"].split()
     assert "pharmacophoremt/_private/**" in omitted
@@ -84,7 +82,7 @@ def test_contributor_routes_and_complete_supported_matrix():
     steps = {step.get("name"): step for step in matrix["steps"]}
     command = steps["Run tests"]["run"]
     assert (
-        "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov=pharmacophoremt"
+        "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml"
         in command
     )
     assert "--noconftest" not in command

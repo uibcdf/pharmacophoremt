@@ -127,12 +127,14 @@ plus16 documented commands pass from one exact owned installed wheel. This
 later runtime is not covered by the earlier frozen checkpoint, and its
 exact-head debt remains #9-owned.
 
-The accumulated checkpoint is now running at exact4616c78: complete reporting
-governance (including131 administrative cases), frozen policy and publication
-governance pass. The eight scientific cells remain executing/queued in
-CI42399097757 at the first observation. Receive that actual full source result
-before counting it toward the classical/public-workflow milestones; installed,
-public dependency, scientific/comparator and usability requirements remain.
+The accumulated [frozen4616c78 checkpoint](accumulated_ci_checkpoint.md) now has
+complete native success: all eight source cells pass2259 tests each, reporting
+(including131 administrative cases), policy and publication checks pass. Terminal
+inspection separately exposes XML namespace identity#141; its source correction
+passes111 selected cases and retains corrected-head hosted debt. Later progress/
+case/control/runtime heads are not relabelled with those successful frozen runs.
+Installed/public dependency, scientific/comparator, usability and mature-release
+requirements remain separate.
 
 ## Current priority: classical consolidation
 

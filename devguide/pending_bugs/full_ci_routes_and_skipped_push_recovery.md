@@ -15,6 +15,21 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Terminal frozen-source receiving and XML identity — 2026-11-07
+
+The [terminal receipt](../evidence/accumulated_ci_terminal_20261107.json) accepts
+all8 actual Linux/macOS arm64 Python3.11–3.14 test cells at exact4616c78/attempt1:
+2259 tests pass per cell, with actual dependency/architecture/test/coverage steps.
+Reporting131 and separate3/18/8 slices, frozen policy and publication checks pass.
+Earlier running snapshots remain unchanged; no live run is restarted.
+
+An independent [XML file-identity defect#141](coverage_xml_namespace_identity.md)
+is found in those original reports. Its source correction passes111 selected
+local cases and the actual before/after artifact guard, with unchanged source
+pins/acquisition and a reviewed coverage-only workflow digest. That correction,
+later progress/runtime/case/reporting heads and full installed/public/platform
+qualification keep separate debt. The older XML is not repaired or relabelled.
+
 ## Executed Pharm3D comparison controls — 2026-11-07
 
 The [analytical case](../rdkit_bounds_comparison.md) adds12 focused scientific
