@@ -79,14 +79,22 @@ separate recovery. [Current guide audit](evidence/projection_ci_guide_audit_2026
 compares all seven real canonical texts at exact owner revisions; all match.
 The frozen policy-v1.5.4 caller remains separate and unchanged.
 
-**Next concrete action:** freeze one later source candidate containing the Point
-and exact-boundary corrections and receive its deliberate hosted checkpoint.
-The#143 fixture revision passes14focused cases and the ten-case driver locally;
-corrected hosted platforms remain required before closing it. Preserve failed
-489be12 and independent successful XML receiving. Do not rebuild/relabel the existing RDKit148 or Point151 wheels,
-relax scientific thresholds, retry the full suite locally or blindly redispatch.
-MolSysMT#624 collections, full installed/public dependency/platform delivery,
-biology, comparison/performance and mature0.x acceptance retain separate gates.
+The [recovery checkpoint](boundary_ci_checkpoint.md) is dispatched once at
+8db2a53f91a3686088874f965d389e636003d990/attempt1. Its
+[initial receipt](evidence/boundary_ci_initial_20261107.json) records source
+CI42421360591 with all eight science cells running and reporting successful;
+policy42421364958/publication42421369303 pass their required native steps.
+[Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json) observes
+unchanged canonical owner heads and rehashes local bytes against the prior
+literal-text audit. No fresh text fetch or policy pin change is claimed.
+
+**Next concrete action:** inspect the existing recovery source run42421360591,
+receiving actual terminal full logs/eight cells and corrected macOS boundary
+controls before accepting#143 or its source gate. Continue independent owned work
+while it runs. Do not redispatch, rebuild/relabel RDKit148/Point151 wheels, relax
+thresholds or retry the full suite locally. MolSysMT#624 collections, full installed/
+public dependency/platform delivery, biology, comparison/performance and mature0.x
+acceptance retain separate gates.
 
 ## Active public integration
 

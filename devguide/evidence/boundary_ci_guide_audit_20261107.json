@@ -1,0 +1,51 @@
+{
+  "recorded_at_utc": "2026-11-07T22:35:36.106432+00:00",
+  "scope": "Current canonical owner main heads observed via connected read-only GitHub API; all exact revisions unchanged. Reuse literal-text comparisons in the referenced original audit and independently rehash local copies. No new literal-text fetch is claimed.",
+  "original_audit": "devguide/evidence/projection_ci_guide_audit_20261107.json",
+  "canonical_head_observations": [
+    {
+      "repository": "uibcdf/molsyssuite",
+      "owner_revision": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+      "prior_owner_revision": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+      "unchanged": true
+    },
+    {
+      "repository": "uibcdf/gh-run-receptor",
+      "owner_revision": "08bad8de95a70c31ea5f0c25b10d83d7457932d1",
+      "prior_owner_revision": "08bad8de95a70c31ea5f0c25b10d83d7457932d1",
+      "unchanged": true
+    },
+    {
+      "repository": "uibcdf/ackredit",
+      "owner_revision": "4beb850c8ba814e6103b4d303128a1a36eb57610",
+      "prior_owner_revision": "4beb850c8ba814e6103b4d303128a1a36eb57610",
+      "unchanged": true
+    },
+    {
+      "repository": "uibcdf/smonitor",
+      "owner_revision": "c1b6ce29c3729b99429b395a00c7866a759be406",
+      "prior_owner_revision": "c1b6ce29c3729b99429b395a00c7866a759be406",
+      "unchanged": true
+    },
+    {
+      "repository": "uibcdf/argdigest",
+      "owner_revision": "07126411f108ee1ff607e9c9a0816109b2c9253e",
+      "prior_owner_revision": "07126411f108ee1ff607e9c9a0816109b2c9253e",
+      "unchanged": true
+    },
+    {
+      "repository": "uibcdf/depdigest",
+      "owner_revision": "032d345becf8f8f574c24ede61ee62fcf0321de7",
+      "prior_owner_revision": "032d345becf8f8f574c24ede61ee62fcf0321de7",
+      "unchanged": true
+    },
+    {
+      "repository": "uibcdf/pyunitwizard",
+      "owner_revision": "f82b618ea88c151a9b43009228126b1cf7fda65c",
+      "prior_owner_revision": "f82b618ea88c151a9b43009228126b1cf7fda65c",
+      "unchanged": true
+    }
+  ],
+  "local_bytes_reverified": true,
+  "all_matched": true
+}
