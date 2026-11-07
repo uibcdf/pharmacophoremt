@@ -520,3 +520,13 @@ sha256 = "c60372071eb89aa20133c2964cfd0eff67ea12591f94d8c4589205c859b9d088"
 source = "phmt_test_support/prepared_library_reference.py"
 target = "phmt_test_support/prepared_library_reference.py"
 sha256 = "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/reference_run_store.py"
+target = "phmt_test_support/reference_run_store.py"
+sha256 = "10b4ee6aa31102bc0e82cc6faf84d84b504227df346f888fb75cd2f597205960"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/prepared_library_recovery.py"
+target = "phmt_test_support/prepared_library_recovery.py"
+sha256 = "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6"

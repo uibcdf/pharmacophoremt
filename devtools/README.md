@@ -79,3 +79,10 @@ occurrences, nested IDs and explicit score/failure meaning. It is development
 code, with caller-owned readers and no acquisition, index, journal or public API
 commitment. Its [contract and qualification](../devguide/prepared_library_reference.md)
 link the declared analytical controls and original execution receipt.
+
+`phmt_test_support.prepared_library_recovery` reconstructs native evaluators from
+saved query bytes/effective settings and composes them with the unshipped
+`reference_run_store`. The latter uses only the standard library for ordered
+manifest validation, single-owner transactions, immutable confirmed outcomes and
+saved replay. See the [controlled recovery contract](../devguide/prepared_library_recovery.md)
+for publication versus delivery, producer preconditions and the separate evidence.

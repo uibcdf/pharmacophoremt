@@ -278,6 +278,9 @@ schemas and index selection are still open. Its controls address consumption,
 closure, native evidence equivalence, nested IDs and failure/score semantics.
 The [separate receipt](evidence/public_library_incremental_support_20261107_summary.json)
 owns this new execution identity; earlier native controls retain theirs.
-Increment C's journal/recovery/compatibility and real-provider acquisition remain
-unimplemented. Producer-declared keys and controlled unchanged input are explicit
-preconditions, not an authenticated collection or duplicate-publication guarantee.
+Increment B's original receipt does not implement journal/recovery/compatibility.
+The later [increment C experiment](prepared_library_recovery.md) has its own
+saved-query/ordered-manifest/transactional-store contract and controls. Producer-
+declared prepared identities and controlled unchanged molecular input remain
+explicit preconditions; real-provider acquisition and authenticated prepared
+snapshots remain unimplemented.

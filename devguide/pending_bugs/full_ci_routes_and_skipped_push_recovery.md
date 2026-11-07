@@ -314,3 +314,26 @@ Use the maintainer-authorized direct route with `[skip ci]` and no remote dispat
 These scoped checks do not clear exact-head full source/installed/platform gates;
 existing deliberate/daily/weekly recovery retains ownership. No release or public
 API/provider/index qualification follows from this prototype. Keep #9 open.
+
+### Controlled saved-query recovery — 2026-11-07 UTC
+
+The [new recovery receipt](../evidence/public_library_recovery_20261107_summary.json)
+records 48 passing selected scientific cases (22 recovery plus the 26 incremental
+controls) and 45 affected administrative cases (21 stdlib ledger plus 24
+distribution/staging), with scientific imports forbidden in administration.
+Reporting/archive/Ruff/index/declaration checks retain their own local results.
+The new unshipped helpers are explicitly hash-declared for private installed-test
+support; this does not qualify an installed artifact or public runtime API.
+
+Both main scopes completed under one CPU/512 MiB/no swap without OOM/max events.
+Controlled abrupt child-process exits, transactional statement failure and saved
+replay are tested; they are not power-loss/filesystem/platform qualification.
+Two retained query/run artifacts replay with molecular/citation imports forbidden,
+unchanged database bytes and no recalculation. Full broader administrative
+discovery was deliberately not repeated: its earlier original OOM result and
+recovery ownership remain unchanged.
+
+Use the standing maintainer-authorized direct route with `[skip ci]`, no remote
+dispatch and no rule/schedule changes. Exact-head full source/installed/platform
+coverage remains pending for deliberate/daily/weekly recovery. Keep #9 open;
+the scoped passing count must not erase prior failed or unexecuted gates.

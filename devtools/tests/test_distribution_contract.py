@@ -262,12 +262,20 @@ class TestDistributionContract(unittest.TestCase):
                 declaration,
                 ("pharmacophoremt", "molsysviewer_pharmacophoremt"),
             ) as stage:
-                name = "phmt_test_support.prepared_library_reference"
-                spec = importlib.util.find_spec(name)
-                expected = ROOT / "phmt_test_support/prepared_library_reference.py"
-                self.assertEqual(Path(spec.origin).read_bytes(), expected.read_bytes())
-                self.assertTrue(Path(spec.origin).is_relative_to(stage.root))
-                self.assertNotIn(name, sys.modules)
+                for helper in (
+                    "prepared_library_reference",
+                    "reference_run_store",
+                    "prepared_library_recovery",
+                ):
+                    with self.subTest(helper=helper):
+                        name = f"phmt_test_support.{helper}"
+                        spec = importlib.util.find_spec(name)
+                        expected = ROOT / f"phmt_test_support/{helper}.py"
+                        self.assertEqual(
+                            Path(spec.origin).read_bytes(), expected.read_bytes()
+                        )
+                        self.assertTrue(Path(spec.origin).is_relative_to(stage.root))
+                        self.assertNotIn(name, sys.modules)
                 self.assertEqual(sys.path, original_path)
                 stage.check()
                 temporary = stage.root

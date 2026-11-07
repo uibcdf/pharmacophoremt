@@ -71,7 +71,12 @@ public-library receiving or biological validation. The first
 composes the existing native tools before choosing an index strategy. Its
 [separate analytical receipt](../evidence/public_library_incremental_support_20261107_summary.json)
 owns the new lazy-consumption/source-mapping/evidence controls. It adds no public
-API, molecular snapshot, journal/restart or provider receiving qualification.
+API, molecular snapshot or provider receiving qualification. The separately
+[declared recovery experiment](../prepared_library_recovery.md) adds a saved-query
+recipe and ordered work manifest, retained attempts and single-owner SQLite
+publication. It distinguishes confirmed results from generator delivery and keeps
+terminal failures authoritative. Its analytical controls do not authenticate
+live molecular inputs or qualify power-loss/distributed/platform durability.
 
 At source `0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f`, the ZINC downloader
 calculates tranche bins but performs no HTTP acquisition; virtual screening

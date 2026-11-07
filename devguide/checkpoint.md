@@ -1,6 +1,6 @@
 # Current development checkpoint
 
-Maintained 2026-11-07 UTC after incremental reference controls, owners LMMV/dprada.
+Maintained 2026-11-07 UTC after controlled query/recovery cases, owners LMMV/dprada.
 Start with [onboarding](onboarding.md), [decisions/workstreams](decisions_and_workstreams.md)
 and [migration](machine_migration.md). The former long log is preserved verbatim
 after its preface in [checkpoint history](checkpoint_history_20261106.md).
@@ -17,7 +17,8 @@ study under #103 has executed.
 
 Actual release plan/latest GitHub Release remains **0.4.0**. Proposed0.5.0 is
 reviewed, not frozen/published. The latest work records destination controls and
-an offline assay-capacity tool; runtime/dependency/workflow contracts are unchanged.
+an offline assay-capacity tool and unshipped incremental/recovery controls;
+public runtime/dependency/workflow contracts are unchanged.
 The addon remains deferred; its source exists but live-browser acceptance is #58.
 
 | Workstream | Current evidence | Next action |
@@ -25,7 +26,7 @@ The addon remains deferred; its source exists but live-browser acceptance is #58
 | #103 two receptor studies | Preparation/analytical controls exist; no full admitted biological study | Complete source/cohort/preparation admission, freeze the full comparison/evaluation plan, then execute |
 | #66 ERalpha | Original Sun2006/Xin2023/Gungor2006/Scott2023 methods remain unresolved; original pools/thresholds/exposure retained | New authorized access lead; don't repeat exhausted routes or silently substitute a source |
 | #106 BRD4 admission | All nine fixed leads have bounded method reviews; prior capacity/coupled outcomes and seven held sources remain distinct | Resolve source-specific material/data authority, especially experimental/predicted provenance in 1805218; no automatic activity admission |
-| #108 public-library workflow | [Unshipped incremental reference](prepared_library_reference.md): 26 new analytical controls pass, separately from the earlier 14 native controls | Qualify compatible saved identities/journal/recovery and repeat-query behavior before public names, real receiving or an index; rendered forms remain a separate check |
+| #108 public-library workflow | [Unshipped recovery reference](prepared_library_recovery.md): 48 scientific and 45 affected administrative controls pass; two saved-query runs replay without science | Select/admit a bounded real collection through qualified provider contracts; production snapshot/durability/public API/index qualification remains open |
 | #128 tool-study registry | [Public index](https://github.com/uibcdf/pharmacophoremt/discussions/129) and ten documentary tool records, with forms/guidance in source | Follow [registry guidance](pharmacophore_tools_registry.md); distinguish documentary/executed/benchmark evidence and track actual template delivery/rendering in #128 |
 | MolSysMT | #105 native aromatic-N received; #323/#375/#447 remain open at this handoff | Consume supported H-refinement/carboxylate/grouping contracts; report actual missing general tools there |
 | #95/#10/#23 | Proposed intermediate release and separate public/installed/support gates remain partial | Qualify actual public provider capabilities and exact candidate/source/file/platform gates before freeze |

@@ -1,0 +1,184 @@
+{
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "Increment C unshipped saved-query recipe, ordered work manifest and single-owner SQLite outcome ledger; controlled interruption/recovery and repeat-query analytical software cases. No public provider/index or biological validation.",
+  "producer_head": "6740d4a0025901e8292e28b2a045ead2be678c8f",
+  "molecular_provider_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+  "selectors": [
+    "tests/test_prepared_library_recovery.py",
+    "tests/test_prepared_library_reference.py"
+  ],
+  "expected_scientific": {
+    "tests": 48,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "administrative_selection": [
+    "devtools/tests/test_reference_run_store.py",
+    "devtools/tests/test_distribution_contract.py"
+  ],
+  "expected_administration": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "source_files": {
+    "devtools/conda-build/resources.toml": {
+      "sha256": "3a0278f3b3c3ddc9368cc46f239d9541aeec2a12a8ebe47199ec5d07f8bb9287",
+      "bytes": 27681
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "f58de753a57ae3dec535019eca127775f3765a5ad34473be1556653002d0fc73",
+      "bytes": 25522
+    },
+    "devtools/tests/test_reference_run_store.py": {
+      "sha256": "bc28145f2276f1450b118a89e0954e159ff00836af69cbdf0eb496a39392e132",
+      "bytes": 21794
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650",
+      "bytes": 1905
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+      "bytes": 1405
+    },
+    "pharmacophoremt/io/phmt/__init__.py": {
+      "sha256": "01eb4d19f99e1004a12fab925f76bef49c64ae70088a3242d3ec2a7541510f59",
+      "bytes": 11203
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41",
+      "bytes": 12410
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746",
+      "bytes": 10334
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "pharmacophoremt/screening/virtual_screening.py": {
+      "sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+      "bytes": 7034
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "phmt_test_support/prepared_library_recovery.py": {
+      "sha256": "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6",
+      "bytes": 8795
+    },
+    "phmt_test_support/prepared_library_reference.py": {
+      "sha256": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+      "bytes": 4808
+    },
+    "phmt_test_support/reference_run_store.py": {
+      "sha256": "10b4ee6aa31102bc0e82cc6faf84d84b504227df346f888fb75cd2f597205960",
+      "bytes": 23028
+    },
+    "tests/test_conformer_screening.py": {
+      "sha256": "a09b86a9ed4a755ee519c898c3253904fe1f291333140d694a57a06f83dfde53",
+      "bytes": 14724
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "tests/test_prepared_library_recovery.py": {
+      "sha256": "4c384121e3e8f2e84036f9cfe9264daab1e6fd9f6402864039def915c1566253",
+      "bytes": 17760
+    },
+    "tests/test_prepared_library_reference.py": {
+      "sha256": "9797b6b8efcbe573d21fab4de0d94837bb5333cb5223d4f515729b78b4ef0732",
+      "bytes": 12637
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_seeded_scoring.py": {
+      "sha256": "1703113fb5457b75cb3997f61b32738198b9bd2330cb5a5d8ce2459f5905c9b4",
+      "bytes": 13674
+    },
+    "tests/test_virtual_screening.py": {
+      "sha256": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f",
+      "bytes": 13242
+    }
+  },
+  "uncommitted_source_overlay": [
+    "phmt_test_support/reference_run_store.py",
+    "phmt_test_support/prepared_library_recovery.py",
+    "tests/test_prepared_library_recovery.py",
+    "devtools/tests/test_reference_run_store.py",
+    "devtools/tests/test_distribution_contract.py",
+    "devtools/conda-build/resources.toml"
+  ],
+  "resources": {
+    "allowed_cpu": 19,
+    "cpu_quota_percent": 100,
+    "memory_max_bytes": 536870912,
+    "memory_swap_max_bytes": 0,
+    "tasks_max": 32,
+    "nice": 19,
+    "io_priority": "idle",
+    "backend_threads": 1,
+    "timeout_seconds": 180
+  },
+  "oracles": [
+    "Started/staged are not confirmed; interruption may recompute them in a new retained attempt. After confirmation, resume skips work; replay recovers undelivered confirmed outcomes.",
+    "One confirmed terminal outcome per declared work key; identical publication idempotent, conflicting publication fails, first winning attempt preserved. SQLite statement failure rolls back outcome visibility and winning-attempt marker together.",
+    "Terminal native failures remain unscored and authoritative in their run. Linked run preserves prior failure and source mapping.",
+    "Current saved query bytes and effective defaults/options reconstruct evaluator; six declared compatibility boundaries and code/version context reject mismatches before source pull.",
+    "Ordered mapping/unique keys checked on disk; changed/reordered/short source fails visibly and retains confirmed prefix.",
+    "Two query runs share the same two declared occurrences of one controlled molecular fixture; expected scores [1,1] then [0,0]. They are not four independent compounds.",
+    "Persisted no-fit seeded negatives score0 despite fit_value None; partly failed conformer hits retain nested work IDs, failed frame cause and resolved score1.",
+    "Saved replay imports no scientific/citation provider; storage/manifest corruption and a second owner are refused. Caller owns source/ledger closure."
+  ],
+  "fixtures": "Existing explicit-coordinate prepared MolSysMT controls in source-hashed fixtures; no new molecular preparation or acquisition. Molecular snapshot identities are declarations, not authenticated content.",
+  "sqlite_primary_sources": [
+    "https://www.sqlite.org/pragma.html#pragma_locking_mode",
+    "https://www.sqlite.org/lang_transaction.html"
+  ],
+  "retained_worked_artifacts": {
+    "selector": "tests/test_prepared_library_recovery.py::test_second_saved_query_uses_linked_run_and_preserves_original_results",
+    "files": [
+      "query.json",
+      "work.jsonl",
+      "original.sqlite3",
+      "second-query.json",
+      "second.sqlite3"
+    ],
+    "retention": "Owned pytest --basetemp under original capsule; archive the two closed native-query SQLite runs and mapping as original binary/text evidence, alongside exact test source and logs."
+  },
+  "claims_excluded": [
+    "Exactly-once external delivery/computation",
+    "Authenticated molecular snapshot/provider source closure from declarations or package versions",
+    "Power loss, filesystem faults, network filesystems, distributed/multiwriter/general concurrency or platform qualification",
+    "Public facade/CLI/provider/index/production performance or biological accuracy",
+    "Full source/installed/platform/release gates",
+    "Broader administrative discovery previously OOM-killed under #9"
+  ],
+  "attribution": "Persist native actual provenance unchanged. Offline store replay uses no molecular/citation provider and does not register another calculation.",
+  "original_outputs": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-library-recovery-20261107-74udii_p"
+}

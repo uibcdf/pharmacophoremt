@@ -129,8 +129,11 @@ The [architecture proposal](public_library_architecture.md) now specifies that
 lifecycle, identity/invalidation, guided/expert operation parity and explicit
 commit/retry behavior. [Worked native controls](public_library_contract_examples.md)
 separate existing evaluator semantics from proposed streaming/journal mechanisms.
-The [unshipped reference prototype](prepared_library_reference.md) now consumes
-already prepared analytical inputs through public native tools, retaining all
-native evidence and explicit work/source occurrences; 26 new analytical controls
-pass. Next qualify saved identities/journal/recovery and repeat-query behavior
-before real receiving, public API selection and reusable-index experiments.
+The [unshipped incremental prototype](prepared_library_reference.md) now has a
+separate [saved-query recovery experiment](prepared_library_recovery.md): ordered
+manifest mapping, retained attempts, immutable confirmed outcomes and linked
+repeat-query runs. All 48 selected scientific and 45 affected administrative
+cases pass. Saved replay uses no molecular/citation provider. Next qualify actual
+provider collection/snapshot contracts and a bounded permitted real subset before
+public API selection and reusable-index experiments; declarations alone do not
+authenticate prepared molecular content or qualify production durability.

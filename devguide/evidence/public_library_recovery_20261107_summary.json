@@ -1,0 +1,433 @@
+{
+  "schema": "pharmacophoremt.library-recovery-summary@1",
+  "recorded_at_utc": "2026-11-07T01:13:12.963399+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/108",
+  "scope": "Increment C unshipped saved-query recipe, ordered work manifest and single-owner SQLite outcome ledger; controlled interruption/recovery and repeat-query analytical software cases. No public provider/index or biological validation.",
+  "plan": {
+    "path": "public_library_recovery_plan_20261107.json",
+    "sha256": "7d59382e1e78e9427cc87d32ed2477183b7dce61e24b70f833af84a511fb228e",
+    "bytes": 8533
+  },
+  "producer_head": "6740d4a0025901e8292e28b2a045ead2be678c8f",
+  "uncommitted_source_overlay": [
+    "phmt_test_support/reference_run_store.py",
+    "phmt_test_support/prepared_library_recovery.py",
+    "tests/test_prepared_library_recovery.py",
+    "devtools/tests/test_reference_run_store.py",
+    "devtools/tests/test_distribution_contract.py",
+    "devtools/conda-build/resources.toml"
+  ],
+  "selected_source_files": {
+    "devtools/conda-build/resources.toml": {
+      "sha256": "3a0278f3b3c3ddc9368cc46f239d9541aeec2a12a8ebe47199ec5d07f8bb9287",
+      "bytes": 27681
+    },
+    "devtools/tests/test_distribution_contract.py": {
+      "sha256": "f58de753a57ae3dec535019eca127775f3765a5ad34473be1556653002d0fc73",
+      "bytes": 25522
+    },
+    "devtools/tests/test_reference_run_store.py": {
+      "sha256": "bc28145f2276f1450b118a89e0954e159ff00836af69cbdf0eb496a39392e132",
+      "bytes": 21794
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650",
+      "bytes": 1905
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511",
+      "bytes": 6518
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57",
+      "bytes": 1405
+    },
+    "pharmacophoremt/io/phmt/__init__.py": {
+      "sha256": "01eb4d19f99e1004a12fab925f76bef49c64ae70088a3242d3ec2a7541510f59",
+      "bytes": 11203
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9",
+      "bytes": 9416
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41",
+      "bytes": 12410
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+      "bytes": 18143
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746",
+      "bytes": 10334
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9",
+      "bytes": 5555
+    },
+    "pharmacophoremt/screening/virtual_screening.py": {
+      "sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394",
+      "bytes": 7034
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e",
+      "bytes": 5917
+    },
+    "phmt_test_support/prepared_library_recovery.py": {
+      "sha256": "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6",
+      "bytes": 8795
+    },
+    "phmt_test_support/prepared_library_reference.py": {
+      "sha256": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+      "bytes": 4808
+    },
+    "phmt_test_support/reference_run_store.py": {
+      "sha256": "10b4ee6aa31102bc0e82cc6faf84d84b504227df346f888fb75cd2f597205960",
+      "bytes": 23028
+    },
+    "tests/test_conformer_screening.py": {
+      "sha256": "a09b86a9ed4a755ee519c898c3253904fe1f291333140d694a57a06f83dfde53",
+      "bytes": 14724
+    },
+    "tests/test_pose_evaluation.py": {
+      "sha256": "887b8bd8b5ea56497640fcee6b1a23d3b89116354315f33a6a35c255b173b18f",
+      "bytes": 10265
+    },
+    "tests/test_prepared_library_recovery.py": {
+      "sha256": "4c384121e3e8f2e84036f9cfe9264daab1e6fd9f6402864039def915c1566253",
+      "bytes": 17760
+    },
+    "tests/test_prepared_library_reference.py": {
+      "sha256": "9797b6b8efcbe573d21fab4de0d94837bb5333cb5223d4f515729b78b4ef0732",
+      "bytes": 12637
+    },
+    "tests/test_rigid_search.py": {
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603",
+      "bytes": 12042
+    },
+    "tests/test_seeded_scoring.py": {
+      "sha256": "1703113fb5457b75cb3997f61b32738198b9bd2330cb5a5d8ce2459f5905c9b4",
+      "bytes": 13674
+    },
+    "tests/test_virtual_screening.py": {
+      "sha256": "84347f6b53c3007f5545b3c5d49b8d05b51a6fca5a45526928ce7381f862693f",
+      "bytes": 13242
+    }
+  },
+  "scientific": {
+    "exit_code": 0,
+    "counts": {
+      "tests": 48,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "new_recovery_cases": 22,
+    "incremental_regression_cases": 26,
+    "source_and_native_unchanged": true,
+    "peak_cgroup_bytes": 348200960,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "context": {
+      "sqlite_version": "3.54.1",
+      "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+      "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "platform": "Linux-7.0.0-42-generic-x86_64-with-glibc2.43",
+      "origins": {
+        "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+        "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+        "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+        "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+        "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor/__init__.py",
+        "gh_run_receptor": "/fast_data/home/liliana/repos@uibcdf/gh-run-receptor-1.4.0/src/gh_run_receptor/__init__.py"
+      },
+      "versions": {
+        "pharmacophoremt": "0.4.0+120.g0925d97",
+        "molsysmt": "0.23.0+513.g9e1f1b1ad",
+        "argdigest": "0.17.1+3.g0712641",
+        "smonitor": "0.22.1+1.gc1b6ce2",
+        "pyunitwizard": "0.29.1+6.gf82b618",
+        "pytest": "9.2.0",
+        "pytest-receptor": "1.2.0",
+        "gh-run-receptor": "1.4.0",
+        "rdkit": "2026.9.2",
+        "ackredit": "0.12.1+10.g4beb850"
+      },
+      "native_before": {
+        "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so": {
+          "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+          "bytes": 101188064
+        }
+      },
+      "cgroup": "/sys/fs/cgroup/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-library-recovery-science-20261107-74udii_p.scope",
+      "limits": {
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "cpu.max": "100000 100000"
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "memory_before_kib": {
+        "MemAvailable": 49688900,
+        "SwapFree": 8388568
+      },
+      "pressure_before": "some avg10=0.00 avg60=0.00 avg300=0.00 total=168007\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=167151\n",
+      "scope": "Unshipped controlled query/manifest/transaction recovery cases; no power-loss/provider/benchmark qualification."
+    }
+  },
+  "administrative": {
+    "tests": 45,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "successful": true,
+    "forbidden_scientific_roots": [
+      "molsysmt",
+      "numpy",
+      "pharmacophoremt",
+      "rdkit",
+      "scipy"
+    ],
+    "loaded_scientific_modules": [],
+    "cgroup_limits": {
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "cpu.max": "100000 100000"
+    },
+    "peak_cgroup_bytes": 76042240,
+    "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0\n",
+    "scope": "Affected ledger/distribution/staging controls with scientific imports forbidden; no scientific provider import or installed artifact qualification."
+  },
+  "governance": {
+    "reporting_cases": 3,
+    "archive_cases": 18,
+    "ruff_check": 0,
+    "ruff_format": 0,
+    "indexes": 0,
+    "declarations": 0
+  },
+  "total_completed_passing_cases": 114,
+  "worked_saved_replay": {
+    "runs": 2,
+    "scientific_imports": [],
+    "new_molecular_calculations": 0,
+    "database_bytes_unchanged": true,
+    "expected_scores": [
+      [
+        1,
+        1
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "work_occurrences_per_run": 2,
+    "distinct_controlled_molecular_handles": 1,
+    "unit_of_analysis_limit": "Second query and repeated occurrences do not add independent biological samples."
+  },
+  "worked_original": {
+    "path": "public_library_recovery_20261107_original.sqlite3.gz",
+    "compressed_sha256": "0979c29c90a044848dc05f84076e3a2108330ddbf9e2d5ac3ef82ba65178c870",
+    "compressed_bytes": 6438,
+    "uncompressed_sha256": "c79814f010bbca5df9678de6e2cf40881c5a0de2f30b079c3a1f99670044b440",
+    "uncompressed_bytes": 65536,
+    "format": "SQLite experimental reference-ledger@1",
+    "run_id": "run:original",
+    "parent_run_id": null,
+    "query_file": "query.json",
+    "manifest_file": "work.jsonl",
+    "expected_scores": [
+      1.0,
+      1.0
+    ],
+    "context": {
+      "compatibility": {
+        "features": "classical_atomic_formal@1",
+        "grouping": "declared-work-occurrences@1",
+        "index": null,
+        "numerical": {
+          "backend_threads": 1,
+          "coordinate_precision": "float64"
+        },
+        "preparation": {
+          "chemical_state": "reference",
+          "provider": "MolSysMT"
+        },
+        "prepared_snapshot": "controlled-explicit-coordinate-fixture@1"
+      },
+      "execution": {
+        "constructor_options": {
+          "direction_tolerance": "30 degrees",
+          "min_fit_value": 0.0,
+          "point_tolerance": "0.10 nm"
+        },
+        "evaluation_options": {
+          "chemical_state": "reference",
+          "selection": [
+            0,
+            1,
+            2
+          ],
+          "structure_index": 0
+        },
+        "on_error": "record",
+        "score_method": "checked_pose_coverage",
+        "screening_method": "placed"
+      },
+      "runtime": {
+        "phmt_python_sources_sha256": "db224c0618cf0516bfab60a4ed01c4c1bf01b744842112ce3c164ea660002fd0",
+        "provider_versions": {
+          "argdigest": "0.17.1+3.g0712641",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "numpy": "2.5.4",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "scipy": "1.18.1",
+          "smonitor": "0.22.1+1.gc1b6ce2"
+        },
+        "python": [
+          3,
+          14,
+          10
+        ],
+        "reference_sources": {
+          "prepared_library_recovery.py": "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6",
+          "prepared_library_reference.py": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+          "reference_run_store.py": "10b4ee6aa31102bc0e82cc6faf84d84b504227df346f888fb75cd2f597205960"
+        }
+      },
+      "schema": "phmt.reference-recovery-plan@1"
+    },
+    "scope": "Two declared occurrences of one repeated analytical fixture; no activity or independent-compound denominator."
+  },
+  "worked_second": {
+    "path": "public_library_recovery_20261107_second.sqlite3.gz",
+    "compressed_sha256": "d4c1ef9e2a386c6705566b6f29599c4c82e71d95241d19479711faa17b295132",
+    "compressed_bytes": 4063,
+    "uncompressed_sha256": "fb9835b3a9693daaed270e95dc1a341a353ebe0e0d0c247a10f5965373332379",
+    "uncompressed_bytes": 49152,
+    "format": "SQLite experimental reference-ledger@1",
+    "run_id": "run:second-query",
+    "parent_run_id": "run:original",
+    "query_file": "second-query.json",
+    "manifest_file": "work.jsonl",
+    "expected_scores": [
+      0.0,
+      0.0
+    ],
+    "context": {
+      "compatibility": {
+        "features": "classical_atomic_formal@1",
+        "grouping": "declared-work-occurrences@1",
+        "index": null,
+        "numerical": {
+          "backend_threads": 1,
+          "coordinate_precision": "float64"
+        },
+        "preparation": {
+          "chemical_state": "reference",
+          "provider": "MolSysMT"
+        },
+        "prepared_snapshot": "controlled-explicit-coordinate-fixture@1"
+      },
+      "execution": {
+        "constructor_options": {
+          "direction_tolerance": "30 degrees",
+          "min_fit_value": 0.0,
+          "point_tolerance": "0.10 nm"
+        },
+        "evaluation_options": {
+          "chemical_state": "reference",
+          "selection": [
+            0,
+            1,
+            2
+          ],
+          "structure_index": 0
+        },
+        "on_error": "record",
+        "score_method": "checked_pose_coverage",
+        "screening_method": "placed"
+      },
+      "runtime": {
+        "phmt_python_sources_sha256": "db224c0618cf0516bfab60a4ed01c4c1bf01b744842112ce3c164ea660002fd0",
+        "provider_versions": {
+          "argdigest": "0.17.1+3.g0712641",
+          "molsysmt": "0.23.0+513.g9e1f1b1ad",
+          "numpy": "2.5.4",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "scipy": "1.18.1",
+          "smonitor": "0.22.1+1.gc1b6ce2"
+        },
+        "python": [
+          3,
+          14,
+          10
+        ],
+        "reference_sources": {
+          "prepared_library_recovery.py": "e89ccebdb59b8b0f2906dfd1f5a14fbb008531c9a58847a85f0bcd594b5f22d6",
+          "prepared_library_reference.py": "7f5afff8c129238bf95299cc781e9ab918edf164d23b21095a621cdb95891c80",
+          "reference_run_store.py": "10b4ee6aa31102bc0e82cc6faf84d84b504227df346f888fb75cd2f597205960"
+        }
+      },
+      "schema": "phmt.reference-recovery-plan@1"
+    },
+    "scope": "Two declared occurrences of one repeated analytical fixture; no activity or independent-compound denominator."
+  },
+  "post_run_context": {
+    "sdk": {
+      "head": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+      "clean": true,
+      "source": "Isolated local object-store clone at existing accepted pin",
+      "override": "PHARMACOPHOREMT_SUITE_ROOT",
+      "environment_mutated": false,
+      "declarations_exit_code": 0,
+      "installed_closure_checked": false
+    },
+    "provider_head_after": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+    "provider_state_after": [],
+    "identity_limit": "Parent Git head plus exact uncommitted source overlay/source digests identify producer. Editable version metadata alone does not. Selected files and native artifact have pre/post checks; complete source/installed/provider closure is not inferred."
+  },
+  "full_evidence": {
+    "path": "public_library_recovery_20261107.json.gz",
+    "compressed_sha256": "3ac453bc2e8839431f3868a8693e5739d2f4a2915fa6db1d5be12e85e5cd5cc7",
+    "compressed_bytes": 110306,
+    "uncompressed_sha256": "cbc4892f09c4662657ee716ff478374d468df385a378a16bad5cd173fc437d1c",
+    "uncompressed_bytes": 625109,
+    "own_file_count": 52
+  },
+  "review": {
+    "independent_static_review": "No blocking defect found; author/test/reviewer roles separate",
+    "additional_mechanism_guards": [
+      "Actual SQLite settings checked, not merely assigned",
+      "Injected SQLite statement failure rolls back both confirmed visibility and winning marker",
+      "Recorded score criterion/status/source mapping stay bound",
+      "Started/staged attempts retained; confirmed failures immutable",
+      "Saved publication is distinct from external consumer delivery"
+    ]
+  },
+  "pending": [
+    "Exactly-once external delivery/computation",
+    "Authenticated molecular snapshot/provider source closure from declarations or package versions",
+    "Power loss, filesystem faults, network filesystems, distributed/multiwriter/general concurrency or platform qualification",
+    "Public facade/CLI/provider/index/production performance or biological accuracy",
+    "Full source/installed/platform/release gates",
+    "Broader administrative discovery previously OOM-killed under #9"
+  ],
+  "local_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-library-recovery-20261107-74udii_p",
+  "temporary_resources": {
+    "owner": "LMMV/dprada",
+    "review_date": "2026-11-20",
+    "policy": "Keep original controls/logs/source snapshot/worked artifacts; remove isolated SDK after checks. Shared checkouts and environment untouched."
+  },
+  "evidence_limit": "Controlled exceptions/process exits and local exclusive ownership only; no power-loss/filesystem/distributed/platform qualification. Identity declarations do not authenticate molecular content. No new provider data, index, activity labels, biological study, comparative benchmark or full source/installed/public gate. Historical #9 broader administrative OOM remains its own failed record; no remote CI dispatched."
+}

@@ -154,10 +154,12 @@ systemd confirmation are retained; it has no passing full-suite count. The focus
 24-control recovery uses the same limits and passes without OOM events. Broader
 administrative coverage remains tracked in #9; no resource cap was raised.
 
-Increment C remains separate: saved query/input/plan identities, single-writer
-journal, committed-outcome integrity, interrupted recovery and linked retry runs.
-Closing a generator is cancellation of future work, not a durable checkpoint.
-Producer-declared keys alone do not prevent duplicates after restart. The
-architecture's authoritative committed-failure rule is unchanged. Public
-guided/expert names, real-provider receiving and reusable search assets remain
-unqualified; full source/installed/platform and release gates remain separate.
+Increment B alone provides no journal or restart guarantee. The separate
+[increment C experiment](prepared_library_recovery.md) now binds saved query/plan
+identities and ordered work mappings to a single-owner transactional ledger.
+Its own controls/receipt qualify confirmed-outcome recovery; closing the original
+incremental generator still supplies no durable checkpoint by itself.
+Producer-declared keys alone authenticate no molecular input. The architecture's
+authoritative committed-failure rule is unchanged. Public guided/expert names,
+real-provider receiving and reusable search assets remain unqualified; full
+source/installed/platform and release gates remain separate.

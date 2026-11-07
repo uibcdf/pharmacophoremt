@@ -36,6 +36,13 @@ the helper and checks its exact bytes without importing scientific providers.
 This is test-support delivery, not a new installed/public runtime API or artifact
 qualification. See the [prototype contract](../devguide/prepared_library_reference.md).
 
+The [recovery experiment](../devguide/prepared_library_recovery.md) adds the
+standard-library-only `reference_run_store` and scientific
+`prepared_library_recovery` composer, bringing private support to 62 declared
+files. Saved replay needs no scientific provider; reexecution reconstructs an
+existing native evaluator from saved query bytes and effective settings. These
+remain unshipped helpers, with no new installed/public runtime promise.
+
 `saved_model_reader.py` is a standalone fresh-process oracle for the four saved
 model cases. It uses only public PharmacophoreMT I/O and Ackredit; parent clients
 run its explicit file with `python -P` in the owned case directory. It needs no
