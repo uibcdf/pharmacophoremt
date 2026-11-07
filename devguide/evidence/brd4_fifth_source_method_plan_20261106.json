@@ -1,0 +1,76 @@
+{
+  "schema": "pharmacophoremt.brd4-fifth-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T21:17:48.330280+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_outcomes": {
+    "1805333": "declared capacity stop",
+    "1795677": "coupled original report, no transferred class counts",
+    "1797292": "held: original unit and experimental material",
+    "1797167": "held: experimental material and row provenance; own FormulaII method/unit supported"
+  },
+  "nomination": {
+    "aid": 2061300,
+    "version": 1,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_12872_1",
+    "raw_sids": 195,
+    "raw_cids": 193,
+    "patent": "US12286435B2",
+    "selection": "Next untouched isolated-BD1 lead in complete descending-raw-SID/ascending-AID order; no class balance, potency or PHMT score selects it."
+  },
+  "scientific_questions": [
+    "Resolve KD title versus Ki description against the actual original measurement, tracer/FP endpoint and conversion formula; do not equate KD/Ki/IC50 or transfer labels",
+    "Original reporting units/censoring and source-method/result-column correspondence",
+    "Actual experimental human species/accession/full construct/tag and incorporated original method authority",
+    "Source independence, interference, rights, exposure and prospective capacity feasibility"
+  ],
+  "requests": [
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/2061300/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/2061300/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US12286435B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html",
+      "publication": "US12286435B2"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 3,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "Transport/HTTP/length/media/encoding/schema/identity failure. Preserve raw count/hash before semantic gates; no alternate credentials/resources."
+  },
+  "bounded_original_method_search": {
+    "maximum_web_tool_calls": 4,
+    "primary_sources_only": true,
+    "allowed": "Directed primary-source search/open of exact original incorporated assay/material/curator authority after first receiving review. No dedicated activities or chemical/sequence resources.",
+    "stop": "Qualified source authority or clear unresolved boundary within four observations; further source-body acquisition needs a separate dated plan."
+  },
+  "allowed_projection": "Original documentary method/endpoint/unit/material/source-lineage evidence only. No dedicated activity endpoint, class-frequency projection, chemical/alias/structure/sequence/state/series operations, cohort, receptor, pharmacophore or score.",
+  "admission_and_stop": "Require source-specific original endpoint/unit/material and source-column authority before a prospective activity/capacity declaration. Preserve unresolved KD/Ki/IC50 wording and hold source if authority remains missing. No change to50eligible-groups-per-class design, source order or earlier thresholds.",
+  "rights": "Original HTML/metadata/rows/images remain private; portable evidence limited to own factual projections/controllers/hashes. Curation/license-version authority separate and unresolved.",
+  "exposure": "All earlier#66/#106 source/chemistry/potency/search exposures remain additive. Census descriptions/upstream aggregate categories already delivered for this source. Fresh original source may expose chemistry/activities; no blind/unseen claim, pooling or source selection by observed performance.",
+  "resources": "Serial one actual allowed CPU19/backend thread,CPUquota100%,512MiB memory/no swap/tasks32,nice19/idleIO where enforceable. No full scientific suite or benchmark.",
+  "publication_state": "Local dated original-method nomination only, not a published pre-activity plan or admitted cohort."
+}

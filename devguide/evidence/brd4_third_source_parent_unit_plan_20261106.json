@@ -1,0 +1,29 @@
+{
+  "schema": "pharmacophoremt.brd4-third-source-parent-unit-plan@1",
+  "declared_at_utc": "2026-11-06T20:43:47.775352+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "source": {
+    "patent": "WO2016055028A1",
+    "url": "https://patents.google.com/patent/WO2016055028A1/en",
+    "relationship": "US10206931B2 explicitly continuesPCT/CN2015/091614; this is its direct PCT publication, independently identified during primary-method review."
+  },
+  "question": "Does the direct original PCT publication state the unit of the same BRD4AlphaLisa result table? Use original method/crossreference and literal document-column/table identity before any authority transfer.",
+  "limits": {
+    "top_level_requests": 1,
+    "attempts": 1,
+    "maximum_bytes": 8388608,
+    "timeout_seconds": 20,
+    "retries": 0,
+    "redirects": false
+  },
+  "scope": "Original source/unit/material review only; no dedicated activities, class-frequency projection, chemical aliases/identity maps or source replacement. Do not infer units from observed numerical values or generic inhibitor definitions.",
+  "rights_exposure": "Full original text/tables private; own facts/identities/controllers portable. Prior full delivery and incidental values remain additive; no blind/unseen claim.",
+  "resources": "SerialoneCPU100%quota512MiB/no swap/tasks32,nice19/idleIO,backendthreads1."
+}

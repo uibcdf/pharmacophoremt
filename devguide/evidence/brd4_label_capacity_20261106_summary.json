@@ -1,0 +1,434 @@
+{
+  "schema": "pharmacophoremt.brd4-label-capacity-summary@1",
+  "recorded_at_utc": "2026-11-06T18:25:02.915682+00:00",
+  "issues": [
+    103,
+    106
+  ],
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "source_head_before": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+  "producer_overlay": "New unshipped case controller/tests and documentation; exact executed tool bytes retained in the archive. No runtime/provider/dependency/workflow modification.",
+  "case_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-label-capacity-20261106-0xc2e491",
+  "environment_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-destination-receiving-20261106-_35gqk2b",
+  "review_by": "2026-11-20 or relevant change",
+  "plan_sha256": "079f2b6652f17c292ca41e7eba04b3e9c2404e9c4a2f067b4ddd92669d95d718",
+  "source": {
+    "aid": 1805333,
+    "version": 3,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_9746_1"
+  },
+  "receiving": {
+    "requests_attempted": 5,
+    "all_http_statuses": [
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "before_after_description_identical": true,
+    "before_after_summary_identical": true,
+    "csv_bytes": 80900,
+    "csv_sha256": "7035a0390c0ee79ec970d2b7272ead5dab95623d7d9e735444a58d67cef03be6",
+    "atomic_database_snapshot": false,
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-label-capacity-20261106-0xc2e491.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "14426112",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    }
+  },
+  "projection": {
+    "schema": "pharmacophoremt.brd4-label-capacity-projection@1",
+    "plan_sha256": "079f2b6652f17c292ca41e7eba04b3e9c2404e9c4a2f067b4ddd92669d95d718",
+    "source_aid": 1805333,
+    "scope": "Necessary raw label capacity only; no cohort or molecular admission",
+    "rows": 505,
+    "distinct_sids": 499,
+    "distinct_cids": 494,
+    "missing_cid_rows": 1,
+    "row_status_counts": {
+      "strong": 382,
+      "intermediate": 0,
+      "weak": 32,
+      "class_ambiguous": 0,
+      "missing": 91,
+      "invalid": 0,
+      "unsupported_type": 0,
+      "unsupported_relation": 0
+    },
+    "uniform_sid_status_counts": {
+      "strong": 376,
+      "intermediate": 0,
+      "weak": 32,
+      "class_ambiguous": 0,
+      "missing": 91,
+      "invalid": 0,
+      "unsupported_type": 0,
+      "unsupported_relation": 0
+    },
+    "duplicate_sids": 6,
+    "extra_duplicate_rows": 6,
+    "conflicting_label_sids": 0,
+    "conflicting_cid_sids": 0,
+    "mixed_status_sids": 0,
+    "eligible_sid_upper_bounds": {
+      "strong": 375,
+      "weak": 32
+    },
+    "minimum_per_class": 50,
+    "duplicate_rule": "Contribute once only when every row has the same definite class and CID; exclude mixed, unresolved or conflicting observations",
+    "decision": "stop_insufficient_raw_capacity",
+    "independent_groups_qualified": false,
+    "csv_sha256": "7035a0390c0ee79ec970d2b7272ead5dab95623d7d9e735444a58d67cef03be6",
+    "layout_sha256": "a23af44b2c94d6cae3cb3895d2f3c8d921f1f545d389a66ae69f1a9d5672ca57",
+    "metadata_receiving_sha256": "ad3d14ee95a097870390f66bc83463421a2df86120834c3b62143797a0579157",
+    "scope_limits": {
+      "molecular_structures_received_as_source_strings": true,
+      "molecular_structures_parsed_or_displayed": false,
+      "biological_study_executed": false,
+      "cohort_admitted": false,
+      "raw_rows_published": false,
+      "projection_resources": "one CPU, nice19, idle I/O,512MiB address-space cap; swap cgroup not enforced for this short offline standard-library phase"
+    }
+  },
+  "field_completeness": {
+    "rows": 505,
+    "standard_type_counts": {
+      "IC50": 505
+    },
+    "standard_relation_counts": {
+      "": 91,
+      ">": 32,
+      "<": 382
+    },
+    "missing_field_combinations": {
+      "relation": 91
+    },
+    "scope": "Aggregate source-field completeness; no imputation or raw-value display"
+  },
+  "source_stop": "Only32 eligible weak SID upper bounds against50 required; stop this source for the declared design. Missing relations remain unresolved; do not pool AIDs, impute equality or adjust labels.",
+  "destination_receiving": {
+    "selected_passed": 23,
+    "failures": 0,
+    "skips": 0,
+    "native_probe": {
+      "pharmacophoremt": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "pharmacophoremt_version": "0.4.0+120.g0925d97",
+      "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "rust_extension": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "rust_extension_sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+      "rust_extension_bytes": 101188064
+    },
+    "tests": [
+      {
+        "class": "tests.test_validation_metrics",
+        "name": "test_known_rankings[labels0-1]"
+      },
+      {
+        "class": "tests.test_validation_metrics",
+        "name": "test_known_rankings[labels1-0.75]"
+      },
+      {
+        "class": "tests.test_validation_metrics",
+        "name": "test_known_rankings[labels2-0]"
+      },
+      {
+        "class": "tests.test_validation_metrics",
+        "name": "test_ties_are_unbiased_and_independent_of_input_order"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[json-point]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[json-sphere]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[json-sphere and vector]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[json-disk]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[json-gaussian kernel]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[json-cylinder]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[yaml-point]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[yaml-sphere]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[yaml-sphere and vector]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[yaml-disk]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[yaml-gaussian kernel]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_supported_fields_survive_read_and_write_across_unit_contexts[yaml-cylinder]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_invalid_model_metadata_is_refused[json]"
+      },
+      {
+        "class": "tests.test_native_persistence_validation",
+        "name": "test_invalid_model_metadata_is_refused[yaml]"
+      },
+      {
+        "class": "tests.test_pose_evaluation",
+        "name": "test_native_interactions_to_pose_preserves_indices_units_and_provenance"
+      },
+      {
+        "class": "tests.test_pose_evaluation",
+        "name": "test_translation_negative_and_shared_rigid_transform_and_units"
+      },
+      {
+        "class": "tests.test_pose_evaluation",
+        "name": "test_coincident_donor_checks_real_donor_hydrogen_direction"
+      },
+      {
+        "class": "tests.test_pose_evaluation",
+        "name": "test_model_provenance_survives_native_serialization"
+      },
+      {
+        "class": "tests.test_retrospective",
+        "name": "test_failure_requires_explicit_exclusion_and_does_not_become_a_decoy"
+      }
+    ],
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-destination-receiving-20261106-35gqk2b.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "306360320",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "pip_check_exit_code": 1,
+    "pip_check_failure": "topomt requires numba, which is not installed",
+    "known_owner": "https://github.com/uibcdf/topomt/issues/93",
+    "optional_absences": [
+      "ackredit",
+      "beartype"
+    ],
+    "reporter": "Exact clean local editable pytest-receptor identity retained; development receiving, not a published-tool/artifact qualification claim",
+    "historical_ci_context_recreated": false,
+    "full_source_installed_or_public_qualified": false
+  },
+  "exposure": "Full CSV includes individual reported potencies and source SMILES strings; program consumed only declared source identifiers and IC50 fields. No SMILES, ligand aliases or chemical structures were interpreted/displayed. All source rows potentially exposed, thresholds declared before class counts. Prior #66/#106 ledgers remain additive; no blinded source selection or unseen holdout.",
+  "rights": "Original individual rows, metadata bodies and reviewed source preamble remain private. Source-curation/license-version remains unresolved for later row redistribution; only own aggregates/controllers/source identities enter this portable receipt.",
+  "private_source_inventory": [
+    {
+      "file": "01_description_before.private.json",
+      "bytes": 4668,
+      "sha256": "fb9852a5db2b4983146384677aa7e8cea4ad8b62d1d9699b2547b6ce5a65cc06",
+      "redistribution_authorized": false
+    },
+    {
+      "file": "02_summary_before.private.json",
+      "bytes": 2641,
+      "sha256": "859467207650f3fbe546ac9744603b8e5d44f82438dda6d5ea4e144e8e7293c4",
+      "redistribution_authorized": false
+    },
+    {
+      "file": "03_activities.private.csv",
+      "bytes": 80900,
+      "sha256": "7035a0390c0ee79ec970d2b7272ead5dab95623d7d9e735444a58d67cef03be6",
+      "redistribution_authorized": false
+    },
+    {
+      "file": "04_description_after.private.json",
+      "bytes": 4668,
+      "sha256": "fb9852a5db2b4983146384677aa7e8cea4ad8b62d1d9699b2547b6ce5a65cc06",
+      "redistribution_authorized": false
+    },
+    {
+      "file": "05_summary_after.private.json",
+      "bytes": 2641,
+      "sha256": "859467207650f3fbe546ac9744603b8e5d44f82438dda6d5ea4e144e8e7293c4",
+      "redistribution_authorized": false
+    },
+    {
+      "file": "reviewed_csv_layout.private.json",
+      "bytes": 1903,
+      "sha256": "a23af44b2c94d6cae3cb3895d2f3c8d921f1f545d389a66ae69f1a9d5672ca57",
+      "redistribution_authorized": false
+    }
+  ],
+  "raw_source_bodies_or_rows_published": false,
+  "molecular_operations_models_or_scores": 0,
+  "cohort_admitted": false,
+  "biological_study_executed": false,
+  "offline_projection_replayed_equal": true,
+  "projection_resources": "one CPU, nice19, idle I/O,512MiB address-space cap; swap cgroup not enforced for this short offline standard-library phase",
+  "next": "Record this source/design stop, then make a new dated source nomination with its own original-method/material/endpoint/rights/exposure review before further activities. Both biological studies remain incomplete.",
+  "scope": "New shared-editable receiving plus necessary private raw label capacity; not an independent-group claim, biological study, recreated historical environment or full source/installed/public acceptance.",
+  "full_evidence": {
+    "path": "brd4_label_capacity_20261106.json.gz",
+    "compressed_sha256": "d7b2d53f95e39f3df800b014ac21df49dd34b1217400dc61daababb7aa6d9bcc",
+    "compressed_bytes": 25486,
+    "uncompressed_sha256": "5b821744067384229e09c029a7c8bcf89ddc3ee89c98c7a458d6038cc42c72e1",
+    "uncompressed_bytes": 95937
+  },
+  "post_archive_clarifications": {
+    "recorded_at_utc": "2026-11-06T18:25:44.782391+00:00",
+    "molecular_operations_models_or_scores_scope": "The original zero count applies only to the BRD4 source-capacity lane. Separate destination controls did exercise fixture-based molecular recognition, model persistence and pose evaluation; no study receptor/model/score was produced from this source.",
+    "phase_interpreters": {
+      "destination_and_http_receiving": "Python3.14.10, shared Conda executable recorded in destination manifest and HTTP command",
+      "offline_projection_replay_and_archive": {
+        "version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+        "executable": "/usr/bin/python3"
+      }
+    },
+    "archive_preservation": "Original compressed archive and hashes remain unchanged; this additive clarification narrows ambiguous summary scope without replacing the original observations."
+  },
+  "post_archive_validation": {
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "devtools.evidence_archive",
+          "devguide/evidence/brd4_label_capacity_20261106_summary.json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "reporting_tests_passed": 3,
+    "archive_tests_passed": 18,
+    "classifier_tests": {
+      "passed": 8,
+      "command": [
+        "python3",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_brd4_label_capacity.py"
+      ],
+      "evidence": "Initial local eight-test run completed successfully before acquisition; not a hosted or full suite"
+    },
+    "ruff_formatted_files": 378,
+    "integrity_and_links": {
+      "archive_inner_files_verified": 23,
+      "changed_markdown_links_checked": 122,
+      "link_errors": [],
+      "private_sources_in_portable_archive": false,
+      "source_stop": "stop_insufficient_raw_capacity"
+    },
+    "source_controller_sha256": "a894155fe4c4ab081db7f37e36e076471c06ae25a973cd42162fe10084f2ced7",
+    "source_guard_sha256": "30e64ebdab71cc6fb45c9e2184ed13fb9eb9ec5930a6755c33c4d78ebba1b7d1",
+    "local_resource_review": "Private source capsule and original destination logs remain retained for reproducibility; owned review due2026-11-20 or relevant change. No background jobs remain."
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schema": "pharmacophoremt.brd4-sixth-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T21:37:11.795673+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_outcomes": {
+    "1805333": "Declared capacity stop preserved",
+    "1795677": "Coupled original report preserved without class transfer",
+    "1797292": "Held for original unit/material authority",
+    "1797167": "Own method/unit supported; material/row authority held",
+    "2061300": "Own FP-derived Ki/nM and PCT wording supported; actual material/tracer/row authority held"
+  },
+  "nomination": {
+    "aid": 1798835,
+    "version": 3,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_3084_1",
+    "raw_sids": 184,
+    "raw_cids": 184,
+    "patent": "US9957263B2",
+    "selection": "Next untouched isolated-BD1 lead in the complete descending-raw-SID/ascending-AID order; no activity count, potency or PHMT score selects it."
+  },
+  "scientific_questions": [
+    "Locate the original method/result column corresponding to the reported isolated BD1 K57–E168 lead; keep any BD2/tandem/cellular contexts distinct",
+    "Original experimental species/accession/full construct/tag, reagent identity/concentrations and incorporated method authority",
+    "Actual endpoint/unit/censoring and curated source-to-method/result-column correspondence",
+    "Source/report independence, interference, rights, exposure and later source-specific capacity feasibility"
+  ],
+  "requests": [
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1798835/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1798835/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US9957263B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html",
+      "publication": "US9957263B2"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 3,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "Transport/HTTP/length/media/encoding/schema/identity failure. Preserve raw count/hash before semantic gates; no alternate credentials/resources."
+  },
+  "bounded_original_method_search": {
+    "maximum_web_tool_calls": 4,
+    "primary_sources_only": true,
+    "allowed": "Directed primary-source searches/opens of exact original/incorporated method or curator assay/material authority after receiving review. No dedicated activity/compound/sequence resource.",
+    "stop": "Qualified authority or clear gap within four calls; additional source-body receiving requires a separate dated plan."
+  },
+  "allowed_projection": "Documentary method/domain/endpoint/unit/material/source lineage only. No dedicated activities, activity-class projection, chemical identity/alias/structure/sequence/state/series operations, cohort, receptor, pharmacophore or score.",
+  "admission_and_stop": "Require source-specific original method/material/unit/column authority before prospective activity/capacity declaration. Preserve unknowns,50eligible-groups-per-class requirement and prior outcomes; no source pooling, threshold transfer or label inference.",
+  "rights": "Original metadata/HTML/rows/images remain private; portable evidence contains own facts/controllers/identities only. Source-curation/license-version authority separate and unresolved.",
+  "exposure": "All prior#66/#106 exposures remain additive. Census descriptions/upstream categories already delivered; fresh originals may expose chemistry/activities. No blind/unseen claim or selection by observed performance.",
+  "resources": "Serial one allowed CPU19/backend thread;CPUquota100%,512MiB/no swap/tasks32,nice19/idleIO where enforceable. No whole scientific suite or benchmark.",
+  "publication_state": "Local dated original-method nomination only; not a published pre-activity plan or admitted cohort."
+}

@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.brd4-next-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T18:32:30.632293+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_source_stop": {
+    "aid": 1805333,
+    "summary": "devguide/evidence/brd4_label_capacity_20261106_summary.json",
+    "summary_sha256": "e158daea67d8b1925a7199a5e8c47e018ef45907a65a77e6698141fce52aa5fb",
+    "eligible_weak_sids": 32,
+    "required_per_class": 50,
+    "preserve_original_plan_and_results": true
+  },
+  "nomination": {
+    "aid": 1795677,
+    "version": 2,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_644_1",
+    "raw_sids": 494,
+    "raw_cids": 490,
+    "patent": "US10023592B2",
+    "selection": "Next source in the previously complete descending-SID/ascending-AID isolated-BD1 lead order after1805333 stops. No1795677 class count or PHMT score enters this nomination. Not an accepted source/cohort."
+  },
+  "scientific_questions": [
+    "Original human/BD1 construct/tag/endpoint and incorporated-method evidence",
+    "Direct patent relationship to US10941160B2 and whether original method/result table are reused",
+    "AID-specific result-column/type/relation/unit mapping, separately from the old source",
+    "Experimental independence/curation/material/interference and rights/exposure limits"
+  ],
+  "requests": [
+    {
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US10023592B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html"
+    },
+    {
+      "label": "comparison_patent",
+      "url": "https://patents.google.com/patent/US10941160B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html"
+    },
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1795677/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1795677/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 4,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "HTTP or transport/size/media/schema/identity failure; no alternate resource or credentials"
+  },
+  "allowed_projection": "Review original method/lineage, result table location/identity and descriptors only. Full original source text private; table identity comparison may use hashes without computing activity classes. No dedicated activities, frequency projection, molecular aliases/maps/sequences, receptor preparation/model/score.",
+  "source_family_rule": "A patent-family link or matching method alone does not prove identical assay rows. Exact report/table reuse may establish shared publication evidence, but does not authenticate record-level molecular equivalence or transfer the old32weak count. Do not pool sources or assume independence.",
+  "discovery_before_this_plan": "Original patent cross-references already show10023592 application15/436340 is in10941160 ancestry. Exact method/table comparison remains unexecuted. Browser10023592 fetch fails4MiB content-size limit; this separate bounded8MiB public route is not an access-control bypass.",
+  "conditional_next": "Only after this review, declare source-specific endpoint/units/censoring/eligibility/capacity and rights before dedicated activities; any required publication gate must precede those requests. No automatic activity acquisition.",
+  "rights": "Original HTML, protocol metadata and table text private. Own factual projections, identifiers, hashes and case controllers may be published; individual assay/chemical material remains unshipped.",
+  "exposure": "Previous1795677 Example1 exposure and entire stopped1805333 delivery remain additive. Current discovery surfaced BDBM285380/US10023592 Example434 with truncated chemical name, a vendor Example23 IC502.75micromolar snippet and unrelated potency information, BindingDB aggregate505 records for both patents, Google patent chemical indexes and about12 initial10941160Table24 categorical rows. No alias resolution, model input or class-frequency projection. Full patent delivery may expose further chemistry/potency; no blinded/unseen-holdout claim.",
+  "resources": "Serial, one allowed CPU/backend thread, CPU quota100%,512MiB/no swap/tasks32,nice19/idle I/O where enforceable; no heavy full-suite retry.",
+  "publication_state": "Dated local original-method nomination before the four bounded requests; not a public pre-activity plan or authorization for scientific cohort/release."
+}

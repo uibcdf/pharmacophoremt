@@ -90,3 +90,84 @@ without treating raw SIDs as independent molecules. Next publish then receive
 the declared single-source activity table for necessary capacity only. Human
 construct transfer, interference, molecular/grouping/exposure admission and both
 complete studies remain conditional. No molecular fallback or PHMT score is added.
+
+## Destination capacity stop — 2026-11-06
+
+The [new #106 receiving](../receptor_study2_label_capacity_receiving.md) completes
+the published five-request AID1805333 plan with unchanged source metadata. Its
+375 strong and32 weak eligible SID upper bounds fail the required50 per class;
+91 missing relations remain unresolved rather than becoming exact potencies or
+negatives. This source stops for the declared design before a new dated nomination.
+No pooled AID, changed label, admitted cohort, receptor/model or score follows.
+Both full studies and #66's separate original-method/exposure decisions remain open.
+
+## Follow-on source provenance review — 2026-11-06
+
+#106's [lineage comparison](../receptor_study2_source_lineage_review.md) identifies
+the next ranked source as coupled publication evidence, without assigning it the
+prior class counts. The [third-source method review](../receptor_study2_third_source_method_review.md)
+receives a distinct AlphaLisa context but leaves original unit/material authority
+unqualified after a failed PDF gate. No new activity cohort or score follows;
+these source-admission observations do not complete either biological study.
+
+## Original PDF recovery and source-authority boundary — 2026-11-06
+
+#106 now records [complete PDF receiving and bounded original-page/PCT-table
+review](../receptor_study2_pdf_recovery.md), retaining earlier failures and
+temporary-tool provenance. The inspected original locations do not resolve
+the reporting-unit or experimental-material authority, and curator annotation
+remains a separate claim. No activity labels, model or completed study is added;
+the two source-clarification questions are prepared for maintainer review.
+
+## Fourth BRD4 method lead — 2026-11-06
+
+The [AID1797167 review](../receptor_study2_fourth_source_method_review.md) follows
+the fixed source order and preserves1797292 as pending. Fresh metadata match the
+original FormulaII AlphaLisa method, and that table explicitly states micromolar
+units. Experimental material and individual-row curation authority remain open,
+so no activities, cohort or scores are admitted. Source2061300 is the next
+untouched method lead under a future separate nomination. Both complete studies
+and their original preparation/evaluation obligations remain pending.
+
+## Fifth BRD4 original-method lead — 2026-11-06
+
+The [2061300 review](../receptor_study2_fifth_source_method_review.md) supports
+FP-derived inhibitor Ki and original nanomolar table units, distinct from tracer Kd.
+Its incorporated PCT supplies explicit Ki/30 min wording and the same equation;
+historical metadata hashes also support correction of our old title description.
+Material, tracer and individual-row provenance remain unqualified. No activities,
+cohort or scoring study follows; prior held sources remain separate and AID 1798835
+is the next untouched method lead under a new nomination.
+
+## Sixth BRD4 original-method lead — 2026-11-06
+
+The [1798835 review](../receptor_study2_sixth_source_method_review.md) supports
+the original BD1 K57–E168 TR-FRET Ki column in µM and separates BD2/cellular
+results. Actual material, probe Kd/calculation and row authority remain pending;
+the original BD2 boundary conflict is retained. No activities or scoring study
+follows. Earlier held sources and both full-study obligations remain intact;
+AID 1805218 is the next untouched method lead under a new nomination.
+
+## Nine BRD4 method leads reviewed; no new study admission — 2026-11-06
+
+The [remaining-source review](../receptor_study2_remaining_sources_review.md)
+completes bounded review of the fixed nine leads, preserving prior stops and
+held sources. A 134-record numeric table conflicts with 1805218's prediction/
+experimental prose; 1805772's actual material/control authority and 1804941's
+exact material/row transfer also remain pending. Source categories/intervals
+are not automatic PHMT labels. Draft source questions remain unsent; no
+activities, cohort or scoring study follows. Further unresolved-domain source
+review needs a new declaration and does not replace either full-study obligation.
+
+## Retrospective validation and public-library screening — 2026-11-06
+
+The user explicitly requests both retrospective validation and screening new
+public collections, with powerful and friendly library management. The
+[provider research](../public_library_support_research.md) proposes priorities
+and a common acquisition/preparation/screening workflow, preserving real access,
+2D/3D, molecular-provider and end-to-end qualification requirements. No provider
+implementation, new library download or screening is claimed. The historical
+ESR1ago pilot retains its executed ligand-reference scope; both new receptor
+studies and their source/method admission requirements remain incomplete.
+The [19-source metadata continuation](../receptor_study2_unresolved_domain_receiving.md)
+completes identity receiving while leaving all domain assignments unresolved.

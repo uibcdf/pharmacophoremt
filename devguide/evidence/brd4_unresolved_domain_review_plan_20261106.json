@@ -1,0 +1,675 @@
+{
+  "schema": "pharmacophoremt.brd4-unresolved-domain-review-plan@1",
+  "declared_at_utc": "2026-11-06T22:12:44.842983+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "scope": "New documentary review of exactly19unresolved census records; preserve nine prior dispositions and50eligible-groups/class design. No screening library or cohort admitted.",
+  "original_census_archive_identity": {
+    "compressed_bytes": 106253,
+    "compressed_sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+    "path": "brd4_capacity_20261106.json.gz",
+    "uncompressed_bytes": 2177379,
+    "uncompressed_sha256": "acd7e2651971b5ebb39be366fe9c07e5d4078fa81dc38446604ebb28d18cb980"
+  },
+  "original_own_screen_identity": {
+    "bytes": 124944,
+    "sha256": "3fd327dd906b5a25629c2b63285f3305efb56718f1c4b543f0956104469ba226"
+  },
+  "selection": "All19unresolved records, complete descending-raw-SID/ascending-AID order, no class/score selection.",
+  "expected_sources": [
+    {
+      "AID": 1806433,
+      "Version": 4,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_10535_1",
+      "SIDCountAll": 780,
+      "CIDCountAll": 767,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "56785502f66486b2e9ef8284731429c3372f06748a92c2be07d3026237b739cd",
+          "bytes": 148
+        },
+        "Description": {
+          "canonical_json_sha256": "c9a3b665177b8a3ea2cee0c94613c659e31ebb0f9db829bd6b78df16eda00044",
+          "bytes": 2174
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Generic HTRF protocol lacks identified BRD4/BD1 construct/peptide concentrations; source title concerns CBP/p300. A human gene-index match does not establish the measured target."
+    },
+    {
+      "AID": 1802539,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_7818_1",
+      "SIDCountAll": 348,
+      "CIDCountAll": 346,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "7a3cb5cd863b63e8f34b55c97fe3e5a498a74d4ace7a6e06487bc22fb95c9823",
+          "bytes": 89
+        },
+        "Description": {
+          "canonical_json_sha256": "630f01f4f92c9fc413b4ca09b49a0ce2393a0f2fc4fa3998d488c2f20d9a7ae6",
+          "bytes": 1509
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Protocol covers human BD1 and BD2 together. AID-to-result-domain assignment unknown; preserve source BD2 boundary inconsistency without correction."
+    },
+    {
+      "AID": 1795976,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_888_1",
+      "SIDCountAll": 326,
+      "CIDCountAll": 326,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "c192a4e4288bf8a314fa9b34910d3b186667768358e905f363cd2578d8969848",
+          "bytes": 89
+        },
+        "Description": {
+          "canonical_json_sha256": "a4785e4a3c7ab829e4f77eb98177c406a1356ea274d0b14763f000f55c0e1427",
+          "bytes": 1239
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Protocol covers isolated BD1/BD2 and tandem constructs together; result-column assignment and species unqualified."
+    },
+    {
+      "AID": 1796879,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_1573_1",
+      "SIDCountAll": 292,
+      "CIDCountAll": 292,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "8d64d9fd1259bda010c85825895f50cbfde9f22be7bc4e3729c60f124a579e7c",
+          "bytes": 143
+        },
+        "Description": {
+          "canonical_json_sha256": "a4226ee306318f02252a6988ea917a63b7dcb256e5f87140b4ef7f59ff1cfb39",
+          "bytes": 2022
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Protocol covers isolated BD1/BD2 and tandem constructs together; result-column assignment and species unqualified."
+    },
+    {
+      "AID": 1804070,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_8868_1",
+      "SIDCountAll": 292,
+      "CIDCountAll": 292,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "1e50f9894fc86e692a2e350c319c8fa85c71b2f00c24fd7735a2e0b4875bf525",
+          "bytes": 100
+        },
+        "Description": {
+          "canonical_json_sha256": "28265d6adbdd4664fa8c3ca05bd1f2cdfa0a5f98b1d7a364317dcc9e104854ac",
+          "bytes": 1183
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Protocol includes human BRD2/3 BD1 and BRD4 BD1 plus tandem BRD4; AID-specific construct/result assignment unknown."
+    },
+    {
+      "AID": 1796597,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_1365_1",
+      "SIDCountAll": 277,
+      "CIDCountAll": 276,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "0beeb87d7b7fd3a62c05a2af4c00109c3a1396762915292039c6f113fbb09354",
+          "bytes": 100
+        },
+        "Description": {
+          "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+          "bytes": 1018
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct."
+    },
+    {
+      "AID": 1796598,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_1365_2",
+      "SIDCountAll": 277,
+      "CIDCountAll": 276,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "0beeb87d7b7fd3a62c05a2af4c00109c3a1396762915292039c6f113fbb09354",
+          "bytes": 100
+        },
+        "Description": {
+          "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+          "bytes": 1018
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct."
+    },
+    {
+      "AID": 1919020,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_10944_1",
+      "SIDCountAll": 275,
+      "CIDCountAll": 275,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "bd88681f4d584e80ebb1294cf188800c65d9bea4b7701f730cb3a9f44ba4a175",
+          "bytes": 106
+        },
+        "Description": {
+          "canonical_json_sha256": "71d64c18c866f5d0a5b26a8ef38189bdccdbca7a0a28b48cc088cfd68b3bfba1",
+          "bytes": 1194
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Table11 shared BD1/BD2 AlphaScreen; need domain-specific data/construct assignment."
+    },
+    {
+      "AID": 1919021,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_10944_2",
+      "SIDCountAll": 275,
+      "CIDCountAll": 275,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "bd88681f4d584e80ebb1294cf188800c65d9bea4b7701f730cb3a9f44ba4a175",
+          "bytes": 106
+        },
+        "Description": {
+          "canonical_json_sha256": "3a12a95d2511e26b9f63da332dedfa6db7af47ef77209069a032904461289d3d",
+          "bytes": 1207
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Table12 shared BD1/BD2 AlphaScreen uses a different buffer/protein regime from Table11; do not merge either record or transfer conditions."
+    },
+    {
+      "AID": 1803893,
+      "Version": 4,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_8745_1",
+      "SIDCountAll": 273,
+      "CIDCountAll": 268,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "4260eeab427d6e7fdaba57a9fa131e8def3271c006301903f6c2b01c8d663aab",
+          "bytes": 101
+        },
+        "Description": {
+          "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+          "bytes": 1018
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct."
+    },
+    {
+      "AID": 1805812,
+      "Version": 4,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_10089_1",
+      "SIDCountAll": 270,
+      "CIDCountAll": 266,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "273a2ff9e729dbe2a5e012b3f99e48076cb221af847df0e4295ddfc7ccab6465",
+          "bytes": 101
+        },
+        "Description": {
+          "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+          "bytes": 1018
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct."
+    },
+    {
+      "AID": 1797231,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_1842_1",
+      "SIDCountAll": 269,
+      "CIDCountAll": 265,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "e9b418ac35fa8a63f09c41fcda96e072b22279659baf607831c0084f74f42ac6",
+          "bytes": 100
+        },
+        "Description": {
+          "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+          "bytes": 1018
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct."
+    },
+    {
+      "AID": 1806410,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_10518_1",
+      "SIDCountAll": 229,
+      "CIDCountAll": 228,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "303e78d95d27261891908d5bd5a7d1cb091b49a65b288f7d99426d1d7d319544",
+          "bytes": 138
+        },
+        "Description": {
+          "canonical_json_sha256": "d67e51a8b26823927e808290a673f0854bb9d6d82e631e63ed0bb54141a25b42",
+          "bytes": 1119
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Generic enzyme/substrate AlphaLisa steps do not identify BRD4 domain, construct or reagent definitions; dual BRD4/JAK2 title is insufficient."
+    },
+    {
+      "AID": 1803958,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_8792_2",
+      "SIDCountAll": 227,
+      "CIDCountAll": 227,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "32ebb0a88736b006973ffe275e3783619e8a96abe6c34c668be8cd51e7c24e59",
+          "bytes": 104
+        },
+        "Description": {
+          "canonical_json_sha256": "115d1248d083447df7de65a4af268c0050f6d5c16b723d62c5b8fda85b28079d",
+          "bytes": 1195
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "A2 protocol includes BD1/BD2, different buffer/protein regime; original domain-to-column assignment remains unresolved."
+    },
+    {
+      "AID": 1919427,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_11238_1",
+      "SIDCountAll": 156,
+      "CIDCountAll": 156,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "f1eb87a2f5df3aa2dd875d1348618330588c9a2b6237dfcbc8679fb98315b020",
+          "bytes": 99
+        },
+        "Description": {
+          "canonical_json_sha256": "36f3c4b6145a81b927e177995afb4afa490dad4bb337d0d65ac8d8ba7397162a",
+          "bytes": 145
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Summary explicitly says experimental details are not described in the patent; AlphaScreen title alone cannot qualify construct or assay."
+    },
+    {
+      "AID": 1804373,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_9087_1",
+      "SIDCountAll": 130,
+      "CIDCountAll": 130,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "66b7a44190cfcb55c09508ab4c5e759e186c368a838a3e99830283ad71d483f2",
+          "bytes": 71
+        },
+        "Description": {
+          "canonical_json_sha256": "509c4d3e640f95fe7f95897e1891c3bfb5609d7bff78344013c135a571bd4bff",
+          "bytes": 1126
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Protocol gives both BD1 and BD2 mixtures/concentration ranges; original domain/result assignment and species unresolved."
+    },
+    {
+      "AID": 1803156,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_8249_1",
+      "SIDCountAll": 122,
+      "CIDCountAll": 119,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "f6bd73c26d7c26e2495331cf2ef3200c38f59f338f3254cf879b565425bb56f8",
+          "bytes": 159
+        },
+        "Description": {
+          "canonical_json_sha256": "884091af809650edcb1f96509d3e8f2404373feec5367dab31cf8ad3718afd10",
+          "bytes": 578
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Generic bromodomain/H4 TR-FRET description lacks exact measured domain/construct and human identity."
+    },
+    {
+      "AID": 1802467,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_7771_1",
+      "SIDCountAll": 112,
+      "CIDCountAll": 112,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "3afd6d3d139dfd6de150735b2d8ac37ee389796bfbb03b1ee232d0850fde0025",
+          "bytes": 63
+        },
+        "Description": {
+          "canonical_json_sha256": "b2e5a8e3ce766e4dd7cdc6e566bf2d725ff1e5b7225650e1379bf8b85d5c95a4",
+          "bytes": 929
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Protocol covers GST-BD1 and GST-BD2 with different concentrations; original AID-domain assignment and human construct unresolved."
+    },
+    {
+      "AID": 1798346,
+      "Version": 3,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_2709_1",
+      "SIDCountAll": 111,
+      "CIDCountAll": 111,
+      "LastDataChange": {
+        "Year": 2026,
+        "Month": 10,
+        "Day": 22
+      },
+      "field_identities": {
+        "Name": {
+          "canonical_json_sha256": "6e3bd852704eb6a9e9f825917e4d801882dfb6e6edb4a1b0bf18db781ac35b01",
+          "bytes": 142
+        },
+        "Description": {
+          "canonical_json_sha256": "c2ebf44a1836dceafcad710db6d766af501a530083664afd74aa4eb1e22c806b",
+          "bytes": 1184
+        },
+        "Protocol": {
+          "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+          "bytes": 4
+        },
+        "Comment": {
+          "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+          "bytes": 525
+        }
+      },
+      "reason": "Shared BD1/BD2 AlphaScreen protocol; original domain-to-column assignment and human construct unresolved."
+    }
+  ],
+  "request": {
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1806433,1802539,1795976,1796879,1804070,1796597,1796598,1919020,1919021,1803893,1805812,1797231,1806410,1803958,1919427,1804373,1803156,1802467,1798346/summary/JSON",
+    "method": "GET",
+    "maximum_bytes": 8388608,
+    "media_type": "application/json"
+  },
+  "limits": {
+    "top_level_requests": 1,
+    "timeout_seconds": 25,
+    "retries": 0,
+    "stop": "HTTP/transport/media/encoding/length/schema/identity/coverage/fieldhash failure; no alternate credentials/resources or prefix nomination."
+  },
+  "review_rules": [
+    "Require complete exact19coverage and typed expectedidentities/counts/fieldhashes before adjudication",
+    "Require explicit AID-domain-originalcolumn authority; genes,sourceIDsuffixes,sharedprotocols or curatedhumanannotations do not suffice",
+    "Keep mixed/tandem/BD2/cellular/unknown contexts distinct; preserve all source inconsistencies",
+    "Original-method requests need a separate dated nomination after complete metadata review, in frozen order; no activity/compound/structure/sequence resources, frequencies or pooling"
+  ],
+  "rights_and_exposure": "Originalmetadata/protocols/sourcepotencycontexts private; portableownfacts/controllers/identities only. Prior#66/#106exposures additive; no blind/unseenclaim.",
+  "resources": "SerialCPU19/quota100%,512MiB/no swap/tasks32/nice19/idleIO,onebackendthread whereenforced.",
+  "publication_state": "Local metadata-only plan, not publishedpre-activityplan, acceptedassay or screeninglibrary."
+}

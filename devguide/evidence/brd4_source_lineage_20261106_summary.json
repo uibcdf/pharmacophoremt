@@ -1,0 +1,470 @@
+{
+  "schema": "pharmacophoremt.brd4-source-lineage-summary@1",
+  "recorded_at_utc": "2026-11-06T18:55:36.008794+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "source_head_before": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+  "producer_overlay": "Dated local method/PDF plans, case controllers, review pages and reporting updates. Prior capacity work remains uncommitted and preserved; no runtime/provider/dependency/workflow modification.",
+  "coupled_source": {
+    "schema": "pharmacophoremt.brd4-coupled-source-disposition@1",
+    "recorded_at_utc": "2026-11-06T18:40:48.443673+00:00",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "issues": [
+      103,
+      106
+    ],
+    "source": {
+      "aid": 1795677,
+      "source_id": "BindingDB_644_1",
+      "version": 2,
+      "revision": 2,
+      "raw_sids": 494,
+      "raw_cids": 490,
+      "patent": "US10023592B2"
+    },
+    "comparison": {
+      "aid": 1805333,
+      "source_id": "BindingDB_9746_1",
+      "patent": "US10941160B2",
+      "prior_capacity_stop_retained": true
+    },
+    "measured_document_facts": {
+      "lineage": "US10941160B2 descends through15/990576 from15/436340, the US10023592B2 application; both originals name provisional61/893133(2013-10-18) and61/931467(2014-01-24).",
+      "binding_method_sha256": "0381d90b235ad02de458c1e74ea345862c2041d2d0273a406c954428628a016a",
+      "binding_method_bytes_each": 1377,
+      "binding_method_exact_text_equal": true,
+      "table24_header_and_ABC_legend_exact_text_equal": true,
+      "document_ordinals_and_four_literal_result_columns": {
+        "source_document_records": {
+          "nominated": 514,
+          "comparison": 514
+        },
+        "literal_ordinal_result_columns_equal": true,
+        "hashes": {
+          "nominated": "8c033af4c865764f7ddfe9703ad3cdfbd75217c2d699b4fd20ea382197e54f51",
+          "comparison": "8c033af4c865764f7ddfe9703ad3cdfbd75217c2d699b4fd20ea382197e54f51"
+        },
+        "scope": "Document ordinals plus four literal report columns only; chemical-name strings not interpreted, no CID/SID joins, no activity-class frequencies or source eligibility projection"
+      },
+      "table24_whitespace_normalized_text_equal": false,
+      "name_column_molecular_interpretation": false
+    },
+    "disposition": "coupled_original_report_not_new_independent_evidence",
+    "reason": "Direct source lineage plus exact binding method and514 matching document ordinals/four literal result columns establish shared reported evidence. This does not authenticate duplicated molecules or identical curated PubChem rows.",
+    "unresolved": [
+      "Curation/mapping explanation of differing PubChem SID/CID totals",
+      "MolSysMT-owned record-level chemical/state/series equivalence if a later study needs it",
+      "Exact construct transfer, interference and source-curation/license version"
+    ],
+    "old_class_counts_transferred": false,
+    "new_activity_requests": 0,
+    "class_frequency_projection": false,
+    "sources_pooled": false,
+    "next_review": {
+      "aid": 1797292,
+      "patent": "US10206931B2",
+      "selection": "Next remaining lead in original descending-raw-SID/ascending-AID order; new dated method nomination required, no class count or score selects it."
+    },
+    "exposure": "Full original HTML includes chemistry and categorical activities. Review read existing Example1 potency, headers/legends, and several table ordinal/category/name-fragment difference hunks. Vendor/BindingDB snippets and prior ledgers retained. No chemical alias resolution or blinded/unseen claim.",
+    "inspection_failures_preserved": [
+      "Read-only cell inspection initially failed SyntaxError before execution; corrected without source request",
+      "Initial strict table comparison rejected nine two-cell examples and five legend rows; observed layout was explicitly reviewed before comparing. No capacity projection or row eligibility filtering ran."
+    ],
+    "resources_receiving": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-next-method-20261106-359wgmjx.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "34942976",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "private_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-next-method-20261106-359wgmjx",
+    "review_by": "2026-11-20 or relevant change"
+  },
+  "third_source": {
+    "schema": "pharmacophoremt.brd4-third-method-review@1",
+    "recorded_at_utc": "2026-11-06T18:53:21.919055+00:00",
+    "source_aid": 1797292,
+    "source_id": "BindingDB_1877_2",
+    "source_version": 2,
+    "source_revision": 2,
+    "raw_sids": 300,
+    "raw_cids": 300,
+    "all_four_method_metadata_requests_complete": true,
+    "reported_endpoint": "BRD4 BD1(42–168) His/Flag acetyl-H4 peptide AlphaLisa competition IC50, distinct from CBP HTRF and MYC response",
+    "comparison_contexts": "US9763922B2 has earlier FormulaIExample387 BRD4TR-FRET and later FormulaII BRD4AlphaLisa; exact method reuse does not prove same experiment/table",
+    "alphalisa_method_sha256": "00ca010716da5bf97ab17b3a1e0adb0cca9a362948f949e067ceb4797bd507e9",
+    "alphalisa_method_bytes_each": 878,
+    "alphalisa_method_exact_text_equal": true,
+    "nomination_table_normalized_bytes": 9080,
+    "comparison_formulaII_table_normalized_bytes": 8129,
+    "full_tables_identical": false,
+    "source_lineage": "Different explicit PCT application chains; neither common protocol nor metadata establishes direct family equality/record independence.",
+    "unit_review": {
+      "pubchem_tid3": "Explicit micromolar standardized value",
+      "original_nominated_table": "Reviewed HTML header and prose do not explicitly state IC50 result unit; PDF review not accepted",
+      "comparison_table": "FormulaII comparison table explicitly states micromolar, not transferred to nominee"
+    },
+    "material_review": "No explicit species/accession found in reviewed nomineeBRD4HTMLmethod. Literal incomplete purification wording retained. Construct interpretation/source-to-assay mapping/interference remain unresolved.",
+    "pdf_attempt": {
+      "schema": "pharmacophoremt.brd4-third-source-pdf-review@1",
+      "plan_sha256": "b7b708602e5618562be5a3fa24ed176e425ca08d2a1916ebdf160264a9e63b32",
+      "completed": false,
+      "pdf_response": {
+        "status": 200,
+        "content_type": "application/pdf",
+        "url": "https://patentimages.storage.googleapis.com/e4/92/81/fed143e38d0c1c/US10206931.pdf"
+      },
+      "failure": {
+        "type": "ValueError",
+        "message": "Original PDF size/type gate failed"
+      },
+      "recorded_at_utc": "2026-11-06T18:48:25.486312+00:00",
+      "resources_before": {
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "memory.peak": "14221312",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+      },
+      "resources_after": {
+        "affinity": [
+          19
+        ],
+        "nice": 19,
+        "cpu.max": "100000 100000",
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "memory.peak": "28811264",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+      }
+    },
+    "disposition": "method_received_unit_and_material_unqualified",
+    "dedicated_activity_requests": 0,
+    "class_frequency_projection": false,
+    "cohort_admitted": false,
+    "molecular_operations_models_scores_from_this_source": 0,
+    "next": "Obtain qualified original table-unit and experimental-species/material authority, with original PDF gate failure retained, before any source-specific activity-capacity declaration. No unit/species/threshold substitution.",
+    "raw_source_redistribution_authorized": false,
+    "exposure": "Full HTML/source tables potentially expose chemistry and activities. Reviewed method/header windows include nearby CBP and MYC protocols and BRD4 categorical/value context. No chemical alias resolution or class frequencies. Previous source and vendor exposures remain additive; no blind/unseen claim.",
+    "resources_receiving": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-third-method-20261106-1rkhq1f2.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "30769152",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "review_by": "2026-11-20 or relevant change"
+  },
+  "completed_method_requests": 8,
+  "method_http_statuses": [
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200,
+    200
+  ],
+  "private_original_body_identities": [
+    {
+      "case": "coupled_source",
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US10023592B2/en",
+      "status": 200,
+      "file": "01_nominated_patent.private.html",
+      "bytes": 4945010,
+      "sha256": "ffcde7c6487bc0dd10aee38f56c6d411edf39934134242f4da44e331919353f4",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "coupled_source",
+      "label": "comparison_patent",
+      "url": "https://patents.google.com/patent/US10941160B2/en",
+      "status": 200,
+      "file": "02_comparison_patent.private.html",
+      "bytes": 4828620,
+      "sha256": "109493c079f9a23038ad750881da68fa31a6ef6d4ca44b862e79fe2f9632c9fe",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "coupled_source",
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1795677/description/JSON",
+      "status": 200,
+      "file": "03_nominated_description.private.json",
+      "bytes": 4819,
+      "sha256": "c25ee8aeda57c0a04f84f44abb044d414a6534379e32bedd3bb1e9a93e2feff1",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "coupled_source",
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1795677/summary/JSON",
+      "status": 200,
+      "file": "04_nominated_summary.private.json",
+      "bytes": 2794,
+      "sha256": "a013c27abd84af06daf481371db44dacf7dc7c18b198ca28b2f7d392ce5e6b1d",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "third_source",
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US10206931B2/en",
+      "status": 200,
+      "file": "01_nominated_patent.private.html",
+      "bytes": 2900755,
+      "sha256": "b2df29a8ea087ad0f15447f93b957c87b3b2a9dfed3aa6bea1f7c35d7f671d0a",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "third_source",
+      "label": "comparison_patent",
+      "url": "https://patents.google.com/patent/US9763922B2/en",
+      "status": 200,
+      "file": "02_comparison_patent.private.html",
+      "bytes": 5261582,
+      "sha256": "3808b135c4c33cfe5a93da54dd79a23261494af57a662fa82659da861a4e03ea",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "third_source",
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797292/description/JSON",
+      "status": 200,
+      "file": "03_nominated_description.private.json",
+      "bytes": 4599,
+      "sha256": "2dbd03b55d18ff87739362ab11e92e1cf03b2f5ef52321114d27a1cce8264f6d",
+      "raw_body_redistribution_authorized": false
+    },
+    {
+      "case": "third_source",
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797292/summary/JSON",
+      "status": 200,
+      "file": "04_nominated_summary.private.json",
+      "bytes": 2558,
+      "sha256": "e1bc95e274b52ad2459392630184b3998f9585efc797b9b3a4b326f391fec1b5",
+      "raw_body_redistribution_authorized": false
+    }
+  ],
+  "pdf_observation": {
+    "http_status": 200,
+    "content_type": "application/pdf",
+    "gate_passed": false,
+    "exact_size_vs_header_failure_branch_known": false,
+    "prefix_bytes_and_hash_retained": false,
+    "visual_page_accepted": false,
+    "renderer_acquired_or_installed": false,
+    "disposition": "Retain original failed gate. Original table unit remains unqualified; a future bounded recovery must record byte count/hash before gates and must not silently replace this attempt."
+  },
+  "browser_observations": [
+    "US10023592B2 original HTML browser fetch exceeds4MiB content limit; independent bounded8MiB source receiving succeeds.",
+    "US10206931 original PDF not accessible through browser tool; separate declared bounded original-PDF route returns200 then fails its combined size/header gate.",
+    "Search/navigation exposes chemical indexes, source-example/vendor potency snippets and several categorical report-cell difference hunks; none supplies class labels or molecular aliases."
+  ],
+  "originals_private": true,
+  "raw_original_bodies_rows_or_images_in_archive": false,
+  "coupled_literal_comparison_replayed_equal": true,
+  "new_dedicated_activity_requests": 0,
+  "new_class_frequency_projections": 0,
+  "molecular_or_sequence_correspondence_performed": false,
+  "study_cohort_receptor_model_or_score_created": false,
+  "source_plan_files": {
+    "devguide/evidence/brd4_next_source_method_plan_20261106.json": "98a973f9dccaeb777f75ad5be4b4f44057bcb47c6f713ad6eb1d7ae2ab7a8a89",
+    "devguide/evidence/brd4_third_source_method_plan_20261106.json": "3530f088c3a783316753c5c0569d56fe94e1093cfdb63ade4ee3b9ee035d2d64",
+    "devguide/evidence/brd4_third_source_pdf_plan_20261106.json": "b7b708602e5618562be5a3fa24ed176e425ca08d2a1916ebdf160264a9e63b32"
+  },
+  "execution_interpreters": {
+    "method_http_and_failed_pdf_receiving": "Shared Conda Python3.14.10; exact command/controller retained",
+    "offline_document_inspection_replay_and_archiving": {
+      "version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]",
+      "executable": "/usr/bin/python3"
+    }
+  },
+  "resources": {
+    "coupled_method_receiving": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-next-method-20261106-359wgmjx.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "34942976",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "third_method_receiving": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-third-method-20261106-1rkhq1f2.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "30769152",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "failed_pdf_receiving": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "28811264",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "offline_inspection": "Serial oneCPU/nice19/idleIO;512MiB address-space cap applied to original prose extraction. Offline short standard-library phases do not claim cgroup no-swap enforcement or a performance benchmark."
+  },
+  "retained_capsules": [
+    "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-next-method-20261106-359wgmjx",
+    "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-third-method-20261106-1rkhq1f2"
+  ],
+  "review_by": "2026-11-20 or relevant change",
+  "prior_outcomes": "AID1805333 declared capacity stop and original hashes retained.32weak count is not assigned to1795677; no source pooling. Earlier #66/#106 exposure/material/rights decisions remain additive.",
+  "next": "Resolve1797292 original table-unit and species/material authority plus source-to-assay mapping before any activity declaration. Preserve failed PDF evidence and improve byte custody before a separately declared recovery. Both full studies remain incomplete.",
+  "scope": "Original-source provenance/method review only; neither independent molecular groups, accepted activity data, completed biology nor full source/installed/public qualification.",
+  "full_evidence": {
+    "path": "brd4_source_lineage_20261106.json.gz",
+    "compressed_sha256": "1b8f87aaf96ff56a352e3917fefa5104afd853f90b8b182b25c19c3795603902",
+    "compressed_bytes": 29739,
+    "uncompressed_sha256": "2f5c5e444c96c9525b021fd44517399253ed16d6662a9d4e9315dd716b02423e",
+    "uncompressed_bytes": 116810
+  },
+  "post_archive_validation": {
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "devtools.evidence_archive",
+          "devguide/evidence/brd4_source_lineage_20261106_summary.json"
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0
+      }
+    ],
+    "reporting_tests_passed": 3,
+    "archive_tests_passed": 18,
+    "ruff_formatted_files": 378,
+    "integrity_and_links": {
+      "own_archived_files_verified": 24,
+      "source_plan_hashes_verified": 3,
+      "changed_markdown_pages_checked": 10,
+      "local_links_checked": 144,
+      "link_errors": [],
+      "private_original_bodies_excluded": true,
+      "new_activity_requests": 0
+    },
+    "original_archive_preserved": true,
+    "prior_native_and_classifier_checks": "Existing23selected native/software and8classifier controls were not repeated: current work changes only method/documentary evidence/plans and owning reports, preserving their earlier scope.",
+    "recovery_owner": "LMMV/dprada,pharmacophoremt#106; resolve original unit/material and establish corrected bounded PDF byte-custody before a separately declared recovery.",
+    "resource_closeout": "No background jobs remain. Eight raw original bodies and private derivative prose/tables retained in the two owned capsules for reproducibility,review2026-11-20 or relevant change. PDF/renderer acceptance is false; no renderer wheel/environment mutation occurred."
+  }
+}

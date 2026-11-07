@@ -1,0 +1,889 @@
+{
+  "schema": "pharmacophoremt.brd4-remaining-sources-summary@1",
+  "recorded_at_utc": "2026-11-06T22:01:26.033526+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "source_head_before": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+  "producer_overlay": "Separate dated seventh/eighth/ninth nominations, receiving controllers, immutable source identities and own documentary reviews retained by hash. Sixth-source and prior work preserved; no runtime/provider/dependency/workflow change.",
+  "source_plan_files": {
+    "devguide/evidence/brd4_seventh_source_method_plan_20261106.json": "08e0d0aaf4c82fc6d618af23665dc52d9efcaf5ece93d3e67cf0f664d7479495",
+    "devguide/evidence/brd4_eighth_source_method_plan_20261106.json": "b6fd6b80f6e272b000e19db32e231792d917921abdf275f27fd7bbc824916048",
+    "devguide/evidence/brd4_ninth_source_method_plan_20261106.json": "a0ee0c368ad56635ee41179e93e37e2bfa807006f90673e8d0b927863f47ed13"
+  },
+  "sources": [
+    {
+      "ordinal": "seventh",
+      "private_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-seventh-method-20261106-9gvgmklm",
+      "receiving": {
+        "schema": "pharmacophoremt.brd4-seventh-method-receiving@1",
+        "recorded_at_utc": "2026-11-06T21:47:21.653632+00:00",
+        "plan_sha256": "08e0d0aaf4c82fc6d618af23665dc52d9efcaf5ece93d3e67cf0f664d7479495",
+        "requests_attempted": 3,
+        "receiving_complete": true,
+        "failure": null,
+        "requests": [
+          {
+            "index": 1,
+            "label": "nominated_description",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805218/description/JSON",
+            "requested_at_utc": "2026-11-06T21:47:18.705070+00:00",
+            "status": 200,
+            "content_type": "application/json",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805218/description/JSON",
+            "metadata_projection": {
+              "aid": {
+                "id": 1805218,
+                "version": 3
+              },
+              "revision": 2,
+              "descriptor_count": 6
+            },
+            "semantic_status": "metadata_matches_nomination",
+            "file": "01_nominated_description.private.json",
+            "bytes": 4137,
+            "sha256": "bd19f93c6b3f90824eb70662500719a76408cce62c8a2513315bc1729132e2d7",
+            "completed_at_utc": "2026-11-06T21:47:19.322320+00:00"
+          },
+          {
+            "index": 2,
+            "label": "nominated_summary",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805218/summary/JSON",
+            "requested_at_utc": "2026-11-06T21:47:19.822860+00:00",
+            "status": 200,
+            "content_type": "application/json",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805218/summary/JSON",
+            "metadata_projection": {
+              "AID": 1805218,
+              "Version": 3,
+              "Revision": 2,
+              "SourceName": "BindingDB",
+              "SourceID": "BindingDB_9669_1",
+              "SIDCountAll": 124,
+              "CIDCountAll": 124,
+              "LastDataChange": {
+                "Year": 2026,
+                "Month": 10,
+                "Day": 22
+              }
+            },
+            "semantic_status": "metadata_matches_nomination",
+            "file": "02_nominated_summary.private.json",
+            "bytes": 2562,
+            "sha256": "5570a78cd8fd0f950d1a3f459e54999106f6f0477235a49294839420eb58cd4c",
+            "completed_at_utc": "2026-11-06T21:47:20.529074+00:00"
+          },
+          {
+            "index": 3,
+            "label": "nominated_patent",
+            "url": "https://patents.google.com/patent/US10899769B2/en",
+            "requested_at_utc": "2026-11-06T21:47:21.029595+00:00",
+            "status": 200,
+            "content_type": "text/html",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://patents.google.com/patent/US10899769B2/en",
+            "semantic_status": "received_original_method_source",
+            "file": "03_nominated_patent.private.html",
+            "bytes": 1678407,
+            "sha256": "51c18dc0cf6b6b158f69e9783eea54f514b05e38c82d014548e63d435dc43770",
+            "completed_at_utc": "2026-11-06T21:47:21.653258+00:00"
+          }
+        ],
+        "resources_before": {
+          "affinity": [
+            19
+          ],
+          "nice": 19,
+          "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-seventh-method-20261106-9gvgmklm.scope",
+          "cpu.max": "100000 100000",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "memory.peak": "11243520",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+        },
+        "resources_after": {
+          "affinity": [
+            19
+          ],
+          "nice": 19,
+          "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-seventh-method-20261106-9gvgmklm.scope",
+          "cpu.max": "100000 100000",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "memory.peak": "16896000",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+        },
+        "scope": "Documentary method/domain/material/endpoint/unit/calculation review only. No activities, class frequencies, molecular/sequence operations, labels, cohort, receptor or score."
+      },
+      "method_review": {
+        "schema": "pharmacophoremt.brd4-final-leads-method-review@1",
+        "recorded_at_utc": "2026-11-06T21:50:06.394866+00:00",
+        "nomination": {
+          "aid": 1805218,
+          "version": 3,
+          "revision": 2,
+          "source_name": "BindingDB",
+          "source_id": "BindingDB_9669_1",
+          "raw_sids": 124,
+          "raw_cids": 124,
+          "patent": "US10899769B2",
+          "selection": "Next fixed descending-raw-SID/ascending-AID lead; no class balance or PHMT score selects it."
+        },
+        "capacity_archive_identity": {
+          "compressed_bytes": 106253,
+          "compressed_sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+          "path": "brd4_capacity_20261106.json.gz",
+          "uncompressed_bytes": 2177379,
+          "uncompressed_sha256": "acd7e2651971b5ebb39be366fe9c07e5d4078fa81dc38446604ebb28d18cb980"
+        },
+        "fixed_lead_order_verified": [
+          1805333,
+          1795677,
+          1797292,
+          1797167,
+          2061300,
+          1798835,
+          1805218,
+          1805772,
+          1804941
+        ],
+        "fresh_Name_Description_canonical_identities_equal_historical": {
+          "Name": {
+            "canonical_json_sha256": "4a758a57139889f6fc3f70d7b11d85977436cb16aea7c3010432c5f08a36c716",
+            "bytes": 120
+          },
+          "Description": {
+            "canonical_json_sha256": "9296bcb3f9e78e8a5d6048a09b9120d32e1c20e7fefd58e0dc05e364c8488b7d",
+            "bytes": 872
+          }
+        },
+        "prose_identity": {
+          "sha256": "42121e531444f293059d291964adf07dfab3ef992774c59ea9dbc59931448385",
+          "bytes": 608949
+        },
+        "disposition": "held_prediction_vs_numeric_table_conflict_material_and_control_authority_pending",
+        "reported_method": "GST-BRD4(49–170) from BPSBioscience, AlphaScreen H4acetylpeptide competition; variable-slope IC50, Table2AvgBRD4IC50(nM)",
+        "source_inconsistencies": [
+          "Original introduction describesExamples1–3assayed and othersnotmadeand/ortested,predicted; Table2 continues withnumericvalues beyondExample3. No three-example capacity bound, no assumption all124SIDs are measured.",
+          "OriginalCBPbufferandmetadata retain100nMNaCl; BRD4 followsCBPprocedure. CBPnegativecontrol is not silently replaced withBRD4."
+        ],
+        "material_authority": "GSTtag/vendor/domain explicitly reported; actualspecies/accession and source-specific protein catalogue identity remain unresolved",
+        "source_row_provenance_authenticated": false,
+        "independent_experimental_capacity": "Unknown; numeric-table rowcounts do not resolve experimental-versus-predicted conflict or independent-group eligibility",
+        "next_fixed_order_aid": 1805772,
+        "exposure": "Original source/tables and nearby synthetic fragments/firstresultrows viewed; no chemicalaliases/structures/sequences orclassfrequencies. Allprior#66/#106exposure additive.",
+        "new_dedicated_activity_requests": 0,
+        "class_frequency_projection": false,
+        "cohort_receptor_model_or_score_admitted": false
+      },
+      "primary_review": {
+        "web_tool_calls": 2,
+        "queries": [
+          {
+            "q": "\"US10899769\" \"predicted\" \"tested\"",
+            "domain": "patents.google.com"
+          },
+          {
+            "q": "\"US10899769\" \"9669\"",
+            "domain": "bindingdb.org"
+          },
+          {
+            "q": "\"US10899769\" \"BRD4\" \"Human\"",
+            "domain": "bindingdb.org"
+          }
+        ],
+        "failed_open": {
+          "url": "https://www.bindingdb.org/rwd/jsp/dbsearch/assay.jsp?assayid=1&entryid=9669",
+          "tool_failure": "Cache miss",
+          "accepted_body": false
+        },
+        "observations": "Indexedentry9669humanBRD4(49–170)annotation does not resolve predicted-versus-experimental conflict or authenticate material. No source-wide3recordcapacity or blanketinvalidity inference.",
+        "schema": "pharmacophoremt.brd4-last-leads-primary-review@1",
+        "private_exposure_identity": {
+          "file": "exposure_review.private.json",
+          "bytes": 317,
+          "sha256": "f4b72e70cf4113b28c4faca4ae3f71c94598361b802e03596b5b5cc3a0c94e0e"
+        },
+        "new_activity_requests": 0
+      },
+      "Table2_literal_row_observation": {
+        "scope": "Literal Table2 document row accounting only, no chemistry, activity-class or measured-status inference",
+        "source_table_index_zero_based": 6,
+        "all_tr_rows": 135,
+        "nonempty_three_field_rows": 134,
+        "blank_rows": 1,
+        "layout": "Each nonblank source row has4cells, firstcell empty layout; all3remaining datafields nonempty. No result-value filtering.",
+        "distinct_literal_example_labels": 134,
+        "label_sequence_sha256": "65234d4cd181c64a1a110e3d89d80f70135db5b2df7efe828dd484f434b37496",
+        "source_intro_conflict": "Examples1–3 versus othernotmade/ortested/predicted prose conflicts with numeric table extending beyond3",
+        "three_record_capacity_ceiling_established": false,
+        "all_PubChem_records_invalid_established": false,
+        "experimental_vs_predicted_status_resolved": false
+      },
+      "row_replay_correction": {
+        "scope": "Documentary row-layout replay correction only",
+        "initial_replay": "AssertionError:135trrows,134nonblank rows had4cells, not3; everyfirstcell was empty layout",
+        "before_controller": {
+          "file": "count_report_rows_before_layout_fix.py",
+          "sha256": "915ac9804688272fd6fa8b79ceb199c920330716238174625ebae78129070dee"
+        },
+        "after_controller": {
+          "file": "count_report_rows.py",
+          "sha256": "8fadc229cf8cde86652a87c33fd91ddeb90ea36ab8e9ad5fa0fe5fe6a699146b"
+        },
+        "correction": "Assert leadingemptycell and3nonemptydatafields for everyrecord before deriving source labels; preserve all135rows and original inputs. No scientific class/eligibility filtering or new source request."
+      }
+    },
+    {
+      "ordinal": "eighth",
+      "private_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-eighth-method-20261106-h7490zln",
+      "receiving": {
+        "schema": "pharmacophoremt.brd4-eighth-method-receiving@1",
+        "recorded_at_utc": "2026-11-06T21:52:16.750630+00:00",
+        "plan_sha256": "b6fd6b80f6e272b000e19db32e231792d917921abdf275f27fd7bbc824916048",
+        "requests_attempted": 3,
+        "receiving_complete": true,
+        "failure": null,
+        "requests": [
+          {
+            "index": 1,
+            "label": "nominated_description",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805772/description/JSON",
+            "requested_at_utc": "2026-11-06T21:52:14.141320+00:00",
+            "status": 200,
+            "content_type": "application/json",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805772/description/JSON",
+            "metadata_projection": {
+              "aid": {
+                "id": 1805772,
+                "version": 3
+              },
+              "revision": 2,
+              "descriptor_count": 8
+            },
+            "semantic_status": "metadata_matches_nomination",
+            "file": "01_nominated_description.private.json",
+            "bytes": 4177,
+            "sha256": "187397305fbc411f0e37cad2edb4bb3f00e1644d61fafa75aa413fcd6e507369",
+            "completed_at_utc": "2026-11-06T21:52:14.524071+00:00"
+          },
+          {
+            "index": 2,
+            "label": "nominated_summary",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805772/summary/JSON",
+            "requested_at_utc": "2026-11-06T21:52:15.024513+00:00",
+            "status": 200,
+            "content_type": "application/json",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805772/summary/JSON",
+            "metadata_projection": {
+              "AID": 1805772,
+              "Version": 3,
+              "Revision": 2,
+              "SourceName": "BindingDB",
+              "SourceID": "BindingDB_10057_2",
+              "SIDCountAll": 122,
+              "CIDCountAll": 121,
+              "LastDataChange": {
+                "Year": 2026,
+                "Month": 10,
+                "Day": 22
+              }
+            },
+            "semantic_status": "metadata_matches_nomination",
+            "file": "02_nominated_summary.private.json",
+            "bytes": 2105,
+            "sha256": "da33d098b385a909319cba4fe117473f875541168872b9f1d8e63dd39aab3a09",
+            "completed_at_utc": "2026-11-06T21:52:15.711050+00:00"
+          },
+          {
+            "index": 3,
+            "label": "nominated_patent",
+            "url": "https://patents.google.com/patent/US11058688B2/en",
+            "requested_at_utc": "2026-11-06T21:52:16.211572+00:00",
+            "status": 200,
+            "content_type": "text/html",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://patents.google.com/patent/US11058688B2/en",
+            "semantic_status": "received_original_method_source",
+            "file": "03_nominated_patent.private.html",
+            "bytes": 1410744,
+            "sha256": "812ca4cc90e1bf8f3de43f7f8f972312945f35c3cf7f9157893a26a521ef332f",
+            "completed_at_utc": "2026-11-06T21:52:16.750187+00:00"
+          }
+        ],
+        "resources_before": {
+          "affinity": [
+            19
+          ],
+          "nice": 19,
+          "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-eighth-method-20261106.scope",
+          "cpu.max": "100000 100000",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "memory.peak": "11227136",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+        },
+        "resources_after": {
+          "affinity": [
+            19
+          ],
+          "nice": 19,
+          "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-eighth-method-20261106.scope",
+          "cpu.max": "100000 100000",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "memory.peak": "15941632",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+        },
+        "scope": "Documentary method/domain/endpoint/unit/material/source lineage only. No dedicated activities, activity-class projection, chemical identity/alias/structure/sequence/state/series operations, cohort, receptor, pharmacophore or score."
+      },
+      "method_review": {
+        "schema": "pharmacophoremt.brd4-final-leads-method-review@1",
+        "recorded_at_utc": "2026-11-06T21:53:21.725525+00:00",
+        "nomination": {
+          "aid": 1805772,
+          "version": 3,
+          "revision": 2,
+          "source_name": "BindingDB",
+          "source_id": "BindingDB_10057_2",
+          "raw_sids": 122,
+          "raw_cids": 121,
+          "patent": "US11058688B2",
+          "selection": "Next fixed descending-raw-SID/ascending-AID lead; no class balance or PHMTscore."
+        },
+        "capacity_archive_identity": {
+          "compressed_bytes": 106253,
+          "compressed_sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+          "path": "brd4_capacity_20261106.json.gz",
+          "uncompressed_bytes": 2177379,
+          "uncompressed_sha256": "acd7e2651971b5ebb39be366fe9c07e5d4078fa81dc38446604ebb28d18cb980"
+        },
+        "fixed_lead_order_verified": [
+          1805333,
+          1795677,
+          1797292,
+          1797167,
+          2061300,
+          1798835,
+          1805218,
+          1805772,
+          1804941
+        ],
+        "fresh_Name_Description_canonical_identities_equal_historical": {
+          "Name": {
+            "canonical_json_sha256": "125e524818ac50888a8d27969944bcc7f50039e9c12179de28be819d0d27feac",
+            "bytes": 123
+          },
+          "Description": {
+            "canonical_json_sha256": "24d4a7dce94f20a2725f638d9aa601af45fb904ef66ce300e799ac8982ff8bbd",
+            "bytes": 409
+          }
+        },
+        "prose_identity": {
+          "sha256": "61c262af60f9b644ff7abbe839d8d5325072c1ca64a8cdfccd70d67ae35b7f91",
+          "bytes": 519866
+        },
+        "disposition": "held_material_and_incorporated_control_buffer_authority_pending",
+        "reported_method": "GST-BRD4(49–170) from BPSBioscience, AlphaScreen H4acetylpeptide competition following originalCBPprocedure; variable-slope IC50, Table1AvgBRD4IC50(nM)",
+        "original_incorporated_method_received": true,
+        "source_inconsistencies": [
+          "Source buffer literally100nMNaCl and negativecontrolGST-CBP/nonacetylatedpeptide; do not replace by100mM orBRD4control.",
+          "Intro reportsExamples1–126tested and otherspredicted; do not transfer source7 three-example wording or assume individualrow mapping."
+        ],
+        "material_authority": "GSTtag/vendor/domain explicitly reported; actualspecies/accession and source-specific protein catalogue identity unresolved",
+        "source_row_provenance_authenticated": false,
+        "source_independence": "Shared method text does not establish identical experiments/chemicalseries/rows; no pooling",
+        "next_fixed_order_aid": 1804941,
+        "exposure": "Originalsource andfirsttablevalues viewed, plus prior#66/#106exposure; no labels/classfrequencies,chemicalaliases,structure/sequence interpretation or unseen claim.",
+        "new_dedicated_activity_requests": 0,
+        "class_frequency_projection": false,
+        "cohort_receptor_model_or_score_admitted": false
+      },
+      "primary_review": {
+        "web_tool_calls": 2,
+        "queries": [
+          {
+            "q": "\"BRD4\" \"49-170\" \"GST\"",
+            "domain": "bpsbioscience.com"
+          }
+        ],
+        "failed_open": {
+          "url": "https://www.bindingdb.org/rwd/jsp/dbsearch/assay.jsp?assayid=2&entryid=10057",
+          "tool_failure": "Cache miss",
+          "accepted_body": false
+        },
+        "vendor_search_observation": {
+          "product_url": "https://bpsbioscience.com/brd4-bd1-gst-tag-recombinant-31040",
+          "datasheet_url": "https://bpsbioscience.com/media/wysiwyg/31040_Lot130503-D.pdf",
+          "body_received": false,
+          "observed": "Indexedvendorproduct31040human49–170,NterminalGST,Ecoli,NM_058243",
+          "accepted_as_actual_assay_material": false,
+          "reason": "Originalpaper does not identifycatalog/lot; compatibleproduct existence does not prove actualmaterial or correct assaybuffer."
+        },
+        "schema": "pharmacophoremt.brd4-last-leads-primary-review@1",
+        "private_exposure_identity": {
+          "file": "exposure_review.private.json",
+          "bytes": 285,
+          "sha256": "725759ae25d888fa764f9c1fb704a9151e732aa9abcf32ccd2fea36d3880ee96"
+        },
+        "new_activity_requests": 0
+      }
+    },
+    {
+      "ordinal": "ninth",
+      "private_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-ninth-method-20261106-f6qs9r63",
+      "receiving": {
+        "schema": "pharmacophoremt.brd4-ninth-method-receiving@1",
+        "recorded_at_utc": "2026-11-06T21:53:53.022076+00:00",
+        "plan_sha256": "a0ee0c368ad56635ee41179e93e37e2bfa807006f90673e8d0b927863f47ed13",
+        "requests_attempted": 3,
+        "receiving_complete": true,
+        "failure": null,
+        "requests": [
+          {
+            "index": 1,
+            "label": "nominated_description",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1804941/description/JSON",
+            "requested_at_utc": "2026-11-06T21:53:50.071508+00:00",
+            "status": 200,
+            "content_type": "application/json",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1804941/description/JSON",
+            "metadata_projection": {
+              "aid": {
+                "id": 1804941,
+                "version": 3
+              },
+              "revision": 2,
+              "descriptor_count": 8
+            },
+            "semantic_status": "metadata_matches_nomination",
+            "file": "01_nominated_description.private.json",
+            "bytes": 4707,
+            "sha256": "9c764bd8b714391499b1cb38ee1d00bfa3249f5b3163ab1246e93c74cb422976",
+            "completed_at_utc": "2026-11-06T21:53:50.626058+00:00"
+          },
+          {
+            "index": 2,
+            "label": "nominated_summary",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1804941/summary/JSON",
+            "requested_at_utc": "2026-11-06T21:53:51.126581+00:00",
+            "status": 200,
+            "content_type": "application/json",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1804941/summary/JSON",
+            "metadata_projection": {
+              "AID": 1804941,
+              "Version": 3,
+              "Revision": 2,
+              "SourceName": "BindingDB",
+              "SourceID": "BindingDB_9475_1",
+              "SIDCountAll": 104,
+              "CIDCountAll": 104,
+              "LastDataChange": {
+                "Year": 2026,
+                "Month": 10,
+                "Day": 22
+              }
+            },
+            "semantic_status": "metadata_matches_nomination",
+            "file": "02_nominated_summary.private.json",
+            "bytes": 2678,
+            "sha256": "033c6ad5334ffadad48aa5e6795a1c30365c5325d1427834749d0af0c9f5bacb",
+            "completed_at_utc": "2026-11-06T21:53:51.805848+00:00"
+          },
+          {
+            "index": 3,
+            "label": "nominated_patent",
+            "url": "https://patents.google.com/patent/US10807982B2/en",
+            "requested_at_utc": "2026-11-06T21:53:52.306370+00:00",
+            "status": 200,
+            "content_type": "text/html",
+            "content_encoding": null,
+            "declared_length": null,
+            "final_url": "https://patents.google.com/patent/US10807982B2/en",
+            "semantic_status": "received_original_method_source",
+            "file": "03_nominated_patent.private.html",
+            "bytes": 2297528,
+            "sha256": "673904f2d4e3e8079d077c97f2ce7d63789816dd4fd7cb358a090d44f46b8696",
+            "completed_at_utc": "2026-11-06T21:53:53.021757+00:00"
+          }
+        ],
+        "resources_before": {
+          "affinity": [
+            19
+          ],
+          "nice": 19,
+          "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-ninth-method-20261106.scope",
+          "cpu.max": "100000 100000",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "memory.peak": "11288576",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+        },
+        "resources_after": {
+          "affinity": [
+            19
+          ],
+          "nice": 19,
+          "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-ninth-method-20261106.scope",
+          "cpu.max": "100000 100000",
+          "memory.max": "536870912",
+          "memory.swap.max": "0",
+          "pids.max": "32",
+          "memory.peak": "18485248",
+          "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+        },
+        "scope": "Documentary method/domain/endpoint/unit/material/source lineage only. No dedicated activities, activity-class projection, chemical identity/alias/structure/sequence/state/series operations, cohort, receptor, pharmacophore or score."
+      },
+      "method_review": {
+        "schema": "pharmacophoremt.brd4-final-leads-method-review@1",
+        "recorded_at_utc": "2026-11-06T21:56:01.898643+00:00",
+        "nomination": {
+          "aid": 1804941,
+          "version": 3,
+          "revision": 2,
+          "source_name": "BindingDB",
+          "source_id": "BindingDB_9475_1",
+          "raw_sids": 104,
+          "raw_cids": 104,
+          "patent": "US10807982B2",
+          "selection": "Last of fixed descending-raw-SID/ascending-AID leads; no class balance or PHMTscore."
+        },
+        "capacity_archive_identity": {
+          "compressed_bytes": 106253,
+          "compressed_sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+          "path": "brd4_capacity_20261106.json.gz",
+          "uncompressed_bytes": 2177379,
+          "uncompressed_sha256": "acd7e2651971b5ebb39be366fe9c07e5d4078fa81dc38446604ebb28d18cb980"
+        },
+        "fixed_lead_order_verified": [
+          1805333,
+          1795677,
+          1797292,
+          1797167,
+          2061300,
+          1798835,
+          1805218,
+          1805772,
+          1804941
+        ],
+        "fresh_Name_Description_canonical_identities_equal_historical": {
+          "Name": {
+            "canonical_json_sha256": "5a5ba17b324b26fe9345a7d441a95b686f43be112ecafd8175432584c2cf3737",
+            "bytes": 90
+          },
+          "Description": {
+            "canonical_json_sha256": "386e4ddd88a223bd9c00483a1a2e1921c0b421278abbd33c1c8ebcc861723c38",
+            "bytes": 1018
+          }
+        },
+        "prose_identity": {
+          "sha256": "19cd88b156dc95d2699539e875c0aedd6fc79c6485a6b86b16ea0ede770fee8b",
+          "bytes": 641943
+        },
+        "disposition": "held_actual_construct_transfer_and_row_curation_authority_pending",
+        "reported_method": "His-tagged protein literalBREM, BRD4BD1AlphaScreen H4acetylpeptide competition;2nMprotein/15nMpeptide final, four-parameter IC50",
+        "original_unit_and_ranges": {
+          "unit": "micromolar,Table3legend",
+          "A": "≤0.5µM",
+          "B": ">0.5µM to≤5µM",
+          "C": ">5µM",
+          "scope": "Original reported intervals only; not adopted PHMTlabels or numeric classcounts"
+        },
+        "distinct_result_contexts": "Table3BRD4bindingIC50 separate fromRaji/HL60/H460cellIC50",
+        "material_authority": "Original citesFilippakopoulos2010; priororiginalpaper/supplement review nameshumanHisBD1, but exactconstruct/protein transfer to thispatent andBREMwording remain unresolved. No new sequence/molecular mapping.",
+        "source_inconsistencies": [
+          "OriginalHis-taggedBREMliteral retained; do not repair or assert another protein from spelling.",
+          "Source-specific A/B/Cunit/ranges not transferred from earlierpatents and do not imply exact numericIC50."
+        ],
+        "source_row_provenance_authenticated": false,
+        "fixed_nine_lead_method_review_complete": true,
+        "next_fixed_order_aid": null,
+        "remaining_unresolved_domain_sources": "19censusrecords remainunresolved, not excluded or admitted by completion of nineleadreviews; a newdeclaredreview would be separate.",
+        "exposure": "Originalmethods,Table3header/legend and adjacentcellprotocols/chemistry delivered; prior#66/#106exposure additive. No molecularaliases/structures/sequences/classfrequencies,labels orunseenclaim.",
+        "new_dedicated_activity_requests": 0,
+        "class_frequency_projection": false,
+        "cohort_receptor_model_or_score_admitted": false
+      },
+      "primary_review": {
+        "web_tool_calls": 0,
+        "queries": [],
+        "observations": "Localoriginal/reviewofprevioushumanHisBD1paper only; didnotrepeatpaper/supplement acquisition or curatoropening. Exactpatentconstructtransfer remainspending.",
+        "schema": "pharmacophoremt.brd4-last-leads-primary-review@1",
+        "private_exposure_identity": {
+          "file": "exposure_review.private.json",
+          "bytes": 303,
+          "sha256": "ebf332658ceb46ce134801c2957e45bc28c785627ea95b49a1de9e2c12517f9b"
+        },
+        "new_activity_requests": 0
+      }
+    }
+  ],
+  "scope": "Bounded original-method/provenance review of final3fixed-orderleads, completing9declaredleads; not complete BRD4universe review, acceptedactivities, biologicalstudy, source/installed/public qualification or performance measurement.",
+  "receiving": {
+    "body_requests": 9,
+    "HTTP_statuses": [
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200,
+      200
+    ],
+    "retries": 0,
+    "source_metadata_and_canonical_census_fields_match": true,
+    "serial": true
+  },
+  "web_scope": "Source7:2calls/3queries/1failedcachemissopen; source8:2calls/1query/1failedcachemissopen; source9:0newwebcalls. Indexed vendor/curator observations are not authenticated experimental material.",
+  "scientific_boundaries": [
+    "Source7:134literal reportrecords contradict introductory experimental/predicted wording; no3-recordcapacityceiling and no blanketPubCheminvalidity",
+    "Source8:incorporatedCBPmethod/IC50nM received; compatiblehumanGSTvendorproduct does not prove actualcatalog/lot or repair100nMNaCl/controlwording",
+    "Source9:originalµM A≤0.5,B(0.5,5],C>5 intervals are not exactnumericvalues or PHMTlabels; sourceBREMliteral and actualconstructtransfer retained"
+  ],
+  "nine_lead_dispositions": {
+    "1805333": "declaredweakclasscapacitystop",
+    "1795677": "coupledoriginalreport",
+    "1797292": "held_originalunit_and_material",
+    "1797167": "held_material_and_rowauthority",
+    "2061300": "held_material_tracer_and_rowauthority",
+    "1798835": "held_material_probeKd_calculation_and_rowauthority",
+    "1805218": "held_experimental_predicted_provenance_material_controls",
+    "1805772": "held_material_incorporated_controls_rowauthority",
+    "1804941": "held_constructtransfer_and_rowauthority"
+  },
+  "fixed_nine_lead_bounded_review_complete": true,
+  "unresolved_domain_census_records": {
+    "count": 19,
+    "status": "unresolved; neither excluded nor admitted; further review needs a separate declaration"
+  },
+  "new_dedicated_activity_requests": 0,
+  "new_class_frequency_projections": 0,
+  "new_cohort_receptor_pharmacophore_or_score": false,
+  "originals_private": true,
+  "raw_source_bodies_rows_navigation_excerpts_or_private_exposures_in_archive": false,
+  "exposure": "Prior#66/#106exposures additive; source/navigation/search/tablevalues/nearbychemicalandcellular text exposed. Private ledgers retained by hash only; no chemicalalias/structure/sequence operations, classfrequencies, labels or blind/unseen claims.",
+  "attribution": "Documentary receiving/review only, no scientific backend or new capturedAckreditpayload; preserve originalURLs/hashes and executed owncontrollers without manufacturing citation capture.",
+  "execution_interpreters": {
+    "receiving": "SharedCondaPython3.14.10",
+    "offline_documentary_work": {
+      "executable": "/usr/bin/python3",
+      "version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]"
+    }
+  },
+  "resource_scope": "Source requests serialCPU19/quota100%,512MiB/no swap/tasks32/nice19/idleIO/single backendthread; actualobservations in eachreceipt. Offlineprojection/review512MiBaddress-space/oneCPU/lowpriority, no cgroupno-swap or benchmark claim. No Conda/provider mutation.",
+  "review_by": "2026-11-20 or relevant change",
+  "retained_capsules": [
+    "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-seventh-method-20261106-9gvgmklm",
+    "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-eighth-method-20261106-h7490zln",
+    "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-ninth-method-20261106-f6qs9r63"
+  ],
+  "next": "Review authoritative original material/data/curation answers using the concrete unsentquestions in the owning document. No untouchedlead remains in fixed9list; do not silently promote19unresolveddomains or alter scientificdesign. Both complete studies remain incomplete; no external message authorized or sent.",
+  "full_evidence": {
+    "path": "brd4_remaining_sources_20261106.json.gz",
+    "compressed_sha256": "d460441a23271629d6e7ef1ebea73134e2e41f4a14f0e6b47ded8c33c85daa8e",
+    "compressed_bytes": 47433,
+    "uncompressed_sha256": "cf6915ca77dfa614fdfb5b593eb3e9f1afb2a49596b998f5aeb4101f1cb5b0d8",
+    "uncompressed_bytes": 194385
+  },
+  "post_archive_validation": {
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "Generated report indexes are current.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.800s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.870s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "devtools.evidence_archive",
+          "devguide/evidence/brd4_remaining_sources_20261106_summary.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.brd4-remaining-sources-summary@1\", \"report_schema\": \"pharmacophoremt.brd4-remaining-sources-evidence@1\", \"recorded_at_utc\": \"2026-11-06T22:01:26.033526+00:00\", \"archive_bytes_verified\": true}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "devtools.evidence_archive",
+          "devguide/evidence/brd4_sixth_source_method_20261106_summary.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.brd4-sixth-source-method-summary@1\", \"report_schema\": \"pharmacophoremt.brd4-sixth-source-method-evidence@1\", \"recorded_at_utc\": \"2026-11-06T21:45:30.367117+00:00\", \"archive_bytes_verified\": true}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "378 files already formatted\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "address_space_limit_bytes": 536870912,
+      "backend_threads": 1,
+      "serial": true,
+      "no_swap_cgroup_claim": false
+    },
+    "reporting_tests_passed": 3,
+    "archive_tests_passed": 18,
+    "ruff_formatted_files": 378,
+    "combined_integrity_and_links": {
+      "own_archived_files_verified": 70,
+      "source_plan_hashes_verified": 3,
+      "changed_markdown_pages_checked": 15,
+      "local_links_checked": 204,
+      "link_errors": [],
+      "private_original_bodies_excluded": true,
+      "archive_identity_verified": true,
+      "link_scope": "Local target existence only; anchors and external links not revalidated"
+    },
+    "sixth_integrity": {
+      "own_archived_files_verified": 24,
+      "source_plan_hashes_verified": 1,
+      "archive_identity_verified": true
+    },
+    "prior_archives_unchanged": [
+      {
+        "path": "brd4_capacity_20261106.json.gz",
+        "sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+        "bytes": 106253
+      },
+      {
+        "path": "brd4_fifth_source_method_20261106.json.gz",
+        "sha256": "fdf2750c7804b9103acf36f006177ed61468295377718b2e0f34c7d56d806e40",
+        "bytes": 30724
+      }
+    ],
+    "original_new_archives_preserved": true,
+    "scientific_tests_not_repeated": "Prior23selected runtime/native and8classifier controls retain their exact earlier scope; this turn changes documentary receiving/plans/reports only. No full-suite, biological, installed/public or performance qualification.",
+    "resource_closeout": "All12source-bodyrequests and offline documentary phases finished serially. No local scientific background jobs, renderer or environment changes. Four ownedcapsules retain private originals/navigation/exposure and preserved layoutfailurecontroller; review2026-11-20 or relevant change.",
+    "recovery_owner": "LMMV/dprada,pharmacophoremt#106. Fixed9leads have bounded outcomes; material/data/curation questions remain pending and unsent.19domain-unresolved census records remain unresolved, requiring a new declaration for further review.",
+    "offline_validation_controllers": {
+      "validate_closeout.py": {
+        "sha256": "0f40f96acdc35983c8b0ce4e98e56dbc704b22d87267116be5b510e8ceaf38ab",
+        "bytes": 2088,
+        "utf8": "\"\"\"Serial offline reporting checks for the dated documentary recovery.\"\"\"\n\nimport json\nimport os\nimport resource\nimport subprocess\nimport sys\nfrom pathlib import Path\n\ncase = Path(__file__).resolve().parent\nroot = case.parents[1]\nos.chdir(root)\nresource.setrlimit(resource.RLIMIT_AS, (512 * 1024 * 1024,) * 2)\nfor name in (\"OMP_NUM_THREADS\", \"OPENBLAS_NUM_THREADS\", \"MKL_NUM_THREADS\", \"NUMEXPR_NUM_THREADS\", \"RAYON_NUM_THREADS\"):\n    os.environ[name] = \"1\"\nruff = \"/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff\"\ncommands = [\n    [sys.executable, \"-B\", \"devtools/devguide_index.py\"],\n    [sys.executable, \"-B\", \"devtools/devguide_index.py\", \"--check\"],\n    [sys.executable, \"-B\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-p\", \"test_reporting_protocol.py\"],\n    [sys.executable, \"-B\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-p\", \"test_evidence_archive.py\"],\n    [sys.executable, \"-B\", \"-m\", \"devtools.evidence_archive\", \"devguide/evidence/brd4_remaining_sources_20261106_summary.json\"],\n    [sys.executable, \"-B\", \"-m\", \"devtools.evidence_archive\", \"devguide/evidence/brd4_sixth_source_method_20261106_summary.json\"],\n    [ruff, \"check\", \"--no-cache\", \".\"],\n    [ruff, \"format\", \"--check\", \"--no-cache\", \".\"],\n    [\"git\", \"diff\", \"--check\"],\n]\nresults = []\nfor command in commands:\n    result = subprocess.run(command, capture_output=True, text=True, timeout=120, check=False)\n    record = {\"command\": command, \"exit_code\": result.returncode, \"stdout\": result.stdout, \"stderr\": result.stderr}\n    results.append(record)\n    print(json.dumps(record), flush=True)\n    if result.returncode:\n        break\nwith (case / \"validation_results.json\").open(\"x\") as stream:\n    json.dump({\"commands\": results, \"resources\": {\"affinity\": sorted(os.sched_getaffinity(0)), \"nice\": os.getpriority(os.PRIO_PROCESS, 0), \"address_space_limit_bytes\": resource.getrlimit(resource.RLIMIT_AS)[0], \"backend_threads\": 1, \"serial\": True, \"no_swap_cgroup_claim\": False}}, stream, indent=2)\n    stream.write(\"\\n\")\nraise SystemExit(any(result[\"exit_code\"] for result in results))\n"
+      },
+      "verify_closeout_integrity.py": {
+        "sha256": "37050ac2edfe67a3275fb3ea9482db1ab7ec25c9f0965d7f9f05e075fab344dc",
+        "bytes": 2651,
+        "utf8": "\"\"\"Verify frozen own artifacts and local targets of changed Markdown links.\"\"\"\n\nimport gzip\nimport hashlib\nimport json\nimport re\nimport subprocess\nfrom pathlib import Path\nfrom urllib.parse import unquote, urlsplit\n\ncase = Path(__file__).resolve().parent\nroot = case.parents[1]\nsummary_path = root / \"devguide/evidence/brd4_remaining_sources_20261106_summary.json\"\nsummary = json.loads(summary_path.read_text())\nidentity = summary[\"full_evidence\"]\npacked = (summary_path.parent / identity[\"path\"]).read_bytes()\nraw = gzip.decompress(packed)\nfor prefix, data in ((\"compressed\", packed), (\"uncompressed\", raw)):\n    assert hashlib.sha256(data).hexdigest() == identity[prefix + \"_sha256\"]\n    assert len(data) == identity[prefix + \"_bytes\"]\nreport = json.loads(raw)\nfor name, file_identity in report[\"files\"].items():\n    assert \".private.\" not in Path(name).name\n    blob = report[\"utf8_blobs_by_sha256\"][file_identity[\"sha256\"]].encode()\n    assert hashlib.sha256(blob).hexdigest() == file_identity[\"sha256\"]\n    assert len(blob) == file_identity[\"bytes\"]\n    assert (root / name).read_bytes() == blob\nfor name, digest in summary[\"source_plan_files\"].items():\n    assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest\n\nchanged = subprocess.check_output([\"git\", \"diff\", \"--name-only\", \"--\", \"*.md\"], cwd=root, text=True).splitlines()\nnew = subprocess.check_output([\"git\", \"ls-files\", \"--others\", \"--exclude-standard\", \"--\", \"*.md\"], cwd=root, text=True).splitlines()\npages = sorted(set(changed + new))\nchecked = 0\nerrors = []\nfor name in pages:\n    path = root / name\n    for match in re.finditer(r\"\\[[^\\]]*\\]\\((<[^>]+>|[^\\s)]+)(?:\\s+[^)]*)?\\)\", path.read_text()):\n        link = match.group(1).strip(\"<>\")\n        if urlsplit(link).scheme or link.startswith((\"#\", \"//\")):\n            continue\n        target = unquote(link.split(\"#\", 1)[0].split(\"?\", 1)[0])\n        if not target:\n            continue\n        checked += 1\n        resolved = (path.parent / target).resolve()\n        if not resolved.exists():\n            errors.append({\"page\": name, \"target\": target})\nresult = {\"own_archived_files_verified\": len(report[\"files\"]), \"source_plan_hashes_verified\": len(summary[\"source_plan_files\"]), \"changed_markdown_pages_checked\": len(pages), \"local_links_checked\": checked, \"link_errors\": errors, \"private_original_bodies_excluded\": True, \"archive_identity_verified\": True, \"link_scope\": \"Local target existence only; anchors and external links not revalidated\"}\nwith (case / \"integrity_and_links.json\").open(\"x\") as stream:\n    json.dump(result, stream, indent=2)\n    stream.write(\"\\n\")\nprint(json.dumps(result))\nassert not errors\n"
+      },
+      "validation_controller_reuse.json": {
+        "sha256": "542048a789f38f34d8b7c2976676cceff91a586a6154b05e3d19c7bd14ea472c",
+        "bytes": 1015,
+        "utf8": "[\n  {\n    \"parent\": \"build/phmt-brd4-fifth-method-20261106-34jmdso_/validate_closeout.py\",\n    \"parent_sha256\": \"535979df38e88f17b4ad1c952122e058cdc634d9484ff5af559ce05b10e61e50\",\n    \"controller\": \"build/phmt-brd4-sixth-method-20261106-nda85lce/validate_closeout.py\",\n    \"sha256\": \"0f40f96acdc35983c8b0ce4e98e56dbc704b22d87267116be5b510e8ceaf38ab\",\n    \"adaptation\": \"Combinedfinal3summary target plus separate sixtharchive check; same serial standard-library reporting/archive and linkscope\"\n  },\n  {\n    \"parent\": \"build/phmt-brd4-fifth-method-20261106-34jmdso_/verify_closeout_integrity.py\",\n    \"parent_sha256\": \"f02b558af555c0607d64be3698b9232f753a0ac118fb649fdc15aff48949bb45\",\n    \"controller\": \"build/phmt-brd4-sixth-method-20261106-nda85lce/verify_closeout_integrity.py\",\n    \"sha256\": \"37050ac2edfe67a3275fb3ea9482db1ab7ec25c9f0965d7f9f05e075fab344dc\",\n    \"adaptation\": \"Combinedfinal3summary target plus separate sixtharchive check; same serial standard-library reporting/archive and linkscope\"\n  }\n]\n"
+      }
+    }
+  }
+}

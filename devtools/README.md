@@ -57,3 +57,18 @@ formats remain provider-owned. Use
 The [collection contract](../devguide/validation_collection.md) and
 [case template](../devguide/templates/evidence_case.md) define contribution,
 ownership, execution and historical-result rules.
+
+`python -B -m devtools.brd4_label_capacity PRIVATE.csv REVIEWED_LAYOUT.json`
+projects the single AID1805333 capacity case offline. Its caller must first verify
+the published plan, before/after metadata and explicit micromolar descriptor.
+The layout declares exact column indices and all five observed metadata rows;
+no header alias, qualifier, missing value or biological label is inferred.
+Output contains aggregate denominators and conservative SID bounds only. See
+the [case outcome](../devguide/receptor_study2_label_capacity_receiving.md) and
+`devtools/tests/test_brd4_label_capacity.py` for boundaries and stopping behavior.
+
+Before publication, the CLI's two-MiB guard was hardened to read at most the
+limit plus one byte before rejecting oversized input. Separate CLI controls
+protect that bound and frozen-plan validation before source access. Classification
+and aggregate output remain unchanged; earlier archived source/result identities
+retain their original meaning.

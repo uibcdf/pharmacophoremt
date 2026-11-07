@@ -1,0 +1,75 @@
+{
+  "schema": "pharmacophoremt.brd4-fourth-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T21:06:57.717820+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_outcomes": {
+    "1805333": "declared capacity stop remains",
+    "1795677": "coupled original report remains",
+    "1797292": "unqualified original unit/material; held for authority, not silently rejected or waived"
+  },
+  "nomination": {
+    "aid": 1797167,
+    "version": 2,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_1791_2",
+    "raw_sids": 283,
+    "raw_cids": 283,
+    "patent": "US9763922B2",
+    "selection": "Next remaining isolated-BD1 lead in the complete descending-raw-SID/ascending-AID order; no class count, potency or PHMT score selects it."
+  },
+  "reused_original": {
+    "path": "build/phmt-brd4-third-method-20261106-1rkhq1f2/02_comparison_patent.private.html",
+    "bytes": 5261582,
+    "sha256": "3808b135c4c33cfe5a93da54dd79a23261494af57a662fa82659da861a4e03ea",
+    "url": "https://patents.google.com/patent/US9763922B2/en",
+    "new_patent_request": false
+  },
+  "scientific_questions": [
+    "Distinguish FormulaI TR-FRET from FormulaII AlphaLisa; verify source description and original result-table mapping without inferring compound identities",
+    "Review explicit original reporting units versus standardized descriptor",
+    "Verify actual experimental species/accession/full construct/tag authority; no sequence correspondence locally",
+    "Retain shared-method/patent-lineage, source independence, interference, rights and exposure limits"
+  ],
+  "requests": [
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797167/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797167/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 2,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "Transport/HTTP/length/media/encoding/schema/identity failure; no alternate credentials/resources"
+  },
+  "bounded_material_search": {
+    "maximum_web_tool_calls": 4,
+    "primary_sources_only": true,
+    "allowed": "Source-specific patent/parent/curator provenance search or open, no dedicated activities or chemical/sequence analysis",
+    "stop": "After four observations or a clear authority gap; further source receiving requires a separate dated plan"
+  },
+  "allowed_projection": "Document/method identity, source metadata, explicit units and material/source-to-table authority only. No dedicated activity request, class projection, chemical alias/structure/sequence/state/series operations, cohort, receptor, model or score.",
+  "admission_and_stop": "Require qualified original endpoint/unit/material/source-column authority before prospective activity/capacity declaration. If any remains unresolved at the finite review boundary, hold this source without labels, threshold changes or source pooling. Metadata similarity and curated human labels do not authenticate cloned material.",
+  "rights": "Original metadata/HTML, source result rows and images stay private; portable evidence contains own factual projections/controllers/hashes only; source-curation and license-version authority unresolved.",
+  "exposure": "All prior #66/#106 exposures remain additive. Before this nomination, local navigation of the already received FormulaII table header also displayed following rows through partial example24; do not claim blind/unseen selection. No class frequencies or molecular aliases derived.",
+  "resources": "Serial one allowed CPU19/backend thread; CPUquota100%,512MiB memory/no swap/tasks32,nice19/idleIO where enforceable. No whole scientific suite or benchmark.",
+  "publication_state": "Local dated method-only nomination, not a published pre-activity declaration or accepted cohort."
+}

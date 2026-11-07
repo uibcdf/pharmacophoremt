@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.brd4-seventh-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T21:47:08.375732+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_disposition": {
+    "aid": 1798835,
+    "disposition": "original_BD1_TRFRET_Ki_micromolar_column_supported_material_probeKd_and_row_provenance_pending",
+    "evidence": {
+      "path": "brd4_sixth_source_method_20261106.json.gz",
+      "compressed_sha256": "da3f99ff25094822458f7b5dd801b66f2c84d3422a1ac598c283f6c08e6422b6",
+      "compressed_bytes": 24543,
+      "uncompressed_sha256": "1be519196f291a26fdfcb2a90f264d51b5c9bd8571b8b26208ded874c9a2e35f",
+      "uncompressed_bytes": 90293
+    }
+  },
+  "nomination": {
+    "aid": 1805218,
+    "version": 3,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_9669_1",
+    "raw_sids": 124,
+    "raw_cids": 124,
+    "patent": "US10899769B2",
+    "selection": "Next fixed descending-raw-SID/ascending-AID lead; no class balance or PHMT score selects it."
+  },
+  "scientific_questions": [
+    "Original BRD4 49–170 material/species/tag and result column",
+    "Resolve literal NaCl concentration and CBP negative-control wording without source substitution",
+    "Original endpoint/units/calculation/probe authority and source independence/rights"
+  ],
+  "requests": [
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805218/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805218/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US10899769B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html",
+      "publication": "US10899769B2"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 3,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "Transport/HTTP/size/media/identity/schema failure; preserve custody, no alternate credentials/resources."
+  },
+  "bounded_original_method_search": {
+    "maximum_web_tool_calls": 4,
+    "primary_sources_only": true,
+    "allowed": "Exact original/curator material/method search only; no activities, compound or sequence resources."
+  },
+  "allowed_projection": "Documentary method/domain/material/endpoint/unit/calculation review only. No activities, class frequencies, molecular/sequence operations, labels, cohort, receptor or score.",
+  "admission_and_stop": "Hold source if original material/unit/column/calculation authority remains open; preserve50groups/class, prior outcomes, source order and unknowns; no pooling or threshold transfer.",
+  "rights": "Original bodies/rows/navigation/exposure private; portable own facts/controllers/identities only. Curation/license version remains separate.",
+  "exposure": "All prior#66/#106 exposures additive; source/census may expose chemistry and potency; no blind/unseen claim.",
+  "resources": "Serial CPU19/quota100%,512MiB/no swap/tasks32,nice19/idleIO,onebackendthread where enforced.",
+  "publication_state": "Local method nomination only; not a published pre-activity plan or accepted source."
+}

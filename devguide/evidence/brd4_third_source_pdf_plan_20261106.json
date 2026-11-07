@@ -1,0 +1,35 @@
+{
+  "schema": "pharmacophoremt.brd4-third-source-pdf-review-plan@1",
+  "declared_at_utc": "2026-11-06T18:47:53.588903+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "source": {
+    "aid": 1797292,
+    "patent": "US10206931B2",
+    "url": "https://patentimages.storage.googleapis.com/e4/92/81/fed143e38d0c1c/US10206931.pdf"
+  },
+  "purpose": "Inspect original PDF assay/table header to determine whether unit or material statements are missing from rendered HTML. Do not borrow units/species from comparison patent. No activityclass frequency, molecular or cohort operation.",
+  "source_limits": {
+    "attempts": 1,
+    "maximum_bytes": 12582912,
+    "timeout_seconds": 25,
+    "retries": 0
+  },
+  "prior_browser_observation": "PDF URL not accessible through web tool; no repeated browser attempt. No local Poppler/Ghostscript/MuPDF/pdf helpers installed.",
+  "temporary_helper": {
+    "package": "pypdfium2",
+    "version": "4.30.0",
+    "route": "Official PyPI prebuilt wheel only, no dependencies/no source builds; download retries0/timeout20; isolated TemporaryDirectory removed after success/failure. Conda prefix remains unchanged.",
+    "authority": "https://pypi.org/project/pypdfium2/4.30.0/",
+    "record": "Wheel/native-library names,versions,bytes,SHA256 and actual resource controls; retains public renderer provenance without claiming general Python/platform qualification."
+  },
+  "review": "Extract text privately page-by-page; render at most3 method/table pages selected by AlphaLisa navigation, retaining page numbering/images privately. Source/renderer byte integrity does not authenticate experimental material.",
+  "resources": "Serial, one CPU/backend thread,100%quota512MiB/no swap/tasks32,nice19/idleI/O.",
+  "rights_and_exposure": "Full PDF/text/images private. Source full delivery/selected page reading can expose compounds and potencies; additive prior exposure, no blinded/unseen claim. Publish only own facts/identities/controllers."
+}

@@ -1,0 +1,459 @@
+{
+  "schema": "pharmacophoremt.brd4-fourth-source-method-summary@1",
+  "recorded_at_utc": "2026-11-06T21:15:03.552550+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "run_id": "phmt-brd4-fourth-method-20261106-ebmnv7z4",
+  "source_head_before": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+  "producer_overlay": "Dated fourth-source method plan, case controllers and owning report additions retained by content hash. Prior capacity/lineage/PDF recovery changes remain uncommitted and preserved. No runtime/provider/dependency/workflow change.",
+  "source_plan_files": {
+    "devguide/evidence/brd4_fourth_source_method_plan_20261106.json": "17ea6f2ab431d2faf78e54d0e34b98a8d05287dd1f16a6d9f4dc4c6bbb8721c3"
+  },
+  "capacity_order_verification": {
+    "schema": "pharmacophoremt.brd4-fourth-order-verification@1",
+    "capacity_summary": "devguide/evidence/brd4_capacity_20261106_summary.json",
+    "capacity_archive_identity": {
+      "compressed_bytes": 106253,
+      "compressed_sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3",
+      "path": "brd4_capacity_20261106.json.gz",
+      "uncompressed_bytes": 2177379,
+      "uncompressed_sha256": "acd7e2651971b5ebb39be366fe9c07e5d4078fa81dc38446604ebb28d18cb980"
+    },
+    "own_method_screen_file_identity": {
+      "bytes": 124944,
+      "sha256": "3fd327dd906b5a25629c2b63285f3305efb56718f1c4b543f0956104469ba226"
+    },
+    "fixed_lead_order_verified": [
+      1805333,
+      1795677,
+      1797292,
+      1797167,
+      2061300,
+      1798835,
+      1805218,
+      1805772,
+      1804941
+    ],
+    "selected_source": {
+      "AID": 1797167,
+      "Version": 2,
+      "Revision": 2,
+      "SourceName": "BindingDB",
+      "SourceID": "BindingDB_1791_2",
+      "SIDCountAll": 283,
+      "CIDCountAll": 283
+    },
+    "historical_private_capsule_available_at_destination": false,
+    "scope": "Verified portable original census projection; no fresh target query, activity ranking or independence inference."
+  },
+  "receiving": {
+    "schema": "pharmacophoremt.brd4-fourth-method-receiving@1",
+    "recorded_at_utc": "2026-11-06T21:09:06.103265+00:00",
+    "plan_sha256": "17ea6f2ab431d2faf78e54d0e34b98a8d05287dd1f16a6d9f4dc4c6bbb8721c3",
+    "requests_attempted": 2,
+    "receiving_complete": true,
+    "failure": null,
+    "requests": [
+      {
+        "index": 1,
+        "label": "nominated_description",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797167/description/JSON",
+        "requested_at_utc": "2026-11-06T21:09:04.450158+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "content_encoding": null,
+        "declared_length": null,
+        "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797167/description/JSON",
+        "metadata_projection": {
+          "aid": {
+            "id": 1797167,
+            "version": 2
+          },
+          "revision": 2,
+          "descriptor_count": 8
+        },
+        "semantic_status": "metadata_matches_nomination",
+        "file": "01_nominated_description.private.json",
+        "bytes": 4592,
+        "sha256": "594c95c0a4bad9d0cad679e2ddd1e4faaa98767e39b0a6a9a6faf0c929989e10",
+        "completed_at_utc": "2026-11-06T21:09:05.019072+00:00"
+      },
+      {
+        "index": 2,
+        "label": "nominated_summary",
+        "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797167/summary/JSON",
+        "requested_at_utc": "2026-11-06T21:09:05.519608+00:00",
+        "status": 200,
+        "content_type": "application/json",
+        "content_encoding": null,
+        "declared_length": null,
+        "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797167/summary/JSON",
+        "metadata_projection": {
+          "AID": 1797167,
+          "Version": 2,
+          "Revision": 2,
+          "SourceName": "BindingDB",
+          "SourceID": "BindingDB_1791_2",
+          "SIDCountAll": 283,
+          "CIDCountAll": 283,
+          "LastDataChange": {
+            "Year": 2026,
+            "Month": 10,
+            "Day": 22
+          }
+        },
+        "semantic_status": "metadata_matches_nomination",
+        "file": "02_nominated_summary.private.json",
+        "bytes": 2550,
+        "sha256": "5bcf74589ffa7014dba8f25c850557608d43f637e1ed5ac6440309d5a67add91",
+        "completed_at_utc": "2026-11-06T21:09:06.102871+00:00"
+      }
+    ],
+    "resources_before": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-fourth-method-20261106-ebmnv7z4.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "16822272",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "resources_after": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-fourth-method-20261106-ebmnv7z4.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "16822272",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "reused_original": {
+      "path": "build/phmt-brd4-third-method-20261106-1rkhq1f2/02_comparison_patent.private.html",
+      "bytes": 5261582,
+      "sha256": "3808b135c4c33cfe5a93da54dd79a23261494af57a662fa82659da861a4e03ea",
+      "url": "https://patents.google.com/patent/US9763922B2/en",
+      "new_patent_request": false
+    },
+    "scope": "Document/method identity, source metadata, explicit units and material/source-to-table authority only. No dedicated activity request, class projection, chemical alias/structure/sequence/state/series operations, cohort, receptor, model or score."
+  },
+  "review": {
+    "schema": "pharmacophoremt.brd4-fourth-source-method-review@1",
+    "recorded_at_utc": "2026-11-06T21:11:14.201045+00:00",
+    "aid": 1797167,
+    "source_id": "BindingDB_1791_2",
+    "version": 2,
+    "revision": 2,
+    "raw_sid_cid_counts": [
+      283,
+      283
+    ],
+    "reused_original": {
+      "path": "build/phmt-brd4-third-method-20261106-1rkhq1f2/02_comparison_patent.private.html",
+      "bytes": 5261582,
+      "sha256": "3808b135c4c33cfe5a93da54dd79a23261494af57a662fa82659da861a4e03ea",
+      "url": "https://patents.google.com/patent/US9763922B2/en",
+      "new_patent_request": false
+    },
+    "reconstructed_prose": {
+      "bytes": 1800741,
+      "sha256": "6dcf39a5e6cc193fcd0d98f57edad3df0a84209d1525be297912b4cf15f34995"
+    },
+    "alpha_method": {
+      "context": "FormulaII Example311",
+      "document_line_one_based": 25889,
+      "bytes": 878,
+      "sha256": "00ca010716da5bf97ab17b3a1e0adb0cca9a362948f949e067ceb4797bd507e9"
+    },
+    "fresh_description_method_exact_normalized_equal": true,
+    "curated_assay_title_explicitly_names_AlphaLisa_and_patent": true,
+    "intended_method_context": "Description/title identify the patent's unique AlphaLisa method in FormulaII Example311; this is method-level evidence, not authenticated individual-row/table provenance.",
+    "formulaI_TRFRET": {
+      "context": "FormulaI Example387",
+      "method_differs": true,
+      "protein_nM": 2.5,
+      "ligand_nM": 25
+    },
+    "formulaII_AlphaLisa": {
+      "protein_nM": 30,
+      "peptide_nM": 200,
+      "reported_boundaries": "42–168",
+      "reported_tags": "His/Flag",
+      "original_table_unit": "micromolar, explicitly declared in FormulaII introduction and IC50 headers",
+      "table_document_identity": {
+        "bytes": 8129,
+        "sha256": "044d3942cc0d9ae4306b6db8f3306299e0efb647bc6ef7fbe515b87e6b88faf1"
+      }
+    },
+    "material": "Incomplete purification phrase retained; reviewed AlphaLisa method gives no explicit cloned species/accession. Curator human target annotation and generic full-protein sequence do not authenticate the actual material; no molecular/sequence correspondence attempted.",
+    "individual_row_to_table_provenance_authenticated": false,
+    "source_curation_license_version_qualified": false,
+    "new_dedicated_activity_requests": 0,
+    "class_frequency_projection": false,
+    "cohort_receptor_model_or_score_admitted": false,
+    "unit_transferred_to_AID1797292": false,
+    "disposition": "method_context_and_original_unit_supported_material_and_row_provenance_pending",
+    "stop": "Hold this source at the declared method review boundary; no activities, thresholds, pooling or molecular work. Previous source outcomes remain intact.",
+    "next_fixed_order_lead": {
+      "aid": 2061300,
+      "patent": "US12286435B2",
+      "raw_sids": 195,
+      "requires": "Separate dated method nomination; resolve KD/Ki wording and original experimental material before activities."
+    },
+    "offline_resource_scope": "Serial oneCPU/nice19/idleIO,512MiB address-space limit; no cgroup no-swap or performance claim for this short standard-library review."
+  },
+  "material_search": {
+    "schema": "pharmacophoremt.brd4-fourth-material-search@1",
+    "web_tool_calls": 3,
+    "query_strings": 6,
+    "direct_opens": 0,
+    "queries": [
+      "\"US9763922\" \"BRD4\" species site:patents.google.com",
+      "\"BindingDB_1791_2\" site:pubchem.ncbi.nlm.nih.gov",
+      "site:bindingdb.org \"US9763922\" \"BRD4\"",
+      "site:patents.google.com \"US9763922B2\" \"human\" \"AlphaLisa\"",
+      "\"PCT/CN2015/092965\" \"BRD4\" site:patents.google.com",
+      "\"PCT/CN2014/092380\" \"BRD4\" \"human\" site:patents.google.com"
+    ],
+    "curator_search_result_url": "https://www.bindingdb.org/rwd/jsp/dbsearch/PrimarySearch_ki.jsp?Increment=50&column=ki&energyterm=kJ%2Fmole&reactant1=Bromodomain-containing+protein+4&reactant2=BDBM50200455&startPg=0&submit=Search&tag=r20",
+    "observations": [
+      "Exact sourceID and PCT/species searches yielded no additional authority within this search budget",
+      "Indexed BindingDB snippets annotate HumanBRD4 and repeat incomplete AlphaLisa wording; this is curator annotation, not direct original experimental-material authentication",
+      "Other ChEMBL-derived indexed records refer to TR-FRET with experimental origin unknown; do not combine assay contexts"
+    ],
+    "independently_received_curator_row_or_sequence": false,
+    "actual_species_accession_construct_proven": false,
+    "sourceID_to_original_table_row_mapping_proven": false,
+    "private_exposure_identity": {
+      "file": "exposure_review.private.json",
+      "bytes": 805,
+      "sha256": "06180768b7caf743a7924f0a75faf3e5138b396a06eea48c73c515411ce764fe"
+    },
+    "stop": "Clear authority gap within declared maximum4calls; no dedicated activities or molecular/sequence interpretation."
+  },
+  "scope": "Original-source receiving, documentary method/units correspondence and bounded material/curation review only; no accepted biological cohort, molecular sequence/structure correspondence, complete scientific suite or public/installed qualification.",
+  "source_receiving_http_requests": {
+    "count": 2,
+    "statuses": [
+      200,
+      200
+    ],
+    "patent_download_repeated": false,
+    "web_search_scope_separate": "3toolcalls/6queries/0directopens"
+  },
+  "new_dedicated_activity_requests": 0,
+  "class_frequency_projections": 0,
+  "cohort_receptor_pharmacophore_or_score_created": false,
+  "source_independence_proven": false,
+  "unit_transfer_to_AID1797292": false,
+  "prior_outcomes_preserved": "1805333 declared capacity stop;1795677 coupled original report;1797292 original unit/material held unresolved. Source counts/thresholds are not transferred or pooled.",
+  "exposure": "All earlier#66/#106 exposure remains additive. Header navigation displayed following FormulaIIrows through partialExample24; adjacent synthetic fragments/CBP/MYC protocols and search snippets exposed chemical names/SMILES, individual potencies and generic full-protein sequence. Private ledger retained by hash only. No aliases, structure/sequence correspondence, labels/frequencies or blind/unseen claims.",
+  "originals_private": true,
+  "raw_original_bodies_rows_sequences_or_private_exposure_in_archive": false,
+  "attribution": "No new captured Ackredit payload: documentary review only, no scientific backend execution. Original URLs/hashes and actually executed standard-library controllers are retained; no fabricated citation capture.",
+  "execution_interpreters": {
+    "metadata_receiving": "Shared Conda Python3.14.10; exact controller retained",
+    "offline_review_archiving": {
+      "executable": "/usr/bin/python3",
+      "version": "3.14.4 (main, Aug 20 2026, 10:41:58) [GCC 15.2.0]"
+    }
+  },
+  "resources": {
+    "source_receiving_actual": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-fourth-method-20261106-ebmnv7z4.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "16822272",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "offline_document_review": "Serial oneCPU/nice19/idleIO,512MiB address-space limit; no cgroup no-swap or performance claim for this short standard-library review."
+  },
+  "shared_conda_modified": false,
+  "retained_private_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-fourth-method-20261106-ebmnv7z4",
+  "review_by": "2026-11-20 or relevant change",
+  "next": "Keep1797292 and1797167 pending separately. The next untouched fixed-order lead2061300/US12286435B2 needs a new dated method nomination and KD/Ki/material review. No source activities before its own admission/plan; no external message authorized or sent.",
+  "full_evidence": {
+    "path": "brd4_fourth_source_method_20261106.json.gz",
+    "compressed_sha256": "abf3817ea8977cf0afa3d3a431522f1d9f0d41af275d66ea6cc889d5c2f71ad2",
+    "compressed_bytes": 20107,
+    "uncompressed_sha256": "ee916a1729d4a5b6d7452f46c8b8ba4ee0ecc02c81cc751bbc7db83430b05257",
+    "uncompressed_bytes": 74534
+  },
+  "post_archive_validation": {
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "Generated report indexes are current.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.843s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.894s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "devtools.evidence_archive",
+          "devguide/evidence/brd4_fourth_source_method_20261106_summary.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.brd4-fourth-source-method-summary@1\", \"report_schema\": \"pharmacophoremt.brd4-fourth-source-method-evidence@1\", \"recorded_at_utc\": \"2026-11-06T21:15:03.552550+00:00\", \"archive_bytes_verified\": true}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "378 files already formatted\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "address_space_limit_bytes": 536870912,
+      "backend_threads": 1,
+      "serial": true,
+      "no_swap_cgroup_claim": false
+    },
+    "reporting_tests_passed": 3,
+    "archive_tests_passed": 18,
+    "ruff_formatted_files": 378,
+    "integrity_and_links": {
+      "own_archived_files_verified": 20,
+      "source_plan_hashes_verified": 1,
+      "changed_markdown_pages_checked": 12,
+      "local_links_checked": 169,
+      "link_errors": [],
+      "private_original_bodies_excluded": true,
+      "archive_identity_verified": true,
+      "link_scope": "Local target existence only; anchors and external links not revalidated"
+    },
+    "prior_lineage_and_pdf_archives_unchanged": [
+      {
+        "path": "brd4_source_lineage_20261106.json.gz",
+        "bytes": 29739,
+        "sha256": "1b8f87aaf96ff56a352e3917fefa5104afd853f90b8b182b25c19c3795603902"
+      },
+      {
+        "path": "brd4_pdf_recovery_20261106.json.gz",
+        "bytes": 28918,
+        "sha256": "837272c3899276e944d8bf4383a056961dbec1670b9720cf4956a8bd577ffe77"
+      }
+    ],
+    "original_archive_preserved": true,
+    "scientific_tests_not_repeated": "Prior23selected runtime/native and8classifier controls retain their earlier exact scope; current turn changes documentary receiving/plans/reports only. No whole-suite, installed/public or biological-study claim.",
+    "resource_closeout": "Source receiving and documentary replay completed. No renderer/environment changes or background local scientific jobs were launched. Two raw metadata replies and private documentary/exposure projections retained in owned capsule, with reused original HTML retained in earlier capsule. Review2026-11-20 or relevant change.",
+    "recovery_owner": "LMMV/dprada,pharmacophoremt#106. Keep1797292/1797167 pending separately; next untouched2061300 needs its own method nomination and KD/Ki/material review. No external messages sent.",
+    "offline_validation_controllers": {
+      "validate_closeout.py": {
+        "sha256": "226253dd8aabda7ff006daa0e0665695ffbccec1270189ab4783635da39e5c77",
+        "bytes": 1960,
+        "utf8": "\"\"\"Serial offline reporting checks for the dated documentary recovery.\"\"\"\n\nimport json\nimport os\nimport resource\nimport subprocess\nimport sys\nfrom pathlib import Path\n\ncase = Path(__file__).resolve().parent\nroot = case.parents[1]\nos.chdir(root)\nresource.setrlimit(resource.RLIMIT_AS, (512 * 1024 * 1024,) * 2)\nfor name in (\"OMP_NUM_THREADS\", \"OPENBLAS_NUM_THREADS\", \"MKL_NUM_THREADS\", \"NUMEXPR_NUM_THREADS\", \"RAYON_NUM_THREADS\"):\n    os.environ[name] = \"1\"\nruff = \"/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff\"\ncommands = [\n    [sys.executable, \"-B\", \"devtools/devguide_index.py\"],\n    [sys.executable, \"-B\", \"devtools/devguide_index.py\", \"--check\"],\n    [sys.executable, \"-B\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-p\", \"test_reporting_protocol.py\"],\n    [sys.executable, \"-B\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-p\", \"test_evidence_archive.py\"],\n    [sys.executable, \"-B\", \"-m\", \"devtools.evidence_archive\", \"devguide/evidence/brd4_fourth_source_method_20261106_summary.json\"],\n    [ruff, \"check\", \"--no-cache\", \".\"],\n    [ruff, \"format\", \"--check\", \"--no-cache\", \".\"],\n    [\"git\", \"diff\", \"--check\"],\n]\nresults = []\nfor command in commands:\n    result = subprocess.run(command, capture_output=True, text=True, timeout=120, check=False)\n    record = {\"command\": command, \"exit_code\": result.returncode, \"stdout\": result.stdout, \"stderr\": result.stderr}\n    results.append(record)\n    print(json.dumps(record), flush=True)\n    if result.returncode:\n        break\nwith (case / \"validation_results.json\").open(\"x\") as stream:\n    json.dump({\"commands\": results, \"resources\": {\"affinity\": sorted(os.sched_getaffinity(0)), \"nice\": os.getpriority(os.PRIO_PROCESS, 0), \"address_space_limit_bytes\": resource.getrlimit(resource.RLIMIT_AS)[0], \"backend_threads\": 1, \"serial\": True, \"no_swap_cgroup_claim\": False}}, stream, indent=2)\n    stream.write(\"\\n\")\nraise SystemExit(any(result[\"exit_code\"] for result in results))\n"
+      },
+      "verify_closeout_integrity.py": {
+        "sha256": "07ca39205e4b1c6839de0af28529ed27277527e1c1d5891fc8a13e948bbc6150",
+        "bytes": 2654,
+        "utf8": "\"\"\"Verify frozen own artifacts and local targets of changed Markdown links.\"\"\"\n\nimport gzip\nimport hashlib\nimport json\nimport re\nimport subprocess\nfrom pathlib import Path\nfrom urllib.parse import unquote, urlsplit\n\ncase = Path(__file__).resolve().parent\nroot = case.parents[1]\nsummary_path = root / \"devguide/evidence/brd4_fourth_source_method_20261106_summary.json\"\nsummary = json.loads(summary_path.read_text())\nidentity = summary[\"full_evidence\"]\npacked = (summary_path.parent / identity[\"path\"]).read_bytes()\nraw = gzip.decompress(packed)\nfor prefix, data in ((\"compressed\", packed), (\"uncompressed\", raw)):\n    assert hashlib.sha256(data).hexdigest() == identity[prefix + \"_sha256\"]\n    assert len(data) == identity[prefix + \"_bytes\"]\nreport = json.loads(raw)\nfor name, file_identity in report[\"files\"].items():\n    assert \".private.\" not in Path(name).name\n    blob = report[\"utf8_blobs_by_sha256\"][file_identity[\"sha256\"]].encode()\n    assert hashlib.sha256(blob).hexdigest() == file_identity[\"sha256\"]\n    assert len(blob) == file_identity[\"bytes\"]\n    assert (root / name).read_bytes() == blob\nfor name, digest in summary[\"source_plan_files\"].items():\n    assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest\n\nchanged = subprocess.check_output([\"git\", \"diff\", \"--name-only\", \"--\", \"*.md\"], cwd=root, text=True).splitlines()\nnew = subprocess.check_output([\"git\", \"ls-files\", \"--others\", \"--exclude-standard\", \"--\", \"*.md\"], cwd=root, text=True).splitlines()\npages = sorted(set(changed + new))\nchecked = 0\nerrors = []\nfor name in pages:\n    path = root / name\n    for match in re.finditer(r\"\\[[^\\]]*\\]\\((<[^>]+>|[^\\s)]+)(?:\\s+[^)]*)?\\)\", path.read_text()):\n        link = match.group(1).strip(\"<>\")\n        if urlsplit(link).scheme or link.startswith((\"#\", \"//\")):\n            continue\n        target = unquote(link.split(\"#\", 1)[0].split(\"?\", 1)[0])\n        if not target:\n            continue\n        checked += 1\n        resolved = (path.parent / target).resolve()\n        if not resolved.exists():\n            errors.append({\"page\": name, \"target\": target})\nresult = {\"own_archived_files_verified\": len(report[\"files\"]), \"source_plan_hashes_verified\": len(summary[\"source_plan_files\"]), \"changed_markdown_pages_checked\": len(pages), \"local_links_checked\": checked, \"link_errors\": errors, \"private_original_bodies_excluded\": True, \"archive_identity_verified\": True, \"link_scope\": \"Local target existence only; anchors and external links not revalidated\"}\nwith (case / \"integrity_and_links.json\").open(\"x\") as stream:\n    json.dump(result, stream, indent=2)\n    stream.write(\"\\n\")\nprint(json.dumps(result))\nassert not errors\n"
+      },
+      "validation_controller_reuse.json": {
+        "sha256": "f027a28650a3769dd6886eeaf84b7b110247d3f91fd81bd83d8fb78fbb0f99e5",
+        "bytes": 957,
+        "utf8": "[\n  {\n    \"parent\": \"build/phmt-brd4-pdf-recovery-20261106-l53zgryw/validate_closeout.py\",\n    \"parent_sha256\": \"5f100d2fcc1666b1044b9d398ea24df9c8d314c8f4f95f7eee6c8dc7aa8d848d\",\n    \"path\": \"build/phmt-brd4-fourth-method-20261106-ebmnv7z4/validate_closeout.py\",\n    \"adapted_sha256\": \"226253dd8aabda7ff006daa0e0665695ffbccec1270189ab4783635da39e5c77\",\n    \"adaptation\": \"Only dated summary path; same serial standard-library checks and local-link integrity scope\"\n  },\n  {\n    \"parent\": \"build/phmt-brd4-pdf-recovery-20261106-l53zgryw/verify_closeout_integrity.py\",\n    \"parent_sha256\": \"8bff7243a563a24e72e47843ec0c8d3b520347dff8c2e7c348043854fb82b57f\",\n    \"path\": \"build/phmt-brd4-fourth-method-20261106-ebmnv7z4/verify_closeout_integrity.py\",\n    \"adapted_sha256\": \"07ca39205e4b1c6839de0af28529ed27277527e1c1d5891fc8a13e948bbc6150\",\n    \"adaptation\": \"Only dated summary path; same serial standard-library checks and local-link integrity scope\"\n  }\n]\n"
+      }
+    }
+  }
+}

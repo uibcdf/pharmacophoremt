@@ -1,0 +1,85 @@
+{
+  "schema": "pharmacophoremt.brd4-third-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T18:40:48.641618+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_disposition": {
+    "aid": 1795677,
+    "disposition": "coupled_original_report_not_new_independent_evidence",
+    "own_record_sha256": "16a211959fd9bbf304a4a70f1b60cf3724ea6fccd239a1783ecdc34b6dea0b71",
+    "old1805333_capacity_stop_preserved": true,
+    "old_class_counts_not_transferred": true
+  },
+  "nomination": {
+    "aid": 1797292,
+    "version": 2,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_1877_2",
+    "raw_sids": 300,
+    "raw_cids": 300,
+    "patent": "US10206931B2",
+    "selection": "Next remaining source in the previously complete descending-SID/ascending-AID isolated-BD1 lead order. No new activity count or PHMT score; original method not yet qualified."
+  },
+  "comparison_nomination": {
+    "aid": 1797167,
+    "patent": "US9763922B2",
+    "raw_sids": 283,
+    "raw_cids": 283,
+    "reason": "Its census Description canonical JSON identity equals1797292 (882B SHA0b1b40c435b0b63882b4747e0fb3569c0f4bbfae9dce02ce8c9dc05b81420876). Similar metadata alone proves neither family membership nor equal records."
+  },
+  "scientific_questions": [
+    "Human isolatedBD1 material/full tagged construct and original incorporated method",
+    "Actual AlphaLisa endpoint, units, source-column mapping and censoring definitions",
+    "Original patent lineage, report reuse and experimental independence",
+    "Interference/rights/exposure and prospective label/capacity feasibility"
+  ],
+  "requests": [
+    {
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US10206931B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html",
+      "publication": "US10206931B2"
+    },
+    {
+      "label": "comparison_patent",
+      "url": "https://patents.google.com/patent/US9763922B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html",
+      "publication": "US9763922B2"
+    },
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797292/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1797292/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 4,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "HTTP/transport/size/media/schema/identity failure; no alternate credentials/resources"
+  },
+  "allowed_projection": "Original-method/source lineage and descriptor review only. Report identity hashes permitted without deriving activityclass frequencies. No activityendpoint, chemical parsing/identity/sequence/state/series operation, cohort/receptor/model or score.",
+  "conditional_next": "Declare source-specific endpoint/units/censoring/labels/rights and50eligible-groups-per-class necessarycapacity rules before dedicated activities; publish any required pre-activity plan before those requests. Old source thresholds/capacity are not silently transferred.",
+  "rights": "Full original HTML/metadata/potency tables remain private. Public evidence limited to own facts/controllers/source identities. Exact curation/license and publication evidence remain separate.",
+  "exposure": "All prior #66/#106 exposures remain additive, including stopped and coupled sources. Third/fourth source descriptions/aggregate categories were previously delivered, but no candidate-specific potency example recorded. Full patent receiving may expose chemistry and activities; no blind/unseen claim.",
+  "resources": "Serial, one actual allowed CPU/backend thread; CPUquota100%,512MiB/no swap/tasks32,nice19/idleIO where enforceable.",
+  "publication_state": "Local dated original-method nomination; not an accepted target/cohort or published pre-activity declaration."
+}

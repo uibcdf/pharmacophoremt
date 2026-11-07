@@ -1,0 +1,33 @@
+{
+  "schema": "pharmacophoremt.brd4-fifth-parent-method-plan@1",
+  "declared_at_utc": "2026-11-06T21:21:50.410966+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "follows_method_plan_sha256": "f54ffe42aa695cce656856bd0e27a95068a215472554b5cb97c0fe9c766b7b99",
+  "source": {
+    "patent": "WO2020156357A1",
+    "url": "https://patents.google.com/patent/WO2020156357A1/en",
+    "authority": "US12286435B2 cross-reference explicitly states continuation-in-part ofPCT/CN2020/073380; sourceprose line969. No automatic family-table/record equivalence inferred."
+  },
+  "questions": [
+    "OriginalFP inhibitorKi versus tracerKd calculation, time/unit wording and explicitresultunits",
+    "Actual experimental species/accession/construct/tags and traceridentity/numericalKd missing in reviewedUSmethod"
+  ],
+  "limits": {
+    "top_level_requests": 1,
+    "maximum_bytes": 8388608,
+    "timeout_seconds": 20,
+    "retries": 0,
+    "stop": "Any transport/media/identity/sizefailure; preservebodyidentitybeforegates. Nootheroriginal bodyrequests."
+  },
+  "scope": "Original-method/material/unit documentary review only. No dedicated activities/classfrequencies/chemicalor sequence interpretation/labels/cohort/models. Preservepreviousrequests and sourceoutcomes.",
+  "rights": "Originalsource andassayvalues remainprivate; archiveownfacts/controllers/identities only.",
+  "resources": "SerialCPU19/quota100%,512MiB/no swap/tasks32,nice19/idleIO,onebackendthread.",
+  "publication_state": "Localdatedmethodsupplement only, notsourceadmissionorpre-activitydeclaration."
+}

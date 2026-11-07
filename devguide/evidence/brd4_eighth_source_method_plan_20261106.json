@@ -1,0 +1,81 @@
+{
+  "schema": "pharmacophoremt.brd4-eighth-source-method-review-plan@1",
+  "declared_at_utc": "2026-11-06T21:52:10.161495+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "prior_outcomes": {
+    "1805333": "Declared capacity stop preserved",
+    "1795677": "Coupled original report preserved without class transfer",
+    "1797292": "Held for original unit/material authority",
+    "1797167": "Own method/unit supported; material/row authority held",
+    "2061300": "Own FP-derived Ki/nM and PCT wording supported; actual material/tracer/row authority held"
+  },
+  "nomination": {
+    "aid": 1805772,
+    "version": 3,
+    "revision": 2,
+    "source_name": "BindingDB",
+    "source_id": "BindingDB_10057_2",
+    "raw_sids": 122,
+    "raw_cids": 121,
+    "patent": "US11058688B2",
+    "selection": "Next fixed descending-raw-SID/ascending-AID lead; no class balance or PHMTscore."
+  },
+  "scientific_questions": [
+    "OriginalBRD4(49–170)method and incorporatedCBPprocedure, unit/column and controls",
+    "Actualspecies/construct/vendor authority and experimental-versus-predicted report status"
+  ],
+  "requests": [
+    {
+      "label": "nominated_description",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805772/description/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_summary",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1805772/summary/JSON",
+      "maximum_bytes": 2097152,
+      "media_type": "application/json"
+    },
+    {
+      "label": "nominated_patent",
+      "url": "https://patents.google.com/patent/US11058688B2/en",
+      "maximum_bytes": 8388608,
+      "media_type": "text/html",
+      "publication": "US11058688B2"
+    }
+  ],
+  "limits": {
+    "maximum_top_level_requests": 3,
+    "attempts_per_request": 1,
+    "timeout_seconds": 20,
+    "minimum_delay_seconds": 0.5,
+    "retries": 0,
+    "stop_on": "Transport/HTTP/length/media/encoding/schema/identity failure. Preserve raw count/hash before semantic gates; no alternate credentials/resources."
+  },
+  "bounded_original_method_search": {
+    "maximum_web_tool_calls": 4,
+    "primary_sources_only": true,
+    "allowed": "Directed primary-source searches/opens of exact original/incorporated method or curator assay/material authority after receiving review. No dedicated activity/compound/sequence resource.",
+    "stop": "Qualified authority or clear gap within four calls; additional source-body receiving requires a separate dated plan."
+  },
+  "allowed_projection": "Documentary method/domain/endpoint/unit/material/source lineage only. No dedicated activities, activity-class projection, chemical identity/alias/structure/sequence/state/series operations, cohort, receptor, pharmacophore or score.",
+  "admission_and_stop": "Require source-specific original method/material/unit/column authority before prospective activity/capacity declaration. Preserve unknowns,50eligible-groups-per-class requirement and prior outcomes; no source pooling, threshold transfer or label inference.",
+  "rights": "Original metadata/HTML/rows/images remain private; portable evidence contains own facts/controllers/identities only. Source-curation/license-version authority separate and unresolved.",
+  "exposure": "All prior#66/#106 exposures remain additive. Census descriptions/upstream categories already delivered; fresh originals may expose chemistry/activities. No blind/unseen claim or selection by observed performance.",
+  "resources": "Serial one allowed CPU19/backend thread;CPUquota100%,512MiB/no swap/tasks32,nice19/idleIO where enforceable. No whole scientific suite or benchmark.",
+  "publication_state": "Local dated original-method nomination only; not a published pre-activity plan or admitted cohort.",
+  "prior_disposition": {
+    "case": "build/phmt-brd4-seventh-method-20261106-9gvgmklm",
+    "aid": 1805218,
+    "disposition": "held_prediction_vs_numeric_table_conflict_material_and_control_authority_pending",
+    "own_record_sha256": "ba6b50130fb6dc2e9a2e33a13780187197369ae7cb62419dd31d62d60c2b43b3"
+  }
+}

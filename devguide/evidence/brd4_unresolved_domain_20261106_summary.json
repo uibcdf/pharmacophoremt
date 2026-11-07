@@ -1,0 +1,1073 @@
+{
+  "schema": "pharmacophoremt.brd4-unresolved-domain-summary@1",
+  "recorded_at_utc": "2026-11-06T22:29:08.911649+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "source_head_before": "0925d97a7d9d219cb8caabfc1dba0ce1bee66b7f",
+  "run_id": "phmt-brd4-unresolved-20261106-lb1x8lcr",
+  "producer_overlay": "Dated19-source metadata plan, exact receiver, own projections/review and preserved inspection correction; prior source work intact, no runtime/provider/dependency/workflow changes.",
+  "source_plan_files": {
+    "devguide/evidence/brd4_unresolved_domain_review_plan_20261106.json": "e1bab671b966e40eacc998494065a15b55ec8bad48220c43d3c8d15057ff011f"
+  },
+  "receiving": {
+    "schema": "pharmacophoremt.brd4-unresolved-summary-receiving@1",
+    "recorded_at_utc": "2026-11-06T22:13:46.397376+00:00",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1806433,1802539,1795976,1796879,1804070,1796597,1796598,1919020,1919021,1803893,1805812,1797231,1806410,1803958,1919427,1804373,1803156,1802467,1798346/summary/JSON",
+    "plan_sha256": "e1bab671b966e40eacc998494065a15b55ec8bad48220c43d3c8d15057ff011f",
+    "requests_attempted": 1,
+    "status": 200,
+    "final_url": "https://pubchem.ncbi.nlm.nih.gov/rest/pug/assay/aid/1806433,1802539,1795976,1796879,1804070,1796597,1796598,1919020,1919021,1803893,1805812,1797231,1806410,1803958,1919427,1804373,1803156,1802467,1798346/summary/JSON",
+    "content_type": "application/json",
+    "content_encoding": null,
+    "declared_length": null,
+    "complete": true,
+    "failure": null,
+    "retained_body": {
+      "file": "summaries.original.private.json",
+      "bytes": 54365,
+      "sha256": "4e811d6bc95ce7395e30f8a031c7fbaa2a137caf3183ab2a57d6a1e5ac4be820",
+      "complete_eof": true
+    },
+    "resources_before": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-unresolved-20261106-lb1x8lcr.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "11292672",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "resources_after": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-unresolved-20261106-lb1x8lcr.scope",
+      "cpu.max": "100000 100000",
+      "memory.max": "536870912",
+      "memory.swap.max": "0",
+      "pids.max": "32",
+      "memory.peak": "13385728",
+      "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+    },
+    "verified_source_projection": [
+      {
+        "AID": 1806433,
+        "Version": 4,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_10535_1",
+        "SIDCountAll": 780,
+        "CIDCountAll": 767
+      },
+      {
+        "AID": 1802539,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_7818_1",
+        "SIDCountAll": 348,
+        "CIDCountAll": 346
+      },
+      {
+        "AID": 1795976,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_888_1",
+        "SIDCountAll": 326,
+        "CIDCountAll": 326
+      },
+      {
+        "AID": 1796879,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_1573_1",
+        "SIDCountAll": 292,
+        "CIDCountAll": 292
+      },
+      {
+        "AID": 1804070,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_8868_1",
+        "SIDCountAll": 292,
+        "CIDCountAll": 292
+      },
+      {
+        "AID": 1796597,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_1365_1",
+        "SIDCountAll": 277,
+        "CIDCountAll": 276
+      },
+      {
+        "AID": 1796598,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_1365_2",
+        "SIDCountAll": 277,
+        "CIDCountAll": 276
+      },
+      {
+        "AID": 1919020,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_10944_1",
+        "SIDCountAll": 275,
+        "CIDCountAll": 275
+      },
+      {
+        "AID": 1919021,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_10944_2",
+        "SIDCountAll": 275,
+        "CIDCountAll": 275
+      },
+      {
+        "AID": 1803893,
+        "Version": 4,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_8745_1",
+        "SIDCountAll": 273,
+        "CIDCountAll": 268
+      },
+      {
+        "AID": 1805812,
+        "Version": 4,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_10089_1",
+        "SIDCountAll": 270,
+        "CIDCountAll": 266
+      },
+      {
+        "AID": 1797231,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_1842_1",
+        "SIDCountAll": 269,
+        "CIDCountAll": 265
+      },
+      {
+        "AID": 1806410,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_10518_1",
+        "SIDCountAll": 229,
+        "CIDCountAll": 228
+      },
+      {
+        "AID": 1803958,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_8792_2",
+        "SIDCountAll": 227,
+        "CIDCountAll": 227
+      },
+      {
+        "AID": 1919427,
+        "Version": 2,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_11238_1",
+        "SIDCountAll": 156,
+        "CIDCountAll": 156
+      },
+      {
+        "AID": 1804373,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_9087_1",
+        "SIDCountAll": 130,
+        "CIDCountAll": 130
+      },
+      {
+        "AID": 1803156,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_8249_1",
+        "SIDCountAll": 122,
+        "CIDCountAll": 119
+      },
+      {
+        "AID": 1802467,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_7771_1",
+        "SIDCountAll": 112,
+        "CIDCountAll": 112
+      },
+      {
+        "AID": 1798346,
+        "Version": 3,
+        "Revision": 2,
+        "SourceName": "BindingDB",
+        "SourceID": "BindingDB_2709_1",
+        "SIDCountAll": 111,
+        "CIDCountAll": 111
+      }
+    ],
+    "scope": "Metadata only; no individual activities, class counts, molecular operations or score"
+  },
+  "metadata_projection": {
+    "schema": "pharmacophoremt.brd4-unresolved-domain-projection@1",
+    "exact_source_count": 19,
+    "unique_patent_pointers": 17,
+    "Protocol_presence_counts": {
+      "missing": 19
+    },
+    "Protocol_canonical_identity_scope": "Historical/current canonical identities use row.get(field): missing and explicitnull both canonicalizenull. Preserve actualpresence separately; Description containsmethodtext, so missingProtocol is not missingmethod proof.",
+    "rows": [
+      {
+        "AID": 1806433,
+        "Version": 4,
+        "Revision": 2,
+        "SourceID": "BindingDB_10535_1",
+        "SIDCountAll": 780,
+        "CIDCountAll": 767,
+        "original_patent": "US11292791B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "56785502f66486b2e9ef8284731429c3372f06748a92c2be07d3026237b739cd",
+            "bytes": 148
+          },
+          "Description": {
+            "canonical_json_sha256": "c9a3b665177b8a3ea2cee0c94613c659e31ebb0f9db829bd6b78df16eda00044",
+            "bytes": 2174
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Generic HTRF protocol lacks identified BRD4/BD1 construct/peptide concentrations; source title concerns CBP/p300. A human gene-index match does not establish the measured target.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1802539,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_7818_1",
+        "SIDCountAll": 348,
+        "CIDCountAll": 346,
+        "original_patent": "US9296741B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "7a3cb5cd863b63e8f34b55c97fe3e5a498a74d4ace7a6e06487bc22fb95c9823",
+            "bytes": 89
+          },
+          "Description": {
+            "canonical_json_sha256": "630f01f4f92c9fc413b4ca09b49a0ce2393a0f2fc4fa3998d488c2f20d9a7ae6",
+            "bytes": 1509
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Protocol covers human BD1 and BD2 together. AID-to-result-domain assignment unknown; preserve source BD2 boundary inconsistency without correction.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1795976,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_888_1",
+        "SIDCountAll": 326,
+        "CIDCountAll": 326,
+        "original_patent": "US10112941B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "c192a4e4288bf8a314fa9b34910d3b186667768358e905f363cd2578d8969848",
+            "bytes": 89
+          },
+          "Description": {
+            "canonical_json_sha256": "a4785e4a3c7ab829e4f77eb98177c406a1356ea274d0b14763f000f55c0e1427",
+            "bytes": 1239
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Protocol covers isolated BD1/BD2 and tandem constructs together; result-column assignment and species unqualified.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1796879,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_1573_1",
+        "SIDCountAll": 292,
+        "CIDCountAll": 292,
+        "original_patent": "US9725449B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "8d64d9fd1259bda010c85825895f50cbfde9f22be7bc4e3729c60f124a579e7c",
+            "bytes": 143
+          },
+          "Description": {
+            "canonical_json_sha256": "a4226ee306318f02252a6988ea917a63b7dcb256e5f87140b4ef7f59ff1cfb39",
+            "bytes": 2022
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Protocol covers isolated BD1/BD2 and tandem constructs together; result-column assignment and species unqualified.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1804070,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_8868_1",
+        "SIDCountAll": 292,
+        "CIDCountAll": 292,
+        "original_patent": "US10519177B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "1e50f9894fc86e692a2e350c319c8fa85c71b2f00c24fd7735a2e0b4875bf525",
+            "bytes": 100
+          },
+          "Description": {
+            "canonical_json_sha256": "28265d6adbdd4664fa8c3ca05bd1f2cdfa0a5f98b1d7a364317dcc9e104854ac",
+            "bytes": 1183
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Protocol includes human BRD2/3 BD1 and BRD4 BD1 plus tandem BRD4; AID-specific construct/result assignment unknown.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1796597,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_1365_1",
+        "SIDCountAll": 277,
+        "CIDCountAll": 276,
+        "original_patent": "US9624241B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "0beeb87d7b7fd3a62c05a2af4c00109c3a1396762915292039c6f113fbb09354",
+            "bytes": 100
+          },
+          "Description": {
+            "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+            "bytes": 1018
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1796598,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_1365_2",
+        "SIDCountAll": 277,
+        "CIDCountAll": 276,
+        "original_patent": "US9624241B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "0beeb87d7b7fd3a62c05a2af4c00109c3a1396762915292039c6f113fbb09354",
+            "bytes": 100
+          },
+          "Description": {
+            "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+            "bytes": 1018
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1919020,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_10944_1",
+        "SIDCountAll": 275,
+        "CIDCountAll": 275,
+        "original_patent": "US11498926B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "bd88681f4d584e80ebb1294cf188800c65d9bea4b7701f730cb3a9f44ba4a175",
+            "bytes": 106
+          },
+          "Description": {
+            "canonical_json_sha256": "71d64c18c866f5d0a5b26a8ef38189bdccdbca7a0a28b48cc088cfd68b3bfba1",
+            "bytes": 1194
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Table11 shared BD1/BD2 AlphaScreen; need domain-specific data/construct assignment.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1919021,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_10944_2",
+        "SIDCountAll": 275,
+        "CIDCountAll": 275,
+        "original_patent": "US11498926B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "bd88681f4d584e80ebb1294cf188800c65d9bea4b7701f730cb3a9f44ba4a175",
+            "bytes": 106
+          },
+          "Description": {
+            "canonical_json_sha256": "3a12a95d2511e26b9f63da332dedfa6db7af47ef77209069a032904461289d3d",
+            "bytes": 1207
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Table12 shared BD1/BD2 AlphaScreen uses a different buffer/protein regime from Table11; do not merge either record or transfer conditions.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1803893,
+        "Version": 4,
+        "Revision": 2,
+        "SourceID": "BindingDB_8745_1",
+        "SIDCountAll": 273,
+        "CIDCountAll": 268,
+        "original_patent": "US10442803B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "4260eeab427d6e7fdaba57a9fa131e8def3271c006301903f6c2b01c8d663aab",
+            "bytes": 101
+          },
+          "Description": {
+            "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+            "bytes": 1018
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1805812,
+        "Version": 4,
+        "Revision": 2,
+        "SourceID": "BindingDB_10089_1",
+        "SIDCountAll": 270,
+        "CIDCountAll": 266,
+        "original_patent": "US11091484B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "273a2ff9e729dbe2a5e012b3f99e48076cb221af847df0e4295ddfc7ccab6465",
+            "bytes": 101
+          },
+          "Description": {
+            "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+            "bytes": 1018
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1797231,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_1842_1",
+        "SIDCountAll": 269,
+        "CIDCountAll": 265,
+        "original_patent": "US9777003B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "e9b418ac35fa8a63f09c41fcda96e072b22279659baf607831c0084f74f42ac6",
+            "bytes": 100
+          },
+          "Description": {
+            "canonical_json_sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+            "bytes": 1018
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Shared BD1/BD2 AlphaScreen protocol; need original table/domain assignment and human construct.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1806410,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_10518_1",
+        "SIDCountAll": 229,
+        "CIDCountAll": 228,
+        "original_patent": "US11279703B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "303e78d95d27261891908d5bd5a7d1cb091b49a65b288f7d99426d1d7d319544",
+            "bytes": 138
+          },
+          "Description": {
+            "canonical_json_sha256": "d67e51a8b26823927e808290a673f0854bb9d6d82e631e63ed0bb54141a25b42",
+            "bytes": 1119
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Generic enzyme/substrate AlphaLisa steps do not identify BRD4 domain, construct or reagent definitions; dual BRD4/JAK2 title is insufficient.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1803958,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_8792_2",
+        "SIDCountAll": 227,
+        "CIDCountAll": 227,
+        "original_patent": "US10464947B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "32ebb0a88736b006973ffe275e3783619e8a96abe6c34c668be8cd51e7c24e59",
+            "bytes": 104
+          },
+          "Description": {
+            "canonical_json_sha256": "115d1248d083447df7de65a4af268c0050f6d5c16b723d62c5b8fda85b28079d",
+            "bytes": 1195
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "A2 protocol includes BD1/BD2, different buffer/protein regime; original domain-to-column assignment remains unresolved.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1919427,
+        "Version": 2,
+        "Revision": 2,
+        "SourceID": "BindingDB_11238_1",
+        "SIDCountAll": 156,
+        "CIDCountAll": 156,
+        "original_patent": "US11643396B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "f1eb87a2f5df3aa2dd875d1348618330588c9a2b6237dfcbc8679fb98315b020",
+            "bytes": 99
+          },
+          "Description": {
+            "canonical_json_sha256": "36f3c4b6145a81b927e177995afb4afa490dad4bb337d0d65ac8d8ba7397162a",
+            "bytes": 145
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Summary explicitly says experimental details are not described in the patent; AlphaScreen title alone cannot qualify construct or assay.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1804373,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_9087_1",
+        "SIDCountAll": 130,
+        "CIDCountAll": 130,
+        "original_patent": "US10633379B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "66b7a44190cfcb55c09508ab4c5e759e186c368a838a3e99830283ad71d483f2",
+            "bytes": 71
+          },
+          "Description": {
+            "canonical_json_sha256": "509c4d3e640f95fe7f95897e1891c3bfb5609d7bff78344013c135a571bd4bff",
+            "bytes": 1126
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Protocol gives both BD1 and BD2 mixtures/concentration ranges; original domain/result assignment and species unresolved.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1803156,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_8249_1",
+        "SIDCountAll": 122,
+        "CIDCountAll": 119,
+        "original_patent": "US9393232B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "f6bd73c26d7c26e2495331cf2ef3200c38f59f338f3254cf879b565425bb56f8",
+            "bytes": 159
+          },
+          "Description": {
+            "canonical_json_sha256": "884091af809650edcb1f96509d3e8f2404373feec5367dab31cf8ad3718afd10",
+            "bytes": 578
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Generic bromodomain/H4 TR-FRET description lacks exact measured domain/construct and human identity.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1802467,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_7771_1",
+        "SIDCountAll": 112,
+        "CIDCountAll": 112,
+        "original_patent": "US9296748B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "3afd6d3d139dfd6de150735b2d8ac37ee389796bfbb03b1ee232d0850fde0025",
+            "bytes": 63
+          },
+          "Description": {
+            "canonical_json_sha256": "b2e5a8e3ce766e4dd7cdc6e566bf2d725ff1e5b7225650e1379bf8b85d5c95a4",
+            "bytes": 929
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Protocol covers GST-BD1 and GST-BD2 with different concentrations; original AID-domain assignment and human construct unresolved.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      },
+      {
+        "AID": 1798346,
+        "Version": 3,
+        "Revision": 2,
+        "SourceID": "BindingDB_2709_1",
+        "SIDCountAll": 111,
+        "CIDCountAll": 111,
+        "original_patent": "US9918990B2",
+        "source_field_identities": {
+          "Name": {
+            "canonical_json_sha256": "6e3bd852704eb6a9e9f825917e4d801882dfb6e6edb4a1b0bf18db781ac35b01",
+            "bytes": 142
+          },
+          "Description": {
+            "canonical_json_sha256": "c2ebf44a1836dceafcad710db6d766af501a530083664afd74aa4eb1e22c806b",
+            "bytes": 1184
+          },
+          "Protocol": {
+            "canonical_json_sha256": "74234e98afe7498fb5daf1f36ac2d78acc339464f950703b8c019892f982b90b",
+            "bytes": 4
+          },
+          "Comment": {
+            "canonical_json_sha256": "194ee525b3d72c04562fd639b9d6b173660f6fb08ffc37c9e9fef18c58696951",
+            "bytes": 525
+          }
+        },
+        "Protocol_presence": "missing",
+        "prior_reason": "Shared BD1/BD2 AlphaScreen protocol; original domain-to-column assignment and human construct unresolved.",
+        "status": "unresolved_pending_original_AID_domain_column_authority",
+        "accepted": false
+      }
+    ],
+    "byte_equal_description_groups": [
+      {
+        "sha256": "7f33cab9aa233d8003ae4a493ba014acf2797acd6b48838e714020b7480ddb64",
+        "aids": [
+          1796597,
+          1796598,
+          1803893,
+          1805812,
+          1797231
+        ],
+        "scope": "Source text identity only; no molecular/experimental independence"
+      }
+    ],
+    "activities_requests": 0,
+    "screening_library_admitted": false,
+    "nine_prior_outcomes_preserved": true
+  },
+  "verification": {
+    "source_count_verified": 19,
+    "canonical_field_identities_verified": 76,
+    "patent_pointers": 17,
+    "actual_Protocol_presence": {
+      "missing": 19
+    },
+    "new_domain_promotions_or_exclusions": 0,
+    "activities_or_scores": 0,
+    "scope": "Byte/metadata projection integrity only; not experimental/source admission"
+  },
+  "domain_outcome": {
+    "unresolved": 19,
+    "promoted_or_excluded": 0,
+    "multi_context": 15,
+    "generic_or_insufficient": 4,
+    "scope": "Metadata-only domain review; explicitAID-domain-originalcolumn correspondence still missing"
+  },
+  "Protocol_scope": "RawProtocolkeys missing in19records; historical/currentget-basedcanonicalnull identity does not establish explicitnull. Description containsmethodtext; no globalmissingmethod inference.",
+  "nine_prior_source_outcomes_preserved": true,
+  "new_dedicated_activity_requests": 0,
+  "new_class_frequencies": 0,
+  "new_library_cohort_pharmacophore_or_score": false,
+  "original_patent_bodies_requested_this_phase": 0,
+  "future_original_method_lead": {
+    "aid": 1806433,
+    "patent": "US11292791B2",
+    "requires": "Separate original-method nomination if retrospective source work continues; no automatic source admission"
+  },
+  "exposure_and_rights": "Fresh fullsummaryDescriptions/Comments and upstream aggregate categories delivered. Prior#66/#106 exposure additive; peptide/method/sourcepotency context exposed without sequence/molecular interpretation, class labels or unseen claims. Full source corpus remains private; only own projections/controllers/identities archived.",
+  "raw_original_bodies_protocol_corpus_or_individual_activity_rows_in_archive": false,
+  "attribution": "Documentary receiving/review only; no scientificbackend execution or manufactured Ackreditcapture.",
+  "retained_private_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-brd4-unresolved-20261106-lb1x8lcr",
+  "review_by": "2026-11-20 or relevant change",
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "cgroup": "/user.slice/user-2000.slice/user@2000.service/app.slice/phmt-brd4-unresolved-20261106-lb1x8lcr.scope",
+    "cpu.max": "100000 100000",
+    "memory.max": "536870912",
+    "memory.swap.max": "0",
+    "pids.max": "32",
+    "memory.peak": "13385728",
+    "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+  },
+  "current_product_scope": "User requests both retrospective validation and new public-library screening; separate provider research does not admit a library or alter scientific source gates. HistoricalESR1agonistpilot retains its own executed scope.",
+  "full_evidence": {
+    "path": "brd4_unresolved_domain_20261106.json.gz",
+    "compressed_sha256": "700f6c5fd1d6f91a8e2728c441db46eb98a72a5a6f2332749e9fce2a1f45c863",
+    "compressed_bytes": 22235,
+    "uncompressed_sha256": "260e7ee291808ce3cda0e201c7a0fbf110e183e9f309a0369684ad28d9062fc5",
+    "uncompressed_bytes": 152623
+  },
+  "post_archive_validation": {
+    "commands": [
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "Generated report indexes are current.\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.806s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.573s\n\nOK\n"
+      },
+      {
+        "command": [
+          "/usr/bin/python3",
+          "-B",
+          "-m",
+          "devtools.evidence_archive",
+          "devguide/evidence/brd4_unresolved_domain_20261106_summary.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"scope\": \"archive integrity; scientific acceptance is producer-owned\", \"summary_schema\": \"pharmacophoremt.brd4-unresolved-domain-summary@1\", \"report_schema\": \"pharmacophoremt.brd4-unresolved-domain-evidence@1\", \"recorded_at_utc\": \"2026-11-06T22:29:08.911649+00:00\", \"archive_bytes_verified\": true}\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "All checks passed!\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+          "format",
+          "--check",
+          "--no-cache",
+          "."
+        ],
+        "exit_code": 0,
+        "stdout": "378 files already formatted\n",
+        "stderr": ""
+      },
+      {
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "stdout": "",
+        "stderr": ""
+      }
+    ],
+    "resources": {
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "address_space_limit_bytes": 536870912,
+      "backend_threads": 1,
+      "serial": true,
+      "no_swap_cgroup_claim": false
+    },
+    "reporting_tests_passed": 3,
+    "archive_tests_passed": 18,
+    "ruff_formatted_files": 378,
+    "integrity_and_links": {
+      "own_archived_files_verified": 13,
+      "source_plan_hashes_verified": 1,
+      "changed_markdown_pages_checked": 17,
+      "local_links_checked": 225,
+      "link_errors": [],
+      "private_original_bodies_excluded": true,
+      "archive_identity_verified": true,
+      "link_scope": "Local target existence only; anchors and external links not revalidated"
+    },
+    "prior_archives_unchanged": [
+      {
+        "path": "brd4_capacity_20261106.json.gz",
+        "bytes": 106253,
+        "sha256": "7d5122ab71c926273e1b9a31baeaaa241a4079eacf819850ff33fd7981a65cb3"
+      },
+      {
+        "path": "brd4_remaining_sources_20261106.json.gz",
+        "bytes": 47433,
+        "sha256": "d460441a23271629d6e7ef1ebea73134e2e41f4a14f0e6b47ded8c33c85daa8e"
+      }
+    ],
+    "original_archive_preserved": true,
+    "scientific_tests_not_repeated": "Prior23selected runtime/native and8classifier checks retain their exact earlier scope. This turn changes metadata/research/plans/docs only; no scientific backend/library preparation or score.",
+    "resource_closeout": "One bounded19source GET and all offlinechecks completed; private original retained in ownedcapsule. No renderer, package installation, provider mutation or local scientificbackground job. Review2026-11-20 or relevant change.",
+    "recovery_owner": "LMMV/dprada,pharmacophoremt#106; all19remainunresolved and prior9outcomes intact. Separate public-library productresearch is proposedpriority/contract work, not implementation or sourceadmission.",
+    "offline_validation_controllers": {
+      "validate_closeout.py": {
+        "sha256": "05aa962504ffe8195be6f7bfbaf8fd1bbfa6e973c8f366b41dab78a20f6e875b",
+        "bytes": 1957,
+        "utf8": "\"\"\"Serial offline reporting checks for the dated documentary recovery.\"\"\"\n\nimport json\nimport os\nimport resource\nimport subprocess\nimport sys\nfrom pathlib import Path\n\ncase = Path(__file__).resolve().parent\nroot = case.parents[1]\nos.chdir(root)\nresource.setrlimit(resource.RLIMIT_AS, (512 * 1024 * 1024,) * 2)\nfor name in (\"OMP_NUM_THREADS\", \"OPENBLAS_NUM_THREADS\", \"MKL_NUM_THREADS\", \"NUMEXPR_NUM_THREADS\", \"RAYON_NUM_THREADS\"):\n    os.environ[name] = \"1\"\nruff = \"/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff\"\ncommands = [\n    [sys.executable, \"-B\", \"devtools/devguide_index.py\"],\n    [sys.executable, \"-B\", \"devtools/devguide_index.py\", \"--check\"],\n    [sys.executable, \"-B\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-p\", \"test_reporting_protocol.py\"],\n    [sys.executable, \"-B\", \"-m\", \"unittest\", \"discover\", \"-s\", \"tests\", \"-p\", \"test_evidence_archive.py\"],\n    [sys.executable, \"-B\", \"-m\", \"devtools.evidence_archive\", \"devguide/evidence/brd4_unresolved_domain_20261106_summary.json\"],\n    [ruff, \"check\", \"--no-cache\", \".\"],\n    [ruff, \"format\", \"--check\", \"--no-cache\", \".\"],\n    [\"git\", \"diff\", \"--check\"],\n]\nresults = []\nfor command in commands:\n    result = subprocess.run(command, capture_output=True, text=True, timeout=120, check=False)\n    record = {\"command\": command, \"exit_code\": result.returncode, \"stdout\": result.stdout, \"stderr\": result.stderr}\n    results.append(record)\n    print(json.dumps(record), flush=True)\n    if result.returncode:\n        break\nwith (case / \"validation_results.json\").open(\"x\") as stream:\n    json.dump({\"commands\": results, \"resources\": {\"affinity\": sorted(os.sched_getaffinity(0)), \"nice\": os.getpriority(os.PRIO_PROCESS, 0), \"address_space_limit_bytes\": resource.getrlimit(resource.RLIMIT_AS)[0], \"backend_threads\": 1, \"serial\": True, \"no_swap_cgroup_claim\": False}}, stream, indent=2)\n    stream.write(\"\\n\")\nraise SystemExit(any(result[\"exit_code\"] for result in results))\n"
+      },
+      "verify_closeout_integrity.py": {
+        "sha256": "4787e93ddbfed6c97d44cc6f55b441163a45194b8b92c549a49ea6cd3be1a518",
+        "bytes": 2651,
+        "utf8": "\"\"\"Verify frozen own artifacts and local targets of changed Markdown links.\"\"\"\n\nimport gzip\nimport hashlib\nimport json\nimport re\nimport subprocess\nfrom pathlib import Path\nfrom urllib.parse import unquote, urlsplit\n\ncase = Path(__file__).resolve().parent\nroot = case.parents[1]\nsummary_path = root / \"devguide/evidence/brd4_unresolved_domain_20261106_summary.json\"\nsummary = json.loads(summary_path.read_text())\nidentity = summary[\"full_evidence\"]\npacked = (summary_path.parent / identity[\"path\"]).read_bytes()\nraw = gzip.decompress(packed)\nfor prefix, data in ((\"compressed\", packed), (\"uncompressed\", raw)):\n    assert hashlib.sha256(data).hexdigest() == identity[prefix + \"_sha256\"]\n    assert len(data) == identity[prefix + \"_bytes\"]\nreport = json.loads(raw)\nfor name, file_identity in report[\"files\"].items():\n    assert \".private.\" not in Path(name).name\n    blob = report[\"utf8_blobs_by_sha256\"][file_identity[\"sha256\"]].encode()\n    assert hashlib.sha256(blob).hexdigest() == file_identity[\"sha256\"]\n    assert len(blob) == file_identity[\"bytes\"]\n    assert (root / name).read_bytes() == blob\nfor name, digest in summary[\"source_plan_files\"].items():\n    assert hashlib.sha256((root / name).read_bytes()).hexdigest() == digest\n\nchanged = subprocess.check_output([\"git\", \"diff\", \"--name-only\", \"--\", \"*.md\"], cwd=root, text=True).splitlines()\nnew = subprocess.check_output([\"git\", \"ls-files\", \"--others\", \"--exclude-standard\", \"--\", \"*.md\"], cwd=root, text=True).splitlines()\npages = sorted(set(changed + new))\nchecked = 0\nerrors = []\nfor name in pages:\n    path = root / name\n    for match in re.finditer(r\"\\[[^\\]]*\\]\\((<[^>]+>|[^\\s)]+)(?:\\s+[^)]*)?\\)\", path.read_text()):\n        link = match.group(1).strip(\"<>\")\n        if urlsplit(link).scheme or link.startswith((\"#\", \"//\")):\n            continue\n        target = unquote(link.split(\"#\", 1)[0].split(\"?\", 1)[0])\n        if not target:\n            continue\n        checked += 1\n        resolved = (path.parent / target).resolve()\n        if not resolved.exists():\n            errors.append({\"page\": name, \"target\": target})\nresult = {\"own_archived_files_verified\": len(report[\"files\"]), \"source_plan_hashes_verified\": len(summary[\"source_plan_files\"]), \"changed_markdown_pages_checked\": len(pages), \"local_links_checked\": checked, \"link_errors\": errors, \"private_original_bodies_excluded\": True, \"archive_identity_verified\": True, \"link_scope\": \"Local target existence only; anchors and external links not revalidated\"}\nwith (case / \"integrity_and_links.json\").open(\"x\") as stream:\n    json.dump(result, stream, indent=2)\n    stream.write(\"\\n\")\nprint(json.dumps(result))\nassert not errors\n"
+      },
+      "validation_controller_reuse.json": {
+        "sha256": "2446b4830f0d378aa43e7d0c855ffef645d8cc229c46dfebbc9451ad1fe6d22b",
+        "bytes": 971,
+        "utf8": "[\n  {\n    \"parent\": \"build/phmt-brd4-fifth-method-20261106-34jmdso_/validate_closeout.py\",\n    \"parent_sha256\": \"535979df38e88f17b4ad1c952122e058cdc634d9484ff5af559ce05b10e61e50\",\n    \"controller\": \"build/phmt-brd4-unresolved-20261106-lb1x8lcr/validate_closeout.py\",\n    \"sha256\": \"05aa962504ffe8195be6f7bfbaf8fd1bbfa6e973c8f366b41dab78a20f6e875b\",\n    \"adaptation\": \"Dated19source summary target only; same serial standard-library reporting/archive and local-link checks\"\n  },\n  {\n    \"parent\": \"build/phmt-brd4-fifth-method-20261106-34jmdso_/verify_closeout_integrity.py\",\n    \"parent_sha256\": \"f02b558af555c0607d64be3698b9232f753a0ac118fb649fdc15aff48949bb45\",\n    \"controller\": \"build/phmt-brd4-unresolved-20261106-lb1x8lcr/verify_closeout_integrity.py\",\n    \"sha256\": \"4787e93ddbfed6c97d44cc6f55b441163a45194b8b92c549a49ea6cd3be1a518\",\n    \"adaptation\": \"Dated19source summary target only; same serial standard-library reporting/archive and local-link checks\"\n  }\n]\n"
+      }
+    }
+  },
+  "related_product_research": {
+    "path": "devguide/public_library_support_research.md",
+    "bytes": 15895,
+    "sha256": "444af6dbe30a6794120bdd30b37693e6c32838b542e3068f9d6d64f508573470",
+    "scope": "User requests both retrospectivevalidation andnewpubliclibraryscreening, powerfulandfriendly librarymanagement; official-source comparison/proposedpriorities only. No librarydataset downloaded or connector implemented."
+  }
+}

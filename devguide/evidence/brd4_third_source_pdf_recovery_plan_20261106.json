@@ -1,0 +1,47 @@
+{
+  "schema": "pharmacophoremt.brd4-third-source-pdf-recovery-plan@1",
+  "declared_at_utc": "2026-11-06T20:31:05.103164+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    103,
+    106
+  ],
+  "source": {
+    "aid": 1797292,
+    "patent": "US10206931B2",
+    "url": "https://patentimages.storage.googleapis.com/e4/92/81/fed143e38d0c1c/US10206931.pdf"
+  },
+  "prior_attempt": {
+    "receipt": "devguide/evidence/brd4_source_lineage_20261106_summary.json",
+    "original_failure_sha256": "104521e3e9c90e6b481be0f82f29d47d029f93702b894a05e6c54b5b501f044c",
+    "old_limit_bytes": 12582912,
+    "failure": "Combined size/header gate failed; original count/prefix hash unavailable. Preserve failure/code/archive; this is a separate receiving observation."
+  },
+  "reason_for_new_plan": "Resolve the source-document receiving/custody gap. Observe HTTP size/media with HEAD, then one bounded GET only if declared size fits32MiB. Transfer budget changes, not512MiB host memory, assay labels, source ordering or50groups/class design.",
+  "requests": {
+    "maximum_source_top_level_requests": 2,
+    "head_attempts": 1,
+    "get_attempts": 1,
+    "head_timeout_seconds": 20,
+    "get_total_deadline_seconds": 25,
+    "minimum_delay_seconds": 0.5,
+    "maximum_pdf_bytes": 33554432,
+    "stream_chunk_bytes": 262144,
+    "retries": 0,
+    "get_condition": "Positive integer Content-Length≤32MiB and application/pdf. Request identity encoding; independently enforce actual GET size/EOF/header and record source length/ETag differences. Redirects or source changes stop."
+  },
+  "custody": "Write bounded chunks to a private partial file immediately; always save actual bytes, SHA256, declared length, media, prefix header and completeness before gates, including exceptions. Distinguish media/length/size/header/transport/render errors; no overwrite.",
+  "temporary_renderer": {
+    "package": "pypdfium2",
+    "version": "4.30.0",
+    "index": "https://pypi.org/simple",
+    "route": "Published wheel only; no dependencies/source builds; retries0/timeout20. Download/install under TemporaryDirectory; remove on success/failure, verify import origins and record wheel/native hashes. No Conda modification."
+  },
+  "review": "Privately extract page text and select at most3 BRD4AlphaLisa/method/table pages to render; receiving/extraction/rendering/human visual acceptance are separate. No activityclass frequency or chemical/source-to-compound matching.",
+  "resources": "Serial, one actual allowed CPU/backend thread, CPUquota100%, MemoryMax512MiB, MemorySwapMax0, TasksMax32, nice19/idleIO; retain actual limits and failures.",
+  "rights_and_exposure": "PDF/text/images private; own facts/controllers/identities portable. Full source/selected pages may expose chemistry/potency; prior ledgers additive, no blind/unseen claim.",
+  "scientific_scope": "No dedicated activities, inferred thresholds/units/species, molecular/sequence operation, receptor/model/score, release or accepted complete biological study."
+}
