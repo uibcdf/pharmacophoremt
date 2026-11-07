@@ -103,9 +103,12 @@ and seals the [own/scalar receiving evidence](evidence/reader_public_providers_2
 The [guided/expert comparison](guided_expert_journey_receiving.md) now preserves
 full effective/native/export equality and fixes the observed cookbook query-error
 retry trap in source and the same owned wheel. It is no human usability study.
-The [complete-view exporter](saved_result_exports.md) now passes15 export/21 reader
-source controls. Next receive the exact owned installed artifact independently,
-then continue broader usable source operations from the [checkpoint](checkpoint.md).
+The [complete-view exporter](saved_result_exports.md) passes15 export/21 reader
+bodies from source and the same exact owned installed artifact. Four authentic
+original saved databases retain full evidence/configuration and scalar projections.
+Next expose CLI export through these same public methods, then continue broader
+usable source operations from the [checkpoint](checkpoint.md). The public-support
+reader slice does not qualify a full PHMT dependency solve or platform matrix.
 No release or full supported gate is established by this reader increment.
 
 ## Current priority: classical consolidation

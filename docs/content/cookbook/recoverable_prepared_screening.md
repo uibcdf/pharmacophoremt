@@ -149,6 +149,17 @@ Saved inspection works independently of the main scientific package:
 python -m pharmacophoremt_results RUN.sqlite3 --score-method seeded_hit@1 --limit 10
 ```
 
+Exporting an existing run needs only the saved database and fresh output paths;
+it does not require reopening its molecular inputs or resuming science:
+
+```python
+from pharmacophoremt_results import ScreeningRunView
+
+with ScreeningRunView.open(run_path) as view:
+    native_receipt = view.to_jsonl(jsonl_path)
+    table_receipt = view.to_csv(csv_path)
+```
+
 The companion requires the declared ArgDigest/SMonitor support dependencies,
 without loading molecular/numerical or attribution providers. It reads stored
 evidence and creates no new scientific credit. The command emits scalar observed

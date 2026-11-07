@@ -220,9 +220,12 @@ override is introduced.
 
 The [public export contract](../saved_result_exports.md) replaces manual cookbook
 projection with `ScreeningRunView.to_jsonl(path)`/`.to_csv(path)`. All15 export/21
-reader source controls and full Ruff checks pass. Receipts retain original
+reader controls pass from source and one exact owned wheel. Receipts retain original
 configuration, exact output hashes and pending counts; private staging protects
 existing and concurrent destinations. Original failed launch/lint and actual
-resource-limit gaps are retained. Owned installed receiving is still pending at
-this source checkpoint. This is not complete collection management, predictive
+resource-limit gaps are retained. Four authentic original saved databases retain
+full native/configuration equality and scalar projections in isolated installed
+receiving with published support providers. The [receipt](../evidence/saved_result_exports_20261107_summary.json)
+preserves the original verifier/finalizer failures and continuations. Next add
+CLI export through these same methods. This is not complete collection management, predictive
 validation, performance qualification or completion of milestone2/#108.

@@ -10,60 +10,32 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [public saved-result exporter](saved_result_exports.md) is implemented:
-`ScreeningRunView.to_jsonl(path)` preserves complete original native outcomes;
-`.to_csv(path)` projects six source/status/score fields. Both retain manifest
-order, zero negatives and failures, return original-configuration/byte-digest
-receipts and publish complete files without replacing existing destinations.
-All15 export/21 existing reader controls and full Ruff lint/format pass. The
-failed first launch/lint and actual fallback resource limits are retained.
-Owned installed receiving remains pending at this source checkpoint.
+The [public saved-result exporter](saved_result_exports.md) now passes bounded
+source and owned installed receiving. `ScreeningRunView.to_jsonl(path)` retains
+full original native outcomes; `.to_csv(path)` projects six scalar/source fields.
+Both include zero negatives/failures, preserve manifest order, return original
+configuration/output-digest receipts and protect existing destinations. All15
+export/21 reader bodies pass in both contexts; four authentic complete/partial/
+legacy databases retain full native/configuration equality and unchanged bytes.
+All83 distinct selected cases pass, plus full Ruff/index/whitespace checks.
+[Receipt](evidence/saved_result_exports_20261107_summary.json) retains original
+failed launches/checks, continuations and actual resource-limit gaps.
 
-The [guided/expert journey](guided_expert_journey_receiving.md) now has actual
-equal settings, full native evidence, ranks and export bytes on the same retained
-inputs. Its cookbook query preflight now precedes manifest creation: missing-query
-refusal consumes no metadata and leaves a valid same-destination retry. Revised
-source and the same owned installed wheel pass. The original failed harness and
-provider-attribution observation remain separate; MolSysMT#292 owns clarification.
-This is controlled workflow receiving, not a human usability study or full library
-qualification. [Receipt](evidence/guided_expert_journey_20261107_summary.json).
+Frozen producer `4e8f26acc0a41e373afca400e0854966b66de5dd`; owned wheel
+`0.4.0+138.g4e8f26a`, not a public release. Independent installed reading admits
+only that wheel, stdlib and original public ArgDigest0.17.1/SMonitor0.22.1/
+DepDigest0.11.0 payloads. No scientific/attribution provider is loaded or credited.
+This is a Linux/Python3.14 reader slice, not a complete PHMT solve/platform gate.
 
-The [released-support receipt](evidence/reader_public_providers_20261107_summary.json)
-retains the original attempts, executed controls and actual publication boundary.
-The earlier [pause checkpoint](evidence/reader_public_providers_20261107_checkpoint.json)
-keeps its dated local/pending state. All24 saved source files were verified
-unchanged on resumption; that pause record is not rewritten as later delivery.
+Preceding [guided/expert receiving](guided_expert_journey_receiving.md),
+[released reader support](reader_public_provider_receiving.md) and
+[recoverable public runs](public_prepared_runs.md) retain their own frozen
+producers, evidence and limitations. MolSysMT#292 owns attribution-policy
+clarification. Historical pause records remain unchanged.
 
-The independent reader now has [released support-provider receiving](reader_public_provider_receiving.md)
-in four source-free Linux/Python3.14 cells: 22 reader controls per cell and three
-authentic complete/legacy databases per cell pass. SMonitor 0.19 loses coded
-observations in four of five application scenarios; 0.22.1 passes all five with
-both DepDigest 0.11.0 and 0.15.2. Six runtime declarations and controlled SMonitor
-pins now select the published correction. No shared-prefix or scientific runtime
-change. [Receipt](evidence/reader_public_providers_20261107_summary.json) retains
-the original failed controls, actual provider failures, corrected reruns and limits.
-
-The preceding [public recoverable-run task](public_prepared_runs.md) passes197 distinct
-local cases (82 scientific,94 administrative,3 reporting,18 archive), both public
-recipe blocks from source/the same installed wheel, and the migrated original-input
-pilot callback. Frozen producer: `ee5d9fae7a412b5276840cbec7289fdd95ddd375`;
-wheel version `0.4.0+134.gee5d9fa`, not a new release.
-Raw capsule: `build/phmt-public-runs-20261107-w9c85754` (ignored; not cloned).
-The [receipt](evidence/public_prepared_runs_20261107_summary.json) retains original
-failed/passing attempts, exact source/artifact/provider and scalar evidence.
-
-Owned target/cwd under `/tmp/phmt-public-runs-20261107-njzjsmvy` execute the full
-task outside the checkout. Independent readers/CLI load no scientific providers;
-source-produced reading retains original versions and refuses incompatible resume.
-The same three conformers keep mappings/scores0/1/1; all18 original files remain
-unchanged. This is Linux/Python3.14 with recorded source providers, not full
-supported/public-platform qualification.
-
-**Next concrete action:** receive one owned installed artifact of the public
-complete-view exporter outside the checkout, using authenticated published
-support payloads and original complete/partial/legacy databases. Preserve expert
-iteration, zero negatives, failures, original producer evidence and explicit data
-authority; source and installed/public reader qualification remain separate.
+**Next concrete action:** expose complete-view CLI export through the same public
+methods, so a user can export a saved database without writing Python or choosing
+a ranking criterion. Qualify refusal/output behavior and the installed command.
 Broader source operations continue separately; molecular collections remain
 MolSysMT#624-owned. Full changed-pin/installed/public gates remain independent.
 
@@ -78,13 +50,13 @@ the migrated callback retains12/34. Full original source/build versions remain
 distinct. Earlier [iterator receiving](public_prepared_screening.md) and
 [reuse](feature_inventory_reuse.md) keep their own source identities and limits.
 
-After unchanged-prefix owned-wheel receiving, only this member's editable metadata
-and ignored generated-version cache were refreshed to0.4.0+134.gee5d9fa so normal
-imports expose the new companion outside the checkout. Other provider versions
-and MolSysMT native bytes remain unchanged. All154 Python files match the qualified
-wheel; same-byte relocated source reopens its complete installed run with zero
-new evaluations/results and unchanged files. This is separate development receiving,
-not whole-environment qualification. [Onboarding](onboarding.md) records the route.
+The preceding development receiving refreshed only this member's editable metadata
+and ignored version cache to0.4.0+134.gee5d9fa. That dated runtime matched its owned
+wheel and reopened its same-byte relocated run with zero new evaluations. The
+current exporter changes companion code; old scientific bindings can now require
+a new linked run, while saved reading/export remains independent. The new owned
+wheel retains its distinct138 build version. No shared-prefix/native/provider
+change is made here. [Onboarding](onboarding.md) retains the earlier route.
 
 ## Implemented evidence and delivery boundary
 
@@ -102,7 +74,7 @@ not whole-environment qualification. [Onboarding](onboarding.md) records the rou
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; public exporter passes source controls | Owned installed export receiving, broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/recoverable runs and bounded released-reader support received; guided/expert parity measured; public exporter received from source/owned installed wheel | CLI export, broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
