@@ -1,0 +1,276 @@
+{
+  "schema": "pharmacophoremt.saved-run-scaling-summary@1",
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/144",
+  "source_parent": "f2bd4cfb111b02dadfa970322d280063e3e82de6",
+  "reader_cells_qualified": 3,
+  "recorded_repeated_samples": 75,
+  "first_verified_open_observations": 3,
+  "case_guards": 10,
+  "distinct_selected_cases": 55,
+  "selected_slices": {
+    "case_guards": 10,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "source_reader_files_unchanged": 9,
+  "rows": [
+    {
+      "declared_work": 100,
+      "committed_work": 70,
+      "fixture_identity": {
+        "bytes": 98304,
+        "sha256": "f27c745ba113b43beb00f89d9576278af6069b1032522d8f44c9884d0b102639"
+      },
+      "first_verified_open": {
+        "wall_ns": 30558909,
+        "process_cpu_ns": 30532801
+      },
+      "sample_statistics": {
+        "progress": {
+          "wall_ns": {
+            "median_ns": 6233950,
+            "min_ns": 6101588,
+            "max_ns": 9613382
+          },
+          "process_cpu_ns": {
+            "median_ns": 6237570,
+            "min_ns": 6105058,
+            "max_ns": 9617080
+          }
+        },
+        "top10": {
+          "wall_ns": {
+            "median_ns": 6463589,
+            "min_ns": 6339900,
+            "max_ns": 6881061
+          },
+          "process_cpu_ns": {
+            "median_ns": 6448395,
+            "min_ns": 6343482,
+            "max_ns": 6884655
+          }
+        },
+        "top100": {
+          "wall_ns": {
+            "median_ns": 6339169,
+            "min_ns": 6285189,
+            "max_ns": 6938173
+          },
+          "process_cpu_ns": {
+            "median_ns": 6324331,
+            "min_ns": 6288838,
+            "max_ns": 6923741
+          }
+        },
+        "jsonl": {
+          "wall_ns": {
+            "median_ns": 8024865,
+            "min_ns": 7970308,
+            "max_ns": 8744364
+          },
+          "process_cpu_ns": {
+            "median_ns": 8028539,
+            "min_ns": 7974112,
+            "max_ns": 8728962
+          }
+        },
+        "csv": {
+          "wall_ns": {
+            "median_ns": 7477451,
+            "min_ns": 7431425,
+            "max_ns": 8120213
+          },
+          "process_cpu_ns": {
+            "median_ns": 7481232,
+            "min_ns": 7413057,
+            "max_ns": 8102354
+          }
+        }
+      },
+      "whole_process_peak_rss_bytes": 38674432,
+      "preparation_scope": "original successful public preparation"
+    },
+    {
+      "declared_work": 1000,
+      "committed_work": 700,
+      "fixture_identity": {
+        "bytes": 692224,
+        "sha256": "a14f2a68e97456ec339303b37bf7298f9e2674479de086a77e20c7a3fc6aeb59"
+      },
+      "first_verified_open": {
+        "wall_ns": 166757672,
+        "process_cpu_ns": 166554575
+      },
+      "sample_statistics": {
+        "progress": {
+          "wall_ns": {
+            "median_ns": 52214188,
+            "min_ns": 47629341,
+            "max_ns": 61226059
+          },
+          "process_cpu_ns": {
+            "median_ns": 52168937,
+            "min_ns": 47578145,
+            "max_ns": 61130730
+          }
+        },
+        "top10": {
+          "wall_ns": {
+            "median_ns": 48739189,
+            "min_ns": 47972223,
+            "max_ns": 51039467
+          },
+          "process_cpu_ns": {
+            "median_ns": 48690306,
+            "min_ns": 47928200,
+            "max_ns": 50989968
+          }
+        },
+        "top100": {
+          "wall_ns": {
+            "median_ns": 49569978,
+            "min_ns": 48573311,
+            "max_ns": 50661801
+          },
+          "process_cpu_ns": {
+            "median_ns": 49526458,
+            "min_ns": 48526602,
+            "max_ns": 50614257
+          }
+        },
+        "jsonl": {
+          "wall_ns": {
+            "median_ns": 58946168,
+            "min_ns": 57708314,
+            "max_ns": 59999145
+          },
+          "process_cpu_ns": {
+            "median_ns": 58883394,
+            "min_ns": 57662836,
+            "max_ns": 59902991
+          }
+        },
+        "csv": {
+          "wall_ns": {
+            "median_ns": 53114569,
+            "min_ns": 52747190,
+            "max_ns": 54677874
+          },
+          "process_cpu_ns": {
+            "median_ns": 53069933,
+            "min_ns": 52712413,
+            "max_ns": 54623993
+          }
+        }
+      },
+      "whole_process_peak_rss_bytes": 39809024,
+      "preparation_scope": "original successful public preparation"
+    },
+    {
+      "declared_work": 10000,
+      "committed_work": 7000,
+      "fixture_identity": {
+        "bytes": 6639616,
+        "sha256": "da5d221d000ed12fba7859fb3d903613d379e9190aef3d7c3c85a46405af8ee7"
+      },
+      "first_verified_open": {
+        "wall_ns": 1165287142,
+        "process_cpu_ns": 1164817192
+      },
+      "sample_statistics": {
+        "progress": {
+          "wall_ns": {
+            "median_ns": 477276802,
+            "min_ns": 474386787,
+            "max_ns": 481752915
+          },
+          "process_cpu_ns": {
+            "median_ns": 477053810,
+            "min_ns": 474215682,
+            "max_ns": 481452283
+          }
+        },
+        "top10": {
+          "wall_ns": {
+            "median_ns": 486368924,
+            "min_ns": 484253670,
+            "max_ns": 517471842
+          },
+          "process_cpu_ns": {
+            "median_ns": 486131132,
+            "min_ns": 484122175,
+            "max_ns": 517216091
+          }
+        },
+        "top100": {
+          "wall_ns": {
+            "median_ns": 493319956,
+            "min_ns": 490587294,
+            "max_ns": 496035807
+          },
+          "process_cpu_ns": {
+            "median_ns": 493158922,
+            "min_ns": 490414787,
+            "max_ns": 495818483
+          }
+        },
+        "jsonl": {
+          "wall_ns": {
+            "median_ns": 586130739,
+            "min_ns": 581679730,
+            "max_ns": 588893106
+          },
+          "process_cpu_ns": {
+            "median_ns": 585903514,
+            "min_ns": 581443220,
+            "max_ns": 588647530
+          }
+        },
+        "csv": {
+          "wall_ns": {
+            "median_ns": 526387083,
+            "min_ns": 524315589,
+            "max_ns": 541912687
+          },
+          "process_cpu_ns": {
+            "median_ns": 526160623,
+            "min_ns": 524147636,
+            "max_ns": 535594541
+          }
+        }
+      },
+      "whole_process_peak_rss_bytes": 42577920,
+      "preparation_scope": "public recovery of byte-verified copied original partial fixture; original one-shot preparation failed"
+    }
+  ],
+  "original_profile_status": "failed",
+  "one_shot_10000_preparation_qualified": false,
+  "declared_per_child_deadline_seconds": 180,
+  "recovered_10000_reader_qualified": true,
+  "recovery": {
+    "preserved_confirmations": 6784,
+    "new_confirmations": 216,
+    "wall_ns": 32127564589,
+    "process_cpu_ns": 27043571896,
+    "original_files_unchanged": true
+  },
+  "reusable_case_recovery_driver_received": false,
+  "profile_resource_budget": "AS512MiB per process, serialCPU19/thread1/nice19/idleI/O,180s per child, entry available memory>2GiB/pressureavg10<1; no owned aggregate cgroup",
+  "runtime_provider_scope": "Source ArgDigest0.17.1+3.g0712641/SMonitor0.22.1+1.gc1b6ce2; actual origins/source-window hashes in full evidence, not public package qualification",
+  "own_files": 88,
+  "resource_review_utc": "2026-11-20",
+  "limits": "Three qualified reader cells in the existing source/provider context;10000reading follows a separately declared public recovery of an owned copied partial fixture. Original one-shot10000preparation under180s remains failed. Reader runtime files unchanged; one case-driver assertion was line-wrapped afterward, with original measured bytes retained and full-module AST equality. Reusable case-recovery driver remains pending#144. No cold-I/O, incremental/asymptotic memory, speedup, molecular throughput, cache/index, full installed/public/platform or release claim.",
+  "full_evidence": {
+    "path": "saved_run_scaling_20261107_full.json.gz",
+    "compressed_bytes": 94830,
+    "compressed_sha256": "29e51eb52f320dfd7522dbbb9acba661e81d1e45357836cf6a31ade7f9ff679e",
+    "uncompressed_bytes": 500104,
+    "uncompressed_sha256": "12ac970148f1c09806b9ccc9bf9892b7e5f0318d8add37077a6dfb147fa61ac9"
+  }
+}

@@ -136,6 +136,14 @@ case/control/runtime heads are not relabelled with those successful frozen runs.
 Installed/public dependency, scientific/comparator, usability and mature-release
 requirements remain separate.
 
+## Bounded saved-reader performance baseline
+
+[#144](pending_proposals/profile_saved_run_scaling.md) receives three synthetic
+[inspection/export profiles](saved_run_scaling.md),75repeated samples and three
+first-open observations with exact answers. Preserve original10000preparation
+timeout and separate verified-copy public recovery. The guarded reusable recovery
+route remains; no cache/index, speedup or molecular-throughput claim follows.
+
 ## Current priority: classical consolidation
 
 The [#143 boundary-fixture correction](pending_bugs/analytical_upper_bound_platform.md)
