@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (84)
+### Resolved (85)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -17,6 +17,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
+- [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*
 - [`documentation_project_identity.md`](documentation_project_identity.md) — [#4](https://github.com/uibcdf/pharmacophoremt/issues/4) — Remove inherited project identity from public PharmacophoreMT documentation. *(resolved, measured)*
 - [`documentation_reader_entry_points.md`](documentation_reader_entry_points.md) — [#61](https://github.com/uibcdf/pharmacophoremt/issues/61) — Build reader-oriented documentation entry points around delivered native workflows. *(resolved, measured)*
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*

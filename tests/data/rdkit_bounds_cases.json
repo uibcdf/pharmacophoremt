@@ -491,13 +491,13 @@
             0
           ],
           [
-            0.3,
+            3,
             0,
             0
           ],
           [
             0,
-            0.4,
+            4,
             0
           ]
         ],
@@ -506,24 +506,24 @@
       "source": {
         "centers": [
           [
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0
           ],
           [
-            0.15,
-            0.0,
-            0.0
+            1.5,
+            0,
+            0
           ],
           [
-            0.0,
-            0.2,
-            0.0
+            0,
+            2.0,
+            0
           ]
         ],
         "unit": "nm"
       },
-      "distance_tolerance": ".125 nm",
+      "distance_tolerance": "1.25 nm",
       "expected": {
         "coarse_mappings": null,
         "placements": null,
@@ -548,13 +548,13 @@
             0
           ],
           [
-            0.3,
+            3,
             0,
             0
           ],
           [
             0,
-            0.4,
+            4,
             0
           ]
         ],
@@ -563,24 +563,24 @@
       "source": {
         "centers": [
           [
-            0.0,
-            0.0,
-            0.0
+            0,
+            0,
+            0
           ],
           [
-            0.44999999999999996,
-            0.0,
-            0.0
+            4.5,
+            0,
+            0
           ],
           [
-            0.0,
-            0.6000000000000001,
-            0.0
+            0,
+            6.0,
+            0
           ]
         ],
         "unit": "nm"
       },
-      "distance_tolerance": ".125 nm",
+      "distance_tolerance": "1.25 nm",
       "expected": {
         "coarse_mappings": null,
         "placements": null,
@@ -595,5 +595,7 @@
         ]
       }
     }
-  ]
+  ],
+  "boundary_probe_revision": "binary-exact-nm@2",
+  "boundary_probe_note": "Revision2 replaces only the two boundary probes with exact binary64 3/4/5nm triangles, half/one-and-a-half scaling and1.25nm per-site tolerance. Original decimal-generated probes and receipts remain under issue143; eight interior cases are unchanged. No production predicate or relative geometric cutoff changes."
 }

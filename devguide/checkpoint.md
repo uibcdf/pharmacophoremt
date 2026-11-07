@@ -10,7 +10,14 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The latest source correction fixes [native Point center inspection](native_geometry_inspection.md)
+The latest increment corrects two analytical boundary fixtures under
+[#143](pending_bugs/analytical_upper_bound_platform.md). The
+[receipt](evidence/rdkit_boundary_correction_20261107_summary.json) passes59selected
+cases, including14analytical guards and the separate ten-case/186-assignment
+driver. Exact rational controls fail on the old data; production runtime and
+eight interior cases are unchanged. Corrected hosted acceptance remains pending.
+
+The received runtime correction fixes [native Point center inspection](native_geometry_inspection.md)
 under[#142](archive/point_center_inspection.md): a read-only alias exposes the
 canonical position, ordinary point/mixed center-distance queries now work, and
 empty/filtered center arrays keep shape(0,3). The
@@ -22,18 +29,15 @@ passes the same338bodies/two original isolated children and the unchanged RDKit
 recipe from wheel0.4.0+151.g858fe5a;210payload/155runtime files authenticate.
 #142 resolves this bounded defect; full supported gates remain separate.
 
-The [new accumulated checkpoint](projection_ci_checkpoint.md) is dispatched at
-exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1. Its
-[initial receipt](evidence/projection_ci_initial_20261107.json) observes source
-CI42416657424 with all eight scientific cells running and reporting successful;
-policy42416661473/publication governance42416665708 pass their required native
-steps. A later native observation finds macOS3.13/3.14 each failing the
-`exact_upper_bound` analytical comparison (2338pass/1fail); three Linux cells
-already pass and other cells remain running. Preserve this failure: the frozen
-source gate is not accepted. Complete evidence and corrected hosted XML#141
-remain pending; diagnose the boundary fixture without relaxing method thresholds.
-Preserve these identities and inspect the existing runs; never redispatch on an
-observation timeout or relabel them with a later receipt head.
+The [accumulated checkpoint](projection_ci_checkpoint.md) has completed at exact
+489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1. Its
+[terminal receipt](evidence/projection_ci_terminal_20261107.json) preserves source
+CI42416657424: all four Linux cells pass2339cases each; all four macOS cells
+pass2338/fail1 at the original analytical upper-bound fixture. The source gate
+is not accepted. Policy42416661473/publication governance42416665708 pass.
+Independently, all four Linux XML outputs retain105distinct qualified file paths
+and correct namespaces; native Linux3.13 uploads pass, resolving#141. No later
+Point or boundary revision is covered by this frozen run.
 
 The received RDKit increment implements the [public RDKit projection contract](rdkit_projection.md):
 legacy point targets and fixed-radius reading remain available; explicit spheres,
@@ -57,7 +61,7 @@ Earlier evidence remains under its original producer and scope:
   all eight source cells pass2259tests each, with reporting/policy/publication
   steps. Its original namespace-collision XML is retained; the
   [#141 correction](coverage_xml_identity.md) passes111 selected local cases and
-  awaits actual hosted XML from the newer candidate.
+  is independently received from all four newer Linux cells.
 - [Pharm3D comparison](rdkit_bounds_comparison.md): ten analytical cases/186full
   assignments,106 selected source cases and complete driver. Interior filters,
   proper-fit reflection rejection and strict/inclusive boundary differences keep
@@ -75,10 +79,11 @@ separate recovery. [Current guide audit](evidence/projection_ci_guide_audit_2026
 compares all seven real canonical texts at exact owner revisions; all match.
 The frozen policy-v1.5.4 caller remains separate and unchanged.
 
-**Next concrete action:** diagnose the macOS exact-upper-bound analytical failure
-under#143, preserving the frozen489be12 source run and all original fixtures and
-results. Complete terminal source CI42416657424/actual corrected XML receiving
-when available. Do not rebuild/relabel the existing RDKit148 or Point151 wheels,
+**Next concrete action:** freeze one later source candidate containing the Point
+and exact-boundary corrections and receive its deliberate hosted checkpoint.
+The#143 fixture revision passes14focused cases and the ten-case driver locally;
+corrected hosted platforms remain required before closing it. Preserve failed
+489be12 and independent successful XML receiving. Do not rebuild/relabel the existing RDKit148 or Point151 wheels,
 relax scientific thresholds, retry the full suite locally or blindly redispatch.
 MolSysMT#624 collections, full installed/public dependency/platform delivery,
 biology, comparison/performance and mature0.x acceptance retain separate gates.

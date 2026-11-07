@@ -1,7 +1,7 @@
 ---
 summary: Diagnose the exact upper-bound analytical comparison failure on macOS.
 issue: uibcdf/pharmacophoremt#143
-status: active
+status: partial
 opened: 2026-11-07
 closed:
 severity: medium
@@ -32,3 +32,21 @@ no threshold relaxation, hidden epsilon, skipped test or output normalization.
 Next: receive terminal native evidence, inspect the own comparison/fixture and
 native distance predicate, declare a focused diagnostic before execution. Later
 hosted acceptance of a corrected producer remains separate from local tests.
+
+
+## Local diagnosis and correction, 2026-11-07
+
+The original upper/lower binary64 inputs exceed the stated0.25nm endpoint by
+approximately3.33066907387547e-17/5.55111512312578e-18nm under an independent
+100-digit scalar calculation. That establishes a fixture exactness defect;
+precise macOS numerical operands were not emitted by the old harness. Do not
+promote this observation into an upstream numerical bug.
+
+The two prospective exact-rational guards fail on the unchanged fixture. Only
+the two boundary records now use exact3/4/5nm geometry and1.25nm tolerance, with
+half/one-and-a-half scaling. Eight interior records and production code are
+unchanged. All14focused guards and the ten-case/186-assignment complete driver
+pass; original native2/1and RDKit0/0boundary mapping counts remain. The
+[receipt](../evidence/rdkit_boundary_correction_20261107_summary.json) preserves
+old/new inputs, resource limits and failures. Corrected hosted acceptance is
+pending before closing this cross-platform issue. #9/#23 retain broader gates.

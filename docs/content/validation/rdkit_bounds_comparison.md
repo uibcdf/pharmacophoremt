@@ -13,6 +13,23 @@ retain exact input/code/provider/native hashes, full local results, reached
 attribution and original failures. The [sealed receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/rdkit_bounds_20261107_summary.json)
 publishes owned controls and scalar/hash/citation evidence.
 
+## Boundary correction and current scope
+
+A later full-source checkpoint found that the original decimal-generated
+boundary coordinates were not exact native endpoints on all platforms. The
+original measurements below are preserved. [Issue143](https://github.com/uibcdf/pharmacophoremt/issues/143)
+records that failure and the independent high-precision diagnosis.
+
+The current boundary fixture revision uses exactly representable3/4/5nm geometry,
+half/one-and-a-half scaling and1.25nm per-site tolerance. Eight interior inputs
+and production predicates are unchanged. Rational guards verify the actual
+binary coordinates rather than accepting an approximate triangle. The revised
+14 focused guards and ten-case/186-assignment driver pass locally, retaining
+2/1native versus0/0RDKit boundary mappings. This later input has its own
+[receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/rdkit_boundary_correction_20261107_summary.json);
+full corrected hosted/platform acceptance remains pending. This corrects a
+fixture exactness claim, not an activity-validation result.
+
 ## What is compared
 
 MolSysMT constructs three/four disconnected single-atom ions with declared

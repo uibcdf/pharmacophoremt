@@ -1,0 +1,67 @@
+{
+  "schema": "pharmacophoremt.rdkit-boundary-correction-summary@1",
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/143",
+  "source_parent": "0ad758abb4a3dd3d47e69945b68527f177a877ea",
+  "boundary_probe_revision": "binary-exact-nm@2",
+  "original_input": {
+    "bytes": 10058,
+    "sha256": "2dbcb02f2169ed28d2c37c179773eb8aaaf590fe473b180436862c6488f8e18d"
+  },
+  "corrected_input": {
+    "bytes": 10381,
+    "sha256": "447ae79f67040d1583c4c74b61f657df28ee66b0a19530d208cfaa92cc12c288"
+  },
+  "before_guard_failures": 2,
+  "focused_cases": 14,
+  "distinct_selected_cases": 59,
+  "selected_slices": {
+    "analytical": 14,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "analytical_cases": 10,
+  "assignments": 186,
+  "unchanged_interior_cases": 8,
+  "unchanged_runtime_files": 155,
+  "provider_versions": {
+    "molsysmt": "0.23.0+513.g9e1f1b1ad",
+    "rdkit": "2026.9.2",
+    "numpy": "2.5.4",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "argdigest": "0.17.1+3.g0712641",
+    "smonitor": "0.22.1+1.gc1b6ce2",
+    "depdigest": "0.15.2+2.g032d345",
+    "ackredit": "0.12.1+10.g4beb850"
+  },
+  "native": [
+    {
+      "module": "molsysmt._rust",
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b"
+    }
+  ],
+  "actual_attribution_items": 14,
+  "actual_attribution_uses": 47,
+  "whole_command_peak_rss_bytes": {
+    "comparison-guards": 381227008,
+    "comparison-driver": 476561408
+  },
+  "resource_budget": "Existing analytical case amendment1GiB DATA per process; CPU19/thread1/nice19/idleI/O, entry memory>4GiB/pressureavg10<1; no aggregate cgroup. Scalar/admin/seal use512MiB AS. No further budget increase.",
+  "resource_review_utc": "2026-11-20",
+  "corrected_hosted_acceptance": false,
+  "own_files": 56,
+  "limits": "Local corrected analytical fixture receiving only; all production runtime files unchanged from Point858fe5a. Earlier hosted489be12 failed four macOS jobs. Corrected hosted acceptance remains pending under#143/#9/#23. No provider/native change, threshold relaxation, scientific-method change, whole installed/public/platform gate, benchmark, biological or release qualification.",
+  "full_evidence": {
+    "path": "rdkit_boundary_correction_20261107_full.json.gz",
+    "compressed_bytes": 124092,
+    "compressed_sha256": "57e48114d4fe696481615b85d6902b2b397b1441da2f6cf6c7225d04fe4cf623",
+    "uncompressed_bytes": 1320217,
+    "uncompressed_sha256": "9578d32dc459b6b41707e4e4c33e76f044fa453b4afc9f874feeb4229f5ad8de"
+  }
+}

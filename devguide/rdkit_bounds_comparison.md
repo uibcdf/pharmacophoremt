@@ -9,6 +9,30 @@ all ten controls/186 assignments and106 selected source cases. The
 [public case](../docs/content/validation/rdkit_bounds_comparison.md) explains the
 actual answers and their limits. Original attempts retain their own identities.
 
+## Dated boundary-fixture correction, 2026-11-07
+
+The original receipt below remains historical. Frozen source489be12 CI42416657424
+fails its upper-bound expectation on macOS; [#143](pending_bugs/analytical_upper_bound_platform.md)
+owns the correction. Exact Decimal.from_float operands and100-digit square roots
+show that the original upper/lower pair differences exceed0.25nm by approximately
+3.33066907387547e-17/5.55111512312578e-18nm. Its stored decimal-generated coordinates
+do not define an exact native endpoint independently of norm rounding. This does
+not establish a NumPy/MolSysMT/RDKit defect or measure a macOS norm implementation.
+
+Revision `binary-exact-nm@2` changes only those two synthetic boundary inputs to
+an exactly representable3/4/5nm triangle, half/one-and-a-half scaling, and1.25nm
+per-site tolerance. This preserves relative geometry/cutoffs and all eight
+interior inputs. Independent Fraction guards require the actual binary inputs
+to retain the Pythagorean ratio, squared lengths, exactly representable distance
+and pair-difference equality; both guards fail on the original data. No production
+predicate, scientific epsilon or matching definition changes. The full revised
+14-case guard and ten-case/186-assignment driver pass locally, with unchanged
+2/1native versus0/0RDKit boundary counts. Hosted acceptance of the revision is
+still pending; the failed earlier run is never relabeled successful.
+The [correction receipt](evidence/rdkit_boundary_correction_20261107_summary.json)
+retains original/new inputs and original failures. Earlier source/RSS/attribution
+counts below belong to their original producer and input hash.
+
 ## Question and common represented problem
 
 Compare RDKit Pharm3D `CoarseScreenPharmacophore` with public native

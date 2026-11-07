@@ -4,12 +4,13 @@ Owners LMMV/dprada; declared2026-11-07;
 [#9](https://github.com/uibcdf/pharmacophoremt/issues/9),
 [#23](https://github.com/uibcdf/pharmacophoremt/issues/23),
 [#141](https://github.com/uibcdf/pharmacophoremt/issues/141).
-Status: dispatched at exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1.
+Status: terminal failure at exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1;
+source gate unaccepted, corrected hosted XML independently accepted.
 The [initial native receipt](evidence/projection_ci_initial_20261107.json)
 records source CI42416657424 with eight running science cells and successful
 reporting; policy42416661473 and publication governance42416665708 complete their
-required steps successfully. Source test counts and corrected XML acceptance
-remain pending. These are dated observations, not whole-gate acceptance.
+required steps successfully. Those initial pending observations are preserved. The terminal receiving below
+records actual counts and separates source failure from XML acceptance.
 
 This deliberately batches accumulated saved-progress runtime, the qualified
 [RDKit projection](rdkit_projection.md) and the
@@ -59,3 +60,24 @@ This receives a source candidate, not a new full public dependency solve, instal
 package/platform/minor matrix, biological validation, benchmark or mature0.x release.
 While remote jobs run, continue independent owning work and keep this candidate
 distinct from subsequent runtime or receipt heads. Routine pushes retain `[skip ci]`.
+
+
+## Terminal receiving, 2026-11-07
+
+[Actual terminal evidence](evidence/projection_ci_terminal_20261107.json) supersedes
+the initial running observation without changing that receipt. Frozen489be12
+source42416657424/attempt1 fails: Linux3.11–3.14 each pass2339cases; macOS3.11–3.14
+each pass2338/fail1 at exact_upper_bound. All actual Python/architecture/preflight/
+command identities and original logs are retained. The extra MolSysMT reinstall
+step is intentionally skipped only on3.14, whose separate pinned dependency file
+owns acquisition. Do not reject that documented route or silently treat a failed
+scientific job as successful.
+
+Policy42416661473/publication42416665708 pass their required native steps.
+Independently, all four Linux coverage XMLs retain105unique qualified files,
+both initializers, companion_store, zero-hit discovery/branches and the original
+private omission. Actual Linux3.13 XML and successful native upload steps are
+retained; #141 resolves XML identity, not scientific source acceptance or public
+Codecov freshness. #143 owns the separately diagnosed nonexact boundary fixture.
+Its later revision and Point858fe5a are not executed in this frozen run. No run
+is restarted; a deliberate later exact candidate needs new receiving under#9/#23.

@@ -138,6 +138,12 @@ requirements remain separate.
 
 ## Current priority: classical consolidation
 
+The [#143 boundary-fixture correction](pending_bugs/analytical_upper_bound_platform.md)
+replaces two nonexact synthetic endpoints with exactly representable geometry.
+Fourteen focused guards and the ten-case driver pass locally; old results and
+all eight interior cases remain. Corrected hosted receiving is pending; production
+cutoffs and matching definitions are unchanged.
+
 [Native Point inspection](native_geometry_inspection.md) now exposes its canonical
 position as center and returns empty center arrays with three columns. The
 source338-case selection passes, preserving original failures and native schema;

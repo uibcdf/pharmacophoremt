@@ -52,3 +52,24 @@ This changes reporting configuration/guards only. Later exact-head source/policy
 installed/public/platform and release gates remain separate. Do not dispatch
 another full matrix for every small change. RDKit projection#140 and the accepted
 mature-0.x staircase remain open.
+
+
+## Hosted XML received, 2026-11-07
+
+The [terminal489be12 receipt](evidence/projection_ci_terminal_20261107.json)
+independently accepts corrected emitted XML from all four Linux cells:105unique
+package-qualified paths, both initializers, companion_store, unexecuted files,
+branches and one workspace source root; main-private omission is preserved. The
+actual Linux3.13 XML is hash-bound and retained as compressed output. Both native
+Codecov upload steps pass; this does not claim public-server freshness.
+The XML capture removes logging timestamps from the native `cat coverage.xml`
+output; its hash identifies that captured text, rather than an independently
+checksummed runner file.
+
+[#141](archive/coverage_xml_namespace_identity.md) resolves that reporting defect.
+The same source run fails all four macOS cells on the separate#143 analytical
+fixture; its full source gate remains unaccepted. Later Point/boundary corrections,
+current supported source/installed/public/platform gates and mature0.x acceptance
+are not established by the XML fix. Projection#140 is separately received in
+source/one owned wheel; earlier open-state wording above belongs to initial
+receiving, not a reopened issue.
