@@ -2,12 +2,14 @@
 
 import argparse
 import datetime
+import hashlib
 import importlib.abc
 import importlib.metadata
 import json
 import os
 import platform
 import resource
+import shutil
 import sqlite3
 import statistics
 import subprocess
@@ -21,6 +23,7 @@ from phmt_test_support.saved_run_profile import (
     file_identity,
     measure,
     profile_fixture,
+    recover_fixture,
 )
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -135,6 +138,65 @@ def write(path, value):
     path.write_text(json.dumps(value, indent=2) + "\n")
 
 
+def copy_failed_fixture(source, destination):
+    """Copy one declared interrupted preparation, never replay saved commands."""
+    source, destination = Path(source).resolve(), Path(destination).resolve()
+    if destination.is_relative_to(source):
+        raise ValueError("recovery output must be outside the original profile")
+    report_path = source / "run.json"
+    report_bytes = report_path.read_bytes()
+    report_identity = {
+        "bytes": len(report_bytes),
+        "sha256": hashlib.sha256(report_bytes).hexdigest(),
+    }
+    report = json.loads(report_bytes)
+    if (
+        report.get("schema") != "pharmacophoremt.saved-reader-profile-run@1"
+        or report.get("status") != "failed"
+    ):
+        raise ValueError("choose an original failed fixed-profile run")
+    failed = report["commands"][-1]
+    count = failed.get("count")
+    if (
+        failed.get("phase") != "prepare"
+        or failed.get("timed_out") is not True
+        or type(count) is not int
+        or count not in COUNTS
+    ):
+        raise ValueError("recovery requires a declared preparation timeout")
+    original = source / f"work-{count}"
+    allowed = {"run.sqlite3", "run.sqlite3-journal", "work.jsonl"}
+    paths = list(original.iterdir())
+    if original.is_symlink() or any(
+        p.is_symlink() or not p.is_file() or p.name not in allowed for p in paths
+    ):
+        raise ValueError("unexpected or linked partial-fixture files")
+    files = {p.name: file_identity(p) for p in paths}
+    if not {"run.sqlite3", "work.jsonl"} <= set(files):
+        raise ValueError("partial fixture requires its database and manifest")
+    case = destination / f"work-{count}"
+    shutil.copytree(original, case)
+    assert files == {p.name: file_identity(p) for p in case.iterdir()}
+    assert file_identity(report_path) == report_identity
+    return count, {
+        "source_profile": str(source),
+        "source_report_identity": report_identity,
+        "source_case": str(original),
+        "source_files": files,
+        "copied_case": str(case),
+        "original_preparation_qualified": False,
+    }
+
+
+def verify_original(recovery):
+    assert (
+        file_identity(Path(recovery["source_profile"]) / "run.json")
+        == recovery["source_report_identity"]
+    )
+    for name, expected in recovery["source_files"].items():
+        assert file_identity(Path(recovery["source_case"]) / name) == expected
+
+
 def child(arguments):
     sys.meta_path.insert(0, ReaderOnly())
     entry = memory_entry()
@@ -151,6 +213,23 @@ def child(arguments):
             "memory_entry": entry,
         }
         write(arguments.prepare / "preparation.json", report)
+    elif arguments.recover_fixture is not None:
+        result, timing = measure(
+            lambda: recover_fixture(
+                arguments.recover_fixture, arguments.count, PADDING_BYTES
+            )
+        )
+        write(
+            arguments.recover_fixture / "recovery.json",
+            {
+                "result": result,
+                "recovery": timing,
+                "context_before": initial,
+                "context_after": context(),
+                "memory_entry": entry,
+                "original_one_shot_preparation_qualified": False,
+            },
+        )
     else:
         destination = arguments.measure / "measurement.json"
         with destination.open("x", encoding="utf-8") as output:
@@ -198,8 +277,17 @@ def main(argv=None):
     group.add_argument("--output", type=Path)
     group.add_argument("--prepare", type=Path, help=argparse.SUPPRESS)
     group.add_argument("--measure", type=Path, help=argparse.SUPPRESS)
+    group.add_argument("--recover-fixture", type=Path, help=argparse.SUPPRESS)
+    parser.add_argument(
+        "--recover-from",
+        type=Path,
+        metavar="FAILED_PROFILE",
+        help="Copy one interrupted preparation and profile its recovered reader; preserve the original failure.",
+    )
     parser.add_argument("--count", type=int, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
+    if args.recover_from is not None and args.output is None:
+        parser.error("--recover-from requires a fresh --output directory")
     if args.output is None:
         return child(args)
     destination = args.output.resolve()
@@ -216,9 +304,23 @@ def main(argv=None):
     report_path = destination / "run.json"
     write(report_path, report)
     try:
-        for count in COUNTS:
+        counts = COUNTS
+        phases = ("prepare", "measure")
+        if args.recover_from is not None:
+            memory_entry()
+            # Inspect only fixed control metadata; execute our known module/flags.
+            count, recovery = copy_failed_fixture(args.recover_from, destination)
+            report.update(
+                schema="pharmacophoremt.saved-reader-profile-recovery@1",
+                recovery=recovery,
+                sizes=[count],
+                scope="One separately bounded copied-fixture recovery and missed reader phase. Original failed preparation remains unqualified; no molecular throughput claim.",
+            )
+            counts, phases = (count,), ("recover-fixture", "measure")
+            write(report_path, report)
+        for count in counts:
             case = destination / f"work-{count}"
-            for phase in ("prepare", "measure"):
+            for phase in phases:
                 entry = memory_entry()
                 command = [
                     sys.executable,
@@ -228,7 +330,7 @@ def main(argv=None):
                     "--" + phase,
                     str(case),
                 ]
-                if phase == "prepare":
+                if phase in {"prepare", "recover-fixture"}:
                     command.extend(["--count", str(count)])
                 stdout = destination / f"{phase}-{count}.stdout"
                 stderr = destination / f"{phase}-{count}.stderr"
@@ -282,6 +384,9 @@ def main(argv=None):
             write(report_path, report)
             print(f"{count}: verified profile complete", flush=True)
         report["status"] = "completed"
+        if args.recover_from is not None:
+            verify_original(report["recovery"])
+            report["original_files_unchanged"] = True
     except BaseException as error:
         report.update(
             status="failed", error_type=type(error).__name__, error=str(error)

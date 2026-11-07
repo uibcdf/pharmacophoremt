@@ -70,8 +70,19 @@ python -m devtools.profile_saved_run --output NEW-profile-directory
 
 The fixed driver currently requires Linux `/proc` memory/pressure admission.
 Destinations must be fresh; failures and partial outputs remain preserved. The
-separate recovery controller and original measured producer remain in the sealed
-case evidence. A reusable guarded driver-recovery route is pending under #144.
+original recovery controller and measured producer remain in the sealed case
+evidence. The [reusable recovery receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/saved_run_recovery_20261107_summary.json)
+now qualifies this explicit command on a fresh owned copy:
+
+```bash
+python -m devtools.profile_saved_run --recover-from FAILED-profile-directory --output NEW-recovery-directory
+```
+
+It preserves original report/DB/journal/manifest bytes, rejects ineligible or linked
+inputs, and uses public store recovery without duplicate attempts. The new run
+reports only recovery and its reader phase; the original preparation remains failed.
+Its extra samples are separate from the baseline table. All 22 independent case
+controls pass, including provenance, exact metadata types and staged-data conflicts.
 No timing threshold is part of routine CI.
 
 

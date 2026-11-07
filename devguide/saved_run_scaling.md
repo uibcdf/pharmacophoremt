@@ -154,13 +154,49 @@ screening throughput. Whole-process RSS includes imports/oracles and is not
 incremental allocation. Live writer progress, immutable saved snapshots and the
 full verification performed by every fresh reader open remain distinct.
 
-Next: make the separately declared fixture-recovery path a reusable guarded case
-operation, then receive its normal driver route before closing#144. Preserve the
-original benchmark producer/bytes and all existing measurements. Later work can
-declare an equivalent immutable-progress reuse experiment; no cache is implemented
-or selected by this baseline alone.
+The reusable recovery route below is now received. Preserve the original
+benchmark producer/bytes and all existing measurements. Later work can declare
+an equivalent immutable-progress reuse experiment; no cache is implemented or
+selected by this baseline alone.
 
 
 The execution driver is currently Linux-only: available-memory/pressure admission
 uses `/proc`. The synthetic helper controls do not establish execution on another
 platform. Full product/source/installed/public/platform gates remain separate.
+
+
+## Reusable recovery route received, 2026-11-07
+
+The [driver receipt](evidence/saved_run_recovery_20261107_summary.json) receives
+one normal command on a fresh copy of the original partial10000-work fixture:
+
+```bash
+python -m devtools.profile_saved_run --recover-from FAILED-profile-directory --output NEW-recovery-directory
+```
+
+Only this fixed profile's declared preparation timeout is eligible. Require the
+literal JSON boolean true, a supported integer size, expected regular database/
+manifest/journal files and output outside the original profile. Never replay
+saved commands or operate on linked input files. Verify the source report and
+copied bytes, then recheck original identities after both phases. The new report's
+completion describes copied-fixture recovery and its reader; the original run
+remains failed and one-shot preparation is still unqualified.
+
+Public recovery reuses existing attempt IDs, validates existing staged payloads,
+preserves6784confirmed outcomes and fills216more. The table's9000/8000/7000attempt
+counts and all original files survive. A fresh reader passes all exact checks and
+25additional repeated samples. Those receiving samples are not pooled into the
+original75-sample baseline. Per-child180s/512MiB AS/serial CPU19 controls remain;
+no provider/library-runtime/native or package change occurs.
+
+All22case guards pass, including original count/rank/export/immutability/corruption
+controls, partial-state recovery, conflicting staged data, source provenance,
+linked/inside-original output rejection, and exact timeout-flag admission. One
+initial test incorrectly asked a read-only view for writer attempt inspection;
+its1failure/11positive controls are preserved and the test uses the supported
+store operation. A later8-case metadata guard preserves2failures/6controls before
+rejecting truthy nonboolean flags. Two positive driver receivings retain their
+own identities; the final one uses exactly the guarded corrected source bytes.
+This closes#144's bounded baseline/reproducible-driver scope, with the failed
+original preparation and all broader installed/public/platform/performance work
+still explicit.

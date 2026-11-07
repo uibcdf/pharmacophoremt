@@ -1,0 +1,48 @@
+{
+  "schema": "pharmacophoremt.saved-run-recovery-summary@1",
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/144",
+  "source_parent": "da932cfb1c46220c297ec90662c8018e3a49fc20",
+  "normal_driver_recovery_received": true,
+  "accepted_attempt": 2,
+  "case_guards": 22,
+  "distinct_selected_cases": 67,
+  "selected_slices": {
+    "case_guards": 22,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "reader_runtime_files_unchanged": 9,
+  "original_profile_status": "failed",
+  "original_one_shot_10000_preparation_qualified": false,
+  "original_files_unchanged": true,
+  "preserved_confirmations": 6784,
+  "new_confirmations": 216,
+  "attempts": {
+    "started": 9000,
+    "staged": 8000,
+    "committed": 7000
+  },
+  "final_additional_receiving_samples": 25,
+  "original_baseline_samples": 75,
+  "sample_pooling": false,
+  "positive_driver_receivings_retained": 2,
+  "initial_wrong_api_guard_failures": 1,
+  "metadata_before_guard_failures": 2,
+  "resources": "AS512MiB per process, CPU19/thread1/nice19/idleI/O,180s each child; actual memory/pressure admission, no aggregate cgroup",
+  "resource_review_utc": "2026-11-20",
+  "own_files": 88,
+  "limits": "Final guarded reusable fixed-fixture recovery source route only; original10000one-shot preparation remains failed, baseline75samples remain unchanged/unpooled. No library-runtime/provider/native change, cold-I/O/incremental/asymptotic memory/speedup/molecular-throughput/cache/index/full installed/public/platform or release claim. Actual positive source attempts and original API-assumption/metadata-flag failures remain distinct.",
+  "full_evidence": {
+    "path": "saved_run_recovery_20261107_full.json.gz",
+    "compressed_bytes": 111299,
+    "compressed_sha256": "77a6179d6de225f1f6985c91670b66ce17c183d8a6633d176adb84abd6e66b13",
+    "uncompressed_bytes": 522851,
+    "uncompressed_sha256": "ce95d20c9a3ce5610caeeee49d19dcaa5bf72294b8e9e83f6f769e23d4124916"
+  }
+}

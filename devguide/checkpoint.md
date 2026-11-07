@@ -88,20 +88,20 @@ policy42421364958/publication42421369303 pass their required native steps.
 unchanged canonical owner heads and rehashes local bytes against the prior
 literal-text audit. No fresh text fetch or policy pin change is claimed.
 
-The [#144 saved-reader baseline](pending_proposals/profile_saved_run_scaling.md)
+The [#144 saved-reader baseline](archive/profile_saved_run_scaling.md)
 now receives three synthetic reader cells,75repeated samples and three first-open
 observations. Its [receipt](evidence/saved_run_scaling_20261107_summary.json) keeps
 all exact accounting/export/byte controls and the original10000preparation timeout.
 A separate verified-copy public recovery preserves6784confirmations and fills216;
 only that recovered reader phase then completes. No library runtime/provider/native change,
-cache/index or molecular-throughput claim follows. A reusable guarded case-recovery
-route remains before closing#144.
+cache/index or molecular-throughput claim follows. The [reusable recovery driver](evidence/saved_run_recovery_20261107_summary.json)
+now passes22case guards and the exact copied10000case;#144 resolves its bounded
+engineering scope. Extra receiving samples retain a separate identity.
 
-**Next concrete action:** promote/qualify that fixed case-recovery route while inspecting
-the existing recovery source run42421360591,
+**Next concrete action:** receive terminal full-source evidence from the existing
+recovery run42421360591,
 receiving actual terminal full logs/eight cells and corrected macOS boundary
-controls before accepting#143 or its source gate. Continue independent owned work
-while it runs. Do not redispatch, rebuild/relabel RDKit148/Point151 wheels, relax
+controls before accepting#143 or its source gate. Declare and review a bounded follow-up for immutable snapshot progress while it runs. Do not redispatch, rebuild/relabel RDKit148/Point151 wheels, relax
 thresholds or retry the full suite locally. MolSysMT#624 collections, full installed/
 public dependency/platform delivery, biology, comparison/performance and mature0.x
 acceptance retain separate gates.

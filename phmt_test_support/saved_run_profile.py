@@ -10,6 +10,7 @@ from pathlib import Path
 COUNTS = (100, 1000, 10000)
 PADDING_BYTES = 256
 CRITERION = "checked_pose_coverage@1"
+QUERY_BYTES = b'{"case":"synthetic-reader-profile@1"}\n'
 COMMITTED = (0, 1, 2, 3, 6, 7, 8)
 COLUMNS = (
     "work_key",
@@ -89,12 +90,48 @@ def ranked_ordinals(count):
                 yield 10 * block + residue
 
 
-def build_fixture(directory, count, padding_bytes=PADDING_BYTES):
-    """Create the declared fixture using public durability operations only."""
+def _sizes(count, padding_bytes):
     if type(count) is not int or count <= 0 or count % 10:
         raise ValueError("count must be a positive multiple of ten")
     if type(padding_bytes) is not int or padding_bytes < 0:
         raise ValueError("padding_bytes must be a nonnegative integer")
+
+
+def _context():
+    return {
+        "execution": {"score_method": "checked_pose_coverage"},
+        "producer": {
+            "kind": "synthetic-reader-profile@1",
+            "scientific_evaluation": False,
+        },
+    }
+
+
+def _describe_fixture(directory, count, padding_bytes, *, recovered=False):
+    database, manifest = directory / "run.sqlite3", directory / "work.jsonl"
+    configuration = {
+        "schema": "pharmacophoremt.synthetic-reader-profile@1",
+        "declared_work": count,
+        "padding_bytes": padding_bytes,
+        "database": database.name,
+        "database_identity": file_identity(database),
+        "manifest": manifest.name,
+        "manifest_identity": file_identity(manifest),
+        "expected": expected_summary(count),
+        "scope": "Synthetic saved-format records; no molecular/native evaluation or activity data.",
+    }
+    if recovered:
+        configuration["preparation_kind"] = "public recovery of copied partial fixture"
+        configuration["original_one_shot_preparation_qualified"] = False
+    with (directory / "fixture.json").open("x", encoding="utf-8") as output:
+        json.dump(configuration, output, indent=2)
+        output.write("\n")
+    return configuration
+
+
+def build_fixture(directory, count, padding_bytes=PADDING_BYTES):
+    """Create the declared fixture using public durability operations only."""
+    _sizes(count, padding_bytes)
     from pharmacophoremt_results import ScreeningRunStore
 
     directory = Path(directory)
@@ -107,14 +144,8 @@ def build_fixture(directory, count, padding_bytes=PADDING_BYTES):
     with ScreeningRunStore.create(
         database,
         run_id=f"synthetic-profile:{count}",
-        query_bytes=b'{"case":"synthetic-reader-profile@1"}\n',
-        context={
-            "execution": {"score_method": "checked_pose_coverage"},
-            "producer": {
-                "kind": "synthetic-reader-profile@1",
-                "scientific_evaluation": False,
-            },
-        },
+        query_bytes=QUERY_BYTES,
+        context=_context(),
         manifest_path=manifest,
     ) as store:
         for ordinal in reversed(range(count)):
@@ -126,19 +157,74 @@ def build_fixture(directory, count, padding_bytes=PADDING_BYTES):
             store.stage(attempt, outcome(ordinal, padding_bytes))
             if ordinal % 10 != 5:
                 assert store.publish(attempt)
-    configuration = {
-        "schema": "pharmacophoremt.synthetic-reader-profile@1",
-        "declared_work": count,
-        "padding_bytes": padding_bytes,
-        "database": database.name,
-        "database_identity": file_identity(database),
-        "manifest": manifest.name,
-        "manifest_identity": file_identity(manifest),
-        "expected": expected_summary(count),
-        "scope": "Synthetic saved-format records; no molecular/native evaluation or activity data.",
+    return _describe_fixture(directory, count, padding_bytes)
+
+
+def recover_fixture(directory, count, padding_bytes=PADDING_BYTES):
+    """Finish this fixed partial fixture through public store operations.
+
+    The caller supplies an owned verified copy, preserving its original failed
+    preparation. Existing attempts are reused; conflicting staged data propagates
+    the public error. This case helper adds no general run-recovery protocol.
+    """
+    _sizes(count, padding_bytes)
+    from pharmacophoremt_results import ScreeningRunStore
+
+    directory = Path(directory)
+    if (directory / "fixture.json").exists():
+        raise ValueError("a completed fixture must not be recovered")
+    preserved = new_begins = filled_stages = new_publications = 0
+    with ScreeningRunStore.open(
+        directory / "run.sqlite3",
+        query_bytes=QUERY_BYTES,
+        context=_context(),
+        manifest_path=directory / "work.jsonl",
+    ) as store:
+        before = store.progress()
+        for ordinal in range(count):
+            assert store.expected(ordinal) == mapping(ordinal)
+        assert store.expected(count) is None
+        for ordinal in reversed(range(count)):
+            key = mapping(ordinal)["work_key"]
+            attempts = list(store.attempts(key))
+            if len(attempts) > 1:
+                raise ValueError(
+                    "the fixed fixture permits at most one attempt per work"
+                )
+            if ordinal % 10 == 4:
+                assert not attempts
+                continue
+            if attempts and attempts[0]["committed"]:
+                assert ordinal % 10 in COMMITTED
+                assert store.committed(key) == outcome(ordinal, padding_bytes)
+                preserved += 1
+                continue
+            if attempts:
+                attempt = attempts[0]["attempt_id"]
+            else:
+                attempt = store.begin(key)
+                new_begins += 1
+            if ordinal % 10 == 9:
+                assert not attempts or not attempts[0]["staged"]
+                continue
+            # Re-staging identical data validates existing unpublished payloads.
+            store.stage(attempt, outcome(ordinal, padding_bytes))
+            if not attempts or not attempts[0]["staged"]:
+                filled_stages += 1
+            if ordinal % 10 != 5:
+                assert store.publish(attempt)
+                new_publications += 1
+        after = store.progress()
+        check_summary(after, count)
+    return {
+        "before": before,
+        "after": after,
+        "preserved_confirmations": preserved,
+        "new_begins": new_begins,
+        "filled_stages": filled_stages,
+        "new_confirmations": new_publications,
+        "fixture": _describe_fixture(directory, count, padding_bytes, recovered=True),
     }
-    (directory / "fixture.json").write_text(json.dumps(configuration, indent=2) + "\n")
-    return configuration
 
 
 def check_summary(actual, count):

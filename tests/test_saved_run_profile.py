@@ -157,3 +157,197 @@ def test_invalid_case_size_never_creates_fixture(tmp_path, count):
     with pytest.raises(ValueError):
         build_fixture(directory, count)
     assert not directory.exists()
+
+
+def partial_fixture(directory, *, conflicting_stage=False):
+    """Independent interrupted public writer: preserve concrete attempt identities."""
+    from pharmacophoremt_results import ScreeningRunStore
+    from phmt_test_support.saved_run_profile import outcome
+
+    directory.mkdir()
+    manifest = directory / "work.jsonl"
+    manifest.write_text(
+        "".join(
+            json.dumps(
+                {
+                    "work_key": f"work:{i}",
+                    "source_key": f"source:{i // 2}",
+                    "occurrence_key": f"row:{i}",
+                }
+            )
+            + "\n"
+            for i in range(10)
+        )
+    )
+    with ScreeningRunStore.create(
+        directory / "run.sqlite3",
+        run_id="synthetic-profile:10",
+        query_bytes=b'{"case":"synthetic-reader-profile@1"}\n',
+        context={
+            "execution": {"score_method": "checked_pose_coverage"},
+            "producer": {
+                "kind": "synthetic-reader-profile@1",
+                "scientific_evaluation": False,
+            },
+        },
+        manifest_path=manifest,
+    ) as store:
+        for ordinal in (9, 6, 5, 1, 0):
+            attempt = store.begin(f"work:{ordinal}")
+            if ordinal in (9, 1):
+                continue
+            payload = outcome(ordinal, 16)
+            if conflicting_stage and ordinal == 5:
+                payload["native_result"]["padding"] = (
+                    "different original staged payload"
+                )
+            store.stage(attempt, payload)
+            if ordinal == 6:
+                store.publish(attempt)
+        return {
+            key: list(store.attempts(key))
+            for key in ("work:9", "work:6", "work:5", "work:1", "work:0")
+        }
+
+
+def test_public_fixture_recovery_preserves_existing_attempts_and_scores(tmp_path):
+    import shutil
+
+    from pharmacophoremt_results import ScreeningRunStore
+    from phmt_test_support.saved_run_profile import recover_fixture
+
+    original, copied = tmp_path / "original", tmp_path / "copy"
+    attempts = partial_fixture(original)
+    before = {p.name: file_identity(p) for p in original.iterdir()}
+    shutil.copytree(original, copied)
+    received = recover_fixture(copied, 10, 16)
+    assert received["preserved_confirmations"] == 1
+    assert received["new_confirmations"] == 6
+    assert received["new_begins"] == 4
+    assert received["after"]["attempts"] == {"started": 9, "staged": 8, "committed": 7}
+    assert received["fixture"]["original_one_shot_preparation_qualified"] is False
+    with ScreeningRunStore.open(
+        copied / "run.sqlite3",
+        query_bytes=b'{"case":"synthetic-reader-profile@1"}\n',
+        context={
+            "execution": {"score_method": "checked_pose_coverage"},
+            "producer": {
+                "kind": "synthetic-reader-profile@1",
+                "scientific_evaluation": False,
+            },
+        },
+        manifest_path=copied / "work.jsonl",
+    ) as view:
+        for key, old in attempts.items():
+            assert [a["attempt_id"] for a in view.attempts(key)] == [
+                a["attempt_id"] for a in old
+            ]
+        check_top(view.top_results(score_method=CRITERION, limit=100), 10, 100, 16)
+    assert before == {p.name: file_identity(p) for p in original.iterdir()}
+    with pytest.raises(ValueError, match="completed fixture"):
+        recover_fixture(copied, 10, 16)
+
+
+def test_recovery_refuses_conflicting_original_unpublished_payload(tmp_path):
+    import shutil
+
+    from phmt_test_support.saved_run_profile import recover_fixture
+
+    original, copied = tmp_path / "original", tmp_path / "copy"
+    partial_fixture(original, conflicting_stage=True)
+    before = {p.name: file_identity(p) for p in original.iterdir()}
+    shutil.copytree(original, copied)
+    with pytest.raises(ScreeningRunError):
+        recover_fixture(copied, 10, 16)
+    assert not (copied / "fixture.json").exists()
+    assert before == {p.name: file_identity(p) for p in original.iterdir()}
+
+
+def interrupted_control_directory(
+    path, *, status="failed", phase="prepare", count=100, timeout=True
+):
+    """Opaque copy-control bytes, not a valid scientific or ledger fixture."""
+    path.mkdir()
+    (path / "run.json").write_text(
+        json.dumps(
+            {
+                "schema": "pharmacophoremt.saved-reader-profile-run@1",
+                "status": status,
+                "commands": [
+                    {
+                        "phase": phase,
+                        "count": count,
+                        "timed_out": timeout,
+                        "arguments": ["never-replay-saved-commands"],
+                    }
+                ],
+            }
+        )
+    )
+    partial = path / f"work-{count}"
+    partial.mkdir()
+    (partial / "run.sqlite3").write_bytes(b"opaque owned copy-control bytes")
+    (partial / "work.jsonl").write_text("opaque owned manifest bytes")
+    return partial
+
+
+def test_recovery_copy_provenance_detects_later_original_change(tmp_path, monkeypatch):
+    from devtools.profile_saved_run import copy_failed_fixture, verify_original
+
+    source, destination = tmp_path / "source", tmp_path / "new"
+    partial = interrupted_control_directory(source)
+    destination.mkdir()
+    monkeypatch.setattr(
+        "subprocess.run",
+        lambda *a, **kw: pytest.fail("saved commands must never be replayed"),
+    )
+    count, receipt = copy_failed_fixture(source, destination)
+    assert count == 100
+    assert receipt["original_preparation_qualified"] is False
+    assert {p.name: file_identity(p) for p in partial.iterdir()} == {
+        p.name: file_identity(p) for p in (destination / "work-100").iterdir()
+    }
+    verify_original(receipt)
+    (partial / "work.jsonl").write_text("external change after verified copy")
+    with pytest.raises(AssertionError):
+        verify_original(receipt)
+
+
+@pytest.mark.parametrize(
+    "changes",
+    [
+        {"status": "completed"},
+        {"phase": "measure"},
+        {"count": True},
+        {"count": 99},
+        {"timeout": False},
+        {"timeout": 0},
+        {"timeout": "false"},
+        {"timeout": 1},
+    ],
+)
+def test_recovery_copy_refuses_ineligible_control_metadata(tmp_path, changes):
+    from devtools.profile_saved_run import copy_failed_fixture
+
+    source, destination = tmp_path / "source", tmp_path / "new"
+    interrupted_control_directory(source, **changes)
+    destination.mkdir()
+    with pytest.raises(ValueError):
+        copy_failed_fixture(source, destination)
+    assert list(destination.iterdir()) == []
+
+
+def test_recovery_copy_refuses_original_subdirectories_and_links(tmp_path):
+    from devtools.profile_saved_run import copy_failed_fixture
+
+    source, destination = tmp_path / "source", tmp_path / "new"
+    partial = interrupted_control_directory(source)
+    with pytest.raises(ValueError, match="outside the original"):
+        copy_failed_fixture(source, source / "nested-output")
+    assert not (source / "nested-output").exists()
+    (partial / "run.sqlite3").unlink()
+    (partial / "run.sqlite3").symlink_to(partial / "work.jsonl")
+    destination.mkdir()
+    with pytest.raises(ValueError, match="linked"):
+        copy_failed_fixture(source, destination)
+    assert list(destination.iterdir()) == []

@@ -1,12 +1,12 @@
 ---
 summary: Measure saved-run inspection and export scaling with complete record verification.
 issue: uibcdf/pharmacophoremt#144
-status: partial
+status: resolved
 opened: 2026-11-07
-closed:
+closed: 2026-11-07
 verification: reproduced
 area: [performance, results, inspection]
-guard: tests/test_saved_run_profile.py::test_declared_pattern_keeps_ties_failures_and_unpublished_work
+guard: tests/test_saved_run_profile.py
 normative: devguide/saved_run_scaling.md
 blocked_by: []
 supersedes: []
@@ -59,3 +59,26 @@ a reusable guarded driver route, preserving original failure/source/measurement
 identities. The current normal driver retains the original preparation failure;
 its10000reader receiving required the separately archived controller. Later
 immutable-progress optimization is a distinct prospective decision.
+
+
+## Resolution received, 2026-11-07
+
+The [reusable driver receipt](../evidence/saved_run_recovery_20261107_summary.json)
+receives the normal `--recover-from` route on a verified fresh copy of the original
+partial10000fixture. It preserves original bytes and6784confirmations, fills216,
+keeps all attempt identities/counts, then independently qualifies its reader and
+25additional repeated samples. The original75samples/failed preparation remain
+untouched and unpooled. Source/code/import/resource identities and the initial
+API-assumption/metadata-flag guard failures are preserved.
+
+All22independent case guards pass. The module guard protects the declared table,
+exact ranks/full exports, corruption outside Top-K, recovery without duplicate
+attempts, staged conflicts and safe original/provenance/metadata admission. The
+normal CLI route is usable without adapting workstation-specific recovery code.
+
+This resolves the engineering baseline/reproducible-driver theme. It does not
+qualify original one-shot10000preparation within180s, another source/provider/
+platform, a public artifact, molecular throughput, an index/cache or a speedup.
+The measured next decision is review of shared scan/verification cost and a
+separately declared equivalent immutable-progress experiment. Full source#9,
+installed/public#23 and mature0.x gates remain open.

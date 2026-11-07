@@ -138,11 +138,12 @@ requirements remain separate.
 
 ## Bounded saved-reader performance baseline
 
-[#144](pending_proposals/profile_saved_run_scaling.md) receives three synthetic
+[#144](archive/profile_saved_run_scaling.md) receives three synthetic
 [inspection/export profiles](saved_run_scaling.md),75repeated samples and three
 first-open observations with exact answers. Preserve original10000preparation
 timeout and separate verified-copy public recovery. The guarded reusable recovery
-route remains; no cache/index, speedup or molecular-throughput claim follows.
+route now passes22controls and the copied10000case, resolving#144; no cache/index,
+speedup or molecular-throughput claim follows.
 
 ## Current priority: classical consolidation
 
