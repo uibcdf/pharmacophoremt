@@ -11,14 +11,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 ## Last received increment and next action
 
 The latest source correction fixes [native Point center inspection](native_geometry_inspection.md)
-under[#142](pending_bugs/point_center_inspection.md): a read-only alias exposes the
+under[#142](archive/point_center_inspection.md): a read-only alias exposes the
 canonical position, ordinary point/mixed center-distance queries now work, and
 empty/filtered center arrays keep shape(0,3). The
 [source receipt](evidence/point_inspection_source_20261107_summary.json) passes338
 selected cases, including16new regressions with the original13failing/3positive
 controls preserved. Native point fields, radius absence and existing distance
-implementation remain unchanged. Exact owned installed receiving is next;
-#142 stayspartial and later than the already running frozen source checkpoint.
+implementation remain unchanged. [Exact owned installed receiving](evidence/point_inspection_installed_20261107_summary.json)
+passes the same338bodies/two original isolated children and the unchanged RDKit
+recipe from wheel0.4.0+151.g858fe5a;210payload/155runtime files authenticate.
+#142 resolves this bounded defect; full supported gates remain separate.
 
 The [new accumulated checkpoint](projection_ci_checkpoint.md) is dispatched at
 exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1. Its
@@ -73,16 +75,13 @@ separate recovery. [Current guide audit](evidence/projection_ci_guide_audit_2026
 compares all seven real canonical texts at exact owner revisions; all match.
 The frozen policy-v1.5.4 caller remains separate and unchanged.
 
-**Next concrete action:** receive the Point inspection correction from one exact
-owned wheel outside the checkout using the same338 library bodies, while inspecting
-terminal source CI42416657424/actual XML for its earlier frozen489be12 candidate.
-Do not rebuild or relabel the existing RDKit148wheel or source run. Preserve eight
-full source cells and actual architecture/dependency/test/file identities before
-accepting any hosted gate. The successful policy/publication steps retain their
-separate receipts. No full local-suite retry, duplicate source dispatch or package
-publication is needed. MolSysMT#624 collections, full installed/public dependency/
-platform delivery, biology, comparison/performance and mature0.x acceptance retain
-their separate gates.
+**Next concrete action:** diagnose the macOS exact-upper-bound analytical failure
+under#143, preserving the frozen489be12 source run and all original fixtures and
+results. Complete terminal source CI42416657424/actual corrected XML receiving
+when available. Do not rebuild/relabel the existing RDKit148 or Point151 wheels,
+relax scientific thresholds, retry the full suite locally or blindly redispatch.
+MolSysMT#624 collections, full installed/public dependency/platform delivery,
+biology, comparison/performance and mature0.x acceptance retain separate gates.
 
 ## Active public integration
 

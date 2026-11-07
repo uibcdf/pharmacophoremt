@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (83)
+### Resolved (84)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -55,6 +55,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`ordinary_documentation_build.md`](ordinary_documentation_build.md) — [#53](https://github.com/uibcdf/pharmacophoremt/issues/53) — Repair the strict whole-site build and unrelated software identity claims. *(resolved, measured)*
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
+- [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*
 - [`portable_developer_handoff.md`](portable_developer_handoff.md) — [#107](https://github.com/uibcdf/pharmacophoremt/issues/107) — Prepare a truthful portable onboarding and machine-migration handoff. *(resolved, measured)*
 - [`pose_radius_boundary_units.md`](pose_radius_boundary_units.md) — [#84](https://github.com/uibcdf/pharmacophoremt/issues/84) — Preserve inclusive positive-site radius decisions across application units. *(resolved, measured)*
 - [`prepared_ccd_ligand_validation.md`](prepared_ccd_ligand_validation.md) — [#30](https://github.com/uibcdf/pharmacophoremt/issues/30) — Traceable CCD ideal ligands for native preparation, refinement and consensus controls. *(resolved, measured)*

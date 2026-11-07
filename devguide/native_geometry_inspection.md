@@ -1,9 +1,9 @@
 # Native point-center inspection
 
-Owners LMMV/dprada; declared/source-received2026-11-07;
+Owners LMMV/dprada; source/owned-installed received2026-11-07;
 [#142](https://github.com/uibcdf/pharmacophoremt/issues/142).
 The source correction is implemented and passes338 selected cases, including16
-new controls. Exact owned installed receiving remains pending. The
+new controls. Exact owned installed receiving passes the same338 bodies. The
 [source receipt](evidence/point_inspection_source_20261107_summary.json) retains
 the actual before/after source, tests, limits and failures.
 
@@ -46,5 +46,20 @@ nondefault-unit cases preserve their identities; no provider/prefix/native chang
 The changed two runtime files conservatively change prepared-run source bindings.
 Preserve original plans and databases; independent saved readers are separate
 from reexecution. Frozen CI489be12 started before this fix and cannot qualify it.
-Receive one exact owned wheel for this new producer and the same338 bodies before
-closing#142; full current-head/installed/public/platform gates retain#9/#23 scope.
+The exact owned wheel and same338 bodies are now received; full current-head/installed/public/platform gates retain#9/#23 scope.
+
+
+## Exact owned installed receiving
+
+Producer858fe5a4d3d4ea61649479802721c80476ae4925 builds one owned
+wheel0.4.0+151.g858fe5a. The [installed receipt](evidence/point_inspection_installed_20261107_summary.json)
+authenticates210payload files/155nongenerated runtime files, and141loaded main
+file modules/three namespaces resolve to that target. The same338 library bodies,
+two original diagnostic/absence subprocess bodies and the unchanged RDKit recipe
+pass outside the checkout. Copied test-only helper modules are explicitly admitted
+from the fixture workspace; they are not wheel payload. Startup is isolated,
+shared-provider files/native hash remain unchanged, and the qualified shared SDK
+origin checker is reused. The original harness rejection of the extra curation
+child remains preserved alongside its correction. This resolves#142's bounded
+core defect, separately from full supported source/installed/public/platform
+qualification. No new package release or general library integration is claimed.
