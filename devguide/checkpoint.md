@@ -17,7 +17,11 @@ The latest runtime increment adds
 ranking/export semantics and full saved-evidence verification remain intact.
 The [source receipt](evidence/saved_run_progress_source_20261107.json) passes102
 distinct selected cases, including9 new progress and48 existing reader/export/CLI
-controls. Exact owned installed receiving is next; no new full CI is dispatched.
+controls. The [sealed receiving](evidence/saved_run_progress_20261107_summary.json)
+passes the same57 library bodies in one exact owned installed wheel,51 guarded
+fresh children and16 documented commands on four unchanged original databases.
+Producer1950421/owned wheel0.4.0+144 remains distinct from the earlier CI source;
+no new full CI is dispatched and no public package is released.
 
 The earlier [accumulated checkpoint](accumulated_ci_checkpoint.md) targets exact
 `4616c786c5de959ef0d6e98120d7183dcc217553`. The current source includes both runtime
@@ -30,8 +34,9 @@ retains101 selected local cases, original control failures and their corrections
 Hosted [execution evidence](evidence/accumulated_ci_execution_20261107.json):
 [CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757)
 has successful reporting governance (3 reporting,18 archive,8 route/recovery and
-full131 administrative cases). At the later live observation, four scientific
-cells pass, two execute and two queue; **complete source CI is still pending**.
+full131 administrative cases). The [later native observation](evidence/accumulated_ci_observation_20261107_progress.json)
+has five scientific jobs successful, two executing and one queued;
+**complete source CI is still pending**.
 [Policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
 and [publication governance42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565)
 pass all required native steps. No package build/upload/release occurs.
@@ -40,14 +45,11 @@ The [API/CLI exports](saved_result_cli.md), [public runs](public_prepared_runs.m
 [guided/expert comparison](guided_expert_journey_receiving.md) and
 [released-reader support](reader_public_provider_receiving.md) retain separate
 frozen producers and receiving limits. Old scheduled42383495995/654586f and its
-original governance failure remain intact. Full current-candidate administrative
-receiving now passes on the hosted route; the earlier local memory/guard failures
-are preserved and are not rewritten as successful local execution.
+original governance failure remain intact. Full administrative receiving for
+frozen4616c78 now passes on the hosted route; the earlier local memory/guard
+failures are preserved and are not rewritten as successful local execution.
 
-**Next concrete action:** freeze the source-qualified progress increment, build
-one owned wheel and receive its reader/API/CLI outside the checkout with original
-public support payloads and saved databases. Continue observing
-source CI42399097757/attempt1 and
+**Next concrete action:** continue observing source CI42399097757/attempt1 and
 verify all8 actual Linux/macOS arm64 Python3.11–3.14 cells, dependency preflights
 and Run tests steps. Do not duplicate a live run or infer completion from the
 three governance successes. Retain exact frozen4616c78 identities if a later
@@ -69,10 +71,12 @@ distinct. Earlier [iterator receiving](public_prepared_screening.md) and
 The preceding development receiving refreshed only this member's editable metadata
 and ignored version cache to0.4.0+134.gee5d9fa. That dated runtime matched its owned
 wheel and reopened its same-byte relocated run with zero new evaluations. The
-current exporter changes companion code; old scientific bindings can now require
-a new linked run, while saved reading/export remains independent. The new owned
-wheel retains its distinct140 build version. No shared-prefix/native/provider
-change is made here. [Onboarding](onboarding.md) retains the earlier route.
+current exporter/progress increments affect companion code; old scientific
+bindings can now require a new linked run, while saved reading/export remains
+independent. The new owned progress wheel retains its distinct144 build version;
+the preceding export wheel keeps its original140 identity. No shared-prefix/
+native/provider change is made here. [Onboarding](onboarding.md) retains the
+earlier route.
 
 ## Implemented evidence and delivery boundary
 
@@ -90,7 +94,7 @@ change is made here. [Onboarding](onboarding.md) retains the earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity and API/CLI exports received in bounded contexts; criterion-independent progress passes102 selected source cases | Receive one exact owned progress wheel; observe frozen CI42399097757 separately, then broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports and criterion-independent progress received in bounded source/owned installed contexts | Observe frozen CI42399097757 separately; qualify broader usability/provider/source operations and full changed-pin/public gates |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

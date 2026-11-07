@@ -10,6 +10,10 @@ attempts, the test-layout correction and the incomplete administrative attempt.
 
 ## User contract
 
+The later [progress increment](saved_run_progress.md) adds `--summary` through
+`ScreeningRunView.progress()`, independently of the explicit ranking criterion.
+Its own source/installed receipt retains that increment's producer and scope.
+
 Keep the existing ranked inspection command and its scalar JSON output:
 
 ```bash

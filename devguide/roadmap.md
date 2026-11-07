@@ -113,17 +113,19 @@ validate the accumulated public workflow at the
 [declared exact-head checkpoint](accumulated_ci_checkpoint.md). Coverage now
 includes the core and saved-results companion; guide-copy receiving remains
 separate from the unchanged frozen policy caller and actual provider qualification.
-The complete administrative/source gate remains open after the recorded local
-resource/guard failures; its corrected selected controls do not clear it. The
-public-support
-reader slice does not qualify a full PHMT dependency solve or platform matrix.
+The corrected selected local controls do not clear the complete source gate.
+Later hosted administrative receiving at frozen4616c78 succeeds as recorded
+below; the original local resource/guard failures remain preserved. The
+public-support reader slice does not qualify a full PHMT dependency solve or
+platform matrix.
 No release or full supported gate is established by this reader increment.
 
 The [criterion-independent progress increment](saved_run_progress.md) adds
 public store/view `progress()` and CLI `--summary`, preserving explicit ranking
-and legacy admission. Its102 selected source cases pass; receive one exact
-owned installed wheel next. This later runtime is not covered by the earlier
-frozen checkpoint, and its exact-head debt remains #9-owned.
+and legacy admission. Its102 selected source cases pass, and all57 library bodies
+plus16 documented commands pass from one exact owned installed wheel. This
+later runtime is not covered by the earlier frozen checkpoint, and its
+exact-head debt remains #9-owned.
 
 The accumulated checkpoint is now running at exact4616c78: complete reporting
 governance (including131 administrative cases), frozen policy and publication

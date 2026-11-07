@@ -20,7 +20,9 @@ supersedes: []
 The [progress source receipt](../evidence/saved_run_progress_source_20261107.json)
 passes102 selected cases, including57 public progress/reader/export/CLI controls,
 24 distribution,3 reporting and18 archive cases. Full Ruff, declared routes and
-index checks pass. One exact owned installed-wheel receiving is next. This later
+index checks pass. The [owned installed receipt](../evidence/saved_run_progress_20261107_summary.json)
+receives the same57 library bodies,51 fresh children and16 original-database
+commands from exact1950421/wheel144, without scientific imports. This later
 runtime uses the authorized routine `[skip ci]` delivery; the still-live
 CI42399097757/attempt1 at frozen4616c78 is not restarted or relabelled as its
 source evidence. All later exact-head and installed/public/platform gates remain

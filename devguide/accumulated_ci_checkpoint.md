@@ -129,3 +129,14 @@ new source SHA; any newer-head debt remains explicit under #9.
 Continue observing these exact live handles; do not restart because a poll times
 out or a queue is slow. Diagnose actual terminal failures with their original
 attempt identity, and verify every required cell/step before accepting source CI.
+
+## Later observation during the progress increment
+
+The [native scalar observation](evidence/accumulated_ci_observation_20261107_progress.json)
+retains frozen4616c78/attempt1: five science jobs successful, two executing and
+one queued, with required preflight/test/coverage step states. Complete source
+acceptance remains pending. The earlier initial observation is unchanged.
+The later [progress runtime](saved_run_progress.md) has its own102 selected source
+cases and exact1950421 installed-wheel receiving. Neither those local results
+nor a later receipt commit relabels the source of this live CI run. Later-head
+full source/policy/installed/public debt remains explicit under #9/#10/#23/#95.

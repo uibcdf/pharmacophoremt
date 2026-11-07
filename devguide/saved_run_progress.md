@@ -4,8 +4,10 @@ Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108), mature-0.x milestone2.
 This contract and its [prospective plan](evidence/saved_run_progress_plan_20261107.json)
 precede implementation/receiving. The
-[source receipt](evidence/saved_run_progress_source_20261107.json) now passes102
-distinct selected cases; exact owned installed receiving remains pending.
+[source receipt](evidence/saved_run_progress_source_20261107.json) passes102
+distinct selected cases. The [sealed receiving receipt](evidence/saved_run_progress_20261107_summary.json)
+also receives the same57 library bodies and16 documented commands from one
+exact owned installed wheel outside the checkout.
 
 ## Public task and ownership
 
@@ -62,13 +64,44 @@ declared dependency routes, indexes and whitespace checks. No provider or
 scientific implementation changes. Public methods use ArgDigest's existing
 definition-owned standard contracts and SMonitor catalog orchestration.
 
-Execute the prospective controls against source and one exact owned installed
-wheel outside the checkout. Preserve original attempts, complete local receipts,
-actual resource limits and original saved-file identities. Publish only owned
-control text and scalar/hash evidence; full native/query/database bodies and
-third-party support payloads remain local.
+Frozen producer: `1950421b94ae9933a2790aa18a56f619034f6d51`.
+The one wheel is `pharmacophoremt-0.4.0+144.g1950421-py3-none-any.whl`,4515659
+bytes, SHA-256 `f473a3503f13d9f26fcce5da86dbdd6e9dc8730e28b2bad8c95785086d6cd97d`.
+All209 non-RECORD payload files match their installed bytes;154 nongenerated
+runtime files match the source. The shared editable metadata/cache remains at
+its earlier134 identity; provider prefixes, pins and molecular native code are
+unchanged. No wheel is rebuilt or published during receiving.
 
-The live accumulated source CI42399097757/attempt1 belongs to frozen4616c78;
+The source-free receiving starts with `-I -S -B` and only the owned installed
+file, original authenticated public ArgDigest0.17.1/SMonitor0.22.1/DepDigest0.11
+payloads and standard-library roots. All57 library bodies pass with no skips or
+unexpected failures. The51 fresh children have no forbidden scientific,
+attribution or development-support import. Expected error-path commands retain
+their nonzero statuses; they are not successful science. The synthetic legacy
+fixture uses the installed standard-library storage core, not a checkout shim.
+
+The four actual documented commands execute on each of four original source/
+installed-complete, source-partial and explicit legacy databases. All16 succeed.
+Progress matches both API output and independently read original SQLite work,
+status and attempt counts. Existing ranks, full native JSONL, CSV scalar fields,
+configuration and file hashes also agree. Original database bytes remain
+unchanged. The partial run retains one zero confirmation and two pending items;
+the three complete originals each retain three outcomes. This is saved evidence
+receiving, without new molecular preparation, scoring or attribution.
+
+Original controls, child outputs, guard snapshots, databases and full native
+receipts remain in ignored `build/phmt-saved-progress-20261107-7m2ihh2r` and owned
+`/tmp/phmt-saved-progress-20261107-f0rwxode`. Published archive content is limited
+to owned control/code text and scalar/hash receipts; native/query/database bodies
+and third-party payloads stay local. Owners review retained resources by2026-11-20.
+Execution is serial on CPU19, one backend thread, nice19/idle I/O, with entry
+pressure checks. Source/receiving use per-process512MiB address-space limits;
+build uses a512MiB data limit to permit Git mappings. No own systemd runtime
+exists, so aggregate memory, no-swap, task or CPU-quota limits are not enforced.
+
+The [later native observation](evidence/accumulated_ci_observation_20261107_progress.json)
+has five science jobs successful, two executing and one queued. The live
+accumulated source CI42399097757/attempt1 belongs to frozen4616c78;
 it cannot qualify this later runtime increment. Follow its existing handles
 without duplicate dispatch. New exact-head debt remains #9-owned; full
 source/dependency/installed/public/platform/release and mature-0.x gates retain

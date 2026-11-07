@@ -1,0 +1,233 @@
+{
+  "schema": "pharmacophoremt.accumulated-ci-observation@1",
+  "observed_at_utc": "2026-11-07 18:49:57 UTC",
+  "source_commit": "4616c786c5de959ef0d6e98120d7183dcc217553",
+  "run": {
+    "id": 42399097757,
+    "attempt": 1,
+    "status": "queued",
+    "conclusion": null,
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757"
+  },
+  "acquisition": "Connected GitHub plugin: native run and latest-attempt job/step facts; scalar projection only",
+  "jobs": [
+    {
+      "id": 128482803764,
+      "name": "Reporting governance",
+      "status": "completed",
+      "conclusion": "success",
+      "required_steps": []
+    },
+    {
+      "id": 128482804055,
+      "name": "Test on macos-15, Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "id": 128482804090,
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "id": 128482804093,
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "status": "completed",
+      "conclusion": "success",
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "id": 128482804111,
+      "name": "Test on macos-15, Python 3.12",
+      "status": "in_progress",
+      "conclusion": null,
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run tests",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "name": "Check coverage",
+          "status": "pending",
+          "conclusion": null
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "pending",
+          "conclusion": null
+        }
+      ]
+    },
+    {
+      "id": 128482804161,
+      "name": "Test on macos-15, Python 3.13",
+      "status": "in_progress",
+      "conclusion": null,
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "pending",
+          "conclusion": null
+        },
+        {
+          "name": "Run tests",
+          "status": "pending",
+          "conclusion": null
+        },
+        {
+          "name": "Check coverage",
+          "status": "pending",
+          "conclusion": null
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "pending",
+          "conclusion": null
+        }
+      ]
+    },
+    {
+      "id": 128482804192,
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "status": "completed",
+      "conclusion": "success",
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 128482804195,
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "status": "completed",
+      "conclusion": "success",
+      "required_steps": [
+        {
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Upload coverage reports to Codecov",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ]
+    },
+    {
+      "id": 128482804220,
+      "name": "Test on macos-15, Python 3.11",
+      "status": "queued",
+      "conclusion": null,
+      "required_steps": []
+    },
+    {
+      "id": 128482804808,
+      "name": "Check skipped-commit backlog",
+      "status": "completed",
+      "conclusion": "skipped",
+      "required_steps": []
+    }
+  ],
+  "scope": "Live frozen4616c78 source CI; not later1950421 runtime receiving, not full-source acceptance, installed/public or release evidence. Earlier initial observation remains unchanged."
+}

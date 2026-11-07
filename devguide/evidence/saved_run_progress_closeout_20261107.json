@@ -1,0 +1,141 @@
+{
+  "schema": "pharmacophoremt.saved-run-progress-closeout@1",
+  "frozen_runtime_producer": "1950421b94ae9933a2790aa18a56f619034f6d51",
+  "receiving_summary": "saved_run_progress_20261107_summary.json",
+  "archive_seal": {
+    "own_files_verified": 147,
+    "archive": {
+      "bytes": 342818,
+      "sha256": "c2114303c91264044e3cbfabec309fba8e31ce2ca693010a06c5fe29b4d4c2c1"
+    },
+    "summary": {
+      "bytes": 1658,
+      "sha256": "6acc42267ee7f1e80b95f3b8a9eacdecd26dd6212df8533865f530caf2bf7307"
+    },
+    "runtime_and_original_databases_unchanged": true
+  },
+  "post_seal_checks": [
+    {
+      "name": "ruff-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 0.03353339999921445,
+      "log": "ruff-check-closeout.log",
+      "log_identity": {
+        "bytes": 19,
+        "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+      }
+    },
+    {
+      "name": "ruff-format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "seconds": 0.03278600300109247,
+      "log": "ruff-format-closeout.log",
+      "log_identity": {
+        "bytes": 28,
+        "sha256": "fb4be7333d41539def0a8a7662d9037c5f70b7e4975b078cf3f793cc4314a12f"
+      }
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.4148789390001184,
+      "log": "index-closeout.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    {
+      "name": "index-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.36477632700007234,
+      "log": "index-check-closeout.log",
+      "log_identity": {
+        "bytes": 38,
+        "sha256": "3a525cb88e38e62b2cd78f962eec311aeb1797c9a439b3c7d832b95b00a8d5b5"
+      }
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.9657958370007691,
+      "log": "reporting-closeout.log",
+      "log_identity": {
+        "bytes": 101,
+        "sha256": "06a7b54ef2f93a5d2e42c5c67515f3292875a0ad1b390790f6379c1da0b0e5d2"
+      }
+    },
+    {
+      "name": "archive",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "seconds": 3.923703499000112,
+      "log": "archive-closeout.log",
+      "log_identity": {
+        "bytes": 117,
+        "sha256": "821aee511166c8226fbc7a7c1159d3bdeffc3a4bb509060b0cb0b5db1ed0f4e2"
+      }
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.019331747000251198,
+      "log": "whitespace-closeout.log",
+      "log_identity": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  ],
+  "post_check_document_changes": "Prose wrapping and removal of stale administrative-gate wording only; runtime, tests, sealed archive and original observations remain unchanged",
+  "full_source_ci": "42399097757/attempt1 at4616c78 remains live and separate; no new dispatch",
+  "goal": "Active mature-0.x staircase, not completed by this receiving increment"
+}

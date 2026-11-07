@@ -1,0 +1,47 @@
+{
+  "schema": "pharmacophoremt.saved-run-progress-summary@1",
+  "date_utc": "2026-11-07",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "frozen_producer": "1950421b94ae9933a2790aa18a56f619034f6d51",
+  "version": "0.4.0+144.g1950421",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-saved-progress-20261107-7m2ihh2r/wheels/pharmacophoremt-0.4.0+144.g1950421-py3-none-any.whl",
+    "bytes": 4515659,
+    "sha256": "f473a3503f13d9f26fcce5da86dbdd6e9dc8730e28b2bad8c95785086d6cd97d"
+  },
+  "distinct_selected_source_cases": 102,
+  "installed_library_cases": 57,
+  "fresh_children": 51,
+  "fresh_child_exit_codes": {
+    "0": 34,
+    "2": 17
+  },
+  "original_databases": 4,
+  "documented_historical_commands": 16,
+  "forbidden_import_attempts": [],
+  "runtime_source_installed_files_equal": 154,
+  "own_files": 147,
+  "resource_review_utc": "2026-11-20",
+  "scope": "No new scientific execution, molecular collection, general library connector, benchmark, biological evidence, complete public PHMT solve, full source/platform gate or release.",
+  "limits": {
+    "rlimit_as_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "aggregate_memory_swap_tasks_cpu_quota": "Not enforced; no own user systemd runtime/bus"
+  },
+  "full_evidence": {
+    "path": "saved_run_progress_20261107_full.json.gz",
+    "compressed_bytes": 342818,
+    "compressed_sha256": "c2114303c91264044e3cbfabec309fba8e31ce2ca693010a06c5fe29b4d4c2c1",
+    "uncompressed_bytes": 3958878,
+    "uncompressed_sha256": "03bfc56fd03f74be21a971b5bfc0b8cf0c1c45010c95eb34b1e5f9a7b6f42156"
+  }
+}

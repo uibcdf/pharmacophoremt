@@ -41,7 +41,7 @@ does not clear complete source/governance or installed scientific gates.
 
 The [criterion-independent progress increment](saved_run_progress.md) adds
 `progress()` to the public store/view and CLI `--summary`, reusing the same scan.
-Its source controls pass; exact owned installed receiving remains pending. Existing
+Its102 selected source cases and57 same-wheel installed library bodies pass. Existing
 criterion-specific summaries/ranks and scientific run contracts are unchanged.
 
 ## Version and compatibility contracts
