@@ -10,16 +10,30 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The latest source correction fixes [native Point center inspection](native_geometry_inspection.md)
+under[#142](pending_bugs/point_center_inspection.md): a read-only alias exposes the
+canonical position, ordinary point/mixed center-distance queries now work, and
+empty/filtered center arrays keep shape(0,3). The
+[source receipt](evidence/point_inspection_source_20261107_summary.json) passes338
+selected cases, including16new regressions with the original13failing/3positive
+controls preserved. Native point fields, radius absence and existing distance
+implementation remain unchanged. Exact owned installed receiving is next;
+#142 stayspartial and later than the already running frozen source checkpoint.
+
 The [new accumulated checkpoint](projection_ci_checkpoint.md) is dispatched at
 exact489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1. Its
 [initial receipt](evidence/projection_ci_initial_20261107.json) observes source
 CI42416657424 with all eight scientific cells running and reporting successful;
 policy42416661473/publication governance42416665708 pass their required native
-steps. Complete source tests and corrected hosted XML#141 are still pending.
+steps. A later native observation finds macOS3.13/3.14 each failing the
+`exact_upper_bound` analytical comparison (2338pass/1fail); three Linux cells
+already pass and other cells remain running. Preserve this failure: the frozen
+source gate is not accepted. Complete evidence and corrected hosted XML#141
+remain pending; diagnose the boundary fixture without relaxing method thresholds.
 Preserve these identities and inspect the existing runs; never redispatch on an
 observation timeout or relabel them with a later receipt head.
 
-The latest received increment implements the [public RDKit projection contract](rdkit_projection.md):
+The received RDKit increment implements the [public RDKit projection contract](rdkit_projection.md):
 legacy point targets and fixed-radius reading remain available; explicit spheres,
 radius=None reading, detached field/loss reports and warn/strict/ignore choices
 are now public. Full preflight rejects unsupported alternatives, invalid/overflowed
@@ -35,79 +49,40 @@ resolve to that target. [#140](archive/qualify_rdkit_projection.md) closes only
 this field contract. No new provider/prefix/native modification, public release, general
 library connector or scientific-equivalence claim follows.
 
-The accumulated frozen-source gates are complete: [terminal receiving](evidence/accumulated_ci_terminal_20261107.json)
-verifies all eight Linux/macOS arm64 Python3.11–3.14 cells with **2259 passed tests
-per cell**, native architecture/dependency checks and the same0.4.0+142.g4616c78
-producer. Reporting governance, frozen policy and publication checks also pass.
-That acceptance belongs to exact4616c78, not a later runtime/control head.
+Earlier evidence remains under its original producer and scope:
 
-Terminal XML inspection exposes [namespace identity#141](coverage_xml_identity.md).
-The source correction uses `source_pkgs` and bare `--cov`, and passes111 selected
-local cases including an actual emitted-XML regression. The [sealed receipt](evidence/coverage_xml_20261107_summary.json)
-retains the original failing guard and corrected qualified/unused/private-file
-controls, owned control text and scalar/hash evidence. Original hosted captures
-stay local. Corrected-head hosted coverage/public file attribution remains pending;
-raw original aggregates/percentages are never rewritten. No new CI is dispatched.
+- [Frozen4616c78 terminal receiving](evidence/accumulated_ci_terminal_20261107.json):
+  all eight source cells pass2259tests each, with reporting/policy/publication
+  steps. Its original namespace-collision XML is retained; the
+  [#141 correction](coverage_xml_identity.md) passes111 selected local cases and
+  awaits actual hosted XML from the newer candidate.
+- [Pharm3D comparison](rdkit_bounds_comparison.md): ten analytical cases/186full
+  assignments,106 selected source cases and complete driver. Interior filters,
+  proper-fit reflection rejection and strict/inclusive boundary differences keep
+  their declared limits. Original512MiB failures and the1GiB amendment remain.
+- [Saved progress](saved_run_progress.md):102source cases and the same57bodies,
+  51guarded children and16documented commands from producer1950421's owned144wheel.
+  API/CLI/export/reader and [guided/expert receiving](guided_expert_journey_receiving.md)
+  retain their own artifacts, original databases and scope. None becomes current
+  full-platform/public evidence by being linked here.
 
-The latest scientific increment executes the
-[Pharm3D distance-filter comparison](rdkit_bounds_comparison.md): ten fixed
-analytical cases/186 full assignments,106 selected local cases and a separate
-complete driver pass. Common interior filters agree; proper native fitting
-rejects the noncoplanar reflection; strict/inclusive boundary differences remain
-explicit. [#140](archive/qualify_rdkit_projection.md) owns public
-RDKit projection/constraint qualification. No production method/provider changes,
-new general connector, speedup or biological evidence follow. Original failed
-512MiB attempts and the declared1GiB data-budget revision remain preserved.
+The [accumulated preparation](accumulated_ci_checkpoint.md) and
+[checkpoint history](checkpoint_history_20261107.md) retain earlier observations,
+including scheduled42383495995/654586f's original governance failure and its
+separate recovery. [Current guide audit](evidence/projection_ci_guide_audit_20261107.json)
+compares all seven real canonical texts at exact owner revisions; all match.
+The frozen policy-v1.5.4 caller remains separate and unchanged.
 
-The latest runtime increment adds
-[criterion-independent saved progress](saved_run_progress.md): public
-`ScreeningRunView.progress()`/`ScreeningRunStore.progress()` and module CLI
-`--summary`. One storage scan owns work/status/attempt counts; existing explicit
-ranking/export semantics and full saved-evidence verification remain intact.
-The [source receipt](evidence/saved_run_progress_source_20261107.json) passes102
-distinct selected cases, including9 new progress and48 existing reader/export/CLI
-controls. The [sealed receiving](evidence/saved_run_progress_20261107_summary.json)
-passes the same57 library bodies in one exact owned installed wheel,51 guarded
-fresh children and16 documented commands on four unchanged original databases.
-Producer1950421/owned wheel0.4.0+144 remains distinct from the earlier CI source;
-no new full CI is dispatched and no public package is released.
-
-The earlier [accumulated checkpoint](accumulated_ci_checkpoint.md) targets exact
-`4616c786c5de959ef0d6e98120d7183dcc217553`. The current source includes both runtime
-namespaces in coverage, closes fixture-owned SQLite connections and receives
-four registered guide updates. All seven guides match observed canonical bytes;
-provider pins/prefixes and frozen policy-v1.5.4 remain unchanged. The
-[preparation receipt](evidence/accumulated_ci_preparation_20261107_summary.json)
-retains101 selected local cases, original control failures and their corrections.
-
-Hosted [terminal evidence](evidence/accumulated_ci_terminal_20261107.json):
-[CI42399097757](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399097757),
-[policy42399103089](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399103089)
-and [publication governance42399108565](https://github.com/uibcdf/pharmacophoremt/actions/runs/42399108565)
-are successful at exact4616c786c5de959ef0d6e98120d7183dcc217553/attempt1.
-All8 actual scientific jobs execute dependency preflight, interpreter/architecture,
-full tests and coverage steps; reporting retains3/18/8/131 cases in its separate
-slices. The manual backlog-decision job is intentionally skipped. Earlier pending
-observations remain dated evidence. No package build/upload/release occurs.
-
-The [API/CLI exports](saved_result_cli.md), [public runs](public_prepared_runs.md),
-[guided/expert comparison](guided_expert_journey_receiving.md) and
-[released-reader support](reader_public_provider_receiving.md) retain separate
-frozen producers and receiving limits. Old scheduled42383495995/654586f and its
-original governance failure remain intact. Full administrative receiving for
-frozen4616c78 now passes on the hosted route; the earlier local memory/guard
-failures are preserved and are not rewritten as successful local execution.
-
-**Next concrete action:** receive terminal source CI42416657424 and actual
-coverage XML for the frozen489be12 candidate, preserving its eight full cells,
-architecture/dependency/test counts and per-file namespace identity. The already
-successful policy/publication native steps retain separate receipts. Keep
-frozen4616c78, installed producer1040dbb and source candidate489be12 distinct.
-No full local-suite retry, new source dispatch or package publication is needed
-for this observation. Continue independent declared work while the verified
-remote jobs run. MolSysMT#624 collections, complete installed/public dependency/
-platform delivery, biology, comparison/performance and full mature0.x acceptance
-retain their separate gates.
+**Next concrete action:** receive the Point inspection correction from one exact
+owned wheel outside the checkout using the same338 library bodies, while inspecting
+terminal source CI42416657424/actual XML for its earlier frozen489be12 candidate.
+Do not rebuild or relabel the existing RDKit148wheel or source run. Preserve eight
+full source cells and actual architecture/dependency/test/file identities before
+accepting any hosted gate. The successful policy/publication steps retain their
+separate receipts. No full local-suite retry, duplicate source dispatch or package
+publication is needed. MolSysMT#624 collections, full installed/public dependency/
+platform delivery, biology, comparison/performance and mature0.x acceptance retain
+their separate gates.
 
 ## Active public integration
 

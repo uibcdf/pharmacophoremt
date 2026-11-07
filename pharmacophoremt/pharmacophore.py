@@ -173,7 +173,8 @@ class Pharmacophore:
         output = []
         if get_center:
             centers = [puw.get_value(s.center, to_unit="nm") for s in subset]
-            output.append(puw.quantity(np.array(centers), "nm"))
+            coordinates = np.array(centers) if centers else np.empty((0, 3))
+            output.append(puw.quantity(coordinates, "nm"))
         if get_radius:
             radii = [puw.get_value(s.radius, to_unit="nm") for s in subset]
             output.append(puw.quantity(np.array(radii), "nm"))

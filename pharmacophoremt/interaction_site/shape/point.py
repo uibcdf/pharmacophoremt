@@ -29,6 +29,8 @@ class Point:
     ----------
     position : Quantity (shape:(3,), dimensionality:{'[L]':1}, value:numpy.ndarray) or None
         Coordinates of the point in the three dimensional space.
+    center : Quantity
+        Read-only alias to the same canonical position quantity.
 
     """
 
@@ -45,6 +47,18 @@ class Point:
             self.position = std
         else:
             self.position = puw.convert(position, to_unit=std, to_type="quantity")
+
+    @property
+    def center(self):
+        """Return the point position as its geometric center.
+
+        Returns
+        -------
+        Quantity
+            The same quantity object as position. Position remains the canonical
+            mutable coordinate; no copied or independently stored center exists.
+        """
+        return self.position
 
     def add_to_NGLView(
         self,

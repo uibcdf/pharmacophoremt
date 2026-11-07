@@ -138,6 +138,12 @@ requirements remain separate.
 
 ## Current priority: classical consolidation
 
+[Native Point inspection](native_geometry_inspection.md) now exposes its canonical
+position as center and returns empty center arrays with three columns. The
+source338-case selection passes, preserving original failures and native schema;
+same-artifact installed receiving is next under#142. This later correction is
+separate from the running489be12 source/coverage checkpoint.
+
 The [RDKit projection increment](rdkit_projection.md) now provides explicit
 sphere/radius exchange and detached field/loss/default reports with strict or
 warning policies. It preserves the default target/reader assumptions and passes271
