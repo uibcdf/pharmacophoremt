@@ -4,7 +4,8 @@ Owners LMMV/dprada; declared and source-received 2026-11-07;
 [#140](https://github.com/uibcdf/pharmacophoremt/issues/140).
 The public implementation is present with selected source receiving; the
 [source receipt](evidence/rdkit_projection_source_20261107_summary.json) retains
-actual controls and failures. Same-artifact installed receiving remains pending.
+actual controls and failures. The [same-artifact installed receiving](evidence/rdkit_projection_installed_20261107_summary.json)
+now passes the same214 library bodies and the exact public recipe.
 The analytical [bounds comparison](rdkit_bounds_comparison.md) alone does not
 establish adapter fidelity.
 
@@ -83,9 +84,49 @@ optional runtime type-checking is not claimed. Original fixture/admission/float
 assumption failures remain preserved. The resource-owning capsule is
 `build/phmt-rdkit-projection-20261107-l_zk3103`, review2026-11-20.
 
-Next receive the same library bodies and public recipe from an exact owned wheel
-outside the checkout, with actual provider/native/source identities. The changed
-runtime conservatively changes prepared-run bindings; preserve original bindings
-and saved databases. Independent saved reading/export stays separate from any
-scientific reexecution. Current-head hosted/full supported source, installed/public
-dependency/platform, broader comparisons/biology and release gates remain open.
+## Same-artifact installed receiving — 2026-11-07
+
+Owned producer1040dbb builds wheel0.4.0+148.g1040dbb,4520175bytes,
+SHA-256869028d1dfb948eae6bdbece99a6afa31cf63ba07ec44bd5529b34f7fab32fb2.
+All210 wheel payload files authenticate before/after receiving. The155
+nongenerated runtime files equal the producer; generated version records retain
+their actual source/build difference. The same214 test bodies and nine byte-identical
+test/support modules execute outside the checkout, plus one original diagnostic
+child and one exact public recipe block. All140 imported main files and three
+namespace-package locations resolve to the owned installed target.
+The loaded-runtime post-check reuses the published MolSysSuite SDK operation
+`check_installed_imports` at1c248b67, with its four exact tool files admitted
+separately from application imports. Guarded startup/provider mapping and
+wheel-byte authentication remain case-specific controls.
+A separate guarded installed probe verifies actual export/import PHMT-W103 and
+PHMT-E110 rendering and args-only reconstruction in all five diagnostic profiles;
+this is not an additional set of library test bodies.
+
+Parent and child use-I-S-B with an explicit copied-fixture/prefix/provider
+configuration; no .pth startup or source-checkout imports. The child's original
+body is unchanged; its launcher adds the same admission bootstrap and records both
+commands/body hashes. A wrong main-source shadow is rejected in a separate
+admission probe. The first control attempt detects an unrelated dependency tests
+namespace; a corrected mapping admits provider package names without searching
+whole source repositories. A second successful214-case execution exposes a
+receiver assumption that namespaces have file paths. Both original failures remain;
+correct handling retains their explicit installed namespace locations.
+
+The [installed receipt](evidence/rdkit_projection_installed_20261107_summary.json)
+retains the code, exact wheel identity, module origins, actual provider file
+fingerprints, native identity, limits and failures. Work is serial CPU19/backend1/
+nice19/idle I/O with512MiB DATA per process, no AS cap for native/Git file mappings
+and no owned aggregate cgroup/swap/tasks/quota. Whole receiving peak RSS is234127360B.
+The source-provider mappings are an observed existing context; unused mappings do
+not qualify their packages. Optional beartype remains absent. The main capsule is
+`build/phmt-rdkit-installed-20261107-h125254a`, outside workspace
+`/tmp/phmt-rdkit-installed-20261107-tz8glfe9`, review2026-11-20.
+
+The [scoped resolution#140](archive/qualify_rdkit_projection.md) accepts the public
+field contract in source and this same owned wheel. It leaves current-head/full
+supported source, complete installed/public dependency/platform, broader
+comparison/biology/performance and release gates open. The next deliberate
+[accumulated checkpoint](projection_ci_checkpoint.md) receives progress/RDKit
+runtime and corrected coverage#141 together. Original saved-run bindings and
+saved databases are not rewritten; independent saved reading/export remains
+separate from scientific reexecution.

@@ -69,7 +69,7 @@ translators (LigandScout/Pharmer/RDKit pharmacophore objects) need their own fie
 matrix. Availability of a class does not establish matcher/format support.
 
 The [Pharm3D comparison](rdkit_bounds_comparison.md) explicitly configures bounds
-after the existing center/family projection. [#140](pending_proposals/qualify_rdkit_projection.md)
+after the existing center/family projection. [#140](archive/qualify_rdkit_projection.md)
 now owns RDKit's preserved/projected/lost fields, admission and deliberate
 compatibility decision; the comparison does not establish a constraint round trip.
 
@@ -107,5 +107,6 @@ public qualification change; broader ArgDigest admission remains separate.
 The [owning RDKit contract](rdkit_projection.md) now qualifies default point
 projection, explicit sphere/radius exchange and detached field/loss/default
 reports in source. Native formats retain complete native semantics; RDKit field
-preservation does not establish matching equivalence. #140 remains partial
-pending same-artifact installed receiving, separate from public/full platform gates.
+preservation does not establish matching equivalence. Same-artifact installed
+receiving now passes the same214 bodies, guarded child and exact recipe; the
+scoped#140 contract is resolved separately from public/full platform gates.

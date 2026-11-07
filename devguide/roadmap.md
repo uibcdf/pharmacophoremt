@@ -142,7 +142,10 @@ The [RDKit projection increment](rdkit_projection.md) now provides explicit
 sphere/radius exchange and detached field/loss/default reports with strict or
 warning policies. It preserves the default target/reader assumptions and passes271
 selected source controls, the existing analytical driver and the exact public
-recipe. Same-artifact outside-checkout receiving is next; #140 remains partial.
+recipe. Same-artifact outside-checkout receiving now passes the same214 bodies,
+one guarded child and the exact public recipe from the frozen1040dbb wheel.
+The scoped#140 contract is resolved; the next accumulated source/coverage
+checkpoint and full supported/public gates retain their own acceptance.
 The source implementation does not qualify broader library connectors, installed/
 public platforms or complete scientific/performance equivalence.
 
