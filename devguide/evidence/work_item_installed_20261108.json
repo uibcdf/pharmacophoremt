@@ -1,0 +1,127 @@
+{
+  "schema": "pharmacophoremt.work-item-installed@1",
+  "issue": 157,
+  "source_commit": "3e45a58592d2a71c647ee052d304d1a74438d59c",
+  "wheel": {
+    "filename": "pharmacophoremt-0.4.0+185.g3e45a58-py3-none-any.whl",
+    "bytes": 4526305,
+    "sha256": "0ee478f475d4ef8d04b27218a91dfe9f0e4d05f35ecace5255bdbcf5823ec509"
+  },
+  "version": "0.4.0+185.g3e45a58",
+  "same_original_cases": 85,
+  "new_cases_included": 16,
+  "payload_files_authenticated": 211,
+  "nongenerated_runtime_files_equal": 156,
+  "fixture_files_authenticated": 8,
+  "loaded_parent_runtime_modules_verified": 7,
+  "shared_sdk": {
+    "revision": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "operation": "devtools.scripts.installed_imports.check_installed_imports",
+    "files_verified_unchanged": true
+  },
+  "fresh_guarded_children": 72,
+  "fresh_child_exit_counts": {
+    "2": 26,
+    "0": 46
+  },
+  "documented_commands": 8,
+  "original_historical_databases": 4,
+  "historical_selected_statuses": {
+    "source-complete": [
+      "not_matched",
+      "matched"
+    ],
+    "installed-complete": [
+      "not_matched",
+      "matched"
+    ],
+    "source-partial": [
+      "not_matched",
+      "pending"
+    ],
+    "legacy-complete": [
+      "not_matched",
+      "matched"
+    ]
+  },
+  "original_rows_outcomes_attempts_identities_database_bytes_unchanged": true,
+  "public_support": [
+    {
+      "name": "argdigest",
+      "version": "0.17.1",
+      "filename": "argdigest-0.17.1-py_0.tar.bz2",
+      "archive": {
+        "bytes": 55828,
+        "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899"
+      },
+      "payload_files_verified": 48
+    },
+    {
+      "name": "smonitor",
+      "version": "0.22.1",
+      "filename": "smonitor-0.22.1-py_0.tar.bz2",
+      "archive": {
+        "bytes": 60043,
+        "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e"
+      },
+      "payload_files_verified": 51
+    },
+    {
+      "name": "depdigest",
+      "version": "0.11.0",
+      "filename": "depdigest-0.11.0-py_2.tar.bz2",
+      "archive": {
+        "bytes": 23231,
+        "sha256": "b6ba665d9125f49506b7e4231e6065f164d3b643117a22288b44baafceff270f"
+      },
+      "payload_files_verified": 26
+    }
+  ],
+  "public_support_and_qa_files_unchanged": true,
+  "test_bodies_and_original_legacy_wrapper_unchanged": true,
+  "fixture_override": "Only fresh subprocess launch uses isolated/no-site/no-bytecode startup and explicit admitted installed roots.",
+  "no_checkout_runtime_fallback": true,
+  "no_scientific_or_attribution_namespace_import": true,
+  "receptor_complete": true,
+  "raw_receipt": {
+    "bytes": 164391,
+    "sha256": "f8b0356d30d9bf3bde120bbb832a3b52f8896be9dd8c553420b92ecb4b3eab8e"
+  },
+  "junit": {
+    "bytes": 14447,
+    "sha256": "c7d587c489e9f02a0d6ea83007465367e941f7f803174316f5c7aa10d4369339"
+  },
+  "events": {
+    "bytes": 173200,
+    "sha256": "1f3ff6d62fdedbd94b7c7ebf4305368e262973ea0dfb5ff94805fe6397324325"
+  },
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "DATA_AS_per_reader_process_bytes": 536870912,
+    "reader_cpu_limit_seconds": 120,
+    "build_AS": "unlimited inherited for Git mappings",
+    "aggregate_cgroup": false,
+    "reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "whole_command_peak_rss_bytes": 62259200,
+    "rss_scope": "Whole installed command high water including guards, tests and tooling; not incremental detail memory or performance evidence."
+  },
+  "source_generated_version_cache": {
+    "identity": {
+      "bytes": 35,
+      "sha256": "7f9c35f65a2f9439b7ded46955c166f79c427306c147fd421bebc915602f020a"
+    },
+    "content": "__version__ = \"0.4.0+134.gee5d9fa\"\n"
+  },
+  "source_version_cache_matches_previous_owned_receiving": true,
+  "shared_prefix_changed": false,
+  "environment_manager_transaction": false,
+  "molecular_execution": false,
+  "raw_evidence": "build/phmt-work-item-20261108-9lcfzrod",
+  "owned_workspace": "/tmp/phmt-work-item-installed-20261108-58jdunza",
+  "retention_review": "2026-11-22",
+  "limits": "One exact owned Linux/Python3.14wheel independent reader with authenticated published support payloads. No complete PHMT public dependency solve, supported installed/platform matrix, biological, scale/performance or release qualification. #148 and full-source exact-head gates remain open; source receipt retains its original pending installed state."
+}

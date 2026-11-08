@@ -116,11 +116,13 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
-[#157 single-work inspection](pending_proposals/inspect_saved_work_item.md)
+[#157 single-work inspection](archive/inspect_saved_work_item.md)
 adds a public exact-key operation and command for original confirmed evidence,
 failure or pending state. The final85case source selection includes16new guards
 and69original reader/CLI/page/progress/export cases. Strict docs/local governance
-pass; exact owned installed receiving remains pending. No draft is disclosed as a
+pass. The same85 bodies also pass from exact3e45a58 owned installed receiving;
+eight detail commands preserve four original historical files. The bounded bridge
+resolves. No draft is disclosed as a
 result, criterion inferred or molecular work repeated. This advances milestone2
 inspection; human usability, full public/platform and scale gates remain open.
 The earlier [#156 work pages](archive/inspect_declared_work_cli.md) retain their

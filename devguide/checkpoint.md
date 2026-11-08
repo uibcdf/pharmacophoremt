@@ -10,7 +10,7 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#157 single-work inspection](pending_proposals/inspect_saved_work_item.md)
+[#157 single-work inspection](archive/inspect_saved_work_item.md)
 adds public `ScreeningRunView.work_item(work_key)` and `--work-key KEY`. The
 reader preserves exact original mapping/run identity, confirmed/native-status-or-
 pending, retained attempt counts and the full original confirmed outcome or null.
@@ -24,8 +24,13 @@ reader/CLI/page/progress/export controls. The earlier84case receiving and origin
 ASTs; old API/core methods except command orchestration remain unchanged.
 Strict full docs, rendered method/recipe links, full Ruff/format, index and three
 reporting tests pass. The [source receipt](evidence/work_item_source_20261108.json)
-retains actual limits and original failures. Exact owned installed receiving
-remains pending.
+retains actual limits and original failures. The [installed receipt](evidence/work_item_installed_20261108.json)
+now passes the same85 bodies from exact3e45a58/wheel0.4.0+185.g3e45a58 outside
+checkout, with authenticated published support payloads.211payload/156runtime
+files, eight fixtures and seven loaded parent modules verify.72guarded children
+retain46successes/26expected refusals; eight documented detail commands preserve
+four historical databases. The bounded bridge resolves; full supported gates
+remain separate.
 
 Earlier bounded increments retain their own contracts and source/run identities:
 [#156 work pages](archive/inspect_declared_work_cli.md),
@@ -47,9 +52,7 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive the same85 bodies and documented detail
-commands from one exact owned wheel outside checkout, then close #157 on that
-bounded evidence. Independently receive a distinct reviewed environment-manager
+**Next concrete action:** receive a distinct reviewed environment-manager
 strategy from the common-tool owner before another #148 acquisition. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
 b1139d0/run42494894038 verifies manager1.5.10/effective1/1settings but extraction
@@ -103,7 +106,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection and paginated declared-work inspection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection, paginated work and exact-key detail inspection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |

@@ -61,6 +61,13 @@ the earlier 84-case pass and final stored-error propagation guard stay separate.
 Old API/core definitions except command orchestration remain AST-identical.
 Strict full docs, rendered method/recipe links and local governance pass. The
 [source receipt](evidence/work_item_source_20261108.json) preserves actual limits,
-original failures and scope. Exact owned installed receiving remains pending.
+original failures and scope. The [installed receipt](evidence/work_item_installed_20261108.json) now receives
+those same85 original bodies from exact3e45a58/wheel0.4.0+185.g3e45a58 outside
+checkout.72guarded children, eight documented commands and four unchanged
+historical files preserve complete original evidence and attempt semantics.
+Payload/runtime/fixture/origin and published support identities verify; no
+scientific namespace or source runtime fallback occurs. The source receipt
+keeps its original pending bridge state. This separate bounded bridge resolves;
+see the [archived report](archive/inspect_saved_work_item.md) for exact limits.
 Original failures and each producer/artifact identity remain separate. Full source exact-head, complete public
 dependency/installed-platform, human usability and release gates remain open.

@@ -11,11 +11,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 
-### Partial (12)
+### Partial (11)
 
 - [`adopt_required_python_314.md`](adopt_required_python_314.md) — [#23](https://github.com/uibcdf/pharmacophoremt/issues/23) — Adopt the mandatory four-minor contract and qualify normal installed delivery *(partial, measured)*
 - [`esr1_binding_evaluation_readiness.md`](esr1_binding_evaluation_readiness.md) — [#66](https://github.com/uibcdf/pharmacophoremt/issues/66) — Qualify a fresh ERα binding endpoint and cohort before new scoring. *(partial, measured)*
-- [`inspect_saved_work_item.md`](inspect_saved_work_item.md) — [#157](https://github.com/uibcdf/pharmacophoremt/issues/157) — Inspect one exact saved work item and its original confirmed evidence. *(partial, measured)*
 - [`live_viewer_addon_browser.md`](live_viewer_addon_browser.md) — [#58](https://github.com/uibcdf/pharmacophoremt/issues/58) — Qualify the minimal addon through real Jupyter widget comms and browser rendering. *(partial, measured)*
 - [`measure_molecular_feature_reuse.md`](measure_molecular_feature_reuse.md) — [#148](https://github.com/uibcdf/pharmacophoremt/issues/148) — Measure equivalent native fresh/reused feature workloads before selecting a persistent cache or index. *(partial, asserted)*
 - [`native_ackredit_attribution.md`](native_ackredit_attribution.md) — [#19](https://github.com/uibcdf/pharmacophoremt/issues/19) — Capture portable native scientific attribution through optional public Ackredit APIs. *(partial, measured)*

@@ -1,9 +1,9 @@
 ---
 summary: Inspect one exact saved work item and its original confirmed evidence.
 issue: uibcdf/pharmacophoremt#157
-status: partial
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-08
 verification: measured
 area: [results, usability]
 guard: tests/test_public_work_item.py::TestPublicWorkItem::test_original_outcomes_and_pending_work_remain_distinct
@@ -55,3 +55,28 @@ Ruff/format, indexes and three reporting tests pass. The
 [source receipt](../evidence/work_item_source_20261108.json) retains exact limits,
 original outcomes/counts and the distinct earlier scope. Exact owned installed
 receiving remains pending; no public/platform claim follows.
+
+## Exact owned installed receiving, 2026-11-08
+
+Implementation3e45a58592d2a71c647ee052d304d1a74438d59c owns the single
+0.4.0+185.g3e45a58 wheel (4526305 bytes, SHA-256
+`0ee478f475d4ef8d04b27218a91dfe9f0e4d05f35ecace5255bdbcf5823ec509`).
+The [installed receipt](../evidence/work_item_installed_20261108.json) passes
+all 85 same original bodies outside checkout using authenticated published
+ArgDigest0.17.1/SMonitor0.22.1/DepDigest0.11.0 payloads and isolated/no-site
+startup.211payload/156nongenerated runtime files, eight original fixture files
+and seven loaded parent runtime modules verify.72guarded children retain
+46successes/26expected refusals. Eight exact documented detail commands preserve
+original rows/outcomes/attempts/identities and bytes in four historical databases.
+The source receipt retains its original pending bridge state; this separate
+receiving resolves the bounded task. No original test body/legacy wrapper changes;
+only subprocess launch wiring selects admitted installed roots.
+
+No scientific/attribution namespace loads or source runtime fallback occurs.
+Whole installed-command peak62259200bytes includes guards/tests/tooling; it is
+not detail allocation or performance evidence. Reader AS/DATA remains512MiB,
+one CPU/thread and low priorities; no aggregate local cgroup is enforced. Shared
+prefix/public support and QA bytes stay unchanged; no new manager transaction,
+molecular execution or resource increase occurs. Full-source exact-head,
+complete public PHMT dependency/installed-platform, human usability, biological,
+scale/performance and release gates remain separate.
