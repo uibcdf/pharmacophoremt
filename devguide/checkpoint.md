@@ -10,6 +10,15 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#148 molecular feature-reuse measurement](feature_reuse_measurement.md) now has
+a prospective fixed declaration and an offline standard-library control. It fixes
+48pairs/96serial timed arms plus a separate two-arm pilot, balancing process order
+and charging inventory build cost.22offline guards pass and all three original
+H5MSM snapshot hashes verify. These are declaration/integrity checks; no native
+driver, pilot, timing or performance improvement is qualified. The current own
+user isolation is unavailable; the latest scheduler observation admits no usable
+allocation. The known DATA512MiB/native route is not retried or enlarged.
+
 [#147 paired saved-run comparison](archive/compare_saved_screening_runs.md)
 is implemented. Public validation.compare_screening_runs consumes two verified
 views with explicit original-cohort mappings and retains complete per-arm
@@ -64,9 +73,11 @@ owns that handoff. No provider/prefix/floor/release change occurs.
 The historical public prefix is absent at the checked original/remapped paths;
 its old receipt is evidence, separate from an available runtime on this machine.
 
-**Next concrete action:** review the qualified molecular feature-reuse experiment
-and its original immutable inputs, identify the representative fresh/reused
-query workload and safe execution route, then declare measurement before timing.
+**Next concrete action:** native#148work requires a verified safe execution route
+and a qualified shared scientific arm before its separate pilot. While that
+route is unavailable, audit the public-library source-by-operation coverage and
+guided/expert documentation under#108against actually delivered public tools;
+select a concrete independently testable user-workflow improvement.
 Preserve#147full-source and public/installed-platform debt, the original local
 resource failure and the provider-owned collection/public-delivery gates. The
 mature0.x goal is active; no release is selected.
@@ -101,6 +112,7 @@ earlier route.
 | Public prepared iterator | [Public contract](public_prepared_screening.md): one runtime,134 selected local cases and source/owned installed query/files/export recipe | Bounded Linux/Python3.14/source providers; the iterator adds no journal. Use the separate recoverable-run route; full supported delivery remains pending |
 | Recovery/inspection | [Public task](public_prepared_runs.md):197 selected cases, source/same-wheel installed and normal editable receiving; [independent-reader public support](reader_public_provider_receiving.md) passes with corrected SMonitor | Explicit legacy reading is separate from reexecution; reader-only public payloads do not qualify complete PHMT dependencies or supported platforms |
 | Feature reuse | [Native equality and public composition](feature_inventory_reuse.md): 87 selected scientific cases, six source/reference comparisons, four public recipe blocks | No full-search/cache/index/performance or installed-package qualification |
+| Molecular measurement declaration | [#148](feature_reuse_measurement.md):22offline guards and three original snapshot hashes; prospective48pairs | Native driver, safe execution route, pilot and measurements pending; no speed or scale claim |
 | Original PubChem3D pilot | [Three fixed conformers](pubchem3d_receiving_pilot.md), mapped persistence and native outcomes; preserved failures and quantity correction | No general public connector, chemical independence or biological validation |
 | Current goal | Seven accepted [milestones](roadmap.md#accepted-destination-a-mature-pre-10-0x); every increment updates devguide | No milestone/release is completed by its plan alone |
 | Release | Actual plan/latest recorded release0.4.0; proposed0.5 review under #95 | No new tag/package; current exact-candidate receiving remains required |

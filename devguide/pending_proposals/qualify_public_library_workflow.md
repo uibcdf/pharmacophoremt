@@ -14,6 +14,15 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Molecular measurement declaration — 2026-11-08 UTC
+
+[#148](measure_molecular_feature_reuse.md) now owns the prospective native
+fresh/reused measurement:48balanced pairs, explicit inventory build cost and full
+native-evidence equality.22offline declaration guards pass and three original
+snapshot hashes verify. Native driver/safe execution route/pilot/timing remain
+pending. No original exhausted native case is retried; continue independent
+source-operation/public-workflow coverage while that route is unavailable.
+
 ## Paired saved-run comparison — 2026-11-08 UTC
 
 [#147](../archive/compare_saved_screening_runs.md) adds direct comparison of two verified

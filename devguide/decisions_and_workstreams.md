@@ -23,6 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#148 molecular feature-reuse measurement](feature_reuse_measurement.md)
+declares48balanced pairs with charged inventory build cost and a separate
+two-arm pilot.22offline guards and three original snapshot hash checks pass.
+Native driver, safe route and measurements remain pending. The original native/
+DATA failure is not retried or enlarged; independent#108coverage work continues.
+
 2026-11-08: [#147 paired saved-run comparison](archive/compare_saved_screening_runs.md)
 is implemented after31missing-operation failures/one positive old-batch control.
 It reuses the existing public summary and exact old paired tail, with32initial
@@ -71,6 +77,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #142 native inspection | Resolved: Point center alias and empty-coordinate shape corrected; same338 source/owned-wheel bodies and two isolated children pass | Full supported source/installed/public gates remain separate |
 | #143 analytical boundary | Resolved: original fixture exactness defect preserved; revision2/14guards/ten-case driver and frozen8db2a53 full2357-case/eight-cell source gate pass | Later helpers/tests and full installed/public/platform delivery retain separate#9/#23 scope |
 | #144 saved-reader performance | Resolved: three reader cells/75baseline samples and reusable copied-fixture recovery received with22guards | Preserve failed original preparation; extra25samples stay separate. Review shared scan cost before any cache/index/molecular throughput claim |
+| #148 molecular feature-reuse performance | Partial: fixed prospective schedule/control and original input integrity verified | Receive a safe native route and qualify a shared arm, then separate pilot/measurements; no speed or library-capacity claim |
 | #128 tool-study registry | Dedicated public index, one [executed Pharm3D analytical comparison](rdkit_bounds_comparison.md) and nine documentary records | Public RDKit fields are received in source/one owned wheel under resolved#140; corrected8db2a53 source passes all eight cells under resolved#143, preserving failed489be12. Broader comparison/biological gates remain |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |

@@ -1,0 +1,1301 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-profile-plan@1",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/148",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "parent_source": "a1d210abb7308205d7ed87375678fb2b8b011907",
+  "recorded_at_utc": "2026-11-08T03:43:49.538812+00:00",
+  "state": "declared_not_executed",
+  "original_equality_plan": {
+    "file": "devguide/evidence/feature_reuse_plan_20261107.json",
+    "sha256": "eeea9d49ae9c00d096d64b1ed2e00a8bb8ae6e463cb0afb3723dac4ff724e98f"
+  },
+  "source_records": [
+    {
+      "cid": 1983,
+      "source_key": "PubChemCID:1983",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+      "snapshot": {
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344
+      },
+      "expected_acceptor_features": 2
+    },
+    {
+      "cid": 2244,
+      "source_key": "PubChemCID:2244",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+      "snapshot": {
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328
+      },
+      "expected_acceptor_features": 4
+    },
+    {
+      "cid": 2519,
+      "source_key": "PubChemCID:2519",
+      "snapshot_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+      "snapshot": {
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328
+      },
+      "expected_acceptor_features": 3
+    }
+  ],
+  "references": [
+    {
+      "key": "caffeine-acceptors",
+      "cid": 2519
+    },
+    {
+      "key": "aspirin-acceptors",
+      "cid": 2244
+    }
+  ],
+  "requested_families": [
+    "hb acceptor"
+  ],
+  "source_options": {
+    "selection": "all",
+    "structure_index": 0,
+    "chemical_state": 0
+  },
+  "settings": {
+    "correspondence_strategy": "association_cliques",
+    "min_matches": 3,
+    "distance_tolerance": {
+      "value": 0.15,
+      "unit": "nm"
+    },
+    "direction_tolerance": {
+      "value": 30,
+      "unit": "degree"
+    },
+    "max_graph_nodes": 64,
+    "max_cliques": 1000,
+    "max_trials": 10000,
+    "max_matrix_entries": 1000000,
+    "max_placements": 1
+  },
+  "publication": "Native feature/query/placement geometry and H5MSM remain local; publish owned code/control/scalar/citation projections only.",
+  "pairs": [
+    {
+      "pair_key": "cid-1983:one-caffeine:repeat-0",
+      "cid": 1983,
+      "workload": "one-caffeine",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-aspirin:repeat-0",
+      "cid": 1983,
+      "workload": "one-aspirin",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:two-mixed:repeat-0",
+      "cid": 1983,
+      "workload": "two-mixed",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:eight-repeated:repeat-0",
+      "cid": 1983,
+      "workload": "eight-repeated",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-caffeine:repeat-0",
+      "cid": 2244,
+      "workload": "one-caffeine",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-aspirin:repeat-0",
+      "cid": 2244,
+      "workload": "one-aspirin",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:two-mixed:repeat-0",
+      "cid": 2244,
+      "workload": "two-mixed",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:eight-repeated:repeat-0",
+      "cid": 2244,
+      "workload": "eight-repeated",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-caffeine:repeat-0",
+      "cid": 2519,
+      "workload": "one-caffeine",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-aspirin:repeat-0",
+      "cid": 2519,
+      "workload": "one-aspirin",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:two-mixed:repeat-0",
+      "cid": 2519,
+      "workload": "two-mixed",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:eight-repeated:repeat-0",
+      "cid": 2519,
+      "workload": "eight-repeated",
+      "repeat": 0,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-caffeine:repeat-1",
+      "cid": 1983,
+      "workload": "one-caffeine",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-aspirin:repeat-1",
+      "cid": 1983,
+      "workload": "one-aspirin",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:two-mixed:repeat-1",
+      "cid": 1983,
+      "workload": "two-mixed",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:eight-repeated:repeat-1",
+      "cid": 1983,
+      "workload": "eight-repeated",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-caffeine:repeat-1",
+      "cid": 2244,
+      "workload": "one-caffeine",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-aspirin:repeat-1",
+      "cid": 2244,
+      "workload": "one-aspirin",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:two-mixed:repeat-1",
+      "cid": 2244,
+      "workload": "two-mixed",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:eight-repeated:repeat-1",
+      "cid": 2244,
+      "workload": "eight-repeated",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-caffeine:repeat-1",
+      "cid": 2519,
+      "workload": "one-caffeine",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-aspirin:repeat-1",
+      "cid": 2519,
+      "workload": "one-aspirin",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:two-mixed:repeat-1",
+      "cid": 2519,
+      "workload": "two-mixed",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:eight-repeated:repeat-1",
+      "cid": 2519,
+      "workload": "eight-repeated",
+      "repeat": 1,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-caffeine:repeat-2",
+      "cid": 1983,
+      "workload": "one-caffeine",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-aspirin:repeat-2",
+      "cid": 1983,
+      "workload": "one-aspirin",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:two-mixed:repeat-2",
+      "cid": 1983,
+      "workload": "two-mixed",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:eight-repeated:repeat-2",
+      "cid": 1983,
+      "workload": "eight-repeated",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-caffeine:repeat-2",
+      "cid": 2244,
+      "workload": "one-caffeine",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-aspirin:repeat-2",
+      "cid": 2244,
+      "workload": "one-aspirin",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:two-mixed:repeat-2",
+      "cid": 2244,
+      "workload": "two-mixed",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:eight-repeated:repeat-2",
+      "cid": 2244,
+      "workload": "eight-repeated",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-caffeine:repeat-2",
+      "cid": 2519,
+      "workload": "one-caffeine",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-aspirin:repeat-2",
+      "cid": 2519,
+      "workload": "one-aspirin",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:two-mixed:repeat-2",
+      "cid": 2519,
+      "workload": "two-mixed",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:eight-repeated:repeat-2",
+      "cid": 2519,
+      "workload": "eight-repeated",
+      "repeat": 2,
+      "arm_order": [
+        "fresh",
+        "reused"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-caffeine:repeat-3",
+      "cid": 1983,
+      "workload": "one-caffeine",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:one-aspirin:repeat-3",
+      "cid": 1983,
+      "workload": "one-aspirin",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:two-mixed:repeat-3",
+      "cid": 1983,
+      "workload": "two-mixed",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-1983:eight-repeated:repeat-3",
+      "cid": 1983,
+      "workload": "eight-repeated",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-caffeine:repeat-3",
+      "cid": 2244,
+      "workload": "one-caffeine",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:one-aspirin:repeat-3",
+      "cid": 2244,
+      "workload": "one-aspirin",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:two-mixed:repeat-3",
+      "cid": 2244,
+      "workload": "two-mixed",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2244:eight-repeated:repeat-3",
+      "cid": 2244,
+      "workload": "eight-repeated",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-caffeine:repeat-3",
+      "cid": 2519,
+      "workload": "one-caffeine",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-caffeine:0",
+          "reference": "caffeine-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:one-aspirin:repeat-3",
+      "cid": 2519,
+      "workload": "one-aspirin",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "one-aspirin:0",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:two-mixed:repeat-3",
+      "cid": 2519,
+      "workload": "two-mixed",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "two-mixed:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "two-mixed:1",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    },
+    {
+      "pair_key": "cid-2519:eight-repeated:repeat-3",
+      "cid": 2519,
+      "workload": "eight-repeated",
+      "repeat": 3,
+      "arm_order": [
+        "reused",
+        "fresh"
+      ],
+      "queries": [
+        {
+          "key": "eight-repeated:0",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:1",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:2",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:3",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:4",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:5",
+          "reference": "aspirin-acceptors"
+        },
+        {
+          "key": "eight-repeated:6",
+          "reference": "caffeine-acceptors"
+        },
+        {
+          "key": "eight-repeated:7",
+          "reference": "aspirin-acceptors"
+        }
+      ]
+    }
+  ],
+  "denominators": {
+    "sources": 3,
+    "distinct_reference_geometries": 2,
+    "workloads_per_source": 4,
+    "repeats": 4,
+    "timed_pairs": 48,
+    "timed_arm_processes": 96,
+    "timed_query_requests_per_arm": 144,
+    "outer_source_extractions": {
+      "fresh": 144,
+      "reused": 48
+    },
+    "outer_extraction_scope": "excludes reference and native post-fit/evaluator recognition"
+  },
+  "admission_pilot": {
+    "cid": 2244,
+    "workload": "two-mixed",
+    "arm_order": [
+      "fresh",
+      "reused"
+    ],
+    "arm_processes": 2,
+    "included_in_timed_samples": false,
+    "purpose": "Verify native equality, positive fitting, resource envelope and monitoring before admitting 96 timed processes."
+  },
+  "measurement_contract": {
+    "processes": "Fresh process per arm; serial, no concurrent own checks/builds/timing.",
+    "preparation": "Imports, H5MSM loading and reference inventory construction precede algorithm timing; retain their separate costs and whole-command time.",
+    "warmup": "No extra molecular warmup inside an arm. Separate admission pilot; OS cache is uncontrolled, never called cold.",
+    "fresh": "Extract source features once inside every query's timed interval.",
+    "reused": "Time source inventory construction once; charge it to the workload total, then reuse the same inventory.",
+    "query": "Identical public correspondence, first canonical mapping placement, native post-fit extraction/checking, query construction, PoseEvaluator, checked_pose_coverage and quantity-preserving detachment.",
+    "timers": "Wall perf_counter_ns and process_time_ns; each extraction, each complete query, and end-to-end build-plus-queries. First and remaining requests reported separately.",
+    "outside_timing": "Cross-arm full evidence comparison, source/reference/inventory immutability checks and output hashing/writing. Native post-fit checks remain inside timing.",
+    "memory": "Managed aggregate memory peak and whole-process peak RSS reported separately; neither is incremental inventory allocation. Detached inventory JSON bytes are a logical payload size only.",
+    "scientific_gate": "Full detached native evidence equal per corresponding request; preserve source hashes, mapping omissions, no-placement and checked-pose outcomes. No full RigidPoseSearch equivalence.",
+    "statistics": "Retain all four paired samples and process order; descriptive median/min/max per source/workload/arm. Ratios only for complete scientifically equal pairs; report incomplete/failed denominators and no-benefit outcomes. No population inference from repeated geometries.",
+    "attribution": "Same explicit disabled capture for timed arms; separate untimed actual attribution receiving with an application-owned session before interpretation."
+  },
+  "execution_admission": {
+    "status": "pending_safe_route_and_native_driver",
+    "native_driver": "not_implemented_or_qualified",
+    "scheduler_or_owned_cgroup_required": true,
+    "memory_bytes": 536870912,
+    "swap_bytes": 0,
+    "max_tasks": 32,
+    "logical_cpus": 1,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "arm_wall_seconds": 180,
+    "entry_and_monitoring": "Recheck scheduler/allocation, CPU/load, RAM, PSI and swap activity. Preserve at least20percent physical RAM plus aggregate own task budget. Stop own group and retain partial outputs on significant pressure; capacity is not a reservation.",
+    "resource_owner": "https://github.com/uibcdf/uibcdf-infrastructure/issues/1",
+    "architecture_owner": "https://github.com/uibcdf/moli/issues/96",
+    "preserved_failure": "The prior DATA512MiB/OpenMM mapping case remains failed; no repeat of that exhausted route, budget escalation, borrowed user bus or global machine change."
+  },
+  "claims": {
+    "native_measurement_executed": false,
+    "performance_improvement": false,
+    "persistent_cache_or_index_qualified": false,
+    "large_library_capacity_qualified": false,
+    "biological_validation": false,
+    "supported_installed_or_release_qualification": false
+  }
+}

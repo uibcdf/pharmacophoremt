@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-profile-declaration-receiving-summary@1",
+  "recorded_at_utc": "2026-11-08T03:49:33.967451+00:00",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/148",
+  "status": "declaration_controls_passed_native_measurement_pending",
+  "parent_source": "a1d210abb7308205d7ed87375678fb2b8b011907",
+  "plan": {
+    "file": "devguide/evidence/feature_reuse_profile_plan_20261108.json",
+    "bytes": 31954,
+    "sha256": "50626f60e5bf74205326f8368ed837f67648c4ac869807a09daa8f31a59805e1"
+  },
+  "denominators": {
+    "sources": 3,
+    "distinct_reference_geometries": 2,
+    "workloads_per_source": 4,
+    "repeats": 4,
+    "timed_pairs": 48,
+    "timed_arm_processes": 96,
+    "timed_query_requests_per_arm": 144,
+    "outer_source_extractions": {
+      "fresh": 144,
+      "reused": 48
+    },
+    "outer_extraction_scope": "excludes reference and native post-fit/evaluator recognition"
+  },
+  "verification": {
+    "offline_guard_cases": 22,
+    "reporting_cases": 3,
+    "original_snapshots_verified": 3,
+    "original_snapshot_bytes": 397000,
+    "full_ruff_lint_passed": true,
+    "full_ruff_format_passed": true,
+    "index_check_passed": true,
+    "native_git_whitespace_check_passed": true,
+    "failed_attempts_retained": 1
+  },
+  "resources": {
+    "logical_cpus": 1,
+    "backend_threads": 1,
+    "cpu_affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "pure_check_rlimit_as_bytes": 268435456,
+    "native_tool_rlimit_data_bytes": 536870912,
+    "native_tool_rlimit_as": "unlimited inherited",
+    "per_command_cpu_seconds": 45,
+    "per_command_wall_seconds": 55,
+    "estimated_supervisor_test_child_envelope_bytes": 805306368,
+    "available_memory_reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "aggregate_cgroup_enforcement": false,
+    "maximum_timed_command_lifetime_rss_bytes": 47026176,
+    "rss_scope": "Per timed command/child lifetime high water, not aggregate/incremental allocation or benchmark measurement."
+  },
+  "claims": {
+    "native_measurement_executed": false,
+    "performance_improvement": false,
+    "persistent_cache_or_index_qualified": false,
+    "large_library_capacity_qualified": false,
+    "biological_validation": false,
+    "supported_installed_or_release_qualification": false
+  },
+  "publication": "Owned control/source/log projections and scalar original input identities only; no molecular H5MSM bytes, geometry-bearing native outputs, credentials or unrelated process information.",
+  "retention": {
+    "local_capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-profile-declaration-20261108-g6blgm9o",
+    "owner": "LMMV/dprada",
+    "review_after": "2026-11-22",
+    "keep_until": "Native-measurement handoff or owning-issue review; no shared prefix, source snapshot or unrelated resource cleanup."
+  },
+  "full_evidence": {
+    "path": "feature_reuse_profile_declaration_20261108_full.json.gz",
+    "compressed_bytes": 59358,
+    "compressed_sha256": "1c4b9af76ffa0166ff09676f064b6903bf1a113ea275d73ff1fa6b82fc0135e8",
+    "uncompressed_bytes": 265648,
+    "uncompressed_sha256": "f7904446988ad7970943a95c2589599a7d5c74314547110f5216921ec19e8492"
+  }
+}

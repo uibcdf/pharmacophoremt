@@ -95,6 +95,13 @@ is not asserted. Citation reading is not another scientific calculation.
 
 ## Evidence, publication and next increment
 
+2026-11-08 continuation: [#148 measurement declaration](feature_reuse_measurement.md)
+now fixes the fresh/reused computational workload, build-cost accounting,
+process-order balance and native equivalence gate. Its offline controls and input
+hashes are separate from native timing. A safe execution route and qualified
+measurement driver remain pending; the original equality run is not relabeled
+as a benchmark or repeated under the exhausted local DATA/native route.
+
 The [receipt](evidence/feature_reuse_20261107_summary.json) links raw control logs,
 JUnit/event records, exact source/runtime/native identities, full local outputs
 and a verified public scalar/code/citation projection. Native source/query/feature/
