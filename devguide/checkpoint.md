@@ -10,6 +10,21 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#150 prepared-plan inspection](pending_proposals/inspect_prepared_run_plans.md)
+is implemented in source. `PreparedRunPlan.describe()` returns exact query
+size/hash and detached complete captured context; console repr omits payloads.
+22selected controls pass (20new and two original alias guards), including
+non-default unit policy, unchanged fields/frozen behavior, exact byte spelling,
+detachment, current-execution refusal and actual attribution neutrality. The exact
+new public recipe passes without molecular inputs/fitting;15existing construction/
+resume bodies and prior argument contracts are unchanged. Original19failures
+include one corrected unit-oracle getter mistake. Source/providers/native bytes
+retain their own receiving scope; exact owned installed receiving is pending.
+The [source receipt](evidence/prepared_plan_inspection_source_20261108_summary.json)
+also retains three reporting cases, strict full Sphinx/the public method anchor,
+full Ruff and index checks. A test-only format correction preserves its complete
+AST. The current provider snapshot stays clean at the held source revisions.
+
 The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
 now connects source-operation coverage, prepared-input screening, plan/resume,
 independent inspection/export and expert composition. It links existing public
@@ -71,11 +86,12 @@ owns that handoff. No provider/prefix/floor/release change occurs.
 The historical public prefix is absent at the checked original/remapped paths;
 its old receipt is evidence, separate from an available runtime on this machine.
 
-**Next concrete action:** native#148work requires a verified safe execution route
-and a qualified shared scientific arm before its separate pilot. The independent
-user-guide coverage audit is now received. Next inspect the guided/expert API's
-plan visibility and input/error recovery against this documented user journey;
-select an observed, independently testable improvement under#108.
+**Next concrete action:** finish source documentation/reporting receiving for150,
+freeze its implementation and receive the same selected bodies/new inspection
+recipe from one exact owned installed wheel. Keep source identity and installed
+dependency context explicit. Native#148work still requires a verified safe route
+and qualified shared scientific arm before its separate pilot; no exhausted
+native case is retried or enlarged.
 Preserve#147full-source and public/installed-platform debt, the original local
 resource failure and the provider-owned collection/public-delivery gates. The
 mature0.x goal is active; no release is selected.

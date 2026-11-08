@@ -1,0 +1,105 @@
+{
+  "schema": "pharmacophoremt.prepared-plan-inspection-source-summary@1",
+  "recorded_at_utc": "2026-11-08T04:55:10.027366+00:00",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/150",
+  "status": "selected_source_received_owned_installed_pending",
+  "parent_source": "ad588481423f8e123a10ee5f07058e69d8ed4a22",
+  "verification": {
+    "selected_cases": 22,
+    "new_guard_cases": 20,
+    "original_alias_cases": 2,
+    "reporting_cases": 3,
+    "distinct_final_selected_cases": 25,
+    "exact_public_recipe": true,
+    "public_describe_anchor": true,
+    "strict_full_sphinx": true,
+    "full_ruff_lint_format": true,
+    "index_checks": true,
+    "original_query_context_schemas_and_fields_unchanged": true,
+    "existing_scientific_bodies_unchanged": 15,
+    "original_argdigest_contracts_unchanged": true,
+    "test_only_format_ast_unchanged": true,
+    "actual_attribution_neutrality_guard": true
+  },
+  "query_identity": {
+    "file": "recipe-inputs/query.json",
+    "bytes": 1638,
+    "sha256": "58310a0cc97eca8d190aff49eec92a15d14d83ecc6d92a46158e53aa9884e340"
+  },
+  "actual_repr": "PreparedRunPlan(screening_method='rigid', score_method='seeded_hit', query_size_bytes=1638, query_sha256='58310a0cc97eca8d190aff49eec92a15d14d83ecc6d92a46158e53aa9884e340')",
+  "resources": {
+    "logical_cpus": 1,
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "native_import_checks_data_bytes": 536870912,
+    "native_import_address_space": "unlimited inherited",
+    "pure_admin_as_bytes": 268435456,
+    "aggregate_cgroup_memory_swap_tasks_quota": "not enforced",
+    "available_memory_reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "planned_supervisor_child_envelope_bytes": 1610612736,
+    "docs_observed_supervisor_group_max_rss_bytes": 304320512,
+    "docs_resource_interruptions": 0
+  },
+  "source_providers": {
+    "molsysmt": {
+      "origin": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "source_head": "9e1f1b1ad8bf09446374ab6f04ca7208e2717936",
+      "metadata_version": "0.23.0+513.g9e1f1b1ad"
+    },
+    "argdigest": {
+      "origin": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "source_head": "07126411f108ee1ff607e9c9a0816109b2c9253e",
+      "metadata_version": "0.17.1+3.g0712641"
+    },
+    "smonitor": {
+      "origin": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "source_head": "c1b6ce29c3729b99429b395a00c7866a759be406",
+      "metadata_version": "0.22.1+1.gc1b6ce2"
+    },
+    "depdigest": {
+      "origin": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+      "source_head": "032d345becf8f8f574c24ede61ee62fcf0321de7",
+      "metadata_version": "0.15.2+2.g032d345"
+    },
+    "pyunitwizard": {
+      "origin": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "source_head": "f82b618ea88c151a9b43009228126b1cf7fda65c",
+      "metadata_version": "0.29.1+6.gf82b618"
+    },
+    "ackredit": {
+      "origin": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+      "source_head": "4beb850c8ba814e6103b4d303128a1a36eb57610",
+      "metadata_version": "0.12.1+10.g4beb850"
+    }
+  },
+  "native_artifact": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101188064,
+    "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b"
+  },
+  "limits": "Software plan-inspection/constructor-empty-input admission only. No prepared molecular inputs, fitting, named library connector, native148timing, biological or full supported installed/public/platform/release receiving.",
+  "publication": "Owned code/controls, synthetic scalar descriptors/context and hash/resource facts only. No H5MSM, native binary body, raw real query/data or generated third-party HTML.",
+  "retention": {
+    "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-plan-inspection-20261108-cq4w59ry",
+    "owner": "LMMV/dprada",
+    "review_after": "2026-11-22",
+    "keep_until": "Source/owned-installed150receiving review; preserve original shared provider/input/capsule resources."
+  },
+  "full_evidence": {
+    "path": "prepared_plan_inspection_source_20261108_full.json.gz",
+    "compressed_bytes": 102038,
+    "compressed_sha256": "1b7d8ef98c8531ae34c364c726c32cc48eeece93f78b6066f499456c3d322060",
+    "uncompressed_bytes": 463461,
+    "uncompressed_sha256": "43dee29244e54338d77c1000c91b6a123c5c91db48c8dd81503f3ccda06e21e1"
+  },
+  "producer_overlay": {
+    "file": "prepared_plan_inspection_source_20261108_producer.json",
+    "bytes": 26932,
+    "sha256": "2b62612b07eebb09474955e630a9f908a134c0d28f4a5ddd96b6daf1d12d5c02"
+  }
+}

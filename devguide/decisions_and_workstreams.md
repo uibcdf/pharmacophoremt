@@ -23,6 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#150 plan inspection](pending_proposals/inspect_prepared_run_plans.md)
+adds `PreparedRunPlan.describe()` and compact repr, with22selected source cases
+and the exact public metadata-only recipe passing. Fields/schemas and15existing
+construction/resume bodies remain unchanged; installed receiving is pending.
+The changed source identity still affects conservative reexecution binding.
+
 2026-11-08: the [chemical-library user guide](../docs/content/user/chemical_libraries.md)
 connects the source-operation matrix and guided/expert plan/run/resume/inspect/
 export routes. Existing executable examples are unchanged; strict rendering and

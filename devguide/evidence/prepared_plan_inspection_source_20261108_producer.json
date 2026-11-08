@@ -1,0 +1,640 @@
+{
+  "scope": "Exact source Python file identities supplement the existing source receipt; generated version-cache bytes are captured without refreshing prefix or normalizing original context. Original compressed archive is unchanged.",
+  "runtime_files": {
+    "pharmacophoremt/__init__.py": {
+      "bytes": 1546,
+      "sha256": "d7830efe40ee4c4610eefe532bde62439d6f27a18d79599904acf8f324d29725"
+    },
+    "pharmacophoremt/_ackredit.py": {
+      "bytes": 7714,
+      "sha256": "c28d33a037a30407400c12dc9f8fe57f93a61a9c8337d85eb465b229e2cb098f"
+    },
+    "pharmacophoremt/_argdigest.py": {
+      "bytes": 780,
+      "sha256": "fdb6b8f5ec997d2ed7606218c09b43a7421b7e1fa3c418b2ce52cbf8b9aa1b7a"
+    },
+    "pharmacophoremt/_depdigest.py": {
+      "bytes": 1004,
+      "sha256": "c38fab9fdca2a430dcceff13befbbef2db5be16754761609ede767507e8dc8f6"
+    },
+    "pharmacophoremt/_private/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+      "bytes": 32179,
+      "sha256": "eef2b67a1da8a79409dc039b760be0a3db205a861d33ff34b6be62d8d57c48d8"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/cation_mapping.py": {
+      "bytes": 319,
+      "sha256": "90154a5381b3c29ef1927b8569dbf9c2533f70ac7f0839b0650f11c4aade741a"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/center.py": {
+      "bytes": 55,
+      "sha256": "2ce398248dde81ec4f9c71c6476013b2c2597630fd91460e0d0946c269e15282"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/description.py": {
+      "bytes": 44,
+      "sha256": "ecb506d47de3f2d82543b025753b4e309a0ab81b4f95083e50262c04ff721791"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/direction.py": {
+      "bytes": 61,
+      "sha256": "99257eb276a7bf6d7f049d10f23d389596fe5b18699daddf3e28eb4510a7ddf9"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/duplicate_policy.py": {
+      "bytes": 319,
+      "sha256": "595048ac25b781f95ceb48b54ef6a926b3ece847447dc7a5a99350c28c9f565e"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/end.py": {
+      "bytes": 49,
+      "sha256": "41656d978ddfa02eb3b17b8043011d9af7cec474aa8d0882beaf6aead7cf412b"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/features.py": {
+      "bytes": 59,
+      "sha256": "17be358182ee5b92b3e88f49bf719eaa6c9fac9031ed5f5b92946c7ee0945883"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/form.py": {
+      "bytes": 37,
+      "sha256": "01e7238a50e87f0029376e643e73cf5d24703e3c4d644c0c764f289df9df3189"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/interaction_collection.py": {
+      "bytes": 597,
+      "sha256": "05a2833f2c889f5b5d2fefe7beb858c4d7b5ff422c8ad9d8387e4656f90e4f58"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/interaction_site.py": {
+      "bytes": 49,
+      "sha256": "e35905917a1e9b31fb987997c14496e6d3b3106f500138ae1c990560f9f81332"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/misc.py": {
+      "bytes": 311,
+      "sha256": "ee9fbf7e2039b39b655a270379b5a604df24515d4a3f5e1fc47e837a4af01166"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/molecular_system.py": {
+      "bytes": 49,
+      "sha256": "9e6a584f58feba58bda70d1f5b955419432338371ed947a2774c803a80c358ce"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/name.py": {
+      "bytes": 37,
+      "sha256": "74a78c1896603b2ee9c7b27b4b4b6491089f0d0246d032d5cfc5aa01203df1cf"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/normal.py": {
+      "bytes": 55,
+      "sha256": "2a2b76e100d673aec990846f4767a4ff34f598a179226920d318ba9a0e6ad756"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/pharmacophore.py": {
+      "bytes": 46,
+      "sha256": "44fd04bd4b9bb162e76a9fc4a3c681035615747cdd029c8288e608a8e1dfd83c"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/pharmacophores.py": {
+      "bytes": 593,
+      "sha256": "1895df56d1b24602c35101c9bb0917e5022aedda590c3613bf2143752159b7c3"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/position.py": {
+      "bytes": 59,
+      "sha256": "af3ba52c2c155d73ec1e0f7bd1d72dac6101f71748a0994ce68ecd2f2198d5ef"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/radius.py": {
+      "bytes": 55,
+      "sha256": "b219254621c0ae84d74eb991a737b2947cd4fca9589db92f8cdb32529e5ee49d"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/shape.py": {
+      "bytes": 114,
+      "sha256": "6e62ef7a7a39022890cc30e2c5f048fc0c8c506449c66c958f5e6b69d39ad984"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/sigma.py": {
+      "bytes": 53,
+      "sha256": "8f9b484d9bb0c52881551589b3d09c53adc4e2b3ff4feb836789a00c411ab8d8"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py": {
+      "bytes": 71,
+      "sha256": "20eb6733f15392fdcdbe0a38c9e1c695ef9f0b2668cf4cc7e84ec6969381f307"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/start.py": {
+      "bytes": 53,
+      "sha256": "34c08c3e80fd650fa40d8bf6f7e0f23eabe06237f3e5d80c3aa9695421c817b7"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/view.py": {
+      "bytes": 37,
+      "sha256": "211bd04c2de6a2b4a2d06220239fa0ba72d48e5141346b8c1d7169cd02703cd0"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument_names_standardization.py": {
+      "bytes": 904,
+      "sha256": "565059b1d54ffbcdb7da07ad8877f51eccc86797b849a36785a56ed87e4d0017"
+    },
+    "pharmacophoremt/_private/arg_digestion/curation.py": {
+      "bytes": 4164,
+      "sha256": "4d1682d6113f963a3bd08f063af6e4741b56647a3087cdf6fb875c7a7ba52269"
+    },
+    "pharmacophoremt/_private/arg_digestion/ligand_consensus.py": {
+      "bytes": 1525,
+      "sha256": "d19f9564ddea98e5530f35dd6bd7c3888c10cca4cacf0d9c58f3fdc124352228"
+    },
+    "pharmacophoremt/_private/arg_digestion/model_dispatch.py": {
+      "bytes": 3145,
+      "sha256": "dc5a0f8a1716afbfe610d1992513187d693134ea696e357ef008955c1df84900"
+    },
+    "pharmacophoremt/_private/arg_digestion/native_geometry.py": {
+      "bytes": 1176,
+      "sha256": "e419f4c3a2fd5a61f142eed8f74ca2f2bad6a2afd2280de38db45a7a3a963b0a"
+    },
+    "pharmacophoremt/_private/arg_digestion/native_io.py": {
+      "bytes": 599,
+      "sha256": "bf3897d4e65c7c260ca116fc360508c0e7b0ec5d6147133ae4d336df82504267"
+    },
+    "pharmacophoremt/_private/arg_digestion/native_screening.py": {
+      "bytes": 1905,
+      "sha256": "aba1597799c675205c5f018f34c16aac14808d429dfb1d0b92e173e09bc47650"
+    },
+    "pharmacophoremt/_private/arg_digestion/prepared_runs.py": {
+      "bytes": 3287,
+      "sha256": "8779d549a85dd41c99737128273621c1ccbb48b9360940ddc777e092f3e726c5"
+    },
+    "pharmacophoremt/_private/arg_digestion/prepared_screening.py": {
+      "bytes": 1582,
+      "sha256": "94ed1d67d2d57c66298f0bae33dad2bd1302263b9491a41cc43181ff2aa7d368"
+    },
+    "pharmacophoremt/_private/arg_digestion/rdkit_io.py": {
+      "bytes": 400,
+      "sha256": "e7d15bbfcd7e36b6f37bddf71295538639e9c3d84d6864c9e2817561d9a2a144"
+    },
+    "pharmacophoremt/_private/arg_digestion/receptor_generation.py": {
+      "bytes": 631,
+      "sha256": "f75e81a3a7a55daf6144d67e02d8839daf25b4034a7c824af3c6a263dbdd40a3"
+    },
+    "pharmacophoremt/_private/arg_digestion/screening_facade.py": {
+      "bytes": 1641,
+      "sha256": "799a0c10200e5a84c5e555984c51d41c9a60776479c03fe991262c68c8306b35"
+    },
+    "pharmacophoremt/_private/arg_digestion/validation_results.py": {
+      "bytes": 1354,
+      "sha256": "9eb02e576182e9bd8c590d9f977cdf412e5cdae099500b3a1c9b83555555adc2"
+    },
+    "pharmacophoremt/_private/colors.py": {
+      "bytes": 4679,
+      "sha256": "a84bdbaa57f3a9f8bf0940770717611a57396d4879a049c4fe2a76f1a0c7d70b"
+    },
+    "pharmacophoremt/_private/exceptions.py": {
+      "bytes": 447,
+      "sha256": "2f502ed4613e976450d3324187c90aa4665dd47cf1e7c1c8223c330c47336ff9"
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "bytes": 6518,
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511"
+    },
+    "pharmacophoremt/_private/pose_batch.py": {
+      "bytes": 1405,
+      "sha256": "5f018ffc899a7469be8d4997f3c679d97ea4f59199f75f49d4dbd79f948a8a57"
+    },
+    "pharmacophoremt/_private/references.py": {
+      "bytes": 10227,
+      "sha256": "f4ff0d16369e09c9c136c2284a327de1619e9b90720b1b68cff65bca3431812d"
+    },
+    "pharmacophoremt/_private/smonitor/__init__.py": {
+      "bytes": 501,
+      "sha256": "856d236a1665838a93c15292c701d9bcce7a356c6a4efe69859a2ee7ddf04ff2"
+    },
+    "pharmacophoremt/_private/smonitor/catalog.py": {
+      "bytes": 3639,
+      "sha256": "5fd00624530c45076e385f9a0739c2dc51ffef8320ca9ff00d7684b3f255932f"
+    },
+    "pharmacophoremt/_private/smonitor/emitter.py": {
+      "bytes": 223,
+      "sha256": "3d344d100df50724134b3735aa8b66c2a04d2696b9c9759ff9d0a4f667eecae6"
+    },
+    "pharmacophoremt/_private/smonitor/exceptions.py": {
+      "bytes": 2278,
+      "sha256": "4cd6cc077d8f3b5a23fc7d4522843695873a820e92cb9627a1a882dfdf512ecb"
+    },
+    "pharmacophoremt/_private/smonitor/meta.py": {
+      "bytes": 185,
+      "sha256": "ea4bd91733bff5ce4e063f48eb0593454bc61054b5b61b74b0a637a71b71873d"
+    },
+    "pharmacophoremt/_private/smonitor/warnings.py": {
+      "bytes": 972,
+      "sha256": "cbeab01efba17cda21f4ee7aa87ce5d7d3349d3af9a021408ed261be85965ec2"
+    },
+    "pharmacophoremt/_private/viewer.py": {
+      "bytes": 225,
+      "sha256": "82fdf579387620c8b2dc2e3adee9234627c49955cc8c621fa3774ca70a8eaa8c"
+    },
+    "pharmacophoremt/_pyunitwizard.py": {
+      "bytes": 2126,
+      "sha256": "edf09718803149c4fb543c184982f89e0df818f431ea6c0ea089c077f6c5ff1d"
+    },
+    "pharmacophoremt/_smonitor.py": {
+      "bytes": 713,
+      "sha256": "daf53144886f400378dfff50da9a63328bae103b214c8ea5fc3e794038240c80"
+    },
+    "pharmacophoremt/_version.py": {
+      "bytes": 35,
+      "sha256": "7f9c35f65a2f9439b7ded46955c166f79c427306c147fd421bebc915602f020a"
+    },
+    "pharmacophoremt/attribution.py": {
+      "bytes": 2272,
+      "sha256": "5ccf9439a9a723c1e88bd4c463e8f7bb3d1add4e556898c8a2b5c2388f7edd37"
+    },
+    "pharmacophoremt/config/__init__.py": {
+      "bytes": 721,
+      "sha256": "f2d5116d4322171acb590ec0122457e1a9efbd6f8e966539368f57dd57a1f9d5"
+    },
+    "pharmacophoremt/config/logging_setup.py": {
+      "bytes": 2648,
+      "sha256": "9c9a0591b987785723bac78eafa4f7f79bb947892af26692b3fee5f3efe99889"
+    },
+    "pharmacophoremt/data/smarts.py": {
+      "bytes": 8406,
+      "sha256": "50ac202ae204e06e2c073bfbbff261e4211ab9d294f82dff585ed67a8583276e"
+    },
+    "pharmacophoremt/data/zinc.py": {
+      "bytes": 1944,
+      "sha256": "ecd0c15ddfeb8a355efce86adcfb528ad44a3cb69c09619d5b8d5c683d68feca"
+    },
+    "pharmacophoremt/demo.py": {
+      "bytes": 1781,
+      "sha256": "389fa438f2d1f31301eb41c71931ef56c115eec0e73f9d661fdfa082df15aece"
+    },
+    "pharmacophoremt/interaction_site/__init__.py": {
+      "bytes": 2553,
+      "sha256": "fb68e33038d8f59c3c57560608640058540494573d52d0f69cbbfe0fd24bfc48"
+    },
+    "pharmacophoremt/interaction_site/aromatic_ring_interaction_sites.py": {
+      "bytes": 1017,
+      "sha256": "9ed5863b3dcae96c237b323e063a9987ce90e71efedf4ff913b8eee983546fe9"
+    },
+    "pharmacophoremt/interaction_site/cation_pi_interaction_sites.py": {
+      "bytes": 670,
+      "sha256": "c68bced840a6403c0ae15948cf5fb9369c68da9208303482421aecd93adf32d4"
+    },
+    "pharmacophoremt/interaction_site/excluded_volume_interaction_sites.py": {
+      "bytes": 1006,
+      "sha256": "65d2e425574f1be1aa6b421827fcf7dd5c04e2d339d568eeab3d3d8f1feb844e"
+    },
+    "pharmacophoremt/interaction_site/feature/__init__.py": {
+      "bytes": 624,
+      "sha256": "1158c5dba47e00282297b8c49c4ac1ca567b3e141cc06aea3e3fceb3868b70ed"
+    },
+    "pharmacophoremt/interaction_site/feature/aromatic_ring.py": {
+      "bytes": 614,
+      "sha256": "4108718eb614b9495fbb88d66fb7e3e56271dd39964f6e7259bef9a4e40fa483"
+    },
+    "pharmacophoremt/interaction_site/feature/cation_pi.py": {
+      "bytes": 590,
+      "sha256": "e8a634eebc656e4df732efea6361052ac8cc6060e5b868fd757c2d8fef680b91"
+    },
+    "pharmacophoremt/interaction_site/feature/excluded_volume.py": {
+      "bytes": 626,
+      "sha256": "2ea626aed80a1cb2a7f30f8a92acb8c2cd1e6e716a0b9c5d46b9668ac494ac6b"
+    },
+    "pharmacophoremt/interaction_site/feature/halogen_bond.py": {
+      "bytes": 608,
+      "sha256": "23e8a63a940c12acf95bfd4cfeaebae96fdae86aa8002e30d05498921d7d24c6"
+    },
+    "pharmacophoremt/interaction_site/feature/hb_acceptor.py": {
+      "bytes": 602,
+      "sha256": "3e9164ca17b6c0fdce0a7c0036c12f91e750cb3505c904bf16b4d6f0add47d34"
+    },
+    "pharmacophoremt/interaction_site/feature/hb_donor.py": {
+      "bytes": 580,
+      "sha256": "18f7dd755b68d89220edd6874b037a13a9d78c0b04cde3ab00c8b222deb06cd7"
+    },
+    "pharmacophoremt/interaction_site/feature/hydrophobicity.py": {
+      "bytes": 623,
+      "sha256": "176bc27876bcd0d01bb206149dc25832a0893da3b26f2c2b5aaf512f1f8500bc"
+    },
+    "pharmacophoremt/interaction_site/feature/included_volume.py": {
+      "bytes": 625,
+      "sha256": "8015e7e92043e51d04253a3d83f9c585c133f16f24f2e515a2ee832e6d9aa7bb"
+    },
+    "pharmacophoremt/interaction_site/feature/metal_coordination.py": {
+      "bytes": 644,
+      "sha256": "4e0e45955d98639137ea6d059a4f5fe8425aedf1921571b5efda865a8fcf1a0b"
+    },
+    "pharmacophoremt/interaction_site/feature/negative_charge.py": {
+      "bytes": 626,
+      "sha256": "72a4836573b1f08d133b529fb256fe441624a2b0b8cd718463294462f8f6c188"
+    },
+    "pharmacophoremt/interaction_site/feature/positive_charge.py": {
+      "bytes": 626,
+      "sha256": "b95760e0f74774afe8a43852a6a0fd1a9d861828f25994ee1abe67497eaee004"
+    },
+    "pharmacophoremt/interaction_site/halogen_bond_interaction_sites.py": {
+      "bytes": 604,
+      "sha256": "67477b5a7889e920116371e4ddc917db4da3f96482151341f1113d20b8cceaa1"
+    },
+    "pharmacophoremt/interaction_site/hb_acceptor_interaction_sites.py": {
+      "bytes": 1047,
+      "sha256": "613d7fc810c27e20a71f9aed223e09018380d60e6611c3dbd19c93e8d0636e23"
+    },
+    "pharmacophoremt/interaction_site/hb_donor_interaction_sites.py": {
+      "bytes": 1023,
+      "sha256": "61741570471fec88123ee61ac5a3d825f5d0cc59e0b70e9beae94a1b3d91118d"
+    },
+    "pharmacophoremt/interaction_site/hydrophobicity_interaction_sites.py": {
+      "bytes": 990,
+      "sha256": "6a89da12cadfa3447f97ea70d2eaa8c1b017dbd99c19376da57e3743316defa7"
+    },
+    "pharmacophoremt/interaction_site/included_volume_interaction_sites.py": {
+      "bytes": 1006,
+      "sha256": "3bd556fa1572fe6177973359b0d99ecb6083c99c3009e96c07a93d283208084c"
+    },
+    "pharmacophoremt/interaction_site/interaction_site.py": {
+      "bytes": 3918,
+      "sha256": "7b46e00417487f037c43d167e7439c63630ceb6fa6bd675d51545f4c2bd713fa"
+    },
+    "pharmacophoremt/interaction_site/metal_binding_interaction_sites.py": {
+      "bytes": 367,
+      "sha256": "f9882a01ab175f2d94d787cf7924698509a6ebf1e7802ac3aabd3e5a05f7e19d"
+    },
+    "pharmacophoremt/interaction_site/negative_charge_interaction_sites.py": {
+      "bytes": 813,
+      "sha256": "b0c5cef1b5cc64e95abdaf8ff89aab945af8621e814ca3515c5e5eb0224cd57c"
+    },
+    "pharmacophoremt/interaction_site/positive_charge_interaction_sites.py": {
+      "bytes": 1143,
+      "sha256": "54e86ca8f29e3359c7e5efd694e80672af71c5f4fb569d211c0eba7b02490b37"
+    },
+    "pharmacophoremt/interaction_site/shape/__init__.py": {
+      "bytes": 316,
+      "sha256": "1760ee6adc55bb7892247e10c27ec5e3be546937527cfba5ca6be6ccfeecf384"
+    },
+    "pharmacophoremt/interaction_site/shape/cylinder.py": {
+      "bytes": 4237,
+      "sha256": "09365c9edede7cb896f4e208376a954480760bf0296451644bf120e14dc2d8c6"
+    },
+    "pharmacophoremt/interaction_site/shape/disk.py": {
+      "bytes": 4175,
+      "sha256": "08ef01d58fa346ac5caa7f78aa7e8c1bad69fe9e45c79e635ec7556c0bf05d1f"
+    },
+    "pharmacophoremt/interaction_site/shape/gaussian_kernel.py": {
+      "bytes": 4242,
+      "sha256": "e1f43fd85cb7ffeee8d9d9a93238eed7976988e5fa6f6b2d10bc5900d7c91c20"
+    },
+    "pharmacophoremt/interaction_site/shape/point.py": {
+      "bytes": 3667,
+      "sha256": "3ca3aaafaa46bbb0b16e5c0a25c07bfe56956ead9c5ffe5e1d5e74cfeb59d504"
+    },
+    "pharmacophoremt/interaction_site/shape/shapelet.py": {
+      "bytes": 2166,
+      "sha256": "7eaa13bdb7951bfe08b0089c9c631adbc1d24cc5b221580ae40693b58c4c65f4"
+    },
+    "pharmacophoremt/interaction_site/shape/sphere.py": {
+      "bytes": 3699,
+      "sha256": "612a298487df1d9bb7fbc4a1ba3abba9f6f7b5211ae1e9101bbea6930d77b339"
+    },
+    "pharmacophoremt/interaction_site/shape/sphere_and_vector.py": {
+      "bytes": 4709,
+      "sha256": "2a7adb73868a73d1560a0da9649922ed84da5311f4361476282d9c3a12fe10fd"
+    },
+    "pharmacophoremt/io/__init__.py": {
+      "bytes": 2071,
+      "sha256": "b09aecad056f387540329fd854a45d57096c53602dd90a479f37ed12f871ab00"
+    },
+    "pharmacophoremt/io/ligandscout.py": {
+      "bytes": 5744,
+      "sha256": "06ae341e75a4783bb58e1319110502b8606449d698b954381f6beefabfd7e7f9"
+    },
+    "pharmacophoremt/io/pharmer.py": {
+      "bytes": 6542,
+      "sha256": "712547c36a5428ba0b07b1665652bda3b3c94de7254b1a3579ba0230a904cb6b"
+    },
+    "pharmacophoremt/io/phmt/__init__.py": {
+      "bytes": 11203,
+      "sha256": "01eb4d19f99e1004a12fab925f76bef49c64ae70088a3242d3ec2a7541510f59"
+    },
+    "pharmacophoremt/io/rdkit.py": {
+      "bytes": 18213,
+      "sha256": "fe6907d5ef56588393f5b7faf48ca5a08cd46a2fc5e4226b550c5560e435a432"
+    },
+    "pharmacophoremt/io/sdf.py": {
+      "bytes": 7134,
+      "sha256": "1dac35660a56ac85f3bff1bd58cd6b66457689d48bb3bc817440c4b25173d491"
+    },
+    "pharmacophoremt/modeler/__init__.py": {
+      "bytes": 1860,
+      "sha256": "0f4c7c3ab06ef05eec5d3bb40f726fd3d2636253f9c3b3fbc75913e74823964b"
+    },
+    "pharmacophoremt/modeler/_aromatic_interactions.py": {
+      "bytes": 8460,
+      "sha256": "be49acf57b470f4eefc258880a643e4dbc26b1f503eb07ccc2e9a932e938bc95"
+    },
+    "pharmacophoremt/modeler/_receptor_directions.py": {
+      "bytes": 14916,
+      "sha256": "fe40fe5c6022049ecadba178f954ba2b51177b96d52c1fced37c4ecd38123c1d"
+    },
+    "pharmacophoremt/modeler/aligned_cliques.py": {
+      "bytes": 17241,
+      "sha256": "a2e9af4672c168a0469705f5cfecc0772a7a5c8b6aa23807f1b9e8e28fa16cbd"
+    },
+    "pharmacophoremt/modeler/aligned_consensus.py": {
+      "bytes": 18938,
+      "sha256": "169703f576c7931128cc91284dfcd64e5049870a22eb1367a14e28fe80194922"
+    },
+    "pharmacophoremt/modeler/complex_based.py": {
+      "bytes": 4643,
+      "sha256": "0ff7a2bb59226830cd8a8da82edf025a655c55ea424a574f94af7ae91906d38f"
+    },
+    "pharmacophoremt/modeler/composition.py": {
+      "bytes": 13939,
+      "sha256": "80bd511f7ed4583001654e089371d11c8199ef8eaae967259570c39b9f8790f6"
+    },
+    "pharmacophoremt/modeler/curation.py": {
+      "bytes": 12569,
+      "sha256": "c19bce8a27461176318d775bc333633be3d4fefe9a8209a14b182d8595a15899"
+    },
+    "pharmacophoremt/modeler/dispatcher.py": {
+      "bytes": 5117,
+      "sha256": "1aa43ff84fc1c241509d7fc1b3c6628ee3601f5e5ed849a0e54a93413de2103d"
+    },
+    "pharmacophoremt/modeler/excluded_volumes.py": {
+      "bytes": 7820,
+      "sha256": "0e282275f0d962db6e293bf9a5328068df85712f07529c180103faf34f559315"
+    },
+    "pharmacophoremt/modeler/features.py": {
+      "bytes": 9416,
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9"
+    },
+    "pharmacophoremt/modeler/interaction_based.py": {
+      "bytes": 21032,
+      "sha256": "057a4c5337b52132d1a725892a7e0a0f7baf75a408852c1040a53ddd346db70d"
+    },
+    "pharmacophoremt/modeler/interaction_collection.py": {
+      "bytes": 5547,
+      "sha256": "380181cdf343695131bcc598589a180a2b65b5a9316b05d9193511cf4aec6780"
+    },
+    "pharmacophoremt/modeler/ligand_based.py": {
+      "bytes": 6365,
+      "sha256": "4cbdcc9d65001d7cc7c5c4217d9d3ab15e17789d02290977e69e7486ea331b8b"
+    },
+    "pharmacophoremt/modeler/modeler.py": {
+      "bytes": 247,
+      "sha256": "9c54c991847c587e544bf24c9a2304ee67af14c421764cdf332060b0c9e7ec90"
+    },
+    "pharmacophoremt/modeler/receptor_generation.py": {
+      "bytes": 18116,
+      "sha256": "3e89ae2999df4c9ebe2443bb08104a27a81d518db4bc4fac61edf0cb1594e350"
+    },
+    "pharmacophoremt/modeler/receptor_projections.py": {
+      "bytes": 10199,
+      "sha256": "b9cfd54f1610f20c79269dd28eac80879699f611a60075c82bf6a7a60dc6f895"
+    },
+    "pharmacophoremt/modeler/reference_ligand.py": {
+      "bytes": 6620,
+      "sha256": "312fa3634a1073975b850dd80885771a107a04b9472866779cc07692bc77901b"
+    },
+    "pharmacophoremt/modeler/rigid_consensus.py": {
+      "bytes": 15341,
+      "sha256": "fd72cdc2aae7dbbbc71b90fcbfa9c3b1752afc190386b049bdb997150bafade2"
+    },
+    "pharmacophoremt/modeler/scoring.py": {
+      "bytes": 658,
+      "sha256": "f2023211d3a3006666aaf33c0683b904ba2f7b1fd2dffa4f1ccab3da060896e0"
+    },
+    "pharmacophoremt/modeler/structure_based.py": {
+      "bytes": 4702,
+      "sha256": "01f72cb0204a1ed42e94ad9ce1adb362ff9e744b7775cec2929a39e7c894a1b3"
+    },
+    "pharmacophoremt/pharmacophore.py": {
+      "bytes": 17493,
+      "sha256": "5a5e283d0832a9f27744ddfec993d8fc90e033689bc31fd965c6ccbce76cafd6"
+    },
+    "pharmacophoremt/screening/__init__.py": {
+      "bytes": 1548,
+      "sha256": "aa1c9b2b698bee6c9c7288d552fd4e2c1cac5ace845bd37f01049d6798b26cae"
+    },
+    "pharmacophoremt/screening/alignment.py": {
+      "bytes": 7339,
+      "sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc"
+    },
+    "pharmacophoremt/screening/conformer_screening.py": {
+      "bytes": 12410,
+      "sha256": "63eca2315dfdfb004d288f528ebe6421076b294b9839a42ccc03bb8b7cea4c41"
+    },
+    "pharmacophoremt/screening/correspondence.py": {
+      "bytes": 5426,
+      "sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24"
+    },
+    "pharmacophoremt/screening/feature_geometry.py": {
+      "bytes": 5180,
+      "sha256": "4be179c25993dd1cc57aef8dfe3e766a4ce344a23bcedbe1e1cab3a63760d08a"
+    },
+    "pharmacophoremt/screening/feature_neighborhoods.py": {
+      "bytes": 10034,
+      "sha256": "b63df861196166b29daea4313fbea3470ce991034866b1a088a7a916cb12307f"
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "bytes": 18143,
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b"
+    },
+    "pharmacophoremt/screening/prepared_runs.py": {
+      "bytes": 20353,
+      "sha256": "8e18a7afe2ad1420b18201f7c9ea740ed85e5eaf0ba7ac5c3128c7dca8ba2332"
+    },
+    "pharmacophoremt/screening/prepared_screening.py": {
+      "bytes": 7940,
+      "sha256": "43a7352f89d820f9875921b28690591f9fc4176986f9df2f40d2728dd1a66ccc"
+    },
+    "pharmacophoremt/screening/rigid_correspondence.py": {
+      "bytes": 8626,
+      "sha256": "3b47e7c57e19ccc57679bbab85dcb4213f58bbc2198eab3a4bf5927dd4666844"
+    },
+    "pharmacophoremt/screening/rigid_placements.py": {
+      "bytes": 8467,
+      "sha256": "b11400d6ccab3269c91e5ffbdc6d012c23c1d1c977fcb50e18add2e031e3392a"
+    },
+    "pharmacophoremt/screening/rigid_refinement.py": {
+      "bytes": 12776,
+      "sha256": "04be35e636a593f2006365e3b9fc0ffceccba520a60c507ff351b16f430a384c"
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "bytes": 10334,
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746"
+    },
+    "pharmacophoremt/screening/scoring.py": {
+      "bytes": 5555,
+      "sha256": "f16de69660652f34e5f851106663b2b16a357a46ef2f7340789f1425dda991d9"
+    },
+    "pharmacophoremt/screening/virtual_screening.py": {
+      "bytes": 7034,
+      "sha256": "f7a53b59aa14eea8abfe0aa43cc473a422361faa3de36b99cbd0ac6c2ed69394"
+    },
+    "pharmacophoremt/validation/__init__.py": {
+      "bytes": 646,
+      "sha256": "a3eea2056d858bf7592ad569f77b4b13ac251b65c5a82c16e03eb560649801e9"
+    },
+    "pharmacophoremt/validation/loo.py": {
+      "bytes": 5783,
+      "sha256": "e5e5ae3a977bf67ff13d0ab4a54a40c6010fd855c1171809ca1d7cd738ab75a1"
+    },
+    "pharmacophoremt/validation/metrics.py": {
+      "bytes": 4877,
+      "sha256": "272cd4b0df06a2549c125faaeac8ed35f22e46764d4007806726fdb5a2bacd23"
+    },
+    "pharmacophoremt/validation/retrospective.py": {
+      "bytes": 6744,
+      "sha256": "d156cde37234a5f8fa898470573cd909cebe2e5c232bfec0ebd5c5c66fd395a8"
+    },
+    "pharmacophoremt/validation/rigid_consensus.py": {
+      "bytes": 11874,
+      "sha256": "79c0113a9a32a9017dce17b1daa9a2c90844a48327a32ec6bb999d5d009a30e1"
+    },
+    "pharmacophoremt/validation/saved_results.py": {
+      "bytes": 16567,
+      "sha256": "7e6d60527cf13579960cd0bb79d9e4aeab69e9ee34d53b6089e5c5df3181751e"
+    },
+    "pharmacophoremt/validation/screening_runs.py": {
+      "bytes": 9459,
+      "sha256": "0ec81efb87d8bc3dc515675d4e53357a7650fe865ce4f2a74325ecc328f1f372"
+    },
+    "pharmacophoremt/viewer/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "pharmacophoremt/viewer/color_palettes.py": {
+      "bytes": 960,
+      "sha256": "f4718d1c713f6da2f491f11d8a1a01770ec945ec835189f06cc637bd6ac306df"
+    },
+    "pharmacophoremt_results/__init__.py": {
+      "bytes": 992,
+      "sha256": "79ff398e277ff7034cc2d4abfdcf833bfbafd7354930862b36284eb552b62d35"
+    },
+    "pharmacophoremt_results/__main__.py": {
+      "bytes": 111,
+      "sha256": "c75dea215fafaa6a5e017c51d22a5182fd05578df7147a3a9ed123d42b36b0f9"
+    },
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 22142,
+      "sha256": "0cfb5b6d67cf8438bb522521a59e9cd43c904de6246002181111a755bd0cb252"
+    },
+    "pharmacophoremt_results/_diagnostics.py": {
+      "bytes": 1212,
+      "sha256": "0fbd0ec419d4cf6ee6a73c4f86914a82c86a91ec9482164724b91218efc950b5"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3339,
+      "sha256": "cb0086d59b76c6f008bf57d13107f34a3cd7d1963e2af43b4fa2376c9b328468"
+    },
+    "pharmacophoremt_results/_exports.py": {
+      "bytes": 3800,
+      "sha256": "6cd4da88c975cc42ef72b28df973a02c51b34173bb2f07558584d96e501bdd55"
+    },
+    "pharmacophoremt_results/_meta.py": {
+      "bytes": 208,
+      "sha256": "9398bd0b3b99904b774618a55cb021d301b78d4a7add332f5b517bcbca746e83"
+    },
+    "pharmacophoremt_results/_smonitor.py": {
+      "bytes": 621,
+      "sha256": "9d3c2f67b9cb16d567e0832ff16db121f06ce584f981c0224f96a01ee1e29a09"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 34134,
+      "sha256": "3ab6aaef7eb8cd03b1c8bf1d0524d59581ff3b2679a2dd0c302d98b52101238d"
+    }
+  },
+  "generated_version": {
+    "file": "pharmacophoremt/_version.py",
+    "bytes": 35,
+    "sha256": "7f9c35f65a2f9439b7ded46955c166f79c427306c147fd421bebc915602f020a",
+    "text": "__version__ = \"0.4.0+134.gee5d9fa\"\n"
+  },
+  "prior_archive_sha256": "1b7d8ef98c8531ae34c364c726c32cc48eeece93f78b6066f499456c3d322060"
+}

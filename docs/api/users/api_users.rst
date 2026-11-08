@@ -30,6 +30,11 @@ qualification remains separate. The
 distinguishes immutable confirmations, new iterator deliveries and the complete
 saved view. Independent reading uses the companion package in the same wheel.
 
+The :doc:`plan inspection recipe </content/cookbook/prepared_run_plan_inspection>`
+shows compact console display and PreparedRunPlan.describe(): exact query byte
+identity plus detached original context, without reconstruction or a current
+execution-compatibility decision.
+
 .. autoclass:: pharmacophoremt.screening.PreparedRunPlan
    :members:
 

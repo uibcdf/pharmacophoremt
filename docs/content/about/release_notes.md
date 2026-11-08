@@ -12,6 +12,14 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
 ### Later development after the reviewed snapshot
 
+`PreparedRunPlan.describe()` now exposes exact query byte identity and the
+complete detached captured context. Console display shows method/criterion and
+size/hash, omitting query and context payloads. Existing fields, equality and
+saved schemas remain unchanged; exact software binding still governs execution.
+See the [inspection recipe](../cookbook/prepared_run_plan_inspection.md).
+This development addition does not select a release or establish full supported
+installed/public delivery.
+
 `validation.compare_screening_runs` now compares two verified saved runs against
 the same explicitly mapped cohort, preserving both complete summaries and
 recomputing paired metrics on their common scored originals. It retains native

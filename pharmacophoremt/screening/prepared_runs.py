@@ -162,7 +162,7 @@ def _context(context_json):
     return context
 
 
-@dataclass(frozen=True)
+@dataclass(frozen=True, repr=False)
 class PreparedRunPlan:
     """Exact query bytes and a detached, versioned native execution recipe.
 
@@ -172,6 +172,10 @@ class PreparedRunPlan:
     unchanged artifacts is permitted; source/version changes require a newly
     reviewed plan/run even when chemistry is unchanged. Saved reading has no
     such current-runtime comparison and preserves original producer evidence.
+
+    Use describe() to inspect exact query identity and the complete captured
+    context without reconstruction or a current-runtime compatibility check.
+    Console representation is compact and omits query/context payloads.
     """
 
     query_bytes: bytes
@@ -192,6 +196,44 @@ class PreparedRunPlan:
     def context(self):
         """Return detached original declarations, execution and runtime binding."""
         return _context(self.context_json)
+
+    def _description(self):
+        return {
+            "query": {
+                "bytes": len(self.query_bytes),
+                "sha256": hashlib.sha256(self.query_bytes).hexdigest(),
+            },
+            "context": self.context,
+        }
+
+    def __repr__(self):
+        description = self._description()
+        execution = description["context"]["execution"]
+        query = description["query"]
+        return (
+            f"PreparedRunPlan(screening_method={execution['screening_method']!r}, "
+            f"score_method={execution['score_method']!r}, "
+            f"query_size_bytes={query['bytes']}, query_sha256={query['sha256']!r})"
+        )
+
+    @signal(tags=["screening", "prepared", "inspect"])
+    @arg_digest(config=CONFIG)
+    def describe(self):
+        """Return detached query byte identity and the original complete context.
+
+        The query record contains bytes and sha256 for the exact captured
+        artifact, without its content or a molecular interpretation. The context
+        preserves the existing schema, producer compatibility declarations,
+        expanded native options/explicit units and original runtime binding.
+        It may contain private caller metadata; inspection is not disclosure
+        authorization, source authentication or admission for current execution.
+
+        No query file or prepared input is read, no evaluator is reconstructed,
+        no current runtime is checked and no scientific credit is earned.
+        The returned finite JSON record is detached; changing it cannot change
+        the frozen plan. It is not a new saved-plan format.
+        """
+        return self._description()
 
     @signal(tags=["screening", "prepared", "reconstruct"])
     @arg_digest(config=CONFIG)

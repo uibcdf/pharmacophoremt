@@ -44,6 +44,35 @@ The [criterion-independent progress increment](saved_run_progress.md) adds
 Its102 selected source cases and57 same-wheel installed library bodies pass. Existing
 criterion-specific summaries/ranks and scientific run contracts are unchanged.
 
+## Explicit plan inspection — 2026-11-08 UTC
+
+Public `PreparedRunPlan.describe()` returns two detached records: `query` with
+the captured artifact's exact byte count/SHA-256, and `context` with the unchanged
+complete original plan schema, producer declarations, expanded native settings
+and runtime binding. Console repr is bounded to method/criterion and query
+size/hash; raw query bytes and context are omitted. The same private projection
+serves representation and the definition-owned ArgDigest/SMonitor method.
+
+This inspection parses the captured context and hashes the captured bytes; it
+does not reread the query file, reconstruct an evaluator, borrow prepared inputs,
+compare the current runtime or earn scientific credit. Output is detached finite
+JSON, not a new saved-plan schema. Cost depends on captured bytes/context; no
+speed or large-context capacity claim is made. Context may contain private caller
+metadata and does not gain disclosure authority through description.
+
+The [inspection recipe](../docs/content/cookbook/prepared_run_plan_inspection.md)
+uses real public query admission with no molecular system or fitting. Fields,
+dataclass equality/hash/frozen behavior and native query/context/run schemas stay
+unchanged. The old scientific construction/resume bodies are AST-identical.
+The addition changes PHMT source identity: the existing conservative software
+binding can therefore require a new linked run even with unchanged chemistry.
+Independent historical reading remains separate.
+
+[#150](pending_proposals/inspect_prepared_run_plans.md) retains the original
+synthetic repr observation, source controls/recipe and pending exact owned
+installed receiving. Full supported installed/public/platform and native#148
+measurement remain separate. No provider/prefix/native artifact is changed.
+
 ## Version and compatibility contracts
 
 New public stores write `pharmacophoremt.screening-run@1`. The legacy

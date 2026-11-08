@@ -75,6 +75,8 @@ requirements; this is a method choice, not an automatic choice for every query.
 1. Follow the [recoverable recipe](../cookbook/recoverable_prepared_screening.md)
    to construct a plan before creating the manifest or traversing the prepared
    input metadata. Inspect its effective method, scoring and numerical settings.
+   The [plan inspection recipe](../cookbook/prepared_run_plan_inspection.md) shows
+   compact display and `describe()` without starting screening.
 2. Create a run with fresh destinations and consume it. Confirmed results are
    saved independently of how many new outcomes your application receives.
 3. After an interruption, reopen with the same compatible query, manifest,

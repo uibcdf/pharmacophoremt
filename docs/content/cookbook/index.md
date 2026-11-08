@@ -37,6 +37,7 @@ prepared_receptor_workflow
 prepared_conformers
 prepared_incremental_screening
 recoverable_prepared_screening
+prepared_run_plan_inspection
 aligned_consensus
 aligned_cliques
 rigid_consensus
@@ -73,6 +74,7 @@ eralpha_input_audit
 | Search prepared frames or request an explicitly chosen native hit list | [Prepared conformers](prepared_conformers.md): `RigidPoseSearch`, `ConformerScreening`, `VirtualScreening` |
 | Screen prepared files incrementally and export every source-linked outcome | [Incremental prepared screening](prepared_incremental_screening.md): `PreparedInput`, `screen_prepared`, caller-owned JSONL/CSV exports |
 | Keep confirmed progress, resume prepared screening and export the full saved view | [Recoverable prepared screening](recoverable_prepared_screening.md): `PreparedScreeningRun`, `build_prepared_run_plan`, independent `ScreeningRunView` |
+| Inspect exact query identity and captured settings before creating a run | [Prepared-run plan inspection](prepared_run_plan_inspection.md): compact `PreparedRunPlan` and detached `describe()` |
 | Build consensus in a common prepared coordinate frame | [Aligned ligands](aligned_consensus.md): `from_aligned_ligands()`, `get_aligned_feature_matches()`, `get_consensus_sites()` |
 | Discover consensus without a reference anchor and inspect alternative models | [Aligned cliques](aligned_cliques.md): `get_aligned_feature_cliques()`, `get_aligned_consensus_hypotheses()`, `from_aligned_ligand_cliques()` |
 | Build alternative consensus models from prepared rigid unaligned ligands | [Rigid unaligned consensus](rigid_consensus.md): `get_rigid_feature_correspondences()`, `from_rigid_ligands()` |

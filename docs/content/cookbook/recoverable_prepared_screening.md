@@ -27,6 +27,10 @@ consuming. The application owns reader and optional attribution lifetimes.
 
 ## Start and resume a run
 
+Use the [plan inspection recipe](prepared_run_plan_inspection.md) to review exact
+query identity and captured settings before creating the run. `plan.describe()`
+returns detached data; interactive plan display omits query/context payloads.
+
 ```python
 import json
 from contextlib import closing

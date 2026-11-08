@@ -107,6 +107,7 @@ CONTRACTS = [
         "build_prepared_run_plan",
         "resume_prepared_run",
         "new_evaluator",
+        "describe",
         "__init__",
         "create",
         "open",
