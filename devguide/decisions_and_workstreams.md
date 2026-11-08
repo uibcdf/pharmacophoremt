@@ -23,12 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
-2026-11-08: [#155 BEDROC precision](pending_bugs/bedroc_small_alpha.md) corrects
+2026-11-08: [#155 BEDROC precision](archive/bedroc_small_alpha.md) corrects
 underflow for valid tiny alpha using the existing ROC-AUC limit. Six original
 failures/23 passes become 179 selected numerical/saved-analysis passes; 138
 ordinary outputs and the original exponential AST remain unchanged. Strict
-documentation passes. Owned installed receiving remains pending; no molecular,
-biological or performance claim follows.
+documentation passes. The same 179 bodies/138 exact ordinary values also pass
+from the owned 0.4.0+181.gc8c4dfd wheel outside checkout, with runtime/fixture/
+provider identities verified. The bounded bridge resolves; no molecular,
+biological, supported public-platform or performance claim follows.
 
 2026-11-08: [serial acquisition terminal receiving](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
 at b1139d0/run42494894038 verifies actual manager identity/effective1/1settings,

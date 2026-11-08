@@ -1,0 +1,62 @@
+{
+  "schema": "pharmacophoremt.bedroc-small-alpha-installed@1",
+  "issue": 155,
+  "source_commit": "c8c4dfdb25c87b107d645c9cef51f75a20ef61c6",
+  "wheel": {
+    "filename": "pharmacophoremt-0.4.0+181.gc8c4dfd-py3-none-any.whl",
+    "bytes": 4525251,
+    "sha256": "38b03d1514d9eccd23099188f7d93d8d5c549d2af3a87405ff590654778dcdd0"
+  },
+  "version": "0.4.0+181.gc8c4dfd",
+  "cases": 179,
+  "same_original_bodies": true,
+  "ordinary_bitwise_cases": 138,
+  "minimum_alpha_all_tied_value": 0.5,
+  "payload_files_authenticated": 211,
+  "nongenerated_runtime_files_equal": 156,
+  "fixture_files_authenticated": 855,
+  "loaded_runtime_modules_verified": 150,
+  "runtime_origin_check": "verified-loaded-imports",
+  "no_checkout_runtime_fallback": true,
+  "isolated_no_site_no_bytecode": true,
+  "shared_sdk": {
+    "revision": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "operation": "devtools.scripts.installed_imports.check_installed_imports"
+  },
+  "provider_python_bytes_unchanged": true,
+  "native_artifact_identity_retained": {
+    "bytes": 101188064,
+    "sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b"
+  },
+  "native_bytes_unchanged": true,
+  "native_molecular_evaluation": false,
+  "source_generated_version_preserved": true,
+  "warnings": "Original optional Beartype-absence decoration diagnostics and one controlled Ackredit-failure warning are retained; no numerical underflow warning.",
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "DATA_per_process_bytes": 536870912,
+    "AS": "unlimited inherited",
+    "aggregate_cgroup_enforced": false,
+    "reserve_fraction": 0.2,
+    "own_supervisor_child_envelope_bytes": 1610612736,
+    "installed_whole_command_peak_rss_bytes": 228728832,
+    "rss_scope": "Whole command lifetime high water; not incremental allocation or benchmark evidence."
+  },
+  "raw_receipt": {
+    "bytes": 1592332,
+    "sha256": "312711ec55bf1084f638ad3cdb334f76992fb20ac4279a188540823a975c8854"
+  },
+  "junit": {
+    "bytes": 28061,
+    "sha256": "3dee52258ecc6e16ccbb221e8c3a8aa1849eddfa035a0ed0d3674c14308941c2"
+  },
+  "raw_evidence": "build/phmt-bedroc-underflow-20261108-4mz4606h",
+  "owned_workspace": "/tmp/phmt-bedroc-installed-20261108-r2o7zspa",
+  "retention_review": "2026-11-22",
+  "limits": "One exact owned Linux/Python3.14wheel and explicit unchanged source-provider context. No complete public dependency solve, supported installed/platform matrix, biological or release qualification; #148 remains pending. Source receipt keeps its original pending bridge state.",
+  "source_generated_version_cache": "0.4.0+134.gee5d9fa",
+  "producer_identity_note": "Original source version cache is retained; exact Git/source hashes and owned wheel version identify distinct executed contexts."
+}

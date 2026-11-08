@@ -10,13 +10,18 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#155 BEDROC numerical correction](pending_bugs/bedroc_small_alpha.md) is received
+[#155 BEDROC numerical correction](archive/bedroc_small_alpha.md) is received
 in source: valid tiny positive alpha retains finite unbiased scores by reusing
 the ROC-AUC limit below float epsilon. Six original failures are preserved;
 179 numerical/saved-analysis cases now pass, and 138 ordinary-alpha results
 remain bitwise identical with an unchanged exponential branch. Strict docs pass.
 The [source receipt](evidence/bedroc_small_alpha_source_20261108.json) keeps
-resource/attribution/denominator evidence and the pending owned-wheel bridge.
+resource/attribution/denominator evidence and its original pending bridge state.
+The [same owned installed wheel](evidence/bedroc_small_alpha_installed_20261108.json)
+now passes the same 179 bodies/138 ordinary exact values outside checkout with
+no runtime fallback. Implementation c8c4dfd owns 0.4.0+181.gc8c4dfd; payload,
+fixture, loaded-runtime and unchanged provider/native bytes verify. The bounded
+bridge resolves; supported public/platform/release gates remain separate.
 This independent analytical work neither runs molecules nor clears #148.
 
 The [serial acquisition result](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
@@ -152,10 +157,14 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** receive the same 179 numerical/saved-analysis bodies
-from one exact owned wheel outside the checkout, then close #155 on that bounded
-evidence. Separately obtain a distinct reviewed acquisition strategy from the
-environment/resource owners. Do not
+**Next concrete action:** receive a distinct environment-manager strategy from
+the existing common-tool owner. Source review alone does not justify a blind
+Micromamba upgrade; investigate bounded Conda transaction workers and verify
+actual configuration/runtime before any installation. The
+[source/configuration review](evidence/environment_manager_source_review_20261108.json)
+retains a config-only local refusal: its old manager Python ignores the CPU-count
+override and still admits three extractor threads despite configured values of one.
+No installation was attempted. Do not
 repeat either exhausted manager profile or raise budgets. Receive all 87 native
 cases and actual provider/context evidence before the measured arm; continue
 independent product/provider receiving while that route remains unavailable.

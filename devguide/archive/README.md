@@ -5,12 +5,13 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (96)
+### Resolved (97)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
+- [`bedroc_small_alpha.md`](bedroc_small_alpha.md) — [#155](https://github.com/uibcdf/pharmacophoremt/issues/155) — Preserve finite unbiased BEDROC scores for every valid positive alpha. *(resolved, measured)*
 - [`cached_generation_profile.md`](cached_generation_profile.md) — [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) — Profile fixed-work cached generation and hand generic costs to their owners. *(resolved, measured)*
 - [`cached_generation_scaling_baseline.md`](cached_generation_scaling_baseline.md) — [#97](https://github.com/uibcdf/pharmacophoremt/issues/97) — Measure cached receptor-generation scaling with bounded shared resources. *(resolved, measured)*
 - [`carbonyl_acceptor_receiving_execution.md`](carbonyl_acceptor_receiving_execution.md) — [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) — Execute the frozen experimental carbonyl acceptor receiving matrix. *(resolved, measured)*

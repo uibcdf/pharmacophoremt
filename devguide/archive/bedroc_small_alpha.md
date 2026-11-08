@@ -1,9 +1,9 @@
 ---
 summary: Preserve finite unbiased BEDROC scores for every valid positive alpha.
 issue: uibcdf/pharmacophoremt#155
-status: partial
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-08
 severity: medium
 verification: measured
 area: [validation, numerics]
@@ -48,6 +48,18 @@ The new controls first produce six failures/23 passes, including NaN, a false
 saved-analysis cases pass, with real application-owned attribution and original
 failure/pending/upstream denominators unchanged. Strict full documentation also
 passes; original optional-provider/controlled-warning evidence is retained.
-One owned installed-wheel receiving remains pending. Neither source controls
-nor installed receiving will qualify biological results or the blocked #148
-molecular execution route.
+The source receipt preserves that original pending bridge state; subsequent
+owned installed receiving is recorded separately below. Neither evidence scope
+qualifies biological results or the blocked #148 molecular execution route.
+
+## Owned installed correction received
+
+Implementation c8c4dfd owns wheel 0.4.0+181.gc8c4dfd (4525251 bytes,
+SHA-256 38b03d1514d9eccd23099188f7d93d8d5c549d2af3a87405ff590654778dcdd0).
+The same 179 original bodies pass outside checkout with isolated/no-site/no-
+bytecode startup, authenticated fixtures and the shared SDK import-origin check.
+All 138 ordinary outputs remain exact; the minimum-alpha all-tied value is 0.5.
+All 211 payload files/156 nongenerated runtime files, 855 fixtures and 150 loaded
+runtime modules verify. Provider Python/native bytes stay unchanged. The
+[installed receipt](../evidence/bedroc_small_alpha_installed_20261108.json) retains
+actual resource limits, original warnings and public/platform/release limits.

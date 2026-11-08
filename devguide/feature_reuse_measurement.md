@@ -117,6 +117,24 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### Manager alternatives reviewed without installation, 2026-11-08 UTC
+
+The [source/configuration review](evidence/environment_manager_source_review_20261108.json)
+does not justify a blind Micromamba upgrade. Tagged 2.10.0 still schedules a
+thread per extraction task through MainExecutor and acquires its extraction
+semaphore within those tasks. This is source-level structural risk, not proof
+that 2.10.0 reproduces the observed 1.5.10 failure; no new transaction is run.
+
+Conda 26.10.0 instead has bounded transaction executors, but its extraction
+worker constants are separate from configured thread fields. A local metadata-
+only check finds Conda24.11.1/Python3.12.8: configured thread values are one,
+while os.cpu_count remains20 and EXTRACT_THREADS3. The Python CPU-count override
+is ignored by this interpreter. No environment/package operation, shared-prefix
+update or configuration mutation occurs. The local manager is not admitted as
+a serial replacement. Verify a distinct exact manager/interpreter and effective
+extraction constants through the common owner before another acquisition;
+preserve all earlier failures, input/source pins and memory/task budgets.
+
 ### Serial acquisition limit received, 2026-11-08 UTC
 
 [b1139d0/run42494894038/attempt1](evidence/feature_reuse_native_serial_limit_20261108.json)

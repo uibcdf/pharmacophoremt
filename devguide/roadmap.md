@@ -116,12 +116,14 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
-[#155 numerical robustness](pending_bugs/bedroc_small_alpha.md) fixes undefined
+[#155 numerical robustness](archive/bedroc_small_alpha.md) fixes undefined
 or biased BEDROC values for valid tiny alpha, including saved-run summaries.
 The source controls preserve the ordinary branch, original labels/denominators
 and actual criterion credit.179selected cases/138ordinary exact-value controls
-and strict docs pass; the owned-wheel bridge remains pending. This advances
-classical numerical consistency independently of the blocked molecular benchmark.
+and strict docs pass. The same 179 bodies and 138 ordinary values pass from
+the owned c8c4dfd wheel with verified origins and unchanged providers; the
+bounded bridge resolves. This advances classical numerical consistency
+independently of the blocked molecular benchmark and full public delivery.
 
 The previously pending [feature-reuse experiment](feature_inventory_reuse.md) is
 measured: 87 selected scientific cases, full native evidence equality for six

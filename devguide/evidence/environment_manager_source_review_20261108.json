@@ -1,0 +1,89 @@
+{
+  "schema": "pharmacophoremt.environment-manager-source-review@1",
+  "issue": 148,
+  "sources": [
+    {
+      "name": "mamba-main-executor",
+      "revision_tag": "2.10.0",
+      "url": "https://github.com/mamba-org/mamba/blob/2.10.0/libmamba/include/mamba/core/execution.hpp",
+      "source_blob_sha": "fda57dc987ae5f6e8eee2e38afd7f3e077ca8daa",
+      "bytes": 6036,
+      "sha256": "078f7ab32a3138cbe4d7f2846b5de00538ae0eb3d40836573c9f6058a4635042"
+    },
+    {
+      "name": "mamba-transaction",
+      "revision_tag": "2.10.0",
+      "url": "https://github.com/mamba-org/mamba/blob/2.10.0/libmamba/src/core/transaction.cpp",
+      "source_blob_sha": null,
+      "bytes": 61111,
+      "sha256": "c5fb212c7c2efdf3d76edcc2f62732ac54631b749440c31034ad8785d221e18c"
+    },
+    {
+      "name": "mamba-extractor",
+      "revision_tag": "2.10.0",
+      "url": "https://github.com/mamba-org/mamba/blob/2.10.0/libmamba/src/core/package_fetcher.cpp",
+      "source_blob_sha": "4d8d4a440eb9bbde3374302615b9947e71a7454b",
+      "bytes": 21517,
+      "sha256": "eb8791feab2c5d305dbfc51f84c1af3515fa1e93888be0f65d92235f4ea22698"
+    },
+    {
+      "name": "conda-transaction",
+      "revision_tag": "26.10.0",
+      "url": "https://github.com/conda/conda/blob/26.10.0/conda/core/package_cache_data.py",
+      "source_blob_sha": "3b3d90ced915344d6a1253db20cfab237981f8bd",
+      "bytes": 46772,
+      "sha256": "9a1e89dcee010173fda4104037c0ff6f5dae2b8c0b788cee8e3c931c2934744d"
+    },
+    {
+      "name": "conda-thread-settings",
+      "revision_tag": "26.10.0",
+      "url": "https://github.com/conda/conda/blob/26.10.0/conda/base/context.py",
+      "source_blob_sha": "fd36935d984456d85f6d6385a0b2e61559de9b51",
+      "bytes": 91741,
+      "sha256": "db771241d5853f07e701334ccc7ebb3ae338024a3a97ef6ce283997e0ed17547"
+    }
+  ],
+  "mamba_2_10_review": {
+    "kind": "source inspection, not an executed transaction",
+    "observed": "MainExecutor.schedule creates a std::thread for each scheduled task; transaction schedules extraction through it, while extraction semaphore is acquired inside each task.",
+    "inference": "A blind manager upgrade is not sufficient evidence for a bounded total worker pool. No new Micromamba installation or remote request made."
+  },
+  "conda_26_10_review": {
+    "kind": "source inspection, not an executed transaction",
+    "observed": "Uses bounded fetch/extraction executors. Extraction uses os.cpu_count-based constants capped at3threads/4processes, separate from configured thread fields.",
+    "candidate": "Verify the exact manager/interpreter and actual extraction constants, including a supported Python CPU-count override where available, before declaring any acquisition."
+  },
+  "local_conda_metadata": {
+    "python": "3.12.8 | packaged by Anaconda, Inc. | (main, Dec 11 2024, 16:31:09) [GCC 11.2.0]",
+    "executable": "/fast_data/home/liliana/miniconda3/bin/python",
+    "conda_version": "24.11.1",
+    "conda_file": "/fast_data/home/liliana/miniconda3/lib/python3.12/site-packages/conda/__init__.py",
+    "package_cache_file": "/fast_data/home/liliana/miniconda3/lib/python3.12/site-packages/conda/core/package_cache_data.py",
+    "cpu_count": 20,
+    "extract_threads": 3,
+    "extract_processes": null,
+    "threads": {
+      "default_threads": 1,
+      "fetch_threads": 1,
+      "repodata_threads": 1,
+      "verify_threads": 1,
+      "execute_threads": 1
+    },
+    "scope": "Metadata only; no environment/solver/package operation"
+  },
+  "probe_limits": {
+    "environment_creation": false,
+    "packages_installed": false,
+    "shared_prefix_or_configuration_mutated": false,
+    "DATA_bytes": 536870912,
+    "cpu": 19,
+    "peak_children_rss_bytes": 38219776
+  },
+  "local_disposition": "This Python3.12.8manager ignores PYTHON_CPU_COUNT=1; configured thread fields all1 do not make EXTRACT_THREADS3 become1. Not admitted as a serial acquisition replacement.",
+  "python_reference": "https://docs.python.org/3.14/using/cmdline.html#envvar-PYTHON_CPU_COUNT",
+  "capacity": "Own UID2000 bus remains absent; current readonly Slurm observation has no usable node/allocation. No new scheduler or shared-host configuration.",
+  "next_action": "Common environment owner to qualify a distinct manager/interpreter/transaction strategy; retain existing2GiB/64task/native512MiBbudgets and source pins. No blind retry.",
+  "raw_evidence": "build/phmt-bedroc-underflow-20261108-4mz4606h",
+  "retention_review": "2026-11-22",
+  "no_scientific_or_performance_result": true
+}
