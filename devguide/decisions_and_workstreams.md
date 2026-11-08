@@ -23,6 +23,15 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [CDPKit lifecycle study](cdpkit_library_update_review.md) authenticates
+ten source blobs at v1.3.0/a8c7985 and refines earlier update/duplicate uncertainty.
+Nine unexecuted cases distinguish provider collection policy from PHMT feature/
+search-asset compatibility. This is documentary/source receiving under#128, not
+an engine adoption, runtime/collection implementation or scientific benchmark.
+Reporting/index/link and source-integrity checks pass; canonical publication
+readback is separately owned by#128. The original outdated #140 report link is
+corrected without changing its archived evidence.
+
 2026-11-08: [#157 single-work detail](archive/inspect_saved_work_item.md)
 adds the public exact-key reader and command. Confirmed match/zero/failure and
 pending work retain original evidence/status/attempt meanings; drafts stay hidden.

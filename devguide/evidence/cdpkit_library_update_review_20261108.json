@@ -1,0 +1,260 @@
+{
+  "schema": "pharmacophoremt.cdpkit-library-update-review@1",
+  "date": "2026-11-08",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "owning_issue": 128,
+  "product_issue": 108,
+  "provider_issue": "uibcdf/molsysmt#624",
+  "discussion": 132,
+  "prospective_issue_comment": 6726824498,
+  "phmt_parent_source": "3913a5a5c2a3e1c2c22d745fe330f5a3a6c5d640",
+  "source": {
+    "repository": "molinfo-vienna/CDPKit",
+    "tag": "v1.3.0",
+    "commit": "a8c798572f28eefd564b020621e514909b5552d8",
+    "tag_ref_observed_type": "commit",
+    "git_blob_payloads_verified": 10,
+    "files": [
+      {
+        "path": "Libs/C++/Source/CDPL/Pharm/PSDScreeningDBAccessorImpl.cpp",
+        "git_blob_sha": "d87c90a711c5803ab81bdf284b9ce7d74428bb75",
+        "bytes": 16160,
+        "sha256": "15f1b5c7edde19b24957f2d4b5f0391284b497982d58a500dd0cc10d39cfa97b",
+        "inspected_line_ranges": [
+          [
+            113,
+            145
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Source/CDPL/Pharm/PSDScreeningDBAccessorImpl.cpp"
+      },
+      {
+        "path": "Apps/CmdLine/PSDCreate/PSDCreateImpl.cpp",
+        "git_blob_sha": "7b42210051c9c6b42f1ff72425ae26caf30a7bde",
+        "bytes": 22423,
+        "sha256": "a815bf89f59a57a199af901cc93df6e4690a7c3a968002f3779b4bbf8de05c27",
+        "inspected_line_ranges": [
+          [
+            124,
+            146
+          ],
+          [
+            156,
+            187
+          ],
+          [
+            270,
+            329
+          ],
+          [
+            478,
+            523
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Apps/CmdLine/PSDCreate/PSDCreateImpl.cpp"
+      },
+      {
+        "path": "Libs/C++/Include/CDPL/Pharm/ScreeningDBCreator.hpp",
+        "git_blob_sha": "8cfae4d1155dedb4d547c8a6dec8c4695bdfdfe0",
+        "bytes": 2947,
+        "sha256": "edfe690bacc5c42a3d50d975d9d1075199da03ce8241b4b3122ce88076b351a6",
+        "inspected_line_ranges": [
+          [
+            55,
+            103
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Include/CDPL/Pharm/ScreeningDBCreator.hpp"
+      },
+      {
+        "path": "Libs/C++/Source/CDPL/Pharm/PSDScreeningDBCreatorImpl.cpp",
+        "git_blob_sha": "2ca93bbf5c16487c51b87632535e0134f66dea89",
+        "bytes": 19584,
+        "sha256": "d4e229d7fedbf3a4c949f518de917aede3d80a376e36d19aba217662139415a5",
+        "inspected_line_ranges": [
+          [
+            147,
+            164
+          ],
+          [
+            184,
+            221
+          ],
+          [
+            258,
+            445
+          ],
+          [
+            467,
+            525
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Source/CDPL/Pharm/PSDScreeningDBCreatorImpl.cpp"
+      },
+      {
+        "path": "Libs/C++/Source/CDPL/Pharm/PSDScreeningDBCreatorImpl.hpp",
+        "git_blob_sha": "b4afebc2a7ee99e479aeff25d24be4f9e27cea3c",
+        "bytes": 5570,
+        "sha256": "84fa5ae1c0ca71aae0ad28cd9a05d407829547ce761b3c6a26e5b3d2317d006b",
+        "inspected_line_ranges": [
+          [
+            106,
+            123
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Source/CDPL/Pharm/PSDScreeningDBCreatorImpl.hpp"
+      },
+      {
+        "path": "Libs/C++/Source/CDPL/Pharm/PSDScreeningDBCreator.cpp",
+        "git_blob_sha": "e4849a6e9a22099b46f65666bc2f7794dbb73f7d",
+        "bytes": 2705,
+        "sha256": "47b543c226877315298d5c0067e77d4889bf41a351021748866c3875bb46c199",
+        "inspected_line_ranges": [
+          [
+            34,
+            64
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Source/CDPL/Pharm/PSDScreeningDBCreator.cpp"
+      },
+      {
+        "path": "Libs/C++/Source/CDPL/Chem/MolecularGraphHashCodeFunction.cpp",
+        "git_blob_sha": "c544c8b2b6c7ed5edcef87f4ffc899fb6006f615",
+        "bytes": 2162,
+        "sha256": "1f9419fd3a11eb6857dbfc8cdef08bbc154dd0fe73ac812cfd9e8aba84107bd6",
+        "inspected_line_ranges": [],
+        "used_for_claims": false,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Source/CDPL/Chem/MolecularGraphHashCodeFunction.cpp"
+      },
+      {
+        "path": "Libs/C++/Include/CDPL/Chem/HashCodeCalculator.hpp",
+        "git_blob_sha": "426964e597d40c0628cb2c39aa3bc3cc868a4ba9",
+        "bytes": 11059,
+        "sha256": "81862a711ee4cb90f24c0de590b40607b70345e3d73862cc2d80047a900fe534",
+        "inspected_line_ranges": [
+          [
+            59,
+            75
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Include/CDPL/Chem/HashCodeCalculator.hpp"
+      },
+      {
+        "path": "Libs/C++/Source/CDPL/Chem/HashCodeCalculator.cpp",
+        "git_blob_sha": "8fb457197bb9e4f989f2496321e8db40e342b06b",
+        "bytes": 16852,
+        "sha256": "1d1eac640aee7b153a48d79f0bb2200010726b7451adac1febcf0923a1544611",
+        "inspected_line_ranges": [
+          [
+            259,
+            292
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Libs/C++/Source/CDPL/Chem/HashCodeCalculator.cpp"
+      },
+      {
+        "path": "Apps/CmdLine/PSDMerge/PSDMergeImpl.cpp",
+        "git_blob_sha": "c498b0e80470b1d18035f4fee171655ed6c69436",
+        "bytes": 7868,
+        "sha256": "6087b8686bef51f623ba60d5b0f05d2561cf6a5f211d874b671a1a5b3f59b87e",
+        "inspected_line_ranges": [
+          [
+            62,
+            77
+          ],
+          [
+            104,
+            174
+          ],
+          [
+            190,
+            209
+          ]
+        ],
+        "used_for_claims": true,
+        "url": "https://github.com/molinfo-vienna/CDPKit/blob/a8c798572f28eefd564b020621e514909b5552d8/Apps/CmdLine/PSDMerge/PSDMergeImpl.cpp"
+      }
+    ]
+  },
+  "official_docs_observed": [
+    {
+      "url": "https://cdpkit.org/applications/psdcreate.html",
+      "displayed_version": "1.3.0",
+      "exact_deployed_source_revision": "not authenticated"
+    },
+    {
+      "url": "https://cdpkit.org/applications/psdmerge.html",
+      "displayed_version": "1.3.0",
+      "exact_deployed_source_revision": "not authenticated"
+    },
+    {
+      "url": "https://cdpkit.org/applications/psdscreen.html",
+      "displayed_version": "1.3.0",
+      "exact_deployed_source_revision": "not authenticated"
+    }
+  ],
+  "evidence_class": "source_inspection",
+  "named_record": "devguide/cdpkit_library_update_review.md",
+  "follow_up_cases_declared": 9,
+  "follow_up_cases_executed": 0,
+  "runtime_compatibility": "unobserved",
+  "molecular_data_downloaded": false,
+  "competitor_installed_compiled_or_executed": false,
+  "scientific_or_timing_result": false,
+  "phmt_runtime_or_schema_changed": false,
+  "molecular_collection_or_parser_fork": false,
+  "environment_manager_transaction": false,
+  "resource_profile_increased": false,
+  "raw_evidence": "build/phmt-cdpkit-study-20261108-nk43tii2",
+  "retention_review": "2026-11-22",
+  "interpretation_checks": [
+    "Per-record rollback is not whole-refresh/power-loss proof.",
+    "Insertion count is not searchable coverage.",
+    "Transferred features and derived counts are not regenerated chemical features.",
+    "Open resets processed-hash set; stale-cache hypothesis refuted."
+  ],
+  "tool_boundaries": "GitHub plugin tags collection unsupported; supported Git-data refs/trees/blobs/files authenticate the release. Native GraphQL is needed only for Discussion operations. No external issue or PR publication.",
+  "own_sealing_failure": "Initial path-only relative_to error retained in private capsule; corrected without changing source/claims.",
+  "limits": "Selected pinned-source inspection only. Consumer requirements are proposals, not accepted APIs/backends/defaults, implemented connector/index, performance/biology, full public delivery or release qualification.",
+  "checks": {
+    "checks": [
+      {
+        "check": "index-generate",
+        "exit_code": 0
+      },
+      {
+        "check": "index-check",
+        "exit_code": 0
+      },
+      {
+        "check": "reporting",
+        "exit_code": 0
+      },
+      {
+        "check": "whitespace",
+        "exit_code": 0
+      }
+    ],
+    "reporting_tests": 3,
+    "source_blobs_verified": 10,
+    "markdown_local_targets": "valid",
+    "runtime_tests_tooling_manifests_unchanged": true,
+    "discussion_id": "D_kwDOP5ch7M4Aq5f8",
+    "initial_discussion_body_sha256": "0bbcac7f965687770b244447fef4ad216b856629c94a2c28e199479981e386c5",
+    "actor": "LMMV",
+    "corrected_existing_link": "#128 now links the same archived #140 report",
+    "scope": "Documentation/source receiving only; no new runtime test or scientific result."
+  },
+  "publication_receiving": "Separate live evidence in owning issue#128 and the private capsule after source delivery; not asserted by this source-only receipt."
+}

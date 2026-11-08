@@ -1,6 +1,6 @@
 # Pharmacophore-tool study registry
 
-Maintained 2026-11-06; accountable owners: PharmacophoreMT maintainers LMMV/dprada.
+Maintained 2026-11-08; accountable owners: PharmacophoreMT maintainers LMMV/dprada.
 The maintainer requests this separate registry for tools to study, compare against
 and learn from. It covers scientific methods, workflows, public APIs, performance
 engineering and usability. It complements the chemical-library registry.
@@ -85,6 +85,15 @@ Historical documentation and current product descriptions remain distinguished.
 | MOE | [Study, lessons and questions](https://github.com/uibcdf/pharmacophoremt/discussions/139) |
 
 ## Useful comparisons and product criteria
+
+The [CDPKit update/identity review](cdpkit_library_update_review.md) now follows
+CREATE/APPEND/UPDATE/merge through exact v1.3.0 source. Ten captured Git blobs
+authenticate the selected observations. Replacement/session scope, imported versus
+searchable counts, transferred features and per-record transaction boundaries
+produce nine explicit follow-up cases and consumer requirements for #108 and
+MolSysMT#624. This remains documentary/source evidence: no CDPKit installation,
+execution, chemical-equivalence or performance comparison occurred. The other
+tool records retain their own evidence levels; no engine is adopted.
 
 The first [executed Pharm3D comparison](rdkit_bounds_comparison.md) is now
 recorded separately from the original documentary intake. On installed

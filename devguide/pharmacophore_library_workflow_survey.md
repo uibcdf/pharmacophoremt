@@ -261,6 +261,14 @@ serialization contracts determine what can actually be persisted/replayed.
 
 ## Execution strategies that need a measured decision
 
+**2026-11-08 follow-up:** the [pinned CDPKit source review](cdpkit_library_update_review.md)
+resolves part of the original duplicate/replacement uncertainty through selected
+implementation paths. It distinguishes session-scoped replacement, molecule versus
+searchable counts and per-record rollback, and declares nine further acceptance
+cases. These are source observations and proposed consumer requirements; the
+original survey, actual PHMT implementations and unexecuted comparisons retain
+their own evidence scope.
+
 | Candidate | Appropriate question | Costs and scientific obligations |
 | --- | --- | --- |
 | Incremental scan over prepared inputs | Small/one-off collections, strict RAM limits, reference calculations, heterogeneous provider inputs | Low additional persistent storage; full repeated scan cost. Preserve global identity, lazy consumption, per-input/per-frame failures and incremental output. This alone does not provide indexed large-library latency. |

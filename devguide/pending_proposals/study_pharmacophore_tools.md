@@ -57,8 +57,19 @@ with106 selected local cases and the separate complete driver passing. Interior
 filter equality, proper-fit reflection rejection and exact-boundary divergence
 retain their actual scope; nine other tool records remain documentary. Original
 resource/harness failures and the prospective data-budget amendment are preserved.
-[#140](qualify_rdkit_projection.md) owns public projection/constraint fidelity.
+[#140](../archive/qualify_rdkit_projection.md) owns public projection/constraint fidelity.
 This does not close the broad comparison registry or biological/performance gates.
+
+## CDPKit source follow-up — 2026-11-08
+
+The [update/identity review](../cdpkit_library_update_review.md) binds ten raw
+Git blobs to exact v1.3.0/a8c7985 and authenticates their bytes. Selected source
+paths refine duplicate/replacement, conformer, failure/publication, imported versus
+searchable and merged-feature compatibility questions. Nine declared acceptance
+cases remain unexecuted. Findings and proposed owner-specific requirements go
+to #108/MolSysMT#624 and canonical Discussion#132; publication receiving remains
+separate from toolkit execution, biological or performance evidence. No engine
+adoption or runtime change closes this broad registry.
 
 ## Acceptance criteria
 

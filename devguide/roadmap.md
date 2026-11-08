@@ -116,6 +116,14 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+The [CDPKit lifecycle source review](cdpkit_library_update_review.md) refines
+milestones3/4 before choosing an update/index contract. Exact v1.3.0 source
+separates duplicate/session policy, complete publication, imported/searchable
+counts and copied-feature compatibility. Nine acceptance cases and owner-specific
+requirements remain proposals under#108/MolSysMT#624. No collection implementation,
+index/connector, executed comparison or scale claim follows. Reporting/index/link and source-integrity checks pass. Canonical research
+publication/readback stays separately recorded under#128.
+
 [#157 single-work inspection](archive/inspect_saved_work_item.md)
 adds a public exact-key operation and command for original confirmed evidence,
 failure or pending state. The final85case source selection includes16new guards
