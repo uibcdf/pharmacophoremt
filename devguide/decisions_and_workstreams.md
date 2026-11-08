@@ -23,6 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [serial acquisition terminal receiving](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
+at b1139d0/run42494894038 verifies actual manager identity/effective1/1settings,
+but extraction still fails within the unchanged memory/task envelope. No native
+case executes. Stop the exhausted profiles and hand the measured limit to the
+environment/resource owners; independent product work remains active.
+
 2026-11-08: [serial acquisition](feature_reuse_measurement.md#serial-acquisition-prepared-2026-11-08-utc)
 is prepared through the same SDK, with effective extraction/download settings
 of one and early official-manager identity checks.46focused cases/21admission

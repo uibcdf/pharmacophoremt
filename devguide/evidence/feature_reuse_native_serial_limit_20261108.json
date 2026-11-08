@@ -1,0 +1,214 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-serial-acquisition-limit@1",
+  "issue": 148,
+  "producer": "b1139d058c1197560d3e7e6ee7b272cf38638210",
+  "run": {
+    "id": 42494894038,
+    "run_attempt": 1,
+    "workflow_id": 410975382,
+    "event": "workflow_dispatch",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-08T15:27:25Z",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42494894038"
+  },
+  "job": {
+    "id": 128775001410,
+    "name": "native",
+    "conclusion": "failure",
+    "steps": [
+      {
+        "number": 1,
+        "name": "Set up job",
+        "conclusion": "success"
+      },
+      {
+        "number": 2,
+        "name": "Run actions/checkout@v4",
+        "conclusion": "success"
+      },
+      {
+        "number": 3,
+        "name": "Run actions/setup-python@v5",
+        "conclusion": "success"
+      },
+      {
+        "number": 4,
+        "name": "Check out the reviewed dependency SDK",
+        "conclusion": "success"
+      },
+      {
+        "number": 5,
+        "name": "Prepare the owned manager root for failure-safe cleanup",
+        "conclusion": "success"
+      },
+      {
+        "number": 6,
+        "name": "Install only the reviewed manager binary",
+        "conclusion": "success"
+      },
+      {
+        "number": 7,
+        "name": "Prepare the pinned environment inside its own bounded service",
+        "conclusion": "failure"
+      },
+      {
+        "number": 8,
+        "name": "Qualify the original native fixtures inside 512MiB",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 13,
+        "name": "Post Install only the reviewed manager binary",
+        "conclusion": "success"
+      },
+      {
+        "number": 14,
+        "name": "Post Check out the reviewed dependency SDK",
+        "conclusion": "success"
+      },
+      {
+        "number": 15,
+        "name": "Post Run actions/setup-python@v5",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 16,
+        "name": "Post Run actions/checkout@v4",
+        "conclusion": "success"
+      },
+      {
+        "number": 17,
+        "name": "Complete job",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "native_job_facts": "Independently reread via connected GitHub job API: same single latest attempt/job/step facts.",
+  "bootstrap_admitted": {
+    "stage": "bootstrap_admitted",
+    "controls": {
+      "memory.max": "2147483648",
+      "memory.swap.max": "0",
+      "memory.oom.group": "1",
+      "pids.max": "64",
+      "cpu.max": "100000 100000",
+      "cpuset.cpus.effective": "3"
+    },
+    "resources": {
+      "memory": {
+        "MemTotal": 16759439360,
+        "MemAvailable": 15488794624,
+        "SwapTotal": 3221221376,
+        "SwapFree": 3221221376
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2\n",
+      "unit_memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=0\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=0\n",
+      "swap_pages": {
+        "pswpin": 0,
+        "pswpout": 0
+      },
+      "unit_memory_current": 23060480,
+      "unit_memory_peak": 23130112,
+      "unit_tasks": 1,
+      "memory_events": {
+        "low": "0",
+        "high": "0",
+        "max": "0",
+        "oom": "0",
+        "oom_kill": "0",
+        "oom_group_kill": "0",
+        "sock_throttled": "0"
+      },
+      "units": {
+        "memory": "byte",
+        "swap_pages": "page",
+        "psi_avg10": "percent"
+      },
+      "load": [
+        2.490234375,
+        0.619140625,
+        0.20703125
+      ],
+      "capacity_reserved": false
+    },
+    "native_qualification_received": false
+  },
+  "manager_received": {
+    "stage": "manager_controls_received",
+    "manager": {
+      "bytes": 14606408,
+      "sha256": "80057e007579d482a39dc283dd3e725503e34da7e7c51844957164511cdb917b"
+    },
+    "version": "1.5.10",
+    "controls": {
+      "download_threads": 1,
+      "extract_threads": 1
+    },
+    "scope": "Effective configuration only; transaction behavior remains unqualified"
+  },
+  "resource_observations": {
+    "samples": 11,
+    "sampled_cgroup_peak_memory_bytes": 2166816768,
+    "maximum_observed_tasks": 64,
+    "last_memory_events": {
+      "low": "0",
+      "high": "0",
+      "max": "13920",
+      "oom": "0",
+      "oom_kill": "0",
+      "oom_group_kill": "0",
+      "sock_throttled": "0"
+    },
+    "last_swap_pages": {
+      "pswpin": 0,
+      "pswpout": 0
+    },
+    "host_available_at_last_sample_bytes": 14562037760,
+    "final_lifetime_peak_and_pids_events": "Not captured; reaching64sampled tasks does not independently establish the pids-event count.",
+    "kernel_cap_and_peak": "memory.max remains2GiB; report transiently overshooting sampled kernel peak without treating it as a new budget."
+  },
+  "failure": {
+    "stage": "sdk-create/package extraction",
+    "resolved_packages": 403,
+    "displayed_total_download": "1GB rounded",
+    "manager_message": "critical libmamba Resource temporarily unavailable; extraction reports SIGINT received. Aborting extraction.",
+    "manager_exit": "SIGABRT, SDK correctly propagates exit1",
+    "cause_limit": "Memory.maxevents and full sampled task occupancy are observed; exact attribution among resource limits remains unproven without pids.events. No kernel OOMkill or swap is observed."
+  },
+  "cleanup": "Private manager root and binary cleanup pass",
+  "native_phase": {
+    "executed": false,
+    "tests": 0,
+    "provider_bindings_received": false,
+    "512MiB_scope_received": false
+  },
+  "fixed_plan": {
+    "bytes": 4999,
+    "sha256": "919d15ce72e862533734852778856822075c99dccadfbccc4814e0f6c2095b61"
+  },
+  "prior_failed_runs": [
+    42460786720,
+    42461400749
+  ],
+  "ghrr": {
+    "version": "1.4.0",
+    "capture": "full, complete",
+    "manifest": {
+      "bytes": 1850,
+      "sha256": "0d7f515e664d52ca9a39cd30e5c376fb766a473e148281f332b1fef2f779c5c2"
+    },
+    "logs_zip": {
+      "bytes": 50734,
+      "sha256": "62115361711c029e96a052c64a1fa7e041f2ebeace4aab71756d2336be4c4224"
+    },
+    "replay_expected_exit": 1
+  },
+  "next_action": "Stop this exhausted unchanged-manager acquisition route. Hand actual1/1controls plus memory/task observations to the environment/resource owners and obtain a distinct reviewed strategy before any further request. Do not raise budgets or retry this profile.",
+  "molecular_or_benchmark_execution": false,
+  "original_benchmark_snapshots_submitted": false,
+  "raw_evidence": "build/phmt-native-reuse-qualification-20261108-md_ysaii",
+  "retention_review": "2026-11-22",
+  "whole_goal": "active",
+  "limits": "No native fixture, measured arm, private-input pilot/timing, speed/scale, biological, public-installed or release qualification."
+}

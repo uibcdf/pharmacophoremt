@@ -117,6 +117,30 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### Serial acquisition limit received, 2026-11-08 UTC
+
+[b1139d0/run42494894038/attempt1](evidence/feature_reuse_native_serial_limit_20261108.json)
+is **failure**. Actual bootstrap controls and exact manager size/hash/version
+verify, as do its effective extract_threads=1/download_threads=1 settings.
+Resolution completes with 403 packages/rounded 1GB download, but extraction
+still aborts with Resource temporarily unavailable. The SDK propagates SIGABRT/
+exit1 and owned cleanup passes. All 87 native cases and their 512MiB scope remain
+unexecuted; there is no provider/native-context or performance result.
+
+Sampled kernel peak is 2166816768 bytes, tasks reach the declared 64 and
+memory.max events reach 13920, with no kernel OOM kill or swap. Requested cap
+and transiently overshooting observed peak remain distinct. Pids.events/final
+lifetime peaks are not captured, so do not assign the exact failing resource
+from task occupancy alone. Configuration recognition did not establish a bounded
+total manager worker count or successful transaction.
+
+Stop both exhausted profiles with this manager under these budgets. Hand the
+actual controls and failures to MolSysSuite#108/infrastructure#1 for a distinct
+reviewed acquisition strategy; do not enlarge budgets, repeat the profile or
+substitute scientific inputs. Retain all three producers/run identities and raw
+GHRR1.4 captures. Independent product work may continue; native admission, the
+measured arm and original-input pilot remain pending.
+
 ### Serial acquisition prepared, 2026-11-08 UTC
 
 The [separate fixed plan](evidence/feature_reuse_native_serial_acquisition_plan_20261108.json)

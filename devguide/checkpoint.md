@@ -10,13 +10,15 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [serial acquisition correction](feature_reuse_measurement.md#serial-acquisition-prepared-2026-11-08-utc)
-is prepared: the same SDK/manager now requires extraction/download concurrency
-of one and verifies actual effective settings plus the official binary before
-installing anything. All 46 focused administrative cases (21 admission guards)
-pass; the real consumer helper also verifies the exact binary/configuration.
-No environment acquisition or molecular execution is inferred from these controls.
-The resource/scientific budgets and both prior failed runs remain unchanged.
+The [serial acquisition result](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
+at b1139d0/run42494894038 verifies the actual official manager and effective
+extraction/download settings of one, but package extraction still fails at the
+unchanged 2GiB/64-task envelope. The whole run fails; no native case executes.
+Both earlier failures and all budgets/pins remain unchanged. Stop this exhausted
+manager route and obtain a distinct reviewed acquisition strategy from the
+environment/resource owners before another request. The 46 focused local
+controls (21 admission guards), real config-only helper and three reporting/
+full Ruff/index checks remain separate passing evidence.
 
 [#153 SQLite lifetime correction](archive/administrative_sqlite_lifetimes.md)
 closes the five fixture-owned connections behind all 15 traced warnings, while
@@ -141,10 +143,11 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** publish/review the prepared serial acquisition source,
-verify live main and complete exact-head inventory, then request its fixed
-qualification at most once. Receive actual transaction/manager controls and
-all 87 native cases and actual provider/context evidence before the measured arm.
+**Next concrete action:** hand the actual serial-profile limit to the environment/
+resource owners and obtain a distinct reviewed acquisition strategy. Do not
+repeat either exhausted manager profile or raise budgets. Receive all 87 native
+cases and actual provider/context evidence before the measured arm; continue
+independent product/provider receiving while that route remains unavailable.
 The three original benchmark snapshots remain local pending redistribution
 assessment; do not submit them or substitute a new workload for the declared
 pilot. Never redispatch completed27c1178/5c3cd64runs or retry the exhausted local

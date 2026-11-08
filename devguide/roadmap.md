@@ -69,6 +69,10 @@ The [serial acquisition correction](feature_reuse_measurement.md#serial-acquisit
 now fixes manager extraction/download concurrency to one and verifies effective
 settings/binary identity before acquisition.46focused cases and the real
 config-only helper pass; actual transaction/native behavior is still unmeasured.
+Actual [serial-profile receiving](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
+at b1139d0/run42494894038 verifies manager/configuration but extraction still
+fails at the unchanged memory/task envelope. Stop this manager route and obtain
+a distinct reviewed acquisition strategy; no native/performance gate is cleared.
 
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public
