@@ -116,13 +116,15 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
-[#156 declared-work inspection](pending_proposals/inspect_declared_work_cli.md)
+[#156 declared-work inspection](archive/inspect_declared_work_cli.md)
 adds paginated `--work-items` to the independent reader command, preserving
 pending/unpublished mappings and original identities without scientific imports.
 All69 selected reader/command/progress/export cases pass, including12 new
-controls. Strict full docs and local governance pass; the owned installed bridge
-remains pending. This advances milestone2 accessibility; no scale or new connector is
-qualified.
+controls. Strict full docs and local governance pass. The same69 bodies pass
+from the exact5d77c9c owned wheel outside checkout; eight documented commands
+preserve four original historical databases. The bounded installed bridge
+resolves. This advances milestone2 accessibility; human usability, full supported
+public delivery, scale and new connectors retain their separate gates.
 
 [#155 numerical robustness](archive/bedroc_small_alpha.md) fixes undefined
 or biased BEDROC values for valid tiny alpha, including saved-run summaries.

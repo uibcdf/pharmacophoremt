@@ -23,10 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
-2026-11-08: [#156 bounded work inspection](pending_proposals/inspect_declared_work_cli.md)
+2026-11-08: [#156 bounded work inspection](archive/inspect_declared_work_cli.md)
 exposes original manifest mappings, including unconfirmed work, through a
 paginated independent command. Source69 selected controls, strict full docs and
-local governance pass; exact owned installed receiving remains pending.
+local governance pass. The same69 original bodies also pass from the exact
+5d77c9c owned wheel;59guarded children and eight documented commands on four
+unchanged historical databases verify. The bounded installed bridge resolves.
 Complete verification and original reader/ranking/export behavior stay intact;
 no molecular calculation, new acquisition route or scale claim follows.
 

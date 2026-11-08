@@ -36,6 +36,14 @@ See the [public recipe](../docs/content/cookbook/recoverable_prepared_screening.
 and [prospective plan](evidence/work_cli_plan_20261108.json); source/installed
 receiving for this increment is separate from historical exporter evidence below.
 
+The [archived #156 report](archive/inspect_declared_work_cli.md) now receives
+69 selected cases in source and the same69 original bodies from the owned
+5d77c9c/wheel0.4.0+183.g5d77c9c outside checkout. The
+[installed receipt](evidence/work_cli_installed_20261108.json) retains59guarded
+children, eight exact documented commands on four unchanged historical files,
+original support/fixture/runtime identities and resource limits. This resolves
+that bounded bridge; full supported public/platform and scale gates remain open.
+
 The later [progress increment](saved_run_progress.md) adds `--summary` through
 `ScreeningRunView.progress()`, independently of the explicit ranking criterion.
 Its own source/installed receipt retains that increment's producer and scope.

@@ -1,9 +1,9 @@
 ---
 summary: Inspect all declared screening work through bounded command-line pages.
 issue: uibcdf/pharmacophoremt#156
-status: partial
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-08
 verification: measured
 area: [results, usability]
 guard: tests/test_public_work_cli.py::TestPublicWorkCLI::test_pages_preserve_all_original_work_including_unconfirmed_entries
@@ -63,3 +63,26 @@ unescaping corrects that check without changing the rendered output. The
 Exact owned installed receiving remains pending and will be recorded separately;
 no supported public/platform claim. Changed scientific producer bindings may
 require a fresh linked run for reexecution; original independent reading remains.
+
+## Owned installed receiving, 2026-11-08
+
+Implementation5d77c9cb46e48ebd915a35ad4d0f205ab6240603 owns the single
+0.4.0+183.g5d77c9c wheel (4525665bytes, SHA-256
+`a360c01c77e6f72cbb3f2d7ea5bbe6d8f6f8ec7dd1a35af055b5fe420e8e025b`).
+The [separate installed receipt](../evidence/work_cli_installed_20261108.json)
+passes the same69original bodies outside checkout with isolated/no-site startup,
+published ArgDigest0.17.1/SMonitor0.22.1/DepDigest0.11.0 payloads and no source
+runtime fallback. All211payload/156nongenerated runtime files, seven original
+fixture files and seven loaded parent runtime modules verify. Only fresh-child
+launch wiring changes; the original legacy fixture wrapper and test bodies stay
+unchanged.59guarded children retain38successes/21expected refusals with no
+scientific/attribution namespace import. Eight exact documented work commands
+pass on four original historical databases with rows/identities/bytes unchanged.
+
+Whole installed-command peak RSS61042688bytes includes guards/tooling/tests;
+it is not incremental page allocation or performance evidence. Original512MiB
+reader AS/DATA, one CPU/thread and low priorities remain; no aggregate local
+cgroup is available. No environment transaction/shared-prefix mutation, native
+execution or resource increase occurs. The bounded bridge resolves; supported
+public PHMT dependency/installed/platform, biological, scale and release gates
+remain separate. The source receipt preserves its original pending bridge state.

@@ -10,185 +10,59 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#156 declared-work command](pending_proposals/inspect_declared_work_cli.md)
-adds `--work-items` with bounded pages, default10/positive limit and nonnegative
-offset. It exposes original manifest identities, including staged/never-started
-work, through the existing verified public reader. All69 selected CLI/reader/
-progress/export controls pass, including12 new guards; source formatting
-preserves the tested AST. Page retention is bounded by the selected limit,
-offset traversal is linear and opening still verifies the complete run. No
-molecular/attribution import or collection/parser is added. Strict full docs,
-full Ruff/format, index and three reporting checks pass; the rendered work anchor
-and library-guide link verify. The [source receipt](evidence/work_cli_source_20261108.json)
-retains nine original failures/three passes and the separate HTML-entity checker
-correction. Owned installed receiving remains pending.
+[#156 declared-work command](archive/inspect_declared_work_cli.md) adds
+`--work-items` with paginated original manifest mappings, including staged and
+never-started work. Default limit10, positive `--limit` and nonnegative
+`--offset` retain original order and run/work identities. The existing verified
+reader owns admission; no scientific/attribution import, collection or parser is
+added. Page retention depends on the requested limit; offset traversal is linear
+and opening still verifies the complete saved run.
 
-[#155 BEDROC numerical correction](archive/bedroc_small_alpha.md) is received
-in source: valid tiny positive alpha retains finite unbiased scores by reusing
-the ROC-AUC limit below float epsilon. Six original failures are preserved;
-179 numerical/saved-analysis cases now pass, and 138 ordinary-alpha results
-remain bitwise identical with an unchanged exponential branch. Strict docs pass.
-The [source receipt](evidence/bedroc_small_alpha_source_20261108.json) keeps
-resource/attribution/denominator evidence and its original pending bridge state.
-The [same owned installed wheel](evidence/bedroc_small_alpha_installed_20261108.json)
-now passes the same 179 bodies/138 ordinary exact values outside checkout with
-no runtime fallback. Implementation c8c4dfd owns 0.4.0+181.gc8c4dfd; payload,
-fixture, loaded-runtime and unchanged provider/native bytes verify. The bounded
-bridge resolves; supported public/platform/release gates remain separate.
-This independent analytical work neither runs molecules nor clears #148.
+The [source receipt](evidence/work_cli_source_20261108.json) retains nine original
+failures/three passes,69 selected passing controls (12new), unchanged original
+reader/progress/export definitions and the HTML-entity checker correction.
+Strict full docs, full Ruff/format, index and three reporting checks pass. The
+[installed receipt](evidence/work_cli_installed_20261108.json) receives the same69
+bodies from exact5d77c9c/wheel0.4.0+183.g5d77c9c outside checkout, with published
+support payloads. All211payload/156nongenerated runtime files and seven fixture
+files verify; the SDK verifies seven loaded parent runtime modules.59guarded
+children retain38successes/21expected refusals; eight documented commands pass
+on four unchanged historical databases. The bounded bridge resolves; full
+source exact-head/public/platform/release and biological/scale gates remain open.
 
-The [serial acquisition result](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
-at b1139d0/run42494894038 verifies the actual official manager and effective
-extraction/download settings of one, but package extraction still fails at the
-unchanged 2GiB/64-task envelope. The whole run fails; no native case executes.
-Both earlier failures and all budgets/pins remain unchanged. Stop this exhausted
-manager route and obtain a distinct reviewed acquisition strategy from the
-environment/resource owners before another request. The 46 focused local
-controls (21 admission guards), real config-only helper and three reporting/
-full Ruff/index checks remain separate passing evidence.
+Earlier bounded increments retain their own contracts and source/run identities:
+[#155 BEDROC](archive/bedroc_small_alpha.md),
+[#150 plan inspection](archive/inspect_prepared_run_plans.md),
+[#147 paired saved analysis](saved_run_comparison.md),
+[#146 cohort analysis](saved_run_analysis.md),
+[#145 progress reuse](saved_progress_reuse.md),
+[#153 SQLite cleanup](archive/administrative_sqlite_lifetimes.md) and
+[#154 native service caller](archive/native_qualification_service_oom.md).
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/5d77c9cb46e48ebd915a35ad4d0f205ab6240603/devguide/checkpoint.md)
+preserves the detailed receiving statements before this closeout; they are not
+new tasks. The [chemical-library guide](../docs/content/user/chemical_libraries.md)
+connects these operations, without qualifying a new connector or human usability.
 
-[#153 SQLite lifetime correction](archive/administrative_sqlite_lifetimes.md)
-closes the five fixture-owned connections behind all 15 traced warnings, while
-preserving original transaction/corruption assertions. Production code is
-unchanged. The explicit-lifetime guard first fails, then 42 store/inspection
-cases and the complete 156-case administrative suite pass with ResourceWarning
-enabled and no unclosed database warning. The
-[receipt](evidence/administrative_sqlite_lifetimes_20261108.json) preserves original
-allocation traces and resource scope: unchanged 512MiB DATA, one CPU/thread.
+The accepted [27c1178 full-source checkpoint](plan_api_ci_checkpoint.md) retains
+source42451906584/policy42451909669/publication42451913187, all attempt1 success;
+2505full-suite cases pass in each of eight Linux/macOS arm64 Python3.11–3.14cells.
+Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
+No completed handle is redispatched or relabelled as later-head qualification.
 
-The [native admission recovery](feature_reuse_measurement.md#bootstrap-admission-and-transaction-limit-2026-11-08-utc)
-at d95617d/run42461400749 verifies the actual 2GiB bootstrap service/kernel
-controls and successful cleanup, resolving [#154](archive/native_qualification_service_oom.md).
-Its package resolution succeeds, but extraction exhausts the unchanged budget
-and emits memory/thread resource errors. The whole run fails; the 512MiB native
-service and all 87 molecular guards remain unexecuted. The first cdb9d45 failure
-retains its separate identity. Do not repeat the exhausted route or raise budgets.
-The same official Micromamba 1.5.10 binary/checksum now verifies effective
-extraction/download settings of one, using only version/config queries in an
-owned directory. Its defaults are extract_threads=0/download_threads=5; no new
-environment or package acquisition is attempted. Native timing, private-input
-transfer, biological and full public-delivery gates stay open.
-
-Earlier #151/#152 workflow-inventory and complete historical-CSV corrections
-retain the original 150-case failure/F821 and unchanged cohort/exclusion/
-population/ambiguity semantics in their archived reports and preparation receipt.
-
-[#150 prepared-plan inspection](archive/inspect_prepared_run_plans.md)
-is implemented in source. `PreparedRunPlan.describe()` returns exact query
-size/hash and detached complete captured context; console repr omits payloads.
-22selected controls pass (20new and two original alias guards), including
-non-default unit policy, unchanged fields/frozen behavior, exact byte spelling,
-detachment, current-execution refusal and actual attribution neutrality. The exact
-new public recipe passes without molecular inputs/fitting;15existing construction/
-resume bodies and prior argument contracts are unchanged. Original19failures
-include one corrected unit-oracle getter mistake. Source/providers/native bytes
-retain their own receiving scope. [Exact owned installed receiving](evidence/prepared_plan_inspection_installed_20261108_summary.json)
-now passes the same22bodies and new recipe outside checkout with-I-S-B.
-Implementation2b0b3f1owns wheel0.4.0+170.g2b0b3f1;211payload/156nongenerated
-runtime files,855original fixture files and150loaded runtime modules verify.
-Provider Python/native bytes remain unchanged. Original source/owned runtime
-records retain the generated-version fingerprint difference; the bounded bridge
-resolves, with full supported gates still open.
-The [source receipt](evidence/prepared_plan_inspection_source_20261108_summary.json)
-also retains three reporting cases, strict full Sphinx/the public method anchor,
-full Ruff and index checks. A test-only format correction preserves its complete
-AST. The current provider snapshot stays clean at the held source revisions.
-
-The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
-now connects source-operation coverage, prepared-input screening, plan/resume,
-independent inspection/export and expert composition. It links existing public
-recipes and distinguishes caller-supplied data, the fixed PubChem3D case and
-candidate resources. User/cookbook navigation and four recovery-recipe headings
-make those routes discoverable; executable examples remain unchanged. The
-[documentation receipt](evidence/library_user_guide_20261108_summary.json)
-retains the initial bad RST-fragment link and corrected strict rendering.
-This is documentation receiving, not a human usability study or new connector.
-The same audit resolves[#149](archive/docs_contributor_footer.md): Sphinx now
-generates contributor footer paths at every depth. Four actual-template guards
-pass after three original failures;82rendered footers/51guide links and six
-unchanged executable blocks verify. Original validator/index failures remain
-separate in the receipt; no scientific workflow is rerun.
-
-[#148 molecular feature-reuse measurement](feature_reuse_measurement.md) now has
-a prospective fixed declaration and an offline standard-library control. It fixes
-48pairs/96serial timed arms plus a separate two-arm pilot, balancing process order
-and charging inventory build cost.22offline guards pass and all three original
-H5MSM snapshot hashes verify. These are declaration/integrity checks; no native
-driver, pilot, timing or performance improvement is qualified. The current own
-user isolation is unavailable; the latest scheduler observation admits no usable
-allocation. The known DATA512MiB/native route is not retried or enlarged.
-
-[#147 paired saved-run comparison](archive/compare_saved_screening_runs.md)
-is implemented: explicit cohort mappings, full arm summaries and paired common
-scored originals preserve zero/failure/pending meanings. Its owning contract and
-[source](evidence/saved_run_comparison_source_20261108_summary.json)/[owned installed](evidence/saved_run_comparison_installed_20261108_summary.json)
-receipts retain301distinct selected source cases,256same installed bodies/
-35children, exact recipe, attribution4items/13uses and all original failures.
-Implementation1392bad owns wheel0.4.0+165.g1392bad; the bounded installed bridge
-resolves while full supported gates remain open.
-
-[#146 single-run cohort analysis](saved_run_analysis.md) and
-[#145 immutable progress reuse](saved_progress_reuse.md) retain their original
-source/owned-installed producers, receipts and limits. Earlier state is preserved
-in [checkpoint history](checkpoint_history_20261107.md). The original broader
-local seeded/native/resource route remains failed, with older MolSysMT601
-feedback; it is not retried or replaced by the accepted eleven-module223case
-selection plus new33. No provider/prefix/native or budget change occurs.
-
-The preceding [5c3cd64 source checkpoint](saved_run_ci_checkpoint.md) retains
-42436392248/attempt1 and2430cases per eight cells, with its original governance/
-coverage evidence. Earlier [8db2a53](boundary_ci_checkpoint.md) retains its own
-identity. Later147/150source is received separately at27c1178 below; never
-relabel or redispatch a completed handle.
-
-[Current public MolSysMT availability](evidence/public_molsysmt_availability_20261108_summary.json)
-still verifies0.23.0main on Linux/macOS arm64, with the exact previously received
-Linux file/hash. Noarch has no MolSysMT record;1.0.0is staging-only. This is an
-index observation, not new provider execution. The previous missing-modern-API
-evidence stays scoped to its old artifact. A new main filename/hash or an owner
-delivery notice triggers another public solve; the existing375question already
-owns that handoff. No provider/prefix/floor/release change occurs.
-The historical public prefix is absent at the checked original/remapped paths;
-its old receipt is evidence, separate from an available runtime on this machine.
-
-The [next accumulated source checkpoint](plan_api_ci_checkpoint.md) is now
-accepted at exact27c1178, with existing pins/workflows unchanged.
-Source42451906584/attempt1 passes2505full-suite cases in each of all eight
-Linux/macOS arm64 Python3.11–3.14cells, with zero reported skips and43retained
-warnings per cell. Reporting, policy42451909669 and no-build publication
-governance42451913187 pass. The
-[terminal receipt](evidence/plan_api_ci_terminal_20261108.json) verifies full
-commands/acquisition/interpreters/architectures and all106-file qualified XMLs;
-Codecov steps pass, with server freshness unobserved. Original initial/past
-receipts retain their identities. Local work is bounded read-only capture.
-
-The [#148 hosted scope probe](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
-now passes exact9a0ed14/run42453432613/attempt1 and its
-[native controls are received](evidence/feature_reuse_resource_probe_20261108.json).
-The dedicated VM enforces the fixed512MiB/zero-swap/32tasks/oneCPU budget, actual
-affinity/priorities and parent/child membership. A24MiB smoke verifies; no native
-library/input, pilot or timing is used. Original local failure and input-transfer
-restrictions remain; every later molecular job needs its own admission/context.
-
-**Next concrete action:** receive the same69 reader/CLI/progress/export bodies
-and documented work-page commands from one exact owned wheel outside checkout,
-then close #156 with its separate identity/limits. Independently receive a
-distinct environment-manager strategy from
-the existing common-tool owner. Source review alone does not justify a blind
-Micromamba upgrade; investigate bounded Conda transaction workers and verify
-actual configuration/runtime before any installation. The
-[source/configuration review](evidence/environment_manager_source_review_20261108.json)
-retains a config-only local refusal: its old manager Python ignores the CPU-count
-override and still admits three extractor threads despite configured values of one.
-No installation was attempted. Do not
-repeat either exhausted manager profile or raise budgets. Receive all 87 native
-cases and actual provider/context evidence before the measured arm; continue
-independent product/provider receiving while that route remains unavailable.
-The three original benchmark snapshots remain local pending redistribution
-assessment; do not submit them or substitute a new workload for the declared
-pilot. Never redispatch completed27c1178/5c3cd64runs or retry the exhausted local
-native case. Preserve later-head, public/installed-platform and provider-owned
-collection/public-delivery gates. The mature0.x goal is active; no release is selected.
+**Next concrete action:** receive a distinct reviewed environment-manager
+strategy from the common-tool owner before another #148 acquisition. The
+[three original failures](feature_reuse_measurement.md) are preserved; latest
+b1139d0/run42494894038 verifies manager1.5.10/effective1/1settings but extraction
+still fails within the unchanged2GiB/64-task envelope. No native512MiB service
+or87molecular cases execute. Stop both exhausted profiles; do not raise budgets.
+The [source/configuration review](evidence/environment_manager_source_review_20261108.json)
+rejects a blind upgrade and retains the metadata-only local Conda refusal. No
+new environment-manager transaction or molecular request accompanies #156. The three original
+benchmark snapshots remain local pending redistribution assessment; do not
+transfer or substitute them. Native provider/context qualification and all87
+cases precede any measured arm/original-input pilot. Continue independent
+product/provider receiving while this route is unavailable. The mature0.x
+objective remains open; no release is selected.
 
 ## Active public integration
 
@@ -229,8 +103,9 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis and plan inspection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection and paginated declared-work inspection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
+| MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
