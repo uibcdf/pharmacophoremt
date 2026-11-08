@@ -23,6 +23,15 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: the [next accumulated source checkpoint](plan_api_ci_checkpoint.md)
+freezes27c1178 for147/150and148/149developer controls with unchanged acquisition,
+workflows and policy. Existing source42451906584/attempt1 initially has eight
+scientific cells active and reporting successful; policy42451909669 and no-build
+publication governance42451913187 pass their required native steps. Full source
+is pending; inspect the existing handles without redispatch. Completed5c3cd64
+keeps its historical identity and counts. Public/installed delivery, molecular
+measurement, biological studies and mature0.x gates remain separate.
+
 2026-11-08: [#150 plan inspection](archive/inspect_prepared_run_plans.md)
 adds `PreparedRunPlan.describe()` and compact repr, with22selected source cases
 and the exact public metadata-only recipe passing. Fields/schemas and15existing
@@ -97,7 +106,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #128 tool-study registry | Dedicated public index, one [executed Pharm3D analytical comparison](rdkit_bounds_comparison.md) and nine documentary records | Public RDKit fields are received in source/one owned wheel under resolved#140; corrected8db2a53 source passes all eight cells under resolved#143, preserving failed489be12. Broader comparison/biological gates remain |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |
-| #9/#10/#23 CI/support/distribution | [Frozen4616c78 gates](accumulated_ci_checkpoint.md) pass all8 source cells/2259 tests each plus governance; coverage XML#141 corrected locally | Receive later-head coverage/runtime and full installed/public/package gates separately; no repeated frozen run |
+| #9/#10/#23 CI/support/distribution | [Frozen5c3cd64](saved_run_ci_checkpoint.md) passes all8 source cells/2430cases each plus governance; [later27c1178 checkpoint](plan_api_ci_checkpoint.md) is active with policy/publication controls passed | Receive existing42451906584/attempt1 full source/coverage; full installed/public/package gates stay separate; no repeated frozen run |
 | #6/#41/#74 ecosystem debt | Partial support adoption; bounded old-provider donor compatibility and SDF container migration remain | Receive owning provider contracts; annotated-SDF delegation is MolSysMT#215 |
 | #43 historical resources | Some `/tmp` producers/papers are absent; tracked support is intact | [Migration inventory](machine_migration.md): distinguish reconstruction from original recovery |
 

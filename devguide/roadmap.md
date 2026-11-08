@@ -181,7 +181,13 @@ The [saved-run accumulated source checkpoint](saved_run_ci_checkpoint.md)
 accepts exact5c3cd64/attempt1 after#144/#145/#146:2430cases pass per eight
 Linux/macOS Python3.11–3.14cells, with reporting/policy/publication governance
 and native full-command/qualified-coverage facts verified. Later147runtime
-retains separate full-source debt. [Current public-index revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
+now has the [next accumulated checkpoint](plan_api_ci_checkpoint.md) declared
+at27c1178 alongside150and148/149developer controls. Source42451906584/attempt1
+is initially active in all eight scientific cells, with reporting successful;
+policy42451909669 and no-build publication governance42451913187 pass. Full
+source acceptance awaits existing-run terminal facts and coverage; no new
+scientific counts, installed/platform or release qualification are inferred.
+[Current public-index revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
 still finds the original0.23.0main Linux artifact; modern public delivery awaits
 an identified new file/owner notice, with no repeated solve or new version floor.
 Full installed/public/platform, biological and performance milestones remain

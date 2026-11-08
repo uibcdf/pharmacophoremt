@@ -1,0 +1,117 @@
+{
+  "schema": "pharmacophoremt.plan-api-ci-plan@1",
+  "declared_at_utc": "2026-11-08T05:37:27.651952+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "source": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+  "issues": [
+    9,
+    10,
+    23,
+    95,
+    147,
+    148,
+    149,
+    150
+  ],
+  "scope": "Deliberate accumulated full source/policy/no-build publication governance after paired saved-run analysis, fixed feature-reuse declaration, documentation footer and public plan inspection. No local full-suite retry,148native timing, package upload, tag or release.",
+  "workflows": [
+    {
+      "path": ".github/workflows/CI.yaml",
+      "inputs": {
+        "probe_backlog": false
+      }
+    },
+    {
+      "path": ".github/workflows/molsyssuite-policy.yml",
+      "inputs": {}
+    },
+    {
+      "path": ".github/workflows/conda_publication_governance.yaml",
+      "inputs": {}
+    }
+  ],
+  "dispatch_rule": "Existing workflow_dispatch ref main only while both local clean HEAD and live remote main equal frozen source. Before every one-time request inspect complete exact-head native runs; reuse any existing handle instead. Response uncertainty requires observation, never automatic redispatch.",
+  "acceptance": [
+    "Actual workflow/event/head/run/attempt verified for every accepted handle.",
+    "All eight full scientific cells, Linux x86_64/macOSarm64 each Python3.11/3.12/3.13/3.14, terminal native success with actual interpreter/platform/acquisition/preflight/full test command/counts; no guessed selection/counts.",
+    "Reporting governance, frozen policy-v1.5.4 and no-build publication governance terminal native success; manual probe_backlog=false skips backlog administration intentionally.",
+    "All emitted coverage XML file/branch/namespaces/private-omit identities verified; Linux3.13actual upload outcomes kept separate from unobserved public Codecov freshness.",
+    "Published GH Run Receptor1.4.0first capture; native complete jobs/steps/logs/artifacts own exact-candidate acceptance. No run is decided by observation timeout."
+  ],
+  "frozen_config": {
+    ".github/workflows/CI.yaml": {
+      "bytes": 8082,
+      "sha256": "d361e326020292a8944ddeb349be0b657ca13bfd051a04527a477f6bb68f8ded"
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "bytes": 250,
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "bytes": 273,
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
+    },
+    ".github/gh-run-receptor.yaml": {
+      "bytes": 361,
+      "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59"
+    },
+    ".coveragerc": {
+      "bytes": 167,
+      "sha256": "783735cc5063c5273f94df692ea17bf51690469b21b532dc6b31c040603b779f"
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    }
+  },
+  "guides": "Fresh owner revisions unchanged; original canonical literal-text evidence reused with independent local hashes. Frozen automated policy remains separate.",
+  "remote_resources": {
+    "route": "GitHub-hosted fresh VM per configured job, not this shared workstation or a self-hosted runner.",
+    "primary_documentation": "https://docs.github.com/en/actions/how-tos/manage-runners/github-hosted-runners/use-github-hosted-runners",
+    "specification_documentation": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+    "declared_public_runner_allocations": {
+      "ubuntu-latest": {
+        "vcpus": 4,
+        "memory_GB": 16
+      },
+      "macos-15": {
+        "vcpus": 3,
+        "memory_GB": 7,
+        "architecture": "arm64"
+      }
+    },
+    "concurrency": "Finite eight scientific jobs plus bounded governance, each separate managed VM. Scientific pytest is sequential; existing workflow/acquisition/pins are unchanged. No per-job RSS/reserve telemetry or new cgroup control is claimed.",
+    "workload_estimate": "Previous full2430case/eight-cell success on the same workflow/providers; accumulated new tests are small scalar/JSON/Jinja/query-metadata cases. Local selected/installed and docs commands stay below0.5GiB lifetime RSS. This is an admission estimate, not hosted peak measurement."
+  },
+  "local_capture_resources": {
+    "logical_cpus": 1,
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "GOMAXPROCS": 1,
+    "nice": 19,
+    "io": "idle",
+    "data_per_process_bytes": 536870912,
+    "address_space": "unlimited for native Git/gh mappings",
+    "reserve_fraction": 0.2,
+    "estimated_supervisor_child_envelope_bytes": 1610612736,
+    "aggregate_cgroup_enforcement": false,
+    "capacity_not_reserved": true,
+    "memory_entry": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 60900261888,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7979790336
+    },
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=345035\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=333754\n"
+  },
+  "limits": "Full source receiving is separate from exact-file owned wheel170/source2b0, full supported/public installed dependency/platform gates, provider624/375delivery, biological studies, molecular performance and mature0.x release. Preserve completed5c3cd64/42436392248attempt1and original local native/resource failure."
+}

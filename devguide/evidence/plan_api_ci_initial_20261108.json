@@ -1,0 +1,228 @@
+{
+  "schema": "pharmacophoremt.plan-api-ci-initial@1",
+  "recorded_at_utc": "2026-11-08T05:46:09.065148+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "candidate": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+  "declaration": "https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6717820696",
+  "runs": [
+    {
+      "label": "source",
+      "run_id": 42451906584,
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42451906584",
+      "source": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+      "attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "in_progress",
+      "conclusion": null,
+      "updated_at": "2026-11-08T05:44:03Z",
+      "receptor_exit_code": 3,
+      "jobs": [
+        {
+          "id": 128642740993,
+          "name": "Reporting governance",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-08T05:44:00Z",
+          "completed_at": "2026-11-08T05:44:36Z"
+        },
+        {
+          "id": 128642741119,
+          "name": "Test on macos-15, Python 3.12",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:03Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741204,
+          "name": "Test on ubuntu-latest, Python 3.13",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:00Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741228,
+          "name": "Test on macos-15, Python 3.11",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:00Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741324,
+          "name": "Test on ubuntu-latest, Python 3.14",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:00Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741343,
+          "name": "Test on ubuntu-latest, Python 3.12",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:00Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741376,
+          "name": "Test on macos-15, Python 3.14",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:01Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741391,
+          "name": "Test on macos-15, Python 3.13",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:02Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741500,
+          "name": "Test on ubuntu-latest, Python 3.11",
+          "status": "in_progress",
+          "conclusion": null,
+          "started_at": "2026-11-08T05:44:00Z",
+          "completed_at": null
+        },
+        {
+          "id": 128642741714,
+          "name": "Check skipped-commit backlog",
+          "status": "completed",
+          "conclusion": "skipped",
+          "started_at": "2026-11-08T05:43:58Z",
+          "completed_at": "2026-11-08T05:43:57Z"
+        }
+      ],
+      "manifest_identity": {
+        "bytes": 1659,
+        "sha256": "0e6c992ef9200188d6bb7c2507799248c0b06e04ebcff2a8dd5ee6f9a20c41c1"
+      }
+    },
+    {
+      "label": "policy",
+      "run_id": 42451909669,
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42451909669",
+      "source": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+      "attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "updated_at": "2026-11-08T05:44:19Z",
+      "receptor_exit_code": 0,
+      "jobs": [
+        {
+          "id": 128642749847,
+          "name": "policy / conformance",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-08T05:44:03Z",
+          "completed_at": "2026-11-08T05:44:19Z",
+          "required_steps": [
+            {
+              "number": 5,
+              "name": "Check repository conformance",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Check Python lint and imports",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 8,
+              "name": "Check Python formatting",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ],
+      "manifest_identity": {
+        "bytes": 1657,
+        "sha256": "ba74c47a8820aadc3c6c8398f6e11d0b850911ba5dfcf56a74b589e7b4ad98a7"
+      }
+    },
+    {
+      "label": "publication",
+      "run_id": 42451913187,
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42451913187",
+      "source": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+      "attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "updated_at": "2026-11-08T05:44:28Z",
+      "receptor_exit_code": 0,
+      "jobs": [
+        {
+          "id": 128642760727,
+          "name": "publication / check",
+          "status": "completed",
+          "conclusion": "success",
+          "started_at": "2026-11-08T05:44:07Z",
+          "completed_at": "2026-11-08T05:44:27Z",
+          "required_steps": [
+            {
+              "number": 6,
+              "name": "Check publication workflow controls",
+              "status": "completed",
+              "conclusion": "success"
+            },
+            {
+              "number": 7,
+              "name": "Check declared noarch recipe and resources without building",
+              "status": "completed",
+              "conclusion": "success"
+            }
+          ]
+        }
+      ],
+      "manifest_identity": {
+        "bytes": 1657,
+        "sha256": "b6544aaea75d4d9e8a4bad99c0300cfc3220ced79cde2d6d602167d0db821388"
+      }
+    }
+  ],
+  "source_gate_accepted": false,
+  "last_accepted_source": {
+    "source": "5c3cd64ab71dcf8c7eab846939d9ae4d0daea2a5",
+    "run_id": 42436392248,
+    "attempt": 1,
+    "passed_per_cell": 2430
+  },
+  "raw_retention_review": "2026-11-22; preserve active evidence and inspect owned resources before cleanup",
+  "scope": "Initial observation: eight source cells active, reporting governance successful; policy and no-build publication governance native steps successful. No inferred terminal source/full counts or installed/public/platform/release/scientific qualification.",
+  "local_resources": {
+    "logical_cpus": 1,
+    "affinity": [
+      19
+    ],
+    "numerical_threads": 1,
+    "GOMAXPROCS": 1,
+    "nice": 19,
+    "io": "idle",
+    "data_per_process_bytes": 536870912,
+    "as_cap": "unlimited for native mappings",
+    "aggregate_cgroup_enforced": false,
+    "reserve_fraction": 0.2,
+    "own_envelope_bytes": 1610612736,
+    "max_observed_owned_rss_bytes": 22487040,
+    "min_observed_mem_available_bytes": 59624681472,
+    "physical_memory_bytes": 64978440192,
+    "all_samples_preserve_reserve_plus_envelope": true,
+    "all_memory_psi_avg10_zero": true,
+    "capacity_reserved": false,
+    "scope": "Read-only capture; no local full suite/native measurement or managed allocation"
+  },
+  "raw_evidence": "build/phmt-plan-api-ci-20261108-4_3ga8u4"
+}

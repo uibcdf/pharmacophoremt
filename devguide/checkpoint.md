@@ -92,14 +92,21 @@ owns that handoff. No provider/prefix/floor/release change occurs.
 The historical public prefix is absent at the checked original/remapped paths;
 its old receipt is evidence, separate from an available runtime on this machine.
 
-**Next concrete action:** declare a deliberate accumulated exact-head source/
-governance checkpoint for147/150and148/149developer controls under#9. Verify the
-frozen candidate/workflow/acquisition scope before manual execution; do not
-redispatch the completed5c3cd64runs. Native#148still requires a safe route and
-qualified shared arm before its pilot; no exhausted native case is retried.
-Preserve#147full-source and public/installed-platform debt, the original local
-resource failure and the provider-owned collection/public-delivery gates. The
-mature0.x goal is active; no release is selected.
+The [next accumulated source checkpoint](plan_api_ci_checkpoint.md) is now
+declared/dispatched at exact27c1178, with existing pins/workflows unchanged.
+Source42451906584/attempt1 initially has eight scientific cells active and
+reporting successful; policy42451909669 and no-build publication governance
+42451913187 have passed their required native steps. The
+[initial receipt](evidence/plan_api_ci_initial_20261108.json) accepts no full
+source result or counts yet. Local work is bounded read-only evidence capture.
+
+**Next concrete action:** receive terminal facts for those existing handles:
+full eight-cell tests, interpreter/architecture/acquisition and coverage. Do not
+redispatch either27c1178or the completed5c3cd64runs. Native#148still requires a
+safe route and qualified shared arm before its pilot; no exhausted native case
+is retried. Preserve later full-source and public/installed-platform debt, the
+original local resource failure and provider-owned collection/public-delivery
+gates. The mature0.x goal is active; no release is selected.
 
 ## Active public integration
 
@@ -146,7 +153,7 @@ earlier route.
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
 | #128 tool registry | [One executed Pharm3D analytical comparison and nine documentary records](pharmacophore_tools_registry.md) | Projection#140 is received in source/one owned wheel; declare other comparisons and retain separate benchmark/biological scope |
-| #9/#10/#23/#95 | Full supported source, dependency, installed/public/platform and release gates remain separate | Exact run/attempt/artifact evidence at deliberate checkpoints; no full-suite retry on this shared machine |
+| #9/#10/#23/#95 | Frozen5c3cd64 full source accepted; later27c1178 checkpoint live, with policy/publication controls successful | Receive existing42451906584/attempt1 full source; dependency, installed/public/platform and release gates remain separate; no local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |
 
