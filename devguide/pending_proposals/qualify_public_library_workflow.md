@@ -16,13 +16,16 @@ supersedes: []
 
 ## Prepared-plan inspection — 2026-11-08 UTC
 
-[#150](inspect_prepared_run_plans.md) replaces payload-heavy interactive display
+[#150](../archive/inspect_prepared_run_plans.md) replaces payload-heavy interactive display
 with a compact method/criterion/query-identity repr and adds detached public
 `describe()`. The [recipe](../../docs/content/cookbook/prepared_run_plan_inspection.md)
 inspects exact bytes and captured settings before run creation.22selected source
 cases and the exact recipe pass without molecular inputs or fitting; source
-identity still affects execution binding. Exact owned installed receiving is
-pending; no schema, provider, source-connector or biological qualification follows.
+identity still affects execution binding. Exact owned installed receiving
+now passes the same22bodies and exact recipe from one wheel outside checkout.
+Source/owned original fingerprints are preserved; no schema, provider,
+source-connector, full supported or biological qualification follows.
+
 ## User-facing library workflow — 2026-11-08 UTC
 
 The [user guide](../../docs/content/user/chemical_libraries.md) now gives an

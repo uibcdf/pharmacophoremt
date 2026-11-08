@@ -10,7 +10,7 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#150 prepared-plan inspection](pending_proposals/inspect_prepared_run_plans.md)
+[#150 prepared-plan inspection](archive/inspect_prepared_run_plans.md)
 is implemented in source. `PreparedRunPlan.describe()` returns exact query
 size/hash and detached complete captured context; console repr omits payloads.
 22selected controls pass (20new and two original alias guards), including
@@ -19,7 +19,13 @@ detachment, current-execution refusal and actual attribution neutrality. The exa
 new public recipe passes without molecular inputs/fitting;15existing construction/
 resume bodies and prior argument contracts are unchanged. Original19failures
 include one corrected unit-oracle getter mistake. Source/providers/native bytes
-retain their own receiving scope; exact owned installed receiving is pending.
+retain their own receiving scope. [Exact owned installed receiving](evidence/prepared_plan_inspection_installed_20261108_summary.json)
+now passes the same22bodies and new recipe outside checkout with-I-S-B.
+Implementation2b0b3f1owns wheel0.4.0+170.g2b0b3f1;211payload/156nongenerated
+runtime files,855original fixture files and150loaded runtime modules verify.
+Provider Python/native bytes remain unchanged. Original source/owned runtime
+records retain the generated-version fingerprint difference; the bounded bridge
+resolves, with full supported gates still open.
 The [source receipt](evidence/prepared_plan_inspection_source_20261108_summary.json)
 also retains three reporting cases, strict full Sphinx/the public method anchor,
 full Ruff and index checks. A test-only format correction preserves its complete
@@ -86,12 +92,11 @@ owns that handoff. No provider/prefix/floor/release change occurs.
 The historical public prefix is absent at the checked original/remapped paths;
 its old receipt is evidence, separate from an available runtime on this machine.
 
-**Next concrete action:** finish source documentation/reporting receiving for150,
-freeze its implementation and receive the same selected bodies/new inspection
-recipe from one exact owned installed wheel. Keep source identity and installed
-dependency context explicit. Native#148work still requires a verified safe route
-and qualified shared scientific arm before its separate pilot; no exhausted
-native case is retried or enlarged.
+**Next concrete action:** declare a deliberate accumulated exact-head source/
+governance checkpoint for147/150and148/149developer controls under#9. Verify the
+frozen candidate/workflow/acquisition scope before manual execution; do not
+redispatch the completed5c3cd64runs. Native#148still requires a safe route and
+qualified shared arm before its pilot; no exhausted native case is retried.
 Preserve#147full-source and public/installed-platform debt, the original local
 resource failure and the provider-owned collection/public-delivery gates. The
 mature0.x goal is active; no release is selected.

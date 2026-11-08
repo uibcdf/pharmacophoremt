@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (91)
+### Resolved (92)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
@@ -26,6 +26,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(resolved, measured)*
+- [`inspect_prepared_run_plans.md`](inspect_prepared_run_plans.md) — [#150](https://github.com/uibcdf/pharmacophoremt/issues/150) — Expose detached prepared-run descriptions and bounded console inspection without query payloads. *(resolved, measured)*
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_receptor_study_support.md`](installed_receptor_study_support.md) — [#96](https://github.com/uibcdf/pharmacophoremt/issues/96) — Declare selected receptor-study helpers and frozen plans for installed tests. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*

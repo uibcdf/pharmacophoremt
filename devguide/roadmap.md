@@ -35,10 +35,11 @@ The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
 now maps current source-operation coverage to the guided/expert screening and
 saved-result lifecycle. Its documentation receiving does not establish a new
 connector or representative human usability; those milestone gates stay open.
-The [plan-inspection increment](pending_proposals/inspect_prepared_run_plans.md)
+The [plan-inspection increment](archive/inspect_prepared_run_plans.md)
 adds a compact representation and public detached description to that journey.
-Selected source controls and the exact metadata-only recipe pass; owned installed
-receiving and full supported gates retain their separate scope.
+Selected source controls and the exact metadata-only recipe pass from source and
+one owned wheel. The same22bodies, original query and recipe retain separate
+source/owned runtime records; full supported gates stay open.
 
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public

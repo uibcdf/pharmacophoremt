@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.prepared-plan-inspection-installed-summary@1",
+  "recorded_at_utc": "2026-11-08T05:26:40.436377+00:00",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/150",
+  "status": "bounded_owned_installed_received",
+  "source_commit": "2b0b3f146466d652e7b923d334ba0dafcb59bfc5",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-plan-inspection-20261108-cq4w59ry/wheels/pharmacophoremt-0.4.0+170.g2b0b3f1-py3-none-any.whl",
+    "bytes": 4525077,
+    "sha256": "9b2b6a3696f249f3908e2590cf5e010070529300ab3bb00d194ccdb237c81f1c"
+  },
+  "version": "0.4.0+170.g2b0b3f1",
+  "verification": {
+    "same_original_selected_cases": 22,
+    "new_guard_cases": 20,
+    "original_alias_cases": 2,
+    "fixture_files_authenticated": 855,
+    "wheel_payload_files_authenticated": 211,
+    "nongenerated_runtime_files_equal_to_source": 156,
+    "loaded_runtime_modules_sdk_verified": 150,
+    "exact_public_recipe_passed": true,
+    "same_original_query_identity": true,
+    "query_identity": {
+      "bytes": 1638,
+      "sha256": "58310a0cc97eca8d190aff49eec92a15d14d83ecc6d92a46158e53aa9884e340"
+    },
+    "source_installed_context_differences": [
+      "phmt_python_sources_sha256"
+    ],
+    "source_original_producer_preserved": true,
+    "provider_python_files_unchanged": true,
+    "native_unchanged": true,
+    "isolated_no_site_no_bytecode": true,
+    "no_checkout_runtime_fallback": true
+  },
+  "providers_scope": "Unchanged explicit source-provider namespace/root admission; no .pth startup, provider reinstall or full public solve.",
+  "resources": {
+    "logical_cpus": 1,
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "rlimit_data_per_process_bytes": 536870912,
+    "rlimit_as": "unlimited inherited",
+    "aggregate_cgroup_enforcement": false,
+    "reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "estimated_supervisor_child_envelope_bytes": 1610612736,
+    "whole_command_lifetime_rss_bytes": {
+      "owned-build": 250060800,
+      "installed": 215736320
+    },
+    "rss_scope": "Per timed whole-command/child lifetime high water, not aggregate/incremental allocation or a performance benchmark."
+  },
+  "display_disposition": {
+    "original_stdout_loaded_module_count": 0,
+    "cause": "The final display queried modules instead of the SDK canonical loaded field. The complete authoritative loaded mapping was correctly retained and verified in installed_receiving.json.",
+    "actual_loaded_runtime_modules": 150,
+    "tests_and_recipe_rerun": false
+  },
+  "limits": "One exact owned Linux/Python3.14wheel in explicit existing source-provider context. Full source, public dependency solve, supported platform/installed/release and biological/performance gates stay separate. Source receipt retains its original source-only/pending bridge state.",
+  "publication": "Owned control/source/log and scalar/hash/metadata projection only; no wheel payload, generated third-party HTML, molecular H5MSM/query bodies, provider/native body or credentials.",
+  "retention": {
+    "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-plan-inspection-20261108-cq4w59ry",
+    "workspace": "/tmp/phmt-plan-inspection-installed-20261108-b1r7thw1",
+    "owner": "LMMV/dprada",
+    "review_after": "2026-11-22",
+    "keep_until": "Owning150delivery review; preserve shared prefixes, provider checkouts and original scientific evidence."
+  },
+  "full_evidence": {
+    "path": "prepared_plan_inspection_installed_20261108_full.json.gz",
+    "compressed_bytes": 418018,
+    "compressed_sha256": "9c376027b4ddeabee96e2efb09ac99165f68d3466c4ce4ec601f1365bfb4b0d4",
+    "uncompressed_bytes": 2087050,
+    "uncompressed_sha256": "6ab3f70d739140a8e6edc9f6cb838d6c732dd651e014fbffa40752b713a05eca"
+  }
+}

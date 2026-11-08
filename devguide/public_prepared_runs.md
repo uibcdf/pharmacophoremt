@@ -68,9 +68,13 @@ The addition changes PHMT source identity: the existing conservative software
 binding can therefore require a new linked run even with unchanged chemistry.
 Independent historical reading remains separate.
 
-[#150](pending_proposals/inspect_prepared_run_plans.md) retains the original
-synthetic repr observation, source controls/recipe and pending exact owned
-installed receiving. Full supported installed/public/platform and native#148
+[#150](archive/inspect_prepared_run_plans.md) retains the original
+synthetic repr observation and [source](evidence/prepared_plan_inspection_source_20261108_summary.json)/[owned installed](evidence/prepared_plan_inspection_installed_20261108_summary.json)
+receipts:25distinct selected source cases and the same22inspection/alias bodies
+plus exact recipe from one wheel. Source and owned original runtime records
+differ only in the PHMT source fingerprint from generated version data; no
+producer metadata is normalized or old run implicitly rebound. Full supported
+installed/public/platform and native#148
 measurement remain separate. No provider/prefix/native artifact is changed.
 
 ## Version and compatibility contracts

@@ -1,9 +1,9 @@
 ---
 summary: Expose detached prepared-run descriptions and bounded console inspection without query payloads.
 issue: uibcdf/pharmacophoremt#150
-status: partial
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-08
 verification: measured
 area: [screening, usability, api]
 guard: tests/test_prepared_plan_inspection.py
@@ -73,3 +73,35 @@ retains originals and the bounded source-provider scope. All six provider
 worktrees are clean; MolSysMT's held local source is cached behind120, not
 silently updated. Read-only owner624/375observations remain open, with no new
 delivered collection/public-provider handoff. No full supported gate closes.
+
+## Exact owned installed receiving — 2026-11-08 UTC
+
+Implementation2b0b3f146466d652e7b923d334ba0dafcb59bfc5owns the single
+0.4.0+170.g2b0b3f1wheel:4525077bytes, SHA-256
+9b2b6a3696f249f3908e2590cf5e010070529300ab3bb00d194ccdb237c81f1c.
+All211payload and156nongenerated runtime files authenticate. Outside checkout,
+-I-S-Breceiving passes the same22original bodies with855hash-verified fixture
+files and the exact new recipe/query. The qualified immutable SDK verifies150
+loaded runtime modules; explicit source-provider mappings replace .pth startup.
+Provider Python files and the native binary stay unchanged before/after receiving.
+
+The complete description/query identity and repr agree with source, except for
+the original PHMT source fingerprint: the owned wheel's generated version file
+differs from the unchanged source cache. Both runtime records remain intact;
+no producer version is normalized and no source-made run is implicitly rebound.
+The receipt's canonical loaded mapping is correct; the last stdout display
+queried an absent key and printed zero. A separate read-only disposition records
+the actual150module count without repeating tests or rebuilding the wheel.
+
+The [installed receipt](../evidence/prepared_plan_inspection_installed_20261108_summary.json)
+resolves this bounded bridge. The source receipt retains its original
+pending-installed statement as dated evidence. Source cache157file identities
+and its unchanged generated version are preserved in its producer supplement.
+Build/receiving lifetime RSS are250060800/215736320bytes respectively; limits
+are per-process DATA512MiB, ASunlimited, CPU19/thread1/nice19/idle I/O, with20%
+physical RAM reserve plus the declared own envelope and no aggregate cgroup
+enforcement. No molecular evaluation/fitting or native148timing occurs.
+
+This independently closable inspection increment is received in source and one
+owned installed source-provider context. Full source#9, supported public/
+installed/platform/release gates and the mature0.x objective remain open.
