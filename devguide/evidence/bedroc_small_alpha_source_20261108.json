@@ -1,0 +1,117 @@
+{
+  "schema": "pharmacophoremt.bedroc-small-alpha-source@1",
+  "issue": 155,
+  "parent_source": "46bf2e2f5bfc88697994674df02ae26947fe1e86",
+  "reproduction": {
+    "labels": [
+      1,
+      0
+    ],
+    "scores": [
+      0,
+      0
+    ],
+    "alpha": 5e-324,
+    "old_value": "NaN with invalid-division warning",
+    "correct_value": 0.5,
+    "also_observed": "Other tied/subnormal cases return a false1.0; saved summaries expose None for otherwise defined two-class metrics."
+  },
+  "original_guards": {
+    "failed": 6,
+    "passed": 23,
+    "log": {
+      "bytes": 2425,
+      "sha256": "bc5976ba12008acbad5cc3c4271fe0e66be982dd30624a7b421a1d90507b1191"
+    }
+  },
+  "corrected_selection": {
+    "passed": 179,
+    "modules": [
+      "tests/test_bedroc_small_alpha.py",
+      "tests/test_validation_metrics.py",
+      "tests/test_saved_run_analysis.py",
+      "tests/test_saved_run_comparison.py",
+      "tests/test_saved_results.py"
+    ],
+    "log": {
+      "bytes": 251,
+      "sha256": "baad1979cb48462c5c01078f6789f47001b1d7edb7854ec07505d073f2c66b75"
+    },
+    "warnings": "One original controlled Ackredit provider-failure warning; no underflow warning."
+  },
+  "independent_reference": "400-digit Decimal normalized exponential-rank sums averaged over all admissible tie permutations; no production metric reused.",
+  "ordinary_path": {
+    "bitwise_cases": 138,
+    "exponential_branch_ast_identical": true,
+    "frozen_module_sha256": "272cd4b0df06a2549c125faaeac8ed35f22e46764d4007806726fdb5a2bacd23",
+    "initial_probe_disposition": "Retained but uncredited because source editing began while its child still ran; accepted replacement uses hash-verified46bf2e2module under its actual namespace."
+  },
+  "semantics": {
+    "labels_scores_and_original_denominators_unchanged": true,
+    "single_class_nan_unchanged": true,
+    "actual_application_attribution_received": true,
+    "method": "Existing normalized rank-sum/ROC-AUC limit below float epsilon; ordinary exponential code unchanged."
+  },
+  "docs": {
+    "strict_full_html": true,
+    "notebook_execution": "off",
+    "observed_whole_own_group_rss_bytes": 303747072
+  },
+  "governance": [
+    {
+      "check": "index-generate",
+      "exit_code": 0
+    },
+    {
+      "check": "index-check",
+      "exit_code": 0
+    },
+    {
+      "check": "reporting",
+      "exit_code": 0
+    },
+    {
+      "check": "ruff",
+      "exit_code": 0
+    },
+    {
+      "check": "format",
+      "exit_code": 0
+    }
+  ],
+  "source_files": {
+    "pharmacophoremt/validation/metrics.py": {
+      "bytes": 5342,
+      "sha256": "07c65ba2a881d6437f1389c407d996067d40f5662c4aa35125089e72d6a41d50"
+    },
+    "tests/test_bedroc_small_alpha.py": {
+      "bytes": 2968,
+      "sha256": "c931bad07588bc89c6ea3128a4240467b9c703bd771a180b283c12c8c5bb927b"
+    },
+    "tests/test_validation_metrics.py": {
+      "bytes": 5408,
+      "sha256": "d7f9472a6a99729bedde9769abf1332eecdc230b213dca5e7969824e5322b3e9"
+    },
+    "tests/test_saved_run_analysis.py": {
+      "bytes": 15667,
+      "sha256": "3b3bb341b53a844f957efc4630017599eb9b4603ccc72f4a1d473484c3554566"
+    }
+  },
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "DATA_bytes": 536870912,
+    "AS": "unlimited inherited",
+    "aggregate_cgroup_available": false,
+    "reserve_fraction": 0.2,
+    "source_guard_peak_child_rss_bytes": 215764992
+  },
+  "molecular_execution": false,
+  "original_benchmark_snapshots_transferred": false,
+  "owned_installed_receiving": "pending",
+  "limits": "Analytical source correction, not biological validation, molecular performance, supported public installation or release qualification. Source full CI stays separate under#9.",
+  "raw_evidence": "build/phmt-bedroc-underflow-20261108-4mz4606h",
+  "retention_review": "2026-11-22"
+}

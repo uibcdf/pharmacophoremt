@@ -83,6 +83,10 @@ Reference lists are supplied in descending score order.
 EF uses `ceil(fraction * n_evaluated)` entries. A tie at the cutoff receives
 fractional active credit; BEDROC averages exponential positional weights within
 each tie group. These conventions preserve results under input permutation.
+For positive `bedroc_alpha` below float machine precision, BEDROC uses its
+normalized rank-sum limit, ROC AUC, to avoid an underflowed normalizer. Ordinary
+alpha values keep the exponential ranking expression. Single-class AUC/BEDROC
+remain undefined; this numerical treatment does not change labels or scores.
 The original dataset counts remain in the report, while class prevalence and
 metrics use the successfully evaluated subset. Failures in either class can
 change that subset, so retain the failures alongside the reported metrics.

@@ -98,6 +98,27 @@ def test_existing_batch_summary_cannot_admit_native_single_input_records(saved):
             input_mapping=[{"native_input_index": 0, "input_index": 30}],
             score_method="seeded_hit",
         )
+
+
+def test_tiny_alpha_saved_summary_preserves_finite_metrics_and_missing_denominators(
+    saved,
+):
+    with ScreeningRunView.open(saved.path) as view:
+        ordinary = summarize(view, saved)
+        observed = summarize(view, saved, bedroc_alpha=5e-324)
+    assert observed["metrics"]["BEDROC"] == 1.0
+    assert observed["metric_settings"]["bedroc_alpha"] == 5e-324
+    for key in (
+        "records",
+        "n_total",
+        "n_evaluated",
+        "n_unscored",
+        "n_native_failed",
+        "n_pending_work",
+        "n_upstream_unscored",
+        "run_configuration",
+    ):
+        assert observed[key] == ordinary[key]
     assert "input_index" not in saved.native["alpha"]
 
 

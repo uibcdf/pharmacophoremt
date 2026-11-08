@@ -104,24 +104,31 @@ def bedroc(labels, scores, alpha=20.0, *, skip_digestion=False):
     Truchon and Bayly (2007), DOI 10.1021/ci600426e. With fixed class counts,
     normalized exponential rank sums equal the normalized RIE expression.
     Ties average positional weights. A single-class dataset returns NaN.
+    Below float machine precision, use the normalized rank-sum limit (ROC AUC)
+    so valid positive alpha cannot underflow the normalization to zero.
     """
     labels, scores = _ranking(labels, scores)
     alpha = _positive(alpha, "alpha")
     n, active = len(labels), int(labels.sum())
     if not active or active == n:
         return float("nan")
-    order = np.argsort(-scores, kind="stable")
-    ranked_scores, ranked_labels = scores[order], labels[order]
-    # The common rank-one exponent and additive offset cancel. expm1
-    # preserves small-alpha differences without underflowing the first rank.
-    weights = np.expm1(-alpha * (np.arange(n, dtype=float) / n))
-    starts = np.r_[0, np.flatnonzero(np.diff(ranked_scores)) + 1]
-    ends = np.r_[starts[1:], n]
-    observed = sum(
-        float(ranked_labels[a:b].sum()) * weights[a:b].mean()
-        for a, b in zip(starts, ends)
-    )
-    best, worst = float(weights[:active].sum()), float(weights[-active:].sum())
-    result = float(np.clip((observed - worst) / (best - worst), 0, 1))
+    if alpha < np.finfo(float).eps:
+        # Curvature is below float precision. The normalized linear rank sum
+        # equals ROC AUC, whose integer pair counts retain exact tie credit.
+        result = roc_auc(labels, scores, skip_digestion=True)
+    else:
+        order = np.argsort(-scores, kind="stable")
+        ranked_scores, ranked_labels = scores[order], labels[order]
+        # The common rank-one exponent and additive offset cancel. expm1
+        # preserves small-alpha differences without underflowing the first rank.
+        weights = np.expm1(-alpha * (np.arange(n, dtype=float) / n))
+        starts = np.r_[0, np.flatnonzero(np.diff(ranked_scores)) + 1]
+        ends = np.r_[starts[1:], n]
+        observed = sum(
+            float(ranked_labels[a:b].sum()) * weights[a:b].mean()
+            for a, b in zip(starts, ends)
+        )
+        best, worst = float(weights[:active].sum()), float(weights[-active:].sum())
+        result = float(np.clip((observed - worst) / (best - worst), 0, 1))
     credit_criterion("bedroc", "pharmacophoremt.validation.metrics.bedroc")
     return result

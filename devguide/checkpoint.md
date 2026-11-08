@@ -10,6 +10,15 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#155 BEDROC numerical correction](pending_bugs/bedroc_small_alpha.md) is received
+in source: valid tiny positive alpha retains finite unbiased scores by reusing
+the ROC-AUC limit below float epsilon. Six original failures are preserved;
+179 numerical/saved-analysis cases now pass, and 138 ordinary-alpha results
+remain bitwise identical with an unchanged exponential branch. Strict docs pass.
+The [source receipt](evidence/bedroc_small_alpha_source_20261108.json) keeps
+resource/attribution/denominator evidence and the pending owned-wheel bridge.
+This independent analytical work neither runs molecules nor clears #148.
+
 The [serial acquisition result](feature_reuse_measurement.md#serial-acquisition-limit-received-2026-11-08-utc)
 at b1139d0/run42494894038 verifies the actual official manager and effective
 extraction/download settings of one, but package extraction still fails at the
@@ -143,8 +152,10 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** hand the actual serial-profile limit to the environment/
-resource owners and obtain a distinct reviewed acquisition strategy. Do not
+**Next concrete action:** receive the same 179 numerical/saved-analysis bodies
+from one exact owned wheel outside the checkout, then close #155 on that bounded
+evidence. Separately obtain a distinct reviewed acquisition strategy from the
+environment/resource owners. Do not
 repeat either exhausted manager profile or raise budgets. Receive all 87 native
 cases and actual provider/context evidence before the measured arm; continue
 independent product/provider receiving while that route remains unavailable.
