@@ -65,6 +65,10 @@ Recovery d95617d/run42461400749 receives actual bootstrap kernel controls and
 cleanup, then package extraction fails at the unchanged 2GiB acquisition budget.
 Inspect supported manager concurrency before a separate lower-consumption
 attempt; the native guards, measured arm and original-input pilot remain pending.
+The [serial acquisition correction](feature_reuse_measurement.md#serial-acquisition-prepared-2026-11-08-utc)
+now fixes manager extraction/download concurrency to one and verifies effective
+settings/binary identity before acquisition.46focused cases and the real
+config-only helper pass; actual transaction/native behavior is still unmeasured.
 
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public

@@ -337,5 +337,5 @@ reason = "Reviewed #151 correction: standard OS controls and fixed24MiB smoke on
 
 [[workflows]]
 path = ".github/workflows/feature_reuse_native_qualification.yaml"
-sha256 = "094e42ebea3188670782d580f86794186ac5d1abc28d33e44f51501505d4d422"
+sha256 = "89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0"
 reason = "Reviewed #148/#151 fixed native admission: immutable manager/SDK, existing ci-3.14 environment and seven source pins; bootstrap2GiB separate from native512MiB/87public-fixture guards. The caller binds the private client hash; no private-input pilot, package publication or generic executor."

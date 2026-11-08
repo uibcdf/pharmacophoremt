@@ -13,6 +13,86 @@ from devtools import feature_reuse_native_qualification as client
 
 
 class NativeQualificationTests(unittest.TestCase):
+    def test_manager_refuses_implicit_concurrency_before_any_child(self):
+        with (
+            patch.dict(
+                os.environ,
+                {"MAMBA_EXTRACT_THREADS": "0", "MAMBA_DOWNLOAD_THREADS": "1"},
+            ),
+            patch.object(client.subprocess, "check_output") as child,
+        ):
+            with self.assertRaisesRegex(ValueError, "explicit serial"):
+                client.manager_controls(Path("unused"))
+            child.assert_not_called()
+
+    def test_manager_binary_drift_refuses_before_config_or_installation(self):
+        with (
+            patch.dict(
+                os.environ,
+                {"MAMBA_EXTRACT_THREADS": "1", "MAMBA_DOWNLOAD_THREADS": "1"},
+            ),
+            patch.object(
+                client, "identity", return_value={"bytes": 1, "sha256": "0" * 64}
+            ),
+            patch.object(client.subprocess, "check_output") as child,
+        ):
+            with self.assertRaisesRegex(ValueError, "reviewed official binary"):
+                client.manager_controls(Path("unused"))
+            child.assert_not_called()
+
+    def test_manager_effective_defaults_or_wrong_controls_are_refused(self):
+        for controls in (
+            {"extract_threads": 0, "download_threads": 5},
+            {"extract_threads": 1, "download_threads": 5},
+            {"extract_threads": True, "download_threads": 1},
+            {"extract_threads": 1},
+        ):
+            with (
+                self.subTest(controls=controls),
+                patch.dict(
+                    os.environ,
+                    {"MAMBA_EXTRACT_THREADS": "1", "MAMBA_DOWNLOAD_THREADS": "1"},
+                ),
+                patch.object(
+                    client,
+                    "identity",
+                    return_value={"bytes": 14606408, "sha256": client.MANAGER_SHA},
+                ),
+                patch.object(
+                    client.subprocess,
+                    "check_output",
+                    side_effect=["1.5.10\n", json.dumps(controls)],
+                ),
+            ):
+                with self.assertRaisesRegex(ValueError, "concurrency must equal one"):
+                    client.manager_controls(Path("unused"))
+
+    def test_exact_manager_reports_verified_serial_controls(self):
+        identity = {"bytes": 14606408, "sha256": client.MANAGER_SHA}
+        with (
+            patch.dict(
+                os.environ,
+                {"MAMBA_EXTRACT_THREADS": "1", "MAMBA_DOWNLOAD_THREADS": "1"},
+            ),
+            patch.object(client, "identity", return_value=identity),
+            patch.object(
+                client.subprocess,
+                "check_output",
+                side_effect=[
+                    "1.5.10\n",
+                    '{"extract_threads": 1, "download_threads": 1}',
+                ],
+            ),
+        ):
+            self.assertEqual(
+                client.manager_controls(Path("owned-manager")),
+                {
+                    "manager": identity,
+                    "version": "1.5.10",
+                    "controls": {"extract_threads": 1, "download_threads": 1},
+                },
+            )
+
     def test_services_use_supported_group_oom_policy_and_owned_cleanup_root(self):
         import yaml
 
@@ -26,6 +106,8 @@ class NativeQualificationTests(unittest.TestCase):
         steps = workflow["jobs"]["native"]["steps"]
         services = [s["run"] for s in steps if "systemd-run" in s.get("run", "")]
         self.assertEqual(len(services), 2)
+        self.assertIn("--setenv=MAMBA_EXTRACT_THREADS=1", services[0])
+        self.assertIn("--setenv=MAMBA_DOWNLOAD_THREADS=1", services[0])
         for body in services:
             # systemd.service OOMPolicy=kill owns memory.oom.group=1;
             # MemoryOOMGroup is not a supported transient-service assignment.

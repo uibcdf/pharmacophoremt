@@ -10,6 +10,14 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [serial acquisition correction](feature_reuse_measurement.md#serial-acquisition-prepared-2026-11-08-utc)
+is prepared: the same SDK/manager now requires extraction/download concurrency
+of one and verifies actual effective settings plus the official binary before
+installing anything. All 46 focused administrative cases (21 admission guards)
+pass; the real consumer helper also verifies the exact binary/configuration.
+No environment acquisition or molecular execution is inferred from these controls.
+The resource/scientific budgets and both prior failed runs remain unchanged.
+
 [#153 SQLite lifetime correction](archive/administrative_sqlite_lifetimes.md)
 closes the five fixture-owned connections behind all 15 traced warnings, while
 preserving original transaction/corruption assertions. Production code is
@@ -133,11 +141,9 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** hand the measured transaction limit and verified
-exact-manager configuration to the common environment/resource owners. Implement
-and guard extraction/download concurrency of one through the same SDK;
-declare its exact source and unchanged budgets before a new request. Do not
-repeat the exhausted 2GiB acquisition. Receive
+**Next concrete action:** publish/review the prepared serial acquisition source,
+verify live main and complete exact-head inventory, then request its fixed
+qualification at most once. Receive actual transaction/manager controls and
 all 87 native cases and actual provider/context evidence before the measured arm.
 The three original benchmark snapshots remain local pending redistribution
 assessment; do not submit them or substitute a new workload for the declared

@@ -28,6 +28,7 @@ PROBE = ".github/workflows/feature_reuse_resource_probe.yaml"
 PROBE_SHA = "f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0"
 SOURCE_INPUT = "devtools/requirements/controlled_suite_dependencies_py314.txt"
 SOURCE_SHA = "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+MANAGER_SHA = "80057e007579d482a39dc283dd3e725503e34da7e7c51844957164511cdb917b"
 SELECTORS = (
     "tests/test_feature_reuse_experiment.py",
     "tests/test_modular_rigid_tools.py",
@@ -230,6 +231,42 @@ def run_fixed(args, output, group, budget, label):
         raise subprocess.CalledProcessError(code, args)
 
 
+def manager_controls(manager):
+    """Receive this exact manager's effective serial acquisition settings."""
+    if any(
+        os.environ.get(name) != "1"
+        for name in ("MAMBA_EXTRACT_THREADS", "MAMBA_DOWNLOAD_THREADS")
+    ):
+        raise ValueError("explicit serial extraction and download are required")
+    actual = identity(manager)
+    if actual != {"bytes": 14606408, "sha256": MANAGER_SHA}:
+        raise ValueError("the manager differs from the reviewed official binary")
+    version = subprocess.check_output(
+        [str(manager), "--version"], text=True, timeout=10
+    ).strip()
+    if version != "1.5.10":
+        raise ValueError("use the reviewed Micromamba1.5.10 binary")
+    controls = json.loads(
+        subprocess.check_output(
+            [
+                str(manager),
+                "config",
+                "list",
+                "extract_threads",
+                "download_threads",
+                "--json",
+            ],
+            text=True,
+            timeout=10,
+        )
+    )
+    if controls != {"extract_threads": 1, "download_threads": 1} or any(
+        type(value) is not int for value in controls.values()
+    ):
+        raise ValueError("effective manager acquisition concurrency must equal one")
+    return {"manager": actual, "version": version, "controls": controls}
+
+
 def bootstrap(args, group, budget):
     out = args.output
     temporary = Path(os.environ["RUNNER_TEMP"]).resolve()
@@ -238,11 +275,14 @@ def bootstrap(args, group, budget):
         temporary
     ):
         raise ValueError("use this job's fixed fresh environment and manager")
-    if (
-        subprocess.check_output([str(args.manager), "--version"], text=True).strip()
-        != "1.5.10"
-    ):
-        raise ValueError("use the reviewed Micromamba1.5.10 binary")
+    emit(
+        out,
+        {
+            "stage": "manager_controls_received",
+            **manager_controls(args.manager),
+            "scope": "Effective configuration only; transaction behavior remains unqualified",
+        },
+    )
     run_fixed(
         [
             sys.executable,

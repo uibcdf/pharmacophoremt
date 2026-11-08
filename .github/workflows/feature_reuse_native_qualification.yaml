@@ -16,7 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 40
     env:
-      PHMT148_NATIVE_CLIENT_SHA256: eb33582930913e28a678b79ea9099e8eb9af89417886f81ac7cd8da40148e724
+      PHMT148_NATIVE_CLIENT_SHA256: fb308b7c3c335a718489df80aec65d5120eb4b6e31209b186c077eb0ee71b10a
     steps:
       - uses: actions/checkout@v4
         with:
@@ -77,6 +77,7 @@ jobs:
             --setenv="GITHUB_RUN_ID=$GITHUB_RUN_ID" --setenv="GITHUB_RUN_ATTEMPT=$GITHUB_RUN_ATTEMPT" \
             --setenv="MAMBA_ROOT_PREFIX=$RUNNER_TEMP/phmt148-native-mamba" \
             --setenv=MAMBA_ALWAYS_YES=true --setenv=CONDA_ALWAYS_YES=true \
+            --setenv=MAMBA_EXTRACT_THREADS=1 --setenv=MAMBA_DOWNLOAD_THREADS=1 \
             --setenv=PYTHONDONTWRITEBYTECODE=1 \
             --setenv=OMP_NUM_THREADS=1 --setenv=OPENBLAS_NUM_THREADS=1 \
             --setenv=MKL_NUM_THREADS=1 --setenv=NUMEXPR_NUM_THREADS=1 \

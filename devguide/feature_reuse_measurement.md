@@ -117,6 +117,24 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### Serial acquisition prepared, 2026-11-08 UTC
+
+The [separate fixed plan](evidence/feature_reuse_native_serial_acquisition_plan_20261108.json)
+keeps every native/bootstrap budget, SDK/environment/source pin and original
+scientific selector. Only manager acquisition concurrency changes: explicit
+MAMBA_EXTRACT_THREADS=1/MAMBA_DOWNLOAD_THREADS=1, verified by the actual manager
+before any installer. The client also checks the reviewed binary's size/hash
+and version, then emits those actual bindings early enough to retain them after
+a transaction failure. No alternative environment builder or solver is added.
+
+All 46 focused administrative cases pass, including 21 admission guards.
+Missing implicit settings, changed binary and effective default/malformed
+configuration refuse work. The real consumer helper verifies the same official
+1.5.10 binary/configuration using only metadata commands. These controls do not
+qualify serial transaction resource use or native work. Publish/review the exact
+source, inventory current handles and make at most one separately declared
+request; retain both original failures and never increase the fixed budgets.
+
 ### Bootstrap admission and transaction limit, 2026-11-08 UTC
 
 [Recovery 42461400749/attempt1](evidence/feature_reuse_native_bootstrap_limit_20261108.json)

@@ -1,0 +1,128 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-serial-acquisition-plan@1",
+  "parent_source": "20d4306c35a235a88cf390ca216091599b0b05a7",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": 148,
+  "scope": "One manually dispatched hosted Linux job: SDK-owned bounded acquisition, then all87original public-fixture native guards; no private-input pilot, measured arm, timing schedule or general executor.",
+  "workflow": {
+    "path": ".github/workflows/feature_reuse_native_qualification.yaml",
+    "bytes": 6573,
+    "sha256": "89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0"
+  },
+  "client": {
+    "path": "devtools/feature_reuse_native_qualification.py",
+    "bytes": 19290,
+    "sha256": "fb308b7c3c335a718489df80aec65d5120eb4b6e31209b186c077eb0ee71b10a"
+  },
+  "acquisition": {
+    "manager_action": "mamba-org/setup-micromamba@4b9113af4fba0e9e1124b252dd6497a419e7396d",
+    "manager_release": "1.5.10-0",
+    "manager_binary_version": "1.5.10",
+    "sdk_revision": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "environment": "devtools/conda-envs/test_env_py314.yaml",
+    "source_manifest": "devtools/requirements/controlled_suite_dependencies_py314.txt",
+    "source_manifest_identity": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "channel_policy": "configured, strict priority; no exclusive-channel or public-installed qualification inferred"
+  },
+  "limits": {
+    "bootstrap": {
+      "memory_bytes": 2147483648,
+      "swap_bytes": 0,
+      "tasks": 64,
+      "cpus": 1,
+      "quota_percent": 100,
+      "lifetime_seconds": 1800
+    },
+    "native": {
+      "memory_bytes": 536870912,
+      "swap_bytes": 0,
+      "tasks": 32,
+      "cpus": 1,
+      "quota_percent": 100,
+      "lifetime_seconds": 180
+    },
+    "both": {
+      "threads": 1,
+      "nice": 19,
+      "io": "idle",
+      "DATA_AS": "Unlimited mapping limits within the aggregate cgroup cap",
+      "reserve_fraction": 0.2,
+      "supervisor_margin_bytes": 1610612736,
+      "sampling_seconds": 5,
+      "significant_psi_avg10_percent": 1,
+      "intense_swap_pages_per_interval": 65536,
+      "stop_only_owned_command_descendants": true,
+      "resource_capacity_reserved": false
+    }
+  },
+  "original_native_selectors": [
+    "tests/test_feature_reuse_experiment.py",
+    "tests/test_modular_rigid_tools.py",
+    "tests/test_correspondence_geometry.py"
+  ],
+  "required_native_counts": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "required_native_memory_limit_events": 0,
+  "ordinary_checkout": "Existing public repository fixtures included; none of the three original benchmark snapshots is submitted.",
+  "scientific_plan_identity": {
+    "bytes": 31954,
+    "sha256": "50626f60e5bf74205326f8368ed837f67648c4ac869807a09daa8f31a59805e1"
+  },
+  "dispatch": "At most one new request after publication, live-main equality and complete exact-head inventory. Preserve both previous failures; ambiguous response means observe, never automatic redispatch.",
+  "retention_review": "2026-11-22",
+  "native_qualification_received": false,
+  "required_oom_policy": "kill",
+  "prior_failed_runs": [
+    {
+      "id": 42460786720,
+      "attempt": 1,
+      "source": "cdb9d4529e9020bbdf0a538b3f2b6ef3c1e1ed4c",
+      "scope": "unsupported caller assignment; no service entry"
+    },
+    {
+      "id": 42461400749,
+      "attempt": 1,
+      "source": "d95617dceede826237689ff2b12d5bd1561f6b7f",
+      "scope": "bootstrap admitted; extraction fails at original memory/task envelope"
+    }
+  ],
+  "changes": [
+    "Bootstrap sets MAMBA_EXTRACT_THREADS=1 and MAMBA_DOWNLOAD_THREADS=1.",
+    "Before any installer, the client verifies the reviewed official manager binary/version and reads effective extraction/download settings; missing or different values refuse work.",
+    "Emit actual manager identity/configuration before acquisition, including when a later transaction fails."
+  ],
+  "manager": {
+    "version": "1.5.10",
+    "bytes": 14606408,
+    "sha256": "80057e007579d482a39dc283dd3e725503e34da7e7c51844957164511cdb917b",
+    "effective_controls": {
+      "extract_threads": 1,
+      "download_threads": 1
+    },
+    "exact_official_binary_and_consumer_helper_config_only_receiving": true,
+    "transaction_with_these_controls_measured": false
+  },
+  "same_budgets_pins_selectors_and_inputs": true,
+  "local_receiving": {
+    "focused_cases": 46,
+    "admission_guards": 21,
+    "whole_children_peak_rusage_bytes": 67657728,
+    "DATA_bytes": 536870912,
+    "source": "serial-acquisition-focused.json",
+    "real_helper_probe": "serial-manager-consumer-helper.json",
+    "scientific_native_execution": false,
+    "reporting_cases": 3,
+    "full_ruff_and_index": true
+  },
+  "scientific_scope": "Original87public-fixture guards only, with original native budget. No original benchmark snapshot, measured arm, private-input pilot, timing schedule, biological or public-installed qualification."
+}

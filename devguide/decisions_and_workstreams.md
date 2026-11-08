@@ -23,6 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [serial acquisition](feature_reuse_measurement.md#serial-acquisition-prepared-2026-11-08-utc)
+is prepared through the same SDK, with effective extraction/download settings
+of one and early official-manager identity checks.46focused cases/21admission
+guards and a real config-only consumer probe pass; actual transaction/native
+receiving remains pending. Resource budgets, pins and original failures remain.
+
 2026-11-08: [#153 fixture lifetimes](archive/administrative_sqlite_lifetimes.md)
 are corrected after tracing 15 warnings to five owned connections. Original
 transactions/assertions remain; 42 selected and 156 full administrative cases
