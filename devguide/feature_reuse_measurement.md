@@ -117,6 +117,31 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### First native route attempt and correction, 2026-11-08 UTC
+
+The first exact-source request at cdb9d45 is received as
+[42460786720/attempt1, failure](evidence/feature_reuse_native_admission_failure_20261108.json).
+Service creation rejects the caller's unsupported MemoryOOMGroup assignment;
+the native step is skipped. The private manager root is still absent, causing
+a separate post-cleanup ENOENT. No service/client admission, environment
+acquisition, native fixture, pilot or timing is received. Original GHRR1.4
+metadata/full captures and native job facts remain local. The generic compact
+report names cleanup; bounded native step6 evidence establishes the primary cause.
+
+[#154](pending_bugs/native_qualification_service_oom.md) replaces the assignment
+with documented OOMPolicy=kill, which sets memory.oom.group=1, and creates only
+the owned temporary manager root before setup. The actual kernel check and
+every phase budget/source pin/scientific selector remain unchanged. Its durable
+guard checks both actual service commands and cleanup preparation. The
+[separate prospective recovery](evidence/feature_reuse_native_qualification_recovery_plan_20261108.json)
+preserves the first declaration and failed producer. Publish/review its exact
+source before at most one new request; observe the actual handle after an
+uncertain response. Actual kernel/native receiving is still pending.
+Recovery passes 42 focused administrative cases, including 17 admission guards,
+three reporting cases and full Ruff/index checks under the unchanged local
+512MiB DATA limit (whole-command child peak 67534848 bytes). These are controls,
+not native or molecular-performance evidence.
+
 ### Native fixture admission prepared, 2026-11-08 UTC
 
 The fixed [manual workflow](../.github/workflows/feature_reuse_native_qualification.yaml)

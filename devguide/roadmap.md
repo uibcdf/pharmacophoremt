@@ -54,6 +54,10 @@ administrative receiving also fixes the observed route inventory and wide-CSV
 metadata memory defects, retaining full archived semantics and original failures.
 Actual native receiving, measured arm and the private-input pilot remain separate;
 SQLite connection lifetime warnings are tracked; their allocation owner is still unknown.
+The first native request at cdb9d45/run42460786720 fails before service entry;
+[#154](pending_bugs/native_qualification_service_oom.md) corrects the unsupported
+OOM assignment and private-root cleanup preparation. The original failure is
+retained; actual native qualification remains pending under the same budget.
 
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public

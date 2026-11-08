@@ -10,10 +10,17 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [native fixture qualification route](feature_reuse_measurement.md#native-fixture-admission-prepared-2026-11-08-utc)
-is prepared, not yet executed: a manual-only fixed client uses the common SDK
+The [native fixture qualification route](feature_reuse_measurement.md#first-native-route-attempt-and-correction-2026-11-08-utc)
+has an original failed attempt at cdb9d45/run42460786720: an unsupported
+service assignment prevents admission, so no native case executes. The
+[#154 correction](pending_bugs/native_qualification_service_oom.md) uses documented
+OOMPolicy=kill and prepares the owned manager root for cleanup, retaining all
+budgets and the original failure. Recovery passes 42 focused administrative
+cases (17 admission guards) and three reporting cases, with full Ruff/index
+checks; actual hosted admission remains pending.
+The manual-only fixed client uses the common SDK
 and existing pins, separates 2GiB acquisition from 512MiB native 87-case receiving,
-and verifies kernel bounds/source/native identities. Local 154 administrative
+and verifies kernel bounds/source/native identities. The preceding 154 administrative
 cases, including 16 new admission controls, and three reporting cases pass.
 Source reporting resolves #151
 (two unclassified workflows) and #152 (wide historical CSV materialization): all
@@ -119,7 +126,7 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** dispatch the prepared native fixture qualification once
+**Next concrete action:** dispatch the reviewed native fixture recovery once
 at its reviewed exact source, then receive all87cases and actual resource/context
 evidence before implementing the measured shared arm.
 The three original benchmark snapshots remain local pending redistribution

@@ -32,6 +32,9 @@ jobs:
           ref: 1c248b67d1daea256ed7c7f6172c6addb3f0b08f
           path: .molsyssuite
           persist-credentials: false
+      - name: Prepare the owned manager root for failure-safe cleanup
+        shell: bash
+        run: mkdir -p -- "$RUNNER_TEMP/phmt148-native-mamba"
       - name: Install only the reviewed manager binary
         uses: mamba-org/setup-micromamba@4b9113af4fba0e9e1124b252dd6497a419e7396d
         with:
@@ -63,7 +66,7 @@ jobs:
             --unit="$phmt_native_unit" --uid="$phmt_native_uid" --gid="$phmt_native_gid" \
             --working-directory="$GITHUB_WORKSPACE" \
             --property=MemoryMax=2147483648 --property=MemorySwapMax=0 \
-            --property=MemoryOOMGroup=yes --property=OOMPolicy=stop \
+            --property=OOMPolicy=kill \
             --property=TasksMax=64 --property=CPUQuota=100% \
             --property="AllowedCPUs=$phmt_native_cpu" --property="CPUAffinity=$phmt_native_cpu" \
             --property=Nice=19 --property=IOSchedulingClass=idle \
@@ -96,7 +99,7 @@ jobs:
             --unit="$phmt_native_unit" --uid="$phmt_native_uid" --gid="$phmt_native_gid" \
             --working-directory="$GITHUB_WORKSPACE" \
             --property=MemoryMax=536870912 --property=MemorySwapMax=0 \
-            --property=MemoryOOMGroup=yes --property=OOMPolicy=stop \
+            --property=OOMPolicy=kill \
             --property=TasksMax=32 --property=CPUQuota=100% \
             --property="AllowedCPUs=$PHMT148_CPU" --property="CPUAffinity=$PHMT148_CPU" \
             --property=Nice=19 --property=IOSchedulingClass=idle \

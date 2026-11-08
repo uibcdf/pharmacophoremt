@@ -1,0 +1,135 @@
+{
+  "schema": "pharmacophoremt.native-qualification-admission-failure@1",
+  "issue": 148,
+  "defect": 154,
+  "producer": "cdb9d4529e9020bbdf0a538b3f2b6ef3c1e1ed4c",
+  "run": {
+    "id": 42460786720,
+    "run_attempt": 1,
+    "workflow_id": 410975382,
+    "event": "workflow_dispatch",
+    "status": "completed",
+    "conclusion": "failure",
+    "created_at": "2026-11-08T07:56:08Z",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42460786720"
+  },
+  "job": {
+    "id": 128669422830,
+    "name": "native",
+    "status": "completed",
+    "conclusion": "failure",
+    "steps": [
+      {
+        "number": 1,
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 2,
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 3,
+        "name": "Run actions/setup-python@v5",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 4,
+        "name": "Check out the reviewed dependency SDK",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 5,
+        "name": "Install only the reviewed manager binary",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 6,
+        "name": "Prepare the pinned environment inside its own bounded service",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "number": 7,
+        "name": "Qualify the original native fixtures inside 512MiB",
+        "status": "completed",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 11,
+        "name": "Post Install only the reviewed manager binary",
+        "status": "completed",
+        "conclusion": "failure"
+      },
+      {
+        "number": 12,
+        "name": "Post Check out the reviewed dependency SDK",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 13,
+        "name": "Post Run actions/setup-python@v5",
+        "status": "completed",
+        "conclusion": "skipped"
+      },
+      {
+        "number": 14,
+        "name": "Post Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 15,
+        "name": "Complete job",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ]
+  },
+  "native_job_facts": "Independently read through connected GitHub job API; same single latest attempt/job/step conclusions.",
+  "primary_failure": {
+    "step": 6,
+    "message": "Unknown assignment: MemoryOOMGroup=yes",
+    "service_admitted": false,
+    "client_executed": false,
+    "environment_created": false
+  },
+  "secondary_failure": {
+    "step": 11,
+    "message": "ENOENT: owned manager root does not exist during post-cleanup",
+    "binary_setup_step_passed": true
+  },
+  "native_qualification_received": false,
+  "native_tests_executed": 0,
+  "benchmark_or_private_input_execution": false,
+  "ghrr": {
+    "version": "1.4.0",
+    "first_capture": "metadata, complete",
+    "terminal_capture": "full, complete",
+    "source_state_preserved": "failure",
+    "generic_root_cause": "Secondary cleanup ENOENT; bounded original native step6 establishes the primary unsupported property.",
+    "manifest": {
+      "bytes": 1850,
+      "sha256": "98d8b372d19382abf2e6993072c143c7d75d25b57f6a4c60504cba00eb8f7413"
+    },
+    "raw_logs_zip": {
+      "bytes": 20687,
+      "sha256": "f464384f31b055b18895462f96ef5f1c23ec490d2987606f1ca441019f696ea9"
+    }
+  },
+  "original_plan": {
+    "bytes": 3118,
+    "sha256": "7da4a27588a0f1402c4838009f61095183b697a536adbf5a74330e7c167e3790"
+  },
+  "recovery": "Separate reviewed OOMPolicy=kill correction; preserve kernel group requirement/budgets/client/pins/selectors. No automatic redispatch.",
+  "raw_evidence": "build/phmt-native-reuse-qualification-20261108-md_ysaii",
+  "retention_review": "2026-11-22",
+  "limits": "No admitted cgroup controls, provider/native binding, molecular guard, pilot, timing, public-installed, biological or release result."
+}

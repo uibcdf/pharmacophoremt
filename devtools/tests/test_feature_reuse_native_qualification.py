@@ -13,6 +13,35 @@ from devtools import feature_reuse_native_qualification as client
 
 
 class NativeQualificationTests(unittest.TestCase):
+    def test_services_use_supported_group_oom_policy_and_owned_cleanup_root(self):
+        import yaml
+
+        workflow = yaml.load(
+            (
+                client.ROOT
+                / ".github/workflows/feature_reuse_native_qualification.yaml"
+            ).read_text(),
+            Loader=yaml.BaseLoader,
+        )
+        steps = workflow["jobs"]["native"]["steps"]
+        services = [s["run"] for s in steps if "systemd-run" in s.get("run", "")]
+        self.assertEqual(len(services), 2)
+        for body in services:
+            # systemd.service OOMPolicy=kill owns memory.oom.group=1;
+            # MemoryOOMGroup is not a supported transient-service assignment.
+            self.assertIn("--property=OOMPolicy=kill", body)
+            self.assertNotIn("--property=MemoryOOMGroup=", body)
+        setup = next(
+            i
+            for i, step in enumerate(steps)
+            if step.get("uses", "").startswith("mamba-org/setup-micromamba@")
+        )
+        self.assertEqual(
+            steps[setup - 1]["run"],
+            'mkdir -p -- "$RUNNER_TEMP/phmt148-native-mamba"',
+        )
+        self.assertEqual(steps[setup]["with"]["post-cleanup"], "all")
+
     def test_changed_client_refuses_before_any_route_or_scope_execution(self):
         with tempfile.TemporaryDirectory() as temporary:
             with (

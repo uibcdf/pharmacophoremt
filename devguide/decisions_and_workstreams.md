@@ -23,6 +23,13 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: the first native request at cdb9d45/run42460786720 fails before
+service admission; no molecular case executes. The
+[#154 correction](pending_bugs/native_qualification_service_oom.md) uses supported
+OOMPolicy=kill and prepares only the private manager root for cleanup. The
+original failure and unchanged resource/scientific declaration remain explicit;
+real hosted recovery is pending.
+
 2026-11-08: [native fixture admission](feature_reuse_measurement.md#native-fixture-admission-prepared-2026-11-08-utc)
 is implemented as a fixed manual workflow/common-SDK client, with2GiB acquisition
 separate from512MiB native87-case scope. Local154administrative cases/16admission

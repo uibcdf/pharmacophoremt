@@ -5,9 +5,10 @@ Queued defects have an owning GitHub issue. See the
 
 <!-- generated: devguide_index -->
 
-### Partial (1)
+### Partial (2)
 
 - [`full_ci_routes_and_skipped_push_recovery.md`](full_ci_routes_and_skipped_push_recovery.md) — [#9](https://github.com/uibcdf/pharmacophoremt/issues/9) — Complete contributor full-CI routes and skipped-push recovery. *(partial, measured)*
+- [`native_qualification_service_oom.md`](native_qualification_service_oom.md) — [#154](https://github.com/uibcdf/pharmacophoremt/issues/154) — Replace an unsupported transient-service property while preserving native qualification bounds. *(partial, measured)*
 
 ### Open (1)
 
