@@ -72,15 +72,11 @@ local seeded/native/resource route remains failed, with older MolSysMT601
 feedback; it is not retried or replaced by the accepted eleven-module223case
 selection plus new33. No provider/prefix/native or budget change occurs.
 
-The [accumulated source checkpoint](saved_run_ci_checkpoint.md) remains frozen
-at5c3cd64/attempt1 and is now accepted: source42436392248 passes2430cases in each
-of eight Linux/macOS arm64 Python3.11–3.14cells, with zero reported scientific
-skips and43retained warnings per cell. Reporting, policy42436396390 and publication
-governance42436399981 pass. Native full commands/acquisition/interpreters and all
-106-file qualified XMLs are verified; Codecov upload steps pass, with public
-server freshness unobserved. Earlier [8db2a53](boundary_ci_checkpoint.md) retains
-its own2357-case/eight-cell identity. New#147source is later and retains separate
-full#9debt. Do not relabel or redispatch the completed runs.
+The preceding [5c3cd64 source checkpoint](saved_run_ci_checkpoint.md) retains
+42436392248/attempt1 and2430cases per eight cells, with its original governance/
+coverage evidence. Earlier [8db2a53](boundary_ci_checkpoint.md) retains its own
+identity. Later147/150source is received separately at27c1178 below; never
+relabel or redispatch a completed handle.
 
 [Current public MolSysMT availability](evidence/public_molsysmt_availability_20261108_summary.json)
 still verifies0.23.0main on Linux/macOS arm64, with the exact previously received
@@ -93,12 +89,15 @@ The historical public prefix is absent at the checked original/remapped paths;
 its old receipt is evidence, separate from an available runtime on this machine.
 
 The [next accumulated source checkpoint](plan_api_ci_checkpoint.md) is now
-declared/dispatched at exact27c1178, with existing pins/workflows unchanged.
-Source42451906584/attempt1 initially has eight scientific cells active and
-reporting successful; policy42451909669 and no-build publication governance
-42451913187 have passed their required native steps. The
-[initial receipt](evidence/plan_api_ci_initial_20261108.json) accepts no full
-source result or counts yet. Local work is bounded read-only evidence capture.
+accepted at exact27c1178, with existing pins/workflows unchanged.
+Source42451906584/attempt1 passes2505full-suite cases in each of all eight
+Linux/macOS arm64 Python3.11–3.14cells, with zero reported skips and43retained
+warnings per cell. Reporting, policy42451909669 and no-build publication
+governance42451913187 pass. The
+[terminal receipt](evidence/plan_api_ci_terminal_20261108.json) verifies full
+commands/acquisition/interpreters/architectures and all106-file qualified XMLs;
+Codecov steps pass, with server freshness unobserved. Original initial/past
+receipts retain their identities. Local work is bounded read-only capture.
 
 The [#148 hosted scope probe](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
 now passes exact9a0ed14/run42453432613/attempt1 and its
@@ -108,14 +107,14 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** receive terminal facts for the existing scientific handles:
-full eight-cell tests, interpreter/architecture/acquisition and coverage. Do not
-redispatch either27c1178or the completed5c3cd64runs. Native#148still requires a
-qualified molecular provider/input delivery and shared arm before its pilot;
-the hosted OS probe alone does not establish that boundary. No exhausted native case
-is retried. Preserve later full-source and public/installed-platform debt, the
-original local resource failure and provider-owned collection/public-delivery
-gates. The mature0.x goal is active; no release is selected.
+**Next concrete action:** qualify the existing87native feature-reuse controls
+using public repository fixtures inside a newly verified512MiB scope, with pinned
+bootstrap/provider provenance, before implementing the measured shared arm.
+The three original benchmark snapshots remain local pending redistribution
+assessment; do not submit them or substitute a new workload for the declared
+pilot. Never redispatch completed27c1178/5c3cd64runs or retry the exhausted local
+native case. Preserve later-head, public/installed-platform and provider-owned
+collection/public-delivery gates. The mature0.x goal is active; no release is selected.
 
 ## Active public integration
 
@@ -156,13 +155,13 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress and single/paired saved-run analysis received in bounded source/owned installed contexts | Frozen5c3cd64full source is accepted for144/145/146; later147, broader usability/provider/source operations and full public gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis and plan inspection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
 | #128 tool registry | [One executed Pharm3D analytical comparison and nine documentary records](pharmacophore_tools_registry.md) | Projection#140 is received in source/one owned wheel; declare other comparisons and retain separate benchmark/biological scope |
-| #9/#10/#23/#95 | Frozen5c3cd64 full source accepted; later27c1178 checkpoint live, with policy/publication controls successful | Receive existing42451906584/attempt1 full source; dependency, installed/public/platform and release gates remain separate; no local full-suite retry |
+| #9/#10/#23/#95 | Frozen27c1178 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |
 

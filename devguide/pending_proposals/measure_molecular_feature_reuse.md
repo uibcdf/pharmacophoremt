@@ -65,3 +65,13 @@ biological and supported installed/public/platform gates remain separate.
 This issue stays open. Independent #108 public-workflow/source coverage can
 advance while native execution is unavailable. It is not a reason to stop or
 mark the mature0.x goal complete.
+
+The [subsequent full source checkpoint](../plan_api_ci_checkpoint.md) receives
+27c1178/42451906584/attempt1:2505full-suite cases pass in every Linux/macOS arm64
+Python3.11–3.14cell, including the22offline plan guards and existing native tests.
+This is functional receiving with the pinned CI providers, separate from512MiB
+native admission or the private-input pilot. Next qualify the unchanged87native
+public-fixture controls under that managed budget with pinned bootstrap/context,
+then implement/qualify the measured shared arm. Preserve all three original
+snapshots and their publication restrictions; do not substitute another workload
+as the declared pilot or infer speed from passing source tests.

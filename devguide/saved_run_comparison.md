@@ -74,8 +74,18 @@ without literal RST directives. Subsequent exact installed receiving is below.
 This receiving uses the previously accepted eleven-module223case slice plus
 new33guards. The broader #146 seeded/native/resource scope remains failed and
 is not retried, narrowed silently or reassigned to this passing selection.
-Existing full hosted source42436392248/attempt1 remains frozen at5c3cd64; all
-later source, full public/provider/installed-platform and release gates stay open.
+The preceding full hosted source42436392248/attempt1 remains frozen at5c3cd64;
+the later source receiving below has its own identity. Full public/provider/
+installed-platform and release gates remain separate.
+
+The subsequent [full source checkpoint](plan_api_ci_checkpoint.md) receives
+exact27c1178/run42451906584/attempt1:2505full-suite cases pass in all eight
+Linux/macOS arm64 Python3.11–3.14cells, with zero reported skips/43warnings per
+cell. Full command/acquisition/interpreter/architecture and qualified coverage
+verify. This includes paired-run admission/statistics regressions; it does not
+rebuild/rebind the original owned wheel or turn the original local native/resource
+failure into success. Public/installed/platform and scientific gates retain their
+separate acceptance.
 
 ## Exact installed receiving, 2026-11-08
 

@@ -187,17 +187,24 @@ The [saved-run accumulated source checkpoint](saved_run_ci_checkpoint.md)
 accepts exact5c3cd64/attempt1 after#144/#145/#146:2430cases pass per eight
 Linux/macOS Python3.11–3.14cells, with reporting/policy/publication governance
 and native full-command/qualified-coverage facts verified. Later147runtime
-now has the [next accumulated checkpoint](plan_api_ci_checkpoint.md) declared
+now has the [next accumulated checkpoint](plan_api_ci_checkpoint.md) accepted
 at27c1178 alongside150and148/149developer controls. Source42451906584/attempt1
-is initially active in all eight scientific cells, with reporting successful;
+passes2505full-suite cases in each of all eight Linux/macOS arm64
+Python3.11–3.14cells, with zero reported skips/43warnings per cell. Reporting,
 policy42451909669 and no-build publication governance42451913187 pass. Full
-source acceptance awaits existing-run terminal facts and coverage; no new
-scientific counts, installed/platform or release qualification are inferred.
+commands, acquisition, actual interpreters/architectures and all106-file XMLs
+verify; Codecov steps succeed with public-server freshness unobserved. This
+does not qualify the separate native512MiB context, private-input pilot, exact
+owned installed/platform or release gates. Original local failures are retained.
 [Current public-index revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
 still finds the original0.23.0main Linux artifact; modern public delivery awaits
 an identified new file/owner notice, with no repeated solve or new version floor.
 Full installed/public/platform, biological and performance milestones remain
-separate; review the existing molecular-reuse workload before declaring timing.
+separate. Next receive the existing87public-fixture native controls under a newly
+verified512MiB scope with pinned acquisition/context, then implement/qualify a
+shared measured arm before the declared pilot. The original three snapshots
+remain local pending redistribution assessment; no replacement workload is
+accepted as that pilot.
 
 [#146 saved-run cohort analysis](archive/summarize_saved_screening_run.md)
 connects verified saved work to existing retrospective metrics without inventing

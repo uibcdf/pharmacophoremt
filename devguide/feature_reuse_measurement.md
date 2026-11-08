@@ -174,6 +174,16 @@ checkout includes the existing public ERalpha H5MSM fixture; none of the three
 original benchmark snapshots is submitted. The original projection and correction
 remain local, without rerunning or changing the native control observations.
 
+The [accumulated full source checkpoint](plan_api_ci_checkpoint.md) subsequently
+receives27c1178/42451906584/attempt1:2505full-suite cases pass in all eight
+Linux/macOS arm64 Python3.11–3.14cells, including the22offline declaration guards
+and existing native fixture controls. It verifies those functional routes with
+the pinned CI providers, not a512MiB native execution or the held local-provider
+context. Before a shared measured arm, qualify the unchanged87public-fixture
+native controls inside a newly verified512MiB scope with pinned bootstrap/provider
+provenance. These controls are not a replacement for the declared original-input
+two-arm pilot or timed schedule; all original snapshot restrictions remain.
+
 The [declaration receiving receipt](evidence/feature_reuse_profile_declaration_20261108_summary.json)
 records focused offline guards, actual input
 hash verification and reporting/lint checks. These establish declaration and

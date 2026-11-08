@@ -77,6 +77,13 @@ producer metadata is normalized or old run implicitly rebound. Full supported
 installed/public/platform and native#148
 measurement remain separate. No provider/prefix/native artifact is changed.
 
+The subsequent [full source checkpoint](plan_api_ci_checkpoint.md) now receives
+exact27c1178/run42451906584/attempt1:2505full-suite cases pass in all eight
+Linux/macOS arm64 Python3.11–3.14cells, with full native commands and coverage
+verified. This includes the inspection/alias bodies and preserves the original
+source/owned-wheel producers. It does not replace supported exact-file installed,
+public-provider, biological, usability or molecular-performance qualification.
+
 ## Version and compatibility contracts
 
 New public stores write `pharmacophoremt.screening-run@1`. The legacy

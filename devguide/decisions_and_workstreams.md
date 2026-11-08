@@ -32,13 +32,15 @@ performance evidence. Native context, authorized input handoff, shared arm and
 two-arm pilot remain pending. No shared-workstation control/provider is changed.
 
 2026-11-08: the [next accumulated source checkpoint](plan_api_ci_checkpoint.md)
-freezes27c1178 for147/150and148/149developer controls with unchanged acquisition,
-workflows and policy. Existing source42451906584/attempt1 initially has eight
-scientific cells active and reporting successful; policy42451909669 and no-build
-publication governance42451913187 pass their required native steps. Full source
-is pending; inspect the existing handles without redispatch. Completed5c3cd64
-keeps its historical identity and counts. Public/installed delivery, molecular
-measurement, biological studies and mature0.x gates remain separate.
+accepts27c1178 for147/150and148/149developer controls with unchanged acquisition,
+workflows and policy. Source42451906584/attempt1 passes2505full-suite cases in
+each of all eight Linux/macOS arm64 Python3.11–3.14cells, with zero reported
+skips/43warnings per cell. Reporting, policy42451909669 and no-build publication
+governance42451913187 succeed. Full commands, acquisition, architecture/interpreter
+and all106-file XMLs verify. Original initial/frozen runs retain their identities;
+no redispatch occurs. Public/installed delivery, native measurements, biology and
+mature0.x gates remain separate. Next qualify the existing87public-fixture
+native controls inside a newly verified512MiB scope before a measured shared arm.
 
 2026-11-08: [#150 plan inspection](archive/inspect_prepared_run_plans.md)
 adds `PreparedRunPlan.describe()` and compact repr, with22selected source cases
@@ -76,7 +78,8 @@ frozen5c3cd64/attempt1 for#144/#145/#146. Source42436392248 passes2430cases per
 eight Linux/macOS Python3.11–3.14cells, with reporting/policy42436396390 and
 publication governance42436399981successful. Native full commands, interpreter/
 architecture/acquisition and106-file qualified coverage are verified. Later147
-retains its separate full-source debt; no existing run is restarted/relabelled.
+is outside that frozen scope and has separate27c1178 receiving above; no existing
+run is restarted/relabelled.
 
 2026-11-08: [public provider revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
 still identifies the same0.23.0main artifact and older missing-modern-API gate.
@@ -106,7 +109,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #103 receptor-to-screening studies | Objective accepted; neither full biological study is complete | Admit original methods/data/cohort/preparation, freeze receptor/comparator/evaluation and execute |
 | #66 ERalpha binding | Frozen source pools/exposure persist; original Sun2006, Xin2023, Gungor2006 and Scott2023 methods unresolved | New authorized access lead; don't repeat exhausted routes or alter frozen queries/thresholds |
 | #106 second-target admission | Nine fixed leads reviewed; capacity/coupled outcomes and seven held sources remain separate | Resolve original material/data/curation authority; further unresolved-domain review needs a new declaration; no activities admitted |
-| #108 public-library workflow | Public runs, released reader support, guided/expert parity, exports and [criterion-independent progress](saved_run_progress.md) received in bounded source/owned installed contexts | Retain completed frozen4616c78 CI separately. Broader usability/source operations and [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624) remain; no blanket connector/index/durability/biological promise |
+| #108 public-library workflow | Public runs, reader support, guided/expert parity, exports/progress, single/paired analysis and plan inspection received in bounded source/owned installed contexts;27c1178 full source accepted | Broader human usability/source operations and [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624) remain; no blanket connector/index/durability/biological promise |
 | #142 native inspection | Resolved: Point center alias and empty-coordinate shape corrected; same338 source/owned-wheel bodies and two isolated children pass | Full supported source/installed/public gates remain separate |
 | #143 analytical boundary | Resolved: original fixture exactness defect preserved; revision2/14guards/ten-case driver and frozen8db2a53 full2357-case/eight-cell source gate pass | Later helpers/tests and full installed/public/platform delivery retain separate#9/#23 scope |
 | #144 saved-reader performance | Resolved: three reader cells/75baseline samples and reusable copied-fixture recovery received with22guards | Preserve failed original preparation; extra25samples stay separate. Review shared scan cost before any cache/index/molecular throughput claim |
@@ -114,7 +117,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #128 tool-study registry | Dedicated public index, one [executed Pharm3D analytical comparison](rdkit_bounds_comparison.md) and nine documentary records | Public RDKit fields are received in source/one owned wheel under resolved#140; corrected8db2a53 source passes all eight cells under resolved#143, preserving failed489be12. Broader comparison/biological gates remain |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |
-| #9/#10/#23 CI/support/distribution | [Frozen5c3cd64](saved_run_ci_checkpoint.md) passes all8 source cells/2430cases each plus governance; [later27c1178 checkpoint](plan_api_ci_checkpoint.md) is active with policy/publication controls passed | Receive existing42451906584/attempt1 full source/coverage; full installed/public/package gates stay separate; no repeated frozen run |
+| #9/#10/#23 CI/support/distribution | [Frozen27c1178](plan_api_ci_checkpoint.md) passes all8 source cells/2505cases each plus reporting/policy/publication controls; later9a0ed14 OS probe has its separate manual receiving | Full installed/public/package and later-head gates stay separate; no repeated frozen run |
 | #6/#41/#74 ecosystem debt | Partial support adoption; bounded old-provider donor compatibility and SDF container migration remain | Receive owning provider contracts; annotated-SDF delegation is MolSysMT#215 |
 | #43 historical resources | Some `/tmp` producers/papers are absent; tracked support is intact | [Migration inventory](machine_migration.md): distinguish reconstruction from original recovery |
 

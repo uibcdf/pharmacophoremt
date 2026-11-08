@@ -27,7 +27,7 @@ observations; it does **not** accept the full source gate. Inspect these handles
 never redispatch them. A request response or observation timeout cannot decide
 the execution. The intentionally skipped backlog probe uses probe_backlog=false
 and is separate from scientific selection. No build, upload, tag or release is
-requested. The last fully accepted source remains
+requested. At that initial observation, the last fully accepted source was
 [5c3cd64/42436392248/attempt1](saved_run_ci_checkpoint.md), with2430cases per cell;
 those historical counts are not expectations for this later candidate.
 
@@ -55,10 +55,53 @@ The original broader local native/resource failure remains failed. This gate
 does not qualify molecular speed, large-library screening, either biological
 study, full public dependency availability or installed supported-platform
 delivery. MolSysMT-owned collection/public-delivery gates and mature0.x release
-qualification remain open. The next action is terminal receiving of the existing
-handles, followed by their exact scoped evidence and outstanding#9debt.
+qualification remain open. Terminal receiving below resolves this candidate's
+full-source gate, with later documentary/manual-probe scope tracked separately.
 
-The documentary receiving increment passes the generated-index check, all three
+The initial documentary receiving increment passes the generated-index check, all three
 local reporting-protocol cases and diff whitespace checks. Its167relative
 document targets, copied plan/audit bytes, captured manifest identities and
 seven frozen inputs verify. These controls do not clear the live scientific gate.
+
+## Terminal receiving, 2026-11-08 UTC
+
+The [terminal receipt](evidence/plan_api_ci_terminal_20261108.json) now accepts
+exact27c1178/run42451906584/attempt1: **2505full-suite cases pass in each of all
+eight Linux x86_64/macOS arm64 Python3.11–3.14cells**, with zero reported skips
+and43retained warnings per cell. Actual interpreters are3.11.18/3.12.16/3.13.18/
+3.14.10 and actual package0.4.0+171.g27c1178. Full commands, source acquisition,
+SDK/dependency preflight, home-directory import and architecture checks verify
+from original native job/step/log facts. Repetitions are not20040independent
+scientific cases or molecules.
+
+Reporting also passes its3reporting/18archive/8CI-route/135developer controls.
+Both frozen-policy and no-build publication required steps succeed. The skipped
+manual backlog administration remains intentional. Every XML contains the same
+106distinct qualified files, both package initializers and companion store,
+with zero-hit files/branches retained and unchanged private omissions. The actual
+[Linux3.13captured XML](evidence/plan_api_ci_linux313_20261108_coverage.xml.gz)
+is hash-bound; its timestamp-stripped text is not an independently checksummed
+runner file. Codecov upload steps succeed; public-server freshness is unobserved.
+
+Published GH Run Receptor1.4.0 capture and three offline integrity replays pass.
+The200-member source archive contains11211912uncompressed bytes and its1552406-byte
+original ZIP remains local; only reviewed scalar facts,
+hashes and the owned XML projection are published. All seven frozen inputs still
+match, and the candidate retains the same156tracked runtime module paths as the
+preceding accepted source. Local capture observes at most105144320bytes summed
+own RSS, retaining20%physical-RAM reserve plus its1.5GiB envelope. Actual DATA is
+512MiB per process and AS unlimited; CPU19/nice19/idleI/O and one backend thread
+remain. No aggregate cgroup or resource reservation is claimed.
+
+This receives147/150runtime plus148offline and149developer controls. It does not
+execute the148native schedule or establish a fresh full public dependency solve,
+exact-file supported installed matrix, biological validity, molecular speed or
+mature0.x release. Original source/owned-wheel producers and the failed local
+native/resource route remain unchanged. Later9a0ed14/42453432613 receives only
+the separate [hosted OS scope](feature_reuse_measurement.md); documentary heads
+retain their own relevant checks. Do not redispatch any completed handle.
+
+Next qualify the existing87public-fixture native feature-reuse controls inside
+a newly verified512MiB scope, with pinned acquisition/bootstrap provenance, before
+implementing the measured shared arm and considering the declared private-input
+pilot. The three original snapshots remain local under their existing restrictions.
