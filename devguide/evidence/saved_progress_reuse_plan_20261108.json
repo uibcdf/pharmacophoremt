@@ -1,0 +1,80 @@
+{
+  "schema": "pharmacophoremt.progress-reuse-plan@1",
+  "declared_at_utc": "2026-11-08T00:22:32.094803+00:00",
+  "baseline": "f5eda452094d22a57bbb4b12e4a5597f8a613180",
+  "pairs_per_size": 3,
+  "subsequent_calls_per_arm": 5,
+  "inputs": {
+    "100": {
+      "baseline_capsule_directory": "phmt-reader-profile-20261107-38xclz7n/profile/work-100",
+      "files": {
+        "run.sqlite3": {
+          "bytes": 98304,
+          "sha256": "f27c745ba113b43beb00f89d9576278af6069b1032522d8f44c9884d0b102639"
+        },
+        "fixture.json": {
+          "bytes": 840,
+          "sha256": "69ceb2559eaa8112b0d2965d7f1420e87074e5fe29e1da2ed9bafc6cdbc3462d"
+        },
+        "work.jsonl": {
+          "bytes": 7860,
+          "sha256": "f55d479089c8cc22872f778484a33890857e95b62ac29e6be6ab4d23a76f6048"
+        }
+      }
+    },
+    "1000": {
+      "baseline_capsule_directory": "phmt-reader-profile-20261107-38xclz7n/profile/work-1000",
+      "files": {
+        "run.sqlite3": {
+          "bytes": 692224,
+          "sha256": "a14f2a68e97456ec339303b37bf7298f9e2674479de086a77e20c7a3fc6aeb59"
+        },
+        "fixture.json": {
+          "bytes": 853,
+          "sha256": "325fddb1ab2912950a19070019071197db526c38a0ab039503aa3eceb3b5c5f7"
+        },
+        "work.jsonl": {
+          "bytes": 81560,
+          "sha256": "d7c22dca084e9a3511e2e708fb2f0eebcb3e34633f7264c7495aad302f8500ad"
+        }
+      }
+    },
+    "10000": {
+      "baseline_capsule_directory": "phmt-reader-profile-20261107-38xclz7n/recovered-work-10000",
+      "files": {
+        "run.sqlite3": {
+          "bytes": 6639616,
+          "sha256": "da5d221d000ed12fba7859fb3d903613d379e9190aef3d7c3c85a46405af8ee7"
+        },
+        "fixture.json": {
+          "bytes": 913,
+          "sha256": "2df16f7947a833b76e2eb31e9caf6590a58917c84c88576bb1b6e044d66f7fd0"
+        },
+        "work.jsonl": {
+          "bytes": 845560,
+          "sha256": "391f744c09228a12bf81b8e56743f79dc0b0e69d906780490253789fd32ab70b"
+        }
+      }
+    }
+  },
+  "arms": {
+    "baseline": "baseline",
+    "changed": "changed"
+  },
+  "order": "baseline,changed for even zero-based pair; reversed for odd pair",
+  "limits": {
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "rlimit_as_per_process_bytes": 536870912,
+    "child_timeout_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": "not enforced"
+  },
+  "scope": "synthetic saved-format progress only; complete admission and out-of-timing output/rank/export/byte controls; no original-sample pooling or one-shot/live-writer/molecular claim",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/145"
+}

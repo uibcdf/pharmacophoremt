@@ -302,8 +302,10 @@ class ScreeningRunView:
 
         Complete declared work may include failures. Counts describe work items,
         not independent compounds or biological validity. Empty work is complete.
-        This scans saved evidence in the owned verified snapshot; it performs no
-        scientific computation and is not a constant-time live progress monitor.
+        Opening fully verifies saved evidence. The first call scans confirmed
+        outcomes; later calls reuse detached counts within that same read-only
+        snapshot. Close and reopen to inspect a later writer state. No scientific
+        computation is performed.
 
         >>> with ScreeningRunView.open('run.sqlite3') as view:
         ...     pending = view.progress()['counts']['pending_work']

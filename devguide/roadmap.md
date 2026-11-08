@@ -145,6 +145,15 @@ timeout and separate verified-copy public recovery. The guarded reusable recover
 route now passes22controls and the copied10000case, resolving#144; no cache/index,
 speedup or molecular-throughput claim follows.
 
+[#145](pending_proposals/reuse_saved_progress.md) now implements private progress
+count reuse only within validated immutable saved views. Ten new guards pass,
+preserving complete admission, detached outputs, connection/thread checks and
+fresh writer progress. All130selected cases and its nine
+[declared same-input pairs](saved_progress_reuse.md) pass. Repeated10000-record
+progress medians fall from497.892380ms to0.103223ms in this synthetic reader
+context; opening/first scan retain their cost. Exact owned-wheel receiving is
+pending, separately from molecular throughput and full supported delivery.
+
 ## Current priority: classical consolidation
 
 The [#143 boundary-fixture correction](archive/analytical_upper_bound_platform.md)

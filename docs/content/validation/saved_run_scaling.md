@@ -1,5 +1,15 @@
 # Saved-run inspection and export scaling
 
+Later experiment2026-11-08: [immutable saved-progress reuse](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/saved_progress_reuse.md)
+compares the frozen reader with private count reuse on these same inputs.
+Nine alternating-order pairs/18fresh processes preserve exact counts, complete
+ranks, exports and original bytes. At10,000declared records, subsequent calls on
+the same already-open view have wall-time medians497.892380ms and0.103223ms
+(15samples per arm). Opening and the first progress scan retain their cost;
+this measures synthetic saved-result inspection, not molecular throughput.
+Its source and installed evidence retain a separate identity from the original
+baseline below.
+
 Case `saved-reader-scaling-20261107`; owners LMMV/dprada;
 [#144](https://github.com/uibcdf/pharmacophoremt/issues/144).
 This engineering profile uses synthetic saved-format records, with no molecule

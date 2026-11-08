@@ -1,5 +1,11 @@
 # Saved-run progress without a ranking criterion
 
+Current implementation update2026-11-08: [immutable snapshot reuse](saved_progress_reuse.md)
+retains detached counts after the first successful read-only progress scan.
+Opening still fully verifies all evidence; writer calls remain fresh. The
+original receiving and historical scan statements below retain their producer
+identity. Later paired/installed receiving is tracked separately under#145.
+
 Owners LMMV/dprada; 2026-11-07 UTC;
 [#108](https://github.com/uibcdf/pharmacophoremt/issues/108), mature-0.x milestone2.
 This contract and its [prospective plan](evidence/saved_run_progress_plan_20261107.json)

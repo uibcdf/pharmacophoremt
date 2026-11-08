@@ -1,0 +1,306 @@
+{
+  "schema": "pharmacophoremt.saved-progress-reuse-source@1",
+  "recorded_at_utc": "2026-11-08T00:29:19.835412+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/145",
+  "source_parent": "f5eda452094d22a57bbb4b12e4a5597f8a613180",
+  "source_identity": "Owned changed overlay plus source hashes; parent is not relabeled as changed code",
+  "qualification": {
+    "schema": "pharmacophoremt.progress-reuse-qualification@1",
+    "baseline": "f5eda452094d22a57bbb4b12e4a5597f8a613180",
+    "rows": [
+      {
+        "size": 100,
+        "arm": "baseline",
+        "first_verified_open_wall_ns": {
+          "median": 25258435,
+          "minimum": 23688076,
+          "maximum": 25504197,
+          "samples": 3
+        },
+        "first_progress_wall_ns": {
+          "median": 5273888,
+          "minimum": 4858373,
+          "maximum": 5322760,
+          "samples": 3
+        },
+        "subsequent_progress_wall_ns": {
+          "median": 5129725,
+          "minimum": 4722730,
+          "maximum": 5483814,
+          "samples": 15
+        },
+        "subsequent_progress_cpu_ns": {
+          "median": 5133143,
+          "minimum": 4725864,
+          "maximum": 5487049,
+          "samples": 15
+        },
+        "peak_rss_bytes": [
+          37867520,
+          37736448,
+          37781504
+        ]
+      },
+      {
+        "size": 100,
+        "arm": "changed",
+        "first_verified_open_wall_ns": {
+          "median": 24366049,
+          "minimum": 23448073,
+          "maximum": 27514235,
+          "samples": 3
+        },
+        "first_progress_wall_ns": {
+          "median": 5202569,
+          "minimum": 5037785,
+          "maximum": 6478763,
+          "samples": 3
+        },
+        "subsequent_progress_wall_ns": {
+          "median": 97941,
+          "minimum": 72066,
+          "maximum": 132282,
+          "samples": 15
+        },
+        "subsequent_progress_cpu_ns": {
+          "median": 101343,
+          "minimum": 74819,
+          "maximum": 135252,
+          "samples": 15
+        },
+        "peak_rss_bytes": [
+          37797888,
+          37642240,
+          37543936
+        ]
+      },
+      {
+        "size": 1000,
+        "arm": "baseline",
+        "first_verified_open_wall_ns": {
+          "median": 133231348,
+          "minimum": 133024835,
+          "maximum": 136580978,
+          "samples": 3
+        },
+        "first_progress_wall_ns": {
+          "median": 49532225,
+          "minimum": 47316387,
+          "maximum": 50996462,
+          "samples": 3
+        },
+        "subsequent_progress_wall_ns": {
+          "median": 49882698,
+          "minimum": 46645220,
+          "maximum": 54081174,
+          "samples": 15
+        },
+        "subsequent_progress_cpu_ns": {
+          "median": 49852798,
+          "minimum": 46628853,
+          "maximum": 54057821,
+          "samples": 15
+        },
+        "peak_rss_bytes": [
+          39923712,
+          39931904,
+          39849984
+        ]
+      },
+      {
+        "size": 1000,
+        "arm": "changed",
+        "first_verified_open_wall_ns": {
+          "median": 132926075,
+          "minimum": 128151270,
+          "maximum": 135703890,
+          "samples": 3
+        },
+        "first_progress_wall_ns": {
+          "median": 49572161,
+          "minimum": 47087997,
+          "maximum": 53096514,
+          "samples": 3
+        },
+        "subsequent_progress_wall_ns": {
+          "median": 77524,
+          "minimum": 72905,
+          "maximum": 188792,
+          "samples": 15
+        },
+        "subsequent_progress_cpu_ns": {
+          "median": 80425,
+          "minimum": 75601,
+          "maximum": 191880,
+          "samples": 15
+        },
+        "peak_rss_bytes": [
+          40013824,
+          39874560,
+          39964672
+        ]
+      },
+      {
+        "size": 10000,
+        "arm": "baseline",
+        "first_verified_open_wall_ns": {
+          "median": 1185410950,
+          "minimum": 1160732917,
+          "maximum": 1243636198,
+          "samples": 3
+        },
+        "first_progress_wall_ns": {
+          "median": 484376003,
+          "minimum": 482006475,
+          "maximum": 509790902,
+          "samples": 3
+        },
+        "subsequent_progress_wall_ns": {
+          "median": 497892380,
+          "minimum": 482713829,
+          "maximum": 517796104,
+          "samples": 15
+        },
+        "subsequent_progress_cpu_ns": {
+          "median": 497670956,
+          "minimum": 482490367,
+          "maximum": 517541930,
+          "samples": 15
+        },
+        "peak_rss_bytes": [
+          59645952,
+          59633664,
+          59662336
+        ]
+      },
+      {
+        "size": 10000,
+        "arm": "changed",
+        "first_verified_open_wall_ns": {
+          "median": 1169596062,
+          "minimum": 1162328669,
+          "maximum": 1210870601,
+          "samples": 3
+        },
+        "first_progress_wall_ns": {
+          "median": 474282420,
+          "minimum": 473591468,
+          "maximum": 497134072,
+          "samples": 3
+        },
+        "subsequent_progress_wall_ns": {
+          "median": 103223,
+          "minimum": 71899,
+          "maximum": 169717,
+          "samples": 15
+        },
+        "subsequent_progress_cpu_ns": {
+          "median": 106366,
+          "minimum": 74802,
+          "maximum": 137720,
+          "samples": 15
+        },
+        "peak_rss_bytes": [
+          59031552,
+          59199488,
+          59183104
+        ]
+      }
+    ],
+    "source_selected": 130,
+    "native_junit_header_tests": 220,
+    "junit_testcase_nodes": 130,
+    "new_guards": 10,
+    "original_failures": 5,
+    "original_positive_controls": 5,
+    "pairs": 9,
+    "fresh_arms": 18,
+    "first_opens": 18,
+    "first_progress_calls": 18,
+    "subsequent_progress_calls": 90,
+    "input_identities_preserved": true,
+    "exact_outputs_full_ranks_and_exports_equal": true,
+    "provider_snapshots_equal": true,
+    "measured_guard_imports_refused": [
+      "ackredit",
+      "molsysmt",
+      "numpy",
+      "pharmacophoremt",
+      "pyunitwizard",
+      "rdkit",
+      "scipy"
+    ],
+    "original_75_samples_pooled": false,
+    "limits": "Synthetic same-view progress only; first open/first scan still paid. Whole-process RSS includes all verification/export controls; no incremental memory, single-use CLI/live-writer/molecular throughput or full installed/public/platform claim."
+  },
+  "distinct_selected_cases": 175,
+  "selected_slices": {
+    "reader_store_profile": 130,
+    "distribution": 24,
+    "reporting": 3,
+    "archive": 18
+  },
+  "runtime_files": {
+    "pharmacophoremt_results/__init__.py": {
+      "bytes": 992,
+      "sha256": "79ff398e277ff7034cc2d4abfdcf833bfbafd7354930862b36284eb552b62d35"
+    },
+    "pharmacophoremt_results/__main__.py": {
+      "bytes": 111,
+      "sha256": "c75dea215fafaa6a5e017c51d22a5182fd05578df7147a3a9ed123d42b36b0f9"
+    },
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 21534,
+      "sha256": "fe2854a00abbd716142dc1c795cbefe1c25151c8194376ef1907c885e3680b44"
+    },
+    "pharmacophoremt_results/_diagnostics.py": {
+      "bytes": 1212,
+      "sha256": "0fbd0ec419d4cf6ee6a73c4f86914a82c86a91ec9482164724b91218efc950b5"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3317,
+      "sha256": "e06cecc3edf123d1b7d1b34740714dbad58ba8564c1219cf079fa91387ae842f"
+    },
+    "pharmacophoremt_results/_exports.py": {
+      "bytes": 3800,
+      "sha256": "6cd4da88c975cc42ef72b28df973a02c51b34173bb2f07558584d96e501bdd55"
+    },
+    "pharmacophoremt_results/_meta.py": {
+      "bytes": 208,
+      "sha256": "9398bd0b3b99904b774618a55cb021d301b78d4a7add332f5b517bcbca746e83"
+    },
+    "pharmacophoremt_results/_smonitor.py": {
+      "bytes": 621,
+      "sha256": "9d3c2f67b9cb16d567e0832ff16db121f06ce584f981c0224f96a01ee1e29a09"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 33506,
+      "sha256": "590df1209dd0a180dbc8054ce37164cee6eb014b8baac946b59faa965eec567a"
+    }
+  },
+  "publication_scope": "Owned code/control text and synthetic scalar/hash/timing/failure observations; no DB/journal/manifest/export/provider/native/wheel bodies",
+  "limits": "Synthetic same-view progress only; first open/first scan still paid. Whole-process RSS includes all verification/export controls; no incremental memory, single-use CLI/live-writer/molecular throughput or full installed/public/platform claim.",
+  "installed_receiving": "pending; separate source commit/owned artifact required",
+  "resources": {
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "rlimit_as_per_process_bytes": 536870912,
+    "child_timeout_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": "not enforced",
+    "review_utc": "2026-11-20"
+  },
+  "own_files": 119,
+  "full_evidence": {
+    "path": "saved_progress_reuse_source_20261108_full.json.gz",
+    "compressed_bytes": 123755,
+    "compressed_sha256": "d0431b68fc1948109c1c7b0a4e0b2dd37b5a882c8ef080262c8637ce8acdb0a4",
+    "uncompressed_bytes": 871104,
+    "uncompressed_sha256": "31100bc8f2a1000b5068e5a2e89758cfaebc5b7e4aa8f82e64c83d90e8f0f217"
+  }
+}

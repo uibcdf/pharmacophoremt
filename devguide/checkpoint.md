@@ -102,11 +102,22 @@ cache/index or molecular-throughput claim follows. The [reusable recovery driver
 now passes22case guards and the exact copied10000case;#144 resolves its bounded
 engineering scope. Extra receiving samples retain a separate identity.
 
-**Next concrete action:** declare/review a bounded immutable-snapshot progress
-reuse experiment from the measured shared-scan cost, preserving full admission,
-original failure/score/attempt accounting, detached outputs and live-writer
-freshness. No cache/index has been implemented. Later profiling/recovery helpers
-and tests retain current-head source debt under#9; frozen8db2a53 is not relabeled.
+[#145 immutable-snapshot progress reuse](saved_progress_reuse.md) is declared and
+implemented for factory-opened read-only views. All10new guards pass after the
+original five repeated-read failures; all130selected reader/store/profile cases
+pass; its [source receipt](evidence/saved_progress_reuse_source_20261108_summary.json)
+receives175distinct cases including governance/distribution. Full admission,
+detached counters, thread/lifetime refusal and fresh writer
+operations remain guarded. Nine declared same-input pairs pass exact outputs,
+complete ranks/exports and original-byte checks. Repeated10000-record progress
+medians are497.892380ms baseline and0.103223ms reuse; full open/first-scan costs
+remain. Exact owned-wheel receiving is pending.
+
+**Next concrete action:** receive the unchanged original reader/export/progress
+controls and10new guards from one exact owned installed artifact. The measured
+benefit applies only to repeated same-snapshot synthetic progress. Later runtime,
+profiling/recovery helpers and tests retain current-head source debt under#9;
+frozen8db2a53 is not relabeled.
 MolSysMT#624 collections, full installed/public dependency/platform delivery,
 biology, comparison/performance and mature0.x acceptance retain separate gates.
 

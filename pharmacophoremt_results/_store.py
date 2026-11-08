@@ -12,6 +12,7 @@ import math
 import os
 import sqlite3
 from contextlib import contextmanager
+from copy import deepcopy
 from pathlib import Path
 
 _VERSION = 1
@@ -641,14 +642,17 @@ class ReferenceRunView:
     The reader owns a read-only SQLite snapshot until closed. Close the ledger's
     exclusive writer before opening a view, and close the view before resuming.
     Opening verifies every stored record and attempt, including unpublished work.
-    Ranking scans committed outcomes and retains at most ``limit`` payloads;
-    this is not an index or a constant-time progress operation.
+    Ranking scans committed outcomes and retains at most ``limit`` payloads.
+    A factory-opened snapshot reuses detached progress counts after its first
+    successful scan; views over an active writer always scan current evidence.
     """
 
     LEDGER_CLASS = ReferenceLedger
 
     def __init__(self, ledger):
         self._ledger = ledger
+        self._read_only_snapshot = False
+        self._progress_cache = None
 
     @classmethod
     def open(cls, path):
@@ -674,7 +678,9 @@ class ReferenceRunView:
             )
             ledger = cls.LEDGER_CLASS(connection, configuration, query_bytes)
             ledger._verify_records()
-            return cls(ledger)
+            view = cls(ledger)
+            view._read_only_snapshot = True
+            return view
         except BaseException:
             connection.close()
             raise
@@ -696,7 +702,14 @@ class ReferenceRunView:
 
     def progress(self):
         """Count work and attempts without selecting or combining score criteria."""
-        return self._scan(None, limit=0)["summary"]
+        if self._progress_cache is not None:
+            # Preserve SQLite's thread/connection checks even without a scan.
+            self._ledger._db().execute("SELECT 1").fetchone()
+            return deepcopy(self._progress_cache)
+        summary = self._scan(None, limit=0)["summary"]
+        if self._read_only_snapshot:
+            self._progress_cache = deepcopy(summary)
+        return summary
 
     def summary(self, *, score_method):
         """Count declared work and publication coverage under one saved criterion."""
@@ -791,6 +804,7 @@ class ReferenceRunView:
 
     def close(self):
         self._ledger.close()
+        self._progress_cache = None
 
     def __enter__(self):
         self._ledger._db()

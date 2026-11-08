@@ -155,7 +155,10 @@ attempts. Staged unconfirmed evidence remains pending. Completion includes
 confirmed failures and refers to declared work items, not independent compounds
 or biological coverage. In Python, use `view.progress()` on an open
 `ScreeningRunView`; a writer offers the same `progress()` between writes.
-This scans saved evidence; close the writer before opening a read view.
+Close the writer before opening a read view. Opening verifies all saved evidence;
+the first progress call scans confirmed outcomes. Further calls on that same
+read-only view reuse detached counts. Close and reopen the view to inspect a
+later writer state. Writer progress remains fresh between writes.
 
 To inspect observed ranks, choose the original scoring criterion explicitly:
 
