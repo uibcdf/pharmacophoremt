@@ -1,0 +1,30 @@
+{
+  "schema": "pharmacophoremt.accumulated-ci-plan@1",
+  "declared_at_utc": "2026-11-08T01:56:01.452251+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "source": "5c3cd64ab71dcf8c7eab846939d9ae4d0daea2a5",
+  "issues": [
+    9,
+    10,
+    23,
+    144,
+    145,
+    146
+  ],
+  "purpose": "Deliberate accumulated exact-head source/policy/no-build publication governance after profile/recovery, immutable progress reuse and saved-run cohort analysis.",
+  "route": "Existing workflow_dispatch on main; CI probe_backlog=false; frozen policy-v1.5.4; immutable unchanged acquisition/SDK/config.",
+  "gates": [
+    "Verify remote main and existing exact workflow/head runs before any one-time request; reuse observed handles instead of redispatch.",
+    "Record actual workflow/event/head/run/attempt; do not infer run existence from HTTP request success.",
+    "Inspect GH Run Receptor1.4.0 first then authoritative native jobs/steps/logs/artifacts for acceptance.",
+    "Require eight full scientific cells: Linux x86_64 and macOS arm64 each Python3.11/3.12/3.13/3.14, actual selected counts and package/interpreter/acquisition/preflight facts.",
+    "Require reporting governance, frozen policy and no-build publication governance terminal native success; manual backlog probe intentional administrative skip.",
+    "Verify all emitted coverage file identities/branches/namespaces/private omission and Linux3.13 actual upload step outcomes; no public-server freshness inferred."
+  ],
+  "limits": "Original broader local native/resource route remains failed. This checkpoint is source, not fresh full public provider solve/installed supported platform delivery/release/biological/benchmark qualification. No build/upload/tag/release workflow or resource/provider/prefix change.",
+  "resource_controls": "Serial CPU19, backend threads1, nice19 idle I/O; DATA512MiB per process, no AS mapping cap for native Git/gh; no own aggregate memory/swap/tasks/quota. Entry memory/pressure checks.",
+  "frozen_config": "frozen_config.json"
+}

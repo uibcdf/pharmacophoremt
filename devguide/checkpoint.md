@@ -40,6 +40,11 @@ receives the exact older-context diagnosis and component label; its current
 correction is not requalified here. No provider/prefix/native or budget change
 occurs. Accepted source/installed slices do not replace that broader native gate.
 
+The [accumulated saved-run source checkpoint](saved_run_ci_checkpoint.md)
+is dispatched on frozen5c3cd64/attempt1: source42436392248 initially has eight
+science cells/reporting active; policy42436396390 and publication governance
+42436399981 pass their required native steps. Initial observations and the
+prospective plan are preserved; no source acceptance is inferred yet.
 The last full hosted [source checkpoint](boundary_ci_checkpoint.md) remains
 8db2a53/attempt1: CI42421360591 passes2357cases in each of eight Linux/macOS Python3.11–3.14
 cells; reporting, policy42421364958 and publication42421369303 pass, with corrected
@@ -49,9 +54,10 @@ and repeated-snapshot benefit, not a molecular speed claim. Earlier source,
 artifact and failed/successful identities remain in owning contracts and
 [checkpoint history](checkpoint_history_20261107.md).
 
-**Next concrete action:** declare and receive a deliberate accumulated exact-head
-source/policy/publication-governance checkpoint for#144/#145/#146using the existing
-manual eight-cell route, checking for existing exact-head runs first. Preserve
+**Next concrete action:** receive terminal native/full-log/coverage facts from
+the already dispatched5c3cd64source42436392248/attempt1 and its policy/publication
+handles; do not redispatch. Qualify all eight scientific cells before accepting
+the accumulated#144/#145/#146source gate. Preserve
 this workstation's exhausted native/resource route and full#23provider/public/
 installed/platform debt. The mature0.x goal is active; no new release is selected.
 

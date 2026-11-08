@@ -23,6 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [accumulated source checkpoint](saved_run_ci_checkpoint.md) is
+dispatched at frozen5c3cd64/attempt1 for#144/#145/#146. Source42436392248 has
+eight scientific cells/reporting active at initial capture; policy42436396390
+and publication governance42436399981 pass required native steps. Receive these
+handles without redispatch; full source and public/installed gates stay separate.
+
 2026-11-08: [saved-run cohort analysis](saved_run_analysis.md) under#146 passes
 268selected source cases, one exact analytical recipe and strict source/Sphinx
 rendering. It reuses existing metrics and preserves native evidence; pending,

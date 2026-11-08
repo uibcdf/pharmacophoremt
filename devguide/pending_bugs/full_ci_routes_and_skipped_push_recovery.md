@@ -15,6 +15,18 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Saved-run accumulated checkpoint — 2026-11-08
+
+The [new declared checkpoint](../saved_run_ci_checkpoint.md) freezes5c3cd64
+after#144/#145/#146. Existing exact-workflow/head executions were absent before
+the three one-time manual requests. Source42436392248/attempt1 initially has
+all eight science cells and reporting active; policy42436396390 and no-build
+publication governance42436399981 pass their required native steps. Source
+acceptance remains pending complete terminal counts/acquisition/coverage facts.
+The [initial receipt](../evidence/accumulated_ci_initial_20261108.json) and plan
+preserve these states. Original local native/resource failure and separate
+full installed/public/provider/platform gates remain explicit.
+
 ## Terminal frozen-source receiving and XML identity — 2026-11-07
 
 The [terminal receipt](../evidence/accumulated_ci_terminal_20261107.json) accepts

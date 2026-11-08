@@ -158,6 +158,12 @@ theme, separately from molecular throughput and full supported delivery.
 
 ## Current priority: classical consolidation
 
+The [saved-run accumulated source checkpoint](saved_run_ci_checkpoint.md)
+is running at exact5c3cd64/attempt1 after#144/#145/#146. Initial native policy/
+publication-governance steps pass; eight scientific cells/reporting remain
+active. Receive terminal full-source evidence before accepting that gate;
+full installed/public/platform and biological milestones remain separate.
+
 [#146 saved-run cohort analysis](archive/summarize_saved_screening_run.md)
 connects verified saved work to existing retrospective metrics without inventing
 native batch indices. Manifest iteration and the shared-core public summary are
