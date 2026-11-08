@@ -23,6 +23,13 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#156 bounded work inspection](pending_proposals/inspect_declared_work_cli.md)
+exposes original manifest mappings, including unconfirmed work, through a
+paginated independent command. Source69 selected controls, strict full docs and
+local governance pass; exact owned installed receiving remains pending.
+Complete verification and original reader/ranking/export behavior stay intact;
+no molecular calculation, new acquisition route or scale claim follows.
+
 2026-11-08: [#155 BEDROC precision](archive/bedroc_small_alpha.md) corrects
 underflow for valid tiny alpha using the existing ROC-AUC limit. Six original
 failures/23 passes become 179 selected numerical/saved-analysis passes; 138

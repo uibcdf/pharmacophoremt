@@ -170,6 +170,35 @@ the first progress call scans confirmed outcomes. Further calls on that same
 read-only view reuse detached counts. Close and reopen the view to inspect a
 later writer state. Writer progress remains fresh between writes.
 
+## Inspect declared work in pages
+
+Inspect the original work/source/occurrence mappings, including pending and
+unpublished entries, without choosing a score or loading the scientific package:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --work-items
+python -m pharmacophoremt_results RUN.sqlite3 --work-items --limit 10 --offset 10
+```
+
+Each JSON page uses `pharmacophoremt.screening-work-page@1`. `records` retains
+manifest order and the original `manifest_ordinal`, `work_key`, `source_key` and
+`occurrence_key`. The response also includes the original `run_id`, `run_format`,
+ordered-work checksum `work_sha256`, `declared_work`, selected `offset`/`limit`
+and `next_offset`. Use `next_offset` for the next page; `null` means no later work.
+The default page has at most ten records. `--limit` must be positive and
+`--offset` nonnegative; an offset beyond the end returns an empty page.
+
+These are declared mappings, not ranked hits or per-item status results. Use
+`--summary` for progress counts and the exports below for confirmed outcomes.
+Repeated source/occurrence keys remain distinct work; they do not establish
+chemical identity or independent compounds. No query, context or native payload
+is included. Reading still verifies the entire saved run; offset traversal is
+linear and retained page memory grows with the requested limit. Pagination does
+not establish large-library performance. Legacy files require `--allow-legacy`.
+Work inspection cannot be combined with scoring, summary or outcome-export flags;
+`--offset` applies only to this mode. Admission/iteration/close failures exit2
+without success JSON, preserving the original database.
+
 ## Inspect and export the saved view
 
 To inspect observed ranks, choose the original scoring criterion explicitly:

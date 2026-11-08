@@ -4,6 +4,10 @@ Use `ScreeningRunView.work_items()` to inspect every declared work item, includi
 pending work. Use `summarize_screening_run` to analyze a labelled original cohort
 without molecular access, another search or changes to saved evidence.
 
+For a terminal preview of those mappings, use the
+[paged work inspection command](recoverable_prepared_screening.md#inspect-declared-work-in-pages).
+It includes unconfirmed work; the command does not infer labels or cohort indices.
+
 Provide explicit `work_key`/original `input_index` correspondence and a binary
 integer label for each cohort sample. Every declared work must be mapped exactly
 once. Repeated source keys remain distinct samples; they do not establish chemical

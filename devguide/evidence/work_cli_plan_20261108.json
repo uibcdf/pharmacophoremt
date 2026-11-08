@@ -1,0 +1,50 @@
+{
+  "schema": "pharmacophoremt.work-cli-plan@1",
+  "declared_at_utc": "2026-11-08T16:44:17.531156+00:00",
+  "issue": 156,
+  "parent_source": "0465f638dce8e36e9669726ebee34fc984adaf24",
+  "source_before": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 22142,
+      "sha256": "0cfb5b6d67cf8438bb522521a59e9cd43c904de6246002181111a755bd0cb252"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 34134,
+      "sha256": "3ab6aaef7eb8cd03b1c8bf1d0524d59581ff3b2679a2dd0c302d98b52101238d"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3339,
+      "sha256": "cb0086d59b76c6f008bf57d13107f34a3cd7d1963e2af43b4fa2376c9b328468"
+    },
+    "tests/test_public_run_results.py": {
+      "bytes": 22136,
+      "sha256": "4895b33278fa2200671d6c2039f8f4021712cccdfc7a5a7ec382ab7cdbf7c7c0"
+    },
+    "tests/test_public_run_cli.py": {
+      "bytes": 12101,
+      "sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217"
+    },
+    "tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    },
+    "tests/test_public_run_progress.py": {
+      "bytes": 8831,
+      "sha256": "8fe5b06bd21a3eaa3e9f3df8d7d1c5581be72cf4e05b4f6b0ff56d20b6fd7d17"
+    }
+  },
+  "operation": "--work-items with default10/positive --limit, nonnegative --offset; minimal original run format/ID/work_sha256 and count, versioned page/records/next_offset. Reuse fully verified public view and work_items, close iterator. Use verified immutable work_count for exact continuation, no lookahead required. Clamp iterator window to original count before islice, including integers larger than sys.maxsize.",
+  "acceptance": "Fresh guarded partial/complete/empty/legacy/Unicode/original-order/repeated-source controls; pagination includes staged and never-started entries, matches independent original manifest; syntax refusals before I/O, full verification beyond page, late iteration/close refusal without success JSON; original CLI/progress/export and reader bytes/semantics preserved; one exact owned wheel receiving outside checkout.",
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "data_bytes": 536870912,
+    "pure_address_space_bytes": 536870912,
+    "native_build_address_space": "unlimited inherited",
+    "timeout_seconds": 180,
+    "aggregate_cgroup": false
+  },
+  "limits": "No scientific/attribution import, molecular operation, new environment acquisition, persistent index/parser/collection, full supported/public/platform/release or speed claim."
+}

@@ -4,6 +4,8 @@ import argparse
 import json
 import sqlite3
 import sys
+from contextlib import closing
+from itertools import islice
 from pathlib import Path
 
 from argdigest import arg_digest
@@ -431,7 +433,7 @@ class ScreeningRunView:
 
 
 def main(argv=None):
-    """Inspect saved progress/ranks or export evidence through the public view.
+    """Inspect saved work/progress/ranks or export evidence through the public view.
 
     Successful inspection prints bounded scalar JSON; export prints the original
     API receipt. Handled failures exit2 without a success response. Publication
@@ -448,6 +450,11 @@ def main(argv=None):
         help="Show saved work/attempt counts without selecting a ranking criterion.",
     )
     exports.add_argument(
+        "--work-items",
+        action="store_true",
+        help="Inspect declared work in manifest order, including unconfirmed entries.",
+    )
+    exports.add_argument(
         "--to-jsonl",
         type=Path,
         metavar="FILE",
@@ -462,12 +469,17 @@ def main(argv=None):
     parser.add_argument(
         "--score-method",
         choices=("seeded_hit@1", "checked_pose_coverage@1"),
-        help="Required for ranked inspection; cannot be combined with summary/export.",
+        help="Required for ranked inspection; cannot be combined with other modes.",
     )
     parser.add_argument(
         "--limit",
         type=int,
-        help="Ranked inspection only; defaults to 10. Summary/export has no limit.",
+        help="Ranked or work inspection; defaults to 10. Work pages require a positive limit.",
+    )
+    parser.add_argument(
+        "--offset",
+        type=int,
+        help="Work inspection only: nonnegative manifest offset, default 0.",
     )
     parser.add_argument(
         "--allow-legacy",
@@ -476,13 +488,22 @@ def main(argv=None):
     )
     arguments = parser.parse_args(argv)
     exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
-    ranked = not (exporting or arguments.summary)
-    if not ranked and (
+    ranked = not (exporting or arguments.summary or arguments.work_items)
+    if not (ranked or arguments.work_items) and (
         arguments.score_method is not None or arguments.limit is not None
     ):
         parser.error("--score-method and --limit are only valid for ranked inspection")
     if ranked and arguments.score_method is None:
         parser.error("--score-method is required for ranked inspection")
+    if arguments.offset is not None and not arguments.work_items:
+        parser.error("--offset is only valid with --work-items")
+    if arguments.work_items:
+        if arguments.score_method is not None:
+            parser.error("--score-method is only valid for ranked inspection")
+        if arguments.limit is not None and arguments.limit <= 0:
+            parser.error("--work-items requires a positive --limit")
+        if arguments.offset is not None and arguments.offset < 0:
+            parser.error("--work-items requires a nonnegative --offset")
     receipt = None
     try:
         with ScreeningRunView.open(
@@ -490,6 +511,29 @@ def main(argv=None):
         ) as view:
             if arguments.summary:
                 result = view.progress()
+            elif arguments.work_items:
+                configuration = view.configuration
+                count = configuration["work_count"]
+                offset = 0 if arguments.offset is None else arguments.offset
+                limit = 10 if arguments.limit is None else arguments.limit
+                records = []
+                if offset < count:
+                    with closing(view.work_items()) as source:
+                        records = list(
+                            islice(source, offset, min(offset + limit, count))
+                        )
+                next_offset = offset + len(records)
+                result = dict(
+                    format="pharmacophoremt.screening-work-page@1",
+                    run_id=configuration["run_id"],
+                    run_format=configuration["format"],
+                    work_sha256=configuration["work_sha256"],
+                    declared_work=count,
+                    offset=offset,
+                    limit=limit,
+                    next_offset=next_offset if next_offset < count else None,
+                    records=records,
+                )
             elif arguments.to_jsonl is not None:
                 result = receipt = view.to_jsonl(arguments.to_jsonl)
             elif arguments.to_csv is not None:

@@ -10,6 +10,19 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#156 declared-work command](pending_proposals/inspect_declared_work_cli.md)
+adds `--work-items` with bounded pages, default10/positive limit and nonnegative
+offset. It exposes original manifest identities, including staged/never-started
+work, through the existing verified public reader. All69 selected CLI/reader/
+progress/export controls pass, including12 new guards; source formatting
+preserves the tested AST. Page retention is bounded by the selected limit,
+offset traversal is linear and opening still verifies the complete run. No
+molecular/attribution import or collection/parser is added. Strict full docs,
+full Ruff/format, index and three reporting checks pass; the rendered work anchor
+and library-guide link verify. The [source receipt](evidence/work_cli_source_20261108.json)
+retains nine original failures/three passes and the separate HTML-entity checker
+correction. Owned installed receiving remains pending.
+
 [#155 BEDROC numerical correction](archive/bedroc_small_alpha.md) is received
 in source: valid tiny positive alpha retains finite unbiased scores by reusing
 the ROC-AUC limit below float epsilon. Six original failures are preserved;
@@ -157,7 +170,10 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** receive a distinct environment-manager strategy from
+**Next concrete action:** receive the same69 reader/CLI/progress/export bodies
+and documented work-page commands from one exact owned wheel outside checkout,
+then close #156 with its separate identity/limits. Independently receive a
+distinct environment-manager strategy from
 the existing common-tool owner. Source review alone does not justify a blind
 Micromamba upgrade; investigate bounded Conda transaction workers and verify
 actual configuration/runtime before any installation. The

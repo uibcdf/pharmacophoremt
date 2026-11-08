@@ -87,6 +87,11 @@ requirements; this is a method choice, not an automatic choice for every query.
    that view to include earlier confirmations as well as new ones. Exporting an
    existing run does not require another molecular calculation.
 
+Use [paged work inspection](../cookbook/recoverable_prepared_screening.md#inspect-declared-work-in-pages)
+to preview original work/source/occurrence mappings from the terminal, including
+entries without confirmed results. This keeps pending inputs visible when you
+prepare an explicit cohort mapping for later analysis.
+
 The [expert composition](../cookbook/recoverable_prepared_screening.md) uses the
 same plan/context through the public store and resume operations. It retains the
 same effective scientific settings and native evidence as the guided run class;

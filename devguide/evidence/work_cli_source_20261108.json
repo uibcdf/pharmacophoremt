@@ -1,0 +1,111 @@
+{
+  "schema": "pharmacophoremt.work-cli-source@1",
+  "issue": 156,
+  "parent_source": "0465f638dce8e36e9669726ebee34fc984adaf24",
+  "public_contract": "devguide/saved_result_cli.md",
+  "page_format": "pharmacophoremt.screening-work-page@1",
+  "original_controls": {
+    "failed": 9,
+    "passed": 3,
+    "failed_subtests": 3,
+    "log": {
+      "bytes": 3934,
+      "sha256": "8e90f0b86d7cf3ceeddeab7d08612a95140ff69691093ac0d955f3851d257098"
+    }
+  },
+  "selected_cases": 69,
+  "new_cases": 12,
+  "same_original_reader_cli_progress_export_cases": 57,
+  "receptor_complete": true,
+  "junit": {
+    "bytes": 11199,
+    "sha256": "d8ae0c314cd0f0203da33b06d367ae515808cc413ac7a18c2d31edd8ccb066be"
+  },
+  "events": {
+    "bytes": 131624,
+    "sha256": "8c92e36ed4d1450351374272c6b9931d93dac5925a5a6c48bb3d8f904f5a9ac2"
+  },
+  "log": {
+    "bytes": 33,
+    "sha256": "12c7232d5606317754d3c87f0f49277adba214c286983d40cb636682b147b846"
+  },
+  "api_definitions_except_main_ast_unchanged": true,
+  "original_store_digestion_tests_unchanged": true,
+  "format_preserves_complete_tested_ast": true,
+  "runtime_files": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 24273,
+      "sha256": "8f4e4a489142c3bd710212bdf1ac5f0d935aa6eee136da31332beffafbcc941b"
+    },
+    "pharmacophoremt_results/__main__.py": {
+      "bytes": 125,
+      "sha256": "8d3a1a67944d8ca5591dea474ba1aae98429359dbeb649245143bf620dbfb0a5"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 34134,
+      "sha256": "3ab6aaef7eb8cd03b1c8bf1d0524d59581ff3b2679a2dd0c302d98b52101238d"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3339,
+      "sha256": "cb0086d59b76c6f008bf57d13107f34a3cd7d1963e2af43b4fa2376c9b328468"
+    }
+  },
+  "test": {
+    "bytes": 10900,
+    "sha256": "fac5732d10de07447fecd8390d69ddfc7f0c4702cbffa618667a77a14a1e82c2"
+  },
+  "docs": {
+    "strict_full_html": true,
+    "execution": "off",
+    "new_anchor_and_library_link_verified": true,
+    "original_optional_beartype_absence_diagnostics_retained": true,
+    "own_observed_group_peak_rss_bytes": 304386048,
+    "checker_correction": "Valid @ HTML entity was initially treated as a missing literal. Read-only checker corrected to unescape HTML; initial failure retained, rendered bytes unchanged."
+  },
+  "governance": [
+    {
+      "check": "index-generate",
+      "exit_code": 0
+    },
+    {
+      "check": "index-check",
+      "exit_code": 0
+    },
+    {
+      "check": "reporting",
+      "exit_code": 0
+    },
+    {
+      "check": "ruff",
+      "exit_code": 0
+    },
+    {
+      "check": "format",
+      "exit_code": 0
+    },
+    {
+      "check": "whitespace",
+      "exit_code": 0
+    }
+  ],
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "DATA_per_process_bytes": 536870912,
+    "reader_test_AS_per_process_bytes": 536870912,
+    "docs_AS": "unlimited inherited for existing provider mappings",
+    "aggregate_cgroup": false,
+    "reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "source_tests_whole_command_peak_rss_bytes": 56180736
+  },
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "molecular_execution": false,
+  "environment_acquisition": false,
+  "owned_installed_receiving": "pending",
+  "raw_evidence": "build/phmt-work-cli-20261108-1zzg4mwg",
+  "retention_review": "2026-11-22",
+  "limits": "Bounded terminal preview, linear offset traversal and existing complete opening/configuration costs; not general collection/connector or scale, biological, full-source exact-head, supported public installed/platform or release qualification. Changed producer code may require fresh linked scientific runs for reexecution; original independent reading remains valid."
+}

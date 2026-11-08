@@ -10,6 +10,32 @@ attempts, the test-layout correction and the incomplete administrative attempt.
 
 ## User contract
 
+The declared-work increment [#156](https://github.com/uibcdf/pharmacophoremt/issues/156)
+adds mutually exclusive `--work-items`, default limit10, positive `--limit` and
+nonnegative `--offset`. It composes the verified public `work_items()` iterator:
+no collection/parser, new dependency or molecular/attribution import is needed.
+The response format is `pharmacophoremt.screening-work-page@1`, with original
+run_id/run_format/work_sha256, declared_work, offset/limit, nullable next_offset
+and unchanged original-order records. Staged and never-started work are included.
+The verified immutable work_count determines continuation without lookahead;
+the selected iterator closes before its view. An empty/beyond-end page has no
+next_offset. Arbitrary-precision positive limits/nonnegative offsets are clamped
+to the declared count before passing the window to `islice`.
+
+`--offset` applies only to work inspection; summary/export/scoring conflicts and
+invalid windows refuse before database I/O. Existing ranked zero/default limits,
+summary and exports retain their behavior. Opening performs the same complete
+admission, even outside the selected page. Retained memory is proportional to
+the selected page (and identity-string sizes), offset traversal is linear, and
+configuration detachment/complete opening retain their existing costs. This
+does not establish scale or add full manifest export. Only declared mappings
+are shown, without per-item status or query/context/native payload. Argument,
+storage, iteration and close failures preserve the no-success-JSON contract.
+Minimal checksums/IDs express consistency, not authenticated chemical identity.
+See the [public recipe](../docs/content/cookbook/recoverable_prepared_screening.md#inspect-declared-work-in-pages)
+and [prospective plan](evidence/work_cli_plan_20261108.json); source/installed
+receiving for this increment is separate from historical exporter evidence below.
+
 The later [progress increment](saved_run_progress.md) adds `--summary` through
 `ScreeningRunView.progress()`, independently of the explicit ranking criterion.
 Its own source/installed receipt retains that increment's producer and scope.
