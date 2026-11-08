@@ -1,0 +1,84 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-native-qualification-plan@1",
+  "parent_source": "ff8344d4189f8470baae54fb17b2830103dbf872",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": 148,
+  "scope": "One manually dispatched hosted Linux job: SDK-owned bounded acquisition, then all87original public-fixture native guards; no private-input pilot, measured arm, timing schedule or general executor.",
+  "workflow": {
+    "path": ".github/workflows/feature_reuse_native_qualification.yaml",
+    "bytes": 6401,
+    "sha256": "f75a530b2333de4026574ff9f3b2e804060cf35891561e66c30227ad196c76ad"
+  },
+  "client": {
+    "path": "devtools/feature_reuse_native_qualification.py",
+    "bytes": 17827,
+    "sha256": "eb33582930913e28a678b79ea9099e8eb9af89417886f81ac7cd8da40148e724"
+  },
+  "acquisition": {
+    "manager_action": "mamba-org/setup-micromamba@4b9113af4fba0e9e1124b252dd6497a419e7396d",
+    "manager_release": "1.5.10-0",
+    "manager_binary_version": "1.5.10",
+    "sdk_revision": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "environment": "devtools/conda-envs/test_env_py314.yaml",
+    "source_manifest": "devtools/requirements/controlled_suite_dependencies_py314.txt",
+    "source_manifest_identity": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "channel_policy": "configured, strict priority; no exclusive-channel or public-installed qualification inferred"
+  },
+  "limits": {
+    "bootstrap": {
+      "memory_bytes": 2147483648,
+      "swap_bytes": 0,
+      "tasks": 64,
+      "cpus": 1,
+      "quota_percent": 100,
+      "lifetime_seconds": 1800
+    },
+    "native": {
+      "memory_bytes": 536870912,
+      "swap_bytes": 0,
+      "tasks": 32,
+      "cpus": 1,
+      "quota_percent": 100,
+      "lifetime_seconds": 180
+    },
+    "both": {
+      "threads": 1,
+      "nice": 19,
+      "io": "idle",
+      "DATA_AS": "Unlimited mapping limits within the aggregate cgroup cap",
+      "reserve_fraction": 0.2,
+      "supervisor_margin_bytes": 1610612736,
+      "sampling_seconds": 5,
+      "significant_psi_avg10_percent": 1,
+      "intense_swap_pages_per_interval": 65536,
+      "stop_only_owned_command_descendants": true,
+      "resource_capacity_reserved": false
+    }
+  },
+  "original_native_selectors": [
+    "tests/test_feature_reuse_experiment.py",
+    "tests/test_modular_rigid_tools.py",
+    "tests/test_correspondence_geometry.py"
+  ],
+  "required_native_counts": {
+    "tests": 87,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0
+  },
+  "required_native_memory_limit_events": 0,
+  "ordinary_checkout": "Existing public repository fixtures included; none of the three original benchmark snapshots is submitted.",
+  "scientific_plan_identity": {
+    "bytes": 31954,
+    "sha256": "50626f60e5bf74205326f8368ed837f67648c4ac869807a09daa8f31a59805e1"
+  },
+  "dispatch": "Main must equal reviewed frozen producer; complete exact-head workflow inventory before one-time request. Uncertain response means observe, never automatic redispatch.",
+  "retention_review": "2026-11-22",
+  "native_qualification_received": false
+}

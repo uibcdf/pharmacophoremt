@@ -46,15 +46,24 @@ def historical_exclusions():
     for key, data in payloads.items():
         if hashlib.sha256(data).hexdigest() != manifest[key]["sha256"]:
             raise ValueError("historical source bytes changed")
+    bath_count, bath_ids = 0, set()
     with tarfile.open(fileobj=io.BytesIO(payloads["source"])) as bath:
-        bath_rows = list(
-            csv.DictReader(
-                io.TextIOWrapper(bath.extractfile("ESR1ago/ESR1ago_data_full.csv"))
-            )
-        )
-    assay_rows = list(csv.DictReader(io.StringIO(payloads["assay"].decode())))
-    bath_ids = {r["PUBCHEM_CID"] for r in bath_rows if r["PUBCHEM_CID"]}
-    assay_ids = {r["CID"] for r in assay_rows if r["CID"]}
+        with io.TextIOWrapper(
+            bath.extractfile("ESR1ago/ESR1ago_data_full.csv")
+        ) as stream:
+            for row in csv.DictReader(stream):
+                bath_count += 1
+                if row["PUBCHEM_CID"]:
+                    bath_ids.add(row["PUBCHEM_CID"])
+    assay_count, assay_ids, unresolved = 0, set(), []
+    for index, row in enumerate(
+        csv.DictReader(io.StringIO(payloads["assay"].decode()))
+    ):
+        assay_count += 1
+        if row["CID"]:
+            assay_ids.add(row["CID"])
+        else:
+            unresolved.append({"row_index": index, "sid": row["SID"]})
     cids = bath_ids | assay_ids
     if any(not cid.isdecimal() or int(cid) < 1 for cid in cids):
         raise ValueError("historical source has an unsupported nonempty CID")
@@ -88,16 +97,12 @@ def historical_exclusions():
             **identity(snapshot_path),
         },
         "source_archive": summary["full_evidence"],
-        "bath_rows": len(bath_rows),
+        "bath_rows": bath_count,
         "bath_distinct_cids": len(bath_ids),
-        "assay_rows": len(assay_rows),
+        "assay_rows": assay_count,
         "assay_distinct_valid_cids": len(assay_ids),
-        "assay_blank_cid_rows": sum(not r["CID"] for r in assay_rows),
-        "unresolved_source_rows": [
-            {"row_index": index, "sid": row["SID"]}
-            for index, row in enumerate(assay_rows)
-            if not row["CID"]
-        ],
+        "assay_blank_cid_rows": len(unresolved),
+        "unresolved_source_rows": unresolved,
         "n_excluded_cids": len(cids),
         "cids": sorted(cids, key=int),
         "prior_requests": prior,

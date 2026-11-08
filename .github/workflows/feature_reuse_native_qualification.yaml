@@ -1,0 +1,116 @@
+name: Feature-reuse native qualification
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: feature-reuse-native-qualification-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  native:
+    if: github.repository == 'uibcdf/pharmacophoremt' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      PHMT148_NATIVE_CLIENT_SHA256: eb33582930913e28a678b79ea9099e8eb9af89417886f81ac7cd8da40148e724
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Check out the reviewed dependency SDK
+        uses: actions/checkout@v4
+        with:
+          repository: uibcdf/molsyssuite
+          ref: 1c248b67d1daea256ed7c7f6172c6addb3f0b08f
+          path: .molsyssuite
+          persist-credentials: false
+      - name: Install only the reviewed manager binary
+        uses: mamba-org/setup-micromamba@4b9113af4fba0e9e1124b252dd6497a419e7396d
+        with:
+          micromamba-version: '1.5.10-0'
+          micromamba-root-path: ${{ runner.temp }}/phmt148-native-mamba
+          micromamba-binary-path: ${{ runner.temp }}/phmt148-native-bin/micromamba
+          init-shell: none
+          generate-run-shell: false
+          cache-downloads: false
+          cache-environment: false
+          post-cleanup: all
+      - name: Prepare the pinned environment inside its own bounded service
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          test -f /sys/fs/cgroup/cgroup.controllers
+          phmt_native_output=$(mktemp -d "$RUNNER_TEMP/phmt148-native.XXXXXX")
+          phmt_native_python=$(command -v python)
+          phmt_native_cpu=$(python -I -S -B -c 'import os; print(max(os.sched_getaffinity(0)))')
+          phmt_native_uid=$(id -u)
+          phmt_native_gid=$(id -g)
+          phmt_native_unit="phmt148-bootstrap-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.service"
+          phmt_native_name="phmt148-native-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+          test "$phmt_native_uid" -ne 0
+          printf 'PHMT148_OUTPUT=%s\n' "$phmt_native_output" >> "$GITHUB_ENV"
+          printf 'PHMT148_CPU=%s\n' "$phmt_native_cpu" >> "$GITHUB_ENV"
+          sudo -n systemd-run --wait --pipe --collect --service-type=exec \
+            --unit="$phmt_native_unit" --uid="$phmt_native_uid" --gid="$phmt_native_gid" \
+            --working-directory="$GITHUB_WORKSPACE" \
+            --property=MemoryMax=2147483648 --property=MemorySwapMax=0 \
+            --property=MemoryOOMGroup=yes --property=OOMPolicy=stop \
+            --property=TasksMax=64 --property=CPUQuota=100% \
+            --property="AllowedCPUs=$phmt_native_cpu" --property="CPUAffinity=$phmt_native_cpu" \
+            --property=Nice=19 --property=IOSchedulingClass=idle \
+            --property=RuntimeMaxSec=1800s --property=TimeoutStopSec=5s \
+            --setenv="PATH=$PATH" --setenv="RUNNER_TEMP=$RUNNER_TEMP" \
+            --setenv="RUNNER_ENVIRONMENT=$RUNNER_ENVIRONMENT" \
+            --setenv="PHMT148_NATIVE_CLIENT_SHA256=$PHMT148_NATIVE_CLIENT_SHA256" \
+            --setenv="GITHUB_RUN_ID=$GITHUB_RUN_ID" --setenv="GITHUB_RUN_ATTEMPT=$GITHUB_RUN_ATTEMPT" \
+            --setenv="MAMBA_ROOT_PREFIX=$RUNNER_TEMP/phmt148-native-mamba" \
+            --setenv=MAMBA_ALWAYS_YES=true --setenv=CONDA_ALWAYS_YES=true \
+            --setenv=PYTHONDONTWRITEBYTECODE=1 \
+            --setenv=OMP_NUM_THREADS=1 --setenv=OPENBLAS_NUM_THREADS=1 \
+            --setenv=MKL_NUM_THREADS=1 --setenv=NUMEXPR_NUM_THREADS=1 \
+            --setenv=VECLIB_MAXIMUM_THREADS=1 --setenv=RAYON_NUM_THREADS=1 \
+            --setenv=NUMBA_NUM_THREADS=1 --setenv=BLIS_NUM_THREADS=1 \
+            --setenv=GOMAXPROCS=1 --setenv=CARGO_BUILD_JOBS=1 \
+            "$phmt_native_python" -B devtools/feature_reuse_native_qualification.py bootstrap \
+            --output "$phmt_native_output" --unit "$phmt_native_unit" --cpu "$phmt_native_cpu" \
+            --uid "$phmt_native_uid" --gid "$phmt_native_gid" \
+            --manager "$RUNNER_TEMP/phmt148-native-bin/micromamba" --name "$phmt_native_name"
+      - name: Qualify the original native fixtures inside 512MiB
+        shell: bash
+        run: |
+          set -euo pipefail
+          phmt_native_python=$(python -I -S -B -c 'import json,os; from pathlib import Path; print(json.loads((Path(os.environ["PHMT148_OUTPUT"])/"prefix.json").read_text())["python"])')
+          phmt_native_uid=$(id -u)
+          phmt_native_gid=$(id -g)
+          phmt_native_unit="phmt148-probe-native-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.service"
+          sudo -n systemd-run --wait --pipe --collect --service-type=exec \
+            --unit="$phmt_native_unit" --uid="$phmt_native_uid" --gid="$phmt_native_gid" \
+            --working-directory="$GITHUB_WORKSPACE" \
+            --property=MemoryMax=536870912 --property=MemorySwapMax=0 \
+            --property=MemoryOOMGroup=yes --property=OOMPolicy=stop \
+            --property=TasksMax=32 --property=CPUQuota=100% \
+            --property="AllowedCPUs=$PHMT148_CPU" --property="CPUAffinity=$PHMT148_CPU" \
+            --property=Nice=19 --property=IOSchedulingClass=idle \
+            --property=RuntimeMaxSec=180s --property=TimeoutStopSec=5s \
+            --setenv="PATH=$PATH" --setenv="PYTHONPATH=$GITHUB_WORKSPACE" \
+            --setenv="RUNNER_TEMP=$RUNNER_TEMP" --setenv="RUNNER_ENVIRONMENT=$RUNNER_ENVIRONMENT" \
+            --setenv="PHMT148_NATIVE_CLIENT_SHA256=$PHMT148_NATIVE_CLIENT_SHA256" \
+            --setenv="GITHUB_RUN_ID=$GITHUB_RUN_ID" --setenv="GITHUB_RUN_ATTEMPT=$GITHUB_RUN_ATTEMPT" \
+            --setenv=PYTHONDONTWRITEBYTECODE=1 \
+            --setenv=OMP_NUM_THREADS=1 --setenv=OPENBLAS_NUM_THREADS=1 \
+            --setenv=MKL_NUM_THREADS=1 --setenv=NUMEXPR_NUM_THREADS=1 \
+            --setenv=VECLIB_MAXIMUM_THREADS=1 --setenv=RAYON_NUM_THREADS=1 \
+            --setenv=NUMBA_NUM_THREADS=1 --setenv=BLIS_NUM_THREADS=1 \
+            --setenv=GOMAXPROCS=1 --setenv=CARGO_BUILD_JOBS=1 \
+            "$phmt_native_python" -B devtools/feature_reuse_native_qualification.py native \
+            --output "$PHMT148_OUTPUT" --unit "$phmt_native_unit" --cpu "$PHMT148_CPU" \
+            --uid "$phmt_native_uid" --gid "$phmt_native_gid"

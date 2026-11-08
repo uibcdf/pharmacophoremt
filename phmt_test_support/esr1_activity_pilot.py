@@ -100,7 +100,10 @@ def frozen_cohort(rows):
     for row in rows:
         label, cid = row["PUBCHEM_ACTIVITY_OUTCOME"], row["PUBCHEM_CID"]
         if label in groups:
-            groups[label].setdefault(cid, row)
+            selected_fields = (
+                {"PUBCHEM_SID": row["PUBCHEM_SID"]} if "PUBCHEM_SID" in row else {}
+            )
+            groups[label].setdefault(cid, selected_fields)
     # Different assayed substances can map to one compound with opposite
     # outcomes. Exclude every such CID, rather than resolve biology by row order.
     ambiguous = groups["Active"].keys() & groups["Inactive"].keys()
@@ -131,6 +134,34 @@ def frozen_cohort(rows):
     return cohort
 
 
+def _source_cohort_with_population(rows):
+    outcomes = Counter()
+    ambiguous_rows = []
+
+    def observed_rows():
+        for row in rows:
+            outcomes[row["PUBCHEM_ACTIVITY_OUTCOME"]] += 1
+            if row["PUBCHEM_CID"] in {"17113", "6128", "5361202", "2662"}:
+                ambiguous_rows.append(
+                    {
+                        key: row[key]
+                        for key in (
+                            "PUBCHEM_CID",
+                            "PUBCHEM_SID",
+                            "PUBCHEM_ACTIVITY_OUTCOME",
+                        )
+                    }
+                )
+            yield row
+
+    cohort = frozen_cohort(observed_rows())
+    return (
+        cohort,
+        {"rows": sum(outcomes.values()), "outcomes": dict(outcomes)},
+        ambiguous_rows,
+    )
+
+
 def fetch(url, path):
     if not path.exists():
         request = urllib.request.Request(
@@ -154,8 +185,10 @@ def acquire(directory, manifest_path):
         raise ValueError("Bath source changed")
     with tarfile.open(fileobj=io.BytesIO(bath)) as archive:
         with archive.extractfile("ESR1ago/ESR1ago_data_full.csv") as stream:
-            rows = list(csv.DictReader(io.TextIOWrapper(stream)))
-    cohort = frozen_cohort(rows)  # fixed before any structure or score is inspected
+            cohort, population, ambiguous_rows = _source_cohort_with_population(
+                csv.DictReader(io.TextIOWrapper(stream))
+            )
+    # The complete source is consumed before any structure or score is inspected.
     assay_path = directory / "aid743075_concise.csv"
     assay = list(csv.DictReader(io.StringIO(fetch(ASSAY_URL, assay_path).decode())))
     description_path = directory / "aid743075_description.json"
@@ -195,23 +228,13 @@ def acquire(directory, manifest_path):
             license_url="https://researchdata.bath.ac.uk/1496/",
             **identity(bath_path),
         ),
-        source_population=dict(
-            rows=len(rows),
-            outcomes=dict(Counter(r["PUBCHEM_ACTIVITY_OUTCOME"] for r in rows)),
-        ),
+        source_population=population,
         assay=dict(aid=743075, url=ASSAY_URL, **identity(assay_path)),
         assay_description=dict(url=DESCRIPTION_URL, **identity(description_path)),
         selection=dict(
             hash_prefix=PREFIX,
             rule="exclude every CID with contradictory source outcomes; unique CID; hash-order first active reference, remaining 7 actives and first 24 inactives held out; no replacement",
-            ambiguous_source_rows=[
-                {
-                    k: r[k]
-                    for k in ("PUBCHEM_CID", "PUBCHEM_SID", "PUBCHEM_ACTIVITY_OUTCOME")
-                }
-                for r in rows
-                if r["PUBCHEM_CID"] in {"17113", "6128", "5361202", "2662"}
-            ],
+            ambiguous_source_rows=ambiguous_rows,
         ),
         structure_policy="one published PubChem computed 3D conformer; supplied state; no generation, pH adjustment or receptor placement",
         redistribution="URLs, hashes and attributed selected labels only; source archive and SDF files are not redistributed",

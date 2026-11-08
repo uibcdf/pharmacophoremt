@@ -47,6 +47,14 @@ smoke at9a0ed14/run42453432613/attempt1. It has no native or performance result.
 Native provider/input context, authorized exact-input delivery, shared arm and
 declared pilot remain prerequisites for timing; local failures are preserved.
 
+The next [native fixture admission route](feature_reuse_measurement.md#native-fixture-admission-prepared-2026-11-08-utc)
+is now prepared with the same scientific pins and common SDK, explicitly bounded
+acquisition/native phases and all87original public-fixture guards. Local154case
+administrative receiving also fixes the observed route inventory and wide-CSV
+metadata memory defects, retaining full archived semantics and original failures.
+Actual native receiving, measured arm and the private-input pilot remain separate;
+SQLite connection lifetime warnings are tracked; their allocation owner is still unknown.
+
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public
 API/examples, appropriate scientific or technical evidence, checked installation,

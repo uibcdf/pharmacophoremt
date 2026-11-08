@@ -399,13 +399,62 @@ class TestDistributionContract(unittest.TestCase):
     def test_all_routes_source_roles_and_contexts_use_the_shared_preflight(self):
         result = self.routes.audit(self.root)
         self.assertEqual(result["qualification"], "declared-only")
-        self.assertEqual(len(result["routes"]), 18)
+        self.assertEqual(len(result["routes"]), 20)
         self.assertEqual(len(result["contexts"]), 8)
         self.assertEqual(len(result["source_routes"]), 14)
         integrations = {
             s["name"] for s in result["source_routes"] if s["role"] == "integration"
         }
         self.assertEqual(integrations, {"ackredit", "molsysviewer"})
+
+    def test_feature_reuse_workflows_have_reviewed_dependency_routes(self):
+        result = self.routes.audit(self.root)
+        records = {r["path"]: r for r in result["routes"]}
+        for name in (
+            "feature_reuse_resource_probe.yaml",
+            "feature_reuse_native_qualification.yaml",
+        ):
+            path = ".github/workflows/" + name
+            self.assertEqual(records[path]["kind"], "reviewed-workflow")
+            self.assertEqual(
+                records[path]["sha256"],
+                hashlib.sha256((ROOT / path).read_bytes()).hexdigest(),
+            )
+        workflow = yaml.load(
+            (
+                ROOT / ".github/workflows/feature_reuse_native_qualification.yaml"
+            ).read_text(),
+            Loader=yaml.BaseLoader,
+        )
+        self.assertEqual(
+            workflow["jobs"]["native"]["env"]["PHMT148_NATIVE_CLIENT_SHA256"],
+            hashlib.sha256(
+                (ROOT / "devtools/feature_reuse_native_qualification.py").read_bytes()
+            ).hexdigest(),
+        )
+        for missing in (
+            "feature_reuse_resource_probe.yaml",
+            "feature_reuse_native_qualification.yaml",
+        ):
+            inventory = (self.root / "devtools/dependency_routes.toml").read_text()
+            block = next(
+                b
+                for b in inventory.split("[[workflows]]")
+                if f'path = ".github/workflows/{missing}"' in b
+            )
+            with self.subTest(missing=missing):
+                (self.root / "devtools/dependency_routes.toml").write_text(
+                    inventory.replace("[[workflows]]" + block, "")
+                )
+                try:
+                    with self.assertRaisesRegex(
+                        ValueError, "unclassified/missing routes"
+                    ):
+                        self.routes.audit(self.root)
+                finally:
+                    (self.root / "devtools/dependency_routes.toml").write_text(
+                        inventory
+                    )
 
     def test_missing_public_dependency_cannot_hide_behind_fixed_scientific_sources(
         self,

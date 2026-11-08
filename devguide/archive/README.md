@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (92)
+### Resolved (94)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
@@ -25,6 +25,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`documentation_reader_entry_points.md`](documentation_reader_entry_points.md) — [#61](https://github.com/uibcdf/pharmacophoremt/issues/61) — Build reader-oriented documentation entry points around delivered native workflows. *(resolved, measured)*
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
+- [`feature_reuse_route_inventory.md`](feature_reuse_route_inventory.md) — [#151](https://github.com/uibcdf/pharmacophoremt/issues/151) — Register the resource and native qualification workflows without bypassing dependency-route review. *(resolved, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(resolved, measured)*
 - [`inspect_prepared_run_plans.md`](inspect_prepared_run_plans.md) — [#150](https://github.com/uibcdf/pharmacophoremt/issues/150) — Expose detached prepared-run descriptions and bounded console inspection without query payloads. *(resolved, measured)*
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
@@ -92,6 +93,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`retrospective_metric_key_collision.md`](retrospective_metric_key_collision.md) — [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) — Retrospective EF settings must not overwrite colliding reported metric keys. *(resolved, measured)*
 - [`reuse_saved_progress.md`](reuse_saved_progress.md) — [#145](https://github.com/uibcdf/pharmacophoremt/issues/145) — Reuse verified criterion-independent counts within one immutable saved view. *(resolved, reproduced)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
+- [`stream_historical_esr1_metadata.md`](stream_historical_esr1_metadata.md) — [#152](https://github.com/uibcdf/pharmacophoremt/issues/152) — Stream complete historical ESR1 CSVs while preserving frozen cohort and exclusion semantics. *(resolved, measured)*
 - [`summarize_saved_screening_run.md`](summarize_saved_screening_run.md) — [#146](https://github.com/uibcdf/pharmacophoremt/issues/146) — Analyze labelled cohorts directly from verified saved screening work. *(resolved, reproduced)*
 - [`translated_coincident_feature_centers.md`](translated_coincident_feature_centers.md) — [#31](https://github.com/uibcdf/pharmacophoremt/issues/31) — Centroid roundoff admitted co-located feature centers as non-collinear rigid anchors. *(resolved, measured)*
 - [`tyr_cardinality.md`](tyr_cardinality.md) — [#91](https://github.com/uibcdf/pharmacophoremt/issues/91) — Qualify native dual-donor N/O receptor constraints on prepared TYR regions. *(resolved, measured)*

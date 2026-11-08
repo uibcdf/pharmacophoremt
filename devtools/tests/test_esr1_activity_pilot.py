@@ -12,6 +12,7 @@ import math
 import tarfile
 import tempfile
 import unittest
+import weakref
 from collections import Counter
 from pathlib import Path
 from unittest.mock import patch
@@ -31,6 +32,101 @@ read_archived_evidence = _reader.read_archived_evidence
 
 
 class TestEsr1ActivityPilot(unittest.TestCase):
+    def test_streamed_cohort_preserves_first_sid_order_and_ambiguous_exclusion(self):
+        spec = importlib.util.spec_from_file_location(
+            "esr1_streamed_cohort", ROOT / "phmt_test_support/esr1_activity_pilot.py"
+        )
+        driver = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(driver)
+        records = [
+            {
+                "PUBCHEM_CID": str(cid),
+                "PUBCHEM_SID": f"first-{cid}",
+                "PUBCHEM_ACTIVITY_OUTCOME": "Active" if cid < 100 else "Inactive",
+            }
+            for cid in [*range(1, 9), *range(100, 124)]
+        ]
+        records.extend(
+            [
+                {
+                    "PUBCHEM_CID": "1",
+                    "PUBCHEM_SID": "later-1",
+                    "PUBCHEM_ACTIVITY_OUTCOME": "Active",
+                },
+                {
+                    "PUBCHEM_CID": "999",
+                    "PUBCHEM_SID": "ambiguous-active",
+                    "PUBCHEM_ACTIVITY_OUTCOME": "Active",
+                },
+                {
+                    "PUBCHEM_CID": "999",
+                    "PUBCHEM_SID": "ambiguous-inactive",
+                    "PUBCHEM_ACTIVITY_OUTCOME": "Inactive",
+                },
+            ]
+        )
+
+        def reused_mapping():
+            current = {}
+            for record in records:
+                current.clear()
+                current.update(record)
+                yield current
+
+        observed = driver.frozen_cohort(reused_mapping())
+        ordered = [
+            *sorted(
+                map(str, range(1, 9)),
+                key=lambda cid: hashlib.sha256(
+                    (driver.PREFIX + cid).encode()
+                ).hexdigest(),
+            ),
+            *sorted(
+                map(str, range(100, 124)),
+                key=lambda cid: hashlib.sha256(
+                    (driver.PREFIX + cid).encode()
+                ).hexdigest(),
+            ),
+        ]
+        self.assertEqual([row["cid"] for row in observed], ordered)
+        self.assertEqual(
+            [row["sid"] for row in observed], [f"first-{cid}" for cid in ordered]
+        )
+        self.assertEqual([row["label"] for row in observed], [1] * 8 + [0] * 24)
+        self.assertEqual(
+            [row["role"] for row in observed], ["reference"] + ["held_out"] * 31
+        )
+        self.assertNotIn("999", {row["cid"] for row in observed})
+
+    def test_streamed_cohort_does_not_retain_unused_wide_row_payloads(self):
+        spec = importlib.util.spec_from_file_location(
+            "esr1_streamed_payload", ROOT / "phmt_test_support/esr1_activity_pilot.py"
+        )
+        driver = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(driver)
+
+        class UnusedPayload:
+            pass
+
+        alive = weakref.WeakSet()
+        peaks = []
+
+        def rows():
+            for cid in [*range(1, 9), *range(100, 124)]:
+                payload = UnusedPayload()
+                alive.add(payload)
+                peaks.append(len(alive))
+                yield {
+                    "PUBCHEM_CID": str(cid),
+                    "PUBCHEM_SID": str(cid),
+                    "PUBCHEM_ACTIVITY_OUTCOME": "Active" if cid < 100 else "Inactive",
+                    "irrelevant_wide_fields": payload,
+                }
+
+        self.assertEqual(len(driver.frozen_cohort(rows())), 32)
+        self.assertLessEqual(max(peaks), 2)
+        self.assertEqual(len(alive), 0)
+
     def test_original_inputs_restore_offline_with_source_labels_and_failures(self):
         spec = importlib.util.spec_from_file_location(
             "esr1_snapshot_driver", ROOT / "phmt_test_support/esr1_activity_pilot.py"
@@ -51,8 +147,15 @@ class TestEsr1ActivityPilot(unittest.TestCase):
             self.assertEqual(len(list(target.iterdir())), 36)
             with tarfile.open(target / "ESR1ago.tar.gz") as archive:
                 with archive.extractfile("ESR1ago/ESR1ago_data_full.csv") as stream:
-                    rows = list(csv.DictReader(io.TextIOWrapper(stream)))
-            selected = driver.frozen_cohort(rows)
+                    selected, population, ambiguous_rows = (
+                        driver._source_cohort_with_population(
+                            csv.DictReader(io.TextIOWrapper(stream))
+                        )
+                    )
+            self.assertEqual(population, manifest["source_population"])
+            self.assertEqual(
+                ambiguous_rows, manifest["selection"]["ambiguous_source_rows"]
+            )
             self.assertEqual(
                 [(r["cid"], r["sid"], r["label"], r["role"]) for r in selected],
                 [

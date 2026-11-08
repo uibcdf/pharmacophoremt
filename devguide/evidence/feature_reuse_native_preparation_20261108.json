@@ -1,0 +1,68 @@
+{
+  "schema": "pharmacophoremt.native-qualification-preparation@1",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    148,
+    151,
+    152
+  ],
+  "native_execution": false,
+  "initial_administration": {
+    "cases": 150,
+    "failures": 2,
+    "errors": 5,
+    "route_errors": 2,
+    "memory_errors": 3,
+    "raw_tail": "logs/admin-initial-final.log"
+  },
+  "completed_administration": {
+    "cases": 154,
+    "failures": 0,
+    "errors": 0,
+    "whole_command_peak_child_rss_bytes": 242102272,
+    "DATA_bytes": 536870912,
+    "original_resource_warnings": "SQLite warnings retained; separately reported, creator unknown"
+  },
+  "streamed_metadata": {
+    "focused_cases": 5,
+    "includes_three_original_memory_failures": true,
+    "whole_command_peak_child_rss_bytes": 122654720,
+    "all_archived_cohort_exclusions_population_and_ambiguity_preserved": true,
+    "source_rows": 4410,
+    "assay_rows": 10486,
+    "excluded_distinct_cids": 8099,
+    "unresolved_assay_rows": 149,
+    "no_new_network_molecule_or_score": true
+  },
+  "routes": {
+    "total": 20,
+    "old_workflow_registration_omission_fixed": true,
+    "native_client_bound_to_caller_hash": true,
+    "existing_scientific_pins_and_CI_unchanged": true
+  },
+  "guards": {
+    "native_offline": 16,
+    "new_streaming": 2,
+    "new_route": 1,
+    "do_not_sum_repeated_checks": true
+  },
+  "ruff": {
+    "check": true,
+    "format_files": 430
+  },
+  "reporting_closeout": {
+    "cases": 3,
+    "failures": 0,
+    "index_generation_and_check": true,
+    "original_expected_issue_inventory_failure_retained": true,
+    "correction": "Register the three new issue-backed reports in the existing explicit expected inventory; do not weaken report validation."
+  },
+  "original_failures": "Full150case failures and intermediate acquisition-stat F821 are preserved locally. Final enhanced original-source guard verifies population and ambiguity, without executing acquisition.",
+  "raw_evidence": "build/phmt-native-reuse-qualification-20261108-md_ysaii",
+  "retention_review": "2026-11-22",
+  "whole_goal": "active",
+  "limits": "No actual hosted native receiving, benchmark, pilot, public installation, biological or release qualification; retain original DATA/OpenMM failure and three private snapshots."
+}

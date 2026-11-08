@@ -329,3 +329,13 @@ reason = "Existing Python 3.12 documentation source-free route; effective strict
 path = ".github/workflows/test_installed_conda_package.yaml"
 sha256 = "d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0"
 reason = "Reviewed source, policy or exact-candidate publication route; actual command changes require new review"
+
+[[workflows]]
+path = ".github/workflows/feature_reuse_resource_probe.yaml"
+sha256 = "f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0"
+reason = "Reviewed #151 correction: standard OS controls and fixed24MiB smoke only; no scientific dependency acquisition, molecular payload or publication route. Original9a0ed14/42453432613 scope is preserved."
+
+[[workflows]]
+path = ".github/workflows/feature_reuse_native_qualification.yaml"
+sha256 = "f75a530b2333de4026574ff9f3b2e804060cf35891561e66c30227ad196c76ad"
+reason = "Reviewed #148/#151 fixed native admission: immutable manager/SDK, existing ci-3.14 environment and seven source pins; bootstrap2GiB separate from native512MiB/87public-fixture guards. The caller binds the private client hash; no private-input pilot, package publication or generic executor."

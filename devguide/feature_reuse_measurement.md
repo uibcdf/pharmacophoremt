@@ -117,6 +117,39 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### Native fixture admission prepared, 2026-11-08 UTC
+
+The fixed [manual workflow](../.github/workflows/feature_reuse_native_qualification.yaml)
+and unshipped [receiving client](../devtools/feature_reuse_native_qualification.py)
+now implement the next boundary: acquire the existing ci-3.14 environment with
+the pinned common SDK/source inputs, then execute all87original public-fixture
+guards inside a new verified512MiB/zero-swap/32-task/one-CPU service. Its
+[prospective plan](evidence/feature_reuse_native_qualification_plan_20261108.json)
+keeps acquisition separate at2GiB/64tasks/oneCPU, with finite30minute versus
+180second lifetimes. Both use low priorities, one backend/build thread, actual
+kernel checks and five-second own-work monitoring. Pressure stops only owned
+descendants. This is fixed case orchestration using standard OS tools, not an
+arbitrary-command executor or a PHMT infrastructure API.
+
+The reviewed Micromamba action installs only its1.5.10-0binary. The existing
+MolSysSuite environment helper owns creation; configured strict channels are
+separate from unsupported exclusive-channel qualification. The same seven Git
+pins and SDK1c248b6 remain. Actual prefix/context/pip checks precede the native
+phase, whose worker reuses the exact original OS probe, verifies installed native
+artifact/source bindings and requires87passed/zero skipped or failed cases.
+No original benchmark snapshot is submitted; ordinary public checkout retains
+its existing fixtures. The measured arm, private-input pilot and timing remain
+unimplemented/unexecuted by this preparation.
+
+The [local receipt](evidence/feature_reuse_native_preparation_20261108.json)
+retains154passing administrative cases,16offline admission guards within that
+suite, full Ruff430/index/declaration checks and original failures. It resolves
+the route-inventory omission#151 and wide-CSV memory defect#152 without increasing
+the local512MiB limit, reducing data or changing scientific definitions. Source
+cohort/exclusion/population/ambiguity metadata remain exactly archived. SQLite
+warnings remain open under#153. Actual hosted native receiving is still pending;
+neither local controls nor the earlier OS smoke qualify it.
+
 ### Hosted scope probe, declared 2026-11-08 UTC
 
 The [prospective recovery declaration](https://github.com/uibcdf/pharmacophoremt/issues/148#issuecomment-6717982897)

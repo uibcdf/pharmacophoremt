@@ -23,6 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [native fixture admission](feature_reuse_measurement.md#native-fixture-admission-prepared-2026-11-08-utc)
+is implemented as a fixed manual workflow/common-SDK client, with2GiB acquisition
+separate from512MiB native87-case scope. Local154administrative cases/16admission
+guards pass; actual hosted native execution remains pending. #151workflow
+classification and#152complete-CSV memory defects are resolved without data or
+budget changes; original failures and#153SQLite warnings remain visible. No
+measured arm, original-input pilot or molecular performance is inferred.
+
 2026-11-08: [#148 hosted scope qualification](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
 receives exact9a0ed14/run42453432613/attempt1 using standard systemd controls in
 one managed VM. The fixed512MiB/zero-swap/32-task/one-CPU kernel limits, actual

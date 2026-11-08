@@ -10,6 +10,18 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [native fixture qualification route](feature_reuse_measurement.md#native-fixture-admission-prepared-2026-11-08-utc)
+is prepared, not yet executed: a manual-only fixed client uses the common SDK
+and existing pins, separates 2GiB acquisition from 512MiB native 87-case receiving,
+and verifies kernel bounds/source/native identities. Local 154 administrative
+cases, including 16 new admission controls, and three reporting cases pass.
+Source reporting resolves #151
+(two unclassified workflows) and #152 (wide historical CSV materialization): all
+original rows/cohort/exclusions/population/ambiguity are preserved within the
+unchanged 512MiB local limit. Original 150-case failure/F821 remain retained;
+unclosed SQLite warnings are separately tracked under #153. Native timing,
+private-input transfer, biological and full public-delivery gates stay open.
+
 [#150 prepared-plan inspection](archive/inspect_prepared_run_plans.md)
 is implemented in source. `PreparedRunPlan.describe()` returns exact query
 size/hash and detached complete captured context; console repr omits payloads.
@@ -107,9 +119,9 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** qualify the existing87native feature-reuse controls
-using public repository fixtures inside a newly verified512MiB scope, with pinned
-bootstrap/provider provenance, before implementing the measured shared arm.
+**Next concrete action:** dispatch the prepared native fixture qualification once
+at its reviewed exact source, then receive all87cases and actual resource/context
+evidence before implementing the measured shared arm.
 The three original benchmark snapshots remain local pending redistribution
 assessment; do not submit them or substitute a new workload for the declared
 pilot. Never redispatch completed27c1178/5c3cd64runs or retry the exhausted local
