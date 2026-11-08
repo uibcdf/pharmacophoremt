@@ -15,6 +15,19 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Terminal saved-run source checkpoint — 2026-11-08
+
+The [terminal receipt](../evidence/saved_run_ci_terminal_20261108.json) accepts
+frozen5c3cd64/attempt1, source42436392248: all eight Linux/macOS arm64 Python3.11–3.14
+cells pass2430cases each, with no reported scientific skips and43retained warnings
+per cell. Reporting, policy42436396390 and publication governance42436399981 pass
+required native steps. Full test commands, interpreter/package/acquisition facts
+and all106-file qualified XMLs verify; native Codecov upload steps succeed,
+without a public-server freshness claim. Initial pending captures stay unchanged.
+Later147implementation1392bad and its receipts retain separate full-source debt.
+Original local native/resource failure and all public/installed/platform gates
+remain separate. No CI run is restarted or attached to later source inputs.
+
 ## Saved-run accumulated checkpoint — 2026-11-08
 
 The [new declared checkpoint](../saved_run_ci_checkpoint.md) freezes5c3cd64

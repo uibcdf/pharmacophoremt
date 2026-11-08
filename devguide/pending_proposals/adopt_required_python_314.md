@@ -14,6 +14,24 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Latest bounded source and public observation — 2026-11-08
+
+The [frozen5c3cd64checkpoint](../saved_run_ci_checkpoint.md) passes2430cases per
+eight Linux/macOS arm64 Python3.11–3.14source cells, with native required
+administrative/coverage/acquisition facts. Later [147](../saved_run_comparison.md)
+retains its own256same-body Linux/Python3.14owned installed artifact and separate
+full-source/platform/public gates. Current routine development follows the
+qualified3.14profile in root instructions; older transition statements below
+retain their original source/date context.
+
+[Current public metadata/index verification](../evidence/public_molsysmt_availability_20261108_summary.json)
+finds the same0.23.0main artifact/hash, with no newer main coordinate in observed
+Linux/macOSarm64/noarchindices.1.0.0is staging-only. Historical absent-modern-API
+and203pass/18skip receiving remains tied to its exact older source/artifact, not
+newly executed tests. The existing375public-subset handoff remains open; revisit
+another public solve only after new main bytes/owner delivery notice. No package
+is installed, provider/prefix/floor changed or full public qualification inferred.
+
 ## Current source receiving — 2026-11-06
 
 [Receiving record](../source_suite_receiving_20261106.md) and [original receipt](../evidence/source_suite_receiving_20261106_summary.json) preserve #102's exact two-test correction, 111 passing focused controls, old-head full hosted 2,071 pass/two failures and incomplete local attempts (task hook; later 1 GiB cap). Fix-head CI 42174357921 has passing reporting governance, four executing Linux and four queued macOS scientific cells at the recorded observation; corrected complete full coverage remains pending. No cancelled, queued, omitted or local-capacity-limited execution clears missing supported/full-installed/public gates. Scientific code, source pins and existing recovery routes remain unchanged.

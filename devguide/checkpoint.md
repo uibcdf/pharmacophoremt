@@ -45,20 +45,31 @@ feedback; it is not retried or replaced by the accepted eleven-module223case
 selection plus new33. No provider/prefix/native or budget change occurs.
 
 The [accumulated source checkpoint](saved_run_ci_checkpoint.md) remains frozen
-at5c3cd64/attempt1: source42436392248 has both Python3.14cells and Linux3.11
-completed successfully, with five still executing at the current API observation. Reporting,
-policy42436396390 and publication governance42436399981 pass. Complete source/
-log/coverage acceptance remains pending; the last full accepted source is still
-[8db2a53](boundary_ci_checkpoint.md),2357cases per eight cells. New#147source is
-later and retains separate#9debt. Do not relabel or redispatch the existing runs.
+at5c3cd64/attempt1 and is now accepted: source42436392248 passes2430cases in each
+of eight Linux/macOS arm64 Python3.11–3.14cells, with zero reported scientific
+skips and43retained warnings per cell. Reporting, policy42436396390 and publication
+governance42436399981 pass. Native full commands/acquisition/interpreters and all
+106-file qualified XMLs are verified; Codecov upload steps pass, with public
+server freshness unobserved. Earlier [8db2a53](boundary_ci_checkpoint.md) retains
+its own2357-case/eight-cell identity. New#147source is later and retains separate
+full#9debt. Do not relabel or redispatch the completed runs.
 
-**Next concrete action:** receive the already-running frozen source handles
-when terminal, requiring full native/log/coverage facts; do not redispatch or
-relabel them as#147coverage. Independently verify current public MolSysMT
-availability for the existing modern-provider gate under#23/#95 before choosing
-a new solve/receiving route; earlier public-prefix facts retain their old date.
-Preserve full supported installed/platform debt and the original local resource
-failure. The mature0.x goal is active; no release is selected.
+[Current public MolSysMT availability](evidence/public_molsysmt_availability_20261108_summary.json)
+still verifies0.23.0main on Linux/macOS arm64, with the exact previously received
+Linux file/hash. Noarch has no MolSysMT record;1.0.0is staging-only. This is an
+index observation, not new provider execution. The previous missing-modern-API
+evidence stays scoped to its old artifact. A new main filename/hash or an owner
+delivery notice triggers another public solve; the existing375question already
+owns that handoff. No provider/prefix/floor/release change occurs.
+The historical public prefix is absent at the checked original/remapped paths;
+its old receipt is evidence, separate from an available runtime on this machine.
+
+**Next concrete action:** review the qualified molecular feature-reuse experiment
+and its original immutable inputs, identify the representative fresh/reused
+query workload and safe execution route, then declare measurement before timing.
+Preserve#147full-source and public/installed-platform debt, the original local
+resource failure and the provider-owned collection/public-delivery gates. The
+mature0.x goal is active; no release is selected.
 
 ## Active public integration
 
@@ -98,7 +109,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports and criterion-independent progress received in bounded source/owned installed contexts | Frozen CI42399097757 is complete for its own source; qualify broader usability/provider/source operations and full changed-pin/public gates |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress and single/paired saved-run analysis received in bounded source/owned installed contexts | Frozen5c3cd64full source is accepted for144/145/146; later147, broader usability/provider/source operations and full public gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |

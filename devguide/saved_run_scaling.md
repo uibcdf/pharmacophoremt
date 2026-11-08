@@ -200,3 +200,13 @@ own identities; the final one uses exactly the guarded corrected source bytes.
 This closes#144's bounded baseline/reproducible-driver scope, with the failed
 original preparation and all broader installed/public/platform/performance work
 still explicit.
+
+## Subsequent accumulated source receiving, 2026-11-08
+
+The [5c3cd64/attempt1 source checkpoint](saved_run_ci_checkpoint.md) receives the
+accumulated144/145/146implementation with2430passing cases in each of eight
+Linux/macOS arm64 Python3.11–3.14cells, required reporting/policy/publication
+steps and qualified106-file coverage. Original local measurements, failures and
+owned installed artifacts retain their own source/version/byte identities.
+This full source gate does not generalize performance, qualify fresh public
+providers/installed platforms or cover later147runtime.

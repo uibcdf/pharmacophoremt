@@ -131,3 +131,13 @@ separate rather than summed as independent scientific tests.
 
 The [owning report](archive/reuse_saved_progress.md) resolves#145. Current-head
 source#9/full installed/public#23 and mature0.x acceptance remain open.
+
+## Subsequent accumulated source receiving, 2026-11-08
+
+The [5c3cd64/attempt1 source checkpoint](saved_run_ci_checkpoint.md) receives the
+accumulated144/145/146implementation with2430passing cases in each of eight
+Linux/macOS arm64 Python3.11–3.14cells, required reporting/policy/publication
+steps and qualified106-file coverage. Original local measurements, failures and
+owned installed artifacts retain their own source/version/byte identities.
+This full source gate does not generalize performance, qualify fresh public
+providers/installed platforms or cover later147runtime.

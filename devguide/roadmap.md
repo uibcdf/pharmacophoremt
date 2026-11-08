@@ -168,10 +168,14 @@ the same256bodies/35guarded children and recipe, with real4item/13use attributio
 The bounded bridge is resolved, separate from frozen CI and supported/public gates.
 
 The [saved-run accumulated source checkpoint](saved_run_ci_checkpoint.md)
-is running at exact5c3cd64/attempt1 after#144/#145/#146. Initial native policy/
-publication-governance steps pass; eight scientific cells/reporting remain
-active. Receive terminal full-source evidence before accepting that gate;
-full installed/public/platform and biological milestones remain separate.
+accepts exact5c3cd64/attempt1 after#144/#145/#146:2430cases pass per eight
+Linux/macOS Python3.11–3.14cells, with reporting/policy/publication governance
+and native full-command/qualified-coverage facts verified. Later147runtime
+retains separate full-source debt. [Current public-index revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
+still finds the original0.23.0main Linux artifact; modern public delivery awaits
+an identified new file/owner notice, with no repeated solve or new version floor.
+Full installed/public/platform, biological and performance milestones remain
+separate; review the existing molecular-reuse workload before declaring timing.
 
 [#146 saved-run cohort analysis](archive/summarize_saved_screening_run.md)
 connects verified saved work to existing retrospective metrics without inventing

@@ -100,6 +100,15 @@ public molecular/provider closure and obtain exact-source #9/#10/#23 gates.
 
 ### Public dependency receiving is partial — 2026-11-05
 
+Current [2026-11-08index revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
+still verifies the identical0.23.0main Linux artifact and the macOSarm64coordinate;
+noarch has no MolSysMT record and1.0.0is staging-only. Catalog latest_version0.12.0
+does not replace actual main-label/index identity. No package is downloaded or
+installed and no provider operation is rerun. Wait for supported new main bytes/
+an owner notice before repeating full public receiving; source fixes and whole375
+proposal status retain their separate roles. This observes the existing public
+gate and selects no candidate, version floor or release.
+
 The [source-free public receiving](public_dependency_receiving.md) on immutable
 PHMT `9c163654375c5933be6400282105b89376f03578` creates a fresh Conda closure,
 installs only PHMT editable, and passes pip check and actual context preflight.

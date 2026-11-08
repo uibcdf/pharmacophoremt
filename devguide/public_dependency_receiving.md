@@ -125,3 +125,38 @@ Owner LMMV/dprada; capsule `build/phmt-public-closure-20261105-t9gy9lgj`, review
 2026-11-19 or relevant provider/source change. Borrowed prefixes and sibling
 checkouts remain unchanged. No continuing process, PHMT release candidate build,
 tag, Release, version-plan change or publication is needed by this receipt.
+
+## Current public-index revalidation, 2026-11-08 UTC
+
+The [current receipt](evidence/public_molsysmt_availability_20261108_summary.json)
+uses qualified SDK1c248b6 anonymous bounded JSON acquisition and exact release-
+label/solver-index verification, with15owned evidence files in its hash-bound
+archive. Highest numeric main-labelled MolSysMT remains0.23.0. Both linux-64
+and osx-arm64coordinates verify; noarch has no MolSysMT record. The Linux file
+is exactly the original received0.23.0/build0/SHA7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b.
+Catalog latest_version still names0.12.0; actual labels/index rows decide the
+coordinate. All four1.0.0catalog files are staging-only and are not selected for
+the ordinary main-channel public closure.
+
+No package is downloaded or installed, no provider calculation is rerun and no
+dependency floor changes. Prior203passing/18skipped capability evidence retains
+its exact historical source/file identity; this index observation is not new
+scientific receiving or current PHMT public qualification. Identifying the same
+Linux artifact leaves the already-observed modern capability delivery gap open.
+The [existing provider question](https://github.com/uibcdf/molsysmt/issues/375#issuecomment-6677823055)
+already owns the required supported public subset; closing all375 is not a gate.
+
+Revisit the full public solve/receiving only when a new supported main filename/
+hash or an owner notice identifies that delivery. Do not repeat the unchanged
+old closure or substitute staging/source providers for public admission. Full
+source/owned-installed/public/platform and biological/mature0.x release gates
+retain their separate scopes. The read-only metadata checks retain serial
+execution, actual process/resource observations and conservative memory margin;
+capacity is not reserved and no shared prefix or scheduler configuration changes.
+
+The original historical public prefix is absent at both its recorded/home path
+and the checked fast_data/remapped workspace path on this migrated workstation.
+Those receipts do not constitute a currently available Python/native runtime.
+Future installed public receiving needs an actual owned declared environment;
+no prefix is reconstructed from metadata or silently borrowed from source
+providers. This local presence check executes no provider or package manager.

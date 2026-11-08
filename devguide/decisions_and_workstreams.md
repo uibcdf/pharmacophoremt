@@ -32,11 +32,19 @@ cases overall. Exact owned installed receiving passes the same256bodies/35guarde
 children and recipe; real optional attribution retains4items/13uses. The bounded
 bridge resolves; original fixture/Ruff/old-plan harness failures are preserved.
 
-2026-11-08: [accumulated source checkpoint](saved_run_ci_checkpoint.md) is
-dispatched at frozen5c3cd64/attempt1 for#144/#145/#146. Source42436392248 has
-eight scientific cells/reporting active at initial capture; policy42436396390
-and publication governance42436399981 pass required native steps. Receive these
-handles without redispatch; full source and public/installed gates stay separate.
+2026-11-08: [accumulated source checkpoint](saved_run_ci_checkpoint.md) accepts
+frozen5c3cd64/attempt1 for#144/#145/#146. Source42436392248 passes2430cases per
+eight Linux/macOS Python3.11–3.14cells, with reporting/policy42436396390 and
+publication governance42436399981successful. Native full commands, interpreter/
+architecture/acquisition and106-file qualified coverage are verified. Later147
+retains its separate full-source debt; no existing run is restarted/relabelled.
+
+2026-11-08: [public provider revalidation](evidence/public_molsysmt_availability_20261108_summary.json)
+still identifies the same0.23.0main artifact and older missing-modern-API gate.
+Actual Linux/macOSarm64 release/index rows verify;1.0.0remains staging-only.
+No provider execution/solve/floor change occurs. Wait for an identified supported
+new main file/owner handoff before repeating public receiving; independent product
+and measured molecular-reuse work retain their own next actions.
 
 2026-11-08: [saved-run cohort analysis](saved_run_analysis.md) under#146 passes
 268selected source cases, one exact analytical recipe and strict source/Sphinx

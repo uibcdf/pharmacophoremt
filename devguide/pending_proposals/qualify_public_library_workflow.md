@@ -23,7 +23,17 @@ reuse existing public summary and paired metric core;301distinct selected source
 cases, the exact recipe and strict full docs pass. Exact owned installed receiving
 passes the same256bodies/35children and recipe with4actual attribution items/13uses,
 resolving the bounded bridge. Frozen5c3cd64CI
-retains its own scope. No general collection, labels or biological claim follows.
+is now accepted for144/145/146with2430cases per eight source cells;147is later
+and retains full-source debt. No general collection, labels or biological claim follows.
+
+## Current public-provider gate — 2026-11-08 UTC
+
+[Exact current main-label/index verification](../evidence/public_molsysmt_availability_20261108_summary.json)
+finds the original0.23.0main Linux artifact/hash and the macOSarm64coordinate.
+Noarch has no MolSysMT entry;1.0.0is staging-only. Existing missing-modern-API
+receiving retains its older source/artifact identity. A new supported main file/
+owner delivery notice triggers another public solve; no unchanged prefix is
+recreated and no local molecular substitute or speculative floor is introduced.
 
 ## Saved-run cohort analysis — 2026-11-08 UTC
 

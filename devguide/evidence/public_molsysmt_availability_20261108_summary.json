@@ -1,0 +1,475 @@
+{
+  "schema": "pharmacophoremt.public-molsysmt-availability-evidence@1",
+  "recorded_at_utc": "2026-11-08T03:05:02.415370+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issues": [
+    "uibcdf/pharmacophoremt#23",
+    "uibcdf/pharmacophoremt#95"
+  ],
+  "qualification": {
+    "schema": "pharmacophoremt.public-molsysmt-availability@1",
+    "recorded_at_utc": "2026-11-08T02:55:50.089135+00:00",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "issues": [
+      "uibcdf/pharmacophoremt#23",
+      "uibcdf/pharmacophoremt#95"
+    ],
+    "source_context": "bcf10b2f479488809a2cec8053abae50daf28fe1",
+    "highest_numeric_main_version": "0.23.0",
+    "catalog_latest_version_field": "0.12.0",
+    "basis": "Actual current main-labelled files plus exact qualified release/index verification; neither latest_version nor a cached HTML page decides the selected coordinate.",
+    "verified_main_files": [
+      {
+        "subdir": "linux-64",
+        "filename": "molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+        "sha256": "7ff102db1ceb3a6098b5c020193a2bef1c5eaa4dbcbc5a0b472ee2fa44a1971b",
+        "labels": [
+          "staging",
+          "main"
+        ],
+        "upload_time": "2026-10-06 21:40:09.558000+00:00",
+        "url": "https://conda.anaconda.org/uibcdf/linux-64/molsysmt-0.23.0-pyabi3h03bb3b7_0.conda",
+        "size": 55898508,
+        "verification": "Qualified SDK exact main-label + solver-index filename/hash/build identity match; no package download"
+      },
+      {
+        "subdir": "osx-arm64",
+        "filename": "molsysmt-0.23.0-pyabi3ha0bc463_0.conda",
+        "sha256": "b2fe891f6e4fe9b167b0383a0f11c9772a5450e3fb93ad030ea5139d5aa54317",
+        "labels": [
+          "staging",
+          "main"
+        ],
+        "upload_time": "2026-10-06 21:47:41.981000+00:00",
+        "url": "https://conda.anaconda.org/uibcdf/osx-arm64/molsysmt-0.23.0-pyabi3ha0bc463_0.conda",
+        "size": 55633811,
+        "verification": "Qualified SDK exact main-label + solver-index filename/hash/build identity match; no package download"
+      }
+    ],
+    "staging_only_1_0_0": [
+      {
+        "basename": "linux-64/molsysmt-1.0.0-pyabi3h03bb3b7_0.conda",
+        "version": "1.0.0",
+        "labels": [
+          "staging"
+        ],
+        "sha256": "f3354b2d34ed9152d41c71119b46b13f064b40e076af20e97771891e032640dd",
+        "upload_time": "2026-10-08 09:40:06.035000+00:00"
+      },
+      {
+        "basename": "linux-aarch64/molsysmt-1.0.0-pyabi3hecc93d8_0.conda",
+        "version": "1.0.0",
+        "labels": [
+          "staging"
+        ],
+        "sha256": "f90ef186b72e4433d1946068c5cbde4fe17cc6d10dc8bb80d00c8de25b4572aa",
+        "upload_time": "2026-10-08 09:40:11.177000+00:00"
+      },
+      {
+        "basename": "win-64/molsysmt-1.0.0-pyabi3h2d2bc06_0.conda",
+        "version": "1.0.0",
+        "labels": [
+          "staging"
+        ],
+        "sha256": "4a0bbbc974c463edd610f5eb701f44c7be77e9b4368f3d631224afb5128da518",
+        "upload_time": "2026-10-08 09:46:18.355000+00:00"
+      },
+      {
+        "basename": "osx-arm64/molsysmt-1.0.0-pyabi3ha0bc463_0.conda",
+        "version": "1.0.0",
+        "labels": [
+          "staging"
+        ],
+        "sha256": "dcc711e5c93049d2ddd33176b37b8f847651d386c21ad5ad1e507db48e4212b9",
+        "upload_time": "2026-10-08 09:48:10.909000+00:00"
+      }
+    ],
+    "noarch_molsysmt_records": 0,
+    "linux_exact_file_equal_to_prior_receiving": true,
+    "prior_receipt": {
+      "path": "public_dependency_receiving_20261105_summary.json",
+      "recorded_at_utc": "2026-11-06T00:54:15.617461+00:00",
+      "source": "9c163654375c5933be6400282105b89376f03578",
+      "scope": "Linux/Python 3.14 editable PHMT source with fresh exclusively public Conda dependency closure; no PHMT artifact/full matrix/publication qualification",
+      "full_proposed_scope_public_qualification": "blocked: modern chemical-domain, generic-vector and experimental direction delivery not present in selected public MolSysMT 0.23.0"
+    },
+    "inference": "The same exact Linux public file retains the earlier absent-modern-API evidence; no new artifact is identified to justify a new solve/receive. This is index availability, not newly executed provider capability or current PHMT public testing.",
+    "revisit_condition": "A new main-labelled supported MolSysMT filename/hash or an owner notice identifies delivery of the already-reviewed required subset; whole375 closure is not required.",
+    "existing_owner_question": "https://github.com/uibcdf/molsysmt/issues/375#issuecomment-6677823055",
+    "sdk_commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "sdk_operations": [
+      "devtools.scripts.verify_public_conda.fetch_json",
+      "validate_coordinate",
+      "verify_snapshot"
+    ],
+    "requests": [
+      {
+        "url": "https://conda.anaconda.org/uibcdf/linux-64/repodata.json",
+        "phase": "index",
+        "parsed_json_snapshot": {
+          "path": "index-linux-64.json",
+          "bytes": 167001,
+          "sha256": "6f7981f216141b2317960a9d5190767c3c8d50af047fb98f915a6fca8eedb975",
+          "identity_scope": "Parsed JSON serialization, not original HTTP wire bytes"
+        },
+        "seconds": 0.7200943079951685,
+        "before": {
+          "at_utc": "2026-11-08T02:52:18.277249+00:00",
+          "process_status": {
+            "VmPeak": "34140 kB",
+            "VmSize": "34140 kB",
+            "VmHWM": "23676 kB",
+            "VmRSS": "23676 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 52414947328,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=68159\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67743\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.58837890625,
+            9.5576171875,
+            8.59326171875
+          ]
+        },
+        "after": {
+          "at_utc": "2026-11-08T02:52:18.997975+00:00",
+          "process_status": {
+            "VmPeak": "37284 kB",
+            "VmSize": "37284 kB",
+            "VmHWM": "27744 kB",
+            "VmRSS": "27744 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 52430475264,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=68159\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67743\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.58837890625,
+            9.5576171875,
+            8.59326171875
+          ],
+          "safe_margin_preserved": true
+        },
+        "measured_peak_process_rss_bytes": 446865408,
+        "process_as_bytes": [
+          268435456,
+          268435456
+        ],
+        "estimated_peak_process_bytes": 536870912,
+        "reserve_20_percent_bytes": 12995688038,
+        "capacity_is_not_reserved": true
+      },
+      {
+        "url": "https://conda.anaconda.org/uibcdf/noarch/repodata.json",
+        "phase": "index",
+        "parsed_json_snapshot": {
+          "path": "index-noarch.json",
+          "bytes": 63804,
+          "sha256": "ae45fb3863659397c5f91f5e113dbda98c8c8e0e0339045bc4c177aa807849f4",
+          "identity_scope": "Parsed JSON serialization, not original HTTP wire bytes"
+        },
+        "seconds": 1.4094603589983308,
+        "before": {
+          "at_utc": "2026-11-08T02:53:30.509994+00:00",
+          "process_status": {
+            "VmPeak": "34140 kB",
+            "VmSize": "34140 kB",
+            "VmHWM": "23600 kB",
+            "VmRSS": "23600 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 54242500608,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=68160\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67744\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.259765625,
+            9.45068359375,
+            8.63330078125
+          ]
+        },
+        "after": {
+          "at_utc": "2026-11-08T02:53:31.920294+00:00",
+          "process_status": {
+            "VmPeak": "37228 kB",
+            "VmSize": "37228 kB",
+            "VmHWM": "27132 kB",
+            "VmRSS": "27132 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 54246658048,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=68160\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67744\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.259765625,
+            9.45068359375,
+            8.63330078125
+          ],
+          "safe_margin_preserved": true
+        },
+        "measured_peak_process_rss_bytes": 446865408,
+        "process_as_bytes": [
+          268435456,
+          268435456
+        ],
+        "estimated_peak_process_bytes": 536870912,
+        "reserve_20_percent_bytes": 12995688038,
+        "capacity_is_not_reserved": true
+      },
+      {
+        "url": "https://conda.anaconda.org/uibcdf/osx-arm64/repodata.json",
+        "phase": "index",
+        "parsed_json_snapshot": {
+          "path": "index-osx-arm64.json",
+          "bytes": 118437,
+          "sha256": "fbb9c6e1297168f33b5e76fac22135703703b834a1f62e569664dd068fb9992b",
+          "identity_scope": "Parsed JSON serialization, not original HTTP wire bytes"
+        },
+        "seconds": 1.3064635550035746,
+        "before": {
+          "at_utc": "2026-11-08T02:53:10.884932+00:00",
+          "process_status": {
+            "VmPeak": "34140 kB",
+            "VmSize": "34140 kB",
+            "VmHWM": "23716 kB",
+            "VmRSS": "23716 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 53254430720,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=68160\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67744\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.2841796875,
+            9.46533203125,
+            8.61865234375
+          ]
+        },
+        "after": {
+          "at_utc": "2026-11-08T02:53:12.192270+00:00",
+          "process_status": {
+            "VmPeak": "37248 kB",
+            "VmSize": "37248 kB",
+            "VmHWM": "27460 kB",
+            "VmRSS": "27460 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 53213749248,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=68160\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=67744\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.2841796875,
+            9.46533203125,
+            8.61865234375
+          ],
+          "safe_margin_preserved": true
+        },
+        "measured_peak_process_rss_bytes": 446865408,
+        "process_as_bytes": [
+          268435456,
+          268435456
+        ],
+        "estimated_peak_process_bytes": 536870912,
+        "reserve_20_percent_bytes": 12995688038,
+        "capacity_is_not_reserved": true
+      },
+      {
+        "url": "https://api.anaconda.org/package/uibcdf/molsysmt",
+        "phase": "package",
+        "parsed_json_snapshot": {
+          "path": "package.json",
+          "bytes": 183574,
+          "sha256": "cbe22ac5e4dace397211d64e884c677277b24f34eb441019be07500d9d8e9361",
+          "identity_scope": "Parsed JSON serialization, not original HTTP wire bytes"
+        },
+        "seconds": 0.5606401059994823,
+        "before": {
+          "at_utc": "2026-11-08T02:47:53.883145+00:00",
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 52068179968,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=59466\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=59051\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.04833984375,
+            9.78125,
+            8.3310546875
+          ]
+        },
+        "after": {
+          "at_utc": "2026-11-08T02:47:54.444497+00:00",
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 52047831040,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=59466\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=59051\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.04833984375,
+            9.78125,
+            8.3310546875
+          ],
+          "safe_margin_preserved": true
+        },
+        "measured_peak_process_rss_bytes": 446865408,
+        "process_as_bytes": [
+          268435456,
+          268435456
+        ],
+        "estimated_peak_process_bytes": 134217728,
+        "reserve_20_percent_bytes": 12995688038,
+        "capacity_is_not_reserved": true
+      },
+      {
+        "url": "https://api.anaconda.org/release/uibcdf/molsysmt/0.23.0",
+        "phase": "release",
+        "parsed_json_snapshot": {
+          "path": "release-0.23.0.json",
+          "bytes": 6767,
+          "sha256": "dd85d03b98bb1ef3511ded433480c8da32822428689bd0600a91f069966161c0",
+          "identity_scope": "Parsed JSON serialization, not original HTTP wire bytes"
+        },
+        "seconds": 0.21708364199730568,
+        "before": {
+          "at_utc": "2026-11-08T02:51:56.495125+00:00",
+          "process_status": {
+            "VmPeak": "35524 kB",
+            "VmSize": "35176 kB",
+            "VmHWM": "24244 kB",
+            "VmRSS": "24056 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 53364514816,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=67094\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=66677\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.623046875,
+            9.56201171875,
+            8.57275390625
+          ]
+        },
+        "after": {
+          "at_utc": "2026-11-08T02:51:56.713071+00:00",
+          "process_status": {
+            "VmPeak": "37088 kB",
+            "VmSize": "37088 kB",
+            "VmHWM": "27428 kB",
+            "VmRSS": "27428 kB",
+            "Threads": "1"
+          },
+          "memory": {
+            "MemTotal": 64978440192,
+            "MemAvailable": 53339066368,
+            "SwapTotal": 8589930496,
+            "SwapFree": 8589873152
+          },
+          "memory_pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=67094\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=66677\n",
+          "swap_io_pages": {
+            "pswpin": 0,
+            "pswpout": 14
+          },
+          "load": [
+            9.623046875,
+            9.56201171875,
+            8.57275390625
+          ],
+          "safe_margin_preserved": true
+        },
+        "measured_peak_process_rss_bytes": 446865408,
+        "process_as_bytes": [
+          268435456,
+          268435456
+        ],
+        "estimated_peak_process_bytes": 536870912,
+        "reserve_20_percent_bytes": 12995688038,
+        "capacity_is_not_reserved": true
+      }
+    ],
+    "no_package_download_install_or_prefix_change": true,
+    "no_dependency_floor_release_or_scope_change": true,
+    "resource_interpretation": "One CPU/thread, low CPU/I/O priority, no workers, unchanged256MiB AS cap. Preserve actual process /proc RSS/HWM (about27MiB in the subsequent four request processes; not recorded for the initial package process) alongside the distinct446865408byte rusage high-water counter; do not call that counter incremental API allocation. After observing it, budget512MiB conservatively while keeping the AS cap. All measured available-memory margins exceed20% physical plus the budget; capacity is not reserved.",
+    "resource_review_utc": "2026-11-22"
+  },
+  "resource_review_utc": "2026-11-22",
+  "publication_scope": "Current exact public-coordinate/hash/label/index projections, case-owned controls and scalar resource/verification facts. No package/native payloads, full catalog owner profile, scientific reexecution or public environment solve.",
+  "limits": "Index-only observation. Historical executed capability/tests remain under their original source/file/receiving identity. No provider install/mutation, new dependency floor, release decision or public/installed-platform qualification.",
+  "own_files": 15,
+  "full_evidence": {
+    "path": "public_molsysmt_availability_20261108_full.json.gz",
+    "compressed_bytes": 25711,
+    "compressed_sha256": "54dce66cae60eb336eb8c5bd9f85bbfc767033278505f78efe115a294dbf949d",
+    "uncompressed_bytes": 162829,
+    "uncompressed_sha256": "7ed32d8a3032e42c87548034658b4deed44d45f526afdbd24454ed8e8421c417"
+  }
+}
