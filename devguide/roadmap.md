@@ -53,11 +53,18 @@ acquisition/native phases and all87original public-fixture guards. Local154case
 administrative receiving also fixes the observed route inventory and wide-CSV
 metadata memory defects, retaining full archived semantics and original failures.
 Actual native receiving, measured arm and the private-input pilot remain separate;
-SQLite connection lifetime warnings are tracked; their allocation owner is still unknown.
+[#153](archive/administrative_sqlite_lifetimes.md) now identifies and closes the
+five fixture connections behind all 15 SQLite warnings. Original assertions
+remain; 156 administrative cases pass under the unchanged local limit with no
+unclosed-database warning. Production runtime code is unchanged.
 The first native request at cdb9d45/run42460786720 fails before service entry;
-[#154](pending_bugs/native_qualification_service_oom.md) corrects the unsupported
+[#154](archive/native_qualification_service_oom.md) corrects the unsupported
 OOM assignment and private-root cleanup preparation. The original failure is
 retained; actual native qualification remains pending under the same budget.
+Recovery d95617d/run42461400749 receives actual bootstrap kernel controls and
+cleanup, then package extraction fails at the unchanged 2GiB acquisition budget.
+Inspect supported manager concurrency before a separate lower-consumption
+attempt; the native guards, measured arm and original-input pilot remain pending.
 
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public

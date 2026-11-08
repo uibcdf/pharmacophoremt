@@ -11,8 +11,10 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import closing
 from copy import deepcopy
 from pathlib import Path
+from unittest.mock import patch
 
 ROOT = Path(__file__).resolve().parents[2]
 STORE = ROOT / "phmt_test_support/reference_run_store.py"
@@ -24,6 +26,58 @@ ReferenceLedger = _store.ReferenceLedger
 
 
 class TestReferenceRunStore(unittest.TestCase):
+    def test_corruption_fixtures_close_every_owned_sqlite_connection(self):
+        from devtools.tests.test_reference_run_inspection import (
+            TestReferenceRunInspection,
+        )
+
+        class ObservedConnection(sqlite3.Connection):
+            explicitly_closed = False
+
+            def close(self):
+                super().close()
+                self.explicitly_closed = True
+
+        original_connect = sqlite3.connect
+        connections = []
+
+        def connect(*args, **kwargs):
+            connection = original_connect(*args, **kwargs, factory=ObservedConnection)
+            connections.append(connection)
+            return connection
+
+        fixtures = [
+            TestReferenceRunStore(
+                "test_corrupt_staged_or_confirmed_payload_is_refused_on_open"
+            ),
+            TestReferenceRunStore(
+                "test_changed_work_mapping_or_committing_attempt_is_refused"
+            ),
+            TestReferenceRunStore(
+                "test_query_metadata_checksums_and_schema_identity_are_verified"
+            ),
+            TestReferenceRunInspection(
+                "test_corruption_outside_top_results_and_in_unpublished_attempts_is_refused"
+            ),
+            TestReferenceRunInspection(
+                "test_query_checksum_is_checked_without_external_query_artifact"
+            ),
+        ]
+        try:
+            with patch.object(sqlite3, "connect", connect):
+                result = unittest.TestResult()
+                unittest.TestSuite(fixtures).run(result)
+            self.assertTrue(result.wasSuccessful(), result.errors + result.failures)
+            self.assertTrue(connections)
+            self.assertTrue(
+                all(connection.explicitly_closed for connection in connections),
+                "corruption fixtures must close owned handles after commit/rollback",
+            )
+        finally:
+            for connection in connections:
+                if not connection.explicitly_closed:
+                    connection.close()
+
     def setUp(self):
         temporary = tempfile.TemporaryDirectory(prefix="phmt-reference-ledger-")
         self.addCleanup(temporary.cleanup)
@@ -364,7 +418,7 @@ class TestReferenceRunStore(unittest.TestCase):
                 with self.subTest(phase=phase, corruption=label):
                     target = self.root / f"{phase}-{label}.sqlite3"
                     shutil.copyfile(source_path, target)
-                    with sqlite3.connect(target) as connection:
+                    with closing(sqlite3.connect(target)) as connection, connection:
                         connection.execute(sql, parameters)
                     with self.assertRaises((ValueError, sqlite3.DatabaseError)):
                         with self.reopen(path=target):
@@ -391,7 +445,7 @@ class TestReferenceRunStore(unittest.TestCase):
             with self.subTest(corruption=label):
                 target = self.root / f"{label}.sqlite3"
                 shutil.copyfile(self.path, target)
-                with sqlite3.connect(target) as connection:
+                with closing(sqlite3.connect(target)) as connection, connection:
                     connection.execute(sql, parameters)
                 with self.assertRaises((ValueError, sqlite3.DatabaseError)):
                     with self.reopen(path=target):
@@ -418,7 +472,7 @@ class TestReferenceRunStore(unittest.TestCase):
             with self.subTest(corruption=label):
                 target = self.root / f"{label}.sqlite3"
                 shutil.copyfile(self.path, target)
-                with sqlite3.connect(target) as connection:
+                with closing(sqlite3.connect(target)) as connection, connection:
                     connection.execute(sql, parameters)
                 with self.assertRaises((ValueError, sqlite3.DatabaseError)):
                     with self.reopen(path=target):

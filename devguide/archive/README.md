@@ -5,8 +5,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (94)
+### Resolved (96)
 
+- [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
@@ -50,6 +51,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_ionic_interactions.md`](native_ionic_interactions.md) — [#33](https://github.com/uibcdf/pharmacophoremt/issues/33) — Construct native charge queries from ionic observations through shared feature tools. *(resolved, measured)*
 - [`native_loader_ignored_options.md`](native_loader_ignored_options.md) — [#73](https://github.com/uibcdf/pharmacophoremt/issues/73) — Reject silently ignored options in native io.load routes. *(resolved, measured)*
 - [`native_persistence_validation_bypass.md`](native_persistence_validation_bypass.md) — [#75](https://github.com/uibcdf/pharmacophoremt/issues/75) — Validate external native pharmacophore shapes and sites on loading. *(resolved, measured)*
+- [`native_qualification_service_oom.md`](native_qualification_service_oom.md) — [#154](https://github.com/uibcdf/pharmacophoremt/issues/154) — Replace an unsupported transient-service property while preserving native qualification bounds. *(resolved, measured)*
 - [`native_reference_ligand_workflow.md`](native_reference_ligand_workflow.md) — [#14](https://github.com/uibcdf/pharmacophoremt/issues/14) — Build classical reference-ligand queries and evaluate them using shared MolSysMT chemical extraction. *(resolved, measured)*
 - [`native_retrospective_result_summaries.md`](native_retrospective_result_summaries.md) — [#65](https://github.com/uibcdf/pharmacophoremt/issues/65) — Reuse saved native evaluations with original-cohort and unscored-input accounting. *(resolved, measured)*
 - [`native_rigid_consensus.md`](native_rigid_consensus.md) — [#26](https://github.com/uibcdf/pharmacophoremt/issues/26) — Build alternative native consensus models from prepared rigid unaligned ligands. *(resolved, measured)*

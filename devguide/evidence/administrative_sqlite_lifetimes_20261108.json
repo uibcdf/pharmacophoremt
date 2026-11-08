@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.administrative-sqlite-lifetimes@1",
+  "issue": 153,
+  "parent_source": "d95617dceede826237689ff2b12d5bd1561f6b7f",
+  "allocation_evidence": {
+    "cases": 5,
+    "sqlite_resource_warnings_before": 15,
+    "sqlite_resource_warnings_after": 0,
+    "original_allocation_sites": [
+      {
+        "path": "devtools/tests/test_reference_run_inspection.py",
+        "line": 344
+      },
+      {
+        "path": "devtools/tests/test_reference_run_inspection.py",
+        "line": 355
+      },
+      {
+        "path": "devtools/tests/test_reference_run_store.py",
+        "line": 367
+      },
+      {
+        "path": "devtools/tests/test_reference_run_store.py",
+        "line": 394
+      },
+      {
+        "path": "devtools/tests/test_reference_run_store.py",
+        "line": 421
+      }
+    ],
+    "before_peak_self_rss_bytes": 42352640,
+    "after_peak_self_rss_bytes": 45641728,
+    "all_original_bodies_and_assertions_retained": true
+  },
+  "correction": "Five test-fixture connection contexts now use contextlib.closing around the original transaction context. Commit/rollback behavior is preserved, followed by explicit close. No production writer/reader or public lifetime behavior changes.",
+  "guard": "devtools/tests/test_reference_run_store.py::TestReferenceRunStore::test_corruption_fixtures_close_every_owned_sqlite_connection",
+  "guard_before": {
+    "failed": true,
+    "reason": "actual original fixture bodies leave owned connections explicitly unclosed; the guard cleans owned handles after the assertion even on failure"
+  },
+  "focused_after": {
+    "cases": 42,
+    "passed": 42,
+    "whole_children_peak_rusage_bytes": 59260928,
+    "note": "Both original administrative store/inspection modules, including one new lifetime guard; nested original bodies overlap and are not extra distinct cases."
+  },
+  "complete_administration": {
+    "cases": 156,
+    "passed": 156,
+    "resource_warnings": "Explicit always::ResourceWarning; no unclosed database warning observed",
+    "whole_children_peak_rusage_bytes": 242569216,
+    "DATA_bytes": 536870912,
+    "AS": [
+      -1,
+      -1
+    ],
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "local_aggregate_cgroup_enforced": false
+  },
+  "source_files": {
+    "devtools/tests/test_reference_run_store.py": {
+      "bytes": 23950,
+      "sha256": "03b2a18c2e70053aff98659869caaf9ff149f837730a36cd08bcb65879f6905b"
+    },
+    "devtools/tests/test_reference_run_inspection.py": {
+      "bytes": 19825,
+      "sha256": "f2b44915bcb0e56f70ac604d47e4b9b865b92fba69254e4df94f50baa98d5b37"
+    }
+  },
+  "original_failures_and_resource_preflight": "Retain initial154case warnings, five-case allocation traceback and new guard failure. An initial strict swap-equality preflight refused before running the full suite; a later sampled reserve/pressure/no-swap window admitted the same unchanged512MiB scope.",
+  "molecular_execution": false,
+  "runtime_changed": false,
+  "raw_evidence": "build/phmt-native-reuse-qualification-20261108-md_ysaii",
+  "retention_review": "2026-11-22",
+  "whole_goal": "active"
+}

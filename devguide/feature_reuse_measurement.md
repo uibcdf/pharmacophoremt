@@ -117,6 +117,40 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### Bootstrap admission and transaction limit, 2026-11-08 UTC
+
+[Recovery 42461400749/attempt1](evidence/feature_reuse_native_bootstrap_limit_20261108.json)
+at d95617d enters the own bootstrap service with verified 2GiB memory.max,
+zero swap, memory.oom.group=1, 64 tasks and one CPU/quota. Low priorities and
+declared numerical thread settings verify. Cleanup passes, resolving the
+[#154 caller defect](archive/native_qualification_service_oom.md). The whole run
+still fails; none of the 87 native cases or the 512MiB native scope executes.
+
+Resolution completes with 403 packages/rounded 1GB download. During extraction,
+memory.max events accompany std::bad_alloc and a resource-unavailable thread
+message. Sampled cgroup peak is 2148343808 bytes, with at most 60 observed tasks,
+no swap/OOM kill and ample host reserve. Requested kernel cap and transiently
+overshooting observed peak remain distinct; sampled tasks do not establish a
+final lifetime peak or pids-limit event, whose counter was not captured.
+The client propagates failure; it does not acquire providers or reach context
+checks. Actual manager hash/final installed identities remain unreceived.
+
+Stop this exhausted acquisition route. Inspect supported exact-manager package
+extraction/download concurrency and use the existing SDK/owner route for any
+separately declared lower-consumption recovery. Do not enlarge budgets, replace
+inputs/pins, transfer benchmark snapshots or manufacture a native/performance
+result. The first admission failure and both complete GHRR captures retain their
+own identities. The goal remains active through independent product work.
+
+A separate local control verifies the checksum-published official Micromamba
+1.5.10 binary (no environment creation or package operation). With rc files
+disabled and only an owned root, its version/config commands report default
+extract_threads=0/download_threads=5, then both settings equal one when their
+MAMBA_EXTRACT_THREADS/MAMBA_DOWNLOAD_THREADS variables are explicit. This
+qualifies recognition of settings, not lower-memory transaction behavior.
+Implement/guard that fixed consumer configuration through the same SDK before
+prospectively admitting a new bounded acquisition; keep budgets/pins unchanged.
+
 ### First native route attempt and correction, 2026-11-08 UTC
 
 The first exact-source request at cdb9d45 is received as
@@ -128,7 +162,7 @@ acquisition, native fixture, pilot or timing is received. Original GHRR1.4
 metadata/full captures and native job facts remain local. The generic compact
 report names cleanup; bounded native step6 evidence establishes the primary cause.
 
-[#154](pending_bugs/native_qualification_service_oom.md) replaces the assignment
+[#154](archive/native_qualification_service_oom.md) replaces the assignment
 with documented OOMPolicy=kill, which sets memory.oom.group=1, and creates only
 the owned temporary manager root before setup. The actual kernel check and
 every phase budget/source pin/scientific selector remain unchanged. Its durable
@@ -136,7 +170,7 @@ guard checks both actual service commands and cleanup preparation. The
 [separate prospective recovery](evidence/feature_reuse_native_qualification_recovery_plan_20261108.json)
 preserves the first declaration and failed producer. Publish/review its exact
 source before at most one new request; observe the actual handle after an
-uncertain response. Actual kernel/native receiving is still pending.
+uncertain response. That declaration preceded the recovery received above.
 Recovery passes 42 focused administrative cases, including 17 admission guards,
 three reporting cases and full Ruff/index checks under the unchanged local
 512MiB DATA limit (whole-command child peak 67534848 bytes). These are controls,

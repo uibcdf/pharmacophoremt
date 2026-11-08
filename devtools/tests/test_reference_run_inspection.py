@@ -10,6 +10,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+from contextlib import closing
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -341,7 +342,7 @@ class TestReferenceRunInspection(unittest.TestCase):
             with self.subTest(key=key):
                 target = self.root / f"corrupt-{key}.sqlite3"
                 shutil.copyfile(self.path, target)
-                with sqlite3.connect(target) as connection:
+                with closing(sqlite3.connect(target)) as connection, connection:
                     connection.execute(
                         "UPDATE attempts SET digest = ? WHERE work_key = ?",
                         ("0" * 64, key),
@@ -352,7 +353,7 @@ class TestReferenceRunInspection(unittest.TestCase):
 
     def test_query_checksum_is_checked_without_external_query_artifact(self):
         self.create_partial()
-        with sqlite3.connect(self.path) as connection:
+        with closing(sqlite3.connect(self.path)) as connection, connection:
             connection.execute(
                 "UPDATE metadata SET value = ? WHERE key = 'query'",
                 (self.query + b"changed",),

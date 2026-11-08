@@ -23,9 +23,19 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#153 fixture lifetimes](archive/administrative_sqlite_lifetimes.md)
+are corrected after tracing 15 warnings to five owned connections. Original
+transactions/assertions remain; 42 selected and 156 full administrative cases
+pass under unchanged local limits, without SQLite warnings. Separately,
+[native admission recovery](feature_reuse_measurement.md#bootstrap-admission-and-transaction-limit-2026-11-08-utc)
+receives actual bootstrap kernel controls/cleanup at d95617d/run42461400749,
+resolving #154. Package extraction then exceeds the unchanged acquisition
+budget; the whole run fails and molecular tests remain skipped. Inspect manager
+concurrency before further requests; retain both failures and all original inputs.
+
 2026-11-08: the first native request at cdb9d45/run42460786720 fails before
 service admission; no molecular case executes. The
-[#154 correction](pending_bugs/native_qualification_service_oom.md) uses supported
+[#154 correction](archive/native_qualification_service_oom.md) uses supported
 OOMPolicy=kill and prepares only the private manager root for cleanup. The
 original failure and unchanged resource/scientific declaration remain explicit;
 real hosted recovery is pending.

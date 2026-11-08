@@ -10,24 +10,31 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [native fixture qualification route](feature_reuse_measurement.md#first-native-route-attempt-and-correction-2026-11-08-utc)
-has an original failed attempt at cdb9d45/run42460786720: an unsupported
-service assignment prevents admission, so no native case executes. The
-[#154 correction](pending_bugs/native_qualification_service_oom.md) uses documented
-OOMPolicy=kill and prepares the owned manager root for cleanup, retaining all
-budgets and the original failure. Recovery passes 42 focused administrative
-cases (17 admission guards) and three reporting cases, with full Ruff/index
-checks; actual hosted admission remains pending.
-The manual-only fixed client uses the common SDK
-and existing pins, separates 2GiB acquisition from 512MiB native 87-case receiving,
-and verifies kernel bounds/source/native identities. The preceding 154 administrative
-cases, including 16 new admission controls, and three reporting cases pass.
-Source reporting resolves #151
-(two unclassified workflows) and #152 (wide historical CSV materialization): all
-original rows/cohort/exclusions/population/ambiguity are preserved within the
-unchanged 512MiB local limit. Original 150-case failure/F821 remain retained;
-unclosed SQLite warnings are separately tracked under #153. Native timing,
-private-input transfer, biological and full public-delivery gates stay open.
+[#153 SQLite lifetime correction](archive/administrative_sqlite_lifetimes.md)
+closes the five fixture-owned connections behind all 15 traced warnings, while
+preserving original transaction/corruption assertions. Production code is
+unchanged. The explicit-lifetime guard first fails, then 42 store/inspection
+cases and the complete 156-case administrative suite pass with ResourceWarning
+enabled and no unclosed database warning. The
+[receipt](evidence/administrative_sqlite_lifetimes_20261108.json) preserves original
+allocation traces and resource scope: unchanged 512MiB DATA, one CPU/thread.
+
+The [native admission recovery](feature_reuse_measurement.md#bootstrap-admission-and-transaction-limit-2026-11-08-utc)
+at d95617d/run42461400749 verifies the actual 2GiB bootstrap service/kernel
+controls and successful cleanup, resolving [#154](archive/native_qualification_service_oom.md).
+Its package resolution succeeds, but extraction exhausts the unchanged budget
+and emits memory/thread resource errors. The whole run fails; the 512MiB native
+service and all 87 molecular guards remain unexecuted. The first cdb9d45 failure
+retains its separate identity. Do not repeat the exhausted route or raise budgets.
+The same official Micromamba 1.5.10 binary/checksum now verifies effective
+extraction/download settings of one, using only version/config queries in an
+owned directory. Its defaults are extract_threads=0/download_threads=5; no new
+environment or package acquisition is attempted. Native timing, private-input
+transfer, biological and full public-delivery gates stay open.
+
+Earlier #151/#152 workflow-inventory and complete historical-CSV corrections
+retain the original 150-case failure/F821 and unchanged cohort/exclusion/
+population/ambiguity semantics in their archived reports and preparation receipt.
 
 [#150 prepared-plan inspection](archive/inspect_prepared_run_plans.md)
 is implemented in source. `PreparedRunPlan.describe()` returns exact query
@@ -126,9 +133,12 @@ affinity/priorities and parent/child membership. A24MiB smoke verifies; no nativ
 library/input, pilot or timing is used. Original local failure and input-transfer
 restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** dispatch the reviewed native fixture recovery once
-at its reviewed exact source, then receive all87cases and actual resource/context
-evidence before implementing the measured shared arm.
+**Next concrete action:** hand the measured transaction limit and verified
+exact-manager configuration to the common environment/resource owners. Implement
+and guard extraction/download concurrency of one through the same SDK;
+declare its exact source and unchanged budgets before a new request. Do not
+repeat the exhausted 2GiB acquisition. Receive
+all 87 native cases and actual provider/context evidence before the measured arm.
 The three original benchmark snapshots remain local pending redistribution
 assessment; do not submit them or substitute a new workload for the declared
 pilot. Never redispatch completed27c1178/5c3cd64runs or retry the exhausted local

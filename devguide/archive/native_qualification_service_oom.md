@@ -1,9 +1,9 @@
 ---
 summary: Replace an unsupported transient-service property while preserving native qualification bounds.
 issue: uibcdf/pharmacophoremt#154
-status: partial
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-08
 severity: medium
 verification: measured
 area: [testing, resources]
@@ -38,3 +38,19 @@ and never automatically redispatch an uncertain response. The separate
 [recovery plan](../evidence/feature_reuse_native_qualification_recovery_plan_20261108.json)
 retains the same scientific inputs and native budget. No private benchmark
 snapshots, molecular pilot, performance or biological qualification follows.
+
+## Actual corrected service receiving
+
+At d95617d/run42461400749/attempt1 the bootstrap service enters successfully
+with verified memory.max=2147483648, memory.swap.max=0, memory.oom.group=1,
+pids.max=64 and one CPU/quota. Private-root and binary cleanup also pass. This
+receives the caller correction; the native service is still not executed.
+
+The later package transaction exhausts the unchanged bootstrap budget with
+memory.max events, std::bad_alloc and a resource-unavailable thread message.
+Dependency resolution completes; extraction fails. The whole run remains failed
+and native tests remain skipped. The
+[separate receipt](../evidence/feature_reuse_native_bootstrap_limit_20261108.json)
+retains measured peaks, original source/run identities and uncertainty about
+task-limit events. #148 owns a lower-concurrency acquisition investigation;
+neither repeat the exhausted route nor increase its budget.
