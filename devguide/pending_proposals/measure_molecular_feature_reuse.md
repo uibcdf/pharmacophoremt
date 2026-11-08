@@ -43,11 +43,16 @@ mechanisms stay with infrastructure#1/MolI#96; PHMT owns this workload/evidence.
 ## Acceptance and continuation
 
 An additional [hosted scope probe](../feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
-is now implemented as a manual-only workflow, with static shell/YAML/Python/lint
-checks passing. It has not been executed or received. Its fixed24MiB smoke tests
-the standard OS controls in a dedicated managed VM; it imports no molecule or
-provider and is separate from the native pilot. Keep local infrastructure and
-payload-transfer restrictions explicit; no performance qualification follows.
+is implemented as a manual-only workflow, with static shell/YAML/Python/lint
+checks passing. Exact9a0ed14/run42453432613/attempt1 now passes and its native
+controls are [received](../evidence/feature_reuse_resource_probe_20261108.json):
+aggregate512MiB/zero-swap/32tasks/oneCPU, actual affinity and unprivileged parent/
+child membership verify. The fixed24MiB smoke observes38203392bytes cumulative
+cgroup peak while both payloads are held; it is not native compatibility,
+stress, timing or final lifetime/RSS evidence. Local infrastructure and original
+payload restrictions remain explicit. Before remote molecular work, qualify its
+provider/input context and authorized exact-input delivery, then the shared arm
+and separate native pilot. No molecular library or input is used by this probe.
 
 Receive and verify the declared safe execution scope, exact source/providers/
 native artifact, and an actually equivalent shared arm through public tools.

@@ -101,17 +101,18 @@ reporting successful; policy42451909669 and no-build publication governance
 source result or counts yet. Local work is bounded read-only evidence capture.
 
 The [#148 hosted scope probe](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
-now has a fixed manual-only workflow and prospective declaration. Static syntax
-and inline lint checks pass; no service, native workload or timing has executed.
-It will test standard OS controls plus a24MiB smoke in a dedicated VM, preserving
-the original local failure, fixed budget and input-publication restrictions.
+now passes exact9a0ed14/run42453432613/attempt1 and its
+[native controls are received](evidence/feature_reuse_resource_probe_20261108.json).
+The dedicated VM enforces the fixed512MiB/zero-swap/32tasks/oneCPU budget, actual
+affinity/priorities and parent/child membership. A24MiB smoke verifies; no native
+library/input, pilot or timing is used. Original local failure and input-transfer
+restrictions remain; every later molecular job needs its own admission/context.
 
-**Next concrete action:** dispatch that bounded scope probe once at its verified
-source, then receive actual controls. In parallel receive terminal facts for
-the existing scientific handles:
+**Next concrete action:** receive terminal facts for the existing scientific handles:
 full eight-cell tests, interpreter/architecture/acquisition and coverage. Do not
 redispatch either27c1178or the completed5c3cd64runs. Native#148still requires a
-safe route and qualified shared arm before its pilot; no exhausted native case
+qualified molecular provider/input delivery and shared arm before its pilot;
+the hosted OS probe alone does not establish that boundary. No exhausted native case
 is retried. Preserve later full-source and public/installed-platform debt, the
 original local resource failure and provider-owned collection/public-delivery
 gates. The mature0.x goal is active; no release is selected.

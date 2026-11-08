@@ -122,7 +122,8 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 The [prospective recovery declaration](https://github.com/uibcdf/pharmacophoremt/issues/148#issuecomment-6717982897)
 now has one manual-only [workflow](../.github/workflows/feature_reuse_resource_probe.yaml)
 and a [fixed probe plan](evidence/feature_reuse_resource_probe_plan_20261108.json).
-No hosted probe has yet been received. GitHub documents a
+The declaration preceded execution; terminal receiving is recorded below.
+GitHub documents a
 [fresh VM per configured job](https://docs.github.com/en/actions/how-tos/manage-runners/github-hosted-runners/use-github-hosted-runners).
 This case invokes standard systemd-run only on that job's VM. It requests an own
 short-lived unprivileged service with the same512MiB aggregate/zero-swap/32-task/
@@ -133,7 +134,8 @@ two-process smoke. Requested properties alone do not qualify enforcement.
 The standard [systemd resource controls](https://www.freedesktop.org/software/systemd/man/latest/systemd.resource-control.html)
 own enforcement. This workflow is a case-specific boundary check, with no PHMT
 executor/resource API or changes to the shared workstation. It imports no
-molecular library and transfers no source/native/H5MSM payload. Local shell/YAML/
+molecular library and submits none of the declared benchmark's original
+snapshots or molecular result bodies. Local shell/YAML/
 three-Python-body syntax and inline lint checks pass. Two initial import-spacing
 failures are retained; entry/child ASTs are unchanged, and the parent differs
 only in nested child-source whitespace. It does not run a
@@ -147,6 +149,30 @@ job still needs new admission, exact provider/native/input identity and the
 separate declared pilot. Before remote molecular work, establish an authorized
 delivery route for the exact frozen inputs under their original restrictions.
 The current local route and original DATA failure retain their own dispositions.
+
+The [terminal receipt](evidence/feature_reuse_resource_probe_20261108.json) now
+receives exact9a0ed14/run42453432613/attempt1, with the native required step and
+all job steps successful. Actual Ubuntu26.04/systemd259/Python3.14.10 observes
+kernel memory.max536870912, memory.swap.max0, pids.max32 and cpu.max100000/100000.
+Worker and child run as the job user in the same own service with actual CPU3,
+nice19/idleI/O; DATA/AS are unlimited inside the aggregate512MiB cgroup. This is
+a different controlled context, not a retry or repair of the original local
+DATA512/OpenMM failure. No shared-workstation service is created.
+
+The fixed16+8MiB page-touched payloads pass. Cumulative kernel peak at both
+held-payload samples is38203392bytes, with two actual tasks, no memory-limit/OOM
+events, zero observed swap activity/PSI and the declared RAM reserve/margin.
+This is not final unit-lifetime peak, process RSS, stress or molecular performance.
+Published GH Run Receptor1.4.0 full capture and offline replay pass; original
+native API/log/control facts are retained locally, with reviewed scalars/hashes
+published. Every later job needs its own admission; no declared benchmark input
+has been submitted.
+Next prepare the exact-provider/input-delivery decision and shared scientific arm
+for a qualified molecular context before considering the declared pilot.
+Publication review narrows the initial unpublished transfer wording: ordinary
+checkout includes the existing public ERalpha H5MSM fixture; none of the three
+original benchmark snapshots is submitted. The original projection and correction
+remain local, without rerunning or changing the native control observations.
 
 The [declaration receiving receipt](evidence/feature_reuse_profile_declaration_20261108_summary.json)
 records focused offline guards, actual input

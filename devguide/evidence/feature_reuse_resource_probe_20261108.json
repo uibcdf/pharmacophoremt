@@ -1,0 +1,217 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-resource-probe@1",
+  "recorded_at_utc": "2026-11-08T06:11:55.926234+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": 148,
+  "candidate": "9a0ed1458f05002cb74fcc83d507472ca77e05de",
+  "workflow": {
+    "path": ".github/workflows/feature_reuse_resource_probe.yaml",
+    "bytes": 10577,
+    "sha256": "f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0",
+    "dispatch": "Existing main only while live remote SHA equals reviewed producer; inspect complete exact-head workflow inventory before one-time request; uncertainty means observe, never automatic redispatch"
+  },
+  "run": {
+    "id": 42453432613,
+    "attempt": 1,
+    "event": "workflow_dispatch",
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42453432613",
+    "job_id": 128647298940,
+    "required_step": {
+      "completed_at": "2026-11-08T06:07:31Z",
+      "conclusion": "success",
+      "name": "Verify the fixed hosted scope without molecular work",
+      "number": 4,
+      "started_at": "2026-11-08T06:07:28Z",
+      "status": "completed"
+    }
+  },
+  "bounded_hosted_controls_received": true,
+  "native_compatibility_or_pilot_received": false,
+  "performance_or_shared_workstation_route_received": false,
+  "hosted_observations": [
+    {
+      "stage": "hosted_entry",
+      "memory": {
+        "MemTotal": 16758403072,
+        "MemAvailable": 15472181248,
+        "SwapTotal": 3221221376,
+        "SwapFree": 3221221376
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2\n",
+      "load": [
+        0.2763671875,
+        0.09814453125,
+        0.033203125
+      ],
+      "swap_pages_1s": {
+        "pswpin": 0,
+        "pswpout": 0
+      },
+      "allowed_cpus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "scope_budget_bytes": 536870912,
+      "supervisor_margin_bytes": 1610612736,
+      "capacity_is_not_reserved": true
+    },
+    {
+      "stage": "own_controls",
+      "python": "3.14.10",
+      "architecture": "x86_64",
+      "uid": 1001,
+      "gid": 1001,
+      "cgroup": "0::/system.slice/phmt148-probe-42453432613-1.service",
+      "controls": {
+        "memory.max": "536870912",
+        "memory.swap.max": "0",
+        "pids.max": "32",
+        "cpu.max": "100000 100000",
+        "cpuset.cpus.effective": "3",
+        "memory.current": "7573504",
+        "memory.peak": "7573504",
+        "memory.events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\nsock_throttled 0"
+      },
+      "actual_affinity": [
+        3
+      ],
+      "nice": 19,
+      "io_priority": "idle",
+      "rlimit_data": [
+        -1,
+        -1
+      ],
+      "rlimit_as": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "stage": "bounded_probe_passed",
+      "child": {
+        "cgroup": "0::/system.slice/phmt148-probe-42453432613-1.service",
+        "affinity": [
+          3
+        ],
+        "uid": 1001,
+        "held_bytes": 8388608
+      },
+      "parent_held_bytes": 16777216,
+      "samples": [
+        {
+          "memory": {
+            "MemTotal": 16758403072,
+            "MemAvailable": 15473160192
+          },
+          "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2\n",
+          "swap_pages": {
+            "pswpin": 0,
+            "pswpout": 0
+          },
+          "cgroup_memory_current": 38203392,
+          "cgroup_memory_peak": 38203392,
+          "cgroup_tasks_current": 2
+        },
+        {
+          "memory": {
+            "MemTotal": 16758403072,
+            "MemAvailable": 15489708032
+          },
+          "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2\n",
+          "swap_pages": {
+            "pswpin": 0,
+            "pswpout": 0
+          },
+          "cgroup_memory_current": 38203392,
+          "cgroup_memory_peak": 38203392,
+          "cgroup_tasks_current": 2
+        }
+      ],
+      "memory_events_after": {
+        "low": "0",
+        "high": "0",
+        "max": "0",
+        "oom": "0",
+        "oom_kill": "0",
+        "oom_group_kill": "0",
+        "sock_throttled": "0"
+      },
+      "claim": "Own kernel controls and a fixed 24MiB two-process smoke only; no native compatibility, stress, performance or shared-host qualification"
+    }
+  ],
+  "hosted_peak_scope": "Kernel cumulative cgroup peak at two held-payload samples; neither final unit-lifetime peak nor process RSS/incremental allocation.",
+  "native_tool_versions": {
+    "python": "3.14.10",
+    "architecture": "x86_64",
+    "systemd": [
+      [
+        "259",
+        "259.9-0ubuntu0.1"
+      ]
+    ],
+    "runner_image": [
+      "ubuntu-26.04"
+    ]
+  },
+  "receptor": {
+    "version": "1.4.0",
+    "capture_exit": 0,
+    "offline_replay_exit": 0,
+    "manifest": {
+      "bytes": 1850,
+      "sha256": "3fb2db6d9a8b7664b1867819fad95f5be420506766ae920dccf8c6c13c328e90"
+    }
+  },
+  "original_aggregate_log": {
+    "member": "0_probe.txt",
+    "bytes": 35199,
+    "sha256": "c63d4315274ba2502a3e6a73eb9f67ee28f88018320a3975ae82f4908ab11e64"
+  },
+  "raw_logs_zip": {
+    "bytes": 20631,
+    "sha256": "eea7f3f7170aae9a31869ab6c83df7870736345d54904aea591762ed0056644e"
+  },
+  "local_capture": {
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "backend_threads": 1,
+    "data_per_process_bytes": 536870912,
+    "as_cap": "None requested; not separately recorded by the capture controller",
+    "reserve_fraction": 0.2,
+    "own_envelope_bytes": 1610612736,
+    "max_observed_own_rss_sum_bytes": 103329792,
+    "child_peak_rusage_bytes": 50630656,
+    "resource_interrupted": false,
+    "aggregate_cgroup_enforced": false,
+    "capacity_reserved": false
+  },
+  "local_preflight": {
+    "relative_targets": 172,
+    "copied_plan_and_workflow_hash": true,
+    "existing_ci_frozen_inputs_unchanged": true,
+    "index_generate_and_check": true,
+    "reporting_tests": 3,
+    "full_ruff_check": true,
+    "full_ruff_format_files": 428,
+    "inline_syntax_and_lint_three_bodies": true,
+    "native_service_or_molecular_execution": false
+  },
+  "raw_evidence": "build/phmt-hosted-reuse-scope-20261108-3e4w4evc",
+  "raw_retention_review": "2026-11-22",
+  "limits": "Standard OS controls plus the fixed24MiB two-process smoke in this one hosted context only. No molecular import/driver/pilot/timing, the public repository is checked out (including existing test fixtures), while none of the three original declared benchmark snapshots is submitted, no stress/large-library/public-installed/platform qualification. Every later molecular job needs new admission and authorized exact-input delivery under original restrictions. The original local DATA512/OpenMM failure stays failed; no shared-workstation control is changed. Existing full-source run42451906584/attempt1 at27c1178 remains independently pending.",
+  "publication_review": {
+    "scope_correction": "The initial unpublished projection said no native/H5MSM transfer too broadly: the ordinary public checkout includes an existing ERalpha H5MSM test fixture. The corrected claim concerns the three original declared benchmark snapshots, none submitted. Originals are preserved locally; no run, capture or scientific result is changed.",
+    "existing_public_fixture": "tests/data/eralpha_template/est_template.h5msm",
+    "prepublication_projection_sha256": "472bf7b1d564bf0d8907a7c650d6a2c17a73f07c9c9b852eca4a8b1ffd760e2b"
+  }
+}
