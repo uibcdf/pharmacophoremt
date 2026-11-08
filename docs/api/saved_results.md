@@ -8,9 +8,13 @@ for original-cohort accounting and paired common-subset interpretation.
 
 For verified saved runs, use the [saved-run recipe](../content/cookbook/saved_run_analysis.md).
 It preserves original work identities and explicitly accounts for pending work.
+Use the [paired-run recipe](../content/cookbook/saved_run_comparison.md) to
+compare two runs on the same explicitly mapped scored originals.
 
 ```{eval-rst}
 .. autofunction:: pharmacophoremt.validation.summarize_screening_run
+
+.. autofunction:: pharmacophoremt.validation.compare_screening_runs
 
 .. autofunction:: pharmacophoremt.validation.summarize_screening_results
 

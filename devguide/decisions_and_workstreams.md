@@ -23,6 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#147 paired saved-run comparison](pending_proposals/compare_saved_screening_runs.md)
+is implemented after31missing-operation failures/one positive old-batch control.
+It reuses the existing public summary and exact old paired tail, with32initial
+focused passes and256distinct selected passes including33new guards. The exact
+public recipe, strict docs and administrative checks pass:301distinct selected
+cases overall. Exact owned installed receiving remains pending. Original fixture
+setup and Ruff failures are preserved.
+
 2026-11-08: [accumulated source checkpoint](saved_run_ci_checkpoint.md) is
 dispatched at frozen5c3cd64/attempt1 for#144/#145/#146. Source42436392248 has
 eight scientific cells/reporting active at initial capture; policy42436396390

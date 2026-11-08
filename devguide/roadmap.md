@@ -158,6 +158,14 @@ theme, separately from molecular throughput and full supported delivery.
 
 ## Current priority: classical consolidation
 
+[#147 paired saved-run comparison](pending_proposals/compare_saved_screening_runs.md)
+adds the missing direct comparison of verified runs with explicit original-cohort
+mapping. It reuses the public run summary and one unchanged paired-statistics
+tail; original batch schemas/formulas stay guarded. Missing-operation controls
+are observed before implementation;301distinct selected source cases, the exact
+recipe and strict full documentation pass. Exact owned installed receiving is
+next, separate from the frozen running CI and full supported/public gates.
+
 The [saved-run accumulated source checkpoint](saved_run_ci_checkpoint.md)
 is running at exact5c3cd64/attempt1 after#144/#145/#146. Initial native policy/
 publication-governance steps pass; eight scientific cells/reporting remain

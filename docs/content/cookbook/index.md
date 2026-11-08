@@ -49,6 +49,7 @@ prepared_eralpha_interface
 excluded_volumes
 retrospective_validation
 saved_run_analysis
+saved_run_comparison
 attribution
 viewer_addon
 eralpha_input_audit
@@ -86,6 +87,7 @@ eralpha_input_audit
 | Build exclusion spheres as an independent modeling step | [Excluded volumes](excluded_volumes.md): `get_excluded_volume_sites()` from cached heavy-atom geometry, composed with positive query sites |
 | Rank labeled molecules and inspect calculation failures | [Retrospective validation](retrospective_validation.md): `RetrospectiveValidator` |
 | Analyze a complete or interrupted saved run against an explicit labelled cohort | [Saved-run analysis](saved_run_analysis.md): `work_items()`, `summarize_screening_run` |
+| Compare two saved runs on the same scored original samples | [Paired saved-run analysis](saved_run_comparison.md): `compare_screening_runs` |
 | Keep software/method references and render a final bibliography | [Scientific attribution](attribution.md): `attribution()`, `attribution_report()` and Ackredit |
 | Inspect cached spherical pharmacophoric sites | [MolSysViewer addon](viewer_addon.md): installed discovery, explicit-unit rendering and exact owned-tag cleanup |
 | Audit the existing ERalpha snapshot before native modeling | [ERalpha input audit](eralpha_input_audit.ipynb): executed source-checkout notebook, with an explicit preparation gate |

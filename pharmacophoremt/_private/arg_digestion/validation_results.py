@@ -15,6 +15,10 @@ CONTRACTS = [
         admits="signature",
     ),
     FunctionContract(
+        caller="pharmacophoremt.validation.screening_runs.compare_screening_runs",
+        admits="signature",
+    ),
+    FunctionContract(
         caller="pharmacophoremt.validation.retrospective.__init__", admits="signature"
     ),
     # The selected evaluator is instance state, not a run argument. Forward its

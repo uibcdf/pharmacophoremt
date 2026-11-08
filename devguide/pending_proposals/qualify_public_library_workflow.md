@@ -14,6 +14,16 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Paired saved-run comparison — 2026-11-08 UTC
+
+[#147](compare_saved_screening_runs.md) adds direct comparison of two verified
+saved runs on their explicitly mapped common scored originals. Full arm evidence
+and missing/failure denominators remain intact. Implementation/focused controls
+reuse existing public summary and paired metric core;301distinct selected source
+cases, the exact recipe and strict full docs pass. Exact owned installed receiving
+remains pending. Frozen5c3cd64CI
+retains its own scope. No general collection, labels or biological claim follows.
+
 ## Saved-run cohort analysis — 2026-11-08 UTC
 
 [#146](../archive/summarize_saved_screening_run.md) implements public manifest iteration and

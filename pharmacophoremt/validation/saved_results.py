@@ -319,6 +319,43 @@ def summarize_screening_results(
     )
 
 
+def _compare(summaries, fractions, alpha):
+    """Compare admitted summaries on the original-order scored intersection."""
+    left, right = summaries.values()
+    if left["score_method"] != right["score_method"]:
+        _error("score_method", "paired arms require the same score criterion")
+    common = set(left["evaluated_indices"]) & set(right["evaluated_indices"])
+    rows = {
+        name: [row for row in summary["records"] if row["input_index"] in common]
+        for name, summary in summaries.items()
+    }
+    metrics = {
+        name: _metrics(selected, fractions, alpha) for name, selected in rows.items()
+    }
+    deltas = {
+        key: None
+        if value is None or metrics["baseline"][key] is None
+        else value - metrics["baseline"][key]
+        for key, value in metrics["comparison"].items()
+        if key not in {"n_evaluated", "n_actives", "n_inactives"}
+    }
+    return {
+        "schema": "pharmacophoremt.screening_comparison@1",
+        "score_method": left["score_method"],
+        "arms": summaries,
+        "common_subset": {
+            "input_indices": [row["input_index"] for row in rows["baseline"]],
+            "labels": [row["label"] for row in rows["baseline"]],
+            "scores": {
+                name: [row["score"] for row in selected]
+                for name, selected in rows.items()
+            },
+            "metrics": metrics,
+            "delta_comparison_minus_baseline": deltas,
+        },
+    }
+
+
 @signal(tags=["validation", "screening", "comparison"])
 @arg_digest(config=CONFIG)
 @attributed()
@@ -374,36 +411,4 @@ def compare_screening_results(
         summaries[name] = summarize_screening_results(
             cohort, **arm, ef_fractions=fractions, bedroc_alpha=alpha
         )
-    left, right = summaries.values()
-    if left["score_method"] != right["score_method"]:
-        _error("score_method", "paired arms require the same score criterion")
-    common = set(left["evaluated_indices"]) & set(right["evaluated_indices"])
-    rows = {
-        name: [row for row in summary["records"] if row["input_index"] in common]
-        for name, summary in summaries.items()
-    }
-    metrics = {
-        name: _metrics(selected, fractions, alpha) for name, selected in rows.items()
-    }
-    deltas = {
-        key: None
-        if value is None or metrics["baseline"][key] is None
-        else value - metrics["baseline"][key]
-        for key, value in metrics["comparison"].items()
-        if key not in {"n_evaluated", "n_actives", "n_inactives"}
-    }
-    return {
-        "schema": "pharmacophoremt.screening_comparison@1",
-        "score_method": left["score_method"],
-        "arms": summaries,
-        "common_subset": {
-            "input_indices": [row["input_index"] for row in rows["baseline"]],
-            "labels": [row["label"] for row in rows["baseline"]],
-            "scores": {
-                name: [row["score"] for row in selected]
-                for name, selected in rows.items()
-            },
-            "metrics": metrics,
-            "delta_comparison_minus_baseline": deltas,
-        },
-    }
+    return _compare(summaries, fractions, alpha)

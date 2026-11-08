@@ -103,3 +103,5 @@ Original attribution stays inside saved outcomes/source metadata. Enabling
 
 This completes a descriptive analysis workflow. Biological validation also needs
 admitted endpoints, preparation, independent splits and leakage/uncertainty controls.
+For two runs, use the [paired comparison](saved_run_comparison.md); it retains
+both complete summaries and recomputes metrics on their common scored originals.

@@ -1,0 +1,43 @@
+{
+  "schema": "pharmacophoremt.paired-saved-run-plan@1",
+  "declared_at_utc": "2026-11-08T02:09:05.940290+00:00",
+  "source_parent": "6bc4f6c81a5b37d45f4367adf74fec31b900360f",
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/147",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "public_operation": "validation.compare_screening_runs(cohort, baseline, comparison, *, ef_fractions=(0.01,0.05,0.1), bedroc_alpha=20.0)",
+  "ownership": "PHMT validation orchestration; reuse public summarize_screening_run and factor existing private paired tail once; no molecular/provider work.",
+  "output_schema": "pharmacophoremt.screening_run_comparison@1",
+  "oracles": "Sparse six-sample original cohort; baseline2scored/1nativefailed/2pending/1upstream; comparison3scored/1nativefailed/1pending/1upstream. Common original indices30(label1),5(label0), zero scores eligible: baseline[1,0], comparison[0,1], AUC/BEDROC1->0, EF50%2->0, paired deltas-1/-1/-2. Different work keys and duplicate source identities cannot infer correspondence.",
+  "guards_before_implementation": [
+    "Missing public operation red controls and positive existing-batch refusal",
+    "Exact partial-arm and paired denominators/order/metrics/deltas; swap/self/empty/singleclass/allpending",
+    "Strict descriptors, mapping/labels/criterion, real closed/wrong views",
+    "Detachment, original bytes/native indices/source attribution, no molecular reexecution",
+    "Original batch comparison schemas/metric definitions and real optional enclosing-session attribution"
+  ],
+  "resources": "CPU19, backendthreads1, nice19 idleIO, DATA512MiB native import; pure admin AS512MiB; memory/pressure admission; no own aggregate/cgroup/swap/quota. No repeat of exhausted seeded/native optional-adapter local case.",
+  "source_selection": "New paired module plus existing eleven-module223case receiving selection; explicitly excludes previously failed seeded scoring file. Original broader failure remains failed; selected receiving does not replace full source/public/platform gates.",
+  "receiving": "Source recipe and selected guards, then one exact owned wheel outside checkout with original case/fixture hashes and qualified shared loaded-origin guard. No prefix/provider/native mutation or release.",
+  "existing_full_source": "42436392248/attempt1 frozen5c3cd64; this later increment remains separate debt under9.",
+  "initial_scientific_files": {
+    "pharmacophoremt/validation/metrics.py": {
+      "bytes": 4877,
+      "sha256": "272cd4b0df06a2549c125faaeac8ed35f22e46764d4007806726fdb5a2bacd23"
+    },
+    "pharmacophoremt/validation/retrospective.py": {
+      "bytes": 6744,
+      "sha256": "d156cde37234a5f8fa898470573cd909cebe2e5c232bfec0ebd5c5c66fd395a8"
+    },
+    "pharmacophoremt/validation/saved_results.py": {
+      "bytes": 16393,
+      "sha256": "729b6428be27b974df4561f90d6f68e0d88c65c4c6060337ab5e0f0beccf4aee"
+    },
+    "pharmacophoremt/validation/screening_runs.py": {
+      "bytes": 6297,
+      "sha256": "d8ef46fcbc712247f9172c231b0e17067f22d9288d6485f54971b4e5669d1063"
+    }
+  }
+}

@@ -12,6 +12,13 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
 ### Later development after the reviewed snapshot
 
+`validation.compare_screening_runs` now compares two verified saved runs against
+the same explicitly mapped cohort, preserving both complete summaries and
+recomputing paired metrics on their common scored originals. It retains native
+indices and separate pending/failure/upstream counts. See the
+[paired-run recipe](../cookbook/saved_run_comparison.md). Selected source/owned
+installed receiving is pending for this later operation; no release is selected.
+
 Verified saved runs now expose ordered `ScreeningRunView.work_items()`, including
 pending identities. `validation.summarize_screening_run` maps an explicitly
 labelled original cohort to those work keys and reuses the existing metrics

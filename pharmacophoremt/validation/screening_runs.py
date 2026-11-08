@@ -16,6 +16,7 @@ from pharmacophoremt._private.arg_digestion.validation_results import CONFIG
 from .saved_results import (
     _causes,
     _cohort,
+    _compare,
     _error,
     _index,
     _records,
@@ -148,4 +149,74 @@ def summarize_screening_run(
             None if outcome is None else dict(outcome, native_result=native)
         )
         row["work_item"] = deepcopy(work_by_original.get(index))
+    return result
+
+
+@signal(tags=["validation", "screening", "saved_run", "comparison"])
+@arg_digest(config=CONFIG)
+@attributed()
+def compare_screening_runs(
+    cohort, baseline, comparison, *, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0
+):
+    """Compare two verified saved runs on the same scored original samples.
+
+    Parameters
+    ----------
+    cohort : list of dict
+        The shared original labelled cohort accepted by summarize_screening_run.
+        Original indices are unique nonnegative integers, and labels are binary
+        integers. Sparse/reordered indices and repeated source keys are allowed;
+        the caller owns label authority, chemical identity and independence.
+    baseline, comparison : dict
+        Each contains a caller-owned open ``run_view``, complete explicit
+        ``input_mapping`` and ``score_method``, plus optional ``unscored`` and
+        ``source_metadata`` accepted by summarize_screening_run. Both criteria
+        must agree. Work keys may differ: only the declared original input
+        mapping determines correspondence. Native batch indices remain original.
+    ef_fractions, bedroc_alpha
+        Identical existing metric settings for both complete arms and the
+        common scored subset. No new metric definition or imputation is used.
+
+    Returns
+    -------
+    dict
+        Schema ``pharmacophoremt.screening_run_comparison@1`` with complete
+        detached run summaries and recomputed common-subset statistics/deltas.
+        The intersection preserves original cohort order and includes zero
+        scores; pending, native-failed and upstream-unavailable samples remain
+        separately counted in their full arms. Undefined metrics/deltas are None.
+
+    Notes
+    -----
+    Views stay open and owned by the caller. No molecular access, reexecution,
+    aggregation, work-key matching or source re-attribution occurs. Different
+    queries/producers remain inspectable. Comparing the scored intersection
+    does not remove selection bias, establish chemical/assay independence or
+    demonstrate predictive/biological validity. Original source attribution is
+    preserved separately from credit for newly executed analysis operations.
+    """
+    fractions, alpha = _settings(ef_fractions, bedroc_alpha)
+    summaries = {}
+    for name, arm in (("baseline", baseline), ("comparison", comparison)):
+        if (
+            not isinstance(arm, dict)
+            or not {"run_view", "input_mapping", "score_method"} <= arm.keys()
+            or arm.keys()
+            - {
+                "run_view",
+                "input_mapping",
+                "score_method",
+                "unscored",
+                "source_metadata",
+            }
+        ):
+            _error(
+                name,
+                "expected a verified run view, mapping, criterion and optional causes/source metadata",
+            )
+        summaries[name] = summarize_screening_run(
+            cohort=cohort, **arm, ef_fractions=fractions, bedroc_alpha=alpha
+        )
+    result = _compare(summaries, fractions, alpha)
+    result["schema"] = "pharmacophoremt.screening_run_comparison@1"
     return result
