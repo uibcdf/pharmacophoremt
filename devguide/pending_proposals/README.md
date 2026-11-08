@@ -6,9 +6,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (3)
+### Active (2)
 
-- [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(active, reproduced)*
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 

@@ -16,12 +16,13 @@ supersedes: []
 
 ## Paired saved-run comparison — 2026-11-08 UTC
 
-[#147](compare_saved_screening_runs.md) adds direct comparison of two verified
+[#147](../archive/compare_saved_screening_runs.md) adds direct comparison of two verified
 saved runs on their explicitly mapped common scored originals. Full arm evidence
 and missing/failure denominators remain intact. Implementation/focused controls
 reuse existing public summary and paired metric core;301distinct selected source
 cases, the exact recipe and strict full docs pass. Exact owned installed receiving
-remains pending. Frozen5c3cd64CI
+passes the same256bodies/35children and recipe with4actual attribution items/13uses,
+resolving the bounded bridge. Frozen5c3cd64CI
 retains its own scope. No general collection, labels or biological claim follows.
 
 ## Saved-run cohort analysis — 2026-11-08 UTC

@@ -10,7 +10,7 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#147 paired saved-run comparison](pending_proposals/compare_saved_screening_runs.md)
+[#147 paired saved-run comparison](archive/compare_saved_screening_runs.md)
 is implemented. Public validation.compare_screening_runs consumes two verified
 views with explicit original-cohort mappings and retains complete per-arm
 summaries. Shared scored originals determine paired metrics/deltas; zero scores,
@@ -25,8 +25,16 @@ The exact public paired recipe and strict full Sphinx/source rendering pass;
 all four public analytical function anchors and work_items are verified. Initial
 fixture/missing-operation/Ruff failures and both256-case passing runs remain
 preserved. The final recipe's260935680byte whole-process RSS and unchanged
-provider Python/native fingerprints retain their own scope. Exact owned
-installed receiving is next; full scientific/public/platform gates remain open.
+provider Python/native fingerprints retain their own scope.
+[Exact owned installed receiving](evidence/saved_run_comparison_installed_20261108_summary.json)
+passes the same256original bodies,35guarded children and exact recipe outside
+checkout with -I-S-B. Implementation1392bad owns wheel0.4.0+165.g1392bad;
+211payload/156nongenerated runtime files and854original fixtures authenticate,
+with152loaded runtime modules verified by the qualified SDK. Real optional
+attribution retains4items/13uses and the enclosing application session. Read-only
+refresh of an outdated Sabueso finder declaration and the failed premature
+harness launch remain preserved; the same wheel passes without prefix/provider/
+native change. The bounded bridge resolves; full supported gates remain open.
 
 [#146 single-run cohort analysis](saved_run_analysis.md) and
 [#145 immutable progress reuse](saved_progress_reuse.md) retain their original
@@ -37,19 +45,20 @@ feedback; it is not retried or replaced by the accepted eleven-module223case
 selection plus new33. No provider/prefix/native or budget change occurs.
 
 The [accumulated source checkpoint](saved_run_ci_checkpoint.md) remains frozen
-at5c3cd64/attempt1: source42436392248 has both Python3.14cells completed
-successfully and six still executing at the current API observation. Reporting,
+at5c3cd64/attempt1: source42436392248 has both Python3.14cells and Linux3.11
+completed successfully, with five still executing at the current API observation. Reporting,
 policy42436396390 and publication governance42436399981 pass. Complete source/
 log/coverage acceptance remains pending; the last full accepted source is still
 [8db2a53](boundary_ci_checkpoint.md),2357cases per eight cells. New#147source is
 later and retains separate#9debt. Do not relabel or redispatch the existing runs.
 
-**Next concrete action:** build one owned wheel from a clean implementation
-commit and receive the same256original bodies and exact paired recipe outside
-checkout using the qualified SDK origin guard. Receive the already-running
-frozen source handles when terminal, requiring full native/log/coverage facts.
-Preserve full#23provider/public/installed/platform debt and the original local
-resource failure. The mature0.x goal is active; no release is selected.
+**Next concrete action:** receive the already-running frozen source handles
+when terminal, requiring full native/log/coverage facts; do not redispatch or
+relabel them as#147coverage. Independently verify current public MolSysMT
+availability for the existing modern-provider gate under#23/#95 before choosing
+a new solve/receiving route; earlier public-prefix facts retain their old date.
+Preserve full supported installed/platform debt and the original local resource
+failure. The mature0.x goal is active; no release is selected.
 
 ## Active public integration
 

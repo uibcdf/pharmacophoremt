@@ -1,0 +1,157 @@
+{
+  "schema": "pharmacophoremt.paired-saved-run-installed@1",
+  "recorded_at_utc": "2026-11-08T02:34:40.367920+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/147",
+  "qualification": {
+    "schema": "pharmacophoremt.paired-saved-run-installed-qualification@1",
+    "source_commit": "1392bad3c8efc479b769aa5c6f1e3d9871bdaee7",
+    "version": "0.4.0+165.g1392bad",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-paired-runs-20261108-dcafnmh0/wheels/pharmacophoremt-0.4.0+165.g1392bad-py3-none-any.whl",
+      "bytes": 4524546,
+      "sha256": "278461bf01595970e760ee5d2cb577ab3cf331e52f3128408f0d6033587b15d0"
+    },
+    "original_bodies": 256,
+    "original_guarded_children": 35,
+    "loaded_runtime_modules": 152,
+    "original_fixture_files": 854,
+    "verified_wheel_payload_files": 211,
+    "nongenerated_runtime_files_equal": 156,
+    "original_bodies_inputs_unchanged": true,
+    "provider_python_native_files_unchanged": true,
+    "forbidden_import_attempts": [],
+    "recipe_blocks": 1,
+    "recipe_common_subset": {
+      "input_indices": [
+        10,
+        3
+      ],
+      "labels": [
+        1,
+        0
+      ],
+      "scores": {
+        "baseline": [
+          1.0,
+          0.0
+        ],
+        "comparison": [
+          0.0,
+          1.0
+        ]
+      },
+      "metrics": {
+        "baseline": {
+          "n_evaluated": 2,
+          "n_actives": 1,
+          "n_inactives": 1,
+          "AUC": 1.0,
+          "BEDROC": 1.0,
+          "EF@50%": 2.0
+        },
+        "comparison": {
+          "n_evaluated": 2,
+          "n_actives": 1,
+          "n_inactives": 1,
+          "AUC": 0.0,
+          "BEDROC": 0.0,
+          "EF@50%": 0.0
+        }
+      },
+      "delta_comparison_minus_baseline": {
+        "AUC": -1.0,
+        "BEDROC": -1.0,
+        "EF@50%": -2.0
+      }
+    },
+    "peak_rss_bytes": 390557696,
+    "accepted_installed_attempt": 4,
+    "earlier_failure": "Previous Sabueso finder no longer exists; original preparation writes no plan. Premature attempt3 fails before testing. Current declarations are read without executing .pth, with exactly the same namespace/root admission; same owned wheel is retained.",
+    "current_provider_declarations": "provider_plan_refresh.json",
+    "companion_python_byte_comparison": {
+      "new_wheel": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-paired-runs-20261108-dcafnmh0/wheels/pharmacophoremt-0.4.0+165.g1392bad-py3-none-any.whl",
+        "bytes": 4524546,
+        "sha256": "278461bf01595970e760ee5d2cb577ab3cf331e52f3128408f0d6033587b15d0"
+      },
+      "previous_wheel": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-summary-20261108-gc9t0v58/wheels/pharmacophoremt-0.4.0+162.gcc26d45-py3-none-any.whl",
+        "bytes": 4523599,
+        "sha256": "bbce52ee0b03ccc86fee901e254b1f60753575a25109edce1c6a3f7a9b5e0f6e"
+      },
+      "equal_python_files": [
+        "pharmacophoremt_results/__init__.py",
+        "pharmacophoremt_results/__main__.py",
+        "pharmacophoremt_results/_api.py",
+        "pharmacophoremt_results/_diagnostics.py",
+        "pharmacophoremt_results/_digestion.py",
+        "pharmacophoremt_results/_exports.py",
+        "pharmacophoremt_results/_meta.py",
+        "pharmacophoremt_results/_smonitor.py",
+        "pharmacophoremt_results/_store.py"
+      ],
+      "scope": "Byte-equal unchanged companion, not another independent published-support reader run or whole public delivery claim."
+    },
+    "real_optional_attribution": {
+      "items": 4,
+      "uses": 13,
+      "application_session_preserved": true,
+      "supplement": {
+        "path": "saved_run_comparison_attribution_20261108.json",
+        "bytes": 59426,
+        "sha256": "24c8e1da191d309e218471ffdfa06ede9c9a71e53a37a37a3a13676877cb0343"
+      }
+    },
+    "agent_modified_shared_prefix": false,
+    "scope": "Same256original bodies and exact paired recipe; PHMT runtime wheel-only outside checkout, explicit current existing source-provider declarations with the same admitted namespaces/roots, no .pth startup or complete public solve. Original broader native/resource route remains failed; companion runtime unchanged.",
+    "source_receipt": "saved_run_comparison_source_20261108_summary.json",
+    "limits": "One owned Linux/Python3.14 installed scientific/reader selection with explicit existing source-provider declarations. Authenticated released support payloads in the build record are not executed as an independent reader context here. No complete public dependency solve, supported installed-platform matrix, biological/performance/release or later full-source claim."
+  },
+  "resources": {
+    "build": {
+      "rlimit_data_per_process_bytes": [
+        536870912,
+        536870912
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "aggregate_memory_swap_tasks_cpu_quota": "not enforced; user systemd bus unavailable",
+      "rlimit_as": "not imposed for Git pack file mappings"
+    },
+    "receiving": {
+      "data_limit": [
+        536870912,
+        536870912
+      ],
+      "as_limit": [
+        -1,
+        -1
+      ],
+      "cpu": [
+        19
+      ],
+      "nice": 19,
+      "peak_rss_bytes": 390557696,
+      "memory_entry": "MemTotal:       63455508 kB\nMemFree:        11988308 kB\nMemAvailable:   56632932 kB\nBuffers:          722104 kB\nCached:         43482948 kB\nSwapCached:           48 kB\nActive:          7144448 kB\nInactive:       41652592 kB\nActive(anon):    4732992 kB\nInactive(anon):   237776 kB\nActive(file):    2411456 kB\nInactive(file): 41414816 kB\nUnevictable:        9172 kB\nMlocked:            9172 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388556 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              3920 kB\nWriteback:             0 kB\nAnonPages:       4602040 kB\nMapped:           977544 kB\nShmem:            372612 kB\nKReclaimable:    1478684 kB\nSlab:            1877960 kB\nSReclaimable:    1478684 kB\nSUnreclaim:       399276 kB\nKernelStack:       15264 kB\nPageTables:        33380 kB\nSecPageTables:      7096 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:   10469700 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      222728 kB\nVmallocChunk:          0 kB\nPercpu:            48192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:     28672 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    585728 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      329504 kB\nDirectMap2M:     4792320 kB\nDirectMap1G:    63963136 kB\n",
+      "pressure_entry": "some avg10=0.00 avg60=0.00 avg300=0.00 total=16219\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=15868\n",
+      "aggregate_cgroup_swap_tasks_quota": "not enforced"
+    }
+  },
+  "resource_review_utc": "2026-11-22",
+  "publication_scope": "Owned controls/test/recipe text, synthetic analytical output, portable attribution and scalar/hash/import/child/event facts. No private original database/query/native/provider/wheel bodies or generated third-party theme payloads.",
+  "limits": "One owned Linux/Python3.14 installed scientific/reader selection with explicit existing source-provider declarations. Authenticated released support payloads in the build record are not executed as an independent reader context here. No complete public dependency solve, supported installed-platform matrix, biological/performance/release or later full-source claim.",
+  "own_files": 161,
+  "full_evidence": {
+    "path": "saved_run_comparison_installed_20261108_full.json.gz",
+    "compressed_bytes": 582450,
+    "compressed_sha256": "78a3a119c971023823ee50158c7b76ac8142685243d68b8fce68a626f77e3c05",
+    "uncompressed_bytes": 5063007,
+    "uncompressed_sha256": "82a8bc72abaa6ae222c6aa1225174eb8165e919ed2cea28ed6b7c1fe24be053d"
+  }
+}

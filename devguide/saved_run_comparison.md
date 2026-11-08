@@ -1,10 +1,10 @@
 # Paired saved-screening-run cohort analysis
 
 Owners LMMV/dprada; [#147](https://github.com/uibcdf/pharmacophoremt/issues/147),
-[owning report](pending_proposals/compare_saved_screening_runs.md).
+[owning report](archive/compare_saved_screening_runs.md).
 The public operation is implemented. Selected source256cases, including33new
 controls, and the exact analytical public recipe pass. Strict docs/administrative
-checks pass; exact owned installed receiving is pending. Full supported gates
+checks and one exact owned installed artifact pass. Full supported gates
 are separate. Both complete arm summaries are materialized; memory grows with
 the cohort size and retained native evidence.
 
@@ -69,10 +69,47 @@ Distribution24/reporting3/archive18controls, full Ruff check/format, declared
 routes and indexes pass:301distinct selected cases overall. Strict full Sphinx
 HTML with notebook execution off passes; actual rendered HTML contains all four
 analytical public function anchors, the work_items method and the new recipe,
-without literal RST directives. Exact owned installed receiving remains pending.
+without literal RST directives. Subsequent exact installed receiving is below.
 
 This receiving uses the previously accepted eleven-module223case slice plus
 new33guards. The broader #146 seeded/native/resource scope remains failed and
 is not retried, narrowed silently or reassigned to this passing selection.
 Existing full hosted source42436392248/attempt1 remains frozen at5c3cd64; all
 later source, full public/provider/installed-platform and release gates stay open.
+
+## Exact installed receiving, 2026-11-08
+
+The [installed receipt](evidence/saved_run_comparison_installed_20261108_summary.json)
+authenticates one wheel0.4.0+165.g1392bad from implementation
+1392bad3c8efc479b769aa5c6f1e3d9871bdaee7,4524546bytes,SHA-256
+`278461bf01595970e760ee5d2cb577ab3cf331e52f3128408f0d6033587b15d0`.
+All211payload/156nongenerated runtime files and854original copied unshipped
+fixture files authenticate. Outside checkout with -I-S-B, all256same original
+bodies,35guarded fresh children and the exact paired recipe pass. Qualified
+SDK1c248b6 verifies152loaded runtime modules in the installed target; forbidden
+source imports remain absent. Whole-parent-process RSS390557696bytes includes
+tests/imports/provider fingerprints/recipe, separate from incremental comparison
+memory or aggregate child limits. Source301 and installed256 retain overlapping
+case identities and are not summed as independent scientific cases.
+
+The original preparation reuses a historical Sabueso finder declaration that no
+longer exists; its premature attempt3 fails before tests because no plan exists.
+Read-only inspection of current finder declarations admits the exact same
+namespaces/provider roots without executing .pth files. Attempt4 then passes
+on the original unchanged wheel. Shared prefix/providers/native artifacts and
+budgets are not modified. The first sealing checker mistakenly compares the
+children list to integer35; correcting its count check leaves original receiving
+unchanged. Original helper/disposition and all failed attempt receipts remain
+local; executed failures are not rewritten as passes or upstream defects.
+
+The [real attribution supplement](evidence/saved_run_comparison_attribution_20261108.json)
+executes the six-sample paired fixture through the installed API in an enclosing
+application session, retaining4items/13uses and the complete portable graph.
+Native/source attribution and original bytes stay unchanged. This is additional
+receiving, not an independent guard or molecular calculation. Nine companion
+Python files remain byte equal to earlier wheel162; its separate published-
+support reader receiving retains its old producer and is not rerun here.
+
+The bounded bridge is resolved under#147. Full exact-head source, fresh complete
+public dependency/installed supported-platform, biological/human-usability,
+molecular performance and mature0.x release gates retain their own acceptance.
