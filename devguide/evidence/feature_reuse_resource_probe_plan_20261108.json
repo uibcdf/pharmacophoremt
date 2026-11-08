@@ -1,0 +1,41 @@
+{
+  "schema": "pharmacophoremt.feature-reuse-resource-probe-plan@1",
+  "declared_at_utc": "2026-11-08T06:00:24.315664+00:00",
+  "issue": 148,
+  "declaration_comment": 6717982897,
+  "parent_source": "b56447b2910ade25fd1e0171b9cf766f4f1da1af",
+  "scope": "One managed GitHub VM, standard OS transient service; no local service/native calculation or benchmark",
+  "memory_bytes": 536870912,
+  "swap_bytes": 0,
+  "tasks": 32,
+  "cpus": 1,
+  "quota_percent": 100,
+  "threads": 1,
+  "nice": 19,
+  "io": "idle",
+  "lifetime_seconds": 30,
+  "fixed_payload_bytes": 25165824,
+  "future_route_revalidation": "Required for every molecular job, with exact sources/providers/native/inputs and separate two-arm pilot",
+  "native_calculation_admitted": false,
+  "shared_workstation_route_admitted": false,
+  "preserve_existing_source_run": 42451906584,
+  "raw_retention_review": "2026-11-22",
+  "workflow": {
+    "path": ".github/workflows/feature_reuse_resource_probe.yaml",
+    "bytes": 10577,
+    "sha256": "f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0",
+    "dispatch": "Existing main only while live remote SHA equals reviewed producer; inspect complete exact-head workflow inventory before one-time request; uncertainty means observe, never automatic redispatch"
+  },
+  "primary_sources": [
+    "https://docs.github.com/en/actions/how-tos/manage-runners/github-hosted-runners/use-github-hosted-runners",
+    "https://www.freedesktop.org/software/systemd/man/latest/systemd.resource-control.html"
+  ],
+  "limits": "Controls plus a fixed 24MiB two-process smoke only. No stress, native compatibility, timing, shared-workstation resource route or input transfer is qualified. Original H5MSM/native payload restrictions remain; any later remote molecular work needs an authorized exact-input delivery route and new per-job admission.",
+  "preflight": {
+    "yaml_structure": true,
+    "shell_syntax": true,
+    "three_python_bodies_compile": true,
+    "three_inline_ruff_checks": true,
+    "initial_two_import_spacing_failures": "Preserved locally; no service or native execution occurred"
+  }
+}

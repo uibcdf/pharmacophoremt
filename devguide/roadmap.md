@@ -41,6 +41,12 @@ Selected source controls and the exact metadata-only recipe pass from source and
 one owned wheel. The same22bodies, original query and recipe retain separate
 source/owned runtime records; full supported gates stay open.
 
+The [#148 hosted scope probe](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
+now implements a fixed manual-only qualification of standard OS limits, with
+static controls passing. It has no native work or performance result. Actual
+hosted enforcement, authorized exact-input delivery and the declared native
+pilot remain prerequisites for molecular timing; local failures are preserved.
+
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public
 API/examples, appropriate scientific or technical evidence, checked installation,

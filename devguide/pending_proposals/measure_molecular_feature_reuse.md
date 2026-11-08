@@ -42,6 +42,13 @@ mechanisms stay with infrastructure#1/MolI#96; PHMT owns this workload/evidence.
 
 ## Acceptance and continuation
 
+An additional [hosted scope probe](../feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
+is now implemented as a manual-only workflow, with static shell/YAML/Python/lint
+checks passing. It has not been executed or received. Its fixed24MiB smoke tests
+the standard OS controls in a dedicated managed VM; it imports no molecule or
+provider and is separate from the native pilot. Keep local infrastructure and
+payload-transfer restrictions explicit; no performance qualification follows.
+
 Receive and verify the declared safe execution scope, exact source/providers/
 native artifact, and an actually equivalent shared arm through public tools.
 Run the separate two-arm admission pilot before the96timed arms. Retain source

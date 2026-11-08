@@ -100,7 +100,15 @@ reporting successful; policy42451909669 and no-build publication governance
 [initial receipt](evidence/plan_api_ci_initial_20261108.json) accepts no full
 source result or counts yet. Local work is bounded read-only evidence capture.
 
-**Next concrete action:** receive terminal facts for those existing handles:
+The [#148 hosted scope probe](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
+now has a fixed manual-only workflow and prospective declaration. Static syntax
+and inline lint checks pass; no service, native workload or timing has executed.
+It will test standard OS controls plus a24MiB smoke in a dedicated VM, preserving
+the original local failure, fixed budget and input-publication restrictions.
+
+**Next concrete action:** dispatch that bounded scope probe once at its verified
+source, then receive actual controls. In parallel receive terminal facts for
+the existing scientific handles:
 full eight-cell tests, interpreter/architecture/acquisition and coverage. Do not
 redispatch either27c1178or the completed5c3cd64runs. Native#148still requires a
 safe route and qualified shared arm before its pilot; no exhausted native case

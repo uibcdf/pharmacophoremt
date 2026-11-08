@@ -117,6 +117,37 @@ execution architecture remains [MolI#96](https://github.com/uibcdf/moli/issues/9
 
 ## Evidence and continuation
 
+### Hosted scope probe, declared 2026-11-08 UTC
+
+The [prospective recovery declaration](https://github.com/uibcdf/pharmacophoremt/issues/148#issuecomment-6717982897)
+now has one manual-only [workflow](../.github/workflows/feature_reuse_resource_probe.yaml)
+and a [fixed probe plan](evidence/feature_reuse_resource_probe_plan_20261108.json).
+No hosted probe has yet been received. GitHub documents a
+[fresh VM per configured job](https://docs.github.com/en/actions/how-tos/manage-runners/github-hosted-runners/use-github-hosted-runners).
+This case invokes standard systemd-run only on that job's VM. It requests an own
+short-lived unprivileged service with the same512MiB aggregate/zero-swap/32-task/
+one-CPU budget, actual affinity, nice19/idleI/O and one backend thread. It must
+verify its own kernel controls and child membership before a fixed24MiB
+two-process smoke. Requested properties alone do not qualify enforcement.
+
+The standard [systemd resource controls](https://www.freedesktop.org/software/systemd/man/latest/systemd.resource-control.html)
+own enforcement. This workflow is a case-specific boundary check, with no PHMT
+executor/resource API or changes to the shared workstation. It imports no
+molecular library and transfers no source/native/H5MSM payload. Local shell/YAML/
+three-Python-body syntax and inline lint checks pass. Two initial import-spacing
+failures are retained; entry/child ASTs are unchanged, and the parent differs
+only in nested child-source whitespace. It does not run a
+native driver, pilot or timing schedule. Support-library scientific/quantity/
+public-argument boundaries are absent from this OS-only check.
+
+Receive the actual exact-head run and native control output before accepting even
+this bounded route. Missing/ineffective limits fail closed. Successful controls
+would qualify only that observed hosted context and small smoke; every molecular
+job still needs new admission, exact provider/native/input identity and the
+separate declared pilot. Before remote molecular work, establish an authorized
+delivery route for the exact frozen inputs under their original restrictions.
+The current local route and original DATA failure retain their own dispositions.
+
 The [declaration receiving receipt](evidence/feature_reuse_profile_declaration_20261108_summary.json)
 records focused offline guards, actual input
 hash verification and reporting/lint checks. These establish declaration and

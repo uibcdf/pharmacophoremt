@@ -1,0 +1,187 @@
+name: Feature-reuse resource probe
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: feature-reuse-resource-probe-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    if: github.repository == 'uibcdf/pharmacophoremt' && github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.14'
+      - name: Verify the fixed hosted scope without molecular work
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$RUNNER_ENVIRONMENT" = github-hosted
+          test -d /run/systemd/system
+          test -f /sys/fs/cgroup/cgroup.controllers
+          systemd-run --version
+          phmt_probe_dir=$(mktemp -d "$RUNNER_TEMP/phmt148-scope.XXXXXX")
+          phmt_probe_python=$(command -v python)
+          phmt_probe_cpu=$(python -I -S -B -c 'import os; print(max(os.sched_getaffinity(0)))')
+          phmt_probe_uid=$(id -u)
+          phmt_probe_gid=$(id -g)
+          phmt_probe_unit="phmt148-probe-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}.service"
+          test "$phmt_probe_uid" -ne 0
+          python -I -S -B - <<'PYTHON'
+          import json
+          import os
+          import time
+          from pathlib import Path
+
+          swap_before = {key: int(value) for key, value in
+                         (row.split() for row in Path('/proc/vmstat').read_text().splitlines())
+                         if key in {'pswpin', 'pswpout'}}
+          time.sleep(1)
+          swap_after = {key: int(value) for key, value in
+                        (row.split() for row in Path('/proc/vmstat').read_text().splitlines())
+                        if key in {'pswpin', 'pswpout'}}
+          memory = {row.split(':')[0]: int(row.split()[1]) * 1024
+                    for row in Path('/proc/meminfo').read_text().splitlines()
+                    if row.split(':')[0] in {'MemTotal', 'MemAvailable', 'SwapTotal', 'SwapFree'}}
+          psi = Path('/proc/pressure/memory').read_text()
+          print(json.dumps({'stage': 'hosted_entry', 'memory': memory,
+                            'memory_psi': psi, 'load': os.getloadavg(),
+                            'swap_pages_1s': {key: swap_after[key] - swap_before[key] for key in swap_before},
+                            'allowed_cpus': sorted(os.sched_getaffinity(0)),
+                            'scope_budget_bytes': 536870912,
+                            'supervisor_margin_bytes': 1610612736,
+                            'capacity_is_not_reserved': True}), flush=True)
+          assert memory['MemAvailable'] >= (memory['MemTotal'] + 4)//5 + 2147483648
+          assert all(float(row.split('avg10=')[1].split()[0]) < 1 for row in psi.splitlines())
+          assert swap_before == swap_after
+          PYTHON
+          cat > "$phmt_probe_dir/probe.py" <<'PYTHON'
+          import json
+          import os
+          import platform
+          import resource
+          import subprocess
+          import sys
+          import time
+          from pathlib import Path
+
+          unit, cpu_text, uid_text, gid_text = sys.argv[1:]
+          cpu, uid, gid = map(int, (cpu_text, uid_text, gid_text))
+          assert unit.startswith('phmt148-probe-') and unit.endswith('.service')
+          assert sys.version_info[:2] == (3, 14)
+          membership = Path('/proc/self/cgroup').read_text().strip()
+          assert membership.startswith('0::/system.slice/')
+          group = Path('/sys/fs/cgroup') / membership.split('::', 1)[1].lstrip('/')
+          assert group.name == unit
+          controls = {name: (group/name).read_text().strip() for name in
+                      ('memory.max', 'memory.swap.max', 'pids.max', 'cpu.max',
+                       'cpuset.cpus.effective', 'memory.current', 'memory.peak', 'memory.events')}
+          io_priority = subprocess.check_output(['/usr/bin/ionice', '-p', str(os.getpid())], text=True).strip()
+          print(json.dumps({'stage': 'own_controls', 'python': platform.python_version(),
+                            'architecture': platform.machine(), 'uid': os.getuid(), 'gid': os.getgid(),
+                            'cgroup': membership, 'controls': controls,
+                            'actual_affinity': sorted(os.sched_getaffinity(0)),
+                            'nice': os.getpriority(os.PRIO_PROCESS, 0), 'io_priority': io_priority,
+                            'rlimit_data': resource.getrlimit(resource.RLIMIT_DATA),
+                            'rlimit_as': resource.getrlimit(resource.RLIMIT_AS)}), flush=True)
+          assert os.getuid() == uid != 0 and os.getgid() == gid
+          assert controls['memory.max'] == '536870912'
+          assert controls['memory.swap.max'] == '0' and controls['pids.max'] == '32'
+          quota, period = map(int, controls['cpu.max'].split())
+          assert quota == period > 0
+          assert controls['cpuset.cpus.effective'] == str(cpu)
+          assert os.sched_getaffinity(0) == {cpu}
+          assert os.getpriority(os.PRIO_PROCESS, 0) == 19 and io_priority == 'idle'
+          assert resource.getrlimit(resource.RLIMIT_DATA) == (-1, -1)
+          assert resource.getrlimit(resource.RLIMIT_AS) == (-1, -1)
+          thread_names = ('OMP_NUM_THREADS', 'OPENBLAS_NUM_THREADS', 'MKL_NUM_THREADS',
+                          'NUMEXPR_NUM_THREADS', 'VECLIB_MAXIMUM_THREADS', 'RAYON_NUM_THREADS',
+                          'NUMBA_NUM_THREADS', 'BLIS_NUM_THREADS', 'GOMAXPROCS')
+          assert all(os.environ.get(name) == '1' for name in thread_names)
+          events_before = dict(row.split() for row in controls['memory.events'].splitlines())
+          assert all(int(events_before.get(name, 0)) == 0 for name in ('max', 'oom', 'oom_kill'))
+          parent_payload = bytearray(16 * 1024 * 1024)
+          for offset in range(0, len(parent_payload), 4096):
+              parent_payload[offset] = 1
+          child_code = """
+          import json
+          import os
+          import sys
+          from pathlib import Path
+
+          payload = bytearray(8 * 1024 * 1024)
+          for offset in range(0, len(payload), 4096):
+              payload[offset] = 1
+          print(json.dumps({'cgroup': Path('/proc/self/cgroup').read_text().strip(),
+                            'affinity': sorted(os.sched_getaffinity(0)), 'uid': os.getuid(),
+                            'held_bytes': len(payload)}), flush=True)
+          sys.stdin.buffer.read(1)
+          """
+          child = subprocess.Popen([sys.executable, '-I', '-S', '-B', '-c', child_code],
+                                   stdin=subprocess.PIPE, stdout=subprocess.PIPE, text=True)
+          try:
+              child_record = json.loads(child.stdout.readline())
+              assert child_record['cgroup'] == membership
+              assert child_record['affinity'] == [cpu] and child_record['uid'] == uid
+              samples = []
+              for index in range(2):
+                  memory = {row.split(':')[0]: int(row.split()[1]) * 1024
+                            for row in Path('/proc/meminfo').read_text().splitlines()
+                            if row.split(':')[0] in {'MemTotal', 'MemAvailable'}}
+                  psi = Path('/proc/pressure/memory').read_text()
+                  swap = {key: int(value) for key, value in
+                          (row.split() for row in Path('/proc/vmstat').read_text().splitlines())
+                          if key in {'pswpin', 'pswpout'}}
+                  samples.append({'memory': memory, 'memory_psi': psi, 'swap_pages': swap,
+                                  'cgroup_memory_current': int((group/'memory.current').read_text()),
+                                  'cgroup_memory_peak': int((group/'memory.peak').read_text()),
+                                  'cgroup_tasks_current': int((group/'pids.current').read_text())})
+                  assert memory['MemAvailable'] >= (memory['MemTotal'] + 4)//5 + 2147483648
+                  assert all(float(row.split('avg10=')[1].split()[0]) < 1 for row in psi.splitlines())
+                  assert samples[-1]['cgroup_memory_peak'] <= 536870912
+                  assert samples[-1]['cgroup_tasks_current'] <= 32
+                  if index == 0:
+                      time.sleep(1)
+              assert all(samples[1]['swap_pages'][key] == samples[0]['swap_pages'][key]
+                         for key in ('pswpin', 'pswpout'))
+              events_after = dict(row.split() for row in (group/'memory.events').read_text().splitlines())
+              assert all(int(events_after.get(name, 0)) == 0 for name in ('max', 'oom', 'oom_kill'))
+              child.communicate('x', timeout=5)
+              assert child.returncode == 0
+              print(json.dumps({'stage': 'bounded_probe_passed', 'child': child_record,
+                                'parent_held_bytes': len(parent_payload), 'samples': samples,
+                                'memory_events_after': events_after,
+                                'claim': 'Own kernel controls and a fixed 24MiB two-process smoke only; no native compatibility, stress, performance or shared-host qualification'}), flush=True)
+          finally:
+              if child.poll() is None:
+                  child.terminate()
+                  try:
+                      child.wait(timeout=3)
+                  except subprocess.TimeoutExpired:
+                      child.kill()
+                      child.wait()
+          PYTHON
+          sudo -n systemd-run --wait --pipe --collect --service-type=exec \
+            --unit="$phmt_probe_unit" --uid="$phmt_probe_uid" --gid="$phmt_probe_gid" \
+            --working-directory="$phmt_probe_dir" \
+            --property=MemoryMax=536870912 --property=MemorySwapMax=0 \
+            --property=TasksMax=32 --property=CPUQuota=100% \
+            --property="AllowedCPUs=$phmt_probe_cpu" --property="CPUAffinity=$phmt_probe_cpu" \
+            --property=Nice=19 --property=IOSchedulingClass=idle \
+            --property=RuntimeMaxSec=30s --property=TimeoutStopSec=5s \
+            --setenv=OMP_NUM_THREADS=1 --setenv=OPENBLAS_NUM_THREADS=1 \
+            --setenv=MKL_NUM_THREADS=1 --setenv=NUMEXPR_NUM_THREADS=1 \
+            --setenv=VECLIB_MAXIMUM_THREADS=1 --setenv=RAYON_NUM_THREADS=1 \
+            --setenv=NUMBA_NUM_THREADS=1 --setenv=BLIS_NUM_THREADS=1 --setenv=GOMAXPROCS=1 \
+            "$phmt_probe_python" -I -S -B "$phmt_probe_dir/probe.py" \
+            "$phmt_probe_unit" "$phmt_probe_cpu" "$phmt_probe_uid" "$phmt_probe_gid"

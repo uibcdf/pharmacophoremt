@@ -23,6 +23,13 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#148 hosted scope qualification](feature_reuse_measurement.md#hosted-scope-probe-declared-2026-11-08-utc)
+adds a manual-only OS probe using standard systemd controls in one managed VM.
+The fixed512MiB/zero-swap/32-task/one-CPU budget and24MiB smoke are separate from
+native compatibility, the two-arm pilot and timing. Static syntax/lint checks
+pass; actual receiving and any permitted remote input handoff remain pending.
+No shared-workstation control or scientific provider is changed.
+
 2026-11-08: the [next accumulated source checkpoint](plan_api_ci_checkpoint.md)
 freezes27c1178 for147/150and148/149developer controls with unchanged acquisition,
 workflows and policy. Existing source42451906584/attempt1 initially has eight
