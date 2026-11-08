@@ -1,0 +1,72 @@
+{
+  "schema": "pharmacophoremt.library-user-guide-receiving-summary@1",
+  "recorded_at_utc": "2026-11-08T04:09:28.726864+00:00",
+  "parent_source": "a7814982493f7afe809bc7a3cd86b42df4c3dfcc",
+  "issues": [
+    "https://github.com/uibcdf/pharmacophoremt/issues/108",
+    "https://github.com/uibcdf/pharmacophoremt/issues/149"
+  ],
+  "status": "source_documentation_navigation_received",
+  "guide": {
+    "file": "docs/content/user/chemical_libraries.md",
+    "bytes": 7383,
+    "sha256": "27525218626a8115632c043ed409237a558e2be5a1aacb7740737c8fddbd6597"
+  },
+  "verification": {
+    "strict_full_sphinx_attempt_exit_codes": [
+      1,
+      0,
+      0
+    ],
+    "final_footer_guards": 4,
+    "reporting_cases": 3,
+    "distinct_final_selected_cases": 7,
+    "initial_footer_guard_failures": 3,
+    "rendered_contributor_targets": 82,
+    "new_guide_local_links_fragments": 51,
+    "unchanged_recipe_executable_blocks": 6,
+    "new_guide_executable_blocks": 0,
+    "full_ruff_lint_passed": true,
+    "full_ruff_format_passed": true,
+    "index_check_passed": true,
+    "native_git_whitespace_check_passed": true,
+    "notebook_execution": "off"
+  },
+  "resources": {
+    "logical_cpus": 1,
+    "cpu_affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "docs_per_process_data_bytes": 536870912,
+    "docs_address_space_limit": "unlimited inherited",
+    "docs_aggregate_memory_swap_tasks_quota": "not enforced; no owned cgroup",
+    "estimated_docs_supervisor_group_envelope_bytes": 1073741824,
+    "reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "max_observed_own_supervisor_group_rss_bytes": 304570368,
+    "observation_interval_seconds": 2,
+    "docs_wall_limit_seconds": 90,
+    "resource_interruptions": 0,
+    "pure_guard_as_bytes": 268435456,
+    "native_tools_data_bytes": 536870912,
+    "scheduler": "One native read-only sinfo check in this increment: local invalid, other nodes unknown; no allocation submitted. Native148remains unadmitted."
+  },
+  "limits": "Documentation/template/guard receiving only; notebook execution disabled, six executable blocks unchanged, no molecular calculation, source acquisition, named connector, native timing, human usability or supported installed/public qualification.",
+  "publication": "Only owned source/controls/logs and scalar rendered-target/resource projections. Full generated HTML/themes, molecular inputs/native outputs and shared prefixes remain local.",
+  "retention": {
+    "capsule": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-library-user-guide-20261108-4tkc7bs2",
+    "owner": "LMMV/dprada",
+    "review_after": "2026-11-22",
+    "keep_until": "Owning108/149delivery review; never remove original H5MSM/shared environments or unrelated resources."
+  },
+  "full_evidence": {
+    "path": "library_user_guide_20261108_full.json.gz",
+    "compressed_bytes": 74972,
+    "compressed_sha256": "3ac29b6360a41af143fb4f5d231fc41455377fe19f5b371bccad5d1a6ddc5f40",
+    "uncompressed_bytes": 314653,
+    "uncompressed_sha256": "719dfb250f5ca52c73c609e42044e8f51bab6c526905952520ac55efcdc17568"
+  }
+}

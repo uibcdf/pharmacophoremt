@@ -31,6 +31,11 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
+now maps current source-operation coverage to the guided/expert screening and
+saved-result lifecycle. Its documentation receiving does not establish a new
+connector or representative human usability; those milestone gates stay open.
+
 Each intermediate version must let a user complete a concrete public task or
 substantially improve one. Its preparation names scope and acceptance, public
 API/examples, appropriate scientific or technical evidence, checked installation,

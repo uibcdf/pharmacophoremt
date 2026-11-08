@@ -23,6 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: the [chemical-library user guide](../docs/content/user/chemical_libraries.md)
+connects the source-operation matrix and guided/expert plan/run/resume/inspect/
+export routes. Existing executable examples are unchanged; strict rendering and
+the corrected link retain their own receipt. No named connector, new calculation,
+human-usability or installed/public qualification is inferred.
+The actual-link audit also resolves[#149](archive/docs_contributor_footer.md),
+with four template guards and82real footer targets verified.
+
 2026-11-08: [#148 molecular feature-reuse measurement](feature_reuse_measurement.md)
 declares48balanced pairs with charged inventory build cost and a separate
 two-arm pilot.22offline guards and three original snapshot hash checks pass.

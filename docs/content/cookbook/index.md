@@ -9,6 +9,9 @@ qualified molecular conformer ensembles.
 
 The native classical workflows include delivered 0.4.0 tools and later
 development-source additions; each recipe states its version/evidence scope.
+For a library task, start with the [chemical-library guide](../user/chemical_libraries.md)
+to choose the prepared-input lifecycle and understand current source-operation
+coverage before selecting a recipe.
 Start with the [qualified installation context](../about/installation.md). Recipes that import
 `devtools` use source-checkout fixtures, which are not installed runtime modules.
 Use your own prepared inputs in an application, and retain each recipe's declared

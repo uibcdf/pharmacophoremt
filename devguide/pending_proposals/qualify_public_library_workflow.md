@@ -14,6 +14,21 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## User-facing library workflow — 2026-11-08 UTC
+
+The [user guide](../../docs/content/user/chemical_libraries.md) now gives an
+explicit source-by-operation matrix and routes for incremental/recoverable
+screening, independent saved inspection/export and public expert composition.
+The user/cookbook entry points link it; four headings make the existing recovery
+recipe navigable without changing executable blocks. The
+[documentation receipt](../evidence/library_user_guide_20261108_summary.json)
+retains the initial unresolved RST-fragment link and corrected strict rendering,
+code-block identity and actual resource observations. This is source documentation
+receiving, not new source/provider integration or representative human usability.
+The real rendered-link audit also resolves[#149](../archive/docs_contributor_footer.md):
+the contributor footer delegates to Sphinx's path function. Four guards and all82
+rendered contributor links verify, with original failures retained.
+
 ## Molecular measurement declaration — 2026-11-08 UTC
 
 [#148](measure_molecular_feature_reuse.md) now owns the prospective native

@@ -20,6 +20,9 @@ inputs. Each recipe explains the corresponding class or public tool contract.
 
 ## Evaluate, screen and retain evidence
 
+- Start with [chemical-library screening](chemical_libraries.md) to distinguish
+  prepared-input support, the PubChem3D pilot and candidate libraries, then choose
+  incremental or recoverable screening and its public expert composition.
 - Read [constraint semantics](constraint_semantics.md) to interpret feature
   alternatives, shared participants, essential sites and construction defaults.
 - Follow the [prepared workflow](../cookbook/prepared_workflow.md) to connect a
@@ -44,6 +47,7 @@ Geometric coverage alone does not establish affinity or activity discrimination.
 
 constraint_semantics
 rdkit_interoperability
+chemical_libraries
 ```
 
 ## Find examples and reference material

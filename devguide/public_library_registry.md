@@ -1,11 +1,15 @@
 # Chemical-library registry
 
-Maintained 2026-11-06; accountable triage owners: PharmacophoreMT maintainers
+Maintained 2026-11-08; accountable triage owners: PharmacophoreMT maintainers
 LMMV/dprada. The user requested this dedicated public repository of candidate
 libraries, assessments, requirements and reasons why incorporation remains pending.
 
 ## Public entry points and durable destination
 
+- [User workflow and source-by-operation coverage](../docs/content/user/chemical_libraries.md)
+  connects prepared inputs, guided/expert screening and saved inspection/export.
+  Its matrix distinguishes a dated case from general connector support; it does
+  not change the initial source dispositions below.
 - [Chemical libraries category](https://github.com/uibcdf/pharmacophoremt/discussions/categories/chemical-libraries).
 - [Registry index and contribution guide](https://github.com/uibcdf/pharmacophoremt/discussions/109).
 - [Product issue #108](https://github.com/uibcdf/pharmacophoremt/issues/108) and

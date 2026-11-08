@@ -10,6 +10,21 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
+now connects source-operation coverage, prepared-input screening, plan/resume,
+independent inspection/export and expert composition. It links existing public
+recipes and distinguishes caller-supplied data, the fixed PubChem3D case and
+candidate resources. User/cookbook navigation and four recovery-recipe headings
+make those routes discoverable; executable examples remain unchanged. The
+[documentation receipt](evidence/library_user_guide_20261108_summary.json)
+retains the initial bad RST-fragment link and corrected strict rendering.
+This is documentation receiving, not a human usability study or new connector.
+The same audit resolves[#149](archive/docs_contributor_footer.md): Sphinx now
+generates contributor footer paths at every depth. Four actual-template guards
+pass after three original failures;82rendered footers/51guide links and six
+unchanged executable blocks verify. Original validator/index failures remain
+separate in the receipt; no scientific workflow is rerun.
+
 [#148 molecular feature-reuse measurement](feature_reuse_measurement.md) now has
 a prospective fixed declaration and an offline standard-library control. It fixes
 48pairs/96serial timed arms plus a separate two-arm pilot, balancing process order
@@ -20,30 +35,13 @@ user isolation is unavailable; the latest scheduler observation admits no usable
 allocation. The known DATA512MiB/native route is not retried or enlarged.
 
 [#147 paired saved-run comparison](archive/compare_saved_screening_runs.md)
-is implemented. Public validation.compare_screening_runs consumes two verified
-views with explicit original-cohort mappings and retains complete per-arm
-summaries. Shared scored originals determine paired metrics/deltas; zero scores,
-native failures, pending work and upstream unavailability retain their meanings.
-It calls the existing public run summary and one exact factored paired tail;
-original batch schemas/metric definitions and single-run summary stay guarded.
-
-[Selected source receiving](evidence/saved_run_comparison_source_20261108_summary.json)
-passes256distinct cases, including33new guards, plus
-24distribution/3reporting/18archive cases:301distinct selected cases overall.
-The exact public paired recipe and strict full Sphinx/source rendering pass;
-all four public analytical function anchors and work_items are verified. Initial
-fixture/missing-operation/Ruff failures and both256-case passing runs remain
-preserved. The final recipe's260935680byte whole-process RSS and unchanged
-provider Python/native fingerprints retain their own scope.
-[Exact owned installed receiving](evidence/saved_run_comparison_installed_20261108_summary.json)
-passes the same256original bodies,35guarded children and exact recipe outside
-checkout with -I-S-B. Implementation1392bad owns wheel0.4.0+165.g1392bad;
-211payload/156nongenerated runtime files and854original fixtures authenticate,
-with152loaded runtime modules verified by the qualified SDK. Real optional
-attribution retains4items/13uses and the enclosing application session. Read-only
-refresh of an outdated Sabueso finder declaration and the failed premature
-harness launch remain preserved; the same wheel passes without prefix/provider/
-native change. The bounded bridge resolves; full supported gates remain open.
+is implemented: explicit cohort mappings, full arm summaries and paired common
+scored originals preserve zero/failure/pending meanings. Its owning contract and
+[source](evidence/saved_run_comparison_source_20261108_summary.json)/[owned installed](evidence/saved_run_comparison_installed_20261108_summary.json)
+receipts retain301distinct selected source cases,256same installed bodies/
+35children, exact recipe, attribution4items/13uses and all original failures.
+Implementation1392bad owns wheel0.4.0+165.g1392bad; the bounded installed bridge
+resolves while full supported gates remain open.
 
 [#146 single-run cohort analysis](saved_run_analysis.md) and
 [#145 immutable progress reuse](saved_progress_reuse.md) retain their original
@@ -74,10 +72,10 @@ The historical public prefix is absent at the checked original/remapped paths;
 its old receipt is evidence, separate from an available runtime on this machine.
 
 **Next concrete action:** native#148work requires a verified safe execution route
-and a qualified shared scientific arm before its separate pilot. While that
-route is unavailable, audit the public-library source-by-operation coverage and
-guided/expert documentation under#108against actually delivered public tools;
-select a concrete independently testable user-workflow improvement.
+and a qualified shared scientific arm before its separate pilot. The independent
+user-guide coverage audit is now received. Next inspect the guided/expert API's
+plan visibility and input/error recovery against this documented user journey;
+select an observed, independently testable improvement under#108.
 Preserve#147full-source and public/installed-platform debt, the original local
 resource failure and the provider-owned collection/public-delivery gates. The
 mature0.x goal is active; no release is selected.

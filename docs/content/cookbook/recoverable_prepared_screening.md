@@ -8,6 +8,8 @@ full supported installed/public qualification remains pending. Use a qualified
 installation context and your own authorized,
 unchanged prepared artifacts.
 
+## Supply prepared inputs
+
 Supply `records` with `path`, `work_key`, `source_key` and `occurrence_key`, a
 native saved `query_path`, and fresh `manifest_path`, `run_path`, `jsonl_path`
 and `csv_path` destinations. Supply `compatibility` with explicit JSON values
@@ -22,6 +24,8 @@ an independent compound.
 The example chooses native rigid `seeded_hit` search with a finite10000-trial
 budget and frame/state0. Keep query, prepared data and settings unchanged while
 consuming. The application owns reader and optional attribution lifetimes.
+
+## Start and resume a run
 
 ```python
 import json
@@ -143,6 +147,8 @@ recovers it. Confirmed failures remain unscored and are not retried in that run.
 Changed settings, queries or a deliberate failure retry require a new run identity,
 optionally linked with `parent_run_id`, retaining the original evidence.
 
+## Read progress without screening
+
 Check saved progress without choosing a ranking criterion or loading the main
 scientific package:
 
@@ -159,6 +165,8 @@ Close the writer before opening a read view. Opening verifies all saved evidence
 the first progress call scans confirmed outcomes. Further calls on that same
 read-only view reuse detached counts. Close and reopen the view to inspect a
 later writer state. Writer progress remains fresh between writes.
+
+## Inspect and export the saved view
 
 To inspect observed ranks, choose the original scoring criterion explicitly:
 
