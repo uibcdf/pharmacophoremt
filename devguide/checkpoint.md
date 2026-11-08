@@ -10,62 +10,50 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#145 immutable saved-progress reuse](archive/reuse_saved_progress.md) is received
-in source and one exact owned installed wheel. Only factory-opened immutable
-views retain detached counts after the first successful progress scan; full
-admission, failure/score/attempt accounting, writer freshness and native
-connection/thread restrictions remain guarded. The [source receipt](evidence/saved_progress_reuse_source_20261108_summary.json)
-passes175distinct selected cases, including10new guards with the original five
-failures preserved. Nine declared same-input pairs receive exact counts, complete
-ranks/exports and original bytes. Repeated10000-record progress medians are
-497.892380ms baseline and0.103223ms reuse; first open/scan retain their cost.
+[#146 saved-run cohort analysis](archive/summarize_saved_screening_run.md) is
+received. `ScreeningRunView.work_items()` exposes all declared identities,
+including pending work; `validation.summarize_screening_run` maps explicit labels
+and original indices without inventing or rewriting native batch indices.
+Pending work, confirmed native failures, upstream unavailability and zero scores
+retain separate counts. Existing scientific metric definitions and batch schemas
+remain guarded. No molecular access, labels or chemical independence is inferred.
 
-[Owned installed receiving](evidence/saved_progress_reuse_installed_20261108_summary.json)
-passes the same67public reader/export/CLI/progress/reuse bodies,51guarded fresh
-children and16documented commands on four unchanged original databases.
-Producer2a0c4469e2aaeb257c8eca7a77e394711abbcd6f owns wheel0.4.0+160.g2a0c446;
-210payload/155nongenerated runtime files authenticate. The shared prefix/native
-providers remain unchanged. This is one Linux/Python3.14 installed-reader slice;
-no complete public dependency solve, molecular throughput or release follows.
-Changing companion source retains the fresh-linked-scientific-run requirement.
+The [source receipt](evidence/saved_run_analysis_source_20261108_summary.json)
+passes268distinct selected cases, including41new controls. The exact analytical
+public recipe and strict full Sphinx/source rendering pass; real API anchors are
+verified. Original failures and unchanged-definition proof remain in that receipt.
+[Exact owned installed receiving](evidence/saved_run_analysis_installed_20261108_summary.json)
+passes the same223original bodies,35guarded fresh children and the recipe outside
+checkout with -I-S-B. The same artifact separately passes75overlapping independent
+reader bodies,52guarded children and16documented commands on four unchanged
+historical databases with published support payloads. Producer
+cc26d45909728c0bf0b92fc690287bef6a538c48 owns wheel0.4.0+162.gcc26d45;
+211payload/156nongenerated runtime files authenticate. The
+[real attribution supplement](evidence/saved_run_analysis_attribution_20261108.json)
+retains4items/12uses and the caller's session without source recredit.
 
-The last full hosted [source checkpoint](boundary_ci_checkpoint.md) remains exact
-8db2a53f91a3686088874f965d389e636003d990/attempt1: sourceCI42421360591 passes2357
-cases in each of eight Linux/macOS Python3.11–3.14cells. Reporting, policy42421364958
-and publication42421369303 pass; all eight XMLs preserve105qualified files and
-native Linux3.13 uploads pass. [Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json)
-retains its dated owner-head/local-byte scope. Later profiling/recovery/reuse
-source is not covered or relabeled; current-head debt remains#9.
+The original broader local12module native selection remains failed. An OpenMM
+adapter cannot map a shared-object segment under the existing512MiB DATA cap;
+older MolSysMT masks its cause as invalid XYZ input, then pytest formatting
+exhausts allocation headroom. The [existing owner issue601](https://github.com/uibcdf/molsysmt/issues/601#issuecomment-6715418869)
+receives the exact older-context diagnosis and component label; its current
+correction is not requalified here. No provider/prefix/native or budget change
+occurs. Accepted source/installed slices do not replace that broader native gate.
 
-Earlier [RDKit projection](rdkit_projection.md), [Point inspection](native_geometry_inspection.md),
-[analytical fixture correction](rdkit_bounds_comparison.md), [canonical record readback](evidence/rdkit_record_correction_20261107.json)
-and [saved-reader baseline/recovery](saved_run_scaling.md) retain their original
-source, wheel and failed/successful run identities. Failed489be12 and successful
-8db2a53 remain distinct. The preceding detailed section is preserved in
+The last full hosted [source checkpoint](boundary_ci_checkpoint.md) remains
+8db2a53/attempt1: CI42421360591 passes2357cases in each of eight Linux/macOS Python3.11–3.14
+cells; reporting, policy42421364958 and publication42421369303 pass, with corrected
+qualified coverage. Later#144/#145/#146heads retain source debt under#9.
+[#145](saved_progress_reuse.md) keeps its earlier nine synthetic pairs
+and repeated-snapshot benefit, not a molecular speed claim. Earlier source,
+artifact and failed/successful identities remain in owning contracts and
 [checkpoint history](checkpoint_history_20261107.md).
 
-The next audit confirms existing#100/#6 saved-result contracts are already
-received. It identifies a separate [saved-run analysis gap](saved_run_analysis.md)
-under#146: prepared outcomes have no batch indices, and pending manifest identities
-were not publicly iterable. Public `work_items()` and `summarize_screening_run`
-are now implemented over the existing storage/accounting/metric owners;
-41focused guards and the223case reader/summary/metric/retrospective slice pass;
-the exact analytical public recipe passes. The [source receipt](evidence/saved_run_analysis_source_20261108_summary.json)
-receives268distinct cases and unchanged scientific-definition controls. Full
-strict Sphinx/source rendering passes with real public function/method anchors.
-Original broader-selection failure
-is retained: a local OpenMM adapter mapping failure is masked by older MolSysMT,
-then pytest reporting runs out of allocation headroom. The underlying
-[owner diagnostic context](https://github.com/uibcdf/molsysmt/issues/601#issuecomment-6715418869)
-is reported under existing#601. No new geometry defect is claimed; exhausted
-native cases retain their full hosted#9gate. Exact installed receiving is pending.
-
-**Next concrete action:** finish those declared#146controls and receive one
-exact owned installed artifact, preserving native fields, complete manifest/cohort
-mapping and separate pending/native-failure/upstream counts. Batch exact-head
-hosted validation at a deliberate checkpoint under#9. MolSysMT#624 collections,
-full installed/public dependency/platform delivery, biological/comparison evidence
-and mature0.x acceptance retain separate gates.
+**Next concrete action:** declare and receive a deliberate accumulated exact-head
+source/policy/publication-governance checkpoint for#144/#145/#146using the existing
+manual eight-cell route, checking for existing exact-head runs first. Preserve
+this workstation's exhausted native/resource route and full#23provider/public/
+installed/platform debt. The mature0.x goal is active; no new release is selected.
 
 ## Active public integration
 
@@ -84,7 +72,8 @@ wheel and reopened its same-byte relocated run with zero new evaluations. The
 current exporter/progress increments affect companion code; old scientific
 bindings can now require a new linked run, while saved reading/export remains
 independent. The original progress wheel retains its distinct144 build version;
-the export140 and immutable-reuse160 wheels keep their own producers. No shared-prefix/
+the export140, immutable-reuse160 and analysis162 wheels keep their own producers.
+No shared-prefix/
 native/provider change is made here. [Onboarding](onboarding.md) retains the
 earlier route.
 

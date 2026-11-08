@@ -1,7 +1,8 @@
 # Saved screening results
 
-These operations belong to PharmacophoreMT validation. They consume detached
-native screening evidence; molecular access and preparation remain in MolSysMT.
+These operations belong to PharmacophoreMT validation. They analyze detached
+native evidence or a verified saved run; molecular access and preparation remain
+in MolSysMT.
 See the [recipe](../content/cookbook/retrospective_validation.md#summarize-saved-results-against-the-original-cohort)
 for original-cohort accounting and paired common-subset interpretation.
 

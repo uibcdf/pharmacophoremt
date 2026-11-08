@@ -1,0 +1,1189 @@
+{
+  "schema": "pharmacophoremt.saved-run-analysis-attribution@1",
+  "source_commit": "cc26d45909728c0bf0b92fc690287bef6a538c48",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-summary-20261108-gc9t0v58/wheels/pharmacophoremt-0.4.0+162.gcc26d45-py3-none-any.whl",
+    "bytes": 4523599,
+    "sha256": "bbce52ee0b03ccc86fee901e254b1f60753575a25109edce1c6a3f7a9b5e0f6e"
+  },
+  "version": "0.4.0+162.gcc26d45",
+  "result": {
+    "schema": "pharmacophoremt.screening_run_summary@1",
+    "score_method": "seeded_hit@1",
+    "metric_settings": {
+      "ef_fractions": [
+        0.5
+      ],
+      "bedroc_alpha": 20.0
+    },
+    "n_total": 6,
+    "n_actives": 3,
+    "n_inactives": 3,
+    "n_evaluated": 2,
+    "n_actives_evaluated": 1,
+    "n_inactives_evaluated": 1,
+    "n_actives_found": 1,
+    "n_inactives_found": 0,
+    "n_unscored": 4,
+    "n_actives_unscored": 2,
+    "n_inactives_unscored": 2,
+    "n_native_failed": 1,
+    "n_upstream_unscored": 1,
+    "unscored_by_stage": {
+      "native_evaluation": 1,
+      "screening_run": 2,
+      "acquisition": 1
+    },
+    "evaluated_indices": [
+      30,
+      5
+    ],
+    "labels": [
+      1,
+      0
+    ],
+    "scores": [
+      1.0,
+      0.0
+    ],
+    "metrics": {
+      "n_evaluated": 2,
+      "n_actives": 1,
+      "n_inactives": 1,
+      "AUC": 1.0,
+      "BEDROC": 1.0,
+      "EF@50%": 2.0
+    },
+    "missing_binary_score_AUC_sensitivity": {
+      "pessimistic_hypothetical": 0.3333333333333333,
+      "optimistic_hypothetical": 1.0
+    },
+    "records": [
+      {
+        "input_index": 90,
+        "label": 0,
+        "cohort": {
+          "input_index": 90,
+          "label": 0
+        },
+        "score": null,
+        "unscored_cause": {
+          "input_index": 90,
+          "stage": "native_evaluation",
+          "reason": "native failure",
+          "error": {
+            "message": "original failure",
+            "stage": "source"
+          }
+        },
+        "outcome": {
+          "native_result": {
+            "error": {
+              "message": "original failure",
+              "stage": "source"
+            },
+            "fit_value": null,
+            "input_index": 0,
+            "pose_id": "gamma",
+            "status": "failed"
+          },
+          "occurrence_key": "occurrence:2",
+          "ranking_score": null,
+          "score_method": "seeded_hit@1",
+          "source_key": "source:2",
+          "work_key": "gamma"
+        },
+        "work_item": {
+          "manifest_ordinal": 2,
+          "work_key": "gamma",
+          "source_key": "source:2",
+          "occurrence_key": "occurrence:2"
+        }
+      },
+      {
+        "input_index": 30,
+        "label": 1,
+        "cohort": {
+          "input_index": 30,
+          "label": 1,
+          "source_id": "repeated"
+        },
+        "score": 1.0,
+        "unscored_cause": null,
+        "outcome": {
+          "native_result": {
+            "assignments": [
+              {
+                "site_id": "site"
+              }
+            ],
+            "attribution": {
+              "original_calculation": "never credit this saved source"
+            },
+            "excluded_volume_clashes": [],
+            "fit_value": 1.0,
+            "missing_essential_sites": [],
+            "pose_evaluated": true,
+            "pose_id": "alpha",
+            "search": {
+              "enumeration_complete": true,
+              "identity_pose_tested": false,
+              "method": "rigid_triplet_seed_hit@1",
+              "n_fitted": 1
+            },
+            "status": "matched"
+          },
+          "occurrence_key": "occurrence:0",
+          "ranking_score": 1.0,
+          "score_method": "seeded_hit@1",
+          "source_key": "source:repeated",
+          "work_key": "alpha"
+        },
+        "work_item": {
+          "manifest_ordinal": 0,
+          "work_key": "alpha",
+          "source_key": "source:repeated",
+          "occurrence_key": "occurrence:0"
+        }
+      },
+      {
+        "input_index": 5,
+        "label": 0,
+        "cohort": {
+          "input_index": 5,
+          "label": 0,
+          "source_id": "repeated"
+        },
+        "score": 0.0,
+        "unscored_cause": null,
+        "outcome": {
+          "native_result": {
+            "attribution": {
+              "original_calculation": "never credit this saved source"
+            },
+            "fit_value": null,
+            "input_index": 0,
+            "pose_evaluated": false,
+            "pose_id": "beta",
+            "search": {
+              "enumeration_complete": true,
+              "identity_pose_tested": false,
+              "method": "rigid_triplet_seed_hit@1",
+              "n_fitted": 0
+            },
+            "status": "not_matched"
+          },
+          "occurrence_key": "occurrence:1",
+          "ranking_score": 0.0,
+          "score_method": "seeded_hit@1",
+          "source_key": "source:repeated",
+          "work_key": "beta"
+        },
+        "work_item": {
+          "manifest_ordinal": 1,
+          "work_key": "beta",
+          "source_key": "source:repeated",
+          "occurrence_key": "occurrence:1"
+        }
+      },
+      {
+        "input_index": 12,
+        "label": 1,
+        "cohort": {
+          "input_index": 12,
+          "label": 1
+        },
+        "score": null,
+        "unscored_cause": {
+          "input_index": 12,
+          "stage": "screening_run",
+          "reason": "declared work has no confirmed outcome",
+          "work_key": "delta"
+        },
+        "outcome": null,
+        "work_item": {
+          "manifest_ordinal": 3,
+          "work_key": "delta",
+          "source_key": "source:3",
+          "occurrence_key": "occurrence:3"
+        }
+      },
+      {
+        "input_index": 70,
+        "label": 0,
+        "cohort": {
+          "input_index": 70,
+          "label": 0
+        },
+        "score": null,
+        "unscored_cause": {
+          "input_index": 70,
+          "stage": "screening_run",
+          "reason": "declared work has no confirmed outcome",
+          "work_key": "epsilon"
+        },
+        "outcome": null,
+        "work_item": {
+          "manifest_ordinal": 4,
+          "work_key": "epsilon",
+          "source_key": "source:4",
+          "occurrence_key": "occurrence:4"
+        }
+      },
+      {
+        "input_index": 101,
+        "label": 1,
+        "cohort": {
+          "input_index": 101,
+          "label": 1
+        },
+        "score": null,
+        "unscored_cause": {
+          "input_index": 101,
+          "stage": "acquisition",
+          "reason": "unavailable"
+        },
+        "outcome": null,
+        "work_item": null
+      }
+    ],
+    "input_mapping": [
+      {
+        "work_key": "epsilon",
+        "input_index": 70
+      },
+      {
+        "work_key": "delta",
+        "input_index": 12
+      },
+      {
+        "work_key": "gamma",
+        "input_index": 90
+      },
+      {
+        "work_key": "beta",
+        "input_index": 5
+      },
+      {
+        "work_key": "alpha",
+        "input_index": 30
+      }
+    ],
+    "source_metadata": {
+      "producer": "original",
+      "attribution": {
+        "saved": true
+      }
+    },
+    "run_configuration": {
+      "context": {
+        "execution": {
+          "score_method": "seeded_hit"
+        }
+      },
+      "format": "pharmacophoremt.screening-run@1",
+      "manifest_sha256": "fa8f45f2a336ad38383fb0b34049ec1dcafeea4220474ec92f1d6d48c8732f6a",
+      "parent_run_id": "run:ancestor",
+      "query_sha256": "e66f187b928e7d5d305e130410d9e2d63b3ed05602440aac766464ca1f7cdb1d",
+      "run_id": "run:public",
+      "work_count": 5,
+      "work_sha256": "7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f"
+    },
+    "n_pending_work": 2,
+    "attribution": {
+      "schema": "pharmacophoremt.attribution@1",
+      "status": "captured",
+      "producer": {
+        "software": "pharmacophoremt",
+        "version": "0.4.0+162.gcc26d45"
+      },
+      "provider": {
+        "software": "ackredit",
+        "version": "0.12.1+10.g4beb850"
+      },
+      "host_references": [
+        {
+          "record": {
+            "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "type": "software",
+            "title": "PharmacophoreMT",
+            "version": "0.4.0+162.gcc26d45",
+            "url": "https://github.com/uibcdf/pharmacophoremt",
+            "authors": [
+              "{UIBCDF Lab}"
+            ]
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "pharmacophoremt",
+            "version": "0.4.0+162.gcc26d45"
+          },
+          "used_by": "pharmacophoremt.screening.scoring.get_screening_score"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "type": "software",
+            "title": "PharmacophoreMT",
+            "version": "0.4.0+162.gcc26d45",
+            "url": "https://github.com/uibcdf/pharmacophoremt",
+            "authors": [
+              "{UIBCDF Lab}"
+            ]
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "pharmacophoremt",
+            "version": "0.4.0+162.gcc26d45"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.roc_auc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:numpy:2.5.4",
+            "type": "software",
+            "title": "NumPy",
+            "version": "2.5.4",
+            "url": "https://numpy.org/"
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "numpy",
+            "version": "2.5.4"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.roc_auc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "type": "article",
+            "title": "Array programming with NumPy",
+            "authors": [
+              "Harris, Charles R.",
+              "Millman, K. Jarrod",
+              "van der Walt, St\u00e9fan J.",
+              "Gommers, Ralf",
+              "Virtanen, Pauli",
+              "Cournapeau, David",
+              "Wieser, Eric",
+              "Taylor, Julian",
+              "Berg, Sebastian",
+              "Smith, Nathaniel J.",
+              "Kern, Robert",
+              "Picus, Matti",
+              "Hoyer, Stephan",
+              "van Kerkwijk, Marten H.",
+              "Brett, Matthew",
+              "Haldane, Allan",
+              "Fern\u00e1ndez del R\u00edo, Jaime",
+              "Wiebe, Mark",
+              "Peterson, Pearu",
+              "G\u00e9rard-Marchant, Pierre",
+              "Sheppard, Kevin",
+              "Reddy, Tyler",
+              "Weckesser, Warren",
+              "Abbasi, Hameer",
+              "Gohlke, Christoph",
+              "Oliphant, Travis E."
+            ],
+            "journal": "Nature",
+            "year": 2020,
+            "volume": "585",
+            "pages": "357\u2013362",
+            "doi": "10.1038/s41586-020-2649-2"
+          },
+          "roles": [
+            "software_description"
+          ],
+          "context": {
+            "software": "numpy",
+            "version": "2.5.4"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.roc_auc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:doi:10.1021/ci600426e",
+            "type": "article",
+            "title": "Evaluating virtual screening methods: good and bad metrics for the \"early recognition\" problem",
+            "authors": [
+              "Truchon, Jean-Fran\u00e7ois",
+              "Bayly, Christopher I"
+            ],
+            "year": 2007,
+            "journal": "Journal of Chemical Information and Modeling",
+            "volume": "47",
+            "number": "2",
+            "pages": "488\u2013508",
+            "doi": "10.1021/ci600426e"
+          },
+          "roles": [
+            "scientific_criterion"
+          ],
+          "context": {
+            "method": "bedroc"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.bedroc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "type": "software",
+            "title": "PharmacophoreMT",
+            "version": "0.4.0+162.gcc26d45",
+            "url": "https://github.com/uibcdf/pharmacophoremt",
+            "authors": [
+              "{UIBCDF Lab}"
+            ]
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "pharmacophoremt",
+            "version": "0.4.0+162.gcc26d45"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.bedroc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:numpy:2.5.4",
+            "type": "software",
+            "title": "NumPy",
+            "version": "2.5.4",
+            "url": "https://numpy.org/"
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "numpy",
+            "version": "2.5.4"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.bedroc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "type": "article",
+            "title": "Array programming with NumPy",
+            "authors": [
+              "Harris, Charles R.",
+              "Millman, K. Jarrod",
+              "van der Walt, St\u00e9fan J.",
+              "Gommers, Ralf",
+              "Virtanen, Pauli",
+              "Cournapeau, David",
+              "Wieser, Eric",
+              "Taylor, Julian",
+              "Berg, Sebastian",
+              "Smith, Nathaniel J.",
+              "Kern, Robert",
+              "Picus, Matti",
+              "Hoyer, Stephan",
+              "van Kerkwijk, Marten H.",
+              "Brett, Matthew",
+              "Haldane, Allan",
+              "Fern\u00e1ndez del R\u00edo, Jaime",
+              "Wiebe, Mark",
+              "Peterson, Pearu",
+              "G\u00e9rard-Marchant, Pierre",
+              "Sheppard, Kevin",
+              "Reddy, Tyler",
+              "Weckesser, Warren",
+              "Abbasi, Hameer",
+              "Gohlke, Christoph",
+              "Oliphant, Travis E."
+            ],
+            "journal": "Nature",
+            "year": 2020,
+            "volume": "585",
+            "pages": "357\u2013362",
+            "doi": "10.1038/s41586-020-2649-2"
+          },
+          "roles": [
+            "software_description"
+          ],
+          "context": {
+            "software": "numpy",
+            "version": "2.5.4"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.bedroc"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "type": "software",
+            "title": "PharmacophoreMT",
+            "version": "0.4.0+162.gcc26d45",
+            "url": "https://github.com/uibcdf/pharmacophoremt",
+            "authors": [
+              "{UIBCDF Lab}"
+            ]
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "pharmacophoremt",
+            "version": "0.4.0+162.gcc26d45"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.enrichment_factor"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:numpy:2.5.4",
+            "type": "software",
+            "title": "NumPy",
+            "version": "2.5.4",
+            "url": "https://numpy.org/"
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "numpy",
+            "version": "2.5.4"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.enrichment_factor"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "type": "article",
+            "title": "Array programming with NumPy",
+            "authors": [
+              "Harris, Charles R.",
+              "Millman, K. Jarrod",
+              "van der Walt, St\u00e9fan J.",
+              "Gommers, Ralf",
+              "Virtanen, Pauli",
+              "Cournapeau, David",
+              "Wieser, Eric",
+              "Taylor, Julian",
+              "Berg, Sebastian",
+              "Smith, Nathaniel J.",
+              "Kern, Robert",
+              "Picus, Matti",
+              "Hoyer, Stephan",
+              "van Kerkwijk, Marten H.",
+              "Brett, Matthew",
+              "Haldane, Allan",
+              "Fern\u00e1ndez del R\u00edo, Jaime",
+              "Wiebe, Mark",
+              "Peterson, Pearu",
+              "G\u00e9rard-Marchant, Pierre",
+              "Sheppard, Kevin",
+              "Reddy, Tyler",
+              "Weckesser, Warren",
+              "Abbasi, Hameer",
+              "Gohlke, Christoph",
+              "Oliphant, Travis E."
+            ],
+            "journal": "Nature",
+            "year": 2020,
+            "volume": "585",
+            "pages": "357\u2013362",
+            "doi": "10.1038/s41586-020-2649-2"
+          },
+          "roles": [
+            "software_description"
+          ],
+          "context": {
+            "software": "numpy",
+            "version": "2.5.4"
+          },
+          "used_by": "pharmacophoremt.validation.metrics.enrichment_factor"
+        },
+        {
+          "record": {
+            "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "type": "software",
+            "title": "PharmacophoreMT",
+            "version": "0.4.0+162.gcc26d45",
+            "url": "https://github.com/uibcdf/pharmacophoremt",
+            "authors": [
+              "{UIBCDF Lab}"
+            ]
+          },
+          "roles": [
+            "executed_software"
+          ],
+          "context": {
+            "software": "pharmacophoremt",
+            "version": "0.4.0+162.gcc26d45"
+          },
+          "used_by": "pharmacophoremt.validation.screening_runs.summarize_screening_run"
+        }
+      ],
+      "references": {
+        "schema": "ackredit.attribution@1",
+        "name": "pharmacophoremt.validation.screening_runs.summarize_screening_run",
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+162.gcc26d45"
+        },
+        "items": [
+          {
+            "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "type": "software",
+            "title": "PharmacophoreMT",
+            "version": "0.4.0+162.gcc26d45",
+            "url": "https://github.com/uibcdf/pharmacophoremt",
+            "authors": [
+              "{UIBCDF Lab}"
+            ]
+          },
+          {
+            "id": "pharmacophoremt:software:numpy:2.5.4",
+            "type": "software",
+            "title": "NumPy",
+            "version": "2.5.4",
+            "url": "https://numpy.org/"
+          },
+          {
+            "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "type": "article",
+            "title": "Array programming with NumPy",
+            "authors": [
+              "Harris, Charles R.",
+              "Millman, K. Jarrod",
+              "van der Walt, St\u00e9fan J.",
+              "Gommers, Ralf",
+              "Virtanen, Pauli",
+              "Cournapeau, David",
+              "Wieser, Eric",
+              "Taylor, Julian",
+              "Berg, Sebastian",
+              "Smith, Nathaniel J.",
+              "Kern, Robert",
+              "Picus, Matti",
+              "Hoyer, Stephan",
+              "van Kerkwijk, Marten H.",
+              "Brett, Matthew",
+              "Haldane, Allan",
+              "Fern\u00e1ndez del R\u00edo, Jaime",
+              "Wiebe, Mark",
+              "Peterson, Pearu",
+              "G\u00e9rard-Marchant, Pierre",
+              "Sheppard, Kevin",
+              "Reddy, Tyler",
+              "Weckesser, Warren",
+              "Abbasi, Hameer",
+              "Gohlke, Christoph",
+              "Oliphant, Travis E."
+            ],
+            "journal": "Nature",
+            "year": 2020,
+            "volume": "585",
+            "pages": "357\u2013362",
+            "doi": "10.1038/s41586-020-2649-2"
+          },
+          {
+            "id": "pharmacophoremt:doi:10.1021/ci600426e",
+            "type": "article",
+            "title": "Evaluating virtual screening methods: good and bad metrics for the \"early recognition\" problem",
+            "authors": [
+              "Truchon, Jean-Fran\u00e7ois",
+              "Bayly, Christopher I"
+            ],
+            "year": 2007,
+            "journal": "Journal of Chemical Information and Modeling",
+            "volume": "47",
+            "number": "2",
+            "pages": "488\u2013508",
+            "doi": "10.1021/ci600426e"
+          }
+        ],
+        "uses": [
+          {
+            "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "used_by": "pharmacophoremt.screening.scoring.get_screening_score",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "pharmacophoremt",
+              "version": "0.4.0+162.gcc26d45"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "used_by": "pharmacophoremt.validation.metrics.roc_auc",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "pharmacophoremt",
+              "version": "0.4.0+162.gcc26d45"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:numpy:2.5.4",
+            "used_by": "pharmacophoremt.validation.metrics.roc_auc",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "numpy",
+              "version": "2.5.4"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "used_by": "pharmacophoremt.validation.metrics.roc_auc",
+            "roles": [
+              "software_description"
+            ],
+            "context": {
+              "software": "numpy",
+              "version": "2.5.4"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:doi:10.1021/ci600426e",
+            "used_by": "pharmacophoremt.validation.metrics.bedroc",
+            "roles": [
+              "scientific_criterion"
+            ],
+            "context": {
+              "method": "bedroc"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "used_by": "pharmacophoremt.validation.metrics.bedroc",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "pharmacophoremt",
+              "version": "0.4.0+162.gcc26d45"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:numpy:2.5.4",
+            "used_by": "pharmacophoremt.validation.metrics.bedroc",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "numpy",
+              "version": "2.5.4"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "used_by": "pharmacophoremt.validation.metrics.bedroc",
+            "roles": [
+              "software_description"
+            ],
+            "context": {
+              "software": "numpy",
+              "version": "2.5.4"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "used_by": "pharmacophoremt.validation.metrics.enrichment_factor",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "pharmacophoremt",
+              "version": "0.4.0+162.gcc26d45"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:numpy:2.5.4",
+            "used_by": "pharmacophoremt.validation.metrics.enrichment_factor",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "numpy",
+              "version": "2.5.4"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+            "used_by": "pharmacophoremt.validation.metrics.enrichment_factor",
+            "roles": [
+              "software_description"
+            ],
+            "context": {
+              "software": "numpy",
+              "version": "2.5.4"
+            }
+          },
+          {
+            "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+            "used_by": "pharmacophoremt.validation.screening_runs.summarize_screening_run",
+            "roles": [
+              "executed_software"
+            ],
+            "context": {
+              "software": "pharmacophoremt",
+              "version": "0.4.0+162.gcc26d45"
+            }
+          }
+        ],
+        "usage_tree": {
+          "pharmacophoremt.validation.screening_runs.summarize_screening_run": {
+            "items": [
+              "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+            ],
+            "children": [
+              "pharmacophoremt.screening.scoring.get_screening_score",
+              "pharmacophoremt.validation.metrics.bedroc",
+              "pharmacophoremt.validation.metrics.enrichment_factor",
+              "pharmacophoremt.validation.metrics.roc_auc",
+              "pharmacophoremt.validation.screening_runs.summarize_screening_run"
+            ]
+          },
+          "pharmacophoremt.screening.scoring.get_screening_score": {
+            "items": [
+              "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+            ],
+            "children": []
+          },
+          "pharmacophoremt.validation.metrics.roc_auc": {
+            "items": [
+              "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+              "pharmacophoremt:software:numpy:2.5.4",
+              "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+            ],
+            "children": []
+          },
+          "pharmacophoremt.validation.metrics.bedroc": {
+            "items": [
+              "pharmacophoremt:doi:10.1021/ci600426e",
+              "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+              "pharmacophoremt:software:numpy:2.5.4",
+              "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+            ],
+            "children": []
+          },
+          "pharmacophoremt.validation.metrics.enrichment_factor": {
+            "items": [
+              "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+              "pharmacophoremt:software:numpy:2.5.4",
+              "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+            ],
+            "children": []
+          }
+        }
+      },
+      "errors": [],
+      "scientific_outcome": "completed"
+    }
+  },
+  "references": {
+    "schema": "ackredit.attribution@1",
+    "name": "saved-run analytical summary",
+    "context": {},
+    "items": [
+      {
+        "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+        "type": "software",
+        "title": "PharmacophoreMT",
+        "version": "0.4.0+162.gcc26d45",
+        "url": "https://github.com/uibcdf/pharmacophoremt",
+        "authors": [
+          "{UIBCDF Lab}"
+        ]
+      },
+      {
+        "id": "pharmacophoremt:software:numpy:2.5.4",
+        "type": "software",
+        "title": "NumPy",
+        "version": "2.5.4",
+        "url": "https://numpy.org/"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "type": "article",
+        "title": "Array programming with NumPy",
+        "authors": [
+          "Harris, Charles R.",
+          "Millman, K. Jarrod",
+          "van der Walt, St\u00e9fan J.",
+          "Gommers, Ralf",
+          "Virtanen, Pauli",
+          "Cournapeau, David",
+          "Wieser, Eric",
+          "Taylor, Julian",
+          "Berg, Sebastian",
+          "Smith, Nathaniel J.",
+          "Kern, Robert",
+          "Picus, Matti",
+          "Hoyer, Stephan",
+          "van Kerkwijk, Marten H.",
+          "Brett, Matthew",
+          "Haldane, Allan",
+          "Fern\u00e1ndez del R\u00edo, Jaime",
+          "Wiebe, Mark",
+          "Peterson, Pearu",
+          "G\u00e9rard-Marchant, Pierre",
+          "Sheppard, Kevin",
+          "Reddy, Tyler",
+          "Weckesser, Warren",
+          "Abbasi, Hameer",
+          "Gohlke, Christoph",
+          "Oliphant, Travis E."
+        ],
+        "journal": "Nature",
+        "year": 2020,
+        "volume": "585",
+        "pages": "357\u2013362",
+        "doi": "10.1038/s41586-020-2649-2"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1021/ci600426e",
+        "type": "article",
+        "title": "Evaluating virtual screening methods: good and bad metrics for the \"early recognition\" problem",
+        "authors": [
+          "Truchon, Jean-Fran\u00e7ois",
+          "Bayly, Christopher I"
+        ],
+        "year": 2007,
+        "journal": "Journal of Chemical Information and Modeling",
+        "volume": "47",
+        "number": "2",
+        "pages": "488\u2013508",
+        "doi": "10.1021/ci600426e"
+      }
+    ],
+    "uses": [
+      {
+        "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+        "used_by": "pharmacophoremt.screening.scoring.get_screening_score",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+162.gcc26d45"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+        "used_by": "pharmacophoremt.validation.metrics.roc_auc",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+162.gcc26d45"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:numpy:2.5.4",
+        "used_by": "pharmacophoremt.validation.metrics.roc_auc",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "used_by": "pharmacophoremt.validation.metrics.roc_auc",
+        "roles": [
+          "software_description"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1021/ci600426e",
+        "used_by": "pharmacophoremt.validation.metrics.bedroc",
+        "roles": [
+          "scientific_criterion"
+        ],
+        "context": {
+          "method": "bedroc"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+        "used_by": "pharmacophoremt.validation.metrics.bedroc",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+162.gcc26d45"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:numpy:2.5.4",
+        "used_by": "pharmacophoremt.validation.metrics.bedroc",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "used_by": "pharmacophoremt.validation.metrics.bedroc",
+        "roles": [
+          "software_description"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+        "used_by": "pharmacophoremt.validation.metrics.enrichment_factor",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+162.gcc26d45"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:numpy:2.5.4",
+        "used_by": "pharmacophoremt.validation.metrics.enrichment_factor",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "used_by": "pharmacophoremt.validation.metrics.enrichment_factor",
+        "roles": [
+          "software_description"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45",
+        "used_by": "pharmacophoremt.validation.screening_runs.summarize_screening_run",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+162.gcc26d45"
+        }
+      }
+    ],
+    "usage_tree": {
+      "pharmacophoremt.validation.screening_runs.summarize_screening_run": {
+        "items": [
+          "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+        ],
+        "children": [
+          "pharmacophoremt.screening.scoring.get_screening_score",
+          "pharmacophoremt.validation.metrics.bedroc",
+          "pharmacophoremt.validation.metrics.enrichment_factor",
+          "pharmacophoremt.validation.metrics.roc_auc",
+          "pharmacophoremt.validation.screening_runs.summarize_screening_run"
+        ]
+      },
+      "pharmacophoremt.screening.scoring.get_screening_score": {
+        "items": [
+          "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+        ],
+        "children": []
+      },
+      "pharmacophoremt.validation.metrics.roc_auc": {
+        "items": [
+          "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+          "pharmacophoremt:software:numpy:2.5.4",
+          "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+        ],
+        "children": []
+      },
+      "pharmacophoremt.validation.metrics.bedroc": {
+        "items": [
+          "pharmacophoremt:doi:10.1021/ci600426e",
+          "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+          "pharmacophoremt:software:numpy:2.5.4",
+          "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+        ],
+        "children": []
+      },
+      "pharmacophoremt.validation.metrics.enrichment_factor": {
+        "items": [
+          "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+          "pharmacophoremt:software:numpy:2.5.4",
+          "pharmacophoremt:software:pharmacophoremt:0.4.0+162.gcc26d45"
+        ],
+        "children": []
+      }
+    }
+  },
+  "application_session_preserved": true,
+  "original_bytes_and_source_attribution_preserved": true,
+  "provider_files_unchanged": true,
+  "forbidden_import_attempts": [],
+  "scope": "Real optional Ackredit over one synthetic six-sample partial-run summary from the exact installed artifact; no real activity/molecular/source re-attribution or new independent test count",
+  "recorded_at_utc": "2026-11-08T01:41:04.029540+00:00",
+  "items": 4,
+  "uses": 12,
+  "installed_receipt": "saved_run_analysis_installed_20261108_summary.json",
+  "resource_review_utc": "2026-11-20",
+  "execution": {
+    "arguments": [
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-summary-20261108-gc9t0v58/controls/receive_attribution.py"
+    ],
+    "cwd": "/tmp/phmt-run-summary-installed-20261108-mo3qeq_f/cwd",
+    "exit_code": 0,
+    "seconds": 5.4230559110001195,
+    "log": "attribution-attempt1.log",
+    "log_identity": {
+      "bytes": 4153,
+      "sha256": "21d2b634db32d25ff399c7cfbfbba494359168b4383a9dd4c80c8013aacf8ec6"
+    },
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-summary-20261108-gc9t0v58/wheels/pharmacophoremt-0.4.0+162.gcc26d45-py3-none-any.whl",
+      "bytes": 4523599,
+      "sha256": "bbce52ee0b03ccc86fee901e254b1f60753575a25109edce1c6a3f7a9b5e0f6e"
+    },
+    "version": "0.4.0+162.gcc26d45",
+    "source": "cc26d45909728c0bf0b92fc690287bef6a538c48"
+  },
+  "resources": "\tCommand being timed: \"/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python -I -S -B /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-summary-20261108-gc9t0v58/controls/receive_attribution.py\"\n\tUser time (seconds): 4.74\n\tSystem time (seconds): 0.64\n\tPercent of CPU this job got: 99%\n\tElapsed (wall clock) time (h:mm:ss or m:ss): 0:05.39\n\tAverage shared text size (kbytes): 0\n\tAverage unshared data size (kbytes): 0\n\tAverage stack size (kbytes): 0\n\tAverage total size (kbytes): 0\n\tMaximum resident set size (kbytes): 164964\n\tAverage resident set size (kbytes): 0\n\tMajor (requiring I/O) page faults: 0\n\tMinor (reclaiming a frame) page faults: 29929\n\tVoluntary context switches: 1\n\tInvoluntary context switches: 143\n\tSwaps: 0\n\tFile system inputs: 0\n\tFile system outputs: 88\n\tSocket messages sent: 0\n\tSocket messages received: 0\n\tSignals delivered: 0\n\tPage size (bytes): 4096\n\tExit status: 0\n",
+  "controls": {
+    "receive_attribution.py": {
+      "bytes": 6391,
+      "sha256": "030daa455708544c6f84a57dc6775ee2f12afef8edcde5068014d738fbd9537a",
+      "content": "\"\"\"Receive original bodies and exact public recipe from the single owned wheel.\"\"\"\nimport hashlib\nimport importlib.metadata\nimport json\nimport os\nfrom pathlib import Path\nimport re\nimport resource\nimport subprocess\nimport sys\nimport sysconfig\nimport xml.etree.ElementTree as ET\n\nCASE=Path(__file__).resolve().parents[1]\nROOT=CASE.parents[1]\nPLAN=json.loads((CASE/'installed_context_plan.json').read_text())\nBUILD=json.loads((CASE/'owned_build.json').read_text())\nresource.setrlimit(resource.RLIMIT_DATA,(536870912,536870912))\nassert sys.flags.isolated and sys.flags.no_site and sys.dont_write_bytecode\nassert os.sched_getaffinity(0)=={19} and os.getpriority(os.PRIO_PROCESS,0)==19\nmemory=Path('/proc/meminfo').read_text();pressure=Path('/proc/pressure/memory').read_text()\nassert int(next(x.split()[1] for x in memory.splitlines() if x.startswith('MemAvailable:')))>2*1024*1024\nassert all(float(x.split('avg10=')[1].split()[0])<1 for x in pressure.splitlines())\nassert Path.cwd()==Path(PLAN['cwd']) and not Path.cwd().is_relative_to(ROOT)\nconfig={'target':PLAN['target'],'fixtures':PLAN['fixtures'],\n    'forbidden_roots':[str(ROOT),str(CASE/'source')],\n    'admitted_roots':[PLAN['target'],PLAN['fixtures'],*PLAN['explicit_provider_roots'],PLAN['site_packages']],\n    'provider_mapping':{name:value for row in PLAN['editable_mapping_declarations'] for name,value in row['mapping'].items()},\n    'search_roots':[PLAN['target'],PLAN['fixtures'],PLAN['site_packages']],\n    'stdlib_roots':[sysconfig.get_path('stdlib'),str(Path(sysconfig.get_path('stdlib')).parent/'python314.zip')],\n    'control_files':[str(p) for p in (CASE/'controls').glob('*.py')],\n    'base_sys_path':list(sys.path),'shared_sdk':PLAN['shared_sdk']}\nboundary_source=(CASE/'controls/boundary.py').read_text()\nexec(compile(boundary_source,str(CASE/'controls/boundary.py'),'exec'))\nguard=_ReceivingBoundary(config)\nsys.meta_path.insert(0,guard)\n\n\ndef identity(path):\n    digest=hashlib.sha256()\n    with Path(path).open('rb') as stream:\n        for block in iter(lambda:stream.read(1024*1024),b''):digest.update(block)\n    return dict(bytes=Path(path).stat().st_size,sha256=digest.hexdigest())\n\n\ndef provider_files():\n    result={}\n    for row in PLAN['editable_mapping_declarations']:\n        for name,value in row['mapping'].items():\n            p=Path(value)\n            result[name]={str(x.relative_to(p)) if p.is_dir() else x.name:identity(x)\n                for x in (sorted(p.rglob('*.py')) if p.is_dir() else [p])}\n    return result\n\n\nproviders_before=provider_files()\nfor name,wanted in PLAN['fixture_files'].items():assert identity(Path(PLAN['fixtures'])/name)==wanted\nfor name,wanted in BUILD['runtime_files_equal'].items():assert identity(Path(PLAN['target'])/name)==wanted\nassert identity(Path(BUILD['wheel']['path']))=={key:BUILD['wheel'][key] for key in ('bytes','sha256')}\nimport pharmacophoremt as phmt\nimport pharmacophoremt_results\nassert Path(phmt.__file__).resolve()==Path(PLAN['target'])/'pharmacophoremt/__init__.py'\nassert phmt.__version__==BUILD['version']==importlib.metadata.version('pharmacophoremt')\nimport pytest\nsys.path.insert(0,str(Path(PLAN['fixtures'])/'tests'))\nimport test_public_run_results as fixture\nchildren=[]\n\n\ndef fresh(self,source,*arguments):\n    number=len(children)\n    report=CASE/f'installed-child-{number}.json'\n    bootstrap=boundary_source+'\\n'+'''\nimport json,sys\nfrom pathlib import Path\n_config=json.loads(sys.argv.pop(1))\n_report=Path(sys.argv.pop(1))\n_source=sys.argv.pop(1)\n_guard=_ReceivingBoundary(_config)\nsys.meta_path.insert(0,_guard)\ntry:\n    exec(compile(_source,'<original isolated reader child>','exec'))\nfinally:\n    _report.write_text(json.dumps(_guard.snapshot(),indent=2)+'\\\\n')\n'''\n    child=subprocess.run([sys.executable,'-I','-S','-B','-c',bootstrap,json.dumps(config),str(report),\n        fixture.FRESH_GUARD+source,str(fixture.ROOT),*map(str,arguments)],cwd=PLAN['cwd'],capture_output=True,text=True,timeout=30,check=False)\n    assert report.is_file(),child.stderr\n    streams={}\n    for name,text in [('stdout',child.stdout),('stderr',child.stderr)]:\n        path=CASE/f'installed-child-{number}.{name}';path.write_text(text);streams[name]=identity(path)\n    children.append(dict(index=number,exit_code=child.returncode,guard=report.name,guard_identity=identity(report),streams=streams))\n    (CASE/'installed_children.json').write_text(json.dumps(children,indent=2)+'\\n')\n    return child\n\n\n\nimport ackredit as ack\nimport test_saved_run_analysis as analytical\ngenerator=analytical.saved.__wrapped__()\nf=next(generator)\ntry:\n    before=f.directory_bytes()\n    from pharmacophoremt_results import ScreeningRunView\n    with ScreeningRunView.open(f.path) as view:\n        with ack.session(\"enclosing application\") as application:\n            with ack.capture(\"saved-run analytical summary\") as capture, phmt.attribution():\n                result=analytical.summarize(view,f)\n            assert ack.current_session() is application\n    assert f.directory_bytes()==before\n    references=capture.attribution.to_dict()\n    encoded=json.dumps(references)\n    assert result[\"attribution\"][\"status\"]==\"captured\"\n    assert \"validation.screening_runs.summarize_screening_run\" in encoded\n    assert \"validation.metrics.bedroc\" in encoded\n    assert \"never credit this saved source\" not in encoded\n    assert result[\"records\"][1][\"outcome\"][\"native_result\"][\"attribution\"]==f.native[\"alpha\"][\"attribution\"]\n    assert providers_before==provider_files()\n    snapshot=guard.snapshot()\n    payload=dict(schema=\"pharmacophoremt.saved-run-analysis-attribution@1\",source_commit=BUILD[\"source_commit\"],wheel=BUILD[\"wheel\"],version=BUILD[\"version\"],\n        result=result,references=references,application_session_preserved=True,original_bytes_and_source_attribution_preserved=True,\n        provider_files_unchanged=True,forbidden_import_attempts=snapshot[\"forbidden_import_attempts\"],\n        scope=\"Real optional Ackredit over one synthetic six-sample partial-run summary from the exact installed artifact; no real activity/molecular/source re-attribution or new independent test count\")\n    (CASE/\"installed_attribution.json\").write_text(json.dumps(payload,indent=2)+\"\\n\")\n    print(json.dumps(dict(reference_keys=list(references),items=len(references.get(\"items\",[])),uses=len(references.get(\"uses\",[])),captured=True)),flush=True)\nfinally:\n    generator.close()\n"
+    },
+    "launch_attribution.py": {
+      "bytes": 1697,
+      "sha256": "592be17c2ff6c6dc44713d73eef7dd6e5f4d9446d364db434a4fc1ca9fa01436",
+      "content": "\"\"\"Bounded launcher; preserve every attempt without rebuilding the wheel.\"\"\"\nimport hashlib\nimport json\nimport os\nimport resource\nimport subprocess\nimport sys\nimport time\nfrom pathlib import Path\n\nCASE=Path(__file__).resolve().parents[1]\nbuild=json.loads((CASE/'owned_build.json').read_text())\nresource.setrlimit(resource.RLIMIT_DATA,(536870912,536870912))\nassert os.sched_getaffinity(0)=={19} and os.getpriority(os.PRIO_PROCESS,0)==19\nnumber=len(list(CASE.glob('attribution-attempt*-command.json')))+1\nargs=[sys.executable,'-I','-S','-B',str(CASE/'controls/receive_attribution.py')]\nlog=CASE/f'attribution-attempt{number}.log'\nenv={key:value for key,value in os.environ.items() if key not in {'PYTHONPATH','PYTHONSTARTUP','COVERAGE_PROCESS_START','COVERAGE_PROCESS_CONFIG'} and not key.startswith('COV_CORE_')}\nenv['PYTEST_DISABLE_PLUGIN_AUTOLOAD']='1'\nenv['PYTEST_ADDOPTS']=''\nenv['PHMT_RECEIVING_ATTEMPT']=str(number)\nstart=time.monotonic()\nwith log.open('xb') as output:\n    run=subprocess.run(['/usr/bin/time','-v','-o',str(CASE/f'attribution-attempt{number}-resources.txt'),*args],cwd=build['cwd'],env=env,stdout=output,stderr=subprocess.STDOUT,timeout=180,check=False)\nraw=log.read_bytes()\nrecord={'arguments':args,'cwd':build['cwd'],'exit_code':run.returncode,\n    'seconds':time.monotonic()-start,'log':log.name,\n    'log_identity':{'bytes':len(raw),'sha256':hashlib.sha256(raw).hexdigest()},\n    'wheel':build['wheel'],'version':build['version'],'source':build['source_commit']}\n(CASE/f'attribution-attempt{number}-command.json').write_text(json.dumps(record,indent=2)+'\\n')\nprint(json.dumps(record),flush=True)\nprint(log.read_text()[-5000:],flush=True)\nraise SystemExit(run.returncode)\n"
+    }
+  }
+}

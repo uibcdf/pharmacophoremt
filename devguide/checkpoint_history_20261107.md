@@ -364,3 +364,67 @@ profiling/recovery helpers and tests retain current-head source debt under#9;
 frozen8db2a53 is not relabeled.
 MolSysMT#624 collections, full installed/public dependency/platform delivery,
 biology, comparison/performance and mature0.x acceptance retain separate gates.
+
+## Superseded checkpoint section before saved-run analysis closeout, 2026-11-08
+
+This dated section is historical; #146 installed receiving is completed below
+in the maintained checkpoint and owning contract.
+
+## Last received increment and next action
+
+[#145 immutable saved-progress reuse](archive/reuse_saved_progress.md) is received
+in source and one exact owned installed wheel. Only factory-opened immutable
+views retain detached counts after the first successful progress scan; full
+admission, failure/score/attempt accounting, writer freshness and native
+connection/thread restrictions remain guarded. The [source receipt](evidence/saved_progress_reuse_source_20261108_summary.json)
+passes175distinct selected cases, including10new guards with the original five
+failures preserved. Nine declared same-input pairs receive exact counts, complete
+ranks/exports and original bytes. Repeated10000-record progress medians are
+497.892380ms baseline and0.103223ms reuse; first open/scan retain their cost.
+
+[Owned installed receiving](evidence/saved_progress_reuse_installed_20261108_summary.json)
+passes the same67public reader/export/CLI/progress/reuse bodies,51guarded fresh
+children and16documented commands on four unchanged original databases.
+Producer2a0c4469e2aaeb257c8eca7a77e394711abbcd6f owns wheel0.4.0+160.g2a0c446;
+210payload/155nongenerated runtime files authenticate. The shared prefix/native
+providers remain unchanged. This is one Linux/Python3.14 installed-reader slice;
+no complete public dependency solve, molecular throughput or release follows.
+Changing companion source retains the fresh-linked-scientific-run requirement.
+
+The last full hosted [source checkpoint](boundary_ci_checkpoint.md) remains exact
+8db2a53f91a3686088874f965d389e636003d990/attempt1: sourceCI42421360591 passes2357
+cases in each of eight Linux/macOS Python3.11–3.14cells. Reporting, policy42421364958
+and publication42421369303 pass; all eight XMLs preserve105qualified files and
+native Linux3.13 uploads pass. [Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json)
+retains its dated owner-head/local-byte scope. Later profiling/recovery/reuse
+source is not covered or relabeled; current-head debt remains#9.
+
+Earlier [RDKit projection](rdkit_projection.md), [Point inspection](native_geometry_inspection.md),
+[analytical fixture correction](rdkit_bounds_comparison.md), [canonical record readback](evidence/rdkit_record_correction_20261107.json)
+and [saved-reader baseline/recovery](saved_run_scaling.md) retain their original
+source, wheel and failed/successful run identities. Failed489be12 and successful
+8db2a53 remain distinct. The preceding detailed section is preserved in
+[checkpoint history](checkpoint_history_20261107.md).
+
+The next audit confirms existing#100/#6 saved-result contracts are already
+received. It identifies a separate [saved-run analysis gap](saved_run_analysis.md)
+under#146: prepared outcomes have no batch indices, and pending manifest identities
+were not publicly iterable. Public `work_items()` and `summarize_screening_run`
+are now implemented over the existing storage/accounting/metric owners;
+41focused guards and the223case reader/summary/metric/retrospective slice pass;
+the exact analytical public recipe passes. The [source receipt](evidence/saved_run_analysis_source_20261108_summary.json)
+receives268distinct cases and unchanged scientific-definition controls. Full
+strict Sphinx/source rendering passes with real public function/method anchors.
+Original broader-selection failure
+is retained: a local OpenMM adapter mapping failure is masked by older MolSysMT,
+then pytest reporting runs out of allocation headroom. The underlying
+[owner diagnostic context](https://github.com/uibcdf/molsysmt/issues/601#issuecomment-6715418869)
+is reported under existing#601. No new geometry defect is claimed; exhausted
+native cases retain their full hosted#9gate. Exact installed receiving is pending.
+
+**Next concrete action:** finish those declared#146controls and receive one
+exact owned installed artifact, preserving native fields, complete manifest/cohort
+mapping and separate pending/native-failure/upstream counts. Batch exact-head
+hosted validation at a deliberate checkpoint under#9. MolSysMT#624 collections,
+full installed/public dependency/platform delivery, biological/comparison evidence
+and mature0.x acceptance retain separate gates.

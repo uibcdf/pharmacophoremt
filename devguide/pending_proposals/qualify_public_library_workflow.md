@@ -16,13 +16,15 @@ supersedes: []
 
 ## Saved-run cohort analysis — 2026-11-08 UTC
 
-[#146](summarize_saved_screening_run.md) implements public manifest iteration and
+[#146](../archive/summarize_saved_screening_run.md) implements public manifest iteration and
 direct saved-run analysis without synthesizing batch indices. The
 [source receipt](../evidence/saved_run_analysis_source_20261108_summary.json)
 passes268distinct cases and the exact analytical recipe, preserving pending,
 native-failed and upstream-unavailable denominators. Original broader native/
 resource failure and existing MolSysMT#601 diagnostic feedback remain explicit.
-Exact owned installed receiving is pending; no general connector, admitted
+Exact owned installed receiving passes223same bodies/the recipe and75overlapping
+published-support reader bodies/16commands, resolving the bounded bridge.
+No general connector, admitted
 activity labels, human usability or mature0.x qualification follows.
 
 ## Guided/expert journey receiving — 2026-11-07 UTC

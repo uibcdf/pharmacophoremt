@@ -26,8 +26,10 @@ evidence retain finer-grained authority than this orientation page.
 2026-11-08: [saved-run cohort analysis](saved_run_analysis.md) under#146 passes
 268selected source cases, one exact analytical recipe and strict source/Sphinx
 rendering. It reuses existing metrics and preserves native evidence; pending,
-native failure and upstream unavailability remain separate. Installed receiving
-is pending. The original broader local native/resource failure stays under#9/#23,
+native failure and upstream unavailability remain separate. Exact installed
+receiving passes223same bodies/the recipe and75overlapping independent-reader
+bodies/16commands, with4actual attribution items/12uses. The original broader
+local native/resource failure stays under#9/#23,
 with older-provider diagnostic evidence reported to existing MolSysMT#601.
 
 2026-11-08: [immutable saved-progress reuse](saved_progress_reuse.md) resolves#145

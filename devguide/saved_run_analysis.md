@@ -89,7 +89,7 @@ controls, with the original optional-attribution failure warning retained. The
 exact public analytical recipe passes with known counts4total/2scored/1native
 failure/1pending and AUC/BEDROC1,EF@50%2. Its260874240byte whole-process RSS and
 before/after actual source/provider/native-file fingerprints are retained.
-Same-artifact installed receiving remains pending.
+Subsequent exact installed receiving is recorded below with its own producer.
 
 The [source receipt](evidence/saved_run_analysis_source_20261108_summary.json)
 qualifies268distinct cases (223scientific/reader,24distribution,3reporting,
@@ -133,3 +133,35 @@ The temporary diagnostic trace is retired in favor of Pytest Receptor's existing
 `--receptor-events` stream. Its complete artifact and native outcomes remain
 separate from the original incomplete traces. No larger local/full-suite retry,
 silent exclusion or budget increase establishes a broader claim.
+
+## Exact installed receiving, 2026-11-08
+
+The [installed receipt](evidence/saved_run_analysis_installed_20261108_summary.json)
+authenticates one wheel0.4.0+162.gcc26d45 from producer
+cc26d45909728c0bf0b92fc690287bef6a538c48,4523599bytes,SHA-256
+`bbce52ee0b03ccc86fee901e254b1f60753575a25109edce1c6a3f7a9b5e0f6e`.
+All211payload and156nongenerated runtime files authenticate; no shared prefix
+or provider/native artifact is modified.
+
+Outside the checkout, `-I -S -B` with explicit existing provider mapping passes
+the same223original bodies,35guarded fresh children and exact analytical public
+recipe. Qualified shared SDK1c248b6 verifies152loaded runtime modules under the
+installed target. Whole-command peak RSS390057984bytes includes tests, imports,
+provider-file checks and recipe; it is not incremental analysis memory.
+
+The independent reader context on that same artifact passes75overlapping
+original bodies,52guarded children and16documented commands over four unchanged
+historical databases. It uses published ArgDigest0.17.1,SMonitor0.22.1 and available
+DepDigest0.11.0 payloads, without `.pth` startup or scientific/main/checkout imports.
+This retains the existing qualified private legacy-fixture mapping and isolated
+fresh launch. Original bodies remain byte equal in both contexts.
+
+The [attribution supplement](evidence/saved_run_analysis_attribution_20261108.json)
+executes the prescribed six-sample partial fixture through the installed API
+under a real enclosing Ackredit application session. It preserves4items/12uses,
+complete portable references and source/native evidence without recredit. This
+additional receiving is not another independent guard or molecular calculation.
+
+The [owning report](archive/summarize_saved_screening_run.md) resolves#146.
+Source268/installed223/independent-reader75retain their separate overlapping
+scopes; full current-head source/public/platform and mature0.x gates remain open.

@@ -18,8 +18,9 @@ labelled original cohort to those work keys and reuses the existing metrics
 without inventing native batch indices. Its separate summary schema retains
 original outcomes and distinguishes pending work, confirmed native failure and
 upstream unavailability. See the [analytical recipe](../cookbook/saved_run_analysis.md).
-Selected source receiving is separate from the pending owned installed/full
-supported delivery gates; these later changes do not select a release version.
+Selected source and one exact owned installed artifact pass the declared
+analytical workflow. Full supported/public delivery remains separate; these
+later changes do not select a release version.
 
 The independent reader now receives exact released support payloads separately
 from scientific execution. SMonitor>=0.22.1 is required to preserve visible coded

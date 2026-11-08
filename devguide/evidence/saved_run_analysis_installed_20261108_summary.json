@@ -1,0 +1,127 @@
+{
+  "schema": "pharmacophoremt.saved-run-analysis-installed@1",
+  "recorded_at_utc": "2026-11-08T01:33:51.816632+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/146",
+  "qualification": {
+    "schema": "pharmacophoremt.saved-run-analysis-installed-qualification@1",
+    "same_artifact": true,
+    "source_commit": "cc26d45909728c0bf0b92fc690287bef6a538c48",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-run-summary-20261108-gc9t0v58/wheels/pharmacophoremt-0.4.0+162.gcc26d45-py3-none-any.whl",
+      "bytes": 4523599,
+      "sha256": "bbce52ee0b03ccc86fee901e254b1f60753575a25109edce1c6a3f7a9b5e0f6e"
+    },
+    "version": "0.4.0+162.gcc26d45",
+    "main_context": {
+      "original_bodies": 223,
+      "original_guarded_children": 35,
+      "recipe_blocks": 1,
+      "loaded_runtime_modules": 152,
+      "source_provider_files_unchanged": true,
+      "peak_rss_bytes": 390057984,
+      "scope": "Same223original bodies and exact analytical recipe; PHMT runtime wheel-only outside checkout, explicit unchanged existing source-provider mapping, no .pth startup or complete public solve"
+    },
+    "reader_context": {
+      "original_bodies": 75,
+      "original_guarded_children": 52,
+      "historical_databases": 4,
+      "documented_commands": 16,
+      "original_inputs_unchanged": true,
+      "published_support": [
+        {
+          "name": "argdigest",
+          "version": "0.17.1",
+          "archive": {
+            "bytes": 55828,
+            "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899"
+          },
+          "payload_files_verified": 48
+        },
+        {
+          "name": "smonitor",
+          "version": "0.22.1",
+          "archive": {
+            "bytes": 60043,
+            "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e"
+          },
+          "payload_files_verified": 51
+        },
+        {
+          "name": "depdigest",
+          "version": "0.11.0",
+          "archive": {
+            "bytes": 23231,
+            "sha256": "b6ba665d9125f49506b7e4231e6065f164d3b643117a22288b44baafceff270f"
+          },
+          "payload_files_verified": 26
+        }
+      ],
+      "scope": "Source-free Linux/Python3.14 installed-reader/command slice with original published support payloads; no scientific execution or complete PHMT solve/platform gate."
+    },
+    "overlap": "Reader75 overlaps main223; contexts/child invocations are not summed as independent scientific cases",
+    "verified_wheel_payload_files": 211,
+    "nongenerated_runtime_files_equal": 156,
+    "forbidden_import_attempts": [],
+    "shared_prefix_changed": false,
+    "source_receipt": "saved_run_analysis_source_20261108_summary.json",
+    "deferred": "Original broader native/resource selection remains failed; full source9, fresh full public dependency/platform23 and publication10/95 remain separate"
+  },
+  "resources": {
+    "build": {
+      "rlimit_data_per_process_bytes": [
+        536870912,
+        536870912
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "aggregate_memory_swap_tasks_cpu_quota": "not enforced; user systemd bus unavailable",
+      "rlimit_as": "not imposed for Git pack file mappings"
+    },
+    "main": {
+      "data_limit": [
+        536870912,
+        536870912
+      ],
+      "as_limit": [
+        -1,
+        -1
+      ],
+      "cpu": [
+        19
+      ],
+      "nice": 19,
+      "peak_rss_bytes": 390057984,
+      "memory_entry": "MemTotal:       63455508 kB\nMemFree:        13164216 kB\nMemAvailable:   54151016 kB\nBuffers:         1457084 kB\nCached:         39022592 kB\nSwapCached:           16 kB\nActive:         10377184 kB\nInactive:       37434236 kB\nActive(anon):    7581428 kB\nInactive(anon):     2984 kB\nActive(file):    2795756 kB\nInactive(file): 37431252 kB\nUnevictable:        8900 kB\nMlocked:            8900 kB\nSwapTotal:       8388604 kB\nSwapFree:        8388588 kB\nZswap:                 0 kB\nZswapped:              0 kB\nDirty:              8484 kB\nWriteback:             0 kB\nAnonPages:       7341288 kB\nMapped:           976100 kB\nShmem:            246736 kB\nKReclaimable:    1420124 kB\nSlab:            1805976 kB\nSReclaimable:    1420124 kB\nSUnreclaim:       385852 kB\nKernelStack:       15328 kB\nPageTables:        39180 kB\nSecPageTables:      6880 kB\nNFS_Unstable:          0 kB\nBounce:                0 kB\nWritebackTmp:          0 kB\nCommitLimit:    40116356 kB\nCommitted_AS:   13485968 kB\nVmallocTotal:   34359738367 kB\nVmallocUsed:      222724 kB\nVmallocChunk:          0 kB\nPercpu:            48192 kB\nHardwareCorrupted:     0 kB\nAnonHugePages:     26624 kB\nShmemHugePages:        0 kB\nShmemPmdMapped:        0 kB\nFileHugePages:    765952 kB\nFilePmdMapped:         0 kB\nCmaTotal:              0 kB\nCmaFree:               0 kB\nUnaccepted:            0 kB\nBalloon:               0 kB\nGPUActive:             0 kB\nGPUReclaim:            0 kB\nHugePages_Total:       0\nHugePages_Free:        0\nHugePages_Rsvd:        0\nHugePages_Surp:        0\nHugepagesize:       2048 kB\nHugetlb:               0 kB\nDirectMap4k:      329504 kB\nDirectMap2M:     4792320 kB\nDirectMap1G:    63963136 kB\n",
+      "pressure_entry": "some avg10=0.00 avg60=0.00 avg300=0.00 total=2876\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=2537\n",
+      "aggregate_cgroup_swap_tasks_quota": "not enforced"
+    },
+    "reader": {
+      "rlimit_as_per_process_bytes": [
+        536870912,
+        536870912
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "aggregate_memory_swap_tasks_cpu_quota": "Not enforced; no own user systemd runtime/bus"
+    }
+  },
+  "publication_scope": "Owned control/test/recipe text, synthetic analytical output and scalar/hash/import/child/event receipts. No provider/native/wheel bodies, raw original database/query/native/export bodies or generated third-party theme payloads.",
+  "limits": "One exact wheel, separate existing-source scientific-provider and released-support independent-reader contexts. No complete PHMT public dependency solve/all-platform/scientific validation/performance/release or full current-head source claim.",
+  "own_files": 132,
+  "resource_review_utc": "2026-11-20",
+  "full_evidence": {
+    "path": "saved_run_analysis_installed_20261108_full.json.gz",
+    "compressed_bytes": 715516,
+    "compressed_sha256": "5dd99c5330f231b34f8f3954b78a7910be5027635e304f280fa8987a5ab604a7",
+    "uncompressed_bytes": 8101425,
+    "uncompressed_sha256": "3cff01d08e139a72c7bb3bb07b1a13a45f18dd0ca62300dd55c99a606117753e"
+  }
+}
