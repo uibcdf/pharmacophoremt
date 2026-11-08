@@ -1,0 +1,97 @@
+{
+  "schema": "pharmacophoremt.saved-progress-reuse-installed@1",
+  "recorded_at_utc": "2026-11-08T00:33:32.653259+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/145",
+  "qualification": {
+    "same_artifact_received": true,
+    "source_commit": "2a0c4469e2aaeb257c8eca7a77e394711abbcd6f",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-progress-reuse-20261108-a8u6u562/wheels/pharmacophoremt-0.4.0+160.g2a0c446-py3-none-any.whl",
+      "bytes": 4520580,
+      "sha256": "b91d0882eb3520be9de58336fd02ca04362d8a6ce9abf752c591b260b4f3eea7"
+    },
+    "version": "0.4.0+160.g2a0c446",
+    "library_bodies": 67,
+    "new_guards": 10,
+    "fresh_guarded_children": 51,
+    "historical_databases": 4,
+    "documented_commands": 16,
+    "verified_wheel_payload_files": 210,
+    "nongenerated_runtime_files_equal": 155,
+    "original_databases_unchanged": true,
+    "forbidden_import_attempts": [],
+    "source_runtime_unchanged": true,
+    "support_payloads": [
+      {
+        "name": "argdigest",
+        "version": "0.17.1",
+        "archive": {
+          "bytes": 55828,
+          "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899"
+        },
+        "payload_files_verified": 48
+      },
+      {
+        "name": "smonitor",
+        "version": "0.22.1",
+        "archive": {
+          "bytes": 60043,
+          "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e"
+        },
+        "payload_files_verified": 51
+      },
+      {
+        "name": "depdigest",
+        "version": "0.11.0",
+        "archive": {
+          "bytes": 23231,
+          "sha256": "b6ba665d9125f49506b7e4231e6065f164d3b643117a22288b44baafceff270f"
+        },
+        "payload_files_verified": 26
+      }
+    ],
+    "source_receipt": "saved_progress_reuse_source_20261108_summary.json",
+    "scope": "Source-free Linux/Python3.14 installed-reader/command slice with original published support payloads; no scientific execution or complete PHMT solve/platform gate.",
+    "limits": {
+      "rlimit_as_per_process_bytes": [
+        536870912,
+        536870912
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "aggregate_memory_swap_tasks_cpu_quota": "Not enforced; no own user systemd runtime/bus"
+    },
+    "entry_memory": "Thresholds asserted in original receiving control; numerical entry sample not retained",
+    "shared_prefix_changed": false,
+    "full_source_platform_public_gates": "pending under9/23; no new release selected"
+  },
+  "resources": {
+    "rlimit_data_per_process_bytes": [
+      536870912,
+      536870912
+    ],
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "aggregate_memory_swap_tasks_cpu_quota": "not enforced; user systemd bus unavailable",
+    "rlimit_as": "not imposed for Git pack file mappings"
+  },
+  "publication_scope": "Owned control/test/code text, original command/guard scalar/hash receipts only. DB/query/native/export/provider/wheel bodies and raw child stdout/stderr remain local.",
+  "nonclaims": "No complete PHMT public dependency solve, scientific or native execution, all-platform qualification, live-writer/one-shot CLI/molecular speed claim, release or full current-head source gate.",
+  "own_files": 78,
+  "resource_review_utc": "2026-11-20",
+  "full_evidence": {
+    "path": "saved_progress_reuse_installed_20261108_full.json.gz",
+    "compressed_bytes": 215128,
+    "compressed_sha256": "22fe5d3c37037121b3294c0c38aca8a37f7f0f9800d9575791448ee4c85e898e",
+    "uncompressed_bytes": 3497998,
+    "uncompressed_sha256": "1096bb281c52c2ea88d7094fee1c403482729aac3a557cb04f7d37fe172d3ef9"
+  }
+}

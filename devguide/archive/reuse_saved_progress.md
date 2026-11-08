@@ -1,9 +1,9 @@
 ---
 summary: Reuse verified criterion-independent counts within one immutable saved view.
 issue: uibcdf/pharmacophoremt#145
-status: active
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-08
 verification: reproduced
 area: [performance, results, inspection]
 guard: tests/test_saved_progress_reuse.py
@@ -45,3 +45,26 @@ The [source receipt](../evidence/saved_progress_reuse_source_20261108_summary.js
 retains175distinct selected cases, all raw paired observations, actual resources
 and119owned evidence files with a verified archive envelope. Source/runtime
 hashes are exact; the baseline parent is not relabeled as changed code.
+
+## Resolution received, 2026-11-08
+
+The [installed receipt](../evidence/saved_progress_reuse_installed_20261108_summary.json)
+receives all67unchanged public reader/export/CLI/progress/reuse bodies,51guarded
+fresh children and16documented commands on four original same-byte historical
+databases. Producer2a0c4469e2aaeb257c8eca7a77e394711abbcd6f builds one owned
+wheel0.4.0+160.g2a0c446 (4520580bytes, SHA-256
+`b91d0882eb3520be9de58336fd02ca04362d8a6ce9abf752c591b260b4f3eea7`).
+All210wheel payload files/155nongenerated runtime files authenticate. Published
+support payloads remain separate from source-provider performance identities;
+the installed reader imports no scientific/main package or checkout runtime.
+The prior qualified isolated receiving control retains its explicit fresh-child
+and private legacy-fixture mapping; all original test bodies remain byte equal.
+
+The module guard asserts no saved table reads on repeated progress while
+preserving exact counts, empty/complete/explicit legacy behavior, detached nested
+returns, failed-first-scan retry, writer updates, independent snapshots and
+closed/native-closed/wrong-thread refusal. Existing full-admission, corruption,
+ranking/export/CLI guards also pass. This resolves the bounded immutable-progress
+theme. Full current-head source#9, supported installed/public/platform#23,
+scientific validation and the mature0.x staircase remain open. No full dependency
+solve, native execution, release or one-shot/writer/molecular speed claim follows.

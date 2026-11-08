@@ -23,6 +23,12 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [immutable saved-progress reuse](saved_progress_reuse.md) resolves#145
+with175selected source cases, nine declared pairs and67same-body owned installed
+cases. Repeated10000-record progress medians497.892380→0.103223ms apply only to
+an already-open synthetic snapshot; first admission/scan and full supported gates
+retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete action.
+
 | Lane | Actual state | Next evidence |
 | --- | --- | --- |
 | Mature pre-1.0 0.x staircase | Public runs/released-reader support, guided/expert parity and API/CLI complete exports received in bounded contexts | Deliberate exact-head validation of accumulated changes; retain every unresolved gate in [roadmap](roadmap.md) and [checkpoint](checkpoint.md) |

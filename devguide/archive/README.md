@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (87)
+### Resolved (88)
 
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
@@ -87,6 +87,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`repeated_hydrogen_history_is_not_chemical_mutation.md`](repeated_hydrogen_history_is_not_chemical_mutation.md) — [#39](https://github.com/uibcdf/pharmacophoremt/issues/39) — Separate repeat-H chemical invariance from appended operation history. *(resolved, measured)*
 - [`retire_orphaned_molecular_utilities.md`](retire_orphaned_molecular_utilities.md) — [#46](https://github.com/uibcdf/pharmacophoremt/issues/46) — Retire unused molecular utilities and the name-grouped archival SDF reader. *(resolved, measured)*
 - [`retrospective_metric_key_collision.md`](retrospective_metric_key_collision.md) — [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) — Retrospective EF settings must not overwrite colliding reported metric keys. *(resolved, measured)*
+- [`reuse_saved_progress.md`](reuse_saved_progress.md) — [#145](https://github.com/uibcdf/pharmacophoremt/issues/145) — Reuse verified criterion-independent counts within one immutable saved view. *(resolved, reproduced)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
 - [`translated_coincident_feature_centers.md`](translated_coincident_feature_centers.md) — [#31](https://github.com/uibcdf/pharmacophoremt/issues/31) — Centroid roundoff admitted co-located feature centers as non-collinear rigid anchors. *(resolved, measured)*
 - [`tyr_cardinality.md`](tyr_cardinality.md) — [#91](https://github.com/uibcdf/pharmacophoremt/issues/91) — Qualify native dual-donor N/O receptor constraints on prepared TYR regions. *(resolved, measured)*

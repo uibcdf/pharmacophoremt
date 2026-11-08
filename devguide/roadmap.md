@@ -1,6 +1,6 @@
 # Strategic roadmap
 
-Maintained 2026-11-07. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
+Maintained 2026-11-08. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
 and [decisions](decisions_and_workstreams.md) first. The former detailed delivery
 log/checklists remain in [roadmap history](roadmap_history_20261106.md); old
 checkboxes record historical code, not current scientific/public qualification.
@@ -21,7 +21,7 @@ version may advance several milestones.
 | 2. Complete public workflow | A user imports prepared data, builds/loads a query, inspects a plan, screens, resumes and exports through documented public operations. Guided and expert routes resolve to the same effective settings. | The [public iterator](public_prepared_screening.md) and [recoverable runs/independent reader](public_prepared_runs.md) pass their selected cases and source/owned installed recipes. Full guided/expert usability and supported installed/public gates remain open. |
 | 3. Robust molecular collections | Provider-owned records, molecules, states, conformers and atom/source mappings have explicit resource, preparation, bounded iteration, snapshot and recovery contracts. | The fixed [PubChem3D case](pubchem3d_receiving_pilot.md) qualifies individual artifacts only. Receive the reusable boundary from [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624); PHMT must not add a replacement molecular parser or collection. |
 | 4. Progressively qualified public libraries | A common user journey supports selected sources and formats, with separately demonstrated discovery, download/import, preparation, screening and availability operations and their access conditions. | [Source assessments](public_library_registry.md) and the three-record pilot do not establish general connectors. Qualify each selected operation/source increment; the mature-release scope names the selected sources and remaining exclusions. |
-| 5. Efficient repeated queries and screening | Reusable annotations, scans and indexes are compared on equivalent problems, including build/storage, cold/repeated-query cost, memory, invalidation and coverage. Acceleration addresses measured bottlenecks. | The [in-memory reuse experiment](feature_inventory_reuse.md) passes its equality controls and public recipe. No cache/index strategy or speedup follows from fewer outer requests; broader workload/resource evidence remains required. |
+| 5. Efficient repeated queries and screening | Reusable annotations, scans and indexes are compared on equivalent problems, including build/storage, cold/repeated-query cost, memory, invalidation and coverage. Acceleration addresses measured bottlenecks. | [Feature reuse](feature_inventory_reuse.md) passes equality controls and its public recipe, without a molecular speed claim. [Saved-progress reuse](saved_progress_reuse.md) receives a declared synthetic same-snapshot comparison and one owned installed reader; full molecular-query/index/resource qualification remains required. |
 | 6. Reproducible scientific validation and comparisons | Admitted retrospective data, leakage controls, simple references, uncertainty and complete failure denominators support reproducible evaluations. Comparisons explain equivalent or differing scientific problems. | Neither #103 biological study is complete; #66/#106 source/admission limits below remain binding. [Tool records](pharmacophore_tools_registry.md) distinguish documentary study from executed comparisons. Product increments can progress while these independent scientific gates remain open. |
 | 7. Mature usable pre-1.0 0.x | The selected classical scope, guided/expert workflows, source operations, traceable results and measured performance form a coherent installed product. Documentation and compatibility match actual public delivery. | Freeze a candidate only after its declared scope and exact source, dependency, installed/public/platform gates are satisfied under #9/#10/#23/#95. Source prototypes and selected local tests alone cannot establish this milestone. |
 
@@ -145,14 +145,16 @@ timeout and separate verified-copy public recovery. The guarded reusable recover
 route now passes22controls and the copied10000case, resolving#144; no cache/index,
 speedup or molecular-throughput claim follows.
 
-[#145](pending_proposals/reuse_saved_progress.md) now implements private progress
+[#145](archive/reuse_saved_progress.md) now implements private progress
 count reuse only within validated immutable saved views. Ten new guards pass,
 preserving complete admission, detached outputs, connection/thread checks and
 fresh writer progress. All130selected cases and its nine
 [declared same-input pairs](saved_progress_reuse.md) pass. Repeated10000-record
 progress medians fall from497.892380ms to0.103223ms in this synthetic reader
-context; opening/first scan retain their cost. Exact owned-wheel receiving is
-pending, separately from molecular throughput and full supported delivery.
+context; opening/first scan retain their cost. One exact owned wheel passes the
+same67public reader/export/CLI/progress/reuse bodies and16documented commands on
+four unchanged original databases. This resolves the bounded saved-progress
+theme, separately from molecular throughput and full supported delivery.
 
 ## Current priority: classical consolidation
 

@@ -10,116 +10,47 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The latest increment corrects two analytical boundary fixtures under
-[#143](archive/analytical_upper_bound_platform.md). The
-[receipt](evidence/rdkit_boundary_correction_20261107_summary.json) passes59selected
-cases, including14analytical guards and the separate ten-case/186-assignment
-driver. Exact rational controls fail on the old data; production runtime and
-eight interior cases are unchanged. Corrected hosted acceptance is received at
-frozen8db2a53; its terminal evidence appears below.
+[#145 immutable saved-progress reuse](archive/reuse_saved_progress.md) is received
+in source and one exact owned installed wheel. Only factory-opened immutable
+views retain detached counts after the first successful progress scan; full
+admission, failure/score/attempt accounting, writer freshness and native
+connection/thread restrictions remain guarded. The [source receipt](evidence/saved_progress_reuse_source_20261108_summary.json)
+passes175distinct selected cases, including10new guards with the original five
+failures preserved. Nine declared same-input pairs receive exact counts, complete
+ranks/exports and original bytes. Repeated10000-record progress medians are
+497.892380ms baseline and0.103223ms reuse; first open/scan retain their cost.
 
-The received runtime correction fixes [native Point center inspection](native_geometry_inspection.md)
-under[#142](archive/point_center_inspection.md): a read-only alias exposes the
-canonical position, ordinary point/mixed center-distance queries now work, and
-empty/filtered center arrays keep shape(0,3). The
-[source receipt](evidence/point_inspection_source_20261107_summary.json) passes338
-selected cases, including16new regressions with the original13failing/3positive
-controls preserved. Native point fields, radius absence and existing distance
-implementation remain unchanged. [Exact owned installed receiving](evidence/point_inspection_installed_20261107_summary.json)
-passes the same338bodies/two original isolated children and the unchanged RDKit
-recipe from wheel0.4.0+151.g858fe5a;210payload/155runtime files authenticate.
-#142 resolves this bounded defect; full supported gates remain separate.
+[Owned installed receiving](evidence/saved_progress_reuse_installed_20261108_summary.json)
+passes the same67public reader/export/CLI/progress/reuse bodies,51guarded fresh
+children and16documented commands on four unchanged original databases.
+Producer2a0c4469e2aaeb257c8eca7a77e394711abbcd6f owns wheel0.4.0+160.g2a0c446;
+210payload/155nongenerated runtime files authenticate. The shared prefix/native
+providers remain unchanged. This is one Linux/Python3.14 installed-reader slice;
+no complete public dependency solve, molecular throughput or release follows.
+Changing companion source retains the fresh-linked-scientific-run requirement.
 
-The [accumulated checkpoint](projection_ci_checkpoint.md) has completed at exact
-489be1213a92e33be84204d2e0fd2f5f9b9c10e1/attempt1. Its
-[terminal receipt](evidence/projection_ci_terminal_20261107.json) preserves source
-CI42416657424: all four Linux cells pass2339cases each; all four macOS cells
-pass2338/fail1 at the original analytical upper-bound fixture. The source gate
-is not accepted. Policy42416661473/publication governance42416665708 pass.
-Independently, all four Linux XML outputs retain105distinct qualified file paths
-and correct namespaces; native Linux3.13 uploads pass, resolving#141. No later
-Point or boundary revision is covered by this frozen run.
+The last full hosted [source checkpoint](boundary_ci_checkpoint.md) remains exact
+8db2a53f91a3686088874f965d389e636003d990/attempt1: sourceCI42421360591 passes2357
+cases in each of eight Linux/macOS Python3.11–3.14cells. Reporting, policy42421364958
+and publication42421369303 pass; all eight XMLs preserve105qualified files and
+native Linux3.13 uploads pass. [Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json)
+retains its dated owner-head/local-byte scope. Later profiling/recovery/reuse
+source is not covered or relabeled; current-head debt remains#9.
 
-The received RDKit increment implements the [public RDKit projection contract](rdkit_projection.md):
-legacy point targets and fixed-radius reading remain available; explicit spheres,
-radius=None reading, detached field/loss reports and warn/strict/ignore choices
-are now public. Full preflight rejects unsupported alternatives, invalid/overflowed
-geometry and invented radius inference before target construction. Its
-[source receipt](evidence/rdkit_projection_source_20261107_summary.json) passes271
-selected local cases, the existing ten-case analytical driver and the exact
-[public recipe](../docs/content/user/rdkit_interoperability.md). [Same-artifact
-outside-checkout receiving](evidence/rdkit_projection_installed_20261107_summary.json)
-passes the same214 original bodies, one guarded diagnostic child and the exact
-public recipe from owned wheel0.4.0+148.g1040dbb. All210 payload files and155
-nongenerated runtime files authenticate;140 imported main modules/three namespaces
-resolve to that target. [#140](archive/qualify_rdkit_projection.md) closes only
-this field contract. No new provider/prefix/native modification, public release, general
-library connector or scientific-equivalence claim follows.
+Earlier [RDKit projection](rdkit_projection.md), [Point inspection](native_geometry_inspection.md),
+[analytical fixture correction](rdkit_bounds_comparison.md), [canonical record readback](evidence/rdkit_record_correction_20261107.json)
+and [saved-reader baseline/recovery](saved_run_scaling.md) retain their original
+source, wheel and failed/successful run identities. Failed489be12 and successful
+8db2a53 remain distinct. The preceding detailed section is preserved in
+[checkpoint history](checkpoint_history_20261107.md).
 
-Earlier evidence remains under its original producer and scope:
-
-- [Frozen4616c78 terminal receiving](evidence/accumulated_ci_terminal_20261107.json):
-  all eight source cells pass2259tests each, with reporting/policy/publication
-  steps. Its original namespace-collision XML is retained; the
-  [#141 correction](coverage_xml_identity.md) passes111 selected local cases and
-  is independently received from all four newer Linux cells.
-- [Pharm3D comparison](rdkit_bounds_comparison.md): ten analytical cases/186full
-  assignments,106 selected source cases and complete driver. Interior filters,
-  proper-fit reflection rejection and strict/inclusive boundary differences keep
-  their declared limits. Original512MiB failures and the1GiB amendment remain.
-- [Saved progress](saved_run_progress.md):102source cases and the same57bodies,
-  51guarded children and16documented commands from producer1950421's owned144wheel.
-  API/CLI/export/reader and [guided/expert receiving](guided_expert_journey_receiving.md)
-  retain their own artifacts, original databases and scope. None becomes current
-  full-platform/public evidence by being linked here.
-
-The [accumulated preparation](accumulated_ci_checkpoint.md) and
-[checkpoint history](checkpoint_history_20261107.md) retain earlier observations,
-including scheduled42383495995/654586f's original governance failure and its
-separate recovery. [Current guide audit](evidence/projection_ci_guide_audit_20261107.json)
-compares all seven real canonical texts at exact owner revisions; all match.
-The frozen policy-v1.5.4 caller remains separate and unchanged.
-
-The [recovery checkpoint](boundary_ci_checkpoint.md) is complete at exact
-8db2a53f91a3686088874f965d389e636003d990/attempt1. Its
-[terminal receipt](evidence/boundary_ci_terminal_20261107.json) receives source
-CI42421360591 with2357tests passing in each of eight Linux/macOS Python3.11–3.14
-cells, plus successful reporting/policy42421364958/publication42421369303 native
-steps. All eight XMLs retain105qualified files; native Linux3.13 uploads pass.
-The [canonical RDKit record correction](evidence/rdkit_record_correction_20261107.json)
-is independently read back and preserves the original analytical update.
-#143 resolves the boundary fixture. Preserve failed489be12, successful8db2a53 and
-later profiling/recovery producer identities separately. [Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json)
-retains its dated owner-head/local-byte observations, separately from frozen policy.
-
-The [#144 saved-reader baseline](archive/profile_saved_run_scaling.md)
-now receives three synthetic reader cells,75repeated samples and three first-open
-observations. Its [receipt](evidence/saved_run_scaling_20261107_summary.json) keeps
-all exact accounting/export/byte controls and the original10000preparation timeout.
-A separate verified-copy public recovery preserves6784confirmations and fills216;
-only that recovered reader phase then completes. No library runtime/provider/native change,
-cache/index or molecular-throughput claim follows. The [reusable recovery driver](evidence/saved_run_recovery_20261107_summary.json)
-now passes22case guards and the exact copied10000case;#144 resolves its bounded
-engineering scope. Extra receiving samples retain a separate identity.
-
-[#145 immutable-snapshot progress reuse](saved_progress_reuse.md) is declared and
-implemented for factory-opened read-only views. All10new guards pass after the
-original five repeated-read failures; all130selected reader/store/profile cases
-pass; its [source receipt](evidence/saved_progress_reuse_source_20261108_summary.json)
-receives175distinct cases including governance/distribution. Full admission,
-detached counters, thread/lifetime refusal and fresh writer
-operations remain guarded. Nine declared same-input pairs pass exact outputs,
-complete ranks/exports and original-byte checks. Repeated10000-record progress
-medians are497.892380ms baseline and0.103223ms reuse; full open/first-scan costs
-remain. Exact owned-wheel receiving is pending.
-
-**Next concrete action:** receive the unchanged original reader/export/progress
-controls and10new guards from one exact owned installed artifact. The measured
-benefit applies only to repeated same-snapshot synthetic progress. Later runtime,
-profiling/recovery helpers and tests retain current-head source debt under#9;
-frozen8db2a53 is not relabeled.
-MolSysMT#624 collections, full installed/public dependency/platform delivery,
-biology, comparison/performance and mature0.x acceptance retain separate gates.
+**Next concrete action:** audit public saved-result/retrospective argument
+admission under existing#6 against `tests/test_saved_results.py` and the owning
+scoring contracts; select and fix/report one concrete remaining gap without
+changing scientific definitions or historical evidence. Batch exact-head hosted
+validation at a deliberate checkpoint under#9. MolSysMT#624 collections,
+full installed/public dependency/platform delivery, biological/comparison evidence
+and mature0.x acceptance retain separate gates.
 
 ## Active public integration
 
@@ -137,8 +68,8 @@ and ignored version cache to0.4.0+134.gee5d9fa. That dated runtime matched its o
 wheel and reopened its same-byte relocated run with zero new evaluations. The
 current exporter/progress increments affect companion code; old scientific
 bindings can now require a new linked run, while saved reading/export remains
-independent. The new owned progress wheel retains its distinct144 build version;
-the preceding export wheel keeps its original140 identity. No shared-prefix/
+independent. The original progress wheel retains its distinct144 build version;
+the export140 and immutable-reuse160 wheels keep their own producers. No shared-prefix/
 native/provider change is made here. [Onboarding](onboarding.md) retains the
 earlier route.
 

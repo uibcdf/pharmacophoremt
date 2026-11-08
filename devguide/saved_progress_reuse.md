@@ -100,7 +100,8 @@ still pay their full verification/scan cost; their small differences are not
 claimed as improvements. Whole-process peak RSS includes complete rank/export
 controls and stays below60million bytes in every arm; it does not measure the
 incremental cache footprint. No single-use CLI, writer or molecular-throughput
-claim follows. Same-artifact installed receiving remains pending.
+claim follows. These source observations retain their original overlay identity;
+the subsequent installed receiving below keeps its exact producer/artifact.
 
 The [source receipt](evidence/saved_progress_reuse_source_20261108_summary.json)
 authenticates the changed source overlay and119owned evidence files, all175
@@ -108,3 +109,25 @@ distinct selected cases (130reader/store/profile,24distribution,3reporting,
 18archive), complete paired observations and original administrative failures.
 Full Ruff, declared dependency routes and generated indexes pass. The source
 parent remains the frozen baseline; the receipt records exact changed bytes.
+
+## Exact installed receiving, 2026-11-08
+
+The [installed receipt](evidence/saved_progress_reuse_installed_20261108_summary.json)
+receives all67original public reader/export/CLI/progress/reuse bodies,51fresh
+guarded children and16documented commands over four unchanged original historical
+databases. Producer2a0c4469e2aaeb257c8eca7a77e394711abbcd6f owns wheel
+0.4.0+160.g2a0c446,4520580bytes, SHA-256
+`b91d0882eb3520be9de58336fd02ca04362d8a6ce9abf752c591b260b4f3eea7`.
+All210payload files and155nongenerated runtime files authenticate. Receiving
+runs outside the checkout with `-I -S -B` and original published ArgDigest0.17.1,
+SMonitor0.22.1 and available DepDigest0.11.0 payloads. No `.pth` startup, scientific
+or main-package import is admitted; the shared prefix is unchanged.
+
+Existing qualified receiving controls preserve the explicit private legacy-fixture
+mapping to the installed core and isolated fresh-child launch. Test bodies are
+byte equal; this is one installed-reader slice, not a complete PHMT dependency
+solve or supported scientific/platform gate. Source175/installed67counts remain
+separate rather than summed as independent scientific tests.
+
+The [owning report](archive/reuse_saved_progress.md) resolves#145. Current-head
+source#9/full installed/public#23 and mature0.x acceptance remain open.

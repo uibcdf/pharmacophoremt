@@ -7,8 +7,11 @@ ranks, exports and original bytes. At10,000declared records, subsequent calls on
 the same already-open view have wall-time medians497.892380ms and0.103223ms
 (15samples per arm). Opening and the first progress scan retain their cost;
 this measures synthetic saved-result inspection, not molecular throughput.
-Its source and installed evidence retain a separate identity from the original
-baseline below.
+Its [source receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/saved_progress_reuse_source_20261108_summary.json)
+and [same-artifact installed receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/saved_progress_reuse_installed_20261108_summary.json)
+retain separate identities from the original baseline below. Installed receiving
+passes the same67public reader/export/CLI/progress/reuse tests and16documented
+commands; it establishes one Linux/Python3.14 reader slice.
 
 Case `saved-reader-scaling-20261107`; owners LMMV/dprada;
 [#144](https://github.com/uibcdf/pharmacophoremt/issues/144).
