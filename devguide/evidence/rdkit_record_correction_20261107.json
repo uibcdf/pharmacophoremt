@@ -1,0 +1,19 @@
+{
+  "schema": "pharmacophoremt.rdkit-record-correction@1",
+  "recorded_at_utc": "2026-11-08T00:00:48.450151+00:00",
+  "discussion_url": "https://github.com/uibcdf/pharmacophoremt/discussions/135",
+  "comment_url": "https://github.com/uibcdf/pharmacophoremt/discussions/135#discussioncomment-19465896",
+  "comment_id": "DC_kwDOP5ch7M4BKQao",
+  "published_at_utc": "2026-11-07T23:57:16.454791+00:00",
+  "independent_readback_verified": true,
+  "body_sha256": "0db1bb3024dca5ea58bd322660b701a4c618bb41c21f8588d96fccba057d095c",
+  "body": "## 2026-11-07 \u2014 Boundary-fixture correction and received source scope\n\nThe earlier measurements and their source/input identities remain preserved. The claim that the original decimal-generated triangle itself defined an exact native endpoint independently of floating evaluation was too strong. Frozen source `489be12`, run [42416657424](https://github.com/uibcdf/pharmacophoremt/actions/runs/42416657424), passed all four Linux cells but failed the upper-bound expectation in all four macOS cells.\n\nThe independent diagnosis represents the actual binary64 coordinates as exact operands. The upper/lower pair-distance differences exceed the stated 0.25 nm endpoint by approximately 3.33e-17 / 5.55e-18 nm. This establishes an input exactness defect; it does not identify a defect in NumPy, MolSysMT or RDKit.\n\nRevision `binary-exact-nm@2` replaces only those two probes with an exactly representable 3/4/5 nm triangle, half/one-and-a-half scaling and a per-site tolerance of 1.25 nm. Geometry and tolerance are rescaled together, preserving relative cutoffs. Eight interior inputs and production predicates are unchanged. Independent Fraction guards fail on the original inputs and pass on the revision. The revised local ten-case driver still evaluates all 186 assignments and observes 2/1 native versus 0/0 RDKit boundary mappings.\n\nCorrected producer `8db2a53f91a3686088874f965d389e636003d990`, run [42421360591](https://github.com/uibcdf/pharmacophoremt/actions/runs/42421360591), now passes **2,357 tests in each of eight Linux x86_64 / macOS arm64 Python 3.11\u20133.14 cells**. The rational guards and actual comparison controls are included in those full suites. The [terminal receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/boundary_ci_terminal_20261107.json) retains actual commands, provider routes, interpreter/architecture, run/job/step and coverage identities. [Issue #143](https://github.com/uibcdf/pharmacophoremt/issues/143) is resolved; the original failed run and inputs are unchanged.\n\nSee the [maintained comparison contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rdkit_bounds_comparison.md) and [public interpretation](https://github.com/uibcdf/pharmacophoremt/blob/main/docs/content/validation/rdkit_bounds_comparison.md). The separately received [RDKit projection contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/rdkit_projection.md) retains its source/owned-wheel scope under resolved #140. The study uses shared fixed features and fixed conformer distances; independent feature perception, flexible embedding, biological screening and performance comparisons retain their separate qualification.",
+  "producer": "8db2a53f91a3686088874f965d389e636003d990",
+  "source_run": 42421360591,
+  "source_attempt": 1,
+  "source_cells": 8,
+  "passed_per_cell": 2357,
+  "original_failed_source_run": 42416657424,
+  "original_comment_preserved": "https://github.com/uibcdf/pharmacophoremt/discussions/135#discussioncomment-19463143",
+  "scope": "Correction of analytical boundary-fixture exactness; actual old observations preserved, no provider bug or broader method/biology/performance/public-delivery qualification."
+}

@@ -1,6 +1,6 @@
 # Current development checkpoint
 
-Maintained 2026-11-07 UTC; owners LMMV/dprada. The goal is **active**, resumed at
+Maintained 2026-11-08 UTC; owners LMMV/dprada. The goal is **active**, resumed at
 Liliana's instruction. Pursue the accepted
 [mature pre-1.0 0.x staircase](roadmap.md) through usable increments.
 The version number follows useful completed scope; no final minor or date is fixed.
@@ -86,6 +86,8 @@ The [recovery checkpoint](boundary_ci_checkpoint.md) is complete at exact
 CI42421360591 with2357tests passing in each of eight Linux/macOS Python3.11–3.14
 cells, plus successful reporting/policy42421364958/publication42421369303 native
 steps. All eight XMLs retain105qualified files; native Linux3.13 uploads pass.
+The [canonical RDKit record correction](evidence/rdkit_record_correction_20261107.json)
+is independently read back and preserves the original analytical update.
 #143 resolves the boundary fixture. Preserve failed489be12, successful8db2a53 and
 later profiling/recovery producer identities separately. [Guide revalidation](evidence/boundary_ci_guide_audit_20261107.json)
 retains its dated owner-head/local-byte observations, separately from frozen policy.

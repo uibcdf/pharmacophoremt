@@ -107,6 +107,16 @@ is published with `Comparison recorded` and executed analytical evidence.
 Its exact body/identity is independently read back; the original documentary
 record and all other threads/categories remain unchanged.
 
+A [dated correction](https://github.com/uibcdf/pharmacophoremt/discussions/135#discussioncomment-19465896)
+now preserves the earlier update while receiving the exact-boundary revision.
+Original decimal-generated inputs did not define a backend-independent exact
+native endpoint. Revision `binary-exact-nm@2` preserves relative geometry/cutoffs,
+all eight interior inputs and production predicates. Corrected controls pass
+inside frozen8db2a53's eight full source cells,2357tests each. [Independent
+readback](evidence/rdkit_record_correction_20261107.json) binds the actual body and
+identity. Local186-assignment counts retain their own measurement context; the
+other nine tool records remain documentary rather than executed comparisons.
+
 The accepted ambition is powerful pharmacophore work with evidence, an intuitive
 guided route, and a complete coherent expert public API, with quality ahead of a
 delivery deadline. High-level and composed public routes should resolve to the
