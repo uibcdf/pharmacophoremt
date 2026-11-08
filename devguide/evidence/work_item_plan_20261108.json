@@ -1,0 +1,55 @@
+{
+  "schema": "pharmacophoremt.work-item-plan@1",
+  "declared_at_utc": "2026-11-08T19:05:42.642336+00:00",
+  "issue": 157,
+  "parent_source": "439a22beb586e7721cbb020c8519cd8c30ee9227",
+  "source_before": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 24273,
+      "sha256": "8f4e4a489142c3bd710212bdf1ac5f0d935aa6eee136da31332beffafbcc941b"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 34134,
+      "sha256": "3ab6aaef7eb8cd03b1c8bf1d0524d59581ff3b2679a2dd0c302d98b52101238d"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3339,
+      "sha256": "cb0086d59b76c6f008bf57d13107f34a3cd7d1963e2af43b4fa2376c9b328468"
+    },
+    "tests/test_public_run_results.py": {
+      "bytes": 22136,
+      "sha256": "4895b33278fa2200671d6c2039f8f4021712cccdfc7a5a7ec382ab7cdbf7c7c0"
+    },
+    "tests/test_public_run_cli.py": {
+      "bytes": 12101,
+      "sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217"
+    },
+    "tests/test_public_run_progress.py": {
+      "bytes": 8831,
+      "sha256": "8fe5b06bd21a3eaa3e9f3df8d7d1c5581be72cf4e05b4f6b0ff56d20b6fd7d17"
+    },
+    "tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    },
+    "tests/test_public_work_cli.py": {
+      "bytes": 10900,
+      "sha256": "fac5732d10de07447fecd8390d69ddfc7f0c4702cbffa618667a77a14a1e82c2"
+    }
+  },
+  "method": "ScreeningRunView.work_item(work_key); exact declared mapping, minimal original run/work identity, confirmed/native-status-or-pending, retained attempt counts, original confirmed outcome or null. Reuse key admission, committed decoder and meta-only attempts iterator; no draft payload exposed.",
+  "cli": "--work-key WORK_KEY mutually exclusive with summary/work pages/exports; no score/limit/offset. Existing outputs/legacy admission unchanged. Full original native evidence can be disclosed only by explicit detail selection.",
+  "acceptance": "Independent original-record/outcome/count oracles; hit/zero/failed/staged/never-started/abandoned cases; detachment, exact opaque keys/attribution/unit records, no scientific import, closed/thread/argument errors, whole-file admission and readonly snapshots; original69controls plus new meaningful guards, exact owned installed same bodies/commands outside checkout.",
+  "limits": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "reader_AS_and_DATA_bytes": 536870912,
+    "build_docs_AS": "unlimited inherited",
+    "own_docs_envelope_bytes": 1073741824,
+    "wall_timeout_seconds": 180,
+    "aggregate_cgroup": false
+  },
+  "exclusions": "No molecular operations, provider/prefix update, new manager transaction, persistent index, chemical/biological inference, scale/performance/full supported public installed/platform/release claim."
+}

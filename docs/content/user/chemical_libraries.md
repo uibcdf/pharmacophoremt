@@ -92,6 +92,11 @@ to preview original work/source/occurrence mappings from the terminal, including
 entries without confirmed results. This keeps pending inputs visible when you
 prepare an explicit cohort mapping for later analysis.
 
+To understand a specific input, use [saved input detail](../cookbook/saved_work_inspection.md):
+`--work-key` or `view.work_item(work_key)` retrieves the original confirmed result
+or explicit pending state, including retained attempt counts. It requires no
+new molecular calculation.
+
 The [expert composition](../cookbook/recoverable_prepared_screening.md) uses the
 same plan/context through the public store and resume operations. It retains the
 same effective scientific settings and native evidence as the guided run class;

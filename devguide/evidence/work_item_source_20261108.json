@@ -1,0 +1,122 @@
+{
+  "schema": "pharmacophoremt.work-item-source@1",
+  "issue": 157,
+  "parent_source": "439a22beb586e7721cbb020c8519cd8c30ee9227",
+  "original_controls": {
+    "collected": 15,
+    "deselected": 0,
+    "errors": 0,
+    "executed": 15,
+    "failed": 12,
+    "not_executed": 0,
+    "passed": 3,
+    "reruns": 0,
+    "skipped": 0,
+    "subtests": {
+      "failed": 17,
+      "passed": 10
+    },
+    "warnings": 0,
+    "xfailed": 0,
+    "xpassed": 0
+  },
+  "original_scope": "Initial15bodies; the later16th stored-error guard was added after the84case first pass. Subtests and repeated passes are not additional independent bodies.",
+  "final_selected_cases": 85,
+  "new_cases": 16,
+  "original_reader_cli_page_progress_export_cases": 69,
+  "original_before_log": {
+    "bytes": 6794,
+    "sha256": "74fcb50037abe3ec7324ae6940bad9bc2b581fb69cc56ca13c0793d54bbdc892"
+  },
+  "first_84_case_log": {
+    "bytes": 34,
+    "sha256": "3a63d72580f69bd2114848995abfcbefd572614ca48368ed924c6264d6824711"
+  },
+  "final_log": {
+    "bytes": 34,
+    "sha256": "eaf642eedda5d1d33f5141fd33f162590fbb0db62f01f678b1e8b8e06a9ab1d2"
+  },
+  "final_junit": {
+    "bytes": 13682,
+    "sha256": "7f2da11ae8b216a84468994d3bad314d0ada8f3cd688349a48ab47f8a52325ee"
+  },
+  "final_events": {
+    "bytes": 169707,
+    "sha256": "03d43c1bc6d16c57417112253b6ebb5fb5162d1ebf1dbafea888be4d39f22ca1"
+  },
+  "receptor_complete": true,
+  "old_api_and_core_method_definitions_except_main_AST_equal": true,
+  "key_digestion_reused_and_definition_contract_added": true,
+  "test_formatted_AST_preserved": true,
+  "semantics": "Exact mapping/identity, original confirmed outcome or null, native status or pending, retained meta-only attempt counts; no unpublished draft disclosure, recredit or reexecution. Stored error details are copied without being emitted again.",
+  "source_files": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 25956,
+      "sha256": "4019cd4b17995b875b9758d5f36298cff0a88d44d3459ced0a2702e57b82ef25"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 35637,
+      "sha256": "51c3ef806c07abe6a655e2a5755bfdaba077e018ed11b0eb9fc801886922e435"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3360,
+      "sha256": "36f1e1a69398b01e2ccc1f62513c0e3a7a1f9ae50138b9a692aea18c101883c4"
+    },
+    "tests/test_public_work_item.py": {
+      "bytes": 14923,
+      "sha256": "d5374831f061953d211486cf745c5542ccb9fa3f78c0ea5b420a08fbe7080fff"
+    }
+  },
+  "docs": {
+    "strict_full_html": true,
+    "notebook_execution": "off",
+    "method_anchor_recipe_library_link_verified": true,
+    "own_observed_group_peak_rss_bytes": 304185344,
+    "original_optional_beartype_absence_diagnostics_retained": true
+  },
+  "governance": [
+    {
+      "check": "index-generate",
+      "exit_code": 0
+    },
+    {
+      "check": "index-check",
+      "exit_code": 0
+    },
+    {
+      "check": "reporting",
+      "exit_code": 0
+    },
+    {
+      "check": "ruff",
+      "exit_code": 0
+    },
+    {
+      "check": "format",
+      "exit_code": 0
+    },
+    {
+      "check": "whitespace",
+      "exit_code": 0
+    }
+  ],
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "reader_AS_DATA_per_process_bytes": 536870912,
+    "docs_AS": "unlimited inherited",
+    "aggregate_cgroup": false,
+    "reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "source_tests_whole_command_peak_rss_bytes": 58728448
+  },
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "owned_installed_receiving": "pending",
+  "scientific_execution": false,
+  "environment_manager_transaction": false,
+  "raw_evidence": "build/phmt-work-item-20261108-9lcfzrod",
+  "retention_review": "2026-11-22",
+  "limits": "Exact saved detail/reader only; no biological, scale/performance, full-source exact-head, complete public dependency/installed-platform or release qualification. Changed scientific producer bindings can require a fresh linked execution; historical independent reading remains."
+}

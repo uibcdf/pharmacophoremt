@@ -303,6 +303,26 @@ class ScreeningRunView:
         """
         return _iterate("read declared work", self._view.work_items())
 
+    @signal(tags=["results", "read", "work"])
+    @arg_digest(config=config("ScreeningRunView.work_item"))
+    def work_item(self, work_key):
+        """Inspect one exact work key and its original confirmed evidence.
+
+        Return detached original run/work identity, manifest mapping, confirmed
+        flag, native status or pending, retained attempt counts and the complete
+        original confirmed outcome or None. Staged/never-started work stays
+        pending without disclosing unpublished payloads. Counts describe retained
+        attempts, not active workers. Valid zero negatives and native failures
+        retain their original distinction, scores, units and attribution.
+
+        Keep this caller-owned view open. Unknown/invalid keys and closed/foreign
+        thread connections refuse through ScreeningRunError. No score criterion,
+        molecular access or new attribution is required. Opening still verifies
+        the full run; attempt traversal is linear and the selected original
+        native evidence can contain geometry. The caller owns its disclosure.
+        """
+        return _invoke("inspect declared work", self._view.work_item, work_key)
+
     @signal(tags=["results", "read", "progress"])
     @arg_digest(config=config("ScreeningRunView.progress"))
     def progress(self):
@@ -435,8 +455,9 @@ class ScreeningRunView:
 def main(argv=None):
     """Inspect saved work/progress/ranks or export evidence through the public view.
 
-    Successful inspection prints bounded scalar JSON; export prints the original
-    API receipt. Handled failures exit2 without a success response. Publication
+    Rank/progress/page inspection prints scalar JSON. Explicit work-key detail
+    prints full original confirmed evidence; export prints the original API
+    receipt. Handled failures exit2 without a success response. Publication
     followed by cleanup/close failure retains a coded JSON receipt on stderr.
     """
     parser = argparse.ArgumentParser(
@@ -453,6 +474,11 @@ def main(argv=None):
         "--work-items",
         action="store_true",
         help="Inspect declared work in manifest order, including unconfirmed entries.",
+    )
+    exports.add_argument(
+        "--work-key",
+        metavar="KEY",
+        help="Inspect one exact work key and full confirmed evidence, which can contain geometry.",
     )
     exports.add_argument(
         "--to-jsonl",
@@ -488,7 +514,8 @@ def main(argv=None):
     )
     arguments = parser.parse_args(argv)
     exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
-    ranked = not (exporting or arguments.summary or arguments.work_items)
+    detail = arguments.work_key is not None
+    ranked = not (exporting or arguments.summary or arguments.work_items or detail)
     if not (ranked or arguments.work_items) and (
         arguments.score_method is not None or arguments.limit is not None
     ):
@@ -497,6 +524,8 @@ def main(argv=None):
         parser.error("--score-method is required for ranked inspection")
     if arguments.offset is not None and not arguments.work_items:
         parser.error("--offset is only valid with --work-items")
+    if detail and not arguments.work_key.strip():
+        parser.error("--work-key requires a nonempty opaque key")
     if arguments.work_items:
         if arguments.score_method is not None:
             parser.error("--score-method is only valid for ranked inspection")
@@ -511,6 +540,8 @@ def main(argv=None):
         ) as view:
             if arguments.summary:
                 result = view.progress()
+            elif detail:
+                result = view.work_item(arguments.work_key)
             elif arguments.work_items:
                 configuration = view.configuration
                 count = configuration["work_count"]

@@ -10,6 +10,12 @@ attempts, the test-layout correction and the incomplete administrative attempt.
 
 ## User contract
 
+The [single-work contract](saved_work_item_inspection.md) adds `--work-key KEY`
+through public `ScreeningRunView.work_item`, preserving exact identity, confirmed/
+pending status and retained attempt counts. This explicit detail response contains
+full original confirmed evidence and can disclose geometry; scalar summary/page/
+rank responses remain unchanged. See its owning report/receipts for receiving.
+
 The declared-work increment [#156](https://github.com/uibcdf/pharmacophoremt/issues/156)
 adds mutually exclusive `--work-items`, default limit10, positive `--limit` and
 nonnegative `--offset`. It composes the verified public `work_items()` iterator:
@@ -67,13 +73,14 @@ omit pending/unpublished work. Their exact encoding, receipt, original-evidence,
 filesystem and data-authority semantics are those of the existing public API.
 No ranking criterion is required or inferred. Explicit `--score-method` or
 `--limit` with export is refused before opening the database or output; the two
-output flags are mutually exclusive. Inspection still requires an explicit
+output flags are mutually exclusive. Ranked inspection still requires an explicit
 criterion and defaults to limit10. `--help` needs no database.
 
 Success exits0 and prints one JSON document: the original inspection response,
 or the exact export receipt including complete original configuration and
-confirmed/pending counts. Exported full native records go to the chosen file,
-not stdout. The caller owns disclosure of the receipt and complete native file.
+confirmed/pending counts. In export modes, full native records go to the chosen
+file. The separate explicit work-key detail prints its selected full outcome on
+stdout. The caller owns disclosure of the receipt and complete native evidence.
 There is no implicit append, overwrite, resume, scientific execution, provider
 loading, attribution or format migration. Legacy files require `--allow-legacy`
 for either operation. A file literally named `export` remains a normal database

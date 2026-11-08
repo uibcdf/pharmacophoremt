@@ -199,6 +199,10 @@ Work inspection cannot be combined with scoring, summary or outcome-export flags
 `--offset` applies only to this mode. Admission/iteration/close failures exit2
 without success JSON, preserving the original database.
 
+For one exact work key, including its original confirmed evidence or explicit
+pending state, use [saved input detail](saved_work_inspection.md). This is also
+available through the public `view.work_item(work_key)` operation.
+
 ## Inspect and export the saved view
 
 To inspect observed ranks, choose the original scoring criterion explicitly:

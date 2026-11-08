@@ -23,6 +23,13 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#157 single-work detail](pending_proposals/inspect_saved_work_item.md)
+adds the public exact-key reader and command. Confirmed match/zero/failure and
+pending work retain original evidence/status/attempt meanings; drafts stay hidden.
+The final85source case scope includes16new and69original controls. Strict docs/
+local governance pass; exact owned installed receiving remains pending. No molecular,
+scale, biological or full public delivery claim follows.
+
 2026-11-08: [#156 bounded work inspection](archive/inspect_declared_work_cli.md)
 exposes original manifest mappings, including unconfirmed work, through a
 paginated independent command. Source69 selected controls, strict full docs and

@@ -110,6 +110,7 @@ _METHODS = {
     "ScreeningRunView": (
         "open",
         "work_items",
+        "work_item",
         "results",
         "progress",
         "summary",

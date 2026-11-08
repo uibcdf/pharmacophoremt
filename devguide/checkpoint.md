@@ -10,27 +10,25 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#156 declared-work command](archive/inspect_declared_work_cli.md) adds
-`--work-items` with paginated original manifest mappings, including staged and
-never-started work. Default limit10, positive `--limit` and nonnegative
-`--offset` retain original order and run/work identities. The existing verified
-reader owns admission; no scientific/attribution import, collection or parser is
-added. Page retention depends on the requested limit; offset traversal is linear
-and opening still verifies the complete saved run.
+[#157 single-work inspection](pending_proposals/inspect_saved_work_item.md)
+adds public `ScreeningRunView.work_item(work_key)` and `--work-key KEY`. The
+reader preserves exact original mapping/run identity, confirmed/native-status-or-
+pending, retained attempt counts and the full original confirmed outcome or null.
+Unpublished drafts are hidden. Attempt counts do not infer active workers. No
+score, molecular computation or attribution is created. Explicit detail can
+contain geometry; existing scalar/page/export routes retain their behavior.
 
-The [source receipt](evidence/work_cli_source_20261108.json) retains nine original
-failures/three passes,69 selected passing controls (12new), unchanged original
-reader/progress/export definitions and the HTML-entity checker correction.
-Strict full docs, full Ruff/format, index and three reporting checks pass. The
-[installed receipt](evidence/work_cli_installed_20261108.json) receives the same69
-bodies from exact5d77c9c/wheel0.4.0+183.g5d77c9c outside checkout, with published
-support payloads. All211payload/156nongenerated runtime files and seven fixture
-files verify; the SDK verifies seven loaded parent runtime modules.59guarded
-children retain38successes/21expected refusals; eight documented commands pass
-on four unchanged historical databases. The bounded bridge resolves; full
-source exact-head/public/platform/release and biological/scale gates remain open.
+The final selected source scope is85cases, including16new guards and69original
+reader/CLI/page/progress/export controls. The earlier84case receiving and original
+12failures/three passes retain separate identities. Formatting preserves tested
+ASTs; old API/core methods except command orchestration remain unchanged.
+Strict full docs, rendered method/recipe links, full Ruff/format, index and three
+reporting tests pass. The [source receipt](evidence/work_item_source_20261108.json)
+retains actual limits and original failures. Exact owned installed receiving
+remains pending.
 
 Earlier bounded increments retain their own contracts and source/run identities:
+[#156 work pages](archive/inspect_declared_work_cli.md),
 [#155 BEDROC](archive/bedroc_small_alpha.md),
 [#150 plan inspection](archive/inspect_prepared_run_plans.md),
 [#147 paired saved analysis](saved_run_comparison.md),
@@ -38,7 +36,7 @@ Earlier bounded increments retain their own contracts and source/run identities:
 [#145 progress reuse](saved_progress_reuse.md),
 [#153 SQLite cleanup](archive/administrative_sqlite_lifetimes.md) and
 [#154 native service caller](archive/native_qualification_service_oom.md).
-The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/5d77c9cb46e48ebd915a35ad4d0f205ab6240603/devguide/checkpoint.md)
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/439a22beb586e7721cbb020c8519cd8c30ee9227/devguide/checkpoint.md)
 preserves the detailed receiving statements before this closeout; they are not
 new tasks. The [chemical-library guide](../docs/content/user/chemical_libraries.md)
 connects these operations, without qualifying a new connector or human usability.
@@ -49,7 +47,9 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive a distinct reviewed environment-manager
+**Next concrete action:** receive the same85 bodies and documented detail
+commands from one exact owned wheel outside checkout, then close #157 on that
+bounded evidence. Independently receive a distinct reviewed environment-manager
 strategy from the common-tool owner before another #148 acquisition. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
 b1139d0/run42494894038 verifies manager1.5.10/effective1/1settings but extraction
@@ -57,7 +57,7 @@ still fails within the unchanged2GiB/64-task envelope. No native512MiB service
 or87molecular cases execute. Stop both exhausted profiles; do not raise budgets.
 The [source/configuration review](evidence/environment_manager_source_review_20261108.json)
 rejects a blind upgrade and retains the metadata-only local Conda refusal. No
-new environment-manager transaction or molecular request accompanies #156. The three original
+new environment-manager transaction or molecular request accompanies #157. The three original
 benchmark snapshots remain local pending redistribution assessment; do not
 transfer or substitute them. Native provider/context qualification and all87
 cases precede any measured arm/original-input pilot. Continue independent

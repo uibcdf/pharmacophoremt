@@ -717,6 +717,44 @@ class ReferenceRunView:
         """Yield all declared work mappings in their original manifest order."""
         yield from self._ledger.work_items()
 
+    def work_item(self, work_key):
+        """Detach one original mapping, confirmation and retained attempt counts."""
+        _key(work_key, "work_key")
+        row = (
+            self._ledger._db()
+            .execute(
+                "SELECT ordinal, work_key, source_key, occurrence_key FROM work WHERE work_key=?",
+                (work_key,),
+            )
+            .fetchone()
+        )
+        if row is None:
+            raise ValueError("unknown work key")
+        outcome = self._ledger.committed(work_key)
+        attempts = dict(started=0, staged=0, committed=0)
+        for attempt in self._ledger.attempts(work_key):
+            attempts["started"] += 1
+            attempts["staged"] += int(attempt["staged"])
+            attempts["committed"] += int(attempt["committed"])
+        configuration = self._ledger._configuration
+        return dict(
+            format="pharmacophoremt.screening-work-item@1",
+            run_id=configuration["run_id"],
+            run_format=configuration["format"],
+            work_sha256=configuration["work_sha256"],
+            work_item=dict(
+                zip(
+                    ("manifest_ordinal", "work_key", "source_key", "occurrence_key"),
+                    row,
+                    strict=True,
+                )
+            ),
+            confirmed=outcome is not None,
+            status="pending" if outcome is None else outcome["native_result"]["status"],
+            attempts=attempts,
+            outcome=outcome,
+        )
+
     def progress(self):
         """Count work and attempts without selecting or combining score criteria."""
         if self._progress_cache is not None:
