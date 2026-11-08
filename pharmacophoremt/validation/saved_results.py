@@ -80,6 +80,128 @@ def _metrics(rows, fractions, alpha):
     }
 
 
+def _causes(originals, destinations, unscored, *, reserved_stages=()):
+    reserved = {"search", "native_evaluation", *reserved_stages}
+    causes = {}
+    for cause in _records(unscored, "unscored"):
+        index = _index(cause.get("input_index"), "unscored")
+        if index not in originals or index in causes or index in destinations:
+            _error("unscored", "duplicate, unknown or already mapped original input")
+        if (
+            any(
+                not isinstance(cause.get(key), str) or not cause[key].strip()
+                for key in ("stage", "reason")
+            )
+            or cause["stage"] in reserved
+        ):
+            _error("unscored", "declare an upstream stage and a nonempty reason")
+        causes[index] = cause
+    if destinations | causes.keys() != originals.keys():
+        _error("cohort", "every original input needs native evidence or a cause")
+    return causes
+
+
+def _summarize(
+    originals,
+    by_original,
+    causes,
+    *,
+    method,
+    fractions,
+    alpha,
+    input_mapping,
+    source_metadata,
+    stored_scores=None,
+):
+    records, stages = [], {}
+    for index, original in originals.items():
+        result = by_original.get(index)
+        score = (
+            None if result is None else get_screening_score(result, score_method=method)
+        )
+        if (
+            stored_scores is not None
+            and result is not None
+            and score != stored_scores[index]
+        ):
+            _error("ranking_score", "stored score differs from native evidence")
+        cause = causes.get(index)
+        if result is not None and score is None:
+            cause = {
+                "input_index": index,
+                "stage": "native_evaluation",
+                "reason": "native failure",
+                "error": deepcopy(result.get("error")),
+            }
+        if cause is not None:
+            stages[cause["stage"]] = stages.get(cause["stage"], 0) + 1
+        records.append(
+            {
+                "input_index": index,
+                "label": original["label"],
+                "cohort": deepcopy(original),
+                "score": score,
+                "native_evaluation": deepcopy(result),
+                "unscored_cause": deepcopy(cause),
+            }
+        )
+    scored = [row for row in records if row["score"] is not None]
+    labels = [row["label"] for row in scored]
+    sensitivity = None
+    if method == "seeded_hit" and records:
+        full_labels = [row["label"] for row in records]
+        sensitivity = {}
+        for name, optimistic in (
+            ("pessimistic_hypothetical", False),
+            ("optimistic_hypothetical", True),
+        ):
+            scores = [
+                row["score"]
+                if row["score"] is not None
+                else float(row["label"] if optimistic else 1 - row["label"])
+                for row in records
+            ]
+            value = roc_auc(full_labels, scores)
+            sensitivity[name] = value if math.isfinite(value) else None
+    return {
+        "schema": "pharmacophoremt.screening_summary@1",
+        "score_method": method + "@1",
+        "metric_settings": {"ef_fractions": list(fractions), "bedroc_alpha": alpha},
+        "n_total": len(records),
+        "n_actives": sum(row["label"] for row in records),
+        "n_inactives": sum(1 - row["label"] for row in records),
+        "n_evaluated": len(scored),
+        "n_actives_evaluated": sum(labels),
+        "n_inactives_evaluated": len(labels) - sum(labels),
+        "n_actives_found": sum(
+            row["label"] == 1 and row["native_evaluation"]["status"] == "matched"
+            for row in scored
+        ),
+        "n_inactives_found": sum(
+            row["label"] == 0 and row["native_evaluation"]["status"] == "matched"
+            for row in scored
+        ),
+        "n_unscored": len(records) - len(scored),
+        "n_actives_unscored": sum(r["label"] for r in records) - sum(labels),
+        "n_inactives_unscored": sum(1 - r["label"] for r in records)
+        - len(labels)
+        + sum(labels),
+        "n_native_failed": sum(
+            r.get("status") == "failed" for r in by_original.values()
+        ),
+        "n_upstream_unscored": len(causes),
+        "unscored_by_stage": stages,
+        "evaluated_indices": [row["input_index"] for row in scored],
+        "labels": labels,
+        "scores": [row["score"] for row in scored],
+        "metrics": _metrics(scored, fractions, alpha),
+        "missing_binary_score_AUC_sensitivity": sensitivity,
+        "records": records,
+        "input_mapping": deepcopy(list(input_mapping)),
+        "source_metadata": deepcopy(source_metadata),
+    }
+
+
 @signal(tags=["validation", "screening", "summary"])
 @arg_digest(config=CONFIG)
 @attributed()
@@ -183,101 +305,18 @@ def summarize_screening_results(
         native_results[native] = result
     if native_results.keys() != mapping.keys():
         _error("input_mapping", "every mapping requires one native evaluation")
-    causes = {}
-    for cause in _records(unscored, "unscored"):
-        index = _index(cause.get("input_index"), "unscored")
-        if index not in originals or index in causes or index in destinations:
-            _error("unscored", "duplicate, unknown or already mapped original input")
-        if any(
-            not isinstance(cause.get(key), str) or not cause[key].strip()
-            for key in ("stage", "reason")
-        ) or cause["stage"] in {"search", "native_evaluation"}:
-            _error("unscored", "declare an upstream stage and a nonempty reason")
-        causes[index] = cause
-    if destinations | causes.keys() != originals.keys():
-        _error("cohort", "every original input needs native evidence or a cause")
+    causes = _causes(originals, destinations, unscored)
     by_original = {mapping[native]: result for native, result in native_results.items()}
-    records, stages = [], {}
-    for index, original in originals.items():
-        result = by_original.get(index)
-        score = (
-            None if result is None else get_screening_score(result, score_method=method)
-        )
-        cause = causes.get(index)
-        if result is not None and score is None:
-            cause = {
-                "input_index": index,
-                "stage": "native_evaluation",
-                "reason": "native failure",
-                "error": deepcopy(result.get("error")),
-            }
-        if cause is not None:
-            stages[cause["stage"]] = stages.get(cause["stage"], 0) + 1
-        records.append(
-            {
-                "input_index": index,
-                "label": original["label"],
-                "cohort": deepcopy(original),
-                "score": score,
-                "native_evaluation": deepcopy(result),
-                "unscored_cause": deepcopy(cause),
-            }
-        )
-    scored = [row for row in records if row["score"] is not None]
-    labels = [row["label"] for row in scored]
-    sensitivity = None
-    if method == "seeded_hit" and records:
-        full_labels = [row["label"] for row in records]
-        sensitivity = {}
-        for name, optimistic in (
-            ("pessimistic_hypothetical", False),
-            ("optimistic_hypothetical", True),
-        ):
-            scores = [
-                row["score"]
-                if row["score"] is not None
-                else float(row["label"] if optimistic else 1 - row["label"])
-                for row in records
-            ]
-            value = roc_auc(full_labels, scores)
-            sensitivity[name] = value if math.isfinite(value) else None
-    return {
-        "schema": "pharmacophoremt.screening_summary@1",
-        "score_method": method + "@1",
-        "metric_settings": {"ef_fractions": list(fractions), "bedroc_alpha": alpha},
-        "n_total": len(records),
-        "n_actives": sum(row["label"] for row in records),
-        "n_inactives": sum(1 - row["label"] for row in records),
-        "n_evaluated": len(scored),
-        "n_actives_evaluated": sum(labels),
-        "n_inactives_evaluated": len(labels) - sum(labels),
-        "n_actives_found": sum(
-            row["label"] == 1 and row["native_evaluation"]["status"] == "matched"
-            for row in scored
-        ),
-        "n_inactives_found": sum(
-            row["label"] == 0 and row["native_evaluation"]["status"] == "matched"
-            for row in scored
-        ),
-        "n_unscored": len(records) - len(scored),
-        "n_actives_unscored": sum(r["label"] for r in records) - sum(labels),
-        "n_inactives_unscored": sum(1 - r["label"] for r in records)
-        - len(labels)
-        + sum(labels),
-        "n_native_failed": sum(
-            r.get("status") == "failed" for r in native_results.values()
-        ),
-        "n_upstream_unscored": len(causes),
-        "unscored_by_stage": stages,
-        "evaluated_indices": [row["input_index"] for row in scored],
-        "labels": labels,
-        "scores": [row["score"] for row in scored],
-        "metrics": _metrics(scored, fractions, alpha),
-        "missing_binary_score_AUC_sensitivity": sensitivity,
-        "records": records,
-        "input_mapping": deepcopy(list(input_mapping)),
-        "source_metadata": deepcopy(source_metadata),
-    }
+    return _summarize(
+        originals,
+        by_original,
+        causes,
+        method=method,
+        fractions=fractions,
+        alpha=alpha,
+        input_mapping=input_mapping,
+        source_metadata=source_metadata,
+    )
 
 
 @signal(tags=["validation", "screening", "comparison"])

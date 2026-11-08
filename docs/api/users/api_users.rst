@@ -7,7 +7,7 @@ Users
    :maxdepth: 2
 
 Incremental prepared-input screening
------------------------------------
+------------------------------------
 
 Available in development source. The
 :doc:`prepared-input recipe </content/cookbook/prepared_incremental_screening>`
@@ -22,7 +22,7 @@ scope, reader ownership, score/failure semantics and qualification limits.
 .. autofunction:: pharmacophoremt.screening.screen_prepared
 
 Recoverable prepared screening and saved results
------------------------------------------------
+------------------------------------------------
 
 Selected source and bounded owned-wheel receiving pass; full supported/public
 qualification remains separate. The

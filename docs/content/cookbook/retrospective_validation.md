@@ -111,6 +111,11 @@ your scientific choices; these recipes do not establish biological validation.
 
 ## Summarize saved results against the original cohort
 
+For outcomes saved by the recoverable prepared workflow, use
+[saved-run analysis](saved_run_analysis.md). It maps original `work_key` values
+without requiring native batch indices and keeps declared pending work separate.
+The operation below retains its existing native batch-result contract.
+
 `summarize_screening_results` reads detached native results and recomputes metrics
 without molecular access or another search. Supply every original sample and its
 label, an explicit mapping from native batch indices, and a cause for every input

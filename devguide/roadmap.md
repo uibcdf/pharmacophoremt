@@ -158,6 +158,15 @@ theme, separately from molecular throughput and full supported delivery.
 
 ## Current priority: classical consolidation
 
+[#146 saved-run cohort analysis](pending_proposals/summarize_saved_screening_run.md)
+connects verified saved work to existing retrospective metrics without inventing
+native batch indices. Manifest iteration and the shared-core public summary are
+implemented;41focused and223selected cases plus the exact analytical recipe pass.
+Original broader native/resource failure and existing MolSysMT#601 diagnostic
+feedback remain explicit; same-artifact installed and full hosted receiving are
+pending. Existing#100contracts are
+already received and are not repeated as a missing adoption.
+
 The [#143 boundary-fixture correction](archive/analytical_upper_bound_platform.md)
 replaces two nonexact synthetic endpoints with exactly representable geometry.
 Fourteen focused guards and the ten-case driver pass locally; old results and

@@ -14,6 +14,17 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Saved-run cohort analysis — 2026-11-08 UTC
+
+[#146](summarize_saved_screening_run.md) implements public manifest iteration and
+direct saved-run analysis without synthesizing batch indices. The
+[source receipt](../evidence/saved_run_analysis_source_20261108_summary.json)
+passes268distinct cases and the exact analytical recipe, preserving pending,
+native-failed and upstream-unavailable denominators. Original broader native/
+resource failure and existing MolSysMT#601 diagnostic feedback remain explicit.
+Exact owned installed receiving is pending; no general connector, admitted
+activity labels, human usability or mature0.x qualification follows.
+
 ## Guided/expert journey receiving — 2026-11-07 UTC
 
 [Actual public-route receiving](../guided_expert_journey_receiving.md) compares

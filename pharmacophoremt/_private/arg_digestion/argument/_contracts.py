@@ -613,6 +613,16 @@ def digest_source_metadata(obj):
     return obj
 
 
+def digest_run_view(obj):
+    from pharmacophoremt_results import ScreeningRunView
+
+    if not isinstance(obj, ScreeningRunView):
+        raise ArgumentError(
+            argument="run_view", reason="expected a verified ScreeningRunView"
+        )
+    return obj
+
+
 def digest_baseline(obj):
     if not isinstance(obj, dict):
         raise ArgumentError(argument="baseline", reason="expected a saved-result arm")

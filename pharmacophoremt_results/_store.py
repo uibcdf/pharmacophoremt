@@ -387,6 +387,19 @@ class ReferenceLedger:
             )
         )
 
+    def work_items(self):
+        """Stream original manifest correspondence, including unpublished work."""
+        for row in self._db().execute(
+            "SELECT ordinal, work_key, source_key, occurrence_key FROM work ORDER BY ordinal"
+        ):
+            yield dict(
+                zip(
+                    ("manifest_ordinal", "work_key", "source_key", "occurrence_key"),
+                    row,
+                    strict=True,
+                )
+            )
+
     def _work(self, work_key):
         _key(work_key, "work_key")
         row = (
@@ -699,6 +712,10 @@ class ReferenceRunView:
     def results(self):
         """Yield full saved terminal outcomes in manifest order, including failures."""
         yield from self._ledger.results()
+
+    def work_items(self):
+        """Yield all declared work mappings in their original manifest order."""
+        yield from self._ledger.work_items()
 
     def progress(self):
         """Count work and attempts without selecting or combining score criteria."""

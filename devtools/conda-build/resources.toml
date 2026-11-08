@@ -193,6 +193,7 @@ required_paths = [
   "site-packages/pharmacophoremt/validation/retrospective.py",
   "site-packages/pharmacophoremt/validation/rigid_consensus.py",
   "site-packages/pharmacophoremt/validation/saved_results.py",
+  "site-packages/pharmacophoremt/validation/screening_runs.py",
   "site-packages/pharmacophoremt/viewer/__init__.py",
   "site-packages/pharmacophoremt/viewer/color_palettes.py",
   "site-packages/pharmacophoremt/_private/arg_digestion/prepared_runs.py",

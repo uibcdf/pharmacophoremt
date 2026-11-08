@@ -44,11 +44,26 @@ source, wheel and failed/successful run identities. Failed489be12 and successful
 8db2a53 remain distinct. The preceding detailed section is preserved in
 [checkpoint history](checkpoint_history_20261107.md).
 
-**Next concrete action:** audit public saved-result/retrospective argument
-admission under existing#6 against `tests/test_saved_results.py` and the owning
-scoring contracts; select and fix/report one concrete remaining gap without
-changing scientific definitions or historical evidence. Batch exact-head hosted
-validation at a deliberate checkpoint under#9. MolSysMT#624 collections,
+The next audit confirms existing#100/#6 saved-result contracts are already
+received. It identifies a separate [saved-run analysis gap](saved_run_analysis.md)
+under#146: prepared outcomes have no batch indices, and pending manifest identities
+were not publicly iterable. Public `work_items()` and `summarize_screening_run`
+are now implemented over the existing storage/accounting/metric owners;
+41focused guards and the223case reader/summary/metric/retrospective slice pass;
+the exact analytical public recipe passes. The [source receipt](evidence/saved_run_analysis_source_20261108_summary.json)
+receives268distinct cases and unchanged scientific-definition controls. Full
+strict Sphinx/source rendering passes with real public function/method anchors.
+Original broader-selection failure
+is retained: a local OpenMM adapter mapping failure is masked by older MolSysMT,
+then pytest reporting runs out of allocation headroom. The underlying
+[owner diagnostic context](https://github.com/uibcdf/molsysmt/issues/601#issuecomment-6715418869)
+is reported under existing#601. No new geometry defect is claimed; exhausted
+native cases retain their full hosted#9gate. Exact installed receiving is pending.
+
+**Next concrete action:** finish those declared#146controls and receive one
+exact owned installed artifact, preserving native fields, complete manifest/cohort
+mapping and separate pending/native-failure/upstream counts. Batch exact-head
+hosted validation at a deliberate checkpoint under#9. MolSysMT#624 collections,
 full installed/public dependency/platform delivery, biological/comparison evidence
 and mature0.x acceptance retain separate gates.
 

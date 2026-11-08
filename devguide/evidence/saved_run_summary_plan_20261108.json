@@ -1,0 +1,58 @@
+{
+  "schema": "pharmacophoremt.saved-run-summary-plan@1",
+  "declared_at_utc": "2026-11-08T00:45:47.274458+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "issue": "https://github.com/uibcdf/pharmacophoremt/issues/146",
+  "source_parent": "7c26156dace2cbfe3d6afa0f7153955cc007eeaf",
+  "before": {
+    "pharmacophoremt/validation/saved_results.py": {
+      "bytes": 15525,
+      "sha256": "84e338ceb0d3d676d5ea4ad3777f73a92863b28784d5a5a80fdfde99a4fdb11b"
+    },
+    "pharmacophoremt/validation/metrics.py": {
+      "bytes": 4877,
+      "sha256": "272cd4b0df06a2549c125faaeac8ed35f22e46764d4007806726fdb5a2bacd23"
+    },
+    "pharmacophoremt/validation/retrospective.py": {
+      "bytes": 6744,
+      "sha256": "d156cde37234a5f8fa898470573cd909cebe2e5c232bfec0ebd5c5c66fd395a8"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 33506,
+      "sha256": "590df1209dd0a180dbc8054ce37164cee6eb014b8baac946b59faa965eec567a"
+    },
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 21534,
+      "sha256": "fe2854a00abbd716142dc1c795cbefe1c25151c8194376ef1907c885e3680b44"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3317,
+      "sha256": "e06cecc3edf123d1b7d1b34740714dbad58ba8564c1219cf079fa91387ae842f"
+    },
+    "pharmacophoremt/_private/arg_digestion/validation_results.py": {
+      "bytes": 1073,
+      "sha256": "58d31f28a6d262b0e64da78eacd0a4a63b706f30396d967cf9813bfae1cb1d82"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+      "bytes": 31914,
+      "sha256": "54329e70e40d36b2e1566bb9d67ebe5cd34d86a36a844e8a7b20a4e283158642"
+    }
+  },
+  "case": "Five declared synthetic works:hit/zero/failure/stagedpending/neverstartedpending; optional sixth upstream-unscored original. Native batch index absent or repeated; original cohort indices sparse/reordered; repeated sources/occurrences remain distinct. Full/missing/single-class/empty variants retain independent score/metric oracles.",
+  "acceptance": "Public ordered detached streaming work_items and summarize_screening_run; unchanged batch/scoring/metric definitions, original native fields and bytes; complete full-manifest/cohort bijection; pending/nativefailed/upstreamunscored distinct; explicit score agreement; meaningful source/installed/recipe guards; no molecular access/source recredit",
+  "limits": {
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "pure_as_bytes": 536870912,
+    "native_import_build_data_bytes": 536870912,
+    "native_as": "not imposed for existing mapped providers/Git",
+    "child_timeout_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": "not enforced"
+  },
+  "scope": "Analytical saved evidence/accounting and one installed artifact only; no molecular preparation/search, activity/predictive/performance/public-release/all-platform claim"
+}

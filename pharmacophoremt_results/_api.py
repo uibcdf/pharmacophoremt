@@ -289,6 +289,18 @@ class ScreeningRunView:
         """Return exact original saved query bytes, without loading its producer."""
         return _invoke("read original query", lambda: self._view.query_bytes)
 
+    @signal(tags=["results", "read", "manifest"])
+    @arg_digest(config=config("ScreeningRunView.work_items"))
+    def work_items(self):
+        """Stream detached declared work, including pending/unpublished entries.
+
+        Each record contains manifest_ordinal, work_key, source_key and
+        occurrence_key. Original order and repeated source/occurrence identities
+        are preserved. These identities do not establish chemical independence.
+        Keep this caller-owned view open while consuming the iterator.
+        """
+        return _iterate("read declared work", self._view.work_items())
+
     @signal(tags=["results", "read", "progress"])
     @arg_digest(config=config("ScreeningRunView.progress"))
     def progress(self):

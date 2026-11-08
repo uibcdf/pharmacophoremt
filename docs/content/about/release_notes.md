@@ -12,6 +12,15 @@ Use the [installation guide](installation.md) for the delivered 0.4.0 package.
 
 ### Later development after the reviewed snapshot
 
+Verified saved runs now expose ordered `ScreeningRunView.work_items()`, including
+pending identities. `validation.summarize_screening_run` maps an explicitly
+labelled original cohort to those work keys and reuses the existing metrics
+without inventing native batch indices. Its separate summary schema retains
+original outcomes and distinguishes pending work, confirmed native failure and
+upstream unavailability. See the [analytical recipe](../cookbook/saved_run_analysis.md).
+Selected source receiving is separate from the pending owned installed/full
+supported delivery gates; these later changes do not select a release version.
+
 The independent reader now receives exact released support payloads separately
 from scientific execution. SMonitor>=0.22.1 is required to preserve visible coded
 errors through nested filtered/silenced observations; older0.19 can retain the
