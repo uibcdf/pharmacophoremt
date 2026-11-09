@@ -14,6 +14,15 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Exact original source selection — 2026-11-09 UTC
+
+[#166](select_saved_work_by_source.md) adds source/status intersections to the
+saved-work API and CLI, preserving original repeated work/global ordinals and
+full-file admission. Source120selected cases and eight original command byte
+controls pass; owned installed receiving remains pending. MolSysMT#624 still has
+two consumer comments and no provider API delivery at this receiving. No PHMT
+molecular-collection substitute, new connector or scale qualification follows.
+
 ## Prepared-plan inspection — 2026-11-08 UTC
 
 [#150](../archive/inspect_prepared_run_plans.md) replaces payload-heavy interactive display

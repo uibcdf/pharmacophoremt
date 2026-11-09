@@ -394,23 +394,29 @@ class ReferenceLedger:
             )
         )
 
-    def work_items(self, *, status=None):
+    def work_items(self, *, status=None, source_key=None):
         """Stream original manifest correspondence, including unpublished work."""
         status = _work_status(status)
+        parameters = () if source_key is None else (_key(source_key, "source_key"),)
         if status is not None:
             if status == "pending":
                 query = (
                     "SELECT w.ordinal, w.work_key, w.source_key, w.occurrence_key "
                     "FROM work w LEFT JOIN outcomes o ON o.work_key=w.work_key "
-                    "WHERE o.work_key IS NULL ORDER BY w.ordinal"
+                    "WHERE o.work_key IS NULL"
                 )
+                if source_key is not None:
+                    query += " AND w.source_key=?"
             else:
                 query = (
                     "SELECT w.ordinal, w.work_key, w.source_key, w.occurrence_key, a.payload, a.digest "
                     "FROM work w JOIN outcomes o ON o.work_key=w.work_key "
-                    "JOIN attempts a ON a.attempt_id=o.attempt_id ORDER BY w.ordinal"
+                    "JOIN attempts a ON a.attempt_id=o.attempt_id"
                 )
-            for row in self._db().execute(query):
+                if source_key is not None:
+                    query += " WHERE w.source_key=?"
+            query += " ORDER BY w.ordinal"
+            for row in self._db().execute(query, parameters):
                 if status != "pending":
                     outcome = self._outcome(row[1], row[4], row[5])
                     if outcome["native_result"]["status"] != status:
@@ -428,9 +434,11 @@ class ReferenceLedger:
                     )
                 )
             return
-        for row in self._db().execute(
-            "SELECT ordinal, work_key, source_key, occurrence_key FROM work ORDER BY ordinal"
-        ):
+        query = "SELECT ordinal, work_key, source_key, occurrence_key FROM work"
+        if source_key is not None:
+            query += " WHERE source_key=?"
+        query += " ORDER BY ordinal"
+        for row in self._db().execute(query, parameters):
             yield dict(
                 zip(
                     ("manifest_ordinal", "work_key", "source_key", "occurrence_key"),
@@ -752,12 +760,14 @@ class ReferenceRunView:
         """Yield full saved terminal outcomes in manifest order, including failures."""
         yield from self._ledger.results()
 
-    def work_items(self, *, status=None):
+    def work_items(self, *, status=None, source_key=None):
         """Yield all declared work mappings in their original manifest order."""
-        if status is None:
-            yield from self._ledger.work_items()
-        else:
-            yield from self._ledger.work_items(status=status)
+        options = {}
+        if status is not None:
+            options["status"] = status
+        if source_key is not None:
+            options["source_key"] = source_key
+        yield from self._ledger.work_items(**options)
 
     def work_item(self, work_key):
         """Detach one original mapping, confirmation and retained attempt counts."""

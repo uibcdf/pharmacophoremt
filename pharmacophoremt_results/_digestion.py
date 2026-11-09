@@ -6,6 +6,7 @@ from pathlib import Path
 from argdigest import DigestConfig, FunctionContract
 
 from ._diagnostics import ScreeningRunError
+from ._store import _key as _validate_key
 from ._store import _work_status as _validate_work_status
 
 
@@ -82,6 +83,13 @@ def _status(value):
         _error("status", str(error))
 
 
+def _source_key(value):
+    try:
+        return None if value is None else _validate_key(value, "source_key")
+    except ValueError as error:
+        _error("source_key", str(error))
+
+
 ARGUMENT_DIGESTERS = {
     "self": _unchanged,
     "cls": _unchanged,
@@ -100,6 +108,7 @@ ARGUMENT_DIGESTERS = {
     "limit": _nonnegative,
     "allow_legacy": _boolean,
     "status": _status,
+    "source_key": _source_key,
 }
 _METHODS = {
     "ScreeningRunStore": (

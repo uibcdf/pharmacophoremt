@@ -293,7 +293,7 @@ class ScreeningRunView:
 
     @signal(tags=["results", "read", "manifest"])
     @arg_digest(config=config("ScreeningRunView.work_items"))
-    def work_items(self, *, status=None):
+    def work_items(self, *, status=None, source_key=None):
         """Stream detached declared work, including pending/unpublished entries.
 
         Each record contains manifest_ordinal, work_key, source_key and
@@ -307,12 +307,19 @@ class ScreeningRunView:
         a native status is not a chemical activity label or active-worker state.
         Confirmed filtering decodes outcomes lazily; pending filtering reads
         publication membership. Opening still verifies the complete saved file.
+
+        Optional source_key selects the exact original nonempty opaque string,
+        intersected with status when supplied. None leaves source unrestricted;
+        an unknown key yields no records. No trimming, case folding, chemical
+        grouping or compound alias inference occurs. Source selection excludes
+        other sources before decoding selected confirmed outcomes.
         """
-        source = (
-            self._view.work_items()
-            if status is None
-            else self._view.work_items(status=status)
-        )
+        options = {}
+        if status is not None:
+            options["status"] = status
+        if source_key is not None:
+            options["source_key"] = source_key
+        source = self._view.work_items(**options)
         return _iterate("read declared work", source)
 
     @signal(tags=["results", "read", "work"])
@@ -525,6 +532,11 @@ def main(argv=None):
         help="Work inspection only: select exact native status or unconfirmed pending work.",
     )
     parser.add_argument(
+        "--source-key",
+        metavar="KEY",
+        help="Work inspection only: select an exact original source key.",
+    )
+    parser.add_argument(
         "--allow-legacy",
         action="store_true",
         help="Explicitly admit read-only legacy reference-ledger@1 files.",
@@ -532,6 +544,13 @@ def main(argv=None):
     arguments = parser.parse_args(argv)
     if arguments.status is not None and not arguments.work_items:
         parser.error("--status is only valid with --work-items")
+    if arguments.source_key is not None:
+        if not arguments.work_items:
+            parser.error("--source-key is only valid with --work-items")
+        try:
+            _store._key(arguments.source_key, "source_key")
+        except ValueError as error:
+            parser.error(str(error))
     exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
     detail = arguments.work_key is not None
     ranked = not (exporting or arguments.summary or arguments.work_items or detail)
@@ -564,12 +583,22 @@ def main(argv=None):
             elif arguments.work_items:
                 configuration = view.configuration
                 count = configuration["work_count"]
-                if arguments.status is not None:
+                if arguments.source_key is None and arguments.status is not None:
                     count = view.progress()["counts"][arguments.status + "_work"]
                 offset = 0 if arguments.offset is None else arguments.offset
                 limit = 10 if arguments.limit is None else arguments.limit
                 records = []
-                if offset < count:
+                if arguments.source_key is not None:
+                    options = {"source_key": arguments.source_key}
+                    if arguments.status is not None:
+                        options["status"] = arguments.status
+                    count = 0
+                    with closing(view.work_items(**options)) as source:
+                        for record in source:
+                            if offset <= count < offset + limit:
+                                records.append(record)
+                            count += 1
+                elif offset < count:
                     source = (
                         view.work_items()
                         if arguments.status is None
@@ -591,7 +620,14 @@ def main(argv=None):
                     next_offset=next_offset if next_offset < count else None,
                     records=records,
                 )
-                if arguments.status is not None:
+                if arguments.source_key is not None:
+                    result.update(
+                        format="pharmacophoremt.screening-work-selection@2",
+                        source_key=arguments.source_key,
+                        status=arguments.status,
+                        selected_work=count,
+                    )
+                elif arguments.status is not None:
                     result.update(
                         format="pharmacophoremt.screening-work-selection@1",
                         status=arguments.status,

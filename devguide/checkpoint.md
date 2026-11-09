@@ -9,6 +9,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
+adds `source_key` to the independent work iterator and `--source-key` to work
+inspection, composed with status. Source120selected cases pass (13new/107existing),
+including opaque keys, repeated occurrences, pending drafts, late count errors
+and corruption outside the selection. The [source receipt](evidence/work_source_selection_source_20261109.json)
+also receives eight unchanged original command outputs and strict docs/local
+governance. Exact owned installed receiving remains pending. No provider operation or
+large-library qualification follows; MolSysMT#624 remains open without owner API
+delivery at this receiving.
+
 [#165 r95 research build](pharmer_r95_build_receiving.md) receives the full66-file
 source,15fixed private artifacts and a passing legacy-ABI/selected-SDF dependency
 probe. PHMT/Conda/system providers stay unchanged. No Pharmer executable is produced.

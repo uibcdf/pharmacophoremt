@@ -1,0 +1,39 @@
+{
+  "schema": "pharmacophoremt.work-source-selection-plan@1",
+  "issue": 166,
+  "parent_source": "80d088646ae57ab881eaf4870d1628bb78fbe4a0",
+  "provider_observation": "MolSysMT#624 open with two consumer comments and no provider API delivery/disposition; clean local cached main fab8cbccf570. Public SDF still single-record. No provider collection fork or update.",
+  "operation": "Public work_items(*, status=None, source_key=None); exact opaque source identity, combined intersection; parameterized original store selection; CLI --work-items --source-key with optional status, opt-in work-selection@2. Existing default/status-only response bytes retained.",
+  "CLI_count_policy": "Scan the selected stream once in one verified snapshot; retain page only, true selected count, arbitrary-precision offsets/limits. Complete file admission remains unchanged.",
+  "resources": {
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 57186828288,
+      "SwapTotal": 8589930496,
+      "SwapFree": 8033259520
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=903966\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=878685\n",
+    "swap": {
+      "pswpin": 99680,
+      "pswpout": 296263
+    },
+    "load": [
+      3.8310546875,
+      3.91796875,
+      3.69677734375
+    ],
+    "CPU": 19,
+    "threads": 1,
+    "DATA": 536870912,
+    "AS": 1073741824,
+    "observed_group_RSS_cutoff": 536870912,
+    "host_reserve_fraction": 0.2,
+    "nice": 19,
+    "IO": "idle",
+    "allocation": null,
+    "scheduler": "Slurm available; last same-session read has inval/unk* nodes, no usable allocation. Lightweight serial reader checks only.",
+    "estimate": "Stdlib SQLite/public reader with fresh sequential children; no numerical/molecular imports in children. Prior same-context reader cases below512MiB. No compiler, native rebuild, manager transaction or resource increase."
+  },
+  "acceptance": "Freeze original default/status-only commands and original file bytes. Independent source/status intersection, repetition/order, quoted/Unicode/zero/whitespace literal keys, invalid input, pending drafts, empty/legacy, counts/windows, lazy/closed/thread/late errors and complete verification. Same bodies installed from exact owned wheel, source/runtime/public-support origins checked and molecular providers blocked.",
+  "retention_review": "2026-11-23"
+}

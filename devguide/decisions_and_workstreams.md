@@ -107,6 +107,12 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-09: [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
+adds source/status intersections on original work mappings through the owned
+reader and CLI. Source120selected cases and eight unchanged original command
+outputs pass; owned installed receiving remains pending. Provider collections
+remain MolSysMT#624-owned; neither a connector nor scale qualification follows.
+
 2026-11-08: [#158 saved-work status selection](archive/select_saved_work_status.md)
 adds a public metadata-only iterator filter and independent command. Four exact
 statuses preserve original manifest positions, pending drafts and valid-zero

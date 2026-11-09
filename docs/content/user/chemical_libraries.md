@@ -100,6 +100,10 @@ To locate failures or unconfirmed work first, use
 [`--work-items --status failed` or `pending`](../cookbook/saved_work_inspection.md#find-failed-or-pending-work),
 or public `view.work_items(status=...)`. Selected pages preserve original keys
 and ordinals, with separate total and selected-work counts.
+To review every occurrence of one original source, use
+[`--work-items --source-key=SOURCE_KEY`](../cookbook/saved_work_inspection.md#find-all-work-for-one-original-source)
+or `view.work_items(source_key=...)`; add `status` to narrow that source's work.
+The key is literal and does not infer chemical identity or merge conformers.
 The [complete Python inspection recipe](../cookbook/saved_work_inspection.md#inspect-a-selected-prefix-in-one-python-snapshot)
 combines counts, status selection and exact-key detail in one caller-owned
 snapshot, with a bounded display and unchanged opaque keys.

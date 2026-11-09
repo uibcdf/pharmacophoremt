@@ -1,7 +1,7 @@
 # Inspect saved screening work
 
 Start with `python -m pharmacophoremt_results RUN.sqlite3 --summary` to see the
-saved counts. Then select work by status and inspect a literal work key using
+saved counts. Then select work by status or source and inspect a literal work key using
 the commands below. Each command opens its own verified snapshot.
 
 ## Inspect a selected prefix in one Python snapshot
@@ -85,13 +85,52 @@ selection again at offset0: confirmed/pending membership may have changed.
 These offsets are not durable cursors across new confirmations. In Python, keep
 one caller-owned view open and iterate `view.work_items(status="failed")` or
 `view.work_items(status="pending")` for its fixed snapshot. The default
-`view.work_items()` and command without `--status` retain all original mappings
+`view.work_items()` and command without either selection retain all original mappings
 and their ordinary page response.
 
 The status filter applies only to `--work-items`; it does not choose a ranking
 criterion or assign activity labels. Counts describe work, not independent
 compounds. Complete opening/count work and confirmed filtering can scan saved
 outcomes; pagination alone does not establish indexed or large-library speed.
+
+## Find all work for one original source
+
+Copy an exact `source_key` from a saved work page. A source may have several
+occurrences, conformers or work items; all remain separate and keep their global
+manifest ordinals. Select the source alone, or combine it with a status:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --work-items --source-key=SOURCE_KEY
+python -m pharmacophoremt_results RUN.sqlite3 --work-items --source-key=SOURCE_KEY --status failed --limit 10 --offset 0
+```
+
+Replace `SOURCE_KEY` with the original literal value. Use shell quoting for spaces
+or shell characters, and attach a leading dash value with `=`, for example
+`--source-key='--source α'`. Empty/whitespace-only keys are invalid. Other
+whitespace, case, Unicode and punctuation are preserved. An unknown source
+returns an empty selection. This is identity selection; it infers no compound,
+PubChem CID alias or chemical grouping.
+
+Source-selected responses use `pharmacophoremt.screening-work-selection@2`.
+They include the exact `source_key`, `status` (or `null` when unrestricted),
+global `declared_work`, and `selected_work` for their intersection. Offsets address
+that selected stream; records keep their original four mapping fields. Status-only
+commands retain work-selection@1 and unfiltered commands retain work-page@1.
+
+In Python, keep a caller-owned view open and consume
+`view.work_items(source_key=source_key, status="failed")`, closing a partly consumed
+iterator as shown above. Omit `status` to include every work state for the source;
+`source_key=None` leaves source unrestricted. To inspect original confirmed
+evidence, pass a selected mapping's `work_key` to `view.work_item()`.
+
+The CLI finishes one selected stream in one verified snapshot to count the
+intersection, retaining only the requested page. A late read or close failure
+produces no success JSON. Opening still verifies the complete file, including
+other sources. Source selection excludes unrelated outcome payloads from the
+subsequent selection decoder; it adds no index or scale guarantee. The displayed
+limit does not bound complete admission/count work or the largest decoded payload.
+Restart paging after publishing more results. Reading neither retries work nor
+creates new scientific credit.
 
 ## Inspect the original confirmed evidence
 

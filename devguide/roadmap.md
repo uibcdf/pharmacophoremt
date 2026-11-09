@@ -116,6 +116,13 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
+advances milestone2: select an original source and status intersection without
+regrouping repeated work or rerunning science. The source120selected cases pass;
+owned installed receiving and final compatibility/documentation checks remain
+pending. Provider collections remain MolSysMT#624-owned and no broader connector
+or scale claim follows.
+
 [#165 pinned r95 build](pharmer_r95_build_receiving.md) advances source/diagnostic
 readiness for milestones1/6:66original files and15private dependency artifacts
 are received; the legacy-ABI/SDF dependency probe passes. Both core/GCC collector
