@@ -76,7 +76,7 @@ jobs:
   test:
     needs: nightly-decision
     if: >-
-      always() && inputs.probe_backlog != true
+      !cancelled() && inputs.probe_backlog != true
       && (github.event_name != 'schedule' || github.event.schedule != '7 2 * * *'
       || needs.nightly-decision.result != 'success'
       || needs.nightly-decision.outputs.run_full == 'true')

@@ -9,6 +9,20 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+The [new accumulated checkpoint](numerical_reader_ci_checkpoint.md) audits34commits
+and freezes1f6dfb0, then finds two actionable CI/distribution issues. Its reporting
+job fails the missing-three-module Conda inventory guard; the source matrix is
+force-cancelled after ordinary cancellation cannot stop `always()` jobs. Native
+failure/cancellation and both successful governance handles retain their original
+identities. No new full source gate is accepted. Local#168inventory correction
+passes160administrative cases;#169cancellable-predicate correction passes eight
+route/backlog cases with all other matrix/commands/pins unchanged. Final25distribution and eight route controls, declared dependency/environment
+checks and Ruff pass; the [receiving record](evidence/numerical_reader_ci_recovery_20261109.json)
+resolves the narrow local corrections. The corrected-candidate declaration
+remains pending. MolSysSuite#177owns
+the missing explicit cancellation scenario in the shared inventory tool.
+
+
 [#167 source-specific inspection recipe](../docs/content/cookbook/saved_work_inspection.md#inspect-one-source-in-one-python-snapshot)
 composes exact source/status counts, a bounded prefix and original details in one
 caller-owned public view. All 96 declared parameter cases pass from source and
@@ -102,10 +116,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** audit the accumulated native/reader changes since the
-accepted27c1178 checkpoint and freeze the next deliberate source-validation scope
-under#9/#23, with an exact candidate and a reviewed execution/dependency context.
-Do not relabel selected local receiving as a complete source/platform gate.
+**Next concrete action:** finish and publish the narrow#168/#169 corrections,
+freeze that exact head and declare the corrected source/policy/no-build checkpoint
+under#9/#23. Verify existing handles before each one-time request; never rerun the
+original failed/cancelled source candidate. Full scientific receiving remains
+pending until actual eight-cell commands/counts/coverage and native steps verify.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and

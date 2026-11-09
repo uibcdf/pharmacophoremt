@@ -1,0 +1,67 @@
+{
+  "schema": "pharmacophoremt.numerical-reader-ci-correction-closeout@1",
+  "issues": [
+    168,
+    169
+  ],
+  "original_source": "1f6dfb0a53f12b2c1f2bfe43d3a1cfa30071d364",
+  "checks": [
+    {
+      "name": "final-index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "final-reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.232s\n\nOK\n"
+    },
+    {
+      "name": "final-archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.164s\n\nOK\n"
+    },
+    {
+      "name": "final-whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "local_links_verified": 242,
+  "correction_state": "Local inventory/cancellation fixes received; corrected exact candidate/full source/policy/publication gates remain to be declared and received. Original source42651970337 cancelled after administrative failure; both original successful administrative handles stay at original source.",
+  "shared_owner": "uibcdf/molsyssuite#177",
+  "new_runtime_or_environment_change": false
+}

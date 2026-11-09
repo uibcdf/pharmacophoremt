@@ -60,7 +60,9 @@ def test_contributor_routes_and_complete_supported_matrix():
     assert {"cron": "7 2 * * *", "timezone": "America/Mexico_City"} in schedules
     matrix = workflow["jobs"]["test"]
     assert matrix["needs"] == "nightly-decision"
-    assert "always()" in matrix["if"]
+    admission = " ".join(matrix["if"].split())
+    assert admission.startswith("!cancelled() && ")
+    assert "always()" not in admission
     assert "needs.nightly-decision.result != 'success'" in matrix["if"]
     assert "inputs.probe_backlog != true" in matrix["if"]
     assert "continue-on-error" not in matrix

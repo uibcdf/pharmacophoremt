@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (108)
+### Resolved (110)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -37,6 +37,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_receptor_study_support.md`](installed_receptor_study_support.md) — [#96](https://github.com/uibcdf/pharmacophoremt/issues/96) — Declare selected receptor-study helpers and frozen plans for installed tests. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
+- [`keep_source_matrix_cancellable.md`](keep_source_matrix_cancellable.md) — [#169](https://github.com/uibcdf/pharmacophoremt/issues/169) — Keep the scientific matrix stoppable while retaining skipped-needs recovery. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
 - [`legacy_merge_metadata_ownership.md`](legacy_merge_metadata_ownership.md) — [#77](https://github.com/uibcdf/pharmacophoremt/issues/77) — Resolve legacy merge metadata loss and explicit mutable-site ownership. *(resolved, measured)*
 - [`live_reference_copy_review.md`](live_reference_copy_review.md) — [#60](https://github.com/uibcdf/pharmacophoremt/issues/60) — Qualify intentional molecular references and explicit independent source variants. *(resolved, measured)*
@@ -69,6 +70,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*
 - [`pair_distance_pruning_slack.md`](pair_distance_pruning_slack.md) — [#160](https://github.com/uibcdf/pharmacophoremt/issues/160) — Qualify triplet pair-distance pruning against accepted positional roundoff slack. *(resolved, measured)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
+- [`pharmer_conda_payload_inventory.md`](pharmer_conda_payload_inventory.md) — [#168](https://github.com/uibcdf/pharmacophoremt/issues/168) — Require all new Pharmer helper modules in the Conda payload inventory. *(resolved, measured)*
 - [`pharmer_disabled_points.md`](pharmer_disabled_points.md) — [#162](https://github.com/uibcdf/pharmacophoremt/issues/162) — Preserve or explicitly refuse disabled-point meaning during Pharmer JSON import. *(resolved, measured)*
 - [`pharmer_import_profile.md`](pharmer_import_profile.md) — [#163](https://github.com/uibcdf/pharmacophoremt/issues/163) — Define and enforce an explicit supported Pharmer query import profile. *(resolved, measured)*
 - [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*

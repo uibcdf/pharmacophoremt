@@ -116,6 +116,14 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+The [accumulated source checkpoint](numerical_reader_ci_checkpoint.md) audits34
+commits after27c1178. The first1f6dfb0matrix fails its reporting inventory guard;
+all scientific cells are cancelled and no new full source evidence is accepted.
+Narrow#168Conda-inventory/#169cancellation corrections pass160administrative and
+eight route/backlog cases respectively. [Final local receiving](evidence/numerical_reader_ci_recovery_20261109.json)
+resolves these narrow fixes; a newly frozen candidate remains pending. MolSysSuite#177owns the shared scenario extension.
+
+
 [#167 source-specific inspection](archive/document_source_inspection_journey.md)
 composes true intersection counts, a bounded prefix and original details in one
 public view. The same 96 declared recipe parameter cases pass from source and

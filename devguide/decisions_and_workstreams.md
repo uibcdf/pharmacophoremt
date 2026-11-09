@@ -107,6 +107,17 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-09: [accumulated source audit](numerical_reader_ci_checkpoint.md) freezes
+1f6dfb0after34commits with seven unchanged inputs/guide heads. Source reporting
+fails the real three-module Conda declaration omission#168; ordinary cancellation
+is ineffective under `always()`, motivating#169and one owned force-cancel. Both
+administrative gates succeed at the original head, while the source gate stays
+unqualified. Local160administrative/eight route controls pass after the respective
+corrections and final local distribution/preflight checks pass. The
+[receipt](evidence/numerical_reader_ci_recovery_20261109.json) resolves the narrow
+fixes; new candidate receiving remains pending. Shared cancellation-scenario
+support is handed to MolSysSuite#177 without a local evaluator fork.
+
 2026-11-09: [#167 source-specific recipe](archive/document_source_inspection_journey.md)
 executes the complete single-view count/prefix/detail journey through existing
 public tools. All 96 declared parameter cases pass in both source and unchanged

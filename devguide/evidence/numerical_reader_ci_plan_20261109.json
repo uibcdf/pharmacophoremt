@@ -1,0 +1,171 @@
+{
+  "schema": "pharmacophoremt.numerical-reader-ci-plan@1",
+  "declared_at_utc": "2026-11-09T16:08:24.296038+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "source": "1f6dfb0a53f12b2c1f2bfe43d3a1cfa30071d364",
+  "issues": [
+    9,
+    10,
+    23,
+    95,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167
+  ],
+  "scope": "Deliberate accumulated source/policy/no-build publication checkpoint after34commits: numerical pruning/BEDROC, Pharmer profile/projection/P1 preparation, saved work pages/detail/status/source and their recipes; includes developer/fixture controls, never external Pharmer or148native execution. No local full suite, manager/acquisition/native build retry, PHMT package upload, tag/release or public dependency claim.",
+  "workflows": [
+    {
+      "path": ".github/workflows/CI.yaml",
+      "inputs": {
+        "probe_backlog": false
+      }
+    },
+    {
+      "path": ".github/workflows/molsyssuite-policy.yml",
+      "inputs": {}
+    },
+    {
+      "path": ".github/workflows/conda_publication_governance.yaml",
+      "inputs": {}
+    }
+  ],
+  "dispatch_rule": "Existing workflow_dispatch ref main only while both local clean HEAD and live remote main equal frozen source. Before every one-time request inspect complete exact-head native runs; reuse any existing handle instead. Response uncertainty requires observation, never automatic redispatch.",
+  "acceptance": [
+    "Actual workflow/event/head/run/attempt verified for every accepted handle.",
+    "All eight full scientific cells, Linux x86_64/macOSarm64 each Python3.11/3.12/3.13/3.14, terminal native success with actual interpreter/platform/acquisition/preflight/full test command/counts; no guessed selection/counts.",
+    "Reporting governance, frozen policy-v1.5.4 and no-build publication governance terminal native success; manual probe_backlog=false skips backlog administration intentionally.",
+    "All emitted coverage XML file/branch/namespaces/private-omit identities verified; Linux3.13actual upload outcomes kept separate from unobserved public Codecov freshness.",
+    "Published GH Run Receptor1.4.0first capture; native complete jobs/steps/logs/artifacts own exact-candidate acceptance. No run is decided by observation timeout."
+  ],
+  "frozen_config": {
+    ".github/workflows/CI.yaml": {
+      "bytes": 8082,
+      "sha256": "d361e326020292a8944ddeb349be0b657ca13bfd051a04527a477f6bb68f8ded"
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "bytes": 250,
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "bytes": 273,
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
+    },
+    ".github/gh-run-receptor.yaml": {
+      "bytes": 361,
+      "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59"
+    },
+    ".coveragerc": {
+      "bytes": 167,
+      "sha256": "783735cc5063c5273f94df692ea17bf51690469b21b532dc6b31c040603b779f"
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    }
+  },
+  "guides": "Fresh seven connected owner-head observations unchanged; independently rehash local copies and reuse original literal canonical-text evidence. No fresh guide-text fetch or policy pin update.",
+  "remote_resources": {
+    "route": "GitHub-hosted fresh VM per configured job, not this shared workstation or a self-hosted runner.",
+    "primary_documentation": "https://docs.github.com/en/actions/how-tos/manage-runners/github-hosted-runners/use-github-hosted-runners",
+    "specification_documentation": "https://docs.github.com/en/actions/reference/runners/github-hosted-runners",
+    "declared_public_runner_allocations": {
+      "ubuntu-latest": {
+        "vcpus": 4,
+        "memory_GB": 16
+      },
+      "macos-15": {
+        "vcpus": 3,
+        "memory_GB": 7,
+        "architecture": "arm64"
+      }
+    },
+    "concurrency": "Finite eight scientific jobs plus bounded governance, each separate managed VM. Scientific pytest is sequential; existing workflow/acquisition/pins are unchanged. No per-job RSS/reserve telemetry or new cgroup control is claimed.",
+    "workload_estimate": "Previous accepted2505case/eight-cell source gate completed on these exact unchanged workflows/provider pins (slowest~46min). New scientific fixtures are tiny analytical ions/JSON/numerical cases with bounded source/installed controls; no production-library, benchmark, private H5 input, external Pharmer compiler/perception/search or148native workflow is invoked. Prior accepted managed acquisition route retained; no change to failed local/shared budgets.",
+    "documentation_observation": "Official GitHub runner docs re-read2026-11-09: public ubuntu-latest4CPU/16GB, macos-15arm643CPU/7GB; fresh independent VM/job. Actual job architecture and source commands must still be observed. No new per-job RSS/reserve telemetry or aggregate cap claim."
+  },
+  "local_capture_resources": {
+    "logical_cpus": 1,
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "GOMAXPROCS": 1,
+    "nice": 19,
+    "io": "idle",
+    "data_per_process_bytes": 536870912,
+    "address_space": "unlimited for native Git/gh mappings",
+    "reserve_fraction": 0.2,
+    "estimated_supervisor_child_envelope_bytes": 1610612736,
+    "aggregate_cgroup_enforcement": false,
+    "capacity_not_reserved": true,
+    "memory_entry": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 59771482112,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7894601728
+    },
+    "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1090282\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1061783\n",
+    "observed_own_group_RSS_stop_bytes": 1073741824,
+    "scheduler": "No allocation; lightweight direct serial remote-evidence reads only. Slurm socket restriction was retained by the preceding same-session resource inspection; no scheduler/native request."
+  },
+  "limits": "No complete-source acceptance until actual native full matrix/counts/coverage/governance verify at the exact candidate. Preserve27c1178/42451906584 and all source/owned receipts at their original identities. No installed/public/platform/biological/molecular-performance or release gate follows; provider624/375 and stopped148/165 remain separate.",
+  "audit": {
+    "commits_since_accepted": 34,
+    "previous_source": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+    "previous_accepted_full_suite": {
+      "run": 42451906584,
+      "attempt": 1,
+      "passed_per_cell": 2505
+    },
+    "runtime_module_paths_before": 156,
+    "runtime_module_paths_candidate": 159,
+    "new_runtime_paths": [
+      "pharmacophoremt/_private/arg_digestion/pharmer_io.py",
+      "pharmacophoremt/io/_pharmer_profile.py",
+      "pharmacophoremt/io/_projection.py"
+    ],
+    "unchanged_frozen_inputs": 7,
+    "main_CI_workflows_and_dependency_files_unchanged": true,
+    "new_developer_workflows": "Resource probe and native qualification YAML remain separate/manual and are not dispatched by this checkpoint.",
+    "provider_review": {
+      "pin": "0faf1584d05ac47ddcebfc20d9c9978b7f4f230e",
+      "local_cached_main": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+      "mode": "Bounded explicitly offline suite_status snapshot: both clean/cached-current; not a remote refresh. Read-only static source audit only.",
+      "P1_SDF_adapter_paths": [
+        "molsysmt/form/file_sdf",
+        "molsysmt/form/molsysmt_MolSys/to_file_sdf.py",
+        "molsysmt/form/molsysmt_Topology/to_file_sdf.py",
+        "molsysmt/form/molsysmt_Structures/to_file_sdf.py"
+      ],
+      "diff_from_pin_to_local_in_scope": "empty; required ctfile_version/V2000 conversion interface present at existing pin. No provider or dependency change."
+    },
+    "coverage_expectation": {
+      "baseline_files": 106,
+      "expected_files": 108,
+      "new_qualified_public_files": [
+        "pharmacophoremt/io/_pharmer_profile.py",
+        "pharmacophoremt/io/_projection.py"
+      ],
+      "new_private_argument_module": "Original pharmacophoremt/_private/** omit remains explicit.",
+      "legacy_scope": "Preserve original _version.py coverage. Existing uncollected data/zinc.py is outside baseline discovery; no new exclusion or all-Python-path coverage claim.",
+      "inventory": "expected_coverage_files.json in owned capsule; actual emitted XML must match."
+    }
+  }
+}
