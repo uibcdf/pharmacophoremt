@@ -1,0 +1,459 @@
+{
+  "schema": "pharmacophoremt.pharmer-p1-external-installed@1",
+  "issue": 164,
+  "case_source_commit": "76ac909785051e2f74c0d00842cfc1708a9bfc3c",
+  "runtime_source_commit": "b4b062a2137239d4d074d394bd615709beb4c6f5",
+  "runtime_version": "0.4.0+198.gb4b062a",
+  "unchanged_original_wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/wheels/pharmacophoremt-0.4.0+198.gb4b062a-py3-none-any.whl",
+    "bytes": 4531751,
+    "sha256": "273b82295e806e6bf606fbc4f3a119006d13cedaed1c31326c9a55fd3a76794b"
+  },
+  "new_wheel_build_or_runtime_install": false,
+  "wheel_payload_files_verified": 214,
+  "runtime_files_verified": 159,
+  "fixture_files_verified": {
+    "tests/test_pharmer_p1_export.py": {
+      "bytes": 3090,
+      "sha256": "e13b0fcc621ce2250122bd9c0db5ff0d01fc4c4c0d3a217dfab7505d5105ed2d"
+    },
+    "tests/test_pharmer_p1.py": {
+      "bytes": 4155,
+      "sha256": "0423838063edb57af9e0b2bb842e021fe47797cf8c8a73d542e657e4ae726fdd"
+    },
+    "phmt_test_support/__init__.py": {
+      "bytes": 74,
+      "sha256": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2"
+    },
+    "phmt_test_support/pharmer_p1.py": {
+      "bytes": 5429,
+      "sha256": "45f6fcff031a3c412c4a9b833eb0d3dc07b38cb2f23a75bbd05ea224a19bab7d"
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "bytes": 5917,
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e"
+    },
+    "phmt_test_support/pharmer_p1_export.py": {
+      "bytes": 3187,
+      "sha256": "026cb870dd2019a06377bbebb1a474c48aae6d72dc236f5a3f9b60f9293e4c43"
+    },
+    "tests/data/pharmer_p1/declaration.json": {
+      "bytes": 2359,
+      "sha256": "2eb784ae6de1bb6b5c29c24d792dea57eae4bbb4bfcb01af3719c58d0e35dca6"
+    },
+    "tests/data/pharmer_p1/query.json": {
+      "bytes": 286,
+      "sha256": "b9d564e16fcdadbac43313a527d3d0366f394607a9e5fcfb5a993c85f5342207"
+    },
+    "devtools/prepare_pharmer_p1.py": {
+      "bytes": 2707,
+      "sha256": "ce1b793015c6757128c107f0daffe6fb8c5986ca874d08d3ace5a330037404cf"
+    },
+    "tests/data/pharmer_p1/external/export_manifest.json": {
+      "bytes": 5515,
+      "sha256": "8b5ad91af72fa1807ec2c66ad6b70ffbeb4a41212fc34859c9fb37559a940e6d"
+    },
+    "tests/data/pharmer_p1/external/permuted-source.sdf": {
+      "bytes": 321,
+      "sha256": "35c95a58af3136c42082d8f88fe42a41fe9d058235122176ae44cbaef04872f8"
+    },
+    "tests/data/pharmer_p1/external/proper-motion.sdf": {
+      "bytes": 321,
+      "sha256": "0fdf4646c06df37b4edec735c94b935188977c07ed86cfd555682b0e7a9b1516"
+    },
+    "tests/data/pharmer_p1/external/receiving.json": {
+      "bytes": 11939,
+      "sha256": "6b7c0aa79e1286378311dd97137ebedec6ae69472b010d08d0ac3a25fdb23707"
+    },
+    "tests/data/pharmer_p1/external/uniform-stretch.sdf": {
+      "bytes": 321,
+      "sha256": "759762690cb32c3277634de86223573174c59eb9742cf0fc5ffec607b236e792"
+    }
+  },
+  "same_original_case_names_and_bodies": true,
+  "source_cases": 17,
+  "installed_cases": 17,
+  "new_cases_per_context": 5,
+  "original_P1_cases_per_context": 12,
+  "finish": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 17,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 17,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 17,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 4.617976463981904,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "3061ac31ec3b76717c614a9b17943e60c8a73e6881d46848167d010db599e86e",
+      "records": 52
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "45c88eec0c9946b5977739f57eba3600",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "driver": {
+    "output": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/installed-exports",
+    "manifest_identity": {
+      "bytes": 5515,
+      "sha256": "fb53c6cefd6f047d99b286f0f20ef7ed812bd4a1bf0517fae3e3fc7e9fa0e397"
+    },
+    "cases": [
+      {
+        "key": "proper-motion",
+        "actual": {
+          "key": "proper-motion",
+          "file": "proper-motion.sdf",
+          "bytes": 321,
+          "sha256": "0fdf4646c06df37b4edec735c94b935188977c07ed86cfd555682b0e7a9b1516",
+          "format": "SDF V2000",
+          "coordinate_unit": "angstrom",
+          "source_atom_indices": [
+            0,
+            1,
+            2
+          ],
+          "atom_types": [
+            "Na",
+            "K",
+            "Li"
+          ],
+          "formal_charges": [
+            1,
+            1,
+            1
+          ],
+          "n_bonds": 0,
+          "n_frames": 1,
+          "coordinates_nm": [
+            [
+              2.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              -0.5,
+              0.5
+            ],
+            [
+              1.0,
+              -1.0,
+              0.5
+            ]
+          ],
+          "roundtrip_coordinates_nm": [
+            [
+              1.9999999999999998,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              -0.49999999999999994,
+              0.49999999999999994
+            ],
+            [
+              0.9999999999999999,
+              -0.9999999999999999,
+              0.49999999999999994
+            ]
+          ],
+          "max_roundtrip_error_nm": 2.220446049250313e-16,
+          "roundtrip_tolerance_nm": 1e-12,
+          "source_unchanged": true,
+          "external_atom_membership": "not observed",
+          "external": "not_executed"
+        },
+        "status": "verified-export"
+      },
+      {
+        "key": "permuted-source",
+        "actual": {
+          "key": "permuted-source",
+          "file": "permuted-source.sdf",
+          "bytes": 321,
+          "sha256": "35c95a58af3136c42082d8f88fe42a41fe9d058235122176ae44cbaef04872f8",
+          "format": "SDF V2000",
+          "coordinate_unit": "angstrom",
+          "source_atom_indices": [
+            0,
+            1,
+            2
+          ],
+          "atom_types": [
+            "Na",
+            "K",
+            "Li"
+          ],
+          "formal_charges": [
+            1,
+            1,
+            1
+          ],
+          "n_bonds": 0,
+          "n_frames": 1,
+          "coordinates_nm": [
+            [
+              1.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              -0.5,
+              0.5
+            ]
+          ],
+          "roundtrip_coordinates_nm": [
+            [
+              0.9999999999999999,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              -0.49999999999999994,
+              0.49999999999999994
+            ]
+          ],
+          "max_roundtrip_error_nm": 2.220446049250313e-16,
+          "roundtrip_tolerance_nm": 1e-12,
+          "source_unchanged": true,
+          "external_atom_membership": "not observed",
+          "external": "not_executed"
+        },
+        "status": "verified-export"
+      },
+      {
+        "key": "uniform-stretch",
+        "actual": {
+          "key": "uniform-stretch",
+          "file": "uniform-stretch.sdf",
+          "bytes": 321,
+          "sha256": "759762690cb32c3277634de86223573174c59eb9742cf0fc5ffec607b236e792",
+          "format": "SDF V2000",
+          "coordinate_unit": "angstrom",
+          "source_atom_indices": [
+            0,
+            1,
+            2
+          ],
+          "atom_types": [
+            "Na",
+            "K",
+            "Li"
+          ],
+          "formal_charges": [
+            1,
+            1,
+            1
+          ],
+          "n_bonds": 0,
+          "n_frames": 1,
+          "coordinates_nm": [
+            [
+              2.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              -1.0,
+              0.5
+            ]
+          ],
+          "roundtrip_coordinates_nm": [
+            [
+              1.9999999999999998,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              0.0,
+              0.49999999999999994
+            ],
+            [
+              0.0,
+              -0.9999999999999999,
+              0.49999999999999994
+            ]
+          ],
+          "max_roundtrip_error_nm": 2.220446049250313e-16,
+          "roundtrip_tolerance_nm": 1e-12,
+          "source_unchanged": true,
+          "external_atom_membership": "not observed",
+          "external": "not_executed"
+        },
+        "status": "verified-export"
+      }
+    ],
+    "source_and_installed_exports_identical": true,
+    "existing_output_refused_unchanged": true,
+    "source_runtime_version": "0.4.0+134.gee5d9fa",
+    "installed_runtime_version": "0.4.0+198.gb4b062a",
+    "versions": {
+      "pharmacophoremt": "0.4.0+198.gb4b062a",
+      "molsysmt": "0.23.0+687.g2325038e8",
+      "pyunitwizard": "0.29.1+6.gf82b618",
+      "numpy": "2.5.4"
+    },
+    "external": "not_executed"
+  },
+  "loaded_runtime_modules": 155,
+  "source_fallback_attempts": [],
+  "origin_enforcement": "External fresh cwd; -I-S-B; original staged fixtures, live PHMT/companion prefix guard, current literal editable provider mappings without .pth execution. Only devtools.prepare_pharmer_p1 is additionally admitted from its exact staged fixture; SDK operations remain separately pinned.",
+  "provider_files_unchanged": true,
+  "provider_Python_file_counts": {
+    "ackredit": 69,
+    "argdigest": 39,
+    "depdigest": 17,
+    "molsysmt": 3099,
+    "molsysviewer_molsysmt": 44,
+    "pytest_receptor": 6,
+    "pyunitwizard": 93,
+    "sabueso": 847,
+    "smonitor": 41,
+    "topomt": 305
+  },
+  "provider_native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+  },
+  "provider_labels": {
+    "molsysmt": "0.23.0+687.g2325038e8",
+    "sabueso": "0.14.0+231.g9f01b06",
+    "topomt": "0.5.0+387.gcf4d475.dirty",
+    "argdigest": "0.17.1+3.g0712641",
+    "smonitor": "0.22.1+1.gc1b6ce2",
+    "depdigest": "0.15.2+2.g032d345",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "ackredit": "0.12.1+10.g4beb850",
+    "pytest-receptor": "1.2.0"
+  },
+  "provider_scope": "Local actual source/dirty/editable/generated/native identities are recorded separately; no full public dependency solve, supported platform or source-to-binary attestation.",
+  "execution": {
+    "name": "installed",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/installed.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/controls/receive_installed.py"
+    ],
+    "cwd": "/tmp/phmt-pharmer-admission-receiving-20261109-kzxciqh8/cwd",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 56414547968
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=796048\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=772782\n",
+      "swap": {
+        "pswpin": 99542,
+        "pswpout": 273907
+      },
+      "time": 136801.257880611
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 13.439008824992925,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 56535941120
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=805951\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=782628\n",
+      "swap": {
+        "pswpin": 99542,
+        "pswpout": 273907
+      },
+      "time": 136814.697900243
+    },
+    "peak_observed_own_group_RSS_bytes": 362999808
+  },
+  "source_receipt": {
+    "path": "devguide/evidence/pharmer_p1_external_source_20261109.json",
+    "bytes": 30667,
+    "sha256": "0b42ada9e1db635be6e98dff5022778da1d7ed640e799ee567453de1477034c7"
+  },
+  "full_evidence": {
+    "path": "pharmer_p1_external_installed_20261109_full.json.gz",
+    "compressed_bytes": 331401,
+    "compressed_sha256": "cd2e08711cf8e99b6c3dba29b0775c541632788b86ceb5a9d26272b3b2c57a20",
+    "uncompressed_bytes": 2292647,
+    "uncompressed_sha256": "7da66c41e33868870985bac607c9c5809b26c8c0093146db800edcf992450907"
+  },
+  "external": "Not downloaded/built/installed/executed. Compiler/dependency/diagnostic/resource admission remains unreceived. Prepared declaration is not executed comparison.",
+  "scope": "Completes bounded source/owned-installed preparation only. No runtime adapter/dependency, manager/provider/native/prefix change,148retry, budget raise, biological/performance/full public-platform/release qualification.",
+  "retention": {
+    "capsule": "build/phmt-pharmer-admission-20261109-cm8qw_mg",
+    "workspace": "/tmp/phmt-pharmer-admission-receiving-20261109-kzxciqh8",
+    "review": "2026-11-23"
+  }
+}

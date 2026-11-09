@@ -94,10 +94,11 @@ new source/native/input identities and preserve earlier failures and outputs.
 
 ## Preparing the original molecular files
 
+From a repository checkout in the qualified development environment,
 `python -m devtools.prepare_pharmer_p1 --output-directory NEW_DIRECTORY` exports
 and verifies the three original P1sources through MolSysMT, preserving graph,
 charges, atom order and coordinates within the original declared P1tolerance.
-The command refuses an existing directory and retains each failed export as a
+This source-case command accompanies the repository. It refuses an existing directory and retains each failed export as a
 failure. It does not acquire or execute Pharmer. The
 [frozen external declaration](https://github.com/uibcdf/pharmacophoremt/blob/main/tests/data/pharmer_p1/external/receiving.json)
 and [admission contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/pharmer_p1_external_admission.md)

@@ -171,3 +171,10 @@ reporting and correct vector activation from source/exact owned wheel198, with
 141same selected cases and another complete P1driver. Original P1results stay
 unchanged; this is an additional PHMT receiving context, not an external engine
 comparison. Its source/installed receipts retain actual versions and attribution.
+
+
+The subsequent [external admission preparation](pharmer_p1_external_admission.md),
+#164, freezes three actual molecular exports and staged executable/build/CLI/
+resource/observation gates. Source76ac909/existing owned wheel198 receive the
+same17cases and complete export driver. Original P1inputs and scientific
+oracles are unchanged; actual Pharmer execution and full mapping remain pending.

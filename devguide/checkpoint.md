@@ -9,14 +9,17 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#164 external P1declaration](pharmer_p1_external_admission.md) is prepared in
-source: nine official text captures distinguish the r95 build and legacy published
+[#164 external P1declaration](pharmer_p1_external_admission.md) is received: nine official text captures distinguish the r95 build and legacy published
 binary; concrete argv, resource/identity and observable-output gates are frozen.
 Three original MolSysMT SDF exports/round-trips preserve chemistry/atom order/frame
 and the original P1tolerance (maximum error2.22e-16nm). The original over-strict
-bitwise pilot failure is retained. All17selected source cases pass, five new and
-12original; same-body receiving around unchanged owned wheel198 remains pending.
-No external binary/download/build/perception/database/search occurs. The stock
+bitwise pilot failure is retained. The same17original bodies pass from source76ac909 and unchanged owned wheel198
+(five new/12original). The complete export driver yields identical frozen SDFs
+and refuses replacement in both contexts. The
+[installed receipt](evidence/pharmer_p1_external_installed_20261109.json) verifies
+214payload/159runtime files,14fixtures and155loaded origins without PHMT checkout
+fallback. Preparation#164closes; no new runtime wheel/install is needed.
+No external binary is downloaded, built or executed. The stock
 outputs omit explicit native memberships/correspondences, so full mapping remains
 an admission gate, not an inferred result. One case/database avoids equal-title
 conformer grouping and directory-induced process/worker multiplication.
@@ -32,8 +35,9 @@ keeps its source0407e20/owned196receiving,34cases, original point mappings and
 then-current ordinary19point records. #163 intentionally corrects inactive-vector
 meaning; it does not rewrite that historical evidence. Earlier
 [P1preparation](pharmer_p1_comparison.md) retains source1372623/owned192.
-Actual Pharmer executable/export/perception/database/search admission remains
-unexecuted under#128; no external engine/performance/biological qualification.
+Actual Pharmer executable/perception/database/search and engine-output receiving
+remain unexecuted under#128; the molecular input exports above are separately
+received. No external engine/performance/biological qualification follows.
 
 The preceding [#160 correction](pair_distance_pruning.md) retains its independent
 116 source/same-wheel cases and original native before/after witness. The
@@ -65,11 +69,13 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive the same17original export/P1bodies and new
-export driver around existing exact owned wheel198, refusing checkout fallback;
-then close the bounded preparation#164. Actual external execution still requires
-complete pinned build/dependency/diagnostic and enforced-resource receiving under
-#128. No automatic compilation, manager transaction or comparator substitution.
+**Next concrete action:** receive a reproducible r95 build recipe and exact
+compiler/dependency closure under#128, including optional server/smina/registration
+choices and a diagnostic plan for native memberships/correspondences. Separately
+admit an enforced build/engine resource envelope and a small pilot before compiling
+or executing. The old published binary, a modern ABI or inferred coordinate
+association cannot substitute for those gates. No automatic manager transaction,
+shared-prefix/native update, budget increase or exhausted#148retry follows.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.

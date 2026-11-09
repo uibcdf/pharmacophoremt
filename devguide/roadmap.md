@@ -118,8 +118,9 @@ installation/distribution gates; passing one task does not close its milestone.
 
 [#164 external P1preparation](pharmer_p1_external_admission.md) freezes build/CLI/
 resource/output admission and three real MolSysMT exports without changing runtime
-code or external execution. Source17cases pass (5new/12P1); same-file receiving
-around existing wheel198 remains pending. This advances comparison readiness for
+code or external execution. The same17original source/existing-owned-wheel198cases (5new/12P1) and complete
+three-case export driver pass. All214payload/159runtime files,14fixtures and
+155loaded runtime origins verify without checkout fallback; preparation resolves. This advances comparison readiness for
 milestones1/6, without qualifying the unavailable build, perception or native maps.
 
 [#163 supported Pharmer field profile](pharmer_interoperability.md) advances

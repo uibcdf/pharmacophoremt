@@ -235,3 +235,17 @@ policy, molecular export, database/search behavior or performance.
 The next bounded research task is a reproducible executable/build/dependency and
 resource admission declaration for the frozen external P1arm under#128. Keep
 those oracles and engine-specific meanings explicit before attempting execution.
+
+
+## External P1 admission prepared — 2026-11-09
+
+[#164](pharmer_p1_external_admission.md) freezes source/build identity,
+CLI/resource behavior, native observation limits and three real MolSysMT exports.
+Source76ac909 and unchanged owned wheel198 receive the same17case bodies and
+complete export driver, with byte-identical original SDFs. The
+[installed receipt](evidence/pharmer_p1_external_installed_20261109.json)
+verifies214payload/159runtime files,14fixtures and155loaded runtime origins.
+The r95 build remains unreceived; the old published binary is not substituted.
+One database per source avoids equal-title conformer grouping and multiplied
+process/worker counts. Stock output lacks explicit memberships/correspondences;
+full native mapping still needs admitted diagnostics. No external engine runs.

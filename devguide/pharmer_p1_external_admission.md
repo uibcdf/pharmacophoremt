@@ -125,7 +125,17 @@ There is no geometry, matching tolerance, provider or budget change.
 All17selected source cases pass: five new export/lifetime/failure guards and12
 original P1cases. The three original files are frozen after actual export/round-trip;
 future exports must match those bytes as well as the independent physical answers.
-Same-body receiving around unchanged owned wheel198 is pending at this source stage.
+The [source receipt](evidence/pharmer_p1_external_source_20261109.json) retains
+those original results and the authored unit-assertion/lint recovery. The
+[installed receipt](evidence/pharmer_p1_external_installed_20261109.json) then
+receives the same17original bodies from source76ac909 around unchanged exact owned
+wheel198/runtime b4b062a. All214payload/159runtime files,14fixtures and155loaded
+runtime origins verify without PHMT checkout fallback. The complete export driver
+also produces the same three frozen SDF byte payloads and refuses replacement;
+source and installed producer-version labels retain their distinct identities.
+Installed sampled own-group peak is362999808bytes. This closes preparation#164;
+the external executable/build/perception/database/search/output-mapping gates
+above remain unreceived or unexecuted under#128.
 This route adds no shipped runtime code and needs no replacement wheel. Full
 installed/public/platform, actual external execution, biology/performance and
 release gates remain independent. Reassess on changes to original inputs,
