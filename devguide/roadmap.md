@@ -116,6 +116,17 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#159 complete inspection recipe](archive/document_saved_inspection_journey.md)
+connects existing counts, selection and detail in one caller-owned snapshot.
+Forty parameter cases pass in each of current source and the unchanged owned188
+reader; the [receipt](evidence/saved_inspection_journey_20261109.json) preserves
+the four original files, one declared synthetic run, independent full-detail
+oracles and opaque-key controls. Strict docs/Ruff pass; no runtime/API/dependency
+change or new wheel is required. This receives the composed documentation under
+milestone2, with actual human usability and full supported gates still open.
+The pinned-checker dependency improvement is handed to MolSysSuite#176; its
+original private-receiver failure and successful existing-QA route stay distinct.
+
 [#158 saved-work selection](archive/select_saved_work_status.md)
 advances milestone2: find exact failed/pending/native statuses through the public
 iterator and paginated command, keeping global identities, selected-stream

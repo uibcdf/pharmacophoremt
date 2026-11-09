@@ -100,6 +100,9 @@ To locate failures or unconfirmed work first, use
 [`--work-items --status failed` or `pending`](../cookbook/saved_work_inspection.md#find-failed-or-pending-work),
 or public `view.work_items(status=...)`. Selected pages preserve original keys
 and ordinals, with separate total and selected-work counts.
+The [complete Python inspection recipe](../cookbook/saved_work_inspection.md#inspect-a-selected-prefix-in-one-python-snapshot)
+combines counts, status selection and exact-key detail in one caller-owned
+snapshot, with a bounded display and unchanged opaque keys.
 
 The [expert composition](../cookbook/recoverable_prepared_screening.md) uses the
 same plan/context through the public store and resume operations. It retains the

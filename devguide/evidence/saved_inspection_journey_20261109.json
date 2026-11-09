@@ -1,0 +1,321 @@
+{
+  "schema": "pharmacophoremt.saved-inspection-journey@1",
+  "issue": 159,
+  "recorded_at_utc": "2026-11-09T00:33:22.610266+00:00",
+  "source_parent": "24f04b191a9bd6e127f2a56dfc0fe3470156bc21",
+  "recipe_document": {
+    "path": "docs/content/cookbook/saved_work_inspection.md",
+    "bytes": 7817,
+    "sha256": "d01f8ee3308554ac2586601284e514214b5f6c3b661174c98a2c641afeff816d"
+  },
+  "body_AST_sha256": "67b580159ad56f011118f403282501c5498fb23ec8ea2607beb762b78ac6e12f",
+  "parameter_rebinding_only": [
+    "allow_legacy",
+    "limit",
+    "run_path",
+    "status"
+  ],
+  "observer": "sys.setprofile observes real print calls and captures their existing detail variable; no public method/print replacement or recipe-body rewrite",
+  "distinct_parameter_cases": 40,
+  "contexts": [
+    "current source",
+    "previous exact owned installed reader"
+  ],
+  "total_accepted_recipe_executions": 80,
+  "original_full_details_per_context": 30,
+  "parameter_cases_are_not_unit_tests": true,
+  "databases": [
+    {
+      "database": "source-complete",
+      "identity": {
+        "bytes": 180224,
+        "sha256": "4b393b7efe567ac0ce332fcd7316e8fecea1d058a8b21c10d26c6435786cab2a"
+      },
+      "parameters": 8,
+      "declared_work": 3,
+      "selected_counts": {
+        "matched": 2,
+        "not_matched": 1,
+        "failed": 0,
+        "pending": 0
+      },
+      "full_original_details_per_context": 5,
+      "unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "identity": {
+        "bytes": 180224,
+        "sha256": "6f8802a3a9278575f28ef7638ca8782f772d3fafc1c13849ed627b89101b6051"
+      },
+      "parameters": 8,
+      "declared_work": 3,
+      "selected_counts": {
+        "matched": 2,
+        "not_matched": 1,
+        "failed": 0,
+        "pending": 0
+      },
+      "full_original_details_per_context": 5,
+      "unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "identity": {
+        "bytes": 77824,
+        "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369"
+      },
+      "parameters": 8,
+      "declared_work": 3,
+      "selected_counts": {
+        "matched": 0,
+        "not_matched": 1,
+        "failed": 0,
+        "pending": 2
+      },
+      "full_original_details_per_context": 5,
+      "unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "identity": {
+        "bytes": 118784,
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3"
+      },
+      "parameters": 8,
+      "declared_work": 3,
+      "selected_counts": {
+        "matched": 2,
+        "not_matched": 1,
+        "failed": 0,
+        "pending": 0
+      },
+      "full_original_details_per_context": 5,
+      "unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "identity": {
+        "bytes": 40960,
+        "sha256": "da1e3b192c68890510c1c15ecdfbd2fd1b992f90be40234a8cb8a1691ec50a79"
+      },
+      "parameters": 8,
+      "declared_work": 6,
+      "selected_counts": {
+        "matched": 2,
+        "not_matched": 1,
+        "failed": 1,
+        "pending": 2
+      },
+      "full_original_details_per_context": 10,
+      "unchanged": true
+    }
+  ],
+  "source_installed_observations_identical": true,
+  "fresh_accepted_commands": 8,
+  "fresh_successes": 6,
+  "expected_argparse_exit2_refusals": 2,
+  "documented_opaque_commands": 2,
+  "matched_zero_equals_commands": 2,
+  "opaque_key_observation": "The documented equals form preserves --failed key \u03b1 and its full original failed outcome. --work-key=-matched-zero preserves matched score0. A separated -matched-zero value refuses with expected one argument and no success output.",
+  "prior_owned_wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-work-selection-20261108-2xqbtd9h/wheels/pharmacophoremt-0.4.0+188.g153ea50-py3-none-any.whl",
+    "bytes": 4527019,
+    "sha256": "64ee1745c322301d6b90feb09764155557681eba936f781e77e56db3800723c9"
+  },
+  "prior_owned_version": "0.4.0+188.g153ea50",
+  "prior_runtime_source": "153ea506aa077f2811242cac3e63d04944fd1cc1",
+  "new_wheel_built": false,
+  "consumer_runtime_files_unchanged": 156,
+  "generated_source_and_wheel_versions": "Original dated source134 cache and owned188 build remain distinct; no shared editable metadata/version cache change.",
+  "public_support_files_unchanged": true,
+  "QA_checker_dependency_files_unchanged": 139,
+  "SDK_commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+  "SDK_files_unchanged": true,
+  "SDK_operation": "devtools.scripts.installed_imports.check_installed_imports",
+  "installed_loaded_runtime": {
+    "state": "verified-loaded-imports",
+    "roots": [
+      "pharmacophoremt_results"
+    ],
+    "loaded": [
+      "pharmacophoremt_results",
+      "pharmacophoremt_results._api",
+      "pharmacophoremt_results._diagnostics",
+      "pharmacophoremt_results._digestion",
+      "pharmacophoremt_results._exports",
+      "pharmacophoremt_results._meta",
+      "pharmacophoremt_results._store"
+    ]
+  },
+  "forbidden_import_attempts": 0,
+  "first_attempt_preserved": "Original source40/three CLI controls pass; first installed40 body checks reach the SDK verifier then fail because its ordinary QA dependencies were not admitted. Preserve original logs; only failed installed receiving repeats with the existing QA root admitted. Not a reader/runtime failure.",
+  "first_attempt_disposition": "Missing QA dependency admission in the private receiver, not a reader/runtime failure. Keep original passing source controls and the failed installed post-check. Only failed installed receiving repeats with the existing SDK QA search root; limits/source/support/wheel and scientific/source fallback refusal stay unchanged. Failed receiving is not counted among80 accepted executions.",
+  "provider_followup": "https://github.com/uibcdf/molsyssuite/issues/176",
+  "QA_route": "Existing yaml/Jinja2/MarkupSafe/packaging for the unchanged SDK checker, under isolated origin admission; no install or source patch.",
+  "docs": {
+    "strict_full_html": true,
+    "notebook_execution": "off",
+    "new_section_recipe_index_and_library_links_verified": true,
+    "observed_own_docs_group_peak_RSS_bytes": 304984064,
+    "original_optional_beartype_absence_diagnostics_preserved": true,
+    "verifier_disposition": "Initial verifier assumed --work-key= was contiguous in raw highlighted HTML; use HTMLParser text across Pygments spans. Only the private verifier changed; no recipe/runtime rerun."
+  },
+  "Ruff_checks": [
+    {
+      "name": "ruff",
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "exit_code": 0,
+      "output": "434 files already formatted\n"
+    }
+  ],
+  "resources": {
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "reader_AS_DATA_per_process_bytes": 536870912,
+    "CPU_seconds_per_parent": 120,
+    "wall_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": false,
+    "reserve_fraction": 0.2,
+    "own_supervisor_child_margin_bytes": 1610612736,
+    "not_reserved": true,
+    "whole_command_peak_RSS_bytes": {
+      "source-recipe": 38912000,
+      "source-opaque-documented": 37339136,
+      "source-opaque-zero": 37670912,
+      "source-opaque-separated": 35176448,
+      "installed-recipe-qa": 43171840,
+      "installed-opaque-documented": 37392384,
+      "installed-opaque-zero": 37376000,
+      "installed-opaque-separated": 34906112
+    },
+    "observed_reader_supervisor_child_peak_RSS_bytes": 70615040,
+    "actual_child_CPU_seconds_limit": 90,
+    "actual_child_wall_seconds_limit": 90,
+    "docs_DATA_bytes": 536870912,
+    "docs_AS": "unlimited inherited; original monitored1GiB envelope"
+  },
+  "evidence_files": {
+    "plan.json": {
+      "bytes": 30719,
+      "sha256": "a33f7da7b3f2f6fdba1a2b41654ffb2fc05c0a784034c2d20fe5314dbae0eb0a"
+    },
+    "inputs.json": {
+      "bytes": 11924,
+      "sha256": "bd644067031bd7f031cd5f0181d739a0745f08d9de14b528097979509dbf36e8"
+    },
+    "preflight.json": {
+      "bytes": 724,
+      "sha256": "b1eaada2654123dbd9b1c7c0e4f36554fb84f734322b801e22495a4466b9585e"
+    },
+    "source_recipe.json": {
+      "bytes": 72691,
+      "sha256": "1277f9106668a6e55c2df1e50093f2cca870e3d7c01759ac69ee92a308850622"
+    },
+    "installed_recipe.json": {
+      "bytes": 73154,
+      "sha256": "f8b1d440f854b3fed6a16343312883756c57a1142cec41c652017b4dfa882b5c"
+    },
+    "receiving.json": {
+      "bytes": 1248,
+      "sha256": "b72cb0f88738ea3f96e9cf0fb2e1eb58caf75b15aa3fee81b58ce1aab575c75d"
+    },
+    "commands.json": {
+      "bytes": 21856,
+      "sha256": "e95da7c10b4cb8b1ddcf1efde09eca34324a866a5587490e50966fe90922ed95"
+    },
+    "qa_checker_inputs.json": {
+      "bytes": 34551,
+      "sha256": "9043d55e7ce9dd089975527c9dac82ddeddce443aebf989e511c9b0cadaa71c3"
+    },
+    "first_attempt/commands.json": {
+      "bytes": 14314,
+      "sha256": "2d5ebd20f52de6e9ea2505150c02228cf3a2cd9089dc2f092b3c0af5ab014564"
+    },
+    "first_attempt/installed-recipe.stderr": {
+      "bytes": 1088,
+      "sha256": "1c0e81cddf27bd51761cc929ce7b965f6d290732387720dfb11beb5d6cad936e"
+    },
+    "docs_run.json": {
+      "bytes": 5706,
+      "sha256": "166c9baa390e2f7a9ebe1ec7f8dd2d63b47ec4edac31be03489495b896d57c16"
+    },
+    "controls/receive_recipe.py": {
+      "bytes": 7120,
+      "sha256": "614300eabb3cfb7148c720d83ea829a67c6a80adf836270166fa6a405d6f2287"
+    },
+    "controls/launch_recipe.py": {
+      "bytes": 7643,
+      "sha256": "e21a8a23e984a9d5a75add972493d07b20b5c95363e82a4a5330c7fe09a10297"
+    },
+    "controls/prepare_inputs.py": {
+      "bytes": 2355,
+      "sha256": "b1cbc87f82af8aafae08cc054ee445624d568908930903354586abeec6c80a5f"
+    }
+  },
+  "earlier_regression_receipt": "devguide/evidence/work_selection_installed_20261108.json retains original99body receiving; not rerun/relabelled here.",
+  "scientific_execution": false,
+  "environment_manager_transaction": false,
+  "shared_prefix_changed": false,
+  "raw_evidence": "build/phmt-saved-inspection-20261109-cdty8l93",
+  "retention_review": "2026-11-23",
+  "scope": "Documentation composition only; unchanged runtime/API/persistence/dependencies; no new wheel, environment transaction, molecular data/evaluation, biology/scale/full public-platform or release claim.",
+  "local_governance": [
+    {
+      "name": "index",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "output": "wrote devguide/archive/README.md\n"
+    },
+    {
+      "name": "index-check",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 0.994s\n\nOK\n"
+    },
+    {
+      "name": "diff",
+      "args": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "name": "local-links",
+      "documents": 7,
+      "verified": 246
+    }
+  ]
+}

@@ -23,6 +23,17 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-09: [#159 complete inspection journey](archive/document_saved_inspection_journey.md)
+executes public progress/status/detail together in one snapshot.40distinct
+parameter cases pass from source and the unchanged owned188reader,80accepted
+executions with five unchanged files and30original full details per context.
+Eight accepted fresh commands include the expected two ambiguous-key refusals;
+explicit equals values retain opaque/zero-match identities. Strict docs/Ruff pass.
+No runtime/API/dependency change or new wheel is introduced. The initial private
+SDK-checker dependency-admission failure is preserved; only failed installed
+receiving repeats using the existing QA route. MolSysSuite#176 receives the
+nonblocking tool improvement. Full supported/biological/scale gates remain open.
+
 2026-11-08: [#158 saved-work status selection](archive/select_saved_work_status.md)
 adds a public metadata-only iterator filter and independent command. Four exact
 statuses preserve original manifest positions, pending drafts and valid-zero

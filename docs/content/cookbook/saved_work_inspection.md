@@ -1,4 +1,63 @@
-# Inspect one saved input
+# Inspect saved screening work
+
+Start with `python -m pharmacophoremt_results RUN.sqlite3 --summary` to see the
+saved counts. Then select work by status and inspect a literal work key using
+the commands below. Each command opens its own verified snapshot.
+
+## Inspect a selected prefix in one Python snapshot
+
+Use the public view when the counts, selected entries and details must describe
+the same saved state. Set the four input parameters, then run this complete
+example:
+
+```python
+from contextlib import closing
+from itertools import islice
+
+from pharmacophoremt_results import ScreeningRunView
+
+run_path = "RUN.sqlite3"
+status = "failed"
+limit = 10
+allow_legacy = False
+
+with ScreeningRunView.open(run_path, allow_legacy=allow_legacy) as view:
+    configuration = view.configuration
+    progress = view.progress()
+    print("Run:", configuration["run_id"])
+    print("Declared work:", progress["counts"]["declared_work"])
+    print("Selected work:", progress["counts"][status + "_work"])
+    with closing(view.work_items(status=status)) as work:
+        for mapping in islice(work, limit):
+            detail = view.work_item(mapping["work_key"])
+            print(
+                mapping["manifest_ordinal"],
+                repr(mapping["work_key"]),
+                detail["status"],
+                detail["attempts"],
+            )
+```
+
+Choose `failed`, `pending`, `matched` or `not_matched`, and a positive page
+limit. `Selected work` counts all entries with that status in the snapshot;
+the loop displays at most `limit` of them, retaining their original ordinals.
+Keys pass directly to `work_item()`; spaces, Unicode and leading dashes retain
+their literal meaning. `repr()` keeps whitespace visible in the display.
+An empty selection prints the three summary lines and no detail rows.
+
+The nested context closes the work iterator even when only a prefix is consumed;
+the outer context closes the view. The last `detail` value, when there was a
+selected entry, remains detached after closure. Its `outcome` contains the full
+original confirmed evidence or `None` while pending. The display above prints
+only mapping/status/attempt information. Staged and never-started entries both
+remain pending; a confirmed failure stays a failure. Reading these records
+does not retry work or establish that a worker is running.
+
+Set `allow_legacy = True` only when deliberately reading a legacy reference file.
+Close this view before reopening a writer. After more work is published, open a
+fresh view and start selection again. The limit bounds displayed entries; opening
+still verifies the entire file, status selection can scan outcomes and each
+confirmed detail can contain a large original payload.
 
 ## Find failed or pending work
 
@@ -49,6 +108,14 @@ Replace `RUN.sqlite3` with your saved run and `WORK_KEY` with a literal work key
 Use shell quoting for spaces or other shell characters. Source and occurrence
 keys do not substitute for the work key; repeated source entries remain distinct.
 An unknown key is an error, rather than a pending or negative result.
+
+For a key beginning with a dash, attach the value to the option using `=`;
+quoting a separated value alone does not prevent option parsing. For example,
+this selects the literal key `--failed key α`:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --work-key='--failed key α'
+```
 
 The response uses `pharmacophoremt.screening-work-item@1`. It retains the
 original `run_id`, `run_format`, ordered-work checksum `work_sha256` and exact

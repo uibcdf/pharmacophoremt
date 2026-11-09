@@ -10,20 +10,19 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#158 saved-work selection](archive/select_saved_work_status.md) adds
-`view.work_items(status=...)` and `--work-items --status STATUS` for exact saved
-matched/not_matched/failed or unpublished pending work. Original four-field
-mappings/order remain; staged drafts stay pending and hidden. The
-[source receipt](evidence/work_selection_source_20261108.json) retains99passing
-bodies (14new/85original), four byte-identical ordinary command outputs, strict
-docs and local governance. The same99bodies pass from exact153ea50 in one
-[owned installed reader](evidence/work_selection_installed_20261108.json), with
-93guarded children/eight documented commands/four unchanged historical files.
-The bounded bridge resolves; the
-[contract](saved_work_selection.md) retains complete opening/count costs and
-snapshot-specific offsets. No molecular or scale claim follows.
+[#159 complete saved-work inspection](archive/document_saved_inspection_journey.md)
+connects progress, status selection and exact-key detail in one public Python
+recipe/snapshot. The [receipt](evidence/saved_inspection_journey_20261109.json)
+receives40declared parameter cases from current source and the unchanged owned188
+reader,80accepted executions over four original historical files and one synthetic
+interrupted run. Original counts/order/status/attempts/full details and opaque
+keys verify; the equals command form handles dash-leading keys. Strict docs,
+rendered navigation and Ruff pass. No runtime/API/dependency change or new wheel
+is needed. The original private-checker QA-admission failure is retained; the
+existing QA route passes and MolSysSuite#176 owns its nonblocking improvement.
 
 Earlier bounded increments retain their own contracts and source/run identities:
+[#158 status selection](archive/select_saved_work_status.md),
 [CDPKit lifecycle study](cdpkit_library_update_review.md),
 [#157 single-work detail](archive/inspect_saved_work_item.md),
 [#156 work pages](archive/inspect_declared_work_cli.md),
@@ -34,7 +33,7 @@ Earlier bounded increments retain their own contracts and source/run identities:
 [#145 progress reuse](saved_progress_reuse.md),
 [#153 SQLite cleanup](archive/administrative_sqlite_lifetimes.md) and
 [#154 native service caller](archive/native_qualification_service_oom.md).
-The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/a3ff16deb658ec47fa823c43d4796fe76463ec4e/devguide/checkpoint.md)
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/24f04b191a9bd6e127f2a56dfc0fe3470156bc21/devguide/checkpoint.md)
 preserves the detailed receiving statements before this closeout; they are not
 new tasks. The [chemical-library guide](../docs/content/user/chemical_libraries.md)
 connects these operations, without qualifying a new connector or human usability.
@@ -45,9 +44,10 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** review the inspect/select/detail user journey under#108
-and declare its next bounded guided/expert gap before implementation. Receive the
-provider disposition of the nine declared collection/update cases separately.
+**Next concrete action:** pin and review Pharmer's query-feature and pruning
+semantics under#128, then declare equivalent controls before implementation or
+execution. Receive the provider disposition of the nine collection/update cases
+separately; the completed inspection recipe remains the current#108 entry point.
 Before another#148 acquisition, receive a distinct reviewed environment-manager
 strategy from the common-tool owner. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
@@ -102,13 +102,13 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection, pages, detail and status selection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Review the combined inspection journey; broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, saved analysis, plan inspection, pages/detail/status selection and their complete inspection recipe received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
-| #128 tool registry | [One executed Pharm3D analytical comparison, the pinned CDPKit lifecycle source review and remaining documentary records](pharmacophore_tools_registry.md) | Projection#140 is received in source/one owned wheel; declare other comparisons and retain separate benchmark/biological scope |
+| #128 tool registry | [One executed Pharm3D analytical comparison, the pinned CDPKit lifecycle source review and remaining documentary records](pharmacophore_tools_registry.md) | Review pinned Pharmer query/search semantics and declare comparable cases; retain separate benchmark/biological scope |
 | #9/#10/#23/#95 | Frozen27c1178 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (100)
+### Resolved (101)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -23,6 +23,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*
 - [`docs_contributor_footer.md`](docs_contributor_footer.md) — [#149](https://github.com/uibcdf/pharmacophoremt/issues/149) — Contributor footer links resolve to a nonexistent path at every documentation depth. *(resolved, measured)*
+- [`document_saved_inspection_journey.md`](document_saved_inspection_journey.md) — [#159](https://github.com/uibcdf/pharmacophoremt/issues/159) — Compose saved progress, status selection and detail in one executable public recipe. *(resolved, measured)*
 - [`documentation_project_identity.md`](documentation_project_identity.md) — [#4](https://github.com/uibcdf/pharmacophoremt/issues/4) — Remove inherited project identity from public PharmacophoreMT documentation. *(resolved, measured)*
 - [`documentation_reader_entry_points.md`](documentation_reader_entry_points.md) — [#61](https://github.com/uibcdf/pharmacophoremt/issues/61) — Build reader-oriented documentation entry points around delivered native workflows. *(resolved, measured)*
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
