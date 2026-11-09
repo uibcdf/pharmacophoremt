@@ -116,6 +116,15 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#158 saved-work selection](pending_proposals/select_saved_work_status.md)
+advances milestone2: find exact failed/pending/native statuses through the public
+iterator and paginated command, keeping global identities, selected-stream
+offsets and confirmed/pending semantics. Source99selected cases (14new/85original),
+four ordinary command-byte controls, strict docs and local governance pass in the
+[receipt](evidence/work_selection_source_20261108.json). Same-body owned installed
+receiving is pending; full admission/count work, public-platform qualification
+and molecular/scale gates remain separate.
+
 The [CDPKit lifecycle source review](cdpkit_library_update_review.md) refines
 milestones3/4 before choosing an update/index contract. Exact v1.3.0 source
 separates duplicate/session policy, complete publication, imported/searchable

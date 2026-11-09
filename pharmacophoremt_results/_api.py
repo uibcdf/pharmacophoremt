@@ -293,15 +293,27 @@ class ScreeningRunView:
 
     @signal(tags=["results", "read", "manifest"])
     @arg_digest(config=config("ScreeningRunView.work_items"))
-    def work_items(self):
+    def work_items(self, *, status=None):
         """Stream detached declared work, including pending/unpublished entries.
 
         Each record contains manifest_ordinal, work_key, source_key and
         occurrence_key. Original order and repeated source/occurrence identities
         are preserved. These identities do not establish chemical independence.
         Keep this caller-owned view open while consuming the iterator.
+
+        Optional status selects exact confirmed matched/not_matched/failed or
+        unconfirmed pending work. Staged drafts remain pending. None retains all
+        original work. Selection adds no native payload, ranking or attribution;
+        a native status is not a chemical activity label or active-worker state.
+        Confirmed filtering decodes outcomes lazily; pending filtering reads
+        publication membership. Opening still verifies the complete saved file.
         """
-        return _iterate("read declared work", self._view.work_items())
+        source = (
+            self._view.work_items()
+            if status is None
+            else self._view.work_items(status=status)
+        )
+        return _iterate("read declared work", source)
 
     @signal(tags=["results", "read", "work"])
     @arg_digest(config=config("ScreeningRunView.work_item"))
@@ -508,11 +520,18 @@ def main(argv=None):
         help="Work inspection only: nonnegative manifest offset, default 0.",
     )
     parser.add_argument(
+        "--status",
+        choices=_store._WORK_STATUSES,
+        help="Work inspection only: select exact native status or unconfirmed pending work.",
+    )
+    parser.add_argument(
         "--allow-legacy",
         action="store_true",
         help="Explicitly admit read-only legacy reference-ledger@1 files.",
     )
     arguments = parser.parse_args(argv)
+    if arguments.status is not None and not arguments.work_items:
+        parser.error("--status is only valid with --work-items")
     exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
     detail = arguments.work_key is not None
     ranked = not (exporting or arguments.summary or arguments.work_items or detail)
@@ -545,11 +564,18 @@ def main(argv=None):
             elif arguments.work_items:
                 configuration = view.configuration
                 count = configuration["work_count"]
+                if arguments.status is not None:
+                    count = view.progress()["counts"][arguments.status + "_work"]
                 offset = 0 if arguments.offset is None else arguments.offset
                 limit = 10 if arguments.limit is None else arguments.limit
                 records = []
                 if offset < count:
-                    with closing(view.work_items()) as source:
+                    source = (
+                        view.work_items()
+                        if arguments.status is None
+                        else view.work_items(status=arguments.status)
+                    )
+                    with closing(source):
                         records = list(
                             islice(source, offset, min(offset + limit, count))
                         )
@@ -559,12 +585,18 @@ def main(argv=None):
                     run_id=configuration["run_id"],
                     run_format=configuration["format"],
                     work_sha256=configuration["work_sha256"],
-                    declared_work=count,
+                    declared_work=configuration["work_count"],
                     offset=offset,
                     limit=limit,
                     next_offset=next_offset if next_offset < count else None,
                     records=records,
                 )
+                if arguments.status is not None:
+                    result.update(
+                        format="pharmacophoremt.screening-work-selection@1",
+                        status=arguments.status,
+                        selected_work=count,
+                    )
             elif arguments.to_jsonl is not None:
                 result = receipt = view.to_jsonl(arguments.to_jsonl)
             elif arguments.to_csv is not None:

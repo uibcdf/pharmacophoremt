@@ -6,6 +6,7 @@ from pathlib import Path
 from argdigest import DigestConfig, FunctionContract
 
 from ._diagnostics import ScreeningRunError
+from ._store import _work_status as _validate_work_status
 
 
 def _error(argument, reason):
@@ -74,6 +75,13 @@ def _boolean(value):
     return value
 
 
+def _status(value):
+    try:
+        return _validate_work_status(value)
+    except ValueError as error:
+        _error("status", str(error))
+
+
 ARGUMENT_DIGESTERS = {
     "self": _unchanged,
     "cls": _unchanged,
@@ -91,6 +99,7 @@ ARGUMENT_DIGESTERS = {
     "score_method": _criterion,
     "limit": _nonnegative,
     "allow_legacy": _boolean,
+    "status": _status,
 }
 _METHODS = {
     "ScreeningRunStore": (

@@ -22,6 +22,7 @@ PUBLIC_FORMAT = "pharmacophoremt.screening-run@1"
 _MAX_LINE_BYTES = 64 * 1024
 _MAPPING_KEYS = {"work_key", "source_key", "occurrence_key"}
 _OUTCOME_KEYS = _MAPPING_KEYS | {"native_result", "ranking_score", "score_method"}
+_WORK_STATUSES = ("matched", "not_matched", "failed", "pending")
 _CONFIG_KEYS = {
     "format",
     "run_id",
@@ -54,6 +55,12 @@ _SCHEMA = {
         attempt_id INTEGER NOT NULL UNIQUE REFERENCES attempts(attempt_id)
     )""",
 }
+
+
+def _work_status(value):
+    if value is not None and (type(value) is not str or value not in _WORK_STATUSES):
+        raise ValueError("status must be matched, not_matched, failed, pending or None")
+    return value
 
 
 def canonical_json(value):
@@ -387,8 +394,40 @@ class ReferenceLedger:
             )
         )
 
-    def work_items(self):
+    def work_items(self, *, status=None):
         """Stream original manifest correspondence, including unpublished work."""
+        status = _work_status(status)
+        if status is not None:
+            if status == "pending":
+                query = (
+                    "SELECT w.ordinal, w.work_key, w.source_key, w.occurrence_key "
+                    "FROM work w LEFT JOIN outcomes o ON o.work_key=w.work_key "
+                    "WHERE o.work_key IS NULL ORDER BY w.ordinal"
+                )
+            else:
+                query = (
+                    "SELECT w.ordinal, w.work_key, w.source_key, w.occurrence_key, a.payload, a.digest "
+                    "FROM work w JOIN outcomes o ON o.work_key=w.work_key "
+                    "JOIN attempts a ON a.attempt_id=o.attempt_id ORDER BY w.ordinal"
+                )
+            for row in self._db().execute(query):
+                if status != "pending":
+                    outcome = self._outcome(row[1], row[4], row[5])
+                    if outcome["native_result"]["status"] != status:
+                        continue
+                yield dict(
+                    zip(
+                        (
+                            "manifest_ordinal",
+                            "work_key",
+                            "source_key",
+                            "occurrence_key",
+                        ),
+                        row[:4],
+                        strict=True,
+                    )
+                )
+            return
         for row in self._db().execute(
             "SELECT ordinal, work_key, source_key, occurrence_key FROM work ORDER BY ordinal"
         ):
@@ -713,9 +752,12 @@ class ReferenceRunView:
         """Yield full saved terminal outcomes in manifest order, including failures."""
         yield from self._ledger.results()
 
-    def work_items(self):
+    def work_items(self, *, status=None):
         """Yield all declared work mappings in their original manifest order."""
-        yield from self._ledger.work_items()
+        if status is None:
+            yield from self._ledger.work_items()
+        else:
+            yield from self._ledger.work_items(status=status)
 
     def work_item(self, work_key):
         """Detach one original mapping, confirmation and retained attempt counts."""

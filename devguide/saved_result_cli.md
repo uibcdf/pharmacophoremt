@@ -10,6 +10,11 @@ attempts, the test-layout correction and the incomplete administrative attempt.
 
 ## User contract
 
+The [status-selection contract](saved_work_selection.md) adds optional
+`--work-items --status STATUS` through the public manifest iterator and existing
+progress counts. A distinct selection@1 response makes selected offsets/counts
+explicit; the ordinary page@1, scalar/detail and export routes are unchanged.
+
 The [single-work contract](saved_work_item_inspection.md) adds `--work-key KEY`
 through public `ScreeningRunView.work_item`, preserving exact identity, confirmed/
 pending status and retained attempt counts. This explicit detail response contains

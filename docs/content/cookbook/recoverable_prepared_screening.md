@@ -202,6 +202,9 @@ without success JSON, preserving the original database.
 For one exact work key, including its original confirmed evidence or explicit
 pending state, use [saved input detail](saved_work_inspection.md). This is also
 available through the public `view.work_item(work_key)` operation.
+That recipe also shows `--work-items --status failed` or `--status pending` to
+locate selected work before inspecting a key; its offsets address the selected
+stream and original manifest ordinals remain intact.
 
 ## Inspect and export the saved view
 

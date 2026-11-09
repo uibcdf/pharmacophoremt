@@ -1,5 +1,41 @@
 # Inspect one saved input
 
+## Find failed or pending work
+
+Select the saved status directly when you need to locate entries:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --work-items --status failed
+python -m pharmacophoremt_results RUN.sqlite3 --work-items --status pending --limit 10 --offset 0
+```
+
+You can also select `matched` or `not_matched`. Each record retains its original
+manifest ordinal and work/source/occurrence keys; it contains no native geometry
+or draft. Staged and never-started work both remain pending. Use an exact key
+from the selected page for the detail command below.
+
+Filtered responses use `pharmacophoremt.screening-work-selection@1`. `status`
+states the exact filter, `declared_work` counts all declared entries and
+`selected_work` counts those matching that status in the same verified snapshot.
+`offset` and `next_offset` address the **selected** stream; record ordinals remain
+global. Use `next_offset` for another page; `null` means no later selected work.
+The default page limit is ten; offsets beyond the selected count return no rows.
+
+Each command opens its own read-only snapshot. After resuming a writer, start
+selection again at offset0: confirmed/pending membership may have changed.
+These offsets are not durable cursors across new confirmations. In Python, keep
+one caller-owned view open and iterate `view.work_items(status="failed")` or
+`view.work_items(status="pending")` for its fixed snapshot. The default
+`view.work_items()` and command without `--status` retain all original mappings
+and their ordinary page response.
+
+The status filter applies only to `--work-items`; it does not choose a ranking
+criterion or assign activity labels. Counts describe work, not independent
+compounds. Complete opening/count work and confirmed filtering can scan saved
+outcomes; pagination alone does not establish indexed or large-library speed.
+
+## Inspect the original confirmed evidence
+
 Use this route to understand one declared work item without repeating screening.
 First find its exact `work_key` in the
 [manifest preview](recoverable_prepared_screening.md#inspect-declared-work-in-pages),

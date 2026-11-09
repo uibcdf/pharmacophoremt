@@ -1,0 +1,241 @@
+{
+  "schema": "pharmacophoremt.work-selection-source@1",
+  "issue": 158,
+  "parent_source": "a3ff16deb658ec47fa823c43d4796fe76463ec4e",
+  "recorded_at_utc": "2026-11-09T00:13:38.882752+00:00",
+  "original_controls": {
+    "collected": 14,
+    "deselected": 0,
+    "errors": 0,
+    "executed": 14,
+    "failed": 12,
+    "not_executed": 0,
+    "passed": 2,
+    "reruns": 0,
+    "skipped": 0,
+    "subtests": {
+      "failed": 18,
+      "passed": 13
+    },
+    "warnings": 0,
+    "xfailed": 0,
+    "xpassed": 0
+  },
+  "final_counts": {
+    "collected": 99,
+    "deselected": 0,
+    "errors": 0,
+    "executed": 99,
+    "failed": 0,
+    "not_executed": 0,
+    "passed": 99,
+    "reruns": 0,
+    "skipped": 0,
+    "subtests": {
+      "passed": 114
+    },
+    "warnings": 0,
+    "xfailed": 0,
+    "xpassed": 0
+  },
+  "final_selected_cases": 99,
+  "new_cases": 14,
+  "original_reader_cases": 85,
+  "receptor_complete": true,
+  "original_unfiltered_loop_AST_unchanged": true,
+  "unselected_original_method_definitions_AST_unchanged": true,
+  "formatted_complete_tested_AST_preserved": true,
+  "default_command_stdout": [
+    {
+      "arguments": [
+        "--work-items"
+      ],
+      "stdout_sha256": "2c598db306541d4b8d85c27660ec811580fab474755db8ea24b1eadec1d77103"
+    },
+    {
+      "arguments": [
+        "--summary"
+      ],
+      "stdout_sha256": "3f99617b27aecd2b2cf05dc543d238ad85315dfbb2354d320fa95f8165e55fe4"
+    },
+    {
+      "arguments": [
+        "--work-key",
+        "gamma"
+      ],
+      "stdout_sha256": "237eb5f0a79d29f0b5357c9dd757e38a16bbce01b654ff3979ac371cfddd7c38"
+    },
+    {
+      "arguments": [
+        "--score-method",
+        "checked_pose_coverage@1",
+        "--limit",
+        "10"
+      ],
+      "stdout_sha256": "fe6c1c5a1038385a4bbb73c82853f9b71b75241b5656a94cf720728d8db11f55"
+    }
+  ],
+  "default_command_bytes_identical": true,
+  "source_files": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 27524,
+      "sha256": "6337eada641d7114e77402efc38aa5e0638d52974fefb73a8195aa293a43f8b6"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 37440,
+      "sha256": "9b3653606cd3d0ebc4875d54941e3ab8db10da0912f7f07be06b19c3dad930dc"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3585,
+      "sha256": "45a308b75163ebab886e8eede8e58d34ec37fe6ab5522dcb6c80f63a2a8a7349"
+    },
+    "tests/test_public_work_selection.py": {
+      "bytes": 16099,
+      "sha256": "e58e033a1a0ae57742fd5b77c2be3cb7b050267fb3810027a38765ebadb64fbb"
+    }
+  },
+  "evidence_files": {
+    "logs/before.log": {
+      "bytes": 6556,
+      "sha256": "8a43693f94e6a57825f53e578ec0c03532d563fd1dc93d311f85c39d2176353a"
+    },
+    "logs/before.events.jsonl": {
+      "bytes": 199505,
+      "sha256": "c9e2d1dec34292b9c5cb0f2f9d1c5b838ae0eec627beb3e853223b1b285d0cf6"
+    },
+    "logs/before.xml": {
+      "bytes": 132901,
+      "sha256": "fc0876423aa0ec0927c65e571bfb1ca933410229cdae6144c23a4939fa869455"
+    },
+    "logs/source.log": {
+      "bytes": 34,
+      "sha256": "1fbb6b233acc1b8372f92b3202a466ef62a7ae90e54ac97d0582c2e3483152f0"
+    },
+    "logs/source.events.jsonl": {
+      "bytes": 206642,
+      "sha256": "becfc50ddd0e63593470b79bc2062be40ee7f357e799ab8452fd2e8cc1248ac7"
+    },
+    "logs/source.xml": {
+      "bytes": 16007,
+      "sha256": "fca6cc0225317b97895636340ea6720db9bd8725d188ffee7f5d7d1b9cfb55ae"
+    },
+    "logs/source.resources": {
+      "bytes": 1236,
+      "sha256": "706bceb88d323ddec4a861c2e3ef56bb93f3be1648f8431e8133c2443140f393"
+    },
+    "ordinary-before.json": {
+      "bytes": 4917,
+      "sha256": "5c1178e7a8d1c2b470678d98a17ec5dadd63926d130736110014b4214e1be137"
+    },
+    "ordinary-after.json": {
+      "bytes": 4917,
+      "sha256": "5c1178e7a8d1c2b470678d98a17ec5dadd63926d130736110014b4214e1be137"
+    },
+    "docs_run.json": {
+      "bytes": 8906,
+      "sha256": "e36fff3f1fc768f4c056ca82a96ab91a82ac5359e7b66cb515a3c8371e372eb7"
+    },
+    "local_checks.json": {
+      "bytes": 1390,
+      "sha256": "c99d76e0b1f284e2fe2d35c092015e7cff1f0e14effcef60cebd08ad7ccea574"
+    }
+  },
+  "docs": {
+    "strict_full_html": true,
+    "notebook_execution": "off",
+    "recipe_anchor_schema_status_commands_and_snapshot_caveat": true,
+    "method_signature_present": true,
+    "incoming_library_anchor_and_recovery_recipe_link": true,
+    "optional_beartype_absence_diagnostics_retained": true,
+    "own_observed_group_peak_rss_bytes": 304594944
+  },
+  "local_checks": [
+    {
+      "name": "ruff",
+      "args": [
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "args": [
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "434 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "output": "wrote devguide/pending_proposals/README.md\n"
+    },
+    {
+      "name": "index-check",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.022s\n\nOK\n"
+    },
+    {
+      "name": "diff",
+      "args": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "resources": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "reader_AS_DATA_per_process_bytes": 536870912,
+    "docs_build_AS": "unlimited inherited",
+    "wall_timeout_seconds": 180,
+    "aggregate_cgroup": false,
+    "source_test_whole_command_peak_rss_bytes": 59334656,
+    "reserve_fraction": 0.2,
+    "not_reserved": true
+  },
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "owned_installed_receiving": "pending",
+  "scientific_execution": false,
+  "environment_manager_transaction": false,
+  "raw_evidence": "build/phmt-work-selection-20261108-2xqbtd9h",
+  "retention_review": "2026-11-22",
+  "scope": "Saved-result metadata selection only; no molecule, preparation/collection/index/backend, schema migration/dependency, new credit, manager transaction, speed/scale/biological/full public/platform/release claim.",
+  "sealing_disposition": "An initial rendered-text check assumed the word restart and an anchor on the recovery recipe link. The actual wording is start selection again and the existing recovery link points to the recipe. Corrected only the private verifier; no documentation/runtime/test change or repeated test evidence."
+}

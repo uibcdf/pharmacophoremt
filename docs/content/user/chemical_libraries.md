@@ -96,6 +96,10 @@ To understand a specific input, use [saved input detail](../cookbook/saved_work_
 `--work-key` or `view.work_item(work_key)` retrieves the original confirmed result
 or explicit pending state, including retained attempt counts. It requires no
 new molecular calculation.
+To locate failures or unconfirmed work first, use
+[`--work-items --status failed` or `pending`](../cookbook/saved_work_inspection.md#find-failed-or-pending-work),
+or public `view.work_items(status=...)`. Selected pages preserve original keys
+and ordinals, with separate total and selected-work counts.
 
 The [expert composition](../cookbook/recoverable_prepared_screening.md) uses the
 same plan/context through the public store and resume operations. It retains the

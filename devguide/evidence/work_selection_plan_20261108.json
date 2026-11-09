@@ -1,0 +1,58 @@
+{
+  "schema": "pharmacophoremt.work-selection-plan@1",
+  "declared_at_utc": "2026-11-08T23:59:07.949088+00:00",
+  "issue": 158,
+  "parent_source": "a3ff16deb658ec47fa823c43d4796fe76463ec4e",
+  "source_before": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 25956,
+      "sha256": "4019cd4b17995b875b9758d5f36298cff0a88d44d3459ced0a2702e57b82ef25"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 35637,
+      "sha256": "51c3ef806c07abe6a655e2a5755bfdaba077e018ed11b0eb9fc801886922e435"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3360,
+      "sha256": "36f1e1a69398b01e2ccc1f62513c0e3a7a1f9ae50138b9a692aea18c101883c4"
+    },
+    "tests/test_public_run_results.py": {
+      "bytes": 22136,
+      "sha256": "4895b33278fa2200671d6c2039f8f4021712cccdfc7a5a7ec382ab7cdbf7c7c0"
+    },
+    "tests/test_public_run_cli.py": {
+      "bytes": 12101,
+      "sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217"
+    },
+    "tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    },
+    "tests/test_public_run_progress.py": {
+      "bytes": 8831,
+      "sha256": "8fe5b06bd21a3eaa3e9f3df8d7d1c5581be72cf4e05b4f6b0ff56d20b6fd7d17"
+    },
+    "tests/test_public_work_cli.py": {
+      "bytes": 10900,
+      "sha256": "fac5732d10de07447fecd8390d69ddfc7f0c4702cbffa618667a77a14a1e82c2"
+    },
+    "tests/test_public_work_item.py": {
+      "bytes": 14923,
+      "sha256": "d5374831f061953d211486cf745c5542ccb9fa3f78c0ea5b420a08fbe7080fff"
+    }
+  },
+  "api": "work_items(*,status=None), exact native statuses or pending, same four original metadata fields. Default None unchanged; status admission/selection owned by stdlib core; ArgDigest delegates to the core domain.",
+  "cli": "--status only with --work-items; default page@1 unchanged; opt-in screening-work-selection@1 retains exact status, declared/selected counts, selected-stream offset, global manifest ordinals and minimal original IDs. Reuse progress counts/confirmed decoder.",
+  "acceptance": "Original85reader controls plus meaningful new selection guards; independent original-order/status/count oracles, late/closed/thread/invalid arguments, pagination, empty/no-match/legacy, no draft/native output, lazy/early-close, full file admission and fresh guarded commands; exact normal command stdout before/after; one owned isolated wheel receiving same bodies.",
+  "limits": {
+    "cpu": 19,
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "reader_AS_DATA_per_process_bytes": 536870912,
+    "docs_build_AS": "unlimited inherited",
+    "wall_timeout_seconds": 180,
+    "aggregate_cgroup": false
+  },
+  "scope": "Saved-result metadata selection only; no molecule, preparation/collection/index/backend, schema migration/dependency, new credit, manager transaction, speed/scale/biological/full public/platform/release claim."
+}

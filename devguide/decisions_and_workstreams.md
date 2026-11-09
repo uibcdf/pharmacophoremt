@@ -23,6 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-08: [#158 saved-work status selection](pending_proposals/select_saved_work_status.md)
+adds a public metadata-only iterator filter and independent command. Four exact
+statuses preserve original manifest positions, pending drafts and valid-zero
+distinctions. Source99bodies (14new/85original), four unchanged ordinary outputs,
+strict docs and local governance pass. Same-body owned installed receiving is
+pending. No collection, scoring, molecular acquisition or performance claim
+follows; filtered offsets belong to one verified snapshot.
+
 2026-11-08: [CDPKit lifecycle study](cdpkit_library_update_review.md) authenticates
 ten source blobs at v1.3.0/a8c7985 and refines earlier update/duplicate uncertainty.
 Nine unexecuted cases distinguish provider collection policy from PHMT feature/

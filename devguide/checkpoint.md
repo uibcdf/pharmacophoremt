@@ -10,6 +10,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#158 saved-work selection](pending_proposals/select_saved_work_status.md) adds
+`view.work_items(status=...)` and `--work-items --status STATUS` for exact saved
+matched/not_matched/failed or unpublished pending work. Original four-field
+mappings/order remain; staged drafts stay pending and hidden. The
+[source receipt](evidence/work_selection_source_20261108.json) retains99passing
+bodies (14new/85original), four byte-identical ordinary command outputs, strict
+docs and local governance. Same-body owned installed receiving is next; the
+[contract](saved_work_selection.md) retains complete opening/count costs and
+snapshot-specific offsets. No molecular or scale claim follows.
+
 The [CDPKit update/identity study](cdpkit_library_update_review.md), under#128,
 follows the previously unresolved CREATE/APPEND/UPDATE/merge semantics through
 exact v1.3.0/a8c7985. Ten captured source blobs authenticate in the
@@ -44,10 +54,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive the provider disposition of the nine declared
-collection/update cases and keep PHMT feature/search-asset compatibility separate.
-Before any#148 acquisition, receive a distinct reviewed environment-manager
-strategy from the common-tool owner before another #148 acquisition. The
+**Next concrete action:** receive the same99reader bodies and documented status
+commands from one frozen owned wheel outside the checkout. Receive the provider
+disposition of the nine declared collection/update cases separately.
+Before another#148 acquisition, receive a distinct reviewed environment-manager
+strategy from the common-tool owner. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
 b1139d0/run42494894038 verifies manager1.5.10/effective1/1settings but extraction
 still fails within the unchanged2GiB/64-task envelope. No native512MiB service
@@ -100,7 +111,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection, paginated work and exact-key detail inspection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection, pages and exact-key detail received in bounded source/owned installed contexts; status selection passes99source cases; frozen27c1178 full source accepted | Receive same-body installed status selection; broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |

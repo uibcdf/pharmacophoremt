@@ -11,7 +11,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 
-### Partial (11)
+### Partial (12)
 
 - [`adopt_required_python_314.md`](adopt_required_python_314.md) — [#23](https://github.com/uibcdf/pharmacophoremt/issues/23) — Adopt the mandatory four-minor contract and qualify normal installed delivery *(partial, measured)*
 - [`esr1_binding_evaluation_readiness.md`](esr1_binding_evaluation_readiness.md) — [#66](https://github.com/uibcdf/pharmacophoremt/issues/66) — Qualify a fresh ERα binding endpoint and cohort before new scoring. *(partial, measured)*
@@ -24,6 +24,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`qualify_receptor_screening_studies.md`](qualify_receptor_screening_studies.md) — [#103](https://github.com/uibcdf/pharmacophoremt/issues/103) — Qualify a reproducible receptor-to-screening workflow on ERalpha and a second receptor. *(partial, measured)*
 - [`retire_legacy_molecular_operations.md`](retire_legacy_molecular_operations.md) — [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) — Retire general molecular operations from reachable legacy workflows. *(partial, measured)*
 - [`review_python_ecosystem_policy_adoption.md`](review_python_ecosystem_policy_adoption.md) — [#6](https://github.com/uibcdf/pharmacophoremt/issues/6) — Review PharmacophoreMT Python ecosystem policy adoption. *(partial, measured)*
+- [`select_saved_work_status.md`](select_saved_work_status.md) — [#158](https://github.com/uibcdf/pharmacophoremt/issues/158) — Select saved work by native or pending status through the public reader. *(partial, measured)*
 
 ### Blocked (1)
 
