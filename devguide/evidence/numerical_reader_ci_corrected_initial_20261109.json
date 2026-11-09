@@ -1,0 +1,260 @@
+{
+  "schema": "pharmacophoremt.numerical-reader-ci-corrected-initial@1",
+  "recorded_at_UTC": "2026-11-09T16:38:25.952407+00:00",
+  "candidate": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+  "declaration": "https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6745458250",
+  "source_gate_accepted": false,
+  "reporting_native_steps_accepted": true,
+  "policy_native_steps_accepted": true,
+  "publication_native_steps_accepted": true,
+  "runs": [
+    {
+      "label": "source",
+      "id": 42656135375,
+      "candidate": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+      "attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "queued",
+      "conclusion": null,
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42656135375",
+      "receptor_exit": 3,
+      "manifest": {
+        "bytes": 1659,
+        "sha256": "2d66b5811d117c84aba60de7f98b865e1ce8ebe581a967239b933f088b945455"
+      },
+      "jobs": [
+        {
+          "id": 129295012632,
+          "name": "Reporting governance",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "id": 129295013211,
+          "name": "Test on ubuntu-latest, Python 3.13",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 129295013236,
+          "name": "Test on ubuntu-latest, Python 3.12",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 129295013282,
+          "name": "Test on macos-15, Python 3.12",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 129295013298,
+          "name": "Test on macos-15, Python 3.11",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 129295013335,
+          "name": "Test on ubuntu-latest, Python 3.11",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 129295013402,
+          "name": "Test on macos-15, Python 3.14",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 129295013452,
+          "name": "Test on ubuntu-latest, Python 3.14",
+          "status": "in_progress",
+          "conclusion": null
+        },
+        {
+          "id": 129295013499,
+          "name": "Test on macos-15, Python 3.13",
+          "status": "queued",
+          "conclusion": null
+        },
+        {
+          "id": 129295014878,
+          "name": "Check skipped-commit backlog",
+          "status": "completed",
+          "conclusion": "skipped"
+        }
+      ],
+      "verified_required_administrative_steps": [
+        {
+          "name": "Check reporting records and generated indexes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test CI recovery and contributor routes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Review declared dependency routes",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Test distribution and dependency contracts",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check generated ordinary environments",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "label": "policy",
+      "id": 42656145447,
+      "candidate": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+      "attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42656145447",
+      "receptor_exit": 0,
+      "manifest": {
+        "bytes": 1657,
+        "sha256": "074313889cd2c9f8fe567915bb511eb8eaee9e0cddfb2da4cf363cb713f2474d"
+      },
+      "jobs": [
+        {
+          "id": 129295047958,
+          "name": "policy / conformance",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "verified_required_administrative_steps": [
+        {
+          "name": "Check repository conformance",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check Python lint and imports",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check Python formatting",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "label": "publication",
+      "id": 42656155848,
+      "candidate": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+      "attempt": 1,
+      "event": "workflow_dispatch",
+      "status": "completed",
+      "conclusion": "success",
+      "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42656155848",
+      "receptor_exit": 0,
+      "manifest": {
+        "bytes": 1657,
+        "sha256": "452a70675a2ccfc5159ba74d9950dca9eed284a008cb7916ed941c925ba44950"
+      },
+      "jobs": [
+        {
+          "id": 129295082529,
+          "name": "publication / check",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "verified_required_administrative_steps": [
+        {
+          "name": "Check publication workflow controls",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "name": "Check declared noarch recipe and resources without building",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    }
+  ],
+  "source_counts_and_qualified_XML": "Pending actual completed full scientific commands/counts and108anticipated XML paths in all8cells. No local or earlier-head result substitutes.",
+  "frozen_input_count": 9,
+  "frozen_config": {
+    ".github/workflows/CI.yaml": {
+      "bytes": 8086,
+      "sha256": "ed3722b90f7e062a804f359daaee1c07ff975b541d48c262eda65125bb989667"
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "bytes": 250,
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "bytes": 273,
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
+    },
+    ".github/gh-run-receptor.yaml": {
+      "bytes": 361,
+      "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59"
+    },
+    ".coveragerc": {
+      "bytes": 167,
+      "sha256": "783735cc5063c5273f94df692ea17bf51690469b21b532dc6b31c040603b779f"
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/conda-build/resources.toml": {
+      "bytes": 29227,
+      "sha256": "3cb78fb5d680b76b2e54117ccb2b436a586fe757e1fca36f003bff8fc9275127"
+    },
+    "devtools/dependency_routes.toml": {
+      "bytes": 15839,
+      "sha256": "3e444d3372b1e9fa09cdccc3bf7db8f76a5695581efe9f93aa261c521eca5789"
+    }
+  },
+  "local_resources": {
+    "affinity": [
+      19
+    ],
+    "backend_and_Go_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "DATA_per_process": 536870912,
+    "AS": "unlimited for native mappings",
+    "reserve_fraction": 0.2,
+    "own_envelope_bytes": 1610612736,
+    "peak_observed_own_RSS_bytes": 104378368,
+    "all_samples_preserve_reserve": true,
+    "capacity_not_reserved": true,
+    "aggregate_cgroup_memory_swap_tasks_quota": "Not enforced"
+  },
+  "old_candidate": "1f6dfb0 /42651970337cancelled after reporting inventory failure; original policy/publication success remains separate. No handle or stopped148/165profile is retried.",
+  "last_accepted_full_source": {
+    "candidate": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+    "run": 42451906584,
+    "attempt": 1,
+    "passed_per_cell": 2505
+  },
+  "scope": "Initial exact-candidate observation only. No complete source, public/installed/platform, biological, molecular performance or release qualification. Corrected native handles must be observed, never redispatched.",
+  "retention": {
+    "capsule": "build/phmt-source-recovery-20261109-0uegtr0r",
+    "review": "2026-11-23",
+    "raw_GH_captures": "Retained locally, not committed"
+  }
+}

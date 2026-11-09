@@ -1,0 +1,64 @@
+{
+  "schema": "pharmacophoremt.numerical-reader-ci-initial-closeout@1",
+  "candidate": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+  "checks": [
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.091s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.979s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "nine_frozen_inputs_unchanged": true,
+  "local_links_verified": 243,
+  "source_full_gate": "pending; exact42656135375/attempt1 only, no redispatch",
+  "administrative_native_gates": "reporting required steps, policy42656145447, publication42656155848 accepted at af408e7",
+  "scope": "Documentation/evidence closeout only; no complete source/public/platform/installed/release/scientific or performance acceptance. Original failed/cancelled source and old accepted27c1178 remain distinct."
+}

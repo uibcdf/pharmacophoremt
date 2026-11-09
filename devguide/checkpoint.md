@@ -9,19 +9,17 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [new accumulated checkpoint](numerical_reader_ci_checkpoint.md) audits34commits
-and freezes1f6dfb0, then finds two actionable CI/distribution issues. Its reporting
-job fails the missing-three-module Conda inventory guard; the source matrix is
-force-cancelled after ordinary cancellation cannot stop `always()` jobs. Native
-failure/cancellation and both successful governance handles retain their original
-identities. No new full source gate is accepted. Local#168inventory correction
-passes160administrative cases;#169cancellable-predicate correction passes eight
-route/backlog cases with all other matrix/commands/pins unchanged. Final25distribution and eight route controls, declared dependency/environment
-checks and Ruff pass; the [receiving record](evidence/numerical_reader_ci_recovery_20261109.json)
-resolves the narrow local corrections. The corrected-candidate declaration
-remains pending. MolSysSuite#177owns
-the missing explicit cancellation scenario in the shared inventory tool.
-
+The [corrected accumulated checkpoint](numerical_reader_ci_checkpoint.md#corrected-candidate-initial-receiving--2026-11-09-utc)
+is af408e7 / source run42656135375 / attempt1. Reporting required steps, frozen
+policy42656145447 and no-build publication42656155848 pass; the eight scientific
+cells remain active/queued in the [initial receipt](evidence/numerical_reader_ci_corrected_initial_20261109.json).
+No new full source gate is accepted. Original1f6dfb0/run42651970337 fails its Conda
+inventory guard and is force-cancelled after ordinary cancellation fails under
+`always()`. Narrow #168 inventory / #169 predicate corrections pass 160 local
+administrative, 25 final distribution and eight route/backlog cases, with all159
+runtime files unchanged. Both reports resolve locally; MolSysSuite#177 owns
+explicit shared cancellation scenarios. Original failed/cancelled states and
+independent source identities remain intact.
 
 [#167 source-specific inspection recipe](../docs/content/cookbook/saved_work_inspection.md#inspect-one-source-in-one-python-snapshot)
 composes exact source/status counts, a bounded prefix and original details in one
@@ -116,11 +114,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** finish and publish the narrow#168/#169 corrections,
-freeze that exact head and declare the corrected source/policy/no-build checkpoint
-under#9/#23. Verify existing handles before each one-time request; never rerun the
-original failed/cancelled source candidate. Full scientific receiving remains
-pending until actual eight-cell commands/counts/coverage and native steps verify.
+**Next concrete action:** inspect only source42656135375, policy42656145447and
+publication42656155848for af408e7/attempt1; never redispatch these handles. Receive
+native terminal jobs/steps, actual full commands/counts/architectures and108qualified
+coverage paths before accepting this source checkpoint. Keep local correction,
+full source and supported installed/public/platform gates separate.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and

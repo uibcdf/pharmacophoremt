@@ -115,7 +115,11 @@ administrative gates succeed at the original head, while the source gate stays
 unqualified. Local160administrative/eight route controls pass after the respective
 corrections and final local distribution/preflight checks pass. The
 [receipt](evidence/numerical_reader_ci_recovery_20261109.json) resolves the narrow
-fixes; new candidate receiving remains pending. Shared cancellation-scenario
+fixes. Corrected af408e7/source42656135375/attempt1 has reporting and both
+administrative gates successful while scientific cells remain pending; the
+[initial receipt](evidence/numerical_reader_ci_corrected_initial_20261109.json)
+accepts no full-source/scientific count or coverage yet. Preserve and inspect
+these handles without redispatch. Shared cancellation-scenario
 support is handed to MolSysSuite#177 without a local evaluator fork.
 
 2026-11-09: [#167 source-specific recipe](archive/document_source_inspection_journey.md)

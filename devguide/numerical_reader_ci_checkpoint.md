@@ -87,3 +87,34 @@ checkpoint once. The original completed handles and all stopped#148/#165profiles
 remain untouched. Full source, installed/public/platform, biological, molecular
 performance and release gates retain independent acceptance; the last accepted
 full source remains27c1178/42451906584 until actual corrected-candidate receiving.
+
+## Corrected candidate, initial receiving — 2026-11-09 UTC
+
+Corrections are published in af408e7007e27b88d049a09b6cc8ad11db5e8594 with
+`[skip ci]`. Both narrow reports#168/#169resolve from their local durable guards;
+this does not resolve the full-source gate. The
+[corrected plan](evidence/numerical_reader_ci_corrected_plan_20261109.json) is
+[declared before requests](https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6745458250).
+Nine exact inputs are frozen: the original seven with the reviewed CI status
+predicate change, plus Conda resources and the route inventory. All159runtime
+files and provider/SDK pins remain unchanged. The old source run is independently
+verified terminal before any new request; complete candidate inventories and
+clean local/live main are checked before each one-time request.
+
+| Corrected scope | Attempt1 handle | Initial native receiving |
+| --- | --- | --- |
+| Full source/reporting | [42656135375](https://github.com/uibcdf/pharmacophoremt/actions/runs/42656135375) | Reporting required steps successful; four Linux scientific cells active and four macOS cells queued |
+| Frozen policy-v1.5.4 | [42656145447](https://github.com/uibcdf/pharmacophoremt/actions/runs/42656145447) | Run/job/all required steps successful |
+| No-build publication controls | [42656155848](https://github.com/uibcdf/pharmacophoremt/actions/runs/42656155848) | Run/job/both required steps successful |
+
+The [initial receipt](evidence/numerical_reader_ci_corrected_initial_20261109.json)
+records actual identities/statuses/steps and published GH Run Receptor1.4.0
+observations, with approximately100MiB maximum observed local own RSS. Source
+status is native `queued` while some jobs are running; no terminal success,
+scientific count or coverage XML is invented. These exact handles must be
+observed, never redispatched. Receiving requires full commands/counts, actual
+interpreter/architecture/acquisition, all108anticipated qualified XML paths and
+real native terminal steps in every scientific cell. Actual Codecov upload
+results remain separate from public server freshness. The last accepted full
+source stays27c1178/42451906584until those requirements are met. Raw captures
+remain local through the recorded review date; publication is scalar facts/hashes.

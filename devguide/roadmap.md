@@ -121,8 +121,11 @@ commits after27c1178. The first1f6dfb0matrix fails its reporting inventory guard
 all scientific cells are cancelled and no new full source evidence is accepted.
 Narrow#168Conda-inventory/#169cancellation corrections pass160administrative and
 eight route/backlog cases respectively. [Final local receiving](evidence/numerical_reader_ci_recovery_20261109.json)
-resolves these narrow fixes; a newly frozen candidate remains pending. MolSysSuite#177owns the shared scenario extension.
-
+resolves these narrow fixes. Corrected candidate af408e7 /source42656135375
+has reporting/policy/publication steps successful and scientific cells pending;
+its [initial receipt](evidence/numerical_reader_ci_corrected_initial_20261109.json)
+does not accept a full source gate. Inspect those exact handles, never redispatch.
+MolSysSuite#177 owns the shared scenario extension.
 
 [#167 source-specific inspection](archive/document_source_inspection_journey.md)
 composes true intersection counts, a bounded prefix and original details in one
