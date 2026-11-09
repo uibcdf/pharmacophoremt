@@ -118,3 +118,30 @@ real native terminal steps in every scientific cell. Actual Codecov upload
 results remain separate from public server freshness. The last accepted full
 source stays27c1178/42451906584until those requirements are met. Raw captures
 remain local through the recorded review date; publication is scalar facts/hashes.
+
+## Single-cell capacity recovery — 2026-11-09 UTC
+
+Attempt1 of source42656135375 at af408e7 ends with native conclusion `failure`.
+Seven scientific cells each pass2693cases with46reported warnings. macOS15 /
+Python3.11 job129295013298 is cancelled with runner_id0 and no steps. Its native
+annotations report that a hosted runner was not acquired after repeated attempts
+and macOS arm64 capacity/queue limitations. GH Run Receptor1.4.0 correctly keeps
+native failure and causal classification `unknown`; annotation facts do not
+replace either field. Full original capture stays in the owned local capsule
+`build/phmt-large-segment-20261109-hfjji_7_/source-attempt1`.
+
+The [prospective #9 declaration](https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6748783497)
+authorizes one job-specific recovery of the unstarted cell, using GitHub's job
+rerun operation at its original SHA/ref. No duplicate workflow dispatch or
+rerun-all is requested. Native attempt2 creates macOS3.11 job129370517203; it has
+acquired a runner and is installing dependencies. The other seven successful
+records retain execution timestamps before this recovery, although their latest
+job IDs change. Preserve the original seven executions and recovered cell as
+distinct evidence; never call them eight fresh attempt2 executions.
+
+Terminal receiving and108qualified source coverage paths remain pending. If
+capacity fails again, preserve/defer rather than request another automatic
+retry. Frozen policy42656145447/publication42656155848 remain successful at the
+same source. The already accepted full-source gate remains27c1178 until receiving
+is complete. Later#170implementation, public/installed/platform/scientific/scale
+and release gates are separate. #148/#165 profiles remain stopped.

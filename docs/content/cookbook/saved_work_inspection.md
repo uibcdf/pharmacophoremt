@@ -4,6 +4,45 @@ Start with `python -m pharmacophoremt_results RUN.sqlite3 --summary` to see the
 saved counts. Then select work by status or source and inspect a literal work key using
 the commands below. Each command opens its own verified snapshot.
 
+## Browse the original sources
+
+List the exact source labels before choosing one for inspection:
+
+```bash
+python -m pharmacophoremt_results RUN.sqlite3 --sources
+python -m pharmacophoremt_results RUN.sqlite3 --sources --limit 10 --offset 10
+```
+
+Each record contains `source_key`, `first_manifest_ordinal` and `declared_work`.
+Sources follow their first occurrence in the original work manifest. Repeated
+occurrences share their literal label's work count; pending, failed, matched and
+unmatched entries all count. These are source labels and work entries, not a
+count of independent compounds or chemically equivalent molecules.
+
+The response format is `pharmacophoremt.screening-source-page@1`. Its run ID,
+run format and `work_sha256` identify the original manifest; `declared_work`
+counts all work and `declared_sources` counts distinct literal labels. `offset`
+and `next_offset` address the **source** stream, while each record's first
+manifest ordinal remains global. `next_offset=null` means no later source.
+Empty inventories and offsets beyond the end return no rows. Limits must be
+positive and offsets nonnegative; the default limit is ten.
+
+Copy an exact `source_key` from a page and use
+`--work-items --source-key=SOURCE_KEY` below. Case, spaces, Unicode and punctuation
+remain literal; aliases and compound identities are not inferred. Publishing
+more outcomes does not change this inventory: the declared manifest is immutable.
+Use a new run/hash as a new paging context. Status-selected work pages have their
+own offsets and can change membership after a writer publishes new outcomes.
+
+In Python, iterate `view.source_items()` in an open caller-owned
+`ScreeningRunView`; close an iterator when consuming only a prefix. Records are
+detached and contain no native or draft payload. Source browsing requires no
+ranking criterion or scientific provider. The source mode cannot be combined
+with work/status/key filters, ranking, summary or exports. Legacy files require
+explicit admission. Each page still verifies the complete file and counts all
+sources; a display limit bounds returned records, not all processing or storage.
+Handled read/count/close errors produce no success JSON.
+
 ## Inspect a selected prefix in one Python snapshot
 
 Use the public view when the counts, selected entries and details must describe

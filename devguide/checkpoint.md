@@ -9,17 +9,27 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [corrected accumulated checkpoint](numerical_reader_ci_checkpoint.md#corrected-candidate-initial-receiving--2026-11-09-utc)
-is af408e7 / source run42656135375 / attempt1. Reporting required steps, frozen
-policy42656145447 and no-build publication42656155848 pass; the eight scientific
-cells remain active/queued in the [initial receipt](evidence/numerical_reader_ci_corrected_initial_20261109.json).
-No new full source gate is accepted. Original1f6dfb0/run42651970337 fails its Conda
-inventory guard and is force-cancelled after ordinary cancellation fails under
-`always()`. Narrow #168 inventory / #169 predicate corrections pass 160 local
-administrative, 25 final distribution and eight route/backlog cases, with all159
-runtime files unchanged. Both reports resolve locally; MolSysSuite#177 owns
-explicit shared cancellation scenarios. Original failed/cancelled states and
-independent source identities remain intact.
+[#170 original-source inventory](saved_source_inventory.md) adds the public
+`ScreeningRunView.source_items()` iterator and CLI `--sources`. All134 selected
+source cases pass (14new/120existing); thirteen original command outputs retain
+their exact bytes. The strict full docs render passes. Counts/order describe the
+immutable manifest's literal source labels and all work states; they infer no
+molecular equivalence. Same-body owned installed receiving remains pending in
+this source checkpoint. The complete discover/select/detail recipe follows as
+a separate composition increment.
+
+The [corrected accumulated checkpoint](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
+is af408e7 / source42656135375. Attempt1 terminates failure: seven scientific
+cells pass2693cases/46warnings each; macOS15/Python3.11 is cancelled before any
+runner or step starts. Native annotations report runner acquisition/capacity
+problems; Receptor retains cause=unknown. A separately declared single-job
+recovery under#9 reuses that exact SHA/ref; attempt2 has acquired a runner and
+is installing dependencies. Seven earlier executions are reused, not repeated.
+No full source gate is accepted until the remaining command and coverage are
+received. Frozen policy42656145447 and no-build publication42656155848 pass.
+Original1f6dfb0/reporting failure, force-cancellation, #168/#169 corrections and
+MolSysSuite#177 retain their separate earlier evidence. This later#170code is
+outside af408e7 qualification. #148/#165 remain stopped.
 
 [#167 source-specific inspection recipe](../docs/content/cookbook/saved_work_inspection.md#inspect-one-source-in-one-python-snapshot)
 composes exact source/status counts, a bounded prefix and original details in one
@@ -114,11 +124,13 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** inspect only source42656135375, policy42656145447and
-publication42656155848for af408e7/attempt1; never redispatch these handles. Receive
-native terminal jobs/steps, actual full commands/counts/architectures and108qualified
-coverage paths before accepting this source checkpoint. Keep local correction,
-full source and supported installed/public/platform gates separate.
+**Next concrete action:** finish exact owned installed receiving for#170, then
+execute a complete discover-source/select-status/detail recipe from source and
+that same artifact. Inspect only the declared macOS3.11 recovery on source42656135375;
+never repeat the seven completed executions. Receive native terminal identities,
+actual commands/counts and108qualified coverage paths before accepting af408e7.
+If capacity fails again, preserve/defer without an automatic retry. Later-head
+full source and supported installed/public/platform gates remain separate.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and

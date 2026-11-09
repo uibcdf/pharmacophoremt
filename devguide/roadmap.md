@@ -31,6 +31,19 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+The [#170 saved-source inventory](saved_source_inventory.md) advances milestone2
+with discoverable literal sources before selecting work. All134 selected source
+cases and thirteen exact ordinary command-byte controls pass; strict docs pass.
+Same-body owned installed receiving and complete discovery-to-detail composition
+remain pending at this source checkpoint. No source connector, collection/index,
+scale or human-usability qualification is implied.
+
+The af408e7 accumulated source run42656135375 terminates attempt1 with seven
+2693case/46warning successes and an unstarted cancelled macOS3.11cell. One
+[declared job-specific capacity recovery](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
+keeps the exact SHA/ref and earlier executions distinct. Its remaining scientific
+command/coverage is pending; no full-source acceptance or later-head claim follows.
+
 The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
 now maps current source-operation coverage to the guided/expert screening and
 saved-result lifecycle. Its documentation receiving does not establish a new

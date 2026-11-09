@@ -322,6 +322,27 @@ class ScreeningRunView:
         source = self._view.work_items(**options)
         return _iterate("read declared work", source)
 
+    @signal(tags=["results", "read", "sources"])
+    @arg_digest(config=config("ScreeningRunView.source_items"))
+    def source_items(self):
+        """Browse exact original source labels in first manifest encounter order.
+
+        Yield detached source_key, first_manifest_ordinal and declared_work
+        records. Count every declared work entry, including repeated occurrences
+        and all confirmed/pending states. Publication does not change this
+        immutable-manifest inventory. Labels are literal: no normalization,
+        compound alias inference or chemical-equivalence grouping occurs. Counts
+        describe declared work and labels, not independent compounds.
+
+        Keep this caller-owned view open while consuming the iterator; partial
+        consumers close it explicitly. Opening still verifies the complete saved
+        file, including every original outcome. Subsequent inventory grouping
+        decodes no native/draft payload and creates no scientific credit. SQLite
+        grouping/sorting may scan/store the complete manifest; a prefix does not
+        bound admission/SQL work or establish an index or large-library speed.
+        """
+        return _iterate("read declared sources", self._view.source_items())
+
     @signal(tags=["results", "read", "work"])
     @arg_digest(config=config("ScreeningRunView.work_item"))
     def work_item(self, work_key):
@@ -495,6 +516,11 @@ def main(argv=None):
         help="Inspect declared work in manifest order, including unconfirmed entries.",
     )
     exports.add_argument(
+        "--sources",
+        action="store_true",
+        help="Browse exact original source labels, first manifest ordinals and declared work counts.",
+    )
+    exports.add_argument(
         "--work-key",
         metavar="KEY",
         help="Inspect one exact work key and full confirmed evidence, which can contain geometry.",
@@ -519,12 +545,12 @@ def main(argv=None):
     parser.add_argument(
         "--limit",
         type=int,
-        help="Ranked or work inspection; defaults to 10. Work pages require a positive limit.",
+        help="Ranked, work or source inspection; defaults to 10. Pages require a positive limit.",
     )
     parser.add_argument(
         "--offset",
         type=int,
-        help="Work inspection only: nonnegative manifest offset, default 0.",
+        help="Work or source inspection: nonnegative page offset, default 0.",
     )
     parser.add_argument(
         "--status",
@@ -553,15 +579,21 @@ def main(argv=None):
             parser.error(str(error))
     exporting = arguments.to_jsonl is not None or arguments.to_csv is not None
     detail = arguments.work_key is not None
-    ranked = not (exporting or arguments.summary or arguments.work_items or detail)
-    if not (ranked or arguments.work_items) and (
+    ranked = not (
+        exporting
+        or arguments.summary
+        or arguments.work_items
+        or arguments.sources
+        or detail
+    )
+    if not (ranked or arguments.work_items or arguments.sources) and (
         arguments.score_method is not None or arguments.limit is not None
     ):
         parser.error("--score-method and --limit are only valid for ranked inspection")
     if ranked and arguments.score_method is None:
         parser.error("--score-method is required for ranked inspection")
-    if arguments.offset is not None and not arguments.work_items:
-        parser.error("--offset is only valid with --work-items")
+    if arguments.offset is not None and not (arguments.work_items or arguments.sources):
+        parser.error("--offset is only valid with --work-items or --sources")
     if detail and not arguments.work_key.strip():
         parser.error("--work-key requires a nonempty opaque key")
     if arguments.work_items:
@@ -571,6 +603,13 @@ def main(argv=None):
             parser.error("--work-items requires a positive --limit")
         if arguments.offset is not None and arguments.offset < 0:
             parser.error("--work-items requires a nonnegative --offset")
+    if arguments.sources:
+        if arguments.score_method is not None:
+            parser.error("--score-method is only valid for ranked inspection")
+        if arguments.limit is not None and arguments.limit <= 0:
+            parser.error("--sources requires a positive --limit")
+        if arguments.offset is not None and arguments.offset < 0:
+            parser.error("--sources requires a nonnegative --offset")
     receipt = None
     try:
         with ScreeningRunView.open(
@@ -580,6 +619,30 @@ def main(argv=None):
                 result = view.progress()
             elif detail:
                 result = view.work_item(arguments.work_key)
+            elif arguments.sources:
+                configuration = view.configuration
+                offset = 0 if arguments.offset is None else arguments.offset
+                limit = 10 if arguments.limit is None else arguments.limit
+                records = []
+                count = 0
+                with closing(view.source_items()) as source:
+                    for record in source:
+                        if offset <= count < offset + limit:
+                            records.append(record)
+                        count += 1
+                next_offset = offset + len(records)
+                result = dict(
+                    format="pharmacophoremt.screening-source-page@1",
+                    run_id=configuration["run_id"],
+                    run_format=configuration["format"],
+                    work_sha256=configuration["work_sha256"],
+                    declared_work=configuration["work_count"],
+                    declared_sources=count,
+                    offset=offset,
+                    limit=limit,
+                    next_offset=next_offset if next_offset < count else None,
+                    records=records,
+                )
             elif arguments.work_items:
                 configuration = view.configuration
                 count = configuration["work_count"]

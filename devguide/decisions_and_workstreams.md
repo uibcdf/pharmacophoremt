@@ -107,6 +107,22 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-09: [#170 source inventory](saved_source_inventory.md) exposes exact
+original source labels/first ordinals/all-declared-work counts in public API and
+CLI. The source134cases (14new/120existing), thirteen ordinary byte controls and
+strict docs pass. Same-body owned installed receiving remains pending. Full-file
+admission and SQLite grouping costs remain explicit; no chemical equivalence,
+source connector, index, performance or scientific claim follows.
+
+2026-11-09: af408e7 source42656135375/attempt1 ends failure: seven cells execute
+2693passing cases/46warnings; macOS3.11 is cancelled with no runner/steps and
+native acquisition/capacity annotations. A separately declared job-specific
+recovery uses the same SHA/ref; attempt2 acquires a runner. Earlier seven
+executions retain their timestamps/attempt1 evidence even though GitHub's latest
+inventory reissues job IDs. Full qualification awaits the eighth actual command,
+108path coverage and native terminal readback. No automatic repeat on capacity
+failure; original failures and full27c1178 acceptance remain intact.
+
 2026-11-09: [accumulated source audit](numerical_reader_ci_checkpoint.md) freezes
 1f6dfb0after34commits with seven unchanged inputs/guide heads. Source reporting
 fails the real three-module Conda declaration omission#168; ordinary cancellation

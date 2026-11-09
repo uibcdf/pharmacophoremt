@@ -447,6 +447,18 @@ class ReferenceLedger:
                 )
             )
 
+    def source_items(self):
+        """Yield exact labels and declared work counts by first manifest entry."""
+        for key, first, count in self._db().execute(
+            "SELECT source_key, MIN(ordinal), COUNT(*) FROM work "
+            "GROUP BY source_key ORDER BY MIN(ordinal)"
+        ):
+            yield dict(
+                source_key=key,
+                first_manifest_ordinal=first,
+                declared_work=count,
+            )
+
     def _work(self, work_key):
         _key(work_key, "work_key")
         row = (
@@ -768,6 +780,10 @@ class ReferenceRunView:
         if source_key is not None:
             options["source_key"] = source_key
         yield from self._ledger.work_items(**options)
+
+    def source_items(self):
+        """Yield original source labels and counts without decoding outcomes."""
+        yield from self._ledger.source_items()
 
     def work_item(self, work_key):
         """Detach one original mapping, confirmation and retained attempt counts."""

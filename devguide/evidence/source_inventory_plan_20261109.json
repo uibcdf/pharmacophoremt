@@ -1,0 +1,36 @@
+{
+  "schema": "pharmacophoremt.source-inventory-plan@1",
+  "issue": 170,
+  "declared_UTC": "2026-11-09T19:08:40.678089+00:00",
+  "parent_source": "07ee8cb92873b87ddd8759b8c91b2e313bd7bc62",
+  "API": "ScreeningRunView.source_items() yields exact source_key / first_manifest_ordinal / declared_work, ordered by first original occurrence. Counts all immutable declared work, no native/status/chemical grouping interpretation.",
+  "CLI": "--sources source-page@1 with run/hash/global work/distinct literal sources and selected windows; one complete inventory stream, page retained only, huge integer windows, failure-before-success. Existing commands unchanged.",
+  "resources": {
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 60475785216,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7895228416
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1105299\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1074833\n",
+    "load": [
+      1.68798828125,
+      1.43603515625,
+      0.9580078125
+    ],
+    "CPU": 19,
+    "threads": 1,
+    "DATA": 536870912,
+    "AS_reader": 1073741824,
+    "observed_group_RSS_stop_reader": 536870912,
+    "nice": 19,
+    "IO": "idle",
+    "host_reserve_fraction": 0.2,
+    "not_reserved": true,
+    "aggregate_kernel_limit": false,
+    "scope": "Serial stdlib/read-support tests and fresh sequential children; prior reader pytest peak~130MiB. No local science/manager/native operation. Separate existing DATA512/AS-unlimited build/docs routes recorded in actual controls. SQLite grouping/sorting may require complete manifest work/temp storage; no scale/constant memory claim."
+  },
+  "verification": "Independent exact-key order/count/repeats/all-states/after-publication/unknown/empty/legacy/thread/closed/deferred/late errors/corruption checks;13old command bytes, same original tests from one owned wheel with source fallback/scientific imports blocked; API/docs/governance.",
+  "boundaries": "Original af408e7 seven-cell/full-CI recovery remains separate; new code never retroactively qualified by that checkpoint. No new source connector or MolSysMT collection/parser, dependency floor, new citation/scientific/performance/public-platform/release claim. #148/#165 remain stopped.",
+  "retention_review": "2026-11-23"
+}

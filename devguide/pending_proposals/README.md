@@ -30,4 +30,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
 
+### Open (1)
+
+- [`browse_saved_sources.md`](browse_saved_sources.md) — [#170](https://github.com/uibcdf/pharmacophoremt/issues/170) — Browse exact original source labels and declared work through the saved reader. *(open, asserted)*
+
 <!-- /generated -->

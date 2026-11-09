@@ -1,0 +1,437 @@
+{
+  "schema": "pharmacophoremt.source-inventory-source@1",
+  "issue": 170,
+  "recorded_at_UTC": "2026-11-09T19:23:24.160137+00:00",
+  "parent_source": "07ee8cb92873b87ddd8759b8c91b2e313bd7bc62",
+  "producer": "Containing focused source commit; exact owned installed receiving pending.",
+  "new_cases": 14,
+  "original_reader_cases": 120,
+  "selected_cases": 134,
+  "before": {
+    "counts": {
+      "collected": 14,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 14,
+      "failed": 12,
+      "not_executed": 0,
+      "passed": 2,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {
+        "passed": 9
+      },
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "original_failure_retained": true,
+    "mechanism": "Feature absent; API/CLI inventory not available."
+  },
+  "source": {
+    "collected": 134,
+    "deselected": 0,
+    "errors": 0,
+    "executed": 134,
+    "failed": 0,
+    "not_executed": 0,
+    "passed": 134,
+    "reruns": 0,
+    "skipped": 0,
+    "subtests": {
+      "passed": 144
+    },
+    "warnings": 0,
+    "xfailed": 0,
+    "xpassed": 0
+  },
+  "ordinary_commands_exact_bytes": [
+    {
+      "arguments": [
+        "--work-items"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-page@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    },\n    {\n      \"manifest_ordinal\": 2,\n      \"work_key\": \"gamma\",\n      \"source_key\": \"source:2\",\n      \"occurrence_key\": \"occurrence:2\"\n    },\n    {\n      \"manifest_ordinal\": 3,\n      \"work_key\": \"delta\",\n      \"source_key\": \"source:3\",\n      \"occurrence_key\": \"occurrence:3\"\n    },\n    {\n      \"manifest_ordinal\": 4,\n      \"work_key\": \"epsilon\",\n      \"source_key\": \"source:4\",\n      \"occurrence_key\": \"occurrence:4\"\n    }\n  ]\n}\n",
+      "stdout_sha256": "2c598db306541d4b8d85c27660ec811580fab474755db8ea24b1eadec1d77103"
+    },
+    {
+      "arguments": [
+        "--summary"
+      ],
+      "stdout": "{\n  \"run_id\": \"run:public\",\n  \"parent_run_id\": \"run:ancestor\",\n  \"counts\": {\n    \"committed_work\": 4,\n    \"scored_work\": 3,\n    \"matched_work\": 2,\n    \"not_matched_work\": 1,\n    \"failed_work\": 1,\n    \"declared_work\": 5,\n    \"pending_work\": 1\n  },\n  \"attempts\": {\n    \"started\": 5,\n    \"staged\": 5,\n    \"committed\": 4\n  },\n  \"manifest_work_complete\": false\n}\n",
+      "stdout_sha256": "3f99617b27aecd2b2cf05dc543d238ad85315dfbb2354d320fa95f8165e55fe4"
+    },
+    {
+      "arguments": [
+        "--work-key",
+        "gamma"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-item@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"work_item\": {\n    \"manifest_ordinal\": 2,\n    \"work_key\": \"gamma\",\n    \"source_key\": \"source:2\",\n    \"occurrence_key\": \"occurrence:2\"\n  },\n  \"confirmed\": true,\n  \"status\": \"not_matched\",\n  \"attempts\": {\n    \"started\": 1,\n    \"staged\": 1,\n    \"committed\": 1\n  },\n  \"outcome\": {\n    \"native_result\": {\n      \"attribution\": {\n        \"references\": {\n          \"items\": []\n        },\n        \"status\": \"original-record\"\n      },\n      \"fit_value\": 0,\n      \"geometry\": \"private native geometry\",\n      \"pose_id\": \"gamma\",\n      \"producer\": {\n        \"version\": \"original-native-0.1\"\n      },\n      \"status\": \"not_matched\"\n    },\n    \"occurrence_key\": \"occurrence:2\",\n    \"ranking_score\": 0,\n    \"score_method\": \"checked_pose_coverage@1\",\n    \"source_key\": \"source:2\",\n    \"work_key\": \"gamma\"\n  }\n}\n",
+      "stdout_sha256": "237eb5f0a79d29f0b5357c9dd757e38a16bbce01b654ff3979ac371cfddd7c38"
+    },
+    {
+      "arguments": [
+        "--score-method",
+        "checked_pose_coverage@1",
+        "--limit",
+        "10"
+      ],
+      "stdout": "{\n  \"summary\": {\n    \"run_id\": \"run:public\",\n    \"parent_run_id\": \"run:ancestor\",\n    \"counts\": {\n      \"committed_work\": 4,\n      \"scored_work\": 3,\n      \"matched_work\": 2,\n      \"not_matched_work\": 1,\n      \"failed_work\": 1,\n      \"declared_work\": 5,\n      \"pending_work\": 1\n    },\n    \"attempts\": {\n      \"started\": 5,\n      \"staged\": 5,\n      \"committed\": 4\n    },\n    \"manifest_work_complete\": false,\n    \"score_method\": \"checked_pose_coverage@1\",\n    \"ranking_scope\": \"observed_scored_work_only\"\n  },\n  \"limit\": 10,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\",\n      \"ranking_score\": 0.75,\n      \"score_method\": \"checked_pose_coverage@1\",\n      \"status\": \"matched\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\",\n      \"ranking_score\": 0.75,\n      \"score_method\": \"checked_pose_coverage@1\",\n      \"status\": \"matched\"\n    },\n    {\n      \"manifest_ordinal\": 2,\n      \"work_key\": \"gamma\",\n      \"source_key\": \"source:2\",\n      \"occurrence_key\": \"occurrence:2\",\n      \"ranking_score\": 0,\n      \"score_method\": \"checked_pose_coverage@1\",\n      \"status\": \"not_matched\"\n    }\n  ]\n}\n",
+      "stdout_sha256": "fe6c1c5a1038385a4bbb73c82853f9b71b75241b5656a94cf720728d8db11f55"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    }\n  ],\n  \"status\": \"matched\",\n  \"selected_work\": 2\n}\n",
+      "stdout_sha256": "687fd91e37ff29bdb9d2271a5fa7e1d4f5d0554f23c7069706af8e7e417d1ed9"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "not_matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 2,\n      \"work_key\": \"gamma\",\n      \"source_key\": \"source:2\",\n      \"occurrence_key\": \"occurrence:2\"\n    }\n  ],\n  \"status\": \"not_matched\",\n  \"selected_work\": 1\n}\n",
+      "stdout_sha256": "f0a02d77ef36c213dc4e6809d4c9d035f75271e583cafcd1df9f82632f065e42"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "failed"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 3,\n      \"work_key\": \"delta\",\n      \"source_key\": \"source:3\",\n      \"occurrence_key\": \"occurrence:3\"\n    }\n  ],\n  \"status\": \"failed\",\n  \"selected_work\": 1\n}\n",
+      "stdout_sha256": "d871c1d40bf921c42fbcc0f85843509cd5593a2809fd8b04f503a25387979645"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "pending"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 4,\n      \"work_key\": \"epsilon\",\n      \"source_key\": \"source:4\",\n      \"occurrence_key\": \"occurrence:4\"\n    }\n  ],\n  \"status\": \"pending\",\n  \"selected_work\": 1\n}\n",
+      "stdout_sha256": "469a7037c8f31578cb8dcd5e9435987d41e55e0f6c13927f0704697f651e500f"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    }\n  ],\n  \"source_key\": \"source:repeated\",\n  \"status\": null,\n  \"selected_work\": 2\n}\n",
+      "stdout_sha256": "6957e43219deaa85371d440abd88f57fd5b00b2f2d0b756425144f5da2370fce"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    }\n  ],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"matched\",\n  \"selected_work\": 2\n}\n",
+      "stdout_sha256": "623b2257226b8300c47ae57646e33387f8ecd6c6f2552089990c735a84ffceff"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=not_matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"not_matched\",\n  \"selected_work\": 0\n}\n",
+      "stdout_sha256": "8501a5967c523a4d21e57d4c13937fe2ea49a47bdf038c0bbda3cff64e2acc83"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=failed"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"failed\",\n  \"selected_work\": 0\n}\n",
+      "stdout_sha256": "a779d53c58f5312165cb36d2935dd3f06a1207fdb1661f9a30d117a260e450c4"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=pending"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"pending\",\n  \"selected_work\": 0\n}\n",
+      "stdout_sha256": "03aacc9381f102212b18e3c88320ef2972eb11f858d401d0e6eb04688100296e"
+    }
+  ],
+  "source_files": {
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 32524,
+      "sha256": "0cbee6fef659df561428388698c72e9dbe3e25a5378002324d09f5918b4241f3"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 38560,
+      "sha256": "0c258bc0486ddc21b422f3f6b901fce1aeceac82a72bbde51fcf322f2d4e53a0"
+    },
+    "pharmacophoremt_results/_digestion.py": {
+      "bytes": 3867,
+      "sha256": "10a838f819927bcf839e1b2537a6b6fa254a4c4529efc59f53b67a7a714746ab"
+    },
+    "tests/test_public_source_inventory.py": {
+      "bytes": 13895,
+      "sha256": "314996de7de21ab804a8b3d4e3d73135e55478d567d683ab188b42aedf172f65"
+    }
+  },
+  "local_checks": [
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "449 files already formatted\n"
+    },
+    {
+      "name": "distribution",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "devtools/tests",
+        "-p",
+        "test_distribution_contract.py"
+      ],
+      "exit_code": 0,
+      "output": ".........................\n----------------------------------------------------------------------\nRan 25 tests in 6.714s\n\nOK\n"
+    },
+    {
+      "name": "routes",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "output": "{\"contexts\": [{\"bootstrap_selectors\": [\"python>=3.14,<3.15\", \"setuptools\", \"pytest\", \"pip\", \"pytest-cov\", \"codecov\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"mamba\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/development_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \"\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"development-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/docs_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \"\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"docs-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/production_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \"\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"production-3.14\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=77.0.3\", \"versioningit >=2,<3\", \"pytest >=8\", \"pytest-receptor=1.1.0\", \"packaging\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard\", \"argdigest >=0.17.1\", \"smonitor >=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"pyyaml >=5.1\", \"molsysviewer ==0.24.0\", \"ackredit ==0.12.0\", \"beartype ==0.22.9\", \"openmm ==8.6.1\"], \"environment\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \"\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"public-test-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.11\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.11\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py313.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.13\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.13\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=1.1.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py314.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": [\"smonitor-3.14\", \"depdigest-3.14\", \"pyunitwizard-3.14\", \"argdigest-3.14\", \"molsysviewer-3.14\", \"ackredit-3.14\", \"molsysmt-3.14\"]}], \"installed_check_required\": true, \"package\": \"pharmacophoremt\", \"proof_domain\": \"numeric-release-versions\", \"qualification\": \"declared-only\", \"routes\": [{\"kind\": \"shared-noarch\", \"path\": \"devtools/conda-build/meta.yaml\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/build_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/development_env.yaml\", \"purpose\": \"development\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/docs_env.yaml\", \"purpose\": \"documentation\"}, {\"kind\": \"resolved-package\", \"path\": \"devtools/conda-envs/importable_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/production_env.yaml\", \"purpose\": \"production\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/setup_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py313.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/CI.yaml\", \"sha256\": \"ed3722b90f7e062a804f359daaee1c07ff975b541d48c262eda65125bb989667\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/build_and_upload_conda_packages.yaml\", \"sha256\": \"18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/conda_publication_governance.yaml\", \"sha256\": \"353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/molsyssuite-policy.yml\", \"sha256\": \"6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/promote_conda_package.yaml\", \"sha256\": \"2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/sphinx_docs_to_gh_pages.yaml\", \"sha256\": \"b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/test_installed_conda_package.yaml\", \"sha256\": \"d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_resource_probe.yaml\", \"sha256\": \"f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_native_qualification.yaml\", \"sha256\": \"89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0\"}], \"schema\": \"molsyssuite.dependency-routes@3\", \"selected_context\": null, \"source_dependencies\": [\"ackredit-3.14\", \"ackredit-base\", \"argdigest-3.14\", \"argdigest-base\", \"depdigest-3.14\", \"depdigest-base\", \"molsysmt-3.14\", \"molsysmt-base\", \"molsysviewer-3.14\", \"molsysviewer-base\", \"pyunitwizard-3.14\", \"pyunitwizard-base\", \"smonitor-3.14\", \"smonitor-base\"], \"source_inputs\": [{\"path\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}, {\"path\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}], \"source_routes\": [{\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}, {\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}]}\n"
+    },
+    {
+      "name": "environments",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/broadcast_requirements.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "{\n  \"changed\": []\n}\n"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.061s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.920s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "verified_local_links": 267,
+  "docs": {
+    "strict_full_HTML": true,
+    "notebooks": "off",
+    "rendered_recipe_signature_navigation_verified": true,
+    "optional_beartype_absence_diagnostics_retained": true,
+    "peak_observed_group_RSS_bytes": 303190016
+  },
+  "resources": {
+    "name": "source",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-inventory-20261109-3baqkgwi/logs/source.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--receptor-events=build/phmt-source-inventory-20261109-3baqkgwi/logs/source.events.jsonl",
+      "--junitxml=build/phmt-source-inventory-20261109-3baqkgwi/logs/source.xml",
+      "tests/test_public_source_inventory.py",
+      "tests/test_public_work_source.py",
+      "tests/test_public_work_selection.py",
+      "tests/test_public_work_item.py",
+      "tests/test_public_work_cli.py",
+      "tests/test_public_run_cli.py",
+      "tests/test_public_run_results.py",
+      "tests/test_public_run_exports.py",
+      "tests/test_public_run_progress.py",
+      "tests/test_public_run_work_items.py"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60777906176
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1105299\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1074833\n",
+      "swap": {
+        "pswpin": 100003,
+        "pswpout": 330141
+      },
+      "time": 189855.556773364
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 37.21383906301344,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60755431424
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1105303\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1074837\n",
+      "swap": {
+        "pswpin": 100003,
+        "pswpout": 330141
+      },
+      "time": 189892.771295323
+    },
+    "sample_count": 357,
+    "peak_observed_group_RSS_bytes": 113860608
+  },
+  "evidence_files": {
+    "logs/before.log": {
+      "bytes": 4644,
+      "sha256": "9c7541ff32e8248bd5a97f7da3219b9550d3168b05411e9086b94f8f8922369a"
+    },
+    "logs/before.xml": {
+      "bytes": 19627,
+      "sha256": "875eb43f8f50316ca2e17df1122deaf5459844008c9babba2f08b44e3ce3e238"
+    },
+    "logs/before.events.jsonl": {
+      "bytes": 49446,
+      "sha256": "fe856beead8b14048995b7b5805a3dbb9ec3ce2a6153a630bc5eb280c5517ac9"
+    },
+    "logs/source.log": {
+      "bytes": 113,
+      "sha256": "dc857db992b204f175104a418453e1ae86b56b46abed71934a951ae2fe1b0e2c"
+    },
+    "logs/source.xml": {
+      "bytes": 21650,
+      "sha256": "3651a82652516b7c3bef9f605f6a8f64a53e49c937d1439c18915fc0c34611c7"
+    },
+    "logs/source.events.jsonl": {
+      "bytes": 270520,
+      "sha256": "af75b62c386d00411c330732bc43eeddd8ee603fa76ecf9722ffd95b15daa5cb"
+    },
+    "ordinary-before.json": {
+      "bytes": 12158,
+      "sha256": "64cb21d16d6d82970f592af71edb7fcc7aeea9f24c3be43b5eb76a04d31d800c"
+    },
+    "ordinary-after.json": {
+      "bytes": 12158,
+      "sha256": "64cb21d16d6d82970f592af71edb7fcc7aeea9f24c3be43b5eb76a04d31d800c"
+    },
+    "source_command.json": {
+      "bytes": 138371,
+      "sha256": "6bde3259672b63be02fdc7245258ec16c104088ae43d13262d7ec12d2f5db59d"
+    },
+    "local_checks.json": {
+      "bytes": 21621,
+      "sha256": "49d9c0f6c143af4047c17dfe596781de4a42ef72599c0621a048fcd1f0b1efe5"
+    },
+    "docs_run.json": {
+      "bytes": 5715,
+      "sha256": "e8c9d3b243fa95f7722537088180d645636dda3d45d6bc046c0fd4c4f5d9425f"
+    }
+  },
+  "scientific_execution": false,
+  "schema_or_index_change": false,
+  "new_connector": false,
+  "owned_installed_receiving": "pending",
+  "scope": "Bounded independent reader source receiving only; not full source/public dependency/platform/biological/large-library/performance/release or human-usability qualification. MolSysMT#624 owns collections. af408e7 CI remains separate. #148/#165 remain stopped.",
+  "raw_evidence": "build/phmt-source-inventory-20261109-3baqkgwi",
+  "retention_review": "2026-11-23"
+}

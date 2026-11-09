@@ -92,6 +92,11 @@ to preview original work/source/occurrence mappings from the terminal, including
 entries without confirmed results. This keeps pending inputs visible when you
 prepare an explicit cohort mapping for later analysis.
 
+Start saved inspection by [browsing the original sources](../cookbook/saved_work_inspection.md#browse-the-original-sources):
+`--sources` or public `view.source_items()` lists exact labels, first original
+ordinals and all declared work counts. Repeated occurrences and every work state
+remain accounted for; source labels do not establish chemical independence.
+
 To understand a specific input, use [saved input detail](../cookbook/saved_work_inspection.md):
 `--work-key` or `view.work_item(work_key)` retrieves the original confirmed result
 or explicit pending state, including retained attempt counts. It requires no
