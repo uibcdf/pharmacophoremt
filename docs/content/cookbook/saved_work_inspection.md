@@ -132,6 +132,75 @@ limit does not bound complete admission/count work or the largest decoded payloa
 Restart paging after publishing more results. Reading neither retries work nor
 creates new scientific credit.
 
+## Inspect one source in one Python snapshot
+
+Use this complete example when a source's count and displayed details must refer
+to the same saved state. Set the five input parameters first:
+
+```python
+from contextlib import closing
+
+from pharmacophoremt_results import ScreeningRunView
+
+run_path = "RUN.sqlite3"
+source_key = "SOURCE_KEY"
+status = "failed"
+limit = 10
+allow_legacy = False
+
+with ScreeningRunView.open(run_path, allow_legacy=allow_legacy) as view:
+    configuration = view.configuration
+    selected_work = 0
+    selected_prefix = []
+    with closing(view.work_items(source_key=source_key, status=status)) as work:
+        for mapping in work:
+            selected_work += 1
+            if len(selected_prefix) < limit:
+                selected_prefix.append(mapping)
+    print("Run:", configuration["run_id"])
+    print("Declared work:", configuration["work_count"])
+    print("Source:", repr(source_key))
+    print("Status:", status)
+    print("Selected work:", selected_work)
+    for mapping in selected_prefix:
+        detail = view.work_item(mapping["work_key"])
+        print(
+            mapping["manifest_ordinal"],
+            repr(mapping["work_key"]),
+            detail["status"],
+            detail["attempts"],
+        )
+```
+
+Copy the exact nonempty `source_key` from a saved work page. Choose `failed`,
+`pending`, `matched` or `not_matched`, and a positive display limit. `Selected work`
+counts the **complete source/status intersection**, while `Declared work` counts
+the whole run. The global status counts returned by `view.progress()` include
+other sources and cannot supply this source-specific total. An unknown source
+prints the five summary lines, a selected count of zero and no detail rows.
+
+The count consumes the selected iterator once, retaining at most `limit` original
+mapping records. It closes that iterator before inspecting the retained keys in
+the same open view. Repeated occurrences remain separate; ordinals stay global.
+Keys pass directly between public tools, without normalization; `repr()` makes
+spaces, Unicode and leading dashes visible. This is the public expert composition
+of the same source selection and detail operations used by the guided journey.
+
+The display prints scalar mapping/status/attempt information. Each `detail`
+contains the complete original confirmed `outcome`, or `None` while pending.
+When a row was displayed, the last detached `detail` remains available after the
+view closes; choose what to share from that full evidence. Staged or never-started
+work stays pending, unpublished failures stay pending, and a confirmed failure
+stays distinct from a valid zero score. Inspection does not retry work or create
+scientific credit.
+
+The display limit bounds retained mappings, not the cost of opening/counting the
+full selection or the size of one original outcome. Opening verifies the entire
+file, including other sources. Use `allow_legacy=True` only for deliberate legacy
+reading. Close the view before reopening a writer; after new confirmations, open
+a fresh view and repeat the selection. Separate CLI commands open separate
+snapshots; use the single-view example when counts and details must agree.
+
 ## Inspect the original confirmed evidence
 
 Use this route to understand one declared work item without repeating screening.

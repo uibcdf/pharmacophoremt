@@ -104,6 +104,9 @@ To review every occurrence of one original source, use
 [`--work-items --source-key=SOURCE_KEY`](../cookbook/saved_work_inspection.md#find-all-work-for-one-original-source)
 or `view.work_items(source_key=...)`; add `status` to narrow that source's work.
 The key is literal and does not infer chemical identity or merge conformers.
+The [source-specific Python recipe](../cookbook/saved_work_inspection.md#inspect-one-source-in-one-python-snapshot)
+counts the complete source/status intersection and inspects a bounded prefix in
+one view. Its source-specific count stays separate from global status counts.
 The [complete Python inspection recipe](../cookbook/saved_work_inspection.md#inspect-a-selected-prefix-in-one-python-snapshot)
 combines counts, status selection and exact-key detail in one caller-owned
 snapshot, with a bounded display and unchanged opaque keys.

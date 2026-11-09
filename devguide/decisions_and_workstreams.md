@@ -107,6 +107,15 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-09: [#167 source-specific recipe](archive/document_source_inspection_journey.md)
+executes the complete single-view count/prefix/detail journey through existing
+public tools. All 96 declared parameter cases pass in both source and unchanged
+owned203 contexts; 26 full original details are checked per context. Strict docs
+pass. The [executed receipt](evidence/source_inspection_journey_20261109.json)
+resolves this composition, with all159runtime/214wheel payload identities and
+the original recipe/commands unchanged. No runtime/API/wheel/provider change or
+new unit-test count is credited.
+
 2026-11-09: [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
 adds source/status intersections on original work mappings through the owned
 reader and CLI. The same120selected source/owned203 installed cases and eight unchanged

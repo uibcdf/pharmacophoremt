@@ -1,0 +1,66 @@
+{
+  "schema": "pharmacophoremt.source-inspection-journey-closeout@1",
+  "issue": 167,
+  "parent_source": "fe5205b939a6f7f095c7fd2b708b333a12df71d0",
+  "checks": [
+    {
+      "name": "final-index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "final-reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.168s\n\nOK\n"
+    },
+    {
+      "name": "final-archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.028s\n\nOK\n"
+    },
+    {
+      "name": "final-whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "original_runtime_and_exact_measured_recipe_unchanged": true,
+  "runtime_files": 159,
+  "full_raw_evidence_round_trip_verified": true,
+  "local_links_verified": 328,
+  "archive_report": "devguide/archive/document_source_inspection_journey.md",
+  "next_action": "Audit accumulated native/reader changes and freeze a deliberate exact-candidate source checkpoint under#9/#23. No automatic full suite/remote dispatch/new acquisition or148/165retry."
+}

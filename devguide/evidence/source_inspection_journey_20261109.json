@@ -1,0 +1,1818 @@
+{
+  "schema": "pharmacophoremt.source-inspection-journey@1",
+  "issue": 167,
+  "recorded_at_utc": "2026-11-09T15:05:32.947254+00:00",
+  "parent_source": "fe5205b939a6f7f095c7fd2b708b333a12df71d0",
+  "document_producer": "Containing commit freezes the measured recipe; exact document/body hashes and five explicit parameter bindings are preserved. No runtime/API/new-wheel change.",
+  "owned_source": "bd164dde2c4ff79c30e236ed0b5048aed2dd2b36",
+  "owned_version": "0.4.0+203.gbd164dd",
+  "owned_wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-work-source-20261109-3zwa07op/wheels/pharmacophoremt-0.4.0+203.gbd164dd-py3-none-any.whl",
+    "bytes": 4532239,
+    "sha256": "9712fc2619f3fe3a816e17a119d467e4b4f5d1026a64f224cdf8cb4fe3acec19"
+  },
+  "recipe": {
+    "path": "docs/content/cookbook/saved_work_inspection.md",
+    "identity": {
+      "bytes": 13287,
+      "sha256": "5501040a8723447783e40e616173fb2f570a1ce0955a97fbbd5a5ac0f25f16b1"
+    },
+    "body_AST_sha256": "bfd631a6ca470116d58e062f6d819327616d79c15f13da3d9a36834c00ac7775",
+    "code_sha256": "a746d9f0b23837300bbc9a55b9810eba576f643da5bcd41cc00c837162f7a14d",
+    "only_five_explicit_parameter_bindings_rebound": [
+      "allow_legacy",
+      "limit",
+      "run_path",
+      "source_key",
+      "status"
+    ],
+    "original_python_and_all_command_blocks_unchanged": true
+  },
+  "declared_parameter_cases_per_context": 96,
+  "accepted_recipe_executions": 192,
+  "new_unit_tests": 0,
+  "source_installed_observations_identical": true,
+  "full_original_details_checked_per_context": 26,
+  "cases_where_selected_total_exceeds_display_prefix_per_context": 1,
+  "cases": [
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e7aed536fbcc30802da5e18f952f456377c1b59d7811355d9d419814acab1280",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e7aed536fbcc30802da5e18f952f456377c1b59d7811355d9d419814acab1280",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "f87fb4b080878c9ddd53bb2dc38fe9bf48a53195e349756841caf7fff8cad45d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "f87fb4b080878c9ddd53bb2dc38fe9bf48a53195e349756841caf7fff8cad45d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "df0efa2d7ca4c3d393fc0cb7fb43b213e254f980db0cc084dabc799e675bf490",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "df0efa2d7ca4c3d393fc0cb7fb43b213e254f980db0cc084dabc799e675bf490",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "20336e99ed61442b07833d9ae88fa56e544f4a0dd3cdcaf80076002b87e103b1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "20336e99ed61442b07833d9ae88fa56e544f4a0dd3cdcaf80076002b87e103b1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e069038c4d8040a8e74797bcd4013a89f4d6fbc1badc308d44b50be461d3b0a9",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e069038c4d8040a8e74797bcd4013a89f4d6fbc1badc308d44b50be461d3b0a9",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "97b01028d3544e8f1977b221dc7a63b6d660c4598a482bcc69b8d79f7bbbe8f3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "97b01028d3544e8f1977b221dc7a63b6d660c4598a482bcc69b8d79f7bbbe8f3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fb5cd4187ee74f0b710602e2fe38979002bbc317b4348a61f999457c9332cb07",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fb5cd4187ee74f0b710602e2fe38979002bbc317b4348a61f999457c9332cb07",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fd534cb56c7722796261babf706006d97508d5e5011c8a70b3c5515150591cc4",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fd534cb56c7722796261babf706006d97508d5e5011c8a70b3c5515150591cc4",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e7aed536fbcc30802da5e18f952f456377c1b59d7811355d9d419814acab1280",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e7aed536fbcc30802da5e18f952f456377c1b59d7811355d9d419814acab1280",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "f87fb4b080878c9ddd53bb2dc38fe9bf48a53195e349756841caf7fff8cad45d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "f87fb4b080878c9ddd53bb2dc38fe9bf48a53195e349756841caf7fff8cad45d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "df0efa2d7ca4c3d393fc0cb7fb43b213e254f980db0cc084dabc799e675bf490",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "df0efa2d7ca4c3d393fc0cb7fb43b213e254f980db0cc084dabc799e675bf490",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "20336e99ed61442b07833d9ae88fa56e544f4a0dd3cdcaf80076002b87e103b1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "20336e99ed61442b07833d9ae88fa56e544f4a0dd3cdcaf80076002b87e103b1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e069038c4d8040a8e74797bcd4013a89f4d6fbc1badc308d44b50be461d3b0a9",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e069038c4d8040a8e74797bcd4013a89f4d6fbc1badc308d44b50be461d3b0a9",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "97b01028d3544e8f1977b221dc7a63b6d660c4598a482bcc69b8d79f7bbbe8f3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "97b01028d3544e8f1977b221dc7a63b6d660c4598a482bcc69b8d79f7bbbe8f3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fb5cd4187ee74f0b710602e2fe38979002bbc317b4348a61f999457c9332cb07",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fb5cd4187ee74f0b710602e2fe38979002bbc317b4348a61f999457c9332cb07",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fd534cb56c7722796261babf706006d97508d5e5011c8a70b3c5515150591cc4",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "installed-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fd534cb56c7722796261babf706006d97508d5e5011c8a70b3c5515150591cc4",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e7aed536fbcc30802da5e18f952f456377c1b59d7811355d9d419814acab1280",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e7aed536fbcc30802da5e18f952f456377c1b59d7811355d9d419814acab1280",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "f87fb4b080878c9ddd53bb2dc38fe9bf48a53195e349756841caf7fff8cad45d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "f87fb4b080878c9ddd53bb2dc38fe9bf48a53195e349756841caf7fff8cad45d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "df0efa2d7ca4c3d393fc0cb7fb43b213e254f980db0cc084dabc799e675bf490",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "df0efa2d7ca4c3d393fc0cb7fb43b213e254f980db0cc084dabc799e675bf490",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "20336e99ed61442b07833d9ae88fa56e544f4a0dd3cdcaf80076002b87e103b1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "20336e99ed61442b07833d9ae88fa56e544f4a0dd3cdcaf80076002b87e103b1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e069038c4d8040a8e74797bcd4013a89f4d6fbc1badc308d44b50be461d3b0a9",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e069038c4d8040a8e74797bcd4013a89f4d6fbc1badc308d44b50be461d3b0a9",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "97b01028d3544e8f1977b221dc7a63b6d660c4598a482bcc69b8d79f7bbbe8f3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "97b01028d3544e8f1977b221dc7a63b6d660c4598a482bcc69b8d79f7bbbe8f3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fb5cd4187ee74f0b710602e2fe38979002bbc317b4348a61f999457c9332cb07",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fb5cd4187ee74f0b710602e2fe38979002bbc317b4348a61f999457c9332cb07",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fd534cb56c7722796261babf706006d97508d5e5011c8a70b3c5515150591cc4",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "source-partial",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fd534cb56c7722796261babf706006d97508d5e5011c8a70b3c5515150591cc4",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "c6c7c9fe296b1fcc553f702eaba32dbd038ef62460aba173e487c0215c5acfcf",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "c6c7c9fe296b1fcc553f702eaba32dbd038ef62460aba173e487c0215c5acfcf",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "24c013d86c0709cc28edc5f6d141c8615737ee2b31c8e64a4eaf9409b0b30802",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "24c013d86c0709cc28edc5f6d141c8615737ee2b31c8e64a4eaf9409b0b30802",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "53937e230d6efcfc52a7674f2fdca1971f68b29a61fdd12f5349b08b8f758901",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "53937e230d6efcfc52a7674f2fdca1971f68b29a61fdd12f5349b08b8f758901",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "71180fd1d62997f7c34a746a3e06a87d9b8cece20af2848a8e535da03ef78fe7",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "71180fd1d62997f7c34a746a3e06a87d9b8cece20af2848a8e535da03ef78fe7",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "08d06c8f820af1907c3f070ebd48f7883f9bc6b05060a941fa8c731f0dc1206a",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "08d06c8f820af1907c3f070ebd48f7883f9bc6b05060a941fa8c731f0dc1206a",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "3c19d97e158ba74a9d6df0e65d4a295e6df565fade63d00c59c1ac89de1e8352",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "3c19d97e158ba74a9d6df0e65d4a295e6df565fade63d00c59c1ac89de1e8352",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "8aa752abfe1f548701a7c72b582cd6c5a0d86ff381c16fe52d5f313d17b7d7fe",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "8aa752abfe1f548701a7c72b582cd6c5a0d86ff381c16fe52d5f313d17b7d7fe",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e83d89ae33dab577a4fe1aa3eae988c2d7e5c0fd665a7012d391d52acd438861",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "legacy-complete",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": true,
+      "declared_work": 3,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "e83d89ae33dab577a4fe1aa3eae988c2d7e5c0fd665a7012d391d52acd438861",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "6c21406e5c6dd1306e56f3898c2e67816d5e63409d668fb691c62232617d45d5",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        0
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "6c21406e5c6dd1306e56f3898c2e67816d5e63409d668fb691c62232617d45d5",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 3,
+      "displayed_ordinals": [
+        3
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "ee5f30a580d0845f5a0993ae47a70892f0a3d8c14ce7a04f1c9ab187f34c4ca3",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 3,
+      "displayed_ordinals": [
+        3,
+        4,
+        9
+      ],
+      "full_original_details_checked": 3,
+      "stdout_sha256": "62f35f935736304a1f53922e1546330b98f35c985515c1599d2bb6f212071828",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        7
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "389a28cf90aff579838108ceb5e048b9d409d4570536b7acd7dfd4de9e2392d8",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        7
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "389a28cf90aff579838108ceb5e048b9d409d4570536b7acd7dfd4de9e2392d8",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        2
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "b729e8d90939a055dc57a3260321fd919c033fe855a233d7ddd143ba5d1f5574",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": " --source \u03b1' OR 1=1 -- ",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        2
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "b729e8d90939a055dc57a3260321fd919c033fe855a233d7ddd143ba5d1f5574",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "70b88c518a146800fa2371c470a1fe8067d4a713581f75c4f60ebddf3c3610b5",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "70b88c518a146800fa2371c470a1fe8067d4a713581f75c4f60ebddf3c3610b5",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        8
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "cd94b810d32d09110e16c34a98a112d0f003f646bd1ae2c616e7c0458471580a",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        8
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "cd94b810d32d09110e16c34a98a112d0f003f646bd1ae2c616e7c0458471580a",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        5
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "821056c18f67cab2932c312d9f2b68a371fd30fe788b201c9e50eb8215153cdb",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        5
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "821056c18f67cab2932c312d9f2b68a371fd30fe788b201c9e50eb8215153cdb",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "cb0016082565772e46a2243fdcc68af6305e4cff188fd6f2b17495f1e7fc8c49",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "0",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "cb0016082565772e46a2243fdcc68af6305e4cff188fd6f2b17495f1e7fc8c49",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        6
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "bd1b47c97c1dd8b084db83854779b4d097f3d1ca77ac2f873bf56496d8f5b5d1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        6
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "bd1b47c97c1dd8b084db83854779b4d097f3d1ca77ac2f873bf56496d8f5b5d1",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "b3d496136f046ee8a397df59d203b5c2973afefd09fc601fdf6bb390ef38955d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "b3d496136f046ee8a397df59d203b5c2973afefd09fc601fdf6bb390ef38955d",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        1
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "5e5d7618eb3669a0db34718b6a9c270ace4b77b485995cb89025529ef2193648",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 1,
+      "displayed_ordinals": [
+        1
+      ],
+      "full_original_details_checked": 1,
+      "stdout_sha256": "5e5d7618eb3669a0db34718b6a9c270ace4b77b485995cb89025529ef2193648",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "ff117d52f25864ddb2bef3cad2807b0730b4e7dd093bd9bc8e43dfbe9afe072f",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "source:other",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "ff117d52f25864ddb2bef3cad2807b0730b4e7dd093bd9bc8e43dfbe9afe072f",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fe4621bcbbc06594c8480ca36e16f55328331dcd47acadc674db5e76cd091840",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "failed",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "fe4621bcbbc06594c8480ca36e16f55328331dcd47acadc674db5e76cd091840",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "991192831f3951a54eba2c2102cbcb6f08c501e8cb91bdb9b0e32bb3863c1fa5",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "pending",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "991192831f3951a54eba2c2102cbcb6f08c501e8cb91bdb9b0e32bb3863c1fa5",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "19d7a57f29503867d5d3cca9afeaf03ffe7d5335561a61738cc05318322e1f22",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "19d7a57f29503867d5d3cca9afeaf03ffe7d5335561a61738cc05318322e1f22",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 1,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "1baa87640a654b1607b75008f17895e1e8c2f4517eb9fb9fcf42a32b02d2d1ba",
+      "original_file_unchanged": true
+    },
+    {
+      "database": "synthetic-interrupted",
+      "source_key": "absent:source-inspection-167",
+      "status": "not_matched",
+      "limit": 10,
+      "allow_legacy": false,
+      "declared_work": 10,
+      "selected_work": 0,
+      "displayed_ordinals": [],
+      "full_original_details_checked": 0,
+      "stdout_sha256": "1baa87640a654b1607b75008f17895e1e8c2f4517eb9fb9fcf42a32b02d2d1ba",
+      "original_file_unchanged": true
+    }
+  ],
+  "databases": {
+    "source-complete": {
+      "identity": {
+        "bytes": 180224,
+        "sha256": "4b393b7efe567ac0ce332fcd7316e8fecea1d058a8b21c10d26c6435786cab2a"
+      },
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-runs-20261107-w9c85754/attempt3-source-private/screening.sqlite3",
+      "receiving_path": "/tmp/phmt-source-journey-receiving-20261109-s0uynbxb/fixtures/databases/source-complete.sqlite3"
+    },
+    "installed-complete": {
+      "identity": {
+        "bytes": 180224,
+        "sha256": "6f8802a3a9278575f28ef7638ca8782f772d3fafc1c13849ed627b89101b6051"
+      },
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-runs-20261107-w9c85754/attempt1-installed-private/screening.sqlite3",
+      "receiving_path": "/tmp/phmt-source-journey-receiving-20261109-s0uynbxb/fixtures/databases/installed-complete.sqlite3"
+    },
+    "source-partial": {
+      "identity": {
+        "bytes": 77824,
+        "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369"
+      },
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-guided-expert-20261107-ipd_7x6x/revised-source/guided/original-partial.sqlite3",
+      "receiving_path": "/tmp/phmt-source-journey-receiving-20261109-s0uynbxb/fixtures/databases/source-partial.sqlite3"
+    },
+    "legacy-complete": {
+      "identity": {
+        "bytes": 118784,
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3"
+      },
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/screening.sqlite3",
+      "receiving_path": "/tmp/phmt-source-journey-receiving-20261109-s0uynbxb/fixtures/databases/legacy-complete.sqlite3"
+    },
+    "synthetic-interrupted": {
+      "identity": {
+        "bytes": 40960,
+        "sha256": "ddc5e7403c4d8e27967d6d7a2f360e300b38c618e81cfb533acdaa43a5de7d33"
+      },
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-journey-20261109-0dymgu6_/synthetic/run.sqlite3",
+      "receiving_path": "/tmp/phmt-source-journey-receiving-20261109-s0uynbxb/fixtures/databases/synthetic-interrupted.sqlite3"
+    }
+  },
+  "oracle": "Independent readonly SQL/original JSON; original Python equality selects source and publication/native status, retaining all ordinals and repeated mappings. Print profiling captures the original detail variable without changing public methods or recipe body.",
+  "all_wheel_payload_files_verified_before_and_after": 214,
+  "runtime_files_unchanged": 159,
+  "loaded_reader_modules_per_context": 7,
+  "loaded_installed_runtime": {
+    "state": "verified-loaded-imports",
+    "roots": [
+      "pharmacophoremt_results"
+    ],
+    "loaded": [
+      "pharmacophoremt_results",
+      "pharmacophoremt_results._api",
+      "pharmacophoremt_results._diagnostics",
+      "pharmacophoremt_results._digestion",
+      "pharmacophoremt_results._exports",
+      "pharmacophoremt_results._meta",
+      "pharmacophoremt_results._store"
+    ]
+  },
+  "no_molecular_or_citation_import_attempts": true,
+  "public_support_files_unchanged": true,
+  "shared_SDK_and_QA_files_unchanged": true,
+  "local_checks": [
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "448 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.069s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.990s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "rendered_checks": {
+    "new_recipe_anchor": "inspect-one-source-in-one-python-snapshot",
+    "rendered_code_and_count_caveat": true,
+    "navigation_links": [
+      [
+        "html/content/user/chemical_libraries.html",
+        "../cookbook/saved_work_inspection.html#inspect-one-source-in-one-python-snapshot"
+      ],
+      [
+        "html/content/cookbook/index.html",
+        "saved_work_inspection.html#inspect-one-source-in-one-python-snapshot"
+      ]
+    ],
+    "all159runtime_files_unchanged": true,
+    "original_python_and_all_bash_blocks_unchanged": true
+  },
+  "resources": {
+    "source": {
+      "name": "source-recipe",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-journey-20261109-0dymgu6_/logs/source-recipe.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-source-journey-20261109-0dymgu6_/controls/launch_recipe.py",
+        "source"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59691257856
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086685\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "swap": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "time": 174701.873173342
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 2.6339634290197864,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59461713920
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086685\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "swap": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "time": 174704.508112606
+      },
+      "sample_count": 26,
+      "peak_observed_group_RSS_bytes": 70369280,
+      "min_host_available_bytes": 59456237568,
+      "swap_counter_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "installed": {
+      "name": "installed-recipe",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-journey-20261109-0dymgu6_/logs/installed-recipe.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-source-journey-20261109-0dymgu6_/controls/launch_recipe.py",
+        "installed"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59181551616
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086685\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "swap": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "time": 174714.402032485
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 2.7333838820050005,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59112722432
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086685\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "swap": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "time": 174717.136425212
+      },
+      "sample_count": 27,
+      "peak_observed_group_RSS_bytes": 74485760,
+      "min_host_available_bytes": 59107672064,
+      "swap_counter_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "docs": {
+      "recorded_at_utc": "2026-11-09T15:01:30.526966+00:00",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=90",
+        "--fsize=67108864",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-journey-20261109-0dymgu6_/logs/docs-resources.txt",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-journey-20261109-0dymgu6_/html"
+      ],
+      "memory_entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59235520512,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7894548480
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086685\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "load": [
+          1.818359375,
+          1.22119140625,
+          0.72412109375
+        ],
+        "swap_pages": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "monotonic": 174740.145038689
+      },
+      "resource_budget_bytes": 1073741824,
+      "reserve_bytes": 12995688039,
+      "backend_threads": 1,
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "rlimit_data_bytes": 536870912,
+      "rlimit_as": "unlimited inherited",
+      "aggregate_cgroup_enforcement": false,
+      "nb_execution": "off",
+      "scheduler": "Slurm binaries present; no active allocation. Small direct serial docs render only, established DATA512MiB route; no scheduler request.",
+      "resource_estimate": "Previous same-context strict full docs command:10.99s/280900KiB lifetime RSS; allow1GiB supervisor/own group envelope. Free memory is not reserved.",
+      "status": "completed",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 10.009988912992412,
+      "memory_after": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59918962688,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7894548480
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086685\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "load": [
+          2.08056640625,
+          1.296875,
+          0.75439453125
+        ],
+        "swap_pages": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "monotonic": 174750.1559574
+      }
+    },
+    "docs_peak_observed_group_RSS_bytes": 305721344,
+    "scope": "Reader DATA512MiB/AS1GiB and observed group512MiB stop; established docs DATA512MiB/AS-unlimited/observed-group1GiB route. One CPU19/backend thread, nice19/idleIO and20percent host reserve. Limits and observations do not reserve capacity or impose kernel aggregate memory/swap/tasks/quota.",
+    "scheduler": "Slurm client exists but this sandbox read cannot contact controller (socket permission refused). No allocation or scheduler request. Lightweight direct serial receiving only; no native/manager operation.",
+    "first_observation": {
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60878753792,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7894548480
+        },
+        "psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086684\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "swap": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "cpu_ticks": [
+          9315491,
+          20165394,
+          1933342,
+          316211828,
+          214743,
+          0,
+          25397,
+          0,
+          0,
+          0
+        ],
+        "load": [
+          1.4150390625,
+          0.86083984375,
+          0.505859375
+        ]
+      },
+      "sample_after_250ms": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60878254080,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7894548480
+        },
+        "psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1086684\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1058186\n",
+        "swap": {
+          "pswpin": 99849,
+          "pswpout": 330141
+        },
+        "cpu_ticks": [
+          9315513,
+          20165399,
+          1933345,
+          316212297,
+          214743,
+          0,
+          25397,
+          0,
+          0,
+          0
+        ],
+        "load": [
+          1.4150390625,
+          0.86083984375,
+          0.505859375
+        ]
+      },
+      "aggregate_CPU_busy_fraction": 0.06012024048096187,
+      "allowed_CPU": 19,
+      "CPU_capacity": 20,
+      "threads": 1,
+      "nice": 19,
+      "IO": "idle",
+      "DATA_bytes": 536870912,
+      "AS_bytes": 1073741824,
+      "observed_own_group_RSS_cutoff": 536870912,
+      "host_reserve_fraction": 0.2,
+      "not_reserved": true,
+      "cgroup_aggregate_enforcement": false,
+      "estimated_reader": "Two sequential lightweight fresh reader processes; prior reader peak125MiB and docs~292MiB. No native/molecular/test-suite/build/manager execution.",
+      "scheduler": {
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "sinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nsinfo: error: Error creating slurm stream socket: Operation not permitted\nslurm_load_partitions: Unable to contact slurm controller (connect failure)\n",
+        "SLURM_JOB_ID": null
+      }
+    }
+  },
+  "full_evidence": {
+    "path": "source_inspection_journey_20261109_full.json.gz",
+    "compressed_bytes": 74278,
+    "compressed_sha256": "5f1d3ed096674b7c0480f40be7b983d4eca179616bf8b4a9baca5be1ea53df3a",
+    "uncompressed_bytes": 531105,
+    "uncompressed_sha256": "3077112f3ec438393c96f36b6a2dec42f53f07f3c59c8f4c781b5334477dd99c"
+  },
+  "scope": "Documentation/public expert composition, not a new runtime or connector/collection/API, molecular/scientific/attribution execution, large-library performance, representative human-usability, complete source/public/platform or release qualification. Prior#166120-body source/owned203 evidence retains its own identity; it is not rerun or relabelled as these recipe cases. #148/#165 remain stopped.",
+  "retention": {
+    "capsule": "build/phmt-source-journey-20261109-0dymgu6_",
+    "workspace": "/tmp/phmt-source-journey-receiving-20261109-s0uynbxb",
+    "review": "2026-11-23",
+    "original_inputs_payloads_and_logs_retained": true
+  }
+}

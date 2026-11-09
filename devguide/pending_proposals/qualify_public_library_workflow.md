@@ -14,6 +14,18 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Complete source-specific inspection — 2026-11-09 UTC
+
+[#167](../archive/document_source_inspection_journey.md) composes true source/status counts,
+a bounded prefix and exact original details in one public view. All 96 declared
+parameter cases pass from source and the unchanged owned203 reader over four
+historical files and one mixed-source interrupted fixture. These are executed
+recipe cases, not new unit tests; 26 full original details are checked per
+context. The [executed receipt](../evidence/source_inspection_journey_20261109.json)
+resolves the bounded composition with strict full docs/navigation and local
+checks; all159runtime/214wheel payload identities and the original recipe/commands
+remain unchanged. Full supported/scientific/usability gates remain separate.
+
 ## Exact original source selection — 2026-11-09 UTC
 
 [#166](../archive/select_saved_work_by_source.md) adds source/status intersections to the

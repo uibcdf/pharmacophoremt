@@ -116,6 +116,18 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#167 source-specific inspection](archive/document_source_inspection_journey.md)
+composes true intersection counts, a bounded prefix and original details in one
+public view. The same 96 declared recipe parameter cases pass from source and
+the unchanged owned203 reader, including literal/repeated source identities and
+failed/pending/valid-zero distinctions. No runtime/API/provider change or new
+wheel is needed. [Exact receiving](evidence/source_inspection_journey_20261109.json)
+resolves the bounded composition: 192accepted executions,26original full details
+per context, unchanged159runtime/214payload identities, strict full docs and local
+checks. These parameter cases are not new unit tests or human-usability evidence.
+The next quality step audits accumulated changes for a deliberate exact-candidate
+source checkpoint under#9/#23; selected scopes retain their separate identities.
+
 [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
 advances milestone2: select an original source and status intersection without
 regrouping repeated work or rerunning science. The same120selected cases pass from

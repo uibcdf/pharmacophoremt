@@ -9,6 +9,17 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#167 source-specific inspection recipe](../docs/content/cookbook/saved_work_inspection.md#inspect-one-source-in-one-python-snapshot)
+composes exact source/status counts, a bounded prefix and original details in one
+caller-owned public view. All 96 declared parameter cases pass from source and
+the unchanged owned203 reader, with 26 full original details checked per context.
+These are recipe executions, not new unit tests. Runtime/API/provider bytes and
+the original status-only recipe/command blocks remain unchanged. The
+[executed receipt](evidence/source_inspection_journey_20261109.json) resolves this
+bounded composition: 159runtime/214wheel payload identities, strict full docs,
+rendered navigation and local checks verify. Full supported/scientific/usability
+gates remain separate.
+
 [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
 adds literal source/status intersections to the independent work API and CLI.
 The [source](evidence/work_source_selection_source_20261109.json) and
@@ -91,11 +102,12 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** exercise and document the complete guided path for
-one source's failed/pending work in a single view (counts, selected mappings,
-exact original detail), with independent repeated-occurrence fixtures and the
-corresponding public expert composition under#108. MolSysMT#624 still awaits an
-owner collection/update API disposition; no PHMT molecular reader fork follows.
+**Next concrete action:** audit the accumulated native/reader changes since the
+accepted27c1178 checkpoint and freeze the next deliberate source-validation scope
+under#9/#23, with an exact candidate and a reviewed execution/dependency context.
+Do not relabel selected local receiving as a complete source/platform gate.
+MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
+molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and
 a distinct reviewed managed compiler/resource context under#165. Preserve both
 stopped compiler profiles without automatic retries or budget escalation.
