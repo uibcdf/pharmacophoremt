@@ -9,20 +9,23 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#163 supported Pharmer profile](pharmer_interoperability.md) now receives
-explicit warn/raise/ignore, detached conversion reports, persisted loss audit and
-strict refusal before model or molecular construction. Inactive vectors are
-honored; actual public donor evaluation distinguishes off/on. The same141selected
-bodies pass in source and exact b4b062a owned wheel198 (48new/93existing), retaining
-35original red guards. Three supported ordinary profiles preserve source bytes
-and installed scientific payloads, with producer versions compared separately.
-Both complete P1drivers retain all three answers, nine attribution items/22uses.
-The [installed receipt](evidence/pharmer_profile_installed_20261109.json) verifies
-214payload/159runtime files,12original fixtures and155loaded runtime origins,
-with no PHMT checkout fallback. This closes the bounded import profile. One
-counted deliberate overflow warning and the separately reported published
-Pytest Receptor1.2.0 shutdown warning remain visible. Full supported/public gates
-and external engine equivalence are independent.
+[#164 external P1declaration](pharmer_p1_external_admission.md) is prepared in
+source: nine official text captures distinguish the r95 build and legacy published
+binary; concrete argv, resource/identity and observable-output gates are frozen.
+Three original MolSysMT SDF exports/round-trips preserve chemistry/atom order/frame
+and the original P1tolerance (maximum error2.22e-16nm). The original over-strict
+bitwise pilot failure is retained. All17selected source cases pass, five new and
+12original; same-body receiving around unchanged owned wheel198 remains pending.
+No external binary/download/build/perception/database/search occurs. The stock
+outputs omit explicit native memberships/correspondences, so full mapping remains
+an admission gate, not an inferred result. One case/database avoids equal-title
+conformer grouping and directory-induced process/worker multiplication.
+
+The prior [#163 profile](pharmer_interoperability.md) retains source b4b062a /
+exact owned wheel198,141same cases, three ordinary profiles and complete P1drivers,
+with214payload/159runtime files,12fixtures and155loaded origins verified. It is
+reader qualification, not external execution. Its declared warning/loss policy,
+corrected vector activation and original35red guards retain their own receipts.
 
 Earlier [#162 enabled-point import](evidence/pharmer_enabled_installed_20261109.json)
 keeps its source0407e20/owned196receiving,34cases, original point mappings and
@@ -62,12 +65,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** prepare the external P1receiving declaration under#128:
-identify a reproducible Pharmer executable/source/build route, its dependencies,
-input/export/perception coverage and actual bounded resource plan before execution.
-Retain the three frozen P1oracles and declared unsupported semantics; no comparator
-installation or substitution follows automatically from the completed reader.
-Keep the provider collection handoff and environment-manager disposition separate.
+**Next concrete action:** receive the same17original export/P1bodies and new
+export driver around existing exact owned wheel198, refusing checkout fallback;
+then close the bounded preparation#164. Actual external execution still requires
+complete pinned build/dependency/diagnostic and enforced-resource receiving under
+#128. No automatic compilation, manager transaction or comparator substitution.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.

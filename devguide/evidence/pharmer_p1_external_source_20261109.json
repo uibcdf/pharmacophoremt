@@ -1,0 +1,965 @@
+{
+  "schema": "pharmacophoremt.pharmer-p1-external-source@1",
+  "issue": 164,
+  "parent_source": "f3b69184dbe9a7d683b38e15fccc9e5a1119ef2a",
+  "source_producer": "Containing source commit freezes unchanged fixtures/helper/driver bytes; runtime remains exact source b4b062a / owned wheel198.",
+  "files": {
+    "devtools/prepare_pharmer_p1.py": {
+      "bytes": 2707,
+      "sha256": "ce1b793015c6757128c107f0daffe6fb8c5986ca874d08d3ace5a330037404cf"
+    },
+    "phmt_test_support/pharmer_p1_export.py": {
+      "bytes": 3187,
+      "sha256": "026cb870dd2019a06377bbebb1a474c48aae6d72dc236f5a3f9b60f9293e4c43"
+    },
+    "tests/test_pharmer_p1_export.py": {
+      "bytes": 3090,
+      "sha256": "e13b0fcc621ce2250122bd9c0db5ff0d01fc4c4c0d3a217dfab7505d5105ed2d"
+    },
+    "tests/test_reporting_protocol.py": {
+      "bytes": 8040,
+      "sha256": "30c4b530ae6123d00970fc60f52724eaebefa19656722a557a0c7293c21d71c9"
+    },
+    "tests/data/pharmer_p1/external/export_manifest.json": {
+      "bytes": 5515,
+      "sha256": "8b5ad91af72fa1807ec2c66ad6b70ffbeb4a41212fc34859c9fb37559a940e6d"
+    },
+    "tests/data/pharmer_p1/external/permuted-source.sdf": {
+      "bytes": 321,
+      "sha256": "35c95a58af3136c42082d8f88fe42a41fe9d058235122176ae44cbaef04872f8"
+    },
+    "tests/data/pharmer_p1/external/proper-motion.sdf": {
+      "bytes": 321,
+      "sha256": "0fdf4646c06df37b4edec735c94b935188977c07ed86cfd555682b0e7a9b1516"
+    },
+    "tests/data/pharmer_p1/external/receiving.json": {
+      "bytes": 11939,
+      "sha256": "6b7c0aa79e1286378311dd97137ebedec6ae69472b010d08d0ac3a25fdb23707"
+    },
+    "tests/data/pharmer_p1/external/uniform-stretch.sdf": {
+      "bytes": 321,
+      "sha256": "759762690cb32c3277634de86223573174c59eb9742cf0fc5ffec607b236e792"
+    }
+  },
+  "runtime_changed": false,
+  "unchanged_runtime_files": 159,
+  "reused_runtime": {
+    "source_commit": "b4b062a2137239d4d074d394bd615709beb4c6f5",
+    "version": "0.4.0+198.gb4b062a",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/wheels/pharmacophoremt-0.4.0+198.gb4b062a-py3-none-any.whl",
+      "bytes": 4531751,
+      "sha256": "273b82295e806e6bf606fbc4f3a119006d13cedaed1c31326c9a55fd3a76794b"
+    }
+  },
+  "new_source_text_identities": [
+    {
+      "file": ".cproject",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.cproject",
+      "at": "2026-11-09T04:16:58.570124+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.cproject",
+      "headers": {
+        "ETag": "\"94//.cproject\"",
+        "Last-Modified": "Thu, 18 Dec 2014 02:39:59 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 36044,
+      "sha256": "3ee168cbdf1e50231532eab558faae743bae85ec8e12d28b90a5fa1eb7702d63"
+    },
+    {
+      "file": ".project",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.project",
+      "at": "2026-11-09T04:16:58.974540+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.project",
+      "headers": {
+        "ETag": "\"52//.project\"",
+        "Last-Modified": "Tue, 03 Apr 2012 14:48:31 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 2487,
+      "sha256": "a6314622ba42644d38ecde0f0bdb78f6220f1abc3f56c0b48959cb58bdc385b0"
+    },
+    {
+      "file": "main.cpp",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/main.cpp",
+      "at": "2026-11-09T04:16:59.235924+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/main.cpp",
+      "headers": {
+        "ETag": "\"95//main.cpp\"",
+        "Last-Modified": "Thu, 19 Feb 2015 18:27:51 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 18774,
+      "sha256": "c24c7be9623f37fe36c9f5e5e9391f7ac9a83337ef9fb0e04cd89980b95316f5"
+    },
+    {
+      "file": "ReadMCMol.h",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ReadMCMol.h",
+      "at": "2026-11-09T04:16:59.557414+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ReadMCMol.h",
+      "headers": {
+        "ETag": "\"94//ReadMCMol.h\"",
+        "Last-Modified": "Thu, 18 Dec 2014 02:39:59 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 4339,
+      "sha256": "cb5709a782f748f508f233929223f5bc97debce8ea1a2f0ab0f8a165f9778496"
+    },
+    {
+      "file": "pharmerdb.h",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.h",
+      "at": "2026-11-09T04:16:59.827480+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.h",
+      "headers": {
+        "ETag": "\"91//pharmerdb.h\"",
+        "Last-Modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 15158,
+      "sha256": "3e1dcdd18021dc53a23e3bba7a354e9198590f27a464c764ff1ecaee57dd1eab"
+    },
+    {
+      "file": "PMol.cpp",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.cpp",
+      "at": "2026-11-09T04:17:00.139999+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.cpp",
+      "headers": {
+        "ETag": "\"91//PMol.cpp\"",
+        "Last-Modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 12024,
+      "sha256": "5230707ac47e46fa1a5f5e631f380bfd35da667f1390dca0a5f7a56fe24c8fa7"
+    },
+    {
+      "file": "MMappedRegion.h",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MMappedRegion.h",
+      "at": "2026-11-09T04:17:00.406591+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MMappedRegion.h",
+      "headers": {
+        "ETag": "\"91//MMappedRegion.h\"",
+        "Last-Modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 2980,
+      "sha256": "cd885e652c7949a8cb631215a0d1cf8f9c853f3ee283db13eb1daabbefe39357"
+    },
+    {
+      "file": "ThreadCounter.h",
+      "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreadCounter.h",
+      "at": "2026-11-09T04:17:00.659736+00:00",
+      "status": 200,
+      "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreadCounter.h",
+      "headers": {
+        "ETag": "\"1//ThreadCounter.h\"",
+        "Last-Modified": "Tue, 22 Feb 2011 18:19:13 GMT",
+        "Content-Type": "text/plain; charset=UTF-8"
+      },
+      "bytes": 1650,
+      "sha256": "3c0fb0aa9e868d620c78004e494754e81ddf5d5f446f2939ba0f7efbe178560d"
+    },
+    {
+      "file": "published-binary-README",
+      "url": "https://downloads.sourceforge.net/project/pharmer/README",
+      "at": "2026-11-09T04:17:00.919468+00:00",
+      "status": 200,
+      "final_url": "https://master.dl.sourceforge.net/project/pharmer/README",
+      "headers": {
+        "ETag": "\"54924d26-240\"",
+        "Last-Modified": "Thu, 18 Dec 2014 03:42:30 GMT",
+        "Content-Type": "application/octet-stream"
+      },
+      "bytes": 576,
+      "sha256": "453d6ffab503ef378f18920a419b79beb20f494ece790a0113184ac8e9c93a1a",
+      "final_url_query": "omitted public transient mirror parameters"
+    }
+  ],
+  "raw_external_source": "Selected original files remain local in the owned capsule; no executable/source corpus published here. Public transient mirror query parameters omitted from this publication; original private capture retained.",
+  "toolchain_inventory": {
+    "g++": {
+      "path": "/usr/bin/g++",
+      "exit": 0,
+      "version_line": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0"
+    },
+    "make": {
+      "path": "/usr/bin/make",
+      "exit": 0,
+      "version_line": "GNU Make 4.4.1"
+    },
+    "pkg-config": {
+      "path": "/usr/bin/pkg-config",
+      "exit": 0,
+      "version_line": "2.5.1"
+    },
+    "prefix_headers": {
+      "openbabel-2.0": null,
+      "openbabel-3": null,
+      "jsoncpp": null,
+      "cgicc": null,
+      "boost": null,
+      "eigen3": null
+    },
+    "pkg_config_probes": {
+      "openbabel-2.0": {
+        "exit": 1,
+        "output": "",
+        "meaning": "Current configured pkg-config search only; nonzero is not proof that all system libraries are absent."
+      },
+      "openbabel-3": {
+        "exit": 1,
+        "output": "",
+        "meaning": "Current configured pkg-config search only; nonzero is not proof that all system libraries are absent."
+      },
+      "jsoncpp": {
+        "exit": 1,
+        "output": "",
+        "meaning": "Current configured pkg-config search only; nonzero is not proof that all system libraries are absent."
+      },
+      "fcgi": {
+        "exit": 1,
+        "output": "",
+        "meaning": "Current configured pkg-config search only; nonzero is not proof that all system libraries are absent."
+      },
+      "cgicc": {
+        "exit": 1,
+        "output": "",
+        "meaning": "Current configured pkg-config search only; nonzero is not proof that all system libraries are absent."
+      },
+      "libtcmalloc_minimal": {
+        "exit": 1,
+        "output": "",
+        "meaning": "Current configured pkg-config search only; nonzero is not proof that all system libraries are absent."
+      }
+    }
+  },
+  "prospective_resources": {
+    "parent_source": "f3b69184dbe9a7d683b38e15fccc9e5a1119ef2a",
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 57935085568,
+      "SwapTotal": 8589930496,
+      "SwapFree": 8122843136
+    },
+    "pressure": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758857\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=736124\n",
+    "swap": {
+      "pswpin": 99510,
+      "pswpout": 273907
+    },
+    "load": [
+      3.33544921875,
+      2.84716796875,
+      2.46875
+    ],
+    "allowed_CPUs": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "scheduler": {
+      "sinfo": "/usr/bin/sinfo",
+      "job_id": null,
+      "last_observation": "Prior same-session sinfo reports inval/unk* nodes; no usable allocation or job requested."
+    },
+    "pharmer_on_PATH": null,
+    "provider": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+      "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+      "dirty": ""
+    },
+    "prospective_resources": {
+      "science": "Established DATA512MiB/AS1GiB per-process + sampled own-group512MiB cutoff, CPU19/thread1/low priorities,120CPU/180wall/reserve20percent. First tiny export pilot; stop on refusal, no budget increase.",
+      "build": "Not executed or resource-qualified by this preparation. Full source/dependencies, one compiler job, explicit enforced allocation and separate prospective pilot required.",
+      "no_reservation": true,
+      "no_aggregate_kernel_memory_swap_task_quota_guarantee": true
+    },
+    "scope": "Documentary source admission and three original synthetic molecular exports only; no external binary/build/database/search, manager/provider/native/prefix change or148retry."
+  },
+  "original_pilot": {
+    "execution": {
+      "name": "export-pilot",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/export-pilot.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pharmer-admission-20261109-cm8qw_mg/controls/export_pilot.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 57876230144
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758857\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=736124\n",
+        "swap": {
+          "pswpin": 99510,
+          "pswpout": 273907
+        },
+        "time": 136166.958486118
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 2.4282698280003387,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 57615466496
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758857\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=736124\n",
+        "swap": {
+          "pswpin": 99510,
+          "pswpout": 273907
+        },
+        "time": 136169.387795331
+      },
+      "peak_observed_own_group_RSS_bytes": 267759616
+    },
+    "result": "Authored bitwise readback assertion fails at max3.55e-15angstrom; recovery uses already-declared P1 absolute1e-12nm tolerance. No provider/numerical matching/resource changes."
+  },
+  "final_source": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 17,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 17,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 17,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 4.801799594017211,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "56403e51327a6f2a51bca4ee6d2077168ab2bbdfa3c8d52e9104998358dfa298",
+      "records": 52
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "233303cf405749529e98ba9834501db6",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "new_cases": 5,
+  "original_P1_cases": 12,
+  "execution": {
+    "name": "source-final2",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/source-final2.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--receptor-events=build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/source-final2.events.jsonl",
+      "--junitxml=build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/source-final2.xml",
+      "--maxfail=1",
+      "tests/test_pharmer_p1_export.py",
+      "tests/test_pharmer_p1.py"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58122420224
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=775127\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=752034\n",
+      "swap": {
+        "pswpin": 99510,
+        "pswpout": 273907
+      },
+      "time": 136714.457349948
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 6.171462911996059,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57978363904
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=775128\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=752035\n",
+      "swap": {
+        "pswpin": 99510,
+        "pswpout": 273907
+      },
+      "time": 136720.629779236
+    },
+    "peak_observed_own_group_RSS_bytes": 348930048
+  },
+  "exports": {
+    "schema": "pharmacophoremt.pharmer-p1-exports@1",
+    "issue": "uibcdf/pharmacophoremt#164",
+    "case_id": "pharmer-p1-required-spherical-interior@1",
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "runtime_version": "0.4.0+134.gee5d9fa",
+    "versions": {
+      "pharmacophoremt": "0.4.0+120.g0925d97",
+      "molsysmt": "0.23.0+687.g2325038e8",
+      "pyunitwizard": "0.29.1+6.gf82b618",
+      "numpy": "2.5.4"
+    },
+    "original_inputs": {
+      "declaration.json": {
+        "bytes": 2359,
+        "sha256": "2eb784ae6de1bb6b5c29c24d792dea57eae4bbb4bfcb01af3719c58d0e35dca6"
+      },
+      "query.json": {
+        "bytes": 286,
+        "sha256": "b9d564e16fcdadbac43313a527d3d0366f394607a9e5fcfb5a993c85f5342207"
+      }
+    },
+    "cases": [
+      {
+        "key": "proper-motion",
+        "actual": {
+          "key": "proper-motion",
+          "file": "proper-motion.sdf",
+          "bytes": 321,
+          "sha256": "0fdf4646c06df37b4edec735c94b935188977c07ed86cfd555682b0e7a9b1516",
+          "format": "SDF V2000",
+          "coordinate_unit": "angstrom",
+          "source_atom_indices": [
+            0,
+            1,
+            2
+          ],
+          "atom_types": [
+            "Na",
+            "K",
+            "Li"
+          ],
+          "formal_charges": [
+            1,
+            1,
+            1
+          ],
+          "n_bonds": 0,
+          "n_frames": 1,
+          "coordinates_nm": [
+            [
+              2.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              -0.5,
+              0.5
+            ],
+            [
+              1.0,
+              -1.0,
+              0.5
+            ]
+          ],
+          "roundtrip_coordinates_nm": [
+            [
+              1.9999999999999998,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              -0.49999999999999994,
+              0.49999999999999994
+            ],
+            [
+              0.9999999999999999,
+              -0.9999999999999999,
+              0.49999999999999994
+            ]
+          ],
+          "max_roundtrip_error_nm": 2.220446049250313e-16,
+          "roundtrip_tolerance_nm": 1e-12,
+          "source_unchanged": true,
+          "external_atom_membership": "not observed",
+          "external": "not_executed"
+        },
+        "status": "verified-export"
+      },
+      {
+        "key": "permuted-source",
+        "actual": {
+          "key": "permuted-source",
+          "file": "permuted-source.sdf",
+          "bytes": 321,
+          "sha256": "35c95a58af3136c42082d8f88fe42a41fe9d058235122176ae44cbaef04872f8",
+          "format": "SDF V2000",
+          "coordinate_unit": "angstrom",
+          "source_atom_indices": [
+            0,
+            1,
+            2
+          ],
+          "atom_types": [
+            "Na",
+            "K",
+            "Li"
+          ],
+          "formal_charges": [
+            1,
+            1,
+            1
+          ],
+          "n_bonds": 0,
+          "n_frames": 1,
+          "coordinates_nm": [
+            [
+              1.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              -0.5,
+              0.5
+            ]
+          ],
+          "roundtrip_coordinates_nm": [
+            [
+              0.9999999999999999,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              -0.49999999999999994,
+              0.49999999999999994
+            ]
+          ],
+          "max_roundtrip_error_nm": 2.220446049250313e-16,
+          "roundtrip_tolerance_nm": 1e-12,
+          "source_unchanged": true,
+          "external_atom_membership": "not observed",
+          "external": "not_executed"
+        },
+        "status": "verified-export"
+      },
+      {
+        "key": "uniform-stretch",
+        "actual": {
+          "key": "uniform-stretch",
+          "file": "uniform-stretch.sdf",
+          "bytes": 321,
+          "sha256": "759762690cb32c3277634de86223573174c59eb9742cf0fc5ffec607b236e792",
+          "format": "SDF V2000",
+          "coordinate_unit": "angstrom",
+          "source_atom_indices": [
+            0,
+            1,
+            2
+          ],
+          "atom_types": [
+            "Na",
+            "K",
+            "Li"
+          ],
+          "formal_charges": [
+            1,
+            1,
+            1
+          ],
+          "n_bonds": 0,
+          "n_frames": 1,
+          "coordinates_nm": [
+            [
+              2.0,
+              -1.0,
+              0.5
+            ],
+            [
+              2.0,
+              0.0,
+              0.5
+            ],
+            [
+              0.0,
+              -1.0,
+              0.5
+            ]
+          ],
+          "roundtrip_coordinates_nm": [
+            [
+              1.9999999999999998,
+              -0.9999999999999999,
+              0.49999999999999994
+            ],
+            [
+              1.9999999999999998,
+              0.0,
+              0.49999999999999994
+            ],
+            [
+              0.0,
+              -0.9999999999999999,
+              0.49999999999999994
+            ]
+          ],
+          "max_roundtrip_error_nm": 2.220446049250313e-16,
+          "roundtrip_tolerance_nm": 1e-12,
+          "source_unchanged": true,
+          "external_atom_membership": "not observed",
+          "external": "not_executed"
+        },
+        "status": "verified-export"
+      }
+    ],
+    "external": "not_executed",
+    "scope": "Molecular export/round-trip only; no perception, search, activity or performance qualification.",
+    "passed": true
+  },
+  "source_export_driver": {
+    "name": "source-export-driver",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/source-export-driver.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "devtools.prepare_pharmer_p1",
+      "--output-directory",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/source-exports"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57104113664
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=768183\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=745178\n",
+      "swap": {
+        "pswpin": 99510,
+        "pswpout": 273907
+      },
+      "time": 136339.181899629
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 2.527880248002475,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 56932925440
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=768183\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=745178\n",
+      "swap": {
+        "pswpin": 99510,
+        "pswpout": 273907
+      },
+      "time": 136341.710573324
+    },
+    "peak_observed_own_group_RSS_bytes": 271327232
+  },
+  "max_roundtrip_error_nm": 2.220446049250313e-16,
+  "original_source_unchanged": true,
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+    "dirty": ""
+  },
+  "checks": [
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "447 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.095s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.029s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "docs": {
+    "recorded_at_utc": "2026-11-09T04:25:44.562520+00:00",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=90",
+      "--fsize=67108864",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/logs/docs-resources.txt",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-j",
+      "1",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "-q",
+      "-D",
+      "nb_execution_mode=off",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-admission-20261109-cm8qw_mg/html"
+    ],
+    "memory_entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57964822528,
+        "SwapTotal": 8589930496,
+        "SwapFree": 8122966016
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=768654\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=745650\n",
+      "load": [
+        2.10302734375,
+        2.68798828125,
+        2.5869140625
+      ],
+      "swap_pages": {
+        "pswpin": 99510,
+        "pswpout": 273907
+      },
+      "monotonic": 136594.180659335
+    },
+    "resource_budget_bytes": 1073741824,
+    "reserve_bytes": 12995688039,
+    "backend_threads": 1,
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "rlimit_data_bytes": 536870912,
+    "rlimit_as": "unlimited inherited",
+    "aggregate_cgroup_enforcement": false,
+    "nb_execution": "off",
+    "scheduler": "Slurm binaries present; no active allocation. Small direct serial docs render only, established DATA512MiB route; no scheduler request.",
+    "resource_estimate": "Previous same-context strict full docs command:10.99s/280900KiB lifetime RSS; allow1GiB supervisor/own group envelope. Free memory is not reserved.",
+    "status": "completed",
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 10.009330545988632,
+    "memory_after": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57699414016,
+        "SwapTotal": 8589930496,
+        "SwapFree": 8122966016
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=768657\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=745652\n",
+      "load": [
+        2.85009765625,
+        2.830078125,
+        2.634765625
+      ],
+      "swap_pages": {
+        "pswpin": 99510,
+        "pswpout": 273907
+      },
+      "monotonic": 136604.19080502
+    }
+  },
+  "docs_peak_group_RSS_bytes": 305332224,
+  "full_evidence": {
+    "path": "pharmer_p1_external_source_20261109_full.json.gz",
+    "compressed_bytes": 44656,
+    "compressed_sha256": "d9d072956f3d3c634c71198f7b870089b874f830bc243fc7a0605b465189adf3",
+    "uncompressed_bytes": 349271,
+    "uncompressed_sha256": "7a7690fe94211a89a74a9d1a2a13aa14c3c5265101f7f46a1bd5483d8ec3b84f"
+  },
+  "installed_receiving": "Pending at this original source stage; unchanged exact owned wheel198, same17case bodies and full export driver. No new runtime wheel needed.",
+  "external_state": "Unexecuted; build recipe/compiler/dependency/native-mapping/resource admission unreceived. No Pharmer binary download/build/install/perception/database/search.",
+  "scope": "Prepared input/CLI/identity/resource/observation declaration only; no public optional engine adapter/dependency or source/public/platform/biological/performance/release qualification; no manager/provider/native/shared-prefix change or148retry.",
+  "retention": {
+    "capsule": "build/phmt-pharmer-admission-20261109-cm8qw_mg",
+    "review": "2026-11-23"
+  }
+}

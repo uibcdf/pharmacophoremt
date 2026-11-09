@@ -90,3 +90,16 @@ This case establishes neither common chemical perception nor biological
 prediction, complete continuous search, throughput or supported-platform/public
 package qualification. No timing comparison is made. New measurements retain
 new source/native/input identities and preserve earlier failures and outputs.
+
+
+## Preparing the original molecular files
+
+`python -m devtools.prepare_pharmer_p1 --output-directory NEW_DIRECTORY` exports
+and verifies the three original P1sources through MolSysMT, preserving graph,
+charges, atom order and coordinates within the original declared P1tolerance.
+The command refuses an existing directory and retains each failed export as a
+failure. It does not acquire or execute Pharmer. The
+[frozen external declaration](https://github.com/uibcdf/pharmacophoremt/blob/main/tests/data/pharmer_p1/external/receiving.json)
+and [admission contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/pharmer_p1_external_admission.md)
+keep executable/build, actual perception, database coverage and observable native
+mappings as separate gates. The old published binary is not assumed to match r95.

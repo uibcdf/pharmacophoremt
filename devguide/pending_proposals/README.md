@@ -6,8 +6,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (2)
+### Active (3)
 
+- [`prepare_pharmer_p1_external.md`](prepare_pharmer_p1_external.md) — [#164](https://github.com/uibcdf/pharmacophoremt/issues/164) — Prepare a source/executable/input/resource declaration for the external Pharmer P1 arm. *(active, measured)*
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 

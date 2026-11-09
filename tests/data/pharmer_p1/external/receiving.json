@@ -1,0 +1,264 @@
+{
+  "schema": "pharmacophoremt.pharmer-p1-external-admission@1",
+  "issue": "uibcdf/pharmacophoremt#164",
+  "case_id": "pharmer-p1-required-spherical-interior@1",
+  "state": "prepared; external execution not admitted",
+  "original_query": "../query.json",
+  "original_declaration": "../declaration.json",
+  "frozen_exports": "export_manifest.json",
+  "source": {
+    "selected": "Pharmer standalone SVN r95",
+    "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/",
+    "complete_source_build_manifest_received": false,
+    "new_text_capture": [
+      {
+        "file": ".cproject",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.cproject",
+        "at": "2026-11-09T04:16:58.570124+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.cproject",
+        "headers": {
+          "ETag": "\"94//.cproject\"",
+          "Last-Modified": "Thu, 18 Dec 2014 02:39:59 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 36044,
+        "sha256": "3ee168cbdf1e50231532eab558faae743bae85ec8e12d28b90a5fa1eb7702d63"
+      },
+      {
+        "file": ".project",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.project",
+        "at": "2026-11-09T04:16:58.974540+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.project",
+        "headers": {
+          "ETag": "\"52//.project\"",
+          "Last-Modified": "Tue, 03 Apr 2012 14:48:31 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 2487,
+        "sha256": "a6314622ba42644d38ecde0f0bdb78f6220f1abc3f56c0b48959cb58bdc385b0"
+      },
+      {
+        "file": "main.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/main.cpp",
+        "at": "2026-11-09T04:16:59.235924+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/main.cpp",
+        "headers": {
+          "ETag": "\"95//main.cpp\"",
+          "Last-Modified": "Thu, 19 Feb 2015 18:27:51 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 18774,
+        "sha256": "c24c7be9623f37fe36c9f5e5e9391f7ac9a83337ef9fb0e04cd89980b95316f5"
+      },
+      {
+        "file": "ReadMCMol.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ReadMCMol.h",
+        "at": "2026-11-09T04:16:59.557414+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ReadMCMol.h",
+        "headers": {
+          "ETag": "\"94//ReadMCMol.h\"",
+          "Last-Modified": "Thu, 18 Dec 2014 02:39:59 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 4339,
+        "sha256": "cb5709a782f748f508f233929223f5bc97debce8ea1a2f0ab0f8a165f9778496"
+      },
+      {
+        "file": "pharmerdb.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.h",
+        "at": "2026-11-09T04:16:59.827480+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.h",
+        "headers": {
+          "ETag": "\"91//pharmerdb.h\"",
+          "Last-Modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 15158,
+        "sha256": "3e1dcdd18021dc53a23e3bba7a354e9198590f27a464c764ff1ecaee57dd1eab"
+      },
+      {
+        "file": "PMol.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.cpp",
+        "at": "2026-11-09T04:17:00.139999+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.cpp",
+        "headers": {
+          "ETag": "\"91//PMol.cpp\"",
+          "Last-Modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 12024,
+        "sha256": "5230707ac47e46fa1a5f5e631f380bfd35da667f1390dca0a5f7a56fe24c8fa7"
+      },
+      {
+        "file": "MMappedRegion.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MMappedRegion.h",
+        "at": "2026-11-09T04:17:00.406591+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MMappedRegion.h",
+        "headers": {
+          "ETag": "\"91//MMappedRegion.h\"",
+          "Last-Modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 2980,
+        "sha256": "cd885e652c7949a8cb631215a0d1cf8f9c853f3ee283db13eb1daabbefe39357"
+      },
+      {
+        "file": "ThreadCounter.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreadCounter.h",
+        "at": "2026-11-09T04:17:00.659736+00:00",
+        "status": 200,
+        "final_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreadCounter.h",
+        "headers": {
+          "ETag": "\"1//ThreadCounter.h\"",
+          "Last-Modified": "Tue, 22 Feb 2011 18:19:13 GMT",
+          "Content-Type": "text/plain; charset=UTF-8"
+        },
+        "bytes": 1650,
+        "sha256": "3c0fb0aa9e868d620c78004e494754e81ddf5d5f446f2939ba0f7efbe178560d"
+      },
+      {
+        "file": "published-binary-README",
+        "url": "https://downloads.sourceforge.net/project/pharmer/README",
+        "at": "2026-11-09T04:17:00.919468+00:00",
+        "status": 200,
+        "final_url": "https://master.dl.sourceforge.net/project/pharmer/README",
+        "headers": {
+          "ETag": "\"54924d26-240\"",
+          "Last-Modified": "Thu, 18 Dec 2014 03:42:30 GMT",
+          "Content-Type": "application/octet-stream"
+        },
+        "bytes": 576,
+        "sha256": "453d6ffab503ef378f18920a419b79beb20f494ece790a0113184ac8e9c93a1a",
+        "final_url_query": "omitted public transient mirror parameters"
+      }
+    ],
+    "earlier_review": "devguide/evidence/pharmer_query_review_20261109.json"
+  },
+  "binary": {
+    "selected_path": null,
+    "sha256": null,
+    "source_to_binary_received": false,
+    "published_route": "https://sourceforge.net/projects/pharmer/files/",
+    "disposition": "2014 pharmer.static is not substituted for source r95 (2015). Official README explicitly says binaries need not track source. No binary downloaded or executed."
+  },
+  "build_admission": {
+    "state": "unreceived",
+    "requirements": [
+      "Complete pinned source tree and generated build recipe; no guessed CMake route for the Eclipse-only snapshot",
+      "Pinned compiler/linker, flags and every dependency ABI/artifact hash, license and source notice",
+      "OpenBabel 2.x include ABI in .cproject is not established by modern source providers",
+      "Resolve JsonCpp, Boost, FastCGI/cgicc, tcmalloc, Eigen, curl/ZINC registration and OUTPUTSMINA/smina from the actual build configuration",
+      "Explicitly review any diagnostic-only instrumentation or disabled server/registration build paths; retain original source and complete patch",
+      "No global header/library repair, sudo install, package-manager solve or shared-prefix update",
+      "One compiler job with measured small pilot and explicit bounded allocation before full build"
+    ]
+  },
+  "commands_source_derived_not_executed": {
+    "help": [
+      "{pharmer}",
+      "-help"
+    ],
+    "definitions": [
+      "{pharmer}",
+      "showpharma"
+    ],
+    "perceive": [
+      "{pharmer}",
+      "pharma",
+      "-in={case.sdf}",
+      "-out={features.json}",
+      "-nthreads=1",
+      "-q=false"
+    ],
+    "create": [
+      "{pharmer}",
+      "dbcreate",
+      "-dbdir={new_case_db}",
+      "-in={case.sdf}",
+      "-nthreads=1",
+      "-reduceconfs=0",
+      "-q=false"
+    ],
+    "search": [
+      "{pharmer}",
+      "dbsearch",
+      "-dbdir={case_db}",
+      "-in={original_query.json}",
+      "-out={poses.sdf}",
+      "-nthreads=1",
+      "-reduceconfs=0",
+      "-max-orient=4294967295",
+      "-max-hits=4294967295",
+      "-max-rmsd=0.3125",
+      "-print=true",
+      "-q=false"
+    ]
+  },
+  "effective_policy": {
+    "syntax": "Verify every argument against the selected executable help before use; argv is a prospective source-derived template.",
+    "databases": "One new database and one original single-record SDF per case, serial; no file concatenation.",
+    "limits": "No conformer reduction (0); explicit UINT_MAX output/orientation cap, not mathematically infinite. Reaching any cap or failure prevents complete-negative acceptance.",
+    "max_rmsd": "0.3125 angstrom, equal to the common physical radius; a complete equal-radius per-site interior placement necessarily satisfies this RMSD bound. No unequal-radius or numerical-boundary comparison.",
+    "identity": "Each case DB contains one input record/one conformer; preserve external molid/location separately from original case/atom identities.",
+    "title": "Disconnected three-component exports have empty titles. r95 groups sequential equal titles as conformers; per-case DB prevents accidental cross-case grouping without editing molecular files.",
+    "threads": "nthreads=1 still has main/coordinator/worker threads; multiple dbdir values can fork creators and multiply loading/query threads. One database per process plus CPU affinity, actual task monitoring and imposed resource limits; no claim of one total task."
+  },
+  "observation_gates": [
+    {
+      "stage": "export",
+      "state": "received in source; installed receiving separate",
+      "requirement": "Original record graph, Na/K/Li order, +1 charges, no bonds, one frame; original P1 1e-12nm absolute readback tolerance; source untouched."
+    },
+    {
+      "stage": "executable",
+      "state": "unreceived",
+      "requirement": "Exact path/hash/build context, same path checked and executed, qualified help/definitions."
+    },
+    {
+      "stage": "perception",
+      "state": "unexecuted",
+      "requirement": "Complete actual feature output: three PositiveIon size1 centers, no extras. Native memberships need diagnostics; JSON has no atom indices. Coordinate association is derived evidence, not emitted membership."
+    },
+    {
+      "stage": "database",
+      "state": "unexecuted",
+      "requirement": "Each original record imported/indexed/searchable exactly once; one conformer, zero omissions and retained precision/feature definitions."
+    },
+    {
+      "stage": "search",
+      "state": "unexecuted",
+      "requirement": "Normal completion, effective caps below neither coverage nor output; all native placement mappings/distances if observable; original raw stdout/stderr/SDF immutable."
+    },
+    {
+      "stage": "interpretation",
+      "state": "unreceived",
+      "requirement": "Stock CSV/SDF omit complete correspondences; do not label derived fitted-coordinate association as native atom/feature mapping. Full P1 mapping acceptance requires an admitted diagnostic path or an explicitly distinct reduced-scope case."
+    }
+  ],
+  "resource_admission": {
+    "executed_here": "Only source-text reads, five new plus12original source guards and original MolSysMT exports; established DATA512MiB/AS1GiB/groupRSS512MiB/CPU19/thread1/low-priority/reserve20percent profile.",
+    "external_build_and_engine": "Not measured/admitted. Prefer a separately allocated enforced memory/task/swap/CPU envelope; first help/perception/single-record DB pilot under fixed conservative limits. Stop on pressure/refusal; no resource-budget increase or host-wide sysctl/nofile/swap change.",
+    "no_capacity_reservation": true,
+    "no_148_retry": true
+  },
+  "separate_outcomes": [
+    "unavailable-executable",
+    "unreceived-build",
+    "invalid-export",
+    "perception-mismatch-or-unobservable-membership",
+    "omitted-or-incomplete-database",
+    "failed-or-capped-search",
+    "unsupported-output-mapping",
+    "complete-geometric-match",
+    "complete-geometric-nonmatch"
+  ],
+  "external_executed": false,
+  "new_runtime_adapter_or_dependency": false
+}

@@ -1,0 +1,232 @@
+{
+  "schema": "pharmacophoremt.pharmer-p1-exports@1",
+  "issue": "uibcdf/pharmacophoremt#164",
+  "case_id": "pharmer-p1-required-spherical-interior@1",
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "runtime_version": "0.4.0+134.gee5d9fa",
+  "versions": {
+    "pharmacophoremt": "0.4.0+120.g0925d97",
+    "molsysmt": "0.23.0+687.g2325038e8",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "numpy": "2.5.4"
+  },
+  "original_inputs": {
+    "declaration.json": {
+      "bytes": 2359,
+      "sha256": "2eb784ae6de1bb6b5c29c24d792dea57eae4bbb4bfcb01af3719c58d0e35dca6"
+    },
+    "query.json": {
+      "bytes": 286,
+      "sha256": "b9d564e16fcdadbac43313a527d3d0366f394607a9e5fcfb5a993c85f5342207"
+    }
+  },
+  "cases": [
+    {
+      "key": "proper-motion",
+      "actual": {
+        "key": "proper-motion",
+        "file": "proper-motion.sdf",
+        "bytes": 321,
+        "sha256": "0fdf4646c06df37b4edec735c94b935188977c07ed86cfd555682b0e7a9b1516",
+        "format": "SDF V2000",
+        "coordinate_unit": "angstrom",
+        "source_atom_indices": [
+          0,
+          1,
+          2
+        ],
+        "atom_types": [
+          "Na",
+          "K",
+          "Li"
+        ],
+        "formal_charges": [
+          1,
+          1,
+          1
+        ],
+        "n_bonds": 0,
+        "n_frames": 1,
+        "coordinates_nm": [
+          [
+            2.0,
+            -1.0,
+            0.5
+          ],
+          [
+            2.0,
+            -0.5,
+            0.5
+          ],
+          [
+            1.0,
+            -1.0,
+            0.5
+          ]
+        ],
+        "roundtrip_coordinates_nm": [
+          [
+            1.9999999999999998,
+            -0.9999999999999999,
+            0.49999999999999994
+          ],
+          [
+            1.9999999999999998,
+            -0.49999999999999994,
+            0.49999999999999994
+          ],
+          [
+            0.9999999999999999,
+            -0.9999999999999999,
+            0.49999999999999994
+          ]
+        ],
+        "max_roundtrip_error_nm": 2.220446049250313e-16,
+        "roundtrip_tolerance_nm": 1e-12,
+        "source_unchanged": true,
+        "external_atom_membership": "not observed",
+        "external": "not_executed"
+      },
+      "status": "verified-export"
+    },
+    {
+      "key": "permuted-source",
+      "actual": {
+        "key": "permuted-source",
+        "file": "permuted-source.sdf",
+        "bytes": 321,
+        "sha256": "35c95a58af3136c42082d8f88fe42a41fe9d058235122176ae44cbaef04872f8",
+        "format": "SDF V2000",
+        "coordinate_unit": "angstrom",
+        "source_atom_indices": [
+          0,
+          1,
+          2
+        ],
+        "atom_types": [
+          "Na",
+          "K",
+          "Li"
+        ],
+        "formal_charges": [
+          1,
+          1,
+          1
+        ],
+        "n_bonds": 0,
+        "n_frames": 1,
+        "coordinates_nm": [
+          [
+            1.0,
+            -1.0,
+            0.5
+          ],
+          [
+            2.0,
+            -1.0,
+            0.5
+          ],
+          [
+            2.0,
+            -0.5,
+            0.5
+          ]
+        ],
+        "roundtrip_coordinates_nm": [
+          [
+            0.9999999999999999,
+            -0.9999999999999999,
+            0.49999999999999994
+          ],
+          [
+            1.9999999999999998,
+            -0.9999999999999999,
+            0.49999999999999994
+          ],
+          [
+            1.9999999999999998,
+            -0.49999999999999994,
+            0.49999999999999994
+          ]
+        ],
+        "max_roundtrip_error_nm": 2.220446049250313e-16,
+        "roundtrip_tolerance_nm": 1e-12,
+        "source_unchanged": true,
+        "external_atom_membership": "not observed",
+        "external": "not_executed"
+      },
+      "status": "verified-export"
+    },
+    {
+      "key": "uniform-stretch",
+      "actual": {
+        "key": "uniform-stretch",
+        "file": "uniform-stretch.sdf",
+        "bytes": 321,
+        "sha256": "759762690cb32c3277634de86223573174c59eb9742cf0fc5ffec607b236e792",
+        "format": "SDF V2000",
+        "coordinate_unit": "angstrom",
+        "source_atom_indices": [
+          0,
+          1,
+          2
+        ],
+        "atom_types": [
+          "Na",
+          "K",
+          "Li"
+        ],
+        "formal_charges": [
+          1,
+          1,
+          1
+        ],
+        "n_bonds": 0,
+        "n_frames": 1,
+        "coordinates_nm": [
+          [
+            2.0,
+            -1.0,
+            0.5
+          ],
+          [
+            2.0,
+            0.0,
+            0.5
+          ],
+          [
+            0.0,
+            -1.0,
+            0.5
+          ]
+        ],
+        "roundtrip_coordinates_nm": [
+          [
+            1.9999999999999998,
+            -0.9999999999999999,
+            0.49999999999999994
+          ],
+          [
+            1.9999999999999998,
+            0.0,
+            0.49999999999999994
+          ],
+          [
+            0.0,
+            -0.9999999999999999,
+            0.49999999999999994
+          ]
+        ],
+        "max_roundtrip_error_nm": 2.220446049250313e-16,
+        "roundtrip_tolerance_nm": 1e-12,
+        "source_unchanged": true,
+        "external_atom_membership": "not observed",
+        "external": "not_executed"
+      },
+      "status": "verified-export"
+    }
+  ],
+  "external": "not_executed",
+  "scope": "Molecular export/round-trip only; no perception, search, activity or performance qualification.",
+  "passed": true
+}
