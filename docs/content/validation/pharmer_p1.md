@@ -64,7 +64,7 @@ and[prospective plan](https://github.com/uibcdf/pharmacophoremt/blob/main/devgui
 for the exact receiving scope and review triggers. This driver is a developer
 case harness, not a shipped external-engine adapter.
 
-## What remains separate
+## Recorded PHMT results
 
 The [source receiving record](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/pharmer_p1_source_20261109.json)
 records the two expected matches and complete empty proposal set for the stretch,
@@ -72,8 +72,13 @@ with original inputs unchanged. All29final selected source controls pass
 (12new/17existing), including attribution enabled/disabled. The complete driver
 retains nine actual attribution items/22uses. Earlier wider legacy-scope and
 private recorder failures are preserved, rather than reported as geometric
-negatives. Same-file case receiving around the existing owned wheel remains
-pending at this source checkpoint; the external arm is still unexecuted.
+negatives. The [installed receiving record](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/pharmer_p1_installed_20261109.json)
+receives the same 29 original cases and complete driver around the unchanged
+owned wheel, with original copied inputs and source-import refusal. It verifies
+152 loaded runtime origins; both contexts retain the two positive placements and
+complete empty result for the stretch. The external arm remains unexecuted.
+
+## What remains separate
 
 The Pharmer source study predicts which conditions need testing, but cannot
 supply a measured search answer. Its separate execution must first qualify the

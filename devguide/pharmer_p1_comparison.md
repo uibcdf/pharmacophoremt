@@ -130,8 +130,19 @@ wrongly rejecting extra attribution metadata, then failed whole-file native
 hashing. It now projects only declared scientific keys while retaining complete
 metadata and streams native hashes with `hashlib.file_digest`. Scientific fixture,
 runtime, expectations and limits are unchanged. Full original failed output and
-source remain preserved. Same-file unchanged-wheel receiving and final checks
-remain pending here. Append their new receipts without rewriting
+source remain preserved. The [installed receipt](evidence/pharmer_p1_installed_20261109.json)
+then receives the same 29 original cases and complete three-case driver from
+copied source1372623 fixtures around unchanged exact owned wheel192. It verifies
+211 payload / 156 runtime files, eight original fixture files, 152 loaded runtime
+origins and no PHMT checkout fallback. Both drivers retain nine actual attribution
+items / 22 uses and refuse replacement of an existing original output. The
+initial old Sabueso editable finder is refused before science because another
+actor replaced its metadata. Current literal namespace paths are unchanged, new
+finder bytes are pinned, and actual provider Python/native snapshots match
+before/after this receiving. No provider or prefix mutation is performed here;
+original dirty/generated provider labels are not normalized or promoted into
+public qualification. Preparation#161 resolves within this bounded local scope.
+Append new receipts without rewriting
 the prospective inputs or earlier evidence. The guard
 `tests/test_pharmer_p1.py::test_public_phmt_arm_matches_the_frozen_independent_answers`
 checks actual public proposals and final placement against these independent

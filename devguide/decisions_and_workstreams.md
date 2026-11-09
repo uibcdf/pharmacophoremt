@@ -29,8 +29,12 @@ impossible stretch. All29 final selected source cases pass,12new/17existing,
 including enabled/disabled attribution; the driver retains three correct answers
 and actual nine-item/22-use attribution. The original legacy-scope memory refusal,
 private whole-file native hashing failure and extra-metadata comparison error
-remain recorded. Input/runtime/provider/budgets are unchanged. Same-file case
-receiving around owned wheel192 remains pending; actual Pharmer perception/search
+remain recorded. Recovery preserves frozen inputs, runtime and budgets; actual
+current provider metadata is pinned separately. The same
+29 original cases and complete driver pass around owned wheel192; 152 loaded
+runtime origins and eight fixture files verify. The initial stale Sabueso finder
+refusal and current provider mappings retain separate identities. Preparation#161
+resolves; actual Pharmer perception/search
 is unexecuted and separately gated. Public disabled-point loss is recorded in
 [#162](pending_bugs/pharmer_disabled_points.md), outside P1's enabled subset.
 

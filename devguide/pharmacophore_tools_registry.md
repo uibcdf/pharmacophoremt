@@ -189,3 +189,21 @@ installed cases pass and twelve ordinary outputs/counters remain unchanged.
 See the [numerical contract](pair_distance_pruning.md) and
 [installed receipt](evidence/pruning_slack_installed_20261109.json).
 This does not execute a competitor, qualify#148or establish biology/scale.
+
+
+## P1 preparation and PHMT receiving — 2026-11-09
+
+Pharmer disposition for this bounded case: **Comparison planned**. The frozen
+[P1contract](pharmer_p1_comparison.md) and
+[resolved preparation report](archive/prepare_pharmer_p1.md) define one
+all-enabled spherical query, two exact positive mappings and one provably
+impossible stretch. The same 29 selected cases and complete three-case PHMT driver
+pass from source and unchanged owned wheel192, with nine actual attribution
+items / 22 uses each. The
+[installed receipt](evidence/pharmer_p1_installed_20261109.json) retains
+current provider/mapping identities and the initial stale-metadata refusal.
+Pharmer itself remains unexecuted: exact executable, molecular export, perception,
+database coverage and search/output admission stay open under#128. This is not an
+executed external comparison, benchmark or general interchange claim. The actual
+public disabled-point import loss is separately open as#162; P1 uses only enabled
+points. Canonical Discussion#131 publication/readback is recorded separately in#128.

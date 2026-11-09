@@ -1,9 +1,9 @@
 ---
 summary: Freeze the P1 spherical-interior comparison and receive its PHMT arm.
 issue: uibcdf/pharmacophoremt#161
-status: partial
+status: resolved
 opened: 2026-11-09
-closed:
+closed: 2026-11-09
 verification: measured
 area: [science, comparison, screening]
 guard: tests/test_pharmer_p1.py::test_public_phmt_arm_matches_the_frozen_independent_answers
@@ -47,3 +47,27 @@ whole-file hashing/metadata-comparison failures and the initial missing report-I
 inventory update are preserved; corrected checks pass. Strict full docs, Ruff,
 438formatted files, reporting/index/three reporting tests and18archive tests pass.
 Same-file original case/driver receiving around unchanged owned192remains pending.
+
+## Bounded preparation closeout — 2026-11-09
+
+The [installed receipt](../evidence/pharmer_p1_installed_20261109.json) pins case
+source1372623edf6fef5878c9122cf30c443ec8e156b7 and unchanged owned runtime wheel
+0.4.0+192.g65991c3. The same 29 original test bodies and complete three-case driver
+pass with all eight original copied fixture files, 211 verified wheel payload
+files, 156 runtime files and 152 loaded runtime origins. No PHMT checkout fallback
+or .pth execution occurs. Actual attribution remains nine items / 22 uses in each
+context; original results are protected against overwrite. Source/native provider
+hashes and changed Sabueso editable metadata retain their actual identities;
+no provider/environment update is performed by this work.
+
+The declared public guard compares actual proposals and final placements with
+the independent frozen oracle, in attribution-enabled/disabled contexts. The
+other guards verify exact inputs, unique mapping/infeasible negative and honest
+incomplete failure. Original resource/harness/report-inventory/setup failures
+remain archived; no input or resource limit is raised to force a pass. Installed
+own-group RSS peaks at363913216bytes under the original local profile; no kernel
+aggregate guarantee is inferred.
+
+This closes preparation and PHMT receiving only. Parent#128 still owns the
+unexecuted external Pharmer comparison;#162 owns the actual disabled-import defect.
+Full source/public/platform, biology/performance and release gates remain separate.

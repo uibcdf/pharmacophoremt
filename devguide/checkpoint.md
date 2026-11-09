@@ -11,48 +11,26 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 ## Last received increment and next action
 
 [#161 P1 comparison preparation](pharmer_p1_comparison.md) freezes one spherical
-query and three original analytical ion inputs: proper motion, permuted source
-and impossible stretch. Independent rational controls protect exact units and
-mappings. All29 final selected source cases pass (12new/17existing), including
-attribution enabled/disabled; the source driver passes all three original answers
-and retains nine actual attribution items/22uses. The
-[source receipt](evidence/pharmer_p1_source_20261109.json) preserves the earlier
-legacy attached-ligand memory refusal and private attribution-comparison/native
-hashing failures, followed by bounded corrected receiving. Recovery changes no
-frozen fixture, runtime payload, provider or resource limit. Same-file case receiving
-against unchanged owned wheel192 remains pending. Pharmer itself is unexecuted;
-its perception/export/database/search admission is explicitly gated under#128.
-The actual disabled-point import finding is separately open as
-[#162](pending_bugs/pharmer_disabled_points.md); P1uses only enabled points.
+query and three analytical ion inputs, with independent rational positive,
+permutation and impossible-stretch oracles. The same 29 original cases pass from
+source and copied fixtures around unchanged owned wheel192 (12 new / 17 existing).
+The complete driver passes in both contexts with nine actual attribution items
+and 22 uses each. The [installed receipt](evidence/pharmer_p1_installed_20261109.json)
+verifies 211 payload / 156 runtime files, eight original case/driver fixtures and
+152 loaded runtime origins, with no PHMT checkout fallback. Original legacy-scope,
+private harness and stale-provider-metadata refusals retain separate evidence.
+Recovery preserves frozen inputs, runtime payload and resource limits. This work
+changes no provider; independently renewed metadata is pinned separately. The
+installed own-group RSS peak is 363913216 bytes. Preparation#161
+resolves; actual Pharmer perception/export/database/search remains unexecuted
+under#128. The actual disabled-point import loss remains open as
+[#162](pending_bugs/pharmer_disabled_points.md); P1 uses only enabled points.
 
-The [#160 candidate numerical correction](pair_distance_pruning.md) prevents
-the essential-triplet distance filter from discarding the original numerical
-boundary accepted by final matching. Physical radii and final evaluation remain
-unchanged. All116 selected source cases pass (17new/99existing, no skips/reported
-warnings); twelve ordinary outputs/counters remain exactly equal. The original
-public ion body fails with the saved old filter and passes with the correction.
-The [source receipt](evidence/pruning_slack_source_20261109.json) retains the
-AS512 mapping failures and explicit DATA512/AS1GiB local receiving amendment;
-observed own-group RSS stays below512MiB, without kernel MemoryMax/swap/task
-guarantees. This does not retry or qualify#148. The same116bodies pass from
-exact65991c3 owned wheel192;211payload/156runtime files and seven unchanged
-fixtures verify. The [installed receipt](evidence/pruning_slack_installed_20261109.json)
-retains the successful suite, original root-dependent JUnit bookkeeping failure
-and separate successful metadata/origin/native postcheck. Twelve ordinary outputs
-remain equal and150loaded runtime origins verify; observed suite group RSS peaks
-at382513152bytes. [#160](archive/pair_distance_pruning_slack.md) resolves within
-this local source/owned installed scope; full supported/public gates stay open.
-
-The preceding [Pharmer query/pruning review](pharmer_query_pruning_review.md) authenticates
-24selected official standalone files at SVN revision95 and proposes12unexecuted
-comparison cases. Its [receipt](evidence/pharmer_query_review_20261109.json)
-separates source interpretation, current PHMT contracts and three independent
-stdlib/Fraction arithmetic controls. Those controls confirm a literal mismatch
-between PHMT's positive-site numerical allowance and strict pair-radius filter;
-[#160](archive/pair_distance_pruning_slack.md) separately received the correction
-above. The original source-only study changes no runtime/dependency and executes
-no competitor or molecular calculation; its index/scale questions stay open.
-Canonical Discussion#131 publication/readback is separately owned by#128.
+The preceding [#160 correction](pair_distance_pruning.md) retains its independent
+116 source/same-wheel cases and original native before/after witness. The
+[Pharmer source review](pharmer_query_pruning_review.md) retains its 24 pinned
+r95 files and twelve initially proposed comparison questions. P1 preparation and
+PHMT receiving above do not execute the external comparator or qualify#148.
 
 Earlier bounded increments retain their own contracts and source/run identities:
 [#159 complete saved-work inspection](archive/document_saved_inspection_journey.md),
@@ -78,11 +56,10 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** freeze#161's case source and receive the same29original
-bodies and complete driver from copied fixtures around unchanged owned wheel192,
-with PHMT checkout fallback refused. Preserve the explicit unexecuted external
-arm, original failures and current safe resource profile. Then qualify#162's
-disabled-point import behavior with an independent public guard.
+**Next concrete action:** qualify#162's disabled-point import behavior with an
+independent public guard, then preserve or explicitly refuse that meaning through
+the owned reader. Keep P1's external engine/export/perception/search admission
+separate; do not install or substitute a comparator without that receiving plan.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.
