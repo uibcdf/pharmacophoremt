@@ -1,6 +1,7 @@
 """Chemical triplet proposals for the classical rigid-search method."""
 
 from itertools import combinations, product
+from math import inf, isfinite, nextafter
 
 import numpy as np
 from argdigest import arg_digest
@@ -9,7 +10,29 @@ from smonitor import signal
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
-from pharmacophoremt.screening.pose_evaluation import PoseEvaluator
+from pharmacophoremt.screening.pose_evaluation import (
+    _POSITION_RELATIVE_SLACK,
+    PoseEvaluator,
+)
+
+
+def _pair_distance_exceeds_tolerance(candidate, reference, radius_a, radius_b):
+    """Reject only beyond physical tolerance and the candidate roundoff band.
+
+    All inputs are already normalized lengths. Reuse final positive-site slack
+    for the radius sum and a conservative allowance for both computed norms.
+    Outward rounding retains uncertain boundary candidates for final evaluation;
+    it does not alter physical radii or the final matching predicate.
+    """
+    if not (isfinite(candidate) and isfinite(reference)):
+        return False
+    difference = abs(candidate - reference)
+    physical_limit = radius_a + radius_b
+    if difference <= physical_limit:
+        return False
+    outward_limit = nextafter(physical_limit, inf)
+    allowance = _POSITION_RELATIVE_SLACK * (outward_limit + candidate + reference)
+    return difference > nextafter(outward_limit + allowance, inf)
 
 
 def _centers_of_sites(sites):
@@ -73,8 +96,11 @@ def get_correspondences(
     Notes
     -----
     At least three essential sites must have non-collinear centers. Each seed
-    uses three different candidate records. Pair distances may differ by at most
-    the sum of the corresponding site tolerances. Degenerate triplets are omitted.
+    uses three different candidate records. Pair-distance pruning uses the sum
+    of the corresponding site tolerances plus an outward-rounded candidate
+    allowance for final positive-site slack and the two computed norms. This
+    may retain candidates that final evaluation rejects; physical tolerances
+    and final matching are unchanged. Degenerate triplets are omitted.
     Site feature lists are alternatives, as in PoseEvaluator. Record uniqueness
     does not require disjoint atom membership across distinct chemical roles.
     This is a seed proposal method, not a complete continuous constraint solver.
@@ -129,11 +155,12 @@ def get_correspondences(
                 continue
             candidate = candidate_centers[list(columns)]
             if not _noncollinear(candidate) or any(
-                abs(
-                    np.linalg.norm(candidate[a] - candidate[b])
-                    - np.linalg.norm(reference[a] - reference[b])
+                _pair_distance_exceeds_tolerance(
+                    np.linalg.norm(candidate[a] - candidate[b]),
+                    np.linalg.norm(reference[a] - reference[b]),
+                    radii[a],
+                    radii[b],
                 )
-                > radii[a] + radii[b]
                 for a, b in ((0, 1), (0, 2), (1, 2))
             ):
                 n_pruned += 1

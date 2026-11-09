@@ -10,7 +10,19 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-The [Pharmer query/pruning review](pharmer_query_pruning_review.md) authenticates
+The [#160 candidate numerical correction](pair_distance_pruning.md) prevents
+the essential-triplet distance filter from discarding the original numerical
+boundary accepted by final matching. Physical radii and final evaluation remain
+unchanged. All116 selected source cases pass (17new/99existing, no skips/reported
+warnings); twelve ordinary outputs/counters remain exactly equal. The original
+public ion body fails with the saved old filter and passes with the correction.
+The [source receipt](evidence/pruning_slack_source_20261109.json) retains the
+AS512 mapping failures and explicit DATA512/AS1GiB local receiving amendment;
+observed own-group RSS stays below512MiB, without kernel MemoryMax/swap/task
+guarantees. This does not retry or qualify#148. Same-file owned installed
+receiving remains pending;#160 stays partial until that bridge passes.
+
+The preceding [Pharmer query/pruning review](pharmer_query_pruning_review.md) authenticates
 24selected official standalone files at SVN revision95 and proposes12unexecuted
 comparison cases. Its [receipt](evidence/pharmer_query_review_20261109.json)
 separates source interpretation, current PHMT contracts and three independent
@@ -45,9 +57,9 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** qualify#160's owned numerical candidate boundary and
-correct it with an independent regression guard, then receive the actual public/
-native source and installed route only in an admitted safe context. Preserve
+**Next concrete action:** freeze#160's corrected source, build one offline owned
+wheel and receive the same116 original test bodies with source fallback refused
+in the admitted local resource context. Preserve
 physical tolerances and finite-method meanings. Receive the provider disposition
 of the nine collection/update cases separately; the completed inspection recipe
 remains the current#108 entry point.

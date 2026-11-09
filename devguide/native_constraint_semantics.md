@@ -52,6 +52,11 @@ override angular constraints. The existing float64 cosine slack remains.
 compatibility and unique record indices. Triplet proposal additionally needs
 three non-collinear essential centers. Atom overlap does not waive these
 geometric conditions. MolSysMT owns every molecular fit and transformation.
+The [pair-distance candidate policy](pair_distance_pruning.md) now retains an
+outward-rounded numerical band consistent with final positive-site admission
+and computed-distance roundoff. Physical radii and the final matcher are
+unchanged: a retained candidate can still fail final evaluation. Raw product
+budgets and finite-family completeness retain their original meanings.
 The new real charge-triplet control exercises both signs and both feature-list
 orders; it does not constitute exhaustive equivalence of every search method.
 

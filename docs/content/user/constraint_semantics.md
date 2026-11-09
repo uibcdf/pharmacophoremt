@@ -24,6 +24,14 @@ the declared radius or Point tolerance. Exclusion boundaries remain strict.
 The [receptor sensitivity controls](../validation/receptor_sensitivity.md)
 illustrate these separate roles.
 
+Triplet proposal also keeps a conservative numerical band around its pair-distance
+filter, including positive-site slack and distance-rounding effects. A candidate
+near that boundary reaches final evaluation rather than being discarded early.
+Final evaluation still uses your original radii and matching rules, and can
+reject that candidate. Raw search budgets and incomplete-search reporting retain
+their meanings; this does not make the finite seed method a complete continuous
+pose solver.
+
 `fit_value` is the fraction of matched non-exclusion weight. Essential sites,
 exclusions and the chosen minimum coverage also determine `status`; high
 coverage alone does not imply an accepted pose. Results record

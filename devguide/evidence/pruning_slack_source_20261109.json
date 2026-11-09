@@ -1,0 +1,822 @@
+{
+  "schema": "pharmacophoremt.pruning-slack-source@1",
+  "issue": 160,
+  "parent_source": "39dbafd292a111abca3daba9e85c337fd5aa596e",
+  "source_commit": "Commit containing this receipt; subsequent owned installed receipt pins its exact ID.",
+  "core": {
+    "bytes": 6671,
+    "sha256": "a860c0876c1872e36c21007fd6772221fdec944684293c56f7bb9606b4ae49e9"
+  },
+  "final_evaluator_unchanged": {
+    "bytes": 18143,
+    "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b"
+  },
+  "new_guard": {
+    "selector": "tests/test_pair_distance_pruning.py::test_original_binary_boundary_retains_a_public_proposal",
+    "file": {
+      "bytes": 7301,
+      "sha256": "d6e202c9a8433fbeceefaefd3eec193d69d6c467a34c1839d17527358b9fd01d"
+    },
+    "case_count": 17
+  },
+  "selected_modules": [
+    "tests/test_pair_distance_pruning.py",
+    "tests/test_correspondence_geometry.py",
+    "tests/test_rigid_search.py",
+    "tests/test_seeded_scoring.py"
+  ],
+  "source_selected": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 116,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 116,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 116,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 32.624000995012466,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "8c4f939daa1e014b10a9b9763b638c8cc354e1fdd7f4889ea4cb07e67a13e4b8",
+      "records": 349
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "57abd4e81ce84db68660a8791ab2d0d9",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "original_red": {
+    "finish": {
+      "artifact_policy": {
+        "dropped_records": 0,
+        "max_bytes": 52428800,
+        "truncated": false
+      },
+      "complete": true,
+      "counts": {
+        "collected": 17,
+        "deselected": 0,
+        "errors": 0,
+        "executed": 17,
+        "failed": 14,
+        "not_executed": 0,
+        "passed": 3,
+        "reruns": 0,
+        "skipped": 0,
+        "subtests": {},
+        "warnings": 0,
+        "xfailed": 0,
+        "xpassed": 0
+      },
+      "duration": 2.283431057992857,
+      "exitstatus": 1,
+      "extensions": {
+        "dropped": 0,
+        "incomplete": false,
+        "recorded": 0
+      },
+      "integrity": {
+        "algorithm": "sha256",
+        "digest": "f64efcae610ff9763e706e1dea89c1500f0157791050eeb734446ba6b1868973",
+        "records": 58
+      },
+      "invalid_selections": [],
+      "note": "",
+      "outcome": "FAIL",
+      "root_causes": 6,
+      "run_id": "d3b1e903201b435ab0c87b95b39e794c",
+      "schema": "pytest-receptor.events@1",
+      "stop_reason": "",
+      "type": "session_finish"
+    },
+    "numerical_assertion_failures": 13,
+    "native_resource_mapping_failures": 1,
+    "claim": "Mixed original failure: native resource refusal is not a numerical regression proof."
+  },
+  "cached_after": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 16,
+      "deselected": 1,
+      "errors": 0,
+      "executed": 16,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 16,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 1.187413559993729,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "bade2a7c64091876a775e6f40746ff620c32f4f8ff07a01b53d18d2f05a86869",
+      "records": 49
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "2e99d34b8e9f4d7d8441121df4b804bb",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "native_original_and_fixed": {
+    "original": {
+      "phase": "resource-baseline",
+      "context": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "bytes": 101190496,
+        "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+        "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+      },
+      "without_pytest_main": true,
+      "entry_process_status": {
+        "VmSize": "29544 kB",
+        "VmRSS": "20788 kB"
+      },
+      "before_case_process_status": {
+        "VmSize": "408424 kB",
+        "VmRSS": "144000 kB"
+      },
+      "exact_original_body_AST_sha256": "e7b9bd1171393b9b58b2a3ad846cf1dd7f54d35994c00a751a388553691392e0",
+      "status": "failed",
+      "exit_code": 1,
+      "error_type": "AssertionError",
+      "error": "",
+      "traceback": "Traceback (most recent call last):\n  File \"/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/controls/native_case_admitted.py\", line 31, in <module>\n    namespace['test_public_ion_evaluation_and_seed_filter_share_the_original_boundary']()\n    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^\n  File \"/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/tests/test_pair_distance_pruning.py\", line 125, in test_public_ion_evaluation_and_seed_filter_share_the_original_boundary\n    assert [[0, 0], [1, 1], [2, 2]] in proposals[\"correspondences\"]\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
+      "context_after": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "bytes": 101190496,
+        "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+        "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+      },
+      "correspondence_origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/controls/original-correspondence.py",
+      "native_modules": {
+        "molsysmt._rust": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so"
+      },
+      "process_status": {
+        "VmPeak": "675952 kB",
+        "VmSize": "612412 kB",
+        "VmRSS": "252192 kB"
+      }
+    },
+    "fixed": {
+      "phase": "resource-current",
+      "context": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "bytes": 101190496,
+        "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+        "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+      },
+      "without_pytest_main": true,
+      "entry_process_status": {
+        "VmSize": "29544 kB",
+        "VmRSS": "20820 kB"
+      },
+      "before_case_process_status": {
+        "VmSize": "408424 kB",
+        "VmRSS": "144144 kB"
+      },
+      "exact_original_body_AST_sha256": "e7b9bd1171393b9b58b2a3ad846cf1dd7f54d35994c00a751a388553691392e0",
+      "status": "passed",
+      "exit_code": 0,
+      "context_after": {
+        "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+        "bytes": 101190496,
+        "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+        "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+      },
+      "correspondence_origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/correspondence.py",
+      "native_modules": {
+        "molsysmt._rust": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so"
+      },
+      "process_status": {
+        "VmPeak": "675976 kB",
+        "VmSize": "612444 kB",
+        "VmRSS": "252300 kB"
+      }
+    },
+    "same_original_body_AST": true,
+    "original_failure_stage": "After successful real public recognition and PoseEvaluator.evaluate, original pair filter drops identity seed.",
+    "provider_update_or_build": false
+  },
+  "ordinary_public_outputs": {
+    "count": 12,
+    "before": {
+      "bytes": 3553,
+      "sha256": "b84f38926f4ad06cf0f3ba6138a41be3ea1e12bcc26301b65ef81eee4e2a9664"
+    },
+    "after": {
+      "bytes": 3553,
+      "sha256": "b84f38926f4ad06cf0f3ba6138a41be3ea1e12bcc26301b65ef81eee4e2a9664"
+    },
+    "exact_equal": true
+  },
+  "admitted_resource_profile": {
+    "schema": "pharmacophoremt.pruning-slack-native-admission@4",
+    "declared_at_utc": "2026-11-09T01:35:00.025577+00:00",
+    "issue": 160,
+    "provider": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+      "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+    },
+    "review": "Current MolSysMT checkout is clean and exact fab8cbccf570a60205a3863aad19dd4b7cfb8d3a is independently read from GitHub. Latest owner checkpoint records clustering unit-policy closeout; the actual native file has changed from the old held context. No source/binary is pulled, rebuilt, restored or modified.",
+    "qualification": "Operational receiving of these observed source/binary bytes only; not reuse of the old9e1/2a79context, public provider delivery or authenticated source-to-binary build provenance. Current metadata/runtime versions remain separately observed.",
+    "previous_receiving": "17pytest bodies:13numerical failures/3passes plus1native body blocked at extension mapping; import-only pilot succeeds. Preserve all original logs.",
+    "new_route": "Compile the original case helper and exact unmodified native test function from its AST with only their required actual imports. Omit pytest and unrelated Fraction/math witness imports; no method replacement, source patch, input change, removed assertion or increased budget. Measure VmSize immediately before the function. This is a deliberate import-footprint reduction; if the route is still unavailable, stop native attempts and preserve pending qualification.",
+    "provider_fence": "Hash exact native file and sourceHEAD before/after; no result is qualified if either changes.",
+    "original_scope_intact": true,
+    "observed_previous_route": "Unchanged whole regression-module import without pytest.main still imports pytest itself. Before Rust mapping, measured VmSize502700KiB; library LOAD range is about26MiB, exceeding remaining~21MiB address space. No Rust or molecular operation completes.",
+    "scope": "Bounded local microcase only; no#148bootstrap/native87case retry or qualification. Original AS512attempts remain failed.",
+    "resource_review": {
+      "evidence": "AS512import-only147MiBRSS succeeds; whole17test scope has1native mapping refusal while the16cached controls reproduce13numerical failures/3passes. Removing unused pytest imports allows Rust to map, then fills virtual space loading the declared form adapter. Slurm nodes are inval or unknown/nonresponding; no allocation/job requested.",
+      "local_limits": {
+        "DATA_per_process_bytes": 536870912,
+        "AS_per_process_bytes": 1073741824,
+        "observed_own_group_RSS_stop_bytes": 536870912,
+        "own_supervisor_child_safety_envelope_bytes": 1610612736,
+        "physical_reserve_fraction": 0.2,
+        "cpu": 1,
+        "backend_threads": 1,
+        "low_priorities": true,
+        "wall_seconds": 180,
+        "CPU_seconds": 120,
+        "sampling_seconds": 0.1
+      },
+      "enforcement": "DATA and AS are actual process hard limits. RSS cutoff is supervisor observation/own-group termination, not a kernel MemoryMax/zero-swap/pids/quota guarantee; do not claim that formal gate. The unchanged1.5GiB safety envelope bounds the hard virtual ceiling plus supervisor; preserve20percent host memory and stop under pressure.",
+      "change": "Virtual address ceiling changes from512MiB to1GiB, explicitly distinguishing mapping space from physical/data RAM. DATA512 and512MiB observed group-RSS target remain; no global or provider setting, environment solve or native build changes. This is a reviewed lower-level resource strategy, not an increase to#148budgets.",
+      "estimate": "Measured early RSS~240MiB and mapped Rust LOAD range~26MiB for only3analytic ions; allow<=512MiB observed own group. Admit this microcase before any broader test scope; if threshold/pressure or final measured peak fails, stop rather than increasing again."
+    },
+    "baseline_route": "Before accepting the fix, a fresh child loads the original byte-identical saved correspondence module under its canonical public module name, with all other runtime files unchanged, and executes the exact ion test body. A separate child uses current code. This changes no checkout/provider and is not installed-wheel evidence."
+  },
+  "source_execution": {
+    "name": "source-selected",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/source-selected.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--receptor-events=build/phmt-pruning-slack-20261109-iu5a9mqb/logs/source-selected.events.jsonl",
+      "--junitxml=build/phmt-pruning-slack-20261109-iu5a9mqb/logs/source-selected.xml",
+      "--maxfail=1",
+      "tests/test_pair_distance_pruning.py",
+      "tests/test_correspondence_geometry.py",
+      "tests/test_rigid_search.py",
+      "tests/test_seeded_scoring.py"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57466486784
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=732813\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=710772\n",
+      "swap": {
+        "pswpin": 66872,
+        "pswpout": 272071
+      },
+      "time": 126479.033145282
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 34.18256066199683,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57291788288
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+      "swap": {
+        "pswpin": 66933,
+        "pswpout": 272073
+      },
+      "time": 126513.216311379
+    },
+    "sample_count": 337,
+    "peak_observed_own_group_RSS_bytes": 387481600
+  },
+  "native_baseline_execution": {
+    "name": "native-resource-baseline",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/native-resource-baseline.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "build/phmt-pruning-slack-20261109-iu5a9mqb/controls/native_case_admitted.py",
+      "resource-baseline"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58861871104
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=728300\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=706274\n",
+      "swap": {
+        "pswpin": 66851,
+        "pswpout": 271264
+      },
+      "time": 126349.715586205
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 1,
+    "interruption": null,
+    "seconds": 3.644331408999278,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58400485376
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=728300\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=706274\n",
+      "swap": {
+        "pswpin": 66853,
+        "pswpout": 271264
+      },
+      "time": 126353.360575139
+    },
+    "sample_count": 36,
+    "peak_observed_own_group_RSS_bytes": 274776064
+  },
+  "native_current_execution": {
+    "name": "native-resource-current",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/native-resource-current.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "build/phmt-pruning-slack-20261109-iu5a9mqb/controls/native_case_admitted.py",
+      "resource-current"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57945616384
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=730784\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=708748\n",
+      "swap": {
+        "pswpin": 66859,
+        "pswpout": 271744
+      },
+      "time": 126386.948764591
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 3.5413407390005887,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57854693376
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=732148\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=710112\n",
+      "swap": {
+        "pswpin": 66859,
+        "pswpout": 271753
+      },
+      "time": 126390.490711417
+    },
+    "sample_count": 35,
+    "peak_observed_own_group_RSS_bytes": 274825216
+  },
+  "original_resource_failures_retained": [
+    "before",
+    "native-before",
+    "native-minimal-before"
+  ],
+  "slurm": "No usable nodes (inval/unknown nonresponding); no allocation/job. Raw sinfo log retained.",
+  "provider": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+  },
+  "provider_observation": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+    "old_held_qualified_sha256": "2a79b9a83b0fe0b00a54c9b80f04bf6c9ace2b3473c53269edbfe29904f8930b",
+    "disposition": "A prior-context equality assertion fails before a lower-overhead native launch. Record current provider separately; do not relabel previous native source evidence or change/rebuild/restore provider files."
+  },
+  "provider_checkout_clean_after_source": true,
+  "docs": {
+    "recorded_at_utc": "2026-11-09T01:42:54.919883+00:00",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=90",
+      "--fsize=67108864",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/docs-resources.txt",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-j",
+      "1",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "-q",
+      "-D",
+      "nb_execution_mode=off",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/html"
+    ],
+    "memory_entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60229677056,
+        "SwapTotal": 8589930496,
+        "SwapFree": 7665205248
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+      "load": [
+        2.51123046875,
+        3.64208984375,
+        3.64990234375
+      ],
+      "swap_pages": {
+        "pswpin": 67236,
+        "pswpout": 272073
+      },
+      "monotonic": 126824.537989059
+    },
+    "resource_budget_bytes": 1073741824,
+    "reserve_bytes": 12995688039,
+    "backend_threads": 1,
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "rlimit_data_bytes": 536870912,
+    "rlimit_as": "unlimited inherited",
+    "aggregate_cgroup_enforcement": false,
+    "nb_execution": "off",
+    "scheduler": "Slurm binaries present; no active allocation. Small direct serial docs render only, established DATA512MiB route; no scheduler request.",
+    "resource_estimate": "Previous same-context strict full docs command:10.99s/280900KiB lifetime RSS; allow1GiB supervisor/own group envelope. Free memory is not reserved.",
+    "samples": [
+      {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60229677056,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7665205248
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+        "load": [
+          2.51123046875,
+          3.64208984375,
+          3.64990234375
+        ],
+        "swap_pages": {
+          "pswpin": 67236,
+          "pswpout": 272073
+        },
+        "monotonic": 126824.543491037,
+        "own_group_rss_bytes": 6201344,
+        "supervisor_rss_bytes": 14606336,
+        "own_pids": [
+          5,
+          6
+        ]
+      },
+      {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59984375808,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7665217536
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+        "load": [
+          2.47021484375,
+          3.61474609375,
+          3.640625
+        ],
+        "swap_pages": {
+          "pswpin": 67262,
+          "pswpout": 272073
+        },
+        "monotonic": 126826.545468361,
+        "own_group_rss_bytes": 206020608,
+        "supervisor_rss_bytes": 14675968,
+        "own_pids": [
+          5,
+          6
+        ]
+      },
+      {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59672199168,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7665229824
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+        "load": [
+          2.47021484375,
+          3.61474609375,
+          3.640625
+        ],
+        "swap_pages": {
+          "pswpin": 67262,
+          "pswpout": 272073
+        },
+        "monotonic": 126828.546526833,
+        "own_group_rss_bytes": 260427776,
+        "supervisor_rss_bytes": 14675968,
+        "own_pids": [
+          5,
+          6
+        ]
+      },
+      {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59500998656,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7665229824
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+        "load": [
+          2.47021484375,
+          3.61474609375,
+          3.640625
+        ],
+        "swap_pages": {
+          "pswpin": 67262,
+          "pswpout": 272073
+        },
+        "monotonic": 126830.547646075,
+        "own_group_rss_bytes": 287535104,
+        "supervisor_rss_bytes": 14680064,
+        "own_pids": [
+          5,
+          6
+        ]
+      },
+      {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59361304576,
+          "SwapTotal": 8589930496,
+          "SwapFree": 7665246208
+        },
+        "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+        "load": [
+          2.9931640625,
+          3.70458984375,
+          3.66943359375
+        ],
+        "swap_pages": {
+          "pswpin": 67262,
+          "pswpout": 272073
+        },
+        "monotonic": 126832.549414785,
+        "own_group_rss_bytes": 289947648,
+        "supervisor_rss_bytes": 14684160,
+        "own_pids": [
+          5,
+          6
+        ]
+      }
+    ],
+    "status": "completed",
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 10.011960345000261,
+    "memory_after": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 59371601920,
+        "SwapTotal": 8589930496,
+        "SwapFree": 7665291264
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=735196\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=713154\n",
+      "load": [
+        2.9931640625,
+        3.70458984375,
+        3.66943359375
+      ],
+      "swap_pages": {
+        "pswpin": 67262,
+        "pswpout": 272073
+      },
+      "monotonic": 126834.550740776
+    }
+  },
+  "checks": [
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n",
+      "sha256": "82b3e6a6c090a57601d22943bd23fca9218d1031dbe5a7b754092f9a156b4f18"
+    },
+    {
+      "name": "format-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "435 files already formatted\n",
+      "sha256": "a967b7f0ccc66e63a19c51fda0121adb8268daa4f62440cbf8e7873e86cee448"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "output": "wrote devguide/pending_bugs/README.md\n",
+      "sha256": "7b04bb9a148a89b6846ac86b639781f9b1610e799ba17c3c004279e3f4534f58"
+    },
+    {
+      "name": "index-check",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n",
+      "sha256": "3a525cb88e38e62b2cd78f962eec311aeb1797c9a439b3c7d832b95b00a8d5b5"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.134s\n\nOK\n",
+      "sha256": "e309f7599e7970c9e750545eeb6fe871d139f2be00b06001f413fc8f3c69e837"
+    },
+    {
+      "name": "diff-check",
+      "arguments": [
+        "git",
+        "-c",
+        "gc.auto=0",
+        "-c",
+        "maintenance.auto=false",
+        "-c",
+        "pack.threads=1",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "full_record": {
+    "path": "devguide/evidence/pruning_slack_source_20261109_full.json.gz",
+    "bytes": 67703,
+    "sha256": "bc87a68a13877793b5e0db5aa9ff161838be09e45d3301583a18ad51b43cf8dc",
+    "retained_files": 86
+  },
+  "installed_receiving": "Pending in this original source receipt; receive separately from the exact committed wheel.",
+  "limits": "One bounded local Linux/Python3.14/source-provider route. DATA512MiB/AS1GiB per process, observed group RSS cutoff512MiB; no kernel MemoryMax/zero-swap/pids/quota guarantee. Original AS512 failures are retained. No#148retry, full source/platform/public solve, comparator execution, biology, throughput or release claim.",
+  "retention": {
+    "capsule": "build/phmt-pruning-slack-20261109-iu5a9mqb",
+    "review": "2026-11-23",
+    "tracked_compressed_record": true
+  }
+}

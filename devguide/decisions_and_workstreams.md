@@ -23,6 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-09: [#160 numerical candidate admission](pair_distance_pruning.md)
+corrects PHMT's pair filter conservatively without changing final matching or
+physical radii. All116 selected source cases pass,12ordinary outputs/counters
+remain identical, and the original public ion body fails with the old module
+and passes with the corrected one. Source evidence preserves the explicit
+DATA512/AS1GiB/observed-group-RSS512 local profile and prior mapping failures;
+this does not qualify#148. Same-file owned installed receiving remains pending.
+
 2026-11-09: [Pharmer query/pruning review](pharmer_query_pruning_review.md)
 authenticates24official standalone r95files and retains12unexecuted comparator
 cases. Query meaning, candidate filtering, final acceptance, scoring, numerical

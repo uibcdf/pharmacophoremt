@@ -1,0 +1,60 @@
+{
+  "schema": "pharmacophoremt.pruning-slack-fix-plan@1",
+  "issue": 160,
+  "declared_at_utc": "2026-11-09T01:12:55.814790+00:00",
+  "parent_source": "39dbafd292a111abca3daba9e85c337fd5aa596e",
+  "baseline_files": {
+    "pharmacophoremt/screening/correspondence.py": {
+      "bytes": 5426,
+      "sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24"
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "bytes": 18143,
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b"
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "bytes": 10334,
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746"
+    },
+    "tests/test_correspondence_geometry.py": {
+      "bytes": 3923,
+      "sha256": "9075598b20812709d7a3233793009c3d8825796eb389ca1af5614ef792363eaf"
+    },
+    "tests/test_rigid_search.py": {
+      "bytes": 12042,
+      "sha256": "a5dc16d1c6254f8b155b2be06b603b1eb894588ebea9bffcb12db5d782289603"
+    },
+    "tests/test_constraint_semantics.py": {
+      "bytes": 11586,
+      "sha256": "dbeaaae1c8c81d689a4cfa997148f6a595e001325ad63708400fd9957953ac88"
+    }
+  },
+  "original_counterexample": "Preserve r=1/8nm, delta=2^-52nm; q0=(0,0,0),q1=(1,0,0),q2=(0,1,0), c0=(-r-delta,0,0),c1=(1+r+delta,0,0),c2=q2. Original arithmetic receipt remains immutable.",
+  "scope": "Correct PHMT-owned essential-triplet pair filter conservatively relative to unchanged final evaluator. Share original8epsilon numerical constant, retain original branch for distances within physical radius sum; account for accepted per-site slack plus floating distance rounding. No physical radius/score/unit/shape/trial/completeness/provider changes or continuous-search claim.",
+  "acceptance": "Public get_correspondences near-boundary guard against original source before mutation; actual PoseEvaluator with a tiny analytic prepared ion fixture if safely admissible. Exact original witness plus nominal/interior/beyond-final-slack/far mismatch, binary rescaling, distinct/repeated feature identities, zero-weight essential, Point/Sphere/explicit-unit contexts and existing meaningful search/constraint controls. Conservative false positives must remain rejected by unchanged evaluator. Preserve source/provider inputs and normal answers/counters outside the numerical band.",
+  "stages": [
+    "Read-only provider metadata and import-only512MiB pilot; if unavailable, preserve failure and continue only independently admissible source/pure controls without escalating science budgets.",
+    "Declare/execute red public operation guards.",
+    "Implement one owned numerical policy and extend get_correspondences; independent guards, selected existing regressions and docs/governance.",
+    "Freeze source, build one offline owned wheel, receive same selected bodies/public/native operations if safely admissible; no full dependency solve/public/platform claim.",
+    "Update/keep partial report if required native or installed evidence unavailable; only close160with actual completion. Batch authorized[skip ci]delivery, retain exact-head debt9."
+  ],
+  "resource_limits": {
+    "affinity": [
+      19
+    ],
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "AS_DATA_per_process_bytes": 536870912,
+    "CPU_seconds": 120,
+    "wall_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": false,
+    "reserve_fraction": 0.2,
+    "own_envelope_bytes": 1610612736,
+    "capacity_not_reserved": true
+  },
+  "no_acquisition": "No environment-manager transaction, provider/native rebuild/update, altered bootstrap budget, original benchmark transfer or87case#148retry.",
+  "raw_evidence": "build/phmt-pruning-slack-20261109-iu5a9mqb",
+  "retention_review": "2026-11-23"
+}

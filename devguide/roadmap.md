@@ -116,13 +116,24 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#160 numerical candidate admission](pair_distance_pruning.md) advances
+milestone1. All116 selected source cases pass, including17new independent
+boundary controls and99existing cases. Twelve ordinary outputs/counters retain
+their pre-change values; real public molecular recognition/final evaluation
+demonstrates the old discard and corrected admission. Final matching and physical
+radii are unchanged. The [source receipt](evidence/pruning_slack_source_20261109.json)
+preserves the explicitly revised local mapping/RSS profile and earlier failures.
+Same-file owned installed receiving remains pending; no#148/public/platform/
+biological or performance qualification follows.
+
 The [Pharmer query/pruning review](pharmer_query_pruning_review.md) receives24
 official r95source files and declares12unexecuted comparison cases for
 milestones1/5/6. Its [receipt](evidence/pharmer_query_review_20261109.json)
 separates source observations from three independent PHMT arithmetic controls.
 Those controls confirm a literal numerical-predicate mismatch, now owned by
 [#160](pending_bugs/pair_distance_pruning_slack.md). Public/native reproduction,
-implementation and same-file installed receiving remain pending. No competitor
+implementation were pending at that study; the subsequent correction above
+retains separate evidence and still-pending installed receiving. No competitor
 execution, index/adapter, scale measurement or new dependency is delivered.
 
 [#159 complete inspection recipe](archive/document_saved_inspection_journey.md)

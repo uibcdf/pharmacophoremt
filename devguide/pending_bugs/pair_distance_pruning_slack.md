@@ -1,14 +1,14 @@
 ---
 summary: Qualify triplet pair-distance pruning against accepted positional roundoff slack.
 issue: uibcdf/pharmacophoremt#160
-status: active
+status: partial
 opened: 2026-11-09
 closed:
 severity: medium
 verification: measured
 area: [science, screening, numerics]
-guard:
-normative: devguide/native_constraint_semantics.md
+guard: tests/test_pair_distance_pruning.py::test_original_binary_boundary_retains_a_public_proposal
+normative: devguide/pair_distance_pruning.md
 blocked_by: []
 supersedes: []
 ---
@@ -54,3 +54,16 @@ This measures the literal predicate discrepancy only. Actual public/native
 method reproduction, an implemented correction, a regression guard and same-file
 installed receiving remain pending. Keep this issue open; the separate
 [Pharmer study](../pharmer_query_pruning_review.md) is source-only evidence.
+
+## Source correction receiving — 2026-11-09
+
+The [owning numerical contract](../pair_distance_pruning.md) and
+[source receipt](../evidence/pruning_slack_source_20261109.json) record the
+conservative candidate band, independent public guard,116passing selected cases
+and twelve unchanged ordinary outputs. The exact public ion body reaches final
+acceptance with the original module and then fails candidate admission; the same
+body passes with the correction. Final evaluation and physical tolerances remain
+unchanged. Earlier AS512 mapping failures and the explicit local DATA512/AS1GiB/
+observed-group-RSS512 amendment retain separate identities. This is not a kernel
+MemoryMax qualification or#148retry. Same-file owned installed receiving remains
+pending, so the issue is partial and open.

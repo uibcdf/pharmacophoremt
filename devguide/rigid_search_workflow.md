@@ -25,8 +25,10 @@ requirements instead of imposing them on every future pharmacophoric method.
 
 `rigid_triplet_fit@1` requires three or more essential sites with non-collinear
 centers. Triplets use distinct candidate records compatible with the query
-feature vocabulary. Pair-distance differences must not exceed the sum of the
-site matching tolerances. Point sites use `point_tolerance`. Zero-weight essential
+feature vocabulary. Pair-distance pruning uses the sum of the site matching
+tolerances plus the [candidate roundoff band](pair_distance_pruning.md) for final
+positive-site slack and both computed norms. This can retain candidates that
+the unchanged final evaluator rejects. Point sites use `point_tolerance`. Zero-weight essential
 sites still participate. Collinear center triplets are omitted. A different
 method is needed for one/two-center queries or orientation-defined anchors;
 those queries remain usable with the placed-pose evaluator.
