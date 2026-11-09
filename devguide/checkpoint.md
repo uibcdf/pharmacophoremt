@@ -9,6 +9,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#171 complete source discovery and inspection](../docs/content/cookbook/saved_work_inspection.md#discover-a-source-and-inspect-its-work-in-one-snapshot)
+composes original-source discovery, source/status counts and bounded detail display
+in one public snapshot. All216declared parameter cases pass from source and the
+unchanged owned208reader, with42full original details checked per context.
+The [executed receipt](evidence/source_discovery_journey_20261109.json) receives
+432recipe executions, all159runtime/214payload identities, six unchanged received
+stores, original code/command blocks and strict docs/rendered navigation. Empty
+and missing-source positions are explicit. The composition resolves; no runtime
+or provider change/new unit tests/human-usability qualification follows.
+
 [#170 original-source inventory](saved_source_inventory.md) adds the public
 `ScreeningRunView.source_items()` iterator and CLI `--sources`. All134 selected
 source cases pass (14new/120existing); thirteen original command outputs retain
@@ -18,7 +28,7 @@ molecular equivalence. The [installed receipt](evidence/source_inventory_install
 receives the same134bodies from adbecee / owned208,157guarded children,24documented
 commands on four unchanged historical stores and thirteen ordinary exact-source
 outputs. All214wheel payloads/159runtime identities verify. The bounded#170bridge
-resolves; complete discover/select/detail composition follows separately as#171.
+resolves; complete discover/select/detail composition is received above as#171.
 
 The [corrected accumulated checkpoint](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
 is af408e7 / source42656135375. Attempt1 terminates failure: seven scientific
@@ -26,7 +36,7 @@ cells pass2693cases/46warnings each; macOS15/Python3.11 is cancelled before any
 runner or step starts. Native annotations report runner acquisition/capacity
 problems; Receptor retains cause=unknown. A separately declared single-job
 recovery under#9 reuses that exact SHA/ref; attempt2 has acquired a runner and
-is installing dependencies. Seven earlier executions are reused, not repeated.
+is executing the full tests after successful dependency/import/architecture steps. Seven earlier executions are reused, not repeated.
 No full source gate is accepted until the remaining command and coverage are
 received. Frozen policy42656145447 and no-build publication42656155848 pass.
 Original1f6dfb0/reporting failure, force-cancellation, #168/#169 corrections and
@@ -126,12 +136,13 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** execute#171complete discover-source/select-status/detail
-recipe from source and the unchanged owned208artifact. Inspect only the declared macOS3.11 recovery on source42656135375;
-never repeat the seven completed executions. Receive native terminal identities,
-actual commands/counts and108qualified coverage paths before accepting af408e7.
-If capacity fails again, preserve/defer without an automatic retry. Later-head
-full source and supported installed/public/platform gates remain separate.
+**Next concrete action:** receive the one declared macOS3.11 recovery on
+source42656135375, keeping the original seven executions and all108qualified
+coverage paths distinct from later-head#170/#171receiving. No automatic repeat
+on capacity failure. Prepare a bounded guided/expert usability exercise under#108
+for the now-complete saved-inspection task, with explicit success/error-recovery
+criteria and actual human receiving still pending. Full supported
+installed/public/platform gates remain separate.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and

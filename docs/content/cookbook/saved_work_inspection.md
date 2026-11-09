@@ -43,6 +43,89 @@ explicit admission. Each page still verifies the complete file and counts all
 sources; a display limit bounds returned records, not all processing or storage.
 Handled read/count/close errors produce no success JSON.
 
+## Discover a source and inspect its work in one snapshot
+
+Use this complete example when you want to discover an original source and
+review its work without copying a key between separate snapshots. Set the five
+inputs. `source_index = 0` chooses the first source in manifest encounter order:
+
+```python
+from contextlib import closing
+
+from pharmacophoremt_results import ScreeningRunView
+
+run_path = "RUN.sqlite3"
+source_index = 0
+status = "failed"
+limit = 10
+allow_legacy = False
+
+with ScreeningRunView.open(run_path, allow_legacy=allow_legacy) as view:
+    configuration = view.configuration
+    declared_sources = 0
+    selected_source = None
+    with closing(view.source_items()) as sources:
+        for index, source in enumerate(sources):
+            declared_sources += 1
+            if index == source_index:
+                selected_source = source
+    print("Run:", configuration["run_id"])
+    print("Declared work:", configuration["work_count"])
+    print("Declared sources:", declared_sources)
+    if selected_source is None:
+        print("Source index not found:", source_index)
+    else:
+        source_key = selected_source["source_key"]
+        selected_work = 0
+        selected_prefix = []
+        with closing(view.work_items(source_key=source_key, status=status)) as work:
+            for mapping in work:
+                selected_work += 1
+                if len(selected_prefix) < limit:
+                    selected_prefix.append(mapping)
+        print("Source:", repr(source_key))
+        print("Source declared work:", selected_source["declared_work"])
+        print("Status:", status)
+        print("Selected work:", selected_work)
+        for mapping in selected_prefix:
+            detail = view.work_item(mapping["work_key"])
+            print(
+                mapping["manifest_ordinal"],
+                repr(mapping["work_key"]),
+                detail["status"],
+                detail["attempts"],
+            )
+```
+
+Choose a nonnegative source index, one of `failed`, `pending`, `matched` or
+`not_matched`, and a positive detail limit. The source index is a zero-based
+position in the **source** stream; it is different from a work item's global
+manifest ordinal. It follows the same source order as `--sources` pages above.
+An empty inventory or an index beyond its end prints the run counts and an
+explicit missing-index message. A present source with no work in the selected
+status prints `Selected work: 0` and no details.
+
+`Declared sources` counts all literal source labels. `Source declared work`
+counts every original occurrence for the chosen label. `Selected work` counts
+the complete source/status intersection; the detail loop displays only its
+first `limit` entries. Repeated source/occurrence labels preserve their separate
+work keys and original global ordinals. No trimming, alias or compound grouping
+is applied. `repr()` keeps spaces and opaque key characters visible.
+
+One caller-owned view binds discovery, selection and details to the same saved
+snapshot. Both iterator contexts close on early exit or failure, and the outer
+context closes the view. A displayed `detail` remains detached after closure
+and retains its complete original confirmed `outcome`, or `None` while pending.
+The display prints scalar status/attempt information only. Unpublished drafts
+remain pending; reading does not retry work or prove a worker is running.
+
+Set `allow_legacy = True` only for a deliberately admitted legacy reference file.
+After publishing more work, reopen a view and select again: status membership
+can change although the original source manifest stays immutable. The example
+retains one selected source and at most `limit` work mappings, but still verifies
+the complete file, counts both full streams and may decode a large original
+detail. This is no indexed or large-library performance guarantee.
+
 ## Inspect a selected prefix in one Python snapshot
 
 Use the public view when the counts, selected entries and details must describe

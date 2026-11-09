@@ -134,7 +134,8 @@ The [prospective #9 declaration](https://github.com/uibcdf/pharmacophoremt/issue
 authorizes one job-specific recovery of the unstarted cell, using GitHub's job
 rerun operation at its original SHA/ref. No duplicate workflow dispatch or
 rerun-all is requested. Native attempt2 creates macOS3.11 job129370517203; it has
-acquired a runner and is installing dependencies. The other seven successful
+acquired a runner and is executing the full tests after successful installation,
+imports and interpreter/architecture steps. The other seven successful
 records retain execution timestamps before this recovery, although their latest
 job IDs change. Preserve the original seven executions and recovered cell as
 distinct evidence; never call them eight fresh attempt2 executions.
@@ -145,3 +146,11 @@ retry. Frozen policy42656145447/publication42656155848 remain successful at the
 same source. The already accepted full-source gate remains27c1178 until receiving
 is complete. Later#170implementation, public/installed/platform/scientific/scale
 and release gates are separate. #148/#165 profiles remain stopped.
+
+The observed compact-report discoverability gap is handed to
+[GH Run Receptor#82](https://github.com/uibcdf/gh-run-receptor/issues/82), with only
+reviewed scalar facts and public source pointers. Its proposal preserves native
+failure/cancellation, causal `unknown` and annotation completeness; it requests
+no producer instrumentation or new workflow. The central label tool verifies
+`component:pharmacophoremt` without changes. This feedback does not block source
+receiving or imply a provider/tool upgrade.

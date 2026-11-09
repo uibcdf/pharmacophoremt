@@ -36,7 +36,10 @@ with discoverable literal sources before selecting work. All134 selected source
 cases and thirteen exact ordinary command-byte controls pass; strict docs pass.
 The same134bodies pass in owned208with157guarded children,24historical documented
 commands and all214payload/159runtime identities verified. The bounded bridge
-resolves; complete discovery-to-detail composition is separately tracked by#171. No source connector, collection/index,
+resolves; [#171complete discovery-to-detail composition](archive/document_source_discovery_journey.md)
+passes216parameter cases per source/unchanged-owned208context,42full details per
+context and strict docs; original recipe/runtime/provider bytes stay intact.
+Representative human-usability and broader public workflow gates stay open. No source connector, collection/index,
 scale or human-usability qualification is implied.
 
 The af408e7 accumulated source run42656135375 terminates attempt1 with seven

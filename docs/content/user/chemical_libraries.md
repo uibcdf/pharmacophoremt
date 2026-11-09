@@ -45,6 +45,7 @@ For source-specific decisions and revisit conditions, consult the
 | Save confirmations, stop and continue with the same inputs/settings | [Recoverable screening](../cookbook/recoverable_prepared_screening.md): `build_prepared_run_plan`, `PreparedScreeningRun` |
 | Inspect or export an existing run without repeating screening | [Saved-view inspection and export](../cookbook/recoverable_prepared_screening.md#inspect-and-export-the-saved-view): `ScreeningRunView` and its command |
 | Compose the lifecycle in your own application | [Public API](../../api/users/api_users.rst): `PreparedRunPlan`, `ScreeningRunStore`, `resume_prepared_run`, `ScreeningRunView` |
+| Discover a source and review its work in one saved snapshot | [Complete discovery and inspection](../cookbook/saved_work_inspection.md#discover-a-source-and-inspect-its-work-in-one-snapshot): public source inventory, source/status count and original details |
 | Evaluate labelled results or compare two runs | [Single-run cohort analysis](../cookbook/saved_run_analysis.md) and [paired-run comparison](../cookbook/saved_run_comparison.md) |
 
 For globally ranked facade hits and caller-supplied conformer frames, see

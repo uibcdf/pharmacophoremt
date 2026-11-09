@@ -43,7 +43,7 @@ receives the same134bodies from adbecee / owned208,157guarded children,24documen
 commands on four unchanged historical stores and thirteen ordinary exact-source
 outputs. All214wheel payloads/159runtime identities and seven loaded reader
 origins verify. The [archived report](archive/browse_saved_sources.md) resolves
-this bounded bridge. Complete discovery-to-detail composition is separate#171. Public guidance is
+this bounded bridge. Complete discovery-to-detail composition is received separately below. Public guidance is
 in the [saved-work cookbook](../docs/content/cookbook/saved_work_inspection.md#browse-the-original-sources).
 
 No persistent schema/index, molecular collection/parser, source connector, provider
@@ -51,3 +51,20 @@ floor or attribution/scientific operation is added. The original af408e7 source
 checkpoint and its single-cell recovery cannot qualify these later bytes.
 Full source/public/platform/installed, human-usability, biological, performance
 and release gates retain independent acceptance; #148/#165 remain stopped.
+
+## Complete discovery-to-detail composition — #171
+
+The [complete public recipe](../docs/content/cookbook/saved_work_inspection.md#discover-a-source-and-inspect-its-work-in-one-snapshot)
+chooses a zero-based source position from the full original source stream, counts
+the exact source/status intersection, retains a bounded mapping prefix and reads
+original details through the same view. Empty/outside source positions and empty
+status selections remain explicit and distinct. The source position is not a
+global work ordinal or compound identity. Five input assignments are explicit;
+iterator/view ownership and full admission/count/payload costs remain visible.
+
+The [executed receipt](evidence/source_discovery_journey_20261109.json) receives
+216declared parameter cases in each source/unchanged-owned208context,42full
+original details per context, original code/command/runtime/provider/data bytes,
+strict docs and local checks. This is432recipe executions, not432newtests or a
+representative human-usability study. The [report](archive/document_source_discovery_journey.md)
+resolves the bounded composition only; all broader gates above stay separate.

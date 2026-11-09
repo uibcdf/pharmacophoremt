@@ -340,5 +340,8 @@ validation, performance qualification or completion of milestone2/#108.
 discovery in the saved-reader API/CLI,134same source/owned208bodies,24documented
 historical commands and thirteen original output-byte controls. It advances
 inspection discoverability only; full source operations, collections, connectors,
-human usability and supported delivery remain separately open. #171 composes
-discovery, source/status selection and details in one snapshot next.
+human usability and supported delivery remain separately open. #171 now composes
+discovery, source/status selection and details in one snapshot:216declared recipe
+parameter cases pass per source/unchanged-owned208context with42complete original
+details checked in each. The [executed receipt](../evidence/source_discovery_journey_20261109.json)
+resolves this bounded task, retaining broader source/usability/provider gates.

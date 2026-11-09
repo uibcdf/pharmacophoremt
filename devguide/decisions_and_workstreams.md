@@ -107,13 +107,24 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-09: [#171complete discovery and inspection](archive/document_source_discovery_journey.md)
+composes public source inventory, source/status count and original detail in one
+snapshot. All216declared recipe parameter cases pass per source/unchanged-owned208
+context, with42full original details per context. The
+[receipt](evidence/source_discovery_journey_20261109.json) receives432executions,
+all159runtime/214payload identities, original blocks, strict docs and local
+reporting/archive checks. Empty/missing sources and repeated/pending/zero states
+retain their original distinctions. No new runtime/API/wheel or human-usability
+qualification follows. Nonblocking compact runner-acquisition hint feedback is
+owned by [GH Run Receptor#82](https://github.com/uibcdf/gh-run-receptor/issues/82).
+
 2026-11-09: [#170 source inventory](saved_source_inventory.md) exposes exact
 original source labels/first ordinals/all-declared-work counts in public API and
 CLI. The source134cases (14new/120existing), thirteen ordinary byte controls and
 strict docs pass. The same134bodies pass from adbecee / owned208with157guarded
 children,24historical documented commands and214payload/159runtime identities
 verified. The [installed receipt](evidence/source_inventory_installed_20261109.json)
-resolves this bounded bridge;#171composes discovery-to-detail separately. Full-file
+resolves this bounded bridge;#171composition is received above. Full-file
 admission and SQLite grouping costs remain explicit; no chemical equivalence,
 source connector, index, performance or scientific claim follows.
 
