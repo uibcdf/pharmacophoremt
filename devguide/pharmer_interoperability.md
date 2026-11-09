@@ -36,6 +36,9 @@ No requirement, weight, numerical matching, score, shape or external search poli
 is inferred from this gate. Other scientific constraint fields and harmless
 session/display fields need the separate admission review under#163. Existing
 Pharmer export behavior is unchanged and no general lossless round trip is claimed.
+Already saved native models/results retain their original stored sites and
+producer context. Applying the correction requires reimporting the original
+Pharmer input; historical evidence is not silently normalized or relabelled.
 
 ## Independent receiving
 
@@ -77,7 +80,15 @@ driver, whose nine attribution items / 22 uses remain intact. Strict full docs,
 Ruff / 439 formatted files, index / three reporting tests and 18 archive tests
 pass. This saved-file route needs no external engine or new optional dependency;
 existing MolSysMT delegation remains separate. Exact owned installed wheel
-receiving remains pending here. Preserve original source/provider/generated
+receiving then passes from exact0407e20 owned wheel196: the same34original
+cases, two ordinary profiles and complete P1driver. The
+[installed receipt](evidence/pharmer_enabled_installed_20261109.json) verifies
+211payload/156runtime files, nine original fixtures and152loaded runtime origins
+without PHMT checkout fallback. Installed ordinary scientific payloads equal the
+pre-change originals exactly, with only generated producer versions compared
+separately; original records remain untouched. The source/owned-installed bridge
+resolves, while the historical unlabelled attachment and all other scopes above
+retain their separate gates. Preserve original source/provider/generated
 versions separately and append the source/installed receipts. Full supported
 source/dependency/public-platform, biology/performance and release gates remain
 independent. The [user guide](../docs/content/user/pharmer_interoperability.md)

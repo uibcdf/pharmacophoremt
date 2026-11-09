@@ -30,8 +30,10 @@ site/original-point mapping; native persistence preserves it. All34 selected sou
 cases pass,22new/12P1, and two ordinary profiles retain exact native JSON bytes.
 The unchanged example has ten enabled of19original points; legacy count assertions
 are corrected. Original red/unit-control identities and the full-attachment
-resource gate stay separate. Exact owned installed receiving remains pending.
-Broader scientific import/admission policy is open as#163; no external engine
+resource gate stay separate. The same34original cases, two ordinary
+profiles and complete P1driver pass from exact0407e20 owned wheel196, with211
+verified payload files, nine fixtures and152loaded runtime origins. The bounded
+source/installed bridge resolves. Broader scientific import/admission policy is open as#163; no external engine
 execution or general field-equivalence claim follows.
 
 2026-11-09: [#161 P1 preparation](pharmer_p1_comparison.md) freezes an exact
@@ -47,7 +49,7 @@ runtime origins and eight fixture files verify. The initial stale Sabueso finder
 refusal and current provider mappings retain separate identities. Preparation#161
 resolves; actual Pharmer perception/search
 is unexecuted and separately gated. Public disabled-point loss is recorded in
-[#162](pending_bugs/pharmer_disabled_points.md), outside P1's enabled subset.
+[#162](archive/pharmer_disabled_points.md), outside P1's enabled subset.
 
 2026-11-09: [#160 numerical candidate admission](pair_distance_pruning.md)
 corrects PHMT's pair filter conservatively without changing final matching or

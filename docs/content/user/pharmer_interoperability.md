@@ -45,6 +45,10 @@ the reader adds this metadata only when omissions occur. Original input mappings
 and files are not changed. The bundled example contains 19 points with only 10
 enabled, so its query now imports 10 sites instead of incorrectly requiring all 19.
 
+Previously saved native PHMT models and screening results keep their stored
+content. Reimport the original Pharmer query to apply this correction; do not
+silently reinterpret an older saved model or its original screening evidence.
+
 ## Units and compatibility limits
 
 Pharmer coordinates and radii are interpreted as angstroms. The reader preserves

@@ -122,8 +122,11 @@ original point mappings survive persistence, missing flags default true and bad
 flag types receive a structured refusal. All34 selected source cases pass and two
 ordinary profiles retain byte-identical native JSON. The bundled19point file has
 only10enabled constraints; its original bytes are preserved and existing expected
-counts corrected. Exact owned installed receiving remains pending. Broader
-constraint-field/loss admission is separately open as#163; no external engine,
+counts corrected. The same34original cases, two ordinary profiles
+and complete P1driver also pass from exact0407e20 owned wheel196; the
+[installed receipt](evidence/pharmer_enabled_installed_20261109.json) verifies
+211payload files, nine fixtures and152loaded runtime origins. This resolves the
+bounded defect. Broader constraint-field/loss admission is separately open as#163; no external engine,
 general interoperability, biological or scale qualification is implied.
 
 [#161 P1 analytical preparation](pharmer_p1_comparison.md) advances the explicit

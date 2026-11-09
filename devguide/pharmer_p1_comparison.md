@@ -155,6 +155,12 @@ remain separate from closing preparation#161.
 ## Separate format finding
 
 An actual public import probe changes only one original point to `enabled=false`
-and still obtains three essential sites. [#162](pending_bugs/pharmer_disabled_points.md)
+and still obtains three essential sites. [#162](archive/pharmer_disabled_points.md)
 owns that independently measured loss of query intent. This case uses only
 enabled points and cannot certify or conceal unsupported query semantics.
+
+The subsequent [#162 correction](pharmer_interoperability.md) receives omission
+and original-point mappings in source and exact owned wheel196; broader scientific
+field/loss policy remains open under#163. The original P1source1372623/owned192
+receipts retain their dates and scope. A separate current P1driver receiving
+keeps all three expected answers; no external engine execution is inferred.

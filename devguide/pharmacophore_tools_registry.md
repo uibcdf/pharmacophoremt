@@ -207,3 +207,14 @@ database coverage and search/output admission stay open under#128. This is not a
 executed external comparison, benchmark or general interchange claim. The actual
 public disabled-point import loss is separately open as#162; P1 uses only enabled
 points. Canonical Discussion#131 publication/readback is recorded separately in#128.
+
+
+## Enabled-point correction received — 2026-11-09
+
+The separately owned [#162 reader correction](pharmer_interoperability.md)
+now receives disabled-point omission, strict Boolean admission and original-point
+mappings in source/exact owned wheel196. All34same selected cases, two ordinary
+profiles and the complete P1driver pass; the bundled original19point JSON has
+only10enabled constraints. Earlier P1/source-study claims and receipts retain
+their original scope. Broader scientific input/loss policy is separately open
+as#163; actual Pharmer execution remains unqualified under#128.

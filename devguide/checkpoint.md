@@ -1,7 +1,6 @@
 # Current development checkpoint
 
-Maintained 2026-11-09 UTC; owners LMMV/dprada. The goal is **active**, resumed at
-Liliana's instruction. Pursue the accepted
+Maintained 2026-11-09 UTC; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 0.x staircase](roadmap.md) through usable increments.
 The version number follows useful completed scope; no final minor or date is fixed.
 Start with [onboarding](onboarding.md), [decisions](decisions_and_workstreams.md)
@@ -11,33 +10,24 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 ## Last received increment and next action
 
 [#162 enabled-point import](pharmer_interoperability.md) now omits disabled
-Pharmer points, retains original point mappings and refuses nonboolean flags.
-Missing flags remain enabled; all-true/missing ordinary outputs stay identical.
-All34 selected source cases pass (22new/12P1), including actual two-ion evaluation,
-unit-policy/public routes, mapping persistence and explicit ligand delegation.
-The unchanged bundled file contains19points but only10enabled; two existing
-legacy/dispatcher expected counts are corrected accordingly. Original red/control
-identities and the separate full-attachment resource gate are preserved. Source
-checks/docs pass in the [source receipt](evidence/pharmer_enabled_source_20261109.json);
-exact owned installed receiving remains pending. The broader
-scientific import/loss profile is separately proposed in
-[#163](pending_proposals/pharmer_import_profile.md).
+Pharmer points, preserves original point mappings and refuses nonboolean flags.
+The same34 selected cases pass from source and exact owned wheel196 (22new/12P1),
+including actual two-ion evaluation, public routes/units, mapping persistence
+and explicit molecular delegation. Two ordinary profiles retain source byte
+identity and installed scientific-payload equality with generated versions
+compared separately. Both complete P1drivers retain three correct answers and
+nine actual attribution items/22uses. The
+[installed receipt](evidence/pharmer_enabled_installed_20261109.json) verifies
+211payload/156runtime files, nine original fixtures and152loaded runtime origins
+with no PHMT checkout fallback. Original red/unit-control and separate historical
+attachment limits are retained; original bundled flags require10sites from19points.
+This closes the bounded defect, with full supported/public gates still separate.
 
-[#161 P1 comparison preparation](pharmer_p1_comparison.md) freezes one spherical
-query and three analytical ion inputs, with independent rational positive,
-permutation and impossible-stretch oracles. The same 29 original cases pass from
-source and copied fixtures around unchanged owned wheel192 (12 new / 17 existing).
-The complete driver passes in both contexts with nine actual attribution items
-and 22 uses each. The [installed receipt](evidence/pharmer_p1_installed_20261109.json)
-verifies 211 payload / 156 runtime files, eight original case/driver fixtures and
-152 loaded runtime origins, with no PHMT checkout fallback. Original legacy-scope,
-private harness and stale-provider-metadata refusals retain separate evidence.
-Recovery preserves frozen inputs, runtime payload and resource limits. This work
-changes no provider; independently renewed metadata is pinned separately. The
-installed own-group RSS peak is 363913216 bytes. Preparation#161
-resolves; actual Pharmer perception/export/database/search remains unexecuted
-under#128. The actual disabled-point import loss remains open as
-[#162](pending_bugs/pharmer_disabled_points.md); P1 uses only enabled points.
+The broader [#163 import/loss profile](pending_proposals/pharmer_import_profile.md)
+remains open. Earlier [P1preparation](pharmer_p1_comparison.md) keeps its original
+source1372623/owned192receiving; the current driver is a distinct run. Actual
+Pharmer executable/export/perception/database/search admission is still unexecuted
+under#128. No external engine, performance or biological qualification follows.
 
 The preceding [#160 correction](pair_distance_pruning.md) retains its independent
 116 source/same-wheel cases and original native before/after witness. The
@@ -69,11 +59,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** freeze#162's corrected reader, build one offline owned
-wheel and receive the same34 original selected cases plus ordinary controls with
-source fallback refused. Then review#163's supported-input/loss policy before
-new general interchange claims. Keep P1's actual external execution separately
-admitted; do not install or substitute a comparator without its receiving plan.
+**Next concrete action:** review#163's supported-input/loss policy. Separate
+scientific constraint fields from display/session annotations and engine settings;
+freeze required/optional/negated/size/vector examples before choosing refusal or
+loss reporting. Keep P1's external execution separately admitted; do not install
+or substitute a comparator without its receiving plan.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.
@@ -90,7 +80,7 @@ benchmark snapshots remain local pending redistribution assessment; do not
 transfer or substitute them. Native provider/context qualification and all87
 cases precede any measured arm/original-input pilot. Continue independent
 product/provider receiving while this route is unavailable. The mature0.x
-objective remains open; no release is selected.
+milestones retain their open gates; no release is selected.
 
 ## Active public integration
 
