@@ -42,12 +42,15 @@ context and strict docs; original recipe/runtime/provider bytes stay intact.
 Representative human-usability and broader public workflow gates stay open. No source connector, collection/index,
 scale or human-usability qualification is implied.
 
-The af408e7 accumulated source run42656135375 terminates attempt1 with seven
-2693case/46warning successes and an unstarted cancelled macOS3.11cell. One
-[declared job-specific capacity recovery](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
-keeps the exact SHA/ref and earlier executions distinct. The [seven-cell receipt](evidence/numerical_reader_ci_seven_cells_20261109.json)
-qualifies original commands/interpreters and108coverage paths in each. Its
-remaining scientific command/coverage is pending; no full-source acceptance or later-head claim follows.
+The [accumulated source checkpoint](numerical_reader_ci_checkpoint.md#complete-source-receiving--2026-11-09-utc)
+is now accepted at af408e7 / run42656135375: eight cells each pass2693cases with
+zero reported skips/46warnings and108qualified XML paths. The
+[terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json) combines
+seven original attempt1 executions and exactly one recovered macOS3.11 execution;
+original failure/cancellation remains intact. Policy/publication controls pass
+at that candidate. Later#170/#171/current-head source, complete supported/public
+installed, representative human usability and all scientific/performance/release
+gates retain separate acceptance.
 
 The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
 now maps current source-operation coverage to the guided/expert screening and

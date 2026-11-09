@@ -5,6 +5,16 @@ This receives the accumulated changes after the accepted
 [27c1178 checkpoint](plan_api_ci_checkpoint.md), retaining all original
 source/owned-wheel identities and the stopped#148/#165 routes.
 
+## Current disposition
+
+The [terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json)
+accepts af408e7 / source42656135375 after seven original attempt1 executions and
+one recovered attempt2 macOS3.11 execution. All eight cells pass 2693 cases with
+108 qualified coverage paths each; policy/publication controls pass at that
+candidate. The chronology below retains original pending/failure/cancellation
+observations as dated history. Later #170/#171 and complete public/installed,
+human/scientific/performance/release gates remain separate.
+
 ## First frozen candidate and audit
 
 Candidate1f6dfb0a53f12b2c1f2bfe43d3a1cfa30071d364 contains34later commits:
@@ -182,3 +192,39 @@ attempt1 failure/unstarted cancellation and all raw captures remain local and
 unchanged. No source checkpoint is accepted by seven cells;27c1178 remains the
 last complete received source gate. #170/#171, full supported/public/installed,
 scientific prediction, performance and release gates retain their own identities.
+
+## Complete source receiving — 2026-11-09 UTC
+
+MacOS3.11 job129370517203 completes successfully at20:06:55UTC in native
+run42656135375/attempt2. Its actual full scientific command passes2693cases with
+zero reported skips/46warnings in2645.38s, using Python3.11.18/arm64 and original
+package0.4.0+206.gaf408e7. All required acquisition, SDK/preflight, package/import,
+interpreter/architecture and coverage steps succeed. Its captured XML qualifies
+the same108expected paths, both initializers/companion store, main-private
+omission, zero-hit files and branches.
+
+The [terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json)
+combines that actual new execution with the seven already-qualified original
+attempt1 executions. Native attempt2 is completed/success; its full log archive
+contains only the recovered cell, as expected for the job-specific operation.
+The other seven current job IDs bind to the exact original start/end timestamps.
+No eight-fresh-execution or new-scientific-sample claim follows. The original
+attempt1 global failure, unstarted cancellation and capacity annotation facts
+stay unchanged in their original receipt/capture; no further request is issued.
+
+Frozen policy42656145447 and no-build publication42656155848 retain successful
+native required steps at af408e7. Reporting keeps3protocol/18archive/8CI-route/
+160administrative cases. Nine configuration identities match Git af408e7.
+All eight platform/interpreter cells now have2693passes/zero reported skips/
+46warnings and108qualified coverage paths. This accepts the accumulated exact
+controlled source gate, preserving27c1178 as the preceding accepted source.
+
+Later adbecee source/#170,0933cfb docs/#171 and current development head are outside
+that frozen qualification; local/owned208receiving and later-head CI debt remain
+explicit under#9/#23. No complete public dependency solve, supported installed
+platform matrix, human usability, biological prediction, molecular-performance
+or release gate is cleared. All raw GitHub captures/logs remain local, with only
+reviewed scalar/hash facts published. Local capture stays serial CPU19/one Go
+and backend thread, low priorities, DATA512MiB/AS-unlimited for Go mappings and
+observed-group1GiB/host reserve monitoring; no reservation or kernel aggregate
+memory/swap/tasks/quota enforcement is claimed. #148/#165 remain stopped.

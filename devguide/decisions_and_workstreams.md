@@ -107,6 +107,16 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-09: [complete source receiving](numerical_reader_ci_checkpoint.md#complete-source-receiving--2026-11-09-utc)
+accepts exact af408e7 / source42656135375:2693passes/zero reported skips/46warnings
+and108qualified XML paths in all eight Linux/macOS Python3.11–3.14 cells. The
+[terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json) combines
+seven original attempt1 executions and one recovered attempt2 macOS3.11 cell;
+original failure/cancellation and reissued inventory identities stay distinct.
+Frozen policy/publication controls pass at the same candidate. This updates the
+full-source gate only; later#170/#171/current head and complete public/installed,
+human/scientific/performance/release acceptance remain separate.
+
 2026-11-09: [#171complete discovery and inspection](archive/document_source_discovery_journey.md)
 composes public source inventory, source/status count and original detail in one
 snapshot. All216declared recipe parameter cases pass per source/unchanged-owned208
@@ -345,7 +355,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #103 receptor-to-screening studies | Objective accepted; neither full biological study is complete | Admit original methods/data/cohort/preparation, freeze receptor/comparator/evaluation and execute |
 | #66 ERalpha binding | Frozen source pools/exposure persist; original Sun2006, Xin2023, Gungor2006 and Scott2023 methods unresolved | New authorized access lead; don't repeat exhausted routes or alter frozen queries/thresholds |
 | #106 second-target admission | Nine fixed leads reviewed; capacity/coupled outcomes and seven held sources remain separate | Resolve original material/data/curation authority; further unresolved-domain review needs a new declaration; no activities admitted |
-| #108 public-library workflow | Public runs, reader support, guided/expert parity, exports/progress, single/paired analysis and plan inspection received in bounded source/owned installed contexts;27c1178 full source accepted | Broader human usability/source operations and [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624) remain; no blanket connector/index/durability/biological promise |
+| #108 public-library workflow | Public runs, reader support, guided/expert parity, exports/progress, single/paired analysis and plan inspection received in bounded source/owned installed contexts;af408e7 full source accepted | Broader human usability/source operations and [MolSysMT #624](https://github.com/uibcdf/molsysmt/issues/624) remain; no blanket connector/index/durability/biological promise |
 | #142 native inspection | Resolved: Point center alias and empty-coordinate shape corrected; same338 source/owned-wheel bodies and two isolated children pass | Full supported source/installed/public gates remain separate |
 | #143 analytical boundary | Resolved: original fixture exactness defect preserved; revision2/14guards/ten-case driver and frozen8db2a53 full2357-case/eight-cell source gate pass | Later helpers/tests and full installed/public/platform delivery retain separate#9/#23 scope |
 | #144 saved-reader performance | Resolved: three reader cells/75baseline samples and reusable copied-fixture recovery received with22guards | Preserve failed original preparation; extra25samples stay separate. Review shared scan cost before any cache/index/molecular throughput claim |
@@ -353,7 +363,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #128 tool-study registry | Dedicated public index, one [executed Pharm3D analytical comparison](rdkit_bounds_comparison.md) and nine documentary records | Public RDKit fields are received in source/one owned wheel under resolved#140; corrected8db2a53 source passes all eight cells under resolved#143, preserving failed489be12. Broader comparison/biological gates remain |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |
-| #9/#10/#23 CI/support/distribution | [Frozen27c1178](plan_api_ci_checkpoint.md) passes all8 source cells/2505cases each plus reporting/policy/publication controls; later9a0ed14 OS probe has its separate manual receiving | Full installed/public/package and later-head gates stay separate; no repeated frozen run |
+| #9/#10/#23 CI/support/distribution | [Frozen af408e7](numerical_reader_ci_checkpoint.md) passes all8 source cells/2693cases each plus reporting/policy/publication controls; later9a0ed14 OS probe has its separate manual receiving | Full installed/public/package and later-head gates stay separate; no repeated frozen run |
 | #6/#41/#74 ecosystem debt | Partial support adoption; bounded old-provider donor compatibility and SDF container migration remain | Receive owning provider contracts; annotated-SDF delegation is MolSysMT#215 |
 | #43 historical resources | Some `/tmp` producers/papers are absent; tracked support is intact | [Migration inventory](machine_migration.md): distinguish reconstruction from original recovery |
 

@@ -30,20 +30,19 @@ commands on four unchanged historical stores and thirteen ordinary exact-source
 outputs. All214wheel payloads/159runtime identities verify. The bounded#170bridge
 resolves; complete discover/select/detail composition is received above as#171.
 
-The [corrected accumulated checkpoint](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
-is af408e7 / source42656135375. Attempt1 terminates failure: seven scientific
-cells pass2693cases/46warnings each; macOS15/Python3.11 is cancelled before any
-runner or step starts. Native annotations report runner acquisition/capacity
-problems; Receptor retains cause=unknown. A separately declared single-job
-recovery under#9 reuses that exact SHA/ref; attempt2 has acquired a runner and
-is executing the full tests after successful dependency/import/architecture steps. Seven earlier executions are reused, not repeated.
-The [scoped receipt](evidence/numerical_reader_ci_seven_cells_20261109.json)
-qualifies all seven original commands/interpreters and108XML paths per cell.
-No full source gate is accepted until the remaining command and coverage are
-received. Frozen policy42656145447 and no-build publication42656155848 pass.
-Original1f6dfb0/reporting failure, force-cancellation, #168/#169 corrections and
-MolSysSuite#177 retain their separate earlier evidence. This later#170code is
-outside af408e7 qualification. #148/#165 remain stopped.
+The [accumulated source checkpoint](numerical_reader_ci_checkpoint.md#complete-source-receiving--2026-11-09-utc)
+is accepted at af408e7 / source42656135375, with 2693 passing cases, zero reported
+skips, 46 warnings and 108 qualified XML paths in each of eight Linux x86_64 /
+macOS arm64 Python3.11–3.14 cells. The
+[terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json) combines
+seven original attempt1 executions with exactly one recovered attempt2 macOS3.11
+execution. Original attempt1 failure/unstarted capacity cancellation is preserved;
+reissued inventory IDs do not represent repeated executions. Frozen policy
+42656145447 and no-build publication42656155848 pass at the same candidate.
+Later #170 source adbecee and #171 docs0933cfb retain their separate bounded
+receiving and exact-head CI debt under #9. Full supported installed/public,
+human-usability, scientific prediction, performance and release gates remain
+separate. #148/#165 remain stopped.
 
 [#167 source-specific inspection recipe](../docs/content/cookbook/saved_work_inspection.md#inspect-one-source-in-one-python-snapshot)
 composes exact source/status counts, a bounded prefix and original details in one
@@ -132,19 +131,16 @@ preserves the detailed receiving statements before this closeout; they are not
 new tasks. The [chemical-library guide](../docs/content/user/chemical_libraries.md)
 connects these operations, without qualifying a new connector or human usability.
 
-The accepted [27c1178 full-source checkpoint](plan_api_ci_checkpoint.md) retains
-source42451906584/policy42451909669/publication42451913187, all attempt1 success;
-2505full-suite cases pass in each of eight Linux/macOS arm64 Python3.11–3.14cells.
-Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
-No completed handle is redispatched or relabelled as later-head qualification.
+The previous [27c1178 full-source checkpoint](plan_api_ci_checkpoint.md) retains
+its original 2505-case/eight-cell source42451906584, policy42451909669 and
+publication42451913187 evidence. The later af408e7 acceptance above preserves
+all earlier source/run identities; it does not retroactively qualify later heads.
 
-**Next concrete action:** receive the one declared macOS3.11 recovery on
-source42656135375, keeping the original seven executions and all108qualified
-coverage paths distinct from later-head#170/#171receiving. No automatic repeat
-on capacity failure. Prepare a bounded guided/expert usability exercise under#108
-for the now-complete saved-inspection task, with explicit success/error-recovery
-criteria and actual human receiving still pending. Full supported
-installed/public/platform gates remain separate.
+**Next concrete action:** deliver #172, the bounded guided/expert saved-inspection
+usability exercise: reproducible synthetic fixture, participant/facilitator sheets,
+unfilled observations and source/unchanged-owned208 technical dry-run. Declare
+actual human receiving separately; retain later-head full-source and complete
+public/platform debt under #9/#23. No new frozen-run dispatch or #148/#165 retry.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and
@@ -204,7 +200,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, saved analysis, plan inspection, pages/detail/status/source selection and their complete inspection recipe received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, saved analysis, plan inspection, pages/detail/status/source selection and their complete inspection recipe received in bounded source/owned installed contexts; frozen af408e7 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
@@ -212,7 +208,7 @@ earlier route.
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
 | #128 tool registry | [One executed Pharm3D analytical comparison, pinned CDPKit/Pharmer source reviews and bounded import profile](pharmacophore_tools_registry.md);#160/#163 received | Freeze proposed comparator cases only after admitting their complete problem/inputs/resources |
 | #160 numerical pruning | [Resolved report](archive/pair_distance_pruning_slack.md):116source/same-file installed cases, original public-native before/after witness and12ordinary controls | Bounded local bridge complete; later-head full/public/platform gates remain separate |
-| #9/#10/#23/#95 | Frozen27c1178 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
+| #9/#10/#23/#95 | Frozen af408e7 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |
 
