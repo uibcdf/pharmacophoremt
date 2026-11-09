@@ -1,0 +1,7 @@
+{
+  "points": [
+    {"name": "PositiveIon", "x": 0, "y": 0, "z": 0, "radius": 0.3125, "enabled": true},
+    {"name": "PositiveIon", "x": 5, "y": 0, "z": 0, "radius": 0.3125, "enabled": true},
+    {"name": "PositiveIon", "x": 0, "y": 10, "z": 0, "radius": 0.3125, "enabled": true}
+  ]
+}

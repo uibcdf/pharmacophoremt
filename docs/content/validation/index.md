@@ -25,6 +25,7 @@ Historical timings from different environments do not isolate an improvement.
 
 prepared_ccd
 rdkit_bounds_comparison
+pharmer_p1
 pubchem3d_library_pilot
 reused_feature_inventories
 prepared_workflow

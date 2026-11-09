@@ -1,0 +1,101 @@
+{
+  "schema": "pharmacophoremt.pharmer-p1-plan@1",
+  "issue": 161,
+  "declared_before_scientific_execution": "2026-11-09T02:10:01.005537+00:00",
+  "parent": "6c069de457f44a9054ed543a712a336d2363001a",
+  "inputs": {
+    "tests/data/pharmer_p1/declaration.json": {
+      "bytes": 2359,
+      "sha256": "2eb784ae6de1bb6b5c29c24d792dea57eae4bbb4bfcb01af3719c58d0e35dca6"
+    },
+    "tests/data/pharmer_p1/query.json": {
+      "bytes": 286,
+      "sha256": "b9d564e16fcdadbac43313a527d3d0366f394607a9e5fcfb5a993c85f5342207"
+    }
+  },
+  "question": "P1required spherical interior: two known proper-motion/permutation positives and one uniformly stretched necessary-condition negative. Enumerate27raw products and retain every compatible mapping, actual native fit/final result. External r95arm remains unexecuted pending its own admission.",
+  "declared_counts": {
+    "sources": 3,
+    "atoms_each": 3,
+    "conformers_each": 1,
+    "query_sites": 3,
+    "raw_products_each": 27,
+    "injective_alternatives_each": 6,
+    "expected_retained_proposals": [
+      1,
+      1,
+      0
+    ],
+    "expected_final_matches": [
+      1,
+      1,
+      0
+    ]
+  },
+  "independent_oracle": "Exact rational inverse proper transform on positives and scalene distinct edge intervals; a2nm negative edge versus every reference edge<1.25nm proves no placement within2r=1/16nm. Actual binary/angstrom projection checked, no production norm/fitting code in oracle.",
+  "execution": [
+    "stdlib exact rational fixture/oracle checks first",
+    "one positive native pilot, then the three original PHMT cases, source driver with original attribution and selected existing guards",
+    "same original bodies/driver against unchanged owned wheel192 only after confirming runtime bytes; isolated no-site source-import refusal; no new wheel/runtime change expected",
+    "strict docs, Ruff/reporting/index/archive integrity and final checkpoint; focused skip-ci delivery and issue feedback"
+  ],
+  "resources": {
+    "parent": "6c069de457f44a9054ed543a712a336d2363001a",
+    "provider": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+      "HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+      "dirty": ""
+    },
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 60354695168,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7661424640
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=751231\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=728543\n",
+    "swap_pages": {
+      "pswpin": 68276,
+      "pswpout": 273907
+    },
+    "load": [
+      1.18994140625,
+      2.16015625,
+      3.2685546875
+    ],
+    "affinity": [
+      19
+    ],
+    "scheduler": "sinfo queried: tests/prior node inval, normal/prior nodes unk*; no allocation or usable node. No job requested.",
+    "pharmer_path": null,
+    "versions": {
+      "pharmacophoremt": "0.4.0+120.g0925d97",
+      "molsysmt": "0.23.0+687.g2325038e8",
+      "numpy": "2.5.4",
+      "pyunitwizard": "0.29.1+6.gf82b618",
+      "pytest": "9.2.0",
+      "pytest-receptor": "1.2.0",
+      "ackredit": "0.12.1+10.g4beb850"
+    },
+    "scientific_profile": {
+      "AS_per_process": 1073741824,
+      "DATA_per_process": 536870912,
+      "observed_own_group_RSS_stop": 536870912,
+      "own_safety_envelope": 1610612736,
+      "reserve_fraction": 0.2,
+      "CPU": 19,
+      "threads": 1,
+      "nice": 19,
+      "IO": "idle",
+      "CPU_seconds": 120,
+      "wall_seconds": 180,
+      "cgroup_aggregate_swap_task_quota": "not enforced; own user bus unavailable; no borrowed service"
+    },
+    "estimate": "At most9analytic disconnected ions total, one input at a time;3sites,27raw products/6injective alternatives per input, at most1retained fit for each of two positives. Prior3ion native~258MiBRSS; allow512MiB observed group, no increased limit/retry on pressure. No environment acquisition/native build/148work."
+  },
+  "external": "No executable found on PATH. No tool build/install/dependency transaction; no numerical Python reimplementation or alternate engine. Freeze complete admission/output protocol; no executed comparison claim.",
+  "owner": "LMMV/dprada",
+  "raw_capsule": "build/phmt-pharmer-p1-20261109-xf5l4ot6",
+  "retention_review": "2026-11-23"
+}

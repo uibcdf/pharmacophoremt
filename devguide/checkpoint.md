@@ -10,6 +10,21 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#161 P1 comparison preparation](pharmer_p1_comparison.md) freezes one spherical
+query and three original analytical ion inputs: proper motion, permuted source
+and impossible stretch. Independent rational controls protect exact units and
+mappings. All29 final selected source cases pass (12new/17existing), including
+attribution enabled/disabled; the source driver passes all three original answers
+and retains nine actual attribution items/22uses. The
+[source receipt](evidence/pharmer_p1_source_20261109.json) preserves the earlier
+legacy attached-ligand memory refusal and private attribution-comparison/native
+hashing failures, followed by bounded corrected receiving. Recovery changes no
+frozen fixture, runtime payload, provider or resource limit. Same-file case receiving
+against unchanged owned wheel192 remains pending. Pharmer itself is unexecuted;
+its perception/export/database/search admission is explicitly gated under#128.
+The actual disabled-point import finding is separately open as
+[#162](pending_bugs/pharmer_disabled_points.md); P1uses only enabled points.
+
 The [#160 candidate numerical correction](pair_distance_pruning.md) prevents
 the essential-triplet distance filter from discarding the original numerical
 boundary accepted by final matching. Physical radii and final evaluation remain
@@ -63,10 +78,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** prepare the first unexecuted#128analytical comparison
-from the pinned source studies: freeze its complete query, inputs, independent
-expected result and resource/dependency admission before execution. Preserve
-physical tolerances and finite-method meanings;#160's local bridge is complete.
+**Next concrete action:** freeze#161's case source and receive the same29original
+bodies and complete driver from copied fixtures around unchanged owned wheel192,
+with PHMT checkout fallback refused. Preserve the explicit unexecuted external
+arm, original failures and current safe resource profile. Then qualify#162's
+disabled-point import behavior with an independent public guard.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.

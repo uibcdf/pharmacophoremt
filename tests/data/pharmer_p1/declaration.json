@@ -1,0 +1,45 @@
+{
+  "schema": "pharmacophoremt.pharmer-p1@1",
+  "case_id": "pharmer-p1-required-spherical-interior@1",
+  "issue": "uibcdf/pharmacophoremt#161",
+  "query": "query.json",
+  "query_unit": "angstrom",
+  "reference_centers_nm": [[0, 0, 0], [0.5, 0, 0], [0, 1, 0]],
+  "radius_nm": 0.03125,
+  "smiles": "[Na+].[K+].[Li+]",
+  "features": ["positive charge"],
+  "source_unit": "nm",
+  "selection": "all",
+  "structure_index": 0,
+  "chemical_state": "reference",
+  "max_trials": 64,
+  "position_error_limit_nm": 0.000000000001,
+  "source_to_reference_rotation": [[0, 1, 0], [-1, 0, 0], [0, 0, 1]],
+  "source_to_reference_translation_nm": [1, 2, -0.5],
+  "cases": [
+    {
+      "key": "proper-motion",
+      "centers": [[2, -1, 0.5], [2, -0.5, 0.5], [1, -1, 0.5]],
+      "expected": {"correspondences": [[[0, 0], [1, 1], [2, 2]]], "n_trials": 27, "n_pruned": 26, "complete": true, "matched_placements": 1}
+    },
+    {
+      "key": "permuted-source",
+      "centers": [[1, -1, 0.5], [2, -1, 0.5], [2, -0.5, 0.5]],
+      "expected": {"correspondences": [[[0, 1], [1, 2], [2, 0]]], "n_trials": 27, "n_pruned": 26, "complete": true, "matched_placements": 1}
+    },
+    {
+      "key": "uniform-stretch",
+      "centers": [[2, -1, 0.5], [2, 0, 0.5], [0, -1, 0.5]],
+      "expected": {"correspondences": [], "n_trials": 27, "n_pruned": 27, "complete": true, "matched_placements": 0}
+    }
+  ],
+  "external": {
+    "tool": "Pharmer standalone",
+    "source_revision": 95,
+    "state": "not_executed",
+    "admission": "Verify complete actual PositiveIon atom memberships and centers from the frozen molecular inputs before any search comparison. No independent perception equivalence is assumed.",
+    "required_outputs": ["original record and conformer IDs", "atom and feature mappings", "all returned orientations and final distances", "omissions, failures and completeness", "effective search/output limits and database/source/binary identities"],
+    "execution_gate": "Separately admit a pinned executable/build and original-input export/round-trip with bounded resources. Never substitute a Python reimplementation, a different engine, or PHMT expectations for an executed Pharmer result."
+  },
+  "scope": "Repository-owned analytical preparation and PHMT receiving; no external execution, chemical-equivalence, activity, performance or full supported-platform claim."
+}

@@ -116,6 +116,16 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#161 P1 analytical preparation](pharmer_p1_comparison.md) advances the explicit
+comparison protocol for milestones1/6. One frozen three-site query and three
+synthetic original sources have rational positive/permutation/negative oracles.
+All29 final selected source cases pass (12new/17existing); the complete driver
+passes with actual attribution. Prior legacy/resource and private receiving
+failures retain their separate records. No runtime/dependency changes occur;
+same-file case receiving around owned wheel192 remains pending. This prepares
+the PHMT side only; Pharmer execution remains unqualified under#128. The enabled
+subset also exposed the separately measured disabled-import defect#162.
+
 [#160 numerical candidate admission](pair_distance_pruning.md) advances
 milestone1. All116 selected source cases pass, including17new independent
 boundary controls and99existing cases. Twelve ordinary outputs/counters retain

@@ -23,6 +23,17 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-09: [#161 P1 preparation](pharmer_p1_comparison.md) freezes an exact
+three-site query, two proper-motion/permutation positives and a provably
+impossible stretch. All29 final selected source cases pass,12new/17existing,
+including enabled/disabled attribution; the driver retains three correct answers
+and actual nine-item/22-use attribution. The original legacy-scope memory refusal,
+private whole-file native hashing failure and extra-metadata comparison error
+remain recorded. Input/runtime/provider/budgets are unchanged. Same-file case
+receiving around owned wheel192 remains pending; actual Pharmer perception/search
+is unexecuted and separately gated. Public disabled-point loss is recorded in
+[#162](pending_bugs/pharmer_disabled_points.md), outside P1's enabled subset.
+
 2026-11-09: [#160 numerical candidate admission](pair_distance_pruning.md)
 corrects PHMT's pair filter conservatively without changing final matching or
 physical radii. All116 selected source cases pass,12ordinary outputs/counters

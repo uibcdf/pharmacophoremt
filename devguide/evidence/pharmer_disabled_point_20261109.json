@@ -1,0 +1,81 @@
+{
+  "operation": "pharmacophoremt.io.from_pharmer",
+  "source_query": "tests/data/pharmer_p1/query.json",
+  "change": "only points[0].enabled=False",
+  "actual_site_count": 3,
+  "actual_essential": [
+    true,
+    true,
+    true
+  ],
+  "input_unchanged": true,
+  "source_observation": "Current PHMT loops over all points without inspecting enabled; pinned standalone r95reader explicitly skips enabled=false. This does not execute Pharmer or qualify its other fields.",
+  "status": "observed_suspected_semantic_loss",
+  "issue": 162,
+  "parent_source": "6c069de457f44a9054ed543a712a336d2363001a",
+  "runtime_file": {
+    "path": "pharmacophoremt/io/pharmer.py",
+    "bytes": 6542,
+    "sha256": "712547c36a5428ba0b07b1665652bda3b3c94de7254b1a3579ba0230a904cb6b"
+  },
+  "command": {
+    "name": "io-semantics",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-p1-20261109-xf5l4ot6/logs/io-semantics.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "build/phmt-pharmer-p1-20261109-xf5l4ot6/controls/io_semantics_probe.py"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60355059712
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=751232\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=728544\n",
+      "swap": {
+        "pswpin": 68719,
+        "pswpout": 273907
+      },
+      "time": 128994.360072605
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 1.2166851579968352,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60266057728
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=751232\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=728544\n",
+      "swap": {
+        "pswpin": 68719,
+        "pswpout": 273907
+      },
+      "time": 128995.577736915
+    },
+    "peak_observed_own_group_RSS_bytes": 163483648
+  },
+  "raw_capsule": "build/phmt-pharmer-p1-20261109-xf5l4ot6"
+}
