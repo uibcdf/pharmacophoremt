@@ -23,6 +23,17 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-09: [#162 enabled-point import](pharmer_interoperability.md) now omits
+disabled points before parsing, defaults missing flags to true and rejects other
+types with the existing catalog diagnostic. Filtered-only metadata records dense
+site/original-point mapping; native persistence preserves it. All34 selected source
+cases pass,22new/12P1, and two ordinary profiles retain exact native JSON bytes.
+The unchanged example has ten enabled of19original points; legacy count assertions
+are corrected. Original red/unit-control identities and the full-attachment
+resource gate stay separate. Exact owned installed receiving remains pending.
+Broader scientific import/admission policy is open as#163; no external engine
+execution or general field-equivalence claim follows.
+
 2026-11-09: [#161 P1 preparation](pharmer_p1_comparison.md) freezes an exact
 three-site query, two proper-motion/permutation positives and a provably
 impossible stretch. All29 final selected source cases pass,12new/17existing,

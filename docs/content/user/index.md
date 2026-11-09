@@ -37,6 +37,8 @@ inputs. Each recipe explains the corresponding class or public tool contract.
   and data actually used, including when you save and reload a model.
 - Exchange prepared [pharmacophore fields with RDKit](rdkit_interoperability.md)
   using explicit radii and a report of omitted fields.
+- Read [enabled Pharmer points](pharmer_interoperability.md), preserving original
+  point mappings and the declared limits of query interchange.
 
 Lengths and angles have explicit units. Molecular preparation and transformations
 are MolSysMT operations; the recipes identify the inputs the consumer must supply.
@@ -47,6 +49,7 @@ Geometric coverage alone does not establish affinity or activity discrimination.
 
 constraint_semantics
 rdkit_interoperability
+pharmer_interoperability
 chemical_libraries
 ```
 

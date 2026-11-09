@@ -10,6 +10,19 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#162 enabled-point import](pharmer_interoperability.md) now omits disabled
+Pharmer points, retains original point mappings and refuses nonboolean flags.
+Missing flags remain enabled; all-true/missing ordinary outputs stay identical.
+All34 selected source cases pass (22new/12P1), including actual two-ion evaluation,
+unit-policy/public routes, mapping persistence and explicit ligand delegation.
+The unchanged bundled file contains19points but only10enabled; two existing
+legacy/dispatcher expected counts are corrected accordingly. Original red/control
+identities and the separate full-attachment resource gate are preserved. Source
+checks/docs pass in the [source receipt](evidence/pharmer_enabled_source_20261109.json);
+exact owned installed receiving remains pending. The broader
+scientific import/loss profile is separately proposed in
+[#163](pending_proposals/pharmer_import_profile.md).
+
 [#161 P1 comparison preparation](pharmer_p1_comparison.md) freezes one spherical
 query and three analytical ion inputs, with independent rational positive,
 permutation and impossible-stretch oracles. The same 29 original cases pass from
@@ -56,10 +69,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** qualify#162's disabled-point import behavior with an
-independent public guard, then preserve or explicitly refuse that meaning through
-the owned reader. Keep P1's external engine/export/perception/search admission
-separate; do not install or substitute a comparator without that receiving plan.
+**Next concrete action:** freeze#162's corrected reader, build one offline owned
+wheel and receive the same34 original selected cases plus ordinary controls with
+source fallback refused. Then review#163's supported-input/loss policy before
+new general interchange claims. Keep P1's actual external execution separately
+admitted; do not install or substitute a comparator without its receiving plan.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.

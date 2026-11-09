@@ -10,7 +10,9 @@ def test_load_from_pharmer():
 
     ph = Pharmacophore(pharmer_file, form="pharmer")
 
-    assert ph.n_interaction_sites == 19
+    # The original file contains19points, of which10are enabled.
+    assert ph.n_interaction_sites == 10
+    assert ph.metadata["pharmer"]["source_point_indices"] == list(range(10))
     # Check for some expected features
     features = ph.get(get_features=True)
     flat_features = [f for sublist in features for f in sublist]

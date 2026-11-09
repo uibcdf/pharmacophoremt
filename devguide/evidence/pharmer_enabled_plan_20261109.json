@@ -1,0 +1,71 @@
+{
+  "schema": "pharmacophoremt.pharmer-enabled-plan@1",
+  "issue": 162,
+  "declared_before_red_and_mutation": "2026-11-09T02:52:33.459322+00:00",
+  "parent_source": "5804ea506f9487ea1158f38310302b8d20961523",
+  "original_runtime_file": {
+    "path": "pharmacophoremt/io/pharmer.py",
+    "bytes": 6542,
+    "sha256": "712547c36a5428ba0b07b1665652bda3b3c94de7254b1a3579ba0230a904cb6b"
+  },
+  "original_bundled_input": {
+    "path": "pharmacophoremt/data/pharmer.json",
+    "bytes": 530053,
+    "sha256": "2a1af2a5371b6f4ba7b0bc86b337c1250b280a9fa42a7c18d4c54f2b01466fe6"
+  },
+  "policy": "Omit points with enabled=false before reading feature/geometry. Missing enabled means true; a present value must be a Python/JSON bool or existing catalog ArgumentTypeError(PHMT-E109). Preserve survivor order, units, enabled geometry, attached-ligand delegation and ordinary all-true/missing outputs. For filtered imports only, model.metadata.pharmer retains source_point_indices aligned to dense result sites and disabled_point_indices; no new format schema/arguments/dependencies. Unknown/partial disabled records are skipped without geometry parsing. All-disabled returns the existing valid empty-model representation.",
+  "scope": "One owned reader and relevant tests/docs. Add signal using registered IO metadata and reuse existing ArgumentTypeError; no molecular/parser/geometry/provider fork, optional-engine execution or changes to other query-field semantics/export.",
+  "acceptance": "Run independent public omission/native2ion evaluation guards red, freeze ordinary all-enabled/missing bundled19point snapshots; new bool/path/facade/constructor/unit/mapping-persistence tests plus original P1case. Keep initial failures. Freeze source, offline own wheel, same original installed cases/driver with source fallback refused. Full legacy attached-ligand19point route was already resource-refused; do not retry that exhausted broad profile, raise budgets or substitute a fake native result. Update counts to10 from actual original input flags and retain that gate under9.",
+  "resources": {
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 58121818112,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7669182464
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=752066\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=729372\n",
+    "swap_pages": {
+      "pswpin": 70039,
+      "pswpout": 273907
+    },
+    "load": [
+      3.85009765625,
+      2.94921875,
+      2.60400390625
+    ],
+    "AS_per_process": 1073741824,
+    "DATA_per_process": 536870912,
+    "observed_own_group_RSS_stop": 536870912,
+    "own_safety_envelope": 1610612736,
+    "host_reserve_fraction": 0.2,
+    "CPU": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "CPU_seconds": 120,
+    "wall_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": "Not enforced; no borrowed service.",
+    "scheduler": "sinfo: tests/prior inval; normal/prior unk*. No usable node or allocation; no job requested.",
+    "estimate": "Tiny query imports and a two-ion public evaluation; prior same-context native/source-installed cases have<=364MB sampled group RSS. Start with small red guards, serial; no increase if pressure/refusal."
+  },
+  "provider": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+    "dirty": ""
+  },
+  "labels": {
+    "pharmacophoremt": "0.4.0+120.g0925d97",
+    "molsysmt": "0.23.0+687.g2325038e8",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "smonitor": "0.22.1+1.gc1b6ce2",
+    "argdigest": "0.17.1+3.g0712641",
+    "depdigest": "0.15.2+2.g032d345",
+    "ackredit": "0.12.1+10.g4beb850",
+    "pytest-receptor": "1.2.0"
+  },
+  "no_acquisition": "No manager transaction, shared prefix/provider update, native rebuild, external Pharmer build/run or148retry.",
+  "raw_capsule": "build/phmt-pharmer-enabled-20261109-4j2u_ibk",
+  "retention_review": "2026-11-23"
+}

@@ -116,6 +116,16 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#162 enabled-point import](pharmer_interoperability.md) advances query coherence
+and guided/expert IO for milestones1/2. False points are omitted before geometry,
+original point mappings survive persistence, missing flags default true and bad
+flag types receive a structured refusal. All34 selected source cases pass and two
+ordinary profiles retain byte-identical native JSON. The bundled19point file has
+only10enabled constraints; its original bytes are preserved and existing expected
+counts corrected. Exact owned installed receiving remains pending. Broader
+constraint-field/loss admission is separately open as#163; no external engine,
+general interoperability, biological or scale qualification is implied.
+
 [#161 P1 analytical preparation](pharmer_p1_comparison.md) advances the explicit
 comparison protocol for milestones1/6. One frozen three-site query and three
 synthetic original sources have rational positive/permutation/negative oracles.

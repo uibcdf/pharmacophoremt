@@ -20,7 +20,8 @@ DATA = Path(__file__).resolve().parents[1] / "pharmacophoremt" / "data"
 def native_input(request, tmp_path):
     kind = request.param
     if kind == "pharmer":
-        return str(DATA / "pharmer.json"), io.from_pharmer, 19
+        # Nineteen original points, ten enabled query constraints.
+        return str(DATA / "pharmer.json"), io.from_pharmer, 10
     path = tmp_path / ("model." + kind)
     if kind == "pml":
         path.write_text(

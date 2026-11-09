@@ -1,12 +1,27 @@
 import json
 
 import molsysmt as msm
+from smonitor import signal
 
 from pharmacophoremt import interaction_site as interaction_sites
 from pharmacophoremt import pyunitwizard as puw
+from pharmacophoremt._private.smonitor.exceptions import ArgumentTypeError
 
 
+@signal(tags=["io", "pharmer", "read"])
 def from_pharmer(pharmacophore):
+    """Read supported Pharmer points from a mapping or JSON filename.
+
+    A missing ``enabled`` field means True. Present values must be JSON
+    booleans; disabled points are omitted before feature or geometry parsing.
+    Surviving sites retain input order and use compact result indices. When
+    omissions occur, ``metadata['pharmer']`` records ``source_point_indices``
+    aligned with result sites and the separate ``disabled_point_indices``.
+
+    Coordinates and radii use angstroms. Attached-ligand conversion remains a
+    MolSysMT operation. This reader does not execute Pharmer or establish full
+    optional, negated, vector, size, search-limit or round-trip equivalence.
+    """
 
     from pharmacophoremt.pharmacophore import Pharmacophore
 
@@ -38,7 +53,18 @@ def from_pharmer(pharmacophore):
 
         return center, radius
 
-    for pharmer_interaction_site in pharmacophore["points"]:
+    source_point_indices, disabled_point_indices = [], []
+    for point_index, pharmer_interaction_site in enumerate(pharmacophore["points"]):
+        enabled = pharmer_interaction_site.get("enabled", True)
+        if not isinstance(enabled, bool):
+            raise ArgumentTypeError(
+                argument=f"points[{point_index}].enabled",
+                expected_type="a JSON boolean",
+                actual_type=type(enabled).__name__,
+            )
+        if not enabled:
+            disabled_point_indices.append(point_index)
+            continue
         pharmer_feature_name = pharmer_interaction_site["name"]
 
         if pharmer_feature_name == "Aromatic":
@@ -105,6 +131,13 @@ def from_pharmer(pharmacophore):
 
         else:
             raise NotImplementedError
+        source_point_indices.append(point_index)
+
+    if disabled_point_indices:
+        tmp_pharmacophore.metadata["pharmer"] = dict(
+            source_point_indices=source_point_indices,
+            disabled_point_indices=disabled_point_indices,
+        )
 
     if "ligand" in pharmacophore:
         ligand = msm.convert(pharmacophore["ligand"], to_form="molsysmt.MolSys")
