@@ -1,6 +1,6 @@
 # Pharmacophore-tool study registry
 
-Maintained 2026-11-08; accountable owners: PharmacophoreMT maintainers LMMV/dprada.
+Maintained 2026-11-09; accountable owners: PharmacophoreMT maintainers LMMV/dprada.
 The maintainer requests this separate registry for tools to study, compare against
 and learn from. It covers scientific methods, workflows, public APIs, performance
 engineering and usability. It complements the chemical-library registry.
@@ -85,6 +85,16 @@ Historical documentation and current product descriptions remain distinguished.
 | MOE | [Study, lessons and questions](https://github.com/uibcdf/pharmacophoremt/discussions/139) |
 
 ## Useful comparisons and product criteria
+
+The [Pharmer query/pruning review](pharmer_query_pruning_review.md) binds24selected
+official standalone files to SourceForge SVN revision95, separately from the2011
+paper and current Pharmit integration. It distinguishes retained/disabled/optional
+query fields, staged filters, final fit/score, reduced precision, exclusions and
+output limits. Twelve proposed comparison cases remain unexecuted. Three separate
+stdlib arithmetic controls expose a PHMT predicate mismatch now owned by#160;
+they are not competitor or public-native execution. Canonical Discussion#131
+publication/readback identities are separately retained under#128. No index,
+adapter, engine adoption or timing result follows.
 
 The [CDPKit update/identity review](cdpkit_library_update_review.md) now follows
 CREATE/APPEND/UPDATE/merge through exact v1.3.0 source. Ten captured Git blobs

@@ -1,0 +1,22 @@
+{
+  "schema": "pharmacophoremt.pharmer-query-review-plan@1",
+  "issue": 128,
+  "declared_at_utc": "2026-11-09T00:46:45.322872+00:00",
+  "parent_source": "af110fd2c54df4076903e883e97e50a3d3c26e7c",
+  "question": "Pin original standalone Pharmer primary source where accessible; distinguish original publication from current Pharmit integration. Trace query-required/disabled/optional features, units/radii, candidate pruning versus final acceptance, correspondences/chirality, scoring/limits/completeness and index/preparation context. Compare actual PHMT native contracts.",
+  "source_budget": "Selected primary source text only, <=24small files; no full clone, build, competitor execution, molecule/library acquisition or scientific work. Capture source identities and failed access routes; if no primary standalone source can be authenticated, retain that limit rather than silently substituting a mirror or Pharmit.",
+  "outcome": "Versioned source-only conclusions and explicit unexecuted comparison cases, canonical Discussion131 update, owner-specific actionable follow-up if observed. No performance/equivalence/dependency-adoption claim.",
+  "ownership": "PHMT owns pharmacophore search/query/pruning semantics; MolSysMT owns molecular perception/preparation/formats/geometry/collections. General environment/resource work remains common-owner responsibility.",
+  "checks": "Source authentication, local Markdown targets, generated report indexes and3reporting tests; resource-limited serial. No tests mirror a reversible documentary change.",
+  "resource_defaults": {
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "AS_DATA_bytes": 536870912,
+    "scientific_execution": false,
+    "capacity_not_reserved": true
+  },
+  "raw_evidence": "build/phmt-pharmer-study-20261109-65wo09x3",
+  "retention_review": "2026-11-23"
+}

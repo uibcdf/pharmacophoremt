@@ -23,6 +23,15 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-09: [Pharmer query/pruning review](pharmer_query_pruning_review.md)
+authenticates24official standalone r95files and retains12unexecuted comparator
+cases. Query meaning, candidate filtering, final acceptance, scoring, numerical
+representation and limits remain distinct. Three stdlib/Fraction controls confirm
+PHMT's literal site/pair allowance mismatch under#160; actual public/native
+method reproduction/correction/guard/installed receiving remain open. Canonical
+Discussion#131 publication is separately recorded in#128. No competitor,
+molecular, benchmark, index/adapter or dependency-adoption result follows.
+
 2026-11-09: [#159 complete inspection journey](archive/document_saved_inspection_journey.md)
 executes public progress/status/detail together in one snapshot.40distinct
 parameter cases pass from source and the unchanged owned188reader,80accepted

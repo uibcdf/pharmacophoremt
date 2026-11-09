@@ -71,6 +71,26 @@ to #108/MolSysMT#624 and canonical Discussion#132; publication receiving remains
 separate from toolkit execution, biological or performance evidence. No engine
 adoption or runtime change closes this broad registry.
 
+## Pharmer query/pruning follow-up — 2026-11-09
+
+The [standalone source review](../pharmer_query_pruning_review.md) captures24
+official SourceForge SVN r95 files with response lengths/metadata and SHA-256
+identities, preserving failed historical source routes and the corrected root.
+It separates query parsing/roles, connected-triplet planning, fingerprints/joins,
+final fitting/scoring, finite representation, exclusions and stopping rules.
+Twelve proposed comparisons remain unexecuted; no competitor is installed or run.
+The source-observed requirement-field inconsistency remains an unexecuted
+version-specific observation; no external issue is published.
+
+Three independently declared stdlib/Fraction controls confirm a mismatch between
+PHMT's literal positive-site numerical predicate and strict pair-radius filter.
+[#160](../pending_bugs/pair_distance_pruning_slack.md) owns actual public-native
+qualification, correction and guard/installed receiving; it remains open. The
+[review receipt](../evidence/pharmer_query_review_20261109.json) separates these
+arithmetic controls from competitor, molecular, performance and biological evidence.
+Canonical Discussion#131 receiving identities remain separately recorded in the
+owning#128issue after source delivery; this broad registry is not closed.
+
 ## Acceptance criteria
 
 1. Observe the dedicated category without changing other categories/history.

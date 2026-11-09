@@ -1,0 +1,615 @@
+{
+  "schema": "pharmacophoremt.pharmer-query-review@1",
+  "date": "2026-11-09",
+  "recorded_at_utc": "2026-11-09T01:01:33.784230+00:00",
+  "owners": [
+    "LMMV",
+    "dprada"
+  ],
+  "owning_issue": 128,
+  "product_issue": 108,
+  "discussion": 131,
+  "phmt_parent_source": "af110fd2c54df4076903e883e97e50a3d3c26e7c",
+  "source": {
+    "repository": "https://svn.code.sf.net/p/pharmer/code/",
+    "revision": 95,
+    "snapshot_url_prefix": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/",
+    "file_count": 24,
+    "bytes": 256685,
+    "authentication": "Pinned SVN snapshot URL, HTTP200, response byte lengths and local SHA256 rehash. Per-file ETags name last-change revisions. No independent server-history or built-binary attestation.",
+    "files": [
+      {
+        "path": "LICENSE",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/LICENSE",
+        "bytes": 15220,
+        "sha256": "d8c320ffc0030d1b096ae4732b50d2b811cf95e9a9b7377c1127b2563e0a0388",
+        "etag": "\"65//LICENSE\"",
+        "last_modified": "Fri, 19 Oct 2012 16:06:09 GMT",
+        "inspected_regions": [],
+        "used_for_selected_observations": false
+      },
+      {
+        "path": "PharmerQuery.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerQuery.cpp",
+        "bytes": 21517,
+        "sha256": "3be417572c7fbc5c2a6405db7abed6670cc019891c765a69ba84ab66a79b80d7",
+        "etag": "\"93//PharmerQuery.cpp\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT",
+        "inspected_regions": [
+          "constructors",
+          "initializeTriplets",
+          "generateQueryTriplets",
+          "loadResults",
+          "reduceResults"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "PharmerQuery.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerQuery.h",
+        "bytes": 6670,
+        "sha256": "fea9e9e3f88b2add08bff83962b108f92f90edefd10827b3b7dee53b281fff77",
+        "etag": "\"93//PharmerQuery.h\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT",
+        "inspected_regions": [],
+        "used_for_selected_observations": false
+      },
+      {
+        "path": "Triplet.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Triplet.h",
+        "bytes": 32931,
+        "sha256": "27515a7e288eb884c8946f8392845144d1fab2582e553e68a6422358973cca35",
+        "etag": "\"93//Triplet.h\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT",
+        "inspected_regions": [
+          "computeLengths",
+          "setExtra",
+          "extraFails",
+          "computeSearchData",
+          "isMatch"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "tripletmatching.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tripletmatching.cpp",
+        "bytes": 2935,
+        "sha256": "335e0a749cdffa8c44beae59e2598cd008d95cd01fc02874eb29f89b20bd147d",
+        "etag": "\"19//tripletmatching.cpp\"",
+        "last_modified": "Wed, 22 Jun 2011 18:35:21 GMT",
+        "inspected_regions": [],
+        "used_for_selected_observations": false
+      },
+      {
+        "path": "tripletmatching.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tripletmatching.h",
+        "bytes": 14384,
+        "sha256": "3af8317619af01eea6626e0af888c7af236e5a4063205ef68f4717fc7b9aad69",
+        "etag": "\"95//tripletmatching.h\"",
+        "last_modified": "Thu, 19 Feb 2015 18:27:51 GMT",
+        "inspected_regions": [
+          "TripletMatch connecting-index tests",
+          "TripletMatches metadata/active-match admission"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "Corresponder.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Corresponder.h",
+        "bytes": 8386,
+        "sha256": "1d503871334d9c097b13bbc3d5a0754056ddca64197a69c98cb6869f3932d5ce",
+        "etag": "\"91//Corresponder.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "generate positional fit/acceptance and injective recursion",
+          "operator()"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "QueryTripletFingerprint.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/QueryTripletFingerprint.cpp",
+        "bytes": 21110,
+        "sha256": "722529d10c51acca7f07478a50252a8097f4eb08a8d2401eaf86258a7d8f2313",
+        "etag": "\"91//QueryTripletFingerprint.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "set required-point/chirality/range encoding",
+          "isValid coarse/fine membership"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "QueryTripletFingerprint.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/QueryTripletFingerprint.h",
+        "bytes": 1814,
+        "sha256": "f6712eb97fd7ba6fa03befa484b04d2aff1054018ebc9d44e2e1f2e7998a0224",
+        "etag": "\"1//QueryTripletFingerprint.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT",
+        "inspected_regions": [],
+        "used_for_selected_observations": false
+      },
+      {
+        "path": "TripletFingerprint.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/TripletFingerprint.h",
+        "bytes": 5998,
+        "sha256": "4575bae511279a160c96425f8720922d24965525ea0c8b0989ca50db52647b93",
+        "etag": "\"91//TripletFingerprint.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "contains"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "pharmarec.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmarec.cpp",
+        "bytes": 28895,
+        "sha256": "5c89ea4d1187815d95f37e28641be5da984211d896dc9387622c99785401ad94",
+        "etag": "\"91//pharmarec.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "PharmaPoint::read",
+          "readPharmaPointsJSON",
+          "bare query fields"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "pharmarec.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmarec.h",
+        "bytes": 8041,
+        "sha256": "48d832d6ad7070f13b07008e8d90085419bab0d3487be15c1db1a9500f877574",
+        "etag": "\"91//pharmarec.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "PharmaPoint::PointRequirements",
+          "radiusWeight"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "queryparsers.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/queryparsers.h",
+        "bytes": 14984,
+        "sha256": "90ead8c1c011bda939ef2f68b5926426fe37efeea77993a3c12b13d5dad67fca",
+        "etag": "\"91//queryparsers.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "JSON parser delegation",
+          "selected optional XML fields; complete format behavior unqualified"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "pharmerdb.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.cpp",
+        "bytes": 31096,
+        "sha256": "bb629291c101474d09aac8bb7cf2ef884b459e58861fc8ae9d0efc310c2c4614",
+        "etag": "\"93//pharmerdb.cpp\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT",
+        "inspected_regions": [
+          "MolDataCreator feature cap/oversize omission",
+          "rankTriplets",
+          "queryProcessPoints",
+          "queryIndex",
+          "generateTripletMatches"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "params.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/params.h",
+        "bytes": 3491,
+        "sha256": "b9e83c5b7085172c898b7b581f4816391f530f9c8f1271b2570a59f30dc78a22",
+        "etag": "\"91//params.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "QueryParameters fields/defaults"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "RMSD.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/RMSD.cpp",
+        "bytes": 6192,
+        "sha256": "4f3abc8b1c6f68e0cad246566b65cf45b536b159f39c7037864dd4b995c34d69",
+        "etag": "\"91//RMSD.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "weighted calculateRMSD"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "RMSD.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/RMSD.h",
+        "bytes": 3327,
+        "sha256": "1a50c2f532a5fae421ed74eacf7a1a548a5b2b410c04c216d14337d013a1b44f",
+        "etag": "\"91//RMSD.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [],
+        "used_for_selected_observations": false
+      },
+      {
+        "path": "Excluder.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Excluder.cpp",
+        "bytes": 1582,
+        "sha256": "71f4b9a13ef98d17bb14e9eaa50b17005dc627c2c1ccef2d6840350c2e5f91b5",
+        "etag": "\"55//Excluder.cpp\"",
+        "last_modified": "Mon, 11 Jun 2012 15:26:53 GMT",
+        "inspected_regions": [
+          "addJSONPoints",
+          "isExcluded"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "Excluder.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Excluder.h",
+        "bytes": 1324,
+        "sha256": "7ea0aa2bb7436385ccd810720b104d29aa6abc43a591f28d6953e4453930747a",
+        "etag": "\"55//Excluder.h\"",
+        "last_modified": "Mon, 11 Jun 2012 15:26:53 GMT",
+        "inspected_regions": [
+          "ExclusionSphere::contains"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "ThreePointData.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreePointData.h",
+        "bytes": 4162,
+        "sha256": "ed8f254adeae0d01ef59302c58889cc3b8da1a1e62408771d1fb391372b3fa16",
+        "etag": "\"1//ThreePointData.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT",
+        "inspected_regions": [
+          "packed integer/index fields"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "ThreePointData.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreePointData.cpp",
+        "bytes": 5330,
+        "sha256": "0f3aa4bfa967faaff0c37b1639ae3bbb5a42ee84d2c20d14800d7fe183bf2493",
+        "etag": "\"94//ThreePointData.cpp\"",
+        "last_modified": "Thu, 18 Dec 2014 02:39:59 GMT",
+        "inspected_regions": [
+          "reduceFloat and unsigned variants",
+          "unreduceFloat",
+          "vecValue",
+          "stored triangle construction"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "PMol.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.h",
+        "bytes": 5433,
+        "sha256": "f45408c7d03f0a4ec05bd9f0d7bf68a9e36388d28d10caaf0ef102314bd62444",
+        "etag": "\"91//PMol.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "declared stored-coordinate API; atom membership implementation not fully traced"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "TripletFingerprint.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/TripletFingerprint.cpp",
+        "bytes": 4700,
+        "sha256": "4c1ca7e439f972cb5889001189c28b784e00d14ee94cb7629849c81c643c3119",
+        "etag": "\"91//TripletFingerprint.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT",
+        "inspected_regions": [
+          "coarse/fine bin constants",
+          "Bloom bit defaults"
+        ],
+        "used_for_selected_observations": true
+      },
+      {
+        "path": "README",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/README",
+        "bytes": 7163,
+        "sha256": "1f252a8a1a90eda8a4da2d0bc7c67b3d35023049d6caddb45757272c5eb159eb",
+        "etag": "\"89//README\"",
+        "last_modified": "Wed, 20 Aug 2014 14:46:09 GMT",
+        "inspected_regions": [
+          "license declaration",
+          "USING command/output limits",
+          "historical deployment instructions"
+        ],
+        "used_for_selected_observations": true
+      }
+    ],
+    "inspection_scope": "Selected named functions/regions, not an exhaustive source audit; captured auxiliary files are distinguished from used observations.",
+    "license": "README declares GPL version2 or later; no source implementation is copied into PHMT and no adoption/legal compatibility determination is made."
+  },
+  "paper": {
+    "title": "Pharmer: Efficient and Exact Pharmacophore Search",
+    "authors": [
+      "David Ryan Koes",
+      "Carlos J. Camacho"
+    ],
+    "year": 2011,
+    "doi": "10.1021/ci200097m",
+    "primary_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3124593/",
+    "scope": "Historical method/context only; no historical timing transferred or executable qualified."
+  },
+  "source_route_dispositions": [
+    {
+      "route": "guessed GitHub dkoes/pharmer/master",
+      "result": "404; not a source identity or PHMT defect"
+    },
+    {
+      "route": "official historical /trunk/",
+      "result": "404; primary maintainer2019corrected root yields200, listing revision95"
+    },
+    {
+      "route": "web-tool SVN listing",
+      "result": "not accessible through web tool; bounded native HTTPS read obtains official bytes"
+    },
+    {
+      "route": "GitHub mirror / current Pharmit directory listing",
+      "result": "orientation only; neither substitutes for the official standalone snapshot"
+    },
+    {
+      "route": "native Discussion read",
+      "result": "connector has no Discussion operations; first sandbox connection fails, authorized native read succeeds"
+    }
+  ],
+  "comparative_observations": [
+    "Enabledfalse drops a point; optional PHMT coverage retains it. Requirement enum and paper extension do not qualify complete optional/negated matching.",
+    "JSON reader checks requirement membership but required string type; unexecuted r95 field-name inconsistency, no external issue publication.",
+    "Typed triplet planning, reduced geometric ranges, context fingerprints, conformer joins and final fit/acceptance are separate stages.",
+    "Radius-weighted fitting, unweighted returned RMSD and PHMT coverage/seeded scores have different meanings.",
+    "Packed precision/capacity, coarse direction masks, exclusion boundary and stopping denominators need explicit controls.",
+    "Source inspection does not establish no-false-negative geometric encoding or PHMT acceleration."
+  ],
+  "proposed_comparison_cases": [
+    {
+      "id": "P1",
+      "question": "Required spherical interior",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P2",
+      "question": "Unequal radii/objectives",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P3",
+      "question": "Optional, disabled and negated fields",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P4",
+      "question": "Filter ablation",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P5",
+      "question": "Chirality, symmetry and degeneracy",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P6",
+      "question": "Quantization and capacity",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P7",
+      "question": "Positive/exclusion boundaries",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P8",
+      "question": "Assignment identity",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P9",
+      "question": "Stopping/denominators",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P10",
+      "question": "PHMT numerical filter",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P11",
+      "question": "Search-asset compatibility",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    },
+    {
+      "id": "P12",
+      "question": "Direction/size stages",
+      "state": "proposed, unexecuted; complete coordinates/definitions/input/resource plan not yet frozen"
+    }
+  ],
+  "executed_competitor_cases": 0,
+  "phmt_arithmetic_followup": {
+    "issue": 160,
+    "cases": 3,
+    "receipt": "devguide/evidence/pruning_slack_arithmetic_20261109.json",
+    "identity": {
+      "bytes": 5921,
+      "sha256": "9523c345e9dded18bbe2e49a2000d30080b4924e9b07d862862f50e7e45b8bd0"
+    },
+    "confirmed_scope": "Literal source predicate mismatch, independently checked with exact binary Fraction arithmetic.",
+    "public_native_reproduction": "pending",
+    "implementation": "pending",
+    "guard_and_owned_installed_receiving": "pending",
+    "no_scientific_imports": true
+  },
+  "PHMT_source_inputs": {
+    "pharmacophoremt/screening/correspondence.py": {
+      "bytes": 5426,
+      "sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24"
+    },
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "bytes": 18143,
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b"
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "bytes": 10334,
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746"
+    },
+    "pharmacophoremt/screening/alignment.py": {
+      "bytes": 7339,
+      "sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc"
+    },
+    "devguide/native_constraint_semantics.md": {
+      "bytes": 8408,
+      "sha256": "b7ddd35eef43100e4d21b7c5467addc0ab43867b0ba60fd4b8125485f67054b3"
+    },
+    "devguide/rigid_search_workflow.md": {
+      "bytes": 14745,
+      "sha256": "3efd2a428119dcbea9625d907254a1c5337f0b7e6975ed0d04a68f3b13a8cc0c"
+    }
+  },
+  "consumer_runtime_changed": false,
+  "mechanical_python_change": "Add owning160issue identity to the existing reporting inventory; no new unit tests mirror this documentary change.",
+  "source_only_receiving": [
+    {
+      "name": "index",
+      "exit_code": 0,
+      "output": "wrote devguide/pending_bugs/README.md\n",
+      "scope": "Original completed check; not repeated after independent Git mapping failure."
+    },
+    {
+      "name": "index-check",
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n",
+      "scope": "Original completed check; not repeated after independent Git mapping failure."
+    },
+    {
+      "name": "reporting",
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.093s\n\nOK\n",
+      "scope": "Original completed check; not repeated after independent Git mapping failure."
+    },
+    {
+      "name": "ruff",
+      "exit_code": 0,
+      "output": "All checks passed!\n",
+      "scope": "Original completed check; not repeated after independent Git mapping failure."
+    },
+    {
+      "name": "format",
+      "exit_code": 0,
+      "output": "434 files already formatted\n",
+      "scope": "Original completed check; not repeated after independent Git mapping failure."
+    },
+    {
+      "name": "diff-git-profile",
+      "exit_code": 0,
+      "original_failure": {
+        "exit_code": 128,
+        "log": "logs/diff.log",
+        "profile": "Reader AS/DATA512MiB per process",
+        "cause": "Git cannot map this repository pack under the reader address-space ceiling."
+      },
+      "actual_profile": "Existing Git-specific route: inherited unlimited AS, DATA512MiB, CPU30s, affinity19, nice19, idleIO; no global setting or scientific/resource budget changed."
+    },
+    {
+      "name": "local-links-pre-receipt",
+      "documents": 8,
+      "verified": 218,
+      "receipt": "New review receipt is next output; final all-target check follows."
+    },
+    {
+      "name": "source-authentication",
+      "official_pinned_source_files": 24,
+      "bytes": 256685,
+      "all_local_SHA256_equal": true
+    }
+  ],
+  "canonical_publication": {
+    "destination": "https://github.com/uibcdf/pharmacophoremt/discussions/131",
+    "source_and_publication_receiving": "Separate: actual comment ID/body digest/readback will be retained in owning128issue and ignored capsule after source publication. Original body/category preserved.",
+    "connector_limit": "No Discussion mutation capability; native GraphQL fallback."
+  },
+  "resources": {
+    "cpu": 19,
+    "backend_threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "AS_DATA_bytes": 536870912,
+    "scientific_execution": false,
+    "capacity_not_reserved": true,
+    "scientific_backend_threads_used": 0,
+    "cgroup_memory_swap_tasks_quota": "not enforced; light source/arithmetic/reporting only",
+    "reserve_fraction": 0.2,
+    "own_safety_envelope_bytes": 1610612736,
+    "Git_profile": "DATA512MiB, inherited unlimited AS for existing pack mappings; CPU30seconds, affinity19/nice19/idleIO. Original reader-AS mapping failure preserved; no OS limit was changed."
+  },
+  "runtime_engine_install_or_execution": false,
+  "molecular_data_acquisition": false,
+  "environment_manager_transaction": false,
+  "pipeline_scientific_execution": false,
+  "timing_benchmark": false,
+  "raw_evidence": "build/phmt-pharmer-study-20261109-65wo09x3",
+  "retention_review": "2026-11-23",
+  "evidence_files": {
+    "plan.json": {
+      "bytes": 1859,
+      "sha256": "878a2bf28baa3b44f433b419ee9957ec75f3ddd2986a9ff4a6f9cf3ae32f64a9"
+    },
+    "preflight.json": {
+      "bytes": 652,
+      "sha256": "1cfd38bcf4bdaf02ad654ffb0fd47ba1b12aec1147cc5b163e9c8a13de9792d9"
+    },
+    "sourceforge_access.json": {
+      "bytes": 130,
+      "sha256": "f556519d4179c0be2a0ea9dfbb08b33a08f9551a97949021c2da34faff22193b"
+    },
+    "sourceforge_root_access.json": {
+      "bytes": 391,
+      "sha256": "a6b4dfde71f7d8c5774b5c904a96c543e71adb43f0465c7990cc95f9f4f2c4dd"
+    },
+    "svn_pinned_route.json": {
+      "bytes": 532,
+      "sha256": "1872fb26b7607ba0a2426ce38f224fc31341dec6c52db212bbed20afea271cee"
+    },
+    "primary_manifest.json": {
+      "bytes": 11807,
+      "sha256": "1814788268d68bcaae6d9c266c1df710dfe44257402bc03fe380f319f7ad63d6"
+    },
+    "source_capture.json": {
+      "bytes": 9583,
+      "sha256": "718608a1c161f13d3d81aa7fecbb702007c5302b141cacb9fc9ad68e75afc427"
+    },
+    "source_capture_extra.json": {
+      "bytes": 1347,
+      "sha256": "0c76d766b66f3e696d74456605aa5fd9d26db1b0547290d903060dd360388616"
+    },
+    "arithmetic_plan.json": {
+      "bytes": 1218,
+      "sha256": "3d65cca9e77372342eef85712e492aa8b7cbf5c1618915a80d5b3892cddca55b"
+    },
+    "arithmetic_receipt.json": {
+      "bytes": 4792,
+      "sha256": "cd2a76f52b69eee48126e0832f0b8d69eeb4f09e7de7065ce5552cc51952c558"
+    },
+    "local_checks.json": {
+      "bytes": 1842,
+      "sha256": "527330b1d0983e60b0a4d317d4ce5a4a9c18f6f225f345b29458ecade8d927db"
+    },
+    "raw/discussion131-before.json": {
+      "bytes": 3087,
+      "sha256": "98b3947cd147dc9079cbfee0c9d2e5a08102d559b0791d96c3bf4f203d6ae1d2"
+    },
+    "logs/diff.log": {
+      "bytes": 173,
+      "sha256": "893f5d57e863517e6fa973050357f15b8e6661aeab6bb3d40a378bff2ecc9c22"
+    },
+    "logs/diff-git-profile.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "limits": "Documentary source review and3stdlib arithmetic controls only. No method/engine/adapter/index/connector adoption, complete source exact-head/public dependency/installed-platform, biological, human-usability, scale/performance or release qualification. Prior#148failed routes are unchanged and not retried."
+}

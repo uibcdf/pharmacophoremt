@@ -116,6 +116,15 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+The [Pharmer query/pruning review](pharmer_query_pruning_review.md) receives24
+official r95source files and declares12unexecuted comparison cases for
+milestones1/5/6. Its [receipt](evidence/pharmer_query_review_20261109.json)
+separates source observations from three independent PHMT arithmetic controls.
+Those controls confirm a literal numerical-predicate mismatch, now owned by
+[#160](pending_bugs/pair_distance_pruning_slack.md). Public/native reproduction,
+implementation and same-file installed receiving remain pending. No competitor
+execution, index/adapter, scale measurement or new dependency is delivered.
+
 [#159 complete inspection recipe](archive/document_saved_inspection_journey.md)
 connects existing counts, selection and detail in one caller-owned snapshot.
 Forty parameter cases pass in each of current source and the unchanged owned188

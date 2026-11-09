@@ -1,0 +1,209 @@
+{
+  "schema": "pharmacophoremt.pruning-slack-arithmetic@1",
+  "issue": 160,
+  "recorded_at_utc": "2026-11-09T00:52:38.189678+00:00",
+  "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+  "plan": {
+    "schema": "pharmacophoremt.pruning-slack-arithmetic-plan@1",
+    "declared_at_utc": "2026-11-09T00:51:53.317408+00:00",
+    "parent": "af110fd2c54df4076903e883e97e50a3d3c26e7c",
+    "scope": "Follow-up to source-only#128 study: stdlib floating-point predicate witness only, no PHMT/MolSysMT/Pharmer import, fitting, molecular input or pipeline execution. Original source-review plan remains unchanged.",
+    "radius_nm": "1/8 exactly",
+    "delta_nm": "2^-52 exactly",
+    "query": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ]
+    ],
+    "cases": [
+      {
+        "name": "nominal-radius",
+        "excess_delta_multiplier": 0,
+        "expected": "site-accepted and strict pair survives"
+      },
+      {
+        "name": "evaluator-numerical-boundary",
+        "excess_delta_multiplier": 1,
+        "expected": "site-accepted but strict pair rejects"
+      },
+      {
+        "name": "outside-evaluator-allowance",
+        "excess_delta_multiplier": 2,
+        "expected": "site-rejected and strict pair rejects"
+      }
+    ],
+    "requirement": "Record exact float.hex and independent rational binary values; preserve failure versus unexecuted native scope. No implementation change."
+  },
+  "cases": [
+    {
+      "name": "nominal-radius",
+      "candidate": [
+        [
+          -0.125,
+          0.0,
+          0.0
+        ],
+        [
+          1.125,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "distances_nm": [
+        0.125,
+        0.125,
+        0.0
+      ],
+      "distances_hex": [
+        "0x1.0000000000000p-3",
+        "0x1.0000000000000p-3",
+        "0x0.0p+0"
+      ],
+      "evaluator_numeric_allowance_nm": 2.220446049250313e-16,
+      "per_site_acceptance": [
+        true,
+        true,
+        true
+      ],
+      "pair_difference_nm": 0.25,
+      "pair_difference_hex": "0x1.0000000000000p-2",
+      "strict_pair_limit_nm": 0.25,
+      "strict_pair_prunes": false,
+      "binary_rational_expected_per_displaced_site": "1/8",
+      "binary_rational_pair_difference": "1/4"
+    },
+    {
+      "name": "evaluator-numerical-boundary",
+      "candidate": [
+        [
+          -0.12500000000000022,
+          0.0,
+          0.0
+        ],
+        [
+          1.1250000000000002,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "distances_nm": [
+        0.12500000000000022,
+        0.12500000000000022,
+        0.0
+      ],
+      "distances_hex": [
+        "0x1.0000000000008p-3",
+        "0x1.0000000000008p-3",
+        "0x0.0p+0"
+      ],
+      "evaluator_numeric_allowance_nm": 2.220446049250313e-16,
+      "per_site_acceptance": [
+        true,
+        true,
+        true
+      ],
+      "pair_difference_nm": 0.25000000000000044,
+      "pair_difference_hex": "0x1.0000000000008p-2",
+      "strict_pair_limit_nm": 0.25,
+      "strict_pair_prunes": true,
+      "binary_rational_expected_per_displaced_site": "562949953421313/4503599627370496",
+      "binary_rational_pair_difference": "562949953421313/2251799813685248"
+    },
+    {
+      "name": "outside-evaluator-allowance",
+      "candidate": [
+        [
+          -0.12500000000000044,
+          0.0,
+          0.0
+        ],
+        [
+          1.1250000000000004,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ]
+      ],
+      "distances_nm": [
+        0.12500000000000044,
+        0.12500000000000044,
+        0.0
+      ],
+      "distances_hex": [
+        "0x1.0000000000010p-3",
+        "0x1.0000000000010p-3",
+        "0x0.0p+0"
+      ],
+      "evaluator_numeric_allowance_nm": 2.220446049250313e-16,
+      "per_site_acceptance": [
+        false,
+        false,
+        true
+      ],
+      "pair_difference_nm": 0.2500000000000009,
+      "pair_difference_hex": "0x1.0000000000010p-2",
+      "strict_pair_limit_nm": 0.25,
+      "strict_pair_prunes": true,
+      "binary_rational_expected_per_displaced_site": "281474976710657/2251799813685248",
+      "binary_rational_pair_difference": "281474976710657/1125899906842624"
+    }
+  ],
+  "accepted_predicate_witness": true,
+  "scope": "Three stdlib arithmetic controls of the literal source predicates with independent Fraction checks. No PHMT/Pharmer/MolSysMT import or API/fitting/molecular pipeline, no implementation change or end-to-end false-negative reproduction.",
+  "public_native_receiving": "pending",
+  "source_files": {
+    "pharmacophoremt/screening/pose_evaluation.py": {
+      "bytes": 18143,
+      "sha256": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b"
+    },
+    "pharmacophoremt/screening/correspondence.py": {
+      "bytes": 5426,
+      "sha256": "daedf3b56dd5995507fcf18f2ff8433f4e5badd757c50e9fbbd4556afd485e24"
+    },
+    "pharmacophoremt/screening/rigid_search.py": {
+      "bytes": 10334,
+      "sha256": "d9f737039c19a27c39a1ef0c8867839020df00366185b40e65af5503efd5f746"
+    },
+    "devguide/native_constraint_semantics.md": {
+      "bytes": 8408,
+      "sha256": "b7ddd35eef43100e4d21b7c5467addc0ab43867b0ba60fd4b8125485f67054b3"
+    }
+  },
+  "private_control": {
+    "path": "build/phmt-pharmer-study-20261109-65wo09x3/controls/arithmetic_witness.py",
+    "bytes": 2630,
+    "sha256": "2e7c797ca0fc7fe4a1c7e604d066f3d31ccfc75614791a90d52af417813184c2"
+  },
+  "declared_plan_identity": {
+    "bytes": 1218,
+    "sha256": "3d65cca9e77372342eef85712e492aa8b7cbf5c1618915a80d5b3892cddca55b"
+  },
+  "raw_evidence": "build/phmt-pharmer-study-20261109-65wo09x3",
+  "retention_review": "2026-11-23"
+}

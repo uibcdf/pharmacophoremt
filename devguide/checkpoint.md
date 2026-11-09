@@ -10,18 +10,19 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#159 complete saved-work inspection](archive/document_saved_inspection_journey.md)
-connects progress, status selection and exact-key detail in one public Python
-recipe/snapshot. The [receipt](evidence/saved_inspection_journey_20261109.json)
-receives40declared parameter cases from current source and the unchanged owned188
-reader,80accepted executions over four original historical files and one synthetic
-interrupted run. Original counts/order/status/attempts/full details and opaque
-keys verify; the equals command form handles dash-leading keys. Strict docs,
-rendered navigation and Ruff pass. No runtime/API/dependency change or new wheel
-is needed. The original private-checker QA-admission failure is retained; the
-existing QA route passes and MolSysSuite#176 owns its nonblocking improvement.
+The [Pharmer query/pruning review](pharmer_query_pruning_review.md) authenticates
+24selected official standalone files at SVN revision95 and proposes12unexecuted
+comparison cases. Its [receipt](evidence/pharmer_query_review_20261109.json)
+separates source interpretation, current PHMT contracts and three independent
+stdlib/Fraction arithmetic controls. Those controls confirm a literal mismatch
+between PHMT's positive-site numerical allowance and strict pair-radius filter;
+[#160](pending_bugs/pair_distance_pruning_slack.md) owns public/native reproduction,
+correction, guard and installed receiving. No runtime or dependency changes,
+competitor execution, molecular calculation or index/scale claim follow.
+Canonical Discussion#131 publication/readback is separately owned by#128.
 
 Earlier bounded increments retain their own contracts and source/run identities:
+[#159 complete saved-work inspection](archive/document_saved_inspection_journey.md),
 [#158 status selection](archive/select_saved_work_status.md),
 [CDPKit lifecycle study](cdpkit_library_update_review.md),
 [#157 single-work detail](archive/inspect_saved_work_item.md),
@@ -33,7 +34,7 @@ Earlier bounded increments retain their own contracts and source/run identities:
 [#145 progress reuse](saved_progress_reuse.md),
 [#153 SQLite cleanup](archive/administrative_sqlite_lifetimes.md) and
 [#154 native service caller](archive/native_qualification_service_oom.md).
-The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/24f04b191a9bd6e127f2a56dfc0fe3470156bc21/devguide/checkpoint.md)
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/af110fd2c54df4076903e883e97e50a3d3c26e7c/devguide/checkpoint.md)
 preserves the detailed receiving statements before this closeout; they are not
 new tasks. The [chemical-library guide](../docs/content/user/chemical_libraries.md)
 connects these operations, without qualifying a new connector or human usability.
@@ -44,10 +45,12 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** pin and review Pharmer's query-feature and pruning
-semantics under#128, then declare equivalent controls before implementation or
-execution. Receive the provider disposition of the nine collection/update cases
-separately; the completed inspection recipe remains the current#108 entry point.
+**Next concrete action:** qualify#160's owned numerical candidate boundary and
+correct it with an independent regression guard, then receive the actual public/
+native source and installed route only in an admitted safe context. Preserve
+physical tolerances and finite-method meanings. Receive the provider disposition
+of the nine collection/update cases separately; the completed inspection recipe
+remains the current#108 entry point.
 Before another#148 acquisition, receive a distinct reviewed environment-manager
 strategy from the common-tool owner. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
@@ -108,7 +111,8 @@ earlier route.
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
-| #128 tool registry | [One executed Pharm3D analytical comparison, the pinned CDPKit lifecycle source review and remaining documentary records](pharmacophore_tools_registry.md) | Review pinned Pharmer query/search semantics and declare comparable cases; retain separate benchmark/biological scope |
+| #128 tool registry | [One executed Pharm3D analytical comparison, pinned CDPKit/Pharmer source reviews and remaining documentary records](pharmacophore_tools_registry.md) | Qualify PHMT#160; freeze proposed comparator cases only after admitting their complete problem/inputs/resources |
+| #160 numerical pruning | Three stdlib/Fraction controls measure the literal site/pair boundary mismatch | Public/native reproduction, conservative correction and relevant guard/installed receiving remain pending |
 | #9/#10/#23/#95 | Frozen27c1178 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |

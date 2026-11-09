@@ -121,6 +121,13 @@ has the same behavior. [Official historical tutorial](https://www.uibcdf.org/Ope
 
 ## Indexing, search semantics and result handling
 
+The [pinned standalone Pharmer review](pharmer_query_pruning_review.md) now traces
+these stages through official SVN revision95. Its24captured source files and12
+unexecuted cases qualify the documentary scope more precisely. Final scoring,
+optional/directional support, quantization, exclusions and output caps need
+explicit compatibility; no engine or acceleration is adopted. The discovered
+PHMT numerical candidate-boundary question is independently owned by#160.
+
 **An index is a separate engineering/scientific asset.** The original Pharmer
 method precomputes pharmacophore-triplet indexes and uses additional fingerprints
 before final alignment. Its historical benchmarks show substantial index storage
