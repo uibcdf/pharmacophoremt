@@ -39,8 +39,16 @@ The [prospective plan](evidence/work_source_selection_plan_20261109.json) record
 the unchanged resource limits and MolSysMT#624 collection boundary. The
 [source receipt](evidence/work_source_selection_source_20261109.json) receives
 120selected cases (13new/107existing), eight unchanged ordinary command outputs,
-strict full docs and local governance. One exact owned installed receiving
-remains pending.
+strict full docs and local governance. The
+[installed receipt](evidence/work_source_selection_installed_20261109.json)
+receives the same120bodies from source bd164dd / owned203 with 131 guarded
+children, 16 documented commands on four unchanged historical files and eight
+ordinary outputs identical to source. All214wheel payloads/159runtime files
+verify; only seven independent-reader runtime modules load. The initial private
+JUnit-prefix comparison refusal and its corrected two-prefix admission remain
+in the raw archive; no runtime/test/receiving rerun occurred. This bounded
+bridge resolves[#166](archive/select_saved_work_by_source.md), with full source,
+public dependency/platform, human-usability, scientific and release gates separate.
 
 ## Original status-only contract — #158
 

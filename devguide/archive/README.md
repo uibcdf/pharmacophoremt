@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (106)
+### Resolved (107)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -104,6 +104,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`retrospective_metric_key_collision.md`](retrospective_metric_key_collision.md) — [#100](https://github.com/uibcdf/pharmacophoremt/issues/100) — Retrospective EF settings must not overwrite colliding reported metric keys. *(resolved, measured)*
 - [`reuse_saved_progress.md`](reuse_saved_progress.md) — [#145](https://github.com/uibcdf/pharmacophoremt/issues/145) — Reuse verified criterion-independent counts within one immutable saved view. *(resolved, reproduced)*
 - [`rigid_negative_ranking_contract.md`](rigid_negative_ranking_contract.md) — [#63](https://github.com/uibcdf/pharmacophoremt/issues/63) — Define a frame-independent molecular ranking contract for completed rigid negatives. *(resolved, measured)*
+- [`select_saved_work_by_source.md`](select_saved_work_by_source.md) — [#166](https://github.com/uibcdf/pharmacophoremt/issues/166) — Select saved screening work by its exact original source key. *(resolved, measured)*
 - [`select_saved_work_status.md`](select_saved_work_status.md) — [#158](https://github.com/uibcdf/pharmacophoremt/issues/158) — Select saved work by native or pending status through the public reader. *(resolved, measured)*
 - [`stream_historical_esr1_metadata.md`](stream_historical_esr1_metadata.md) — [#152](https://github.com/uibcdf/pharmacophoremt/issues/152) — Stream complete historical ESR1 CSVs while preserving frozen cohort and exclusion semantics. *(resolved, measured)*
 - [`summarize_saved_screening_run.md`](summarize_saved_screening_run.md) — [#146](https://github.com/uibcdf/pharmacophoremt/issues/146) — Analyze labelled cohorts directly from verified saved screening work. *(resolved, reproduced)*

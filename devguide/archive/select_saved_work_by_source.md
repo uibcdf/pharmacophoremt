@@ -1,13 +1,13 @@
 ---
 summary: Select saved screening work by its exact original source key.
 issue: uibcdf/pharmacophoremt#166
-status: open
+status: resolved
 opened: 2026-11-09
-closed:
+closed: 2026-11-09
 verification: measured
 area: [screening, results]
-guard:
-normative:
+guard: tests/test_public_work_source.py::TestPublicWorkSource::test_exact_source_and_status_intersections_keep_original_repeated_work
+normative: devguide/saved_work_selection.md
 blocked_by: []
 supersedes: []
 ---
@@ -39,9 +39,15 @@ selection is PHMT's independent responsibility, not a substitute molecular reade
 The prospective plan is [recorded](../evidence/work_source_selection_plan_20261109.json).
 The [source receipt](../evidence/work_source_selection_source_20261109.json)
 retains 120 passing selected cases (13new/107existing), 11 original red failures,
-eight exact original command outputs and strict docs/local governance. Exact
-owned installed receiving remains pending. No large-library
-performance, new connector or chemical independence claim follows.
+eight exact original command outputs and strict docs/local governance. The
+[installed receipt](../evidence/work_source_selection_installed_20261109.json)
+receives the same120 bodies from source bd164dd / owned203, 131 guarded children,
+16 documented historical commands on four unchanged files and eight ordinary
+outputs identical to source. All214wheel payloads/159runtime files verify.
+The original namespace-prefix sealing refusal is retained; only the private
+comparison was corrected, with no runtime/test/receiving rerun. Full raw evidence
+is archived with compressed/uncompressed hashes. No large-library performance,
+new connector or chemical independence claim follows.
 
 ## Alternatives and refuted paths
 
@@ -58,4 +64,5 @@ or public release/platform qualification. Pharmer#165 and #148 stay stopped.
 Independent mixed-status/source and opaque-key controls; original command/file
 bytes retained; late failures have no success output; same tests from one exact
 owned installed artifact with guarded fresh readers; public guidance and current
-checkpoint. Archive only after concrete receipts and durable guards exist.
+checkpoint. Resolved by the source/installed receipts and the guard above. Full supported
+source/public/platform, biological, usability and release gates remain separate.

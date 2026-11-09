@@ -16,10 +16,12 @@ supersedes: []
 
 ## Exact original source selection — 2026-11-09 UTC
 
-[#166](select_saved_work_by_source.md) adds source/status intersections to the
+[#166](../archive/select_saved_work_by_source.md) adds source/status intersections to the
 saved-work API and CLI, preserving original repeated work/global ordinals and
-full-file admission. Source120selected cases and eight original command byte
-controls pass; owned installed receiving remains pending. MolSysMT#624 still has
+full-file admission. The same120selected source/owned203 installed cases, 131 guarded children,
+16 documented commands on four historical files and eight original command byte
+controls pass. [Exact installed receiving](../evidence/work_source_selection_installed_20261109.json)
+resolves this bounded increment; full supported gates remain open. MolSysMT#624 still has
 two consumer comments and no provider API delivery at this receiving. No PHMT
 molecular-collection substitute, new connector or scale qualification follows.
 

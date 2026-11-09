@@ -118,9 +118,11 @@ installation/distribution gates; passing one task does not close its milestone.
 
 [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
 advances milestone2: select an original source and status intersection without
-regrouping repeated work or rerunning science. The source120selected cases pass;
-owned installed receiving and final compatibility/documentation checks remain
-pending. Provider collections remain MolSysMT#624-owned and no broader connector
+regrouping repeated work or rerunning science. The same120selected cases pass from
+source bd164dd and one exact owned203 installed reader, with 131 guarded
+children, 16 documented commands on four historical files and eight unchanged
+ordinary outputs. [Exact receiving](evidence/work_source_selection_installed_20261109.json)
+resolves this bounded bridge; full supported source/installed/public gates stay open. Provider collections remain MolSysMT#624-owned and no broader connector
 or scale claim follows.
 
 [#165 pinned r95 build](pharmer_r95_build_receiving.md) advances source/diagnostic

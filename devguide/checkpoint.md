@@ -10,14 +10,15 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 ## Last received increment and next action
 
 [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
-adds `source_key` to the independent work iterator and `--source-key` to work
-inspection, composed with status. Source120selected cases pass (13new/107existing),
-including opaque keys, repeated occurrences, pending drafts, late count errors
-and corruption outside the selection. The [source receipt](evidence/work_source_selection_source_20261109.json)
-also receives eight unchanged original command outputs and strict docs/local
-governance. Exact owned installed receiving remains pending. No provider operation or
-large-library qualification follows; MolSysMT#624 remains open without owner API
-delivery at this receiving.
+adds literal source/status intersections to the independent work API and CLI.
+The [source](evidence/work_source_selection_source_20261109.json) and
+[installed](evidence/work_source_selection_installed_20261109.json) receipts
+receive the same120cases (13new/107existing) from source bd164dd / owned203:
+131 guarded children, 16 documented commands on four unchanged historical files,
+eight ordinary outputs with original source bytes, strict docs and local checks.
+All214wheel payloads/159runtime identities verify. The bounded bridge resolves;
+full supported/public/platform, usability and scientific gates stay open. No
+provider collection, new connector or large-library qualification follows.
 
 [#165 r95 research build](pharmer_r95_build_receiving.md) receives the full66-file
 source,15fixed private artifacts and a passing legacy-ABI/selected-SDF dependency
@@ -90,15 +91,14 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive infrastructure-owner disposition and a distinct
-reviewed managed compiler/resource context under#165before any further Pharmer
-build. Preserve the full pinned source/private artifacts and both stopped profiles;
-no automatic retry, numerical rewrite or budget escalation. Continue the independent
-library/product lane by receiving MolSysMT#624's collection/update disposition;
-actual source/installed provider operations remain separate from this native build.
-Receive the provider disposition of the nine collection/update cases separately;
-the completed inspection recipe
-remains the current#108 entry point.
+**Next concrete action:** exercise and document the complete guided path for
+one source's failed/pending work in a single view (counts, selected mappings,
+exact original detail), with independent repeated-occurrence fixtures and the
+corresponding public expert composition under#108. MolSysMT#624 still awaits an
+owner collection/update API disposition; no PHMT molecular reader fork follows.
+Before any further Pharmer build, receive infrastructure-owner disposition and
+a distinct reviewed managed compiler/resource context under#165. Preserve both
+stopped compiler profiles without automatic retries or budget escalation.
 Before another#148 acquisition, receive a distinct reviewed environment-manager
 strategy from the common-tool owner. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
@@ -153,7 +153,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, saved analysis, plan inspection, pages/detail/status selection and their complete inspection recipe received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, saved analysis, plan inspection, pages/detail/status/source selection and their complete inspection recipe received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |

@@ -109,8 +109,10 @@ nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
 2026-11-09: [#166 exact source selection](saved_work_selection.md#exact-source-selection--166-2026-11-09)
 adds source/status intersections on original work mappings through the owned
-reader and CLI. Source120selected cases and eight unchanged original command
-outputs pass; owned installed receiving remains pending. Provider collections
+reader and CLI. The same120selected source/owned203 installed cases and eight unchanged
+original command outputs pass. The [installed receipt](evidence/work_source_selection_installed_20261109.json)
+retains 131 guarded children, 16 documented commands on four historical files
+and all214wheel payload/159runtime identities. The bounded bridge resolves. Provider collections
 remain MolSysMT#624-owned; neither a connector nor scale qualification follows.
 
 2026-11-08: [#158 saved-work status selection](archive/select_saved_work_status.md)

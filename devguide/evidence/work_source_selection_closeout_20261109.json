@@ -1,0 +1,67 @@
+{
+  "schema": "pharmacophoremt.work-source-selection-closeout@1",
+  "issue": 166,
+  "source_commit": "bd164dde2c4ff79c30e236ed0b5048aed2dd2b36",
+  "checks": [
+    {
+      "name": "final-index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "final-reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.134s\n\nOK\n"
+    },
+    {
+      "name": "final-archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.168s\n\nOK\n"
+    },
+    {
+      "name": "final-whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "all_runtime_and_receiving_fixtures_unchanged_since_installed": true,
+  "runtime_files": 159,
+  "fixture_files": 11,
+  "full_evidence_round_trip_verified": true,
+  "local_links": 291,
+  "report": "devguide/archive/select_saved_work_by_source.md",
+  "pending_exact_head_CI": "#9; no new remote run or later-head source/platform/release acceptance. Original27c1178 remains its distinct full-source checkpoint."
+}
