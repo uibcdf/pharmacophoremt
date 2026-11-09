@@ -154,3 +154,31 @@ failure/cancellation, causal `unknown` and annotation completeness; it requests
 no producer instrumentation or new workflow. The central label tool verifies
 `component:pharmacophoremt` without changes. This feedback does not block source
 receiving or imply a provider/tool upgrade.
+
+## Seven original source executions received — 2026-11-09 UTC
+
+The [scoped receipt](evidence/numerical_reader_ci_seven_cells_20261109.json)
+qualifies the seven actual attempt1 scientific commands:2693passing cases,
+zero reported skips and46reported warnings in each cell, with original tested
+version0.4.0+206.gaf408e7. Linux x86_64/Python3.11–3.14 and macOS arm64/Python3.12–3.14
+have successful acquisition/preflight, package/import, interpreter/architecture,
+full-command and coverage steps. All108expected XML file identities qualify in
+each original cell: both package initializers and the companion store, main
+private omission, zero-hit files and branches. The timestamp-stripped
+[Linux3.13projection](evidence/numerical_reader_ci_linux313_20261109_coverage.xml.gz)
+has its own captured-text hash; it is not an independently checksummed runner
+artifact. Reporting receives3protocol/18archive/8CI-route/160administrative tests.
+The Linux3.13native Codecov upload steps succeed; public-server freshness is
+not established by those steps.
+
+Nine frozen workflow/configuration identities are compared to Git af408e7,
+independently of later#170runtime changes. Latest native attempt2 job records
+reuse the seven exact original execution timestamps despite reissued job IDs;
+the receipt explicitly binds old/new IDs without calling them fresh executions.
+MacOS3.11job129370517203 is executing the full tests at the captured observation,
+with earlier required acquisition/import/interpreter steps successful. Its actual
+summary/qualified XML and terminal native conclusion remain pending. Original
+attempt1 failure/unstarted cancellation and all raw captures remain local and
+unchanged. No source checkpoint is accepted by seven cells;27c1178 remains the
+last complete received source gate. #170/#171, full supported/public/installed,
+scientific prediction, performance and release gates retain their own identities.

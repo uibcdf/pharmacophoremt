@@ -128,6 +128,13 @@ resolves this bounded bridge;#171composition is received above. Full-file
 admission and SQLite grouping costs remain explicit; no chemical equivalence,
 source connector, index, performance or scientific claim follows.
 
+2026-11-09: the [seven-cell source receipt](evidence/numerical_reader_ci_seven_cells_20261109.json)
+qualifies all seven original full commands/interpreter architectures and108XML
+paths per cell, with2693passes/zero reported skips/46warnings. It binds reused
+attempt2inventory IDs to original attempt1execution timestamps. Reporting
+3/18/8/160counts and nine Git af408e7configuration identities verify. The eighth
+actual execution and full-source gate remain pending; later#170/#171are separate.
+
 2026-11-09: af408e7 source42656135375/attempt1 ends failure: seven cells execute
 2693passing cases/46warnings; macOS3.11 is cancelled with no runner/steps and
 native acquisition/capacity annotations. A separately declared job-specific

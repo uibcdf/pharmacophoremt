@@ -1,0 +1,1234 @@
+{
+  "schema": "pharmacophoremt.numerical-reader-ci-seven-cells@1",
+  "recorded_at_UTC": "2026-11-09T19:34:13.167345+00:00",
+  "candidate": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+  "source_checkpoint_accepted": false,
+  "source_run": {
+    "id": 42656135375,
+    "head_sha": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+    "run_attempt": 1,
+    "status": "completed",
+    "conclusion": "failure",
+    "event": "workflow_dispatch",
+    "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42656135375",
+    "updated_at": "2026-11-09T18:05:08Z"
+  },
+  "original_executed_source_cells": 7,
+  "passed_per_executed_cell": 2693,
+  "reported_skips_per_executed_cell": 0,
+  "reported_warnings_per_executed_cell": 46,
+  "qualified_coverage_paths_per_executed_cell": 108,
+  "scientific_case_identity": "Same frozen full suite repeated across seven actual platform/interpreter executions; not independent chemical samples or18951distinct test bodies. Eighth actual execution remains separately pending.",
+  "cells": [
+    {
+      "id": 129295013211,
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T16:34:31Z",
+      "completed_at": "2026-11-09T17:28:01Z",
+      "run_attempt": 1,
+      "runner_id": 1000052351,
+      "runner_name": "GitHub Actions 1000052351",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.13.18",
+      "architecture": "x86_64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794245265473",
+        "lines-valid": "5793",
+        "lines-covered": "5170",
+        "line-rate": "0.8925",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279452,
+          "sha256": "48d4779ef12f0ab824bfffa7a61fe14383f69c7be0d6215cf831c293a35055e1"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file.",
+        "published_XML": {
+          "path": "numerical_reader_ci_linux313_20261109_coverage.xml.gz",
+          "bytes": 16158,
+          "sha256": "b60a118d8cb670e3582fe8a9ebc3f65eff17035ccd4edfb75d26539b1f5207d9",
+          "uncompressed_bytes": 279452,
+          "uncompressed_sha256": "48d4779ef12f0ab824bfffa7a61fe14383f69c7be0d6215cf831c293a35055e1"
+        }
+      },
+      "original_aggregate_log": {
+        "zip_member": "6_Test on ubuntu-latest, Python 3.13.txt",
+        "bytes": 752173,
+        "sha256": "8f084c5330f44e0ab7fe4e4467e41095e306604d5deb9ed9213eb733011a3508"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional.",
+      "codecov_steps": [
+        {
+          "number": 17,
+          "name": "Upload coverage reports to Codecov",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 18,
+          "name": "Upload test results to Codecov",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ]
+    },
+    {
+      "id": 129295013236,
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T16:34:29Z",
+      "completed_at": "2026-11-09T17:17:36Z",
+      "run_attempt": 1,
+      "runner_id": 1000052350,
+      "runner_name": "GitHub Actions 1000052350",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.12.16",
+      "architecture": "x86_64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794244648388",
+        "lines-valid": "5793",
+        "lines-covered": "5170",
+        "line-rate": "0.8925",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279452,
+          "sha256": "e9bf2b8bb9fb3b19a650d14fe187ac964cc5f23882304a911720576f95ef434a"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file."
+      },
+      "original_aggregate_log": {
+        "zip_member": "7_Test on ubuntu-latest, Python 3.12.txt",
+        "bytes": 715994,
+        "sha256": "80292172e241b6f29f364a1bb5df365aaa3fc663725076c8008c4de512446a98"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional."
+    },
+    {
+      "id": 129295013282,
+      "name": "Test on macos-15, Python 3.12",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T17:18:12Z",
+      "completed_at": "2026-11-09T18:05:01Z",
+      "run_attempt": 1,
+      "runner_id": 1000052396,
+      "runner_name": "GitHub Actions 1000052396",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.12.16",
+      "architecture": "arm64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794247491132",
+        "lines-valid": "5793",
+        "lines-covered": "5170",
+        "line-rate": "0.8925",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279453,
+          "sha256": "89fc1904cf900e1005768d85ed5265b7461a39334ab460d3866903a5a98fb990"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file."
+      },
+      "original_aggregate_log": {
+        "zip_member": "5_Test on macos-15, Python 3.12.txt",
+        "bytes": 702300,
+        "sha256": "4d1997446913b1afae6d96026c303cd296c8dd336071acd4efb1dafadaeac5ae"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional."
+    },
+    {
+      "id": 129295013335,
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T16:34:30Z",
+      "completed_at": "2026-11-09T17:19:28Z",
+      "run_attempt": 1,
+      "runner_id": 1000052352,
+      "runner_name": "GitHub Actions 1000052352",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.11.18",
+      "architecture": "x86_64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794244758984",
+        "lines-valid": "5793",
+        "lines-covered": "5170",
+        "line-rate": "0.8925",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279452,
+          "sha256": "a08fd17bace85c15d733ee6f256359df196081df4fd76d56905dc76fa09f2eb5"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file."
+      },
+      "original_aggregate_log": {
+        "zip_member": "4_Test on ubuntu-latest, Python 3.11.txt",
+        "bytes": 716283,
+        "sha256": "c5a7a045ed73b313ec42920fe910ba07ca6ea68e7b1f9ddd27d98f463e6a2004"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional."
+    },
+    {
+      "id": 129295013402,
+      "name": "Test on macos-15, Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T16:37:00Z",
+      "completed_at": "2026-11-09T17:06:20Z",
+      "run_attempt": 1,
+      "runner_id": 1000052357,
+      "runner_name": "GitHub Actions 1000052357",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.14.10",
+      "architecture": "arm64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794243968819",
+        "lines-valid": "5787",
+        "lines-covered": "5164",
+        "line-rate": "0.8923",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279241,
+          "sha256": "7df9ddba9f0638c558666c1e7e1d476b782360063dcfd80ab6a68aa74cdbfd56"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file."
+      },
+      "original_aggregate_log": {
+        "zip_member": "3_Test on macos-15, Python 3.14.txt",
+        "bytes": 697288,
+        "sha256": "3d1bd1bc31c1c8c6c2934f840ab84e742a51a967081fe1f81104642c91e3bbf4"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "skipped"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional."
+    },
+    {
+      "id": 129295013452,
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T16:34:30Z",
+      "completed_at": "2026-11-09T17:00:33Z",
+      "run_attempt": 1,
+      "runner_id": 1000052353,
+      "runner_name": "GitHub Actions 1000052353",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.14.10",
+      "architecture": "x86_64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794243626284",
+        "lines-valid": "5787",
+        "lines-covered": "5164",
+        "line-rate": "0.8923",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279240,
+          "sha256": "f0b3eb6c76092b4d65e7c91e6b90f2394fa8828acec535115e4ad067c6000841"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file."
+      },
+      "original_aggregate_log": {
+        "zip_member": "0_Test on ubuntu-latest, Python 3.14.txt",
+        "bytes": 711213,
+        "sha256": "ba738a0503f40a955a34c4a0e5281a70b43fe0fe098046152fb00ae73ed993f1"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "skipped"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional."
+    },
+    {
+      "id": 129295013499,
+      "name": "Test on macos-15, Python 3.13",
+      "status": "completed",
+      "conclusion": "success",
+      "started_at": "2026-11-09T16:42:01Z",
+      "completed_at": "2026-11-09T17:18:08Z",
+      "run_attempt": 1,
+      "runner_id": 1000052360,
+      "runner_name": "GitHub Actions 1000052360",
+      "required_steps": [
+        {
+          "number": 6,
+          "name": "Install pinned suite dependencies",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 8,
+          "name": "Check out the reviewed dependency SDK",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 10,
+          "name": "Check dependency routes and installed Git context",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 12,
+          "name": "Install package",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 13,
+          "name": "Test import module",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 14,
+          "name": "Verify interpreter and macOS architecture",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 15,
+          "name": "Run tests",
+          "status": "completed",
+          "conclusion": "success"
+        },
+        {
+          "number": 16,
+          "name": "Check coverage",
+          "status": "completed",
+          "conclusion": "success"
+        }
+      ],
+      "python": "3.13.18",
+      "architecture": "arm64",
+      "package_version": "0.4.0+206.gaf408e7",
+      "actual_test_command": "python -m pytest --receptor=ci -v --cov-config=.coveragerc --cov --cov-report=xml --junitxml=junit.xml --color=yes",
+      "reported_tests": {
+        "passed": 2693,
+        "skipped": 0,
+        "warnings": 46
+      },
+      "coverage": {
+        "version": "7.17.2",
+        "timestamp": "1794244678935",
+        "lines-valid": "5793",
+        "lines-covered": "5170",
+        "line-rate": "0.8925",
+        "branches-valid": "1910",
+        "branches-covered": "1580",
+        "branch-rate": "0.8272",
+        "complexity": "0"
+      },
+      "companion_coverage": {
+        "name": "pharmacophoremt_results",
+        "line-rate": "0.9056",
+        "branch-rate": "0.8054",
+        "complexity": "0"
+      },
+      "qualified_coverage": {
+        "unique_files": 108,
+        "captured_text": {
+          "bytes": 279453,
+          "sha256": "0e4d576f8122ffa52f31d5a2da32ceb4baf6b5fb9b816477bc142bc6593b60fe"
+        },
+        "main_private_omitted": true,
+        "both_initializers_and_companion_store": true,
+        "zero_hit_files_and_branches_retained": true,
+        "method": "Timestamp-stripped native cat coverage.xml output; hash identifies captured text, not independently checksummed runner file."
+      },
+      "original_aggregate_log": {
+        "zip_member": "2_Test on macos-15, Python 3.13.txt",
+        "bytes": 701614,
+        "sha256": "c0ff997fdacb66bb79e64a2f4a9722f2c326033fcb3a08432129aa0568357ef1"
+      },
+      "molsysmt_acquisition_step": {
+        "number": 7,
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      "molsysmt_acquisition_note": "3.14 uses the separate controlled pinned dependency file; extra reinstall intentionally conditional."
+    }
+  ],
+  "reporting": {
+    "id": 129295012632,
+    "name": "Reporting governance",
+    "status": "completed",
+    "conclusion": "success",
+    "run_attempt": 1,
+    "required_steps": [
+      {
+        "number": 5,
+        "name": "Check reporting records and generated indexes",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 7,
+        "name": "Test CI recovery and contributor routes",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 8,
+        "name": "Review declared dependency routes",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 9,
+        "name": "Test distribution and dependency contracts",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 10,
+        "name": "Check generated ordinary environments",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "actual_counts": {
+      "reporting": 3,
+      "archives": 18,
+      "administrative": 160,
+      "CI_recovery_routes": 8
+    },
+    "original_aggregate_log": {
+      "zip_member": "8_Reporting governance.txt",
+      "bytes": 59668,
+      "sha256": "d6e490048d294978614a033bccd606441b18f5c2f88e8b6f4198acfd9a58b266"
+    }
+  },
+  "unstarted_cancelled_cell": {
+    "job": {
+      "id": 129295013298,
+      "name": "Test on macos-15, Python 3.11",
+      "status": "completed",
+      "conclusion": "cancelled",
+      "runner_id": 0,
+      "runner_name": "",
+      "steps": []
+    },
+    "annotations_complete": true,
+    "reviewed_annotation_messages": [
+      "The job was not acquired by Runner of type hosted even after multiple attempts",
+      "Due to capacity constraints, jobs targeting macOS arm64 runners may experience longer queue times."
+    ],
+    "repeated_capacity_notices": 3,
+    "causal_classification": "unknown",
+    "native_run_conclusion": "failure",
+    "raw_check_capture": {
+      "bytes": 45485,
+      "sha256": "5a5a8d3e08604b68eedcca1e37a597d962caf5b1d8bce63e5f3ddbd9a5e48662"
+    }
+  },
+  "single_job_recovery": {
+    "declaration": "https://github.com/uibcdf/pharmacophoremt/issues/9#issuecomment-6748783497",
+    "request_count": 1,
+    "original_SHA_ref_preserved": true,
+    "latest_observed_at_UTC": "2026-11-09T19:32:56.295352+00:00",
+    "latest_run": {
+      "id": 42656135375,
+      "head_sha": "af408e7007e27b88d049a09b6cc8ad11db5e8594",
+      "run_attempt": 2,
+      "status": "in_progress",
+      "conclusion": null
+    },
+    "recovering_cell": {
+      "id": 129370517203,
+      "name": "Test on macos-15, Python 3.11",
+      "status": "in_progress",
+      "conclusion": null,
+      "started_at": "2026-11-09T19:12:16Z",
+      "completed_at": null,
+      "run_attempt": 2
+    },
+    "step_states": [
+      {
+        "name": "Set up job",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run actions/checkout@v4",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Additional info about the build",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Set up Python",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Setup conda env",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install pinned suite dependencies",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install tested MolSysMT source",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check out the reviewed dependency SDK",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install isolated dependency-check tools",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Check dependency routes and installed Git context",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Info conda",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Install package",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Test import module",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Verify interpreter and macOS architecture",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "name": "Run tests",
+        "status": "in_progress",
+        "conclusion": null
+      },
+      {
+        "name": "Check coverage",
+        "status": "pending",
+        "conclusion": null
+      },
+      {
+        "name": "Upload coverage reports to Codecov",
+        "status": "pending",
+        "conclusion": null
+      },
+      {
+        "name": "Upload test results to Codecov",
+        "status": "pending",
+        "conclusion": null
+      },
+      {
+        "name": "Post Check out the reviewed dependency SDK",
+        "status": "pending",
+        "conclusion": null
+      },
+      {
+        "name": "Post Setup conda env",
+        "status": "pending",
+        "conclusion": null
+      },
+      {
+        "name": "Post Set up Python",
+        "status": "pending",
+        "conclusion": null
+      },
+      {
+        "name": "Post Run actions/checkout@v4",
+        "status": "pending",
+        "conclusion": null
+      }
+    ],
+    "reused_executions": [
+      {
+        "name": "Test on ubuntu-latest, Python 3.13",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013211,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370517867,
+        "same_started_at": "2026-11-09T16:34:31Z",
+        "same_completed_at": "2026-11-09T17:28:01Z",
+        "fresh_execution": false
+      },
+      {
+        "name": "Test on ubuntu-latest, Python 3.12",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013236,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370518951,
+        "same_started_at": "2026-11-09T16:34:29Z",
+        "same_completed_at": "2026-11-09T17:17:36Z",
+        "fresh_execution": false
+      },
+      {
+        "name": "Test on macos-15, Python 3.12",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013282,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370584010,
+        "same_started_at": "2026-11-09T17:18:12Z",
+        "same_completed_at": "2026-11-09T18:05:01Z",
+        "fresh_execution": false
+      },
+      {
+        "name": "Test on ubuntu-latest, Python 3.11",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013335,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370590388,
+        "same_started_at": "2026-11-09T16:34:30Z",
+        "same_completed_at": "2026-11-09T17:19:28Z",
+        "fresh_execution": false
+      },
+      {
+        "name": "Test on macos-15, Python 3.14",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013402,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370519536,
+        "same_started_at": "2026-11-09T16:37:00Z",
+        "same_completed_at": "2026-11-09T17:06:20Z",
+        "fresh_execution": false
+      },
+      {
+        "name": "Test on ubuntu-latest, Python 3.14",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013452,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370589864,
+        "same_started_at": "2026-11-09T16:34:30Z",
+        "same_completed_at": "2026-11-09T17:00:33Z",
+        "fresh_execution": false
+      },
+      {
+        "name": "Test on macos-15, Python 3.13",
+        "original_execution_attempt": 1,
+        "original_job_id": 129295013499,
+        "latest_inventory_attempt": 2,
+        "latest_job_id": 129370518861,
+        "same_started_at": "2026-11-09T16:42:01Z",
+        "same_completed_at": "2026-11-09T17:18:08Z",
+        "fresh_execution": false
+      }
+    ],
+    "no_automatic_retry_if_capacity_fails_again": true
+  },
+  "frozen_config_at_candidate": {
+    ".github/workflows/CI.yaml": {
+      "bytes": 8086,
+      "sha256": "ed3722b90f7e062a804f359daaee1c07ff975b541d48c262eda65125bb989667"
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "bytes": 250,
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "bytes": 273,
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
+    },
+    ".github/gh-run-receptor.yaml": {
+      "bytes": 361,
+      "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59"
+    },
+    ".coveragerc": {
+      "bytes": 167,
+      "sha256": "783735cc5063c5273f94df692ea17bf51690469b21b532dc6b31c040603b779f"
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/conda-build/resources.toml": {
+      "bytes": 29227,
+      "sha256": "3cb78fb5d680b76b2e54117ccb2b436a586fe757e1fca36f003bff8fc9275127"
+    },
+    "devtools/dependency_routes.toml": {
+      "bytes": 15839,
+      "sha256": "3e444d3372b1e9fa09cdccc3bf7db8f76a5695581efe9f93aa261c521eca5789"
+    }
+  },
+  "capture_resources": {
+    "name": "source-attempt1",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-large-segment-20261109-hfjji_7_/logs/source-attempt1.resources",
+      "gh-run-receptor",
+      "inspect",
+      "42656135375",
+      "--repo",
+      "uibcdf/pharmacophoremt",
+      "--attempt",
+      "1",
+      "--capture",
+      "full",
+      "--receptor",
+      "llm",
+      "--cache-dir",
+      "build/phmt-large-segment-20261109-hfjji_7_/receptor-cache",
+      "--output",
+      "build/phmt-large-segment-20261109-hfjji_7_/source-attempt1"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60849422336
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1104966\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1074508\n",
+      "swap": {
+        "pswpin": 100002,
+        "pswpout": 330141
+      },
+      "time": 189125.660452029
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": "unlimited inherited for Git mappings",
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 1073741824,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 1,
+    "interruption": null,
+    "seconds": 9.04897043001256,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 60840181760
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1104966\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1074508\n",
+      "swap": {
+        "pswpin": 100002,
+        "pswpout": 330141
+      },
+      "time": 189134.71019733
+    },
+    "sample_count": 89,
+    "peak_observed_group_RSS_bytes": 94445568
+  },
+  "raw_manifest": {
+    "bytes": 1853,
+    "sha256": "4520d3e876115f6c9813a63ea9fbf59bf91e387c4ac434bbc55f53de05b753b9"
+  },
+  "raw_original_logs_zip": {
+    "bytes": 772079,
+    "sha256": "80a7d0faa4f3054814e4d719539802821bd7308ea8f325d1008d77c33178d2c8"
+  },
+  "raw_latest_native": {
+    "bytes": 79719,
+    "sha256": "3384ffe8be54f94741e2f8cd988664b2249b1d096c4344e998a4b7d733957232"
+  },
+  "publication": "Only reviewed scalar facts/hashes plus owned timestamp-stripped Linux3.13 coverage projection. Full original GitHub API captures/logs stay local.",
+  "previous_accepted_full_source": {
+    "candidate": "27c11782fc948a1d11e51ca7d92cf08580aa47b7",
+    "run": 42451906584,
+    "passed_per_cell": 2505
+  },
+  "limits": "Seven qualified original source executions; native attempt1 globalfailure/unstarted cancellation retained. No eighth-cell, full-source, later-head170/171, complete public dependency/installed-platform, biological, molecular performance or release acceptance. Codecov upload success is not public-server freshness. #148/#165 remain stopped.",
+  "upstream_hint_proposal": "https://github.com/uibcdf/gh-run-receptor/issues/82",
+  "retention": {
+    "capsule": "build/phmt-large-segment-20261109-hfjji_7_",
+    "review": "2026-11-23"
+  },
+  "qualification_control": {
+    "path": "build/phmt-large-segment-20261109-hfjji_7_/controls/qualify_seven.py",
+    "bytes": 11908,
+    "sha256": "7b591bd9097acca82d15d2e58674e736a9c52c1da16c267da32ffb3247f6f343",
+    "policy": "Bespoke offline evidence verifier; no workflow dispatch, provider installation or scientific operation."
+  }
+}

@@ -45,8 +45,9 @@ scale or human-usability qualification is implied.
 The af408e7 accumulated source run42656135375 terminates attempt1 with seven
 2693case/46warning successes and an unstarted cancelled macOS3.11cell. One
 [declared job-specific capacity recovery](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
-keeps the exact SHA/ref and earlier executions distinct. Its remaining scientific
-command/coverage is pending; no full-source acceptance or later-head claim follows.
+keeps the exact SHA/ref and earlier executions distinct. The [seven-cell receipt](evidence/numerical_reader_ci_seven_cells_20261109.json)
+qualifies original commands/interpreters and108coverage paths in each. Its
+remaining scientific command/coverage is pending; no full-source acceptance or later-head claim follows.
 
 The [chemical-library user guide](../docs/content/user/chemical_libraries.md)
 now maps current source-operation coverage to the guided/expert screening and

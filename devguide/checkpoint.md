@@ -37,6 +37,8 @@ runner or step starts. Native annotations report runner acquisition/capacity
 problems; Receptor retains cause=unknown. A separately declared single-job
 recovery under#9 reuses that exact SHA/ref; attempt2 has acquired a runner and
 is executing the full tests after successful dependency/import/architecture steps. Seven earlier executions are reused, not repeated.
+The [scoped receipt](evidence/numerical_reader_ci_seven_cells_20261109.json)
+qualifies all seven original commands/interpreters and108XML paths per cell.
 No full source gate is accepted until the remaining command and coverage are
 received. Frozen policy42656145447 and no-build publication42656155848 pass.
 Original1f6dfb0/reporting failure, force-cancellation, #168/#169 corrections and
