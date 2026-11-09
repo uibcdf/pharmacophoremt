@@ -1,149 +1,93 @@
+"""Saved Pharmer field import with explicit scientific projection decisions."""
+
 import json
+from copy import deepcopy
 
 import molsysmt as msm
+from argdigest import arg_digest
 from smonitor import signal
 
 from pharmacophoremt import interaction_site as interaction_sites
 from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt._private.smonitor.exceptions import ArgumentTypeError
+from pharmacophoremt._private.arg_digestion.pharmer_io import CONFIG
+
+from ._pharmer_profile import _plan
+from ._projection import _loss_policy, _options
 
 
 @signal(tags=["io", "pharmer", "read"])
-def from_pharmer(pharmacophore):
-    """Read supported Pharmer points from a mapping or JSON filename.
+@arg_digest(config=CONFIG)
+def from_pharmer(pharmacophore, *, return_report=False, on_loss="warn"):
+    """Read supported fields with a warn/raise/ignore scientific loss policy.
 
-    A missing ``enabled`` field means True. Present values must be JSON
-    booleans; disabled points are omitted before feature or geometry parsing.
-    Surviving sites retain input order and use compact result indices. When
-    omissions occur, ``metadata['pharmer']`` records ``source_point_indices``
-    aligned with result sites and the separate ``disabled_point_indices``.
+    Disabled points are omitted before parsing; missing enabled means True.
+    Source units are angstroms. A false/zero vector_on disables direction;
+    otherwise one declared vector is preserved for supported directional roles.
+    Optional/negated requirements, nonneutral size bounds, unknown fields and
+    unapplied engine settings are reported instead of silently claimed preserved.
 
-    Coordinates and radii use angstroms. Attached-ligand conversion remains a
-    MolSysMT operation. This reader does not execute Pharmer or establish full
-    optional, negated, vector, size, search-limit or round-trip equivalence.
+    Strict loss refusal and promoted warnings precede model/site/molecule
+    construction. Reports retain field paths, not original molecular payloads.
+    Lossy imports also retain a detached metadata['pharmer']['import_report'].
+    With return_report=True return (model, report); otherwise return the model.
+    No external engine or equivalent screening/angle policy is inferred.
     """
+    _options(return_report, on_loss)
+    if isinstance(pharmacophore, str):
+        if not pharmacophore.endswith(".json"):
+            raise NotImplementedError
+        print(f"Reading file: {pharmacophore}")
+        with open(pharmacophore) as stream:
+            pharmacophore = json.load(stream)
+    rows, report = _plan(pharmacophore)
+    _loss_policy(report, on_loss)
 
     from pharmacophoremt.pharmacophore import Pharmacophore
 
-    tmp_pharmacophore = Pharmacophore()
-
-    if isinstance(pharmacophore, str):
-        if pharmacophore.endswith(".json"):
-            print(f"Reading file: {pharmacophore}")
-            with open(pharmacophore, "r") as fff:
-                pharmacophore = json.load(fff)
-        else:
-            raise NotImplementedError
-
+    model = Pharmacophore()
     print(f"Number of points in JSON: {len(pharmacophore['points'])}")
-
-    def get_pharmer_interaction_site_properties(interaction_site, direction=False):
-        center = puw.quantity(
-            [interaction_site["x"], interaction_site["y"], interaction_site["z"]],
-            "angstroms",
+    spherical = {
+        "Aromatic": interaction_sites.AromaticRingSphere,
+        "Hydrophobic": interaction_sites.HydrophobicSphere,
+        "HydrogenAcceptor": interaction_sites.HBAcceptorSphere,
+        "HydrogenDonor": interaction_sites.HBDonorSphere,
+        "PositiveIon": interaction_sites.PositiveChargeSphere,
+        "NegativeIon": interaction_sites.NegativeChargeSphere,
+        "ExclusionSphere": interaction_sites.ExcludedVolumeSphere,
+        "InclusionSphere": interaction_sites.IncludedVolumeSphere,
+    }
+    directional = {
+        "Aromatic": interaction_sites.AromaticRingSphereAndVector,
+        "HydrogenAcceptor": interaction_sites.HBAcceptorSphereAndVector,
+        "HydrogenDonor": interaction_sites.HBDonorSphereAndVector,
+    }
+    for _, point, direction in rows:
+        center = puw.quantity([point[key] for key in ("x", "y", "z")], "angstroms")
+        radius = puw.quantity(point["radius"], "angstroms")
+        site = (
+            spherical[point["name"]](center, radius)
+            if direction is None
+            else directional[point["name"]](center, radius, direction)
         )
-        radius = puw.quantity(interaction_site["radius"], "angstroms")
-        if direction:
-            direction = [
-                interaction_site["svector"]["x"],
-                interaction_site["svector"]["y"],
-                interaction_site["svector"]["z"],
-            ]
-            return center, radius, direction
-
-        return center, radius
-
-    source_point_indices, disabled_point_indices = [], []
-    for point_index, pharmer_interaction_site in enumerate(pharmacophore["points"]):
-        enabled = pharmer_interaction_site.get("enabled", True)
-        if not isinstance(enabled, bool):
-            raise ArgumentTypeError(
-                argument=f"points[{point_index}].enabled",
-                expected_type="a JSON boolean",
-                actual_type=type(enabled).__name__,
-            )
-        if not enabled:
-            disabled_point_indices.append(point_index)
-            continue
-        pharmer_feature_name = pharmer_interaction_site["name"]
-
-        if pharmer_feature_name == "Aromatic":
-            center, radius, direction = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=True
-            )
-            interaction_site = interaction_sites.AromaticRingSphereAndVector(
-                center, radius, direction
-            )
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "Hydrophobic":
-            center, radius = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=False
-            )
-            interaction_site = interaction_sites.HydrophobicSphere(center, radius)
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "HydrogenAcceptor":
-            center, radius, direction = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=True
-            )
-            interaction_site = interaction_sites.HBAcceptorSphereAndVector(
-                center, radius, direction
-            )
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "HydrogenDonor":
-            center, radius, direction = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=True
-            )
-            interaction_site = interaction_sites.HBDonorSphereAndVector(
-                center, radius, direction
-            )
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "PositiveIon":
-            center, radius = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=False
-            )
-            interaction_site = interaction_sites.PositiveChargeSphere(center, radius)
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "NegativeIon":
-            center, radius = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=False
-            )
-            interaction_site = interaction_sites.NegativeChargeSphere(center, radius)
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "ExclusionSphere":
-            center, radius = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=False
-            )
-            interaction_site = interaction_sites.ExcludedVolumeSphere(center, radius)
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        elif pharmer_feature_name == "InclusionSphere":
-            center, radius = get_pharmer_interaction_site_properties(
-                pharmer_interaction_site, direction=False
-            )
-            interaction_site = interaction_sites.IncludedVolumeSphere(center, radius)
-            tmp_pharmacophore.add_interaction_site(interaction_site)
-
-        else:
-            raise NotImplementedError
-        source_point_indices.append(point_index)
-
-    if disabled_point_indices:
-        tmp_pharmacophore.metadata["pharmer"] = dict(
-            source_point_indices=source_point_indices,
-            disabled_point_indices=disabled_point_indices,
-        )
-
+        model.add_interaction_site(site)
+    if report["disabled_point_indices"]:
+        model.metadata["pharmer"] = {
+            "source_point_indices": [index for index, _, _ in rows],
+            "disabled_point_indices": list(report["disabled_point_indices"]),
+        }
+    if report["losses"] or report["unapplied_settings"]:
+        model.metadata.setdefault(
+            "pharmer",
+            {
+                "source_point_indices": [index for index, _, _ in rows],
+                "disabled_point_indices": [],
+            },
+        )["import_report"] = deepcopy(report)
     if "ligand" in pharmacophore:
-        ligand = msm.convert(pharmacophore["ligand"], to_form="molsysmt.MolSys")
-        tmp_pharmacophore.molecular_system = ligand
-
-    return tmp_pharmacophore
+        model.molecular_system = msm.convert(
+            pharmacophore["ligand"], to_form="molsysmt.MolSys"
+        )
+    return (model, deepcopy(report)) if return_report else model
 
 
 def to_pharmer(pharmacophore, file_name):

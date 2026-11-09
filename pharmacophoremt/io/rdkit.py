@@ -12,12 +12,11 @@ from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._private.arg_digestion.argument import _contracts
 from pharmacophoremt._private.arg_digestion.curation import model
 from pharmacophoremt._private.arg_digestion.rdkit_io import CONFIG
-from pharmacophoremt._private.smonitor.emitter import warn
 from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
-    ProjectionLossError,
 )
-from pharmacophoremt._private.smonitor.warnings import ProjectionLossWarning
+
+from ._projection import _loss_policy, _options
 
 PHMT_TO_RDKIT = {
     "hb donor": "Donor",
@@ -31,13 +30,6 @@ PHMT_TO_RDKIT = {
 RDKIT_TO_PHMT = {value: key for key, value in PHMT_TO_RDKIT.items()}
 
 
-def _options(return_report, on_loss):
-    if type(return_report) is not bool:
-        raise ArgumentError(argument="return_report", reason="expected a boolean")
-    if not isinstance(on_loss, str) or on_loss not in {"warn", "raise", "ignore"}:
-        raise ArgumentError(argument="on_loss", reason="choose warn, raise or ignore")
-
-
 def _report(direction, representation):
     return {
         "schema": "pharmacophoremt.rdkit-projection@1",
@@ -48,16 +40,6 @@ def _report(direction, representation):
         "losses": [],
         "assumptions": [],
     }
-
-
-def _loss_policy(report, on_loss):
-    fields = report["losses"]
-    if not fields:
-        return
-    if on_loss == "raise":
-        raise ProjectionLossError(operation=report["direction"], fields=list(fields))
-    if on_loss == "warn":
-        warn(ProjectionLossWarning(operation=report["direction"], fields=list(fields)))
 
 
 def _radius(value):

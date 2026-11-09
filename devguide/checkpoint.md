@@ -9,25 +9,23 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#162 enabled-point import](pharmer_interoperability.md) now omits disabled
-Pharmer points, preserves original point mappings and refuses nonboolean flags.
-The same34 selected cases pass from source and exact owned wheel196 (22new/12P1),
-including actual two-ion evaluation, public routes/units, mapping persistence
-and explicit molecular delegation. Two ordinary profiles retain source byte
-identity and installed scientific-payload equality with generated versions
-compared separately. Both complete P1drivers retain three correct answers and
-nine actual attribution items/22uses. The
-[installed receipt](evidence/pharmer_enabled_installed_20261109.json) verifies
-211payload/156runtime files, nine original fixtures and152loaded runtime origins
-with no PHMT checkout fallback. Original red/unit-control and separate historical
-attachment limits are retained; original bundled flags require10sites from19points.
-This closes the bounded defect, with full supported/public gates still separate.
+[#163 supported Pharmer profile](pharmer_interoperability.md) is implemented in
+source: explicit warn/raise/ignore policy, detached conversion report, persisted
+loss audit and strict refusal before model or molecular construction. The reader
+now honors inactive vectors; a real public donor control distinguishes off/on.
+All141selected source cases pass (48new/93existing), preserving original35red
+guards. One counted overflow warning is intentional; a separate published
+Pytest Receptor1.2.0 shutdown warning is reported to its existing issue#4.
+Same-file owned installed receiving and the complete source/installed P1driver
+remain pending at this source stage.
 
-The broader [#163 import/loss profile](pending_proposals/pharmer_import_profile.md)
-remains open. Earlier [P1preparation](pharmer_p1_comparison.md) keeps its original
-source1372623/owned192receiving; the current driver is a distinct run. Actual
-Pharmer executable/export/perception/database/search admission is still unexecuted
-under#128. No external engine, performance or biological qualification follows.
+Earlier [#162 enabled-point import](evidence/pharmer_enabled_installed_20261109.json)
+keeps its source0407e20/owned196receiving,34cases, original point mappings and
+then-current ordinary19point records. #163 intentionally corrects inactive-vector
+meaning; it does not rewrite that historical evidence. Earlier
+[P1preparation](pharmer_p1_comparison.md) retains source1372623/owned192.
+Actual Pharmer executable/export/perception/database/search admission remains
+unexecuted under#128; no external engine/performance/biological qualification.
 
 The preceding [#160 correction](pair_distance_pruning.md) retains its independent
 116 source/same-wheel cases and original native before/after witness. The
@@ -59,11 +57,11 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** review#163's supported-input/loss policy. Separate
-scientific constraint fields from display/session annotations and engine settings;
-freeze required/optional/negated/size/vector examples before choosing refusal or
-loss reporting. Keep P1's external execution separately admitted; do not install
-or substitute a comparator without its receiving plan.
+**Next concrete action:** receive#163from one exact owned wheel: the same141
+original bodies, unchanged supported-profile controls and complete P1driver,
+with checkout fallback refused. Then close its report and publish the bounded
+source/installed evidence. Keep external engine receiving separately admitted;
+no comparator installation or substitution follows from this reader change.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.

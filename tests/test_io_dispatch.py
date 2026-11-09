@@ -61,7 +61,7 @@ def test_native_facade_refuses_unknown_options_like_direct_reader(native_input):
     for tool in (reader, io.load):
         with pytest.raises(TypeError) as caught:
             tool(path, typo_probe_option=True)
-        if reader in (io.load_json, io.load_yaml):
+        if reader in (io.load_json, io.load_yaml, io.from_pharmer):
             assert isinstance(caught.value, UnknownArgumentError)
             assert caught.value.code == "ARG-ERR-CONTRACT-001"
         else:

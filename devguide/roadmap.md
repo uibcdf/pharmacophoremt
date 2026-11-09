@@ -116,6 +116,14 @@ installation/distribution gates; passing one task does not close its milestone.
 
 ## Immediate product increment
 
+[#163 supported Pharmer field profile](pharmer_interoperability.md) advances
+milestones1/2with explicit loss decisions and expert reports behind the guided
+warning default. Inactive vectors now mean spheres; strict loss refusal precedes
+construction. Source141cases pass (48new/93existing), retaining35original red
+guards and actual public donor off/on outcomes. Same-file owned installed and
+complete driver receiving are pending at this source stage. External engine,
+full supported/public, biological and scale gates remain separate.
+
 [#162 enabled-point import](pharmer_interoperability.md) advances query coherence
 and guided/expert IO for milestones1/2. False points are omitted before geometry,
 original point mappings survive persistence, missing flags default true and bad
@@ -126,7 +134,7 @@ counts corrected. The same34original cases, two ordinary profiles
 and complete P1driver also pass from exact0407e20 owned wheel196; the
 [installed receipt](evidence/pharmer_enabled_installed_20261109.json) verifies
 211payload files, nine fixtures and152loaded runtime origins. This resolves the
-bounded defect. Broader constraint-field/loss admission is separately open as#163; no external engine,
+bounded defect. Broader constraint-field/loss admission is received separately under#163; no external engine,
 general interoperability, biological or scale qualification is implied.
 
 [#161 P1 analytical preparation](pharmer_p1_comparison.md) advances the explicit

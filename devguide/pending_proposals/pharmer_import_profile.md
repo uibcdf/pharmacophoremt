@@ -1,13 +1,13 @@
 ---
 summary: Define and enforce an explicit supported Pharmer query import profile.
 issue: uibcdf/pharmacophoremt#163
-status: open
+status: partial
 opened: 2026-11-09
 closed:
-verification: asserted
+verification: measured
 area: [io, semantics, interoperability]
-guard:
-normative:
+guard: tests/test_pharmer_profile.py::test_optional_requirement_is_visible_in_the_default_loss_report
+normative: devguide/pharmer_interoperability.md
 blocked_by: []
 supersedes: []
 ---
@@ -34,3 +34,16 @@ inputs and molecular delegation. Freeze independent controls before implementing
 new mappings; receive source/same-file installed behavior and maintain user/API
 documentation. Full external execution stays under#128. This proposal alone
 implements no new engine, provider operation, keyword, dependency floor or schema.
+
+
+## Source implementation received (2026-11-09)
+
+The [supported profile](../pharmer_interoperability.md#supported-field-profile-163-2026-11-09)
+now exposes the existing IO loss policy through the direct reader/facade,
+including detached reports and persisted audit. It preserves #162 omission and
+fixes vector activation using the pinned r95 source. The original35red guards
+and141final passing source cases are retained;48are new and93are existing
+controls. Actual public donor evaluation distinguishes activation off/on.
+One intentional overflow warning and the separately reported released
+Pytest Receptor sink warning remain visible. Exact owned installed receiving,
+ordinary supported profiles and complete P1driver are pending at this stage.

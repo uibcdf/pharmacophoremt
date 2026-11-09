@@ -1,0 +1,561 @@
+{
+  "schema": "pharmacophoremt.pharmer-profile-source@1",
+  "issue": 163,
+  "parent_source": "505d03d2176806db02be810dc41db4ba4a9f88f3",
+  "producer": "Containing source commit freezes these runtime/test bytes; original generated labels remain distinct.",
+  "source_files": {
+    "pharmacophoremt/io/pharmer.py": {
+      "bytes": 5893,
+      "sha256": "4768554872fa2a7b283f234a0ea22003060963ff7a3edee51933a9106afb9d7c"
+    },
+    "pharmacophoremt/io/rdkit.py": {
+      "bytes": 17440,
+      "sha256": "b08e92dbfb074bf3748af5a7e34193aaae59d841c4e07aa4a03ab30689f38017"
+    },
+    "pharmacophoremt/io/_pharmer_profile.py": {
+      "bytes": 8620,
+      "sha256": "12ead9539721117acf210eb4358a4694b31783a7b99da4bacfc6ffd0f10d2c9c"
+    },
+    "pharmacophoremt/io/_projection.py": {
+      "bytes": 983,
+      "sha256": "b446975a8ceb1b4f0153e8e347fbd712cbc7c742309821cd3102f57b76724bda"
+    },
+    "pharmacophoremt/_private/arg_digestion/pharmer_io.py": {
+      "bytes": 395,
+      "sha256": "39954270372796abdedacb04568a83a21da7018775c696d2ea2a8c9856057427"
+    },
+    "tests/test_pharmer_profile.py": {
+      "bytes": 11876,
+      "sha256": "c8383d18a03dc1016e4c89c893d3df20f887de20fd3a41fecedc85769f3db602"
+    },
+    "tests/test_io_dispatch.py": {
+      "bytes": 4372,
+      "sha256": "20907871bd3ff2d0196ccc1cda19b33bb644b444cc24ab10ea769dfc9338bf68"
+    }
+  },
+  "changed_runtime": [
+    "pharmacophoremt/io/pharmer.py",
+    "pharmacophoremt/io/rdkit.py"
+  ],
+  "new_runtime": [
+    "pharmacophoremt/io/_pharmer_profile.py",
+    "pharmacophoremt/io/_projection.py",
+    "pharmacophoremt/_private/arg_digestion/pharmer_io.py"
+  ],
+  "other_original_runtime_files_unchanged": 154,
+  "prospective_plan": {
+    "path": "devguide/evidence/pharmer_profile_plan_20261109.json",
+    "bytes": 4491,
+    "sha256": "4adc48df0836a41c64eb66b0f229c3a05add66d70b750b5fc6c9ae65a0a37dc0"
+  },
+  "original_red": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 35,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 35,
+      "failed": 35,
+      "not_executed": 0,
+      "passed": 0,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 2.828707827022299,
+    "exitstatus": 1,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "1d871db0dc2d52333043519534d51a68e857a9c48e712b63bed967849e7e1bb8",
+      "records": 112
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "FAIL",
+    "root_causes": 6,
+    "run_id": "5ba882456c8d4887aafe22d14dab9f53",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "final_source": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 141,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 141,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 141,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 1,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 4.7933604620047845,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "bdb8219842fa242708f22965fcfcc1d78c9bae5f10697b411589246bb4482648",
+      "records": 425
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "8204f20cfa5e4583b934457628e7f385",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "new_cases": 48,
+  "original_cases": 93,
+  "selection": [
+    "tests/test_pharmer_profile.py",
+    "tests/test_pharmer_enabled.py",
+    "tests/test_pharmer_p1.py",
+    "tests/test_rdkit_projection.py",
+    "tests/test_io_dispatch.py::test_native_facade_refuses_unknown_options_like_direct_reader[pharmer]"
+  ],
+  "execution": {
+    "name": "source-selected",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/logs/source-selected.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "pytest",
+      "-p",
+      "pytest_receptor.plugin",
+      "--receptor=llm",
+      "--receptor-events=build/phmt-pharmer-profile-20261109-bxb_e85x/logs/source-selected.events.jsonl",
+      "--junitxml=build/phmt-pharmer-profile-20261109-bxb_e85x/logs/source-selected.xml",
+      "--maxfail=1",
+      "tests/test_pharmer_profile.py",
+      "tests/test_pharmer_enabled.py",
+      "tests/test_pharmer_p1.py",
+      "tests/test_rdkit_projection.py",
+      "tests/test_io_dispatch.py::test_native_facade_refuses_unknown_options_like_direct_reader[pharmer]"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58044235776
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758280\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735562\n",
+      "swap": {
+        "pswpin": 72612,
+        "pswpout": 273907
+      },
+      "time": 134809.515118089
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 6.075607506005326,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57823707136
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758280\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735562\n",
+      "swap": {
+        "pswpin": 72617,
+        "pswpout": 273907
+      },
+      "time": 134815.591324204
+    },
+    "sample_count": 60,
+    "peak_observed_own_group_RSS_bytes": 352702464
+  },
+  "ordinary_supported_profiles": [
+    {
+      "profile": "p1-required",
+      "sites": 3,
+      "bytes": 1653,
+      "sha256": "881b2a3cb7b8ae2754238117ef7388c9839902edabc7a22f45f3434d011f2e53",
+      "exact_equal_to_baseline": true
+    },
+    {
+      "profile": "donor-active",
+      "sites": 1,
+      "bytes": 940,
+      "sha256": "49e6250cd0a8d71ff6a7893ad7ecb771b834b25dd03b8410673a61efae8d7d8c",
+      "exact_equal_to_baseline": true
+    },
+    {
+      "profile": "aromatic-active",
+      "sites": 1,
+      "bytes": 945,
+      "sha256": "24ea346e91107576d45959b616c3e4a084bdc147d8ba4580e4a7935ecc1b2a20",
+      "exact_equal_to_baseline": true
+    }
+  ],
+  "ordinary_scope": "Three frozen minimal supported profiles (P1 required, explicitly active donor/aromatic). Original saved reader and current reader produce exact same native JSON source bytes. Earlier bundled inactive-vector records are historical; their meaning intentionally changes on reimport.",
+  "RDKit_private_helper_identity": {
+    "_options": {
+      "AST_identical": true
+    },
+    "_loss_policy": {
+      "AST_identical": true
+    }
+  },
+  "P1_driver": {
+    "record": {
+      "bytes": 155557,
+      "sha256": "876fa109c4c66d1e33ee6c3b0f9c6bf5ff8cd3c3768979793cd6c8f30bf47e2b"
+    },
+    "cases": 3,
+    "passed": true,
+    "items": 9,
+    "uses": 22,
+    "external": "not_executed",
+    "execution": {
+      "name": "source-p1-driver",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/logs/source-p1-driver.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "devtools.qualify_pharmer_p1",
+        "--output",
+        "build/phmt-pharmer-profile-20261109-bxb_e85x/source-p1-result.json"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 57948598272
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758350\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735632\n",
+        "swap": {
+          "pswpin": 81084,
+          "pswpout": 273907
+        },
+        "time": 135314.426235164
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 4.247099143976811,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 57863868416
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758350\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735632\n",
+        "swap": {
+          "pswpin": 81084,
+          "pswpout": 273907
+        },
+        "time": 135318.673946529
+      },
+      "sample_count": 42,
+      "peak_observed_own_group_RSS_bytes": 333258752
+    }
+  },
+  "warnings": {
+    "counted": 1,
+    "meaning": "Intentional overflow in pre-existing RDKit nonfinite unit-conversion guard (Pint registry.py).",
+    "post_session": "Published Pytest Receptor1.2.0 /dev/null discard-stream ResourceWarning; left visible, separate from counted session warnings.",
+    "owner_issue": "uibcdf/pytest-receptor#4",
+    "consumer_comment": "https://github.com/uibcdf/pytest-receptor/issues/4#issuecomment-6731923534"
+  },
+  "provider": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a",
+    "dirty": ""
+  },
+  "no_provider_native_or_prefix_change_by_this_task": true,
+  "resource_profile": {
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 60132311040,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7680073728
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=757617\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=734899\n",
+    "load": [
+      1.5009765625,
+      2.01318359375,
+      1.93798828125
+    ],
+    "swap_pages": {
+      "pswpin": 72095,
+      "pswpout": 273907
+    },
+    "AS_per_process": 1073741824,
+    "DATA_per_process": 536870912,
+    "observed_own_group_RSS_stop": 536870912,
+    "safety_envelope": 1610612736,
+    "reserve_fraction": 0.2,
+    "CPU": 19,
+    "threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "CPU_seconds": 120,
+    "wall_seconds": 180,
+    "aggregate_cgroup_swap_tasks_quota": false,
+    "scheduler": "sinfo: inval/unk* nodes, no usable allocation; no job requested.",
+    "estimate": "JSON/profile work plus2atom donor and original3ion controls; prior owned group<=364MB. Run native pilot first, serial; no retry/budget raise on resource refusal."
+  },
+  "docs": {
+    "recorded_at_utc": "2026-11-09T04:04:39.338863+00:00",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=90",
+      "--fsize=67108864",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/logs/docs-resources.txt",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-j",
+      "1",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "-q",
+      "-D",
+      "nb_execution_mode=off",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/html"
+    ],
+    "memory_entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57871802368,
+        "SwapTotal": 8589930496,
+        "SwapFree": 7848718336
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758708\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735975\n",
+      "load": [
+        2.07763671875,
+        1.888671875,
+        1.85302734375
+      ],
+      "swap_pages": {
+        "pswpin": 82364,
+        "pswpout": 273907
+      },
+      "monotonic": 135328.956965513
+    },
+    "resource_budget_bytes": 1073741824,
+    "reserve_bytes": 12995688039,
+    "backend_threads": 1,
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "rlimit_data_bytes": 536870912,
+    "rlimit_as": "unlimited inherited",
+    "aggregate_cgroup_enforcement": false,
+    "nb_execution": "off",
+    "scheduler": "Slurm binaries present; no active allocation. Small direct serial docs render only, established DATA512MiB route; no scheduler request.",
+    "resource_estimate": "Previous same-context strict full docs command:10.99s/280900KiB lifetime RSS; allow1GiB supervisor/own group envelope. Free memory is not reserved.",
+    "status": "completed",
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 10.009187135001412,
+    "memory_after": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58107437056,
+        "SwapTotal": 8589930496,
+        "SwapFree": 7919296512
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758708\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735975\n",
+      "load": [
+        2.1396484375,
+        1.9091796875,
+        1.8603515625
+      ],
+      "swap_pages": {
+        "pswpin": 87467,
+        "pswpout": 273907
+      },
+      "monotonic": 135338.967015598
+    }
+  },
+  "docs_peak_group_RSS_bytes": 304590848,
+  "checks": [
+    {
+      "name": "ruff",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format-check",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "444 files already formatted\n"
+    },
+    {
+      "name": "index-check",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.118s\n\nOK\n"
+    },
+    {
+      "name": "archive-tests",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.142s\n\nOK\n"
+    },
+    {
+      "name": "diff-check",
+      "args": [
+        "git",
+        "-c",
+        "gc.auto=0",
+        "-c",
+        "maintenance.auto=false",
+        "-c",
+        "pack.threads=1",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "full_evidence": {
+    "path": "pharmer_profile_source_20261109_full.json.gz",
+    "compressed_bytes": 115075,
+    "compressed_sha256": "5100e39ef213a32b113e5b94c09fcc41e55b8b386733a31ab083cfac3193a25a",
+    "uncompressed_bytes": 1134301,
+    "uncompressed_sha256": "1adda9ba5807b4dc6355ed529a7245d5ddf60ca79eb387d38dae55b9e9d452dc"
+  },
+  "installed": "Pending in this original source receipt: same141original bodies, three ordinary supported profiles and complete P1driver, one exact owned wheel, no PHMT checkout fallback.",
+  "limitations": "No full historical unlabelled attachment, external engine, export qualification, perception/search/angle equivalence, full source/public/platform, biological/performance/release or148 qualification. No manager transaction, provider acquisition, budget increase or shared-prefix change.",
+  "retention": {
+    "capsule": "build/phmt-pharmer-profile-20261109-bxb_e85x",
+    "review": "2026-11-23",
+    "tracked_raw_archive": true
+  }
+}

@@ -23,6 +23,13 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-09: [#163 supported Pharmer profile](pharmer_interoperability.md) adds
+warn/raise/ignore, detached reports and persisted loss audit, while retaining
+#162 omission and correcting inactive vectors. Source141selected cases pass
+(48new/93existing);35original red guards are preserved. Actual public donor
+evaluation confirms off/on behavior. Exact owned installed and complete P1driver
+receiving remain pending at this stage; external engine qualification is separate.
+
 2026-11-09: [#162 enabled-point import](pharmer_interoperability.md) now omits
 disabled points before parsing, defaults missing flags to true and rejects other
 types with the existing catalog diagnostic. Filtered-only metadata records dense
