@@ -1,9 +1,9 @@
 ---
 summary: Select saved work by native or pending status through the public reader.
 issue: uibcdf/pharmacophoremt#158
-status: partial
+status: resolved
 opened: 2026-11-08
-closed:
+closed: 2026-11-09
 verification: measured
 area: [results, usability]
 guard: tests/test_public_work_selection.py::TestPublicWorkSelection::test_status_selection_preserves_original_positions_and_distinctions
@@ -45,5 +45,22 @@ Source receiving: 99 selected bodies pass (14 new and all85 original controls).
 Four ordinary command outputs remain byte-for-byte identical. Strict full docs,
 Ruff and local reporting/index checks pass; the
 [source receipt](../evidence/work_selection_source_20261108.json) preserves the
-12-failure/2-pass baseline and actual limits. The exact owned installed bridge
-remains pending; no complete source or public-platform qualification is claimed.
+12-failure/2-pass baseline and actual limits. No complete source or
+public-platform qualification is claimed.
+
+## Bounded installed bridge received
+
+Received 2026-11-09 UTC after the increment started on2026-11-08 UTC.
+
+Exact source153ea506aa077f2811242cac3e63d04944fd1cc1 produces the owned
+0.4.0+188.g153ea50 wheel. The same99unchanged test bodies pass outside the checkout
+with the original public reader-support payloads.93guarded fresh children include
+65successes and28expected exit2 refusals; eight documented status commands
+preserve four original historical files and their independently checked native/
+pending membership, order and counts.211wheel payloads,156runtime files, nine
+fixture files, QA/support/SDK identities verify. The
+[installed receipt](../evidence/work_selection_installed_20261108.json) closes
+this bounded bridge with its actual512MiB per-process limits and own peak RSS;
+aggregate cgroup/zero-swap/task/quota enforcement remains unavailable. Full
+source, complete dependency/public installed-platform, human-usability,
+biological, molecular-performance and release gates remain independent.

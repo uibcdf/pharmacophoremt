@@ -23,12 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
-2026-11-08: [#158 saved-work status selection](pending_proposals/select_saved_work_status.md)
+2026-11-08: [#158 saved-work status selection](archive/select_saved_work_status.md)
 adds a public metadata-only iterator filter and independent command. Four exact
 statuses preserve original manifest positions, pending drafts and valid-zero
 distinctions. Source99bodies (14new/85original), four unchanged ordinary outputs,
-strict docs and local governance pass. Same-body owned installed receiving is
-pending. No collection, scoring, molecular acquisition or performance claim
+strict docs and local governance pass. The same99bodies pass from exact153ea50
+owned installed receiving, with93guarded children/eight documented commands on
+four unchanged historical files. The bounded bridge resolves. No collection,
+scoring, molecular acquisition or performance claim
 follows; filtered offsets belong to one verified snapshot.
 
 2026-11-08: [CDPKit lifecycle study](cdpkit_library_update_review.md) authenticates

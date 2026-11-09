@@ -1,0 +1,344 @@
+{
+  "schema": "pharmacophoremt.work-selection-installed@1",
+  "issue": 158,
+  "recorded_at_utc": "2026-11-09T00:16:27.452117+00:00",
+  "source_commit": "153ea506aa077f2811242cac3e63d04944fd1cc1",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-work-selection-20261108-2xqbtd9h/wheels/pharmacophoremt-0.4.0+188.g153ea50-py3-none-any.whl",
+    "bytes": 4527019,
+    "sha256": "64ee1745c322301d6b90feb09764155557681eba936f781e77e56db3800723c9"
+  },
+  "version": "0.4.0+188.g153ea50",
+  "selected_cases": 99,
+  "new_cases": 14,
+  "original_reader_cases": 85,
+  "original_test_bodies_unchanged": true,
+  "fixture_files": {
+    "tests/test_public_work_selection.py": {
+      "bytes": 16099,
+      "sha256": "e58e033a1a0ae57742fd5b77c2be3cb7b050267fb3810027a38765ebadb64fbb"
+    },
+    "tests/test_public_work_item.py": {
+      "bytes": 14923,
+      "sha256": "d5374831f061953d211486cf745c5542ccb9fa3f78c0ea5b420a08fbe7080fff"
+    },
+    "tests/test_public_work_cli.py": {
+      "bytes": 10900,
+      "sha256": "fac5732d10de07447fecd8390d69ddfc7f0c4702cbffa618667a77a14a1e82c2"
+    },
+    "tests/test_public_run_cli.py": {
+      "bytes": 12101,
+      "sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217"
+    },
+    "tests/test_public_run_results.py": {
+      "bytes": 22136,
+      "sha256": "4895b33278fa2200671d6c2039f8f4021712cccdfc7a5a7ec382ab7cdbf7c7c0"
+    },
+    "tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    },
+    "tests/test_public_run_progress.py": {
+      "bytes": 8831,
+      "sha256": "8fe5b06bd21a3eaa3e9f3df8d7d1c5581be72cf4e05b4f6b0ff56d20b6fd7d17"
+    },
+    "phmt_test_support/reference_run_store.py": {
+      "bytes": 1668,
+      "sha256": "8ef512fee2a166d6542845babea96310e274b6b654d3c9682ce098efa8edc74d"
+    },
+    "docs/content/cookbook/saved_work_inspection.md": {
+      "bytes": 4846,
+      "sha256": "235c6e9730ad24fc541186a96c71c0ded931f1904e1167c3c9e9d529ecaf40b0"
+    }
+  },
+  "all_wheel_payload_files_equal_before_and_after": 211,
+  "runtime_source_files_equal_before_and_after": 156,
+  "loaded_runtime": {
+    "state": "verified-loaded-imports",
+    "roots": [
+      "pharmacophoremt_results"
+    ],
+    "loaded": [
+      "pharmacophoremt_results",
+      "pharmacophoremt_results._api",
+      "pharmacophoremt_results._diagnostics",
+      "pharmacophoremt_results._digestion",
+      "pharmacophoremt_results._exports",
+      "pharmacophoremt_results._meta",
+      "pharmacophoremt_results._store"
+    ]
+  },
+  "fresh_guarded_children": 93,
+  "fresh_child_exit_codes": {
+    "0": 65,
+    "2": 28
+  },
+  "documented_commands": 8,
+  "historical_databases": [
+    {
+      "name": "source-complete",
+      "database": {
+        "bytes": 180224,
+        "sha256": "4b393b7efe567ac0ce332fcd7316e8fecea1d058a8b21c10d26c6435786cab2a"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 0,
+          "original_ordinals": []
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    },
+    {
+      "name": "installed-complete",
+      "database": {
+        "bytes": 180224,
+        "sha256": "6f8802a3a9278575f28ef7638ca8782f772d3fafc1c13849ed627b89101b6051"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 0,
+          "original_ordinals": []
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    },
+    {
+      "name": "source-partial",
+      "database": {
+        "bytes": 77824,
+        "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 2,
+          "original_ordinals": [
+            1,
+            2
+          ]
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    },
+    {
+      "name": "legacy-complete",
+      "database": {
+        "bytes": 118784,
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 0,
+          "original_ordinals": []
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    }
+  ],
+  "no_forbidden_import_attempts": true,
+  "public_support": [
+    {
+      "filename": "argdigest-0.17.1-py_0.tar.bz2",
+      "original_path": "/fast_data/home/liliana/miniconda3/pkgs/argdigest-0.17.1-py_0.tar.bz2",
+      "archive": {
+        "bytes": 55828,
+        "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899"
+      },
+      "admitted_root": "/tmp/phmt-work-selection-installed-20261108-xhy5nq4y/argdigest-0.17.1-py_0/site-packages",
+      "payload_files_verified": 48,
+      "version": "0.17.1",
+      "name": "argdigest",
+      "requires_dist": [
+        "depdigest>=0.11.0",
+        "smonitor>=0.16.0",
+        "numpy>=1.20.0; extra == \"science\"",
+        "beartype>=0.16.0; extra == \"beartype\"",
+        "pydantic>=2.0.0; extra == \"pydantic\"",
+        "pyunitwizard>=0.22.0; extra == \"pyunitwizard\"",
+        "numpy>=1.20.0; extra == \"pyunitwizard\"",
+        "beartype>=0.16.0; extra == \"all\"",
+        "pydantic>=2.0.0; extra == \"all\"",
+        "pyunitwizard>=0.22.0; extra == \"all\"",
+        "PyYAML>=6.0; extra == \"all\"",
+        "numpy>=1.20.0; extra == \"all\"",
+        "pandas>=2.0.0; extra == \"all\""
+      ]
+    },
+    {
+      "filename": "smonitor-0.22.1-py_0.tar.bz2",
+      "original_path": "/fast_data/home/liliana/miniconda3/pkgs/smonitor-0.22.1-py_0.tar.bz2",
+      "archive": {
+        "bytes": 60043,
+        "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e"
+      },
+      "admitted_root": "/tmp/phmt-work-selection-installed-20261108-xhy5nq4y/smonitor-0.22.1-py_0/site-packages",
+      "payload_files_verified": 51,
+      "version": "0.22.1",
+      "name": "smonitor",
+      "requires_dist": [
+        "rich>=13; extra == \"rich\"",
+        "pytest>=8; extra == \"pytest\"",
+        "pytest-receptor>=1.2; extra == \"pytest\""
+      ]
+    },
+    {
+      "filename": "depdigest-0.11.0-py_2.tar.bz2",
+      "original_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/artifacts/depdigest-0.11.0-py_2.tar.bz2",
+      "archive": {
+        "bytes": 23231,
+        "sha256": "b6ba665d9125f49506b7e4231e6065f164d3b643117a22288b44baafceff270f"
+      },
+      "admitted_root": "/tmp/phmt-work-selection-installed-20261108-xhy5nq4y/depdigest-0.11.0-py_2/site-packages",
+      "payload_files_verified": 26,
+      "version": "0.11.0",
+      "name": "depdigest",
+      "requires_dist": [
+        "smonitor>=0.13.0"
+      ]
+    }
+  ],
+  "public_support_files_unchanged": true,
+  "qa_files_unchanged": true,
+  "shared_sdk_revision": {
+    "root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk",
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "modules": [
+      "devtools",
+      "devtools.scripts",
+      "devtools.scripts.installed_imports",
+      "devtools.scripts.noarch_conda",
+      "devtools.scripts.conda_release_contract",
+      "devtools.scripts.verify_public_conda"
+    ],
+    "files": {
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/installed_imports.py": {
+        "bytes": 4637,
+        "sha256": "ff23458015bb7ce83bc3eea36571c4294bed09fff948e8eb6d9bcb3a0615fa3c"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/noarch_conda.py": {
+        "bytes": 24232,
+        "sha256": "d62e0dd42ca04f1381b94b1a3c8ca5cc312db72fb946e2c759d92a3b4eb7bf07"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/conda_release_contract.py": {
+        "bytes": 24830,
+        "sha256": "ce166c0990f386eb5b020192ef9b8d8381a3da47aa8d95507a6adb51d30009f3"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/verify_public_conda.py": {
+        "bytes": 10111,
+        "sha256": "bb743343ec7a58659b90e6cbae1a06380c7fd8e2328b1b7c11c85e52fc890567"
+      }
+    },
+    "operation": "devtools.scripts.installed_imports.check_installed_imports",
+    "scope": "Reuse the qualified pure loaded-runtime origin checker. Case-specific guarded startup, prefix/provider admission, original-body execution and wheel-byte validation retain their own roles."
+  },
+  "receptor_complete": true,
+  "evidence_files": {
+    "owned_build.json": {
+      "bytes": 45846,
+      "sha256": "96c52c10a66370c724498848f692f027cb37430eb8eba04e0f402a1979f0ebfe"
+    },
+    "installed_context_plan.json": {
+      "bytes": 9293,
+      "sha256": "247a6fdbf6c24076ecd392644d1a62fdc189fb98bae20e2819b68455b7aab970"
+    },
+    "installed_receiving.json": {
+      "bytes": 175572,
+      "sha256": "c7ec2c5b9ef019bdbb4a92c763d1f80fbbe59bb34e87083c80d44dc4fd8436aa"
+    },
+    "installed_children.json": {
+      "bytes": 39537,
+      "sha256": "35f95ab3abfae95447af21a405b8ac9e6ca24ec9a6c294bc139f2b0405a40281"
+    },
+    "installed_command.json": {
+      "bytes": 655,
+      "sha256": "abd511700ed2a905fbe8b507446c3534d3aedd84e5a757da4c647f7968b857e0"
+    },
+    "logs/installed.log": {
+      "bytes": 299,
+      "sha256": "46c2ed3f2694b282d9ef29eae164fb23d9fbe949d2081b05b6c629a6d58ac2f4"
+    },
+    "logs/installed.xml": {
+      "bytes": 16898,
+      "sha256": "ed19851850ce814e33888833c091ffa4b13a2e42e4bcbd360dbc91e274836d77"
+    },
+    "logs/installed.events.jsonl": {
+      "bytes": 210894,
+      "sha256": "766eeacc0dac0101065846afde89fe0f63a948ca456fbf93c457b0337682adda"
+    },
+    "logs/installed-resources.txt": {
+      "bytes": 937,
+      "sha256": "1737ef8e01b33a7cb9c8ffcbd0190c7a8f32ec45f556d60913715b786305d80c"
+    },
+    "logs/build-resources.txt": {
+      "bytes": 875,
+      "sha256": "eded4e42a6355aa2f428af5f63e34a0ce9fc0b0ac8ffa63b7047c620dfbdddc4"
+    }
+  },
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "AS": [
+      536870912,
+      536870912
+    ],
+    "DATA": [
+      536870912,
+      536870912
+    ],
+    "aggregate_cgroup": false,
+    "backend_threads": 1,
+    "io": "idle",
+    "installed_whole_command_peak_rss_bytes": 62488576,
+    "build_whole_command_peak_rss_bytes": 250060800,
+    "reserve_fraction": 0.2,
+    "reserve_not_allocation": true,
+    "zero_swap_tasks_cpu_quota": "not enforced; no own aggregate cgroup or user bus available"
+  },
+  "shared_prefix_changed": false,
+  "scientific_execution": false,
+  "environment_manager_transaction": false,
+  "raw_evidence": "build/phmt-work-selection-20261108-2xqbtd9h",
+  "owned_workspace": "/tmp/phmt-work-selection-installed-20261108-xhy5nq4y",
+  "retention_review": "2026-11-22",
+  "scope": "One exact owned independent-reader Linux/Python3.14 wheel and original public reader support payloads. Not a complete PHMT dependency solve/public PHMT publication, full source exact-head, supported installed/platform, molecular performance, biological or release qualification. Original source receipt keeps its then-pending installed state.",
+  "fresh_child_snapshots_verified": 93,
+  "fresh_child_forbidden_import_attempts": 0
+}

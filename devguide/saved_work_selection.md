@@ -59,8 +59,13 @@ scientific run; historical independent reading remains supported.
 
 The [source receipt](evidence/work_selection_source_20261108.json) retains
 99 passing selected bodies (14 new/85 original), unchanged ordinary command
-bytes, strict documentation and local governance. One exact owned installed
-receiving remains pending. Preserve original failures and separate producer
-identities. Full exact-head source, complete public
+bytes, strict documentation and local governance. The
+[installed receipt](evidence/work_selection_installed_20261108.json) receives
+the same99bodies from the exact153ea50 owned wheel outside the checkout, with
+93guarded children, eight documented commands on four unchanged historical
+databases and verified runtime/fixture/public-support identities. The bounded
+bridge resolves; the original source receipt keeps its then-pending state.
+Preserve original failures and separate producer identities. Full exact-head
+source, complete public
 dependency/installed-platform, biological, human-usability and release gates
 retain their independent acceptance.

@@ -1,6 +1,6 @@
 # Current development checkpoint
 
-Maintained 2026-11-08 UTC; owners LMMV/dprada. The goal is **active**, resumed at
+Maintained 2026-11-09 UTC; owners LMMV/dprada. The goal is **active**, resumed at
 Liliana's instruction. Pursue the accepted
 [mature pre-1.0 0.x staircase](roadmap.md) through usable increments.
 The version number follows useful completed scope; no final minor or date is fixed.
@@ -10,30 +10,21 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#158 saved-work selection](pending_proposals/select_saved_work_status.md) adds
+[#158 saved-work selection](archive/select_saved_work_status.md) adds
 `view.work_items(status=...)` and `--work-items --status STATUS` for exact saved
 matched/not_matched/failed or unpublished pending work. Original four-field
 mappings/order remain; staged drafts stay pending and hidden. The
 [source receipt](evidence/work_selection_source_20261108.json) retains99passing
 bodies (14new/85original), four byte-identical ordinary command outputs, strict
-docs and local governance. Same-body owned installed receiving is next; the
+docs and local governance. The same99bodies pass from exact153ea50 in one
+[owned installed reader](evidence/work_selection_installed_20261108.json), with
+93guarded children/eight documented commands/four unchanged historical files.
+The bounded bridge resolves; the
 [contract](saved_work_selection.md) retains complete opening/count costs and
 snapshot-specific offsets. No molecular or scale claim follows.
 
-The [CDPKit update/identity study](cdpkit_library_update_review.md), under#128,
-follows the previously unresolved CREATE/APPEND/UPDATE/merge semantics through
-exact v1.3.0/a8c7985. Ten captured source blobs authenticate in the
-[receipt](evidence/cdpkit_library_update_review_20261108.json). It separates
-replacement/session behavior, imported versus searchable counts, transferred
-features and per-record transaction scope. Nine declared follow-up cases refine
-consumer requirements for#108/MolSysMT#624; none has executed. This is selected
-source inspection, not a CDPKit installation, PHMT runtime/index/collection change
-or scientific/performance comparison. Three reporting tests, index checks, source-blob authentication and local
-Markdown targets pass. The existing #128 link to archived #140 is corrected.
-Canonical Discussion#132 publication/readback identities are recorded separately
-in [the owning issue](https://github.com/uibcdf/pharmacophoremt/issues/128).
-
 Earlier bounded increments retain their own contracts and source/run identities:
+[CDPKit lifecycle study](cdpkit_library_update_review.md),
 [#157 single-work detail](archive/inspect_saved_work_item.md),
 [#156 work pages](archive/inspect_declared_work_cli.md),
 [#155 BEDROC](archive/bedroc_small_alpha.md),
@@ -43,7 +34,7 @@ Earlier bounded increments retain their own contracts and source/run identities:
 [#145 progress reuse](saved_progress_reuse.md),
 [#153 SQLite cleanup](archive/administrative_sqlite_lifetimes.md) and
 [#154 native service caller](archive/native_qualification_service_oom.md).
-The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/3913a5a5c2a3e1c2c22d745fe330f5a3a6c5d640/devguide/checkpoint.md)
+The [preceding checkpoint](https://github.com/uibcdf/pharmacophoremt/blob/a3ff16deb658ec47fa823c43d4796fe76463ec4e/devguide/checkpoint.md)
 preserves the detailed receiving statements before this closeout; they are not
 new tasks. The [chemical-library guide](../docs/content/user/chemical_libraries.md)
 connects these operations, without qualifying a new connector or human usability.
@@ -54,9 +45,9 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive the same99reader bodies and documented status
-commands from one frozen owned wheel outside the checkout. Receive the provider
-disposition of the nine declared collection/update cases separately.
+**Next concrete action:** review the inspect/select/detail user journey under#108
+and declare its next bounded guided/expert gap before implementation. Receive the
+provider disposition of the nine declared collection/update cases separately.
 Before another#148 acquisition, receive a distinct reviewed environment-manager
 strategy from the common-tool owner. The
 [three original failures](feature_reuse_measurement.md) are preserved; latest
@@ -111,7 +102,7 @@ earlier route.
 
 | Lane | State | Next action |
 | --- | --- | --- |
-| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection, pages and exact-key detail received in bounded source/owned installed contexts; status selection passes99source cases; frozen27c1178 full source accepted | Receive same-body installed status selection; broader human usability/provider/source operations and full public/installed gates remain separate |
+| #108 libraries/product | Public iterator/runs, guided/expert parity, exports, progress, single/paired saved-run analysis, plan inspection, pages, detail and status selection received in bounded source/owned installed contexts; frozen27c1178 full source accepted | Review the combined inspection journey; broader human usability/provider/source operations and full public/installed gates remain separate |
 | MolSysMT#624 | Resource-owning collection contract remains open | Receive public lifecycle/source/state/frame/snapshot operations; no PHMT molecular parser/collection fork |
 | MolSysMT#375 / public provider | [Latest recorded index receiving](evidence/public_molsysmt_availability_20261108_summary.json): main0.23.0 retains its old file/hash,1.0.0is staging-only; modern API delivery remains separate | Receive a new main filename/hash or owner notice before another public solve; do not repeat unchanged artifacts or alter provider floors |
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
