@@ -23,6 +23,13 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+[#165 pinned r95 build](pharmer_r95_build_receiving.md) advances source/diagnostic
+readiness for milestones1/6:66original files and15private dependency artifacts
+are received; the legacy-ABI/SDF dependency probe passes. Both core/GCC collector
+profiles reach the unchanged group512MiB monitor limit. No Pharmer binary or
+engine result exists. Keep165partial, stop both compiler routes and receive a
+distinct managed resource context; continue independent library/provider work.
+
 [#164 external P1preparation](pharmer_p1_external_admission.md) freezes build/CLI/
 resource/output admission and three real MolSysMT exports without changing runtime
 code or external execution. The same17original source/existing-owned-wheel198cases (5new/12P1) and complete

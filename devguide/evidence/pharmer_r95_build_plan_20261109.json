@@ -1,0 +1,916 @@
+{
+  "schema": "pharmacophoremt.pharmer-r95-build-plan@1",
+  "issue": 165,
+  "parent_source": "b517b4e67fd29e88770f106c65b5644add62c22b",
+  "source": {
+    "base": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/",
+    "files": [
+      {
+        "path": ".cproject",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.cproject",
+        "bytes": 36044,
+        "sha256": "3ee168cbdf1e50231532eab558faae743bae85ec8e12d28b90a5fa1eb7702d63",
+        "etag": "\"94//.cproject\"",
+        "last_modified": "Thu, 18 Dec 2014 02:39:59 GMT"
+      },
+      {
+        "path": ".project",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/.project",
+        "bytes": 2487,
+        "sha256": "a6314622ba42644d38ecde0f0bdb78f6220f1abc3f56c0b48959cb58bdc385b0",
+        "etag": "\"52//.project\"",
+        "last_modified": "Tue, 03 Apr 2012 14:48:31 GMT"
+      },
+      {
+        "path": "BitSetTree.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/BitSetTree.h",
+        "bytes": 15531,
+        "sha256": "72aa73ec4840bd7abf9c38fd02537e9ee513c79456ed8f97cda87013eae4d8d2",
+        "etag": "\"91//BitSetTree.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "BoundingBox.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/BoundingBox.cpp",
+        "bytes": 1068,
+        "sha256": "d491dc799f3fd49435665719a4a8e92df8a1a416e8d3b8f62117c0f6c977587d",
+        "etag": "\"1//BoundingBox.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "BoundingBox.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/BoundingBox.h",
+        "bytes": 3939,
+        "sha256": "c8d837c8c659210f6271896a3868970eac737fa57033a7cb44e072a6ae440330",
+        "etag": "\"91//BoundingBox.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "BumpAllocator.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/BumpAllocator.h",
+        "bytes": 2323,
+        "sha256": "209606d4f0a3ae0aa99b6312a5831f68ceb031080251511dc51fd64e0270e024",
+        "etag": "\"91//BumpAllocator.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "CommandLine2/.cproject",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/CommandLine2/.cproject",
+        "bytes": 46345,
+        "sha256": "7d35343ccb410dfec287b832428e4896f6a8820200f0035d5aa8883ef16aa0e9",
+        "etag": "\"1//CommandLine2/.cproject\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "CommandLine2/.project",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/CommandLine2/.project",
+        "bytes": 2445,
+        "sha256": "5bd7bbda978edd015bcd41f05d3505b1aa7b1be5ff365e1f8999ec02a82acafd",
+        "etag": "\"1//CommandLine2/.project\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "CommandLine2/CommandLine.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/CommandLine2/CommandLine.cpp",
+        "bytes": 40503,
+        "sha256": "a37d96e3afff410329e042a1cca98b57fb238cc59bdbb05fd9fd5bc12114cb93",
+        "etag": "\"66//CommandLine2/CommandLine.cpp\"",
+        "last_modified": "Mon, 11 Feb 2013 22:08:26 GMT"
+      },
+      {
+        "path": "CommandLine2/CommandLine.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/CommandLine2/CommandLine.h",
+        "bytes": 49079,
+        "sha256": "26312b10286c914c2a44bb022bb3aa05be0b7f8bc2e13766c6316066818e9c4f",
+        "etag": "\"66//CommandLine2/CommandLine.h\"",
+        "last_modified": "Mon, 11 Feb 2013 22:08:26 GMT"
+      },
+      {
+        "path": "Corresponder.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Corresponder.cpp",
+        "bytes": 1028,
+        "sha256": "b085ba184726f04839e4747636841d890a7cba80a8acb2ae1e418d0919dd94e6",
+        "etag": "\"1//Corresponder.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "Corresponder.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Corresponder.h",
+        "bytes": 8386,
+        "sha256": "1d503871334d9c097b13bbc3d5a0754056ddca64197a69c98cb6869f3932d5ce",
+        "etag": "\"91//Corresponder.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "Excluder.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Excluder.cpp",
+        "bytes": 1582,
+        "sha256": "71f4b9a13ef98d17bb14e9eaa50b17005dc627c2c1ccef2d6840350c2e5f91b5",
+        "etag": "\"55//Excluder.cpp\"",
+        "last_modified": "Mon, 11 Jun 2012 15:26:53 GMT"
+      },
+      {
+        "path": "Excluder.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Excluder.h",
+        "bytes": 1324,
+        "sha256": "7ea0aa2bb7436385ccd810720b104d29aa6abc43a591f28d6953e4453930747a",
+        "etag": "\"55//Excluder.h\"",
+        "last_modified": "Mon, 11 Jun 2012 15:26:53 GMT"
+      },
+      {
+        "path": "FloatCoord.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/FloatCoord.h",
+        "bytes": 1813,
+        "sha256": "8f1e0d4b3681aba895cf2d281cb6359f499fd591e5fff773c0a796e17ef5dbe3",
+        "etag": "\"1//FloatCoord.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "LICENSE",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/LICENSE",
+        "bytes": 15220,
+        "sha256": "d8c320ffc0030d1b096ae4732b50d2b811cf95e9a9b7377c1127b2563e0a0388",
+        "etag": "\"65//LICENSE\"",
+        "last_modified": "Fri, 19 Oct 2012 16:06:09 GMT"
+      },
+      {
+        "path": "MMappedRegion.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MMappedRegion.h",
+        "bytes": 2980,
+        "sha256": "cd885e652c7949a8cb631215a0d1cf8f9c853f3ee283db13eb1daabbefe39357",
+        "etag": "\"91//MMappedRegion.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "MTQueue.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MTQueue.h",
+        "bytes": 4109,
+        "sha256": "e97305f7bfc4de03de5f6e8c3a64ad4c8f101ae934193cd235b42e61b793e5a6",
+        "etag": "\"91//MTQueue.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "MolFilter.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/MolFilter.h",
+        "bytes": 1575,
+        "sha256": "c8f5cce1e14f64be3138d77b06b60824ff2c0471c3961874f546c41aa70b2251",
+        "etag": "\"91//MolFilter.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "PMol.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.cpp",
+        "bytes": 12024,
+        "sha256": "5230707ac47e46fa1a5f5e631f380bfd35da667f1390dca0a5f7a56fe24c8fa7",
+        "etag": "\"91//PMol.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "PMol.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PMol.h",
+        "bytes": 5433,
+        "sha256": "f45408c7d03f0a4ec05bd9f0d7bf68a9e36388d28d10caaf0ef102314bd62444",
+        "etag": "\"91//PMol.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "PharmerQuery.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerQuery.cpp",
+        "bytes": 21517,
+        "sha256": "3be417572c7fbc5c2a6405db7abed6670cc019891c765a69ba84ab66a79b80d7",
+        "etag": "\"93//PharmerQuery.cpp\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT"
+      },
+      {
+        "path": "PharmerQuery.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerQuery.h",
+        "bytes": 6670,
+        "sha256": "fea9e9e3f88b2add08bff83962b108f92f90edefd10827b3b7dee53b281fff77",
+        "etag": "\"93//PharmerQuery.h\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT"
+      },
+      {
+        "path": "PharmerServer.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerServer.cpp",
+        "bytes": 10799,
+        "sha256": "2c4bdc46aef15a488839fc9391a38138107e5d9e168d66ac5fd12c27763e443b",
+        "etag": "\"86//PharmerServer.cpp\"",
+        "last_modified": "Tue, 08 Jul 2014 19:04:33 GMT"
+      },
+      {
+        "path": "PharmerServer.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerServer.h",
+        "bytes": 2921,
+        "sha256": "37dd732b934d75c9382bb1bd999566dff63b491bf505048a627d8b3281be0ea4",
+        "etag": "\"91//PharmerServer.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "PharmerServerCommands.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/PharmerServerCommands.h",
+        "bytes": 24287,
+        "sha256": "34493042edb9b479a066ce2258797d65f5606954855f3302024b72389d63d9ae",
+        "etag": "\"93//PharmerServerCommands.h\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT"
+      },
+      {
+        "path": "QueryTripletFingerprint.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/QueryTripletFingerprint.cpp",
+        "bytes": 21110,
+        "sha256": "722529d10c51acca7f07478a50252a8097f4eb08a8d2401eaf86258a7d8f2313",
+        "etag": "\"91//QueryTripletFingerprint.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "QueryTripletFingerprint.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/QueryTripletFingerprint.h",
+        "bytes": 1814,
+        "sha256": "f6712eb97fd7ba6fa03befa484b04d2aff1054018ebc9d44e2e1f2e7998a0224",
+        "etag": "\"1//QueryTripletFingerprint.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "README",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/README",
+        "bytes": 7163,
+        "sha256": "1f252a8a1a90eda8a4da2d0bc7c67b3d35023049d6caddb45757272c5eb159eb",
+        "etag": "\"89//README\"",
+        "last_modified": "Wed, 20 Aug 2014 14:46:09 GMT"
+      },
+      {
+        "path": "RMSD.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/RMSD.cpp",
+        "bytes": 6192,
+        "sha256": "4f3abc8b1c6f68e0cad246566b65cf45b536b159f39c7037864dd4b995c34d69",
+        "etag": "\"91//RMSD.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "RMSD.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/RMSD.h",
+        "bytes": 3327,
+        "sha256": "1a50c2f532a5fae421ed74eacf7a1a548a5b2b410c04c216d14337d013a1b44f",
+        "etag": "\"91//RMSD.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "ReadMCMol.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ReadMCMol.h",
+        "bytes": 4339,
+        "sha256": "cb5709a782f748f508f233929223f5bc97debce8ea1a2f0ab0f8a165f9778496",
+        "etag": "\"94//ReadMCMol.h\"",
+        "last_modified": "Thu, 18 Dec 2014 02:39:59 GMT"
+      },
+      {
+        "path": "SPSCQueue.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/SPSCQueue.h",
+        "bytes": 3962,
+        "sha256": "db163cc800c59218b05877cd4cf34411ac96f82ac327787e81269e13da927658",
+        "etag": "\"91//SPSCQueue.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "SimpleFingers.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/SimpleFingers.h",
+        "bytes": 5081,
+        "sha256": "1366b6d3f2b6be69ddb69f5696a98f0c75fb85ecba4d68f83bb6fc33e35e7f9c",
+        "etag": "\"1//SimpleFingers.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "SphereGrid.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/SphereGrid.cpp",
+        "bytes": 4277,
+        "sha256": "2ca7957608025cad2f5e8e76ecd9fbc8ac70ec0dde089a6a94d9e17cce9d7496",
+        "etag": "\"91//SphereGrid.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "SphereGrid.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/SphereGrid.h",
+        "bytes": 2137,
+        "sha256": "c999c54cc4558c2dbefdf8c82f91ec89469f356422d0269436ea59a67ee7f9b0",
+        "etag": "\"91//SphereGrid.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "SpinLock.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/SpinLock.h",
+        "bytes": 2144,
+        "sha256": "368bd7309d9e2c79e1cc711d682b3219efdf06f9ab86f2ae53c9f1b6a801f03f",
+        "etag": "\"1//SpinLock.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "ThreadCounter.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreadCounter.h",
+        "bytes": 1650,
+        "sha256": "3c0fb0aa9e868d620c78004e494754e81ddf5d5f446f2939ba0f7efbe178560d",
+        "etag": "\"1//ThreadCounter.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "ThreePointData.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreePointData.cpp",
+        "bytes": 5330,
+        "sha256": "0f3aa4bfa967faaff0c37b1639ae3bbb5a42ee84d2c20d14800d7fe183bf2493",
+        "etag": "\"94//ThreePointData.cpp\"",
+        "last_modified": "Thu, 18 Dec 2014 02:39:59 GMT"
+      },
+      {
+        "path": "ThreePointData.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/ThreePointData.h",
+        "bytes": 4162,
+        "sha256": "ed8f254adeae0d01ef59302c58889cc3b8da1a1e62408771d1fb391372b3fa16",
+        "etag": "\"1//ThreePointData.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "Timer.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Timer.h",
+        "bytes": 2573,
+        "sha256": "75afc6622dd3c7e9b5b11a5ee8d14bd82290f3a5a530bee49c0fdf9f60c8071e",
+        "etag": "\"1//Timer.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "TripleIndexer.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/TripleIndexer.h",
+        "bytes": 3205,
+        "sha256": "f7ecabcea207582465fbcda29980a8586d470ff945f0ff9ffd5d753ab06e411e",
+        "etag": "\"91//TripleIndexer.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "Triplet.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Triplet.cpp",
+        "bytes": 910,
+        "sha256": "e88665f09e181587ef47293dba6f40a849cc4ab4909eb2db8bc3d7161f0a8ccb",
+        "etag": "\"1//Triplet.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "Triplet.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/Triplet.h",
+        "bytes": 32931,
+        "sha256": "27515a7e288eb884c8946f8392845144d1fab2582e553e68a6422358973cca35",
+        "etag": "\"93//Triplet.h\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT"
+      },
+      {
+        "path": "TripletFingerprint.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/TripletFingerprint.cpp",
+        "bytes": 4700,
+        "sha256": "4c1ca7e439f972cb5889001189c28b784e00d14ee94cb7629849c81c643c3119",
+        "etag": "\"91//TripletFingerprint.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "TripletFingerprint.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/TripletFingerprint.h",
+        "bytes": 5998,
+        "sha256": "4575bae511279a160c96425f8720922d24965525ea0c8b0989ca50db52647b93",
+        "etag": "\"91//TripletFingerprint.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "basis.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/basis.cpp",
+        "bytes": 5767,
+        "sha256": "8970cb053c85d87cedbf0c7b4f435edcc23cae79935430facb7a32a05f0a7521",
+        "etag": "\"91//basis.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "basis.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/basis.h",
+        "bytes": 2543,
+        "sha256": "bf8c2f44d08507ec24cde4ff13e9b3f5a3ecc8bda23c9287514ad96dfd1ad53c",
+        "etag": "\"91//basis.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "cgi.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/cgi.cpp",
+        "bytes": 2647,
+        "sha256": "31354dd392503f32d3f848561b01c05d91e0237cbf01028e6b7bcfe6fd7c1ecb",
+        "etag": "\"91//cgi.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "cgi.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/cgi.h",
+        "bytes": 2841,
+        "sha256": "e17d59fad10add6b525df73cb53010ebbb6e9f7ab8b31df43cc0deeb1ee72e3b",
+        "etag": "\"23//cgi.h\"",
+        "last_modified": "Wed, 29 Jun 2011 15:43:22 GMT"
+      },
+      {
+        "path": "cors.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/cors.h",
+        "bytes": 4252,
+        "sha256": "42248586d6fa63cede566b7a239f79160ef413d4b2a314a2af8e434648f4d364",
+        "etag": "\"1//cors.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "main.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/main.cpp",
+        "bytes": 18774,
+        "sha256": "c24c7be9623f37fe36c9f5e5e9391f7ac9a83337ef9fb0e04cd89980b95316f5",
+        "etag": "\"95//main.cpp\"",
+        "last_modified": "Thu, 19 Feb 2015 18:27:51 GMT"
+      },
+      {
+        "path": "params.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/params.h",
+        "bytes": 3491,
+        "sha256": "b9e83c5b7085172c898b7b581f4816391f530f9c8f1271b2570a59f30dc78a22",
+        "etag": "\"91//params.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "pharmarec.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmarec.cpp",
+        "bytes": 28895,
+        "sha256": "5c89ea4d1187815d95f37e28641be5da984211d896dc9387622c99785401ad94",
+        "etag": "\"91//pharmarec.cpp\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "pharmarec.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmarec.h",
+        "bytes": 8041,
+        "sha256": "48d832d6ad7070f13b07008e8d90085419bab0d3487be15c1db1a9500f877574",
+        "etag": "\"91//pharmarec.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "pharmerdb.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.cpp",
+        "bytes": 31096,
+        "sha256": "bb629291c101474d09aac8bb7cf2ef884b459e58861fc8ae9d0efc310c2c4614",
+        "etag": "\"93//pharmerdb.cpp\"",
+        "last_modified": "Fri, 12 Dec 2014 22:46:44 GMT"
+      },
+      {
+        "path": "pharmerdb.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/pharmerdb.h",
+        "bytes": 15158,
+        "sha256": "3e1dcdd18021dc53a23e3bba7a354e9198590f27a464c764ff1ecaee57dd1eab",
+        "etag": "\"91//pharmerdb.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "queryparsers.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/queryparsers.h",
+        "bytes": 14984,
+        "sha256": "90ead8c1c011bda939ef2f68b5926426fe37efeea77993a3c12b13d5dad67fca",
+        "etag": "\"91//queryparsers.h\"",
+        "last_modified": "Thu, 11 Dec 2014 17:06:24 GMT"
+      },
+      {
+        "path": "tinyxml/tinystr.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tinyxml/tinystr.cpp",
+        "bytes": 2602,
+        "sha256": "717154a980d9ea730c879ff6a62e58ebedbb198ac6b5711df4f617b830496cd7",
+        "etag": "\"1//tinyxml/tinystr.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "tinyxml/tinystr.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tinyxml/tinystr.h",
+        "bytes": 8783,
+        "sha256": "25cef0d734c2575898950b96c2cfe8987bf05f30951d9f1db15124ed9bd7381f",
+        "etag": "\"1//tinyxml/tinystr.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "tinyxml/tinyxml.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tinyxml/tinyxml.cpp",
+        "bytes": 36435,
+        "sha256": "aea6de89017d22ef8be7129667612b0844a1c96c4395323b75088c4a4a887d11",
+        "etag": "\"1//tinyxml/tinyxml.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "tinyxml/tinyxml.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tinyxml/tinyxml.h",
+        "bytes": 64339,
+        "sha256": "54060ad4f5e10b2ac704355b8d43d15d15056b5bb76df507ddaf720f725dd8a4",
+        "etag": "\"1//tinyxml/tinyxml.h\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "tinyxml/tinyxmlerror.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tinyxml/tinyxmlerror.cpp",
+        "bytes": 1780,
+        "sha256": "33677a9d5410e25c8294dd42e0caf21ca05315475c9819aa35e17f20f3f0a8b0",
+        "etag": "\"1//tinyxml/tinyxmlerror.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "tinyxml/tinyxmlparser.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tinyxml/tinyxmlparser.cpp",
+        "bytes": 37193,
+        "sha256": "672312a50ccb11ad7d99845091d6621769519b77a6fd314d350428c5b787c5e9",
+        "etag": "\"1//tinyxml/tinyxmlparser.cpp\"",
+        "last_modified": "Tue, 22 Feb 2011 18:19:13 GMT"
+      },
+      {
+        "path": "tripletmatching.cpp",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tripletmatching.cpp",
+        "bytes": 2935,
+        "sha256": "335e0a749cdffa8c44beae59e2598cd008d95cd01fc02874eb29f89b20bd147d",
+        "etag": "\"19//tripletmatching.cpp\"",
+        "last_modified": "Wed, 22 Jun 2011 18:35:21 GMT"
+      },
+      {
+        "path": "tripletmatching.h",
+        "url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/tripletmatching.h",
+        "bytes": 14384,
+        "sha256": "3af8317619af01eea6626e0af888c7af236e5a4063205ef68f4717fc7b9aad69",
+        "etag": "\"95//tripletmatching.h\"",
+        "last_modified": "Thu, 19 Feb 2015 18:27:51 GMT"
+      }
+    ],
+    "total_response_bytes": 755425,
+    "complete_listing_recursion": true,
+    "earlier_source_files_equal": [
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/.cproject",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/.project",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/Corresponder.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/Excluder.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/Excluder.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/LICENSE",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/MMappedRegion.h",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/PMol.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/PMol.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/PharmerQuery.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/PharmerQuery.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/QueryTripletFingerprint.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/QueryTripletFingerprint.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/README",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/RMSD.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/RMSD.h",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/ReadMCMol.h",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/ThreadCounter.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/ThreePointData.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/ThreePointData.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/Triplet.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/TripletFingerprint.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/TripletFingerprint.h",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/main.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/params.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/pharmarec.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/pharmarec.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/pharmerdb.cpp",
+      "build/phmt-pharmer-admission-20261109-cm8qw_mg/raw/pharmerdb.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/queryparsers.h",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/tripletmatching.cpp",
+      "build/phmt-pharmer-study-20261109-65wo09x3/raw/tripletmatching.h"
+    ]
+  },
+  "dependencies": {
+    "release": {
+      "url": "https://archive.ubuntu.com/ubuntu/dists/trusty/Release",
+      "bytes": 58512,
+      "sha256": "a2a3d216e0febfdf641df476a2d82c592087e5141151b0b46237829eab7176a0"
+    },
+    "release_signature": "HTTPS Release and its SHA256 package-index/file links; no separate GPG signature verification claimed.",
+    "indexes": [
+      {
+        "url": "https://archive.ubuntu.com/ubuntu/dists/trusty/main/binary-amd64/Packages.gz",
+        "bytes": 1743009,
+        "sha256": "59fa3195fd15bb2860fad4ff9ed37b249035e05ee327bed18f95dc88a0a41eb9"
+      },
+      {
+        "url": "https://archive.ubuntu.com/ubuntu/dists/trusty/universe/binary-amd64/Packages.gz",
+        "bytes": 7588885,
+        "sha256": "6790fe3c98860e2de6b263fc6d988f017e0f41f86180e9fe8cd4a6951eb1086e"
+      }
+    ],
+    "packages": {
+      "libboost-date-time1.54.0": {
+        "Package": "libboost-date-time1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-date-time1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "20742",
+        "SHA256": "cc9b08add5af44f5ad6bf0186fc6c18f41cd36e96b510d18695287a4b6ad5a64",
+        "Depends": "libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)",
+        "component": "main"
+      },
+      "libboost-filesystem1.54.0": {
+        "Package": "libboost-filesystem1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-filesystem1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "34222",
+        "SHA256": "6aa223f143179f0b627d148ef27b60ae3846ec0db1a840a21b4e09e3b234440b",
+        "Depends": "libboost-system1.54.0, libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)",
+        "component": "main"
+      },
+      "libboost-iostreams1.54.0": {
+        "Package": "libboost-iostreams1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-iostreams1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "29136",
+        "SHA256": "fabb2aeb6fe9b6305f79f819e4a39a9f66f0c72f4276a2ab3afbde91ec2ac45e",
+        "Depends": "libbz2-1.0, libc6 (>= 2.2.5), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.2.1), zlib1g (>= 1:1.1.4)",
+        "component": "main"
+      },
+      "libboost-program-options1.54.0": {
+        "Package": "libboost-program-options1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-program-options1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "115370",
+        "SHA256": "3cee47e208e5a14e500204cb1d3f4f3b6bdc27b722e3cbd28ecd7a68cd8382f9",
+        "Depends": "libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)",
+        "component": "main"
+      },
+      "libboost-serialization1.54.0": {
+        "Package": "libboost-serialization1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-serialization1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "125624",
+        "SHA256": "33d7a07e1d5e0b0e6a170d2df60dd728ca40979bfbb209b188ae80857ddc452f",
+        "Depends": "libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.6)",
+        "component": "main"
+      },
+      "libboost-system1.54.0": {
+        "Package": "libboost-system1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-system1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "10138",
+        "SHA256": "bc528cb8034ad90c69d36bef2a070f9645104fd80e91133900a553d14bbf17cc",
+        "Depends": "libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)",
+        "component": "main"
+      },
+      "libboost-thread1.54.0": {
+        "Package": "libboost-thread1.54.0",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost-thread1.54.0_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "26508",
+        "SHA256": "6f5873c252a099ffec29e4c8ee2e3fe48b02cf478a0baca3ac26dc1eb3d4872a",
+        "Depends": "libboost-system1.54.0, libc6 (>= 2.3.2), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.2.1)",
+        "component": "main"
+      },
+      "libboost1.54-dev": {
+        "Package": "libboost1.54-dev",
+        "Version": "1.54.0-4ubuntu3",
+        "Architecture": "amd64",
+        "Filename": "pool/main/b/boost1.54/libboost1.54-dev_1.54.0-4ubuntu3_amd64.deb",
+        "Size": "5669744",
+        "SHA256": "eb0aad2337f11a678157da49b73ab88faf877bfc3a32ca199ee686a90e115a32",
+        "Depends": "libstdc++-4.8-dev | libstdc++-dev",
+        "component": "main"
+      },
+      "libeigen3-dev": {
+        "Package": "libeigen3-dev",
+        "Version": "3.2.0-8",
+        "Architecture": "all",
+        "Filename": "pool/universe/e/eigen3/libeigen3-dev_3.2.0-8_all.deb",
+        "Size": "494158",
+        "SHA256": "67194a20f0a59623a46923ca68b6dc35e5e9cdcad09fe882feb0c3e8988d7aec",
+        "Depends": "pkg-config",
+        "component": "universe"
+      },
+      "libjsoncpp-dev": {
+        "Package": "libjsoncpp-dev",
+        "Version": "0.6.0~rc2-3ubuntu1",
+        "Architecture": "amd64",
+        "Filename": "pool/universe/libj/libjsoncpp/libjsoncpp-dev_0.6.0~rc2-3ubuntu1_amd64.deb",
+        "Size": "191026",
+        "SHA256": "5caabf6b7cdc6528a2ad318e2b559cb4a4c6a79572356c43c2a0387cf4761ec5",
+        "Depends": "libjsoncpp0 (= 0.6.0~rc2-3ubuntu1)",
+        "component": "universe"
+      },
+      "libjsoncpp0": {
+        "Package": "libjsoncpp0",
+        "Version": "0.6.0~rc2-3ubuntu1",
+        "Architecture": "amd64",
+        "Filename": "pool/universe/libj/libjsoncpp/libjsoncpp0_0.6.0~rc2-3ubuntu1_amd64.deb",
+        "Size": "56514",
+        "SHA256": "d16c7988c9db19741535d935a8dd8b92c8811e3e6be5690da58ee4df95396ece",
+        "Depends": "libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.4.0)",
+        "component": "universe"
+      },
+      "libopenbabel-dev": {
+        "Package": "libopenbabel-dev",
+        "Version": "2.3.2+dfsg-1.1",
+        "Architecture": "amd64",
+        "Filename": "pool/universe/o/openbabel/libopenbabel-dev_2.3.2+dfsg-1.1_amd64.deb",
+        "Size": "157422",
+        "SHA256": "d611cbbcbe4cbf81c7f692fdcc572ae6010c767751f45156be0ca03b047dfa96",
+        "Depends": "libopenbabel4 (= 2.3.2+dfsg-1.1)",
+        "component": "universe"
+      },
+      "libopenbabel4": {
+        "Package": "libopenbabel4",
+        "Version": "2.3.2+dfsg-1.1",
+        "Architecture": "amd64",
+        "Filename": "pool/universe/o/openbabel/libopenbabel4_2.3.2+dfsg-1.1_amd64.deb",
+        "Size": "2632130",
+        "SHA256": "7e6fa7dd3d044edcd6b3cac41640eb1db6999d4e42aaf2b3770f0f6457544050",
+        "Depends": "libc6 (>= 2.14), libcairo2 (>= 1.2.4), libgcc1 (>= 1:4.1.1), libgomp1 (>= 4.2.1), libstdc++6 (>= 4.6), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)",
+        "component": "universe"
+      },
+      "libgoogle-perftools-dev": {
+        "Package": "libgoogle-perftools-dev",
+        "Version": "2.1-2ubuntu1",
+        "Architecture": "amd64",
+        "Filename": "pool/main/g/google-perftools/libgoogle-perftools-dev_2.1-2ubuntu1_amd64.deb",
+        "Size": "406856",
+        "SHA256": "f517a005ab05cb175747fa5d4b240b3483b67039f74cd8c1d6f7fd6939fb43d8",
+        "Depends": "libgoogle-perftools4 (= 2.1-2ubuntu1), libtcmalloc-minimal4 (= 2.1-2ubuntu1), libunwind8-dev",
+        "component": "main"
+      },
+      "libtcmalloc-minimal4": {
+        "Package": "libtcmalloc-minimal4",
+        "Version": "2.1-2ubuntu1",
+        "Architecture": "amd64",
+        "Filename": "pool/main/g/google-perftools/libtcmalloc-minimal4_2.1-2ubuntu1_amd64.deb",
+        "Size": "103618",
+        "SHA256": "733c7719cb251d7298e10790e128a685de9846abd043a15073fb21ea48507af0",
+        "Depends": "libc6 (>= 2.14), libgcc1 (>= 1:4.1.1), libstdc++6 (>= 4.1.1)",
+        "component": "main"
+      }
+    },
+    "missing": [],
+    "required_packages": [
+      "libboost-date-time1.54.0",
+      "libboost-filesystem1.54.0",
+      "libboost-iostreams1.54.0",
+      "libboost-program-options1.54.0",
+      "libboost-serialization1.54.0",
+      "libboost-system1.54.0",
+      "libboost-thread1.54.0",
+      "libboost1.54-dev",
+      "libeigen3-dev",
+      "libgoogle-perftools-dev",
+      "libjsoncpp-dev",
+      "libjsoncpp0",
+      "libopenbabel-dev",
+      "libopenbabel4",
+      "libtcmalloc-minimal4"
+    ],
+    "note": "Exact15-package shortlist only. Selected Ubuntu OpenBabel has no InChI dependency. BitMagic include is inside r95 SimpleFingers.h #if0 and is not an active build requirement. No full dpkg installation/solver closure; verify actual reached headers/libs/runtime paths."
+  },
+  "compiler_recipe": {
+    "cxx": "/usr/bin/g++",
+    "compiler": {
+      "path": "/usr/bin/x86_64-linux-gnu-g++-15",
+      "bytes": 1305304,
+      "sha256": "e6718f7e0c7d057c3ff77b550c603da9bc4030e3ede3c053705acce1293dbe4d"
+    },
+    "cc1plus": {
+      "path": "/usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus",
+      "bytes": 39797952,
+      "sha256": "6f2b2c0e3fd32042eb2acace19a57fdb0b229d9c24cdd5e2cc100639c77e9ff0"
+    },
+    "version": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+    "flags": [
+      "-std=gnu++11",
+      "-O0",
+      "-g0",
+      "-pthread",
+      "-D_GLIBCXX_USE_CXX11_ABI=0",
+      "-DEIGEN_DISABLE_STACK_SIZE_ASSERT",
+      "-DEIGEN_DONT_PARALLELIZE",
+      "-DSKIP_REGISTERZINC",
+      "-fmax-errors=5",
+      "-Wno-deprecated-declarations",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/eigen-overlay",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/include/openbabel-2.0",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/include/jsoncpp",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/include"
+    ],
+    "link": [
+      "-Wl,--disable-new-dtags,-rpath,/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib:/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu",
+      "-pthread",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libopenbabel.so.4.0.2",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libjsoncpp.so.0.6.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libtcmalloc_minimal.so.4.1.2",
+      "/lib/x86_64-linux-gnu/libz.so.1",
+      "/lib/x86_64-linux-gnu/libbz2.so.1.0"
+    ],
+    "libraries": {
+      "prefix/usr/lib/libopenbabel.so.4.0.2": {
+        "bytes": 2194176,
+        "sha256": "6a3c4e414303d7227154335e169f9d406da9e9dac5e27acdef690806ff034b28"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libjsoncpp.so.0.6.0": {
+        "bytes": 129632,
+        "sha256": "0728d1b0dabb584c5081ab09f9c4c5b25f4073742cb7a8078c027f9f162ae7fb"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.54.0": {
+        "bytes": 436976,
+        "sha256": "699bac66df0265ce552b55dad843eaf834f699b399ba5ef4710de21c04f3653a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.54.0": {
+        "bytes": 68048,
+        "sha256": "aa1c3b760ced87466a53672e0c5391bfbaec2fb93d5b9692ae42538ee3e7704d"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.54.0": {
+        "bytes": 100928,
+        "sha256": "6ed477e7da6c6d34b21c8037e4baf846a1788b51be9a28fae479b8e39cb6da9a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0": {
+        "bytes": 14536,
+        "sha256": "6322d749bbf46e32dcb99893e3e7c297b412d017e600f3b02572ddea8ebc286a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.54.0": {
+        "bytes": 449472,
+        "sha256": "665c6bbe026a7f42590ab9f84943385e24580c763c945bfacb473c84b5c43f3e"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0": {
+        "bytes": 88632,
+        "sha256": "3c782688cc1b1322276490fc0058381e4b435b64f84b811d62fb1b4c532bcd4a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0": {
+        "bytes": 88936,
+        "sha256": "2a9234da7703e69bf376a7344fe77b7a0abb02b80138afaa8f655a8e69d89f1e"
+      },
+      "prefix/usr/lib/libtcmalloc_minimal.so.4.1.2": {
+        "bytes": 155000,
+        "sha256": "45add1f0212515ee82c6be936a66b3daa0d54164fad2d71ed0ba262cefc200e9"
+      }
+    },
+    "translation_units": [
+      "BoundingBox.cpp",
+      "Corresponder.cpp",
+      "Excluder.cpp",
+      "PMol.cpp",
+      "PharmerQuery.cpp",
+      "QueryTripletFingerprint.cpp",
+      "RMSD.cpp",
+      "SphereGrid.cpp",
+      "ThreePointData.cpp",
+      "Triplet.cpp",
+      "TripletFingerprint.cpp",
+      "basis.cpp",
+      "main.cpp",
+      "pharmarec.cpp",
+      "pharmerdb.cpp",
+      "tripletmatching.cpp",
+      "CommandLine2/CommandLine.cpp",
+      "tinyxml/tinystr.cpp",
+      "tinyxml/tinyxml.cpp",
+      "tinyxml/tinyxmlerror.cpp",
+      "tinyxml/tinyxmlparser.cpp"
+    ],
+    "jobs": 1,
+    "source_profile": "r95-derived research CLI; no server/smina/ZINC; original core algorithms unchanged.",
+    "patches": {
+      "research-cli.patch": {
+        "bytes": 1084,
+        "sha256": "cb5606ff02942d19205de69ed73e98131921d81ca03f9eb0f8a55209855a535f"
+      },
+      "eigen-assert-switch.patch": {
+        "bytes": 999,
+        "sha256": "7811dc411dcd681fc6f6f8340f5149d32fc87e3f24e5af10966e88128b565736"
+      }
+    },
+    "Eigen_change": "Only activates the README-requested compile-time stack-assertion switch in an owned overlay. Actual fixed matrix256x256float=262144B; OS stack remains unchanged. No numerical operation/type or shared header changed.",
+    "BitMagic": "Inactive #if0 code, no dependency acquired.",
+    "provider_prefix": "Private extracted15artifacts, no solver/install scripts/database/system/Conda mutation.",
+    "host_link_inputs": [
+      "/lib/x86_64-linux-gnu/libz.so.1",
+      "/lib/x86_64-linux-gnu/libbz2.so.1.0"
+    ]
+  },
+  "memory_strategy": {
+    "reason": "Original compile stopped by own-group RSS monitor at542212096B; host remained well above reserve with no swap/PSIpressure. No repeated unchanged profile.",
+    "strategy": "Single representative Corresponder.cpp pilot using --param=ggc-min-expand=10 and --param=ggc-min-heapsize=16384. Collect compiler-internal garbage more often; no code-generation effect per GCC primary documentation.",
+    "source": "https://gcc.gnu.org/onlinedocs/gccint/General-Parameters.html",
+    "limits_unchanged": "DATA512MiB/AS1GiB/observedgroup512MiB/CPU19/thread1/nice19/idleIO/120CPU/180wall/reserve20percent. No kernel aggregate guarantee/reservation.",
+    "failure_action": "If this distinct lower-memory pilot is refused, stop compilation; no further compiler/profile/budget attempts here.",
+    "authorization": "Resource policy section5: evaluate a less costly execution strategy before postponing; standard reversible task development already authorized.",
+    "prospective": true
+  },
+  "patches": {
+    "research_cli": {
+      "license": "GPL-2.0-or-later; David Ryan Koes and University of Pittsburgh; retain original source LICENSE/notice. Research patch by PHMT maintainers,2026-11-09.",
+      "text": "--- a/main.cpp\n+++ b/main.cpp\n@@ -44,7 +44,6 @@\n #include \"queryparsers.h\"\n #include \"Timer.h\"\n #include \"MolFilter.h\"\n-#include \"PharmerServer.h\"\n #include <sys/types.h>\n #include <sys/wait.h>\n #include \"ReadMCMol.h\"\n@@ -688,25 +687,8 @@\n \t}\n \telse if (Cmd == \"server\")\n \t{\n-\t\tvector<vector<MolWeightDatabase> > databases;\n-\t\tunsigned totalC = 0;\n-\t\tunsigned totalM = 0;\n-                //total hack time - fcgi uses select which can't\n-\t\t//deal with file descriptors higher than 1024, so let's reserve some\n-\t\t#define MAXRESERVEDFD (SERVERTHREADS*2)\n-\t\tint reservedFD[MAXRESERVEDFD] = {0,};\n-\t\tfor(unsigned i = 0; i < MAXRESERVEDFD; i++)\n-\t\t{\n-\t\t\t\treservedFD[i] = open(\"/dev/null\",O_RDONLY);\n-\t\t}\n-\t\t//loadDatabases will open a whole bunch of files\n-\t\tloadDatabases(databases, totalC, totalM);\n-\t\t//now free reserved fds\n-\t\tfor(unsigned i = 0; i < MAXRESERVEDFD; i++)\n-\t\t{\n-\t\t\t\tclose(reservedFD[i]);\n-\t\t}\n-\t\tpharmer_server(Port, databases, LogDir, totalC, totalM, MinServer, MinPort);\n+\t\tcerr << \"Server disabled in the PHMT r95 research CLI build.\\n\";\n+\t\treturn 2;\n \t}\n \telse\n \t{\n"
+    },
+    "Eigen_assert_switch": {
+      "license": "MPL-2.0; retain original Eigen DenseStorage.h authors and notice. Research overlay patch by PHMT maintainers,2026-11-09.",
+      "original_notice": "// This file is part of Eigen, a lightweight C++ template library\n// for linear algebra.\n//\n// Copyright (C) 2008 Gael Guennebaud <gael.guennebaud@inria.fr>\n// Copyright (C) 2006-2009 Benoit Jacob <jacob.benoit.1@gmail.com>\n// Copyright (C) 2010 Hauke Heibel <hauke.heibel@gmail.com>\n//\n// This Source Code Form is subject to the terms of the Mozilla\n// Public License v. 2.0. If a copy of the MPL was not distributed\n// with this file, You can obtain one at http://mozilla.org/MPL/2.0/.",
+      "text": "--- a/Eigen/src/Core/DenseStorage.h\n+++ b/Eigen/src/Core/DenseStorage.h\n@@ -38,12 +38,20 @@\n \n   plain_array() \n   { \n+    \n+#ifndef EIGEN_DISABLE_STACK_SIZE_ASSERT\n     EIGEN_STATIC_ASSERT(Size * sizeof(T) <= 128 * 128 * 8, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);\n+#endif\n+\n   }\n \n   plain_array(constructor_without_unaligned_array_assert) \n   { \n+    \n+#ifndef EIGEN_DISABLE_STACK_SIZE_ASSERT\n     EIGEN_STATIC_ASSERT(Size * sizeof(T) <= 128 * 128 * 8, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);\n+#endif\n+\n   }\n };\n \n@@ -76,12 +84,20 @@\n   plain_array() \n   { \n     EIGEN_MAKE_UNALIGNED_ARRAY_ASSERT(0xf);\n+    \n+#ifndef EIGEN_DISABLE_STACK_SIZE_ASSERT\n     EIGEN_STATIC_ASSERT(Size * sizeof(T) <= 128 * 128 * 8, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);\n+#endif\n+\n   }\n \n   plain_array(constructor_without_unaligned_array_assert) \n   { \n+    \n+#ifndef EIGEN_DISABLE_STACK_SIZE_ASSERT\n     EIGEN_STATIC_ASSERT(Size * sizeof(T) <= 128 * 128 * 8, OBJECT_ALLOCATED_ON_STACK_IS_TOO_BIG);\n+#endif\n+\n   }\n };\n \n"
+    }
+  },
+  "scope": "Input/recipe identity is received; no successful Pharmer binary or bitwise rebuild. Compiler/link/selected-SDF dependency probe is separate. Both original and lower-memory compiler routes exhausted under unchanged limits. No further attempt without distinct reviewed resource context."
+}

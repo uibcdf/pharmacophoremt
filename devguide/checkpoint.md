@@ -9,6 +9,17 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#165 r95 research build](pharmer_r95_build_receiving.md) receives the full66-file
+source,15fixed private artifacts and a passing legacy-ABI/selected-SDF dependency
+probe. PHMT/Conda/system providers stay unchanged. No Pharmer executable is produced.
+The original core build and a distinct lower-memory GCC collector pilot both hit
+the unchanged observed-group512MiB limit; each is stopped and retained, with only
+one of21translation units complete. Host reserve/PSI/swap remained healthy, but
+headroom is not a reservation. Both compiler profiles are exhausted; no further
+compile/profile/budget attempt here. Full build/perception/search/native mappings
+remain unqualified. The source-only observation design retains real atom/cluster/
+indexed-feature/correspondence identities rather than coordinate inference.
+
 [#164 external P1declaration](pharmer_p1_external_admission.md) is received: nine official text captures distinguish the r95 build and legacy published
 binary; concrete argv, resource/identity and observable-output gates are frozen.
 Three original MolSysMT SDF exports/round-trips preserve chemistry/atom order/frame
@@ -69,13 +80,12 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive a reproducible r95 build recipe and exact
-compiler/dependency closure under#128, including optional server/smina/registration
-choices and a diagnostic plan for native memberships/correspondences. Separately
-admit an enforced build/engine resource envelope and a small pilot before compiling
-or executing. The old published binary, a modern ABI or inferred coordinate
-association cannot substitute for those gates. No automatic manager transaction,
-shared-prefix/native update, budget increase or exhausted#148retry follows.
+**Next concrete action:** receive infrastructure-owner disposition and a distinct
+reviewed managed compiler/resource context under#165before any further Pharmer
+build. Preserve the full pinned source/private artifacts and both stopped profiles;
+no automatic retry, numerical rewrite or budget escalation. Continue the independent
+library/product lane by receiving MolSysMT#624's collection/update disposition;
+actual source/installed provider operations remain separate from this native build.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.

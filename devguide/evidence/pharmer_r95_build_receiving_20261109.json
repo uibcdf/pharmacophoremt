@@ -1,0 +1,752 @@
+{
+  "schema": "pharmacophoremt.pharmer-r95-build-receiving@1",
+  "issue": 165,
+  "status": "partial; both compiler profiles stopped",
+  "parent_source": "b517b4e67fd29e88770f106c65b5644add62c22b",
+  "producer": "Containing commit freezes the reviewed source/recipe/artifact records; no successful Pharmer binary or bitwise rebuild exists.",
+  "source": {
+    "file_count": 66,
+    "bytes": 751377,
+    "earlier_files_equal": 32,
+    "manifest": "devguide/evidence/pharmer_r95_build_plan_20261109.json",
+    "full_snapshot_url": "https://svn.code.sf.net/p/pharmer/code/!svn/bc/95/",
+    "working_source_differences": [
+      "main.cpp"
+    ]
+  },
+  "private_artifacts": {
+    "packages": 15,
+    "archive_bytes": 10073208,
+    "expanded_member_bytes": 116331957,
+    "files_and_links": 10645,
+    "regular_file_bytes": 116331957,
+    "per_file_identities": "prefix_files.json in full archive",
+    "no_solver_install_scripts_or_shared_prefix_write": true,
+    "authentication": "Official HTTPS Release -> SHA256 indexes -> SHA256 artifacts; no separate GPG verification or complete distribution/package-installation claim."
+  },
+  "compiler_recipe": {
+    "cxx": "/usr/bin/g++",
+    "compiler": {
+      "path": "/usr/bin/x86_64-linux-gnu-g++-15",
+      "bytes": 1305304,
+      "sha256": "e6718f7e0c7d057c3ff77b550c603da9bc4030e3ede3c053705acce1293dbe4d"
+    },
+    "cc1plus": {
+      "path": "/usr/libexec/gcc/x86_64-linux-gnu/15/cc1plus",
+      "bytes": 39797952,
+      "sha256": "6f2b2c0e3fd32042eb2acace19a57fdb0b229d9c24cdd5e2cc100639c77e9ff0"
+    },
+    "version": "g++ (Ubuntu 15.2.0-16ubuntu1) 15.2.0",
+    "flags": [
+      "-std=gnu++11",
+      "-O0",
+      "-g0",
+      "-pthread",
+      "-D_GLIBCXX_USE_CXX11_ABI=0",
+      "-DEIGEN_DISABLE_STACK_SIZE_ASSERT",
+      "-DEIGEN_DONT_PARALLELIZE",
+      "-DSKIP_REGISTERZINC",
+      "-fmax-errors=5",
+      "-Wno-deprecated-declarations",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/eigen-overlay",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/include/openbabel-2.0",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/include/jsoncpp",
+      "-I/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/include"
+    ],
+    "link": [
+      "-Wl,--disable-new-dtags,-rpath,/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib:/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu",
+      "-pthread",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libopenbabel.so.4.0.2",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libjsoncpp.so.0.6.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libtcmalloc_minimal.so.4.1.2",
+      "/lib/x86_64-linux-gnu/libz.so.1",
+      "/lib/x86_64-linux-gnu/libbz2.so.1.0"
+    ],
+    "libraries": {
+      "prefix/usr/lib/libopenbabel.so.4.0.2": {
+        "bytes": 2194176,
+        "sha256": "6a3c4e414303d7227154335e169f9d406da9e9dac5e27acdef690806ff034b28"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libjsoncpp.so.0.6.0": {
+        "bytes": 129632,
+        "sha256": "0728d1b0dabb584c5081ab09f9c4c5b25f4073742cb7a8078c027f9f162ae7fb"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_serialization.so.1.54.0": {
+        "bytes": 436976,
+        "sha256": "699bac66df0265ce552b55dad843eaf834f699b399ba5ef4710de21c04f3653a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.54.0": {
+        "bytes": 68048,
+        "sha256": "aa1c3b760ced87466a53672e0c5391bfbaec2fb93d5b9692ae42538ee3e7704d"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_iostreams.so.1.54.0": {
+        "bytes": 100928,
+        "sha256": "6ed477e7da6c6d34b21c8037e4baf846a1788b51be9a28fae479b8e39cb6da9a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0": {
+        "bytes": 14536,
+        "sha256": "6322d749bbf46e32dcb99893e3e7c297b412d017e600f3b02572ddea8ebc286a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_program_options.so.1.54.0": {
+        "bytes": 449472,
+        "sha256": "665c6bbe026a7f42590ab9f84943385e24580c763c945bfacb473c84b5c43f3e"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_thread.so.1.54.0": {
+        "bytes": 88632,
+        "sha256": "3c782688cc1b1322276490fc0058381e4b435b64f84b811d62fb1b4c532bcd4a"
+      },
+      "prefix/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0": {
+        "bytes": 88936,
+        "sha256": "2a9234da7703e69bf376a7344fe77b7a0abb02b80138afaa8f655a8e69d89f1e"
+      },
+      "prefix/usr/lib/libtcmalloc_minimal.so.4.1.2": {
+        "bytes": 155000,
+        "sha256": "45add1f0212515ee82c6be936a66b3daa0d54164fad2d71ed0ba262cefc200e9"
+      }
+    },
+    "translation_units": [
+      "BoundingBox.cpp",
+      "Corresponder.cpp",
+      "Excluder.cpp",
+      "PMol.cpp",
+      "PharmerQuery.cpp",
+      "QueryTripletFingerprint.cpp",
+      "RMSD.cpp",
+      "SphereGrid.cpp",
+      "ThreePointData.cpp",
+      "Triplet.cpp",
+      "TripletFingerprint.cpp",
+      "basis.cpp",
+      "main.cpp",
+      "pharmarec.cpp",
+      "pharmerdb.cpp",
+      "tripletmatching.cpp",
+      "CommandLine2/CommandLine.cpp",
+      "tinyxml/tinystr.cpp",
+      "tinyxml/tinyxml.cpp",
+      "tinyxml/tinyxmlerror.cpp",
+      "tinyxml/tinyxmlparser.cpp"
+    ],
+    "jobs": 1,
+    "source_profile": "r95-derived research CLI; no server/smina/ZINC; original core algorithms unchanged.",
+    "patches": {
+      "research-cli.patch": {
+        "bytes": 1084,
+        "sha256": "cb5606ff02942d19205de69ed73e98131921d81ca03f9eb0f8a55209855a535f"
+      },
+      "eigen-assert-switch.patch": {
+        "bytes": 999,
+        "sha256": "7811dc411dcd681fc6f6f8340f5149d32fc87e3f24e5af10966e88128b565736"
+      }
+    },
+    "Eigen_change": "Only activates the README-requested compile-time stack-assertion switch in an owned overlay. Actual fixed matrix256x256float=262144B; OS stack remains unchanged. No numerical operation/type or shared header changed.",
+    "BitMagic": "Inactive #if0 code, no dependency acquired.",
+    "provider_prefix": "Private extracted15artifacts, no solver/install scripts/database/system/Conda mutation.",
+    "host_link_inputs": [
+      "/lib/x86_64-linux-gnu/libz.so.1",
+      "/lib/x86_64-linux-gnu/libbz2.so.1.0"
+    ]
+  },
+  "loader_context": {
+    "objects": {
+      "dependency_probe": {
+        "artifact": {
+          "bytes": 65840,
+          "sha256": "0383821f8156c2fd4516c88c3695247dd7cdff23231d7fcf57944bf20ef4df4c"
+        },
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/dependency-probe-fixed",
+        "stdout": "\tlinux-vdso.so.1 (0x00007f17cada1000)\n\tlibopenbabel.so.4 => /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libopenbabel.so.4 (0x00007f17ca800000)\n\tlibjsoncpp.so.0 => /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libjsoncpp.so.0 (0x00007f17ca400000)\n\tlibboost_system.so.1.54.0 => /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0 (0x00007f17ca000000)\n\tlibboost_filesystem.so.1.54.0 => /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0 (0x00007f17c9c00000)\n\tlibtcmalloc_minimal.so.4 => /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libtcmalloc_minimal.so.4 (0x00007f17c9800000)\n\tlibstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007f17c9400000)\n\tlibgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007f17cad51000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007f17c9000000)\n\tlibdl.so.2 => /usr/lib/x86_64-linux-gnu/libdl.so.2 (0x00007f17cad4a000)\n\tlibz.so.1 => /usr/lib/x86_64-linux-gnu/libz.so.1 (0x00007f17cad2c000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007f17ca6da000)\n\tlibgomp.so.1 => /usr/lib/x86_64-linux-gnu/libgomp.so.1 (0x00007f17caccd000)\n\tlibpthread.so.0 => /usr/lib/x86_64-linux-gnu/libpthread.so.0 (0x00007f17cacc8000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007f17cada3000)\n",
+        "stderr": ""
+      },
+      "sdf_plugin": {
+        "artifact": {
+          "bytes": 109832,
+          "sha256": "1620580e98f8a2120edb2b3aa469f475d94bf38bee40e6c684a22cb7db46d37c"
+        },
+        "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/mdlformat.so",
+        "stdout": "\tlinux-vdso.so.1 (0x00007c3e6633d000)\n\tlibopenbabel.so.4 => /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libopenbabel.so.4 (0x00007c3e65a00000)\n\tlibc.so.6 => /usr/lib/x86_64-linux-gnu/libc.so.6 (0x00007c3e65600000)\n\tlibstdc++.so.6 => /usr/lib/x86_64-linux-gnu/libstdc++.so.6 (0x00007c3e65200000)\n\tlibgcc_s.so.1 => /usr/lib/x86_64-linux-gnu/libgcc_s.so.1 (0x00007c3e662f9000)\n\tlibdl.so.2 => /usr/lib/x86_64-linux-gnu/libdl.so.2 (0x00007c3e662f4000)\n\tlibz.so.1 => /usr/lib/x86_64-linux-gnu/libz.so.1 (0x00007c3e662d6000)\n\tlibm.so.6 => /usr/lib/x86_64-linux-gnu/libm.so.6 (0x00007c3e65eda000)\n\tlibgomp.so.1 => /usr/lib/x86_64-linux-gnu/libgomp.so.1 (0x00007c3e66277000)\n\t/lib64/ld-linux-x86-64.so.2 (0x00007c3e6633f000)\n",
+        "stderr": ""
+      }
+    },
+    "resolved_libraries": {
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libopenbabel.so.4.0.2": {
+        "bytes": 2194176,
+        "sha256": "6a3c4e414303d7227154335e169f9d406da9e9dac5e27acdef690806ff034b28"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libjsoncpp.so.0.6.0": {
+        "bytes": 129632,
+        "sha256": "0728d1b0dabb584c5081ab09f9c4c5b25f4073742cb7a8078c027f9f162ae7fb"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_system.so.1.54.0": {
+        "bytes": 14536,
+        "sha256": "6322d749bbf46e32dcb99893e3e7c297b412d017e600f3b02572ddea8ebc286a"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/x86_64-linux-gnu/libboost_filesystem.so.1.54.0": {
+        "bytes": 88936,
+        "sha256": "2a9234da7703e69bf376a7344fe77b7a0abb02b80138afaa8f655a8e69d89f1e"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/libtcmalloc_minimal.so.4.1.2": {
+        "bytes": 155000,
+        "sha256": "45add1f0212515ee82c6be936a66b3daa0d54164fad2d71ed0ba262cefc200e9"
+      },
+      "/usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.35": {
+        "bytes": 2735712,
+        "sha256": "5bb0d21308f123b6ad46c6f35b42cedfcb8d6d439a53aa3dae04d880aaffdde3"
+      },
+      "/usr/lib/x86_64-linux-gnu/libgcc_s.so.1": {
+        "bytes": 187120,
+        "sha256": "9d339ecb409578d6a5d587e6c537a8f9589b8a13fefba30d167433a4b5758bee"
+      },
+      "/usr/lib/x86_64-linux-gnu/libc.so.6": {
+        "bytes": 2190608,
+        "sha256": "85e64f97e348786a8fb4d9f3d52fec289e2fb86bba20f0731dfe61990525e0f7"
+      },
+      "/usr/lib/x86_64-linux-gnu/libdl.so.2": {
+        "bytes": 14408,
+        "sha256": "59d725ca30596a9863f4fa2552a7125f834842abc86b40890231c129358965d2"
+      },
+      "/usr/lib/x86_64-linux-gnu/libz.so.1.3.1": {
+        "bytes": 121272,
+        "sha256": "27fa6c6cb94fb5b099ead61758a300dbc392d1dbf307fff6c16a9b8e57fdc9de"
+      },
+      "/usr/lib/x86_64-linux-gnu/libm.so.6": {
+        "bytes": 1198376,
+        "sha256": "1c488db6f4fe8cecb72456bc018de000b7a9b539c2994864b0416b5e8371b3d8"
+      },
+      "/usr/lib/x86_64-linux-gnu/libgomp.so.1.0.0": {
+        "bytes": 385208,
+        "sha256": "645478cbe100d1465b9d45f7047bca3965358f4d399937e544f55ac7a924d5a3"
+      },
+      "/usr/lib/x86_64-linux-gnu/libpthread.so.0": {
+        "bytes": 14408,
+        "sha256": "1327fc40710691dbd94e88b6cf4efce27fefe8fbb93f7d1164a75b4dccaea696"
+      },
+      "/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2": {
+        "bytes": 254864,
+        "sha256": "bda779ea9e9ad234f60315477d7cfd0bdde861cd8ddd9df8cdaf62f18c4cec14"
+      }
+    }
+  },
+  "dependency_probes": {
+    "original_link_failure": {
+      "name": "compiler-pilot",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/logs/compiler-pilot.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pharmer-build-20261109-kxotgv90/controls/compiler_pilot.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59796566016
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=838226\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=814453\n",
+        "swap": {
+          "pswpin": 99546,
+          "pswpout": 273907
+        },
+        "time": 138282.106687915
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 1.9239683799969498,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59563098112
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=838226\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=814453\n",
+        "swap": {
+          "pswpin": 99546,
+          "pswpout": 273907
+        },
+        "time": 138284.031507917
+      },
+      "sample_count": 19,
+      "peak_observed_own_group_RSS_bytes": 283967488,
+      "min_host_available_bytes": 59553538048,
+      "swap_counter_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "corrected_link_and_actual_SDF_probe": {
+      "name": "compiler-pilot-fixed-link",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/logs/compiler-pilot-fixed-link.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pharmer-build-20261109-kxotgv90/controls/compiler_pilot.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 58859065344
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=849994\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=826098\n",
+        "swap": {
+          "pswpin": 99547,
+          "pswpout": 273962
+        },
+        "time": 138355.384047311
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 1.9313166299834847,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 58652971008
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=854249\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=830235\n",
+        "swap": {
+          "pswpin": 99547,
+          "pswpout": 273987
+        },
+        "time": 138357.316006269
+      },
+      "sample_count": 19,
+      "peak_observed_own_group_RSS_bytes": 282181632,
+      "min_host_available_bytes": 58613788672,
+      "swap_counter_delta": {
+        "pswpin": 0,
+        "pswpout": 25
+      }
+    },
+    "original_full_plugin_output": {
+      "exit": 0,
+      "stdout": "{\"atoms\":3,\"bonds\":0,\"probe\":\"old-ABI dependencies and actual SDF read\"}\n",
+      "stderr": "==============================\n*** Open Babel Error  in openLib\n  /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/cmlreactformat.so did not load properly.\n Error: libxml2.so.2: cannot open shared object file: No such file or directory\n==============================\n*** Open Babel Error  in openLib\n  /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/pubchem.so did not load properly.\n Error: libxml2.so.2: cannot open shared object file: No such file or directory\n==============================\n*** Open Babel Error  in openLib\n  /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/cmlformat.so did not load properly.\n Error: libxml2.so.2: cannot open shared object file: No such file or directory\n==============================\n*** Open Babel Error  in openLib\n  /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/xmlformat.so did not load properly.\n Error: libxml2.so.2: cannot open shared object file: No such file or directory\n==============================\n*** Open Babel Error  in openLib\n  /fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/cdxmlformat.so did not load properly.\n Error: libxml2.so.2: cannot open shared object file: No such file or directory\n"
+    },
+    "selected_SDF_plugin": {
+      "exit": 0,
+      "stdout": "{\"atoms\":3,\"bonds\":0,\"probe\":\"old-ABI dependencies and actual SDF read\"}\n",
+      "stderr": "",
+      "plugin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/prefix/usr/lib/openbabel/2.3.2/mdlformat.so",
+      "plugin_sha256": "1620580e98f8a2120edb2b3aa469f475d94bf38bee40e6c684a22cb7db46d37c",
+      "BABEL_LIBDIR": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/sdf-plugin"
+    },
+    "scope": "Independent dependency/compiler/SDF probe only, not Pharmer perception or search. Unselected XML-plugin errors remain recorded; only explicit unchanged mdlformat route receives clean loading."
+  },
+  "compiler_failures": {
+    "original": {
+      "name": "compile-cli",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/logs/compile-cli.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pharmer-build-20261109-kxotgv90/controls/build_cli.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 58940276736
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=861597\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=837498\n",
+        "swap": {
+          "pswpin": 99547,
+          "pswpout": 274011
+        },
+        "time": 138448.898365443
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": -15,
+      "interruption": "resource pressure/own-envelope limit",
+      "seconds": 2.6464543679903727,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 58456985600
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=861597\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=837498\n",
+        "swap": {
+          "pswpin": 99547,
+          "pswpout": 274011
+        },
+        "time": 138451.545319493
+      },
+      "sample_count": 27,
+      "peak_observed_own_group_RSS_bytes": 542212096,
+      "min_host_available_bytes": 58455121920,
+      "swap_counter_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "lower_memory_candidate": {
+      "name": "compiler-gc-pilot",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/logs/compiler-gc-pilot.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pharmer-build-20261109-kxotgv90/controls/gc_pilot.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60172513280
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=864736\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=840607\n",
+        "swap": {
+          "pswpin": 99549,
+          "pswpout": 274011
+        },
+        "time": 138611.049602655
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": -15,
+      "interruption": "resource pressure/own-envelope limit",
+      "seconds": 3.451254463987425,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 59670847488
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=864736\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=840607\n",
+        "swap": {
+          "pswpin": 99549,
+          "pswpout": 274011
+        },
+        "time": 138614.501362456
+      },
+      "sample_count": 35,
+      "peak_observed_own_group_RSS_bytes": 544673792,
+      "min_host_available_bytes": 59670847488,
+      "swap_counter_delta": {
+        "pswpin": 0,
+        "pswpout": 0
+      }
+    },
+    "candidate_plan": {
+      "reason": "Original compile stopped by own-group RSS monitor at542212096B; host remained well above reserve with no swap/PSIpressure. No repeated unchanged profile.",
+      "strategy": "Single representative Corresponder.cpp pilot using --param=ggc-min-expand=10 and --param=ggc-min-heapsize=16384. Collect compiler-internal garbage more often; no code-generation effect per GCC primary documentation.",
+      "source": "https://gcc.gnu.org/onlinedocs/gccint/General-Parameters.html",
+      "limits_unchanged": "DATA512MiB/AS1GiB/observedgroup512MiB/CPU19/thread1/nice19/idleIO/120CPU/180wall/reserve20percent. No kernel aggregate guarantee/reservation.",
+      "failure_action": "If this distinct lower-memory pilot is refused, stop compilation; no further compiler/profile/budget attempts here.",
+      "authorization": "Resource policy section5: evaluate a less costly execution strategy before postponing; standard reversible task development already authorized.",
+      "prospective": true
+    },
+    "completed_translation_units": 1,
+    "planned_translation_units": 21,
+    "Pharmer_executable_produced": false,
+    "further_compiler_retry_in_this_increment": false,
+    "recovery": "Distinct reviewed managed compiler/resource context required; do not retry either exhausted profile, alter numerical types/operations or raise budgets automatically."
+  },
+  "native_observation": "Source design only: actual atom maplist -> clustering/final feature indices -> indexed subset/record/conformer -> integer CorrespondenceInline::matchIndex. No observer implemented or compiled. No coordinate-derived/full-native mapping claim.",
+  "slurm": {
+    "command": [
+      "sinfo",
+      "-h",
+      "-o",
+      "%P %a %l %D %t %m %c"
+    ],
+    "output": "tests* up 3:00:00 1 inval 62000 20\nnormal up 1-00:00:00 4 unk* 52000+ 20\nprior up infinite 1 inval 62000 20\nprior up infinite 4 unk* 52000+ 20\n",
+    "job_requested": false,
+    "usable_allocation_observed": false
+  },
+  "PHMT_runtime": {
+    "unchanged_files": 159,
+    "owned_runtime_source": "b4b062a2137239d4d074d394bd615709beb4c6f5",
+    "owned_version": "0.4.0+198.gb4b062a",
+    "new_wheel_install_or_dependency_floor": false
+  },
+  "original_P1_query_declaration_exports_and_drivers_unchanged": true,
+  "checks": [
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "447 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.078s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.101s\n\nOK\n"
+    },
+    {
+      "name": "runtime-inputs-unchanged",
+      "arguments": [
+        "git",
+        "diff",
+        "--exit-code",
+        "b517b4e67fd29e88770f106c65b5644add62c22b",
+        "--",
+        "pharmacophoremt",
+        "pharmacophoremt_results",
+        "phmt_test_support",
+        "devtools",
+        "tests/data/pharmer_p1",
+        "tests/test_pharmer_p1.py",
+        "tests/test_pharmer_p1_export.py"
+      ],
+      "exit_code": 0,
+      "output": ""
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "docs": {
+    "recorded_at_utc": "2026-11-09T05:08:48.718340+00:00",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=90",
+      "--fsize=67108864",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/logs/docs-resources.txt",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-j",
+      "1",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "-q",
+      "-D",
+      "nb_execution_mode=off",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-build-20261109-kxotgv90/html"
+    ],
+    "memory_entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 55273582592,
+        "SwapTotal": 8589930496,
+        "SwapFree": 8032641024
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=901917\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=876648\n",
+      "load": [
+        8.4111328125,
+        5.91015625,
+        4.2607421875
+      ],
+      "swap_pages": {
+        "pswpin": 99564,
+        "pswpout": 296263
+      },
+      "monotonic": 139178.336453712
+    },
+    "resource_budget_bytes": 1073741824,
+    "reserve_bytes": 12995688039,
+    "backend_threads": 1,
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "rlimit_data_bytes": 536870912,
+    "rlimit_as": "unlimited inherited",
+    "aggregate_cgroup_enforcement": false,
+    "nb_execution": "off",
+    "scheduler": "Slurm binaries present; no active allocation. Small direct serial docs render only, established DATA512MiB route; no scheduler request.",
+    "resource_estimate": "Previous same-context strict full docs command:10.99s/280900KiB lifetime RSS; allow1GiB supervisor/own group envelope. Free memory is not reserved.",
+    "status": "completed",
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 10.009451170975808,
+    "memory_after": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 55323430912,
+        "SwapTotal": 8589930496,
+        "SwapFree": 8032641024
+      },
+      "memory_psi": "some avg10=0.00 avg60=0.00 avg300=0.00 total=901917\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=876648\n",
+      "load": [
+        8.34765625,
+        5.9794921875,
+        4.30126953125
+      ],
+      "swap_pages": {
+        "pswpin": 99564,
+        "pswpout": 296263
+      },
+      "monotonic": 139188.346705479
+    }
+  },
+  "docs_peak_group_RSS_bytes": 305430528,
+  "verified_local_links": 258,
+  "full_evidence": {
+    "path": "pharmer_r95_build_receiving_20261109_full.json.gz",
+    "compressed_bytes": 595080,
+    "compressed_sha256": "bd8e499f6ce0400224dea719dd5eb9d04be57585dacd7d3cb30ba1ef574d3e65",
+    "uncompressed_bytes": 2497275,
+    "uncompressed_sha256": "8004ebf638175c491b2ab326d474da4cca381239cb1964e3ccc05ceeb8714cff"
+  },
+  "external_state": "No Pharmer binary/help/definitions/perception/database/search/native mapping execution. No comparator/scientific/performance/biological/public-platform/release qualification.",
+  "scope": "Source and private dependency receiving plus stopped build experiment. No manager transaction, shared provider/native/prefix update, borrowed service, host-wide configuration change, budget raise or148retry.",
+  "retention": {
+    "capsule": "build/phmt-pharmer-build-20261109-kxotgv90",
+    "review": "2026-11-23",
+    "private_source_artifacts_preserved": true
+  }
+}

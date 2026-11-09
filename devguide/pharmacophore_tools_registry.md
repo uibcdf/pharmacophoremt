@@ -249,3 +249,17 @@ The r95 build remains unreceived; the old published binary is not substituted.
 One database per source avoids equal-title conformer grouping and multiplied
 process/worker counts. Stock output lacks explicit memberships/correspondences;
 full native mapping still needs admitted diagnostics. No external engine runs.
+
+
+## r95 research build stopped — 2026-11-09
+
+[#165](pharmer_r95_build_receiving.md) receives the complete66-file
+original source and15fixed private dependency artifacts. A legacy-ABI/selected-SDF
+dependency probe passes; it is not Pharmer perception. The serial core build and
+one distinct lower-memory collector pilot both reach the unchanged group512MiB
+cutoff. No Pharmer executable/help/perception/database/search/native mapping is
+executed; comparison disposition remains Under study. Both profiles stop without
+budget escalation or shared-prefix/provider changes. Source diagnostics must
+observe actual atom/cluster/indexed-feature/correspondence records; that observer
+remains unimplemented. Receive a distinct managed build context before another
+attempt, while independent PHMT/library/provider work continues.

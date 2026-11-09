@@ -104,3 +104,9 @@ failure. It does not acquire or execute Pharmer. The
 and [admission contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/pharmer_p1_external_admission.md)
 keep executable/build, actual perception, database coverage and observable native
 mappings as separate gates. The old published binary is not assumed to match r95.
+
+
+The [subsequent build attempt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/pharmer_r95_build_receiving.md)
+receives the full r95 source and a private dependency/SDF probe, but compilation
+stops at its resource limit. No Pharmer executable or external P1result exists.
+The original inputs and complete-mapping requirements remain unchanged.
