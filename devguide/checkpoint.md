@@ -14,9 +14,11 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 source cases pass (14new/120existing); thirteen original command outputs retain
 their exact bytes. The strict full docs render passes. Counts/order describe the
 immutable manifest's literal source labels and all work states; they infer no
-molecular equivalence. Same-body owned installed receiving remains pending in
-this source checkpoint. The complete discover/select/detail recipe follows as
-a separate composition increment.
+molecular equivalence. The [installed receipt](evidence/source_inventory_installed_20261109.json)
+receives the same134bodies from adbecee / owned208,157guarded children,24documented
+commands on four unchanged historical stores and thirteen ordinary exact-source
+outputs. All214wheel payloads/159runtime identities verify. The bounded#170bridge
+resolves; complete discover/select/detail composition follows separately as#171.
 
 The [corrected accumulated checkpoint](numerical_reader_ci_checkpoint.md#single-cell-capacity-recovery--2026-11-09-utc)
 is af408e7 / source42656135375. Attempt1 terminates failure: seven scientific
@@ -124,9 +126,8 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** finish exact owned installed receiving for#170, then
-execute a complete discover-source/select-status/detail recipe from source and
-that same artifact. Inspect only the declared macOS3.11 recovery on source42656135375;
+**Next concrete action:** execute#171complete discover-source/select-status/detail
+recipe from source and the unchanged owned208artifact. Inspect only the declared macOS3.11 recovery on source42656135375;
 never repeat the seven completed executions. Receive native terminal identities,
 actual commands/counts and108qualified coverage paths before accepting af408e7.
 If capacity fails again, preserve/defer without an automatic retry. Later-head

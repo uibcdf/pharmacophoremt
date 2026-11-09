@@ -38,8 +38,12 @@ required, followed by the same original bodies from one exact owned source-free
 reader artifact. The [source receipt](evidence/source_inventory_source_20261109.json) receives
 134cases (14new/120existing), thirteen exact ordinary command-byte controls,
 strict full docs/rendered navigation,25distribution and reporting/archive checks.
-The original red control retains12failures/2passes. Exact owned installed
-receiving remains pending. Public guidance is
+The original red control retains12failures/2passes. The [installed receipt](evidence/source_inventory_installed_20261109.json)
+receives the same134bodies from adbecee / owned208,157guarded children,24documented
+commands on four unchanged historical stores and thirteen ordinary exact-source
+outputs. All214wheel payloads/159runtime identities and seven loaded reader
+origins verify. The [archived report](archive/browse_saved_sources.md) resolves
+this bounded bridge. Complete discovery-to-detail composition is separate#171. Public guidance is
 in the [saved-work cookbook](../docs/content/cookbook/saved_work_inspection.md#browse-the-original-sources).
 
 No persistent schema/index, molecular collection/parser, source connector, provider

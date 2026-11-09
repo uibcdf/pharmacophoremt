@@ -335,3 +335,10 @@ CLI export through these same methods has since been received under the linked
 contract above; next qualify accumulated changes at an exact-head checkpoint.
 This is not complete collection management, predictive
 validation, performance qualification or completion of milestone2/#108.
+
+2026-11-09: [#170](../archive/browse_saved_sources.md) receives literal-source
+discovery in the saved-reader API/CLI,134same source/owned208bodies,24documented
+historical commands and thirteen original output-byte controls. It advances
+inspection discoverability only; full source operations, collections, connectors,
+human usability and supported delivery remain separately open. #171 composes
+discovery, source/status selection and details in one snapshot next.

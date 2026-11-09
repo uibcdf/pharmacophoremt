@@ -34,8 +34,9 @@ user testing or result interpretation.
 The [#170 saved-source inventory](saved_source_inventory.md) advances milestone2
 with discoverable literal sources before selecting work. All134 selected source
 cases and thirteen exact ordinary command-byte controls pass; strict docs pass.
-Same-body owned installed receiving and complete discovery-to-detail composition
-remain pending at this source checkpoint. No source connector, collection/index,
+The same134bodies pass in owned208with157guarded children,24historical documented
+commands and all214payload/159runtime identities verified. The bounded bridge
+resolves; complete discovery-to-detail composition is separately tracked by#171. No source connector, collection/index,
 scale or human-usability qualification is implied.
 
 The af408e7 accumulated source run42656135375 terminates attempt1 with seven

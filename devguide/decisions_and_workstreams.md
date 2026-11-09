@@ -110,7 +110,10 @@ nonblocking tool improvement. Full supported/biological/scale gates remain open.
 2026-11-09: [#170 source inventory](saved_source_inventory.md) exposes exact
 original source labels/first ordinals/all-declared-work counts in public API and
 CLI. The source134cases (14new/120existing), thirteen ordinary byte controls and
-strict docs pass. Same-body owned installed receiving remains pending. Full-file
+strict docs pass. The same134bodies pass from adbecee / owned208with157guarded
+children,24historical documented commands and214payload/159runtime identities
+verified. The [installed receipt](evidence/source_inventory_installed_20261109.json)
+resolves this bounded bridge;#171composes discovery-to-detail separately. Full-file
 admission and SQLite grouping costs remain explicit; no chemical equivalence,
 source connector, index, performance or scientific claim follows.
 

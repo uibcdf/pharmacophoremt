@@ -1,12 +1,12 @@
 ---
 summary: Browse exact original source labels and declared work through the saved reader.
 issue: uibcdf/pharmacophoremt#170
-status: open
+status: resolved
 opened: 2026-11-09
-closed:
-verification: asserted
+closed: 2026-11-09
+verification: measured
 area: [results, usability, screening]
-guard:
+guard: tests/test_public_source_inventory.py
 normative:
 blocked_by: []
 supersedes: []
@@ -39,7 +39,11 @@ scope/resources and independent controls before runtime edits. The
 [source receipt](../evidence/source_inventory_source_20261109.json) receives
 134cases (14new/120existing), thirteen original command-byte controls, strict
 full docs and25distribution/local reporting checks. Original red controls
-retain12failures/2passes. Exact owned installed receiving remains pending.
+retain12failures/2passes. The [installed receipt](../evidence/source_inventory_installed_20261109.json)
+receives the same134bodies from source adbecee / owned208,157guarded children,
+24documented commands on four historical stores and thirteen ordinary outputs
+with exact source bytes. All214wheel payloads/159runtime files and seven loaded
+reader origins verify; no scientific namespace is imported.
 The af408e7 full-CI/single-cell recovery keeps its original independent identity;
 it cannot qualify this later implementation.
 
@@ -57,3 +61,27 @@ empty/legacy/lifetime/thread/error/corruption boundaries; original command bytes
 same bodies from one exact owned source-free artifact with scientific imports
 blocked; API/docs/checkpoint/report/index evidence. Full discovery-to-detail
 composition follows separately. #148/#165 remain stopped.
+
+## Received 2026-11-09 UTC
+
+The original red control retains12failures/2passes. Independent manual literal
+oracles cover nonadjacent repeats, every work state, opaque/Unicode/zero/NUL keys,
+publication stability and full admission/lifetime/error boundaries. The CLI
+counts a single source stream and emits no success on late failure. Existing
+response bytes remain unchanged. The same original134test bodies/identities pass
+from source and one owned artifact; guarded child expected refusals remain
+observed (125exit0,32exit2). Eight source-inventory, eight status and eight
+source/status documented commands agree with independent original SQL/JSON
+oracles on four unchanged historical files. Thirteen ordinary source outputs
+also agree byte-for-byte.
+
+Strict full docs/rendered API/navigation,25distribution, declared routes,
+generated environments, Ruff/format and reporting/archive checks pass. Hash-bound
+full evidence retains executable controls and original failures. Reader peaks
+are approximately109/126MiB under the original DATA512MiB/AS1GiB serial envelope;
+separate docs peak is approximately289MiB. One CPU/thread and low priorities,
+host reserve/pressure monitoring remain; no kernel aggregate reservation exists.
+
+The bounded reader increment resolves; full discover/select/detail composition
+is separately tracked by#171. Later-head full source/public/platform, human
+usability, biological, performance and release acceptance remain separate.
