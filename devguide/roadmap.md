@@ -123,17 +123,21 @@ their pre-change values; real public molecular recognition/final evaluation
 demonstrates the old discard and corrected admission. Final matching and physical
 radii are unchanged. The [source receipt](evidence/pruning_slack_source_20261109.json)
 preserves the explicitly revised local mapping/RSS profile and earlier failures.
-Same-file owned installed receiving remains pending; no#148/public/platform/
-biological or performance qualification follows.
+The same116bodies pass from exact65991c3 owned wheel192; the
+[installed receipt](evidence/pruning_slack_installed_20261109.json) retains
+the root-dependent bookkeeping failure and successful separate postcheck,211
+verified payload files,150loaded runtime origins and12unchanged ordinary outputs.
+This resolves the bounded bridge; no#148/public/platform/biological or performance
+qualification follows.
 
 The [Pharmer query/pruning review](pharmer_query_pruning_review.md) receives24
 official r95source files and declares12unexecuted comparison cases for
 milestones1/5/6. Its [receipt](evidence/pharmer_query_review_20261109.json)
 separates source observations from three independent PHMT arithmetic controls.
 Those controls confirm a literal numerical-predicate mismatch, now owned by
-[#160](pending_bugs/pair_distance_pruning_slack.md). Public/native reproduction,
+[#160](archive/pair_distance_pruning_slack.md). Public/native reproduction,
 implementation were pending at that study; the subsequent correction above
-retains separate evidence and still-pending installed receiving. No competitor
+retains separate source/installed evidence. No competitor
 execution, index/adapter, scale measurement or new dependency is delivered.
 
 [#159 complete inspection recipe](archive/document_saved_inspection_journey.md)

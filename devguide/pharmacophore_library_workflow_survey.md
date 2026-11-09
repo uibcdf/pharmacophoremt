@@ -338,3 +338,15 @@ library performance.
 The user accepts the product ambition and careful evidence-led development. The
 particular API, index structure, engine, default preparation/conformer policy and
 first provider/subset remain design decisions to make from this comparison.
+
+
+## Subsequent PHMT numerical receiving — 2026-11-09
+
+The original study and its unexecuted comparator cases retain their scope.
+[PHMT#160](https://github.com/uibcdf/pharmacophoremt/issues/160) now has a
+separate conservative pair-filter correction, independent public guard and
+real public-native before/after witness. All116selected source/same-file owned
+installed cases pass and twelve ordinary outputs/counters remain unchanged.
+See the [numerical contract](pair_distance_pruning.md) and
+[installed receipt](evidence/pruning_slack_installed_20261109.json).
+This does not execute a competitor, qualify#148or establish biology/scale.

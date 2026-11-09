@@ -1,0 +1,410 @@
+{
+  "schema": "pharmacophoremt.pruning-slack-installed@1",
+  "issue": 160,
+  "source_commit": "65991c33f491ea4d1937f1d5c0effbda6a4472eb",
+  "version": "0.4.0+192.g65991c3",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/wheels/pharmacophoremt-0.4.0+192.g65991c3-py3-none-any.whl",
+    "bytes": 4527455,
+    "sha256": "3ec25113d1818d07aa4eb49eab893e39c05b388e5b4ce27e773baecfd8d8cd4b"
+  },
+  "payload_files_equal": 211,
+  "runtime_files_equal": 156,
+  "original_fixture_files_equal": 7,
+  "source_cases": 116,
+  "installed_cases": 116,
+  "new_cases_per_context": 17,
+  "existing_cases_per_context": 99,
+  "finish": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 116,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 116,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 116,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 0,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 31.78408246199251,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "59c28edb25bc2a5d9f774a65a24e5d1749e532634b72b0ab4a5c1dd8a24e54b2",
+      "records": 349
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "f950470d65504016a4cd59d274ba953f",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "same_original_individual_cases": true,
+  "ordinary_outputs_equal_to_original": 12,
+  "fresh_public_ion_postcheck": true,
+  "loaded_runtime_modules_in_postcheck": 150,
+  "forbidden_import_attempts_in_postcheck": [],
+  "origin_enforcement": "During the accepted116case installed run, the original live finder admits only owned PHMT/companion runtime and copied fixtures; explicit existing providers and stdlib/site roots. First-run checks after pytest stopped at a root-dependent JUnit classname comparison. Follow-up canonicalizes only that receiving-root prefix and verifies exact original fixture bytes/full parameterized test identities, loaded origins and one fresh public native ion guard; the passing116cases are not rerun.",
+  "original_post_suite_failure": {
+    "operation": "Compare complete JUnit classname despite changed receiving root",
+    "source_example": "tests.test_pair_distance_pruning",
+    "installed_example": "fixtures.tests.test_pair_distance_pruning",
+    "scientific_cases_passed": 116,
+    "failed_product_cases": 0,
+    "disposition": "Preserved original exit1; successful separate metadata/origin follow-up, no product change."
+  },
+  "source_receipt": {
+    "path": "devguide/evidence/pruning_slack_source_20261109.json",
+    "bytes": 29616,
+    "sha256": "75c0076f18104efe00c0bf8a97feb396933d4d1374334b6e6ce41de891853bfa"
+  },
+  "build": {
+    "resources": {
+      "name": "owned-build",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/owned-build.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pruning-slack-20261109-iu5a9mqb/controls/build_owned.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 56763158528
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=750324\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=727673\n",
+        "swap": {
+          "pswpin": 67419,
+          "pswpout": 273907
+        },
+        "time": 126993.860958069
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.29765840600885,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 56831926272
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=750324\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=727673\n",
+        "swap": {
+          "pswpin": 67442,
+          "pswpout": 273907
+        },
+        "time": 127000.1592945
+      },
+      "sample_count": 62,
+      "peak_observed_own_group_RSS_bytes": 290287616
+    },
+    "build_tool": {
+      "overlay": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-runs-20261107-w9c85754/build_tool_overlay",
+      "version": "2.3.0",
+      "python_files": {
+        "versioningit/__init__.py": {
+          "bytes": 2835,
+          "sha256": "40e9bb2ec46f1ef868e6bb6760ae0e959b6de152c5116a2b473db88c9732c7e1"
+        },
+        "versioningit/__main__.py": {
+          "bytes": 2541,
+          "sha256": "b44df9fe26f1ac0228b6d3c3b135cda6a7c3eb7b2374645c12068231b69ea7c2"
+        },
+        "versioningit/basics.py": {
+          "bytes": 6500,
+          "sha256": "2078d37d10638709c678c2fc70c8a20b314038f5f9a31229e5a09ab232c5d694"
+        },
+        "versioningit/cmdclass.py": {
+          "bytes": 335,
+          "sha256": "5073cfbfb751613ffd46ddcb60699faa7173c6e2239bc36acb65075b3195f4d0"
+        },
+        "versioningit/config.py": {
+          "bytes": 8774,
+          "sha256": "68bdcf8a27edd176741398e26bc2fc42a49436cf9ef238db10645d80e3928360"
+        },
+        "versioningit/core.py": {
+          "bytes": 23043,
+          "sha256": "27736210020be8f6ad808a8098b4ec533271f47dff14d16890e3fcdb9c4a8dc3"
+        },
+        "versioningit/errors.py": {
+          "bytes": 1312,
+          "sha256": "0f427c8b22780b4066d6a20827320f2ff0425e396fb22ca8966d7ef372f5a4b6"
+        },
+        "versioningit/get_cmdclasses.py": {
+          "bytes": 3334,
+          "sha256": "44ac14eedd31f7bf8916d491b20299a1ac53050d5303cda4919881539c683602"
+        },
+        "versioningit/git.py": {
+          "bytes": 12642,
+          "sha256": "63f3e90edcf33a2d24d3e5b73daa41813b7ce76a99b0e46085b22b22e1a3a938"
+        },
+        "versioningit/hatch.py": {
+          "bytes": 2338,
+          "sha256": "5e5b728a8e324ca438407ca8bdc0884faa91f7775e19f25a5e7e8f12d7ab050d"
+        },
+        "versioningit/hg.py": {
+          "bytes": 4842,
+          "sha256": "b447ef281243992b4765ee7956c7ae2a75f9c0574961ae8e83bad2fa83a5348d"
+        },
+        "versioningit/hook.py": {
+          "bytes": 1601,
+          "sha256": "fe4736998ecd293ebe3216642828eb027c7210ef78e2778d1f5571e321b87175"
+        },
+        "versioningit/logging.py": {
+          "bytes": 3324,
+          "sha256": "e2aa61c64fb6400ba6f4aa23eb23b4bade8eb69d8a07c4c7037061fae9c21c2a"
+        },
+        "versioningit/methods.py": {
+          "bytes": 4839,
+          "sha256": "65c33d71bec5bf80dbb8b01bcd9b2cc3eea441eb48ce17c149757948f6ddb80a"
+        },
+        "versioningit/next_version.py": {
+          "bytes": 4003,
+          "sha256": "13a6d5e1aaef304641ead157f17e9809b05117dda6e82edc3cbc6f2f2618c071"
+        },
+        "versioningit/onbuild.py": {
+          "bytes": 3379,
+          "sha256": "8cf8e6791e66e8f367ae7967c1d204364935d0cb84d65208c6148ebc454e3055"
+        },
+        "versioningit/util.py": {
+          "bytes": 6610,
+          "sha256": "a04e40b35de86a06f312f5f44bdf5a4a717b51fe3d92fc3b64adf989e5281801"
+        }
+      },
+      "unchanged": true
+    },
+    "source_generated_version": {
+      "file": "pharmacophoremt/_version.py",
+      "bytes": 35,
+      "sha256": "7f9c35f65a2f9439b7ded46955c166f79c427306c147fd421bebc915602f020a",
+      "text": "__version__ = \"0.4.0+134.gee5d9fa\"\n"
+    },
+    "wheel_generated_version": {
+      "file": "pharmacophoremt/_version.py",
+      "bytes": 35,
+      "sha256": "2dbbff7251b9f1fae87dac2b6de97868a1d574f76147172ee2c61535159531f0",
+      "text": "__version__ = \"0.4.0+192.g65991c3\"\n"
+    },
+    "requirements": [
+      "numpy",
+      "scipy",
+      "nglview",
+      "molsysmt",
+      "pyunitwizard",
+      "argdigest>=0.17.1",
+      "smonitor>=0.22.1",
+      "depdigest",
+      "rdkit",
+      "networkx",
+      "PyYAML>=5.1",
+      "pytest>=6.1.2; extra == \"test\"",
+      "pytest-runner; extra == \"test\""
+    ],
+    "requires_python": "<3.15,>=3.11"
+  },
+  "installed_execution": {
+    "name": "installed",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/installed.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/controls/receive_installed.py"
+    ],
+    "cwd": "/tmp/phmt-pruning-slack-installed-20261109-oj79n4uk/cwd",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57016201216
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=750324\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=727673\n",
+      "swap": {
+        "pswpin": 67493,
+        "pswpout": 273907
+      },
+      "time": 127073.653850429
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 1,
+    "interruption": null,
+    "seconds": 36.19370827700186,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57560768512
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=750446\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=727763\n",
+      "swap": {
+        "pswpin": 67517,
+        "pswpout": 273907
+      },
+      "time": 127109.848559117
+    },
+    "sample_count": 357,
+    "peak_observed_own_group_RSS_bytes": 382513152
+  },
+  "postchecks_execution": {
+    "name": "installed-postchecks",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/logs/installed-postchecks.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pruning-slack-20261109-iu5a9mqb/controls/receive_postchecks.py"
+    ],
+    "cwd": "/tmp/phmt-pruning-slack-installed-20261109-oj79n4uk/cwd",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57328660480
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=750939\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=728255\n",
+      "swap": {
+        "pswpin": 67529,
+        "pswpout": 273907
+      },
+      "time": 127157.328731792
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 9.293954027001746,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57343213568
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=750939\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=728255\n",
+      "swap": {
+        "pswpin": 67555,
+        "pswpout": 273907
+      },
+      "time": 127166.623698739
+    },
+    "sample_count": 92,
+    "peak_observed_own_group_RSS_bytes": 296677376
+  },
+  "provider": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+  },
+  "provider_runtime_and_distribution_labels": {
+    "pharmacophoremt": "0.4.0+192.g65991c3",
+    "molsysmt": "0.23.0+687.g2325038e8",
+    "numpy": "2.5.4",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "pytest": "9.2.0",
+    "pytest-receptor": "1.2.0",
+    "argdigest": "0.17.1+3.g0712641",
+    "smonitor": "0.22.1+1.gc1b6ce2",
+    "depdigest": "0.15.2+2.g032d345",
+    "ackredit": "0.12.1+10.g4beb850"
+  },
+  "provider_python_files_unchanged": "Verified before/after the fresh postcheck; first suite initial checks pass but its post-suite snapshot is not reached. Do not infer an additional whole-suite source-file snapshot.",
+  "provider_checkout_clean_after_receiving": true,
+  "shared_sdk": {
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "files_verified": 4,
+    "origin_tool": "check_installed_imports",
+    "modified": false,
+    "QA_dependencies": "Existing qualified environment site-packages, admitted explicitly without .pth execution or acquisition; separate owner#176 remains open."
+  },
+  "resource_limits": "Scientific receiving DATA512MiB/AS1GiB per process; monitored own-group RSS cutoff512MiB, CPU19/thread1/nice19/idleIO/CPU120/wall180 and20percent physical reserve. No aggregate kernel MemoryMax/zero-swap/pids/quota guarantee. Build uses separate DATA512/ASunlimited Git-mapping profile. Full process/resource traces retained.",
+  "full_record": {
+    "path": "devguide/evidence/pruning_slack_installed_20261109_full.json.gz",
+    "bytes": 386145,
+    "sha256": "20a0c7b288cce54741d0f4a64d09074da9325d865212fa599ba343895c009831",
+    "retained_files": 118
+  },
+  "no_shared_prefix_provider_or_native_changes": true,
+  "scope": "Completes#160bounded local source/same-file owned installed analytical/public-native receiving. Not#148qualification, supported-platform matrix, full public dependency solve, comparator execution, biology/performance or a release.",
+  "retention": {
+    "capsule": "build/phmt-pruning-slack-20261109-iu5a9mqb",
+    "owned_target": "/tmp/phmt-pruning-slack-installed-20261109-oj79n4uk/installed",
+    "review": "2026-11-23",
+    "tracked_compressed_record": true
+  }
+}

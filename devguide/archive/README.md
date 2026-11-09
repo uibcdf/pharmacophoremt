@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (101)
+### Resolved (102)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -66,6 +66,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`nonfinite_observation_provenance.md`](nonfinite_observation_provenance.md) — [#35](https://github.com/uibcdf/pharmacophoremt/issues/35) — Undefined aromatic measurements fail consumer quantity provenance serialization. *(resolved, measured)*
 - [`ordinary_documentation_build.md`](ordinary_documentation_build.md) — [#53](https://github.com/uibcdf/pharmacophoremt/issues/53) — Repair the strict whole-site build and unrelated software identity claims. *(resolved, measured)*
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*
+- [`pair_distance_pruning_slack.md`](pair_distance_pruning_slack.md) — [#160](https://github.com/uibcdf/pharmacophoremt/issues/160) — Qualify triplet pair-distance pruning against accepted positional roundoff slack. *(resolved, measured)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
 - [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*
 - [`portable_developer_handoff.md`](portable_developer_handoff.md) — [#107](https://github.com/uibcdf/pharmacophoremt/issues/107) — Prepare a truthful portable onboarding and machine-migration handoff. *(resolved, measured)*

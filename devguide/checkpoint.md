@@ -19,8 +19,14 @@ public ion body fails with the saved old filter and passes with the correction.
 The [source receipt](evidence/pruning_slack_source_20261109.json) retains the
 AS512 mapping failures and explicit DATA512/AS1GiB local receiving amendment;
 observed own-group RSS stays below512MiB, without kernel MemoryMax/swap/task
-guarantees. This does not retry or qualify#148. Same-file owned installed
-receiving remains pending;#160 stays partial until that bridge passes.
+guarantees. This does not retry or qualify#148. The same116bodies pass from
+exact65991c3 owned wheel192;211payload/156runtime files and seven unchanged
+fixtures verify. The [installed receipt](evidence/pruning_slack_installed_20261109.json)
+retains the successful suite, original root-dependent JUnit bookkeeping failure
+and separate successful metadata/origin/native postcheck. Twelve ordinary outputs
+remain equal and150loaded runtime origins verify; observed suite group RSS peaks
+at382513152bytes. [#160](archive/pair_distance_pruning_slack.md) resolves within
+this local source/owned installed scope; full supported/public gates stay open.
 
 The preceding [Pharmer query/pruning review](pharmer_query_pruning_review.md) authenticates
 24selected official standalone files at SVN revision95 and proposes12unexecuted
@@ -28,9 +34,9 @@ comparison cases. Its [receipt](evidence/pharmer_query_review_20261109.json)
 separates source interpretation, current PHMT contracts and three independent
 stdlib/Fraction arithmetic controls. Those controls confirm a literal mismatch
 between PHMT's positive-site numerical allowance and strict pair-radius filter;
-[#160](pending_bugs/pair_distance_pruning_slack.md) owns public/native reproduction,
-correction, guard and installed receiving. No runtime or dependency changes,
-competitor execution, molecular calculation or index/scale claim follow.
+[#160](archive/pair_distance_pruning_slack.md) separately received the correction
+above. The original source-only study changes no runtime/dependency and executes
+no competitor or molecular calculation; its index/scale questions stay open.
 Canonical Discussion#131 publication/readback is separately owned by#128.
 
 Earlier bounded increments retain their own contracts and source/run identities:
@@ -57,11 +63,12 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** freeze#160's corrected source, build one offline owned
-wheel and receive the same116 original test bodies with source fallback refused
-in the admitted local resource context. Preserve
-physical tolerances and finite-method meanings. Receive the provider disposition
-of the nine collection/update cases separately; the completed inspection recipe
+**Next concrete action:** prepare the first unexecuted#128analytical comparison
+from the pinned source studies: freeze its complete query, inputs, independent
+expected result and resource/dependency admission before execution. Preserve
+physical tolerances and finite-method meanings;#160's local bridge is complete.
+Receive the provider disposition of the nine collection/update cases separately;
+the completed inspection recipe
 remains the current#108 entry point.
 Before another#148 acquisition, receive a distinct reviewed environment-manager
 strategy from the common-tool owner. The
@@ -123,8 +130,8 @@ earlier route.
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
-| #128 tool registry | [One executed Pharm3D analytical comparison, pinned CDPKit/Pharmer source reviews and remaining documentary records](pharmacophore_tools_registry.md) | Qualify PHMT#160; freeze proposed comparator cases only after admitting their complete problem/inputs/resources |
-| #160 numerical pruning | Three stdlib/Fraction controls measure the literal site/pair boundary mismatch | Public/native reproduction, conservative correction and relevant guard/installed receiving remain pending |
+| #128 tool registry | [One executed Pharm3D analytical comparison, pinned CDPKit/Pharmer source reviews and remaining documentary records](pharmacophore_tools_registry.md);#160bounded correction received | Freeze proposed comparator cases only after admitting their complete problem/inputs/resources |
+| #160 numerical pruning | [Resolved report](archive/pair_distance_pruning_slack.md):116source/same-file installed cases, original public-native before/after witness and12ordinary controls | Bounded local bridge complete; later-head full/public/platform gates remain separate |
 | #9/#10/#23/#95 | Frozen27c1178 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |
 | #58 addon | Deferred | Browser qualification separate from this classical/product increment |

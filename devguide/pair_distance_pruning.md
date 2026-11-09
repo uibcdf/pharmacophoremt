@@ -74,7 +74,20 @@ Strict full documentation rendering also passes with notebooks disabled.
 The [source receipt](evidence/pruning_slack_source_20261109.json) preserves the
 failed resource profiles and separate admitted context.
 
-Same-file owned installed receiving remains the bounded bridge before closure.
+The same116 original selected cases pass from the exact65991c3 owned wheel
+`0.4.0+192.g65991c3`;211payload files and156runtime Python files are verified,
+with seven unchanged original fixture files. Twelve ordinary outputs remain
+equal. The [installed receipt](evidence/pruning_slack_installed_20261109.json)
+records isolated/no-site receiving outside the checkout, live PHMT source-import
+refusal and a separate successful postcheck with150loaded runtime modules and
+one real public ion operation. The original post-suite bookkeeping failure is
+retained: JUnit prepended `fixtures.` to module names under the new root. Only
+metadata/origin receiving repeats, canonicalizing that path prefix while keeping
+full original parameterized names; the passing116cases are not repeated.
+Sampled suite own-group RSS peaks at382513152bytes, below the declared512MiB
+cutoff. This completes the bounded#160bridge; the report is archived with its
+relevant public guard.
+
 Complete later-head source/dependency/
 public installed-platform, biological, performance and release gates remain
 independent. Changed scientific producer bindings can require a fresh linked run;

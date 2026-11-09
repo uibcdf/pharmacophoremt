@@ -1,9 +1,9 @@
 ---
 summary: Qualify triplet pair-distance pruning against accepted positional roundoff slack.
 issue: uibcdf/pharmacophoremt#160
-status: partial
+status: resolved
 opened: 2026-11-09
-closed:
+closed: 2026-11-09
 severity: medium
 verification: measured
 area: [science, screening, numerics]
@@ -67,3 +67,30 @@ unchanged. Earlier AS512 mapping failures and the explicit local DATA512/AS1GiB/
 observed-group-RSS512 amendment retain separate identities. This is not a kernel
 MemoryMax qualification or#148retry. Same-file owned installed receiving remains
 pending, so the issue is partial and open.
+
+## Bounded installed closeout — 2026-11-09
+
+The [installed receipt](../evidence/pruning_slack_installed_20261109.json) pins
+source65991c33f491ea4d1937f1d5c0effbda6a4472eb and its exact owned wheel
+0.4.0+192.g65991c3. The same116original selected cases pass (17new/99existing,
+no skips or reported warnings), with211verified payload files,156runtime Python
+files and seven unchanged fixtures. The public guard above asserts that the
+original final-accepted binary boundary retains its only typed proposal, directly
+protecting the reported discard mechanism. The actual public ion operation also
+passes against unchanged native/source provider identities; twelve ordinary
+public outputs/counters remain equal to the pre-change baseline.
+
+The original private receiver exits1after its116passing scientific cases because
+JUnit prefixes classnames with `fixtures.` under the receiving root. Preserve
+that failure. A separate successful follow-up canonicalizes only that prefix,
+checks full original parameterized case names/fixture bytes, imports all four
+unchanged modules, runs one public ion operation and checks150loaded runtime
+origins plus the pinned shared checker. The passing116cases are not rerun.
+
+DATA512MiB/AS1GiB/observed-group-RSS512 receiving remains the explicit local
+profile, with suite sampled own-group peak382513152bytes. No kernel aggregate
+MemoryMax/swap/pids/quota guarantee, full supported/public dependency solve,
+platform matrix, comparator, biological/performance or release claim follows.
+The earlier source/arithmetic/resource receipts retain their original pending
+and failed states. This closes the bounded defect;#9/#10/#23/#95/#148retain
+their independent gates. No provider/native/shared-prefix modification occurs.

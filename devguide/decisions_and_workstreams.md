@@ -29,14 +29,19 @@ physical radii. All116 selected source cases pass,12ordinary outputs/counters
 remain identical, and the original public ion body fails with the old module
 and passes with the corrected one. Source evidence preserves the explicit
 DATA512/AS1GiB/observed-group-RSS512 local profile and prior mapping failures;
-this does not qualify#148. Same-file owned installed receiving remains pending.
+this does not qualify#148. The same116bodies pass from exact65991c3 owned
+wheel192; the [installed receipt](evidence/pruning_slack_installed_20261109.json)
+retains the original post-suite path-comparison failure and successful separate
+metadata/origin/native postcheck. Twelve ordinary outputs remain equal;211payload
+files and150loaded runtime origins verify. The bounded#160bridge resolves.
 
 2026-11-09: [Pharmer query/pruning review](pharmer_query_pruning_review.md)
 authenticates24official standalone r95files and retains12unexecuted comparator
 cases. Query meaning, candidate filtering, final acceptance, scoring, numerical
 representation and limits remain distinct. Three stdlib/Fraction controls confirm
-PHMT's literal site/pair allowance mismatch under#160; actual public/native
-method reproduction/correction/guard/installed receiving remain open. Canonical
+PHMT's literal site/pair allowance mismatch under#160. The original study leaves
+public/native reproduction/correction/guard/installed receiving pending; the
+subsequent correction above has separate evidence. Canonical
 Discussion#131 publication is separately recorded in#128. No competitor,
 molecular, benchmark, index/adapter or dependency-adoption result follows.
 
