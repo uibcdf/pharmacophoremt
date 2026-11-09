@@ -9,15 +9,20 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#163 supported Pharmer profile](pharmer_interoperability.md) is implemented in
-source: explicit warn/raise/ignore policy, detached conversion report, persisted
-loss audit and strict refusal before model or molecular construction. The reader
-now honors inactive vectors; a real public donor control distinguishes off/on.
-All141selected source cases pass (48new/93existing), preserving original35red
-guards. One counted overflow warning is intentional; a separate published
-Pytest Receptor1.2.0 shutdown warning is reported to its existing issue#4.
-Same-file owned installed receiving and the complete source/installed P1driver
-remain pending at this source stage.
+[#163 supported Pharmer profile](pharmer_interoperability.md) now receives
+explicit warn/raise/ignore, detached conversion reports, persisted loss audit and
+strict refusal before model or molecular construction. Inactive vectors are
+honored; actual public donor evaluation distinguishes off/on. The same141selected
+bodies pass in source and exact b4b062a owned wheel198 (48new/93existing), retaining
+35original red guards. Three supported ordinary profiles preserve source bytes
+and installed scientific payloads, with producer versions compared separately.
+Both complete P1drivers retain all three answers, nine attribution items/22uses.
+The [installed receipt](evidence/pharmer_profile_installed_20261109.json) verifies
+214payload/159runtime files,12original fixtures and155loaded runtime origins,
+with no PHMT checkout fallback. This closes the bounded import profile. One
+counted deliberate overflow warning and the separately reported published
+Pytest Receptor1.2.0 shutdown warning remain visible. Full supported/public gates
+and external engine equivalence are independent.
 
 Earlier [#162 enabled-point import](evidence/pharmer_enabled_installed_20261109.json)
 keeps its source0407e20/owned196receiving,34cases, original point mappings and
@@ -57,11 +62,12 @@ source42451906584/policy42451909669/publication42451913187, all attempt1 success
 Earlier5c3cd64/8db2a53 and later selected receiving retain distinct identities.
 No completed handle is redispatched or relabelled as later-head qualification.
 
-**Next concrete action:** receive#163from one exact owned wheel: the same141
-original bodies, unchanged supported-profile controls and complete P1driver,
-with checkout fallback refused. Then close its report and publish the bounded
-source/installed evidence. Keep external engine receiving separately admitted;
-no comparator installation or substitution follows from this reader change.
+**Next concrete action:** prepare the external P1receiving declaration under#128:
+identify a reproducible Pharmer executable/source/build route, its dependencies,
+input/export/perception coverage and actual bounded resource plan before execution.
+Retain the three frozen P1oracles and declared unsupported semantics; no comparator
+installation or substitution follows automatically from the completed reader.
+Keep the provider collection handoff and environment-manager disposition separate.
 Receive the provider disposition of the nine collection/update cases separately;
 the completed inspection recipe
 remains the current#108 entry point.
@@ -125,7 +131,7 @@ earlier route.
 | #103 biological studies | Neither complete receptor-based study has executed | Admit source/cohort/preparation and freeze the complete evaluation/comparator plan |
 | #66 ERalpha | Fixed original methods/access/exposure limits remain unresolved | New authorized access lead; preserve source pools, queries and thresholds |
 | #106 BRD4 | [Source/method/capacity history](checkpoint_history_20261107.md) retains all nine reviews and19 unresolved-domain records; no new activity admission | Resolve source-specific material/row/domain authority, including experimental/predicted provenance; no automatic substitution |
-| #128 tool registry | [One executed Pharm3D analytical comparison, pinned CDPKit/Pharmer source reviews and remaining documentary records](pharmacophore_tools_registry.md);#160bounded correction received | Freeze proposed comparator cases only after admitting their complete problem/inputs/resources |
+| #128 tool registry | [One executed Pharm3D analytical comparison, pinned CDPKit/Pharmer source reviews and bounded import profile](pharmacophore_tools_registry.md);#160/#163 received | Freeze proposed comparator cases only after admitting their complete problem/inputs/resources |
 | #160 numerical pruning | [Resolved report](archive/pair_distance_pruning_slack.md):116source/same-file installed cases, original public-native before/after witness and12ordinary controls | Bounded local bridge complete; later-head full/public/platform gates remain separate |
 | #9/#10/#23/#95 | Frozen27c1178 full source/policy/publication controls accepted; later9a0ed14 OS probe has its separate manual receiving | Dependency, installed/public/platform, later-head and release gates remain separate; no completed-run or local full-suite retry |
 | #6/#41/#74 | Bounded support/provider/annotated-SDF debt remains | Use owning provider contracts; preserve existing compatibility exceptions |

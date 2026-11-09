@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (104)
+### Resolved (105)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -69,6 +69,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`pair_distance_pruning_slack.md`](pair_distance_pruning_slack.md) — [#160](https://github.com/uibcdf/pharmacophoremt/issues/160) — Qualify triplet pair-distance pruning against accepted positional roundoff slack. *(resolved, measured)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
 - [`pharmer_disabled_points.md`](pharmer_disabled_points.md) — [#162](https://github.com/uibcdf/pharmacophoremt/issues/162) — Preserve or explicitly refuse disabled-point meaning during Pharmer JSON import. *(resolved, measured)*
+- [`pharmer_import_profile.md`](pharmer_import_profile.md) — [#163](https://github.com/uibcdf/pharmacophoremt/issues/163) — Define and enforce an explicit supported Pharmer query import profile. *(resolved, measured)*
 - [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*
 - [`portable_developer_handoff.md`](portable_developer_handoff.md) — [#107](https://github.com/uibcdf/pharmacophoremt/issues/107) — Prepare a truthful portable onboarding and machine-migration handoff. *(resolved, measured)*
 - [`pose_radius_boundary_units.md`](pose_radius_boundary_units.md) — [#84](https://github.com/uibcdf/pharmacophoremt/issues/84) — Preserve inclusive positive-site radius decisions across application units. *(resolved, measured)*

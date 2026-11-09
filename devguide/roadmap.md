@@ -120,8 +120,9 @@ installation/distribution gates; passing one task does not close its milestone.
 milestones1/2with explicit loss decisions and expert reports behind the guided
 warning default. Inactive vectors now mean spheres; strict loss refusal precedes
 construction. Source141cases pass (48new/93existing), retaining35original red
-guards and actual public donor off/on outcomes. Same-file owned installed and
-complete driver receiving are pending at this source stage. External engine,
+guards and actual public donor off/on outcomes. The same141original bodies, three ordinary profiles and complete P1driver pass
+from exact b4b062a owned wheel198, with214payload/159runtime files,12fixtures and
+155loaded runtime origins verified. The bounded source/installed bridge resolves. External engine,
 full supported/public, biological and scale gates remain separate.
 
 [#162 enabled-point import](pharmer_interoperability.md) advances query coherence

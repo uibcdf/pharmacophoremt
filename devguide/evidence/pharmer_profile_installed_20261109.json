@@ -1,0 +1,473 @@
+{
+  "schema": "pharmacophoremt.pharmer-profile-installed@1",
+  "issue": 163,
+  "source_commit": "b4b062a2137239d4d074d394bd615709beb4c6f5",
+  "version": "0.4.0+198.gb4b062a",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/wheels/pharmacophoremt-0.4.0+198.gb4b062a-py3-none-any.whl",
+    "bytes": 4531751,
+    "sha256": "273b82295e806e6bf606fbc4f3a119006d13cedaed1c31326c9a55fd3a76794b"
+  },
+  "wheel_payload_files_verified": 214,
+  "runtime_files_equal": 159,
+  "original_fixture_files_verified": {
+    "tests/test_pharmer_profile.py": {
+      "bytes": 11876,
+      "sha256": "c8383d18a03dc1016e4c89c893d3df20f887de20fd3a41fecedc85769f3db602"
+    },
+    "tests/test_rdkit_projection.py": {
+      "bytes": 15885,
+      "sha256": "5f9f961949f02bf59c6f2928206c65714673eb811d031eb30e46ac98fd6d5e5c"
+    },
+    "tests/test_io_dispatch.py": {
+      "bytes": 4372,
+      "sha256": "20907871bd3ff2d0196ccc1cda19b33bb644b444cc24ab10ea769dfc9338bf68"
+    },
+    "tests/test_pharmer_enabled.py": {
+      "bytes": 6643,
+      "sha256": "5b18f026e86d3250a5f0a8baaa2283f25f569072f75c1345f9bb0263e5e8871a"
+    },
+    "tests/test_pharmer_p1.py": {
+      "bytes": 4155,
+      "sha256": "0423838063edb57af9e0b2bb842e021fe47797cf8c8a73d542e657e4ae726fdd"
+    },
+    "phmt_test_support/__init__.py": {
+      "bytes": 74,
+      "sha256": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2"
+    },
+    "phmt_test_support/pharmer_p1.py": {
+      "bytes": 5429,
+      "sha256": "45f6fcff031a3c412c4a9b833eb0d3dc07b38cb2f23a75bbd05ea224a19bab7d"
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "bytes": 5917,
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e"
+    },
+    "tests/data/pharmer_p1/declaration.json": {
+      "bytes": 2359,
+      "sha256": "2eb784ae6de1bb6b5c29c24d792dea57eae4bbb4bfcb01af3719c58d0e35dca6"
+    },
+    "tests/data/pharmer_p1/query.json": {
+      "bytes": 286,
+      "sha256": "b9d564e16fcdadbac43313a527d3d0366f394607a9e5fcfb5a993c85f5342207"
+    },
+    "devtools/qualify_pharmer_p1.py": {
+      "bytes": 4002,
+      "sha256": "64c50c01adb4e853195ebe823c96447de275422b428bca534349530a67c552d5"
+    },
+    "pharmacophoremt/data/pharmer.json": {
+      "bytes": 530053,
+      "sha256": "2a1af2a5371b6f4ba7b0bc86b337c1250b280a9fa42a7c18d4c54f2b01466fe6"
+    }
+  },
+  "same_original_cases_and_bodies": true,
+  "source_cases": 141,
+  "installed_cases": 141,
+  "new_cases_per_context": 48,
+  "original_cases_per_context": 93,
+  "finish": {
+    "artifact_policy": {
+      "dropped_records": 0,
+      "max_bytes": 52428800,
+      "truncated": false
+    },
+    "complete": true,
+    "counts": {
+      "collected": 141,
+      "deselected": 0,
+      "errors": 0,
+      "executed": 141,
+      "failed": 0,
+      "not_executed": 0,
+      "passed": 141,
+      "reruns": 0,
+      "skipped": 0,
+      "subtests": {},
+      "warnings": 1,
+      "xfailed": 0,
+      "xpassed": 0
+    },
+    "duration": 4.832698994025122,
+    "exitstatus": 0,
+    "extensions": {
+      "dropped": 0,
+      "incomplete": false,
+      "recorded": 0
+    },
+    "integrity": {
+      "algorithm": "sha256",
+      "digest": "83382484fed72edfe91e1e7b188f8d90f4096217fc612d670ea54bb62924711a",
+      "records": 425
+    },
+    "invalid_selections": [],
+    "note": "",
+    "outcome": "PASS",
+    "root_causes": 0,
+    "run_id": "eb4c5206e1404f3aaffdcf2b19f85f84",
+    "schema": "pytest-receptor.events@1",
+    "stop_reason": "",
+    "type": "session_finish"
+  },
+  "ordinary_profiles": [
+    {
+      "profile": "p1-required",
+      "sites": 3,
+      "scientific_payload_exact_equal": true,
+      "source_original_version": "0.4.0+134.gee5d9fa",
+      "actual_installed_version": "0.4.0+198.gb4b062a",
+      "original_source_and_installed_records_unchanged": true,
+      "installed_record": {
+        "bytes": 1653,
+        "sha256": "f1cb42e562edb55a61ba223c38eb934d1f7a830463ef149c3d9bb0f72850e366"
+      }
+    },
+    {
+      "profile": "donor-active",
+      "sites": 1,
+      "scientific_payload_exact_equal": true,
+      "source_original_version": "0.4.0+134.gee5d9fa",
+      "actual_installed_version": "0.4.0+198.gb4b062a",
+      "original_source_and_installed_records_unchanged": true,
+      "installed_record": {
+        "bytes": 940,
+        "sha256": "801cd7930a0df72a92f60a2ac1e554b58eb2b606c5238ac9d6f4ae99b9c82249"
+      }
+    },
+    {
+      "profile": "aromatic-active",
+      "sites": 1,
+      "scientific_payload_exact_equal": true,
+      "source_original_version": "0.4.0+134.gee5d9fa",
+      "actual_installed_version": "0.4.0+198.gb4b062a",
+      "original_source_and_installed_records_unchanged": true,
+      "installed_record": {
+        "bytes": 945,
+        "sha256": "9c9478bd2e8711f6b5ea3df53a1ffe9b65d972040884691d66fb52a505e6ef96"
+      }
+    }
+  ],
+  "ordinary_comparison": "Source before/after complete native JSON is byte-identical. Installed payload is exactly equal after comparing the root generated producer version separately; original source/installed records are retained untouched. No scientific values, metadata or schema normalized.",
+  "P1_driver": {
+    "output": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/installed-result.json",
+    "identity": {
+      "bytes": 156139,
+      "sha256": "edbb16ab7d500afe21b9a0a48d5f35366f19dca4e88d3b24bfc99b6b2e055366"
+    },
+    "cases": 3,
+    "answers_match_source_and_oracle": true,
+    "items": 9,
+    "uses": 22,
+    "existing_output_refused_unchanged": true,
+    "external": {
+      "tool": "Pharmer standalone r95",
+      "state": "not_executed",
+      "reason": "Separate executable/input/feature/index/resource admission required"
+    }
+  },
+  "source_receipt": {
+    "path": "devguide/evidence/pharmer_profile_source_20261109.json",
+    "bytes": 17554,
+    "sha256": "61817ceb3a876a11ecb8a0c5c15d35f056ad9043cbd5e75c32c4af7e888ad27e"
+  },
+  "loaded_runtime_modules": 155,
+  "forbidden_source_import_attempts": [],
+  "origin_enforcement": "External fresh cwd; isolated/no-site/no-bytecode; live owned PHMT/companion origin guard; original fixtures; current explicit provider mappings without .pth execution; pinned shared installed_imports checker.",
+  "provider_native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "fab8cbccf570a60205a3863aad19dd4b7cfb8d3a"
+  },
+  "loaded_native": {
+    "molsysmt._rust": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so"
+  },
+  "provider_Python_files_unchanged_before_after": true,
+  "provider_file_counts": {
+    "ackredit": 69,
+    "argdigest": 39,
+    "depdigest": 17,
+    "molsysmt": 3099,
+    "molsysviewer_molsysmt": 44,
+    "pytest_receptor": 6,
+    "pyunitwizard": 93,
+    "sabueso": 845,
+    "smonitor": 41,
+    "topomt": 305
+  },
+  "actual_runtime_version": "0.4.0+198.gb4b062a",
+  "version_labels": {
+    "pharmacophoremt": "0.4.0+198.gb4b062a",
+    "molsysmt": "0.23.0+687.g2325038e8",
+    "numpy": "2.5.4",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "ackredit": "0.12.1+10.g4beb850"
+  },
+  "actual_provider_admission_labels": {
+    "molsysmt": "0.23.0+687.g2325038e8",
+    "sabueso": "0.14.0+231.g9f01b06",
+    "topomt": "0.5.0+387.gcf4d475.dirty",
+    "argdigest": "0.17.1+3.g0712641",
+    "smonitor": "0.22.1+1.gc1b6ce2",
+    "depdigest": "0.15.2+2.g032d345",
+    "pyunitwizard": "0.29.1+6.gf82b618",
+    "ackredit": "0.12.1+10.g4beb850",
+    "pytest-receptor": "1.2.0"
+  },
+  "provider_scope": "Actual clean MolSysMT HEAD/native artifact fenced separately from generated labels. Other existing source/dirty/editable provider identities are retained; do not infer a full clean/public dependency environment or source-to-binary attestation. No provider/prefix update by this task.",
+  "execution": {
+    "name": "installed",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/logs/installed.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-I",
+      "-S",
+      "-B",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/controls/receive_installed.py"
+    ],
+    "cwd": "/tmp/phmt-pharmer-profile-installed-20261109-okscu2q8/cwd",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57110745088
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758719\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735986\n",
+      "swap": {
+        "pswpin": 99499,
+        "pswpout": 273907
+      },
+      "time": 135560.399932909
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 14.258919665007852,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 56022118400
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758719\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735986\n",
+      "swap": {
+        "pswpin": 99499,
+        "pswpout": 273907
+      },
+      "time": 135574.659523901
+    },
+    "sample_count": 141,
+    "peak_observed_own_group_RSS_bytes": 366202880
+  },
+  "offline_owned_build": {
+    "execution": {
+      "name": "owned-build",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pharmer-profile-20261109-bxb_e85x/logs/owned-build.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-pharmer-profile-20261109-bxb_e85x/controls/build_owned.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 57037242368
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758717\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735983\n",
+        "swap": {
+          "pswpin": 99488,
+          "pswpout": 273907
+        },
+        "time": 135521.815556819
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.172900786012178,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 57737920512
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=758717\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=735983\n",
+        "swap": {
+          "pswpin": 99488,
+          "pswpout": 273907
+        },
+        "time": 135527.989415332
+      },
+      "sample_count": 61,
+      "peak_observed_own_group_RSS_bytes": 286347264
+    },
+    "tool_overlay": {
+      "overlay": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-public-runs-20261107-w9c85754/build_tool_overlay",
+      "version": "2.3.0",
+      "python_files": {
+        "versioningit/__init__.py": {
+          "bytes": 2835,
+          "sha256": "40e9bb2ec46f1ef868e6bb6760ae0e959b6de152c5116a2b473db88c9732c7e1"
+        },
+        "versioningit/__main__.py": {
+          "bytes": 2541,
+          "sha256": "b44df9fe26f1ac0228b6d3c3b135cda6a7c3eb7b2374645c12068231b69ea7c2"
+        },
+        "versioningit/basics.py": {
+          "bytes": 6500,
+          "sha256": "2078d37d10638709c678c2fc70c8a20b314038f5f9a31229e5a09ab232c5d694"
+        },
+        "versioningit/cmdclass.py": {
+          "bytes": 335,
+          "sha256": "5073cfbfb751613ffd46ddcb60699faa7173c6e2239bc36acb65075b3195f4d0"
+        },
+        "versioningit/config.py": {
+          "bytes": 8774,
+          "sha256": "68bdcf8a27edd176741398e26bc2fc42a49436cf9ef238db10645d80e3928360"
+        },
+        "versioningit/core.py": {
+          "bytes": 23043,
+          "sha256": "27736210020be8f6ad808a8098b4ec533271f47dff14d16890e3fcdb9c4a8dc3"
+        },
+        "versioningit/errors.py": {
+          "bytes": 1312,
+          "sha256": "0f427c8b22780b4066d6a20827320f2ff0425e396fb22ca8966d7ef372f5a4b6"
+        },
+        "versioningit/get_cmdclasses.py": {
+          "bytes": 3334,
+          "sha256": "44ac14eedd31f7bf8916d491b20299a1ac53050d5303cda4919881539c683602"
+        },
+        "versioningit/git.py": {
+          "bytes": 12642,
+          "sha256": "63f3e90edcf33a2d24d3e5b73daa41813b7ce76a99b0e46085b22b22e1a3a938"
+        },
+        "versioningit/hatch.py": {
+          "bytes": 2338,
+          "sha256": "5e5b728a8e324ca438407ca8bdc0884faa91f7775e19f25a5e7e8f12d7ab050d"
+        },
+        "versioningit/hg.py": {
+          "bytes": 4842,
+          "sha256": "b447ef281243992b4765ee7956c7ae2a75f9c0574961ae8e83bad2fa83a5348d"
+        },
+        "versioningit/hook.py": {
+          "bytes": 1601,
+          "sha256": "fe4736998ecd293ebe3216642828eb027c7210ef78e2778d1f5571e321b87175"
+        },
+        "versioningit/logging.py": {
+          "bytes": 3324,
+          "sha256": "e2aa61c64fb6400ba6f4aa23eb23b4bade8eb69d8a07c4c7037061fae9c21c2a"
+        },
+        "versioningit/methods.py": {
+          "bytes": 4839,
+          "sha256": "65c33d71bec5bf80dbb8b01bcd9b2cc3eea441eb48ce17c149757948f6ddb80a"
+        },
+        "versioningit/next_version.py": {
+          "bytes": 4003,
+          "sha256": "13a6d5e1aaef304641ead157f17e9809b05117dda6e82edc3cbc6f2f2618c071"
+        },
+        "versioningit/onbuild.py": {
+          "bytes": 3379,
+          "sha256": "8cf8e6791e66e8f367ae7967c1d204364935d0cb84d65208c6148ebc454e3055"
+        },
+        "versioningit/util.py": {
+          "bytes": 6610,
+          "sha256": "a04e40b35de86a06f312f5f44bdf5a4a717b51fe3d92fc3b64adf989e5281801"
+        }
+      },
+      "unchanged": true
+    },
+    "source_generated_version": {
+      "file": "pharmacophoremt/_version.py",
+      "bytes": 35,
+      "sha256": "7f9c35f65a2f9439b7ded46955c166f79c427306c147fd421bebc915602f020a",
+      "text": "__version__ = \"0.4.0+134.gee5d9fa\"\n"
+    },
+    "wheel_generated_version": {
+      "file": "pharmacophoremt/_version.py",
+      "bytes": 35,
+      "sha256": "45894685155d5a72d4aec9fcde43c21f6b00a6c52c1958e3c6259937a02f0133",
+      "text": "__version__ = \"0.4.0+198.gb4b062a\"\n"
+    },
+    "requires_python": "<3.15,>=3.11",
+    "requires_dist": [
+      "numpy",
+      "scipy",
+      "nglview",
+      "molsysmt",
+      "pyunitwizard",
+      "argdigest>=0.17.1",
+      "smonitor>=0.22.1",
+      "depdigest",
+      "rdkit",
+      "networkx",
+      "PyYAML>=5.1",
+      "pytest>=6.1.2; extra == \"test\"",
+      "pytest-runner; extra == \"test\""
+    ]
+  },
+  "shared_sdk": {
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "verified_files": 4,
+    "modified": false,
+    "operation": "check_installed_imports",
+    "QA": "Existing admitted site-packages; no acquisition; separate owner176 remains open."
+  },
+  "full_evidence": {
+    "path": "pharmer_profile_installed_20261109_full.json.gz",
+    "compressed_bytes": 440529,
+    "compressed_sha256": "20c19b80678a5114f82164a8fb71509d58e08eb4d4cdd3a822cf248e0d12738c",
+    "uncompressed_bytes": 3577591,
+    "uncompressed_sha256": "3ae122b31e7615cb59182aa2f9bf7e7812c511425eb82175e3ad026989c7d9b4"
+  },
+  "warnings": {
+    "counted": 1,
+    "meaning": "Intentional overflow in pre-existing RDKit nonfinite unit-conversion guard (Pint registry.py).",
+    "post_session": "Published Pytest Receptor1.2.0 /dev/null discard-stream ResourceWarning; left visible, separate from counted session warnings.",
+    "owner_issue": "uibcdf/pytest-receptor#4",
+    "consumer_comment": "https://github.com/uibcdf/pytest-receptor/issues/4#issuecomment-6731923534"
+  },
+  "legacy_gate": "Original bundled input unchanged, with10true/9false literal flags. Point-only10site import and real explicit one-ion attachment pass. The historical unlabelled full-attachment/dispatcher Pharmer paths remain unexecuted under this profile; corrected count assertions retain separate full-source receiving debt9.",
+  "resource_claim": "Scientific DATA512MiB/AS1GiB per process, monitored own-group RSS cutoff512MiB, CPU19/backend1/nice19/idleIO/120CPU/180wall/reserve20percent. No aggregate kernel MemoryMax/zero-swap/tasks/quota/reservation guarantee. Separate Git/build DATA512/ASunlimited profile. No budget increase or148retry.",
+  "external": "No Pharmer execution/build/install or substituted engine. Supported field profile163 received; external angular/search equivalence remains unqualified.",
+  "scope": "Completes bounded163source/same-file-owned-installed receiving; no full supported public/platform, all query semantics, biological/performance or release claim.",
+  "retention": {
+    "capsule": "build/phmt-pharmer-profile-20261109-bxb_e85x",
+    "own_workspace": "/tmp/phmt-pharmer-profile-installed-20261109-okscu2q8",
+    "review": "2026-11-23"
+  }
+}

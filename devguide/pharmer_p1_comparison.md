@@ -164,3 +164,10 @@ and original-point mappings in source and exact owned wheel196; broader scientif
 field/loss policy remains open under#163. The original P1source1372623/owned192
 receipts retain their dates and scope. A separate current P1driver receiving
 keeps all three expected answers; no external engine execution is inferred.
+
+
+The later [#163 profile](pharmer_interoperability.md) receives explicit loss
+reporting and correct vector activation from source/exact owned wheel198, with
+141same selected cases and another complete P1driver. Original P1results stay
+unchanged; this is an additional PHMT receiving context, not an external engine
+comparison. Its source/installed receipts retain actual versions and attribution.

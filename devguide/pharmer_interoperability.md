@@ -2,12 +2,12 @@
 
 Owners LMMV/dprada; 2026-11-09;
 [#162](https://github.com/uibcdf/pharmacophoremt/issues/162),
-broader admission proposal[#163](https://github.com/uibcdf/pharmacophoremt/issues/163).
+supported-field profile[#163](https://github.com/uibcdf/pharmacophoremt/issues/163).
 The [prospective plan](evidence/pharmer_enabled_plan_20261109.json) precedes the
 public red guards and implementation. This is a correction to the existing
 PHMT-owned file reader, not an external engine or molecular preparation route.
 
-## Operation and admission
+## Enabled-point gate (#162)
 
 `io.from_pharmer` omits a point when its `enabled` field is false, before looking
 up its feature name or geometry. Missing means true. A present field must be a
@@ -18,7 +18,8 @@ field behavior. The later #163 profile below adds explicit projection options
 and corrects vector activation; it introduces no dependency or native schema.
 
 Surviving supported points keep input order. Result site indices are dense.
-For filtered imports only, model metadata key `pharmer` contains:
+The enabled-point gate adds these lists when it filters points; the #163 loss
+audit below also creates this namespace when needed:
 
 | Field | Meaning |
 | --- | --- |
@@ -26,8 +27,8 @@ For filtered imports only, model metadata key `pharmer` contains:
 | `disabled_point_indices` | Original zero-based positions omitted by the enabled gate |
 
 The lists contain point identities, never atom indices or authenticated provenance.
-No raw input objects are retained. Ordinary all-true/missing imports keep their
-original empty metadata. The public constructor copies the mapping through its
+No raw input objects are retained. Ordinary lossless imports without engine
+settings keep empty metadata unless points are omitted. The public constructor copies the mapping through its
 existing operation, and native persistence preserves it. All-disabled input
 returns the existing empty-model representation with an explicit empty survivor
 map; downstream operations retain independent minimum-query requirements.
@@ -40,7 +41,7 @@ Already saved native models/results retain their original stored sites and
 producer context. Applying the correction requires reimporting the original
 Pharmer input; historical evidence is not silently normalized or relabelled.
 
-## Independent receiving
+## Independent enabled-point receiving (#162)
 
 `tests/test_pharmer_enabled.py::test_disabled_point_is_omitted_with_original_point_mapping`
 guards the actual public operation: changing only the first original flag yields
@@ -174,10 +175,17 @@ reported to [uibcdf/pytest-receptor#4](https://github.com/uibcdf/pytest-receptor
 the published1.2.0 artifact retains an already source-fixed limitation.
 
 The [source receipt](evidence/pharmer_profile_source_20261109.json) preserves
-original failures and the complete control/driver evidence. Same-file owned
-installed receiving is pending in this source-stage statement. Receive the same
-141bodies, ordinary supported-profile records and complete P1driver without PHMT
-checkout fallback before closing#163. External Pharmer, full historical unlabelled
+original failures and the complete control/driver evidence. The [installed receipt](evidence/pharmer_profile_installed_20261109.json)
+receives the same141 original bodies from exact source b4b062a / owned wheel198,
+plus the three ordinary supported profiles and complete three-case P1driver.
+All214payload/159runtime files and12original fixtures verify;155loaded runtime
+origins are in the owned prefix, with zero forbidden checkout import attempts.
+Source ordinary native JSON bytes are identical before/after; installed scientific
+payloads are exactly equal with generated root versions compared separately.
+Both drivers retain nine actual attribution items/22uses and refuse overwrites.
+The installed sampled own-group peak is366202880bytes under the unchanged profile.
+This closes#163within its declared supported-input/source-owned-installed scope.
+External Pharmer, full historical unlabelled
 attachment, supported public/platform, predictive biology, scale and release
 qualification remain independent. Source/native/provider versions and the
 DATA512MiB/AS1GiB/group512MiB profile remain separately recorded.

@@ -27,8 +27,10 @@ evidence retain finer-grained authority than this orientation page.
 warn/raise/ignore, detached reports and persisted loss audit, while retaining
 #162 omission and correcting inactive vectors. Source141selected cases pass
 (48new/93existing);35original red guards are preserved. Actual public donor
-evaluation confirms off/on behavior. Exact owned installed and complete P1driver
-receiving remain pending at this stage; external engine qualification is separate.
+evaluation confirms off/on behavior. The same141original bodies, three ordinary profiles and complete P1driver also
+pass from exact b4b062a owned wheel198:214payload/159runtime files,12fixtures and
+155loaded runtime origins verify. The bounded bridge resolves; external engine
+qualification remains separate.
 
 2026-11-09: [#162 enabled-point import](pharmer_interoperability.md) now omits
 disabled points before parsing, defaults missing flags to true and rejects other
@@ -40,7 +42,7 @@ are corrected. Original red/unit-control identities and the full-attachment
 resource gate stay separate. The same34original cases, two ordinary
 profiles and complete P1driver pass from exact0407e20 owned wheel196, with211
 verified payload files, nine fixtures and152loaded runtime origins. The bounded
-source/installed bridge resolves. Broader scientific import/admission policy is open as#163; no external engine
+source/installed bridge resolves. The supported scientific import/admission profile is received separately under#163; no external engine
 execution or general field-equivalence claim follows.
 
 2026-11-09: [#161 P1 preparation](pharmer_p1_comparison.md) freezes an exact

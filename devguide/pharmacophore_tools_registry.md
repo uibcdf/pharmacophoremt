@@ -218,3 +218,20 @@ profiles and the complete P1driver pass; the bundled original19point JSON has
 only10enabled constraints. Earlier P1/source-study claims and receipts retain
 their original scope. Broader scientific input/loss policy is separately open
 as#163; actual Pharmer execution remains unqualified under#128.
+
+
+## Supported Pharmer profile received — 2026-11-09
+
+[#163](pharmer_interoperability.md) now qualifies explicit supported
+fields/loss reports, preserves enabled omission and honors inactive vectors.
+The same141source/exact owned wheel198cases pass (48new/93existing), together
+with three unchanged supported ordinary profiles and the complete P1driver.
+The [installed receipt](evidence/pharmer_profile_installed_20261109.json)
+verifies214payload/159runtime files,12fixtures and155loaded runtime origins,
+without PHMT checkout fallback. Original source-study/P1/#162receipts remain
+historical; this does not execute Pharmer or qualify its perception, angular
+policy, molecular export, database/search behavior or performance.
+
+The next bounded research task is a reproducible executable/build/dependency and
+resource admission declaration for the frozen external P1arm under#128. Keep
+those oracles and engine-specific meanings explicit before attempting execution.
