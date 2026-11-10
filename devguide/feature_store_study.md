@@ -136,3 +136,10 @@ Next qualify guided/expert operations and admission/refusal messages against thi
 bounded lifecycle before proposing a public surface. Declare persisted lookup
 identity/size/rebuild compatibility separately; never treat feature-bundle bytes
 as index-size evidence. Provider collection acceptance remains independent.
+
+## Later workflow receiving — #187
+
+The [guided/expert exercise](feature_store_workflow.md) qualifies the next bounded
+composition over these unchanged storage primitives. It does not promote this
+study to a public API, authenticate molecular parents or settle persisted lookup.
+Original#186 receiving remains unchanged.

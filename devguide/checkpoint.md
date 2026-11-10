@@ -9,34 +9,38 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-[#186 immutable feature store](feature_store_study.md) now implements bounded
-local POSIX bundles containing exact original F bytes and ordered work/parent
-bindings, explicit incomplete causes, exclusive cooperating writers and detached
-readers. Sealing and publication validate quantities; metadata open remains
-scientifically cold. CURRENT is the publication boundary: pre-boundary failure
-keeps the old generation; after it, recovery verifies actual visibility rather
-than infer rollback. Generations and operation receipts are retained, with no GC.
+[#187 guided/expert workflow](feature_store_workflow.md) now composes the existing
+bounded store through shared inspection, captured-feature reuse and publication
+recovery operations. Guided sessions own a pinned reader; expert calls borrow
+theirs. Selection preserves global ordinals, literal keys and full original
+inventories. Missing evaluation/incomplete extraction/unknown keys/stale generation
+refuse clearly; every reuse reconstructs quantities afresh. Query admission and
+molecular origin remain separate.
 
-The [receipt/archive](evidence/feature_store_20261110.json) receives53guards per
-source/exact-owned218 context, before/after SIGTERM/SIGKILL, two cold readers and
-reopened eleven-occurrence retrieval. All72 original analytical rows per context,
-full maps/joins and prior native/rational differences remain exactly equal to
-original#182 science. Reading retains original attribution without new credit.
-The initial alias-test collision and controller/provider-file refusal are retained;
-all originally admitted provider Python bodies remain unchanged via a detached
-pin for the concurrently extended sibling. Runtime stays5515e93/owned218.
-Feature-bundle disk bytes do not qualify persisted-index cost or a production
-backend. No new feature extraction or molecular operation is executed.
+The [receipt/archive](evidence/feature_store_workflow_20261110.json) receives85guards
+per source/exact-owned218 context (32new/53regression), twelve exercise tasks under
+nm/pm per context, cold preview/recovery and original byte/credit preservation.
+Controlled before/after publication termination protects unknown attempts and
+linked retry parity. A current candidate needs no retry; a different publication
+requires review. Original unknown history is never rewritten by a new success.
+Runtime stays5515e93/owned218; all admitted provider bodies remain unchanged.
+No new molecular operation, feature generation, matching or benchmark runs.
 
-Next: qualify guided/expert lifecycle operations, admission/refusal and recovery
-against this bounded adapter before proposing a public surface. Keep persisted
-lookup identity/size/rebuild compatibility and broader scale/cold/native-memory
-costs separate. MolSysMT#624 is open/unreceived; QuantityRecord remains under its
-provisional owner contract. #148/#165 stay stopped and #9/#23 retain full
-current-head/public/platform/release gates. No new CI checkpoint is requested.
+Next: propose the minimal public feature-asset surface, named generation/selection
+policy and registered ArgDigest/SMonitor admission. Run the declared tasks with
+novice/expert users independently; actual human participants remain zero. Keep
+persisted lookup identity/size/rebuild and wider cost/scale gates separate.
+MolSysMT#624 remains open/unreceived; QuantityRecord stays provisional. #148/#165
+remain stopped and #9/#23 retain full current-head/public/platform/release gates.
+No new remote CI checkpoint is requested.
 
 ## Received foundations and their boundaries
 
+- [#186 immutable store](feature_store_study.md) and its
+  [receipt](evidence/feature_store_20261110.json) retain53storage controls, exact
+  original bytes, detached lifetime, publication interruption and reopened72-row
+  scientific equality per context. Feature-bundle bytes are not persisted-index
+  size; first test/controller corrections remain preserved.
 - [#185 identity/lifetime contract](search_asset_identity_contract.md) and its
   [receipt](evidence/search_asset_contract_20261110.json) retain24coverage controls,
   cold/original-attribution receiving and the original canonical-format correction.

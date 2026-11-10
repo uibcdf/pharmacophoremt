@@ -87,3 +87,9 @@ interrupted refresh. Existing readers keep their original generation. Recovery
 checks which complete generation is published; an interrupted caller does not
 by itself prove rollback. This remains bounded test support, with no public
 store API or persistent index.
+
+A subsequent [guided/expert workflow exercise](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_store_workflow.md)
+checks that both routes preserve original occurrence positions and make the same
+reuse/recovery decisions. Missing family evaluation remains unknown; an interrupted
+publication is checked before deciding whether to retry. This is technical study
+evidence, with human usability and the public store interface still pending.

@@ -1,5 +1,25 @@
 # Strategic roadmap
 
+## Guided/expert feature-store workflow — #187 (2026-11-10 UTC)
+
+The [workflow exercise](feature_store_workflow.md) now composes shared inspection,
+captured-feature reuse and publication recovery operations through a thin guided
+session. The [receipt/archive](evidence/feature_store_workflow_20261110.json)
+receives85controls per source/exact-owned218 context (32new/53store regression),
+twelve exercise tasks per context under nm/pm, cold preview/recovery and real
+attribution checks without new credit. Original global ordinals, literal keys,
+whole inventories and pinned generation remain intact; no source/matching work
+is executed. Explicit linked retries revalidate through the existing writer;
+unknown original attempts remain unknown, and already-current/displaced
+publications refuse guided retry. This is technical parity with zero human
+participants, not a supported public API or a usability claim.
+
+Next propose the minimal public feature-asset surface and its registered argument/
+diagnostic boundaries, using the declared novice/expert tasks for independent
+human receiving. Persisted lookup identity/cost, provider collection admission,
+full exact-head/public/platform/release and biological gates remain separate;
+#148/#165 stay stopped and MolSysMT#624 remains unreceived.
+
 ## Immutable feature-store study — #186 (2026-11-10 UTC)
 
 The [bounded adapter](feature_store_study.md) now separates immutable original
