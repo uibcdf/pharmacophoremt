@@ -215,3 +215,16 @@ executed-result comments with independent exact readback. This closes only the
 bounded experiment, while #128's broader tool comparisons remain open. The
 internal upstream report is reviewable but not submitted externally. No runtime
 adapter, index, speed or biological claim is introduced.
+
+## Finite retrieval continuation — 2026-11-10
+
+[#177](../archive/association_distance_roundoff.md) corrects the graph candidate
+boundary using the existing owned predicate, preserving physical/final meaning;
+all141source and exact-owned218cases pass. The distinct [#178 study](../retrieval_candidate_controls.md)
+receives27query/width combinations and96rational mapping checks identically in
+both contexts. Thirteen offline guards cover identity/invalidation/incompleteness.
+This is an own PHMT experiment following the pmapper lessons, with no new pmapper
+execution or production index. Canonical Discussion follow-up retains the dated
+source/comparison history. Broader #128 comparisons and actual biological/cost/
+public-platform gates remain open;#148/#165stops and upstream publication limits
+are unchanged.

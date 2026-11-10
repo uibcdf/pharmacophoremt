@@ -1,0 +1,319 @@
+{
+  "schema": "pharmacophoremt.retrieval-controls-receiving@1",
+  "issue": 178,
+  "recorded_at_utc": "2026-11-10T01:32:58.826175+00:00",
+  "case_id": "typed-distance-retrieval-v1",
+  "runtime_source": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+  "owned_version": "0.4.0+218.g5515e93",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-association-pruning-20261110-_9wkzk5h/wheels/pharmacophoremt-0.4.0+218.g5515e93-py3-none-any.whl",
+    "bytes": 4533157,
+    "sha256": "75abed35365736fe159d34cf07734b113683e585af1aa263e15a2ca1df750405"
+  },
+  "original_occurrences": 12,
+  "declared_query_occurrences": 9,
+  "distinct_query_coordinate_type_tolerance_configurations": 4,
+  "bin_widths_angstrom": [
+    0.125,
+    0.5,
+    1.0
+  ],
+  "complete_rows_per_context": 27,
+  "same_original_complete_body_and_scientific_results": true,
+  "independent_rational_mapping_comparisons_per_context": 96,
+  "all_conservative_mappings_equal_exhaustive": true,
+  "unsafe_exact_bin_control_misses": [
+    {
+      "query": "cross-bin-feasible",
+      "width": 0.125,
+      "exact_bin_missing_positive_ordinals": [
+        3,
+        4
+      ]
+    },
+    {
+      "query": "association-boundary",
+      "width": 0.125,
+      "exact_bin_missing_positive_ordinals": [
+        11
+      ]
+    },
+    {
+      "query": "cross-bin-feasible",
+      "width": 0.5,
+      "exact_bin_missing_positive_ordinals": [
+        4
+      ]
+    },
+    {
+      "query": "association-boundary",
+      "width": 0.5,
+      "exact_bin_missing_positive_ordinals": [
+        11
+      ]
+    },
+    {
+      "query": "cross-bin-feasible",
+      "width": 1.0,
+      "exact_bin_missing_positive_ordinals": [
+        4
+      ]
+    },
+    {
+      "query": "association-boundary",
+      "width": 1.0,
+      "exact_bin_missing_positive_ordinals": [
+        11
+      ]
+    }
+  ],
+  "same_bin_false_positive_is_filtered_by_reference": true,
+  "reference_calls_per_context": {
+    "exhaustive": 108,
+    "retrieved": 230
+  },
+  "selected_reference_evaluations_per_width": [
+    {
+      "width": 0.125,
+      "retrieved": 59,
+      "exhaustive_equivalent": 108
+    },
+    {
+      "width": 0.5,
+      "retrieved": 82,
+      "exhaustive_equivalent": 108
+    },
+    {
+      "width": 1.0,
+      "retrieved": 89,
+      "exhaustive_equivalent": 108
+    }
+  ],
+  "build_pair_entries_per_width": 42,
+  "actual_attribution_per_context": {
+    "items": 8,
+    "uses": 8,
+    "complete_original_payloads_in_archive": true
+  },
+  "verified_installed_payloads_non_RECORD": 214,
+  "equal_runtime_body_files": 159,
+  "loaded_PHMT_modules_per_context": 146,
+  "provider_Python_files": 4593,
+  "fixture_files": 8,
+  "molecular_inputs_and_observed_operations": 0,
+  "offline_oracle_identity_invalidation_incomplete_work_guards": 13,
+  "resources": {
+    "source": {
+      "exit_code": 0,
+      "seconds": 11.41729788298835,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 188198912
+    },
+    "installed": {
+      "exit_code": 0,
+      "seconds": 11.419992681010626,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 188358656
+    },
+    "oracle": {
+      "exit_code": 0,
+      "seconds": 0.6077916089852806,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 63475712
+    }
+  },
+  "full_evidence": {
+    "path": "retrieval_controls_20261110_full.json.gz",
+    "compressed_bytes": 527599,
+    "compressed_sha256": "ed73889ac633b10c504f040a2850cf708d0973afd429779f2c471f74425fcb19",
+    "uncompressed_bytes": 3920525,
+    "uncompressed_sha256": "4d6adb189d26653373652dc590260f378707b814786aa1a13ed282114632941d"
+  },
+  "guard": "tests/test_retrieval_control_oracles.py",
+  "normative": "devguide/retrieval_candidate_controls.md",
+  "performance_measured": false,
+  "production_index_or_dependency_added": false,
+  "universal_float_or_continuous_search_recall_qualified": false,
+  "complete_public_platform_or_release_qualified": false,
+  "stopped_148_165_retried": false,
+  "retention": {
+    "capsule": "build/phmt-retrieval-controls-20261110-kdhwgl2u",
+    "workspace": "/tmp/phmt-retrieval-receiving-20261110-q0_0fhrm",
+    "review": "2026-11-24"
+  },
+  "local_receiving_evidence": {
+    "path": "retrieval_controls_20261110_receiving.json.gz",
+    "compressed_bytes": 77096,
+    "compressed_sha256": "ed6f1619033522a89b843747b2c0783dcd006c16d0bc87a12b5d414b0d2978a5",
+    "uncompressed_bytes": 292663,
+    "uncompressed_sha256": "140c192f603bcc11b53a97bec5b44f1a98d4e7aae3e81bc66b7f8e93047ce629"
+  },
+  "local_receiving": {
+    "checks": [
+      {
+        "name": "index-generate",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "code": 0,
+        "output": ""
+      },
+      {
+        "name": "ruff",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "check",
+          "."
+        ],
+        "code": 0,
+        "output": "All checks passed!\n"
+      },
+      {
+        "name": "format",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "code": 0,
+        "output": "458 files already formatted\n"
+      },
+      {
+        "name": "index",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "code": 0,
+        "output": "Generated report indexes are current.\n"
+      },
+      {
+        "name": "reporting",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "code": 0,
+        "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.141s\n\nOK\n"
+      },
+      {
+        "name": "archives",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "code": 0,
+        "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.940s\n\nOK\n"
+      },
+      {
+        "name": "whitespace",
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "code": 0,
+        "output": ""
+      }
+    ],
+    "local_links": 390,
+    "rendered_case_table_limits_and_navigation": true,
+    "strict_full_docs": {
+      "status": "completed",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 12.01203200101736,
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=90",
+        "--fsize=67108864",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-retrieval-controls-20261110-kdhwgl2u/logs/docs-resources.txt",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-retrieval-controls-20261110-kdhwgl2u/html"
+      ]
+    },
+    "original_warning_context": "Optional-beartype notices remain in raw docs/ordinary logs; strict Sphinx succeeds without installing a dependency.",
+    "original_failed_lint_and_AST_identical_import_spacing_fix_preserved": true
+  },
+  "published_driver_import_spacing_AST_overlay": {
+    "change": "Ruff import-group blank line only, after scientific receiving. Python AST unchanged; both original executions used the same byte-exact original driver retained in the full scientific archive.",
+    "original": {
+      "bytes": 2498,
+      "sha256": "a43f3dcc01036bd18f46838f2d435dfd326ab3060fc799ae7a979823262d2073"
+    },
+    "published": {
+      "bytes": 2499,
+      "sha256": "f5a93a9fac42baf3b04d1559a0f4952916fc09d8533ef0f2139d77e294b41eb2"
+    },
+    "same_AST_sha256": "ce39b09a29f083b632b1681dc6310d9b0f38b26c05a4b10a7e8b652505319b38",
+    "scientific_body_inputs_provider_or_runtime_changed": false,
+    "scientific_cases_reexecuted": false
+  },
+  "discussion_followup": "retrieval_record_20261110.json"
+}

@@ -1,0 +1,721 @@
+{
+  "schema": "pharmacophoremt.retrieval-controls@1",
+  "case_id": "typed-distance-retrieval-v1",
+  "declared_at_utc": "2026-11-10T01:21:55.937547+00:00",
+  "issue": 178,
+  "unit": "angstrom",
+  "metadata": {
+    "prepared_snapshot": "original-point-cases-v1",
+    "feature_definition": "classical_atomic_formal@1",
+    "frame": "original-per-occurrence",
+    "representation": "typed-center-occurrences@1",
+    "producer": "phmt-study-178"
+  },
+  "bin_widths": [
+    0.125,
+    0.5,
+    1.0
+  ],
+  "label_map": {
+    "P": "positive charge",
+    "N": "negative charge",
+    "H": "hydrophobicity",
+    "A": "hb acceptor"
+  },
+  "records": [
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:identity",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:proper-motion",
+      "features": [
+        [
+          "P",
+          [
+            8,
+            -4,
+            2
+          ]
+        ],
+        [
+          "N",
+          [
+            8,
+            -2.75,
+            2
+          ]
+        ],
+        [
+          "H",
+          [
+            4.75,
+            -4,
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:permuted-motion",
+      "features": [
+        [
+          "H",
+          [
+            4.75,
+            -4,
+            2
+          ]
+        ],
+        [
+          "P",
+          [
+            8,
+            -4,
+            2
+          ]
+        ],
+        [
+          "N",
+          [
+            8,
+            -2.75,
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:same-bin-impossible",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.75,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:cross-bin-feasible",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            2.0625,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:gross-stretch",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            2.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            6.5,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:noncoplanar-reflection",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            -1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            0,
+            0,
+            5.25
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "original-point-cases",
+      "occurrence_key": "source:duplicate-occurrence",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "same/source",
+      "occurrence_key": "repeat=\u03b1",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "same/source",
+      "occurrence_key": "wrong-kind",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "same/source",
+      "occurrence_key": "collinear",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            2.5,
+            0,
+            0
+          ]
+        ]
+      ]
+    },
+    {
+      "source_key": "binary-boundary",
+      "occurrence_key": "source:association-boundary",
+      "features": [
+        [
+          "P",
+          [
+            -1.2500000000000022,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            11.250000000000002,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            10,
+            0
+          ]
+        ]
+      ]
+    }
+  ],
+  "queries": [
+    {
+      "key": "identity",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "proper-motion",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "permuted-motion",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "same-bin-impossible",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "cross-bin-feasible",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.9375,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "gross-stretch",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "noncoplanar-reflection",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            0,
+            0,
+            5.25
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "duplicate-occurrence",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            1.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            3.25,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.0625,
+      "oracle": "exact-interior"
+    },
+    {
+      "key": "association-boundary",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            10,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            10,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 1.25,
+      "oracle": "numerical-candidate-band"
+    }
+  ],
+  "limits": {
+    "records": 12,
+    "features_per_record": 4,
+    "queries": 9,
+    "coordinate_abs_max": 16,
+    "max_lookup_bins": 64,
+    "max_candidates": 12,
+    "max_graph_nodes": 32,
+    "max_cliques": 32
+  },
+  "anchor_feature_indices": [
+    0,
+    1
+  ],
+  "numerical_guard_bins": 1,
+  "expected": {
+    "conservative_mappings_equal_exhaustive": true,
+    "original_occurrences_and_feature_mappings_preserved": true,
+    "exact_bin_control_misses_cross_bin_feasible_at_width": 1.0,
+    "same_bin_impossible_is_retained_before_reference_at_width": 1.0,
+    "incomplete_work_is_not_a_negative": true,
+    "stale_compatibility_is_refused": true
+  },
+  "scope": "Finite synthetic feature retrieval and unchanged full-query proposal reference; no molecules/fitted poses/production index/performance/general float recall or release qualification.",
+  "original_family_identity": {
+    "path": "tests/data/pmapper_controls/declaration.json",
+    "sha256": "e8d70074bb5759e1f35d66c2159a7a108c6604180357c9905272e7339b1e3b82"
+  },
+  "numerical_boundary": "Original177nm binary witness represented as explicit angstrom operands; independent exact physical distance oracle intentionally excludes this numerical-band family."
+}

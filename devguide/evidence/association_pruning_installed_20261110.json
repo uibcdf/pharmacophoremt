@@ -1,0 +1,241 @@
+{
+  "schema": "pharmacophoremt.association-pruning-installed@1",
+  "issue": 177,
+  "recorded_at_utc": "2026-11-10T01:29:41.918361+00:00",
+  "source_commit": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-association-pruning-20261110-_9wkzk5h/wheels/pharmacophoremt-0.4.0+218.g5515e93-py3-none-any.whl",
+    "bytes": 4533157,
+    "sha256": "75abed35365736fe159d34cf07734b113683e585af1aa263e15a2ca1df750405"
+  },
+  "version": "0.4.0+218.g5515e93",
+  "selected_cases_per_context": 141,
+  "new_cases": 13,
+  "existing_cases": 128,
+  "same_original_case_names_and_bodies": true,
+  "red_original_cases": 30,
+  "red_passed": 19,
+  "red_failed": 11,
+  "ordinary_cases_per_context": 8,
+  "ordinary_scientific_results_identical": true,
+  "original_producer_attribution_versions_preserved": {
+    "source": "0.4.0+134.gee5d9fa",
+    "installed": "0.4.0+218.g5515e93"
+  },
+  "metadata_postcheck_scope": "Initial private checker asserted identical attribution producer versions. Corrected only to expected source/installed version identities; all scientific fields and other attribution metadata agree. Original metadata-scope failure and subsequent private tuple/list JSON-roundtrip assertion failure retained; original scientific outputs unchanged, with no scientific rerun.",
+  "actual_attribution_per_ordinary_context": {
+    "items": 8,
+    "uses": 8,
+    "complete_payloads_in_archive": true
+  },
+  "verified_wheel_payloads_non_RECORD": 214,
+  "equal_runtime_body_files": 159,
+  "loaded_PHMT_modules_per_green_context": 148,
+  "provider_Python_files": 4593,
+  "selected_fixture_files_archived": 16,
+  "no_source_checkout_fallback": true,
+  "shared_prefix_and_foreign_work_preserved": true,
+  "fixture_source_metadata_exception": {
+    "declared_at_utc": "2026-11-10T01:16:33.374100+00:00",
+    "immutable_staged_files": 882,
+    "root_source_exception": "tests/test_reporting_protocol.py",
+    "reason": "Local issue inventory is updated after source qualification, before exact-owned build. This unselected module was neither imported nor executed by the scientific selections. All staged fixture bytes, actually selected scientific modules/helpers and every other original source/native/provider fence remain unchanged.",
+    "original_source_and_red_runs_preserved": true,
+    "scientific_bodies_or_inputs_changed": false
+  },
+  "resources": {
+    "red": {
+      "exit_code": 1,
+      "seconds": 10.413340319995768,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 309919744
+    },
+    "source": {
+      "exit_code": 0,
+      "seconds": 68.31029993999982,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 375693312
+    },
+    "installed": {
+      "exit_code": 0,
+      "seconds": 70.540683987987,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 376737792
+    },
+    "source-ordinary": {
+      "exit_code": 0,
+      "seconds": 5.557321511005284,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 170196992
+    },
+    "installed-ordinary": {
+      "exit_code": 0,
+      "seconds": 5.961211594985798,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 170283008
+    },
+    "build-owned": {
+      "exit_code": 0,
+      "seconds": 6.1765694489877205,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 290369536
+    }
+  },
+  "full_evidence": {
+    "path": "association_pruning_installed_20261110_full.json.gz",
+    "compressed_bytes": 1077394,
+    "compressed_sha256": "66d08e36a475e7a855eff88d9eefbc1f8f9474df28f0102206398c74a27323b6",
+    "uncompressed_bytes": 12340947,
+    "uncompressed_sha256": "b467820c1624fe411cded0e4fad09c79da7ed96055da537b4a93b126053760e0"
+  },
+  "guard": "tests/test_pair_distance_pruning.py::test_association_boundary_retains_an_accepted_mapping",
+  "normative": "devguide/pair_distance_pruning.md",
+  "complete_source_or_public_installed_platform_or_release_qualified": false,
+  "performance_measured": false,
+  "stopped_148_165_retried": false,
+  "retention": {
+    "capsule": "build/phmt-association-pruning-20261110-_9wkzk5h",
+    "workspace": "/tmp/phmt-association-receiving-20261110-xh4437de",
+    "review": "2026-11-24"
+  },
+  "final_local_receiving": {
+    "checks": [
+      {
+        "name": "index-generate",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "code": 0,
+        "output": ""
+      },
+      {
+        "name": "ruff",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "check",
+          "."
+        ],
+        "code": 0,
+        "output": "All checks passed!\n"
+      },
+      {
+        "name": "format",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "code": 0,
+        "output": "458 files already formatted\n"
+      },
+      {
+        "name": "index",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "code": 0,
+        "output": "Generated report indexes are current.\n"
+      },
+      {
+        "name": "reporting",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "code": 0,
+        "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.141s\n\nOK\n"
+      },
+      {
+        "name": "archives",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "code": 0,
+        "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.940s\n\nOK\n"
+      },
+      {
+        "name": "whitespace",
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "code": 0,
+        "output": ""
+      }
+    ],
+    "strict_full_docs_exit_code": 0,
+    "links": 390,
+    "details": "retrieval_controls_20261110_receiving.json.gz",
+    "scope": "Shared final local code/governance/archive/docs receiving after177/178; original141-case scientific measurements remain untouched."
+  }
+}

@@ -1,9 +1,9 @@
 ---
 summary: Preserve final-accepted boundary candidates in association-graph proposals.
 issue: uibcdf/pharmacophoremt#177
-status: partial
+status: resolved
 opened: 2026-11-10
-closed:
+closed: 2026-11-10
 severity: medium
 verification: reproduced
 area: [screening, numerics]
@@ -37,3 +37,24 @@ identical with actual8-item/8-use attribution. The graph reuses the existing
 candidate predicate; final matching/radii and finite-family/budget meanings do
 not change. Original source/native/provider identities and failure evidence are
 preserved. New exact-owned receiving is the remaining bounded acceptance gate.
+
+## Exact-owned resolution — 2026-11-10 UTC
+
+The same141original selected bodies and all eight ordinary scientific results
+pass from source5515e93 and its exact owned wheel0.4.0+218.g5515e93. All214
+non-RECORDpayloads,159runtime bodies and148loaded PHMT module origins verify.
+The [installed receipt](../evidence/association_pruning_installed_20261110.json)
+retains complete original red/source/installed outputs, actual attribution,
+source/native/provider/fixture identities and original postcheck failures.
+The initial private comparison incorrectly required identical attribution
+producer-version labels; a later assertion compared Python tuples with decoded
+JSON lists. Only those receiving assertions are corrected, preserving every
+scientific result and both original producer payloads. Science is not rerun.
+
+The durable original binary guard protects final-accepted candidate retention,
+with independent Fraction identities; the additional real public ion guard
+protects that relationship through recognition and public final evaluation.
+Existing physical mismatches and graph/clique limits remain authoritative.
+This closes the bounded core correction; full source/public-platform/release
+qualification remains #9/#23-owned. #148/#165 stay stopped. #178 now owns the
+separate prospective finite retrieval experiment against this reference.

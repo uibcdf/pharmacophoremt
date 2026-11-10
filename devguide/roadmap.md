@@ -32,11 +32,22 @@ an unresolved provider feature does not stop independent PHMT contracts, example
 user testing or result interpretation.
 
 
+
+The [#178 finite retrieval controls](retrieval_candidate_controls.md) receive
+all27query/width combinations identically from source/unchanged owned218, with
+96independent strict-interior mapping checks per context and13offline guards.
+Original occurrence/mapping coverage, compatibility refusal and incomplete/unknown
+work remain explicit. The neighboring-bin prototype preserves this finite family;
+the exact-bin control loses candidates. The [public validation case](../docs/content/validation/retrieval_controls.md)
+records workload counts without a speed claim. No production index is selected;
+prepared-feature/provider compatibility, wider numerical and cost receiving stay
+open under the mature0.x plan. No molecular operation is added.
+
 The [#177 association correction](pair_distance_pruning.md#association-graph-correction--177-2026-11-10-utc)
 advances milestone1 before using that route as the retrieval reference. Its
 original binary/public-ion witness exposes11association failures; the corrected
-source passes141selected cases with eight ordinary mappings preserved. Exact
-new-owned receiving is pending. No physical-radius/final-matcher or dependency
+source passes141selected cases with eight ordinary mappings preserved. The same141bodies and eight ordinary scientific results also pass from exact
+5515e93 / owned218, with214payloads/159runtime bodies/148loaded origins verified. No physical-radius/final-matcher or dependency
 change and no performance/biological qualification follows.
 
 The [#175 pmapper analytical comparison](pmapper_analytical_controls.md) receives

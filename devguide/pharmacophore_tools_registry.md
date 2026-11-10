@@ -292,3 +292,15 @@ preserve scientific results and independent publication readback. Original
 source-only records stay dated and intact. Disposition is Under study with a
 selected analytical comparison executed, not runtime/index/dependency adoption.
 The upstream report is prepared internally, not submitted externally.
+
+## PHMT retrieval experiment following pmapper — 2026-11-10
+
+The separate [#178 study](retrieval_candidate_controls.md) uses the #175 lessons
+to qualify a finite own typed-distance shortlist against exhaustive PHMT proposals.
+Pmapper is not executed by this follow-up. All27combinations preserve full original
+mappings from source and unchanged owned218;96independent rational mapping checks
+agree per context. The unsafe exact-bin control misses candidates; numerical
+bands, original occurrence coverage, compatibility and incomplete work stay explicit.
+The [receipt](evidence/retrieval_controls_20261110.json) and validation case do not
+adopt a production index or claim speed/biological/public-platform qualification.
+The related #177 graph boundary correction separately passes141source/owned cases.

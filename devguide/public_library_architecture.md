@@ -317,3 +317,22 @@ reduction and fingerprint collisions remain separate coverage/identity choices.
 This refines the existing prospective architecture under#108/#128; it adds no
 new public API, storage schema, molecular collection or dependency. Molecular
 source/preparation ownership remains MolSysMT#624.
+
+## Finite retrieval decision — #178, 2026-11-10 UTC
+
+The [typed-distance experiment](retrieval_candidate_controls.md) receives all27
+finite query/width combinations from source and unchanged owned218, preserving
+complete original mappings against exhaustive public proposals and96independent
+strict-interior mapping controls per context. Exact-bin lookup loses candidates;
+a neighboring-bin prototype with an explicit guard preserves this declared
+family. Source/occurrence identities and compatibility/incomplete-state controls
+are part of the measured case, not optional result annotations.
+
+Retain this as an admitted analytical reference prototype, not a selected
+production index or a universal numerical recall claim. Future public retrieval
+must bind prepared-feature snapshots and exact predicate/producer definitions,
+name/prove its wider numerical domain, preserve original mappings and unknown
+work, and measure build/storage/cold/repeated-query costs against the unchanged
+reference before selecting an implementation. These measurements are pending;
+smaller candidate counts alone establish no acceleration. Molecular collection/
+preparation ownership remains MolSysMT#624. No public name/schema is frozen here.

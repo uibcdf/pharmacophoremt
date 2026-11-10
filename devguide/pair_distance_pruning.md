@@ -122,3 +122,17 @@ entry margin, and CPU120/wall180 limits. No kernel aggregate memory/swap/tasks/
 quota or reservation guarantee is available. Source scientific own-group RSS
 peaks at375693312bytes, below its unchanged limit. No manager/native provider
 update, #148/#165 retry or performance claim follows.
+
+### Exact-owned receiving for #177
+
+The [installed receipt](evidence/association_pruning_installed_20261110.json)
+receives the same141original bodies from exact source5515e93 / owned218, with
+all214installed non-RECORDpayloads,159runtime files and148loaded PHMT module
+origins verified. All eight ordinary scientific results are identical. Both
+original attribution payloads retain their actual producer versions. The two
+private metadata/JSON-shape postcheck failures are preserved; only receiving
+assertions change and no scientific body is rerun. The qualified archive retains
+original failures, successful cases, source/provider/native identities and
+actual eight-item/eight-use ordinary capture. This resolves the bounded#177
+bridge; supported public-platform and later-head CI remain separate. The
+unshipped finite retrieval study is owned separately by#178.

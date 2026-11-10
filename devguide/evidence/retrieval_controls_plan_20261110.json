@@ -1,0 +1,161 @@
+{
+  "schema": "pharmacophoremt.retrieval-controls-plan@1",
+  "issue": 178,
+  "declared_at_utc": "2026-11-10T01:29:16.053183+00:00",
+  "parent_runtime_source": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+  "declaration": {
+    "path": "tests/data/retrieval_controls/declaration.json",
+    "bytes": 11691,
+    "sha256": "c0b3024f9789656b9dbb799f17b0523233289ca3532b26ca5120118ab9d98877"
+  },
+  "prospective_inputs_before_implementation": {
+    "bytes": 11691,
+    "sha256": "c0b3024f9789656b9dbb799f17b0523233289ca3532b26ca5120118ab9d98877"
+  },
+  "workspace": "/tmp/phmt-retrieval-receiving-20261110-q0_0fhrm",
+  "fixtures": "/tmp/phmt-retrieval-receiving-20261110-q0_0fhrm/fixtures",
+  "fixture_files": {
+    "phmt_test_support/__init__.py": {
+      "bytes": 74,
+      "sha256": "e7d8385b8913453b4690e55372f4a1937b927dacaf18a625a25a81090ef74bf2"
+    },
+    "phmt_test_support/retrieval_controls.py": {
+      "bytes": 12935,
+      "sha256": "ed1e94f8eeb81d927016b675b908ca9ab3d8e3ae18e0258bdee38846c2107597"
+    },
+    "phmt_test_support/pmapper_controls.py": {
+      "bytes": 9538,
+      "sha256": "e2a735922c43268e613914881a04af4ab910d9e7dbb6bc2e787f757a45cb8e4b"
+    },
+    "phmt_test_support/absence_inputs.py": {
+      "bytes": 5917,
+      "sha256": "2853a9abe9c9a1491323acb2f636b48a2af205c3cf268556a8cfae3e46f5707e"
+    },
+    "devtools/qualify_retrieval_controls.py": {
+      "bytes": 2498,
+      "sha256": "a43f3dcc01036bd18f46838f2d435dfd326ab3060fc799ae7a979823262d2073"
+    },
+    "tests/test_retrieval_control_oracles.py": {
+      "bytes": 8491,
+      "sha256": "e9e0e7211ced37093aef00c450a29578af803fe26ad3948553d35a178b6dfcba"
+    },
+    "tests/data/retrieval_controls/declaration.json": {
+      "bytes": 11691,
+      "sha256": "c0b3024f9789656b9dbb799f17b0523233289ca3532b26ca5120118ab9d98877"
+    },
+    "tests/data/pmapper_controls/declaration.json": {
+      "bytes": 8381,
+      "sha256": "e8d70074bb5759e1f35d66c2159a7a108c6604180357c9905272e7339b1e3b82"
+    }
+  },
+  "provider_mapping": {
+    "ackredit": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit",
+    "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest",
+    "depdigest": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest",
+    "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+    "molsysviewer_molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysviewer_molsysmt",
+    "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor",
+    "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+    "sabueso": "/tmp/phmt-pmapper-controls-receiving-20261110-zvhd1j_i/providers/sabueso",
+    "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor",
+    "topomt": "/fast_data/home/liliana/repos@uibcdf/topomt/topomt"
+  },
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+  },
+  "shared_sdk": {
+    "root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk",
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "modules": [
+      "devtools",
+      "devtools.scripts",
+      "devtools.scripts.installed_imports",
+      "devtools.scripts.noarch_conda",
+      "devtools.scripts.conda_release_contract",
+      "devtools.scripts.verify_public_conda"
+    ],
+    "files": {
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/installed_imports.py": {
+        "bytes": 4637,
+        "sha256": "ff23458015bb7ce83bc3eea36571c4294bed09fff948e8eb6d9bcb3a0615fa3c"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/noarch_conda.py": {
+        "bytes": 24232,
+        "sha256": "d62e0dd42ca04f1381b94b1a3c8ca5cc312db72fb946e2c759d92a3b4eb7bf07"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/conda_release_contract.py": {
+        "bytes": 24830,
+        "sha256": "ce166c0990f386eb5b020192ef9b8d8381a3da47aa8d95507a6adb51d30009f3"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/verify_public_conda.py": {
+        "bytes": 10111,
+        "sha256": "bb743343ec7a58659b90e6cbae1a06380c7fd8e2328b1b7c11c85e52fc890567"
+      }
+    },
+    "operation": "devtools.scripts.installed_imports.check_installed_imports",
+    "scope": "Reuse the qualified pure loaded-runtime origin checker. Case-specific guarded startup, prefix/provider admission, original-body execution and wheel-byte validation retain their own roles."
+  },
+  "site_packages": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages",
+  "provider_context": "Fresh selected-call admission, no provider update; private Sabueso snapshot870bodies preserved. Native and runtime bodies unchanged from177. No molecular operation requested.",
+  "resources": {
+    "scheduler": "Slurm clients present/no allocation; prior same-session controller access refused; no new scheduler, acquisition, compiler, manager or budget attempt.",
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "RLIMIT_DATA": 536870912,
+    "RLIMIT_AS": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "physical_reserve_fraction": 0.2,
+    "entry_own_envelope_bytes": 1610612736,
+    "CPU_seconds": 120,
+    "wall_seconds": 180,
+    "aggregate_memory_swap_tasks_cpu_quota_enforced": false,
+    "capacity_reserved": false
+  },
+  "expected": {
+    "source_queries": 9,
+    "bin_widths": 3,
+    "source_complete_rows": 27,
+    "original_occurrences": 12,
+    "strict_interior_rational_mapping_comparisons": 96,
+    "maximum_public_reference_calls": 432,
+    "all_conservative_mappings_equal_exhaustive": true,
+    "exact_bin_cross_bin_control_misses": true,
+    "same_bin_false_positive_is_filtered": true,
+    "molecular_inputs_and_operations": 0,
+    "performance_measured": false
+  },
+  "control_budget": "After thirteen offline guards, one source and one unchanged-owned complete experiment; preserve partial/errors and stop on source/native/origin drift or resource pressure.",
+  "support_review": {
+    "PyUnitWizard": "Existing explicit length conversion boundary reused.",
+    "ArgDigest_SMonitor": "Existing public graph contracts/diagnostics unchanged; no new public argument.",
+    "DepDigest_optional_engine": "No new engine/dependency/access route.",
+    "Ackredit": "Existing runtime tracking and actual application-owned capture; no instrumentation per pair.",
+    "molecular_owner": "Existing supported MolSysMT recognition/fitting only; no molecular implementation in consumer."
+  },
+  "retention_review": "2026-11-24",
+  "scope": "Finite case prototype; no production index, arbitrary-float recall, molecular collection, speed/prediction/public-platform or release claim.148/165remainstopped.",
+  "owned_artifact": {
+    "source_commit": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+    "version": "0.4.0+218.g5515e93",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-association-pruning-20261110-_9wkzk5h/wheels/pharmacophoremt-0.4.0+218.g5515e93-py3-none-any.whl",
+      "bytes": 4533157,
+      "sha256": "75abed35365736fe159d34cf07734b113683e585af1aa263e15a2ca1df750405"
+    },
+    "target": "/tmp/phmt-association-installed-20261110-5i8xg9n4/installed"
+  },
+  "projection": "Index of prospectively frozen complete original plan; full original bytes retained in capsule and subsequent hash-qualified archive.",
+  "full_plan_identity": {
+    "bytes": 836242,
+    "sha256": "0524ca8d232606b227c27758277e18cb7d413efb30e927c08116b53d5fe0b25a"
+  },
+  "provider_Python_files": 4593,
+  "runtime_body_files": 159
+}

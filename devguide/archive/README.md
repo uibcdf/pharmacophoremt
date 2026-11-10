@@ -5,12 +5,13 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (116)
+### Resolved (118)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
 - [`analytical_upper_bound_platform.md`](analytical_upper_bound_platform.md) — [#143](https://github.com/uibcdf/pharmacophoremt/issues/143) — Diagnose the exact upper-bound analytical comparison failure on macOS. *(resolved, reproduced)*
 - [`aromatic_attribution_subprocess_import.md`](aromatic_attribution_subprocess_import.md) — [#48](https://github.com/uibcdf/pharmacophoremt/issues/48) — Aromatic attribution-absence subprocess assumed an eagerly imported screening namespace. *(resolved, measured)*
+- [`association_distance_roundoff.md`](association_distance_roundoff.md) — [#177](https://github.com/uibcdf/pharmacophoremt/issues/177) — Preserve final-accepted boundary candidates in association-graph proposals. *(resolved, reproduced)*
 - [`bedroc_small_alpha.md`](bedroc_small_alpha.md) — [#155](https://github.com/uibcdf/pharmacophoremt/issues/155) — Preserve finite unbiased BEDROC scores for every valid positive alpha. *(resolved, measured)*
 - [`browse_saved_sources.md`](browse_saved_sources.md) — [#170](https://github.com/uibcdf/pharmacophoremt/issues/170) — Browse exact original source labels and declared work through the saved reader. *(resolved, measured)*
 - [`cached_generation_profile.md`](cached_generation_profile.md) — [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) — Profile fixed-work cached generation and hand generic costs to their owners. *(resolved, measured)*
@@ -21,6 +22,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(resolved, measured)*
 - [`compare_pmapper_screening_stages.md`](compare_pmapper_screening_stages.md) — [#175](https://github.com/uibcdf/pharmacophoremt/issues/175) — Execute source-pinned pmapper and PHMT analytical screening-stage controls. *(resolved, measured)*
 - [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(resolved, reproduced)*
+- [`compare_typed_distance_retrieval.md`](compare_typed_distance_retrieval.md) — [#178](https://github.com/uibcdf/pharmacophoremt/issues/178) — Compare bounded typed-distance retrieval with exhaustive full-query proposals. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*

@@ -9,6 +9,30 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#178 finite retrieval](retrieval_candidate_controls.md) completes the next
+milestone5/6 experiment after the core correction below. Twelve original
+occurrences, nine query occurrences (four distinct configurations) and three bin
+widths give identical full mappings in all27combinations from source and exact
+unchanged owned218. All96strict-interior rational mapping comparisons agree per
+context, and thirteen offline identity/compatibility/incomplete-work guards pass.
+The [public case](../docs/content/validation/retrieval_controls.md) and
+[original receipt/archive](evidence/retrieval_controls_20261110.json) retain
+exact sources/providers/native/fixtures, complete actual attribution and original
+occurrence mappings. The unsafe exact-bin control misses valid candidates;
+the neighboring-bin prototype with an explicit guard preserves this finite
+family. The reference still removes prefilter false positives. All214payloads/
+159runtime bodies/146loaded PHMT origins verify, with zero molecular operations.
+The [architecture decision](public_library_architecture.md#finite-retrieval-decision--178-2026-11-10-utc)
+keeps production-index selection and wider numerical/cost qualification open.
+
+Next: declare the prepared-feature snapshot and predicate/producer compatibility
+contract required for a public retrieval asset; retain MolSysMT#624 collection
+ownership and receive that provider boundary before a real-library index. Expand
+the numerical/identity domain with independent witnesses, then measure equivalent
+build/storage/cold/repeated-query workloads under admitted resources. Counts here
+are not speed evidence. Continue human receiving separately. #148/#165 remain
+stopped; full later-head/public-platform/release gates remain open under#9/#23.
+
 [#177 association admission](pair_distance_pruning.md#association-graph-correction--177-2026-11-10-utc)
 corrects a core inconsistency discovered while preparing retrieval controls.
 The graph route now reuses the existing conservative triplet candidate predicate;
@@ -17,8 +41,12 @@ physical radii and final matching stay unchanged. Original red evidence has
 original ordinary-stage mappings unchanged and actual attribution retained.
 The [source receipt](evidence/association_pruning_source_20261110.json) keeps
 original source/provider/native identities and independent public ion evaluation.
-Exact new-owned-artifact receiving is pending. Next: receive those same bodies
-from the exact source wheel, then declare the finite retrieval experiment against
+The [installed receipt](evidence/association_pruning_installed_20261110.json)
+receives the same141bodies and eight ordinary scientific results from exact
+5515e93 / owned218, with214payloads/159runtime bodies/148loaded origins verified.
+Original red results and metadata/JSON-shape postcheck failures remain archived;
+no scientific rerun follows those receiving corrections. The bounded#177bridge
+resolves. The separate #178 retrieval experiment above is now received against
 this corrected reference. #148/#165 remain stopped.
 
 [#175 pmapper analytical controls](pmapper_analytical_controls.md) complete the
@@ -41,13 +69,11 @@ has independent exact API readback, preserving all original text. The
 unsubmitted. No production adapter/dependency/index or performance/biological
 qualification is added.
 
-Next: use these controls to declare a finite PHMT retrieval experiment against
-the unchanged exhaustive tolerance reference, with original occurrence coverage,
-mutation invalidation and explicit incompleteness; obtain an owning issue and
-prospective acceptance before implementing or claiming an index. Continue the
-independent MolSysMT#624 collection route and representative human receiving.
-Do not retry #148/#165 in this unmanaged resource context. Full source remains
-af408e7; later exact-head, public/installed-platform and release gates stay open.
+The declared follow-up is now received under #177/#178 above. Molecular
+collection receiving, broader numerical/cost and representative human work retain
+their separate gates. Full source remains af408e7; later exact-head,
+public/installed-platform and release qualification stay open. #148/#165 remain
+stopped in this unmanaged resource context.
 
 [#174 pinned pmapper study](pmapper_signature_review.md) adds an eleventh tool
 family to the comparative registry. Ten original source files at2f77e648/1.1.3
