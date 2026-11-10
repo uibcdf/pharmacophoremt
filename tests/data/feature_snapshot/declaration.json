@@ -1,0 +1,201 @@
+{
+  "schema": "pharmacophoremt.feature-snapshot-case@1",
+  "issue": 180,
+  "declared_at_utc": "2026-11-10T05:23:54.605434+00:00",
+  "cases": [
+    {
+      "key": "ions",
+      "smiles": "[Na+].[Cl-].[K+]",
+      "coordinates_nm": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.5,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ]
+      ],
+      "atom_types": [
+        "Na",
+        "Cl",
+        "K"
+      ],
+      "formal_charges": [
+        1,
+        -1,
+        1
+      ],
+      "n_bonds": 0
+    },
+    {
+      "key": "water",
+      "smiles": "[2H]O[3H]",
+      "coordinates_nm": [
+        [
+          0.1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0.1,
+          0
+        ]
+      ],
+      "atom_types": [
+        "H",
+        "O",
+        "H"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0
+      ],
+      "n_bonds": 2
+    },
+    {
+      "key": "ring",
+      "smiles": "c1ccccc1",
+      "coordinates_nm": [
+        [
+          0.14,
+          0,
+          0
+        ],
+        [
+          0.07,
+          0.12,
+          0
+        ],
+        [
+          -0.07,
+          0.12,
+          0
+        ],
+        [
+          -0.14,
+          0,
+          0
+        ],
+        [
+          -0.07,
+          -0.12,
+          0
+        ],
+        [
+          0.07,
+          -0.12,
+          0
+        ]
+      ],
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_bonds": 6
+    }
+  ],
+  "requests": [
+    {
+      "key": "charges",
+      "parent": "ions",
+      "features": [
+        "positive charge",
+        "negative charge",
+        "aromatic ring"
+      ],
+      "expected_counts": {
+        "positive charge": 2,
+        "negative charge": 1,
+        "aromatic ring": 0
+      }
+    },
+    {
+      "key": "empty",
+      "parent": "ions",
+      "features": [
+        "aromatic ring"
+      ],
+      "expected_counts": {
+        "aromatic ring": 0
+      }
+    },
+    {
+      "key": "donors",
+      "parent": "water",
+      "features": [
+        "hb donor",
+        "aromatic ring"
+      ],
+      "expected_counts": {
+        "hb donor": 2,
+        "aromatic ring": 0
+      }
+    },
+    {
+      "key": "aromatic",
+      "parent": "ring",
+      "features": [
+        "aromatic ring"
+      ],
+      "expected_counts": {
+        "aromatic ring": 1
+      }
+    }
+  ],
+  "unit_contexts": [
+    "nm",
+    "pm"
+  ],
+  "coordinate_tolerance_nm": 1e-12,
+  "direction_tolerance": 1e-12,
+  "wire_profile": {
+    "schema": "pharmacophoremt.feature-snapshot-study@1",
+    "profile": "native-classical-single-frame@1",
+    "encoding": "UTF-8 exact canonical finite JSON through public pharmacophoremt_results.canonical_json",
+    "max_bytes": 2097152,
+    "max_atoms": 256,
+    "max_features": 64,
+    "selection": "all",
+    "structure_index": 0,
+    "chemical_state": 0,
+    "coordinate_policy": "cartesian-no-imaging",
+    "parent_trust": "caller-verified-artifact/unchanged-source",
+    "inspection": "structural/content integrity only; source authenticity and quantity semantics are not inferred",
+    "reconstruction": "known QuantityRecord fields with explicit field/unit handshake and native inventory validation"
+  },
+  "preparation": "Public MolSysMT construction; explicit aromaticity perception and annotation for ring only; ions/water retain explicit nonaromatic metadata from construction. Native H5MSM write/read once; freeze original bytes/maps before capture. No molecular parser or preparation fallback.",
+  "scope": "Three original synthetic molecular artifacts/four requests/two unit contexts; source+same-owned prototype receiving, no generic collection/public API/index/biological or performance gate.",
+  "stopped": [
+    148,
+    165
+  ],
+  "preparation_revision": 2,
+  "revision_reason": "Original preparation stopped before any artifact: unsupported aromaticity perception on Na/K. Corrected case orchestration omits unneeded perception for nonaromatic ions/water; original failure retained."
+}

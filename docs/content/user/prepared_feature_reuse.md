@@ -39,8 +39,10 @@ unchanged. Keep the preparation and original source/occurrence information with
 your application. Source pointers, filenames and version labels are insufficient
 for automatic persistent reuse.
 
-Persistent feature snapshots and automatic compatibility preflight are the next
-design step. Their [developer contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/prepared_feature_snapshot_contract.md)
+A [bounded snapshot study](../validation/feature_snapshots.md) now checks native
+capture, structural inspection and explicit quantity reconstruction. It remains
+an unshipped prototype. Persistent public snapshots and automatic compatibility
+preflight retain their own acceptance gates. The [developer contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/prepared_feature_snapshot_contract.md)
 requires a verified prepared parent, explicit request coverage, complete ordered
 feature evidence, units and predicate/producer compatibility. Molecular source
 preparation and collection lifetimes remain MolSysMT-owned. The planned guided

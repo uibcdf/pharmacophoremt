@@ -369,3 +369,17 @@ No public snapshot codec, automatic preflight, molecular collection or index is
 implemented here; no scientific study/provider/source environment is rerun or
 modified. The next gate is a bounded capture/inspection prototype with its own
 source/exact-owned receiving and preserved native quantity/provenance semantics.
+
+## Native-feature snapshot receiving — 2026-11-10 UTC
+
+[#180](../feature_snapshot_prototype.md) now receives the bounded prototype:
+32guards and eight complete nm/pm rows pass per source/unchanged-owned218context.
+Two fresh readers each inspect all16original snapshots with scientific imports
+blocked, preserving original producer/attribution and empty-family coverage.
+The [24-case mapping](../examples/feature_snapshot_prototype_coverage.json) keeps
+3covered-in-profile/14partial/7deferred; parent trust remains caller-declared,
+not authenticated. The [original evidence](../evidence/feature_snapshot_prototype_20261110.json)
+retains failed preparation/control attempts and exact bodies/native/fixtures.
+Next qualify bounded retrieval ingestion. Public snapshot/preflight/index,
+MolSysMT#624 collection/lifetime, representative humans and full supported
+delivery remain open; #108 is not complete and #148/#165 remain stopped.

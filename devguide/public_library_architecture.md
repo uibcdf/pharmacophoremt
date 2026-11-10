@@ -355,3 +355,16 @@ run schemas, index=None and independent historical reading remain unchanged.
 The consumer handoff stays within MolSysMT#624; no molecular provider API/format
 or delivery schedule is imposed. This receives a design contract only, with no
 new public snapshot codec, automatic compatibility detector or production index.
+
+## Bounded native capture decision — #180, 2026-11-10 UTC
+
+The [prototype](feature_snapshot_prototype.md) and [original receiving](evidence/feature_snapshot_prototype_20261110.json)
+qualify capture/structural inspection/explicit reconstruction of four original
+requests under nm/pm policies from source and unchanged owned218.32guards pass
+per context; two fresh readers inspect all16snapshots without scientific imports.
+Preserve original maps/occurrences, requested-empty coverage and actual producer
+and attribution. A structural digest does not authenticate molecular origin.
+The24design cases map to3covered-in-profile/14partial/7deferred; automated reuse,
+public storage/API, retrieval/plan compatibility and atomic refresh are not
+implemented. Next qualify bounded snapshot ingestion into retrieval against the
+exhaustive reference. MolSysMT#624 still owns generic collection/lifetime support.

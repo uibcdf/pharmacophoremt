@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (119)
+### Resolved (120)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -103,6 +103,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`receive_aromatic_nitrogen_receptor_directions.md`](receive_aromatic_nitrogen_receptor_directions.md) — [#105](https://github.com/uibcdf/pharmacophoremt/issues/105) — Receive already defined native aromatic-nitrogen acceptor directions in an explicit receptor profile. *(resolved, measured)*
 - [`receive_chemical_domain_separation.md`](receive_chemical_domain_separation.md) — [#69](https://github.com/uibcdf/pharmacophoremt/issues/69) — Receive MolSysMT chemical-domain separation with unchanged scientific profiles. *(resolved, measured)*
+- [`receive_feature_snapshot_prototype.md`](receive_feature_snapshot_prototype.md) — [#180](https://github.com/uibcdf/pharmacophoremt/issues/180) — Receive bounded native feature capture, inspection and explicit reconstruction. *(resolved, measured)*
 - [`receptor_chain_metadata_ownership.md`](receptor_chain_metadata_ownership.md) — [#104](https://github.com/uibcdf/pharmacophoremt/issues/104) — Delegate deposited receptor chain metadata inspection to public MolSysMT getters. *(resolved, measured)*
 - [`receptor_contribution_execution.md`](receptor_contribution_execution.md) — [#90](https://github.com/uibcdf/pharmacophoremt/issues/90) — Execute the frozen paired receptor constraint-contribution comparison. *(resolved, measured)*
 - [`receptor_contribution_plan.md`](receptor_contribution_plan.md) — [#89](https://github.com/uibcdf/pharmacophoremt/issues/89) — Freeze a paired receptor constraint-contribution development protocol and matrix. *(resolved, measured)*

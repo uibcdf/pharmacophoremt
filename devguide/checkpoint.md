@@ -9,24 +9,29 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#179 feature-snapshot contract](prepared_feature_snapshot_contract.md) closes
-the next design gate: prepared-parent/request/ordered-feature/predicate/asset/
-plan boundaries, 24 worked reuse/unknown/rebuild decisions and an explanation of
-[current manual reuse](../docs/content/user/prepared_feature_reuse.md). The
-[source-audit receipt](evidence/feature_snapshot_contract_20261110.json) retains
-nine inspected source identities, unchanged159runtime bodies and the concrete
-same-method-name/different-implementation #177 witness. The provider acceptance
-handoff to [MolSysMT#624](https://github.com/uibcdf/molsysmt/issues/624#issuecomment-6759334496)
-has independent exact readback; that molecular contract remains unreceived.
-No runtime API/codec/automatic compatibility/index is implemented by this design
-increment, and no scientific study is rerun.
+[#180 native-feature snapshots](feature_snapshot_prototype.md) receives the
+next implementation gate after [#179](prepared_feature_snapshot_contract.md).
+The unshipped capture/inspection/reconstruction tool passes32guards per source
+and exact-owned218context, with8complete nm/pm rows each. Charge centers/signs,
+shared-center donor directions, aromatic normals, original maps and empty
+coverage agree. Two fresh readers each inspect all16original snapshots with
+scientific imports blocked; reading/reconstruction creates no new original-work
+credit. The [receipt/archive](evidence/feature_snapshot_prototype_20261110.json)
+retains original failures, actual attribution/version differences,214wheel
+payloads/159runtime bodies/4594provider files and all frozen parent/case inputs.
 
-Next: declare a bounded native-feature capture/inspection prototype using the
-existing public producer and quantity codec, with a fixed wire profile, explicit
-parent trust/preconditions, requested-versus-empty coverage and the24design
-acceptance cases. Receive source and exact-owned bodies before public promotion.
-Keep provider collection/lifetime, wider numerical/cost, human/public-platform/
-release gates separate; #148/#165 remain stopped.
+The [public analytical case](../docs/content/validation/feature_snapshots.md)
+and [24-case mapping](examples/feature_snapshot_prototype_coverage.json) distinguish
+3covered-in-profile/14partial/7deferred. Parent trust remains an explicit caller
+precondition, not authenticated source identity. No stable public snapshot API,
+automatic compatibility/index/plan or generic molecular collection is delivered.
+MolSysMT#624 remains unreceived; full later-head/platform/human/release gates
+retain their separate owners and #148/#165 remain stopped.
+
+Next: declare a bounded experiment ingesting these frozen feature occurrences
+into the finite retrieval prototype, retaining original parent/request/occurrence
+maps and exhaustive-reference equality. Receive source/exact-owned before any
+public API/index promotion; wider numerical/cost qualification stays separate.
 
 [#178 finite retrieval](retrieval_candidate_controls.md) completes the next
 milestone5/6 experiment after the core correction below. Twelve original
@@ -44,8 +49,8 @@ family. The reference still removes prefilter false positives. All214payloads/
 The [architecture decision](public_library_architecture.md#finite-retrieval-decision--178-2026-11-10-utc)
 keeps production-index selection and wider numerical/cost qualification open.
 
-The next contract gate is now received under#179above; capture/preflight
-implementation and MolSysMT#624 provider receiving remain separate. Expand the
+The contract and bounded capture gates are received under#179/#180above;
+automatic preflight and MolSysMT#624 provider receiving remain separate. Expand the
 numerical/identity domain and measure equivalent build/storage/cold/repeated-query
 workloads under admitted resources before index selection. Counts here are not
 speed evidence. Human and full later-head/public-platform/release gates remain

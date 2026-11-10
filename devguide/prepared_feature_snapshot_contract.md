@@ -180,3 +180,15 @@ its choice of API/format/backend and no delivery schedule is imposed.
 This increment is design/source inspection only. It does not rerun #175/#177/#178,
 execute a molecular calculation, create scientific attribution, qualify an
 installed snapshot implementation or modify a provider/shared environment.
+
+## Bounded prototype follow-up — #180, 2026-11-10 UTC
+
+The [capture/inspection receiving](feature_snapshot_prototype.md) now implements
+an unshipped fixed-profile tool and explicitly separate quantity reconstruction.
+Its [receipt](evidence/feature_snapshot_prototype_20261110.json) receives32guards
+and eight complete scientific rows per source/exact-owned218context, plus two
+fresh scientific-import-blocked readers of all16original snapshots. The
+[24-case mapping](examples/feature_snapshot_prototype_coverage.json) documents
+covered/partial/deferred scope. This follow-up does not retroactively change the
+source-only #179 review, authenticate declared molecular origin or promote a
+public codec, compatibility detector, production index or generic collection.

@@ -1,0 +1,128 @@
+{
+  "schema": "pharmacophoremt.feature-snapshot-prototype-coverage@1",
+  "issue": 180,
+  "design_owner": "feature_snapshot_reuse_decisions.json",
+  "meaning": "Implementation coverage within the bounded capture/inspection profile; no compatibility detector, index or plan acceptance.",
+  "cases": [
+    {
+      "id": "same",
+      "disposition": "partial",
+      "scope": "Exact bytes, detached reconstruction and original metadata survive. Automatic reuse and plan checks are deferred."
+    },
+    {
+      "id": "relocation",
+      "disposition": "partial",
+      "scope": "Frozen parent bytes are copied/verified in isolated source/owned cases. Generic relocation and collection correspondence are deferred."
+    },
+    {
+      "id": "display",
+      "disposition": "deferred",
+      "scope": "No supplier availability/display refresh interface is implemented."
+    },
+    {
+      "id": "geometry",
+      "disposition": "partial",
+      "scope": "Later public molecular translation cannot mutate captured bytes. Source-change detection and recapture policy are caller-owned and deferred."
+    },
+    {
+      "id": "state",
+      "disposition": "partial",
+      "scope": "Only explicit state0/frame0 are admitted. Cross-state topology/protonation/stereo/conformer equivalence is not tested."
+    },
+    {
+      "id": "atom-map",
+      "disposition": "partial",
+      "scope": "Original participant/geometry order survives; out-of-axis and boolean indices refuse. In-range source authentication and molecular remapping are deferred."
+    },
+    {
+      "id": "occurrence",
+      "disposition": "partial",
+      "scope": "Repeated source with a new occurrence key changes its binding without collapsing features. Collection multiplicity/order and asset rebind are deferred."
+    },
+    {
+      "id": "request",
+      "disposition": "partial",
+      "scope": "Full explicit requested/empty coverage is retained. No automatic superset reuse or missing-family execution is implemented."
+    },
+    {
+      "id": "request-order",
+      "disposition": "covered-in-profile",
+      "scope": "Equivalent requested family order/duplicates canonicalize while ordered native output remains unchanged. No plan compatibility claim."
+    },
+    {
+      "id": "definition",
+      "disposition": "partial",
+      "scope": "Unknown definitions refuse. Alternative perception methods and migration are deferred."
+    },
+    {
+      "id": "orientation",
+      "disposition": "partial",
+      "scope": "Original donor directions, aromatic normals and signed charges reconstruct and pass public correspondence. Changed-orientation reuse decisions are deferred."
+    },
+    {
+      "id": "units",
+      "disposition": "partial",
+      "scope": "nm/pm application policies preserve independently checked physical values and original sealed quantities. A generic derived-payload conversion/requalification service is deferred."
+    },
+    {
+      "id": "frame",
+      "disposition": "partial",
+      "scope": "Nonzero frame/state and unsupported coordinate policy refuse. Multi-frame/PBC transformations are deferred."
+    },
+    {
+      "id": "predicate",
+      "disposition": "deferred",
+      "scope": "No retrieval predicate identity or implementation comparator is added."
+    },
+    {
+      "id": "query",
+      "disposition": "deferred",
+      "scope": "No query or retrieval asset is created."
+    },
+    {
+      "id": "score-budget",
+      "disposition": "deferred",
+      "scope": "No scoring/grouping/budget plan or resume decision is added."
+    },
+    {
+      "id": "outside-domain",
+      "disposition": "partial",
+      "scope": "Unsupported feature families refuse before metadata/extraction. Broader semantic/numerical retrieval qualification is deferred."
+    },
+    {
+      "id": "representation",
+      "disposition": "deferred",
+      "scope": "No bin representation or production index is selected."
+    },
+    {
+      "id": "empty",
+      "disposition": "covered-in-profile",
+      "scope": "Complete requested aromatic family is evaluated empty and preserved distinctly from controlled producer failure; no activity inference."
+    },
+    {
+      "id": "missing",
+      "disposition": "partial",
+      "scope": "Incomplete/invalid parent/request/coverage/producer declarations refuse. Structurally valid false origin declarations are not authenticated."
+    },
+    {
+      "id": "corrupt",
+      "disposition": "covered-in-profile",
+      "scope": "Unknown schema, checksum mismatch, noncanonical/duplicate/oversized bytes and invalid layout refuse. Quantity semantics require explicit reconstruction."
+    },
+    {
+      "id": "prefix",
+      "disposition": "deferred",
+      "scope": "No candidate-prefix execution or unknown-work accounting is added."
+    },
+    {
+      "id": "refresh",
+      "disposition": "partial",
+      "scope": "Driver refuses existing outputs and preserves partial/failure evidence. Atomic replacement/current-pointer publication is deferred."
+    },
+    {
+      "id": "legacy",
+      "disposition": "deferred",
+      "scope": "All159runtime bodies remain unchanged. No historical run reader migration or broader legacy acceptance is executed."
+    }
+  ]
+}

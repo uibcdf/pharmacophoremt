@@ -1,0 +1,109 @@
+{
+  "schema": "pharmacophoremt.feature-snapshot-parents@1",
+  "parents": [
+    {
+      "key": "ions",
+      "file": "ions.h5msm",
+      "bytes": 122912,
+      "sha256": "791a6e18dcef92cc5fc6ce9df1c60e5e4963fceff4b5c939b1d5086037ff7ed3",
+      "n_atoms": 3,
+      "atom_types": [
+        "Na",
+        "Cl",
+        "K"
+      ],
+      "formal_charges": [
+        1,
+        -1,
+        1
+      ],
+      "n_bonds": 0,
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_unchanged": true,
+      "preparation": "Public MolSysMT construction/aromaticity/native write-read; no repair"
+    },
+    {
+      "key": "water",
+      "file": "water.h5msm",
+      "bytes": 125256,
+      "sha256": "0e8d133a0a24b5b40c561a1514d7d405d366596c123854268608f10fe49cb1a6",
+      "n_atoms": 3,
+      "atom_types": [
+        "H",
+        "O",
+        "H"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0
+      ],
+      "n_bonds": 2,
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_unchanged": true,
+      "preparation": "Public MolSysMT construction/aromaticity/native write-read; no repair"
+    },
+    {
+      "key": "ring",
+      "file": "ring.h5msm",
+      "bytes": 125256,
+      "sha256": "6525b093b86dfe044d4469c70fe67eef46b8c3b855cbd9ff2d46bddfff65daa8",
+      "n_atoms": 6,
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_bonds": 6,
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_unchanged": true,
+      "preparation": "Public MolSysMT construction/aromaticity/native write-read; no repair"
+    }
+  ],
+  "source_runtime": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+  },
+  "provider_python_files": 4594,
+  "original_inputs_verified": true,
+  "source_and_artifacts_unchanged": true,
+  "scope": "Three controlled synthetic single-artifact parent receipts; not generic molecular collection/snapshot authentication.",
+  "preparation": "Public MolSysMT construction and native write/read. Ring-only explicit aromaticity perception/annotation; construction metadata retained for ions/water. All three coordinates roundtrip exactly.",
+  "original_preparation_attempts": [
+    {
+      "command": "prepare-parents",
+      "status": "failed",
+      "reason": "unnecessary aromaticity perception on metals outside declared provider domain; no artifacts written"
+    },
+    {
+      "command": "prepare-parents-v2",
+      "status": "failed",
+      "reason": "exclusive directory guard retained original empty output directory; no artifact or molecular preparation"
+    },
+    {
+      "command": "prepare-parents-v3",
+      "status": "completed",
+      "reason": "corrected ring-only perception and new exclusive destination; same resource profile/providers/native"
+    }
+  ]
+}

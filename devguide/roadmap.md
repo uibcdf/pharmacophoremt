@@ -34,13 +34,26 @@ user testing or result interpretation.
 
 
 
+[#180 native-feature snapshots](feature_snapshot_prototype.md) receives bounded
+capture, structural inspection and explicit quantity reconstruction. All 32 guards and
+8 complete nm/pm rows pass per source/exact-owned218 context; two fresh readers each
+inspect all 16 original snapshots with scientific imports blocked. Original maps,
+empty coverage, attribution and producer labels survive. The [receipt/archive](evidence/feature_snapshot_prototype_20261110.json)
+keeps every original failure and exact body/fixture/native identities. The 24-case
+mapping marks three covered within the profile, 14 partial and seven deferred; it does not establish an
+automatic compatibility detector, stable public snapshot API, production index
+or generic molecular collection. Next qualify bounded ingestion into retrieval
+against the exhaustive reference. MolSysMT#624, wider numerical/cost, human and
+full supported delivery gates remain separate; #148/#165 remain stopped.
+
 [#179 prepared-feature compatibility](prepared_feature_snapshot_contract.md)
 receives the next design gate with24worked decisions, an exact nine-file source
 review, unchanged159runtime identities and scoped MolSysMT#624 acceptance input.
 It separates prepared parent, explicit requested/empty coverage, ordered features,
 predicate/runtime, retrieval domain and plan/run compatibility. The current manual
-public reuse guide is linked; capture/codec/preflight/index implementation and
-provider/human/wider numerical/cost/public-platform gates remain separate.
+public reuse guide is linked. The bounded prototype above follows this design;
+public codec/preflight/index implementation and provider/human/wider numerical/
+cost/public-platform gates retain separate acceptance.
 No molecular or scientific calculation is executed by this design review.
 
 The [#178 finite retrieval controls](retrieval_candidate_controls.md) receive
