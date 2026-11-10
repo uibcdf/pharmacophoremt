@@ -203,3 +203,15 @@ first-match/chirality/cache/identity and RNG questions are versioned and separat
 from physical tolerance, tool adoption or a timing result. #174resolves this
 source study; #175owns distinct prospective analytical execution. Original ten
 records and index body remain intact with independent publication readback.
+
+## pmapper analytical receiving — 2026-11-10
+
+The separate [#175 experiment](../pmapper_analytical_controls.md) now executes
+all eight point cases and six cache/RNG observations from source and unchanged
+owned214 with identical results. The validation case and original full archive
+are published; original failures, physical witnesses, cache-equivalence failure
+and actual attribution remain explicit. Canonical record176 and index129 have
+executed-result comments with independent exact readback. This closes only the
+bounded experiment, while #128's broader tool comparisons remain open. The
+internal upstream report is reviewable but not submitted externally. No runtime
+adapter, index, speed or biological claim is introduced.

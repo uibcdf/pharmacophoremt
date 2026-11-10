@@ -9,6 +9,34 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#175 pmapper analytical controls](pmapper_analytical_controls.md) complete the
+next comparative segment for milestones 5/6. Eight fixed point cases and six
+cache/RNG observations give identical original results from source and unchanged
+owned214 PHMT. Independent rational witnesses distinguish interval matching from
+continuous positional tolerance, reflection from final proper-fit acceptance,
+and duplicate reduction from original occurrence coverage. Two public mutation
+routes reproduce one stale-cache invalidation finding, explicitly retaining
+`cache_equivalence_passed=false`. The
+[executed receipt](evidence/pmapper_controls_20261110.json) retains the complete
+outputs, source/provider/fixture identities, actual attribution and startup
+refusals; 159 runtime bodies, 214 installed payloads and 146 loaded PHMT origins
+verify. The [public case](../docs/content/validation/pmapper_controls.md) and
+[architecture decision](public_library_architecture.md#evidence-bound-signatureindex-decision--2026-11-10)
+make the consequence for future indexing explicit. The
+[executed Discussion follow-up](evidence/pmapper_record_execution_20261110.json)
+has independent exact API readback, preserving all original text. The
+[upstream report](pmapper_upstream_cache_report.md) is prepared internally and
+unsubmitted. No production adapter/dependency/index or performance/biological
+qualification is added.
+
+Next: use these controls to declare a finite PHMT retrieval experiment against
+the unchanged exhaustive tolerance reference, with original occurrence coverage,
+mutation invalidation and explicit incompleteness; obtain an owning issue and
+prospective acceptance before implementing or claiming an index. Continue the
+independent MolSysMT#624 collection route and representative human receiving.
+Do not retry #148/#165 in this unmanaged resource context. Full source remains
+af408e7; later exact-head, public/installed-platform and release gates stay open.
+
 [#174 pinned pmapper study](pmapper_signature_review.md) adds an eleventh tool
 family to the comparative registry. Ten original source files at2f77e648/1.1.3
 verify their Git blob/byte/hash identities. The review separates binned matching,
@@ -17,7 +45,8 @@ from PHMT geometry/source identity. [Canonical record176](https://github.com/uib
 and index append have independent exact API readback; all earlier text/threads
 remain. No third-party code is executed or adopted by this study. #175declares
 separate bounded analytical controls next; full source af408e7 and the existing
-reader/artifact/owner limitations below remain unchanged.
+reader/artifact/owner limitations below remain unchanged. Its subsequently executed
+#175 follow-up above has a distinct receipt; the source-only claim stays dated.
 
 [#173 reader distribution identity](reader_distribution_version.md) adds lazy
 `--version` without a saved file, score criterion or scientific import. All139
@@ -73,7 +102,8 @@ execution. Original attempt1 failure/unstarted capacity cancellation is preserve
 reissued inventory IDs do not represent repeated executions. Frozen policy
 42656145447 and no-build publication42656155848 pass at the same candidate.
 Later #170 source adbecee, #171 docs0933cfb, #172 exercise431861b and #173 source
-bc084f9 retain their separate bounded receiving and exact-head CI debt under #9. Full supported installed/public,
+bc084f9 and later #174/#175 studies retain their separate bounded receiving and
+exact-head CI debt under #9. Full supported installed/public,
 human-usability, scientific prediction, performance and release gates remain
 separate. #148/#165 remain stopped.
 

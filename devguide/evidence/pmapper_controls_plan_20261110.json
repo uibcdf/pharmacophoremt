@@ -1,0 +1,276 @@
+{
+  "schema": "pharmacophoremt.pmapper-controls-plan@1",
+  "issue": 175,
+  "declared_at_UTC": "2026-11-10T00:35:56.557186+00:00",
+  "parent_source": "903bf16c0346ebd83ae87460a4ccfa9fe7e15ef2",
+  "declaration": {
+    "bytes": 8381,
+    "sha256": "e8d70074bb5759e1f35d66c2159a7a108c6604180357c9905272e7339b1e3b82"
+  },
+  "cases": 8,
+  "extra_controls": {
+    "immutable_cached": true,
+    "warm_bin_change_equals_fresh": false,
+    "uncached_bin_change_equals_fresh": true,
+    "warm_coordinate_reload_equals_fresh": false,
+    "add_feature_clears_stale_subset": true,
+    "fingerprint_changes_global_rng": true
+  },
+  "pmapper_root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-review-20261110-f813p5sk/upstream",
+  "pmapper_files": {
+    "setup.py": {
+      "bytes": 1287,
+      "sha256": "30a90e0ee214152c42f75f260218e47dcc4fba984b26b1e9897c3a5cf712d9b5",
+      "git_blob_sha": "772a28e3e7bbe2c4036a5038ca642a1b5360a24d",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/setup.py"
+    },
+    "pmapper/pharmacophore.py": {
+      "bytes": 44675,
+      "sha256": "08f1830126aac2851370a9989c377c5c42b6ec10ef095d68b1530bdafa266199",
+      "git_blob_sha": "03c265b459206ebcd36d23b96bf2503b13febd50",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/pharmacophore.py"
+    },
+    "pmapper/__init__.py": {
+      "bytes": 379,
+      "sha256": "e809792fe2879028afe1dbb775a513fb3c4154051011eac775c42c2bb3d7c7af",
+      "git_blob_sha": "b1399c75a5d7eff0c6ab5c6d10ad53b5722a2154",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/__init__.py"
+    },
+    "LICENSE.txt": {
+      "bytes": 1516,
+      "sha256": "279bbc6e406deed06e09f763a121fb1100499ccbceea0cb089785dcf81393ccb",
+      "git_blob_sha": "1757c96f3eb3f626e9e8512e391d2d514619a820",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/LICENSE.txt"
+    },
+    "pmapper/utils.py": {
+      "bytes": 2838,
+      "sha256": "a8dfb58d9eb8da7751558cf86d7aa3b467ff02f3916eae67091b464d0640aadb",
+      "git_blob_sha": "91e6f1f4b8c4e8ea09df9a1a1781049a21aeb2c1",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/utils.py"
+    },
+    "README.md": {
+      "bytes": 11600,
+      "sha256": "966872df3891e0b3a62b2571f76634763c72b55df039831b549df43a5423c59a",
+      "git_blob_sha": "9db037a8960786668fa9cf53461c013c27482170",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/README.md"
+    },
+    "pmapper/customize.py": {
+      "bytes": 1958,
+      "sha256": "abc8843ea1970578c24e9dc10de489bb682cbd4ea0320f0595f5026e4512511d",
+      "git_blob_sha": "371da268a58698a059b77e9428e5da563445d468",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/customize.py"
+    },
+    "conda_env.yml": {
+      "bytes": 3081,
+      "sha256": "5366df3e0bc0ee661c549bffaf8dcbb04c3320f6d93eeba3dd21723d698b83ba",
+      "git_blob_sha": "58990ad54587f21c1904af5d598ec6f0dd93971f",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/conda_env.yml"
+    },
+    "setup.cfg": {
+      "bytes": 39,
+      "sha256": "71f81489f9dcac4958232c39fc4b0e05d84b407010c0d39cd28b852294e4fd88",
+      "git_blob_sha": "224a77957f5db48dfa25c8bb4a35f535202da203",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/setup.cfg"
+    },
+    "pmapper/smarts_features.txt": {
+      "bytes": 2130,
+      "sha256": "a3d1cb93d62dcbb8a68ef79972f4275d2ab1423880a0e1e0058e3e78291b894e",
+      "git_blob_sha": "5c43da322b51008fb4470e9a783df739be5593fb",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/smarts_features.txt"
+    }
+  },
+  "owned_build": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-version-20261110-gem8pw_z/owned_build.json",
+  "site_packages": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages",
+  "shared_sdk": {
+    "root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk",
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "modules": [
+      "devtools",
+      "devtools.scripts",
+      "devtools.scripts.installed_imports",
+      "devtools.scripts.noarch_conda",
+      "devtools.scripts.conda_release_contract",
+      "devtools.scripts.verify_public_conda"
+    ],
+    "files": {
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/installed_imports.py": {
+        "bytes": 4637,
+        "sha256": "ff23458015bb7ce83bc3eea36571c4294bed09fff948e8eb6d9bcb3a0615fa3c"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/noarch_conda.py": {
+        "bytes": 24232,
+        "sha256": "d62e0dd42ca04f1381b94b1a3c8ca5cc312db72fb946e2c759d92a3b4eb7bf07"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/conda_release_contract.py": {
+        "bytes": 24830,
+        "sha256": "ce166c0990f386eb5b020192ef9b8d8381a3da47aa8d95507a6adb51d30009f3"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/verify_public_conda.py": {
+        "bytes": 10111,
+        "sha256": "bb743343ec7a58659b90e6cbae1a06380c7fd8e2328b1b7c11c85e52fc890567"
+      }
+    },
+    "operation": "devtools.scripts.installed_imports.check_installed_imports",
+    "scope": "Reuse the qualified pure loaded-runtime origin checker. Case-specific guarded startup, prefix/provider admission, original-body execution and wheel-byte validation retain their own roles."
+  },
+  "provider_mapping": {
+    "ackredit": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit",
+    "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest",
+    "depdigest": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest",
+    "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+    "molsysviewer_molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysviewer_molsysmt",
+    "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor",
+    "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+    "sabueso": "/fast_data/home/liliana/repos@uibcdf/sabueso/sabueso",
+    "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor",
+    "topomt": "/fast_data/home/liliana/repos@uibcdf/topomt/topomt"
+  },
+  "provider_finders": [
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___ackredit_0_12_1_10_g4beb850_finder.py",
+      "identity": {
+        "bytes": 3420,
+        "sha256": "9087ef093a757fd4541869b29d0bbb2c73603ff5cc24e44ea9cc5b0f4fb575cf"
+      },
+      "mapping": {
+        "ackredit": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___argdigest_0_17_1_3_g0712641_finder.py",
+      "identity": {
+        "bytes": 3514,
+        "sha256": "e3e1851c1327707f61e6ac437c9e2b534cd25ae380e1a02f06ca7bd247275798"
+      },
+      "mapping": {
+        "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___depdigest_0_15_2_2_g032d345_finder.py",
+      "identity": {
+        "bytes": 3514,
+        "sha256": "ccb1d84a0de2e4cb0ef833376ccbbcd30df5143c4a6909074ac298b93b3a9187"
+      },
+      "mapping": {
+        "depdigest": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___molsysmt_0_23_0_687_g2325038e8_finder.py",
+      "identity": {
+        "bytes": 8265,
+        "sha256": "c6c544a999c292dc1ca6390a8c788b006abcd62bec67f507a0579f60eef54c19"
+      },
+      "mapping": {
+        "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+        "molsysviewer_molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysviewer_molsysmt"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___pytest_receptor_1_2_0_finder.py",
+      "identity": {
+        "bytes": 3441,
+        "sha256": "e3d5c3ed30adb58c404e8e15f8cf6e400fa744bd062b292b0e57d5320304789f"
+      },
+      "mapping": {
+        "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___pyunitwizard_0_29_1_6_gf82b618_finder.py",
+      "identity": {
+        "bytes": 3435,
+        "sha256": "ede0cc717ae93a482b2bd886b3f89d5440fd1b65e3be31acdddbfa591c2c775b"
+      },
+      "mapping": {
+        "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___sabueso_0_14_0_237_g82c1ed5_finder.py",
+      "identity": {
+        "bytes": 3417,
+        "sha256": "bdfe07e8016ac579854eb82b70c2ce46f3a2f527d46b75864da5ff9d89736c5d"
+      },
+      "mapping": {
+        "sabueso": "/fast_data/home/liliana/repos@uibcdf/sabueso/sabueso"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___smonitor_0_22_1_1_gc1b6ce2_finder.py",
+      "identity": {
+        "bytes": 3509,
+        "sha256": "522c674c8cead706a5399f40f2a3aeeae1d2240201011f73b4d455db808e5fdf"
+      },
+      "mapping": {
+        "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor"
+      }
+    },
+    {
+      "path": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages/__editable___topomt_0_5_0_387_gcf4d475_dirty_finder.py",
+      "identity": {
+        "bytes": 5942,
+        "sha256": "3ff859506bb87f4a706c4b2d4ccc8c77099423f3fa4bebff3f6dc71330172b04"
+      },
+      "mapping": {
+        "topomt": "/fast_data/home/liliana/repos@uibcdf/topomt/topomt"
+      }
+    }
+  ],
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+  },
+  "provider_state_note": "MolSysMT Python HEAD advanced from historicalfab8cbcc; current efbe67e1context is separately frozen, not retroactively qualified by earlier experiments. Native hash is unchanged. Mathematical public PHMT tools only; molecular calls forbidden/observed separately. Other worktrees and version cache modifications from offline suite inventory are preserved. No fetch, install or checkout change.",
+  "offline_workspace_inventory": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-review-20261110-f813p5sk/suite_offline_status.json",
+  "offline_inventory_identity": {
+    "bytes": 5760,
+    "sha256": "526f975bf69227b3c5040bb4dea2766de9af484d53ff0e51d4a78fcefdffd9d7"
+  },
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "DATA_bytes": 536870912,
+    "AS_readonly": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "host_reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "aggregate_cgroup": false,
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 58774777856,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7895814144
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230792\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199231\n",
+    "load": [
+      7.05859375,
+      5.98046875,
+      4.37158203125
+    ],
+    "SLURM_JOB_ID": null,
+    "scheduler": "Slurm clients present/no allocation. Same-session sandbox controller reads were refused; only small direct serial review/docs/checks, no new manager/native operation."
+  },
+  "control_budget": "8fixed geometrical stages plus6cache/RNGobservations; max4points,32graphnodes/32cliques,64trialcap. Serial source then same unchanged owned214, DATA512MiB/AS1GiB/observed group512MiB/CPU120/wall180; no threshold rise or acquisition. Existing current source/owned164profile provides import estimate~260MiB; pmapper adds small Python code, actual max must be monitored.",
+  "expected_source_scientific_rows": 8,
+  "expected_scientific_molecular_inputs": 0,
+  "performance_measured": false,
+  "scope": "Native dependency identities currently observed; selected operation-level comparison only, no full provider/PHMT public/installed/platform or biological/performance qualification. External defects remain internal drafts without new publication permission.148/165stopped.",
+  "retention_review": "2026-11-24",
+  "projection": "Public index of a prospectively frozen original plan; complete original bytes retained in the full evidence archive.",
+  "original_plan": {
+    "bytes": 793732,
+    "sha256": "6911a58628b85e5bc12590baa933d59bdb7f8440b4a3a78a11f8038ada86e810",
+    "archive": "pmapper_controls_20261110_full.json.gz",
+    "member": "plan.json"
+  },
+  "provider_Python_files": 4593,
+  "PHMT_runtime_body_files": 159
+}

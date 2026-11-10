@@ -1,0 +1,28 @@
+{
+  "schema": "pharmacophoremt.pmapper-record-execution-followup@1",
+  "recorded_at_utc": "2026-11-10T00:56:23.189851+00:00",
+  "comments": [
+    {
+      "discussion": 176,
+      "id": "DC_kwDOP5ch7M4BKaLF",
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/176#discussioncomment-19505861",
+      "body_bytes": 3008,
+      "body_sha256": "f14d9cd26301575fe725c4d15efae49673d3c75f8f780ff0ed9433af2c288877"
+    },
+    {
+      "discussion": 129,
+      "id": "DC_kwDOP5ch7M4BKaLG",
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/129#discussioncomment-19505862",
+      "body_bytes": 741,
+      "body_sha256": "36012b771d7db5910a1b5b9ca8dc5490fe62f2adbd8ab13a5f7b08e795413a31"
+    }
+  ],
+  "independent_API_readback_exact": true,
+  "original_record_and_index_body_preserved": true,
+  "record_category_preserved": true,
+  "new_category_or_thread_created": false,
+  "source_only_receipt_preserved": "pmapper_record_20261110.json",
+  "scientific_receipt": "pmapper_controls_20261110.json",
+  "external_publication": false,
+  "resource_scope": "Bounded administrative API operations under CPU19/threads1/nice19/idleIO and own-group monitoring; no scientific/manager/compiler execution."
+}

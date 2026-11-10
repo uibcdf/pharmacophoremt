@@ -23,6 +23,18 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+2026-11-10: [#175 pmapper analytical controls](pmapper_analytical_controls.md)
+receive eight fixed point cases and six cache/RNG observations identically from
+source and unchanged owned214. Same-bin impossibility, cross-bin feasibility,
+reflection and duplicate occurrence controls separate scientific stages. One
+mutable-cache invalidation defect is reproduced through two public mutation
+routes; `cache_equivalence_passed=false` stays separate from expected-observation
+agreement. All 159 runtime bodies, 214 installed payloads, 4,593 provider Python
+files and 146 loaded PHMT module origins verify. Complete actual attribution,
+original startup refusals and unchanged bodies are archived. The public case and
+canonical Discussion follow-up are received. No runtime/index/dependency or
+performance/biological qualification follows; the upstream draft is internal.
+
 [#165 pinned r95 build](pharmer_r95_build_receiving.md) advances source/diagnostic
 readiness for milestones1/6:66original files and15private dependency artifacts
 are received; the legacy-ABI/SDF dependency probe passes. Both core/GCC collector
@@ -386,7 +398,7 @@ retain their cost/scope. [Checkpoint](checkpoint.md) owns the next concrete acti
 | #143 analytical boundary | Resolved: original fixture exactness defect preserved; revision2/14guards/ten-case driver and frozen8db2a53 full2357-case/eight-cell source gate pass | Later helpers/tests and full installed/public/platform delivery retain separate#9/#23 scope |
 | #144 saved-reader performance | Resolved: three reader cells/75baseline samples and reusable copied-fixture recovery received with22guards | Preserve failed original preparation; extra25samples stay separate. Review shared scan cost before any cache/index/molecular throughput claim |
 | #148 molecular feature-reuse performance | Partial: fixed prospective schedule/control and original input integrity verified | Receive a safe native route and qualify a shared arm, then separate pilot/measurements; no speed or library-capacity claim |
-| #128 tool-study registry | Dedicated public index, one [executed Pharm3D analytical comparison](rdkit_bounds_comparison.md) and nine documentary records | Public RDKit fields are received in source/one owned wheel under resolved#140; corrected8db2a53 source passes all eight cells under resolved#143, preserving failed489be12. Broader comparison/biological gates remain |
+| #128 tool-study registry | Dedicated public index, [executed Pharm3D](rdkit_bounds_comparison.md) and [pmapper analytical comparisons](pmapper_analytical_controls.md), plus nine documentary families | Public RDKit fields are received in source/one owned wheel under resolved#140; corrected8db2a53 source passes all eight cells under resolved#143, preserving failed489be12. Broader comparison/biological gates remain |
 | Molecular providers | #105 receives native aromatic-N; carboxylate, constrained H refinement and grouping retain specific gaps | MolSysMT#375/#323/#447; supported provider operations, no local replacement |
 | #95 intermediate release | Proposed0.5 reviewed; actual plan/tag/Release0.4.0 | Public provider capability and exact source/installed/public gates before a freeze |
 | #9/#10/#23 CI/support/distribution | [Frozen af408e7](numerical_reader_ci_checkpoint.md) passes all8 source cells/2693cases each plus reporting/policy/publication controls; later9a0ed14 OS probe has its separate manual receiving | Full installed/public/package and later-head gates stay separate; no repeated frozen run |

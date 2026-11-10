@@ -277,3 +277,18 @@ budget escalation or shared-prefix/provider changes. Source diagnostics must
 observe actual atom/cluster/indexed-feature/correspondence records; that observer
 remains unimplemented. Receive a distinct managed build context before another
 attempt, while independent PHMT/library/provider work continues.
+
+## pmapper executed follow-up — 2026-11-10
+
+[#175](pmapper_analytical_controls.md) receives eight frozen point cases and six
+cache/RNG observations identically from source and unchanged owned214. The
+[public case](../docs/content/validation/pmapper_controls.md) separates interval
+matching, continuous tolerance, chirality/final fitting and occurrence coverage.
+One mutable-cache invalidation finding is reproduced through two public routes;
+immutable/uncached/invalidation controls keep their original outcomes. The
+[complete receipt](evidence/pmapper_controls_20261110.json) and
+[Discussion follow-up receipt](evidence/pmapper_record_execution_20261110.json)
+preserve scientific results and independent publication readback. Original
+source-only records stay dated and intact. Disposition is Under study with a
+selected analytical comparison executed, not runtime/index/dependency adoption.
+The upstream report is prepared internally, not submitted externally.

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (115)
+### Resolved (116)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -19,6 +19,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`carbonyl_acceptor_receiving_plan.md`](carbonyl_acceptor_receiving_plan.md) — [#92](https://github.com/uibcdf/pharmacophoremt/issues/92) — Freeze bounded experimental carbonyl acceptor receiving before evaluation. *(resolved, inspected)*
 - [`catalog_diagnostic_rendering.md`](catalog_diagnostic_rendering.md) — [#2](https://github.com/uibcdf/pharmacophoremt/issues/2) — Restore authored SMonitor catalog messages for PharmacophoreMT diagnostics. *(resolved, measured)*
 - [`ccd_interaction_composition.md`](ccd_interaction_composition.md) — [#37](https://github.com/uibcdf/pharmacophoremt/issues/37) — Validate joint native interaction hypotheses with complete prepared CCD chemical components. *(resolved, measured)*
+- [`compare_pmapper_screening_stages.md`](compare_pmapper_screening_stages.md) — [#175](https://github.com/uibcdf/pharmacophoremt/issues/175) — Execute source-pinned pmapper and PHMT analytical screening-stage controls. *(resolved, measured)*
 - [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(resolved, reproduced)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*

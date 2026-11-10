@@ -31,6 +31,17 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+The [#175 pmapper analytical comparison](pmapper_analytical_controls.md) receives
+eight original point cases and six cache/RNG observations identically from
+source and unchanged owned214, advancing milestones 5/6. Exact-bin matching
+cannot replace continuous-tolerance candidate admission without a qualified
+neighborhood strategy. The original cache-mutation finding and independent
+physical witnesses are public in the validation collection; full outputs,
+failures and exact identities remain archived. The architecture now requires
+fresh-versus-warm mutation equivalence and original occurrence coverage before
+index adoption. No index, runtime dependency, speed or biological result follows.
+The upstream report stays internal, unsubmitted; #148/#165 remain stopped.
+
 The [#174 pmapper source review](pmapper_signature_review.md) advances the
 comparative groundwork for milestones5/6: exact1.1.3source, binned/signature/
 chirality/first-result semantics, cache lifetime and artifact-identity questions.

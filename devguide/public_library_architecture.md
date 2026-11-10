@@ -296,3 +296,24 @@ new science. These remain development references, with no public API/schema
 freeze or general managed-library qualification. MolSysMT's reusable collection
 boundary remains [#624](https://github.com/uibcdf/molsysmt/issues/624); reusable
 search assets still need their own same-problem equivalence/cost experiment.
+
+## Evidence-bound signature/index decision — 2026-11-10
+
+The [pmapper source review](pmapper_signature_review.md) and
+[executed stage controls](pmapper_analytical_controls.md) make the future asset
+boundary concrete. The original same-bin/physically-impossible and cross-bin/
+strictly-feasible witnesses mean an exact-bin signature cannot silently replace
+PHMT's continuous-tolerance candidate predicate. Before an indexed route may
+claim recall preservation, it must name/prove the admissible neighborhood and
+qualify it against the unchanged reference query, physical criteria and original
+source/occurrence denominator. No index is selected or implemented here.
+
+A mutable-object hash cache also needs fresh-versus-warm equivalence after every
+supported coordinate/settings mutation. Immutable cached equality alone does
+not qualify update/reload behavior. Keep prepared snapshot, feature definition,
+explicit unit/frame, representation/bin/chirality settings, occurrence mapping
+and producer in the compatibility decision. First-match output, duplicate
+reduction and fingerprint collisions remain separate coverage/identity choices.
+This refines the existing prospective architecture under#108/#128; it adds no
+new public API, storage schema, molecular collection or dependency. Molecular
+source/preparation ownership remains MolSysMT#624.

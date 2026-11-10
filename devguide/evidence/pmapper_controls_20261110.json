@@ -1,0 +1,582 @@
+{
+  "schema": "pharmacophoremt.pmapper-controls-receiving@1",
+  "issue": 175,
+  "recorded_at_utc": "2026-11-10T00:54:58.883144+00:00",
+  "source_parent": "903bf16c0346ebd83ae87460a4ccfa9fe7e15ef2",
+  "pmapper_source": {
+    "repository": "DrrDom/pmapper",
+    "version": "1.1.3",
+    "commit": "2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd",
+    "selected_original_files": 10,
+    "source_bytes": 69503
+  },
+  "declaration": {
+    "bytes": 8381,
+    "sha256": "e8d70074bb5759e1f35d66c2159a7a108c6604180357c9905272e7339b1e3b82"
+  },
+  "original_case_bodies_and_inputs_unchanged": true,
+  "molecular_inputs": 0,
+  "source_and_installed_cases": 8,
+  "source_and_installed_extra_controls": 6,
+  "same_complete_body_and_results": true,
+  "all_declared_observations_match": true,
+  "cache_equivalence_passed": false,
+  "original_stage_results": [
+    {
+      "key": "identity",
+      "pmapper_match": true,
+      "PHMT_proposals": 1,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 3,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "proper-motion",
+      "pmapper_match": true,
+      "PHMT_proposals": 1,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 3,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "permuted-motion",
+      "pmapper_match": true,
+      "PHMT_proposals": 1,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 3,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "same-bin-impossible",
+      "pmapper_match": true,
+      "PHMT_proposals": 0,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 3,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "cross-bin-feasible",
+      "pmapper_match": false,
+      "PHMT_proposals": 1,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 3,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "gross-stretch",
+      "pmapper_match": false,
+      "PHMT_proposals": 0,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 3,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "noncoplanar-reflection",
+      "pmapper_match": false,
+      "PHMT_proposals": 1,
+      "pmapper_retained_source_features": 4,
+      "original_source_occurrences": 4,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    },
+    {
+      "key": "duplicate-occurrence",
+      "pmapper_match": true,
+      "PHMT_proposals": 2,
+      "pmapper_retained_source_features": 3,
+      "original_source_occurrences": 4,
+      "PHMT_finite_family_complete": true,
+      "expected_observations_match": true
+    }
+  ],
+  "cache_controls": {
+    "observed": {
+      "immutable_cached": true,
+      "warm_bin_change_equals_fresh": false,
+      "uncached_bin_change_equals_fresh": true,
+      "warm_coordinate_reload_equals_fresh": false,
+      "add_feature_clears_stale_subset": true,
+      "fingerprint_changes_global_rng": true
+    },
+    "expected_observations_match": true,
+    "bin_change": {
+      "original": "ec3cebb4aec15ae05b0bdf91e6c050ab",
+      "warm_changed": "ec3cebb4aec15ae05b0bdf91e6c050ab",
+      "fresh_changed": "3b2a82869f3df86dcef2b41bbda76832",
+      "cache_equivalence_passed": false
+    },
+    "coordinate_reload": {
+      "original": "ec3cebb4aec15ae05b0bdf91e6c050ab",
+      "warm_reloaded": "ec3cebb4aec15ae05b0bdf91e6c050ab",
+      "fresh_reloaded": "3b2a82869f3df86dcef2b41bbda76832",
+      "cache_equivalence_passed": false
+    },
+    "fingerprint_bits": [
+      29
+    ],
+    "RNG_restored_after_observation": true,
+    "digest_authenticates_source_or_molecules": false
+  },
+  "oracles": {
+    "same_bin_pair_gap_angstrom": "1/2",
+    "cross_bin_squared_deviations_angstrom2": [
+      "1/256",
+      "1/256",
+      "1/256"
+    ],
+    "reflection_reference_determinant_angstrom3": "1365/64",
+    "reflection_source_determinant_angstrom3": "-1365/64",
+    "physical_witnesses_are_not_backend_outputs": true
+  },
+  "attribution_per_context": {
+    "items": 9,
+    "uses": 13,
+    "full_actual_payloads_in_archive": true
+  },
+  "source_runtime_version": "0.4.0+134.gee5d9fa",
+  "source_distribution_metadata": "0.4.0+120.g0925d97",
+  "installed_runtime_version": "0.4.0+214.gbc084f9",
+  "installed_distribution_metadata": "0.4.0+214.gbc084f9",
+  "metadata_is_not_body_identity": true,
+  "owned_build": {
+    "source_commit": "bc084f954eeec188da6d004129f463e194591ba0",
+    "version": "0.4.0+214.gbc084f9",
+    "wheel": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-version-20261110-gem8pw_z/wheels/pharmacophoremt-0.4.0+214.gbc084f9-py3-none-any.whl",
+      "bytes": 4533072,
+      "sha256": "8f9d7cc238313820dfc980bea9d17454544a97fea73aadfe6999ed0ec09af538"
+    },
+    "target": "/tmp/phmt-reader-version-installed-20261109-i94uobbv/installed"
+  },
+  "verified_installed_payload_files": 214,
+  "same_runtime_body_files": 159,
+  "loaded_PHMT_origins_per_context": 146,
+  "provider_Python_files_per_context": 4593,
+  "fixture_files": 6,
+  "no_molecular_operations_observed": true,
+  "original_startup_refusals": [
+    "source: concurrent Sabueso Python drift, before imports/cases",
+    "source-snapshot: fixture-origin fallback, before point cases; original empty output retained",
+    "installed: concurrently replaced Sabueso editable finder, before imports/cases"
+  ],
+  "overlays": [
+    "admission_overlay.json",
+    "fixture_precedence_overlay.json",
+    "snapshot_metadata_overlay.json"
+  ],
+  "foreign_work_and_shared_prefix_preserved": true,
+  "scientific_execution_resources": {
+    "source": {
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 0.7111835689865984,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 55836672
+    },
+    "source-snapshot": {
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 3.337262009998085,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 180781056
+    },
+    "source-admitted": {
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.065013724990422,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 193949696
+    },
+    "installed": {
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 1.1155258289945778,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 55951360
+    },
+    "installed-snapshot": {
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.776033948990516,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 193777664
+    },
+    "oracle": {
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.6082301339774858,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 63250432
+    }
+  },
+  "resource_limits": "Serial CPU19, backend threads1, nice19, idle I/O; 20percent host reserve plus1.5GiB own-envelope entry margin; no reservation/kernel aggregate swap/tasks/quota enforcement. Scientific DATA512MiB/AS1GiB; observed group cutoff512MiB, CPU120/wall180.",
+  "full_evidence": {
+    "path": "pmapper_controls_20261110_full.json.gz",
+    "compressed_bytes": 699753,
+    "compressed_sha256": "8cfc852bf0c05302ada1d59de64973c3ed7278e7b6b9621f7a6b4b720d4540e0",
+    "uncompressed_bytes": 4360171,
+    "uncompressed_sha256": "a18a04f938001d7d26cf772ed235a32d6923f696f5daa0af37e4ee18af35dd5f"
+  },
+  "guard": "tests/test_pmapper_control_oracles.py",
+  "offline_oracle_cases": 5,
+  "local_receiving": {
+    "recorded_at_utc": "2026-11-10T00:58:24.661278+00:00",
+    "checks": [
+      {
+        "name": "index-generate",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "exit_code": 0,
+        "output": "wrote devguide/archive/README.md\n"
+      },
+      {
+        "name": "ruff",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "All checks passed!\n"
+      },
+      {
+        "name": "format",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "exit_code": 0,
+        "output": "454 files already formatted\n"
+      },
+      {
+        "name": "index",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": "Generated report indexes are current.\n"
+      },
+      {
+        "name": "reporting",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "exit_code": 0,
+        "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.220s\n\nOK\n"
+      },
+      {
+        "name": "archives",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "exit_code": 0,
+        "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.200s\n\nOK\n"
+      },
+      {
+        "name": "whitespace",
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "output": ""
+      }
+    ],
+    "local_links": 373,
+    "rendered_case_table_and_limits": true,
+    "collection_navigation": true,
+    "offline_oracle_cases": 5,
+    "original_scientific_cases_reexecuted": false,
+    "strict_docs": {
+      "status": "completed",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 12.012509282008978,
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=90",
+        "--fsize=67108864",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-controls-20261110-dlm037_2/logs/docs2-resources.txt",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-controls-20261110-dlm037_2/html2"
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "backend_threads": 1,
+      "rlimit_data_bytes": 536870912,
+      "rlimit_as": "unlimited inherited",
+      "aggregate_cgroup_enforcement": false,
+      "nb_execution": "off",
+      "max_observed_own_group_and_supervisor_RSS_bytes": 304738304
+    },
+    "ordinary_backend_notice": "Docs log retains optional-beartype type-check notices; Sphinx strict command exits0. No dependency install or waiver.",
+    "original_strict_docs": {
+      "status": "completed",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 12.011435855994932,
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=90",
+        "--fsize=67108864",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-controls-20261110-dlm037_2/logs/docs-resources.txt",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-controls-20261110-dlm037_2/html"
+      ],
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "backend_threads": 1,
+      "rlimit_data_bytes": 536870912,
+      "rlimit_as": "unlimited inherited",
+      "aggregate_cgroup_enforcement": false,
+      "nb_execution": "off",
+      "max_observed_own_group_and_supervisor_RSS_bytes": 305270784
+    },
+    "final_prose_and_rendered_navigation_received": true,
+    "scientific_bodies_inputs_and_prior_checks_unchanged": true
+  },
+  "upstream_report": "devguide/pmapper_upstream_cache_report.md",
+  "external_issue_or_comment_published": false,
+  "runtime_dependency_adapter_or_index_added": false,
+  "performance_measured": false,
+  "complete_source_or_installed_platform_qualification": false,
+  "stopped_148_165_retried": false,
+  "retention": {
+    "capsule": "build/phmt-pmapper-controls-20261110-dlm037_2",
+    "workspace": "/tmp/phmt-pmapper-controls-receiving-20261110-zvhd1j_i",
+    "review": "2026-11-24"
+  },
+  "local_receiving_evidence": {
+    "path": "pmapper_controls_20261110_receiving.json.gz",
+    "compressed_bytes": 122532,
+    "compressed_sha256": "4b2bf087c3bced91c4188e1cdaad0453c1228279aedea971ca4f05f631e9947c",
+    "uncompressed_bytes": 516314,
+    "uncompressed_sha256": "b50dee12d75f73a3695c50f37eca094cb1222d88dd71fc8e493a76e5de0a0a7e"
+  },
+  "discussions_followup": "pmapper_record_execution_20261110.json",
+  "payload_scope_note": "All214originalnon-RECORDpayloads verify against owned wheel; installer-rewritten RECORD is excluded by the established receiving contract. Original initial metadata-scope assertion failure retained in local receiving archive.",
+  "local_receiving_resources": {
+    "seal": {
+      "name": "seal",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 0.20391778499470092,
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 41308160
+    },
+    "seal-admitted": {
+      "name": "seal-admitted",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 1.0121242250024807,
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 65851392
+    },
+    "checks": {
+      "name": "checks",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.883540032984456,
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 421789696
+    },
+    "publish-followup": {
+      "name": "publish-followup",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 4.272447591996752,
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 81989632
+    },
+    "readback-followup": {
+      "name": "readback-followup",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 1.0175554130109958,
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "aggregate_cgroup": false,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 85864448
+    }
+  },
+  "projection_note": "Reviewable index of original evidence, not a replacement output. Both hash-qualified archives retain complete scientific results/mappings/transforms/attribution, original commands, exact controls, resource samples and independent Discussion readback."
+}
