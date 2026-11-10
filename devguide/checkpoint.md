@@ -9,34 +9,38 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-[#185 search-asset identity/lifetime](search_asset_identity_contract.md) now defines
-separate payload/manifest/lookup/generation and query/run bindings, evaluation
-coverage, publication/failed-refresh and reader-close requirements. The
-[examples](search_asset_acceptance_examples.md) distinguish newly controlled
-primitives, inspected public run semantics and future storage-adapter probes.
-No physical format, public API or production backend is selected.
+[#186 immutable feature store](feature_store_study.md) now implements bounded
+local POSIX bundles containing exact original F bytes and ordered work/parent
+bindings, explicit incomplete causes, exclusive cooperating writers and detached
+readers. Sealing and publication validate quantities; metadata open remains
+scientifically cold. CURRENT is the publication boundary: pre-boundary failure
+keeps the old generation; after it, recovery verifies actual visibility rather
+than infer rollback. Generations and operation receipts are retained, with no GC.
 
-The unshipped declared-family preflight passes24controls per source/exact-owned218
-context and admits no query/match or quantity/source semantics. Empty aromatic
-coverage does not evaluate donor/charge families. Two cold readers each inspect
-all20originals with scientific imports blocked and125support payloads verified;
-two real-provider sessions read every capture twice without new credit or lost
-original attribution. The [receipt/archive](evidence/search_asset_contract_20261110.json)
-retains the initial22pass/two-failure canonical-format correction, final24passes,
-a ten-file source audit and exact identities. All214payloads/159runtime bodies/
-4594provider files/native/69final fixtures verify. Matching, feature generation
-and molecular operations remain zero; no prior benchmark/point result is rewritten.
+The [receipt/archive](evidence/feature_store_20261110.json) receives53guards per
+source/exact-owned218 context, before/after SIGTERM/SIGKILL, two cold readers and
+reopened eleven-occurrence retrieval. All72 original analytical rows per context,
+full maps/joins and prior native/rational differences remain exactly equal to
+original#182 science. Reading retains original attribution without new credit.
+The initial alias-test collision and controller/provider-file refusal are retained;
+all originally admitted provider Python bodies remain unchanged via a detached
+pin for the concurrently extended sibling. Runtime stays5515e93/owned218.
+Feature-bundle disk bytes do not qualify persisted-index cost or a production
+backend. No new feature extraction or molecular operation is executed.
 
-Next: choose a first bounded immutable feature-manifest storage adapter from the
-audited primitives, then qualify create/open refusal, reopen/relocation, corruption,
-partial/failed publication and pinned or explicitly exclusive reader-close behavior.
-Keep metadata inspection, family coverage, quantity interpretation, source trust,
-lookup applicability and run resumability separate. QuantityRecord remains under
-its provisional owner contract; MolSysMT#624 stays open/unreceived. #148/#165
-remain stopped and #9/#23 retain full current-head/public/platform/release gates.
+Next: qualify guided/expert lifecycle operations, admission/refusal and recovery
+against this bounded adapter before proposing a public surface. Keep persisted
+lookup identity/size/rebuild compatibility and broader scale/cold/native-memory
+costs separate. MolSysMT#624 is open/unreceived; QuantityRecord remains under its
+provisional owner contract. #148/#165 stay stopped and #9/#23 retain full
+current-head/public/platform/release gates. No new CI checkpoint is requested.
 
 ## Received foundations and their boundaries
 
+- [#185 identity/lifetime contract](search_asset_identity_contract.md) and its
+  [receipt](evidence/search_asset_contract_20261110.json) retain24coverage controls,
+  cold/original-attribution receiving and the original canonical-format correction.
+  The requirements remain independent of the first physical adapter.
 - [#184 finite retrieval costs](retrieval_cost_workloads.md): 38 guards per context
   and twelve primary pairs preserve all native maps. Build plus one query costs
   more with index; later twelve-query batches favor it (scan/index2.100–2.307).

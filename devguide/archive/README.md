@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (125)
+### Resolved (126)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -103,6 +103,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`public_pharmacophore_curation.md`](public_pharmacophore_curation.md) — [#38](https://github.com/uibcdf/pharmacophoremt/issues/38) — Consolidate reusable cached-model selection, copying, extraction and constraint editing. *(resolved, measured)*
 - [`public_receptor_generation.md`](public_receptor_generation.md) — [#87](https://github.com/uibcdf/pharmacophoremt/issues/87) — Expose explicit bounded receptor hypotheses from native cached features. *(resolved, measured)*
 - [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(resolved, measured)*
+- [`qualify_feature_store_study.md`](qualify_feature_store_study.md) — [#186](https://github.com/uibcdf/pharmacophoremt/issues/186) — Qualify a bounded immutable feature-manifest storage adapter. *(resolved, measured)*
 - [`qualify_rdkit_projection.md`](qualify_rdkit_projection.md) — [#140](https://github.com/uibcdf/pharmacophoremt/issues/140) — Qualify RDKit pharmacophore projection and explicit constraint translation. *(resolved, reproduced)*
 - [`ranking_and_retrospective_accounting.md`](ranking_and_retrospective_accounting.md) — [#12](https://github.com/uibcdf/pharmacophoremt/issues/12) — Repair ranking metrics and retain explicit retrospective input accounting. *(resolved, measured)*
 - [`receive_aromatic_nitrogen_receptor_directions.md`](receive_aromatic_nitrogen_receptor_directions.md) — [#105](https://github.com/uibcdf/pharmacophoremt/issues/105) — Receive already defined native aromatic-nitrogen acceptor directions in an explicit receptor profile. *(resolved, measured)*

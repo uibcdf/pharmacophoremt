@@ -80,3 +80,10 @@ common preparation and optional index construction have separate costs: in that
 small analytical case, building an index for one query costs more, while a later
 twelve-query batch benefits from it. This result does not select a production
 default for other libraries or query mixes.
+
+An experimental [feature-store study](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_store_study.md)
+now checks retaining original features across close/reopen and failed or
+interrupted refresh. Existing readers keep their original generation. Recovery
+checks which complete generation is published; an interrupted caller does not
+by itself prove rollback. This remains bounded test support, with no public
+store API or persistent index.

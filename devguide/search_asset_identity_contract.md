@@ -155,7 +155,9 @@ per handle; a reader never changes generations silently.
    making the candidate visible as the requested generation.
 4. Publish through one adapter-qualified boundary. Update a current alias only
    after the candidate qualifies. Retain old generations/failed attempts and the
-   recovery route. A failed or interrupted refresh preserves the old publication.
+   recovery route. Failure before the publication boundary preserves the old
+   publication. After that boundary, an interrupted/raised caller can already
+   have published the new generation; verify visibility rather than infer rollback.
 5. Pin readers to the old or new generation without mixed payloads. An adapter
    without qualified overlapping-reader/publication support must require closure
    or refuse publication while readers exist. No multiwriter guarantee is assumed.
@@ -236,3 +238,11 @@ linked from the receipt. This source-supported contract and narrow coverage plan
 resolve #185; no physical schema, asset writer/reader, index backend, benchmark or
 public/platform/release claim follows. Next choose and qualify the bounded store
 experiment under these requirements. #148/#165 remain stopped.
+
+
+## First bounded adapter — 2026-11-10 UTC
+
+The [feature-store study](feature_store_study.md) implements a local POSIX
+immutable manifest/payload experiment under#186. This does not select a public
+format, molecular collection or persisted lookup backend. Its receiving and
+resource limits remain adapter-specific.

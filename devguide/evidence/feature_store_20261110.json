@@ -1,0 +1,458 @@
+{
+  "schema": "pharmacophoremt.feature-store-receiving@1",
+  "recorded_at_utc": "2026-11-10T21:45:25.954556+00:00",
+  "issue": 186,
+  "source_parent": "70900e35eed3da55e15ffee1b897455512e54017",
+  "contexts": {
+    "source": {
+      "guards": 53,
+      "test_names": [
+        "test_original_bytes_order_aliases_and_payload_deduplication",
+        "test_create_open_refuse_without_overwrite_or_autocreation",
+        "test_identity_tracks_order_literal_work_alias_and_original_payload[reorder]",
+        "test_identity_tracks_order_literal_work_alias_and_original_payload[alias]",
+        "test_identity_tracks_order_literal_work_alias_and_original_payload[unit-payload]",
+        "test_relocation_reopen_and_pinned_old_reader",
+        "test_close_releases_only_owned_resources_and_pending_iteration",
+        "test_incomplete_causes_seal_but_cannot_replace_current[failed]",
+        "test_incomplete_causes_seal_but_cannot_replace_current[partial]",
+        "test_incomplete_causes_seal_but_cannot_replace_current[unsupported]",
+        "test_incomplete_causes_seal_but_cannot_replace_current[unattempted]",
+        "test_explicit_empty_manifest_and_known_empty_family_keep_distinct_meanings",
+        "test_bad_input_refuses_without_publication[duplicate]",
+        "test_bad_input_refuses_without_publication[parent]",
+        "test_bad_input_refuses_without_publication[unknown-field]",
+        "test_bad_input_refuses_without_publication[status]",
+        "test_bad_input_refuses_without_publication[cause]",
+        "test_bad_input_refuses_without_publication[too-many]",
+        "test_bad_input_refuses_without_publication[not-list]",
+        "test_bad_input_refuses_without_publication[no-bytes]",
+        "test_bad_input_refuses_without_publication[oversized]",
+        "test_seal_rejects_wrong_dimension_before_install_and_preserves_old[nm]",
+        "test_seal_rejects_wrong_dimension_before_install_and_preserves_old[pm]",
+        "test_publish_revalidates_quantities_and_stale_caller_refuses",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[STORE.json-truncate]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[STORE.json-schema]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-truncate]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-traversal]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-size]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-noncanonical]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[generation-truncate]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[generation-checksum]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[schema]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[missing]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[unused]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[payload]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[binding]",
+        "test_nonregular_control_files_refuse_without_blocking[symlink]",
+        "test_nonregular_control_files_refuse_without_blocking[fifo]",
+        "test_nonregular_control_files_refuse_without_blocking[directory]",
+        "test_second_cooperating_writer_refuses_and_readers_need_no_lease",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[15-before]",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[15-after]",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[9-before]",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[9-after]",
+        "test_operation_receipts_retain_failures_without_claiming_rollback",
+        "test_reading_original_artifacts_creates_no_new_attribution",
+        "test_separate_process_writer_is_refused_without_touching_parent_lease",
+        "test_partial_generation_install_failure_keeps_old_current_and_retains_cause",
+        "test_corrupt_receipts_refuse_history_without_invalidating_published_generation",
+        "test_attempt_bound_and_unknown_retry_refuse_before_new_work",
+        "test_ready_input_cannot_override_exact_bytes_with_claimed_hash",
+        "test_existing_generation_corruption_is_never_overwritten_on_reseal"
+      ],
+      "original_test_xml_identity": {
+        "bytes": 8420,
+        "sha256": "07e20e3bbf5700d14d42c464b19cce037e95a8491a1f23ab1b590456b92fee53"
+      },
+      "generation": {
+        "schema": "pharmacophoremt.feature-store-study@1",
+        "generation": "42e95f04b32a5c9857b4792353a4969fab37cdde8e5b44db0cc6122afd7f45ac",
+        "bundle_bytes": 202213,
+        "records": [
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "empty:nm"
+          },
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "f10e2d23d5466a0ab4d29aa210487548c637c9dd2375d68207450efc693dba34",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "nm"
+          },
+          {
+            "occurrence_key": "water:0",
+            "snapshot_sha256": "0cdd3640d676ba2c0ca4dbc75b003f264d5d63513341f36cc40ce31bf1d62d0c",
+            "source_key": "water",
+            "status": "ready",
+            "work_key": "short:donor"
+          },
+          {
+            "occurrence_key": "ring3:0",
+            "snapshot_sha256": "eb0d61a8f537d9e2698f78b77fc311be7677642bab5d49aac294617f1da9c70d",
+            "source_key": "ring3",
+            "status": "ready",
+            "work_key": "ring:nm"
+          },
+          {
+            "occurrence_key": "mixed3:0",
+            "snapshot_sha256": "d95e08d5cedd27aa378094f5d63cddce4b0cdd85fb2a558d28642792779560b3",
+            "source_key": "mixed3",
+            "status": "ready",
+            "work_key": "mixed3:nm"
+          },
+          {
+            "occurrence_key": "mixed4:0",
+            "snapshot_sha256": "5286cfec9a31597e0e9804dbb4a4753e6b225c6e84f36ed4e959ce59bcd66775",
+            "source_key": "mixed4",
+            "status": "ready",
+            "work_key": "mixed4:nm"
+          },
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "af14e49203b8f9b6fd3ddd78219ef9d63c3bf51e11addc28000bcab5d8a2b60f",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "1 nm"
+          },
+          {
+            "occurrence_key": "ring3:0",
+            "snapshot_sha256": "949564e3539f6fe7b1400567add1588d872f9756c6ea30926ba63538758f68c8",
+            "source_key": "ring3",
+            "status": "ready",
+            "work_key": "ring:pm"
+          },
+          {
+            "occurrence_key": "mixed3:0",
+            "snapshot_sha256": "50b0473543a964777892682f62b345151f4064936cbbb1e41467ce3b2560e517",
+            "source_key": "mixed3",
+            "status": "ready",
+            "work_key": "mixed3:pm"
+          },
+          {
+            "occurrence_key": "mixed4:0",
+            "snapshot_sha256": "68a3e96c0426a88ee94eacc1647cf8f5dc3ea19e4023fcf3aaae05a3b04d6739",
+            "source_key": "mixed4",
+            "status": "ready",
+            "work_key": "mixed4:pm"
+          },
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "f10e2d23d5466a0ab4d29aa210487548c637c9dd2375d68207450efc693dba34",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "repeat=\u03b1"
+          }
+        ],
+        "unique_payloads": 10,
+        "complete": true,
+        "quantity_semantics_validated_by_open": false,
+        "molecular_origin_authenticated": false,
+        "persisted_lookup_index": false,
+        "scope": "captured-inventory-only"
+      },
+      "original_analytical_rows_preserved": 72,
+      "original_full_scientific_equal_per_unit": [
+        true,
+        true
+      ],
+      "strict_oracle_comparisons": 198,
+      "native_rational_boundary_observations": 66,
+      "native_rational_differences": 6,
+      "native_reference_proposal_calls": 446,
+      "cold_original_occurrences": 11,
+      "cold_scientific_imports": 0,
+      "public_support_payloads": 125,
+      "reading_created_no_credit": true,
+      "feature_generation_molecular_operations": 0,
+      "original_session_attribution_retained": true,
+      "loaded_runtime_modules_tests": 144,
+      "original_prior_result_identity": {
+        "bytes": 1154261,
+        "sha256": "13dd0a87da4a18fd5aeeeee3d5243b244cd1eb60e8f8001ab210108ae6dc4741"
+      }
+    },
+    "installed": {
+      "guards": 53,
+      "test_names": [
+        "test_original_bytes_order_aliases_and_payload_deduplication",
+        "test_create_open_refuse_without_overwrite_or_autocreation",
+        "test_identity_tracks_order_literal_work_alias_and_original_payload[reorder]",
+        "test_identity_tracks_order_literal_work_alias_and_original_payload[alias]",
+        "test_identity_tracks_order_literal_work_alias_and_original_payload[unit-payload]",
+        "test_relocation_reopen_and_pinned_old_reader",
+        "test_close_releases_only_owned_resources_and_pending_iteration",
+        "test_incomplete_causes_seal_but_cannot_replace_current[failed]",
+        "test_incomplete_causes_seal_but_cannot_replace_current[partial]",
+        "test_incomplete_causes_seal_but_cannot_replace_current[unsupported]",
+        "test_incomplete_causes_seal_but_cannot_replace_current[unattempted]",
+        "test_explicit_empty_manifest_and_known_empty_family_keep_distinct_meanings",
+        "test_bad_input_refuses_without_publication[duplicate]",
+        "test_bad_input_refuses_without_publication[parent]",
+        "test_bad_input_refuses_without_publication[unknown-field]",
+        "test_bad_input_refuses_without_publication[status]",
+        "test_bad_input_refuses_without_publication[cause]",
+        "test_bad_input_refuses_without_publication[too-many]",
+        "test_bad_input_refuses_without_publication[not-list]",
+        "test_bad_input_refuses_without_publication[no-bytes]",
+        "test_bad_input_refuses_without_publication[oversized]",
+        "test_seal_rejects_wrong_dimension_before_install_and_preserves_old[nm]",
+        "test_seal_rejects_wrong_dimension_before_install_and_preserves_old[pm]",
+        "test_publish_revalidates_quantities_and_stale_caller_refuses",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[STORE.json-truncate]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[STORE.json-schema]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-truncate]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-traversal]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-size]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[CURRENT-noncanonical]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[generation-truncate]",
+        "test_corruption_refuses_open_while_existing_reader_stays_pinned[generation-checksum]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[schema]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[missing]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[unused]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[payload]",
+        "test_self_consistent_generation_hash_does_not_bypass_bundle_checks[binding]",
+        "test_nonregular_control_files_refuse_without_blocking[symlink]",
+        "test_nonregular_control_files_refuse_without_blocking[fifo]",
+        "test_nonregular_control_files_refuse_without_blocking[directory]",
+        "test_second_cooperating_writer_refuses_and_readers_need_no_lease",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[15-before]",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[15-after]",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[9-before]",
+        "test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attempt[9-after]",
+        "test_operation_receipts_retain_failures_without_claiming_rollback",
+        "test_reading_original_artifacts_creates_no_new_attribution",
+        "test_separate_process_writer_is_refused_without_touching_parent_lease",
+        "test_partial_generation_install_failure_keeps_old_current_and_retains_cause",
+        "test_corrupt_receipts_refuse_history_without_invalidating_published_generation",
+        "test_attempt_bound_and_unknown_retry_refuse_before_new_work",
+        "test_ready_input_cannot_override_exact_bytes_with_claimed_hash",
+        "test_existing_generation_corruption_is_never_overwritten_on_reseal"
+      ],
+      "original_test_xml_identity": {
+        "bytes": 8420,
+        "sha256": "d89a06261c2bceacf1c06bbc81e60fdca70fef1da6d356666e93fc688bf41a74"
+      },
+      "generation": {
+        "schema": "pharmacophoremt.feature-store-study@1",
+        "generation": "183169d27f52a7d566af2136018d40e922442ca318af9099f57ad945c96dd90a",
+        "bundle_bytes": 202213,
+        "records": [
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "empty:nm"
+          },
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "92e5c6bacd0c6a68cb1ba097aae30755092bf586d51c3a829b4df8f3912cc63b",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "nm"
+          },
+          {
+            "occurrence_key": "water:0",
+            "snapshot_sha256": "b73a97e6c6847cc7a5be737d6ffc127a0b7d206761112765637b1ea7419882d8",
+            "source_key": "water",
+            "status": "ready",
+            "work_key": "short:donor"
+          },
+          {
+            "occurrence_key": "ring3:0",
+            "snapshot_sha256": "70877d22591d62deeca6d60242d2aebdd4d6bcd4f6bc68859d99d36e22ded991",
+            "source_key": "ring3",
+            "status": "ready",
+            "work_key": "ring:nm"
+          },
+          {
+            "occurrence_key": "mixed3:0",
+            "snapshot_sha256": "01a755c39099140b667a34c895d579b552cd5c002594a755d69462f26509a219",
+            "source_key": "mixed3",
+            "status": "ready",
+            "work_key": "mixed3:nm"
+          },
+          {
+            "occurrence_key": "mixed4:0",
+            "snapshot_sha256": "f2a4b7100602576f03eb14eeaee8d31daa99386d35ed19b4d51537706ebc1818",
+            "source_key": "mixed4",
+            "status": "ready",
+            "work_key": "mixed4:nm"
+          },
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "aaa4bbd2d4adfafc7b8c6341e287c2ff0a73f2909b6f69158e0d9c2033d3b7b1",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "1 nm"
+          },
+          {
+            "occurrence_key": "ring3:0",
+            "snapshot_sha256": "28aa6ea2be8763d10df5ca5f7c8ad1f6c3a711ea2438d42f0316b428496e0556",
+            "source_key": "ring3",
+            "status": "ready",
+            "work_key": "ring:pm"
+          },
+          {
+            "occurrence_key": "mixed3:0",
+            "snapshot_sha256": "a7d93866161196b4ccaa5cb3ff9003342fde4e317a0c3dff3d83960df1c67c6d",
+            "source_key": "mixed3",
+            "status": "ready",
+            "work_key": "mixed3:pm"
+          },
+          {
+            "occurrence_key": "mixed4:0",
+            "snapshot_sha256": "8a5bb58e7128a0ae859447a874ced046b2ddfc993ae8b750c6e68a9772cd91fa",
+            "source_key": "mixed4",
+            "status": "ready",
+            "work_key": "mixed4:pm"
+          },
+          {
+            "occurrence_key": "1 nm",
+            "snapshot_sha256": "92e5c6bacd0c6a68cb1ba097aae30755092bf586d51c3a829b4df8f3912cc63b",
+            "source_key": "nm",
+            "status": "ready",
+            "work_key": "repeat=\u03b1"
+          }
+        ],
+        "unique_payloads": 10,
+        "complete": true,
+        "quantity_semantics_validated_by_open": false,
+        "molecular_origin_authenticated": false,
+        "persisted_lookup_index": false,
+        "scope": "captured-inventory-only"
+      },
+      "original_analytical_rows_preserved": 72,
+      "original_full_scientific_equal_per_unit": [
+        true,
+        true
+      ],
+      "strict_oracle_comparisons": 198,
+      "native_rational_boundary_observations": 66,
+      "native_rational_differences": 6,
+      "native_reference_proposal_calls": 446,
+      "cold_original_occurrences": 11,
+      "cold_scientific_imports": 0,
+      "public_support_payloads": 125,
+      "reading_created_no_credit": true,
+      "feature_generation_molecular_operations": 0,
+      "original_session_attribution_retained": true,
+      "loaded_runtime_modules_tests": 144,
+      "original_prior_result_identity": {
+        "bytes": 1154264,
+        "sha256": "74972455380b773d06dc033ddd52baca576ade6d9eaf5ca7592539c531be4680"
+      }
+    }
+  },
+  "first_attempt": {
+    "passed": 46,
+    "failed": 1,
+    "errors": 0,
+    "original_xml_identity": {
+      "bytes": 11496,
+      "sha256": "5bed32822bc2e222f830b544285b325e2253fc062a9b3766a6e04ca19c7b1e9e"
+    },
+    "correction": {
+      "observed": "46 passed, one failed; no resource interruption",
+      "cause": "Chosen replacement alias repeat=\u03b1 already exists in the original manifest; the guard correctly refused duplicate work keys.",
+      "correction": "Use a distinct literal alias to test changed identity; retain duplicate-key refusal as its own control.",
+      "production_runtime_changed": false,
+      "first_fixture_and_result_retained": true
+    }
+  },
+  "orchestration_correction": {
+    "first_freeze": "Refused a newly added, unadmitted TopoMT Python file before scientific receiving. No original admitted body changed.",
+    "first_roundtrip_launch": "SyntaxError in task-owned receiving profile expression; no scientific driver was executed.",
+    "recovery": "Retain first logs; correct the controller expression, use a detached copy of all 305 originally admitted TopoMT Python bodies, refreeze all inputs, rerun both contexts.",
+    "profile_or_budget_escalated": false
+  },
+  "provider_pin": {
+    "provider": "topomt",
+    "python_bodies_verified": 305,
+    "copied_files": 663,
+    "excluded_files": [
+      "dfnd/core/physical_boundary.py"
+    ],
+    "original_admission_bodies_unchanged": true
+  },
+  "provider_status": [
+    {
+      "repository": "uibcdf/molsysmt",
+      "issue": 624,
+      "url": "https://github.com/uibcdf/molsysmt/issues/624",
+      "state": "open",
+      "updated_at": "2026-11-10T20:47:58Z"
+    },
+    {
+      "repository": "uibcdf/pyunitwizard",
+      "issue": 82,
+      "url": "https://github.com/uibcdf/pyunitwizard/issues/82",
+      "state": "closed",
+      "updated_at": "2026-10-05T07:18:24Z"
+    },
+    {
+      "repository": "uibcdf/pyunitwizard",
+      "issue": 83,
+      "url": "https://github.com/uibcdf/pyunitwizard/issues/83",
+      "state": "closed",
+      "updated_at": "2026-10-05T05:36:06Z"
+    }
+  ],
+  "resources": {
+    "one_cpu": true,
+    "backend_threads": 1,
+    "low_cpu_io_priority": true,
+    "DATA_bytes": 536870912,
+    "AS_bytes": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "reserve_fraction": 0.2,
+    "capacity_reserved": false,
+    "kernel_aggregate_enforcement": false,
+    "profile_or_budget_escalation": false,
+    "performance_measured": false
+  },
+  "implemented_scope": "Unshipped bounded local POSIX immutable feature-manifest store; detached readers and separate CURRENT publication, not a persisted lookup or supported public format.",
+  "identities_verified": {
+    "wheel_payloads": 214,
+    "runtime_bodies": 159,
+    "provider_python_files": 4594,
+    "native": {
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3"
+    },
+    "final_case_files": 72
+  },
+  "limits": [
+    "Captured-inventory scope, not authenticated source or full-source-family negatives.",
+    "Local cooperating POSIX behavior only; no fsync/power-loss/network filesystem/distributed/multithreaded shared-handle guarantee.",
+    "Original feature-bundle bytes are not index-size, speed or scale evidence.",
+    "QuantityRecord remains provisional; MolSysMT624 unreceived.",
+    "Full exact-head/public/installed/platform/release/human/biological gates remain separate;148/165stopped."
+  ],
+  "full_evidence": {
+    "path": "feature_store_20261110_full.json.gz",
+    "compressed_bytes": 1284716,
+    "compressed_sha256": "82c66a1d8cb66f4b2505ad64b6bcaa9fb389328795080ca745faa4e28ef22388",
+    "uncompressed_bytes": 10980976,
+    "uncompressed_sha256": "878960c9f349ddefe65853e2c0c04160ac125cf6d8b072d441f883866871e519"
+  },
+  "local_receiving_evidence": {
+    "path": "feature_store_20261110_receiving.json.gz",
+    "compressed_bytes": 1973,
+    "compressed_sha256": "4d09c71c49ef8214d71ff1cff362fb14b39e7e56edbdfc97ae541320b3cbbc05",
+    "uncompressed_bytes": 4592,
+    "uncompressed_sha256": "65ef6981cb60936c17e6f218720b0922cf6e42bc7e1c3ade05294fc702ec42a1"
+  },
+  "local_receiving": {
+    "checks": 7,
+    "strict_docs_exit": 0,
+    "local_links": 390,
+    "rendered_navigation": true,
+    "reviewed_original_public_payloads": 166
+  }
+}

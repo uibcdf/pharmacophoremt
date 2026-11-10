@@ -451,3 +451,21 @@ Future adapter publication/lifetime probes remain unexecuted. Next choose a
 bounded immutable feature-manifest storage experiment; no public API/format/index
 is selected. MolSysMT#624 and provisional quantity ownership stay separate;
 full supported delivery and stopped #148/#165 retain their original gates.
+
+## Immutable feature-store study — #186 (2026-11-10 UTC)
+
+The [bounded adapter](feature_store_study.md) now separates immutable original
+feature bundles, explicit incomplete records, publication and detached reader
+lifetime. The [receipt/archive](evidence/feature_store_20261110.json) receives
+53 guards per source/exact-owned218 context, controlled before/after-replacement
+SIGTERM/SIGKILL, cold metadata reads and reopened eleven-occurrence retrieval.
+Both unit policies preserve all72 original analytical rows per context, full
+maps/joins, original attribution and the earlier native/rational boundary
+observations. Feature-bundle bytes are measured storage, not persisted-index cost.
+The first alias-test collision and a refused sibling-file drift/controller
+correction are retained; the final provider Python bodies remain unchanged.
+No stable API, production backend, molecular collection or full-source-family
+negative follows. Next qualify guided/expert lifecycle admission and recovery
+before proposing a public surface; persisted lookup and wider costs remain
+separate. MolSysMT#624 stays owner-bound; #148/#165 remain stopped and #9/#23
+retain independent delivery gates.
