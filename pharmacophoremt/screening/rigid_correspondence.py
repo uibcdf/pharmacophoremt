@@ -15,7 +15,11 @@ from pharmacophoremt.modeler.aligned_cliques import _limit
 from pharmacophoremt.modeler.aligned_consensus import _records
 from pharmacophoremt.modeler.reference_ligand import from_feature_inventory
 
-from .correspondence import _noncollinear, get_correspondences
+from .correspondence import (
+    _noncollinear,
+    _pair_distance_exceeds_tolerance,
+    get_correspondences,
+)
 from .feature_neighborhoods import (
     get_feature_pair_dissimilarities,
     rank_rigid_feature_correspondences,
@@ -52,7 +56,9 @@ def get_rigid_feature_correspondences(
         not its greedy refinement or translation/exclusion correction.
     distance_tolerance : length quantity, default='0.15 nm'
         Intended maximum fitted pair displacement. The necessary internal
-        distance condition permits differences up to twice this tolerance.
+        distance condition permits differences up to twice this tolerance,
+        with an outward-rounded candidate allowance for final positive-site
+        slack and the two computed norms. Final matching is unchanged.
     min_matches : int, default=3
         Minimum maximal-clique size. Triplet proposals always contain three
         pairs; the consumer must test min_matches after fitting.
@@ -151,11 +157,12 @@ def get_rigid_feature_correspondences(
             if (
                 i != k
                 and j != column
-                and abs(
-                    np.linalg.norm(first[i]["center"] - first[k]["center"])
-                    - np.linalg.norm(second[j]["center"] - second[column]["center"])
+                and not _pair_distance_exceeds_tolerance(
+                    np.linalg.norm(second[j]["center"] - second[column]["center"]),
+                    np.linalg.norm(first[i]["center"] - first[k]["center"]),
+                    tolerance,
+                    tolerance,
                 )
-                <= 2 * tolerance
             ):
                 graph.add_edge((i, j), (k, column))
         correspondences, count, rejected = [], 0, 0

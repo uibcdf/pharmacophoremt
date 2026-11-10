@@ -92,3 +92,33 @@ Complete later-head source/dependency/
 public installed-platform, biological, performance and release gates remain
 independent. Changed scientific producer bindings can require a fresh linked run;
 historical independent saved reading retains its own supported route.
+
+## Association-graph correction — #177, 2026-11-10 UTC
+
+The graph proposal route in `get_rigid_feature_correspondences()` now reuses the
+same owned pair-distance predicate with its two equal positional tolerances.
+The association graph previously used a strict twice-tolerance comparison and
+could remove the original final-accepted binary witness. Physical radii, final
+matching, original feature indices, noncollinear eligibility, maximal-clique
+scope and graph/output limits are unchanged. This correction may retain extra
+uncertain candidates; later fitting/final evaluation remains authoritative.
+
+The [prospective plan](evidence/association_pruning_plan_20261110.json) freezes
+fresh source/provider Python identities, the unchanged native context and the
+original Fraction witness before execution. The original red run has 30 cases:
+19 pass and 11 fail at association admission, including actual public molecular
+recognition and `PoseEvaluator.evaluate()`. There are no collection errors or
+resource interruptions. The same frozen source cases then pass with the reused
+predicate: 141 selected cases, including 13 new association controls and 128
+existing cases. Eight original #175 ordinary-stage mappings remain identical;
+actual application-owned attribution contains eight items and eight uses.
+The [source receipt](evidence/association_pruning_source_20261110.json) retains
+identities and original failure/measurement records. Exact new-owned-artifact
+receiving remains pending at this source checkpoint.
+
+Execution keeps CPU19, one backend thread, nice19/idle I/O, DATA512MiB/AS1GiB,
+an observed own-group512MiB stop, 20 percent physical reserve plus the declared
+entry margin, and CPU120/wall180 limits. No kernel aggregate memory/swap/tasks/
+quota or reservation guarantee is available. Source scientific own-group RSS
+peaks at375693312bytes, below its unchanged limit. No manager/native provider
+update, #148/#165 retry or performance claim follows.

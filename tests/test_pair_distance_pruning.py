@@ -166,3 +166,113 @@ def test_nominal_boundary_and_interior_keep_original_counters(multiplier):
         n_pruned=0,
         complete=True,
     )
+
+
+def test_association_boundary_retains_an_accepted_mapping():
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    query, features, reference, candidate, radius = case()
+    expected = Fraction(1, 8) + Fraction(1, 2**52)
+    assert Fraction.from_float(dist(reference[0], candidate[0])) == expected
+    assert final_match(query, features, radius)["status"] == "matched"
+    result = get_rigid_feature_correspondences(
+        inventory(reference, KINDS),
+        features,
+        distance_tolerance=puw.quantity(radius, "nm"),
+    )
+    assert result["correspondences"] == [[[0, 0], [1, 1], [2, 2]]]
+    assert (result["n_graph_edges"], result["complete"]) == (3, True)
+
+
+@pytest.mark.parametrize("exponent", [-8, 0, 8])
+@pytest.mark.parametrize("order", [(0, 1, 2), (2, 0, 1)])
+def test_association_rescaling_preserves_original_occurrence_mapping(exponent, order):
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    query, features, reference, candidate, radius = case(exponent=exponent)
+    assert final_match(query, features, radius)["status"] == "matched"
+    features = inventory(candidate[list(order)], [KINDS[i] for i in order])
+    result = get_rigid_feature_correspondences(
+        inventory(reference, KINDS),
+        features,
+        distance_tolerance=puw.quantity(radius, "nm"),
+    )
+    assert result["correspondences"] == [[[i, order.index(i)] for i in range(3)]]
+    assert result["complete"]
+
+
+@pytest.mark.parametrize("unit", ["nm", "pm"])
+def test_association_explicit_units_keep_the_boundary_candidate(unit):
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    with puw.context(standard_units=[unit, "ps", "radians"]):
+        query, features, reference, _, radius = case(span=0.5, multiplier=0.5)
+        assert final_match(query, features, radius)["status"] == "matched"
+        result = get_rigid_feature_correspondences(
+            inventory(reference, KINDS),
+            features,
+            distance_tolerance=puw.quantity(radius, "nm"),
+        )
+        assert result["correspondences"] == [[[0, 0], [1, 1], [2, 2]]]
+
+
+def test_association_conservative_band_leaves_final_rejection_authoritative():
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    query, features, reference, _, radius = case(multiplier=2)
+    assert final_match(query, features, radius)["status"] == "not_matched"
+    result = get_rigid_feature_correspondences(
+        inventory(reference, KINDS),
+        features,
+        distance_tolerance=puw.quantity(radius, "nm"),
+    )
+    assert result["correspondences"] == [[[0, 0], [1, 1], [2, 2]]]
+
+
+def test_association_physical_mismatch_remains_a_completed_empty_result():
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    query, features, reference, _, radius = case(multiplier=2.0**40)
+    assert final_match(query, features, radius)["status"] == "not_matched"
+    result = get_rigid_feature_correspondences(
+        inventory(reference, KINDS),
+        features,
+        distance_tolerance=puw.quantity(radius, "nm"),
+    )
+    assert result["correspondences"] == [] and result["complete"]
+
+
+def test_association_boundary_still_enforces_the_declared_graph_bound():
+    from pharmacophoremt._private.smonitor.exceptions import CliqueLimitError
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    _, features, reference, _, radius = case()
+    with pytest.raises(CliqueLimitError):
+        get_rigid_feature_correspondences(
+            inventory(reference, KINDS),
+            features,
+            distance_tolerance=puw.quantity(radius, "nm"),
+            max_graph_nodes=2,
+        )
+
+
+def test_public_ion_evaluation_and_association_share_the_original_boundary():
+    from pharmacophoremt.screening import get_rigid_feature_correspondences
+
+    _, _, reference, candidate, radius = case()
+    first = system("[Na+].[Cl-].[K+]", reference)
+    second = system("[Na+].[Cl-].[K+]", candidate)
+    kinds = ["positive charge", "negative charge"]
+    query = from_ligand(first, features=kinds, radius=puw.quantity(radius, "nm"))
+    source_features = get_features(second, features=kinds)
+    before = puw.get_value(msm.get(second, coordinates=True), to_unit="nm").copy()
+    assert PoseEvaluator(query).evaluate(second)["status"] == "matched"
+    result = get_rigid_feature_correspondences(
+        get_features(first, features=kinds),
+        source_features,
+        distance_tolerance=puw.quantity(radius, "nm"),
+    )
+    assert [[0, 0], [1, 1], [2, 2]] in result["correspondences"]
+    np.testing.assert_array_equal(
+        puw.get_value(msm.get(second, coordinates=True), to_unit="nm"), before
+    )

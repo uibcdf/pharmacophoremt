@@ -31,6 +31,14 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+
+The [#177 association correction](pair_distance_pruning.md#association-graph-correction--177-2026-11-10-utc)
+advances milestone1 before using that route as the retrieval reference. Its
+original binary/public-ion witness exposes11association failures; the corrected
+source passes141selected cases with eight ordinary mappings preserved. Exact
+new-owned receiving is pending. No physical-radius/final-matcher or dependency
+change and no performance/biological qualification follows.
+
 The [#175 pmapper analytical comparison](pmapper_analytical_controls.md) receives
 eight original point cases and six cache/RNG observations identically from
 source and unchanged owned214, advancing milestones 5/6. Exact-bin matching

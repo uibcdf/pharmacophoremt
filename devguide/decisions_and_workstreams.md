@@ -23,6 +23,14 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+The [#177 association correction](pair_distance_pruning.md#association-graph-correction--177-2026-11-10-utc)
+advances milestone1 before using that route as the retrieval reference. Its
+original binary/public-ion witness exposes11association failures; the corrected
+source passes141selected cases with eight ordinary mappings preserved. Exact
+new-owned receiving is pending. No physical-radius/final-matcher or dependency
+change and no performance/biological qualification follows.
+
+
 2026-11-10: [#175 pmapper analytical controls](pmapper_analytical_controls.md)
 receive eight fixed point cases and six cache/RNG observations identically from
 source and unchanged owned214. Same-bin impossibility, cross-bin feasibility,

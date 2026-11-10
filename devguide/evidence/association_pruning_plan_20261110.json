@@ -1,0 +1,113 @@
+{
+  "schema": "pharmacophoremt.association-pruning-plan@1",
+  "issue": 177,
+  "declared_at_utc": "2026-11-10T01:12:29.601315+00:00",
+  "parent_source": "edfad9293ee1c8cdf7969fe3ad4489fe7eb7ae1d",
+  "original_guard": "tests/test_pair_distance_pruning.py::test_association_boundary_retains_an_accepted_mapping",
+  "red_selection": [
+    "tests/test_pair_distance_pruning.py"
+  ],
+  "green_selection": [
+    "tests/test_pair_distance_pruning.py",
+    "tests/test_correspondence_geometry.py",
+    "tests/test_rigid_consensus.py",
+    "tests/test_rigid_refinement.py"
+  ],
+  "workspace": "/tmp/phmt-association-receiving-20261110-xh4437de",
+  "fixtures": "/tmp/phmt-association-receiving-20261110-xh4437de/fixtures",
+  "site_packages": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/lib/python3.14/site-packages",
+  "provider_mapping": {
+    "ackredit": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit",
+    "argdigest": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest",
+    "depdigest": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest",
+    "molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt",
+    "molsysviewer_molsysmt": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysviewer_molsysmt",
+    "pytest_receptor": "/fast_data/home/liliana/repos@uibcdf/pytest-receptor-1.2.0/pytest_receptor",
+    "pyunitwizard": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard",
+    "sabueso": "/tmp/phmt-pmapper-controls-receiving-20261110-zvhd1j_i/providers/sabueso",
+    "smonitor": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor",
+    "topomt": "/fast_data/home/liliana/repos@uibcdf/topomt/topomt"
+  },
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+  },
+  "shared_sdk": {
+    "root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk",
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "modules": [
+      "devtools",
+      "devtools.scripts",
+      "devtools.scripts.installed_imports",
+      "devtools.scripts.noarch_conda",
+      "devtools.scripts.conda_release_contract",
+      "devtools.scripts.verify_public_conda"
+    ],
+    "files": {
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/installed_imports.py": {
+        "bytes": 4637,
+        "sha256": "ff23458015bb7ce83bc3eea36571c4294bed09fff948e8eb6d9bcb3a0615fa3c"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/noarch_conda.py": {
+        "bytes": 24232,
+        "sha256": "d62e0dd42ca04f1381b94b1a3c8ca5cc312db72fb946e2c759d92a3b4eb7bf07"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/conda_release_contract.py": {
+        "bytes": 24830,
+        "sha256": "ce166c0990f386eb5b020192ef9b8d8381a3da47aa8d95507a6adb51d30009f3"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/verify_public_conda.py": {
+        "bytes": 10111,
+        "sha256": "bb743343ec7a58659b90e6cbae1a06380c7fd8e2328b1b7c11c85e52fc890567"
+      }
+    },
+    "operation": "devtools.scripts.installed_imports.check_installed_imports",
+    "scope": "Reuse the qualified pure loaded-runtime origin checker. Case-specific guarded startup, prefix/provider admission, original-body execution and wheel-byte validation retain their own roles."
+  },
+  "source_context_note": "Freshly frozen provider Python bytes; unchanged native context. Explicit private Sabueso a73828d0 snapshot matches870original bodies. Editable finder metadata is discovery only and is not executed under -I -S. Preserve all live foreign work.",
+  "prior_ordinary_stage_result": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-pmapper-controls-20261110-dlm037_2/source_result.json",
+  "ordinary_stage_result_identity": {
+    "bytes": 200321,
+    "sha256": "72bb8913aab0103260210dddc3293e959ee9c180643c3425d16929ce3c3ffa18"
+  },
+  "old_owned_build": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-version-20261110-gem8pw_z/owned_build.json",
+  "resources": {
+    "scheduler": "Slurm clients present/no allocation; prior same-session controller access refused; no new scheduler, acquisition, compiler, manager or budget attempt.",
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "RLIMIT_DATA": 536870912,
+    "RLIMIT_AS": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "physical_reserve_fraction": 0.2,
+    "entry_own_envelope_bytes": 1610612736,
+    "CPU_seconds": 120,
+    "wall_seconds": 180,
+    "aggregate_memory_swap_tasks_cpu_quota_enforced": false,
+    "capacity_reserved": false
+  },
+  "oracle": "Original r=1/8nm, delta=2^-52nm exact Fraction witness plus actual unchanged final matching; no copied candidate allowance oracle.",
+  "change_budget": "Reuse existing candidate predicate in association graph only; physical/final/identity/finite-family and resource limits unchanged.",
+  "support_review": {
+    "PyUnitWizard": "Existing explicit length conversion boundary reused.",
+    "ArgDigest_SMonitor": "Existing public graph contracts/diagnostics unchanged; no new public argument.",
+    "DepDigest_optional_engine": "No new engine/dependency/access route.",
+    "Ackredit": "Existing runtime tracking and actual application-owned capture; no instrumentation per pair.",
+    "molecular_owner": "Existing supported MolSysMT recognition/fitting only; no molecular implementation in consumer."
+  },
+  "scope": "Selected core correction; no complete source/public installed-platform, prediction, benchmark or release qualification.148/165stopped.",
+  "retention_review": "2026-11-24",
+  "projection": "Prospective index; complete original plan retained in task capsule and subsequent hash-qualified archive.",
+  "original_plan": {
+    "bytes": 962368,
+    "sha256": "6354e09bacb4e34660b7289475818fcd4a01ddd0751b00dbb68783c51240491f"
+  },
+  "provider_Python_files": 4593,
+  "fixture_files": 882,
+  "runtime_body_files": 159
+}

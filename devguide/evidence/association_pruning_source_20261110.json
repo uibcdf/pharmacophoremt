@@ -1,0 +1,818 @@
+{
+  "schema": "pharmacophoremt.association-pruning-source@1",
+  "issue": 177,
+  "recorded_at_utc": "2026-11-10T01:17:37.671827+00:00",
+  "source_parent": "edfad9293ee1c8cdf7969fe3ad4489fe7eb7ae1d",
+  "runtime_overlay": {
+    "declared_at_utc": "2026-11-10T01:13:54.754027+00:00",
+    "changed_runtime_files": {
+      "pharmacophoremt/screening/rigid_correspondence.py": {
+        "bytes": 8886,
+        "sha256": "1c58029ba13ffdcbe151ccccb12c7568bdd9e9cad93919db794939f7f53ee618"
+      }
+    },
+    "scope": "Existing candidate predicate reused in association edges; no final matcher/physical radius/criteria/schema change."
+  },
+  "selection": [
+    "tests/test_pair_distance_pruning.py",
+    "tests/test_correspondence_geometry.py",
+    "tests/test_rigid_consensus.py",
+    "tests/test_rigid_refinement.py"
+  ],
+  "counts": {
+    "red": {
+      "cases": 30,
+      "failures": 11,
+      "errors": 0,
+      "skipped": 0,
+      "original_names": [
+        "fixtures.tests.test_pair_distance_pruning::test_original_binary_boundary_retains_a_public_proposal",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[False--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[False-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[False-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[True--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[True-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[True-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[nm-point]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[nm-sphere]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[pm-point]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[pm-sphere]",
+        "fixtures.tests.test_pair_distance_pruning::test_public_ion_evaluation_and_seed_filter_share_the_original_boundary",
+        "fixtures.tests.test_pair_distance_pruning::test_conservative_candidate_band_does_not_widen_final_matching",
+        "fixtures.tests.test_pair_distance_pruning::test_a_physical_distance_mismatch_remains_pruned",
+        "fixtures.tests.test_pair_distance_pruning::test_raw_product_budget_stays_incomplete_after_a_retained_boundary_seed",
+        "fixtures.tests.test_pair_distance_pruning::test_nominal_boundary_and_interior_keep_original_counters[0]",
+        "fixtures.tests.test_pair_distance_pruning::test_nominal_boundary_and_interior_keep_original_counters[-1]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_boundary_retains_an_accepted_mapping",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order0--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order0-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order0-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order1--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order1-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order1-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_explicit_units_keep_the_boundary_candidate[nm]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_explicit_units_keep_the_boundary_candidate[pm]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_conservative_band_leaves_final_rejection_authoritative",
+        "fixtures.tests.test_pair_distance_pruning::test_association_physical_mismatch_remains_a_completed_empty_result",
+        "fixtures.tests.test_pair_distance_pruning::test_association_boundary_still_enforces_the_declared_graph_bound",
+        "fixtures.tests.test_pair_distance_pruning::test_public_ion_evaluation_and_association_share_the_original_boundary"
+      ]
+    },
+    "source": {
+      "cases": 141,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0,
+      "original_names": [
+        "fixtures.tests.test_pair_distance_pruning::test_original_binary_boundary_retains_a_public_proposal",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[False--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[False-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[False-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[True--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[True-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_binary_rescaling_and_zero_weight_essential_keep_the_boundary_seed[True-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[nm-point]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[nm-sphere]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[pm-point]",
+        "fixtures.tests.test_pair_distance_pruning::test_point_tolerance_and_explicit_unit_policy_preserve_accepted_candidates[pm-sphere]",
+        "fixtures.tests.test_pair_distance_pruning::test_public_ion_evaluation_and_seed_filter_share_the_original_boundary",
+        "fixtures.tests.test_pair_distance_pruning::test_conservative_candidate_band_does_not_widen_final_matching",
+        "fixtures.tests.test_pair_distance_pruning::test_a_physical_distance_mismatch_remains_pruned",
+        "fixtures.tests.test_pair_distance_pruning::test_raw_product_budget_stays_incomplete_after_a_retained_boundary_seed",
+        "fixtures.tests.test_pair_distance_pruning::test_nominal_boundary_and_interior_keep_original_counters[0]",
+        "fixtures.tests.test_pair_distance_pruning::test_nominal_boundary_and_interior_keep_original_counters[-1]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_boundary_retains_an_accepted_mapping",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order0--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order0-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order0-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order1--8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order1-0]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_rescaling_preserves_original_occurrence_mapping[order1-8]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_explicit_units_keep_the_boundary_candidate[nm]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_explicit_units_keep_the_boundary_candidate[pm]",
+        "fixtures.tests.test_pair_distance_pruning::test_association_conservative_band_leaves_final_rejection_authoritative",
+        "fixtures.tests.test_pair_distance_pruning::test_association_physical_mismatch_remains_a_completed_empty_result",
+        "fixtures.tests.test_pair_distance_pruning::test_association_boundary_still_enforces_the_declared_graph_bound",
+        "fixtures.tests.test_pair_distance_pruning::test_public_ion_evaluation_and_association_share_the_original_boundary",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-query-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-query-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-query-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-association_cliques-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-association_cliques-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-association_cliques-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-ranked_triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-ranked_triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order0-ranked_triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-query-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-query-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-query-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-association_cliques-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-association_cliques-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-association_cliques-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-ranked_triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-ranked_triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order1-ranked_triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-query-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-query-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-query-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-association_cliques-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-association_cliques-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-association_cliques-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-ranked_triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-ranked_triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_physical_centers_never_define_a_rigid_triplet[order2-ranked_triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[query-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[query-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[query-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[association_cliques-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[association_cliques-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[association_cliques-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[ranked_triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[ranked_triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_three_distinct_noncollinear_centers_still_propose_the_identity[ranked_triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[query-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[query-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[query-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[association_cliques-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[association_cliques-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[association_cliques-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[triplet_seeds-origin2]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[ranked_triplet_seeds-origin0]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[ranked_triplet_seeds-origin1]",
+        "fixtures.tests.test_correspondence_geometry::test_two_center_candidate_is_a_completed_empty_proposal[ranked_triplet_seeds-origin2]",
+        "fixtures.tests.test_rigid_consensus::test_rigid_motion_recovery_uses_provider_and_keeps_sources_and_support[association_cliques]",
+        "fixtures.tests.test_rigid_consensus::test_rigid_motion_recovery_uses_provider_and_keeps_sources_and_support[triplet_seeds]",
+        "fixtures.tests.test_rigid_consensus::test_association_graph_matches_independent_injective_mapping_oracle",
+        "fixtures.tests.test_rigid_consensus::test_reflection_passes_invariant_filter_but_cannot_support_full_consensus[association_cliques]",
+        "fixtures.tests.test_rigid_consensus::test_reflection_passes_invariant_filter_but_cannot_support_full_consensus[triplet_seeds]",
+        "fixtures.tests.test_rigid_consensus::test_distorted_source_and_missing_direct_pivot_placement_do_not_claim_no_chemistry",
+        "fixtures.tests.test_rigid_consensus::test_ambiguous_mappings_are_retained_without_coverage_early_stop[association_cliques]",
+        "fixtures.tests.test_rigid_consensus::test_ambiguous_mappings_are_retained_without_coverage_early_stop[triplet_seeds]",
+        "fixtures.tests.test_rigid_consensus::test_exhausted_resource_is_failure_never_an_empty_consensus[options0-association_graph]",
+        "fixtures.tests.test_rigid_consensus::test_exhausted_resource_is_failure_never_an_empty_consensus[options1-triplet_proposals]",
+        "fixtures.tests.test_rigid_consensus::test_exhausted_resource_is_failure_never_an_empty_consensus[options2-rigid_alignment]",
+        "fixtures.tests.test_rigid_consensus::test_exhausted_resource_is_failure_never_an_empty_consensus[options3-association_cliques]",
+        "fixtures.tests.test_rigid_consensus::test_exhausted_resource_is_failure_never_an_empty_consensus[options4-alignment_layouts]",
+        "fixtures.tests.test_rigid_consensus::test_exhausted_resource_is_failure_never_an_empty_consensus[options5-hypothesis_combinations]",
+        "fixtures.tests.test_rigid_consensus::test_selection_frame_unit_policy_and_explicit_pivot_are_preserved",
+        "fixtures.tests.test_rigid_consensus::test_provider_failure_propagates_without_local_geometry_fallback",
+        "fixtures.tests.test_rigid_consensus::test_public_contract_rejects_invalid_options[options0]",
+        "fixtures.tests.test_rigid_consensus::test_public_contract_rejects_invalid_options[options1]",
+        "fixtures.tests.test_rigid_consensus::test_public_contract_rejects_invalid_options[options2]",
+        "fixtures.tests.test_rigid_consensus::test_public_contract_rejects_invalid_options[options3]",
+        "fixtures.tests.test_rigid_consensus::test_public_contract_rejects_invalid_options[options4]",
+        "fixtures.tests.test_rigid_consensus::test_public_contract_rejects_invalid_options[options5]",
+        "fixtures.tests.test_rigid_consensus::test_collinear_pivot_is_rejected_and_empty_candidate_is_completed",
+        "fixtures.tests.test_rigid_consensus::test_real_ackredit_captures_solver_branches_and_native_model_roundtrip",
+        "fixtures.tests.test_rigid_consensus::test_triplet_proposal_attribution_does_not_claim_unexecuted_clique_solver",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_agrees_with_scalar_geometry_and_preserves_ownership",
+        "fixtures.tests.test_rigid_refinement::test_inclusive_positional_boundary_and_directed_vector_reversal",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_matches_independent_scalar_oracle",
+        "fixtures.tests.test_rigid_refinement::test_nontriplet_seed_is_supported_and_inputs_are_validated_before_fitting",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_rejects_invalid_index_contract[pairs0]",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_rejects_invalid_index_contract[pairs1]",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_rejects_invalid_index_contract[pairs2]",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_rejects_invalid_index_contract[pairs3]",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_rejects_invalid_index_contract[pairs4]",
+        "fixtures.tests.test_rigid_refinement::test_pair_evaluation_rejects_invalid_index_contract[pairs5]",
+        "fixtures.tests.test_rigid_refinement::test_real_provider_policy_counterexamples_and_immutable_sources[orientation_recovery-final]",
+        "fixtures.tests.test_rigid_refinement::test_real_provider_policy_counterexamples_and_immutable_sources[orientation_recovery-each_step]",
+        "fixtures.tests.test_rigid_refinement::test_fit_budget_and_provider_failure_never_return_partial_science[orientation_recovery]",
+        "fixtures.tests.test_rigid_refinement::test_duplicate_seeds_and_empty_requests_and_invalid_policies[orientation_recovery]",
+        "fixtures.tests.test_rigid_refinement::test_actual_ackredit_records_both_executed_policies_and_no_empty_refinement[orientation_recovery]",
+        "fixtures.tests.test_rigid_refinement::test_real_provider_policy_counterexamples_and_immutable_sources[orientation_blocking-final]",
+        "fixtures.tests.test_rigid_refinement::test_real_provider_policy_counterexamples_and_immutable_sources[orientation_blocking-each_step]",
+        "fixtures.tests.test_rigid_refinement::test_fit_budget_and_provider_failure_never_return_partial_science[orientation_blocking]",
+        "fixtures.tests.test_rigid_refinement::test_duplicate_seeds_and_empty_requests_and_invalid_policies[orientation_blocking]",
+        "fixtures.tests.test_rigid_refinement::test_actual_ackredit_records_both_executed_policies_and_no_empty_refinement[orientation_blocking]",
+        "fixtures.tests.test_rigid_refinement::test_real_provider_policy_counterexamples_and_immutable_sources[orientation_checkpoint-final]",
+        "fixtures.tests.test_rigid_refinement::test_real_provider_policy_counterexamples_and_immutable_sources[orientation_checkpoint-each_step]",
+        "fixtures.tests.test_rigid_refinement::test_fit_budget_and_provider_failure_never_return_partial_science[orientation_checkpoint]",
+        "fixtures.tests.test_rigid_refinement::test_duplicate_seeds_and_empty_requests_and_invalid_policies[orientation_checkpoint]",
+        "fixtures.tests.test_rigid_refinement::test_actual_ackredit_records_both_executed_policies_and_no_empty_refinement[orientation_checkpoint]",
+        "fixtures.tests.test_rigid_refinement::test_consumer_composes_public_refinement_and_summary_counts_trials"
+      ]
+    }
+  },
+  "new_source_cases": 13,
+  "existing_source_cases": 128,
+  "original_tests_and_selected_inputs_unchanged": true,
+  "ordinary_stage_cases": 8,
+  "original_ordinary_mappings_preserved": true,
+  "ordinary_actual_attribution": {
+    "schema": "ackredit.attribution@1",
+    "name": "Association ordinary controls",
+    "context": {},
+    "items": [
+      {
+        "id": "pharmacophoremt:software:networkx:3.7",
+        "type": "software",
+        "title": "NetworkX",
+        "version": "3.7",
+        "url": "https://networkx.org/"
+      },
+      {
+        "id": "pharmacophoremt:networkx:paper:2008",
+        "type": "inproceedings",
+        "title": "Exploring network structure, dynamics, and function using NetworkX",
+        "authors": [
+          "Hagberg, Aric A.",
+          "Schult, Daniel A.",
+          "Swart, Pieter J."
+        ],
+        "booktitle": "Proceedings of the 7th Python in Science Conference (SciPy2008)",
+        "year": 2008,
+        "pages": "11\u201315",
+        "url": "https://networkx.org/documentation/stable/#citing"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1145/362342.362367",
+        "type": "article",
+        "title": "Algorithm 457: finding all cliques of an undirected graph",
+        "authors": [
+          "Bron, C.",
+          "Kerbosch, J."
+        ],
+        "journal": "Communications of the ACM",
+        "year": 1973,
+        "volume": "16",
+        "number": "9",
+        "pages": "575\u2013577",
+        "doi": "10.1145/362342.362367"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1016/j.tcs.2006.06.015",
+        "type": "article",
+        "title": "The worst-case time complexity for generating all maximal cliques and computational experiments",
+        "authors": [
+          "Tomita, Etsuji",
+          "Tanaka, Akira",
+          "Takahashi, Haruhisa"
+        ],
+        "journal": "Theoretical Computer Science",
+        "year": 2006,
+        "volume": "363",
+        "number": "1",
+        "pages": "28\u201342",
+        "doi": "10.1016/j.tcs.2006.06.015"
+      },
+      {
+        "id": "pharmacophoremt:software:pharmacophoremt:0.4.0+134.gee5d9fa",
+        "type": "software",
+        "title": "PharmacophoreMT",
+        "version": "0.4.0+134.gee5d9fa",
+        "url": "https://github.com/uibcdf/pharmacophoremt",
+        "authors": [
+          "{UIBCDF Lab}"
+        ]
+      },
+      {
+        "id": "pharmacophoremt:software:numpy:2.5.4",
+        "type": "software",
+        "title": "NumPy",
+        "version": "2.5.4",
+        "url": "https://numpy.org/"
+      },
+      {
+        "id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "type": "article",
+        "title": "Array programming with NumPy",
+        "authors": [
+          "Harris, Charles R.",
+          "Millman, K. Jarrod",
+          "van der Walt, St\u00e9fan J.",
+          "Gommers, Ralf",
+          "Virtanen, Pauli",
+          "Cournapeau, David",
+          "Wieser, Eric",
+          "Taylor, Julian",
+          "Berg, Sebastian",
+          "Smith, Nathaniel J.",
+          "Kern, Robert",
+          "Picus, Matti",
+          "Hoyer, Stephan",
+          "van Kerkwijk, Marten H.",
+          "Brett, Matthew",
+          "Haldane, Allan",
+          "Fern\u00e1ndez del R\u00edo, Jaime",
+          "Wiebe, Mark",
+          "Peterson, Pearu",
+          "G\u00e9rard-Marchant, Pierre",
+          "Sheppard, Kevin",
+          "Reddy, Tyler",
+          "Weckesser, Warren",
+          "Abbasi, Hameer",
+          "Gohlke, Christoph",
+          "Oliphant, Travis E."
+        ],
+        "journal": "Nature",
+        "year": 2020,
+        "volume": "585",
+        "pages": "357\u2013362",
+        "doi": "10.1038/s41586-020-2649-2"
+      },
+      {
+        "id": "pharmacophoremt:software:pyunitwizard:0.29.1+6.gf82b618",
+        "type": "software",
+        "title": "PyUnitWizard",
+        "version": "0.29.1+6.gf82b618",
+        "url": "https://github.com/uibcdf/pyunitwizard"
+      }
+    ],
+    "uses": [
+      {
+        "item_id": "pharmacophoremt:software:networkx:3.7",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.graph",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "networkx",
+          "version": "3.7"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:networkx:paper:2008",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.graph",
+        "roles": [
+          "software_description"
+        ],
+        "context": {
+          "software": "networkx",
+          "version": "3.7"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1145/362342.362367",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.find_cliques",
+        "roles": [
+          "reference_implementation"
+        ],
+        "context": {
+          "method": "bron_kerbosch",
+          "software": "networkx",
+          "version": "3.7"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1016/j.tcs.2006.06.015",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.find_cliques",
+        "roles": [
+          "reference_implementation"
+        ],
+        "context": {
+          "method": "tomita_cliques",
+          "software": "networkx",
+          "version": "3.7"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:pharmacophoremt:0.4.0+134.gee5d9fa",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pharmacophoremt",
+          "version": "0.4.0+134.gee5d9fa"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:numpy:2.5.4",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
+        "roles": [
+          "software_description"
+        ],
+        "context": {
+          "software": "numpy",
+          "version": "2.5.4"
+        }
+      },
+      {
+        "item_id": "pharmacophoremt:software:pyunitwizard:0.29.1+6.gf82b618",
+        "used_by": "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
+        "roles": [
+          "executed_software"
+        ],
+        "context": {
+          "software": "pyunitwizard",
+          "version": "0.29.1+6.gf82b618"
+        }
+      }
+    ],
+    "usage_tree": {
+      "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences": {
+        "items": [
+          "pharmacophoremt:doi:10.1038/s41586-020-2649-2",
+          "pharmacophoremt:software:numpy:2.5.4",
+          "pharmacophoremt:software:pharmacophoremt:0.4.0+134.gee5d9fa",
+          "pharmacophoremt:software:pyunitwizard:0.29.1+6.gf82b618"
+        ],
+        "children": [
+          "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences",
+          "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.find_cliques",
+          "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.graph"
+        ]
+      },
+      "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.graph": {
+        "items": [
+          "pharmacophoremt:networkx:paper:2008",
+          "pharmacophoremt:software:networkx:3.7"
+        ],
+        "children": []
+      },
+      "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences.find_cliques": {
+        "items": [
+          "pharmacophoremt:doi:10.1016/j.tcs.2006.06.015",
+          "pharmacophoremt:doi:10.1145/362342.362367"
+        ],
+        "children": []
+      }
+    }
+  },
+  "provider_Python_files": 4593,
+  "loaded_PHMT_modules": 148,
+  "runtime_version": "0.4.0+134.gee5d9fa",
+  "distribution_version": "0.4.0+120.g0925d97",
+  "metadata_does_not_replace_body_identity": true,
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+  },
+  "resources": {
+    "red": {
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 10.413340319995768,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 309919744
+    },
+    "source": {
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 68.31029993999982,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 375693312
+    },
+    "source-ordinary": {
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 5.557321511005284,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 170196992
+    }
+  },
+  "shared_prefix_or_foreign_work_modified": false,
+  "complete_source_installed_public_platform_or_release_qualification": false,
+  "installed_receiving": "Pending exact new-owned artifact; source receipt does not close177.",
+  "retention": {
+    "capsule": "build/phmt-association-pruning-20261110-_9wkzk5h",
+    "workspace": "/tmp/phmt-association-receiving-20261110-xh4437de",
+    "review": "2026-11-24"
+  },
+  "original_evidence_files": {
+    "controls/boundary.py": {
+      "bytes": 5867,
+      "sha256": "2fd728d30ec4e28d99982657e78864e7beed37b2a35476b2fcec33bfadea79a4"
+    },
+    "controls/build_docs.py": {
+      "bytes": 4850,
+      "sha256": "24fc2439268fb56e0430e09d02e30a2634db347fe1ca5c4444084b64279bff01"
+    },
+    "controls/launch.py": {
+      "bytes": 199,
+      "sha256": "d33a8604718f3ccc2d0dd9adb87b899d8ca658766d7c735bff7aba03404bfa30"
+    },
+    "controls/offline_inventory.py": {
+      "bytes": 402,
+      "sha256": "c3299ec00ca784139af2b44e3c5d153f27e08123fa3c66c018cf18c39dd9d683"
+    },
+    "controls/ordinary.py": {
+      "bytes": 3686,
+      "sha256": "f91b951bae0d800562b82d2e18c7b0e0beffac9f3ca973bc80eab12e8bc8274c"
+    },
+    "controls/original_rigid_correspondence.py": {
+      "bytes": 8626,
+      "sha256": "3b47e7c57e19ccc57679bbab85dcb4213f58bbc2198eab3a4bf5927dd4666844"
+    },
+    "controls/prepare.py": {
+      "bytes": 5005,
+      "sha256": "ee43022bc9e6a5abe8681513c72b587098a619e9f633cc082d7f9a90597d7ee4"
+    },
+    "controls/receive.py": {
+      "bytes": 3495,
+      "sha256": "924d7f5e9b5a7ccbfa72082a8a4ad2849d9c43fba8fed9d1b52a7f5b86bd17f0"
+    },
+    "controls/receive_before_reporting_metadata.py": {
+      "bytes": 3446,
+      "sha256": "c82d067f4af6ee9ccc06f6be6a53f3ebd3e861ff907744316f59dc88a137bce8"
+    },
+    "controls/receive_source.py": {
+      "bytes": 3429,
+      "sha256": "1b076995a5b1fbf23093364562e70857b603eb0123ef1b33e17679e9aabf62e7"
+    },
+    "controls/run_bounded.py": {
+      "bytes": 3543,
+      "sha256": "dc1b133c57a25f5c9daf5f64c8479d7bbbeaf44301bfb2079766cac0c4203f16"
+    },
+    "controls/run_build_bounded.py": {
+      "bytes": 3555,
+      "sha256": "1d1fb44c8276e1c1f2d2e71418735bdc4b428302a64d398fdffa25c8c367376f"
+    },
+    "fixture_source_scope.json": {
+      "bytes": 586,
+      "sha256": "d6ae403e99a05b54abf16d4d91bfada084f5a93ca44e171bdd937b34f604f98a"
+    },
+    "implementation.json": {
+      "bytes": 392,
+      "sha256": "9f3bbcc78d6d8bc40aba06541ee61ddf2b37b5a55f0996fa92c60d1bfd5b80ab"
+    },
+    "logs/offline.log": {
+      "bytes": 78,
+      "sha256": "d9eac48ac14fd8fe2e0447a1bb30bddd9900fd0323e77618c241d2a79d69315c"
+    },
+    "logs/offline.resources": {
+      "bytes": 880,
+      "sha256": "fdb9e626a34d209aee45a4fb8e03a1a89c4823af6288f7d7ebc1019b10dbdb8e"
+    },
+    "logs/prepare.log": {
+      "bytes": 142,
+      "sha256": "75b644388756b5fd4f44066b6a901467b80bf2929235a8c4fe50d048f213b8ea"
+    },
+    "logs/prepare.resources": {
+      "bytes": 865,
+      "sha256": "ae114b86842a2e47f93b717fbc3d08fd5eaa48b5c2074d9aaec4192b2c06a6be"
+    },
+    "logs/receive-source.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/receive-source.resources": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "logs/red.events.jsonl": {
+      "bytes": 57443,
+      "sha256": "c0729d3a0691b82b62ea2073776b130d4932a1c805d19ecdec44ab5dd8dece39"
+    },
+    "logs/red.log": {
+      "bytes": 2447,
+      "sha256": "e81170cc4d637ab4f6fa0e5d90a87b497688ea976597e4eee3dad478c1e74461"
+    },
+    "logs/red.resources": {
+      "bytes": 911,
+      "sha256": "93ad3787ad0adcb65217772067f94cdf4644ea14addbdc1dc161a50e1af2dbca"
+    },
+    "logs/red.xml": {
+      "bytes": 17905,
+      "sha256": "469b86800a7f6780234241fbdb2b814fe853005c5a3d5b15dda804eb209e6fe5"
+    },
+    "logs/source-ordinary.log": {
+      "bytes": 4562,
+      "sha256": "a3d2706fa9de99aa4c80fb72f46fdea19056767d0a77194d70dc2112b18dce4c"
+    },
+    "logs/source-ordinary.resources": {
+      "bytes": 881,
+      "sha256": "e45b44fdc18fa02e4cb0d32e3a8c987ee2d5b99236b32cefa2c5b7bf00eec337"
+    },
+    "logs/source.events.jsonl": {
+      "bytes": 195757,
+      "sha256": "f2a33aa5aaec0457e805d684ebfd9269cf695cd941919559ab3692d4425ca976"
+    },
+    "logs/source.log": {
+      "bytes": 153,
+      "sha256": "7c85e0dc8897a0bfc4b834c29ddc26d949cef2ea86344230dd53b8f01a7a562c"
+    },
+    "logs/source.resources": {
+      "bytes": 880,
+      "sha256": "03809ec9a1460ec839f14c151ec56b6cf24e2e4b11c9faa842d90c812a1fcd40"
+    },
+    "logs/source.xml": {
+      "bytes": 23514,
+      "sha256": "c090728645e276594e5f176402423f142773f3961fb427f5f734b40f5d136e48"
+    },
+    "offline_command.json": {
+      "bytes": 5073,
+      "sha256": "558216e7049f798e7ae90ddce047ee94d2ab1e52d4fdfb587ee79f8bea42cfc2"
+    },
+    "offline_status.json": {
+      "bytes": 6145,
+      "sha256": "fbee7b9882aede4756d317fb32a5bf49bbd62a54c0b5ce280c677cffe2febd79"
+    },
+    "plan.json": {
+      "bytes": 962368,
+      "sha256": "6354e09bacb4e34660b7289475818fcd4a01ddd0751b00dbb68783c51240491f"
+    },
+    "prepare_command.json": {
+      "bytes": 6965,
+      "sha256": "48829c9189c7862438a9afdce93c82aa263ae66969b06f8ec4cd77bb07b62c7d"
+    },
+    "red_command.json": {
+      "bytes": 40948,
+      "sha256": "dab385b47d4f7cfa4e19bc3d5db8be2ee703c39dec4d8283205de8e3c6bd8b29"
+    },
+    "red_receiving.json": {
+      "bytes": 767569,
+      "sha256": "2e4a09dafcc0f13f38fdcbdc00313ffe34eae163aa50067b994d24694a5e9962"
+    },
+    "source-ordinary_command.json": {
+      "bytes": 22664,
+      "sha256": "541c803c065a517bf8d6f959ad35d29daba796649ab8aea52cdc8733b6b10ee7"
+    },
+    "source_command.json": {
+      "bytes": 259392,
+      "sha256": "f77dd2f56b7601113ef66c9eed929e2130b82473fb732e598837cb5a62938733"
+    },
+    "source_ordinary.json": {
+      "bytes": 563117,
+      "sha256": "a16930277ee51b4408c9a156d7cd52ddf9ee2631fde886e31beddff1d8d96e08"
+    },
+    "source_receiving.json": {
+      "bytes": 891983,
+      "sha256": "7218212d27865ba798e4e526dd1204d8f233ddfbf3d0adc936325bac2a5e6c36"
+    }
+  },
+  "scope": "Selected boundary correction; original full evidence retained locally and to be included in exact-owned receiving archive. No148/165retry or numerical-budget escalation.",
+  "local_checks": [
+    {
+      "name": "index-generate",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "code": 0,
+      "output": "wrote devguide/pending_bugs/README.md\n"
+    },
+    {
+      "name": "ruff",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "code": 0,
+      "output": "454 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.111s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.830s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "args": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "strict_full_docs": {
+    "status": "completed",
+    "exit_code": 0,
+    "seconds": 10.009260749997338,
+    "interruption": null,
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=90",
+      "--fsize=67108864",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-association-pruning-20261110-_9wkzk5h/logs/docs-resources.txt",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-j",
+      "1",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "-q",
+      "-D",
+      "nb_execution_mode=off",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-association-pruning-20261110-_9wkzk5h/html"
+    ]
+  },
+  "fixture_source_metadata_exception": {
+    "declared_at_utc": "2026-11-10T01:16:33.374100+00:00",
+    "immutable_staged_files": 882,
+    "root_source_exception": "tests/test_reporting_protocol.py",
+    "reason": "Local issue inventory is updated after source qualification, before exact-owned build. This unselected module was neither imported nor executed by the scientific selections. All staged fixture bytes, actually selected scientific modules/helpers and every other original source/native/provider fence remain unchanged.",
+    "original_source_and_red_runs_preserved": true,
+    "scientific_bodies_or_inputs_changed": false
+  }
+}

@@ -9,6 +9,18 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#177 association admission](pair_distance_pruning.md#association-graph-correction--177-2026-11-10-utc)
+corrects a core inconsistency discovered while preparing retrieval controls.
+The graph route now reuses the existing conservative triplet candidate predicate;
+physical radii and final matching stay unchanged. Original red evidence has
+19passes/11failures; all141selected corrected source cases pass, with eight
+original ordinary-stage mappings unchanged and actual attribution retained.
+The [source receipt](evidence/association_pruning_source_20261110.json) keeps
+original source/provider/native identities and independent public ion evaluation.
+Exact new-owned-artifact receiving is pending. Next: receive those same bodies
+from the exact source wheel, then declare the finite retrieval experiment against
+this corrected reference. #148/#165 remain stopped.
+
 [#175 pmapper analytical controls](pmapper_analytical_controls.md) complete the
 next comparative segment for milestones 5/6. Eight fixed point cases and six
 cache/RNG observations give identical original results from source and unchanged
