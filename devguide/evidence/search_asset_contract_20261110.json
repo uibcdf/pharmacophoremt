@@ -1,0 +1,208 @@
+{
+  "schema": "pharmacophoremt.search-asset-contract-summary@1",
+  "issue": 185,
+  "date_utc": "2026-11-10",
+  "source_parent": "64f4f8bfab1b1f9a8f96a78c8ddb2ad818230b05",
+  "contexts": {
+    "source": {
+      "guards": 24,
+      "test_names": [
+        "test_empty_aromatic_evaluation_does_not_evaluate_donor_charge_families",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[1-required0-known0-missing0]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[1-required1-known1-missing1]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[3-required2-known2-missing2]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[4-required3-known3-missing3]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[5-required4-known4-missing4]",
+        "test_required_family_order_duplicates_and_literal_parent_keys_are_separate",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[required0]",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[hb donor]",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[required2]",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[required3]",
+        "test_requesting_all_families_keeps_unobserved_families_explicit",
+        "test_relocation_preserves_original_bytes_and_noncanonical_reencoding_is_refused",
+        "test_self_consistent_claimed_producer_is_not_authenticated_origin",
+        "test_coverage_and_structural_inspection_do_not_validate_quantity_dimension[nm]",
+        "test_coverage_and_structural_inspection_do_not_validate_quantity_dimension[pm]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[reencode]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[reorder]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[work_key]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[other_unit_original]",
+        "test_same_physical_unit_projection_does_not_merge_original_encodings[nm]",
+        "test_same_physical_unit_projection_does_not_merge_original_encodings[pm]",
+        "test_new_order_changes_manifest_while_candidate_original_keys_survive",
+        "test_supported_new_query_reuses_current_asset_without_claiming_run_resume"
+      ],
+      "cold_original_snapshots": 20,
+      "cold_scientific_imports": 0,
+      "cold_scientific_import_attempts": 0,
+      "public_support_payloads": 125,
+      "real_attribution_original_snapshots_read_twice": 20,
+      "reading_created_no_credit": true,
+      "original_attribution_unchanged": true,
+      "native_matching_feature_generation_molecular_operations": 0,
+      "runtime_origins": 144,
+      "original_xml_identity": {
+        "bytes": 4395,
+        "sha256": "5262be18d3ae227690165454ebac9d1042cdba2c95bcfc5ec66bb411ddd3d4b3"
+      }
+    },
+    "installed": {
+      "guards": 24,
+      "test_names": [
+        "test_empty_aromatic_evaluation_does_not_evaluate_donor_charge_families",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[1-required0-known0-missing0]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[1-required1-known1-missing1]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[3-required2-known2-missing2]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[4-required3-known3-missing3]",
+        "test_recorded_family_counts_preserve_original_evaluation_scope[5-required4-known4-missing4]",
+        "test_required_family_order_duplicates_and_literal_parent_keys_are_separate",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[required0]",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[hb donor]",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[required2]",
+        "test_invalid_required_families_refuse_before_snapshot_inspection[required3]",
+        "test_requesting_all_families_keeps_unobserved_families_explicit",
+        "test_relocation_preserves_original_bytes_and_noncanonical_reencoding_is_refused",
+        "test_self_consistent_claimed_producer_is_not_authenticated_origin",
+        "test_coverage_and_structural_inspection_do_not_validate_quantity_dimension[nm]",
+        "test_coverage_and_structural_inspection_do_not_validate_quantity_dimension[pm]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[reencode]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[reorder]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[work_key]",
+        "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[other_unit_original]",
+        "test_same_physical_unit_projection_does_not_merge_original_encodings[nm]",
+        "test_same_physical_unit_projection_does_not_merge_original_encodings[pm]",
+        "test_new_order_changes_manifest_while_candidate_original_keys_survive",
+        "test_supported_new_query_reuses_current_asset_without_claiming_run_resume"
+      ],
+      "cold_original_snapshots": 20,
+      "cold_scientific_imports": 0,
+      "cold_scientific_import_attempts": 0,
+      "public_support_payloads": 125,
+      "real_attribution_original_snapshots_read_twice": 20,
+      "reading_created_no_credit": true,
+      "original_attribution_unchanged": true,
+      "native_matching_feature_generation_molecular_operations": 0,
+      "runtime_origins": 144,
+      "original_xml_identity": {
+        "bytes": 4395,
+        "sha256": "7510ceec6152d1633f6c5a8f5e1db1e402537d9fccacedb57b761d82b35f4d59"
+      }
+    }
+  },
+  "first_attempt": {
+    "passed": 22,
+    "failed": 2,
+    "errors": 0,
+    "original_xml_identity": {
+      "bytes": 8656,
+      "sha256": "b22373e92aa2f383b0fa44597f01f55d3051ac0861a59dbf177f73508aa6439a"
+    },
+    "failed_names": [
+      "test_relocation_preserves_bytes_but_reencoding_changes_only_encoded_identity",
+      "test_current_lookup_refuses_changed_manifest_even_for_same_feature_content[reencode]"
+    ],
+    "correction": {
+      "original_source_test_result": "22 passed/2 failed; no native matching/feature generation/molecular calls",
+      "cause": "Initial contract/control assumption incorrectly allowed noncanonical outer re-encoding. Existing FeatureSnapshotStudy._unpack explicitly requires encoded == canonical(envelope).encode().",
+      "correction": "Preserve original bytes on relocation; reject noncanonical representation separately from changed original manifest binding. The payload digest and exact-byte digest retain different scopes; no admissible alternate outer encoding is claimed.",
+      "existing_reader_changed": false,
+      "original_first_plan": "first_plan.json",
+      "original_failed_logs": "logs/green-source-tests.xml",
+      "original_contract_draft": "unpublished_contract_before_canonical_correction.md"
+    }
+  },
+  "source_audit": {
+    "source_files": 10,
+    "prepared_run_declared_boundaries": 6,
+    "quantity_reader_fields": 4,
+    "current_study_settings_keys": [
+      "unit",
+      "bin_width",
+      "anchor_feature_indices",
+      "numerical_guard_bins",
+      "original_manifest_sha256",
+      "profile",
+      "feature_labels"
+    ],
+    "scientific_execution": false
+  },
+  "provider_status_snapshot": [
+    {
+      "repository": "uibcdf/molsysmt",
+      "issue": 624,
+      "url": "https://github.com/uibcdf/molsysmt/issues/624",
+      "title": "Provide a resource-owning small-molecule collection interface with source mappings",
+      "state": "open",
+      "updated_at": "2026-11-10T19:36:14Z"
+    },
+    {
+      "repository": "uibcdf/pyunitwizard",
+      "issue": 83,
+      "url": "https://github.com/uibcdf/pyunitwizard/issues/83",
+      "title": "Design record: serializing and exchanging quantities across MOLI and MolSysSuite",
+      "state": "closed",
+      "updated_at": "2026-10-05T05:36:06Z"
+    },
+    {
+      "repository": "uibcdf/pyunitwizard",
+      "issue": 82,
+      "url": "https://github.com/uibcdf/pyunitwizard/issues/82",
+      "title": "QuantityRecord: PyUnitWizard's native inert interchange form (verified quantity records)",
+      "state": "closed",
+      "updated_at": "2026-10-05T07:18:24Z"
+    }
+  ],
+  "identities_verified": {
+    "wheel_payloads": 214,
+    "runtime_bodies": 159,
+    "provider_python_files": 4594,
+    "native": {
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3"
+    },
+    "final_case_files": 69
+  },
+  "implemented_scope": "Unshipped declared-family coverage preflight; query/match/quantity/origin/full-compatibility decisions remain unset.",
+  "contract_scope": "Backend-independent requirements; future publication/lifetime/storage-adapter scenarios are not claimed implemented or executed. The unshipped helper reports declared family coverage only.",
+  "resources": {
+    "one_cpu": true,
+    "backend_threads": 1,
+    "low_cpu_io_priority": true,
+    "DATA_bytes": 536870912,
+    "AS_bytes": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "reserve_fraction": 0.2,
+    "capacity_reserved": false,
+    "kernel_aggregate_enforcement": false,
+    "profile_or_budget_escalation": false,
+    "performance_measured": false
+  },
+  "limits": [
+    "No new persisted schema, asset reader/writer, format/backend or production index is selected.",
+    "Existing point-inventory cases stay unchanged; they do not become full-source-family negatives.",
+    "Actual quantity/provenance/provider contracts retain separate admission; QuantityRecord remains provisional.",
+    "Native matching/feature generation/molecular operations and performance measurements are not executed.",
+    "Future publication/refresh/close storage probes and full current-head/public/platform/release gates remain separate;148/165stopped."
+  ],
+  "full_evidence": {
+    "path": "search_asset_contract_20261110_full.json.gz",
+    "compressed_bytes": 734998,
+    "compressed_sha256": "1dfedf98aea55cd0d04edf51ddcc6e12b5405ec81771ccf67e77f02bf14c6439",
+    "uncompressed_bytes": 4549404,
+    "uncompressed_sha256": "4dd464d1ffbcb3f6eb7ed085385045d6c24225f992c7b9150f056dc03354582e"
+  },
+  "local_receiving_evidence": {
+    "path": "search_asset_contract_20261110_receiving.json.gz",
+    "compressed_bytes": 1890,
+    "compressed_sha256": "4a6a044c2b4bf4ca049fb3170cf24ff87230afe1e0ef00442635de449a963229",
+    "uncompressed_bytes": 4369,
+    "uncompressed_sha256": "32ec8971efc468d660d9a4c8d70455f6d66f390e5b5fe770d1ce03a69e2c24b0"
+  },
+  "local_receiving": {
+    "checks": 7,
+    "strict_docs_exit": 0,
+    "local_links": 378,
+    "rendered_navigation": true,
+    "reviewed_original_public_payloads": 150
+  }
+}

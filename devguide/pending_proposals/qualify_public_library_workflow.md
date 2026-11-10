@@ -440,3 +440,18 @@ occurrences. Persisted index size/native memory/process-cold costs remain unknow
 Next define backend-independent persisted-asset identity/lifetime requirements,
 then broader query-mix/corpus and missing-cost gates. MolSysMT#624 stays open;
 #148/#165 stay stopped and full supported/human/release gates remain separate.
+
+## Persistent search-asset contract — #185 (2026-11-10 UTC)
+
+[Identity/coverage/lifetime requirements](../search_asset_identity_contract.md) and
+[acceptance examples](../search_asset_acceptance_examples.md) now separate stored
+payloads, occurrence manifests, derived lookup, generations and query/run bindings.
+The [receipt/archive](../evidence/search_asset_contract_20261110.json) receives a
+source audit and24primitive controls per source/exact-owned218 context, cold reads
+of20originals without scientific imports and real-provider reads without new
+credit. The initial canonical-format test assumption was corrected; original
+failures remain and the existing reader/scientific runtime stay unchanged.
+Future adapter publication/lifetime probes remain unexecuted. Next choose a
+bounded immutable feature-manifest storage experiment; no public API/format/index
+is selected. MolSysMT#624 and provisional quantity ownership stay separate;
+full supported delivery and stopped #148/#165 retain their original gates.

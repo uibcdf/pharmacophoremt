@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (124)
+### Resolved (125)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -78,6 +78,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`packaging_license_metadata.md`](packaging_license_metadata.md) — [#57](https://github.com/uibcdf/pharmacophoremt/issues/57) — Use SPDX license metadata with a compatible setuptools backend and remove the stale Versioneer manifest entry. *(resolved, reproduced)*
 - [`pair_distance_pruning_slack.md`](pair_distance_pruning_slack.md) — [#160](https://github.com/uibcdf/pharmacophoremt/issues/160) — Qualify triplet pair-distance pruning against accepted positional roundoff slack. *(resolved, measured)*
 - [`partial_driver_attribution.md`](partial_driver_attribution.md) — [#183](https://github.com/uibcdf/pharmacophoremt/issues/183) — Retain original attribution in opt-in driver partial checkpoints under interruption. *(resolved, measured)*
+- [`persistent_search_asset_contract.md`](persistent_search_asset_contract.md) — [#185](https://github.com/uibcdf/pharmacophoremt/issues/185) — Define persistent search-asset identity, evaluation coverage and lifetime requirements. *(resolved, measured)*
 - [`pharmacophore_sdf_semantic_loss.md`](pharmacophore_sdf_semantic_loss.md) — [#47](https://github.com/uibcdf/pharmacophoremt/issues/47) — Annotated pharmacophore SDF silently loses directional geometry, weight and essential status. *(resolved, measured)*
 - [`pharmer_conda_payload_inventory.md`](pharmer_conda_payload_inventory.md) — [#168](https://github.com/uibcdf/pharmacophoremt/issues/168) — Require all new Pharmer helper modules in the Conda payload inventory. *(resolved, measured)*
 - [`pharmer_disabled_points.md`](pharmer_disabled_points.md) — [#162](https://github.com/uibcdf/pharmacophoremt/issues/162) — Preserve or explicitly refuse disabled-point meaning during Pharmer JSON import. *(resolved, measured)*

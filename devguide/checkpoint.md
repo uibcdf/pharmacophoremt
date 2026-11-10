@@ -9,31 +9,38 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-[#184 equivalent retrieval costs](retrieval_cost_workloads.md) receives 38 passing
-guards per source/exact-owned218 context, one admitted preliminary nm pair,
-twelve primary pairs and separate traced-allocation samples. All full native
-mappings and original joins equal frozen #182 answers, with actual attribution
-retained. The [receipt/archive](evidence/retrieval_cost_20261110.json) and
-[case](../docs/content/validation/retrieval_costs.md) preserve every sample and
-separate common reconstruction, construction, first query and reused batch.
+[#185 search-asset identity/lifetime](search_asset_identity_contract.md) now defines
+separate payload/manifest/lookup/generation and query/run bindings, evaluation
+coverage, publication/failed-refresh and reader-close requirements. The
+[examples](search_asset_acceptance_examples.md) distinguish newly controlled
+primitives, inspected public run semantics and future storage-adapter probes.
+No physical format, public API or production backend is selected.
 
-In every pair, construction plus one query costs more with the index (index/scan
-1.027–1.141); subsequent twelve-query batches favor index (scan/index2.100–2.307).
-Each batch uses132scan/31indexed native calls. These eleven-occurrence analytical
-results retain both strategies as candidates; they establish no production default
-or universal crossover. Persisted-index size remains null; traced Python allocation
-is separate from native memory. All214payloads/159runtime bodies/4594provider
-Python files/native/67case files verify. Focused guards observe zero molecular
-operations; timing windows deliberately reject profiling. Resource limits stay
-unchanged and #148/#165 remain stopped.
+The unshipped declared-family preflight passes24controls per source/exact-owned218
+context and admits no query/match or quantity/source semantics. Empty aromatic
+coverage does not evaluate donor/charge families. Two cold readers each inspect
+all20originals with scientific imports blocked and125support payloads verified;
+two real-provider sessions read every capture twice without new credit or lost
+original attribution. The [receipt/archive](evidence/search_asset_contract_20261110.json)
+retains the initial22pass/two-failure canonical-format correction, final24passes,
+a ten-file source audit and exact identities. All214payloads/159runtime bodies/
+4594provider files/native/69final fixtures verify. Matching, feature generation
+and molecular operations remain zero; no prior benchmark/point result is rewritten.
 
-Next: define persisted search-asset identity/lifetime requirements independently
-of physical storage/backend selection. Keep common feature preparation and
-optional derived lookup as separate costs. Declare broader query-mix/corpus and
-missing cold/persistence/native-memory gates before production-index selection.
-MolSysMT#624 remains open/unreceived; PHMT adds no molecular collection fallback.
+Next: choose a first bounded immutable feature-manifest storage adapter from the
+audited primitives, then qualify create/open refusal, reopen/relocation, corruption,
+partial/failed publication and pinned or explicitly exclusive reader-close behavior.
+Keep metadata inspection, family coverage, quantity interpretation, source trust,
+lookup applicability and run resumability separate. QuantityRecord remains under
+its provisional owner contract; MolSysMT#624 stays open/unreceived. #148/#165
+remain stopped and #9/#23 retain full current-head/public/platform/release gates.
 
 ## Received foundations and their boundaries
+
+- [#184 finite retrieval costs](retrieval_cost_workloads.md): 38 guards per context
+  and twelve primary pairs preserve all native maps. Build plus one query costs
+  more with index; later twelve-query batches favor it (scan/index2.100–2.307).
+  Persisted-index/native-memory/cold/scale costs and a production default stay open.
 
 - [#183 checkpoint retention](retrieval_driver_checkpoints.md): 18 controls per
   source/owned context and complete ordinary24/typed72 experiments retain original

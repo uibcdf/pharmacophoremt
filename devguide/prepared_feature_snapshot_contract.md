@@ -219,3 +219,14 @@ original snapshot bytes/schema and earlier scientific claims remain unchanged.
 A resource-interrupted ordinary source run is preserved as a20+4scientific
 composite, with unknown original session attribution tracked under#183. No
 public API/index/cost/biological/platform/release promotion follows;148/165stopped.
+
+## Persistent-asset follow-up — #185 (2026-11-10 UTC)
+
+The [identity/lifetime contract](search_asset_identity_contract.md) extends this
+capture boundary with separate stored payload, ordered manifest, lookup, storage
+generation and query/run requirements. Its unshipped family-coverage plane keeps
+completed-empty evaluation distinct from unobserved families and admits neither
+query, quantities, source origin nor a match. [Receiving](evidence/search_asset_contract_20261110.json)
+separates executed primitive controls from source inspection and future adapter
+probes. Existing snapshot wire/runtime/benchmark evidence remains unchanged;
+physical format and public reader/writer selection remain future work.

@@ -58,3 +58,25 @@ further qualification before a production index is selected. Candidate retrieval
 still needs later fitting/final evaluation; geometric matching does not establish
 binding activity. The contract does not add a public snapshot API or change the
 current saved-run format.
+
+## Keep evaluation coverage explicit
+
+An empty inventory from an aromatic-ring-only request records that evaluation.
+It does not record donor or charge evaluation. When preparing reusable features,
+retain the requested families, including those that return no features. A query
+over captured inventories has that captured scope; source-level screening needs
+the relevant evaluation coverage or a separately qualified exclusion proof.
+Request additional families explicitly when they are needed. Valid geometry or
+an inspected checksum alone does not establish source origin or query admission.
+
+The experimental [asset identity/lifetime contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/search_asset_identity_contract.md)
+and its coverage preflight separate these questions before a persistent public
+asset API is selected. Existing raw-inventory reuse keeps its unchanged-source
+precondition. Historical reading and compatible feature reuse also remain
+different from resuming a saved query/run.
+
+The [finite cost calibration](../validation/retrieval_costs.md) illustrates why
+common preparation and optional index construction have separate costs: in that
+small analytical case, building an index for one query costs more, while a later
+twelve-query batch benefits from it. This result does not select a production
+default for other libraries or query mixes.
