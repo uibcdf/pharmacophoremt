@@ -1,6 +1,6 @@
 # Strategic roadmap
 
-Maintained 2026-11-08. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
+Maintained 2026-11-10. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
 and [decisions](decisions_and_workstreams.md) first. The former detailed delivery
 log/checklists remain in [roadmap history](roadmap_history_20261106.md); old
 checkboxes record historical code, not current scientific/public qualification.
@@ -34,7 +34,9 @@ user testing or result interpretation.
 The [#173 reader version](reader_distribution_version.md) improves installed
 context discovery through lazy ledger-free `--version`. All139selected source
 cases, thirteen ordinary byte controls, strict docs and25distribution/local
-checks pass; exact owned receiving remains pending. Its
+checks pass. The same139bodies pass from bc084f9 / owned214with159guarded
+children,24historical commands, thirteen ordinary byte controls and214payload/
+159runtime identities verified; the real version agrees with its wheel. Its
 metadata label does not certify source bodies or feature qualification.
 
 The [#172 saved-inspection exercise](saved_inspection_usability.md) prepares

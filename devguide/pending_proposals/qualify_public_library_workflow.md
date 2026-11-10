@@ -350,3 +350,8 @@ The [#172 exercise kit](../saved_inspection_usability.md) is technically receive
 from source and unchanged owned208: identical synthetic data, CLI/API tasks,
 literal-key recovery and downloadable script/navigation. Actual novice/expert
 observations remain unexecuted; the kit does not close this usability gate.
+
+[#173 reader version](../reader_distribution_version.md) now identifies installed
+distribution metadata without a run/scientific import. Same139source/owned214
+bodies pass; actual version/wheel agreement and all ordinary output bytes verify.
+This improves exercise/setup context discovery, not source-body qualification.

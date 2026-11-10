@@ -23,8 +23,12 @@ independent controls plus134existing reader bodies, thirteen ordinary output-byt
 controls and exact same-body owned receiving. The [source receipt](evidence/reader_version_source_20261110.json) receives
 139cases, thirteen ordinary stdout-byte controls, strict docs,25distribution,
 declared routes/generated environments and local reporting/format checks.
-Original red controls retain4failures/1pass. Exact owned installed receiving
-remains pending. [Public guidance](../docs/content/cookbook/saved_work_inspection.md)
+Original red controls retain4failures/1pass. The [installed receipt](evidence/reader_version_installed_20261110.json)
+receives the same139bodies from bc084f9 / owned214,159guarded children and a
+real version response equal to its wheel metadata. All214payloads/159runtime
+identities,24documented historical commands and thirteen ordinary exact-source
+outputs verify. The [archived report](archive/identify_reader_distribution.md)
+resolves this bounded bridge. [Public guidance](../docs/content/cookbook/saved_work_inspection.md)
 explains version scope before saved-work examples.
 
 The accepted full-source af408e7 checkpoint does not cover this later code.

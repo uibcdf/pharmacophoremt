@@ -1,0 +1,843 @@
+{
+  "schema": "pharmacophoremt.reader-version-installed@1",
+  "issue": 173,
+  "recorded_at_utc": "2026-11-10T00:16:05.124115+00:00",
+  "source_commit": "bc084f954eeec188da6d004129f463e194591ba0",
+  "wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-version-20261110-gem8pw_z/wheels/pharmacophoremt-0.4.0+214.gbc084f9-py3-none-any.whl",
+    "bytes": 4533072,
+    "sha256": "8f9d7cc238313820dfc980bea9d17454544a97fea73aadfe6999ed0ec09af538"
+  },
+  "version": "0.4.0+214.gbc084f9",
+  "selected_cases": 139,
+  "new_cases": 5,
+  "original_reader_cases": 134,
+  "same_original_case_identities_and_test_bodies": true,
+  "fixture_files": {
+    "tests/test_public_reader_version.py": {
+      "bytes": 3653,
+      "sha256": "6c3ca09d36b335d3d652046ee83e99180fc9421dc988d045ca32e662459538b1"
+    },
+    "tests/test_public_source_inventory.py": {
+      "bytes": 13895,
+      "sha256": "314996de7de21ab804a8b3d4e3d73135e55478d567d683ab188b42aedf172f65"
+    },
+    "tests/test_public_work_source.py": {
+      "bytes": 15601,
+      "sha256": "2219e8226d7aabb01615db04d8b422b01da9744c7241e8285f5455e893897315"
+    },
+    "tests/test_public_run_work_items.py": {
+      "bytes": 3924,
+      "sha256": "236cf9bc41b46661ae0994942fc10beced6de576fb7a2a313b91237244329c6b"
+    },
+    "tests/test_public_work_selection.py": {
+      "bytes": 16099,
+      "sha256": "e58e033a1a0ae57742fd5b77c2be3cb7b050267fb3810027a38765ebadb64fbb"
+    },
+    "tests/test_public_work_item.py": {
+      "bytes": 14923,
+      "sha256": "d5374831f061953d211486cf745c5542ccb9fa3f78c0ea5b420a08fbe7080fff"
+    },
+    "tests/test_public_work_cli.py": {
+      "bytes": 10900,
+      "sha256": "fac5732d10de07447fecd8390d69ddfc7f0c4702cbffa618667a77a14a1e82c2"
+    },
+    "tests/test_public_run_cli.py": {
+      "bytes": 12101,
+      "sha256": "56a5d0bfb7597a0a63bb6fcb47c8398575db5179fc20c50ecf5d22c857916217"
+    },
+    "tests/test_public_run_results.py": {
+      "bytes": 22136,
+      "sha256": "4895b33278fa2200671d6c2039f8f4021712cccdfc7a5a7ec382ab7cdbf7c7c0"
+    },
+    "tests/test_public_run_exports.py": {
+      "bytes": 16650,
+      "sha256": "f65e0ea9f6cd80edd07be67bfa64118c5b6b399e1cfac5e985196a12b200a989"
+    },
+    "tests/test_public_run_progress.py": {
+      "bytes": 8831,
+      "sha256": "8fe5b06bd21a3eaa3e9f3df8d7d1c5581be72cf4e05b4f6b0ff56d20b6fd7d17"
+    },
+    "phmt_test_support/reference_run_store.py": {
+      "bytes": 1668,
+      "sha256": "8ef512fee2a166d6542845babea96310e274b6b654d3c9682ce098efa8edc74d"
+    },
+    "docs/content/cookbook/saved_work_inspection.md": {
+      "bytes": 19993,
+      "sha256": "ee56ee81375ba536083d61e955edbfe12200241105680538174e79d963ed27a6"
+    }
+  },
+  "verified_wheel_payload_files_before_and_after": 214,
+  "runtime_files_equal": 159,
+  "loaded_runtime": {
+    "state": "verified-loaded-imports",
+    "roots": [
+      "pharmacophoremt_results"
+    ],
+    "loaded": [
+      "pharmacophoremt_results",
+      "pharmacophoremt_results._api",
+      "pharmacophoremt_results._diagnostics",
+      "pharmacophoremt_results._digestion",
+      "pharmacophoremt_results._exports",
+      "pharmacophoremt_results._meta",
+      "pharmacophoremt_results._store"
+    ]
+  },
+  "fresh_guarded_children": 159,
+  "fresh_child_exit_codes": {
+    "0": 127,
+    "2": 32
+  },
+  "no_forbidden_import_attempts": true,
+  "historical_status_commands": [
+    {
+      "name": "source-complete",
+      "database": {
+        "bytes": 180224,
+        "sha256": "4b393b7efe567ac0ce332fcd7316e8fecea1d058a8b21c10d26c6435786cab2a"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 0,
+          "original_ordinals": []
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    },
+    {
+      "name": "installed-complete",
+      "database": {
+        "bytes": 180224,
+        "sha256": "6f8802a3a9278575f28ef7638ca8782f772d3fafc1c13849ed627b89101b6051"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 0,
+          "original_ordinals": []
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    },
+    {
+      "name": "source-partial",
+      "database": {
+        "bytes": 77824,
+        "sha256": "023df508bede649c5108b3ebad900b4d443bd8f58557889fa1ac7bbdca7d1369"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 2,
+          "original_ordinals": [
+            1,
+            2
+          ]
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    },
+    {
+      "name": "legacy-complete",
+      "database": {
+        "bytes": 118784,
+        "sha256": "6901f617b3ceb52d7902ca6a5997ce1f5ee2f0ae2ee0b787ca2404293b607bb3"
+      },
+      "declared_work": 3,
+      "documented_commands": 2,
+      "selections": [
+        {
+          "status": "failed",
+          "selected_work": 0,
+          "original_ordinals": []
+        },
+        {
+          "status": "pending",
+          "selected_work": 0,
+          "original_ordinals": []
+        }
+      ],
+      "original_rows_statuses_identities_preserved": true,
+      "database_unchanged": true
+    }
+  ],
+  "historical_source_commands": [
+    {
+      "name": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": null,
+      "selected_work": 1,
+      "original_ordinals": [
+        0
+      ]
+    },
+    {
+      "name": "source-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "selected_work": 0,
+      "original_ordinals": []
+    },
+    {
+      "name": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": null,
+      "selected_work": 1,
+      "original_ordinals": [
+        0
+      ]
+    },
+    {
+      "name": "installed-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "selected_work": 0,
+      "original_ordinals": []
+    },
+    {
+      "name": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": null,
+      "selected_work": 1,
+      "original_ordinals": [
+        0
+      ]
+    },
+    {
+      "name": "source-partial",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "selected_work": 0,
+      "original_ordinals": []
+    },
+    {
+      "name": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": null,
+      "selected_work": 1,
+      "original_ordinals": [
+        0
+      ]
+    },
+    {
+      "name": "legacy-complete",
+      "source_key": "PubChemCID:1983",
+      "status": "failed",
+      "selected_work": 0,
+      "original_ordinals": []
+    }
+  ],
+  "historical_inventory_commands": [
+    {
+      "name": "source-complete",
+      "offset": 0,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "prepared-screening:example:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 0,
+        "limit": 10,
+        "next_offset": null,
+        "records": [
+          {
+            "source_key": "PubChemCID:1983",
+            "first_manifest_ordinal": 0,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2244",
+            "first_manifest_ordinal": 1,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2519",
+            "first_manifest_ordinal": 2,
+            "declared_work": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "source-complete",
+      "offset": 10,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "prepared-screening:example:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 10,
+        "limit": 10,
+        "next_offset": null,
+        "records": []
+      }
+    },
+    {
+      "name": "installed-complete",
+      "offset": 0,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "prepared-screening:example:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 0,
+        "limit": 10,
+        "next_offset": null,
+        "records": [
+          {
+            "source_key": "PubChemCID:1983",
+            "first_manifest_ordinal": 0,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2244",
+            "first_manifest_ordinal": 1,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2519",
+            "first_manifest_ordinal": 2,
+            "declared_work": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "installed-complete",
+      "offset": 10,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "prepared-screening:example:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 10,
+        "limit": 10,
+        "next_offset": null,
+        "records": []
+      }
+    },
+    {
+      "name": "source-partial",
+      "offset": 0,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "prepared-screening:example:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 0,
+        "limit": 10,
+        "next_offset": null,
+        "records": [
+          {
+            "source_key": "PubChemCID:1983",
+            "first_manifest_ordinal": 0,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2244",
+            "first_manifest_ordinal": 1,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2519",
+            "first_manifest_ordinal": 2,
+            "declared_work": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "source-partial",
+      "offset": 10,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "prepared-screening:example:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "f2fc496976f1df7e40327e7ef9d258bd58c67c33b01e5911f553c3b3662852e9",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 10,
+        "limit": 10,
+        "next_offset": null,
+        "records": []
+      }
+    },
+    {
+      "name": "legacy-complete",
+      "offset": 0,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "pubchem3d-fixed-three-pilot@1",
+        "run_format": "pharmacophoremt.reference-ledger@1",
+        "work_sha256": "ec49c35424d627ce3930e6d1ddfecce851c844dfeae7de66467ba9b74e0caabe",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 0,
+        "limit": 10,
+        "next_offset": null,
+        "records": [
+          {
+            "source_key": "PubChemCID:1983",
+            "first_manifest_ordinal": 0,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2244",
+            "first_manifest_ordinal": 1,
+            "declared_work": 1
+          },
+          {
+            "source_key": "PubChemCID:2519",
+            "first_manifest_ordinal": 2,
+            "declared_work": 1
+          }
+        ]
+      }
+    },
+    {
+      "name": "legacy-complete",
+      "offset": 10,
+      "limit": 10,
+      "declared_sources": 3,
+      "expected": {
+        "format": "pharmacophoremt.screening-source-page@1",
+        "run_id": "pubchem3d-fixed-three-pilot@1",
+        "run_format": "pharmacophoremt.reference-ledger@1",
+        "work_sha256": "ec49c35424d627ce3930e6d1ddfecce851c844dfeae7de66467ba9b74e0caabe",
+        "declared_work": 3,
+        "declared_sources": 3,
+        "offset": 10,
+        "limit": 10,
+        "next_offset": null,
+        "records": []
+      }
+    }
+  ],
+  "actual_distribution_version_stdout": "PharmacophoreMT distribution 0.4.0+214.gbc084f9\n",
+  "ordinary_command_bytes_identical_to_source": [
+    {
+      "arguments": [
+        "--work-items"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-page@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    },\n    {\n      \"manifest_ordinal\": 2,\n      \"work_key\": \"gamma\",\n      \"source_key\": \"source:2\",\n      \"occurrence_key\": \"occurrence:2\"\n    },\n    {\n      \"manifest_ordinal\": 3,\n      \"work_key\": \"delta\",\n      \"source_key\": \"source:3\",\n      \"occurrence_key\": \"occurrence:3\"\n    },\n    {\n      \"manifest_ordinal\": 4,\n      \"work_key\": \"epsilon\",\n      \"source_key\": \"source:4\",\n      \"occurrence_key\": \"occurrence:4\"\n    }\n  ]\n}\n",
+      "stdout_sha256": "2c598db306541d4b8d85c27660ec811580fab474755db8ea24b1eadec1d77103"
+    },
+    {
+      "arguments": [
+        "--summary"
+      ],
+      "stdout": "{\n  \"run_id\": \"run:public\",\n  \"parent_run_id\": \"run:ancestor\",\n  \"counts\": {\n    \"committed_work\": 4,\n    \"scored_work\": 3,\n    \"matched_work\": 2,\n    \"not_matched_work\": 1,\n    \"failed_work\": 1,\n    \"declared_work\": 5,\n    \"pending_work\": 1\n  },\n  \"attempts\": {\n    \"started\": 5,\n    \"staged\": 5,\n    \"committed\": 4\n  },\n  \"manifest_work_complete\": false\n}\n",
+      "stdout_sha256": "3f99617b27aecd2b2cf05dc543d238ad85315dfbb2354d320fa95f8165e55fe4"
+    },
+    {
+      "arguments": [
+        "--work-key",
+        "gamma"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-item@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"work_item\": {\n    \"manifest_ordinal\": 2,\n    \"work_key\": \"gamma\",\n    \"source_key\": \"source:2\",\n    \"occurrence_key\": \"occurrence:2\"\n  },\n  \"confirmed\": true,\n  \"status\": \"not_matched\",\n  \"attempts\": {\n    \"started\": 1,\n    \"staged\": 1,\n    \"committed\": 1\n  },\n  \"outcome\": {\n    \"native_result\": {\n      \"attribution\": {\n        \"references\": {\n          \"items\": []\n        },\n        \"status\": \"original-record\"\n      },\n      \"fit_value\": 0,\n      \"geometry\": \"private native geometry\",\n      \"pose_id\": \"gamma\",\n      \"producer\": {\n        \"version\": \"original-native-0.1\"\n      },\n      \"status\": \"not_matched\"\n    },\n    \"occurrence_key\": \"occurrence:2\",\n    \"ranking_score\": 0,\n    \"score_method\": \"checked_pose_coverage@1\",\n    \"source_key\": \"source:2\",\n    \"work_key\": \"gamma\"\n  }\n}\n",
+      "stdout_sha256": "237eb5f0a79d29f0b5357c9dd757e38a16bbce01b654ff3979ac371cfddd7c38"
+    },
+    {
+      "arguments": [
+        "--score-method",
+        "checked_pose_coverage@1",
+        "--limit",
+        "10"
+      ],
+      "stdout": "{\n  \"summary\": {\n    \"run_id\": \"run:public\",\n    \"parent_run_id\": \"run:ancestor\",\n    \"counts\": {\n      \"committed_work\": 4,\n      \"scored_work\": 3,\n      \"matched_work\": 2,\n      \"not_matched_work\": 1,\n      \"failed_work\": 1,\n      \"declared_work\": 5,\n      \"pending_work\": 1\n    },\n    \"attempts\": {\n      \"started\": 5,\n      \"staged\": 5,\n      \"committed\": 4\n    },\n    \"manifest_work_complete\": false,\n    \"score_method\": \"checked_pose_coverage@1\",\n    \"ranking_scope\": \"observed_scored_work_only\"\n  },\n  \"limit\": 10,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\",\n      \"ranking_score\": 0.75,\n      \"score_method\": \"checked_pose_coverage@1\",\n      \"status\": \"matched\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\",\n      \"ranking_score\": 0.75,\n      \"score_method\": \"checked_pose_coverage@1\",\n      \"status\": \"matched\"\n    },\n    {\n      \"manifest_ordinal\": 2,\n      \"work_key\": \"gamma\",\n      \"source_key\": \"source:2\",\n      \"occurrence_key\": \"occurrence:2\",\n      \"ranking_score\": 0,\n      \"score_method\": \"checked_pose_coverage@1\",\n      \"status\": \"not_matched\"\n    }\n  ]\n}\n",
+      "stdout_sha256": "fe6c1c5a1038385a4bbb73c82853f9b71b75241b5656a94cf720728d8db11f55"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    }\n  ],\n  \"status\": \"matched\",\n  \"selected_work\": 2\n}\n",
+      "stdout_sha256": "687fd91e37ff29bdb9d2271a5fa7e1d4f5d0554f23c7069706af8e7e417d1ed9"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "not_matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 2,\n      \"work_key\": \"gamma\",\n      \"source_key\": \"source:2\",\n      \"occurrence_key\": \"occurrence:2\"\n    }\n  ],\n  \"status\": \"not_matched\",\n  \"selected_work\": 1\n}\n",
+      "stdout_sha256": "f0a02d77ef36c213dc4e6809d4c9d035f75271e583cafcd1df9f82632f065e42"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "failed"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 3,\n      \"work_key\": \"delta\",\n      \"source_key\": \"source:3\",\n      \"occurrence_key\": \"occurrence:3\"\n    }\n  ],\n  \"status\": \"failed\",\n  \"selected_work\": 1\n}\n",
+      "stdout_sha256": "d871c1d40bf921c42fbcc0f85843509cd5593a2809fd8b04f503a25387979645"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--status",
+        "pending"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@1\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 4,\n      \"work_key\": \"epsilon\",\n      \"source_key\": \"source:4\",\n      \"occurrence_key\": \"occurrence:4\"\n    }\n  ],\n  \"status\": \"pending\",\n  \"selected_work\": 1\n}\n",
+      "stdout_sha256": "469a7037c8f31578cb8dcd5e9435987d41e55e0f6c13927f0704697f651e500f"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    }\n  ],\n  \"source_key\": \"source:repeated\",\n  \"status\": null,\n  \"selected_work\": 2\n}\n",
+      "stdout_sha256": "6957e43219deaa85371d440abd88f57fd5b00b2f2d0b756425144f5da2370fce"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [\n    {\n      \"manifest_ordinal\": 0,\n      \"work_key\": \"alpha\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:0\"\n    },\n    {\n      \"manifest_ordinal\": 1,\n      \"work_key\": \"beta\",\n      \"source_key\": \"source:repeated\",\n      \"occurrence_key\": \"occurrence:1\"\n    }\n  ],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"matched\",\n  \"selected_work\": 2\n}\n",
+      "stdout_sha256": "623b2257226b8300c47ae57646e33387f8ecd6c6f2552089990c735a84ffceff"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=not_matched"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"not_matched\",\n  \"selected_work\": 0\n}\n",
+      "stdout_sha256": "8501a5967c523a4d21e57d4c13937fe2ea49a47bdf038c0bbda3cff64e2acc83"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=failed"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"failed\",\n  \"selected_work\": 0\n}\n",
+      "stdout_sha256": "a779d53c58f5312165cb36d2935dd3f06a1207fdb1661f9a30d117a260e450c4"
+    },
+    {
+      "arguments": [
+        "--work-items",
+        "--source-key=source:repeated",
+        "--status=pending"
+      ],
+      "stdout": "{\n  \"format\": \"pharmacophoremt.screening-work-selection@2\",\n  \"run_id\": \"run:public\",\n  \"run_format\": \"pharmacophoremt.screening-run@1\",\n  \"work_sha256\": \"7b2ae44092b6eea5a9b0c84d2eddf792410db65437e5a1865d18748ca6fd166f\",\n  \"declared_work\": 5,\n  \"offset\": 0,\n  \"limit\": 10,\n  \"next_offset\": null,\n  \"records\": [],\n  \"source_key\": \"source:repeated\",\n  \"status\": \"pending\",\n  \"selected_work\": 0\n}\n",
+      "stdout_sha256": "03aacc9381f102212b18e3c88320ef2972eb11f858d401d0e6eb04688100296e"
+    }
+  ],
+  "public_support": [
+    {
+      "filename": "argdigest-0.17.1-py_0.tar.bz2",
+      "original_path": "/fast_data/home/liliana/miniconda3/pkgs/argdigest-0.17.1-py_0.tar.bz2",
+      "archive": {
+        "bytes": 55828,
+        "sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899"
+      },
+      "admitted_root": "/tmp/phmt-reader-version-installed-20261109-i94uobbv/argdigest-0.17.1-py_0/site-packages",
+      "payload_files_verified": 48,
+      "version": "0.17.1",
+      "name": "argdigest",
+      "requires_dist": [
+        "depdigest>=0.11.0",
+        "smonitor>=0.16.0",
+        "numpy>=1.20.0; extra == \"science\"",
+        "beartype>=0.16.0; extra == \"beartype\"",
+        "pydantic>=2.0.0; extra == \"pydantic\"",
+        "pyunitwizard>=0.22.0; extra == \"pyunitwizard\"",
+        "numpy>=1.20.0; extra == \"pyunitwizard\"",
+        "beartype>=0.16.0; extra == \"all\"",
+        "pydantic>=2.0.0; extra == \"all\"",
+        "pyunitwizard>=0.22.0; extra == \"all\"",
+        "PyYAML>=6.0; extra == \"all\"",
+        "numpy>=1.20.0; extra == \"all\"",
+        "pandas>=2.0.0; extra == \"all\""
+      ]
+    },
+    {
+      "filename": "smonitor-0.22.1-py_0.tar.bz2",
+      "original_path": "/fast_data/home/liliana/miniconda3/pkgs/smonitor-0.22.1-py_0.tar.bz2",
+      "archive": {
+        "bytes": 60043,
+        "sha256": "e9ce6c77a682dddec3a6e724f9cc98cca31c4d6732453d554107ffcf61f23e7e"
+      },
+      "admitted_root": "/tmp/phmt-reader-version-installed-20261109-i94uobbv/smonitor-0.22.1-py_0/site-packages",
+      "payload_files_verified": 51,
+      "version": "0.22.1",
+      "name": "smonitor",
+      "requires_dist": [
+        "rich>=13; extra == \"rich\"",
+        "pytest>=8; extra == \"pytest\"",
+        "pytest-receptor>=1.2; extra == \"pytest\""
+      ]
+    },
+    {
+      "filename": "depdigest-0.11.0-py_2.tar.bz2",
+      "original_path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-providers-20261107-4vl9gl8x/artifacts/depdigest-0.11.0-py_2.tar.bz2",
+      "archive": {
+        "bytes": 23231,
+        "sha256": "b6ba665d9125f49506b7e4231e6065f164d3b643117a22288b44baafceff270f"
+      },
+      "admitted_root": "/tmp/phmt-reader-version-installed-20261109-i94uobbv/depdigest-0.11.0-py_2/site-packages",
+      "payload_files_verified": 26,
+      "version": "0.11.0",
+      "name": "depdigest",
+      "requires_dist": [
+        "smonitor>=0.13.0"
+      ]
+    }
+  ],
+  "public_support_files_unchanged": true,
+  "qa_files_unchanged": true,
+  "shared_sdk": {
+    "root": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk",
+    "commit": "1c248b67d1daea256ed7c7f6172c6addb3f0b08f",
+    "modules": [
+      "devtools",
+      "devtools.scripts",
+      "devtools.scripts.installed_imports",
+      "devtools.scripts.noarch_conda",
+      "devtools.scripts.conda_release_contract",
+      "devtools.scripts.verify_public_conda"
+    ],
+    "files": {
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/installed_imports.py": {
+        "bytes": 4637,
+        "sha256": "ff23458015bb7ce83bc3eea36571c4294bed09fff948e8eb6d9bcb3a0615fa3c"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/noarch_conda.py": {
+        "bytes": 24232,
+        "sha256": "d62e0dd42ca04f1381b94b1a3c8ca5cc312db72fb946e2c759d92a3b4eb7bf07"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/conda_release_contract.py": {
+        "bytes": 24830,
+        "sha256": "ce166c0990f386eb5b020192ef9b8d8381a3da47aa8d95507a6adb51d30009f3"
+      },
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-reuse-20261107-s4ta47zn/sdk/devtools/scripts/verify_public_conda.py": {
+        "bytes": 10111,
+        "sha256": "bb743343ec7a58659b90e6cbae1a06380c7fd8e2328b1b7c11c85e52fc890567"
+      }
+    },
+    "operation": "devtools.scripts.installed_imports.check_installed_imports",
+    "scope": "Reuse the qualified pure loaded-runtime origin checker. Case-specific guarded startup, prefix/provider admission, original-body execution and wheel-byte validation retain their own roles."
+  },
+  "source_receipt": {
+    "bytes": 40858,
+    "sha256": "fd8c164df13becf16a98bdc5e373199300f3d857a0946caa95f8612b72c30d7b"
+  },
+  "build_resources": {
+    "name": "build",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-version-20261110-gem8pw_z/logs/build.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "build/phmt-reader-version-20261110-gem8pw_z/controls/build_and_stage.py"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58263560192
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230791\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199230\n",
+      "swap": {
+        "pswpin": 100120,
+        "pswpout": 330257
+      },
+      "time": 207897.187749388
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": "unlimited inherited for Git mappings",
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 1073741824,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 6.286063880979782,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58233659392
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230791\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199230\n",
+      "swap": {
+        "pswpin": 100120,
+        "pswpout": 330257
+      },
+      "time": 207903.474758471
+    },
+    "sample_count": 62,
+    "peak_observed_group_RSS_bytes": 290619392,
+    "min_host_available_bytes": 58158080000,
+    "swap_counter_delta": {
+      "pswpin": 0,
+      "pswpout": 0
+    }
+  },
+  "installed_resources": {
+    "name": "installed-supervised",
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--as=1073741824",
+      "--data=536870912",
+      "--cpu=120",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-reader-version-20261110-gem8pw_z/logs/installed-supervised.resources",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "build/phmt-reader-version-20261110-gem8pw_z/controls/launch_installed.py"
+    ],
+    "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+    "entry": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 58490228736
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230791\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199230\n",
+      "swap": {
+        "pswpin": 100120,
+        "pswpout": 330257
+      },
+      "time": 207913.982892952
+    },
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "io": "idle",
+    "threads": 1,
+    "aggregate_cgroup": false,
+    "AS_per_process_bytes": 1073741824,
+    "DATA_per_process_bytes": 536870912,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "own_envelope_bytes": 1610612736,
+    "physical_reserve_bytes": 12995688038,
+    "capacity_not_reserved": true,
+    "exit_code": 0,
+    "interruption": null,
+    "seconds": 79.95741663101944,
+    "exit": {
+      "memory": {
+        "MemTotal": 64978440192,
+        "MemAvailable": 57468719104
+      },
+      "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230791\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199230\n",
+      "swap": {
+        "pswpin": 100120,
+        "pswpout": 330257
+      },
+      "time": 207993.941339823
+    },
+    "sample_count": 786,
+    "peak_observed_group_RSS_bytes": 131534848,
+    "min_host_available_bytes": 57436131328,
+    "swap_counter_delta": {
+      "pswpin": 0,
+      "pswpout": 0
+    }
+  },
+  "installed_inner_limits": {
+    "affinity": [
+      19
+    ],
+    "nice": 19,
+    "AS": [
+      1073741824,
+      1073741824
+    ],
+    "DATA": [
+      536870912,
+      536870912
+    ],
+    "aggregate_cgroup": false
+  },
+  "full_evidence": {
+    "path": "reader_version_20261110_full.json.gz",
+    "compressed_bytes": 655598,
+    "compressed_sha256": "f0b87c02f5edecf0f6bc18d7d27c6911100ee4f895208cd6859a8d80c96d0a05",
+    "uncompressed_bytes": 11161216,
+    "uncompressed_sha256": "94b927dbdebb3fc7472eae3b88dcbc27a7a0008712ecbccc1d963afe595f3b22"
+  },
+  "sealing_disposition": "Explicit source tests.<module> and installed fixtures.tests.<module> namespace comparison only; same original module/class/function identities and frozen bodies.",
+  "source_fingerprint": "Original generated source and owned-wheel version records remain distinct in owned_build.json; no saved producer is normalized or reexecuted. The original source receipt retains its then-pending installed disposition.",
+  "scientific_execution": false,
+  "shared_prefix_changed": false,
+  "dependency_acquisition_or_environment_manager_transaction": false,
+  "scope": "One owned independent-reader Linux/Python3.14 artifact, published reader-support payloads and guarded QA. Not full source/public PHMT dependency solve/platform, connector, large-library/index/performance, biological or release qualification. #165 and #148 remain stopped.",
+  "retention": {
+    "capsule": "build/phmt-reader-version-20261110-gem8pw_z",
+    "owned_workspace": "/tmp/phmt-reader-version-installed-20261109-i94uobbv",
+    "review": "2026-11-24",
+    "preserve_original_failures_and_payloads": true
+  }
+}

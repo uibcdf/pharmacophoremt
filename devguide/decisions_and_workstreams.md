@@ -111,8 +111,11 @@ nonblocking tool improvement. Full supported/biological/scale gates remain open.
 adds lazy ledger-free `--version`, with139selected source cases passing. Only
 explicit version requests read metadata; scientific imports, existing API/output
 and provider floors remain unchanged. Thirteen ordinary byte controls, strict
-docs and25distribution/local checks pass; same-body owned receiving remains
-pending. Installed metadata is not source/body
+docs and25distribution/local checks pass. The
+[installed receipt](evidence/reader_version_installed_20261110.json) receives
+the same139bodies from bc084f9 / owned214with159guarded children,24historical
+commands and214payload/159runtime identities verified. The actual version
+response agrees with its wheel. This resolves the bounded CLI bridge. Installed metadata is not source/body
 or capability qualification.
 
 2026-11-10: [#172 inspection exercise](saved_inspection_usability.md) delivers

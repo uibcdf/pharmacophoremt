@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (113)
+### Resolved (114)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -33,6 +33,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
 - [`feature_reuse_route_inventory.md`](feature_reuse_route_inventory.md) — [#151](https://github.com/uibcdf/pharmacophoremt/issues/151) — Register the resource and native qualification workflows without bypassing dependency-route review. *(resolved, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(resolved, measured)*
+- [`identify_reader_distribution.md`](identify_reader_distribution.md) — [#173](https://github.com/uibcdf/pharmacophoremt/issues/173) — Identify installed distribution metadata from the independent reader CLI. *(resolved, measured)*
 - [`inspect_declared_work_cli.md`](inspect_declared_work_cli.md) — [#156](https://github.com/uibcdf/pharmacophoremt/issues/156) — Inspect all declared screening work through bounded command-line pages. *(resolved, measured)*
 - [`inspect_prepared_run_plans.md`](inspect_prepared_run_plans.md) — [#150](https://github.com/uibcdf/pharmacophoremt/issues/150) — Expose detached prepared-run descriptions and bounded console inspection without query payloads. *(resolved, measured)*
 - [`inspect_saved_work_item.md`](inspect_saved_work_item.md) — [#157](https://github.com/uibcdf/pharmacophoremt/issues/157) — Inspect one exact saved work item and its original confirmed evidence. *(resolved, measured)*

@@ -1,0 +1,35 @@
+{
+  "schema": "pharmacophoremt.provider-blockers-observation@1",
+  "recorded_at_UTC": "2026-11-10 00:15:34 UTC",
+  "observations": [
+    {
+      "repository": "uibcdf/molsysmt",
+      "issue": 624,
+      "comment_count": 2,
+      "last_comment_id": 6727038562,
+      "observed_scope": "Complete issue comment thread only; this does not establish every repository capability or public artifact."
+    },
+    {
+      "repository": "uibcdf/molsyssuite",
+      "issue": 108,
+      "comment_count": 9,
+      "last_comment_id": 6724128639,
+      "observed_scope": "Complete issue comment thread only; this does not establish every repository capability or public artifact."
+    },
+    {
+      "repository": "uibcdf/uibcdf-infrastructure",
+      "issue": 1,
+      "comment_count": 9,
+      "last_comment_id": 6732800665,
+      "observed_scope": "Complete issue comment thread only; this does not establish every repository capability or public artifact."
+    },
+    {
+      "repository": "uibcdf/gh-run-receptor",
+      "issue": 82,
+      "comment_count": 0,
+      "last_comment_id": null,
+      "observed_scope": "Complete issue comment thread only; this does not establish every repository capability or public artifact."
+    }
+  ],
+  "disposition": "No new owner-delivered collection API disposition or distinct managed environment/compiler strategy appears in the inspected threads. Preserve MolSysMT#624 ownership and stopped PHMT#148/#165 profiles; no acquisition, compile, SDK/provider upgrade or molecular request. GH Run Receptor#82 has no response in its inspected comment thread."
+}

@@ -1,12 +1,12 @@
 ---
 summary: Identify installed distribution metadata from the independent reader CLI.
 issue: uibcdf/pharmacophoremt#173
-status: open
+status: resolved
 opened: 2026-11-10
-closed:
-verification: asserted
+closed: 2026-11-10
+verification: measured
 area: [results, usability]
-guard:
+guard: tests/test_public_reader_version.py
 normative:
 blocked_by: []
 supersedes: []
@@ -36,8 +36,12 @@ The [prospective plan](../evidence/reader_version_plan_20261110.json) freezes fi
 independent controls plus134existing reader bodies, thirteen ordinary stdout-byte
 controls, fresh process guards and exact owned same-body receiving. The [source receipt](../evidence/reader_version_source_20261110.json) receives
 139cases, thirteen original stdout-byte controls, strict docs and25distribution/
-local reporting checks. Original red controls retain4failures/1pass. Exact owned
-receiving remains pending; af408e7 full-source acceptance is separate.
+local reporting checks. Original red controls retain4failures/1pass. The [installed receipt](../evidence/reader_version_installed_20261110.json)
+receives the same139bodies from source bc084f9 / owned214,159guarded children,
+24documented commands on four historical stores, thirteen ordinary source-byte
+controls and an actual metadata response equal to the exact wheel version.
+All214payloads/159runtime identities and seven loaded reader origins verify.
+The af408e7 full-source acceptance remains separate.
 
 ## Alternatives and limits
 
@@ -53,3 +57,28 @@ Ledger-free labeled exact version, missing/invalid refusal, lazy ordinary/help
 behavior and fresh scientific-import exclusion; same139bodies in source and one
 owned artifact with real wheel/version agreement, ordinary exact output bytes,
 strict docs and relevant distribution/reporting checks.
+
+## Received 2026-11-10 UTC
+
+Five independent new bodies plus134existing bodies pass from source and the
+same exact owned artifact. Original red controls retain4failures/1pass; one
+initial mistyped capsule path refuses before collecting any test and is retained
+separately. The private version action and its one parser registration are the
+only changes to the original API AST; existing public signatures/bodies remain
+unchanged. Actual owned CLI metadata is0.4.0+214.gbc084f9, agreeing with its wheel.
+Help and normal operations add no version request; missing/invalid metadata fails
+with empty success stdout. No scientific namespace is imported.
+
+All159guarded children retain127expected exit0/32expected exit2results. The
+24historical commands and thirteen ordinary outputs preserve original file/
+source bytes. Strict full docs,25distribution, declared routes/generated
+environments, Ruff and reporting/archive checks pass. The raw archive retains
+controls, original failures and exact observations. Reader peaks are about
+109/125MiB under unchanged serial DATA512MiB/AS1GiB/observed-group512MiB controls;
+docs uses its separately declared DATA512MiB/AS-unlimited/observed-group1GiB
+route. Capacity is not reserved and no kernel aggregate enforcement is claimed.
+
+The bounded CLI/version bridge resolves. Installed distribution metadata is
+explicitly distinct from source-body/current feature qualification. Later-head
+full source, complete public/installed-platform, actual human usability,
+scientific prediction, scale/performance and release gates remain separate.
