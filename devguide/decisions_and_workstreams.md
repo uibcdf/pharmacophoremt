@@ -23,6 +23,16 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+[#179 prepared-feature compatibility](prepared_feature_snapshot_contract.md)
+receives the next design gate with24worked decisions, an exact nine-file source
+review, unchanged159runtime identities and scoped MolSysMT#624 acceptance input.
+It separates prepared parent, explicit requested/empty coverage, ordered features,
+predicate/runtime, retrieval domain and plan/run compatibility. The current manual
+public reuse guide is linked; capture/codec/preflight/index implementation and
+provider/human/wider numerical/cost/public-platform gates remain separate.
+No molecular or scientific calculation is executed by this design review.
+
+
 The [#178 finite retrieval controls](retrieval_candidate_controls.md) receive
 all27query/width combinations identically from source/unchanged owned218, with
 96independent strict-interior mapping checks per context and13offline guards.

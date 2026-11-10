@@ -336,3 +336,22 @@ work, and measure build/storage/cold/repeated-query costs against the unchanged
 reference before selecting an implementation. These measurements are pending;
 smaller candidate counts alone establish no acceleration. Molecular collection/
 preparation ownership remains MolSysMT#624. No public name/schema is frozen here.
+
+## Prepared-feature compatibility gate — #179, 2026-11-10 UTC
+
+The [maintained contract](prepared_feature_snapshot_contract.md) and its24worked
+decisions now define the next capture/preflight acceptance boundary. Prepared
+parent and source/occurrence/atom/state/frame identity belong to the molecular
+provider; PHMT owns explicit extraction request, ordered feature evidence,
+predicate/asset domain and plan/run compatibility. Unknown parent/request/coverage
+is not reusable successful evidence, and failed replacement never silently
+replaces the preceding complete asset.
+
+The source audit records the six existing inventory fields and six prepared-plan
+compatibility keys. Original requested families/parent/producer coverage are not
+automatically supplied by raw feature geometry; method family names likewise
+do not identify their exact numerical implementation. Existing public raw reuse,
+run schemas, index=None and independent historical reading remain unchanged.
+The consumer handoff stays within MolSysMT#624; no molecular provider API/format
+or delivery schedule is imposed. This receives a design contract only, with no
+new public snapshot codec, automatic compatibility detector or production index.

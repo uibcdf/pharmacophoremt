@@ -1,0 +1,407 @@
+{
+  "schema": "pharmacophoremt.feature-snapshot-contract-receiving@1",
+  "issue": 179,
+  "recorded_at_utc": "2026-11-10T04:59:06.475213+00:00",
+  "parent_source": "68bfcbc831b116346aeb4b14ee5e8b8c41b7e1d9",
+  "classification": "Design/source review; no new scientific calculation or implemented snapshot API.",
+  "contract": {
+    "devguide/prepared_feature_snapshot_contract.md": {
+      "bytes": 14965,
+      "sha256": "ee0d6cb5a49ee3c13cb7d04bc00efb82e2e43e4fa3d14fcaf7a5f4bdbe614d1c"
+    },
+    "devguide/examples/feature_snapshot_reuse_decisions.json": {
+      "bytes": 8524,
+      "sha256": "81606de87d29da5c0ffe389554495bd8deb1944909261c287b89918703aa2a40"
+    },
+    "docs/content/user/prepared_feature_reuse.md": {
+      "bytes": 4002,
+      "sha256": "23484419d8d2523a8f6403da14cd4f8019b8d5c89b7d9b62b80bfedebf4098e5"
+    },
+    "devguide/archive/specify_feature_snapshot_compatibility.md": {
+      "bytes": 3083,
+      "sha256": "e0b03178c549d520cda2d977ef52e0e8ccb9aaa709dcf1a2eb7cc5e85815a324"
+    }
+  },
+  "source_audit": {
+    "schema": "pharmacophoremt.feature-snapshot-source-audit@1",
+    "issue": 179,
+    "source_files": {
+      "pharmacophoremt/modeler/features.py": {
+        "bytes": 9416,
+        "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9"
+      },
+      "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+        "bytes": 32179,
+        "sha256": "eef2b67a1da8a79409dc039b760be0a3db205a861d33ff34b6be62d8d57c48d8"
+      },
+      "pharmacophoremt/_private/molsysmt.py": {
+        "bytes": 6518,
+        "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511"
+      },
+      "pharmacophoremt/screening/rigid_placements.py": {
+        "bytes": 8467,
+        "sha256": "b11400d6ccab3269c91e5ffbdc6d012c23c1d1c977fcb50e18add2e031e3392a"
+      },
+      "pharmacophoremt/screening/alignment.py": {
+        "bytes": 7339,
+        "sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc"
+      },
+      "pharmacophoremt/screening/rigid_correspondence.py": {
+        "bytes": 8886,
+        "sha256": "1c58029ba13ffdcbe151ccccb12c7568bdd9e9cad93919db794939f7f53ee618"
+      },
+      "pharmacophoremt/screening/prepared_runs.py": {
+        "bytes": 20353,
+        "sha256": "8e18a7afe2ad1420b18201f7c9ea740ed85e5eaf0ba7ac5c3128c7dca8ba2332"
+      },
+      "pharmacophoremt_results/_api.py": {
+        "bytes": 33399,
+        "sha256": "c61efd63d17a715833cfcb2a61de5cb2519b17d94655223ba0a6c535331b035d"
+      },
+      "pharmacophoremt_results/_store.py": {
+        "bytes": 38560,
+        "sha256": "0c258bc0486ddc21b422f3f6b901fce1aeceac82a72bbde51fcf322f2d4e53a0"
+      }
+    },
+    "native_inventory_fields": [
+      "definition",
+      "features",
+      "recognition",
+      "selected_atom_indices",
+      "structure_index",
+      "chemical_state"
+    ],
+    "native_feature_fields": [
+      "kind",
+      "atom_indices",
+      "geometry_atom_indices",
+      "center",
+      "direction",
+      "normal",
+      "charge"
+    ],
+    "inventory_validation_required_fields": [
+      "chemical_state",
+      "definition",
+      "features",
+      "recognition",
+      "selected_atom_indices",
+      "structure_index"
+    ],
+    "not_explicitly_captured_in_native_inventory": [
+      "prepared_parent",
+      "source_occurrence",
+      "requested_families",
+      "request_coverage",
+      "complete_producer_binding"
+    ],
+    "prepared_plan_compatibility_fields": [
+      "features",
+      "grouping",
+      "index",
+      "numerical",
+      "preparation",
+      "prepared_snapshot"
+    ],
+    "prepared_plan_runtime_fields": [
+      "python",
+      "phmt_python_sources_sha256",
+      "results_python_sources_sha256",
+      "provider_versions"
+    ],
+    "prepared_plan_native_source_closure_inferred": false,
+    "literal_text_precedes_quantity_detection": true,
+    "predicate_family_expression": "f'rigid_{correspondence_strategy}@1'",
+    "same_method_family_expression_across177": true,
+    "original_predicate_source": {
+      "bytes": 8626,
+      "sha256": "3b47e7c57e19ccc57679bbab85dcb4213f58bbc2198eab3a4bf5927dd4666844"
+    },
+    "corrected_predicate_source": {
+      "bytes": 8886,
+      "sha256": "1c58029ba13ffdcbe151ccccb12c7568bdd9e9cad93919db794939f7f53ee618"
+    },
+    "source_bytes_and_numerical_guard_changed": true,
+    "historical_evidence_original_identity": {
+      "bytes": 8189,
+      "sha256": "bf7542940f74507ee3ee6df1f4bfe94be8977da2af91f7d4e8e3a389dfd28b60"
+    },
+    "historical_results_reexecuted": false,
+    "unchanged_runtime_body_files": 159,
+    "design_examples": 24,
+    "design_examples_are_execution_results": false,
+    "scientific_modules_imported": false,
+    "scientific_calculations_executed": 0,
+    "static_claim_limit": "AST/source inspection verifies these stated fields and code relationships; it does not qualify an implemented snapshot, generic source authentication, provider/native closure or scientific compatibility."
+  },
+  "design_cases": 24,
+  "design_cases_are_runtime_detector_outputs": false,
+  "scientific_modules_imported_by_audit": false,
+  "scientific_calculations_executed": 0,
+  "historical_studies_reexecuted": false,
+  "runtime_body_files_unchanged": 159,
+  "original_source_audit_refusal": {
+    "reason": "Private AST checker assumed dict(...) constructor spelling for a literal dictionary return. No source finding or scientific execution follows that assertion.",
+    "correction": "Read statically declared literal string-key dictionaries as well as named dict keywords; existing assertions/source hashes and all contract examples remain unchanged.",
+    "original_control": "controls/audit_before_literal_dict.py",
+    "original_command": "source-audit_command.json",
+    "scientific_execution": false
+  },
+  "provider_handoff": {
+    "issue": "uibcdf/molsysmt#624",
+    "url": "https://github.com/uibcdf/molsysmt/issues/624#issuecomment-6759334496",
+    "comment_id": 6759334496,
+    "handoff_record": {
+      "bytes": 3329,
+      "sha256": "9f4eb75b7225bab205672418923391e52a0d149d337e329d1177030950b45a37"
+    },
+    "body_sha256": "169db298a5e56a9c3d2e6c4bf099bd7a78b698dfc77dfe84ea5d49b98278e3db",
+    "body_bytes": 2799,
+    "independent_API_readback_exact": true,
+    "provider_contract_received": false,
+    "provider_modified": false
+  },
+  "cross_component_label": {
+    "name": "component:molsysmt",
+    "central_audit": {
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/fast_data/home/liliana/repos@uibcdf/molsyssuite/devtools/scripts/component_issue_labels.py",
+        "--repository",
+        "pharmacophoremt",
+        "--component",
+        "molsysmt",
+        "--format",
+        "json"
+      ],
+      "code": 0,
+      "stdout": "[]\n",
+      "stderr": ""
+    },
+    "added_to_own_issue": 179
+  },
+  "local_checks": [
+    {
+      "name": "index-generate",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py"
+      ],
+      "exit_code": 0,
+      "output": "wrote devguide/archive/README.md\n"
+    },
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "458 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.105s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.910s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "strict_docs": {
+    "status": "completed",
+    "exit_code": 0,
+    "seconds": 10.008445237996057,
+    "interruption": null,
+    "arguments": [
+      "/usr/bin/prlimit",
+      "--data=536870912",
+      "--cpu=90",
+      "--fsize=67108864",
+      "--",
+      "/usr/bin/time",
+      "-v",
+      "-o",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-snapshot-contract-20261110-79z7fgsy/logs/docs-resources.txt",
+      "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+      "-B",
+      "-m",
+      "sphinx",
+      "-b",
+      "html",
+      "-j",
+      "1",
+      "-W",
+      "--keep-going",
+      "-E",
+      "-a",
+      "-q",
+      "-D",
+      "nb_execution_mode=off",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+      "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-feature-snapshot-contract-20261110-79z7fgsy/html"
+    ]
+  },
+  "rendered_current_manual_reuse_and_navigation": true,
+  "resources": {
+    "offline-inventory": {
+      "exit_code": 0,
+      "seconds": 0.9511308380169794,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 60018688
+    },
+    "labels": {
+      "exit_code": 0,
+      "seconds": 1.0183915560191963,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 99512320
+    },
+    "prepare-audit": {
+      "exit_code": 0,
+      "seconds": 0.20406131198978983,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 35889152
+    },
+    "source-audit": {
+      "exit_code": 1,
+      "seconds": 0.20415448400308378,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 39047168
+    },
+    "source-audit-literal": {
+      "exit_code": 0,
+      "seconds": 0.4057220600079745,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 55484416
+    },
+    "checks": {
+      "exit_code": 0,
+      "seconds": 6.369102466996992,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "AS_per_process_bytes": "unlimited inherited for Git mappings",
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 1073741824,
+      "capacity_not_reserved": true,
+      "observed_own_group_peak_RSS_bytes": 420765696
+    }
+  },
+  "full_evidence": {
+    "path": "feature_snapshot_contract_20261110_full.json.gz",
+    "compressed_bytes": 130047,
+    "compressed_sha256": "abea9809a2e37cd2bcfa447d2a886a245fc847e5de18f32f25402ecac7f0b78b",
+    "uncompressed_bytes": 490004,
+    "uncompressed_sha256": "c51b3fe9897df8f95d81d1f2ce94a2287bb3746f3ad816d98b987c290d7ae4c6"
+  },
+  "new_public_snapshot_codec_or_detector_implemented": false,
+  "full_source_installed_public_platform_or_release_qualified": false,
+  "scientific_attribution_created": false,
+  "stopped_148_165_retried": false,
+  "retention": {
+    "capsule": "build/phmt-feature-snapshot-contract-20261110-79z7fgsy",
+    "review": "2026-11-24"
+  },
+  "local_links": 407
+}

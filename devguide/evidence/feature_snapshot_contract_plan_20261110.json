@@ -1,0 +1,119 @@
+{
+  "schema": "pharmacophoremt.feature-snapshot-contract-plan@1",
+  "issue": 179,
+  "declared_at_utc": "2026-11-10T04:50:33.299415+00:00",
+  "parent_source": "68bfcbc831b116346aeb4b14ee5e8b8c41b7e1d9",
+  "operation": "Static source/AST and developer-contract receiving only; no scientific imports/calls, provider installation, new codec/index/API or scientific qualification.",
+  "source_files": {
+    "pharmacophoremt/modeler/features.py": {
+      "bytes": 9416,
+      "sha256": "d8cc86c6b500ad784f347e5c5e5f3703cf80f5309d23d727b71d80892717c3f9"
+    },
+    "pharmacophoremt/_private/arg_digestion/argument/_contracts.py": {
+      "bytes": 32179,
+      "sha256": "eef2b67a1da8a79409dc039b760be0a3db205a861d33ff34b6be62d8d57c48d8"
+    },
+    "pharmacophoremt/_private/molsysmt.py": {
+      "bytes": 6518,
+      "sha256": "c2d8a588de0cfbde4104e1781ddb316763cbf04e7c67b46fc1dd3c589a6eb511"
+    },
+    "pharmacophoremt/screening/rigid_placements.py": {
+      "bytes": 8467,
+      "sha256": "b11400d6ccab3269c91e5ffbdc6d012c23c1d1c977fcb50e18add2e031e3392a"
+    },
+    "pharmacophoremt/screening/alignment.py": {
+      "bytes": 7339,
+      "sha256": "564c586cf603bfa09696c1689c6753d30abc577394580f251eb325fe7ba7b6cc"
+    },
+    "pharmacophoremt/screening/rigid_correspondence.py": {
+      "bytes": 8886,
+      "sha256": "1c58029ba13ffdcbe151ccccb12c7568bdd9e9cad93919db794939f7f53ee618"
+    },
+    "pharmacophoremt/screening/prepared_runs.py": {
+      "bytes": 20353,
+      "sha256": "8e18a7afe2ad1420b18201f7c9ea740ed85e5eaf0ba7ac5c3128c7dca8ba2332"
+    },
+    "pharmacophoremt_results/_api.py": {
+      "bytes": 33399,
+      "sha256": "c61efd63d17a715833cfcb2a61de5cb2519b17d94655223ba0a6c535331b035d"
+    },
+    "pharmacophoremt_results/_store.py": {
+      "bytes": 38560,
+      "sha256": "0c258bc0486ddc21b422f3f6b901fce1aeceac82a72bbde51fcf322f2d4e53a0"
+    }
+  },
+  "runtime_identity_reference": {
+    "source": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+    "version": "0.4.0+218.g5515e93",
+    "receipt": "devguide/evidence/association_pruning_installed_20261110.json"
+  },
+  "historical_evidence": "devguide/evidence/association_pruning_installed_20261110.json",
+  "historical_evidence_identity": {
+    "bytes": 8189,
+    "sha256": "bf7542940f74507ee3ee6df1f4bfe94be8977da2af91f7d4e8e3a389dfd28b60"
+  },
+  "design_examples": {
+    "path": "devguide/examples/feature_snapshot_reuse_decisions.json",
+    "bytes": 8524,
+    "sha256": "81606de87d29da5c0ffe389554495bd8deb1944909261c287b89918703aa2a40"
+  },
+  "expected_design_examples": 24,
+  "molecular_provider": {
+    "repository": "uibcdf/molsysmt",
+    "head": "efbe67e1c6042078144bce1db24aa80bb565dbd2",
+    "inspected_public_sources": {
+      "molsysmt/basic/copy.py": {
+        "bytes": 6319,
+        "sha256": "caadcb6ba831605feee2565eee4b24466f3e96c2af90928cd05d1e3ec68d3c63"
+      },
+      "molsysmt/native/pdbqt_file_handler.py": {
+        "bytes": 29223,
+        "sha256": "671b1cf2053661c811349bd3c26b96eb8067b3cf7fa3c202f3660d17483b42bf"
+      }
+    },
+    "receiving": "Existing624proposal; no collection/snapshot implementation received or modified."
+  },
+  "central_tools": {
+    "repository": "uibcdf/molsyssuite",
+    "head": "b9852d973e96613a68cab7278491ff647bfd0b7d",
+    "tool": {
+      "bytes": 10085,
+      "sha256": "56c4b727a7bd50ddcd3ddcc524bc87ec440b1afb703dde4d084a779cbfaebb3e"
+    }
+  },
+  "provider_observation": {
+    "source": "Connected GitHub read-only issue and comment calls",
+    "issue": {
+      "number": 624,
+      "url": "https://github.com/uibcdf/molsysmt/issues/624",
+      "state": "open",
+      "updated_at": "2026-11-08T20:58:55Z",
+      "comments": 2
+    },
+    "comments": [
+      {
+        "url": "https://github.com/uibcdf/molsysmt/issues/624#issuecomment-6700755522",
+        "id": 6700755522,
+        "body_sha256_pending_in_audit": true
+      },
+      {
+        "url": "https://github.com/uibcdf/molsysmt/issues/624#issuecomment-6727038562",
+        "id": 6727038562,
+        "body_sha256_pending_in_audit": true
+      }
+    ],
+    "scope": "Observed existing consumer proposal and evidence; no delivered reusable collection contract is received by this work."
+  },
+  "resources": "Light static inspection plus serial bounded local checks/docs:CPU19,threads1,nice19,idleIO,DATA512MiB; AS unlimited for Git/docs mappings, own-group1GiB monitored stop,20percent reserve+1.5GiB entry margin,CPU120/wall180. No allocation/reservation/kernel aggregate memory/swap/tasks/quota guarantee. Slurm clients present/no allocation; prior controller refusal retained, no new scheduler attempt.",
+  "unchanged_stops": [
+    148,
+    165
+  ],
+  "retention_review": "2026-11-24",
+  "projection": "Prospective public index; complete original plan and controls retained in subsequent hash-qualified receipt archive.",
+  "original_plan_identity": {
+    "bytes": 37739,
+    "sha256": "9c280aa5217f73a8eddc000ff776a0e7060362a8bdb633dd2e253f1bcaac0283"
+  },
+  "runtime_body_files": 159
+}

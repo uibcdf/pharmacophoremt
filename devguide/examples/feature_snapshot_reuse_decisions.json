@@ -1,0 +1,200 @@
+{
+  "schema": "pharmacophoremt.feature-snapshot-design-cases@1",
+  "issue": 179,
+  "classification": "Normative design/acceptance examples; not execution outputs or a public persistence format.",
+  "action_words": "Table notation only; no compatibility detector or public enum is implemented.",
+  "cases": [
+    {
+      "id": "same",
+      "change": "Exact verified bindings and effective request are unchanged",
+      "feature_content": "reuse",
+      "retrieval_asset": "reuse",
+      "plan_or_outcome": "resume",
+      "reason": "Exact existing plan/runtime comparisons still apply."
+    },
+    {
+      "id": "relocation",
+      "change": "Only an external artifact locator changes; bytes and provider mappings are verified equal",
+      "feature_content": "reuse",
+      "retrieval_asset": "reuse",
+      "plan_or_outcome": "resume",
+      "reason": "Location verification is explicit; paths already inside old declarations are not rewritten."
+    },
+    {
+      "id": "display",
+      "change": "Only presentation or dated stock metadata outside the scientific binding changes",
+      "feature_content": "reuse",
+      "retrieval_asset": "reuse",
+      "plan_or_outcome": "resume",
+      "reason": "Availability is not molecular identity or a structural refresh."
+    },
+    {
+      "id": "geometry",
+      "change": "Prepared coordinates change under the same display name",
+      "feature_content": "new snapshot",
+      "retrieval_asset": "rebuild",
+      "plan_or_outcome": "new run",
+      "reason": "Use a new verified prepared parent and captured feature evidence."
+    },
+    {
+      "id": "state",
+      "change": "Topology, protonation/stereo state or conformer identity changes with similar coordinates",
+      "feature_content": "new snapshot",
+      "retrieval_asset": "rebuild",
+      "plan_or_outcome": "new run",
+      "reason": "Molecular correspondence and preparation belong to MolSysMT."
+    },
+    {
+      "id": "atom-map",
+      "change": "Local atom or geometry-participant mapping changes",
+      "feature_content": "new snapshot",
+      "retrieval_asset": "rebuild",
+      "plan_or_outcome": "new run",
+      "reason": "Equal centers and feature kinds cannot recover original atom identity."
+    },
+    {
+      "id": "occurrence",
+      "change": "Source occurrence keys, multiplicity or encounter order change with equal payloads",
+      "feature_content": "new manifest",
+      "retrieval_asset": "rebind and qualify",
+      "plan_or_outcome": "new run",
+      "reason": "Payload sharing needs explicit verified maps; no silent renumbering."
+    },
+    {
+      "id": "request",
+      "change": "An extra family is requested and returns no features",
+      "feature_content": "new capture",
+      "retrieval_asset": "requalify",
+      "plan_or_outcome": "new run",
+      "reason": "Requested/evaluated-empty differs from unrequested or unknown."
+    },
+    {
+      "id": "request-order",
+      "change": "Raw family ordering/duplicates change, with the same qualified effective set",
+      "feature_content": "reuse resolved request",
+      "retrieval_asset": "reuse",
+      "plan_or_outcome": "exact plan check",
+      "reason": "Preserve output feature order; current serialized declarations remain authoritative."
+    },
+    {
+      "id": "definition",
+      "change": "The feature/perception definition changes under familiar family names",
+      "feature_content": "new capture",
+      "retrieval_asset": "requalify",
+      "plan_or_outcome": "new run",
+      "reason": "Names alone do not identify recognition or geometry semantics."
+    },
+    {
+      "id": "orientation",
+      "change": "A donor direction, aromatic normal or charge changes",
+      "feature_content": "new payload",
+      "retrieval_asset": "requalify",
+      "plan_or_outcome": "new run",
+      "reason": "Position-only postings are not silently rebound to a new feature parent."
+    },
+    {
+      "id": "units",
+      "change": "An explicitly converted encoding changes units while preserving verified physical values",
+      "feature_content": "new derived payload",
+      "retrieval_asset": "requalify",
+      "plan_or_outcome": "new run",
+      "reason": "Retain both byte identities and the public quantity conversion; do not infer equal hashes."
+    },
+    {
+      "id": "frame",
+      "change": "The coordinate/frame/PBC convention changes",
+      "feature_content": "new snapshot",
+      "retrieval_asset": "requalify",
+      "plan_or_outcome": "new run",
+      "reason": "Use supported provider transformations and preserve correspondence."
+    },
+    {
+      "id": "predicate",
+      "change": "Candidate implementation or numerical admission changes with the same method family name",
+      "feature_content": "retain and validate ingestion",
+      "retrieval_asset": "requalify",
+      "plan_or_outcome": "new run",
+      "reason": "The177source correction and original receipts supply the concrete distinction."
+    },
+    {
+      "id": "query",
+      "change": "Query/tolerance changes within an explicitly qualified retrieval domain",
+      "feature_content": "reuse",
+      "retrieval_asset": "reuse qualified stage",
+      "plan_or_outcome": "new run",
+      "reason": "A reusable upstream asset does not make a saved run resumable with new query bytes."
+    },
+    {
+      "id": "score-budget",
+      "change": "Scoring, grouping, ordering or execution budget changes with the retrieval predicate unchanged",
+      "feature_content": "reuse",
+      "retrieval_asset": "reuse qualified stage",
+      "plan_or_outcome": "new run",
+      "reason": "Effective settings and completion/selected-witness meanings remain in the new plan."
+    },
+    {
+      "id": "outside-domain",
+      "change": "Optional/alternative feature semantics or a numerical scale lack retrieval qualification",
+      "feature_content": "retain original evidence",
+      "retrieval_asset": "unsupported or unknown",
+      "plan_or_outcome": "explicit supported plan",
+      "reason": "No implicit fallback, dropped constraint or invented negative."
+    },
+    {
+      "id": "representation",
+      "change": "Bin width, precision, chirality or asset representation changes",
+      "feature_content": "reuse compatible content",
+      "retrieval_asset": "new asset",
+      "plan_or_outcome": "new run",
+      "reason": "New asset qualification is separate from feature extraction."
+    },
+    {
+      "id": "empty",
+      "change": "A complete explicitly requested family is evaluated empty",
+      "feature_content": "retain valid empty evidence",
+      "retrieval_asset": "only supported domain",
+      "plan_or_outcome": "no activity inference",
+      "reason": "An empty feature family does not classify arbitrary queries or biological activity."
+    },
+    {
+      "id": "missing",
+      "change": "Parent/request/coverage context is missing or unverified",
+      "feature_content": "unknown",
+      "retrieval_asset": "refuse automatic reuse",
+      "plan_or_outcome": "pending",
+      "reason": "A matching opaque ID is not verification of the prepared source."
+    },
+    {
+      "id": "corrupt",
+      "change": "A payload is corrupt or uses an unsupported schema",
+      "feature_content": "refuse",
+      "retrieval_asset": "refuse",
+      "plan_or_outcome": "no calculation",
+      "reason": "Preserve the failure; do not manufacture an empty successful extraction."
+    },
+    {
+      "id": "prefix",
+      "change": "A query returns a budget-limited candidate prefix",
+      "feature_content": "unchanged",
+      "retrieval_asset": "qualification separate from completion",
+      "plan_or_outcome": "unknown pending work",
+      "reason": "Unsearched bins/occurrences remain unknown and confirmed outcomes remain original."
+    },
+    {
+      "id": "refresh",
+      "change": "A replacement build fails, cancels or is only partial",
+      "feature_content": "retain preceding complete snapshot",
+      "retrieval_asset": "retain old qualified asset",
+      "plan_or_outcome": "keep original run binding",
+      "reason": "Older data require explicit compatible selection; do not publish the failed replacement as current."
+    },
+    {
+      "id": "legacy",
+      "change": "A historical run has index=None and original six compatibility declarations",
+      "feature_content": "original contract",
+      "retrieval_asset": "not requested",
+      "plan_or_outcome": "original exact contract",
+      "reason": "No retrospective migration, added metadata, scientific credit or changed reader semantics."
+    }
+  ]
+}

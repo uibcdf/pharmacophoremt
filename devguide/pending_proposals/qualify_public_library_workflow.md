@@ -355,3 +355,17 @@ observations remain unexecuted; the kit does not close this usability gate.
 distribution metadata without a run/scientific import. Same139source/owned214
 bodies pass; actual version/wheel agreement and all ordinary output bytes verify.
 This improves exercise/setup context discovery, not source-body qualification.
+
+## Prepared-feature contract — 2026-11-10 UTC
+
+[#179](../prepared_feature_snapshot_contract.md) receives the declared design
+gate after#178: verified prepared parent, explicit extraction/empty coverage,
+ordered feature evidence and separate predicate/asset/plan compatibility.
+Twenty-four worked acceptance decisions and the current manual reuse guide link
+to an exact source/AST audit;159runtime bodies remain unchanged. MolSysMT#624
+receives scoped parent/map/relocation/mutation/failed-refresh acceptance input
+with independent comment readback. Its provider contract remains unreceived.
+No public snapshot codec, automatic preflight, molecular collection or index is
+implemented here; no scientific study/provider/source environment is rerun or
+modified. The next gate is a bounded capture/inspection prototype with its own
+source/exact-owned receiving and preserved native quantity/provenance semantics.

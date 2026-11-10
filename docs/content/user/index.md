@@ -51,6 +51,7 @@ constraint_semantics
 rdkit_interoperability
 pharmer_interoperability
 chemical_libraries
+prepared_feature_reuse
 ```
 
 ## Find examples and reference material

@@ -75,6 +75,10 @@ Choose a query and search method that admit those inputs, and declare finite
 search budgets. The recipes demonstrate `seeded_hit` with its own geometric
 requirements; this is a method choice, not an automatic choice for every query.
 
+For repeated queries against the same prepared input, see
+[feature-inventory reuse](prepared_feature_reuse.md) for the current modular route
+and the changes that require new features or a new saved run.
+
 ## Plan, run, resume and inspect
 
 1. Follow the [recoverable recipe](../cookbook/recoverable_prepared_screening.md)

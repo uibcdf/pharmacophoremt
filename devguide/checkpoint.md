@@ -9,6 +9,25 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#179 feature-snapshot contract](prepared_feature_snapshot_contract.md) closes
+the next design gate: prepared-parent/request/ordered-feature/predicate/asset/
+plan boundaries, 24 worked reuse/unknown/rebuild decisions and an explanation of
+[current manual reuse](../docs/content/user/prepared_feature_reuse.md). The
+[source-audit receipt](evidence/feature_snapshot_contract_20261110.json) retains
+nine inspected source identities, unchanged159runtime bodies and the concrete
+same-method-name/different-implementation #177 witness. The provider acceptance
+handoff to [MolSysMT#624](https://github.com/uibcdf/molsysmt/issues/624#issuecomment-6759334496)
+has independent exact readback; that molecular contract remains unreceived.
+No runtime API/codec/automatic compatibility/index is implemented by this design
+increment, and no scientific study is rerun.
+
+Next: declare a bounded native-feature capture/inspection prototype using the
+existing public producer and quantity codec, with a fixed wire profile, explicit
+parent trust/preconditions, requested-versus-empty coverage and the24design
+acceptance cases. Receive source and exact-owned bodies before public promotion.
+Keep provider collection/lifetime, wider numerical/cost, human/public-platform/
+release gates separate; #148/#165 remain stopped.
+
 [#178 finite retrieval](retrieval_candidate_controls.md) completes the next
 milestone5/6 experiment after the core correction below. Twelve original
 occurrences, nine query occurrences (four distinct configurations) and three bin
@@ -25,13 +44,12 @@ family. The reference still removes prefilter false positives. All214payloads/
 The [architecture decision](public_library_architecture.md#finite-retrieval-decision--178-2026-11-10-utc)
 keeps production-index selection and wider numerical/cost qualification open.
 
-Next: declare the prepared-feature snapshot and predicate/producer compatibility
-contract required for a public retrieval asset; retain MolSysMT#624 collection
-ownership and receive that provider boundary before a real-library index. Expand
-the numerical/identity domain with independent witnesses, then measure equivalent
-build/storage/cold/repeated-query workloads under admitted resources. Counts here
-are not speed evidence. Continue human receiving separately. #148/#165 remain
-stopped; full later-head/public-platform/release gates remain open under#9/#23.
+The next contract gate is now received under#179above; capture/preflight
+implementation and MolSysMT#624 provider receiving remain separate. Expand the
+numerical/identity domain and measure equivalent build/storage/cold/repeated-query
+workloads under admitted resources before index selection. Counts here are not
+speed evidence. Human and full later-head/public-platform/release gates remain
+open under#9/#23; #148/#165 remain stopped.
 
 [#177 association admission](pair_distance_pruning.md#association-graph-correction--177-2026-11-10-utc)
 corrects a core inconsistency discovered while preparing retrieval controls.
