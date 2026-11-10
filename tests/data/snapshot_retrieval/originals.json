@@ -1,0 +1,203 @@
+{
+  "schema": "pharmacophoremt.snapshot-retrieval-originals@1",
+  "receipt": "devguide/evidence/feature_snapshot_prototype_20261110.json",
+  "receipt_sha256": "c15a949a848df8cfe92e2ef38c016b9c5747e1e91929822ad6f2505e4ee10e17",
+  "full_evidence": {
+    "path": "feature_snapshot_prototype_20261110_full.json.gz",
+    "compressed_bytes": 1563417,
+    "compressed_sha256": "ce0b842de8a6aeb82610d17a169b4efb54ae7a4712660c9ab9c791e99e36cd6f",
+    "uncompressed_bytes": 11153398,
+    "uncompressed_sha256": "63a66438d06371886b73ed5583a958850ea5470e541d2216932da02d23ed844a"
+  },
+  "original_producer_contexts": {
+    "source": {
+      "scope": "selected-case-context",
+      "admission_sha256": "755cffc6d213bc2b0f83d13731ff66be2e3638fc3c884f59373862cb82690156",
+      "runtime_version": "0.4.0+134.gee5d9fa",
+      "versions": {
+        "pharmacophoremt": "0.4.0+120.g0925d97",
+        "molsysmt": "0.23.0+687.g2325038e8",
+        "pyunitwizard": "0.29.1+6.gf82b618",
+        "numpy": "2.5.4",
+        "ackredit": "0.12.1+10.g4beb850"
+      }
+    },
+    "installed": {
+      "scope": "selected-case-context",
+      "admission_sha256": "755cffc6d213bc2b0f83d13731ff66be2e3638fc3c884f59373862cb82690156",
+      "runtime_version": "0.4.0+218.g5515e93",
+      "versions": {
+        "pharmacophoremt": "0.4.0+218.g5515e93",
+        "molsysmt": "0.23.0+687.g2325038e8",
+        "pyunitwizard": "0.29.1+6.gf82b618",
+        "numpy": "2.5.4",
+        "ackredit": "0.12.1+10.g4beb850"
+      }
+    }
+  },
+  "snapshots": [
+    {
+      "context": "source",
+      "file": "source/nm-charges.json",
+      "bytes": 11410,
+      "sha256": "1dab9dd2556c6973626873e45b70f60401b47b8a1519f793e33710a2ab726cdc",
+      "original_payload_sha256": "24dc29cdd1038132084cea366405b8d391cc4c6449544714d288b688d7c5bcac",
+      "request": "charges",
+      "unit_policy": "nm",
+      "features": 3
+    },
+    {
+      "context": "source",
+      "file": "source/nm-empty.json",
+      "bytes": 7471,
+      "sha256": "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea",
+      "original_payload_sha256": "079e4f75e1d95b52b422795375b9ac2557e003050275abd37c77dac5559c8e99",
+      "request": "empty",
+      "unit_policy": "nm",
+      "features": 0
+    },
+    {
+      "context": "source",
+      "file": "source/nm-donors.json",
+      "bytes": 14290,
+      "sha256": "0cdd3640d676ba2c0ca4dbc75b003f264d5d63513341f36cc40ce31bf1d62d0c",
+      "original_payload_sha256": "b89340c6c33e6e053298779eca12f8ea2fe976d7e1b67fd54b288ac16748de0d",
+      "request": "donors",
+      "unit_policy": "nm",
+      "features": 2
+    },
+    {
+      "context": "source",
+      "file": "source/nm-aromatic.json",
+      "bytes": 9433,
+      "sha256": "9f94626fa32e40f18d98c0c40b4dcc46bbde3cc97127578ecbdd08a646474bab",
+      "original_payload_sha256": "cec64b23cc6c1e8e96cbeedc37a34431b432372858c908ec99bddead78d7fb1c",
+      "request": "aromatic",
+      "unit_policy": "nm",
+      "features": 1
+    },
+    {
+      "context": "source",
+      "file": "source/pm-charges.json",
+      "bytes": 11472,
+      "sha256": "94acffe2de6d432edb26b25d2ed11c16175f059539e9b7784a7a4faed99789dc",
+      "original_payload_sha256": "7e234c2cb3022586d1b68c923d47b2eba59653c01cc5504ad82c4047080237ed",
+      "request": "charges",
+      "unit_policy": "pm",
+      "features": 3
+    },
+    {
+      "context": "source",
+      "file": "source/pm-empty.json",
+      "bytes": 7471,
+      "sha256": "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea",
+      "original_payload_sha256": "079e4f75e1d95b52b422795375b9ac2557e003050275abd37c77dac5559c8e99",
+      "request": "empty",
+      "unit_policy": "pm",
+      "features": 0
+    },
+    {
+      "context": "source",
+      "file": "source/pm-donors.json",
+      "bytes": 14350,
+      "sha256": "32110bd22adaf677c8441fcd04cb6f49828a71b3cfe3d0f4b33b59cf37d2e4a3",
+      "original_payload_sha256": "cf32857f54189a8e8383955c070a74ae60fc9a8a4867d14b20b9c9e65d3e04c2",
+      "request": "donors",
+      "unit_policy": "pm",
+      "features": 2
+    },
+    {
+      "context": "source",
+      "file": "source/pm-aromatic.json",
+      "bytes": 9433,
+      "sha256": "dcda0e37a3112aac90d3d06c5cf407041795ec8618e5a100b92c8af9860a3e01",
+      "original_payload_sha256": "191bcfea94a896946d7dfca93696cac32d4a32a81507a745af972f463ddf76ae",
+      "request": "aromatic",
+      "unit_policy": "pm",
+      "features": 1
+    },
+    {
+      "context": "installed",
+      "file": "installed/nm-charges.json",
+      "bytes": 11410,
+      "sha256": "be6151eab8eec9c51f8bcd804b60424acb13a3f09c86b78c748bc7ef39052439",
+      "original_payload_sha256": "83e54f0c3e65cd6b1dd943d3e54677d638cfe8723d2a65e13e96b6f052aeac1e",
+      "request": "charges",
+      "unit_policy": "nm",
+      "features": 3
+    },
+    {
+      "context": "installed",
+      "file": "installed/nm-empty.json",
+      "bytes": 7471,
+      "sha256": "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50",
+      "original_payload_sha256": "08df279bac2f1d2d9d4d03618c992dcc948680d614e168f1ed82c557da5184c0",
+      "request": "empty",
+      "unit_policy": "nm",
+      "features": 0
+    },
+    {
+      "context": "installed",
+      "file": "installed/nm-donors.json",
+      "bytes": 14290,
+      "sha256": "b73a97e6c6847cc7a5be737d6ffc127a0b7d206761112765637b1ea7419882d8",
+      "original_payload_sha256": "2709b0274f7ebaee5983227c6645a911fd9a9e76485823d47e2d617e9c72c1cf",
+      "request": "donors",
+      "unit_policy": "nm",
+      "features": 2
+    },
+    {
+      "context": "installed",
+      "file": "installed/nm-aromatic.json",
+      "bytes": 9433,
+      "sha256": "5d2f0c53b6deaec517f9c60e87f9a2a2060671f277a14ccc4762a1181a347950",
+      "original_payload_sha256": "94ac31639f13a36678b9e27bdd72c580feec752816705a16263c2e88691d22e0",
+      "request": "aromatic",
+      "unit_policy": "nm",
+      "features": 1
+    },
+    {
+      "context": "installed",
+      "file": "installed/pm-charges.json",
+      "bytes": 11472,
+      "sha256": "f80b97cfd10fb19d195a1c0fe4095dae8b5d8250857d817d2ad40c7a967cfc7a",
+      "original_payload_sha256": "9adf2650d8f21c319ae35b7aaf78dcf6395ba46d3c6a35b425898b7a420d7c64",
+      "request": "charges",
+      "unit_policy": "pm",
+      "features": 3
+    },
+    {
+      "context": "installed",
+      "file": "installed/pm-empty.json",
+      "bytes": 7471,
+      "sha256": "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50",
+      "original_payload_sha256": "08df279bac2f1d2d9d4d03618c992dcc948680d614e168f1ed82c557da5184c0",
+      "request": "empty",
+      "unit_policy": "pm",
+      "features": 0
+    },
+    {
+      "context": "installed",
+      "file": "installed/pm-donors.json",
+      "bytes": 14350,
+      "sha256": "dd0dfe7b4e5b2794fd3c8b6939506bc46b7f59948dadc6b5ca0242c0d1da070b",
+      "original_payload_sha256": "60abcee398198ba0604b5c6c8714e3aa491aa18b8b400f0c2cf7a5a7035252ed",
+      "request": "donors",
+      "unit_policy": "pm",
+      "features": 2
+    },
+    {
+      "context": "installed",
+      "file": "installed/pm-aromatic.json",
+      "bytes": 9433,
+      "sha256": "d78319301d132d2ded0e324bb9b0d3349171615b95d70214d820dc147665b294",
+      "original_payload_sha256": "8707b0117239761a53634ab2fc29290ebb59ae2f9a14c2e1990a0e899e83b336",
+      "request": "aromatic",
+      "unit_policy": "pm",
+      "features": 1
+    }
+  ],
+  "original_bytes_unchanged": true,
+  "new_science_or_molecular_operations": 0,
+  "source_authenticity": "Not established by content receiving; original caller trust precondition retained."
+}

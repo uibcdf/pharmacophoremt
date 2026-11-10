@@ -368,3 +368,20 @@ The24design cases map to3covered-in-profile/14partial/7deferred; automated reuse
 public storage/API, retrieval/plan compatibility and atomic refresh are not
 implemented. Next qualify bounded snapshot ingestion into retrieval against the
 exhaustive reference. MolSysMT#624 still owns generic collection/lifetime support.
+
+## Native snapshot ingestion decision — #181, 2026-11-10 UTC
+
+The [bounded composition](snapshot_retrieval_ingestion.md) now receives native
+snapshot byte/work bindings through the existing finite pair postings. Source
+and exact-owned218pass41selected guards,24complete rows and72independent rational
+mapping comparisons each. Compact postings translate to original work positions;
+six short/empty inputs are retained and evaluated for this full-three-feature
+proposal family. Complete original feature/atom/geometry maps and old/new
+attribution planes remain distinct; no molecular operation or extraction occurs.
+The [receipt](evidence/snapshot_retrieval_20261110.json) preserves all original
+failed/corrected evidence and the concrete nm/pm rounding-sensitive unsafe-bin
+control. Equal projections cannot bypass changed original byte/work bindings.
+This does not select a production index or promote a public API, authenticate
+molecular source, compare arbitrary runtime versions or qualify final fitting/
+activity/universal float recall/cost. Next receive wider feature/numerical domain
+and equivalent workload costs; MolSysMT#624 and #148/#165 stops remain separate.

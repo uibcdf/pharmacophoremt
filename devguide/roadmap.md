@@ -34,6 +34,20 @@ user testing or result interpretation.
 
 
 
+[#181 snapshot ingestion](snapshot_retrieval_ingestion.md) receives original
+native snapshots through the finite candidate index: 41 selected guards and 24
+complete query/width/unit-policy rows pass per source/exact-owned218 context,
+with 72 independent rational checks and complete original work/feature/atom maps.
+The [receipt](evidence/snapshot_retrieval_20261110.json) preserves the initial
+unsafe-control assertion and corrected expectations with unchanged snapshots,
+queries, tolerances, runtime/providers/native and resources. Six short/empty
+inputs and repeated work remain explicit; changed byte/work bindings refuse stale
+reuse and prefix work remains unknown. No molecular operation/new extraction or
+original-workflow credit replay occurs. Next declare wider feature/numerical
+receiving before equivalent cost measurements or production-index selection.
+Public API/index, MolSysMT#624, human/platform/release and #148/#165 stops remain
+separate; this is an unshipped bounded composition.
+
 [#180 native-feature snapshots](feature_snapshot_prototype.md) receives bounded
 capture, structural inspection and explicit quantity reconstruction. All 32 guards and
 8 complete nm/pm rows pass per source/exact-owned218 context; two fresh readers each

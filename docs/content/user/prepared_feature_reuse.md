@@ -41,7 +41,9 @@ for automatic persistent reuse.
 
 A [bounded snapshot study](../validation/feature_snapshots.md) now checks native
 capture, structural inspection and explicit quantity reconstruction. It remains
-an unshipped prototype. Persistent public snapshots and automatic compatibility
+an unshipped prototype. The [ingestion study](../validation/snapshot_retrieval.md)
+now checks that finite candidate retrieval preserves original snapshot/work maps
+and refuses changed bindings. Persistent public snapshots and automatic compatibility
 preflight retain their own acceptance gates. The [developer contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/prepared_feature_snapshot_contract.md)
 requires a verified prepared parent, explicit request coverage, complete ordered
 feature evidence, units and predicate/producer compatibility. Molecular source

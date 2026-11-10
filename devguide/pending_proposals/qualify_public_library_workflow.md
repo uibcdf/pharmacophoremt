@@ -383,3 +383,18 @@ retains failed preparation/control attempts and exact bodies/native/fixtures.
 Next qualify bounded retrieval ingestion. Public snapshot/preflight/index,
 MolSysMT#624 collection/lifetime, representative humans and full supported
 delivery remain open; #108 is not complete and #148/#165 remain stopped.
+
+## Frozen snapshot ingestion — 2026-11-10 UTC
+
+[#181](../snapshot_retrieval_ingestion.md) receives the bounded composition of
+original native snapshots and the existing finite index.41selected guards and
+24complete rows pass per source/exact-owned218context, with72independent rational
+mapping checks. Original work/feature/atom maps, repeated/short/empty records,
+full provenance and unknown prefix work survive. Changed byte/work bindings refuse
+stale reuse even when centers/counts stay equal. The [receipt](../evidence/snapshot_retrieval_20261110.json)
+retains the failed control expectation/diagnosis and complete corrected outputs;
+original snapshots/queries/tolerances/runtime/providers/resources stay unchanged.
+No molecular operation/new extraction, public stable API/index, generic collection,
+performance/activity/human/platform/release gate follows. Next receive wider
+feature/numerical controls before equivalent cost measurements and production
+selection. #108 remains active and #148/#165 remain stopped.

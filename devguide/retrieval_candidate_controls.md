@@ -120,3 +120,17 @@ The final wrapper has one Ruff-required import-group blank line after receiving.
 Its Python AST is verified identical to the byte-exact original driver archived
 from both runs. The local receiving overlay records both byte identities and
 the shared AST hash; original cases/inputs/results are not rerun or rewritten.
+
+## Native ingestion follow-up — #181, 2026-11-10 UTC
+
+The [snapshot-ingestion receiving](snapshot_retrieval_ingestion.md) now connects
+the original frozen native captures to the existing finite candidate prototype.
+Its [receipt](evidence/snapshot_retrieval_20261110.json) receives 41 selected guards,
+24 complete rows and 72 independent rational comparisons per source/exact-owned218
+context. Original work/feature/atom maps, short/empty/repeated records, provenance
+and unknown prefixes survive. An overstrong unsafe-bin control assertion and its
+nm/pm rounding diagnosis stay original; only its expected misses were corrected.
+This follow-up does not change earlier run identities, promote a stable public
+API/index/compatibility detector, authenticate source or qualify cost/biological/
+platform/release gates. Next receive wider typed-feature/numerical inputs before
+equivalent-cost measurements or production-index selection. #148/#165 stay stopped.

@@ -1,0 +1,340 @@
+{
+  "schema": "pharmacophoremt.snapshot-retrieval-summary@1",
+  "issue": 181,
+  "case_id": "frozen-native-snapshot-retrieval-v1",
+  "date_utc": "2026-11-10",
+  "source_parent": "bd6e1bbf5c301321799ad8258c73af212458c0ee",
+  "runtime_source_commit": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+  "admission": {
+    "bytes": 854466,
+    "sha256": "b2a7e56d623a6914ff1a0b09fe2e86d6f19ed30340a5196ac9dfc94a99db7112"
+  },
+  "original_failed_plan": {
+    "bytes": 854166,
+    "sha256": "8f519e711c85643bcb4b865807ad304f6332a21c7a0cb9fbfcd7960577f5b216"
+  },
+  "original_snapshots": 16,
+  "original_work_occurrences_per_context": 9,
+  "eligible_original_ordinals": [
+    1,
+    4,
+    5
+  ],
+  "not_indexed_original_ordinals": [
+    0,
+    2,
+    3,
+    6,
+    7,
+    8
+  ],
+  "feature_counts_per_work": [
+    0,
+    3,
+    2,
+    1,
+    3,
+    3,
+    2,
+    0,
+    1
+  ],
+  "contexts": {
+    "source": {
+      "selected_guards": 41,
+      "new_guards": 28,
+      "existing_oracle_guards": 13,
+      "complete_policies": 2,
+      "complete_rows": 24,
+      "independent_rational_mapping_comparisons": 72,
+      "reference_calls": {
+        "exhaustive": 72,
+        "retrieved": 54,
+        "total": 126
+      },
+      "actual_attribution_items": 8,
+      "actual_attribution_uses": 8,
+      "original_workflow_credit_replayed": false,
+      "loaded_PHMT_modules": {
+        "tests": 144,
+        "experiment": 146
+      },
+      "molecular_operations_observed": 0,
+      "producer": {
+        "scope": "selected-case-context",
+        "admission_sha256": "b2a7e56d623a6914ff1a0b09fe2e86d6f19ed30340a5196ac9dfc94a99db7112",
+        "runtime_version": "0.4.0+134.gee5d9fa",
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+687.g2325038e8",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "numpy": "2.5.4",
+          "ackredit": "0.12.1+10.g4beb850"
+        }
+      }
+    },
+    "installed": {
+      "selected_guards": 41,
+      "new_guards": 28,
+      "existing_oracle_guards": 13,
+      "complete_policies": 2,
+      "complete_rows": 24,
+      "independent_rational_mapping_comparisons": 72,
+      "reference_calls": {
+        "exhaustive": 72,
+        "retrieved": 54,
+        "total": 126
+      },
+      "actual_attribution_items": 8,
+      "actual_attribution_uses": 8,
+      "original_workflow_credit_replayed": false,
+      "loaded_PHMT_modules": {
+        "tests": 144,
+        "experiment": 146
+      },
+      "molecular_operations_observed": 0,
+      "producer": {
+        "scope": "selected-case-context",
+        "admission_sha256": "b2a7e56d623a6914ff1a0b09fe2e86d6f19ed30340a5196ac9dfc94a99db7112",
+        "runtime_version": "0.4.0+218.g5515e93",
+        "versions": {
+          "pharmacophoremt": "0.4.0+218.g5515e93",
+          "molsysmt": "0.23.0+687.g2325038e8",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "numpy": "2.5.4",
+          "ackredit": "0.12.1+10.g4beb850"
+        }
+      }
+    }
+  },
+  "comparison": {
+    "source_owned_complete_rows_equal": 24,
+    "unit_policy_complete_row_pairs_per_context": 12,
+    "full_original_work_feature_atom_maps_equal": true,
+    "snapshot_byte_and_producer_metadata_preserved_separately": true,
+    "width_1_exact_bin_missing_original_ordinals": [
+      4
+    ],
+    "width_0_125_exact_bin_missing_original_ordinals": [
+      1,
+      4,
+      5
+    ],
+    "same_anchor_false_positive_candidates": [
+      1,
+      4,
+      5
+    ],
+    "same_anchor_reference_proposals": [
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      [],
+      []
+    ],
+    "pending_prefix_original_ordinals": [
+      4,
+      5
+    ],
+    "unsearched_work_unknown": true,
+    "original_snapshot_reading_and_reconstruction_no_new_credit": true
+  },
+  "identities_verified": {
+    "wheel_payloads": 214,
+    "runtime_bodies": 159,
+    "provider_Python_files": 4594,
+    "native": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+      "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+    },
+    "case_files": 30
+  },
+  "original_failed_source_tests": {
+    "passed": 35,
+    "setup_errors": 6,
+    "root_cause": "One overstrong exact-bin negative-control assertion; first fixture-local intermediate values were not exported, no completed first result claimed."
+  },
+  "correction": "Only control expectations changed: width1misses4,width0.125misses1/4/5. Original snapshots/queries/tolerances/conservative oracle/runtime/providers/native/resources unchanged.",
+  "cold_saved_evidence": {
+    "original_reports": 2,
+    "policies": 4,
+    "complete_rows": 48,
+    "scientific_modules_loaded": 0,
+    "scientific_import_attempts": 0,
+    "existing_destination_refusals_before_scientific_import": 2,
+    "supported_reader_API": false
+  },
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "DATA_bytes": 536870912,
+    "AS_bytes": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "reserve_fraction": 0.2,
+    "capacity_reserved": false,
+    "kernel_aggregate_enforcement": false,
+    "performance_measured": false
+  },
+  "limits": [
+    "Unshipped finite-case composition, no public stable snapshot/index API.",
+    "Caller trust and byte binding do not authenticate molecular origin or compare arbitrary runtime/predicate versions.",
+    "Short inputs are evaluated for this complete three-feature query family, not classified inactive.",
+    "No final fitting/orientation/activity, universal floating-point recall, build/query cost or efficiency claim.",
+    "Generic molecular collection remains MolSysMT624; full current-head/installed-platform/public/release gates remain9/23-owned;148/165stopped."
+  ],
+  "full_evidence": {
+    "path": "snapshot_retrieval_20261110_full.json.gz",
+    "compressed_bytes": 1438571,
+    "compressed_sha256": "a5f89b7b832e48bca97c55f6733cc9015cc4f43b772ef2cbf0c9a4d327312ebb",
+    "uncompressed_bytes": 11038258,
+    "uncompressed_sha256": "68839cb0cbf943c6062a266666f7570e854576777fe521404179bb1cdad54af1"
+  },
+  "local_receiving_evidence": {
+    "path": "snapshot_retrieval_20261110_receiving.json.gz",
+    "compressed_bytes": 73018,
+    "compressed_sha256": "070339ff63836b20c483500000c783cbe4162f27c7d79ca3e882c142583a78c0",
+    "uncompressed_bytes": 278509,
+    "uncompressed_sha256": "7c31f8ceb6eb5d856c549bcf9c6e32906a86446c98031e00bcf27782e1617de0"
+  },
+  "local_receiving": {
+    "checks": [
+      {
+        "name": "index-generate",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "code": 0,
+        "output": "wrote devguide/archive/README.md\n"
+      },
+      {
+        "name": "ruff",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "check",
+          "."
+        ],
+        "code": 0,
+        "output": "All checks passed!\n"
+      },
+      {
+        "name": "format",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "code": 0,
+        "output": "465 files already formatted\n"
+      },
+      {
+        "name": "index",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "code": 0,
+        "output": "Generated report indexes are current.\n"
+      },
+      {
+        "name": "reporting",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "code": 0,
+        "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.201s\n\nOK\n"
+      },
+      {
+        "name": "archives",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "code": 0,
+        "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.185s\n\nOK\n"
+      },
+      {
+        "name": "whitespace",
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "code": 0,
+        "output": ""
+      }
+    ],
+    "strict_full_docs": {
+      "status": "completed",
+      "exit_code": 0,
+      "seconds": 12.017606426001294,
+      "interruption": null,
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=90",
+        "--fsize=67108864",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-snapshot-retrieval-20261110-yej9veys/logs/docs-resources.txt",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-snapshot-retrieval-20261110-yej9veys/html"
+      ]
+    },
+    "local_links": 436,
+    "rendered_case_limits_and_navigation": true,
+    "warnings": "Original optional-beartype notices retained without dependency installation or suppression."
+  }
+}

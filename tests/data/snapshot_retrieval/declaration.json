@@ -1,0 +1,269 @@
+{
+  "schema": "pharmacophoremt.snapshot-retrieval-case@1",
+  "issue": 181,
+  "declared_at_utc": "2026-11-10T05:58:27.677743+00:00",
+  "original_snapshot_receipt": "devguide/evidence/feature_snapshot_prototype_20261110.json",
+  "snapshot_contexts": [
+    "source",
+    "installed"
+  ],
+  "work": [
+    {
+      "work_key": "empty:nm",
+      "snapshot": "nm-empty.json"
+    },
+    {
+      "work_key": "nm",
+      "snapshot": "nm-charges.json"
+    },
+    {
+      "work_key": "donors:nm",
+      "snapshot": "nm-donors.json"
+    },
+    {
+      "work_key": "ring:nm",
+      "snapshot": "nm-aromatic.json"
+    },
+    {
+      "work_key": "1 nm",
+      "snapshot": "pm-charges.json"
+    },
+    {
+      "work_key": "repeat=α",
+      "snapshot": "nm-charges.json"
+    },
+    {
+      "work_key": "donors:pm",
+      "snapshot": "pm-donors.json"
+    },
+    {
+      "work_key": "empty:pm",
+      "snapshot": "pm-empty.json"
+    },
+    {
+      "work_key": "ring:pm",
+      "snapshot": "pm-aromatic.json"
+    }
+  ],
+  "queries": [
+    {
+      "key": "identity",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "expected_mappings_per_eligible": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "cross-bin-feasible",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            5.125,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "expected_mappings_per_eligible": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ]
+      ]
+    },
+    {
+      "key": "same-anchor-impossible",
+      "features": [
+        [
+          "P",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            6,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "expected_mappings_per_eligible": []
+    },
+    {
+      "key": "wrong-kind",
+      "features": [
+        [
+          "H",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "expected_mappings_per_eligible": []
+    }
+  ],
+  "label_map": {
+    "P": "positive charge",
+    "N": "negative charge",
+    "H": "hydrophobicity",
+    "A": "hb acceptor"
+  },
+  "unit": "angstrom",
+  "bin_widths": [
+    0.125,
+    0.5,
+    1.0
+  ],
+  "unit_contexts": [
+    "nm",
+    "pm"
+  ],
+  "anchor_feature_indices": [
+    0,
+    1
+  ],
+  "numerical_guard_bins": 1,
+  "eligible_original_ordinals": [
+    1,
+    4,
+    5
+  ],
+  "not_indexed_original_ordinals": [
+    0,
+    2,
+    3,
+    6,
+    7,
+    8
+  ],
+  "expected_counts": [
+    0,
+    3,
+    2,
+    1,
+    3,
+    3,
+    2,
+    0,
+    1
+  ],
+  "expected_rows_per_policy": 12,
+  "expected_baseline_calls_per_policy": 36,
+  "expected_oracle_comparisons_per_policy": 36,
+  "max_reference_calls_per_policy": 144,
+  "tolerance_nm": 1e-12,
+  "profile": "native-classical-single-frame@1, full noncollinear three-point query; candidate projection has 3/4 points, coordinates<=16angstrom, lookup64bins/12candidates; shorter native inputs retained and tested by full-query reference",
+  "semantics": "Index work key is the declared original work occurrence, not a replacement for parent source/occurrence names; preserve both planes, complete original bytes/maps/coverage/provenance. Snapshot digest validates declared bytes, not molecular origin.",
+  "scope": "Bounded original analytical inputs and mathematical query hypotheses; no molecular operation/new extraction, production index/public API/collection/universal float recall/performance/activity claim.",
+  "resources": "Same CPU19/thread1/nice19/idleIO/DATA512MiB/AS1GiB/group512MiB monitor/20percent reserve/CPU120/wall180; no reservation/kernel aggregate enforcement.148/165remainstopped.",
+  "receiving_revision": 2,
+  "negative_control_width_1_expected_missing": [
+    4
+  ],
+  "negative_control_width_0_125_expected_missing": [
+    1,
+    4,
+    5
+  ],
+  "receiving_correction": "First guard incorrectly required every eligible occurrence to be missed by exact-bin lookup at width1. Public conversion preserves original nm/pm rounding: only ordinal4 misses at width1, all1/4/5 at width0.125. Only that overstrong control assertion changes; original snapshots, four queries, tolerances, widths, conservative reference/oracle expectations and resources remain unchanged.",
+  "corrected_at_utc": "2026-11-10T06:08:21.392767+00:00"
+}

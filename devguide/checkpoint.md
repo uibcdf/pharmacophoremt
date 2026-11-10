@@ -9,29 +9,30 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#180 native-feature snapshots](feature_snapshot_prototype.md) receives the
-next implementation gate after [#179](prepared_feature_snapshot_contract.md).
-The unshipped capture/inspection/reconstruction tool passes32guards per source
-and exact-owned218context, with8complete nm/pm rows each. Charge centers/signs,
-shared-center donor directions, aromatic normals, original maps and empty
-coverage agree. Two fresh readers each inspect all16original snapshots with
-scientific imports blocked; reading/reconstruction creates no new original-work
-credit. The [receipt/archive](evidence/feature_snapshot_prototype_20261110.json)
-retains original failures, actual attribution/version differences,214wheel
-payloads/159runtime bodies/4594provider files and all frozen parent/case inputs.
+[#181 snapshot ingestion](snapshot_retrieval_ingestion.md) receives the next
+implementation gate using the original [#180 snapshots](feature_snapshot_prototype.md)
+and existing finite index. All 41 selected guards pass per source/exact-owned218
+context; each completes 24 query/width/unit-policy rows and 72 independent rational
+mapping checks. Original work/feature/atom maps agree with exhaustive native
+proposals, including the repeated work and six short/empty inputs. The
+[receipt/archive](evidence/snapshot_retrieval_20261110.json) preserves the first
+overstrong unsafe-bin control assertion, its diagnosis and corrected receiving,
+with unchanged original snapshots/queries/tolerances/runtime/providers/resources.
 
-The [public analytical case](../docs/content/validation/feature_snapshots.md)
-and [24-case mapping](examples/feature_snapshot_prototype_coverage.json) distinguish
-3covered-in-profile/14partial/7deferred. Parent trust remains an explicit caller
-precondition, not authenticated source identity. No stable public snapshot API,
-automatic compatibility/index/plan or generic molecular collection is delivered.
-MolSysMT#624 remains unreceived; full later-head/platform/human/release gates
-retain their separate owners and #148/#165 remain stopped.
+The [public analytical case](../docs/content/validation/snapshot_retrieval.md)
+explains original versus compact ordinals, stale-binding refusal and unknown
+prefix work. Each context makes 126 actual native reference calls, with no
+molecular operation, extraction or original-workflow credit replay. Full actual
+attribution/version differences and 214 wheel payloads/159 runtime bodies/4594
+provider files/30 case files verify. The composition remains unshipped; original
+caller trust is not authenticated molecular provenance. Stable public API/index,
+MolSysMT#624 collection/lifetime, wider numerical/cost/human/supported-delivery
+and #148/#165 stops retain their separate gates.
 
-Next: declare a bounded experiment ingesting these frozen feature occurrences
-into the finite retrieval prototype, retaining original parent/request/occurrence
-maps and exhaustive-reference equality. Receive source/exact-owned before any
-public API/index promotion; wider numerical/cost qualification stays separate.
+Next: declare wider typed-feature/numerical receiving with independently checked
+three/four-feature inputs and interval/rounding boundaries. Receive it before
+measuring equivalent build/storage/cold/repeated-query costs under admitted
+resources or selecting a production index. Public API promotion stays separate.
 
 [#178 finite retrieval](retrieval_candidate_controls.md) completes the next
 milestone5/6 experiment after the core correction below. Twelve original
