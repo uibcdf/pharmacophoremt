@@ -107,6 +107,14 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-10: [#172 inspection exercise](saved_inspection_usability.md) delivers
+public synthetic setup, participant/facilitator sheets and unfilled observations.
+The [receipt](evidence/saved_inspection_exercise_20261110.json) receives identical
+40960-byte source/owned208fixtures, ten documented commands and one expert body
+per context, plus corrected-key CLI recovery,26guarded children and strict docs.
+No new runtime/provider/artifact or human-usability acceptance follows. Actual
+representative participants remain a separately open#108gate.
+
 2026-11-09: [complete source receiving](numerical_reader_ci_checkpoint.md#complete-source-receiving--2026-11-09-utc)
 accepts exact af408e7 / source42656135375:2693passes/zero reported skips/46warnings
 and108qualified XML paths in all eight Linux/macOS Python3.11–3.14 cells. The

@@ -9,6 +9,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#172 saved-inspection exercise](../docs/content/cookbook/saved_inspection_exercise.md)
+provides a downloadable public-writer synthetic fixture, participant tasks,
+[facilitator answers](saved_inspection_usability.md) and unfilled observations.
+The [technical receipt](evidence/saved_inspection_exercise_20261110.json) verifies
+identical40960-byte source/unchanged-owned208files, ten documented commands and
+one complete expert body per context, plus exact-key CLI recovery after refusal.
+All26guarded children,159runtime/214payload identities, original recipes, strict
+docs/download/navigation and local checks pass. The kit resolves; actual human
+receiving remains open under#108. No molecular calculation is executed.
+
 [#171 complete source discovery and inspection](../docs/content/cookbook/saved_work_inspection.md#discover-a-source-and-inspect-its-work-in-one-snapshot)
 composes original-source discovery, source/status counts and bounded detail display
 in one public snapshot. All216declared parameter cases pass from source and the
@@ -136,11 +146,12 @@ its original 2505-case/eight-cell source42451906584, policy42451909669 and
 publication42451913187 evidence. The later af408e7 acceptance above preserves
 all earlier source/run identities; it does not retroactively qualify later heads.
 
-**Next concrete action:** deliver #172, the bounded guided/expert saved-inspection
-usability exercise: reproducible synthetic fixture, participant/facilitator sheets,
-unfilled observations and source/unchanged-owned208 technical dry-run. Declare
-actual human receiving separately; retain later-head full-source and complete
-public/platform debt under #9/#23. No new frozen-run dispatch or #148/#165 retry.
+**Next concrete action:** use the #172 kit for actual novice/expert observations
+under#108, keeping task outcomes and assistance separate from automated parity.
+Improve version discoverability of the independent reader CLI so participants
+can identify installed distributions without importing scientific providers.
+Keep later-head full-source and complete public/platform debt under#9/#23;
+no new frozen-run dispatch or#148/#165retry.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.
 Before any further Pharmer build, receive infrastructure-owner disposition and

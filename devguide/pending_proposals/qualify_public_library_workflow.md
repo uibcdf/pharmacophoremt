@@ -345,3 +345,8 @@ discovery, source/status selection and details in one snapshot:216declared recip
 parameter cases pass per source/unchanged-owned208context with42complete original
 details checked in each. The [executed receipt](../evidence/source_discovery_journey_20261109.json)
 resolves this bounded task, retaining broader source/usability/provider gates.
+
+The [#172 exercise kit](../saved_inspection_usability.md) is technically received
+from source and unchanged owned208: identical synthetic data, CLI/API tasks,
+literal-key recovery and downloadable script/navigation. Actual novice/expert
+observations remain unexecuted; the kit does not close this usability gate.

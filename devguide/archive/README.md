@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (112)
+### Resolved (113)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -80,6 +80,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`pose_radius_boundary_units.md`](pose_radius_boundary_units.md) — [#84](https://github.com/uibcdf/pharmacophoremt/issues/84) — Preserve inclusive positive-site radius decisions across application units. *(resolved, measured)*
 - [`prepare_pharmer_p1.md`](prepare_pharmer_p1.md) — [#161](https://github.com/uibcdf/pharmacophoremt/issues/161) — Freeze the P1 spherical-interior comparison and receive its PHMT arm. *(resolved, measured)*
 - [`prepare_pharmer_p1_external.md`](prepare_pharmer_p1_external.md) — [#164](https://github.com/uibcdf/pharmacophoremt/issues/164) — Prepare a source/executable/input/resource declaration for the external Pharmer P1 arm. *(resolved, measured)*
+- [`prepare_saved_inspection_exercise.md`](prepare_saved_inspection_exercise.md) — [#172](https://github.com/uibcdf/pharmacophoremt/issues/172) — Deliver a reproducible saved-inspection exercise and technical dry-run. *(resolved, measured)*
 - [`prepared_ccd_ligand_validation.md`](prepared_ccd_ligand_validation.md) — [#30](https://github.com/uibcdf/pharmacophoremt/issues/30) — Traceable CCD ideal ligands for native preparation, refinement and consensus controls. *(resolved, measured)*
 - [`prepared_distinct_consensus.md`](prepared_distinct_consensus.md) — [#51](https://github.com/uibcdf/pharmacophoremt/issues/51) — Qualify distinct prepared EST/DES consensus support, empty outcomes and persisted source maps. *(resolved, measured)*
 - [`prepared_end_to_end_workflow.md`](prepared_end_to_end_workflow.md) — [#49](https://github.com/uibcdf/pharmacophoremt/issues/49) — Qualify construction, curation, persistence and placed screening on a public prepared CCD control. *(resolved, measured)*

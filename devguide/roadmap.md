@@ -31,6 +31,14 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+The [#172 saved-inspection exercise](saved_inspection_usability.md) prepares
+representative human receiving for milestone2 with downloadable synthetic data,
+participant tasks, facilitator answers and an unfilled observation template.
+The [technical receipt](evidence/saved_inspection_exercise_20261110.json) verifies
+source/unchanged-owned208CLI/API parity and literal-key recovery on identical
+40960-byte files, all159runtime/214payload identities and strict docs. Actual
+human completion, confusion, assistance and timing remain unmeasured.
+
 The [#170 saved-source inventory](saved_source_inventory.md) advances milestone2
 with discoverable literal sources before selecting work. All134 selected source
 cases and thirteen exact ordinary command-byte controls pass; strict docs pass.

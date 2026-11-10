@@ -1,0 +1,810 @@
+{
+  "schema": "pharmacophoremt.saved-inspection-exercise@1",
+  "issue": 172,
+  "recorded_at_UTC": "2026-11-10T00:07:58.485575+00:00",
+  "parent_source": "e51b85fc0c8643a79a99556ea11c6b5b9c9b827c",
+  "producer": "Containing commit freezes the exercise kit; participant/builder hashes retained, facilitator receiving notes updated separately after dry-run.",
+  "owned_source": "adbecee38bf92b1d14c1477ea7ac6e90cf057597",
+  "owned_version": "0.4.0+208.gadbecee",
+  "owned_wheel": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-source-inventory-20261109-3baqkgwi/wheels/pharmacophoremt-0.4.0+208.gadbecee-py3-none-any.whl",
+    "bytes": 4532842,
+    "sha256": "3ac4f1ce0d32ad549c4537b16b5f2a3a47187a6325621c4e7113c996aaac5f7b"
+  },
+  "frozen_documents": {
+    "builder": {
+      "path": "/tmp/phmt-inspection-exercise-receiving-20261110-8wn19yzu/fixtures/saved_inspection_exercise.py",
+      "identity": {
+        "bytes": 3544,
+        "sha256": "e83882062dd62712d0c75cb4a6dc1259345dbf39891437d8d968d98e8f6013fb"
+      },
+      "original": "docs/_static/examples/saved_inspection_exercise.py"
+    },
+    "participant": {
+      "path": "/tmp/phmt-inspection-exercise-receiving-20261110-8wn19yzu/fixtures/saved_inspection_exercise.md",
+      "identity": {
+        "bytes": 6664,
+        "sha256": "3effe6758514abd2fce356b7ab0332013c7ed6222c98e862de4a153bd7a35b78"
+      },
+      "original": "docs/content/cookbook/saved_inspection_exercise.md"
+    },
+    "facilitator": {
+      "path": "/tmp/phmt-inspection-exercise-receiving-20261110-8wn19yzu/fixtures/saved_inspection_usability.md",
+      "identity": {
+        "bytes": 5249,
+        "sha256": "d7231286a6a1042004b88fa881fea45e7b4b31c582fa3bc00e89b5192390c64c"
+      },
+      "original": "devguide/saved_inspection_usability.md"
+    },
+    "observation_template": {
+      "path": "/tmp/phmt-inspection-exercise-receiving-20261110-8wn19yzu/fixtures/saved_inspection_observation.md",
+      "identity": {
+        "bytes": 1241,
+        "sha256": "0aa6e6690655f0e0cd13f53e36b477485fb9df2a60b8deb90308dbbd728fad7c"
+      },
+      "original": "devguide/templates/saved_inspection_observation.md"
+    }
+  },
+  "fixture_files": {
+    "README.txt": {
+      "bytes": 205,
+      "sha256": "bff67bb92b20bc72e70554282c6f58e05b6f273677689f930106716f0b4b8252"
+    },
+    "run.sqlite3": {
+      "bytes": 40960,
+      "sha256": "c42d71401c17a889785066ea05e82a580071d9d59ca7dee2a687243ee63c3c49"
+    },
+    "work.jsonl": {
+      "bytes": 621,
+      "sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715"
+    }
+  },
+  "independent_literal_SQL_JSON_oracles_verified": true,
+  "documented_commands_per_context": 10,
+  "corrected_key_CLI_requests_after_refusal_per_context": 1,
+  "original_complete_expert_body_executions_per_context": 1,
+  "source_installed_fixture_bytes_and_observations_identical": true,
+  "source_CLI": [
+    {
+      "run_id": "exercise:saved-inspection:1",
+      "parent_run_id": null,
+      "counts": {
+        "committed_work": 6,
+        "scored_work": 4,
+        "matched_work": 3,
+        "not_matched_work": 1,
+        "failed_work": 2,
+        "declared_work": 8,
+        "pending_work": 2
+      },
+      "attempts": {
+        "started": 7,
+        "staged": 7,
+        "committed": 6
+      },
+      "manifest_work_complete": false
+    },
+    {
+      "format": "pharmacophoremt.screening-source-page@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "declared_work": 8,
+      "declared_sources": 3,
+      "offset": 0,
+      "limit": 10,
+      "next_offset": null,
+      "records": [
+        {
+          "source_key": " --source \u03b1 ",
+          "first_manifest_ordinal": 0,
+          "declared_work": 5
+        },
+        {
+          "source_key": "source:other",
+          "first_manifest_ordinal": 1,
+          "declared_work": 2
+        },
+        {
+          "source_key": "0",
+          "first_manifest_ordinal": 5,
+          "declared_work": 1
+        }
+      ]
+    },
+    {
+      "format": "pharmacophoremt.screening-work-selection@2",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "declared_work": 8,
+      "offset": 0,
+      "limit": 1,
+      "next_offset": 1,
+      "records": [
+        {
+          "manifest_ordinal": 3,
+          "work_key": "staged \u03b1",
+          "source_key": " --source \u03b1 ",
+          "occurrence_key": "same"
+        }
+      ],
+      "source_key": " --source \u03b1 ",
+      "status": "pending",
+      "selected_work": 2
+    },
+    {
+      "format": "pharmacophoremt.screening-work-selection@2",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "declared_work": 8,
+      "offset": 0,
+      "limit": 10,
+      "next_offset": null,
+      "records": [
+        {
+          "manifest_ordinal": 0,
+          "work_key": " --failed key \u03b1 ",
+          "source_key": " --source \u03b1 ",
+          "occurrence_key": "same"
+        }
+      ],
+      "source_key": " --source \u03b1 ",
+      "status": "failed",
+      "selected_work": 1
+    },
+    {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 0,
+        "work_key": " --failed key \u03b1 ",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": true,
+      "status": "failed",
+      "attempts": {
+        "started": 1,
+        "staged": 1,
+        "committed": 1
+      },
+      "outcome": {
+        "native_result": {
+          "fit_value": null,
+          "pose_id": " --failed key \u03b1 ",
+          "producer": {
+            "name": "synthetic-exercise",
+            "version": "1"
+          },
+          "status": "failed",
+          "synthetic": true
+        },
+        "occurrence_key": "same",
+        "ranking_score": null,
+        "score_method": "seeded_hit@1",
+        "source_key": " --source \u03b1 ",
+        "work_key": " --failed key \u03b1 "
+      }
+    },
+    {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 3,
+        "work_key": "staged \u03b1",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": false,
+      "status": "pending",
+      "attempts": {
+        "started": 1,
+        "staged": 1,
+        "committed": 0
+      },
+      "outcome": null
+    },
+    {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 4,
+        "work_key": "never \u03b1",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": false,
+      "status": "pending",
+      "attempts": {
+        "started": 0,
+        "staged": 0,
+        "committed": 0
+      },
+      "outcome": null
+    },
+    {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 2,
+        "work_key": "negative zero",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": true,
+      "status": "not_matched",
+      "attempts": {
+        "started": 1,
+        "staged": 1,
+        "committed": 1
+      },
+      "outcome": {
+        "native_result": {
+          "fit_value": 0,
+          "pose_id": "negative zero",
+          "producer": {
+            "name": "synthetic-exercise",
+            "version": "1"
+          },
+          "status": "not_matched",
+          "synthetic": true
+        },
+        "occurrence_key": "same",
+        "ranking_score": 0,
+        "score_method": "seeded_hit@1",
+        "source_key": " --source \u03b1 ",
+        "work_key": "negative zero"
+      }
+    },
+    {
+      "format": "pharmacophoremt.screening-work-selection@2",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "declared_work": 8,
+      "offset": 0,
+      "limit": 10,
+      "next_offset": null,
+      "records": [],
+      "source_key": "absent",
+      "status": null,
+      "selected_work": 0
+    },
+    {
+      "exit_code": 2,
+      "success_stdout_empty": true
+    }
+  ],
+  "expert_API": {
+    "counts": {
+      "committed_work": 6,
+      "scored_work": 4,
+      "matched_work": 3,
+      "not_matched_work": 1,
+      "failed_work": 2,
+      "declared_work": 8,
+      "pending_work": 2
+    },
+    "sources": [
+      {
+        "source_key": " --source \u03b1 ",
+        "first_manifest_ordinal": 0,
+        "declared_work": 5
+      },
+      {
+        "source_key": "source:other",
+        "first_manifest_ordinal": 1,
+        "declared_work": 2
+      },
+      {
+        "source_key": "0",
+        "first_manifest_ordinal": 5,
+        "declared_work": 1
+      }
+    ],
+    "pending_count": 2,
+    "pending_prefix": [
+      {
+        "manifest_ordinal": 3,
+        "work_key": "staged \u03b1",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      }
+    ],
+    "failed": {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 0,
+        "work_key": " --failed key \u03b1 ",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": true,
+      "status": "failed",
+      "attempts": {
+        "started": 1,
+        "staged": 1,
+        "committed": 1
+      },
+      "outcome": {
+        "native_result": {
+          "fit_value": null,
+          "pose_id": " --failed key \u03b1 ",
+          "producer": {
+            "name": "synthetic-exercise",
+            "version": "1"
+          },
+          "status": "failed",
+          "synthetic": true
+        },
+        "occurrence_key": "same",
+        "ranking_score": null,
+        "score_method": "seeded_hit@1",
+        "source_key": " --source \u03b1 ",
+        "work_key": " --failed key \u03b1 "
+      }
+    },
+    "pending_details": [
+      {
+        "format": "pharmacophoremt.screening-work-item@1",
+        "run_id": "exercise:saved-inspection:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+        "work_item": {
+          "manifest_ordinal": 3,
+          "work_key": "staged \u03b1",
+          "source_key": " --source \u03b1 ",
+          "occurrence_key": "same"
+        },
+        "confirmed": false,
+        "status": "pending",
+        "attempts": {
+          "started": 1,
+          "staged": 1,
+          "committed": 0
+        },
+        "outcome": null
+      },
+      {
+        "format": "pharmacophoremt.screening-work-item@1",
+        "run_id": "exercise:saved-inspection:1",
+        "run_format": "pharmacophoremt.screening-run@1",
+        "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+        "work_item": {
+          "manifest_ordinal": 4,
+          "work_key": "never \u03b1",
+          "source_key": " --source \u03b1 ",
+          "occurrence_key": "same"
+        },
+        "confirmed": false,
+        "status": "pending",
+        "attempts": {
+          "started": 0,
+          "staged": 0,
+          "committed": 0
+        },
+        "outcome": null
+      }
+    ],
+    "zero_nonmatch": {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 2,
+        "work_key": "negative zero",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": true,
+      "status": "not_matched",
+      "attempts": {
+        "started": 1,
+        "staged": 1,
+        "committed": 1
+      },
+      "outcome": {
+        "native_result": {
+          "fit_value": 0,
+          "pose_id": "negative zero",
+          "producer": {
+            "name": "synthetic-exercise",
+            "version": "1"
+          },
+          "status": "not_matched",
+          "synthetic": true
+        },
+        "occurrence_key": "same",
+        "ranking_score": 0,
+        "score_method": "seeded_hit@1",
+        "source_key": " --source \u03b1 ",
+        "work_key": "negative zero"
+      }
+    },
+    "empty_selection": [],
+    "trimmed_key_refusal": "PHMT-E201",
+    "recovered": {
+      "format": "pharmacophoremt.screening-work-item@1",
+      "run_id": "exercise:saved-inspection:1",
+      "run_format": "pharmacophoremt.screening-run@1",
+      "work_sha256": "8b7169edfa615523994752cab75689b6a363d00f532ccf04d5cae486ef1f5715",
+      "work_item": {
+        "manifest_ordinal": 0,
+        "work_key": " --failed key \u03b1 ",
+        "source_key": " --source \u03b1 ",
+        "occurrence_key": "same"
+      },
+      "confirmed": true,
+      "status": "failed",
+      "attempts": {
+        "started": 1,
+        "staged": 1,
+        "committed": 1
+      },
+      "outcome": {
+        "native_result": {
+          "fit_value": null,
+          "pose_id": " --failed key \u03b1 ",
+          "producer": {
+            "name": "synthetic-exercise",
+            "version": "1"
+          },
+          "status": "failed",
+          "synthetic": true
+        },
+        "occurrence_key": "same",
+        "ranking_score": null,
+        "score_method": "seeded_hit@1",
+        "source_key": " --source \u03b1 ",
+        "work_key": " --failed key \u03b1 "
+      }
+    }
+  },
+  "expert_body_AST_sha256": "97914f8802cfcc7cf5403e25024ab9673bde31ca7a8cbc304bdd43ff67d90fd1",
+  "fresh_guarded_children_total": 26,
+  "unchanged_runtime_files": 159,
+  "verified_wheel_payload_files": 214,
+  "loaded_reader_modules_per_context": 7,
+  "existing_recipe_unchanged": {
+    "bytes": 19345,
+    "sha256": "7d9d03dcd81a6a509e7a1b6987e1c429daa1d1867a69267272ad67688621e572"
+  },
+  "actual_human_participants": 0,
+  "human_usability_accepted": false,
+  "expected_refusals": "Duplicate setup and unknown trimmed key refuse with exit2/no success stdout in each context; exact corrected key succeeds on unchanged files.",
+  "supplemental_harness_correction": "Initial extra CLI recovery driver used a regular parent against an isolated child, so the import-boundary base-path assertion refused before public reader execution. Preserve original failure; invoke the unchanged driver with isolated/no-site parent and execute only the two additional recovery requests. Original setup/main commands/API not rerun.",
+  "scientific_execution": false,
+  "new_unit_tests": 0,
+  "local_checks": [
+    {
+      "name": "ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "example-ruff",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "docs/_static/examples/saved_inspection_exercise.py"
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "example-format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "docs/_static/examples/saved_inspection_exercise.py"
+      ],
+      "exit_code": 0,
+      "output": "1 file already formatted\n"
+    },
+    {
+      "name": "format",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "449 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.107s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "arguments": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.912s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "arguments": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "rendered_checks": {
+    "strict_full_HTML": true,
+    "notebooks": "off",
+    "download_bytes_equal_to_tested_script": true,
+    "download": "html/_downloads/a927bb3add4a6c4e6594fd065499ee42/saved_inspection_exercise.py",
+    "script_sha256": "e83882062dd62712d0c75cb4a6dc1259345dbf39891437d8d968d98e8f6013fb",
+    "both_navigation_links": true
+  },
+  "resources": {
+    "source": {
+      "name": "source",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-inspection-exercise-20261110-cg763jrs/logs/source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-inspection-exercise-20261110-cg763jrs/controls/launch.py",
+        "source"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60765421568
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230591\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199033\n",
+        "swap": {
+          "pswpin": 100120,
+          "pswpout": 330257
+        },
+        "time": 207264.415304424
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 5.559428794018459,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60744339456
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230591\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199033\n",
+        "swap": {
+          "pswpin": 100120,
+          "pswpout": 330257
+        },
+        "time": 207269.97562364
+      },
+      "sample_count": 55,
+      "peak_observed_group_RSS_bytes": 100368384
+    },
+    "installed": {
+      "name": "installed",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-inspection-exercise-20261110-cg763jrs/logs/installed.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "build/phmt-inspection-exercise-20261110-cg763jrs/controls/launch.py",
+        "installed"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60732993536
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230593\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199035\n",
+        "swap": {
+          "pswpin": 100120,
+          "pswpout": 330257
+        },
+        "time": 207314.592151243
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 5.866530392027926,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60706639872
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230593\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199035\n",
+        "swap": {
+          "pswpin": 100120,
+          "pswpout": 330257
+        },
+        "time": 207320.459255301
+      },
+      "sample_count": 58,
+      "peak_observed_group_RSS_bytes": 100356096
+    },
+    "CLI_recovery": {
+      "name": "CLI-recovery-isolated",
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--as=1073741824",
+        "--data=536870912",
+        "--cpu=120",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-inspection-exercise-20261110-cg763jrs/logs/CLI-recovery-isolated.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-I",
+        "-S",
+        "-B",
+        "build/phmt-inspection-exercise-20261110-cg763jrs/controls/recover_cli.py"
+      ],
+      "cwd": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt",
+      "entry": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60657840128
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230786\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199225\n",
+        "swap": {
+          "pswpin": 100120,
+          "pswpout": 330257
+        },
+        "time": 207445.691732533
+      },
+      "affinity": [
+        19
+      ],
+      "nice": 19,
+      "io": "idle",
+      "threads": 1,
+      "aggregate_cgroup": false,
+      "AS_per_process_bytes": 1073741824,
+      "DATA_per_process_bytes": 536870912,
+      "observed_group_RSS_stop_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 1.0135894270206336,
+      "exit": {
+        "memory": {
+          "MemTotal": 64978440192,
+          "MemAvailable": 60611608576
+        },
+        "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230786\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199225\n",
+        "swap": {
+          "pswpin": 100120,
+          "pswpout": 330257
+        },
+        "time": 207446.706242389
+      },
+      "sample_count": 10,
+      "peak_observed_group_RSS_bytes": 75935744
+    },
+    "docs_peak_observed_group_RSS_bytes": 305434624,
+    "scope": "Serial oneCPU19/one backend thread, nice19/idleIO. Reader DATA512MiB/AS1GiB/observed group512MiB; separate docs DATA512MiB/AS-unlimited/observed group1GiB. Host20percent reserve/pressure monitoring; no reservation/kernel aggregate memory/swap/tasks/quota enforcement."
+  },
+  "full_evidence": {
+    "path": "saved_inspection_exercise_20261110_full.json.gz",
+    "compressed_bytes": 242531,
+    "compressed_sha256": "b382039793137c43acb7e59e05f8fd35a2193fa7b7bdbdbff3309c0e657e896a",
+    "uncompressed_bytes": 3708199,
+    "uncompressed_sha256": "ba098d19e424a8f98f7361fd10256680fe01b0f3d213e8bba37b378956e6b802"
+  },
+  "limits": "Exercise technical readiness only, no human usability, new runtime/API/provider/publication, collection/connector, full public/installed-platform/scientific/performance/release acceptance. af408e7 source checkpoint independent. #148/#165 remain stopped.",
+  "retention": {
+    "capsule": "build/phmt-inspection-exercise-20261110-cg763jrs",
+    "workspace": "/tmp/phmt-inspection-exercise-receiving-20261110-8wn19yzu",
+    "review": "2026-11-24"
+  }
+}

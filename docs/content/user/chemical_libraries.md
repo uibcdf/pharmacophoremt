@@ -53,6 +53,10 @@ For globally ranked facade hits and caller-supplied conformer frames, see
 saved-run routes expose every declared outcome; select the route whose result
 contract matches your task.
 
+To practice saved inspection without molecular inputs, use the
+[small inspection exercise](../cookbook/saved_inspection_exercise.md). It includes
+a synthetic run, CLI/API tasks and deliberate literal-key error recovery.
+
 ## Prepare the inputs once
 
 Use MolSysMT for molecular conversion, chemical-state preparation, hydrogen and

@@ -38,6 +38,7 @@ prepared_conformers
 prepared_incremental_screening
 recoverable_prepared_screening
 saved_work_inspection
+saved_inspection_exercise
 prepared_run_plan_inspection
 aligned_consensus
 aligned_cliques
@@ -76,6 +77,7 @@ eralpha_input_audit
 | Screen prepared files incrementally and export every source-linked outcome | [Incremental prepared screening](prepared_incremental_screening.md): `PreparedInput`, `screen_prepared`, caller-owned JSONL/CSV exports |
 | Keep confirmed progress, resume prepared screening and export the full saved view | [Recoverable prepared screening](recoverable_prepared_screening.md): `PreparedScreeningRun`, `build_prepared_run_plan`, independent `ScreeningRunView` |
 | Browse sources, inspect counts and read selected work details | [Saved-work inspection](saved_work_inspection.md): [complete discovery and inspection](saved_work_inspection.md#discover-a-source-and-inspect-its-work-in-one-snapshot), original labels/counts and public progress/status/detail composition; [source-specific journey](saved_work_inspection.md#inspect-one-source-in-one-python-snapshot) with complete selected counts and bounded display |
+| Practice discovery, status/detail inspection and literal-key recovery | [Saved-inspection exercise](saved_inspection_exercise.md): downloadable synthetic fixture, CLI and public API |
 | Inspect exact query identity and captured settings before creating a run | [Prepared-run plan inspection](prepared_run_plan_inspection.md): compact `PreparedRunPlan` and detached `describe()` |
 | Build consensus in a common prepared coordinate frame | [Aligned ligands](aligned_consensus.md): `from_aligned_ligands()`, `get_aligned_feature_matches()`, `get_consensus_sites()` |
 | Discover consensus without a reference anchor and inspect alternative models | [Aligned cliques](aligned_cliques.md): `get_aligned_feature_cliques()`, `get_aligned_consensus_hypotheses()`, `from_aligned_ligand_cliques()` |
