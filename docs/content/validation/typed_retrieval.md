@@ -133,3 +133,12 @@ collection, arbitrary-scale recall, equivalent cost, biological performance,
 human usability or supported installed-platform/release delivery. Next address
 partial checkpointing under #183 before admitting longer equivalent-cost experiments.
 MolSysMT#624 and the resource-stopped #148/#165 measurements retain separate ownership.
+
+## Checkpoint follow-up — 2026-11-10 UTC
+
+[Issue183 receiving](retrieval_checkpoints.md) now preserves observed session credit
+with each scientific progress checkpoint in both opt-in drivers. Separate new
+complete experiments preserve original scientific projections and bibliography;
+controlled interruption retains the last committed partial. The older interrupted
+session and its missing attribution remain unchanged. Equivalent-cost workload
+and admission design is the next gate before production-index selection.

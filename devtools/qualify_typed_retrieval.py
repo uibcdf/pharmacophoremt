@@ -17,12 +17,13 @@ def main(argv=None):
     args = parser.parse_args(argv)
     if not re.fullmatch("[a-f0-9]{64}", args.admission_sha256):
         raise ValueError("Declare the SHA-256 of the admitted execution context")
-    with args.output.open("x") as output:
+    with args.output.open("x"):
         import ackredit
 
         import pharmacophoremt as phmt
         from pharmacophoremt import pyunitwizard as puw
         from phmt_test_support.feature_snapshot_case import producer_context
+        from phmt_test_support.retrieval_checkpoint import RetrievalCheckpoint
         from phmt_test_support.typed_retrieval import (
             DIRECTORY,
             compare_domain,
@@ -44,15 +45,12 @@ def main(argv=None):
             "final_pose_or_activity_acceptance": False,
         }
 
-        def retain():
-            output.seek(0)
-            json.dump(report, output, indent=2, allow_nan=False)
-            output.write("\n")
-            output.truncate()
-            output.flush()
-
-        retain()
         with ackredit.session("Six-family native retrieval"), phmt.attribution():
+            checkpoint = RetrievalCheckpoint(
+                args.output, report, lambda: ackredit.get_attribution().to_dict()
+            )
+            retain = checkpoint.retain
+            retain()
             try:
                 spec = declaration()
                 entries = load_entries(args.snapshot_context)
@@ -88,8 +86,7 @@ def main(argv=None):
                 )
                 if report["policies"] and report["policies"][-1]["status"] == "running":
                     report["policies"][-1]["status"] = "failed"
-            report["actual_attribution"] = ackredit.get_attribution().to_dict()
-        retain()
+            retain()
         print(
             json.dumps(
                 {

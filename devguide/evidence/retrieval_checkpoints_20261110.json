@@ -1,0 +1,132 @@
+{
+  "schema": "pharmacophoremt.retrieval-checkpoint-summary@1",
+  "issue": 183,
+  "date_utc": "2026-11-10",
+  "source_parent": "c74356cd8408c7bc6df665f16ac7417496daf5ff",
+  "contexts": {
+    "source": {
+      "guards": 18,
+      "ordinary_rows": 24,
+      "typed_rows": 72,
+      "ordinary_checkpoint_sequence": 158,
+      "typed_checkpoint_sequence": 354,
+      "ordinary_attribution_items": 8,
+      "ordinary_attribution_uses": 8,
+      "typed_attribution_items": 8,
+      "typed_attribution_uses": 12,
+      "original_scientific_projections_equal": true,
+      "original_complete_attribution_equal": true,
+      "zero_molecular_operations": true,
+      "loaded_modules": {
+        "tests": 144,
+        "complete_drivers": 146
+      },
+      "producer": {
+        "scope": "selected-case-context",
+        "admission_sha256": "05a0c6642e660076e962787c0ae1c23c9bf75b1906bc882429bfdb02cbb303a1",
+        "runtime_version": "0.4.0+134.gee5d9fa",
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+687.g2325038e8",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "numpy": "2.5.4",
+          "ackredit": "0.12.1+10.g4beb850"
+        }
+      }
+    },
+    "installed": {
+      "guards": 18,
+      "ordinary_rows": 24,
+      "typed_rows": 72,
+      "ordinary_checkpoint_sequence": 158,
+      "typed_checkpoint_sequence": 354,
+      "ordinary_attribution_items": 8,
+      "ordinary_attribution_uses": 8,
+      "typed_attribution_items": 8,
+      "typed_attribution_uses": 12,
+      "original_scientific_projections_equal": true,
+      "original_complete_attribution_equal": true,
+      "zero_molecular_operations": true,
+      "loaded_modules": {
+        "tests": 144,
+        "complete_drivers": 146
+      },
+      "producer": {
+        "scope": "selected-case-context",
+        "admission_sha256": "05a0c6642e660076e962787c0ae1c23c9bf75b1906bc882429bfdb02cbb303a1",
+        "runtime_version": "0.4.0+218.g5515e93",
+        "versions": {
+          "pharmacophoremt": "0.4.0+218.g5515e93",
+          "molsysmt": "0.23.0+687.g2325038e8",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "numpy": "2.5.4",
+          "ackredit": "0.12.1+10.g4beb850"
+        }
+      }
+    }
+  },
+  "original_red": {
+    "failed": 4,
+    "reason": "Both original drivers omit actual_attribution at persisted native progress."
+  },
+  "checkpoint_schema": "pharmacophoremt.retrieval-driver-checkpoint@1",
+  "signals": [
+    "SIGTERM",
+    "SIGKILL"
+  ],
+  "signal_handlers_added": false,
+  "diagnosed_export_failure": "Keep latest science and last successful credit/sequence, or null before any success; not zero credit.",
+  "atomic_failure": "Previous target bytes remain authoritative; I/O or scientific serialization failure propagates.",
+  "old_182_partial_attribution": "unrecorded/unknown; immutable historical evidence",
+  "identities_verified": {
+    "wheel_payloads": 214,
+    "runtime_bodies": 159,
+    "provider_python_files": 4594,
+    "native": {
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3"
+    },
+    "green_fixture_files": 62
+  },
+  "resources": {
+    "one_cpu": true,
+    "backend_threads": 1,
+    "low_cpu_io_priority": true,
+    "science_DATA_bytes": 536870912,
+    "science_AS_bytes": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "physical_reserve_fraction": 0.2,
+    "capacity_reserved": false,
+    "kernel_aggregate_enforcement": false,
+    "profile_or_budget_escalation": false,
+    "performance_measured": false
+  },
+  "limits": [
+    "Unshipped application-owned two-driver composition, no general filesystem/journal/resource/provider API.",
+    "POSIX local replacement/interruption checks; no power-loss/network-filesystem/concurrent-writer guarantee.",
+    "Before first checkpoint reserved target may be empty; hard kill may leave nonauthoritative temporary.",
+    "Full current-head/platform/public-installation/release qualification remains9/23-owned;148/165stopped."
+  ],
+  "full_evidence": {
+    "path": "retrieval_checkpoints_20261110_full.json.gz",
+    "compressed_bytes": 1302431,
+    "compressed_sha256": "a2cf57cbd90e44f2ad8f28ec16a8071f06f6f40112dd526bb0ac28669fd4ef2c",
+    "uncompressed_bytes": 10760952,
+    "uncompressed_sha256": "a3cb6b7c1277a359e87ecd8ea966ab68c5e8c1753b5bc5a2f3a7f4cf32243faa"
+  },
+  "local_receiving_evidence": {
+    "path": "retrieval_checkpoints_20261110_receiving.json.gz",
+    "compressed_bytes": 2240,
+    "compressed_sha256": "8832ef548300a63f60a058622a9a0c82c8f0bb0ca10ef482ccd8574e589322f5",
+    "uncompressed_bytes": 5229,
+    "uncompressed_sha256": "b6b4fa62e6cf50cf1e1616146e64d90c485da3a1b99dcf277ff65331f8c506f2"
+  },
+  "local_receiving": {
+    "checks": 7,
+    "strict_docs_exit": 0,
+    "local_links": 440,
+    "rendered_navigation": true,
+    "reviewed_original_public_payloads": 169,
+    "original_unpublished_projection_retained_locally": true
+  }
+}

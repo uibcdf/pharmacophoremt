@@ -1,5 +1,19 @@
 # Strategic roadmap
 
+## Partial developer-driver checkpoints — #183 (2026-11-10 UTC)
+
+[Application-owned checkpoint receiving](retrieval_driver_checkpoints.md) now
+retains real session credit with each scientific progress write in both opt-in
+drivers. Eighteen source/exact-owned controls and complete ordinary24/typed72
+rows per context preserve original science and complete attribution. Atomic local
+replacement and explicit unavailable/stale/null credit cover termination/export
+failures without signal handlers, resource weakening or restored historical credit.
+The [receipt/archive](evidence/retrieval_checkpoints_20261110.json) keeps original
+red controls and separates injected native prefixes from full experiments.
+Next declare equivalent build/storage/cold/repeated-query costs before production
+index selection; generic collection, human/current-head/platform/release gates
+and stopped #148/#165 retain separate ownership.
+
 Maintained 2026-11-10. Read [checkpoint](checkpoint.md), [capabilities](capability_inventory.md)
 and [decisions](decisions_and_workstreams.md) first. The former detailed delivery
 log/checklists remain in [roadmap history](roadmap_history_20261106.md); old

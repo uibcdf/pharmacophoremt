@@ -150,7 +150,7 @@ The original source session attribution was never exported at the driver's final
 boundary and remains unrecorded/unknown; recorded completed-call counters117do
 not establish any unrecorded in-flight work. The new suffix has its own actual
 8references/8uses and does not restore earlier credit. This developer-driver
-retention gap is owned by [#183](pending_bugs/partial_driver_attribution.md), with
+retention gap is owned by [#183](archive/partial_driver_attribution.md), with
 no Ackredit/provider or scientific predicate defect alleged. The original global
 alarm, partial JSON, stability observations, suffix declaration/results and static
 unused-import cleanup before green execution are all preserved.
@@ -161,3 +161,14 @@ scale recall, equivalent cost, human/platform/release gate follows. Next receive
 #183partial checkpointing with controlled own-child interruption before admitting
 longer equivalent build/storage/cold/repeated-query measurements. #148/#165 remain
 stopped; MolSysMT#624 and full supported delivery keep their separate owners.
+
+## Partial checkpoint follow-up — #183 (2026-11-10 UTC)
+
+The [driver checkpoint contract](retrieval_driver_checkpoints.md) and
+[new original receipt](evidence/retrieval_checkpoints_20261110.json) receive the
+retention follow-up. Both drivers persist observed real-session credit with each
+scientific checkpoint; controlled termination retains the last committed partial.
+Complete ordinary24/typed72 rows and exact complete attribution agree with original
+evidence per context. No historical #182 output or missing attribution is repaired.
+The next gate is prospective equivalent-cost workload/admission design, with the
+same scientific/runtime/provider and resource ownership limits.

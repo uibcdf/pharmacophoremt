@@ -9,6 +9,29 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#183 partial driver checkpoints](retrieval_driver_checkpoints.md) now persist
+observed session credit together with scientific progress in both opt-in retrieval
+drivers. Controlled own-child SIGTERM/SIGKILL and replacement-window checks retain
+the last committed JSON and its references; export failure keeps latest science
+and explicit stale/null credit. No signal handler or resource-stop change follows.
+Four original red controls become 18 passing controls per source/exact-owned218
+context. Full ordinary24 and typed72 rows per context preserve original scientific
+projections and exact complete attribution. The
+[receipt/archive](evidence/retrieval_checkpoints_20261110.json) and
+[analytical case](../docs/content/validation/retrieval_checkpoints.md) separate
+small native test prefixes from complete experiments. All 214 payloads/159 runtime
+bodies/4594 provider Python files/native/62 final fixtures verify, with zero
+molecular operations. Original #182 unsaved attribution remains unknown.
+
+Next: prospectively define equivalent scientific build/storage/cold/repeated-query
+workloads and an admitted small measurement before selecting a production index.
+Preserve total preparation/index costs, original outputs, negatives and failures;
+no speed claim follows from call counts or this checkpoint fix. Public API/index,
+MolSysMT#624 generic collection, human and full supported delivery retain their
+separate gates; #148/#165 remain stopped.
+
+### Previous received six-family increment
+
 [#182 six-family retrieval](typed_retrieval_domain.md) receives four original
 native parents, sixteen new captures and four old originals, with full three/four-
 point query cardinality and explicit donor/aromatic query geometry. All 60 guards
@@ -26,13 +49,12 @@ all 20 snapshots. No molecular operation occurs during frozen-feature retrieval.
 Ordinary #181 scientific answers agree: source 24 rows are an explicit preserved
 20-row interrupted prefix plus four suffix rows/nine calls; installed 24 rows are
 complete. The original source run/status is not rewritten. Its unexported session
-attribution remains unknown under [#183](pending_bugs/partial_driver_attribution.md).
+attribution remains unknown under [#183](archive/partial_driver_attribution.md).
 The global swap alarm, unreviewed continuation and bounded lower-work recovery are
 recorded, with no resource-limit escalation or unrelated process change.
 
-Next: receive #183 partial developer-driver checkpoint/attribution retention with
-controlled own-child interruption before admitting longer equivalent build,
-storage and cold/repeated-query measurements. Stable public API/index, generic
+The #183 follow-up is now received above. Longer equivalent build, storage and
+cold/repeated-query measurements remain prospective. Stable public API/index, generic
 MolSysMT#624 collection/lifetime, wider scale/human/supported delivery retain
 separate gates. #148/#165 remain stopped.
 

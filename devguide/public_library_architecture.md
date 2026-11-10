@@ -400,3 +400,17 @@ alarm and bounded ordinary-source20+4row recovery. Original source attribution
 remains unknown under#183; no full interrupted workflow is claimed. Receive
 checkpoint retention before longer equivalent-cost work. Public promotion,
 MolSysMT#624, generic/runtime/scale and supported release gates stay separate.
+
+## Partial developer-driver checkpoints — #183 (2026-11-10 UTC)
+
+[Application-owned checkpoint receiving](retrieval_driver_checkpoints.md) now
+retains real session credit with each scientific progress write in both opt-in
+drivers. Eighteen source/exact-owned controls and complete ordinary24/typed72
+rows per context preserve original science and complete attribution. Atomic local
+replacement and explicit unavailable/stale/null credit cover termination/export
+failures without signal handlers, resource weakening or restored historical credit.
+The [receipt/archive](evidence/retrieval_checkpoints_20261110.json) keeps original
+red controls and separates injected native prefixes from full experiments.
+Next declare equivalent build/storage/cold/repeated-query costs before production
+index selection; generic collection, human/current-head/platform/release gates
+and stopped #148/#165 retain separate ownership.

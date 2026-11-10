@@ -159,3 +159,12 @@ original snapshot bytes/schema and earlier scientific claims remain unchanged.
 A resource-interrupted ordinary source run is preserved as a20+4scientific
 composite, with unknown original session attribution tracked under#183. No
 public API/index/cost/biological/platform/release promotion follows;148/165stopped.
+
+## Driver checkpoint follow-up — #183 (2026-11-10 UTC)
+
+[Partial checkpoint receiving](retrieval_driver_checkpoints.md) now persists
+observed session credit with scientific progress and preserves the last committed
+file across controlled termination. The [new receipt](evidence/retrieval_checkpoints_20261110.json)
+receives complete ordinary24 rows per source/exact-owned218 context with unchanged
+scientific projections and complete attribution. Historical results are untouched;
+this is a developer-driver persistence change, not a public index or journal API.
