@@ -1,5 +1,19 @@
 # Inspect saved screening work
 
+Check the installed distribution before following development-reader examples:
+
+```bash
+python -m pharmacophoremt_results --version
+```
+
+The output labels installed `pharmacophoremt` distribution metadata. This option
+needs no saved file, score criterion or molecular provider. Missing or invalid
+metadata is an explicit error. An editable/source checkout can have metadata
+from a different build; this version alone does not identify its current code
+or qualify its capabilities. Help and ordinary inspection do not query version
+metadata. Use the [installation context](../about/installation.md) when reporting
+a version or comparing artifacts.
+
 Start with `python -m pharmacophoremt_results RUN.sqlite3 --summary` to see the
 saved counts. Then select work by status or source and inspect a literal work key using
 the commands below. Each command opens its own verified snapshot.

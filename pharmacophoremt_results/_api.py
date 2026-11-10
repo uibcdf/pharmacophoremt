@@ -492,6 +492,22 @@ class ScreeningRunView:
         self.close()
 
 
+class _DistributionVersion(argparse.Action):
+    """Read distribution metadata only when the version option is requested."""
+
+    def __call__(self, parser, namespace, values, option_string=None):
+        from importlib.metadata import PackageNotFoundError, version
+
+        try:
+            installed = version("pharmacophoremt")
+        except PackageNotFoundError:
+            parser.error("No installed PharmacophoreMT distribution metadata found.")
+        if not isinstance(installed, str) or not installed.strip():
+            parser.error("PharmacophoreMT distribution metadata has no valid version.")
+        print(f"PharmacophoreMT distribution {installed}")
+        parser.exit()
+
+
 def main(argv=None):
     """Inspect saved work/progress/ranks or export evidence through the public view.
 
@@ -502,6 +518,12 @@ def main(argv=None):
     """
     parser = argparse.ArgumentParser(
         description="Inspect or export a saved PharmacophoreMT screening run without rerunning science."
+    )
+    parser.add_argument(
+        "--version",
+        action=_DistributionVersion,
+        nargs=0,
+        help="Show installed distribution metadata without opening a run.",
     )
     parser.add_argument("ledger", type=Path, help="Saved screening-run database.")
     exports = parser.add_mutually_exclusive_group()

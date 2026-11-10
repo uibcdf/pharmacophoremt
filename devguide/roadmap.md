@@ -31,6 +31,12 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+The [#173 reader version](reader_distribution_version.md) improves installed
+context discovery through lazy ledger-free `--version`. All139selected source
+cases, thirteen ordinary byte controls, strict docs and25distribution/local
+checks pass; exact owned receiving remains pending. Its
+metadata label does not certify source bodies or feature qualification.
+
 The [#172 saved-inspection exercise](saved_inspection_usability.md) prepares
 representative human receiving for milestone2 with downloadable synthetic data,
 participant tasks, facilitator answers and an unfilled observation template.

@@ -1,0 +1,35 @@
+{
+  "schema": "pharmacophoremt.reader-version-plan@1",
+  "issue": 173,
+  "declared_at_UTC": "2026-11-10T00:10:15.718850+00:00",
+  "parent_source": "431861bbce2e02e15ee97817e0da7063ba2b30f7",
+  "scope": "CLI --version lazily reads stdlib installed distribution metadata only; no ledger/criterion/scientific import. Missing/invalid metadata fails without success. Label as distribution metadata, not source/body identity. Help/ordinary routes unchanged, no new metadata query.",
+  "verification": "Five new independent controls plus134unchanged reader bodies,13ordinary stdout-byte controls, fresh scientific-import guard and exact same original bodies from one owned source-free wheel. Real metadata must agree with wheel version. Strict docs and scoped distribution/report checks.",
+  "resources": {
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 60475785216,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7895228416
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1105299\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1074833\n",
+    "load": [
+      1.68798828125,
+      1.43603515625,
+      0.9580078125
+    ],
+    "CPU": 19,
+    "threads": 1,
+    "DATA": 536870912,
+    "AS_reader": 1073741824,
+    "observed_group_RSS_stop_reader": 536870912,
+    "nice": 19,
+    "IO": "idle",
+    "host_reserve_fraction": 0.2,
+    "not_reserved": true,
+    "aggregate_kernel_limit": false,
+    "scope": "Serial stdlib/read-support tests and fresh sequential children; prior reader pytest peak~130MiB. No local science/manager/native operation. Separate existing DATA512/AS-unlimited build/docs routes recorded in actual controls. SQLite grouping/sorting may require complete manifest work/temp storage; no scale/constant memory claim."
+  },
+  "boundaries": "No new runtime path/schema/index/public API/provider floor/acquisition/science/connector/collection. af408e7 source acceptance and later-head debt separate;148/165stopped.",
+  "retention_review": "2026-11-24"
+}

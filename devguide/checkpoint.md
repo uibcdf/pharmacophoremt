@@ -9,6 +9,14 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#173 reader distribution identity](reader_distribution_version.md) adds lazy
+`--version` without a saved file, score criterion or scientific import. All139
+selected source cases pass (5new/134existing); thirteen ordinary output-byte
+controls, strict docs,25distribution and local governance checks pass. Exact
+same-body owned installed receiving remains pending.
+Version output explicitly describes distribution metadata, not source-body or
+capability qualification. No runtime path, API or dependency floor changes.
+
 [#172 saved-inspection exercise](../docs/content/cookbook/saved_inspection_exercise.md)
 provides a downloadable public-writer synthetic fixture, participant tasks,
 [facilitator answers](saved_inspection_usability.md) and unfilled observations.
@@ -146,11 +154,10 @@ its original 2505-case/eight-cell source42451906584, policy42451909669 and
 publication42451913187 evidence. The later af408e7 acceptance above preserves
 all earlier source/run identities; it does not retroactively qualify later heads.
 
-**Next concrete action:** use the #172 kit for actual novice/expert observations
-under#108, keeping task outcomes and assistance separate from automated parity.
-Improve version discoverability of the independent reader CLI so participants
-can identify installed distributions without importing scientific providers.
-Keep later-head full-source and complete public/platform debt under#9/#23;
+**Next concrete action:** finish #173ordinary output controls, strict docs and
+same-body owned receiving; then use the #172kit for actual novice/expert sessions
+under#108. Keep assistance/actual observations separate from automated parity.
+Later-head full-source and complete public/platform debt stay under#9/#23;
 no new frozen-run dispatch or#148/#165retry.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT
 molecular reader fork follows.

@@ -30,4 +30,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
 
+### Open (1)
+
+- [`identify_reader_distribution.md`](identify_reader_distribution.md) — [#173](https://github.com/uibcdf/pharmacophoremt/issues/173) — Identify installed distribution metadata from the independent reader CLI. *(open, asserted)*
+
 <!-- /generated -->

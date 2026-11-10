@@ -107,6 +107,14 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-10: [#173 reader distribution identity](reader_distribution_version.md)
+adds lazy ledger-free `--version`, with139selected source cases passing. Only
+explicit version requests read metadata; scientific imports, existing API/output
+and provider floors remain unchanged. Thirteen ordinary byte controls, strict
+docs and25distribution/local checks pass; same-body owned receiving remains
+pending. Installed metadata is not source/body
+or capability qualification.
+
 2026-11-10: [#172 inspection exercise](saved_inspection_usability.md) delivers
 public synthetic setup, participant/facilitator sheets and unfilled observations.
 The [receipt](evidence/saved_inspection_exercise_20261110.json) receives identical
