@@ -398,3 +398,16 @@ No molecular operation/new extraction, public stable API/index, generic collecti
 performance/activity/human/platform/release gate follows. Next receive wider
 feature/numerical controls before equivalent cost measurements and production
 selection. #108 remains active and #148/#165 remain stopped.
+
+## Six-family receiving and interruption evidence — 2026-11-10 UTC
+
+[#182](../typed_retrieval_domain.md) receives all six classical families and
+full-three/four query cardinality:60guards/72primary rows per source/owned218,
+198strict rational checks and66separate boundary observations. Native full-query
+mappings and supplied-pair orientation answers agree; no molecular operation or
+new original credit occurs during frozen-feature retrieval. The [receipt](../evidence/typed_retrieval_20261110.json)
+preserves all original data and the global-swap interruption. Ordinary source
+answers are a20+4scientific composite, installed24rows complete; original source
+session attribution remains unknown, owned by#183. Receive that partial-driver
+retention before longer cost work. #108 remains active: no stable public API/index,
+provider collection, biological/human/platform/release gate;148/165stopped.

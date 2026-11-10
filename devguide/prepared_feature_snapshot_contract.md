@@ -206,3 +206,16 @@ This follow-up does not change earlier run identities, promote a stable public
 API/index/compatibility detector, authenticate source or qualify cost/biological/
 platform/release gates. Next receive wider typed-feature/numerical inputs before
 equivalent-cost measurements or production-index selection. #148/#165 stay stopped.
+
+## Six-family follow-up — #182, 2026-11-10 UTC
+
+The [expanded receiving](typed_retrieval_domain.md) and [receipt](evidence/typed_retrieval_20261110.json)
+now receive six classical families and complete three/four-point queries in the
+unshipped composition:60selected guards/72primary rows,198strict rational checks
+and66candidate-band observations per source/exact-owned218context. All native
+mappings and supplied-pair orientation answers agree; six numerical-boundary
+differences per context are preserved explicitly. New live profile2is distinct;
+original snapshot bytes/schema and earlier scientific claims remain unchanged.
+A resource-interrupted ordinary source run is preserved as a20+4scientific
+composite, with unknown original session attribution tracked under#183. No
+public API/index/cost/biological/platform/release promotion follows;148/165stopped.

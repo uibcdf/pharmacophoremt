@@ -9,30 +9,32 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
-[#181 snapshot ingestion](snapshot_retrieval_ingestion.md) receives the next
-implementation gate using the original [#180 snapshots](feature_snapshot_prototype.md)
-and existing finite index. All 41 selected guards pass per source/exact-owned218
-context; each completes 24 query/width/unit-policy rows and 72 independent rational
-mapping checks. Original work/feature/atom maps agree with exhaustive native
-proposals, including the repeated work and six short/empty inputs. The
-[receipt/archive](evidence/snapshot_retrieval_20261110.json) preserves the first
-overstrong unsafe-bin control assertion, its diagnosis and corrected receiving,
-with unchanged original snapshots/queries/tolerances/runtime/providers/resources.
+[#182 six-family retrieval](typed_retrieval_domain.md) receives four original
+native parents, sixteen new captures and four old originals, with full three/four-
+point query cardinality and explicit donor/aromatic query geometry. All 60 guards
+pass per source/exact-owned218 context; each completes 72 rows, 198 strict rational
+checks and 66 separate candidate-band observations. All native full-query mappings
+and supplied-pair orientation answers agree. Six boundary disagreements per context
+remain explicit; proposals do not become final pose/activity acceptance. The
+[receipt/archive](evidence/typed_retrieval_20261110.json) preserves original red,
+static and resource evidence, producer differences and exact original maps/bytes.
 
-The [public analytical case](../docs/content/validation/snapshot_retrieval.md)
-explains original versus compact ordinals, stale-binding refusal and unknown
-prefix work. Each context makes 126 actual native reference calls, with no
-molecular operation, extraction or original-workflow credit replay. Full actual
-attribution/version differences and 214 wheel payloads/159 runtime bodies/4594
-provider files/30 case files verify. The composition remains unshipped; original
-caller trust is not authenticated molecular provenance. Stable public API/index,
-MolSysMT#624 collection/lifetime, wider numerical/cost/human/supported-delivery
-and #148/#165 stops retain their separate gates.
+The [analytical case](../docs/content/validation/typed_retrieval.md) records zero
+coordinate-error parent roundtrips, 214 wheel payloads/159 unchanged runtime
+bodies/4594 provider Python files/native/60 final fixtures and two cold readers of
+all 20 snapshots. No molecular operation occurs during frozen-feature retrieval.
+Ordinary #181 scientific answers agree: source 24 rows are an explicit preserved
+20-row interrupted prefix plus four suffix rows/nine calls; installed 24 rows are
+complete. The original source run/status is not rewritten. Its unexported session
+attribution remains unknown under [#183](pending_bugs/partial_driver_attribution.md).
+The global swap alarm, unreviewed continuation and bounded lower-work recovery are
+recorded, with no resource-limit escalation or unrelated process change.
 
-Next: declare wider typed-feature/numerical receiving with independently checked
-three/four-feature inputs and interval/rounding boundaries. Receive it before
-measuring equivalent build/storage/cold/repeated-query costs under admitted
-resources or selecting a production index. Public API promotion stays separate.
+Next: receive #183 partial developer-driver checkpoint/attribution retention with
+controlled own-child interruption before admitting longer equivalent build,
+storage and cold/repeated-query measurements. Stable public API/index, generic
+MolSysMT#624 collection/lifetime, wider scale/human/supported delivery retain
+separate gates. #148/#165 remain stopped.
 
 [#178 finite retrieval](retrieval_candidate_controls.md) completes the next
 milestone5/6 experiment after the core correction below. Twelve original

@@ -1,0 +1,229 @@
+{
+  "schema": "pharmacophoremt.typed-retrieval-originals@1",
+  "snapshots": [
+    {
+      "file": "source/new/nm-donors4.json",
+      "bytes": 16827,
+      "sha256": "f10e2d23d5466a0ab4d29aa210487548c637c9dd2375d68207450efc693dba34",
+      "origin": "new",
+      "original_payload_sha256": "e40b746be5edc18bf05a68bf88780343ff03099517e4eff624c84f7376ed5798",
+      "capture_context": "source",
+      "key": "donors4",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "source/new/nm-ring3.json",
+      "bytes": 12631,
+      "sha256": "eb0d61a8f537d9e2698f78b77fc311be7677642bab5d49aac294617f1da9c70d",
+      "origin": "new",
+      "original_payload_sha256": "9b26b95491b6a406ed8a2718cac479adc740228d5494b52d1e97609977c95de8",
+      "capture_context": "source",
+      "key": "ring3",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "source/new/nm-mixed3.json",
+      "bytes": 16919,
+      "sha256": "d95e08d5cedd27aa378094f5d63cddce4b0cdd85fb2a558d28642792779560b3",
+      "origin": "new",
+      "original_payload_sha256": "669480d3555652b32ab61bbbe427d0dcf18f1426674c0e3f5ca03bfb29fdd433",
+      "capture_context": "source",
+      "key": "mixed3",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "source/new/nm-mixed4.json",
+      "bytes": 17422,
+      "sha256": "5286cfec9a31597e0e9804dbb4a4753e6b225c6e84f36ed4e959ce59bcd66775",
+      "origin": "new",
+      "original_payload_sha256": "5521892e2ba3a34279116056f5325bd06e3ad8de145908241c1bee0021560047",
+      "capture_context": "source",
+      "key": "mixed4",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "source/new/pm-donors4.json",
+      "bytes": 16949,
+      "sha256": "af14e49203b8f9b6fd3ddd78219ef9d63c3bf51e11addc28000bcab5d8a2b60f",
+      "origin": "new",
+      "original_payload_sha256": "13e3b919566095091978a9e031c1339ea1710cc0328149f7f078178adf305fc0",
+      "capture_context": "source",
+      "key": "donors4",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "source/new/pm-ring3.json",
+      "bytes": 12693,
+      "sha256": "949564e3539f6fe7b1400567add1588d872f9756c6ea30926ba63538758f68c8",
+      "origin": "new",
+      "original_payload_sha256": "c429a1718f4994dd8cb0dbc28cf4c451b49e13629e7278aa1908234400154c42",
+      "capture_context": "source",
+      "key": "ring3",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "source/new/pm-mixed3.json",
+      "bytes": 16963,
+      "sha256": "50b0473543a964777892682f62b345151f4064936cbbb1e41467ce3b2560e517",
+      "origin": "new",
+      "original_payload_sha256": "f74e80e0180770d082bb7f3dcd71338374c38b372fed4b1b7dbeca239c657ee4",
+      "capture_context": "source",
+      "key": "mixed3",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "source/new/pm-mixed4.json",
+      "bytes": 17481,
+      "sha256": "68a3e96c0426a88ee94eacc1647cf8f5dc3ea19e4023fcf3aaae05a3b04d6739",
+      "origin": "new",
+      "original_payload_sha256": "28b98dc80beaba63f92150baca81d9e052db4e5ecc26d45e25876e974b8328ec",
+      "capture_context": "source",
+      "key": "mixed4",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "source/old/nm-empty.json",
+      "bytes": 7471,
+      "sha256": "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea",
+      "origin": "old",
+      "capture_context": "source",
+      "original_payload_sha256": "079e4f75e1d95b52b422795375b9ac2557e003050275abd37c77dac5559c8e99"
+    },
+    {
+      "file": "source/old/nm-donors.json",
+      "bytes": 14290,
+      "sha256": "0cdd3640d676ba2c0ca4dbc75b003f264d5d63513341f36cc40ce31bf1d62d0c",
+      "origin": "old",
+      "capture_context": "source",
+      "original_payload_sha256": "b89340c6c33e6e053298779eca12f8ea2fe976d7e1b67fd54b288ac16748de0d"
+    },
+    {
+      "file": "installed/new/nm-donors4.json",
+      "bytes": 16827,
+      "sha256": "92e5c6bacd0c6a68cb1ba097aae30755092bf586d51c3a829b4df8f3912cc63b",
+      "origin": "new",
+      "original_payload_sha256": "59e4d1752c814afc8089a5f9393e2214f4249532af6a7d9d991c99b63f5c48e8",
+      "capture_context": "installed",
+      "key": "donors4",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "installed/new/nm-ring3.json",
+      "bytes": 12631,
+      "sha256": "70877d22591d62deeca6d60242d2aebdd4d6bcd4f6bc68859d99d36e22ded991",
+      "origin": "new",
+      "original_payload_sha256": "2b2f0a379598496ae256fff12c75a9012fd7c3bf44b338e549249ffd1d1bfb09",
+      "capture_context": "installed",
+      "key": "ring3",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "installed/new/nm-mixed3.json",
+      "bytes": 16919,
+      "sha256": "01a755c39099140b667a34c895d579b552cd5c002594a755d69462f26509a219",
+      "origin": "new",
+      "original_payload_sha256": "dc46db7577468fbfd375bff5a3504437a531637beb4b068e5bd96f85c7f991ef",
+      "capture_context": "installed",
+      "key": "mixed3",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "installed/new/nm-mixed4.json",
+      "bytes": 17422,
+      "sha256": "f2a4b7100602576f03eb14eeaee8d31daa99386d35ed19b4d51537706ebc1818",
+      "origin": "new",
+      "original_payload_sha256": "3c25c160bed2bf82042b4846f8bf015afb8f7d44c66949aedf7fa85e28ac6b35",
+      "capture_context": "installed",
+      "key": "mixed4",
+      "unit_policy": "nm"
+    },
+    {
+      "file": "installed/new/pm-donors4.json",
+      "bytes": 16949,
+      "sha256": "aaa4bbd2d4adfafc7b8c6341e287c2ff0a73f2909b6f69158e0d9c2033d3b7b1",
+      "origin": "new",
+      "original_payload_sha256": "9f1f587c539ea0878aec72058fdad81f206cb317669653f81311e140f9c73678",
+      "capture_context": "installed",
+      "key": "donors4",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "installed/new/pm-ring3.json",
+      "bytes": 12693,
+      "sha256": "28aa6ea2be8763d10df5ca5f7c8ad1f6c3a711ea2438d42f0316b428496e0556",
+      "origin": "new",
+      "original_payload_sha256": "be85def8d007edd66eb7a17eab40e51cfed7cacbc148722c6291059685bbd833",
+      "capture_context": "installed",
+      "key": "ring3",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "installed/new/pm-mixed3.json",
+      "bytes": 16963,
+      "sha256": "a7d93866161196b4ccaa5cb3ff9003342fde4e317a0c3dff3d83960df1c67c6d",
+      "origin": "new",
+      "original_payload_sha256": "d68c35f3fca618cd8e6e836231dee66b059df402e257d85a6bbf3686744b1407",
+      "capture_context": "installed",
+      "key": "mixed3",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "installed/new/pm-mixed4.json",
+      "bytes": 17481,
+      "sha256": "8a5bb58e7128a0ae859447a874ced046b2ddfc993ae8b750c6e68a9772cd91fa",
+      "origin": "new",
+      "original_payload_sha256": "380f5c575491fb9f104356eefe3a444abdbede00eb4bed574f288cf353897c5f",
+      "capture_context": "installed",
+      "key": "mixed4",
+      "unit_policy": "pm"
+    },
+    {
+      "file": "installed/old/nm-empty.json",
+      "bytes": 7471,
+      "sha256": "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50",
+      "origin": "old",
+      "capture_context": "installed",
+      "original_payload_sha256": "08df279bac2f1d2d9d4d03618c992dcc948680d614e168f1ed82c557da5184c0"
+    },
+    {
+      "file": "installed/old/nm-donors.json",
+      "bytes": 14290,
+      "sha256": "b73a97e6c6847cc7a5be737d6ffc127a0b7d206761112765637b1ea7419882d8",
+      "origin": "old",
+      "capture_context": "installed",
+      "original_payload_sha256": "2709b0274f7ebaee5983227c6645a911fd9a9e76485823d47e2d617e9c72c1cf"
+    }
+  ],
+  "capture_admission": {
+    "bytes": 842278,
+    "sha256": "1549343c54c6e770d6d5ecf5511acba659559ff8429cd4ce7180cd83ea4cd7b5"
+  },
+  "original_producers": {
+    "source": {
+      "scope": "selected-case-context",
+      "admission_sha256": "1549343c54c6e770d6d5ecf5511acba659559ff8429cd4ce7180cd83ea4cd7b5",
+      "runtime_version": "0.4.0+134.gee5d9fa",
+      "versions": {
+        "pharmacophoremt": "0.4.0+120.g0925d97",
+        "molsysmt": "0.23.0+687.g2325038e8",
+        "pyunitwizard": "0.29.1+6.gf82b618",
+        "numpy": "2.5.4",
+        "ackredit": "0.12.1+10.g4beb850"
+      }
+    },
+    "installed": {
+      "scope": "selected-case-context",
+      "admission_sha256": "1549343c54c6e770d6d5ecf5511acba659559ff8429cd4ce7180cd83ea4cd7b5",
+      "runtime_version": "0.4.0+218.g5515e93",
+      "versions": {
+        "pharmacophoremt": "0.4.0+218.g5515e93",
+        "molsysmt": "0.23.0+687.g2325038e8",
+        "pyunitwizard": "0.29.1+6.gf82b618",
+        "numpy": "2.5.4",
+        "ackredit": "0.12.1+10.g4beb850"
+      }
+    }
+  },
+  "original_old_receipt": "devguide/evidence/feature_snapshot_prototype_20261110.json",
+  "scope": "Twenty exact original snapshot byte strings; no producer metadata rewriting or feature recapture during receiving. No molecular-origin authentication."
+}

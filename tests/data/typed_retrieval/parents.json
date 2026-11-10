@@ -1,0 +1,138 @@
+{
+  "schema": "pharmacophoremt.typed-retrieval-parents@1",
+  "parents": [
+    {
+      "key": "donors4",
+      "file": "donors4.h5msm",
+      "bytes": 125256,
+      "sha256": "5d2faeefbf79738c79477b1e694cc6f80ab55bbde6d0de5dc5df7e6e8191d1c1",
+      "n_atoms": 5,
+      "n_bonds": 2,
+      "atom_types": [
+        "H",
+        "O",
+        "H",
+        "Na",
+        "Cl"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_coordinates_unchanged": true,
+      "preparation": "Public MolSysMT construction, declared ring3-only aromaticity annotation and native H5MSM write-read; no repair."
+    },
+    {
+      "key": "ring3",
+      "file": "ring3.h5msm",
+      "bytes": 125256,
+      "sha256": "b5cf163b5d25eaf5061ebb8b1967e4339de325e0d6fabba54854aec14bceb433",
+      "n_atoms": 8,
+      "n_bonds": 6,
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "Cl"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_coordinates_unchanged": true,
+      "preparation": "Public MolSysMT construction, declared ring3-only aromaticity annotation and native H5MSM write-read; no repair."
+    },
+    {
+      "key": "mixed3",
+      "file": "mixed3.h5msm",
+      "bytes": 125256,
+      "sha256": "20e3603ff5707647443ed4ac585d9751b9d3343afbe3b08175110f143daccc45",
+      "n_atoms": 6,
+      "n_bonds": 3,
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "Na"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_coordinates_unchanged": true,
+      "preparation": "Public MolSysMT construction, declared ring3-only aromaticity annotation and native H5MSM write-read; no repair."
+    },
+    {
+      "key": "mixed4",
+      "file": "mixed4.h5msm",
+      "bytes": 125256,
+      "sha256": "9740cf84ea36edfe37ebb6d03014abad7386318220f00dc87bea5a407b55c01f",
+      "n_atoms": 9,
+      "n_bonds": 5,
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "Na"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "structure_index": 0,
+      "chemical_state": 0,
+      "max_roundtrip_error_nm": 0.0,
+      "original_source_coordinates_unchanged": true,
+      "preparation": "Public MolSysMT construction, declared ring3-only aromaticity annotation and native H5MSM write-read; no repair."
+    }
+  ],
+  "native": {
+    "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+    "bytes": 101190496,
+    "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+    "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+  },
+  "provider_python_files": 4594,
+  "source_and_artifacts_unchanged": true,
+  "scope": "Four controlled single-artifact parents, not a generic collection or source authentication."
+}

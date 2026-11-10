@@ -385,3 +385,18 @@ This does not select a production index or promote a public API, authenticate
 molecular source, compare arbitrary runtime versions or qualify final fitting/
 activity/universal float recall/cost. Next receive wider feature/numerical domain
 and equivalent workload costs; MolSysMT#624 and #148/#165 stops remain separate.
+
+## Six-family/full-query decision — #182, 2026-11-10 UTC
+
+The [wider receiving](typed_retrieval_domain.md) qualifies D/R in addition to
+H/A/P/N in the bounded existing index and requires the entire three/four-point
+query. Two original red controls become60source/exact-owned218passes and72primary
+rows each.198strict rational checks agree;66boundary observations retain six
+native-versus-physical-pair differences per context. Orientation validation stays
+separate from distance proposals; all original maps/bytes survive. The new live
+profile2does not mutate historical asset identities or the native snapshot format.
+The [receipt](evidence/typed_retrieval_20261110.json) preserves the global-swap
+alarm and bounded ordinary-source20+4row recovery. Original source attribution
+remains unknown under#183; no full interrupted workflow is claimed. Receive
+checkpoint retention before longer equivalent-cost work. Public promotion,
+MolSysMT#624, generic/runtime/scale and supported release gates stay separate.

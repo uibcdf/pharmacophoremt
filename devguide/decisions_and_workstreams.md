@@ -23,6 +23,19 @@ evidence retain finer-grained authority than this orientation page.
 
 ## Current workstreams
 
+[#182 six-family retrieval](typed_retrieval_domain.md) receives four actual
+native parents/captures, complete three/four-point queries and explicit donor/
+aromatic query geometry.60guards and72complete primary rows pass per source/
+exact-owned218context, with198strict rational checks and66candidate-band
+observations. Native mappings/orientation answers agree; boundary disagreements
+remain explicit. The [receipt](evidence/typed_retrieval_20261110.json) preserves
+red/static/resource failures and exact original evidence. Ordinary source answers
+use a truthful20+4row scientific composite after a global swap alarm, not a
+rewritten complete workflow; source session attribution stays unknown under#183.
+No stable public API/index, collection, cost/biological/platform/release gate
+follows. Next receive partial checkpoint retention under#183before longer
+measurement;148/165stops and MolSysMT#624 stay separate.
+
 [#181 snapshot ingestion](snapshot_retrieval_ingestion.md) receives original
 native snapshots through the finite candidate index: 41 selected guards and 24
 complete query/width/unit-policy rows pass per source/exact-owned218 context,

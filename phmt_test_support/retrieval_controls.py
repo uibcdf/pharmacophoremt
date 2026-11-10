@@ -43,7 +43,7 @@ def _validate_features(features):
     if not 3 <= len(features) <= 4:
         raise ValueError("Study requires three or four feature occurrences")
     for kind, xyz in features:
-        if kind not in {"P", "N", "H", "A"} or len(xyz) != 3:
+        if kind not in {"P", "N", "H", "A", "D", "R"} or len(xyz) != 3:
             raise ValueError("Unsupported typed point")
         if any(
             type(x) not in (int, float) or not isfinite(x) or abs(x) > 16 for x in xyz

@@ -1,0 +1,353 @@
+{
+  "schema": "pharmacophoremt.typed-retrieval-summary@1",
+  "issue": 182,
+  "case_id": "six-family-native-retrieval-v1",
+  "date_utc": "2026-11-10",
+  "source_parent": "571e67ec3825ccdfb69a70673bba1da4219acbea",
+  "runtime_source_commit": "5515e93be4444c802472daa98bc2eff24f7ac46c",
+  "green_admission": {
+    "bytes": 851088,
+    "sha256": "33ea0cd376535ebd3777b206c4b4a385b0538887072847fbb1f89bd133e6e121"
+  },
+  "red_admission": {
+    "bytes": 850922,
+    "sha256": "f7383552fc5a40e8ac02f18e3e51b3a598ef08501ab3bc29ee6ebedd95b17ba9"
+  },
+  "capture_admission": {
+    "bytes": 842278,
+    "sha256": "1549343c54c6e770d6d5ecf5511acba659559ff8429cd4ce7180cd83ea4cd7b5"
+  },
+  "parents": 4,
+  "new_native_captures": 16,
+  "old_original_snapshots": 4,
+  "work_occurrences_per_context": 11,
+  "families": [
+    "H",
+    "D",
+    "A",
+    "R",
+    "P",
+    "N"
+  ],
+  "queries": 12,
+  "contexts": {
+    "source": {
+      "guards": 60,
+      "new_guards": 19,
+      "existing_guards": 41,
+      "capture_rows": 8,
+      "complete_policies": 2,
+      "complete_rows": 72,
+      "strict_rational_comparisons": 198,
+      "candidate_band_observations": 66,
+      "candidate_band_differences": 6,
+      "native_candidate_vs_physical_pair_oracle_equal": false,
+      "all_native_mappings_preserved": true,
+      "reference_calls": {
+        "exhaustive": 264,
+        "retrieved": 182,
+        "total": 446
+      },
+      "supplied_pair_evaluations": 20,
+      "orientation_rows": 10,
+      "actual_attribution_items": 8,
+      "actual_attribution_uses": 12,
+      "molecular_operations_observed_during_tests_and_retrieval": 0,
+      "producer": {
+        "scope": "selected-case-context",
+        "admission_sha256": "33ea0cd376535ebd3777b206c4b4a385b0538887072847fbb1f89bd133e6e121",
+        "runtime_version": "0.4.0+134.gee5d9fa",
+        "versions": {
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "molsysmt": "0.23.0+687.g2325038e8",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "numpy": "2.5.4",
+          "ackredit": "0.12.1+10.g4beb850"
+        }
+      }
+    },
+    "installed": {
+      "guards": 60,
+      "new_guards": 19,
+      "existing_guards": 41,
+      "capture_rows": 8,
+      "complete_policies": 2,
+      "complete_rows": 72,
+      "strict_rational_comparisons": 198,
+      "candidate_band_observations": 66,
+      "candidate_band_differences": 6,
+      "native_candidate_vs_physical_pair_oracle_equal": false,
+      "all_native_mappings_preserved": true,
+      "reference_calls": {
+        "exhaustive": 264,
+        "retrieved": 182,
+        "total": 446
+      },
+      "supplied_pair_evaluations": 20,
+      "orientation_rows": 10,
+      "actual_attribution_items": 8,
+      "actual_attribution_uses": 12,
+      "molecular_operations_observed_during_tests_and_retrieval": 0,
+      "producer": {
+        "scope": "selected-case-context",
+        "admission_sha256": "33ea0cd376535ebd3777b206c4b4a385b0538887072847fbb1f89bd133e6e121",
+        "runtime_version": "0.4.0+218.g5515e93",
+        "versions": {
+          "pharmacophoremt": "0.4.0+218.g5515e93",
+          "molsysmt": "0.23.0+687.g2325038e8",
+          "pyunitwizard": "0.29.1+6.gf82b618",
+          "numpy": "2.5.4",
+          "ackredit": "0.12.1+10.g4beb850"
+        }
+      }
+    }
+  },
+  "red_cases": {
+    "failed": 2,
+    "mechanisms": [
+      "D/R unsupported in old bounded index",
+      "old three-match helper returned a partial three-pair witness for a four-point query"
+    ]
+  },
+  "candidate_band_difference_locations_per_policy": [
+    [
+      "boundary-exact",
+      7
+    ],
+    [
+      "boundary-outside",
+      3
+    ],
+    [
+      "boundary-outside",
+      7
+    ]
+  ],
+  "same_center_donor_witness": "Two full four-feature proposals per donor occurrence; one supplied direction-valid mapping, both position-valid. Distinct hydrogen participants survive.",
+  "aromatic_witness": "Both explicit normal signs pass the same supplied mapping.",
+  "old_ordinary_scientific_answers": {
+    "source_rows_received": 24,
+    "source_confirmed_interrupted_prefix_rows": 20,
+    "source_new_suffix_rows": 4,
+    "source_new_suffix_calls": 9,
+    "source_recorded_prefix_completed_calls": 117,
+    "source_unrecorded_inflight_work": "unknown",
+    "source_original_session_attribution": "unrecorded/unknown;183open",
+    "source_original_run_rewritten": false,
+    "installed_complete_rows": 24,
+    "all_scientific_rows_equal_original_181": true,
+    "uninterrupted_source_workflow_claim": false
+  },
+  "cold_readers": {
+    "contexts": 2,
+    "original_snapshots_per_reader": 20,
+    "scientific_modules": 0,
+    "scientific_import_attempts": 0,
+    "public_support_payloads": 125,
+    "existing_output_refusals_per_reader": 4
+  },
+  "operand_receiving": "Fresh reconstruction and264independent rational checks per context under unchanged fenced providers/policies; original native correspondence or molecular work is not rerun. Original floats/hex and this scope are retained.",
+  "identities_verified": {
+    "wheel_payloads": 214,
+    "runtime_bodies": 159,
+    "provider_Python_files": 4594,
+    "native": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3",
+      "source_HEAD": "efbe67e1c6042078144bce1db24aa80bb565dbd2"
+    },
+    "green_fixture_files": 60,
+    "loaded_PHMT_modules": {
+      "capture": 148,
+      "tests": 144,
+      "primary_retrieval": 146
+    }
+  },
+  "resource_event": {
+    "original_source_status": "interrupted/running; immutable",
+    "confirmed_rows_reused": 20,
+    "new_suffix_rows": 4,
+    "new_suffix_reference_calls": 9,
+    "original_session_attribution": "unrecorded/unknown;183owns retention gap",
+    "installed_ordinary": "already completed before precautionary stop request; no child matched/stopped",
+    "no_budget_or_profile_escalation": true
+  },
+  "static_import_cleanup": {
+    "check": "ruff check",
+    "initial_result": "F401 FeatureSnapshotStudy imported but unused in phmt_test_support/typed_retrieval.py",
+    "correction": "Remove the unused direct import before any green scientific execution; current snapshot module still owns and imports the same class.",
+    "original_plan": "green_plan_before_import_cleanup.json",
+    "scientific_green_execution_before_cleanup": false
+  },
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "backend_threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "DATA_bytes": 536870912,
+    "AS_bytes": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "reserve_fraction": 0.2,
+    "capacity_reserved": false,
+    "kernel_aggregate_enforcement": false,
+    "profile_or_budget_escalation": false,
+    "performance_measured": false
+  },
+  "limits": [
+    "Unshipped bounded six-family composition; no stable public API or production index.",
+    "Source trust remains a caller precondition, not authentication or arbitrary runtime compatibility.",
+    "Native candidate band differs from exact physical pair-distance oracle; neither is final fitting/activity acceptance.",
+    "Original interrupted ordinary-source session attribution remains unknown under183; new suffix credit does not restore it.",
+    "No equivalent-cost/human/full current-head/installed-platform/public/release gate;9/23retain owning debt;148/165stopped."
+  ],
+  "full_evidence": {
+    "path": "typed_retrieval_20261110_full.json.gz",
+    "compressed_bytes": 3700088,
+    "compressed_sha256": "62df371cf35fb34d91e89b1ae74c263bc785b9ce7e4432853539cbd330c6d1f0",
+    "uncompressed_bytes": 31300481,
+    "uncompressed_sha256": "4b0e307466b43a3c5fa10ccb6cc16831d751c32f9b2b09a4e2efd86dce9d591d"
+  },
+  "original_snapshots": 20,
+  "summary_count_clarification": "20 is the count of original immutable snapshot byte strings, not their total byte size; full original evidence remains unchanged.",
+  "local_receiving_evidence": {
+    "path": "typed_retrieval_20261110_receiving.json.gz",
+    "compressed_bytes": 86739,
+    "compressed_sha256": "f9c3d8fc1ec90a3b25b4cec90089289519fa52ad193c39876986360cc1bc4ada",
+    "uncompressed_bytes": 317601,
+    "uncompressed_sha256": "11bd52dcc2b3088411b1b965f3b3442fff43185ee0d5bbf2eb00d0751a21106a"
+  },
+  "local_receiving": {
+    "checks": [
+      {
+        "name": "index-generate",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py"
+        ],
+        "code": 0,
+        "output": "wrote devguide/pending_bugs/README.md\nwrote devguide/archive/README.md\n"
+      },
+      {
+        "name": "ruff",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "check",
+          "."
+        ],
+        "code": 0,
+        "output": "All checks passed!\n"
+      },
+      {
+        "name": "format",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "ruff",
+          "format",
+          "--check",
+          "."
+        ],
+        "code": 0,
+        "output": "468 files already formatted\n"
+      },
+      {
+        "name": "index",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "devtools/devguide_index.py",
+          "--check"
+        ],
+        "code": 0,
+        "output": "Generated report indexes are current.\n"
+      },
+      {
+        "name": "reporting",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_reporting_protocol.py"
+        ],
+        "code": 0,
+        "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.185s\n\nOK\n"
+      },
+      {
+        "name": "archives",
+        "args": [
+          "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+          "-B",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "tests",
+          "-p",
+          "test_evidence_archive.py"
+        ],
+        "code": 0,
+        "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.102s\n\nOK\n"
+      },
+      {
+        "name": "whitespace",
+        "args": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "code": 0,
+        "output": ""
+      }
+    ],
+    "strict_full_docs": {
+      "status": "completed",
+      "exit_code": 0,
+      "seconds": 12.012240028008819,
+      "interruption": null,
+      "arguments": [
+        "/usr/bin/prlimit",
+        "--data=536870912",
+        "--cpu=90",
+        "--fsize=67108864",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-typed-domain-20261110-auks68w1/logs/docs-resources.txt",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/docs",
+        "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/build/phmt-typed-domain-20261110-auks68w1/html"
+      ]
+    },
+    "local_links": 453,
+    "rendered_case_limits_and_navigation": true,
+    "warnings": "Original optional-beartype notices retained without dependency installation or suppression."
+  }
+}

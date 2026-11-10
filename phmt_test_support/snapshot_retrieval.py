@@ -134,7 +134,8 @@ class SnapshotRetrievalStudy:
             "anchor_feature_indices": [0, 1],
             "numerical_guard_bins": 1,
             "original_manifest_sha256": self.manifest_sha256,
-            "profile": "full-three-point-native-snapshot-study@1",
+            "profile": "classical-three-four-point-snapshot-study@2",
+            "feature_labels": list(LABELS.values()),
         }
         self._index = StudyIndex(records, self._settings)
         self.identity = self._index.identity
@@ -187,16 +188,49 @@ class SnapshotRetrievalStudy:
         }
 
 
+def query_inventory(query):
+    """Build a declared mathematical query; D/R geometry must be explicit."""
+    from pharmacophoremt import pyunitwizard as puw
+    from phmt_test_support.absence_inputs import inventory as mathematical_inventory
+    from phmt_test_support.retrieval_controls import _validate_features
+
+    _validate_features(query["features"])
+    n = len(query["features"])
+    directions = query.get("directions", [None] * n)
+    normals = query.get("normals", [None] * n)
+    if any(
+        not isinstance(value, (list, tuple)) or len(value) != n
+        for value in (directions, normals)
+    ):
+        raise ValueError("Declare one optional direction/normal per query feature")
+    for i, (kind, _) in enumerate(query["features"]):
+        if (directions[i] is not None) != (kind == "D") or (normals[i] is not None) != (
+            kind == "R"
+        ):
+            raise ValueError(
+                "Explicit donor direction/aromatic normal presence mismatch"
+            )
+    centers = puw.get_value(
+        puw.quantity([xyz for _, xyz in query["features"]], "angstrom"), to_unit="nm"
+    )
+    kinds = {label: kind for kind, label in LABELS.items()}
+    return mathematical_inventory(
+        centers,
+        [kinds[label] for label, _ in query["features"]],
+        directions=directions,
+        normals=normals,
+    )
+
+
 def reference_proposals(query, native_inventory):
     from pharmacophoremt import pyunitwizard as puw
     from pharmacophoremt.screening import get_rigid_feature_correspondences
-    from phmt_test_support.pmapper_controls import _inventory
 
     result = get_rigid_feature_correspondences(
-        _inventory(query["features"]),
+        query_inventory(query),
         native_inventory,
         distance_tolerance=puw.quantity(query["tolerance"], "angstrom"),
-        min_matches=3,
+        min_matches=len(query["features"]),
         max_graph_nodes=32,
         max_cliques=32,
     )

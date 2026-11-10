@@ -1,0 +1,1072 @@
+{
+  "schema": "pharmacophoremt.typed-retrieval-case@1",
+  "issue": 182,
+  "declared_at_utc": "2026-11-10T14:41:25.852827+00:00",
+  "parents": [
+    {
+      "key": "donors4",
+      "smiles": "[2H]O[3H].[Na+].[Cl-]",
+      "coordinates_nm": [
+        [
+          0.1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0.1,
+          0
+        ],
+        [
+          0.5,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ]
+      ],
+      "atom_types": [
+        "H",
+        "O",
+        "H",
+        "Na",
+        "Cl"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "n_bonds": 2,
+      "features": [
+        "hb donor",
+        "positive charge",
+        "negative charge"
+      ],
+      "expected_types": [
+        "D",
+        "D",
+        "P",
+        "N"
+      ],
+      "expected_atom_maps": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3
+        ],
+        [
+          4
+        ]
+      ],
+      "expected_centers_angstrom": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ]
+      ],
+      "expected_directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        null,
+        null
+      ],
+      "perceive_aromaticity": false
+    },
+    {
+      "key": "ring3",
+      "smiles": "c1ccccc1.[NH4+].[Cl-]",
+      "coordinates_nm": [
+        [
+          0.14,
+          0,
+          0
+        ],
+        [
+          0.07,
+          0.12,
+          0
+        ],
+        [
+          -0.07,
+          0.12,
+          0
+        ],
+        [
+          -0.14,
+          0,
+          0
+        ],
+        [
+          -0.07,
+          -0.12,
+          0
+        ],
+        [
+          0.07,
+          -0.12,
+          0
+        ],
+        [
+          0.5,
+          0,
+          0
+        ],
+        [
+          0,
+          0.5,
+          0
+        ]
+      ],
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "N",
+        "Cl"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        -1
+      ],
+      "n_bonds": 6,
+      "features": [
+        "aromatic ring",
+        "positive charge",
+        "negative charge"
+      ],
+      "expected_types": [
+        "R",
+        "P",
+        "N"
+      ],
+      "expected_atom_maps": [
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ]
+      ],
+      "expected_centers_angstrom": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ]
+      ],
+      "expected_normal_axis": [
+        0,
+        0,
+        1
+      ],
+      "perceive_aromaticity": true
+    },
+    {
+      "key": "mixed3",
+      "smiles": "CCC.C=O.[Na+]",
+      "coordinates_nm": [
+        [
+          -0.1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0,
+          0
+        ],
+        [
+          0.13,
+          0,
+          0
+        ],
+        [
+          0.25,
+          0,
+          0
+        ],
+        [
+          0,
+          0.25,
+          0
+        ]
+      ],
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "Na"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n_bonds": 3,
+      "features": [
+        "hydrophobicity",
+        "hb acceptor",
+        "positive charge"
+      ],
+      "expected_types": [
+        "H",
+        "A",
+        "P"
+      ],
+      "expected_atom_maps": [
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          5
+        ]
+      ],
+      "expected_centers_angstrom": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2.5,
+          0,
+          0
+        ],
+        [
+          0,
+          2.5,
+          0
+        ]
+      ],
+      "perceive_aromaticity": false
+    },
+    {
+      "key": "mixed4",
+      "smiles": "CCC.CCC.C=O.[Na+]",
+      "coordinates_nm": [
+        [
+          -0.1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0.1,
+          0,
+          0
+        ],
+        [
+          0.15,
+          -0.1,
+          0
+        ],
+        [
+          0.15,
+          0,
+          0
+        ],
+        [
+          0.15,
+          0.1,
+          0
+        ],
+        [
+          0,
+          0.13,
+          0
+        ],
+        [
+          0,
+          0.25,
+          0
+        ],
+        [
+          0,
+          0,
+          0.25
+        ]
+      ],
+      "atom_types": [
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "C",
+        "O",
+        "Na"
+      ],
+      "formal_charges": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "n_bonds": 5,
+      "features": [
+        "hydrophobicity",
+        "hb acceptor",
+        "positive charge"
+      ],
+      "expected_types": [
+        "H",
+        "H",
+        "A",
+        "P"
+      ],
+      "expected_atom_maps": [
+        [
+          1
+        ],
+        [
+          4
+        ],
+        [
+          7
+        ],
+        [
+          8
+        ]
+      ],
+      "expected_centers_angstrom": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1.5,
+          0,
+          0
+        ],
+        [
+          0,
+          2.5,
+          0
+        ],
+        [
+          0,
+          0,
+          2.5
+        ]
+      ],
+      "perceive_aromaticity": false
+    }
+  ],
+  "work": [
+    {
+      "work_key": "empty:nm",
+      "origin": "old",
+      "file": "nm-empty.json"
+    },
+    {
+      "work_key": "nm",
+      "origin": "new",
+      "file": "nm-donors4.json"
+    },
+    {
+      "work_key": "short:donor",
+      "origin": "old",
+      "file": "nm-donors.json"
+    },
+    {
+      "work_key": "ring:nm",
+      "origin": "new",
+      "file": "nm-ring3.json"
+    },
+    {
+      "work_key": "mixed3:nm",
+      "origin": "new",
+      "file": "nm-mixed3.json"
+    },
+    {
+      "work_key": "mixed4:nm",
+      "origin": "new",
+      "file": "nm-mixed4.json"
+    },
+    {
+      "work_key": "1 nm",
+      "origin": "new",
+      "file": "pm-donors4.json"
+    },
+    {
+      "work_key": "ring:pm",
+      "origin": "new",
+      "file": "pm-ring3.json"
+    },
+    {
+      "work_key": "mixed3:pm",
+      "origin": "new",
+      "file": "pm-mixed3.json"
+    },
+    {
+      "work_key": "mixed4:pm",
+      "origin": "new",
+      "file": "pm-mixed4.json"
+    },
+    {
+      "work_key": "repeat=α",
+      "origin": "new",
+      "file": "nm-donors4.json"
+    }
+  ],
+  "queries": [
+    {
+      "key": "donor-four",
+      "features": [
+        [
+          "D",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "D",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "directions": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        null,
+        null
+      ],
+      "expected_native_positive_ordinals": [
+        1,
+        6,
+        10
+      ]
+    },
+    {
+      "key": "aromatic-three",
+      "features": [
+        [
+          "R",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "normals": [
+        [
+          0,
+          0,
+          -1
+        ],
+        null,
+        null
+      ],
+      "expected_native_positive_ordinals": [
+        3,
+        7
+      ]
+    },
+    {
+      "key": "mixed-three",
+      "features": [
+        [
+          "H",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            2.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            2.5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "expected_native_positive_ordinals": [
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "mixed-four",
+      "features": [
+        [
+          "H",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            1.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            0,
+            2.5,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            0,
+            2.5
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "expected_native_positive_ordinals": [
+        5,
+        9
+      ]
+    },
+    {
+      "key": "mixed-four-reflected",
+      "features": [
+        [
+          "H",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            1.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            0,
+            2.5,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            0,
+            0,
+            -2.5
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "expected_native_positive_ordinals": [
+        5,
+        9
+      ]
+    },
+    {
+      "key": "boundary-inside",
+      "features": [
+        [
+          "R",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5.249999999999999,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "classification": "native-candidate-band",
+      "normals": [
+        [
+          0,
+          0,
+          1
+        ],
+        null,
+        null
+      ],
+      "anchor_x_binary64_hex": "0x1.4ffffffffffffp+2",
+      "expected_native_positive_ordinals": [
+        3,
+        7
+      ]
+    },
+    {
+      "key": "boundary-exact",
+      "features": [
+        [
+          "R",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5.25,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "classification": "native-candidate-band",
+      "normals": [
+        [
+          0,
+          0,
+          1
+        ],
+        null,
+        null
+      ],
+      "anchor_x_binary64_hex": "0x1.5000000000000p+2",
+      "expected_native_positive_ordinals": [
+        3,
+        7
+      ]
+    },
+    {
+      "key": "boundary-outside",
+      "features": [
+        [
+          "R",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5.250000000000001,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "classification": "native-candidate-band",
+      "normals": [
+        [
+          0,
+          0,
+          1
+        ],
+        null,
+        null
+      ],
+      "anchor_x_binary64_hex": "0x1.5000000000001p+2",
+      "expected_native_positive_ordinals": [
+        3,
+        7
+      ]
+    },
+    {
+      "key": "boundary-clear-outside",
+      "features": [
+        [
+          "R",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "N",
+          [
+            0,
+            5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.125,
+      "classification": "strict-interior",
+      "normals": [
+        [
+          0,
+          0,
+          1
+        ],
+        null,
+        null
+      ],
+      "expected_native_positive_ordinals": []
+    },
+    {
+      "key": "insufficient-kind",
+      "features": [
+        [
+          "H",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            1.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "H",
+          [
+            0,
+            2.5,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "expected_native_positive_ordinals": []
+    },
+    {
+      "key": "translated-mixed",
+      "features": [
+        [
+          "H",
+          [
+            8,
+            -4,
+            2
+          ]
+        ],
+        [
+          "A",
+          [
+            10.5,
+            -4,
+            2
+          ]
+        ],
+        [
+          "P",
+          [
+            8,
+            -1.5,
+            2
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "expected_native_positive_ordinals": [
+        4,
+        5,
+        8,
+        9
+      ]
+    },
+    {
+      "key": "near-collinear",
+      "features": [
+        [
+          "H",
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          "A",
+          [
+            2.5,
+            0,
+            0
+          ]
+        ],
+        [
+          "P",
+          [
+            5,
+            9.313225746154785e-10,
+            0
+          ]
+        ]
+      ],
+      "tolerance": 0.01,
+      "classification": "strict-interior",
+      "expected_native_positive_ordinals": []
+    }
+  ],
+  "unit": "angstrom",
+  "unit_contexts": [
+    "nm",
+    "pm"
+  ],
+  "bin_widths": [
+    0.125,
+    0.5,
+    1.0
+  ],
+  "anchor_feature_indices": [
+    0,
+    1
+  ],
+  "numerical_guard_bins": 1,
+  "eligible_original_ordinals": [
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "not_indexed_original_ordinals": [
+    0,
+    2
+  ],
+  "expected_counts": [
+    0,
+    4,
+    2,
+    3,
+    3,
+    4,
+    4,
+    3,
+    3,
+    4,
+    4
+  ],
+  "label_map": {
+    "H": "hydrophobicity",
+    "D": "hb donor",
+    "A": "hb acceptor",
+    "R": "aromatic ring",
+    "P": "positive charge",
+    "N": "negative charge"
+  },
+  "coordinate_tolerance_nm": 1e-12,
+  "direction_tolerance": 1e-12,
+  "expected_parent_count": 4,
+  "capture_rows_per_context": 8,
+  "expected_rows_per_context": 72,
+  "reference_cases_per_policy": 132,
+  "strict_oracle_comparisons_per_policy": 99,
+  "candidate_band_oracle_observations_per_policy": 33,
+  "graph_and_clique_limits": 32,
+  "scope": "Four original synthetic disconnected-fragment artifacts, explicit classical features and mathematical queries. No dataset/activity/conformer/chemical-equivalence claim. No production index/public API, arbitrary scale/float recall, cost, final fitting/platform/release gate.148/165stopped.",
+  "preparation": "Public MolSysMT conversion/coordinate append; ring3-only public aromaticity annotation; native H5MSM write-read with exact maps/counts/charges/bonds and declared geometry tolerance; no parser/repair/protonation/hydrogen/conformer fallback.",
+  "oracle_scope": "Strict interiors require full rational/native mapping equality. Three nextafter boundary queries record rational/native candidate-band differences separately; conservative retrieval must match native full-query proposals in all cases.",
+  "resources": "Serial CPU19/thread1/nice19/idleIO/DATA512MiB/AS1GiB/observed-group512MiB/CPU120/wall180/20percent host reserve; no reservation/kernel aggregate control, no manager/compiler/provider update or148/165retry."
+}

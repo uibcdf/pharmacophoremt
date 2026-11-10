@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (121)
+### Resolved (122)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -34,6 +34,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`documentation_reader_entry_points.md`](documentation_reader_entry_points.md) — [#61](https://github.com/uibcdf/pharmacophoremt/issues/61) — Build reader-oriented documentation entry points around delivered native workflows. *(resolved, measured)*
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
+- [`expand_typed_retrieval.md`](expand_typed_retrieval.md) — [#182](https://github.com/uibcdf/pharmacophoremt/issues/182) — Receive six-family native retrieval with full-query cardinality and numerical boundaries. *(resolved, measured)*
 - [`feature_reuse_route_inventory.md`](feature_reuse_route_inventory.md) — [#151](https://github.com/uibcdf/pharmacophoremt/issues/151) — Register the resource and native qualification workflows without bypassing dependency-route review. *(resolved, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(resolved, measured)*
 - [`identify_reader_distribution.md`](identify_reader_distribution.md) — [#173](https://github.com/uibcdf/pharmacophoremt/issues/173) — Identify installed distribution metadata from the independent reader CLI. *(resolved, measured)*
