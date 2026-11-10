@@ -1,5 +1,20 @@
 # Decisions and active workstreams
 
+## Equivalent proposal-cost calibration — #184 (2026-11-10 UTC)
+
+[Declared native retrieval workloads](retrieval_cost_workloads.md) now receive
+38 guards per source/exact-owned218 context, one preliminary calibration and
+twelve primary paired samples, with every original mapping/join and actual
+attribution retained. The [receipt/archive](evidence/retrieval_cost_20261110.json)
+separates common reconstruction, build-plus-first and reused-batch costs. Every
+index build-plus-first sample costs more (index/scan1.027–1.141); subsequent
+batches favor index (scan/index2.100–2.307), with132scan/31index native calls.
+No production default or universal crossover follows from eleven analytical work
+occurrences. Persisted index size/native memory/process-cold costs remain unknown.
+Next define backend-independent persisted-asset identity/lifetime requirements,
+then broader query-mix/corpus and missing-cost gates. MolSysMT#624 stays open;
+#148/#165 stay stopped and full supported/human/release gates remain separate.
+
 ## Partial developer-driver checkpoints — #183 (2026-11-10 UTC)
 
 [Application-owned checkpoint receiving](retrieval_driver_checkpoints.md) now

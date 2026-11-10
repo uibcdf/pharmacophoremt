@@ -172,3 +172,12 @@ Complete ordinary24/typed72 rows and exact complete attribution agree with origi
 evidence per context. No historical #182 output or missing attribution is repaired.
 The next gate is prospective equivalent-cost workload/admission design, with the
 same scientific/runtime/provider and resource ownership limits.
+
+## Cost follow-up — #184 (2026-11-10 UTC)
+
+The [finite equivalent-cost case](retrieval_cost_workloads.md) receives all original
+proposal mappings/joins under both unit policies and source/exact-owned bodies.
+It separates higher indexed construction-plus-first cost from lower subsequent
+batch cost, retaining every sample and all actual attribution. The missing
+persistent-index/native-memory/OS-cold and broader-scale gates stay explicit;
+no production index or old scientific evidence is rewritten.

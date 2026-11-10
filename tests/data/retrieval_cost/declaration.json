@@ -1,0 +1,33 @@
+{
+  "schema": "pharmacophoremt.retrieval-cost-case@1",
+  "case_id": "equivalent-native-proposal-cost-v1",
+  "issue": 184,
+  "corpus": "typed_retrieval",
+  "work_occurrences": 11,
+  "query_count": 12,
+  "first_query": "donor-four",
+  "bin_width_angstrom": 1.0,
+  "unit_policies": ["nm", "pm"],
+  "strategies": ["scan", "index"],
+  "warmup_batches_per_strategy": 1,
+  "pair_orders": {
+    "nm": [["scan", "index"], ["index", "scan"], ["scan", "index"]],
+    "pm": [["index", "scan"], ["scan", "index"], ["index", "scan"]]
+  },
+  "ordering_scope": "Alternating within each three-pair stratum (2:1 first position); exactly balanced across both unit strata, not perfectly balanced within one policy.",
+  "calibration": {"unit_policy": "nm", "pairs": 1, "allocation_samples": false},
+  "paired": {"pairs_per_policy": 3, "allocation_samples_per_strategy": 1},
+  "timing_units": {"wall_ns": "nanosecond", "cpu_ns": "nanosecond"},
+  "allocation_unit": "byte",
+  "attribution_enabled": true,
+  "timed": ["original_snapshot_file_read", "common_validation_and_native_reconstruction", "strategy_build", "first_query_on_new_asset", "reused_twelve_query_batch"],
+  "not_timed": ["scientific_oracle_comparison", "attribution_export", "checkpoint_io", "allocation_measurement"],
+  "input_binding": "Both routes verify original snapshot/work binding on every query; the unchanged index also rehashes its own records/settings.",
+  "first_query_scope": "New strategy object in a warmed process; no claim of cold OS cache or fresh-process startup.",
+  "allocation_scope": "Separate tracemalloc peak during common reconstruction, route build and one full batch, excluding preloaded original byte strings; native allocations are unobserved.",
+  "persisted_index_bytes": null,
+  "persisted_index_reason": "No persisted index representation exists; do not substitute a debug encoding or Python object size.",
+  "performance_threshold": null,
+  "profile_or_trace_allowed_during_timing": false,
+  "resource_policy": "Serial one CPU/backend thread with unchanged conservative admission/pressure stops; calibration before paired samples; no148/165retry."
+}

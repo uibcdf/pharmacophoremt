@@ -1,0 +1,838 @@
+{
+  "schema": "pharmacophoremt.retrieval-cost-summary@1",
+  "issue": 184,
+  "date_utc": "2026-11-10",
+  "source_parent": "5cd570714a3bbdbb6b0ce1a04ff825f08eb4f4f4",
+  "guards_per_context": 38,
+  "primary_pairs": 12,
+  "strategies_per_pair": 2,
+  "unit_policies": [
+    "nm",
+    "pm"
+  ],
+  "contexts": [
+    "source",
+    "installed"
+  ],
+  "statistics": {
+    "source": {
+      "nm": {
+        "preparation": {
+          "original_file_read": {
+            "wall_ns": 1866784,
+            "cpu_ns": 1159600
+          },
+          "native_reconstruction": {
+            "wall_ns": 67678705,
+            "cpu_ns": 67409263
+          }
+        },
+        "by_strategy": {
+          "scan": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  7541,
+                  6306,
+                  8150
+                ],
+                "median": 7541,
+                "min": 6306,
+                "max": 8150
+              },
+              "cpu_ns": {
+                "samples": [
+                  0,
+                  0,
+                  0
+                ],
+                "median": 0,
+                "min": 0,
+                "max": 0
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  111692779,
+                  111680610,
+                  121236468
+                ],
+                "median": 111692779,
+                "min": 111680610,
+                "max": 121236468
+              },
+              "cpu_ns": {
+                "samples": [
+                  111394268,
+                  110380629,
+                  120261213
+                ],
+                "median": 111394268,
+                "min": 110380629,
+                "max": 120261213
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  1252181398,
+                  1273612961,
+                  1263457351
+                ],
+                "median": 1263457351,
+                "min": 1252181398,
+                "max": 1273612961
+              },
+              "cpu_ns": {
+                "samples": [
+                  1244973093,
+                  1265537327,
+                  1255536101
+                ],
+                "median": 1255536101,
+                "min": 1244973093,
+                "max": 1265537327
+              }
+            }
+          },
+          "index": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  70172173,
+                  70029743,
+                  70472540
+                ],
+                "median": 70172173,
+                "min": 70029743,
+                "max": 70472540
+              },
+              "cpu_ns": {
+                "samples": [
+                  69291201,
+                  70070282,
+                  70244933
+                ],
+                "median": 70070282,
+                "min": 69291201,
+                "max": 70244933
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  55089575,
+                  54952097,
+                  54763731
+                ],
+                "median": 54952097,
+                "min": 54763731,
+                "max": 55089575
+              },
+              "cpu_ns": {
+                "samples": [
+                  54418150,
+                  55000115,
+                  53999929
+                ],
+                "median": 54418150,
+                "min": 53999929,
+                "max": 55000115
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  591891262,
+                  594244637,
+                  599784835
+                ],
+                "median": 594244637,
+                "min": 591891262,
+                "max": 599784835
+              },
+              "cpu_ns": {
+                "samples": [
+                  588424500,
+                  590490840,
+                  596265818
+                ],
+                "median": 590490840,
+                "min": 588424500,
+                "max": 596265818
+              }
+            }
+          }
+        },
+        "build_plus_first_index_over_scan": {
+          "samples": [
+            1.1214090344593461,
+            1.1190374349668675,
+            1.0329223108278505
+          ],
+          "median": 1.1190374349668675,
+          "min": 1.0329223108278505,
+          "max": 1.1214090344593461
+        },
+        "reused_batch_scan_over_index": {
+          "samples": [
+            2.1155598644401006,
+            2.1432468746032622,
+            2.1065176664561718
+          ],
+          "median": 2.1155598644401006,
+          "min": 2.1065176664561718,
+          "max": 2.1432468746032622
+        },
+        "native_calls_per_batch": {
+          "scan": 132,
+          "index": 31
+        },
+        "allocation_peaks_bytes": {
+          "scan": 1166310,
+          "index": 1264402
+        },
+        "storage": {
+          "work_occurrences": 11,
+          "original_snapshot_bytes_by_work": 166473,
+          "unique_snapshot_hashes": 10,
+          "unique_original_snapshot_bytes": 149646,
+          "persisted_index_bytes": null,
+          "persisted_index_reason": "No persisted index representation exists"
+        }
+      },
+      "pm": {
+        "preparation": {
+          "original_file_read": {
+            "wall_ns": 1912779,
+            "cpu_ns": 2000397
+          },
+          "native_reconstruction": {
+            "wall_ns": 70173001,
+            "cpu_ns": 70000030
+          }
+        },
+        "by_strategy": {
+          "scan": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  8922,
+                  8581,
+                  8938
+                ],
+                "median": 8922,
+                "min": 8581,
+                "max": 8938
+              },
+              "cpu_ns": {
+                "samples": [
+                  0,
+                  0,
+                  0
+                ],
+                "median": 0,
+                "min": 0,
+                "max": 0
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  130798553,
+                  131392251,
+                  131897326
+                ],
+                "median": 131392251,
+                "min": 130798553,
+                "max": 131897326
+              },
+              "cpu_ns": {
+                "samples": [
+                  129042905,
+                  130305098,
+                  131259564
+                ],
+                "median": 130305098,
+                "min": 129042905,
+                "max": 131259564
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  1490688825,
+                  1463489566,
+                  1487817609
+                ],
+                "median": 1487817609,
+                "min": 1463489566,
+                "max": 1490688825
+              },
+              "cpu_ns": {
+                "samples": [
+                  1480931103,
+                  1455116394,
+                  1478834859
+                ],
+                "median": 1478834859,
+                "min": 1455116394,
+                "max": 1480931103
+              }
+            }
+          },
+          "index": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  74536152,
+                  75201739,
+                  73408840
+                ],
+                "median": 74536152,
+                "min": 73408840,
+                "max": 75201739
+              },
+              "cpu_ns": {
+                "samples": [
+                  73311888,
+                  74310285,
+                  74002879
+                ],
+                "median": 74002879,
+                "min": 73311888,
+                "max": 74310285
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  61930173,
+                  62419868,
+                  62020373
+                ],
+                "median": 62020373,
+                "min": 61930173,
+                "max": 62419868
+              },
+              "cpu_ns": {
+                "samples": [
+                  61421095,
+                  62394158,
+                  61196579
+                ],
+                "median": 61421095,
+                "min": 61196579,
+                "max": 62394158
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  648326471,
+                  645147544,
+                  648667508
+                ],
+                "median": 648326471,
+                "min": 645147544,
+                "max": 648667508
+              },
+              "cpu_ns": {
+                "samples": [
+                  644280376,
+                  641316840,
+                  645333151
+                ],
+                "median": 644280376,
+                "min": 641316840,
+                "max": 645333151
+              }
+            }
+          }
+        },
+        "build_plus_first_index_over_scan": {
+          "samples": [
+            1.0432609069168257,
+            1.0473419757342175,
+            1.0267079734742544
+          ],
+          "median": 1.0432609069168257,
+          "min": 1.0267079734742544,
+          "max": 1.0473419757342175
+        },
+        "reused_batch_scan_over_index": {
+          "samples": [
+            2.29928730613253,
+            2.268457160863035,
+            2.2936521263217027
+          ],
+          "median": 2.2936521263217027,
+          "min": 2.268457160863035,
+          "max": 2.29928730613253
+        },
+        "native_calls_per_batch": {
+          "scan": 132,
+          "index": 31
+        },
+        "allocation_peaks_bytes": {
+          "scan": 1165094,
+          "index": 1264350
+        },
+        "storage": {
+          "work_occurrences": 11,
+          "original_snapshot_bytes_by_work": 166473,
+          "unique_snapshot_hashes": 10,
+          "unique_original_snapshot_bytes": 149646,
+          "persisted_index_bytes": null,
+          "persisted_index_reason": "No persisted index representation exists"
+        }
+      }
+    },
+    "installed": {
+      "nm": {
+        "preparation": {
+          "original_file_read": {
+            "wall_ns": 1983395,
+            "cpu_ns": 1269036
+          },
+          "native_reconstruction": {
+            "wall_ns": 70278174,
+            "cpu_ns": 70306562
+          }
+        },
+        "by_strategy": {
+          "scan": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  10301,
+                  8971,
+                  8169
+                ],
+                "median": 8971,
+                "min": 8169,
+                "max": 10301
+              },
+              "cpu_ns": {
+                "samples": [
+                  0,
+                  0,
+                  0
+                ],
+                "median": 0,
+                "min": 0,
+                "max": 0
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  115032851,
+                  117819054,
+                  114916990
+                ],
+                "median": 115032851,
+                "min": 114916990,
+                "max": 117819054
+              },
+              "cpu_ns": {
+                "samples": [
+                  115305299,
+                  116545348,
+                  114299695
+                ],
+                "median": 115305299,
+                "min": 114299695,
+                "max": 116545348
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  1319692917,
+                  1311025895,
+                  1284107051
+                ],
+                "median": 1311025895,
+                "min": 1284107051,
+                "max": 1319692917
+              },
+              "cpu_ns": {
+                "samples": [
+                  1311572097,
+                  1302439893,
+                  1276267280
+                ],
+                "median": 1302439893,
+                "min": 1276267280,
+                "max": 1311572097
+              }
+            }
+          },
+          "index": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  72395267,
+                  71541133,
+                  73106448
+                ],
+                "median": 72395267,
+                "min": 71541133,
+                "max": 73106448
+              },
+              "cpu_ns": {
+                "samples": [
+                  71995239,
+                  71243126,
+                  72303345
+                ],
+                "median": 71995239,
+                "min": 71243126,
+                "max": 72303345
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  56225208,
+                  57113057,
+                  57965801
+                ],
+                "median": 57113057,
+                "min": 56225208,
+                "max": 57965801
+              },
+              "cpu_ns": {
+                "samples": [
+                  55315120,
+                  56431963,
+                  57368827
+                ],
+                "median": 56431963,
+                "min": 55315120,
+                "max": 57368827
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  609560061,
+                  624272352,
+                  610540179
+                ],
+                "median": 610540179,
+                "min": 609560061,
+                "max": 624272352
+              },
+              "cpu_ns": {
+                "samples": [
+                  605227540,
+                  621028012,
+                  607322876
+                ],
+                "median": 607322876,
+                "min": 605227540,
+                "max": 621028012
+              }
+            }
+          }
+        },
+        "build_plus_first_index_over_scan": {
+          "samples": [
+            1.1180193932794886,
+            1.091881069889782,
+            1.140500915034627
+          ],
+          "median": 1.1180193932794886,
+          "min": 1.091881069889782,
+          "max": 1.140500915034627
+        },
+        "reused_batch_scan_over_index": {
+          "samples": [
+            2.1649924288592786,
+            2.100086429904876,
+            2.1032310324002443
+          ],
+          "median": 2.1032310324002443,
+          "min": 2.100086429904876,
+          "max": 2.1649924288592786
+        },
+        "native_calls_per_batch": {
+          "scan": 132,
+          "index": 31
+        },
+        "allocation_peaks_bytes": {
+          "scan": 1163284,
+          "index": 1265102
+        },
+        "storage": {
+          "work_occurrences": 11,
+          "original_snapshot_bytes_by_work": 166473,
+          "unique_snapshot_hashes": 10,
+          "unique_original_snapshot_bytes": 149646,
+          "persisted_index_bytes": null,
+          "persisted_index_reason": "No persisted index representation exists"
+        }
+      },
+      "pm": {
+        "preparation": {
+          "original_file_read": {
+            "wall_ns": 2098904,
+            "cpu_ns": 2000309
+          },
+          "native_reconstruction": {
+            "wall_ns": 72627868,
+            "cpu_ns": 72401680
+          }
+        },
+        "by_strategy": {
+          "scan": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  7353,
+                  8143,
+                  7522
+                ],
+                "median": 7522,
+                "min": 7353,
+                "max": 8143
+              },
+              "cpu_ns": {
+                "samples": [
+                  0,
+                  0,
+                  0
+                ],
+                "median": 0,
+                "min": 0,
+                "max": 0
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  135295641,
+                  134303183,
+                  134593799
+                ],
+                "median": 134593799,
+                "min": 134303183,
+                "max": 135295641
+              },
+              "cpu_ns": {
+                "samples": [
+                  135123373,
+                  133296864,
+                  133300792
+                ],
+                "median": 133300792,
+                "min": 133296864,
+                "max": 135123373
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  1543340776,
+                  1498751523,
+                  1496595563
+                ],
+                "median": 1498751523,
+                "min": 1496595563,
+                "max": 1543340776
+              },
+              "cpu_ns": {
+                "samples": [
+                  1532458890,
+                  1489820981,
+                  1487137522
+                ],
+                "median": 1489820981,
+                "min": 1487137522,
+                "max": 1532458890
+              }
+            }
+          },
+          "index": {
+            "build": {
+              "wall_ns": {
+                "samples": [
+                  76878950,
+                  77040185,
+                  76818400
+                ],
+                "median": 76878950,
+                "min": 76818400,
+                "max": 77040185
+              },
+              "cpu_ns": {
+                "samples": [
+                  75277417,
+                  76214168,
+                  76317027
+                ],
+                "median": 76214168,
+                "min": 75277417,
+                "max": 76317027
+              }
+            },
+            "first_query": {
+              "wall_ns": {
+                "samples": [
+                  63682214,
+                  62313876,
+                  64108144
+                ],
+                "median": 63682214,
+                "min": 62313876,
+                "max": 64108144
+              },
+              "cpu_ns": {
+                "samples": [
+                  62422484,
+                  61996232,
+                  63386745
+                ],
+                "median": 62422484,
+                "min": 61996232,
+                "max": 63386745
+              }
+            },
+            "reused_batch": {
+              "wall_ns": {
+                "samples": [
+                  668845326,
+                  667440328,
+                  668917823
+                ],
+                "median": 668845326,
+                "min": 667440328,
+                "max": 668917823
+              },
+              "cpu_ns": {
+                "samples": [
+                  664455710,
+                  662755482,
+                  664437048
+                ],
+                "median": 664437048,
+                "min": 662755482,
+                "max": 664455710
+              }
+            }
+          }
+        },
+        "build_plus_first_index_over_scan": {
+          "samples": [
+            1.038862185119126,
+            1.0375451211017006,
+            1.046992280261499
+          ],
+          "median": 1.038862185119126,
+          "min": 1.0375451211017006,
+          "max": 1.046992280261499
+        },
+        "reused_batch_scan_over_index": {
+          "samples": [
+            2.307470376192776,
+            2.2455213749085896,
+            2.2373384465792596
+          ],
+          "median": 2.2455213749085896,
+          "min": 2.2373384465792596,
+          "max": 2.307470376192776
+        },
+        "native_calls_per_batch": {
+          "scan": 132,
+          "index": 31
+        },
+        "allocation_peaks_bytes": {
+          "scan": 1165032,
+          "index": 1263818
+        },
+        "storage": {
+          "work_occurrences": 11,
+          "original_snapshot_bytes_by_work": 166473,
+          "unique_snapshot_hashes": 10,
+          "unique_original_snapshot_bytes": 149646,
+          "persisted_index_bytes": null,
+          "persisted_index_reason": "No persisted index representation exists"
+        }
+      }
+    }
+  },
+  "descriptive_findings": {
+    "build_plus_first_index_over_scan_range": [
+      1.0267079734742544,
+      1.140500915034627
+    ],
+    "reused_batch_scan_over_index_range": [
+      2.100086429904876,
+      2.307470376192776
+    ],
+    "all_twelve_build_plus_first_samples_slower_for_index": true,
+    "all_twelve_reused_batches_faster_for_index": true,
+    "native_calls_per_twelve_query_batch": {
+      "scan": 132,
+      "index": 31
+    },
+    "production_index_selected": false
+  },
+  "benchmark_reference_calls_including_warmup_allocations_calibration": 3768,
+  "hardware": {
+    "system": "Linux",
+    "kernel_release": "7.0.0-43-generic",
+    "architecture": "x86_64",
+    "cpu_model": "Intel(R) Xeon(R) CPU E5-2630 v4 @ 2.20GHz",
+    "logical_cpus": 20,
+    "physical_memory_bytes": 64978440192,
+    "hostname_recorded": false,
+    "shared_workstation": true,
+    "cpu_frequency_and_other_jobs_uncontrolled": true
+  },
+  "identities_verified": {
+    "wheel_payloads": 214,
+    "runtime_bodies": 159,
+    "provider_python_files": 4594,
+    "native": {
+      "bytes": 101190496,
+      "sha256": "5715bda28be19820e96c2b81e4734bf75e1a9f05dd660d9c7e2817bc6bcd79d3"
+    },
+    "case_files": 67
+  },
+  "molecular_observation_scope": "38 focused controls per context observe zero; benchmark regions deliberately unprofiled.",
+  "limits": [
+    "Tiny analytical proposal-stage sample, not biological or production-index qualification.",
+    "First query uses new strategy in warmed process; no process-startup or OS-cold claim.",
+    "Separate traced Python allocations exclude preloaded raw bytes and do not measure complete native memory.",
+    "Persisted-index size remains null; source snapshot bytes are distinct.",
+    "Three samples per stratum and uncontrolled shared-host frequency/load do not establish general scaling or crossover.",
+    "Focused tests observe zero molecular operations; profiling deliberately absent in measured regions.",
+    "Full current-head/platform/public/release gates remain9/23-owned;148/165stopped."
+  ],
+  "full_evidence": {
+    "path": "retrieval_cost_20261110_full.json.gz",
+    "compressed_bytes": 885397,
+    "compressed_sha256": "4931d886ea0ccc83f6be44fe746aaa34f70da288a9e98d97c8f5f699b8764c2e",
+    "uncompressed_bytes": 9218428,
+    "uncompressed_sha256": "9aad5136a8d3053a0d5866ba69715255687a78510f0ed6780c5f61a7dc78228d"
+  },
+  "local_receiving_evidence": {
+    "path": "retrieval_cost_20261110_receiving.json.gz",
+    "compressed_bytes": 2110,
+    "compressed_sha256": "a9e95df1a6d870fef8d30edb04cab8ad12543bf333231a4ff418f19c5596915a",
+    "uncompressed_bytes": 4906,
+    "uncompressed_sha256": "a8b370f6e8f9b4fdefa2aaedf12e50afb669408abb45b7c5cdef053d0120a6e7"
+  },
+  "local_receiving": {
+    "checks": 7,
+    "strict_docs_exit": 0,
+    "local_links": 460,
+    "rendered_navigation": true,
+    "reviewed_original_public_payloads": 69,
+    "prior_checkpoint_bytes_preserved_verbatim": 29785
+  }
+}

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (123)
+### Resolved (124)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -16,6 +16,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`browse_saved_sources.md`](browse_saved_sources.md) — [#170](https://github.com/uibcdf/pharmacophoremt/issues/170) — Browse exact original source labels and declared work through the saved reader. *(resolved, measured)*
 - [`cached_generation_profile.md`](cached_generation_profile.md) — [#98](https://github.com/uibcdf/pharmacophoremt/issues/98) — Profile fixed-work cached generation and hand generic costs to their owners. *(resolved, measured)*
 - [`cached_generation_scaling_baseline.md`](cached_generation_scaling_baseline.md) — [#97](https://github.com/uibcdf/pharmacophoremt/issues/97) — Measure cached receptor-generation scaling with bounded shared resources. *(resolved, measured)*
+- [`calibrate_retrieval_costs.md`](calibrate_retrieval_costs.md) — [#184](https://github.com/uibcdf/pharmacophoremt/issues/184) — Declare and calibrate equivalent finite native retrieval cost workloads. *(resolved, measured)*
 - [`carbonyl_acceptor_receiving_execution.md`](carbonyl_acceptor_receiving_execution.md) — [#93](https://github.com/uibcdf/pharmacophoremt/issues/93) — Execute the frozen experimental carbonyl acceptor receiving matrix. *(resolved, measured)*
 - [`carbonyl_acceptor_receiving_plan.md`](carbonyl_acceptor_receiving_plan.md) — [#92](https://github.com/uibcdf/pharmacophoremt/issues/92) — Freeze bounded experimental carbonyl acceptor receiving before evaluation. *(resolved, inspected)*
 - [`catalog_diagnostic_rendering.md`](catalog_diagnostic_rendering.md) — [#2](https://github.com/uibcdf/pharmacophoremt/issues/2) — Restore authored SMonitor catalog messages for PharmacophoreMT diagnostics. *(resolved, measured)*
