@@ -1,0 +1,39 @@
+{
+  "schema": "pharmacophoremt.pmapper-review-plan@1",
+  "issue": 174,
+  "declared_at_UTC": "2026-11-10T00:24:04.503393+00:00",
+  "parent_source": "2aea8eee00e86fe4d4875099f536b014ae841ffd",
+  "selected_upstream": "2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd",
+  "question": "Study source-defined hash/bin/chirality/matching/cache and future screening asset implications, separate from third-party execution.",
+  "scope": "Capture only selected official source files with exact Git blob/sha256 and bytes; retain raw third-party source locally. No third-party code import, install/build, molecular input, scientific comparison, runtime/API/dependency or index change.",
+  "resources": {
+    "affinity": [
+      19
+    ],
+    "threads": 1,
+    "nice": 19,
+    "IO": "idle",
+    "DATA_bytes": 536870912,
+    "AS_readonly": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "host_reserve_fraction": 0.2,
+    "capacity_not_reserved": true,
+    "aggregate_cgroup": false,
+    "memory": {
+      "MemTotal": 64978440192,
+      "MemAvailable": 58774777856,
+      "SwapTotal": 8589930496,
+      "SwapFree": 7895814144
+    },
+    "PSI": "some avg10=0.00 avg60=0.00 avg300=0.00 total=1230792\nfull avg10=0.00 avg60=0.00 avg300=0.00 total=1199231\n",
+    "load": [
+      7.05859375,
+      5.98046875,
+      4.37158203125
+    ],
+    "SLURM_JOB_ID": null,
+    "scheduler": "Slurm clients present/no allocation. Same-session sandbox controller reads were refused; only small direct serial review/docs/checks, no new manager/native operation."
+  },
+  "boundary": "174source review only; later execution requires distinct prospective175declaration after admission. Existing148/165stopped; MolSysMT624collections and human/public/platform gates remain separate. External issue publication requires explicit owner permission.",
+  "retention_review": "2026-11-24"
+}

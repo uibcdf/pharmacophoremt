@@ -1,6 +1,6 @@
 # Pharmacophore-tool study registry
 
-Maintained 2026-11-09; accountable owners: PharmacophoreMT maintainers LMMV/dprada.
+Maintained 2026-11-10; accountable owners: PharmacophoreMT maintainers LMMV/dprada.
 The maintainer requests this separate registry for tools to study, compare against
 and learn from. It covers scientific methods, workflows, public APIs, performance
 engineering and usability. It complements the chemical-library registry.
@@ -83,6 +83,20 @@ Historical documentation and current product descriptions remain distinguished.
 | Align-it / Pharao family | [Study, lessons and questions](https://github.com/uibcdf/pharmacophoremt/discussions/137) |
 | BIOVIA Discovery Studio / Catalyst | [Study, lessons and questions](https://github.com/uibcdf/pharmacophoremt/discussions/138) |
 | MOE | [Study, lessons and questions](https://github.com/uibcdf/pharmacophoremt/discussions/139) |
+
+## Additional source-pinned tool — 2026-11-10
+
+[pmapper](https://github.com/uibcdf/pharmacophoremt/discussions/176) is an
+additional eleventh family, distinct from ChemAxon PMapper. The original ten
+records/history remain. The [pinned source study](pmapper_signature_review.md)
+under#174 verifies ten1.1.3source files at2f77e648 and distinguishes binned
+graph/signature matching, first-result mappings, cache lifetime, fingerprint
+compression/RNG and lossy persistence from PHMT's continuous geometry question.
+This is documentary/source evidence only; [#175](https://github.com/uibcdf/pharmacophoremt/issues/175)
+separately owns prospective analytical controls, not a dependency/index decision.
+The [publication receipt](evidence/pmapper_record_20261110.json) verifies a fresh
+API readback of the new canonical record and index append, preserving its prior
+body and the ten other threads. No competitor code is executed by this study.
 
 ## Useful comparisons and product criteria
 

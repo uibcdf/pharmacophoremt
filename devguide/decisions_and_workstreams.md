@@ -107,6 +107,13 @@ SDK-checker dependency-admission failure is preserved; only failed installed
 receiving repeats using the existing QA route. MolSysSuite#176 receives the
 nonblocking tool improvement. Full supported/biological/scale gates remain open.
 
+2026-11-10: [#174 pmapper review](pmapper_signature_review.md) verifies ten
+original1.1.3source files at2f77e648 and adds canonical Discussion176with an
+independent exact record/index readback. Binned graph/hash matching, first result,
+chirality, mutable cache and lossy persistence are separate from PHMT physical
+geometry and original source identity. No tool execution/adoption occurs here;
+#175declares a separately frozen analytical experiment before import.
+
 2026-11-10: [#173 reader distribution identity](reader_distribution_version.md)
 adds lazy ledger-free `--version`, with139selected source cases passing. Only
 explicit version requests read metadata; scientific imports, existing API/output

@@ -1,0 +1,32 @@
+{
+  "schema": "pharmacophoremt.pmapper-record-publication@1",
+  "recorded_at_UTC": "2026-11-10T00:31:49.962103+00:00",
+  "record": {
+    "id": "D_kwDOP5ch7M4Aq-_5",
+    "number": 176,
+    "url": "https://github.com/uibcdf/pharmacophoremt/discussions/176",
+    "category": {
+      "id": "DIC_kwDOP5ch7M4DKjnD"
+    }
+  },
+  "record_body": {
+    "bytes": 3714,
+    "sha256": "d8925db62b8348b2282be7c4b880f08d691f62c153315fccf68a8f3f031204ce"
+  },
+  "index": {
+    "number": 129,
+    "id": "D_kwDOP5ch7M4Aq5f5",
+    "body": {
+      "bytes": 6632,
+      "sha256": "c9c0a63ef6f5426d64bc4bc400ba8b1b2a8f25e8ee2e1b0d461b8191f68ee3f9"
+    },
+    "original_body_prefix_preserved": true
+  },
+  "independent_API_readback_exact": true,
+  "category": "Pharmacophore tools",
+  "other_thread_count_preserved": 10,
+  "source_only": true,
+  "execution_state": "Not executed; separate prospective175controls required.",
+  "external_publication": false,
+  "resource_scope": "Bounded direct read/write administrative API calls only; no scientific/manager/native work."
+}

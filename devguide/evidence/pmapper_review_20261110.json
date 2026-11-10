@@ -1,0 +1,206 @@
+{
+  "schema": "pharmacophoremt.pmapper-source-review@1",
+  "issue": 174,
+  "recorded_at_UTC": "2026-11-10T00:33:07.386794+00:00",
+  "source_repository": "DrrDom/pmapper",
+  "source_commit": "2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd",
+  "source_version": "1.1.3",
+  "selected_source_files": {
+    "setup.py": {
+      "bytes": 1287,
+      "sha256": "30a90e0ee214152c42f75f260218e47dcc4fba984b26b1e9897c3a5cf712d9b5",
+      "git_blob_sha": "772a28e3e7bbe2c4036a5038ca642a1b5360a24d",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/setup.py"
+    },
+    "pmapper/pharmacophore.py": {
+      "bytes": 44675,
+      "sha256": "08f1830126aac2851370a9989c377c5c42b6ec10ef095d68b1530bdafa266199",
+      "git_blob_sha": "03c265b459206ebcd36d23b96bf2503b13febd50",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/pharmacophore.py"
+    },
+    "pmapper/__init__.py": {
+      "bytes": 379,
+      "sha256": "e809792fe2879028afe1dbb775a513fb3c4154051011eac775c42c2bb3d7c7af",
+      "git_blob_sha": "b1399c75a5d7eff0c6ab5c6d10ad53b5722a2154",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/__init__.py"
+    },
+    "LICENSE.txt": {
+      "bytes": 1516,
+      "sha256": "279bbc6e406deed06e09f763a121fb1100499ccbceea0cb089785dcf81393ccb",
+      "git_blob_sha": "1757c96f3eb3f626e9e8512e391d2d514619a820",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/LICENSE.txt"
+    },
+    "pmapper/utils.py": {
+      "bytes": 2838,
+      "sha256": "a8dfb58d9eb8da7751558cf86d7aa3b467ff02f3916eae67091b464d0640aadb",
+      "git_blob_sha": "91e6f1f4b8c4e8ea09df9a1a1781049a21aeb2c1",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/utils.py"
+    },
+    "README.md": {
+      "bytes": 11600,
+      "sha256": "966872df3891e0b3a62b2571f76634763c72b55df039831b549df43a5423c59a",
+      "git_blob_sha": "9db037a8960786668fa9cf53461c013c27482170",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/README.md"
+    },
+    "pmapper/customize.py": {
+      "bytes": 1958,
+      "sha256": "abc8843ea1970578c24e9dc10de489bb682cbd4ea0320f0595f5026e4512511d",
+      "git_blob_sha": "371da268a58698a059b77e9428e5da563445d468",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/customize.py"
+    },
+    "conda_env.yml": {
+      "bytes": 3081,
+      "sha256": "5366df3e0bc0ee661c549bffaf8dcbb04c3320f6d93eeba3dd21723d698b83ba",
+      "git_blob_sha": "58990ad54587f21c1904af5d598ec6f0dd93971f",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/conda_env.yml"
+    },
+    "setup.cfg": {
+      "bytes": 39,
+      "sha256": "71f81489f9dcac4958232c39fc4b0e05d84b407010c0d39cd28b852294e4fd88",
+      "git_blob_sha": "224a77957f5db48dfa25c8bb4a35f535202da203",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/setup.cfg"
+    },
+    "pmapper/smarts_features.txt": {
+      "bytes": 2130,
+      "sha256": "a3d1cb93d62dcbb8a68ef79972f4275d2ab1423880a0e1e0058e3e78291b894e",
+      "git_blob_sha": "5c43da322b51008fb4470e9a783df739be5593fb",
+      "url": "https://github.com/DrrDom/pmapper/blob/2f77e6482f6bd9bd7cc1f62b5d569ffdb8e8aafd/pmapper/smarts_features.txt"
+    }
+  },
+  "selected_bytes": 69503,
+  "all_original_git_blobs_verified": true,
+  "initial_capture_refusal": {
+    "file": "setup.cfg",
+    "reason": "Initial private text-to-patch capture assumed final newline and failed its original Git blob check. No upstream code executed.",
+    "disposition": "Restore original decoded bytes, including missing final newline, and verify all selected Git blobs."
+  },
+  "documentary_scope": {
+    "hosted_documentation": "0.2API, not interchangeable with selected1.1.3return shape",
+    "publication": "2018 DOI10.3390/molecules23123094; PubMed links2019correction; bibliography/context only, no cohort reproduction",
+    "conclusions": "Versioned binned graph/subset hash/chirality, first mapping, cache mutation and lossy persistence meanings in owning review; six concrete PHMT questions."
+  },
+  "canonical_record": {
+    "schema": "pharmacophoremt.pmapper-record-publication@1",
+    "recorded_at_UTC": "2026-11-10T00:31:49.962103+00:00",
+    "record": {
+      "id": "D_kwDOP5ch7M4Aq-_5",
+      "number": 176,
+      "url": "https://github.com/uibcdf/pharmacophoremt/discussions/176",
+      "category": {
+        "id": "DIC_kwDOP5ch7M4DKjnD"
+      }
+    },
+    "record_body": {
+      "bytes": 3714,
+      "sha256": "d8925db62b8348b2282be7c4b880f08d691f62c153315fccf68a8f3f031204ce"
+    },
+    "index": {
+      "number": 129,
+      "id": "D_kwDOP5ch7M4Aq5f5",
+      "body": {
+        "bytes": 6632,
+        "sha256": "c9c0a63ef6f5426d64bc4bc400ba8b1b2a8f25e8ee2e1b0d461b8191f68ee3f9"
+      },
+      "original_body_prefix_preserved": true
+    },
+    "independent_API_readback_exact": true,
+    "category": "Pharmacophore tools",
+    "other_thread_count_preserved": 10,
+    "source_only": true,
+    "execution_state": "Not executed; separate prospective175controls required.",
+    "external_publication": false,
+    "resource_scope": "Bounded direct read/write administrative API calls only; no scientific/manager/native work."
+  },
+  "local_checks": [
+    {
+      "name": "ruff",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "output": "450 files already formatted\n"
+    },
+    {
+      "name": "index",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.079s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "args": [
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.861s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "args": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "local_links": 292,
+  "tool_code_executed": false,
+  "runtime_dependency_or_molecular_provider_changed": false,
+  "external_issue_published": false,
+  "next": "Separate175prospective point/control/resource/source admission before import.148/165stopped.",
+  "raw_third_party_sources": "Retained locally only, not committed",
+  "retention": {
+    "capsule": "build/phmt-pmapper-review-20261110-f813p5sk",
+    "review": "2026-11-24"
+  }
+}

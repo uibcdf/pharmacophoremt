@@ -193,3 +193,13 @@ budget escalation or shared-prefix/provider changes. Source diagnostics must
 observe actual atom/cluster/indexed-feature/correspondence records; that observer
 remains unimplemented. Receive a distinct managed build context before another
 attempt, while independent PHMT/library/provider work continues.
+
+## pmapper source follow-up — 2026-11-10
+
+The [source review](../pmapper_signature_review.md) and canonical
+[record176](https://github.com/uibcdf/pharmacophoremt/discussions/176) add an
+eleventh tool family, with ten original Git-blob-verified1.1.3files. Binning,
+first-match/chirality/cache/identity and RNG questions are versioned and separate
+from physical tolerance, tool adoption or a timing result. #174resolves this
+source study; #175owns distinct prospective analytical execution. Original ten
+records and index body remain intact with independent publication readback.

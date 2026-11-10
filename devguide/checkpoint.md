@@ -9,6 +9,16 @@ and this page. Detailed earlier receiving/pause statements are preserved in
 
 ## Last received increment and next action
 
+[#174 pinned pmapper study](pmapper_signature_review.md) adds an eleventh tool
+family to the comparative registry. Ten original source files at2f77e648/1.1.3
+verify their Git blob/byte/hash identities. The review separates binned matching,
+chirality/first-result mappings, mutable cache lifetime and lossy persistence
+from PHMT geometry/source identity. [Canonical record176](https://github.com/uibcdf/pharmacophoremt/discussions/176)
+and index append have independent exact API readback; all earlier text/threads
+remain. No third-party code is executed or adopted by this study. #175declares
+separate bounded analytical controls next; full source af408e7 and the existing
+reader/artifact/owner limitations below remain unchanged.
+
 [#173 reader distribution identity](reader_distribution_version.md) adds lazy
 `--version` without a saved file, score criterion or scientific import. All139
 selected source cases pass (5new/134existing); thirteen ordinary output-byte
@@ -159,12 +169,13 @@ its original 2505-case/eight-cell source42451906584, policy42451909669 and
 publication42451913187 evidence. The later af408e7 acceptance above preserves
 all earlier source/run identities; it does not retroactively qualify later heads.
 
-**Next concrete action:** receive actual novice/expert sessions using the #172
-kit under#108, recording all attempted tasks, assistance and literal-key error
-recovery. Select subsequent source operations only against an admitted provider
-contract; the [owner-thread observation](evidence/provider_blockers_observation_20261110.json)
-still has no new delivered collection or distinct managed acquisition/compiler
-strategy. Preserve MolSysMT#624 ownership and stopped#148/#165profiles. Later-head
+**Next concrete action:** freeze #175exact point cases/oracles and admit a
+bounded pmapper source/PHMT comparison before third-party import: same-bin versus
+physical tolerance, cross-bin feasible placement, exact motion/permutation,
+reflection, duplicate IDs and fresh/warm mutation controls. Keep stage semantics
+and provider/source identities explicit. Do not run timing or retry#148/#165.
+Actual novice/expert sessions remain pending under#108using the #172kit.
+MolSysMT#624 ownership and stopped#148/#165profiles. Later-head
 full-source and complete public/platform gates stay under#9/#23; no new frozen
 run, package or release is requested by this closeout.
 MolSysMT#624 still awaits an owner collection/update API disposition; no PHMT

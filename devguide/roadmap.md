@@ -31,6 +31,13 @@ seven isolated development phases. Molecular-provider work retains its owner;
 an unresolved provider feature does not stop independent PHMT contracts, examples,
 user testing or result interpretation.
 
+The [#174 pmapper source review](pmapper_signature_review.md) advances the
+comparative groundwork for milestones5/6: exact1.1.3source, binned/signature/
+chirality/first-result semantics, cache lifetime and artifact-identity questions.
+Its canonical eleventh tool record/index append is independently received.
+No tool code is executed/adopted by this source study. #175separately owns
+bounded analytical controls; no fingerprint/index or performance promise follows.
+
 The [#173 reader version](reader_distribution_version.md) improves installed
 context discovery through lazy ledger-free `--version`. All139selected source
 cases, thirteen ordinary byte controls, strict docs and25distribution/local
