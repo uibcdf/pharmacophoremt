@@ -14,6 +14,32 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Corrected full supported source qualified — 2026-11-11 UTC
+
+[Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts frozen c5e952c/43109007084/attempt1 on all eight Linux/macOS arm64 ×
+Python3.11–3.14 cells at3420passes/0skips/48warnings/127qualified XML paths each.
+Reporting3/18/9/161 and policy/publication controls pass required native steps.
+Bounded #192/#197 are resolved/archived; the old source is terminal failure,
+with original receipts unchanged. Later documentary heads are not relabelled.
+Full supported installed/public and dependency closure remain open; no badge,
+version/tag, artifact or publisher change follows from source acceptance.
+
+## Five corrected-source cells received — 2026-11-11 UTC
+
+[Receiving](../evidence/source_060_recovery_partial_20261111.json) qualifies
+c5e952c/43109007084/attempt1 on Linux3.11/3.13/3.14 and macOS3.13/3.14 at
+3420passes/0skips/48warnings/127qualified XML paths each; reporting3/18/9/161
+and both separate control workflows succeed. At23:01UTC native seven science
+jobs succeed and macOS3.11 runs; the two additional3.12 successes remain outside
+that receipt. No full corrected source or #192/#197 closure follows yet. The
+old source is terminal failure, with all original receipts preserved.
+
+The [updated scope review](../release_0_6_0_scope_review.md) receives additive
+signature/static checks and strict source/reused-owned documentation. All183
+runtime bodies remain equal to7192041; no new wheel is built. Full supported
+installed/public and dependency closure remain separate. No tag/publication.
+
 ## Corrected source and separate installed gates — 2026-11-11 UTC
 
 Original4766946 cannot be accepted: its required macOS/Python3.11 job fails

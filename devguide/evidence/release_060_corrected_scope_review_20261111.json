@@ -1,0 +1,214 @@
+{
+  "schema": "pharmacophoremt.release-060.corrected-scope-review@1",
+  "base_tag": "0.5.0",
+  "base": "2bff5dcf454bc5230f473237a49939215a60aab2",
+  "reviewed_source": "c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb",
+  "prior_static_review": "release_060_scope_review_20261111.json",
+  "commit_count": 17,
+  "runtime_changes": [
+    [
+      "M",
+      "pharmacophoremt/_ackredit.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/_private/arg_digestion/feature_capture.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/_private/arg_digestion/feature_reuse.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/_private/feature_capture.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/_private/feature_snapshot_v1.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/_private/native_feature_payload.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt/modeler/__init__.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/modeler/feature_capture.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt/modeler/features.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt/screening/__init__.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt/screening/feature_reuse.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt_features/__init__.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt_features/_api.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_depdigest.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt_features/_diagnostics.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt_features/_digestion.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_native_archive_schema.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_payload.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_payload_digestion.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_payload_schema.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_record.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_record_digestion.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt_features/_schema.py"
+    ],
+    [
+      "M",
+      "pharmacophoremt_features/_storage.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_writer.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_writer_digestion.py"
+    ],
+    [
+      "A",
+      "pharmacophoremt_features/_writer_schema.py"
+    ]
+  ],
+  "removed_nonprivate_declarations": [],
+  "changed_existing_declared_signatures": [
+    {
+      "path": "pharmacophoremt/modeler/features.py",
+      "declaration": "get_features",
+      "before": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES",
+      "after": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, skip_digestion=False",
+      "change": "Only optional keyword-only skip_digestion=False appended; every prior argument/default/annotation retained."
+    }
+  ],
+  "prior_reviewed_source": "f722b45c130a73b8ded6a73e5120b4bda32787ef",
+  "additive_signature_changes_since_prior_review": [
+    {
+      "path": "pharmacophoremt/modeler/features.py",
+      "declaration": "get_features",
+      "before": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES",
+      "after": "molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=CLASSICAL_FEATURES, skip_digestion=False"
+    },
+    {
+      "path": "pharmacophoremt_features/_payload.py",
+      "declaration": "FeatureInventoryPayload.from_inventory",
+      "before": "cls, inventory, evaluated_families, *, parent, extraction_producer, payload_profile",
+      "after": "cls, inventory, evaluated_families, *, parent, extraction_producer, payload_profile, skip_digestion=False"
+    }
+  ],
+  "new_nonprivate_declarations": [
+    "pharmacophoremt/_private/feature_capture.py:binding",
+    "pharmacophoremt/_private/feature_capture.py:families",
+    "pharmacophoremt/_private/feature_capture.py:require",
+    "pharmacophoremt/_private/feature_capture.py:validate",
+    "pharmacophoremt/_private/feature_snapshot_v1.py:decode_snapshot",
+    "pharmacophoremt/_private/native_feature_payload.py:decode",
+    "pharmacophoremt/_private/native_feature_payload.py:encode",
+    "pharmacophoremt/modeler/feature_capture.py:capture_features",
+    "pharmacophoremt/screening/feature_reuse.py:reuse_feature_inventories",
+    "pharmacophoremt_features/_api.py:FeatureAssetView.payload_info",
+    "pharmacophoremt_features/_native_archive_schema.py:generation",
+    "pharmacophoremt_features/_native_archive_schema.py:require",
+    "pharmacophoremt_features/_native_archive_schema.py:validate_record",
+    "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.describe",
+    "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_bytes",
+    "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_capture",
+    "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.from_inventory",
+    "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.to_bytes",
+    "pharmacophoremt_features/_payload.py:FeatureInventoryPayload.to_inventory",
+    "pharmacophoremt_features/_payload_digestion.py:config",
+    "pharmacophoremt_features/_payload_schema.py:declared_families",
+    "pharmacophoremt_features/_payload_schema.py:document",
+    "pharmacophoremt_features/_payload_schema.py:inventory_layout",
+    "pharmacophoremt_features/_payload_schema.py:layout",
+    "pharmacophoremt_features/_payload_schema.py:provenance",
+    "pharmacophoremt_features/_payload_schema.py:require",
+    "pharmacophoremt_features/_payload_schema.py:require_profile",
+    "pharmacophoremt_features/_record.py:FeatureAssetRecord.describe",
+    "pharmacophoremt_features/_record.py:FeatureAssetRecord.from_payload",
+    "pharmacophoremt_features/_record.py:FeatureAssetRecord.from_view",
+    "pharmacophoremt_features/_record.py:FeatureAssetRecord.incomplete",
+    "pharmacophoremt_features/_record.py:FeatureAssetRecord.payload_bytes",
+    "pharmacophoremt_features/_record_digestion.py:config",
+    "pharmacophoremt_features/_schema.py:decode_originals",
+    "pharmacophoremt_features/_schema.py:marker",
+    "pharmacophoremt_features/_storage.py:layout",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.attempts",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.close",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.create",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.current",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.inspect_recovery",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.open",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.publish",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.retry_publication",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.stage",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.stage_records",
+    "pharmacophoremt_features/_writer.py:FeatureAssetStore.view",
+    "pharmacophoremt_features/_writer_digestion.py:config",
+    "pharmacophoremt_features/_writer_schema.py:attempt_id",
+    "pharmacophoremt_features/_writer_schema.py:attempt_schema",
+    "pharmacophoremt_features/_writer_schema.py:descriptor",
+    "pharmacophoremt_features/_writer_schema.py:limits",
+    "pharmacophoremt_features/_writer_schema.py:validate_native"
+  ],
+  "get_features_scientific_body_AST_unchanged": true,
+  "unchanged_scientific_owners": {
+    "pharmacophoremt/screening/pose_evaluation.py": "b88cc31da9136843bc60954d7e457fe21ff566f797ef274cfcd0239ab8de6f9b",
+    "pharmacophoremt/validation/metrics.py": "07c65ba2a881d6437f1389c407d996067d40f5662c4aa35125089e72d6a41d50"
+  },
+  "runtime_bodies_equal_to_existing_owned7192041": 183,
+  "observed_owned_version": "0.5.0+15.g7192041",
+  "scope_limit": "Static nonprivate implementation declarations are not a public API count or semantic compatibility proof. Existing535-case source/owned receiving remains separate; no new scientific test execution is performed here.",
+  "source_checkpoint_accepted": false,
+  "version_tag_or_publication_selected": false,
+  "release_notes_review": "Correct the unreleased no-signature-change wording to additive optional expert controls, and include the received prepared-library feature recipe and single-source CI acquisition. Historical0.5.0 notes remain byte-for-byte unchanged.",
+  "first_review_attempt": "The first controller wrongly expected from_inventory to be an existing0.5.0 declaration. That class/module is new since0.5.0; the corrected review keeps the one changed existing0.5.0 signature and separately verifies both additive controls against the prior f722b45 scope endpoint. Original failed controller/log are retained; no runtime or assertion semantics are relaxed.",
+  "review_script": {
+    "sha256": "8976eec99bd763b76a055dbf9c0aecec282426a814e40482170f19c7f9cc4714",
+    "text": "\"\"\"Extend the original static scope review to the corrected source checkpoint.\"\"\"\nimport ast\nimport copy\nimport hashlib\nimport json\nimport subprocess\nfrom pathlib import Path\n\nCASE = Path(__file__).resolve().parents[1]\nROOT = CASE.parents[1]\nBASE = \"2bff5dcf454bc5230f473237a49939215a60aab2\"\nC = json.loads((CASE / \"plan.json\").read_text())[\"candidate\"]\n\ndef git(*args):\n    return subprocess.check_output([\"git\", *args], cwd=ROOT, text=True)\n\ndef declarations(text):\n    rows = {}\n    def visit(body, prefix=\"\"):\n        for node in body:\n            if isinstance(node, (ast.FunctionDef, ast.AsyncFunctionDef)):\n                if not node.name.startswith(\"_\"):\n                    rows[prefix + node.name] = node\n            elif isinstance(node, ast.ClassDef):\n                visit(node.body, prefix + node.name + \".\")\n    visit(ast.parse(text).body)\n    return rows\n\nchanges = [row.split(\"\\t\") for row in git(\"diff\", \"--name-status\", BASE, C).splitlines()]\nruntime = [row for row in changes if row[-1].endswith(\".py\") and row[-1].split(\"/\")[0] in (\"pharmacophoremt\", \"pharmacophoremt_features\", \"pharmacophoremt_results\")]\nremoved, signatures, added = [], [], []\nfor status, path in runtime:\n    old = {} if status == \"A\" else declarations(git(\"show\", BASE + \":\" + path))\n    new = {} if status == \"D\" else declarations(git(\"show\", C + \":\" + path))\n    removed.extend(path + \":\" + name for name in old.keys() - new.keys())\n    added.extend(path + \":\" + name for name in new.keys() - old.keys())\n    for name in old.keys() & new.keys():\n        if ast.dump(old[name].args) == ast.dump(new[name].args):\n            continue\n        expected = copy.deepcopy(old[name].args)\n        expected.kwonlyargs.append(ast.arg(arg=\"skip_digestion\"))\n        expected.kw_defaults.append(ast.Constant(value=False))\n        assert ast.dump(expected) == ast.dump(new[name].args), (path, name)\n        signatures.append({\"path\": path, \"declaration\": name, \"before\": ast.unparse(old[name].args), \"after\": ast.unparse(new[name].args), \"change\": \"Only optional keyword-only skip_digestion=False appended; every prior argument/default/annotation retained.\"})\nassert not removed\nassert {(r[\"path\"], r[\"declaration\"]) for r in signatures} == {\n    (\"pharmacophoremt/modeler/features.py\", \"get_features\"),\n}\nprior = json.loads((ROOT / \"devguide/evidence/release_060_scope_review_20261111.json\").read_text())[\"reviewed_source\"]\nlater_signatures = []\nfor path, name in ((\"pharmacophoremt/modeler/features.py\", \"get_features\"), (\"pharmacophoremt_features/_payload.py\", \"FeatureInventoryPayload.from_inventory\")):\n    old = declarations(git(\"show\", prior + \":\" + path))[name]\n    new = declarations(git(\"show\", C + \":\" + path))[name]\n    expected = copy.deepcopy(old.args)\n    expected.kwonlyargs.append(ast.arg(arg=\"skip_digestion\"))\n    expected.kw_defaults.append(ast.Constant(value=False))\n    assert ast.dump(expected) == ast.dump(new.args), (path, name)\n    later_signatures.append({\"path\": path, \"declaration\": name, \"before\": ast.unparse(old.args), \"after\": ast.unparse(new.args)})\nfeatures = \"pharmacophoremt/modeler/features.py\"\nbefore = declarations(git(\"show\", BASE + \":\" + features))[\"get_features\"]\nafter = declarations(git(\"show\", C + \":\" + features))[\"get_features\"]\ndef scientific_body(node):\n    body = node.body\n    if isinstance(body[0], ast.Expr) and isinstance(body[0].value, ast.Constant) and isinstance(body[0].value.value, str):\n        body = body[1:]\n    return [ast.dump(statement) for statement in body]\nassert scientific_body(before) == scientific_body(after)\nunchanged = {}\nfor path in (\"pharmacophoremt/screening/pose_evaluation.py\", \"pharmacophoremt/validation/metrics.py\"):\n    before = git(\"show\", BASE + \":\" + path).encode()\n    after = git(\"show\", C + \":\" + path).encode()\n    assert before == after\n    unchanged[path] = hashlib.sha256(after).hexdigest()\nbuild = json.loads((CASE / \"owned_build.json\").read_text())\nassert build[\"source_commit\"] == \"7192041d85c7ca9d724028329ec8f18a4bdc9853\"\nfor path, expected in build[\"runtime_files_equal\"].items():\n    assert hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == expected[\"sha256\"]\nrecord = {\"schema\": \"pharmacophoremt.release-060.corrected-scope-review@1\",\n    \"base_tag\": \"0.5.0\", \"base\": BASE, \"reviewed_source\": C,\n    \"prior_static_review\": \"release_060_scope_review_20261111.json\",\n    \"commit_count\": int(git(\"rev-list\", \"--count\", BASE + \"..\" + C)),\n    \"runtime_changes\": runtime, \"removed_nonprivate_declarations\": sorted(removed),\n    \"changed_existing_declared_signatures\": sorted(signatures, key=lambda r: r[\"path\"]),\n    \"prior_reviewed_source\": prior,\n    \"additive_signature_changes_since_prior_review\": later_signatures,\n    \"new_nonprivate_declarations\": sorted(added), \"get_features_scientific_body_AST_unchanged\": True,\n    \"unchanged_scientific_owners\": unchanged,\n    \"runtime_bodies_equal_to_existing_owned7192041\": len(build[\"runtime_files_equal\"]),\n    \"observed_owned_version\": build[\"version\"],\n    \"scope_limit\": \"Static nonprivate implementation declarations are not a public API count or semantic compatibility proof. Existing535-case source/owned receiving remains separate; no new scientific test execution is performed here.\",\n    \"source_checkpoint_accepted\": False, \"version_tag_or_publication_selected\": False,\n    \"release_notes_review\": \"Correct the unreleased no-signature-change wording to additive optional expert controls, and include the received prepared-library feature recipe and single-source CI acquisition. Historical0.5.0 notes remain byte-for-byte unchanged.\",\n    \"first_review_attempt\": \"The first controller wrongly expected from_inventory to be an existing0.5.0 declaration. That class/module is new since0.5.0; the corrected review keeps the one changed existing0.5.0 signature and separately verifies both additive controls against the prior f722b45 scope endpoint. Original failed controller/log are retained; no runtime or assertion semantics are relaxed.\",\n    \"review_script\": {\"sha256\": hashlib.sha256(Path(__file__).read_bytes()).hexdigest(), \"text\": Path(__file__).read_text()}}\nwith (ROOT / \"devguide/evidence/release_060_corrected_scope_review_20261111.json\").open(\"x\") as output:\n    json.dump(record, output, indent=2)\n    output.write(\"\\n\")\nprint(json.dumps({\"source\": C, \"removed_nonprivate_declarations\": len(removed), \"additive_signature_changes\": len(signatures), \"new_nonprivate_declarations\": len(added), \"runtime_files_equal\": len(build[\"runtime_files_equal\"]), \"new_scientific_execution\": False}))\n"
+  }
+}

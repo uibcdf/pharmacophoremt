@@ -1,0 +1,255 @@
+{
+  "schema": "pharmacophoremt.source-060.recovery-resume-closeout@1",
+  "recorded_at_utc": "2026-11-11T23:06:50.774664+00:00",
+  "source": "c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb",
+  "receiving_base": "f6a3a85193ef11d13275638501b724780c87c46f",
+  "checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.304s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.893s\n\nOK\n"
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "strict_docs": {
+    "release-source": {
+      "mode": "source",
+      "code": 0,
+      "runtime_version": "0.5.0+7.g35559b3",
+      "public_puw": "0.28.1",
+      "native_origins_checked": 172,
+      "notebook_execution": "off"
+    },
+    "release-owned": {
+      "mode": "installed",
+      "code": 0,
+      "runtime_version": "0.5.0+15.g7192041",
+      "public_puw": "0.28.1",
+      "native_origins_checked": 172,
+      "notebook_execution": "off"
+    }
+  },
+  "release_notes_identity": {
+    "bytes": 20488,
+    "sha256": "b42587ff3755244355c692ccdb314bc022906f5dcdaac8f6fbe79cd050404bb6"
+  },
+  "historical050_release_notes_unchanged": true,
+  "all183_runtime_bodies_unchanged": true,
+  "source_checkpoint_accepted": false,
+  "five_scientific_cells_qualified": true,
+  "local_scientific_tests_executed": 0,
+  "markdown_local_targets": 462,
+  "original_pending_archive_entries_verified": 27,
+  "immutable050_source": "2bff5dcf454bc5230f473237a49939215a60aab2",
+  "static_review": {
+    "receipt": "release_060_corrected_scope_review_20261111.json",
+    "prior_scope_baseline_mistake_and_corrected_receiving_retained": true
+  },
+  "commands": [
+    {
+      "name": "observe-resumed-2256",
+      "exit_code": 0,
+      "seconds": 3.5635346230119467,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 22752,
+        "sha256": "25de76eaae92c39cbe516a247b94dbfe61d9d0fd8b03e10acadbbd8c750d875d"
+      },
+      "observed_own_group_RSS_peak_bytes": 82489344
+    },
+    {
+      "name": "capture-completed-a",
+      "exit_code": 0,
+      "seconds": 22.84993371402379,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 134431,
+        "sha256": "dbbca8d4a8a91e5179d1808b419bca232be85feecf3b8751120dbb36134aeab8"
+      },
+      "observed_own_group_RSS_peak_bytes": 109678592
+    },
+    {
+      "name": "capture-completed-b",
+      "exit_code": 0,
+      "seconds": 21.618876281019766,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 127349,
+        "sha256": "da02d7c37356f5934f916aac87c4a5173d008005c8dd3f5305db63764ce706d8"
+      },
+      "observed_own_group_RSS_peak_bytes": 108490752
+    },
+    {
+      "name": "receive-completed",
+      "exit_code": 0,
+      "seconds": 0.5099729729699902,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 4994,
+        "sha256": "e4bc92e0487c13215e5e0c694ebc25e1f34917cb4a73906100480ee6ed486fdc"
+      },
+      "observed_own_group_RSS_peak_bytes": 57696256
+    },
+    {
+      "name": "release-docs-source",
+      "exit_code": 0,
+      "seconds": 11.115083173033781,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 66334,
+        "sha256": "4bd870b3a1d4472ff6a430898c10afe6ce4a2511c0043fae810d67b0cd058b62"
+      },
+      "observed_own_group_RSS_peak_bytes": 311156736
+    },
+    {
+      "name": "release-docs-owned",
+      "exit_code": 0,
+      "seconds": 11.421391496958677,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 68201,
+        "sha256": "050e9eb3ab4ec97aefd5ff2dc5b30ef6fc3da2a4274b6f3d5a368ba7638c874d"
+      },
+      "observed_own_group_RSS_peak_bytes": 310951936
+    },
+    {
+      "name": "review-current-scope",
+      "exit_code": 1,
+      "seconds": 0.40788176900241524,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 4420,
+        "sha256": "2d2a8dcb0ca89dc49b7305e5be45818cc1bb8be918d599cb197d847b37f95464"
+      },
+      "observed_own_group_RSS_peak_bytes": 44949504
+    },
+    {
+      "name": "review-current-scope-corrected",
+      "exit_code": 0,
+      "seconds": 0.4078880170127377,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 4431,
+        "sha256": "8e657d50ae80d9ddd51e74a8b40d539f687059e7ebf7869f2aebbb8501dc6da3"
+      },
+      "observed_own_group_RSS_peak_bytes": 45219840
+    },
+    {
+      "name": "observe-after-docs",
+      "exit_code": 0,
+      "seconds": 3.870147575973533,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 24517,
+        "sha256": "207b58238ec18eb39a3a12551af36c9f695066a4e43f9078391380974b97a91e"
+      },
+      "observed_own_group_RSS_peak_bytes": 81870848
+    }
+  ],
+  "limitations": "Strict docs use existing owned7192041 runtime, not a new supported installed/public artifact. Existing optional-beartype diagnostics and stale source version metadata remain observed. Original failed source and all earlier receipts remain unchanged. No source gate accepted by this five-cell receipt, tag/version/publication, or new biological/human/scale claim.",
+  "temporary_resources": {
+    "capsule": "phmt-060-acquisition-recovery-20261111-v4ulowks",
+    "owners": "LMMV/dprada",
+    "review": "2026-11-25",
+    "raw_remote_logs_and_geometry": "Retained locally only; no prefix/sibling/unrelated-process mutation."
+  },
+  "full_evidence": {
+    "path": "source_060_recovery_resume_20261111.json.gz",
+    "compressed_bytes": 12207,
+    "compressed_sha256": "f5577b2cb7d5cfc74fc83280e167e78cdf7d22f82987cd7c6789046254704840",
+    "uncompressed_bytes": 48895,
+    "uncompressed_sha256": "1dcd15ebb7efe61d229d3f34384645479c94ebcc545a7a579a4d75453eef7507"
+  }
+}

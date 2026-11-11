@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (135)
+### Resolved (137)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -35,6 +35,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`document_source_inspection_journey.md`](document_source_inspection_journey.md) — [#167](https://github.com/uibcdf/pharmacophoremt/issues/167) — Compose source-specific counts, selected work and details in one public recipe. *(resolved, measured)*
 - [`documentation_project_identity.md`](documentation_project_identity.md) — [#4](https://github.com/uibcdf/pharmacophoremt/issues/4) — Remove inherited project identity from public PharmacophoreMT documentation. *(resolved, measured)*
 - [`documentation_reader_entry_points.md`](documentation_reader_entry_points.md) — [#61](https://github.com/uibcdf/pharmacophoremt/issues/61) — Build reader-oriented documentation entry points around delivered native workflows. *(resolved, measured)*
+- [`duplicate_ci_molsysmt_acquisition.md`](duplicate_ci_molsysmt_acquisition.md) — [#197](https://github.com/uibcdf/pharmacophoremt/issues/197) — Remove redundant MolSysMT VCS acquisition after the reviewed source install. *(resolved, measured)*
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
 - [`expand_typed_retrieval.md`](expand_typed_retrieval.md) — [#182](https://github.com/uibcdf/pharmacophoremt/issues/182) — Receive six-family native retrieval with full-query cardinality and numerical boundaries. *(resolved, measured)*
@@ -49,6 +50,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`installed_qualification_step_contract.md`](installed_qualification_step_contract.md) — [#54](https://github.com/uibcdf/pharmacophoremt/issues/54) — Align installed qualification evidence with the actual frozen provider workflow. *(resolved, measured)*
 - [`installed_receptor_study_support.md`](installed_receptor_study_support.md) — [#96](https://github.com/uibcdf/pharmacophoremt/issues/96) — Declare selected receptor-study helpers and frozen plans for installed tests. *(resolved, measured)*
 - [`installed_scientific_test_dependencies.md`](installed_scientific_test_dependencies.md) — [#55](https://github.com/uibcdf/pharmacophoremt/issues/55) — Declare public inputs needed by the complete installed scientific test selection. *(resolved, measured)*
+- [`interruption_process_isolation.md`](interruption_process_isolation.md) — [#192](https://github.com/uibcdf/pharmacophoremt/issues/192) — Qualify interruption guards without forking from a threaded test parent. *(resolved, measured)*
 - [`keep_source_matrix_cancellable.md`](keep_source_matrix_cancellable.md) — [#169](https://github.com/uibcdf/pharmacophoremt/issues/169) — Keep the scientific matrix stoppable while retaining skipped-needs recovery. *(resolved, measured)*
 - [`legacy_clique_consensus.md`](legacy_clique_consensus.md) — [#18](https://github.com/uibcdf/pharmacophoremt/issues/18) — Legacy distance partitioning and clique support disagree with the matching criterion. *(resolved, measured)*
 - [`legacy_merge_metadata_ownership.md`](legacy_merge_metadata_ownership.md) — [#77](https://github.com/uibcdf/pharmacophoremt/issues/77) — Resolve legacy merge metadata loss and explicit mutable-site ownership. *(resolved, measured)*

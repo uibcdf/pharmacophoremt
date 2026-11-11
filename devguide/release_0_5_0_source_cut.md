@@ -26,7 +26,7 @@ The [Linux 3.13 XML](evidence/release_050_ci_linux313_20261111_coverage.xml.gz)
 retains the timestamp-stripped printed report; it is not an independent runner-file
 checksum. Warnings remain recorded: Python 3.11 has 46 per cell; 3.12–3.14 have
 63, including 17 threaded-parent fork deprecations tracked under
-[#192](pending_proposals/interruption_process_isolation.md). No deadlock or
+[#192](archive/interruption_process_isolation.md). No deadlock or
 scientific failure occurred in the completed cells.
 
 A private tagged wheel receives canonical 0.5.0, 221 exact installed payloads,

@@ -1,9 +1,9 @@
 ---
 summary: Qualify interruption guards without forking from a threaded test parent.
 issue: uibcdf/pharmacophoremt#192
-status: active
+status: resolved
 opened: 2026-11-11
-closed:
+closed: 2026-11-11
 verification: measured
 area: [testing, execution]
 guard: tests/test_driver_checkpoints.py
@@ -96,3 +96,36 @@ verifies source43109007084/attempt1: eight science cells in progress, reporting
 success and both separate control workflows successful. This report stays active
 until actual terminal supported-minor/platform counts/warnings/coverage receiving;
 neither collection nor metadata success establishes interruption-test acceptance.
+
+## Five corrected-source cells qualified — 2026-11-11 UTC
+
+[Job-only receiving](../evidence/source_060_recovery_partial_20261111.json)
+verifies c5e952c/43109007084/attempt1 on Linux/Python3.11/3.13/3.14 and
+macOS/Python3.13/3.14:3420passes/0skips/48warnings/127qualified XML paths each.
+All original interruption assertions remain in the full suite; no controlled fork
+deprecation or DeprecationWarning is observed in these five warning tables.
+At23:01UTC seven native jobs succeed, with macOS3.11 still running; both3.12
+native successes still need qualified XML receiving. Keep this report active
+until the complete supported scope is received. Original43084105668 terminates
+with its acquisition failure; its successful subset cannot close this report.
+
+## Resolved with complete corrected-source receiving — 2026-11-11 UTC
+
+The [terminal receipt](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts frozen c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb, source43109007084/attempt1:
+all eight Linux x86_64/macOS arm64 × Python3.11–3.14 cells execute the unchanged
+full command and pass3420cases/0skips, retaining48warnings/127qualified XML paths
+each. Required acquisition/preflight/install/import/architecture/coverage and
+reporting3/18/9/161, frozen-policy43109015680 and publication-controls43109024769
+verify successfully. All original failed/pending/partial receipts remain intact.
+
+All eight native warning tables contain no DeprecationWarning or controlled
+threaded-parent fork deprecation. The durable driver guard starts real spawned
+children, interrupts actual native progress and checks original committed-prefix/
+credit recovery; the separate store/workflow and live-parent-thread lease controls
+remain in the full suite. This closes the declared supported interruption-test
+scope, not generic process/thread safety or an installed/public platform promise.
+
+No original job is rerun/cancelled. Later receiving heads, full supported
+installed/public qualification, version/tag/publication and other scientific
+workstreams retain separate gates. Original4766946 remains terminal failure.

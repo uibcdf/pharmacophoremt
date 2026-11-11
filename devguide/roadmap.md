@@ -1,5 +1,24 @@
 # Strategic roadmap
 
+## Complete corrected-source checkpoint accepted — 2026-11-11 UTC
+
+[Terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts c5e952c/43109007084/attempt1: all eight Linux/macOS arm64 Python3.11–3.14
+cells pass3420cases/0skips/48retained warnings/127qualified XML paths each.
+Reporting3/18/9/161, policy43109015680 and publication-controls43109024769 pass
+required native steps. No controlled fork deprecation is observed; bounded
+[#192](archive/interruption_process_isolation.md) and
+[#197](archive/duplicate_ci_molsysmt_acquisition.md) are resolved and archived.
+Original4766946 remains terminal failure; all earlier partial/pending/failure
+receipts and later-head debt remain separate. The [updated scope review](release_0_6_0_scope_review.md)
+and strict source/reused-owned release notes preserve the mature0.x staircase.
+
+Next review remaining #6 support boundaries and #108 public workflow acceptance
+to select a bounded implementation gap. MolSysMT#624 is rechecked open/unreceived;
+full supported installed/public, human, biological and scale gates remain open
+under their owners. #148/#165 remain stopped. No0.6.0 tag or publisher is selected.
+The dated progression below remains original history.
+
 ## Real prepared-library features and acquisition recovery — 2026-11-11 UTC
 
 [#108 receiving](prepared_library_feature_archive.md) composes current public
@@ -16,8 +35,15 @@ expects 3,420 cases/127 qualified paths; collection is not execution. Published
 c5e952c now has [its own receiving](evidence/source_060_recovery_pending_20261111.json):
 source43109007084/attempt1 runs eight scientific cells; policy43109015680 and
 publication-controls43109024769 pass, as does reporting. No scientific cell or
-complete source gate is accepted by this metadata receipt. Observe those handles;
-#192/#197 stay active, with no new version/publication. Earlier original-source
+complete source gate is accepted by that metadata receipt. The subsequent
+[five-cell qualification](evidence/source_060_recovery_partial_20261111.json)
+receives3420pass/0skip/48warnings/127qualified paths each and reporting3/18/9/161.
+At23:01UTC native seven scientific jobs succeed and macOS/Python3.11 runs; two
+additional3.12 successes still need XML receiving. The original run terminates
+with failure. Observe the same handles; #192/#197 stay active, with no new
+version/publication. The [updated scope review](release_0_6_0_scope_review.md)
+receives additive-signature/static and strict source/owned documentation checks.
+Earlier original-source
 partial receiving below is retained history, not corrected-source evidence.
 
 ## Explicit feature argument controls — #6 (2026-11-11 UTC)
@@ -187,7 +213,7 @@ remain distinct from the tested tag. Historical producers/receipts stay original
 Next, for **0.6.0**, [#193](archive/native_feature_reconstruction.md)
 first fixes accepted formats, generation, quantities, lifetime and attribution
 before implementing native reconstruction. Public writers/recovery are a later
-slice; [#192](pending_proposals/interruption_process_isolation.md) separately
+slice; [#192](archive/interruption_process_isolation.md) separately
 owns interruption-test isolation. Full installed/public delivery remains
 #10/#23-owned; biological/human/scale gates and stopped #148/#165 retain their scope.
 

@@ -14,6 +14,16 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Accumulated support slice receives full source — 2026-11-11 UTC
+
+The [terminal receipt](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts c5e952c/43109007084/attempt1: all eight supported source cells pass3420cases
+each with zero skips/48retained warnings/127qualified XML paths. The two additive
+expert controls keep their original535-case source/owned and31-case public-
+ArgDigest evidence, now included in the accumulated source gate. Broader #6 and
+full public/installed provider closure remain partial. No provider/prefix mutation,
+floor change, tag or public publisher is selected by this receiving increment.
+
 ## Explicit feature argument controls — 2026-11-11 UTC
 
 The [bounded contract](../feature_argument_controls.md) receives the #196

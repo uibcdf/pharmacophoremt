@@ -4,6 +4,36 @@ Owners LMMV/dprada; PHMT#197/#9/#23/#95/#192; selected 2026-11-11 UTC.
 This declares a corrected controlled-source checkpoint after a required old
 job failed before scientific execution. It selects no version/tag or publisher.
 
+## Accepted complete corrected source — 2026-11-11 UTC
+
+The [terminal receipt](evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts frozen **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb** from original
+source43109007084/attempt1 and successful policy43109015680/publication43109024769.
+All eight Linux x86_64/macOS arm64 × Python3.11–3.14 cells execute the unchanged
+full command and pass3420cases/zero skips with48retained warnings and127qualified
+XML paths each. Actual package0.5.0+17.gc5e952c, interpreter/architecture and all
+required acquisition/preflight/install/import/coverage steps verify. Reporting
+receives3/18/9/161 controls. Full native capture manifests/member hashes verify;
+GH Run Receptor1.4.0 returns success/exit0 for all three original runs.
+
+All eight warning tables contain no DeprecationWarning or controlled threaded-
+parent fork warning. The bounded [#192](archive/interruption_process_isolation.md)
+and [#197](archive/duplicate_ci_molsysmt_acquisition.md) reports are resolved and
+archived. Original4766946 remains terminal failure; pending/five-cell receipts
+below retain their original scope. The [complete Linux3.13 XML](evidence/source_060_recovery_ci_linux313_20261111_coverage.xml.gz)
+comes from timestamp-stripped native printed output, without independent runner-
+file checksum or public Codecov freshness claims. Later receiving/doc heads are
+not this tested source; supported installed/public and version/tag/publication
+remain independent. No remote attempt is repeated or cancelled.
+
+The [terminal closeout](evidence/source_060_recovery_terminal_closeout_20261111.json)
+passes seven offline checks, confirms all eight native warning tables, refreshed
+canonical-guide equality and the two resolved guarded reports, verifies38 earlier
+archived entries plus seven new own-control entries, and preserves frozen history,
+strictly previewed release-note bytes and immutable0.5.0. Raw remote captures/logs
+stay local. The original static-review baseline mistake and correction remain in
+the [resumed closeout](evidence/source_060_recovery_resume_closeout_20261111.json).
+
 ## Source and preservation
 
 Original source4766946/run43084105668/attempt1 is not accepted: macOS/Python3.11
@@ -68,6 +98,21 @@ on November25. A failed original/corrected cell stays failed; do not automatical
 redispatch, cancel or rerun. Later receiving-only commits retain their own debt.
 
 ## Required corrected-source evidence
+
+The [subsequent job-only receipt](evidence/source_060_recovery_partial_20261111.json)
+qualifies five original corrected-source cells: Linux/Python3.11/3.13/3.14 and
+macOS/Python3.13/3.14, each3420passes/0skips/48warnings/127qualified XML paths and
+no controlled fork deprecation. Reporting receives3/18/9/161 controls; original
+Linux3.13 native coverage-upload steps succeed. This does not independently prove
+public Codecov freshness. The [published XML](evidence/source_060_recovery_linux313_partial_20261111_coverage.xml.gz)
+is the timestamp-stripped native printed report, not an independently checksummed
+runner file. Initial pending/metadata receipts remain unchanged.
+
+At23:01UTC native seven scientific jobs succeed, with macOS/Python3.11 still
+running; the two additional3.12 successes are not qualified by that five-cell
+receipt. The old source run is terminal failure, with seven scientific successes
+and one acquisition failure. No full corrected source checkpoint or #192/#197
+closure follows until actual remaining supported-cell receiving.
 
 - Full unchanged source command in all eight Linux x86_64/macOS arm64 ×
   Python3.11–3.14 cells; expected actual population **3,420**, qualified coverage

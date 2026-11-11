@@ -2,6 +2,16 @@
 
 PHMT#192; owners LMMV/dprada; 2026-11-11 UTC.
 
+The [complete corrected-source receipt](evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+now receives all eight Linux x86_64/macOS arm64 × Python3.11–3.14 source cells at
+c5e952c/43109007084/attempt1:3420passes/zero skips each, preserving48warnings and
+127qualified XML paths per cell. No controlled fork deprecation or
+DeprecationWarning appears in any warning table. Required native/control steps
+verify; [#192](archive/interruption_process_isolation.md) is resolved/archived for
+the declared test-isolation scope. Earlier source/owned and failed-launcher
+receipts below remain original; no generic process safety or public-installed
+qualification is inferred.
+
 The controlled #183/#186/#187 children use the explicit multiprocessing `spawn`
 context. Their module-level targets receive only their output/store path,
 candidate/current generation, declared mode/signal and pipe endpoint. They build

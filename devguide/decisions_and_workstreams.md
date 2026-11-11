@@ -1,5 +1,23 @@
 # Decisions and active workstreams
 
+## Corrected controlled-source gate complete — 2026-11-11 UTC
+
+The [terminal native receipt](evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts frozen c5e952c with all eight supported source cells at3420passes/0skips,
+48retained warnings/127qualified XML paths each, reporting3/18/9/161 and both
+control workflows successful. Single-source acquisition and installed-context
+verification execute in every cell; no controlled fork deprecation is observed.
+[#192](archive/interruption_process_isolation.md) and
+[#197](archive/duplicate_ci_molsysmt_acquisition.md) are resolved/archived in their
+declared scopes. The old source remains terminal failure; earlier pending/partial
+receipts are not rewritten and later documentary heads retain separate debt.
+
+Next inspect remaining #6 support boundaries and #108 workflow acceptance for the
+next implementation slice. Provider#624 remains open/unreceived; full supported
+installed/public, biological/human/scale and stopped #148/#165 remain separate.
+No version/tag/public artifact or hosted-docs publisher is selected. Earlier
+dated next actions below describe their original stage.
+
 ## Real-source feature lifecycle and failed-source recovery — 2026-11-11 UTC
 
 The [#108 real-input continuation](prepared_library_feature_archive.md) receives
@@ -18,6 +36,13 @@ Published c5e952c now has [independent attempt1 receiving](evidence/source_060_r
 source43109007084 has reporting success/eight running scientific cells;
 policy43109015680 and publication-controls43109024769 pass required native steps.
 No corrected scientific cell/full source gate is accepted by this metadata receipt.
+The [later five-cell receipt](evidence/source_060_recovery_partial_20261111.json)
+receives3420passes/0skips/48warnings/127qualified XML paths each and reporting
+3/18/9/161. Seven native scientific jobs succeed at23:01UTC, with macOS/Python3.11
+still running; the two additional3.12 cells remain unqualified by that receipt.
+Original43084105668 is terminal failure. The [extended scope review](release_0_6_0_scope_review.md)
+receives static additive-signature checks and strict source/reused-owned docs,
+preserving the original endpoint and historical release notes.
 Do not accept the older matrix, close#192/#197 or duplicate original jobs. Later
 documentation heads retain separate debt. No tag or package/public documentation
 publisher is selected. #148/#165 remain stopped.
@@ -191,7 +216,7 @@ remain distinct from the tested tag. Historical producers/receipts stay original
 Next, for **0.6.0**, [#193](archive/native_feature_reconstruction.md)
 first fixes accepted formats, generation, quantities, lifetime and attribution
 before implementing native reconstruction. Public writers/recovery are a later
-slice; [#192](pending_proposals/interruption_process_isolation.md) separately
+slice; [#192](archive/interruption_process_isolation.md) separately
 owns interruption-test isolation. Full installed/public delivery remains
 #10/#23-owned; biological/human/scale gates and stopped #148/#165 retain their scope.
 

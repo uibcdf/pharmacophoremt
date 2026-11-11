@@ -2,6 +2,12 @@
 
 ## Unreleased — toward 0.6.0
 
+- Document the complete [prepared-library feature workflow](../user/prepared_library_features.md):
+  capture prepared records once, preserve their full native inventories in an
+  archive, reconstruct them explicitly and build reference hypotheses. The
+  same three original PubChem3D snapshots receive source/owned nm/pm examples
+  and independent metadata readers. This is a composition of current public
+  operations, with separate collection, screening and biological qualification.
 - Expose explicit keyword-only `skip_digestion=False` on `modeler.get_features`
   and `FeatureInventoryPayload.from_inventory`. Default/False retain ordinary
   normalization; True requires canonical arguments and keeps scientific/native
@@ -11,8 +17,9 @@
   effective requested families, completed/evaluated-empty coverage, native
   atom/frame/state maps and original observed extraction software around one
   extraction. `FeatureInventoryPayload.from_capture` saves that observation
-  without repeating the evaluated-family declaration. `get_features()` keeps
-  its existing signature and ordinary inventory.
+  without repeating the evaluated-family declaration. `get_features()` retains
+  its prior arguments and ordinary inventory, with the additive expert control
+  described above.
 - Add [native feature archive v2](../user/native_feature_archives.md) with
   explicit record assembly, original source/global-ordinal lineage, guarded
   subset rebasing and the existing publication/recovery lifecycle. Cold layout
@@ -34,6 +41,8 @@
   PyUnitWizard >=0.28.1 supplies the qualified quantity-record capability.
 - Run controlled interruption/recovery tests in fresh spawned processes,
   preserving original committed progress, publication visibility and attribution.
+- Acquire the reviewed MolSysMT source once per controlled CI environment,
+  retaining mandatory installed-version verification before scientific tests.
 - Preserve completed science when an optional attribution error cannot be
   rendered as text. Respect the application's SMonitor capture policy before
   inspecting that text; saved original references and enclosing sessions remain
@@ -59,7 +68,8 @@ unchanged throughout capture. Molecular collection/preparation stays MolSysMT-ow
 The required quantity provider is now **PyUnitWizard >=0.28.1** for the received
 QuantityRecord capability. New capture operations expose standard boolean
 argument-digestion controls; a bypass does not skip native/content validation.
-The existing `get_features` and `from_inventory` signatures remain unchanged.
+Existing `get_features` and `from_inventory` arguments/default behavior are
+preserved; both signatures add optional keyword-only `skip_digestion=False`.
 
 Selected source/exact-owned receiving is recorded under #193–#196. Complete
 supported source qualification, installed/public delivery and the next version/tag

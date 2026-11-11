@@ -1,13 +1,13 @@
 ---
 summary: Remove redundant MolSysMT VCS acquisition after the reviewed source install.
 issue: uibcdf/pharmacophoremt#197
-status: active
+status: resolved
 opened: 2026-11-11
-closed:
+closed: 2026-11-11
 severity: medium
 verification: measured
 area: [ci, dependencies]
-guard: tests/test_ci_routes.py
+guard: tests/test_ci_routes.py::test_every_minor_acquires_one_reviewed_molsysmt_before_verification
 normative: devguide/ci_molsysmt_acquisition.md
 blocked_by: []
 supersedes: []
@@ -58,3 +58,29 @@ scientific cells are in progress. The removed duplicate is absent from all nativ
 step inventories, but acquisition/preflight/test/coverage success for every cell
 still requires actual terminal receiving. Keep this report and #192 active;
 neither metadata/local controls nor the older failed matrix clear acceptance.
+
+The [five-cell corrected-source receipt](../evidence/source_060_recovery_partial_20261111.json)
+now verifies actual single-source acquisition/preflight/full commands and
+3420passes/0skips/48warnings/127qualified XML paths per received cell. Reporting
+receives3/18/9/161. At23:01UTC seven native science jobs succeed and macOS3.11
+still runs; complete remaining-cell receiving remains pending. The old source
+run is terminal failure and is never accepted. This report remains active.
+
+## Resolved with complete corrected-source receiving — 2026-11-11 UTC
+
+The [terminal receipt](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts frozen c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb, source43109007084/attempt1:
+all eight Linux x86_64/macOS arm64 × Python3.11–3.14 cells execute the unchanged
+full command and pass3420cases/0skips, retaining48warnings/127qualified XML paths
+each. Required acquisition/preflight/install/import/architecture/coverage and
+reporting3/18/9/161, frozen-policy43109015680 and publication-controls43109024769
+verify successfully. All original failed/pending/partial receipts remain intact.
+
+The guard protects one reviewed MolSysMT source per supported minor, refusal of
+redundant direct VCS installs and mandatory installed-context verification before
+science. The removed duplicate is absent in every actual job. This resolves the
+PHMT acquisition route, not the unknown original remote-authentication cause.
+
+No original job is rerun/cancelled. Later receiving heads, full supported
+installed/public qualification, version/tag/publication and other scientific
+workstreams retain separate gates. Original4766946 remains terminal failure.

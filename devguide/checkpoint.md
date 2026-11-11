@@ -6,48 +6,37 @@ and [capability inventory](capability_inventory.md). The prior checkpoint is
 preserved unchanged in [dated history](checkpoint_history_20261111_before_acquisition_recovery.md);
 earlier November 7/10/11 histories and original run identities remain intact.
 
-## Original source rejected; corrected validation in progress
+## Corrected accumulated source checkpoint accepted
 
-Frozen **47669463e8047f33c77537c5d7e010199cb411fd**, source43084105668/attempt1,
-has a required macOS/Python3.11 acquisition failure. Its first reviewed install
-successfully builds MolSysMT; a second identical VCS force-reinstall fails before
-dependency verification, PHMT installation or scientific tests. The
-[native/local receipt](evidence/ci_molsysmt_acquisition_20261111.json) retains
-original steps/log identities and the unknown remote-access cause. Earlier
-[three qualified cells](evidence/source_060_resume_20261111.json) remain original;
-they cannot qualify this failed matrix. Other original jobs are not cancelled or
-rerun. #192 remains active; full supported-source acceptance is absent.
+Frozen **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb**, package observation
+0.5.0+17.gc5e952c, passes complete [terminal receiving](evidence/source_060_recovery_checkpoint_qualification_20261111.json):
+all eight Linux x86_64/macOS arm64 × Python3.11–3.14 cells pass **3,420 cases,
+zero skips, 48 retained warnings and 127 qualified XML paths each**. Required
+single-source acquisition, installed Git-context preflight, install/import,
+actual interpreter/architecture, full command and coverage verify. All eight
+warning tables contain no controlled fork deprecation. Reporting3/18/9/161,
+policy43109015680 and publication-controls43109024769 pass their native steps.
+Source43109007084/attempt1 is accepted; later receiving/documentation heads are
+not relabelled as this tested source. Native Linux3.13 upload success does not
+independently establish public Codecov freshness.
 
-[#197's contract](ci_molsysmt_acquisition.md) removes only that redundant step.
-All other parsed workflow structure, exact sibling/SDK pins, environments,
-scientific command/assertions, coverage and cancellation behavior remain. Mandatory
-installed Git-context verification still follows the reviewed requirements install.
-The new guard fails on the old route; all nine route/recovery controls pass after
-correction. The changed workflow is re-reviewed in the dependency-route inventory;
-report/source-drift fixtures retain their original assertions. Ten quality checks
-include 161 administrative controls. Actual collection finds **3,420 cases** with
-zero scientific execution; expected qualified coverage remains **127 paths**.
-Current canonical guide bytes are independently equal, separate from the unchanged
-policy-v1.5.4 caller. This does not accept a corrected hosted/full source gate.
+[#197 acquisition](archive/duplicate_ci_molsysmt_acquisition.md) and
+[#192 isolation](archive/interruption_process_isolation.md) are resolved in their
+bounded declared scopes. The old4766946/43084105668 remains terminal failure:
+seven science jobs succeed and macOS3.11 fails duplicate acquisition before
+science. Its original [failure receipt](evidence/ci_molsysmt_acquisition_20261111.json),
+pending/three-cell history and [corrected five-cell receiving](evidence/source_060_recovery_partial_20261111.json)
+remain unchanged. No request/job is duplicated, rerun or cancelled. Canonical
+guide equality is refreshed separately from unchanged policy-v1.5.4.
 
-Corrected **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb** is published. Its
-[receiving receipt](evidence/source_060_recovery_pending_20261111.json) verifies
-one request per absent workflow and attempt1 identities: source43109007084,
-policy43109015680 and publication-controls43109024769. Policy/lint/format,
-no-build publication controls and reporting pass their required native steps.
-The eight scientific cells are in progress in the retained observation; none
-is qualified by this metadata receipt. Frozen collection still finds the same
-3,420 node IDs. The failed original now has six native-success scientific jobs,
-one acquisition failure and one running; only its earlier three cells have
-qualified XML receiving. Its failed matrix remains rejected.
-
-**Next concrete action:** observe these same handles under
-[the recovery contract](source_0_6_0_acquisition_recovery.md); receive actual
-terminal native steps/counts/warnings/XML before acceptance or #192/#197 closure.
-Own recovery controls and resource/request records are archived; raw remote logs
-stay local, with LMMV/dprada retention review on November25. Preserve original
-attempts and failed receiving controls; never relabel a later documentation head
-or duplicate a pending/uncertain request.
+**Next concrete action:** review remaining #6 support-library boundaries and
+#108 public workflow acceptance against this qualified source, selecting the next
+bounded implementation gap without recreating MolSysMT-owned collections.
+MolSysMT#624 is rechecked open/unreceived. Full supported installed/public,
+independent human, biological and scale qualification remain separate. Keep the
+same finite one-CPU/thread controls and stopped #148/#165. No new tag/version or
+publisher is selected. Own recovery controls and raw remote captures remain local
+for LMMV/dprada retention review on November25; publish only reviewed own evidence.
 
 ## Prepared-library feature lifecycle received — #108
 
@@ -72,6 +61,16 @@ contributor annotations remain local. This is no new acquisition/preparation,
 collection, fitting/search/score, benchmark, biological or human-usability claim.
 
 ## Earlier API delivery and separate gates
+
+The [updated scope review](release_0_6_0_scope_review.md) and
+[static receipt](evidence/release_060_corrected_scope_review_20261111.json) extend
+the original f722b45 comparison to frozen c5e952c. No nonprivate declaration is
+removed; one existing0.5.0 signature gains an optional keyword control. Against
+f722b45, both previously received expert controls are additive. Implementation
+declaration counts are not public API counts. Unreleased notes now describe these
+changes and the prepared-library recipe consistently; historical0.5.0 notes stay
+unchanged. Strict source/reused-owned docs pass; original controller failures
+remain distinct from scientific outcomes.
 
 Source7192041's [two explicit argument controls](feature_argument_controls.md)
 retain [535 selected source and exact-owned passes](evidence/feature_argument_controls_20261111.json),

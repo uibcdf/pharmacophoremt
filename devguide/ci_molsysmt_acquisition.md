@@ -3,6 +3,19 @@
 Owners LMMV/dprada; PHMT#197/#9/#23/#95; selected 2026-11-11 UTC.
 This is a PHMT workflow correction, not an upstream MolSysMT scientific defect.
 
+## Correction qualified — 2026-11-11 UTC
+
+[Complete receiving](evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts c5e952c/43109007084/attempt1 in all eight supported source cells:
+3420passes/0skips/48warnings/127qualified XML paths each. Every cell installs the
+reviewed sources once, executes mandatory installed-context verification, and
+passes the unchanged full scientific/coverage command. Reporting3/18/9/161 and
+both separate control workflows pass required native steps. The precise route
+guard preserves the old-duplicate red result and corrected per-minor checks.
+[#197](archive/duplicate_ci_molsysmt_acquisition.md) is resolved/archived.
+The old failed source and unknown remote cause remain original; this fixes the
+consumer route without claiming immunity to external acquisition failures.
+
 ## Original observed failure
 
 Later [native/local receiving](evidence/ci_molsysmt_acquisition_20261111.json)

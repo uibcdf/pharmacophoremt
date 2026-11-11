@@ -1,0 +1,144 @@
+{
+  "schema": "pharmacophoremt.source-060.recovery-terminal-closeout@1",
+  "recorded_at_utc": "2026-11-11T23:13:01.475831+00:00",
+  "source": "c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb",
+  "source_checkpoint_accepted": true,
+  "later_receiving_head_not_qualified": true,
+  "checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": "wrote devguide/pending_bugs/README.md\nwrote devguide/pending_proposals/README.md\nwrote devguide/archive/README.md\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.444s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.101s\n\nOK\n"
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "commands": [
+    {
+      "name": "capture-terminal",
+      "exit_code": 0,
+      "seconds": 21.117889368033502,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 124380,
+        "sha256": "70940249da5e60f575b93b887233422a75016f495abb6230e31a2846bcca73d3"
+      },
+      "observed_own_group_RSS_peak_bytes": 113094656
+    },
+    {
+      "name": "qualify-terminal",
+      "exit_code": 0,
+      "seconds": 0.7122535429662094,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 6158,
+        "sha256": "7a6ad3ec2989631884860f1b4068292ea6219db767f7c95333f14b563144b7e1"
+      },
+      "observed_own_group_RSS_peak_bytes": 66097152
+    },
+    {
+      "name": "audit-closing-guide",
+      "exit_code": 0,
+      "seconds": 1.1200657219742425,
+      "affinity": [
+        19
+      ],
+      "threads": 1,
+      "DATA_per_process_bytes": 536870912,
+      "own_envelope_bytes": 1610612736,
+      "physical_reserve_bytes": 12995688038,
+      "capacity_not_reserved": true,
+      "record_identity": {
+        "bytes": 8579,
+        "sha256": "fc3811b935da092fcc74af8c519118906cf9d9171f579821d37fb081514f1b98"
+      },
+      "observed_own_group_RSS_peak_bytes": 87072768
+    }
+  ],
+  "closing_guide_audit": {
+    "recorded_at_utc": "2026-11-11T23:09:17.280121+00:00",
+    "canonical_git_blob": "dd8abefb62cd723d5f61ec8187d82dfb5d6b66e7",
+    "canonical_sha256": "850a98f0757a18734b328332c88e4622f60bdef097148a1fd59b9f009846bfe4",
+    "local_sha256": "850a98f0757a18734b328332c88e4622f60bdef097148a1fd59b9f009846bfe4",
+    "equal": true,
+    "source_checkpoint": "c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb",
+    "policy_caller": "policy-v1.5.4",
+    "frozen_pre_dispatch_audit_preserved": true,
+    "instructions": {
+      "AGENTS.md": "0555fb5c8710de101ff849bce5c22f69b0d28dc1a853d83d07a09d5b6993aedb",
+      "devguide/AGENTS.md": "df82b455ffdd802442c778c770b0ce04b59894dcc6a2f3041b3a15cda4313370",
+      "devguide/reporting_protocol.md": "3d88b8e1b317a16798c81b6b2cac35d4a24eae0f4c75a8eb58b31b7534bdcd9a"
+    }
+  },
+  "all_eight_cells_passed": 3420,
+  "qualified_paths_per_cell": 127,
+  "controlled_fork_deprecations_observed": 0,
+  "retained_warnings_per_cell": 48,
+  "reports_resolved": [
+    "devguide/archive/interruption_process_isolation.md",
+    "devguide/archive/duplicate_ci_molsysmt_acquisition.md"
+  ],
+  "guard_review": "#197's exact test enforces one reviewed MolSysMT acquisition/per-minor preflight ordering and detects the old duplicate. #192's module uses real spawned/interrupted native prefixes; store/workflow/live-parent-thread lease controls remain in the same full suite.",
+  "earlier_public_archived_entries_verified": 38,
+  "markdown_local_targets": 687,
+  "frozen_history_bytes_preserved": true,
+  "runtime_tests_devtools_and_workflows_unchanged": true,
+  "strict_release_note_bytes_preserved_since_source_owned_previews": true,
+  "immutable050_source": "2bff5dcf454bc5230f473237a49939215a60aab2",
+  "old4766946_remains_terminal_failure": true,
+  "limitations": "Eight executions repeat the same3420-case suite. Current source guide audit and frozen policy remain distinct. No later-head, supported installed/public, independent public Codecov freshness, new version/tag/publication, biological/human/scale or generic concurrency-safety claim. MolSysMT#624 stays open/unreceived; #148/#165 stay stopped.",
+  "temporary_resources": {
+    "owners": "LMMV/dprada",
+    "review": "2026-11-25",
+    "raw_remote_captures_logs_and_geometry": "Local only; own reviewed controls/scalars/hashes public. No shared prefix, sibling or unrelated process changed."
+  },
+  "full_evidence": {
+    "path": "source_060_recovery_terminal_controls_20261111.json.gz",
+    "compressed_bytes": 10382,
+    "compressed_sha256": "09eef4522cc82f0d0ac1188115958998e350272233aee3bfff561d29134c2d5e",
+    "uncompressed_bytes": 33502,
+    "uncompressed_sha256": "2cd8921b9cf3ba3adec330b6f2fba0cbc9d1bfe00057b7fb451800afc4014091"
+  }
+}

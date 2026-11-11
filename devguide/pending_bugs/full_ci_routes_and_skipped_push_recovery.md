@@ -15,12 +15,34 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Complete corrected-source receiving — 2026-11-11 UTC
+
+[Terminal receiving](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)
+accepts c5e952c/43109007084/attempt1: all8 supported scientific cells pass3420cases,
+zero skips/48retained warnings/127qualified XML paths each. Required native
+acquisition/preflight/import/architecture/coverage, reporting3/18/9/161,
+policy43109015680 and publication-controls43109024769 verify. #192/#197 are
+resolved/archived; old4766946 remains terminal failure. Original pending/partial
+receipts stay unchanged. This theme remains partial for its broader gates and
+later documentary-head debt; source acceptance is not installed/public delivery.
+
+## Corrected-source partial receiving — 2026-11-11 UTC
+
+The [five-cell receipt](../evidence/source_060_recovery_partial_20261111.json)
+qualifies c5e952c/43109007084/attempt1 on Linux3.11/3.13/3.14 and macOS3.13/3.14:
+3420passes/0skips/48warnings/127qualified XML paths each, plus reporting3/18/9/161.
+No controlled fork deprecation is observed. Native Linux3.13 uploads pass; public
+Codecov freshness is unverified. At23:01UTC native seven science jobs succeed
+and macOS3.11 still runs; two additional3.12 successes remain unqualified by this
+receipt. Original43084105668 is terminal failure. No full corrected acceptance,
+#192/#197 closure or later-head qualification follows. Observe the same handles.
+
 ## Rejected accumulated source; duplicate acquisition corrected — 2026-11-11 UTC
 
 [Native/local receipt](../evidence/ci_molsysmt_acquisition_20261111.json) rejects
 4766946 for required macOS/Python3.11 acquisition failure before tests: a redundant
 second exact MolSysMT clone fails after the first install succeeds. Remote cause
-is unknown; no scientific failure is inferred. [#197](duplicate_ci_molsysmt_acquisition.md)
+is unknown; no scientific failure is inferred. [#197](../archive/duplicate_ci_molsysmt_acquisition.md)
 removes only that step, re-reviews its route digest and preserves installed-context
 verification, source/SDK pins and all science/matrix settings. Nine route controls
 and ten quality checks pass; 3,420 collected cases/127 expected paths are not
