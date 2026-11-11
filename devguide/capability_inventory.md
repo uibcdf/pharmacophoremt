@@ -23,6 +23,14 @@ retain separate identities and qualification.
 
 ## Modeling routes
 
+Development after #193 also receives the
+[first writer-owned archive](public_feature_archive_store.md): whole-generation
+preservation, immutable candidates, expected-current publication and retained
+attempt/linked recovery. The [source/owned receipt](evidence/feature_archive_writer_20261111.json)
+receives 150 cases per context and executable guides. New native payload production
+and arbitrary/subset assembly remain later #195/#194 scope; no new public artifact,
+collection, source authentication or broad performance claim follows.
+
 Development after source tag 0.5.0 adds
 [`screening.reuse_feature_inventories`](native_feature_reconstruction.md), with
 explicit historical profile admission, fresh quantity/native geometry validation

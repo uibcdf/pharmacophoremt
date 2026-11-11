@@ -89,6 +89,14 @@ durability, hostile-directory safety nor network/distributed filesystem atomicit
 
 ## Acceptance and next slices
 
+The [first-slice receipt](evidence/feature_archive_writer_20261111.json) receives
+source aad1de5 and its exact owned wheel: 150 selected cases each, 228 verified
+payloads/173 runtime bodies, actual public quantity lower-bound bytes, original
+references, cold metadata/recovery and real before/after-publication termination.
+Source/owned executable guides under nm/pm and strict full docs pass. #194 stays
+partial for broader assembly; [#195](pending_proposals/public_native_feature_payloads.md)
+now owns the native payload/producer contract before new-format code.
+
 Guard explicit creation/opening, same-source immutability, complete original-byte/
 metadata/provenance preservation, invalid quantities/maps, empty/incomplete
 candidates, expected-current/lease/lifetime and malformed receipts. Exercise real

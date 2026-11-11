@@ -3,13 +3,16 @@
 ## First writer-owned archive slice — #194 (2026-11-11 UTC)
 
 [Whole-generation preservation/publication/recovery](public_feature_archive_store.md)
-is implemented in source; 150 selected writer/reader/native cases pass, including
-real before/after-replacement process termination, unknown receipts/linked retry,
-quota/integrity/lease/lifetime controls and fresh cold metadata/recovery. Next
-receive the exact owned wheel and public examples, retaining first attempts and
-scope. New native payload production/arbitrary assembly remain later slices;
-MolSysMT collections, supported public/platform, human/biological/scale and
-stopped #148/#165 retain their owners.
+is received at aad1de5: [150 source/150 exact-owned cases](evidence/feature_archive_writer_20261111.json),
+228 verified wheel payloads/173 runtime bodies, actual public quantity lower-bound
+bytes, cold metadata/recovery and real before/after-replacement process termination.
+Eight writer guide-block executions across nm/pm and source/owned and strict full
+docs pass. Original first tests/cold-baseline correction and limits stay retained.
+
+Next freeze the [#195 native payload/producer contract](pending_proposals/public_native_feature_payloads.md).
+#194 stays partial for later arbitrary/subset assembly/integration. Source pins,
+shared prefix, full public/platform, MolSysMT collection, human/biological/scale
+and stopped #148/#165 retain their separate ownership.
 
 ## 0.6.0 native reuse and isolation — #193/#192 (2026-11-11 UTC)
 

@@ -1,7 +1,7 @@
 ---
 summary: Qualify public feature-archive writing, immutable publication and explicit recovery.
 issue: uibcdf/pharmacophoremt#194
-status: active
+status: partial
 opened: 2026-11-11
 closed:
 verification: measured
@@ -56,3 +56,21 @@ original extraction producers. The first cold fcntl-baseline assumption failed
 without a library defect; the corrected context still blocks every scientific
 import and checks lazy writer activation. Exact-owned and user-guide receiving
 remain pending until attached; this does not close the larger #194 scope.
+
+## First writer slice received — 2026-11-11 UTC
+
+The [receipt](../evidence/feature_archive_writer_20261111.json) receives scientific
+source `aad1de56a1ab35881a66c7254caa44fd06ed5209` and one exact owned wheel:
+the same 150 selected cases pass in each context, including the 36 new writer
+controls, actual fresh-process metadata/recovery and owned process termination.
+All 228 payloads/173 runtime bodies are verified; 164 loaded PHMT modules originate
+in the installed target. Public PyUnitWizard 0.28.1 bytes are used in installed
+receiving. All eight user-guide block executions across source/owned and nm/pm
+pass, as do strict full docs in each context and 161 administrative controls.
+
+Original first tests and the fcntl support-baseline correction remain recorded;
+no scientific guard or application policy was weakened. This completes the first
+whole-generation writer/publication/recovery slice. #195 owns public native
+payload production; broader arbitrary/subset assembly/integration remains here.
+Supported full hosted/public/platform and biological/human/scale gates stay
+independent. This issue remains open/partial; no new tag or package is published.
