@@ -1,6 +1,6 @@
 # Reuse saved native features
 
-This development API is planned for the 0.6.0 series. Use a build containing
+This API is available in development source toward 0.6.0. Use a build containing
 `screening.reuse_feature_inventories` with PyUnitWizard >=0.28.1. The 0.5.0 source
 tag contains metadata/original-byte inspection only.
 
@@ -67,6 +67,8 @@ key list returns no inventories and claims no quantity validation. Errors do not
 return a partially reconstructed batch or close the caller's view.
 
 The compatibility profile supports only its declared historical single-frame
-schema. Public archive writing/recovery and general molecular collections remain
-separate work. Public-channel/platform qualification stays tracked in
+schema. [Public archive writing/recovery](feature_archive_writing.md) and
+[native record assembly](native_feature_archives.md) are separate explicit
+operations. General molecular collections and source authentication retain their
+provider-owned acceptance gates. Public-channel/platform qualification stays tracked in
 [#23](https://github.com/uibcdf/pharmacophoremt/issues/23).

@@ -69,3 +69,18 @@ collections and source mappings stay provider-owned. Biological validation,
 independent human receiving, scale and stopped #148/#165 are separate workstreams.
 The immutable 0.5.0 tag and its eight-cell source evidence remain original; no new
 tag, GitHub Release, package promotion or hosted docs publication occurs here.
+
+## Later checkpoint preparation and pending execution — 2026-11-11 UTC
+
+The [reviewed unreleased notes](../docs/content/about/release_notes.md) and
+[checkpoint contract](source_0_6_0_checkpoint.md) now freeze source 4766946 for
+one deliberate controlled-source validation. Local preparation passes; the
+[pending receipt](evidence/source_060_pending_20261111.json) retains three exact
+workflow handles/attempt 1 and approximately 20minutes with all eleven required
+jobs queued and no runner. This selects a source for validation, not an accepted
+checkpoint, version/tag candidate or public artifact. Resume the same executions;
+source/installed/public and biological/human/scale decisions stay separate.
+
+Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
+jobs remain queued. Preserve the earlier queued observation and original handles;
+this transition is not a passing scientific/complete-source gate.

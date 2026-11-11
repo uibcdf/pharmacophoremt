@@ -1,20 +1,30 @@
 # Strategic roadmap
 
-## Accumulated 0.6.0 source checkpoint prepared — 2026-11-11 UTC
+## Accumulated 0.6.0 source checkpoint requested — 2026-11-11 UTC
 
-The [source checkpoint contract](source_0_6_0_checkpoint.md) selects one deliberate
-full validation of the accumulated native feature lifecycle. Updated unreleased
-notes cover source-owned capture, native-v2 assembly, original references and the
-PyUnitWizard 0.28.1 minimum. Collection-only receiving finds 3,388 native cases;
-this is not an execution result. The coverage inventory expects 127 qualified
-paths from all three roots, including twelve added public/runtime companion files.
-The [preparation receipt](evidence/source_060_preparation_20261111.json) receives
-ten quality checks and strict source/reused-owned docs. Exact-source hosted
-verification remains pending. Preserve
-existing sibling/SDK/policy pins, full test commands and immutable 0.5.0. No 0.6.0
-tag/package/publication decision is selected. Earlier next-action statements are
-historical; full installed/public, MolSysMT#624 and biological/human/scale remain
-separate and #148/#165 stay stopped.
+Frozen source 47669463e8047f33c77537c5d7e010199cb411fd is published with [skip ci].
+The [contract](source_0_6_0_checkpoint.md) and
+[preparation](evidence/source_060_preparation_20261111.json) receive ten quality
+checks, strict source/reused-owned docs, 3,388 collected cases (zero local
+scientific execution) and 127 expected qualified coverage paths. Exact workflow/
+source/attempt identities are verified for source 43084105668, policy 43084115680
+and publication-control 43084124337. First published-receptor inspection is
+PENDING/exit 3. After approximately 20minutes, native readback still finds all
+11 required jobs queued without assigned runners; no complete source/platform
+checkpoint is accepted. The [pending receipt](evidence/source_060_pending_20261111.json)
+retains actual times/states and own recovery controls. Stop only the bounded
+local watcher; keep original remote runs, with no duplicate request/cancellation.
+Later native readback at 19:33 UTC finds macOS/Python 3.14 in progress and ten other
+required jobs queued; no test result or full checkpoint is accepted.
+
+Three current user guides now link the available capture/reuse/writing routes;
+five executable blocks and historical 0.5.0 claims stay unchanged. Exact prose
+bytes pass strict source/reused-owned source-read previews. The earlier 241-line
+checkpoint remains intact in [dated history](checkpoint_history_20261111.md).
+Next inspect the same handles/attempt 1 and qualify complete terminal native steps,
+counts/warnings and 127-path XML before accepting source or closing #192. #9/#95
+stay pending. Full installed/public, MolSysMT#624 and biological/human/scale gates
+remain separate; #148/#165 stay stopped. No 0.6.0 tag/package/publication selected.
 
 ## Source-owned feature capture received — #196 (2026-11-11 UTC)
 

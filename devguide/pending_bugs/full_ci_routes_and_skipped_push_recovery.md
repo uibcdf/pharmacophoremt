@@ -502,3 +502,21 @@ will be the committed preparation head, recorded before exact remote dispatch.
 Full terminal eight-cell evidence remains pending; earlier source/selected/owned
 receipts retain their identities. The current #9 theme stays partial; no tag,
 Release, package or public-installed claim is selected by this checkpoint.
+
+## Frozen 0.6.0 source requests remain queued — 2026-11-11 UTC
+
+[Source contract](../source_0_6_0_checkpoint.md) and
+[pending receipt](../evidence/source_060_pending_20261111.json) retain frozen
+47669463e8047f33c77537c5d7e010199cb411fd and source 43084105668,
+policy 43084115680/publication43084124337, all attempt 1. Published receptor first
+inspection is PENDING/exit 3; native readback after approximately 20minutes still
+finds eleven required jobs queued and no assigned runner. No full source,
+conformance or publication gate is accepted. Only the own local observer is
+stopped; remote requests stay intact. Recovery observes these same handles,
+without duplicate dispatch or resetting the shared checkout. #9 remains partial;
+#192 actual supported-minor/platform receiving and separate public gates remain
+pending. Current later prose/reporting changes do not relabel the frozen source.
+
+Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
+jobs remain queued. Preserve the earlier queued observation and original handles;
+this transition is not a passing scientific/complete-source gate.

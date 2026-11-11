@@ -48,3 +48,18 @@ first owned launcher recursively prepared the harness during spawn; its original
 17 failures are retained, and a guarded launcher passes with the same wheel and
 unchanged resource limits. Supported hosted Linux/macOS/minor receiving remains
 pending under #9/#192; no universal multiprocessing-safety claim follows.
+
+## Supported-source checkpoint requested — 2026-11-11 UTC
+
+Source47669463e8047f33c77537c5d7e010199cb411fd has one complete unchanged-matrix
+request under [the declared checkpoint](../source_0_6_0_checkpoint.md):
+source 43084105668/attempt 1. Actual [native receiving](../evidence/source_060_pending_20261111.json)
+after approximately 20minutes still finds every scientific cell queued, with no
+assigned runner. The 3,388-case inventory is collect-only, not platform execution;
+no closure or replacement of the original source/owned evidence follows. Observe
+the original handle and assess actual terminal counts/warnings/guards on every
+supported minor and Linux/macOS. #192 remains partial until that receiving.
+
+Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
+jobs remain queued. Preserve the earlier queued observation and original handles;
+this transition is not a passing scientific/complete-source gate.

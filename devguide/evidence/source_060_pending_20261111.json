@@ -1,0 +1,678 @@
+{
+  "schema": "pharmacophoremt.source-060.pending-receiving@1",
+  "recorded_at_utc": "2026-11-11T19:29:02.443183+00:00",
+  "issues": [
+    9,
+    95,
+    192,
+    23
+  ],
+  "source": "47669463e8047f33c77537c5d7e010199cb411fd",
+  "source_checkpoint_accepted": false,
+  "native_observation": {
+    "schema": "pharmacophoremt.source-060.native-observation@1",
+    "recorded_at_utc": "2026-11-11T19:26:32.010603+00:00",
+    "source": "47669463e8047f33c77537c5d7e010199cb411fd",
+    "elapsed_since_first_request_seconds": 1189.50813,
+    "runs": {
+      "source": {
+        "run": {
+          "id": 43084105668,
+          "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+          "path": ".github/workflows/CI.yaml",
+          "run_attempt": 1,
+          "event": "workflow_dispatch",
+          "status": "queued",
+          "conclusion": null,
+          "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43084105668",
+          "created_at": "2026-11-11T19:06:43Z",
+          "updated_at": "2026-11-11T19:06:43Z"
+        },
+        "jobs": [
+          {
+            "id": 130743900470,
+            "name": "Reporting governance",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901413,
+            "name": "Test on macos-15, Python 3.14",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901447,
+            "name": "Test on macos-15, Python 3.13",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901449,
+            "name": "Test on ubuntu-latest, Python 3.14",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901453,
+            "name": "Test on ubuntu-latest, Python 3.13",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901455,
+            "name": "Test on ubuntu-latest, Python 3.12",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901579,
+            "name": "Test on macos-15, Python 3.11",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901600,
+            "name": "Test on ubuntu-latest, Python 3.11",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743901626,
+            "name": "Test on macos-15, Python 3.12",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": null,
+            "steps": []
+          },
+          {
+            "id": 130743903452,
+            "name": "Check skipped-commit backlog",
+            "status": "completed",
+            "conclusion": "skipped",
+            "run_attempt": 1,
+            "runner_id": null,
+            "started_at": "2026-11-11T19:06:45Z",
+            "completed_at": "2026-11-11T19:06:45Z",
+            "steps": []
+          }
+        ]
+      },
+      "policy": {
+        "run": {
+          "id": 43084115680,
+          "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+          "path": ".github/workflows/molsyssuite-policy.yml",
+          "run_attempt": 1,
+          "event": "workflow_dispatch",
+          "status": "queued",
+          "conclusion": null,
+          "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43084115680",
+          "created_at": "2026-11-11T19:06:47Z",
+          "updated_at": "2026-11-11T19:06:47Z"
+        },
+        "jobs": [
+          {
+            "id": 130743934962,
+            "name": "policy / conformance",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:49Z",
+            "completed_at": null,
+            "steps": []
+          }
+        ]
+      },
+      "publication": {
+        "run": {
+          "id": 43084124337,
+          "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+          "path": ".github/workflows/conda_publication_governance.yaml",
+          "run_attempt": 1,
+          "event": "workflow_dispatch",
+          "status": "queued",
+          "conclusion": null,
+          "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43084124337",
+          "created_at": "2026-11-11T19:06:50Z",
+          "updated_at": "2026-11-11T19:06:50Z"
+        },
+        "jobs": [
+          {
+            "id": 130743965108,
+            "name": "publication / check",
+            "status": "queued",
+            "conclusion": null,
+            "run_attempt": 1,
+            "runner_id": 0,
+            "started_at": "2026-11-11T19:06:52Z",
+            "completed_at": null,
+            "steps": []
+          }
+        ]
+      }
+    },
+    "source_checkpoint_accepted": false,
+    "observation_only": true,
+    "remote_operations": "GET only; no redispatch/rerun/cancellation"
+  },
+  "required_jobs_without_assigned_runner": 11,
+  "queue_cause": "Not supplied by these native responses; do not infer a scientific failure or a specific account/infrastructure cause.",
+  "initial_reception": {
+    "schema": "pharmacophoremt.source-060.initial-receiving@1",
+    "recorded_at_utc": "2026-11-11T19:14:47.992683+00:00",
+    "source": "47669463e8047f33c77537c5d7e010199cb411fd",
+    "runs": {
+      "source": {
+        "id": 43084105668,
+        "path": ".github/workflows/CI.yaml",
+        "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+        "run_attempt": 1,
+        "event": "workflow_dispatch",
+        "status": "queued",
+        "conclusion": null,
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43084105668"
+      },
+      "policy": {
+        "id": 43084115680,
+        "path": ".github/workflows/molsyssuite-policy.yml",
+        "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+        "run_attempt": 1,
+        "event": "workflow_dispatch",
+        "status": "queued",
+        "conclusion": null,
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43084115680"
+      },
+      "publication": {
+        "id": 43084124337,
+        "path": ".github/workflows/conda_publication_governance.yaml",
+        "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+        "run_attempt": 1,
+        "event": "workflow_dispatch",
+        "status": "queued",
+        "conclusion": null,
+        "html_url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/43084124337"
+      }
+    },
+    "receptors": [
+      {
+        "label": "source",
+        "run": 43084105668,
+        "attempt": 1,
+        "code": 3,
+        "log": {
+          "bytes": 317,
+          "sha256": "67c784a7f1136c92275e44551cfaf5373d63e516d62d5608bf4ce88721eae63a"
+        },
+        "bundle_present": true,
+        "phase": "initial"
+      },
+      {
+        "label": "policy",
+        "run": 43084115680,
+        "attempt": 1,
+        "code": 3,
+        "log": {
+          "bytes": 292,
+          "sha256": "e4433ced64fa7da4c0fa28714317849925a06058a02cc0db361914e7567e0fc0"
+        },
+        "bundle_present": true,
+        "phase": "initial"
+      },
+      {
+        "label": "publication",
+        "run": 43084124337,
+        "attempt": 1,
+        "code": 3,
+        "log": {
+          "bytes": 280,
+          "sha256": "8171a081033ffbc611d3d57a0f240bf7c9c8c2ebfe3d9a9df8bbbcfb858298b9"
+        },
+        "bundle_present": true,
+        "phase": "initial"
+      }
+    ],
+    "interpretation": "All three initial snapshots are queued/PENDING. Receptor exit3 is pending, not failure or passing qualification. Numeric run identities, exact workflow/head/attempt and initial job inventory are independently verified.",
+    "source_checkpoint_accepted": false,
+    "expected_tests_per_cell": 3388,
+    "expected_qualified_coverage_paths": 127,
+    "no_duplicate_requests": true,
+    "publication_selected": false
+  },
+  "source_preparation_receipt": {
+    "bytes": 57610,
+    "sha256": "a0e7d1f910df25670216ff186aca7c7fa8350cb297cf2322e6b5f397d2246163"
+  },
+  "expected_test_population": 3388,
+  "local_scientific_tests_executed_this_increment": 0,
+  "expected_qualified_coverage_paths": 127,
+  "read_only_local_observer": {
+    "seconds": 1050.316382089979,
+    "exit_code": 143,
+    "interpretation": "Deliberately stopped the one exact case-owned local watcher after approximately20minutes of unstarted requests. SIGTERM/exit143 is observer closeout, not a failed scientific run or remote cancellation.",
+    "remote_runs_cancelled": false,
+    "unrelated_processes_touched": false,
+    "initial_sandbox_stop": "Found no eligible observer in that process namespace and changed nothing; confirmed one own watcher stop in the original permission boundary."
+  },
+  "guide_refresh": {
+    "pages": [
+      {
+        "path": "docs/content/user/prepared_feature_reuse.md",
+        "before_sha256": "9c76660937e29f277f4b78461e232e24ddb447c67d21864f68b964a8ed1a192a",
+        "after_sha256": "353061632806c523e7968e9932490f577b4d004e4b66e628f358c9fc72fa63fb",
+        "python_blocks_unchanged": 0
+      },
+      {
+        "path": "docs/content/user/feature_archives.md",
+        "before_sha256": "28053044f91b3a5be2db57fc6c5ff08415f7a41727e3c75062cb89a30a3e842e",
+        "after_sha256": "c444da40c8fb01279144fd8a4765711bfb70194af3a7d655af90e35655b2e74a",
+        "python_blocks_unchanged": 3
+      },
+      {
+        "path": "docs/content/user/native_feature_reuse.md",
+        "before_sha256": "7fa6596d0f8b2c34d5173adf0e1e3bb4f4363c6077ff25dc16356b88c769a841",
+        "after_sha256": "4e66ada90e332a802510aca253d06bb113c4163fdcf9a9245b34dd10f00c7dc8",
+        "python_blocks_unchanged": 2
+      }
+    ],
+    "scope": "Three current user guides link available bounded capture/reuse/writing routes. Five executable blocks and historical0.5.0 release claims unchanged.",
+    "strict_previews": {
+      "source": {
+        "mode": "source",
+        "code": 0,
+        "scope": "Strict full docs with three prose-only future source-read overlays. Root source and source checkpoint unchanged; installed mode reuses f722b45 artifact, not a new installed candidate.",
+        "source_read_overlays": {
+          "content/user/feature_archives": "c444da40c8fb01279144fd8a4765711bfb70194af3a7d655af90e35655b2e74a",
+          "content/user/native_feature_reuse": "4e66ada90e332a802510aca253d06bb113c4163fdcf9a9245b34dd10f00c7dc8",
+          "content/user/prepared_feature_reuse": "353061632806c523e7968e9932490f577b4d004e4b66e628f358c9fc72fa63fb"
+        },
+        "runtime_version": "0.5.0+7.g35559b3",
+        "public_puw": "0.28.1",
+        "native_origins_checked": 172,
+        "notebook_execution": "off"
+      },
+      "installed": {
+        "mode": "installed",
+        "code": 0,
+        "scope": "Strict full docs with three prose-only future source-read overlays. Root source and source checkpoint unchanged; installed mode reuses f722b45 artifact, not a new installed candidate.",
+        "source_read_overlays": {
+          "content/user/feature_archives": "c444da40c8fb01279144fd8a4765711bfb70194af3a7d655af90e35655b2e74a",
+          "content/user/native_feature_reuse": "4e66ada90e332a802510aca253d06bb113c4163fdcf9a9245b34dd10f00c7dc8",
+          "content/user/prepared_feature_reuse": "353061632806c523e7968e9932490f577b4d004e4b66e628f358c9fc72fa63fb"
+        },
+        "runtime_version": "0.5.0+10.gf722b45",
+        "public_puw": "0.28.1",
+        "native_origins_checked": 172,
+        "notebook_execution": "off"
+      }
+    },
+    "applied_bytes_match_preview": true,
+    "new_candidate_artifact_qualified": false
+  },
+  "checkpoint_history": {
+    "path": "devguide/checkpoint_history_20261111.md",
+    "frozen_source": "47669463e8047f33c77537c5d7e010199cb411fd",
+    "original_body_bytes": 16679,
+    "original_body_sha256": "32dc3ef1cce31d50f6df3c92fb0f52e44a43e1d5bbd24741c8925ef5a7c34de9",
+    "original_body_preserved_unchanged_after_header": true
+  },
+  "runtime_bodies_unchanged": 183,
+  "commands": [
+    {
+      "name": "dispatch-checkpoint",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 10.880379888985772,
+      "observed_own_group_RSS_peak_bytes": 87134208,
+      "record": {
+        "bytes": 65198,
+        "sha256": "170d68add023ab016038c0da35943db0952cb12e27b9b59234644317d683ba5b"
+      }
+    },
+    {
+      "name": "docs-owned",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.014803149970248,
+      "observed_own_group_RSS_peak_bytes": 310816768,
+      "record": {
+        "bytes": 65913,
+        "sha256": "3ebbabe69bf9086b75940f0e799e683661a68795914666c90072c53db7cd8774"
+      }
+    },
+    {
+      "name": "docs-source",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.013820837019011,
+      "observed_own_group_RSS_peak_bytes": 310464512,
+      "record": {
+        "bytes": 65813,
+        "sha256": "9729d23843e7075e3d48f636e6ea0332d0a4e92e0fd3330cea048575e22d135c"
+      }
+    },
+    {
+      "name": "guide-preview-owned",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.426519122964237,
+      "observed_own_group_RSS_peak_bytes": 310517760,
+      "record": {
+        "bytes": 68177,
+        "sha256": "2e999f1dbdb2dc97e5d67b5689b67a41dfd6be1bc88b5197e8bf6a21ef790952"
+      }
+    },
+    {
+      "name": "guide-preview-source",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.016675685008522,
+      "observed_own_group_RSS_peak_bytes": 310501376,
+      "record": {
+        "bytes": 65839,
+        "sha256": "3db41036970acdcdda6576cf794adbebadd4abc18ad03c7d5d84f1105c9ba80e"
+      }
+    },
+    {
+      "name": "observe-native",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 4.576624276000075,
+      "observed_own_group_RSS_peak_bytes": 81633280,
+      "record": {
+        "bytes": 28615,
+        "sha256": "0acfbef1af72e7683e59e9fe95d096be397c67dd13a707fb6951b025d3edf909"
+      }
+    },
+    {
+      "name": "preparation-final-checks",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.677613403997384,
+      "observed_own_group_RSS_peak_bytes": 420765696,
+      "record": {
+        "bytes": 40741,
+        "sha256": "dfec2ae20c56a51b1e142a6769c3ddfb07f645a4b22fc8c50f6d3d87489cf04b"
+      }
+    },
+    {
+      "name": "receive-preparation-corrected",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.2047053609858267,
+      "observed_own_group_RSS_peak_bytes": 36954112,
+      "record": {
+        "bytes": 3262,
+        "sha256": "cf6ee2ee881abab46b977667c6f931c13b9d82ec5936a59247cbada48d5ba825"
+      }
+    },
+    {
+      "name": "receive-preparation",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 0.20397707098163664,
+      "observed_own_group_RSS_peak_bytes": 36868096,
+      "record": {
+        "bytes": 3243,
+        "sha256": "1c09dc6b82f409c3eac135593eb6f0d5a150ea43a04f75e991e7cef7b06b3d08"
+      }
+    },
+    {
+      "name": "receptor-initial",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 16.50314259697916,
+      "observed_own_group_RSS_peak_bytes": 113274880,
+      "record": {
+        "bytes": 97784,
+        "sha256": "7195824c3a7b842d9685b579c58a562b37876357cbf2a1dbe0296225de66d7ed"
+      }
+    },
+    {
+      "name": "resolve-handles",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 0.9150699180318043,
+      "observed_own_group_RSS_peak_bytes": 85602304,
+      "record": {
+        "bytes": 7381,
+        "sha256": "3b47e24f2b84661bc5d497f784e98be4544456751f3094a2e75289c9cb6e83d2"
+      }
+    },
+    {
+      "name": "source-collection",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 8.493575579021126,
+      "observed_own_group_RSS_peak_bytes": 265994240,
+      "record": {
+        "bytes": 51182,
+        "sha256": "2bd692ff9b09ad069aa0175fb05e78c3a35cbe697e94b132728c9c2df3d5df9d"
+      }
+    },
+    {
+      "name": "source-preparation",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 45.097413408977445,
+      "observed_own_group_RSS_peak_bytes": 420982784,
+      "record": {
+        "bytes": 263260,
+        "sha256": "3a619fe9d464f3e1367a645bb7156ae788f480b08c2a4456a148828dc5d37062"
+      }
+    },
+    {
+      "name": "source-watch",
+      "exit_code": 143,
+      "interruption": null,
+      "seconds": 1050.316382089979,
+      "observed_own_group_RSS_peak_bytes": 93937664,
+      "record": {
+        "bytes": 81877,
+        "sha256": "308270ef98d57aaa2e41b027ba90ffa7bdb0f1885797b68985fb30f666180cf7"
+      }
+    }
+  ],
+  "full_evidence": {
+    "path": "source_060_recovery_20261111.json.gz",
+    "compressed_bytes": 73487,
+    "compressed_sha256": "48c66c5808e4a20c1c66dc102b22bc1382bd63cbb9d778b93c82001911c26fc9",
+    "uncompressed_bytes": 500544,
+    "uncompressed_sha256": "8f1c14ce31a90c08d9d4eb343228ee2b4a8beba226d365f7c13605b94eca336b"
+  },
+  "remote_raw_evidence": "Retained local only; original run/job responses and receptor captures are not published.",
+  "recovery": {
+    "case": "build/phmt-060-source-checkpoint-20261111-bf2vx9h_",
+    "owners": "LMMV/dprada",
+    "retention_review": "2026-11-25",
+    "action": "Inspect source43084105668, policy43084115680 and publication43084124337 at attempt1. Once completed, capture metadata/full source with GH Run Receptor1.4.0, inspect native required steps/counts/coverage and run controls/qualify_source.py. It reads frozen Git objects and labels later main separately. If temporary paths are cleaned, restore own controls from this verified archive in a new case; do not reset the shared checkout.",
+    "no_automatic_redispatch_rerun_or_cancellation": true
+  },
+  "separate_gates": [
+    "#192 remains open: actual supported-source minor/platform isolation receiving has not run.",
+    "#9/#95 exact-source checkpoint remains pending, not accepted.",
+    "#10/#23 installed/public, MolSysMT#624, biological/human/scale remain separate.",
+    "#148/#165 stay stopped; no local full scientific suite or heavy benchmark selected.",
+    "No0.6.0 tag/Release/package/docs publisher; immutable0.5.0 and prospective0.5.0 Conda plan unchanged."
+  ],
+  "later_closeout_checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "518 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.347s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.062s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "later_changed_markdown_targets_checked": 447,
+  "own_recovery_archive_verified_files": 28,
+  "later_job_readback": {
+    "observed_at_utc": "2026-11-11T19:33:26Z",
+    "runs": {
+      "source": {
+        "id": 43084105668,
+        "jobs": [
+          {
+            "id": 130743900470,
+            "name": "Reporting governance",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901413,
+            "name": "Test on macos-15, Python 3.14",
+            "status": "in_progress",
+            "conclusion": null
+          },
+          {
+            "id": 130743901447,
+            "name": "Test on macos-15, Python 3.13",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901449,
+            "name": "Test on ubuntu-latest, Python 3.14",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901453,
+            "name": "Test on ubuntu-latest, Python 3.13",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901455,
+            "name": "Test on ubuntu-latest, Python 3.12",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901579,
+            "name": "Test on macos-15, Python 3.11",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901600,
+            "name": "Test on ubuntu-latest, Python 3.11",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743901626,
+            "name": "Test on macos-15, Python 3.12",
+            "status": "queued",
+            "conclusion": null
+          },
+          {
+            "id": 130743903452,
+            "name": "Check skipped-commit backlog",
+            "status": "completed",
+            "conclusion": "skipped"
+          }
+        ]
+      },
+      "policy": {
+        "id": 43084115680,
+        "jobs": [
+          {
+            "id": 130743934962,
+            "name": "policy / conformance",
+            "status": "queued",
+            "conclusion": null
+          }
+        ]
+      },
+      "publication": {
+        "id": 43084124337,
+        "jobs": [
+          {
+            "id": 130743965108,
+            "name": "publication / check",
+            "status": "queued",
+            "conclusion": null
+          }
+        ]
+      }
+    }
+  },
+  "later_required_job_states": {
+    "in_progress": 1,
+    "queued": 10,
+    "terminal_results_accepted": 0
+  }
+}

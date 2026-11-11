@@ -85,6 +85,8 @@ and closing one view never closes another caller's resources.
 
 The first profile is bounded: at most 4096 records, 8 MiB generation JSON, 4 MiB unique
 original bytes and 2 MiB per original. Limits apply together. This is saved-evidence
-inspection, with no public writer, index, large-library performance or biological
-prediction claim. Full metadata/format scope is in the
+inspection. The view itself is read-only; [public archive writing and recovery](feature_archive_writing.md)
+and [native-v2 assembly](native_feature_archives.md) use separate explicit
+operations and profiles in later development builds. These routes supply no
+persistent search index, large-library performance or biological prediction claim. Full metadata/format scope is in the
 [format contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_archive_format.md).

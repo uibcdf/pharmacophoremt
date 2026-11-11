@@ -72,3 +72,27 @@ PUW0.28.1 bytes and serial resource observations. Pip check passes in the routin
 Python3.14.10 environment. An older broken relative #9 report link was refused
 and corrected; the original failed command/output is retained. No local full
 scientific execution or complete candidate/public delivery follows from this.
+
+## Exact requests received; managed execution pending — 2026-11-11 UTC
+
+The validation source is 47669463e8047f33c77537c5d7e010199cb411fd, published with
+[skip ci]. One request per absent exact workflow is independently identified:
+source 43084105668, conformance 43084115680 and publication controls 43084124337,
+all attempt 1. First receptor/native snapshots are queued/PENDING, not accepted.
+After approximately 20minutes, native readback still finds the eleven required
+jobs queued and runner_id 0. The responses do not explain the queue cause; no
+scientific failure or particular infrastructure/account cause is inferred.
+
+The [pending receipt](evidence/source_060_pending_20261111.json) retains these
+actual observations and a verified own recovery-control archive. The local
+read-only watcher is deliberately stopped; its exit 143 is observer closeout,
+not remote cancellation or a test result. Keep remote executions and first
+attempts intact. Resume by observing these same handles, then qualify actual
+terminal steps/counts/skips/warnings and complete 127-path coverage XML. The
+read-only qualifier binds frozen Git objects, so a later documentation/evidence
+head can receive 4766946 without resetting the shared checkout or claiming that
+later head was tested. A tag/publication decision remains separate.
+
+Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
+jobs remain queued. Preserve the earlier queued observation and original handles;
+this transition is not a passing scientific/complete-source gate.

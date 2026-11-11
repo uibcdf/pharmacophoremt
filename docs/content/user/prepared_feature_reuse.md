@@ -8,6 +8,12 @@ chemical state and requested feature families for reuse. This is the current
 supported development-source composition; its installed/public qualification
 has the scope recorded in the linked recipe and installation guide.
 
+For a new extraction, [`modeler.capture_features`](feature_capture.md) retains
+the effective evaluated families and original software automatically. The same
+inventory can be [saved as a native payload](native_feature_payloads.md) or
+[assembled into an archive](native_feature_archives.md) through explicit public
+operations. The 0.5.0 source tag retains its earlier read-only scope.
+
 A feature inventory describes participants and geometry. It carries the original
 feature ordering and atom mappings. A query describes what to match. A saved run
 also binds that query, effective settings, preparation declarations and producer
@@ -63,7 +69,9 @@ current saved-run format.
 
 An empty inventory from an aromatic-ring-only request records that evaluation.
 It does not record donor or charge evaluation. When preparing reusable features,
-retain the requested families, including those that return no features. A query
+retain the requested families, including those that return no features. New
+`capture_features` results retain this effective coverage; historical inventories
+keep the explicit declaration route when encoded. A query
 over captured inventories has that captured scope; source-level screening needs
 the relevant evaluation coverage or a separately qualified exclusion proof.
 Request additional families explicitly when they are needed. Valid geometry or
@@ -96,6 +104,12 @@ evidence, with human usability and the public store interface still pending.
 
 The subsequent [public API proposal](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_asset_public_api.md)
 separates lightweight saved-feature inspection from explicit scientific reuse.
-The read-only [feature archive view](feature_archives.md) is now implemented in
-development source; native reconstruction and public writers remain later slices.
-Existing scientific APIs and stored-run formats keep their current contracts.
+Development source now supplies the [cold archive view](feature_archives.md),
+[explicit native reconstruction](native_feature_reuse.md),
+[writer/publication recovery](feature_archive_writing.md),
+[native record assembly](native_feature_archives.md) and
+[source-owned capture](feature_capture.md). These bounded public operations are
+distinct from the historical studies above: they preserve complete inventories,
+original evidence and explicit profiles, without selecting a persistent search
+index or authenticating a molecular collection. Existing scientific APIs and
+stored-run formats keep their current contracts.
