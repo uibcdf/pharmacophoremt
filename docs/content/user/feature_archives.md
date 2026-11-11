@@ -78,8 +78,8 @@ private producer data; requesting them does not register new scientific credit.
 Returned bytes/pages remain usable after close. Further view operations refuse,
 and closing one view never closes another caller's resources.
 
-The first profile is bounded: at most4096records,8 MiB generation JSON,4 MiB unique
-original bytes and2 MiB per original. Limits apply together. This is saved-evidence
+The first profile is bounded: at most 4096 records, 8 MiB generation JSON, 4 MiB unique
+original bytes and 2 MiB per original. Limits apply together. This is saved-evidence
 inspection, with no public writer, index, large-library performance or biological
 prediction claim. Full metadata/format scope is in the
 [format contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_archive_format.md).

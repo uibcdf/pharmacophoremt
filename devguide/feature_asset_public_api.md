@@ -3,10 +3,10 @@
 Owners LMMV/dprada; 2026-11-11 UTC;
 [#188](https://github.com/uibcdf/pharmacophoremt/issues/188), following
 [the guided/expert exercise](feature_store_workflow.md).
-At#188, all names/signatures below were proposed, not importable APIs. That
+At #188, all names/signatures below were proposed, not importable APIs. That
 original design/admission receipt remains unchanged. The later
 [#189 read-only view](feature_archive_format.md) implements the reader portion
-in source under its own declared-metadata/opaque-original format. Native
+in source and a qualified selected owned wheel under its own declared-metadata/opaque-original format. Native
 reconstruction and public writer/recovery signatures below remain proposals;
 no public channel/platform/release or production index is implied.
 

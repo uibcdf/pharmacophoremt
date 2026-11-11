@@ -55,6 +55,7 @@ class TestDistributionContract(unittest.TestCase):
             "devtools/dependency_routes.toml",
             "pharmacophoremt",
             "pharmacophoremt_results",
+            "pharmacophoremt_features",
             "molsysviewer_pharmacophoremt",
             "phmt_test_support",
             "tests/data",
@@ -148,6 +149,7 @@ class TestDistributionContract(unittest.TestCase):
             for namespace in (
                 "pharmacophoremt",
                 "pharmacophoremt_results",
+                "pharmacophoremt_features",
                 "molsysviewer_pharmacophoremt",
             )
             for path in (self.root / namespace).rglob("*")
@@ -169,6 +171,12 @@ class TestDistributionContract(unittest.TestCase):
             del entries["site-packages/pharmacophoremt/" + name]
             with self.subTest(name=name), self.assertRaises(ValueError):
                 self.validate(entries)
+
+    def test_missing_feature_archive_module_fails_archive_validation(self):
+        entries = self.payload()
+        del entries["site-packages/pharmacophoremt_features/_schema.py"]
+        with self.assertRaises(ValueError):
+            self.validate(entries)
 
     def test_missing_committed_runtime_dataset_fails_archive_validation(self):
         entries = self.payload()
@@ -219,12 +227,14 @@ class TestDistributionContract(unittest.TestCase):
                 in {
                     "pharmacophoremt",
                     "pharmacophoremt_results",
+                    "pharmacophoremt_features",
                     "molsysviewer_pharmacophoremt",
                 }
                 or name.startswith(
                     (
                         "pharmacophoremt.",
                         "pharmacophoremt_results.",
+                        "pharmacophoremt_features.",
                         "molsysviewer_pharmacophoremt.",
                     )
                 )
@@ -233,6 +243,7 @@ class TestDistributionContract(unittest.TestCase):
         )
         self.assertIn("pharmacophoremt.screening", packages)
         self.assertIn("pharmacophoremt_results", packages)
+        self.assertIn("pharmacophoremt_features", packages)
         self.assertIn("molsysviewer_pharmacophoremt.panels", packages)
         self.assertEqual(
             project["project"]["entry-points"]["molsysviewer.addons"],
@@ -283,11 +294,22 @@ class TestDistributionContract(unittest.TestCase):
                     "prepared_library_recovery",
                     "pubchem3d_receiving_pilot",
                     "feature_reuse_experiment",
+                    "feature_snapshot",
+                    "feature_asset_admission",
+                    "feature_archive_export",
+                    "feature_store",
+                    "feature_store_workflow",
+                    "typed_retrieval",
                 ):
                     with self.subTest(helper=helper):
                         name = f"phmt_test_support.{helper}"
                         spec = importlib.util.find_spec(name)
-                        expected = ROOT / f"phmt_test_support/{helper}.py"
+                        expected = ROOT / "phmt_test_support" / helper
+                        expected = (
+                            (expected / "__init__.py")
+                            if expected.is_dir()
+                            else expected.with_suffix(".py")
+                        )
                         self.assertEqual(
                             Path(spec.origin).read_bytes(), expected.read_bytes()
                         )

@@ -3,7 +3,7 @@
 Owners LMMV/dprada; 2026-11-11 UTC;
 [#189](https://github.com/uibcdf/pharmacophoremt/issues/189). This implements the
 first reader slice of the [API proposal](feature_asset_public_api.md).
-`pharmacophoremt_features.FeatureAssetView` is a same-distribution source API.
+`pharmacophoremt_features.FeatureAssetView` is a same-distribution public source API.
 Its public-channel/platform/release qualification stays separately #23-owned.
 
 ## Meaning and validation planes
@@ -37,7 +37,7 @@ A caller owns a trusted local directory containing canonical UTF-8 JSON:
 
 - `STORE.json`: exactly schema `pharmacophoremt.feature-archive@1` and profile
   `declared-classical-inventory@1`.
-- `CURRENT`: exactly that store schema, a lowercase64hex generation SHA-256 and
+- `CURRENT`: exactly that store schema, a lowercase 64-hex generation SHA-256 and
   the referenced generation document's exact `bytes` count.
 - `generations/<sha256>.json`: one canonical generation document. Its exact
   SHA-256 is its identity. Paths, current aliases and relocation do not change it.
@@ -47,12 +47,12 @@ Its schema is `pharmacophoremt.feature-archive-generation@1`; profile is as abov
 `origin` retains the producer's source-format identifier, original generation
 identity and explicit export policy. It is provenance data, not authentication.
 
-At most4096records,8 MiB encoded generation JSON,4 MiB unique decoded original
-bytes and2 MiB per original are accepted. All bounds apply together. They are
+At most 4096 records, 8 MiB encoded generation JSON, 4 MiB unique decoded original
+bytes and 2 MiB per original are accepted. All bounds apply together. They are
 reader limits for a bounded metadata-evidence profile, not public-library scale,
 streaming, performance or persisted-index qualification. Finite text is bounded;
-counts/parent indices use nonnegative signed64-bit integers, excluding booleans.
-Metadata strings are UTF-8; literal keys are nonempty and at most512UTF-8bytes.
+counts/parent indices use nonnegative signed 64-bit integers, excluding booleans.
+Metadata strings are UTF-8; literal keys are nonempty and at most 512 UTF-8 bytes.
 
 Every record retains exact `work_key`, `source_key`, `occurrence_key` and `status`.
 Work keys are unique; repeated sources/occurrences/payloads preserve multiplicity.
@@ -63,7 +63,7 @@ requested data; they are not automatically attached to diagnostics.
 
 `extraction` declares `classical_atomic_formal@1`, the canonical nonempty requested
 classical-family set, coverage, prepared-parent metadata and original producer.
-Coverage has exactly those requested families. Counts are bounded to64features
+Coverage has exactly those requested families. Counts are bounded to 64 features
 in total; a positive count uses `completed`, zero uses `evaluated_empty`. These
 are metadata consistency checks, not counts recomputed from the opaque original.
 Parent source/occurrence bindings agree with their record; original artifact
@@ -116,7 +116,7 @@ Required families admit neither a molecular source nor a matching method.
 ArgDigest owns definition-bound function/value admission. Native Python and
 provider-compatible TypeErrors retain their call-shape meaning. No internal bypass
 keyword is exposed. SMonitor owns catalog rendering/emission and application
-policy. Codes PHMT-E301throughE307 distinguish argument, integrity, read I/O,
+policy. Codes PHMT-E301 through PHMT-E307 distinguish argument, integrity, read I/O,
 closed view, unknown selection, absent completed payload and unsupported format/
 reader profile. Original exceptions remain causes. Raw paths/keys/payloads/native
 error text are not constructed as diagnostic extras; applications own capture.
@@ -138,12 +138,35 @@ transaction, automatic conversion, publication or recovery implementation.
 
 ## Qualification and next boundary
 
-The [reader receipt/archive](evidence/feature_asset_view_source_20261111.json) currently owns selected source controls and original data/export evidence.
-Owned-wheel, fresh cold import, no-new-credit and complete documentation receiving
-are still pending in this implementation checkpoint. Earlier#186/#187/#188receipts retain
-their original scope. Source APIs and a selected owned wheel are not full supported
-public/platform/release acceptance or human/biological validation. Keep #9/#23,
-MolSysMT#624, persisted lookup/cost/scale and stopped#148/#165 separate.
+The [completed reader receipt/archive](evidence/feature_asset_view_20261111.json)
+receives 98 selected source controls and 98 installed controls, the exact owned
+wheel from implementation commit `64bd805`, 221 wheel payload files and 166
+non-generated runtime Python bodies. Both cold readers verify eleven original
+payloads, the seven actual catalog errors, preserved application policy and three
+exact documentation code blocks. Real Ackredit sessions preserve original bytes,
+producer labels and detached references without adding new credit. The earlier
+[source-only receipt](evidence/feature_asset_view_source_20261111.json) remains
+unchanged as historical evidence.
+
+The installed test context differs from the original source context: live
+MolSysMT Python/native files changed in between. The first installed fence refused
+before imports; the old native binary could not be recovered. Installed tests
+instead use an independently copied and hashed current provider context (4608
+Python files, versus the original 4594). This does not relabel old captures or
+qualify the changed molecular provider scientifically. Cold readers import none
+of those providers. Their SDK-only origin checks admit measured QA dependencies
+after reader actions; the existing improvement is MolSysSuite#176.
+
+The original pytest collection, controller dependency/bibliography assertions,
+distribution-test corrections and the pressure-interrupted first build remain
+recorded. One wheel-build resume used the same limits and existing private
+checkout after pressure subsided. The distribution inventory now includes the
+seven reader modules and 65 previously absent selected support/input files;
+26 administrative distribution controls pass. No shared prefix was changed.
+
+Selected source/owned evidence is separate from full supported public/platform/
+release acceptance and human/biological validation. Keep #9/#23, MolSysMT#624,
+persisted lookup/cost/scale and stopped #148/#165 separate.
 
 Next connect a qualified native inventory reconstruction operation to this view,
 with explicit accepted original formats, expected generation, QuantityRecord floor

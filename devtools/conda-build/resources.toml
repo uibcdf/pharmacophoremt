@@ -210,6 +210,13 @@ required_paths = [
   "site-packages/pharmacophoremt_results/_meta.py",
   "site-packages/pharmacophoremt_results/_smonitor.py",
   "site-packages/pharmacophoremt_results/_store.py",
+  "site-packages/pharmacophoremt_features/__init__.py",
+  "site-packages/pharmacophoremt_features/_api.py",
+  "site-packages/pharmacophoremt_features/_diagnostics.py",
+  "site-packages/pharmacophoremt_features/_digestion.py",
+  "site-packages/pharmacophoremt_features/_schema.py",
+  "site-packages/pharmacophoremt_features/_smonitor.py",
+  "site-packages/pharmacophoremt_features/_storage.py",
 ]
 
 [installed_gate]
@@ -558,3 +565,328 @@ sha256 = "d9aed488c9610e278b5bfc6b9da3858b476dbf37c8266737f41149703a41d99a"
 source = "phmt_test_support/feature_reuse_experiment.py"
 target = "phmt_test_support/feature_reuse_experiment.py"
 sha256 = "96bba5fcc9a833909760759dcf10b565564e78394da94c9cce3ea613dd0d6f12"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_archive_export.py"
+target = "phmt_test_support/feature_archive_export.py"
+sha256 = "efdb039e9b6fc1781ffa16230e2561103e4677dbb40b0e17270b556ea900998e"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_asset_admission/__init__.py"
+target = "phmt_test_support/feature_asset_admission/__init__.py"
+sha256 = "69f342cd9fbd4d53260d3ed86c4eae7f9ec910a3c92727b9b7d119fcf4f2250d"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_asset_admission/_contracts.py"
+target = "phmt_test_support/feature_asset_admission/_contracts.py"
+sha256 = "db978e4ee0d9c1b6bd80589f845e577c519e204817161babc3d9921b1c1e1eec"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_asset_admission/_diagnostics.py"
+target = "phmt_test_support/feature_asset_admission/_diagnostics.py"
+sha256 = "48be42bf9a8fa42c4bb02899f4e941ed7b1748000d537e776f4004d568daafc4"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_asset_admission/_smonitor.py"
+target = "phmt_test_support/feature_asset_admission/_smonitor.py"
+sha256 = "480e7efb3745f3e67da4f8b0575c10aad86beb498519801c4ef1aa664032da3d"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_snapshot.py"
+target = "phmt_test_support/feature_snapshot.py"
+sha256 = "1e4ae7deb7a0e815dcefcc7d3698d6f1f13919a887fb9e72d737f7d1bf75dba2"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_snapshot_case.py"
+target = "phmt_test_support/feature_snapshot_case.py"
+sha256 = "e960fc2fa707d76a48e99c81d88a212425cef2e07d93ae396faf8640f9436f03"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_store.py"
+target = "phmt_test_support/feature_store.py"
+sha256 = "cdd4801870d9a7ee0ce8d40a74eb4e8f243ab23507661a58556067c43331e291"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/feature_store_workflow.py"
+target = "phmt_test_support/feature_store_workflow.py"
+sha256 = "ff0e5b69edeb28bed8e555e109281f8bdf5d462e417bc0f631d67b408fd96c1b"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/pmapper_controls.py"
+target = "phmt_test_support/pmapper_controls.py"
+sha256 = "e2a735922c43268e613914881a04af4ab910d9e7dbb6bc2e787f757a45cb8e4b"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/retrieval_checkpoint.py"
+target = "phmt_test_support/retrieval_checkpoint.py"
+sha256 = "0cfbe551edb0563ce680f2c4e0674333a1768379d7cde0df5aeea9fa4a1d8329"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/retrieval_controls.py"
+target = "phmt_test_support/retrieval_controls.py"
+sha256 = "b3c6f1f7eb0b6815234bc1bf752ef298c650dcf404cd08dac7b1bf95f6c314e0"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/retrieval_cost.py"
+target = "phmt_test_support/retrieval_cost.py"
+sha256 = "a99c10dc18cc406f96ac261f6ea76e48455580f0480bdfe18493bff086b926db"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/search_asset_contract.py"
+target = "phmt_test_support/search_asset_contract.py"
+sha256 = "69df60132d7bd976e96d091380e49b541c594aa46bfaec6bfd18fd32ec659416"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/snapshot_retrieval.py"
+target = "phmt_test_support/snapshot_retrieval.py"
+sha256 = "a71a2d130447592f6d215c2134829ed98b827cb2cf37170159fa117fd0896eb9"
+
+[[installed_tests.support.files]]
+source = "phmt_test_support/typed_retrieval.py"
+target = "phmt_test_support/typed_retrieval.py"
+sha256 = "43daa1d376c5169ea1c41f898d390cab46e2a2f7d76b7c03a86a5bb65db49569"
+
+[[installed_tests.support.files]]
+source = "tests/data/pmapper_controls/declaration.json"
+target = "tests/data/pmapper_controls/declaration.json"
+sha256 = "e8d70074bb5759e1f35d66c2159a7a108c6604180357c9905272e7339b1e3b82"
+
+[[installed_tests.support.files]]
+source = "tests/data/retrieval_controls/declaration.json"
+target = "tests/data/retrieval_controls/declaration.json"
+sha256 = "c0b3024f9789656b9dbb799f17b0523233289ca3532b26ca5120118ab9d98877"
+
+[[installed_tests.support.files]]
+source = "tests/data/retrieval_cost/declaration.json"
+target = "tests/data/retrieval_cost/declaration.json"
+sha256 = "13d67c868db1c06dfaacbee315f148e16bccfaa93ee53b1c1a6d327c5e7f1ff6"
+
+[[installed_tests.support.files]]
+source = "tests/data/retrieval_cost/expected.json"
+target = "tests/data/retrieval_cost/expected.json"
+sha256 = "b35063e2c453c8502e9dfe41a896d96d67cd4e0e547cc6623740efd46c031a7b"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/declaration.json"
+target = "tests/data/snapshot_retrieval/declaration.json"
+sha256 = "cc8ac6b0d9a51eaa544be0e6f57b8c9b0e51f6f586d62765328c527ba9c1f8f3"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/nm-aromatic.json"
+target = "tests/data/snapshot_retrieval/installed/nm-aromatic.json"
+sha256 = "5d2f0c53b6deaec517f9c60e87f9a2a2060671f277a14ccc4762a1181a347950"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/nm-charges.json"
+target = "tests/data/snapshot_retrieval/installed/nm-charges.json"
+sha256 = "be6151eab8eec9c51f8bcd804b60424acb13a3f09c86b78c748bc7ef39052439"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/nm-donors.json"
+target = "tests/data/snapshot_retrieval/installed/nm-donors.json"
+sha256 = "b73a97e6c6847cc7a5be737d6ffc127a0b7d206761112765637b1ea7419882d8"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/nm-empty.json"
+target = "tests/data/snapshot_retrieval/installed/nm-empty.json"
+sha256 = "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/pm-aromatic.json"
+target = "tests/data/snapshot_retrieval/installed/pm-aromatic.json"
+sha256 = "d78319301d132d2ded0e324bb9b0d3349171615b95d70214d820dc147665b294"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/pm-charges.json"
+target = "tests/data/snapshot_retrieval/installed/pm-charges.json"
+sha256 = "f80b97cfd10fb19d195a1c0fe4095dae8b5d8250857d817d2ad40c7a967cfc7a"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/pm-donors.json"
+target = "tests/data/snapshot_retrieval/installed/pm-donors.json"
+sha256 = "dd0dfe7b4e5b2794fd3c8b6939506bc46b7f59948dadc6b5ca0242c0d1da070b"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/installed/pm-empty.json"
+target = "tests/data/snapshot_retrieval/installed/pm-empty.json"
+sha256 = "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/originals.json"
+target = "tests/data/snapshot_retrieval/originals.json"
+sha256 = "a919f3ed34fdba360463f77b575a45f8f27cc8d97e9b692aab715e60b87ea019"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/nm-aromatic.json"
+target = "tests/data/snapshot_retrieval/source/nm-aromatic.json"
+sha256 = "9f94626fa32e40f18d98c0c40b4dcc46bbde3cc97127578ecbdd08a646474bab"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/nm-charges.json"
+target = "tests/data/snapshot_retrieval/source/nm-charges.json"
+sha256 = "1dab9dd2556c6973626873e45b70f60401b47b8a1519f793e33710a2ab726cdc"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/nm-donors.json"
+target = "tests/data/snapshot_retrieval/source/nm-donors.json"
+sha256 = "0cdd3640d676ba2c0ca4dbc75b003f264d5d63513341f36cc40ce31bf1d62d0c"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/nm-empty.json"
+target = "tests/data/snapshot_retrieval/source/nm-empty.json"
+sha256 = "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/pm-aromatic.json"
+target = "tests/data/snapshot_retrieval/source/pm-aromatic.json"
+sha256 = "dcda0e37a3112aac90d3d06c5cf407041795ec8618e5a100b92c8af9860a3e01"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/pm-charges.json"
+target = "tests/data/snapshot_retrieval/source/pm-charges.json"
+sha256 = "94acffe2de6d432edb26b25d2ed11c16175f059539e9b7784a7a4faed99789dc"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/pm-donors.json"
+target = "tests/data/snapshot_retrieval/source/pm-donors.json"
+sha256 = "32110bd22adaf677c8441fcd04cb6f49828a71b3cfe3d0f4b33b59cf37d2e4a3"
+
+[[installed_tests.support.files]]
+source = "tests/data/snapshot_retrieval/source/pm-empty.json"
+target = "tests/data/snapshot_retrieval/source/pm-empty.json"
+sha256 = "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/declaration.json"
+target = "tests/data/typed_retrieval/declaration.json"
+sha256 = "5e7f277e6c323a8f82698d73fcc5daf2a2d80e09c7bdfb45a4785cfb97b68b00"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/donors4.h5msm"
+target = "tests/data/typed_retrieval/donors4.h5msm"
+sha256 = "5d2faeefbf79738c79477b1e694cc6f80ab55bbde6d0de5dc5df7e6e8191d1c1"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/nm-donors4.json"
+target = "tests/data/typed_retrieval/installed/new/nm-donors4.json"
+sha256 = "92e5c6bacd0c6a68cb1ba097aae30755092bf586d51c3a829b4df8f3912cc63b"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/nm-mixed3.json"
+target = "tests/data/typed_retrieval/installed/new/nm-mixed3.json"
+sha256 = "01a755c39099140b667a34c895d579b552cd5c002594a755d69462f26509a219"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/nm-mixed4.json"
+target = "tests/data/typed_retrieval/installed/new/nm-mixed4.json"
+sha256 = "f2a4b7100602576f03eb14eeaee8d31daa99386d35ed19b4d51537706ebc1818"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/nm-ring3.json"
+target = "tests/data/typed_retrieval/installed/new/nm-ring3.json"
+sha256 = "70877d22591d62deeca6d60242d2aebdd4d6bcd4f6bc68859d99d36e22ded991"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/pm-donors4.json"
+target = "tests/data/typed_retrieval/installed/new/pm-donors4.json"
+sha256 = "aaa4bbd2d4adfafc7b8c6341e287c2ff0a73f2909b6f69158e0d9c2033d3b7b1"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/pm-mixed3.json"
+target = "tests/data/typed_retrieval/installed/new/pm-mixed3.json"
+sha256 = "a7d93866161196b4ccaa5cb3ff9003342fde4e317a0c3dff3d83960df1c67c6d"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/pm-mixed4.json"
+target = "tests/data/typed_retrieval/installed/new/pm-mixed4.json"
+sha256 = "8a5bb58e7128a0ae859447a874ced046b2ddfc993ae8b750c6e68a9772cd91fa"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/new/pm-ring3.json"
+target = "tests/data/typed_retrieval/installed/new/pm-ring3.json"
+sha256 = "28aa6ea2be8763d10df5ca5f7c8ad1f6c3a711ea2438d42f0316b428496e0556"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/old/nm-donors.json"
+target = "tests/data/typed_retrieval/installed/old/nm-donors.json"
+sha256 = "b73a97e6c6847cc7a5be737d6ffc127a0b7d206761112765637b1ea7419882d8"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/installed/old/nm-empty.json"
+target = "tests/data/typed_retrieval/installed/old/nm-empty.json"
+sha256 = "71daf83ad6111af585a0cee0fc2972f6c6097d937d7e3c15ae4c50d3fdba3d50"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/mixed3.h5msm"
+target = "tests/data/typed_retrieval/mixed3.h5msm"
+sha256 = "20e3603ff5707647443ed4ac585d9751b9d3343afbe3b08175110f143daccc45"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/mixed4.h5msm"
+target = "tests/data/typed_retrieval/mixed4.h5msm"
+sha256 = "9740cf84ea36edfe37ebb6d03014abad7386318220f00dc87bea5a407b55c01f"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/originals.json"
+target = "tests/data/typed_retrieval/originals.json"
+sha256 = "61764adf538e7da333a3954643baa71afa6adc2d2838b202aa5d89fe7bf78128"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/parents.json"
+target = "tests/data/typed_retrieval/parents.json"
+sha256 = "dae3110d04cce0233b50a58ce447226e08b326db0db71a35106e4d243ba05d62"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/ring3.h5msm"
+target = "tests/data/typed_retrieval/ring3.h5msm"
+sha256 = "b5cf163b5d25eaf5061ebb8b1967e4339de325e0d6fabba54854aec14bceb433"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/nm-donors4.json"
+target = "tests/data/typed_retrieval/source/new/nm-donors4.json"
+sha256 = "f10e2d23d5466a0ab4d29aa210487548c637c9dd2375d68207450efc693dba34"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/nm-mixed3.json"
+target = "tests/data/typed_retrieval/source/new/nm-mixed3.json"
+sha256 = "d95e08d5cedd27aa378094f5d63cddce4b0cdd85fb2a558d28642792779560b3"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/nm-mixed4.json"
+target = "tests/data/typed_retrieval/source/new/nm-mixed4.json"
+sha256 = "5286cfec9a31597e0e9804dbb4a4753e6b225c6e84f36ed4e959ce59bcd66775"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/nm-ring3.json"
+target = "tests/data/typed_retrieval/source/new/nm-ring3.json"
+sha256 = "eb0d61a8f537d9e2698f78b77fc311be7677642bab5d49aac294617f1da9c70d"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/pm-donors4.json"
+target = "tests/data/typed_retrieval/source/new/pm-donors4.json"
+sha256 = "af14e49203b8f9b6fd3ddd78219ef9d63c3bf51e11addc28000bcab5d8a2b60f"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/pm-mixed3.json"
+target = "tests/data/typed_retrieval/source/new/pm-mixed3.json"
+sha256 = "50b0473543a964777892682f62b345151f4064936cbbb1e41467ce3b2560e517"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/pm-mixed4.json"
+target = "tests/data/typed_retrieval/source/new/pm-mixed4.json"
+sha256 = "68a3e96c0426a88ee94eacc1647cf8f5dc3ea19e4023fcf3aaae05a3b04d6739"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/new/pm-ring3.json"
+target = "tests/data/typed_retrieval/source/new/pm-ring3.json"
+sha256 = "949564e3539f6fe7b1400567add1588d872f9756c6ea30926ba63538758f68c8"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/old/nm-donors.json"
+target = "tests/data/typed_retrieval/source/old/nm-donors.json"
+sha256 = "0cdd3640d676ba2c0ca4dbc75b003f264d5d63513341f36cc40ce31bf1d62d0c"
+
+[[installed_tests.support.files]]
+source = "tests/data/typed_retrieval/source/old/nm-empty.json"
+target = "tests/data/typed_retrieval/source/old/nm-empty.json"
+sha256 = "925885bccf9505bdb359799e9c467138facf3b27d121229e28ea452beea135ea"

@@ -54,6 +54,7 @@ rdkit_interoperability
 pharmer_interoperability
 chemical_libraries
 prepared_feature_reuse
+feature_archives
 ```
 
 ## Find examples and reference material

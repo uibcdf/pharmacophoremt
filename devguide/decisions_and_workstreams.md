@@ -2,11 +2,21 @@
 
 ## Read-only feature archive implementation — #189 (2026-11-11 UTC)
 
-The [source API/format](feature_archive_format.md) now has98selected source guards
-and a [source receipt](evidence/feature_asset_view_source_20261111.json). Original
-opaque bytes and declared metadata stay separate from quantity/source/query
-validation. Explicit study export retains old evidence. Owned-wheel, cold reader
-and final documentation receiving are the next gates; no public delivery claim.
+The [public source API/format](feature_archive_format.md) and
+[completed receipt/archive](evidence/feature_asset_view_20261111.json) receive
+98 source and 98 installed selected controls, an exact owned wheel (221 payload
+files/166 runtime Python bodies), two scientifically cold readers with seven
+catalog errors, original-byte/reference/no-new-credit reading and the executable
+user guide/download. All 26 distribution controls pass. Source and installed
+provider contexts are explicitly distinct after sibling Python/native changes;
+old captures and the historical source-only receipt remain unchanged. Initial
+controller corrections and the pressure-interrupted/same-limit-resumed build
+remain retained; no shared environment update or native scientific rerun occurred.
+
+Next define explicit native reconstruction: accepted original formats, expected
+generation, public quantity validation and retained original maps/attribution.
+Public writers/recovery, human receiving, scale and full #9/#23 qualification stay
+separate. MolSysMT#624 remains unreceived; #148/#165 remain stopped.
 
 ## Minimal public feature-asset API proposal — #188 (2026-11-11 UTC)
 

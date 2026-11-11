@@ -16,21 +16,30 @@ from interpretation of opaque original payloads, quantity/geometry validation,
 source authentication and query admission. Raw study stores refuse; explicit
 unshipped export creates a distinct archive while retaining old evidence.
 
-The [source receipt](evidence/feature_asset_view_source_20261111.json) records98
-selected source guards (54reader/44admission), preserved eleven original payloads
-and producer metadata, literal global positions, corrupt/unsupported/partial
-refusal, zero-count pages, close/relocation and real payload/aggregate bounds.
-The original reserved pytest-parameter collection refusal remains retained; no
-reader/provider behavior changed to correct it. A downloadable analytical archive
-is generated and retained, without activity/biological claims.
+The [completed receipt/archive](evidence/feature_asset_view_20261111.json) records
+98 selected source and 98 installed controls (54 reader/44 admission), the exact
+owned wheel from implementation commit `64bd805` (221 payload files/166 runtime
+Python bodies), two scientifically cold readers, all seven actual catalog errors,
+three executable guide blocks and no-new-credit original-byte/reference reading.
+The user guide includes an analytical download. All 26 administrative distribution
+controls pass; the inventory now covers the new namespace and selected fixtures.
+The [earlier source checkpoint](evidence/feature_asset_view_source_20261111.json)
+retains its original state.
 
-Next build one owned wheel from this committed source, verify every delivered
-payload including the new namespace, and receive installed/cold/import-policy,
-no-new-credit and strict documentation gates. This is a source implementation
-checkpoint, not completed installed/public/platform/release qualification.
-Scientific runtime/provider bodies remain unchanged. MolSysMT#624 unreceived;
-QuantityRecord provisional; #148/#165 stopped; full exact-head/public gates
-remain #9/#23-owned. No environment/public release or remote CI is requested.
+Source and installed provider contexts are distinct: a live sibling changed Python
+and native files after source tests. The original fence refused before imports;
+installed controls use a separately frozen current provider context. Original
+captures keep their producer/version/native identity. This is no scientific
+requalification of changed MolSysMT. First collection/controller corrections and
+the pressure-interrupted build remain recorded; the single same-limit build resume
+retained its existing checkout. Shared environments were not changed.
+
+Next design explicit native reconstruction from this archive: declare accepted
+original formats, require an expected generation, validate quantities through
+PyUnitWizard and preserve original maps/attribution. Keep public writing/recovery
+as another slice and human receiving independent. MolSysMT#624 remains unreceived;
+QuantityRecord provisional; #148/#165 stopped; #9/#23 retain full exact-head/public/
+platform/release gates. No release or remote CI checkpoint is requested.
 
 ## Received foundations and their boundaries
 
