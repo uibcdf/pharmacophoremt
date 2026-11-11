@@ -63,3 +63,14 @@ supported minor and Linux/macOS. #192 remains partial until that receiving.
 Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
 jobs remain queued. Preserve the earlier queued observation and original handles;
 this transition is not a passing scientific/complete-source gate.
+
+## First supported source cell received — 2026-11-11 UTC
+
+[Partial exact-source receipt](../evidence/source_060_partial_20261111.json)
+verifies macOS arm64/Python 3.14.10 at 4766946: all 3,388 cases pass with no skips,
+48 retained warnings and 127 qualified coverage paths. Its warning table contains
+no DeprecationWarning and no controlled threaded-parent fork deprecation.
+Preflight/install/import/architecture/full-command/coverage and original log
+identities are verified. The other seven cells and required control workflows
+remain unreceived; #192 stays active until complete supported receiving. This
+single cell does not establish general thread/fork safety or public delivery.

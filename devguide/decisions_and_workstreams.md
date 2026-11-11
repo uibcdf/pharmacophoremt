@@ -1,5 +1,24 @@
 # Decisions and active workstreams
 
+## Partial source receiving and public-feature exercise — 2026-11-11 UTC
+
+[Partial receiving](evidence/source_060_partial_20261111.json) verifies frozen
+4766946 on macOS arm64/Python 3.14.10: 3,388 pass/0 skip,48 warnings,127 qualified
+coverage paths and no controlled fork deprecations. Reporting receives
+3/18/8/161 controls. These job-only captures retain the overall run's pending
+state. All remaining scientific/control gates must be received before accepting
+the full checkpoint or closing #192; no request is duplicated.
+
+The [public feature usability protocol](public_feature_usability_receiving.md)
+and [participant card](../docs/content/user/feature_archive_exercise.md) now have
+[24 technical task instances and six extra cold checks](evidence/public_feature_usability_20261111.json)
+in source/reused-owned and nm/pm, with original inputs/references/lineage intact,
+183 unchanged runtime bodies and strict full docs. Initial controller scope and
+corrected runs remain separate. Human participants remain zero; actual independent
+novice/API observations stay #108-owned. Full source/public/installed, MolSysMT#624,
+biological/human/scale and stopped #148/#165 retain their separate gates. No new
+version/tag/package/publication decision follows.
+
 ## Accumulated 0.6.0 source checkpoint requested — 2026-11-11 UTC
 
 Frozen source 47669463e8047f33c77537c5d7e010199cb411fd is published with [skip ci].

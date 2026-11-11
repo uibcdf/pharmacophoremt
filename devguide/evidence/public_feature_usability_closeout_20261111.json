@@ -1,0 +1,79 @@
+{
+  "schema": "pharmacophoremt.public-feature-usability.closeout@1",
+  "source_base": "bd8cb60e18c63dc3a6ee6ba2e7a1fe64a40b7179",
+  "scope": "Later material/reporting closeout; original measured outputs remain original. No new scientific/full/source/public/human gate.",
+  "original_receiving_receipt": {
+    "bytes": 105508,
+    "sha256": "641461760c67e151bbcdf5ed1e2d2d6883d4a3e0523a48a3a0064f0fe9f8fff5"
+  },
+  "original_frozen_protocol_prefix": {
+    "path": "devguide/public_feature_usability_receiving.md",
+    "prefix_bytes": 5510,
+    "sha256": "1d56b95ca08f10862127bbc6fb5ff13e0a40ffbbbd912b1dee4f16ca2f091c41",
+    "prefix_matches_original_receiving": true,
+    "later_maintained_appendix": "Technical readiness received and closeout link appended after receiving"
+  },
+  "final_materials": {
+    "docs/content/user/feature_archive_exercise.md": {
+      "bytes": 3675,
+      "sha256": "61da331311e563a00c2c5a656b257a78af60330b5cb07c60db90943167bf918b"
+    },
+    "devguide/public_feature_usability_receiving.md": {
+      "bytes": 6799,
+      "sha256": "eff648ce5e708f32fef1a854db96a0788940ad6a2d6c4585c2004c9756780cd9"
+    },
+    "devguide/templates/feature_archive_observation.md": {
+      "bytes": 1251,
+      "sha256": "81ad68ccf61fcb06b64e6385b1b81d9540d6eee8e7cbae18c5629515c6861a75"
+    },
+    "devguide/evidence/public_feature_usability_plan_20261111.json": {
+      "bytes": 3009,
+      "sha256": "e0fa8e6b5f503c70bb09f881a7c8a72bb748cc7979484b6e4dec2539ebda888e"
+    }
+  },
+  "checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "518 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.407s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.204s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "changed_markdown_targets_checked": 563,
+  "original_own_archive_verified_files": 49,
+  "human_participants": 0,
+  "observation_sheet_unfilled": true,
+  "runtime_or_test_implementation_changed": false,
+  "source_checkpoint_acceptance": false,
+  "late_documentation_correction": "Changed-scope link audit refused an older #108 report link to the now-archived writer report; corrected only its target.",
+  "pause_requested_by_maintainer": "Pause after closing this current block; keep existing remote executions."
+}

@@ -113,6 +113,13 @@ required; broader #6 and installed/public dependency closure remain separate.
 | MolSysViewer rendering/addon | Partial integration with existing source payload/render paths | Browser acceptance remains #58; addon is deferred by maintainer priority, not represented as absent code |
 | Public package/platform support | Separate delivery axis under #10/#23 | Existing public 0.4.0 and its exact installed receipts do not qualify every later source commit or all provider combinations |
 
+The [public feature exercise](public_feature_usability_receiving.md) prepares
+novice/API-user receiving:24 technical task instances plus six cold checks pass
+in source/reused-owned and nm/pm, with unchanged 183 runtime bodies and strict docs.
+Human participants remain zero; the [unfilled sheet](templates/feature_archive_observation.md)
+keeps actual completion/assistance/timing observations separate from automated
+readiness. The broader #108 usability gate remains open.
+
 ## Planned capabilities and provider boundaries
 
 The generation roadmap remains prospective. `.h5phmt`, general dynamical/MSM

@@ -7,14 +7,18 @@ remain intact: [November 7](checkpoint_history_20261107.md),
 [November 10](checkpoint_history_20261110.md) and
 [before this checkpoint](checkpoint_history_20261111.md).
 
-## Accumulated source checkpoint: requested, not accepted
+**Maintainer-requested pause:** after this received block, pause for discussion.
+Existing remote CI retains its original runs. Resume development only when the
+maintainer asks; inspect those same handles before requesting more work.
+
+## Accumulated source checkpoint: first cell received, matrix pending
 
 Frozen source **47669463e8047f33c77537c5d7e010199cb411fd** contains the reviewed
 notes/compatibility preparation for 0.6.0 development. The
 [contract](source_0_6_0_checkpoint.md) and
 [preparation receipt](evidence/source_060_preparation_20261111.json) receive ten
-quality checks, strict source/reused-owned docs, 3,388 collected cases with zero
-local scientific execution and 127 expected qualified coverage paths. Current
+quality checks, strict source/reused-owned docs, 3,388 collected cases (the full scientific suite was not
+executed locally) and 127 expected qualified coverage paths. Current
 canonical guide bytes match the local copy separately from the frozen
 policy-v1.5.4 caller. Runtime, test bodies, sibling/SDK pins and workflow commands
 remain unchanged by this documentation/reporting increment.
@@ -25,13 +29,15 @@ One request per workflow has verified exact source/attempt identity:
 - [Conformance 43084115680](https://github.com/uibcdf/pharmacophoremt/actions/runs/43084115680): frozen policy/lint/format.
 - [Publication controls 43084124337](https://github.com/uibcdf/pharmacophoremt/actions/runs/43084124337): workflow/recipe/resource checks without building or publishing.
 
-Initial receptor/native states are queued/PENDING; they establish no passing
-scientific or platform gate. The later
-[pending-state receipt](evidence/source_060_pending_20261111.json) owns the actual
-observation time/states and bounded observer closeout. Raw remote captures stay
-local. A later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other
-required jobs remain queued and no scientific results are yet accepted. No duplicate
-dispatch, remote cancellation or acceptance is selected.
+The original [pending receipt](evidence/source_060_pending_20261111.json)
+retains queue states and bounded observer closeout. Later
+[partial receiving](evidence/source_060_partial_20261111.json) verifies macOS
+arm64/Python3.14.10: **3,388 passed, zero skipped, 48 retained warnings and 127
+qualified coverage paths**, with no controlled fork deprecations. Reporting
+also passes 3 reporting/18 archive/8 route/161 administrative controls. These are
+job-only captures while the overall run remains pending; raw remote logs stay
+local. The other seven scientific cells and conformance/publication gates must
+still be received. #192 remains active and no complete source checkpoint is accepted.
 
 **Next concrete action:** inspect these same handles/attempt 1, then receive all
 required terminal native steps, 3,388-case counts/skips/warnings and complete
@@ -60,6 +66,18 @@ Three current user guides now link the implemented capture/reuse/writer routes
 instead of presenting them as future work. Their five executable blocks and
 historical 0.5.0 release claims stay unchanged; strict source/reused-owned
 source-read previews receive those exact prose bytes.
+
+## Public feature exercise: technical readiness received
+
+The [participant card](../docs/content/user/feature_archive_exercise.md),
+[facilitator protocol](public_feature_usability_receiving.md) and unfilled
+observation sheet prepare actual novice/API-user receiving under #108. The
+[technical receipt](evidence/public_feature_usability_20261111.json) receives
+24 task instances across source/reused-owned × nm/pm plus six extra cold checks,
+original input/reference/lineage preservation and strict docs. All 183 runtime
+bodies remain unchanged; no runtime or test implementation is added. The first
+controller's metadata/unit-scope gap and corrected runs stay original. **Human
+participants are zero**; no unaided-completion or usability claim follows.
 
 ## Separate gates and continuity
 

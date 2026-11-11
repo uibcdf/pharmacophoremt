@@ -1,0 +1,103 @@
+{
+  "schema": "pharmacophoremt.public-feature-usability.plan@1",
+  "issue": 108,
+  "source_base": "bd8cb60e18c63dc3a6ee6ba2e7a1fe64a40b7179",
+  "source_checkpoint_remains": "47669463e8047f33c77537c5d7e010199cb411fd",
+  "owners": "LMMV/dprada",
+  "retention_review": "2026-11-25",
+  "human_participants": 0,
+  "technical_dry_run_only": true,
+  "archive": {
+    "path": "docs/_static/examples/feature_archive_example.zip",
+    "bytes": 37645,
+    "sha256": "bd9d3d75219dd494dedccc8f81a1371f545fc5ffd1d3e6f217a0f3f08afe6839"
+  },
+  "tasks": {
+    "T1": {
+      "records": 11,
+      "ready": 11,
+      "quantity_semantics_checked": false,
+      "molecular_origin_authenticated": false,
+      "query_admitted": null,
+      "match_outcome": null
+    },
+    "T2": {
+      "selection": [
+        "repeat=\u03b1",
+        "1 nm",
+        "nm"
+      ],
+      "selected_count": 3,
+      "page_ordinal": 6,
+      "page_key": "1 nm",
+      "zero_limit_returned_count": 0,
+      "zero_limit_selected_count": 3,
+      "empty_selection_count": 0,
+      "unknown_key": " repeat=\u03b1",
+      "refusal_code": "PHMT-E305",
+      "recovered_ordinal": 10
+    },
+    "T3": {
+      "key": "empty:nm",
+      "aromatic_count": 0,
+      "donors_unobserved": [
+        "hb donor"
+      ],
+      "missing_action": "evaluate_missing_families"
+    },
+    "T4": {
+      "key": "nm",
+      "required": [
+        "hb donor"
+      ],
+      "profile": "snapshot-study-v1",
+      "work_ordinal": 1,
+      "native_features": 4,
+      "query_sites": 4,
+      "original_extraction_metadata_unchanged": true
+    },
+    "T5": {
+      "prepared_source": "Analytical Na+/Cl- two-ion system, coordinates[[0,0,0],[0.5,0,0]]nm through public MolSysMT; no repair.",
+      "request": [
+        "positive charge",
+        "negative charge",
+        "hb donor"
+      ],
+      "features": 2,
+      "donor_status": "evaluated_empty",
+      "donor_count": 0,
+      "profile": "native-classical-v1",
+      "observed_request_retained": true
+    },
+    "T6": {
+      "first_records": 2,
+      "first_unique_payloads": 1,
+      "work_keys": [
+        "first",
+        "repeat=\u03b1"
+      ],
+      "borrowed_ordinal": 1,
+      "implicit_move_refused": true,
+      "new_ordinal": 0,
+      "lineage_ordinal": 1,
+      "pinned_old_count": 2,
+      "current_count": 1,
+      "payload_bytes_unchanged": true,
+      "recovery_action": "already_current",
+      "candidate_native_validation_performed_on_inspection": false
+    }
+  },
+  "receiving": "Same six semantic answers in source and unchanged exact-owned f722b45 under nm/pm; no new runtime or test-source implementation, source pin, generic molecular collection, source-level screen, biological/scale/human evidence or release selected.",
+  "resource_policy": {
+    "CPU": [
+      19
+    ],
+    "threads": 1,
+    "DATA_MiB": 512,
+    "own_group_RSS_stop_MiB": 1024,
+    "wall_seconds_per_command": 180,
+    "physical_reserve_fraction": 0.2,
+    "capacity_reserved": false
+  },
+  "coordinate_tolerance_nm": 1e-12
+}

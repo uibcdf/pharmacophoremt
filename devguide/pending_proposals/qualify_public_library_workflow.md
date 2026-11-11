@@ -20,7 +20,7 @@ supersedes: []
 reconstruction, full maps/quantities/provenance and bounded batches: 271 selected
 source/owned cases each, actual public PyUnitWizard lower-bound receiving, cold
 inspection and executable user examples. The [receipt](../evidence/native_feature_reconstruction_20261111.json)
-retains original captures and limits. [#194](public_feature_archive_writing.md)
+retains original captures and limits. [#194](../archive/public_feature_archive_writing.md)
 now owns public writing/publication/recovery. Molecular collection/lifetime/source
 mapping remains MolSysMT#624-owned and open at this receiving; no general connector
 or compound-library scale qualification follows from feature reuse.
@@ -524,3 +524,19 @@ own public format/profile contract before adding public native reconstruction
 or writers. Human receiving and full exact-head/public/platform/release gates
 remain independent. MolSysMT#624 stays unreceived; QuantityRecord provisional;
 persisted lookup/cost/scale and #148/#165 remain outside this increment.
+
+## Public feature-lifecycle human kit prepared — 2026-11-11 UTC
+
+The [prospective protocol](../public_feature_usability_receiving.md) freezes six
+tasks on the original public analytical archive and current public APIs. The
+[receipt](../evidence/public_feature_usability_20261111.json) receives 24 task
+instances across source/reused-owned and nm/pm, six extra scientifically cold
+checks, independent native-generation/key audit, original byte/reference/lineage
+preservation and actual attribution with no new credit on saved persistence.
+All 183 runtime bodies remain unchanged and 175 loaded modules per context come
+from its target. Public PUW 0.28.1, strict full docs and ten quality checks pass.
+The first controller's metadata-before-unit-scope execution is retained and
+corrected before qualified receiving. Human participants remain zero; the sheet
+is unfilled. Next actual independent novice/API sessions and owning barrier
+reports; technical readiness does not close the usability gate. Full source,
+installed/public/provider/biological/scale and stopped #148/#165 remain separate.

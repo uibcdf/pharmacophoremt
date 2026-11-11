@@ -520,3 +520,14 @@ pending. Current later prose/reporting changes do not relabel the frozen source.
 Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
 jobs remain queued. Preserve the earlier queued observation and original handles;
 this transition is not a passing scientific/complete-source gate.
+
+## First frozen source jobs received — 2026-11-11 UTC
+
+[Receipt](../evidence/source_060_partial_20261111.json) verifies reporting
+3/18/8/161 and macOS arm64/Python 3.14.10 science 3,388 pass/0 skip at frozen 4766946,
+with 127 qualified coverage paths/48 retained warnings. Published receptor returns
+PENDING/exit3 for the overall active/queued run while selected completed jobs
+pass; captures contain job-only logs, not a complete attempt archive. No full
+checkpoint is accepted and no successful job is rerun. Retain original handles
+for the remaining scientific/control gates; later exercise/docs do not relabel
+that source or qualify a later head. #9 stays partial.
