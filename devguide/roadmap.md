@@ -1,18 +1,20 @@
 # Strategic roadmap
 
-## Native archive v2 source integration — #194/#195 (2026-11-11 UTC)
+## Native archive v2 received — #194/#195 (2026-11-11 UTC)
 
 The [selected contract](native_feature_archive.md) and source implementation add
 public native records, explicit bounded assembly, retained source/global-ordinal
 lineage, guarded preservation and explicit subset rebasing through the existing
 writer/publication/recovery. Historical v1 remains unchanged; mixed/cross-profile
-migration refuses. Source receives 312 selected cases, actual public quantity
-floor, nm/pm, quotas, cold readers and real native publication interruption.
-Initial malformed-row fixtures and their explicit-v2 pointer correction remain
-retained. Six source nm/pm guide blocks and strict full docs pass. Next finish
-exact-owned receiving and receive #194/#195 against this bounded profile;
-[#196](pending_proposals/capture_feature_evaluation_provenance.md) owns source-evaluation
-provenance next. Full/public/platform, molecular,
+migration refuses. Source c900da4 and its exact owned artifact receive
+[312 selected cases each](evidence/native_feature_archive_20261111.json), 235
+verified wheel payloads/180 runtime bodies, actual public quantity floor, nm/pm,
+quotas, cold readers and real native publication interruption. Twelve native
+guide blocks/eight prerequisites and strict full docs pass; initial fixtures and
+their correction stay original. #194/#195's bounded profiles are resolved and
+their reports archived. Next choose the source-owned effective evaluation
+provenance contract under [#196](pending_proposals/capture_feature_evaluation_provenance.md).
+Full/public/platform, molecular,
 biological/human/scale and stopped #148/#165 retain their separate owners.
 
 ## Standalone native payload slice received — #195 (2026-11-11 UTC)
@@ -42,7 +44,7 @@ bytes, cold metadata/recovery and real before/after-replacement process terminat
 Eight writer guide-block executions across nm/pm and source/owned and strict full
 docs pass. Original first tests/cold-baseline correction and limits stay retained.
 
-Next freeze the [#195 native payload/producer contract](pending_proposals/public_native_feature_payloads.md).
+Next freeze the [#195 native payload/producer contract](archive/public_native_feature_payloads.md).
 #194 stays partial for later arbitrary/subset assembly/integration. Source pins,
 shared prefix, full public/platform, MolSysMT collection, human/biological/scale
 and stopped #148/#165 retain their separate ownership.
@@ -62,7 +64,7 @@ The [receipt](evidence/native_feature_reconstruction_20261111.json) now receives
 271 source and 271 exact-owned cases, 224 wheel payloads/169 runtime bodies,
 114 actual public-floor reader/native controls, both cold readers and executable
 source/owned guides under nm/pm. Full strict docs pass. Original first failures
-and limits stay recorded. Next freeze the [#194 public writer/recovery contract](pending_proposals/public_feature_archive_writing.md).
+and limits stay recorded. Next freeze the [#194 public writer/recovery contract](archive/public_feature_archive_writing.md).
 #192 remains active for supported hosted/minor/platform receiving; #9/#10/#23,
 human/biological/scale work and MolSysMT#624 retain their owners; #148/#165 stopped.
 

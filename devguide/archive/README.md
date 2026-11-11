@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (132)
+### Resolved (134)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -105,6 +105,8 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`provenance_strings_interpreted_as_quantities.md`](provenance_strings_interpreted_as_quantities.md) — [#25](https://github.com/uibcdf/pharmacophoremt/issues/25) — Provenance serialization interprets literal identifiers as physical quantities. *(resolved, reproduced)*
 - [`public_cached_carbonyl_generation.md`](public_cached_carbonyl_generation.md) — [#94](https://github.com/uibcdf/pharmacophoremt/issues/94) — Qualify explicitly selected public cached-carbonyl receptor generation. *(resolved, measured)*
 - [`public_excluded_volume_sites.md`](public_excluded_volume_sites.md) — [#32](https://github.com/uibcdf/pharmacophoremt/issues/32) — Build reusable exclusion spheres from native heavy-atom inventories without molecular inference. *(resolved, measured)*
+- [`public_feature_archive_writing.md`](public_feature_archive_writing.md) — [#194](https://github.com/uibcdf/pharmacophoremt/issues/194) — Qualify public feature-archive writing, immutable publication and explicit recovery. *(resolved, measured)*
+- [`public_native_feature_payloads.md`](public_native_feature_payloads.md) — [#195](https://github.com/uibcdf/pharmacophoremt/issues/195) — Define and qualify native feature payload production and archive assembly. *(resolved, measured)*
 - [`public_pharmacophore_curation.md`](public_pharmacophore_curation.md) — [#38](https://github.com/uibcdf/pharmacophoremt/issues/38) — Consolidate reusable cached-model selection, copying, extraction and constraint editing. *(resolved, measured)*
 - [`public_receptor_generation.md`](public_receptor_generation.md) — [#87](https://github.com/uibcdf/pharmacophoremt/issues/87) — Expose explicit bounded receptor hypotheses from native cached features. *(resolved, measured)*
 - [`public_rigid_refinement.md`](public_rigid_refinement.md) — [#29](https://github.com/uibcdf/pharmacophoremt/issues/29) — Public greedy refinement with both angular policies and valid checkpoint retention. *(resolved, measured)*

@@ -1,18 +1,45 @@
 ---
 summary: Qualify public feature-archive writing, immutable publication and explicit recovery.
 issue: uibcdf/pharmacophoremt#194
-status: partial
+status: resolved
 opened: 2026-11-11
-closed:
+closed: 2026-11-11
 verification: measured
 area: [api, persistence, screening]
-guard: tests/test_feature_archive_store.py
-normative: devguide/public_feature_archive_store.md
+guard: tests/test_native_feature_archive.py
+normative: devguide/native_feature_archive.md
 blocked_by: []
 supersedes: []
 ---
 
 # Public feature-archive writing and recovery
+
+## Resolution — bounded v1/v2 profiles received, 2026-11-11 UTC
+
+Source `c900da477090c260bf8d4b408697cd89f7039dfc` and its exact owned artifact
+receive [312 selected cases each](../evidence/native_feature_archive_20261111.json),
+235 verified payloads/180 source-equal runtime bodies and 171 loaded PHMT modules
+from the installed target. The [native-v2 contract](../native_feature_archive.md)
+receives public record factories, explicit bounded assembly, retained original
+source/global-ordinal lineage, guarded preservation and explicit subset rebasing
+through the same writer/publication/recovery. Historical whole-generation v1
+remains supported without rewriting its original bytes/metadata/attempts.
+
+Actual public quantity floor, original geometry/maps/references under nm/pm,
+incomplete/empty/unobserved states, malformed metadata/quantities/lineage, quotas,
+cold policy-preserving inspection and four native plus four earlier v1 real
+SIGTERM/SIGKILL publication controls pass. Twelve source/owned native guide blocks,
+eight prerequisite blocks and strict full docs pass. Original first fixtures and
+corrections remain in the receipt. The guard checks actual source/destination
+identity/lineage, fresh validation, publication and interrupted/retry behavior.
+
+This resolves the defined bounded public profiles. Unsupported mixed/cross-profile
+migration refuses; it is not silently included in this delivery. Full hosted/
+platform/public, MolSysMT collection/source authentication, biological/human/scale
+and stopped #148/#165 remain separate. No new release is published.
+[#196](../pending_proposals/capture_feature_evaluation_provenance.md) owns the next
+source-evaluation provenance contract. Earlier proposals/receiving below retain
+their original dated scope and next-action statements.
 
 ## Native-v2 integration under receiving — 2026-11-11 UTC
 

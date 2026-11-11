@@ -1,7 +1,8 @@
 # Native feature archive v2 and explicit record assembly
 
 Owners LMMV/dprada; PHMT#194/#195; selected 2026-11-11 UTC toward 0.6.0.
-This contract precedes implementation and receiving. No release is selected.
+This contract was selected before implementation. Receiving below records the
+executed scope; no release is selected.
 
 ## Scope and compatibility
 
@@ -129,6 +130,28 @@ causes without formatting private payloads. Original attribution survives withou
 new extraction/software-method credit; no new dependency floor or source pin.
 
 ## Receiving and further work
+
+Source `c900da477090c260bf8d4b408697cd89f7039dfc` and its exact owned wheel
+receive [312 selected cases each](evidence/native_feature_archive_20261111.json):
+67 native archive/lineage and 245 earlier payload/writer/reader/native controls.
+All 235 wheel payloads/180 runtime bodies verify; 171 loaded PHMT modules originate
+in the installed target. Actual public PyUnitWizard 0.28.1 bytes, twelve native
+guide-block executions plus eight prerequisite blocks across source/owned and
+nm/pm, and strict full docs pass. Four native and four earlier v1 real publication
+interruption cases preserve their original identities and linked recovery.
+
+The initial 295-pass/four-failure run used a v1 CURRENT pointer in native-v2
+corruption fixtures; the explicit fixture schema correction keeps every E335
+assertion. The corrected 311-case run and final 312-case public-page ordinal guard
+remain separate originals. Ten initial quality checks include 161 administrative
+controls; seven current-source checks refresh the final guard/reporting scope.
+Resources remain serial CPU19/thread1, low priority and monitored/bounded, without
+reservation or aggregate cgroup enforcement. This receives the selected bounded
+public profiles under #194/#195, not supported/public/platform or scale readiness.
+
+[#196](pending_proposals/capture_feature_evaluation_provenance.md) owns the next
+source-owned effective evaluation provenance contract. Old captures keep their
+explicit declaration route; no historical evidence is reclassified automatically.
 
 Receive source and one exact owned artifact with actual public PyUnitWizard
 0.28.1, original native inventories, nm/pm, evaluated-empty/unobserved/incomplete

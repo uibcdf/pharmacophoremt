@@ -94,8 +94,12 @@ source aad1de5 and its exact owned wheel: 150 selected cases each, 228 verified
 payloads/173 runtime bodies, actual public quantity lower-bound bytes, original
 references, cold metadata/recovery and real before/after-publication termination.
 Source/owned executable guides under nm/pm and strict full docs pass. #194 stays
-partial for broader assembly; [#195](pending_proposals/public_native_feature_payloads.md)
-now owns the native payload/producer contract before new-format code.
+partial for broader assembly at that first checkpoint. The later
+[native-v2 contract](native_feature_archive.md) and
+[312-case source/owned receipt](evidence/native_feature_archive_20261111.json)
+complete bounded native record assembly/lineage through the same writer tools;
+#194/#195 reports are archived. Historical v1 remains unchanged and unsupported
+mixed/cross-profile conversion refuses. Full delivery/scale gates stay separate.
 
 Guard explicit creation/opening, same-source immutability, complete original-byte/
 metadata/provenance preservation, invalid quantities/maps, empty/incomplete

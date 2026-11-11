@@ -1,18 +1,45 @@
 ---
 summary: Define and qualify native feature payload production and archive assembly.
 issue: uibcdf/pharmacophoremt#195
-status: partial
+status: resolved
 opened: 2026-11-11
-closed:
+closed: 2026-11-11
 verification: measured
 area: [api, persistence, screening]
-guard: tests/test_native_feature_payload.py
-normative: devguide/native_feature_payload.md
+guard: tests/test_native_feature_archive.py
+normative: devguide/native_feature_archive.md
 blocked_by: []
 supersedes: []
 ---
 
 # Public native feature payloads
+
+## Resolution — native producer/archive integration received, 2026-11-11 UTC
+
+Source `c900da477090c260bf8d4b408697cd89f7039dfc` and its exact owned artifact
+receive [312 selected cases each](../evidence/native_feature_archive_20261111.json),
+actual public PyUnitWizard 0.28.1, 235 verified wheel payloads/180 runtime bodies
+and all 171 loaded PHMT modules from the target. The earlier standalone producer
+and its original 92d97fb/245-case receipt remain unchanged. The new
+[native archive contract](../native_feature_archive.md) receives explicit native
+record assembly, original source/ordinal lineage, default preservation, explicit
+subset rebasing and fresh shared validation at stage/publication/reuse.
+
+All original native geometry/maps/frame/state/recognition/references survive under
+nm/pm without new extraction credit. Empty/incomplete/unobserved coverage, malformed
+sealed fields/maps/metadata, finite quotas/lineage and original interruption/retry
+history pass. Twelve native guide blocks plus eight prerequisites and strict full
+docs pass in source/owned contexts. First wrong-v1-pointer fixtures and the final
+public-page ordinal guard remain distinct evidence. The guard checks that exact
+original bytes/metadata/positions survive public assembly and scientific reuse.
+
+The selected standalone/native-v2 product scope is resolved. Cross-profile/mixed
+migration refuses under its explicit compatibility policy; supported/public/
+platform, collection/source authentication, biological/human/scale and stopped
+#148/#165 remain independent. No tag/package is published.
+[#196](../pending_proposals/capture_feature_evaluation_provenance.md) owns source-owned
+effective-request provenance next; old inventories still require honest explicit
+evaluation declarations. Earlier proposals and intermediate receiving remain below.
 
 ## Native archive integration under receiving — 2026-11-11 UTC
 

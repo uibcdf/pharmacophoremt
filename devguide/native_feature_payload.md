@@ -136,6 +136,15 @@ hooks, starting replacement sessions or enriching bibliographies.
 
 ## Receiving and remaining integration
 
+The later [native-v2 archive integration](native_feature_archive.md) receives
+[312 selected source/exact-owned cases each](evidence/native_feature_archive_20261111.json)
+at c900da4, explicit assembly, original ordinal/source lineage and fresh shared
+validation at stage/publication/reuse. This completes #194/#195's bounded product
+scope without changing the original standalone receipt below. Unsupported mixed
+migration refuses. #196 owns source-owned effective evaluation provenance next;
+old captures keep their explicit declaration path and no source authentication
+or full supported/public qualification follows from archive integration.
+
 The [receiving receipt](evidence/native_feature_payload_20261111.json) receives
 source 92d97fb and its exact owned wheel: 245 selected cases each, including 95
 new payload controls and 150 earlier writer/reader/native cases. All 232 wheel

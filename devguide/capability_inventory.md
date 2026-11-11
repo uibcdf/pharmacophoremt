@@ -26,8 +26,10 @@ retain separate identities and qualification.
 The [native-v2 archive integration](native_feature_archive.md), #194/#195, adds
 public record factories, explicit assembly, retained source/global-ordinal lineage
 and guarded subset rebasing through the existing publication/recovery. Source
-receives 312 selected controls under actual public PyUnitWizard 0.28.1; source
-nm/pm examples/strict docs pass, exact-owned receiving remains pending. Historical v1 remains original; no
+and its exact owned artifact receive
+[312 selected controls each](evidence/native_feature_archive_20261111.json),
+235 wheel payloads/180 runtime bodies, actual public PyUnitWizard 0.28.1,
+source/owned nm/pm examples and strict full docs. Historical v1 remains original; no
 cross-profile conversion, collection or molecular authentication is introduced.
 
 The [standalone native payload producer](native_feature_payload.md), #195, is
@@ -45,8 +47,8 @@ Development after #193 also receives the
 [first writer-owned archive](public_feature_archive_store.md): whole-generation
 preservation, immutable candidates, expected-current publication and retained
 attempt/linked recovery. The [source/owned receipt](evidence/feature_archive_writer_20261111.json)
-receives 150 cases per context and executable guides. New native payload archive
-admission and arbitrary/subset assembly remain later #195/#194 scope; no new public artifact,
+receives 150 cases per context and executable guides. Later native-v2 admission/
+assembly is received separately above; no new public artifact,
 collection, source authentication or broad performance claim follows.
 
 Development after source tag 0.5.0 adds

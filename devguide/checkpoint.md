@@ -9,30 +9,35 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-**Native archive v2 and explicit record assembly are implemented and under
-receiving** under [#194](pending_proposals/public_feature_archive_writing.md)/
-[#195](pending_proposals/public_native_feature_payloads.md). The
-[contract](native_feature_archive.md) selects native-only v2, public immutable
-`FeatureAssetRecord`, guarded source-ordinal preservation, explicit subset rebasing,
-retained bounded lineage and the existing publication/recovery lifecycle. Historical
-v1 remains unchanged; mixed/cross-profile migration refuses. No extraction or
-new extraction credit follows from assembly.
+**#194/#195's bounded public writer/native producer/archive scope is received**
+at source `c900da477090c260bf8d4b408697cd89f7039dfc`; their reports are archived
+[writer](archive/public_feature_archive_writing.md)/
+[native integration](archive/public_native_feature_payloads.md). The
+[contract](native_feature_archive.md) and
+[receipt](evidence/native_feature_archive_20261111.json) receive **312 selected
+source and 312 exact-owned cases**: 67 archive/lineage and 245 earlier cases.
+The wheel has 235 verified payloads/180 source-equal runtime bodies; all 171
+loaded PHMT modules come from its installed target. Actual public PyUnitWizard
+0.28.1 bytes receive original quantities/maps/frame/state/references, guarded
+ordinal preservation, explicit subset rebasing, bounded lineage/quotas and the
+same fresh native validation/publication/linked recovery. Historical v1 stays
+unchanged; unsupported mixed/cross-profile migration refuses.
 
-**312 selected source cases pass**, including 67 archive/lineage controls and the
-earlier 245 payload/writer/reader/native cases, actual public PyUnitWizard 0.28.1,
-all original native quantities/maps/references under nm/pm, quotas, actual capture,
-cold readers/recovery and four real native publication SIGTERM/SIGKILL cases.
-Initial 295-pass/four-failure controls used a v1 pointer in their new v2 fixture;
-the fixture now explicitly selects v2 and retains the same native-row assertions.
-Six source guide blocks under nm/pm and strict full docs pass. Exact-owned
-artifact/examples/docs receiving remains pending. The final source control also
-checks the returned public page ordinal before adding its origin anchor.
+Twelve native guide blocks plus eight prerequisites across source/owned and
+nm/pm and strict full docs pass. First wrong-v1-pointer fixtures, their unchanged
+assertions, the 311-case correction and final public-page ordinal guard remain
+distinct evidence. Ten initial quality checks include 161 administrative cases;
+seven current-source checks refresh the final guard/reporting scope. Cold
+inspection, four native/four earlier real interruption cases and actual no-new-
+credit/diagnostic policies pass. This is bounded Linux/Python3.14 receiving,
+not full hosted/public/platform, biological, human or scale readiness.
 
-**Next concrete action:** receive source guides/docs and one exact-owned artifact,
-then receive the bounded #194/#195 scope. [#196](pending_proposals/capture_feature_evaluation_provenance.md)
-owns the next source-evaluation provenance contract before more runtime changes. The
-[standalone payload receipt](evidence/native_feature_payload_20261111.json)
-preserves its original 92d97fb/245-case receiving; earlier evidence is not relabelled.
+**Next concrete action:** review extraction/inventory callers and choose the
+source-owned effective-request/evaluation provenance contract under
+[#196](pending_proposals/capture_feature_evaluation_provenance.md) before runtime
+changes. Old inventories retain the honest explicit declaration route. Original
+[standalone](evidence/native_feature_payload_20261111.json) and earlier writer
+receipts keep their identities; no source pin/shared prefix or immutable tag changes.
 Full hosted/platform/public, MolSysMT#624 and biological/human/scale gates remain
 separate; #148/#165 stay stopped. No new tag/package is selected.
 
@@ -56,9 +61,9 @@ source pins/shared prefix stay unchanged. This is bounded local POSIX receiving,
 not full hosted/public/platform or general writer/collection qualification.
 
 **Next concrete action:** choose the public native payload/producer contract under
-[#195](pending_proposals/public_native_feature_payloads.md), with explicit evaluated
+[#195](archive/public_native_feature_payloads.md), with explicit evaluated
 families, quantity/map/provenance and resource admission, before new-format code.
-[#194](pending_proposals/public_feature_archive_writing.md) stays partial for later
+[#194](archive/public_feature_archive_writing.md) stays partial for later
 arbitrary/subset assembly/integration. #9/#192 supported exact-head/platform/minor,
 #10/#23 public delivery and MolSysMT#624 collection gates remain separate; #148/#165
 stay stopped. No new tag or package is selected by this increment.
@@ -88,7 +93,7 @@ spawned children and receives the same 103 progress/publication/credit controls
 in source and the owned wheel. It stays active for supported hosted/minor/macOS
 receiving under #9. **Next concrete action:** review/freeze the public writer,
 payload/publication/lifetime/recovery contract under
-[#194](pending_proposals/public_feature_archive_writing.md), then implement its
+[#194](archive/public_feature_archive_writing.md), then implement its
 bounded public slices. MolSysMT#624 and biological/human/scale work retain their
 owners; #148/#165 stay stopped. No new tag or package is published.
 
