@@ -9,20 +9,26 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-**#195's standalone native payload slice is implemented and under receiving.**
-The [contract](native_feature_payload.md) selects `FeatureInventoryPayload` for
-complete captured inventories, explicit evaluated families, original maps/units/
-frame/state/references and separate serialization observations. Parsing/metadata
-stays cold; each native read validates afresh. No extraction or archive-format
-migration occurs. Source receives **245 selected cases** (95 new, 150 earlier),
-actual public PyUnitWizard 0.28.1, maximum admission and first scientific activation
-under application pm policy. Initial launcher/spawn failure stays retained.
-All four source example-block executions under nm/pm and strict full docs pass;
-the ten selected quality checks include 161 administrative controls. Exact-owned
-artifact receiving remains pending.
+**#195's first standalone native payload slice is received** at source
+`92d97fbb235dcfc8bec0d53ca384fea2579c6d3a`. The
+[contract](native_feature_payload.md) and
+[receipt](evidence/native_feature_payload_20261111.json) receive **245 selected
+source and 245 exact-owned cases** (95 payload, 150 earlier writer/reader/native).
+The wheel has 232 verified payloads/177 source-equal runtime bodies; all 168
+loaded PHMT modules originate in its installed target. Actual public PyUnitWizard
+0.28.1 bytes receive all six families, original geometry/maps/frame/state/
+references, evaluated-empty versus unobserved coverage, finite bounds and fresh
+scientific activation under application pm policy. Cold metadata and actual
+restrictive diagnostics remain separate from native admission.
 
-**Next concrete action:** finish that selected owned/examples/docs receiving, then
-specify native-payload archive admission and original/new ordinal/source lineage
+All eight guide-block executions across source/owned and nm/pm and strict full
+docs pass; ten quality checks include 161 administrative controls. Original
+first launcher/spawn failure and its guard correction remain in the receipt.
+No extraction, archive-format migration, source-pin/shared-prefix mutation or
+new credit occurs. This is bounded Linux/Python3.14 receiving, not full hosted/
+public/platform qualification.
+
+**Next concrete action:** specify native-payload archive admission and original/new ordinal/source lineage
 under [#194](pending_proposals/public_feature_archive_writing.md)/
 [#195](pending_proposals/public_native_feature_payloads.md) before assembly code.
 Full hosted/platform/public, MolSysMT#624 and biological/human/scale gates remain

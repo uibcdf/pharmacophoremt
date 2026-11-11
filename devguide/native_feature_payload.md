@@ -136,6 +136,15 @@ hooks, starting replacement sessions or enriching bibliographies.
 
 ## Receiving and remaining integration
 
+The [receiving receipt](evidence/native_feature_payload_20261111.json) receives
+source 92d97fb and its exact owned wheel: 245 selected cases each, including 95
+new payload controls and 150 earlier writer/reader/native cases. All 232 wheel
+payloads/177 runtime bodies verify, with 168 loaded PHMT modules from the target.
+Actual public PyUnitWizard 0.28.1 bytes, eight source/owned nm/pm guide blocks and
+strict full docs pass. The first task-owned launcher omitted its spawn main
+guard; the original 234-pass/four-failure run, guarded 238 passes and expanded
+245 passes remain distinct. No writer assertion was relaxed to receive them.
+
 Receive source and one exact owned artifact, all six families and original frozen
 inventories, nondefault nm/pm policy, explicit empty and unobserved coverage,
 subset/nonzero frame/state maps, detached ownership, wrong sealed units/field/

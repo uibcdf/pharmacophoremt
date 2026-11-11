@@ -18,7 +18,7 @@
 - Run controlled interruption/recovery tests in fresh spawned processes,
   preserving original committed progress, publication visibility and attribution.
 
-Selected source receiving is recorded under #193/#192; supported installed/public
+Selected source/owned receiving is recorded under #193–#195; supported installed/public
 delivery and the next version/tag decision remain independent.
 
 ## 0.5.0 — source-only consolidation

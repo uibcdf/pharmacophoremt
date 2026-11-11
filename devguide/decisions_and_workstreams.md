@@ -1,18 +1,19 @@
 # Decisions and active workstreams
 
-## Standalone native payload source slice — #195 (2026-11-11 UTC)
+## Standalone native payload slice received — #195 (2026-11-11 UTC)
 
 The [selected contract](native_feature_payload.md) and source producer preserve
 complete captured classical inventories with explicit evaluation declarations,
 sealed quantities, original selection/maps/frame/state/attribution and separate
 serialization observations. Cold metadata and fresh native consumption use
-distinct operations. Source receives 245 selected cases, actual public quantity
-lower-bound bytes, maximum admission and first activation under application pm
-policy. Source nm/pm examples and strict full docs pass; exact-owned receiving
-remains pending. The
-initial task-launcher spawn failure and correction stay retained.
+distinct operations. Source 92d97fb and its exact owned wheel receive
+[245 selected cases each](evidence/native_feature_payload_20261111.json), actual
+public quantity lower-bound bytes, maximum admission and first activation under
+application pm policy. Eight source/owned nm/pm guide blocks and strict full docs
+pass; 232 wheel payloads/177 runtime bodies are verified. The initial task-launcher
+spawn failure and correction stay retained.
 
-Next finish receiving, then define native-payload archive admission and original/
+Next define native-payload archive admission and original/
 new ordinal/source lineage under #194/#195. No archive schema is changed by the
 standalone producer. Full/public/platform, molecular collection and broader
 scientific/human/scale gates stay independent; #148/#165 remain stopped.

@@ -1,12 +1,12 @@
 ---
 summary: Define and qualify native feature payload production and archive assembly.
 issue: uibcdf/pharmacophoremt#195
-status: active
+status: partial
 opened: 2026-11-11
 closed:
-verification: asserted
+verification: measured
 area: [api, persistence, screening]
-guard:
+guard: tests/test_native_feature_payload.py
 normative: devguide/native_feature_payload.md
 blocked_by: []
 supersedes: []
@@ -23,22 +23,24 @@ scientific activation, and reconstructs every native field afresh. Evaluation
 declarations, selection/maps, frame/state and provenance are retained;
 serialization observations are separate. Unknown original producers stay unknown.
 
-The source run receives **245 cases** (95 payload and 150 earlier writer/reader/
-reconstruction controls) against actual public PyUnitWizard 0.28.1, including
-maximum admission and first scientific activation under application pm policy.
+The [receipt](../evidence/native_feature_payload_20261111.json) receives source
+`92d97fbb235dcfc8bec0d53ca384fea2579c6d3a` and its exact owned installed wheel:
+**245 cases each** (95 payload and 150 earlier writer/reader/reconstruction
+controls), actual public PyUnitWizard 0.28.1, maximum admission and first
+scientific activation under application pm policy. The wheel has 232 verified
+payloads/177 source-equal runtime bodies; all 168 loaded PHMT modules are owned.
 The first task-owned launcher lacked the spawn main guard: 234 passed/four
 existing interruption cases failed; the guarded launcher then received 238 and
 the expanded suite 245, without weakening assertions or changing the writer.
-All four source example-block executions under nm/pm and strict full docs pass,
-as do ten quality checks including 161 administrative controls. Exact-owned
-artifact receiving remains pending for this increment.
+All eight source/owned example-block executions under nm/pm and strict full docs
+pass, as do ten quality checks including 161 administrative controls.
 Original runs remain retained in the task-owned capsule.
 
 Archive insertion/new-profile publication and arbitrary/subset assembly remain
 unimplemented. #194/#195 stay open; the next integration contract must specify
 original/new ordinal and source lineage and call the same native validator at
 stage/publication. The original proposal follows; its initial no-producer state
-is historical and superseded only for this selected standalone source slice.
+is historical and superseded only for this selected standalone received slice.
 
 ## Original proposal
 

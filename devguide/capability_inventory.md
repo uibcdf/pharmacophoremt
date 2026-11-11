@@ -26,10 +26,11 @@ retain separate identities and qualification.
 The [standalone native payload producer](native_feature_payload.md), #195, is
 implemented in development source: complete captured classical inventories,
 explicit evaluated-empty/unobserved distinction, original maps/frame/state/
-references, sealed quantities, cold metadata and fresh native reads. Source
-receives 245 selected cases under the actual public quantity floor, including
-nondefault/first-activation unit policy and maximum admission. Source examples
-under nm/pm and strict full docs pass; exact-owned receiving remains pending.
+references, sealed quantities, cold metadata and fresh native reads. The
+[receipt](evidence/native_feature_payload_20261111.json) receives 245 selected
+source and exact-owned cases each under the actual public quantity floor,
+including nondefault/first-activation policy and maximum admission. Source/owned
+examples under nm/pm and strict full docs pass; 177 runtime bodies are source-equal.
 Archive insertion/assembly is
 separate; this adds no collection, molecular authentication or public package.
 
