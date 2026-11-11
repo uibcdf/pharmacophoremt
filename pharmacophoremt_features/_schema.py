@@ -13,6 +13,7 @@ from ._diagnostics import fail
 STORE_SCHEMA = "pharmacophoremt.feature-archive@1"
 GENERATION_SCHEMA = "pharmacophoremt.feature-archive-generation@1"
 PROFILE = "declared-classical-inventory@1"
+SNAPSHOT_PROFILE = "snapshot-study-v1"
 MAX_DOCUMENT_BYTES = 8 * 1024 * 1024
 MAX_UNIQUE_PAYLOAD_BYTES = 4 * 1024 * 1024
 MAX_PAYLOAD_BYTES = 2 * 1024 * 1024

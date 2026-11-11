@@ -57,6 +57,46 @@ CODES = {
         "message": "This selection exceeds the native reconstruction batch limits.",
         "hint": "Select at most 64 occurrences and 8 MiB of original payload bytes per call.",
     },
+    "PHMT-E320": {
+        "message": "Another cooperating writer holds this archive.",
+        "hint": "Close the owning writer before opening another writer handle.",
+    },
+    "PHMT-E321": {
+        "message": "This archive writer is closed or belongs to another process.",
+        "hint": "Open an explicit writer handle in the process that will use it.",
+    },
+    "PHMT-E322": {
+        "message": "The archive's current generation differs from the expected publication state.",
+        "hint": "Inspect current visibility before choosing the intended candidate and expected generation.",
+    },
+    "PHMT-E323": {
+        "message": "This archive has reached its bounded operation-attempt limit.",
+        "hint": "Retain its history and explicitly create a linked new archive; do not delete old receipts.",
+    },
+    "PHMT-E324": {
+        "message": "This publication or retained attempt is not eligible for the requested retry.",
+        "hint": "Inspect retained publication history and actual current visibility; no retry runs automatically.",
+    },
+    "PHMT-E325": {
+        "message": "Archive operation receipts failed structural or lineage verification.",
+        "hint": "Preserve the original receipt files for inspection; history is never repaired implicitly.",
+    },
+    "PHMT-E326": {
+        "message": "An incomplete feature generation cannot replace published evidence.",
+        "hint": "Inspect its original extraction statuses and causes before preparing a complete candidate.",
+    },
+    "PHMT-E327": {
+        "message": "The feature-archive writer could not complete its local file operation.",
+        "hint": "Preserve partial evidence and inspect the retained native cause and current visibility.",
+    },
+    "PHMT-E328": {
+        "message": "This directory is not a supported writer-owned feature archive.",
+        "hint": "Create a new writer archive explicitly and stage a supported source view.",
+    },
+    "PHMT-E329": {
+        "message": "The requested new archive destination already exists.",
+        "hint": "Choose a new path or explicitly open an existing supported writer archive.",
+    },
 }
 SIGNALS = {}
 CATALOG = {

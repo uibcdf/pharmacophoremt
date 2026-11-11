@@ -1,13 +1,13 @@
 ---
 summary: Qualify public feature-archive writing, immutable publication and explicit recovery.
 issue: uibcdf/pharmacophoremt#194
-status: open
+status: active
 opened: 2026-11-11
 closed:
-verification: asserted
+verification: measured
 area: [api, persistence, screening]
-guard:
-normative: devguide/feature_asset_public_api.md
+guard: tests/test_feature_archive_store.py
+normative: devguide/public_feature_archive_store.md
 blocked_by: []
 supersedes: []
 ---
@@ -38,3 +38,21 @@ is selected here. Public/platform, biological, human and scale gates remain sepa
 Next review/freeze the public format/lifetime/publication/recovery contract, then
 implement bounded independently testable slices. No release schedule or new tag
 is reserved by opening this issue.
+
+## First selected writer slice — 2026-11-11 UTC
+
+The [owning contract](../public_feature_archive_store.md) selects explicit
+whole-generation preservation, staged native validation, expected-current
+publication, retained attempts and linked recovery in a bounded local POSIX
+writer-owned archive. It reuses the public reader format and #193 quantity/domain
+decoder. New native payload production and arbitrary/subset record assembly stay
+later slices. The original proposal remains above; this selection does not yet
+claim implemented or installed writer behavior.
+
+The selected source implementation now passes 150 writer/reader/native cases,
+including 36 writer controls and actual process interruption/recovery. Metadata
+recovery remains cold, and operation software observations remain separate from
+original extraction producers. The first cold fcntl-baseline assumption failed
+without a library defect; the corrected context still blocks every scientific
+import and checks lazy writer activation. Exact-owned and user-guide receiving
+remain pending until attached; this does not close the larger #194 scope.

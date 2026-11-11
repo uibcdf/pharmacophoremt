@@ -16,6 +16,13 @@ scientific reconstruction in development source, adding the required explicit
 Exact-owned/public-floor receiving is separately recorded there. The original
 proposal signatures below remain historical; public writers/recovery stay proposed.
 
+The later [#194 writer contract](public_feature_archive_store.md) implements the
+first writer-owned archive in development source: whole-generation `stage(view)`
+instead of arbitrary `seal(records)`, followed by explicit publication and retained
+attempt/recovery operations. Source receiving is implemented; exact-owned receiving
+is separate. New payload production/arbitrary assembly and the original broader
+writer proposal below remain later scope.
+
 ## Decision and existing owners
 
 Propose a cold `pharmacophoremt_features` namespace in the **same PharmacophoreMT

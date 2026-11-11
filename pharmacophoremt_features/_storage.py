@@ -20,17 +20,21 @@ def _read(path, maximum):
     return raw
 
 
-def read_generation(root, expected):
+def layout(root):
+    """Verify the shared archive layout, independent of writer facilities."""
     if not all(hasattr(os, name) for name in ("O_NOFOLLOW", "O_NONBLOCK")):
         fail(307)
+    if not stat.S_ISDIR(root.lstat().st_mode) or not stat.S_ISDIR(
+        (root / "generations").lstat().st_mode
+    ):
+        fail(302)
+    if _schema.json_document(_read(root / "STORE.json", 4096)) != _schema.MARKER:
+        fail(307)
+
+
+def read_generation(root, expected):
     try:
-        if not stat.S_ISDIR(root.lstat().st_mode) or not stat.S_ISDIR(
-            (root / "generations").lstat().st_mode
-        ):
-            fail(302)
-        marker = _schema.json_document(_read(root / "STORE.json", 4096))
-        if marker != _schema.MARKER:
-            fail(307)
+        layout(root)
         pointer = None
         if expected is None:
             pointer = _schema.json_document(_read(root / "CURRENT", 4096))

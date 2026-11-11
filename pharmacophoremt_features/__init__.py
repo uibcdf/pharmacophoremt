@@ -1,7 +1,8 @@
-"""Read-only declared feature evidence, delivered in PharmacophoreMT.
+"""Feature evidence and explicit writer activation, delivered in PharmacophoreMT.
 
-This namespace uses standard/support libraries only. It interprets no scientific
-quantities, authenticates no source and creates no new scientific attribution.
+Import and metadata operations use standard/support libraries only. Explicit
+ready-payload writing activates scientific validation; reading stays opaque.
+These operations authenticate no source and create no new extraction attribution.
 Original opaque payload bytes can contain private geometry and provenance.
 """
 
@@ -15,4 +16,13 @@ register_provider(Path(__file__).resolve().parent)
 
 from ._api import FeatureAssetView as FeatureAssetView  # noqa: E402
 
-__all__ = ["FeatureAssetView", "FeatureAssetError"]
+__all__ = ["FeatureAssetView", "FeatureAssetError", "FeatureAssetStore"]
+
+
+def __getattr__(name):
+    if name == "FeatureAssetStore":
+        from ._writer import FeatureAssetStore
+
+        globals()[name] = FeatureAssetStore
+        return FeatureAssetStore
+    raise AttributeError(name)

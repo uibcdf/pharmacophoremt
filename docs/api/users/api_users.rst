@@ -64,4 +64,7 @@ Scientific quantity reconstruction and source/query admission remain separate.
 .. autoclass:: pharmacophoremt_features.FeatureAssetView
    :members:
 
+.. autoclass:: pharmacophoremt_features.FeatureAssetStore
+   :members:
+
 .. autoclass:: pharmacophoremt_features.FeatureAssetError

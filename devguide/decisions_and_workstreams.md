@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## First writer-owned archive slice — #194 (2026-11-11 UTC)
+
+[Whole-generation preservation/publication/recovery](public_feature_archive_store.md)
+is implemented in source; 150 selected writer/reader/native cases pass, including
+real before/after-replacement process termination, unknown receipts/linked retry,
+quota/integrity/lease/lifetime controls and fresh cold metadata/recovery. Next
+receive the exact owned wheel and public examples, retaining first attempts and
+scope. New native payload production/arbitrary assembly remain later slices;
+MolSysMT collections, supported public/platform, human/biological/scale and
+stopped #148/#165 retain their owners.
+
 ## 0.6.0 native reuse and isolation — #193/#192 (2026-11-11 UTC)
 
 The [native reconstruction contract](native_feature_reconstruction.md) selects

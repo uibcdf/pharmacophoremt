@@ -75,6 +75,7 @@ METHODS = (
     "summary",
     "work_items",
     "snapshot_bytes",
+    "payload_info",
     "inspect",
     "close",
 )

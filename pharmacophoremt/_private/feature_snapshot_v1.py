@@ -10,7 +10,7 @@ from collections import Counter
 from pharmacophoremt_features import _schema
 from pharmacophoremt_features._diagnostics import fail
 
-PAYLOAD_PROFILE = "snapshot-study-v1"
+PAYLOAD_PROFILE = _schema.SNAPSHOT_PROFILE
 SCHEMA = "pharmacophoremt.feature-snapshot-study@1"
 PROFILE = "native-classical-single-frame@1"
 FIELDS = {

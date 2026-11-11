@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.6.0
 
+- Add [writer-owned feature archives](../user/feature_archive_writing.md) that
+  preserve whole original generations, stage and validate immutable candidates,
+  publish against explicit expected-current identity and expose retained attempts
+  with metadata inspection and linked recovery. New native payload production
+  and arbitrary record assembly remain later operations.
 - Add explicit [native feature reconstruction](../user/native_feature_reuse.md)
   from admitted historical snapshots, with fresh unit/geometry validation,
   generation and original metadata checks, full maps/provenance and bounded batches.

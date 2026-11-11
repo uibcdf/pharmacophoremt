@@ -190,6 +190,21 @@ class FeatureAssetView:
             "match_outcome": None,
         }
 
+    @signal(tags=["feature-asset", "payload-info"])
+    @arg_digest(config=config("payload_info"), type_check=False)
+    def payload_info(self, ordinal):
+        """Return detached original byte identity/format, without interpreting it."""
+        raw = self.snapshot_bytes(ordinal)
+        row = self._metadata["records"][ordinal]
+        digest = row["payload_sha256"]
+        return {
+            "generation": self._identity,
+            "work_ordinal": ordinal,
+            "payload_sha256": digest,
+            "format": self._metadata["payloads"][digest]["format"],
+            "bytes": len(raw),
+        }
+
     @signal(tags=["feature-asset", "close"])
     @arg_digest(config=config("close"), type_check=False)
     def close(self):

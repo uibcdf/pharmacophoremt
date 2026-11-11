@@ -6,9 +6,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (3)
+### Active (4)
 
 - [`interruption_process_isolation.md`](interruption_process_isolation.md) — [#192](https://github.com/uibcdf/pharmacophoremt/issues/192) — Qualify interruption guards without forking from a threaded test parent. *(active, measured)*
+- [`public_feature_archive_writing.md`](public_feature_archive_writing.md) — [#194](https://github.com/uibcdf/pharmacophoremt/issues/194) — Qualify public feature-archive writing, immutable publication and explicit recovery. *(active, measured)*
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 
@@ -30,9 +31,5 @@ See the [local reporting protocol](../reporting_protocol.md).
 ### Blocked (1)
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
-
-### Open (1)
-
-- [`public_feature_archive_writing.md`](public_feature_archive_writing.md) — [#194](https://github.com/uibcdf/pharmacophoremt/issues/194) — Qualify public feature-archive writing, immutable publication and explicit recovery. *(open, asserted)*
 
 <!-- /generated -->

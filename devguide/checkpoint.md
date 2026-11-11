@@ -9,6 +9,27 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
+**#194's first writer slice is implemented in source** under the
+[writer contract](public_feature_archive_store.md). It preserves whole existing
+generations, stages immutable candidates with fresh native validation, publishes
+against an explicit expected current, and retains unknown/raised operation history
+for inspection and linked retry. Lazy metadata imports, writer lifetime/lease,
+bounded quotas and original provenance stay separate from scientific activation.
+**150 selected source cases pass**: 36 writer/recovery, 54 reader and 60 native
+reconstruction controls, including real owned before/after-publication SIGTERM/
+SIGKILL and a fresh scientifically blocked metadata/recovery process. The initial
+cold control assumed no support library imported fcntl; its 149-pass/one-failure
+result and baseline correction are retained. The strict scientific/lazy-writer
+checks remain intact.
+
+**Next concrete action:** freeze this implementation after quality/docs checks,
+receive one exact owned wheel and the executable writer guide, then attach the
+original receipts. #194 remains active: public new-native-payload production and
+arbitrary/subset assembly are later slices. No supported/platform/public artifact
+or new tag claim; #9/#192 gates and stopped #148/#165 remain unchanged.
+
+## Previous native reconstruction receiving
+
 **0.6.0 development has received #193's native reconstruction slice** at
 `1604a6d7af99c8b8270f74f5ecbc95ba4fee3a08`. Its
 [contract](native_feature_reconstruction.md),
