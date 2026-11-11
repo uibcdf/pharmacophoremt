@@ -518,12 +518,15 @@ class TestDistributionContract(unittest.TestCase):
 
     def test_unreviewed_inline_source_command_drift_is_rejected(self):
         path = self.root / ".github/workflows/CI.yaml"
-        changed, replacements = re.subn(
-            r"(git\+https://github\.com/uibcdf/molsysmt@)[0-9a-f]{40}",
-            r"\g<1>main",
-            path.read_text(),
+        original = path.read_text()
+        anchor = "    - name: Install package\n"
+        self.assertEqual(original.count(anchor), 1)
+        changed = original.replace(
+            anchor,
+            "    - name: Unreviewed source override\n"
+            "      run: python -m pip install --no-deps git+https://github.com/uibcdf/molsysmt@main\n\n"
+            + anchor,
         )
-        self.assertEqual(replacements, 1)
         path.write_text(changed)
         with self.assertRaisesRegex(ValueError, "reviewed workflow changed"):
             self.routes.audit(self.root)

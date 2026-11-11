@@ -6,6 +6,10 @@ atom/frame/state maps and the observed original extraction software. Use it when
 you want to save a new inventory without declaring the evaluated families again.
 An evaluated family with no features remains distinct from an unrequested family.
 
+For a small table of prepared molecules, follow the
+[library feature-archive example](prepared_library_features.md), which composes
+the same public capture and persistence operations.
+
 ## Extract and save
 
 This complete analytical example uses two prepared ions with explicit coordinates.

@@ -24,6 +24,8 @@ inputs. Each recipe explains the corresponding class or public tool contract.
   evidence while retaining original bytes and a pinned generation.
 - [Capture new features](feature_capture.md) with their effective evaluation
   provenance, then save or archive them without repeating the requested families.
+- [Retain features from prepared library records](prepared_library_features.md)
+  through a complete capture/archive/reconstruction example with real inputs.
 - Try the [feature-evidence exercise](feature_archive_exercise.md) to explore
   inspection, reuse, capture and native publication with small analytical inputs.
 - Start with [chemical-library screening](chemical_libraries.md) to distinguish
@@ -64,6 +66,7 @@ feature_archive_writing
 native_feature_payloads
 native_feature_archives
 feature_capture
+prepared_library_features
 feature_archive_exercise
 ```
 

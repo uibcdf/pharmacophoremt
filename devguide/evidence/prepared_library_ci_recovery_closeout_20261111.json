@@ -1,0 +1,52 @@
+{
+  "schema": "pharmacophoremt.prepared-library-ci-recovery.closeout@1",
+  "checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.383s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.154s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "public_archive_verified_entries": 71,
+  "molecular_geometry_published": false,
+  "runtime_bodies_unchanged": 183,
+  "old_checkpoint_sha256": "dae8b28a1b278c1246d29153dec59ded5405b2d4d022dba8f509cbc89f59e7f6",
+  "markdown_local_targets": 636,
+  "full_source_checkpoint_accepted": false,
+  "temporary_resource_review": {
+    "owners": "LMMV/dprada",
+    "review": "2026-11-25",
+    "retain": "Own prepared-library outputs remain local for recovery, with71 reviewed public execution files. Original sourceCI captures and new corrected-source capsule remain separate; raw remote logs stay local. Existing owned7192041 wheel/target retain original ownership.",
+    "shared_prefix_or_sibling_mutated": false
+  }
+}

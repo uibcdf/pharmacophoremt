@@ -1,5 +1,6 @@
 """Complete PR coverage and conditional recovery retain component test selection."""
 
+import tomllib
 from configparser import ConfigParser
 from fnmatch import fnmatch
 from pathlib import Path
@@ -8,6 +9,50 @@ from shlex import split
 import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
+
+
+def test_every_minor_acquires_one_reviewed_molsysmt_before_verification():
+    """One pinned acquisition must reach verification without a second VCS fetch."""
+    workflow = yaml.load(
+        (ROOT / ".github/workflows/CI.yaml").read_text(), Loader=yaml.BaseLoader
+    )
+    steps = workflow["jobs"]["test"]["steps"]
+    assert not any(
+        "git+https://github.com/uibcdf/molsysmt@" in step.get("run", "")
+        for step in steps
+    ), "MolSysMT belongs to the reviewed requirements install, not a second VCS step"
+    named = {step.get("name"): step for step in steps}
+    install = named["Install pinned suite dependencies"]
+    verify = named["Check dependency routes and installed Git context"]
+    assert "if" not in install and "continue-on-error" not in install
+    assert "if" not in verify and "continue-on-error" not in verify
+    assert (
+        steps.index(install)
+        < steps.index(verify)
+        < steps.index(named["Install package"])
+    )
+    assert steps.index(named["Install package"]) < steps.index(named["Run tests"])
+    assert (
+        "python devtools/check_dependency_routes.py --context ci-${{ matrix.cfg.python-version }}"
+        in verify["run"]
+    )
+    routes = tomllib.loads((ROOT / "devtools/dependency_routes.toml").read_text())
+    contexts = {row["name"]: row for row in routes["contexts"]}
+    sources = {row["id"]: row for row in routes["source_routes"]}
+    for minor in ("3.11", "3.12", "3.13", "3.14"):
+        context = contexts["ci-" + minor]
+        candidates = [
+            sources[key]
+            for key in context["sources"]
+            if sources[key]["name"] == "molsysmt"
+        ]
+        assert len(candidates) == 1
+        source = candidates[0]
+        requirement = "git+" + source["url"] + "@" + source["commit"]
+        assert len(source["commit"]) == 40 and source["install"] == "pip-no-deps-git"
+        lines = (ROOT / source["input"]).read_text().splitlines()
+        assert lines.count(requirement) == 1
+        assert f"python -m pip install --no-deps -r {source['input']}" in install["run"]
 
 
 def test_coverage_measures_the_core_and_both_reader_companions():

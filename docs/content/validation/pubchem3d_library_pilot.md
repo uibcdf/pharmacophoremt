@@ -97,3 +97,45 @@ payloads remain equal to the original observations and database/directory bytes
 are unchanged. This is historical evidence reading, not another screening run.
 Its [own receipt](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/evidence/reference_run_inspection_20261107_summary.json)
 separates the new analytical guards from the three previously computed records.
+
+## Native feature archive continuation — 2026-11-11 UTC
+
+A separately declared #108 workflow now composes the public capture, native
+payload/archive, reconstruction and reference-model tools over the **same three
+original prepared artifacts**. No source is downloaded or prepared again. The
+[user recipe](../user/prepared_library_features.md) supplies the public operations;
+the [owning contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/prepared_library_feature_archive.md)
+and its receiving record retain context, original hashes and limits.
+
+| Original prepared record | All captured features | Donors | Acceptors | Aromatic rings |
+| --- | ---: | ---: | ---: | ---: |
+| CID 1983 | 9 | 2 | 2 | 1 |
+| CID 2244 | 11 | 1 | 4 | 1 |
+| CID 2519 | 5 | 0 | 3 | 2 |
+
+All six classical families were evaluated. Positive/negative charge families are
+empty for these supplied states; caffeine's donor family is evaluated-empty.
+The fourth archive work record deliberately repeats the original caffeine payload
+and occurrence. Four records retain three unique payloads and three original
+source occurrences, with no additional independent compound or activity label.
+
+Source and the unchanged exact-owned 7192041 artifact receive the same four
+recipe blocks under nm/pm: sixteen block executions and four fresh cold-reader
+checks. Original quantities, atom/frame/state maps, references and input bytes
+survive. Native hypotheses reconstructed from the saved inventories agree with
+their original counterparts; no fitting, query screening or new score is run.
+Public molecular access and extraction are refused during saved reuse, and its
+actual attribution capture records zero new extraction uses. Model construction
+has a separate credit scope.
+
+Explicit subset publication retains the original ordinal 3 in lineage after
+rebasing to 0; an implicit move is refused. The old pinned view still sees four
+records and a new view sees one. Metadata inspection remains scientifically cold
+and leaves native quantity checking and molecular authentication false, with no
+query-match claim. These are workflow controls, not human-usability evidence.
+
+Original/new geometry-bearing archives and contributor annotations stay local
+under the original redistribution limits. Public receiving contains only reviewed
+code/scalars/hashes. This continuation is separate from the stopped placement/
+timing work; #148/#165 remain stopped. General collection/connectors, full public
+delivery, biological validation and scale remain open.

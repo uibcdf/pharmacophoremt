@@ -1,0 +1,298 @@
+{
+  "schema": "pharmacophoremt.ci-molsysmt-acquisition.local-receiving@1",
+  "recorded_at_utc": "2026-11-11T21:53:10.004105+00:00",
+  "issue": 197,
+  "failed_source": "47669463e8047f33c77537c5d7e010199cb411fd",
+  "failed_run": 43084105668,
+  "attempt": 1,
+  "native_job": {
+    "id": 130743901579,
+    "name": "Test on macos-15, Python 3.11",
+    "status": "completed",
+    "conclusion": "failure",
+    "started_at": "2026-11-11T21:12:59Z",
+    "completed_at": "2026-11-11T21:19:31Z",
+    "run_attempt": 1
+  },
+  "required_failure_steps": [
+    {
+      "name": "Install pinned suite dependencies",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "name": "Install tested MolSysMT source",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "name": "Check dependency routes and installed Git context",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "Install package",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "Run tests",
+      "status": "completed",
+      "conclusion": "skipped"
+    },
+    {
+      "name": "Check coverage",
+      "status": "completed",
+      "conclusion": "skipped"
+    }
+  ],
+  "failure_classification": "Duplicate VCS acquisition failed before dependency verification/PHMT installation/tests; the scientific suite did not run in this cell. Exact GitHub authentication/server cause unknown.",
+  "original_native_capture": {
+    "manifest": {
+      "bytes": 2019,
+      "sha256": "1e711db5f22833f13a397b8349b7ea3fba26ac4b47d47f037611411412e6cf24"
+    },
+    "job_log": {
+      "bytes": 143430,
+      "sha256": "3df3523b94181f963758f86693b75edd059e89c9c6c7a0b3bfac7a877e799134"
+    },
+    "raw_logs": "retained local only"
+  },
+  "old_source_native_state": {
+    "id": 43084105668,
+    "head_sha": "47669463e8047f33c77537c5d7e010199cb411fd",
+    "run_attempt": 1,
+    "status": "in_progress",
+    "conclusion": null
+  },
+  "old_source_jobs": [
+    {
+      "id": 130743900470,
+      "name": "Reporting governance",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 130743901413,
+      "name": "Test on macos-15, Python 3.14",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 130743901447,
+      "name": "Test on macos-15, Python 3.13",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 130743901449,
+      "name": "Test on ubuntu-latest, Python 3.14",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 130743901453,
+      "name": "Test on ubuntu-latest, Python 3.13",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 130743901455,
+      "name": "Test on ubuntu-latest, Python 3.12",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 130743901579,
+      "name": "Test on macos-15, Python 3.11",
+      "status": "completed",
+      "conclusion": "failure"
+    },
+    {
+      "id": 130743901600,
+      "name": "Test on ubuntu-latest, Python 3.11",
+      "status": "in_progress",
+      "conclusion": null
+    },
+    {
+      "id": 130743901626,
+      "name": "Test on macos-15, Python 3.12",
+      "status": "completed",
+      "conclusion": "success"
+    },
+    {
+      "id": 130743903452,
+      "name": "Check skipped-commit backlog",
+      "status": "completed",
+      "conclusion": "skipped"
+    }
+  ],
+  "old_source_checkpoint_accepted": false,
+  "old_source_candidate_rejected_due_required_job_failure": true,
+  "correction": {
+    "only_removed_workflow_step": "Install tested MolSysMT source",
+    "all_other_workflow_structure_equal": true,
+    "all_source_routes_contexts_and_nonCI_workflow_records_equal": true,
+    "requirements_environment_and_policy_bytes_equal": true,
+    "source_pins_or_SDK_changed": false,
+    "workflow_sha256": "25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324",
+    "mandatory_installed_context_verification_retained": true
+  },
+  "local_route_guard": {
+    "before": {
+      "failed": 1
+    },
+    "after": {
+      "passed": 9,
+      "skipped": 0
+    },
+    "guard": "tests/test_ci_routes.py::test_every_minor_acquires_one_reviewed_molsysmt_before_verification"
+  },
+  "supporting_checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.392s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.200s\n\nOK\n"
+    },
+    {
+      "name": "dependency-routes",
+      "code": 0,
+      "output": "{\"contexts\": [{\"bootstrap_selectors\": [\"python>=3.14,<3.15\", \"setuptools\", \"pytest\", \"pip\", \"pytest-cov\", \"codecov\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"mamba\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/development_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"development-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/docs_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"docs-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/production_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"production-3.14\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=77.0.3\", \"versioningit >=2,<3\", \"pytest >=8\", \"pytest-receptor=1.1.0\", \"packaging\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest >=0.17.1\", \"smonitor >=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"pyyaml >=5.1\", \"molsysviewer ==0.24.0\", \"ackredit ==0.12.0\", \"beartype ==0.22.9\", \"openmm ==8.6.1\"], \"environment\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"public-test-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.11\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.11\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py313.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.13\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.13\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=1.1.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py314.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": [\"smonitor-3.14\", \"depdigest-3.14\", \"pyunitwizard-3.14\", \"argdigest-3.14\", \"molsysviewer-3.14\", \"ackredit-3.14\", \"molsysmt-3.14\"]}], \"installed_check_required\": true, \"package\": \"pharmacophoremt\", \"proof_domain\": \"numeric-release-versions\", \"qualification\": \"declared-only\", \"routes\": [{\"kind\": \"shared-noarch\", \"path\": \"devtools/conda-build/meta.yaml\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/build_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/development_env.yaml\", \"purpose\": \"development\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/docs_env.yaml\", \"purpose\": \"documentation\"}, {\"kind\": \"resolved-package\", \"path\": \"devtools/conda-envs/importable_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/production_env.yaml\", \"purpose\": \"production\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/setup_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py313.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/CI.yaml\", \"sha256\": \"25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/build_and_upload_conda_packages.yaml\", \"sha256\": \"18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/conda_publication_governance.yaml\", \"sha256\": \"353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/molsyssuite-policy.yml\", \"sha256\": \"6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/promote_conda_package.yaml\", \"sha256\": \"2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/sphinx_docs_to_gh_pages.yaml\", \"sha256\": \"b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/test_installed_conda_package.yaml\", \"sha256\": \"d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_resource_probe.yaml\", \"sha256\": \"f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_native_qualification.yaml\", \"sha256\": \"89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0\"}], \"schema\": \"molsyssuite.dependency-routes@3\", \"selected_context\": null, \"source_dependencies\": [\"ackredit-3.14\", \"ackredit-base\", \"argdigest-3.14\", \"argdigest-base\", \"depdigest-3.14\", \"depdigest-base\", \"molsysmt-3.14\", \"molsysmt-base\", \"molsysviewer-3.14\", \"molsysviewer-base\", \"pyunitwizard-3.14\", \"pyunitwizard-base\", \"smonitor-3.14\", \"smonitor-base\"], \"source_inputs\": [{\"path\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}, {\"path\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}], \"source_routes\": [{\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}, {\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}]}\n"
+    },
+    {
+      "name": "environments",
+      "code": 0,
+      "output": "{\n  \"changed\": []\n}\n"
+    },
+    {
+      "name": "administrative-distribution",
+      "code": 0,
+      "output": "acquired evaluation 1/64 CID 2347: completed\nacquired evaluation 2/64 CID 10204: failed\nacquired evaluation 3/64 CID 6852393: completed\nacquired evaluation 4/64 CID 79688: completed\nacquired evaluation 5/64 CID 138394061: completed\nacquired evaluation 6/64 CID 608116: completed\nacquired evaluation 7/64 CID 9904: completed\nacquired evaluation 8/64 CID 5479: completed\nacquired evaluation 9/64 CID 87250: completed\nacquired evaluation 10/64 CID 62130: completed\nacquired evaluation 11/64 CID 7070: completed\nacquired evaluation 12/64 CID 5280961: completed\nacquired evaluation 13/64 CID 5281227: completed\nacquired evaluation 14/64 CID 65359: completed\nacquired evaluation 15/64 CID 8572: completed\nacquired evaluation 16/64 CID 472181: completed\nacquired evaluation 17/64 CID 15284: completed\nacquired evaluation 18/64 CID 70425: completed\nacquired evaluation 19/64 CID 11193251: completed\nacquired evaluation 20/64 CID 23686673: completed\nacquired evaluation 21/64 CID 6950248: completed\nacquired evaluation 22/64 CID 33255: completed\nacquired evaluation 23/64 CID 6209: completed\nacquired evaluation 24/64 CID 7059: completed\nacquired evaluation 25/64 CID 13624: completed\nacquired evaluation 26/64 CID 13387: completed\nacquired evaluation 27/64 CID 2794: completed\nacquired evaluation 28/64 CID 12989: completed\nacquired evaluation 29/64 CID 6538105: completed\nacquired evaluation 30/64 CID 10486: completed\nacquired evaluation 31/64 CID 644076: completed\nacquired evaluation 32/64 CID 7237: completed\nacquired evaluation 33/64 CID 7284: completed\nacquired evaluation 34/64 CID 23688977: completed\nacquired evaluation 35/64 CID 14075: completed\nacquired evaluation 36/64 CID 60196362: completed\nacquired evaluation 37/64 CID 16591: completed\nacquired evaluation 38/64 CID 74483: completed\nacquired evaluation 39/64 CID 10197675: completed\nacquired evaluation 40/64 CID 3714831: completed\nacquired evaluation 41/64 CID 7479: completed\nacquired evaluation 42/64 CID 18510: completed\nacquired evaluation 43/64 CID 445639: completed\nacquired evaluation 44/64 CID 10409: completed\nacquired evaluation 45/64 CID 6786: completed\nacquired evaluation 46/64 CID 16230: completed\nacquired evaluation 47/64 CID 70014: completed\nacquired evaluation 48/64 CID 23194: completed\nacquired evaluation 49/64 CID 5354133: completed\nacquired evaluation 50/64 CID 1549517: completed\nacquired evaluation 51/64 CID 23683938: completed\nacquired evaluation 52/64 CID 7203: completed\nacquired evaluation 53/64 CID 36605: completed\nacquired evaluation 54/64 CID 6333: completed\nacquired evaluation 55/64 CID 5354342: completed\nacquired evaluation 56/64 CID 18056: completed\nacquired evaluation 57/64 CID 73539: completed\nacquired evaluation 58/64 CID 10197650: completed\nacquired evaluation 59/64 CID 7348: completed\nacquired evaluation 60/64 CID 31370: failed\nacquired evaluation 61/64 CID 42981: completed\nacquired evaluation 62/64 CID 12512: completed\nacquired evaluation 63/64 CID 8129: completed\nacquired evaluation 64/64 CID 7819: completed\nacquired training CID 31477: completed\nacquired training CID 24633: failed\nacquired training CID 6293: completed\nretained training CID 31477: completed\nretained training CID 24633: failed\nretained training CID 6293: completed\nacquired training CID 9818306: completed\nacquired training CID 123504: completed\nacquired training CID 5857: completed\nacquired training CID 443831: completed\nacquired training CID 13765: completed\nacquired training CID 6422843: completed\nacquired training CID 17701: completed\nacquired training CID 6327657: completed\nacquired training CID 70400: completed\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"observed\", \"resources\": {\"memory\": {\"MemTotal\": 17179869184, \"MemAvailable\": 15032385536}, \"memory_psi\": \"some avg10=0.00\\nfull avg10=0.00\\n\", \"unit_memory_psi\": \"some avg10=0.00\\nfull avg10=0.00\\n\", \"swap_pages\": {\"pswpin\": 0, \"pswpout\": 0}}}\n..............................................................................................usage: python -m unittest [-h] --output OUTPUT --unit UNIT --cpu CPU --uid UID\n                          --gid GID [--manager MANAGER] [--name NAME]\n                          {bootstrap,native}\npython -m unittest: error: argument phase: invalid choice: 'benchmark' (choose from 'bootstrap', 'native')\n...................................................................\n----------------------------------------------------------------------\nRan 161 tests in 41.849s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "corrected_source_inventory": {
+    "collected_cases": 3420,
+    "scientific_tests_executed_by_collection": 0,
+    "collection": {
+      "bytes": 399770,
+      "sha256": "57b5c361cb4642359c7b729d18eaebb82ec136bf85ae6c6015e2f0f931036d28"
+    },
+    "expected_coverage_paths": 127,
+    "full_source_checkpoint_accepted": false
+  },
+  "guide_audit": {
+    "recorded_at_utc": "2026-11-11T21:50:16.371566+00:00",
+    "canonical_url": "https://github.com/uibcdf/molsyssuite/blob/main/MOLSYSSUITE_GUIDE.md",
+    "canonical_git_blob": "dd8abefb62cd723d5f61ec8187d82dfb5d6b66e7",
+    "local_sha256": "850a98f0757a18734b328332c88e4622f60bdef097148a1fd59b9f009846bfe4",
+    "canonical_readback_sha256": "850a98f0757a18734b328332c88e4622f60bdef097148a1fd59b9f009846bfe4",
+    "equal": true,
+    "frozen_policy_caller": "policy-v1.5.4",
+    "caller_unchanged": true,
+    "instructions": {
+      "AGENTS.md": "0555fb5c8710de101ff849bce5c22f69b0d28dc1a853d83d07a09d5b6993aedb",
+      "devguide/AGENTS.md": "df82b455ffdd802442c778c770b0ce04b59894dcc6a2f3041b3a15cda4313370",
+      "devguide/reporting_protocol.md": "3d88b8e1b317a16798c81b6b2cac35d4a24eae0f4c75a8eb58b31b7534bdcd9a"
+    }
+  },
+  "frozen_config": {
+    ".github/workflows/CI.yaml": {
+      "bytes": 7818,
+      "sha256": "25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324"
+    },
+    ".github/workflows/molsyssuite-policy.yml": {
+      "bytes": 250,
+      "sha256": "6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd"
+    },
+    ".github/workflows/conda_publication_governance.yaml": {
+      "bytes": 273,
+      "sha256": "353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85"
+    },
+    ".github/gh-run-receptor.yaml": {
+      "bytes": 361,
+      "sha256": "2e84c7bc2aab5dff26a356cb8714454dcea40162fbaa8129f5a78b4a36551b59"
+    },
+    ".coveragerc": {
+      "bytes": 196,
+      "sha256": "74604d7528ee3f50fe2332ee671853d41e845c66ae81f69f2f83639603b14b45"
+    },
+    "pyproject.toml": {
+      "bytes": 4051,
+      "sha256": "cb0d2dcd1c44b2fa6891f81cdedb4805f73de4b7dbcc0fc6de43e35b7272c46f"
+    },
+    "devtools/dependency_routes.toml": {
+      "bytes": 15924,
+      "sha256": "b66d9278174abe971ad2ae5bbbb98e09b15f9d7ab6e6bdc5e3611489565404c6"
+    },
+    "devtools/conda-build/release_plan.toml": {
+      "bytes": 2624,
+      "sha256": "e6f6e656c205a2e27d2cba75f99d00517832b0ad98e7d917cb67229c4533cae6"
+    },
+    "devtools/conda-build/resources.toml": {
+      "bytes": 45773,
+      "sha256": "05f5df2b95fa3e40558692ed318e76fc33d251889119ae8d689859fe0b2760eb"
+    },
+    "devtools/requirements/controlled_suite_dependencies.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/requirements/controlled_suite_dependencies_py314.txt": {
+      "bytes": 740,
+      "sha256": "380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab"
+    },
+    "devtools/conda-envs/test_env.yaml": {
+      "bytes": 731,
+      "sha256": "65e6a1488301055aab702d760362c791bd42670b4bf72160f32eacae3d0063ca"
+    },
+    "devtools/conda-envs/test_env_py313.yaml": {
+      "bytes": 736,
+      "sha256": "8d5e43ab81ad54dfa54d0fa8f8cac6a76444dac6ab6007ca613e6d496862cfd1"
+    },
+    "devtools/conda-envs/test_env_py314.yaml": {
+      "bytes": 814,
+      "sha256": "b8191398cf92426259e47507309692c062faa4e59ae952c2ccab5e6f3a8f3735"
+    }
+  },
+  "changed_configuration_paths": [
+    ".github/workflows/CI.yaml",
+    "devtools/dependency_routes.toml"
+  ],
+  "fixture_migrations": [
+    "#197 added to the reporting issue inventory, preserving the exact-set assertion.",
+    "Unreviewed inline-source drift fixture now inserts an invalid floating source before PHMT installation; the removed duplicate is no longer its mutation target.",
+    "Initial governance rejects the new issue inventory and unreviewed workflow digest; originals retained, corrected inventory/review preserve source pins and assertions."
+  ],
+  "next": "Commit/publish one corrected frozen source, independently discover any existing exact-head runs, declare its source and request only absent required source/policy/publication-control workflows once. No tag/publication; no successful-job rerun/cancellation.",
+  "corrected_hosted_qualification": false,
+  "limits": "Native old job failure and local workflow/route review only, not a full corrected-source/platform/public installation claim. #192 stays active; #148/#165 stay stopped."
+}

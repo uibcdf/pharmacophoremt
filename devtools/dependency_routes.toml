@@ -297,8 +297,8 @@ channel_reason = "Preserve actual AmberTools bootstrap; no required scientific d
 
 [[workflows]]
 path = ".github/workflows/CI.yaml"
-sha256 = "ed3722b90f7e062a804f359daaee1c07ff975b541d48c262eda65125bb989667"
-reason = "Reviewed #169: !cancelled() retains skipped-needs/backlog admission while allowing cancellation. Complete matrix, commands, provider/SDK pins and #141 bare --cov namespace coverage remain unchanged. This digest records command review, not passing runtime or dependency qualification."
+sha256 = "25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324"
+reason = "Reviewed #197: remove only the redundant older-minor MolSysMT force-reinstall; the reviewed requirements acquire that same source once and mandatory installed-context verification remains. Source/SDK pins, full matrix/scientific command, #169 cancellation and #141 coverage semantics are unchanged. This digest records review, not executed source/public qualification."
 
 [[workflows]]
 path = ".github/workflows/build_and_upload_conda_packages.yaml"

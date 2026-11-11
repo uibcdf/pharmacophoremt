@@ -78,6 +78,10 @@ requirements; this is a method choice, not an automatic choice for every query.
 For repeated queries against the same prepared input, see
 [feature-inventory reuse](prepared_feature_reuse.md) for the current modular route
 and the changes that require new features or a new saved run.
+The [prepared-library feature example](prepared_library_features.md) captures and
+archives a small received table, inspects evaluated-empty coverage and reconstructs
+complete inventories for model construction. It keeps repeated work distinct from
+independent molecules; screening and its query admission remain separate steps.
 
 ## Plan, run, resume and inspect
 

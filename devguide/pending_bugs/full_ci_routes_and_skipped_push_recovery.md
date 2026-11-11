@@ -15,6 +15,18 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Rejected accumulated source; duplicate acquisition corrected — 2026-11-11 UTC
+
+[Native/local receipt](../evidence/ci_molsysmt_acquisition_20261111.json) rejects
+4766946 for required macOS/Python3.11 acquisition failure before tests: a redundant
+second exact MolSysMT clone fails after the first install succeeds. Remote cause
+is unknown; no scientific failure is inferred. [#197](duplicate_ci_molsysmt_acquisition.md)
+removes only that step, re-reviews its route digest and preserves installed-context
+verification, source/SDK pins and all science/matrix settings. Nine route controls
+and ten quality checks pass; 3,420 collected cases/127 expected paths are not
+scientific execution. Freeze/receive the [corrected checkpoint](../source_0_6_0_acquisition_recovery.md)
+once per absent exact workflow. Keep old jobs/receipts original and #192 active.
+
 ## Later explicit feature controls — #6 (2026-11-11 UTC)
 
 The [additive two-control increment](../feature_argument_controls.md) follows

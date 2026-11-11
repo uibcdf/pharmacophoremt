@@ -103,6 +103,13 @@ required; broader #6 and installed/public dependency closure remain separate.
 
 ## Matching, evaluation and supporting surfaces
 
+The [prepared-library feature recipe](../docs/content/user/prepared_library_features.md)
+now composes existing capture/archive/native-reconstruction/model routes over
+three original PubChem3D prepared snapshots. [Source/reused-owned receiving](evidence/prepared_library_features_20261111.json)
+passes sixteen nm/pm blocks and four cold readers, retaining complete original
+evidence without re-extraction. This adds no connector, collection, matcher/index,
+new scoring result or activity/scale/human qualification.
+
 | Public surface | State and demonstrated scope | Explicit limit / remaining work |
 | --- | --- | --- |
 | `screening.PoseEvaluator` | Available: fixed-pose typed-record one-to-one assignment, any-of Point/Sphere kinds, essential sites, weights, directions and exclusions; [contract/#79 controls](native_constraint_semantics.md) | Disk uses declared center/axis matching, not physical disk intersection. Geometry compatibility is not binding affinity |

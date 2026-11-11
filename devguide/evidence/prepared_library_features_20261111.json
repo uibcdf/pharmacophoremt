@@ -1,0 +1,1075 @@
+{
+  "schema": "pharmacophoremt.prepared-library-features.receiving@1",
+  "recorded_at_utc": "2026-11-11T21:51:03.782381+00:00",
+  "issue": 108,
+  "source_base": "f564d9768ab7414e30f90014757f1cfa4a97d241",
+  "runtime_source": "7192041d85c7ca9d724028329ec8f18a4bdc9853",
+  "contract": "devguide/prepared_library_feature_archive.md",
+  "guide": "docs/content/user/prepared_library_features.md",
+  "fixed_plan": {
+    "schema": "pharmacophoremt.prepared-library-features.plan@1",
+    "issue": 108,
+    "source_base": "f564d9768ab7414e30f90014757f1cfa4a97d241",
+    "records": [
+      {
+        "cid": 1983,
+        "conformer_id": "000007BF00000001",
+        "sha256": "2f37262e9d129a193ad68538ba296a1e4f693d334cc932854bec700a4f3c28c3",
+        "bytes": 132344,
+        "n_atoms": 20,
+        "n_hydrogens": 9,
+        "snapshot_path": "build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-1983/prepared.h5msm",
+        "expected_acceptors": 2
+      },
+      {
+        "cid": 2244,
+        "conformer_id": "000008C400000001",
+        "sha256": "f85347096774a34bccaeff76d7dd9711edf6376453346339efb570011a6ccc1c",
+        "bytes": 132328,
+        "n_atoms": 21,
+        "n_hydrogens": 8,
+        "snapshot_path": "build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2244/prepared.h5msm",
+        "expected_acceptors": 4
+      },
+      {
+        "cid": 2519,
+        "conformer_id": "000009D700000001",
+        "sha256": "7d750624a78b0f1e9fb2dda3bb583ae32c231695ea7c203152e54f11534e55de",
+        "bytes": 132328,
+        "n_atoms": 24,
+        "n_hydrogens": 10,
+        "snapshot_path": "build/phmt-pubchem3d-receiving-20261107-wmmlnn0j/attempt3/cid-2519/prepared.h5msm",
+        "expected_acceptors": 3
+      }
+    ],
+    "contexts": [
+      "source",
+      "installed"
+    ],
+    "units": [
+      "nm",
+      "pm"
+    ],
+    "profile": "native-classical-v1",
+    "families": [
+      "hydrophobicity",
+      "hb donor",
+      "hb acceptor",
+      "aromatic ring",
+      "positive charge",
+      "negative charge"
+    ],
+    "scope": "Capture/persist/inspect/reconstruct/native hypotheses only; no fit/search/score/benchmark",
+    "expected_work_records": 4,
+    "expected_unique_payloads": 3,
+    "repeated_source_cid": 2519,
+    "expected_old_ordinal": 3,
+    "expected_new_ordinal": 0,
+    "coordinate_tolerance_nm": 1e-12,
+    "human_participants": 0,
+    "public_inputs_or_geometry": false,
+    "owners": "LMMV/dprada",
+    "retention_review": "2026-11-25",
+    "resource_policy": {
+      "CPU": [
+        19
+      ],
+      "threads": 1,
+      "nice": 19,
+      "io": "idle",
+      "DATA_MiB": 512,
+      "own_group_RSS_stop_MiB": 1024,
+      "wall_seconds": 180,
+      "physical_reserve_fraction": 0.2,
+      "additional_margin_MiB": 1536,
+      "reserved": false,
+      "scheduler": "CLI present; socket permission failure prevents determining controller health; no allocation"
+    }
+  },
+  "admission_probe": {
+    "cid": 1983,
+    "n_atoms": 20,
+    "feature_count": 9,
+    "coverage": {
+      "hydrophobicity": {
+        "count": 4,
+        "status": "completed"
+      },
+      "hb donor": {
+        "count": 2,
+        "status": "completed"
+      },
+      "hb acceptor": {
+        "count": 2,
+        "status": "completed"
+      },
+      "aromatic ring": {
+        "count": 1,
+        "status": "completed"
+      },
+      "positive charge": {
+        "count": 0,
+        "status": "evaluated_empty"
+      },
+      "negative charge": {
+        "count": 0,
+        "status": "evaluated_empty"
+      }
+    },
+    "capture_status": "completed",
+    "payload_bytes": 25178,
+    "payload_sha256": "f3a2b61607ada1e2033366ce9e1786e24e9fc80424330f73e881eb5e8ab1b74d",
+    "extraction_items": 8,
+    "extraction_uses": 11,
+    "persistence_uses": 0,
+    "actual_public_quantity_version": "0.28.1",
+    "original_source_unchanged": true,
+    "placement_search_score_or_benchmark": false
+  },
+  "context_count": 4,
+  "guide_blocks_per_context": 4,
+  "guide_block_executions": 16,
+  "fresh_cold_readers": 4,
+  "observations": [
+    {
+      "mode": "source",
+      "unit_policy": "nm",
+      "runtime_version": "0.5.0+7.g35559b3",
+      "runtime_source": "7192041d85c7ca9d724028329ec8f18a4bdc9853",
+      "guide_sha256": "f1326d532ca6eea7e4454c26bc3da175258f53396d4606f5721d59304ac8ec17",
+      "public_quantity_version": "0.28.1",
+      "source_read_count": 3,
+      "extraction_count": 3,
+      "source_atoms": [
+        20,
+        21,
+        24
+      ],
+      "feature_counts": [
+        9,
+        11,
+        5
+      ],
+      "coverage": [
+        {
+          "hydrophobicity": {
+            "count": 4,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 5,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 1,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 4,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb donor": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb acceptor": {
+            "count": 3,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 2,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        }
+      ],
+      "work_records": 4,
+      "unique_payloads": 3,
+      "repeated_original_source_occurrences": 1,
+      "original_source_occurrences": 3,
+      "restored_complete_feature_counts": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "query_sites": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "original_bytes_unchanged": true,
+      "source_coordinates_unchanged": true,
+      "all_native_maps_geometry_and_references_equal": true,
+      "extraction_credit": {
+        "items": 8,
+        "uses": 11
+      },
+      "persistence_uses": 0,
+      "query_construction_uses": 2,
+      "subset_publication_uses": 0,
+      "app_session_and_unit_policy_retained": true,
+      "old_generation": "ebd0202282e4a437676b00f32219fd1eb4e85a650fe1fe6141e0fc4b5aeb0143",
+      "subset_generation": "b9fedb03d0bf5cabae885048decbf78385d82356ff16f7b4dc86f37620fd37fe",
+      "implicit_rebase_code": "PHMT-E337",
+      "old_ordinal": 3,
+      "new_ordinal": 0,
+      "old_pinned_count": 4,
+      "current_count": 1,
+      "recovery_action": "already_current",
+      "cold_reader": {
+        "records": 4,
+        "unique_payloads": 3,
+        "donors_evaluated_empty": true,
+        "scientific_imports": 0,
+        "quantities_checked": false,
+        "origin_authenticated": false,
+        "query_admitted": null,
+        "match_outcome": null
+      },
+      "source_fallback": false,
+      "inputs_payloads_and_archives": "local_only",
+      "benchmark_or_search_or_score": false,
+      "human_participants": 0,
+      "observed_original_software": {
+        "distribution_version": "0.4.0+120.g0925d97",
+        "observed_extractor_sha256": "02bc8b64e07a8a1f310f93cc901923b5c5de4e7186c52b931889df1d104fc8ea",
+        "operation": "pharmacophoremt.modeler.get_features",
+        "runtime_version": "0.5.0+7.g35559b3",
+        "schema": "pharmacophoremt.feature-extraction-observation@1",
+        "versions": {
+          "molsysmt": "0.23.0+860.g9df62445e",
+          "numpy": "2.5.4",
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "pyunitwizard": "0.28.1"
+        }
+      },
+      "loaded_target_only_module_count": 175
+    },
+    {
+      "mode": "source",
+      "unit_policy": "pm",
+      "runtime_version": "0.5.0+7.g35559b3",
+      "runtime_source": "7192041d85c7ca9d724028329ec8f18a4bdc9853",
+      "guide_sha256": "f1326d532ca6eea7e4454c26bc3da175258f53396d4606f5721d59304ac8ec17",
+      "public_quantity_version": "0.28.1",
+      "source_read_count": 3,
+      "extraction_count": 3,
+      "source_atoms": [
+        20,
+        21,
+        24
+      ],
+      "feature_counts": [
+        9,
+        11,
+        5
+      ],
+      "coverage": [
+        {
+          "hydrophobicity": {
+            "count": 4,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 5,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 1,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 4,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb donor": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb acceptor": {
+            "count": 3,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 2,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        }
+      ],
+      "work_records": 4,
+      "unique_payloads": 3,
+      "repeated_original_source_occurrences": 1,
+      "original_source_occurrences": 3,
+      "restored_complete_feature_counts": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "query_sites": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "original_bytes_unchanged": true,
+      "source_coordinates_unchanged": true,
+      "all_native_maps_geometry_and_references_equal": true,
+      "extraction_credit": {
+        "items": 8,
+        "uses": 11
+      },
+      "persistence_uses": 0,
+      "query_construction_uses": 2,
+      "subset_publication_uses": 0,
+      "app_session_and_unit_policy_retained": true,
+      "old_generation": "51f38abb92dfabc271c469b21bce47417233fe5679062babb058b45c4751a907",
+      "subset_generation": "bc3a02a1ac6d5748ef5102be4d8198032766f068cc7090a0bf0d2e213a78fa57",
+      "implicit_rebase_code": "PHMT-E337",
+      "old_ordinal": 3,
+      "new_ordinal": 0,
+      "old_pinned_count": 4,
+      "current_count": 1,
+      "recovery_action": "already_current",
+      "cold_reader": {
+        "records": 4,
+        "unique_payloads": 3,
+        "donors_evaluated_empty": true,
+        "scientific_imports": 0,
+        "quantities_checked": false,
+        "origin_authenticated": false,
+        "query_admitted": null,
+        "match_outcome": null
+      },
+      "source_fallback": false,
+      "inputs_payloads_and_archives": "local_only",
+      "benchmark_or_search_or_score": false,
+      "human_participants": 0,
+      "observed_original_software": {
+        "distribution_version": "0.4.0+120.g0925d97",
+        "observed_extractor_sha256": "02bc8b64e07a8a1f310f93cc901923b5c5de4e7186c52b931889df1d104fc8ea",
+        "operation": "pharmacophoremt.modeler.get_features",
+        "runtime_version": "0.5.0+7.g35559b3",
+        "schema": "pharmacophoremt.feature-extraction-observation@1",
+        "versions": {
+          "molsysmt": "0.23.0+860.g9df62445e",
+          "numpy": "2.5.4",
+          "pharmacophoremt": "0.4.0+120.g0925d97",
+          "pyunitwizard": "0.28.1"
+        }
+      },
+      "loaded_target_only_module_count": 175
+    },
+    {
+      "mode": "installed",
+      "unit_policy": "nm",
+      "runtime_version": "0.5.0+15.g7192041",
+      "runtime_source": "7192041d85c7ca9d724028329ec8f18a4bdc9853",
+      "guide_sha256": "f1326d532ca6eea7e4454c26bc3da175258f53396d4606f5721d59304ac8ec17",
+      "public_quantity_version": "0.28.1",
+      "source_read_count": 3,
+      "extraction_count": 3,
+      "source_atoms": [
+        20,
+        21,
+        24
+      ],
+      "feature_counts": [
+        9,
+        11,
+        5
+      ],
+      "coverage": [
+        {
+          "hydrophobicity": {
+            "count": 4,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 5,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 1,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 4,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb donor": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb acceptor": {
+            "count": 3,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 2,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        }
+      ],
+      "work_records": 4,
+      "unique_payloads": 3,
+      "repeated_original_source_occurrences": 1,
+      "original_source_occurrences": 3,
+      "restored_complete_feature_counts": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "query_sites": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "original_bytes_unchanged": true,
+      "source_coordinates_unchanged": true,
+      "all_native_maps_geometry_and_references_equal": true,
+      "extraction_credit": {
+        "items": 8,
+        "uses": 11
+      },
+      "persistence_uses": 0,
+      "query_construction_uses": 2,
+      "subset_publication_uses": 0,
+      "app_session_and_unit_policy_retained": true,
+      "old_generation": "718bda28d3c526d1f0825f6f5b7f61847b99fad8499d7dadb2c065b53ae28052",
+      "subset_generation": "82efc4fa145e526d608ad8ab581d9553a560ccd5f760025828626fcffac9d341",
+      "implicit_rebase_code": "PHMT-E337",
+      "old_ordinal": 3,
+      "new_ordinal": 0,
+      "old_pinned_count": 4,
+      "current_count": 1,
+      "recovery_action": "already_current",
+      "cold_reader": {
+        "records": 4,
+        "unique_payloads": 3,
+        "donors_evaluated_empty": true,
+        "scientific_imports": 0,
+        "quantities_checked": false,
+        "origin_authenticated": false,
+        "query_admitted": null,
+        "match_outcome": null
+      },
+      "source_fallback": false,
+      "inputs_payloads_and_archives": "local_only",
+      "benchmark_or_search_or_score": false,
+      "human_participants": 0,
+      "observed_original_software": {
+        "distribution_version": "0.5.0+15.g7192041",
+        "observed_extractor_sha256": "02bc8b64e07a8a1f310f93cc901923b5c5de4e7186c52b931889df1d104fc8ea",
+        "operation": "pharmacophoremt.modeler.get_features",
+        "runtime_version": "0.5.0+15.g7192041",
+        "schema": "pharmacophoremt.feature-extraction-observation@1",
+        "versions": {
+          "molsysmt": "0.23.0+860.g9df62445e",
+          "numpy": "2.5.4",
+          "pharmacophoremt": "0.5.0+15.g7192041",
+          "pyunitwizard": "0.28.1"
+        }
+      },
+      "loaded_target_only_module_count": 175
+    },
+    {
+      "mode": "installed",
+      "unit_policy": "pm",
+      "runtime_version": "0.5.0+15.g7192041",
+      "runtime_source": "7192041d85c7ca9d724028329ec8f18a4bdc9853",
+      "guide_sha256": "f1326d532ca6eea7e4454c26bc3da175258f53396d4606f5721d59304ac8ec17",
+      "public_quantity_version": "0.28.1",
+      "source_read_count": 3,
+      "extraction_count": 3,
+      "source_atoms": [
+        20,
+        21,
+        24
+      ],
+      "feature_counts": [
+        9,
+        11,
+        5
+      ],
+      "coverage": [
+        {
+          "hydrophobicity": {
+            "count": 4,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 2,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 5,
+            "status": "completed"
+          },
+          "hb donor": {
+            "count": 1,
+            "status": "completed"
+          },
+          "hb acceptor": {
+            "count": 4,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 1,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        },
+        {
+          "hydrophobicity": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb donor": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "hb acceptor": {
+            "count": 3,
+            "status": "completed"
+          },
+          "aromatic ring": {
+            "count": 2,
+            "status": "completed"
+          },
+          "positive charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          },
+          "negative charge": {
+            "count": 0,
+            "status": "evaluated_empty"
+          }
+        }
+      ],
+      "work_records": 4,
+      "unique_payloads": 3,
+      "repeated_original_source_occurrences": 1,
+      "original_source_occurrences": 3,
+      "restored_complete_feature_counts": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "query_sites": [
+        9,
+        11,
+        5,
+        5
+      ],
+      "original_bytes_unchanged": true,
+      "source_coordinates_unchanged": true,
+      "all_native_maps_geometry_and_references_equal": true,
+      "extraction_credit": {
+        "items": 8,
+        "uses": 11
+      },
+      "persistence_uses": 0,
+      "query_construction_uses": 2,
+      "subset_publication_uses": 0,
+      "app_session_and_unit_policy_retained": true,
+      "old_generation": "c3ada30cef74952438abd8f585ffc1dda0d2dd41247b93abab009453900ba681",
+      "subset_generation": "5436cac9f0f65e2c1ecd40c9e4ba3cdfee089a58f678a1d0e2c646a47e2e756a",
+      "implicit_rebase_code": "PHMT-E337",
+      "old_ordinal": 3,
+      "new_ordinal": 0,
+      "old_pinned_count": 4,
+      "current_count": 1,
+      "recovery_action": "already_current",
+      "cold_reader": {
+        "records": 4,
+        "unique_payloads": 3,
+        "donors_evaluated_empty": true,
+        "scientific_imports": 0,
+        "quantities_checked": false,
+        "origin_authenticated": false,
+        "query_admitted": null,
+        "match_outcome": null
+      },
+      "source_fallback": false,
+      "inputs_payloads_and_archives": "local_only",
+      "benchmark_or_search_or_score": false,
+      "human_participants": 0,
+      "observed_original_software": {
+        "distribution_version": "0.5.0+15.g7192041",
+        "observed_extractor_sha256": "02bc8b64e07a8a1f310f93cc901923b5c5de4e7186c52b931889df1d104fc8ea",
+        "operation": "pharmacophoremt.modeler.get_features",
+        "runtime_version": "0.5.0+15.g7192041",
+        "schema": "pharmacophoremt.feature-extraction-observation@1",
+        "versions": {
+          "molsysmt": "0.23.0+860.g9df62445e",
+          "numpy": "2.5.4",
+          "pharmacophoremt": "0.5.0+15.g7192041",
+          "pyunitwizard": "0.28.1"
+        }
+      },
+      "loaded_target_only_module_count": 175
+    }
+  ],
+  "independent_original_molecules": 3,
+  "original_source_occurrences": 3,
+  "new_independent_molecules_from_repetition": 0,
+  "explicit_selection_scope": "Same three original supplied PubChem conformers in each context; four work rows include one repeat of caffeine. Neither repeated executions nor archive rows are independent chemical samples.",
+  "runtime_preservation": {
+    "source_equal_bodies": 183,
+    "target_only_loaded_modules_per_context": 175,
+    "reused_owned_wheel_version": "0.5.0+15.g7192041",
+    "wheel_sha256": "96913793446ed1807b1a92a4792dbdb134b391f22986e13ec63af2fcaab6062d",
+    "wheel_payloads_verified_by_original_build": 238,
+    "new_wheel_built": false,
+    "runtime_or_molecular_engine_changed": false
+  },
+  "actual_public_quantity_floor": {
+    "version": "0.28.1",
+    "archive_sha256": "d4654faf93ed4181bf331f7d382379e78f02784f71f678ad19d0ac43d8062cc6",
+    "rehash_payload_files": 93
+  },
+  "provider_Git_observation": {
+    "repository": "uibcdf/molsysmt",
+    "before_and_after_head_observed": "aee7aa65da56e896d1cb2d655bf73736f6453a43",
+    "after_head": "aee7aa65da56e896d1cb2d655bf73736f6453a43",
+    "uncommitted_observation": "",
+    "limitation": "Point observations plus captured actual software metadata; this is not an immutable/full public dependency closure or the old pilot provider context."
+  },
+  "strict_docs": {
+    "source": {
+      "mode": "source",
+      "code": 0,
+      "runtime_version": "0.5.0+7.g35559b3",
+      "public_puw": "0.28.1",
+      "native_origins_checked": 172,
+      "notebook_execution": "off"
+    },
+    "installed": {
+      "mode": "installed",
+      "code": 0,
+      "runtime_version": "0.5.0+15.g7192041",
+      "public_puw": "0.28.1",
+      "native_origins_checked": 172,
+      "notebook_execution": "off"
+    }
+  },
+  "quality_checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.392s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.200s\n\nOK\n"
+    },
+    {
+      "name": "dependency-routes",
+      "code": 0,
+      "output": "{\"contexts\": [{\"bootstrap_selectors\": [\"python>=3.14,<3.15\", \"setuptools\", \"pytest\", \"pip\", \"pytest-cov\", \"codecov\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"mamba\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/development_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"development-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/docs_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"docs-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/production_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"production-3.14\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=77.0.3\", \"versioningit >=2,<3\", \"pytest >=8\", \"pytest-receptor=1.1.0\", \"packaging\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest >=0.17.1\", \"smonitor >=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"pyyaml >=5.1\", \"molsysviewer ==0.24.0\", \"ackredit ==0.12.0\", \"beartype ==0.22.9\", \"openmm ==8.6.1\"], \"environment\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"public-test-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.11\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.11\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py313.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.13\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.13\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=1.1.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py314.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": [\"smonitor-3.14\", \"depdigest-3.14\", \"pyunitwizard-3.14\", \"argdigest-3.14\", \"molsysviewer-3.14\", \"ackredit-3.14\", \"molsysmt-3.14\"]}], \"installed_check_required\": true, \"package\": \"pharmacophoremt\", \"proof_domain\": \"numeric-release-versions\", \"qualification\": \"declared-only\", \"routes\": [{\"kind\": \"shared-noarch\", \"path\": \"devtools/conda-build/meta.yaml\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/build_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/development_env.yaml\", \"purpose\": \"development\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/docs_env.yaml\", \"purpose\": \"documentation\"}, {\"kind\": \"resolved-package\", \"path\": \"devtools/conda-envs/importable_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/production_env.yaml\", \"purpose\": \"production\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/setup_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py313.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/CI.yaml\", \"sha256\": \"25e86c29846199f622eed8eaad320b39813845ca84b3ee5953939cb5edb5f324\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/build_and_upload_conda_packages.yaml\", \"sha256\": \"18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/conda_publication_governance.yaml\", \"sha256\": \"353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/molsyssuite-policy.yml\", \"sha256\": \"6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/promote_conda_package.yaml\", \"sha256\": \"2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/sphinx_docs_to_gh_pages.yaml\", \"sha256\": \"b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/test_installed_conda_package.yaml\", \"sha256\": \"d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_resource_probe.yaml\", \"sha256\": \"f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_native_qualification.yaml\", \"sha256\": \"89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0\"}], \"schema\": \"molsyssuite.dependency-routes@3\", \"selected_context\": null, \"source_dependencies\": [\"ackredit-3.14\", \"ackredit-base\", \"argdigest-3.14\", \"argdigest-base\", \"depdigest-3.14\", \"depdigest-base\", \"molsysmt-3.14\", \"molsysmt-base\", \"molsysviewer-3.14\", \"molsysviewer-base\", \"pyunitwizard-3.14\", \"pyunitwizard-base\", \"smonitor-3.14\", \"smonitor-base\"], \"source_inputs\": [{\"path\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}, {\"path\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}], \"source_routes\": [{\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}, {\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}]}\n"
+    },
+    {
+      "name": "environments",
+      "code": 0,
+      "output": "{\n  \"changed\": []\n}\n"
+    },
+    {
+      "name": "administrative-distribution",
+      "code": 0,
+      "output": "acquired evaluation 1/64 CID 2347: completed\nacquired evaluation 2/64 CID 10204: failed\nacquired evaluation 3/64 CID 6852393: completed\nacquired evaluation 4/64 CID 79688: completed\nacquired evaluation 5/64 CID 138394061: completed\nacquired evaluation 6/64 CID 608116: completed\nacquired evaluation 7/64 CID 9904: completed\nacquired evaluation 8/64 CID 5479: completed\nacquired evaluation 9/64 CID 87250: completed\nacquired evaluation 10/64 CID 62130: completed\nacquired evaluation 11/64 CID 7070: completed\nacquired evaluation 12/64 CID 5280961: completed\nacquired evaluation 13/64 CID 5281227: completed\nacquired evaluation 14/64 CID 65359: completed\nacquired evaluation 15/64 CID 8572: completed\nacquired evaluation 16/64 CID 472181: completed\nacquired evaluation 17/64 CID 15284: completed\nacquired evaluation 18/64 CID 70425: completed\nacquired evaluation 19/64 CID 11193251: completed\nacquired evaluation 20/64 CID 23686673: completed\nacquired evaluation 21/64 CID 6950248: completed\nacquired evaluation 22/64 CID 33255: completed\nacquired evaluation 23/64 CID 6209: completed\nacquired evaluation 24/64 CID 7059: completed\nacquired evaluation 25/64 CID 13624: completed\nacquired evaluation 26/64 CID 13387: completed\nacquired evaluation 27/64 CID 2794: completed\nacquired evaluation 28/64 CID 12989: completed\nacquired evaluation 29/64 CID 6538105: completed\nacquired evaluation 30/64 CID 10486: completed\nacquired evaluation 31/64 CID 644076: completed\nacquired evaluation 32/64 CID 7237: completed\nacquired evaluation 33/64 CID 7284: completed\nacquired evaluation 34/64 CID 23688977: completed\nacquired evaluation 35/64 CID 14075: completed\nacquired evaluation 36/64 CID 60196362: completed\nacquired evaluation 37/64 CID 16591: completed\nacquired evaluation 38/64 CID 74483: completed\nacquired evaluation 39/64 CID 10197675: completed\nacquired evaluation 40/64 CID 3714831: completed\nacquired evaluation 41/64 CID 7479: completed\nacquired evaluation 42/64 CID 18510: completed\nacquired evaluation 43/64 CID 445639: completed\nacquired evaluation 44/64 CID 10409: completed\nacquired evaluation 45/64 CID 6786: completed\nacquired evaluation 46/64 CID 16230: completed\nacquired evaluation 47/64 CID 70014: completed\nacquired evaluation 48/64 CID 23194: completed\nacquired evaluation 49/64 CID 5354133: completed\nacquired evaluation 50/64 CID 1549517: completed\nacquired evaluation 51/64 CID 23683938: completed\nacquired evaluation 52/64 CID 7203: completed\nacquired evaluation 53/64 CID 36605: completed\nacquired evaluation 54/64 CID 6333: completed\nacquired evaluation 55/64 CID 5354342: completed\nacquired evaluation 56/64 CID 18056: completed\nacquired evaluation 57/64 CID 73539: completed\nacquired evaluation 58/64 CID 10197650: completed\nacquired evaluation 59/64 CID 7348: completed\nacquired evaluation 60/64 CID 31370: failed\nacquired evaluation 61/64 CID 42981: completed\nacquired evaluation 62/64 CID 12512: completed\nacquired evaluation 63/64 CID 8129: completed\nacquired evaluation 64/64 CID 7819: completed\nacquired training CID 31477: completed\nacquired training CID 24633: failed\nacquired training CID 6293: completed\nretained training CID 31477: completed\nretained training CID 24633: failed\nretained training CID 6293: completed\nacquired training CID 9818306: completed\nacquired training CID 123504: completed\nacquired training CID 5857: completed\nacquired training CID 443831: completed\nacquired training CID 13765: completed\nacquired training CID 6422843: completed\nacquired training CID 17701: completed\nacquired training CID 6327657: completed\nacquired training CID 70400: completed\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"observed\", \"resources\": {\"memory\": {\"MemTotal\": 17179869184, \"MemAvailable\": 15032385536}, \"memory_psi\": \"some avg10=0.00\\nfull avg10=0.00\\n\", \"unit_memory_psi\": \"some avg10=0.00\\nfull avg10=0.00\\n\", \"swap_pages\": {\"pswpin\": 0, \"pswpout\": 0}}}\n..............................................................................................usage: python -m unittest [-h] --output OUTPUT --unit UNIT --cpu CPU --uid UID\n                          --gid GID [--manager MANAGER] [--name NAME]\n                          {bootstrap,native}\npython -m unittest: error: argument phase: invalid choice: 'benchmark' (choose from 'bootstrap', 'native')\n...................................................................\n----------------------------------------------------------------------\nRan 161 tests in 41.849s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "commands": [
+    {
+      "name": "admission-probe",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 3.0359389309887774,
+      "own_group_RSS_peak_bytes": 270630912,
+      "minimum_available_bytes": 52947742720,
+      "record": {
+        "bytes": 19601,
+        "sha256": "9708019bf810e54008f0921916c57e2b6ef0d4cf7d981db46c5b28ffd80d73cb"
+      }
+    },
+    {
+      "name": "ci-route-green",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 0.7105033060070127,
+      "own_group_RSS_peak_bytes": 79749120,
+      "minimum_available_bytes": 55291940864,
+      "record": {
+        "bytes": 6310,
+        "sha256": "29ec7fe27c1d2cc05622d2eb5a074070757e5ccd8da824969945bf96d1df9f2d"
+      }
+    },
+    {
+      "name": "ci-route-red",
+      "exit_code": 1,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 0.6089470569859259,
+      "own_group_RSS_peak_bytes": 64352256,
+      "minimum_available_bytes": 55234220032,
+      "record": {
+        "bytes": 5752,
+        "sha256": "45df71be030d42ea4580f21aece10f159dda9d6e7ba86a373d23c5c148c45aef"
+      }
+    },
+    {
+      "name": "installed-docs",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 11.723954301967751,
+      "own_group_RSS_peak_bytes": 310484992,
+      "minimum_available_bytes": 58946236416,
+      "record": {
+        "bytes": 69970,
+        "sha256": "2da32eed808585e2db1ecc875cd6e1fb9f2e19672a75f0047d5026e5314bcef0"
+      }
+    },
+    {
+      "name": "installed-nm",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 6.269422387005761,
+      "own_group_RSS_peak_bytes": 313057280,
+      "minimum_available_bytes": 54612021248,
+      "record": {
+        "bytes": 38453,
+        "sha256": "128d0d85adb7a7d92715fce49d4766f8971656ff40bb17523797fd6900f09175"
+      }
+    },
+    {
+      "name": "installed-pm",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 6.372178252029698,
+      "own_group_RSS_peak_bytes": 312459264,
+      "minimum_available_bytes": 54601605120,
+      "record": {
+        "bytes": 39028,
+        "sha256": "dcef2ef7c8b0f90d0ddda1bda36a515af873d43e06d5a0a60b6f09e90f7b4ec3"
+      }
+    },
+    {
+      "name": "quality-after-ci-guard",
+      "exit_code": 1,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 2.5411670460016467,
+      "own_group_RSS_peak_bytes": 53301248,
+      "minimum_available_bytes": 54944407552,
+      "record": {
+        "bytes": 16711,
+        "sha256": "87f0738bb827600a2db6ec65aef4bbff985f45570ebdb591d80858167170add1"
+      }
+    },
+    {
+      "name": "quality-final",
+      "exit_code": 1,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 7.50323125399882,
+      "own_group_RSS_peak_bytes": 415076352,
+      "minimum_available_bytes": 55426027520,
+      "record": {
+        "bytes": 45383,
+        "sha256": "d2aeb4d5d8bd3b493cad6c681151eff26151a2eeb3c4c638c3152c231c0b614c"
+      }
+    },
+    {
+      "name": "quality-reviewed-route",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 50.143020858988166,
+      "own_group_RSS_peak_bytes": 421371904,
+      "minimum_available_bytes": 54707904512,
+      "record": {
+        "bytes": 291479,
+        "sha256": "2178e4cd297465ce4e6db03fa5d50d511431ed27e70e64c8c86ed057077ff3ff"
+      }
+    },
+    {
+      "name": "quality",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 50.486968591983896,
+      "own_group_RSS_peak_bytes": 418385920,
+      "minimum_available_bytes": 58562801664,
+      "record": {
+        "bytes": 293842,
+        "sha256": "eeda3492d542130faa6d0128721c22751e93374c131a7e460baa8589bfa414d2"
+      }
+    },
+    {
+      "name": "receive-case",
+      "exit_code": 1,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 0.20399683096911758,
+      "own_group_RSS_peak_bytes": 37343232,
+      "minimum_available_bytes": 55716909056,
+      "record": {
+        "bytes": 3229,
+        "sha256": "91f632f62095803887541e301f233cfe0b8d0949f26eda9b8afff868f2710178"
+      }
+    },
+    {
+      "name": "source-docs",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 11.5209518239717,
+      "own_group_RSS_peak_bytes": 310779904,
+      "minimum_available_bytes": 58896039936,
+      "record": {
+        "bytes": 68791,
+        "sha256": "6ba7702306f15a107f6284d14df97a11bde38d24507baa5d9264cd2012067d4e"
+      }
+    },
+    {
+      "name": "source-nm",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 6.473460966954008,
+      "own_group_RSS_peak_bytes": 312508416,
+      "minimum_available_bytes": 54771187712,
+      "record": {
+        "bytes": 39497,
+        "sha256": "7d1541d7d1b16de823de8f2c94846f45eb79474cd7ec0953d36f2775b66814ed"
+      }
+    },
+    {
+      "name": "source-pm",
+      "exit_code": 0,
+      "DATA_per_process_bytes": 536870912,
+      "seconds": 6.476462816004641,
+      "own_group_RSS_peak_bytes": 312487936,
+      "minimum_available_bytes": 54598356992,
+      "record": {
+        "bytes": 39548,
+        "sha256": "f00b3ecda67854a907eeec7b8e9196f0a54bc7b7fb4ee180a1a8f1dbe2656ae2"
+      }
+    }
+  ],
+  "original_inputs_or_new_geometry_published": false,
+  "full_evidence": {
+    "path": "prepared_library_features_20261111_public.json.gz",
+    "compressed_bytes": 102296,
+    "compressed_sha256": "524c195ab342a75c5b6228acebb871c6aa5f90b5d7c46793796a800618326fde",
+    "uncompressed_bytes": 1344024,
+    "uncompressed_sha256": "047664959f4c320b232e77a1986436728f2c760dec3264ba7625fb8319f18c62",
+    "own_public_files": 71,
+    "scope": "Reviewed own code/scalars/hashes; no molecular source/native geometry payload."
+  },
+  "limitations": [
+    "No new acquisition, preparation, state/conformer generation, molecular collection or source authentication. MolSysMT#624 stays open/unreceived.",
+    "No correspondence/alignment/placement/search/score or benchmark; stopped#148/#165 are unchanged.",
+    "No biological labels, affinity, human-usability or scale evidence. Human participants0.",
+    "Bounded Linux/Python3.14 source/reused-owned receiving, not full supported/public/platform qualification; observed distribution/runtime versions remain original.",
+    "Original4766946CI has a separate acquisition failure under#197; local cases do not qualify its matrix. No tag/package/docs publication."
+  ],
+  "temporary_resources": {
+    "owners": "LMMV/dprada",
+    "review": "2026-11-25",
+    "case": "build/phmt-prepared-library-features-20261111-nqdnmeti",
+    "retain": "Case execution and native outputs retained locally for original evidence/recovery; molecular inputs/geometry not redistributed; reused wheel/target retain their original owner receipt"
+  }
+}

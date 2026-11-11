@@ -1,5 +1,20 @@
 # Strategic roadmap
 
+## Real prepared-library features and acquisition recovery — 2026-11-11 UTC
+
+[#108 receiving](prepared_library_feature_archive.md) composes current public
+capture/archive/reconstruction/model tools over the same three original PubChem
+snapshots: sixteen source/reused-owned nm/pm recipe blocks and four cold readers
+pass, with complete geometry/maps/references and no repeated extraction. Native
+geometry stays local; collection, human, biological and scale gates stay separate.
+
+Original4766946CI cannot be accepted: macOS/Python3.11 fails a second identical
+MolSysMT clone before scientific tests. [#197's correction](ci_molsysmt_acquisition.md)
+removes only that duplicate, retains pins/SDK/science and mandatory verification,
+and passes nine routes plus ten quality checks. The [corrected checkpoint](source_0_6_0_acquisition_recovery.md)
+expects 3,420 cases/127 qualified paths; collection is not execution. Freeze and
+receive its own exact-source runs. #192 stays active; no new version/publication.
+
 ## Explicit feature argument controls — #6 (2026-11-11 UTC)
 
 After the maintainer resumed development, the [bounded follow-up](feature_argument_controls.md)

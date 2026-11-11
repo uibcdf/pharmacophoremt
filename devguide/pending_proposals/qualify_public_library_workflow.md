@@ -14,6 +14,23 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Prepared-library native archive continuation — 2026-11-11 UTC
+
+The [public recipe](../../docs/content/user/prepared_library_features.md) and
+[contract](../prepared_library_feature_archive.md) connect capture, native
+payload/archive, cold coverage, explicit reconstruction and model construction
+over the same three original PubChem3D H5MSM artifacts. [Receiving](../evidence/prepared_library_features_20261111.json)
+passes sixteen source/reused-owned nm/pm blocks and four cold readers, original
+geometry/maps/references, duplicate identity and pinned/rebased generations.
+The same512MiB envelope admits the one-record probe and all full contexts;
+source/owned runtime stays equal. Native geometry stays local; no acquisition,
+preparation, fit/search/score, benchmark or human/biological/scale claim follows.
+
+Original4766946CI separately fails a redundant second MolSysMT clone before
+science; [#197 recovery](../ci_molsysmt_acquisition.md) retains original failure
+and all pins/scientific assertions. MolSysMT#624 stays open/unreceived and
+#148/#165 stay stopped. This advance does not complete this umbrella.
+
 ## Reuse captured native features — 2026-11-11 UTC
 
 [#193](../archive/native_feature_reconstruction.md) receives explicit compatibility

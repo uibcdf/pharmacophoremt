@@ -1,5 +1,22 @@
 # Decisions and active workstreams
 
+## Real-source feature lifecycle and failed-source recovery — 2026-11-11 UTC
+
+The [#108 real-input continuation](prepared_library_feature_archive.md) receives
+sixteen source/reused-owned nm/pm public blocks and four cold readers over the
+same three PubChem snapshots. Original maps/geometry/references, evaluated-empty
+coverage, duplicate identity and pinned/rebased generations survive; no fitting,
+score, benchmark or new extraction during saved reuse is run. Runtime stays equal
+to owned7192041; full public/collection/human/biological/scale gates stay separate.
+
+Frozen4766946's macOS/Python3.11 cell fails acquisition before science. Its second
+identical MolSysMT clone is removed under [#197](ci_molsysmt_acquisition.md), with
+all other workflow structure/pins/SDK/science unchanged and mandatory verification
+retained. Nine route controls/ten quality checks pass; current guide equality and
+3,420 collected cases/127 expected paths prepare a [corrected source checkpoint](source_0_6_0_acquisition_recovery.md).
+Do not accept the older matrix, close#192 or duplicate original jobs. No tag or
+package/public documentation publisher is selected. #148/#165 remain stopped.
+
 ## Explicit feature argument controls — #6 (2026-11-11 UTC)
 
 The maintainer resumed development after discussion. The
