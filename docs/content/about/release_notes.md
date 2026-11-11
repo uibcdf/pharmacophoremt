@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.6.0
 
+- Expose explicit keyword-only `skip_digestion=False` on `modeler.get_features`
+  and `FeatureInventoryPayload.from_inventory`. Default/False retain ordinary
+  normalization; True requires canonical arguments and keeps scientific/native
+  checks active, including explicit payload-profile admission. Existing inventory
+  and wire schemas retain their contracts. See [expert controls](../user/feature_capture.md#expert-argument-controls).
 - Add [`modeler.capture_features`](../user/feature_capture.md) to retain the
   effective requested families, completed/evaluated-empty coverage, native
   atom/frame/state maps and original observed extraction software around one

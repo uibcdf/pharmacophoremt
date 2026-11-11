@@ -36,6 +36,13 @@ FEATURE_FIELDS = {
 }
 
 
+def require_profile(payload_profile):
+    """Require explicit profile admission even when argument digestion is bypassed."""
+    if type(payload_profile) is not str or payload_profile != PAYLOAD_PROFILE:
+        fail(301, argument="payload_profile")
+    return payload_profile
+
+
 def require(condition):
     if not condition:
         fail(330)

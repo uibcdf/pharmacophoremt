@@ -100,6 +100,36 @@ The output is `0` and `True`. See [native archives](native_feature_archives.md) 
 subset assembly and original ordinal lineage, and [archive writing](feature_archive_writing.md)
 for publication attempts and linked recovery.
 
+## Expert argument controls
+
+Ordinary calls validate and normalize arguments. Development source also exposes
+keyword-only `skip_digestion=False` on `get_features` and
+`FeatureInventoryPayload.from_inventory`, matching the explicit control on the
+capture operations. Use True only when your application already supplies canonical
+arguments. The following block continues with `prepared` and `parent` from above:
+
+```python
+families = ["hb donor", "positive charge", "negative charge"]
+inventory = phmt.modeler.get_features(
+    prepared, features=families, skip_digestion=True,
+)
+expert_payload = FeatureInventoryPayload.from_inventory(
+    inventory, families, parent=parent, extraction_producer=None,
+    payload_profile="native-classical-v1", skip_digestion=True,
+)
+restored = expert_payload.to_inventory(required_families=families)
+print(len(restored["features"]))
+print(expert_payload.describe()["coverage"]["hb donor"]["count"])
+```
+
+The outputs are `2` and `0`. Unknown original extraction software remains None;
+use `capture_features` when you need its observed evaluation/producer evidence.
+True skips argument digestion for that call only. It keeps native profile, unit,
+geometry, mapping, coverage and resource checks active, and nested public tools
+keep their own validation. For example, supply a list of canonical family names
+in bypass mode; the ordinary scalar-name normalization is skipped. There is no
+measured performance claim for this control.
+
 The complete [public API](../../api/users/api_users.rst) exposes all operations.
 `capture_features` accepts the existing `selection`, `structure_index`,
 `chemical_state` and `features` choices. Effective families use canonical order;

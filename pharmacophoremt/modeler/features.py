@@ -42,6 +42,7 @@ def get_features(
     structure_index=0,
     chemical_state="reference",
     features=CLASSICAL_FEATURES,
+    skip_digestion=False,
 ):
     """Extract participants and their geometry from one prepared ligand frame.
 
@@ -57,6 +58,9 @@ def get_features(
         Chemical state resolved by MolSysMT independently of the frame.
     features : sequence of str
         Requested classical families; 'included volume' also yields heavy atoms.
+    skip_digestion : bool, default=False
+        Skip argument normalization for canonical inputs. Native family, frame,
+        coordinate and provider checks still apply.
 
     Returns
     -------

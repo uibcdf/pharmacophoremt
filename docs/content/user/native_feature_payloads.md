@@ -94,3 +94,7 @@ The [native-v2 archive guide](native_feature_archives.md) shows explicit native
 record assembly with retained source ordinals; the historical
 [archive writer](feature_archive_writing.md) keeps its original whole-generation
 profile. These development increments publish no package or new tag.
+
+For expert composition, `from_inventory` also accepts keyword-only
+`skip_digestion=False`. Deliberate True requires canonical arguments and retains
+all profile/native checks. See the [executed example](feature_capture.md#expert-argument-controls).

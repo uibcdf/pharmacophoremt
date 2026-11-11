@@ -36,14 +36,17 @@ class FeatureInventoryPayload:
         parent,
         extraction_producer,
         payload_profile,
+        skip_digestion=False,
     ):
         """Encode a complete captured inventory with explicit evaluation/source declarations.
 
         ``native-classical-v1`` is required. Original extraction producer may
         explicitly be None (unknown). No extraction or attribution registration
         runs. The result is reconstructed through the native validator before
-        returning; caller objects are never mutated.
+        returning; caller objects are never mutated. ``skip_digestion=True``
+        requires canonical arguments and keeps profile/native checks active.
         """
+        spec.require_profile(payload_profile)
         from pharmacophoremt._private.native_feature_payload import encode
 
         result = cls.__new__(cls)

@@ -23,6 +23,14 @@ retain separate identities and qualification.
 
 ## Modeling routes
 
+The later [#6 feature argument controls](feature_argument_controls.md) add
+keyword-only `skip_digestion=False` to the existing extractor and native inventory
+encoder. Default/False preserve their normal contracts; deliberate True requires
+canonical inputs and keeps native/profile checks. [Selected source receiving](evidence/feature_argument_controls_source_20261111.json)
+passes535 cases and31 actual public-ArgDigest0.17.1 controls; exact-owned and full
+supported/public receiving remain separate. Original #196 signature-preservation
+claims below retain their earlier scope.
+
 The [source-owned capture contract](feature_capture_provenance.md), #196, adds
 `modeler.capture_features` and `FeatureInventoryPayload.from_capture`. Effective
 requested/evaluated-empty coverage and observed original software are retained

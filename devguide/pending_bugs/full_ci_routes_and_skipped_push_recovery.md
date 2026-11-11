@@ -15,6 +15,15 @@ supersedes: []
 
 # Full-CI contributor routes and skipped-push recovery
 
+## Later explicit feature controls — #6 (2026-11-11 UTC)
+
+The [additive two-control increment](../feature_argument_controls.md) follows
+frozen4766946 and retains independent full-source debt. Its selected535 source
+cases/public-provider31 cases/docs/quality do not qualify the earlier source run
+for this later implementation. Receive the existing attempt1 handles without
+resetting the checkout or duplicating runs, and group later code into a deliberate
+checkpoint when useful. Exact-owned/public gates remain separate under #10/#23.
+
 ## Terminal saved-run source checkpoint — 2026-11-08
 
 The [terminal receipt](../evidence/saved_run_ci_terminal_20261108.json) accepts

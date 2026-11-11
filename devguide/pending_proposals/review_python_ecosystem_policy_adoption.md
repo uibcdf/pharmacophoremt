@@ -14,6 +14,15 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Explicit feature argument controls — 2026-11-11 UTC
+
+The [bounded contract](../feature_argument_controls.md) receives the #196
+follow-up for explicit keyword-only `skip_digestion=False` on `get_features` and
+`FeatureInventoryPayload.from_inventory`. The original provider performs bypass;
+native science/profile admission remains mandatory. Source/owned receiving is
+recorded separately in that contract. This remains one bounded #6 increment;
+the umbrella stays partial and #82 remains resolved. Frozen4766946CI and later
+source/public/platform debt retain their own identities.
 ## Independent-reader released support receiving — 2026-11-07
 
 The [receiving contract](../reader_public_provider_receiving.md) and

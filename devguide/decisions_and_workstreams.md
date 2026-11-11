@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## Explicit feature argument controls — #6 (2026-11-11 UTC)
+
+The maintainer resumed development after discussion. The
+[two-control contract](feature_argument_controls.md) extends existing signatures
+additively, retains ordinary normalization and native/profile checks, and changes
+no molecular or wire owner. [Selected source receiving](evidence/feature_argument_controls_source_20261111.json)
+passes535 distinct cases,31 actual public-ArgDigest0.17.1 controls, nm/pm guide
+blocks, strict docs and ten quality checks. First failures remain original;
+exact-owned receiving follows the source freeze. Broader #6 and all separate
+source/platform/public/scientific gates remain open as appropriate.
+
 ## Partial source receiving and public-feature exercise — 2026-11-11 UTC
 
 [Partial receiving](evidence/source_060_partial_20261111.json) verifies frozen

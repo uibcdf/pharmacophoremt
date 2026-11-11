@@ -7,9 +7,28 @@ remain intact: [November 7](checkpoint_history_20261107.md),
 [November 10](checkpoint_history_20261110.md) and
 [before this checkpoint](checkpoint_history_20261111.md).
 
-**Maintainer-requested pause:** after this received block, pause for discussion.
-Existing remote CI retains its original runs. Resume development only when the
-maintainer asks; inspect those same handles before requesting more work.
+**Development resumed:** the maintainer requested continuation after the product
+and modeling-route discussion. The original remote attempts were inspected first;
+no duplicate CI was requested. The historical pause remains in the prior record.
+
+## Explicit feature argument controls — #6
+
+The [bounded contract](feature_argument_controls.md) adds keyword-only
+`skip_digestion=False` to `modeler.get_features` and
+`FeatureInventoryPayload.from_inventory`. Default/False preserve their existing
+normalization; True requires canonical inputs and retains native science. Profile
+admission shares its schema-owned predicate with ordinary digestion. No molecular,
+wire-schema, dependency or search/scoring change is selected. The
+[source receipt](evidence/feature_argument_controls_source_20261111.json) receives
+535 selected passes, including31 new guards, plus31 actual public-ArgDigest0.17.1
+passes, source nm/pm examples, strict docs and ten quality checks. Exact-owned
+receiving follows the source freeze and stays pending here.
+One combined 512MiB test process reached its own DATA limit, without a resource
+pressure stop; smaller serial groups retain the same assertions and limits.
+
+This later source is independent of frozen4766946CI below; #6 remains partial.
+Next finish exact-owned receiving, retaining all
+first attempts and supported-source/public qualification debt under #9/#10/#23.
 
 ## Accumulated source checkpoint: first cell received, matrix pending
 

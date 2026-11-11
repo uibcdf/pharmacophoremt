@@ -27,6 +27,13 @@ and later serialization add no duplicate extraction credit.
 
 ## Public operations and finite profile
 
+Later #6 follow-up (2026-11-11): the additive
+[argument-control contract](feature_argument_controls.md) explicitly extends
+`get_features` and `from_inventory` with keyword-only `skip_digestion=False`.
+The signature-preservation statements below describe this original #196 slice;
+the later change has separate receiving and does not alter captured inventory or
+wire schemas. Its bypass retains native/profile validation.
+
 `capture_features(molecular_system, *, selection="all", structure_index=0,
 chemical_state="reference", features=CLASSICAL_FEATURES, skip_digestion=False)` has the existing
 extractor's argument meanings. ArgDigest owns signature/value normalization.

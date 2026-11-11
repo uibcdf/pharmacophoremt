@@ -11,9 +11,7 @@ OWNER = "pharmacophoremt_features.FeatureInventoryPayload."
 
 
 def _profile(payload_profile):
-    if type(payload_profile) is not str or payload_profile != spec.PAYLOAD_PROFILE:
-        fail(301, argument="payload_profile")
-    return payload_profile
+    return spec.require_profile(payload_profile)
 
 
 def _families(value):
