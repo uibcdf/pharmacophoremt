@@ -161,3 +161,9 @@ Before public promotion, settle naming, selection/generation policy and public
 argument/diagnostic admission. Persisted lookup identity/cost, scale, biological
 validation, full exact-head/public/platform/release gates and MolSysMT#624 remain
 separate. #148/#165 stay stopped.
+
+## Later public-surface proposal — #188
+
+The [minimal API proposal](feature_asset_public_api.md) receives names, selection/
+generation/page policy and a real ArgDigest/SMonitor admission study. Those are
+proposed public contracts; this workflow remains unshipped and unchanged.

@@ -1,6 +1,6 @@
 # Current development checkpoint
 
-Maintained 2026-11-10 UTC; owners LMMV/dprada. Follow the accepted
+Maintained 2026-11-11 UTC; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 0.x staircase](roadmap.md): versions group useful completed scope;
 no final minor or date is fixed. Start with [onboarding](onboarding.md) and
 [decisions/workstreams](decisions_and_workstreams.md). Detailed prior receiving is
@@ -9,33 +9,37 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-[#187 guided/expert workflow](feature_store_workflow.md) now composes the existing
-bounded store through shared inspection, captured-feature reuse and publication
-recovery operations. Guided sessions own a pinned reader; expert calls borrow
-theirs. Selection preserves global ordinals, literal keys and full original
-inventories. Missing evaluation/incomplete extraction/unknown keys/stale generation
-refuse clearly; every reuse reconstructs quantities afresh. Query admission and
-molecular origin remain separate.
+[#188 minimal public API proposal](feature_asset_public_api.md) now defines the
+cold same-distribution feature-reader boundary, explicit native reuse and later
+writer/recovery slice. Generation, selection/page and close ownership remain
+separate from query/source/run admission. Proposed names are not importable;
+no public namespace, stable format or supported artifact is introduced.
 
-The [receipt/archive](evidence/feature_store_workflow_20261110.json) receives85guards
-per source/exact-owned218 context (32new/53regression), twelve exercise tasks under
-nm/pm per context, cold preview/recovery and original byte/credit preservation.
-Controlled before/after publication termination protects unknown attempts and
-linked retry parity. A current candidate needs no retry; a different publication
-requires review. Original unknown history is never rewritten by a new success.
-Runtime stays5515e93/owned218; all admitted provider bodies remain unchanged.
-No new molecular operation, feature generation, matching or benchmark runs.
+The [receipt/archive](evidence/feature_asset_api_20261111.json) receives a16-file
+source audit and76guards per source/exact-owned218 context (44newadmission/
+32workflow regression). Real ArgDigest contracts and SMonitor catalog errors
+are received with two cold readers,125public support payloads, six actual error
+categories, preserved application policy and no rejected input captured.
+Admitted nm/pm native reuse preserves original maps/producers and creates no new
+Ackredit credit. Initial69passes/four failures were incorrect control assumptions
+about native TypeError variants and internal bypass; their originals remain.
+Neither the admission implementation, providers nor scientific runtime changed
+to accommodate those corrections. Runtime remains5515e93/owned218; no new feature
+generation, matching, molecular operation, benchmark or environment update.
 
-Next: propose the minimal public feature-asset surface, named generation/selection
-policy and registered ArgDigest/SMonitor admission. Run the declared tasks with
-novice/expert users independently; actual human participants remain zero. Keep
-persisted lookup identity/size/rebuild and wider cost/scale gates separate.
-MolSysMT#624 remains open/unreceived; QuantityRecord stays provisional. #148/#165
-remain stopped and #9/#23 retain full current-head/public/platform/release gates.
-No new remote CI checkpoint is requested.
+Next implement and qualify the proposed read-only FeatureAssetView under a
+separately owned public format/profile contract, retaining study artifacts and
+rejecting unsupported schemas explicitly. Public scientific reconstruction,
+writer/recovery, packaging/platform gates and representative human receiving
+stay independent. MolSysMT#624 is open/unreceived; QuantityRecord provisional;
+#148/#165 remain stopped and #9/#23 retain exact-head/public/release gates.
 
 ## Received foundations and their boundaries
 
+- [#187 guided/expert workflow](feature_store_workflow.md) and its
+  [receipt](evidence/feature_store_workflow_20261110.json) retain85controls,
+  twelve exercise tasks per context and real interrupted-publication recovery.
+  Human participants remain zero; technical parity is not usability acceptance.
 - [#186 immutable store](feature_store_study.md) and its
   [receipt](evidence/feature_store_20261110.json) retain53storage controls, exact
   original bytes, detached lifetime, publication interruption and reopened72-row

@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (127)
+### Resolved (128)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -27,6 +27,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
 - [`consensus_support_review.md`](consensus_support_review.md) — [#80](https://github.com/uibcdf/pharmacophoremt/issues/80) — Qualify native consensus support, typed occurrence reuse and controlled input multiplicity. *(resolved, measured)*
 - [`coverage_xml_namespace_identity.md`](coverage_xml_namespace_identity.md) — [#141](https://github.com/uibcdf/pharmacophoremt/issues/141) — Preserve package-qualified coverage XML identities for both runtime namespaces. *(resolved, reproduced)*
+- [`define_feature_asset_public_api.md`](define_feature_asset_public_api.md) — [#188](https://github.com/uibcdf/pharmacophoremt/issues/188) — Define the minimal feature-asset API and qualify argument/diagnostic admission. *(resolved, measured)*
 - [`docs_contributor_footer.md`](docs_contributor_footer.md) — [#149](https://github.com/uibcdf/pharmacophoremt/issues/149) — Contributor footer links resolve to a nonexistent path at every documentation depth. *(resolved, measured)*
 - [`document_saved_inspection_journey.md`](document_saved_inspection_journey.md) — [#159](https://github.com/uibcdf/pharmacophoremt/issues/159) — Compose saved progress, status selection and detail in one executable public recipe. *(resolved, measured)*
 - [`document_source_discovery_journey.md`](document_source_discovery_journey.md) — [#171](https://github.com/uibcdf/pharmacophoremt/issues/171) — Discover a source, count selected work and inspect original details in one snapshot. *(resolved, measured)*

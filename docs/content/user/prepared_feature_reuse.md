@@ -93,3 +93,8 @@ checks that both routes preserve original occurrence positions and make the same
 reuse/recovery decisions. Missing family evaluation remains unknown; an interrupted
 publication is checked before deciding whether to retry. This is technical study
 evidence, with human usability and the public store interface still pending.
+
+The subsequent [public API proposal](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_asset_public_api.md)
+separates lightweight saved-feature inspection from explicit scientific reuse.
+Its proposed names are not available yet; existing supported APIs and stored-run
+formats keep their current contracts.

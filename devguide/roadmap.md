@@ -1,5 +1,25 @@
 # Strategic roadmap
 
+## Minimal public feature-asset API proposal — #188 (2026-11-11 UTC)
+
+The [proposed surface](feature_asset_public_api.md) separates a cold same-
+distribution feature reader, explicit native inventory reuse and later writer/
+recovery qualification. It fixes generation/selection/page meaning and registered
+argument/diagnostic ownership without exposing a new public namespace or promoting
+study formats. The [receipt/archive](evidence/feature_asset_api_20261111.json)
+receives a16-file source audit,76controls per source/exact-owned218 context
+(44admission/32workflow), real six-category catalog emission and unchanged
+application policy in two scientifically cold readers. Admitted nm/pm reuse
+retains original maps/producers with no new credit. The initial69pass/four-failure
+control assumptions and their correction remain preserved; no provider/runtime
+was changed to accommodate them.
+
+Next implement and qualify the proposed read-only feature-asset view under its
+own public format/profile contract before adding public native reconstruction
+or writers. Human receiving and full exact-head/public/platform/release gates
+remain independent. MolSysMT#624 stays unreceived; QuantityRecord provisional;
+persisted lookup/cost/scale and #148/#165 remain outside this increment.
+
 ## Guided/expert feature-store workflow — #187 (2026-11-10 UTC)
 
 The [workflow exercise](feature_store_workflow.md) now composes shared inspection,
