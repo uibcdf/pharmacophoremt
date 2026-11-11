@@ -4,6 +4,14 @@ Owners LMMV/dprada; PHMT#95; reviewed 2026-11-11 UTC. This is preparation,
 not a candidate/version/tag/publication decision. The mature 0.x staircase remains
 scope-driven, with later minor versions available before 1.0.
 
+Later additive source7192041 introduces the [#6 explicit feature controls](feature_argument_controls.md):
+two optional keyword-only `skip_digestion=False` parameters, with normal default
+behavior, unchanged extraction scientific body/native codec and mandatory profile
+checks. Its source/exact-owned receiving is separate from the original comparison
+below and frozen4766946's matrix. The original no-signature-change result remains
+valid for its stated f722b45 endpoint, not for this later intentionally extended
+API. No version/tag/publication decision follows.
+
 ## Reviewed source and coherent scope
 
 Compare immutable 0.5.0 source `2bff5dcf454bc5230f473237a49939215a60aab2`

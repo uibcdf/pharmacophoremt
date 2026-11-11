@@ -74,3 +74,13 @@ Preflight/install/import/architecture/full-command/coverage and original log
 identities are verified. The other seven cells and required control workflows
 remain unreceived; #192 stays active until complete supported receiving. This
 single cell does not establish general thread/fork safety or public delivery.
+
+## Three source cells and control gates received — 2026-11-11 UTC
+
+The [resumed receipt](../evidence/source_060_resume_20261111.json) adds original
+macOS/Python3.13 and Linux/Python3.14 job captures:3,388 passes/zero skips/48
+warnings/127 qualified XML paths each, with no controlled fork deprecation.
+Conformance and publication controls pass their required native steps. Five
+scientific cells remain unreceived; this report stays active. Original source,
+attempts and pending snapshots remain intact. Later7192041's argument controls
+have independent full-source debt and do not alter this process-isolation scope.

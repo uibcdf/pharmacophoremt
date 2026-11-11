@@ -4,11 +4,16 @@
 
 After the maintainer resumed development, the [bounded follow-up](feature_argument_controls.md)
 adds two expert keyword-only controls while preserving ordinary normalization and
-mandatory scientific checks. [Source receiving](evidence/feature_argument_controls_source_20261111.json)
-passes535 distinct cases,31 public-ArgDigest0.17.1 cases, nm/pm guide blocks,
-strict docs and ten quality checks. Exact-owned receiving is next. This advances
+mandatory scientific checks. [Source/exact-owned receiving](evidence/feature_argument_controls_20261111.json)
+passes535 distinct cases and31 public-ArgDigest0.17.1 cases per context, sixteen
+nm/pm guide blocks, strict docs and ten quality checks. This advances
 classical/API coherence; broader #6, frozen4766946CI, installed/public, molecular
 collections, independent humans, science and scale retain separate gates.
+
+The original [frozen-source resumed receipt](evidence/source_060_resume_20261111.json)
+receives three scientific cells at3,388 passes/127 qualified paths each, reporting,
+conformance and publication controls. Five scientific cells remain; #192 stays
+active. The later7192041 source is not relabelled as tested by4766946's matrix.
 
 ## Partial source receiving and public-feature exercise — 2026-11-11 UTC
 

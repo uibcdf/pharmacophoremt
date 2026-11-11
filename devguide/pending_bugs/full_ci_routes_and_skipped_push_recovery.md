@@ -24,6 +24,14 @@ for this later implementation. Receive the existing attempt1 handles without
 resetting the checkout or duplicating runs, and group later code into a deliberate
 checkpoint when useful. Exact-owned/public gates remain separate under #10/#23.
 
+The [resumed original-source receipt](../evidence/source_060_resume_20261111.json)
+now verifies three science cells at3,388 passes/127 qualified paths each, reporting,
+conformance and publication governance. Five science cells still require receiving;
+no complete checkpoint or later-head coverage is accepted. The new
+[source/exact-owned argument-control receipt](../evidence/feature_argument_controls_20261111.json)
+retains535 selected cases/31 public-ArgDigest cases per context, not full-suite debt
+clearance. No new CI request, rerun or successful-cell cancellation occurred.
+
 ## Terminal saved-run source checkpoint — 2026-11-08
 
 The [terminal receipt](../evidence/saved_run_ci_terminal_20261108.json) accepts

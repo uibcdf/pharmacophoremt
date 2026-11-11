@@ -19,18 +19,23 @@ The [bounded contract](feature_argument_controls.md) adds keyword-only
 normalization; True requires canonical inputs and retains native science. Profile
 admission shares its schema-owned predicate with ordinary digestion. No molecular,
 wire-schema, dependency or search/scoring change is selected. The
-[source receipt](evidence/feature_argument_controls_source_20261111.json) receives
-535 selected passes, including31 new guards, plus31 actual public-ArgDigest0.17.1
-passes, source nm/pm examples, strict docs and ten quality checks. Exact-owned
-receiving follows the source freeze and stays pending here.
+[combined receipt](evidence/feature_argument_controls_20261111.json) receives
+535 selected passes in each source/exact-owned context, including31 new guards,
+plus31 actual public-ArgDigest0.17.1 cases each. All238 wheel payloads/183 runtime
+bodies verify;175 loaded modules are target-only. Public PUW0.28.1's93 files,
+sixteen source/owned nm/pm guide blocks, strict docs and ten quality checks pass.
+The [closeout](evidence/feature_argument_controls_closeout_20261111.json) verifies
+six later checks, 150 archive entries and 529 changed local Markdown targets.
 One combined 512MiB test process reached its own DATA limit, without a resource
 pressure stop; smaller serial groups retain the same assertions and limits.
 
 This later source is independent of frozen4766946CI below; #6 remains partial.
-Next finish exact-owned receiving, retaining all
-first attempts and supported-source/public qualification debt under #9/#10/#23.
+Its bounded scope is received at7192041; broader supported-source/public
+qualification debt remains #9/#10/#23-owned. Next receive the original frozen
+source matrix below, then continue #108's guided/expert library workflow; provider
+collections remain MolSysMT#624-owned and unreceived.
 
-## Accumulated source checkpoint: first cell received, matrix pending
+## Accumulated source checkpoint: three cells received, matrix pending
 
 Frozen source **47669463e8047f33c77537c5d7e010199cb411fd** contains the reviewed
 notes/compatibility preparation for 0.6.0 development. The
@@ -55,11 +60,15 @@ arm64/Python3.14.10: **3,388 passed, zero skipped, 48 retained warnings and 127
 qualified coverage paths**, with no controlled fork deprecations. Reporting
 also passes 3 reporting/18 archive/8 route/161 administrative controls. These are
 job-only captures while the overall run remains pending; raw remote logs stay
-local. The other seven scientific cells and conformance/publication gates must
-still be received. #192 remains active and no complete source checkpoint is accepted.
+local. The [resumed receipt](evidence/source_060_resume_20261111.json) adds actual
+macOS arm64/Python3.13.18 and Linux x86_64/Python3.14.10: each passes3,388 with
+zero skips,48 warnings,127 qualified XML paths and no controlled fork deprecation.
+Conformance and publication-governance required native steps now pass. Five
+scientific cells still require receiving; #192 stays active and no complete source
+checkpoint is accepted. Later7192041 retains its independent full-source debt.
 
 **Next concrete action:** inspect these same handles/attempt 1, then receive all
-required terminal native steps, 3,388-case counts/skips/warnings and complete
+five remaining terminal native cells, 3,388-case counts/skips/warnings and complete
 127-path XML before accepting this source or closing #192. Use the retained
 case-specific recovery/qualifier; it reads immutable frozen Git objects even if
 main later advances, without resetting the shared checkout. Diagnose any actual

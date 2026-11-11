@@ -19,8 +19,12 @@ supersedes: []
 The [bounded contract](../feature_argument_controls.md) receives the #196
 follow-up for explicit keyword-only `skip_digestion=False` on `get_features` and
 `FeatureInventoryPayload.from_inventory`. The original provider performs bypass;
-native science/profile admission remains mandatory. Source/owned receiving is
-recorded separately in that contract. This remains one bounded #6 increment;
+native science/profile admission remains mandatory. The
+[source/exact-owned receipt](../evidence/feature_argument_controls_20261111.json)
+receives535 selected cases and31 actual public-ArgDigest0.17.1 cases per context,
+238 payloads/183 runtime bodies,175 target-only modules, public PUW0.28.1,
+sixteen guide-block executions and strict docs. First failures remain retained.
+This remains one bounded #6 increment;
 the umbrella stays partial and #82 remains resolved. Frozen4766946CI and later
 source/public/platform debt retain their own identities.
 ## Independent-reader released support receiving — 2026-11-07

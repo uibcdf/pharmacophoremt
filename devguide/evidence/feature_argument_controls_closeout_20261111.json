@@ -1,0 +1,53 @@
+{
+  "schema": "pharmacophoremt.feature-argument-controls.closeout@1",
+  "source": "7192041d85c7ca9d724028329ec8f18a4bdc9853",
+  "checks": [
+    {
+      "name": "ruff",
+      "code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "stdout": "519 files already formatted\n",
+      "stderr": ""
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "stdout": "Generated report indexes are current.\n",
+      "stderr": ""
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "stdout": "",
+      "stderr": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.414s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "stdout": "",
+      "stderr": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.233s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "stdout": "",
+      "stderr": ""
+    }
+  ],
+  "archived_execution_files_verified": 150,
+  "changed_markdown_local_targets": 529,
+  "unchanged_runtime_files": 183,
+  "exact_runtime_tests_and_public_docs_unchanged_since_owned_source": true,
+  "temporary_resource_review": {
+    "owners": "LMMV/dprada",
+    "review_date": "2026-11-25",
+    "retain": "Own case, frozen clone, exact private wheel and target retained for recovery; shared environment and original evidence untouched",
+    "new_CI_source_case": "Original4766946run capsules retained separately; raw remote logs stay local"
+  },
+  "full_source_and_release_accepted": false
+}

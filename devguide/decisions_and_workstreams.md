@@ -5,11 +5,17 @@
 The maintainer resumed development after discussion. The
 [two-control contract](feature_argument_controls.md) extends existing signatures
 additively, retains ordinary normalization and native/profile checks, and changes
-no molecular or wire owner. [Selected source receiving](evidence/feature_argument_controls_source_20261111.json)
-passes535 distinct cases,31 actual public-ArgDigest0.17.1 controls, nm/pm guide
-blocks, strict docs and ten quality checks. First failures remain original;
-exact-owned receiving follows the source freeze. Broader #6 and all separate
+no molecular or wire owner. [Source/exact-owned receiving](evidence/feature_argument_controls_20261111.json)
+passes535 distinct cases and31 actual public-ArgDigest0.17.1 controls per context,
+sixteen nm/pm guide blocks, strict docs and ten quality checks. All238 payloads,
+183 source-equal runtime bodies and175 target-only modules verify; first failures
+remain original. Broader #6 and all separate
 source/platform/public/scientific gates remain open as appropriate.
+
+Original [4766946 receiving](evidence/source_060_resume_20261111.json) now verifies
+three scientific cells,3,388 passes/127 qualified paths each, reporting and both
+control workflows. Five source cells remain unreceived; #192 stays active and
+this later API source has separate full-source coverage debt.
 
 ## Partial source receiving and public-feature exercise — 2026-11-11 UTC
 

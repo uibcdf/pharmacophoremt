@@ -79,3 +79,26 @@ previously measured 768MiB envelope retains its intentional warnings and origina
 /dev/null finalization warning. No host-pressure stop, provider fix or assertion
 relaxation follows. Exact-owned receiving follows a committed source freeze;
 this receipt does not relabel source selection as installed/full-platform evidence.
+
+## Exact-owned receiving — 2026-11-11 UTC
+
+Source7192041d85c7ca9d724028329ec8f18a4bdc9853 produces one private development
+wheel0.5.0+15.g7192041. The [combined receipt](evidence/feature_argument_controls_20261111.json)
+receives the same535 selected cases and the same31 public-ArgDigest controls
+outside source, with zero failures/skips. All238 wheel payloads verify;183 runtime
+bodies equal source, and all175 loaded PHMT modules come from the owned target.
+Public PUW0.28.1's93 files are rehashed. Sixteen guide-block executions across
+source/owned and nm/pm, strict full docs and the original ten quality checks pass.
+
+The [own execution archive](evidence/feature_argument_controls_20261111.json.gz)
+retains150 original execution/control files, including first failures. The source
+generated version remains observed0.5.0+7.g35559b3, distinct from the correctly
+generated owned wheel. Other providers retain the shared/source context; this is
+no full public dependency closure or all-platform installed qualification.
+This bounded #6 slice is received; the umbrella remains partial. No tag, public
+package, new CI request or stopped-measurement retry follows.
+
+The [closeout receipt](evidence/feature_argument_controls_closeout_20261111.json)
+receives six later checks, all 150 archived file identities, 529 local Markdown
+targets and all 183 unchanged runtime bodies. Runtime, tests and public docs stay
+equal to the owned source; later receiving changes developer records/evidence only.

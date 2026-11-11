@@ -96,3 +96,18 @@ later head was tested. A tag/publication decision remains separate.
 Later native job readback at 19:33 UTC starts macOS/Python 3.14; ten other required
 jobs remain queued. Preserve the earlier queued observation and original handles;
 this transition is not a passing scientific/complete-source gate.
+
+## Resumed source/control receiving — 2026-11-11 UTC
+
+The [first-cell receipt](evidence/source_060_partial_20261111.json) qualifies
+macOS/Python3.14 and reporting. The [resumed receipt](evidence/source_060_resume_20261111.json)
+adds macOS arm64/Python3.13.18 and Linux x86_64/Python3.14.10 from original job-only
+captures:3,388 passes/zero skips/48 warnings/127 qualified XML paths each, with no
+controlled fork deprecation. Native conformance/lint/format and publication-control
+steps are now successful, without building or publishing. Raw logs remain local.
+
+All original attempt1 identities remain; no rerun, cancellation or redispatch.
+Five remaining scientific cells and terminal whole-run evidence must be received
+before accepting the source checkpoint or closing#192. Later7192041's additive
+[argument-control work](feature_argument_controls.md) has its own selected
+source/owned receiving and full-source debt;4766946 is not relabelled as its head.

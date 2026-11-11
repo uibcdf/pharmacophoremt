@@ -14,6 +14,22 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Separate source and exact-owned receiving — 2026-11-11 UTC
+
+The [resumed controlled-source receipt](../evidence/source_060_resume_20261111.json)
+receives three of eight scientific cells at frozen 4766946: 3,388 passes and
+127 qualified coverage paths each, plus reporting, conformance and publication
+controls. Five scientific cells remain unreceived; no complete source acceptance
+or #192 closure follows. All original attempts and earlier source evidence remain.
+
+Later source 7192041's [argument-control receipt](../evidence/feature_argument_controls_20261111.json)
+receives the same 535 selected cases and 31 actual public-ArgDigest cases per
+source/exact-owned context. All 238 wheel payloads, 183 runtime bodies and
+175 target-only loaded modules verify, with public PUW 0.28.1 and executable
+nm/pm guides. This remains bounded Linux/Python 3.14 receiving; other dependencies
+retain their shared/source context. Full installed/public/all-platform evidence
+stays open. No version/tag, package publication or shared-prefix change occurred.
+
 ## Latest bounded source and public observation — 2026-11-08
 
 The [frozen5c3cd64checkpoint](../saved_run_ci_checkpoint.md) passes2430cases per
