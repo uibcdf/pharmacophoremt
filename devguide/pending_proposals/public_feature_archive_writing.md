@@ -14,6 +14,25 @@ supersedes: []
 
 # Public feature-archive writing and recovery
 
+## Native-v2 integration under receiving — 2026-11-11 UTC
+
+The [native archive contract](../native_feature_archive.md) selects native-only
+v2, public immutable `FeatureAssetRecord`, explicit bounded assembly, retained
+source/global-ordinal lineage, default preservation and explicit subset rebasing.
+It reuses the same lease, installation, publication and linked recovery owner.
+Historical v1 and its original receipts stay unchanged; cross-profile/mixed
+migration refuses. New-format native reading/reuse calls the public payload
+validator afresh, with no study runtime, molecular source authority or new credit.
+
+312 source controls pass (67 native archive and 245 earlier cases), actual public
+PyUnitWizard 0.28.1, native nm/pm science, cold readers/recovery, bounded lineage/
+quotas and real before/after-replacement SIGTERM/SIGKILL. First four malformed-row
+fixtures incorrectly wrote a v1 CURRENT pointer; their helper now explicitly
+selects v2 while retaining its legacy default and all original E335 assertions.
+Six source guide blocks under nm/pm and strict full docs pass; exact-owned
+artifact/examples/docs receiving remains pending. Earlier
+proposal/slice evidence below is historical, not a statement of current absence.
+
 After [#193 native reconstruction](../archive/native_feature_reconstruction.md),
 select the versioned public payload/metadata and ownership contract. The existing
 #186/#187 storage/workflow studies provide interruption/recovery evidence, not a

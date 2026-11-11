@@ -19,7 +19,10 @@ def _generation(expected_generation):
 
 
 def _profile(payload_profile):
-    if type(payload_profile) is not str or payload_profile != PAYLOAD_PROFILE:
+    if type(payload_profile) is not str or payload_profile not in (
+        PAYLOAD_PROFILE,
+        _schema.NATIVE_PAYLOAD_PROFILE,
+    ):
         fail(301, argument="payload_profile")
     return payload_profile
 

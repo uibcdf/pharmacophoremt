@@ -13,7 +13,10 @@ OWNER = "pharmacophoremt_features.FeatureAssetStore."
 
 
 def _profile(payload_profile):
-    if type(payload_profile) is not str or payload_profile != _schema.SNAPSHOT_PROFILE:
+    if type(payload_profile) is not str or payload_profile not in (
+        _schema.SNAPSHOT_PROFILE,
+        _schema.NATIVE_PAYLOAD_PROFILE,
+    ):
         fail(301, argument="payload_profile")
     return payload_profile
 
@@ -53,6 +56,26 @@ def _retry(retry_of):
     return None if retry_of is None else attempt_id(retry_of, argument=True)
 
 
+def _records(records):
+    from ._record import FeatureAssetRecord
+
+    if type(records) not in (list, tuple):
+        fail(301, argument="records")
+    if len(records) > _schema.MAX_NATIVE_RECORDS:
+        fail(313)
+    if any(not isinstance(r, FeatureAssetRecord) for r in records):
+        fail(301, argument="records")
+    return tuple(records)
+
+
+def _ordinal_policy(ordinal_policy):
+    from ._native_archive_schema import ORDINAL_POLICIES
+
+    if type(ordinal_policy) is not str or ordinal_policy not in ORDINAL_POLICIES:
+        fail(301, argument="ordinal_policy")
+    return ordinal_policy
+
+
 ARGUMENT_DIGESTERS = {
     "self": _identity,
     "cls": _identity,
@@ -64,6 +87,8 @@ ARGUMENT_DIGESTERS = {
     "expected_current": _current,
     "attempt": _attempt,
     "retry_of": _retry,
+    "records": _records,
+    "ordinal_policy": _ordinal_policy,
 }
 METHODS = (
     "create",
@@ -71,6 +96,7 @@ METHODS = (
     "current",
     "view",
     "stage",
+    "stage_records",
     "publish",
     "attempts",
     "inspect_recovery",

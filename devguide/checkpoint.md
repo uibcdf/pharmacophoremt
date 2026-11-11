@@ -9,28 +9,30 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-**#195's first standalone native payload slice is received** at source
-`92d97fbb235dcfc8bec0d53ca384fea2579c6d3a`. The
-[contract](native_feature_payload.md) and
-[receipt](evidence/native_feature_payload_20261111.json) receive **245 selected
-source and 245 exact-owned cases** (95 payload, 150 earlier writer/reader/native).
-The wheel has 232 verified payloads/177 source-equal runtime bodies; all 168
-loaded PHMT modules originate in its installed target. Actual public PyUnitWizard
-0.28.1 bytes receive all six families, original geometry/maps/frame/state/
-references, evaluated-empty versus unobserved coverage, finite bounds and fresh
-scientific activation under application pm policy. Cold metadata and actual
-restrictive diagnostics remain separate from native admission.
+**Native archive v2 and explicit record assembly are implemented and under
+receiving** under [#194](pending_proposals/public_feature_archive_writing.md)/
+[#195](pending_proposals/public_native_feature_payloads.md). The
+[contract](native_feature_archive.md) selects native-only v2, public immutable
+`FeatureAssetRecord`, guarded source-ordinal preservation, explicit subset rebasing,
+retained bounded lineage and the existing publication/recovery lifecycle. Historical
+v1 remains unchanged; mixed/cross-profile migration refuses. No extraction or
+new extraction credit follows from assembly.
 
-All eight guide-block executions across source/owned and nm/pm and strict full
-docs pass; ten quality checks include 161 administrative controls. Original
-first launcher/spawn failure and its guard correction remain in the receipt.
-No extraction, archive-format migration, source-pin/shared-prefix mutation or
-new credit occurs. This is bounded Linux/Python3.14 receiving, not full hosted/
-public/platform qualification.
+**312 selected source cases pass**, including 67 archive/lineage controls and the
+earlier 245 payload/writer/reader/native cases, actual public PyUnitWizard 0.28.1,
+all original native quantities/maps/references under nm/pm, quotas, actual capture,
+cold readers/recovery and four real native publication SIGTERM/SIGKILL cases.
+Initial 295-pass/four-failure controls used a v1 pointer in their new v2 fixture;
+the fixture now explicitly selects v2 and retains the same native-row assertions.
+Six source guide blocks under nm/pm and strict full docs pass. Exact-owned
+artifact/examples/docs receiving remains pending. The final source control also
+checks the returned public page ordinal before adding its origin anchor.
 
-**Next concrete action:** specify native-payload archive admission and original/new ordinal/source lineage
-under [#194](pending_proposals/public_feature_archive_writing.md)/
-[#195](pending_proposals/public_native_feature_payloads.md) before assembly code.
+**Next concrete action:** receive source guides/docs and one exact-owned artifact,
+then receive the bounded #194/#195 scope. [#196](pending_proposals/capture_feature_evaluation_provenance.md)
+owns the next source-evaluation provenance contract before more runtime changes. The
+[standalone payload receipt](evidence/native_feature_payload_20261111.json)
+preserves its original 92d97fb/245-case receiving; earlier evidence is not relabelled.
 Full hosted/platform/public, MolSysMT#624 and biological/human/scale gates remain
 separate; #148/#165 stay stopped. No new tag/package is selected.
 

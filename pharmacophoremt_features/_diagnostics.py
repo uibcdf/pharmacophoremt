@@ -117,6 +117,22 @@ CODES = {
         "message": "A required feature family was not declared evaluated in this native payload.",
         "hint": "Inspect retained evaluation coverage; missing families require explicit new extraction.",
     },
+    "PHMT-E335": {
+        "message": "The native archive record, metadata binding or retained lineage is invalid.",
+        "hint": "Preserve the original evidence and inspect literal identities, payload metadata and complete source anchors.",
+    },
+    "PHMT-E336": {
+        "message": "The selected archive and native payload profiles do not match.",
+        "hint": "Choose the intended supported profile explicitly; archives are never converted or mixed implicitly.",
+    },
+    "PHMT-E337": {
+        "message": "A borrowed record would move from its retained source ordinal.",
+        "hint": "Preserve its position or explicitly choose explicit-rebase@1 while keeping all original anchors.",
+    },
+    "PHMT-E338": {
+        "message": "This record has reached its retained archive-lineage limit.",
+        "hint": "Keep its original evidence; at most 16 origin anchors are admitted and no history is trimmed automatically.",
+    },
 }
 SIGNALS = {}
 CATALOG = {

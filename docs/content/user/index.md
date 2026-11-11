@@ -58,6 +58,7 @@ feature_archives
 native_feature_reuse
 feature_archive_writing
 native_feature_payloads
+native_feature_archives
 ```
 
 ## Find examples and reference material

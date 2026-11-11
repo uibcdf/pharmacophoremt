@@ -1,7 +1,8 @@
 """Feature evidence and explicit writer activation, delivered in PharmacophoreMT.
 
 Import and metadata operations use standard/support libraries only. Explicit
-ready-payload writing activates scientific validation; reading stays opaque.
+ready-payload writing activates scientific validation. Historical reading stays
+opaque; native-v2 metadata binds layout without scientific quantity decoding.
 These operations authenticate no source and create no new extraction attribution.
 Original opaque payload bytes can contain private geometry and provenance.
 """
@@ -21,10 +22,16 @@ __all__ = [
     "FeatureAssetError",
     "FeatureAssetStore",
     "FeatureInventoryPayload",
+    "FeatureAssetRecord",
 ]
 
 
 def __getattr__(name):
+    if name == "FeatureAssetRecord":
+        from ._record import FeatureAssetRecord
+
+        globals()[name] = FeatureAssetRecord
+        return FeatureAssetRecord
     if name == "FeatureInventoryPayload":
         from ._payload import FeatureInventoryPayload
 

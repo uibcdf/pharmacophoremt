@@ -2,6 +2,11 @@
 
 ## Unreleased — toward 0.6.0
 
+- Add [native feature archive v2](../user/native_feature_archives.md) with
+  explicit record assembly, original source/global-ordinal lineage, guarded
+  subset rebasing and the existing publication/recovery lifecycle. Cold layout
+  inspection and explicit native reuse remain separate. Historical v1 stays
+  unchanged; implicit or mixed-format migration is refused.
 - Add standalone [native feature payloads](../user/native_feature_payloads.md)
   for already captured complete inventories: explicit evaluated families, original
   maps/geometry/references, sealed quantities, cold metadata and fresh native

@@ -5,6 +5,7 @@ from depdigest import dep_digest
 from smonitor import signal
 
 from pharmacophoremt._private.arg_digestion.feature_reuse import CONFIG
+from pharmacophoremt_features import _schema
 from pharmacophoremt_features._diagnostics import fail
 
 MAX_REUSE_RECORDS = 64
@@ -22,10 +23,11 @@ def reuse_feature_inventories(
     payload_profile,
     work_keys=None,
 ):
-    """Return complete native inventories from an explicitly admitted old profile.
+    """Return complete captured inventories from an explicitly admitted profile.
 
     ``payload_profile='snapshot-study-v1'`` explicitly admits only the documented
-    historical single-frame profile. No format autodetection, extraction, source
+    historical single-frame profile; native-classical-v1 selects native-v2 archives.
+    No implicit cross-profile decoding, extraction, source
     authentication, query admission or writer is provided. Quantities, geometry
     and metadata bindings are revalidated on each call. The caller owns ``view``;
     this bounded eager operation never closes it and returns no partial batch.
@@ -36,10 +38,16 @@ def reuse_feature_inventories(
     recomputed scientific quantities or new extraction credit. The generation
     identifies the pinned archive, not the current molecular source.
     """
-    from pharmacophoremt._private.feature_snapshot_v1 import decode_snapshot
-
     if view.generation != expected_generation:
         fail(308)
+    native_profile = payload_profile == _schema.NATIVE_PAYLOAD_PROFILE
+    expected_schema = (
+        _schema.NATIVE_GENERATION_SCHEMA
+        if native_profile
+        else _schema.GENERATION_SCHEMA
+    )
+    if view.summary()["schema"] != expected_schema:
+        fail(336)
     preview = view.inspect(required_families, work_keys=work_keys)
     action = preview["decision"]["action"]
     if action == "resolve_incomplete_extraction":
@@ -57,7 +65,21 @@ def reuse_feature_inventories(
         originals.append(raw)
     rows = []
     for row, raw in zip(preview["records"], originals):
-        native = decode_snapshot(raw, row["extraction"])
+        if native_profile:
+            from pharmacophoremt_features import FeatureInventoryPayload
+
+            payload = FeatureInventoryPayload.from_bytes(
+                raw, payload_profile=payload_profile
+            )
+            if _schema.encoded(payload.describe()) != _schema.encoded(
+                row["extraction"]
+            ):
+                fail(310)
+            native = payload.to_inventory(required_families=required_families)
+        else:
+            from pharmacophoremt._private.feature_snapshot_v1 import decode_snapshot
+
+            native = decode_snapshot(raw, row["extraction"])
         rows.append(
             {
                 "work_ordinal": row["work_ordinal"],
@@ -66,6 +88,7 @@ def reuse_feature_inventories(
                 "occurrence_key": row["occurrence_key"],
                 "extraction": row["extraction"],
                 "inventory": native,
+                **({"lineage": row["lineage"]} if native_profile else {}),
             }
         )
     return {

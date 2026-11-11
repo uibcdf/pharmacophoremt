@@ -88,6 +88,7 @@ This bounded profile admits at most 256 source atoms, 64 features and 2 MiB per
 payload, with bounded finite JSON provenance. It refuses unsupported definitions,
 included-volume features, incomplete records and invalid or missing scientific
 fields. Use the [public API](../../api/users/api_users.rst) for all operations.
-The existing [archive writer](feature_archive_writing.md) currently accepts whole
-historical generations; inserting these new payloads or assembling arbitrary
-records is a later operation. This increment publishes no package or new tag.
+The [native-v2 archive guide](native_feature_archives.md) shows explicit native
+record assembly with retained source ordinals; the historical
+[archive writer](feature_archive_writing.md) keeps its original whole-generation
+profile. These development increments publish no package or new tag.

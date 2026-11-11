@@ -14,6 +14,24 @@ supersedes: []
 
 # Public native feature payloads
 
+## Native archive integration under receiving — 2026-11-11 UTC
+
+The [selected native archive contract](../native_feature_archive.md) and source
+implementation integrate the standalone payload into explicit native-v2 record
+assembly, original source/ordinal lineage, default preservation and explicit
+subset rebasing. Stage/publication/reuse call the same native payload validator
+afresh. Historical v1 remains unchanged; unsupported cross-profile/mixed migration
+refuses. Incomplete evidence stays distinct from valid evaluated-empty payloads.
+
+312 selected source cases pass with actual public PyUnitWizard 0.28.1, including
+67 archive/lineage controls, earlier payload/native/writer/reader receiving,
+original references/no-new-credit and real native publication interruption.
+The four first malformed-row fixtures had a v1 pointer; the corrected explicit-v2
+fixture retains every native-row assertion. Source nm/pm examples/strict docs pass;
+exact-owned receiving remains pending. Original standalone receiving and its later-work statement below
+describe that earlier checkpoint and are superseded only for the selected source
+integration, not for mixed migration or full supported/public delivery.
+
 ## Selected standalone slice — 2026-11-11 UTC
 
 The [owning contract](../native_feature_payload.md) selects explicit

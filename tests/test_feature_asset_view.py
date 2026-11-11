@@ -42,7 +42,7 @@ def identity(root):
     }
 
 
-def install(root, value, *, publish=True):
+def install(root, value, *, publish=True, store_schema=_schema.STORE_SCHEMA):
     raw = canonical_json(value).encode()
     generation = hashlib.sha256(raw).hexdigest()
     (root / "generations" / (generation + ".json")).write_bytes(raw)
@@ -50,7 +50,7 @@ def install(root, value, *, publish=True):
         (root / "CURRENT").write_bytes(
             canonical_json(
                 {
-                    "schema": _schema.STORE_SCHEMA,
+                    "schema": store_schema,
                     "generation": generation,
                     "bytes": len(raw),
                 }

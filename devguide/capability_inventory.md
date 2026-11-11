@@ -23,6 +23,13 @@ retain separate identities and qualification.
 
 ## Modeling routes
 
+The [native-v2 archive integration](native_feature_archive.md), #194/#195, adds
+public record factories, explicit assembly, retained source/global-ordinal lineage
+and guarded subset rebasing through the existing publication/recovery. Source
+receives 312 selected controls under actual public PyUnitWizard 0.28.1; source
+nm/pm examples/strict docs pass, exact-owned receiving remains pending. Historical v1 remains original; no
+cross-profile conversion, collection or molecular authentication is introduced.
+
 The [standalone native payload producer](native_feature_payload.md), #195, is
 implemented in development source: complete captured classical inventories,
 explicit evaluated-empty/unobserved distinction, original maps/frame/state/
@@ -31,8 +38,8 @@ references, sealed quantities, cold metadata and fresh native reads. The
 source and exact-owned cases each under the actual public quantity floor,
 including nondefault/first-activation policy and maximum admission. Source/owned
 examples under nm/pm and strict full docs pass; 177 runtime bodies are source-equal.
-Archive insertion/assembly is
-separate; this adds no collection, molecular authentication or public package.
+Its later native-v2 integration above retains separate receiving; this adds no
+collection, molecular authentication or public package.
 
 Development after #193 also receives the
 [first writer-owned archive](public_feature_archive_store.md): whole-generation

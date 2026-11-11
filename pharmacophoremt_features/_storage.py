@@ -28,20 +28,22 @@ def layout(root):
         (root / "generations").lstat().st_mode
     ):
         fail(302)
-    if _schema.json_document(_read(root / "STORE.json", 4096)) != _schema.MARKER:
+    marker = _schema.json_document(_read(root / "STORE.json", 4096))
+    if marker not in (_schema.MARKER, _schema.NATIVE_MARKER):
         fail(307)
+    return marker
 
 
 def read_generation(root, expected):
     try:
-        layout(root)
+        marker = layout(root)
         pointer = None
         if expected is None:
             pointer = _schema.json_document(_read(root / "CURRENT", 4096))
             if (
                 type(pointer) is not dict
                 or set(pointer) != {"schema", "generation", "bytes"}
-                or pointer["schema"] != _schema.STORE_SCHEMA
+                or pointer["schema"] != marker["schema"]
             ):
                 fail(302)
             _schema.digest(pointer["generation"])
@@ -59,6 +61,13 @@ def read_generation(root, expected):
         ):
             fail(302)
         value, originals = _schema.generation(raw)
+        expected_schema = (
+            _schema.GENERATION_SCHEMA
+            if marker == _schema.MARKER
+            else _schema.NATIVE_GENERATION_SCHEMA
+        )
+        if value["schema"] != expected_schema or value["profile"] != marker["profile"]:
+            fail(336)
         return expected, value, originals, len(raw)
     except FeatureAssetError:
         raise

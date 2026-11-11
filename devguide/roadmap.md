@@ -1,5 +1,20 @@
 # Strategic roadmap
 
+## Native archive v2 source integration — #194/#195 (2026-11-11 UTC)
+
+The [selected contract](native_feature_archive.md) and source implementation add
+public native records, explicit bounded assembly, retained source/global-ordinal
+lineage, guarded preservation and explicit subset rebasing through the existing
+writer/publication/recovery. Historical v1 remains unchanged; mixed/cross-profile
+migration refuses. Source receives 312 selected cases, actual public quantity
+floor, nm/pm, quotas, cold readers and real native publication interruption.
+Initial malformed-row fixtures and their explicit-v2 pointer correction remain
+retained. Six source nm/pm guide blocks and strict full docs pass. Next finish
+exact-owned receiving and receive #194/#195 against this bounded profile;
+[#196](pending_proposals/capture_feature_evaluation_provenance.md) owns source-evaluation
+provenance next. Full/public/platform, molecular,
+biological/human/scale and stopped #148/#165 retain their separate owners.
+
 ## Standalone native payload slice received — #195 (2026-11-11 UTC)
 
 The [selected contract](native_feature_payload.md) and source producer preserve

@@ -14,10 +14,16 @@ STORE_SCHEMA = "pharmacophoremt.feature-archive@1"
 GENERATION_SCHEMA = "pharmacophoremt.feature-archive-generation@1"
 PROFILE = "declared-classical-inventory@1"
 SNAPSHOT_PROFILE = "snapshot-study-v1"
+NATIVE_PAYLOAD_PROFILE = "native-classical-v1"
+NATIVE_STORE_SCHEMA = "pharmacophoremt.feature-archive@2"
+NATIVE_GENERATION_SCHEMA = "pharmacophoremt.feature-archive-generation@2"
+NATIVE_PROFILE = "declared-native-classical-inventory@1"
 MAX_DOCUMENT_BYTES = 8 * 1024 * 1024
 MAX_UNIQUE_PAYLOAD_BYTES = 4 * 1024 * 1024
 MAX_PAYLOAD_BYTES = 2 * 1024 * 1024
 MAX_RECORDS = 4096
+MAX_NATIVE_RECORDS = 64
+MAX_NATIVE_REPEATED_BYTES = 8 * 1024 * 1024
 FAMILIES = (
     "hydrophobicity",
     "hb donor",
@@ -28,6 +34,15 @@ FAMILIES = (
 )
 STATES = ("ready", "failed", "partial", "unsupported", "unattempted")
 MARKER = {"schema": STORE_SCHEMA, "profile": PROFILE}
+NATIVE_MARKER = {"schema": NATIVE_STORE_SCHEMA, "profile": NATIVE_PROFILE}
+
+
+def marker(payload_profile):
+    if payload_profile == SNAPSHOT_PROFILE:
+        return MARKER
+    if payload_profile == NATIVE_PAYLOAD_PROFILE:
+        return NATIVE_MARKER
+    fail(336)
 
 
 def encoded(value):
@@ -165,27 +180,9 @@ def _extraction(value, row):
         text(version)
 
 
-def generation(raw):
-    value = json_document(raw)
-    if type(value) is not dict:
-        fail(302)
-    if value.get("schema") != GENERATION_SCHEMA or value.get("profile") != PROFILE:
-        fail(307)
-    if set(value) != {"schema", "profile", "origin", "records", "payloads"}:
-        fail(302)
-    origin = value["origin"]
-    if type(origin) is not dict or set(origin) != {"format", "generation", "policy"}:
-        fail(302)
-    text(origin["format"])
-    text(origin["policy"])
-    digest(origin["generation"])
-    rows, payloads = value["records"], value["payloads"]
-    if (
-        type(rows) is not list
-        or len(rows) > MAX_RECORDS
-        or type(payloads) is not dict
-        or len(payloads) > MAX_RECORDS
-    ):
+def decode_originals(payloads):
+    """Verify shared bounded opaque original bytes for either archive version."""
+    if type(payloads) is not dict or len(payloads) > MAX_RECORDS:
         fail(302)
     originals, total = {}, 0
     for key, item in payloads.items():
@@ -213,6 +210,31 @@ def generation(raw):
         if total > MAX_UNIQUE_PAYLOAD_BYTES:
             fail(302)
         originals[key] = original
+    return originals
+
+
+def generation(raw):
+    value = json_document(raw)
+    if type(value) is not dict:
+        fail(302)
+    if value.get("schema") == NATIVE_GENERATION_SCHEMA:
+        from ._native_archive_schema import generation as native_generation
+
+        return native_generation(value)
+    if value.get("schema") != GENERATION_SCHEMA or value.get("profile") != PROFILE:
+        fail(307)
+    if set(value) != {"schema", "profile", "origin", "records", "payloads"}:
+        fail(302)
+    origin = value["origin"]
+    if type(origin) is not dict or set(origin) != {"format", "generation", "policy"}:
+        fail(302)
+    text(origin["format"])
+    text(origin["policy"])
+    digest(origin["generation"])
+    rows = value["records"]
+    if type(rows) is not list or len(rows) > MAX_RECORDS:
+        fail(302)
+    originals = decode_originals(value["payloads"])
     used, keys = set(), set()
     for row in rows:
         if (

@@ -13,8 +13,9 @@ from ._digestion import config
 class FeatureAssetView:
     """A detached, pinned metadata archive; quantities and payloads are uninterpreted.
 
-    The supported bounded local profile verifies metadata structure and original
-    byte integrity. Counts are producer declarations, not recalculated features,
+    Supported bounded local profiles verify metadata structure and original byte
+    integrity. Native v2 also binds native-layout metadata without quantity
+    decoding. Counts describe captured evidence, not new molecular extraction,
     source authentication, query admission or biological negative evidence.
     """
 
@@ -73,8 +74,8 @@ class FeatureAssetView:
         self._open()
         counts = Counter(r["status"] for r in self._metadata["records"])
         return {
-            "schema": _schema.GENERATION_SCHEMA,
-            "profile": _schema.PROFILE,
+            "schema": self._metadata["schema"],
+            "profile": self._metadata["profile"],
             "generation": self._identity,
             "origin": _schema.detached(self._metadata["origin"]),
             "record_count": len(self._metadata["records"]),
@@ -83,12 +84,19 @@ class FeatureAssetView:
             "unique_payload_count": len(self._originals),
             "archive_bytes": self._size,
             "coverage_authority": "producer-declared extraction metadata",
-            "original_payloads_interpreted": False,
+            "original_payloads_interpreted": self._metadata["schema"]
+            == _schema.NATIVE_GENERATION_SCHEMA
+            and bool(self._originals),
             "quantity_semantics_checked": False,
             "molecular_origin_authenticated": False,
             "query_admitted": None,
             "match_outcome": None,
             "persisted_lookup_index": False,
+            **(
+                {"payload_interpretation_scope": "native-layout-only"}
+                if self._metadata["schema"] == _schema.NATIVE_GENERATION_SCHEMA
+                else {}
+            ),
         }
 
     @signal(tags=["feature-asset", "page"])
@@ -183,11 +191,18 @@ class FeatureAssetView:
             "selection_ordinals": [r["work_ordinal"] for r in rows],
             "records": rows,
             "decision": {"action": action, "message": message},
-            "original_payloads_interpreted": False,
+            "original_payloads_interpreted": self._metadata["schema"]
+            == _schema.NATIVE_GENERATION_SCHEMA
+            and bool(self._originals),
             "quantity_semantics_checked": False,
             "molecular_origin_authenticated": False,
             "query_admitted": None,
             "match_outcome": None,
+            **(
+                {"payload_interpretation_scope": "native-layout-only"}
+                if self._metadata["schema"] == _schema.NATIVE_GENERATION_SCHEMA
+                else {}
+            ),
         }
 
     @signal(tags=["feature-asset", "payload-info"])

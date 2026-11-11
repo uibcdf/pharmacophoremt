@@ -61,15 +61,25 @@ def _install(path, raw, *, replace=False):
 
 
 def _descriptor(root):
-    _storage.layout(root)
+    marker = _storage.layout(root)
     try:
         if not stat.S_ISDIR((root / "attempts").lstat().st_mode):
             fail(328)
         raw = _storage._read(root / "WRITER.json", 4096)
     except FileNotFoundError as error:
         raise FeatureAssetError(code="PHMT-E328") from error
-    if _schema.encoded(_schema.json_document(raw)) != _schema.encoded(spec.DESCRIPTOR):
+    value = _schema.json_document(raw)
+    if type(value) is not dict or value.get("payload_profile") not in (
+        _schema.SNAPSHOT_PROFILE,
+        _schema.NATIVE_PAYLOAD_PROFILE,
+    ):
         fail(328)
+    expected = spec.descriptor(value["payload_profile"])
+    if _schema.encoded(value) != _schema.encoded(expected):
+        fail(328)
+    if marker != _schema.marker(value["payload_profile"]):
+        fail(336)
+    return value
 
 
 def _receipt(condition):
@@ -97,11 +107,12 @@ def _software():
 
 
 class FeatureAssetStore:
-    """One process-bound cooperating writer over whole existing generations.
+    """One process-bound cooperating writer over explicitly selected profiles.
 
     Use explicit create/open, then stage and publish separately. Metadata/receipt
-    inspection stays scientifically cold. Ready originals activate the #193
-    compatibility decoder on every stage/publication, without extraction credit.
+    inspection stays scientifically cold. Ready originals activate their selected
+    native/compatibility validator on every stage/publication, without extraction
+    credit. Native-v2 records support explicit assembly and retained source lineage.
     Trusted local POSIX filesystems only; no fsync/power-loss or hostile-directory
     guarantee. The caller owns this lease and any detached source/returned views.
     """
@@ -126,9 +137,15 @@ class FeatureAssetStore:
             fd = os.open(root / ".lock", os.O_CREAT | os.O_EXCL | os.O_RDWR, 0o600)
             try:
                 fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
-                _install(root / "WRITER.json", _schema.encoded(spec.DESCRIPTOR))
-                _install(root / "STORE.json", _schema.encoded(_schema.MARKER))
-                return cls._attach(root, fd)
+                _install(
+                    root / "WRITER.json",
+                    _schema.encoded(spec.descriptor(payload_profile)),
+                )
+                _install(
+                    root / "STORE.json",
+                    _schema.encoded(_schema.marker(payload_profile)),
+                )
+                return cls._attach(root, fd, payload_profile)
             except BaseException:
                 os.close(fd)
                 raise
@@ -141,7 +158,7 @@ class FeatureAssetStore:
         fcntl = _platform()
         root = path.absolute()
         with _io():
-            _descriptor(root)
+            descriptor = _descriptor(root)
             fd = os.open(root / ".lock", os.O_RDWR | os.O_NOFOLLOW | os.O_NONBLOCK)
             try:
                 if not stat.S_ISREG(os.fstat(fd).st_mode):
@@ -150,15 +167,17 @@ class FeatureAssetStore:
                     fcntl.flock(fd, fcntl.LOCK_EX | fcntl.LOCK_NB)
                 except BlockingIOError as error:
                     raise FeatureAssetError(code="PHMT-E320") from error
-                return cls._attach(root, fd)
+                return cls._attach(root, fd, descriptor["payload_profile"])
             except BaseException:
                 os.close(fd)
                 raise
 
     @classmethod
-    def _attach(cls, root, fd):
+    def _attach(cls, root, fd, payload_profile):
         result = cls.__new__(cls)
         result._root, result._fd = root, fd
+        result._payload_profile = payload_profile
+        result._marker = _schema.marker(payload_profile)
         result._pid, result._lock = os.getpid(), threading.RLock()
         result._current()
         result._attempts()
@@ -185,7 +204,7 @@ class FeatureAssetStore:
         if (
             type(pointer) is not dict
             or set(pointer) != {"schema", "generation", "bytes"}
-            or pointer["schema"] != _schema.STORE_SCHEMA
+            or pointer["schema"] != self._marker["schema"]
         ):
             fail(302)
         generation = _schema.digest(pointer["generation"])
@@ -242,14 +261,20 @@ class FeatureAssetStore:
                 "software",
             }
             operation = start.get("operation")
-            _receipt(type(operation) is str and operation in {"stage", "publish"})
+            allowed = {"stage", "publish"}
+            if self._payload_profile == _schema.NATIVE_PAYLOAD_PROFILE:
+                allowed.add("stage_records")
+            _receipt(type(operation) is str and operation in allowed)
             keys = (
                 {"source_generation"}
                 if operation == "stage"
+                else {"candidate", "record_count", "ordinal_policy"}
+                if operation == "stage_records"
                 else {"candidate", "expected_current"}
             )
             _receipt(
-                set(start) == common | keys and start["schema"] == spec.ATTEMPT_SCHEMA
+                set(start) == common | keys
+                and start["schema"] == spec.attempt_schema(self._payload_profile)
             )
             _receipt(
                 type(start["ordinal"]) is int
@@ -272,6 +297,18 @@ class FeatureAssetStore:
                 _receipt(operation == "publish")
             if operation == "stage":
                 _schema.digest(start["source_generation"])
+            elif operation == "stage_records":
+                from ._native_archive_schema import ORDINAL_POLICIES
+
+                _schema.digest(start["candidate"])
+                _receipt(
+                    type(start["record_count"]) is int
+                    and 0 <= start["record_count"] <= spec.MAX_RECORDS
+                )
+                _receipt(
+                    type(start["ordinal_policy"]) is str
+                    and start["ordinal_policy"] in ORDINAL_POLICIES
+                )
             else:
                 _schema.digest(start["candidate"])
                 if start["expected_current"] is not None:
@@ -294,8 +331,7 @@ class FeatureAssetStore:
                 if state == "completed":
                     _schema.digest(terminal["result"])
                     _receipt(
-                        operation != "publish"
-                        or terminal["result"] == start["candidate"]
+                        operation == "stage" or terminal["result"] == start["candidate"]
                     )
                 else:
                     for key in extra:
@@ -343,7 +379,7 @@ class FeatureAssetStore:
             fail(323)
         token = uuid.uuid4().hex
         start = {
-            "schema": spec.ATTEMPT_SCHEMA,
+            "schema": spec.attempt_schema(self._payload_profile),
             "attempt": token,
             "ordinal": len(previous),
             "operation": operation,
@@ -385,6 +421,9 @@ class FeatureAssetStore:
         with self._use():
             if view.generation != expected_generation:
                 fail(308)
+            summary = view.summary()
+            if summary["profile"] != self._marker["profile"]:
+                fail(336)
             if view.work_items(limit=0)["selected_count"] > spec.MAX_RECORDS:
                 fail(313)
 
@@ -411,11 +450,12 @@ class FeatureAssetStore:
                     rows.append(row)
                 if view.generation != expected_generation:
                     fail(308)
+                generation_schema = summary["schema"]
                 value = {
-                    "schema": _schema.GENERATION_SCHEMA,
-                    "profile": _schema.PROFILE,
+                    "schema": generation_schema,
+                    "profile": summary["profile"],
                     "origin": {
-                        "format": _schema.GENERATION_SCHEMA,
+                        "format": generation_schema,
                         "generation": expected_generation,
                         "policy": "explicit-original-generation-copy@1",
                     },
@@ -433,6 +473,73 @@ class FeatureAssetStore:
 
             return self._attempt(
                 "stage", {"source_generation": expected_generation}, None, action
+            )
+
+    @signal(tags=["feature-asset", "writer", "stage-records"])
+    @arg_digest(config=config("stage_records"), type_check=False)
+    def stage_records(self, records, *, ordinal_policy="preserve-original@1"):
+        """Stage an explicit native record sequence, preserving or explicitly rebasing ordinals.
+
+        Borrowed records retain their original source/global-ordinal anchors.
+        Default preservation refuses a moved source position. Reordering/subsets
+        require explicit-rebase@1; original lineage is never replaced or trimmed.
+        All ready originals validate afresh before immutable installation.
+        """
+        with self._use():
+            if self._payload_profile != _schema.NATIVE_PAYLOAD_PROFILE:
+                fail(336)
+            from ._native_archive_schema import ASSEMBLY_POLICY
+            from ._payload_schema import SCHEMA as PAYLOAD_SCHEMA
+
+            rows, payloads, total, unique = [], {}, 0, 0
+            for record in records:
+                row = record.describe()
+                if row["status"] == "ready":
+                    raw = record.payload_bytes()
+                    total += len(raw)
+                    if total > spec.MAX_REPEATED_BYTES:
+                        fail(313)
+                    digest = row["payload_sha256"]
+                    if digest not in payloads:
+                        unique += len(raw)
+                        if unique > _schema.MAX_UNIQUE_PAYLOAD_BYTES:
+                            fail(313)
+                        payloads[digest] = {
+                            "format": PAYLOAD_SCHEMA,
+                            "data": base64.b64encode(raw).decode("ascii"),
+                        }
+                rows.append(row)
+            raw = _schema.encoded(
+                {
+                    "schema": _schema.NATIVE_GENERATION_SCHEMA,
+                    "profile": _schema.NATIVE_PROFILE,
+                    "origin": {
+                        "policy": ASSEMBLY_POLICY,
+                        "ordinal_policy": ordinal_policy,
+                    },
+                    "records": rows,
+                    "payloads": payloads,
+                }
+            )
+            if len(raw) > _schema.MAX_DOCUMENT_BYTES:
+                fail(313)
+            candidate = hashlib.sha256(raw).hexdigest()
+
+            def action():
+                value, originals = _schema.generation(raw)
+                spec.validate_native(value, originals)
+                _install(self._root / "generations" / (candidate + ".json"), raw)
+                return candidate
+
+            return self._attempt(
+                "stage_records",
+                {
+                    "candidate": candidate,
+                    "record_count": len(rows),
+                    "ordinal_policy": ordinal_policy,
+                },
+                None,
+                action,
             )
 
     def _recovery(self, attempt):
@@ -506,7 +613,7 @@ class FeatureAssetStore:
                 if self._current() != expected_current:
                     fail(322)
                 pointer = {
-                    "schema": _schema.STORE_SCHEMA,
+                    "schema": self._marker["schema"],
                     "generation": generation,
                     "bytes": size,
                 }

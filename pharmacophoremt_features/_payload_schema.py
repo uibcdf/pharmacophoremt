@@ -7,7 +7,7 @@ from collections import Counter
 from . import _schema
 from ._diagnostics import FeatureAssetError, fail
 
-PAYLOAD_PROFILE = "native-classical-v1"
+PAYLOAD_PROFILE = _schema.NATIVE_PAYLOAD_PROFILE
 SCHEMA = "pharmacophoremt.native-feature-payload@1"
 PROFILE = "classical-single-frame@1"
 MAPPING_POLICY = "caller-declared-local-atom-axis@1"
