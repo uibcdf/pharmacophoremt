@@ -48,7 +48,7 @@ all8 actual Linux/macOS arm64 Python3.11–3.14 test cells at exact4616c78/attem
 Reporting131 and separate3/18/8 slices, frozen policy and publication checks pass.
 Earlier running snapshots remain unchanged; no live run is restarted.
 
-An independent [XML file-identity defect#141](coverage_xml_namespace_identity.md)
+An independent [XML file-identity defect#141](../archive/coverage_xml_namespace_identity.md)
 is found in those original reports. Its source correction passes111 selected
 local cases and the actual before/after artifact guard, with unchanged source
 pins/acquisition and a reviewed coverage-only workflow digest. That correction,
@@ -492,3 +492,13 @@ Use the standing `[skip ci]` direct route without dispatch. Exact-head full
 source/installed/platform gates and the earlier broader administrative OOM remain
 owned here. No raw molecular inputs or geometry-bearing results are published;
 the archive contains own code, scalar case results and hash/status provenance.
+
+## Accumulated 0.6.0 preparation — 2026-11-11 UTC
+
+The [prospective source checkpoint](../source_0_6_0_checkpoint.md) groups #192–#196
+without changing runtime/provider/workflow commands. Current collection-only
+receiving finds 3,388 cases and 127 expected qualified coverage paths. The source
+will be the committed preparation head, recorded before exact remote dispatch.
+Full terminal eight-cell evidence remains pending; earlier source/selected/owned
+receipts retain their identities. The current #9 theme stays partial; no tag,
+Release, package or public-installed claim is selected by this checkpoint.

@@ -9,6 +9,18 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
+**An accumulated 0.6.0 source checkpoint is being prepared** under the
+[exact-source contract](source_0_6_0_checkpoint.md). Release notes now reflect
+capture, native-v2 assembly and its compatibility/quantity boundaries. Current
+collection-only receiving finds **3,388 cases, zero executed**; the frozen coverage
+inventory expects 127 qualified paths. The [preparation receipt](evidence/source_060_preparation_20261111.json) receives
+ten quality checks, strict source/reused-owned docs and collection/coverage inputs;
+no scientific suite was executed locally. Next commit
+one source with [skip ci], record its full local/remote SHA under #9/#95 and issue
+one deliberate request for each absent full-CI/conformance/publication-control
+workflow. Actual terminal native results are required before acceptance; no new
+0.6.0 tag/package/publication is selected. The prior bounded receiving follows.
+
 **#196 is received and its bounded capture scope is resolved** at source
 `f722b45c130a73b8ded6a73e5120b4bda32787ef`. The
 [contract](feature_capture_provenance.md),

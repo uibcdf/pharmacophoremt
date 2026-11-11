@@ -1,5 +1,21 @@
 # Strategic roadmap
 
+## Accumulated 0.6.0 source checkpoint prepared — 2026-11-11 UTC
+
+The [source checkpoint contract](source_0_6_0_checkpoint.md) selects one deliberate
+full validation of the accumulated native feature lifecycle. Updated unreleased
+notes cover source-owned capture, native-v2 assembly, original references and the
+PyUnitWizard 0.28.1 minimum. Collection-only receiving finds 3,388 native cases;
+this is not an execution result. The coverage inventory expects 127 qualified
+paths from all three roots, including twelve added public/runtime companion files.
+The [preparation receipt](evidence/source_060_preparation_20261111.json) receives
+ten quality checks and strict source/reused-owned docs. Exact-source hosted
+verification remains pending. Preserve
+existing sibling/SDK/policy pins, full test commands and immutable 0.5.0. No 0.6.0
+tag/package/publication decision is selected. Earlier next-action statements are
+historical; full installed/public, MolSysMT#624 and biological/human/scale remain
+separate and #148/#165 stay stopped.
+
 ## Source-owned feature capture received — #196 (2026-11-11 UTC)
 
 The [capture contract](feature_capture_provenance.md) adds the separate

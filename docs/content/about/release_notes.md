@@ -2,6 +2,12 @@
 
 ## Unreleased — toward 0.6.0
 
+- Add [`modeler.capture_features`](../user/feature_capture.md) to retain the
+  effective requested families, completed/evaluated-empty coverage, native
+  atom/frame/state maps and original observed extraction software around one
+  extraction. `FeatureInventoryPayload.from_capture` saves that observation
+  without repeating the evaluated-family declaration. `get_features()` keeps
+  its existing signature and ordinary inventory.
 - Add [native feature archive v2](../user/native_feature_archives.md) with
   explicit record assembly, original source/global-ordinal lineage, guarded
   subset rebasing and the existing publication/recovery lifecycle. Cold layout
@@ -10,21 +16,50 @@
 - Add standalone [native feature payloads](../user/native_feature_payloads.md)
   for already captured complete inventories: explicit evaluated families, original
   maps/geometry/references, sealed quantities, cold metadata and fresh native
-  reconstruction. Archive insertion/assembly remains a later operation.
+  reconstruction. Public native records compose these payloads with native-v2
+  archive assembly and the same guarded publication/recovery tools.
 - Add [writer-owned feature archives](../user/feature_archive_writing.md) that
   preserve whole original generations, stage and validate immutable candidates,
   publish against explicit expected-current identity and expose retained attempts
-  with metadata inspection and linked recovery. New native payload archive
-  admission and arbitrary record assembly remain later operations.
+  with metadata inspection and linked recovery. Native-v2 archives also admit
+  explicit caller-assembled records and subsets with retained source lineage.
 - Add explicit [native feature reconstruction](../user/native_feature_reuse.md)
   from admitted historical snapshots, with fresh unit/geometry validation,
   generation and original metadata checks, full maps/provenance and bounded batches.
   PyUnitWizard >=0.28.1 supplies the qualified quantity-record capability.
 - Run controlled interruption/recovery tests in fresh spawned processes,
   preserving original committed progress, publication visibility and attribution.
+- Preserve completed science when an optional attribution error cannot be
+  rendered as text. Respect the application's SMonitor capture policy before
+  inspecting that text; saved original references and enclosing sessions remain
+  independent of later serialization.
 
-Selected source/owned receiving is recorded under #193–#195; supported installed/public
-delivery and the next version/tag decision remain independent.
+### Compatibility and admission
+
+Historical native inventories still require explicit actual evaluated families
+and producer declarations through `from_inventory`; feature presence cannot
+establish evaluated-empty coverage. Existing inventory and persisted schemas keep
+their contracts. Native-only archive v2 uses the explicit `native-classical-v1`
+profile; implicit, mixed and cross-profile migration is refused. Captures retain
+included-volume evaluations as native inventories, while classical persistence
+refuses them, including empty evaluations.
+
+The capture/native payload profile admits at most 256 total source atoms,
+64 features and 2 MiB of sealed content, with bounded finite provenance. Each
+archive/reuse operation has its own documented quotas and ownership. Digests bind
+content and every native read validates quantities/maps afresh; neither authenticates
+a molecular source or establishes biological accuracy. Keep prepared sources
+unchanged throughout capture. Molecular collection/preparation stays MolSysMT-owned.
+
+The required quantity provider is now **PyUnitWizard >=0.28.1** for the received
+QuantityRecord capability. New capture operations expose standard boolean
+argument-digestion controls; a bypass does not skip native/content validation.
+The existing `get_features` and `from_inventory` signatures remain unchanged.
+
+Selected source/exact-owned receiving is recorded under #193–#196. Complete
+supported source qualification, installed/public delivery and the next version/tag
+decision retain their separate evidence. This section describes development;
+the public installation instructions still refer to the qualified 0.4.0 package.
 
 ## 0.5.0 — source-only consolidation
 
