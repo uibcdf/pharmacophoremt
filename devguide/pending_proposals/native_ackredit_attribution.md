@@ -203,3 +203,9 @@ public `smonitor.get_capture_policy()` first, retains class-only evidence when
 restricted or unprintable, and preserves detailed diagnostics otherwise. Main,
 diagnostic-fallback and broken-output paths share it. Source/owned receiving is
 recorded with #196; this does not close the broader attribution delivery theme.
+
+The [#196 source/owned receipt](../evidence/feature_capture_20261111.json) receives
+this bounded correction/adoption with 394 cases per context, including all 28
+attribution controls and both new poisoned-text policies. Public quantity-floor,
+exact-owned origins and original no-new-credit references pass; the broader
+partial theme and supported/public gates remain separate.

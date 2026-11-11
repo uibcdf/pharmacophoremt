@@ -9,28 +9,38 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-**#196 source receiving passes; exact-owned receiving is next** under the
-[feature-capture contract](feature_capture_provenance.md). The additive
-`modeler.capture_features` result retains the effective request, counts, native
-maps/frame/state, original observed software and a content binding; the new
-`FeatureInventoryPayload.from_capture` composes with existing archives. Existing
-inventories and wire schemas remain unchanged. Optional attribution failure
-formatting is corrected under #19, honoring SMonitor capture permission before
-inspecting native error text.
+**#196 is received and its bounded capture scope is resolved** at source
+`f722b45c130a73b8ded6a73e5120b4bda32787ef`. The
+[contract](feature_capture_provenance.md),
+[receipt](evidence/feature_capture_20261111.json) and
+[archive](archive/capture_feature_evaluation_provenance.md) receive **394 selected
+source and 394 exact-owned cases**: 312 original archive/payload/reuse, 54 capture/
+provider and 28 attribution. The isolated wheel has 238 verified payloads/183
+source-equal runtime bodies; all 175 loaded PHMT modules originate in its target.
+Actual public PyUnitWizard 0.28.1 receives effective requested/empty coverage,
+original geometry/maps/frame/state/software/references, one extraction and no new
+credit on persistence. Existing inventories/signatures and wire schemas remain
+unchanged; included-volume native capture is retained and classical encoding refuses.
 
-**Source evidence:** 394 selected cases pass serially (312 original archive/
-payload/reuse, 54 capture/provider and 28 attribution), plus six new recipe blocks
-under nm/pm, strict full docs and ten quality checks including 161 administrative
-controls. The first launcher/fixture failures and bounded-memory aborts remain
-retained; the attribution shard uses a measured 768 MiB DATA bound, all other
-checks 512 MiB, with one CPU/thread and a 1 GiB observed own-group stop.
+The [closeout receipt](evidence/feature_capture_closeout_20261111.json) receives
+the later documentation/reporting checks without relabelling the tested source.
+All twelve new guide-block executions across source/owned and nm/pm, strict full
+docs and ten quality checks pass, including 161 administrative controls. Initial
+fixture/controller/bypass failures and bounded-memory aborts remain in the own
+compressed execution archive. Serial CPU19/thread1 uses DATA512 MiB, or measured
+768 MiB for attribution, with the unchanged 1 GiB observed own-group stop and
+20%+1.5 GiB margin. #19's PHMT host failure-formatting correction honors capture
+permission before native text inspection. #19/#6 broader adoption stays partial.
 
-**Next concrete action:** freeze a focused source commit, receive its exact
-owned wheel with actual public PyUnitWizard
-0.28.1, and close #196 only when the retained evidence satisfies its contract.
-Full hosted/public/platform, MolSysMT#624 and biological/human/scale gates remain
-separate; #148/#165 stay stopped. No source-pin/shared-prefix/tag changes.
-The earlier next-action statements below are historical and superseded here.
+The [0.6.0 scope review](release_0_6_0_scope_review.md) compares ten commits/26
+runtime paths since immutable 0.5.0, finding no removed nonprivate declaration or
+changed existing declared signature; static review is not semantic qualification.
+**Next concrete action:** review version-specific release notes and accumulated
+migration/coverage under #95, then select one committed source for a deliberate
+exact-source checkpoint under #9. No 0.6.0 candidate/tag/package is selected yet.
+Full hosted/platform/public (#9/#192/#10/#23), MolSysMT#624 and biological/human/
+scale gates remain separate; #148/#165 stay stopped. Source pins/shared prefix and
+immutable 0.5.0 stay unchanged. Earlier next-action statements below are historical.
 
 ## Previous native archive integration receiving
 
@@ -59,7 +69,7 @@ not full hosted/public/platform, biological, human or scale readiness.
 
 **Next concrete action:** review extraction/inventory callers and choose the
 source-owned effective-request/evaluation provenance contract under
-[#196](pending_proposals/capture_feature_evaluation_provenance.md) before runtime
+[#196](archive/capture_feature_evaluation_provenance.md) before runtime
 changes. Old inventories retain the honest explicit declaration route. Original
 [standalone](evidence/native_feature_payload_20261111.json) and earlier writer
 receipts keep their identities; no source pin/shared prefix or immutable tag changes.

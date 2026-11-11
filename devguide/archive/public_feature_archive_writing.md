@@ -37,7 +37,7 @@ This resolves the defined bounded public profiles. Unsupported mixed/cross-profi
 migration refuses; it is not silently included in this delivery. Full hosted/
 platform/public, MolSysMT collection/source authentication, biological/human/scale
 and stopped #148/#165 remain separate. No new release is published.
-[#196](../pending_proposals/capture_feature_evaluation_provenance.md) owns the next
+[#196](capture_feature_evaluation_provenance.md) owns the next
 source-evaluation provenance contract. Earlier proposals/receiving below retain
 their original dated scope and next-action statements.
 

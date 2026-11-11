@@ -1,20 +1,28 @@
 # Strategic roadmap
 
-## Source-owned feature capture — #196 (2026-11-11 UTC)
+## Source-owned feature capture received — #196 (2026-11-11 UTC)
 
-The [selected contract](feature_capture_provenance.md) adds a separate
+The [capture contract](feature_capture_provenance.md) adds the separate
 `modeler.capture_features` envelope and `FeatureInventoryPayload.from_capture`.
-The original inventory/get_features signature and persisted payload/archive
-schemas remain unchanged. Capture records effective families, completed/empty
-coverage, native maps/frame/state and the original observed software; encoding
-revalidates content and binds it to that original observation. Included-volume
-captures remain native and the classical serializer explicitly refuses them.
-Source controls, exact-owned receiving, executable guides and strict docs are
-being collected; the owning [#196 report](pending_proposals/capture_feature_evaluation_provenance.md)
-remains partial until that evidence is received. #19's host diagnostic correction
-preserves optional-attribution failure isolation and application capture policy.
-Full hosted/public/platform, MolSysMT#624 and biological/human/scale qualification
-remain separate. #148/#165 stay stopped; no new tag/package is selected.
+Source f722b45 and its exact owned wheel receive
+[394 selected cases each](evidence/feature_capture_20261111.json), 238 verified
+payloads/183 source-equal runtime bodies and all 175 loaded PHMT modules from the
+target. Actual public PUW 0.28.1, effective completed/empty coverage, original
+geometry/maps/frame/state/software/references, one extraction, fresh native
+validation and no-new-credit persistence pass. Existing inventory/signatures and
+wire schemas remain unchanged; volume capture remains complete and classical
+encoding refuses it. Twelve nm/pm source/owned guide blocks and strict full docs
+pass; first failures and finite resource limits remain original evidence.
+
+[#196's report](archive/capture_feature_evaluation_provenance.md) is resolved;
+#19's host failure formatting now respects application capture policy, while
+#19/#6 broader adoption remains partial. The [0.6.0 accumulated scope review](release_0_6_0_scope_review.md)
+finds no removed nonprivate declaration or changed existing declared signature
+across the reviewed runtime paths. Next review release notes/migration/coverage
+under #95 and select a deliberate exact-source checkpoint under #9. No candidate,
+tag or publication is selected. Full hosted/public/platform, MolSysMT#624 and
+biological/human/scale gates remain separate; #148/#165 stay stopped. Earlier
+next-action statements below are historical.
 
 ## Native archive v2 received — #194/#195 (2026-11-11 UTC)
 
@@ -29,7 +37,7 @@ quotas, cold readers and real native publication interruption. Twelve native
 guide blocks/eight prerequisites and strict full docs pass; initial fixtures and
 their correction stay original. #194/#195's bounded profiles are resolved and
 their reports archived. Next choose the source-owned effective evaluation
-provenance contract under [#196](pending_proposals/capture_feature_evaluation_provenance.md).
+provenance contract under [#196](archive/capture_feature_evaluation_provenance.md).
 Full/public/platform, molecular,
 biological/human/scale and stopped #148/#165 retain their separate owners.
 

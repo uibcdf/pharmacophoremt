@@ -26,8 +26,12 @@ retain separate identities and qualification.
 The [source-owned capture contract](feature_capture_provenance.md), #196, adds
 `modeler.capture_features` and `FeatureInventoryPayload.from_capture`. Effective
 requested/evaluated-empty coverage and observed original software are retained
-separately from the unchanged native inventory and later serialization. Source/
-owned qualification is being received; this remains bounded development work.
+separately from the unchanged native inventory and later serialization. The [receipt](evidence/feature_capture_20261111.json) receives 394 selected source/
+exact-owned cases each, actual public PUW 0.28.1, 238 wheel payloads/183 source-equal
+runtime bodies, twelve source/owned nm/pm guide blocks and strict full docs. Native
+volume capture stays complete and classical persistence refuses it. Broader
+qualification remains independent; the [0.6.0 scope review](release_0_6_0_scope_review.md)
+selects no candidate or new tag.
 
 The [native-v2 archive integration](native_feature_archive.md), #194/#195, adds
 public record factories, explicit assembly, retained source/global-ordinal lineage

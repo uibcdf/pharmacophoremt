@@ -37,7 +37,7 @@ The selected standalone/native-v2 product scope is resolved. Cross-profile/mixed
 migration refuses under its explicit compatibility policy; supported/public/
 platform, collection/source authentication, biological/human/scale and stopped
 #148/#165 remain independent. No tag/package is published.
-[#196](../pending_proposals/capture_feature_evaluation_provenance.md) owns source-owned
+[#196](capture_feature_evaluation_provenance.md) owns source-owned
 effective-request provenance next; old inventories still require honest explicit
 evaluation declarations. Earlier proposals and intermediate receiving remain below.
 

@@ -149,7 +149,7 @@ Resources remain serial CPU19/thread1, low priority and monitored/bounded, witho
 reservation or aggregate cgroup enforcement. This receives the selected bounded
 public profiles under #194/#195, not supported/public/platform or scale readiness.
 
-[#196](pending_proposals/capture_feature_evaluation_provenance.md) owns the next
+[#196](archive/capture_feature_evaluation_provenance.md) owns the next
 source-owned effective evaluation provenance contract. Old captures keep their
 explicit declaration route; no historical evidence is reclassified automatically.
 

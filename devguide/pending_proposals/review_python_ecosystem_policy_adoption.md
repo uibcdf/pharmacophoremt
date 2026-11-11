@@ -394,3 +394,9 @@ compatibility change under this still-partial adoption theme. ArgDigest correctl
 forwards a bypass flag to the declared function; this is PHMT adoption debt, not
 an upstream provider defect. The initial unsupported-flag attempt and correction
 are retained in #196's evidence.
+
+The [#196 source/owned receipt](../evidence/feature_capture_20261111.json) receives
+this bounded correction/adoption with 394 cases per context, including all 28
+attribution controls and both new poisoned-text policies. Public quantity-floor,
+exact-owned origins and original no-new-credit references pass; the broader
+partial theme and supported/public gates remain separate.

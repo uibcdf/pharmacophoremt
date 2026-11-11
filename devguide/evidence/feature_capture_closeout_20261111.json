@@ -1,0 +1,62 @@
+{
+  "schema": "pharmacophoremt.feature-capture.closeout@1",
+  "source": "f722b45c130a73b8ded6a73e5120b4bda32787ef",
+  "scope": "Later documentation/reporting and immutable original execution receiving only; runtime and test source bodies unchanged from the exact-owned source. No new full source/public/platform claim.",
+  "checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "518 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.288s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.844s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "changed_markdown_local_targets_checked": 651,
+  "source_equal_runtime_bodies_rechecked": 183,
+  "receiving_receipt": {
+    "bytes": 143098,
+    "sha256": "4757f3a2c3a103b89ca863be621b43d40b53c9e535fc881708dcf4e25de19132"
+  },
+  "static_060_scope_receipt": {
+    "bytes": 17379,
+    "sha256": "1a77f5d181304230a8593ae28dd1cc56c082068b92b7c7ca3dd301706c0eb290"
+  },
+  "own_compressed_execution_archive_verified": {
+    "file_count": 131,
+    "bytes": 204262,
+    "sha256": "c4ecd81854392e190b82830deca05d3a8c80ebf41ad91d5d40b9abb01b14d148"
+  },
+  "local_immutable_050": {
+    "annotated_object": "46cfa9abf3aaecf930ff5bd57ea4d2c51d69eddb",
+    "peeled_source": "2bff5dcf454bc5230f473237a49939215a60aab2"
+  },
+  "remote_main_tag_readback": "After the authorized batched push, receive actual identities in #9/#95; no new tag or publisher is selected."
+}

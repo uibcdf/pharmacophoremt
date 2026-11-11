@@ -1,9 +1,9 @@
 ---
 summary: Retain executed feature-request and evaluation provenance in native results.
 issue: uibcdf/pharmacophoremt#196
-status: partial
+status: resolved
 opened: 2026-11-11
-closed:
+closed: 2026-11-11
 verification: measured
 area: [api, modeling, persistence]
 guard: tests/test_feature_capture.py
@@ -63,3 +63,21 @@ round trips pass. Initial incorrect fixture/policy assumptions, the unsupported
 legacy bypass experiment, bounded-memory aborts and controller/import corrections
 remain original evidence. Exact-owned receiving and durable evidence closeout
 are the next action; broader gates remain independent.
+
+## Source and exact-owned acceptance — 2026-11-11 UTC
+
+[Receipt](../evidence/feature_capture_20261111.json) receives source
+`f722b45c130a73b8ded6a73e5120b4bda32787ef` and its exact owned wheel:
+394 selected cases each (312 earlier, 54 capture/provider, 28 attribution), zero
+failures/skips, actual public PUW 0.28.1, 238 verified wheel payloads/183 source-equal
+runtime bodies and all 175 loaded PHMT modules from its target. Twelve guide-block
+executions under source/owned × nm/pm and strict full docs pass. The full compressed
+own evidence retains original failures, commands, controls and receiving outputs.
+
+Default/subset/duplicate/empty and failed/unsupported/volume boundaries, original
+source immutability, nondefault quantities/native maps, actual optional attribution
+and absence, enclosing sessions and no-new-credit archive reuse pass. Capture
+binding/native validation remains active with the standard internal argument
+bypass. This resolves the selected bounded proposal, with its actual limits;
+MolSysMT#624, full hosted/public/platform and biological/human/scale remain
+independent. No tag/package is selected; #148/#165 stay stopped.

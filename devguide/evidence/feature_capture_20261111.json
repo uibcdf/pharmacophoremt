@@ -1,0 +1,2848 @@
+{
+  "schema": "pharmacophoremt.feature-capture.receiving@1",
+  "recorded_at_utc": "2026-11-11T18:27:26.015608+00:00",
+  "issue": "uibcdf/pharmacophoremt#196",
+  "source": "f722b45c130a73b8ded6a73e5120b4bda32787ef",
+  "base": "16f81a60c688d2d4e5a90f09114e1a26cec4a472",
+  "contract": "devguide/feature_capture_provenance.md",
+  "scope": "Additive source-owned runtime evaluation/producer capture around one unchanged feature extraction; explicit from_capture to existing native payload/archive, fresh native validation and original no-new-credit references. PHMT host attribution formatting correction, not an upstream provider fix.",
+  "public_api": [
+    "pharmacophoremt.modeler.capture_features",
+    "pharmacophoremt_features.FeatureInventoryPayload.from_capture"
+  ],
+  "compatibility": {
+    "ordinary_inventory_unchanged": true,
+    "get_features_signature_unchanged": true,
+    "existing_wire_schemas_unchanged": true,
+    "legacy_inventories_keep_explicit_declarations": true,
+    "included_volume_capture_retained_classical_encoding_refused": true,
+    "new_bypass_flags_skip_argument_digestion_only": true
+  },
+  "source_selected": {
+    "passed": 394,
+    "failed": 0,
+    "skipped": 0,
+    "by_class": {
+      "tests.test_native_feature_archive": 67,
+      "tests.test_native_feature_payload": 95,
+      "tests.test_feature_archive_store": 36,
+      "tests.test_feature_asset_view": 54,
+      "tests.test_native_feature_reuse": 60,
+      "tests.test_feature_capture": 40,
+      "tests.test_molsysmt_feature_routes": 14,
+      "tests.test_attribution": 28
+    },
+    "cases": [
+      {
+        "class": "tests.test_attribution",
+        "name": "test_activation_and_saved_report_validation"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_actual_branches_roles_versions_and_empty_success"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_broken_attribution_diagnostic_output_preserves_result_and_original_error"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_composed_ensemble_and_retrospective_results_keep_bounded_credit"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_science_and_diagnostic_evidence[always-register_item]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_science_and_diagnostic_evidence[always-scope]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_science_and_diagnostic_evidence[always-track_item]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_science_and_diagnostic_evidence[error-register_item]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_science_and_diagnostic_evidence[error-scope]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_science_and_diagnostic_evidence[error-track_item]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_cross_provider_failure_preserves_the_original_scientific_error"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_import_and_empty_activation_are_lazy"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_missing_provider_retains_offline_provenance"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_native_model_and_fresh_reader_preserve_original_records"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_provider_failures_and_warning_as_error_preserve_science[capture]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_provider_failures_and_warning_as_error_preserve_science[export]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_provider_failures_and_warning_as_error_preserve_science[finish]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_provider_failures_and_warning_as_error_preserve_science[load]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_provider_failures_and_warning_as_error_preserve_science[register]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_provider_failures_and_warning_as_error_preserve_science[track]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_tracking_failure_does_not_replace_scientific_exception"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_two_results_reuse_references_and_preserve_application_session"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_unexpected_attribution_diagnostic_failures_are_visible[always-construction]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_unexpected_attribution_diagnostic_failures_are_visible[always-emission]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_unexpected_attribution_diagnostic_failures_are_visible[error-construction]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_unexpected_attribution_diagnostic_failures_are_visible[error-emission]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_unprintable_tracking_failure_cannot_replace_science_or_inspect_restricted_text[False]"
+      },
+      {
+        "class": "tests.test_attribution",
+        "name": "test_unprintable_tracking_failure_cannot_replace_science_or_inspect_restricted_text[True]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_actual_fresh_reader_and_writer_metadata_recovery_are_scientifically_cold"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_closed_definition_owned_argument_contracts[create-kwargs0]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_closed_definition_owned_argument_contracts[inspect_recovery-kwargs4]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_closed_definition_owned_argument_contracts[publish-kwargs2]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_closed_definition_owned_argument_contracts[publish-kwargs3]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_closed_definition_owned_argument_contracts[stage-kwargs1]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_corrupt_immutable_generation_refuses_reinstallation_and_publication"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_create_and_open_never_adopt_or_overwrite_an_existing_destination"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_empty_declared_generation_stays_empty_without_a_scientific_negative"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_incomplete_candidates_are_inspectable_but_never_published[failed]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_incomplete_candidates_are_inspectable_but_never_published[partial]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_incomplete_candidates_are_inspectable_but_never_published[unattempted]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_incomplete_candidates_are_inspectable_but_never_published[unsupported]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_missing_terminal_receipt_never_rolls_back_an_observed_publication"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_no_new_extraction_credit_while_preserving_original_references"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_operation_quota_preserves_all_history_and_readability"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_original_receipt_structure_and_lineage_are_not_repaired[<lambda>0]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_original_receipt_structure_and_lineage_are_not_repaired[<lambda>1]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_original_receipt_structure_and_lineage_are_not_repaired[<lambda>2]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_original_receipt_structure_and_lineage_are_not_repaired[<lambda>3]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_original_receipt_structure_and_lineage_are_not_repaired[<lambda>4]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_process_bound_guard_refuses_before_waiting_for_a_foreign_lock"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_publication_revalidates_native_quantities_each_time"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_ready_native_payload_validation_happens_before_candidate_install"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_real_owned_publication_interruption_and_linked_recovery[15-after]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_real_owned_publication_interruption_and_linked_recovery[15-before]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_real_owned_publication_interruption_and_linked_recovery[9-after]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_real_owned_publication_interruption_and_linked_recovery[9-before]"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_record_budget_refuses_before_pulling_originals_or_journaling"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_safe_raised_receipt_does_not_stringify_a_native_failure"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_source_generation_and_lifetime_are_rechecked_before_starting_an_attempt"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_stale_publication_retains_safe_failure_and_original_confirmed_view"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_unknown_or_nonpublication_retry_never_creates_fabricated_history"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_whole_generation_preserves_all_original_bytes_metadata_and_positions"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_writer_collection_releases_only_its_owned_lease"
+      },
+      {
+        "class": "tests.test_feature_archive_store",
+        "name": "test_writer_lease_lifetime_and_detached_receipts"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>0]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>1]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>2]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>3]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>4]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>5]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>6]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>7]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>8]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_argument_domains_are_closed[<lambda>9]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_bad_generation_refuses_before_storage[options0]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_bad_generation_refuses_before_storage[options1]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_bad_generation_refuses_before_storage[options2]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_catalog_error_roundtrips_preserve_code_and_message"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_close_is_idempotent_and_only_owned_data_is_dropped"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[checksum]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[infinity]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[marker]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[nan]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[pointer]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[size]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_control_corruption_refuses_and_already_open_view_stays_pinned[truncate]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_document_bound_and_record_bound_refuse"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_empty_declared_archive_is_distinct_from_missing_open"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_explicit_incomplete_causes_and_ready_subset[failed]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_explicit_incomplete_causes_and_ready_subset[partial]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_explicit_incomplete_causes_and_ready_subset[unattempted]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_explicit_incomplete_causes_and_ready_subset[unsupported]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_full_payload_bound_and_unique_original_bound"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_generation_pin_relocation_detached_data_and_explicit_reopen"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_known_declared_empty_and_unobserved_family_are_separate"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_missing_open_never_creates_and_direct_study_open_never_migrates"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_native_type_errors_and_internal_bypass_are_not_wrapped"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_nonregular_files_refuse_without_blocking[directory]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_nonregular_files_refuse_without_blocking[fifo]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_nonregular_files_refuse_without_blocking[symlink]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_opaque_payload_semantics_are_not_inferred_from_valid_metadata"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_page_counts_selected_offsets_and_global_ordinals"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_public_reader_preserves_originals_producers_and_does_not_claim_interpretation"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_returned_metadata_mutation_does_not_modify_the_view"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[count_bool]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[coverage]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[duplicate]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[extra]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[missing]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[noncanonical]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[parent]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[payload]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[producer]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[profile]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[schema]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[unused]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_unknown_literal_keys_refuse_instead_of_becoming_empty[<lambda>0]"
+      },
+      {
+        "class": "tests.test_feature_asset_view",
+        "name": "test_unknown_literal_keys_refuse_instead_of_becoming_empty[<lambda>1]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_capture_encoding_closed_argument_contract[capture-None]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_capture_encoding_closed_argument_contract[parent-value1]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_capture_encoding_closed_argument_contract[payload_profile-auto]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_capture_to_published_archive_reuse_preserves_original_and_no_new_credit"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[coverage]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[digest]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[extra]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[families]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[frame]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[inventory]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[parent]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[producer]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[selected]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_edits_and_false_completed_provenance_are_refused[status]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_effective_subset_duplicates_empty_and_unrequested_not_inferred[features0]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_effective_subset_duplicates_empty_and_unrequested_not_inferred[features1]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_frame_state_order_and_nondefault_units[0]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_frame_state_order_and_nondefault_units[None]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_frame_state_order_and_nondefault_units[reference]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_frame_state_order_and_nondefault_units[structure]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_fresh_real_optional_absence_retains_original_offline_credit"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_internal_bypass_never_skips_native_or_capture_validation"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_native_fields_revalidated_without_a_success_passport[atom_indices-value2-330]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_native_fields_revalidated_without_a_success_passport[center-1 ps-332]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_native_fields_revalidated_without_a_success_passport[direction-value1-332]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_new_bypass_control_requires_literal_boolean[1]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_new_bypass_control_requires_literal_boolean[None]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_new_bypass_control_requires_literal_boolean[true]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_oversized_extraction_output_never_returns_partial_capture[features]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_oversized_extraction_output_never_returns_partial_capture[metadata]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_provider_failure_is_original_and_invalid_request_never_extracts"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_real_default_once_unchanged_inventory_source_and_native_roundtrip[ions-nm]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_real_default_once_unchanged_inventory_source_and_native_roundtrip[ions-pm]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_real_default_once_unchanged_inventory_source_and_native_roundtrip[ring-nm]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_real_default_once_unchanged_inventory_source_and_native_roundtrip[ring-pm]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_real_default_once_unchanged_inventory_source_and_native_roundtrip[water-nm]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_real_default_once_unchanged_inventory_source_and_native_roundtrip[water-pm]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_source_budget_refused_before_extraction"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_volume_capture_complete_and_classical_payload_explicitly_refuses[selection0-1]"
+      },
+      {
+        "class": "tests.test_feature_capture",
+        "name": "test_volume_capture_complete_and_classical_payload_explicitly_refuses[selection1-0]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_available_recognition_failure_never_tries_historical_namespace"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_coincident_donor_hydrogen_keeps_visible_failure"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_historical_namespace_and_geometry_are_bounded_compatibility_only"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[direction]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[distance]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[frame]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[method]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[offsets]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[pairs]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[pbc]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_invalid_available_provider_results_do_not_trigger_local_reconstruction[sense]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_provider_failure_propagates_and_empty_inventory_never_calls_vectors"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_public_vectors_supply_donor_pairs_units_frames_and_unchanged_source[angstrom]"
+      },
+      {
+        "class": "tests.test_molsysmt_feature_routes",
+        "name": "test_public_vectors_supply_donor_pairs_units_frames_and_unchanged_source[nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_actual_native_ordinal_diagnostic_respects_application_capture"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_actual_reference_capture_adds_no_extraction_credit"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[0-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[0-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[1-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[1-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[10-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[10-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[2-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[2-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[3-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[3-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[4-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[4-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[5-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[5-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[6-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[6-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[7-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[7-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[8-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[8-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[9-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_all_original_native_bytes_quantities_maps_and_versions[9-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_borrowed_record_refuses_a_mismatched_public_page_ordinal"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_cross_profile_operations_refuse_without_converting_originals"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_default_ordinal_protection_and_explicit_subset_rebase"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_empty_generation_and_evaluated_empty_are_distinct"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_exact_literal_keys_repetition_and_independent_record_ownership"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_explicit_record_count_budget_and_maximum[64]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_explicit_record_count_budget_and_maximum[65]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_finite_lineage_never_trims_older_origins"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_fresh_native_record_reader_and_recovery_are_scientifically_cold"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_incomplete_states_survive_relocation_and_never_publish[failed]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_incomplete_states_survive_relocation_and_never_publish[partial]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_incomplete_states_survive_relocation_and_never_publish[unattempted]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_incomplete_states_survive_relocation_and_never_publish[unsupported]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_lazy_or_wrong_typed_record_arguments_are_not_consumed"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_native_assembly_attempt_quota_preserves_history_and_candidate"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_native_payload_table_budget_precedes_original_parsing"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_native_receipt_profile_and_assembly_context_are_checked[<lambda>0]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_native_receipt_profile_and_assembly_context_are_checked[<lambda>1]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_native_receipt_profile_and_assembly_context_are_checked[<lambda>2]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_publication_and_retry_call_the_same_fresh_native_validator"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_real_native_publication_interruption_and_linked_recovery[15-after]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_real_native_publication_interruption_and_linked_recovery[15-before]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_real_native_publication_interruption_and_linked_recovery[9-after]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_real_native_publication_interruption_and_linked_recovery[9-before]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[boolean-ordinal]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[empty-key]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[missing-ordinal]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[ready-status]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[surrogate-key]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[wrong-cause]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[wrong-generation]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_record_factory_argument_and_source_identity_contracts[wrong-payload]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_reorder_requires_consent_and_preserves_every_original_binding"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_repeated_original_budget_refuses_before_any_scientific_decoding"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_resealed_native_generation_metadata_and_lineage_refuse[<lambda>0]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_resealed_native_generation_metadata_and_lineage_refuse[<lambda>1]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_resealed_native_generation_metadata_and_lineage_refuse[<lambda>2]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_resealed_native_generation_metadata_and_lineage_refuse[<lambda>3]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_structurally_readable_native_record_never_grants_scientific_staging[charge]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_structurally_readable_native_record_never_grants_scientific_staging[field]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_structurally_readable_native_record_never_grants_scientific_staging[seal]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_structurally_readable_native_record_never_grants_scientific_staging[unit]"
+      },
+      {
+        "class": "tests.test_native_feature_archive",
+        "name": "test_whole_copy_preserves_rebased_rows_lineage_and_payloads"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_actual_catalog_capture_and_preserved_native_cause"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_admitted_maximum_preserves_every_feature_and_original_extreme_indices"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-0]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-10]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-2]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-3]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-4]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-5]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-6]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-7]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-8]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[nm-9]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-0]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-10]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-2]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-3]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-4]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-5]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-6]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-7]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-8]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_all_frozen_original_inventories_and_original_versions[pm-9]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_closed_argument_contracts[evaluated_families-value3]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_closed_argument_contracts[evaluated_families-value4]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_closed_argument_contracts[extraction_producer-new]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_closed_argument_contracts[inventory-None]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_closed_argument_contracts[parent-value1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_closed_argument_contracts[payload_profile-auto]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_cold_metadata_never_certifies_scientific_validity[charge]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_cold_metadata_never_certifies_scientific_validity[field]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_cold_metadata_never_certifies_scientific_validity[seal]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_cold_metadata_never_certifies_scientific_validity[sealed-unit]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_cold_metadata_never_certifies_scientific_validity[shape]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[3-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[3-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[None-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[None-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[reference-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[reference-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[structure-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_complete_native_geometry_maps_frame_state_and_policy[structure-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_empty_is_evaluated_and_unobserved_remains_refused"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_exact_bytes_and_detached_ownership_without_extraction"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[bytes]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[cycle]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[depth]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[features]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[integer]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[nodes]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_finite_admission_precedes_encoding[text]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_first_scientific_activation_preserves_application_unit_authority"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_fresh_payload_inspection_is_scientifically_cold"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_malformed_bytes_are_catalogued_without_scientific_admission[not JSON]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_malformed_bytes_are_catalogued_without_scientific_admission[null]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_malformed_bytes_are_catalogued_without_scientific_admission[{\"schema\":1,\"schema\":2}]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_malformed_bytes_are_catalogued_without_scientific_admission[{\"value\":NaN}]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_malformed_bytes_are_catalogued_without_scientific_admission[{}]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_missing_record_capability_never_falls_back"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_0]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_10]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_11]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_2]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_3]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_4]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_5]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_6]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_7]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_8]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-330_9]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-331_0]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-331_1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_layout_refusals_never_drop_maps_or_fields[<lambda>-333]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[0-center-value0]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[0-center-value1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[0-center-value2]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[0-center-value3]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[1-direction-value4]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[1-direction-value5]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[1-direction-value6]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[3-normal-value7]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[4-charge-value10]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[4-charge-value11]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[4-charge-value8]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[4-charge-value9]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_native_quantity_shapes_units_and_charge_sign[5-charge-value12]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_real_attribution_original_references_and_no_new_extraction_credit"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_resealed_metadata_still_requires_full_profile[<lambda>-330_0]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_resealed_metadata_still_requires_full_profile[<lambda>-330_1]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_resealed_metadata_still_requires_full_profile[<lambda>-330_2]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_resealed_metadata_still_requires_full_profile[<lambda>-330_3]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_resealed_metadata_still_requires_full_profile[<lambda>-330_4]"
+      },
+      {
+        "class": "tests.test_native_feature_payload",
+        "name": "test_resealed_metadata_still_requires_full_profile[<lambda>-331]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_actual_catalog_emission_respects_restrictive_application_capture"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_actual_native_model_composition_does_not_extract_molecules"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[expected_generation-None]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[expected_generation-current]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[payload_profile-None]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[payload_profile-auto]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[required_families-value1]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[required_families-value2]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[view-value0]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[work_keys-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_argument_contracts_are_catalogued[work_keys-value7]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_eager_record_limit_is_checked_before_any_decoding[64]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_eager_record_limit_is_checked_before_any_decoding[65]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_empty_selection_does_not_claim_quantity_validation"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_generation_lifetime_and_selected_coverage[closed-304]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_generation_lifetime_and_selected_coverage[generation-308]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_generation_lifetime_and_selected_coverage[missing-family-309]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_generation_lifetime_and_selected_coverage[unknown-key-305]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_incomplete_manifest_and_complete_selected_subset_remain_distinct[failed]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_incomplete_manifest_and_complete_selected_subset_remain_distinct[partial]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_incomplete_manifest_and_complete_selected_subset_remain_distinct[unattempted]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_incomplete_manifest_and_complete_selected_subset_remain_distinct[unsupported]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_literal_keys_global_order_complete_inventory_and_fresh_ownership"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_missing_record_capability_is_not_a_molecular_fallback"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[0-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[0-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[1-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[1-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[10-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[10-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[2-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[2-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[3-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[3-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[4-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[4-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[5-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[5-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[6-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[6-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[7-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[7-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[8-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[8-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[9-nm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_original_full_inventories_maps_quantities_and_provenance[9-pm]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_quantity_owner_rejects_corrupt_or_wrong_semantics[field]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_quantity_owner_rejects_corrupt_or_wrong_semantics[seal]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_quantity_owner_rejects_corrupt_or_wrong_semantics[shape]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_quantity_owner_rejects_corrupt_or_wrong_semantics[unit]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_quantity_owner_rejects_corrupt_or_wrong_semantics[zero-direction]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_reading_keeps_original_references_without_new_credit"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_repeated_original_bytes_count_toward_eager_budget"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-307]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-310_0]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-310_1]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-310_2]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-310_3]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-310_4]"
+      },
+      {
+        "class": "tests.test_native_feature_reuse",
+        "name": "test_valid_archive_bytes_do_not_admit_false_payload_metadata[<lambda>-310_5]"
+      }
+    ],
+    "junit": {
+      "source-native.xml": {
+        "bytes": 45130,
+        "sha256": "84b6d276895a10f9a5691a4c72db23fbb259139b921b71aa22bca4f155723b38"
+      },
+      "source-final-capture.xml": {
+        "bytes": 7989,
+        "sha256": "112761aa58d208d04878b7e4bae1284525661fca4fb1a1a98d74fbe57a2ccc28"
+      },
+      "source-final-attribution.xml": {
+        "bytes": 4151,
+        "sha256": "6a2261c142cff043edc25ced56c60ad8bb4b54989d74d2218b1623b6f59b70d9"
+      }
+    },
+    "warning_policy": "DeprecationWarning is error; controlled attribution warnings retained"
+  },
+  "owned_selected": {
+    "passed": 394,
+    "failed": 0,
+    "skipped": 0,
+    "by_class": {
+      "tests.test_native_feature_archive": 67,
+      "tests.test_native_feature_payload": 95,
+      "tests.test_feature_archive_store": 36,
+      "tests.test_feature_asset_view": 54,
+      "tests.test_native_feature_reuse": 60,
+      "tests.test_feature_capture": 40,
+      "tests.test_molsysmt_feature_routes": 14,
+      "tests.test_attribution": 28
+    },
+    "junit": {
+      "owned-native.xml": {
+        "bytes": 45130,
+        "sha256": "6bff41206bcbd4cfeb5bb50298714bcf7efc1a08bd0c8093e1c3b762478587eb"
+      },
+      "owned-capture.xml": {
+        "bytes": 7989,
+        "sha256": "472dd0126ddc3a203adde23318e06742d1e6d35ce0798759b88bd9cfbe89799f"
+      },
+      "owned-attribution.xml": {
+        "bytes": 4151,
+        "sha256": "6ca6c136d2cba85c249becab4670573131fa4d8cab5b84c74b64843f7a5f5406"
+      }
+    },
+    "warning_policy": "DeprecationWarning is error; controlled attribution warnings retained"
+  },
+  "same_case_identities": true,
+  "artifact": {
+    "version": "0.5.0+10.gf722b45",
+    "wheel": {
+      "bytes": 4575599,
+      "sha256": "f2d987c8911d9da64015891aa9fd7f3806d8e02aadb871501d99e480b44535e9"
+    },
+    "payloads_verified": 238,
+    "source_equal_runtime_bodies": 183,
+    "loaded_runtime_modules": 175,
+    "loaded_runtime_origins": {
+      "pharmacophoremt._private": "pharmacophoremt/_private/__init__.py",
+      "pharmacophoremt._private.smonitor.meta": "pharmacophoremt/_private/smonitor/meta.py",
+      "pharmacophoremt._private.smonitor.catalog": "pharmacophoremt/_private/smonitor/catalog.py",
+      "pharmacophoremt._private.smonitor.exceptions": "pharmacophoremt/_private/smonitor/exceptions.py",
+      "pharmacophoremt._private.smonitor": "pharmacophoremt/_private/smonitor/__init__.py",
+      "pharmacophoremt._version": "pharmacophoremt/_version.py",
+      "pharmacophoremt.config.logging_setup": "pharmacophoremt/config/logging_setup.py",
+      "pharmacophoremt.config": "pharmacophoremt/config/__init__.py",
+      "pharmacophoremt._pyunitwizard": "pharmacophoremt/_pyunitwizard.py",
+      "pharmacophoremt.interaction_site.feature.aromatic_ring": "pharmacophoremt/interaction_site/feature/aromatic_ring.py",
+      "pharmacophoremt.interaction_site.feature.cation_pi": "pharmacophoremt/interaction_site/feature/cation_pi.py",
+      "pharmacophoremt.interaction_site.feature.excluded_volume": "pharmacophoremt/interaction_site/feature/excluded_volume.py",
+      "pharmacophoremt.interaction_site.feature.halogen_bond": "pharmacophoremt/interaction_site/feature/halogen_bond.py",
+      "pharmacophoremt.interaction_site.feature.hb_acceptor": "pharmacophoremt/interaction_site/feature/hb_acceptor.py",
+      "pharmacophoremt.interaction_site.feature.hb_donor": "pharmacophoremt/interaction_site/feature/hb_donor.py",
+      "pharmacophoremt.interaction_site.feature.hydrophobicity": "pharmacophoremt/interaction_site/feature/hydrophobicity.py",
+      "pharmacophoremt.interaction_site.feature.included_volume": "pharmacophoremt/interaction_site/feature/included_volume.py",
+      "pharmacophoremt.interaction_site.feature.metal_coordination": "pharmacophoremt/interaction_site/feature/metal_coordination.py",
+      "pharmacophoremt.interaction_site.feature.negative_charge": "pharmacophoremt/interaction_site/feature/negative_charge.py",
+      "pharmacophoremt.interaction_site.feature.positive_charge": "pharmacophoremt/interaction_site/feature/positive_charge.py",
+      "pharmacophoremt.interaction_site.feature": "pharmacophoremt/interaction_site/feature/__init__.py",
+      "pharmacophoremt._private.colors": "pharmacophoremt/_private/colors.py",
+      "pharmacophoremt.viewer": "pharmacophoremt/viewer/__init__.py",
+      "pharmacophoremt.viewer.color_palettes": "pharmacophoremt/viewer/color_palettes.py",
+      "pharmacophoremt._argdigest": "pharmacophoremt/_argdigest.py",
+      "pharmacophoremt._private.arg_digestion.argument._contracts": "pharmacophoremt/_private/arg_digestion/argument/_contracts.py",
+      "pharmacophoremt._private.arg_digestion.argument.cation_mapping": "pharmacophoremt/_private/arg_digestion/argument/cation_mapping.py",
+      "pharmacophoremt._private.arg_digestion.argument.center": "pharmacophoremt/_private/arg_digestion/argument/center.py",
+      "pharmacophoremt._private.arg_digestion.argument.description": "pharmacophoremt/_private/arg_digestion/argument/description.py",
+      "pharmacophoremt._private.arg_digestion.argument.direction": "pharmacophoremt/_private/arg_digestion/argument/direction.py",
+      "pharmacophoremt._private.arg_digestion.argument.duplicate_policy": "pharmacophoremt/_private/arg_digestion/argument/duplicate_policy.py",
+      "pharmacophoremt._private.arg_digestion.argument.end": "pharmacophoremt/_private/arg_digestion/argument/end.py",
+      "pharmacophoremt._private.arg_digestion.argument.features": "pharmacophoremt/_private/arg_digestion/argument/features.py",
+      "pharmacophoremt._private.arg_digestion.argument.form": "pharmacophoremt/_private/arg_digestion/argument/form.py",
+      "pharmacophoremt._private.arg_digestion.argument.interaction_collection": "pharmacophoremt/_private/arg_digestion/argument/interaction_collection.py",
+      "pharmacophoremt._private.arg_digestion.argument.interaction_site": "pharmacophoremt/_private/arg_digestion/argument/interaction_site.py",
+      "pharmacophoremt._private.arg_digestion.argument.misc": "pharmacophoremt/_private/arg_digestion/argument/misc.py",
+      "pharmacophoremt._private.arg_digestion.argument.molecular_system": "pharmacophoremt/_private/arg_digestion/argument/molecular_system.py",
+      "pharmacophoremt._private.arg_digestion.argument.name": "pharmacophoremt/_private/arg_digestion/argument/name.py",
+      "pharmacophoremt._private.arg_digestion.argument.normal": "pharmacophoremt/_private/arg_digestion/argument/normal.py",
+      "pharmacophoremt._private.arg_digestion.argument.pharmacophore": "pharmacophoremt/_private/arg_digestion/argument/pharmacophore.py",
+      "pharmacophoremt._private.arg_digestion.argument.pharmacophores": "pharmacophoremt/_private/arg_digestion/argument/pharmacophores.py",
+      "pharmacophoremt._private.arg_digestion.argument.position": "pharmacophoremt/_private/arg_digestion/argument/position.py",
+      "pharmacophoremt._private.arg_digestion.argument.radius": "pharmacophoremt/_private/arg_digestion/argument/radius.py",
+      "pharmacophoremt._private.arg_digestion.argument.shape": "pharmacophoremt/_private/arg_digestion/argument/shape.py",
+      "pharmacophoremt._private.arg_digestion.argument.sigma": "pharmacophoremt/_private/arg_digestion/argument/sigma.py",
+      "pharmacophoremt._private.arg_digestion.argument.skip_digestion": "pharmacophoremt/_private/arg_digestion/argument/skip_digestion.py",
+      "pharmacophoremt._private.arg_digestion.argument.start": "pharmacophoremt/_private/arg_digestion/argument/start.py",
+      "pharmacophoremt._private.arg_digestion.argument.view": "pharmacophoremt/_private/arg_digestion/argument/view.py",
+      "pharmacophoremt._private.arg_digestion.argument_names_standardization": "pharmacophoremt/_private/arg_digestion/argument_names_standardization.py",
+      "pharmacophoremt.interaction_site.shape.cylinder": "pharmacophoremt/interaction_site/shape/cylinder.py",
+      "pharmacophoremt._private.arg_digestion.native_geometry": "pharmacophoremt/_private/arg_digestion/native_geometry.py",
+      "pharmacophoremt.interaction_site.shape.disk": "pharmacophoremt/interaction_site/shape/disk.py",
+      "pharmacophoremt.interaction_site.shape.gaussian_kernel": "pharmacophoremt/interaction_site/shape/gaussian_kernel.py",
+      "pharmacophoremt.interaction_site.shape.point": "pharmacophoremt/interaction_site/shape/point.py",
+      "pharmacophoremt.interaction_site.shape.shapelet": "pharmacophoremt/interaction_site/shape/shapelet.py",
+      "pharmacophoremt.interaction_site.shape.sphere": "pharmacophoremt/interaction_site/shape/sphere.py",
+      "pharmacophoremt.interaction_site.shape.sphere_and_vector": "pharmacophoremt/interaction_site/shape/sphere_and_vector.py",
+      "pharmacophoremt.interaction_site.shape": "pharmacophoremt/interaction_site/shape/__init__.py",
+      "pharmacophoremt.interaction_site.interaction_site": "pharmacophoremt/interaction_site/interaction_site.py",
+      "pharmacophoremt.interaction_site.aromatic_ring_interaction_sites": "pharmacophoremt/interaction_site/aromatic_ring_interaction_sites.py",
+      "pharmacophoremt.interaction_site.cation_pi_interaction_sites": "pharmacophoremt/interaction_site/cation_pi_interaction_sites.py",
+      "pharmacophoremt.interaction_site.excluded_volume_interaction_sites": "pharmacophoremt/interaction_site/excluded_volume_interaction_sites.py",
+      "pharmacophoremt.interaction_site.halogen_bond_interaction_sites": "pharmacophoremt/interaction_site/halogen_bond_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hb_acceptor_interaction_sites": "pharmacophoremt/interaction_site/hb_acceptor_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hb_donor_interaction_sites": "pharmacophoremt/interaction_site/hb_donor_interaction_sites.py",
+      "pharmacophoremt.interaction_site.hydrophobicity_interaction_sites": "pharmacophoremt/interaction_site/hydrophobicity_interaction_sites.py",
+      "pharmacophoremt.interaction_site.included_volume_interaction_sites": "pharmacophoremt/interaction_site/included_volume_interaction_sites.py",
+      "pharmacophoremt.interaction_site.metal_binding_interaction_sites": "pharmacophoremt/interaction_site/metal_binding_interaction_sites.py",
+      "pharmacophoremt.interaction_site.negative_charge_interaction_sites": "pharmacophoremt/interaction_site/negative_charge_interaction_sites.py",
+      "pharmacophoremt.interaction_site.positive_charge_interaction_sites": "pharmacophoremt/interaction_site/positive_charge_interaction_sites.py",
+      "pharmacophoremt.interaction_site": "pharmacophoremt/interaction_site/__init__.py",
+      "pharmacophoremt._private.arg_digestion.curation": "pharmacophoremt/_private/arg_digestion/curation.py",
+      "pharmacophoremt.pharmacophore": "pharmacophoremt/pharmacophore.py",
+      "pharmacophoremt._ackredit": "pharmacophoremt/_ackredit.py",
+      "pharmacophoremt._private.molsysmt": "pharmacophoremt/_private/molsysmt.py",
+      "pharmacophoremt.modeler.features": "pharmacophoremt/modeler/features.py",
+      "pharmacophoremt.modeler.aligned_consensus": "pharmacophoremt/modeler/aligned_consensus.py",
+      "pharmacophoremt.modeler.aligned_cliques": "pharmacophoremt/modeler/aligned_cliques.py",
+      "pharmacophoremt.modeler.composition": "pharmacophoremt/modeler/composition.py",
+      "pharmacophoremt.modeler._aromatic_interactions": "pharmacophoremt/modeler/_aromatic_interactions.py",
+      "pharmacophoremt.modeler.reference_ligand": "pharmacophoremt/modeler/reference_ligand.py",
+      "pharmacophoremt.modeler.interaction_based": "pharmacophoremt/modeler/interaction_based.py",
+      "pharmacophoremt.modeler.interaction_collection": "pharmacophoremt/modeler/interaction_collection.py",
+      "pharmacophoremt.modeler.modeler": "pharmacophoremt/modeler/modeler.py",
+      "pharmacophoremt.modeler.complex_based": "pharmacophoremt/modeler/complex_based.py",
+      "pharmacophoremt.io.ligandscout": "pharmacophoremt/io/ligandscout.py",
+      "pharmacophoremt._private.arg_digestion.pharmer_io": "pharmacophoremt/_private/arg_digestion/pharmer_io.py",
+      "pharmacophoremt.io._pharmer_profile": "pharmacophoremt/io/_pharmer_profile.py",
+      "pharmacophoremt._private.smonitor.emitter": "pharmacophoremt/_private/smonitor/emitter.py",
+      "pharmacophoremt._private.smonitor.warnings": "pharmacophoremt/_private/smonitor/warnings.py",
+      "pharmacophoremt.io._projection": "pharmacophoremt/io/_projection.py",
+      "pharmacophoremt.io.pharmer": "pharmacophoremt/io/pharmer.py",
+      "pharmacophoremt._private.arg_digestion.native_io": "pharmacophoremt/_private/arg_digestion/native_io.py",
+      "pharmacophoremt.io.phmt": "pharmacophoremt/io/phmt/__init__.py",
+      "pharmacophoremt._private.arg_digestion.rdkit_io": "pharmacophoremt/_private/arg_digestion/rdkit_io.py",
+      "pharmacophoremt.io.rdkit": "pharmacophoremt/io/rdkit.py",
+      "pharmacophoremt.io.sdf": "pharmacophoremt/io/sdf.py",
+      "pharmacophoremt.io": "pharmacophoremt/io/__init__.py",
+      "pharmacophoremt.modeler.curation": "pharmacophoremt/modeler/curation.py",
+      "pharmacophoremt.modeler.excluded_volumes": "pharmacophoremt/modeler/excluded_volumes.py",
+      "pharmacophoremt_features._diagnostics": "pharmacophoremt_features/_diagnostics.py",
+      "pharmacophoremt_results._meta": "pharmacophoremt_results/_meta.py",
+      "pharmacophoremt_results._diagnostics": "pharmacophoremt_results/_diagnostics.py",
+      "pharmacophoremt_results._store": "pharmacophoremt_results/_store.py",
+      "pharmacophoremt_results._exports": "pharmacophoremt_results/_exports.py",
+      "pharmacophoremt_results._digestion": "pharmacophoremt_results/_digestion.py",
+      "pharmacophoremt_results._api": "pharmacophoremt_results/_api.py",
+      "pharmacophoremt_results": "pharmacophoremt_results/__init__.py",
+      "pharmacophoremt_features._schema": "pharmacophoremt_features/_schema.py",
+      "pharmacophoremt_features._storage": "pharmacophoremt_features/_storage.py",
+      "pharmacophoremt_features._digestion": "pharmacophoremt_features/_digestion.py",
+      "pharmacophoremt_features._api": "pharmacophoremt_features/_api.py",
+      "pharmacophoremt_features": "pharmacophoremt_features/__init__.py",
+      "pharmacophoremt_features._payload_schema": "pharmacophoremt_features/_payload_schema.py",
+      "pharmacophoremt._private.feature_capture": "pharmacophoremt/_private/feature_capture.py",
+      "pharmacophoremt._private.arg_digestion.feature_capture": "pharmacophoremt/_private/arg_digestion/feature_capture.py",
+      "pharmacophoremt.modeler.feature_capture": "pharmacophoremt/modeler/feature_capture.py",
+      "pharmacophoremt.modeler.rigid_consensus": "pharmacophoremt/modeler/rigid_consensus.py",
+      "pharmacophoremt._private.arg_digestion.ligand_consensus": "pharmacophoremt/_private/arg_digestion/ligand_consensus.py",
+      "pharmacophoremt.modeler.ligand_based": "pharmacophoremt/modeler/ligand_based.py",
+      "pharmacophoremt._private.arg_digestion.receptor_generation": "pharmacophoremt/_private/arg_digestion/receptor_generation.py",
+      "pharmacophoremt.modeler._receptor_directions": "pharmacophoremt/modeler/_receptor_directions.py",
+      "pharmacophoremt.modeler.receptor_projections": "pharmacophoremt/modeler/receptor_projections.py",
+      "pharmacophoremt.modeler.receptor_generation": "pharmacophoremt/modeler/receptor_generation.py",
+      "pharmacophoremt.modeler.structure_based": "pharmacophoremt/modeler/structure_based.py",
+      "pharmacophoremt.modeler": "pharmacophoremt/modeler/__init__.py",
+      "pharmacophoremt._private.arg_digestion.model_dispatch": "pharmacophoremt/_private/arg_digestion/model_dispatch.py",
+      "pharmacophoremt.modeler.dispatcher": "pharmacophoremt/modeler/dispatcher.py",
+      "pharmacophoremt.validation.loo": "pharmacophoremt/validation/loo.py",
+      "pharmacophoremt.validation.metrics": "pharmacophoremt/validation/metrics.py",
+      "pharmacophoremt._private.arg_digestion.validation_results": "pharmacophoremt/_private/arg_digestion/validation_results.py",
+      "pharmacophoremt._private.arg_digestion.native_screening": "pharmacophoremt/_private/arg_digestion/native_screening.py",
+      "pharmacophoremt._private.pose_batch": "pharmacophoremt/_private/pose_batch.py",
+      "pharmacophoremt.screening.pose_evaluation": "pharmacophoremt/screening/pose_evaluation.py",
+      "pharmacophoremt.screening.correspondence": "pharmacophoremt/screening/correspondence.py",
+      "pharmacophoremt.screening.alignment": "pharmacophoremt/screening/alignment.py",
+      "pharmacophoremt.screening.scoring": "pharmacophoremt/screening/scoring.py",
+      "pharmacophoremt.screening.rigid_search": "pharmacophoremt/screening/rigid_search.py",
+      "pharmacophoremt.screening.conformer_screening": "pharmacophoremt/screening/conformer_screening.py",
+      "pharmacophoremt.screening.feature_geometry": "pharmacophoremt/screening/feature_geometry.py",
+      "pharmacophoremt.screening.feature_neighborhoods": "pharmacophoremt/screening/feature_neighborhoods.py",
+      "pharmacophoremt._private.feature_snapshot_v1": "pharmacophoremt/_private/feature_snapshot_v1.py",
+      "pharmacophoremt._private.arg_digestion.feature_reuse": "pharmacophoremt/_private/arg_digestion/feature_reuse.py",
+      "pharmacophoremt.screening.feature_reuse": "pharmacophoremt/screening/feature_reuse.py",
+      "pharmacophoremt._private.arg_digestion.prepared_runs": "pharmacophoremt/_private/arg_digestion/prepared_runs.py",
+      "pharmacophoremt._private.arg_digestion.prepared_screening": "pharmacophoremt/_private/arg_digestion/prepared_screening.py",
+      "pharmacophoremt.screening.prepared_screening": "pharmacophoremt/screening/prepared_screening.py",
+      "pharmacophoremt.screening.prepared_runs": "pharmacophoremt/screening/prepared_runs.py",
+      "pharmacophoremt.screening.rigid_correspondence": "pharmacophoremt/screening/rigid_correspondence.py",
+      "pharmacophoremt.screening.rigid_placements": "pharmacophoremt/screening/rigid_placements.py",
+      "pharmacophoremt.screening.rigid_refinement": "pharmacophoremt/screening/rigid_refinement.py",
+      "pharmacophoremt._private.arg_digestion.screening_facade": "pharmacophoremt/_private/arg_digestion/screening_facade.py",
+      "pharmacophoremt.screening.virtual_screening": "pharmacophoremt/screening/virtual_screening.py",
+      "pharmacophoremt.screening": "pharmacophoremt/screening/__init__.py",
+      "pharmacophoremt.validation.saved_results": "pharmacophoremt/validation/saved_results.py",
+      "pharmacophoremt.validation.retrospective": "pharmacophoremt/validation/retrospective.py",
+      "pharmacophoremt.validation.rigid_consensus": "pharmacophoremt/validation/rigid_consensus.py",
+      "pharmacophoremt.validation.screening_runs": "pharmacophoremt/validation/screening_runs.py",
+      "pharmacophoremt.validation": "pharmacophoremt/validation/__init__.py",
+      "pharmacophoremt.attribution": "pharmacophoremt/attribution.py",
+      "pharmacophoremt": "pharmacophoremt/__init__.py",
+      "pharmacophoremt_features._native_archive_schema": "pharmacophoremt_features/_native_archive_schema.py",
+      "pharmacophoremt_features._payload_digestion": "pharmacophoremt_features/_payload_digestion.py",
+      "pharmacophoremt_features._payload": "pharmacophoremt_features/_payload.py",
+      "pharmacophoremt_features._record_digestion": "pharmacophoremt_features/_record_digestion.py",
+      "pharmacophoremt_features._record": "pharmacophoremt_features/_record.py",
+      "pharmacophoremt_features._writer_schema": "pharmacophoremt_features/_writer_schema.py",
+      "pharmacophoremt_features._writer_digestion": "pharmacophoremt_features/_writer_digestion.py",
+      "pharmacophoremt_features._writer": "pharmacophoremt_features/_writer.py",
+      "pharmacophoremt.data.smarts": "pharmacophoremt/data/smarts.py",
+      "pharmacophoremt._private.native_feature_payload": "pharmacophoremt/_private/native_feature_payload.py",
+      "pharmacophoremt_features._depdigest": "pharmacophoremt_features/_depdigest.py",
+      "pharmacophoremt._depdigest": "pharmacophoremt/_depdigest.py",
+      "pharmacophoremt._private.references": "pharmacophoremt/_private/references.py"
+    },
+    "source_fallback": false,
+    "uploaded_or_published": false
+  },
+  "original_capture_version_authority": "Runtime/distribution versions are observed independently and may differ from the source commit. Existing generated source version is retained in the build receipt; the exact owned version is generated from f722b45. Original observations are never relabelled as the serializer version or authenticated source.",
+  "public_quantity_provider": {
+    "original_public_archive_url": "https://conda.anaconda.org/uibcdf/noarch/pyunitwizard-0.28.1-py_0.tar.bz2",
+    "archive_bytes": 79939,
+    "archive_sha256": "d4654faf93ed4181bf331f7d382379e78f02784f71f678ad19d0ac43d8062cc6",
+    "prior_acquisition_receipt": "build/phmt-native-reuse-20261111-2xl8keq4/public_puw0281.json",
+    "prior_receipt_sha256": "c7bf2826474c13f491e02317bdec0d0f3779fd0fd7aca15eeba1f9d594996bf5",
+    "exact_extracted_files_verified_now": 93,
+    "files": {
+      "pyunitwizard/_version.py": {
+        "bytes": 23,
+        "sha256": "65140a6e00da1b3ff2b8b93e7142ae93a6412824912990bc9d0774e353513579"
+      },
+      "pyunitwizard/utils/__init__.py": {
+        "bytes": 57,
+        "sha256": "d240ca3f86cbbeb665b3c9e688f0d3b8bc26f59f7287632823550a1f5ef71666"
+      },
+      "pyunitwizard/storage/__init__.py": {
+        "bytes": 72,
+        "sha256": "7815812545fe0c3d02932207ccc5618136570bd0a3e9ce4a5fd5b72382b14d8c"
+      },
+      "pyunitwizard/dialects/__init__.py": {
+        "bytes": 76,
+        "sha256": "ff5c65f31b9d8ef87fca88459a4aa78d2aa77e0c2898cd9efa51f76dd3bb33c8"
+      },
+      "pyunitwizard/constants/__init__.py": {
+        "bytes": 85,
+        "sha256": "c4b0c1dd3ffa37a840de04baa9ea18903e4d7a0f216b56d74166c6c540ca0203"
+      },
+      "pyunitwizard/_private/functions.py": {
+        "bytes": 145,
+        "sha256": "3456f140494a66f5a130dfb960cb8c2212fd12b8ed5a9fbf869a34012f5f6666"
+      },
+      "pyunitwizard/_private/smonitor/meta.py": {
+        "bytes": 149,
+        "sha256": "957138daf450f362b42575c228c0f3adc0edd77ab1fd1fc9989739760f997834"
+      },
+      "pyunitwizard/_private/webs.py": {
+        "bytes": 157,
+        "sha256": "531c4c8b601077fb9f6649dc641e5de6851f10e5c1b19c5c3f8d282444df9b87"
+      },
+      "pyunitwizard/_private/smonitor/__init__.py": {
+        "bytes": 184,
+        "sha256": "a2008e0e95448786e46772164d378f13f300b10a88a10f5351e1a5070add36ff"
+      },
+      "pyunitwizard/utils/sequences/is_quantity_value_sequence.py": {
+        "bytes": 260,
+        "sha256": "acbf8248e8b817f2428a4615e5c1a81a2232ef5e5e8e578d3c0e678435ae34c0"
+      },
+      "pyunitwizard/utils/sequences/__init__.py": {
+        "bytes": 279,
+        "sha256": "2e7991ee64d227a06f57430c945fda3b3e12ce37d4fb4848470c5b7fa9117770"
+      },
+      "pyunitwizard/_private/exceptions/no_parser_error.py": {
+        "bytes": 320,
+        "sha256": "b4f38b6f89c6f33d79ee25d02cbfb9980b81f6c9295028147e3e9626da374dda"
+      },
+      "pyunitwizard/_private/exceptions/no_standards_error.py": {
+        "bytes": 326,
+        "sha256": "833c3c4d9151d0da77dff2f8f33f90a82c991fe7150c9176fd7f9d9b3a4fbeee"
+      },
+      "pyunitwizard/_private/lists_and_tuples.py": {
+        "bytes": 335,
+        "sha256": "0a4c9c4092111ba569c13a5804430ded5911c2d73da5ec1eeaa61145cf1ed136"
+      },
+      "pyunitwizard/_private/exceptions/not_implemented_method_error.py": {
+        "bytes": 344,
+        "sha256": "d584ab4b7a21a45d00c6cfc0cf50dd696eb8de95b73bb635ca77b1883723655b"
+      },
+      "pyunitwizard/_private/exceptions/not_implemented_form_error.py": {
+        "bytes": 363,
+        "sha256": "06b1f2d8c0608fa733947434016a0ec7613387a9510e6343e54fd2eae0a723c1"
+      },
+      "pyunitwizard/_private/exceptions/library_not_found_error.py": {
+        "bytes": 366,
+        "sha256": "c4b26f07148ab5d7d9f1b01c4c702e00adeec20fb7fdbed1e02031992642439a"
+      },
+      "pyunitwizard/_private/exceptions/not_implemented_parser_error.py": {
+        "bytes": 373,
+        "sha256": "35ecaa6c27b06e88a98ca3cdf6f661c8643c7ab977085786014c65e521e4e392"
+      },
+      "pyunitwizard/_private/exceptions/library_without_parser_error.py": {
+        "bytes": 376,
+        "sha256": "7bedce7bc30491f950ec91e8d0fb4f21e9ffb0e5ebf559ec87b98c5a31b41916"
+      },
+      "pyunitwizard/_private/exceptions/argument_error.py": {
+        "bytes": 383,
+        "sha256": "517bf07d4ad273051e52ecda81ce341c9e8dfc1876ed88acc9e74b1b9b687f54"
+      },
+      "pyunitwizard/_private/parsers.py": {
+        "bytes": 417,
+        "sha256": "ecbf35a601758937946d9ab0f464708833f543db8b3260d35bd3bc0beae2b505"
+      },
+      "pyunitwizard/configure/__init__.py": {
+        "bytes": 446,
+        "sha256": "8f01b8b8f661d19a29d48d0c5a76eb26d0d9d190e3519e577bc8496bb8ecb602"
+      },
+      "pyunitwizard/_private/exceptions/constant_not_found_error.py": {
+        "bytes": 455,
+        "sha256": "1af50728ba0e23c38b3ce53e93f02ad71d3eb44d5fbb885319caaa33a0b16d86"
+      },
+      "pyunitwizard/_private/smonitor/warnings.py": {
+        "bytes": 471,
+        "sha256": "7eee3c6659127d495400dab02909878e0a833e8931e310e6310e329a68e41b2e"
+      },
+      "pyunitwizard/_private/exceptions/base.py": {
+        "bytes": 488,
+        "sha256": "6e000f934d8f159c46d886abed3b8156d2bfb14290c4032a3d7ab6f943afea28"
+      },
+      "pyunitwizard/_private/exceptions/__init__.py": {
+        "bytes": 620,
+        "sha256": "6acdaf56b3d1269e7dded037ae2d892b749f0b505e3e371dbd2bff1345855046"
+      },
+      "pyunitwizard/_private/exceptions/record_error.py": {
+        "bytes": 633,
+        "sha256": "ecdc1953ee72bd74b33da757e8b083c53ec3c8588a192970aac7342024cc2fda"
+      },
+      "pyunitwizard/_private/smonitor/emitter.py": {
+        "bytes": 667,
+        "sha256": "5b74aac29943b608b3f29401ca190d32e7995fa189d7ba51778cea707af79fd5"
+      },
+      "pyunitwizard/_private/exceptions/fast_track_conflict_error.py": {
+        "bytes": 668,
+        "sha256": "f63a95f4eab8443c73eb14645a17bb99b3b4eac76a5d7c578202fdedb570bc10"
+      },
+      "pyunitwizard/_smonitor.py": {
+        "bytes": 701,
+        "sha256": "f05741f06350ba3895daf1c4fb9f1ec52518f49f37135eb95d5378d35eb1405a"
+      },
+      "pyunitwizard/forms/template_api_form.py": {
+        "bytes": 735,
+        "sha256": "84d22fdbf855742f331be0ec19fee4597fde2877186722efca6b23148eee6bf8"
+      },
+      "pyunitwizard/utils/sequences/is_sequence.py": {
+        "bytes": 897,
+        "sha256": "42b813f193f56d0d7710652b9013525e084e7d09dc89bf7519ca173fe53ff759"
+      },
+      "pyunitwizard/utils/numpy/repeat.py": {
+        "bytes": 953,
+        "sha256": "d11d2f959844ceb02baa91af9bd994d87b7163f47b0c5bcfa81ced94195be043"
+      },
+      "pyunitwizard/utils/numpy/vstack.py": {
+        "bytes": 985,
+        "sha256": "9c93ca30d0d3c9dae6edb86c6e50b15d644c491a6e9bbe9ac0d738d2f8aa8c17"
+      },
+      "pyunitwizard/utils/numpy/hstack.py": {
+        "bytes": 985,
+        "sha256": "c9b6ecb35ae25b42d5c155d3e5d65f1b50d217b9a81d7fbbc2c708a6d11e3c39"
+      },
+      "pyunitwizard/utils/numpy/column_stack.py": {
+        "bytes": 997,
+        "sha256": "a2a415c1fe56473c0d10437dee278fb420b25c909cc08e4813c46a1d52184b21"
+      },
+      "pyunitwizard/utils/numpy/stack.py": {
+        "bytes": 1002,
+        "sha256": "e5ddaad163bc21195cdcc6261f7c987795298ee7905886cc6608457496ed33ff"
+      },
+      "pyunitwizard/_private/quantity_or_unit.py": {
+        "bytes": 1016,
+        "sha256": "10823426c745a2c713e8ebca39f20629b572d68c53444d57ad5b3fb7e575dbb3"
+      },
+      "pyunitwizard/_depdigest.py": {
+        "bytes": 1099,
+        "sha256": "d20f25594711bf6234146fbca96a0cce53032cf7939cc41c391998e46975efac"
+      },
+      "pyunitwizard/api/__init__.py": {
+        "bytes": 1200,
+        "sha256": "7771ab8bad1caa51ccc7efd719623f764c460bb3e640626d65e5c0d867852e4d"
+      },
+      "pyunitwizard/_private/citations.py": {
+        "bytes": 1226,
+        "sha256": "39213196700bf96e6f37f2fe007d82d58be5ee791a6f977673fa1ce3ad269a42"
+      },
+      "pyunitwizard/kernel.py": {
+        "bytes": 1573,
+        "sha256": "7794539748c41b25955d30a78b38b5e38374a487b2643e82fcad49f23c839a09"
+      },
+      "pyunitwizard/_private/backend_settings.py": {
+        "bytes": 1604,
+        "sha256": "a870060014ecf6ed6c8f88458a6274bc62d97fc756ac03d87a926838e908ab80"
+      },
+      "pyunitwizard/_private/attribution.py": {
+        "bytes": 1627,
+        "sha256": "41690c59d658e60a56fdc07d3f0e6590e251555799d231f79ad58b03befc61f7"
+      },
+      "pyunitwizard/utils/sequences/concatenate.py": {
+        "bytes": 1917,
+        "sha256": "e33afccf118e9a6e3d993d90369b4cbee66eaba259eec4ec60381c1d3b2dd084"
+      },
+      "pyunitwizard/api/specialized.py": {
+        "bytes": 2222,
+        "sha256": "c599bfc80d78e14ca22ad9de72319ebbac68565343eaa8fed2454a3b5264c783"
+      },
+      "pyunitwizard/constants/constants.py": {
+        "bytes": 2262,
+        "sha256": "ef4a9c4d4db67660f331773ad1e1db3e0bac839641aac013c82615dfa8ee8bed"
+      },
+      "pyunitwizard/utils/sequences/slice.py": {
+        "bytes": 2274,
+        "sha256": "3d9572d591a18b88d8b48f65aa0517bcd677bbc4050a6fea89956f9cb7d693dd"
+      },
+      "pyunitwizard/_private/forms.py": {
+        "bytes": 2402,
+        "sha256": "186f18de7e3084586994a699773d881ed731671cf0742c6ea2d206a5980772d9"
+      },
+      "pyunitwizard/forms/api_record.py": {
+        "bytes": 2877,
+        "sha256": "a05d8352c948d1695b98afafc2ec83c266b67b557fff8a4b7e0c06804e9f52ea"
+      },
+      "pyunitwizard/api/construction.py": {
+        "bytes": 3263,
+        "sha256": "b645752eb8e56fc56cd51f9d221530f65a6db160663c21ca269f46c299ab09f0"
+      },
+      "pyunitwizard/_private/record_reference_reader.py": {
+        "bytes": 3445,
+        "sha256": "5e793c946773b2e72700984296326ba859bb46d2aa111c33e27e21f9fe2fe117"
+      },
+      "pyunitwizard/utils/matplotlib/__init__.py": {
+        "bytes": 3856,
+        "sha256": "f25217443d6713a99a830f657e4adbfdcadec36b445448794812dedf1d14f175"
+      },
+      "pyunitwizard/_ackredit.py": {
+        "bytes": 4013,
+        "sha256": "a8aa0662fe8cc98a2163e352f3f2cf82c7e572484cb0f363803247fab18c6b48"
+      },
+      "pyunitwizard/utils/numpy/__init__.py": {
+        "bytes": 4644,
+        "sha256": "532dc2ed3a45fdb0beec19c23c2ae49cb0cb0dc3ea05c050ef4304034ecf652e"
+      },
+      "pyunitwizard/api/context.py": {
+        "bytes": 4830,
+        "sha256": "17c56f2c52819f77955935b342f651414ac31a434c47af02e189be93b474c298"
+      },
+      "pyunitwizard/_private/backend_references.py": {
+        "bytes": 4905,
+        "sha256": "b18e52de798d4ac7b741fa7e2f4117665834de1291f91d83442965b5e70dcd67"
+      },
+      "pyunitwizard/__init__.py": {
+        "bytes": 5697,
+        "sha256": "39eeae626315034598a55db948e160fbc09b0213d48d8649b07933563b86fdfc"
+      },
+      "pyunitwizard/utils/numpy/ops.py": {
+        "bytes": 5736,
+        "sha256": "a3625bae7d72a0e8adc76eaf3de4454e6fe09d9440908f5d7939f0d88918b9fc"
+      },
+      "pyunitwizard/api/extraction.py": {
+        "bytes": 5985,
+        "sha256": "8a9a2bcdd328204086ea1b1170473e13ddc6eab3e51817a19d85e7194a78b179"
+      },
+      "pyunitwizard/forms/api_quantities.py": {
+        "bytes": 6011,
+        "sha256": "8e85d31e632f0bf0201429f00fff01cc3bc7556ad880b1cdce9eb2292327435f"
+      },
+      "pyunitwizard/parse.py": {
+        "bytes": 6317,
+        "sha256": "3dc335d3659f33c82dcd2cddae39df26827c4c0b334723882e8768763f400767"
+      },
+      "pyunitwizard/utils/pandas/__init__.py": {
+        "bytes": 6387,
+        "sha256": "9ae04350a51eba6be762e3528cf1a51a851bd9f97bb22ff23d19de417cd72a69"
+      },
+      "pyunitwizard/forms/api_physipy.py": {
+        "bytes": 6593,
+        "sha256": "6b64e55d75429c9c9e51ed7a563cc1fe715b73148403d53df8899cb17167a35f"
+      },
+      "pyunitwizard/api/validation.py": {
+        "bytes": 6738,
+        "sha256": "1bf7b2c648c54b460ef2efee5f10d6674a7d5aa421d11a3853d75054e1bea606"
+      },
+      "pyunitwizard/api/comparison.py": {
+        "bytes": 6816,
+        "sha256": "8499787f73e123d2c120430a13cc2142142894f584bdefa8e983a03ea321b789"
+      },
+      "pyunitwizard/forms/api_openff_units.py": {
+        "bytes": 8438,
+        "sha256": "614cffdb7d50871d26e681c5771e957110efc27374d1a580e333160083c6f072"
+      },
+      "pyunitwizard/dialects/cf.py": {
+        "bytes": 8533,
+        "sha256": "a3d92864ae705ae1e13ffb1410a55b2ad9453d8c9953f8e6850a9e5ee6cba799"
+      },
+      "pyunitwizard/storage/hdf5.py": {
+        "bytes": 8661,
+        "sha256": "0208ebc3450cc13a3eb9f3f7e2d781923277dd9d7255d2d7eb7f73b84ff2513d"
+      },
+      "pyunitwizard/api/standardization.py": {
+        "bytes": 8771,
+        "sha256": "baaec11bc0d27fd0427d6a1074484710c50dab9bb923755c6ea0fd28fde7e61e"
+      },
+      "pyunitwizard/_private/smonitor/catalog.py": {
+        "bytes": 9553,
+        "sha256": "c5a529b3487c46a71d91a59793edd7511f3d7268f92cc2eca8c04e37498493ed"
+      },
+      "pyunitwizard/forms/__init__.py": {
+        "bytes": 9608,
+        "sha256": "2a99732c7080f855d2b8fb888c5266b6968b1cb2b01f57c8ea21801d930bf89b"
+      },
+      "pyunitwizard/forms/api_unyt.py": {
+        "bytes": 9655,
+        "sha256": "2f4e955608facbc231ce273f4ab31ed7379f0e442599056cef80e6af82e0056e"
+      },
+      "pyunitwizard/forms/api_astropy_unit.py": {
+        "bytes": 9767,
+        "sha256": "902561a917d7bbafb8e56d3320aabf242a033aa7613b763058309613ce224454"
+      },
+      "pyunitwizard/forms/api_openmm_unit.py": {
+        "bytes": 11327,
+        "sha256": "f4403bd7a8c2471ef47d677e440a0db10193beeb7de358195acd93d5e2778a7b"
+      },
+      "pyunitwizard/forms/api_string.py": {
+        "bytes": 11568,
+        "sha256": "4e24fb08200ebaa1acde610e429a2b7d4950f2dd0d64d7037177ee1f15a0fa22"
+      },
+      "pyunitwizard/measurement.py": {
+        "bytes": 11594,
+        "sha256": "230931cec092fed9a047c64f0e56f105a2a66285bf30d291b360a8ea2e862910"
+      },
+      "pyunitwizard/api/conversion.py": {
+        "bytes": 14481,
+        "sha256": "9d8cc393aa6170b72b7c03d19e85e380c54b4cf487a134877078ee7e1031f3fc"
+      },
+      "pyunitwizard/api/introspection.py": {
+        "bytes": 14597,
+        "sha256": "645533243d0968fb426eaf9b545955cc8bae5cb4b22ab71dead87bad5e5f2eda"
+      },
+      "pyunitwizard/forms/api_pint.py": {
+        "bytes": 15048,
+        "sha256": "19e9d531da8dfbea9bd089a106b410d96ad6a251fe27053b2ea8ab3aeeac7081"
+      },
+      "pyunitwizard/configure/configure.py": {
+        "bytes": 19940,
+        "sha256": "21cb04b8a1c3900acfa887cb40720a696e81dcaa98b35f198f8926acfe1508f9"
+      },
+      "pyunitwizard/record.py": {
+        "bytes": 25689,
+        "sha256": "caa143da3fb9c6d509c0d7502d283c2e57683900851112074d42c779fdbc9377"
+      },
+      "pyunitwizard/_private/__init__.py": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pyunitwizard/utils/plot/__init__.py": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pyunitwizard-0.28.1.dist-info/direct_url.json": {
+        "bytes": 110,
+        "sha256": "1c9a008e262bbf63552c3736ba458f3f81e7a38c5cbd0216da4c1c27dbad8a59"
+      },
+      "pyunitwizard-0.28.1.dist-info/licenses/LICENSE": {
+        "bytes": 1267,
+        "sha256": "8f342ee3237544c1aa150c3367a11eb7640d21560109601a43c8d86fe787e8a2"
+      },
+      "pyunitwizard-0.28.1.dist-info/INSTALLER": {
+        "bytes": 5,
+        "sha256": "d0edee15f91b406f3f99726e44eb990be6e34fd0345b52b910c568e0eef6a2a8"
+      },
+      "pyunitwizard-0.28.1.dist-info/WHEEL": {
+        "bytes": 91,
+        "sha256": "61532836a2b3111b7ec23519c09df7c41180c27165fb872a6d8913b566b88ad1"
+      },
+      "pyunitwizard-0.28.1.dist-info/METADATA": {
+        "bytes": 9198,
+        "sha256": "55331eba9c635b121f968bc81351f08499832fc3afa4eef1c11c2d7dcf995d4a"
+      },
+      "pyunitwizard-0.28.1.dist-info/RECORD": {
+        "bytes": 14322,
+        "sha256": "abb263a31771f3ee73595f415daae0deb7ba58b25fd2569994bead620a3ed274"
+      },
+      "pyunitwizard-0.28.1.dist-info/REQUESTED": {
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      "pyunitwizard-0.28.1.dist-info/top_level.txt": {
+        "bytes": 13,
+        "sha256": "caf7db4598e4a14d4485bef7f9391270691db66b8109683de20afcb20fab4e63"
+      },
+      "pyunitwizard/py.typed": {
+        "bytes": 61,
+        "sha256": "a3fb246183a006a6f032dfb9954643ba7c8cec271e987689b7693d32c48009e6"
+      }
+    },
+    "shared_prefix_changed": false,
+    "new_acquisition": false
+  },
+  "public_quantity_payload_files_rehashed": 93,
+  "recipes": {
+    "source": {
+      "mode": "source",
+      "runtime_version": "0.5.0+7.g35559b3",
+      "public_puw": "0.28.1",
+      "doc_sha256": "cba57b2d7341a3ff8853f3f8f2279973d8948511941f5f3c59747f5cc0b88a44",
+      "outputs": [
+        {
+          "unit": "nm",
+          "executed_blocks": 3,
+          "stdout": "2\nevaluated_empty\nTrue\nTrue\nTrue\n0\nTrue\n",
+          "policy_unchanged": true
+        },
+        {
+          "unit": "pm",
+          "executed_blocks": 3,
+          "stdout": "2\nevaluated_empty\nTrue\nTrue\nTrue\n0\nTrue\n",
+          "policy_unchanged": true
+        }
+      ],
+      "native_origins_checked": 177
+    },
+    "installed": {
+      "mode": "installed",
+      "runtime_version": "0.5.0+10.gf722b45",
+      "public_puw": "0.28.1",
+      "doc_sha256": "cba57b2d7341a3ff8853f3f8f2279973d8948511941f5f3c59747f5cc0b88a44",
+      "outputs": [
+        {
+          "unit": "nm",
+          "executed_blocks": 3,
+          "stdout": "2\nevaluated_empty\nTrue\nTrue\nTrue\n0\nTrue\n",
+          "policy_unchanged": true
+        },
+        {
+          "unit": "pm",
+          "executed_blocks": 3,
+          "stdout": "2\nevaluated_empty\nTrue\nTrue\nTrue\n0\nTrue\n",
+          "policy_unchanged": true
+        }
+      ],
+      "native_origins_checked": 177
+    }
+  },
+  "strict_docs": {
+    "source": {
+      "mode": "source",
+      "code": 0,
+      "runtime_version": "0.5.0+7.g35559b3",
+      "public_puw": "0.28.1",
+      "native_origins_checked": 172,
+      "notebook_execution": "off"
+    },
+    "installed": {
+      "mode": "installed",
+      "code": 0,
+      "runtime_version": "0.5.0+10.gf722b45",
+      "public_puw": "0.28.1",
+      "native_origins_checked": 172,
+      "notebook_execution": "off"
+    }
+  },
+  "quality": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "518 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.278s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.842s\n\nOK\n"
+    },
+    {
+      "name": "dependency-routes",
+      "code": 0,
+      "output": "{\"contexts\": [{\"bootstrap_selectors\": [\"python>=3.14,<3.15\", \"setuptools\", \"pytest\", \"pip\", \"pytest-cov\", \"codecov\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"mamba\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/development_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"development-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"jupyterlab\", \"sphinx\", \"pydata-sphinx-theme\", \"sphinxcontrib-bibtex\", \"sphinx-remove-toctrees\", \"sphinx-copybutton\", \"sphinx-design\", \"sphinx-favicon\", \"sphinx-tabs\", \"myst-nb\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/docs_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"docs-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": []}, {\"bootstrap_selectors\": [\"python>=3.11,<3.15\", \"setuptools\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest>=0.17.1\", \"smonitor>=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"PyYAML>=5.1\"], \"environment\": \"devtools/conda-envs/production_env.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"production-3.14\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=77.0.3\", \"versioningit >=2,<3\", \"pytest >=8\", \"pytest-receptor=1.1.0\", \"packaging\", \"numpy\", \"scipy\", \"nglview\", \"molsysmt\", \"pyunitwizard>=0.28.1\", \"argdigest >=0.17.1\", \"smonitor >=0.22.1\", \"depdigest\", \"rdkit\", \"networkx\", \"pyyaml >=5.1\", \"molsysviewer ==0.24.0\", \"ackredit ==0.12.0\", \"beartype ==0.22.9\", \"openmm ==8.6.1\"], \"environment\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"final_constraints\": {\"argdigest\": \">=0.17.1\", \"depdigest\": \"\", \"molsysmt\": \"\", \"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyunitwizard\": \">=0.28.1\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\", \"smonitor\": \">=0.22.1\"}, \"name\": \"public-test-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": []}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.11\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.11\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.12\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.12\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.11,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=0.6.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py313.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.11\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.13\", \"narrowed\": [], \"overlays\": [], \"python_minor\": \"3.13\", \"sources\": [\"smonitor-base\", \"depdigest-base\", \"pyunitwizard-base\", \"argdigest-base\", \"molsysviewer-base\", \"ackredit-base\", \"molsysmt-base\"]}, {\"bootstrap_selectors\": [\"python >=3.14,<3.15\", \"pip\", \"setuptools >=68.0\", \"versioningit>=3.0\", \"h5py\", \"numpy\", \"pandas\", \"networkx\", \"tqdm\", \"matplotlib\", \"openmm\", \"pdbfixer\", \"ambertools\", \"openff-toolkit-base >=0.17.1\", \"openff-units >=0.3.0\", \"mdtraj\", \"mdanalysis\", \"rdkit\", \"parmed\", \"biopython\", \"ipywidgets\", \"py-mmcif >=1.1.1\", \"plotly\", \"anywidget\", \"aiohttp\", \"scikit-learn\", \"beartype\", \"packaging >=23\", \"pint\", \"pydantic\", \"pyyaml>=5.1\", \"scipy\", \"traitlets >=5\", \"nglview\", \"pytest\", \"pytest-receptor=1.1.0\", \"pytest-cov\", \"codecov\", \"pytest-xdist\", \"ruff=0.16.5\"], \"environment\": \"devtools/conda-envs/test_env_py314.yaml\", \"final_constraints\": {\"networkx\": \"\", \"nglview\": \"\", \"numpy\": \"\", \"python\": \"<3.15,>=3.14\", \"pyyaml\": \">=5.1\", \"rdkit\": \"\", \"scipy\": \"\"}, \"name\": \"ci-3.14\", \"narrowed\": [\"python\"], \"overlays\": [], \"python_minor\": \"3.14\", \"sources\": [\"smonitor-3.14\", \"depdigest-3.14\", \"pyunitwizard-3.14\", \"argdigest-3.14\", \"molsysviewer-3.14\", \"ackredit-3.14\", \"molsysmt-3.14\"]}], \"installed_check_required\": true, \"package\": \"pharmacophoremt\", \"proof_domain\": \"numeric-release-versions\", \"qualification\": \"declared-only\", \"routes\": [{\"kind\": \"shared-noarch\", \"path\": \"devtools/conda-build/meta.yaml\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/build_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/development_env.yaml\", \"purpose\": \"development\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/docs_env.yaml\", \"purpose\": \"documentation\"}, {\"kind\": \"resolved-package\", \"path\": \"devtools/conda-envs/importable_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/production_env.yaml\", \"purpose\": \"production\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/public_test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"build-only\", \"path\": \"devtools/conda-envs/setup_env.yaml\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py313.yaml\", \"purpose\": \"test\"}, {\"kind\": \"runtime\", \"path\": \"devtools/conda-envs/test_env_py314.yaml\", \"purpose\": \"test\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/CI.yaml\", \"sha256\": \"ed3722b90f7e062a804f359daaee1c07ff975b541d48c262eda65125bb989667\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/build_and_upload_conda_packages.yaml\", \"sha256\": \"18369344a3af440b5a8227469d14641b2f6e3fb7b8d5e52b95cf48ed37233f9a\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/conda_publication_governance.yaml\", \"sha256\": \"353f4080e59d509f922f7e18b426100f523c62f9958044fc9623ce4e30c37d85\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/molsyssuite-policy.yml\", \"sha256\": \"6cc62208156f765ca0456e3bc5f398934263e03afc7063c69afa692c5dafdffd\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/promote_conda_package.yaml\", \"sha256\": \"2932f0b180896c7d6d8352fb39aed0f2d1cc15dc4f4ff0b2e997c36320de644e\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/sphinx_docs_to_gh_pages.yaml\", \"sha256\": \"b988063c4cc81fd4532b05ea04724ec8822653b054e101a0da93b0e6702df6f9\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/test_installed_conda_package.yaml\", \"sha256\": \"d6c1713c4241ad3c00128901eab8ce9a4f761398d8e23d4fe863432461c33df0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_resource_probe.yaml\", \"sha256\": \"f983e38a0279eaa0511b7134f22cdf122bae394b936709ab7d0fdb1b79c917a0\"}, {\"kind\": \"reviewed-workflow\", \"path\": \".github/workflows/feature_reuse_native_qualification.yaml\", \"sha256\": \"89f52d3982408db82961c73a48cfc8c5e1cc01f85d8efbb696f46914bea5d1e0\"}], \"schema\": \"molsyssuite.dependency-routes@3\", \"selected_context\": null, \"source_dependencies\": [\"ackredit-3.14\", \"ackredit-base\", \"argdigest-3.14\", \"argdigest-base\", \"depdigest-3.14\", \"depdigest-base\", \"molsysmt-3.14\", \"molsysmt-base\", \"molsysviewer-3.14\", \"molsysviewer-base\", \"pyunitwizard-3.14\", \"pyunitwizard-base\", \"smonitor-3.14\", \"smonitor-base\"], \"source_inputs\": [{\"path\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}, {\"path\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"reason\": \"Reviewed pip --no-deps manifest: published SMonitor0.22.1 correction received under #108/#6; ArgDigest0.17.1 and all other pins/scientific workflow commands preserved. Full exact pinned-source receiving remains separate.\", \"sha256\": \"380a0d5f758ab7cd375eed70da34f00768f2a0ea6d3f9eb20009ec40997f01ab\"}], \"source_routes\": [{\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-base\", \"input\": \"devtools/requirements/controlled_suite_dependencies.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}, {\"commit\": \"2147c7c641b7cba8a974b193207f686ee3ebe855\", \"id\": \"smonitor-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"smonitor\", \"reason\": \"Published SMonitor0.22.1 correction received by the independent reader under #108/#6: preserve visible coded errors when nested observations are filtered or silenced. Public payload receiving is scoped; exact pinned full source/installed gates remain #9/#10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/smonitor\"}, {\"commit\": \"13cc73780a7cb645546ae3f396177f98b86a8792\", \"id\": \"depdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"depdigest\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/depdigest\"}, {\"commit\": \"2ab37a525ce99728ad8aee846b4a4f7acc4f1b65\", \"id\": \"pyunitwizard-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"pyunitwizard\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/pyunitwizard\"}, {\"commit\": \"c9c9ee623dab5331fdfa4227bd784dd38620e18b\", \"id\": \"argdigest-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"argdigest\", \"reason\": \"ArgDigest 0.17.1 published correction received under #82/#6: preserve literal keywords/source identity and TypeError-compatible native I/O admission. Scientific commands unchanged; whole installed/public closure remains #10/#23.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/argdigest\"}, {\"commit\": \"ca7ebea60d530a7a0c65cb4d0ccea7b4288f3352\", \"id\": \"molsysviewer-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysviewer\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/molsysviewer\"}, {\"commit\": \"71f7f1984de1a3925c32d29074784bb553e89bfc\", \"id\": \"ackredit-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"ackredit\", \"reason\": \"Retain existing exact source input; no pin or scientific command change\", \"role\": \"integration\", \"url\": \"https://github.com/uibcdf/ackredit\"}, {\"commit\": \"0faf1584d05ac47ddcebfc20d9c9978b7f4f230e\", \"id\": \"molsysmt-3.14\", \"input\": \"devtools/requirements/controlled_suite_dependencies_py314.txt\", \"install\": \"pip-no-deps-git\", \"name\": \"molsysmt\", \"reason\": \"Controlled source input; scientific commands unchanged. Chemical-domain receiving pins are candidates under #69, not installed/public qualification.\", \"role\": \"required-runtime\", \"url\": \"https://github.com/uibcdf/molsysmt\"}]}\n"
+    },
+    {
+      "name": "environments",
+      "code": 0,
+      "output": "{\n  \"changed\": []\n}\n"
+    },
+    {
+      "name": "administrative-distribution",
+      "code": 0,
+      "output": "acquired evaluation 1/64 CID 2347: completed\nacquired evaluation 2/64 CID 10204: failed\nacquired evaluation 3/64 CID 6852393: completed\nacquired evaluation 4/64 CID 79688: completed\nacquired evaluation 5/64 CID 138394061: completed\nacquired evaluation 6/64 CID 608116: completed\nacquired evaluation 7/64 CID 9904: completed\nacquired evaluation 8/64 CID 5479: completed\nacquired evaluation 9/64 CID 87250: completed\nacquired evaluation 10/64 CID 62130: completed\nacquired evaluation 11/64 CID 7070: completed\nacquired evaluation 12/64 CID 5280961: completed\nacquired evaluation 13/64 CID 5281227: completed\nacquired evaluation 14/64 CID 65359: completed\nacquired evaluation 15/64 CID 8572: completed\nacquired evaluation 16/64 CID 472181: completed\nacquired evaluation 17/64 CID 15284: completed\nacquired evaluation 18/64 CID 70425: completed\nacquired evaluation 19/64 CID 11193251: completed\nacquired evaluation 20/64 CID 23686673: completed\nacquired evaluation 21/64 CID 6950248: completed\nacquired evaluation 22/64 CID 33255: completed\nacquired evaluation 23/64 CID 6209: completed\nacquired evaluation 24/64 CID 7059: completed\nacquired evaluation 25/64 CID 13624: completed\nacquired evaluation 26/64 CID 13387: completed\nacquired evaluation 27/64 CID 2794: completed\nacquired evaluation 28/64 CID 12989: completed\nacquired evaluation 29/64 CID 6538105: completed\nacquired evaluation 30/64 CID 10486: completed\nacquired evaluation 31/64 CID 644076: completed\nacquired evaluation 32/64 CID 7237: completed\nacquired evaluation 33/64 CID 7284: completed\nacquired evaluation 34/64 CID 23688977: completed\nacquired evaluation 35/64 CID 14075: completed\nacquired evaluation 36/64 CID 60196362: completed\nacquired evaluation 37/64 CID 16591: completed\nacquired evaluation 38/64 CID 74483: completed\nacquired evaluation 39/64 CID 10197675: completed\nacquired evaluation 40/64 CID 3714831: completed\nacquired evaluation 41/64 CID 7479: completed\nacquired evaluation 42/64 CID 18510: completed\nacquired evaluation 43/64 CID 445639: completed\nacquired evaluation 44/64 CID 10409: completed\nacquired evaluation 45/64 CID 6786: completed\nacquired evaluation 46/64 CID 16230: completed\nacquired evaluation 47/64 CID 70014: completed\nacquired evaluation 48/64 CID 23194: completed\nacquired evaluation 49/64 CID 5354133: completed\nacquired evaluation 50/64 CID 1549517: completed\nacquired evaluation 51/64 CID 23683938: completed\nacquired evaluation 52/64 CID 7203: completed\nacquired evaluation 53/64 CID 36605: completed\nacquired evaluation 54/64 CID 6333: completed\nacquired evaluation 55/64 CID 5354342: completed\nacquired evaluation 56/64 CID 18056: completed\nacquired evaluation 57/64 CID 73539: completed\nacquired evaluation 58/64 CID 10197650: completed\nacquired evaluation 59/64 CID 7348: completed\nacquired evaluation 60/64 CID 31370: failed\nacquired evaluation 61/64 CID 42981: completed\nacquired evaluation 62/64 CID 12512: completed\nacquired evaluation 63/64 CID 8129: completed\nacquired evaluation 64/64 CID 7819: completed\nacquired training CID 31477: completed\nacquired training CID 24633: failed\nacquired training CID 6293: completed\nretained training CID 31477: completed\nretained training CID 24633: failed\nretained training CID 6293: completed\nacquired training CID 9818306: completed\nacquired training CID 123504: completed\nacquired training CID 5857: completed\nacquired training CID 443831: completed\nacquired training CID 13765: completed\nacquired training CID 6422843: completed\nacquired training CID 17701: completed\nacquired training CID 6327657: completed\nacquired training CID 70400: completed\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"starting\", \"argv\": [\"fixed-owned-child\"]}\n{\"stage\": \"native\", \"status\": \"observed\", \"resources\": {\"memory\": {\"MemTotal\": 17179869184, \"MemAvailable\": 15032385536}, \"memory_psi\": \"some avg10=0.00\\nfull avg10=0.00\\n\", \"unit_memory_psi\": \"some avg10=0.00\\nfull avg10=0.00\\n\", \"swap_pages\": {\"pswpin\": 0, \"pswpout\": 0}}}\n..............................................................................................usage: python -m unittest [-h] --output OUTPUT --unit UNIT --cpu CPU --uid UID\n                          --gid GID [--manager MANAGER] [--name NAME]\n                          {bootstrap,native}\npython -m unittest: error: argument phase: invalid choice: 'benchmark' (choose from 'bootstrap', 'native')\n...................................................................\n----------------------------------------------------------------------\nRan 161 tests in 38.005s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "source_freeze_checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "518 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.287s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.857s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "commands": [
+    {
+      "name": "capture-corrected",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 9.108059799007606,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 289263616,
+      "minimum_memory_available_bytes": 58825347072,
+      "record": {
+        "bytes": 54766,
+        "sha256": "52189cd12f7d2618da7bec8612b660e015ba78e5dfb9510c5d108f100a9029d4"
+      },
+      "log": {
+        "bytes": 4841,
+        "sha256": "452d11ed7f669b99c27341b2ee1f11983694fd67bf424af59068695f6ae72ada"
+      }
+    },
+    {
+      "name": "capture-source-all",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 20.548991397954524,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 603721728,
+      "minimum_memory_available_bytes": 58677411840,
+      "record": {
+        "bytes": 120999,
+        "sha256": "fd090ffc14bed15bb609e6483d6c4cd0696ca0f0494334996b8103d75e6229cd"
+      },
+      "log": {
+        "bytes": 20036,
+        "sha256": "a806ab3eb17e6e507bbd6a9b6d21091691e42c94d309e77284fe5f12d311e753"
+      }
+    },
+    {
+      "name": "capture-source-new",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 9.906270765000954,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 529223680,
+      "minimum_memory_available_bytes": 59045720064,
+      "record": {
+        "bytes": 59425,
+        "sha256": "50cc1a55a45ff628a08664306d60a1ba057a2d57795f7a1831f0b9cf51dd7289"
+      },
+      "log": {
+        "bytes": 8743,
+        "sha256": "725357071a79a778d6b64f8ea4340c60a6a32a58066ae1e9e2d5679d6d58d880"
+      }
+    },
+    {
+      "name": "capture-source-selected",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 22.767373332986608,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 540844032,
+      "minimum_memory_available_bytes": 59094659072,
+      "record": {
+        "bytes": 133964,
+        "sha256": "0f54d174f2796a15bf1908bdbf469e5cabee21f266d90b4c91d166e47f2cf1ed"
+      },
+      "log": {
+        "bytes": 12364,
+        "sha256": "240c5446b8363a845e079565cc93d38c887d2890e2c479d2eee454cc4db8a3f0"
+      }
+    },
+    {
+      "name": "capture-targeted",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 8.813808645994868,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 290787328,
+      "minimum_memory_available_bytes": 58805555200,
+      "record": {
+        "bytes": 53010,
+        "sha256": "6a1a4b38128edd25122b9d54dc0b1c0603ba04e3c5eb7a824fd3b73bd161017c"
+      },
+      "log": {
+        "bytes": 6932,
+        "sha256": "6fe4ca5d675705afa6ba1efdd786b1674e74ecd164371555a8ebd11484dd0b9e"
+      }
+    },
+    {
+      "name": "first-capture",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 4.446172934956849,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 280530944,
+      "minimum_memory_available_bytes": 58979278848,
+      "record": {
+        "bytes": 27855,
+        "sha256": "9537cdd8cbe4a206e7ef1c15a70c223f11000263ef3d1bb6e51e63eeb3f98603"
+      },
+      "log": {
+        "bytes": 7471,
+        "sha256": "a752d9ef2e13183d363b39206d10bdf90dba8bba6c128aee1048c9eded609460"
+      }
+    },
+    {
+      "name": "installed-docs",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 10.610724547994323,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 309719040,
+      "minimum_memory_available_bytes": 59115282432,
+      "record": {
+        "bytes": 63630,
+        "sha256": "60b19612201b207b9f9831b88358f8a9976f55b6d396246fab7b96bb8de07e7c"
+      },
+      "log": {
+        "bytes": 4059,
+        "sha256": "cff16beb3cb0f7ba20256a6e5c230eedebc6a5de7aad7da936175dd397ddc539"
+      }
+    },
+    {
+      "name": "installed-recipes",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 2.830186636012513,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 276209664,
+      "minimum_memory_available_bytes": 59169452032,
+      "record": {
+        "bytes": 18530,
+        "sha256": "5f55d2722cac1afa1a8dd52244918eccdbe39ec5b28280db4bf187efc8428deb"
+      },
+      "log": {
+        "bytes": 4492,
+        "sha256": "7454f83cb0cc2677c6fa8e14af3242269917cdbd26085e1b67a0478b3570ef3a"
+      }
+    },
+    {
+      "name": "owned-attribution",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 18.12474558694521,
+      "DATA_per_process_bytes": 805306368,
+      "observed_own_group_RSS_peak_bytes": 783409152,
+      "minimum_memory_available_bytes": 58896691200,
+      "record": {
+        "bytes": 106992,
+        "sha256": "8e41391783fca4f6dcf0a0dc73e225a95866b5b3707480e23bf6eb5739f40ef4"
+      },
+      "log": {
+        "bytes": 6130,
+        "sha256": "749b13293e93fe48a8ee413ce0620fceef9fe0acd35dff33d3db2e69ab377d45"
+      }
+    },
+    {
+      "name": "owned-build",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.187539751001168,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 290648064,
+      "minimum_memory_available_bytes": 59280789504,
+      "record": {
+        "bytes": 37746,
+        "sha256": "c00f582a2cea88fbbe72f28b7fe4d8c73da500b6bb1459d7cdad48eb7b93c583"
+      },
+      "log": {
+        "bytes": 3107,
+        "sha256": "6bdf1ffae030e7a39e7426b4d6bb8d218782cf81e48c5fc73119678a6ddc91f0"
+      }
+    },
+    {
+      "name": "owned-capture",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 14.989237378002144,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 538165248,
+      "minimum_memory_available_bytes": 58966827008,
+      "record": {
+        "bytes": 88729,
+        "sha256": "a2985a2c62861ff95edff7a526d7b7bc5717e02485d99aba3c24a3cafd7fa8d0"
+      },
+      "log": {
+        "bytes": 4589,
+        "sha256": "743783f78e32b7a5a8773ed927f5124bfd056ec3fd408152de3b5a7ccd25ba91"
+      }
+    },
+    {
+      "name": "owned-native",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 38.42167844402138,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 363008000,
+      "minimum_memory_available_bytes": 59187499008,
+      "record": {
+        "bytes": 224605,
+        "sha256": "51de19dcf9ef65228f456642a789d7ce02b898633abe658e5029ae888bcb0066"
+      },
+      "log": {
+        "bytes": 4695,
+        "sha256": "9ab79ddd2f82aa3d516e02097993295057ceef028f0acf0c43994d580b3e1e7f"
+      }
+    },
+    {
+      "name": "poison-before",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 3.739945895038545,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 276230144,
+      "minimum_memory_available_bytes": 59268395008,
+      "record": {
+        "bytes": 23731,
+        "sha256": "df8d614c0d3bfa6157746f2c023c3185d65b24077015de9b0dcd404e3c7864f7"
+      },
+      "log": {
+        "bytes": 5789,
+        "sha256": "e0104d81fee19dea4acc2777b0c24038c98d6dd4d7e4845d9cd0e6afa611b00c"
+      }
+    },
+    {
+      "name": "source-attribution-shard",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 18.43031848600367,
+      "DATA_per_process_bytes": 805306368,
+      "observed_own_group_RSS_peak_bytes": 779313152,
+      "minimum_memory_available_bytes": 58554007552,
+      "record": {
+        "bytes": 108597,
+        "sha256": "72352e6720ffe81fc9990d929e7e4e3668d0429777cfea26476b7a7e972b301a"
+      },
+      "log": {
+        "bytes": 5916,
+        "sha256": "8919ddd70f9ccbb03d4df25d7fa9a5e696aca2e5acb12ae1cc8caedf6dbcd255"
+      }
+    },
+    {
+      "name": "source-capture-shard",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 13.97782523400383,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 538365952,
+      "minimum_memory_available_bytes": 58899263488,
+      "record": {
+        "bytes": 82916,
+        "sha256": "8a61d8b332bc979b1ee3565487b464699f212126412a37fe5a22d42e4bd861c4"
+      },
+      "log": {
+        "bytes": 4508,
+        "sha256": "07a6f1874702f09945fc56630a044c9f499424620eb5548abf051af8ad352f9e"
+      }
+    },
+    {
+      "name": "source-docs",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 11.52185564202955,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 310132736,
+      "minimum_memory_available_bytes": 58100617216,
+      "record": {
+        "bytes": 68719,
+        "sha256": "6d20e3595f0579b10f2553776fcce88bed6eb291177fc03370816d8e5d255ac4"
+      },
+      "log": {
+        "bytes": 4059,
+        "sha256": "cff16beb3cb0f7ba20256a6e5c230eedebc6a5de7aad7da936175dd397ddc539"
+      }
+    },
+    {
+      "name": "source-final-attribution",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 17.515877410012763,
+      "DATA_per_process_bytes": 805306368,
+      "observed_own_group_RSS_peak_bytes": 777846784,
+      "minimum_memory_available_bytes": 58861797376,
+      "record": {
+        "bytes": 103683,
+        "sha256": "5419bbba2df47a0f4804283c14621ce2c922ab54c831ae6972c13242e394c369"
+      },
+      "log": {
+        "bytes": 5916,
+        "sha256": "1dc1c62e59238f792972285c7ae7f52d8649d30f030acbac8ff061c809a49df9"
+      }
+    },
+    {
+      "name": "source-final-capture",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 14.681194591976237,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 538632192,
+      "minimum_memory_available_bytes": 58992480256,
+      "record": {
+        "bytes": 87135,
+        "sha256": "d33fb764a063fc65a104c30791eb8b5ecdb03f7d0bb1434efc78541b5f67fc5f"
+      },
+      "log": {
+        "bytes": 4508,
+        "sha256": "75758772013650a8c6dcfe3d73096c2e13bfa13eca22f8c7b9d9cc2a761a2ab3"
+      }
+    },
+    {
+      "name": "source-freeze-checks",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 6.675952310964931,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 420958208,
+      "minimum_memory_available_bytes": 59008786432,
+      "record": {
+        "bytes": 40710,
+        "sha256": "217cd597adff948a1e3b481287e7724fd82bcdd9dc3c0ca64f64967f3b461711"
+      },
+      "log": {
+        "bytes": 42,
+        "sha256": "6570bbe903b474e7a7009d44e5d03e0ae2df1b0d41b069e1f843b17c8c044f7e"
+      }
+    },
+    {
+      "name": "source-native",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 37.30282239796361,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 363810816,
+      "minimum_memory_available_bytes": 59198799872,
+      "record": {
+        "bytes": 218253,
+        "sha256": "9da9c298be1e340e0e5ad673ec4fec2523208350d47768df44f35570c59e85a5"
+      },
+      "log": {
+        "bytes": 4614,
+        "sha256": "224a539eb19898979bee27e6d74ed708928c2c7695e6858c336de817d3b74246"
+      }
+    },
+    {
+      "name": "source-quality-corrected",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 6.778041140991263,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 420974592,
+      "minimum_memory_available_bytes": 58489733120,
+      "record": {
+        "bytes": 41294,
+        "sha256": "3724f514ad22b3fbaab10a4543289426a645dd949de84197e858680b05ba76a0"
+      },
+      "log": {
+        "bytes": 2963,
+        "sha256": "a7ee26ffd5c69dd9b83146abf8710bdd75d46f9e2962dc513899eec1587a2eff"
+      }
+    },
+    {
+      "name": "source-quality-sdk",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 45.49138582398882,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 407252992,
+      "minimum_memory_available_bytes": 58405105664,
+      "record": {
+        "bytes": 265577,
+        "sha256": "953bebe2a70eb12d92e9769eb0ba2e530bb64bff9c719b4c99f805f1f25d2e30"
+      },
+      "log": {
+        "bytes": 43,
+        "sha256": "00ae51c8e30acdc18e60b564a99b5bf84f447d9e20f62713490840828cd4095f"
+      }
+    },
+    {
+      "name": "source-quality",
+      "exit_code": 1,
+      "interruption": null,
+      "seconds": 0.610251129954122,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 51216384,
+      "minimum_memory_available_bytes": 59277598720,
+      "record": {
+        "bytes": 5615,
+        "sha256": "85b1723c5374302f9cb8c012c9f3ce49def12c979301d687314374bc76fbaef5"
+      },
+      "log": {
+        "bytes": 2730,
+        "sha256": "20e852a62d0c3236ab0803d6c963b000144e90974dc8d02df3f6956d1d9317bf"
+      }
+    },
+    {
+      "name": "source-recipes",
+      "exit_code": 0,
+      "interruption": null,
+      "seconds": 2.629175136971753,
+      "DATA_per_process_bytes": 536870912,
+      "observed_own_group_RSS_peak_bytes": 276090880,
+      "minimum_memory_available_bytes": 59217870848,
+      "record": {
+        "bytes": 17376,
+        "sha256": "a79eef580eac9a78aba3d5210a636bcb591cd550c507a8aeacb5ed2a841fd113"
+      },
+      "log": {
+        "bytes": 4488,
+        "sha256": "74c927956b83db835015179d6503ff9cb259d9ac72b0c5b32dbfb7c4e1a71c50"
+      }
+    }
+  ],
+  "first_attempts": [
+    "poison-before: one real host failure plus a test-only assumption that DETAILED was publicly exported; use the public CapturePolicy constructor.",
+    "first-capture: six fixture failures requested atom_type from the system element; corrected to public element=atom, not a provider bug.",
+    "capture-targeted: three pm fixture comparisons used an nm extraction as exact expected output; compare against an independent unchanged extractor under the same policy.",
+    "capture-source-all and capture-source-selected: 512 MiB per-process DATA limit caused MemoryError and incomplete reports. No system memory pressure; keep original logs. Shard serially; attribution uses 768 MiB DATA within unchanged 1 GiB observed-group stop and 20%+1.5 GiB available margin.",
+    "capture-source-new: passing skip_digestion to old signatures produced TypeError (34 failures/2 passes). Keep ordinary legacy digestion; only new operations expose the standard flag. PHMT#6 adoption debt; not an ArgDigest defect.",
+    "source-quality: two import-order failures; ordinary Ruff fixes. source-quality-corrected: task controller omitted PHARMACOPHOREMT_SUITE_ROOT; restored the existing exact SDK without a pin/prefix change. Ten final quality checks pass."
+  ],
+  "resource_policy": {
+    "CPU_affinity": [
+      19
+    ],
+    "threads": 1,
+    "nice": 19,
+    "io": "idle",
+    "DATA_MiB": {
+      "attribution_shard": 768,
+      "other": 512
+    },
+    "CPU_seconds_per_process": 120,
+    "wall_seconds_per_command": 180,
+    "observed_own_group_RSS_stop_bytes": 1073741824,
+    "physical_memory_reserve_fraction": 0.2,
+    "additional_own_envelope_bytes": 1610612736,
+    "Slurm_clients_present": true,
+    "Slurm_allocation": null,
+    "AS_cgroup_memory_swap_task_CPU_aggregate_limits": "not enforced; Git mappings need inherited AS; no task cgroup or reservation",
+    "capacity_not_reserved": true
+  },
+  "full_evidence": {
+    "path": "feature_capture_20261111.json.gz",
+    "compressed_bytes": 204262,
+    "compressed_sha256": "c4ecd81854392e190b82830deca05d3a8c80ebf41ad91d5d40b9abb01b14d148",
+    "uncompressed_bytes": 3028757,
+    "uncompressed_sha256": "3f4b2b6ca692f96eca27e2eeff1beb1d71318f1255355192693946f74765a444"
+  },
+  "limitations": [
+    "Local Linux/Python 3.14 source and exact-owned receiving, not full supported hosted/platform/public delivery (#9/#192/#10/#23).",
+    "Other scientific/support providers retain the current shared/source context; public PUW floor alone does not qualify complete public dependency closure.",
+    "No molecular/source/collection authentication, atomic snapshot or MolSysMT#624 receiving.",
+    "No biological, human or scale qualification; #148/#165 remain stopped.",
+    "Legacy get_features/from_inventory do not expose skip_digestion; existing signatures preserved and broader PHMT#6 remains partial.",
+    "No tag, GitHub Release, public package or hosted docs publication; immutable 0.5.0 unchanged.",
+    "Controlled attribution warnings and the original /dev/null ResourceWarning remain in original output; no warning-free claim."
+  ],
+  "temporary_ownership": {
+    "case": "build/phmt-feature-capture-20261111-6wh0wkhu",
+    "target": "/tmp/phmt-feature-capture-installed-20261111-xe1odybc/installed",
+    "owners": "LMMV/dprada",
+    "retention_review": "2026-11-25",
+    "recovery": "Retained frozen source and owned wheel; controls and complete outputs are in the own evidence archive. Rebuild only in a new owned case if these temporary paths are cleaned."
+  }
+}

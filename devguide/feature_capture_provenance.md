@@ -120,3 +120,15 @@ examples and strict docs. Preserve every first failure and exact context. Source
 evaluation provenance does not complete MolSysMT#624 collections/authentication,
 full hosted/public/platform (#9/#192/#10/#23), biological/human/scale or stopped
 #148/#165 work. No new tag or public package is selected here.
+
+## Received bounded implementation — 2026-11-11 UTC
+
+Source f722b45 and the exact isolated development wheel are
+[received](evidence/feature_capture_20261111.json): 394 selected cases each,
+238 verified payloads/183 source-equal runtime bodies, actual public quantity
+floor and all 175 loaded PHMT modules from the target. All twelve guide-block
+executions and strict full docs pass across source/owned and nm/pm. Original
+failed attempts and resource limits stay retained. #196's bounded scope is
+resolved; the full supported/public, molecular, human/biological/scale and stopped
+workstream limits above remain authoritative. See the [0.6.0 scope review](release_0_6_0_scope_review.md)
+for the next candidate-preparation action.
