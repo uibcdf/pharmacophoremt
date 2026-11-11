@@ -1,0 +1,87 @@
+{
+  "schema": "pharmacophoremt.source-050-closeout@1",
+  "recorded_at_utc": "2026-11-11T03:16:18.088310+00:00",
+  "owner_issue": 95,
+  "tag_source": "2bff5dcf454bc5230f473237a49939215a60aab2",
+  "tag": "0.5.0",
+  "scope": "Post-tag documentation, immutable evidence and reporting inventory only; no production/scientific code, source pin, workflow or shared environment change.",
+  "central_notice": "https://github.com/uibcdf/molsyssuite/issues/182",
+  "local_checks": [
+    {
+      "name": "indexes-generate",
+      "exit_code": 0,
+      "output": "wrote devguide/pending_proposals/README.md\n"
+    },
+    {
+      "name": "ruff",
+      "exit_code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "exit_code": 0,
+      "output": "496 files already formatted\n"
+    },
+    {
+      "name": "indexes",
+      "exit_code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "exit_code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.301s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "exit_code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 4.167s\n\nOK\n"
+    },
+    {
+      "name": "whitespace",
+      "exit_code": 0,
+      "output": ""
+    }
+  ],
+  "strict_docs": {
+    "exit_code": 0,
+    "warning_as_error": true,
+    "builder": "html",
+    "jobs": 1,
+    "notebook_execution": "off",
+    "runtime_context": "Private installed 0.5.0 wheel from the tag source; neither shared prefix installation nor public artifact.",
+    "reported_version": "0.5.0",
+    "optional_provider_diagnostics": "Existing optional beartype absence messages remain visible; no dependency was installed or policy altered.",
+    "raw_log": {
+      "bytes": 4059,
+      "sha256": "cff16beb3cb0f7ba20256a6e5c230eedebc6a5de7aad7da936175dd397ddc539"
+    }
+  },
+  "resource_controls": {
+    "cpu_affinity_count": 1,
+    "backend_threads": 1,
+    "nice": 19,
+    "io_priority": "idle",
+    "DATA_per_process_bytes": 536870912,
+    "own_group_RSS_monitor_limit_bytes": 1073741824,
+    "physical_reserve_fraction": 0.2,
+    "PSI_and_swap_observed": true,
+    "aggregate_cgroup_enforced": false,
+    "AS_limit": "Inherited unlimited; DATA and observed own-group RSS used.",
+    "scheduler": "Clients present; no active allocation. Small direct serial checks/render only.",
+    "new_scientific_run": false
+  },
+  "retention_review": {
+    "owner": "LMMV/dprada; PHMT#95",
+    "review_by": "2026-11-25",
+    "retained": "Owned local source-cut capsule, original CI captures, first failed/control attempts, private wheel/installed readers and canonical-guide proof. Keep until release evidence/notice review; remove only owned material when no longer useful.",
+    "cleanup_failure": false,
+    "shared_environments_or_human_work_removed": false
+  },
+  "remaining": "Later skipped main heads are not the exact-source CI candidate (#9). Full supported/public installed artifacts remain #10/#23-owned; #192/#193 open, not implemented; #148/#165 stopped.",
+  "local_links": {
+    "checked": 527,
+    "missing": 0,
+    "scope": "Existing relative targets in changed Markdown, not external network links or anchors."
+  }
+}

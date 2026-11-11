@@ -22,7 +22,7 @@ use Spanish. Repository/suite instructions retain their authority.
 | Propose or study a pharmacophore tool | [Tool registry guidance](pharmacophore_tools_registry.md), [#128 proposal](pending_proposals/study_pharmacophore_tools.md), [comparative survey](pharmacophore_library_workflow_survey.md) |
 | Design the library workflow and public API | [Architecture proposal](public_library_architecture.md), [worked native contracts](public_library_contract_examples.md), [#108 scope](pending_proposals/qualify_public_library_workflow.md) |
 | Understand the audit/backlog | [Audit](audit_20261104.md), [review addendum](audit_20261104_review.md), active issue indexes below |
-| Prepare an intermediate release | [#95 readiness](release_0_5_0_readiness.md), [publication controls](../devtools/conda-build/README.md), #9/#10/#23 |
+| Review the 0.5.0 tag / prepare another milestone | [Source-cut receipt](release_0_5_0_source_cut.md), [historical #95 readiness](release_0_5_0_readiness.md), [publication controls](../devtools/conda-build/README.md), #9/#10/#23 |
 | Update user docs | [Documentation contributor guide](../docs/README.md), [cookbook](../docs/content/cookbook/index.md), [validation collection](../docs/content/validation/index.md) |
 | Recover why a decision changed | [Checkpoint history](checkpoint_history_20261106.md), [roadmap history](roadmap_history_20261106.md), owning issue and Git history |
 
@@ -34,7 +34,10 @@ contracts, issue state and original receipts prove narrower details. Dated old
 controls retain their exact source/provider/native identities. A correct cache,
 geometry, archive or build is not biological validation or public delivery.
 
-Actual release plan/latest Release is0.4.0; proposed0.5 is not frozen. Both #103
+The immutable source tag is now 0.5.0; its [delivery receipt](release_0_5_0_source_cut.md)
+keeps exact-source qualification distinct from package publication. Latest GitHub
+Release/public package remains 0.4.0; the prospective 0.5.0 package plan is staged
+and unqualified. Development proceeds toward 0.6.0 under #193/#192. Both #103
 biological studies remain unfinished. Deliberate destination resumption now
 [receives the published BRD4 capacity plan](receptor_study2_label_capacity_receiving.md):
 AID1805333 stops with32 eligible weak SIDs against50 required. No receptor/model/

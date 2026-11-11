@@ -5,6 +5,46 @@ Owners LMMV/dprada; decision received 2026-11-11 UTC;
 This is the current release decision. Earlier 0.5.0 reviews retain their dated
 scope and pending statements; they do not describe this later source candidate.
 
+## Delivered source checkpoint — 2026-11-11 UTC
+
+Annotated [tag 0.5.0](https://github.com/uibcdf/pharmacophoremt/tree/0.5.0) now
+identifies tested source `2bff5dcf454bc5230f473237a49939215a60aab2`; annotated
+object `46cfa9abf3aaecf930ff5bd57ea4d2c51d69eddb` is verified remotely. The
+[immutable qualification receipt](evidence/release_050_candidate_qualification_20261111.json)
+is bound by SHA-256 in its annotation. Its pre-tag limits remain historical;
+the [delivery receipt](evidence/release_050_tag_delivery_20261111.json) receives
+the actual tag and subsequent conformance without rewriting that receipt.
+
+| Exact-source gate | Received result |
+| --- | --- |
+| [Full source 42943148415](https://github.com/uibcdf/pharmacophoremt/actions/runs/42943148415) | All eight Linux x86_64/macOS arm64 × Python 3.11–3.14 cells: 3,088 passed each, zero skipped scientific cases, 115 exact unique coverage paths each. The same suite repeats across cells. |
+| Reporting governance | 3 reporting, 18 archive, 8 route/recovery and 161 administrative controls. Optional skipped-backlog probe deliberately disabled. |
+| [Source conformance](https://github.com/uibcdf/pharmacophoremt/actions/runs/42943155481) / [publication controls](https://github.com/uibcdf/pharmacophoremt/actions/runs/42943162141) | Both pass at that exact source; reviewed policy/SDK pins unchanged. |
+| [Actual tag conformance 42950847682](https://github.com/uibcdf/pharmacophoremt/actions/runs/42950847682) | Passed at the actual 0.5.0 ref; one explicit dispatch received after no automatic run was observed. |
+
+The [Linux 3.13 XML](evidence/release_050_ci_linux313_20261111_coverage.xml.gz)
+retains the timestamp-stripped printed report; it is not an independent runner-file
+checksum. Warnings remain recorded: Python 3.11 has 46 per cell; 3.12–3.14 have
+63, including 17 threaded-parent fork deprecations tracked under
+[#192](pending_proposals/interruption_process_isolation.md). No deadlock or
+scientific failure occurred in the completed cells.
+
+A private tagged wheel receives canonical 0.5.0, 221 exact installed payloads,
+166 source-equal runtime bodies, cold original-byte reading, CLI and strict full
+docs. Source CI retains its pre-tag `0.4.0+232.g2bff5dc` identity. These local
+installed checks are not the full supported public-artifact matrix. No GitHub
+Release exists; no package/docs publisher was invoked. The required suite notice
+is [MolSysSuite#182](https://github.com/uibcdf/molsyssuite/issues/182).
+
+The later main closeout contains documentation/evidence/reporting only and stays
+distinct from the tested tag; #9 retains exact-head coverage for later skipped
+commits. Next define the [#193 reconstruction contract](pending_proposals/native_feature_reconstruction.md)
+for 0.6.0, with #192 as an independent test-isolation improvement. #95 remains the
+intermediate-milestone umbrella; only its 0.5.0 source-cut event is completed.
+The [closeout receipt](evidence/release_050_closeout_20261111.json) receives the
+later documentation/reporting checks without extending the tag's source result.
+The delivery rules below retain the reviewed pre-tag contract.
+
 ## Delivery and candidate
 
 Deliver one immutable annotated Git tag named exactly `0.5.0` after the required

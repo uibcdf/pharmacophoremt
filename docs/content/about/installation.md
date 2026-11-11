@@ -39,8 +39,9 @@ has not been qualified.
 
 ## 0.5.0 source checkpoint
 
-The [0.5.0 scope](release_notes.md) is a source-only consolidation, with exact
-candidate/tag status in [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
+The [0.5.0 scope](release_notes.md) is delivered as a
+[source-only tag](https://github.com/uibcdf/pharmacophoremt/tree/0.5.0), with exact
+qualification in [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
 It supplies no new Conda/PyPI artifact or ordinary public-installation claim.
 The public command above deliberately retains the qualified 0.4.0 version.
 Use a reviewed controlled dependency environment for development source.

@@ -2,19 +2,22 @@
 
 ## 0.5.0 source-only consolidation — #95 (2026-11-11 UTC)
 
-The maintainer selected the implemented scope for a 0.5.0 source tag after its
-required exact-candidate source checks; no GitHub Release or package/docs
-publication. The [source-cut contract](release_0_5_0_source_cut.md) and
-[static review](evidence/release_050_source_review_20261111.json) own the scope,
-migration and gate decision. #190 corrects the feature reader missing from
-coverage: two scope/XML guards fail before correction and all four route/XML
-guards pass afterward. Historical evidence keeps its original producers.
+Delivered annotated source tag **0.5.0** at `2bff5dcf454bc5230f473237a49939215a60aab2`.
+The [source-cut contract](release_0_5_0_source_cut.md),
+[qualification](evidence/release_050_candidate_qualification_20261111.json) and
+[delivery](evidence/release_050_tag_delivery_20261111.json) receive all eight
+source cells (3,088 passes/zero scientific skips/115 coverage paths each), exact
+source and tag conformance, and the private canonical-version probe. The suite
+notice is [MolSysSuite#182](https://github.com/uibcdf/molsyssuite/issues/182).
+No GitHub Release or package/docs publication; later evidence-only main commits
+remain distinct from the tested tag. Historical producers/receipts stay original.
 
-Next freeze the preparation commit, receive complete hosted source/conformance/
-publication-governance evidence and verify canonical tag metadata before tagging.
-New native feature reconstruction/writers and broader capability work move to
-0.6.0. Full installed/public delivery remains #10/#23-owned; scientific/human/
-scale gates and stopped #148/#165 retain their separate scope.
+Next, for **0.6.0**, [#193](pending_proposals/native_feature_reconstruction.md)
+first fixes accepted formats, generation, quantities, lifetime and attribution
+before implementing native reconstruction. Public writers/recovery are a later
+slice; [#192](pending_proposals/interruption_process_isolation.md) separately
+owns interruption-test isolation. Full installed/public delivery remains
+#10/#23-owned; biological/human/scale gates and stopped #148/#165 retain their scope.
 
 
 ## Read-only feature archive implementation — #189 (2026-11-11 UTC)

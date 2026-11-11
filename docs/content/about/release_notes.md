@@ -2,10 +2,13 @@
 
 ## 0.5.0 — source-only consolidation
 
-This cut records the implemented development scope. Delivery is an immutable
-source tag after exact-candidate validation; it includes no GitHub Release,
-Conda/PyPI package or hosted-documentation publication. Candidate status and the
-reviewed gate decision are tracked in [#95](https://github.com/uibcdf/pharmacophoremt/issues/95)
+Delivered 2026-11-11 as immutable [source tag 0.5.0](https://github.com/uibcdf/pharmacophoremt/tree/0.5.0)
+at `2bff5dcf454bc5230f473237a49939215a60aab2`. All eight controlled Linux/macOS
+arm64 × Python 3.11–3.14 source cells pass 3,088 cases each, with zero skipped
+scientific cases and 115 qualified coverage paths. Source and tag conformance
+also pass. This cut includes no GitHub Release, Conda/PyPI package or hosted-
+documentation publication. Exact evidence and the reviewed decision are tracked
+in [#95](https://github.com/uibcdf/pharmacophoremt/issues/95)
 and the [source-cut contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/release_0_5_0_source_cut.md).
 The [installation guide](installation.md) still describes the independently
 qualified public 0.4.0 package. Further feature development continues toward 0.6.0.

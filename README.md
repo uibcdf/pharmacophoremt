@@ -14,7 +14,8 @@ certify a full matrix or scientific correctness. See the
 [namespace contract](devguide/coverage_xml_identity.md) and
 [0.5.0 source-cut qualification](devguide/release_0_5_0_source_cut.md).
 
-The **0.5.0 source cut** consolidates the implemented development APIs. Its
+The **[0.5.0 source tag](https://github.com/uibcdf/pharmacophoremt/tree/0.5.0)**,
+delivered 2026-11-11, consolidates the implemented development APIs. Its
 [scope and qualification](devguide/release_0_5_0_source_cut.md) distinguish the
 source tag from package delivery. It adds no public 0.5.0 Conda/PyPI artifact;
 0.6.0 is the next development series.

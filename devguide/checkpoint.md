@@ -9,35 +9,43 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-The maintainer selected **0.5.0 as a source-only consolidation**, then development
-against 0.6.0. The [source-cut decision](release_0_5_0_source_cut.md) owns included
-APIs, migration, required exact-source gates and separate package status. No
-GitHub Release, package or hosted documentation publication is requested.
+**Source tag 0.5.0 is delivered** at immutable
+`2bff5dcf454bc5230f473237a49939215a60aab2`. The
+[source-cut contract](release_0_5_0_source_cut.md) owns its scope/migration, the
+[qualification receipt](evidence/release_050_candidate_qualification_20261111.json)
+receives all eight full Linux/macOS arm64 × Python 3.11–3.14 cells with 3,088
+passes each, zero skipped scientific cases and 115 qualified coverage paths.
+Reporting 3, archives 18, route/recovery 8 and administrative 161 also pass.
+Exact source conformance/publication controls and actual tag conformance pass;
+the [delivery receipt](evidence/release_050_tag_delivery_20261111.json) verifies
+the remote annotated object and absent Release/publisher. The suite notice is
+[MolSysSuite#182](https://github.com/uibcdf/molsyssuite/issues/182).
 
-The [static review](evidence/release_050_source_review_20261111.json) starts at
-5fba1c8, 231 commits after 0.4.0, with 76 changed runtime Python paths and eight
-changed existing declared argument signatures in its explicit scope. This is
-review evidence, not a complete public-API inventory or executed qualification.
-[#190](archive/feature_archive_coverage.md) fixes missing feature-reader coverage;
-two scope/XML guards fail before and all four route/XML guards pass afterward.
-The prospective package plan names 0.5.0 but remains staged/unqualified.
-[#191](archive/preloaded_pint_bootstrap.md) preserves a preloaded Pint registry/
-cache while initializing only an absent policy; one corrected original-code
-failure becomes three real fresh-process passes. The
-[preparation receipt](evidence/release_050_preparation_20261111.json) retains the
-first control correction, seven canonical-guide checks and the isolated tool-owned
-PyUnitWizard guide synchronization. No provider/prefix/minimum change.
+Private tagged 0.5.0 installed cold reader/CLI/docs and 221-payload/166-runtime-body
+checks preserve the distinction from full supported package delivery. No GitHub
+Release, Conda/PyPI upload/promotion or hosted docs publication occurred. The
+prospective package plan remains staged/unqualified; public 0.4.0 stays original.
+The later main closeout changes only evidence/docs/reporting and is not the
+exact tested tag. #9 retains later skipped-head debt. #190/#191 red/green controls,
+static scope review and canonical guide delivery retain their
+[preparation receipt](evidence/release_050_preparation_20261111.json).
+The [closeout receipt](evidence/release_050_closeout_20261111.json) receives
+Ruff/format/index checks, 3 reporting/18 archive controls and strict full docs
+against the private installed 0.5.0, with notebook execution off. Full science
+was not rerun for this documentation/reporting change.
 
-Next finish local preparation, commit/freeze one candidate and receive its complete
-source/conformance/publication-governance workflows, actual counts/coverage and
-canonical version probe. Tag only that tested source and deliver the suite notice.
-Do not add new capabilities while qualifying this cut. Package/public/platform
-artifact gates remain #10/#23-owned. MolSysMT#624 remains unreceived;
-QuantityRecord provisional; #148/#165 stopped. After the tag, native feature
-reconstruction with accepted formats/generation/quantity checks begins the 0.6.0
-workstream; public writers/recovery and human receiving remain independent.
+**Next concrete action:** define the accepted original native payload profile and
+format/admission/lifetime contract under
+[#193](pending_proposals/native_feature_reconstruction.md), before decoder code
+for 0.6.0. Require expected generation, fresh public quantity validation, literal
+keys/global ordinals, full inventories and original attribution without new
+extraction credit. [#192](pending_proposals/interruption_process_isolation.md)
+separately owns the recorded threaded-parent fork warnings. Neither is implemented
+by this closeout. Public writers/recovery and human receiving stay separate.
+Package/public/platform gates remain #10/#23-owned; MolSysMT#624 unreceived;
+QuantityRecord provisional; #148/#165 stopped.
 
-The last implemented runtime boundary remains
+The last feature API boundary remains
 [#189 read-only feature archives](feature_archive_format.md), with its
 [98 source/98 installed control receipt](evidence/feature_asset_view_20261111.json),
 exact owned wheel, scientifically cold readers, original reference/no-new-credit
@@ -93,7 +101,7 @@ old captures and first-attempt records remain unchanged.
 | --- | --- |
 | Public chemical libraries | [#108 workflow](pending_proposals/qualify_public_library_workflow.md) and [Discussions registry](public_library_registry.md); bounded PubChem3D evidence does not qualify a general connector or molecular collection. MolSysMT#624 owns collection/lifetime support. |
 | Retrospective/receptor science | Keep #103/#66/#106 input/admission, preparation and interpretation limits. Analytical proposal equality is not biological prediction or binding acceptance. Follow the [roadmap](roadmap.md). |
-| Source and installed/public delivery | Previously accepted full source af408e7 /42656135375 retains its [terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json). Later routine skipped heads keep exact-head debt under #9; full supported installed/public/platform/release qualification stays #23-owned. Local selected/owned-context evidence does not clear those gates. |
+| Source and installed/public delivery | Source tag 0.5.0 at 2bff5dc /42943148415 has its [full qualification](evidence/release_050_candidate_qualification_20261111.json). Earlier af408e7 /42656135375 retains its [historical terminal receipt](evidence/numerical_reader_ci_terminal_20261109.json). Later routine skipped heads keep #9 debt; full supported installed/public/platform qualification stays #10/#23-owned. |
 | Performance and execution | Finite #184 costs leave real persistence, process/OS-cold behavior, native memory, representative scale and crossover unqualified. #148/#165 remain stopped under their recorded resource limitations. |
 | Mature usable 0.x | Guided/expert parity, representative human receiving and coherent exact-candidate delivery remain separate from source prototypes. Follow milestones5–7 in the accepted plan. |
 

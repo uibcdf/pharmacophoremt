@@ -6,8 +6,11 @@ The [0.5.0 source-cut decision](release_0_5_0_source_cut.md) supersedes the curr
 planning status, without changing the historical observations below. The maintainer
 selected a source tag after exact-candidate checks, with no GitHub Release or
 package/docs publication, then development toward 0.6.0. The prospective package
-plan names 0.5.0 but remains staged and unqualified. Required source checks are
-still pending until their exact candidate receipts are received under #95/#9.
+plan names 0.5.0 but remains staged and unqualified. The source tag is now
+delivered at 2bff5dc: [full source qualification](evidence/release_050_candidate_qualification_20261111.json)
+and [actual tag delivery](evidence/release_050_tag_delivery_20261111.json) receive
+the completed gates under #95/#9. Historical pending statements below retain
+their original dates; they do not reopen the delivered source-only event.
 
 
 ## Later recoverable-run and independent-reader API — 2026-11-07

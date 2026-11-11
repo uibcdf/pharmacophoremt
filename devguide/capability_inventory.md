@@ -15,6 +15,12 @@ identified here. Availability never implies experimental predictive accuracy.
 Historical receipts retain their original revisions/environments; this review
 executes only the selected dispatcher/compatibility controls.
 
+The later [0.5.0 source cut](release_0_5_0_source_cut.md) qualifies the complete
+controlled source suite at 2bff5dc (eight cells, 3,088 passes each), without a
+new public package or a biological prediction claim. Later main commits and
+the next [0.6.0 reconstruction proposal](pending_proposals/native_feature_reconstruction.md)
+retain separate identities and qualification.
+
 ## Modeling routes
 
 The package-level `pharmacophoremt.model` is a facade. Method names below are

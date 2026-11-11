@@ -1,0 +1,83 @@
+{
+  "schema": "pharmacophoremt.source-050-tag-delivery@1",
+  "recorded_at_utc": "2026-11-11T03:10:35.507251+00:00",
+  "owner_issue": 95,
+  "version": "0.5.0",
+  "source": "2bff5dcf454bc5230f473237a49939215a60aab2",
+  "route": "source tag only",
+  "tag": {
+    "annotated": true,
+    "object": "46cfa9abf3aaecf930ff5bd57ea4d2c51d69eddb",
+    "remote_target": "2bff5dcf454bc5230f473237a49939215a60aab2",
+    "verified": true,
+    "annotation": {
+      "bytes": 1304,
+      "sha256": "8cb40a54d0c83f701d1d1c814049ce157aa8d58f8852bff1ae072237ef87ed35"
+    },
+    "url": "https://github.com/uibcdf/pharmacophoremt/tree/0.5.0"
+  },
+  "qualification": {
+    "path": "release_050_candidate_qualification_20261111.json",
+    "bytes": 35221,
+    "sha256": "bf515071dbb048dae3ed6f6ec77cc9900de1a6e505f9524988cf565058cabd31"
+  },
+  "pre_tag_decision_issue_comment": 6785803151,
+  "tag_policy": {
+    "id": 42950847682,
+    "head_sha": "2bff5dcf454bc5230f473237a49939215a60aab2",
+    "head_branch": "0.5.0",
+    "event": "workflow_dispatch",
+    "attempt": 1,
+    "status": "completed",
+    "conclusion": "success",
+    "url": "https://github.com/uibcdf/pharmacophoremt/actions/runs/42950847682",
+    "required_steps": [
+      {
+        "number": 5,
+        "name": "Check repository conformance",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 7,
+        "name": "Check Python lint and imports",
+        "status": "completed",
+        "conclusion": "success"
+      },
+      {
+        "number": 8,
+        "name": "Check Python formatting",
+        "status": "completed",
+        "conclusion": "success"
+      }
+    ],
+    "capture_manifest": {
+      "bytes": 1657,
+      "sha256": "047ae8436b2b776a5266075d590523338bdc1fc09562f51b36487f43b60b4f77"
+    }
+  },
+  "github_release": {
+    "created_by_this_work": false,
+    "fresh_lookup": "HTTP404; absent"
+  },
+  "package_or_docs_publication": {
+    "publisher_invoked": false,
+    "no_publisher_run_at_this_source": true,
+    "registry_writes": false,
+    "public_artifact_qualified": false
+  },
+  "next_series": "0.6.0",
+  "next_owned_work": [
+    "PHMT#193 native reconstruction format/admission contract",
+    "PHMT#192 interruption-test isolation"
+  ],
+  "separate_pending_gates": [
+    "PHMT#10/#23 full public/installed artifact delivery",
+    "MolSysMT#624 molecular collection source mappings",
+    "QuantityRecord remains provisional",
+    "Broader biological, human, index/cold/native/scale receiving"
+  ],
+  "stopped148165_retried": false,
+  "shared_prefix_or_live_provider_changed": false,
+  "publication_review": "Reviewed scalar identities/native facts only. Raw logs, captures, private paths, local wheel/provider bodies and machine observations remain local."
+}
