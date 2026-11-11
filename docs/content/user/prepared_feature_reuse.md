@@ -96,5 +96,6 @@ evidence, with human usability and the public store interface still pending.
 
 The subsequent [public API proposal](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/feature_asset_public_api.md)
 separates lightweight saved-feature inspection from explicit scientific reuse.
-Its proposed names are not available yet; existing supported APIs and stored-run
-formats keep their current contracts.
+The read-only [feature archive view](feature_archives.md) is now implemented in
+development source; native reconstruction and public writers remain later slices.
+Existing scientific APIs and stored-run formats keep their current contracts.

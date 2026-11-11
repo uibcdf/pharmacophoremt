@@ -1,5 +1,13 @@
 # Decisions and active workstreams
 
+## Read-only feature archive implementation — #189 (2026-11-11 UTC)
+
+The [source API/format](feature_archive_format.md) now has98selected source guards
+and a [source receipt](evidence/feature_asset_view_source_20261111.json). Original
+opaque bytes and declared metadata stay separate from quantity/source/query
+validation. Explicit study export retains old evidence. Owned-wheel, cold reader
+and final documentation receiving are the next gates; no public delivery claim.
+
 ## Minimal public feature-asset API proposal — #188 (2026-11-11 UTC)
 
 The [proposed surface](feature_asset_public_api.md) separates a cold same-

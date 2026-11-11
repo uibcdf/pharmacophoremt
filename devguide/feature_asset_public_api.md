@@ -3,9 +3,12 @@
 Owners LMMV/dprada; 2026-11-11 UTC;
 [#188](https://github.com/uibcdf/pharmacophoremt/issues/188), following
 [the guided/expert exercise](feature_store_workflow.md).
-All names/signatures below are **proposed, not importable public APIs**. This
-increment qualifies design and unshipped argument/diagnostic admission. It does
-not publish a package, format, writer or production search index.
+At#188, all names/signatures below were proposed, not importable APIs. That
+original design/admission receipt remains unchanged. The later
+[#189 read-only view](feature_archive_format.md) implements the reader portion
+in source under its own declared-metadata/opaque-original format. Native
+reconstruction and public writer/recovery signatures below remain proposals;
+no public channel/platform/release or production index is implied.
 
 ## Decision and existing owners
 

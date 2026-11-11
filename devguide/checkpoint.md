@@ -9,33 +9,35 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-[#188 minimal public API proposal](feature_asset_public_api.md) now defines the
-cold same-distribution feature-reader boundary, explicit native reuse and later
-writer/recovery slice. Generation, selection/page and close ownership remain
-separate from query/source/run admission. Proposed names are not importable;
-no public namespace, stable format or supported artifact is introduced.
+[#189 read-only feature archive](feature_archive_format.md) now implements the
+same-distribution FeatureAssetView source API: open/pin/summary/page/original
+bytes/declared-coverage inspection/close. Public metadata integrity is separate
+from interpretation of opaque original payloads, quantity/geometry validation,
+source authentication and query admission. Raw study stores refuse; explicit
+unshipped export creates a distinct archive while retaining old evidence.
 
-The [receipt/archive](evidence/feature_asset_api_20261111.json) receives a16-file
-source audit and76guards per source/exact-owned218 context (44newadmission/
-32workflow regression). Real ArgDigest contracts and SMonitor catalog errors
-are received with two cold readers,125public support payloads, six actual error
-categories, preserved application policy and no rejected input captured.
-Admitted nm/pm native reuse preserves original maps/producers and creates no new
-Ackredit credit. Initial69passes/four failures were incorrect control assumptions
-about native TypeError variants and internal bypass; their originals remain.
-Neither the admission implementation, providers nor scientific runtime changed
-to accommodate those corrections. Runtime remains5515e93/owned218; no new feature
-generation, matching, molecular operation, benchmark or environment update.
+The [source receipt](evidence/feature_asset_view_source_20261111.json) records98
+selected source guards (54reader/44admission), preserved eleven original payloads
+and producer metadata, literal global positions, corrupt/unsupported/partial
+refusal, zero-count pages, close/relocation and real payload/aggregate bounds.
+The original reserved pytest-parameter collection refusal remains retained; no
+reader/provider behavior changed to correct it. A downloadable analytical archive
+is generated and retained, without activity/biological claims.
 
-Next implement and qualify the proposed read-only FeatureAssetView under a
-separately owned public format/profile contract, retaining study artifacts and
-rejecting unsupported schemas explicitly. Public scientific reconstruction,
-writer/recovery, packaging/platform gates and representative human receiving
-stay independent. MolSysMT#624 is open/unreceived; QuantityRecord provisional;
-#148/#165 remain stopped and #9/#23 retain exact-head/public/release gates.
+Next build one owned wheel from this committed source, verify every delivered
+payload including the new namespace, and receive installed/cold/import-policy,
+no-new-credit and strict documentation gates. This is a source implementation
+checkpoint, not completed installed/public/platform/release qualification.
+Scientific runtime/provider bodies remain unchanged. MolSysMT#624 unreceived;
+QuantityRecord provisional; #148/#165 stopped; full exact-head/public gates
+remain #9/#23-owned. No environment/public release or remote CI is requested.
 
 ## Received foundations and their boundaries
 
+- [#188 API proposal](feature_asset_public_api.md) and its
+  [receipt](evidence/feature_asset_api_20261111.json) retain the16-file source audit,
+  76admission/workflow controls and real cold provider/capture receiving. Proposed
+  native reconstruction and public writer/recovery remain separate later slices.
 - [#187 guided/expert workflow](feature_store_workflow.md) and its
   [receipt](evidence/feature_store_workflow_20261110.json) retain85controls,
   twelve exercise tasks per context and real interrupted-publication recovery.

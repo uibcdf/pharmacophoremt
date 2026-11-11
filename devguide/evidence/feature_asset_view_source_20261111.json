@@ -1,0 +1,192 @@
+{
+  "schema": "pharmacophoremt.feature-view-source-receiving@1",
+  "issue": 189,
+  "source_parent": "12460356106cf92efe38df82c4283bdbeae69dca",
+  "state": "source API implemented; owned-wheel receiving pending",
+  "selected_source_guards": 98,
+  "reader_guards": 54,
+  "admission_regressions": 44,
+  "original_test_xml_identity": {
+    "bytes": 15742,
+    "sha256": "4bc92d833761816e581d8c905f03dc8d00c57fd566941f64c88837e96f41f3ff"
+  },
+  "test_names": [
+    "test_public_reader_preserves_originals_producers_and_does_not_claim_interpretation",
+    "test_page_counts_selected_offsets_and_global_ordinals",
+    "test_known_declared_empty_and_unobserved_family_are_separate",
+    "test_opaque_payload_semantics_are_not_inferred_from_valid_metadata",
+    "test_explicit_incomplete_causes_and_ready_subset[failed]",
+    "test_explicit_incomplete_causes_and_ready_subset[partial]",
+    "test_explicit_incomplete_causes_and_ready_subset[unsupported]",
+    "test_explicit_incomplete_causes_and_ready_subset[unattempted]",
+    "test_generation_pin_relocation_detached_data_and_explicit_reopen",
+    "test_close_is_idempotent_and_only_owned_data_is_dropped",
+    "test_returned_metadata_mutation_does_not_modify_the_view",
+    "test_unknown_literal_keys_refuse_instead_of_becoming_empty[<lambda>0]",
+    "test_unknown_literal_keys_refuse_instead_of_becoming_empty[<lambda>1]",
+    "test_bad_generation_refuses_before_storage[options0]",
+    "test_bad_generation_refuses_before_storage[options1]",
+    "test_bad_generation_refuses_before_storage[options2]",
+    "test_argument_domains_are_closed[<lambda>0]",
+    "test_argument_domains_are_closed[<lambda>1]",
+    "test_argument_domains_are_closed[<lambda>2]",
+    "test_argument_domains_are_closed[<lambda>3]",
+    "test_argument_domains_are_closed[<lambda>4]",
+    "test_argument_domains_are_closed[<lambda>5]",
+    "test_argument_domains_are_closed[<lambda>6]",
+    "test_argument_domains_are_closed[<lambda>7]",
+    "test_argument_domains_are_closed[<lambda>8]",
+    "test_argument_domains_are_closed[<lambda>9]",
+    "test_native_type_errors_and_internal_bypass_are_not_wrapped",
+    "test_missing_open_never_creates_and_direct_study_open_never_migrates",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[schema]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[profile]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[extra]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[duplicate]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[parent]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[coverage]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[count_bool]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[producer]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[unused]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[missing]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[payload]",
+    "test_self_consistent_generation_hash_does_not_bypass_metadata_checks[noncanonical]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[marker]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[pointer]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[size]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[checksum]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[truncate]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[nan]",
+    "test_control_corruption_refuses_and_already_open_view_stays_pinned[infinity]",
+    "test_nonregular_files_refuse_without_blocking[fifo]",
+    "test_nonregular_files_refuse_without_blocking[symlink]",
+    "test_nonregular_files_refuse_without_blocking[directory]",
+    "test_empty_declared_archive_is_distinct_from_missing_open",
+    "test_document_bound_and_record_bound_refuse",
+    "test_full_payload_bound_and_unique_original_bound",
+    "test_catalog_error_roundtrips_preserve_code_and_message",
+    "test_literal_paths_keys_and_family_order_are_not_confused_with_units",
+    "test_caller_owned_none_semantics_and_explicit_publication_expectation",
+    "test_native_argdigest_call_shape_type_errors_are_not_replaced[<lambda>0]",
+    "test_native_argdigest_call_shape_type_errors_are_not_replaced[<lambda>1]",
+    "test_native_argdigest_call_shape_type_errors_are_not_replaced[<lambda>2]",
+    "test_native_argdigest_call_shape_type_errors_are_not_replaced[<lambda>3]",
+    "test_bad_paths_are_catalogued_without_opening[file]",
+    "test_bad_paths_are_catalogued_without_opening[]",
+    "test_bad_paths_are_catalogued_without_opening[a\\x00b]",
+    "test_bad_paths_are_catalogued_without_opening[0]",
+    "test_bad_paths_are_catalogued_without_opening[None]",
+    "test_reuse_requires_exact_generation_identity[None]",
+    "test_reuse_requires_exact_generation_identity[current]",
+    "test_reuse_requires_exact_generation_identity[AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]",
+    "test_reuse_requires_exact_generation_identity[000000000000000000000000000000000000000000000000000000000000000]",
+    "test_reuse_requires_exact_generation_identity[12]",
+    "test_reuse_requires_exact_generation_identity[True]",
+    "test_family_admission_is_conservative_and_no_query_is_inferred[families0]",
+    "test_family_admission_is_conservative_and_no_query_is_inferred[hb donor]",
+    "test_family_admission_is_conservative_and_no_query_is_inferred[families2]",
+    "test_family_admission_is_conservative_and_no_query_is_inferred[families3]",
+    "test_selection_refuses_ambiguous_or_unbounded_study_inputs[nm]",
+    "test_selection_refuses_ambiguous_or_unbounded_study_inputs[keys1]",
+    "test_selection_refuses_ambiguous_or_unbounded_study_inputs[keys2]",
+    "test_selection_refuses_ambiguous_or_unbounded_study_inputs[keys3]",
+    "test_selection_refuses_ambiguous_or_unbounded_study_inputs[keys4]",
+    "test_page_integers_do_not_accept_booleans_or_coercions[options0]",
+    "test_page_integers_do_not_accept_booleans_or_coercions[options1]",
+    "test_page_integers_do_not_accept_booleans_or_coercions[options2]",
+    "test_page_integers_do_not_accept_booleans_or_coercions[options3]",
+    "test_page_integers_do_not_accept_booleans_or_coercions[options4]",
+    "test_zero_page_is_a_request_without_a_false_empty_corpus_claim",
+    "test_retry_identifiers_are_literal_and_not_new_attempts[]",
+    "test_retry_identifiers_are_literal_and_not_new_attempts[aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa]",
+    "test_retry_identifiers_are_literal_and_not_new_attempts[AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA]",
+    "test_retry_identifiers_are_literal_and_not_new_attempts[1]",
+    "test_poison_input_is_not_iterated_formatted_or_used_as_a_reader",
+    "test_catalog_exception_retains_identity_through_python_roundtrips",
+    "test_admitted_requests_compose_with_unchanged_workflow_and_original_quantity_validation[nm]",
+    "test_admitted_requests_compose_with_unchanged_workflow_and_original_quantity_validation[pm]",
+    "test_public_admission_does_not_expose_internal_skip[True]",
+    "test_public_admission_does_not_expose_internal_skip[False]",
+    "test_public_admission_does_not_expose_internal_skip[1]",
+    "test_plain_request_dict_does_not_replace_owner_validation"
+  ],
+  "new_source_files": {
+    "pharmacophoremt_features/_digestion.py": {
+      "bytes": 2332,
+      "sha256": "7f7ed20123c9aacd28aadac5e735362b97e876d027d8f73fddf7a3d0ca6c9edd"
+    },
+    "pharmacophoremt_features/_storage.py": {
+      "bytes": 2280,
+      "sha256": "4832137cc3889f49f0d75f569e34ea946bd80946e8c6b842cd62524b530178f2"
+    },
+    "pharmacophoremt_features/_diagnostics.py": {
+      "bytes": 2225,
+      "sha256": "eddee0b7c41a1e0559fd1bc29cadb6fb58c260407dddee1f830c1982568d8a45"
+    },
+    "pharmacophoremt_features/_api.py": {
+      "bytes": 8372,
+      "sha256": "8797056597195deafb04dc63c7cbb52860a9c73d8bf5f628d8179baf17254d32"
+    },
+    "pharmacophoremt_features/_smonitor.py": {
+      "bytes": 217,
+      "sha256": "2007cd02a531c24bd7c3bfe0a986e7971b22a132a83056c0c88076c4d3abef18"
+    },
+    "pharmacophoremt_features/_schema.py": {
+      "bytes": 7441,
+      "sha256": "d64fd75153e1de6a9f34fae44fc7ebeb59dec9343111f844949532f6ebc61afc"
+    },
+    "pharmacophoremt_features/__init__.py": {
+      "bytes": 630,
+      "sha256": "e2eb13c89e2621914dab357887dfac558b91865a85fa243426cf6c5f1d008b42"
+    }
+  },
+  "public_example_zip": {
+    "bytes": 37645,
+    "sha256": "bd9d3d75219dd494dedccc8f81a1371f545fc5ffd1d3e6f217a0f3f08afe6839"
+  },
+  "original_payloads_verified": 11,
+  "source_study_unchanged": true,
+  "profile": "declared-classical-inventory@1",
+  "source_generation": "8f62993e9fe0e17d4258ed0f02a0ade1b8f786b3a9272e6d896524ea8e97cd15",
+  "source_fixture_archive": {
+    "CURRENT": {
+      "bytes": 141,
+      "sha256": "3af7d821219b92b9ca168d0edacf121b56c9753e64695615a25e7dc399a2ea6f"
+    },
+    "STORE.json": {
+      "bytes": 89,
+      "sha256": "b49c3d00720e16221fceaa78d97d3a53c80caca2652814b6d8bdbbb938e42c8b"
+    },
+    "generations/8f62993e9fe0e17d4258ed0f02a0ade1b8f786b3a9272e6d896524ea8e97cd15.json": {
+      "bytes": 214066,
+      "sha256": "8f62993e9fe0e17d4258ed0f02a0ade1b8f786b3a9272e6d896524ea8e97cd15"
+    }
+  },
+  "collection_correction": {
+    "original_result": "pytest collection refused the reserved parametrize name request; no feature-view controls ran.",
+    "cause": "The test signature was renamed to action but the formatted parametrize declaration still used request.",
+    "correction": "Rename only the declared test parameter; no reader/provider/runtime code changes.",
+    "original_plan_and_logs_preserved": true
+  },
+  "provider_context_reference": "feature_asset_api_20261111.json; original159 runtime bodies and4594 provider Python files still verified",
+  "native_matching_feature_generation_molecular_operations": 0,
+  "owned_wheel_received": false,
+  "public_platform_release_qualified": false,
+  "resource_scope": {
+    "one_cpu": true,
+    "threads": 1,
+    "DATA_bytes": 536870912,
+    "AS_bytes": 1073741824,
+    "observed_group_RSS_stop_bytes": 536870912,
+    "reserve_fraction": 0.2,
+    "capacity_reserved": false,
+    "kernel_aggregate_enforcement": false
+  },
+  "source_local_checks": {
+    "passed": 7,
+    "original_receipt_identity": {
+      "bytes": 1989,
+      "sha256": "84d01c6528f5f2aa718891a92632fdd1dcec6f0717fb89ebfeac49dcba0104a3"
+    }
+  }
+}
