@@ -1,0 +1,54 @@
+{
+  "schema": "pharmacophoremt.source-060.recovery-receiving-closeout@1",
+  "source": "c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb",
+  "scope": "Documentation and evidence only; no new scientific test execution or source acceptance.",
+  "checks": [
+    {
+      "name": "indexes-generate",
+      "code": 0,
+      "output": ""
+    },
+    {
+      "name": "indexes",
+      "code": 0,
+      "output": "Generated report indexes are current.\n"
+    },
+    {
+      "name": "reporting",
+      "code": 0,
+      "output": "...\n----------------------------------------------------------------------\nRan 3 tests in 1.308s\n\nOK\n"
+    },
+    {
+      "name": "archives",
+      "code": 0,
+      "output": "..................\n----------------------------------------------------------------------\nRan 18 tests in 3.951s\n\nOK\n"
+    },
+    {
+      "name": "ruff",
+      "code": 0,
+      "output": "All checks passed!\n"
+    },
+    {
+      "name": "format",
+      "code": 0,
+      "output": "519 files already formatted\n"
+    },
+    {
+      "name": "whitespace",
+      "code": 0,
+      "output": ""
+    }
+  ],
+  "verified_own_archive_files": 27,
+  "markdown_local_targets": 413,
+  "runtime_tests_devtools_and_workflows_unchanged": true,
+  "immutable_050_source": "2bff5dcf454bc5230f473237a49939215a60aab2",
+  "source_checkpoint_accepted": false,
+  "later_head_not_qualified": true,
+  "original_failed_source_and_receiving_controls_preserved": true,
+  "retention_review": {
+    "owners": "LMMV/dprada",
+    "date": "2026-11-25",
+    "raw_remote_logs_and_geometry_local_only": true
+  }
+}

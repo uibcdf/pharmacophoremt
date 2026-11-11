@@ -14,6 +14,14 @@ prepare the [corrected checkpoint](source_0_6_0_acquisition_recovery.md), not a
 hosted/full acceptance. Original governance inventory/workflow-review failures
 remain retained; #197 stays active until corrected hosted receiving.
 
+The [corrected-source pending receipt](evidence/source_060_recovery_pending_20261111.json)
+now freezes published c5e952c and verifies source43109007084/attempt1,
+policy43109015680 and publication-controls43109024769. Reporting and both control
+workflows pass; eight scientific cells are in progress. The duplicate is absent
+from all native step inventories; complete acquisition/preflight/science/XML
+receiving remains pending. Later documentation commits do not inherit this head's
+execution. Original failed source/job and partial receipts remain unchanged.
+
 Source4766946/run43084105668/attempt1, job130743901579, installs the exact pinned
 MolSysMT source successfully in `Install pinned suite dependencies`. The later
 `Install tested MolSysMT source` step force-reinstalls the identical source on

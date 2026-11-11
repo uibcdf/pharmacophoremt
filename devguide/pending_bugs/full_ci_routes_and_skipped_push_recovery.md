@@ -24,8 +24,14 @@ is unknown; no scientific failure is inferred. [#197](duplicate_ci_molsysmt_acqu
 removes only that step, re-reviews its route digest and preserves installed-context
 verification, source/SDK pins and all science/matrix settings. Nine route controls
 and ten quality checks pass; 3,420 collected cases/127 expected paths are not
-scientific execution. Freeze/receive the [corrected checkpoint](../source_0_6_0_acquisition_recovery.md)
-once per absent exact workflow. Keep old jobs/receipts original and #192 active.
+scientific execution. The [corrected checkpoint](../source_0_6_0_acquisition_recovery.md)
+is now frozen at c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb, with one request per
+absent required workflow. [Receiving](../evidence/source_060_recovery_pending_20261111.json)
+verifies source43109007084/attempt1 (reporting success/eight scientific cells in
+progress), policy43109015680 and publication-controls43109024769 (both success).
+No scientific cell/full source checkpoint is accepted by this metadata receipt.
+Observe the same handles for terminal native counts/warnings/XML. Keep old
+jobs/receipts original, #192/#197 active and later documentation-head debt separate.
 
 ## Later explicit feature controls — #6 (2026-11-11 UTC)
 

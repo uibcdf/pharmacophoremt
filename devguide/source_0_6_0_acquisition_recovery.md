@@ -25,6 +25,48 @@ run discovery must precede one manual request per absent required workflow;
 uncertain requests are observed, never automatically duplicated. Routine commits
 retain [skip ci]; this is deliberate failure recovery, not CI per small edit.
 
+## Frozen requests and initial receiving — 2026-11-11 UTC
+
+The published clean candidate is **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb**.
+Prospective #9 comment6808184699 records its identity before the three requests.
+Each request rechecks local/remote source and all fourteen frozen configuration
+identities, and observes no existing matching exact-head workflow before POST.
+All three requests are accepted once, with `probe_backlog: false` for full CI.
+Independent native discovery verifies these `workflow_dispatch`/attempt1 handles:
+
+| Gate | Run | Initial verified result |
+| --- | --- | --- |
+| Full source | [43109007084](https://github.com/uibcdf/pharmacophoremt/actions/runs/43109007084) | Reporting succeeds; eight scientific jobs are in progress. |
+| Frozen policy | [43109015680](https://github.com/uibcdf/pharmacophoremt/actions/runs/43109015680) | Conformance, lint and formatting execute successfully. |
+| Publication controls | [43109024769](https://github.com/uibcdf/pharmacophoremt/actions/runs/43109024769) | Workflow and no-build recipe/resource controls execute successfully. |
+
+Published GH Run Receptor1.4.0 retains source PENDING/exit3 and both control
+successes/exit0. All captured manifest/member identities verify. The
+[pending receipt](evidence/source_060_recovery_pending_20261111.json) preserves
+the initial snapshots and a subsequent native observation; it qualifies no
+scientific cell and accepts no complete source checkpoint. Actual frozen-source
+collection finds the same 3,420 node IDs as before commit, without executing them.
+
+The [own recovery archive](evidence/source_060_recovery_controls_20261111.json.gz)
+retains 27 control/request/configuration files and reviewed scalar/provenance
+facts. It excludes raw GitHub captures/logs and molecular geometry. A first
+receiving guard mistakenly matched its own scanner literals and refused before
+writing public evidence; the original controller/exit1 and corrected receiving
+remain explicit. No molecular result or scientific assertion changed.
+Draft compressed-identity field names are normalized to the existing archive
+reader contract during review; archived controller/archive bytes stay unchanged.
+The [documentation closeout](evidence/source_060_recovery_receiving_closeout_20261111.json)
+passes seven offline checks, verifies all 27 archived entries and confirms that
+runtime/tests/devtools/workflows and immutable0.5.0 remain unchanged.
+
+Recover in the retained `phmt-060-acquisition-recovery-20261111-v4ulowks` capsule:
+observe the same handles, then capture complete terminal source/control evidence
+and use its archived `qualify_source.py` only after all required runs succeed.
+The qualifier checks all eight cells, native steps/counts/warnings and qualified
+XML, not just receptor color. Raw captures remain local for LMMV/dprada review
+on November25. A failed original/corrected cell stays failed; do not automatically
+redispatch, cancel or rerun. Later receiving-only commits retain their own debt.
+
 ## Required corrected-source evidence
 
 - Full unchanged source command in all eight Linux x86_64/macOS arm64 ×

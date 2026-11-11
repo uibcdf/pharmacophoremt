@@ -12,8 +12,13 @@ Original4766946CI cannot be accepted: macOS/Python3.11 fails a second identical
 MolSysMT clone before scientific tests. [#197's correction](ci_molsysmt_acquisition.md)
 removes only that duplicate, retains pins/SDK/science and mandatory verification,
 and passes nine routes plus ten quality checks. The [corrected checkpoint](source_0_6_0_acquisition_recovery.md)
-expects 3,420 cases/127 qualified paths; collection is not execution. Freeze and
-receive its own exact-source runs. #192 stays active; no new version/publication.
+expects 3,420 cases/127 qualified paths; collection is not execution. Published
+c5e952c now has [its own receiving](evidence/source_060_recovery_pending_20261111.json):
+source43109007084/attempt1 runs eight scientific cells; policy43109015680 and
+publication-controls43109024769 pass, as does reporting. No scientific cell or
+complete source gate is accepted by this metadata receipt. Observe those handles;
+#192/#197 stay active, with no new version/publication. Earlier original-source
+partial receiving below is retained history, not corrected-source evidence.
 
 ## Explicit feature argument controls — #6 (2026-11-11 UTC)
 

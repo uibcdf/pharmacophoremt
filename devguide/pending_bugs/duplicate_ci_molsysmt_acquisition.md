@@ -47,3 +47,14 @@ and 3,420 collected cases/127 expected coverage paths prepare the
 [corrected checkpoint](../source_0_6_0_acquisition_recovery.md). This report stays
 active until corrected-source receiving; collection/local workflow inspection
 does not qualify a supported source/platform/public gate.
+
+## Corrected-source requests received — 2026-11-11 UTC
+
+Correction c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb is published. The
+[pending receipt](../evidence/source_060_recovery_pending_20261111.json) verifies
+source43109007084, policy43109015680 and publication-controls43109024769, each
+attempt1 after one request. Reporting and both control workflows succeed; eight
+scientific cells are in progress. The removed duplicate is absent from all native
+step inventories, but acquisition/preflight/test/coverage success for every cell
+still requires actual terminal receiving. Keep this report and #192 active;
+neither metadata/local controls nor the older failed matrix clear acceptance.

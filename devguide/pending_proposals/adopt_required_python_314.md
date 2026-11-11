@@ -14,6 +14,22 @@ supersedes: []
 
 # Required Python 3.14 adoption
 
+## Corrected source and separate installed gates — 2026-11-11 UTC
+
+Original4766946 cannot be accepted: its required macOS/Python3.11 job fails
+acquisition before scientific execution. The [corrected source contract](../source_0_6_0_acquisition_recovery.md)
+freezes c5e952c with unchanged science/pins and one redundant MolSysMT step removed.
+[Receiving](../evidence/source_060_recovery_pending_20261111.json) verifies
+source43109007084/attempt1 (reporting success/eight scientific jobs in progress),
+policy43109015680 and publication-controls43109024769 (both success). No complete
+source/platform qualification or #192/#197 closure follows from metadata.
+
+The separate [prepared-library feature case](../prepared_library_feature_archive.md)
+receives real original inputs in source/reused-owned7192041 contexts with unchanged
+runtime bodies and public PUW0.28.1. Its sixteen guide blocks/four cold readers
+extend bounded Linux/Python3.14 evidence, not full installed/public qualification.
+No tag/version, public artifact, shared prefix or provider source is changed.
+
 ## Separate source and exact-owned receiving — 2026-11-11 UTC
 
 The [resumed controlled-source receipt](../evidence/source_060_resume_20261111.json)

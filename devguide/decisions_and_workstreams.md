@@ -14,8 +14,13 @@ identical MolSysMT clone is removed under [#197](ci_molsysmt_acquisition.md), wi
 all other workflow structure/pins/SDK/science unchanged and mandatory verification
 retained. Nine route controls/ten quality checks pass; current guide equality and
 3,420 collected cases/127 expected paths prepare a [corrected source checkpoint](source_0_6_0_acquisition_recovery.md).
-Do not accept the older matrix, close#192 or duplicate original jobs. No tag or
-package/public documentation publisher is selected. #148/#165 remain stopped.
+Published c5e952c now has [independent attempt1 receiving](evidence/source_060_recovery_pending_20261111.json):
+source43109007084 has reporting success/eight running scientific cells;
+policy43109015680 and publication-controls43109024769 pass required native steps.
+No corrected scientific cell/full source gate is accepted by this metadata receipt.
+Do not accept the older matrix, close#192/#197 or duplicate original jobs. Later
+documentation heads retain separate debt. No tag or package/public documentation
+publisher is selected. #148/#165 remain stopped.
 
 ## Explicit feature argument controls — #6 (2026-11-11 UTC)
 

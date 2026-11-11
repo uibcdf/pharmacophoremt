@@ -84,3 +84,15 @@ Conformance and publication controls pass their required native steps. Five
 scientific cells remain unreceived; this report stays active. Original source,
 attempts and pending snapshots remain intact. Later7192041's argument controls
 have independent full-source debt and do not alter this process-isolation scope.
+
+## Corrected-source receiving pending — 2026-11-11 UTC
+
+The original4766946 matrix cannot qualify the supported scope: macOS/Python3.11
+fails a redundant second MolSysMT acquisition before tests. Its partial qualified
+cells and actual warning observations remain original. The #197 route correction
+is published at c5e952c with the same interruption assertions. Its
+[independent receiving](../evidence/source_060_recovery_pending_20261111.json)
+verifies source43109007084/attempt1: eight science cells in progress, reporting
+success and both separate control workflows successful. This report stays active
+until actual terminal supported-minor/platform counts/warnings/coverage receiving;
+neither collection nor metadata success establishes interruption-test acceptance.

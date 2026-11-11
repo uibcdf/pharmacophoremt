@@ -6,7 +6,7 @@ and [capability inventory](capability_inventory.md). The prior checkpoint is
 preserved unchanged in [dated history](checkpoint_history_20261111_before_acquisition_recovery.md);
 earlier November 7/10/11 histories and original run identities remain intact.
 
-## Original source checkpoint rejected; acquisition correction prepared
+## Original source rejected; corrected validation in progress
 
 Frozen **47669463e8047f33c77537c5d7e010199cb411fd**, source43084105668/attempt1,
 has a required macOS/Python3.11 acquisition failure. Its first reviewed install
@@ -30,12 +30,24 @@ zero scientific execution; expected qualified coverage remains **127 paths**.
 Current canonical guide bytes are independently equal, separate from the unchanged
 policy-v1.5.4 caller. This does not accept a corrected hosted/full source gate.
 
-**Next concrete action:** finish/publish a single corrected source freeze under
-[the recovery contract](source_0_6_0_acquisition_recovery.md), verify exact remote
-identity and absence of existing same-head runs, then request only its absent
-source/conformance/publication-control workflows once. Receive actual terminal
-native steps/counts/warnings/XML before acceptance or #192/#197 closure. Preserve
-the old failed source and all original attempts; never relabel a later head.
+Corrected **c5e952cd3a1fe5b452be6fccbf85d2fb64c3f1eb** is published. Its
+[receiving receipt](evidence/source_060_recovery_pending_20261111.json) verifies
+one request per absent workflow and attempt1 identities: source43109007084,
+policy43109015680 and publication-controls43109024769. Policy/lint/format,
+no-build publication controls and reporting pass their required native steps.
+The eight scientific cells are in progress in the retained observation; none
+is qualified by this metadata receipt. Frozen collection still finds the same
+3,420 node IDs. The failed original now has six native-success scientific jobs,
+one acquisition failure and one running; only its earlier three cells have
+qualified XML receiving. Its failed matrix remains rejected.
+
+**Next concrete action:** observe these same handles under
+[the recovery contract](source_0_6_0_acquisition_recovery.md); receive actual
+terminal native steps/counts/warnings/XML before acceptance or #192/#197 closure.
+Own recovery controls and resource/request records are archived; raw remote logs
+stay local, with LMMV/dprada retention review on November25. Preserve original
+attempts and failed receiving controls; never relabel a later documentation head
+or duplicate a pending/uncertain request.
 
 ## Prepared-library feature lifecycle received — #108
 
