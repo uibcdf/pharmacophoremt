@@ -97,6 +97,26 @@ CODES = {
         "message": "The requested new archive destination already exists.",
         "hint": "Choose a new path or explicitly open an existing supported writer archive.",
     },
+    "PHMT-E330": {
+        "message": "The native feature payload has invalid structure, provenance or atom maps.",
+        "hint": "Preserve the original input and review the declared source axis, complete inventory and finite metadata.",
+    },
+    "PHMT-E331": {
+        "message": "This native feature payload format or scientific profile is unsupported.",
+        "hint": "Select the documented native profile explicitly; historical snapshots and modeled sites have separate readers.",
+    },
+    "PHMT-E332": {
+        "message": "Native feature quantities or geometry failed payload validation.",
+        "hint": "Inspect the retained cause and explicit quantity fields, units, shapes and charge signs.",
+    },
+    "PHMT-E333": {
+        "message": "The native feature payload exceeds its bounded admission profile.",
+        "hint": "Use at most 256 atoms, 64 features and 2 MiB of payload bytes, with bounded finite provenance.",
+    },
+    "PHMT-E334": {
+        "message": "A required feature family was not declared evaluated in this native payload.",
+        "hint": "Inspect retained evaluation coverage; missing families require explicit new extraction.",
+    },
 }
 SIGNALS = {}
 CATALOG = {

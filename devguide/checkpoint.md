@@ -9,6 +9,27 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
+**#195's standalone native payload slice is implemented and under receiving.**
+The [contract](native_feature_payload.md) selects `FeatureInventoryPayload` for
+complete captured inventories, explicit evaluated families, original maps/units/
+frame/state/references and separate serialization observations. Parsing/metadata
+stays cold; each native read validates afresh. No extraction or archive-format
+migration occurs. Source receives **245 selected cases** (95 new, 150 earlier),
+actual public PyUnitWizard 0.28.1, maximum admission and first scientific activation
+under application pm policy. Initial launcher/spawn failure stays retained.
+All four source example-block executions under nm/pm and strict full docs pass;
+the ten selected quality checks include 161 administrative controls. Exact-owned
+artifact receiving remains pending.
+
+**Next concrete action:** finish that selected owned/examples/docs receiving, then
+specify native-payload archive admission and original/new ordinal/source lineage
+under [#194](pending_proposals/public_feature_archive_writing.md)/
+[#195](pending_proposals/public_native_feature_payloads.md) before assembly code.
+Full hosted/platform/public, MolSysMT#624 and biological/human/scale gates remain
+separate; #148/#165 stay stopped. No new tag/package is selected.
+
+## Previous writer receiving
+
 **#194's first writer slice is received** at source
 `aad1de56a1ab35881a66c7254caa44fd06ed5209`. The
 [contract](public_feature_archive_store.md) and

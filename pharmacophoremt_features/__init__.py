@@ -16,10 +16,20 @@ register_provider(Path(__file__).resolve().parent)
 
 from ._api import FeatureAssetView as FeatureAssetView  # noqa: E402
 
-__all__ = ["FeatureAssetView", "FeatureAssetError", "FeatureAssetStore"]
+__all__ = [
+    "FeatureAssetView",
+    "FeatureAssetError",
+    "FeatureAssetStore",
+    "FeatureInventoryPayload",
+]
 
 
 def __getattr__(name):
+    if name == "FeatureInventoryPayload":
+        from ._payload import FeatureInventoryPayload
+
+        globals()[name] = FeatureInventoryPayload
+        return FeatureInventoryPayload
     if name == "FeatureAssetStore":
         from ._writer import FeatureAssetStore
 

@@ -3,7 +3,8 @@
 This development API adds a writer-owned local archive to the existing
 [feature reader](feature_archives.md). Its first profile preserves **whole existing
 generations**, including original positions, payload bytes, metadata and references.
-Creating new payloads from live native inventories remains a later operation.
+Standalone [native payload production](native_feature_payloads.md) is separate
+from archive insertion and arbitrary generation assembly, which remain later work.
 Use a build containing `FeatureAssetStore`; the 0.5.0 source tag has no writer.
 
 ## Save an existing generation in your own archive

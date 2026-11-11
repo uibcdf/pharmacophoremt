@@ -2,11 +2,15 @@
 
 ## Unreleased — toward 0.6.0
 
+- Add standalone [native feature payloads](../user/native_feature_payloads.md)
+  for already captured complete inventories: explicit evaluated families, original
+  maps/geometry/references, sealed quantities, cold metadata and fresh native
+  reconstruction. Archive insertion/assembly remains a later operation.
 - Add [writer-owned feature archives](../user/feature_archive_writing.md) that
   preserve whole original generations, stage and validate immutable candidates,
   publish against explicit expected-current identity and expose retained attempts
-  with metadata inspection and linked recovery. New native payload production
-  and arbitrary record assembly remain later operations.
+  with metadata inspection and linked recovery. New native payload archive
+  admission and arbitrary record assembly remain later operations.
 - Add explicit [native feature reconstruction](../user/native_feature_reuse.md)
   from admitted historical snapshots, with fresh unit/geometry validation,
   generation and original metadata checks, full maps/provenance and bounded batches.

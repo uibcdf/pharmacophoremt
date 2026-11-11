@@ -23,12 +23,22 @@ retain separate identities and qualification.
 
 ## Modeling routes
 
+The [standalone native payload producer](native_feature_payload.md), #195, is
+implemented in development source: complete captured classical inventories,
+explicit evaluated-empty/unobserved distinction, original maps/frame/state/
+references, sealed quantities, cold metadata and fresh native reads. Source
+receives 245 selected cases under the actual public quantity floor, including
+nondefault/first-activation unit policy and maximum admission. Source examples
+under nm/pm and strict full docs pass; exact-owned receiving remains pending.
+Archive insertion/assembly is
+separate; this adds no collection, molecular authentication or public package.
+
 Development after #193 also receives the
 [first writer-owned archive](public_feature_archive_store.md): whole-generation
 preservation, immutable candidates, expected-current publication and retained
 attempt/linked recovery. The [source/owned receipt](evidence/feature_archive_writer_20261111.json)
-receives 150 cases per context and executable guides. New native payload production
-and arbitrary/subset assembly remain later #195/#194 scope; no new public artifact,
+receives 150 cases per context and executable guides. New native payload archive
+admission and arbitrary/subset assembly remain later #195/#194 scope; no new public artifact,
 collection, source authentication or broad performance claim follows.
 
 Development after source tag 0.5.0 adds
