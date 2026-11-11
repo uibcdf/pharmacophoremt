@@ -1,5 +1,21 @@
 # Decisions and active workstreams
 
+## 0.6.0 native reuse and isolation — #193/#192 (2026-11-11 UTC)
+
+The [native reconstruction contract](native_feature_reconstruction.md) selects
+explicit compatibility admission of unchanged original study snapshots, with
+fresh public quantity validation and complete source/work maps. The new API and
+bounded batches pass 271 selected source/reader/isolation/geometry/model/unit
+controls. Original public PyUnitWizard 0.28.1 supplies the qualified minimum;
+metadata/recipe/generated environments align, with source pins/prefix unchanged.
+[Spawned interruption guards](interruption_process_isolation.md) pass 103 source
+controls with deprecation warnings treated as errors.
+
+Next receive final source bodies against the public floor and exact owned wheel,
+execute public examples/cold imports and publish their receipts. Writer/recovery
+is the next separate slice. Full exact-head and supported platform/public gates,
+human/biological/scale work and MolSysMT#624 retain their owners; #148/#165 stopped.
+
 ## 0.5.0 source-only consolidation — #95 (2026-11-11 UTC)
 
 Delivered annotated source tag **0.5.0** at `2bff5dcf454bc5230f473237a49939215a60aab2`.

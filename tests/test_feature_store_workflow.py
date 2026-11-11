@@ -358,7 +358,7 @@ def interrupted_publication(root, entries, side):
         first = writer.seal(make_records(entries[:1]))
         writer.publish(first, expected_current=None)
         candidate = writer.seal(make_records(entries[:2]))
-    ctx = multiprocessing.get_context("fork")
+    ctx = multiprocessing.get_context("spawn")
     parent, child = ctx.Pipe(duplex=False)
     process = ctx.Process(
         target=publication_child, args=(root, candidate, first, side, child)

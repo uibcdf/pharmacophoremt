@@ -10,6 +10,7 @@ from .feature_neighborhoods import (
 from .feature_neighborhoods import (
     rank_rigid_feature_correspondences as rank_rigid_feature_correspondences,
 )
+from .feature_reuse import reuse_feature_inventories as reuse_feature_inventories
 from .pose_evaluation import PoseEvaluator as PoseEvaluator
 from .prepared_runs import PreparedRunPlan as PreparedRunPlan
 from .prepared_runs import PreparedScreeningRun as PreparedScreeningRun

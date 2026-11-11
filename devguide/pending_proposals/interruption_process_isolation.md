@@ -1,13 +1,13 @@
 ---
 summary: Qualify interruption guards without forking from a threaded test parent.
 issue: uibcdf/pharmacophoremt#192
-status: open
+status: active
 opened: 2026-11-11
 closed:
 verification: measured
 area: [testing, execution]
-guard:
-normative:
+guard: tests/test_driver_checkpoints.py
+normative: devguide/interruption_process_isolation.md
 blocked_by: []
 supersedes: []
 ---
@@ -29,3 +29,13 @@ Acceptance requires equivalent real interruption/recovery controls on affected
 Python minors and Linux/macOS. This is follow-up test infrastructure for 0.6.0,
 not a production multiprocessing feature or a generic thread/fork safety claim.
 No isolation implementation or new execution was performed by this report.
+
+## Implemented source increment — 2026-11-11 UTC
+
+The later [isolation contract](../interruption_process_isolation.md) selects fresh
+spawned children and retains all original committed-prefix/publication/credit
+assertions. A real live-parent-thread lease probe also passes. All 103 source
+controls pass on Linux/Python 3.14 with DeprecationWarning treated as error.
+The former paragraph records the original proposal state. Exact owned receiving
+and full supported Linux/macOS/minor gates are recorded separately; this report
+stays active until its required platform receiving is completed.

@@ -23,6 +23,13 @@ retain separate identities and qualification.
 
 ## Modeling routes
 
+Development after source tag 0.5.0 adds
+[`screening.reuse_feature_inventories`](native_feature_reconstruction.md), with
+explicit historical profile admission, fresh quantity/native geometry validation
+and full original inventories. Source-selected receiving is implemented; exact
+owned/public-floor and full supported delivery retain separate evidence. This
+operation performs no molecular extraction or query/source authentication.
+
 The package-level `pharmacophoremt.model` is a facade. Method names below are
 exact strings; there is no automatic method selection or implicit preparation.
 Every molecular input, selection, recognition, geometry or transformation belongs

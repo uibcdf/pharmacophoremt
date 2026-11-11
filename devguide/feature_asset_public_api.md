@@ -10,6 +10,12 @@ in source and a qualified selected owned wheel under its own declared-metadata/o
 reconstruction and public writer/recovery signatures below remain proposals;
 no public channel/platform/release or production index is implied.
 
+The later [#193 compatibility contract](native_feature_reconstruction.md) implements
+scientific reconstruction in development source, adding the required explicit
+`payload_profile="snapshot-study-v1"` selector and bounded batch admission.
+Exact-owned/public-floor receiving is separately recorded there. The original
+proposal signatures below remain historical; public writers/recovery stay proposed.
+
 ## Decision and existing owners
 
 Propose a cold `pharmacophoremt_features` namespace in the **same PharmacophoreMT

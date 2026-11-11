@@ -55,6 +55,7 @@ pharmer_interoperability
 chemical_libraries
 prepared_feature_reuse
 feature_archives
+native_feature_reuse
 ```
 
 ## Find examples and reference material

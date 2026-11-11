@@ -12,8 +12,8 @@ import pytest
 
 DRIVERS = ("snapshot", "typed")
 pytestmark = pytest.mark.skipif(
-    "fork" not in multiprocessing.get_all_start_methods(),
-    reason="Controlled local POSIX child interruption requires fork",
+    os.name != "posix",
+    reason="Controlled child interruption requires POSIX signals",
 )
 
 
@@ -112,7 +112,7 @@ def _probe(name, output, mode, connection):
 
 
 def _start(name, output, mode):
-    context = multiprocessing.get_context("fork")
+    context = multiprocessing.get_context("spawn")
     parent, child = context.Pipe()
     process = context.Process(target=_probe, args=(name, output, mode, child))
     process.start()

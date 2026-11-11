@@ -9,6 +9,33 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
+**0.6.0 development is active** under
+[#193](pending_proposals/native_feature_reconstruction.md) and
+[#192](pending_proposals/interruption_process_isolation.md). The
+[explicit native compatibility decoder](native_feature_reconstruction.md)
+reconstructs original captured inventories with fresh public quantity/native
+geometry validation, complete maps/provenance and bounded batch admission.
+Sixty new native controls, 54 reader, 103 real interruption/store/workflow,
+44 native geometry, 7 reference-model and 3 unit-bootstrap controls pass:
+**271 selected source cases**, with DeprecationWarning treated as error.
+This is selected Linux/Python 3.14 evidence, not a new full hosted checkpoint.
+
+The actual public PyUnitWizard 0.28.1 archive is received by its provider digest;
+109 earlier native/reader controls pass with those isolated original payloads.
+The new >=0.28.1 minimum is aligned in metadata, recipe and generated ordinary
+environments; source pins and shared prefix stay unchanged. Initial new-test
+projection-alias/seal-field assumptions and the explicit-plugin/SDK caller
+corrections remain retained. [Fresh spawned interruption children](interruption_process_isolation.md)
+replace fork while preserving original publication/progress/credit assertions.
+
+**Next concrete action:** qualify the final decoder/guard bodies against the
+actual public lower bound and one exact owned wheel, execute the user guide and
+scientifically cold reader, then attach immutable receipts and update the queues.
+Public writer/recovery follows as a separately owned slice. Full hosted/minor/
+platform receiving remains #9/#192-owned; no new tag or package publication.
+
+## Previous delivered source checkpoint
+
 **Source tag 0.5.0 is delivered** at immutable
 `2bff5dcf454bc5230f473237a49939215a60aab2`. The
 [source-cut contract](release_0_5_0_source_cut.md) owns its scope/migration, the
@@ -34,18 +61,13 @@ Ruff/format/index checks, 3 reporting/18 archive controls and strict full docs
 against the private installed 0.5.0, with notebook execution off. Full science
 was not rerun for this documentation/reporting change.
 
-**Next concrete action:** define the accepted original native payload profile and
-format/admission/lifetime contract under
-[#193](pending_proposals/native_feature_reconstruction.md), before decoder code
-for 0.6.0. Require expected generation, fresh public quantity validation, literal
-keys/global ordinals, full inventories and original attribution without new
-extraction credit. [#192](pending_proposals/interruption_process_isolation.md)
-separately owns the recorded threaded-parent fork warnings. Neither is implemented
-by this closeout. Public writers/recovery and human receiving stay separate.
+The source-tag closeout originally queued the #193 contract and #192 isolation;
+the later active increment above supersedes that next-action statement. Public
+writers/recovery and human receiving stay separate.
 Package/public/platform gates remain #10/#23-owned; MolSysMT#624 unreceived;
 QuantityRecord provisional; #148/#165 stopped.
 
-The last feature API boundary remains
+The tagged feature API boundary remains
 [#189 read-only feature archives](feature_archive_format.md), with its
 [98 source/98 installed control receipt](evidence/feature_asset_view_20261111.json),
 exact owned wheel, scientifically cold readers, original reference/no-new-credit

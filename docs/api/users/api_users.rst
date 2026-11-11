@@ -21,6 +21,8 @@ scope, reader ownership, score/failure semantics and qualification limits.
 
 .. autofunction:: pharmacophoremt.screening.screen_prepared
 
+.. autofunction:: pharmacophoremt.screening.reuse_feature_inventories
+
 Recoverable prepared screening and saved results
 ------------------------------------------------
 

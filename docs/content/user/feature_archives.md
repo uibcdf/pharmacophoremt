@@ -60,6 +60,11 @@ explicitly through a qualified capture route. Completed declared coverage still
 needs original payload/quantity/geometry validation before scientific reuse; this
 reader supplies no native decoder or query admission.
 
+Builds after the 0.5.0 source tag can add the separate
+[explicit native-reuse operation](native_feature_reuse.md). Opening this metadata
+view still performs no scientific decoding; compatibility admission and quantity
+validation occur only when the scientific operation is called.
+
 Failed, partial, unsupported and unattempted occurrences retain their original
 cause. They are not replaced by empty features. Inspect their metadata before
 requesting new work. The view also distinguishes a complete selected subset from

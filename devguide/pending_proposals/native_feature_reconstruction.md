@@ -1,13 +1,13 @@
 ---
 summary: Qualify explicit native reconstruction from saved feature archives for 0.6.0.
 issue: uibcdf/pharmacophoremt#193
-status: open
+status: active
 opened: 2026-11-11
 closed:
 verification: asserted
 area: [api, persistence, screening]
 guard:
-normative: devguide/feature_asset_public_api.md
+normative: devguide/native_feature_reconstruction.md
 blocked_by: []
 supersedes: []
 ---
@@ -42,3 +42,21 @@ credit receiving. Metadata reading must remain scientifically cold. Receive a
 guided/expert example using the same public operations. No decoder, stable format
 or schedule is claimed here. Public writing/recovery, biological, human and
 scale qualification remain later work; #148/#165 remain stopped.
+
+## Selected implementation — 2026-11-11 UTC
+
+The [native reconstruction contract](../native_feature_reconstruction.md) selects
+explicit `payload_profile="snapshot-study-v1"` compatibility with original bytes,
+not a new writer or automatic promotion of study APIs. The public scientific
+operation uses fresh PyUnitWizard handshakes and the existing native geometry
+owner. Selected metadata/content bindings, global ordinals, extra features,
+empty/partial states and original provenance remain explicit. A bounded batch
+admits at most 64 occurrences/8 MiB of repeated-original input bytes.
+
+The verified original public PyUnitWizard 0.28.1 archive provides the qualified
+capability floor; source pins and the shared environment remain unchanged.
+First receiving passes 109 reader/native controls with that actual public payload.
+Two earlier new-test assumptions were corrected: the expected projection needed
+detachment before mutation, and the real quantity integrity field is `digest`.
+Neither first failure was a runtime decoder defect. Later guards and exact-owned
+receiving remain pending until their final receipts are attached.

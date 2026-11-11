@@ -6,8 +6,10 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (2)
+### Active (4)
 
+- [`interruption_process_isolation.md`](interruption_process_isolation.md) — [#192](https://github.com/uibcdf/pharmacophoremt/issues/192) — Qualify interruption guards without forking from a threaded test parent. *(active, measured)*
+- [`native_feature_reconstruction.md`](native_feature_reconstruction.md) — [#193](https://github.com/uibcdf/pharmacophoremt/issues/193) — Qualify explicit native reconstruction from saved feature archives for 0.6.0. *(active, asserted)*
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 
@@ -29,10 +31,5 @@ See the [local reporting protocol](../reporting_protocol.md).
 ### Blocked (1)
 
 - [`delegate_sdf_container_to_molsysmt.md`](delegate_sdf_container_to_molsysmt.md) — [#74](https://github.com/uibcdf/pharmacophoremt/issues/74) — Delegate annotated pharmacophore SDF container handling to MolSysMT. *(blocked, inspected)*
-
-### Open (2)
-
-- [`interruption_process_isolation.md`](interruption_process_isolation.md) — [#192](https://github.com/uibcdf/pharmacophoremt/issues/192) — Qualify interruption guards without forking from a threaded test parent. *(open, measured)*
-- [`native_feature_reconstruction.md`](native_feature_reconstruction.md) — [#193](https://github.com/uibcdf/pharmacophoremt/issues/193) — Qualify explicit native reconstruction from saved feature archives for 0.6.0. *(open, asserted)*
 
 <!-- /generated -->

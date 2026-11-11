@@ -1,5 +1,17 @@
 # Release notes
 
+## Unreleased — toward 0.6.0
+
+- Add explicit [native feature reconstruction](../user/native_feature_reuse.md)
+  from admitted historical snapshots, with fresh unit/geometry validation,
+  generation and original metadata checks, full maps/provenance and bounded batches.
+  PyUnitWizard >=0.28.1 supplies the qualified quantity-record capability.
+- Run controlled interruption/recovery tests in fresh spawned processes,
+  preserving original committed progress, publication visibility and attribution.
+
+Selected source receiving is recorded under #193/#192; supported installed/public
+delivery and the next version/tag decision remain independent.
+
 ## 0.5.0 — source-only consolidation
 
 Delivered 2026-11-11 as immutable [source tag 0.5.0](https://github.com/uibcdf/pharmacophoremt/tree/0.5.0)

@@ -5,6 +5,7 @@ import json
 import multiprocessing
 import os
 import signal
+import threading
 from copy import deepcopy
 from pathlib import Path
 
@@ -457,7 +458,7 @@ def test_own_child_interruption_preserves_confirmed_visibility_and_unknown_attem
     with FeatureStoreStudy(root) as store:
         candidate = store.seal(records(entries[:2]))
     old = FeatureStoreReaderStudy(root)
-    ctx = multiprocessing.get_context("fork")
+    ctx = multiprocessing.get_context("spawn")
     parent, child = ctx.Pipe(duplex=False)
     process = ctx.Process(
         target=interrupted_child, args=(root, candidate, first, side, child)
@@ -564,21 +565,31 @@ def test_separate_process_writer_is_refused_without_touching_parent_lease(
 ):
     root = tmp_path / "store"
     seed(root, records(entries[:1]))
-    ctx = multiprocessing.get_context("fork")
+    ctx = multiprocessing.get_context("spawn")
     parent, child = ctx.Pipe(duplex=False)
+    stop = threading.Event()
+    thread = threading.Thread(target=stop.wait, args=(30,))
     with FeatureStoreStudy(root) as writer:
         process = ctx.Process(target=lease_probe, args=(root, child))
-        process.start()
+        thread.start()
         try:
+            assert thread.is_alive()
+            process.start()
             assert parent.poll(10) and parent.recv() == "refused"
             process.join(5)
             assert process.exitcode == 0 and writer.current() is not None
         finally:
-            if process.is_alive():
+            if process.pid is not None and process.is_alive():
                 process.terminate()
                 process.join(5)
+                if process.is_alive():
+                    process.kill()
+                    process.join(5)
+            stop.set()
+            thread.join(2)
             parent.close()
             child.close()
+    assert not thread.is_alive()
 
 
 def test_partial_generation_install_failure_keeps_old_current_and_retains_cause(
