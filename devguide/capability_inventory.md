@@ -23,6 +23,12 @@ retain separate identities and qualification.
 
 ## Modeling routes
 
+The [source-owned capture contract](feature_capture_provenance.md), #196, adds
+`modeler.capture_features` and `FeatureInventoryPayload.from_capture`. Effective
+requested/evaluated-empty coverage and observed original software are retained
+separately from the unchanged native inventory and later serialization. Source/
+owned qualification is being received; this remains bounded development work.
+
 The [native-v2 archive integration](native_feature_archive.md), #194/#195, adds
 public record factories, explicit assembly, retained source/global-ordinal lineage
 and guarded subset rebasing through the existing publication/recovery. Source

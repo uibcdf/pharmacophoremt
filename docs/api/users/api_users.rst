@@ -57,6 +57,8 @@ execution-compatibility decision.
 Saved feature evidence
 ----------------------
 
+.. autofunction:: pharmacophoremt.modeler.capture_features
+
 The :doc:`feature-archive guide </content/user/feature_archives>` demonstrates
 pinned metadata inspection, declared coverage and exact opaque original bytes.
 Scientific quantity reconstruction and source/query admission remain separate.

@@ -25,6 +25,38 @@ from tests.test_pose_evaluation import system
 from tests.test_rigid_search import COORDINATES, reference
 
 
+@pytest.mark.parametrize("restricted", [False, True])
+def test_unprintable_tracking_failure_cannot_replace_science_or_inspect_restricted_text(
+    monkeypatch, restricted
+):
+    import smonitor
+
+    from phmt_test_support.feature_snapshot_case import load_parent
+
+    source, _ = load_parent("ions")
+    inspected = []
+
+    class UnprintableError(RuntimeError):
+        def __str__(self):
+            inspected.append(True)
+            raise RuntimeError("exception formatting is unavailable")
+
+    def failed_backend():
+        raise UnprintableError()
+
+    monkeypatch.setattr(_ackredit, "backend", failed_backend)
+    policy = smonitor.METADATA_ONLY if restricted else smonitor.CapturePolicy()
+    with smonitor.diagnostic_scope(policy):
+        with phmt.attribution():
+            result = phmt.modeler.capture_features(source, features=["hb donor"])
+    assert result["inventory"]["features"] == []
+    attribution = result["inventory"]["attribution"]
+    assert attribution["status"] == "failed"
+    assert attribution["errors"][0]["reason"] == "UnprintableError"
+    if restricted:
+        assert inspected == []
+
+
 @pytest.fixture(scope="module")
 def prepared():
     return reference()

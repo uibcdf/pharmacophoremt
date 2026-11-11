@@ -23,6 +23,7 @@ from .curation import edit_pharmacophore as edit_pharmacophore
 from .curation import extract_pharmacophore as extract_pharmacophore
 from .curation import get_interaction_site_indices as get_interaction_site_indices
 from .excluded_volumes import get_excluded_volume_sites as get_excluded_volume_sites
+from .feature_capture import capture_features as capture_features
 from .features import get_features as get_features
 from .interaction_based import from_interactions as from_interactions
 from .interaction_collection import (

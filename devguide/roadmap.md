@@ -1,5 +1,21 @@
 # Strategic roadmap
 
+## Source-owned feature capture — #196 (2026-11-11 UTC)
+
+The [selected contract](feature_capture_provenance.md) adds a separate
+`modeler.capture_features` envelope and `FeatureInventoryPayload.from_capture`.
+The original inventory/get_features signature and persisted payload/archive
+schemas remain unchanged. Capture records effective families, completed/empty
+coverage, native maps/frame/state and the original observed software; encoding
+revalidates content and binds it to that original observation. Included-volume
+captures remain native and the classical serializer explicitly refuses them.
+Source controls, exact-owned receiving, executable guides and strict docs are
+being collected; the owning [#196 report](pending_proposals/capture_feature_evaluation_provenance.md)
+remains partial until that evidence is received. #19's host diagnostic correction
+preserves optional-attribution failure isolation and application capture policy.
+Full hosted/public/platform, MolSysMT#624 and biological/human/scale qualification
+remain separate. #148/#165 stay stopped; no new tag/package is selected.
+
 ## Native archive v2 received — #194/#195 (2026-11-11 UTC)
 
 The [selected contract](native_feature_archive.md) and source implementation add

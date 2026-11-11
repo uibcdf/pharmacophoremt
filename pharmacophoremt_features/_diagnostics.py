@@ -133,6 +133,10 @@ CODES = {
         "message": "This record has reached its retained archive-lineage limit.",
         "hint": "Keep its original evidence; at most 16 origin anchors are admitted and no history is trimmed automatically.",
     },
+    "PHMT-E339": {
+        "message": "The feature capture, effective evaluation or original content binding disagrees.",
+        "hint": "Keep the original capture unchanged; old or deliberately edited inventories use explicit evaluation declarations.",
+    },
 }
 SIGNALS = {}
 CATALOG = {

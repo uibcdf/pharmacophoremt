@@ -51,6 +51,42 @@ class FeatureInventoryPayload:
         return result
 
     @classmethod
+    @signal(tags=["feature-payload", "capture-encode"])
+    @arg_digest(config=config("from_capture"), type_check=False)
+    @dep_digest("pyunitwizard")
+    def from_capture(cls, capture, *, parent, payload_profile, skip_digestion=False):
+        """Encode original source-owned evaluation without repeated caller declarations.
+
+        Recheck original content and every native field; the capture digest is
+        not authentication or a validation passport. Existing wire formats and
+        the explicit historical from_inventory route remain unchanged.
+        """
+        from pharmacophoremt._private import feature_capture as receipt
+
+        from . import _schema
+
+        inventory, evaluation, producer = receipt.validate(capture)
+        if "included volume" in evaluation["families"]:
+            fail(331)
+        if (
+            parent.get("n_atoms") != evaluation["n_atoms"]
+            or type(parent.get("n_atoms")) is not int
+        ):
+            fail(339)
+        return cls.from_inventory(
+            inventory,
+            evaluation["families"],
+            parent=parent,
+            payload_profile=payload_profile,
+            extraction_producer={
+                "schema": receipt.PROVENANCE_SCHEMA,
+                "capture_sha256": capture["capture_sha256"],
+                "evaluation": _schema.detached(evaluation),
+                "producer": _schema.detached(producer),
+            },
+        )
+
+    @classmethod
     @signal(tags=["feature-payload", "read"])
     @arg_digest(config=config("from_bytes"), type_check=False)
     def from_bytes(cls, raw, *, payload_profile):

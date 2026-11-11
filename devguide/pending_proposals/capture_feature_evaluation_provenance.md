@@ -1,13 +1,13 @@
 ---
 summary: Retain executed feature-request and evaluation provenance in native results.
 issue: uibcdf/pharmacophoremt#196
-status: open
+status: partial
 opened: 2026-11-11
 closed:
-verification: asserted
+verification: measured
 area: [api, modeling, persistence]
-guard:
-normative: devguide/native_feature_payload.md
+guard: tests/test_feature_capture.py
+normative: devguide/feature_capture_provenance.md
 blocked_by: []
 supersedes: []
 ---
@@ -44,3 +44,22 @@ source/exact-owned examples and retained historical payload/archive controls.
 Full hosted/platform/public, biological/human/scale and stopped #148/#165 remain
 independent. Next review existing extraction/inventory callers and choose how to
 add source-owned evaluation provenance without silently changing persisted v1/v2.
+
+## Selected additive implementation — 2026-11-11 UTC
+
+The [capture contract](../feature_capture_provenance.md) precedes the additive
+implementation. Existing get_features/native inventory and persisted schemas
+remain original. Capture records effective requested families and completed/empty
+counts around one actual extraction; from_capture revalidates native content,
+compares the original binding and delegates to the existing serializer. Bounds
+and included-volume refusal are explicit. Source/owned receiving is in progress;
+no complete release/delivery or molecular authentication claim is selected.
+
+Source receiving passes 394 selected cases in three serial processes (312 prior,
+54 capture/provider, 28 attribution), six nm/pm recipe block executions, strict
+full docs and ten quality checks including 161 administrative controls. Genuine
+optional absence, poisoned provider errors and original no-new-credit archive
+round trips pass. Initial incorrect fixture/policy assumptions, the unsupported
+legacy bypass experiment, bounded-memory aborts and controller/import corrections
+remain original evidence. Exact-owned receiving and durable evidence closeout
+are the next action; broader gates remain independent.

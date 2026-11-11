@@ -5,7 +5,9 @@ already captured inventory, retain its original references, and reconstruct it
 later with fresh quantity and geometry validation. The explicit profile is
 `native-classical-v1`. It supports all six classical families in one frame.
 
-You must supply the families actually evaluated. An empty evaluated family is
+For a new extraction, the [capture route](feature_capture.md) retains the effective
+request and original extraction observation automatically. For an inventory you
+already have, you must supply the families actually evaluated. An empty evaluated family is
 valid evidence; an unrequested family remains unknown. Encoding does not perform
 extraction or verify a molecule's current state. Keep the original extraction
 producer, even when unknown, separate from the newly observed serializer.

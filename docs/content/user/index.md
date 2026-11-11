@@ -22,6 +22,8 @@ inputs. Each recipe explains the corresponding class or public tool contract.
 
 - Inspect [saved feature archives](feature_archives.md) to page declared feature
   evidence while retaining original bytes and a pinned generation.
+- [Capture new features](feature_capture.md) with their effective evaluation
+  provenance, then save or archive them without repeating the requested families.
 - Start with [chemical-library screening](chemical_libraries.md) to distinguish
   prepared-input support, the PubChem3D pilot and candidate libraries, then choose
   incremental or recoverable screening and its public expert composition.
@@ -59,6 +61,7 @@ native_feature_reuse
 feature_archive_writing
 native_feature_payloads
 native_feature_archives
+feature_capture
 ```
 
 ## Find examples and reference material

@@ -191,3 +191,15 @@ PHMT artifact, all-minor public attribution receiving, new minimum provider floo
 provider diagnostic import/construction/emission fault injection, addon delivery
 or biological validation is established by this consumer review. The provider's
 own diagnostic-construction/fallback regressions remain provider-owned.
+
+## Capture-policy/error-formatting correction — 2026-11-11 UTC
+
+Reviewing #196 exposed a PHMT host defect, rather than an Ackredit/SMonitor
+provider defect: `_Calculation.failed` formatted optional-provider errors before
+honoring the active capture policy. A poisoned `__str__` could replace completed
+science. The new `test_unprintable_tracking_failure_cannot_replace_science_or_inspect_restricted_text`
+guard reproduces that failure and protects the correction. `_reason` now checks
+public `smonitor.get_capture_policy()` first, retains class-only evidence when
+restricted or unprintable, and preserves detailed diagnostics otherwise. Main,
+diagnostic-fallback and broken-output paths share it. Source/owned receiving is
+recorded with #196; this does not close the broader attribution delivery theme.

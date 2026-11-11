@@ -131,6 +131,14 @@ def layout(inventory, parent, families, *, records):
         except FeatureAssetError as error:
             raise FeatureAssetError(code="PHMT-E330") from error
         require(_integer(parent["artifact_bytes"]) and parent["artifact_bytes"] > 0)
+    return inventory_layout(inventory, parent["n_atoms"], families, records=records)
+
+
+def inventory_layout(inventory, n_atoms, families, *, records, allow_volume=False):
+    """Shared native layout validation; capture may retain included volume."""
+    require(_integer(n_atoms) and n_atoms > 0)
+    if n_atoms > MAX_ATOMS:
+        fail(333)
     require(
         type(inventory) is dict
         and INVENTORY_FIELDS <= set(inventory) <= INVENTORY_FIELDS | {"attribution"}
@@ -146,16 +154,17 @@ def layout(inventory, parent, families, *, records):
         or (type(state) is str and state in ("reference", "structure"))
     )
     indices = inventory["selected_atom_indices"]
-    require(type(indices) is list and 0 < len(indices) <= parent["n_atoms"])
-    require(all(_integer(i, parent["n_atoms"] - 1) for i in indices))
+    require(type(indices) is list and 0 < len(indices) <= n_atoms)
+    require(all(_integer(i, n_atoms - 1) for i in indices))
     require(len(set(indices)) == len(indices))
     features = inventory["features"]
     require(type(features) is list)
     if len(features) > MAX_FEATURES:
         fail(333)
+    supported = _schema.FAMILIES + (("included volume",) if allow_volume else ())
     for row in features:
         require(type(row) is dict and set(row) == FEATURE_FIELDS)
-        if type(row["kind"]) is not str or row["kind"] not in _schema.FAMILIES:
+        if type(row["kind"]) is not str or row["kind"] not in supported:
             fail(331)
         require(row["kind"] in families)
         for name in ("atom_indices", "geometry_atom_indices"):

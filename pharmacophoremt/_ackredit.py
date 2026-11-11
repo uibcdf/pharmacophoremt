@@ -30,6 +30,20 @@ def backend():
         raise
 
 
+def _reason(error, *, include_type=False):
+    """Respect capture permission before inspecting optional-provider error text."""
+    from smonitor import get_capture_policy
+
+    name = type(error).__name__
+    if not get_capture_policy().exception_text:
+        return name
+    try:
+        message = str(error)
+    except Exception:
+        return name
+    return f"{name}: {message}" if include_type else message
+
+
 def _warn(operation, error):
     warning_type = None
     try:
@@ -38,7 +52,9 @@ def _warn(operation, error):
 
         warning_type = AckreditTrackingWarning
         warn(
-            AckreditTrackingWarning(extra=dict(operation=operation, reason=str(error)))
+            AckreditTrackingWarning(
+                extra=dict(operation=operation, reason=_reason(error))
+            )
         )
     except Exception as diagnostic_error:
         if type(diagnostic_error) is warning_type:
@@ -50,9 +66,9 @@ def _warn(operation, error):
 
         failure = dict(
             operation="emit attribution diagnostic",
-            reason=f"{type(diagnostic_error).__name__}: {diagnostic_error}",
+            reason=_reason(diagnostic_error, include_type=True),
             tracking_operation=operation,
-            tracking_reason=f"{type(error).__name__}: {error}",
+            tracking_reason=_reason(error, include_type=True),
         )
         # Use a plain structured log rather than re-entering a broken emitter.
         # If output is unavailable, the detached failed payload still retains
@@ -61,7 +77,7 @@ def _warn(operation, error):
         try:
             print(json.dumps(dict(code=code, **failure)), file=sys.stderr)
         except Exception as output_error:
-            failure["fallback_error"] = f"{type(output_error).__name__}: {output_error}"
+            failure["fallback_error"] = _reason(output_error, include_type=True)
         return failure
     return None
 
@@ -80,7 +96,7 @@ class _Calculation:
     def failed(self, operation, error):
         self.status = "failed"
         self.errors.append(
-            dict(operation=operation, reason=f"{type(error).__name__}: {error}")
+            dict(operation=operation, reason=_reason(error, include_type=True))
         )
         diagnostic_failure = _warn(operation, error)
         if diagnostic_failure is not None:

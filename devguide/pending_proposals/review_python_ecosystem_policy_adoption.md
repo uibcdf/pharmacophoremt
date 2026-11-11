@@ -381,3 +381,16 @@ review under #6; it does not establish incorrect scientific output or justify a
 local suppression/implementation, new dependency floor or broad support-adoption
 closure. The two corrected one-off audit-script scope mistakes are documented
 as consumer instrumentation failures, not provider regressions. #6 remains partial.
+
+## New feature-capture contracts and legacy bypass boundary — 2026-11-11 UTC
+
+#196 registers the two new public signatures with standard boolean
+`skip_digestion=False` controls. A literal internal True bypasses only argument
+digestion; native/capture validation remains mandatory. Existing get_features and
+from_inventory signatures lack that explicit parameter. Ordinary public digestion
+is retained to preserve those old signatures; no decorator unwrapping or alternate
+bypass is introduced. Adding the legacy parameter needs a separately received
+compatibility change under this still-partial adoption theme. ArgDigest correctly
+forwards a bypass flag to the declared function; this is PHMT adoption debt, not
+an upstream provider defect. The initial unsupported-flag attempt and correction
+are retained in #196's evidence.

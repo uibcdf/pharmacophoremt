@@ -37,6 +37,18 @@ def _parent(parent):
     return parent
 
 
+def _capture(capture):
+    if type(capture) is not dict:
+        fail(301, argument="capture")
+    return capture
+
+
+def _skip(skip_digestion):
+    if type(skip_digestion) is not bool:
+        fail(301, argument="skip_digestion")
+    return skip_digestion
+
+
 def _producer(extraction_producer):
     if extraction_producer is not None and type(extraction_producer) is not dict:
         fail(301, argument="extraction_producer")
@@ -55,6 +67,8 @@ ARGUMENT_DIGESTERS = {
     "self": _identity,
     "cls": _identity,
     "inventory": _inventory,
+    "capture": _capture,
+    "skip_digestion": _skip,
     "parent": _parent,
     "extraction_producer": _producer,
     "payload_profile": _profile,
@@ -62,7 +76,14 @@ ARGUMENT_DIGESTERS = {
     "required_families": _families,
     "raw": _raw,
 }
-METHODS = ("from_inventory", "from_bytes", "to_bytes", "describe", "to_inventory")
+METHODS = (
+    "from_inventory",
+    "from_capture",
+    "from_bytes",
+    "to_bytes",
+    "describe",
+    "to_inventory",
+)
 CONTRACTS = [
     FunctionContract(caller=OWNER + name, admits="signature") for name in METHODS
 ]

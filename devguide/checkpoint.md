@@ -9,6 +9,31 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
+**#196 source receiving passes; exact-owned receiving is next** under the
+[feature-capture contract](feature_capture_provenance.md). The additive
+`modeler.capture_features` result retains the effective request, counts, native
+maps/frame/state, original observed software and a content binding; the new
+`FeatureInventoryPayload.from_capture` composes with existing archives. Existing
+inventories and wire schemas remain unchanged. Optional attribution failure
+formatting is corrected under #19, honoring SMonitor capture permission before
+inspecting native error text.
+
+**Source evidence:** 394 selected cases pass serially (312 original archive/
+payload/reuse, 54 capture/provider and 28 attribution), plus six new recipe blocks
+under nm/pm, strict full docs and ten quality checks including 161 administrative
+controls. The first launcher/fixture failures and bounded-memory aborts remain
+retained; the attribution shard uses a measured 768 MiB DATA bound, all other
+checks 512 MiB, with one CPU/thread and a 1 GiB observed own-group stop.
+
+**Next concrete action:** freeze a focused source commit, receive its exact
+owned wheel with actual public PyUnitWizard
+0.28.1, and close #196 only when the retained evidence satisfies its contract.
+Full hosted/public/platform, MolSysMT#624 and biological/human/scale gates remain
+separate; #148/#165 stay stopped. No source-pin/shared-prefix/tag changes.
+The earlier next-action statements below are historical and superseded here.
+
+## Previous native archive integration receiving
+
 **#194/#195's bounded public writer/native producer/archive scope is received**
 at source `c900da477090c260bf8d4b408697cd89f7039dfc`; their reports are archived
 [writer](archive/public_feature_archive_writing.md)/

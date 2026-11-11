@@ -27,7 +27,7 @@ def _capability():
     return record_type
 
 
-def _validate_native(inventory):
+def _validate_native(inventory, *, allow_volume=False):
     for row in inventory["features"]:
         for field, unit, _ in FIELDS:
             quantity = row[field]
@@ -50,7 +50,16 @@ def _validate_native(inventory):
                 fail(332)
     # Preserve the native owner's center/orientation admission. Do not return its
     # normalized numerical projection in place of the captured native quantities.
-    _records(inventory)
+    _records(
+        dict(
+            inventory,
+            features=[
+                r for r in inventory["features"] if r["kind"] != "included volume"
+            ],
+        )
+        if allow_volume
+        else inventory
+    )
 
 
 def decode(payload):
