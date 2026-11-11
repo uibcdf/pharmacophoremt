@@ -18,7 +18,7 @@ executes only the selected dispatcher/compatibility controls.
 The later [0.5.0 source cut](release_0_5_0_source_cut.md) qualifies the complete
 controlled source suite at 2bff5dc (eight cells, 3,088 passes each), without a
 new public package or a biological prediction claim. Later main commits and
-the next [0.6.0 reconstruction proposal](pending_proposals/native_feature_reconstruction.md)
+the next [0.6.0 reconstruction proposal](archive/native_feature_reconstruction.md)
 retain separate identities and qualification.
 
 ## Modeling routes
@@ -26,8 +26,8 @@ retain separate identities and qualification.
 Development after source tag 0.5.0 adds
 [`screening.reuse_feature_inventories`](native_feature_reconstruction.md), with
 explicit historical profile admission, fresh quantity/native geometry validation
-and full original inventories. Source-selected receiving is implemented; exact
-owned/public-floor and full supported delivery retain separate evidence. This
+and full original inventories. [Source/owned and public-floor receiving](evidence/native_feature_reconstruction_20261111.json)
+passes in the declared scope; full supported delivery remains independent. This
 operation performs no molecular extraction or query/source authentication.
 
 The package-level `pharmacophoremt.model` is a facade. Method names below are

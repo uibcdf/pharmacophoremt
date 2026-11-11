@@ -38,8 +38,9 @@ is [MolSysSuite#182](https://github.com/uibcdf/molsyssuite/issues/182).
 
 The later main closeout contains documentation/evidence/reporting only and stays
 distinct from the tested tag; #9 retains exact-head coverage for later skipped
-commits. Next define the [#193 reconstruction contract](pending_proposals/native_feature_reconstruction.md)
-for 0.6.0, with #192 as an independent test-isolation improvement. #95 remains the
+commits. At tag closeout the [#193 reconstruction contract](archive/native_feature_reconstruction.md)
+was queued for 0.6.0; its later source/owned receiving remains separate from this
+0.5.0 tag. #192 owns the independent test-isolation improvement. #95 remains the
 intermediate-milestone umbrella; only its 0.5.0 source-cut event is completed.
 The [closeout receipt](evidence/release_050_closeout_20261111.json) receives the
 later documentation/reporting checks without extending the tag's source result.

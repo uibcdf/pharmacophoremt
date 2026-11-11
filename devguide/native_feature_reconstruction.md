@@ -81,6 +81,14 @@ to diagnostics. Application capture policy remains authoritative.
 
 ## Acceptance and later work
 
+The [receiving receipt](evidence/native_feature_reconstruction_20261111.json)
+receives source 1604a6d and its exact owned wheel: 271 selected cases each,
+114 real public-lower-bound reader/native cases, both scientifically cold readers,
+the guide under nm/pm in both contexts and strict full docs. The
+[#193 archive](archive/native_feature_reconstruction.md) owns the completed bounded
+slice and its failed first attempts. The quantities/provider interface remains
+provisional; no supported public-artifact matrix or new tag is inferred.
+
 Receive original source and exact-owned installed contexts, actual lower-bound
 provider bytes, nm/pm policies, empty/incomplete/literal selections, wrong sealed
 quantities/geometry/maps, real diagnostics and no-new-credit/reference evidence.

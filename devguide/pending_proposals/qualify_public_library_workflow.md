@@ -14,6 +14,17 @@ supersedes: []
 
 # Public-library acquisition and screening
 
+## Reuse captured native features — 2026-11-11 UTC
+
+[#193](../archive/native_feature_reconstruction.md) receives explicit compatibility
+reconstruction, full maps/quantities/provenance and bounded batches: 271 selected
+source/owned cases each, actual public PyUnitWizard lower-bound receiving, cold
+inspection and executable user examples. The [receipt](../evidence/native_feature_reconstruction_20261111.json)
+retains original captures and limits. [#194](public_feature_archive_writing.md)
+now owns public writing/publication/recovery. Molecular collection/lifetime/source
+mapping remains MolSysMT#624-owned and open at this receiving; no general connector
+or compound-library scale qualification follows from feature reuse.
+
 ## Complete source-specific inspection — 2026-11-09 UTC
 
 [#167](../archive/document_source_inspection_journey.md) composes true source/status counts,

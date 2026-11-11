@@ -39,3 +39,12 @@ controls pass on Linux/Python 3.14 with DeprecationWarning treated as error.
 The former paragraph records the original proposal state. Exact owned receiving
 and full supported Linux/macOS/minor gates are recorded separately; this report
 stays active until its required platform receiving is completed.
+
+The [combined receipt](../evidence/native_feature_reconstruction_20261111.json)
+now receives the same 103 isolation/store/workflow cases in the exact owned wheel,
+with the public PyUnitWizard 0.28.1 lower bound and no source fallback. All 271
+selected source and owned cases pass with deprecations treated as errors. The
+first owned launcher recursively prepared the harness during spawn; its original
+17 failures are retained, and a guarded launcher passes with the same wheel and
+unchanged resource limits. Supported hosted Linux/macOS/minor receiving remains
+pending under #9/#192; no universal multiprocessing-safety claim follows.

@@ -1,12 +1,12 @@
 ---
 summary: Qualify explicit native reconstruction from saved feature archives for 0.6.0.
 issue: uibcdf/pharmacophoremt#193
-status: active
+status: resolved
 opened: 2026-11-11
-closed:
-verification: asserted
+closed: 2026-11-11
+verification: measured
 area: [api, persistence, screening]
-guard:
+guard: tests/test_native_feature_reuse.py
 normative: devguide/native_feature_reconstruction.md
 blocked_by: []
 supersedes: []
@@ -60,3 +60,24 @@ Two earlier new-test assumptions were corrected: the expected projection needed
 detachment before mutation, and the real quantity integrity field is `digest`.
 Neither first failure was a runtime decoder defect. Later guards and exact-owned
 receiving remain pending until their final receipts are attached.
+
+## Received bounded implementation — 2026-11-11 UTC
+
+Source `1604a6d7af99c8b8270f74f5ecbc95ba4fee3a08` and its exact owned wheel
+pass the same 271 selected cases each, including 60 new native and 54 reader
+controls. Another 114 native/reader controls pass with the actual verified public
+PyUnitWizard 0.28.1 archive. The wheel has 224 verified payloads/169 source-equal
+runtime bodies; 160 loaded PHMT modules originate in the owned installation.
+Both cold readers preserve 11 original captures, real seven-category diagnostics,
+application policy and no scientific imports. All eight executions of the two
+native guide blocks across nm/pm and source/owned contexts pass; both full strict
+documentation builds pass with notebooks off. The
+[receipt](../evidence/native_feature_reconstruction_20261111.json) preserves exact
+case/input/artifact identities, first control/launcher/inventory failures, the
+brief resource-scheduling correction and limits. No runtime/source-pin/prefix
+change was made to repair the owned receiving launcher.
+
+This closes the declared compatibility reconstruction slice. QuantityRecord
+remains provisional; #194 owns public writer/publication/recovery. Full hosted,
+supported installed/public/platform and biological/human/scale gates remain
+independently owned; #192 still needs supported platform receiving.

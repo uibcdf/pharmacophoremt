@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (131)
+### Resolved (132)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -62,6 +62,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`native_complex_modeler_transition.md`](native_complex_modeler_transition.md) — [#42](https://github.com/uibcdf/pharmacophoremt/issues/42) — Transition the complex modeler and default dispatcher to prepared native observations. *(resolved, measured)*
 - [`native_conformer_screening.md`](native_conformer_screening.md) — [#17](https://github.com/uibcdf/pharmacophoremt/issues/17) — Screen prepared conformations with native rigid search and explicit molecule-level score resolution. *(resolved, measured)*
 - [`native_constraint_semantics.md`](native_constraint_semantics.md) — [#79](https://github.com/uibcdf/pharmacophoremt/issues/79) — Qualify alternative-feature sites, typed participant capacity and hypothesis decisions. *(resolved, measured)*
+- [`native_feature_reconstruction.md`](native_feature_reconstruction.md) — [#193](https://github.com/uibcdf/pharmacophoremt/issues/193) — Qualify explicit native reconstruction from saved feature archives for 0.6.0. *(resolved, measured)*
 - [`native_interaction_composition.md`](native_interaction_composition.md) — [#36](https://github.com/uibcdf/pharmacophoremt/issues/36) — Compose named pharmacophore hypotheses and native interaction analyses with explicit participant reuse. *(resolved, measured)*
 - [`native_io_argdigest_admission.md`](native_io_argdigest_admission.md) — [#82](https://github.com/uibcdf/pharmacophoremt/issues/82) — Gate native I/O ArgDigest receiving on preserved call shape and exception families. *(resolved, measured)*
 - [`native_io_catalog_diagnostics.md`](native_io_catalog_diagnostics.md) — [#81](https://github.com/uibcdf/pharmacophoremt/issues/81) — Give PHMT-owned native I/O refusals catalog codes while retaining error families. *(resolved, measured)*

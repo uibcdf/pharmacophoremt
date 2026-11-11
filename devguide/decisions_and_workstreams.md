@@ -11,9 +11,12 @@ metadata/recipe/generated environments align, with source pins/prefix unchanged.
 [Spawned interruption guards](interruption_process_isolation.md) pass 103 source
 controls with deprecation warnings treated as errors.
 
-Next receive final source bodies against the public floor and exact owned wheel,
-execute public examples/cold imports and publish their receipts. Writer/recovery
-is the next separate slice. Full exact-head and supported platform/public gates,
+The [receipt](evidence/native_feature_reconstruction_20261111.json) now receives
+271 source and 271 exact-owned cases, 224 wheel payloads/169 runtime bodies,
+114 actual public-floor reader/native controls, both cold readers and executable
+source/owned guides under nm/pm. Full strict docs pass. Original first failures
+and limits stay recorded. Next freeze the [#194 public writer/recovery contract](pending_proposals/public_feature_archive_writing.md).
+#192 remains active for supported hosted/minor/platform receiving; #9/#10/#23,
 human/biological/scale work and MolSysMT#624 retain their owners; #148/#165 stopped.
 
 ## 0.5.0 source-only consolidation — #95 (2026-11-11 UTC)
@@ -28,7 +31,7 @@ notice is [MolSysSuite#182](https://github.com/uibcdf/molsyssuite/issues/182).
 No GitHub Release or package/docs publication; later evidence-only main commits
 remain distinct from the tested tag. Historical producers/receipts stay original.
 
-Next, for **0.6.0**, [#193](pending_proposals/native_feature_reconstruction.md)
+Next, for **0.6.0**, [#193](archive/native_feature_reconstruction.md)
 first fixes accepted formats, generation, quantities, lifetime and attribution
 before implementing native reconstruction. Public writers/recovery are a later
 slice; [#192](pending_proposals/interruption_process_isolation.md) separately

@@ -30,3 +30,9 @@ Initial Linux/Python 3.14 source receiving passes all 103 existing controls acro
 macOS or every supported minor. Full exact-head hosted/platform receiving remains
 #9/#192-owned. Preserve the initial launcher correction (explicit pytest plugin
 entry point) as an operator error, not a failed library test or a provider defect.
+
+The later [combined receipt](evidence/native_feature_reconstruction_20261111.json)
+also passes these same 103 controls in the exact owned wheel/public PyUnitWizard
+0.28.1 context, without source fallback. Initial owned recursive-launcher failures
+stay original; correcting only its main guard passes with the same artifact and
+budgets. The supported platform/minor gate remains open.

@@ -9,30 +9,32 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-**0.6.0 development is active** under
-[#193](pending_proposals/native_feature_reconstruction.md) and
-[#192](pending_proposals/interruption_process_isolation.md). The
-[explicit native compatibility decoder](native_feature_reconstruction.md)
-reconstructs original captured inventories with fresh public quantity/native
-geometry validation, complete maps/provenance and bounded batch admission.
-Sixty new native controls, 54 reader, 103 real interruption/store/workflow,
-44 native geometry, 7 reference-model and 3 unit-bootstrap controls pass:
-**271 selected source cases**, with DeprecationWarning treated as error.
-This is selected Linux/Python 3.14 evidence, not a new full hosted checkpoint.
+**0.6.0 development has received #193's native reconstruction slice** at
+`1604a6d7af99c8b8270f74f5ecbc95ba4fee3a08`. Its
+[contract](native_feature_reconstruction.md),
+[archive](archive/native_feature_reconstruction.md) and
+[receipt](evidence/native_feature_reconstruction_20261111.json) receive
+**271 selected source and 271 exact-owned installed cases**, with deprecations
+treated as errors. The wheel has 224 verified payloads/169 source-equal runtime
+bodies. Another 114 native/reader controls receive actual public PyUnitWizard
+0.28.1 bytes; metadata/recipe/environments align to that qualified floor without
+changing source pins or the shared prefix. QuantityRecord remains provisional.
 
-The actual public PyUnitWizard 0.28.1 archive is received by its provider digest;
-109 earlier native/reader controls pass with those isolated original payloads.
-The new >=0.28.1 minimum is aligned in metadata, recipe and generated ordinary
-environments; source pins and shared prefix stay unchanged. Initial new-test
-projection-alias/seal-field assumptions and the explicit-plugin/SDK caller
-corrections remain retained. [Fresh spawned interruption children](interruption_process_isolation.md)
-replace fork while preserving original publication/progress/credit assertions.
+Both scientifically cold readers retain 11 originals, seven real catalog errors,
+application policy and no scientific imports. The native guide passes all eight
+block executions across source/owned and nm/pm; strict full docs pass in both
+contexts. First test/launcher/inventory failures and the brief same-CPU
+administrative/docs scheduling correction stay in the receipt. This is bounded
+Linux/Python 3.14 receiving, not a full hosted/public/platform checkpoint.
 
-**Next concrete action:** qualify the final decoder/guard bodies against the
-actual public lower bound and one exact owned wheel, execute the user guide and
-scientifically cold reader, then attach immutable receipts and update the queues.
-Public writer/recovery follows as a separately owned slice. Full hosted/minor/
-platform receiving remains #9/#192-owned; no new tag or package publication.
+[#192 isolation](pending_proposals/interruption_process_isolation.md) uses fresh
+spawned children and receives the same 103 progress/publication/credit controls
+in source and the owned wheel. It stays active for supported hosted/minor/macOS
+receiving under #9. **Next concrete action:** review/freeze the public writer,
+payload/publication/lifetime/recovery contract under
+[#194](pending_proposals/public_feature_archive_writing.md), then implement its
+bounded public slices. MolSysMT#624 and biological/human/scale work retain their
+owners; #148/#165 stay stopped. No new tag or package is published.
 
 ## Previous delivered source checkpoint
 
