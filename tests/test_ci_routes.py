@@ -10,8 +10,8 @@ import yaml
 ROOT = Path(__file__).resolve().parents[1]
 
 
-def test_coverage_measures_the_core_and_saved_results_companion():
-    """The shipped results runtime must not disappear from reported coverage."""
+def test_coverage_measures_the_core_and_both_reader_companions():
+    """Shipped reader runtimes must not disappear from reported coverage."""
     workflow = yaml.load(
         (ROOT / ".github/workflows/CI.yaml").read_text(), Loader=yaml.BaseLoader
     )
@@ -29,7 +29,11 @@ def test_coverage_measures_the_core_and_saved_results_companion():
     tokens = split(commands[0])
     assert tokens.count("--cov") == 1
     assert not any(token.startswith("--cov=") for token in tokens)
-    required = {"pharmacophoremt", "pharmacophoremt_results"}
+    required = {
+        "pharmacophoremt",
+        "pharmacophoremt_results",
+        "pharmacophoremt_features",
+    }
     configuration = ConfigParser()
     configuration.read(ROOT / ".coveragerc")
     assert required == set(configuration["run"]["source_pkgs"].split())
@@ -39,6 +43,12 @@ def test_coverage_measures_the_core_and_saved_results_companion():
     assert "pharmacophoremt/_private/**" in omitted
     for name in ("_api.py", "_store.py", "_exports.py"):
         relative = "pharmacophoremt_results/" + name
+        assert not any(
+            fnmatch(relative, pattern) or fnmatch((ROOT / relative).as_posix(), pattern)
+            for pattern in omitted
+        )
+    for name in ("_api.py", "_schema.py", "_storage.py"):
+        relative = "pharmacophoremt_features/" + name
         assert not any(
             fnmatch(relative, pattern) or fnmatch((ROOT / relative).as_posix(), pattern)
             for pattern in omitted

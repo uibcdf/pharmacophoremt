@@ -11,7 +11,7 @@ Metadata
 - Source repository: `pyunitwizard`
 - Source document: `standards/PYUNITWIZARD_GUIDE.md`
 - Source version: Git commit containing this canonical document; consumer copies must record the resolved commit and digest in their synchronization evidence.
-- Last revised: 2026-11-06 (published 0.29.1 baseline; client delivery tracked in `uibcdf/molsyssuite#172`).
+- Last revised: 2026-11-11 (UTC, public 0.29.2 and cutoff conversion, `uibcdf/pyunitwizard#145`).
 
 ## What is PyUnitWizard
 
@@ -30,10 +30,10 @@ PyUnitWizard follows a strict separation between Hard and Soft dependencies:
 - **Hard Dependencies**: `numpy>=1.23.5`, `pint>=0.25`, `smonitor>=0.16.0`, `depdigest>=0.11.0` and `argdigest>=0.14.0`, as declared in package metadata. These must be provisioned for normal use.
 - **Soft Dependencies**: optional unit backends, including `unyt`, `openmm.unit` and `astropy.units`, are managed via `depdigest`. Ackredit attribution is also optional; guide delivery alone does not qualify a newer provider profile.
 
-### Published maintenance baseline: 0.29.1
+### Published maintenance baseline: 0.29.2
 
-Public Conda release [0.29.1](https://github.com/uibcdf/pyunitwizard/releases/tag/0.29.1)
-declares NumPy >=1.23.5 (Python 3.11 numerical baseline) and Pint >=0.25
+Public Conda release [0.29.2](https://github.com/uibcdf/pyunitwizard/releases/tag/0.29.2)
+retains NumPy >=1.23.5 (Python 3.11 numerical baseline) and Pint >=0.25
 (CODATA-2022 definitions required by published record vectors). These floors
 are owned by `uibcdf/pyunitwizard#134`; the published 0.29.0 file is unchanged.
 Clients requiring the following Astropy correction must receive PyUnitWizard
@@ -47,6 +47,15 @@ definitions are refused. Native Astropy unit activation is scoped and restored;
 its registry contexts remain process-wide. This correction is owned by
 `uibcdf/pyunitwizard#137` and is delivered in the public 0.29.1 package.
 Receiving this guide alone does not update a client's installed provider.
+
+Clients that compare inclusive distance cutoffs can use the existing
+`get_value(quantity, to_unit=...)` or `convert()` calls in 0.29.2.
+PyUnitWizard rounds once for verified nm, Å and pm in its Pint registry
+for binary64 scalars, float64 arrays and exactly representable integer scalars.
+For example, 5 Å and 500 pm both produce exactly 0.5 nm. Preserve the input
+cutoff until conversion to the unit of the comparison. Other backends, foreign
+Pint registries, active contexts and other unit definitions use their established
+conversion paths. This behavior is tracked in `uibcdf/pyunitwizard#143`.
 
 Baseline support is Python `>=3.11,<3.15` on Linux and macOS arm64. Optional
 provider profiles can have narrower limits; use the provider's maintained
@@ -72,7 +81,8 @@ import pyunitwizard as puw
 STANDARD_UNITS = ['nm', 'ps', 'K', 'mole', 'dalton', 'e', 'kJ/mol', 'radians']
 
 if not puw.configure.has_active_policy():
-    puw.configure.set_pint_registry_cache(True)
+    if 'pint' not in puw.configure.report()['loaded_libraries']:
+        puw.configure.set_pint_registry_cache(True)
     puw.configure.set_default_form('pint')
     puw.configure.set_default_parser('pint')
     puw.configure.set_standard_units(STANDARD_UNITS, provenance='mylib')
@@ -89,20 +99,14 @@ after importing your package gets `NoStandardsError`. The cost is paid once per
 process -- a second library declaring the same policy costs about 2 ms -- and
 it is a cost the session pays anyway at its first unit operation.
 
-Most of that cost is importing the backend, which is why declaring a policy is
-worth pairing with:
-
-```python
-puw.configure.set_pint_registry_cache(True)
-```
-
-It lets pint cache its parsed definitions on disk, taking registry construction
-from about 180 ms to about 17 ms. It must be called **before** anything loads
-the pint backend, so it belongs above the standard-unit call. PyUnitWizard
-leaves it off by default because writing to a user's filesystem is not
-something importing a units library should do uninvited; a suite may reasonably
-opt in on its users' behalf. A folder that cannot be written falls back to no
-cache rather than failing.
+Most of that cost is importing the backend. The example requests disk caching
+while Pint is still unloaded, taking registry construction from about 180 ms
+to about 17 ms with a warm cache. An application can already have used Pint
+without selecting standard units. In that case the example sets the policy
+with the existing registry and its current cache setting. PyUnitWizard leaves
+disk caching off by default because it writes to the user's filesystem. A
+folder that cannot be written falls back to building the registry without a
+cache.
 
 Three rules follow from this, and they are not stylistic:
 

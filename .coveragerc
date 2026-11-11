@@ -5,6 +5,7 @@ branch = True
 source_pkgs =
     pharmacophoremt
     pharmacophoremt_results
+    pharmacophoremt_features
 
 [report]
 show_missing = True

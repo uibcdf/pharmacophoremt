@@ -1,0 +1,59 @@
+{
+  "schema": "pharmacophoremt.source-050-review@1",
+  "recorded_at_utc": "2026-11-11T01:43:19.598611+00:00",
+  "baseline_tag": "0.4.0",
+  "baseline_source": "60b21b7d183217d50c29ea3e6bc0d05fb5b797a2",
+  "reviewed_source": "5fba1c8792a83f26fd81be5547d020fd217f15c9",
+  "commits_since_040": 231,
+  "public_signature_changes": {
+    "pharmacophoremt/io/pharmer.py:from_pharmer": {
+      "after": "pharmacophore, *, return_report=False, on_loss='warn'",
+      "before": "pharmacophore"
+    },
+    "pharmacophoremt/io/rdkit.py:load_rdkit": {
+      "after": "rd_pharmacophore, *, radius='1 angstrom', return_report=False, on_loss='warn'",
+      "before": "rd_pharmacophore"
+    },
+    "pharmacophoremt/io/rdkit.py:to_rdkit": {
+      "after": "pharmacophore, *, representation='points', return_report=False, on_loss='warn'",
+      "before": "pharmacophore"
+    },
+    "pharmacophoremt/modeler/receptor_projections.py:from_receptor_projections": {
+      "after": "feature_inventory, *, projection_specs, radius='0.15 nm', name=None, skip_digestion=False",
+      "before": "feature_inventory, *, projection_specs, radius='0.15 nm', name=None"
+    },
+    "pharmacophoremt/screening/conformer_screening.py:ConformerScreening.__init__": {
+      "after": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0, search_method='placed_and_triplets'",
+      "before": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0"
+    },
+    "pharmacophoremt/screening/rigid_search.py:RigidPoseSearch.__init__": {
+      "after": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0, search_method='placed_and_triplets'",
+      "before": "self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0"
+    },
+    "pharmacophoremt/screening/virtual_screening.py:VirtualScreening.__init__": {
+      "after": "self, pharmacophore, min_match_ratio=1.0, n_conformers=50, point_tolerance='0.10 nm', direction_tolerance='30 degrees', *, screening_method=None, score_method=None, skip_digestion=False, **native_options",
+      "before": "self, pharmacophore, min_match_ratio=1.0, n_conformers=50, point_tolerance='0.10 nm', direction_tolerance='30 degrees', *, screening_method=None, **native_options"
+    },
+    "pharmacophoremt/validation/retrospective.py:RetrospectiveValidator.__init__": {
+      "after": "self, pharmacophore, min_match_ratio=1.0, *, evaluator=None, score_method=None",
+      "before": "self, pharmacophore, min_match_ratio=1.0, *, evaluator=None"
+    }
+  },
+  "removed_public_definitions": {},
+  "method": "Static declared public function/constructor arguments from nonprivate Python modules; aliases/reexports/runtime validation/default meaning need owner review. AST inventory is not execution or compatibility qualification.",
+  "new_candidate_runtime_changes_planned": false,
+  "changed_paths": 1932,
+  "runtime_python_files_before": 136,
+  "runtime_python_files_reviewed": 173,
+  "changed_runtime_paths": 76,
+  "added_declared_functions": 72,
+  "scope": "Static declaration inventory includes implementation-owned declarations of reexported reader classes; not a count of independently public APIs or executed qualification.",
+  "controller_correction": "The first local collector passed an AST Module instead of its body. A corrected collector then included the public reader classes defined in underscore implementation modules. Original local attempts retained; no product code changed.",
+  "full_evidence": {
+    "path": "release_050_source_review_20261111_full.json.gz",
+    "compressed_bytes": 30952,
+    "compressed_sha256": "5920f186c97eab9b13676ad2886cefdda87d5a0b76cb0babf725e04439581a5f",
+    "uncompressed_bytes": 216609,
+    "uncompressed_sha256": "618ad5e230ac5324eeea8bf0966590c26febdcaa7df6fb1007fe7718739c6a8b"
+  }
+}

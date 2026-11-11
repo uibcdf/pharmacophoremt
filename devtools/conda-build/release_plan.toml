@@ -3,12 +3,12 @@
 # Public promotion remains conditional on the exact-file installed matrix.
 schema = "molsyssuite.conda-plan@1"
 package = "pharmacophoremt"
-version = "0.4.0"
+version = "0.5.0"
 build_number = 0
 route = "staged"
 profile = "noarch-python"
-reason = "First noarch delivery requires exact-file installed qualification on Linux and macOS arm64 with Python 3.11–3.14 before any public promotion."
-decision_by = "Repository maintainer, confirmed in the working session on 2026-10-23; uibcdf/pharmacophoremt#10."
+reason = "Prospective 0.5.0 package plan only: the maintainer selected a source-tag-only checkpoint. No package is built or published. A later package decision still requires exact-file Linux/macOS arm64 Python 3.11–3.14 installed qualification before public promotion."
+decision_by = "Liliana, working-session source-tag-only decision 2026-11-11 UTC; uibcdf/pharmacophoremt#95. Package delivery remains separately owned by #10/#23."
 artifact_subdirs = ["noarch"]
 test_platforms = ["linux-64", "osx-arm64"]
 python_versions = ["3.11", "3.12", "3.13", "3.14"]

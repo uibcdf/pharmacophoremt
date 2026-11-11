@@ -1,76 +1,55 @@
 # Release notes
 
-## 0.5.0 — draft consolidation
+## 0.5.0 — source-only consolidation
 
-This is a proposed release, not a published tag or package. The source review
-now includes changes through commit
-[`fbe6677f5a770a2123a2512fc3367a93209456ae`](https://github.com/uibcdf/pharmacophoremt/commit/fbe6677f5a770a2123a2512fc3367a93209456ae),
-extending the initial `3d26b28` review. This is a reviewed source snapshot.
-The exact release candidate, version plan and installed/public qualification
-remain pending under [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
-Use the [installation guide](installation.md) for the delivered 0.4.0 package.
+This cut records the implemented development scope. Delivery is an immutable
+source tag after exact-candidate validation; it includes no GitHub Release,
+Conda/PyPI package or hosted-documentation publication. Candidate status and the
+reviewed gate decision are tracked in [#95](https://github.com/uibcdf/pharmacophoremt/issues/95)
+and the [source-cut contract](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/release_0_5_0_source_cut.md).
+The [installation guide](installation.md) still describes the independently
+qualified public 0.4.0 package. Further feature development continues toward 0.6.0.
 
-### Later development after the reviewed snapshot
+### Prepared screening and independent saved evidence
 
-`PreparedRunPlan.describe()` now exposes exact query byte identity and the
-complete detached captured context. Console display shows method/criterion and
-size/hash, omitting query and context payloads. Existing fields, equality and
-saved schemas remain unchanged; exact software binding still governs execution.
-See the [inspection recipe](../cookbook/prepared_run_plan_inspection.md).
-This development addition does not select a release or establish full supported
-installed/public delivery.
+- Public `screening.PreparedInput` and `screen_prepared` consume explicitly
+  prepared inputs incrementally, preserve literal work/source/occurrence mappings
+  and export outcomes in encounter order. Valid negatives retain zero; failures
+  remain unscored. See [incremental screening](../cookbook/prepared_incremental_screening.md).
+- `PreparedRunPlan`, `build_prepared_run_plan`, `PreparedScreeningRun` and
+  `resume_prepared_run` provide explicit plan/create/open/resume composition.
+  Friendly run ownership and expert store operations use the same decisions.
+  [Recoverable screening](../cookbook/recoverable_prepared_screening.md) separates
+  confirmed deliveries, original attempts and the complete saved view.
+- The same-distribution `pharmacophoremt_results` namespace and its CLI inspect
+  saved progress, plans, source/work identities, selections and original details
+  without importing the scientific stack. Protected JSONL/CSV exports retain
+  original configuration/byte identities and explicit pending counts. Historical
+  experimental formats require explicit legacy admission and are not migrated.
+- `validation.summarize_screening_run` and `compare_screening_runs` use an
+  explicitly mapped original cohort, retain full summaries and recompute paired
+  metrics on common scored work. See [saved analysis](../cookbook/saved_run_analysis.md)
+  and [comparison](../cookbook/saved_run_comparison.md). Pending, failed and upstream
+  unavailable work remain distinct; a readable run is not scientific-resume admission.
+- The new same-distribution `pharmacophoremt_features.FeatureAssetView` reads a
+  pinned metadata archive, pages declared coverage and returns exact opaque
+  original bytes. The [guide and analytical download](../user/feature_archives.md)
+  demonstrate literal selections, global ordinals and evaluated-empty versus
+  unobserved families. Counts remain producer declarations. Native payload
+  decoding, quantity validation, source/query admission and public writers are
+  separate future capabilities.
 
-`validation.compare_screening_runs` now compares two verified saved runs against
-the same explicitly mapped cohort, preserving both complete summaries and
-recomputing paired metrics on their common scored originals. It retains native
-indices and separate pending/failure/upstream counts. See the
-[paired-run recipe](../cookbook/saved_run_comparison.md). Selected source and
-one exact owned installed artifact pass this workflow; full supported/public
-delivery remains separate, and no release is selected.
+`PreparedRunPlan.describe()` exposes exact captured query byte identity and a
+detached original context. Console display remains bounded and omits raw query/
+context bodies. Source/version changes can require a new linked execution run
+under the conservative software binding, while historical reading stays available.
 
-Verified saved runs now expose ordered `ScreeningRunView.work_items()`, including
-pending identities. `validation.summarize_screening_run` maps an explicitly
-labelled original cohort to those work keys and reuses the existing metrics
-without inventing native batch indices. Its separate summary schema retains
-original outcomes and distinguishes pending work, confirmed native failure and
-upstream unavailability. See the [analytical recipe](../cookbook/saved_run_analysis.md).
-Selected source and one exact owned installed artifact pass the declared
-analytical workflow. Full supported/public delivery remains separate; these
-later changes do not select a release version.
-
-The independent reader now receives exact released support payloads separately
-from scientific execution. SMonitor>=0.22.1 is required to preserve visible coded
-errors through nested filtered/silenced observations; older0.19 can retain the
-exception while losing its diagnostic event. Controlled source routes select the
-same published correction. This does not qualify a new complete PHMT artifact
-or the full supported installation/platform matrix.
-
-Recoverable prepared runs and the independent `pharmacophoremt_results` reader
-pass selected source controls, original-input and bounded owned installed
-receiving. The
-[recipe](../cookbook/recoverable_prepared_screening.md) separates new confirmed
-deliveries from the authoritative complete saved view, and preserves terminal
-failures, attempts and original producer evidence. Public writing uses a new
-versioned format; reading an experimental legacy run is explicit and does not
-migrate it. This later API delta needs its own candidate review and actual
-source/installed/public gates before release.
-
-Public `screening.PreparedInput` and `screen_prepared` now evaluate prepared
-inputs incrementally and export all mapped outcomes in encounter order. The
-[recipe](../cookbook/prepared_incremental_screening.md) loads a query, reads
-prepared files lazily and writes fresh JSONL/CSV outputs. Readers stay under
-application ownership; failures remain unscored and valid negatives retain zero.
-This adds no public resume/journal or managed collection contract and leaves
-`VirtualScreening.run`'s ranked hit list unchanged. Source and bounded owned-wheel
-receiving pass; full supported installed/public delivery remains pending.
-
-#105 adds the explicitly selected
-`donor_aromatic_carbonyl_aromatic_n_experimental` profile: native model2 carbonyl
-and model3 aromatic-N alternatives, preserving the older profiles. Its
-[contract and receiving](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_aromatic_n_generation.md)
-include analytical controls and real HIS524 cache consumption. This later source
-delta needs exact candidate/scope review under #95; it does not freeze0.5.0 or
-qualify biological utility or public provider delivery.
+The explicitly selected receptor profile
+`donor_aromatic_carbonyl_aromatic_n_experimental` adds model2 carbonyl and model3
+aromatic-N alternatives while retaining older profiles. Its
+[bounded evidence](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/public_cached_aromatic_n_generation.md)
+includes analytical controls and original HIS524 cache consumption, separately
+from biological utility or public molecular-provider delivery.
 
 ### New capabilities since 0.4.0
 
@@ -196,37 +175,52 @@ under [#41](https://github.com/uibcdf/pharmacophoremt/issues/41) /
 [MolSysMT #375](https://github.com/uibcdf/molsysmt/issues/375); newer source
 capabilities do not imply compatibility with every published provider version.
 
-### Remaining qualification before publication
+### Unit-policy compatibility
 
-The release must identify an exact source/closure and pass its required hosted
-source and installed-candidate gates. Historical/local selected passes are not
-a complete 0.5.0 release qualification. The Linux/macOS arm64 Python 3.11–3.14
-installed matrix and independent public receiving remain separate under #10/#23.
-Installed tests privately stage their receptor-study helpers/plans and cached
-scaling inputs. Test support is not shipped as runtime code.
+Importing PHMT after an application has already created a Pint quantity preserves
+that registry and its cache setting. The absent suite policy is still initialized;
+an existing application unit policy is retained. This removes a late cache request
+and its warning without changing unit conversion arithmetic or dependency pins.
 
-ArgDigest [0.17.1](https://github.com/uibcdf/argdigest/releases/tag/0.17.1) now
-publishes the #47/#48 corrections. Its exact Conda file is present under main
-and in the solver index. PHMT #82 now receives its verified bytes in an owned
-overlay and passes 500 selected source controls. The model-source replacement
-regression is repaired; the four native JSON/YAML codecs use definition-owned
-signature admission. Ordinary unknown-option errors now carry ARG-ERR-CONTRACT-001
-while remaining catchable as TypeError, replacing incidental Python message text.
-Later public-provider receiving on immutable source `9c16365` passes its selected
-controls, retaining modern-capability skips. A fresh registry/index check still
-finds MolSysMT 0.23.0 as the highest numeric version under the public main label;
-its historical workflows do not qualify the absent modern chemical-state/vector/
-direction APIs. Resolve the supported delivery boundary and receive actual bytes
-before freezing this full proposed scope. MolSysMT #255/#431 are closed source
-work, separate from public delivery. The broader direction proposal #375 remains
-with MolSysMT. Provider performance proposals add no candidate gate.
+### Interchange and numerical corrections
 
-Molecular SDF fidelity/ownership, hydrogen refinement, pockets and broader scientific
-validation keep their owning issues. This draft does not claim them repaired.
-The viewer addon, dynamics and AI are outside this consolidation's required scope.
+RDKit conversion exposes explicit point/feature representation, radius and loss/
+report options. Pharmer point reading preserves original enabled-point mappings
+with an explicit loss policy; unsupported query constructs remain visible. See
+[RDKit](../user/rdkit_interoperability.md) and [Pharmer](../user/pharmer_interoperability.md).
+These projections do not claim complete pharmacophore-query equivalence.
+
+Essential-triplet candidate pruning now retains the declared float64 roundoff
+band. The rigid pair-distance association correction preserves compatible native
+maps before final matching. Candidate admission does not enlarge physical radii,
+replace final pose predicates or establish an index/performance default.
+
+### Source qualification and separate package delivery
+
+The tag requires the exact committed candidate's complete source matrix and
+conformance/publication-governance checks; selected historical local/owned-wheel
+passes do not substitute for them. Receive actual counts, skips and qualified
+coverage identities across all three core/reader namespaces. The
+[source-cut decision](https://github.com/uibcdf/pharmacophoremt/blob/main/devguide/release_0_5_0_source_cut.md)
+and #95 retain the accepted source and terminal run evidence.
+
+No 0.5.0 package delivery is claimed. Complete public dependency closure, exact
+installed Linux/macOS arm64 Python 3.11–3.14 candidate gates and fresh public
+installation stay #10/#23-owned. Earlier public-provider observations and
+capability skips remain historical; controlled source pins do not establish a
+new published provider minimum. ArgDigest >=0.17.1, SMonitor >=0.22.1 and PyYAML
+>=5.1 retain their actual declared requirements. Saved reading creates no new
+scientific attribution or molecular calculation.
+
+Public native feature reconstruction/writers, generic molecular collections,
+production indexing/scale, wider receptor/retrospective science and representative
+human receiving remain future work. SDF ownership/fidelity, hydrogen refinement
+and pockets keep their owning issues. The viewer addon, dynamics and AI are not
+prerequisites for this consolidation. #148/#165 remain stopped under their
+recorded resource limits.
 
 Further pre-1.0 releases can include 0.10.0, 0.11.0 and later minors. Readiness
-for 1.0.0 depends on the agreed scope, contracts and evidence, not reaching 0.9.
+for 1.0.0 depends on agreed scope, contracts and evidence, not reaching 0.9.
 
 ## 0.4.0 — published 2026-10-23
 

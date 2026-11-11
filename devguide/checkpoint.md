@@ -9,37 +9,40 @@ preserved in checkpoint histories [2026-11-07](checkpoint_history_20261107.md) a
 
 ## Last received increment and next action
 
-[#189 read-only feature archive](feature_archive_format.md) now implements the
-same-distribution FeatureAssetView source API: open/pin/summary/page/original
-bytes/declared-coverage inspection/close. Public metadata integrity is separate
-from interpretation of opaque original payloads, quantity/geometry validation,
-source authentication and query admission. Raw study stores refuse; explicit
-unshipped export creates a distinct archive while retaining old evidence.
+The maintainer selected **0.5.0 as a source-only consolidation**, then development
+against 0.6.0. The [source-cut decision](release_0_5_0_source_cut.md) owns included
+APIs, migration, required exact-source gates and separate package status. No
+GitHub Release, package or hosted documentation publication is requested.
 
-The [completed receipt/archive](evidence/feature_asset_view_20261111.json) records
-98 selected source and 98 installed controls (54 reader/44 admission), the exact
-owned wheel from implementation commit `64bd805` (221 payload files/166 runtime
-Python bodies), two scientifically cold readers, all seven actual catalog errors,
-three executable guide blocks and no-new-credit original-byte/reference reading.
-The user guide includes an analytical download. All 26 administrative distribution
-controls pass; the inventory now covers the new namespace and selected fixtures.
-The [earlier source checkpoint](evidence/feature_asset_view_source_20261111.json)
-retains its original state.
+The [static review](evidence/release_050_source_review_20261111.json) starts at
+5fba1c8, 231 commits after 0.4.0, with 76 changed runtime Python paths and eight
+changed existing declared argument signatures in its explicit scope. This is
+review evidence, not a complete public-API inventory or executed qualification.
+[#190](archive/feature_archive_coverage.md) fixes missing feature-reader coverage;
+two scope/XML guards fail before and all four route/XML guards pass afterward.
+The prospective package plan names 0.5.0 but remains staged/unqualified.
+[#191](archive/preloaded_pint_bootstrap.md) preserves a preloaded Pint registry/
+cache while initializing only an absent policy; one corrected original-code
+failure becomes three real fresh-process passes. The
+[preparation receipt](evidence/release_050_preparation_20261111.json) retains the
+first control correction, seven canonical-guide checks and the isolated tool-owned
+PyUnitWizard guide synchronization. No provider/prefix/minimum change.
 
-Source and installed provider contexts are distinct: a live sibling changed Python
-and native files after source tests. The original fence refused before imports;
-installed controls use a separately frozen current provider context. Original
-captures keep their producer/version/native identity. This is no scientific
-requalification of changed MolSysMT. First collection/controller corrections and
-the pressure-interrupted build remain recorded; the single same-limit build resume
-retained its existing checkout. Shared environments were not changed.
+Next finish local preparation, commit/freeze one candidate and receive its complete
+source/conformance/publication-governance workflows, actual counts/coverage and
+canonical version probe. Tag only that tested source and deliver the suite notice.
+Do not add new capabilities while qualifying this cut. Package/public/platform
+artifact gates remain #10/#23-owned. MolSysMT#624 remains unreceived;
+QuantityRecord provisional; #148/#165 stopped. After the tag, native feature
+reconstruction with accepted formats/generation/quantity checks begins the 0.6.0
+workstream; public writers/recovery and human receiving remain independent.
 
-Next design explicit native reconstruction from this archive: declare accepted
-original formats, require an expected generation, validate quantities through
-PyUnitWizard and preserve original maps/attribution. Keep public writing/recovery
-as another slice and human receiving independent. MolSysMT#624 remains unreceived;
-QuantityRecord provisional; #148/#165 stopped; #9/#23 retain full exact-head/public/
-platform/release gates. No release or remote CI checkpoint is requested.
+The last implemented runtime boundary remains
+[#189 read-only feature archives](feature_archive_format.md), with its
+[98 source/98 installed control receipt](evidence/feature_asset_view_20261111.json),
+exact owned wheel, scientifically cold readers, original reference/no-new-credit
+reading and user download. Source/installed provider contexts differ explicitly;
+old captures and first-attempt records remain unchanged.
 
 ## Received foundations and their boundaries
 

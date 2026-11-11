@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (129)
+### Resolved (131)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -37,6 +37,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`esr1_activity_pilot.md`](esr1_activity_pilot.md) — [#62](https://github.com/uibcdf/pharmacophoremt/issues/62) — Frozen ligand-reference ERα assay pilot with held-out experimental outcomes. *(resolved, measured)*
 - [`esr1_consensus_comparison.md`](esr1_consensus_comparison.md) — [#64](https://github.com/uibcdf/pharmacophoremt/issues/64) — Compare training-only rigid consensus against a frozen reference on new assay CIDs. *(resolved, measured)*
 - [`expand_typed_retrieval.md`](expand_typed_retrieval.md) — [#182](https://github.com/uibcdf/pharmacophoremt/issues/182) — Receive six-family native retrieval with full-query cardinality and numerical boundaries. *(resolved, measured)*
+- [`feature_archive_coverage.md`](feature_archive_coverage.md) — [#190](https://github.com/uibcdf/pharmacophoremt/issues/190) — Include the feature-archive namespace in CI coverage before the 0.5.0 cut. *(resolved, reproduced)*
 - [`feature_reuse_route_inventory.md`](feature_reuse_route_inventory.md) — [#151](https://github.com/uibcdf/pharmacophoremt/issues/151) — Register the resource and native qualification workflows without bypassing dependency-route review. *(resolved, measured)*
 - [`g3ps_ranked_seed_tools.md`](g3ps_ranked_seed_tools.md) — [#28](https://github.com/uibcdf/pharmacophoremt/issues/28) — Expose G3PS neighborhood and ranked-guess stages as reusable native tools. *(resolved, measured)*
 - [`identify_reader_distribution.md`](identify_reader_distribution.md) — [#173](https://github.com/uibcdf/pharmacophoremt/issues/173) — Identify installed distribution metadata from the independent reader CLI. *(resolved, measured)*
@@ -88,6 +89,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`point_center_inspection.md`](point_center_inspection.md) — [#142](https://github.com/uibcdf/pharmacophoremt/issues/142) — Expose Point centers consistently in native geometry inspection. *(resolved, reproduced)*
 - [`portable_developer_handoff.md`](portable_developer_handoff.md) — [#107](https://github.com/uibcdf/pharmacophoremt/issues/107) — Prepare a truthful portable onboarding and machine-migration handoff. *(resolved, measured)*
 - [`pose_radius_boundary_units.md`](pose_radius_boundary_units.md) — [#84](https://github.com/uibcdf/pharmacophoremt/issues/84) — Preserve inclusive positive-site radius decisions across application units. *(resolved, measured)*
+- [`preloaded_pint_bootstrap.md`](preloaded_pint_bootstrap.md) — [#191](https://github.com/uibcdf/pharmacophoremt/issues/191) — Respect an already loaded Pint registry during unit-policy initialization. *(resolved, reproduced)*
 - [`prepare_pharmer_p1.md`](prepare_pharmer_p1.md) — [#161](https://github.com/uibcdf/pharmacophoremt/issues/161) — Freeze the P1 spherical-interior comparison and receive its PHMT arm. *(resolved, measured)*
 - [`prepare_pharmer_p1_external.md`](prepare_pharmer_p1_external.md) — [#164](https://github.com/uibcdf/pharmacophoremt/issues/164) — Prepare a source/executable/input/resource declaration for the external Pharmer P1 arm. *(resolved, measured)*
 - [`prepare_saved_inspection_exercise.md`](prepare_saved_inspection_exercise.md) — [#172](https://github.com/uibcdf/pharmacophoremt/issues/172) — Deliver a reproducible saved-inspection exercise and technical dry-run. *(resolved, measured)*

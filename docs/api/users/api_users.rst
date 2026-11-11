@@ -51,3 +51,15 @@ execution-compatibility decision.
 .. autoclass:: pharmacophoremt_results.ScreeningRunView
    :members:
 
+
+Saved feature evidence
+----------------------
+
+The :doc:`feature-archive guide </content/user/feature_archives>` demonstrates
+pinned metadata inspection, declared coverage and exact opaque original bytes.
+Scientific quantity reconstruction and source/query admission remain separate.
+
+.. autoclass:: pharmacophoremt_features.FeatureAssetView
+   :members:
+
+.. autoclass:: pharmacophoremt_features.FeatureAssetError

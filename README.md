@@ -6,7 +6,18 @@
 [![License](https://img.shields.io/github/license/uibcdf/pharmacophoremt)](https://github.com/uibcdf/pharmacophoremt/blob/main/LICENSE)
 [![Codecov](https://codecov.io/gh/uibcdf/pharmacophoremt/branch/main/graph/badge.svg)](https://app.codecov.io/gh/uibcdf/pharmacophoremt)
 
-Coverage measures the PharmacophoreMT core and independent saved-results companion, uploaded from Linux/Python 3.13 on eligible full CI runs. Weekly and conditional nightly recovery retain the existing cadence. The badge reflects the last uploaded report and can lag direct/skip-CI commits; it does not certify a full matrix or scientific correctness. The [XML namespace correction](devguide/coverage_xml_identity.md) is source-verified; corrected-head hosted file attribution remains pending under #141.
+Coverage measures the PharmacophoreMT core and both independent saved-results/
+feature-reader namespaces, uploaded from Linux/Python 3.13 on eligible full CI
+runs. Weekly and conditional nightly recovery retain their cadence. The badge
+reflects the last uploaded report and can lag direct/skip-CI commits; it does not
+certify a full matrix or scientific correctness. See the
+[namespace contract](devguide/coverage_xml_identity.md) and
+[0.5.0 source-cut qualification](devguide/release_0_5_0_source_cut.md).
+
+The **0.5.0 source cut** consolidates the implemented development APIs. Its
+[scope and qualification](devguide/release_0_5_0_source_cut.md) distinguish the
+source tag from package delivery. It adds no public 0.5.0 Conda/PyPI artifact;
+0.6.0 is the next development series.
 
 The development source supports Python **3.11–3.14** (`>=3.11,<3.15`). Release
 **[0.4.0](https://github.com/uibcdf/pharmacophoremt/releases/tag/0.4.0)** is public

@@ -37,6 +37,14 @@ Broader biological/activity and live-browser/hardware validation remain separate
 The qualified public delivery route for this release is Conda. PyPI installation
 has not been qualified.
 
+## 0.5.0 source checkpoint
+
+The [0.5.0 scope](release_notes.md) is a source-only consolidation, with exact
+candidate/tag status in [#95](https://github.com/uibcdf/pharmacophoremt/issues/95).
+It supplies no new Conda/PyPI artifact or ordinary public-installation claim.
+The public command above deliberately retains the qualified 0.4.0 version.
+Use a reviewed controlled dependency environment for development source.
+
 ## Development source
 
 Use a reviewed dependency environment before installing the local source:

@@ -1,5 +1,22 @@
 # Decisions and active workstreams
 
+## 0.5.0 source-only consolidation — #95 (2026-11-11 UTC)
+
+The maintainer selected the implemented scope for a 0.5.0 source tag after its
+required exact-candidate source checks; no GitHub Release or package/docs
+publication. The [source-cut contract](release_0_5_0_source_cut.md) and
+[static review](evidence/release_050_source_review_20261111.json) own the scope,
+migration and gate decision. #190 corrects the feature reader missing from
+coverage: two scope/XML guards fail before correction and all four route/XML
+guards pass afterward. Historical evidence keeps its original producers.
+
+Next freeze the preparation commit, receive complete hosted source/conformance/
+publication-governance evidence and verify canonical tag metadata before tagging.
+New native feature reconstruction/writers and broader capability work move to
+0.6.0. Full installed/public delivery remains #10/#23-owned; scientific/human/
+scale gates and stopped #148/#165 retain their separate scope.
+
+
 ## Read-only feature archive implementation — #189 (2026-11-11 UTC)
 
 The [public source API/format](feature_archive_format.md) and

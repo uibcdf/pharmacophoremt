@@ -73,3 +73,14 @@ current supported source/installed/public/platform gates and mature0.x acceptanc
 are not established by the XML fix. Projection#140 is separately received in
 source/one owned wheel; earlier open-state wording above belongs to initial
 receiving, not a reopened issue.
+
+## Feature-reader scope — 2026-11-11
+
+[#190](https://github.com/uibcdf/pharmacophoremt/issues/190) adds the independently
+shipped `pharmacophoremt_features` root. The actual CI-command XML guard now
+creates same-basename and unexecuted files across all three core/reader roots.
+Before correction, two scope/XML guards fail and two route guards pass; all four
+pass after adding only that root to source_pkgs. No new private omission or
+change to the complete source test selection is introduced. Hosted exact-head
+receiving belongs to the [0.5.0 source cut](release_0_5_0_source_cut.md), separately
+from the original two-root #141 receipts.

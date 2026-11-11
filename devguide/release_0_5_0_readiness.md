@@ -1,5 +1,15 @@
 # Proposed 0.5.0 consolidation
 
+## Current source-only decision — 2026-11-11 UTC
+
+The [0.5.0 source-cut decision](release_0_5_0_source_cut.md) supersedes the current
+planning status, without changing the historical observations below. The maintainer
+selected a source tag after exact-candidate checks, with no GitHub Release or
+package/docs publication, then development toward 0.6.0. The prospective package
+plan names 0.5.0 but remains staged and unqualified. Required source checks are
+still pending until their exact candidate receipts are received under #95/#9.
+
+
 ## Later recoverable-run and independent-reader API — 2026-11-07
 
 The [public prepared-run task](public_prepared_runs.md) adds plan/create/open/

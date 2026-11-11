@@ -1,4 +1,4 @@
-"""Actual CI coverage must retain both namespaces and unexecuted source files."""
+"""Actual CI coverage must retain all three roots and unexecuted source files."""
 
 import json
 import os
@@ -31,7 +31,11 @@ def test_ci_xml_keeps_same_basename_files_separate_and_unexecuted_files_visible(
         root = Path(directory)
         (root / ".coveragerc").write_bytes((ROOT / ".coveragerc").read_bytes())
         expected = set()
-        for package in ["pharmacophoremt", "pharmacophoremt_results"]:
+        for package in [
+            "pharmacophoremt",
+            "pharmacophoremt_results",
+            "pharmacophoremt_features",
+        ]:
             path = root / package
             path.mkdir()
             (path / "__init__.py").write_text("MARKER = " + repr(package) + "\n")
@@ -51,7 +55,7 @@ def test_ci_xml_keeps_same_basename_files_separate_and_unexecuted_files_visible(
         (root / "test_probe.py").write_text(
             "import importlib\n"
             "def test_fixture():\n"
-            "    for name in ['pharmacophoremt', 'pharmacophoremt_results']:\n"
+            "    for name in ['pharmacophoremt', 'pharmacophoremt_results', 'pharmacophoremt_features']:\n"
             "        assert importlib.import_module(name).MARKER == name\n"
             "        assert importlib.import_module(name+'.shared').choose(True) == 1\n"
             "    assert importlib.import_module('pharmacophoremt._private.hidden').VALUE == 1\n"
