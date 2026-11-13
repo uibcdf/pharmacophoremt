@@ -6,8 +6,9 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Active (2)
+### Active (3)
 
+- [`complete_interaction_argument_controls.md`](complete_interaction_argument_controls.md) — [#200](https://github.com/uibcdf/pharmacophoremt/issues/200) — Complete explicit argument controls for native interactions and composition. *(active, measured)*
 - [`qualify_public_library_workflow.md`](qualify_public_library_workflow.md) — [#108](https://github.com/uibcdf/pharmacophoremt/issues/108) — Qualify reproducible public-library acquisition, preparation and pharmacophore screening. *(active, measured)*
 - [`study_pharmacophore_tools.md`](study_pharmacophore_tools.md) — [#128](https://github.com/uibcdf/pharmacophoremt/issues/128) — Establish a pharmacophore-tool registry and an evidence-based comparison protocol. *(active, measured)*
 

@@ -9,6 +9,7 @@ from pharmacophoremt._ackredit import attributed
 from pharmacophoremt._private.arg_digestion.argument.interaction_collection import (
     digest_interaction_collection,
 )
+from pharmacophoremt._private.arg_digestion.interaction_queries import CONFIG
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 
 from .composition import compose_pharmacophores
@@ -16,7 +17,7 @@ from .interaction_based import from_interactions
 
 
 @signal(tags=["modeling", "interactions", "composition"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("molsysmt")
 def from_interaction_collection(
     molecular_system,
@@ -28,6 +29,7 @@ def from_interaction_collection(
     name=None,
     cation_mapping="exact",
     duplicate_policy="same_participant",
+    skip_digestion=False,
 ):
     """Build a joint hypothesis from a named collection of cached native analyses.
 
@@ -54,6 +56,10 @@ def from_interaction_collection(
         Public composition policy. Reuse compatible constraints without adding
         weights. Use `compose_pharmacophores` directly for independently edited
         component radii, flags or weights.
+    skip_digestion : bool, default=False
+        Bypass this call's argument digestion with canonical inputs. Native
+        collection/source/state/coverage and composition checks remain mandatory.
+        Internal adapter/composer calls explicitly reuse the established contract.
 
     Returns
     -------
@@ -121,11 +127,12 @@ def from_interaction_collection(
             radius=radius,
             cation_mapping=cation_mapping,
             name=label,
+            skip_digestion=True,
         )
         for label, observed in collection.items()
     }
     model = compose_pharmacophores(
-        components, duplicate_policy=duplicate_policy, name=name
+        components, duplicate_policy=duplicate_policy, name=name, skip_digestion=True
     )
     model.metadata["interaction_collection"] = dict(
         method="named_native_interaction_collection@1",

@@ -1,5 +1,10 @@
 # Current capability inventory
 
+The [interaction argument-control increment](interaction_query_argument_controls.md)
+adds explicit controls to three existing tools with267 source cases and nm/pm
+recipes. Child scientific guards and definitions remain unchanged; the collection
+uses known canonical internal calls. Broader public API adoption stays partial#6.
+
 The [final reference-control receiving](evidence/reference_argument_controls_20261112.json)
 adds the same272-case exact-owned evidence, actual public-provider controls and
 the real staged fixture-data correction#199 to the source slice below. This

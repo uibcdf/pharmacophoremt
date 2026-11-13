@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Native interaction argument controls — 2026-11-12 local date
+
+[#200](interaction_query_argument_controls.md) extends the explicit control to
+three public interaction/composition tools and establishes explicit True on the
+collection's canonical internal calls. [Source proof](evidence/interaction_argument_controls_source_20261112.json)
+passes267 cases, eight nm/pm guide blocks, strict docs and162 distribution checks.
+Scientific bodies/default settings and native guards retain their meanings.
+Next receive one exact owned artifact/public providers, then the object/curation
+facades under#6. The150-callable reexport inventory remains bounded, with32
+explicit controls and broader adoption still partial; full supported/public,
+provider#624 and stopped#148/#165 keep their independent gates.
+
 ## Reference controls and installed support received — 2026-11-12
 
 [#198](reference_query_argument_controls.md) and

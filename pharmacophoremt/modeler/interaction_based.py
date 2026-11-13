@@ -11,6 +11,7 @@ from pharmacophoremt._private.arg_digestion.argument._contracts import digest_ra
 from pharmacophoremt._private.arg_digestion.argument.cation_mapping import (
     digest_cation_mapping,
 )
+from pharmacophoremt._private.arg_digestion.interaction_queries import CONFIG
 from pharmacophoremt._private.molsysmt import detached, donor_directions, source_frame
 from pharmacophoremt._private.smonitor.exceptions import (
     ArgumentError,
@@ -101,7 +102,7 @@ def _ionic_role(relation, ligand):
 
 
 @signal(tags=["modeling", "interactions"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "molsysmt", "pyunitwizard")
 def from_interactions(
     molecular_system,
@@ -112,6 +113,7 @@ def from_interactions(
     radius="0.15 nm",
     name=None,
     cation_mapping="exact",
+    skip_digestion=False,
 ):
     """Construct sites from native hydrophobic, H-bond, ionic and aromatic contacts.
 
@@ -142,6 +144,9 @@ def from_interactions(
         For cation-pi observations, require exact shared charge-center membership
         or explicitly map a smaller observed cation into one containing positive
         center. Original reference atoms and charge measurements remain evidence.
+    skip_digestion : bool, default=False
+        Bypass argument digestion for this call only with canonical inputs.
+        Native profile, source/state/coverage and participant checks remain active.
 
     Returns
     -------

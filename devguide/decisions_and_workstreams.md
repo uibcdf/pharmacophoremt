@@ -1,5 +1,14 @@
 # Decisions and active workstreams
 
+## Native interaction argument adoption — 2026-11-12
+
+[#200's contract](interaction_query_argument_controls.md) adds three explicit
+public controls and known canonical internal True calls, preserving existing
+native checks and scientific bodies. [Source receiving](evidence/interaction_argument_controls_source_20261112.json)
+passes267 cases, nm/pm public recipes and strict docs. Exact-owned/public-provider
+receiving is next; broad public/object adoption remains#6 work. No source-data,
+molecular provider, scientific algorithm or performance claim changes.
+
 ## Reference controls and real installed staging received — 2026-11-12
 
 [#198](reference_query_argument_controls.md) and

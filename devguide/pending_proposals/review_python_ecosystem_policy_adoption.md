@@ -14,6 +14,17 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Interaction/composition source controls — 2026-11-12
+
+[#200](../interaction_query_argument_controls.md) implements the next three-entry
+slice of the public-control rule. Existing native checks remain active and the
+collection producer explicitly bypasses only its established child argument
+contracts. [Source proof](../evidence/interaction_argument_controls_source_20261112.json)
+passes51 new/216 existing cases, eight nm/pm guide blocks, strict docs and162
+distribution controls. Exact-owned/public-provider receiving follows the source
+freeze. The bounded150-callable inventory observes32 explicit controls/119 plans;
+effective delegation and complete adoption remain unqualified. #6 stays partial.
+
 ## Reference constructor and support-staging receiving — 2026-11-12
 
 [#198](../reference_query_argument_controls.md) receives both explicit reference

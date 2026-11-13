@@ -3,32 +3,31 @@
 Maintained 2026-11-12 local date; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 staircase](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding checkpoint is
-preserved in [dated history](checkpoint_history_20261112_before_reference_controls.md);
+preserved in [dated history](checkpoint_history_20261112_before_interaction_controls.md);
 earlier receipts and run identities remain unchanged.
 
-## Reference-query controls and installed test support received — #198/#199
+## Native interaction/composition controls — #200/#6
 
-The [argument contract](reference_query_argument_controls.md) adds explicit
-keyword-only `skip_digestion=False` to `from_feature_inventory`/`from_ligand`,
-with existing native semantics retained during bypass. Ordinary admission does
-not repeat its shared validation. The [support correction](installed_snapshot_test_support.md)
-declares five original assets required by the provider-owned helper stage.
-The first d86f637 artifact remains a failed staged receiving; source9158c71
-and its one new private wheel have their own measured identity.
+The [contract](interaction_query_argument_controls.md) adds explicit keyword-only
+`skip_digestion=False` and defining-owner closed contracts to `from_interactions`,
+`from_interaction_collection` and `compose_pharmacophores`. Existing native
+scientific checks remain. The collection producer explicitly skips child argument
+processing only for its established canonical adapter/composer calls, independently
+of the outer flag. Other nested scientific tools keep their own admission.
 
-The [combined receipt](evidence/reference_argument_controls_20261112.json)
-passes272 selected cases in each source/owned context,37 actual public-ArgDigest
-cases per context, public PUW0.28.1, twelve public guide-block executions,
-239 verified payloads/184 source-equal runtime bodies and162 distribution controls.
-All176 observed owned runtime modules are target-only. Original normal-validation
-and pm-harness hypotheses, report/receiver corrections and missing-data failures
-remain retained. Both bounded reports are resolved/archived; #6 stays partial.
+[Source receiving](evidence/interaction_argument_controls_source_20261112.json)
+passes51 new/216 existing cases, eight public guide blocks under nm/pm, strict docs
+and162 distribution controls. The original six keyword failures and43failed/6passed
+pre-implementation controls remain recorded. Static review preserves both adapter/
+composer bodies; collection differs only in the declared internal True keywords.
+The committed source is ready for one exact isolated artifact/public providers;
+that receiving is not inferred here. The bounded public inventory now observes
+150 callables/32 explicit controls/119 digestion plans; full adoption stays#6-owned.
 
-Liliana's public ArgDigest/explicit-skip and selective internal-digestion rule
-remains durable in root `AGENTS.md`. The bounded150-callable reexport audit
-observes29 explicit controls/119 digestion plans, with effective delegation and
-full export coverage still unqualified. The H0/H1 handoff remains delivered;
-actual BindingMT I0/H/I1 adoption remains owner work.
+[Reference controls/#198](reference_query_argument_controls.md),
+[installed support/#199](installed_snapshot_test_support.md) and the
+[native H0/H1 package](binding_interface_native_handoff.md) retain their original
+receiving. Actual BindingMT I0/H/I1 adoption remains owner work.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -49,12 +48,12 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Continue the public observed-interaction/composition controls under#6. Review
-actual defining contracts, nested canonical calls, scientific invariants and the
-bounded reexport inventory before migrating that family. Public/API adoption is
-not complete. #108 broader collection/product acceptance, MolSysMT#624, human,
-biological, scale and full installed/public/platform gates remain independent.
-Receive BindingMT I0/H/I1 later using its supplied package. #148/#165 stay stopped.
+Receive the exact committed #200 source from one isolated wheel and actual
+public ArgDigest/PyUnitWizard payloads, retaining actual provider-owned test
+staging. Then continue public object/curation facades, including merge, under#6
+with their defining contracts, canonical internal calls and scientific guards.
+Public adoption is not complete; #108, MolSysMT#624, human/biological/scale and
+full installed/public/platform gates remain independent. #148/#165 stay stopped.
 
 Preserve shared-prefix/migration pauses, original native/data identities and
 one-CPU/thread low-priority execution. No usable Slurm allocation was established;

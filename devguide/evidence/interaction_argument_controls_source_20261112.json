@@ -1,0 +1,2190 @@
+{
+  "existing_cases": 216,
+  "failures_final": 0,
+  "full_evidence": {
+    "compressed_bytes": 28950,
+    "compressed_sha256": "4bda10afcd93a920739cd0744ddc9e547db69fc1bcff8be5cf137a5eb734ae89",
+    "path": "interaction_argument_controls_source_20261112.json.gz",
+    "uncompressed_bytes": 417098,
+    "uncompressed_sha256": "5d061a34e530d964788090a2262a948d924dd2c63b30133a2537b3419dde2d29"
+  },
+  "issue": "uibcdf/pharmacophoremt#200",
+  "limits": [
+    "Existing editable Python3.14 during controlled prefix migration; no provider/native/prefix change.",
+    "Public seven-namespace inventory remains bounded and is not effective-delegation/API-wide certification.",
+    "No algorithm/schema/dependency/performance/biological/molecular-collection change or claim.",
+    "Full supported source/installed/public gates retain#9/#10/#23; #6 remains partial; #148/#165 remain stopped."
+  ],
+  "new_cases": 51,
+  "original_red_cases": {
+    "extra_dispatcher_cases_added_later": 2,
+    "failed": 43,
+    "passed": 6,
+    "total": 49
+  },
+  "owned_receiving": "Pending one exact committed-source private wheel and public-provider receiving; not inferred from source proof.",
+  "quality_checks": [
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/recipe-nm-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/recipe.py",
+        "nm",
+        "source"
+      ],
+      "exit_code": 0,
+      "name": "recipe-nm"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/recipe-pm-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/recipe.py",
+        "pm",
+        "source"
+      ],
+      "exit_code": 0,
+      "name": "recipe-pm"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/index-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "index"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/reporting-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "name": "reporting"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/archives-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "name": "archives"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/ruff-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "ruff"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/format-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "format"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/declarations-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "name": "declarations"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/environment-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/conda_environment.py",
+        "generate",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "environment"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/distribution-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "devtools.tests.test_distribution_contract"
+      ],
+      "exit_code": 0,
+      "name": "distribution"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/docs-quality.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "docs",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/html"
+      ],
+      "exit_code": 0,
+      "name": "docs"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-interaction-controls-20261112-1melniow/whitespace-quality.resources",
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "whitespace"
+    }
+  ],
+  "recipe_block_executions": 8,
+  "recipe_contexts": [
+    "source-nm",
+    "source-pm"
+  ],
+  "recorded_at_utc": "2026-11-13T03:48:58.949086+00:00",
+  "resource_policy": {
+    "CPU_seconds_typical": 120,
+    "DATA_per_process_bytes": 536870912,
+    "Slurm": "CLI found, no active job/allocation; bounded direct shared-workstation execution.",
+    "active_swap_si_so": [
+      0,
+      0
+    ],
+    "aggregate_RSS_cgroup_enforced": false,
+    "available_MiB_preflight": 53991,
+    "cpu": [
+      19
+    ],
+    "ionice": "idle",
+    "memory_PSI_avg10": 0,
+    "nice": 19,
+    "numerical_threads": 1,
+    "physical_RAM_MiB": 61968,
+    "reserve": "At least20%physical plus1.5GiB task margin; shared resources not reserved.",
+    "swap_used_MiB": 445,
+    "wall_seconds_typical": 180
+  },
+  "retention": {
+    "case": "/tmp/phmt-interaction-controls-20261112-1melniow",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "review_date": "2026-11-26"
+  },
+  "schema": "pharmacophoremt.interaction-controls.source-receiving@1",
+  "skips_final": 0,
+  "source_base": "2feb44c5cb8b175f4f3a1332b9c57197a90f9889",
+  "source_cases": 267,
+  "source_context": {
+    "affinity": [
+      19
+    ],
+    "api": {
+      "pharmacophoremt._private.smonitor.exceptions.PharmacophoreMTException.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.ArgumentTypeError.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/_private/smonitor/exceptions.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, message=None, *, code=None, extra=None, **context)"
+      },
+      "pharmacophoremt.attribution.attribution": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.attribution"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(enabled=True)"
+      },
+      "pharmacophoremt.attribution.attribution_report": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.attribution_report"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(attribution_data=None, format='markdown')"
+      },
+      "pharmacophoremt.io.ligandscout.from_ligandscout": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.from_ligandscout"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/ligandscout.py",
+        "observed_digestion_plan": false,
+        "signature": "(pharmacophore)"
+      },
+      "pharmacophoremt.io.ligandscout.to_ligandscout": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.to_ligandscout"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/ligandscout.py",
+        "observed_digestion_plan": false,
+        "signature": "(pharmacophore, file_name=None)"
+      },
+      "pharmacophoremt.io.pharmer.from_pharmer": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.from_pharmer"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, *, return_report=False, on_loss='warn')"
+      },
+      "pharmacophoremt.io.pharmer.to_pharmer": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.to_pharmer"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/pharmer.py",
+        "observed_digestion_plan": false,
+        "signature": "(pharmacophore, file_name)"
+      },
+      "pharmacophoremt.io.phmt.load_json": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.load_json"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(file_name)"
+      },
+      "pharmacophoremt.io.phmt.load_yaml": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.load_yaml"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(file_name)"
+      },
+      "pharmacophoremt.io.phmt.to_json": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.to_json"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, file_name)"
+      },
+      "pharmacophoremt.io.phmt.to_yaml": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.to_yaml"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, file_name)"
+      },
+      "pharmacophoremt.io.rdkit.load_rdkit": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.load_rdkit"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(rd_pharmacophore, *, radius='1 angstrom', return_report=False, on_loss='warn')"
+      },
+      "pharmacophoremt.io.rdkit.to_rdkit": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.to_rdkit"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, *, representation='points', return_report=False, on_loss='warn')"
+      },
+      "pharmacophoremt.io.sdf.load_sdf": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.load_sdf"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/sdf.py",
+        "observed_digestion_plan": false,
+        "signature": "(file_name)"
+      },
+      "pharmacophoremt.io.sdf.to_sdf": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.io.to_sdf"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/io/sdf.py",
+        "observed_digestion_plan": false,
+        "signature": "(pharmacophore, file_name)"
+      },
+      "pharmacophoremt.modeler.aligned_cliques.from_aligned_ligand_cliques": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.from_aligned_ligand_cliques"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(ligands, *, features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), min_support=2, min_sites=1, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', radius='0.15 nm', max_graph_nodes=64, max_cliques=1000, max_combinations=10000, name=None)"
+      },
+      "pharmacophoremt.modeler.aligned_cliques.get_aligned_consensus_hypotheses": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.get_aligned_consensus_hypotheses"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventories, *, ligand_ids, min_support=2, min_sites=1, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_graph_nodes=64, max_cliques=1000, max_combinations=10000)"
+      },
+      "pharmacophoremt.modeler.aligned_cliques.get_aligned_feature_cliques": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.get_aligned_feature_cliques"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventories, *, ligand_ids, min_support=2, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_graph_nodes=64, max_cliques=1000)"
+      },
+      "pharmacophoremt.modeler.aligned_consensus.from_aligned_ligands": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.from_aligned_ligands"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(ligands, *, reference_index=0, features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), min_support=2, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', radius='0.15 nm', max_matrix_entries=1000000, name=None)"
+      },
+      "pharmacophoremt.modeler.aligned_consensus.get_aligned_feature_matches": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.get_aligned_feature_matches"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(reference_inventory, feature_inventory, *, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_matrix_entries=1000000)"
+      },
+      "pharmacophoremt.modeler.aligned_consensus.get_consensus_sites": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.get_consensus_sites"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventories, correspondence_groups, *, ligand_ids, min_support=2, distance_tolerance='0.15 nm', direction_tolerance='30 degrees')"
+      },
+      "pharmacophoremt.modeler.complex_based.ComplexBasedModeler.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.ComplexBasedModeler.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_system, ligand_selection=None, receptor_selection=None, skip_digestion=False, *, interaction_collection=None, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant')"
+      },
+      "pharmacophoremt.modeler.complex_based.ComplexBasedModeler.build": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.ComplexBasedModeler.build"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, structure_indices=None)"
+      },
+      "pharmacophoremt.modeler.composition.compose_pharmacophores": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.compose_pharmacophores"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophores, *, duplicate_policy='keep', name=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.curation.copy_pharmacophore": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.copy_pharmacophore"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, *, name=None)"
+      },
+      "pharmacophoremt.modeler.curation.edit_pharmacophore": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.edit_pharmacophore"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, *, site_indices='all', essential=None, weight=None, radius=None, sigma=None, name=None, reason=None, in_place=False, skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.curation.extract_pharmacophore": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.extract_pharmacophore"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, *, site_indices='all', name=None, reason=None)"
+      },
+      "pharmacophoremt.modeler.curation.get_interaction_site_indices": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.get_interaction_site_indices"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, *, site_indices='all', feature_names=None, shape_names=None)"
+      },
+      "pharmacophoremt.modeler.dispatcher.model": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.model"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, method='complex-based', ligand_selection=None, receptor_selection=None, **kwargs)"
+      },
+      "pharmacophoremt.modeler.excluded_volumes.get_excluded_volume_sites": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.get_excluded_volume_sites"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventory, *, radius)"
+      },
+      "pharmacophoremt.modeler.feature_capture.capture_features": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.capture_features"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.features.get_features": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.get_features"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.interaction_based.from_interactions": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.from_interactions"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, interactions, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.interaction_collection.from_interaction_collection": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.from_interaction_collection"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, interaction_collection, ligand_selection, *, structure_index=0, radius='0.15 nm', name=None, cation_mapping='exact', duplicate_policy='same_participant', skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.ligand_based.LigandBasedModeler.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.LigandBasedModeler.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_systems, n_points=3, min_actives=None, n_conformers=50, conformer_rmsd_threshold=0.5, skip_digestion=False, *, consensus_method=None, **kwargs)"
+      },
+      "pharmacophoremt.modeler.ligand_based.LigandBasedModeler.build": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.LigandBasedModeler.build"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.modeler.modeler.Modeler.build": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.Modeler.build"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/modeler/modeler.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, **kwargs)"
+      },
+      "pharmacophoremt.modeler.receptor_generation.from_receptor_features": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.from_receptor_features"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventory, *, receptor_profile, donor_distances, aromatic_distances, radius, max_hypotheses, excluded_volume_inventory=None, excluded_volume_radius=None, acceptor_directions=None, acceptor_structure_position=None, acceptor_distances=None, acceptor_target_orientation=None, name=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.receptor_projections.from_receptor_projections": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.from_receptor_projections"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventory, *, projection_specs, radius='0.15 nm', name=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.reference_ligand.from_feature_inventory": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.from_feature_inventory"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(feature_inventory, *, radius='0.15 nm', name=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.reference_ligand.from_ligand": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.from_ligand"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, *, selection='all', structure_index=0, chemical_state='reference', features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), radius='0.15 nm', name=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.modeler.rigid_consensus.from_rigid_ligands": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.from_rigid_ligands"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(ligands, *, reference_index=0, correspondence_strategy='association_cliques', n_seeds=None, refinement_strategy=None, orientation_policy='final', features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), min_matches=3, min_support=2, min_sites=1, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', radius='0.15 nm', max_graph_nodes=64, max_cliques=1000, max_trials=10000, max_fits=1000, max_layouts=1000, max_combinations=10000, max_matrix_entries=1000000, name=None)"
+      },
+      "pharmacophoremt.modeler.structure_based.StructureBasedModeler.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.modeler.StructureBasedModeler.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_system, skip_digestion=False, *, feature_inventory=None, projection_specs=None, excluded_volume_inventory=None, excluded_volume_radius=None, radius='0.15 nm', name=None)"
+      },
+      "pharmacophoremt.modeler.structure_based.StructureBasedModeler.build": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.modeler.StructureBasedModeler.build"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, structure_indices=None)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, pharmacophore=None, form=None, name=None, description=None, molecular_system=None, score=None, ref_mol=None, ref_struct=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.add_interaction_site": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.add_interaction_site"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, interaction_site, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.add_to_NGLView": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.add_to_NGLView"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, view, color_palette='pharmacophoremt', skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.add_to_molsysviewer": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.add_to_molsysviewer"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, view, tag=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.copy": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.copy"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, name=None, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.get": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.get"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, selection='all', feature_name=None, shape_name=None, get_center=False, get_radius=False, get_direction=False, get_features=False, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.get_distance_matrix": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.get_distance_matrix"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.merge": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.merge"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/pharmacophore.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, other)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.remove_interaction_site": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.remove_interaction_site"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, index, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.set_essential": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.set_essential"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, index, essential, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.set_radius": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.set_radius"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, index, radius, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.set_sigma": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.set_sigma"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, index, sigma, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.set_weight": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.set_weight"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, index, weight, skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.show": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.show"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, color_palette='pharmacophoremt', skip_digestion=False)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.similarity": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.similarity"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/pharmacophore.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, other, tolerance_nm=0.15)"
+      },
+      "pharmacophoremt.pharmacophore.Pharmacophore.to_dataframe": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.Pharmacophore.to_dataframe"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.alignment.align_to_pharmacophore": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.align_to_pharmacophore"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, pharmacophore, correspondence, *, selection='all', structure_index=0, chemical_state='reference', feature_inventory=None)"
+      },
+      "pharmacophoremt.screening.conformer_screening.ConformerScreening.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.ConformerScreening.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0, search_method='placed_and_triplets')"
+      },
+      "pharmacophoremt.screening.conformer_screening.ConformerScreening.evaluate": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.ConformerScreening.evaluate"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_system, *, selection='all', structure_indices='all', chemical_state='reference', pose_id=None, on_error='raise')"
+      },
+      "pharmacophoremt.screening.conformer_screening.ConformerScreening.run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.ConformerScreening.run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_database, *, on_error='raise', **evaluation_options)"
+      },
+      "pharmacophoremt.screening.correspondence.get_correspondences": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.get_correspondences"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(pharmacophore, feature_inventory, *, point_tolerance='0.10 nm', max_trials=10000)"
+      },
+      "pharmacophoremt.screening.feature_geometry.evaluate_feature_correspondence": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.evaluate_feature_correspondence"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(reference_inventory, feature_inventory, feature_pairs, *, distance_tolerance='0.15 nm', direction_tolerance='30 degrees')"
+      },
+      "pharmacophoremt.screening.feature_neighborhoods.get_feature_pair_dissimilarities": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.get_feature_pair_dissimilarities"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(reference_inventory, feature_inventory, *, distance_tolerance='0.15 nm', max_matrix_entries=1000000)"
+      },
+      "pharmacophoremt.screening.feature_neighborhoods.rank_rigid_feature_correspondences": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.rank_rigid_feature_correspondences"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(correspondences, feature_pair_dissimilarities, *, n_seeds=None)"
+      },
+      "pharmacophoremt.screening.feature_reuse.reuse_feature_inventories": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.reuse_feature_inventories"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(view, required_families, *, expected_generation, payload_profile, work_keys=None)"
+      },
+      "pharmacophoremt.screening.pose_evaluation.PoseEvaluator.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PoseEvaluator.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, pharmacophore, *, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0)"
+      },
+      "pharmacophoremt.screening.pose_evaluation.PoseEvaluator.evaluate": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PoseEvaluator.evaluate"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_system, *, selection='all', structure_index=0, chemical_state='reference', pose_id=None)"
+      },
+      "pharmacophoremt.screening.pose_evaluation.PoseEvaluator.run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PoseEvaluator.run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_database, *, on_error='raise', **evaluation_options)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedRunPlan.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedRunPlan.__init__"
+        ],
+        "implementation_file": "<string>",
+        "observed_digestion_plan": false,
+        "signature": "(self, query_bytes: bytes, context_json: str) -> None"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedRunPlan.describe": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedRunPlan.describe"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedRunPlan.new_evaluator": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedRunPlan.new_evaluator"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, store, *, plan)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.attempts": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.attempts"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, work_key)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.close": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.close"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/prepared_runs.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.create": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.create"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(path, *, plan, manifest_path, run_id, parent_run_id=None)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.open": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.open"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(path, *, plan, manifest_path)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/prepared_runs.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.resume": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.resume"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, inputs)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.summary": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.summary"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.prepared_runs.PreparedScreeningRun.top_results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedScreeningRun.top_results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, limit=10)"
+      },
+      "pharmacophoremt.screening.prepared_runs.build_prepared_run_plan": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.build_prepared_run_plan"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(query_path, *, screening_method, score_method, compatibility, constructor_options=None, evaluation_options=None, on_error='record')"
+      },
+      "pharmacophoremt.screening.prepared_runs.resume_prepared_run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.resume_prepared_run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(ledger, inputs, *, plan)"
+      },
+      "pharmacophoremt.screening.prepared_screening.PreparedInput.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.PreparedInput.__init__"
+        ],
+        "implementation_file": "<string>",
+        "observed_digestion_plan": false,
+        "signature": "(self, work_key: str, source_key: str, occurrence_key: str, molecular_system: object) -> None"
+      },
+      "pharmacophoremt.screening.prepared_screening.screen_prepared": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.screen_prepared"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(inputs, evaluator, *, score_method, on_error='raise', evaluation_options=None)"
+      },
+      "pharmacophoremt.screening.rigid_correspondence.get_rigid_feature_correspondences": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.get_rigid_feature_correspondences"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(reference_inventory, feature_inventory, *, correspondence_strategy='association_cliques', distance_tolerance='0.15 nm', min_matches=3, max_graph_nodes=64, max_cliques=1000, max_trials=10000, n_seeds=None, max_matrix_entries=1000000)"
+      },
+      "pharmacophoremt.screening.rigid_placements.get_rigid_feature_placements": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.get_rigid_feature_placements"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, reference_inventory, correspondences, *, selection='all', structure_index=0, chemical_state='reference', features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), feature_inventory=None, min_matches=3, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_fits=1000, max_matrix_entries=1000000)"
+      },
+      "pharmacophoremt.screening.rigid_refinement.refine_rigid_feature_correspondences": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.refine_rigid_feature_correspondences"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(molecular_system, reference_inventory, correspondences, *, selection='all', structure_index=0, chemical_state='reference', features=('hydrophobicity', 'hb donor', 'hb acceptor', 'aromatic ring', 'positive charge', 'negative charge'), feature_inventory=None, orientation_policy='final', min_matches=3, distance_tolerance='0.15 nm', direction_tolerance='30 degrees', max_fits=1000, max_matrix_entries=1000000)"
+      },
+      "pharmacophoremt.screening.rigid_search.RigidPoseSearch.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.RigidPoseSearch.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, pharmacophore, *, max_trials=10000, point_tolerance='0.10 nm', direction_tolerance='30 degrees', min_fit_value=0.0, search_method='placed_and_triplets')"
+      },
+      "pharmacophoremt.screening.rigid_search.RigidPoseSearch.evaluate": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.RigidPoseSearch.evaluate"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_system, *, selection='all', structure_index=0, chemical_state='reference', pose_id=None)"
+      },
+      "pharmacophoremt.screening.rigid_search.RigidPoseSearch.run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.RigidPoseSearch.run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecular_database, *, on_error='raise', **evaluation_options)"
+      },
+      "pharmacophoremt.screening.scoring.get_screening_score": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.get_screening_score"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(result, *, score_method)"
+      },
+      "pharmacophoremt.screening.virtual_screening.VirtualScreening.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.screening.VirtualScreening.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, pharmacophore, min_match_ratio=1.0, n_conformers=50, point_tolerance='0.10 nm', direction_tolerance='30 degrees', *, screening_method=None, score_method=None, skip_digestion=False, **native_options)"
+      },
+      "pharmacophoremt.screening.virtual_screening.VirtualScreening.run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.screening.VirtualScreening.run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, molecular_database, skip_digestion=False, *, on_error='raise', **evaluation_options)"
+      },
+      "pharmacophoremt.screening.virtual_screening.VirtualScreening.to_csv": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.VirtualScreening.to_csv"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/virtual_screening.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, file_name)"
+      },
+      "pharmacophoremt.screening.virtual_screening.VirtualScreening.to_dataframe": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.VirtualScreening.to_dataframe"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/virtual_screening.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt.screening.virtual_screening.VirtualScreening.to_sdf": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.screening.VirtualScreening.to_sdf"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/screening/virtual_screening.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, file_name)"
+      },
+      "pharmacophoremt.validation.loo.LeaveOneOutValidator.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.LeaveOneOutValidator.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/validation/loo.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, modeler_class, modeler_kwargs=None, min_match_ratio=1.0, *, evaluator_factory=None)"
+      },
+      "pharmacophoremt.validation.loo.LeaveOneOutValidator.run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.validation.LeaveOneOutValidator.run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, molecules, skip_digestion=False, **evaluation_options)"
+      },
+      "pharmacophoremt.validation.metrics.bedroc": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.validation.bedroc"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(labels, scores, alpha=20.0, *, skip_digestion=False)"
+      },
+      "pharmacophoremt.validation.metrics.enrichment_factor": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.validation.enrichment_factor"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(labels, scores, fraction=0.01, *, skip_digestion=False)"
+      },
+      "pharmacophoremt.validation.metrics.roc_auc": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.validation.roc_auc"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(labels, scores, *, skip_digestion=False)"
+      },
+      "pharmacophoremt.validation.retrospective.RetrospectiveValidator.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.RetrospectiveValidator.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, pharmacophore, min_match_ratio=1.0, *, evaluator=None, score_method=None)"
+      },
+      "pharmacophoremt.validation.retrospective.RetrospectiveValidator.run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": true,
+        "explicit_control": true,
+        "exports": [
+          "pharmacophoremt.validation.RetrospectiveValidator.run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, actives, decoys, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0, skip_digestion=False, *, on_error='raise', **evaluation_options)"
+      },
+      "pharmacophoremt.validation.rigid_consensus.summarize_rigid_consensus": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.summarize_rigid_consensus"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(consensus_report)"
+      },
+      "pharmacophoremt.validation.saved_results.compare_screening_results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.compare_screening_results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(cohort, baseline, comparison, *, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0)"
+      },
+      "pharmacophoremt.validation.saved_results.summarize_screening_results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.summarize_screening_results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(cohort, evaluations, *, input_mapping, score_method, unscored=(), source_metadata=None, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0)"
+      },
+      "pharmacophoremt.validation.screening_runs.compare_screening_runs": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.compare_screening_runs"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(cohort, baseline, comparison, *, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0)"
+      },
+      "pharmacophoremt.validation.screening_runs.summarize_screening_run": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt.validation.summarize_screening_run"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(run_view, cohort, *, input_mapping, score_method, unscored=(), source_metadata=None, ef_fractions=(0.01, 0.05, 0.1), bedroc_alpha=20.0)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_features/_api.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.close": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.close"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.inspect": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.inspect"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, required_families, *, work_keys=None)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.open": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.open"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(path, *, generation=None)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.payload_info": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.payload_info"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, ordinal)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.snapshot_bytes": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.snapshot_bytes"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, ordinal)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.summary": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.summary"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_features._api.FeatureAssetView.work_items": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetView.work_items"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, work_keys=None, offset=0, limit=100)"
+      },
+      "pharmacophoremt_features._diagnostics.FeatureAssetError.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_features.FeatureAssetError.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_features/_diagnostics.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, message=None, *, code=None, argument=None)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/_api.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, ledger)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.attempts": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.attempts"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, work_key)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.begin": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.begin"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, work_key)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.close": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.close"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/_api.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.committed": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.committed"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, work_key)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.create": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.create"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(path, *, run_id, query_bytes, context, manifest_path, parent_run_id=None)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.expected": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.expected"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, ordinal)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.open": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.open"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(path, *, query_bytes, context, manifest_path)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.progress": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.progress"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.publish": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.publish"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, attempt_id)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.stage": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.stage"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, attempt_id, outcome)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.summary": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.summary"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, score_method)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunStore.top_results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunStore.top_results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, score_method, limit)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/_api.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, view)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.close": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.close"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/_api.py",
+        "observed_digestion_plan": false,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.open": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.open"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(path, *, allow_legacy=False)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.progress": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.progress"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.source_items": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.source_items"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.summary": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.summary"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, score_method)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.to_csv": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.to_csv"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, path)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.to_jsonl": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.to_jsonl"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, path)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.top_results": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.top_results"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, score_method, limit)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.work_item": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.work_item"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, work_key)"
+      },
+      "pharmacophoremt_results._api.ScreeningRunView.work_items": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunView.work_items"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(self, *, status=None, source_key=None)"
+      },
+      "pharmacophoremt_results._api.canonical_json": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.canonical_json"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/core/decorator.py",
+        "observed_digestion_plan": true,
+        "signature": "(value)"
+      },
+      "pharmacophoremt_results._api.main": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.main"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/_api.py",
+        "observed_digestion_plan": false,
+        "signature": "(argv=None)"
+      },
+      "pharmacophoremt_results._diagnostics.ScreeningRunError.__init__": {
+        "classification": "observed callable; delegation/inheritance/scientific gates need owning review",
+        "default_false": false,
+        "explicit_control": false,
+        "exports": [
+          "pharmacophoremt_results.ScreeningRunError.__init__"
+        ],
+        "implementation_file": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt_results/_diagnostics.py",
+        "observed_digestion_plan": false,
+        "signature": "(self, message=None, *, operation=None, reason=None, **context)"
+      }
+    },
+    "counts": {
+      "explicit_control": 32,
+      "observed_digestion_plan": 119,
+      "unique_declared_callables": 150
+    },
+    "executable": "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+    "limits": {
+      "CPU": [
+        45,
+        45
+      ],
+      "DATA": [
+        536870912,
+        536870912
+      ]
+    },
+    "native_binary": {
+      "path": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/_rust.abi3.so",
+      "sha256": "2dbcf13d148cb3ae13a5908707fcdd61c75a2de5027e50c566ce07de81bdb038"
+    },
+    "nice": 19,
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.43",
+    "providers": {
+      "ackredit": {
+        "distribution_version": "0.12.2+2.g0bb26ec",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+        "runtime_version": "0.12.2+2.g0bb26ec"
+      },
+      "argdigest": {
+        "distribution_version": "0.17.1+6.g7be790b",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+        "runtime_version": "0.17.1+6.g7be790b"
+      },
+      "depdigest": {
+        "distribution_version": "0.15.2+3.g5e93eaf",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+        "runtime_version": "0.15.2+3.g5e93eaf"
+      },
+      "molsysmt": {
+        "distribution_version": "0.23.0+904.gff25f1202",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+        "runtime_version": "0.23.0+904.gff25f1202"
+      },
+      "pharmacophoremt": {
+        "distribution_version": "0.5.0+7.g35559b3",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+        "runtime_version": "0.5.0+7.g35559b3"
+      },
+      "pyunitwizard": {
+        "distribution_version": "0.29.5+2.gcc51c8e",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+        "runtime_version": "0.29.5+2.gcc51c8e"
+      },
+      "smonitor": {
+        "distribution_version": "0.23.0+3.g4a4cd1e",
+        "origin": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+        "runtime_version": "0.23.0+3.g4a4cd1e"
+      }
+    },
+    "python": "3.14.10 | packaged by conda-forge | (main, Oct 26 2026, 11:35:38) [GCC 15.3.0]",
+    "schema": "pharmacophoremt.interaction-controls.source-context@1",
+    "scope": "Reexports declared by seven runtime namespace __init__ modules, handwritten/generated public functions/methods including inherited implementations; not every submodule, addon or Python protocol"
+  },
+  "source_overlay_sha256": {
+    "pharmacophoremt/_private/arg_digestion/interaction_queries.py": "5a6d3096a78e6fac242d3bb1331129d94e8531c76e02c207b604fb2d0017369e",
+    "pharmacophoremt/modeler/composition.py": "390282ad75627f9c89540aa9716f7a6fbfbb337ab254b4714ecab7cdad4cee84",
+    "pharmacophoremt/modeler/interaction_based.py": "1074e20953a6b7d931b86bdf58564b39dcf0c54d291f563e38167741da245688",
+    "pharmacophoremt/modeler/interaction_collection.py": "f08048da55ad7d5bd3a0a24d76e82c2da2e2899e5c2a4162235c00d245b53e9e",
+    "tests/test_interaction_argument_controls.py": "f7b384fa33d4633df0eb1585a372dda491b24919e9fbbdf5709efc729daa4498"
+  },
+  "static_preservation": [
+    {
+      "additive_keyword_only_control": true,
+      "operation": "from_interactions",
+      "scientific_body_equal_except_declared_internal_bypass": true
+    },
+    {
+      "additive_keyword_only_control": true,
+      "operation": "from_interaction_collection",
+      "scientific_body_equal_except_declared_internal_bypass": true
+    },
+    {
+      "additive_keyword_only_control": true,
+      "operation": "compose_pharmacophores",
+      "scientific_body_equal_except_declared_internal_bypass": true
+    }
+  ]
+}

@@ -14,6 +14,7 @@ from pharmacophoremt._private.arg_digestion.argument.duplicate_policy import (
 from pharmacophoremt._private.arg_digestion.argument.pharmacophores import (
     digest_pharmacophores,
 )
+from pharmacophoremt._private.arg_digestion.interaction_queries import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt._version import __version__
@@ -217,9 +218,11 @@ def _equal(first, second):
 
 
 @signal(tags=["modeling", "composition"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "pyunitwizard")
-def compose_pharmacophores(pharmacophores, *, duplicate_policy="keep", name=None):
+def compose_pharmacophores(
+    pharmacophores, *, duplicate_policy="keep", name=None, skip_digestion=False
+):
     """Compose named hypotheses declared in one coordinate frame.
 
     Parameters
@@ -236,6 +239,9 @@ def compose_pharmacophores(pharmacophores, *, duplicate_policy="keep", name=None
         1e-12 nm/dimensionless representation tolerance; disk normal sign is free.
     name : str, optional
         Output name. Input names/descriptions/scores remain component provenance.
+    skip_digestion : bool, default=False
+        Bypass this call's argument digestion with canonical inputs. Mapping,
+        frame/state, membership and constraint checks remain mandatory.
 
     Returns
     -------

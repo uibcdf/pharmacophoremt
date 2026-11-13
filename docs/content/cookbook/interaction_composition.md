@@ -130,6 +130,39 @@ composition can also combine a positive query with an independently constructed
 [exclusion model](excluded_volumes.md). Input scores remain component provenance;
 the tool does not invent a score for the combined hypothesis.
 
+## Explicit argument controls
+
+Development source exposes keyword-only `skip_digestion=False` on the adapter,
+collection constructor and composer. Ordinary calls and explicit False digest
+arguments. Use True only after the application has established canonical inputs,
+including its active unit policy. This continuation uses the cached analyses above:
+
+```python
+canonical_radius = puw.standardize(puw.quantity(.02, 'nm'))
+expert_query = from_interaction_collection(
+    source, analyses, ligand, radius=canonical_radius, skip_digestion=True,
+)
+expert_pieces = {
+    label: from_interactions(
+        source, observed, ligand, radius=canonical_radius,
+        name=label, skip_digestion=True,
+    )
+    for label, observed in analyses.items()
+}
+expert_modular = compose_pharmacophores(
+    expert_pieces, duplicate_policy='same_participant', skip_digestion=True,
+)
+assert expert_query.n_interaction_sites == expert_modular.n_interaction_sites == 9
+assert expert_query.metadata['site_map'] == expert_modular.metadata['site_map']
+```
+
+The collection parent explicitly avoids repeating argument digestion on its
+established internal adapter/composer calls. Native profile, source/state/map,
+coverage, participant and constraint checks remain active. Other nested scientific
+tools keep their own admission. Cached composition performs no recognition;
+constructing from observations still uses the necessary native recognition and
+geometry. This is an argument control, without a measured speed claim.
+
 ## Capture actual work and persist the query
 
 Detect inside an application-owned Ackredit capture to retain the actual method
