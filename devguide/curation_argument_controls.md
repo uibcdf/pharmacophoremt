@@ -70,3 +70,48 @@ reexport inventory observes150 callables/36 controls/120 plans, not complete
 API/delegation qualification. Final source pytest uses authenticated cached
 public Pytest Receptor1.2.2; early inherited-source-receptor/native-output
 attempts remain recorded. Exact-owned/public-provider receiving follows freeze.
+
+## Installed receiving oracle correction
+
+The unchanged c2ad4e6 wheel first passes 52 and fails 4 new controls with public
+PUW 0.28.1. The new save/read oracle incorrectly requires bitwise numerical
+equality after pm conversion; observed differences are about 1e-16 nm. Compare
+only the declared sphere/Gaussian center/radius/sigma fields in explicit nm
+with rtol=0 and atol=1e-14 nm. Assert their complete expected shape-key sets and retain
+exact equality for every other model/site/shape/provenance/constraint field.
+Default/False/True output equality still remains exact within each policy.
+
+This is a correction to the new test, with no runtime/provider/native-input
+change. Keep the original four failures and source receipt. Receive the corrected
+test as an explicit hashed, unshipped harness overlay against the same exact
+wheel; source receiving executes that same corrected guard. Record its eventual
+commit separately from the c2ad4e6 runtime producer. No generic tolerance or
+producer/unit-field stripping is introduced. Ordinary conversion roundoff does
+not establish a provider defect; the incorrect equality requirement belongs to
+this new consumer test.
+
+## Exact-owned and public-provider receiving — 2026-11-12 local date
+
+The [combined receipt](evidence/curation_argument_controls_20261112.json)
+receives the unchanged c2ad4e60ec44042d29435463dc7f1c6348a368a8 runtime source
+and private wheel `0.5.0+32.gc2ad4e6`: 240 verified payloads and 185 source-equal
+runtime bodies. All 319 selected owned cases pass with public PUW 0.28.1;
+56 corrected public-ArgDigest 0.17.1 controls pass per source/owned context.
+The 263 unchanged existing source cases retain their original receipt; the
+corrected 56-case guard is executed again in source with the public providers.
+The unshipped test overlay has an explicit hash; it is not relabelled as part of
+the original artifact's source commit. The original 4 failures/52 passes remain.
+
+Eighteen public guide blocks pass across development source/public-floor source/
+public-floor owned contexts and nm/pm. Actual SDK staging supplies the declared
+unshipped helpers/data; all 167 observed PHMT runtime modules are target-only.
+Public PUW's 93 files, ArgDigest's 48 and Pytest Receptor 1.2.2's 15 retain their
+verified payload identities. Inherited other dependencies and the legacy prefix
+retain their separate limitations. Harness assertion-rewrite and existing
+optional-Beartype warnings are preserved, not suppressed or called zero warnings.
+
+The bounded #203 slice is received; broader #6 and all supported source/installed/
+public/platform gates remain separate. No scientific runtime, original input or
+provider change is made for the rounding correction. The raw per-process peak
+RSS is 392432 KiB across retained attempts, not incremental allocation or a
+performance comparison. Retain task/artifact logs until review on 2026-11-26.

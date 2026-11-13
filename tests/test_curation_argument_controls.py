@@ -4,6 +4,7 @@ import inspect
 from copy import deepcopy
 
 import molsysmt as msm
+import numpy as np
 import pytest
 from argdigest import describe_contract
 
@@ -105,7 +106,36 @@ def test_default_false_true_preserve_native_output_and_independent_ownership(
             path = tmp_path / f"{index}.json"
             io.to_json(result, path)
             restored = io.load_json(path)
-            assert _to_dict(restored) == _to_dict(result)
+            saved, rebuilt = _to_dict(result), _to_dict(restored)
+            for expected_site, actual_site, expected, actual in zip(
+                result.interaction_sites,
+                restored.interaction_sites,
+                saved["interaction_sites"],
+                rebuilt["interaction_sites"],
+            ):
+                fields = {
+                    "sphere": ("center", "radius"),
+                    "gaussian kernel": ("center", "sigma"),
+                }[expected_site.shape_name]
+                assert (
+                    set(expected["shape"])
+                    == set(actual["shape"])
+                    == {
+                        "type",
+                        *fields,
+                    }
+                )
+                for field in fields:
+                    np.testing.assert_allclose(
+                        puw.get_value(getattr(actual_site.shape, field), to_unit="nm"),
+                        puw.get_value(
+                            getattr(expected_site.shape, field), to_unit="nm"
+                        ),
+                        atol=1e-14,
+                        rtol=0,
+                    )
+                    del expected["shape"][field], actual["shape"][field]
+            assert rebuilt == saved
             result.interaction_sites[0].features.append("aromatic ring")
             result.interaction_sites[0].shape.center += puw.quantity([1, 0, 0], "nm")
             assert _to_dict(source) == before

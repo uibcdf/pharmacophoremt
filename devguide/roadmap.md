@@ -1,5 +1,18 @@
 # Strategic roadmap
 
+## Cached curation and merge received — 2026-11-12 local date
+
+[#203](curation_argument_controls.md) is received with [complete evidence](evidence/curation_argument_controls_20261112.json):
+319 selected cases per source/owned context, 56 public-ArgDigest controls per
+context, public PUW 0.28.1/Pytest Receptor 1.2.2, 18 nm/pm guide blocks and
+240 payloads/185 equal runtime bodies. The unchanged c2ad4e6 artifact's original
+four pm save/read assertion failures remain; the corrected unshipped test overlay
+uses explicit-nm geometry tolerances and exact remaining records. Runtime source
+and test overlay identities are separate; no provider/runtime repair follows.
+Next review remaining object comparison/cached-accessor contracts under #6.
+The 150-callable/36-control/120-plan inventory is bounded; full supported/public,
+provider collection/human/biological/scale and stopped #148/#165 stay separate.
+
 ## Cached curation argument controls in source — 2026-11-12 local date
 
 [#203](curation_argument_controls.md) receives explicit selection/copy/extraction/

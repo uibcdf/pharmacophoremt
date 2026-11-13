@@ -5,7 +5,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 
 <!-- generated: devguide_index -->
 
-### Resolved (141)
+### Resolved (142)
 
 - [`administrative_sqlite_lifetimes.md`](administrative_sqlite_lifetimes.md) — [#153](https://github.com/uibcdf/pharmacophoremt/issues/153) — Identify and close SQLite handles left open during administrative controls. *(resolved, measured)*
 - [`adopt_reporting_lifecycle.md`](adopt_reporting_lifecycle.md) — [#8](https://github.com/uibcdf/pharmacophoremt/issues/8) — Adopt the MolSysSuite issue-backed reporting lifecycle locally. *(resolved, inspected)*
@@ -25,6 +25,7 @@ See the [local reporting protocol](../reporting_protocol.md).
 - [`compare_pmapper_screening_stages.md`](compare_pmapper_screening_stages.md) — [#175](https://github.com/uibcdf/pharmacophoremt/issues/175) — Execute source-pinned pmapper and PHMT analytical screening-stage controls. *(resolved, measured)*
 - [`compare_saved_screening_runs.md`](compare_saved_screening_runs.md) — [#147](https://github.com/uibcdf/pharmacophoremt/issues/147) — Compare original labelled cohorts directly across verified saved screening runs. *(resolved, reproduced)*
 - [`compare_typed_distance_retrieval.md`](compare_typed_distance_retrieval.md) — [#178](https://github.com/uibcdf/pharmacophoremt/issues/178) — Compare bounded typed-distance retrieval with exhaustive full-query proposals. *(resolved, measured)*
+- [`complete_curation_argument_controls.md`](complete_curation_argument_controls.md) — [#203](https://github.com/uibcdf/pharmacophoremt/issues/203) — Complete explicit argument controls for cached curation and merge. *(resolved, measured)*
 - [`complete_interaction_argument_controls.md`](complete_interaction_argument_controls.md) — [#200](https://github.com/uibcdf/pharmacophoremt/issues/200) — Complete explicit argument controls for native interactions and composition. *(resolved, measured)*
 - [`complete_reference_argument_controls.md`](complete_reference_argument_controls.md) — [#198](https://github.com/uibcdf/pharmacophoremt/issues/198) — Complete explicit argument controls for native reference-query construction. *(resolved, measured)*
 - [`complex_pdb_feature_recovery.md`](complex_pdb_feature_recovery.md) — [#5](https://github.com/uibcdf/pharmacophoremt/issues/5) — Recover chemical features from PDB complex during pharmacophore extraction. *(resolved, reproduced)*
