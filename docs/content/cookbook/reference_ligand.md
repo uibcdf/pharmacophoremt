@@ -34,7 +34,7 @@ fixture with your prepared ligand and its appropriate selection in real use.
 ```python
 import molsysmt as msm
 from pharmacophoremt import pyunitwizard as puw
-from pharmacophoremt.modeler import from_ligand, get_features
+from pharmacophoremt.modeler import from_feature_inventory, from_ligand, get_features
 from pharmacophoremt.screening import PoseEvaluator
 
 source = msm.convert(
@@ -67,6 +67,36 @@ indices, unit-bearing centers, directions/normals, charges and provider evidence
 initially have `essential=True` and `weight=1`; curate those choices according to
 your scientific hypothesis before constructing the evaluator, which snapshots
 the query. A reference feature is not automatically evidence of a binding role.
+
+## Reuse an inventory with explicit argument controls
+
+`from_feature_inventory()` builds from retained native features without molecular
+access or recognition. The following block continues with the prepared source
+and inventory above. Development source exposes keyword-only
+`skip_digestion=False` on both constructors, as on `get_features()`.
+
+```python
+canonical_radius = puw.standardize(puw.quantity(0.10, 'nm'))
+retained_query = from_feature_inventory(
+    inventory, radius=canonical_radius, skip_digestion=True,
+)
+expert_query = from_ligand(
+    source, features=['hydrophobicity'], radius=canonical_radius,
+    skip_digestion=True,
+)
+assert retained_query.n_interaction_sites == expert_query.n_interaction_sites == 1
+assert PoseEvaluator(retained_query).evaluate(source)['status'] == 'matched'
+```
+
+Ordinary calls and explicit False validate/normalize arguments. Use True when the
+application already supplies canonical arguments, including its active unit
+policy. The retained inventory keeps its original unit-bearing evidence;
+fresh extraction records the current policy. The ligand constructor still runs
+recognition. Bypass selects the argument layer of that call; nested public tools
+retain their own admission. Native inventory definition, participant membership,
+frame/state and explicit-unit geometry, kind/orientation, nonempty construction
+and shape checks remain enforced. This control does not authenticate the source
+or establish a measured speed improvement.
 
 ## Interpret the result
 

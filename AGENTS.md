@@ -74,6 +74,17 @@ receipts instead of accumulating execution history in the checkpoint. Keep the
 roadmap and owning workstream/report consistent with the implemented state and
 the accepted mature-0.x plan; preserve earlier evidence and run identities.
 
+## Public and internal argument contracts
+
+At Liliana's direction (2026-11-12), public callable APIs use ArgDigest and expose
+an explicit `skip_digestion=False` parameter, normally keyword-only. Default calls
+validate/digest arguments. Internal helpers may remain undecorated when their
+inputs are already checked; internal calls to decorated operations may select
+`skip_digestion=True` only when the caller has established that operation's
+canonical input contract. Do not propagate bypass blindly between public tools.
+Scientific invariants remain enforced at their owning boundary. Keep remaining
+public-API adoption visible under #6; do not describe partial migration as complete.
+
 ## Registered integration guides
 
 Read the registered consumer guides when working on their respective boundaries:

@@ -1,5 +1,17 @@
 # Strategic roadmap
 
+## Reference-query argument contract — 2026-11-12 local date
+
+[#198](reference_query_argument_controls.md) completes explicit controls on the
+two native reference-query constructors while preserving scientific admission
+and ordinary default behavior. [Source receiving](evidence/reference_argument_controls_source_20261112.json)
+passes272 scoped cases, nm/pm public composition and strict docs. Liliana's public
+ArgDigest/explicit-skip and selective internal-admission rule is recorded in
+`AGENTS.md`; the bounded150-callable inventory does not certify full adoption.
+Next receive the exact committed artifact/public argument provider, then continue
+the remaining public-modeling controls under#6. Full source/installed/public,
+provider#624 and stopped#148/#165 keep their separate scope.
+
 ## Native H0/H1 consumer inputs delivered — 2026-11-12 local date
 
 The [bounded handoff](binding_interface_native_handoff.md) supplies authored

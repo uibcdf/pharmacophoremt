@@ -14,6 +14,19 @@ supersedes: []
 
 # Review Python ecosystem policy adoption
 
+## Reference construction and public-control rule — 2026-11-12
+
+Liliana's explicit instruction requires ArgDigest and an exposed skip control on
+public callable APIs; private helpers may avoid repeating established digestion.
+The root instructions now retain that action. [#198's contract](../reference_query_argument_controls.md)
+adds the two reference-query controls with definition-owned closed contracts and
+the existing native validator retained during bypass. [Source receiving](../evidence/reference_argument_controls_source_20261112.json)
+passes37 new/235 existing cases, nm/pm public examples and strict docs. Exact-owned
+and public-provider receiving follow a source freeze. Default invalid-inventory
+admission was refuted, not fixed. The150-callable bounded reexport inventory
+observes29 explicit controls/119 digestion plans; delegation/inheritance and
+complete export coverage remain review work. #6 stays partial.
+
 ## Accumulated support slice receives full source — 2026-11-11 UTC
 
 The [terminal receipt](../evidence/source_060_recovery_checkpoint_qualification_20261111.json)

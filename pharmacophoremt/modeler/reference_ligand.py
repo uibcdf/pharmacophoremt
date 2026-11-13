@@ -6,6 +6,10 @@ from smonitor import signal
 
 from pharmacophoremt import pyunitwizard as puw
 from pharmacophoremt._ackredit import attributed
+from pharmacophoremt._private.arg_digestion.argument._contracts import (
+    digest_feature_inventory,
+)
+from pharmacophoremt._private.arg_digestion.reference_queries import CONFIG
 from pharmacophoremt._private.molsysmt import detached
 from pharmacophoremt._private.smonitor.exceptions import ArgumentError
 from pharmacophoremt._version import __version__
@@ -17,9 +21,11 @@ from .features import CLASSICAL_FEATURES, get_features
 
 
 @signal(tags=["modeling", "feature_inventory"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("pyunitwizard")
-def from_feature_inventory(feature_inventory, *, radius="0.15 nm", name=None):
+def from_feature_inventory(
+    feature_inventory, *, radius="0.15 nm", name=None, skip_digestion=False
+):
     """Construct a query from an existing native feature inventory.
 
     Parameters
@@ -31,6 +37,9 @@ def from_feature_inventory(feature_inventory, *, radius="0.15 nm", name=None):
         Emitted shape radius, independent of chemical recognition.
     name : str, optional
         Query name.
+    skip_digestion : bool, default=False
+        Bypass argument digestion for this call only. Supply canonical inputs;
+        native inventory and nested shape checks remain mandatory.
 
     Returns
     -------
@@ -48,6 +57,11 @@ def from_feature_inventory(feature_inventory, *, radius="0.15 nm", name=None):
     --------
     >>> query = from_feature_inventory(get_features(prepared_ligand))
     """
+    if skip_digestion is True:
+        # Ordinary calls already run this shared validator through ArgDigest.
+        # Bypass preserves the native semantic boundary without repeating the
+        # ordinary admission path or granting a source-authentication promise.
+        feature_inventory = digest_feature_inventory(feature_inventory)
     if feature_inventory is None or not feature_inventory["features"]:
         raise ArgumentError(
             argument="feature_inventory", reason="require a nonempty native inventory"
@@ -106,7 +120,7 @@ def from_feature_inventory(feature_inventory, *, radius="0.15 nm", name=None):
 
 
 @signal(tags=["modeling", "reference_ligand"])
-@arg_digest()
+@arg_digest(config=CONFIG)
 @attributed("numpy", "molsysmt", "pyunitwizard")
 def from_ligand(
     molecular_system,
@@ -117,6 +131,7 @@ def from_ligand(
     features=CLASSICAL_FEATURES,
     radius="0.15 nm",
     name=None,
+    skip_digestion=False,
 ):
     """Build a classical query from one prepared, experimentally placed ligand.
 
@@ -136,6 +151,9 @@ def from_ligand(
         Matching tolerance, independent of recognition or interaction cutoffs.
     name : str, optional
         Query name.
+    skip_digestion : bool, default=False
+        Bypass argument digestion for this call only. Nested extraction and
+        inventory/shape construction retain their own ordinary admission.
 
     Returns
     -------

@@ -1,5 +1,10 @@
 # Current capability inventory
 
+The [reference-query control increment](reference_query_argument_controls.md)
+adds explicit keyword-only skip controls to `from_feature_inventory`/`from_ligand`,
+retaining native semantics.272 selected source cases and nm/pm composition pass;
+the broader public-argument rule and remaining adoption stay under#6.
+
 The [2026-11-12 H0/H1 analytical handoff](binding_interface_native_handoff.md)
 adds native consumer inputs and117 scoped receiving cases for the existing
 observed-interaction/composition/constraint tools. It changes no runtime API and

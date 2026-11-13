@@ -1,5 +1,16 @@
 # Decisions and active workstreams
 
+## Public argument control rule and reference constructors — 2026-11-12
+
+Liliana requires ArgDigest plus an explicit skip control on public callable APIs;
+internal helpers may avoid repeated digestion of established canonical inputs.
+`AGENTS.md` records the action. [#198](reference_query_argument_controls.md) receives
+the bounded reference-construction slice with272 source cases and nm/pm public
+examples; exact-owned receiving remains the immediate next action. The current
+public reexport inventory distinguishes direct observations from effective
+delegation and complete adoption. #6 remains partial; no wholesale private-loop
+decoration, molecular implementation or performance claim is selected.
+
 ## Native interface consumer handoff — 2026-11-12 local date
 
 The [H0/H1 contract](binding_interface_native_handoff.md) and frozen authored

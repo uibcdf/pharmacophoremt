@@ -3,35 +3,32 @@
 Maintained 2026-11-12 local date; owners LMMV/dprada. Follow the accepted
 [mature pre-1.0 staircase](roadmap.md), [workstreams](decisions_and_workstreams.md)
 and [capability inventory](capability_inventory.md). The preceding checkpoint is
-preserved in [dated history](checkpoint_history_20261112_before_binding_handoff.md);
+preserved in [dated history](checkpoint_history_20261112_before_reference_controls.md);
 earlier receipts and run identities remain unchanged.
 
-## Native H0/H1 inputs ready for BindingMT — #108 consumer continuation
+## Reference-query argument controls — #198/#6
 
-The [bounded handoff](binding_interface_native_handoff.md),
-[frozen package](../tests/data/binding_interface_handoff/README.md) and
-[public analytical case](../docs/content/validation/binding_interface_handoff.md)
-now supply the small input/expectation case offered in BindingMT#112. Four ions
-provide internal A–B, pertinent A–C and unrelated C–D observations. Strict AB|C
-selection preserves only A–C and its original labelled relation/occurrence.
-Two compatible analyses yield one observed-C site, essential/weight1; evaluated
-empty remains visible. Separate alternatives and curated zero-weight essential/
-exclusion controls preserve the distinction between fit and matching decision.
+The [contract](reference_query_argument_controls.md) adds explicit keyword-only
+`skip_digestion=False` to `from_feature_inventory` and `from_ligand`. Default
+admission remains; deliberate bypass retains native semantic checks and does not
+propagate into nested public tools. The existing shared validator is used without
+repeating ordinary validation. No molecular recognition/shape algorithm changes.
 
-The [receiving](evidence/binding_interface_native_handoff_20261112.json) records
-12 new/105 existing passing cases, fresh nm/pm production, four selected native
-contexts and two independent saved readers. Both readers recover three native
-analyses/four hypotheses with detection/recognition/public molecular operations
-blocked and no new originating uses. Original authored source bytes, complete
-context, metadata and site correspondence survive owner persistence. Exact-byte
-unshipped test support is declared; no runtime body or dependency changes.
+[Source receiving](evidence/reference_argument_controls_source_20261112.json)
+passes37 new/235 existing cases, nm/pm public composition and strict docs. The
+first suspected default-validation defect was refuted. Original red controls,
+two pm-policy harness corrections and the reporting-inventory correction remain
+recorded. The first source freeze is ready for one exact owned artifact and
+public-ArgDigest receiving; that evidence remains pending here.
 
-Source-only execution uses the preserved editable Python3.14 workspace. The
-handoff stays at one CPU/backend thread and512MiB DATA; the broader40-case
-constraint module passes with measured1GiB DATA after capped failures. Actual
-process measurements, known optional-Beartype messages and initial controller
-errors remain in the receipt. No provider/prefix change is selected. BindingMT
-still owns actual I0/H/I1 admission/construction/readback and adoption.
+Liliana's explicit public ArgDigest/skip-control and selective internal-digestion
+rule is now durable in root `AGENTS.md`. The bounded150-callable reexport audit
+observes29 explicit controls/119 digestion plans, without claiming complete API
+or effective delegation coverage. Remaining adoption is owned by#6.
+
+The [native H0/H1 handoff](binding_interface_native_handoff.md) remains delivered
+with its original117-case receiving and published BindingMT#112 contribution.
+Actual BindingMT I0/H/I1 implementation/adoption remains provider-owned.
 
 ## Accumulated source gate and separate delivery boundaries
 
@@ -52,9 +49,10 @@ public delivery remains0.4.0.
 
 ## Next concrete action and limits
 
-Return to remaining #6 support/API and #108 public-workflow acceptance against
-the current scope review; select a bounded gap using the documented user journey
-and effective public settings. Receive BindingMT's actual I0/H/I1 later using
+Receive this committed reference-construction slice from one exact owned wheel
+and the actual public ArgDigest provider, then close#198 with its measured scope.
+Continue the remaining public-modeling controls under#6 using the reexport
+inventory and the current public-workflow requirements. Receive BindingMT's actual I0/H/I1 later using
 this package, without claiming an implemented adapter now. MolSysMT#624 remains
 open/unreceived; no provider-owned collection is recreated. Human, biological,
 scale and full installed/public/platform gates remain independent. #148/#165
