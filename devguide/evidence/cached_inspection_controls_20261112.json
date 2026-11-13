@@ -1,0 +1,630 @@
+{
+  "bounded_public_inventory": {
+    "explicit_control": 39,
+    "observed_digestion_plan": 123,
+    "unique_declared_callables": 150
+  },
+  "existing_cases": 169,
+  "final_failures": 0,
+  "final_skips": 0,
+  "full_evidence": {
+    "compressed_bytes": 140676,
+    "compressed_sha256": "c4131c33bd630f98fbd31ea1c44cbafbf12c209dfdf35d29795d77d63a1f7521",
+    "path": "cached_inspection_controls_20261112.json.gz",
+    "uncompressed_bytes": 1609571,
+    "uncompressed_sha256": "70e2681cc01baf94f95b32ef9857526b72f0bddcc49223934f7df405ffac6350"
+  },
+  "issues": [
+    "uibcdf/pharmacophoremt#204",
+    "uibcdf/pharmacophoremt#205"
+  ],
+  "legacy_probe": {
+    "empty_table_columns": [],
+    "explicit_controls": {
+      "get_distance_matrixFalse": "TypeError",
+      "get_distance_matrixTrue": "TypeError",
+      "similarityFalse": "TypeError",
+      "similarityTrue": "TypeError",
+      "to_dataframeFalse": "TypeError",
+      "to_dataframeTrue": "TypeError"
+    },
+    "invalid_tolerances": {
+      "bool": {
+        "result": 1.0
+      },
+      "infinity": {
+        "result": 1.0
+      },
+      "nan": {
+        "result": 0.0
+      },
+      "negative": {
+        "result": 0.0
+      }
+    },
+    "signatures": {
+      "get_distance_matrix": "(self)",
+      "similarity": "(self, other, tolerance_nm=0.15)",
+      "to_dataframe": "(self)"
+    },
+    "similarity_forward": 0.5,
+    "similarity_reverse": 1.0,
+    "table_center_alias": true,
+    "table_features_alias": true
+  },
+  "limits": [
+    "Three cached public API boundaries; broader#6 remains partial.",
+    "The legacy greedy loop and its asymmetric counterexample are retained; symmetric-method proposal#205 remains open.",
+    "Linux/Python3.14 legacy source/isolated-wheel scope; inherited other dependencies, not complete public closure or full supported source/installed/platform qualification.",
+    "No provider/native/prefix/schema/dependency/performance/scientific-method/tag/publication change. Full#9/#10/#23 and stopped#148/#165 stay separate."
+  ],
+  "minimum_owned_available_bytes": 55578890240,
+  "mode": "final",
+  "new_cases": 65,
+  "original_red_cases": {
+    "failed": 57,
+    "further_guard_additions": "Two unrepresentable-number cases and six accepted NumPy numeric threshold cases added after red run.",
+    "passed": 0
+  },
+  "owned_artifact": {
+    "equal_runtime_bodies": 185,
+    "observed_target_only_modules": 167,
+    "source_runtime_fallback": false,
+    "test_overlay": false,
+    "verified_payloads": 240,
+    "version": "0.5.0+34.gf44e41b",
+    "wheel": {
+      "bytes": 4579180,
+      "path": "/tmp/phmt-inspection-controls-20261112-kdi_no30/wheels/pharmacophoremt-0.5.0+34.gf44e41b-py3-none-any.whl",
+      "sha256": "9f4fa8055ab47104fb151ab3eb67b6ccc746cf8b2c94d533cd2d564f831d92d7"
+    }
+  },
+  "owned_cases": 234,
+  "public_argdigest_cases_per_context": 65,
+  "public_providers": {
+    "argdigest": {
+      "archive_sha256": "5af09e12b0c3d344337f2a2d90ac8b5fcea5be8a8467694c41e3daac018c3899",
+      "verified_files": 48,
+      "version": "0.17.1"
+    },
+    "pyunitwizard": {
+      "archive_sha256": "d4654faf93ed4181bf331f7d382379e78f02784f71f678ad19d0ac43d8062cc6",
+      "verified_files": 93,
+      "version": "0.28.1"
+    }
+  },
+  "public_receptor": {
+    "sha256": "c0b075286f45e8fce5ab5852947611bfba82b7d509115fc5dadf1a9572b9dd74",
+    "verified_payloads": 15,
+    "version": "1.2.2"
+  },
+  "quality_source": [
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/recipe-nm-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/recipe.py",
+        "nm",
+        "source-development"
+      ],
+      "exit_code": 0,
+      "name": "recipe-nm"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/recipe-pm-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/recipe.py",
+        "pm",
+        "source-development"
+      ],
+      "exit_code": 0,
+      "name": "recipe-pm"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/audit-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/audit.py"
+      ],
+      "exit_code": 0,
+      "name": "audit"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/index-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/devguide_index.py",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "index"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/reporting-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_reporting_protocol.py"
+      ],
+      "exit_code": 0,
+      "name": "reporting"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/archives-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-p",
+        "test_evidence_archive.py"
+      ],
+      "exit_code": 0,
+      "name": "archives"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/ruff-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "ruff"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/format-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "name": "format"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/declarations-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/check_dependency_routes.py",
+        "--declared-only"
+      ],
+      "exit_code": 0,
+      "name": "declarations"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/environment-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "devtools/conda_environment.py",
+        "generate",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "environment"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/distribution-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "unittest",
+        "devtools.tests.test_distribution_contract"
+      ],
+      "exit_code": 0,
+      "name": "distribution"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/docs-quality-source.resources",
+        "/fast_data/home/liliana/miniconda3/envs/molsyssuite@uibcdf_3.14/bin/python",
+        "-B",
+        "-m",
+        "sphinx",
+        "-b",
+        "html",
+        "-j",
+        "1",
+        "-W",
+        "--keep-going",
+        "-E",
+        "-a",
+        "-q",
+        "-D",
+        "nb_execution_mode=off",
+        "docs",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/html"
+      ],
+      "exit_code": 0,
+      "name": "docs"
+    },
+    {
+      "command": [
+        "taskset",
+        "-c",
+        "19",
+        "nice",
+        "-n",
+        "19",
+        "ionice",
+        "-c",
+        "3",
+        "timeout",
+        "240s",
+        "prlimit",
+        "--data=536870912",
+        "--cpu=180",
+        "--",
+        "/usr/bin/time",
+        "-v",
+        "-o",
+        "/tmp/phmt-inspection-controls-20261112-kdi_no30/whitespace-quality-source.resources",
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "name": "whitespace"
+    }
+  ],
+  "recipe_block_executions": 18,
+  "recorded_at_utc": "2026-11-13T06:04:52.820495+00:00",
+  "resource_preflight": {
+    "MemAvailable_kib": 54593084,
+    "MemTotal_kib": 63455508,
+    "active_swap_si_so": [
+      0,
+      0
+    ],
+    "allowed_cpu": "0-19",
+    "date": "2026-11-12T23:47:28-06:00",
+    "host": "ixtlilton",
+    "limits": "serial CPU19, one backend thread, nice19/idleIO,512MiB DATA,120CPU/180wall seconds; 1GiB only for known larger constraints test; reserve20%physical+1.5GiB",
+    "load": [
+      2.86,
+      2.26,
+      2.09
+    ],
+    "memory_PSI_avg10": 0,
+    "scheduler": "srun present; no active allocation established; direct execution reserves no resources",
+    "swap_used_kib": 455784
+  },
+  "resources": {
+    "CPU_typical_seconds": 120,
+    "DATA_per_process_bytes": 536870912,
+    "affinity": [
+      19
+    ],
+    "aggregate_cgroup_memory_enforced": false,
+    "build_quality_CPU_wall_seconds": [
+      180,
+      240
+    ],
+    "ionice": "idle",
+    "nice": 19,
+    "not_reserved": true,
+    "numerical_threads": 1,
+    "peak_process_RSS_KiB": 392516,
+    "reserve": "20%physical RAM plus1.5GiB margin; actual raw limits and per-process output retained, no performance comparison",
+    "wall_typical_seconds": 180
+  },
+  "retention": {
+    "case": "/tmp/phmt-inspection-controls-20261112-kdi_no30",
+    "owned_workspace": "/tmp/phmt-inspection-controls-owned-20261112-_dnvzf51",
+    "owners": [
+      "LMMV",
+      "dprada"
+    ],
+    "review_date": "2026-11-26"
+  },
+  "runtime_source": "f44e41bce6b56317baa1a332cb41b133a90bcf0e",
+  "schema": "pharmacophoremt.inspection-controls.receiving@1",
+  "source_cases": 234,
+  "source_counts": {
+    "test_cached_inspection_controls.py": 65,
+    "test_contracts.py": 18,
+    "test_curation_argument_controls.py": 56,
+    "test_native_persistence_validation.py": 48,
+    "test_pharmacophore.py": 3,
+    "test_pharmacophore_merge.py": 28,
+    "test_point_geometry_inspection.py": 16
+  },
+  "source_overlay_sha256": {
+    "docs/content/cookbook/cached_model_inspection.md": "fd39045cf991db918f4a3cabd8bf2757f0a0d7a925ae11401530cc0e49856f8b",
+    "pharmacophoremt/_private/arg_digestion/curation.py": "60994d4863468e046cf56772610454b8f538ad1df3bc9af3ddbc89cf672d923f",
+    "pharmacophoremt/pharmacophore.py": "ca23cc4d122e681642f00abf9ef714f769e13c120ec6025ac7044b660b63550f",
+    "tests/test_cached_inspection_controls.py": "1f8855242b17d5e504680b7b678c663c6c99a7453697283fa08878a6147f5d3e"
+  },
+  "source_providers": {
+    "ackredit": {
+      "distribution_version": "0.12.2+2.g0bb26ec",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/ackredit/ackredit/__init__.py",
+      "runtime_version": "0.12.2+2.g0bb26ec"
+    },
+    "argdigest": {
+      "distribution_version": "0.17.1+6.g7be790b",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/argdigest/argdigest/__init__.py",
+      "runtime_version": "0.17.1+6.g7be790b"
+    },
+    "depdigest": {
+      "distribution_version": "0.15.2+3.g5e93eaf",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/depdigest/depdigest/__init__.py",
+      "runtime_version": "0.15.2+3.g5e93eaf"
+    },
+    "molsysmt": {
+      "distribution_version": "0.23.0+904.gff25f1202",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/molsysmt/molsysmt/__init__.py",
+      "runtime_version": "0.23.0+904.gff25f1202"
+    },
+    "pharmacophoremt": {
+      "distribution_version": "0.4.0+120.g0925d97",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/pharmacophoremt/pharmacophoremt/__init__.py",
+      "runtime_version": "0.5.0+7.g35559b3"
+    },
+    "pytest_receptor": {
+      "distribution_version": "1.2.2",
+      "origin": "/tmp/phmt-inspection-controls-20261112-kdi_no30/public-receptor/site-packages/pytest_receptor/__init__.py",
+      "runtime_version": "1.2.2"
+    },
+    "pyunitwizard": {
+      "distribution_version": "0.29.5+2.gcc51c8e",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/pyunitwizard/pyunitwizard/__init__.py",
+      "runtime_version": "0.29.5+2.gcc51c8e"
+    },
+    "smonitor": {
+      "distribution_version": "0.23.0+3.g4a4cd1e",
+      "origin": "/fast_data/home/liliana/repos@uibcdf/smonitor/smonitor/__init__.py",
+      "runtime_version": "0.23.0+3.g4a4cd1e"
+    }
+  },
+  "static_preservation": {
+    "pharmacophoremt/_private/arg_digestion/curation.py": {
+      "declared_exceptions": "Native model/center/threshold guard prefix and five explicit DataFrame columns only; method signatures/decorators/docstrings reviewed separately.",
+      "existing_functions_preserved": 9
+    },
+    "pharmacophoremt/pharmacophore.py": {
+      "declared_exceptions": "Native model/center/threshold guard prefix and five explicit DataFrame columns only; method signatures/decorators/docstrings reviewed separately.",
+      "existing_functions_preserved": 21
+    }
+  }
+}

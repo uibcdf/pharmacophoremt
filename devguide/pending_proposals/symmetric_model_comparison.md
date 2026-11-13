@@ -39,3 +39,13 @@ Declare workload/memory limits for large cases and qualify source/exact-owned/
 public-provider examples. Activity/biological/performance and full supported
 platform gates remain independent. A new algorithm and its compatibility
 decision remain unimplemented; the reproduction is not a symmetric-method gate.
+
+## Reproduction received — 2026-11-13 local date
+
+[#204 receiving](../evidence/cached_inspection_controls_20261112.json) repeats the
+0.5/1.0 counterexample in source and exact-owned/public-provider controls and
+all six nm/pm guide contexts. The legacy allocation loop remains identical.
+Existing SciPy assignment consumers are `screening.pose_evaluation` and
+`screening.feature_neighborhoods`; inspect their actual contracts before reuse.
+This adds reproduction evidence, not implementation or acceptance of a new
+similarity method. The proposal remains open.

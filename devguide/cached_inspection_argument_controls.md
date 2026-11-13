@@ -66,3 +66,21 @@ outputs remain. The bounded inventory observes150 callables/39 controls/123
 plans. No new optional availability or attribution boundary is introduced;
 existing Pandas/PyUnitWizard dependency ownership and pure cached inspection
 behavior remain. Exact-owned/public-provider receiving follows committed freeze.
+
+## Exact-owned/public-provider receiving — 2026-11-13 local date
+
+The [combined receipt](evidence/cached_inspection_controls_20261112.json)
+receives f44e41bce6b56317baa1a332cb41b133a90bcf0e and its unchanged committed
+source/tests in private wheel `0.5.0+34.gf44e41b`. All 234 selected cases pass
+per source/owned context; 65 actual public-ArgDigest0.17.1 controls pass in each.
+Public PUW0.28.1/Pytest Receptor1.2.2, 18 guide blocks across development-source/
+public-floor-source/public-floor-owned × nm/pm and actual SDK-staged support pass.
+All 240 payloads/185 equal runtime bodies and 167 target-only observed modules
+verify. There is no test overlay or source runtime fallback.
+
+Original57 red failures and baseline probe retain their identities; no later
+failed installed attempt or runtime/provider workaround is introduced. Existing
+optional-Beartype messages remain visible. The underlying inherited dependency/
+legacy-prefix context is separate from full public/supported-platform delivery.
+The source/owned result receives#204 only; #205 remains open and unimplemented.
+Keep logs/artifact until review on2026-11-26, with owners LMMV/dprada.

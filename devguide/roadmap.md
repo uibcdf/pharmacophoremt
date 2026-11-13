@@ -1,5 +1,18 @@
 # Strategic roadmap
 
+## Cached inspection and public receiving complete — 2026-11-13 local date
+
+[#204](cached_inspection_argument_controls.md) is received in its bounded scope:
+[234 source/owned cases each](evidence/cached_inspection_controls_20261112.json),
+65 public-ArgDigest controls per context, public PUW0.28.1/Pytest Receptor1.2.2,
+18 nm/pm guide blocks and240 payloads/185 equal runtime bodies. Exact f44e41b
+runtime/tests and167 target-only observed modules verify; no test overlay or
+source runtime fallback. Native guards/empty-table schema are improved while
+original numerical loops and table object-cell ownership remain unchanged.
+Next freeze#205's symmetric-method/compatibility contract and independent
+oracles/budgets, reusing appropriate owned assignment tools. That scientific
+method is unimplemented; broader#6/full gates and stopped#148/#165 stay separate.
+
 ## Cached inspection contracts in source — 2026-11-12 local date
 
 [#204](cached_inspection_argument_controls.md) receives three explicit controls,
