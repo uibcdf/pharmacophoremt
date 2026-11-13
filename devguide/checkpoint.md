@@ -21,7 +21,11 @@ and162 distribution controls. The original six keyword failures and43failed/6pas
 pre-implementation controls remain recorded. Static review preserves both adapter/
 composer bodies; collection differs only in the declared internal True keywords.
 The committed source is ready for one exact isolated artifact/public providers;
-that receiving is not inferred here. The bounded public inventory now observes
+that receiving is not inferred here. A preflight with the unchanged prior wheel
+exposes[#201](native_handoff_producer_oracle.md): the old H0/H1 oracle incorrectly
+requires rebuilt and historical producer versions to match. The correction checks
+both producers explicitly while preserving all other evidence and original bytes.
+The bounded public inventory now observes
 150 callables/32 explicit controls/119 digestion plans; full adoption stays#6-owned.
 
 [Reference controls/#198](reference_query_argument_controls.md),

@@ -2,6 +2,7 @@
 
 import json
 import shutil
+from copy import deepcopy
 from pathlib import Path
 
 import ackredit as ack
@@ -32,6 +33,13 @@ INPUTS = Path(__file__).parent / "data" / "binding_interface_handoff"
 @pytest.fixture(scope="module")
 def package():
     return load_package(INPUTS)
+
+
+def _without_checked_query_producer(metadata, expected_version):
+    """Separate one explicitly checked new/historical PHMT producer declaration."""
+    result = deepcopy(metadata)
+    assert result.pop("producer") == {"pharmacophoremt": expected_version}
+    return result
 
 
 def test_native_full_context_and_strict_group_scope_preserve_original_ids(package):
@@ -76,8 +84,26 @@ def test_rebuilt_primary_preserves_labeled_evidence_and_saved_native_semantics(p
         puw.get_value(site.center, to_unit="nm"), [0, 0.25, 0], atol=1e-12
     )
     assert puw.get_value(site.radius, to_unit="nm") == pytest.approx(0.02)
-    assert site.metadata == models["primary"].interaction_sites[0].metadata
-    assert query.metadata == models["primary"].metadata
+    stored = models["primary"]
+    historical_version = manifest["producer"]["pharmacophoremt"]
+    fresh_metadata = _without_checked_query_producer(query.metadata, phmt.__version__)
+    stored_metadata = _without_checked_query_producer(
+        stored.metadata, historical_version
+    )
+    for fresh_component, stored_component in zip(
+        fresh_metadata["components"], stored_metadata["components"], strict=True
+    ):
+        fresh_component["metadata"] = _without_checked_query_producer(
+            fresh_component["metadata"], phmt.__version__
+        )
+        stored_component["metadata"] = _without_checked_query_producer(
+            stored_component["metadata"], historical_version
+        )
+    assert fresh_metadata == stored_metadata
+    # Site/contribution evidence has no newly generated model producer field.
+    # Compare it exactly, including all original native software/attribution.
+    assert site.metadata == stored.interaction_sites[0].metadata
+    assert stored.metadata["producer"] == {"pharmacophoremt": historical_version}
     assert {
         (row["component"], row["relation_index"], row["occurrence_index"])
         for row in site.metadata["observations"]
